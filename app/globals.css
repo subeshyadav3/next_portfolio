@@ -1,0 +1,168 @@
+/* globals.css */
+
+/* Import Tailwind CSS */
+@import "tailwindcss";
+
+/* Custom root variables */
+:root {
+  --background: #23283E;
+  --foreground: #BDBDDD;
+  --font-geist-sans: 'Poppins', sans-serif; /* Add your desired font */
+  --font-geist-mono: 'Monaco', monospace; /* Add your desired monospace font */
+}
+
+/* Applying custom theme settings */
+@layer base {
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-geist-sans); /* Default to your custom sans font */
+  }
+}
+
+/* Optionally, you can apply Tailwind's utilities globally as well */
+@layer utilities {
+  .bg-custom-background {
+    background-color: var(--background);
+  }
+
+  .text-custom-foreground {
+    color: var(--foreground);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* splashScreen */
+
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  20% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0.4;
+  }
+}
+
+.splash-container {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  background-color: #23283E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.splash-logo {
+  width: 120px;
+  height: 120px;
+  animation: scaleUp 3s linear;
+}
+
+.nav-anim {
+  position: relative;
+}
+
+.nav-anim::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px; 
+  background-color: #90A0D9;
+  z-index: 11;
+  transform: scaleX(0); 
+  transform-origin: left; 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.nav-anim:hover::before {
+  transform: scaleX(1); 
+}
+
+
+
+/* resume button */
+
+.resume-btn{
+  overflow: hidden;
+  position: relative;
+}
+
+.resume-btn::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  background-color: #90A0D9;
+  z-index: 0;
+  transform: scaleX(0); 
+  transform-origin: left; 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.resume-btn:hover::before{
+  transform: scaleX(1); 
+}
+
+
+/* gmailbtn */
+
+.gmail-btn{
+  /* overflow: hidden; */
+  position: relative;
+}
+
+.gmail-btn::after{
+position: absolute;
+  content: '';
+  bottom: -53px;
+  right: -90px;
+  /* left:-20px; */
+
+  width: 1px;
+
+  height: 130px; 
+  background-color: white;
+  rotate: 90deg;
+}
+
+
+/* about page image */
+.title-line{
+  position: relative;
+  width:fit-content;
+}
+
+.title-line::after{
+  content: '';
+  position: absolute;
+ left:103%;
+  top: 50%;
+  width: 250px;
+  height: 1px; 
+  background-color: #90A0D9;
+  
+}
