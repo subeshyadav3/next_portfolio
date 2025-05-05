@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export default function About() {
     return (
         <div className="flex flex-col sm:ml-[100px] min-h-screen lg:ml-[200px] sm:mt-[-200px] pb-5">
@@ -39,7 +41,7 @@ export default function About() {
                     <div className="absolute  top-[30px] left-[40px] w-[220px] h-[230px] bg-[#272D44] border-1 border-[#BDBDDD] rounded-sm"></div>
 
 
-                    <img
+                    <Image
                         src="/about.jpg"
                         alt="About Me"
                         className="relative w-[250px] sm:w-[250px] h-[250px] object-cover p-2 shadow-lg rounded-lg z-10 hover:top-[5px] hover:left-[5px] transition-transform duration-300 ease-in-out "
