@@ -44,7 +44,9 @@ export default function About() {
                     <Image
                         src="/about.jpg"
                         alt="About Me"
-                        className="relative w-[250px] sm:w-[250px] h-[250px] object-cover p-2 shadow-lg rounded-lg z-10 hover:top-[5px] hover:left-[5px] transition-transform duration-300 ease-in-out "
+                        width={250}
+                        height={250}
+                        className="relative  object-cover p-2 shadow-lg rounded-lg z-10 hover:top-[5px] hover:left-[5px] transition-transform duration-300 ease-in-out "
                     />
                 </div>
 
