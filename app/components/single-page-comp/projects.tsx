@@ -7,7 +7,7 @@ export default function ProjectsPage() {
   const [showMore, setShowMore] = useState(false)
 
   return (
-    <div className=" flex flex-col mt-10 sm:ml-[100px] lg:ml-[200px] ">
+    <div className=" flex flex-col mt-10 sm:ml-[100px] lg:ml-[200px] pl-2 sm:pl-0 ">
       <div className="space-y-8">
       <div>
                 <h1 className="text-3xl  font-bold text-[#90A0D9] title-line">About Me</h1>

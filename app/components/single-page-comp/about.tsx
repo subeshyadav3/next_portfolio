@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function About() {
     return (
-        <div className="flex flex-col sm:ml-[100px] min-h-screen lg:ml-[200px] sm:mt-[-200px] pb-5">
+        <div className="flex flex-col sm:ml-[100px] min-h-screen lg:ml-[200px] sm:mt-[-200px] pb-5 sm:px-0 pl-5">
             <div>
                 <h1 className="text-3xl  font-bold text-[#90A0D9] title-line">About Me</h1>
                

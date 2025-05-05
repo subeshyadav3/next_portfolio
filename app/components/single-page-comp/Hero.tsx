@@ -12,7 +12,7 @@ export default function Hero() {
 
                 <h1 className=' text-3xl sm:text-4xl lg:text-5xl font-bold'><span className='text-[#CDCDFF]'>Hi, I am</span> <span className='text-[#90A0D9]'> Subesh Yadav</span></h1>
                 <h1 className='text-2xl sm:text-3xl lg:text-3xl text-[#CDCDFF] mt-5 font-bold'>Fullstack Developer</h1>
-                <p className='md:w-[600px] sm:p-10 text-[#BDBDDD] pl-12 py-10 w-full '>
+                <p className='md:w-[600px] sm:p-10 text-[#BDBDDD] py-10 w-full '>
                     An engineering student passionate about coding, problem-solving, and exploring new technologies. Dedicated to creating innovative solutions for real-world challenges.
                 </p>
 
