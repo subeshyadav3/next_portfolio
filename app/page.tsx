@@ -7,26 +7,33 @@ import Hero from './components/single-page-comp/Hero';
 import About from './components/single-page-comp/about';
 import Project from './components/single-page-comp/projects';
 import ContactPage from './components/single-page-comp/contact';
+import Navbar from './components/navbar';
 
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
+  const [pageVisible, setPageVisible] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => setIsLoading(false), 2000);
+    const timer = setTimeout(() => {
+      setIsLoading(false)
+      setPageVisible(true);
+    }, 10);
     return () => clearTimeout(timer);
   }, []);
-  console.log("server")
+
   if (isLoading) {
-    return <SplashScreen />;
+    // return <SplashScreen />;
   }
 
   return (
     <>
-      <Hero />
-      <About />
+    <Navbar animate={pageVisible} />
+      <Hero  animate={pageVisible}/>
+      <About  />
       <Project />
       <ContactPage />
+
     </>
   );
 }

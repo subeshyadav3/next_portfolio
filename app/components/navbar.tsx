@@ -3,7 +3,9 @@
 import Link from "next/link"
 import { useState, useEffect } from "react"
 
-export default function Navbar() {
+
+
+export default function Navbar({animate}: { animate: boolean }) {
     const [isMobile, setIsMobile] = useState(false)
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [showNavbar, setShowNavbar] = useState(true)
@@ -83,15 +85,21 @@ export default function Navbar() {
                         <img src="/logo.svg" alt="Logo" />
                     </div>
                 </Link>
-
+                
                 {!isMobile ? (
-                    <div className="menu flex space-x-6 text-sm font-regular text-[#ccd6f6] ">
-                        {navLinks.map((link) => (
-                            <Link key={link.href} href={link.href} scroll={false} onClick={(e) => handleClick(e, link.href)}>
-                                <span className="nav-anim cursor-pointer">{link.label}</span>
-                            </Link>
-                        ))}
-                    </div>
+                   <div className={"flex space-x-6 text-sm font-regular text-[#ccd6f6] "}>
+                   {navLinks.map((link) => (
+                     <Link
+                       key={link.href}
+                       href={link.href}
+                       scroll={false}
+                       onClick={(e) => handleClick(e, link.href)}
+                          className={`nav-anim cursor-pointer hover:text-[#64ffda] transition-all duration-300 ${animate ? "fade-in" : ""}` }
+                     >
+                       <span className="nav-anim cursor-pointer">{link.label}</span>
+                     </Link>
+                   ))}
+                 </div>
                 ) : (
                     <>
                         <button

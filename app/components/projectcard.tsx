@@ -4,6 +4,8 @@ import type { FC } from "react"
 import Image from "next/image"
 import { ExternalLink, Github } from 'lucide-react'
 
+import "../globals.css"
+
 interface ProjectCardProps {
   title: string
   description: string
@@ -11,11 +13,16 @@ interface ProjectCardProps {
   stack: string[]
   projectLink: string
   githubLink?: string
+  isInView: boolean
+  delay: string
 }
 
-const ProjectCard: FC<ProjectCardProps> = ({ title, description, photo, stack, projectLink, githubLink }) => {
+const ProjectCard: FC<ProjectCardProps> = ({ title, description, photo, stack, projectLink, githubLink, isInView, delay }) => {
+
   return (
-    <div className="w-full max-w-sm overflow-hidden rounded-lg border border-gray-200  shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 dark:bg-gray-800 dark:border-gray-700">
+    <div className={`opacity-0
+    ${isInView ? `${delay} hero-anim opacity-100` : "opacity-0"}
+    w-full max-w-sm overflow-hidden rounded-lg border border-gray-200  shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 dark:bg-gray-800 dark:border-gray-700`}>
       <div className="relative h-48 w-full overflow-hidden">
         <Image
           src={photo || "/placeholder.svg?height=192&width=384"}
