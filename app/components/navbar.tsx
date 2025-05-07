@@ -10,6 +10,7 @@ export default function Navbar({animate}: { animate: boolean }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
     const [showNavbar, setShowNavbar] = useState(true)
     const [lastScrollY, setLastScrollY] = useState(0)
+    const [mobNavTriggered, setMobNavTriggered] = useState(true)
 
     useEffect(() => {
         const handleResize = () => {
@@ -39,6 +40,7 @@ export default function Navbar({animate}: { animate: boolean }) {
     }, [lastScrollY])
 
     const toggleMenu = () => {
+        setMobNavTriggered(!mobNavTriggered)
         setIsMenuOpen(!isMenuOpen)
         document.body.style.overflow = !isMenuOpen ? "hidden" : ""
     }
@@ -87,7 +89,7 @@ export default function Navbar({animate}: { animate: boolean }) {
                 </Link>
                 
                 {!isMobile ? (
-                   <div className={"flex space-x-6 text-sm font-regular text-[#ccd6f6] "}>
+                   <div className={" flex space-x-6 text-sm font-regular text-[#ccd6f6] "}>
                    {navLinks.map((link) => (
                      <Link
                        key={link.href}
@@ -103,7 +105,7 @@ export default function Navbar({animate}: { animate: boolean }) {
                 ) : (
                     <>
                         <button
-                            className="z-[100] fixed top-4 right-4 flex flex-col justify-center items-center w-8 h-8"
+                            className="z-[100] fixed top-4 right-[-20px] flex flex-col justify-center items-center w-8 h-8"
                             onClick={toggleMenu}
                             aria-label="Toggle menu"
                         >
@@ -111,15 +113,31 @@ export default function Navbar({animate}: { animate: boolean }) {
                             <span className={`block w-6 h-0.5 bg-[#ccd6f6] my-1 transition-all duration-300 ${isMenuOpen ? "opacity-0" : ""}`} />
                             <span className={`block w-6 h-0.5 bg-[#ccd6f6] transition-all duration-300 ${isMenuOpen ? "-rotate-45 -translate-y-1" : ""}`} />
                         </button>
-                        {isMenuOpen && (
-                            <div className={`absolute top-0 right-0  gap-2 w-full h-screen bg-[#23283E] flex flex-col items-center justify-center transition-transform duration-400 ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
+                        
+                        {isMenuOpen ? (
+                            <div className={` mobile-nav absolute top-0 right-0  gap-2 w-full h-screen bg-[#23283E] flex flex-col items-center justify-center  `}>
                                 {navLinks.map((link) => (
                                     <Link key={link.href} href={link.href} scroll={false} onClick={(e) => handleClick(e, link.href)}>
                                         <span className="nav-anim cursor-pointer text-md my-4">{link.label}</span>
                                     </Link>
                                 ))}
                             </div>
+                        ):(
+                            <div>
+                                {mobNavTriggered && (
+                            <div className={` mobile-nav-close absolute top-0 right-0  gap-2 w-full h-screen bg-[#23283E] flex flex-col items-center justify-center  `}>
+                            {navLinks.map((link) => (
+                                <Link key={link.href} href={link.href} scroll={false} onClick={(e) => handleClick(e, link.href)}>
+                                    <span className="nav-anim-mob cursor-pointer text-md my-4">{link.label}</span>
+                                </Link>
+                            ))}
+                        </div>
                         )}
+                            </div>
+                            
+                        )}
+
+                        
 
 
 

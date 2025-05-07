@@ -17,7 +17,7 @@ export default function About() {
       <div>
         <h1
           className={`text-3xl font-bold text-[#90A0D9] title-line opacity-0  ${
-            isInView ? "hero-anim delay-200 opacity-100" : ""
+            isInView ? "hero-anim-title delay-200 opacity-100" : ""
           }`}
         >
           About Me

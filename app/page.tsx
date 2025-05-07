@@ -18,12 +18,12 @@ export default function HomePage() {
     const timer = setTimeout(() => {
       setIsLoading(false)
       setPageVisible(true);
-    }, 10);
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
 
   if (isLoading) {
-    // return <SplashScreen />;
+    return <SplashScreen />;
   }
 
   return (
