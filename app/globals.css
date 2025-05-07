@@ -193,26 +193,19 @@ position: absolute;
 }
 
 .mobile-nav-close{
-  animation: mob-navbar-close .5s linear forwards;
+  animation: mob-navbar-close .3s linear forwards;
 }
 
 @keyframes mob-navbar-close {
   0% {
-    transform: scale(1);
-    transform-origin: bottom left;
+    transform: translateX(0);
     opacity: 1;
   }
-
-  50% {
-    transform: scale(1);
-    transform-origin: bottom left;
-    opacity: .5;
-  }
-
+ 
   100% {
-    transform: scale(1);
-    transform-origin: top right;
+    transform: translateX(100%);
     opacity: 0;
+    display: none;
   }
 }
   
@@ -246,6 +239,12 @@ position: absolute;
   animation: fade-in .8s ease-in forwards;
 }
 
+
+.hero-anim-home {
+  animation-delay: 3s;
+  animation: fade-in .5s ease-in forwards;
+}
+
 .hero-anim-title{
   animation: fade-in .5s ease-in forwards;
 }
@@ -277,3 +276,8 @@ position: absolute;
 .delay-600 {
   animation-delay: 0.6s;
 }
+
+
+
+
+

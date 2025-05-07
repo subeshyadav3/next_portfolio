@@ -8,6 +8,7 @@ import About from './components/single-page-comp/about';
 import Project from './components/single-page-comp/projects';
 import ContactPage from './components/single-page-comp/contact';
 import Navbar from './components/navbar';
+import Education from './components/single-page-comp/education';
 
 
 export default function HomePage() {
@@ -31,6 +32,7 @@ export default function HomePage() {
     <Navbar animate={pageVisible} />
       <Hero  animate={pageVisible}/>
       <About  />
+      <Education />
       <Project />
       <ContactPage />
 

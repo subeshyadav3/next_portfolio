@@ -33,7 +33,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      {/* <Navbar /> */}
+      
+      <head>
+      <link rel="icon" href="/logo.svg" />
+      </head>
       <body
         className={`${poppins.variable}  antialiased ` }
       >
