@@ -12,7 +12,7 @@ export default function ProjectsPage() {
     <div id='projects' className=" flex flex-col mt-10 sm:ml-[100px] lg:ml-[200px] pl-2 sm:pl-0 ">
       <div className="space-y-8">
         <div>
-          <h1 className={`text-3xl  font-bold text-[#90A0D9] title-line opacity-0 ${isInView?"hero-anim-title opacity-100 ":""}`}>About Me</h1>
+          <h1 className={`text-3xl  font-bold text-[#90A0D9] title-line opacity-0 ${isInView?"hero-anim-title opacity-100 ":""}`}>Projects</h1>
 
         </div>
 
