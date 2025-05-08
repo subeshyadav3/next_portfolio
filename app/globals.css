@@ -5,6 +5,7 @@
 
 /* Custom root variables */
 :root {
+  overflow-x: hidden;
   --background: #23283E;
   --foreground: #BDBDDD;
   --font-geist-sans: 'Poppins', sans-serif; /* Add your desired font */
@@ -242,6 +243,7 @@ position: absolute;
 
 .hero-anim-home {
   animation-delay: 3s;
+  opacity: 0;
   animation: fade-in .5s ease-in forwards;
 }
 

@@ -81,7 +81,7 @@ export default function Navbar({animate}: { animate: boolean }) {
                 <div className="fixed w-full inset-0 backdrop-blur-sm z-40" onClick={closeMenu} />
             )}
 
-            <nav className={`navbar max-w-[1200px]  mx-auto flex flex-row items-center justify-between px-4 pt-5 sm:pt-8 sticky top-0 z-50 bg-[#23283E]  transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}>
+            <nav className={`navbar   mx-auto flex flex-row items-center justify-between px-4 pt-5 sm:pt-8 sticky top-0 z-50 bg-[#23283E]  transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}>
                 <Link href="#home" scroll={false}>
                     <div className="w-[70px] h-[80px] sm:w-[60px] sm:h-[60px] cursor-pointer">
                         <img src="/logo.svg" alt="Logo" />
