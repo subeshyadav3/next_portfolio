@@ -7,6 +7,16 @@ import useInViewAnimation from "@/app/hooks/useInViewAnimation"
 export default function ProjectsPage() {
   const [showMore, setShowMore] = useState(false)
   const isInView = useInViewAnimation(0.8, "projects")
+  const [multiPhoto, setMultiPhoto] = useState({
+    aqi:{
+      aqi: {
+        photos: [
+          "/projects/aqi.png",
+          "/projects/aqi1.png",
+        ]
+      }
+    }
+  })
 
   return (
     <div id='projects' className=" flex flex-col mt-10 sm:ml-[100px] lg:ml-[200px] pl-2 sm:pl-0 ">
@@ -28,12 +38,12 @@ export default function ProjectsPage() {
             delay="delay-200"
           />
 
-          <ProjectCard
-            title="WhiteBoard App"
-            description="An interactive whiteboard using concepts of computer graphics as a project for educational purposes."
-            photo="/projects/whiteboard.png"
-            stack={["HTML", "CSS", "JavaScript"]}
-            projectLink="http://subesh420.com.np/"
+<ProjectCard
+            title="AQI Predictor"
+            description="An end-to-end data science project that analyzes historical air quality trends in Kathmandu, predicts AQI using machine learning, and provides real-time forecasting using Facebook Prophet — all wrapped in an interactive Streamlit dashboard."
+            photo={multiPhoto.aqi.aqi.photos}
+            stack={["Python", "Streamlit", "Pandas/Numpy"]}
+            projectLink="https://kathmanduairqualityforecasting.streamlit.app/"
             isInView={isInView}
             delay="delay-300"
           />
@@ -51,6 +61,16 @@ export default function ProjectsPage() {
 
           {showMore && (
             <>
+            <ProjectCard
+            title="WhiteBoard App"
+            description="An interactive whiteboard using concepts of computer graphics as a project for educational purposes."
+            photo="/projects/whiteboard.png"
+            stack={["HTML", "CSS", "JavaScript"]}
+            projectLink="http://subesh420.com.np/"
+            isInView={isInView}
+            delay="delay-300"
+          />
+
               <ProjectCard
                 title="Weather Search"
                 description="I developed a weather search application using React, featuring a search history function and detailed information like sunrise, sunset, and other relevant weather data."
