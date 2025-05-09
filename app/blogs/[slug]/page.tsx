@@ -1,4 +1,4 @@
-import { getPostBySlug, getAllPosts } from '@/lib/blogs';
+import { getPostBySlug,getAllPosts } from '@/app/lib/blogs';
 import { remark } from 'remark';
 import html from 'remark-html';
 import { notFound } from 'next/navigation';
