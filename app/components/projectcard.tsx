@@ -26,7 +26,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ title, description, photo, stack, p
     if (!isMultiple) return
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % photo.length)
-    }, 2000)
+    }, 3000)
     return () => clearInterval(interval)
   }, [photo])
 

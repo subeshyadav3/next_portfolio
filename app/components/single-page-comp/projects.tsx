@@ -33,7 +33,7 @@ export default function ProjectsPage() {
             photo="/projects/store.png"
             stack={["React", "NodeJS", "ExpressJS", "MongoDB"]}
             projectLink="https://frontendstore-five.vercel.app/"
-            githubLink="https://github.com/yourusername/tech-store"
+            githubLink="https://github.com/subeshyadav3/store"
             isInView={isInView}
             delay="delay-200"
           />
@@ -44,6 +44,7 @@ export default function ProjectsPage() {
             photo={multiPhoto.aqi.aqi.photos}
             stack={["Python", "Streamlit", "Pandas/Numpy"]}
             projectLink="https://kathmanduairqualityforecasting.streamlit.app/"
+            githubLink="https://github.com/subeshyadav3/AQI_Prediction_Kathmandu"
             isInView={isInView}
             delay="delay-300"
           />
@@ -54,7 +55,7 @@ export default function ProjectsPage() {
             photo="/projects/npl.png"
             stack={["NodeJS", "ExpressJS"]}
             projectLink="https://nepal-premiere-league-npl-api.vercel.app/"
-            githubLink="https://github.com/yourusername/npl-api"
+            githubLink="https://github.com/subeshyadav3/Nepal_Premier_League-NPL-_API"
             isInView={isInView}
             delay="delay-400"
           />
@@ -67,6 +68,7 @@ export default function ProjectsPage() {
             photo="/projects/whiteboard.png"
             stack={["HTML", "CSS", "JavaScript"]}
             projectLink="http://subesh420.com.np/"
+            githubLink="https://github.com/subeshyadav3/whiteboard"
             isInView={isInView}
             delay="delay-300"
           />
