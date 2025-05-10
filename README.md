@@ -4,7 +4,7 @@ A modern, responsive portfolio website built with [Next.js](https://nextjs.org/)
 
 ## 🚀 Features
 
-- ⚡ Built with Next.js 13+ App Router and TypeScript
+- ⚡ Built with Next.js 15+ App Router and TypeScript
 - 💻 Fully responsive and mobile-friendly layout
 - 🎨 Beautiful UI with Tailwind CSS (or your styling choice)
 - 🧭 Navigation with smooth page transitions
