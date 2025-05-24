@@ -8,7 +8,7 @@ export default function ProjectsPage() {
   const [showMore, setShowMore] = useState(false)
   const isInView = useInViewAnimation(0.8, "projects")
   const [multiPhoto, setMultiPhoto] = useState({
-    aqi:{
+    aqi: {
       aqi: {
         photos: [
           "/projects/aqi.png",
@@ -22,7 +22,7 @@ export default function ProjectsPage() {
     <div id='projects' className=" flex flex-col mt-10 sm:ml-[100px] lg:ml-[200px] pl-2 sm:pl-0 ">
       <div className="space-y-8">
         <div>
-          <h1 className={`text-3xl  font-bold text-[#90A0D9] title-line opacity-0 ${isInView?"hero-anim-title opacity-100 ":""}`}>Projects</h1>
+          <h1 className={`text-3xl  font-bold text-[#90A0D9] title-line opacity-0 ${isInView ? "hero-anim-title opacity-100 " : ""}`}>Projects</h1>
 
         </div>
 
@@ -38,7 +38,7 @@ export default function ProjectsPage() {
             delay="delay-200"
           />
 
-<ProjectCard
+          <ProjectCard
             title="AQI Predictor"
             description="An end-to-end data science project that analyzes historical air quality trends in Kathmandu, predicts AQI using machine learning, and provides real-time forecasting using Facebook Prophet — all wrapped in an interactive Streamlit dashboard."
             photo={multiPhoto.aqi.aqi.photos}
@@ -62,27 +62,28 @@ export default function ProjectsPage() {
 
           {showMore && (
             <>
-            <ProjectCard
-            title="WhiteBoard App"
-            description="An interactive whiteboard using concepts of computer graphics as a project for educational purposes."
-            photo="/projects/whiteboard.png"
-            stack={["HTML", "CSS", "JavaScript"]}
-            projectLink="http://subesh420.com.np/"
-            githubLink="https://github.com/subeshyadav3/whiteboard"
-            isInView={isInView}
-            delay="delay-300"
-          />
+              <ProjectCard
+                title="WhiteBoard App"
+                description="An interactive whiteboard using concepts of computer graphics as a project for educational purposes."
+                photo="/projects/whiteboard.png"
+                stack={["HTML", "CSS", "JavaScript"]}
+                projectLink="http://subesh420.com.np/"
+                githubLink="https://github.com/subeshyadav3/whiteboard"
+                isInView={isInView}
+                delay="delay-300"
+              />
 
               <ProjectCard
-                title="Weather Search"
-                description="I developed a weather search application using React, featuring a search history function and detailed information like sunrise, sunset, and other relevant weather data."
-                photo="/projects/weather.jpg"
-                stack={["React", "Tailwind"]}
-                projectLink="https://github.com/subeshyadav3/weather"
-                githubLink="https://github.com/subeshyadav3/weather"
+                title="Next.js Blog App"
+                description="A full-featured blog application built with Next.js. It includes CRUD functionality, Clerk authentication, and a clean user interface for managing blog posts."
+                photo="/projects/blog.png"
+                stack={["Next.js", "TypeScript", "Tailwind", "Clerk"]}
+                projectLink="https://github.com/subeshyadav3/blog_app"
+                githubLink="https://github.com/subeshyadav3/blog_app"
                 isInView={isInView}
                 delay="delay-200"
               />
+
 
               <ProjectCard
                 title="Flappy Bird"
