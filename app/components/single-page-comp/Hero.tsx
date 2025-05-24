@@ -28,7 +28,7 @@ export default function Hero({ animate }: { animate: boolean }) {
         <div
           className={` opacity-0 ${animate ? "hero-anim-home  delay-600 opacity-100" : ""}`}
         >
-          <a href="/res.pdf">
+          <a href="/final_CV.pdf">
             <button className="border-2 border-[#90A0D9] px-4 py-2 rounded-sm resume-btn">
               <span className="relative z-10 hover:text-blue-950">Resume</span>
             </button>
