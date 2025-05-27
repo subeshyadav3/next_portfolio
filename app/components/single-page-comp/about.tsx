@@ -6,8 +6,7 @@ import useInViewAnimation from "@/app/hooks/useInViewAnimation";
 import "../../globals.css";
 
 export default function About() {
-
-  const isInView = useInViewAnimation(0.8,"about"); 
+  const isInView = useInViewAnimation(0.8, "about");
 
   return (
     <div
@@ -16,7 +15,7 @@ export default function About() {
     >
       <div>
         <h1
-          className={`text-3xl font-bold text-[#90A0D9] title-line opacity-0  ${
+          className={`text-3xl font-bold text-[#90A0D9] title-line opacity-0 ${
             isInView ? "hero-anim-title delay-200 opacity-100" : ""
           }`}
         >
@@ -25,7 +24,22 @@ export default function About() {
       </div>
       <div className="flex flex-col md:flex-row">
         <div
-          className={`py-5 w-full md:w-1/2 opacity-0 ${
+          className={`relative order-1 md:order-2 lg:ml-[100px] ml-5 my-5 opacity-0 ${
+            isInView ? "hero-anim delay-200" : ""
+          }`}
+        >
+          <div className="absolute top-[40px] left-[40px] w-[220px] h-[230px] bg-[#272D44] border-2 border-[#BDBDDD] rounded-sm"></div>
+          <Image
+            src="/about.jpg"
+            alt="About Me"
+            width={250}
+            height={250}
+            className="relative object-cover p-2 shadow-lg  rounded-md  z-10 hover:top-[5px] hover:left-[5px] transition-transform duration-300 ease-in-out"
+          />
+        </div>
+
+        <div
+          className={`py-5 w-full md:w-1/2 order-2 md:order-1 opacity-0 ${
             isInView ? "hero-anim delay-400 opacity-100" : ""
           }`}
         >
@@ -60,7 +74,6 @@ export default function About() {
                 <li>Node.js</li>
                 <li>Next.js</li>
               </ul>
-
               <ul className="flex gap-2 flex-col text-[#BDBDDD] pt-5 list-disc">
                 <li>Express.js</li>
                 <li>MongoDB</li>
@@ -69,21 +82,6 @@ export default function About() {
               </ul>
             </div>
           </div>
-        </div>
-        <div
-          className={`relative lg:ml-[100px] ml-5 my-5 opacity-0 ${
-            isInView ? "hero-anim delay-200" : ""
-          }`}
-        >
-          <div className="absolute top-[30px] left-[40px] w-[220px] h-[230px] bg-[#272D44] border-1 border-[#BDBDDD] rounded-sm"></div>
-
-          <Image
-            src="/about.jpg"
-            alt="About Me"
-            width={250}
-            height={250}
-            className="relative object-cover p-2 shadow-lg rounded-lg z-10 hover:top-[5px] hover:left-[5px] transition-transform duration-300 ease-in-out"
-          />
         </div>
       </div>
     </div>
