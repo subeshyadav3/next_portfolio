@@ -53,7 +53,7 @@ export default function ExperienceCards() {
 
   return (
     <section
-    className={` py-12 px-6 mb-5 max-w-4xl mx-auto
+    className={` py-12 px-2 sm:px-6 mb-5 max-w-4xl mx-auto
       opacity-0 transform translate-y-8 transition-all duration-700
       ${isInView ? "hero-anim-title delay-200 opacity-100 translate-y-0" : ""}
     `}
@@ -99,7 +99,7 @@ export default function ExperienceCards() {
             <h3 className="font-semibold text-[#90a0d9] text-lg">
               {exp.position}
             </h3>
-            <ul className="list-disc pl-5 space-y-2 ">
+            <ul className="list-disc font-light pl-5 space-y-2 ">
               {exp.summary.map((sentence, i) => (
                 <li key={i} className="leading-relaxed">
                   {sentence}
