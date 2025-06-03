@@ -64,6 +64,17 @@ export default function ProjectsPage() {
           {showMore && (
             <>
               <ProjectCard
+                title="AQI Predictor"
+                description="An end-to-end data science project that analyzes historical air quality trends in Kathmandu, predicts AQI using machine learning, and provides real-time forecasting using Facebook Prophet — all wrapped in an interactive Streamlit dashboard."
+                photo={multiPhoto.aqi.aqi.photos}
+                stack={["Python", "Streamlit", "Pandas/Numpy"]}
+                projectLink="https://kathmanduairqualityforecasting.streamlit.app/"
+                githubLink="https://github.com/subeshyadav3/AQI_Prediction_Kathmandu"
+                isInView={isInView}
+                delay="delay-300"
+              />
+
+              <ProjectCard
                 title="WhiteBoard App"
                 description="An interactive whiteboard using concepts of computer graphics as a project for educational purposes."
                 photo="/projects/whiteboard.png"
