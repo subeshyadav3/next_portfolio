@@ -29,7 +29,7 @@ export default function ContactPage() {
 
     const handleSubmit = () => {
         let valid = true;
-        let newErrors = { name: "", email: "", message: "" };
+        const newErrors = { name: "", email: "", message: "" };
 
         if (!name.trim()) {
             newErrors.name = "Name is required.";
