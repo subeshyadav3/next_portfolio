@@ -39,15 +39,16 @@ export default function ProjectsPage() {
           />
 
           <ProjectCard
-            title="AQI Predictor"
-            description="An end-to-end data science project that analyzes historical air quality trends in Kathmandu, predicts AQI using machine learning, and provides real-time forecasting using Facebook Prophet — all wrapped in an interactive Streamlit dashboard."
-            photo={multiPhoto.aqi.aqi.photos}
-            stack={["Python", "Streamlit", "Pandas/Numpy"]}
-            projectLink="https://kathmanduairqualityforecasting.streamlit.app/"
-            githubLink="https://github.com/subeshyadav3/AQI_Prediction_Kathmandu"
+            title="Next.js Blog App"
+            description="A full-featured blog application built with Next.js. It includes CRUD functionality, Clerk authentication, and a clean user interface for managing blog posts."
+            photo="/projects/blog.png"
+            stack={["Next.js", "TypeScript", "Tailwind", "Clerk"]}
+            projectLink="https://blog-app-tau-ashy.vercel.app/"
+            githubLink="https://github.com/subeshyadav3/blog_app"
             isInView={isInView}
-            delay="delay-300"
+            delay="delay-200"
           />
+
 
           <ProjectCard
             title="NPL API"
@@ -73,16 +74,6 @@ export default function ProjectsPage() {
                 delay="delay-300"
               />
 
-              <ProjectCard
-                title="Next.js Blog App"
-                description="A full-featured blog application built with Next.js. It includes CRUD functionality, Clerk authentication, and a clean user interface for managing blog posts."
-                photo="/projects/blog.png"
-                stack={["Next.js", "TypeScript", "Tailwind", "Clerk"]}
-                projectLink="https://github.com/subeshyadav3/blog_app"
-                githubLink="https://github.com/subeshyadav3/blog_app"
-                isInView={isInView}
-                delay="delay-200"
-              />
 
 
               <ProjectCard
@@ -99,7 +90,7 @@ export default function ProjectsPage() {
           )}
         </div>
 
-        {!showMore?  (
+        {!showMore ? (
           <div className="flex justify-center mt-8">
             <button
               onClick={() => setShowMore(true)}
@@ -108,17 +99,17 @@ export default function ProjectsPage() {
               Show More Projects
             </button>
           </div>
-        ):
-        (
-          <div className="flex justify-center mt-8">
-            <button
-              onClick={() => setShowMore(false)}
-              className="px-6 py-3 text-base font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:bg-blue-700 dark:hover:bg-blue-600"
-            >
-              Show Less Projects
-            </button>
-          </div>
-        )}
+        ) :
+          (
+            <div className="flex justify-center mt-8">
+              <button
+                onClick={() => setShowMore(false)}
+                className="px-6 py-3 text-base font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:bg-blue-700 dark:hover:bg-blue-600"
+              >
+                Show Less Projects
+              </button>
+            </div>
+          )}
       </div>
     </div>
   )
