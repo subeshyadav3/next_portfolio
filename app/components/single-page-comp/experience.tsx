@@ -58,9 +58,13 @@ export default function ExperienceCards() {
       ${isInView ? "hero-anim-title delay-200 opacity-100 translate-y-0" : ""}
     `}
   >
-    <h2 className="text-3xl font-bold text-[#90a0d9] text-center mb-12">
-      Experience
-    </h2>
+    <h1
+          className={`text-3xl mb-5 font-bold text-[#90A0D9] title-line opacity-0 ${
+            isInView ? "hero-anim-title delay-200 opacity-100" : ""
+          }`}
+        >
+          Education
+        </h1>
     <div
       id="experience-cards"
       className="flex flex-col gap-10 max-w-5xl mx-auto"
