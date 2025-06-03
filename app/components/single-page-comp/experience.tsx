@@ -73,16 +73,16 @@ export default function ExperienceCards() {
             border-t-2 border-l-2 border-[#90a0d9]
             shadow-xl shadow-[#171f31]
             hover:border-t-8 hover:border-l-8
-            p-8 md:flex-row md:items-center md:gap-8
+            px-4 py-8  sm:p-8 md:flex-row md:items-center md:gap-8
           `}
         >
           <div className="flex flex-row items-center justify-between md:flex-col md:w-1/4 gap-2 md:gap-6">
             <Image
               src={exp.logo}
               alt={exp.logoAlt}
-              width={120}
+              width={80}
               height={60}
-              className="object-contain"
+              className="object-contain w-[80px] sm:w-[120px]"
               priority={idx === 0}
             />
             <div className="whitespace-nowrap md:text-right text-sm font-medium">

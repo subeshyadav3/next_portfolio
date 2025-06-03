@@ -78,12 +78,12 @@ export default function Navbar({animate}: { animate: boolean }) {
       return (
         <>
           {isMobile && isMenuOpen && (
-            <div className="fixed w-full inset-0 backdrop-blur-sm z-40" onClick={closeMenu} />
+            <div className="fixed w-full inset-0 backdrop-blur-lg z-40" onClick={closeMenu} />
           )}
       
       
           {isMobile && isMenuOpen && (
-            <div className="mobile-nav fixed top-0 left-0 w-full h-screen bg-[#23283E] z-50 flex flex-col gap-2 items-center justify-center overflow-y-hidden">
+            <div className="mobile-nav fixed top-0 left-0 w-full h-screen  z-50 flex flex-col gap-2 items-center justify-center overflow-y-hidden">
               {navLinks.map((link) => (
                 <Link key={link.href} href={link.href} scroll={false} onClick={(e) => handleClick(e, link.href)}>
                   <span className="nav-anim cursor-pointer text-md my-4">{link.label}</span>
@@ -92,7 +92,7 @@ export default function Navbar({animate}: { animate: boolean }) {
             </div>
           )}
       
-          <nav className={`navbar mx-auto flex flex-row items-center justify-between backdrop-blur-sm px-4 pt-5 sm:pt-8 sticky top-0 z-50   transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}>
+          <nav className={`navbar mx-auto flex flex-row items-center justify-between backdrop-blur-sm px-4 w-full sm:pt-8 sticky top-0 z-50   transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"}`}>
             <Link href="#home" scroll={false}>
               <div className="w-[70px] h-[80px] sm:w-[60px] sm:h-[60px] cursor-pointer " >
                 <img src="/logo.svg" alt="Logo" />
