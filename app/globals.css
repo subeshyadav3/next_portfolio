@@ -15,7 +15,9 @@
 /* Applying custom theme settings */
 @layer base {
   body {
-    background: var(--background);
+     /* #430741 #072043    -- 1A1D2B */
+    /* background-color: var(--background); */
+    background-image:radial-gradient(closest-side, #430741, #0c1232);
     color: var(--foreground);
     font-family: var(--font-geist-sans); /* Default to your custom sans font */
   }

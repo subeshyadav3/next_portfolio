@@ -21,6 +21,7 @@ interface ProjectCardProps {
 const ProjectCard: FC<ProjectCardProps> = ({ title, description, photo, stack, projectLink, githubLink, isInView, delay }) => {
   const isMultiple = Array.isArray(photo)
   const [index, setIndex] = useState(0)
+  const [showMore, setShowMore] = useState(false)
 
   useEffect(() => {
     if (!isMultiple) return
@@ -33,9 +34,16 @@ const ProjectCard: FC<ProjectCardProps> = ({ title, description, photo, stack, p
   const currentPhoto = isMultiple ? photo[index] : photo || "/placeholder.svg?height=192&width=384"
 
   return (
-    <div className={`opacity-0
-    ${isInView ? `${delay} hero-anim opacity-100` : "opacity-0"}
-    w-full max-w-sm overflow-hidden rounded-lg border border-gray-200 shadow-sm transition-all duration-300 hover:shadow-lg hover:-translate-y-1 dark:bg-gray-800 dark:border-gray-700`}>
+    <div
+      className={`opacity-0
+      ${isInView ? `${delay} hero-anim opacity-100` : "opacity-0"}
+      w-full max-w-sm rounded-xl border-b-2 border-[#90a0d9]
+      bg-[#23283E] shadow-[#171f31] shadow-md transition-all duration-300
+      hover:shadow-xl hover:-translate-y-1
+       hover:border-[#90a0d9] 
+      cursor-pointer
+      `}
+    >
       <div className="relative h-48 w-full overflow-hidden">
         <Image
           src={currentPhoto}
@@ -47,10 +55,20 @@ const ProjectCard: FC<ProjectCardProps> = ({ title, description, photo, stack, p
       </div>
 
       <div className="p-5">
-        <h3 className="mb-2 text-xl font-bold tracking-tight">{title}</h3>
-        <p className="mb-4 text-sm text-gray-600 line-clamp-3 dark:text-gray-300">{description}</p>
+        <h3 className="mb-2 text-xl font-semibold tracking-tight text-[#90a0d9]">{title}</h3>
+        <p className="mb-2 text-sm text-gray-300">
+          {showMore ? description : description.length > 100 ? description.slice(0, 100) + "..." : description}
+        </p>
+        {description.length > 100 && (
+          <button
+            onClick={() => setShowMore(!showMore)}
+            className="text-[#90a0d9] underline text-sm"
+          >
+            {showMore ? "Show less" : "Show more"}
+          </button>
+        )}
 
-        <div className="mb-4 flex flex-wrap gap-2">
+        <div className="mb-4 mt-4 flex flex-wrap gap-2">
           {stack.map((tech) => (
             <span
               key={tech}
@@ -66,7 +84,7 @@ const ProjectCard: FC<ProjectCardProps> = ({ title, description, photo, stack, p
             href={projectLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:bg-blue-700 dark:hover:bg-blue-600"
+            className="inline-flex items-center justify-center rounded-md bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
           >
             <ExternalLink className="mr-2 h-4 w-4" />
             View Project
@@ -78,9 +96,9 @@ const ProjectCard: FC<ProjectCardProps> = ({ title, description, photo, stack, p
               target="_blank"
               rel="noopener noreferrer"
               aria-label="View source code on GitHub"
-              className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 bg-transparent text-gray-700 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 dark:border-gray-600 dark:text-gray-200 dark:hover:bg-gray-700"
+              className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 bg-transparent text-gray-700  focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
             >
-              <Github className="h-4 w-4" />
+              <Github className="h-4 w-4 text-white " />
             </a>
           )}
         </div>

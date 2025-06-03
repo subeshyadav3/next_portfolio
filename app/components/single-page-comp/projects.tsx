@@ -19,7 +19,7 @@ export default function ProjectsPage() {
   })
 
   return (
-    <div id='projects' className=" flex flex-col mt-10 sm:ml-[100px] lg:ml-[200px] pl-2 sm:pl-0 ">
+    <div id='projects' className=" flex flex-col mt-[100px] sm:ml-[100px] lg:ml-[200px] pl-2 sm:pl-0 ">
       <div className="space-y-8">
         <div>
           <h1 className={`text-3xl  font-bold text-[#90A0D9] title-line opacity-0 ${isInView ? "hero-anim-title opacity-100 " : ""}`}>Projects</h1>
@@ -99,13 +99,23 @@ export default function ProjectsPage() {
           )}
         </div>
 
-        {!showMore && (
+        {!showMore?  (
           <div className="flex justify-center mt-8">
             <button
               onClick={() => setShowMore(true)}
               className="px-6 py-3 text-base font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:bg-blue-700 dark:hover:bg-blue-600"
             >
               Show More Projects
+            </button>
+          </div>
+        ):
+        (
+          <div className="flex justify-center mt-8">
+            <button
+              onClick={() => setShowMore(false)}
+              className="px-6 py-3 text-base font-medium text-white bg-blue-600 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:bg-blue-700 dark:hover:bg-blue-600"
+            >
+              Show Less Projects
             </button>
           </div>
         )}

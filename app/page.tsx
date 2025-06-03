@@ -9,7 +9,7 @@ import Project from './components/single-page-comp/projects';
 import ContactPage from './components/single-page-comp/contact';
 import Navbar from './components/navbar';
 import Education from './components/single-page-comp/education';
-
+import Experience from './components/single-page-comp/experience';
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);
@@ -33,6 +33,7 @@ export default function HomePage() {
       <Hero  animate={pageVisible}/>
       <About  />
       <Education />
+      <Experience />
       <Project />
       <ContactPage />
 
