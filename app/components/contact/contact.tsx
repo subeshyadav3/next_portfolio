@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import useInViewAnimation from "@/app/hooks/useInViewAnimation";
 import "../../globals.css";
+import { BsCopy } from "react-icons/bs";
 
 export default function ContactPage() {
   const [isMobile, setIsMobile] = useState(false);
@@ -48,7 +49,26 @@ export default function ContactPage() {
     setErrors(newErrors);
 
     if (valid) {
-      alert("Message submitted successfully!");
+      const response = fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      })
+
+      response.then(res => {
+        if (!res.ok) {
+          throw new Error("Failed to send message");
+        }
+        alert("Message sent successfully:");
+        return res.json();
+      }).catch(error => {
+        console.error("Error sending message:", error);
+        alert("Failed to submit message. Please try again later.");
+      });
+
+
       setFormData({ name: "", email: "", message: "" });
       setErrors({ name: "", email: "", message: "" });
     }
@@ -67,12 +87,11 @@ export default function ContactPage() {
     <div
       id="contact"
       className="min-h-screen flex flex-col justify-center items-center px-4 sm:px-0"
-   
+
     >
       <h2
-        className={`text-4xl font-semibold mb-6 text-[#90A0D9] opacity-0 ${
-          isInView ? "hero-anim-title opacity-100" : ""
-        }`}
+        className={`text-4xl font-semibold mb-6 text-[#90A0D9] opacity-0 ${isInView ? "hero-anim-title opacity-100" : ""
+          }`}
       >
         Get In Touch
       </h2>
@@ -119,22 +138,30 @@ export default function ContactPage() {
 
       <div className="flex items-center space-x-4 mt-6">
         <button
-          className={`opacity-0 ${isInView ? "hero-anim-title delay-600 opacity-100" : ""} 
+          className={`opacity-0 group ${isInView ? "hero-anim-title delay-600 opacity-100" : ""} 
             border-2 border-[#546397] w-[90px] mr-2 px-4 py-2 rounded-sm resume-btn`}
           onClick={handleSubmit}
         >
-          <span className="relative z-10 hover:text-blue-950">Submit</span>
+          <span className="relative z-10 group-hover:text-blue-950">Submit</span>
         </button>
 
         <span className="font-light py-2">or</span>
 
+
+
         <button
-          className={`opacity-0 ${isInView ? "hero-anim-title delay-600 opacity-100" : ""} 
-            border-2 border-[#546397] w-[90px] mr-2 px-4 py-2 rounded-sm resume-btn`}
-          onClick={() => (window.location.href = "mailto:subeshgaming@gmail.com")}
+          className={`group flex gap-2 border-2 border-[#546397] w-[110px] mr-2 px-4 py-2 rounded-sm resume-btn
+    ${isInView ? "hero-anim-title delay-600 opacity-100" : "opacity-0"}`}
+          onClick={() => {
+            navigator.clipboard.writeText("subeshgaming@gmail.com")
+            alert("Email copied to clipboard!");
+          }}
         >
-          <span className="relative z-10 hover:text-blue-950">Email</span>
+          <span className="relative z-10 group-hover:text-blue-950">Email</span>
+          <BsCopy className="z-10 ml-1 mt-0.5 group-hover:text-[#0D1232]" />
         </button>
+
+
       </div>
     </div>
   );

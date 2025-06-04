@@ -1,9 +1,9 @@
 import { Poppins } from "next/font/google";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/navbar";
-import Sidebar from "./components/sidebar";
-import SidebarRight from "./components/sidebarRight";
+import Navbar from "./components/navbar/navbar";
+import Sidebar from "./components/sidebars/sidebar";
+import SidebarRight from "./components/sidebars/sidebarRight";
 
 // Google fonts setup
 const poppins = Poppins({

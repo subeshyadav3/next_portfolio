@@ -5,7 +5,7 @@ import { useEffect, useState } from "react"
 import Image from "next/image"
 import { ExternalLink, Github } from 'lucide-react'
 
-import "../globals.css"
+import "../../globals.css"
 
 interface ProjectCardProps {
   title: string

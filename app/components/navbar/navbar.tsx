@@ -22,14 +22,13 @@ export default function Navbar({animate}: { animate: boolean }) {
         return () => window.removeEventListener("resize", handleResize)
     }, [])
 
+
     useEffect(() => {
         const handleScroll = () => {
             const currentScrollY = window.scrollY
             if (currentScrollY > lastScrollY && currentScrollY > 80) {
-                // scrolling down
                 setShowNavbar(false)
             } else {
-                // scrolling up
                 setShowNavbar(true)
             }
             setLastScrollY(currentScrollY)
@@ -42,7 +41,7 @@ export default function Navbar({animate}: { animate: boolean }) {
     const toggleMenu = () => {
         setMobNavTriggered(!mobNavTriggered)
         setIsMenuOpen(!isMenuOpen)
-        document.body.style.overflow = !isMenuOpen ? "hidden" : ""
+
     }
 
     const closeMenu = () => {
@@ -53,7 +52,7 @@ export default function Navbar({animate}: { animate: boolean }) {
     const navLinks = [
         { href: "#home", label: "Home" },
         { href: "#about", label: "About" },
-        // { href: "#skills", label: "Skills" },
+        { href: "#experiences", label: "Experiences" },
         { href: "#projects", label: "Projects" },
         { href: "#contact", label: "Contact" },
     ]
@@ -78,12 +77,12 @@ export default function Navbar({animate}: { animate: boolean }) {
       return (
         <>
           {isMobile && isMenuOpen && (
-            <div className="fixed w-full inset-0 backdrop-blur-lg z-40" onClick={closeMenu} />
+            <div className="fixed w-full  inset-0 backdrop-blur-lg z-40" onClick={closeMenu} />
           )}
-      
-      
+
           {isMobile && isMenuOpen && (
-            <div className="mobile-nav fixed top-0 left-0 w-full h-screen  z-50 flex flex-col gap-2 items-center justify-center overflow-y-hidden">
+            <div className="mobile-nav  fixed bg-[radial-gradient(closest-side,#430741,#0c1232)] top-0  left-0 w-full h-screen  z-50 flex flex-col gap-2 items-center justify-center overflow-y-hidden">
+
               {navLinks.map((link) => (
                 <Link key={link.href} href={link.href} scroll={false} onClick={(e) => handleClick(e, link.href)}>
                   <span className="nav-anim cursor-pointer text-md my-4">{link.label}</span>

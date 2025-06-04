@@ -3,13 +3,13 @@
 import { useState, useEffect } from 'react';
 import SplashScreen from './components/SplashScreen';
 import './globals.css';
-import Hero from './components/single-page-comp/Hero';
-import About from './components/single-page-comp/about';
-import Project from './components/single-page-comp/projects';
-import ContactPage from './components/single-page-comp/contact';
-import Navbar from './components/navbar';
-import Education from './components/single-page-comp/education';
-import Experience from './components/single-page-comp/experience';
+import Hero from './components/hero/Hero';
+import About from './components/about/about';
+import Project from './components/projects/projects';
+import ContactPage from './components/contact/contact';
+import Navbar from './components/navbar/navbar';
+import Education from './components/education/education';
+import Experience from './components/experience/experience';
 
 export default function HomePage() {
   const [isLoading, setIsLoading] = useState(true);

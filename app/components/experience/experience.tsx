@@ -53,17 +53,18 @@ export default function ExperienceCards() {
 
   return (
     <section
-    className={` py-12 px-2 sm:px-6 mb-5 max-w-4xl mx-auto
+    id='experiences'
+    className={` py-8 px-2 sm:px-6 mb-5 max-w-4xl sm:ml-[100px]  lg:ml-[200px]
       opacity-0 transform translate-y-8 transition-all duration-700
       ${isInView ? "hero-anim-title delay-200 opacity-100 translate-y-0" : ""}
     `}
   >
     <h1
-          className={`text-3xl mb-5 font-bold text-[#90A0D9] title-line opacity-0 ${
+          className={`text-3xl mb-5 sm:mb-10  font-bold text-[#90A0D9] title-line opacity-0 ${
             isInView ? "hero-anim-title delay-200 opacity-100" : ""
           }`}
         >
-          Education
+          Experiences
         </h1>
     <div
       id="experience-cards"

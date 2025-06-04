@@ -1,8 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import ProjectCard from "../projectcard"
+import ProjectCard from "./projectcard"
 import useInViewAnimation from "@/app/hooks/useInViewAnimation"
+import "../../globals.css"
 
 export default function ProjectsPage() {
   const [showMore, setShowMore] = useState(false)
