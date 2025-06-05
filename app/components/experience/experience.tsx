@@ -6,6 +6,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useEffect, useRef } from 'react';
 import '../../globals.css';
 import experienceData from './experience-data';
+import AnimatedTitle from '../animation/AnimatedTitle';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -16,29 +17,10 @@ const dateFormatOptions: Intl.DateTimeFormatOptions = {
 
 export default function ExperienceCards() {
   const sectionRef = useRef<HTMLDivElement>(null);
-  const titleRef = useRef<HTMLHeadingElement>(null);
   const cardsRef = useRef<HTMLDivElement[]>([]);
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-
-      gsap.fromTo(
-        titleRef.current,
-        { opacity: 0,  x: -50 },
-        {
-          opacity: 1,
-          
-          x: 0,
-          duration: 1,
-          ease: 'bounce.out',
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: 'top 80%',
-            end: 'bottom 30%',
-            toggleActions: 'play reverse play reverse',
-          },
-        }
-      );
       
       cardsRef.current.forEach((card, idx) => {
         gsap.fromTo(
@@ -71,12 +53,11 @@ export default function ExperienceCards() {
       ref={sectionRef}
       className="py-8 px-2 sm:px-6 mb-5 max-w-4xl sm:ml-[100px] lg:ml-[200px]"
     >
-      <h1
-        ref={titleRef}
-        className="text-3xl mb-5 sm:mb-10 font-bold text-[#90A0D9] opacity-0"
-      >
-        Experiences
-      </h1>
+<AnimatedTitle className="text-4xl font-semibold mb-6 text-[#90A0D9]">
+  Experiences
+</AnimatedTitle>
+
+     
 
       <div className="flex flex-col gap-10 max-w-5xl mx-auto">
         {experienceData.map((exp, idx) => (

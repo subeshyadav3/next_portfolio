@@ -6,35 +6,20 @@ import "../../globals.css"
 import projectsData from "./projectsData"
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import AnimatedTitle from "../animation/AnimatedTitle"
 
 gsap.registerPlugin(ScrollTrigger)
 
 export default function ProjectsPage() {
   const sectionRef = useRef<HTMLDivElement>(null)
   const cardRef = useRef<HTMLDivElement[]>([])
-  const titleRef= useRef<HTMLHeadingElement>(null)
+
 
   const [showMore, setShowMore] = useState(false)
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.fromTo(titleRef.current,
-
-        { opacity: 0,  x: -50 },
-        {
-          opacity: 1,
-          
-          x: 0,
-          duration: 1,
-          ease: 'bounce.out',
-          scrollTrigger: {
-            trigger: sectionRef.current,
-            start: 'top 80%',
-            end: 'bottom 30%',
-            toggleActions: 'play reverse play reverse',
-          },
-        }
-      )
+ 
 
       cardRef.current.forEach((card, index) => {
         if (!card) return
@@ -66,9 +51,9 @@ export default function ProjectsPage() {
   return (
     <div id='projects' className="flex flex-col mt-[100px] sm:ml-[100px] lg:ml-[200px] pl-2 sm:pl-0">
       <div className="space-y-8">
-        <div ref={titleRef}>
-          <h1 className="text-3xl font-bold text-[#90A0D9] title-line">Projects</h1>
-        </div>
+        <AnimatedTitle className="text-3xl font-bold text-[#90A0D9] title-line">
+          Projects
+        </AnimatedTitle>
 
         <div ref={sectionRef}  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {projectsData.slice(0, showMore ? projectsData.length : 3).map((project, index) => (

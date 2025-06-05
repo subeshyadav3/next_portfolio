@@ -27,8 +27,9 @@ const ScrollFadeIn = ({ children, className = "" }: Props) => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: elRef.current,
-          start: "top 80%",
-          toggleActions: "play none none reverse",
+          start: "top 90%",
+          end: "bottom 10%",
+          toggleActions: "play reverse play reverse",
         },
       }
     );

@@ -30,7 +30,7 @@ export default function HomePage() {
   return (
     <>
     <Navbar animate={pageVisible} />
-      <Hero  animate={pageVisible}/>
+      <Hero />
       <About  />
       <Education />
       <Experience />

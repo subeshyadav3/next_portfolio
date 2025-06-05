@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import useInViewAnimation from "@/app/hooks/useInViewAnimation";
 import "../../globals.css";
-import ScrollFadeIn from "../animation/fadeUp";
+// import ScrollFadeIn from "../animation/fadeUp";
 
 export default function About() {
   const isInView = useInViewAnimation(0.8, "about");
@@ -44,7 +44,7 @@ export default function About() {
             isInView ? "hero-anim delay-400 opacity-100" : ""
           }`}
         >
-          <ScrollFadeIn>
+          {/* <ScrollFadeIn> */}
 
           <p className="text-[#BDBDDD]">
             I am a passionate engineering student with a keen interest in coding
@@ -53,8 +53,8 @@ export default function About() {
             My dedication to continuous learning drives me to stay updated with
             the latest trends in the tech industry.
           </p>
-          </ScrollFadeIn>
-          <ScrollFadeIn>
+          {/* </ScrollFadeIn> */}
+          {/* <ScrollFadeIn> */}
           <p
             className={`text-[#BDBDDD] py-5 opacity-0 ${
               isInView ? "hero-anim delay-400 opacity-100" : ""
@@ -66,7 +66,7 @@ export default function About() {
             commitment to excellence.
           </p>
 
-          </ScrollFadeIn>
+          {/* </ScrollFadeIn> */}
           <div
             className={`opacity-0 ${
               isInView ? "hero-anim delay-600 opacity-100" : ""

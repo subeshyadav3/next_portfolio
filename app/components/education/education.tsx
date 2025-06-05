@@ -1,10 +1,14 @@
-"use client"
-import useInViewAnimation from "@/app/hooks/useInViewAnimation"
-import "../../education.css"
+"use client";
+
+import { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import "../../education.css";
+import AnimatedTitle from "../animation/AnimatedTitle";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function Education() {
-  const isInView = useInViewAnimation(0.8, "education")
-
   const educationData = [
     {
       period: "Jan 2024 - Jan 2028",
@@ -34,32 +38,96 @@ export default function Education() {
       description:
         "Built a strong educational foundation during primary schooling, where curiosity and love for learning were nurtured.",
     },
-  ]
+  ];
+
+
+  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const cardsRefMob = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    if (!cardsRef.current) return;
+
+    cardsRef.current.forEach((card, idx) => {
+      if (!card) return;
+
+      gsap.fromTo(
+        card,
+        { opacity: 0, y: 30, x: -20, scale: 0.9 },
+        {
+          opacity: 1,
+          y: 0,
+          x: 0,
+          scale: 1,
+          duration: 1,
+          ease: "power2.out",
+          delay: idx * 0.2,
+          scrollTrigger: {
+            trigger: card,
+            start: "top 85%",
+            end: "bottom 20%",
+            toggleActions: "play reverse play reverse",
+          },
+        }
+      );
+      
+      
+    });
+
+    
+    cardsRefMob.current.forEach((card, idx) => {
+      if (!card) return;
+
+      gsap.fromTo(
+        card,
+        { opacity: 0, y: 30, x: -20, scale: 0.9 },
+        {
+          opacity: 1,
+          y: 0,
+          x: 0,
+          scale: 1,
+          duration: 1,
+          ease: "power2.out",
+          delay: idx * 0.2,
+          scrollTrigger: {
+            trigger: card,
+            start: "top 85%",
+            end: "bottom 20%",
+            toggleActions: "play reverse play reverse",
+          },
+        }
+      );
+      
+      
+    });
+
+    
+
+    return () => {
+      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+    };
+  }, []);
 
   return (
     <div
       id="education"
-      className="flex flex-col mt-15  sm:ml-[100px]  lg:ml-[200px] pb-5 sm:px-0 pl-2"
+      className="flex flex-col mt-15 sm:ml-[100px] lg:ml-[200px] pb-5 sm:px-0 pl-2"
     >
       <div>
-        <h1
-          className={`text-3xl mb-5 font-bold text-[#90A0D9] title-line opacity-0 ${
-            isInView ? "hero-anim-title delay-200 opacity-100" : ""
-          }`}
-        >
+        <AnimatedTitle className="text-3xl font-bold text-[#90A0D9] title-line mb-10 sm:mb-2">
           Education
-        </h1>
+        </AnimatedTitle>
       </div>
 
-
-      <div
-        className={`education-timeline-vertical md:hidden mt-10 opacity-0 ${isInView ? "hero-anim delay-400 opacity-100" : ""}`}
-      >
+      <div className="education-timeline-vertical md:hidden mt-10">
         {educationData.map((item, index) => (
-          <div key={index} className="timeline-item-vertical">
+          <div
+            key={index}
+            ref={(el) => {cardsRefMob.current[index] = el!;}}
+            className="timeline-item-vertical"
+          >
             <div className="timeline-dot-vertical"></div>
             <div className="timeline-date-vertical">
-              <span>{item.period}</span>
+              <span>{item.period} </span>
             </div>
             <div className="timeline-content-vertical">
               <h3>{item.degree}</h3>
@@ -70,16 +138,15 @@ export default function Education() {
         ))}
       </div>
 
-  
-      <div
-        className={`hidden md:block education-timeline-horizontal mt-16 opacity-0 ${isInView ? "hero-anim delay-400 opacity-100" : ""}`}
-      >
+      <div className="hidden md:block education-timeline-horizontal mt-16">
         <div className="timeline-track">
-          {/* <div className="timeline-line"></div> */}
-
           <div className="timeline-items-container">
             {educationData.map((item, index) => (
-              <div key={index} className={`timeline-item-horizontal ${isInView ? `animate-item-${index}` : ""}`}>
+              <div
+                key={index}
+                ref={(el) => {cardsRef.current[index] = el!;}}
+                className="timeline-item-horizontal"
+              >
                 <div className="timeline-dot-horizontal"></div>
                 <div className="timeline-content-horizontal">
                   <h3>{item.degree}</h3>
@@ -92,8 +159,6 @@ export default function Education() {
           </div>
         </div>
       </div>
-
- 
     </div>
-  )
+  );
 }

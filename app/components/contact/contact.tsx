@@ -1,10 +1,10 @@
 "use client";
-
 import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { BsCopy } from "react-icons/bs";
 import "../../globals.css";
+import ScrollText from "../animation/ScrollText";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,20 +26,23 @@ export default function ContactPage() {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.fromTo(titleRef.current, {
-
-        y: -50, opacity: 0
-      }, {
-        y: 0,
-        opacity: 1,
-        duration: 0.5,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: titleRef.current,
-          start: "top 80%",
-          toggleActions: "play reverse none reverse",
-        },
-      })
+      if (titleRef.current) {
+        gsap.fromTo(
+          titleRef.current,
+          { y: -50, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.5,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: titleRef.current,
+              start: "top 80%",
+              toggleActions: "play reverse none reverse",
+            },
+          }
+        );
+      }
 
       inputRefs.current.forEach((el, index) => {
         if (!el) return;
@@ -55,7 +58,6 @@ export default function ContactPage() {
             scrollTrigger: {
               trigger: el,
               start: "top 100%",
-              
               toggleActions: "play reverse play reverse",
             },
           }
@@ -63,7 +65,7 @@ export default function ContactPage() {
       });
     }, containerRef);
 
-    // return () => ctx.revert();
+    return () => ctx.revert(); // ✅ Restore animations cleanly
   }, []);
 
   const validateEmail = (email: string) =>
@@ -103,7 +105,7 @@ export default function ContactPage() {
       })
         .then(res => {
           if (!res.ok) throw new Error("Failed to send message");
-          alert("Message sent successfully:");
+          alert("Message sent successfully!");
           return res.json();
         })
         .catch(err => {
@@ -117,10 +119,10 @@ export default function ContactPage() {
   };
 
   const inputClass = `
-    transition-all duration-300 bg-[#1d2136] text-white rounded-md px-4 py-3 mb-3 
-    border-2 border-[#1d2136] 
-    hover:border-transparent 
-    hover:bg-gradient-to-r hover:from-[#1d2136] hover:to-[#29305a] 
+    transition-all duration-300 bg-[#1d2136] text-white rounded-md px-4 py-3 mb-3
+    border-2 border-[#1d2136]
+    hover:border-transparent
+    hover:bg-gradient-to-r hover:from-[#1d2136] hover:to-[#29305a]
     hover:shadow-2xl hover:scale-105 hover:shadow-[#29305a]
     focus:outline-none focus:ring-2 focus:ring-[#546397]
   `;
@@ -132,9 +134,7 @@ export default function ContactPage() {
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 w-full max-w-md mx-auto">
-        <div ref={(el) => {
-          if (el) inputRefs.current[1] = el;
-        }} className="flex flex-col">
+        <div ref={(el) => { inputRefs.current[0] = el; }} className="flex flex-col">
           <input
             type="text"
             id="name"
@@ -147,9 +147,7 @@ export default function ContactPage() {
           {errors.name && <span className="text-red-500 text-sm">{errors.name}</span>}
         </div>
 
-        <div ref={(el) => {
-          if (el) inputRefs.current[1] = el;
-        }} className="flex flex-col">
+        <div ref={(el) => { inputRefs.current[1] = el; }} className="flex flex-col">
           <input
             type="email"
             id="email"
@@ -162,9 +160,7 @@ export default function ContactPage() {
           {errors.email && <span className="text-red-500 text-sm">{errors.email}</span>}
         </div>
 
-        <div ref={(el) => {
-          if (el) inputRefs.current[1] = el;
-        }} className="flex flex-col sm:col-span-2">
+        <div ref={(el) => { inputRefs.current[2] = el; }} className="flex flex-col sm:col-span-2">
           <textarea
             id="message"
             value={formData.message}
@@ -179,21 +175,17 @@ export default function ContactPage() {
 
       <div className="flex items-center space-x-4 mt-6">
         <button
-          ref={(el) => {
-            if (el) inputRefs.current[1] = el;
-          }}
+        ref={(el) => { inputRefs.current[3] = el; }}
           className="group border-2 border-[#546397] w-[90px] mr-2 px-4 py-2 rounded-sm resume-btn"
           onClick={handleSubmit}
         >
           <span className="relative z-10 group-hover:text-blue-950">Submit</span>
         </button>
-
-        <span className="font-light py-2">or</span>
+      <ScrollText text="or" duration={1} yOffset={50} delay={0.1} animateOnMount={true} />
+    
 
         <button
-          ref={(el) => {
-            if (el) inputRefs.current[1] = el;
-          }}
+        ref={(el) => { inputRefs.current[4] = el; }}
           className="group flex gap-2 border-2 border-[#546397] w-[110px] mr-2 px-4 py-2 rounded-sm resume-btn"
           onClick={() => {
             navigator.clipboard.writeText("subeshgaming@gmail.com");
