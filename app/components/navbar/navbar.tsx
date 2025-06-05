@@ -100,7 +100,7 @@ export default function Navbar({ animate }: { animate: boolean }) {
         </Link>
 
         {!isMobile ? (
-          <div className="flex space-x-6 text-sm font-regular text-[#ccd6f6]">
+          <div className="hidden sm:flex  space-x-6 text-sm font-regular text-[#ccd6f6]">
             {navLinks.map((link,i) => (
               <Link
                 key={link.href}

@@ -1,14 +1,19 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import useInViewAnimation from "@/app/hooks/useInViewAnimation";
-import "../../globals.css";
+import { useRef, useEffect, useState } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { BsCopy } from "react-icons/bs";
+import "../../globals.css";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function ContactPage() {
-  const [isMobile, setIsMobile] = useState(false);
-  const isInView = useInViewAnimation(0.8, "contact");
+  const containerRef = useRef<HTMLDivElement>(null);
+  const inputRefs = useRef<(HTMLDivElement | HTMLButtonElement)[]>([]);
+  const titleRef = useRef<HTMLHeadingElement>(null);
 
+  const [isMobile, setIsMobile] = useState(false);
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [errors, setErrors] = useState({ name: "", email: "", message: "" });
 
@@ -17,6 +22,48 @@ export default function ContactPage() {
     handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(titleRef.current, {
+
+        y: -50, opacity: 0
+      }, {
+        y: 0,
+        opacity: 1,
+        duration: 0.5,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: titleRef.current,
+          start: "top 80%",
+          toggleActions: "play reverse none reverse",
+        },
+      })
+
+      inputRefs.current.forEach((el, index) => {
+        if (!el) return;
+        gsap.fromTo(
+          el,
+          { y: 50, opacity: 0 },
+          {
+            y: 0,
+            opacity: 1,
+            duration: 0.5,
+            delay: index * 0.2,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: el,
+              start: "top 100%",
+              
+              toggleActions: "play reverse play reverse",
+            },
+          }
+        );
+      });
+    }, containerRef);
+
+    // return () => ctx.revert();
   }, []);
 
   const validateEmail = (email: string) =>
@@ -49,25 +96,20 @@ export default function ContactPage() {
     setErrors(newErrors);
 
     if (valid) {
-      const response = fetch('/api/send-email', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+      fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
       })
-
-      response.then(res => {
-        if (!res.ok) {
-          throw new Error("Failed to send message");
-        }
-        alert("Message sent successfully:");
-        return res.json();
-      }).catch(error => {
-        console.error("Error sending message:", error);
-        alert("Failed to submit message. Please try again later.");
-      });
-
+        .then(res => {
+          if (!res.ok) throw new Error("Failed to send message");
+          alert("Message sent successfully:");
+          return res.json();
+        })
+        .catch(err => {
+          console.error("Error sending message:", err);
+          alert("Failed to submit message. Please try again later.");
+        });
 
       setFormData({ name: "", email: "", message: "" });
       setErrors({ name: "", email: "", message: "" });
@@ -84,53 +126,52 @@ export default function ContactPage() {
   `;
 
   return (
-    <div
-      id="contact"
-      className="min-h-screen flex flex-col justify-center items-center px-4 sm:px-0"
-
-    >
-      <h2
-        className={`text-4xl font-semibold mb-6 text-[#90A0D9] opacity-0 ${isInView ? "hero-anim-title opacity-100" : ""
-          }`}
-      >
+    <div ref={containerRef} id="contact" className="min-h-screen flex flex-col justify-center items-center px-4 sm:px-0">
+      <h2 ref={titleRef} className="text-4xl font-semibold mb-6 text-[#90A0D9]">
         Get In Touch
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 w-full max-w-md mx-auto">
-        <div className="flex flex-col">
+        <div ref={(el) => {
+          if (el) inputRefs.current[1] = el;
+        }} className="flex flex-col">
           <input
             type="text"
             id="name"
             value={formData.name}
             onChange={handleChange}
             placeholder="Your Name"
-            className={`${inputClass} ${isInView ? "hero-anim-title delay-400 opacity-100" : "opacity-0"}`}
+            className={inputClass}
             autoComplete="off"
           />
           {errors.name && <span className="text-red-500 text-sm">{errors.name}</span>}
         </div>
 
-        <div className="flex flex-col">
+        <div ref={(el) => {
+          if (el) inputRefs.current[1] = el;
+        }} className="flex flex-col">
           <input
             type="email"
             id="email"
             value={formData.email}
             onChange={handleChange}
             placeholder="Your Email"
-            className={`${inputClass} ${isInView ? "hero-anim-title delay-400 opacity-100" : "opacity-0"}`}
+            className={inputClass}
             autoComplete="off"
           />
           {errors.email && <span className="text-red-500 text-sm">{errors.email}</span>}
         </div>
 
-        <div className="flex flex-col sm:col-span-2">
+        <div ref={(el) => {
+          if (el) inputRefs.current[1] = el;
+        }} className="flex flex-col sm:col-span-2">
           <textarea
             id="message"
             value={formData.message}
             onChange={handleChange}
             placeholder="Your Message"
             rows={5}
-            className={`${inputClass} resize-none ${isInView ? "hero-anim-title delay-400 opacity-100" : "opacity-0"}`}
+            className={`${inputClass} resize-none`}
           />
           {errors.message && <span className="text-red-500 text-sm">{errors.message}</span>}
         </div>
@@ -138,8 +179,10 @@ export default function ContactPage() {
 
       <div className="flex items-center space-x-4 mt-6">
         <button
-          className={`opacity-0 group ${isInView ? "hero-anim-title delay-600 opacity-100" : ""} 
-            border-2 border-[#546397] w-[90px] mr-2 px-4 py-2 rounded-sm resume-btn`}
+          ref={(el) => {
+            if (el) inputRefs.current[1] = el;
+          }}
+          className="group border-2 border-[#546397] w-[90px] mr-2 px-4 py-2 rounded-sm resume-btn"
           onClick={handleSubmit}
         >
           <span className="relative z-10 group-hover:text-blue-950">Submit</span>
@@ -147,21 +190,19 @@ export default function ContactPage() {
 
         <span className="font-light py-2">or</span>
 
-
-
         <button
-          className={`group flex gap-2 border-2 border-[#546397] w-[110px] mr-2 px-4 py-2 rounded-sm resume-btn
-    ${isInView ? "hero-anim-title delay-600 opacity-100" : "opacity-0"}`}
+          ref={(el) => {
+            if (el) inputRefs.current[1] = el;
+          }}
+          className="group flex gap-2 border-2 border-[#546397] w-[110px] mr-2 px-4 py-2 rounded-sm resume-btn"
           onClick={() => {
-            navigator.clipboard.writeText("subeshgaming@gmail.com")
+            navigator.clipboard.writeText("subeshgaming@gmail.com");
             alert("Email copied to clipboard!");
           }}
         >
           <span className="relative z-10 group-hover:text-blue-950">Email</span>
           <BsCopy className="z-10 ml-1 mt-0.5 group-hover:text-[#0D1232]" />
         </button>
-
-
       </div>
     </div>
   );

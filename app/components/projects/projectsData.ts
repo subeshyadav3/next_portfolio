@@ -6,7 +6,7 @@ const projectsData = [
       stack: ["React", "NodeJS", "ExpressJS", "MongoDB"],
       projectLink: "https://frontendstore-five.vercel.app/",
       githubLink: "https://github.com/subeshyadav3/store",
-      delay: "delay-200"
+   
     },
     {
       title: "Next.js Blog App",
@@ -15,7 +15,7 @@ const projectsData = [
       stack: ["Next.js", "TypeScript", "Tailwind", "Clerk"],
       projectLink: "https://blog-app-tau-ashy.vercel.app/",
       githubLink: "https://github.com/subeshyadav3/blog_app",
-      delay: "delay-200"
+    
     },
     {
       title: "NPL API",
@@ -24,7 +24,7 @@ const projectsData = [
       stack: ["NodeJS", "ExpressJS"],
       projectLink: "https://nepal-premiere-league-npl-api.vercel.app/",
       githubLink: "https://github.com/subeshyadav3/Nepal_Premier_League-NPL-_API",
-      delay: "delay-400"
+    
     },
     {
       title: "AQI Predictor",
@@ -36,7 +36,7 @@ const projectsData = [
       stack: ["Python", "Streamlit", "Pandas/Numpy"],
       projectLink: "https://kathmanduairqualityforecasting.streamlit.app/",
       githubLink: "https://github.com/subeshyadav3/AQI_Prediction_Kathmandu",
-      delay: "delay-300"
+   
     },
     {
       title: "WhiteBoard App",
@@ -45,7 +45,7 @@ const projectsData = [
       stack: ["HTML", "CSS", "JavaScript"],
       projectLink: "http://subesh420.com.np/",
       githubLink: "https://github.com/subeshyadav3/whiteboard",
-      delay: "delay-300"
+   
     },
     {
       title: "Flappy Bird",
@@ -54,7 +54,7 @@ const projectsData = [
       stack: ["HTML", "CSS", "JavaScript"],
       projectLink: "https://subeshyadav3.github.io/flappybird/",
       githubLink: "https://github.com/subeshyadav3/flappybird",
-      delay: "delay-400"
+    
     }
   ]
   

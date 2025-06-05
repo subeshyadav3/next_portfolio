@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import useInViewAnimation from "@/app/hooks/useInViewAnimation";
 import "../../globals.css";
+import ScrollFadeIn from "../animation/fadeUp";
 
 export default function About() {
   const isInView = useInViewAnimation(0.8, "about");
@@ -30,11 +31,11 @@ export default function About() {
         >
           <div className="absolute top-[40px] left-[40px] w-[220px] h-[230px] bg-[#272D44] border-2 border-[#BDBDDD] rounded-sm"></div>
           <Image
-            src="/about.jpg"
+            src="/profile.jpg"
             alt="About Me"
             width={250}
             height={250}
-            className="relative object-cover p-2 shadow-lg  rounded-md  z-10 hover:top-[5px] hover:left-[5px] transition-transform duration-300 ease-in-out"
+            className="relative object-cover p-2 shadow-lg  rounded-2xl opacity-90 hover:opacity-100  z-10 hover:top-[5px] hover:left-[5px] transition-transform duration-300 ease-in-out"
           />
         </div>
 
@@ -43,6 +44,8 @@ export default function About() {
             isInView ? "hero-anim delay-400 opacity-100" : ""
           }`}
         >
+          <ScrollFadeIn>
+
           <p className="text-[#BDBDDD]">
             I am a passionate engineering student with a keen interest in coding
             and problem-solving. I thrive on challenges and enjoy exploring new
@@ -50,6 +53,8 @@ export default function About() {
             My dedication to continuous learning drives me to stay updated with
             the latest trends in the tech industry.
           </p>
+          </ScrollFadeIn>
+          <ScrollFadeIn>
           <p
             className={`text-[#BDBDDD] py-5 opacity-0 ${
               isInView ? "hero-anim delay-400 opacity-100" : ""
@@ -61,6 +66,7 @@ export default function About() {
             commitment to excellence.
           </p>
 
+          </ScrollFadeIn>
           <div
             className={`opacity-0 ${
               isInView ? "hero-anim delay-600 opacity-100" : ""

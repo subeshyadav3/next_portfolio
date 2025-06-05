@@ -1,7 +1,7 @@
 "use client"
 
 import type { FC } from "react"
-import { useEffect, useState } from "react"
+import { useEffect, useState, forwardRef } from "react"
 import Image from "next/image"
 import { ExternalLink, Github } from 'lucide-react'
 
@@ -14,11 +14,16 @@ interface ProjectCardProps {
   stack: string[]
   projectLink: string
   githubLink?: string
-  isInView: boolean
-  delay: string
 }
 
-const ProjectCard: FC<ProjectCardProps> = ({ title, description, photo, stack, projectLink, githubLink, isInView, delay }) => {
+const ProjectCard = forwardRef<HTMLDivElement, ProjectCardProps>(({
+  title,
+  description,
+  photo,
+  stack,
+  projectLink,
+  githubLink,
+}, ref) => {
   const isMultiple = Array.isArray(photo)
   const [index, setIndex] = useState(0)
   const [showMore, setShowMore] = useState(false)
@@ -35,14 +40,10 @@ const ProjectCard: FC<ProjectCardProps> = ({ title, description, photo, stack, p
 
   return (
     <div
-      className={`opacity-0
-      ${isInView ? `${delay} hero-anim opacity-100` : "opacity-0"}
-      w-full max-w-sm rounded-xl border-b-2 border-[#90a0d9]
+      ref={ref}
+      className="opacity-0 w-full max-w-sm rounded-xl border-b-2 border-[#90a0d9]
       bg-[#23283E] shadow-[#171f31] shadow-md transition-all duration-300
-      hover:shadow-xl hover:-translate-y-1
-       hover:border-[#90a0d9] 
-      cursor-pointer
-      `}
+      hover:shadow-xl hover:-translate-y-1 hover:border-[#90a0d9] cursor-pointer"
     >
       <div className="relative h-48 w-full overflow-hidden">
         <Image
@@ -98,13 +99,14 @@ const ProjectCard: FC<ProjectCardProps> = ({ title, description, photo, stack, p
               aria-label="View source code on GitHub"
               className="inline-flex h-10 w-10 items-center justify-center rounded-md border border-gray-200 bg-transparent text-gray-700  focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2"
             >
-              <Github className="h-4 w-4 text-white " />
+              <Github className="h-4 w-4 text-white" />
             </a>
           )}
         </div>
       </div>
     </div>
   )
-}
+})
 
+ProjectCard.displayName = "ProjectCard"
 export default ProjectCard

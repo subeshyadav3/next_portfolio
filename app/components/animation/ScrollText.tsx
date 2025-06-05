@@ -70,7 +70,7 @@ export default function ScrollText({
       <div
         ref={textRef}
         style={{
-        //   fontSize: '1.25rem',
+
           display: 'inline-block',
         }}
       >

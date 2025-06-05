@@ -24,13 +24,13 @@ export default function ExperienceCards() {
 
       gsap.fromTo(
         titleRef.current,
-        { opacity: 0, y: 20, x: -50 },
+        { opacity: 0,  x: -50 },
         {
           opacity: 1,
-          y: 0,
+          
           x: 0,
           duration: 1,
-          ease: 'power2.out',
+          ease: 'bounce.out',
           scrollTrigger: {
             trigger: sectionRef.current,
             start: 'top 80%',
@@ -40,7 +40,6 @@ export default function ExperienceCards() {
         }
       );
       
-
       cardsRef.current.forEach((card, idx) => {
         gsap.fromTo(
           card,
@@ -111,7 +110,6 @@ export default function ExperienceCards() {
               </div>
             </div>
 
-            {/* Title and Summary */}
             <div className="flex flex-col md:w-3/4 gap-4">
               <h3 className="font-semibold text-[#90a0d9] text-lg">
                 {exp.position}
