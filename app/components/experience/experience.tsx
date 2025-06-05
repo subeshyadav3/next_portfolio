@@ -30,7 +30,7 @@ export default function ExperienceCards() {
             opacity: 1,
             y: 0,
             x: 0,
-            duration: 1,
+            duration: .5,
             ease: 'power3.out',
             scrollTrigger: {
               trigger: card,
