@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { BsCopy } from "react-icons/bs";
 import "../../globals.css";
 import ScrollText from "../animation/ScrollText";
-import Toast from "../toast/page"; // If your Toast is in `components/toast/page.tsx`
+import Toast from "../toast/toast"; 
 
 gsap.registerPlugin(ScrollTrigger);
 

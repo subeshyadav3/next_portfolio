@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import "../../globals.css";
-import Toast from "../toast/page";
+import Toast from "../toast/toast";
 
 const SidebarLeft: React.FC = () => {
   const [toastMessage, setToastMessage] = useState<string>("");
