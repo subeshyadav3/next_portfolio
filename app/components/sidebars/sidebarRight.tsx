@@ -8,8 +8,13 @@ const SidebarLeft: React.FC = () => {
     <div className="fixed top-1/2 left-0 hidden  sm:flex h-screen w-[50px] flex-col items-center  pb-6 ">
       
       <a
-        href="mailto:subeshgaming@gmail.com"
-        className="rotate-90  text-sm tracking-widest hover:text-gray-300 gmail-btn"
+        onClick={()=> {
+          navigator.clipboard.writeText("subeshgaming@gmail.com")
+          alert("Email copied to clipboard!")
+        }
+         }
+        
+        className="rotate-90 cursor-copy  text-sm tracking-widest hover:text-gray-300 gmail-btn"
       >
         subeshgaming@gmail.com
       </a>

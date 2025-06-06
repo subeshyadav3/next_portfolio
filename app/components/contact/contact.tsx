@@ -186,7 +186,7 @@ export default function ContactPage() {
 
         <button
         ref={(el) => { inputRefs.current[4] = el; }}
-          className="group flex gap-2 border-2 border-[#546397] w-[110px] mr-2 px-4 py-2 rounded-sm resume-btn"
+          className="group flex gap-2 cursor-copy border-2 border-[#546397] w-[110px] mr-2 px-4 py-2 rounded-sm resume-btn"
           onClick={() => {
             navigator.clipboard.writeText("subeshgaming@gmail.com");
             alert("Email copied to clipboard!");
