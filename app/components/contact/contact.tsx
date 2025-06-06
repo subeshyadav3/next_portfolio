@@ -70,7 +70,7 @@ export default function ContactPage() {
             scrollTrigger: {
               trigger: el,
               start: "top 100%",
-              end: "bottom 20%",
+         
               toggleActions: "play reverse play reverse",
             },
           }
