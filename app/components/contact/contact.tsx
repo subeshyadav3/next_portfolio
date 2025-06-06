@@ -49,7 +49,8 @@ export default function ContactPage() {
             scrollTrigger: {
               trigger: titleRef.current,
               start: "top 80%",
-              toggleActions: "play reverse play reverse",
+
+              toggleActions: "play none none reverse",
             },
           }
         );
@@ -69,6 +70,7 @@ export default function ContactPage() {
             scrollTrigger: {
               trigger: el,
               start: "top 100%",
+              end: "bottom 20%",
               toggleActions: "play reverse play reverse",
             },
           }
