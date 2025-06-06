@@ -49,7 +49,7 @@ export default function ContactPage() {
             scrollTrigger: {
               trigger: titleRef.current,
               start: "top 80%",
-              toggleActions: "play reverse none reverse",
+              toggleActions: "play reverse play reverse",
             },
           }
         );
@@ -154,7 +154,7 @@ export default function ContactPage() {
       </h2>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 w-full max-w-md mx-auto">
-        <div ref={(el) => { inputRefs.current[4] = el! }} className="flex flex-col">
+        <div ref={(el) => { inputRefs.current[0] = el! }} className="flex flex-col">
           <input
             type="text"
             id="name"
@@ -167,7 +167,7 @@ export default function ContactPage() {
           {errors.name && <span className="text-red-500 text-sm">{errors.name}</span>}
         </div>
 
-        <div ref={(el) => { inputRefs.current[4] = el! }} className="flex flex-col">
+        <div ref={(el) => { inputRefs.current[1] = el! }} className="flex flex-col">
           <input
             type="email"
             id="email"
@@ -180,7 +180,7 @@ export default function ContactPage() {
           {errors.email && <span className="text-red-500 text-sm">{errors.email}</span>}
         </div>
 
-        <div ref={(el) => { inputRefs.current[4] = el! }} className="flex flex-col sm:col-span-2">
+        <div ref={(el) => { inputRefs.current[2] = el! }} className="flex flex-col sm:col-span-2">
           <textarea
             id="message"
             value={formData.message}
@@ -195,7 +195,7 @@ export default function ContactPage() {
 
       <div className="flex items-center space-x-4 mt-6">
         <button
-          ref={(el) => { inputRefs.current[4] = el! }} className="group border-2 border-[#546397] w-[90px] mr-2 px-4 py-2 rounded-sm resume-btn"
+          ref={(el) => { inputRefs.current[3] = el! }} className="group border-2 border-[#546397] w-[90px] mr-2 px-4 py-2 rounded-sm resume-btn"
           onClick={handleSubmit}
         >
           <span className="relative z-10 group-hover:text-blue-950">Submit</span>
