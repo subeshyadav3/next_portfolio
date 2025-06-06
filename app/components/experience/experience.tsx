@@ -53,7 +53,7 @@ export default function ExperienceCards() {
       ref={sectionRef}
       className="py-8 px-2 sm:px-6 mb-5 max-w-4xl sm:ml-[100px] lg:ml-[200px]"
     >
-<AnimatedTitle className="text-3xl font-semibold title-line mb-6 text-[#90A0D9]">
+<AnimatedTitle className="text-3xl font-semibold title-line mb-6 text-[#90A0D9] ">
   Experiences
 </AnimatedTitle>
 

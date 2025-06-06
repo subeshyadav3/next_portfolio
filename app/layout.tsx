@@ -87,7 +87,7 @@ export default function RootLayout({
             </footer>
           </div>
 
-          <div className="w-[50px]">
+          <div className="w-[50px]  ">
             <SidebarRight />
           </div>
         </div>

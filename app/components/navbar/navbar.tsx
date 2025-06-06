@@ -6,7 +6,7 @@ import ScrollText from "../animation/ScrollText"
 
 
 
-export default function Navbar({ animate }: { animate: boolean }) {
+export default function Navbar() {
   const [isMobile, setIsMobile] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [showNavbar, setShowNavbar] = useState(true)

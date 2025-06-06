@@ -1,34 +1,63 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import useInViewAnimation from "@/app/hooks/useInViewAnimation";
 import "../../globals.css";
-// import ScrollFadeIn from "../animation/fadeUp";
+import AnimatedTitle from "../animation/AnimatedTitle";
+import ScrollFadeIn from "../animation/fadeIn";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 
 export default function About() {
   const isInView = useInViewAnimation(0.8, "about");
+  const imageRef= useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      if (imageRef.current) {
+        gsap.fromTo(
+          imageRef.current,
+          { opacity: 0,scale:0.5 },
+          {
+            opacity: 1,
+           
+            duration: 1,
+            scale: 1,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: imageRef.current,
+              start: "top 80%",
+              end: "bottom 30%",
+              toggleActions: "play reverse play reverse",
+            },
+          }
+        );
+      }
+    }, [imageRef]);
 
+    return () => ctx.revert();
+  }
+
+  , []);
   return (
     <div
       id="about"
       className="flex flex-col sm:ml-[100px] min-h-screen lg:ml-[200px] mt-[-165px] sm:mt-[-200px] pb-5 sm:px-0 pl-2"
     >
       <div>
-        <h1
-          className={`text-3xl font-bold text-[#90A0D9] title-line opacity-0 ${
-            isInView ? "hero-anim-title delay-200 opacity-100" : ""
-          }`}
-        >
-          About Me
-        </h1>
+        <AnimatedTitle className="text-3xl font-semibold title-line mb-6 text-[#90A0D9]">
+         About Me
+        </AnimatedTitle>
+       
       </div>
       <div className="flex flex-col md:flex-row">
         <div
-          className={`relative order-1 md:order-2 lg:ml-[100px] ml-5 my-5 opacity-0 ${
-            isInView ? "hero-anim delay-200" : ""
-          }`}
+        ref={imageRef} 
+          className={`relative order-1 md:order-2 lg:ml-[100px] ml-5 my-5 `}
         >
+          
           <div className="absolute top-[40px] left-[40px] w-[220px] h-[230px] bg-[#272D44] border-2 border-[#BDBDDD] rounded-sm"></div>
           <Image
             src="/profile.jpg"
@@ -40,11 +69,9 @@ export default function About() {
         </div>
 
         <div
-          className={`py-5 w-full md:w-1/2 order-2 md:order-1 opacity-0 ${
-            isInView ? "hero-anim delay-400 opacity-100" : ""
-          }`}
+          className={`py-5 w-full md:w-1/2 order-2 md:order-1 `}
         >
-          {/* <ScrollFadeIn> */}
+          <ScrollFadeIn>
 
           <p className="text-[#BDBDDD]">
             I am a passionate engineering student with a keen interest in coding
@@ -53,12 +80,10 @@ export default function About() {
             My dedication to continuous learning drives me to stay updated with
             the latest trends in the tech industry.
           </p>
-          {/* </ScrollFadeIn> */}
-          {/* <ScrollFadeIn> */}
+          </ScrollFadeIn>
+          <ScrollFadeIn>
           <p
-            className={`text-[#BDBDDD] py-5 opacity-0 ${
-              isInView ? "hero-anim delay-400 opacity-100" : ""
-            }`}
+            className={`text-[#BDBDDD] py-5`}
           >
             I am always eager to expand my skill set and take on new projects
             that push my boundaries. Whether it's developing web applications or
@@ -66,26 +91,31 @@ export default function About() {
             commitment to excellence.
           </p>
 
-          {/* </ScrollFadeIn> */}
+          </ScrollFadeIn>
           <div
-            className={`opacity-0 ${
-              isInView ? "hero-anim delay-600 opacity-100" : ""
-            }`}
+            className={``}
           >
+            <ScrollFadeIn>
             <p>I am working in these languages, libraries, or frameworks:</p>
+            </ScrollFadeIn>
+
             <div className="flex pl-5">
-              <ul className="flex gap-2 mr-10 flex-col text-[#BDBDDD] pt-5 list-disc">
+             <ScrollFadeIn>
+             <ul className="flex gap-2 mr-10 flex-col text-[#BDBDDD] pt-5 list-disc">
                 <li>JavaScript</li>
                 <li>React.js</li>
                 <li>Node.js</li>
                 <li>Next.js</li>
               </ul>
+              </ScrollFadeIn>
+              <ScrollFadeIn>
               <ul className="flex gap-2 flex-col text-[#BDBDDD] pt-5 list-disc">
                 <li>Express.js</li>
                 <li>MongoDB</li>
                 <li>Tailwind CSS</li>
                 <li>Python</li>
               </ul>
+              </ScrollFadeIn>
             </div>
           </div>
         </div>

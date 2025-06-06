@@ -24,12 +24,12 @@ export default function HomePage() {
   }, []);
 
   if (isLoading) {
-    return <SplashScreen />;
+    // return <SplashScreen />;
   }
 
   return (
     <>
-    <Navbar animate={pageVisible} />
+    <Navbar  />
       <Hero />
       <About  />
       <Education />

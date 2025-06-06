@@ -6,7 +6,7 @@ import Link from "next/link"
 
 const Sidebar: React.FC = () => {
   return (
-    <div className="fixed right-0 top-1/4 flex h-screen  w-[50px] flex-col items-center justify-center ">
+    <div className="fixed right-0 top-1/4 flex h-screen  w-[50px] flex-col  items-center justify-center ">
       <div className="flex flex-col items-center gap-6">
   
         <Link

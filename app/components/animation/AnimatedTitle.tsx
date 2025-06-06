@@ -27,7 +27,7 @@ export default function AnimatedTitle({ children, className = "" }: AnimatedTitl
             opacity: 1,
             x: 0,
             duration: 1,
-            ease: "bounce.out",
+            ease: "power2.inOut",
             scrollTrigger: {
               trigger: sectionRef.current,
               start: "top 80%",
