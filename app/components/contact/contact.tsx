@@ -69,7 +69,7 @@ export default function ContactPage() {
             ease: "power3.out",
             scrollTrigger: {
               trigger: el,
-              start: "top 100%",
+              start: "top 80%",
          
               toggleActions: "play reverse play reverse",
             },

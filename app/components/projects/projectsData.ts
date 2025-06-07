@@ -1,6 +1,6 @@
 const projectsData = [
     {
-      title: "Tech Store",
+      title: "Tech Store ~ MERN Stack",
       description: "A full-stack e-commerce website developed using the MERN stack, admin and user dashboard and all features.",
       photo: "/projects/store.png",
       stack: ["React", "NodeJS", "ExpressJS", "MongoDB"],
@@ -9,10 +9,10 @@ const projectsData = [
    
     },
     {
-      title: "Next.js Blog App",
-      description: "A full-featured blog application built with Next.js. It includes CRUD functionality, Clerk authentication, and a clean user interface for managing blog posts.",
+      title: "Next.js Full Stack Blog with AI Summarization",
+      description: " Leveraged Next.js with API routes, Prisma ORM, and PostgreSQL for backend; used Shadcn UI for responsive and polished frontend design.",
       photo: "/projects/blog.png",
-      stack: ["Next.js", "TypeScript", "Tailwind", "Clerk"],
+      stack: ["Next.js", "TypeScript", "Tailwind", "Clerk","ShadCn","OpenAI"],
       projectLink: "https://blog-app-tau-ashy.vercel.app/",
       githubLink: "https://github.com/subeshyadav3/blog_app",
     
@@ -39,13 +39,12 @@ const projectsData = [
    
     },
     {
-      title: "WhiteBoard App",
-      description: "An interactive whiteboard using concepts of computer graphics as a project for educational purposes.",
-      photo: "/projects/whiteboard.png",
-      stack: ["HTML", "CSS", "JavaScript"],
-      projectLink: "http://subesh420.com.np/",
-      githubLink: "https://github.com/subeshyadav3/whiteboard",
-   
+      title: "Designed Portfolio Website",
+      description: "A sleek, responsive portfolio website built using Next.js, styled with Tailwind CSS, and enhanced with shadcn/ui components. It showcases projects, skills, and contact options in an elegant single-page layout with smooth transitions and modern design aesthetics.",
+      photo: "/projects/portfolio.png",
+      stack: ["Next.js", "Tailwind CSS", "shadcn/ui"],
+      projectLink: "https://paudelsangam.com.np/",
+      githubLink: "https://github.com/subeshyadav3/sangam_portfolio_design",
     },
     {
       title: "Flappy Bird",

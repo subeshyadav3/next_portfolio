@@ -1,12 +1,34 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, use } from "react";
 import "../../globals.css";
 import Toast from "../toast/toast";
+import gsap from "gsap";
+
 
 const SidebarLeft: React.FC = () => {
   const [toastMessage, setToastMessage] = useState<string>("");
   const [toastVisible, setToastVisible] = useState(false);
+  useEffect(() => {
+
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        ".gmail-btn",
+        { y: -100, opacity: 0,scale: 0.5 },
+        {
+          y: 0,
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          ease: "power3.out",
+          
+        }
+      );
+    });
+
+    return () => ctx.revert();
+  }, []);
+
 
   const showToast = (message: string) => {
     setToastMessage(message);

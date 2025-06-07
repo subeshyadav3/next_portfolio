@@ -3,10 +3,32 @@
 import type React from "react"
 import { Github, Linkedin, Facebook } from "lucide-react"
 import Link from "next/link"
+import gsap from "gsap"
+import { useEffect } from "react"
 
 const Sidebar: React.FC = () => {
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        ".left-sidebar",
+        { y: 60, opacity: 0, scale: 0.5 },
+        {
+          y: 0,
+          opacity: 1,
+          scale: 1,
+          duration: 1,
+          ease: "power3.out",
+          stagger: 0.2,
+        }
+      )
+    })
+
+    return () => ctx.revert()
+  }
+
+  , [])
   return (
-    <div className="fixed right-0 top-1/4 flex h-screen  w-[50px] flex-col  items-center justify-center ">
+    <div className="fixed left-sidebar right-0 top-1/4 flex h-screen  w-[50px] flex-col  items-center justify-center ">
       <div className="flex flex-col items-center gap-6">
   
         <Link
