@@ -90,7 +90,7 @@ export default function Hero() {
         </p>
 
         <div ref={buttonRef}>
-          <a href="/final_CV.pdf">
+          <a href="/final.pdf">
             <button className="border-2 border-[#90A0D9] px-4 py-2 rounded-sm resume-btn hover:bg-[#90A0D9]/20 transition">
               <span className="relative z-10 hover:text-blue-950">Resume</span>
             </button>

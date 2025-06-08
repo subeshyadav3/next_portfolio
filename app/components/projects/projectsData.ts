@@ -2,7 +2,7 @@ const projectsData = [
     {
       title: "Tech Store ~ MERN Stack",
       description: "A full-stack e-commerce website developed using the MERN stack, admin and user dashboard and all features.",
-      photo: "/projects/store.png",
+      photo: ["/projects/store.png","/projects/store1.png", "/projects/store2.png"],
       stack: ["React", "NodeJS", "ExpressJS", "MongoDB"],
       projectLink: "https://frontendstore-five.vercel.app/",
       githubLink: "https://github.com/subeshyadav3/store",
@@ -11,7 +11,7 @@ const projectsData = [
     {
       title: "Next.js Full Stack Blog with AI Summarization",
       description: " Leveraged Next.js with API routes, Prisma ORM, and PostgreSQL for backend; used Shadcn UI for responsive and polished frontend design.",
-      photo: "/projects/blog.png",
+      photo: ["/projects/blog.png", "/projects/blog1.png", "/projects/blog2.png"],
       stack: ["Next.js", "TypeScript", "Tailwind", "Clerk","ShadCn","OpenAI"],
       projectLink: "https://blog-app-tau-ashy.vercel.app/",
       githubLink: "https://github.com/subeshyadav3/blog_app",
