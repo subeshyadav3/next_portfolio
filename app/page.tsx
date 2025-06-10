@@ -1,7 +1,5 @@
 // app/page.tsx
 "use client"
-import { useState, useEffect } from 'react';
-import SplashScreen from './components/SplashScreen';
 import './globals.css';
 import Hero from './components/hero/Hero';
 import About from './components/about/about';
@@ -12,20 +10,7 @@ import Education from './components/education/education';
 import Experience from './components/experience/experience';
 
 export default function HomePage() {
-  const [isLoading, setIsLoading] = useState(true);
-  const [pageVisible, setPageVisible] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false)
-      setPageVisible(true);
-    }, 1000);
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (isLoading) {
-    return <SplashScreen />;
-  }
 
   return (
     <>
