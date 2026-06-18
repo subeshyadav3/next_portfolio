@@ -132,4 +132,49 @@ html { scroll-behavior: smooth; }
   @media (pointer: coarse) {
     .cursor-ring, [aria-hidden][style*="9999"] { display: none; }
   }
+
+  /* Tech marquee */
+  .marquee-mask {
+    mask-image: linear-gradient(to right, transparent 0, black 80px, black calc(100% - 80px), transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0, black 80px, black calc(100% - 80px), transparent 100%);
+  }
+  .marquee-row {
+    overflow: hidden;
+    width: 100%;
+  }
+  .marquee-track {
+    display: inline-flex;
+    gap: 48px;
+    padding-right: 48px;
+    align-items: center;
+    white-space: nowrap;
+    will-change: transform;
+  }
+  .marquee-row--left .marquee-track { animation: marquee-left 40s linear infinite; }
+  .marquee-row--right .marquee-track { animation: marquee-right 40s linear infinite; }
+  .marquee-row:hover .marquee-track { animation-play-state: paused; }
+  .marquee-item { display: inline-flex; align-items: center; gap: 8px; }
+
+  @keyframes marquee-left {
+    from { transform: translateX(0); }
+    to { transform: translateX(-33.333%); }
+  }
+  @keyframes marquee-right {
+    from { transform: translateX(-33.333%); }
+    to { transform: translateX(0); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-row--left .marquee-track,
+    .marquee-row--right .marquee-track { animation: none; }
+  }
+
+  /* Stats card */
+  .stat-card {
+    transition: transform 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+  }
+  .stat-card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(61, 214, 140, 0.45) !important;
+    box-shadow: 0 0 0 1px rgba(61, 214, 140, 0.2);
+  }
 }
