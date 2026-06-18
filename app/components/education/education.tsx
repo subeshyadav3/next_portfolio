@@ -1,164 +1,59 @@
 "use client";
-
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import "../../education.css";
-import AnimatedTitle from "../animation/AnimatedTitle";
+import "../../globals.css";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Education() {
+  const sectionRef = useRef<HTMLDivElement>(null);
+  const cardsRef = useRef<HTMLDivElement[]>([]);
+
   const educationData = [
-    {
-      period: "Jan 2024 - Jan 2028",
-      degree: "Bachelor's Degree",
-      institution: "Pulchowk Campus",
-      description:
-        "Currently pursuing a Bachelor's degree in Computer Engineering, focusing on building a strong foundation in technical skills and innovative problem-solving approaches.",
-    },
-    {
-      period: "Mar 2021 - Mar 2023",
-      degree: "Higher Secondary Education",
-      institution: "KIST COLLEGE & SS",
-      description:
-        "Completed higher secondary education with a strong focus on science and mathematics. Developed analytical thinking and problem-solving skills through rigorous coursework.",
-    },
-    {
-      period: "Jan 2016 - Jan 2021",
-      degree: "Secondary Education (SEE)",
-      institution: "Navodaya Shishu Sadan",
-      description:
-        "Completed secondary education with excellence in science and mathematics. Participated in various academic competitions and extracurricular activities.",
-    },
-    {
-      period: "Early Education",
-      degree: "Primary Education",
-      institution: "Sagarmatha Lower Secondary School",
-      description:
-        "Built a strong educational foundation during primary schooling, where curiosity and love for learning were nurtured.",
-    },
+    { period: "Jan 2024 - Jan 2028", degree: "Bachelor's Degree", institution: "Pulchowk Campus", description: "Currently pursuing a Bachelor's degree in Computer Engineering, focusing on building a strong foundation in technical skills and innovative problem-solving approaches." },
+    { period: "Mar 2021 - Mar 2023", degree: "Higher Secondary Education", institution: "KIST COLLEGE & SS", description: "Completed higher secondary education with a strong focus on science and mathematics." },
+    { period: "Jan 2016 - Jan 2021", degree: "Secondary Education (SEE)", institution: "Navodaya Shishu Sadan", description: "Completed secondary education with excellence in science and mathematics." },
+    { period: "Early Education", degree: "Primary Education", institution: "Sagarmatha Lower Secondary School", description: "Built a strong educational foundation during primary schooling." },
   ];
 
-
-  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
-  const cardsRefMob = useRef<(HTMLDivElement | null)[]>([]);
-
   useEffect(() => {
-    if (!cardsRef.current) return;
-
-    cardsRef.current.forEach((card, idx) => {
-      if (!card) return;
-
-      gsap.fromTo(
-        card,
-        { opacity: 0, y: 30, x: -20, scale: 0.9 },
-        {
-          opacity: 1,
-          y: 0,
-          x: 0,
-          scale: 1,
-          duration: 1,
-          ease: "power2.out",
-          delay: idx * 0.2,
-          scrollTrigger: {
-            trigger: card,
-            start: "top 85%",
-            end: "bottom 20%",
-            toggleActions: "play reverse play reverse",
-          },
-        }
-      );
-      
-      
-    });
-
-    
-    cardsRefMob.current.forEach((card, idx) => {
-      if (!card) return;
-
-      gsap.fromTo(
-        card,
-        { opacity: 0, y: 30, x: -20, scale: 0.9 },
-        {
-          opacity: 1,
-          y: 0,
-          x: 0,
-          scale: 1,
-          duration: 1,
-          ease: "power2.out",
-          delay: idx * 0.2,
-          scrollTrigger: {
-            trigger: card,
-            start: "top 85%",
-            end: "bottom 20%",
-            toggleActions: "play reverse play reverse",
-          },
-        }
-      );
-      
-      
-    });
-
-    
-
-    return () => {
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
+    const ctx = gsap.context(() => {
+      cardsRef.current.forEach((card, idx) => {
+        gsap.fromTo(card, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, delay: idx * 0.15, ease: "power3.out", scrollTrigger: { trigger: card, start: "top 85%", toggleActions: "play none none reverse" } });
+      });
+    }, sectionRef);
+    return () => ctx.revert();
   }, []);
 
   return (
-    <div
-      id="education"
-      className="flex flex-col mt-15 sm:ml-[100px] lg:ml-[200px] pb-5 sm:px-0 pl-2"
-    >
-      <div>
-        <AnimatedTitle className="text-3xl font-bold text-[#90A0D9] title-line mb-10 sm:mb-2">
-          Education
-        </AnimatedTitle>
-      </div>
+    <section id="education" ref={sectionRef} className="min-h-screen flex items-center px-6 sm:px-0 py-24">
+      <div className="max-w-[900px] mx-auto w-full">
+        <p className="mono text-xs text-orange uppercase tracking-widest mb-4">03 / education</p>
+        <h2 className="text-[28px] font-semibold text-primary mb-12">Education</h2>
 
-      <div className="education-timeline-vertical md:hidden mt-10">
-        {educationData.map((item, index) => (
-          <div
-            key={index}
-            ref={(el) => {cardsRefMob.current[index] = el!;}}
-            className="timeline-item-vertical"
-          >
-            <div className="timeline-dot-vertical"></div>
-            <div className="timeline-date-vertical">
-              <span>{item.period} </span>
-            </div>
-            <div className="timeline-content-vertical">
-              <h3>{item.degree}</h3>
-              <h4>{item.institution}</h4>
-              <p>{item.description}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <div className="hidden md:block education-timeline-horizontal mt-16">
-        <div className="timeline-track">
-          <div className="timeline-items-container">
-            {educationData.map((item, index) => (
+        <div className="space-y-0">
+          {educationData.map((item, idx) => (
+            <div
+              key={idx}
+              ref={(el) => { cardsRef.current[idx] = el!; }}
+              className="relative pl-6 pb-8 transition-colors duration-200 hover:border-green"
+              style={{ borderLeft: "2px solid var(--border)" }}
+            >
+              {/* Connecting dot */}
               <div
-                key={index}
-                ref={(el) => {cardsRef.current[index] = el!;}}
-                className="timeline-item-horizontal"
-              >
-                <div className="timeline-dot-horizontal"></div>
-                <div className="timeline-content-horizontal">
-                  <h3>{item.degree}</h3>
-                  <h4>{item.institution}</h4>
-                  <span className="timeline-period">{item.period}</span>
-                  <p>{item.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+                className="absolute left-0 top-0 w-2 h-2 bg-green"
+                style={{ transform: "translateX(-5px)" }}
+              />
+
+              <p className="mono text-xs text-orange uppercase tracking-wider mb-1">{item.period}</p>
+              <h3 className="text-base font-medium text-primary">{item.degree}</h3>
+              <p className="text-sm text-secondary mb-2">{item.institution}</p>
+              <p className="text-sm text-muted leading-relaxed">{item.description}</p>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 }

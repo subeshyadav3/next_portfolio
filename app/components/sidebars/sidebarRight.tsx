@@ -1,34 +1,24 @@
 "use client";
 
-import React, { useState, useEffect, use } from "react";
+import React, { useState, useEffect } from "react";
 import "../../globals.css";
 import Toast from "../toast/toast";
 import gsap from "gsap";
 
-
 const SidebarLeft: React.FC = () => {
   const [toastMessage, setToastMessage] = useState<string>("");
   const [toastVisible, setToastVisible] = useState(false);
-  useEffect(() => {
 
+  useEffect(() => {
     const ctx = gsap.context(() => {
       gsap.fromTo(
         ".gmail-btn",
-        { y: -100, opacity: 0,scale: 0.5 },
-        {
-          y: 0,
-          opacity: 1,
-          scale: 1,
-          duration: 1,
-          ease: "power3.out",
-          
-        }
+        { y: -100, opacity: 0, scale: 0.5 },
+        { y: 0, opacity: 1, scale: 1, duration: 1, ease: "power3.out" }
       );
     });
-
     return () => ctx.revert();
   }, []);
-
 
   const showToast = (message: string) => {
     setToastMessage(message);
@@ -43,16 +33,17 @@ const SidebarLeft: React.FC = () => {
 
   return (
     <>
-      <div className="fixed top-1/2 left-0 hidden sm:flex h-screen w-[50px] flex-col items-center pb-6">
+      <div className="fixed top-0 left-0 hidden md:flex h-screen w-[50px] flex-col items-center justify-center">
         <a
           onClick={handleCopyEmail}
-          className="rotate-90 cursor-copy text-sm tracking-widest hover:text-gray-300 gmail-btn"
+          className="rotate-90 cursor-copy mono text-xs tracking-widest text-muted hover:text-green transition-colors gmail-btn whitespace-nowrap"
         >
           subeshgaming@gmail.com
         </a>
+        <div className="mt-6 h-[80px] w-px" style={{ backgroundColor: "var(--border)" }} />
       </div>
 
-      {toastVisible && <Toast message={`${toastMessage}`} visible={true} onClose={() => { }} />}
+      {toastVisible && <Toast message={`${toastMessage}`} visible={true} onClose={() => {}} />}
     </>
   );
 };
