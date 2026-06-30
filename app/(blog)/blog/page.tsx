@@ -12,7 +12,11 @@ import {
 import { generateBlogMetadata } from "@/lib/blog/seo";
 import { generateWebSiteSchema } from "@/lib/blog/schema";
 import { formatDate } from "@/lib/blog/utils";
-import { categorySlug } from "@/lib/blog/slugs";
+import { getPostsByCategory } from "@/lib/blog/posts";
+import {
+  getCategoryDescription,
+  getCategoryAccent,
+} from "@/lib/blog/categories";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { CategoryCloud } from "@/components/blog/CategoryCloud";
 import { TagCloud } from "@/components/blog/TagCloud";
@@ -109,6 +113,50 @@ export default function BlogHomePage() {
       {/* Categories */}
       <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <CategoryCloud categories={categories} />
+      </section>
+
+      {/* Browse by Category */}
+      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+        <h2 className="text-2xl font-bold text-[var(--blog-text)] mb-8">
+          Browse by Category
+        </h2>
+        <div className="space-y-12">
+          {categories.map((category) => {
+            const postsInCategory = getPostsByCategory(category.slug).slice(
+              0,
+              3
+            );
+            return (
+              <div key={category.slug}>
+                <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 mb-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-[var(--blog-text)]">
+                      {category.name}
+                    </h3>
+                    <p
+                      className="mt-1 text-sm text-[var(--blog-text-secondary)] max-w-2xl"
+                      style={{ color: getCategoryAccent(category.slug) }}
+                    >
+                      {getCategoryDescription(category.slug)}
+                    </p>
+                  </div>
+                  <Link
+                    href={`/blog/category/${category.slug}`}
+                    className="text-sm font-medium hover:underline shrink-0"
+                    style={{ color: getCategoryAccent(category.slug) }}
+                  >
+                    View all {category.count} articles →
+                  </Link>
+                </div>
+                <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                  {postsInCategory.map((post) => (
+                    <BlogCard key={post.slug} post={post} />
+                  ))}
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </section>
 
       {/* Latest */}
