@@ -1,47 +1,28 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useRef, useEffect } from "react";
 
 export default function ScrollProgress() {
-  const ref = useRef<HTMLDivElement>(null);
+  const progressRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    const update = () => {
-      const h = document.documentElement;
-      const pct = h.scrollTop / Math.max(1, h.scrollHeight - h.clientHeight);
-      if (ref.current) ref.current.style.transform = `scaleX(${pct})`;
+    const updateProgress = () => {
+      if (!progressRef.current) return;
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = (scrollTop / docHeight) * 100;
+      progressRef.current.style.width = `${progress}%`;
     };
-    update();
-    window.addEventListener("scroll", update, { passive: true });
-    window.addEventListener("resize", update);
-    return () => {
-      window.removeEventListener("scroll", update);
-      window.removeEventListener("resize", update);
-    };
+
+    window.addEventListener("scroll", updateProgress);
+    return () => window.removeEventListener("scroll", updateProgress);
   }, []);
 
   return (
-    <div
-      aria-hidden
-      style={{
-        position: "fixed",
-        top: 0,
-        left: 0,
-        right: 0,
-        height: 2,
-        zIndex: 100,
-        pointerEvents: "none",
-      }}
-    >
+    <div className="fixed top-0 left-0 w-full h-[2px] z-[100] bg-transparent">
       <div
-        ref={ref}
-        style={{
-          height: "100%",
-          width: "100%",
-          backgroundColor: "var(--accent-green)",
-          transformOrigin: "left",
-          transform: "scaleX(0)",
-          willChange: "transform",
-        }}
+        ref={progressRef}
+        className="h-full bg-gradient-to-r from-green via-blue to-purple transition-all duration-150"
+        style={{ width: "0%" }}
       />
     </div>
   );

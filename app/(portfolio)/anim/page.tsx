@@ -1,4 +1,4 @@
-import ScrollText from "../components/animation/ScrollText";
+import ScrollText from "../../components/animation/ScrollText";
 
 export default function HomePage() {
   return (

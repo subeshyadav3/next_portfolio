@@ -26,7 +26,7 @@ export default function MagneticButton({
   onClick,
   style,
 }: Props) {
-  const ref = useRef<HTMLElement | null>(null);
+  const ref = useRef<HTMLElement>(null);
 
   const onMouseMove = (e: React.MouseEvent) => {
     const el = ref.current;
@@ -43,14 +43,16 @@ export default function MagneticButton({
     el.style.transform = "translate(0, 0)";
   };
 
-  const commonProps = {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const commonProps: any = {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     ref: ref as any,
     className,
     onMouseMove,
     onMouseLeave,
     style: { transition: "transform 250ms cubic-bezier(0.16,1,0.3,1)", ...style },
     "data-cursor-label": cursorLabel,
-  } as any;
+  };
 
   if (as === "button") {
     return (

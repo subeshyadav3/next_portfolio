@@ -1,0 +1,75 @@
+import { MetadataRoute } from "next";
+import {
+  getAllPosts,
+  getCategories,
+  getTags,
+  getArchiveYears,
+} from "@/lib/blog/posts";
+
+const SITE_URL = "https://subeshyadav.com.np";
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
+  const posts = getAllPosts();
+  const categories = getCategories();
+  const tags = getTags();
+  const archives = getArchiveYears();
+
+  const postUrls = posts.map((post) => ({
+    url: `${SITE_URL}/blog/${post.slug}`,
+    lastModified: new Date(post.updated),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
+  const categoryUrls = categories.map((category) => ({
+    url: `${SITE_URL}/blog/category/${category.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.6,
+  }));
+
+  const tagUrls = tags.map((tag) => ({
+    url: `${SITE_URL}/blog/tag/${tag.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "weekly" as const,
+    priority: 0.5,
+  }));
+
+  const archiveUrls = archives.map((archive) => ({
+    url: `${SITE_URL}/blog/archive/${archive.year}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.4,
+  }));
+
+  return [
+    {
+      url: `${SITE_URL}/`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 1,
+    },
+    {
+      url: `${SITE_URL}/blog`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 0.9,
+    },
+    {
+      url: `${SITE_URL}/blog/search`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.5,
+    },
+    {
+      url: `${SITE_URL}/blog/author`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    ...postUrls,
+    ...categoryUrls,
+    ...tagUrls,
+    ...archiveUrls,
+  ];
+}

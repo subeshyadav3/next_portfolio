@@ -11,7 +11,7 @@ type Props = {
   duration?: number;
   yOffset?: number;
   className?: string;
-  as?: keyof JSX.IntrinsicElements;
+  as?: keyof React.JSX.IntrinsicElements;
 };
 
 export default function ClipReveal({
@@ -52,7 +52,7 @@ export default function ClipReveal({
     return () => ctx.revert();
   }, [delay, duration, yOffset]);
 
-  const Component = Tag as any;
+  const Component = Tag as React.ElementType;
   return (
     <Component ref={ref} className={className}>
       {children}

@@ -1,7 +1,6 @@
-
 "use client";
 import { useEffect, useRef } from "react";
-import gsap from "gsap";
+import { gsap } from "gsap";
 
 type ToastProps = {
   message: string;
@@ -10,42 +9,79 @@ type ToastProps = {
 };
 
 export default function Toast({ message, visible, onClose }: ToastProps) {
-  const toastRef = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
+  const barRef = useRef<HTMLDivElement>(null);
+  const timerRef = useRef<number | null>(null);
 
   useEffect(() => {
-    if (visible && toastRef.current) {
-      gsap.fromTo(
-        toastRef.current,
-        { y: 50, opacity: 0, display: "none" },
-        {
-          y: 0,
-          opacity: 1,
-          display: "flex",
-          duration: 0.4,
-          ease: "power3.out",
-        }
-      );
+    const el = ref.current;
+    const bar = barRef.current;
+    if (!el || !bar) return;
 
-      const timeout = setTimeout(() => {
-        gsap.to(toastRef.current, {
-          y: 50,
+    if (visible) {
+      // Make sure it's mounted/visible before animating in
+      el.style.opacity = "0";
+      el.style.transform = "translate3d(0, 80px, 0)";
+
+      gsap.to(el, { opacity: 1, y: 0, duration: 0.4, ease: "power3.out" });
+      gsap.fromTo(bar, { scaleX: 1 }, { scaleX: 0, duration: 3, ease: "linear" });
+
+      timerRef.current = window.setTimeout(() => {
+        gsap.to(el, {
+          y: 80,
           opacity: 0,
-          duration: 0.4,
+          duration: 0.3,
           ease: "power3.in",
           onComplete: onClose,
         });
       }, 3000);
-
-      return () => clearTimeout(timeout);
     }
+
+    return () => {
+      if (timerRef.current) {
+        clearTimeout(timerRef.current);
+        timerRef.current = null;
+      }
+    };
   }, [visible, onClose]);
+
+  // Always render the element so the exit animation can play; toggle visibility
+  if (!visible && !ref.current) {
+    return null;
+  }
 
   return (
     <div
-      ref={toastRef}
-      className="fixed top-6 left-1/2 transform -translate-x-1/2 px-6 py-3 bg-gradient-to-r from-[#1d2136] to-[#29305a] text-white rounded-xl shadow-xl text-sm sm:text-base z-50 hidden"
+      ref={ref}
+      role="status"
+      aria-live="polite"
+      className="toast fixed bottom-6 right-6 z-[1000] mono text-xs"
+      style={{
+        backgroundColor: "var(--bg-elevated)",
+        border: "1px solid var(--accent-green)",
+        color: "var(--text-primary)",
+        padding: "12px 16px",
+        minWidth: "240px",
+        maxWidth: "360px",
+        boxShadow: "0 8px 32px rgba(0,0,0,0.5)",
+        opacity: visible ? undefined : 0,
+        pointerEvents: visible ? "auto" : "none",
+      }}
     >
-      {message}
+      <span>{message}</span>
+      <div
+        ref={barRef}
+        style={{
+          position: "absolute",
+          left: 0,
+          bottom: 0,
+          height: 2,
+          width: "100%",
+          backgroundColor: "var(--accent-green)",
+          transformOrigin: "left",
+          transform: "scaleX(1)",
+        }}
+      />
     </div>
   );
 }

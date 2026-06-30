@@ -1,13 +1,6 @@
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/navbar/navbar";
-import Sidebar from "./components/sidebars/sidebar";
-import SidebarLeft from "./components/sidebars/sidebarRight";
-import Footer from "./components/footer/Footer";
-import SmoothScrollProvider from "./providers/SmoothScrollProvider";
-import DotGrid from "./components/background/DotGrid";
-import CustomCursor from "./components/cursor/CustomCursor";
-import ScrollProgress from "./components/ui/ScrollProgress";
+import { ThemeProvider } from "./providers/ThemeProvider";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -42,24 +35,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${jetbrainsMono.variable}`}>
+    <html
+      lang="en"
+      className={`${inter.variable} ${jetbrainsMono.variable}`}
+      suppressHydrationWarning
+    >
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </head>
-      <body
-        className="antialiased"
-        style={{ fontFamily: "var(--font-inter)" }}
-      >
-        <SmoothScrollProvider>
-          <ScrollProgress />
-          <DotGrid />
-          <CustomCursor />
-          <Navbar />
-          <SidebarLeft />
-          <Sidebar />
-          <main>{children}</main>
-          <Footer />
-        </SmoothScrollProvider>
+      <body className="antialiased" style={{ fontFamily: "var(--font-inter)" }}>
+        <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>
   );

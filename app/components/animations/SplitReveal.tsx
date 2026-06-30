@@ -8,7 +8,7 @@ type Props = {
   className?: string;
   delay?: number;
   stagger?: number;
-  as?: keyof JSX.IntrinsicElements;
+  as?: keyof React.JSX.IntrinsicElements;
   triggerOnMount?: boolean;
 };
 
@@ -57,7 +57,7 @@ export default function SplitReveal({
     };
   }, [text, delay, stagger, triggerOnMount]);
 
-  const Component = Tag as any;
+  const Component = Tag as React.ElementType;
   return (
     <Component ref={ref} className={className}>
       {text}
