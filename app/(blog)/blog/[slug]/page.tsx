@@ -15,7 +15,12 @@ import {
 } from "@/lib/blog/schema";
 import { compilePostMdx, extractTableOfContents } from "@/lib/blog/mdx";
 import { formatDate } from "@/lib/blog/utils";
-import { categorySlug } from "@/lib/blog/slugs";
+import {
+  getCategorySlug,
+  getCategoryLabel,
+  getCategoryAccent,
+  isExamCategory,
+} from "@/lib/blog/categories";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { TableOfContents } from "@/components/blog/TableOfContents";
 import { ShareButtons } from "@/components/blog/ShareButtons";
@@ -25,6 +30,8 @@ import { BackToTop } from "@/components/blog/BackToTop";
 import { Breadcrumb } from "@/components/blog/Breadcrumb";
 import { AuthorCard } from "@/components/blog/AuthorCard";
 import { GiscusComments } from "@/components/blog/GiscusComments";
+import { ReadingProgress } from "@/components/blog/ReadingProgress";
+import { WasThisHelpful } from "@/components/blog/WasThisHelpful";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -50,17 +57,21 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound();
   }
 
-  const content = await compilePostMdx(post.content);
+  const content = await compilePostMdx(post.content, post.category);
   const toc = extractTableOfContents(post.content);
   const related = getRelatedPosts(post, 3);
   const { prev, next } = getPrevNextPosts(post);
+
+  const categorySlugValue = getCategorySlug(post.category);
+  const categoryLabel = getCategoryLabel(categorySlugValue);
+  const categoryAccent = getCategoryAccent(categorySlugValue);
 
   const articleSchema = generateArticleSchema(post);
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: `${SITE_URL}/blog` },
     {
-      name: post.category,
-      url: `${SITE_URL}/blog/category/${categorySlug(post.category)}`,
+      name: categoryLabel,
+      url: `${SITE_URL}/blog/category/${categorySlugValue}`,
     },
     { name: post.title, url: `${SITE_URL}/blog/${post.slug}` },
   ]);
@@ -76,13 +87,18 @@ export default async function BlogPostPage({ params }: PageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
-      <article className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <ReadingProgress color={categoryAccent} />
+
+      <article
+        lang={post.language}
+        className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8"
+      >
         <Breadcrumb
           items={[
             { label: "Blog", href: "/blog" },
             {
-              label: post.category,
-              href: `/blog/category/${categorySlug(post.category)}`,
+              label: categoryLabel,
+              href: `/blog/category/${categorySlugValue}`,
             },
             { label: post.title, href: `/blog/${post.slug}` },
           ]}
@@ -90,10 +106,14 @@ export default async function BlogPostPage({ params }: PageProps) {
 
         <header className="mx-auto max-w-3xl pt-8 pb-12 text-center">
           <Link
-            href={`/blog/category/${categorySlug(post.category)}`}
-            className="inline-flex items-center rounded-full bg-[var(--blog-accent-light)] px-3 py-1 text-sm font-medium text-[var(--blog-accent)]"
+            href={`/blog/category/${categorySlugValue}`}
+            className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium"
+            style={{
+              backgroundColor: `color-mix(in srgb, ${categoryAccent} 15%, transparent)`,
+              color: categoryAccent,
+            }}
           >
-            {post.category}
+            {categoryLabel}
           </Link>
 
           <h1 className="mt-6 text-3xl font-bold tracking-tight text-[var(--blog-text)] sm:text-4xl lg:text-5xl">
@@ -143,17 +163,9 @@ export default async function BlogPostPage({ params }: PageProps) {
                 {content}
               </div>
 
-              <div className="mt-8 flex flex-wrap gap-2">
-                {post.tags.map((tag) => (
-                  <Link
-                    key={tag}
-                    href={`/blog/tag/${categorySlug(tag)}`}
-                    className="rounded-full border border-[var(--blog-border)] bg-[var(--blog-surface)] px-3 py-1 text-sm text-[var(--blog-text-secondary)] hover:border-[var(--blog-accent)] hover:text-[var(--blog-accent)] transition-colors"
-                  >
-                    #{tag}
-                  </Link>
-                ))}
-              </div>
+              {isExamCategory(post.category) && (
+                <WasThisHelpful />
+              )}
 
               <div className="mt-12 border-t border-[var(--blog-border)] pt-8">
                 <ShareButtons title={post.title} slug={post.slug} />
@@ -172,10 +184,14 @@ export default async function BlogPostPage({ params }: PageProps) {
               </div>
             </div>
 
-            <aside className="hidden lg:block">
-              <div className="sticky top-24 space-y-8">
-                {toc.length > 0 && <TableOfContents items={toc} />}
-                <Newsletter />
+            <aside className="lg:block">
+              <div className="lg:sticky lg:top-24 space-y-8">
+                {toc.length > 0 && (
+                  <TableOfContents items={toc} accentColor={categoryAccent} />
+                )}
+                <div className="hidden lg:block">
+                  <Newsletter />
+                </div>
               </div>
             </aside>
           </div>

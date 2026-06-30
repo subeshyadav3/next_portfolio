@@ -13,6 +13,7 @@ export interface Post {
   image: string;
   readingTime: number;
   featured: boolean;
+  language: "en" | "ne";
 }
 
 export interface PostMeta {
@@ -29,6 +30,7 @@ export interface PostMeta {
   image: string;
   readingTime: number;
   featured: boolean;
+  language: "en" | "ne";
 }
 
 export interface Category {

@@ -3,7 +3,11 @@ import path from "path";
 import matter from "gray-matter";
 import { Post, PostMeta, Category, Tag, ArchiveYear } from "./types";
 import { tagSlug } from "./slugs";
-import { getCategorySlug, getCategoryLabel } from "./categories";
+import {
+  getCategorySlug,
+  getCategoryLabel,
+  isNepaliLanguageCategory,
+} from "./categories";
 import { getYear } from "./utils";
 
 const POSTS_DIR = path.join(process.cwd(), "content/blog");
@@ -13,8 +17,13 @@ function readPostFile(filePath: string): Post | null {
     const raw = fs.readFileSync(filePath, "utf-8");
     const { data, content } = matter(raw);
 
+    const meta = data as PostMeta;
+    if (!meta.language) {
+      meta.language = isNepaliLanguageCategory(meta.category) ? "ne" : "en";
+    }
+
     return {
-      ...(data as PostMeta),
+      ...meta,
       content,
     } as Post;
   } catch (error) {

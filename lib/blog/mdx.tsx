@@ -1,14 +1,11 @@
-import { marked } from "marked";
+import { MDXRemote } from "next-mdx-remote/rsc";
 import sanitizeHtml from "sanitize-html";
+import { mdxComponents } from "@/components/blog/mdx-components";
 import { TocItem } from "./types";
+import { slugifyText } from "./slugs";
 
-export async function compilePostMdx(source: string): Promise<React.ReactNode> {
-  const html = await marked(source, {
-    gfm: true,
-    breaks: false,
-  });
-
-  const sanitized = sanitizeHtml(html, {
+function sanitizeMdxSource(source: string): string {
+  return sanitizeHtml(source, {
     allowedTags: sanitizeHtml.defaults.allowedTags.concat([
       "img",
       "h1",
@@ -80,12 +77,27 @@ export async function compilePostMdx(source: string): Promise<React.ReactNode> {
       h1: "h2",
     },
   });
+}
 
+export async function compilePostMdx(
+  source: string,
+  category: string
+): Promise<React.ReactNode> {
+  const sanitized = sanitizeMdxSource(source);
   return (
-    <div
-      className="blog-content"
-      dangerouslySetInnerHTML={{ __html: sanitized }}
+    <MDXRemote
+      source={sanitized}
+      components={mdxComponents(category)}
     />
+  );
+}
+
+export function slugifyHeading(text: string): string {
+  return slugifyText(
+    text
+      .replace(/\*\*/g, "")
+      .replace(/__/g, "")
+      .trim()
   );
 }
 
@@ -97,12 +109,7 @@ export function extractTableOfContents(content: string): TocItem[] {
   while ((match = headingRegex.exec(content)) !== null) {
     const level = match[1].length;
     const text = match[2].replace(/\*\*/g, "").replace(/__/g, "").trim();
-    const id = text
-      .toLowerCase()
-      .replace(/[^\w\s-]/g, "")
-      .replace(/\s+/g, "-")
-      .replace(/-+/g, "-")
-      .replace(/^-|-$/g, "");
+    const id = slugifyHeading(text);
 
     items.push({ id, text, level });
   }

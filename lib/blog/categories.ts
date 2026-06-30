@@ -115,6 +115,23 @@ export function isPoemCategorySlug(slug: string): boolean {
   return ["poems", "shayari"].includes(slug);
 }
 
+export function isNepaliLanguageCategory(category: string): boolean {
+  const slug = getCategorySlug(category);
+  return [
+    "essays",
+    "poems",
+    "shayari",
+    "stories",
+    "see",
+    "ble",
+    "class-7",
+    "class-8",
+    "class-9",
+    "class-10",
+    "class-11",
+  ].includes(slug);
+}
+
 // Internal fallback slugifier for unmapped categories
 function categorySlug(category: string): string {
   return category

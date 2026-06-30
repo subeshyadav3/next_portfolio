@@ -62,11 +62,27 @@
   font-family: var(--font-devanagari);
 }
 
+.blog-devanagari :lang(ne) {
+  line-height: var(--prose-devanagari-line-height);
+  letter-spacing: var(--prose-devanagari-letter-spacing);
+  font-family: var(--prose-font-family-devanagari);
+}
+
 /* Blog prose overrides */
 .blog-prose {
   color: var(--blog-text);
-  line-height: 1.8;
-  font-size: 1.125rem;
+  line-height: var(--prose-line-height);
+  font-size: var(--prose-font-size);
+}
+
+.blog-prose .first-paragraph,
+.blog-prose > p:first-of-type {
+  font-weight: 500;
+  font-size: calc(var(--prose-font-size) * 1.15);
+}
+
+.blog-prose > p {
+  margin-bottom: var(--prose-paragraph-gap);
 }
 
 .blog-prose h2, .blog-prose h3, .blog-prose h4 {
