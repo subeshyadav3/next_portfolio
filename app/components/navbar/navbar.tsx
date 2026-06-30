@@ -45,11 +45,12 @@ export default function Navbar() {
   ];
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
+    closeMenu();
+    if (!href.startsWith("#")) return;
     e.preventDefault();
     const id = href.replace("#", "");
     const element = document.getElementById(id);
     if (element) element.scrollIntoView({ behavior: "smooth" });
-    closeMenu();
   };
 
   return (
