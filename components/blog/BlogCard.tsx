@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Post } from "@/lib/blog/types";
 import { formatDate } from "@/lib/blog/utils";
-import { categorySlug } from "@/lib/blog/slugs";
+import { getCategorySlug, getCategoryLabel, getCategoryAccent } from "@/lib/blog/categories";
 
 interface BlogCardProps {
   post: Post;
@@ -32,10 +32,14 @@ export function BlogCard({ post }: BlogCardProps) {
 
       <div className="flex flex-1 flex-col p-5">
         <Link
-          href={`/blog/category/${categorySlug(post.category)}`}
-          className="inline-flex w-fit items-center rounded-full bg-[var(--blog-accent-light)] px-2.5 py-0.5 text-xs font-medium text-[var(--blog-accent)] hover:opacity-80 transition-opacity"
+          href={`/blog/category/${getCategorySlug(post.category)}`}
+          className="inline-flex w-fit items-center rounded-full px-2.5 py-0.5 text-xs font-medium hover:opacity-80 transition-opacity"
+          style={{
+            backgroundColor: `color-mix(in srgb, ${getCategoryAccent(getCategorySlug(post.category))} 15%, transparent)`,
+            color: getCategoryAccent(getCategorySlug(post.category)),
+          }}
         >
-          {post.category}
+          {getCategoryLabel(getCategorySlug(post.category))}
         </Link>
 
         <h3 className="mt-3 text-lg font-semibold leading-snug text-[var(--blog-text)] group-hover:text-[var(--blog-accent)] transition-colors line-clamp-2">
