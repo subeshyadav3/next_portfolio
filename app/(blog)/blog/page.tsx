@@ -3,9 +3,6 @@ import Image from "next/image";
 import {
   getAllPosts,
   getFeaturedPost,
-  getLatestPosts,
-  getPopularPosts,
-  getRecentlyUpdated,
   getCategories,
   getTags,
 } from "@/lib/blog/posts";
@@ -24,14 +21,25 @@ import { SearchBox } from "@/components/blog/SearchBox";
 
 export const metadata = generateBlogMetadata();
 
-export default function BlogHomePage() {
+const POSTS_PER_PAGE = 10;
+
+interface BlogHomePageProps {
+  searchParams?: Promise<{ page?: string }>;
+}
+
+export default async function BlogHomePage({ searchParams }: BlogHomePageProps) {
+  const params = await searchParams;
+  const currentPage = Math.max(1, parseInt(params?.page || "1", 10) || 1);
+
   const posts = getAllPosts();
   const featured = getFeaturedPost();
-  const latest = getLatestPosts(6);
-  const popular = getPopularPosts(6);
-  const updated = getRecentlyUpdated(4);
-  const categories = getCategories().slice(0, 8);
+  const categories = getCategories();
   const tags = getTags().slice(0, 20);
+
+  const totalPosts = posts.length;
+  const totalPages = Math.max(1, Math.ceil(totalPosts / POSTS_PER_PAGE));
+  const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
+  const paginatedPosts = posts.slice(startIndex, startIndex + POSTS_PER_PAGE);
 
   const webSiteSchema = generateWebSiteSchema();
 
@@ -112,7 +120,7 @@ export default function BlogHomePage() {
 
       {/* Categories */}
       <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
-        <CategoryCloud categories={categories} />
+        <CategoryCloud categories={categories.slice(0, 8)} />
       </section>
 
       {/* Browse by Category */}
@@ -121,7 +129,7 @@ export default function BlogHomePage() {
           Browse by Category
         </h2>
         <div className="space-y-12">
-          {categories.map((category) => {
+          {categories.slice(0, 6).map((category) => {
             const postsInCategory = getPostsByCategory(category.slug).slice(
               0,
               3
@@ -159,66 +167,76 @@ export default function BlogHomePage() {
         </div>
       </section>
 
-      {/* Latest */}
-      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      {/* All Articles - Paginated */}
+      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 border-t border-[var(--blog-border)]">
         <div className="flex items-center justify-between mb-6">
           <h2 className="text-2xl font-bold text-[var(--blog-text)]">
-            Latest Articles
+            All Articles
           </h2>
-          <Link
-            href="/blog/search"
-            className="text-sm font-medium text-[var(--blog-accent)] hover:underline"
-          >
-            View all →
-          </Link>
+          <span className="text-sm text-[var(--blog-text-muted)]">
+            Page {currentPage} of {totalPages} ({totalPosts} posts)
+          </span>
         </div>
+
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {latest.map((post) => (
+          {paginatedPosts.map((post) => (
             <BlogCard key={post.slug} post={post} />
           ))}
         </div>
+
+        {/* Pagination */}
+        {totalPages > 1 && (
+          <nav
+            className="mt-12 flex items-center justify-center gap-2"
+            aria-label="Pagination"
+          >
+            <Link
+              href={currentPage > 2 ? `/blog?page=${currentPage - 1}` : "/blog"}
+              className={`rounded-lg border px-4 py-2 text-sm font-medium transition-colors ${
+                currentPage === 1
+                  ? "pointer-events-none border-[var(--blog-border)] text-[var(--blog-text-muted)] opacity-50"
+                  : "border-[var(--blog-border)] text-[var(--blog-text-secondary)] hover:border-[var(--blog-accent)] hover:text-[var(--blog-accent)]"
+              }`}
+            >
+              ← Previous
+            </Link>
+
+            <div className="hidden sm:flex items-center gap-1">
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map(
+                (page) => (
+                  <Link
+                    key={page}
+                    href={page === 1 ? "/blog" : `/blog?page=${page}`}
+                    className={`min-w-[2.5rem] rounded-lg px-3 py-2 text-sm font-medium text-center transition-colors ${
+                      page === currentPage
+                        ? "bg-[var(--blog-accent)] text-white"
+                        : "text-[var(--blog-text-secondary)] hover:bg-[var(--blog-surface)]"
+                    }`}
+                    aria-current={page === currentPage ? "page" : undefined}
+                  >
+                    {page}
+                  </Link>
+                )
+              )}
+            </div>
+
+            <span className="sm:hidden text-sm text-[var(--blog-text-muted)]">
+              {currentPage} / {totalPages}
+            </span>
+
+            <Link
+              href={`/blog?page=${currentPage + 1}`}
+              className={`rounded-lg border px-4 py-2 text-sm font-medium transition-colors ${
+                currentPage === totalPages
+                  ? "pointer-events-none border-[var(--blog-border)] text-[var(--blog-text-muted)] opacity-50"
+                  : "border-[var(--blog-border)] text-[var(--blog-text-secondary)] hover:border-[var(--blog-accent)] hover:text-[var(--blog-accent)]"
+              }`}
+            >
+              Next →
+            </Link>
+          </nav>
+        )}
       </section>
-
-      {/* Popular */}
-      {popular.length > 0 && (
-        <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[var(--blog-text)] mb-6">
-            Popular Reads
-          </h2>
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {popular.map((post) => (
-              <BlogCard key={post.slug} post={post} />
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* Recently Updated */}
-      {updated.length > 0 && (
-        <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-          <h2 className="text-2xl font-bold text-[var(--blog-text)] mb-6">
-            Recently Updated
-          </h2>
-          <div className="grid gap-4 sm:grid-cols-2">
-            {updated.map((post) => (
-              <Link
-                key={post.slug}
-                href={`/blog/${post.slug}`}
-                className="group flex gap-4 rounded-xl border border-[var(--blog-border)] bg-[var(--blog-surface)] p-4 hover:border-[var(--blog-accent)] transition-colors"
-              >
-                <div className="flex-1">
-                  <h3 className="font-semibold text-[var(--blog-text)] group-hover:text-[var(--blog-accent)] transition-colors line-clamp-2">
-                    {post.title}
-                  </h3>
-                  <p className="mt-1 text-sm text-[var(--blog-text-muted)]">
-                    Updated {formatDate(post.updated)}
-                  </p>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
-      )}
 
       {/* Tags */}
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
