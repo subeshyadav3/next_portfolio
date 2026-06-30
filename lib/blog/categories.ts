@@ -86,6 +86,7 @@ export const CATEGORY_SLUG_MAP: Record<string, string> = {
 };
 
 export function getCategorySlug(category: string): string {
+  if (!category) return "uncategorized";
   return CATEGORY_SLUG_MAP[category] ?? categorySlug(category);
 }
 
@@ -116,6 +117,7 @@ export function isPoemCategorySlug(slug: string): boolean {
 }
 
 export function isNepaliLanguageCategory(category: string): boolean {
+  if (!category) return false;
   const slug = getCategorySlug(category);
   return [
     "essays",
@@ -134,6 +136,7 @@ export function isNepaliLanguageCategory(category: string): boolean {
 
 // Internal fallback slugifier for unmapped categories
 function categorySlug(category: string): string {
+  if (!category) return "uncategorized";
   return category
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")

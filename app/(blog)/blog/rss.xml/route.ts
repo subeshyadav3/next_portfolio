@@ -1,5 +1,4 @@
 import { getAllPosts } from "@/lib/blog/posts";
-import { formatDateISO } from "@/lib/blog/utils";
 import { SITE_URL, BLOG_NAME, SITE_DESCRIPTION } from "@/lib/site-config";
 
 const BLOG_TITLE = BLOG_NAME;

@@ -21,6 +21,9 @@ function readPostFile(filePath: string): Post | null {
     if (!meta.language) {
       meta.language = isNepaliLanguageCategory(meta.category) ? "ne" : "en";
     }
+    if (!meta.category) {
+      meta.category = "uncategorized";
+    }
 
     return {
       ...meta,

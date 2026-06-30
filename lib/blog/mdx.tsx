@@ -5,7 +5,10 @@ import { TocItem } from "./types";
 import { slugifyText } from "./slugs";
 
 function sanitizeMdxSource(source: string): string {
-  return sanitizeHtml(source, {
+  const clean = source
+    .replace(/<style[^>]*>[\s\S]*?<\/style>/gi, "")
+    .replace(/<script[^>]*>[\s\S]*?<\/script>/gi, "");
+  return sanitizeHtml(clean, {
     allowedTags: sanitizeHtml.defaults.allowedTags.concat([
       "img",
       "h1",

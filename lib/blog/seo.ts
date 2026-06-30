@@ -17,6 +17,9 @@ export function generatePostMetadata(post: Post): Metadata {
     description,
     alternates: {
       canonical: url,
+      languages: {
+        [post.language]: url,
+      },
     },
     authors: [{ name: post.author, url: post.authorUrl }],
     keywords: [post.category, ...post.tags],
@@ -88,6 +91,11 @@ export function generateCategoryMetadata(category: Category): Metadata {
       siteName: SITE_NAME,
       type: "website",
     },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
   };
 }
 
@@ -107,6 +115,11 @@ export function generateTagMetadata(tag: Tag): Metadata {
       siteName: SITE_NAME,
       type: "website",
     },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
   };
 }
 
@@ -125,6 +138,11 @@ export function generateArchiveMetadata(year: string): Metadata {
       url,
       siteName: SITE_NAME,
       type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
     },
   };
 }

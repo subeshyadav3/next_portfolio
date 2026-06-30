@@ -161,18 +161,7 @@ function SearchResults({
                 <span>·</span>
                 <span>{item.readingTime} min read</span>
               </div>
-              {item.tags.length > 0 && (
-                <div className="mt-3 flex flex-wrap gap-2">
-                  {item.tags.slice(0, 5).map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-xs text-[var(--blog-text-muted)]"
-                    >
-                      #{tag}
-                    </span>
-                  ))}
-                </div>
-              )}
+
             </Link>
           ))
         ) : (

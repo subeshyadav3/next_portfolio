@@ -4,19 +4,16 @@ import {
   getAllPosts,
   getFeaturedPost,
   getCategories,
-  getTags,
 } from "@/lib/blog/posts";
 import { generateBlogMetadata } from "@/lib/blog/seo";
 import { generateWebSiteSchema } from "@/lib/blog/schema";
 import { formatDate } from "@/lib/blog/utils";
 import { getPostsByCategory } from "@/lib/blog/posts";
 import {
-  getCategoryDescription,
   getCategoryAccent,
 } from "@/lib/blog/categories";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { CategoryCloud } from "@/components/blog/CategoryCloud";
-import { TagCloud } from "@/components/blog/TagCloud";
 import { SearchBox } from "@/components/blog/SearchBox";
 
 export const metadata = generateBlogMetadata();
@@ -34,8 +31,6 @@ export default async function BlogHomePage({ searchParams }: BlogHomePageProps) 
   const posts = getAllPosts();
   const featured = getFeaturedPost();
   const categories = getCategories();
-  const tags = getTags().slice(0, 20);
-
   const totalPosts = posts.length;
   const totalPages = Math.max(1, Math.ceil(totalPosts / POSTS_PER_PAGE));
   const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
@@ -141,12 +136,6 @@ export default async function BlogHomePage({ searchParams }: BlogHomePageProps) 
                     <h3 className="text-xl font-bold text-[var(--blog-text)]">
                       {category.name}
                     </h3>
-                    <p
-                      className="mt-1 text-sm text-[var(--blog-text-secondary)] max-w-2xl"
-                      style={{ color: getCategoryAccent(category.slug) }}
-                    >
-                      {getCategoryDescription(category.slug)}
-                    </p>
                   </div>
                   <Link
                     href={`/blog/category/${category.slug}`}
@@ -236,11 +225,6 @@ export default async function BlogHomePage({ searchParams }: BlogHomePageProps) 
             </Link>
           </nav>
         )}
-      </section>
-
-      {/* Tags */}
-      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <TagCloud tags={tags} />
       </section>
 
       {/* Newsletter */}

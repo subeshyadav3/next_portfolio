@@ -80,7 +80,7 @@ $ ls socials/`}
             Subesh Yadav · © {new Date().getFullYear()}
           </p>
           <p className="mono text-xs text-muted flex items-center gap-1">
-            Built with <Heart size={12} className="text-red-500 fill-red-500 animate-pulse" /> and React
+            Built with <Heart size={12} className="text-red-500 fill-red-500 animate-pulse" /> and Next.Js
           </p>
         </div>
       </div>
