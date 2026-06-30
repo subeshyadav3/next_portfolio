@@ -5,7 +5,6 @@ import { generateCategoryMetadata } from "@/lib/blog/seo";
 import { getCategoryAccent, getCategoryDescription } from "@/lib/blog/categories";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { Breadcrumb } from "@/components/blog/Breadcrumb";
-import { Newsletter } from "@/components/blog/Newsletter";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -87,10 +86,6 @@ export default async function CategoryPage({ params }: PageProps) {
             </Link>
           </div>
         )}
-      </section>
-
-      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <Newsletter />
       </section>
     </>
   );

@@ -3,7 +3,6 @@ import { getAllPosts, getCategories, getTags } from "@/lib/blog/posts";
 import { buildSearchIndex } from "@/lib/blog/search";
 import { SearchClient } from "@/components/blog/SearchClient";
 import { Breadcrumb } from "@/components/blog/Breadcrumb";
-import { Newsletter } from "@/components/blog/Newsletter";
 
 export const metadata: Metadata = {
   title: "Search | Subesh Yadav Blog",

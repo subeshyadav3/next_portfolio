@@ -74,6 +74,18 @@ export function generatePersonSchema() {
   };
 }
 
+export function generateFAQSchema(qaPairs: { question: string; answer: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: qaPairs.map((qa) => ({
+      "@type": "Question",
+      name: qa.question,
+      acceptedAnswer: { "@type": "Answer", text: qa.answer },
+    })),
+  };
+}
+
 export function generateWebSiteSchema() {
   return {
     "@context": "https://schema.org",

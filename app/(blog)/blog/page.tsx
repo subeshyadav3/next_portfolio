@@ -17,7 +17,6 @@ import { BlogCard } from "@/components/blog/BlogCard";
 import { CategoryCloud } from "@/components/blog/CategoryCloud";
 import { TagCloud } from "@/components/blog/TagCloud";
 import { SearchBox } from "@/components/blog/SearchBox";
-import { Newsletter } from "@/components/blog/Newsletter";
 
 export const metadata = generateBlogMetadata();
 
@@ -179,9 +178,6 @@ export default function BlogHomePage() {
       </section>
 
       {/* Newsletter */}
-      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <Newsletter />
-      </section>
     </>
   );
 }

@@ -190,3 +190,62 @@ export function getEditorPicks(count = 4): Post[] {
   const shuffled = [...posts].sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
 }
+
+/**
+ * Attempts to find the previous/next chapter/lesson for exam-notes posts.
+ * Derives chapter numbers from titles/slugs like "Lesson 1", "lesson-1",
+ * "Class 10 ... lesson-2", etc.
+ */
+export function getAdjacentChapterPosts(post: Post): {
+  prev: Post | null;
+  next: Post | null;
+} {
+  const currentNumber = extractChapterNumber(post.title) ?? extractChapterNumber(post.slug);
+  if (currentNumber === null) {
+    return { prev: null, next: null };
+  }
+
+  const sameCategory = getAllPosts().filter(
+    (p) =>
+      p.slug !== post.slug &&
+      getCategorySlug(p.category) === getCategorySlug(post.category)
+  );
+
+  const numbered = sameCategory
+    .map((p) => ({
+      post: p,
+      number: extractChapterNumber(p.title) ?? extractChapterNumber(p.slug),
+    }))
+    .filter((item): item is { post: Post; number: number } => item.number !== null)
+    .sort((a, b) => a.number - b.number);
+
+  const index = numbered.findIndex((item) => item.number === currentNumber);
+  if (index === -1) {
+    return { prev: null, next: null };
+  }
+
+  return {
+    prev: index > 0 ? numbered[index - 1].post : null,
+    next: index < numbered.length - 1 ? numbered[index + 1].post : null,
+  };
+}
+
+function extractChapterNumber(text: string): number | null {
+  const patterns = [
+    /lesson\s*(\d+)/i,
+    /chapter\s*(\d+)/i,
+    /lesson-(\d+)/i,
+    /chapter-(\d+)/i,
+    /\blesson\s*(\d+)/i,
+    /\bchapter\s*(\d+)/i,
+  ];
+
+  for (const pattern of patterns) {
+    const match = text.match(pattern);
+    if (match) {
+      return parseInt(match[1], 10);
+    }
+  }
+
+  return null;
+}

@@ -75,6 +75,21 @@
   font-size: var(--prose-font-size);
 }
 
+/* Force left alignment on prose body content (overrides migrated inline styles). */
+.blog-prose p,
+.blog-prose div,
+.blog-prose span,
+.blog-prose td,
+.blog-prose th,
+.blog-prose li {
+  text-align: left;
+}
+
+.blog-prose p.poem-line,
+.blog-prose .poem-stanza {
+  text-align: center;
+}
+
 .blog-prose .first-paragraph,
 .blog-prose > p:first-of-type {
   font-weight: 500;

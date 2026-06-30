@@ -4,7 +4,6 @@ import { getArchiveYears, getPostsByYear } from "@/lib/blog/posts";
 import { generateArchiveMetadata } from "@/lib/blog/seo";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { Breadcrumb } from "@/components/blog/Breadcrumb";
-import { Newsletter } from "@/components/blog/Newsletter";
 
 interface PageProps {
   params: Promise<{ year: string }>;
@@ -70,10 +69,6 @@ export default async function ArchivePage({ params }: PageProps) {
             </Link>
           </div>
         )}
-      </section>
-
-      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <Newsletter />
       </section>
     </>
   );

@@ -30,7 +30,7 @@ export function Newsletter() {
   }
 
   return (
-    <div className="rounded-2xl border border-[var(--blog-border)] bg-[var(--blog-surface)] p-8 md:p-12 text-center">
+    <div className="rounded-2xl bg-[var(--blog-bg)] p-8 md:p-12 text-center">
       <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-[var(--blog-accent-light)]">
         <Mail className="h-6 w-6 text-[var(--blog-accent)]" />
       </div>

@@ -4,7 +4,6 @@ import Link from "next/link";
 import { getAllPosts } from "@/lib/blog/posts";
 import { formatDate } from "@/lib/blog/utils";
 import { Breadcrumb } from "@/components/blog/Breadcrumb";
-import { Newsletter } from "@/components/blog/Newsletter";
 
 export const metadata: Metadata = {
   title: "Author | Subesh Yadav Blog",
@@ -123,10 +122,6 @@ export default function AuthorPage() {
             </Link>
           ))}
         </div>
-      </section>
-
-      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-        <Newsletter />
       </section>
     </>
   );

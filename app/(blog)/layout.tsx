@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { Search, ChevronDown, Menu, X } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
 import { ThemeToggle } from "@/components/blog/ThemeToggle";
+import { Newsletter } from "@/components/blog/Newsletter";
 import { getCategoryAccent } from "@/lib/blog/categories";
 
 interface NavItem {
@@ -161,45 +162,104 @@ function MobileNavItem({ item, onNavigate }: { item: NavItem; onNavigate: () => 
   );
 }
 
+function SearchInput({ onClose }: { onClose?: () => void }) {
+  const router = useRouter();
+  const [query, setQuery] = useState("");
+  const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    inputRef.current?.focus();
+  }, []);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const trimmed = query.trim();
+    if (trimmed) {
+      router.push(`/blog/search?q=${encodeURIComponent(trimmed)}`);
+    }
+    onClose?.();
+  };
+
+  return (
+    <form onSubmit={handleSubmit} className="relative flex-1">
+      <input
+        ref={inputRef}
+        type="text"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+        placeholder="Search articles..."
+        className="w-full rounded-lg border border-[var(--blog-border)] bg-[var(--blog-surface)] py-2 pl-9 pr-4 text-sm text-[var(--blog-text)] placeholder:text-[var(--blog-text-muted)] focus:border-[var(--blog-accent)] focus:outline-none focus:ring-1 focus:ring-[var(--blog-accent)]"
+      />
+      <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-[var(--blog-text-muted)]" />
+      {query && (
+        <button
+          type="button"
+          onClick={() => setQuery("")}
+          className="absolute right-2 top-1/2 -translate-y-1/2 rounded p-1 text-[var(--blog-text-muted)] hover:text-[var(--blog-text)]"
+          aria-label="Clear search"
+        >
+          <X className="h-3 w-3" />
+        </button>
+      )}
+    </form>
+  );
+}
+
 export default function BlogLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
     setMobileOpen(false);
+    setSearchOpen(false);
   }, [pathname]);
 
   return (
     <div className="blog-section min-h-screen flex flex-col">
       <header className="sticky top-0 z-50 border-b border-[var(--blog-border)] bg-[var(--blog-bg)]/80 backdrop-blur-md">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex h-16 items-center justify-between">
+          <div className="flex h-16 items-center justify-between gap-4">
             <Link
               href="/blog"
-              className="text-xl font-semibold tracking-tight text-[var(--blog-text)]"
+              className="text-xl font-semibold tracking-tight text-[var(--blog-text)] shrink-0"
             >
               Subesh<span className="text-[var(--blog-accent)]">.</span>Blog
             </Link>
 
-            <nav className="hidden md:flex items-center gap-8">
-              {BLOG_NAV.map((item) => (
-                <DesktopNavItem key={item.label} item={item} />
-              ))}
-            </nav>
+            {!searchOpen && (
+              <nav className="hidden md:flex items-center gap-6 lg:gap-8">
+                {BLOG_NAV.map((item) => (
+                  <DesktopNavItem key={item.label} item={item} />
+                ))}
+              </nav>
+            )}
 
-            <div className="flex items-center gap-3">
+            {searchOpen && (
+              <div className="hidden md:flex flex-1 max-w-md animate-in fade-in slide-in-from-right-2 duration-200">
+                <SearchInput onClose={() => setSearchOpen(false)} />
+              </div>
+            )}
+
+            <div className="flex items-center gap-2 shrink-0">
               <ThemeToggle />
-              <Link
-                href="/blog/search"
+              <button
+                type="button"
                 className="hidden md:flex p-2 rounded-full hover:bg-[var(--blog-surface)] transition-colors"
-                aria-label="Search"
+                aria-label={searchOpen ? "Close search" : "Search"}
+                aria-expanded={searchOpen}
+                onClick={() => setSearchOpen(!searchOpen)}
               >
-                <Search className="h-5 w-5 text-[var(--blog-text-secondary)]" />
-              </Link>
+                {searchOpen ? (
+                  <X className="h-5 w-5 text-[var(--blog-text-secondary)]" />
+                ) : (
+                  <Search className="h-5 w-5 text-[var(--blog-text-secondary)]" />
+                )}
+              </button>
               <button
                 type="button"
                 className="md:hidden p-2 rounded-full hover:bg-[var(--blog-surface)] transition-colors"
@@ -243,8 +303,12 @@ export default function BlogLayout({
 
       <footer className="border-t border-[var(--blog-border)] bg-[var(--blog-surface)]">
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div>
+          <div className="mb-12">
+            <Newsletter />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+            <div className="md:col-span-2">
               <Link
                 href="/blog"
                 className="text-lg font-semibold text-[var(--blog-text)]"
@@ -258,34 +322,18 @@ export default function BlogLayout({
             </div>
             <div>
               <h3 className="text-sm font-semibold text-[var(--blog-text)]">
-                Quick Links
+                Subesh Bio
               </h3>
-              <ul className="mt-3 space-y-2">
-                <li>
-                  <Link
-                    href="/blog"
-                    className="text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)] transition-colors"
-                  >
-                    Home
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/blog/search"
-                    className="text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)] transition-colors"
-                  >
-                    Search
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="/blog/author"
-                    className="text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)] transition-colors"
-                  >
-                    Author
-                  </Link>
-                </li>
-              </ul>
+              <p className="mt-3 text-sm text-[var(--blog-text-secondary)] leading-relaxed">
+                Writer and educator sharing Nepali essays, poems, and study
+                materials.
+              </p>
+              <Link
+                href="/blog/author"
+                className="mt-3 inline-flex items-center text-sm font-medium text-[var(--blog-accent)] hover:underline"
+              >
+                View profile →
+              </Link>
             </div>
             <div>
               <h3 className="text-sm font-semibold text-[var(--blog-text)]">

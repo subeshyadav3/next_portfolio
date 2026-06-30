@@ -49,7 +49,6 @@ function sanitizeMdxSource(source: string): string {
       "p",
       "sub",
       "sup",
-      "center",
       "font",
     ]),
     allowedAttributes: {
@@ -69,7 +68,7 @@ function sanitizeMdxSource(source: string): string {
       h4: ["id", "class"],
       h5: ["id", "class"],
       h6: ["id", "class"],
-      p: ["class", "style", "align"],
+      p: ["class", "style"],
       font: ["size", "color", "face"],
     },
     allowedSchemes: ["http", "https", "mailto", "tel"],
