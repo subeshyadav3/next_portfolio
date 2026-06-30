@@ -2,7 +2,8 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { Post, PostMeta, Category, Tag, ArchiveYear } from "./types";
-import { categorySlug, tagSlug } from "./slugs";
+import { tagSlug } from "./slugs";
+import { getCategorySlug, getCategoryLabel } from "./categories";
 import { getYear } from "./utils";
 
 const POSTS_DIR = path.join(process.cwd(), "content/blog");
@@ -43,7 +44,7 @@ export function getPostBySlug(slug: string): Post | undefined {
 }
 
 export function getPostsByCategory(slug: string): Post[] {
-  return getAllPosts().filter((post) => categorySlug(post.category) === slug);
+  return getAllPosts().filter((post) => getCategorySlug(post.category) === slug);
 }
 
 export function getPostsByTag(tagName: string): Post[] {
@@ -61,13 +62,13 @@ export function getCategories(): Category[] {
   const map = new Map<string, Category>();
 
   posts.forEach((post) => {
-    const slug = categorySlug(post.category);
+    const slug = getCategorySlug(post.category);
     const existing = map.get(slug);
     if (existing) {
       existing.count++;
     } else {
       map.set(slug, {
-        name: post.category,
+        name: getCategoryLabel(slug),
         slug,
         count: 1,
       });
@@ -121,7 +122,9 @@ export function getRelatedPosts(currentPost: Post, count = 3): Post[] {
 
   const scored = posts.map((post) => {
     let score = 0;
-    if (post.category === currentPost.category) score += 3;
+    if (getCategorySlug(post.category) === getCategorySlug(currentPost.category)) {
+      score += 5;
+    }
     const sharedTags = post.tags.filter((tag) =>
       currentPost.tags.includes(tag)
     );

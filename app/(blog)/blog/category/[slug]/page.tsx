@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getCategories, getPostsByCategory } from "@/lib/blog/posts";
 import { generateCategoryMetadata } from "@/lib/blog/seo";
+import { getCategoryAccent, getCategoryDescription } from "@/lib/blog/categories";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { Breadcrumb } from "@/components/blog/Breadcrumb";
 import { Newsletter } from "@/components/blog/Newsletter";
@@ -43,15 +44,27 @@ export default async function CategoryPage({ params }: PageProps) {
           ]}
         />
 
-        <div className="mt-8">
-          <h1 className="text-4xl font-bold text-[var(--blog-text)]">
+        <header className="mt-8">
+          <span
+            className="inline-flex items-center rounded-full px-3 py-1 text-sm font-semibold"
+            style={{
+              backgroundColor: `color-mix(in srgb, ${getCategoryAccent(category.slug)} 15%, transparent)`,
+              color: getCategoryAccent(category.slug),
+            }}
+          >
             {category.name}
+          </span>
+          <h1 className="mt-4 text-4xl font-bold text-[var(--blog-text)]">
+            {category.name} Articles
           </h1>
-          <p className="mt-3 text-lg text-[var(--blog-text-secondary)]">
+          <p className="mt-3 text-lg text-[var(--blog-text-secondary)] max-w-3xl">
+            {getCategoryDescription(category.slug)}
+          </p>
+          <p className="mt-2 text-sm text-[var(--blog-text-muted)]">
             {posts.length} article{posts.length !== 1 ? "s" : ""} in this
             category.
           </p>
-        </div>
+        </header>
       </section>
 
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">

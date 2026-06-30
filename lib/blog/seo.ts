@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import { Post, Category, Tag } from "./types";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, BLOG_NAME } from "@/lib/site-config";
+import { getCategoryDescription } from "./categories";
 
 const BLOG_TITLE = `${BLOG_NAME} | ${SITE_NAME}`;
 const BLOG_DESCRIPTION = SITE_DESCRIPTION;
@@ -73,7 +74,7 @@ export function generateBlogMetadata(): Metadata {
 
 export function generateCategoryMetadata(category: Category): Metadata {
   const title = `${category.name} Articles | Subesh Yadav Blog`;
-  const description = `Read ${category.count} articles about ${category.name}.`;
+  const description = getCategoryDescription(category.slug);
   const url = `${SITE_URL}/blog/category/${category.slug}`;
 
   return {

@@ -41,6 +41,7 @@ export default function Navbar() {
     { href: "#education", label: "Education" },
     { href: "#projects", label: "Projects" },
     { href: "#contact", label: "Contact" },
+    { href: "/blog", label: "Blog" },
   ];
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
