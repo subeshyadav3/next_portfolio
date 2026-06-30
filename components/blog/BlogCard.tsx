@@ -24,9 +24,13 @@ export function BlogCard({ post }: BlogCardProps) {
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         ) : (
-          <div className="flex h-full items-center justify-center bg-gradient-to-br from-emerald-50 to-teal-100 dark:from-emerald-950 dark:to-teal-900">
-            <span className="text-4xl">📝</span>
-          </div>
+          <Image
+            src="/images/blog-placeholder.svg"
+            alt=""
+            fill
+            className="object-cover"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+          />
         )}
       </Link>
 

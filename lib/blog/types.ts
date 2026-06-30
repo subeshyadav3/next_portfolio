@@ -9,7 +9,6 @@ export interface Post {
   tags: string[];
   author: string;
   authorUrl: string;
-  oldUrl: string;
   image: string;
   readingTime: number;
   featured: boolean;
@@ -26,7 +25,6 @@ export interface PostMeta {
   tags: string[];
   author: string;
   authorUrl: string;
-  oldUrl: string;
   image: string;
   readingTime: number;
   featured: boolean;

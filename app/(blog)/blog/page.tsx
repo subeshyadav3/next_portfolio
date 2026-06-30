@@ -85,9 +85,13 @@ export default async function BlogHomePage({ searchParams }: BlogHomePageProps) 
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
                 ) : (
-                  <div className="flex h-full items-center justify-center bg-gradient-to-br from-emerald-50 to-teal-100 dark:from-emerald-950 dark:to-teal-900">
-                    <span className="text-6xl">✍️</span>
-                  </div>
+                  <Image
+                    src="/images/blog-placeholder.svg"
+                    alt=""
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 )}
               </div>
               <div className="p-8 lg:p-12 flex flex-col justify-center">

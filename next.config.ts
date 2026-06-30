@@ -24,7 +24,7 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     try {
-      const redirects = require("./data/redirects.json") as Record<string, string>;
+      const redirects = require("./lib/blog/redirects.json") as Record<string, string>;
       return Object.entries(redirects).map(([source, destination]) => ({
         source: getRedirectSource(source),
         destination,
