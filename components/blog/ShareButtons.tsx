@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Facebook, Twitter, Linkedin, Link2, Check } from "lucide-react";
+import { SITE_URL } from "@/lib/site-config";
 
 interface ShareButtonsProps {
   title: string;
@@ -10,7 +11,7 @@ interface ShareButtonsProps {
 
 export function ShareButtons({ title, slug }: ShareButtonsProps) {
   const [copied, setCopied] = useState(false);
-  const url = `https://subeshyadav.com.np/blog/${slug}`;
+  const url = `${SITE_URL}/blog/${slug}`;
 
   async function copyLink() {
     try {

@@ -5,8 +5,7 @@ import {
   getTags,
   getArchiveYears,
 } from "@/lib/blog/posts";
-
-const SITE_URL = "https://subeshyadav.com.np";
+import { SITE_URL } from "@/lib/site-config";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const posts = getAllPosts();

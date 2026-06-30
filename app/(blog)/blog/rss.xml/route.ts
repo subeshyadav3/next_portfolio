@@ -1,10 +1,9 @@
 import { getAllPosts } from "@/lib/blog/posts";
 import { formatDateISO } from "@/lib/blog/utils";
+import { SITE_URL, BLOG_NAME, SITE_DESCRIPTION } from "@/lib/site-config";
 
-const SITE_URL = "https://subeshyadav.com.np";
-const BLOG_TITLE = "Essay in Nepali | Nepali Poems | SEE BLE Questions";
-const BLOG_DESCRIPTION =
-  "Essays, poems, SEE and BLE practice questions, book reviews, and stories in Nepali and English.";
+const BLOG_TITLE = BLOG_NAME;
+const BLOG_DESCRIPTION = SITE_DESCRIPTION;
 
 export async function GET() {
   const posts = getAllPosts().slice(0, 50);

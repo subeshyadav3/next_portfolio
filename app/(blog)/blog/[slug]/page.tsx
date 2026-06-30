@@ -7,6 +7,7 @@ import {
   getRelatedPosts,
   getPrevNextPosts,
 } from "@/lib/blog/posts";
+import { SITE_URL } from "@/lib/site-config";
 import { generatePostMetadata } from "@/lib/blog/seo";
 import {
   generateArticleSchema,
@@ -56,12 +57,12 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   const articleSchema = generateArticleSchema(post);
   const breadcrumbSchema = generateBreadcrumbSchema([
-    { name: "Home", url: "https://subeshyadav.com.np/blog" },
+    { name: "Home", url: `${SITE_URL}/blog` },
     {
       name: post.category,
-      url: `https://subeshyadav.com.np/blog/category/${categorySlug(post.category)}`,
+      url: `${SITE_URL}/blog/category/${categorySlug(post.category)}`,
     },
-    { name: post.title, url: `https://subeshyadav.com.np/blog/${post.slug}` },
+    { name: post.title, url: `${SITE_URL}/blog/${post.slug}` },
   ]);
 
   return (

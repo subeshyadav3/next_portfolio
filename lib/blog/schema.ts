@@ -1,7 +1,5 @@
 import { Post } from "./types";
-
-const SITE_URL = "https://subeshyadav.com.np";
-const SITE_NAME = "Subesh Yadav";
+import { SITE_URL, SITE_NAME } from "@/lib/site-config";
 
 export function generateArticleSchema(post: Post) {
   return {

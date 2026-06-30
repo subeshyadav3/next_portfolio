@@ -1,6 +1,7 @@
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./providers/ThemeProvider";
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/lib/site-config";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -15,15 +16,15 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata = {
-  title: "Subesh Yadav | Full Stack Developer",
-  description:
-    "Portfolio of Subesh Yadav, a full-stack developer building scalable web apps with React, Next.js and Node.js.",
+  metadataBase: new URL(SITE_URL),
+  title: `${SITE_NAME} | Full Stack Developer`,
+  description: SITE_DESCRIPTION,
   keywords:
     "Subesh Yadav, Full Stack Developer, Web Development, Next.js, React, Node.js",
   openGraph: {
-    title: "Subesh Yadav Portfolio",
-    description: "Full-stack developer building scalable web apps.",
-    url: "https://www.subeshyadav.com",
+    title: `${SITE_NAME} Portfolio`,
+    description: SITE_DESCRIPTION,
+    url: SITE_URL,
     type: "website",
   },
   icons: { icon: "/logo.svg" },

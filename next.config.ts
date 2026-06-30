@@ -1,5 +1,13 @@
 import type { NextConfig } from "next";
 
+function getRedirectSource(source: string): string {
+  try {
+    return new URL(source).pathname;
+  } catch {
+    return source;
+  }
+}
+
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
@@ -18,7 +26,7 @@ const nextConfig: NextConfig = {
     try {
       const redirects = require("./data/redirects.json") as Record<string, string>;
       return Object.entries(redirects).map(([source, destination]) => ({
-        source: new URL(source).pathname,
+        source: getRedirectSource(source),
         destination,
         permanent: true,
       }));

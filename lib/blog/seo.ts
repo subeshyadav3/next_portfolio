@@ -1,11 +1,9 @@
 import { Metadata } from "next";
 import { Post, Category, Tag } from "./types";
+import { SITE_URL, SITE_NAME, SITE_DESCRIPTION, BLOG_NAME } from "@/lib/site-config";
 
-const SITE_URL = "https://subeshyadav.com.np";
-const SITE_NAME = "Subesh Yadav";
-const BLOG_TITLE = "Blog | Subesh Yadav";
-const BLOG_DESCRIPTION =
-  "Essays, poems, SEE/BLB notes, and educational content in Nepali and English by Subesh Yadav.";
+const BLOG_TITLE = `${BLOG_NAME} | ${SITE_NAME}`;
+const BLOG_DESCRIPTION = SITE_DESCRIPTION;
 
 export function generatePostMetadata(post: Post): Metadata {
   const title = post.title;

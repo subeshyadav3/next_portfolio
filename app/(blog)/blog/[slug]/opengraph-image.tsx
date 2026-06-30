@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og";
 import { getPostBySlug } from "@/lib/blog/posts";
+import { SITE_URL } from "@/lib/site-config";
 
 export const size = {
   width: 1200,
@@ -88,7 +89,7 @@ export default async function Image({ params }: PageProps) {
             color: "#57534e",
           }}
         >
-          subeshyadav.com.np/blog
+          {SITE_URL.replace("https://", "")}/blog
         </div>
       </div>
     ),

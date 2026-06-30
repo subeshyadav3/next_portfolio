@@ -1,7 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { Resend } from 'resend';
+import { SITE_URL } from '@/lib/site-config';
 
-const resend = new Resend(process.env.RESEND_API_KEY); 
+const resend = new Resend(process.env.RESEND_API_KEY);
+const SITE_DOMAIN = SITE_URL.replace('https://', '');
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
@@ -9,9 +11,9 @@ export async function POST(req: NextRequest) {
 
   try {
     const data = await resend.emails.send({
-      from: 'Subesh <info@subeshyadav.com.np>', 
-      to: 'subeshgaming@gmail.com',             
-      replyTo : email,                           
+      from: `Subesh <info@${SITE_DOMAIN}>`,
+      to: 'subeshgaming@gmail.com',
+      replyTo: email,
       subject: 'New Contact Form Message',
       html: `
         <p><strong>Name:</strong> ${name}</p>

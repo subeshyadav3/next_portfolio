@@ -2,8 +2,10 @@ import { XMLParser } from "fast-xml-parser";
 import TurndownService from "turndown";
 import sanitizeHtml from "sanitize-html";
 import slugify from "slugify";
+import { transliterate } from "transliteration";
 import * as fs from "fs";
 import * as path from "path";
+import { SITE_URL } from "../lib/site-config";
 
 const BLOG_FEED_URL =
   "https://nepaliessaybook.blogspot.com/feeds/posts/default?max-results=500";
@@ -102,29 +104,74 @@ function cleanTitle(title: string): string {
     .trim();
 }
 
-function generateSlug(title: string, oldUrl: string, usedSlugs: Set<string>): string {
-  let base = "";
+function truncateSlug(slug: string, maxLength: number): string {
+  slug = slug.replace(/^-+|-+$/g, "");
+  if (slug.length <= maxLength) return slug;
+  const truncated = slug.slice(0, maxLength);
+  const lastHyphen = truncated.lastIndexOf("-");
+  if (lastHyphen > maxLength / 2) {
+    return truncated.slice(0, lastHyphen).replace(/-+$/, "");
+  }
+  return truncated.replace(/-+$/, "");
+}
+
+function generateSlug(
+  title: string,
+  oldUrl: string,
+  usedSlugs: Set<string>,
+  options: {
+    existingSlug?: string;
+    description?: string;
+    category?: string;
+  } = {}
+): string {
+  const { existingSlug, description, category } = options;
+
+  // Preserve existing descriptive slugs so we don't churn already-readable URLs.
+  if (existingSlug && !/^blog-post/.test(existingSlug)) {
+    if (!usedSlugs.has(existingSlug)) {
+      usedSlugs.add(existingSlug);
+      return existingSlug;
+    }
+  }
+
   const bloggerSlug = extractBloggerSlug(oldUrl);
   const cleanedTitle = cleanTitle(title);
 
-  // Prefer title-based slug for English titles; fallback to Blogger slug
-  const isDevanagari = /[\u0900-\u097F]/.test(cleanedTitle);
-  if (!isDevanagari && cleanedTitle) {
-    base = slugify(cleanedTitle, { lower: true, strict: true, remove: /[*+~.()'"!:@]/g });
-  } else if (bloggerSlug) {
-    base = bloggerSlug;
-  } else {
-    base = slugify(cleanedTitle, { lower: true, strict: true }) || "post";
+  // Transliterate Devanagari (and any other non-Latin script) to Latin, then slugify.
+  const latinTitle = transliterate(cleanedTitle);
+  let base = slugify(latinTitle, {
+    lower: true,
+    strict: true,
+    remove: /[*+~.()'"!:@]/g,
+  });
+
+  // Fallback chain: description -> category -> blogger slug -> "post"
+  if (!base || base.replace(/-/g, "").length < 3) {
+    const latinDescription = description ? transliterate(description) : "";
+    base = slugify(latinDescription, {
+      lower: true,
+      strict: true,
+      remove: /[*+~.()'"!:@]/g,
+    });
+  }
+  if (!base || base.replace(/-/g, "").length < 3) {
+    const latinCategory = category ? transliterate(category) : "";
+    base = slugify(latinCategory, { lower: true, strict: true }) || "";
+  }
+  if (!base || base.replace(/-/g, "").length < 3) {
+    base = bloggerSlug || "post";
   }
 
-  // Truncate overly long slugs
-  base = base.replace(/^-+|-+$/g, "");
-  if (base.length > 80) base = base.slice(0, 80).replace(/-+$/, "");
+  // Cap at ~60 characters at a word boundary.
+  base = truncateSlug(base, 60);
 
   let slug = base;
   let counter = 2;
   while (usedSlugs.has(slug)) {
-    slug = `${base}-${counter}`;
+    const suffix = `-${counter}`;
+    const maxBaseLen = Math.max(1, 60 - suffix.length);
+    slug = `${base.slice(0, maxBaseLen)}${suffix}`;
     counter++;
   }
   usedSlugs.add(slug);
@@ -411,6 +458,33 @@ async function downloadFeed(): Promise<FeedData> {
   };
 }
 
+function loadExistingSlugs(outDir: string): Record<string, string> {
+  const slugs: Record<string, string> = {};
+  if (!fs.existsSync(outDir)) return slugs;
+  for (const file of fs.readdirSync(outDir)) {
+    if (!file.endsWith(".mdx")) continue;
+    const content = fs.readFileSync(path.join(outDir, file), "utf-8");
+    const match = content.match(/^slug:\s*"?([^"\n]+)"?/m);
+    const slugMatch = content.match(/^oldUrl:\s*"?([^"\n]+)"?/m);
+    if (match?.[1] && slugMatch?.[1]) {
+      slugs[slugMatch[1].trim()] = match[1].trim();
+    }
+  }
+  return slugs;
+}
+
+function cleanStaleFiles(outDir: string, keptSlugs: Set<string>) {
+  if (!fs.existsSync(outDir)) return;
+  for (const file of fs.readdirSync(outDir)) {
+    if (!file.endsWith(".mdx")) continue;
+    const slug = file.replace(/\.mdx$/, "");
+    if (!keptSlugs.has(slug)) {
+      fs.unlinkSync(path.join(outDir, file));
+      console.log(`  removed stale file: ${file}`);
+    }
+  }
+}
+
 async function main() {
   const data = await downloadFeed();
   const entries = data.feed.entry
@@ -421,9 +495,11 @@ async function main() {
 
   console.log(`\nFound ${entries.length} total posts`);
 
+  const existingSlugs = loadExistingSlugs(OUT_DIR);
   const usedSlugs = new Set<string>();
   const redirects: Record<string, string> = {};
   const manifest: PostMeta[] = [];
+  const keptSlugs = new Set<string>();
 
   for (const entry of entries) {
     const rawTitle = getText(entry.title as any);
@@ -433,8 +509,12 @@ async function main() {
     const { category, tags } = normalizeTags(categories);
 
     const title = cleanTitle(rawTitle);
-    const slug = generateSlug(title, oldUrl, usedSlugs);
     const description = generateDescription(html, title);
+    const slug = generateSlug(title, oldUrl, usedSlugs, {
+      existingSlug: existingSlugs[oldUrl],
+      description,
+      category,
+    });
     const seoTitle = generateSeoTitle(title, category);
     const readingTime = calculateReadingTime(html);
     const sanitizedHtml = sanitizeBloggerHtml(html);
@@ -443,7 +523,7 @@ async function main() {
     const published = entry.published || "";
     const updated = entry.updated || "";
     const authorName = entry.author?.name || "Subesh Yadav";
-    const authorUrl = entry.author?.uri || "https://subeshyadav.com.np";
+    const authorUrl = entry.author?.uri || SITE_URL;
     const image = (entry as any)["media:thumbnail"]?.["@_url"] || "";
 
     const frontmatter = {
@@ -480,11 +560,14 @@ async function main() {
     const filePath = path.join(OUT_DIR, `${slug}.mdx`);
     fs.writeFileSync(filePath, mdxContent, "utf-8");
 
+    keptSlugs.add(slug);
     redirects[oldUrl] = `/blog/${slug}`;
     manifest.push(frontmatter);
 
     console.log(`✓ ${slug}`);
   }
+
+  cleanStaleFiles(OUT_DIR, keptSlugs);
 
   fs.writeFileSync(
     path.join(DATA_DIR, "redirects.json"),
