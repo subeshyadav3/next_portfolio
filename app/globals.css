@@ -13,6 +13,25 @@
   --blog-border: #e7e5e4;
   --blog-accent: #059669;
   --blog-accent-light: #d1fae5;
+
+  /* Category accent colors */
+  --cat-essay: #2563eb;
+  --cat-poem: #9333ea;
+  --cat-shayari: #db2777;
+  --cat-story: #ea580c;
+  --cat-exam: #059669;
+  --cat-review: #ca8a04;
+
+  /* Prose typography scale */
+  --prose-font-size: 1.125rem;
+  --prose-line-height: 1.75;
+  --prose-max-width: 68ch;
+  --prose-font-family-body: "Source Serif 4", Georgia, serif;
+  --prose-font-family-devanagari: "Noto Sans Devanagari", sans-serif;
+  --prose-devanagari-line-height: 2.1;
+  --prose-devanagari-letter-spacing: 0.01em;
+  --prose-paragraph-gap: 1.5em;
+  --prose-section-gap: 3rem;
 }
 
 .dark .blog-section {
@@ -24,6 +43,14 @@
   --blog-border: #292524;
   --blog-accent: #34d399;
   --blog-accent-light: #064e3b;
+
+  /* Lightened category accents for dark backgrounds */
+  --cat-essay: color-mix(in srgb, #2563eb 85%, white);
+  --cat-poem: color-mix(in srgb, #9333ea 85%, white);
+  --cat-shayari: color-mix(in srgb, #db2777 85%, white);
+  --cat-story: color-mix(in srgb, #ea580c 85%, white);
+  --cat-exam: color-mix(in srgb, #059669 85%, white);
+  --cat-review: color-mix(in srgb, #ca8a04 85%, white);
 }
 
 .blog-section {
