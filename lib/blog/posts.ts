@@ -10,7 +10,7 @@ import {
 } from "./categories";
 import { getYear } from "./utils";
 
-const POSTS_DIR = path.join(process.cwd(), "content/blog");
+const POSTS_DIR = path.join(process.cwd(), "final_content/blog");
 
 function readPostFile(filePath: string): Post | null {
   try {
