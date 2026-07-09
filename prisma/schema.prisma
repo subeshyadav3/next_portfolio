@@ -310,8 +310,9 @@ model Comment {
   authorName  String
   authorEmail String?
 
-  postId      String
-  post        Post           @relation(fields: [postId], references: [id], onDelete: Cascade)
+  postId      String?
+  post        Post?          @relation(fields: [postId], references: [id], onDelete: Cascade)
+  postSlug    String?
 
   parentId    String?
   parent      Comment?       @relation("CommentThread", fields: [parentId], references: [id])
@@ -323,6 +324,7 @@ model Comment {
   updatedAt   DateTime       @updatedAt
 
   @@index([postId, status])
+  @@index([postSlug, status])
   @@index([parentId])
 }
 

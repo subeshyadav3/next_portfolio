@@ -1,19 +1,25 @@
 import { NextRequest, NextResponse } from "next/server";
 import { prisma } from "@/db/prisma";
+import { CommentStatus } from "@prisma/client";
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
   const postId = searchParams.get("postId");
+  const postSlug = searchParams.get("postSlug");
 
-  if (!postId) {
-    return NextResponse.json({ error: "postId is required" }, { status: 400 });
+  if (!postId && !postSlug) {
+    return NextResponse.json({ error: "postId or postSlug is required" }, { status: 400 });
   }
 
+  const whereClause = postId 
+    ? { postId, status: CommentStatus.APPROVED, parentId: null }
+    : { postSlug, status: CommentStatus.APPROVED, parentId: null };
+
   const comments = await prisma.comment.findMany({
-    where: { postId, status: "APPROVED", parentId: null },
+    where: whereClause,
     include: {
       replies: {
-        where: { status: "APPROVED" },
+        where: { status: CommentStatus.APPROVED },
         orderBy: { createdAt: "asc" },
       },
     },
@@ -26,11 +32,11 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   const body = await request.json();
 
-  const { postId, authorName, authorEmail, content, parentId } = body;
+  const { postId, postSlug, authorName, authorEmail, content, parentId } = body;
 
-  if (!postId || !authorName || !content) {
+  if ((!postId && !postSlug) || !authorName || !content) {
     return NextResponse.json(
-      { error: "postId, authorName, and content are required" },
+      { error: "postId or postSlug, authorName, and content are required" },
       { status: 400 }
     );
   }
@@ -42,25 +48,35 @@ export async function POST(request: NextRequest) {
     );
   }
 
-  const post = await prisma.post.findUnique({
-    where: { id: postId },
-    select: { allowComments: true },
-  });
-
-  if (!post) {
-    return NextResponse.json({ error: "Post not found" }, { status: 404 });
+  // Check if post exists and allows comments
+  let post = null;
+  if (postId) {
+    post = await prisma.post.findUnique({
+      where: { id: postId },
+      select: { allowComments: true },
+    });
+  } else if (postSlug) {
+    post = await prisma.post.findUnique({
+      where: { slug: postSlug },
+      select: { allowComments: true, id: true },
+    });
   }
 
-  if (!post.allowComments) {
+  // For MDX posts not in DB, allow comments by default
+  if (!post && postSlug) {
+    // Allow comments for MDX posts (not in DB)
+  } else if (post && !post.allowComments) {
     return NextResponse.json({ error: "Comments are closed" }, { status: 403 });
   }
 
   if (parentId) {
     const parent = await prisma.comment.findUnique({
       where: { id: parentId },
-      select: { postId: true, parentId: true },
+      select: { postId: true, parentId: true, postSlug: true },
     });
-    if (!parent || parent.postId !== postId) {
+    const parentPostId = parent?.postId;
+    const parentPostSlug = parent?.postSlug;
+    if (!parent || (postId && parentPostId !== postId) || (postSlug && parentPostSlug !== postSlug)) {
       return NextResponse.json({ error: "Invalid parent comment" }, { status: 400 });
     }
     if (parent.parentId) {
@@ -70,12 +86,13 @@ export async function POST(request: NextRequest) {
 
   const comment = await prisma.comment.create({
     data: {
-      postId,
+      postId: postId ?? null,
+      postSlug: postSlug ?? null,
       authorName,
       authorEmail: authorEmail ?? null,
       content,
       parentId: parentId ?? null,
-      status: "PENDING",
+      status: CommentStatus.PENDING,
     },
   });
 

@@ -17,7 +17,7 @@ const AUTH_COOKIE_NAMES = [
 export default async function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
 
-  // Allow login page, API auth routes, and static files
+  // Allow login page, API auth routes, and static files - NO AUTH CHECK
   if (
     pathname.startsWith("/admin/login") ||
     pathname.startsWith("/api/auth") ||
@@ -28,7 +28,7 @@ export default async function middleware(req: NextRequest) {
     return NextResponse.next();
   }
 
-  // Protect all /admin routes
+  // Protect all other /admin routes
   if (pathname.startsWith("/admin")) {
     const token = AUTH_COOKIE_NAMES
       .map((name) => req.cookies.get(name)?.value)
@@ -49,10 +49,15 @@ export default async function middleware(req: NextRequest) {
         return NextResponse.redirect(new URL("/admin", req.url));
       }
     } catch {
-      // Invalid token, redirect to login
+      // Invalid token - clear it and redirect to login
       const loginUrl = new URL("/admin/login", req.url);
       loginUrl.searchParams.set("callbackUrl", pathname);
-      return NextResponse.redirect(loginUrl);
+      const response = NextResponse.redirect(loginUrl);
+      // Clear all auth cookies
+      AUTH_COOKIE_NAMES.forEach((name) => {
+        response.cookies.delete(name);
+      });
+      return response;
     }
   }
 
