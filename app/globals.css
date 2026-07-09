@@ -782,7 +782,7 @@ body {
   }
 
   /* ── Mobile nav ── */
-  .mobile-nav { animation: mob-navbar .35s cubic-bezier(0.16,1,0.3,1) forwards; }
+  .mobile-nav { animation: mob-navbar .4s cubic-bezier(0.16,1,0.3,1) forwards; }
   .mobile-nav-close { animation: mob-navbar-close .35s cubic-bezier(0.16,1,0.3,1) forwards; }
 
   @keyframes mob-navbar {
@@ -792,6 +792,16 @@ body {
   @keyframes mob-navbar-close {
     0% { transform: translateX(0); opacity: 1; }
     100% { transform: translateX(100%); opacity: 0; }
+  }
+
+  .mobile-nav-item {
+    opacity: 0;
+    animation: mobileNavItem 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  @keyframes mobileNavItem {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
   }
 
   /* ── Splash ── */
