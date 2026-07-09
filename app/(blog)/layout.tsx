@@ -34,6 +34,8 @@ const BLOG_NAV: NavItem[] = [
     ],
   },
   { label: "Reviews", href: "/blog/category/reviews", color: getCategoryAccent("reviews") },
+  { label: "About", href: "/blog/about", color: getCategoryAccent("essays") },
+  { label: "Contact", href: "/blog/contact", color: getCategoryAccent("essays") },
 ];
 
 function useIsActive(href?: string): boolean {
@@ -334,11 +336,50 @@ export default function BlogLayout({
             </div>
             <div>
               <h3 className="text-sm font-semibold text-[var(--blog-text)]">
+                Quick Links
+              </h3>
+              <ul className="mt-3 space-y-2">
+                <li>
+                  <Link
+                    href="/blog/about"
+                    className="text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)] transition-colors"
+                  >
+                    About Us
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/blog/contact"
+                    className="text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)] transition-colors"
+                  >
+                    Contact
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/blog/privacy"
+                    className="text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)] transition-colors"
+                  >
+                    Privacy Policy
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    href="/blog/terms"
+                    className="text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)] transition-colors"
+                  >
+                    Terms of Service
+                  </Link>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-sm font-semibold text-[var(--blog-text)]">
                 About
               </h3>
               <p className="mt-3 text-sm text-[var(--blog-text-secondary)] leading-relaxed">
                 Nepali essays, poems, stories, and study materials for
-                  students.
+                students.
               </p>
               <Link
                 href="/blog/author"
