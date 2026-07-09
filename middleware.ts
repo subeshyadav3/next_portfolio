@@ -1,10 +1,10 @@
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 import { jwtVerify } from "jose";
 
 const JWT_SECRET = new TextEncoder().encode(process.env.AUTH_SECRET || "fallback-secret");
 
-export default async function middleware(req: Request) {
-  const { pathname } = new URL(req.url);
+export default async function middleware(req: NextRequest) {
+  const { pathname } = req.nextUrl;
   const token = req.cookies.get("authjs.session-token")?.value ?? req.cookies.get("__session")?.value;
 
   // Allow login page and API auth routes
