@@ -99,9 +99,16 @@ function chapterNumber(text: string): number | null {
 /* -------------------------------------------------------------------------- */
 
 export class PrismaPostSource implements PostSource {
+  private langWhere(opts?: ListOptions): { language?: string } {
+    return opts?.language ? { language: opts.language } : {};
+  }
+
   async list(opts?: ListOptions): Promise<NormalizedPostSummary[]> {
     const posts = await prisma.post.findMany({
-      where: opts?.includeUnpublished ? {} : publicFilter(),
+      where: {
+        ...(opts?.includeUnpublished ? {} : publicFilter()),
+        ...this.langWhere(opts),
+      },
       include: POST_INCLUDE,
       orderBy: { publishedAt: "desc" },
     });
@@ -153,6 +160,7 @@ export class PrismaPostSource implements PostSource {
       where: {
         categoryId: cat.id,
         ...(opts?.includeUnpublished ? {} : publicFilter()),
+        ...this.langWhere(opts),
       },
       include: POST_INCLUDE,
       orderBy: { publishedAt: "desc" },
@@ -167,6 +175,7 @@ export class PrismaPostSource implements PostSource {
       where: {
         tags: { some: { tagId: tag.id } },
         ...(opts?.includeUnpublished ? {} : publicFilter()),
+        ...this.langWhere(opts),
       },
       include: POST_INCLUDE,
       orderBy: { publishedAt: "desc" },
@@ -184,6 +193,7 @@ export class PrismaPostSource implements PostSource {
       where: {
         publishedAt: { gte: start, lte: end },
         ...(opts?.includeUnpublished ? {} : publicFilter()),
+        ...this.langWhere(opts),
       },
       include: POST_INCLUDE,
       orderBy: { publishedAt: "desc" },
@@ -191,7 +201,7 @@ export class PrismaPostSource implements PostSource {
     return paginate(posts.map((p) => summarize(toNormalized(p))), opts);
   }
 
-  async categories(): Promise<NormalizedCategory[]> {
+  async categories(opts?: ListOptions): Promise<NormalizedCategory[]> {
     const cats = await prisma.category.findMany({
       orderBy: { displayOrder: "asc" },
     });
@@ -203,6 +213,7 @@ export class PrismaPostSource implements PostSource {
         AND p.status = 'PUBLISHED'
         AND (p."scheduledFor" IS NULL OR p."scheduledFor" <= NOW())
         AND (p."expiresAt" IS NULL OR p."expiresAt" > NOW())
+        ${opts?.language ? Prisma.sql`AND p.language = ${opts.language}` : Prisma.empty}
       GROUP BY c.slug
     `;
     const countMap = new Map(rows.map((r) => [r.slug, Number(r.count)]));
@@ -213,7 +224,7 @@ export class PrismaPostSource implements PostSource {
     }));
   }
 
-  async tags(): Promise<NormalizedTag[]> {
+  async tags(opts?: ListOptions): Promise<NormalizedTag[]> {
     const tags = await prisma.tag.findMany({
       orderBy: { name: "asc" },
     });
@@ -233,6 +244,7 @@ export class PrismaPostSource implements PostSource {
         AND p.status = 'PUBLISHED'
         AND (p."scheduledFor" IS NULL OR p."scheduledFor" <= NOW())
         AND (p."expiresAt" IS NULL OR p."expiresAt" > NOW())
+        ${opts?.language ? Prisma.sql`AND p.language = ${opts.language}` : Prisma.empty}
       GROUP BY t.slug
     `;
     const countMap = new Map(tagCounts.map((r) => [r.slug, Number(r.count)]));
@@ -243,9 +255,9 @@ export class PrismaPostSource implements PostSource {
     }));
   }
 
-  async archiveYears(): Promise<NormalizedArchiveYear[]> {
+  async archiveYears(opts?: ListOptions): Promise<NormalizedArchiveYear[]> {
     const posts = await prisma.post.findMany({
-      where: publicFilter(),
+      where: { ...publicFilter(), ...this.langWhere(opts) },
       select: { publishedAt: true },
     });
     const map = new Map<string, number>();
@@ -275,7 +287,7 @@ export class PrismaPostSource implements PostSource {
     }
     // Fallback: category+tag scoring
     const all = await prisma.post.findMany({
-      where: { slug: { not: post.slug }, ...publicFilter() },
+      where: { slug: { not: post.slug }, ...publicFilter(), language: post.language },
       include: POST_INCLUDE,
     });
     const scored = all.map((p) => {
@@ -294,7 +306,7 @@ export class PrismaPostSource implements PostSource {
 
   async prevNext(post: NormalizedPost): Promise<AdjacentPosts> {
     const all = await prisma.post.findMany({
-      where: publicFilter(),
+      where: { ...publicFilter(), language: post.language },
       select: { slug: true, publishedAt: true },
       orderBy: { publishedAt: "asc" },
     });
@@ -319,6 +331,7 @@ export class PrismaPostSource implements PostSource {
         slug: { not: post.slug },
         category: { slug: getCategorySlug(post.category) },
         ...publicFilter(),
+        language: post.language,
       },
       select: { slug: true, title: true },
     });
@@ -341,9 +354,9 @@ export class PrismaPostSource implements PostSource {
     return { prev, next };
   }
 
-  async featured(): Promise<NormalizedPostSummary | null> {
+  async featured(opts?: ListOptions): Promise<NormalizedPostSummary | null> {
     const p = await prisma.post.findFirst({
-      where: { featured: true, ...publicFilter() },
+      where: { featured: true, ...publicFilter(), ...this.langWhere(opts) },
       include: POST_INCLUDE,
       orderBy: { publishedAt: "desc" },
     });
@@ -352,10 +365,10 @@ export class PrismaPostSource implements PostSource {
     return any[0] ?? null;
   }
 
-  async popular(count = 6): Promise<NormalizedPostSummary[]> {
+  async popular(count = 6, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
     // Heuristic: posts with cover image and >= 3 min reading.
     const posts = await prisma.post.findMany({
-      where: { coverMediaId: { not: null }, readingTimeMin: { gte: 3 }, ...publicFilter() },
+      where: { coverMediaId: { not: null }, readingTimeMin: { gte: 3 }, ...publicFilter(), ...this.langWhere(opts) },
       include: POST_INCLUDE,
       orderBy: { publishedAt: "desc" },
       take: count,
@@ -363,9 +376,9 @@ export class PrismaPostSource implements PostSource {
     return posts.map((p) => summarize(toNormalized(p)));
   }
 
-  async recentlyUpdated(count = 6): Promise<NormalizedPostSummary[]> {
+  async recentlyUpdated(count = 6, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
     const posts = await prisma.post.findMany({
-      where: publicFilter(),
+      where: { ...publicFilter(), ...this.langWhere(opts) },
       include: POST_INCLUDE,
       orderBy: { updatedAt: "desc" },
       take: count,
@@ -373,17 +386,17 @@ export class PrismaPostSource implements PostSource {
     return posts.map((p) => summarize(toNormalized(p)));
   }
 
-  async editorPicks(count = 4): Promise<NormalizedPostSummary[]> {
+  async editorPicks(count = 4, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
     // Deterministic pick: featured + sticky first, then newest.
     const posts = await prisma.post.findMany({
-      where: { OR: [{ featured: true }, { sticky: true }], ...publicFilter() },
+      where: { OR: [{ featured: true }, { sticky: true }], ...publicFilter(), ...this.langWhere(opts) },
       include: POST_INCLUDE,
       orderBy: [{ featured: "desc" }, { sticky: "desc" }, { publishedAt: "desc" }],
       take: count,
     });
     if (posts.length >= count) return posts.map((p) => summarize(toNormalized(p)));
     const fillers = await prisma.post.findMany({
-      where: { slug: { notIn: posts.map((p) => p.slug) }, ...publicFilter() },
+      where: { slug: { notIn: posts.map((p) => p.slug) }, ...publicFilter(), ...this.langWhere(opts) },
       include: POST_INCLUDE,
       orderBy: { publishedAt: "desc" },
       take: count - posts.length,
@@ -391,9 +404,9 @@ export class PrismaPostSource implements PostSource {
     return [...posts, ...fillers].map((p) => summarize(toNormalized(p)));
   }
 
-  async latest(count = 6): Promise<NormalizedPostSummary[]> {
+  async latest(count = 6, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
     const posts = await prisma.post.findMany({
-      where: publicFilter(),
+      where: { ...publicFilter(), ...this.langWhere(opts) },
       include: POST_INCLUDE,
       orderBy: { publishedAt: "desc" },
       take: count,

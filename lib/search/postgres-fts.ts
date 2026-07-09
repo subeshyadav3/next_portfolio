@@ -28,6 +28,8 @@ export async function searchPostsFts(
   const limit = options?.limit ?? 20;
   const offset = options?.offset ?? 0;
 
+  const SHOW_ALL = process.env.SHOW_ALL_LANGUAGES === "true";
+
   // Build the WHERE clauses safely
   const conditions: string[] = [
     `p.status = 'PUBLISHED'`,
@@ -35,6 +37,12 @@ export async function searchPostsFts(
   ];
   const params: string[] = [query];
   let paramIndex = 2;
+
+  if (!SHOW_ALL) {
+    conditions.push(`p.language = $${paramIndex}`);
+    params.push("en");
+    paramIndex++;
+  }
 
   if (options?.category) {
     conditions.push(`c.slug = $${paramIndex}`);

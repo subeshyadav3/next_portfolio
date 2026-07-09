@@ -126,9 +126,13 @@ const getAllCached = unstable_cache(
 /* -------------------------------------------------------------------------- */
 
 export class MdxFileSource implements PostSource {
+  private filterLang(posts: NormalizedPost[], opts?: ListOptions): NormalizedPost[] {
+    return opts?.language ? posts.filter((p) => p.language === opts.language) : posts;
+  }
+
   async list(opts?: ListOptions): Promise<NormalizedPostSummary[]> {
     const all = await getAllCached();
-    return paginate(all.map(summarize), opts);
+    return paginate(this.filterLang(all, opts).map(summarize), opts);
   }
 
   async get(
@@ -150,7 +154,7 @@ export class MdxFileSource implements PostSource {
   ): Promise<NormalizedPostSummary[]> {
     const all = await getAllCached();
     return paginate(
-      all.filter((p) => getCategorySlug(p.category) === slug).map(summarize),
+      this.filterLang(all, opts).filter((p) => getCategorySlug(p.category) === slug).map(summarize),
       opts
     );
   }
@@ -158,7 +162,7 @@ export class MdxFileSource implements PostSource {
   async byTag(slug: string, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
     const all = await getAllCached();
     return paginate(
-      all.filter((p) => p.tags.some((t) => tagSlug(t) === tagSlug(slug))).map(summarize),
+      this.filterLang(all, opts).filter((p) => p.tags.some((t) => tagSlug(t) === tagSlug(slug))).map(summarize),
       opts
     );
   }
@@ -166,13 +170,13 @@ export class MdxFileSource implements PostSource {
   async byYear(year: string, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
     const all = await getAllCached();
     return paginate(
-      all.filter((p) => getYear(p.published) === year).map(summarize),
+      this.filterLang(all, opts).filter((p) => getYear(p.published) === year).map(summarize),
       opts
     );
   }
 
-  async categories(): Promise<NormalizedCategory[]> {
-    const all = await getAllCached();
+  async categories(opts?: ListOptions): Promise<NormalizedCategory[]> {
+    const all = this.filterLang(await getAllCached(), opts);
     const map = new Map<string, NormalizedCategory>();
     for (const p of all) {
       const slug = getCategorySlug(p.category);
@@ -183,8 +187,8 @@ export class MdxFileSource implements PostSource {
     return [...map.values()].sort((a, b) => b.count - a.count);
   }
 
-  async tags(): Promise<NormalizedTag[]> {
-    const all = await getAllCached();
+  async tags(opts?: ListOptions): Promise<NormalizedTag[]> {
+    const all = this.filterLang(await getAllCached(), opts);
     const map = new Map<string, NormalizedTag>();
     for (const p of all) {
       for (const tag of p.tags) {
@@ -197,8 +201,8 @@ export class MdxFileSource implements PostSource {
     return [...map.values()].sort((a, b) => b.count - a.count);
   }
 
-  async archiveYears(): Promise<NormalizedArchiveYear[]> {
-    const all = await getAllCached();
+  async archiveYears(opts?: ListOptions): Promise<NormalizedArchiveYear[]> {
+    const all = this.filterLang(await getAllCached(), opts);
     const map = new Map<string, number>();
     for (const p of all) {
       const y = getYear(p.published);
@@ -210,7 +214,7 @@ export class MdxFileSource implements PostSource {
   }
 
   async related(post: NormalizedPost, count = 3): Promise<NormalizedPostSummary[]> {
-    const all = await getAllCached();
+    const all = (await getAllCached()).filter((p) => p.language === post.language);
     const scored = all
       .filter((p) => p.slug !== post.slug)
       .map((p) => {
@@ -224,7 +228,9 @@ export class MdxFileSource implements PostSource {
   }
 
   async prevNext(post: NormalizedPost): Promise<AdjacentPosts> {
-    const all = [...(await getAllCached())].sort(
+    const all = [...(await getAllCached())]
+      .filter((p) => p.language === post.language)
+      .sort(
       (a, b) =>
         new Date(a.published).getTime() - new Date(b.published).getTime()
     );
@@ -240,7 +246,7 @@ export class MdxFileSource implements PostSource {
       chapterNumber(post.title) ?? chapterNumber(post.slug);
     if (current === null) return { prev: null, next: null };
 
-    const all = await getAllCached();
+    const all = (await getAllCached()).filter((p) => p.language === post.language);
     const numbered = all
       .filter(
         (p) =>
@@ -265,31 +271,34 @@ export class MdxFileSource implements PostSource {
     };
   }
 
-  async featured(): Promise<NormalizedPostSummary | null> {
-    const all = await getAllCached();
+  async featured(opts?: ListOptions): Promise<NormalizedPostSummary | null> {
+    const all = this.filterLang(await getAllCached(), opts);
     const f = all.find((p) => p.featured);
     return f ? summarize(f) : all[0] ? summarize(all[0]) : null;
   }
 
-  async popular(count = 6): Promise<NormalizedPostSummary[]> {
-    const all = await getAllCached();
+  async popular(count = 6, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
+    const all = this.filterLang(await getAllCached(), opts);
     return all
       .filter((p) => p.image && p.readingTime >= 3)
       .slice(0, count)
       .map(summarize);
   }
 
-  async recentlyUpdated(count = 6): Promise<NormalizedPostSummary[]> {
-    const all = [...(await getAllCached())].sort(
-      (a, b) =>
-        new Date(b.updated).getTime() - new Date(a.updated).getTime()
+  async recentlyUpdated(count = 6, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
+    const all = this.filterLang(
+      [...(await getAllCached())].sort(
+        (a, b) =>
+          new Date(b.updated).getTime() - new Date(a.updated).getTime()
+      ),
+      opts
     );
     return all.slice(0, count).map(summarize);
   }
 
-  async editorPicks(count = 4): Promise<NormalizedPostSummary[]> {
+  async editorPicks(count = 4, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
     // Deterministic ordering by hashed index for stable SSR output.
-    const all = await getAllCached();
+    const all = this.filterLang(await getAllCached(), opts);
     return [...all]
       .sort((a, b) => {
         const ha = hashSlug(a.slug);
@@ -300,8 +309,8 @@ export class MdxFileSource implements PostSource {
       .map(summarize);
   }
 
-  async latest(count = 6): Promise<NormalizedPostSummary[]> {
-    const all = await getAllCached();
+  async latest(count = 6, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
+    const all = this.filterLang(await getAllCached(), opts);
     return all.slice(0, count).map(summarize);
   }
 

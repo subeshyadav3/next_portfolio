@@ -66,6 +66,8 @@ export interface ListOptions {
   offset?: number;
   /** Include drafts/scheduled. Default false (public listing). */
   includeUnpublished?: boolean;
+  /** Filter by language. Default none (all languages). */
+  language?: PostLanguage;
 }
 
 export interface AdjacentPosts {

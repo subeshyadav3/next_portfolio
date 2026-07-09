@@ -40,9 +40,9 @@ export interface PostSource {
 
   // ---- Aggregations ----
 
-  categories(): Promise<NormalizedCategory[]>;
-  tags(): Promise<NormalizedTag[]>;
-  archiveYears(): Promise<NormalizedArchiveYear[]>;
+  categories(opts?: ListOptions): Promise<NormalizedCategory[]>;
+  tags(opts?: ListOptions): Promise<NormalizedTag[]>;
+  archiveYears(opts?: ListOptions): Promise<NormalizedArchiveYear[]>;
 
   // ---- Relations ----
 
@@ -55,11 +55,11 @@ export interface PostSource {
 
   // ---- Featured / curated ----
 
-  featured(): Promise<NormalizedPostSummary | null>;
-  popular(count?: number): Promise<NormalizedPostSummary[]>;
-  recentlyUpdated(count?: number): Promise<NormalizedPostSummary[]>;
-  editorPicks(count?: number): Promise<NormalizedPostSummary[]>;
-  latest(count?: number): Promise<NormalizedPostSummary[]>;
+  featured(opts?: ListOptions): Promise<NormalizedPostSummary | null>;
+  popular(count?: number, opts?: ListOptions): Promise<NormalizedPostSummary[]>;
+  recentlyUpdated(count?: number, opts?: ListOptions): Promise<NormalizedPostSummary[]>;
+  editorPicks(count?: number, opts?: ListOptions): Promise<NormalizedPostSummary[]>;
+  latest(count?: number, opts?: ListOptions): Promise<NormalizedPostSummary[]>;
 
   // ---- Maintenance ----
 

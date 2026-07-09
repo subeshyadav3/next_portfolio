@@ -106,10 +106,10 @@ export class CompositeSource implements PostSource {
 
   // ---- Aggregations: union ------------------------------------------------
 
-  async categories(): Promise<NormalizedCategory[]> {
+  async categories(opts?: ListOptions): Promise<NormalizedCategory[]> {
     const [dbCats, fsCats] = await Promise.all([
-      this.db.categories(),
-      this.fs.categories(),
+      this.db.categories(opts),
+      this.fs.categories(opts),
     ]);
     const map = new Map<string, NormalizedCategory>();
     for (const c of dbCats) map.set(c.slug, { ...c, count: 0 }); // counts filled below
@@ -121,10 +121,10 @@ export class CompositeSource implements PostSource {
     return [...map.values()].sort((a, b) => b.count - a.count);
   }
 
-  async tags(): Promise<NormalizedTag[]> {
+  async tags(opts?: ListOptions): Promise<NormalizedTag[]> {
     const [dbTags, fsTags] = await Promise.all([
-      this.db.tags(),
-      this.fs.tags(),
+      this.db.tags(opts),
+      this.fs.tags(opts),
     ]);
     const map = new Map<string, NormalizedTag>();
     for (const t of dbTags) map.set(t.slug, { ...t, count: 0 });
@@ -136,10 +136,10 @@ export class CompositeSource implements PostSource {
     return [...map.values()].sort((a, b) => b.count - a.count);
   }
 
-  async archiveYears(): Promise<NormalizedArchiveYear[]> {
+  async archiveYears(opts?: ListOptions): Promise<NormalizedArchiveYear[]> {
     const [dbYears, fsYears] = await Promise.all([
-      this.db.archiveYears(),
-      this.fs.archiveYears(),
+      this.db.archiveYears(opts),
+      this.fs.archiveYears(opts),
     ]);
     const map = new Map<string, number>();
     for (const y of dbYears) map.set(y.year, 0);
@@ -176,40 +176,40 @@ export class CompositeSource implements PostSource {
 
   // ---- Featured / curated: prefer DB, fall back to FS ---------------------
 
-  async featured(): Promise<NormalizedPostSummary | null> {
-    const fromDb = await this.db.featured();
+  async featured(opts?: ListOptions): Promise<NormalizedPostSummary | null> {
+    const fromDb = await this.db.featured(opts);
     if (fromDb) return fromDb;
-    return this.fs.featured();
+    return this.fs.featured(opts);
   }
 
-  async popular(count = 6): Promise<NormalizedPostSummary[]> {
+  async popular(count = 6, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
     const [db, fs] = await Promise.all([
-      this.db.popular(count),
-      this.fs.popular(count),
+      this.db.popular(count, opts),
+      this.fs.popular(count, opts),
     ]);
     return mergeLists(db, fs, count);
   }
 
-  async recentlyUpdated(count = 6): Promise<NormalizedPostSummary[]> {
+  async recentlyUpdated(count = 6, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
     const [db, fs] = await Promise.all([
-      this.db.recentlyUpdated(count),
-      this.fs.recentlyUpdated(count),
+      this.db.recentlyUpdated(count, opts),
+      this.fs.recentlyUpdated(count, opts),
     ]);
     return mergeLists(db, fs, count);
   }
 
-  async editorPicks(count = 4): Promise<NormalizedPostSummary[]> {
+  async editorPicks(count = 4, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
     const [db, fs] = await Promise.all([
-      this.db.editorPicks(count),
-      this.fs.editorPicks(count),
+      this.db.editorPicks(count, opts),
+      this.fs.editorPicks(count, opts),
     ]);
     return mergeLists(db, fs, count);
   }
 
-  async latest(count = 6): Promise<NormalizedPostSummary[]> {
+  async latest(count = 6, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
     const [db, fs] = await Promise.all([
-      this.db.latest(count),
-      this.fs.latest(count),
+      this.db.latest(count, opts),
+      this.fs.latest(count, opts),
     ]);
     return mergeLists(db, fs, count);
   }

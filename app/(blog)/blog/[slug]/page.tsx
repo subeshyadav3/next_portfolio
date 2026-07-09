@@ -59,7 +59,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
 
-  if (!post) {
+  if (!post || (process.env.SHOW_ALL_LANGUAGES !== "true" && post.language === "ne")) {
     notFound();
   }
 

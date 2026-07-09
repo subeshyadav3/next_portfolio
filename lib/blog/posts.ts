@@ -29,13 +29,16 @@ import type {
 // consumer signature yet.
 export type { Post, PostSummary, Category, Tag, ArchiveYear, AdjacentPosts };
 
-/** Swap the default source (used by tests). Not currently wired up. */
-// export function setPostSource(source: PostSource) { /* see lib/content/CompositeSource */ }
+const SHOW_ALL = process.env.SHOW_ALL_LANGUAGES === "true";
+
+function langOpts(): { language: "en" } | undefined {
+  return SHOW_ALL ? undefined : { language: "en" };
+}
 
 /* ---------- Async readers ---------- */
 
 export async function getAllPosts(opts?: { limit?: number; offset?: number }) {
-  return defaultSource.list(opts);
+  return defaultSource.list({ ...langOpts(), ...opts });
 }
 
 export async function getPostBySlug(slug: string) {
@@ -43,27 +46,27 @@ export async function getPostBySlug(slug: string) {
 }
 
 export async function getPostsByCategory(slug: string, opts?: { limit?: number; offset?: number }) {
-  return defaultSource.byCategory(slug, opts);
+  return defaultSource.byCategory(slug, { ...langOpts(), ...opts });
 }
 
 export async function getPostsByTag(tagName: string, opts?: { limit?: number; offset?: number }) {
-  return defaultSource.byTag(tagName, opts);
+  return defaultSource.byTag(tagName, { ...langOpts(), ...opts });
 }
 
 export async function getPostsByYear(year: string, opts?: { limit?: number; offset?: number }) {
-  return defaultSource.byYear(year, opts);
+  return defaultSource.byYear(year, { ...langOpts(), ...opts });
 }
 
 export async function getCategories() {
-  return defaultSource.categories();
+  return defaultSource.categories(langOpts());
 }
 
 export async function getTags() {
-  return defaultSource.tags();
+  return defaultSource.tags(langOpts());
 }
 
 export async function getArchiveYears() {
-  return defaultSource.archiveYears();
+  return defaultSource.archiveYears(langOpts());
 }
 
 export async function getRelatedPosts(currentPost: Post, count = 3) {
@@ -75,23 +78,23 @@ export async function getPrevNextPosts(currentPost: Post): Promise<AdjacentPosts
 }
 
 export async function getLatestPosts(count = 6) {
-  return defaultSource.latest(count);
+  return defaultSource.latest(count, langOpts());
 }
 
 export async function getFeaturedPost() {
-  return defaultSource.featured();
+  return defaultSource.featured(langOpts());
 }
 
 export async function getPopularPosts(count = 6) {
-  return defaultSource.popular(count);
+  return defaultSource.popular(count, langOpts());
 }
 
 export async function getRecentlyUpdated(count = 6) {
-  return defaultSource.recentlyUpdated(count);
+  return defaultSource.recentlyUpdated(count, langOpts());
 }
 
 export async function getEditorPicks(count = 4) {
-  return defaultSource.editorPicks(count);
+  return defaultSource.editorPicks(count, langOpts());
 }
 
 export async function getAdjacentChapterPosts(post: Post) {
