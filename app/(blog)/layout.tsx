@@ -237,7 +237,7 @@ export default function BlogLayout({
                 <img
                   src="https://res.cloudinary.com/dbfo8ibyu/image/upload/v1783607381/portfolio/tz3vva86i1xhqdpygj4i.png"
                   alt="Neb Master"
-                  className="h-8 w-auto"
+                  className="h-12 w-auto"
                   onError={() => setLogoError(true)}
                 />
               )}
@@ -323,7 +323,7 @@ export default function BlogLayout({
             <div className="md:col-span-2">
               <Link
                 href="/blog"
-                className="text-lg font-semibold text-[var(--blog-text)]"
+                className="text-2xl font-semibold text-[var(--blog-text)]"
               >
               Neb <span className="text-[var(--blog-accent)]">Master</span>
               </Link>
