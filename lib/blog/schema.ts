@@ -1,7 +1,19 @@
 import { Post } from "./types";
 import { SITE_URL, SITE_NAME } from "@/lib/site-config";
 
-export function generateArticleSchema(post: Post) {
+export function generateArticleSchema(
+  post: Post,
+  edu?: {
+    classLevel?: string | null;
+    subject?: string | null;
+    board?: string | null;
+    difficulty?: string | null;
+    examType?: string | null;
+    series?: string | null;
+  }
+) {
+  const hasEdu = edu?.classLevel || edu?.subject || edu?.board || edu?.examType || edu?.difficulty;
+  const types = hasEdu ? ["BlogPosting", "LearningResource"] : ["BlogPosting"];
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
@@ -30,6 +42,18 @@ export function generateArticleSchema(post: Post) {
     },
     articleSection: post.category,
     keywords: [post.category, ...post.tags].join(", "),
+    ...(edu?.difficulty && {
+      educationalLevel: edu.difficulty.toLowerCase(),
+    }),
+    ...(edu?.subject && {
+      about: {
+        "@type": "Thing",
+        name: edu.subject,
+      },
+    }),
+    ...(edu?.classLevel && {
+      teaches: edu.classLevel.replace(/-/g, " "),
+    }),
   };
 }
 

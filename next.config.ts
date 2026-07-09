@@ -8,6 +8,18 @@ function getRedirectSource(source: string): string {
   }
 }
 
+const cspHeader = `
+  default-src 'self';
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' https://upload-widget.cloudinary.com;
+  style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
+  img-src 'self' blob: data: https:;
+  font-src 'self' data: https://cdn.jsdelivr.net;
+  frame-src https://www.youtube-nocookie.com https://upload-widget.cloudinary.com https://widget.cloudinary.com;
+  connect-src 'self' https://api.cloudinary.com;
+  worker-src 'self' blob:;
+  media-src 'self' https:;
+`;
+
 const nextConfig: NextConfig = {
   images: {
     remotePatterns: [
@@ -19,8 +31,25 @@ const nextConfig: NextConfig = {
         protocol: "https",
         hostname: "**.googleusercontent.com",
       },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+      },
     ],
     formats: ["image/avif", "image/webp"],
+  },
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "Content-Security-Policy",
+            value: cspHeader.replace(/\s{2,}/g, " ").trim(),
+          },
+        ],
+      },
+    ];
   },
   async redirects() {
     try {

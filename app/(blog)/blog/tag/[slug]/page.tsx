@@ -15,12 +15,12 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  return getTags().map((tag) => ({ slug: tag.slug }));
+  return (await getTags()).map((tag) => ({ slug: tag.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
-  const tags = getTags();
+  const tags = await getTags();
   const tag = tags.find((t) => t.slug === slug);
   if (!tag) return {};
   return generateTagMetadata(tag);
@@ -30,14 +30,14 @@ export default async function TagPage({ params, searchParams }: PageProps) {
   const { slug } = await params;
   const sp = await searchParams;
   const currentPage = Math.max(1, parseInt(sp?.page || "1", 10) || 1);
-  const tags = getTags();
+  const tags = await getTags();
   const tag = tags.find((t) => t.slug === slug);
 
   if (!tag) {
     notFound();
   }
 
-  const allPosts = getPostsByTag(tag.name);
+  const allPosts = await getPostsByTag(tag.name);
   const totalPosts = allPosts.length;
   const totalPages = Math.max(1, Math.ceil(totalPosts / POSTS_PER_PAGE));
   const paginatedPosts = allPosts.slice(

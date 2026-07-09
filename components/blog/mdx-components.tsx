@@ -4,19 +4,58 @@ import {
   getCategoryAccent,
   getCategorySlug,
 } from "@/lib/blog/categories";
-import { PoemLine } from "./PoemLine";
-import { ProseParagraph } from "./ProseParagraph";
-import { PullQuote } from "./PullQuote";
-import { CaptionedImage } from "./CaptionedImage";
-import { SectionHeading } from "./SectionHeading";
-import { CodeBlock } from "./CodeBlock";
-import { ResponsiveTable } from "./ResponsiveTable";
+import { PoemLine } from "@/components/blog/PoemLine";
+import { ProseParagraph } from "@/components/blog/ProseParagraph";
+import { PullQuote } from "@/components/blog/PullQuote";
+import { CaptionedImage } from "@/components/blog/CaptionedImage";
+import { SectionHeading } from "@/components/blog/SectionHeading";
+import { CodeBlock } from "@/components/blog/CodeBlock";
+import { ResponsiveTable } from "@/components/blog/ResponsiveTable";
+import {
+  InfoBox,
+  WarningBox,
+  SuccessBox,
+  TipBox,
+  Notes as NotesBox,
+  Callout,
+} from "@/components/mdx/admonitions";
+import {
+  Definition,
+  Example,
+  ExamTip,
+  KeyPoints,
+  Quote,
+} from "@/components/mdx/academic";
+import {
+  ComparisonTable,
+} from "@/components/mdx/layout";
+import {
+  YouTube,
+  PdfEmbed,
+  DownloadButton,
+  CloudinaryImage,
+} from "@/components/mdx/media";
+import {
+  Accordion,
+  FAQ,
+  Mermaid,
+} from "@/components/mdx/interactive";
+import {
+  CopyButton as CodeCopyButton,
+} from "@/components/mdx/code";
 
+/**
+ * Returns the MDX component map for a given post category.
+ *
+ * The component map is what makes MDX rich: every <InfoBox>, <YouTube>,
+ * <ComparisonTable> etc. in the post body is matched here.
+ */
 export function mdxComponents(category: string) {
   const isPoem = isPoemCategory(category);
   const accent = getCategoryAccent(getCategorySlug(category));
 
   return {
+    // --- Element-level overrides ----------------------------------------
     p: (props: { children?: React.ReactNode }) =>
       isPoem ? <PoemLine {...props} /> : <ProseParagraph {...props} />,
     blockquote: (props: { children?: React.ReactNode }) => (
@@ -37,7 +76,37 @@ export function mdxComponents(category: string) {
     table: (props: { children?: React.ReactNode }) => (
       <ResponsiveTable {...props} />
     ),
+
+    // --- Admonitions ----------------------------------------------------
+    InfoBox,
+    WarningBox,
+    SuccessBox,
+    TipBox,
+    Notes: NotesBox,
+    Callout,
+
+    // --- Academic -------------------------------------------------------
+    Definition,
+    Example,
+    ExamTip,
+    KeyPoints,
+    Quote,
+
+    // --- Layout ---------------------------------------------------------
+    ComparisonTable,
+
+    // --- Media ----------------------------------------------------------
+    YouTube,
+    PdfEmbed,
+    DownloadButton,
+    CloudinaryImage,
+
+    // --- Interactive ----------------------------------------------------
+    Accordion,
+    FAQ,
+    Mermaid,
+
+    // --- Code utilities -------------------------------------------------
+    CopyButton: CodeCopyButton,
   };
 }
-
-

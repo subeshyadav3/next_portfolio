@@ -15,7 +15,7 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  return getArchiveYears().map((archive) => ({ year: archive.year }));
+  return (await getArchiveYears()).map((archive) => ({ year: archive.year }));
 }
 
 export async function generateMetadata({ params }: PageProps) {
@@ -27,14 +27,14 @@ export default async function ArchivePage({ params, searchParams }: PageProps) {
   const { year } = await params;
   const sp = await searchParams;
   const currentPage = Math.max(1, parseInt(sp?.page || "1", 10) || 1);
-  const archives = getArchiveYears();
+  const archives = await getArchiveYears();
   const archive = archives.find((a) => a.year === year);
 
   if (!archive) {
     notFound();
   }
 
-  const allPosts = getPostsByYear(year);
+  const allPosts = await getPostsByYear(year);
   const totalPosts = allPosts.length;
   const totalPages = Math.max(1, Math.ceil(totalPosts / POSTS_PER_PAGE));
   const paginatedPosts = allPosts.slice(

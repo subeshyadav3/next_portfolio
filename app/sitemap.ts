@@ -8,10 +8,10 @@ import {
 import { SITE_URL } from "@/lib/site-config";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const posts = getAllPosts();
-  const categories = getCategories();
-  const tags = getTags();
-  const archives = getArchiveYears();
+  const posts = await getAllPosts();
+  const categories = await getCategories();
+  const tags = await getTags();
+  const archives = await getArchiveYears();
 
   const postUrls = posts.map((post) => ({
     url: `${SITE_URL}/blog/${post.slug}`,

@@ -16,12 +16,17 @@ export function GiscusComments({ slug }: GiscusCommentsProps) {
   useEffect(() => {
     if (!mounted) return;
 
+    const repoId = process.env.NEXT_PUBLIC_GISCUS_REPO_ID;
+    const catId = process.env.NEXT_PUBLIC_GISCUS_CATEGORY_ID;
+
+    if (!repoId || !catId) return;
+
     const script = document.createElement("script");
     script.src = "https://giscus.app/client.js";
-    script.setAttribute("data-repo", "subeshyadav3/next_portfolio");
-    script.setAttribute("data-repo-id", "R_kgDOJ12345"); // Placeholder - update with real repo ID
-    script.setAttribute("data-category", "Blog Comments");
-    script.setAttribute("data-category-id", "DIC_kwDOJ12345"); // Placeholder
+    script.setAttribute("data-repo", process.env.NEXT_PUBLIC_GISCUS_REPO ?? "subeshyadav3/next_portfolio");
+    script.setAttribute("data-repo-id", repoId);
+    script.setAttribute("data-category", process.env.NEXT_PUBLIC_GISCUS_CATEGORY ?? "Blog Comments");
+    script.setAttribute("data-category-id", catId);
     script.setAttribute("data-mapping", "pathname");
     script.setAttribute("data-strict", "0");
     script.setAttribute("data-reactions-enabled", "1");

@@ -14,9 +14,9 @@ interface PageProps {
 
 export default async function Image({ params }: PageProps) {
   const { slug } = await params;
-  const post = getPostBySlug(slug);
+  const post = await getPostBySlug(slug);
 
-  const title = post?.title || "Subesh Yadav Blog";
+  const title = post?.title || "Neb Master";
   const category = post?.category || "Article";
 
   return new ImageResponse(
@@ -54,7 +54,7 @@ export default async function Image({ params }: PageProps) {
               color: "#1c1917",
             }}
           >
-            Subesh.Blog
+            Neb Master
           </span>
         </div>
 

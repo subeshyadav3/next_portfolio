@@ -31,46 +31,60 @@ import { PrevNextNav } from "@/components/blog/PrevNextNav";
 import { BackToTop } from "@/components/blog/BackToTop";
 import { Breadcrumb } from "@/components/blog/Breadcrumb";
 import { AuthorCard } from "@/components/blog/AuthorCard";
-import { GiscusComments } from "@/components/blog/GiscusComments";
+
 import { ReadingProgress } from "@/components/blog/ReadingProgress";
+import EducationalBadges from "@/components/blog/EducationalBadges";
 import { WasThisHelpful } from "@/components/blog/WasThisHelpful";
+import { PostComments } from "@/components/blog/PostComments";
+import { getComments } from "@/services/comments.service";
+import { prisma } from "@/db/prisma";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
-  const posts = getAllPosts();
+  const posts = await getAllPosts();
   return posts.map((post) => ({ slug: post.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
-  const post = getPostBySlug(slug);
+  const post = await getPostBySlug(slug);
   if (!post) return {};
   return generatePostMetadata(post);
 }
 
 export default async function BlogPostPage({ params }: PageProps) {
   const { slug } = await params;
-  const post = getPostBySlug(slug);
+  const post = await getPostBySlug(slug);
 
-  if (!post) {
+  if (!post || (process.env.SHOW_ALL_LANGUAGES !== "true" && post.language === "ne")) {
     notFound();
   }
 
   const content = await compilePostMdx(post.content, post.category);
   const toc = extractTableOfContents(post.content);
-  const related = getRelatedPosts(post, 3);
-  const { prev, next } = getPrevNextPosts(post);
-  const adjacentChapters = getAdjacentChapterPosts(post);
+  const related = await getRelatedPosts(post, 3);
+  const { prev, next } = await getPrevNextPosts(post);
+  const adjacentChapters = await getAdjacentChapterPosts(post);
   const qaPairs = extractQAPairs(post.content);
 
   const categorySlugValue = getCategorySlug(post.category);
   const categoryLabel = getCategoryLabel(categorySlugValue);
   const categoryAccent = getCategoryAccent(categorySlugValue);
 
-  const articleSchema = generateArticleSchema(post);
+  const dbPost = post.source === "DB" ? await prisma.post.findUnique({ where: { slug: post.slug }, select: { id: true, allowComments: true } }) : null;
+  const comments = dbPost ? await getComments(dbPost.id) : [];
+
+  const articleSchema = generateArticleSchema(post, {
+    classLevel: post.classLevel,
+    subject: post.subject,
+    board: post.board,
+    difficulty: post.difficulty,
+    examType: post.examType,
+    series: post.series,
+  });
   const faqSchema = qaPairs.length > 0 ? generateFAQSchema(qaPairs) : null;
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: "Home", url: `${SITE_URL}/blog` },
@@ -126,6 +140,8 @@ export default async function BlogPostPage({ params }: PageProps) {
           >
             {categoryLabel}
           </Link>
+
+          <EducationalBadges post={post} />
 
           <h1 className="mt-6 text-3xl font-bold tracking-tight text-[var(--blog-text)] sm:text-4xl lg:text-5xl">
             {post.title}
@@ -228,9 +244,11 @@ export default async function BlogPostPage({ params }: PageProps) {
                 />
               </div>
 
-              <div className="mt-12">
-                <GiscusComments slug={post.slug} />
-              </div>
+              {dbPost && dbPost.allowComments && (
+                <div className="mt-12">
+                  <PostComments postId={dbPost.id} initialComments={comments} />
+                </div>
+              )}
             </div>
 
             <aside className="hidden lg:block">

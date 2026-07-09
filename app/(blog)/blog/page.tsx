@@ -28,9 +28,9 @@ export default async function BlogHomePage({ searchParams }: BlogHomePageProps) 
   const params = await searchParams;
   const currentPage = Math.max(1, parseInt(params?.page || "1", 10) || 1);
 
-  const posts = getAllPosts();
-  const featured = getFeaturedPost();
-  const categories = getCategories();
+  const posts = await getAllPosts();
+  const featured = await getFeaturedPost();
+  const categories = await getCategories();
   const totalPosts = posts.length;
   const totalPages = Math.max(1, Math.ceil(totalPosts / POSTS_PER_PAGE));
   const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
@@ -128,12 +128,12 @@ export default async function BlogHomePage({ searchParams }: BlogHomePageProps) 
           Browse by Category
         </h2>
         <div className="space-y-12">
-          {categories.slice(0, 6).map((category) => {
-            const postsInCategory = getPostsByCategory(category.slug).slice(
-              0,
-              3
-            );
-            return (
+          {await Promise.all(
+            categories.slice(0, 6).map(async (category) => {
+              const postsInCategory = (
+                await getPostsByCategory(category.slug)
+              ).slice(0, 3);
+              return (
               <div key={category.slug}>
                 <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 mb-4">
                   <div>
@@ -155,8 +155,9 @@ export default async function BlogHomePage({ searchParams }: BlogHomePageProps) 
                   ))}
                 </div>
               </div>
-            );
-          })}
+              );
+            })
+          )}
         </div>
       </section>
 
