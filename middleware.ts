@@ -3,17 +3,37 @@ import { jwtVerify } from "jose";
 
 const JWT_SECRET = new TextEncoder().encode(process.env.AUTH_SECRET || "fallback-secret");
 
+// NextAuth v5 cookie names (both development and production)
+const AUTH_COOKIE_NAMES = [
+  "authjs.session-token",
+  "__session",
+  "next-auth.session-token",
+  "__Secure-next-auth.session-token",
+  "__Host-next-auth.session-token",
+  "next-auth.callback-url",
+  "next-auth.csrf-token",
+];
+
 export default async function middleware(req: NextRequest) {
   const { pathname } = req.nextUrl;
-  const token = req.cookies.get("authjs.session-token")?.value ?? req.cookies.get("__session")?.value;
 
-  // Allow login page and API auth routes
-  if (pathname.startsWith("/admin/login") || pathname.startsWith("/api/auth")) {
+  // Allow login page, API auth routes, and static files
+  if (
+    pathname.startsWith("/admin/login") ||
+    pathname.startsWith("/api/auth") ||
+    pathname.startsWith("/_next") ||
+    pathname.startsWith("/static") ||
+    pathname.includes(".")
+  ) {
     return NextResponse.next();
   }
 
   // Protect all /admin routes
   if (pathname.startsWith("/admin")) {
+    const token = AUTH_COOKIE_NAMES
+      .map((name) => req.cookies.get(name)?.value)
+      .find(Boolean);
+
     if (!token) {
       const loginUrl = new URL("/admin/login", req.url);
       loginUrl.searchParams.set("callbackUrl", pathname);
