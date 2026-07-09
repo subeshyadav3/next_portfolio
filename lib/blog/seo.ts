@@ -12,14 +12,17 @@ export function generatePostMetadata(post: Post): Metadata {
   const url = `${SITE_URL}/blog/${post.slug}`;
   const image = post.image || `${SITE_URL}/blog/opengraph-image`;
 
+  const languages: Record<string, string> = { "x-default": url };
+  languages[post.language] = url;
+  const otherLang = post.language === "en" ? "ne" : "en";
+  languages[otherLang] = url;
+
   return {
     title,
     description,
     alternates: {
       canonical: url,
-      languages: {
-        [post.language]: url,
-      },
+      languages,
     },
     authors: [{ name: post.author, url: post.authorUrl }],
     keywords: [post.category, ...post.tags],
@@ -76,7 +79,7 @@ export function generateBlogMetadata(): Metadata {
 }
 
 export function generateCategoryMetadata(category: Category): Metadata {
-  const title = `${category.name} Articles | Subesh Yadav Blog`;
+  const title = `${category.name} Articles | Neb Master`;
   const description = getCategoryDescription(category.slug);
   const url = `${SITE_URL}/blog/category/${category.slug}`;
 
@@ -100,7 +103,7 @@ export function generateCategoryMetadata(category: Category): Metadata {
 }
 
 export function generateTagMetadata(tag: Tag): Metadata {
-  const title = `#${tag.name} Articles | Subesh Yadav Blog`;
+  const title = `#${tag.name} Articles | Neb Master`;
   const description = `Read ${tag.count} articles tagged with ${tag.name}.`;
   const url = `${SITE_URL}/blog/tag/${tag.slug}`;
 
@@ -124,7 +127,7 @@ export function generateTagMetadata(tag: Tag): Metadata {
 }
 
 export function generateArchiveMetadata(year: string): Metadata {
-  const title = `Archive ${year} | Subesh Yadav Blog`;
+  const title = `Archive ${year} | Neb Master`;
   const description = `All blog posts published in ${year}.`;
   const url = `${SITE_URL}/blog/archive/${year}`;
 

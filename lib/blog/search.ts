@@ -1,5 +1,5 @@
 import Fuse, { FuseResult } from "fuse.js";
-import { Post } from "./types";
+import type { NormalizedPost, NormalizedPostSummary } from "@/lib/content";
 
 export interface SearchIndexItem {
   slug: string;
@@ -13,12 +13,18 @@ export interface SearchIndexItem {
   readingTime: number;
 }
 
-export function buildSearchIndex(posts: Post[]): SearchIndexItem[] {
+/** Build search index from either Post or PostSummary (content will be empty for summary). */
+export function buildSearchIndex(
+  posts: (NormalizedPost | (NormalizedPostSummary & { content?: string }))[]
+): SearchIndexItem[] {
   return posts.map((post) => ({
     slug: post.slug,
     title: post.title,
     description: post.description,
-    content: post.content.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").slice(0, 2000),
+    content: (post.content ?? "")
+      .replace(/<[^>]+>/g, " ")
+      .replace(/\s+/g, " ")
+      .slice(0, 2000),
     category: post.category,
     tags: post.tags,
     published: post.published,

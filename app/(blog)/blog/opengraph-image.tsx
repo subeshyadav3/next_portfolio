@@ -1,6 +1,6 @@
 import { ImageResponse } from "next/og";
 
-export const alt = "Subesh Yadav Blog";
+export const alt = "Neb Master";
 export const size = {
   width: 1200,
   height: 630,
@@ -45,7 +45,7 @@ export default async function Image() {
               color: "#1c1917",
             }}
           >
-            Subesh.Blog
+            Neb Master
           </span>
         </div>
         <h1

@@ -1,0 +1,1395 @@
+# Educational Platform Modernization Plan
+
+**Project:** Subesh Yadav Portfolio → Educational CMS Platform
+**Target:** Clean, maintainable, production-ready educational platform for ~5,000 articles
+**Date:** 2026-07-09
+**Status:** Awaiting approval before any code changes
+
+---
+
+## Table of Contents
+
+1. [Executive Summary](#1-executive-summary)
+2. [Current Architecture Review](#2-current-architecture-review)
+3. [Problems Found](#3-problems-found)
+4. [Strategic Decisions (with rationale)](#4-strategic-decisions-with-rationale)
+5. [Priority Improvements](#5-priority-improvements)
+6. [Content Strategy: MDX files stay, DB grows](#6-content-strategy-mdx-files-stay-db-grows)
+7. [Updated Folder Structure](#7-updated-folder-structure)
+8. [Database Schema & Prisma Models](#8-database-schema--prisma-models)
+9. [MDX Architecture & Component Library](#9-mdx-architecture--component-library)
+10. [Cloudinary Integration](#10-cloudinary-integration)
+11. [CMS Architecture (Admin)](#11-cms-architecture-admin)
+12. [SEO Improvements](#12-seo-improvements)
+13. [Performance Strategy](#13-performance-strategy)
+14. [Security Improvements](#14-security-improvements)
+15. [Educational Features](#15-educational-features)
+16. [Migration Plan (no data loss)](#16-migration-plan-no-data-loss)
+17. [Step-by-Step Implementation Plan](#17-step-by-step-implementation-plan)
+18. [Verification Checklist](#18-verification-checklist)
+19. [Out of Scope / Non-Goals](#19-out-of-scope--non-goals)
+
+---
+
+## 1. Executive Summary
+
+The current project is a personal **portfolio + blog** built on Next.js 15 App Router with TypeScript, Tailwind v4, and 142 MDX files stored on disk. The blog already has good bones: a thoughtful category taxonomy, JSON-LD schemas, RSS, OG images, reading-time, ToC, related posts, prev/next, Fuse.js search, sitemap, and robots.
+
+The transformation turns it into a **dual-source educational CMS**:
+
+- **Legacy (142 existing MDX files)** → keep reading from filesystem through a unified `post-source` abstraction layer. Zero data loss, zero migration of files required.
+- **New content** → write through an admin dashboard into **PostgreSQL** via Prisma, rendered by the same MDX engine with a richer component set (InfoBox, Accordion, KaTeX, Mermaid, YouTube, PDF embed, ComparisonTable, etc.).
+- **Long-term** → migration utility lets you selectively import any legacy MDX into the DB without breaking URLs. 5,000-article scale works because of cached Server Component reads, ISR, Postgres FTS, and Cloudinary image delivery.
+
+**No microservices, no Redis, no Elasticsearch, no Kubernetes.** Just Next.js + Postgres + Prisma + Cloudinary.
+
+---
+
+## 2. Current Architecture Review
+
+### Stack inventory
+
+| Layer | Technology | Version |
+|---|---|---|
+| Framework | Next.js (App Router) | 15.3.8 |
+| UI | React | 19.0 |
+| Styling | Tailwind CSS v4 + Typography plugin | 4.x |
+| Language | TypeScript | 5.x |
+| Content | MDX files + `gray-matter` | 4.0.3 |
+| MDX rendering | `next-mdx-remote/rsc` | 6.0.0 |
+| Search | `fuse.js` (client-side) | 7.4.2 |
+| Highlighting | `shiki` (declared, not used) | 3.23.0 |
+| Email | `resend` | 4.5.1 |
+| Animation | GSAP, Lenis, Split-type | various |
+| Sanitization | `sanitize-html` | 2.17.5 |
+| Icons | `lucide-react`, `react-icons` | — |
+
+### What already works well
+
+- **Route groups** for clean URLs: `(blog)`, `(portfolio)`.
+- **Comprehensive SEO**: Article, Breadcrumb, FAQ, WebSite, Organization, Person JSON-LD schemas.
+- **Smart category system** in `lib/blog/categories.ts` with mappings, accents, descriptions, and `isExamCategory` / `isPoemCategory` helpers.
+- **Strong educational features baked in**: class-aware styling, Devanagari typography class, poem vs prose paragraph switching, exam-category detection, `getAdjacentChapterPosts` for lesson navigation.
+- **Open Graph images generated dynamically** via `opengraph-image.tsx`.
+- **RSS feed**, sitemap, robots, Giscus comments, reading progress bar.
+- **Layout-aware content** (`blog-prose`, `blog-devanagari` CSS classes).
+
+### Codebase map (current)
+
+```
+app/
+  (blog)/blog/                 # all public blog routes
+    [slug]/page.tsx            # post detail (largest page)
+    page.tsx                   # home (featured + categories + pagination)
+    category/[slug]/page.tsx
+    tag/[slug]/page.tsx
+    archive/[year]/page.tsx
+    search/page.tsx
+    rss.xml/route.ts
+  (portfolio)/                 # separate portfolio site
+  api/                         # newsletter, send-email
+components/blog/               # 25+ blog-specific components
+lib/blog/                      # 11 lib files: posts, types, mdx, seo, schema,
+                               # search, categories, slugs, utils, qa-parser, redirects.json
+content/blog/                  # ORPHAN — not read by code
+final_content/blog/            # ACTUAL source (142 .mdx files)
+new_content/                   # scratch workspace (legacy)
+data/                          # slug-mapping.csv, slug-mapping-instructions.md
+scripts/                       # one-off migration/cleanup utilities
+public/                        # static assets
+```
+
+---
+
+## 3. Problems Found
+
+### Performance & scalability
+
+| # | Issue | Impact at 5k articles |
+|---|---|---|
+| P1 | `getAllPosts()` re-reads the filesystem and reparses 142 YAML files on **every call**, on every request, with **no caching**. | Builds grow linearly; every request re-parses; cold-start painful. |
+| P2 | Fuse.js index is built **in the browser**, shipping the full content of every post to the client. | Bundle grows with articles; search becomes slow on mobile. |
+| P3 | No image optimization beyond Next/Image defaults. Heavy cover images served at original size when `quality` is not pinned. | CLS, slow LCP, bandwidth waste. |
+| P4 | `BlogHomePage` re-fetches every category's posts by re-calling `getPostsByCategory` (which itself re-reads all posts) inside a `.map`. | O(N × M) per request. |
+| P5 | All routes are statically generated with `generateStaticParams()` over `getAllPosts()`. At 5k posts this is a build problem. | Long builds, memory pressure. |
+
+### Architecture & maintainability
+
+| # | Issue |
+|---|---|
+| A1 | **Categories are a hard-coded TypeScript map** in `lib/blog/categories.ts`. Adding a category requires a code deploy. |
+| A2 | **No unified "post source" abstraction.** Page components import directly from `lib/blog/posts.ts` which is tied to the filesystem. |
+| A3 | `content/blog/`, `final_content/blog/`, `new_content/` are three directories doing overlapping jobs. Only `final_content/blog` is read — confusing. |
+| A4 | MDX components map covers only 8 elements (`p`, `blockquote`, `img`, `h2`, `h3`, `pre`, `table`). The spec calls for ~20. |
+| A5 | `sanitize-html` runs on MDX **before** rendering. This works but is fragile and order-dependent — `next-mdx-remote/rsc` parses MDX, not HTML, so the sanitizer operates on the source markdown which contains a mix of HTML+MDX syntax that the sanitizer mis-parses (e.g. it strips MDX component syntax). |
+| A6 | `lib/blog/posts.ts` mixes concerns: data access, sorting, scoring, randomization (`getEditorPicks` shuffles on every render). |
+| A7 | `getEditorPicks` uses `Math.random()` inside a Server Component — different output every request. |
+| A8 | Many `app/components/`, `app/hooks/`, `app/providers/` directories — these should live at the repo root, not under `app/`. |
+
+### SEO & content
+
+| # | Issue |
+|---|---|
+| S1 | No structured `lastReviewed` or `reviewedBy` for educational trust signals. |
+| S2 | FAQ schema generation (`extractQAPairs`) is a custom parser — fragile. |
+| S3 | No internal-link auto-suggestion. |
+| S4 | Sitemap includes every post on every build — fine for 142, fine for 5k, but should be cached. |
+| S5 | No `hreflang` despite bilingual content (`en`/`ne`). |
+| S6 | Open Graph image is shared when `post.image` is empty (`/blog/opengraph-image`), but the alt text becomes empty. |
+| S7 | `ReadingProgress` and TOC components use client JS for what could largely be CSS-only. |
+
+### Security
+
+| # | Issue |
+|---|---|
+| X1 | `.env` is committed with `RESEND_API_KEY`. **Must be rotated and removed.** |
+| X2 | No auth layer for any future admin routes. |
+| X3 | MDX rendered without a hardened plugin chain (no `rehype-sanitize`). |
+| X4 | File-system writes happen via migration scripts that read CSV from `data/` — those scripts are not used in the runtime but should be removed from the public deploy path. |
+
+### Developer experience
+
+| # | Issue |
+|---|---|
+| D1 | No Prisma / DB layer at all. |
+| D2 | No tests. |
+| D3 | Lint config exists but no typecheck script in `package.json`. |
+| D4 | Build artifacts (`out/`, `.next/`, `tsconfig.tsbuildinfo`) are committed-ish. |
+| D5 | `.kimchi/` is being created during this session — that's fine, just be aware. |
+
+---
+
+## 4. Strategic Decisions (with rationale)
+
+### S-1. **Keep MDX files for legacy, DB for new content**
+
+**Decision:** A `PostSource` abstraction (interface with two implementations: `MdxFileSource`, `PrismaPostSource`) is queried by every reader route. New posts go to DB only. Legacy posts read from filesystem until you decide to migrate a folder.
+
+**Rationale:** Zero data loss. You can ship the DB path in Phase 4 without touching any existing `.mdx`. A `scripts/import-mdx-to-db.ts` utility lets you bulk-import any subset later without breaking URLs.
+
+**Alternative considered:** Migrate everything to DB at once. **Rejected** — single point of failure, large blast radius, harder to roll back.
+
+### S-2. **Postgres Full-Text Search, not client-side Fuse**
+
+**Decision:** `tsvector` columns + GIN index on `posts`. A `/api/search` route returns ranked results.
+
+**Rationale:** 5k articles × ~3KB each = 15MB shipped today for Fuse; switching to FTS puts the search on the DB. Fuse stays only as a fast in-memory fallback for the admin "type-ahead tag picker".
+
+### S-3. **Cloudinary for media, never the DB**
+
+**Decision:** All uploads go to Cloudinary via signed upload widget; only the resulting `secure_url` and `public_id` land in the DB.
+
+**Rationale:** Offloads transformation, optimization, CDN delivery. Next/Image with `loader: 'custom'` or just regular `<img>` with Cloudinary's `f_auto,q_auto` URL params gives automatic WebP/AVIF.
+
+### S-4. **Server Components first, client islands minimal**
+
+**Decision:** Post pages, listing pages, sitemap, RSS — all RSC. Only TOC, reading-progress, share-buttons, search-input, MDX interactive components are client components.
+
+### S-5. **Incremental Static Regeneration, not full static export at 5k**
+
+**Decision:** Use Next's `revalidate` on listing pages, `dynamic = 'force-static'` + `revalidate = 3600` on individual posts, and DB-backed `generateStaticParams` that fetches only published posts. New posts trigger `revalidatePath` from the admin server action.
+
+### S-6. **Admin auth via NextAuth (Auth.js v5) with Credentials + GitHub OAuth**
+
+**Decision:** Auth.js v5 with one provider (Credentials for now, GitHub OAuth optional). Roles: `ADMIN`, `EDITOR`, `AUTHOR`. Future `USER` role maps to the `User` table.
+
+**Rationale:** Stable, well-known, no external service required to start.
+
+### S-7. **MDX rendering pipeline: `next-mdx-remote/rsc` + `remark/rehype` plugins, NOT raw HTML sanitization**
+
+**Decision:** Drop `sanitize-html` from the MDX path. Use `rehype-sanitize` after `rehype-raw` in the rehype chain instead. This is the correct layer for Markdown-derived HTML.
+
+### S-8. **No new dependencies unless justified**
+
+| New dep | Why |
+|---|---|
+| `prisma` + `@prisma/client` | DB ORM. |
+| `next-auth` (Auth.js v5) | Admin auth. |
+| `cloudinary` + `next-cloudinary` | Uploads + transforms. |
+| `katex` + `rehype-katex` + `remark-math` | Math support. |
+| `mermaid` (lazy) | Diagrams. |
+| `rehype-sanitize` | Correct sanitization layer. |
+| `rehype-external-links` | External-link hardening. |
+| `reading-time` | Stable reading-time (replaces ad-hoc estimation). |
+| `date-fns` | Already present. |
+
+---
+
+## 5. Priority Improvements
+
+### P0 — Foundation (must ship first)
+
+1. **Rotate `RESEND_API_KEY`** and add `.env` to `.gitignore` (already ignored? verify).
+2. **Set up Prisma + Postgres** with `schema.prisma` and the connection URL in `.env`.
+3. **Create `PostSource` abstraction** (`lib/content/post-source.ts` + `mdx-file-source.ts` + `prisma-post-source.ts`).
+4. **Move `getAllPosts()` into `MdxFileSource`** with one-time per-build memoization.
+5. **Folder reorganization** (Section 7).
+6. **Type-check + lint script** in `package.json`.
+
+### P1 — Content & SEO
+
+7. **MDX component library expansion** (Section 9).
+8. **Postgres FTS** with `tsvector` and a search API route.
+9. **Sitemap + RSS + robots** moved to DB-backed with caching.
+10. **`hreflang` and bilingual metadata** for `en` / `ne`.
+
+### P2 — CMS
+
+11. **Auth.js v5** with `ADMIN`/`EDITOR` roles.
+12. **Admin routes** under `/admin` (gated layout).
+13. **Post CRUD** with server actions.
+14. **Media uploader** using Cloudinary signed uploads.
+15. **Drafts, scheduled publishing, autosave, preview, trash**.
+
+### P3 — Educational & UX polish
+
+16. Educational metadata model (Class / Subject / Board / Difficulty / Language / Series / Exam Type).
+17. Featured-article, related-article, internal-link helpers.
+18. Print stylesheet, dark-mode audit, accessibility pass.
+19. Performance audit (`@next/bundle-analyzer`).
+
+### P4 — Future
+
+20. User accounts (read history, bookmarks, personal notes).
+21. Analytics dashboard (Postgres-backed event table or pluggable provider).
+22. Selective legacy MDX → DB migration utility.
+
+---
+
+## 6. Content Strategy: MDX files stay, DB grows
+
+This is the key architectural decision that makes the migration low-risk.
+
+### Reading path
+
+```
+                              ┌─────────────────────────┐
+   /blog/[slug]               │  getPostBySlug(slug)    │
+        │                     └────────────┬────────────┘
+        │                                  │
+        │            ┌─────────────────────┴─────────────────────┐
+        │            │                                           │
+        ▼            ▼                                           ▼
+ ┌────────────┐  ┌──────────────┐                       ┌──────────────────┐
+ │ slug is    │  │ slug is in   │                       │ slug matches a   │
+ │ numeric ID │  │ filesystem   │                       │ stored DB post   │
+ │ or has no  │  │ (.mdx)       │                       │ (new posts)      │
+ │ match      │  │              │                       │                  │
+ └─────┬──────┘  └──────┬───────┘                       └────────┬─────────┘
+       ▼                ▼                                        ▼
+   notFound()     MdxFileSource.get(slug)             PrismaPostSource.get(slug)
+                       │                                        │
+                       └─────────────┬──────────────────────────┘
+                                     ▼
+                          compilePostMdx(content, ctx)
+                                     │
+                                     ▼
+                               <Article/>
+```
+
+### Slug format disambiguation
+
+- DB posts use a **numeric slug prefix** like `db-12345-the-title` or simply use a UUID primary key in the URL: `/blog/p/abc123…`. **Decision:** UUID short IDs at `/blog/[id]` is the cleanest, but breaks the existing `/blog/<slug>` pattern.
+- **Chosen approach:** Keep the `/blog/<slug>` route. New DB posts have slugs generated from the title via the same `slugify` already in use. To distinguish from legacy, the DB query runs **first**; if not found, fall through to filesystem. This is safe because:
+  - Legacy slugs are checked into git and stable.
+  - New admin can detect slug collisions against filesystem before save.
+  - Admin shows a "slug already exists in legacy files" warning.
+
+### Write path
+
+- Admin form → server action → `PrismaPostSource.upsert(post)` → `revalidatePath('/blog/<slug>')`.
+- No filesystem writes from runtime.
+
+---
+
+## 7. Updated Folder Structure
+
+```
+/
+├── app/
+│   ├── (blog)/
+│   │   ├── layout.tsx
+│   │   └── blog/
+│   │       ├── page.tsx                    # home (featured + categories + pagination)
+│   │       ├── [slug]/page.tsx             # post detail
+│   │       ├── category/[slug]/page.tsx
+│   │       ├── tag/[slug]/page.tsx
+│   │       ├── archive/[year]/page.tsx
+│   │       ├── search/page.tsx
+│   │       └── rss.xml/route.ts
+│   ├── (portfolio)/                        # unchanged
+│   ├── admin/                              # NEW — admin CMS
+│   │   ├── layout.tsx                      # auth gate, admin chrome
+│   │   ├── page.tsx                        # dashboard
+│   │   ├── posts/
+│   │   │   ├── page.tsx                    # list + filters
+│   │   │   ├── new/page.tsx
+│   │   │   └── [id]/
+│   │   │       ├── page.tsx                # edit
+│   │   │       └── preview/page.tsx
+│   │   ├── categories/page.tsx
+│   │   ├── tags/page.tsx
+│   │   ├── media/page.tsx
+│   │   ├── seo/page.tsx                    # site-wide SEO defaults
+│   │   ├── analytics/page.tsx
+│   │   ├── users/page.tsx                  # role mgmt
+│   │   ├── settings/page.tsx
+│   │   └── trash/page.tsx
+│   ├── api/
+│   │   ├── search/route.ts                 # FTS endpoint
+│   │   ├── upload/sign/route.ts            # Cloudinary signed upload
+│   │   ├── revalidate/route.ts             # on-demand revalidation
+│   │   ├── newsletter/route.ts             # unchanged
+│   │   └── send-email/route.ts             # unchanged
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── robots.ts
+│   └── sitemap.ts
+│
+├── components/                             # NEW root-level shared components
+│   ├── blog/                               # existing — kept
+│   ├── mdx/                                # NEW — MDX component library
+│   │   ├── admonitions/                    # InfoBox, Warning, Success, Tip, Callout
+│   │   ├── academic/                       # Definition, Example, ExamTip, KeyPoints
+│   │   ├── media/                          # YouTube, PDF, Image, CaptionedImage
+│   │   ├── interactive/                    # Accordion, FAQ, Mermaid, KaTeX
+│   │   ├── layout/                         # ComparisonTable, ResponsiveTable, Quote, Notes
+│   │   ├── code/                           # CodeBlock, CopyButton
+│   │   └── index.ts                        # barrel export
+│   ├── admin/                              # NEW
+│   │   ├── PostEditor.tsx
+│   │   ├── MediaUploader.tsx
+│   │   ├── SeoPanel.tsx
+│   │   ├── Sidebar.tsx
+│   │   └── DataTable.tsx
+│   ├── ui/                                 # existing — kept
+│   └── animations/                         # existing — kept
+│
+├── lib/                                    # NEW — all libs at root
+│   ├── blog/                               # refactored to be thin
+│   │   ├── types.ts
+│   │   ├── seo.ts
+│   │   ├── schema.ts
+│   │   ├── slugs.ts
+│   │   ├── utils.ts
+│   │   └── redirects.json
+│   ├── content/                            # NEW — content access layer
+│   │   ├── post-source.ts                  # interface
+│   │   ├── mdx-file-source.ts              # reads final_content/blog
+│   │   ├── prisma-post-source.ts           # reads DB
+│   │   ├── composite-source.ts             # DB first, falls back to FS
+│   │   ├── compile.ts                      # MDX → React (server only)
+│   │   ├── toc.ts                          # TOC extraction
+│   │   └── reading-time.ts
+│   ├── search/
+│   │   └── postgres-fts.ts                 # ts_rank_cd query builder
+│   ├── media/
+│   │   └── cloudinary.ts                   # server-side helpers
+│   ├── auth/
+│   │   └── config.ts                       # Auth.js v5 config
+│   ├── validation/
+│   │   └── post.ts                         # zod schemas
+│   └── site-config.ts                      # unchanged
+│
+├── actions/                                # NEW — server actions
+│   ├── posts.ts                            # create/update/delete/duplicate
+│   ├── categories.ts
+│   ├── tags.ts
+│   ├── media.ts
+│   └── seo.ts
+│
+├── services/                               # NEW — business logic that calls Prisma
+│   ├── posts.service.ts
+│   ├── categories.service.ts
+│   ├── tags.service.ts
+│   ├── media.service.ts
+│   ├── authors.service.ts
+│   └── users.service.ts
+│
+├── hooks/                                  # moved to root
+│   ├── useActiveSection.ts
+│   ├── useInViewAnimation.ts
+│   └── useReducedMotion.ts
+│
+├── providers/                              # moved to root
+│   ├── SmoothScrollProvider.tsx
+│   └── ThemeProvider.tsx
+│
+├── types/                                  # NEW — shared types
+│   ├── post.ts
+│   ├── pagination.ts
+│   └── api.ts
+│
+├── constants/                              # NEW
+│   ├── admin.ts
+│   ├── editor.ts
+│   └── search.ts
+│
+├── utils/                                  # NEW — small pure functions
+│   ├── date.ts
+│   ├── string.ts
+│   └── cn.ts
+│
+├── db/                                     # NEW
+│   └── prisma.ts                           # singleton client
+│
+├── content/                                # KEEP — see S-1
+│   └── blog/                               # (orphan now — will repurpose for DB-managed MDX if ever needed)
+│
+├── final_content/blog/                     # KEEP — read by MdxFileSource
+│
+├── prisma/                                 # NEW
+│   ├── schema.prisma
+│   ├── migrations/
+│   └── seed.ts
+│
+├── public/
+│
+├── scripts/                                # KEEP — utilities, but excluded from runtime
+│
+├── .env.example                            # NEW — commit-safe template
+├── .gitignore
+├── next.config.ts
+├── package.json
+├── tailwind.config.ts (if needed)
+├── tsconfig.json
+└── plan.md
+```
+
+**Why move `components/`, `hooks/`, `providers/` from `app/` to root?** Anything under `app/` that isn't `page.tsx` / `route.ts` / `layout.tsx` is meant to be route-scoped. Moving them out clarifies intent and matches the spec's requested layout.
+
+---
+
+## 8. Database Schema & Prisma Models
+
+### Schema overview
+
+```prisma
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+  EDITOR
+  AUTHOR
+  USER
+}
+
+enum PostStatus {
+  DRAFT
+  SCHEDULED
+  PUBLISHED
+  ARCHIVED
+  TRASHED
+}
+
+enum Difficulty {
+  EASY
+  MEDIUM
+  HARD
+}
+
+enum ExamType {
+  SEE
+  BLE
+  NEB
+  IOE
+  CEEC
+  OTHER
+}
+
+enum MediaType {
+  IMAGE
+  PDF
+  DOCUMENT
+  VIDEO
+  OTHER
+}
+
+model User {
+  id            String    @id @default(cuid())
+  email         String    @unique
+  name          String?
+  image         String?
+  role          Role      @default(AUTHOR)
+  emailVerified DateTime?
+  accounts      Account[]
+  sessions      Session[]
+  posts         Post[]    @relation("PostAuthor")
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String?
+  access_token      String?
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String?
+  session_state     String?
+  user              User    @relation(fields: [userId], references: [id], onDelete: Cascade)
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+  @@unique([identifier, token])
+}
+
+model Author {
+  id          String  @id @default(cuid())
+  slug        String  @unique
+  name        String
+  bio         String? @db.Text
+  avatarUrl   String?
+  websiteUrl  String?
+  social      Json?   // {twitter, github, linkedin, ...}
+  posts       Post[]
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Category {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  name        String
+  description String?  @db.Text
+  accentColor String?  // hex or CSS var ref
+  icon        String?
+  parentId    String?
+  parent      Category? @relation("CategoryTree", fields: [parentId], references: [id])
+  children    Category[] @relation("CategoryTree")
+  posts       Post[]
+  displayOrder Int     @default(0)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+  @@index([parentId])
+}
+
+model Tag {
+  id        String   @id @default(cuid())
+  slug      String   @unique
+  name      String
+  posts     PostTag[]
+  createdAt DateTime @default(now())
+  @@index([slug])
+}
+
+model PostTag {
+  postId String
+  tagId  String
+  post   Post @relation(fields: [postId], references: [id], onDelete: Cascade)
+  tag    Tag  @relation(fields: [tagId],  references: [id], onDelete: Cascade)
+  @@id([postId, tagId])
+  @@index([tagId])
+}
+
+model Media {
+  id           String    @id @default(cuid())
+  publicId     String    @unique          // Cloudinary public_id
+  secureUrl    String
+  type         MediaType @default(IMAGE)
+  mimeType     String?
+  bytes        Int?
+  width        Int?
+  height       Int?
+  alt          String?
+  caption      String?
+  uploadedById String?
+  uploadedBy   User?     @relation(fields: [uploadedById], references: [id])
+  posts        PostMedia[]
+  createdAt    DateTime  @default(now())
+  @@index([type])
+}
+
+model PostMedia {
+  postId   String
+  mediaId  String
+  role     String   @default("inline") // "cover" | "inline" | "attachment"
+  position Int      @default(0)
+  post     Post     @relation(fields: [postId],  references: [id], onDelete: Cascade)
+  media    Media    @relation(fields: [mediaId], references: [id], onDelete: Cascade)
+  @@id([postId, mediaId])
+}
+
+model Post {
+  id              String     @id @default(cuid())
+
+  // URL slug (unique). For DB posts this is the source of truth;
+  // for legacy MDX posts the slug is mirrored into a special row
+  // with source = "FILE" so listings work uniformly.
+  slug            String     @unique
+  title           String
+  excerpt         String?    @db.Text
+  content         String     @db.Text            // MDX source
+  contentHtml     String?    @db.Text            // optional cached compiled HTML
+
+  // Educational metadata
+  classLevel      String?                        // "class-8" | "class-9" | ...
+  subject         String?
+  board           String?                        // "NEB" | "SEE" | etc.
+  difficulty      Difficulty?
+  language        String     @default("en")      // "en" | "ne"
+  series          String?
+  examType        ExamType?
+  readingTimeMin  Int        @default(0)
+  wordCount       Int        @default(0)
+
+  // Status & scheduling
+  status          PostStatus @default(DRAFT)
+  publishedAt     DateTime?
+  scheduledFor    DateTime?
+  expiresAt       DateTime?
+  featured        Boolean    @default(false)
+  sticky          Boolean    @default(false)
+  allowComments   Boolean    @default(true)
+
+  // SEO
+  metaTitle       String?
+  metaDescription String?    @db.Text
+  canonicalUrl    String?
+  focusKeyword    String?
+  ogTitle         String?
+  ogDescription   String?
+  ogImageId       String?
+  ogImage         Media?     @relation("PostOg", fields: [ogImageId], references: [id])
+  twitterCardType String?    @default("summary_large_image")
+  noindex         Boolean    @default(false)
+
+  // Relations
+  authorId        String
+  author          Author     @relation(fields: [authorId], references: [id])
+  userId          String?                       // creator user
+  user            User?      @relation("PostAuthor", fields: [userId], references: [id])
+  categoryId      String?
+  category        Category?  @relation(fields: [categoryId], references: [id])
+
+  coverMediaId    String?
+  coverMedia      Media?     @relation("PostCover", fields: [coverMediaId], references: [id])
+
+  tags            PostTag[]
+  media           PostMedia[]
+
+  relatedFrom     RelatedPost[] @relation("RelatedFrom")
+  relatedTo       RelatedPost[] @relation("RelatedTo")
+
+  // Migration provenance
+  source          String     @default("DB")     // "DB" | "FILE" | "IMPORTED"
+  legacyFilePath  String?
+
+  // FTS
+  searchVector    Unsupported("tsvector")?
+
+  createdAt       DateTime   @default(now())
+  updatedAt       DateTime   @updatedAt
+  lastReviewedAt  DateTime?
+
+  @@index([status, publishedAt])
+  @@index([categoryId, status])
+  @@index([language])
+  @@index([classLevel])
+  @@index([examType])
+  @@index([featured])
+}
+
+model RelatedPost {
+  fromId String
+  toId   String
+  score  Float   @default(0)
+  reason String? // "tag" | "category" | "manual"
+  from   Post @relation("RelatedFrom", fields: [fromId], references: [id], onDelete: Cascade)
+  to     Post @relation("RelatedTo",   fields: [toId],   references: [id], onDelete: Cascade)
+  @@id([fromId, toId])
+  @@index([toId])
+}
+
+model SiteSettings {
+  id        Int      @id @default(1)
+  siteName  String?
+  tagline   String?
+  defaultOgId String?
+  // ...any site-wide SEO/social defaults
+  updatedAt DateTime @updatedAt
+}
+
+model AuditLog {
+  id        String   @id @default(cuid())
+  actorId   String?
+  action    String
+  entity    String
+  entityId  String?
+  diff      Json?
+  createdAt DateTime @default(now())
+  @@index([entity, entityId])
+}
+```
+
+### Indexes & FTS
+
+```sql
+-- Migration after `prisma migrate dev`:
+CREATE INDEX posts_search_idx ON "Post" USING GIN (search_vector);
+
+CREATE OR REPLACE FUNCTION posts_tsvector_update() RETURNS trigger AS $$
+BEGIN
+  NEW.search_vector :=
+    setweight(to_tsvector('simple', coalesce(NEW.title, '')), 'A') ||
+    setweight(to_tsvector('simple', coalesce(NEW.excerpt, '')), 'B') ||
+    setweight(to_tsvector('simple', coalesce(NEW.content, '')), 'C');
+  RETURN NEW;
+END
+$$ LANGUAGE plpgsql;
+
+CREATE TRIGGER posts_tsvector_update
+BEFORE INSERT OR UPDATE ON "Post"
+FOR EACH ROW EXECUTE FUNCTION posts_tsvector_update();
+```
+
+A `PostgreSQL` DB on Neon / Supabase / Railway free tier is enough for ~5k articles with this index.
+
+---
+
+## 9. MDX Architecture & Component Library
+
+### Pipeline
+
+```
+MDX source
+   │
+   ▼
+remark-parse
+   │
+   ▼
+remark-gfm              (tables, task lists, strikethrough, autolinks)
+remark-math             (LaTeX math)
+   │
+   ▼
+remark-rehype  (allowDangerousHtml: true  ← needed for legacy <font>, <span>)
+   │
+   ▼
+rehype-raw              (parse raw HTML embedded in MDX)
+rehype-slug             (heading anchors)
+rehype-autolink-headings
+rehype-katex            (render KaTeX HTML)
+rehype-external-links   (target=_blank, rel=noopener)
+rehype-sanitize         (last — strips anything not whitelisted)
+   │
+   ▼
+MDXRemote (RSC)         →  React tree
+```
+
+`rehype-sanitize` runs **last** on the produced HTML tree (after raw + autolinks) and replaces the current misuse of `sanitize-html`.
+
+### Component map (extends the existing 8)
+
+```ts
+// components/mdx/index.ts
+export const mdxComponents = {
+  // Existing
+  p:        ProseParagraph | PoemLine,
+  blockquote: PullQuote,
+  img:      CaptionedImage,
+  h2:       SectionHeading,
+  h3:       SectionHeading,
+  pre:      CodeBlock,
+  table:    ResponsiveTable,
+
+  // NEW — admonitions
+  InfoBox, WarningBox, SuccessBox, TipBox, Callout,
+
+  // NEW — academic
+  Definition, Example, ExamTip, KeyPoints, Notes,
+
+  // NEW — layout
+  ComparisonTable, Quote, Figure, Footnotes,
+
+  // NEW — interactive (client components, lazy)
+  Accordion, FAQ, Mermaid, KaTeXBlock, YouTube, PdfEmbed,
+
+  // NEW — utility
+  DownloadButton, RelatedArticles,
+} as const;
+```
+
+### Usage in MDX
+
+```mdx
+<InfoBox title="Heads up">
+This is an informational callout.
+</InfoBox>
+
+<ExamTip>
+Mnemonic: "My Very Educated Mother Just Served Us Noodles."
+</ExamTip>
+
+<ComparisonTable
+  headers={["Feature", "Plan A", "Plan B"]}
+  rows={[
+    ["Price", "Free", "$9/mo"],
+    ["Storage", "1 GB", "10 GB"],
+  ]}
+/>
+
+<YouTube id="dQw4w9WgXcQ" title="Demo video" />
+
+<Mermaid chart={`graph TD; A-->B; B-->C;`} />
+
+<KaTeXBlock math="E = mc^2" display />
+```
+
+### Mapping markdown shortcuts → components
+
+- `> [!INFO]` → `InfoBox` (GitHub-style admonition syntax)
+- `> [!WARNING]` → `WarningBox`
+- `> [!TIP]` → `TipBox`
+- `> [!SUCCESS]` → `SuccessBox`
+- `> [!NOTE]` → `Notes`
+- `?` and `!` blocks for FAQ
+- ` ```mermaid ` → Mermaid (lazy-loaded)
+- ` ```math ` → KaTeX display
+- ` ``` ` → existing CodeBlock
+
+Handled by a `remark-directive` + custom handler in the remark chain.
+
+---
+
+## 10. Cloudinary Integration
+
+### Upload flow
+
+```
+<MediaUploader />  (client component, "use client")
+   │
+   │  1. GET /api/upload/sign  → returns { signature, timestamp, apiKey, cloudName, folder }
+   │  2. POST https://api.cloudinary.com/v1_1/<cloud>/auto/upload (FormData)
+   │  3. response → { secure_url, public_id, width, height, bytes, format }
+   │
+   ▼
+POST /api/media        (server)  →  prisma.media.create(...)
+   │
+   ▼
+returns Media  →  editor stores mediaId in form state
+```
+
+### Server helpers (`lib/media/cloudinary.ts`)
+
+```ts
+export function cld(publicId: string, transforms: string) {
+  return `https://res.cloudinary.com/${process.env.CLOUDINARY_CLOUD_NAME}/image/upload/${transforms}/${publicId}`;
+}
+
+export const cldAuto = (id: string) => cld(id, "f_auto,q_auto");
+export const cldResponsive = (id: string, w: number) =>
+  cld(id, `f_auto,q_auto,w_${w},c_fill`);
+```
+
+### URL conventions
+
+- **Inline image**: `cldAuto(publicId)` — automatic format & quality.
+- **Cover**: `cldResponsive(publicId, 1200)` for the OG-sized variant, plus 480/768/1200 srcset.
+- **Avatar**: `cldResponsive(publicId, 80),c_fill,g_auto,r_max`.
+- **PDFs**: Cloudinary raw upload → `https://res.cloudinary.com/.../raw/upload/<public_id>.pdf` or use `PdfEmbed` with `<iframe>`.
+
+### `<CloudinaryImage>` component
+
+A thin wrapper around `next/image` with `loader` that injects `f_auto,q_auto` and produces a `srcSet` for the breakpoints in `next.config.ts`.
+
+---
+
+## 11. CMS Architecture (Admin)
+
+### Routes (all under `/admin`)
+
+| Route | Purpose |
+|---|---|
+| `/admin` | Dashboard: post counts, drafts, scheduled, recent activity |
+| `/admin/posts` | Filterable table (status, category, language, author, search) |
+| `/admin/posts/new` | Create post |
+| `/admin/posts/[id]` | Edit post |
+| `/admin/posts/[id]/preview` | Render-with-data preview |
+| `/admin/categories` | CRUD + drag-to-reorder |
+| `/admin/tags` | CRUD + merge |
+| `/admin/media` | Grid view of Cloudinary uploads, search, alt-text editor |
+| `/admin/seo` | Site-wide defaults, robots/sitemap preview |
+| `/admin/analytics` | Top posts (read counts), search terms (from logs) |
+| `/admin/users` | Role management (ADMIN only) |
+| `/admin/settings` | Site settings (single-row table) |
+| `/admin/trash` | Soft-deleted posts |
+
+### Auth
+
+- Auth.js v5 (`next-auth@5`) with `Credentials` provider (email + password) using bcrypt.
+- Middleware (`middleware.ts`) protects all `/admin/**` routes except `/admin/login`.
+- Role-based UI: `ADMIN` sees Users + Trash; `EDITOR` sees posts/media/categories/tags; `AUTHOR` sees only own posts.
+
+### Editor architecture
+
+```
+┌──────────────────────────────────────────────────────────┐
+│  <PostEditor>                                            │
+│  ├── Title  (autosaves slug)                             │
+│  ├── Excerpt                                            │
+│  ├── Educational meta (class, subject, board, etc.)      │
+│  ├── Category (searchable dropdown)                     │
+│  ├── Tags (multi-select, create-on-the-fly)             │
+│  ├── Cover image (MediaUploader)                        │
+│  ├── Body — MDX-aware textarea OR (optional Phase 3)     │
+│  │        code editor (CodeMirror 6)                    │
+│  ├── SEO panel (collapsible)                            │
+│  │     - metaTitle, metaDescription, canonicalUrl        │
+│  │     - focusKeyword, slug-collision check             │
+│  │     - OG image, Twitter card                          │
+│  ├── Schedule panel                                     │
+│  │     - status: DRAFT | SCHEDULED | PUBLISHED          │
+│  │     - scheduledFor (datetime picker)                 │
+│  └── Action bar                                         │
+│        [Save Draft] [Preview] [Schedule] [Publish]      │
+└──────────────────────────────────────────────────────────┘
+```
+
+### Autosave
+
+- Client effect with 1.5s debounce → `PATCH /api/posts/[id]/autosave` with `{ title, content, excerpt }`.
+- Server stores in a `drafts` JSONB column (transient) OR upserts the post with `status: DRAFT` every time.
+- A "last saved X seconds ago" indicator in the editor toolbar.
+
+### Preview
+
+- `/admin/posts/[id]/preview` reads the saved row, sets `revalidate = 0`, renders the same template as `/blog/[slug]`.
+- Draft posts render with a `<DraftBanner>` overlay.
+
+### Scheduled publishing
+
+- A small cron-like worker is **not** added (no Kubernetes / no queues).
+- Instead, Next.js's `revalidatePath('/blog')` is called lazily on first request after `scheduledFor`. This works because `publishedAt` is checked in the source query: when a request lands and the post is now past its schedule, the page is rendered and `revalidate = 60` ensures re-checks.
+- **Alternative (P3)**: a `node-cron` script in `scripts/scheduler.ts` running as a single long-lived Node process on the host (e.g. Railway cron or a serverless cron). Recommended only if schedule precision matters.
+
+### Server actions (`actions/posts.ts`)
+
+```ts
+export async function createPost(input: CreatePostInput) { /* zod-validate, prisma, revalidate */ }
+export async function updatePost(id: string, input: UpdatePostInput) { /* ... */ }
+export async function deletePost(id: string) { /* soft-delete: status=TRASHED */ }
+export async function restorePost(id: string) { /* status=DRAFT */ }
+export async function duplicatePost(id: string) { /* ... */ }
+export async function schedulePost(id: string, when: Date) { /* ... */ }
+export async function publishPost(id: string) { /* ... */ }
+export async function autosavePost(id: string, draft: PostDraft) { /* ... */ }
+```
+
+All wrapped in `requireRole('ADMIN' | 'EDITOR' | 'AUTHOR')`.
+
+---
+
+## 12. SEO Improvements
+
+### Already good — keep
+
+- Per-post JSON-LD: `BlogPosting`, `BreadcrumbList`, `FAQPage` (when Q&A pairs detected).
+- Open Graph + Twitter card meta.
+- Dynamic OG image at `/blog/opengraph-image` and `/blog/[slug]/opengraph-image`.
+- `sitemap.ts`, `robots.ts`, RSS feed.
+
+### New
+
+1. **Editable per-post SEO fields** (title, description, canonical, focus keyword, OG override).
+2. **Auto-generated SEO suggestions**:
+   - If `metaTitle` empty → use `title`.
+   - If `metaDescription` empty → use first 155 chars of excerpt (or content).
+   - If `ogImage` empty → use cover, fallback to site default.
+3. **`hreflang`**: build `alternates.languages` with `en` / `ne` and `x-default`.
+4. **`EducationalOrganization` + `Course` schemas** when educational metadata is present.
+5. **404 page improvement**:
+   - Personalized 404 with site search, popular posts, category links.
+6. **Reading time** stored on the post (computed once at save).
+7. **Slug validator**:
+   - Reject slugs that already exist in legacy `final_content/blog` (warn, not block, with a "force" override).
+   - Lowercase, ASCII-safe fallback, transliteration for Nepali titles.
+8. **Internal linking helper**:
+   - Server-side: at save time, scan new content for known slugs/keywords → insert a `RelatedPost` row with reason `"auto"`.
+9. **Sitemap segments**:
+   - `/sitemap.xml` index pointing at `/sitemap-posts.xml`, `/sitemap-categories.xml`, `/sitemap-tags.xml`, `/sitemap-archive.xml`.
+10. **Robots**:
+    - Block `/admin/**` and `/api/**`.
+    - Reference sitemap.
+11. **JSON-LD `WebSite` + `SearchAction`** for the home page.
+12. **Canonical for paginated listing pages** with `<link rel="prev/next">`.
+
+---
+
+## 13. Performance Strategy
+
+### Server Components & caching
+
+- All post listing/detail pages are RSC.
+- `unstable_cache` for `getAllPosts` (filesystem) and DB listings with tags: `posts:list`, `posts:byCategory:<slug>`, `posts:byTag:<slug>`.
+- `revalidate = 3600` on detail pages; `revalidate = 300` on listings.
+- Server actions call `revalidateTag(...)` after writes.
+
+### Bundle reduction
+
+- Audit `next-mdx-remote/rsc`, `gsap`, `lenis`, `split-type`, `transliteration` usage. Keep only what is loaded.
+- Move `gsap`, `lenis`, `split-type` behind dynamic imports.
+- `Mermaid` and `CodeMirror` only on admin routes.
+- Audit client components: `ReadingProgress` (could be CSS), `TableOfContents` (could be CSS scroll-driven), `ShareButtons` (already small).
+
+### Images
+
+- Cloudinary `f_auto,q_auto` on every URL.
+- `next/image` with explicit `sizes` and `priority` only on above-the-fold hero.
+- LCP budget: hero image < 100KB WebP/AVIF.
+
+### JS budget
+
+- Admin bundle kept separate from public bundle (route group).
+- Public blog home: target < 100KB JS gzipped.
+
+### Lighthouse targets
+
+- Performance: ≥ 90 on a representative post page.
+- SEO: 100.
+- Best Practices: ≥ 95.
+- Accessibility: ≥ 95.
+
+---
+
+## 14. Security Improvements
+
+| # | Issue | Fix |
+|---|---|---|
+| X1 | `RESEND_API_KEY` in `.env` committed | **Rotate the key** in the Resend dashboard. Move all secrets to `.env.local` (already in `.gitignore`). Commit `.env.example` instead. Add a CI check that fails if a known key prefix is detected. |
+| X2 | No admin auth | Add Auth.js v5 with bcrypt + role-based middleware. |
+| X3 | MDX sanitization done at the wrong layer | Use `rehype-sanitize` at the end of the rehype chain; remove `sanitize-html` from the MDX path. |
+| X4 | External links open without `rel` | `rehype-external-links` adds `target=_blank rel="noopener noreferrer nofollow"`. |
+| X5 | OG image fallback has empty alt | Set `alt` to post title even on fallback. |
+| X6 | Cloudinary signed uploads | Sign on server, short TTL (60s). |
+| X7 | Rate limit | Add a lightweight in-memory rate-limit on `/api/search` and `/api/upload/sign`. |
+| X8 | CSP | Add a `Content-Security-Policy` header in `next.config.ts` allowing Cloudinary and self. |
+| X9 | CSRF | Server actions are POST with same-origin by default in Next.js; verify Origin header in actions. |
+| X10 | Passwords | bcrypt cost ≥ 12. |
+| X11 | Audit log | Write every admin write to `AuditLog`. |
+
+---
+
+## 15. Educational Features
+
+### New metadata
+
+Stored on `Post`:
+
+- `classLevel` (free-text but normalized: "class-7" .. "class-12")
+- `subject` (free-text)
+- `board` ("NEB", "SEE", "Tribhuvan University", …)
+- `difficulty` (enum)
+- `language` ("en" | "ne")
+- `series` (e.g. "Class 10 Math")
+- `examType` (enum)
+- `lastReviewedAt` (date)
+- `readingTimeMin`
+- `wordCount`
+
+### Future filtering (UI on listing pages)
+
+- `/blog/class-10` — implicit category match.
+- New helper: `getPostsByEducational(filter)` taking `{ classLevel, subject, board, difficulty }`.
+
+### Educational trust signals (front-end)
+
+- "Last reviewed on …" badge on post header when `lastReviewedAt` is set.
+- Schema: `reviewedBy` (Person → Author) when review author differs from original author.
+
+---
+
+## 16. Migration Plan (no data loss)
+
+### Phase 0 — Pre-flight (no DB)
+
+1. Rotate Resend key.
+2. Add `.env.example`.
+3. Move legacy MDX directory usage to `final_content/blog` only (drop `content/blog` references).
+4. Remove unused migration scripts (`scripts/cleanup-inline-tags.py`, `scripts/fix-images.mjs`, `scripts/restore-content.mjs`) from the repo once contents are baked into data.
+
+### Phase 1 — DB & schema
+
+5. Add Prisma + Postgres connection.
+6. `prisma migrate dev --name init`.
+7. Run `prisma/seed.ts` to populate default `Author` (Subesh Yadav), default `Category` rows from `lib/blog/categories.ts`, and a `SiteSettings` row.
+
+### Phase 2 — Source abstraction
+
+8. Introduce `PostSource` interface.
+9. Wrap the existing filesystem readers in `MdxFileSource` (memoized per build).
+10. Add `PrismaPostSource` (initially unused except for admin user CRUD).
+11. Add `CompositeSource` (DB first, filesystem fallback).
+12. Switch reader routes (`/blog/[slug]`, listings) to use `CompositeSource`.
+
+### Phase 3 — Admin MVP
+
+13. Auth.js v5 setup.
+14. `/admin/posts` list with server-rendered table.
+15. `/admin/posts/new` form + server actions.
+16. `MediaUploader` + Cloudinary signed endpoint.
+17. SEO panel.
+18. Autosave (draft-only).
+19. Preview.
+20. Schedule + publish.
+
+### Phase 4 — MDX component library
+
+21. New MDX component folder.
+22. Plug into `mdxComponents(category)` factory.
+23. Add `remark-directive` for admonition shortcuts.
+24. Math + Mermaid (lazy).
+
+### Phase 5 — Search
+
+25. Postgres FTS index + trigger.
+26. `/api/search` route.
+27. Replace Fuse.js client search with server results + URL state.
+
+### Phase 6 — Performance, SEO, polish
+
+28. Bundle audit, dynamic imports.
+29. `hreflang` for bilingual posts.
+30. Better 404.
+31. Internal-link helper.
+32. Sitemap segments.
+33. CSP header.
+
+### Phase 7 — Optional legacy → DB import utility
+
+34. `scripts/import-mdx-to-db.ts` (one-off). Reads `final_content/blog/*.mdx`, creates DB rows, copies Cloudinary URLs unchanged, sets `source = "IMPORTED"`, `status = "PUBLISHED"`. Idempotent. **Not run automatically.**
+35. After import, you can keep filesystem as fallback (still no data loss) OR remove `MdxFileSource` entirely.
+
+### Rollback strategy
+
+Each phase is independently revertible:
+- Phase 1–2 changes only touch the new files (`lib/content/*`, `prisma/*`, `db/*`). Removing them returns the codebase to its prior state.
+- Phase 3+ adds new routes (`/admin`) which are isolated.
+- The filesystem reader is preserved throughout until you decide to remove it.
+
+---
+
+## 17. Step-by-Step Implementation Plan
+
+Each step has a **verify** action.
+
+### Step 0 — Security hotfix (≤ 30 min)
+
+- [ ] Rotate `RESEND_API_KEY` (you do this in Resend dashboard).
+- [ ] Replace `.env` content with `RESEND_API_KEY=` placeholder.
+- [ ] Add `.env.example` to git.
+- [ ] Verify `.gitignore` contains `.env*` (it does — but make explicit).
+- **Verify:** `git status` shows no `.env` change; `grep -r RESEND_API_KEY .` shows only `.env.example`.
+
+### Step 1 — Folder reorganization (≤ 1 h)
+
+- [ ] Move `app/components/*` → `components/*` (skip `app/components/blog/`).
+- [ ] Move `app/hooks/*` → `hooks/*`.
+- [ ] Move `app/providers/*` → `providers/*`.
+- [ ] Update all `import` paths.
+- **Verify:** `pnpm run build` succeeds (or `npm run build`).
+
+### Step 2 — Prisma & DB (≤ 2 h)
+
+- [ ] `npm i prisma @prisma/client`.
+- [ ] Create `prisma/schema.prisma` as in Section 8.
+- [ ] Create `db/prisma.ts` singleton.
+- [ ] Create `.env.example` with `DATABASE_URL=postgresql://...`.
+- [ ] `npx prisma generate`.
+- [ ] `npx prisma migrate dev --name init` against local Postgres (Docker compose file provided).
+- [ ] Write `prisma/seed.ts` (admin user, default categories from existing TS map).
+- **Verify:** `npx prisma studio` opens; seed categories visible; `pnpm run build` succeeds.
+
+### Step 3 — PostSource abstraction (≤ 3 h)
+
+- [ ] Define `PostSource` interface in `lib/content/post-source.ts`.
+- [ ] Implement `MdxFileSource` (move `lib/blog/posts.ts` logic, memoize per-build).
+- [ ] Implement `PrismaPostSource` skeleton (real impl in Step 5).
+- [ ] Implement `CompositeSource`.
+- [ ] Refactor `app/(blog)/blog/[slug]/page.tsx` and `app/(blog)/blog/page.tsx` to use `CompositeSource`.
+- **Verify:** Build succeeds; manually navigate to a few existing MDX posts; URLs still work.
+
+### Step 4 — MDX component library (≤ 4 h)
+
+- [ ] Create `components/mdx/admonitions/{InfoBox,WarningBox,SuccessBox,TipBox,Callout}.tsx`.
+- [ ] Create `components/mdx/academic/{Definition,Example,ExamTip,KeyPoints,Notes}.tsx`.
+- [ ] Create `components/mdx/media/{YouTube,PdfEmbed,CloudinaryImage}.tsx`.
+- [ ] Create `components/mdx/interactive/{Accordion,FAQ,Mermaid,KaTeXBlock}.tsx` (lazy).
+- [ ] Create `components/mdx/layout/{ComparisonTable,Figure,Quote}.tsx`.
+- [ ] Create `components/mdx/code/{CodeBlock,CopyButton}.tsx` (move existing).
+- [ ] Create `components/mdx/index.ts` barrel.
+- [ ] Wire `remark-directive` into the MDX pipeline.
+- [ ] Add `rehype-sanitize`, `rehype-external-links`, `remark-math`, `rehype-katex`, `rehype-slug`, `rehype-autolink-headings`.
+- **Verify:** Create a sample post that uses each component and renders correctly; copy the sample to `final_content/blog/_test-new-components.mdx` (gitignored) for visual QA.
+
+### Step 5 — Auth + Admin scaffold (≤ 4 h)
+
+- [ ] `npm i next-auth@beta @auth/prisma-adapter bcryptjs zod`.
+- [ ] `lib/auth/config.ts` with Credentials provider + PrismaAdapter.
+- [ ] `app/api/auth/[...nextauth]/route.ts`.
+- [ ] `middleware.ts` protecting `/admin/**`.
+- [ ] `app/admin/layout.tsx` with auth gate.
+- [ ] `app/admin/page.tsx` dashboard (counts).
+- **Verify:** Log in with seeded admin user; redirected to `/admin`.
+
+### Step 6 — Admin posts CRUD (≤ 6 h)
+
+- [ ] `services/posts.service.ts` (Prisma queries).
+- [ ] `actions/posts.ts` (server actions, zod validation).
+- [ ] `app/admin/posts/page.tsx` table with filters.
+- [ ] `app/admin/posts/new/page.tsx` form.
+- [ ] `app/admin/posts/[id]/page.tsx` edit form.
+- [ ] `<PostEditor>` component.
+- [ ] `<SeoPanel>` component.
+- **Verify:** Create a draft, edit, autosave, schedule, publish. URL `/blog/<slug>` renders the new post.
+
+### Step 7 — Media & Cloudinary (≤ 3 h)
+
+- [ ] `npm i cloudinary next-cloudinary`.
+- [ ] `lib/media/cloudinary.ts`.
+- [ ] `app/api/upload/sign/route.ts`.
+- [ ] `actions/media.ts` server action.
+- [ ] `<MediaUploader>` component.
+- [ ] Wire into `<PostEditor>`.
+- **Verify:** Upload an image via the editor; URL persisted; rendered on the public post.
+
+### Step 8 — Search (≤ 2 h)
+
+- [ ] Add FTS index + trigger migration.
+- [ ] `lib/search/postgres-fts.ts`.
+- [ ] `app/api/search/route.ts`.
+- [ ] Replace Fuse.js on `/blog/search` with server-side results.
+- **Verify:** Search by title, content, tag — all return relevant posts; latency < 300ms.
+
+### Step 9 — Performance & SEO (≤ 3 h)
+
+- [ ] Add `unstable_cache` with tags around source readers.
+- [ ] Add `revalidateTag` calls in actions.
+- [ ] `hreflang` in `generatePostMetadata`.
+- [ ] Sitemap segments.
+- [ ] CSP header in `next.config.ts`.
+- [ ] Dynamic imports for `gsap`, `lenis`, `split-type`.
+- [ ] Better 404 page.
+- **Verify:** Lighthouse ≥ 90 performance, 100 SEO on a sample post.
+
+### Step 10 — Educational metadata (≤ 2 h)
+
+- [ ] Add educational fields to `<PostEditor>`.
+- [ ] Render on public post header.
+- [ ] `lastReviewedAt` badge.
+- **Verify:** Set `classLevel=class-10` on a post; renders badge; visible in JSON-LD.
+
+### Step 11 — Optional: legacy → DB import utility (≤ 2 h)
+
+- [ ] `scripts/import-mdx-to-db.ts` (idempotent).
+- [ ] Document usage in README.
+- [ ] **Do not run unless you ask for it.**
+
+### Step 12 — Documentation (≤ 1 h)
+
+- [ ] README updated with: env vars, scripts, DB setup, admin setup.
+- [ ] This `plan.md` retained as `docs/PLAN-2026-07-09.md`.
+
+**Total estimated time:** ~30 hours, spread across 12 small verifiable steps.
+
+---
+
+## 18. Verification Checklist
+
+Use this as the definition of done for the whole project.
+
+### Build & runtime
+
+- [ ] `npm run build` exits 0 with no type errors.
+- [ ] `npm run lint` exits 0.
+- [ ] `npm run typecheck` exits 0 (added in Step 1).
+- [ ] `npm run dev` boots and renders the home page in < 2s.
+
+### Content integrity
+
+- [ ] All 142 existing MDX posts still resolve at their original URLs.
+- [ ] `final_content/blog` filesystem source still works (composite source).
+- [ ] No 404 regressions on `/blog`, `/blog/category/*`, `/blog/tag/*`, `/blog/archive/*`.
+
+### SEO
+
+- [ ] View source on `/blog/<slug>` shows JSON-LD blocks for Article, Breadcrumb, and (where applicable) FAQ.
+- [ ] `/sitemap.xml` lists every published post.
+- [ ] `/robots.txt` references sitemap and disallows `/admin`, `/api`.
+- [ ] OG image renders correctly for posts with and without `image`.
+- [ ] `hreflang` emitted for `en` and `ne`.
+
+### Admin
+
+- [ ] Logged-out user hitting `/admin/posts` is redirected to login.
+- [ ] Logged-in `EDITOR` cannot access `/admin/users`.
+- [ ] Logged-in `ADMIN` can CRUD posts, categories, tags, media, users, settings.
+- [ ] Autosave fires within 2s of typing pause.
+- [ ] Preview shows the same layout as public.
+
+### Performance
+
+- [ ] Public post page JS bundle < 200KB gzipped.
+- [ ] LCP < 2.5s on a 4G simulated profile.
+- [ ] All images served as WebP/AVIF via Cloudinary.
+- [ ] No console errors on public pages.
+
+### Security
+
+- [ ] No secrets in git history (verify with `git log -p | grep -i 'RESEND\|CLOUDINARY\|DATABASE'`).
+- [ ] CSP header set in production.
+- [ ] All admin writes logged in `AuditLog`.
+- [ ] External links carry `rel="noopener noreferrer"`.
+
+---
+
+## 19. Out of Scope / Non-Goals
+
+- Microservices / Kubernetes / event queues / Elasticsearch / Redis.
+- Replacing the portfolio portion of the site.
+- Migrating the 142 existing posts into the DB by default (the utility is provided but not run).
+- Multi-language UI translation (only content language `en` / `ne`).
+- Real-time collaboration in the editor.
+- Image generation / AI content tools.
+- Native mobile app.
+
+---
+
+## Approval checklist before building
+
+Please confirm or amend:
+
+1. **Postgres provider:** Neon, Supabase, Railway, or your own? *(Default suggestion: **Neon** — free tier, instant branching.)*
+2. **Auth provider:** Credentials only, or also GitHub OAuth? *(Default: **Credentials only**, GitHub OAuth as a future option.)*
+3. **Admin UI library:** Shadcn/Radix UI primitives, or stick with hand-rolled Tailwind components matching the existing design? *(Default: **Shadcn** — fast, accessible, matches the dark-mode aesthetic.)*
+4. **Code editor for MDX body:** plain `<textarea>`, or CodeMirror 6 with syntax highlighting? *(Default: **plain textarea** for Phase 1, CodeMirror in Phase 2.)*
+5. **Schedule publishing:** lazy-on-first-request, or a real cron job? *(Default: **lazy** — no extra infra.)*
+6. **Legacy → DB import:** ship the utility but **do not run it** by default. Confirm?
+7. **Anything to remove or skip?**
+
+Once you give the green light, I'll work through Steps 0–12 in order, with a verify step after each.

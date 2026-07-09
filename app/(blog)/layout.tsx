@@ -212,6 +212,7 @@ export default function BlogLayout({
 }) {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const [logoError, setLogoError] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -228,7 +229,18 @@ export default function BlogLayout({
               href="/blog"
               className="text-xl font-semibold tracking-tight text-[var(--blog-text)] shrink-0"
             >
-              Subesh<span className="text-[var(--blog-accent)]">.</span>Blog
+              {logoError ? (
+                <>
+                  Neb <span className="text-[var(--blog-accent)]">Master</span>
+                </>
+              ) : (
+                <img
+                  src="https://res.cloudinary.com/dbfo8ibyu/image/upload/v1783607381/portfolio/tz3vva86i1xhqdpygj4i.png"
+                  alt="Neb Master"
+                  className="h-8 w-auto"
+                  onError={() => setLogoError(true)}
+                />
+              )}
             </Link>
 
             {!searchOpen && (
@@ -313,7 +325,7 @@ export default function BlogLayout({
                 href="/blog"
                 className="text-lg font-semibold text-[var(--blog-text)]"
               >
-                Subesh<span className="text-[var(--blog-accent)]">.</span>Blog
+              Neb <span className="text-[var(--blog-accent)]">Master</span>
               </Link>
               <p className="mt-3 text-sm text-[var(--blog-text-secondary)] leading-relaxed">
                 Essays, poems, SEE/BLB notes, and educational content in Nepali
@@ -322,11 +334,11 @@ export default function BlogLayout({
             </div>
             <div>
               <h3 className="text-sm font-semibold text-[var(--blog-text)]">
-                Subesh Bio
+                About
               </h3>
               <p className="mt-3 text-sm text-[var(--blog-text-secondary)] leading-relaxed">
-                Writer and educator sharing Nepali essays, poems, and study
-                materials.
+                Nepali essays, poems, stories, and study materials for
+                  students.
               </p>
               <Link
                 href="/blog/author"
@@ -364,7 +376,7 @@ export default function BlogLayout({
             </div>
           </div>
           <div className="mt-8 pt-8 border-t border-[var(--blog-border)] text-center text-sm text-[var(--blog-text-muted)]">
-            © {new Date().getFullYear()} Subesh Yadav. All rights reserved.
+            © {new Date().getFullYear()} Neb Master. All rights reserved.
           </div>
         </div>
       </footer>

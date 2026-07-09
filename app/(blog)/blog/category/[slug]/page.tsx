@@ -16,12 +16,12 @@ interface PageProps {
 }
 
 export async function generateStaticParams() {
-  return getCategories().map((category) => ({ slug: category.slug }));
+  return (await getCategories()).map((category) => ({ slug: category.slug }));
 }
 
 export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
-  const categories = getCategories();
+  const categories = await getCategories();
   const category = categories.find((c) => c.slug === slug);
   if (!category) return {};
   return generateCategoryMetadata(category);
@@ -31,14 +31,14 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
   const { slug } = await params;
   const sp = await searchParams;
   const currentPage = Math.max(1, parseInt(sp?.page || "1", 10) || 1);
-  const categories = getCategories();
+  const categories = await getCategories();
   const category = categories.find((c) => c.slug === slug);
 
   if (!category) {
     notFound();
   }
 
-  const allPosts = getPostsByCategory(slug);
+  const allPosts = await getPostsByCategory(slug);
   const totalPosts = allPosts.length;
   const totalPages = Math.max(1, Math.ceil(totalPosts / POSTS_PER_PAGE));
   const paginatedPosts = allPosts.slice(

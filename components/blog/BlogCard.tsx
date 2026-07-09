@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Post } from "@/lib/blog/types";
+import type { NormalizedPostSummary } from "@/lib/content";
 import { formatDate } from "@/lib/blog/utils";
 import { getCategorySlug, getCategoryLabel, getCategoryAccent } from "@/lib/blog/categories";
 
 interface BlogCardProps {
-  post: Post;
+  post: NormalizedPostSummary;
 }
 
 export function BlogCard({ post }: BlogCardProps) {

@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { Post } from "@/lib/blog/types";
+import type { NormalizedPostSummary } from "@/lib/content";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 interface PrevNextNavProps {
-  prev: Post | null;
-  next: Post | null;
+  prev: NormalizedPostSummary | null;
+  next: NormalizedPostSummary | null;
 }
 
 export function PrevNextNav({ prev, next }: PrevNextNavProps) {

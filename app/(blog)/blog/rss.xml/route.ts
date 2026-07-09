@@ -5,7 +5,7 @@ const BLOG_TITLE = BLOG_NAME;
 const BLOG_DESCRIPTION = SITE_DESCRIPTION;
 
 export async function GET() {
-  const posts = getAllPosts().slice(0, 50);
+  const posts = (await getAllPosts()).slice(0, 50);
 
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">

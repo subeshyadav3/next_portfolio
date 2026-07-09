@@ -5,16 +5,16 @@ import { SearchClient } from "@/components/blog/SearchClient";
 import { Breadcrumb } from "@/components/blog/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Search | Subesh Yadav Blog",
+  title: "Search | Neb Master",
   description:
     "Search essays, poems, SEE/BLB notes, and educational content in Nepali and English.",
 };
 
-export default function SearchPage() {
-  const posts = getAllPosts();
+export default async function SearchPage() {
+  const posts = await getAllPosts();
   const searchIndex = buildSearchIndex(posts);
-  const categories = getCategories();
-  const tags = getTags();
+  const categories = await getCategories();
+  const tags = await getTags();
 
   return (
     <>

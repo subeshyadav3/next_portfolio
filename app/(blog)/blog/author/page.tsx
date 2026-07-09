@@ -6,13 +6,13 @@ import { formatDate } from "@/lib/blog/utils";
 import { Breadcrumb } from "@/components/blog/Breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Author | Subesh Yadav Blog",
+  title: "Author | Neb Master",
   description:
-    "Meet Subesh Yadav, the author behind essays, poems, and educational content for Nepali students.",
+    "Neb Master — Nepali essays, poems, stories, and study materials for students.",
 };
 
-export default function AuthorPage() {
-  const posts = getAllPosts();
+export default async function AuthorPage() {
+  const posts = await getAllPosts();
   const postCount = posts.length;
   const categories = new Set(posts.map((p) => p.category)).size;
 
