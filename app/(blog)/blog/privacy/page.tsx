@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Link from "next/link";
 import { SITE_URL, SITE_NAME } from "@/lib/site-config";
 
 export const metadata: Metadata = {
@@ -38,10 +39,10 @@ export default function PrivacyPolicy() {
           is operated as an individual project, not a company. If you have any
           questions about this policy, you can reach me at{" "}
           <a
-            href="mailto:subeshyadav3@gmail.com"
+            href="mailto:subeshgaming@gmail.com"
             className="text-[var(--blog-accent)] hover:underline"
           >
-            subeshyadav3@gmail.com
+            subeshgaming@gmail.com
           </a>
           .
         </p>
@@ -295,10 +296,10 @@ export default function PrivacyPolicy() {
         <p className="text-[var(--blog-text-secondary)] leading-relaxed">
           To exercise any of these rights, email me at{" "}
           <a
-            href="mailto:subeshyadav3@gmail.com"
+            href="mailto:subeshgaming@gmail.com"
             className="text-[var(--blog-accent)] hover:underline"
           >
-            subeshyadav3@gmail.com
+            subeshgaming@gmail.com
           </a>
           . I will respond within 30 days.
         </p>
@@ -368,17 +369,17 @@ export default function PrivacyPolicy() {
           <li>
             Email:{" "}
             <a
-              href="mailto:subeshyadav3@gmail.com"
+              href="mailto:subeshgaming@gmail.com"
               className="text-[var(--blog-accent)] hover:underline"
             >
-              subeshyadav3@gmail.com
+              subeshgaming@gmail.com
             </a>
           </li>
           <li>
             Contact form:{" "}
-            <a href="/blog/contact" className="text-[var(--blog-accent)] hover:underline">
+            <Link href="/blog/contact" className="text-[var(--blog-accent)] hover:underline">
               subeshyadav.com.np/blog/contact
-            </a>
+            </Link>
           </li>
         </ul>
       </section>
