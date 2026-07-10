@@ -11,8 +11,7 @@ import type {
   NormalizedTag,
 } from "./types";
 import type { PostSource } from "./post-source";
-import { tagSlug } from "@/lib/blog/slugs";
-import { getCategorySlug, getCategoryLabel } from "@/lib/blog/categories";
+import { getCategorySlug } from "@/lib/blog/categories";
 import { getYear } from "@/lib/blog/utils";
 
 /* -------------------------------------------------------------------------- */
@@ -80,6 +79,10 @@ function paginate<T>(items: T[], opts?: ListOptions): T[] {
   return items.slice(offset, offset + limit);
 }
 
+function langWhere(opts?: ListOptions): { language?: string } {
+  return opts?.language ? { language: opts.language } : {};
+}
+
 function chapterNumber(text: string): number | null {
   const patterns = [
     /lesson\s*(\d+)/i,
@@ -95,30 +98,32 @@ function chapterNumber(text: string): number | null {
 }
 
 /* -------------------------------------------------------------------------- */
-/*  Source implementation                                                     */
+/*  Cached query helpers                                                      */
 /* -------------------------------------------------------------------------- */
 
-export class PrismaPostSource implements PostSource {
-  private langWhere(opts?: ListOptions): { language?: string } {
-    return opts?.language ? { language: opts.language } : {};
-  }
+const CACHE_TTL = 3600;
 
-  async list(opts?: ListOptions): Promise<NormalizedPostSummary[]> {
+const cachedList = unstable_cache(
+  async (opts?: ListOptions): Promise<NormalizedPostSummary[]> => {
     const posts = await prisma.post.findMany({
       where: {
         ...(opts?.includeUnpublished ? {} : publicFilter()),
-        ...this.langWhere(opts),
+        ...langWhere(opts),
       },
       include: POST_INCLUDE,
       orderBy: { publishedAt: "desc" },
     });
     return paginate(posts.map((p) => summarize(toNormalized(p))), opts);
-  }
+  },
+  ["prisma-post-source:list"],
+  { revalidate: CACHE_TTL, tags: ["posts:list"] }
+);
 
-  async get(
+const cachedGet = unstable_cache(
+  async (
     slug: string,
     opts?: { includeUnpublished?: boolean }
-  ): Promise<NormalizedPost | null> {
+  ): Promise<NormalizedPost | null> => {
     const post = await prisma.post.findUnique({
       where: { slug },
       include: POST_INCLUDE,
@@ -126,18 +131,21 @@ export class PrismaPostSource implements PostSource {
     if (!post) return null;
     if (!opts?.includeUnpublished) {
       const visible = post.status === PostStatus.PUBLISHED;
-      const scheduledOk =
-        !post.scheduledFor || post.scheduledFor <= new Date();
+      const scheduledOk = !post.scheduledFor || post.scheduledFor <= new Date();
       const notExpired = !post.expiresAt || post.expiresAt > new Date();
       if (!visible || !scheduledOk || !notExpired) return null;
     }
     return toNormalized(post);
-  }
+  },
+  ["prisma-post-source:get"],
+  { revalidate: CACHE_TTL, tags: ["posts:list"] }
+);
 
-  async has(
+const cachedHas = unstable_cache(
+  async (
     slug: string,
     opts?: { includeUnpublished?: boolean }
-  ): Promise<boolean> {
+  ): Promise<boolean> => {
     const post = await prisma.post.findUnique({
       where: { slug },
       select: { status: true, scheduledFor: true, expiresAt: true },
@@ -148,64 +156,82 @@ export class PrismaPostSource implements PostSource {
     if (post.scheduledFor && post.scheduledFor > new Date()) return false;
     if (post.expiresAt && post.expiresAt <= new Date()) return false;
     return true;
-  }
+  },
+  ["prisma-post-source:has"],
+  { revalidate: CACHE_TTL, tags: ["posts:list"] }
+);
 
-  async byCategory(
+const cachedByCategory = unstable_cache(
+  async (
     slug: string,
     opts?: ListOptions
-  ): Promise<NormalizedPostSummary[]> {
+  ): Promise<NormalizedPostSummary[]> => {
     const cat = await prisma.category.findUnique({ where: { slug } });
     if (!cat) return [];
     const posts = await prisma.post.findMany({
       where: {
         categoryId: cat.id,
         ...(opts?.includeUnpublished ? {} : publicFilter()),
-        ...this.langWhere(opts),
+        ...langWhere(opts),
       },
       include: POST_INCLUDE,
       orderBy: { publishedAt: "desc" },
     });
     return paginate(posts.map((p) => summarize(toNormalized(p))), opts);
-  }
+  },
+  ["prisma-post-source:byCategory"],
+  { revalidate: CACHE_TTL, tags: ["posts:list"] }
+);
 
-  async byTag(slug: string, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
+const cachedByTag = unstable_cache(
+  async (
+    slug: string,
+    opts?: ListOptions
+  ): Promise<NormalizedPostSummary[]> => {
     const tag = await prisma.tag.findUnique({ where: { slug } });
     if (!tag) return [];
     const posts = await prisma.post.findMany({
       where: {
         tags: { some: { tagId: tag.id } },
         ...(opts?.includeUnpublished ? {} : publicFilter()),
-        ...this.langWhere(opts),
+        ...langWhere(opts),
       },
       include: POST_INCLUDE,
       orderBy: { publishedAt: "desc" },
     });
     return paginate(posts.map((p) => summarize(toNormalized(p))), opts);
-  }
+  },
+  ["prisma-post-source:byTag"],
+  { revalidate: CACHE_TTL, tags: ["posts:list"] }
+);
 
-  async byYear(
+const cachedByYear = unstable_cache(
+  async (
     year: string,
     opts?: ListOptions
-  ): Promise<NormalizedPostSummary[]> {
+  ): Promise<NormalizedPostSummary[]> => {
     const start = new Date(`${year}-01-01T00:00:00Z`);
     const end = new Date(`${year}-12-31T23:59:59Z`);
     const posts = await prisma.post.findMany({
       where: {
         publishedAt: { gte: start, lte: end },
         ...(opts?.includeUnpublished ? {} : publicFilter()),
-        ...this.langWhere(opts),
+        ...langWhere(opts),
       },
       include: POST_INCLUDE,
       orderBy: { publishedAt: "desc" },
     });
     return paginate(posts.map((p) => summarize(toNormalized(p))), opts);
-  }
+  },
+  ["prisma-post-source:byYear"],
+  { revalidate: CACHE_TTL, tags: ["posts:list"] }
+);
 
-  async categories(opts?: ListOptions): Promise<NormalizedCategory[]> {
+const cachedCategories = unstable_cache(
+  async (opts?: ListOptions): Promise<NormalizedCategory[]> => {
     const cats = await prisma.category.findMany({
       orderBy: { displayOrder: "asc" },
     });
-    // Filtered count: use a raw group-by query.
     const rows = await prisma.$queryRaw<Array<{ slug: string; count: bigint }>>`
       SELECT c.slug, COUNT(p.id) AS count
       FROM "Category" c
@@ -222,20 +248,16 @@ export class PrismaPostSource implements PostSource {
       slug: c.slug,
       count: countMap.get(c.slug) ?? 0,
     }));
-  }
+  },
+  ["prisma-post-source:categories"],
+  { revalidate: CACHE_TTL, tags: ["categories:list", "posts:list"] }
+);
 
-  async tags(opts?: ListOptions): Promise<NormalizedTag[]> {
+const cachedTags = unstable_cache(
+  async (opts?: ListOptions): Promise<NormalizedTag[]> => {
     const tags = await prisma.tag.findMany({
       orderBy: { name: "asc" },
     });
-    // Filtered count requires a separate query through PostTag → Post.
-    const counts = await prisma.post.groupBy({
-      by: ["id"],
-      where: { tags: { some: { tag: { slug: { in: tags.map((t) => t.slug) } } } }, ...publicFilter() },
-      _count: true,
-    });
-    const totalPosts = await prisma.post.count({ where: { tags: { some: {} }, ...publicFilter() } });
-    // Simpler: count per tag via raw grouping
     const tagCounts = await prisma.$queryRaw<Array<{ slug: string; count: bigint }>>`
       SELECT t.slug, COUNT(p.id) AS count
       FROM "Tag" t
@@ -253,11 +275,15 @@ export class PrismaPostSource implements PostSource {
       slug: t.slug,
       count: countMap.get(t.slug) ?? 0,
     }));
-  }
+  },
+  ["prisma-post-source:tags"],
+  { revalidate: CACHE_TTL, tags: ["tags:list", "posts:list"] }
+);
 
-  async archiveYears(opts?: ListOptions): Promise<NormalizedArchiveYear[]> {
+const cachedArchiveYears = unstable_cache(
+  async (opts?: ListOptions): Promise<NormalizedArchiveYear[]> => {
     const posts = await prisma.post.findMany({
-      where: { ...publicFilter(), ...this.langWhere(opts) },
+      where: { ...publicFilter(), ...langWhere(opts) },
       select: { publishedAt: true },
     });
     const map = new Map<string, number>();
@@ -269,13 +295,13 @@ export class PrismaPostSource implements PostSource {
     return [...map.entries()]
       .map(([year, count]) => ({ year, count }))
       .sort((a, b) => b.year.localeCompare(a.year));
-  }
+  },
+  ["prisma-post-source:archiveYears"],
+  { revalidate: CACHE_TTL, tags: ["archive:list", "posts:list"] }
+);
 
-  async related(
-    post: NormalizedPost,
-    count = 3
-  ): Promise<NormalizedPostSummary[]> {
-    // Use RelatedPost rows first; fall back to category+tag scoring.
+const cachedRelated = unstable_cache(
+  async (post: NormalizedPost, count = 3): Promise<NormalizedPostSummary[]> => {
     const explicit = await prisma.relatedPost.findMany({
       where: { from: { slug: post.slug } },
       include: { to: { include: POST_INCLUDE } },
@@ -285,14 +311,14 @@ export class PrismaPostSource implements PostSource {
     if (explicit.length >= count) {
       return explicit.map((r) => summarize(toNormalized(r.to)));
     }
-    // Fallback: category+tag scoring
     const all = await prisma.post.findMany({
       where: { slug: { not: post.slug }, ...publicFilter(), language: post.language },
       include: POST_INCLUDE,
     });
     const scored = all.map((p) => {
       let score = 0;
-      if (getCategorySlug(p.category?.slug ?? "") === getCategorySlug(post.category)) score += 5;
+      if (getCategorySlug(p.category?.slug ?? "") === getCategorySlug(post.category))
+        score += 5;
       score += p.tags.filter((pt) => post.tags.includes(pt.tag.name)).length * 2;
       return { p, score };
     });
@@ -302,9 +328,13 @@ export class PrismaPostSource implements PostSource {
       ...explicit.map((r) => summarize(toNormalized(r.to))),
       ...scored.slice(0, remaining).map((s) => summarize(toNormalized(s.p))),
     ];
-  }
+  },
+  ["prisma-post-source:related"],
+  { revalidate: CACHE_TTL, tags: ["posts:list"] }
+);
 
-  async prevNext(post: NormalizedPost): Promise<AdjacentPosts> {
+const cachedPrevNext = unstable_cache(
+  async (post: NormalizedPost): Promise<AdjacentPosts> => {
     const all = await prisma.post.findMany({
       where: { ...publicFilter(), language: post.language },
       select: { slug: true, publishedAt: true },
@@ -317,13 +347,17 @@ export class PrismaPostSource implements PostSource {
       i < all.length - 1 ? all[i + 1].slug : null,
     ];
     const [prev, next] = await Promise.all([
-      prevSlug ? this.get(prevSlug) : Promise.resolve(null),
-      nextSlug ? this.get(nextSlug) : Promise.resolve(null),
+      prevSlug ? cachedGet(prevSlug) : Promise.resolve(null),
+      nextSlug ? cachedGet(nextSlug) : Promise.resolve(null),
     ]);
     return { prev, next };
-  }
+  },
+  ["prisma-post-source:prevNext"],
+  { revalidate: CACHE_TTL, tags: ["posts:list"] }
+);
 
-  async adjacentChapters(post: NormalizedPost): Promise<AdjacentPosts> {
+const cachedAdjacentChapters = unstable_cache(
+  async (post: NormalizedPost): Promise<AdjacentPosts> => {
     const current = chapterNumber(post.title) ?? chapterNumber(post.slug);
     if (current === null) return { prev: null, next: null };
     const all = await prisma.post.findMany({
@@ -348,70 +382,208 @@ export class PrismaPostSource implements PostSource {
     const i = numbered.findIndex((x) => x.number === current);
     if (i < 0) return { prev: null, next: null };
     const [prev, next] = await Promise.all([
-      i > 0 ? this.get(numbered[i - 1].p.slug) : Promise.resolve(null),
-      i < numbered.length - 1 ? this.get(numbered[i + 1].p.slug) : Promise.resolve(null),
+      i > 0 ? cachedGet(numbered[i - 1].p.slug) : Promise.resolve(null),
+      i < numbered.length - 1 ? cachedGet(numbered[i + 1].p.slug) : Promise.resolve(null),
     ]);
     return { prev, next };
-  }
+  },
+  ["prisma-post-source:adjacentChapters"],
+  { revalidate: CACHE_TTL, tags: ["posts:list"] }
+);
 
-  async featured(opts?: ListOptions): Promise<NormalizedPostSummary | null> {
+const cachedFeatured = unstable_cache(
+  async (opts?: ListOptions): Promise<NormalizedPostSummary | null> => {
     const p = await prisma.post.findFirst({
-      where: { featured: true, ...publicFilter(), ...this.langWhere(opts) },
+      where: { featured: true, ...publicFilter(), ...langWhere(opts) },
       include: POST_INCLUDE,
       orderBy: { publishedAt: "desc" },
     });
     if (p) return summarize(toNormalized(p));
-    const any = await this.latest(1);
+    const any = await cachedLatest(1, opts);
     return any[0] ?? null;
-  }
+  },
+  ["prisma-post-source:featured"],
+  { revalidate: CACHE_TTL, tags: ["posts:featured", "posts:list"] }
+);
 
-  async popular(count = 6, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
-    // Heuristic: posts with cover image and >= 3 min reading.
+const cachedPopular = unstable_cache(
+  async (count = 6, opts?: ListOptions): Promise<NormalizedPostSummary[]> => {
     const posts = await prisma.post.findMany({
-      where: { coverMediaId: { not: null }, readingTimeMin: { gte: 3 }, ...publicFilter(), ...this.langWhere(opts) },
+      where: {
+        coverMediaId: { not: null },
+        readingTimeMin: { gte: 3 },
+        ...publicFilter(),
+        ...langWhere(opts),
+      },
       include: POST_INCLUDE,
       orderBy: { publishedAt: "desc" },
       take: count,
     });
     return posts.map((p) => summarize(toNormalized(p)));
-  }
+  },
+  ["prisma-post-source:popular"],
+  { revalidate: CACHE_TTL, tags: ["posts:popular", "posts:list"] }
+);
 
-  async recentlyUpdated(count = 6, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
+const cachedRecentlyUpdated = unstable_cache(
+  async (count = 6, opts?: ListOptions): Promise<NormalizedPostSummary[]> => {
     const posts = await prisma.post.findMany({
-      where: { ...publicFilter(), ...this.langWhere(opts) },
+      where: { ...publicFilter(), ...langWhere(opts) },
       include: POST_INCLUDE,
       orderBy: { updatedAt: "desc" },
       take: count,
     });
     return posts.map((p) => summarize(toNormalized(p)));
-  }
+  },
+  ["prisma-post-source:recentlyUpdated"],
+  { revalidate: CACHE_TTL, tags: ["posts:recent", "posts:list"] }
+);
 
-  async editorPicks(count = 4, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
-    // Deterministic pick: featured + sticky first, then newest.
+const cachedEditorPicks = unstable_cache(
+  async (count = 4, opts?: ListOptions): Promise<NormalizedPostSummary[]> => {
     const posts = await prisma.post.findMany({
-      where: { OR: [{ featured: true }, { sticky: true }], ...publicFilter(), ...this.langWhere(opts) },
+      where: {
+        OR: [{ featured: true }, { sticky: true }],
+        ...publicFilter(),
+        ...langWhere(opts),
+      },
       include: POST_INCLUDE,
       orderBy: [{ featured: "desc" }, { sticky: "desc" }, { publishedAt: "desc" }],
       take: count,
     });
-    if (posts.length >= count) return posts.map((p) => summarize(toNormalized(p)));
+    if (posts.length >= count)
+      return posts.map((p) => summarize(toNormalized(p)));
     const fillers = await prisma.post.findMany({
-      where: { slug: { notIn: posts.map((p) => p.slug) }, ...publicFilter(), ...this.langWhere(opts) },
+      where: {
+        slug: { notIn: posts.map((p) => p.slug) },
+        ...publicFilter(),
+        ...langWhere(opts),
+      },
       include: POST_INCLUDE,
       orderBy: { publishedAt: "desc" },
       take: count - posts.length,
     });
     return [...posts, ...fillers].map((p) => summarize(toNormalized(p)));
-  }
+  },
+  ["prisma-post-source:editorPicks"],
+  { revalidate: CACHE_TTL, tags: ["posts:picks", "posts:list"] }
+);
 
-  async latest(count = 6, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
+const cachedLatest = unstable_cache(
+  async (count = 6, opts?: ListOptions): Promise<NormalizedPostSummary[]> => {
     const posts = await prisma.post.findMany({
-      where: { ...publicFilter(), ...this.langWhere(opts) },
+      where: { ...publicFilter(), ...langWhere(opts) },
       include: POST_INCLUDE,
       orderBy: { publishedAt: "desc" },
       take: count,
     });
     return posts.map((p) => summarize(toNormalized(p)));
+  },
+  ["prisma-post-source:latest"],
+  { revalidate: CACHE_TTL, tags: ["posts:latest", "posts:list"] }
+);
+
+/* -------------------------------------------------------------------------- */
+/*  Source implementation                                                     */
+/* -------------------------------------------------------------------------- */
+
+export class PrismaPostSource implements PostSource {
+  async list(opts?: ListOptions): Promise<NormalizedPostSummary[]> {
+    return cachedList(opts);
+  }
+
+  async get(
+    slug: string,
+    opts?: { includeUnpublished?: boolean }
+  ): Promise<NormalizedPost | null> {
+    return cachedGet(slug, opts);
+  }
+
+  async has(
+    slug: string,
+    opts?: { includeUnpublished?: boolean }
+  ): Promise<boolean> {
+    return cachedHas(slug, opts);
+  }
+
+  async byCategory(
+    slug: string,
+    opts?: ListOptions
+  ): Promise<NormalizedPostSummary[]> {
+    return cachedByCategory(slug, opts);
+  }
+
+  async byTag(
+    slug: string,
+    opts?: ListOptions
+  ): Promise<NormalizedPostSummary[]> {
+    return cachedByTag(slug, opts);
+  }
+
+  async byYear(
+    year: string,
+    opts?: ListOptions
+  ): Promise<NormalizedPostSummary[]> {
+    return cachedByYear(year, opts);
+  }
+
+  async categories(opts?: ListOptions): Promise<NormalizedCategory[]> {
+    return cachedCategories(opts);
+  }
+
+  async tags(opts?: ListOptions): Promise<NormalizedTag[]> {
+    return cachedTags(opts);
+  }
+
+  async archiveYears(opts?: ListOptions): Promise<NormalizedArchiveYear[]> {
+    return cachedArchiveYears(opts);
+  }
+
+  async related(
+    post: NormalizedPost,
+    count = 3
+  ): Promise<NormalizedPostSummary[]> {
+    return cachedRelated(post, count);
+  }
+
+  async prevNext(post: NormalizedPost): Promise<AdjacentPosts> {
+    return cachedPrevNext(post);
+  }
+
+  async adjacentChapters(post: NormalizedPost): Promise<AdjacentPosts> {
+    return cachedAdjacentChapters(post);
+  }
+
+  async featured(opts?: ListOptions): Promise<NormalizedPostSummary | null> {
+    return cachedFeatured(opts);
+  }
+
+  async popular(
+    count = 6,
+    opts?: ListOptions
+  ): Promise<NormalizedPostSummary[]> {
+    return cachedPopular(count, opts);
+  }
+
+  async recentlyUpdated(
+    count = 6,
+    opts?: ListOptions
+  ): Promise<NormalizedPostSummary[]> {
+    return cachedRecentlyUpdated(count, opts);
+  }
+
+  async editorPicks(
+    count = 4,
+    opts?: ListOptions
+  ): Promise<NormalizedPostSummary[]> {
+    return cachedEditorPicks(count, opts);
+  }
+
+  async latest(
+    count = 6,
+    opts?: ListOptions
+  ): Promise<NormalizedPostSummary[]> {
+    return cachedLatest(count, opts);
   }
 
   async invalidate(slug?: string): Promise<void> {

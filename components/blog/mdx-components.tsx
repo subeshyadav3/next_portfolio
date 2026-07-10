@@ -94,6 +94,7 @@ export function mdxComponents(category: string) {
 
     // --- Layout ---------------------------------------------------------
     ComparisonTable,
+    ResponsiveTable,
 
     // --- Media ----------------------------------------------------------
     YouTube,

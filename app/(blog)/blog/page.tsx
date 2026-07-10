@@ -8,33 +8,37 @@ import {
 import { generateBlogMetadata } from "@/lib/blog/seo";
 import { generateWebSiteSchema } from "@/lib/blog/schema";
 import { formatDate } from "@/lib/blog/utils";
-import { getPostsByCategory } from "@/lib/blog/posts";
-import {
-  getCategoryAccent,
-} from "@/lib/blog/categories";
+import { getCategorySlug, getCategoryAccent } from "@/lib/blog/categories";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { CategoryCloud } from "@/components/blog/CategoryCloud";
 import { SearchBox } from "@/components/blog/SearchBox";
+import { BlogPagination } from "@/components/blog/BlogPagination";
+import type { NormalizedPostSummary } from "@/lib/content";
+import { Suspense } from "react";
 
 export const metadata = generateBlogMetadata();
+export const revalidate = 3600;
 
 const POSTS_PER_PAGE = 10;
 
-interface BlogHomePageProps {
-  searchParams?: Promise<{ page?: string }>;
-}
+export default async function BlogHomePage() {
+  const [posts, featured, categories] = await Promise.all([
+    getAllPosts(),
+    getFeaturedPost(),
+    getCategories(),
+  ]);
 
-export default async function BlogHomePage({ searchParams }: BlogHomePageProps) {
-  const params = await searchParams;
-  const currentPage = Math.max(1, parseInt(params?.page || "1", 10) || 1);
-
-  const posts = await getAllPosts();
-  const featured = await getFeaturedPost();
-  const categories = await getCategories();
-  const totalPosts = posts.length;
-  const totalPages = Math.max(1, Math.ceil(totalPosts / POSTS_PER_PAGE));
-  const startIndex = (currentPage - 1) * POSTS_PER_PAGE;
-  const paginatedPosts = posts.slice(startIndex, startIndex + POSTS_PER_PAGE);
+  // Build an in-memory category → posts map so we don't query per category.
+  const postsByCategory = new Map<string, NormalizedPostSummary[]>();
+  for (const post of posts) {
+    const slug = getCategorySlug(post.category);
+    const existing = postsByCategory.get(slug);
+    if (existing) {
+      existing.push(post);
+    } else {
+      postsByCategory.set(slug, [post]);
+    }
+  }
 
   const webSiteSchema = generateWebSiteSchema();
 
@@ -128,12 +132,11 @@ export default async function BlogHomePage({ searchParams }: BlogHomePageProps) 
           Browse by Category
         </h2>
         <div className="space-y-12">
-          {await Promise.all(
-            categories.slice(0, 6).map(async (category) => {
-              const postsInCategory = (
-                await getPostsByCategory(category.slug)
-              ).slice(0, 3);
-              return (
+          {categories.slice(0, 6).map((category) => {
+            const postsInCategory = (postsByCategory.get(category.slug) ?? [])
+              .slice(0, 3);
+            if (postsInCategory.length === 0) return null;
+            return (
               <div key={category.slug}>
                 <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-2 mb-4">
                   <div>
@@ -155,81 +158,16 @@ export default async function BlogHomePage({ searchParams }: BlogHomePageProps) 
                   ))}
                 </div>
               </div>
-              );
-            })
-          )}
+            );
+          })}
         </div>
       </section>
 
       {/* All Articles - Paginated */}
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 border-t border-[var(--blog-border)]">
-        <div className="flex items-center justify-between mb-6">
-          <h2 className="text-2xl font-bold text-[var(--blog-text)]">
-            All Articles
-          </h2>
-          <span className="text-sm text-[var(--blog-text-muted)]">
-            Page {currentPage} of {totalPages} ({totalPosts} posts)
-          </span>
-        </div>
-
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {paginatedPosts.map((post) => (
-            <BlogCard key={post.slug} post={post} />
-          ))}
-        </div>
-
-        {/* Pagination */}
-        {totalPages > 1 && (
-          <nav
-            className="mt-12 flex items-center justify-center gap-2"
-            aria-label="Pagination"
-          >
-            <Link
-              href={currentPage > 2 ? `/blog?page=${currentPage - 1}` : "/blog"}
-              className={`rounded-lg border px-4 py-2 text-sm font-medium transition-colors ${
-                currentPage === 1
-                  ? "pointer-events-none border-[var(--blog-border)] text-[var(--blog-text-muted)] opacity-50"
-                  : "border-[var(--blog-border)] text-[var(--blog-text-secondary)] hover:border-[var(--blog-accent)] hover:text-[var(--blog-accent)]"
-              }`}
-            >
-              ← Previous
-            </Link>
-
-            <div className="hidden sm:flex items-center gap-1">
-              {Array.from({ length: totalPages }, (_, i) => i + 1).map(
-                (page) => (
-                  <Link
-                    key={page}
-                    href={page === 1 ? "/blog" : `/blog?page=${page}`}
-                    className={`min-w-[2.5rem] rounded-lg px-3 py-2 text-sm font-medium text-center transition-colors ${
-                      page === currentPage
-                        ? "bg-[var(--blog-accent)] text-white"
-                        : "text-[var(--blog-text-secondary)] hover:bg-[var(--blog-surface)]"
-                    }`}
-                    aria-current={page === currentPage ? "page" : undefined}
-                  >
-                    {page}
-                  </Link>
-                )
-              )}
-            </div>
-
-            <span className="sm:hidden text-sm text-[var(--blog-text-muted)]">
-              {currentPage} / {totalPages}
-            </span>
-
-            <Link
-              href={`/blog?page=${currentPage + 1}`}
-              className={`rounded-lg border px-4 py-2 text-sm font-medium transition-colors ${
-                currentPage === totalPages
-                  ? "pointer-events-none border-[var(--blog-border)] text-[var(--blog-text-muted)] opacity-50"
-                  : "border-[var(--blog-border)] text-[var(--blog-text-secondary)] hover:border-[var(--blog-accent)] hover:text-[var(--blog-accent)]"
-              }`}
-            >
-              Next →
-            </Link>
-          </nav>
-        )}
+        <Suspense fallback={<div className="h-96 animate-pulse rounded-xl bg-[var(--blog-surface)]" />}>
+          <BlogPagination posts={posts} postsPerPage={POSTS_PER_PAGE} />
+        </Suspense>
       </section>
 
       {/* Newsletter */}
