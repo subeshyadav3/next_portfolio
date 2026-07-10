@@ -82,14 +82,17 @@ interface FaqItem {
 }
 
 interface FAQProps {
-  items: FaqItem[];
+  items?: FaqItem[];
+  children?: ReactNode;
 }
 
-export function FAQ({ items }: FAQProps) {
+export function FAQ({ items, children }: FAQProps) {
+  const faqItems = items ?? (children ? parseFaqItems(children) : []);
+
   const schema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: items.map((it) => ({
+    mainEntity: faqItems.map((it) => ({
       "@type": "Question",
       name: it.question,
       acceptedAnswer: { "@type": "Answer", text: stringifyAnswer(it.answer) },
@@ -97,12 +100,14 @@ export function FAQ({ items }: FAQProps) {
   };
   return (
     <div className="my-6 not-prose">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
+      {faqItems.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      )}
       <dl className="divide-y divide-[var(--blog-border)] rounded-lg border border-[var(--blog-border)]">
-        {items.map((it, i) => (
+        {faqItems.map((it, i) => (
           <div key={i} className="px-4 py-3">
             <dt className="font-semibold text-[var(--blog-text)]">{it.question}</dt>
             <dd className="mt-1 text-[var(--blog-text-secondary)]">{it.answer}</dd>
@@ -120,6 +125,26 @@ function stringifyAnswer(node: ReactNode): string {
     return stringifyAnswer((node as { props: { children: ReactNode } }).props.children);
   }
   return "";
+}
+
+function stringifyChildren(node: ReactNode): string {
+  if (typeof node === "string" || typeof node === "number") return String(node);
+  if (Array.isArray(node)) return node.map(stringifyChildren).join(" ");
+  if (node && typeof node === "object" && "props" in node) {
+    return stringifyChildren((node as { props: { children?: ReactNode } }).props.children);
+  }
+  return "";
+}
+
+function parseFaqItems(children: ReactNode): FaqItem[] {
+  const text = stringifyChildren(children);
+  const items: FaqItem[] = [];
+  const regex = /\*\*Question\*\*:\s*([^]*?)\s*\*\*Answer\*\*:\s*([^]*?)(?=\*\*Question\*\*:|$)/g;
+  let match;
+  while ((match = regex.exec(text)) !== null) {
+    items.push({ question: match[1].trim(), answer: match[2].trim() });
+  }
+  return items;
 }
 
 /* -------------------------------------------------------------------------- */
