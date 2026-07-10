@@ -19,6 +19,9 @@ declare module "next-auth" {
 export const { handlers, signIn, signOut, auth } = NextAuth({
   adapter: PrismaAdapter(prisma),
   session: { strategy: "jwt" },
+  // Required for production behind Vercel / reverse-proxy:
+  // AUTH_TRUST_HOST=true must also be set in the host environment.
+  trustHost: true,
   pages: {
     signIn: "/admin/login",
   },

@@ -7,67 +7,11 @@ import rehypeSlug from "rehype-slug";
 import rehypeAutolinkHeadings from "rehype-autolink-headings";
 import rehypeKatex from "rehype-katex";
 import rehypeExternalLinks from "rehype-external-links";
-import rehypeSanitize, { defaultSchema } from "rehype-sanitize";
+
 import { mdxComponents } from "@/components/blog/mdx-components";
 import { TocItem } from "./types";
 import { slugifyText } from "./slugs";
 
-/* -------------------------------------------------------------------------- */
-/*  Sanitize schema — allow the tags we need for educational MDX              */
-/* -------------------------------------------------------------------------- */
-
-const sanitizeSchema = {
-  ...defaultSchema,
-  attributes: {
-    ...defaultSchema.attributes,
-    "*": [...(defaultSchema.attributes?.["*"] ?? []), "className", "class", "id"],
-    code: [...(defaultSchema.attributes?.code ?? []), "className"],
-    span: [...(defaultSchema.attributes?.span ?? []), "className", "style"],
-    div: [...(defaultSchema.attributes?.div ?? []), "className"],
-    pre: [...(defaultSchema.attributes?.pre ?? []), "className"],
-    h1: [...(defaultSchema.attributes?.h1 ?? []), "id"],
-    h2: [...(defaultSchema.attributes?.h2 ?? []), "id"],
-    h3: [...(defaultSchema.attributes?.h3 ?? []), "id"],
-    h4: [...(defaultSchema.attributes?.h4 ?? []), "id"],
-    h5: [...(defaultSchema.attributes?.h5 ?? []), "id"],
-    h6: [...(defaultSchema.attributes?.h6 ?? []), "id"],
-    math: [["xmlns"]],
-    annotation: [["encoding"]],
-    semantics: [],
-    mrow: [],
-    mi: [],
-    mo: [],
-    mn: [],
-    msup: [],
-    msub: [],
-    mfrac: [],
-    msqrt: [],
-    mtable: [],
-    mtr: [],
-    mtd: [],
-    mtext: [],
-    mspace: [],
-  },
-  tagNames: [
-    ...(defaultSchema.tagNames ?? []),
-    "math",
-    "annotation",
-    "semantics",
-    "mrow",
-    "mi",
-    "mo",
-    "mn",
-    "msup",
-    "msub",
-    "mfrac",
-    "msqrt",
-    "mtable",
-    "mtr",
-    "mtd",
-    "mtext",
-    "mspace",
-  ],
-};
 
 /* -------------------------------------------------------------------------- */
 /*  Compile MDX source → React tree                                           */
@@ -113,7 +57,10 @@ export async function compilePostMdx(
               rehypeExternalLinks,
               { target: "_blank", rel: ["noopener", "noreferrer", "nofollow"] },
             ],
-            [rehypeSanitize, { schema: sanitizeSchema }],
+            // NOTE: rehype-sanitize is intentionally omitted here.
+            // MDX content is authored/trusted (not user input), and sanitization
+            // strips HTML rendered by custom components (aside, dt, dd, footer,
+            // button, dl, etc.), causing entire content blocks to disappear.
           ],
         },
         parseFrontmatter: false,
