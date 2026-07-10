@@ -1,4 +1,12 @@
-import { auth } from "@/lib/auth/config";
+/**
+ * Edge middleware.
+ *
+ * Uses the thin edge-safe auth config (`@/lib/auth/edge-config`) which only
+ * verifies JWTs — no Prisma, no bcrypt. The full config with the database
+ * adapter lives in `@/lib/auth/config` and is consumed only by the
+ * `/api/auth/[...nextauth]` route handler.
+ */
+import { auth } from "@/lib/auth/edge-config";
 import { NextResponse } from "next/server";
 
 export default auth((req) => {

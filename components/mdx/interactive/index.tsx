@@ -13,12 +13,38 @@ export interface AccordionItem {
 }
 
 interface AccordionProps {
-  items: AccordionItem[];
+  /** Programmatic API: array of { title, body } items. */
+  items?: AccordionItem[];
+  /**
+   * MDX-friendly API: section title for a single accordion item whose body
+   * is rendered as children. Posts are written as:
+   *
+   *   <Accordion title="Practice Questions">
+   *     …markdown body…
+   *   </Accordion>
+   *
+   * which previously rendered as an empty box because the component only
+   * understood `items`. This prop + children support restores the missing
+   * content.
+   */
+  title?: string;
+  children?: ReactNode;
   defaultOpen?: number;
 }
 
-export function Accordion({ items, defaultOpen }: AccordionProps) {
-  const [open, setOpen] = useState<number | null>(defaultOpen ?? null);
+export function Accordion(props: AccordionProps) {
+  const { defaultOpen } = props;
+
+  const items: AccordionItem[] = props.items
+    ? props.items
+    : props.children !== undefined
+      ? [{ title: props.title ?? "", body: props.children }]
+      : [];
+
+  const [open, setOpen] = useState<number | null>(defaultOpen ?? 0);
+
+  if (items.length === 0) return null;
+
   return (
     <div className="my-6 divide-y divide-[var(--blog-border)] rounded-lg border border-[var(--blog-border)] not-prose">
       {items.map((it, i) => {
@@ -73,7 +99,6 @@ export function FAQ({ items }: FAQProps) {
     <div className="my-6 not-prose">
       <script
         type="application/ld+json"
-        // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
       />
       <dl className="divide-y divide-[var(--blog-border)] rounded-lg border border-[var(--blog-border)]">
