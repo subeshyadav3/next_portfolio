@@ -1,8 +1,11 @@
 import { prisma } from "@/db/prisma";
 
-export async function getComments(postId: string) {
+export async function getComments(postId: string, postSlug?: string) {
+  const where = postId
+    ? { postId, status: "APPROVED" as const, parentId: null }
+    : { postSlug, status: "APPROVED" as const, parentId: null };
   return prisma.comment.findMany({
-    where: { postId, status: "APPROVED", parentId: null },
+    where,
     include: {
       replies: {
         where: { status: "APPROVED" },

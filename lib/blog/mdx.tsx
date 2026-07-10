@@ -113,7 +113,7 @@ export async function compilePostMdx(
               rehypeExternalLinks,
               { target: "_blank", rel: ["noopener", "noreferrer", "nofollow"] },
             ],
-            [rehypeSanitize, sanitizeSchema],
+            [rehypeSanitize, { schema: sanitizeSchema }],
           ],
         },
         parseFrontmatter: false,

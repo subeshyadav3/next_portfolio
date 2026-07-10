@@ -75,7 +75,9 @@ export default async function BlogPostPage({ params }: PageProps) {
   const categoryAccent = getCategoryAccent(categorySlugValue);
 
   const dbPost = post.source === "DB" ? await prisma.post.findUnique({ where: { slug: post.slug }, select: { id: true, allowComments: true } }) : null;
-  const comments = dbPost ? await getComments(dbPost.id) : [];
+  const comments = dbPost
+    ? await getComments(dbPost.id)
+    : await getComments("", post.slug);
 
   const articleSchema = generateArticleSchema(post, {
     classLevel: post.classLevel,
@@ -244,9 +246,9 @@ export default async function BlogPostPage({ params }: PageProps) {
                 />
               </div>
 
-              {dbPost && dbPost.allowComments && (
+              {(dbPost?.allowComments ?? post.source === "FILE") && (
                 <div className="mt-12">
-                  <PostComments postId={dbPost.id} initialComments={comments} />
+                  <PostComments postId={dbPost?.id ?? ""} postSlug={dbPost ? undefined : post.slug} initialComments={comments} />
                 </div>
               )}
             </div>

@@ -15,6 +15,7 @@ export const CATEGORY_ACCENT_COLORS: Record<string, string> = {
   "class-9": "var(--cat-exam)",
   "class-10": "var(--cat-exam)",
   "class-11": "var(--cat-exam)",
+  "class-12": "var(--cat-exam)",
   reviews: "var(--cat-review)",
 };
 
@@ -30,6 +31,7 @@ export const CATEGORY_LABELS: Record<string, string> = {
   "class-9": "Class 9",
   "class-10": "Class 10",
   "class-11": "Class 11",
+  "class-12": "Class 12",
   reviews: "Reviews",
 };
 
@@ -56,6 +58,8 @@ export const CATEGORY_DESCRIPTIONS: Record<string, string> = {
     "Class 10 study notes, practice questions, and revision resources for Nepali high school students.",
   "class-11":
     "Class 11 notes, question answers, and study materials for NEB higher secondary subjects.",
+  "class-12":
+    "Class 12 notes, question answers, and study materials for NEB higher secondary subjects.",
   reviews:
     "Book reviews and recommendations — summaries, takeaways, and critiques of Nepali and world literature.",
 };
@@ -70,10 +74,12 @@ export const CATEGORY_SLUG_MAP: Record<string, string> = {
   "Nepali Shayari": "shayari",
   Gajal: "shayari",
   "Nepali Story/Katha": "stories",
+  "SEE PRACTICE 2076": "see",
   "BLE PRACTICE 2076": "ble",
   "Class 10": "class-10",
   "CLASS 9": "class-9",
   "Class 11": "class-11",
+  "Class 12": "class-12",
   "class 7": "class-7",
   "Book Review": "reviews",
   // Fallback groupings for messy/miscellaneous Blogger categories
@@ -104,7 +110,7 @@ export function getCategoryDescription(slug: string): string {
 
 export function isExamCategory(category: string): boolean {
   const slug = getCategorySlug(category);
-  return ["see", "ble", "class-7", "class-8", "class-9", "class-10", "class-11"].includes(slug);
+  return ["see", "ble", "class-7", "class-8", "class-9", "class-10", "class-11", "class-12"].includes(slug);
 }
 
 export function isPoemCategory(category: string): boolean {
@@ -131,6 +137,7 @@ export function isNepaliLanguageCategory(category: string): boolean {
     "class-9",
     "class-10",
     "class-11",
+    "class-12",
   ].includes(slug);
 }
 

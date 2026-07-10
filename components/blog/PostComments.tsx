@@ -9,9 +9,11 @@ interface CommentWithReplies extends Comment {
 
 export function PostComments({
   postId,
+  postSlug,
   initialComments,
 }: {
   postId: string;
+  postSlug?: string;
   initialComments: CommentWithReplies[];
 }) {
   const [comments, setComments] = useState(initialComments);
@@ -33,7 +35,7 @@ export function PostComments({
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          postId,
+          ...(postSlug ? { postSlug } : { postId }),
           authorName,
           authorEmail: authorEmail || undefined,
           content,

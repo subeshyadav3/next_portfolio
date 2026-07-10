@@ -57,9 +57,7 @@ export class CompositeSource implements PostSource {
     const map = new Map<string, NormalizedPostSummary>();
     for (const p of dbPosts) map.set(p.slug, p); // DB wins on collision
     for (const p of fsPosts) if (!map.has(p.slug)) map.set(p.slug, p);
-    return [...map.values()].sort(
-      (a, b) => new Date(b.published).getTime() - new Date(a.published).getTime()
-    );
+    return sortByDate([...map.values()]);
   }
 
   async byCategory(
@@ -86,9 +84,7 @@ export class CompositeSource implements PostSource {
     const map = new Map<string, NormalizedPostSummary>();
     for (const p of dbPosts) map.set(p.slug, p);
     for (const p of fsPosts) if (!map.has(p.slug)) map.set(p.slug, p);
-    return [...map.values()].sort(
-      (a, b) => new Date(b.published).getTime() - new Date(a.published).getTime()
-    );
+    return sortByDate([...map.values()]);
   }
 
   async byYear(year: string, opts?: ListOptions): Promise<NormalizedPostSummary[]> {
@@ -99,9 +95,7 @@ export class CompositeSource implements PostSource {
     const map = new Map<string, NormalizedPostSummary>();
     for (const p of dbPosts) map.set(p.slug, p);
     for (const p of fsPosts) if (!map.has(p.slug)) map.set(p.slug, p);
-    return [...map.values()].sort(
-      (a, b) => new Date(b.published).getTime() - new Date(a.published).getTime()
-    );
+    return sortByDate([...map.values()]);
   }
 
   // ---- Aggregations: union ------------------------------------------------
@@ -227,10 +221,14 @@ function mergeLists(
   const map = new Map<string, NormalizedPostSummary>();
   for (const p of a) map.set(p.slug, p);
   for (const p of b) if (!map.has(p.slug)) map.set(p.slug, p);
-  return [...map.values()]
-    .sort(
-      (x, y) =>
-        new Date(y.published).getTime() - new Date(x.published).getTime()
-    )
-    .slice(0, limit);
+  return sortByDate([...map.values()]).slice(0, limit);
+}
+
+function safeDate(s: string | undefined): number {
+  const d = new Date(s ?? "");
+  return isNaN(d.getTime()) ? 0 : d.getTime();
+}
+
+function sortByDate<T extends { published: string }>(items: T[]): T[] {
+  return items.sort((a, b) => safeDate(b.published) - safeDate(a.published));
 }
