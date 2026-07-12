@@ -54,12 +54,11 @@ export default async function BlogHomePage() {
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-24">
           <div className="mx-auto max-w-3xl text-center">
             <h1 className="text-4xl font-bold tracking-tight text-[var(--blog-text)] sm:text-5xl lg:text-6xl">
-              Essay, Poems & Educational Notes
+              Essays, Poems & Notes
             </h1>
             <p className="mt-6 text-lg leading-8 text-[var(--blog-text-secondary)]">
-              A growing collection of Nepali essays, poems, SEE and BLE practice
-              questions, book reviews, and stories — curated for students and
-              readers.
+              Nepali essays, poems, SEE/BLE practice questions, book reviews,
+              stories, and more — for students, readers, and lifelong learners.
             </p>
             <div className="mt-8 flex justify-center">
               <SearchBox />

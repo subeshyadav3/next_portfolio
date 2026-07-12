@@ -4,7 +4,7 @@ import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/lib/site-config";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Learn more about Subesh Yadav's educational blog - Nepali essays, poems, stories, and study materials for SEE/BLE/NEB students.",
+  description: "Learn more about Neb Master — essays, poems, stories, study materials, and writing from Nepal and beyond.",
   alternates: {
     canonical: `${SITE_URL}/blog/about`,
   },
@@ -16,17 +16,17 @@ export default function AboutPage() {
       <header className="mb-12 pb-8 border-b border-[var(--blog-border)]">
         <h1 className="text-3xl font-bold text-[var(--blog-text)] mb-4">About Us</h1>
         <p className="text-[var(--blog-text-secondary)] leading-relaxed">
-          Welcome to <strong>{SITE_NAME}</strong> — your trusted educational companion for Nepali literature, exam preparation, and academic resources.
+          Welcome to <strong>Neb Master</strong> — a space for Nepali essays, poems, exam prep, and writing from Nepal and beyond.
         </p>
       </header>
 
       <section className="mb-12">
         <h2 className="text-2xl font-semibold text-[var(--blog-text)] mb-4">Our Mission</h2>
         <p className="text-[var(--blog-text-secondary)] leading-relaxed mb-4">
-          We believe that quality education should be accessible to every student in Nepal. Our mission is to provide well-structured, curriculum-aligned study materials that help students excel in their SEE, BLE, and NEB examinations while fostering a love for Nepali literature and language.
+          We believe that quality education and good writing should be accessible to everyone. Most of our content is rooted in the Nepali curriculum — SEE, BLE, and NEB exam prep, Nepali literature, and cultural essays. But we also publish English essays, poems, stories, and reviews for a wider audience.
         </p>
         <p className="text-[var(--blog-text-secondary)] leading-relaxed mb-4">
-          Whether you are looking for Nepali essays (निबन्ध), poems (कविता), stories (कथा), Shayari (शायरी), or comprehensive exam guides — you will find them here, organized by class and topic.
+          Whether you are looking for Nepali essays (निबन्ध), poems (कविता), stories (कथा), Shayari (शायरी), exam guides, or English-language writing — you will find it here, organized by category and topic.
         </p>
       </section>
 
@@ -43,7 +43,7 @@ export default function AboutPage() {
           </li>
           <li className="flex items-start gap-3">
             <span className="text-[var(--blog-accent)]">✓</span>
-            <span><strong>Stories & Katha</strong> — Moral stories, folk tales, and literary short stories.</span>
+            <span><strong>Stories & Katha</strong> — Moral stories, folk tales, and literary short stories in Nepali and English.</span>
           </li>
           <li className="flex items-start gap-3">
             <span className="text-[var(--blog-accent)]">✓</span>
@@ -55,7 +55,7 @@ export default function AboutPage() {
           </li>
           <li className="flex items-start gap-3">
             <span className="text-[var(--blog-accent)]">✓</span>
-            <span><strong>English Grammar & Writing</strong> — For students preparing for English exams.</span>
+            <span><strong>English Writing & Reviews</strong> — Essays, poems, book reviews, and writing for a global readership.</span>
           </li>
         </ul>
       </section>
@@ -69,7 +69,7 @@ export default function AboutPage() {
           <div>
             <h3 className="text-xl font-semibold text-[var(--blog-text)] mb-2">Subesh Yadav</h3>
             <p className="text-[var(--blog-text-secondary)] leading-relaxed mb-3">
-              Full-stack developer and educator passionate about making Nepali educational content accessible online. With years of experience in web development and a deep understanding of the Nepali curriculum, Subesh combines technical expertise with educational insight to create resources that actually help students.
+              Full-stack developer and writer passionate about making educational content accessible online. With years of experience in web development and a deep understanding of the Nepali curriculum, Subesh combines technical expertise with a love for literature and teaching — writing in both Nepali and English.
             </p>
             <div className="flex flex-wrap gap-4">
               <a href="https://github.com/subeshyadav3" target="_blank" rel="noopener noreferrer" className="text-sm text-[var(--blog-accent)] hover:underline">GitHub</a>
@@ -84,21 +84,21 @@ export default function AboutPage() {
         <h2 className="text-2xl font-semibold text-[var(--blog-text)] mb-4">Why Choose Us?</h2>
         <div className="grid md:grid-cols-3 gap-6">
           <div className="p-6 rounded-lg bg-[var(--blog-surface)] border border-[var(--blog-border)]">
-            <h3 className="text-lg font-semibold text-[var(--blog-text)] mb-2">Curriculum Aligned</h3>
+            <h3 className="text-lg font-semibold text-[var(--blog-text)] mb-2">Nepal-Rooted</h3>
             <p className="text-[var(--blog-text-secondary)] text-sm">
-              All content follows the CDC Nepal curriculum for SEE, BLE, and NEB examinations.
+              Curriculum-aligned content for SEE, BLE, and NEB — plus Nepali literature and culture.
             </p>
           </div>
           <div className="p-6 rounded-lg bg-[var(--blog-surface)] border border-[var(--blog-border)]">
             <h3 className="text-lg font-semibold text-[var(--blog-text)] mb-2">Free & Accessible</h3>
             <p className="text-[var(--blog-text-secondary)] text-sm">
-              No paywalls, no subscriptions. Quality education should be free for everyone.
+              No paywalls, no subscriptions. Quality writing and education should be free for everyone.
             </p>
           </div>
           <div className="p-6 rounded-lg bg-[var(--blog-surface)] border border-[var(--blog-border)]">
-            <h3 className="text-lg font-semibold text-[var(--blog-text)] mb-2">Regularly Updated</h3>
+            <h3 className="text-lg font-semibold text-[var(--blog-text)] mb-2">Bilingual</h3>
             <p className="text-[var(--blog-text-secondary)] text-sm">
-              New essays, notes, and model questions added weekly based on exam trends.
+              Content in both Nepali and English — for local students and global readers alike.
             </p>
           </div>
         </div>

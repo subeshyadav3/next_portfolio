@@ -330,8 +330,7 @@ export default function BlogLayout({
               Neb <span className="text-[var(--blog-accent)]">Master</span>
               </Link>
               <p className="mt-3 text-sm text-[var(--blog-text-secondary)] leading-relaxed">
-                Essays, poems, SEE/BLB notes, and educational content in Nepali
-                and English.
+                Essays, poems, stories, exam notes, and writing — from Nepal and beyond.
               </p>
             </div>
             <div>
@@ -378,8 +377,7 @@ export default function BlogLayout({
                 About
               </h3>
               <p className="mt-3 text-sm text-[var(--blog-text-secondary)] leading-relaxed">
-                Nepali essays, poems, stories, and study materials for
-                students.
+                Essays, poems, stories, and study materials for students and readers.
               </p>
               <Link
                 href="/blog/author"

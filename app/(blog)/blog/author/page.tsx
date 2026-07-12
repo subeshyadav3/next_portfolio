@@ -8,7 +8,7 @@ import { Breadcrumb } from "@/components/blog/Breadcrumb";
 export const metadata: Metadata = {
   title: "Author | Neb Master",
   description:
-    "Neb Master — Nepali essays, poems, stories, and study materials for students.",
+    "Subesh Yadav — essays, poems, stories, and study materials from Nepal and beyond.",
 };
 
 export default async function AuthorPage() {
@@ -40,7 +40,8 @@ export default async function AuthorPage() {
               </p>
               <p className="mt-4 max-w-2xl text-[var(--blog-text-secondary)] leading-relaxed">
                 I write essays, poems, study notes, and exam preparation
-                materials for Nepali students. This blog covers SEE/BLB practice
+                materials — mostly for Nepali students, but also English-language
+                writing for a wider audience. This blog covers SEE/BLE practice
                 questions, Nepali literature, book reviews, and general
                 knowledge — all curated to help learners succeed.
               </p>

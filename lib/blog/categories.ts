@@ -33,13 +33,13 @@ export const CATEGORY_LABELS: Record<string, string> = {
 
 export const CATEGORY_DESCRIPTIONS: Record<string, string> = {
   essays:
-    "Nepali essays and nibandha on culture, society, education, and everyday life — written for students, teachers, and anyone learning Nepali.",
+    "Essays on culture, society, education, and everyday life — mostly in Nepali, with some in English.",
   poems:
-    "A collection of Nepali poems and kabita, from classic forms to contemporary verses on love, country, nature, and identity.",
+    "A collection of poems and kabita — from classic Nepali forms to contemporary verses on love, country, nature, and identity.",
   shayari:
     "Nepali shayari, gajal, and short expressive verses — romantic, sad, motivational, and reflective lines to share or save.",
   stories:
-    "Nepali short stories and laghukatha that capture moments, morals, and the texture of Nepali life in quick reads.",
+    "Short stories and laghukatha that capture moments, morals, and the texture of life — in Nepali and English.",
   "class-7":
     "Class 7 study materials, practice questions, and notes covering core subjects for Nepali school curriculum.",
   "class-8":
