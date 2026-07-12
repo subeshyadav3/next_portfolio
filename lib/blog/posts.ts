@@ -100,3 +100,117 @@ export async function getEditorPicks(count = 4) {
 export async function getAdjacentChapterPosts(post: Post) {
   return defaultSource.adjacentChapters(post);
 }
+
+/* ---------- Author readers ---------- */
+
+export interface AuthorProfile {
+  id: string;
+  slug: string;
+  name: string;
+  bio: string | null;
+  avatarUrl: string | null;
+  websiteUrl: string | null;
+  social: Record<string, string> | null;
+  postCount: number;
+}
+
+export async function getAllAuthors(): Promise<AuthorProfile[]> {
+  const { prisma } = await import("@/db/prisma");
+  const authors = await prisma.author.findMany({
+    include: {
+      posts: {
+        where: {
+          status: "PUBLISHED",
+          OR: [{ scheduledFor: null }, { scheduledFor: { lte: new Date() } }],
+        },
+        select: { id: true },
+      },
+    },
+    orderBy: { name: "asc" },
+  });
+  return authors.map((a) => ({
+    id: a.id,
+    slug: a.slug,
+    name: a.name,
+    bio: a.bio,
+    avatarUrl: a.avatarUrl,
+    websiteUrl: a.websiteUrl,
+    social: (a.social as Record<string, string>) ?? null,
+    postCount: a.posts.length,
+  }));
+}
+
+export async function getAuthorBySlug(
+  slug: string
+): Promise<AuthorProfile | null> {
+  const { prisma } = await import("@/db/prisma");
+  const author = await prisma.author.findUnique({
+    where: { slug },
+    include: {
+      posts: {
+        where: {
+          status: "PUBLISHED",
+          OR: [{ scheduledFor: null }, { scheduledFor: { lte: new Date() } }],
+        },
+        select: { id: true },
+      },
+    },
+  });
+  if (!author) return null;
+  return {
+    id: author.id,
+    slug: author.slug,
+    name: author.name,
+    bio: author.bio,
+    avatarUrl: author.avatarUrl,
+    websiteUrl: author.websiteUrl,
+    social: (author.social as Record<string, string>) ?? null,
+    postCount: author.posts.length,
+  };
+}
+
+export async function getPostsByAuthor(
+  authorSlug: string,
+  opts?: { limit?: number; offset?: number }
+) {
+  const { prisma } = await import("@/db/prisma");
+  const author = await prisma.author.findUnique({
+    where: { slug: authorSlug },
+    select: { id: true, name: true },
+  });
+  if (!author) return [];
+
+  const posts = await prisma.post.findMany({
+    where: {
+      authorId: author.id,
+      status: "PUBLISHED",
+      OR: [{ scheduledFor: null }, { scheduledFor: { lte: new Date() } }],
+      AND: [{ OR: [{ expiresAt: null }, { expiresAt: { gt: new Date() } }] }],
+    },
+    include: {
+      category: true,
+      tags: { include: { tag: true } },
+      coverMedia: true,
+    },
+    orderBy: { publishedAt: "desc" },
+    take: opts?.limit,
+    skip: opts?.offset,
+  });
+
+  return posts.map((p) => ({
+    slug: p.slug,
+    title: p.title,
+    description: p.excerpt ?? "",
+    published: (p.publishedAt ?? p.createdAt).toISOString(),
+    updated: p.updatedAt.toISOString(),
+    category: p.category?.slug ?? "uncategorized",
+    tags: p.tags.map((pt) => pt.tag.name),
+    author: author.name ?? authorSlug,
+    authorSlug: authorSlug,
+    authorUrl: "",
+    image: p.coverMedia?.secureUrl ?? "",
+    readingTime: p.readingTimeMin,
+    featured: p.featured,
+    language: (p.language as "en" | "ne") ?? "en",
+  }));
+}

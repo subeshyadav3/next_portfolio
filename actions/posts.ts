@@ -20,6 +20,43 @@ async function requireAuth() {
   return session.user;
 }
 
+/**
+ * Resolve the Author record for the logged-in user.
+ * If the user has no linked Author yet, auto-create one from their name/email.
+ */
+async function resolveAuthorForUser(userId: string): Promise<string> {
+  const user = await prisma.user.findUnique({ where: { id: userId } });
+  if (!user) throw new Error("User not found");
+
+  // If user already has a linked author, use it
+  if (user.authorId) return user.authorId;
+
+  // Auto-create an Author from the user's info
+  const name = user.name ?? user.email.split("@")[0];
+  const slug = slugifyText(name);
+
+  const author = await prisma.author.upsert({
+    where: { slug },
+    update: {},
+    create: {
+      slug,
+      name,
+      bio: null,
+      avatarUrl: user.image,
+      websiteUrl: null,
+      social: null,
+    },
+  });
+
+  // Link the user to this author
+  await prisma.user.update({
+    where: { id: userId },
+    data: { authorId: author.id },
+  });
+
+  return author.id;
+}
+
 async function resolveTagNames(names: string[]): Promise<string[]> {
   const ids: string[] = [];
   for (const name of names) {
@@ -70,6 +107,9 @@ export async function createPostAction(formData: FormData) {
   const raw = parseForm(formData);
   const cleaned = cleanEmpty(raw);
 
+  // Auto-assign author based on logged-in user
+  const authorId = await resolveAuthorForUser(user.id);
+
   if (cleaned.tagNames) {
     const names = (cleaned.tagNames as string).split(",").map((s: string) => s.trim()).filter(Boolean);
     cleaned.tags = await resolveTagNames(names);
@@ -78,7 +118,7 @@ export async function createPostAction(formData: FormData) {
 
   const parsed = createPostSchema.parse(cleaned);
 
-  await createPost({ ...parsed, userId: user.id });
+  await createPost({ ...parsed, authorId, userId: user.id });
   revalidatePath("/admin/posts");
   revalidatePath("/blog");
   revalidateTag("posts:list");

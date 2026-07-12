@@ -14,8 +14,6 @@ export async function POST(request: Request) {
     // const resend = new Resend(process.env.RESEND_API_KEY);
     // await resend.contacts.create({ email, audienceId: process.env.RESEND_AUDIENCE_ID });
 
-    console.log("Newsletter signup:", email);
-
     return NextResponse.json(
       { success: true, message: "Subscribed successfully" },
       { status: 200 }

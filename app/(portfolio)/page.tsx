@@ -1,20 +1,20 @@
 "use client";
 import "../globals.css";
+import dynamic from "next/dynamic";
 import Hero from "../../components/hero/Hero";
 import About from "../../components/about/about";
-import TechMarquee from "../../components/marquee/TechMarquee";
 import Stats from "../../components/stats/Stats";
-import Project from "../../components/projects/projects";
-import ContactPage from "../../components/contact/contact";
-import Education from "../../components/education/education";
-import Experience from "../../components/experience/experience";
+
+const Education = dynamic(() => import("../../components/education/education"), { ssr: false });
+const Experience = dynamic(() => import("../../components/experience/experience"), { ssr: false });
+const Project = dynamic(() => import("../../components/projects/projects"), { ssr: false });
+const ContactPage = dynamic(() => import("../../components/contact/contact"), { ssr: false });
 
 export default function HomePage() {
   return (
     <>
       <Hero />
       <About />
-      {/* <TechMarquee /> */}
       <Stats />
       <Education />
       <Experience />

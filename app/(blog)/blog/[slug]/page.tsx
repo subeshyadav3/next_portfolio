@@ -161,7 +161,12 @@ export default async function BlogPostPage({ params }: PageProps) {
           </p>
 
           <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm text-[var(--blog-text-muted)]">
-            <span>{post.author}</span>
+            <Link
+              href={`/blog/author/${post.authorSlug}`}
+              className="hover:text-[var(--blog-accent)] transition-colors"
+            >
+              {post.author}
+            </Link>
             <span>·</span>
             <time dateTime={post.published}>
               {formatDate(post.published)}

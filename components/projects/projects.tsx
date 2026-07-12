@@ -187,6 +187,9 @@ export default function ProjectsPage() {
                 <img
                   src={Array.isArray(featured.photo) ? featured.photo[0] : featured.photo}
                   alt={featured.title}
+                  width={600}
+                  height={450}
+                  loading="lazy"
                   className="w-full h-full object-cover"
                 />
               </div>

@@ -171,6 +171,10 @@ async function main() {
   if (adminEmail) {
     const adminUser = await prisma.user.findUnique({ where: { email: adminEmail } });
     if (adminUser) {
+      await prisma.user.update({
+        where: { email: adminEmail },
+        data: { authorId: defaultAuthor.id },
+      });
       await prisma.author.update({
         where: { id: defaultAuthor.id },
         data: { name: adminUser.name ?? defaultAuthor.name },

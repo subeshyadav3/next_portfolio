@@ -67,7 +67,7 @@ export default async function Image() {
             textAlign: "center",
           }}
         >
-          Nepali educational content for students and readers
+          Writing from Nepal and beyond — for students and readers
         </p>
       </div>
     ),

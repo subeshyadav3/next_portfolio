@@ -49,6 +49,7 @@ function readPostFile(filePath: string): NormalizedPost | null {
       category,
       tags: data.tags ?? [],
       author: data.author ?? "Subesh Yadav",
+      authorSlug: "subesh-yadav",
       authorUrl: data.authorUrl ?? "https://subeshyadav.com.np",
       image: data.image ?? "",
       readingTime: data.readingTime ?? 0,
