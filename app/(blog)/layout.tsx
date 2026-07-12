@@ -370,6 +370,14 @@ export default function BlogLayout({
                     Terms of Service
                   </Link>
                 </li>
+                <li>
+                  <Link
+                    href="/blog/disclaimer"
+                    className="text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)] transition-colors"
+                  >
+                    Disclaimer
+                  </Link>
+                </li>
               </ul>
             </div>
             <div>
