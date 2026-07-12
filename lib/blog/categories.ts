@@ -8,8 +8,6 @@ export const CATEGORY_ACCENT_COLORS: Record<string, string> = {
   poems: "var(--cat-poem)",
   shayari: "var(--cat-shayari)",
   stories: "var(--cat-story)",
-  see: "var(--cat-exam)",
-  ble: "var(--cat-exam)",
   "class-7": "var(--cat-exam)",
   "class-8": "var(--cat-exam)",
   "class-9": "var(--cat-exam)",
@@ -24,14 +22,12 @@ export const CATEGORY_LABELS: Record<string, string> = {
   poems: "Poems",
   shayari: "Shayari & Gajal",
   stories: "Stories",
-  see: "SEE",
-  ble: "BLE",
   "class-7": "Class 7",
-  "class-8": "Class 8",
+  "class-8": "Class 8 - BLE",
   "class-9": "Class 9",
-  "class-10": "Class 10",
+  "class-10": "Class 10 - SEE",
   "class-11": "Class 11",
-  "class-12": "Class 12",
+  "class-12": "Class 12 - NEB",
   reviews: "Reviews",
 };
 
@@ -44,18 +40,14 @@ export const CATEGORY_DESCRIPTIONS: Record<string, string> = {
     "Nepali shayari, gajal, and short expressive verses — romantic, sad, motivational, and reflective lines to share or save.",
   stories:
     "Nepali short stories and laghukatha that capture moments, morals, and the texture of Nepali life in quick reads.",
-  see:
-    "SEE practice questions, model sets, and revision notes for Secondary Education Examination preparation.",
-  ble:
-    "BLE (Basic Level Examination) practice questions and study notes for Class 8 students in Nepal.",
   "class-7":
     "Class 7 study materials, practice questions, and notes covering core subjects for Nepali school curriculum.",
   "class-8":
-    "Class 8 study materials, practice questions, and revision notes aligned with the Nepali school curriculum.",
+    "BLE (Basic Level Examination) practice questions and study notes for Class 8 students in Nepal.",
   "class-9":
     "Class 9 practice questions, notes, and study resources to help students prepare for exams.",
   "class-10":
-    "Class 10 study notes, practice questions, and revision resources for Nepali high school students.",
+    "SEE practice questions, model sets, and revision notes for Secondary Education Examination preparation.",
   "class-11":
     "Class 11 notes, question answers, and study materials for NEB higher secondary subjects.",
   "class-12":
@@ -74,13 +66,20 @@ export const CATEGORY_SLUG_MAP: Record<string, string> = {
   "Nepali Shayari": "shayari",
   Gajal: "shayari",
   "Nepali Story/Katha": "stories",
-  "SEE PRACTICE 2076": "see",
-  "BLE PRACTICE 2076": "ble",
+  "SEE PRACTICE 2076": "class-10",
+  "BLE PRACTICE 2076": "class-8",
+  SEE: "class-10",
+  BLE: "class-8",
+  NEB: "class-12",
   "Class 10": "class-10",
   "CLASS 9": "class-9",
+  "Class 9": "class-9",
   "Class 11": "class-11",
   "Class 12": "class-12",
   "class 7": "class-7",
+  "Class 7": "class-7",
+  "class 8": "class-8",
+  "Class 8": "class-8",
   "Book Review": "reviews",
   // Fallback groupings for messy/miscellaneous Blogger categories
   "Nepali Blog": "essays",
@@ -110,7 +109,7 @@ export function getCategoryDescription(slug: string): string {
 
 export function isExamCategory(category: string): boolean {
   const slug = getCategorySlug(category);
-  return ["see", "ble", "class-7", "class-8", "class-9", "class-10", "class-11", "class-12"].includes(slug);
+  return ["class-7", "class-8", "class-9", "class-10", "class-11", "class-12"].includes(slug);
 }
 
 export function isPoemCategory(category: string): boolean {
@@ -130,8 +129,6 @@ export function isNepaliLanguageCategory(category: string): boolean {
     "poems",
     "shayari",
     "stories",
-    "see",
-    "ble",
     "class-7",
     "class-8",
     "class-9",

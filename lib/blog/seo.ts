@@ -31,7 +31,7 @@ export function generatePostMetadata(post: Post): Metadata {
       description,
       url,
       siteName: SITE_NAME,
-      locale: "en_US",
+      locale: post.language === "ne" ? "ne_NP" : "en_US",
       type: "article",
       publishedTime: post.published,
       modifiedTime: post.updated,

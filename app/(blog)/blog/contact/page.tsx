@@ -53,7 +53,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <h3 className="font-semibold text-[var(--blog-text)]">Email</h3>
-                <p className="text-[var(--blog-text-secondary)]">subeshyadav3@gmail.com</p>
+                <p className="text-[var(--blog-text-secondary)]">subeshgaming@gmail.com</p>
                 <p className="text-[var(--blog-text-secondary)] text-sm">We typically respond within 24-48 hours.</p>
               </div>
             </div>

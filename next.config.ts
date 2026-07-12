@@ -14,7 +14,8 @@ const cspHeader = `
   style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
   img-src 'self' blob: data: https:;
   font-src 'self' data: https://cdn.jsdelivr.net;
-  frame-src https://www.youtube-nocookie.com https://upload-widget.cloudinary.com https://widget.cloudinary.com;
+  frame-src 'self' https://www.youtube-nocookie.com https://upload-widget.cloudinary.com https://widget.cloudinary.com https://res.cloudinary.com;
+  object-src 'self' https://res.cloudinary.com;
   connect-src 'self' https://api.cloudinary.com;
   worker-src 'self' blob:;
   media-src 'self' https:;

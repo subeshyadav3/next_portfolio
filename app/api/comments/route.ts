@@ -92,9 +92,13 @@ export async function POST(request: NextRequest) {
       authorEmail: authorEmail ?? null,
       content,
       parentId: parentId ?? null,
-      status: CommentStatus.PENDING,
+      status: CommentStatus.APPROVED,
     },
   });
+
+  // Invalidate admin comments cache
+  const { revalidateTag } = await import("next/cache");
+  revalidateTag("admin:comments");
 
   return NextResponse.json(comment, { status: 201 });
 }

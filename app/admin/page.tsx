@@ -1,15 +1,24 @@
+import { unstable_cache } from "next/cache";
 import { auth } from "@/lib/auth/config";
 import { prisma } from "@/db/prisma";
 
+const getDashboardStats = unstable_cache(
+  async () => {
+    const [postCount, draftCount, categoryCount, tagCount] = await Promise.all([
+      prisma.post.count(),
+      prisma.post.count({ where: { status: "DRAFT" } }),
+      prisma.category.count(),
+      prisma.tag.count(),
+    ]);
+    return { postCount, draftCount, categoryCount, tagCount };
+  },
+  ["admin:dashboard"],
+  { revalidate: 60, tags: ["admin:dashboard"] }
+);
+
 export default async function AdminDashboard() {
   const session = await auth();
-
-  const [postCount, draftCount, categoryCount, tagCount] = await Promise.all([
-    prisma.post.count(),
-    prisma.post.count({ where: { status: "DRAFT" } }),
-    prisma.category.count(),
-    prisma.tag.count(),
-  ]);
+  const { postCount, draftCount, categoryCount, tagCount } = await getDashboardStats();
 
   return (
     <div>

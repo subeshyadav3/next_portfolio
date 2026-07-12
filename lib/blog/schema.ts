@@ -16,7 +16,7 @@ export function generateArticleSchema(
   const types = hasEdu ? ["BlogPosting", "LearningResource"] : ["BlogPosting"];
   return {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": hasEdu ? ["BlogPosting", "LearningResource"] : "BlogPosting",
     headline: post.title,
     description: post.description,
     image: post.image || `${SITE_URL}/blog/opengraph-image`,

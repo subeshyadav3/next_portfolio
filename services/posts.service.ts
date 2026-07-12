@@ -116,7 +116,12 @@ export async function updatePost(id: string, data: UpdatePostInput) {
   }
   if (data.excerpt !== undefined) updateData.excerpt = data.excerpt;
   if (data.language !== undefined) updateData.language = data.language;
-  if (data.status !== undefined) updateData.status = data.status;
+  if (data.status !== undefined) {
+    updateData.status = data.status;
+    if (data.status === "PUBLISHED") {
+      updateData.publishedAt = new Date();
+    }
+  }
   if (data.metaTitle !== undefined) updateData.metaTitle = data.metaTitle;
   if (data.metaDescription !== undefined) updateData.metaDescription = data.metaDescription;
   if (data.focusKeyword !== undefined) updateData.focusKeyword = data.focusKeyword;

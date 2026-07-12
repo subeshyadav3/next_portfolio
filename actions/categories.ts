@@ -1,6 +1,6 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
+import { revalidatePath, revalidateTag } from "next/cache";
 import { auth } from "@/lib/auth/config";
 import { slugifyText } from "@/lib/blog/slugs";
 import { createCategory, updateCategory, deleteCategory } from "@/services/categories.service";
@@ -21,6 +21,8 @@ export async function createCategoryAction(formData: FormData) {
 
   await createCategory({ slug, name, description: description || undefined });
   revalidatePath("/admin/categories");
+  revalidateTag("categories:list");
+  revalidateTag("admin:dashboard");
 }
 
 export async function updateCategoryAction(id: string, formData: FormData) {
@@ -32,10 +34,14 @@ export async function updateCategoryAction(id: string, formData: FormData) {
 
   await updateCategory(id, { slug, name, description: description || undefined });
   revalidatePath("/admin/categories");
+  revalidateTag("categories:list");
+  revalidateTag("admin:dashboard");
 }
 
 export async function deleteCategoryAction(id: string) {
   await requireAdmin();
   await deleteCategory(id);
   revalidatePath("/admin/categories");
+  revalidateTag("categories:list");
+  revalidateTag("admin:dashboard");
 }

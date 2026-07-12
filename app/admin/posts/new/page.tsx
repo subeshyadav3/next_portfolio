@@ -1,12 +1,31 @@
+import { unstable_cache } from "next/cache";
 import { prisma } from "@/db/prisma";
 import { createPostAction } from "@/actions/posts";
 import { PostEditor } from "@/components/admin/PostEditor";
 
+const getCachedCategories = unstable_cache(
+  () => prisma.category.findMany({ orderBy: { displayOrder: "asc" } }),
+  ["admin:categories"],
+  { revalidate: 3600, tags: ["categories:list"] }
+);
+
+const getCachedAuthors = unstable_cache(
+  () => prisma.author.findMany({ orderBy: { name: "asc" } }),
+  ["admin:authors"],
+  { revalidate: 3600, tags: ["authors:list"] }
+);
+
+const getCachedTags = unstable_cache(
+  () => prisma.tag.findMany({ orderBy: { name: "asc" } }),
+  ["admin:tags"],
+  { revalidate: 3600, tags: ["tags:list"] }
+);
+
 export default async function NewPostPage() {
   const [categories, authors, tags] = await Promise.all([
-    prisma.category.findMany({ orderBy: { displayOrder: "asc" } }),
-    prisma.author.findMany({ orderBy: { name: "asc" } }),
-    prisma.tag.findMany({ orderBy: { name: "asc" } }),
+    getCachedCategories(),
+    getCachedAuthors(),
+    getCachedTags(),
   ]);
 
   return (

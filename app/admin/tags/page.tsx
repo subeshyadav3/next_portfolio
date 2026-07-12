@@ -1,9 +1,16 @@
+import { unstable_cache } from "next/cache";
 import { getTags } from "@/services/tags.service";
 import { createTagAction, deleteTagAction } from "@/actions/tags";
 import { DeleteButton } from "@/components/admin/DeleteButton";
 
+const getCachedTags = unstable_cache(
+  () => getTags({ limit: 200 }),
+  ["admin:tags"],
+  { revalidate: 30, tags: ["admin:tags", "tags:list"] }
+);
+
 export default async function AdminTagsPage() {
-  const { tags, total } = await getTags({ limit: 200 });
+  const { tags, total } = await getCachedTags();
 
   return (
     <div className="space-y-6">

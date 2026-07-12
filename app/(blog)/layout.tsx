@@ -24,8 +24,8 @@ const BLOG_NAV: NavItem[] = [
     label: "Exam Notes",
     color: getCategoryAccent("see"),
     children: [
-      { label: "SEE", href: "/blog/category/see" },
-      { label: "BLE", href: "/blog/category/ble" },
+      { label: "SEE", href: "/blog/category/class-10" },
+      { label: "BLE", href: "/blog/category/class-8" },
       { label: "Class 7", href: "/blog/category/class-7" },
       { label: "Class 8", href: "/blog/category/class-8" },
       { label: "Class 9", href: "/blog/category/class-9" },

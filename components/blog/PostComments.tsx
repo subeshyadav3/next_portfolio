@@ -48,6 +48,19 @@ export function PostComments({
         throw new Error(data.error ?? "Failed to submit comment");
       }
 
+      const newComment = await res.json();
+      if (parentId) {
+        setComments((prev) =>
+          prev.map((c) =>
+            c.id === parentId
+              ? { ...c, replies: [...c.replies, { ...newComment, replies: [] }] }
+              : c
+          )
+        );
+      } else {
+        setComments((prev) => [{ ...newComment, replies: [] }, ...prev]);
+      }
+
       setContent("");
       setAuthorName("");
       setAuthorEmail("");
@@ -69,7 +82,7 @@ export function PostComments({
 
       {submitted && (
         <div className="mb-4 rounded-lg bg-green-100 px-4 py-3 text-sm text-green-800 dark:bg-green-900 dark:text-green-200">
-          Comment submitted! It will appear after approval.
+          Comment posted!
         </div>
       )}
 

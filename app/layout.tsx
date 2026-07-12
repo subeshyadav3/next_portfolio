@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/providers/ThemeProvider";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/lib/site-config";
 import { generateOrganizationSchema, generatePersonSchema } from "@/lib/blog/schema";
 import { Metadata } from "next";
+import { CookieConsent } from "@/components/blog/CookieConsent";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,6 +34,9 @@ export const metadata: Metadata = {
     languages: {
       "en": SITE_URL,
       "ne": SITE_URL,
+    },
+    types: {
+      "application/rss+xml": `${SITE_URL}/blog/rss.xml`,
     },
   },
   openGraph: {
@@ -77,6 +81,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
         <ThemeProvider>{children}</ThemeProvider>
+        <CookieConsent />
       </body>
     </html>
   );

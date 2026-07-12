@@ -1,11 +1,24 @@
+import { unstable_cache } from "next/cache";
 import { getMedia } from "@/services/media.service";
 import { MediaUploader } from "@/components/admin/MediaUploader";
 import { MediaCard } from "@/components/admin/MediaCard";
 import { prisma } from "@/db/prisma";
 
+const getCachedMedia = unstable_cache(
+  () => getMedia({ limit: 50 }),
+  ["admin:media"],
+  { revalidate: 30, tags: ["admin:media"] }
+);
+
+const getCachedMediaCount = unstable_cache(
+  () => prisma.media.count(),
+  ["admin:media:count"],
+  { revalidate: 30, tags: ["admin:media"] }
+);
+
 export default async function AdminMediaPage() {
-  const { media } = await getMedia({ limit: 50 });
-  const mediaCount = await prisma.media.count();
+  const { media } = await getCachedMedia();
+  const mediaCount = await getCachedMediaCount();
 
   return (
     <div>

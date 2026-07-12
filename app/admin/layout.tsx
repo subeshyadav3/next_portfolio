@@ -48,6 +48,12 @@ export default async function AdminLayout({ children }: { children: ReactNode })
               >
                 Media
               </Link>
+              <Link
+                href="/admin/comments"
+                className="text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+              >
+                Comments
+              </Link>
             </nav>
           </div>
 

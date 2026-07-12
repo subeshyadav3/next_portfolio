@@ -81,8 +81,13 @@ export async function createPostAction(formData: FormData) {
   await createPost({ ...parsed, userId: user.id });
   revalidatePath("/admin/posts");
   revalidatePath("/blog");
-  revalidateTag("posts:db");
-  revalidateTag("posts:mdx");
+  revalidateTag("posts:list");
+  revalidateTag("posts:featured");
+  revalidateTag("posts:popular");
+  revalidateTag("posts:recent");
+  revalidateTag("posts:picks");
+  revalidateTag("posts:latest");
+  revalidateTag("admin:dashboard");
   redirect("/admin/posts?created=1");
 }
 
@@ -100,12 +105,17 @@ export async function updatePostAction(id: string, formData: FormData) {
 
   const parsed = updatePostSchema.parse(cleaned);
 
-  const post = await getPostById(id);
+  await getPostById(id);
   await updatePost(id, parsed);
   revalidatePath("/admin/posts");
   revalidatePath("/blog");
-  revalidateTag("posts:db");
-  revalidateTag("posts:mdx");
+  revalidateTag("posts:list");
+  revalidateTag("posts:featured");
+  revalidateTag("posts:popular");
+  revalidateTag("posts:recent");
+  revalidateTag("posts:picks");
+  revalidateTag("posts:latest");
+  revalidateTag("admin:dashboard");
   redirect("/admin/posts?updated=1");
 }
 
@@ -113,14 +123,24 @@ export async function deletePostAction(id: string) {
   await requireAuth();
   await deletePostService(id);
   revalidatePath("/admin/posts");
-  revalidateTag("posts:db");
-  revalidateTag("posts:mdx");
+  revalidateTag("posts:list");
+  revalidateTag("posts:featured");
+  revalidateTag("posts:popular");
+  revalidateTag("posts:recent");
+  revalidateTag("posts:picks");
+  revalidateTag("posts:latest");
+  revalidateTag("admin:dashboard");
 }
 
 export async function restorePostAction(id: string) {
   await requireAuth();
   await restorePostService(id);
   revalidatePath("/admin/posts");
-  revalidateTag("posts:db");
-  revalidateTag("posts:mdx");
+  revalidateTag("posts:list");
+  revalidateTag("posts:featured");
+  revalidateTag("posts:popular");
+  revalidateTag("posts:recent");
+  revalidateTag("posts:picks");
+  revalidateTag("posts:latest");
+  revalidateTag("admin:dashboard");
 }

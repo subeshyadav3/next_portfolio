@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useRef } from "react";
+import { useFormStatus } from "react-dom";
 import type { Category, Author, Tag, Media } from "@prisma/client";
 import { CloudinaryUploadWidget } from "@/components/admin/CloudinaryUploadWidget";
 import { saveMediaAction } from "@/actions/media";
@@ -54,6 +55,37 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
   );
   const [coverUploading, setCoverUploading] = useState(false);
   const [coverUrlInput, setCoverUrlInput] = useState("");
+  const [classLevel, setClassLevel] = useState(post?.classLevel ?? "");
+  const [examType, setExamType] = useState(post?.examType ?? "");
+  const [error, setError] = useState<string | null>(null);
+
+  const CLASS_EXAM_MAP: Record<string, string> = {
+    "class-10": "SEE",
+    "class-8": "BLE",
+    "class-12": "NEB",
+  };
+  const EXAM_CLASS_MAP: Record<string, string> = {
+    SEE: "class-10",
+    BLE: "class-8",
+    NEB: "class-12",
+  };
+
+  const handleClassLevelChange = (value: string) => {
+    setClassLevel(value);
+    if (!examType || EXAM_CLASS_MAP[examType] === value) {
+      const autoExam = CLASS_EXAM_MAP[value];
+      if (autoExam) setExamType(autoExam);
+    }
+  };
+
+  const handleExamTypeChange = (value: string) => {
+    setExamType(value);
+    if (!classLevel || CLASS_EXAM_MAP[classLevel] === value) {
+      const autoClass = EXAM_CLASS_MAP[value];
+      if (autoClass) setClassLevel(autoClass);
+    }
+  };
+  const formRef = useRef<HTMLFormElement>(null);
 
   const generateSlug = useCallback(
     (t: string) =>
@@ -71,8 +103,22 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
     }
   };
 
+  async function handleAction(formData: FormData) {
+    setError(null);
+    try {
+      await action(formData);
+    } catch (e: unknown) {
+      setError(e instanceof Error ? e.message : "Failed to save post");
+    }
+  }
+
   return (
-    <form action={action} className="space-y-8">
+    <form ref={formRef} action={handleAction} className="space-y-8">
+      {error && (
+        <div className="rounded-lg border border-red-200 bg-red-50 p-4 text-sm text-red-800 dark:border-red-800 dark:bg-red-950 dark:text-red-200">
+          {error}
+        </div>
+      )}
       {/* Hidden fields */}
       {post?.id && <input type="hidden" name="id" value={post.id} />}
 
@@ -305,13 +351,21 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
         <div className="grid gap-4 sm:grid-cols-3">
           <div>
             <Label htmlFor="classLevel">Class Level</Label>
-            <input
+            <select
               id="classLevel"
               name="classLevel"
-              defaultValue={post?.classLevel ?? ""}
+              value={classLevel}
+              onChange={(e) => handleClassLevelChange(e.target.value)}
               className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
-              placeholder="e.g. class-10"
-            />
+            >
+              <option value="">—</option>
+              <option value="class-7">Class 7</option>
+              <option value="class-8">Class 8</option>
+              <option value="class-9">Class 9</option>
+              <option value="class-10">Class 10</option>
+              <option value="class-11">Class 11</option>
+              <option value="class-12">Class 12</option>
+            </select>
           </div>
           <div>
             <Label htmlFor="subject">Subject</Label>
@@ -325,13 +379,17 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
           </div>
           <div>
             <Label htmlFor="board">Board</Label>
-            <input
+            <select
               id="board"
               name="board"
               defaultValue={post?.board ?? ""}
               className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
-              placeholder="e.g. NEB, SEE"
-            />
+            >
+              <option value="">—</option>
+              <option value="NEB">NEB</option>
+              <option value="CDC">CDC</option>
+              <option value="CTEVT">CTEVT</option>
+            </select>
           </div>
           <div>
             <Label htmlFor="difficulty">Difficulty</Label>
@@ -352,7 +410,8 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
             <select
               id="examType"
               name="examType"
-              defaultValue={post?.examType ?? ""}
+              value={examType}
+              onChange={(e) => handleExamTypeChange(e.target.value)}
               className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
             >
               <option value="">—</option>
@@ -439,14 +498,32 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
 
       {/* Submit */}
       <div className="flex items-center justify-end gap-3 border-t border-gray-200 pt-6 dark:border-gray-800">
-        <button
-          type="submit"
-          className="rounded-lg bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-blue-700"
-        >
-          {post ? "Update Post" : "Create Post"}
-        </button>
+        <SubmitButton isUpdate={!!post} />
       </div>
     </form>
+  );
+}
+
+function SubmitButton({ isUpdate }: { isUpdate: boolean }) {
+  const { pending } = useFormStatus();
+  return (
+    <button
+      type="submit"
+      disabled={pending}
+      className="rounded-lg bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50"
+    >
+      {pending ? (
+        <span className="flex items-center gap-2">
+          <svg className="h-4 w-4 animate-spin" viewBox="0 0 24 24" fill="none">
+            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+          </svg>
+          {isUpdate ? "Updating..." : "Creating..."}
+        </span>
+      ) : (
+        isUpdate ? "Update Post" : "Create Post"
+      )}
+    </button>
   );
 }
 

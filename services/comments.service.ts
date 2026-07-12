@@ -30,7 +30,7 @@ export async function createComment(data: {
       authorEmail: data.authorEmail ?? null,
       content: data.content,
       parentId: data.parentId ?? null,
-      status: "PENDING",
+      status: "APPROVED",
     },
   });
 }

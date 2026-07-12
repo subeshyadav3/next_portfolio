@@ -63,7 +63,14 @@ export default async function BlogPostPage({ params }: PageProps) {
     notFound();
   }
 
-  const content = await compilePostMdx(post.content, post.category);
+  let content: React.ReactNode;
+  try {
+    content = await compilePostMdx(post.content, post.category);
+  } catch (e) {
+    console.error("MDX compilation failed for slug:", slug, e);
+    content = <pre className="whitespace-pre-wrap text-red-500">Failed to render content. {(e as Error).message}</pre>;
+  }
+
   const toc = extractTableOfContents(post.content);
   const related = await getRelatedPosts(post, 3);
   const { prev, next } = await getPrevNextPosts(post);

@@ -1,10 +1,17 @@
+import { unstable_cache } from "next/cache";
 import { getCategories } from "@/services/categories.service";
 import { createCategoryAction, deleteCategoryAction } from "@/actions/categories";
 import { DeleteButton } from "@/components/admin/DeleteButton";
 import { slugifyText } from "@/lib/blog/slugs";
 
+const getCachedCategories = unstable_cache(
+  () => getCategories({ limit: 200 }),
+  ["admin:categories"],
+  { revalidate: 30, tags: ["admin:categories", "categories:list"] }
+);
+
 export default async function AdminCategoriesPage() {
-  const { categories, total } = await getCategories({ limit: 200 });
+  const { categories, total } = await getCachedCategories();
 
   return (
     <div className="space-y-6">

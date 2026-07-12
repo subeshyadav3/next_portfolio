@@ -32,7 +32,7 @@ export const createPostSchema = z.object({
   ogImageId: optionalString(),
   classLevel: optionalString(),
   subject: optionalString(),
-  board: optionalString(),
+  board: z.preprocess((v) => (v === "" || v === undefined || v === null ? undefined : v), z.enum(["NEB", "CDC", "CTEVT"]).optional()),
   difficulty: z.preprocess((v) => (v === "" || v === undefined || v === null ? undefined : v), z.enum(["EASY", "MEDIUM", "HARD"]).optional()),
   examType: z.preprocess((v) => (v === "" || v === undefined || v === null ? undefined : v), z.enum(["SEE", "BLE", "NEB", "IOE", "CEEC", "OTHER"]).optional()),
 });

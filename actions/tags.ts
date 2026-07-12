@@ -1,6 +1,6 @@
 "use server";
 
-import { revalidatePath } from "next/cache";
+import { revalidatePath, revalidateTag } from "next/cache";
 import { auth } from "@/lib/auth/config";
 import { slugifyText } from "@/lib/blog/slugs";
 import { createTag, updateTag, deleteTag } from "@/services/tags.service";
@@ -20,6 +20,8 @@ export async function createTagAction(formData: FormData) {
 
   await createTag({ slug, name });
   revalidatePath("/admin/tags");
+  revalidateTag("tags:list");
+  revalidateTag("admin:dashboard");
 }
 
 export async function updateTagAction(id: string, formData: FormData) {
@@ -30,10 +32,14 @@ export async function updateTagAction(id: string, formData: FormData) {
 
   await updateTag(id, { slug, name });
   revalidatePath("/admin/tags");
+  revalidateTag("tags:list");
+  revalidateTag("admin:dashboard");
 }
 
 export async function deleteTagAction(id: string) {
   await requireAdmin();
   await deleteTag(id);
   revalidatePath("/admin/tags");
+  revalidateTag("tags:list");
+  revalidateTag("admin:dashboard");
 }
