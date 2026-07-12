@@ -80,6 +80,7 @@ export function generateOrganizationSchema() {
     sameAs: [
       "https://github.com/subeshyadav3",
       "https://www.linkedin.com/in/subeshyadav",
+      "https://facebook.com/subesh.yadav.54772",
     ],
   };
 }
@@ -91,9 +92,64 @@ export function generatePersonSchema() {
     name: "Subesh Yadav",
     url: SITE_URL,
     jobTitle: "Full Stack Developer",
+    description:
+      "Full-stack developer building web applications with Next.js, React, Node.js, PostgreSQL, and Prisma, and writing essays, poems, and exam notes.",
+    knowsAbout: [
+      "Full Stack Development",
+      "Next.js",
+      "React",
+      "Node.js",
+      "TypeScript",
+      "PostgreSQL",
+      "Prisma",
+      "MongoDB",
+      "Web Development",
+      "Software Engineering",
+    ],
+    alumniOf: {
+      "@type": "CollegeOrUniversity",
+      name: "Pulchowk Campus, Institute of Engineering, Tribhuvan University",
+      sameAs: "https://en.wikipedia.org/wiki/Pulchowk_Campus",
+    },
     sameAs: [
       "https://github.com/subeshyadav3",
       "https://www.linkedin.com/in/subeshyadav",
+      "https://facebook.com/subesh.yadav.54772",
+    ],
+  };
+}
+
+export function generateLocalBusinessSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    name: SITE_NAME,
+    url: SITE_URL,
+    image: `${SITE_URL}/logo.svg`,
+    description:
+      "Independent full-stack web development consulting and technical writing by Subesh Yadav — available worldwide.",
+    priceRange: "$$",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Lalitpur",
+      addressRegion: "Bagmati Province",
+      addressCountry: "NP",
+    },
+    areaServed: [
+      { "@type": "Place", name: "Worldwide" },
+    ],
+    knowsAbout: [
+      "Full Stack Development",
+      "Next.js",
+      "React",
+      "Node.js",
+      "PostgreSQL",
+      "Prisma",
+    ],
+    sameAs: [
+      "https://github.com/subeshyadav3",
+      "https://www.linkedin.com/in/subeshyadav",
+      "https://facebook.com/subesh.yadav.54772",
     ],
   };
 }

@@ -102,6 +102,9 @@ export default function ProjectCard({
           <img
             src={Array.isArray(photo) ? photo[0] : photo}
             alt={title}
+            width={80}
+            height={80}
+            loading="lazy"
             className="w-20 h-20 object-cover rounded-lg"
           />
         </div>

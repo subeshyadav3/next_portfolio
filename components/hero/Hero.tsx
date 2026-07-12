@@ -18,7 +18,7 @@ const terminalLines = [
   { cmd: "status", out: "Building cool stuff ✦", delay: 2300, cursor: true },
 ];
 
-// Animated particles background
+// Animated particles background — deferred until idle and paused off-screen
 function ParticleBackground() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -28,7 +28,11 @@ function ParticleBackground() {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
+    const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduced) return;
+
     let animationId: number;
+    let paused = false;
     const particles: { x: number; y: number; vx: number; vy: number; radius: number }[] = [];
 
     const resize = () => {
@@ -37,6 +41,13 @@ function ParticleBackground() {
     };
     resize();
     window.addEventListener("resize", resize);
+
+    // Pause when hero is off-screen
+    const observer = new IntersectionObserver(
+      ([entry]) => { paused = !entry.isIntersecting; },
+      { threshold: 0 }
+    );
+    observer.observe(canvas.parentElement as Element);
 
     // Create particles
     const particleCount = Math.min(50, Math.floor(window.innerWidth / 30));
@@ -50,31 +61,29 @@ function ParticleBackground() {
       });
     }
 
-
     const draw = () => {
+      if (paused) {
+        animationId = requestAnimationFrame(draw);
+        return;
+      }
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-      // Draw particles
       particles.forEach((p) => {
         p.x += p.vx;
         p.y += p.vy;
-
         if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
         if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
-
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
         ctx.fillStyle = "rgba(61, 214, 140, 0.3)";
         ctx.fill();
       });
 
-      // Draw connections
       particles.forEach((p1, i) => {
         particles.slice(i + 1).forEach((p2) => {
           const dx = p1.x - p2.x;
           const dy = p1.y - p2.y;
           const dist = Math.sqrt(dx * dx + dy * dy);
-
           if (dist < 150) {
             ctx.beginPath();
             ctx.moveTo(p1.x, p1.y);
@@ -89,11 +98,20 @@ function ParticleBackground() {
       animationId = requestAnimationFrame(draw);
     };
 
-    draw();
+    // Defer particle init until browser is idle
+    const start = () => {
+      draw();
+    };
+    if ("requestIdleCallback" in window) {
+      (window as Window).requestIdleCallback(start, { timeout: 2000 });
+    } else {
+      setTimeout(start, 300);
+    }
 
     return () => {
       cancelAnimationFrame(animationId);
       window.removeEventListener("resize", resize);
+      observer.disconnect();
     };
   }, []);
 

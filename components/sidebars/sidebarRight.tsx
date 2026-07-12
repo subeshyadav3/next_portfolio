@@ -34,12 +34,14 @@ const SidebarLeft: React.FC = () => {
   return (
     <>
       <div className="fixed top-0 left-0 hidden md:flex h-screen w-[50px] flex-col items-center justify-center">
-        <a
+        <button
+          type="button"
           onClick={handleCopyEmail}
-          className="rotate-90 cursor-copy mono text-xs tracking-widest text-muted hover:text-green transition-colors gmail-btn whitespace-nowrap"
+          className="rotate-90 cursor-copy mono text-xs tracking-widest text-muted hover:text-green transition-colors gmail-btn whitespace-nowrap bg-transparent border-none p-0"
+          aria-label="Copy email to clipboard"
         >
           subeshgaming@gmail.com
-        </a>
+        </button>
         <div className="mt-6 h-[80px] w-px" style={{ backgroundColor: "var(--border)" }} />
       </div>
 
