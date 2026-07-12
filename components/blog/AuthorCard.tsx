@@ -2,11 +2,11 @@ import Link from "next/link";
 
 interface AuthorCardProps {
   name: string;
-  url: string;
+  authorSlug: string;
   bio?: string;
 }
 
-export function AuthorCard({ name, url, bio }: AuthorCardProps) {
+export function AuthorCard({ name, authorSlug, bio }: AuthorCardProps) {
   return (
     <div className="rounded-xl border border-[var(--blog-border)] bg-[var(--blog-surface)] p-6">
       <div className="flex items-start gap-4">
@@ -16,7 +16,7 @@ export function AuthorCard({ name, url, bio }: AuthorCardProps) {
         <div>
           <h3 className="font-semibold text-[var(--blog-text)]">
             <Link
-              href="/blog/author"
+              href={`/blog/author/${authorSlug}`}
               className="hover:text-[var(--blog-accent)] transition-colors"
             >
               {name}
@@ -27,14 +27,12 @@ export function AuthorCard({ name, url, bio }: AuthorCardProps) {
               {bio}
             </p>
           )}
-          <a
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href={`/blog/author/${authorSlug}`}
             className="mt-2 inline-block text-sm text-[var(--blog-accent)] hover:underline"
           >
             View profile →
-          </a>
+          </Link>
         </div>
       </div>
     </div>
