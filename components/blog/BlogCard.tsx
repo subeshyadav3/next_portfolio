@@ -55,6 +55,13 @@ export function BlogCard({ post }: BlogCardProps) {
         </p>
 
         <div className="mt-4 flex items-center gap-3 text-xs text-[var(--blog-text-muted)]">
+          <Link
+            href={`/blog/author/${post.authorSlug}`}
+            className="hover:text-[var(--blog-accent)] transition-colors"
+          >
+            {post.author}
+          </Link>
+          <span>·</span>
           <time dateTime={post.published}>{formatDate(post.published)}</time>
           <span>·</span>
           <span>{post.readingTime} min read</span>

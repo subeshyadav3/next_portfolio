@@ -18,7 +18,7 @@ export const createPostSchema = z.object({
   excerpt: optionalString(),
   content: z.string().min(1, "Content is required"),
   categoryId: optionalString(),
-  authorId: z.string().min(1, "Author is required"),
+  authorId: z.string().optional(),
   language: z.enum(["en", "ne"]).default("en"),
   status: z.enum(["DRAFT", "PUBLISHED", "SCHEDULED", "ARCHIVED"]).default("DRAFT"),
   featured: booleanish().default(false),

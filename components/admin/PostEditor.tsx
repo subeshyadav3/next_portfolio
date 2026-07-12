@@ -174,44 +174,27 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
         />
       </Section>
 
-      {/* Category & Author */}
+      {/* Category */}
       <Section title="Organization">
-        <div className="grid gap-4 sm:grid-cols-2">
-          <div>
-            <Label htmlFor="categoryId">Category</Label>
-            <select
-              id="categoryId"
-              name="categoryId"
-              defaultValue={post?.categoryId ?? ""}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
-            >
-              <option value="">— No category —</option>
-              {categories.map((cat) => (
-                <option key={cat.id} value={cat.id}>
-                  {cat.name}
-                </option>
-              ))}
-            </select>
-          </div>
-
-          <div>
-            <Label htmlFor="authorId">Author</Label>
-            <select
-              id="authorId"
-              name="authorId"
-              defaultValue={post?.authorId}
-              required
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
-            >
-              <option value="">Select author</option>
-              {authors.map((author) => (
-                <option key={author.id} value={author.id}>
-                  {author.name}
-                </option>
-              ))}
-            </select>
-          </div>
+        <div>
+          <Label htmlFor="categoryId">Category</Label>
+          <select
+            id="categoryId"
+            name="categoryId"
+            defaultValue={post?.categoryId ?? ""}
+            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+          >
+            <option value="">— No category —</option>
+            {categories.map((cat) => (
+              <option key={cat.id} value={cat.id}>
+                {cat.name}
+              </option>
+            ))}
+          </select>
         </div>
+        <p className="text-xs text-gray-500 mt-1">
+          Author is auto-assigned based on your account.
+        </p>
       </Section>
 
       {/* Cover Image */}

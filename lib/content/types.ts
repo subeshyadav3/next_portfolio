@@ -22,6 +22,7 @@ export interface NormalizedPost {
   category: string;
   tags: string[];
   author: string;
+  authorSlug: string;
   authorUrl: string;
   image: string;
   readingTime: number;

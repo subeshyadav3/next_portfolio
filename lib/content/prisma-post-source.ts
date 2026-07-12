@@ -38,6 +38,7 @@ function toNormalized(p: DbPost): NormalizedPost {
     category: p.category?.slug ?? "uncategorized",
     tags: p.tags.map((pt) => pt.tag.name),
     author: p.author.name,
+    authorSlug: p.author.slug,
     authorUrl: p.author.websiteUrl ?? "https://subeshyadav.com.np",
     image: p.coverMedia?.secureUrl ?? "",
     readingTime: p.readingTimeMin,

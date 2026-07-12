@@ -1,7 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import { Mail, MapPin, Phone, Send, AlertCircle, CheckCircle } from "lucide-react";
+import { Mail, MapPin, Phone, Send, AlertCircle, CheckCircle, ChevronDown } from "lucide-react";
+
+interface FAQItem {
+  question: string;
+  answer: string;
+}
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -12,6 +17,34 @@ export default function ContactPage() {
   });
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const [errorMessage, setErrorMessage] = useState("");
+  const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
+
+  const faqs: FAQItem[] = [
+    {
+      question: "Can I request a specific essay or topic?",
+      answer: "Yes! We welcome content requests. Use the form above and select 'Content Request / Suggestion' as the subject.",
+    },
+    {
+      question: "I found an error in one of your posts. How do I report it?",
+      answer: "Please use the contact form with 'Report an Error / Correction' as the subject. Include the post URL and the specific correction.",
+    },
+    {
+      question: "Are your materials aligned with the current CDC curriculum?",
+      answer: "Yes, all our study materials, model questions, and notes follow the latest Curriculum Development Centre (CDC) Nepal guidelines for SEE, BLE, and NEB.",
+    },
+    {
+      question: "Can I use your content for my school/college assignments?",
+      answer: "Our content is for educational reference. You may use it for personal study, but please cite the source if you reference it in assignments.",
+    },
+    {
+      question: "Do you offer tutoring or paid services?",
+      answer: "Currently, we only provide free educational content through this website. We do not offer paid tutoring services.",
+    },
+  ];
+
+  const toggleFaq = (index: number) => {
+    setOpenFaqIndex(openFaqIndex === index ? null : index);
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -35,115 +68,132 @@ export default function ContactPage() {
   };
 
   return (
-    <article className="prose prose-lg max-w-3xl mx-auto px-4 py-12 blog-section">
-      <header className="mb-12 pb-8 border-b border-[var(--blog-border)]">
-        <h1 className="text-3xl font-bold text-[var(--blog-text)] mb-4">Contact Us</h1>
-        <p className="text-[var(--blog-text-secondary)] leading-relaxed">
+    <article className="max-w-5xl mx-auto px-4 py-12 blog-section">
+      {/* Header */}
+      <header className="mb-12 pb-8 border-b border-[var(--blog-border)] max-w-3xl">
+        <h1 className="text-4xl font-bold text-[var(--blog-text)] mb-4">Contact Us</h1>
+        <p className="text-[var(--blog-text-secondary)] text-lg leading-relaxed">
           Have questions, suggestions, or feedback? We'd love to hear from you. Fill out the form below or reach out via email.
         </p>
       </header>
 
-      <div className="grid md:grid-cols-2 gap-12 mb-12">
-        <div>
-          <h2 className="text-2xl font-semibold text-[var(--blog-text)] mb-6">Get in Touch</h2>
-          <div className="space-y-6">
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-[var(--blog-accent)]/10 flex items-center justify-center text-[var(--blog-accent)] flex-shrink-0">
-                <Mail className="w-6 h-6" />
+      {/* Main Grid split */}
+      <div className="grid md:grid-cols-5 gap-12 mb-16 items-start">
+        {/* Contact info cards */}
+        <div className="md:col-span-2 space-y-6">
+          <h2 className="text-2xl font-semibold text-[var(--blog-text)] mb-2">Get in Touch</h2>
+
+          <div className="space-y-4">
+            <div className="flex items-start gap-4 p-4 rounded-xl border border-[var(--blog-border)] bg-[var(--blog-surface)]/50">
+              <div className="w-10 h-10 rounded-lg bg-[var(--blog-accent)]/10 flex items-center justify-center text-[var(--blog-accent)] flex-shrink-0">
+                <Mail className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-semibold text-[var(--blog-text)]">Email</h3>
-                <p className="text-[var(--blog-text-secondary)]">subeshgaming@gmail.com</p>
-                <p className="text-[var(--blog-text-secondary)] text-sm">We typically respond within 24-48 hours.</p>
+                <h3 className="font-medium text-[var(--blog-text)]">Email</h3>
+                <p className="text-[var(--blog-text-secondary)] text-sm break-all">subeshgaming@gmail.com</p>
+                <p className="text-[var(--blog-text-muted)] text-xs mt-1">Response within 24-48 hours</p>
               </div>
             </div>
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-[var(--blog-accent)]/10 flex items-center justify-center text-[var(--blog-accent)] flex-shrink-0">
-                <MapPin className="w-6 h-6" />
+
+            <div className="flex items-start gap-4 p-4 rounded-xl border border-[var(--blog-border)] bg-[var(--blog-surface)]/50">
+              <div className="w-10 h-10 rounded-lg bg-[var(--blog-accent)]/10 flex items-center justify-center text-[var(--blog-accent)] flex-shrink-0">
+                <MapPin className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-semibold text-[var(--blog-text)]">Location</h3>
-                <p className="text-[var(--blog-text-secondary)]">Hetauda, Makwanpur, Nepal</p>
+                <h3 className="font-medium text-[var(--blog-text)]">Location</h3>
+                <p className="text-[var(--blog-text-secondary)] text-sm">Lalitpur, Bagmati Province, Nepal</p>
               </div>
             </div>
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-full bg-[var(--blog-accent)]/10 flex items-center justify-center text-[var(--blog-accent)] flex-shrink-0">
-                <Phone className="w-6 h-6" />
+
+            <div className="flex items-start gap-4 p-4 rounded-xl border border-[var(--blog-border)] bg-[var(--blog-surface)]/50">
+              <div className="w-10 h-10 rounded-lg bg-[var(--blog-accent)]/10 flex items-center justify-center text-[var(--blog-accent)] flex-shrink-0">
+                <Phone className="w-5 h-5" />
               </div>
               <div>
-                <h3 className="font-semibold text-[var(--blog-text)]">Social</h3>
-                <p className="text-[var(--blog-text-secondary)]">
-                  <a href="https://github.com/subeshyadav3" target="_blank" rel="noopener noreferrer" className="text-[var(--blog-accent)] hover:underline">GitHub</a> •
-                  <a href="https://www.linkedin.com/in/subeshyadav" target="_blank" rel="noopener noreferrer" className="text-[var(--blog-accent)] hover:underline ml-2">LinkedIn</a>
+                <h3 className="font-medium text-[var(--blog-text)]">Social Networks</h3>
+                <p className="text-[var(--blog-text-secondary)] text-sm mt-1 flex gap-2">
+                  <a href="https://github.com/subeshyadav3" target="_blank" rel="noopener noreferrer" className="text-[var(--blog-accent)] hover:underline">GitHub</a>
+                  <span className="text-[var(--blog-border)]">•</span>
+                  <a href="https://www.linkedin.com/in/subeshyadav" target="_blank" rel="noopener noreferrer" className="text-[var(--blog-accent)] hover:underline">LinkedIn</a>
                 </p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="bg-[var(--blog-surface)] border border-[var(--blog-border)] rounded-xl p-6">
+        {/* Contact Form Container */}
+        <div className="md:col-span-3 bg-[var(--blog-surface)] border border-[var(--blog-border)] rounded-2xl p-6 md:p-8 shadow-sm">
           <h2 className="text-2xl font-semibold text-[var(--blog-text)] mb-6">Send a Message</h2>
 
           {status === "success" && (
-            <div className="mb-6 flex items-center gap-3 p-4 rounded-lg bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800">
-              <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0" />
-              <p className="text-green-800 dark:text-green-200">Thank you! Your message has been sent successfully. We'll get back to you soon.</p>
+            <div className="mb-6 flex items-start gap-3 p-4 rounded-xl bg-[var(--blog-surface)] border-l-4 border-l-green-500 border-y border-r border-[var(--blog-border)] shadow-sm">
+              <CheckCircle className="w-5 h-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
+              <div className="space-y-1">
+                <h4 className="text-sm font-bold text-[var(--blog-text)]">Message Sent</h4>
+                <p className="text-sm text-[var(--blog-text-secondary)] leading-relaxed">
+                  Thank you! Your message has been received successfully. We'll get back to you soon.
+                </p>
+              </div>
             </div>
           )}
 
           {status === "error" && (
-            <div className="mb-6 flex items-center gap-3 p-4 rounded-lg bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800">
-              <AlertCircle className="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0" />
-              <p className="text-red-800 dark:text-red-200">{errorMessage}</p>
+            <div className="mb-6 flex items-start gap-3 p-4 rounded-xl bg-[var(--blog-surface)] border-l-4 border-l-red-500 border-y border-r border-[var(--blog-border)] shadow-sm">
+              <AlertCircle className="w-5 h-5 text-red-600 dark:text-red-400 flex-shrink-0 mt-0.5" />
+              <div className="space-y-1">
+                <h4 className="text-sm font-bold text-[var(--blog-text)]">Submission Error</h4>
+                <p className="text-sm text-[var(--blog-text-secondary)] leading-relaxed">
+                  {errorMessage}
+                </p>
+              </div>
             </div>
           )}
 
-          <form onSubmit={handleSubmit} className="space-y-4" noValidate>
-            <div>
-              <label htmlFor="name" className="block text-sm font-medium text-[var(--blog-text)] mb-1">
-                Name <span className="text-red-500">*</span>
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full rounded-lg border border-[var(--blog-border)] bg-[var(--blog-bg)] px-4 py-2.5 text-sm text-[var(--blog-text)] placeholder:text-[var(--blog-text-muted)] focus:border-[var(--blog-accent)] focus:outline-none focus:ring-1 focus:ring-[var(--blog-accent)]"
-                placeholder="Your name"
-                disabled={status === "submitting"}
-              />
+          <form onSubmit={handleSubmit} className="space-y-5" noValidate>
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label htmlFor="name" className="block text-sm font-medium text-[var(--blog-text)] mb-1.5">
+                  Name <span className="text-red-500">*</span>
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  required
+                  value={formData.name}
+                  onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                  className="w-full rounded-lg border border-[var(--blog-border)] bg-[var(--blog-bg)] px-4 py-2.5 text-sm text-[var(--blog-text)] placeholder:text-[var(--blog-text-muted)] focus:border-[var(--blog-accent)] focus:outline-none focus:ring-1 focus:ring-[var(--blog-accent)] transition-colors"
+                  placeholder="Your name"
+                  disabled={status === "submitting"}
+                />
+              </div>
+
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-[var(--blog-text)] mb-1.5">
+                  Email <span className="text-red-500">*</span>
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  required
+                  value={formData.email}
+                  onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                  className="w-full rounded-lg border border-[var(--blog-border)] bg-[var(--blog-bg)] px-4 py-2.5 text-sm text-[var(--blog-text)] placeholder:text-[var(--blog-text-muted)] focus:border-[var(--blog-accent)] focus:outline-none focus:ring-1 focus:ring-[var(--blog-accent)] transition-colors"
+                  placeholder="your@email.com"
+                  disabled={status === "submitting"}
+                />
+              </div>
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-[var(--blog-text)] mb-1">
-                Email <span className="text-red-500">*</span>
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full rounded-lg border border-[var(--blog-border)] bg-[var(--blog-bg)] px-4 py-2.5 text-sm text-[var(--blog-text)] placeholder:text-[var(--blog-text-muted)] focus:border-[var(--blog-accent)] focus:outline-none focus:ring-1 focus:ring-[var(--blog-accent)]"
-                placeholder="your@email.com"
-                disabled={status === "submitting"}
-              />
-            </div>
-
-            <div>
-              <label htmlFor="subject" className="block text-sm font-medium text-[var(--blog-text)] mb-1">
+              <label htmlFor="subject" className="block text-sm font-medium text-[var(--blog-text)] mb-1.5">
                 Subject <span className="text-red-500">*</span>
               </label>
               <select
                 id="subject"
-                name="subject"
                 required
                 value={formData.subject}
                 onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                className="w-full rounded-lg border border-[var(--blog-border)] bg-[var(--blog-bg)] px-4 py-2.5 text-sm text-[var(--blog-text)] focus:border-[var(--blog-accent)] focus:outline-none focus:ring-1 focus:ring-[var(--blog-accent)]"
+                className="w-full rounded-lg border border-[var(--blog-border)] bg-[var(--blog-bg)] px-4 py-2.5 text-sm text-[var(--blog-text)] focus:border-[var(--blog-accent)] focus:outline-none focus:ring-1 focus:ring-[var(--blog-accent)] transition-colors"
                 disabled={status === "submitting"}
               >
                 <option value="">Select a topic</option>
@@ -157,17 +207,16 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-[var(--blog-text)] mb-1">
+              <label htmlFor="message" className="block text-sm font-medium text-[var(--blog-text)] mb-1.5">
                 Message <span className="text-red-500">*</span>
               </label>
               <textarea
                 id="message"
-                name="message"
                 required
                 rows={5}
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="w-full rounded-lg border border-[var(--blog-border)] bg-[var(--blog-bg)] px-4 py-2.5 text-sm text-[var(--blog-text)] placeholder:text-[var(--blog-text-muted)] focus:border-[var(--blog-accent)] focus:outline-none focus:ring-1 focus:ring-[var(--blog-accent)] resize-y"
+                className="w-full rounded-lg border border-[var(--blog-border)] bg-[var(--blog-bg)] px-4 py-2.5 text-sm text-[var(--blog-text)] placeholder:text-[var(--blog-text-muted)] focus:border-[var(--blog-accent)] focus:outline-none focus:ring-1 focus:ring-[var(--blog-accent)] resize-y transition-colors"
                 placeholder="Tell us how we can help..."
                 disabled={status === "submitting"}
               />
@@ -180,12 +229,15 @@ export default function ContactPage() {
             >
               {status === "submitting" ? (
                 <>
-                  <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24"><circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" /><path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" /></svg>
+                  <svg className="animate-spin h-5 w-5 text-white" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                  </svg>
                   Sending...
                 </>
               ) : (
                 <>
-                  <Send className="w-5 h-5" />
+                  <Send className="w-4 h-4" />
                   Send Message
                 </>
               )}
@@ -194,30 +246,46 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <section className="border-t border-[var(--blog-border)] pt-12">
-        <h2 className="text-2xl font-semibold text-[var(--blog-text)] mb-6">Frequently Asked Questions</h2>
-        <dl className="space-y-6">
-          <div>
-            <dt className="font-semibold text-[var(--blog-text)]">Can I request a specific essay or topic?</dt>
-            <dd className="text-[var(--blog-text-secondary)] mt-1">Yes! We welcome content requests. Use the form above and select "Content Request / Suggestion" as the subject.</dd>
-          </div>
-          <div>
-            <dt className="font-semibold text-[var(--blog-text)]">I found an error in one of your posts. How do I report it?</dt>
-            <dd className="text-[var(--blog-text-secondary)] mt-1">Please use the contact form with "Report an Error / Correction" as the subject. Include the post URL and the specific correction.</dd>
-          </div>
-          <div>
-            <dt className="font-semibold text-[var(--blog-text)]">Are your materials aligned with the current CDC curriculum?</dt>
-            <dd className="text-[var(--blog-text-secondary)] mt-1">Yes, all our study materials, model questions, and notes follow the latest Curriculum Development Centre (CDC) Nepal guidelines for SEE, BLE, and NEB.</dd>
-          </div>
-          <div>
-            <dt className="font-semibold text-[var(--blog-text)]">Can I use your content for my school/college assignments?</dt>
-            <dd className="text-[var(--blog-text-secondary)] mt-1">Our content is for educational reference. You may use it for personal study, but please cite the source if you reference it in assignments.</dd>
-          </div>
-          <div>
-            <dt className="font-semibold text-[var(--blog-text)]">Do you offer tutoring or paid services?</dt>
-            <dd className="text-[var(--blog-text-secondary)] mt-1">Currently, we only provide free educational content through this website. We do not offer paid tutoring services.</dd>
-          </div>
-        </dl>
+      {/* Accordion FAQ Section */}
+      <section className="border-t border-[var(--blog-border)] pt-12 max-w-3xl">
+        <h2 className="text-2xl font-bold text-[var(--blog-text)] mb-2">Frequently Asked Questions</h2>
+        <p className="text-[var(--blog-text-secondary)] text-sm mb-6">Quick answers to common questions about our educational content and materials.</p>
+
+        <div className="space-y-3">
+          {faqs.map((faq, index) => {
+            const isOpen = openFaqIndex === index;
+            return (
+              <div
+                key={index}
+                className="border border-[var(--blog-border)] rounded-xl bg-[var(--blog-surface)] overflow-hidden transition-all"
+              >
+                <button
+                  type="button"
+                  onClick={() => toggleFaq(index)}
+                  className="w-full flex items-center justify-between gap-4 px-5 py-4 text-left font-medium text-[var(--blog-text)] hover:bg-[var(--blog-bg)]/50 transition-colors focus:outline-none"
+                  aria-expanded={isOpen}
+                >
+                  <span>{faq.question}</span>
+                  <ChevronDown
+                    className={`w-4 h-4 text-[var(--blog-text-secondary)] transition-transform duration-200 flex-shrink-0 ${isOpen ? "transform rotate-180 text-[var(--blog-accent)]" : ""
+                      }`}
+                  />
+                </button>
+
+                <div
+                  className={`grid transition-all duration-200 ease-in-out ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"
+                    }`}
+                >
+                  <div className="overflow-hidden">
+                    <div className="px-5 pb-4 pt-1 text-sm text-[var(--blog-text-secondary)] leading-relaxed border-t border-[var(--blog-border)]/40 bg-[var(--blog-bg)]/20">
+                      {faq.answer}
+                    </div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
       </section>
     </article>
   );
