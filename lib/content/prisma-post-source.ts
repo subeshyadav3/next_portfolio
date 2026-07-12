@@ -115,7 +115,7 @@ const cachedList = unstable_cache(
     });
     return paginate(posts.map((p) => summarize(toNormalized(p))), opts);
   },
-  ["prisma-post-source:list"],
+  ["prisma-post-source:list-v2"],
   { revalidate: CACHE_TTL, tags: ["posts:list"] }
 );
 
@@ -137,7 +137,7 @@ const cachedGet = unstable_cache(
     }
     return toNormalized(post);
   },
-  ["prisma-post-source:get"],
+  ["prisma-post-source:get-v2"],
   { revalidate: CACHE_TTL, tags: ["posts:list"] }
 );
 
@@ -157,7 +157,7 @@ const cachedHas = unstable_cache(
     if (post.expiresAt && post.expiresAt <= new Date()) return false;
     return true;
   },
-  ["prisma-post-source:has"],
+  ["prisma-post-source:has-v2"],
   { revalidate: CACHE_TTL, tags: ["posts:list"] }
 );
 
@@ -179,7 +179,7 @@ const cachedByCategory = unstable_cache(
     });
     return paginate(posts.map((p) => summarize(toNormalized(p))), opts);
   },
-  ["prisma-post-source:byCategory"],
+  ["prisma-post-source:byCategory-v2"],
   { revalidate: CACHE_TTL, tags: ["posts:list"] }
 );
 
@@ -201,7 +201,7 @@ const cachedByTag = unstable_cache(
     });
     return paginate(posts.map((p) => summarize(toNormalized(p))), opts);
   },
-  ["prisma-post-source:byTag"],
+  ["prisma-post-source:byTag-v2"],
   { revalidate: CACHE_TTL, tags: ["posts:list"] }
 );
 
@@ -223,7 +223,7 @@ const cachedByYear = unstable_cache(
     });
     return paginate(posts.map((p) => summarize(toNormalized(p))), opts);
   },
-  ["prisma-post-source:byYear"],
+  ["prisma-post-source:byYear-v2"],
   { revalidate: CACHE_TTL, tags: ["posts:list"] }
 );
 
@@ -260,7 +260,7 @@ const cachedCategories = unstable_cache(
     }
     return [...canonical.values()];
   },
-  ["prisma-post-source:categories"],
+  ["prisma-post-source:categories-v2"],
   { revalidate: CACHE_TTL, tags: ["categories:list", "posts:list"] }
 );
 
@@ -287,7 +287,7 @@ const cachedTags = unstable_cache(
       count: countMap.get(t.slug) ?? 0,
     }));
   },
-  ["prisma-post-source:tags"],
+  ["prisma-post-source:tags-v2"],
   { revalidate: CACHE_TTL, tags: ["tags:list", "posts:list"] }
 );
 
@@ -307,7 +307,7 @@ const cachedArchiveYears = unstable_cache(
       .map(([year, count]) => ({ year, count }))
       .sort((a, b) => b.year.localeCompare(a.year));
   },
-  ["prisma-post-source:archiveYears"],
+  ["prisma-post-source:archiveYears-v2"],
   { revalidate: CACHE_TTL, tags: ["archive:list", "posts:list"] }
 );
 
@@ -340,7 +340,7 @@ const cachedRelated = unstable_cache(
       ...scored.slice(0, remaining).map((s) => summarize(toNormalized(s.p))),
     ];
   },
-  ["prisma-post-source:related"],
+  ["prisma-post-source:related-v2"],
   { revalidate: CACHE_TTL, tags: ["posts:list"] }
 );
 
@@ -363,7 +363,7 @@ const cachedPrevNext = unstable_cache(
     ]);
     return { prev, next };
   },
-  ["prisma-post-source:prevNext"],
+  ["prisma-post-source:prevNext-v2"],
   { revalidate: CACHE_TTL, tags: ["posts:list"] }
 );
 
@@ -398,7 +398,7 @@ const cachedAdjacentChapters = unstable_cache(
     ]);
     return { prev, next };
   },
-  ["prisma-post-source:adjacentChapters"],
+  ["prisma-post-source:adjacentChapters-v2"],
   { revalidate: CACHE_TTL, tags: ["posts:list"] }
 );
 
@@ -413,7 +413,7 @@ const cachedFeatured = unstable_cache(
     const any = await cachedLatest(1, opts);
     return any[0] ?? null;
   },
-  ["prisma-post-source:featured"],
+  ["prisma-post-source:featured-v2"],
   { revalidate: CACHE_TTL, tags: ["posts:featured", "posts:list"] }
 );
 
@@ -432,7 +432,7 @@ const cachedPopular = unstable_cache(
     });
     return posts.map((p) => summarize(toNormalized(p)));
   },
-  ["prisma-post-source:popular"],
+  ["prisma-post-source:popular-v2"],
   { revalidate: CACHE_TTL, tags: ["posts:popular", "posts:list"] }
 );
 
@@ -446,7 +446,7 @@ const cachedRecentlyUpdated = unstable_cache(
     });
     return posts.map((p) => summarize(toNormalized(p)));
   },
-  ["prisma-post-source:recentlyUpdated"],
+  ["prisma-post-source:recentlyUpdated-v2"],
   { revalidate: CACHE_TTL, tags: ["posts:recent", "posts:list"] }
 );
 
@@ -476,7 +476,7 @@ const cachedEditorPicks = unstable_cache(
     });
     return [...posts, ...fillers].map((p) => summarize(toNormalized(p)));
   },
-  ["prisma-post-source:editorPicks"],
+  ["prisma-post-source:editorPicks-v2"],
   { revalidate: CACHE_TTL, tags: ["posts:picks", "posts:list"] }
 );
 
@@ -490,7 +490,7 @@ const cachedLatest = unstable_cache(
     });
     return posts.map((p) => summarize(toNormalized(p)));
   },
-  ["prisma-post-source:latest"],
+  ["prisma-post-source:latest-v2"],
   { revalidate: CACHE_TTL, tags: ["posts:latest", "posts:list"] }
 );
 

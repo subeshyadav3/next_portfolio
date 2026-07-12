@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import Link from "next/link";
 import { getCategories, getPostsByCategory } from "@/lib/blog/posts";
 import { generateCategoryMetadata } from "@/lib/blog/seo";
@@ -29,8 +29,20 @@ export async function generateMetadata({ params }: PageProps) {
   return generateCategoryMetadata(category);
 }
 
+const OLD_SLUG_REDIRECTS: Record<string, string> = {
+  see: "class-10",
+  ble: "class-8",
+  "class-10-see": "class-10",
+  "class-8-ble": "class-8",
+};
+
 export default async function CategoryPage({ params, searchParams }: PageProps) {
   const { slug } = await params;
+
+  if (OLD_SLUG_REDIRECTS[slug]) {
+    redirect(`/blog/category/${OLD_SLUG_REDIRECTS[slug]}`);
+  }
+
   const sp = await searchParams;
   const currentPage = Math.max(1, parseInt(sp?.page || "1", 10) || 1);
   const categories = await getCategories();
