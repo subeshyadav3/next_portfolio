@@ -39,7 +39,7 @@ function toNormalized(p: DbPost): NormalizedPost {
     tags: p.tags.map((pt) => pt.tag.name),
     author: p.author.name,
     authorSlug: p.author.slug,
-    authorUrl: p.author.websiteUrl ?? "https://subeshyadav.com.np",
+    authorUrl: `/blog/author/${p.author.slug}`,
     image: p.coverMedia?.secureUrl ?? "",
     readingTime: p.readingTimeMin,
     featured: p.featured,

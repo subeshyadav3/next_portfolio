@@ -253,7 +253,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               <div className="mt-12">
                 <AuthorCard
                   name={post.author}
-                  url={post.authorUrl}
+                  authorSlug={post.authorSlug}
                   bio="Writer and educator sharing Nepali essays, poems, and study materials."
                 />
               </div>

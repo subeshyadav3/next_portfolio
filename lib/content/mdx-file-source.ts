@@ -50,7 +50,7 @@ function readPostFile(filePath: string): NormalizedPost | null {
       tags: data.tags ?? [],
       author: data.author ?? "Subesh Yadav",
       authorSlug: "subesh-yadav",
-      authorUrl: data.authorUrl ?? "https://subeshyadav.com.np",
+      authorUrl: "/blog/author/subesh-yadav",
       image: data.image ?? "",
       readingTime: data.readingTime ?? 0,
       featured: data.featured ?? false,
