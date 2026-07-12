@@ -8,6 +8,8 @@ import { generateBreadcrumbSchema } from "@/lib/blog/schema";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { Breadcrumb } from "@/components/blog/Breadcrumb";
 
+export const revalidate = 3600;
+
 const POSTS_PER_PAGE = 10;
 
 interface PageProps {

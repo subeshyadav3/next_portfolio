@@ -70,6 +70,12 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-adsense-account" content="ca-pub-1645582511604527" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HZ0GV26W3" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-6HZ0GV26W3');`,
+          }}
+        />
       </head>
       <body className="antialiased" style={{ fontFamily: "var(--font-inter)" }}>
         <script

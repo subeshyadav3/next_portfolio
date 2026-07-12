@@ -11,7 +11,7 @@ import type {
   NormalizedTag,
 } from "./types";
 import type { PostSource } from "./post-source";
-import { getCategorySlug } from "@/lib/blog/categories";
+import { getCategorySlug, getCategoryLabel } from "@/lib/blog/categories";
 import { getYear } from "@/lib/blog/utils";
 
 /* -------------------------------------------------------------------------- */
@@ -243,11 +243,22 @@ const cachedCategories = unstable_cache(
       GROUP BY c.slug
     `;
     const countMap = new Map(rows.map((r) => [r.slug, Number(r.count)]));
-    return cats.map((c) => ({
-      name: c.name,
-      slug: c.slug,
-      count: countMap.get(c.slug) ?? 0,
-    }));
+    // Normalize to canonical slugs to avoid duplicates (e.g. SEE → class-10)
+    const canonical = new Map<string, { name: string; slug: string; count: number }>();
+    for (const c of cats) {
+      const canonicalSlug = getCategorySlug(c.name);
+      const existing = canonical.get(canonicalSlug);
+      if (existing) {
+        existing.count += countMap.get(c.slug) ?? 0;
+      } else {
+        canonical.set(canonicalSlug, {
+          name: getCategoryLabel(canonicalSlug),
+          slug: canonicalSlug,
+          count: countMap.get(c.slug) ?? 0,
+        });
+      }
+    }
+    return [...canonical.values()];
   },
   ["prisma-post-source:categories"],
   { revalidate: CACHE_TTL, tags: ["categories:list", "posts:list"] }
