@@ -33,7 +33,7 @@ const SidebarLeft: React.FC = () => {
 
   return (
     <>
-      <div className="fixed top-0 left-0 hidden md:flex h-screen w-[50px] flex-col items-center justify-center">
+      <div className="fixed top-0 left-0 hidden md:flex h-screen w-[50px] flex-col items-center justify-center z-40">
         <button
           type="button"
           onClick={handleCopyEmail}

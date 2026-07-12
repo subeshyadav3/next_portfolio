@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getAuthorBySlug, getPostsByAuthor } from "@/lib/blog/posts";
+import { getAuthorBySlug, getPostsByAuthor, getAllPosts } from "@/lib/blog/posts";
 import { formatDate } from "@/lib/blog/utils";
 import { Breadcrumb } from "@/components/blog/Breadcrumb";
 import { SITE_URL } from "@/lib/site-config";
@@ -11,6 +11,7 @@ import {
   getCategoryLabel,
   getCategoryAccent,
 } from "@/lib/blog/categories";
+import { SubeshProfile } from "@/components/blog/SubeshProfile";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -22,7 +23,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   if (!author) return { title: "Author Not Found" };
 
   return {
-    title: `${author.name} | Neb Master`,
+    title: `${author.name} — Author`,
     description:
       author.bio ?? `Articles by ${author.name} on Neb Master.`,
     alternates: {
@@ -38,6 +39,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function AuthorProfilePage({ params }: Props) {
   const { slug } = await params;
+
+  // Subesh gets his custom rich profile
+  if (slug === "subesh-yadav") {
+    const posts = await getAllPosts();
+    return <SubeshProfile posts={posts} />;
+  }
+
   const [author, posts] = await Promise.all([
     getAuthorBySlug(slug),
     getPostsByAuthor(slug),
@@ -45,16 +53,16 @@ export default async function AuthorProfilePage({ params }: Props) {
 
   if (!author) notFound();
 
-  const socialLinks: { label: string; url: string; icon: string }[] = [];
+  const socialLinks: { label: string; url: string }[] = [];
   if (author.social) {
     if (author.social.github)
-      socialLinks.push({ label: "GitHub", url: author.social.github, icon: "github" });
+      socialLinks.push({ label: "GitHub", url: author.social.github });
     if (author.social.linkedin)
-      socialLinks.push({ label: "LinkedIn", url: author.social.linkedin, icon: "linkedin" });
+      socialLinks.push({ label: "LinkedIn", url: author.social.linkedin });
     if (author.social.twitter)
-      socialLinks.push({ label: "Twitter", url: author.social.twitter, icon: "twitter" });
+      socialLinks.push({ label: "Twitter", url: author.social.twitter });
     if (author.social.facebook)
-      socialLinks.push({ label: "Facebook", url: author.social.facebook, icon: "facebook" });
+      socialLinks.push({ label: "Facebook", url: author.social.facebook });
   }
 
   return (
