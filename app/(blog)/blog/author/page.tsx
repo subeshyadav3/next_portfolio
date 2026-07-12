@@ -87,17 +87,6 @@ export default async function AuthorsPage() {
                       {author.postCount}{" "}
                       {author.postCount === 1 ? "article" : "articles"}
                     </span>
-                    {author.social && (
-                      <>
-                        <span>·</span>
-                        <span>
-                          {Object.keys(author.social).length} social{" "}
-                          {Object.keys(author.social).length === 1
-                            ? "link"
-                            : "links"}
-                        </span>
-                      </>
-                    )}
                   </div>
                 </div>
               </div>

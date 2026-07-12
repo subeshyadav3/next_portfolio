@@ -7,7 +7,6 @@ const BLOG_TITLE = `${BLOG_NAME} | ${SITE_NAME}`;
 const BLOG_DESCRIPTION = SITE_DESCRIPTION;
 
 export function generatePostMetadata(post: Post): Metadata {
-  const title = post.title;
   const description = post.description || post.title;
   const url = `${SITE_URL}/blog/${post.slug}`;
   const image = post.image || `${SITE_URL}/blog/opengraph-image`;
@@ -18,7 +17,7 @@ export function generatePostMetadata(post: Post): Metadata {
   languages[otherLang] = url;
 
   return {
-    title,
+    title: { absolute: post.title },
     description,
     alternates: {
       canonical: url,
@@ -27,7 +26,7 @@ export function generatePostMetadata(post: Post): Metadata {
     authors: [{ name: post.author, url: post.authorUrl }],
     keywords: [post.category, ...post.tags],
     openGraph: {
-      title,
+      title: post.title,
       description,
       url,
       siteName: SITE_NAME,
@@ -42,14 +41,14 @@ export function generatePostMetadata(post: Post): Metadata {
         ? [
             {
               url: image,
-              alt: title,
+              alt: post.title,
             },
           ]
         : undefined,
     },
     twitter: {
       card: "summary_large_image",
-      title,
+      title: post.title,
       description,
       images: image ? [image] : undefined,
     },
