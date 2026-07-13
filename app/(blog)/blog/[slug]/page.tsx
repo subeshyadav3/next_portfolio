@@ -31,6 +31,7 @@ import { PrevNextNav } from "@/components/blog/PrevNextNav";
 import { BackToTop } from "@/components/blog/BackToTop";
 import { Breadcrumb } from "@/components/blog/Breadcrumb";
 import { AuthorCard } from "@/components/blog/AuthorCard";
+import { MobileTocButton } from "@/components/blog/MobileTocButton";
 
 import { ReadingProgress } from "@/components/blog/ReadingProgress";
 import EducationalBadges from "@/components/blog/EducationalBadges";
@@ -200,12 +201,6 @@ export default async function BlogPostPage({ params }: PageProps) {
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-12">
             <div>
-              {toc.length > 0 && (
-                <div className="mb-8 lg:hidden">
-                  <TableOfContents items={toc} accentColor={categoryAccent} />
-                </div>
-              )}
-
               <div className="blog-prose blog-devanagari max-w-none">
                 {content}
               </div>
@@ -266,7 +261,10 @@ export default async function BlogPostPage({ params }: PageProps) {
             </div>
 
             <aside className="hidden lg:block">
-              <div className="sticky top-24 space-y-8">
+              <div
+                className="sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto space-y-8"
+                style={{ scrollbarWidth: "thin", scrollbarColor: "var(--blog-border) transparent" }}
+              >
                 {toc.length > 0 && (
                   <TableOfContents items={toc} accentColor={categoryAccent} />
                 )}
@@ -296,6 +294,9 @@ export default async function BlogPostPage({ params }: PageProps) {
       )}
 
       <BackToTop />
+      {toc.length > 0 && (
+        <MobileTocButton items={toc} accentColor={categoryAccent} />
+      )}
     </div>
   );
 }
