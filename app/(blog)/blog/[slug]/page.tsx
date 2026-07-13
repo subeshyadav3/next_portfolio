@@ -261,13 +261,15 @@ export default async function BlogPostPage({ params }: PageProps) {
             </div>
 
             <aside className="hidden lg:block">
-              <div
-                className="sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto space-y-8"
-                style={{ scrollbarWidth: "thin", scrollbarColor: "var(--blog-border) transparent" }}
-              >
+              <div className="sticky top-24">
+                <div
+                  className="max-h-[calc(100vh-8rem)] overflow-y-auto space-y-8 pr-1"
+                  style={{ scrollbarWidth: "thin", scrollbarColor: "var(--blog-border) transparent" }}
+                >
                 {toc.length > 0 && (
                   <TableOfContents items={toc} accentColor={categoryAccent} />
                 )}
+                </div>
               </div>
             </aside>
           </div>
