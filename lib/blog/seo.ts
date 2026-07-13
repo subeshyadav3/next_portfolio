@@ -106,10 +106,12 @@ export function generateCategoryMetadata(category: Category): Metadata {
 }
 
 function isValuableTag(tag: Tag): boolean {
-  // A tag page is considered valuable for indexing when it has enough
-  // posts and a unique description. Otherwise it is treated as a thin
-  // duplicate archive and marked noindex,follow.
-  return tag.count >= 3 && !!tag.description?.trim();
+  // A tag page is considered valuable for indexing when it has enough posts.
+  // The description field is optional metadata used to enrich the meta tag
+  // when present, but it is not required for indexing.
+  // Tags with fewer than 3 posts are treated as thin duplicate archives and
+  // marked noindex,follow.
+  return tag.count >= 3;
 }
 
 export function generateTagMetadata(tag: Tag): Metadata {

@@ -20,19 +20,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.8,
   }));
 
-  const categoryUrls = categories.map((category) => ({
-    url: `${SITE_URL}/blog/category/${category.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.6,
-  }));
+  const categoryUrls = categories
+    .filter((category) => category.count > 0)
+    .map((category) => ({
+      url: `${SITE_URL}/blog/category/${category.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.6,
+    }));
 
-  const tagUrls = tags.map((tag) => ({
-    url: `${SITE_URL}/blog/tag/${tag.slug}`,
-    lastModified: new Date(),
-    changeFrequency: "weekly" as const,
-    priority: 0.5,
-  }));
+  const tagUrls = tags
+    .filter((tag) => tag.count >= 3)
+    .map((tag) => ({
+      url: `${SITE_URL}/blog/tag/${tag.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.5,
+    }));
 
   const archiveUrls = archives.map((archive) => ({
     url: `${SITE_URL}/blog/archive/${archive.year}`,
