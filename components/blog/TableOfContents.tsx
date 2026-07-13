@@ -134,26 +134,14 @@ export function TableOfContents({ items, accentColor }: TableOfContentsProps) {
         </nav>
       </details>
 
-      {/* Desktop: fixed position on right side */}
-      <div className="hidden lg:block" style={{ width: 280 }}>
-        <div
-          className="fixed top-24 z-40 rounded-xl border border-[var(--blog-border)] bg-[var(--blog-surface)] p-5"
-          style={{
-            width: 280,
-            right: "max(1rem, calc((100vw - 80rem) / 2 - 280px - 3rem))",
-            maxHeight: "calc(100vh - 8rem)",
-            overflowY: "auto",
-            scrollbarWidth: "thin",
-            scrollbarColor: "var(--blog-border) transparent",
-          }}
-        >
-          <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-[var(--blog-text-muted)]">
-            Table of Contents
-          </h2>
-          <nav aria-label="Table of contents">
-            {tocContent}
-          </nav>
-        </div>
+      {/* Desktop: sticky inside parent grid column */}
+      <div className="hidden lg:block rounded-xl border border-[var(--blog-border)] bg-[var(--blog-surface)] p-5">
+        <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-[var(--blog-text-muted)]">
+          Table of Contents
+        </h2>
+        <nav aria-label="Table of contents">
+          {tocContent}
+        </nav>
       </div>
     </>
   );
