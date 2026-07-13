@@ -199,79 +199,72 @@ export default async function BlogPostPage({ params }: PageProps) {
         )}
 
         <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-12">
-            <div>
-              <div className="blog-prose blog-devanagari max-w-none">
-                {content}
-              </div>
-
-              {(adjacentChapters.prev || adjacentChapters.next) && (
-                <nav
-                  className="my-8 flex flex-col gap-3 rounded-xl border border-[var(--blog-border)] bg-[var(--blog-surface)] p-5 sm:flex-row sm:items-center sm:justify-between"
-                  aria-label="Chapter navigation"
-                >
-                  {adjacentChapters.prev ? (
-                    <Link
-                      href={`/blog/${adjacentChapters.prev.slug}`}
-                      className="text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)]"
-                    >
-                      <span className="block text-xs text-[var(--blog-text-muted)]">
-                        Previous
-                      </span>
-                      ← {adjacentChapters.prev.title}
-                    </Link>
-                  ) : (
-                    <span />
-                  )}
-                  {adjacentChapters.next ? (
-                    <Link
-                      href={`/blog/${adjacentChapters.next.slug}`}
-                      className="text-right text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)] sm:ml-auto"
-                    >
-                      <span className="block text-xs text-[var(--blog-text-muted)]">
-                        Next
-                      </span>
-                      {adjacentChapters.next.title} →
-                    </Link>
-                  ) : (
-                    <span />
-                  )}
-                </nav>
-              )}
-
-              {isExamCategory(post.category) && <WasThisHelpful />}
-
-              <div className="mt-12 border-t border-[var(--blog-border)] pt-8">
-                <ShareButtons title={post.title} slug={post.slug} />
-              </div>
-
-              <div className="mt-12">
-                <AuthorCard
-                  name={post.author}
-                  authorSlug={post.authorSlug}
-                  bio="Writer and educator sharing Nepali essays, poems, and study materials."
-                />
-              </div>
-
-              {(dbPost?.allowComments ?? post.source === "FILE") && (
-                <div className="mt-12">
-                  <PostComments postId={dbPost?.id ?? ""} postSlug={dbPost ? undefined : post.slug} initialComments={comments} />
-                </div>
-              )}
+          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_280px] gap-12">
+            <div className="blog-prose blog-devanagari max-w-none">
+              {content}
             </div>
 
-            <aside className="hidden lg:block" style={{ width: 280 }}>
-              <div className="sticky top-24">
-                <div
-                  className="max-h-[calc(100vh-8rem)] overflow-y-auto space-y-8 pr-1"
-                  style={{ scrollbarWidth: "thin", scrollbarColor: "var(--blog-border) transparent" }}
-                >
-                {toc.length > 0 && (
-                  <TableOfContents items={toc} accentColor={categoryAccent} />
-                )}
-                </div>
-              </div>
+            <aside className="hidden lg:block">
+              {toc.length > 0 && (
+                <TableOfContents items={toc} accentColor={categoryAccent} />
+              )}
             </aside>
+          </div>
+
+          <div className="lg:max-w-3xl">
+            {(adjacentChapters.prev || adjacentChapters.next) && (
+              <nav
+                className="my-8 flex flex-col gap-3 rounded-xl border border-[var(--blog-border)] bg-[var(--blog-surface)] p-5 sm:flex-row sm:items-center sm:justify-between"
+                aria-label="Chapter navigation"
+              >
+                {adjacentChapters.prev ? (
+                  <Link
+                    href={`/blog/${adjacentChapters.prev.slug}`}
+                    className="text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)]"
+                  >
+                    <span className="block text-xs text-[var(--blog-text-muted)]">
+                      Previous
+                    </span>
+                    ← {adjacentChapters.prev.title}
+                  </Link>
+                ) : (
+                  <span />
+                )}
+                {adjacentChapters.next ? (
+                  <Link
+                    href={`/blog/${adjacentChapters.next.slug}`}
+                    className="text-right text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)] sm:ml-auto"
+                  >
+                    <span className="block text-xs text-[var(--blog-text-muted)]">
+                      Next
+                    </span>
+                    {adjacentChapters.next.title} →
+                  </Link>
+                ) : (
+                  <span />
+                )}
+              </nav>
+            )}
+
+            {isExamCategory(post.category) && <WasThisHelpful />}
+
+            <div className="mt-12 border-t border-[var(--blog-border)] pt-8">
+              <ShareButtons title={post.title} slug={post.slug} />
+            </div>
+
+            <div className="mt-12">
+              <AuthorCard
+                name={post.author}
+                authorSlug={post.authorSlug}
+                bio="Writer and educator sharing Nepali essays, poems, and study materials."
+              />
+            </div>
+
+            {(dbPost?.allowComments ?? post.source === "FILE") && (
+              <div className="mt-12">
+                <PostComments postId={dbPost?.id ?? ""} postSlug={dbPost ? undefined : post.slug} initialComments={comments} />
+              </div>
+            )}
           </div>
         </div>
       </article>

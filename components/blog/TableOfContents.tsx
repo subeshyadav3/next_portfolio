@@ -135,7 +135,7 @@ export function TableOfContents({ items, accentColor }: TableOfContentsProps) {
       </details>
 
       {/* Desktop: sticky inside parent grid column */}
-      <div className="hidden lg:block rounded-xl border border-[var(--blog-border)] bg-[var(--blog-surface)] p-5">
+      <div className="hidden lg:block self-start sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto rounded-xl border border-[var(--blog-border)] bg-[var(--blog-surface)] p-5" style={{ scrollbarWidth: "thin", scrollbarColor: "var(--blog-border) transparent" }}>
         <h2 className="mb-4 text-sm font-semibold uppercase tracking-wider text-[var(--blog-text-muted)]">
           Table of Contents
         </h2>
