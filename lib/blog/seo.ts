@@ -57,7 +57,7 @@ export function generatePostMetadata(post: Post): Metadata {
 
 export function generateBlogMetadata(): Metadata {
   return {
-    title: BLOG_TITLE,
+    title: { absolute: BLOG_TITLE },
     description: BLOG_DESCRIPTION,
     alternates: {
       canonical: `${SITE_URL}/blog`,
@@ -86,6 +86,10 @@ export function generateCategoryMetadata(category: Category): Metadata {
     title,
     description,
     alternates: { canonical: url },
+    robots:
+      category.count > 0
+        ? { index: true, follow: true }
+        : { index: false, follow: true },
     openGraph: {
       title,
       description,
@@ -101,15 +105,27 @@ export function generateCategoryMetadata(category: Category): Metadata {
   };
 }
 
+function isValuableTag(tag: Tag): boolean {
+  // A tag page is considered valuable for indexing when it has enough
+  // posts and a unique description. Otherwise it is treated as a thin
+  // duplicate archive and marked noindex,follow.
+  return tag.count >= 3 && !!tag.description?.trim();
+}
+
 export function generateTagMetadata(tag: Tag): Metadata {
   const title = `#${tag.name} Articles | Neb Master`;
-  const description = `Read ${tag.count} articles tagged with ${tag.name}.`;
+  const description = tag.description?.trim()
+    ? tag.description.trim()
+    : `Read ${tag.count} articles tagged with ${tag.name}.`;
   const url = `${SITE_URL}/blog/tag/${tag.slug}`;
 
   return {
     title,
     description,
     alternates: { canonical: url },
+    robots: isValuableTag(tag)
+      ? { index: true, follow: true }
+      : { index: false, follow: true },
     openGraph: {
       title,
       description,

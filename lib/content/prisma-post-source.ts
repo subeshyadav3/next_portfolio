@@ -269,6 +269,7 @@ const cachedTags = unstable_cache(
   async (opts?: ListOptions): Promise<NormalizedTag[]> => {
     const tags = await prisma.tag.findMany({
       orderBy: { name: "asc" },
+      select: { id: true, slug: true, name: true },
     });
     const tagCounts = await prisma.$queryRaw<Array<{ slug: string; count: bigint }>>`
       SELECT t.slug, COUNT(p.id) AS count
@@ -286,6 +287,7 @@ const cachedTags = unstable_cache(
       name: t.name,
       slug: t.slug,
       count: countMap.get(t.slug) ?? 0,
+      // description: undefined,
     }));
   },
   ["prisma-post-source:tags-v2"],

@@ -24,11 +24,16 @@ export async function compilePostMdx(
   // Pre-process the source: legacy MDX/markdown mixes HTML and MDX.
   // MDX requires self-closing tags like <br />, but many existing posts
   // use HTML <br>. Normalize them so MDX can parse without choking.
-  const normalized = normalizeLegacyHtml(source);
+  let processed = normalizeLegacyHtml(source);
+
+  // Strip "## Table of Contents" section — the <TableOfContents> React
+  // component already renders this, so the MDX version creates visual
+  // duplication below the footer.
+  processed = stripTocSection(processed);
 
   return (
     <MDXRemote
-      source={normalized}
+      source={processed}
       components={mdxComponents(category)}
       options={{
         mdxOptions: {
@@ -114,6 +119,27 @@ function normalizeLegacyHtml(src: string): string {
   // 2. Some posts have inline `</p>` issues or stray <font> tags. The
   //    sanitizer handles <font> at the rehype layer.
   return out;
+}
+
+/* -------------------------------------------------------------------------- */
+/*  Strip "## Table of Contents" from MDX content                            */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Removes a markdown "## Table of Contents" heading + its bullet-list of
+ * links.  The <TableOfContents> React component already renders this, so
+ * the MDX version is redundant and causes visual duplication below the
+ * footer.
+ */
+function stripTocSection(src: string): string {
+  // Strip ALL "## Table of Contents" blocks — matches the heading and every
+  // subsequent line that contains a markdown link [...]/(...)/--- divider,
+  // until a blank-line or non-link line is encountered.  Global flag removes
+  // every occurrence (some posts have the TOC duplicated).
+  return src.replace(
+    /^##\s+Table\s+of\s+Contents\s*\n(?:.*?\[.*?\]\(.*?\).*\n?)*\n?/gm,
+    ""
+  );
 }
 
 /* -------------------------------------------------------------------------- */

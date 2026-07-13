@@ -12,58 +12,68 @@ import { MdxFileSource } from "./mdx-file-source";
 import { PrismaPostSource } from "./prisma-post-source";
 
 /**
- * Composite source — unions DB posts and MDX file posts.
+ * Composite source — source of truth by post origin.
  *
- * Both sources are queried and merged so that legacy MDX files keep
- * appearing even after DB posts exist. The individual sources are
- * cached (Prisma via unstable_cache, MDX via unstable_cache), so the
- * double read is cheap in production.
+ * - Posts created via /admin are stored in the DB with source = "DB". These
+ *   win over any MDX file with the same slug.
+ * - Posts imported from MDX are stored in the DB with source = "IMPORTED".
+ *   The MDX file wins so edits to the file are reflected immediately.
+ * - Pure MDX posts (source = "FILE") are used as-is.
+ * - If the DB is unreachable, all queries fall back to the filesystem so
+ *   builds keep working.
  */
+
 export class CompositeSource implements PostSource {
   constructor(
     private readonly db: PostSource = new PrismaPostSource(),
     private readonly fs: PostSource = new MdxFileSource()
   ) {}
 
-  // ---- Per-slug (DB first, FS fallback) -----------------------------------
+  // ---- Per-slug (admin DB wins, then MDX, then imported DB) ---------------
 
   async get(
     slug: string,
     opts?: { includeUnpublished?: boolean }
   ): Promise<NormalizedPost | null> {
-    const fromDb = await this.db.get(slug, opts);
-    if (fromDb) return fromDb;
-    return this.fs.get(slug, opts);
+    const [dbPost, fsPost] = await Promise.all([
+      safeDbCall(() => this.db.get(slug, opts)),
+      this.fs.get(slug, opts),
+    ]);
+    if (dbPost?.source === "DB") return dbPost;
+    if (fsPost) return fsPost;
+    return dbPost ?? null;
   }
 
   async has(
     slug: string,
     opts?: { includeUnpublished?: boolean }
   ): Promise<boolean> {
-    const dbHas = await this.db.has(slug, opts);
-    if (dbHas) return true;
-    return this.fs.has(slug, opts);
+    const [dbHas, fsHas] = await Promise.all([
+      safeDbCall(() => this.db.has(slug, opts)),
+      this.fs.has(slug, opts),
+    ]);
+    return fsHas || !!dbHas;
   }
 
-  // ---- Listings: union of DB + FS -----------------------------------------
+  // ---- Listings: admin DB wins, MDX wins over imported DB -----------------
 
   async list(opts?: ListOptions): Promise<NormalizedPostSummary[]> {
-    const [dbPosts, fsPosts] = await Promise.all([
-      this.db.list(opts),
+    const [fsPosts, dbPosts] = await Promise.all([
       this.fs.list(opts),
+      safeDbCall(() => this.db.list(opts)),
     ]);
-    return mergeUnique(dbPosts, fsPosts, sortByDate);
+    return mergeSources(fsPosts, dbPosts, sortByDate);
   }
 
   async byCategory(
     slug: string,
     opts?: ListOptions
   ): Promise<NormalizedPostSummary[]> {
-    const [dbPosts, fsPosts] = await Promise.all([
-      this.db.byCategory(slug, opts),
+    const [fsPosts, dbPosts] = await Promise.all([
       this.fs.byCategory(slug, opts),
+      safeDbCall(() => this.db.byCategory(slug, opts)),
     ]);
-    return mergeUnique(dbPosts, fsPosts, (items) =>
+    return mergeSources(fsPosts, dbPosts, (items) =>
       [...items].sort(
         (a, b) =>
           new Date(b.published).getTime() - new Date(a.published).getTime()
@@ -75,48 +85,48 @@ export class CompositeSource implements PostSource {
     slug: string,
     opts?: ListOptions
   ): Promise<NormalizedPostSummary[]> {
-    const [dbPosts, fsPosts] = await Promise.all([
-      this.db.byTag(slug, opts),
+    const [fsPosts, dbPosts] = await Promise.all([
       this.fs.byTag(slug, opts),
+      safeDbCall(() => this.db.byTag(slug, opts)),
     ]);
-    return mergeUnique(dbPosts, fsPosts, sortByDate);
+    return mergeSources(fsPosts, dbPosts, sortByDate);
   }
 
   async byYear(
     year: string,
     opts?: ListOptions
   ): Promise<NormalizedPostSummary[]> {
-    const [dbPosts, fsPosts] = await Promise.all([
-      this.db.byYear(year, opts),
+    const [fsPosts, dbPosts] = await Promise.all([
       this.fs.byYear(year, opts),
+      safeDbCall(() => this.db.byYear(year, opts)),
     ]);
-    return mergeUnique(dbPosts, fsPosts, sortByDate);
+    return mergeSources(fsPosts, dbPosts, sortByDate);
   }
 
-  // ---- Aggregations: union ------------------------------------------------
+  // ---- Aggregations: combine FS and DB counts -----------------------------
 
   async categories(opts?: ListOptions): Promise<NormalizedCategory[]> {
-    const [dbCats, fsCats] = await Promise.all([
-      this.db.categories(opts),
+    const [fsCats, dbCats] = await Promise.all([
       this.fs.categories(opts),
+      safeDbCall(() => this.db.categories(opts)),
     ]);
-    return mergeCategoryCounts(dbCats, fsCats);
+    return mergeCategoryCounts(fsCats, dbCats);
   }
 
   async tags(opts?: ListOptions): Promise<NormalizedTag[]> {
-    const [dbTags, fsTags] = await Promise.all([
-      this.db.tags(opts),
+    const [fsTags, dbTags] = await Promise.all([
       this.fs.tags(opts),
+      safeDbCall(() => this.db.tags(opts)),
     ]);
-    return mergeTagCounts(dbTags, fsTags);
+    return mergeTagCounts(fsTags, dbTags);
   }
 
   async archiveYears(opts?: ListOptions): Promise<NormalizedArchiveYear[]> {
-    const [dbYears, fsYears] = await Promise.all([
-      this.db.archiveYears(opts),
+    const [fsYears, dbYears] = await Promise.all([
       this.fs.archiveYears(opts),
+      safeDbCall(() => this.db.archiveYears(opts)),
     ]);
-    return mergeYearCounts(dbYears, fsYears);
+    return mergeYearCounts(fsYears, dbYears);
   }
 
   // ---- Relations: prefer source of current post ---------------------------
@@ -125,154 +135,179 @@ export class CompositeSource implements PostSource {
     post: NormalizedPost,
     count = 3
   ): Promise<NormalizedPostSummary[]> {
-    if (post.source === "DB") return this.db.related(post, count);
-    const [dbRelated, fsRelated] = await Promise.all([
-      this.db.related(post, count),
+    const [fsRelated, dbRelated] = await Promise.all([
       this.fs.related(post, count),
+      safeDbCall(() => this.db.related(post, count)),
     ]);
-    return mergeUnique(dbRelated, fsRelated, (items) =>
+    return mergeSources(fsRelated, dbRelated ?? [], (items) =>
       [...items].slice(0, count)
     );
   }
 
   async prevNext(post: NormalizedPost): Promise<AdjacentPosts> {
-    if (post.source === "DB") return this.db.prevNext(post);
-    const [dbAdjacent, fsAdjacent] = await Promise.all([
-      this.db.prevNext(post),
+    const [fsAdjacent, dbAdjacent] = await Promise.all([
       this.fs.prevNext(post),
+      safeDbCall(() => this.db.prevNext(post)),
     ]);
     return {
-      prev: dbAdjacent.prev ?? fsAdjacent.prev ?? null,
-      next: dbAdjacent.next ?? fsAdjacent.next ?? null,
+      prev: fsAdjacent.prev ?? dbAdjacent?.prev ?? null,
+      next: fsAdjacent.next ?? dbAdjacent?.next ?? null,
     };
   }
 
   async adjacentChapters(post: NormalizedPost): Promise<AdjacentPosts> {
-    if (post.source === "DB") return this.db.adjacentChapters(post);
-    const [dbAdjacent, fsAdjacent] = await Promise.all([
-      this.db.adjacentChapters(post),
+    const [fsAdjacent, dbAdjacent] = await Promise.all([
       this.fs.adjacentChapters(post),
+      safeDbCall(() => this.db.adjacentChapters(post)),
     ]);
     return {
-      prev: dbAdjacent.prev ?? fsAdjacent.prev ?? null,
-      next: dbAdjacent.next ?? fsAdjacent.next ?? null,
+      prev: fsAdjacent.prev ?? dbAdjacent?.prev ?? null,
+      next: fsAdjacent.next ?? dbAdjacent?.next ?? null,
     };
   }
 
-  // ---- Featured / curated: union ------------------------------------------
+  // ---- Featured / curated: admin DB wins, then MDX, then imported DB ------
 
   async featured(opts?: ListOptions): Promise<NormalizedPostSummary | null> {
-    const fromDb = await this.db.featured(opts);
-    if (fromDb) return fromDb;
-    return this.fs.featured(opts);
+    const [fsFeatured, dbFeatured] = await Promise.all([
+      this.fs.featured(opts),
+      safeDbCall(() => this.db.featured(opts)),
+    ]);
+    if (dbFeatured?.source === "DB") return dbFeatured;
+    return fsFeatured ?? dbFeatured ?? null;
   }
 
   async popular(
     count = 6,
     opts?: ListOptions
   ): Promise<NormalizedPostSummary[]> {
-    const [db, fs] = await Promise.all([
-      this.db.popular(count, opts),
+    const [fs, db] = await Promise.all([
       this.fs.popular(count, opts),
+      safeDbCall(() => this.db.popular(count, opts)),
     ]);
-    return mergeLists(db, fs, count);
+    return mergeSources(fs, db ?? [], (items) =>
+      sortByDate(items).slice(0, count)
+    );
   }
 
   async recentlyUpdated(
     count = 6,
     opts?: ListOptions
   ): Promise<NormalizedPostSummary[]> {
-    const [db, fs] = await Promise.all([
-      this.db.recentlyUpdated(count, opts),
+    const [fs, db] = await Promise.all([
       this.fs.recentlyUpdated(count, opts),
+      safeDbCall(() => this.db.recentlyUpdated(count, opts)),
     ]);
-    return mergeLists(db, fs, count);
+    return mergeSources(fs, db ?? [], (items) =>
+      sortByDate(items).slice(0, count)
+    );
   }
 
   async editorPicks(
     count = 4,
     opts?: ListOptions
   ): Promise<NormalizedPostSummary[]> {
-    const [db, fs] = await Promise.all([
-      this.db.editorPicks(count, opts),
+    const [fs, db] = await Promise.all([
       this.fs.editorPicks(count, opts),
+      safeDbCall(() => this.db.editorPicks(count, opts)),
     ]);
-    return mergeLists(db, fs, count);
+    return mergeSources(fs, db ?? [], (items) =>
+      sortByDate(items).slice(0, count)
+    );
   }
 
   async latest(
     count = 6,
     opts?: ListOptions
   ): Promise<NormalizedPostSummary[]> {
-    const [db, fs] = await Promise.all([
-      this.db.latest(count, opts),
+    const [fs, db] = await Promise.all([
       this.fs.latest(count, opts),
+      safeDbCall(() => this.db.latest(count, opts)),
     ]);
-    return mergeLists(db, fs, count);
+    return mergeSources(fs, db ?? [], (items) =>
+      sortByDate(items).slice(0, count)
+    );
   }
 
   async invalidate(slug?: string): Promise<void> {
-    await Promise.all([this.db.invalidate(slug), this.fs.invalidate(slug)]);
+    await Promise.all([
+      this.fs.invalidate(slug).catch(() => {}),
+      this.db.invalidate(slug).catch(() => {}),
+    ]);
   }
 }
 
-function mergeUnique<T extends NormalizedPostSummary>(
-  db: T[],
+async function safeDbCall<T>(fn: () => Promise<T>): Promise<T | undefined> {
+  try {
+    return await fn();
+  } catch (error) {
+    console.warn("DB query failed, falling back to filesystem:", error);
+    return undefined;
+  }
+}
+
+function mergeSources<T extends NormalizedPostSummary>(
   fs: T[],
+  db: T[] | undefined,
   finalize: (items: Iterable<T>) => T[]
 ): T[] {
   const map = new Map<string, T>();
-  for (const p of db) map.set(p.slug, p);
-  for (const p of fs) if (!map.has(p.slug)) map.set(p.slug, p);
+  for (const p of fs) map.set(p.slug, p); // MDX first
+  if (db) {
+    for (const p of db) {
+      // Admin-created DB posts override MDX; imported DB posts fill gaps.
+      if (p.source === "DB" || !map.has(p.slug)) {
+        map.set(p.slug, p);
+      }
+    }
+  }
   return finalize(map.values());
 }
 
 function mergeCategoryCounts(
-  db: NormalizedCategory[],
-  fs: NormalizedCategory[]
+  fs: NormalizedCategory[],
+  db: NormalizedCategory[] | undefined
 ): NormalizedCategory[] {
   const map = new Map<string, NormalizedCategory>();
-  for (const c of db) map.set(c.slug, { ...c, count: 0 });
-  for (const c of fs) {
-    const existing = map.get(c.slug);
-    if (existing) existing.count += c.count;
-    else map.set(c.slug, { ...c });
+  for (const c of fs) map.set(c.slug, { ...c, count: 0 });
+  if (db) {
+    for (const c of db) {
+      const existing = map.get(c.slug);
+      if (existing) existing.count += c.count;
+      else map.set(c.slug, { ...c });
+    }
   }
   return [...map.values()].sort((a, b) => b.count - a.count);
 }
 
 function mergeTagCounts(
-  db: NormalizedTag[],
-  fs: NormalizedTag[]
+  fs: NormalizedTag[],
+  db: NormalizedTag[] | undefined
 ): NormalizedTag[] {
   const map = new Map<string, NormalizedTag>();
-  for (const t of db) map.set(t.slug, { ...t, count: 0 });
-  for (const t of fs) {
-    const existing = map.get(t.slug);
-    if (existing) existing.count += t.count;
-    else map.set(t.slug, { ...t });
+  for (const t of fs) map.set(t.slug, { ...t, count: 0 });
+  if (db) {
+    for (const t of db) {
+      const existing = map.get(t.slug);
+      if (existing) existing.count += t.count;
+      else map.set(t.slug, { ...t });
+    }
   }
   return [...map.values()].sort((a, b) => b.count - a.count);
 }
 
 function mergeYearCounts(
-  db: NormalizedArchiveYear[],
-  fs: NormalizedArchiveYear[]
+  fs: NormalizedArchiveYear[],
+  db: NormalizedArchiveYear[] | undefined
 ): NormalizedArchiveYear[] {
   const map = new Map<string, number>();
-  for (const y of db) map.set(y.year, 0);
-  for (const y of fs) map.set(y.year, (map.get(y.year) ?? 0) + y.count);
+  for (const y of fs) map.set(y.year, 0);
+  if (db) {
+    for (const y of db) map.set(y.year, (map.get(y.year) ?? 0) + y.count);
+  }
   return [...map.entries()]
     .map(([year, count]) => ({ year, count }))
     .sort((a, b) => b.year.localeCompare(a.year));
-}
-
-function mergeLists(
-  a: NormalizedPostSummary[],
-  b: NormalizedPostSummary[],
-  limit: number
-): NormalizedPostSummary[] {
-  return mergeUnique(a, b, (items) => sortByDate(items).slice(0, limit));
 }
 
 function safeDate(s: string | undefined): number {

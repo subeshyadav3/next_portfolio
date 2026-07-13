@@ -31,6 +31,7 @@ import { PrevNextNav } from "@/components/blog/PrevNextNav";
 import { BackToTop } from "@/components/blog/BackToTop";
 import { Breadcrumb } from "@/components/blog/Breadcrumb";
 import { AuthorCard } from "@/components/blog/AuthorCard";
+import { MobileTocButton } from "@/components/blog/MobileTocButton";
 
 import { ReadingProgress } from "@/components/blog/ReadingProgress";
 import EducationalBadges from "@/components/blog/EducationalBadges";
@@ -105,7 +106,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   ]);
 
   return (
-    <>
+    <div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -198,80 +199,72 @@ export default async function BlogPostPage({ params }: PageProps) {
         )}
 
         <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-12">
-            <div>
-              {toc.length > 0 && (
-                <div className="mb-8 lg:hidden">
-                  <TableOfContents items={toc} accentColor={categoryAccent} />
-                </div>
-              )}
-
-              <div className="blog-prose blog-devanagari max-w-none">
-                {content}
-              </div>
-
-              {(adjacentChapters.prev || adjacentChapters.next) && (
-                <nav
-                  className="my-8 flex flex-col gap-3 rounded-xl border border-[var(--blog-border)] bg-[var(--blog-surface)] p-5 sm:flex-row sm:items-center sm:justify-between"
-                  aria-label="Chapter navigation"
-                >
-                  {adjacentChapters.prev ? (
-                    <Link
-                      href={`/blog/${adjacentChapters.prev.slug}`}
-                      className="text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)]"
-                    >
-                      <span className="block text-xs text-[var(--blog-text-muted)]">
-                        Previous
-                      </span>
-                      ← {adjacentChapters.prev.title}
-                    </Link>
-                  ) : (
-                    <span />
-                  )}
-                  {adjacentChapters.next ? (
-                    <Link
-                      href={`/blog/${adjacentChapters.next.slug}`}
-                      className="text-right text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)] sm:ml-auto"
-                    >
-                      <span className="block text-xs text-[var(--blog-text-muted)]">
-                        Next
-                      </span>
-                      {adjacentChapters.next.title} →
-                    </Link>
-                  ) : (
-                    <span />
-                  )}
-                </nav>
-              )}
-
-              {isExamCategory(post.category) && <WasThisHelpful />}
-
-              <div className="mt-12 border-t border-[var(--blog-border)] pt-8">
-                <ShareButtons title={post.title} slug={post.slug} />
-              </div>
-
-              <div className="mt-12">
-                <AuthorCard
-                  name={post.author}
-                  authorSlug={post.authorSlug}
-                  bio="Writer and educator sharing Nepali essays, poems, and study materials."
-                />
-              </div>
-
-              {(dbPost?.allowComments ?? post.source === "FILE") && (
-                <div className="mt-12">
-                  <PostComments postId={dbPost?.id ?? ""} postSlug={dbPost ? undefined : post.slug} initialComments={comments} />
-                </div>
-              )}
+          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_280px] gap-12">
+            <div className="blog-prose blog-devanagari max-w-none">
+              {content}
             </div>
 
             <aside className="hidden lg:block">
-              <div className="sticky top-24 space-y-8">
-                {toc.length > 0 && (
-                  <TableOfContents items={toc} accentColor={categoryAccent} />
-                )}
-              </div>
+              {toc.length > 0 && (
+                <TableOfContents items={toc} accentColor={categoryAccent} />
+              )}
             </aside>
+          </div>
+
+          <div className="lg:max-w-3xl">
+            {(adjacentChapters.prev || adjacentChapters.next) && (
+              <nav
+                className="my-8 flex flex-col gap-3 rounded-xl border border-[var(--blog-border)] bg-[var(--blog-surface)] p-5 sm:flex-row sm:items-center sm:justify-between"
+                aria-label="Chapter navigation"
+              >
+                {adjacentChapters.prev ? (
+                  <Link
+                    href={`/blog/${adjacentChapters.prev.slug}`}
+                    className="text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)]"
+                  >
+                    <span className="block text-xs text-[var(--blog-text-muted)]">
+                      Previous
+                    </span>
+                    ← {adjacentChapters.prev.title}
+                  </Link>
+                ) : (
+                  <span />
+                )}
+                {adjacentChapters.next ? (
+                  <Link
+                    href={`/blog/${adjacentChapters.next.slug}`}
+                    className="text-right text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)] sm:ml-auto"
+                  >
+                    <span className="block text-xs text-[var(--blog-text-muted)]">
+                      Next
+                    </span>
+                    {adjacentChapters.next.title} →
+                  </Link>
+                ) : (
+                  <span />
+                )}
+              </nav>
+            )}
+
+            {isExamCategory(post.category) && <WasThisHelpful />}
+
+            <div className="mt-12 border-t border-[var(--blog-border)] pt-8">
+              <ShareButtons title={post.title} slug={post.slug} />
+            </div>
+
+            <div className="mt-12">
+              <AuthorCard
+                name={post.author}
+                authorSlug={post.authorSlug}
+                bio="Writer and educator sharing Nepali essays, poems, and study materials."
+              />
+            </div>
+
+            {(dbPost?.allowComments ?? post.source === "FILE") && (
+              <div className="mt-12">
+                <PostComments postId={dbPost?.id ?? ""} postSlug={dbPost ? undefined : post.slug} initialComments={comments} />
+              </div>
+            )}
           </div>
         </div>
       </article>
@@ -296,6 +289,9 @@ export default async function BlogPostPage({ params }: PageProps) {
       )}
 
       <BackToTop />
-    </>
+      {toc.length > 0 && (
+        <MobileTocButton items={toc} accentColor={categoryAccent} />
+      )}
+    </div>
   );
 }

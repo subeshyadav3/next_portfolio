@@ -1,16 +1,10 @@
-import {
-  isExamCategory,
-  isPoemCategory,
-  getCategoryAccent,
-  getCategorySlug,
-} from "@/lib/blog/categories";
+import { isPoemCategory, getCategoryAccent, getCategorySlug } from "@/lib/blog/categories";
 import { PoemLine } from "@/components/blog/PoemLine";
 import { ProseParagraph } from "@/components/blog/ProseParagraph";
 import { PullQuote } from "@/components/blog/PullQuote";
 import { CaptionedImage } from "@/components/blog/CaptionedImage";
 import { SectionHeading } from "@/components/blog/SectionHeading";
 import { CodeBlock } from "@/components/blog/CodeBlock";
-import { ResponsiveTable } from "@/components/blog/ResponsiveTable";
 import {
   InfoBox,
   WarningBox,
@@ -29,6 +23,7 @@ import {
 import {
   ComparisonTable,
 } from "@/components/mdx/layout";
+import { ResponsiveTable } from "@/components/blog/ResponsiveTable";
 import {
   YouTube,
   PdfEmbed,
@@ -72,9 +67,6 @@ export function mdxComponents(category: string) {
     ),
     pre: (props: { children?: React.ReactNode; className?: string }) => (
       <CodeBlock {...props} />
-    ),
-    table: (props: { children?: React.ReactNode }) => (
-      <ResponsiveTable {...props} />
     ),
 
     // --- Admonitions ----------------------------------------------------

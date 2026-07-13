@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
 import { Search, ChevronDown, Menu, X } from "lucide-react";
 import { useState, useRef, useEffect } from "react";
@@ -236,10 +237,13 @@ export default function BlogLayout({
                   Neb <span className="text-[var(--blog-accent)]">Master</span>
                 </>
               ) : (
-                <img
-                  src="https://res.cloudinary.com/dbfo8ibyu/image/upload/v1783607381/portfolio/tz3vva86i1xhqdpygj4i.png"
+                <Image
+                  src="https://res.cloudinary.com/dbfo8ibyu/image/upload/w_96,h_96,c_fill,f_auto,q_auto/v1783607381/portfolio/tz3vva86i1xhqdpygj4i.png"
                   alt="Neb Master"
-                  className="h-12 w-auto"
+                  width={48}
+                  height={48}
+                  priority
+                  className="h-12 w-12"
                   onError={() => setLogoError(true)}
                 />
               )}

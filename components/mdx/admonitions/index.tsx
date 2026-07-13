@@ -1,5 +1,12 @@
 import type { ReactNode } from "react";
-import { Info, AlertTriangle, CheckCircle, Lightbulb, Bell, BookOpen } from "lucide-react";
+import {
+  Info,
+  AlertTriangle,
+  CheckCircle,
+  Lightbulb,
+  Bell,
+  BookOpen,
+} from "lucide-react";
 
 type Variant = "info" | "warning" | "success" | "tip" | "note" | "callout";
 
@@ -8,73 +15,45 @@ interface AdmonitionProps {
   children: ReactNode;
 }
 
-const styles: Record<
+/**
+ * Design: each box has a 3px solid left accent bar, a light tinted background
+ * that works in both light and dark, and a clear icon+label header.
+ * Body text is 15px (0.9375rem) — not tiny like text-sm was.
+ */
+const config: Record<
   Variant,
-  { bg: string; border: string; text: string; icon: ReactNode; defaultTitle: string }
+  { icon: ReactNode; defaultTitle: string }
 > = {
-  info: {
-    bg: "bg-blue-50 dark:bg-blue-950/40",
-    border: "border-blue-300 dark:border-blue-800",
-    text: "text-blue-900 dark:text-blue-200",
-    icon: <Info className="h-5 w-5" />,
-    defaultTitle: "Info",
-  },
-  warning: {
-    bg: "bg-amber-50 dark:bg-amber-950/40",
-    border: "border-amber-300 dark:border-amber-800",
-    text: "text-amber-900 dark:text-amber-200",
-    icon: <AlertTriangle className="h-5 w-5" />,
-    defaultTitle: "Warning",
-  },
-  success: {
-    bg: "bg-green-50 dark:bg-green-950/40",
-    border: "border-green-300 dark:border-green-800",
-    text: "text-green-900 dark:text-green-200",
-    icon: <CheckCircle className="h-5 w-5" />,
-    defaultTitle: "Success",
-  },
-  tip: {
-    bg: "bg-purple-50 dark:bg-purple-950/40",
-    border: "border-purple-300 dark:border-purple-800",
-    text: "text-purple-900 dark:text-purple-200",
-    icon: <Lightbulb className="h-5 w-5" />,
-    defaultTitle: "Tip",
-  },
-  note: {
-    bg: "bg-stone-100 dark:bg-stone-900/40",
-    border: "border-stone-300 dark:border-stone-700",
-    text: "text-stone-900 dark:text-stone-200",
-    icon: <BookOpen className="h-5 w-5" />,
-    defaultTitle: "Note",
-  },
-  callout: {
-    bg: "bg-rose-50 dark:bg-rose-950/40",
-    border: "border-rose-300 dark:border-rose-800",
-    text: "text-rose-900 dark:text-rose-200",
-    icon: <Bell className="h-5 w-5" />,
-    defaultTitle: "Heads up",
-  },
+  info:    { icon: <Info className="h-4 w-4 shrink-0" />,          defaultTitle: "Note" },
+  warning: { icon: <AlertTriangle className="h-4 w-4 shrink-0" />, defaultTitle: "Warning" },
+  success: { icon: <CheckCircle className="h-4 w-4 shrink-0" />,  defaultTitle: "Success" },
+  tip:     { icon: <Lightbulb className="h-4 w-4 shrink-0" />,    defaultTitle: "Tip" },
+  note:    { icon: <BookOpen className="h-4 w-4 shrink-0" />,     defaultTitle: "Note" },
+  callout: { icon: <Bell className="h-4 w-4 shrink-0" />,         defaultTitle: "Heads up" },
 };
 
 function Admonition({ variant, title, children }: AdmonitionProps & { variant: Variant }) {
-  const s = styles[variant];
+  const c = config[variant];
+  const isAlert = variant === "warning" || variant === "callout";
+
   return (
     <aside
-      className={`my-6 rounded-lg border-l-4 ${s.border} ${s.bg} p-4 not-prose`}
       role="note"
+      aria-live={isAlert ? "polite" : undefined}
+      className="not-prose my-7 rounded-r-lg border-l-[3px] border-l-[var(--blog-accent)] bg-[var(--blog-accent-tint)] dark:bg-[var(--blog-accent-tint)] px-5 py-4"
     >
-      <div className={`mb-2 flex items-center gap-2 font-semibold ${s.text}`}>
-        {s.icon}
-        <span>{title ?? s.defaultTitle}</span>
+      <div className="mb-2.5 flex items-center gap-2 text-[0.8125rem] font-semibold uppercase tracking-widest text-[var(--blog-accent)]">
+        <span aria-hidden="true">{c.icon}</span>
+        <span>{title ?? c.defaultTitle}</span>
       </div>
-      <div className={`${s.text} prose-sm`}>{children}</div>
+      <div className="text-[0.9375rem] leading-relaxed text-[var(--blog-text-secondary)] [&>p]:my-2 [&>p:first-child]:mt-0 [&>p:last-child]:mb-0 [&>ul]:my-2 [&>ul]:pl-5 [&>ul]:list-disc">
+        {children}
+      </div>
     </aside>
   );
 }
 
-export function InfoBox(props: AdmonitionProps) {
-  return <Admonition variant="info" {...props} />;
-}
+export function InfoBox(props: AdmonitionProps)    { return <Admonition variant="info"    {...props} />; }
 export function WarningBox(props: AdmonitionProps) {
   return <Admonition variant="warning" {...props} />;
 }

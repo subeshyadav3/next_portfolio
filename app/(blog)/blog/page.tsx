@@ -84,6 +84,7 @@ export default async function BlogHomePage() {
                     src={featured.image}
                     alt={featured.title}
                     fill
+                    priority
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                     sizes="(max-width: 768px) 100vw, 50vw"
                   />
@@ -98,7 +99,13 @@ export default async function BlogHomePage() {
                 )}
               </div>
               <div className="p-8 lg:p-12 flex flex-col justify-center">
-                <span className="inline-flex w-fit items-center rounded-full bg-[var(--blog-accent-light)] px-3 py-1 text-xs font-medium text-[var(--blog-accent)]">
+                <span
+                  className="inline-flex w-fit items-center rounded-full px-3 py-1 text-xs font-medium"
+                  style={{
+                    backgroundColor: `color-mix(in srgb, ${getCategoryAccent(getCategorySlug(featured.category))} 15%, transparent)`,
+                    color: getCategoryAccent(getCategorySlug(featured.category)),
+                  }}
+                >
                   {featured.category}
                 </span>
                 <h3 className="mt-4 text-2xl font-bold text-[var(--blog-text)] group-hover:text-[var(--blog-accent)] transition-colors lg:text-3xl">
@@ -131,7 +138,7 @@ export default async function BlogHomePage() {
           Browse by Category
         </h2>
         <div className="space-y-12">
-          {categories.slice(0, 6).map((category) => {
+          {categories.slice(0, 6).map((category, catIdx) => {
             const postsInCategory = (postsByCategory.get(category.slug) ?? [])
               .slice(0, 3);
             if (postsInCategory.length === 0) return null;
@@ -152,8 +159,8 @@ export default async function BlogHomePage() {
                   </Link>
                 </div>
                 <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                  {postsInCategory.map((post) => (
-                    <BlogCard key={post.slug} post={post} />
+                  {postsInCategory.map((post, postIdx) => (
+                    <BlogCard key={post.slug} post={post} priority={catIdx === 0 && postIdx === 0} />
                   ))}
                 </div>
               </div>
