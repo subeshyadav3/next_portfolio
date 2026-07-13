@@ -6,9 +6,11 @@ import { getCategorySlug, getCategoryLabel, getCategoryAccent } from "@/lib/blog
 
 interface BlogCardProps {
   post: NormalizedPostSummary;
+  /** Set true for the first/above-the-fold card to prioritize LCP. */
+  priority?: boolean;
 }
 
-export function BlogCard({ post }: BlogCardProps) {
+export function BlogCard({ post, priority = false }: BlogCardProps) {
   return (
     <article className="group flex flex-col overflow-hidden rounded-xl border border-[var(--blog-border)] bg-[var(--blog-surface)] shadow-sm hover:shadow-md transition-all duration-300">
       <Link
@@ -20,6 +22,7 @@ export function BlogCard({ post }: BlogCardProps) {
             src={post.image}
             alt={post.title}
             fill
+            priority={priority}
             className="object-cover transition-transform duration-500 group-hover:scale-105"
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />

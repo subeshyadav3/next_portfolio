@@ -79,7 +79,7 @@ export function generateOrganizationSchema() {
     logo: `${SITE_URL}/logo.svg`,
     sameAs: [
       "https://github.com/subeshyadav3",
-      "https://www.linkedin.com/in/subeshyadav",
+      "https://www.linkedin.com/in/subeshyadav3",
       "https://facebook.com/subesh.yadav.54772",
     ],
   };
@@ -113,7 +113,7 @@ export function generatePersonSchema() {
     },
     sameAs: [
       "https://github.com/subeshyadav3",
-      "https://www.linkedin.com/in/subeshyadav",
+      "https://www.linkedin.com/in/subeshyadav3",
       "https://facebook.com/subesh.yadav.54772",
     ],
   };
@@ -148,7 +148,7 @@ export function generateLocalBusinessSchema() {
     ],
     sameAs: [
       "https://github.com/subeshyadav3",
-      "https://www.linkedin.com/in/subeshyadav",
+      "https://www.linkedin.com/in/subeshyadav3",
       "https://facebook.com/subesh.yadav.54772",
     ],
   };

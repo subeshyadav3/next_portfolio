@@ -1,61 +1,70 @@
+import Image from "next/image";
 import type { ReactNode } from "react";
 
 /* -------------------------------------------------------------------------- */
-/*  ResponsiveTable — wraps <table> in a horizontal scroll container          */
+/*  ResponsiveTable                                                           */
 /* -------------------------------------------------------------------------- */
 
 export function ResponsiveTable({ children }: { children: ReactNode }) {
   return (
-    <div className="my-6 -mx-4 overflow-x-auto sm:mx-0 sm:rounded-lg sm:border sm:border-[var(--blog-border)] not-prose">
-      <div className="inline-block min-w-full align-middle">
-        <table className="min-w-full divide-y divide-[var(--blog-border)] text-sm">
-          {children}
-        </table>
-      </div>
+    <div className="my-6 overflow-x-auto">
+      {children}
     </div>
   );
 }
 
 /* -------------------------------------------------------------------------- */
-/*  ComparisonTable — accepts a headers + rows data shape                     */
+/*  ComparisonTable                                                           */
 /* -------------------------------------------------------------------------- */
 
 interface ComparisonTableProps {
-  headers: string[];
-  rows: string[][];
+  headers?: string[];
+  rows?: string[][];
   caption?: string;
 }
 
 export function ComparisonTable({ headers, rows, caption }: ComparisonTableProps) {
+  const safeHeaders = headers ?? [];
+  const safeRows    = rows    ?? [];
+
+  if (safeHeaders.length === 0 && safeRows.length === 0) return null;
+
   return (
     <figure className="my-6 not-prose">
-      <div className="-mx-4 overflow-x-auto sm:mx-0 sm:rounded-lg sm:border sm:border-[var(--blog-border)]">
-        <table className="min-w-full divide-y divide-[var(--blog-border)] text-sm">
+      <div className="overflow-x-auto rounded-md border border-[var(--blog-border)]">
+        <table className="w-full border-collapse text-sm">
           {caption && (
-            <caption className="px-4 py-2 text-left text-sm font-medium text-[var(--blog-text-muted)]">
+            <caption className="border-b border-[var(--blog-border)] bg-[var(--blog-surface)] px-4 py-2 text-left text-xs font-medium uppercase tracking-wider text-[var(--blog-text-muted)]">
               {caption}
             </caption>
           )}
-          <thead className="bg-[var(--blog-surface)]">
+
+          <thead>
             <tr>
-              {headers.map((h, i) => (
+              {safeHeaders.map((h, i) => (
                 <th
                   key={i}
                   scope="col"
-                  className="px-4 py-3 text-left font-semibold text-[var(--blog-text)]"
+                  className="border-b-2 border-[var(--blog-border)] bg-[var(--blog-surface)] px-4 py-3 text-left text-xs font-semibold uppercase tracking-wide text-[var(--blog-text-muted)]"
                 >
                   {h}
                 </th>
               ))}
             </tr>
           </thead>
+
           <tbody className="divide-y divide-[var(--blog-border)]">
-            {rows.map((row, ri) => (
-              <tr key={ri} className="hover:bg-[var(--blog-surface)]/50">
+            {safeRows.map((row, ri) => (
+              <tr
+                key={ri}
+                className={`transition-colors hover:bg-[var(--blog-surface)] ${
+                  ri % 2 !== 0 ? "bg-[var(--blog-bg)]/60" : ""
+                }`}
+              >
                 {row.map((cell, ci) => (
                   <td
                     key={ci}
-                    className="px-4 py-3 text-[var(--blog-text-secondary)]"
+                    className="px-4 py-3 text-sm align-top text-[var(--blog-text-secondary)]"
                   >
                     {cell}
                   </td>
@@ -70,7 +79,7 @@ export function ComparisonTable({ headers, rows, caption }: ComparisonTableProps
 }
 
 /* -------------------------------------------------------------------------- */
-/*  Figure — semantic wrapper for an image with caption                       */
+/*  Figure                                                                    */
 /* -------------------------------------------------------------------------- */
 
 interface FigureProps {
@@ -82,15 +91,36 @@ interface FigureProps {
 }
 
 export function Figure({ src, alt, caption, width, height }: FigureProps) {
+  const hasDimensions = Boolean(width && height);
+
+  if (hasDimensions) {
+    return (
+      <figure className="my-6 not-prose">
+        <Image
+          src={src}
+          alt={alt || ""}
+          width={width!}
+          height={height!}
+          className="w-full rounded-md border border-[var(--blog-border)] shadow-sm"
+          style={{ height: "auto" }}
+        />
+        {caption && (
+          <figcaption className="mt-2 text-center text-sm text-[var(--blog-text-muted)]">
+            {caption}
+          </figcaption>
+        )}
+      </figure>
+    );
+  }
+
   return (
     <figure className="my-6 not-prose">
       <img
         src={src}
         alt={alt}
-        width={width}
-        height={height}
         loading="lazy"
-        className="w-full rounded-lg"
+        decoding="async"
+        className="w-full rounded-md border border-[var(--blog-border)] shadow-sm"
       />
       {caption && (
         <figcaption className="mt-2 text-center text-sm text-[var(--blog-text-muted)]">

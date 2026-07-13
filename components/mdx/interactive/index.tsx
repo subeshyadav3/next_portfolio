@@ -13,20 +13,7 @@ export interface AccordionItem {
 }
 
 interface AccordionProps {
-  /** Programmatic API: array of { title, body } items. */
   items?: AccordionItem[];
-  /**
-   * MDX-friendly API: section title for a single accordion item whose body
-   * is rendered as children. Posts are written as:
-   *
-   *   <Accordion title="Practice Questions">
-   *     …markdown body…
-   *   </Accordion>
-   *
-   * which previously rendered as an empty box because the component only
-   * understood `items`. This prop + children support restores the missing
-   * content.
-   */
   title?: string;
   children?: ReactNode;
   defaultOpen?: number;
@@ -34,19 +21,17 @@ interface AccordionProps {
 
 export function Accordion(props: AccordionProps) {
   const { defaultOpen } = props;
-
   const items: AccordionItem[] = props.items
     ? props.items
     : props.children !== undefined
       ? [{ title: props.title ?? "", body: props.children }]
       : [];
 
-  const [open, setOpen] = useState<number | null>(defaultOpen ?? 0);
-
+  const [open, setOpen] = useState<number | null>(defaultOpen ?? null);
   if (items.length === 0) return null;
 
   return (
-    <div className="my-6 divide-y divide-[var(--blog-border)] rounded-lg border border-[var(--blog-border)] not-prose">
+    <div className="my-6 divide-y divide-[var(--blog-border)] rounded-lg border border-[var(--blog-border)] not-prose overflow-hidden">
       {items.map((it, i) => {
         const isOpen = open === i;
         return (
@@ -54,16 +39,20 @@ export function Accordion(props: AccordionProps) {
             <button
               type="button"
               onClick={() => setOpen(isOpen ? null : i)}
-              className="flex w-full items-center justify-between gap-4 px-4 py-3 text-left font-medium text-[var(--blog-text)] hover:bg-[var(--blog-surface)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--blog-accent)]"
+              className="flex w-full items-center justify-between gap-4 px-4 py-3.5 text-left text-[0.9375rem] font-medium text-[var(--blog-text)] hover:bg-[var(--blog-bg)] dark:hover:bg-[var(--blog-surface)] transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[var(--blog-accent)]"
               aria-expanded={isOpen}
             >
               <span>{it.title}</span>
               <ChevronDown
-                className={`h-4 w-4 transition-transform ${isOpen ? "rotate-180" : ""}`}
+                className={`h-4 w-4 shrink-0 text-[var(--blog-text-muted)] transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
+                aria-hidden="true"
               />
             </button>
+
             {isOpen && (
-              <div className="px-4 pb-4 text-[var(--blog-text-secondary)]">{it.body}</div>
+              <div className="px-4 pb-4 pt-1 text-[0.9375rem] leading-relaxed text-[var(--blog-text-secondary)]">
+                {it.body}
+              </div>
             )}
           </div>
         );
@@ -73,7 +62,7 @@ export function Accordion(props: AccordionProps) {
 }
 
 /* -------------------------------------------------------------------------- */
-/*  FAQ — semantic wrapper that emits FAQPage JSON-LD                         */
+/*  FAQ — semantic + FAQPage JSON-LD schema                                   */
 /* -------------------------------------------------------------------------- */
 
 interface FaqItem {
@@ -95,7 +84,10 @@ export function FAQ({ items, children }: FAQProps) {
     mainEntity: faqItems.map((it) => ({
       "@type": "Question",
       name: it.question,
-      acceptedAnswer: { "@type": "Answer", text: stringifyAnswer(it.answer) },
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: stringifyAnswer(it.answer),
+      },
     })),
   };
   return (

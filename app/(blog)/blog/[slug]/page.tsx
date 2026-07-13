@@ -105,7 +105,7 @@ export default async function BlogPostPage({ params }: PageProps) {
   ]);
 
   return (
-    <>
+    <div>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
@@ -296,6 +296,6 @@ export default async function BlogPostPage({ params }: PageProps) {
       )}
 
       <BackToTop />
-    </>
+    </div>
   );
 }

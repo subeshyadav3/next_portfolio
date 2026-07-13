@@ -1,5 +1,10 @@
 import type { ReactNode } from "react";
-import { GraduationCap, FlaskConical, Target, ListChecks } from "lucide-react";
+import {
+  GraduationCap,
+  FlaskConical,
+  Target,
+  ListChecks,
+} from "lucide-react";
 
 /* -------------------------------------------------------------------------- */
 /*  Definition                                                                */
@@ -12,15 +17,16 @@ interface DefinitionProps {
 
 export function Definition({ term, children }: DefinitionProps) {
   return (
-    <div className="my-6 rounded-lg border border-indigo-200 dark:border-indigo-900 bg-indigo-50/50 dark:bg-indigo-950/20 p-4 not-prose">
-      <dt className="text-sm font-semibold uppercase tracking-wide text-indigo-700 dark:text-indigo-300">
-        Definition
-      </dt>
-      <dd className="mt-2">
-        <span className="text-lg font-bold text-[var(--blog-text)]">{term}</span>
+    <div className="my-6 rounded-md border border-[var(--blog-border)] border-l-4 border-l-[var(--blog-accent)] bg-[var(--blog-accent-tint)] dark:bg-[var(--blog-accent-tint)] px-4 py-3 not-prose">
+      <div className="mb-1.5 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[var(--blog-accent)]">
+        <GraduationCap className="h-3.5 w-3.5" aria-hidden="true" />
+        <span>Definition</span>
+      </div>
+      <p className="text-[0.9375rem] text-[var(--blog-text)] leading-relaxed">
+        <span className="font-semibold">{term}</span>
         <span className="mx-2 text-[var(--blog-text-muted)]">—</span>
         <span className="text-[var(--blog-text-secondary)]">{children}</span>
-      </dd>
+      </p>
     </div>
   );
 }
@@ -36,12 +42,14 @@ interface ExampleProps {
 
 export function Example({ title, children }: ExampleProps) {
   return (
-    <div className="my-6 rounded-lg border border-emerald-200 dark:border-emerald-900 bg-emerald-50/50 dark:bg-emerald-950/20 p-4 not-prose">
-      <div className="mb-2 flex items-center gap-2 text-sm font-semibold uppercase tracking-wide text-emerald-700 dark:text-emerald-300">
-        <FlaskConical className="h-4 w-4" />
+    <div className="my-6 rounded-md border border-[var(--blog-border)] border-l-4 border-l-[var(--blog-accent)] bg-[var(--blog-accent-tint)] dark:bg-[var(--blog-accent-tint)] px-4 py-3 not-prose">
+      <div className="mb-1.5 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[var(--blog-accent)]">
+        <FlaskConical className="h-3.5 w-3.5" aria-hidden="true" />
         <span>{title ?? "Example"}</span>
       </div>
-      <div className="prose-sm text-[var(--blog-text)]">{children}</div>
+      <div className="text-[0.9375rem] leading-relaxed text-[var(--blog-text-secondary)] [&>p]:my-2 [&>p:first-child]:mt-0 [&>p:last-child]:mb-0">
+        {children}
+      </div>
     </div>
   );
 }
@@ -52,12 +60,14 @@ export function Example({ title, children }: ExampleProps) {
 
 export function ExamTip({ children }: { children: ReactNode }) {
   return (
-    <div className="my-6 rounded-lg border-2 border-dashed border-amber-400 dark:border-amber-700 bg-amber-50/40 dark:bg-amber-950/20 p-4 not-prose">
-      <div className="mb-2 flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-amber-800 dark:text-amber-300">
-        <Target className="h-4 w-4" />
+    <div className="my-6 rounded-md border border-[var(--blog-border)] border-l-4 border-l-[var(--blog-accent)] bg-[var(--blog-accent-tint)] dark:bg-[var(--blog-accent-tint)] px-4 py-3 not-prose">
+      <div className="mb-1.5 flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[var(--blog-accent)]">
+        <Target className="h-3.5 w-3.5" aria-hidden="true" />
         <span>Exam Tip</span>
       </div>
-      <div className="text-[var(--blog-text)]">{children}</div>
+      <div className="text-[0.9375rem] leading-relaxed text-[var(--blog-text)] [&>p]:my-2 [&>p:first-child]:mt-0 [&>p:last-child]:mb-0">
+        {children}
+      </div>
     </div>
   );
 }
@@ -73,12 +83,12 @@ interface KeyPointsProps {
 
 export function KeyPoints({ title, children }: KeyPointsProps) {
   return (
-    <div className="my-6 rounded-lg border border-sky-200 dark:border-sky-900 bg-sky-50/30 dark:bg-sky-950/20 p-4 not-prose">
-      <div className="mb-3 flex items-center gap-2 text-sm font-bold uppercase tracking-wide text-sky-800 dark:text-sky-300">
-        <ListChecks className="h-4 w-4" />
+    <div className="my-6 rounded-md border border-[var(--blog-border)] border-l-4 border-l-[var(--blog-accent)] bg-[var(--blog-accent-tint)] dark:bg-[var(--blog-accent-tint)] px-4 py-3 not-prose">
+      <div className="mb-1.5 flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[var(--blog-accent)]">
+        <ListChecks className="h-3.5 w-3.5" aria-hidden="true" />
         <span>{title ?? "Key Points"}</span>
       </div>
-      <div className="text-[var(--blog-text)] [&>ul]:list-disc [&>ul]:pl-5 [&>ul>li]:my-1">
+      <div className="text-[0.9375rem] leading-relaxed text-[var(--blog-text-secondary)] [&>ul]:list-disc [&>ul]:pl-5 [&>ul>li]:my-1.5">
         {children}
       </div>
     </div>
@@ -86,7 +96,7 @@ export function KeyPoints({ title, children }: KeyPointsProps) {
 }
 
 /* -------------------------------------------------------------------------- */
-/*  Quote                                                                     */
+/*  Quote — IMPROVED with decorative mark + proper bg                        */
 /* -------------------------------------------------------------------------- */
 
 interface QuoteProps {
@@ -96,10 +106,16 @@ interface QuoteProps {
 
 export function Quote({ author, children }: QuoteProps) {
   return (
-    <blockquote className="my-6 border-l-4 border-[var(--blog-accent)] bg-[var(--blog-surface)] px-5 py-4 italic text-[var(--blog-text)] not-prose">
-      <div className="text-lg leading-relaxed">{children}</div>
+    <blockquote className="relative my-6 rounded-r-md border-l-4 border-[var(--blog-accent)] bg-[var(--blog-bg)] dark:bg-[var(--blog-surface)] px-5 py-4 not-prose">
+      <span
+        className="absolute left-3 top-1 text-3xl leading-none text-[var(--blog-accent)] opacity-25 select-none font-serif"
+        aria-hidden="true"
+      >"</span>
+      <div className="pl-2 text-[0.9375rem] leading-relaxed text-[var(--blog-text-secondary)] italic [&>p]:my-1.5 [&>p:first-child]:mt-0 [&>p:last-child]:mb-0">
+        {children}
+      </div>
       {author && (
-        <footer className="mt-2 text-sm font-medium not-italic text-[var(--blog-text-muted)]">
+        <footer className="mt-3 pl-2 text-xs font-medium text-[var(--blog-text-muted)] not-italic">
           — {author}
         </footer>
       )}
@@ -108,27 +124,14 @@ export function Quote({ author, children }: QuoteProps) {
 }
 
 /* -------------------------------------------------------------------------- */
-/*  PullQuote (large display quote)                                           */
+/*  PullQuote                                                                 */
 /* -------------------------------------------------------------------------- */
 
 export function PullQuote({ children }: { children: ReactNode }) {
   return (
-    <blockquote className="my-8 px-6 text-center font-serif text-2xl font-semibold leading-snug text-[var(--blog-text)] not-prose">
-      <span aria-hidden className="text-5xl text-[var(--blog-accent)]">“</span>
+    <blockquote className="my-8 border-y-2 border-[var(--blog-accent)] px-6 py-5 text-center font-serif text-xl font-medium leading-snug text-[var(--blog-text)] not-prose opacity-90">
       {children}
-      <span aria-hidden className="text-5xl text-[var(--blog-accent)]">”</span>
     </blockquote>
   );
 }
 
-/* -------------------------------------------------------------------------- */
-/*  Notes (alias for the Admonitions note style, kept here for parity)         */
-/* -------------------------------------------------------------------------- */
-
-export { Notes } from "@/components/mdx/admonitions";
-
-/* -------------------------------------------------------------------------- */
-/*  GraduationCap re-export so authors can use it directly                    */
-/* -------------------------------------------------------------------------- */
-
-export { GraduationCap };

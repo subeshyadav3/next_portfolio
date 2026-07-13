@@ -53,6 +53,7 @@ export interface NormalizedTag {
   name: string;
   slug: string;
   count: number;
+  description?: string | null;
 }
 
 export interface NormalizedArchiveYear {
