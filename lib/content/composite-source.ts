@@ -269,7 +269,7 @@ function mergeCategoryCounts(
   db: NormalizedCategory[] | undefined
 ): NormalizedCategory[] {
   const map = new Map<string, NormalizedCategory>();
-  for (const c of fs) map.set(c.slug, { ...c, count: 0 });
+  for (const c of fs) map.set(c.slug, { ...c }); // start with FS counts intact
   if (db) {
     for (const c of db) {
       const existing = map.get(c.slug);
@@ -285,7 +285,7 @@ function mergeTagCounts(
   db: NormalizedTag[] | undefined
 ): NormalizedTag[] {
   const map = new Map<string, NormalizedTag>();
-  for (const t of fs) map.set(t.slug, { ...t, count: 0 });
+  for (const t of fs) map.set(t.slug, { ...t }); // start with FS counts intact
   if (db) {
     for (const t of db) {
       const existing = map.get(t.slug);
