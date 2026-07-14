@@ -35,7 +35,7 @@ export default function Footer() {
   return (
     <footer
       ref={footerRef}
-      className="py-16 px-6 sm:px-0 relative"
+      className="py-16 px-4 sm:px-6 relative overflow-hidden"
       style={{ borderTop: "1px solid var(--border)" }}
     >
       <div className="max-w-[900px] mx-auto">

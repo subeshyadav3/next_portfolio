@@ -104,8 +104,9 @@ export function DownloadButton({ href, children, filename }: DownloadButtonProps
         <a
           href={href}
           download={filename || true}
-          className="inline-flex shrink-0 items-center gap-2 rounded-lg bg-[var(--blog-accent)] px-5 py-2.5 text-sm font-bold text-white shadow-sm transition-all hover:opacity-90 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--blog-accent)] focus-visible:ring-offset-2"
-          style={{ textDecoration: "none" }}
+          className="inline-flex shrink-0 items-center gap-2 rounded-lg bg-[var(--blog-accent)] px-5 py-2.5 text-sm font-bold shadow-sm transition-all hover:opacity-90 hover:shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--blog-accent)] focus-visible:ring-offset-2"
+          // Inline color overrides `.blog-prose a { color: var(--blog-accent) }` which would otherwise make the white text invisible on the accent background.
+          style={{ color: "white", textDecoration: "none" }}
         >
           <svg
             className="h-4 w-4"

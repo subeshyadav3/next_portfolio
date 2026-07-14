@@ -89,10 +89,13 @@
 /* Scroll behavior */
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
+  max-width: 100vw;
 }
 
 body {
   overflow-x: clip;
+  max-width: 100vw;
 }
 
 /* ============================================================
@@ -373,7 +376,8 @@ body {
   background-color: var(--bg-base);
   color: var(--text-primary);
   font-family: var(--font-inter);
-  overflow-x: hidden;
+  overflow-x: clip;
+  max-width: 100vw;
   scrollbar-width: thin;
   scrollbar-color: #3dd68c #0d1117;
 }

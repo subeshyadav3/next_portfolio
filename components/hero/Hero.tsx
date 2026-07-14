@@ -163,7 +163,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen flex items-center px-6 sm:px-0 relative overflow-hidden"
+      className="min-h-screen flex items-center px-4 sm:px-6 md:px-0 relative overflow-hidden"
     >
       {/* Particle background */}
       <ParticleBackground />
