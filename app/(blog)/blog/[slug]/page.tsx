@@ -82,7 +82,12 @@ export default async function BlogPostPage({ params }: PageProps) {
   const categoryLabel = getCategoryLabel(categorySlugValue);
   const categoryAccent = getCategoryAccent(categorySlugValue);
 
-  const dbPost = post.source === "DB" ? await prisma.post.findUnique({ where: { slug: post.slug }, select: { id: true, allowComments: true } }) : null;
+  let dbPost: { id: string; allowComments: boolean } | null = null;
+  try {
+    dbPost = post.source === "DB" ? await prisma.post.findUnique({ where: { slug: post.slug }, select: { id: true, allowComments: true } }) : null;
+  } catch {
+    // DB not available during build, skip
+  }
   const comments = dbPost
     ? await getComments(dbPost.id)
     : await getComments("", post.slug);

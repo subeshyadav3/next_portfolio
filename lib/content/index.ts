@@ -9,8 +9,6 @@
  */
 
 import { CompositeSource } from "./composite-source";
-import { MdxFileSource } from "./mdx-file-source";
-import { PrismaPostSource } from "./prisma-post-source";
 
 export type {
   NormalizedPost,

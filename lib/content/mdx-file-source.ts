@@ -81,7 +81,7 @@ function readAllFromDisk(): NormalizedPost[] {
 
 function summarize(p: NormalizedPost): NormalizedPostSummary {
   // Strip content for listings — saves memory at 5k posts.
-  const { content, ...summary } = p;
+  const { content: _, ...summary } = p;
   return summary;
 }
 
@@ -138,7 +138,7 @@ export class MdxFileSource implements PostSource {
 
   async get(
     slug: string,
-    opts?: { includeUnpublished?: boolean }
+    _opts?: { includeUnpublished?: boolean }
   ): Promise<NormalizedPost | null> {
     const all = await getAllCached();
     return all.find((p) => p.slug === slug) ?? null;
@@ -315,7 +315,7 @@ export class MdxFileSource implements PostSource {
     return all.slice(0, count).map(summarize);
   }
 
-  async invalidate(slug?: string): Promise<void> {
+  async invalidate(_slug?: string): Promise<void> {
     const { revalidateTag } = await import("next/cache");
     revalidateTag("posts:mdx");
   }

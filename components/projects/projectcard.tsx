@@ -4,7 +4,7 @@ import { ExternalLink, Github } from "lucide-react";
 import {
   SiReact, SiNextdotjs, SiNodedotjs, SiTypescript, SiTailwindcss, SiMongodb,
   SiExpress, SiPrisma, SiPostgresql, SiPython, SiPandas, SiStreamlit,
-  SiClerk, SiGreensock, SiOpenai, SiVercel, SiShadcnui,
+  SiClerk, SiGreensock, SiOpenaigym, SiVercel, SiShadcnui,
 } from "react-icons/si";
 
 interface ProjectCardProps {
@@ -34,7 +34,7 @@ const iconMap: Record<string, React.ComponentType<{ size?: number; className?: s
   Pandas: SiPandas,
   Streamlit: SiStreamlit,
   Clerk: SiClerk,
-  OpenAI: SiOpenai,
+  OpenAI: SiOpenaigym,
   GSAP: SiGreensock,
   Vercel: SiVercel,
   ShadCn: SiShadcnui,

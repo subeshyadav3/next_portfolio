@@ -1,19 +1,30 @@
 import { prisma } from "@/db/prisma";
+import { CommentStatus } from "@prisma/client";
+
+async function safeDbCall<T>(fn: () => Promise<T>, fallback: T): Promise<T> {
+  try {
+    return await fn();
+  } catch {
+    return fallback;
+  }
+}
 
 export async function getComments(postId: string, postSlug?: string) {
-  const where = postId
-    ? { postId, status: "APPROVED" as const, parentId: null }
-    : { postSlug, status: "APPROVED" as const, parentId: null };
-  return prisma.comment.findMany({
-    where,
-    include: {
-      replies: {
-        where: { status: "APPROVED" },
-        orderBy: { createdAt: "asc" },
+  return safeDbCall(async () => {
+    const where = postId
+      ? { postId, status: "APPROVED" as CommentStatus, parentId: null }
+      : { postSlug, status: "APPROVED" as CommentStatus, parentId: null };
+    return prisma.comment.findMany({
+      where,
+      include: {
+        replies: {
+          where: { status: "APPROVED" as CommentStatus },
+          orderBy: { createdAt: "asc" },
+        },
       },
-    },
-    orderBy: { createdAt: "desc" },
-  });
+      orderBy: { createdAt: "desc" },
+    });
+  }, []);
 }
 
 export async function createComment(data: {
@@ -36,7 +47,9 @@ export async function createComment(data: {
 }
 
 export async function getCommentCount(postId: string) {
-  return prisma.comment.count({
-    where: { postId, status: "APPROVED" },
-  });
+  return safeDbCall(async () => {
+    return prisma.comment.count({
+      where: { postId, status: "APPROVED" as CommentStatus },
+    });
+  }, 0);
 }

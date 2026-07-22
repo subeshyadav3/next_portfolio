@@ -13,7 +13,6 @@ export function generateArticleSchema(
   }
 ) {
   const hasEdu = edu?.classLevel || edu?.subject || edu?.board || edu?.examType || edu?.difficulty;
-  const types = hasEdu ? ["BlogPosting", "LearningResource"] : ["BlogPosting"];
   return {
     "@context": "https://schema.org",
     "@type": hasEdu ? ["BlogPosting", "LearningResource"] : "BlogPosting",

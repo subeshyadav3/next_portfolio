@@ -55,7 +55,7 @@ function toNormalized(p: DbPost): NormalizedPost {
 }
 
 function summarize(p: NormalizedPost): NormalizedPostSummary {
-  const { content, ...s } = p;
+  const { content: _, ...s } = p;
   return s;
 }
 

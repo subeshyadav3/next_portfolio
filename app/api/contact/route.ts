@@ -1,9 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { Resend } from 'resend';
 import { SITE_URL } from '@/lib/site-config';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
 const SITE_DOMAIN = SITE_URL.replace('https://', '');
+
+function getResend() {
+  // Lazy init so the build doesn't fail when env var is missing
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const { Resend } = require('resend');
+  return new Resend(process.env.RESEND_API_KEY);
+}
 
 export async function POST(req: NextRequest) {
   try {
@@ -28,6 +33,7 @@ export async function POST(req: NextRequest) {
       other: 'Other',
     };
 
+    const resend = getResend();
     const data = await resend.emails.send({
       from: `Neb Master Contact <info@${SITE_DOMAIN}>`,
       to: 'subeshgaming@gmail.com',

@@ -14,7 +14,6 @@
  * `@/lib/content`.
  */
 import { posts as defaultSource } from "@/lib/content";
-import type { PostSource } from "@/lib/content";
 import type {
   NormalizedPost as Post,
   NormalizedPostSummary as PostSummary,
