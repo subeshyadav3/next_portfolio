@@ -1,0 +1,171 @@
+import { MDXRemote } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
+import remarkDirective from "remark-directive";
+import remarkMath from "remark-math";
+import rehypeRaw from "rehype-raw";
+import rehypeSlug from "rehype-slug";
+import rehypeAutolinkHeadings from "rehype-autolink-headings";
+import rehypeKatex from "rehype-katex";
+import rehypeExternalLinks from "rehype-external-links";
+
+import { mdxComponents } from "@/components/blog/mdx-components";
+import { TocItem } from "./types";
+import { slugifyText } from "./slugs";
+
+
+/* -------------------------------------------------------------------------- */
+/*  Compile MDX source → React tree                                           */
+/* -------------------------------------------------------------------------- */
+
+export async function compilePostMdx(
+  source: string,
+  category: string
+): Promise<React.ReactNode> {
+  // Pre-process the source: legacy MDX/markdown mixes HTML and MDX.
+  // MDX requires self-closing tags like <br />, but many existing posts
+  // use HTML <br>. Normalize them so MDX can parse without choking.
+  let processed = normalizeLegacyHtml(source);
+
+  // Strip "## Table of Contents" section — the <TableOfContents> React
+  // component already renders this, so the MDX version creates visual
+  // duplication below the footer.
+  processed = stripTocSection(processed);
+
+  return (
+    <MDXRemote
+      source={processed}
+      components={mdxComponents(category)}
+      options={{
+        mdxOptions: {
+          remarkPlugins: [remarkGfm, remarkDirective, remarkMath],
+          rehypePlugins: [
+            [
+              rehypeRaw,
+              {
+                // Allow MDX-specific nodes to pass through unprocessed
+                passThrough: [
+                  "mdxJsxFlowElement",
+                  "mdxJsxTextElement",
+                  "mdxFlowExpression",
+                  "mdxTextExpression",
+                  "mdxjsEsm",
+                ],
+              },
+            ],
+            rehypeSlug,
+            [
+              rehypeAutolinkHeadings,
+              { behavior: "append", properties: { className: ["heading-anchor"] } },
+            ],
+            rehypeKatex,
+            [
+              rehypeExternalLinks,
+              { target: "_blank", rel: ["noopener", "noreferrer", "nofollow"] },
+            ],
+            // NOTE: rehype-sanitize is intentionally omitted here.
+            // MDX content is authored/trusted (not user input), and sanitization
+            // strips HTML rendered by custom components (aside, dt, dd, footer,
+            // button, dl, etc.), causing entire content blocks to disappear.
+          ],
+        },
+        parseFrontmatter: false,
+      }}
+    />
+  );
+}
+
+/* -------------------------------------------------------------------------- */
+/*  Source normalization — handle legacy HTML in MDX                         */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Tags that must be self-closed in MDX (and JSX). Convert <br> → <br />,
+ * <hr> → <hr />, <img ...> → <img ... />. The trailing `>` becomes ` />`
+ * unless it's already self-closed.
+ */
+const SELF_CLOSING_TAGS = new Set([
+  "br",
+  "hr",
+  "img",
+  "input",
+  "meta",
+  "link",
+  "source",
+  "track",
+  "wbr",
+  "col",
+  "area",
+  "base",
+  "embed",
+  "param",
+]);
+
+function normalizeLegacyHtml(src: string): string {
+  // 1. <tag> → <tag /> for self-closing tags (only when not already closed)
+  const out = src.replace(
+    /<(\/?)([a-zA-Z][a-zA-Z0-9]*)([^<>]*?)(\/?)>/g,
+    (match, closing, tag, attrs, selfClose) => {
+      const lower = tag.toLowerCase();
+      if (closing) return match; // already a closing tag like </p>
+      if (selfClose) return match; // already self-closing
+      if (SELF_CLOSING_TAGS.has(lower)) {
+        // Strip a trailing space if any, then add ` />`
+        const trimmed = match.replace(/>\s*$/, "");
+        return `${trimmed} />`;
+      }
+      return match;
+    }
+  );
+  // 2. Some posts have inline `</p>` issues or stray <font> tags. The
+  //    sanitizer handles <font> at the rehype layer.
+  return out;
+}
+
+/* -------------------------------------------------------------------------- */
+/*  Strip "## Table of Contents" from MDX content                            */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Removes a markdown "## Table of Contents" heading + its bullet-list of
+ * links.  The <TableOfContents> React component already renders this, so
+ * the MDX version is redundant and causes visual duplication below the
+ * footer.
+ */
+function stripTocSection(src: string): string {
+  // Strip ALL "## Table of Contents" blocks — matches the heading and every
+  // subsequent line that contains a markdown link [...]/(...)/--- divider,
+  // until a blank-line or non-link line is encountered.  Global flag removes
+  // every occurrence (some posts have the TOC duplicated).
+  return src.replace(
+    /^##\s+Table\s+of\s+Contents\s*\n(?:.*?\[.*?\]\(.*?\).*\n?)*\n?/gm,
+    ""
+  );
+}
+
+/* -------------------------------------------------------------------------- */
+/*  Headings / TOC                                                            */
+/* -------------------------------------------------------------------------- */
+
+export function slugifyHeading(text: string): string {
+  return slugifyText(
+    text
+      .replace(/\*\*/g, "")
+      .replace(/__/g, "")
+      .trim()
+  );
+}
+
+export function extractTableOfContents(content: string): TocItem[] {
+  const headingRegex = /^(#{2,4})\s+(.+)$/gm;
+  const items: TocItem[] = [];
+  let match;
+
+  while ((match = headingRegex.exec(content)) !== null) {
+    const level = match[1].length;
+    const text = match[2].replace(/\*\*/g, "").replace(/__/g, "").trim();
+    const id = slugifyHeading(text);
+    items.push({ id, text, level });
+  }
+
+  return items;
+}
