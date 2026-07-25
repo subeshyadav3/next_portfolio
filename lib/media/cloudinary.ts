@@ -16,13 +16,11 @@ export const cldResponsive = (id: string, w: number) => cldUrl(id, `f_auto,q_aut
 export async function generateSignature(params: {
   folder?: string;
   publicId?: string;
-  source?: string;
   timestamp: number;
 }) {
   const signParams: Record<string, string | number> = {
     timestamp: params.timestamp,
     folder: params.folder ?? "portfolio",
-    source: params.source ?? "uw",
   };
   if (params.publicId) signParams.public_id = params.publicId;
 

@@ -10,7 +10,6 @@ export async function GET(request: NextRequest) {
   const signature = await generateSignature({
     timestamp,
     folder,
-    source: "uw",
     ...(publicId ? { publicId } : {}),
   });
 
