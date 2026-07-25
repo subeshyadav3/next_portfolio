@@ -4,13 +4,17 @@ import { prisma } from "@/db/prisma";
 
 const getDashboardStats = unstable_cache(
   async () => {
-    const [postCount, draftCount, categoryCount, tagCount] = await Promise.all([
-      prisma.post.count(),
-      prisma.post.count({ where: { status: "DRAFT" } }),
-      prisma.category.count(),
-      prisma.tag.count(),
-    ]);
-    return { postCount, draftCount, categoryCount, tagCount };
+    try {
+      const [postCount, draftCount, categoryCount, tagCount] = await Promise.all([
+        prisma.post.count(),
+        prisma.post.count({ where: { status: "DRAFT" } }),
+        prisma.category.count(),
+        prisma.tag.count(),
+      ]);
+      return { postCount, draftCount, categoryCount, tagCount };
+    } catch {
+      return { postCount: null, draftCount: null, categoryCount: null, tagCount: null };
+    }
   },
   ["admin:dashboard"],
   { revalidate: 60, tags: ["admin:dashboard"] }
@@ -35,6 +39,17 @@ export default async function AdminDashboard() {
         <StatCard label="Categories" value={categoryCount} />
         <StatCard label="Tags" value={tagCount} />
       </div>
+    </div>
+  );
+}
+
+function StatCard({ label, value }: { label: string; value: number | null }) {
+  return (
+    <div className="rounded-lg border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
+      <p className="text-sm font-medium text-gray-500 dark:text-gray-400">{label}</p>
+      <p className="mt-2 text-3xl font-bold text-gray-900 dark:text-white">
+        {value !== null ? value : "--"}
+      </p>
     </div>
   );
 }
