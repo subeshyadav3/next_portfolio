@@ -120,7 +120,8 @@ export async function createPostAction(formData: FormData) {
 
   await createPost({ ...parsed, authorId, userId: user.id });
   revalidatePath("/admin/posts");
-  revalidatePath("/blog");
+  revalidatePath("/blog", "layout");
+  revalidatePath("/blog/[slug]", "page");
   revalidateTag("posts:list");
   revalidateTag("posts:featured");
   revalidateTag("posts:popular");
@@ -148,7 +149,8 @@ export async function updatePostAction(id: string, formData: FormData) {
   await getPostById(id);
   await updatePost(id, parsed);
   revalidatePath("/admin/posts");
-  revalidatePath("/blog");
+  revalidatePath("/blog", "layout");
+  revalidatePath("/blog/[slug]", "page");
   revalidateTag("posts:list");
   revalidateTag("posts:featured");
   revalidateTag("posts:popular");
@@ -163,6 +165,8 @@ export async function deletePostAction(id: string) {
   await requireAuth();
   await deletePostService(id);
   revalidatePath("/admin/posts");
+  revalidatePath("/blog", "layout");
+  revalidatePath("/blog/[slug]", "page");
   revalidateTag("posts:list");
   revalidateTag("posts:featured");
   revalidateTag("posts:popular");
@@ -176,6 +180,8 @@ export async function restorePostAction(id: string) {
   await requireAuth();
   await restorePostService(id);
   revalidatePath("/admin/posts");
+  revalidatePath("/blog", "layout");
+  revalidatePath("/blog/[slug]", "page");
   revalidateTag("posts:list");
   revalidateTag("posts:featured");
   revalidateTag("posts:popular");
