@@ -229,6 +229,9 @@ model Post {
   readingTimeMin  Int        @default(0)
   wordCount       Int        @default(0)
 
+  // Analytics (admin only — never shown on public site)
+  views           Int        @default(0)
+
   // Status & scheduling
   status          PostStatus @default(DRAFT)
   publishedAt     DateTime?

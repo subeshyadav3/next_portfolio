@@ -37,6 +37,7 @@ import { ReadingProgress } from "@/components/blog/ReadingProgress";
 import EducationalBadges from "@/components/blog/EducationalBadges";
 import { WasThisHelpful } from "@/components/blog/WasThisHelpful";
 import { PostComments } from "@/components/blog/PostComments";
+import PostViewTracker from "@/components/blog/PostViewTracker";
 import { getComments } from "@/services/comments.service";
 import { prisma } from "@/db/prisma";
 
@@ -112,6 +113,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   return (
     <div>
+      {dbPost && <PostViewTracker slug={post.slug} />}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}

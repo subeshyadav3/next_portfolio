@@ -50,6 +50,7 @@ export default async function AdminPostsPage({
               <Th>Status</Th>
               <Th>Category</Th>
               <Th>Author</Th>
+              <Th>Views</Th>
               <Th>Date</Th>
               <Th>Actions</Th>
             </tr>
@@ -78,6 +79,9 @@ export default async function AdminPostsPage({
                 </td>
                 <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-400">
                   {post.author?.name}
+                </td>
+                <td className="px-4 py-3 text-sm tabular-nums text-gray-600 dark:text-gray-400">
+                  {post.views ?? 0}
                 </td>
                 <td className="px-4 py-3 text-sm text-gray-600 dark:text-gray-400">
                   {new Date(post.createdAt).toLocaleDateString()}

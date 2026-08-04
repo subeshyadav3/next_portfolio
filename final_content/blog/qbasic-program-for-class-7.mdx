@@ -1,134 +1,316 @@
 ---
-title: Qbasic program for class 7 | class 7
-description: 'Class 7 QBASIC Qbasic: It is a high-level programming language'
+title: QBASIC Programs for Class 7 – Complete Guide with Examples
+description: 'Complete QBASIC guide for Class 7 students — what QBASIC is, variables and operators, control statements, and 15+ worked-out programs with explanations for school exams.'
 slug: qbasic-program-for-class-7
 published: '2019-01-19T09:34:00.003+05:45'
-updated: '2026-06-30T14:11:21.873Z'
+updated: '2026-08-04T00:00:00.000Z'
 category: class 7
 language: en
 tags:
   - qbasic
-  - program
-  - class
-  - high-level
+  - class 7 computer
   - programming
+  - qbasic programs
+  - high-level language
 author: Subesh Yadav
 authorUrl: 'https://subeshyadav.com.np/blog/author'
 image: ''
-readingTime: 4
+readingTime: 10
 featured: false
 ---
 
 ## Class 7 QBASIC
 
-  
+### Qbasic:
 
-###  Qbasic: 
+It is a high-level programming language. It is one of the most popular programming languages in the BASIC family. BASIC stands for **Beginners All-Purpose Symbolic Instruction Code**. The BASIC programming language was developed by Professors John George Kemeny and Thomas Kurtz at the Dartmouth College, USA in 1964 AD. The BASIC language has different versions: GWBASIC, TURBO QBASIC, BASICA, Visual BASIC, and QBASIC.
 
-It is a high-level programming language. It is the most popular programming languages in the BASIC family. BASIC stands for Beginners All-Purpose Symbolic Instruction Code. The BASIC programming language was developed by Professors John George Kemeny and Thomaes at the Dartmouth College, USA in 1964 AD. The BASIC languages have different versions: GWBASIC, TURBO QBASIC, BASICA, visual BASIC, and QBASIC.
+QBASIC was developed by Microsoft Corporation, the USA in 1985. It is a high-level programming language. The high-level programming languages are similar to the English language. So it is easy to write programs using a high-level language. QBASIC is very simple and easy to understand. So, this language is most popular for beginners such as school students. Once you learn QBASIC programming, it will be helpful to learn other high-level programming languages such as C, C++, Java, PHP etc.
 
-QBASIC was developed by Microsoft Corporation, the USA in 1985. It is a high-level programming language. The high-level programming languages are similar to the English language. So it is easy to write programs using a high-level language. QBASIC is very simple and easy to understand. So,  this language is most popular for beginners such as school students. Once you learn QBASIC programming, it will be helpful to learn other high-level programming languages such as c, c++, Java, PHP etc.
+---
 
-### Worked  Out  Examples:
+## The QBASIC Window
 
-1.A program to calculate an area of a triangle where the length of three sides is given.
+When you open QBASIC, you see two windows:
 
+- **Welcome dialog box** — press Enter to continue.
+- **Blue screen (Program window)** — where you type your program.
+
+To run a program, press **F5**. To save a program, press **F6** to move to the menu, choose File, then Save, or simply press **Alt + F** and select Save. To open an existing program, use File → Open.
+
+Every QBASIC program normally starts with **CLS** (clear screen) and ends with **END**.
+
+---
+
+## Variables and Data Types
+
+A variable is a named memory location that stores data. The value of a variable can change while the program runs.
+
+| Data type | Suffix | Example | Meaning |
+|---|---|---|---|
+| Numeric (integer/real) | none | `AGE = 12` | Stores numbers |
+| String (text) | `$` | `NAME$ = "Ram"` | Stores words or sentences |
+
+Rules for variable names in QBASIC:
+
+- A variable name can contain letters, digits and dots, but it must **start with a letter**.
+- It cannot be longer than 40 characters.
+- It must not be a reserved word (like PRINT, INPUT, END, IF).
+
+---
+
+## Operators Used in QBASIC
+
+### Arithmetic Operators
+
+| Operator | Meaning | Example |
+|---|---|---|
+| `+` | Addition | `S = A + B` |
+| `-` | Subtraction | `D = A - B` |
+| `*` | Multiplication | `P = L * B` |
+| `/` | Division | `Q = A / B` |
+| `^` | Power | `R = A ^ 2` |
+| `MOD` | Remainder after division | `R = 10 MOD 3` (result 1) |
+| `\` | Integer division | `Q = 7 \ 2` (result 3) |
+
+### Relational Operators
+
+Used to compare values: `=`, `>`, `<`, `>=`, `<=`, `<>` (not equal).
+
+### Keywords You Must Know
+
+- **CLS** — clears the screen
+- **INPUT** — takes data from the user
+- **PRINT** — displays output on the screen
+- **REM** — adds a remark (comment) to the program
+- **END** — ends the program
+
+---
+
+## Worked Out Examples (Class 7 Exam Programs)
+
+### 1. A program to calculate the area of a triangle where the length of three sides is given.
+
+```basic
 CLS
-
 INPUT "ENTER FIRST, SECOND, THIRD SIDE";A,B,C
-
 S=(A+B+C)/2
-
-AREA= (S\*(S-A)\*(S-B)\*(S-C))^(1/2)
-
+AREA= (S*(S-A)*(S-B)*(S-C))^(1/2)
 PRINT "AREA OF TRIANGLE"; AREA
-
 END
+```
 
-2\. WAP TO INPUT TWO DIFFERENT NUMBERS AND CALCULATE THEIR SUM AND PRODUCT.
+Here the program takes three sides from the user, calculates the semi-perimeter S, then applies Heron's formula to find the area.
 
+### 2. WAP to input two different numbers and calculate their sum and product.
+
+```basic
 CLS
-
-INPUT"ENTER FIRST AND SECOND NUMBER"; A, B
-
+INPUT "ENTER FIRST AND SECOND NUMBER"; A, B
 SUM= A+B
-
-PRODUCT= A\*B
-
+PRODUCT= A*B
 PRINT "SUM OF TWO NUMBERS"; SUM
-
-PRINT"PRODUCT OF TWO NUMBER": PRODUCT
-
+PRINT "PRODUCT OF TWO NUMBER"; PRODUCT
 END
+```
 
-3\. PROGRAM TO ENTER AND PRINT NAME, CASS,  ROLL NUMBER, AND SCHOOL NAME.  
-CLS  
-INPUT "NAME";N$  
-INPUT "CLASS";C$  
-INPUT "ROLL NO";R  
-INPUT "SCHOOL NAME";SN$  
-PRINT "NAME";N$  
-PRINT "CLASS";C$  
-PRINT "ROLL  NUMBER";R  
-PRINT "SCHOOL NAME";SN$  
-END  
-  
-4 WAP  TO CALCULATE THE AREA  OF RECTANGLE.
+### 3. Program to enter and print name, class, roll number, and school name.
 
-CLS  
-INPUT "ENTER LENGTH"; L  
-INPUT "ENTER BREADTH"; B  
-A= L\*B  
-PRINT "AREA OF RECTANGLE"; A  
-END  
-  
-5.WRITE A PROGRAM TO CHANGE THE TEMPERATURE FROM FAHRENHEIT TO CELCIUS  
-CLS  
-INPUT "ENTER THE TEMPERATURE IN  FAHRENHEIT"; F  
-C= (F-32) \* 5/9  
-PRINT "TEMPERATURE IN CELSIUS"; C  
-END  
-  
-6\. WAP TO CALCULATE SIMPLE INTEREST  
-CLS  
-INPUT "ENTER PRINCIPAL, TIME, RATE"; P, T, R  
-I= (P\*T\*R) /100  
-PRINT "SI"; I  
-END  
-  
-7\. WAP TO CALCULATE CIRCUMFERENCE OF CIRCLE.  
-CLS  
-INPUT "ENTER RADIUS"; R  
-PI= 22/7  
-C= S\*PI\*R  
-PRINT  "CIRCUMFERENCE IS"; C  
-END  
-  
-8\. WAP TO INPUT CP AND SP AND FIND THE PROFIT.  
-CLS  
-INPUT "ENTER CP AND SP"; CP, SP  
-PROFIT= CP-SP  
-PRINT "PROFIT IS"; PROFIT  
-END  
-  
-9\. WAP TO CALCULATE AND PRINT AREA OF FOUR WALS  
-CLS  
-INPUT "ENTER LENGTH, BREADTH, AND HEIGHT"; L, B, H  
-AREA = 2\*H\*(L+B)  
-PRINT "AREA OF FOUR WALLS"; AREA  
-END  
-  
-10\. WAP TO INPUT NEPALI CURRENCY AND CHANGE INTO INDIAN CURRENCY  
-CLS  
-INPUT "NEPALI CURRENCY"; NC  
-IC= NC/.6  
-PRINT "INDIAN CURRENCY "; IC  
-END  
-  
-INDIAN TO NEPALI  
-CLS  
-INPUT "INDIAN CURRENCY"; IC  
-NC= 1C\*1.6  
-PRINT "NEPALI   CURRENCY"; NC  
-END  
+```basic
+CLS
+INPUT "NAME";N$
+INPUT "CLASS";C$
+INPUT "ROLL NO";R
+INPUT "SCHOOL NAME";SN$
+PRINT "NAME";N$
+PRINT "CLASS";C$
+PRINT "ROLL NUMBER";R
+PRINT "SCHOOL NAME";SN$
+END
+```
+
+Note: N$, C$ and SN$ are string variables because they store text. R is a numeric variable.
+
+### 4. WAP to calculate the area of a rectangle.
+
+```basic
+CLS
+INPUT "ENTER LENGTH"; L
+INPUT "ENTER BREADTH"; B
+A= L*B
+PRINT "AREA OF RECTANGLE"; A
+END
+```
+
+### 5. Write a program to change the temperature from Fahrenheit to Celsius.
+
+```basic
+CLS
+INPUT "ENTER THE TEMPERATURE IN FAHRENHEIT"; F
+C= (F-32) * 5/9
+PRINT "TEMPERATURE IN CELSIUS"; C
+END
+```
+
+### 6. WAP to calculate simple interest.
+
+```basic
+CLS
+INPUT "ENTER PRINCIPAL, TIME, RATE"; P, T, R
+I= (P*T*R) /100
+PRINT "SIMPLE INTEREST"; I
+END
+```
+
+### 7. WAP to calculate the circumference of a circle.
+
+```basic
+CLS
+INPUT "ENTER RADIUS"; R
+PI = 22/7
+C = 2 * PI * R
+PRINT "CIRCUMFERENCE IS"; C
+END
+```
+
+### 8. WAP to input cost price (CP) and selling price (SP) and find the profit or loss.
+
+```basic
+CLS
+INPUT "ENTER CP AND SP"; CP, SP
+PROFIT = SP - CP
+PRINT "PROFIT IS"; PROFIT
+END
+```
+
+> **Remember:** Profit = Selling Price − Cost Price. If the result is negative, it is a loss.
+
+### 9. WAP to calculate and print the area of four walls.
+
+```basic
+CLS
+INPUT "ENTER LENGTH, BREADTH, AND HEIGHT"; L, B, H
+AREA = 2 * H * (L+B)
+PRINT "AREA OF FOUR WALLS"; AREA
+END
+```
+
+### 10. WAP to input Nepali currency and change it into Indian currency.
+
+```basic
+CLS
+INPUT "NEPALI CURRENCY"; NC
+IC = NC / 1.6
+PRINT "INDIAN CURRENCY"; IC
+END
+```
+
+### 11. WAP to input Indian currency and change it into Nepali currency.
+
+```basic
+CLS
+INPUT "INDIAN CURRENCY"; IC
+NC = IC * 1.6
+PRINT "NEPALI CURRENCY"; NC
+END
+```
+
+### 12. WAP to check whether a number is even or odd.
+
+```basic
+CLS
+INPUT "ENTER A NUMBER"; N
+IF N MOD 2 = 0 THEN
+  PRINT "THE NUMBER IS EVEN"
+ELSE
+  PRINT "THE NUMBER IS ODD"
+END IF
+END
+```
+
+### 13. WAP to find the greatest number among three numbers.
+
+```basic
+CLS
+INPUT "ENTER THREE NUMBERS"; A, B, C
+IF A > B AND A > C THEN
+  PRINT "GREATEST IS"; A
+ELSEIF B > C THEN
+  PRINT "GREATEST IS"; B
+ELSE
+  PRINT "GREATEST IS"; C
+END IF
+END
+```
+
+### 14. WAP to display numbers from 1 to 10 using a FOR loop.
+
+```basic
+CLS
+FOR I = 1 TO 10
+  PRINT I
+NEXT I
+END
+```
+
+### 15. WAP to display your name 5 times using a FOR loop.
+
+```basic
+CLS
+FOR I = 1 TO 5
+  PRINT "SUDESH"
+NEXT I
+END
+```
+
+---
+
+## Control Statements in QBASIC
+
+### IF...THEN...ELSE
+
+Used to make decisions. The computer checks the condition and runs only the matching block of statements.
+
+### FOR...NEXT
+
+Used to repeat a block of statements a fixed number of times. The loop variable starts from the initial value, runs the statements, and then increases by one until it reaches the final value.
+
+### WHILE...WEND
+
+Repeats statements as long as the condition remains true.
+
+---
+
+## Important Questions for Class 7 Exam
+
+### 1. What is QBASIC?
+
+QBASIC is a high-level programming language developed by Microsoft Corporation in 1985 AD. It is simple and easy to learn, so it is popular among school students.
+
+### 2. What does BASIC stand for?
+
+BASIC stands for Beginners All-Purpose Symbolic Instruction Code.
+
+### 3. Who developed QBASIC?
+
+QBASIC was developed by Microsoft Corporation.
+
+### 4. What is the function of the INPUT statement?
+
+The INPUT statement takes data from the user and stores it in a variable.
+
+### 5. What is the difference between a string and a numeric variable?
+
+A numeric variable stores numbers and has no suffix, while a string variable stores text and ends with a dollar sign ($).
+
+### 6. Why is CLS used at the beginning of a program?
+
+CLS clears the previous output from the screen so the program starts with a clean display.
+
+### 7. What is a high-level language?
+
+A high-level language is a programming language that uses English-like words and symbols, making it easy for humans to read and write programs.
+
+---
+
 **THANKS, IF QUESTION THEN COMMENT BELOW**
