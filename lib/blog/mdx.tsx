@@ -107,7 +107,7 @@ const SELF_CLOSING_TAGS = new Set([
 
 function normalizeLegacyHtml(src: string): string {
   // 1. <tag> → <tag /> for self-closing tags (only when not already closed)
-  const out = src.replace(
+  let out = src.replace(
     /<(\/?)([a-zA-Z][a-zA-Z0-9]*)([^<>]*?)(\/?)>/g,
     (match, closing, tag, attrs, selfClose) => {
       const lower = tag.toLowerCase();
@@ -121,7 +121,15 @@ function normalizeLegacyHtml(src: string): string {
       return match;
     }
   );
-  // 2. Some posts have inline `</p>` issues or stray <font> tags. The
+  // 2. Display math \[...\] → $$...$$. The installed remark-math v6 does NOT
+  //    recognize \[...\] delimiters, so braces like {Q} inside them get
+  //    treated as JSX expressions (ReferenceError: Q is not defined) and the
+  //    formulas render as broken LaTeX text. Convert to line-based $$ blocks,
+  //    which remark-math does tokenize as math.
+  out = out
+    .replace(/^\s*\\\[\s*$/gm, "$$$$")
+    .replace(/^\s*\\\]\s*$/gm, "$$$$");
+  // 3. Some posts have inline `</p>` issues or stray <font> tags. The
   //    sanitizer handles <font> at the rehype layer.
   return out;
 }
