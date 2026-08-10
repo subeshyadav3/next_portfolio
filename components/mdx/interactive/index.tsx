@@ -77,6 +77,7 @@ interface FAQProps {
 
 export function FAQ({ items, children }: FAQProps) {
   const faqItems = items ?? (children ? parseFaqItems(children) : []);
+  const [open, setOpen] = useState<number | null>(0);
 
   const schema = {
     "@context": "https://schema.org",
@@ -90,21 +91,44 @@ export function FAQ({ items, children }: FAQProps) {
       },
     })),
   };
+  if (faqItems.length === 0) return null;
   return (
     <div className="my-6 not-prose">
-      {faqItems.length > 0 && (
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-        />
-      )}
-      <dl className="divide-y divide-[var(--blog-border)] rounded-lg border border-[var(--blog-border)]">
-        {faqItems.map((it, i) => (
-          <div key={i} className="px-4 py-3">
-            <dt className="font-semibold text-[var(--blog-text)]">{it.question}</dt>
-            <dd className="mt-1 text-[var(--blog-text-secondary)]">{it.answer}</dd>
-          </div>
-        ))}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+      <dl className="divide-y divide-[var(--blog-border)] overflow-hidden rounded-lg border border-[var(--blog-border)]">
+        {faqItems.map((it, i) => {
+          const isOpen = open === i;
+          return (
+            <div key={i}>
+              <dt>
+                <button
+                  type="button"
+                  onClick={() => setOpen(isOpen ? null : i)}
+                  aria-expanded={isOpen}
+                  aria-controls={`faq-answer-${i}`}
+                  className="flex w-full items-center justify-between gap-4 px-4 py-3.5 text-left text-[0.9375rem] font-semibold text-[var(--blog-text)] transition-colors hover:bg-[var(--blog-bg)] dark:hover:bg-[var(--blog-surface)] focus:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-[var(--blog-accent)]"
+                >
+                  <span>{it.question}</span>
+                  <ChevronDown
+                    className={`h-4 w-4 shrink-0 text-[var(--blog-text-muted)] transition-transform duration-200 ${isOpen ? "rotate-180" : ""}`}
+                    aria-hidden="true"
+                  />
+                </button>
+              </dt>
+              {isOpen && (
+                <dd
+                  id={`faq-answer-${i}`}
+                  className="px-4 pb-4 pt-1 text-[0.9375rem] leading-relaxed text-[var(--blog-text-secondary)]"
+                >
+                  {it.answer}
+                </dd>
+              )}
+            </div>
+          );
+        })}
       </dl>
     </div>
   );

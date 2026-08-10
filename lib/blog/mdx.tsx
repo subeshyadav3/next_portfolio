@@ -62,13 +62,18 @@ export async function compilePostMdx(
               rehypeExternalLinks,
               { target: "_blank", rel: ["noopener", "noreferrer", "nofollow"] },
             ],
-            // NOTE: rehype-sanitize is intentionally omitted here.
-            // MDX content is authored/trusted (not user input), and sanitization
-            // strips HTML rendered by custom components (aside, dt, dd, footer,
-            // button, dl, etc.), causing entire content blocks to disappear.
-          ],
-        },
+// NOTE: rehype-sanitize is intentionally omitted here.
+              // MDX content is authored/trusted (not user input), and sanitization
+              // strips HTML rendered by custom components (aside, dt, dd, footer,
+              // button, dl, etc.), causing entire content blocks to disappear.
+            ],
+          },
         parseFrontmatter: false,
+        // next-mdx-remote defaults blockJS to true, which strips `{...}` JSX
+        // prop expressions (e.g. <FAQ items={[...]} /> height={900}). Content is
+        // trusted/self-authored, so expressions are allowed and dangerous JS
+        // calls stay blocked by CreateRemoveDangerousCallsPlugin.
+        blockJS: false,
       }}
     />
   );
