@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { useActiveSection } from "../../hooks/useActiveSection";
+import { IOE_UI_VISIBLE } from "@/lib/ioe/config";
 
 const NAV_IDS = ["home", "about", "tech", "stats", "experiences", "education", "projects", "contact"];
 
@@ -48,6 +49,7 @@ export default function Navbar() {
     { href: "#projects", label: "Projects" },
     { href: "#contact", label: "Contact" },
     { href: "/blog", label: "Blog" },
+    ...(IOE_UI_VISIBLE ? [{ href: "/ioe", label: "IOE Papers" }] : []),
   ];
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {

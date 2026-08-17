@@ -1,6 +1,6 @@
-/* globals.css — Enhanced with stunning animations & effects */
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
 
 /* ─── Blog Design Tokens — Clean, elegant, highly readable ─── */
 :root {
@@ -47,6 +47,41 @@
   --prose-font-dev:      "Noto Sans Devanagari", sans-serif;
   --prose-dev-lh:        2.2;
   --prose-dev-ls:        0.01em;
+
+  /* ─── IOE Portal Design Tokens ─── */
+  --ioe-bg:              #f8fafc;
+  --ioe-surface:         #ffffff;
+  --ioe-surface-elevated: #ffffff;
+  --ioe-surface-subtle:  #f1f5f9;
+  --ioe-border:          #e2e8f0;
+  --ioe-border-strong:   #cbd5e1;
+  --ioe-border-hover:    #93c5fd;
+  --ioe-text:            #0f172a;
+  --ioe-text-secondary:  #475569;
+  --ioe-text-muted:      #64748b;
+  --ioe-text-faint:      #94a3b8;
+  --ioe-accent:          #2563eb;
+  --ioe-accent-hover:    #1d4ed8;
+  --ioe-accent-tint:     #eff6ff;
+  --ioe-card-glow:       0 4px 20px -2px rgba(37, 99, 235, 0.05);
+}
+
+.dark {
+  --ioe-bg:              #090d16;
+  --ioe-surface:         #111625;
+  --ioe-surface-elevated: #161c2e;
+  --ioe-surface-subtle:  #0d121f;
+  --ioe-border:          #1e293b;
+  --ioe-border-strong:   #334155;
+  --ioe-border-hover:    #3b82f6;
+  --ioe-text:            #f8fafc;
+  --ioe-text-secondary:  #cbd5e1;
+  --ioe-text-muted:      #94a3b8;
+  --ioe-text-faint:      #64748b;
+  --ioe-accent:          #3b82f6;
+  --ioe-accent-hover:    #60a5fa;
+  --ioe-accent-tint:     #172554;
+  --ioe-card-glow:       0 4px 25px -2px rgba(59, 130, 246, 0.08);
 }
 
 .dark .blog-section {
@@ -77,6 +112,11 @@
 .blog-section {
   background-color: var(--blog-bg);
   color: var(--blog-text);
+}
+
+.ioe-section {
+  background-color: var(--ioe-bg);
+  color: var(--ioe-text);
 }
 
 .blog-devanagari { font-family: var(--font-devanagari); }

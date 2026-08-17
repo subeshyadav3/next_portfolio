@@ -6,6 +6,12 @@ import {
   getArchiveYears,
 } from "@/lib/blog/posts";
 import { SITE_URL } from "@/lib/site-config";
+import { IOE_ENABLED } from "@/lib/ioe/config";
+import {
+  getAllPrograms,
+  getCatalogs,
+  getSubjectSlugFromName,
+} from "@/lib/ioe/data";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const posts = await getAllPosts();
@@ -45,6 +51,52 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.4,
   }));
 
+  let ioeUrls: MetadataRoute.Sitemap = [];
+  if (IOE_ENABLED) {
+    ioeUrls = [
+      {
+        url: `${SITE_URL}/ioe`,
+        lastModified: new Date(),
+        changeFrequency: "weekly",
+        priority: 0.9,
+      },
+      {
+        url: `${SITE_URL}/ioe/all`,
+        lastModified: new Date(),
+        changeFrequency: "weekly",
+        priority: 0.7,
+      },
+      ...getAllPrograms().flatMap((program) => [
+        {
+          url: `${SITE_URL}/ioe/${program.slug}`,
+          lastModified: new Date(),
+          changeFrequency: "weekly" as const,
+          priority: 0.8,
+        },
+        ...Object.keys(program.semesters).map((semester) => ({
+          url: `${SITE_URL}/ioe/${program.slug}/semester/${semester}`,
+          lastModified: new Date(),
+          changeFrequency: "weekly" as const,
+          priority: 0.7,
+        })),
+        ...Object.entries(program.semesters).flatMap(([semester, rows]) =>
+          rows.map((row) => ({
+            url: `${SITE_URL}/ioe/${program.slug}/semester/${semester}/${getSubjectSlugFromName(row.title)}`,
+            lastModified: new Date(),
+            changeFrequency: "monthly" as const,
+            priority: 0.6,
+          }))
+        ),
+      ]),
+      ...getCatalogs().map((subject) => ({
+        url: `${SITE_URL}/ioe/subjects/${getSubjectSlugFromName(subject.name)}`,
+        lastModified: new Date(),
+        changeFrequency: "monthly" as const,
+        priority: 0.5,
+      })),
+    ];
+  }
+
   return [
     {
       url: `${SITE_URL}/`,
@@ -71,6 +123,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.5,
     },
     {
+      url: `${SITE_URL}/blog/about`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    {
+      url: `${SITE_URL}/blog/contact`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.5,
+    },
+    {
+      url: `${SITE_URL}/blog/privacy`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
+      url: `${SITE_URL}/blog/terms`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.3,
+    },
+    {
       url: `${SITE_URL}/blog/disclaimer`,
       lastModified: new Date(),
       changeFrequency: "yearly",
@@ -80,5 +156,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     ...categoryUrls,
     ...tagUrls,
     ...archiveUrls,
+    ...ioeUrls,
   ];
 }

@@ -1,0 +1,675 @@
+{
+  "subject": "Computer Programming",
+  "chapters": [
+    "Introduction to Programming Concepts & Flowcharts",
+    "C Fundamentals, Operators & Control Statements",
+    "Functions, Recursion & Storage Classes",
+    "Arrays, Strings & String Handling Functions",
+    "Pointers & Dynamic Memory Allocation (malloc, free)",
+    "Structures, Unions & File Handling in C"
+  ],
+  "questions": [
+    {
+      "chapter": "Introduction to Programming Concepts & Flowcharts",
+      "text": "Define Algorithm and Flowchart. Draw standard flowchart symbols (Terminal, Process, Input/Output, Decision, Connector). Draw a flowchart and write pseudo-code to find the roots of a Quadratic Equation $ax^2 + bx + c = 0$ considering real, equal, and imaginary roots.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Introduction to Programming Concepts & Flowcharts",
+      "text": "Differentiate between Compiler, Interpreter, Assembler, and Linker/Loader. Explain the compilation stages of a C program (.c -> .i -> .s -> .o -> executable).",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "C Fundamentals, Operators & Control Statements",
+      "text": "Explain Operators in C: Arithmetic, Relational, Logical, Bitwise (`&, |, ^, ~, <<, >>`), Conditional (Ternary `?:`), and Assignment operators. What is Operator Precedence and Associativity? Evaluate the expression: `x = 5 + 3 * 2 % 4 - 8 / 2`.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "C Fundamentals, Operators & Control Statements",
+      "text": "Write a C program to check whether a given positive integer is: (a) Prime number, (b) Armstrong number ($153 = 1^3 + 5^3 + 3^3$), and (c) Palindrome number.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "C Fundamentals, Operators & Control Statements",
+      "text": "Explain Decision-Making and Looping statements: `if-else`, `switch-case`, `while`, `do-while`, and `for` loops. Write a C program using nested loops to print the Pascal's Triangle and Floyd's Triangle up to $N$ rows.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Functions, Recursion & Storage Classes",
+      "text": "Explain User-Defined Functions in C: Function Prototype/Declaration, Function Definition, and Function Call. Differentiate between Call by Value and Call by Reference with code snippets to swap two numbers.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Functions, Recursion & Storage Classes",
+      "text": "What is Recursion? State the base condition in recursive functions. Write recursive C functions to: (a) Compute Factorial $n!$, (b) Generate the $n$-th Fibonacci term, and (c) Solve the Tower of Hanoi problem for $N$ disks.",
+      "marks": "3+7",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Functions, Recursion & Storage Classes",
+      "text": "Explain Storage Classes in C: `auto`, `register`, `static`, and `extern` in terms of storage location, default initial value, scope, and lifetime.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Arrays, Strings & String Handling Functions",
+      "text": "Explain 1D and 2D Arrays in C. Write a C program to multiply two matrices of order $m \\times n$ and $n \\times p$ with dynamic compatibility validation.",
+      "marks": "3+7",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Arrays, Strings & String Handling Functions",
+      "text": "Explain String manipulation in C. Write custom functions (without using `<string.h>` library functions) for: (a) `strlen()`, (b) `strcpy()`, (c) `strcat()`, and (d) `strcmp()`.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Pointers & Dynamic Memory Allocation (malloc, free)",
+      "text": "What is a Pointer? Explain Pointer Arithmetic and Pointer to Pointer (Double pointer `**ptr`). Write a C program to sort an array of $N$ integers in ascending order using pointers.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Pointers & Dynamic Memory Allocation (malloc, free)",
+      "text": "Explain Dynamic Memory Allocation functions: `malloc()`, `calloc()`, `realloc()`, and `free()`. What is a Memory Leak and Dangling Pointer? Write a program to dynamically allocate memory for $N$ floating-point numbers, find their average, and deallocate memory.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Structures, Unions & File Handling in C",
+      "text": "Differentiate between `struct` and `union` in terms of memory allocation, member access, and keyword syntax. Explain Nested Structures and Array of Structures. Write a program to store and display records of 50 students (Roll, Name, Marks in 5 subjects) using an array of structures.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Structures, Unions & File Handling in C",
+      "text": "Explain File Opening Modes in C (`r, w, a, r+, w+, a+, rb, wb`). Explain file handling functions: `fopen()`, `fclose()`, `fprintf()`, `fscanf()`, `fgetc()`, `fputc()`, `fread()`, `fwrite()`, `fseek()`, and `ftell()`. Write a program to copy contents of one text file into another while converting all lowercase characters to uppercase.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Structures, Unions & File Handling in C",
+      "text": "Write a C program to write an array of employee structures (EmpID, Name, Salary) to a binary file `emp.dat` using `fwrite()` and search for an employee by EmpID using `fread()`.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "C Fundamentals, Operators & Control Statements",
+      "text": "Differentiate between `break` and `continue` statements with code examples. What is the `goto` statement and why is its use discouraged?",
+      "marks": "4",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Arrays, Strings & String Handling Functions",
+      "text": "Write a C program to count the number of vowels, consonants, digits, and white spaces in a given line of text.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Introduction to Programming Concepts & Flowcharts",
+      "text": "A practical engineering system operating under Introduction to Programming Concepts & Flowcharts is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "C Fundamentals, Operators & Control Statements",
+      "text": "A practical engineering system operating under C Fundamentals, Operators & Control Statements is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Functions, Recursion & Storage Classes",
+      "text": "A practical engineering system operating under Functions, Recursion & Storage Classes is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Arrays, Strings & String Handling Functions",
+      "text": "A practical engineering system operating under Arrays, Strings & String Handling Functions is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Pointers & Dynamic Memory Allocation (malloc, free)",
+      "text": "A practical engineering system operating under Pointers & Dynamic Memory Allocation (malloc, free) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Structures, Unions & File Handling in C",
+      "text": "A practical engineering system operating under Structures, Unions & File Handling in C is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Introduction to Programming Concepts & Flowcharts",
+      "text": "Explain Structured Programming paradigm. Compare Top-Down vs Bottom-Up problem solving approaches with examples.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Introduction to Programming Concepts & Flowcharts",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Introduction to Programming Concepts & Flowcharts. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Introduction to Programming Concepts & Flowcharts",
+      "text": "Solve the standard numerical problem for Introduction to Programming Concepts & Flowcharts using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "C Fundamentals, Operators & Control Statements",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of C Fundamentals, Operators & Control Statements. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "C Fundamentals, Operators & Control Statements",
+      "text": "Solve the standard numerical problem for C Fundamentals, Operators & Control Statements using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Functions, Recursion & Storage Classes",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Functions, Recursion & Storage Classes. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Functions, Recursion & Storage Classes",
+      "text": "Solve the standard numerical problem for Functions, Recursion & Storage Classes using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Arrays, Strings & String Handling Functions",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Arrays, Strings & String Handling Functions. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Arrays, Strings & String Handling Functions",
+      "text": "Solve the standard numerical problem for Arrays, Strings & String Handling Functions using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Pointers & Dynamic Memory Allocation (malloc, free)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Pointers & Dynamic Memory Allocation (malloc, free). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Pointers & Dynamic Memory Allocation (malloc, free)",
+      "text": "Solve the standard numerical problem for Pointers & Dynamic Memory Allocation (malloc, free) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Structures, Unions & File Handling in C",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Structures, Unions & File Handling in C. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Structures, Unions & File Handling in C",
+      "text": "Solve the standard numerical problem for Structures, Unions & File Handling in C using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Introduction to Programming Concepts & Flowcharts",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Introduction to Programming Concepts & Flowcharts. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Introduction to Programming Concepts & Flowcharts",
+      "text": "State and prove the classical theorems and stability criteria associated with Introduction to Programming Concepts & Flowcharts. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "C Fundamentals, Operators & Control Statements",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in C Fundamentals, Operators & Control Statements. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "C Fundamentals, Operators & Control Statements",
+      "text": "State and prove the classical theorems and stability criteria associated with C Fundamentals, Operators & Control Statements. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Functions, Recursion & Storage Classes",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Functions, Recursion & Storage Classes. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Functions, Recursion & Storage Classes",
+      "text": "State and prove the classical theorems and stability criteria associated with Functions, Recursion & Storage Classes. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Arrays, Strings & String Handling Functions",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Arrays, Strings & String Handling Functions. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Arrays, Strings & String Handling Functions",
+      "text": "State and prove the classical theorems and stability criteria associated with Arrays, Strings & String Handling Functions. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Pointers & Dynamic Memory Allocation (malloc, free)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Pointers & Dynamic Memory Allocation (malloc, free). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Pointers & Dynamic Memory Allocation (malloc, free)",
+      "text": "State and prove the classical theorems and stability criteria associated with Pointers & Dynamic Memory Allocation (malloc, free). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Structures, Unions & File Handling in C",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Structures, Unions & File Handling in C. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Structures, Unions & File Handling in C",
+      "text": "State and prove the classical theorems and stability criteria associated with Structures, Unions & File Handling in C. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Introduction to Programming Concepts & Flowcharts",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Introduction to Programming Concepts & Flowcharts.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Introduction to Programming Concepts & Flowcharts",
+      "text": "Write short technical notes on: (a) Key design parameters in Introduction to Programming Concepts & Flowcharts, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "C Fundamentals, Operators & Control Statements",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in C Fundamentals, Operators & Control Statements.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "C Fundamentals, Operators & Control Statements",
+      "text": "Write short technical notes on: (a) Key design parameters in C Fundamentals, Operators & Control Statements, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Functions, Recursion & Storage Classes",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Functions, Recursion & Storage Classes.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Functions, Recursion & Storage Classes",
+      "text": "Write short technical notes on: (a) Key design parameters in Functions, Recursion & Storage Classes, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Arrays, Strings & String Handling Functions",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Arrays, Strings & String Handling Functions.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Arrays, Strings & String Handling Functions",
+      "text": "Write short technical notes on: (a) Key design parameters in Arrays, Strings & String Handling Functions, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Pointers & Dynamic Memory Allocation (malloc, free)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Pointers & Dynamic Memory Allocation (malloc, free).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Pointers & Dynamic Memory Allocation (malloc, free)",
+      "text": "Write short technical notes on: (a) Key design parameters in Pointers & Dynamic Memory Allocation (malloc, free), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Structures, Unions & File Handling in C",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Structures, Unions & File Handling in C.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Structures, Unions & File Handling in C",
+      "text": "Write short technical notes on: (a) Key design parameters in Structures, Unions & File Handling in C, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    }
+  ]
+}

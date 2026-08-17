@@ -1,0 +1,602 @@
+{
+  "subject": "RF and Microwave Engineering",
+  "generated": "2026-08-17T02:30:00.000Z",
+  "chapters": [
+    "Microwave Transmission Lines & Smith Chart Impedance Matching",
+    "Waveguides (Rectangular & Circular) & Cavity Resonators",
+    "Microwave Passive Components & S-Parameter Matrix Analysis",
+    "Microwave Semiconductor Devices (Gunn, IMPATT, PIN, Varactor)",
+    "Microwave Vacuum Tubes (Klystron, Reflex Klystron, Magnetron, TWT)"
+  ],
+  "questions": [
+    {
+      "chapter": "Microwave Transmission Lines & Smith Chart Impedance Matching",
+      "text": "Derive the Transmission Line Equations for voltage $V(z)$ and current $I(z)$ in terms of propagation constant $\\gamma = \\alpha + j\\beta$ and characteristic impedance $Z_0 = \\sqrt{\\frac{R + j\\omega L}{G + j\\omega C}}$. Define Voltage Standing Wave Ratio ($VSWR = \\frac{1 + |\\Gamma|}{1 - |\\Gamma|}$) and Reflection Coefficient $\\Gamma = \\frac{Z_L - Z_0}{Z_L + Z_0}$.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Microwave Transmission Lines & Smith Chart Impedance Matching",
+      "text": "Explain the construction and properties of the Smith Chart (Constant resistance circles and constant reactance arcs). Using a Smith Chart, design a Single-Stub Shunt matching network to match an antenna load impedance $Z_L = 100 + j80\\,\\Omega$ to a $50\\,\\Omega$ lossless transmission line. Find the distance $d$ from the load and the length $l$ of an open/shorted stub.",
+      "marks": "4+8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Microwave Transmission Lines & Smith Chart Impedance Matching",
+      "text": "Explain Double-Stub Impedance Matching on a transmission line using a Smith Chart. Explain why double-stub matching is preferred over single-stub matching in tunable RF circuits.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Waveguides (Rectangular & Circular) & Cavity Resonators",
+      "text": "Derive the wave equations for TE and TM modes in a Rectangular Waveguide of dimensions $a \\times b$ ($a > b$). Derive expressions for Cutoff Frequency ($f_c = \\frac{c}{2}\\sqrt{(m/a)^2 + (n/b)^2}$), Guide Wavelength ($\\lambda_g = \\frac{\\lambda_0}{\\sqrt{1 - (f_c/f)^2}}$), Phase Velocity ($v_p = \\frac{c}{\\sqrt{1 - (f_c/f)^2}}$), and Wave Impedance ($Z_{TE} = \\frac{\\eta}{\\sqrt{1 - (f_c/f)^2}}$). Why can TEM waves not propagate inside a hollow waveguide?",
+      "marks": "4+10",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Waveguides (Rectangular & Circular) & Cavity Resonators",
+      "text": "Explain the Dominant Mode ($TE_{10}$) in a rectangular waveguide. An air-filled rectangular waveguide with dimensions $a = 2.286\\,\\text{cm}$ and $b = 1.016\\,\\text{cm}$ (X-band) operates at $10\\,\\text{GHz}$. Calculate: (a) Cutoff wavelength $\\lambda_c$, (b) Guide wavelength $\\lambda_g$, (c) Phase velocity $v_p$, (d) Group velocity $v_g$ ($v_p \\cdot v_g = c^2$), and (e) Wave impedance $Z_{TE}$.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Microwave Passive Components & S-Parameter Matrix Analysis",
+      "text": "Define Scattering Parameters (S-Parameters) for an $N$-port microwave junction ($b = S a$). State and prove the properties of S-matrix: (a) Symmetry for reciprocal network ($[S]^T = [S]$), and (b) Unitary property for lossless junction ($[S]^*[S]^T = [I]$). Why are H-parameters and Z-parameters difficult to measure at microwave frequencies?",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Microwave Passive Components & S-Parameter Matrix Analysis",
+      "text": "Explain the operation and derive the S-Matrix for: (a) E-Plane Tee (Series Tee), (b) H-Plane Tee (Shunt Tee), and (c) Magic Tee (Hybrid Tee $[S]_{4\\times 4}$). Explain applications of Magic Tee as an RF mixer, duplexer, and impedance bridge.",
+      "marks": "4+8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Microwave Passive Components & S-Parameter Matrix Analysis",
+      "text": "Explain Directional Couplers: Coupling Factor ($C = 10\\log_{10}(P_1/P_3)$), Directivity ($D = 10\\log_{10}(P_3/P_4)$), and Isolation ($I = 10\\log_{10}(P_1/P_4)$). Explain Ferrite isolators, circulators, and attenuators.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Microwave Semiconductor Devices (Gunn, IMPATT, PIN, Varactor)",
+      "text": "Explain the Gunn Effect and Ridley-Watkins-Hilsum (RWH) Transferred-Electron Mechanism in GaAs diode. Draw the velocity-field ($v-E$) characteristic showing negative differential resistance region and explain Gunn domain formation.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Microwave Semiconductor Devices (Gunn, IMPATT, PIN, Varactor)",
+      "text": "Explain Avalanche Transit-Time devices: IMPATT (Impact Ionization Avalanche Transit-Time) Diode and TRAPATT Diode. Explain Read diode structure ($p^+-n-i-n^+$), phase delay mechanism between RF voltage and avalanche current ($90^\\circ + 90^\\circ = 180^\\circ$), and output power/efficiency.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Microwave Vacuum Tubes (Klystron, Reflex Klystron, Magnetron, TWT)",
+      "text": "Explain Two-Cavity Klystron Amplifier: Velocity Modulation process, Applegate diagram, bunching parameter ($\theta$), drift space, and cavity interaction. Derive the expression for RF current and electronic efficiency.",
+      "marks": "4+8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Microwave Vacuum Tubes (Klystron, Reflex Klystron, Magnetron, TWT)",
+      "text": "Explain Reflex Klystron Oscillator: Repeller voltage ($V_r$), velocity modulation, round-trip electron bunching transit time ($T = (n + 3/4)T_0$), mode curves, and electronic tuning range.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Microwave Vacuum Tubes (Klystron, Reflex Klystron, Magnetron, TWT)",
+      "text": "Explain Cylindrical Cavity Magnetron (Crossed-field tube): Hull Cut-off Magnetic Field ($B_c = \\sqrt{\\frac{8 m V_0}{e b^2 (1 - a^2/b^2)^2}}$), Hartree Resonant Anode Voltage, $\\pi$-mode oscillations, and strapping to avoid mode jumping.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Microwave Vacuum Tubes (Klystron, Reflex Klystron, Magnetron, TWT)",
+      "text": "Explain Traveling Wave Tube (TWT) Amplifier: Slow-Wave Structure (Helical waveguide), wave-electron beam synchronization ($v_e \\approx v_p$), amplification mechanism, and comparison with Klystrons.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Microwave Transmission Lines & Smith Chart Impedance Matching",
+      "text": "Explain Quarter-Wave Transformer ($Z_{in} = \\frac{Z_0^2}{Z_L}$) for matching a real load $R_L$ to transmission line $Z_0$. Explain Multi-section binomial and Chebyshev impedance matching transformers.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Waveguides (Rectangular & Circular) & Cavity Resonators",
+      "text": "Explain Rectangular and Cylindrical Cavity Resonators. Derive the Resonant Frequency ($f_r$) and Quality Factor ($Q$) of a rectangular cavity resonator operating in $TE_{101}$ mode.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Microwave Semiconductor Devices (Gunn, IMPATT, PIN, Varactor)",
+      "text": "Explain PIN Diode (High resistivity intrinsic layer $I$) operation as an RF switch, limiter, and variable attenuator. Explain Varactor Diode and its voltage-variable junction capacitance ($C_j(V) = \\frac{C_0}{(1 - V/V_0)^n}$) in parametric amplifiers.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Microwave Transmission Lines & Smith Chart Impedance Matching",
+      "text": "A practical engineering system operating under Microwave Transmission Lines & Smith Chart Impedance Matching is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Waveguides (Rectangular & Circular) & Cavity Resonators",
+      "text": "A practical engineering system operating under Waveguides (Rectangular & Circular) & Cavity Resonators is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Microwave Passive Components & S-Parameter Matrix Analysis",
+      "text": "A practical engineering system operating under Microwave Passive Components & S-Parameter Matrix Analysis is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Microwave Semiconductor Devices (Gunn, IMPATT, PIN, Varactor)",
+      "text": "A practical engineering system operating under Microwave Semiconductor Devices (Gunn, IMPATT, PIN, Varactor) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Microwave Vacuum Tubes (Klystron, Reflex Klystron, Magnetron, TWT)",
+      "text": "A practical engineering system operating under Microwave Vacuum Tubes (Klystron, Reflex Klystron, Magnetron, TWT) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Microwave Transmission Lines & Smith Chart Impedance Matching",
+      "text": "Explain Microstrip Lines: Effective dielectric constant $\\epsilon_{eff}$, characteristic impedance $Z_0$, phase velocity, and attenuation losses (dielectric and conductor losses).",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Microwave Transmission Lines & Smith Chart Impedance Matching",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Microwave Transmission Lines & Smith Chart Impedance Matching. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Microwave Transmission Lines & Smith Chart Impedance Matching",
+      "text": "Solve the standard numerical problem for Microwave Transmission Lines & Smith Chart Impedance Matching using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Waveguides (Rectangular & Circular) & Cavity Resonators",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Waveguides (Rectangular & Circular) & Cavity Resonators. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Waveguides (Rectangular & Circular) & Cavity Resonators",
+      "text": "Solve the standard numerical problem for Waveguides (Rectangular & Circular) & Cavity Resonators using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Microwave Passive Components & S-Parameter Matrix Analysis",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Microwave Passive Components & S-Parameter Matrix Analysis. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Microwave Passive Components & S-Parameter Matrix Analysis",
+      "text": "Solve the standard numerical problem for Microwave Passive Components & S-Parameter Matrix Analysis using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Microwave Semiconductor Devices (Gunn, IMPATT, PIN, Varactor)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Microwave Semiconductor Devices (Gunn, IMPATT, PIN, Varactor). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Microwave Semiconductor Devices (Gunn, IMPATT, PIN, Varactor)",
+      "text": "Solve the standard numerical problem for Microwave Semiconductor Devices (Gunn, IMPATT, PIN, Varactor) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Microwave Vacuum Tubes (Klystron, Reflex Klystron, Magnetron, TWT)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Microwave Vacuum Tubes (Klystron, Reflex Klystron, Magnetron, TWT). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Microwave Vacuum Tubes (Klystron, Reflex Klystron, Magnetron, TWT)",
+      "text": "Solve the standard numerical problem for Microwave Vacuum Tubes (Klystron, Reflex Klystron, Magnetron, TWT) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Microwave Transmission Lines & Smith Chart Impedance Matching",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Microwave Transmission Lines & Smith Chart Impedance Matching. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Microwave Transmission Lines & Smith Chart Impedance Matching",
+      "text": "State and prove the classical theorems and stability criteria associated with Microwave Transmission Lines & Smith Chart Impedance Matching. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Waveguides (Rectangular & Circular) & Cavity Resonators",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Waveguides (Rectangular & Circular) & Cavity Resonators. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Waveguides (Rectangular & Circular) & Cavity Resonators",
+      "text": "State and prove the classical theorems and stability criteria associated with Waveguides (Rectangular & Circular) & Cavity Resonators. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Microwave Passive Components & S-Parameter Matrix Analysis",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Microwave Passive Components & S-Parameter Matrix Analysis. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Microwave Passive Components & S-Parameter Matrix Analysis",
+      "text": "State and prove the classical theorems and stability criteria associated with Microwave Passive Components & S-Parameter Matrix Analysis. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Microwave Semiconductor Devices (Gunn, IMPATT, PIN, Varactor)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Microwave Semiconductor Devices (Gunn, IMPATT, PIN, Varactor). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Microwave Semiconductor Devices (Gunn, IMPATT, PIN, Varactor)",
+      "text": "State and prove the classical theorems and stability criteria associated with Microwave Semiconductor Devices (Gunn, IMPATT, PIN, Varactor). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Microwave Vacuum Tubes (Klystron, Reflex Klystron, Magnetron, TWT)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Microwave Vacuum Tubes (Klystron, Reflex Klystron, Magnetron, TWT). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Microwave Vacuum Tubes (Klystron, Reflex Klystron, Magnetron, TWT)",
+      "text": "State and prove the classical theorems and stability criteria associated with Microwave Vacuum Tubes (Klystron, Reflex Klystron, Magnetron, TWT). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Microwave Transmission Lines & Smith Chart Impedance Matching",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Microwave Transmission Lines & Smith Chart Impedance Matching.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Microwave Transmission Lines & Smith Chart Impedance Matching",
+      "text": "Write short technical notes on: (a) Key design parameters in Microwave Transmission Lines & Smith Chart Impedance Matching, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Waveguides (Rectangular & Circular) & Cavity Resonators",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Waveguides (Rectangular & Circular) & Cavity Resonators.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Waveguides (Rectangular & Circular) & Cavity Resonators",
+      "text": "Write short technical notes on: (a) Key design parameters in Waveguides (Rectangular & Circular) & Cavity Resonators, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Microwave Passive Components & S-Parameter Matrix Analysis",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Microwave Passive Components & S-Parameter Matrix Analysis.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Microwave Passive Components & S-Parameter Matrix Analysis",
+      "text": "Write short technical notes on: (a) Key design parameters in Microwave Passive Components & S-Parameter Matrix Analysis, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Microwave Semiconductor Devices (Gunn, IMPATT, PIN, Varactor)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Microwave Semiconductor Devices (Gunn, IMPATT, PIN, Varactor).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Microwave Semiconductor Devices (Gunn, IMPATT, PIN, Varactor)",
+      "text": "Write short technical notes on: (a) Key design parameters in Microwave Semiconductor Devices (Gunn, IMPATT, PIN, Varactor), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Microwave Vacuum Tubes (Klystron, Reflex Klystron, Magnetron, TWT)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Microwave Vacuum Tubes (Klystron, Reflex Klystron, Magnetron, TWT).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Microwave Vacuum Tubes (Klystron, Reflex Klystron, Magnetron, TWT)",
+      "text": "Write short technical notes on: (a) Key design parameters in Microwave Vacuum Tubes (Klystron, Reflex Klystron, Magnetron, TWT), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    }
+  ]
+}

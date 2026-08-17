@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default function PrivacyPolicy() {
-  const lastUpdated = "July 9, 2026";
+  const lastUpdated = "August 16, 2026";
 
   return (
     <article className="prose prose-lg max-w-3xl mx-auto px-4 py-12 blog-section">
@@ -244,6 +244,22 @@ export default function PrivacyPolicy() {
             Network Advertising Initiative
           </a>
           .
+        </p>
+        <p className="mt-4 text-[var(--blog-text-secondary)] leading-relaxed">
+          Google and its advertising partners are third-party vendors. They may
+          use cookies or similar technologies to serve, measure, and personalize
+          ads based on visits to this and other websites. You can review the
+          companies Google works with on its{" "}
+          <a
+            href="https://support.google.com/admanager/answer/9012903"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[var(--blog-accent)] hover:underline"
+          >
+            advertising technology providers page
+          </a>
+          . Where required by law, advertising and analytics cookies are used only
+          after consent.
         </p>
       </section>
 
