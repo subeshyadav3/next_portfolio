@@ -1,18 +1,20 @@
 {
   "subject": "Computer Graphics and Visualization",
   "code": "ENCT 201",
-  "generated": "2026-08-17T02:30:00.000Z",
+  "generated": "2026-08-17T14:00:00.000Z",
   "chapters": [
-    "Chapter 1: Introduction to Computer Graphics and Display Hardware",
-    "Chapter 2: Scan Conversion and Line/Circle Drawing Algorithms",
-    "Chapter 3: Two-Dimensional Geometric Transformations and Viewing/Clipping",
-    "Chapter 4: Three-Dimensional Transformations and Viewing",
-    "Chapter 5: 3D Object Representation (Curves and Surfaces)",
-    "Chapter 6: Visible Surface Detection and Illumination/Shading Models"
+    "Chapter 1: Introduction and Application",
+    "Chapter 2: Raster Graphics and Algorithms",
+    "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
+    "Chapter 4: Curve Modeling and Surface Modelling",
+    "Chapter 5: Visible Surface Determination",
+    "Chapter 6: Illumination and Surface Rendering Methods",
+    "Chapter 7: Computer Animation and Visualization",
+    "Chapter 8: Latest Trends in Computer Graphics"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Introduction to Computer Graphics and Display Hardware",
+      "chapter": "Chapter 1: Introduction and Application",
       "text": "Explain Video Display Devices: Cathode Ray Tube (CRT), Refresh Cathode Ray Tubes, Raster Scan Display vs Random Scan (Vector) Display systems in terms of architecture, frame buffer, and refresh rate.",
       "marks": "6",
       "years": [
@@ -24,7 +26,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 2: Scan Conversion and Line/Circle Drawing Algorithms",
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
       "text": "Explain DDA (Digital Differential Analyzer) Line Drawing Algorithm. Derive Bresenham's Line Drawing Algorithm for $|m| < 1$. Trace Bresenham's algorithm to rasterize a line from $(2, 3)$ to $(10, 8)$.",
       "marks": "8",
       "years": [
@@ -37,7 +39,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 2: Scan Conversion and Line/Circle Drawing Algorithms",
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
       "text": "Derive Midpoint Circle Drawing Algorithm using 8-way symmetry. Calculate pixel coordinates to draw a circle with radius $r = 10$ centered at origin $(0, 0)$.",
       "marks": "8",
       "years": [
@@ -49,7 +51,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 3: Two-Dimensional Geometric Transformations and Viewing/Clipping",
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
       "text": "Explain 2D Affine Transformations: Translation, Rotation about origin, Scaling, Reflection, and Shear in Homogeneous Coordinate matrix representation. Perform 2D Composite Transformation: Rotate triangle $A(1,1), B(4,1), C(2,3)$ by $45^\\circ$ about arbitrary point $P(2,2)$.",
       "marks": "8",
       "years": [
@@ -62,19 +64,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Two-Dimensional Geometric Transformations and Viewing/Clipping",
-      "text": "Explain Cohen-Sutherland Line Clipping Algorithm (4-bit Outcodes: Top, Bottom, Right, Left). Clip the line segment $P_1(10, 20)$ to $P_2(80, 90)$ against the rectangular window $W(x_{min}=20, y_{min}=20, x_{max}=60, y_{max}=60)$.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2081 Ashwin",
-        "2080 Chaitra",
-        "2078 Chaitra"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 3: Two-Dimensional Geometric Transformations and Viewing/Clipping",
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
       "text": "Explain Liang-Barsky Line Clipping Algorithm using parametric equations. Explain Sutherland-Hodgman Polygon Clipping Algorithm (Left, Right, Bottom, Top clippers).",
       "marks": "8",
       "years": [
@@ -86,7 +76,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 4: Three-Dimensional Transformations and Viewing",
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
       "text": "Explain 3D Transformations: 3D Translation, 3D Scaling, and 3D Rotation about arbitrary axis in space in $4 \\times 4$ homogeneous matrix form.",
       "marks": "6",
       "years": [
@@ -97,7 +87,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 4: Three-Dimensional Transformations and Viewing",
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
       "text": "Explain Projections in 3D Viewing: Parallel Projections (Orthographic, Axonometric, Isometric, Oblique Cavalier/Cabinet) vs Perspective Projections (1-point, 2-point, 3-point vanishing points). Derive Perspective Projection Transformation Matrix.",
       "marks": "8",
       "years": [
@@ -110,7 +100,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 5: 3D Object Representation (Curves and Surfaces)",
+      "chapter": "Chapter 4: Curve Modeling and Surface Modelling",
       "text": "Explain Bezier Curves and B-Spline Curves. State properties of Bezier Curves (Convex Hull property, Affine Invariance). Construct cubic Bezier curve for given 4 control points $P_0, P_1, P_2, P_3$ using Bernstein Polynomials: $P(u) = \\sum_{k=0}^n B_{k,n}(u) P_k$.",
       "marks": "8",
       "years": [
@@ -122,7 +112,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 6: Visible Surface Detection and Illumination/Shading Models",
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
       "text": "Explain Visible Surface Detection (Hidden Surface Removal) Algorithms: (a) Depth-Buffer (Z-Buffer) Algorithm, (b) A-Buffer Algorithm, (c) Depth-Sort (Painter's) Algorithm, and (d) Back-Face Culling.",
       "marks": "8",
       "years": [
@@ -135,17 +125,805 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Visible Surface Detection and Illumination/Shading Models",
-      "text": "Explain Illumination Models: Ambient light, Diffuse reflection (Lambert's Cosine Law: $I_{diff} = I_p K_d \\cos\\theta$), and Specular reflection (Phong Model: $I_{spec} = I_p K_s \\cos^n\\phi$). Compare Flat Shading vs Gouraud Shading (Intensity Interpolation) vs Phong Shading (Normal Vector Interpolation).",
-      "marks": "8",
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
+      "text": "And points are to be generated alonglhe:ur\"lfath in clockwise.direc.]ion' [6+41 ifi,Itifi-.iapri* Ap, Sj *a ntf t, Te; using Bresenham's Line plain composite rotation in brief. Define a terms wodd coordinates and viewing irdin*t*r. Suppor* a window is defined by A {201 20)r B (90? 20), (9O 70) and (10; 30) and Y (80, 90)' CIip the line against iZO, ZO) and'a line with end points X [3+2+s];hsrr*;tB;;ky iine",
+      "marks": "6",
       "years": [
-        "2082 Chaitra",
-        "2082 Kartik",
-        "2081 Ashwin",
-        "2080 Chaitra",
+        "2082 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
+      "text": "What do you mean projection? nSrsnective Perform a 3D shearing transformation on a fy -and, unit length cube with diagonar passing. through (0,0,0, (2,2,2;;ith *qp ect to zx plane with shear constants = 3 in-both directiois. outri, the final coordinates yvvre.rarve of the cube 1 aster shearing.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "Define the terms persistence, resolntion and aspect ratio in comp,.rter graphics. Calculate the iiame buffer size (in MB) tor a raster system recording a video for 90 seconds lvith resolution of 1360 x 768, and storing 24 bits per pixel r.vith refi'esh rate of 30",
+      "marks": "3+2",
+      "years": [
+        "2080 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
+      "text": "A cube with diagonal passing through (0,0,0) and (5,5,5) is sheared with respect to zx: plane with share constants 5 in both directions. Obtain the final coordinates of the cube after shearing. Derive the tlansfomration matrix for oblique [4t4]",
+      "marks": "6",
+      "years": [
+        "2080 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
+      "text": "Compare object space method and iiliage space method. Describe the back lace detection method r.vith necessary figures and apply this algorithm to find th.e visibility of a trianguiar object defined by coordinates (2, 0, 0), (0. ?, A), (0, 0. 2) when vier,ved from point (4, 4, 4).",
+      "marks": "6",
+      "years": [
+        "2080 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "Write a general illurnination mociel r,vith multiple light sources anci expiain each term with necessary figures. What is the attenuation factor and how does it affect the intensity calcuiation, lUtr",
+      "marks": "6",
+      "years": [
+        "2080 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Curve Modeling and Surface Modelling",
+      "text": "How Scan Line Method is used for visible surface Detectior-r'J Explain in detail\"",
+      "marks": "6",
+      "years": [
         "2078 Chaitra"
       ],
-      "frequency": 5
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Curve Modeling and Surface Modelling",
+      "text": "Define Iliumination and surface rendering. Expiain basic iilurnination model. Explain Gouraud shading methocl with its advantages and llisarivantages\" 18] 1 1.",
+      "marks": "2+6",
+      "years": [
+        "2078 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "About Y-axis with $45^\\circ$ in clock'uvise direction. Show eacl.r step [-?+7] involved.",
+      "marks": "6",
+      "years": [
+        "2078 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "Explain the impcitance of OpenGL in cornputer graphics. 141",
+      "marks": "6",
+      "years": [
+        "2078 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
+      "text": "Clip the line P1,P2 with Pl(-5,3) ancl P2(15,9) r,vitli clip window having iliagonal coordinate (0,0) and (10,10) using Liang-Barskey line clipiing method.",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
+      "text": "Derive the perspective projection for. the case that proiection rejbrence point is at",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Illumination and Surface Rendering Methods",
+      "text": "Explain in detail about Goumud shacling model tvith an exarnpie. Which one is more realistic Gor-uaud cr Fhong shading and ivhy?",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
+      "text": "An object is translateil by (5, -3), then rotated 90o clockwise, ancl then scaled by (2, 0.5). Find the inverse transformation matrix and appl,v it to the point (10, 5) to get ttre original point before transfounation.",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "Explain Liang-Barsky line ciipping algorithnt. isl",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
+      "text": "An c!:ject P(2, 3, 5i is sr-ilrlected to the follorving transformations in sequence: Rotate about the Z-a:ris b1 90' cotnter-ckrck*'ise Scale b-v lactors of 2 along X, 1 aiong Y. and 0.5 along Z. Trunslate by (3, -2,1). Find the tlnai coordinates of the object.",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Curve Modeling and Surface Modelling",
+      "text": "Briefly explain parametric cubic curve. Cubic Bezisr curve is described by four contrtll points (0,0), (2,1), (5,2) and (6-1). Find the tangent to the curvs at t = 0.5.",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Curve Modeling and Surface Modelling",
+      "text": "Explain surface rnodeling with stiitable example. How is it elifferent from r,r'irefiame and solid rnodeling? Explain the significance of normatr vector. {4r4}",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Visible Surface Determination",
+      "text": "Differentiate between object spaee method ancl image space method. Expiain depth buftbr method in detaii.",
+      "marks": "4+6",
+      "years": [
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "How does a raster display system generate images on a screen? If the total number of' intensities achievable out of a single pixel on the screen is 1024 and total resolution is 1024x800, what is will be the required size of frame buffer incase of display purpose?",
+      "marks": "6",
+      "years": [
+        "2081 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
+      "text": "Derive a decision parameter for midpoint sircle algorithm assuming the start position as (+r, 0) and points are to be generated along the curve path in clockwise direction.",
+      "marks": "6",
+      "years": [
+        "2081 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
+      "text": "Digitize the given line end points (10, 10) and (20, 5) using Bresenham's line drawing Algorithms.",
+      "marks": "6",
+      "years": [
+        "2081 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
+      "text": "Clip the line witli end point A (5, 30), B(20, 60) Against a clip window with lower most comer at P (10, 10) and upper right most corner at R (100, using cohen sulter land line clipping algorithms.",
+      "marks": "6",
+      "years": [
+        "2081 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Visible Surface Determination",
+      "text": "Differentiate between Image space and object space method. How is back face detection method used for visible iurface detection? Explain in detail. How A buffer method eliminate the drawbacks of Z buffer method? [2-r5+3]",
+      "marks": "4+6",
+      "years": [
+        "2081 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "What is the importance of windolv to vierv port transtbrmation in cornputer Graphics? Explain two'dimensional viewing pipeline. i4-l 6, Derive the matrix for ortho-graphic projection. The pyramid defined by coordinates A (0,0,0i, B (1,0,0). C (0,i,0) and D (0,0,1) is rotated b,v '15' about the line L that has -) -) -+ direction V = JoIi. Pur.ing tlu\"ough point C (0,1,0). Find the finai co-ordinates of pyramid after 1",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "Discuss'the neeci of OpenGL. Explain callback function.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "Define the terms pixel, resolution and pixel densitl,. Ilow much time is spent scanning each row of pixels during screen retresh o, u,ort., system with resolution of 640x4g0 whose refiesh is 24 fiames per _qeconr1.? Aiso calculate the access time per pixel.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
+      "text": "Derive an expression for rJrawing on ellipse.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
+      "text": "Explain 2-D vierving pipeline, Obtain r,vindow. to viewport transformation necessary steps and figures. Cive example. [1 0] matrix with [3+4-r-3]",
+      "marks": "3+3",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
+      "text": "Consider a raster systern with a resolution of 1920 x 1080. How much storage is required if 24 bits per pixer are to be stored in a device witir refresh;;;.;; #irrr-i,,iJ\"J,l'iil aspect ratio.",
+      "marks": "6",
+      "years": [
+        "2079 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
+      "text": "Explain about 3D viewing pipeline, Hou, 'uvorid-to-vier.r,ing coordinate transformation is a '- -performed? Describe with expression.",
+      "marks": "5+5",
+      "years": [
+        "2079 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
+      "text": "Why openGl is used? write the basic command to draw the pixel rvvLs'Erw rectangle q' and polygon in openGl",
+      "marks": "6",
+      "years": [
+        "2079 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
+      "text": "What are 3D Rotation and Shearing? Explain with rnatrix representations. A unit length cube with diagonal passing through (0, 0, 0) ancl (1. 1, 1) d slir:ared with respectto yz piace r';ith shear constants: 2 in both directions. Obtain the coordinates of ali the.o*.r, of the cuhe after shearing.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Curve Modeling and Surface Modelling",
+      "text": "\\l/hat is Parametric Cubic Curve and why do you need it? Write dorm the step for cubic spline interpolation. 6\" What is Wire-frame model and rr''hy do we need polygon {ata table? Explain with examples?",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Curve Modeling and Surface Modelling",
+      "text": "Describe Z-BufJ.er method of visible surface detection. Compare this method to other methods of visible surface cletection.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "Write do'nn the Open Ctr- syntax to draw hasic 2D geometric primitives *r&rr with examples.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "What is compi:ter graphi':,sq {-.:r:rLriate the total mernory reqr-iired to store a 10 minut* i'ideo in a Sli\"-'A systrrri ',vitii 24 bit true cclor and *t\"l &s reiiesh rate. [?\"*4]",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
+      "text": "\\fu'rits an algorithm for drawing a circle. Using midpoint ';ir,;ls.irawing algorithm, calcuj.ale the conrdinates on the first quadrant of a circle having ra,Jius 8 and centre (10,.",
+      "marks": "4+5",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "Describe 3D uietving pipeline. l)erive compiete worid-to-viewing coordinate transformatiou rnatrix. [3+?]",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Curve Modeling and Surface Modelling",
+      "text": "Why rlo lve use geometric tairles ard aitribute tables for defining a polygon surface? How do you calculate the spatial orientation of a polygon?",
+      "marks": "3+3",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Visible Surface Determination",
+      "text": "What is the limitation of Z-buffer method? I-trow does A-buffer rnethod overcome it, explain? [3-i-7]",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Illumination and Surface Rendering Methods",
+      "text": "I)erive the expression to calculate th* total iight intensity in a pclint. I\" Compare and rr-rrit;ast -i:etween GriurauC and iritong shading rr_-,odel. tr",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "IJefine ra,inclorv and vier,r, por1. Describe about trlo^climensional vieu,ing pipeline with",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "Differentiate befween raster and vector graphics. Calculate the ldr size (in KB) for a raster system recording a video for I min with resolution of 1280x1024, and storing 24 bits per pixel with a refresh rate of 25 fps. l\\+4j",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "Explain the process of drawing ellipse in a raster graphics. Determine the pixel positions offoIlowingcurveinfirstquadrantusingmid-pointa1goritlrm. x'11,Y'_, 64 36 -.r",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Curve Modeling and Surface Modelling",
+      "text": "How hidden surfaces cart be removed? Explain in detail about depth buffer methods.",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Illumination and Surface Rendering Methods",
+      "text": "List down difflerent types of object and explain how Phong illumination model is used to calculate intensity in for these objects along with mathematical expression.",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "Define computer graphics. Illustrate about:components for computer graphics. lZ+41",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
+      "text": "Explain with a block diagram about the 3D viewing pipeline. Along with the transformation matrix, describe how perspective projection is performed? 14+41",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Curve Modeling and Surface Modelling",
+      "text": "How can a 3D-Dimensional object be rnodelled? How a normal to a plane of this object is calculated?",
+      "marks": "3+3",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
+      "text": "Explain backface detection algorithm. Determine whether two surfaces of a object with normals Zi-fi++[ and I+ j-Z[ respectively, viewed from a direction given by i- J * f ar\" backface or frontface.",
+      "marks": "5+5",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Curve Modeling and Surface Modelling",
+      "text": "How polygon is drawn in OpenGL? How lighting is applied to this polygon surface? 12+3)",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
+      "text": "Derive the expression to calculate the intensity of Specular Reflection in the presence of Point light source. Also write the expression for multiple light sources. How do you consider the distance to calculate the intensity for Specular Reflection?",
+      "marks": "8+4",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
+      "text": "Describe 3-D viewing pipelining. Derive the transformation matrix for prespective projection.",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "Distinguish between Raster and Vector graphics methods. When do we prefer them?",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
+      "text": "Digitize the line with end points A(20,10) and B(30,18) using Bresenham algorithm.",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Computer Animation and Visualization",
+      "text": "Differentiate between vector and raster scan systems.",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
+      "text": "Derive and write midpoint algorithm for drawing a circle.",
+      "marks": "5+5",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
+      "text": "What are the different steps of two dimensional world to screen viewing transformation? Describe with matrix representation at each steps.",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
+      "text": "Describe three dimensional viewing pipelining. Derive the transfornation matrix for parallel projection.",
+      "marks": "4+6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Curve Modeling and Surface Modelling",
+      "text": "Explain about parametric cubic curve? What is a Bezier Curve? Explain its properties with examples. 12+61",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Visible Surface Determination",
+      "text": "Compare object space method with image space method. Explain, How Back-face detection method is used to detect visible surface. Also explain z-Buffer method.",
+      "marks": "2+4+4",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Illumination and Surface Rendering Methods",
+      "text": "Explain the method of Phong shading for polygon rendering.",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
+      "text": "Outline the Z buffer algorithm. List the advantages and disadvantages of the z-buffer algorithm. 16+2+21",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
+      "text": "Compare between DDA and Bresenham's line drawing algorithm. Derive and write midpoint algorithm to draw ellipse. UOl",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "The reflection along the line y: x it equivalent to the reflection along the X-axis followed by counter clock wise rotation by cr (alpha) Degree. Find the angle a,.",
+      "marks": "10",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Curve Modeling and Surface Modelling",
+      "text": "Exptaiffi,omfut itpresenTatio-n techniqle fo iepresent the 3D objEt wiih suitable example. How can you find the spatial orientation of a surface?",
+      "marks": "8+2",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
+      "text": "Mention the disadvantages of DDA method. Write the corylete Bresenham's line drawing algorithm and using midpoint circle drawing algorithrn calculate the co-ordinate on the first quadrant of a circle having radius 6 and centre L2+4+41 (20,10)",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
+      "text": "Define window and view port. Describe three dimension windows to view port transformation with matrix representation for each step. Derive oblique projection matrix with necessary [l+4+5] assumptions.",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Illumination and Surface Rendering Methods",
+      "text": "Compare and Contract betw'een Gouraud and Phong Shading Model.",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "What is the size of frarire buffer required to store a SVGA with 24 bit true color video of 10 min wtthout-compression?",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
+      "text": "Find the new cgordinates of a unit cube 90\":rotated about an axis defined by its endpoints",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Curve Modeling and Surface Modelling",
+      "text": "Exptaiu about paramet'ic cubic curve? What is aBezier Curve? Explain its properties..",
+      "marks": "3+3+2",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
+      "text": "Explain how the geometric and attribute information of a three dimensional objects are stored for the object representation? What are the conditions for error free generation of polygon [5+3i table?",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Visible Surface Determination",
+      "text": "Differentiate between image space and object spzrce methods of visible surface detection. Describe A:Buffer method of,itibt\" surface deiection. I4+p]",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Illumination and Surface Rendering Methods",
+      "text": "Explaig the Gourad shading for polygon-rendering and compare it with phong shading.,",
+      "marks": "8+2",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "Write short notes on: (any two) $xll",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "Application of OpenGL in Computer Graphics. trl.,F -t I",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Visible Surface Determination",
+      "text": "What are the object space aird image space method of hidden surface removal? Describe back face method removal. I -1 I I i I.i I I",
+      "marks": "4+6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Illumination and Surface Rendering Methods",
+      "text": "Discuss a constant intensity shading method. Mention the advantage of Phong shading over Gouraud shading.",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "Raster display and vector display system I",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Raster Graphics and Algorithms",
+      "text": "Write down the Bresenham's line drawingo algorithm for drawing straight line with consideration of all the slope categories.: i I",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
+      "text": "Which transformation converts a square to.a rhombus? Obtain reflection matrix to reflect ti' 'l",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
+      "text": "A unit length cube with a diagonal passing through fO,o,ol'irifltTit,t) is'sh.ared with respect to yz plane with the shear constants = 2 in both directions. Obtainthe coordinates I",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Visible Surface Determination",
+      "text": "What are object space and image space method of hidden surface removal? Describe one of the image space methods of hidden surface.removal.. -.-...,.-.'...-.,!r i",
+      "marks": "4+6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "Write short notes on: (any two) Is+5] I",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": "Resolution and Aspect ratio of a Monitor",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: 2D and 3D Coordinate Systems and Viewing Transformations",
+      "text": ",perive appropriate mathematical relation to transform 2-D scene (points). in world window to nonhalized view window. I -/ I 1{Mention different types of projections. Derive oblique.projection makix with necessary I assumptrons.:,1/Oisuss Phong Illumination model with distance consideration. g,/Wnteshort notes on:: I",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction and Application",
+      "text": ",rB ackface D etection Al go rithm I I j",
+      "marks": "6",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
     }
   ]
 }

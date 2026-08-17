@@ -27,6 +27,9 @@ const EXCLUDED_SLUGS = new Set([
   "elective-iv",
 ]);
 
+// Deep subject programs that have full chapter-wise question banks
+const DEEP_PROGRAM_CODES = new Set(["bct", "bce", "bei", "bex"]);
+
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const posts = await getAllPosts();
   const categories = await getCategories();
@@ -67,6 +70,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   let ioeUrls: MetadataRoute.Sitemap = [];
   if (IOE_ENABLED) {
+    const programs = getAllPrograms();
+
     ioeUrls = [
       {
         url: `${SITE_URL}/ioe`,
@@ -80,35 +85,39 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: "weekly",
         priority: 0.7,
       },
-      ...getAllPrograms().flatMap((program) => [
-        {
-          url: `${SITE_URL}/ioe/${program.slug}`,
-          lastModified: new Date(),
-          changeFrequency: "weekly" as const,
-          priority: 0.8,
-        },
-        ...Object.keys(program.semesters).map((semester) => ({
-          url: `${SITE_URL}/ioe/${program.slug}/semester/${semester}`,
-          lastModified: new Date(),
-          changeFrequency: "weekly" as const,
-          priority: 0.7,
-        })),
-        ...Object.entries(program.semesters).flatMap(([semester, rows]) =>
-          rows
-            .filter((row) => {
-              const slug = getSubjectSlugFromName(row.title);
-              if (EXCLUDED_SLUGS.has(slug)) return false;
-              const cat = findCatalogSubject(row.title);
-              return Boolean(cat && (cat.papers.length > 0 || isSubjectPublic(row.title)));
-            })
-            .map((row) => ({
-              url: `${SITE_URL}/ioe/${program.slug}/semester/${semester}/${getSubjectSlugFromName(row.title)}`,
-              lastModified: new Date(),
-              changeFrequency: "monthly" as const,
-              priority: 0.6,
-            }))
-        ),
-      ]),
+      // 1. Program Mega-Hub pages for all 12 programs
+      ...programs.map((program) => ({
+        url: `${SITE_URL}/ioe/${program.slug}`,
+        lastModified: new Date(),
+        changeFrequency: "weekly" as const,
+        priority: 0.8,
+      })),
+      // 2. Semester pages for deep programs
+      ...programs
+        .filter((program) => DEEP_PROGRAM_CODES.has(program.code.toLowerCase()))
+        .flatMap((program) => [
+          ...Object.keys(program.semesters).map((semester) => ({
+            url: `${SITE_URL}/ioe/${program.slug}/semester/${semester}`,
+            lastModified: new Date(),
+            changeFrequency: "weekly" as const,
+            priority: 0.7,
+          })),
+          ...Object.entries(program.semesters).flatMap(([semester, rows]) =>
+            rows
+              .filter((row) => {
+                const slug = getSubjectSlugFromName(row.title);
+                if (EXCLUDED_SLUGS.has(slug)) return false;
+                const cat = findCatalogSubject(row.title);
+                return Boolean(cat && (cat.papers.length > 0 || isSubjectPublic(row.title)));
+              })
+              .map((row) => ({
+                url: `${SITE_URL}/ioe/${program.slug}/semester/${semester}/${getSubjectSlugFromName(row.title)}`,
+                lastModified: new Date(),
+                changeFrequency: "monthly" as const,
+                priority: 0.6,
+              }))
+          ),
+        ]),
     ];
   }
 

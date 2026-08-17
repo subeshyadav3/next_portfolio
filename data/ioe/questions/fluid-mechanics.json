@@ -1,19 +1,20 @@
 {
   "subject": "Fluid Mechanics",
-  "code": "ENCE 201",
-  "generated": "2026-08-17T02:30:00.000Z",
+  "code": "ENCE 155",
+  "generated": "2026-08-17T14:00:00.000Z",
   "chapters": [
-    "Chapter 1: Fluid Properties and Hydrostatics",
-    "Chapter 2: Hydrostatic Forces on Submerged Surfaces and Buoyancy",
-    "Chapter 3: Fluid Kinematics and Continuity Equation",
-    "Chapter 4: Fluid Dynamics and Bernoulli's Equation",
-    "Chapter 5: Flow Measurement and Momentum Equation",
-    "Chapter 6: Flow Through Pipes and Boundary Layer Theory"
+    "Chapter 1: Fundamental Concepts of Fluids",
+    "Chapter 2: Fluid Statics",
+    "Chapter 3: Fluid Flow Kinematics",
+    "Chapter 4: Fluid Dynamics",
+    "Chapter 5: Application of Energy and Momentum Equation",
+    "Chapter 6: Dimensional Analysis and Physical Modelling",
+    "Chapter 7: Flow Through Submerged Body and Boundary Layer Theory"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Fluid Properties and Hydrostatics",
-      "text": "Define Fluid Properties: Mass Density ($\\rho$), Specific Weight ($\\gamma$), Dynamic Viscosity ($\\mu$), Kinematic Viscosity ($\\nu$), Surface Tension ($\\sigma$), and Capillarity. State and explain Newton's Law of Viscosity with shear stress vs velocity gradient diagram.",
+      "chapter": "Chapter 1: Fundamental Concepts of Fluids",
+      "text": "Define Fluid Properties: Mass Density ($\\rho$), Specific Weight ($\\gamma$), Specific Gravity ($S$), Dynamic Viscosity ($\\mu$), Kinematic Viscosity ($\\nu$), Surface Tension ($\\sigma$), Bulk Modulus of Elasticity ($K$), and Capillarity. State their SI units and dimensional formulas.",
       "marks": "6",
       "years": [
         "2082 Chaitra",
@@ -24,54 +25,190 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Fluid Properties and Hydrostatics",
-      "text": "State and prove Pascal's Law. Explain pressure measurement devices: Piezometer, U-Tube Manometer, Differential Manometer, and Inverted U-Tube Manometer with numerical calculation of pressure difference.",
+      "chapter": "Chapter 1: Fundamental Concepts of Fluids",
+      "text": "State and explain Newton's Law of Viscosity: $\\tau = \\mu \\frac{du}{dy}$. Differentiate between Newtonian and Non-Newtonian fluids (Pseudoplastic, Dilatant, Bingham Plastic, Thixotropic) with a shear stress vs velocity gradient (rheological) diagram.",
       "marks": "6",
       "years": [
+        "2082 Chaitra",
+        "2081 Baishakh",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 1: Fundamental Concepts of Fluids",
+      "text": "Explain the causes of viscosity in gases and liquids. Explain the effect of temperature on viscosity for both liquids and gases with physical reasoning.",
+      "marks": "4",
+      "years": [
         "2082 Kartik",
+        "2079 Bhadra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 1: Fundamental Concepts of Fluids",
+      "text": "Define Continuum concept in fluid mechanics. When does the continuum assumption fail? Define Knudsen number ($Kn$) and explain compressibility and vapor pressure (cavitation).",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh",
         "2080 Ashwin",
-        "2079 Chaitra"
+        "2078 Chaitra"
       ],
       "frequency": 3
     },
     {
-      "chapter": "Chapter 2: Hydrostatic Forces on Submerged Surfaces and Buoyancy",
-      "text": "Derive expressions for Total Hydrostatic Force ($F = \\rho g \\bar{h} A$) and Center of Pressure ($h^* = \\bar{h} + \\frac{I_G \\sin^2\\theta}{A \\bar{h}}$) on an inclined plane submerged surface.",
+      "chapter": "Chapter 1: Fundamental Concepts of Fluids",
+      "text": "Derive an expression for capillary rise or depression in a glass tube: $h = \\frac{4\\sigma \\cos\\theta}{\\gamma d}$. A capillary tube of uniform bore ($r = 0.2\\text{ mm}$) is dipped vertically in water. Find the height of water rise taking surface tension $\\sigma = 0.073\\text{ N/m}$ and contact angle $\\theta = 0^\\circ$.",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh",
+        "2081 Ashwin",
+        "2079 Bhadra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 1: Fundamental Concepts of Fluids",
+      "text": "Derive expressions for pressure intensity inside: (a) A water droplet: $\\Delta P = \\frac{4\\sigma}{d}$, (b) A soap bubble: $\\Delta P = \\frac{8\\sigma}{d}$, and (c) A cylindrical liquid jet: $\\Delta P = \\frac{2\\sigma}{d}$. Calculate excess pressure inside a $4\\text{ mm}$ diameter water jet if $\\sigma = 0.073\\text{ N/m}$.",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh",
+        "2080 Bhadra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 1: Fundamental Concepts of Fluids",
+      "text": "A stationary sleeve bearing of length $30\\text{ cm}$ and internal radius $8.025\\text{ cm}$ supports a shaft of radius $8\\text{ cm}$ rotating at $200\\text{ rpm}$. The clearance gap is filled with lubricant of dynamic viscosity $\\mu = 0.8\\text{ N}\\cdot\\text{s/m}^2$. Calculate: (a) Shear stress, (b) Viscous torque, and (c) Power absorbed in overcoming friction.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2078 Bhadra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 1: Fundamental Concepts of Fluids",
+      "text": "A plate $0.025\\text{ mm}$ distant from a fixed plate moves at $60\\text{ cm/s}$ and requires a force of $2\\text{ N/m}^2$ to maintain this speed. Determine the dynamic viscosity of the fluid between the plates in poise and $\\text{Pa}\\cdot\\text{s}$.",
+      "marks": "6",
+      "years": [
+        "2081 Ashwin",
+        "2078 Kartik"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 2: Fluid Statics",
+      "text": "State and prove Pascal's Law for pressure at a point in a static fluid: $P_x = P_y = P_z$. Define Atmospheric pressure, Gauge pressure, Absolute pressure, and Vacuum pressure with a datum diagram.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2082 Baishakh",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 2: Fluid Statics",
+      "text": "Derive the Hydrostatic Law of pressure variation in a fluid: $\\frac{dP}{dz} = -\\gamma = -\\rho g$. Explain pressure measurement devices: Piezometer, Simple U-Tube Manometer, Differential Manometer, and Inverted U-Tube Manometer with derivation of governing equations.",
       "marks": "8",
       "years": [
         "2082 Chaitra",
         "2081 Ashwin",
         "2080 Chaitra",
+        "2079 Bhadra",
         "2078 Chaitra"
       ],
-      "frequency": 4
+      "frequency": 5
     },
     {
-      "chapter": "Chapter 2: Hydrostatic Forces on Submerged Surfaces and Buoyancy",
-      "text": "State Archimedes' Principle. Define Metacenter, Metacentric Height ($GM = \\frac{I}{V} - BG$), and explain conditions for Stable, Unstable, and Neutral Equilibrium of submerged and floating bodies.",
-      "marks": "6",
+      "chapter": "Chapter 2: Fluid Statics",
+      "text": "A differential U-tube manometer is connected between two pipes A and B. Pipe A contains oil of $S = 0.8$ at pressure $100\\text{ kPa}$ and Pipe B contains water at $180\\text{ kPa}$. The manometric liquid is mercury ($S = 13.6$). If center of B is $0.5\\text{ m}$ above A, calculate the differential height of mercury column.",
+      "marks": "8",
       "years": [
-        "2082 Kartik",
-        "2080 Ashwin",
-        "2079 Ashwin",
-        "2078 Chaitra"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 3: Fluid Kinematics and Continuity Equation",
-      "text": "Differentiate between Steady vs Unsteady, Uniform vs Non-Uniform, Laminar vs Turbulent, and Rotational vs Irrotational flows. Explain Streamlines, Pathlines, and Streaklines.",
-      "marks": "6",
-      "years": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2078 Chaitra"
+        "2082 Baishakh",
+        "2081 Ashwin",
+        "2080 Chaitra"
       ],
       "frequency": 3
     },
     {
-      "chapter": "Chapter 3: Fluid Kinematics and Continuity Equation",
-      "text": "Derive the 3-D Continuity Equation for compressible and incompressible steady fluid flow in Cartesian coordinates: $\\frac{\\partial u}{\\partial x} + \\frac{\\partial v}{\\partial y} + \\frac{\\partial w}{\\partial z} = 0$. Define Velocity Potential Function ($\\phi$) and Stream Function ($\\psi$) and explain Cauchy-Riemann conditions and Equipotential lines.",
+      "chapter": "Chapter 2: Fluid Statics",
+      "text": "Explain total hydrostatic pressure force on curved surfaces. Describe the horizontal component $F_x$ and vertical component $F_y$ (weight of liquid supported) and method to determine magnitude and line of action of resultant force $F_R = \\sqrt{F_x^2 + F_y^2}$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Bhadra",
+        "2079 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 2: Fluid Statics",
+      "text": "A cylindrical tank of $2\\text{ m}$ diameter and $4\\text{ m}$ length with horizontal axis is half filled with water and half filled with oil of specific gravity $S = 0.88$. Determine the magnitude and location of the net hydrostatic force on one flat vertical end of the tank.",
+      "marks": "8",
+      "years": [
+        "2081 Ashwin",
+        "2078 Bhadra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 2: Fluid Statics",
+      "text": "Explain Archimedes' Principle and Principle of Floatation. Define Center of Buoyancy ($B$), Metacenter ($M$), and Metacentric Height ($GM$). Derive the analytical formula for metacentric height: $GM = \\frac{I}{V} - BG$.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 2: Fluid Statics",
+      "text": "Explain relative equilibrium of liquids under uniform linear acceleration. Derive the angle of inclination of liquid surface: $\\tan\\theta = \\frac{a_x}{g \\pm a_z}$. A rectangular tank $500\\text{ mm}$ on each side containing oil ($S = 0.88$) is accelerated at $5\\text{ m/s}^2$ up an inclined plane at $\\alpha = 30^\\circ$. Calculate the maximum pressure and amount of spilled oil.",
+      "marks": "8",
+      "years": [
+        "2081 Ashwin",
+        "2078 Bhadra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 3: Fluid Flow Kinematics",
+      "text": "Explain Lagrangian and Eulerian approaches in fluid flow kinematics. Differentiate between: (a) Steady vs Unsteady flow, (b) Uniform vs Non-Uniform flow, (c) Laminar vs Turbulent flow, and (d) Rotational vs Irrotational flow.",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 3: Fluid Flow Kinematics",
+      "text": "Define Streamlines, Pathlines, and Streaklines with sketches. Under what condition do streamlines, pathlines, and streaklines coincide?",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 3: Fluid Flow Kinematics",
+      "text": "Derive the 3-Dimensional Continuity Equation for compressible and incompressible fluid flow in Cartesian coordinates: $\\frac{\\partial \\rho}{\\partial t} + \\frac{\\partial (\\rho u)}{\\partial x} + \\frac{\\partial (\\rho v)}{\\partial y} + \\frac{\\partial (\\rho w)}{\\partial z} = 0$. Deduce form for steady incompressible flow: $\\nabla \\cdot \\vec{V} = 0$.",
       "marks": "8",
       "years": [
         "2082 Chaitra",
@@ -83,8 +220,65 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Fluid Dynamics and Bernoulli's Equation",
-      "text": "Derive Euler's Equation of Motion along a streamline. Integrate Euler's equation to derive Bernoulli's Equation: $\\frac{p}{\\rho g} + \\frac{v^2}{2g} + z = \\text{constant}$. State all assumptions and limitations of Bernoulli's theorem.",
+      "chapter": "Chapter 3: Fluid Flow Kinematics",
+      "text": "Define Velocity Potential Function ($\\phi$) and Stream Function ($\\psi$). State their mathematical properties and Cauchy-Riemann equations: $u = -\\frac{\\partial \\phi}{\\partial x} = -\\frac{\\partial \\psi}{\\partial y}$, $v = -\\frac{\\partial \\phi}{\\partial y} = \\frac{\\partial \\psi}{\\partial x}$. Show that streamlines and equipotential lines intersect orthogonally.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 3: Fluid Flow Kinematics",
+      "text": "In a 2D incompressible fluid flow, velocity components are $u = x - 4y$ and $v = -y - 4x$. Show that velocity potential exists and determine its form $\\phi(x, y)$. Find also the stream function $\\psi(x, y)$.",
+      "marks": "8",
+      "years": [
+        "2082 Baishakh",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 3: Fluid Flow Kinematics",
+      "text": "A stream function is given by $\\psi = 2xy$. Determine the velocity components $u$ and $v$ at point $(2, 3)$, resultant velocity magnitude, and velocity potential function $\\phi(x, y)$.",
+      "marks": "6",
+      "years": [
+        "2081 Ashwin",
+        "2079 Ashwin",
+        "2078 Kartik"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 3: Fluid Flow Kinematics",
+      "text": "Explain Circulation ($\\Gamma$) and Vorticity ($\\zeta$). Differentiate between Vortex flow: Free Vortex ($v_\\theta r = C$) vs Forced Vortex ($v_\\theta = \\omega r$) with equations of motion and free surface profiles.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 3: Fluid Flow Kinematics",
+      "text": "Explain acceleration of a fluid particle: Local (Temporal) acceleration vs Convective acceleration. Derive expressions for total acceleration components $a_x, a_y, a_z$.",
+      "marks": "6",
+      "years": [
+        "2081 Ashwin",
+        "2080 Baishakh",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Fluid Dynamics",
+      "text": "Derive Euler's Equation of Motion along a streamline: $\\frac{dP}{\\rho} + v dv + g dz = 0$. Integrate Euler's equation to obtain Bernoulli's Equation: $\\frac{P}{\\rho g} + \\frac{v^2}{2g} + z = \\text{constant}$. State all assumptions and practical limitations of Bernoulli's theorem.",
       "marks": "8",
       "years": [
         "2082 Chaitra",
@@ -95,8 +289,86 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 5: Flow Measurement and Momentum Equation",
-      "text": "Explain Venturimeter with diagram. Derive formula for actual discharge through a Venturimeter: $Q_{act} = C_d \\frac{a_1 a_2}{\\sqrt{a_1^2 - a_2^2}} \\sqrt{2g h}$. Explain Orifice Meter and Pitot Tube.",
+      "chapter": "Chapter 4: Fluid Dynamics",
+      "text": "Write Navier-Stokes Equations of motion for viscous incompressible fluid flow in 2D/3D. Explain the physical significance of each term (Local acceleration, Convective acceleration, Pressure gradient, Body force, Viscous diffusion).",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh",
+        "2080 Ashwin",
+        "2078 Bhadra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Fluid Dynamics",
+      "text": "Derive the Linear Impulse-Momentum Equation for fluid flow: $\\sum \\vec{F} = \\rho Q (\\vec{v}_2 - \\vec{v}_1)$. Explain its application in calculating hydrodynamic forces on pipe bends, nozzles, and deflector vanes.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 4: Fluid Dynamics",
+      "text": "A pipe bend of $45^\\circ$ reduces in diameter from $300\\text{ mm}$ at inlet to $150\\text{ mm}$ at exit. Water flows through the bend at $Q = 0.25\\text{ m}^3\\text{/s}$. If pressure at inlet is $250\\text{ kPa}$, calculate the magnitude and direction of the resultant force exerted on the bend by water. Neglect head loss.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Fluid Dynamics",
+      "text": "A horizontal jet of water of $50\\text{ mm}$ diameter discharging at $v = 30\\text{ m/s}$ strikes a stationary curved vane which deflects the jet through an angle of $60^\\circ$. Due to friction, leaving velocity reduces to $26\\text{ m/s}$. Calculate the horizontal and vertical components of force exerted on the vane.",
+      "marks": "8",
+      "years": [
+        "2082 Baishakh",
+        "2081 Ashwin",
+        "2078 Bhadra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Fluid Dynamics",
+      "text": "Derive an expression for the force exerted by a fluid jet on: (a) A stationary flat vertical plate, (b) An inclined stationary plate, and (c) A moving flat plate with velocity $u$. Find efficiency of jet propulsion.",
+      "marks": "8",
+      "years": [
+        "2081 Ashwin",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Fluid Dynamics",
+      "text": "Explain Angular Momentum Equation (Moment of Momentum theorem) and its application in analyzing rotating turbomachinery (pumps and turbines).",
+      "marks": "6",
+      "years": [
+        "2080 Chaitra",
+        "2078 Kartik"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 4: Fluid Dynamics",
+      "text": "Explain Hydraulic Gradient Line (HGL) and Total Energy Line (TEL). Draw neat sketches of HGL and TEL for a pipeline connecting two reservoirs including entrance loss, friction loss, valve loss, and exit loss.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 5: Application of Energy and Momentum Equation",
+      "text": "Explain the construction and working of a Venturimeter. Derive the formula for actual discharge through a venturimeter: $Q_{\\text{act}} = C_d \\frac{a_1 a_2}{\\sqrt{a_1^2 - a_2^2}} \\sqrt{2gh}$.",
       "marks": "8",
       "years": [
         "2082 Kartik",
@@ -108,19 +380,75 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 5: Flow Measurement and Momentum Equation",
-      "text": "Derive Impulse-Momentum Equation. Calculate hydrodynamic force exerted by a fluid jet on a stationary and moving flat / curved vane.",
-      "marks": "6",
+      "chapter": "Chapter 5: Application of Energy and Momentum Equation",
+      "text": "A horizontal venturimeter with inlet diameter $30\\text{ cm}$ and throat diameter $15\\text{ cm}$ is used to measure the flow of water. Differential mercury manometer shows a reading of $20\\text{ cm}$. If $C_d = 0.98$, calculate the flow discharge in $\\text{litres/sec}$ and head loss in the converging section.",
+      "marks": "8",
       "years": [
-        "2082 Chaitra",
-        "2080 Ashwin",
-        "2078 Chaitra"
+        "2082 Baishakh",
+        "2081 Ashwin",
+        "2080 Chaitra"
       ],
       "frequency": 3
     },
     {
-      "chapter": "Chapter 6: Flow Through Pipes and Boundary Layer Theory",
-      "text": "Derive Darcy-Weisbach Equation for head loss due to friction in pipe flow: $h_f = \\frac{4 f L v^2}{2 g D}$. Explain Hydraulic Gradient Line (HGL) and Total Energy Line (TEL).",
+      "chapter": "Chapter 5: Application of Energy and Momentum Equation",
+      "text": "Explain Orifice Meter and Pitot Tube with diagrams. Derive actual discharge formula for an orifice meter and pitot-static tube for velocity measurement $v = C_v \\sqrt{2gh}$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Baishakh",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 5: Application of Energy and Momentum Equation",
+      "text": "Explain hydraulic coefficients of an orifice: Coefficient of Contraction ($C_c$), Coefficient of Velocity ($C_v$), and Coefficient of Discharge ($C_d$). State their experimental determination and prove $C_d = C_c \\times C_v$.",
+      "marks": "6",
+      "years": [
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 5: Application of Energy and Momentum Equation",
+      "text": "Derive expressions for discharge over: (a) Rectangular Notch/Weir: $Q = \\frac{2}{3} C_d L \\sqrt{2g} H^{3/2}$, (b) Triangular (V-Notch) Weir: $Q = \\frac{8}{15} C_d \\sqrt{2g} \\tan(\\theta/2) H^{5/2}$, and (c) Trapezoidal (Cipolletti) Weir (slope 1:4). Why is a V-notch preferred for low discharge measurement?",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 5: Application of Energy and Momentum Equation",
+      "text": "Derive an expression for the time required to empty a liquid tank through an orifice at the bottom: (a) Cylindrical tank, (b) Conical / Hemispherical tank: $t = \\int_{H_2}^{H_1} \\frac{A(h)}{C_d a \\sqrt{2gh}} dh$.",
+      "marks": "8",
+      "years": [
+        "2081 Ashwin",
+        "2079 Bhadra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 5: Application of Energy and Momentum Equation",
+      "text": "A tank of constant cross-sectional area $3.2\\text{ m}^2$ has two orifices each of area $8\\times 10^{-4}\\text{ m}^2$ in its vertical side at heights $5\\text{ m}$ and $2\\text{ m}$ above the bottom. Calculate the time taken to lower water level from $8\\text{ m}$ to $3\\text{ m}$ taking $C_d = 0.62$.",
+      "marks": "8",
+      "years": [
+        "2081 Baishakh",
+        "2078 Bhadra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 3: Fluid Flow Kinematics",
+      "text": "Derive the Darcy-Weisbach Equation for frictional head loss in pipe flow: $h_f = \\frac{4fLv^2}{2gD}$ or $h_f = \\frac{fLv^2}{2gD}$. Explain major losses vs minor losses (sudden enlargement, contraction, entrance, exit, bend losses).",
       "marks": "8",
       "years": [
         "2082 Chaitra",
@@ -132,14 +460,109 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Flow Through Pipes and Boundary Layer Theory",
-      "text": "Explain Boundary Layer Theory: Laminar boundary layer, Turbulent boundary layer, Transition, Boundary layer thickness ($\\delta$), Displacement thickness ($\\delta^*$), Momentum thickness ($\\theta$), and Boundary layer separation with control methods.",
+      "chapter": "Chapter 7: Flow Through Submerged Body and Boundary Layer Theory",
+      "text": "Derive Hagen-Poiseuille equation for laminar flow through a circular pipe: $Q = \\frac{\\pi D^4 \\Delta P}{128 \\mu L}$. Prove that maximum velocity is twice average velocity ($u_{\\max} = 2 \\bar{u}$) and friction factor $f = \\frac{16}{Re}$ (or $f' = \\frac{64}{Re}$).",
       "marks": "8",
       "years": [
         "2082 Kartik",
         "2081 Ashwin",
         "2080 Chaitra",
         "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 5: Application of Energy and Momentum Equation",
+      "text": "Explain pipe network problems: (a) Pipes in Series (Dupuit's equation for equivalent pipe: $\\frac{L_{eq}}{D_{eq}^5} = \\sum \\frac{L_i}{D_i^5}$), (b) Pipes in Parallel, (c) Three-reservoir problem, and (d) Hardy Cross method for loop network balancing.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 6: Dimensional Analysis and Physical Modelling",
+      "text": "Explain Dimensional Homogeneity and Rayleigh's Method of Dimensional Analysis. Explain Buckingham's $\\pi$-Theorem, selection of repeating variables, and systematic procedure for formulating non-dimensional groups.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Bhadra",
+        "2078 Chaitra"
+      ],
+      "frequency": 6
+    },
+    {
+      "chapter": "Chapter 2: Fluid Statics",
+      "text": "Using Buckingham's $\\pi$-Theorem, show that the pressure drop $\\Delta P$ in a pipe of diameter $D$, length $L$, wall roughness $e$, fluid density $\\rho$, dynamic viscosity $\\mu$, and mean velocity $V$ is given by: $\\Delta P = \\rho V^2 \\phi\\left(\\frac{L}{D}, \\frac{e}{D}, \\frac{\\rho V D}{\\mu}\\right)$.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Ashwin",
+        "2079 Bhadra",
+        "2078 Bhadra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 2: Fluid Statics",
+      "text": "A disc of diameter $D$ rotating in a fluid of density $\\rho$ and viscosity $\\mu$ has rotational speed $\\omega$. Show by Buckingham's $\\pi$-theorem that power required to drive the disc is $P = \\rho \\omega^3 D^5 \\phi\\left(\\frac{\\mu}{\\rho \\omega D^2}\\right)$.",
+      "marks": "8",
+      "years": [
+        "2080 Bhadra",
+        "2078 Bhadra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 2: Fluid Statics",
+      "text": "Explain Dimensionless Numbers in fluid mechanics: Reynolds number ($Re$), Froude number ($Fr$), Euler number ($Eu$), Weber number ($We$), and Mach number ($Ma$). State their physical significance and application in dynamic similitude.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 1: Fundamental Concepts of Fluids",
+      "text": "Explain Model Laws (Similarity criteria): Reynolds model law and Froude model law. Derive scale ratios for velocity ($V_r$), discharge ($Q_r$), force ($F_r$), and power ($P_r$) under Reynolds and Froude model laws.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2080 Baishakh",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 7: Flow Through Submerged Body and Boundary Layer Theory",
+      "text": "Explain Prandtl's Boundary Layer Theory. Describe boundary layer growth over a flat plate showing Laminar boundary layer, Transition zone, Turbulent boundary layer, and Laminar sub-layer with a neat sketch.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 7: Flow Through Submerged Body and Boundary Layer Theory",
+      "text": "Explain Boundary Layer Separation. What causes boundary layer separation (adverse pressure gradient $\\frac{dP}{dx} > 0$ and viscous shear)? Describe methods of controlling boundary layer separation (suction, blowing, streamlined shapes, vortex generators).",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2079 Chaitra",
+        "2078 Bhadra"
       ],
       "frequency": 4
     }

@@ -1,15 +1,15 @@
 {
   "subject": "Electronic Device and Circuits",
   "chapters": [
-    "Chapter 1: Semiconductor Diodes, Zener Diodes and Rectifier/Clipping Circuits",
-    "Chapter 2: Bipolar Junction Transistors",
-    "Chapter 3: Field Effect Transistors",
-    "Chapter 4: Frequency Response of BJT and FET Amplifiers",
-    "Chapter 6: Feedback Amplifiers and Sinusoidal Oscillators"
+    "Chapter 1: The Bipolar Junction Transistor (BJT)",
+    "Chapter 2: Field-Effect Transistor",
+    "Chapter 3: Operational Amplifier Circuits and Oscillator",
+    "Chapter 4: Output Stages and Power Amplifiers",
+    "Chapter 5: Power Supplies, Breakdown Diodes, and Voltage Reference"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Semiconductor Diodes, Zener Diodes and Rectifier/Clipping Circuits",
+      "chapter": "Chapter 5: Power Supplies, Breakdown Diodes, and Voltage Reference",
       "text": "Explain PN Junction Diode: Forward and Reverse bias V-I characteristics, Diode current equation ($I = I_0 (e^{V / \\eta V_T} - 1)$), Dynamic resistance, and Diffusion vs Transition capacitance. Explain Zener Diode and Zener Voltage Regulator circuit.",
       "marks": "8",
       "years": [
@@ -21,7 +21,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Semiconductor Diodes, Zener Diodes and Rectifier/Clipping Circuits",
+      "chapter": "Chapter 4: Output Stages and Power Amplifiers",
       "text": "Explain Rectifiers: Center-Tapped Full-Wave Rectifier vs Bridge Rectifier. Derive expressions for DC output voltage ($V_{dc} = \\frac{2 V_m}{\\pi}$), RMS current, Ripple Factor ($\\gamma = 0.482$), and Rectification Efficiency ($\\eta = 81.2\\%$). Explain Capacitor Filter ($C$-filter).",
       "marks": "8",
       "years": [
@@ -33,7 +33,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 2: Bipolar Junction Transistors",
+      "chapter": "Chapter 1: The Bipolar Junction Transistor (BJT)",
       "text": "Explain Bipolar Junction Transistor (BJT): Input and Output characteristics in Common Emitter (CE), Common Base (CB), and Common Collector (CC) configurations. Derive relation $\\beta = \\frac{\\alpha}{1 - \\alpha}$ and explain Early Effect (Base Width Modulation).",
       "marks": "8",
       "years": [
@@ -46,7 +46,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 2: Bipolar Junction Transistors",
+      "chapter": "Chapter 5: Power Supplies, Breakdown Diodes, and Voltage Reference",
       "text": "Explain BJT Biasing: Fixed Bias, Collector-to-Base Bias, and Voltage Divider (Self) Bias. Derive Stability Factor $S = \\frac{\\partial I_C}{\\partial I_{CO}}$ for voltage divider bias and draw DC Load Line and Q-point.",
       "marks": "8",
       "years": [
@@ -58,7 +58,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 3: Field Effect Transistors",
+      "chapter": "Chapter 2: Field-Effect Transistor",
       "text": "Explain Field Effect Transistors (FET): Construction and characteristics of JFET (Shockley's equation: $I_D = I_{DSS}(1 - \\frac{V_{GS}}{V_P})^2$) and MOSFET (Depletion MOSFET vs Enhancement MOSFET). Compare BJT vs FET.",
       "marks": "8",
       "years": [
@@ -70,7 +70,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 6: Feedback Amplifiers and Sinusoidal Oscillators",
+      "chapter": "Chapter 1: The Bipolar Junction Transistor (BJT)",
       "text": "Explain Small-Signal Low Frequency BJT Amplifier Analysis using $h$-parameter model ($h_{ie}, h_{re}, h_{fe}, h_{oe}$) and $r_e$ model. Calculate Voltage Gain ($A_v$), Current Gain ($A_i$), Input Impedance ($Z_{in}$), and Output Impedance ($Z_{out}$) for a CE amplifier.",
       "marks": "8",
       "years": [
@@ -83,5 +83,6 @@
       "frequency": 5
     }
   ],
-  "code": "EX 452"
+  "code": "ENEX 151",
+  "generated": "2026-08-17T14:00:00.000Z"
 }

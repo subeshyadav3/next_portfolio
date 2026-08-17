@@ -7,9 +7,9 @@ import {
   getProgram,
   getSemesterSubjects,
 } from "@/lib/ioe/data";
-import { SubjectCard } from "@/components/ioe/SubjectCard";
+import { ProgramHubView } from "@/components/ioe/ProgramHubView";
 import { buildIoeMetadata, breadcrumbLd, jsonLd } from "@/lib/ioe/seo";
-import { ChevronRight, Layers, FileText, BookOpen, ArrowRight } from "lucide-react";
+import { ChevronRight, Layers, FileText, BookOpen } from "lucide-react";
 
 interface PageProps {
   params: Promise<{ program: string }>;
@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: PageProps) {
   const program = getProgram(slug);
   if (!program) return {};
   return buildIoeMetadata({
-    title: `${program.fullName} (${program.code}) Past Question Papers by Semester`,
-    description: program.description,
+    title: `${program.fullName} (${program.code}) Past Question Papers & Syllabus - IOE TU`,
+    description: `Official IOE past question papers (PDF), curriculum, and semester syllabus for ${program.fullName} (${program.code}) from 2078 to 2083 BS. Download or preview online.`,
     path: `/ioe/${program.slug}`,
   });
 }
@@ -48,17 +48,64 @@ export default async function IoeProgramPage({ params }: PageProps) {
     0
   );
 
+  // Tier 1 deep programs have individual subject chapter banks
+  const isDeepProgram = ["bct", "bce", "bei", "bex"].includes(program.code.toLowerCase());
+
   const breadcrumb = breadcrumbLd([
     { name: "Home", path: "/" },
     { name: "IOE", path: "/ioe" },
     { name: program.fullName, path: `/ioe/${program.slug}` },
   ]);
 
+  // Schema markup for SEO & Google Rich Results
+  const courseSchema = {
+    "@context": "https://schema.org",
+    "@type": "Course",
+    "name": `${program.fullName} (${program.code})`,
+    "description": program.description,
+    "provider": {
+      "@type": "EducationalOrganization",
+      "name": "Institute of Engineering (IOE), Tribhuvan University",
+      "sameAs": "https://ioe.edu.np"
+    }
+  };
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": `Where can I download IOE ${program.code} past question papers?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `You can download official IOE Tribhuvan University past question papers (PDF) for all semesters of ${program.fullName} directly from this hub.`
+        }
+      },
+      {
+        "@type": "Question",
+        "name": `What is the passing mark for IOE ${program.code} examinations?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `For IOE 80-mark final board exams, the passing mark is 32. For 20-mark internal theory assessments, the passing mark is 8.`
+        }
+      }
+    ]
+  };
+
   return (
     <div className="space-y-10">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumb) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(courseSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }}
       />
 
       {/* ── Breadcrumb ── */}
@@ -75,7 +122,6 @@ export default async function IoeProgramPage({ params }: PageProps) {
 
       {/* ── Program Header ── */}
       <header className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-xs dark:border-gray-800 dark:bg-gray-900 sm:p-8">
-        {/* Subtle texture */}
         <div
           aria-hidden="true"
           className="pointer-events-none absolute inset-0 opacity-[0.025]"
@@ -94,6 +140,9 @@ export default async function IoeProgramPage({ params }: PageProps) {
             <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600 dark:bg-gray-800 dark:text-slate-300">
               Undergraduate B.E. Curriculum
             </span>
+            <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300">
+              2078–2083 BS Verified
+            </span>
           </div>
 
           <h1 className="mt-4 text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
@@ -111,77 +160,22 @@ export default async function IoeProgramPage({ params }: PageProps) {
             </span>
             <span className="inline-flex items-center gap-1.5 text-slate-600 dark:text-slate-300">
               <BookOpen className="h-4 w-4 text-emerald-500" />
-              {totalSubjects} Total Subjects
+              {totalSubjects} Total Courses
             </span>
             <span className="inline-flex items-center gap-1.5 text-slate-600 dark:text-slate-300">
               <FileText className="h-4 w-4 text-violet-500" />
-              {subjectsWithPapersCount} Subjects with PYQs
+              {subjectsWithPapersCount} Subjects with Official PYQs
             </span>
           </div>
         </div>
       </header>
 
-      {/* ── Semester Quick Jump ── */}
-      <div className="flex flex-wrap items-center gap-2">
-        <span className="text-[11px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">
-          Jump to:
-        </span>
-        {semesterRows.map(({ sem }) => (
-          <a
-            key={sem}
-            href={`#semester-${sem}`}
-            className="rounded-lg bg-slate-100 px-3 py-1 font-mono text-xs font-bold text-slate-600 transition hover:bg-blue-50 hover:text-blue-600 dark:bg-gray-800 dark:text-slate-400 dark:hover:bg-gray-700 dark:hover:text-white"
-          >
-            Sem {sem}
-          </a>
-        ))}
-      </div>
-
-      {/* ── Semesters ── */}
-      <div className="space-y-14">
-        {semesterRows.map(({ sem, subjects }) => {
-          const withPapers = subjects.filter((s) => findCatalogSubject(s.title));
-          return (
-            <section key={sem} id={`semester-${sem}`} className="scroll-mt-20 space-y-4">
-              {/* Semester heading row */}
-              <div className="flex flex-wrap items-end justify-between gap-2 border-b border-slate-200/80 pb-3 dark:border-gray-800">
-                <div className="flex items-center gap-2.5">
-                  <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-blue-600 font-mono text-xs font-extrabold text-white shadow-sm dark:bg-blue-500">
-                    S{sem}
-                  </span>
-                  <div>
-                    <h2 className="text-lg font-bold text-slate-900 dark:text-white sm:text-xl">
-                      Semester {sem}
-                    </h2>
-                    <p className="text-[11px] text-slate-400 dark:text-slate-500">
-                      {withPapers.length} of {subjects.length} subjects have papers
-                    </p>
-                  </div>
-                </div>
-
-                <Link
-                  href={`/ioe/${program.slug}/semester/${sem}`}
-                  className="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 hover:underline dark:text-blue-400"
-                >
-                  View Semester Page <ArrowRight className="h-3 w-3" />
-                </Link>
-              </div>
-
-              {/* Subject cards */}
-              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                {subjects.map((subject) => (
-                  <SubjectCard
-                    key={subject.code}
-                    program={program}
-                    semester={sem}
-                    subject={subject}
-                  />
-                ))}
-              </div>
-            </section>
-          );
-        })}
-      </div>
+      {/* ── Interactive Hub View ── */}
+      <ProgramHubView
+        program={program}
+        semesterRows={semesterRows}
+        isDeepProgram={isDeepProgram}
+      />
     </div>
   );
 }

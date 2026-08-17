@@ -76,7 +76,8 @@ export interface IoeSubjectQuestions {
 }
 
 export interface IoeSyllabusTopic {
-  num: string;
+  num?: string;
+  code?: string;
   title: string;
 }
 

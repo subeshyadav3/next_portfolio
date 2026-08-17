@@ -1,16 +1,18 @@
 {
   "subject": "Engineering Hydrology",
   "chapters": [
-    "Chapter 1: Introduction to Hydrologic Cycle & Catchment Characteristics",
-    "Chapter 2: Precipitation & Measurement",
-    "Chapter 4: Streamflow Measurement",
-    "Chapter 5: Hydrograph Analysis & Unit Hydrograph Theory",
-    "Chapter 6: Flood Routing & Flood Frequency Analysis",
-    "Chapter 7: Groundwater Hydrology & Well Hydraulics"
+    "Chapter 1: Introduction",
+    "Chapter 2: Precipitation",
+    "Chapter 3: Abstractions from Precipitation (Hydrological Losses)",
+    "Chapter 4: Surface Runoff",
+    "Chapter 5: Streamflow Measurement",
+    "Chapter 6: Hydrograph Analysis",
+    "Chapter 7: Flood Hydrology",
+    "Chapter 8: Flood Routing"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Introduction to Hydrologic Cycle & Catchment Characteristics",
+      "chapter": "Chapter 2: Precipitation",
       "text": "Explain the Hydrologic Cycle with a neat block diagram and water budget equation: $P - R - G - E - T = \\Delta S$. Explain methods for estimating missing precipitation data: (a) Arithmetic Mean Method, and (b) Normal Ratio Method ($P_x = \\frac{N_x}{m}\\sum \\frac{P_i}{N_i}$).",
       "marks": "3+5",
       "years": [
@@ -19,7 +21,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 2: Precipitation & Measurement",
+      "chapter": "Chapter 2: Precipitation",
       "text": "Explain methods to calculate Mean Areal Rainfall over a catchment: (a) Arithmetic Average Method, (b) Thiessen Polygon Method, and (c) Isohyetal Method. Explain Double Mass Curve analysis for checking consistency of rainfall records.",
       "marks": "4+6",
       "years": [
@@ -29,18 +31,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 1: Introduction to Hydrologic Cycle & Catchment Characteristics",
-      "text": "Explain Horton's Infiltration Equation: $f_p = f_c + (f_0 - f_c)e^{-k t}$. Define $\\phi$-Index and $W$-Index. A 6-hour storm produces rainfall increments of $1.5, 2.5, 4.0, 3.0, 1.8, 1.2\\,\\text{cm/hr}$. If total runoff depth is $6.5\\,\\text{cm}$, determine the $\\phi$-index of the catchment.",
-      "marks": "3+5",
-      "years": [
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Streamflow Measurement",
+      "chapter": "Chapter 5: Streamflow Measurement",
       "text": "Explain Streamflow Measurement methods: Area-Velocity Method using Current Meter (0.2D & 0.8D point methods), Dilution Gauging (Tracer method), and Stage-Discharge Rating Curve ($Q = C_r(G - a)^b$).",
       "marks": "4+4",
       "years": [
@@ -49,7 +40,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 5: Hydrograph Analysis & Unit Hydrograph Theory",
+      "chapter": "Chapter 6: Hydrograph Analysis",
       "text": "Define Unit Hydrograph (UH). State the underlying assumptions of Unit Hydrograph Theory (Linear response and Time invariance). Describe base flow separation methods (Straight line method, Fixed base method, Variable slope method).",
       "marks": "4+4",
       "years": [
@@ -59,43 +50,906 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 5: Hydrograph Analysis & Unit Hydrograph Theory",
-      "text": "Given the ordinates of a 4-hour Unit Hydrograph at 2-hour intervals: $[0, 12, 35, 60, 48, 30, 18, 8, 0]\\,\\text{m}^3/\\text{s}$, derive the ordinates of a 6-hour Unit Hydrograph for the same catchment using the S-Curve (Summation Hydrograph) method.",
-      "marks": "10",
+      "chapter": "Chapter 5: Streamflow Measurement",
+      "text": "Eriefly describe the rnethodology of estirnating cvapotranspiration using Penrnan's ecluation ancl Lysimeter method.",
+      "marks": "6",
       "years": [
-        "2083",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: Flood Routing & Flood Frequency Analysis",
-      "text": "Explain the Muskingum Channel Flood Routing Method ($Q_{j+1} = C_0 I_{j+1} + C_1 I_j + C_2 Q_j$ where $C_0 + C_1 + C_2 = 1$). Route a given inflow flood hydrograph through a river reach with parameters $K = 12\\,\\text{hours}$ and $x = 0.2$ with routing time step $\\Delta t = 6\\,\\text{hours}$.",
-      "marks": "4+8",
-      "years": [
-        "2083"
+        "2083 Baishakh"
       ],
       "frequency": 1
     },
     {
-      "chapter": "Chapter 6: Flood Routing & Flood Frequency Analysis",
-      "text": "Explain Gumbel's Extreme Value Distribution Method for flood frequency analysis: $x_T = \\bar{x} + K_T \\sigma_x$ where $K_T = \\frac{y_T - \\bar{y}_n}{S_n}$ and $y_T = -\\ln\\left[-\\ln\\left(1 - \\frac{1}{T}\\right)\\right]$. Calculate the 50-year and 100-year return period peak floods for a river with 30 years of annual maximum flood data (Mean $\\bar{x} = 1200\\,\\text{m}^3/\\text{s}$, Standard deviation $\\sigma_x = 350\\,\\text{m}^3/\\text{s}$).",
-      "marks": "4+6",
+      "chapter": "Chapter 1: Introduction",
+      "text": "Explain briefly humankirid's interi'erence in i,aricus parls ot'hydroiogical cycle.",
+      "marks": "6",
       "years": [
-        "2082",
-        "2080"
+        "2082 Bhadra"
       ],
-      "frequency": 2
+      "frequency": 1
     },
     {
-      "chapter": "Chapter 7: Groundwater Hydrology & Well Hydraulics",
-      "text": "Derive Dupuit-Thiem Equations for steady-state radial flow to a fully penetrating well in: (a) Unconfined Aquifer ($Q = \\frac{\\pi K (h_2^2 - h_1^2)}{\\ln(r_2/r_1)}$), and (b) Confined Aquifer ($Q = \\frac{2\\pi K b (h_2 - h_1)}{\\ln(r_2/r_1)}$). What is Specific Yield ($S_y$) and Specific Retention ($S_r$)?",
-      "marks": "4+6",
+      "chapter": "Chapter 3: Abstractions from Precipitation (Hydrological Losses)",
+      "text": "Derive an expression for estirnation of evaporation in a lake by the cnergy balance method. - -P i ^ -",
+      "marks": "6",
       "years": [
-        "2081"
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Abstractions from Precipitation (Hydrological Losses)",
+      "text": "Justi$i the statement..Hycirological losses are not actual losses\". Briefly factors infl uencing evaporation. Isl describe L/.-t J I",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Flood Hydrology",
+      "text": "Vas tiiund to be 3'0 m i-tnd 2'7 m at tr,vc sections 200 m a1;art. Tire tlrop in the water surface elevation was found to be 0\"i2 m. Assuming ivfanning's coefficient to be 0.025, estlmate the flood througir the channel, Assiirrie no ecldy loss. For the -discliarge application of the h1'draulic formuiae fcrr stream flow ccmputarion, what are the parameters that n ti to be meastired in tire channel?",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Flood Hydrology",
+      "text": "If the annual flUoci seri*s data fcrr a catchn:*nt is availal,\",le for N consecutive years, explain a procedur* to detenlline a flood dischargc with a rsiur.n periocl of T, {where T>N), by using iog-nonnal disrribution.",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "De{ne hydrology. why hydrology is considered irnportant in eass of ruatgr r,&sources - engrneermgz ) a) Explain different methods of detennining the average rainfall oyer an ar,ea dus lo storfi. Disouss *re relative merits,and demerits of varlous methods. [l+31 e",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "Point out thc *pplications and limitations of hydrogtaph theory. t3*3]",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Flood Hydrology",
+      "text": "What are the different methods of flood prediction?",
+      "marks": "4",
+      "years": [
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Flood Hydrology",
+      "text": "What is flood routing? Exptain about Clark ttIH method of flood routing.",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Abstractions from Precipitation (Hydrological Losses)",
+      "text": "L 60 Tlo_i_lool:rL;1,,j 3\" a) Differentiate AET and PET. Expl:lin the rnetirod of tneasurement r:f evapotranspiration iri field with skrtch. 12*21",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Streamflow Measurement",
+      "text": "\\Yhat is rating curue? Explain with sketc'h how'rvould 1'cu detetmine stage for zero discharge. 12+61",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Streamflow Measurement",
+      "text": "The dala oertaining to a storm gauging opelatrorl et: gauging site are given helou. l-he rating equation of the eurrent rneter is v: (0\"32N+0.032) n/s where Ni is revolution per second, Calculate the discharge in the strearn.",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Hydrograph Analysis",
+      "text": "Trtrhat is unit hydrograph? Ilow do you prepare the unit hydrograph for muitiple storm of same duration? 12+41",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Ixplain the concepf of attenuation and lag of peak due to rolrting with skotch. coefficient",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Escribe l{ydrological cycle. Discuss about the uses of Engineering Hydr6}sg-y\"",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "In a 120 minute storru the rates of rainfall obsened in successive 20 minute interval are 5,8,15,12,9 and 2 mmfr. Assuming the $-index value as 2.5 mrutu and an initial loss of 0.$5 \\text{ mm}$, determine the totai rainfall, net runoff and w-index of the siorm\" I I +2 15 J",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "Define Rating Curve and explain the r:se of Rating Cun e.",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "O x@___ at 18I surtounding stations (mm",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Streamflow Measurement",
+      "text": "Ilorvithe infillration of soii can be measurcd by laboratory method? Elaborate Ilorton's crluation with neat sketch.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Hydrograph Analysis",
+      "text": "If the direct mnoff produced 1...y the storm is measured at the outlet of the watershed as",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "{ml, estimate the $ - index of 1hc storm and duration of the rainfail excess.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "Establish relationship betrveen rainfall and resulting runoff for a large catchmeut. Point out the factor affecting runoff fi'om a basin.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "A catchment area has the tirle of concentration of 20 minutes and an area of 20 ha. Estirnate the peak discharge corresponding to 2-\\ years return period\" 'I'ake nnoff coelficient of 0.25. The intensit,v duration frequencv curve fbr the storm can be expressed in crn,& by: i: K'I'1(Dr-a)'. Take K: 6.9-?, x: 0. i 89, a:0.50 and n- 0.878.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Flood Hydrology",
+      "text": "Describe Rational Melhod fbr estimation of flood, its assumpations and Limitatic;ns.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Flood Hydrology",
+      "text": "Route the follorving flood h,vdrograph at Clhovar of Bagmati River using Muskingum",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Flood Hydrology",
+      "text": "WriteaboutthemethodspracticedinNepaiforestimatingrunofffronrungauged basins. ' ' qf curreri increi is;;;;;,ty: ' ':--'J' 'ir '.1 ai 0-6 d a\"pti''",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "The ordinates of6-h IIH ofa basin are",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Hydrograph Analysis",
+      "text": "I\"nr\" flood hydrograph, Direct Run of Hydroeruph hydrograph analysis. the diJferentmetho;s iruus\" now separation in 18l",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "Mean and standard deviations of annual rainfall estimated based cn ser.eir srations in a 'catchrnent are $143 \\text{ mm}$ and 31.$6 \\text{ mm}$, respectively. Fcr a 7Yo error in tirc estimalion of mean rainfail, do we need additional rain gauges in ihe catchment? If y*f r*'hat are tire minimum rurmbers of additional rain gauges required to be established in the watershed.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Abstractions from Precipitation (Hydrological Losses)",
+      "text": "8 cnvtr and 0.$3 \\text{ cm}$/hr, respectively. If an evaporation pan (pan coeffrcient = 0.2) installed in the calchment indieated *.$5 \\text{ cm}$ drop in the rvatlr level dtiring the 24 hours of its operation, delermine runoff fiam the catclirnent.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Surface Runoff",
+      "text": "Explain the methods practiced in Nepal for the estinnation of runoff fiam an ungauged basin\"",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Flood Hydrology",
+      "text": "Discuss how clifferent factors afiect flood l:ydrograph. What are varicus rnethocls for baseflow separaticn?",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "662 \\/,afo I(,t Determine the colstant fs, f. and k of Horton's eqr.iatic'n whil.h fits t}'e abovt data. compute the follc'*'ing i With (m) bank Disiance forrn data. 1s:ft 0 dischargc for a river' 1 I 4 1",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "_Caleulate pETforMaymonth by fenmanmetma. 60",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Surface Runoff",
+      "text": "A storm with a r5-0 rm precipitation produced a direct runoff or g.?\"*. The time Jp$bulongf sto.- i* u, r\"rio.ir. I",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Surface Runoff",
+      "text": "6 4- a) Defi,c cttchment. what are the factors",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Surface Runoff",
+      "text": "027 fl {i?q !i f or i\"n s.t[Tr,\",;AiU/S and DiS seciions assuming coefficient of cc;rir:ition 7 I. affecting runoff from a catchment? gtgglglaa hu* i;* obtainc6. ncrl. Arer (m2",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Hydrograph Analysis",
+      "text": "Define unit hydrographs and e4Sain the uses of hydrograph.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Flood Hydrology",
+      "text": "Determine the peak flood for 0.4% probability of exceedence method. ii) Compute 90% confidence limits for above floods, using confi dence level respecti vely.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Streamflow Measurement",
+      "text": "Explain the rational method of detemrining the limitations.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Explain hydrologic cycle rvitli neat sketciies anC justify itS neeri Hydrology.",
+      "marks": "3+2",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Abstractions from Precipitation (Hydrological Losses)",
+      "text": "Differentiate actual and Potential Evapotranspirations.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Streamflow Measurement",
+      "text": "Following are the data of gauge a:rd discharge collected at a palticular sec.tion of 1he river by stream gauging operation. [6 t'2]",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Streamflow Measurement",
+      "text": "Dereiop a gauge-discharge reiationship for this stream at this section for use in estimating tire discirarge for a knorvn gauge reading. \\Vliat is the cocfficient of conelation of tire derived rclaiionship? Use a:7.5m lor the gauge correspcnding to zero discharge. Estimate the discharge conesponding to a gauge reading oi- 10.5m ai. this gauging station. Gauqe readins (m) Discharge (m'/s) Gause readinc (m) Discharte (mj/s) 170",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "Caiculatc tirc discLerge in a stream by using mid-section mettrrod flom provir'led as caiibtated and depth C.6 A current meier is uscd to measure viiocity at v:0.3N+0.004",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "Istance from right bank (m) Depth (m) N*mbcr cf revoluli.tns 0 0 2",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Flood Hydrology",
+      "text": "Explain Rational method of flood prcdication \" Alsc mention iimitations and 8520rr3is of a mean yielded yeius 21 cf of ri.rer peak",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "5 and also deterrnine safety margin on this basis'",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "Check whether the data of starting X is consistent ii) In which year a change in regime indicated? iii) Compute the mean annual rainfall for stations X al its present site for the given 36 year period first without adjustment and secondly with the data adjusted for the change in regime. iv) Compute the adjusted annual rainfall at station X for the affected period.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Abstractions from Precipitation (Hydrological Losses)",
+      "text": "Starting from Horton's equation. derive an expression for total infiltration in time \"tn. Also draw graph showing infiltration and total infiltration../s tr'me. 14+21",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Hydrograph Analysis",
+      "text": "What is Unit hydrograph? What are assumptions and limitations of UH? L2+2]",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Abstractions from Precipitation (Hydrological Losses)",
+      "text": "Explain energy balance equation and derive evaporation equation using Bowen's ratio.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "For a storm of 3 hours on 50 ha catchment, the rainfall rates are as follows: 0 Rain fall rate (cm/hour): 0 30",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "3 If the 0 index of this basin is 2.$5 \\text{ cm}$/hour, calculate total rainfall, runoff in (cm) and peal discharge.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Explain interception and depression storage losses. How these losses are estimated during hydrological analysis.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Streamflow Measurement",
+      "text": "Explain the procedure of stream flow measurement by area-velocity method. Also, describe the mid section method for discharge computation using sketch and equations.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Streamflow Measurement",
+      "text": "What factors should be considered in selecting a site for stream gaugingptation. 141",
+      "marks": "3+3",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "41, 0. If rainfall excess with intensity of 2.$0 \\text{ cm}$/h for a period of 4 h followed immediately by another 3 h storm with an intensity of $1 \\text{ cm}$/tr occurs on the basin, what is the peak flow produced by this rainfall and at what time after the commencement of rainfall would this peak flow occur? Assume baseflow is negligible.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "DifFerentiate between continuous and discrete random variables. Give examples each in hydrology. Give three formulae which are used to determine the return period.",
+      "marks": "1+2+3",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "Maximum reservoir level ii) Maximum outflowrate iii) Reduction in the peak 142 482",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Surface Runoff",
+      "text": "Define the following terms: hydrological cycle, runoff, water balance and catchment.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Abstractions from Precipitation (Hydrological Losses)",
+      "text": "If the infiltration during this storm can be represented by Horton's equation with",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Flood Hydrology",
+      "text": "Write down Penman equation and explain all variables and constants involved in fc: it.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Streamflow Measurement",
+      "text": "Mention the factors that should be considered for the proper selection of stream ganging site.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "Explain the average rainfall oner a catclunent dueto a storm: of the various methods. Ui Bxptain double",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Hydrograph Analysis",
+      "text": "An S- hydrograph is given such that at time t = 0, its ordinate is icir\"-/h ar-rd it remains so for an indefinite perioc! of time. Deternine a 2-hour urut h;*drograph. Using ihis r:r,it hydrogiaptr, detei:mine a 4- hoqr- ur-rit hydrograph.: P.5",
+      "marks": "8+6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Why the study of hydrology is important for engineers for planning and designing of water resources projects in Nepal? Explain the significant features of global water balance with necessary equation. 12+21",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "In what way you can present the precipitation data? What are the benefits of each method? Explain the method of drawing Intensity Duration Frequency (IDF) curve. 13+2+31",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Explain the procedure of deriving Clark UH. --v \\ \\",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "Construct the hyetograph of this storm for 30 min aud 2 hours interval ii) Compute maximum average intensity of rainfall for 30 min, t hour, 2 hour in this storm and plot the resulting intensity duration curve.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Streamflow Measurement",
+      "text": "What is mean by rating curve? Write the uses of rating curve. Also explain the method of dnwing the rating curve in a particular section of a t1+2+2) river. river.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Hydrograph Analysis",
+      "text": "A I how unit hydrograph is given by a rectangle whose base is 4 hours and height is",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Flood Hydrology",
+      "text": "Explain log pearsion III distribution and its uso in the prediction of flood. 't'..'.::ll.,,. 1|;",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "Explain lntensity Duration Curve and Depth Area Curve. I",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "The infiltration of a catchment can be represented by the equatiorr'1: lJ+50e{'ft. If a, the rainfall intensity of $45 \\text{ mm}$/hr occurs continuously for 10 hour from a catchment of areal2ktr:2, t2+2+2+21 calculate",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Surface Runoff",
+      "text": "Total runoffvolume generated from that catchment ii) Total infiltration volume at the period iii)'Calcr{ate-fiue eem'the+ta* uf-ein&U @ iv) Show yoru all (above three) results in infiltration curves i",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Streamflow Measurement",
+      "text": "Describe the principle'of slope-area method for the measurement of flood discharge in 7 I",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Hydrograph Analysis",
+      "text": "Estimate the percentage increase in thi peak storm ruiroffdue to urbanization.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "Estimate the average depth of precipitation over the drainage basin with following data",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Streamflow Measurement",
+      "text": "Determine the stage corresponding to zero discharge for following data of a smooth curve. (m)",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Flood Hydrology",
+      "text": "Briefly describe the procedure of flood estimation by Loe Pearson III method. 50 0 tsI L",
+      "marks": "14",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "Z Compute the stream flow from following data. The calibrated equation of current meter is; V = 0.045 + 0.76N, where V is in mlsec and N is revolutiorlsec. Distance frombank (m) Depth (m) 0 0 0 No. ofRevolutions",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 8: Flood Routing",
+      "text": "/U'fh* is a rating curve? Write down a standard equation for a rating curve. Explain in the procedure to estimate the parameters qf that radng equation. t l+1+81 lfietail",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Hydrograph Analysis",
+      "text": "$4 \\text{ cm}$/h. Also one hour unit hydrograph has now peak of 6.0 mrls at t hour from start and time of base is 4 hours. If a design storm has intensities of 4cmltrour and 3cmlh for two consecutive one hour intervals, estimate",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Surface Runoff",
+      "text": "The percentage increase in the peak storm runoff due to urbanization.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Flood Hydrology",
+      "text": "The volume of flood runoff due to urbanization.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Briefly describe the role of ground water in irrigation development.;:",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Surface Runoff",
+      "text": "What is rating curve? What are the factors affecting run off? Explain. 12+41",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Determine the mlan and standard deviation of the data used.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Flood Hydrology",
+      "text": "Estimate the magnitude of a flood with a return period of 500 years. I",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Flood Hydrology",
+      "text": "What is the probability of the flood equal to or greater than a 500-year flood occuring '1 I three times in the next 10 years?",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "A $30 \\text{ cm}$ well fully penetrates an unconfined aquifer of saturated depth 25m. When a discharge of 2100 lpm was being pumped for a long time, observation wells at radial distances of 30 and 90m indicated drawdowns of 5 and 4m respectively. Estimate the co-efficient of permeability and transmissibility of the aquifer. What is the drawdown at the pumping well?",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Abstractions from Precipitation (Hydrological Losses)",
+      "text": "Write down the factors affecting evapotranspiration.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "There are four rain gauges at four corner ofa rectangle. The two sides ofrectangle are 100krn and 150km. The yearly rainfalls of for:r gauges are $1200 \\text{ mm}$, $1300 \\text{ mm}$, $1500 \\text{ mm}$ and $1100 \\text{ mm}$ respectively. Calculate the average rainfall by Theissen polygon method.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Flood Hydrology",
+      "text": "Define floods. Enumerate the causes, effects and mitigation of floods",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Abstractions from Precipitation (Hydrological Losses)",
+      "text": "Wtrat is O-index? I{ow is it different from W-index?",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "Explain the methods of estimating the missing rainfall data '",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Precipitation",
+      "text": "What is rating curve? ExpLain the pararelers ol r-ati-ng equation.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Hydrograph Analysis",
+      "text": "Why do we need to separate base flow in hydrograph analysis? Describe the methods to separate base flou'.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra"
       ],
       "frequency": 1
     }
-  ]
+  ],
+  "code": "ENCE 306",
+  "generated": "2026-08-17T14:00:00.000Z"
 }

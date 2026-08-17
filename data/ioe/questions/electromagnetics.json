@@ -1,17 +1,17 @@
 {
   "subject": "Electromagnetics",
-  "generated": "2026-08-17T02:30:00.000Z",
+  "generated": "2026-08-17T14:00:00.000Z",
   "chapters": [
-    "Chapter 1: Vector Calculus & Curvilinear Coordinate Systems",
-    "Chapter 2: Electrostatic Fields",
-    "Chapter 4: Magnetostatic Fields",
-    "Chapter 5: Magnetic Forces, Materials, Inductance & Boundary Conditions",
-    "Chapter 6: Time-Varying Fields, Faraday Law, Maxwell Equations & Poynting Vector",
-    "Chapter 7: Plane Electromagnetic Wave Propagation in Free Space & Lossy Media"
+    "Chapter 1: Introduction",
+    "Chapter 2: Electric Field",
+    "Chapter 3: Magnetic Field",
+    "Chapter 4: Time Varying Fields",
+    "Chapter 5: Plane Waves",
+    "Chapter 6: Transmission Lines"
   ],
   "questions": [
     {
-      "chapter": "Chapter 2: Electrostatic Fields",
+      "chapter": "Chapter 2: Electric Field",
       "text": "State Coulomb's Law and Gauss's Law in electrostatics. Derive Maxwell's first equation in point (differential) form: $\\nabla \\cdot \\mathbf{D} = \\rho_v$.",
       "marks": "2+6",
       "years": [
@@ -20,7 +20,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 1: Vector Calculus & Curvilinear Coordinate Systems",
+      "chapter": "Chapter 2: Electric Field",
       "text": "Define electric dipole and dipole moment $\\mathbf{p} = Q\\mathbf{d}$. Derive an expression for the electric field intensity $\\mathbf{E}$ and electric potential $V$ due to an electric dipole located at the origin in spherical coordinates: $V = \\frac{p \\cos\\theta}{4\\pi \\epsilon_0 r^2}$ and $\\mathbf{E} = \\frac{p}{4\\pi \\epsilon_0 r^3} (2\\cos\\theta \\,\\mathbf{a}_r + \\sin\\theta \\,\\mathbf{a}_\\theta)$.",
       "marks": "2+6",
       "years": [
@@ -30,7 +30,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 2: Electrostatic Fields",
+      "chapter": "Chapter 2: Electric Field",
       "text": "Derive Poisson's and Laplace's equations from Gauss's Law ($\\nabla^2 V = -\\frac{\\rho_v}{\\epsilon}$ and $\\nabla^2 V = 0$). State and prove Uniqueness Theorem for electrostatic potential solutions.",
       "marks": "3+5",
       "years": [
@@ -41,7 +41,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 1: Vector Calculus & Curvilinear Coordinate Systems",
+      "chapter": "Chapter 2: Electric Field",
       "text": "Using Laplace's equation in cylindrical coordinates, derive the expression for capacitance per unit length of a coaxial cable with inner radius $a$, outer radius $b$, and dielectric permittivity $\\epsilon$: $C = \\frac{2\\pi \\epsilon}{\\ln(b/a)}$.",
       "marks": "6",
       "years": [
@@ -50,7 +50,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 4: Magnetostatic Fields",
+      "chapter": "Chapter 3: Magnetic Field",
       "text": "State Biot-Savart Law. Derive the expression for magnetic field intensity $\\mathbf{H}$ produced by an infinitely long straight filamentary conductor carrying steady DC current $I$ along the $z$-axis: $\\mathbf{H} = \\frac{I}{2\\pi \\rho} \\mathbf{a}_\\phi$.",
       "marks": "2+6",
       "years": [
@@ -60,7 +60,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 4: Magnetostatic Fields",
+      "chapter": "Chapter 3: Magnetic Field",
       "text": "State Amp\u00e8re's Circuital Law in integral and point forms ($\\nabla \\times \\mathbf{H} = \\mathbf{J}$). Derive the equation for magnetic field intensity in all regions of a coaxial cable carrying current $I$ in the inner conductor and $-I$ in the outer conductor.",
       "marks": "2+6",
       "years": [
@@ -71,7 +71,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 6: Time-Varying Fields, Faraday Law, Maxwell Equations & Poynting Vector",
+      "chapter": "Chapter 3: Magnetic Field",
       "text": "Explain Faraday's Law of Electromagnetic Induction. Differentiate between transformer induction and motional induction. Derive the point form of Faraday's Law: $\\nabla \\times \\mathbf{E} = -\\frac{\\partial \\mathbf{B}}{\\partial t}$.",
       "marks": "2+6",
       "years": [
@@ -80,7 +80,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 6: Time-Varying Fields, Faraday Law, Maxwell Equations & Poynting Vector",
+      "chapter": "Chapter 2: Electric Field",
       "text": "Why was Amp\u00e8re's circuital law modified for time-varying fields? Explain the concept of Displacement Current Density $\\mathbf{J}_d = \\frac{\\partial \\mathbf{D}}{\\partial t}$ using the continuity equation $\\nabla \\cdot \\mathbf{J} = -\\frac{\\partial \\rho_v}{\\partial t}$.",
       "marks": "3+5",
       "years": [
@@ -90,7 +90,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 6: Time-Varying Fields, Faraday Law, Maxwell Equations & Poynting Vector",
+      "chapter": "Chapter 3: Magnetic Field",
       "text": "Write Maxwell's equations in both differential and integral forms for time-varying electromagnetic fields and state the physical law underlying each equation.",
       "marks": "8",
       "years": [
@@ -99,8 +99,8 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 6: Time-Varying Fields, Faraday Law, Maxwell Equations & Poynting Vector",
-      "text": "State and prove Poynting's Theorem. Explain the physical significance of the Poynting vector $\\mathbf{S} = \\mathbf{E} \\times \\mathbf{H}$ and time-average power density $\\mathbf{S}_{avg} = \\frac{1}{2} \\text{Re}\\{\\mathbf{E} \\times \\mathbf{H}^*\\}$.",
+      "chapter": "Chapter 2: Electric Field",
+      "text": "State and prove Poynting's Theorem. Explain the physical significance of the Poynting vector $\\mathbf{S} = \\mathbf{E} \\times \\mathbf{H}$ and time-average power density $\\mathbf{S}_{avg} = \\frac{1}{2} \\text{Re}\\{\\mathbf{E} \\times \\mathbf{H} \\}$.",
       "marks": "3+5",
       "years": [
         "2083",
@@ -111,7 +111,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 7: Plane Electromagnetic Wave Propagation in Free Space & Lossy Media",
+      "chapter": "Chapter 5: Plane Waves",
       "text": "Explain reflection of uniform plane waves at normal incidence on a plane boundary between two media. Derive expressions for Reflection Coefficient $\\Gamma = \\frac{\\eta_2 - \\eta_1}{\\eta_2 + \\eta_1}$ and Standing Wave Ratio (SWR): $s = \\frac{1+|\\Gamma|}{1-|\\Gamma|}$.",
       "marks": "4+4",
       "years": [
@@ -120,7 +120,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 7: Plane Electromagnetic Wave Propagation in Free Space & Lossy Media",
+      "chapter": "Chapter 6: Transmission Lines",
       "text": "Derive the Transmission Line Equations (Telegrapher's equations) for voltage and current waves along a lossy transmission line: $\\frac{d^2 V}{dz^2} = \\gamma^2 V$ where $\\gamma = \\sqrt{(R + j\\omega L)(G + j\\omega C)}$.",
       "marks": "8",
       "years": [
@@ -130,7 +130,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 7: Plane Electromagnetic Wave Propagation in Free Space & Lossy Media",
+      "chapter": "Chapter 5: Plane Waves",
       "text": "Define characteristic impedance $Z_0$ and input impedance $Z_{in}$ of a lossless transmission line of length $l$ terminated in load impedance $Z_L$: $Z_{in} = Z_0 \\frac{Z_L + j Z_0 \\tan \\beta l}{Z_0 + j Z_L \\tan \\beta l}$. Deduce $Z_{in}$ for quarter-wave transformer and short-circuited line.",
       "marks": "3+5",
       "years": [
@@ -141,7 +141,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 2: Electrostatic Fields",
+      "chapter": "Chapter 3: Magnetic Field",
       "text": "Compare rectangular waveguides with two-conductor transmission lines. Explain Transverse Electric ($TE_{mn}$) and Transverse Magnetic ($TM_{mn}$) modes. Derive the formula for cutoff frequency $f_c = \\frac{c}{2} \\sqrt{\\left(\\frac{m}{a}\\right)^2 + \\left(\\frac{n}{b}\\right)^2}$ and identify the dominant mode in rectangular waveguide ($TE_{10}$).",
       "marks": "3+5",
       "years": [
@@ -150,7 +150,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 1: Vector Calculus & Curvilinear Coordinate Systems",
+      "chapter": "Chapter 1: Introduction",
       "text": "Define antenna parameters: Radiation Pattern, Radiation Resistance, Directivity, Gain, Effective Area, and Beamwidth. Derive the relation between Effective Aperture and Directivity: $A_e = \\frac{\\lambda^2}{4\\pi} D$.",
       "marks": "3+5",
       "years": [
@@ -160,7 +160,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 2: Electrostatic Fields",
+      "chapter": "Chapter 2: Electric Field",
       "text": "Derive the electrostatic boundary conditions for the normal and tangential components of electric field intensity $\\mathbf{E}$ and electric flux density $\\mathbf{D}$ at the interface between two perfect dielectric media with permittivity $\\epsilon_1$ and $\\epsilon_2$.",
       "marks": "6",
       "years": [
@@ -171,7 +171,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 7: Plane Electromagnetic Wave Propagation in Free Space & Lossy Media",
+      "chapter": "Chapter 3: Magnetic Field",
       "text": "Derive the electromagnetic wave equation (Helmholtz equation) $\\nabla^2 \\mathbf{E} = \\mu \\epsilon \\frac{\\partial^2 \\mathbf{E}}{\\partial t^2}$ from Maxwell's equations for a lossless, source-free dielectric medium.",
       "marks": "6",
       "years": [
@@ -180,26 +180,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 6: Time-Varying Fields, Faraday Law, Maxwell Equations & Poynting Vector",
-      "text": "Define attenuation constant $\\alpha$, phase constant $\\beta$, intrinsic impedance $\\eta$, and Skin Depth $\\delta = \\sqrt{\\frac{2}{\\omega \\mu \\sigma}}$. Calculate the skin depth of copper ($\\sigma = 5.8 \\times 10^7\\,\\text{S/m}, \\mu_r = 1$) at frequencies $60\\,\\text{Hz}$ and $10\\,\\text{GHz}$.",
-      "marks": "4+4",
-      "years": [
-        "2078",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Vector Calculus & Curvilinear Coordinate Systems",
-      "text": "Explain the use of a Smith Chart for impedance matching. A $50\\,\\Omega$ lossless transmission line is terminated in a load $Z_L = 100 + j50\\,\\Omega$. Use a Smith chart to find: (a) SWR, (b) load reflection coefficient, and (c) location and length of a short-circuited single stub for matching.",
-      "marks": "8",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Electrostatic Fields",
+      "chapter": "Chapter 2: Electric Field",
       "text": "Explain the radiation fields of an infinitesimal Hertzian dipole antenna. Derive expressions for the far-field components $E_\\theta$ and $H_\\phi$ and show that radiation resistance is $R_{rad} = 80\\pi^2 \\left(\\frac{dl}{\\lambda}\\right)^2$.",
       "marks": "8",
       "years": [
@@ -211,7 +192,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Vector Calculus & Curvilinear Coordinate Systems",
+      "chapter": "Chapter 1: Introduction",
       "text": "Find the vector that extends from $A(-3, -4, 6)$ to $B(-5, 2, -8)$ and express it in cylindrical and spherical coordinate systems at point $B$.",
       "marks": "6",
       "years": [
@@ -220,28 +201,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 2: Electrostatic Fields",
-      "text": "A point charge of $12\\,\\text{nC}$ is located at the origin. Four uniform line charges are located in the $x = 0$ plane: $80\\,\\text{nC/m}$ at $y = -1\\,\\text{m}$ and $y = -5\\,\\text{m}$, and $-50\\,\\text{nC/m}$ at $y = -2\\,\\text{m}$ and $y = -4\\,\\text{m}$. Find the electric flux density $\\mathbf{D}$ at $P(0, -3, 2)$.",
-      "marks": "7",
-      "years": [
-        "2080",
-        "2078"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Electrostatic Fields",
-      "text": "Let the region $z < 0$ be composed of uniform dielectric material for which $\\epsilon_{r1} = 3.2$, while the region $z > 0$ is characterized by $\\epsilon_{r2} = 2$. Let $\\mathbf{D}_1 = -30\\mathbf{a}_x + 50\\mathbf{a}_y + 70\\mathbf{a}_z\\,\\text{nC/m}^2$. Find: (a) $D_{t1}$, (b) Polarization $\\mathbf{P}_1$, (c) $E_{n2}$, and (d) $E_{t2}$.",
-      "marks": "7",
-      "years": [
-        "2082",
-        "2079",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: Time-Varying Fields, Faraday Law, Maxwell Equations & Poynting Vector",
+      "chapter": "Chapter 3: Magnetic Field",
       "text": "Define Vector Magnetic Potential $\\mathbf{A}$ where $\\mathbf{B} = \\nabla \\times \\mathbf{A}$. Derive the vector Poisson's equation $\\nabla^2 \\mathbf{A} = -\\mu_0 \\mathbf{J}$ for static magnetic fields and obtain $\\mathbf{H}$ for an infinite current filament using $\\mathbf{A}$.",
       "marks": "3+5",
       "years": [
@@ -250,7 +210,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 1: Vector Calculus & Curvilinear Coordinate Systems",
+      "chapter": "Chapter 2: Electric Field",
       "text": "Explain the physical significance of Curl with an example. Evaluate both sides of Stokes' theorem for $\\mathbf{H} = 4xy\\mathbf{a}_x - 2y^2\\mathbf{a}_y\\,\\text{A/m}$ around the rectangular path $3 \\le x \\le 6, -2 \\le y \\le 2, z = 0$.",
       "marks": "2+6",
       "years": [
@@ -260,7 +220,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 5: Magnetic Forces, Materials, Inductance & Boundary Conditions",
+      "chapter": "Chapter 3: Magnetic Field",
       "text": "Derive the boundary conditions for the tangential and normal components of $\\mathbf{B}$ and $\\mathbf{H}$ at the interface between two different magnetic materials with permeabilities $\\mu_1$ and $\\mu_2$.",
       "marks": "6",
       "years": [
@@ -269,6 +229,700 @@
         "2079"
       ],
       "frequency": 3
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "The region,z < 0 contains a perfect dietectic is charasterized by o\"a intensiti'esn elEcuic flux dcnsities and polarrza*on I l. F,ind Capasitance for a capacilor with trro layer",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Vclocity of wave propagaion onthe line (v).",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Time Varying Fields",
+      "text": "Derive thc exprcssion for the Maxwell's equation in point forrn\"",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Find the equation of a streamline that passes through the point P(1,4,-2) in the field E: -8ly *;4xzlfar.",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Magnetic Field",
+      "text": "Derive an expression for the magnetic field intensity produced by an infinitely long filament carrying curtent using Bi,ct and Savart Law.",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "What is curl? Stale and Prove Stokes iheorem.",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Plane Waves",
+      "text": "A i Mt{z uniform plane wave with an amplitude of 25 Vlrn is propagating along h* directionin amaterial forwhich t, = 4, Fr = 9 and o = 0 Find:",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Find capacitance per unit length of a co-axial cable using Laplace equation.",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Magnetic Field",
+      "text": "Justify the max,rell's equaticn: $uB.fr=o with necessary remarks. Derive an expression of magnetic field intensity for an infinite filament carrying a direct current L4+_41 6\" Define Biot savart's law. Let the permittivity be 5pHrm in region A where x<0, and 20pll/m in regicn B where x>0. if there is a surface current density,.-) '-).--). K =1505y -2005,rA/m at x=0 andif H =3006x -4004y +.500i\"Alm,find l-r I l-+ I l.-> I li-ital, lumal. F\"l til ttt I.+ ana i lur,rnl t p+61 l",
+      "marks": "6",
+      "years": [
+        "2081 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Plane Waves",
+      "text": "I)efine poynting vector. LJsing this deduce the time average power density for a dissipative medium. 8' A conductor with cross-sectional area of l0cm2 carries conduction current -' -+ J = 0.2sin109 tdr*L Given that o: 2.5x106S/m, and \u20ac.: 6. Calculate the magnitude \" of the displacemeat current density.",
+      "marks": "6",
+      "years": [
+        "2081 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Plane Waves",
+      "text": "Wavelength (I) and intrinsic impedance {.q).",
+      "marks": "6",
+      "years": [
+        "2081 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Derive the expression for an eiectric field intensity due to an inirnite line charge using Gauss's Law. Find electric flux density a1 point P(6, 5, 4) due to a uniform line charge of 6uC/m at x.= 4. 1':2, point charge 1OnC at Q(3, 2,4) and unifornt surface charge density of 0.4nCim'at x: 3.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Derive Poisson Eqr.ration. Find the capacitance of parailel plate capacitor b,,v solving I-aplace equalion u'ith potential diffbrence betrveen the plates as \\'.. tl+41",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "List out point form of Maxweli's equations in phasor form for time var,ving case. Using these equalions, derive the electric field component of a uniform plane wave travclling in the perfect dielectric medium.",
+      "marks": "2+6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Explain the term Skin Depth. Using Po,vnting Vector deduce the 1ime, average power density for a perfect dielectric. 14+41",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Write short notes about antenna and its paranleters.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Plane Waves",
+      "text": "Determine skin depth. propagation co,nstant and vclocity of rvavc at 1 I\\.{Hz in good conductor with corrductivity of 1.9x 10r mho per meter. [2+2+21",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Transmission Lines",
+      "text": "Standing wave ratio ou the line (SWR)",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Givenapoint P (-2, 6, 3) and vector field E= yd+ (xy+z){, express p and E in spherical co-ordinatb system.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Plane Waves",
+      "text": "A point charge of 6pc located at origiu, iiniforro iinr charge density of 180ne/m lies along x-axis and uniform sheet charge of 25 clmz lies ol z:0 plane. Fhd d at point (1,2,4j.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Conect the equatioa V x E = 0 for time varying fiel<i with necessary derivation. Aiso modify the equation V x H = oE *itl, necessar-v arguments an<i deiivation for tine varying field.",
+      "marks": "3+4",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Plane Waves",
+      "text": "A unifnun plane wave in lree space is gir,\"en by rts=(ZSAz.30o)c-i3s0zd.*V/m. Determine phase constant, iiequerrcy of the *'ave, intrirsic impcdance,.E-. and the magnitude Eofat z:25mrnandt:4ps. [i+1-2+-:'-i]",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Magnetic Field",
+      "text": "Derive the expression fsr eleciric arrd magnetic fieids for a uniiorm plane rvave propagating in a free space. iS]",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Translonn a Yector field I -4a;*2a;*4d point P (2, 3, 5)' into c'vlirrcirical r:ccrCinate s)'stelrl a'r a Lsl t]:-:-1\"^1i:1;:.\"*;-S' \"). A plane x:2 carrv a surfar:e charge densitv:o. l;Ti i. '; chargedensityl0nClmarrdapointclrargeoflCnCisatongrn'L-alcuiatELq'\\L',-Ul",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Lf potential field in free space is lrind: (a) E $; direction of E",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Considerubo'-'ndu'vatz=0whichcarriescurrentR=(iil*,o*-,':tuttt* 1(z<0)isfiliedLwithrnaterialwhose.rr,;*i|andnrecliunr2{z>{}}isfiiledrvithrnaterial [B] finrl mT' sA + 54",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Magnetic Field",
+      "text": ",Sirection of Prr:Pagation' phase cr:nstant ['r, imPedance t1 _*,;^-.i,.. magnetic lvavelengih ]\" velilciii' v\" intrinsic -",
+      "marks": "5+1+2",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Jlrr*run l) is air and y>0 (region 2) has Fr = J g' Ifthere is a unifonn magneric fierd d= 5i* +66., and H in region clensity: in",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Velocity gf prcpagition on rhe line (v) -rvave",
+      "marks": "3+3+2",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Plane Waves",
+      "text": "The conducting planes 2x r+ 3Yro=rno and ii,rlill v i, p (5, 2, E);i) E at P(5,2,6)' 12- v and 0, respectivery. Let = S.LetafilamentalycurrentofsmAbedirectedfrominfiniwtotheoriginon;;ih' positive x axis' Find H thti positive",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Stare Anrpere,s circuirat there is a surface If o' i Ei*f\"tu ' whetex<'O,.and 20 pHAn in \"gion culTentdensi.ryK=150av-ZOOa'n'rmatx=0'andifHl=300a'-400a'+ 500a,tum, find:. (a) lHuh o) lH\"J(\";li*r' to HNel' and inteBral form' equation in differential",
+      "marks": "10",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Transmission Lines",
+      "text": "Srate and explain tJre Maxwell'S currenit*JnJ;dih;f penetration.. Also define the dispracement",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Establish the relation for Helmholtz's equation for propagation. _.. r- theorem'",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Magnetic Field",
+      "text": "State and prove Poynting's ^L--_^- electromagnetic wave tol 0onalsssless 50-0 line'The",
+      "marks": "10",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Plane Waves",
+      "text": "AloadZr =80 + jl000islocatedatz= ii.*uu.t.t gth on the line is ? rn\" (a) If operating frequency.is $208 \\text{ MHz}$,ai ttr.'i*1i1, char tJ find the input impedance' the line is 1.ti m in length, ur* the nearest voltage rr,. distance from the }oad to (b) whar i, t?I ii maximuri? \"'i;t'dhui 11un.o-'o*orectangularwaveguidehasdimensionsa=.2cmandb=$1 \\text{ cm}$. single frequenci.;;;;;i;i.tt tf'* guide will operate Determine the rangE.of mode ftEro)",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Polarization (P1); in Region 1); p,, O\"\"\"al component of E^': Region 2) \"j il grti*gential component of E in Region 2) v in the equations' Assuming, that the potential Laplace's and Possion's the Derive by",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Magnetic Field",
+      "text": "Finc the vectcr magnetio field intensity fi'om z=-3 ta a, ai'\"\"ti* on the z-axis and extending by a cunent frru*.\"nt of 12A in the z=3. 7 \". Define curl and giYe the physical interpretation of the curl with a suitable example' B.Auniformplanervaveinfreespaceispropagating'\".n:-,1,.u'rectionatafrequencyof5 the expressions for electric and magnetic MFIz. If E=200 cos (tot+By) a,\\/lm','t'rite ir:.;il*or (x' y' fields, i.e., E, (x,y,z) and H. 'l '\"'pt\"ii;\"il forms' '",
+      "marks": "3+5",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "DeriveanexpressionforStandingWaveRatio(SWR)indicatingwhereonthez-axis held intensity E' Assurne that the you,ll get the n ax\"i-mu* *a *irri*o*iui'\"-oi \"f\"\"toit z>a may be of any z<0 is p-rr* ai.lectricand the region boundary i, at;;th\",*gi\"n tgl \" material. density in an air space within a large",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Time Varying Fields",
+      "text": "Derive the integral and point forms of continuity equation. In a certain region, 14+41 l=:rtcor0{-r'sine{, A/m2. Find the current crossing the surface defined by 0=30\",0<0<2n,0<r<2. [5+31",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Magnetic Field",
+      "text": "Given the fierd, fi - ssin(Qcos(0) a,rcrmz, find: (a) the vorume charge density; (b) the r total charge contained in the region r <2 m;(c) the value ofD atthe '-' surfacer=2. I2+Z+21 '1. Differentiate between scalar and vecior magnetic potential. Derive the expression for magnetic boundary conditions.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Find the capacitance of a spherical capacitor using Laplace's equation.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Plane Waves",
+      "text": "The velocity of propagation in a lossless transmission line 2.5 *$108 \\text{ m/s}$. Ifthe capacitance ofthe line is 30 pflm, find: [Z+Z+2+ZJ",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Transmission Lines",
+      "text": "Reflection coefficient if the line is terminated with a resistive load of 50Q - ' I l. What are the advantages of waveguides over tansmission lines? A rectangular waveguide has a moss-section of 2.$5 \\text{ cm}$ x 1.$2 \\text{ cm}$- Find the cut-off frequencies d dominant mode and TE (1,1)",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "What is dipole? Derive the equation for potential and electric held due to dipole at a ll+61 distant point P.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Plane Waves",
+      "text": "Velocity of propagation ii) The wave length iii) Phaseconstant iv) Intrinsic impedance",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Magnitude of electric field intensity ',.*",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Write short notes on antenna and its mode. properties- t?l DIVERGENCE CARTESIAN",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Magnetic Field",
+      "text": "A uniformplane wavein non-magneticmediumhas i=50cos(lOtt+ Z\")irV t* ' Find:",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Plane Waves",
+      "text": "The direction of ProPagation -B,-wavelength 1,, velocity vr, relative permittivity er' inftinsic ii) Phase constant impedance q iiil * t1+5+21",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Express the uniform vector freld i=sa. in (a) cylindrical components (b) spherical components. to an infrnitely long line charge Derive the expression for the electric freld intensity due of density p, by using Gauss's law. A uniform line charge density with uniform",
+      "marks": "2+3",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Magnetic Field",
+      "text": "Derive the expression for electric and magnetic propagating in aperfect dielectric space.",
+      "marks": "5+3",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Write shod notes on antenna and its types. lTj {. DTVERGENCE",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Transforrr the Vector,'f =yi'+xir*ri, into cylindrical co-ordinates at a point p(2,45\",5)",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": ". Define Uniqueness theorem. Assuming that the potential V in the cylindrical coordinate system is the function of 'p' only, solve the Laplacian Equation by integration method and derive the expression for the Capacitance of the co-axial capacitor using the same solution of V.",
+      "marks": "2+5",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Define Electric Dipole and Polarization. Consider tho region y < 0 be composed of a uniform dielectric material for which the relative permittivity (e) is 3.2 while the region y > 0 is characterized by q -Z.Letthe flux density in region I be -+ -) -) -) Dr = -30u r+50 a y+70a z nC/m'. Find: '",
+      "marks": "2+3+3",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Magnitude of Flux density and Electric fields intensity at region 2. -)",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Polarization (P) in region I and region 2",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "State Faraday's law and correct the equation Vx d = 0 for time varying field with necessary derivation. Also modifu the equation V* il = ? with necessary derivations for time varying field. [l+3+4]",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Plane Waves",
+      "text": "Derive an expression for input intrinsic impendence using the concept of reflection of wriform plane waves.,,li",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Transmission Lines",
+      "text": "What are the techniques that can be taken to match the transmission line with mismatched load? Explain any one.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Veriff the divergence theorem (evaluate both sides of the divergence theorem) for the -) -t ^+ frrnction !=r'-=u'+J-giogqoq{ao, over the surface of quarter of a hemisphere defined by: 0 < r (3, 0 < 0 < nlZ, 0 < 0 <n/2.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Show that the z=0 surface is an equipotential surface",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "State the uniqueness theorem and prove this theorem using Poisson's equation. 12+61",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Transform vector f = psin$a, at point (1, 45o, 2) in cylindrical co-ordinate systern to a vector in spherical co-ordinate system.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Define an electric dipole. Derive expressioa for electric field because of elecfric dipole at a distance ftat is large compared to ttre separation between charges in the dipole. [2+61",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Define Rela:ration Tirne Constant and derive an expression for the continuity equation.",
+      "marks": "3+4",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Magnetic Field",
+      "text": "-Derive the equations for magnetic freld intensity for infinite long coa:rial transmission line carrying direct current t and retum current -t in positive and negative Z-direction respectively 17l",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Magnetic Field",
+      "text": "Derive the expressions for the electric field E and magnetic field H for. the wave propagation infree space.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Express the vector field W: (x-y) a, in cylindrical and spherical co - ordinates.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Find the equations for energy density in elecfrostatic field.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "What are the differences between curl and divergence?",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Plane Waves",
+      "text": "Explain the terrn skin depth. Using pointing vector, deduce the time average power densrty for a dissipative medium. 171",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "For a given co - a:<ial cable with inner conductor of radius 'a', outer conductor with inner radius 'b' and outer radius 'c' with current in the inner conductor 'I' and current in the outer conductor -'I', determine V x H for 0 SrS a, aSrSb, b SrS c.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Magnetic Field",
+      "text": "Incident electric and magnetic field vectors",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Trausform a point (x, y, z) in rectangular co-ordinates to a point (r, 0, $) in spherical co-ordinate and vice-versa. r*bF Transform the vector",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "..$-^State and explain Gauss's law. Define divergence and write down its physical significance as it applies to electric fields. 12+31",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Electric Field",
+      "text": "Consider a co-axial cable of length $50 \\text{ cm}$ having inner radius of lmm and an outer radius of $4 \\text{ mm}$ with the spare between the conductors filled with air. Total charge on the irurer conductor is 30 nC. Find (i) the charge density on the inner conductor and outerconductor(ii) B tiiil B. lst",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
     }
-  ]
+  ],
+  "code": "ENEX 254"
 }

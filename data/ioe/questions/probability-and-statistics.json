@@ -1,14 +1,15 @@
 {
   "subject": "Probability and Statistics",
   "chapters": [
-    "Chapter 1: Descriptive Statistics & Probability Axioms",
-    "Chapter 4: Sampling Distributions & Central Limit Theorem",
-    "Chapter 5: Estimation & Hypothesis Testing",
-    "Chapter 6: Simple & Multiple Linear Regression, Correlation Analysis"
+    "Chapter 1: Descriptive Statistics and Basic Probability",
+    "Chapter 2: Probability Distributions and Sampling Distribution",
+    "Chapter 3: Statistical Inference",
+    "Chapter 4: Correlation and Regression",
+    "Chapter 5: Statistical Quality Control"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Descriptive Statistics & Probability Axioms",
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
       "text": "State Axioms of Probability. State and prove Bayes' Theorem. A manufacturing plant has three machines $M_1, M_2, M_3$ producing $20\\%, 30\\%$, and $50\\%$ of total items. Defective rates are $1\\%, 2\\%, 3\\%$. An item selected at random is found defective. Find the probability it was produced by machine $M_3$.",
       "marks": "3+5",
       "years": [
@@ -17,17 +18,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 1: Descriptive Statistics & Probability Axioms",
-      "text": "Define Probability Density Function (PDF) $f(x)$ and Cumulative Distribution Function (CDF) $F(x)$. A continuous random variable $X$ has PDF $f(x) = k x(2-x)$ for $0 \\le x \\le 2$. Find: (a) Constant $k$, (b) Mean $\\mu = E[X]$, (c) Variance $\\sigma^2 = \\text{Var}(X)$, and (d) $P(0.5 \\le X \\le 1.5)$.",
-      "marks": "2+6",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem",
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
       "text": "State the conditions for Binomial Distribution ($P(X=x) = \\binom{n}{x}p^x q^{n-x}$). Derive its Mean ($\\mu = np$) and Variance ($\\sigma^2 = npq$). Show that Poisson distribution is the limiting form of binomial distribution when $n \\to \\infty, p \\to 0$ such that $np = \\lambda$.",
       "marks": "4+6",
       "years": [
@@ -38,7 +29,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem",
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
       "text": "Explain the Standard Normal Distribution ( = \\frac{X-\\mu}{\\sigma} \\sim N(0, 1)$). The compressive strength of concrete cubes is normally distributed with mean $\\mu = 25\\,\\text{MPa}$ and standard deviation $\\sigma = 3.5\\,\\text{MPa}$. Find the percentage of cubes with compressive strength: (a) Greater than $30\\,\\text{MPa}$, (b) Less than $20\\,\\text{MPa}$, and (c) Between $22\\,\\text{MPa}$ and $28\\,\\text{MPa}$.",
       "marks": "8",
       "years": [
@@ -47,17 +38,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 6: Simple & Multiple Linear Regression, Correlation Analysis",
-      "text": "Define Karl Pearson's Coefficient of Correlation ($r = \\frac{\\text{Cov}(X, Y)}{\\sigma_x \\sigma_y}$). Derive the equations of the two regression lines: $Y$ on $X$ ($y - \\bar{y} = b_{yx}(x - \\bar{x})$) and $X$ on $Y$ ($x - \\bar{x} = b_{xy}(y - \\bar{y})$). Prove that $r = \\pm\\sqrt{b_{yx} b_{xy}}$ and $|r| \\le 1$.",
-      "marks": "4+6",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem",
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
       "text": "State the Central Limit Theorem (CLT). Explain Sampling Distributions of Sample Mean $\\bar{X}$ and Sample Proportion $\\hat{p}$. Differentiate between Point Estimation and Interval Estimation. Construct a $95\\%$ confidence interval for the population mean $\\mu$ for large and small samples.",
       "marks": "4+4",
       "years": [
@@ -68,16 +49,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 5: Estimation & Hypothesis Testing",
-      "text": "Explain Type I Error ($\\alpha$), Type II Error ($\\beta$), Level of Significance, Critical Region, and $p$-value in hypothesis testing. Conduct a two-sample Student's $t$-test to determine if there is a significant difference between mean tensile strengths of steel bars produced by two different manufacturing processes at $5\\%$ significance level.",
-      "marks": "4+6",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Estimation & Hypothesis Testing",
+      "chapter": "Chapter 3: Statistical Inference",
       "text": "Explain Chi-Square Test for: (a) Goodness of Fit ($\\chi^2 = \\sum \\frac{(O_i - E_i)^2}{E_i}$ with $\\nu = k - 1 - m$ degrees of freedom), and (b) Independence of Attributes in a $2 \\times 2$ contingency table with Yates' continuity correction.",
       "marks": "4+6",
       "years": [
@@ -87,13 +59,1825 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 5: Estimation & Hypothesis Testing",
+      "chapter": "Chapter 4: Correlation and Regression",
       "text": "Explain One-Way Analysis of Variance (ANOVA). Formulate the ANOVA table showing Between-Groups and Within-Groups Sum of Squares ($SSB, SSW$), degrees of freedom, Mean Squares ($MSB, MSW$), and $F$-statistic.",
       "marks": "8",
       "years": [
         "2081"
       ],
       "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "A the following table gives age and percentage of blindness in respective age interval'",
+      "marks": "6",
+      "years": [
+        "2082 Shrawan"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "What is the probability that he,/she is carrying a weapon?",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Ff hershe is fouud to be carrying a weapon, what is the pmbability that airport A is being used? 5- Write similarilies and differences between Binomial distribution and l{ypergeometric distribution with suitable examples. lsl An OiI Conrpany cond.ucts a geological study that an exploratory oil well should have a 20% chance of stikingoil. What is the probability rhat;",
+      "marks": "5",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Seike cor,nos onthe third well drilled.",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Third slrike comes on tho seventh uell drilled\"",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "What is the mean number of wells that must be drilled if the oil company wants to set up tkee producing wells,",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Find the Expected time to open the website",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Between 2,500 and 4,200 acres will be burned in any given year.",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Orearcr than 3000 a*res will be brmred in any given ycar- lsl",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Also find the number of aprss pf forest binned corresponding to the 3Sth prrcentile,",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Definepoprrlation,*ample,parametEr'statisticandstandardErrorwithexnrrrples?",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Correlation and Regression",
+      "text": "Catculare 95% confidence interval for regression::T*\":tY:^:\"*'",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "*ot\" consistent and why? population'",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "\\\\'hat is the probal\"rrlity that a randornl-v shosen touch screen is def\"ective'l",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "If a touch screen is randomll, chosen f;'orn the entire prociuction anci is found to be def'ective then, lvhat is the probabjlitv that it ciure irorn machine A?",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Exactiy 4 of them have faulty Brake lights",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Less than 3 of thern have fbulty Brake lights",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "At ieast t has faulty Brake lights Deltne l{ormal distribr.rtion and i,vrite down propefiiss of normal cun'e. Aiso q.iite the condition for normal approximation to thc Binomial.",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Define gamrna distribution. in a certain city. the daily ccnsumption oi electric power. iin rnillions of kilowatt-hours) can be treated as a random variable having a qarflma distribution with o:3 and p=2\" If the porver plant of this city has daiil' capacity of i2 used million kilowatt hours, what is the probabilit;,, that this pcwer supply rvill be inadequate on any given day? 7\" isl A population consists of the five numbers 3, 6,9, 12, 15. lsl",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "IJsing Calcul*tor'find the population mean and Standard cievialion\" bl Write down ail possible samples of size three q,itirout replacement.",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Find the Sarnpling Distribution of the sample mean.",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Verify that the sample mean is an unbiased estimate of the population mean.",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra",
+        "2080 Baishakh"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "A chernical company, wishing to study the effect of extraction time on the efficiency of a extraction operation, obtained the data shown in the following table. Iteql",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Statistical Inference",
+      "text": "Find 95% confidence interval for slope of line p\"",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Find the Partial Correiation betvr,een X, and X3 eiiminating the cffect of X2\"",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "- i(lapacitors ' sb. ?t 1i LsTgi' _ l_*_i() Perform a chi-square test to determine on L___ _. if the failure rates aie inciepenclent oi'cornponent t,vpe. (IJse CI, = 5oZ)",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "A rnanufacturer claimerl that at ieast 989/o of the pumps supplied to the ABC company is confiRrred to certain specific.aiions. However, the prr:duction rnanager at ABC company rvas not satisfied with the claim of the rnanufacturer. Hence, to test the claim, the manager examined a sampie of 300 pumps supplied Xast month and f'ouircl that 298 pu*ps uu p\"t the specifications. Can yori conclude that the production managei is right tJOoubt on ihe claim of the manufacfirer?1 use 5 % significance level) l{i L\" I",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "State Baye's theorem. Three road consiruction firms X, Y and Z bid for a certain contract. From past experience, it is estimated that the probability that X will be awarded the contract is 0\"40, while for Y andZ the probability are 0..35 and 0.25. If X does receive the contract, the probability that the work will be satisfactorily compieted on time is 0.?5. For Y and Z these probabiiities are 0.80 and 0\"7C. (i) What is the probability that the work will be completed satisfactorily? (ii) It turns out that the work was dcne satisfactcrily. What is the prcbability that Y uias awarded the i2+4i contraci?",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "LVhat is the probability that mean lit-e cf ali 50 hatteries rviil exceerls 6l days?",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "What is tiie prdbability that mean life of all 60 will ctiftrrs tiom {:0 days by rnore than 3 days? thecrem. 15] 7\"",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Statistical Inference",
+      "text": "Describe the systematic procedwe of testing a hypothesis concerning difference of means for infinite population.",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Write the proeedire fcr testing of populati*n proportion for large sample\"",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Partiai ccrrelaticn between Xr and X: eliminating the effect of X2\"",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Correlation and Regression",
+      "text": "Multiple correlation between Xl, Xz and X3 assuming X1 as dependent.",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Correlation and Regression",
+      "text": "Distinguish between correlation coefficient and regression coefficient and write its importance in the field of engineering. Is]",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Ccnstruct 95% confiderrce interval on true mean course fee.",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "1 Find (i) value of k. (ii) Expected l'alue and variance of X.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Define (iamma distribution r.vith important properties l/..t ) l",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Apopulationconsistsof fburnumbers 4,8,12,76.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Write down all possible sample of size two rvitl-rout repiacement.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Verify that the sample mean is unbiased estimator of population mean.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Calcula're the slandard error of sample tnean.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "In a random sample of 75 axle shafls, 12 have a surface finish that is rougher than the specifioations rvill allow. Suppose lirat a modiflcation is made in tl're surface finishing process and subsequently a second randon sample of 85 axle shafts is obtained. The number of defectir,e shalts in this second sample is 10. Obtairr an approximaie 9,<9/o confidence itrteival on the diffelence in the proporlions cf defectives produced under the two processes.",
+      "marks": "5",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "R tl F'it a straight iine to the given data by the method of least squares and use it to predicl the extraction efficiency one can expeot when the extraction time is 3B rninutes.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Write down the minimum rvin,J speecl.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Write normaiity (symmetricit),) about the distribution comparing its median with quarliles.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Find the population proportion of even number.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Show the sampre propcrtion is unbiased estimalor of populatic.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Find the standard error of sample proportion of even number.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Correlation and Regression",
+      "text": "Tl ai 7.2 ry by d iTlffii:.the parameters of a simple line r:gressior",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "\\\\ihat is the probability that the chip chosen is def'e ctive?",
+      "marks": "6",
+      "years": [
+        "2079 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "If a randomll- chosen chip is fbund to be deieotive. uhat is thc probability that is conles from company A.",
+      "marks": "6",
+      "years": [
+        "2079 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Ii X is a continuous random variarle u itli urobabilit-r, densily lirnction f(x):xl8or3'<x<5.",
+      "marks": "6",
+      "years": [
+        "2079 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Deiermine the mean and standard der,'iation for r.",
+      "marks": "6",
+      "years": [
+        "2079 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Iscuss the following terms in statistics popLilation, samyrle, parameter and statistic r,vith suitable example. d\"",
+      "marks": "6",
+      "years": [
+        "2079 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "List out all the samples of size tfuee il'ithout replacement.",
+      "marks": "6",
+      "years": [
+        "2079 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Find the sarnple mean of each samples,",
+      "marks": "6",
+      "years": [
+        "2079 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Prove that. sample mean is unbiased mean of popLrlation mean.",
+      "marks": "6",
+      "years": [
+        "2079 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "A company manufacluring company has tkee types of computers. The cost (in thousand rupees) for each q'pe of computer is given in,rr\" rouo*i,rgluti.. u.irg ArrrovA, test whether the average cost per computir is considerably di[br;ni across three types of computer at 5?b ler,el of significance? Type C1 TvL.e Cr 83 'f t-s vpc Cr 56 ?o 6J 76 o< 76 72 87",
+      "marks": "6",
+      "years": [
+        "2079 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Const.rct 9-5% cont-idence inte^,al on true mean noise level at the industr.1,.",
+      "marks": "6",
+      "years": [
+        "2079 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Exactiy two emersrr:c:l,a..CrLlssii:ns -.,,iil in a given day.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "No emrjr[{enc\\., adrlissions..vili c,ccur in aoocur gioe, Arf'",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "More than 43 volts,^t The dail;'- consumptiorr of eltctric with cr = 2 and q = daily capacity of i2 niillion what i' tr'* f'n'n,uilitv'trrai ir,i''r,\"\"=i.,ppr1,has",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Define the terms: (i) Mutually exclusive events (ii) Independent events.",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "What proportion of parts is scrapped?",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Find rloscriptive statistics: of error deviation, sta-ndard minimum' san:-l: mean' range' sample mean",
+      "marks": "6",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Determine rhe value of k and find the probabilities",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "P(tcX<3) 6' ]!1t are the parameters of the normal distribution, and r,r,hat If 100 bulbs with a mean life of 12 months anrl a stanclarrl are their rores? installed in a new factory, suppose deviation of 2\"5 months are tneir tiretime,,.\" no,*uily distributecr. 3] Io*'manl.bulbs wili expire in less than 9 months?",
+      "marks": "5",
+      "years": [
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "How rnany bulbs will expire between 6 and 7 15 nionths? ' The time taken to complete the ioE final exam by a group of students is normagv distributed with a mean of 2.5 hours and a standard deviltion of 0.25 hours. A random sample of size n: 60 is drawn from the population. Find the probability that the sample mean is between rwo and three hours. 1]",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Standard eror of sampting aist.iilutior. lsl 8' Define the central limit theorem for the sampling distribution and inrpoftance in inferentjal statistics, of the mean. Discuss ils role",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "I-s-the sales performance of the outrets consistent?",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Correlation and Regression",
+      "text": "What is the total sales of all outlets?",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Define binomial aad hlpergeometrie dislribution with dtfferences. hiehlightins their similatitiee cud: Defrne oontinuous random variables and contfunrous probability dishibution with exanrples. Also udte properties of cumulative disuibution n \"dor;f\";#;;; random variables. Write conditions for norrnal appmxirnation to bihomial distibution_ A meEOpolitan ciry 2,000 *lecfjc largrs_Qr sreet lighting. Th;,\"i;rsii;",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Afu hn*+ ybuming hou* would we expect rtr/. oftte rrlmps to bs left?",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Oefine central rimit theorem and dfseussiits,importnnce and apprication. L A populatiaa consists of thc valrres l, 2,4 and 5,",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Lisl a{the diff&rent possibre sanryJes ofsize two selected",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Correlation and Regression",
+      "text": "Dsfino pfrrtiel and multiple oorrelation with examples. Writo any,two ploportios of pasial and multiple comelation. ts)",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "During a water shortage, a unater company randomly sampled residential water meters in order to monito: daily water consumption. On a partioUlar &y, *,gql{ryle 35: mstew showsd a $ample mean of 240 gallons and standard deviation of sartple is 45 gallons. Find a 90% and 99% confidenoe interval for thc mean water consumption for the population. lsI",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Find sample meao, sample standard deviation for eaoh ptocess.",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "IVhat are the merits and demerits of the Arithmetic mean?",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "The mean and the standard deviation of 20 items is found to be 10 and 2 respectively. At the time of checking, it was found that one item 8 was incorrect. Calculate the mean and standard deviation if the wrong item is omitted; and it is replaced by 12.",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "The number of meteors found by a radar system in any 30-second interval under specified conditions averages 1.81. Assume the meteors appear randomly and indeperrdently.",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "What is the probability that no meteors are found in a one-minute interval?",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "What is the probability of observing at least five but not more than eight meteors in two minutes of obsenration?",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Ffhat is the probability of observing at most three meteors.in tu,o mimrtes of opservation? 4, 4 What are the parnmeters used in Negative biaomial distribution?",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "If ttte probability that a child exposed to certain viral fever will be infected is 0.40. What is the probability that the tenth child exposed to the disease will be third to b\u20ac ittfectedf Calculate average number of child,exposed to the disoasewill be infoted?",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "$ind the percentage of the oandidates who got marts,above 65.",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "A pqpulation consists of four numbers: 1, 4, I and I l.",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Write down all possible sarnple size of 2 with replacement.",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Find poprrlation mean and population standard deviation.",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Yerifi that population mean is equal to the mean.ofsample mear1",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Find the standard error (s.E.) of the sarnpling distribution of the sample mean.",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Defiirc parameter, statistiq standard error and marginal error with examples,",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "The ftllq$,ing tabl\u20ac shows the corresponding",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Correlation and Regression",
+      "text": "Fit the lingar rnuJtiple regression equation of X*nX$nd,Xz",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Fram the population of size 5 as:22,23,24,25 and26' uj List out ult tt * sarnples of size three without replacement. ['<] Ui ninO the sample proportion of even number' even number'",
+      "marks": "5",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Prove that,;;;ple proportion is unbiased estimator proportion of E{p):P'",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "N[o mO the standard error of sarnple proportion of even nurnber'",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "A study was done on a diesel powered light duty pickup kuck to see if temperature influenoes emission of nitrous oxide. Emission measurement were taken at different times, with vary'ing experimental conditions. The data are as follows: X Nitrous oxideY",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "95 (i) Find the mean and variance of the given data. (ii) Find the degree of relationship between them. (iii) Calculate the coefficient of the determination and interprer lne given data. t\"t",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Write down all possible sample of size tr.vo without replacement.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Verify'that the saniple mean is unbiased estirnator of population mean.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Calculate the standard error of sampie mean.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "A randorn sample of 12 records gives the average of deviation of 3.043 rninutes. Find the 9-5% population consists of 100 unit,s.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "The foliowing data are co<jed observations batclres oi ran.nraterial selected randomlv. -_.____:J: l--' II I Leqigll if on the 1,ieid of a chcmical proce_<s usins j _._.._._.. -- -",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Write dorvn the fundarnental steps success for laige samples.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "2 L\" smokers of hypertension is inclependent of of test of significance of clitference of pr.oportion of 15l A study u,as done on a diese.l-pou.ered-light-dut,v pickup truc:k to sce it humidity. N{easurements werc taken at different tines with rarving expcrimental conditions, The data are as follows; i-s Nitroris oxide (Y)",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Fit 4 srraight linc to the gi'en dara bv the of least squaies and use it to predict the estimatecl arlount of nitrous oxide fbr 11f9d 50% hLrmiditv.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "What are the difference aLrid similarities between Binomial and Hyper-geornetric probability distribution?",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "During a laboratory experiment \" the average number of radio active particles passing through a counter in railliseconds is 4. What is the probairility that",
+      "marks": "5",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "What is the prohability that rnore than 2 particles enter the counter in given miiliseconds,",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Mean and the distribution function of X.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "What is the probability that the break down voltage rvili be between 40 and 42 volts?",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "What is the probability that the break dor,vn voltage will be less than 43 volts? Write the difference betrveen statistic and parametcr. Detine central limit theorem and discuss its importance in engiireering freld. B. Define parameter and sample statistics. From the population of size 5 as:22,23,24,25 and",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "List out all the satnples of size three rvithout replacenrent.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Prove that the averagc of sample m.ean is equal to the population mean.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Also find the standard en'or of sample lrtean. there is a",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Describing the types of errors in hypotliesis testing. write dou'n the steps size\" large sample a for hypoihesii of population propor\"tion",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Correlation and Regression",
+      "text": "Develop a regression model to esiimate the expenditure on food based on the annual income of famiiy and the family size'",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "I?it a straight line by the method of least squares.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Find the change in the level of air pollution when the change in the flow of vehicles is 30%.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Find the vair:es constituting the 5 - nurnbcr surnmary.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Ifthe router is defective, it is from Chiea.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Cornpare Binomial and Negaiive Ilinornial Distiihutir-rns.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "At least one vehicle enter in one way",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "A random variable X has the probability density function f(x) as (t | _x\" f(x)=1kx e 12.x)0 I I o, otherwise",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Find the value of k if f(x) is a probability density function.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Explain the foiiowing terms with suitable example",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "To illustrate that the mean of a randcm sample is an unbiaseri estimate of the rnean cf the population, consider five slips of paper numbered 3, G,9.,-2, iS.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "List ali possible samples of size 3 that can be taken without reirlacement tiarn thi: finlte population.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Calcuiate the mean of each of the samples listed in",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Correlation and Regression",
+      "text": "A sample of 10 values of the variables Xi, Xll and X3 rvere obtained as IXI = 10 ZXr':20 EXr X: -- 10 ),X: = 2C IX:':58 IXr&=15 IXr =:10 IXr2 - 170 IXz Xr = 64 Find Partial correlation betweerr X2 and X3 eiiminating the effect of Xl also interpret coeflicient of parlial determination -",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Sarnpie standard Ccviation a;id coef,ficierri of variaiion,",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Find niean and standard deviation ofX",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "FindP(-o<X<o) 6' Define Normal distribution. i{ighlight the imporiant propenies of },oinrai Dis*.:-rbution.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Calculate mean and the variance of pcpulation.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Pro'e that sample mean is unbiased^esiimator of po,ulaticn erean. 8' Thl heights of hilly people cf Nepal are normaiiy clistributed rvitir a and a standard deviation..f 2 incires, what is me,i ol 6.1 inches the probabilii:l,l,ul the mean height of a random sample of 100 hiily people is greater than 66 inches?",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Statistical Inference",
+      "text": "The nrean of a 200 samplcs of obsen,etir:r1..;rn. a norm:i f, i.:,:lili,:n rriih a standrrrd dev,afion 5 crn is 2i citr. Is] ai Estirnate the populaticn mean wirh 9594 confidence",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Correlation and Regression",
+      "text": "Fit the regression equ*.ticn of perfbrmance ratings on experience and estimate the probable perflormance i1'rn operat,ri'lras 8 ycars cxperience.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Calcuiate the caefficient of determination and interpret it'",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "As part of a study monitoring acid lain, meas'rreme#.s of sulfate deposits (kg/hectare) are recolded far differerit iocations on the Eastern Terai oil'rpal. The resuits are listed in the following table for 15 recent and consecutive years: Acid Rain: Sulfate Year Location 1 (x) Locatii;n 2 iy) Locatioa 3 {z) 1 rr.94 i 1.28",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "64 ri) Find sample mean, sample sil.ndald deviation s-n,-i coefficient cf variation lor Sulfate deposits of cach loeation.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "SamPle Su*Pting distribution of mean \"i d-) Standard error of mean? 8'Anauditorforalargecreditcard.Company.knowsthatonavcrage,themorrthiybalance audits 50 randomly *.,. rt*iura'i.rf-tf* is 56' tithc is (a) of any gir.n.urrJf\", i, f f Z una sample averago monthly balance probabilil^th\"i,1r; the is what accounts, selected 130? u;t.ow 1oo (b) between 1oo and isl lsl",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Definetheconelationcocfficientsandstateitsimportantproperlies. 10'Aninvestigalionoftherelationshipbetweentrafficflowx(1000'5ofcarsper24hours) andleadcontentyofbarkontfees'*u..r,.t,i*t,,ay(pglgdrywt.)yieldedthefollowing data:",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Correlation and Regression",
+      "text": "Findtheestimatedregressionlinetoestimatelcadcontentfromtrafl-rcfloii.. siope of the true regression littc'",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "6 ao J.O caiculaJe tire F ratio\" At the \"f;;ii\" B",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "A cc lhe brands procluce sigilificantli'",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Finddescriptivesratistics:maximum,minimunr.sanrplefilean,range,samplestandard deviatian, standarclerror of mean",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Arandom variatle X has a K P(x) K, of value findthe t variance of tandom variable X':: i 900-1000 ZUU If we the following probability density fimction'",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "I research company has designed three different systems to clean up oil spills. The following table contains the results, measured by how much surface area-in rqd\" meters is cleared in one hour. The data were found by testing each method in several kials. Are the three System A System B System C effective? Use the 0.05 tevel of 55 57 60 66 63 56 53 64 49 52 61 57 (< 59 62",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Correlation and Regression",
+      "text": "Fit the regression line of yield of crop ('000 tones) on amount of rafufaltr (mm) and amount of fertilizers used (kg). Also estimate the yield of crop for &e yqr in which rainfall is rs $13 \\text{ mm}$ and fertilizer used is 9 Yield Rainfall Fertilizer 3 4 6 !i I I IO 14 2A 4",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Correlation and Regression",
+      "text": "Fit the regression equation of performance rating on experience and estimate the probable performance of an operator had 8 years experience-.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Detennine coefEcient of determination and interpret it\"",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Atleastone engineer J. Vl discrete probability distribution with suitable example. Compare Negative !-\"fi\"\" Binomial and Binomial probability disributions",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Only one of the batteries with defect",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "A population corsists of five numbers 2, 4, 6 and g",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "- Enumerate all possible sample of size two without replacement",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "State central limit theorem. A random sample of size 100 is taken from an infinite population with mean 75 and variance 256. Assert the chances of sample mean between 67 and 83..ti",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Find unbiased estimator of true standard deviation and standard error ofaverage",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Which company pays larger amount as weekly wags? ii) Which company show greater variability in the distribution weekly wages? iii)What is the mean and standard deviation of all the workers in two companies taken together?",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "State Central limit theorem with an example. Explain why it is important in engineering",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Write down all possible sample size of two without replacement ii) Verifu that the population mean is equal to the mean of the sample mean iii) Calculate the standard error of the sampling distribution of the sample rnean",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "4v Test the researcher suspect was correct at S%olevel ofsignificaace.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Find sample mean, sample variance and sample standarddwiati,on",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "No defective lens ii) At least one defective lenses iii) At most two defective lenses OR Define mathematical expectation of a discrete random vasriable. A probability distribution is given X:X 0 I 2 J 4 5 pCX:x)",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "11 Find (a) P(X: a); (b) p(O 5\".X; (c) mean and variance af X Define standard normal distribution. Give the condition for normal approximation of Poisson distribution. The mean inside diameter of a sample of 200 washers produced by a machine is 0.$502 \\text{ cm}$ and the standard deviation as 0.$005 \\text{ cm}$. The purpose for these washers are interned allows a maximum tolerance in the diameter of 0.496 to 0.$508 \\text{ cm}$, otherwise the washers are considered defective. Determine the percentage of defective washers produced by the machine. Assume the diameter is normally distributed. What do you mcan by sampiing distribution of a sample mean and its Standard Error? gxplain! with example. Wtrat woUa be the variance of sampling distribution of mean, if sample is taken from finite pSplJation? t-<t L\"l",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Define the Central Limit Theorem. A sample of 100 mobile battery cells tested to find the length of life produced the following results as mean 13 months and standard deviation of 3 months. Assuming the data to be normally distributed by using Central Limit Theorem what percentage of battery cells expected to have Avereige iife?",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Correlation and Regression",
+      "text": "Fit the sample linear regression model using least ii) Predict fretting wear when viscosity x: 30",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Describe the procedure of the test of significance for difference of fwo population mean for large sample.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Define chi-square distribution. From the following data can you conclude that there is association between the purchase of brand and geographical region? (Use 5% level of significance). Reeion Western Eastern Central 45 55 40 Purchase brand 55 45 60 Do not ourchase brand",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "In a postai survey of 500 households, 330 said that they thought they were being overcharged for the public services within their area.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Find the range and standard deviation for each section",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "What do the range values lead you to conclude about the variation in the two sections?",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Why is the range misleading in this case?",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Between 39 and 42 volts ii) Iess than 44 volts iii) More than 43 volts OR The daily consumption of electric power in a certain city follow a gamma distribution with a=2 and F:3. If the power plant of this city has daily capacity of 12 million kilowatt hours, what is the probability that this power supply will be inadequate on any given day? l-",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "State cental limit theorem. An electrical firm manufactures light bulbs that have a lengh of life that is approximately normally distributed with mean equal to 800 hours and standard deviation of 4 hours. Find the probability that a random sample of 16 bulbs will'have an average life of less than 12775 hours. ' i, tll",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Anyone voltage regulator rweived by the plant vill perforrn according to regulators fiom specifications. ii) A voltage regulator that perform according to specfficacimcame frrom B and C.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Write differ\u20acoce between binominal distibution and negaite binomial distibution with suitable",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Non ofthem will be flat-plale collectors. ii) At least 3 of trem will be flat-plate collectors. iii)At mos 2 of them will be concenhating collecto,rs. 12+2+21 i",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "The breakdonm voltage X of randomly clrcsen diode of a puticular tlpe is known to be normally distibuted with mean 40 and standard deviatio 1.5 volts. What is the probability thatthe breakdoum voltage u,ill be",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "What do you mean by the sampling disribution of sample propci'rtion?",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Pppulation meanstrd population staodad deviation ii) M;* of sampling dishbution of pean. iii) Standard emor of'-sampling distibution of mean.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Correlation and Regression",
+      "text": "The simple correlation coefficient between fertilizer (Xr), seeG (Xil and productivity (X3) are rrz{.69,rn:A.64 and 13={.85. Calculate the partial conelation rrz.r and multiple 141,0. ffirtl*fi*r,\" Research presented daF on compressive srrength X and,\"t,,*r\" permeability Y of various concr\u20acte mixes and cures. Suomay quantities ate n = 14, Ey: 572,8f = 23,530. Ex = 43,2* =151.42 and Exy = 1697.80. Assume that the two variables are related according to rhe simple linear regression modd- Iot",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Which institurc is good? ii) Which institute is consistent/reliable? +*:t t",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Write any two conditions that a function is a probability mass function. It is found that 10% of the items produced by a company are defective. Out of 8 items chosen, using binomial distibution, find the probability of: (i) no defective item'(ii) at least one defective item. t2+2+21",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Define Poisson distribution. Write the limiting case of Poisson distribution as a Binomial distribution. L2+21",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "In a continuous distribution, whose probability density function (x):Kx(2-x), 0Sx<2=0 otherwise. Find: l2+Z+27",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "State the importance of normal distribution in engineering field with an example.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Statistical Quality Control",
+      "text": "A potential buyer of light bulbs bought 50 bulbs each of rwo brands. Upon testing these bulbs, he found that brand A had a mean life of 1282 hours with S.D. of 80 hours whereas the brand B had. a mean life. of 1208 hours with S.D. of 94 hours. Can the buyer be quite certain that the rwo brands do differ in quality? a: l$Yo.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "The admission staff of a university, concerned with the-success of the students it selecls for admission wishes to compare the students' college performances with high schooi grades and test scores. The high school and college grade-point average (GPA) and student's average test (SAT) scores of 20 sampled students are follows: H.S. GPA Colleee GPA SAT score H.S. GPA Colleee GPA",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Find, for each of the HS GPA, college GPA and SAT scores; The mean and standard deviation.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Discuss the importance and limitation of graphical representation of data.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "The second component is good. ii) At least one of component is good. iii) Are they independent? Veriff your ansllrer.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Define sample sp&o, eve,nl and outgome with suitable exapple, tsI",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Define the probability density frrnction and it probabitty distibution. Give'tfuee engineering exanrples of discrete case.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Exactly 3 will have impurity A? ii) At least 3? iii) Fewer than 3? 4- a) Define the hlper geometric distribution. Describe the conditions for Hyper geornetric distibution,",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Probability Distributions and Sampling Distribution",
+      "text": "Identify the randorn variable x (discrete or contin-uous).. ' ii) If in a batch it contains 500OCD, find the average numter of defective DVDs",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "Oefine the joint probability mass dishibution, marginal probability mass function and conditional joint probability mass function.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "What are estintator and estimates? Describe the criteria for a good estimator.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Correlation and Regression",
+      "text": "Write the properties of correlation coefficient and describe under what condition there exist onlyoneregression line.",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Descriptive Statistics and Basic Probability",
+      "text": "' Show the between NOz and COz by graphical method ii| Compute the eouelation coefficient between NOz and COz iii) Erplain the relaticinship between NOz and COz *{.{.:",
+      "marks": "6",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
     }
-  ]
+  ],
+  "code": "ENSH 304",
+  "generated": "2026-08-17T14:00:00.000Z"
 }
