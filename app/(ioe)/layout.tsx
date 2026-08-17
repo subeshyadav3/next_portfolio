@@ -1,7 +1,15 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 import { ThemeToggle } from "@/components/blog/ThemeToggle";
 import { BookOpen, ArrowLeft, GraduationCap, Library, ChevronRight } from "lucide-react";
 import { IoeNavMobile } from "@/components/ioe/IoeNavMobile";
+
+export const metadata: Metadata = {
+  title: {
+    template: "%s",
+    default: "IOE Engineering Past Question Papers & Solutions Archive",
+  },
+};
 
 /**
  * Route group layout for /ioe. Independent of the Blog layout.
