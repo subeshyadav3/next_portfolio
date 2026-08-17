@@ -9,9 +9,24 @@ import { SITE_URL } from "@/lib/site-config";
 import { IOE_ENABLED } from "@/lib/ioe/config";
 import {
   getAllPrograms,
-  getCatalogs,
+  getPublicCatalogs,
+  findCatalogSubject,
+  isSubjectPublic,
   getSubjectSlugFromName,
 } from "@/lib/ioe/data";
+
+const EXCLUDED_SLUGS = new Set([
+  "project-i",
+  "project-ii",
+  "minor-project",
+  "internship",
+  "survey-camp",
+  "engineering-workshop",
+  "elective-i",
+  "elective-ii",
+  "elective-iii",
+  "elective-iv",
+]);
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const posts = await getAllPosts();
@@ -80,15 +95,22 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
           priority: 0.7,
         })),
         ...Object.entries(program.semesters).flatMap(([semester, rows]) =>
-          rows.map((row) => ({
-            url: `${SITE_URL}/ioe/${program.slug}/semester/${semester}/${getSubjectSlugFromName(row.title)}`,
-            lastModified: new Date(),
-            changeFrequency: "monthly" as const,
-            priority: 0.6,
-          }))
+          rows
+            .filter((row) => {
+              const slug = getSubjectSlugFromName(row.title);
+              if (EXCLUDED_SLUGS.has(slug)) return false;
+              const cat = findCatalogSubject(row.title);
+              return Boolean(cat && (cat.papers.length > 0 || isSubjectPublic(row.title)));
+            })
+            .map((row) => ({
+              url: `${SITE_URL}/ioe/${program.slug}/semester/${semester}/${getSubjectSlugFromName(row.title)}`,
+              lastModified: new Date(),
+              changeFrequency: "monthly" as const,
+              priority: 0.6,
+            }))
         ),
       ]),
-      ...getCatalogs().map((subject) => ({
+      ...getPublicCatalogs().map((subject) => ({
         url: `${SITE_URL}/ioe/subjects/${getSubjectSlugFromName(subject.name)}`,
         lastModified: new Date(),
         changeFrequency: "monthly" as const,
@@ -109,12 +131,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
       changeFrequency: "daily",
       priority: 0.9,
-    },
-    {
-      url: `${SITE_URL}/blog/search`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.5,
     },
     {
       url: `${SITE_URL}/blog/author`,

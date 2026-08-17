@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useRef } from "react";
 import { useFormStatus } from "react-dom";
+import Image from "next/image";
 import type { Category, Author, Tag, Media } from "@prisma/client";
 import { CloudinaryUploadWidget } from "@/components/admin/CloudinaryUploadWidget";
 import { saveMediaAction } from "@/actions/media";
@@ -203,10 +204,12 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
         <div className="space-y-3">
           {coverPreview && (
             <div className="relative aspect-video w-full max-w-sm overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800">
-              <img
+              <Image
                 src={coverPreview}
                 alt="Cover preview"
-                className="h-full w-full object-cover"
+                fill
+                unoptimized
+                className="object-cover"
               />
             </div>
           )}

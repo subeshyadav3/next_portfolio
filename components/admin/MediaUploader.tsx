@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
+import Image from "next/image";
 import { CloudinaryUploadWidget } from "@/components/admin/CloudinaryUploadWidget";
 import { saveMediaAction } from "@/actions/media";
 
@@ -36,10 +37,12 @@ export function MediaUploader({ onUploadComplete }: MediaUploaderProps) {
 
       {preview && (
         <div className="relative aspect-video w-full max-w-sm overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800">
-          <img
+          <Image
             src={preview}
             alt="Uploaded preview"
-            className="h-full w-full object-cover"
+            fill
+            unoptimized
+            className="object-cover"
           />
         </div>
       )}

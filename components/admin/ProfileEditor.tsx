@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { useFormStatus } from "react-dom";
 import { updateProfileAction } from "@/actions/profile";
 import { CloudinaryUploadWidget } from "@/components/admin/CloudinaryUploadWidget";
@@ -80,9 +81,12 @@ export function ProfileEditor({ author }: ProfileEditorProps) {
         </h2>
         <div className="flex items-start gap-6">
           {avatarPreview ? (
-            <img
+            <Image
               src={avatarPreview}
               alt="Avatar"
+              width={96}
+              height={96}
+              unoptimized
               className="h-24 w-24 rounded-full object-cover ring-4 ring-gray-200 dark:ring-gray-700"
             />
           ) : (

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import type { ReactNode } from "react";
 
 /* -------------------------------------------------------------------------- */
@@ -152,35 +153,22 @@ export function CloudinaryImage({
 }: CloudinaryImageProps) {
   const cloudName = process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME;
 
-  const imgProps = {
-    alt: alt?.trim() || "Blog image",
-    width,
-    height,
-    loading:   priority ? ("eager"  as const) : ("lazy"  as const),
-    decoding:  priority ? ("sync"   as const) : ("async" as const),
-    fetchPriority: priority ? ("high" as "high" | "low" | "auto") : undefined,
-    style: width && height ? { aspectRatio: `${width}/${height}` } : undefined,
-    className: `w-full rounded-lg shadow-sm ${className ?? ""}`,
-  };
-
-  if (!cloudName) {
-    return (
-      <figure className="my-6 not-prose">
-        <img src={publicId} {...imgProps} />
-        {caption && (
-          <figcaption className="mt-2 text-center text-sm text-[var(--blog-text-muted)]">
-            {caption}
-          </figcaption>
-        )}
-      </figure>
-    );
-  }
-
-  const url = `https://res.cloudinary.com/${cloudName}/image/upload/${transforms}/${publicId}`;
+  const finalSrc = cloudName
+    ? `https://res.cloudinary.com/${cloudName}/image/upload/${transforms}/${publicId}`
+    : publicId;
 
   return (
     <figure className="my-6 not-prose">
-      <img src={url} {...imgProps} />
+      <Image
+        src={finalSrc}
+        alt={alt?.trim() || "Blog image"}
+        width={width || 1200}
+        height={height || 675}
+        priority={priority}
+        unoptimized
+        sizes="(max-width: 768px) 100vw, 800px"
+        className={`w-full h-auto rounded-lg shadow-sm ${className ?? ""}`}
+      />
       {caption && (
         <figcaption className="mt-2 text-center text-sm text-[var(--blog-text-muted)]">
           {caption}

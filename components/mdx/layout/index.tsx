@@ -115,12 +115,13 @@ export function Figure({ src, alt, caption, width, height }: FigureProps) {
 
   return (
     <figure className="my-6 not-prose">
-      <img
+      <Image
         src={src}
-        alt={alt}
-        loading="lazy"
-        decoding="async"
-        className="w-full rounded-md border border-[var(--blog-border)] shadow-sm"
+        alt={alt || ""}
+        width={1200}
+        height={675}
+        sizes="(max-width: 768px) 100vw, 800px"
+        className="w-full h-auto rounded-md border border-[var(--blog-border)] shadow-sm"
       />
       {caption && (
         <figcaption className="mt-2 text-center text-sm text-[var(--blog-text-muted)]">
