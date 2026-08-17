@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: PageProps) {
   const program = getProgram(slug);
   if (!program) return {};
   return buildIoeMetadata({
-    title: `${program.fullName} (${program.code}) Past Question Papers & Syllabus - IOE TU`,
-    description: `Official IOE past question papers (PDF), curriculum, and semester syllabus for ${program.fullName} (${program.code}) from 2078 to 2083 BS. Download or preview online.`,
+    title: `${program.fullName} (${program.code}) Past Question Papers & Syllabus — IOE TU`,
+    description: `IOE past question papers (PDF), curriculum structure, and semester syllabus for ${program.fullName} (${program.code}). Preview online or download for free.`,
     path: `/ioe/${program.slug}`,
   });
 }
@@ -65,7 +65,7 @@ export default async function IoeProgramPage({ params }: PageProps) {
     "description": program.description,
     "provider": {
       "@type": "EducationalOrganization",
-      "name": "Institute of Engineering (IOE), Tribhuvan University",
+      "name": "Institute of Engineering (IOE), Tribhuvan University Curriculum",
       "sameAs": "https://ioe.edu.np"
     }
   };
@@ -79,7 +79,7 @@ export default async function IoeProgramPage({ params }: PageProps) {
         "name": `Where can I download IOE ${program.code} past question papers?`,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `You can download official IOE Tribhuvan University past question papers (PDF) for all semesters of ${program.fullName} directly from this hub.`
+          "text": `You can preview or download past question papers (PDF) for all semesters of ${program.fullName} directly from this hub with zero paywalls.`
         }
       },
       {
@@ -141,7 +141,7 @@ export default async function IoeProgramPage({ params }: PageProps) {
               Undergraduate B.E. Curriculum
             </span>
             <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300">
-              2078–2083 BS Verified
+              Semester 1–8 Curriculum
             </span>
           </div>
 
@@ -164,7 +164,7 @@ export default async function IoeProgramPage({ params }: PageProps) {
             </span>
             <span className="inline-flex items-center gap-1.5 text-slate-600 dark:text-slate-300">
               <FileText className="h-4 w-4 text-violet-500" />
-              {subjectsWithPapersCount} Subjects with Official PYQs
+              {subjectsWithPapersCount} Subjects with Available PYQs
             </span>
           </div>
         </div>

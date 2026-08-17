@@ -69,6 +69,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         changeFrequency: "weekly" as const,
         priority: 0.7,
       },
+      {
+        url: `${SITE_URL}/ioe/other-programs`,
+        lastModified: new Date(),
+        changeFrequency: "weekly" as const,
+        priority: 0.7,
+      },
     ];
 
     // 2. Program Mega-Hub pages for all 12 engineering disciplines

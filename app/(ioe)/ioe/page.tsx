@@ -25,9 +25,9 @@ import {
 } from "lucide-react";
 
 export const metadata = buildIoeMetadata({
-  title: "IOE Past Question Papers & Solutions | TU Engineering PYQs",
+  title: "IOE Past Question Papers & Syllabus Archive | TU Engineering PYQs",
   description:
-    "Free IOE (Institute of Engineering, TU) past question papers and chapter-wise question banks for Computer (BCT), Civil (BCE), and Electronics (BEX) engineering programs.",
+    "Free repository of IOE (Institute of Engineering, TU) past examination question papers, curriculum syllabus, and exam preparation resources for BCT, BCE, BEX, and all engineering programs.",
   path: "/ioe",
 });
 
@@ -73,27 +73,27 @@ const PROGRAM_CONFIG: Record<string, {
 const FAQ_ITEMS = [
   {
     q: "Are these IOE past question papers free to download?",
-    a: "Yes. All IOE past question papers on this portal are completely free. You can view them using the built-in PDF viewer or download them directly to your device.",
+    a: "Yes. All IOE past question papers on this portal are completely free. You can view them online in the built-in PDF viewer or download the original PDF files directly.",
+  },
+  {
+    q: "Is this website officially affiliated with TU or IOE?",
+    a: "No. IOE Papers is an independent educational portal created to help engineering students study and prepare for semester examinations. Course syllabi and exam formats follow the official TU/IOE curriculum standards.",
   },
   {
     q: "Which engineering programs are covered?",
-    a: "We cover BCT (Computer Engineering), BCE (Civil Engineering), BEX (Electronics & Communication), and several other IOE programs including Electrical, Mechanical, Automobile, Geomatics, Industrial, Architecture, Agriculture, and Aerospace.",
+    a: "We cover Computer (BCT), Civil (BCE), Electronics & Information (BEI/BEX), Electrical (BEL), Mechanical (BME), Automobile (BAE), Geomatics (BGE), Industrial (BIE), Chemical (BCH), Architecture (B.Arch), Agriculture (BAG), and Aerospace (BAS).",
   },
   {
     q: "How are the question papers organized?",
-    a: "Papers are organized by program → semester → subject. You can also use the search bar to find any subject directly, or browse the complete A–Z archive.",
+    a: "Papers are organized by program → semester → subject. You can also use the real-time search bar to find any subject directly, or browse the complete alphabetical archive.",
   },
   {
-    q: "Does this site have chapter-wise question banks?",
-    a: "Yes. For many subjects, the portal provides a chapter-wise question bank that analyzes past exam papers and shows how frequently specific topics appear across years.",
+    q: "What should I do if the embedded PDF viewer does not load?",
+    a: "If the embedded Google Drive preview is blocked or slow to load on your network, use the direct 'Download PDF' or 'Drive View' buttons on the subject page to access the original file directly.",
   },
   {
-    q: "How recent are the papers available?",
-    a: "We host papers from multiple exam years. Each subject page shows the available years (e.g. 2019, 2021, 2022, 2023) so you can quickly identify the most recent papers.",
-  },
-  {
-    q: "What is IOE, TU?",
-    a: "IOE stands for Institute of Engineering under Tribhuvan University (TU), Nepal. It conducts BE (Bachelor of Engineering) programs across multiple disciplines. IOE semester exams are held twice a year.",
+    q: "What is IOE under Tribhuvan University?",
+    a: "IOE stands for Institute of Engineering under Tribhuvan University (TU), Nepal. It conducts Bachelor of Engineering (B.E.) examinations across constituent and affiliated engineering colleges in Nepal.",
   },
 ];
 
@@ -122,10 +122,10 @@ export default function IoeLandingPage() {
   }));
 
   const features = [
-    { icon: FileText, label: "Official IOE exam papers" },
-    { icon: Download, label: "Free PDF download" },
-    { icon: BookOpen, label: "Chapter-wise question bank" },
-    { icon: Sparkles, label: "Exam frequency analysis" },
+    { icon: FileText, label: "IOE Past Exam Papers (PDF)" },
+    { icon: Download, label: "Free Direct PDF Download" },
+    { icon: BookOpen, label: "Curriculum Syllabus Breakdown" },
+    { icon: Sparkles, label: "Exam Schemes & Guidelines" },
   ];
 
   return (
@@ -166,7 +166,7 @@ export default function IoeLandingPage() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-4 py-1 text-xs font-semibold text-blue-700 dark:border-blue-900/50 dark:bg-blue-950/60 dark:text-blue-300">
             <Sparkles className="h-3.5 w-3.5" />
-            Tribhuvan University · Institute of Engineering
+            Independent Resource · IOE / TU Engineering Archive
           </div>
 
           {/* H1 */}
@@ -174,8 +174,8 @@ export default function IoeLandingPage() {
             IOE Past Question Papers
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-sm leading-relaxed text-slate-600 dark:text-slate-400 sm:text-[15px]">
-            Official semester exam papers with built-in PDF viewer, direct downloads, and
-            chapter-wise question banks — analysed by exam-repetition frequency.
+            Curated semester exam question papers with built-in PDF viewer, direct downloads,
+            official curriculum syllabus breakdowns, and exam preparation guidelines.
           </p>
 
           {/* Feature pills */}
@@ -340,43 +340,43 @@ export default function IoeLandingPage() {
           {[
             {
               icon: FileText,
-              title: "Official Past Papers",
-              desc: "Authentic IOE semester exam papers — not notes or summaries. Access the real questions your examiners set.",
+              title: "Authentic Past Papers",
+              desc: "Authentic IOE semester exam question papers compiled for revision and practice. Study the exact style of questions set in previous exams.",
               color: "text-blue-600 dark:text-blue-400",
               bg: "bg-blue-50 dark:bg-blue-950/40",
             },
             {
               icon: Download,
               title: "Free PDF Downloads",
-              desc: "Every paper is available as a PDF. Download for offline study or print for your revision sessions — always free.",
+              desc: "Every paper is available as a PDF. Download for offline study or print for your revision sessions — 100% free with zero paywalls.",
               color: "text-emerald-600 dark:text-emerald-400",
               bg: "bg-emerald-50 dark:bg-emerald-950/40",
             },
             {
               icon: BookOpen,
-              title: "Chapter-wise Question Bank",
-              desc: "Questions grouped by chapter so you can focus on the topics most likely to appear in your upcoming exam.",
+              title: "Curriculum Syllabus Breakdown",
+              desc: "Complete unit topics, lecture hours, and official TU curriculum links for semester courses to structure your study roadmap.",
               color: "text-violet-600 dark:text-violet-400",
               bg: "bg-violet-50 dark:bg-violet-950/40",
             },
             {
               icon: Sparkles,
-              title: "Exam Frequency Analysis",
-              desc: "See which questions repeat across years, helping you prioritize high-yield topics for your study sessions.",
+              title: "Exam Schemes & Guidelines",
+              desc: "Examination blueprint details, pass marks, internal vs board marks allocation, and subject-tailored preparation tips.",
               color: "text-amber-600 dark:text-amber-400",
               bg: "bg-amber-50 dark:bg-amber-950/40",
             },
             {
               icon: Layers,
               title: "All 8 Semesters Covered",
-              desc: "From Semester 1 basics to Semester 8 advanced topics — complete curriculum coverage for every year of your BE.",
+              desc: "From Semester 1 foundational engineering courses to Semester 8 specialized electives across disciplines.",
               color: "text-rose-600 dark:text-rose-400",
               bg: "bg-rose-50 dark:bg-rose-950/40",
             },
             {
               icon: GraduationCap,
-              title: "Multiple Programs",
-              desc: "BCT, BCE, BEX, BEI, and more. Whether you're in Computer, Civil, or Electronics — we've got your papers.",
+              title: "Multiple Engineering Programs",
+              desc: "BCT, BCE, BEX, BEI, BEL, BME, and more disciplines. Tailored course lists for every engineering faculty.",
               color: "text-sky-600 dark:text-sky-400",
               bg: "bg-sky-50 dark:bg-sky-950/40",
             },
@@ -522,9 +522,9 @@ export default function IoeLandingPage() {
       {/* ── Quick Trust Signals ── */}
       <section className="grid gap-3 rounded-2xl border border-slate-200/80 bg-slate-50 p-5 dark:border-gray-800/80 dark:bg-gray-900/50 sm:grid-cols-3 sm:p-6">
         {[
-          { icon: CheckCircle2, text: "100% free — no registration required", color: "text-emerald-600 dark:text-emerald-400" },
-          { icon: CheckCircle2, text: "Official IOE / TU exam papers only", color: "text-blue-600 dark:text-blue-400" },
-          { icon: CheckCircle2, text: "Built for engineering exam preparation", color: "text-violet-600 dark:text-violet-400" },
+          { icon: CheckCircle2, text: "100% free — direct PDF download", color: "text-emerald-600 dark:text-emerald-400" },
+          { icon: CheckCircle2, text: "Authentic IOE / TU question papers", color: "text-blue-600 dark:text-blue-400" },
+          { icon: CheckCircle2, text: "Curated for semester exam preparation", color: "text-violet-600 dark:text-violet-400" },
         ].map(({ icon: Icon, text, color }) => (
           <div key={text} className="flex items-center gap-2.5 text-xs font-medium text-slate-700 dark:text-slate-300">
             <Icon className={`h-4 w-4 shrink-0 ${color}`} />

@@ -2,16 +2,15 @@
 
 import { useState, useMemo } from "react";
 import type { IoeCatalogSubject } from "@/lib/ioe/types";
-import { Search, FileText, Download, ExternalLink, ChevronDown, ChevronUp, Layers, Sparkles, X } from "lucide-react";
+import { Search, FileText, Download, ExternalLink, ChevronDown, ChevronUp, X } from "lucide-react";
 
 interface OtherProgramsViewerProps {
   subjects: IoeCatalogSubject[];
-  programs: Array<{ code: string; name: string; slug: string; fullName: string }>;
+  programs?: Array<{ code: string; name: string; slug: string; fullName: string }>;
 }
 
-export function OtherProgramsViewer({ subjects, programs }: OtherProgramsViewerProps) {
+export function OtherProgramsViewer({ subjects }: OtherProgramsViewerProps) {
   const [search, setSearch] = useState("");
-  const [selectedProgram, setSelectedProgram] = useState<string>("ALL");
   const [expandedSlug, setExpandedSlug] = useState<string | null>(null);
   const [activePaperIdx, setActivePaperIdx] = useState<Record<string, number>>({});
 

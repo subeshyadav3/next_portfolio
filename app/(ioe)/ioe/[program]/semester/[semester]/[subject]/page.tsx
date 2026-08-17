@@ -45,8 +45,8 @@ export async function generateMetadata({ params }: PageProps) {
   const catalog = findCatalogSubject(subjectRow?.title ?? "");
   if (!subjectRow || !catalog) return {};
   return buildIoeMetadata({
-    title: `${subjectRow.title} Past Year Questions (PYQ) IOE PDF`,
-    description: `Download official ${subjectRow.title} past year question papers (PYQ) PDF. Complete semester syllabus, board examination blueprint, and official TU IOE papers from 2078 to 2083 BS.`,
+    title: `${subjectRow.title} (${subjectRow.code}) — IOE Past Questions & Syllabus | ${program.code} Sem ${semester}`,
+    description: `Download ${subjectRow.title} (${subjectRow.code}) IOE past question papers (PDF) for ${program.fullName} Semester ${semester}. Includes curriculum syllabus, examination blueprint, and exam guidelines.`,
     path: `/ioe/${programSlug}/semester/${semester}/${subjectSlug}`,
   });
 }
@@ -86,19 +86,27 @@ export default async function IoeSubjectPage({ params }: PageProps) {
         "name": `How can I download ${subjectRow.title} IOE past question papers?`,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `You can preview or download the official ${subjectRow.title} question papers (PDF) directly using the built-in PDF viewer on this page with zero redirects.`
+          "text": `You can preview or download ${subjectRow.title} past question papers (PDF) directly using the built-in PDF viewer on this page with zero redirects or paywalls.`
         }
       },
       {
         "@type": "Question",
-        "name": `What is the full mark and pass mark for ${subjectRow.title}?`,
+        "name": `What is the examination scheme for ${subjectRow.title} (${subjectRow.code})?`,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `For the IOE final board theory exam, the full mark is 80 (pass mark: 32). The internal theory assessment is 20 marks (pass mark: 8).`
+          "text": `For standard IOE final board exams, the theory exam is 80 marks (pass mark: 32) with a 20-mark internal theory assessment (pass mark: 8). Lab and practical components carry continuous assessment marks as detailed in the syllabus.`
         }
       }
     ]
   };
+
+  const titleLower = subjectRow.title.toLowerCase();
+  const isDrawing = titleLower.includes("drawing");
+  const isProject = titleLower.includes("project") || titleLower.includes("thesis");
+  const isMathOrNumerical = titleLower.includes("math") || titleLower.includes("numerical") || titleLower.includes("mechanics") || titleLower.includes("calculus") || titleLower.includes("statistics");
+  const isSoftwareOrCS = titleLower.includes("programming") || titleLower.includes("software") || titleLower.includes("algorithm") || titleLower.includes("data structure") || titleLower.includes("database");
+  const isElectricalOrElectronics = titleLower.includes("electrical") || titleLower.includes("electronic") || titleLower.includes("circuit") || titleLower.includes("signal") || titleLower.includes("telecommunication");
+  const isCivil = titleLower.includes("survey") || titleLower.includes("hydraulics") || titleLower.includes("structural") || titleLower.includes("concrete") || titleLower.includes("transportation");
 
   return (
     <div className="space-y-10">
@@ -110,7 +118,7 @@ export default async function IoeSubjectPage({ params }: PageProps) {
           __html: jsonLd(
             learningResourceLd({
               title: `${subjectRow.title} (${subjectRow.code})`,
-              description: `Official IOE ${program.name} semester ${semester} past question papers and syllabus.`,
+              description: `IOE ${program.name} semester ${semester} past question papers and curriculum syllabus.`,
               path,
               program,
               semester,
@@ -159,7 +167,7 @@ export default async function IoeSubjectPage({ params }: PageProps) {
         </h1>
 
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-600 dark:text-slate-400 sm:text-base">
-          Official past examination question papers and complete curriculum syllabus for {subjectRow.title} ({subjectRow.code}), Institute of Engineering (IOE), Tribhuvan University.
+          Past examination question papers and complete curriculum syllabus for {subjectRow.title} ({subjectRow.code}), {program.fullName} Semester {semester} under Institute of Engineering (IOE), Tribhuvan University.
         </p>
       </header>
 
@@ -170,7 +178,7 @@ export default async function IoeSubjectPage({ params }: PageProps) {
             Past Question Papers (PDF)
           </h2>
           <span className="text-xs text-slate-400 dark:text-slate-500">
-            Switch tabs to view different exam years
+            Switch tabs to view different exam papers
           </span>
         </div>
         <PdfViewer papers={papers} />
@@ -191,19 +199,29 @@ export default async function IoeSubjectPage({ params }: PageProps) {
         <div className="grid gap-6 text-sm leading-relaxed text-slate-600 dark:text-slate-300 sm:grid-cols-2">
           <div className="space-y-3">
             <h3 className="font-bold text-slate-900 dark:text-white">
-              Evaluation Criteria
+              Evaluation Structure
             </h3>
-            <ul className="list-inside list-disc space-y-1.5 text-xs text-slate-600 dark:text-slate-400">
-              <li>
-                <strong>Final Board Theory Exam:</strong> 80 Marks (Pass mark: 32, Time: 3 Hours)
-              </li>
-              <li>
-                <strong>Internal Assessment (Theory):</strong> 20 Marks (Pass mark: 8)
-              </li>
-              <li>
-                <strong>Practical / Lab Exam:</strong> 25 or 50 Marks (Continuous assessment + viva)
-              </li>
-            </ul>
+            {isProject ? (
+              <ul className="list-inside list-disc space-y-1.5 text-xs text-slate-600 dark:text-slate-400">
+                <li><strong>Internal Project Assessment:</strong> Progress defense, supervisor review, and milestone logs.</li>
+                <li><strong>Final Evaluation &amp; Viva:</strong> External defense, technical report submission, and viva-voce.</li>
+              </ul>
+            ) : isDrawing ? (
+              <ul className="list-inside list-disc space-y-1.5 text-xs text-slate-600 dark:text-slate-400">
+                <li><strong>Final Board Drawing Exam:</strong> 40 or 80 Marks (Pass mark: 40%, Time: 3–4 Hours)</li>
+                <li><strong>Internal Sheet Assessment:</strong> 20 or 60 Marks (Continuous drafting sheets + class assignments)</li>
+                <li><strong>Viva / Practical:</strong> Practical drawing exam and viva assessment.</li>
+              </ul>
+            ) : (
+              <ul className="list-inside list-disc space-y-1.5 text-xs text-slate-600 dark:text-slate-400">
+                <li><strong>Final Board Theory Exam:</strong> 80 Marks (Pass mark: 32, Time: 3 Hours)</li>
+                <li><strong>Internal Assessment (Theory):</strong> 20 Marks (Pass mark: 8)</li>
+                <li><strong>Practical / Lab Exam:</strong> 25 or 50 Marks (Continuous lab evaluation + viva, where applicable)</li>
+              </ul>
+            )}
+            <p className="text-[11px] text-slate-400 dark:text-slate-500">
+              * Marking schemes follow standard IOE evaluation norms. Verify course-specific blueprints from the official syllabus above.
+            </p>
           </div>
 
           <div className="space-y-3">
@@ -211,9 +229,25 @@ export default async function IoeSubjectPage({ params }: PageProps) {
               Exam Preparation Guidelines
             </h3>
             <ul className="list-inside list-disc space-y-1.5 text-xs text-slate-600 dark:text-slate-400">
-              <li>Review past question papers from 2078 to 2083 BS to understand recurring derivations.</li>
-              <li>Practice numerical problems with clean step-by-step units and assumptions.</li>
-              <li>Cross-reference answers with the official syllabus units and standard textbooks.</li>
+              <li>
+                {papers.length === 1
+                  ? "Review the available past examination paper to understand question styling, typical derivation topics, and marks allocation."
+                  : `Review the ${papers.length} available past examination papers to identify recurring patterns, core problem types, and chapter weightage.`}
+              </li>
+              <li>
+                {isMathOrNumerical
+                  ? "Practice numerical problems step-by-step with clean formula derivations, clear units, and standard assumptions."
+                  : isSoftwareOrCS
+                  ? "Practice writing clean algorithms and code implementations, tracing dry runs with sample inputs, and explaining complexity trade-offs."
+                  : isDrawing
+                  ? "Practice standard projection methods, isometric views, line conventions, and neat dimensioning with proper drawing instruments."
+                  : isElectricalOrElectronics
+                  ? "Practice drawing labeled circuit schematics, deriving transfer functions, and showing systematic mathematical steps."
+                  : isCivil
+                  ? "Practice design calculations, standard code provisions, and illustrative cross-section sketches."
+                  : "Cross-reference key answers with official syllabus units, standard textbooks, and lecture notes."}
+              </li>
+              <li>Structure answers with labeled diagrams, concise bullet points, and highlight final answers in numerical solutions.</li>
             </ul>
           </div>
         </div>
@@ -227,18 +261,26 @@ export default async function IoeSubjectPage({ params }: PageProps) {
           <div className="mt-4 space-y-4 text-xs sm:text-sm">
             <div>
               <p className="font-semibold text-slate-800 dark:text-slate-200">
-                Q: Are these official IOE past question papers?
+                Q: How can I download {subjectRow.title} past question papers?
               </p>
               <p className="mt-1 text-slate-500 dark:text-slate-400">
-                Yes, all past question papers available on this portal are official examination papers issued by the Tribhuvan University, Institute of Engineering (IOE) Examination Control Division.
+                You can preview or download the {subjectRow.title} question papers (PDF) directly using the built-in viewer on this page with zero redirects or paywalls.
               </p>
             </div>
             <div>
               <p className="font-semibold text-slate-800 dark:text-slate-200">
-                Q: Can I download the PDF for offline revision?
+                Q: What is the pass mark for {subjectRow.title}?
               </p>
               <p className="mt-1 text-slate-500 dark:text-slate-400">
-                Yes, click the &quot;Download PDF&quot; button in the viewer above to save the complete original question paper file directly to your device.
+                For standard IOE 80-mark final board theory exams, the pass mark is 32. For the 20-mark internal theory assessment, the pass mark is 8.
+              </p>
+            </div>
+            <div>
+              <p className="font-semibold text-slate-800 dark:text-slate-200">
+                Q: Where can I find the complete syllabus for this subject?
+              </p>
+              <p className="mt-1 text-slate-500 dark:text-slate-400">
+                The complete chapter-wise syllabus and topic breakdown is indexed in the Syllabus section above, with links to the official curriculum PDF.
               </p>
             </div>
           </div>
@@ -248,9 +290,9 @@ export default async function IoeSubjectPage({ params }: PageProps) {
       {/* ── Quick Trust Signals ── */}
       <section className="grid gap-3 rounded-2xl border border-slate-200/80 bg-slate-50 p-5 dark:border-gray-800/80 dark:bg-gray-900/50 sm:grid-cols-3 sm:p-6">
         {[
-          { icon: CheckCircle2, text: "Official IOE / TU Exam Papers Only", color: "text-blue-600 dark:text-blue-400" },
+          { icon: CheckCircle2, text: "Authentic IOE Past Papers", color: "text-blue-600 dark:text-blue-400" },
           { icon: CheckCircle2, text: "Free Direct PDF Download", color: "text-emerald-600 dark:text-emerald-400" },
-          { icon: CheckCircle2, text: "Complete Syllabus & Marking Scheme", color: "text-violet-600 dark:text-violet-400" },
+          { icon: CheckCircle2, text: "Curriculum Syllabus & Marking Scheme", color: "text-violet-600 dark:text-violet-400" },
         ].map(({ icon: Icon, text, color }) => (
           <div key={text} className="flex items-center gap-2.5 text-xs font-medium text-slate-700 dark:text-slate-300">
             <Icon className={`h-4 w-4 shrink-0 ${color}`} />

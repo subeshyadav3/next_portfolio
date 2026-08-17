@@ -110,7 +110,7 @@ export function QuestionBank({ chapters, questions, subject }: QuestionBankProps
               <Layers className="h-4 w-4" />
             </span>
             <h2 className="text-xl sm:text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white">
-              Official IOE Past Question Papers
+              IOE Past Examination Questions
             </h2>
           </div>
           <p className="mt-1 text-xs sm:text-sm text-slate-500 dark:text-slate-400">
@@ -271,7 +271,7 @@ export function QuestionBank({ chapters, questions, subject }: QuestionBankProps
                       {yearTitle} Examination Paper
                     </h3>
                     <p className="text-xs text-slate-500 dark:text-slate-400">
-                      Tribhuvan University · Institute of Engineering
+                      IOE Engineering Past Exam Session
                     </p>
                   </div>
                 </div>

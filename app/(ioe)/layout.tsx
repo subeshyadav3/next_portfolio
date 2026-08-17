@@ -7,7 +7,7 @@ import { IoeNavMobile } from "@/components/ioe/IoeNavMobile";
 export const metadata: Metadata = {
   title: {
     template: "%s",
-    default: "IOE Engineering Past Question Papers & Solutions Archive",
+    default: "IOE Engineering Past Question Papers & Syllabus Archive | TU Nepal",
   },
 };
 
@@ -36,7 +36,7 @@ export default function IoeLayout({ children }: { children: React.ReactNode }) {
                 </span>
               </div>
               <span className="mt-0.5 text-[11px] text-slate-500 dark:text-slate-400">
-                PYQs & Chapter-wise Bank
+                PYQs &amp; Syllabus Archive
               </span>
             </div>
           </Link>
@@ -90,12 +90,12 @@ export default function IoeLayout({ children }: { children: React.ReactNode }) {
                 <span className="font-bold text-slate-900 dark:text-white">IOE Papers</span>
               </div>
               <p className="mt-3 max-w-xs text-xs leading-relaxed text-slate-500 dark:text-slate-400">
-                Free IOE (TU) past question papers for BCT, BCE, BEX and all engineering
-                programs. Chapter-wise question banks and PDF viewer included.
+                Independent educational portal offering free IOE (TU) past question papers,
+                curriculum syllabus, and exam preparation guidelines for engineering students.
               </p>
-              <p className="mt-3 text-[11px] text-slate-400 dark:text-slate-500">
-                For academic study purposes only. Always verify with official IOE / TU
-                examination notices.
+              <p className="mt-3 text-[11px] leading-relaxed text-slate-400 dark:text-slate-500">
+                Disclaimer: Not affiliated with, endorsed by, or operated by Tribhuvan University
+                (TU) or Institute of Engineering (IOE). For academic study and reference only.
               </p>
             </div>
 
@@ -180,7 +180,7 @@ export default function IoeLayout({ children }: { children: React.ReactNode }) {
         {/* Bottom bar */}
         <div className="border-t border-slate-100 px-4 py-4 dark:border-gray-800/60">
           <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 text-[11px] text-slate-400 dark:text-slate-500">
-            <span>© {new Date().getFullYear()} IOE Papers — Tribhuvan University, Institute of Engineering</span>
+            <span>© {new Date().getFullYear()} IOE Papers — Independent educational resource for engineering students.</span>
             <span>Built for engineering students preparing for semester exams</span>
           </div>
         </div>

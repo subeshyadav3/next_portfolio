@@ -7,14 +7,8 @@ import {
   Download,
   Eye,
   Search,
-  BookOpen,
-  Layers,
-  ChevronDown,
-  ChevronUp,
-  ExternalLink,
   HelpCircle,
   Award,
-  Clock,
   X,
 } from "lucide-react";
 import type { IoeCurriculumSubject, IoePaperFile, IoeProgram } from "@/lib/ioe/types";
@@ -61,8 +55,6 @@ export function ProgramHubView({
       })
       .filter((r): r is NonNullable<typeof r> => r !== null);
   }, [semesterRows, activeSem, searchQuery]);
-
-  const totalSubjects = semesterRows.reduce((n, r) => n + r.subjects.length, 0);
 
   return (
     <div className="space-y-8">
@@ -243,18 +235,18 @@ export function ProgramHubView({
               Assessment Breakdown &amp; Pass Marks
             </h3>
             <p>
-              Under the Institute of Engineering (IOE), Tribhuvan University, each
+              Under the Institute of Engineering (IOE), Tribhuvan University curriculum, each
               course has a standard evaluation criteria consisting of:
             </p>
             <ul className="list-inside list-disc space-y-1.5 text-xs text-slate-600 dark:text-slate-400">
               <li>
-                <strong>Final Board Theory Exam:</strong> 80 Marks (Pass mark: 32)
+                <strong>Final Board Theory Exam:</strong> 80 Marks (Pass mark: 32, Time: 3 Hours)
               </li>
               <li>
                 <strong>Internal Assessment (Theory):</strong> 20 Marks (Pass mark: 8)
               </li>
               <li>
-                <strong>Practical / Lab Evaluation:</strong> 25 or 50 Marks (Continuous assessment + practical exam)
+                <strong>Practical / Lab Evaluation:</strong> 25 or 50 Marks (Continuous assessment + practical exam, where applicable)
               </li>
             </ul>
           </div>
@@ -264,12 +256,11 @@ export function ProgramHubView({
               How to Prepare Using Past Question Papers
             </h3>
             <p>
-              Past question papers (PYQs) from 2078 to 2083 BS reflect the recurring
-              theoretical derivations, computational numericals, and core syllabus
-              weightage. Students are advised to:
+              Past question papers (PYQs) reflect recurring theoretical derivations,
+              computational numericals, and core syllabus weightage across exam sessions. Students are advised to:
             </p>
             <ul className="list-inside list-disc space-y-1.5 text-xs text-slate-600 dark:text-slate-400">
-              <li>Review high-frequency questions first for maximum exam coverage.</li>
+              <li>Review past question papers systematically across chapters for maximum exam coverage.</li>
               <li>Practice numerical problems with standard formulas and units.</li>
               <li>Verify solutions against the official IOE syllabus structure.</li>
             </ul>
@@ -285,21 +276,19 @@ export function ProgramHubView({
           <div className="mt-4 space-y-4 text-xs sm:text-sm">
             <div>
               <p className="font-semibold text-slate-800 dark:text-slate-200">
-                Q: Are these official IOE TU exam question papers?
-              </p>
-              <p className="mt-1 text-slate-500 dark:text-slate-400">
-                Yes, all past question papers hosted on this portal are official
-                examination papers from Tribhuvan University, Institute of Engineering
-                (IOE) examination control division.
-              </p>
-            </div>
-            <div>
-              <p className="font-semibold text-slate-800 dark:text-slate-200">
                 Q: Can I download the complete PDF papers for offline study?
               </p>
               <p className="mt-1 text-slate-500 dark:text-slate-400">
                 Yes, click the &quot;Download&quot; button next to any subject to save the
                 original PDF directly to your device with zero paywalls or redirects.
+              </p>
+            </div>
+            <div>
+              <p className="font-semibold text-slate-800 dark:text-slate-200">
+                Q: What syllabus does this program follow?
+              </p>
+              <p className="mt-1 text-slate-500 dark:text-slate-400">
+                The course structure and subject list reflect the official undergraduate engineering curriculum of the Institute of Engineering (IOE), Tribhuvan University.
               </p>
             </div>
           </div>

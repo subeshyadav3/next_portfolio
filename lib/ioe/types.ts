@@ -51,6 +51,8 @@ export interface IoePaper {
   downloadUrl: string;
   /** Google Drive standard view URL (direct tab). */
   driveViewUrl: string;
+  /** True when paper was compiled from a different semester track for the shared course. */
+  isCrossSemester?: boolean;
 }
 
 export interface IoeQuestionVariation {

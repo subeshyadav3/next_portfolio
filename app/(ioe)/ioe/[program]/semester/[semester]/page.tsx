@@ -9,7 +9,7 @@ import {
 } from "@/lib/ioe/data";
 import { SubjectCard } from "@/components/ioe/SubjectCard";
 import { buildIoeMetadata, breadcrumbLd, jsonLd, collectionLd } from "@/lib/ioe/seo";
-import { ChevronRight, Layers, BookOpen } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 
 interface PageProps {
   params: Promise<{ program: string; semester: string }>;
@@ -31,8 +31,8 @@ export async function generateMetadata({ params }: PageProps) {
   const program = getProgram(slug);
   if (!program || !(semester in program.semesters)) return {};
   return buildIoeMetadata({
-    title: `${program.fullName} Semester ${semester} Subjects | IOE PYQ Archive`,
-    description: `All ${program.fullName} semester ${semester} subjects with course codes and past question papers — PDF viewer, downloads, and chapter-wise questions.`,
+    title: `${program.fullName} Semester ${semester} Subjects — IOE PYQs & Syllabus | ${program.code}`,
+    description: `All ${program.fullName} Semester ${semester} subjects with course codes, curriculum syllabus, and past question papers (PDF).`,
     path: `/ioe/${program.slug}/semester/${semester}`,
   });
 }
