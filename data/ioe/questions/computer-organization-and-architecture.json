@@ -2,15 +2,15 @@
   "subject": "Computer Organization and Architecture",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Data Representation & Computer Arithmetic (Booth's & Division)",
-    "Instruction Set Architecture (ISA) & Addressing Modes",
-    "Control Unit Design (Hardwired vs Microprogrammed)",
-    "Memory Hierarchy, Cache Mapping & Virtual Memory",
-    "Pipelining (Hazards & Speedup), Superscalar & Multiprocessors"
+    "Chapter 1: Data Representation & Computer Arithmetic (Booth Algorithm)",
+    "Chapter 2: Instruction Set Architecture (ISA) & Addressing Modes",
+    "Chapter 3: Control Unit Design (Hardwired vs Microprogrammed)",
+    "Chapter 4: Memory Hierarchy, Cache Memory & Mapping Techniques",
+    "Chapter 6: Instruction Pipelining, Hazards & Branch Prediction"
   ],
   "questions": [
     {
-      "chapter": "Data Representation & Computer Arithmetic (Booth's & Division)",
+      "chapter": "Chapter 1: Data Representation & Computer Arithmetic (Booth Algorithm)",
       "text": "Explain IEEE 754 Floating-Point Representation for Single Precision (32-bit: 1-bit sign, 8-bit biased exponent, 23-bit mantissa) and Double Precision (64-bit). Represent the decimal number $(-118.625)_{10}$ in IEEE 754 single precision format.",
       "marks": "3+5",
       "years": [
@@ -23,7 +23,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Data Representation & Computer Arithmetic (Booth's & Division)",
+      "chapter": "Chapter 1: Data Representation & Computer Arithmetic (Booth Algorithm)",
       "text": "Explain Booth's Multiplication Algorithm for signed 2's complement binary numbers. Multiply the signed binary numbers $(+13)_{10} = (01101)_2$ and $(-9)_{10} = (10111)_2$ using Booth's algorithm and show all registers ($A, Q, Q_{-1}, M$) at each step.",
       "marks": "4+6",
       "years": [
@@ -36,7 +36,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Instruction Set Architecture (ISA) & Addressing Modes",
+      "chapter": "Chapter 2: Instruction Set Architecture (ISA) & Addressing Modes",
       "text": "Compare CISC (Complex Instruction Set Computer) vs RISC (Reduced Instruction Set Computer) architectures in terms of instruction formats, addressing modes, pipeline efficiency, and register file size.",
       "marks": "6",
       "years": [
@@ -49,7 +49,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Instruction Set Architecture (ISA) & Addressing Modes",
+      "chapter": "Chapter 2: Instruction Set Architecture (ISA) & Addressing Modes",
       "text": "Explain Computer Addressing Modes: Immediate, Direct (Absolute), Indirect, Register, Register Indirect, Displacement (Relative, Base-Register, Indexed), and Auto-increment/decrement. Calculate the Effective Address (EA) for each mode.",
       "marks": "4+4",
       "years": [
@@ -62,7 +62,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Control Unit Design (Hardwired vs Microprogrammed)",
+      "chapter": "Chapter 3: Control Unit Design (Hardwired vs Microprogrammed)",
       "text": "Explain the structure of a Hardwired Control Unit (State table method, Delay element method, Sequence register method). Explain the structure of a Microprogrammed Control Unit (Control Memory, Control Address Register - CAR, Control Data Register - CDR, Next Address Generator / Sequencer). Compare Hardwired vs Microprogrammed control units in terms of speed, flexibility, and complexity.",
       "marks": "4+6",
       "years": [
@@ -75,7 +75,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Control Unit Design (Hardwired vs Microprogrammed)",
+      "chapter": "Chapter 4: Memory Hierarchy, Cache Memory & Mapping Techniques",
       "text": "Compare Horizontal Microinstructions vs. Vertical Microinstructions in terms of control field encoding, execution speed, and control memory width.",
       "marks": "6",
       "years": [
@@ -88,7 +88,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Memory Hierarchy, Cache Mapping & Virtual Memory",
+      "chapter": "Chapter 4: Memory Hierarchy, Cache Memory & Mapping Techniques",
       "text": "Explain Memory Hierarchy in modern computers (Registers, L1/L2/L3 Cache, Main Memory, SSD/HDD) in terms of access time, capacity, and cost per bit. Explain the Principle of Locality of Reference (Temporal Locality and Spatial Locality).",
       "marks": "4+4",
       "years": [
@@ -101,7 +101,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Memory Hierarchy, Cache Mapping & Virtual Memory",
+      "chapter": "Chapter 4: Memory Hierarchy, Cache Memory & Mapping Techniques",
       "text": "Explain Cache Memory Mapping Techniques: (a) Direct Mapping (Tag, Line, Word offsets), (b) Fully Associative Mapping (Tag, Word offsets), and (c) $k$-Way Set Associative Mapping. Given a main memory of $64\\,\\text{MB}$ ($26$-bit address), cache size of $64\\,\\text{KB}$, and block size of $16\\,\\text{bytes}$, compute the number of bits in Tag, Set/Line, and Word fields for: (1) Direct mapping, and (2) 4-Way Set Associative mapping.",
       "marks": "4+6",
       "years": [
@@ -114,7 +114,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Memory Hierarchy, Cache Mapping & Virtual Memory",
+      "chapter": "Chapter 4: Memory Hierarchy, Cache Memory & Mapping Techniques",
       "text": "Explain Cache Write Policies: Write-Through vs. Write-Back (with dirty bit), and Write-Allocate vs. No-Write-Allocate. Calculate Average Memory Access Time (AMAT): $\\text{AMAT} = T_{hit} + (1 - h) \\times T_{miss}$.",
       "marks": "4+4",
       "years": [
@@ -127,7 +127,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Pipelining (Hazards & Speedup), Superscalar & Multiprocessors",
+      "chapter": "Chapter 4: Memory Hierarchy, Cache Memory & Mapping Techniques",
       "text": "Explain 5-stage Instruction Pipelining (Instruction Fetch - IF, Instruction Decode - ID, Execute - EX, Memory Access - MEM, Write Back - WB). Derive the Theoretical Speedup of a $k$-stage pipeline executing $n$ instructions: $S_k = \\frac{n \\cdot k}{k + n - 1}$. Calculate speedup as $n \\to \\infty$.",
       "marks": "3+5",
       "years": [
@@ -140,7 +140,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Pipelining (Hazards & Speedup), Superscalar & Multiprocessors",
+      "chapter": "Chapter 6: Instruction Pipelining, Hazards & Branch Prediction",
       "text": "Explain Pipeline Hazards and their solutions: (a) Structural Hazards (Resource contention / separate I-Cache and D-Cache), (b) Data Hazards (RAW / True dependency, WAR / Anti-dependency, WAW / Output dependency; Solved by Operand Forwarding / Bypassing, Pipeline Stalling / NOP injection, and Out-of-Order execution), and (c) Control / Branch Hazards (Solved by Static / Dynamic Branch Prediction and Branch Delay Slots).",
       "marks": "4+6",
       "years": [
@@ -153,7 +153,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Pipelining (Hazards & Speedup), Superscalar & Multiprocessors",
+      "chapter": "Chapter 4: Memory Hierarchy, Cache Memory & Mapping Techniques",
       "text": "Explain Flynn's Classification of Computer Architectures: SISD, SIMD (Vector processors / GPUs), MISD, and MIMD. Compare Symmetric Multiprocessing (SMP) vs. Non-Uniform Memory Access (NUMA) and explain Cache Coherence protocols (MESI / Illinois protocol - Modified, Exclusive, Shared, Invalid).",
       "marks": "4+4",
       "years": [
@@ -166,7 +166,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Data Representation & Computer Arithmetic (Booth's & Division)",
+      "chapter": "Chapter 1: Data Representation & Computer Arithmetic (Booth Algorithm)",
       "text": "Explain Restoring and Non-Restoring Division Algorithms for unsigned binary integers. Divide $(14)_{10} = (1110)_2$ by $(3)_{10} = (0011)_2$ using the Non-Restoring division algorithm.",
       "marks": "4+6",
       "years": [
@@ -178,7 +178,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Instruction Set Architecture (ISA) & Addressing Modes",
+      "chapter": "Chapter 2: Instruction Set Architecture (ISA) & Addressing Modes",
       "text": "Write assembly programs for computing $X = (A + B) \\times (C + D)$ using: (a) 3-Address Instructions, (b) 2-Address Instructions, (c) 1-Address (Accumulator) Instructions, and (d) 0-Address (Stack-based) Instructions.",
       "marks": "8",
       "years": [
@@ -190,7 +190,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Memory Hierarchy, Cache Mapping & Virtual Memory",
+      "chapter": "Chapter 4: Memory Hierarchy, Cache Memory & Mapping Techniques",
       "text": "Explain Virtual Memory organization with Paging and Translation Lookaside Buffer (TLB). Explain the step-by-step Address Translation from Virtual Address to Physical Address.",
       "marks": "6",
       "years": [
@@ -202,7 +202,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Pipelining (Hazards & Speedup), Superscalar & Multiprocessors",
+      "chapter": "Chapter 1: Data Representation & Computer Arithmetic (Booth Algorithm)",
       "text": "Explain Superscalar Architecture and Very Long Instruction Word (VLIW) processors. Explain Tomasulo's Algorithm for dynamic instruction scheduling and register renaming using Reservation Stations and Common Data Bus (CDB).",
       "marks": "8",
       "years": [
@@ -214,7 +214,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Data Representation & Computer Arithmetic (Booth's & Division)",
+      "chapter": "Chapter 1: Data Representation & Computer Arithmetic (Booth Algorithm)",
       "text": "A practical engineering system operating under Data Representation & Computer Arithmetic (Booth's & Division) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -226,7 +226,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Instruction Set Architecture (ISA) & Addressing Modes",
+      "chapter": "Chapter 2: Instruction Set Architecture (ISA) & Addressing Modes",
       "text": "A practical engineering system operating under Instruction Set Architecture (ISA) & Addressing Modes is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -238,7 +238,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Control Unit Design (Hardwired vs Microprogrammed)",
+      "chapter": "Chapter 3: Control Unit Design (Hardwired vs Microprogrammed)",
       "text": "A practical engineering system operating under Control Unit Design (Hardwired vs Microprogrammed) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -250,7 +250,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Memory Hierarchy, Cache Mapping & Virtual Memory",
+      "chapter": "Chapter 4: Memory Hierarchy, Cache Memory & Mapping Techniques",
       "text": "A practical engineering system operating under Memory Hierarchy, Cache Mapping & Virtual Memory is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -262,7 +262,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Pipelining (Hazards & Speedup), Superscalar & Multiprocessors",
+      "chapter": "Chapter 6: Instruction Pipelining, Hazards & Branch Prediction",
       "text": "A practical engineering system operating under Pipelining (Hazards & Speedup), Superscalar & Multiprocessors is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -274,7 +274,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Data Representation & Computer Arithmetic (Booth's & Division)",
+      "chapter": "Chapter 1: Data Representation & Computer Arithmetic (Booth Algorithm)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Data Representation & Computer Arithmetic (Booth's & Division). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -285,7 +285,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Data Representation & Computer Arithmetic (Booth's & Division)",
+      "chapter": "Chapter 1: Data Representation & Computer Arithmetic (Booth Algorithm)",
       "text": "Solve the standard numerical problem for Data Representation & Computer Arithmetic (Booth's & Division) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -296,7 +296,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Instruction Set Architecture (ISA) & Addressing Modes",
+      "chapter": "Chapter 2: Instruction Set Architecture (ISA) & Addressing Modes",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Instruction Set Architecture (ISA) & Addressing Modes. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -307,7 +307,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Instruction Set Architecture (ISA) & Addressing Modes",
+      "chapter": "Chapter 2: Instruction Set Architecture (ISA) & Addressing Modes",
       "text": "Solve the standard numerical problem for Instruction Set Architecture (ISA) & Addressing Modes using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -318,7 +318,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Control Unit Design (Hardwired vs Microprogrammed)",
+      "chapter": "Chapter 3: Control Unit Design (Hardwired vs Microprogrammed)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Control Unit Design (Hardwired vs Microprogrammed). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -329,7 +329,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Control Unit Design (Hardwired vs Microprogrammed)",
+      "chapter": "Chapter 3: Control Unit Design (Hardwired vs Microprogrammed)",
       "text": "Solve the standard numerical problem for Control Unit Design (Hardwired vs Microprogrammed) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -340,7 +340,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Memory Hierarchy, Cache Mapping & Virtual Memory",
+      "chapter": "Chapter 4: Memory Hierarchy, Cache Memory & Mapping Techniques",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Memory Hierarchy, Cache Mapping & Virtual Memory. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -351,7 +351,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Memory Hierarchy, Cache Mapping & Virtual Memory",
+      "chapter": "Chapter 4: Memory Hierarchy, Cache Memory & Mapping Techniques",
       "text": "Solve the standard numerical problem for Memory Hierarchy, Cache Mapping & Virtual Memory using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -362,7 +362,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Pipelining (Hazards & Speedup), Superscalar & Multiprocessors",
+      "chapter": "Chapter 6: Instruction Pipelining, Hazards & Branch Prediction",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Pipelining (Hazards & Speedup), Superscalar & Multiprocessors. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -373,7 +373,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Pipelining (Hazards & Speedup), Superscalar & Multiprocessors",
+      "chapter": "Chapter 6: Instruction Pipelining, Hazards & Branch Prediction",
       "text": "Solve the standard numerical problem for Pipelining (Hazards & Speedup), Superscalar & Multiprocessors using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -384,7 +384,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Data Representation & Computer Arithmetic (Booth's & Division)",
+      "chapter": "Chapter 1: Data Representation & Computer Arithmetic (Booth Algorithm)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Data Representation & Computer Arithmetic (Booth's & Division). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -394,7 +394,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Data Representation & Computer Arithmetic (Booth's & Division)",
+      "chapter": "Chapter 1: Data Representation & Computer Arithmetic (Booth Algorithm)",
       "text": "State and prove the classical theorems and stability criteria associated with Data Representation & Computer Arithmetic (Booth's & Division). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -404,7 +404,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Instruction Set Architecture (ISA) & Addressing Modes",
+      "chapter": "Chapter 2: Instruction Set Architecture (ISA) & Addressing Modes",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Instruction Set Architecture (ISA) & Addressing Modes. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -414,7 +414,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Instruction Set Architecture (ISA) & Addressing Modes",
+      "chapter": "Chapter 2: Instruction Set Architecture (ISA) & Addressing Modes",
       "text": "State and prove the classical theorems and stability criteria associated with Instruction Set Architecture (ISA) & Addressing Modes. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -424,7 +424,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Control Unit Design (Hardwired vs Microprogrammed)",
+      "chapter": "Chapter 3: Control Unit Design (Hardwired vs Microprogrammed)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Control Unit Design (Hardwired vs Microprogrammed). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -434,7 +434,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Control Unit Design (Hardwired vs Microprogrammed)",
+      "chapter": "Chapter 3: Control Unit Design (Hardwired vs Microprogrammed)",
       "text": "State and prove the classical theorems and stability criteria associated with Control Unit Design (Hardwired vs Microprogrammed). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -444,7 +444,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Memory Hierarchy, Cache Mapping & Virtual Memory",
+      "chapter": "Chapter 4: Memory Hierarchy, Cache Memory & Mapping Techniques",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Memory Hierarchy, Cache Mapping & Virtual Memory. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -454,7 +454,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Memory Hierarchy, Cache Mapping & Virtual Memory",
+      "chapter": "Chapter 4: Memory Hierarchy, Cache Memory & Mapping Techniques",
       "text": "State and prove the classical theorems and stability criteria associated with Memory Hierarchy, Cache Mapping & Virtual Memory. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -464,7 +464,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Pipelining (Hazards & Speedup), Superscalar & Multiprocessors",
+      "chapter": "Chapter 6: Instruction Pipelining, Hazards & Branch Prediction",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Pipelining (Hazards & Speedup), Superscalar & Multiprocessors. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -474,7 +474,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Pipelining (Hazards & Speedup), Superscalar & Multiprocessors",
+      "chapter": "Chapter 6: Instruction Pipelining, Hazards & Branch Prediction",
       "text": "State and prove the classical theorems and stability criteria associated with Pipelining (Hazards & Speedup), Superscalar & Multiprocessors. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -484,7 +484,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Data Representation & Computer Arithmetic (Booth's & Division)",
+      "chapter": "Chapter 1: Data Representation & Computer Arithmetic (Booth Algorithm)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Data Representation & Computer Arithmetic (Booth's & Division).",
       "marks": "6",
       "years": [
@@ -493,7 +493,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Data Representation & Computer Arithmetic (Booth's & Division)",
+      "chapter": "Chapter 1: Data Representation & Computer Arithmetic (Booth Algorithm)",
       "text": "Write short technical notes on: (a) Key design parameters in Data Representation & Computer Arithmetic (Booth's & Division), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -502,7 +502,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Instruction Set Architecture (ISA) & Addressing Modes",
+      "chapter": "Chapter 2: Instruction Set Architecture (ISA) & Addressing Modes",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Instruction Set Architecture (ISA) & Addressing Modes.",
       "marks": "6",
       "years": [
@@ -511,7 +511,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Instruction Set Architecture (ISA) & Addressing Modes",
+      "chapter": "Chapter 2: Instruction Set Architecture (ISA) & Addressing Modes",
       "text": "Write short technical notes on: (a) Key design parameters in Instruction Set Architecture (ISA) & Addressing Modes, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -520,7 +520,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Control Unit Design (Hardwired vs Microprogrammed)",
+      "chapter": "Chapter 3: Control Unit Design (Hardwired vs Microprogrammed)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Control Unit Design (Hardwired vs Microprogrammed).",
       "marks": "6",
       "years": [
@@ -529,7 +529,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Control Unit Design (Hardwired vs Microprogrammed)",
+      "chapter": "Chapter 3: Control Unit Design (Hardwired vs Microprogrammed)",
       "text": "Write short technical notes on: (a) Key design parameters in Control Unit Design (Hardwired vs Microprogrammed), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -538,7 +538,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Memory Hierarchy, Cache Mapping & Virtual Memory",
+      "chapter": "Chapter 4: Memory Hierarchy, Cache Memory & Mapping Techniques",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Memory Hierarchy, Cache Mapping & Virtual Memory.",
       "marks": "6",
       "years": [
@@ -547,7 +547,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Memory Hierarchy, Cache Mapping & Virtual Memory",
+      "chapter": "Chapter 4: Memory Hierarchy, Cache Memory & Mapping Techniques",
       "text": "Write short technical notes on: (a) Key design parameters in Memory Hierarchy, Cache Mapping & Virtual Memory, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -556,7 +556,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Pipelining (Hazards & Speedup), Superscalar & Multiprocessors",
+      "chapter": "Chapter 6: Instruction Pipelining, Hazards & Branch Prediction",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Pipelining (Hazards & Speedup), Superscalar & Multiprocessors.",
       "marks": "6",
       "years": [
@@ -565,7 +565,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Pipelining (Hazards & Speedup), Superscalar & Multiprocessors",
+      "chapter": "Chapter 6: Instruction Pipelining, Hazards & Branch Prediction",
       "text": "Write short technical notes on: (a) Key design parameters in Pipelining (Hazards & Speedup), Superscalar & Multiprocessors, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [

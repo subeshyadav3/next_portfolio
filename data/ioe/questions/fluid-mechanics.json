@@ -2,15 +2,17 @@
   "subject": "Fluid Mechanics",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Fluid Properties, Hydrostatic Pressure & Buoyancy",
-    "Fluid Kinematics (Continuity, Stream Function & Velocity Potential)",
-    "Fluid Dynamics, Euler & Bernoulli Equations with Applications",
-    "Viscous Flow Through Pipes & Energy Losses",
-    "Dimensional Analysis, Similitude & Boundary Layer Theory"
+    "Chapter 1: Fluid Properties & Fluid Statics (Hydrostatic Pressure on Surfaces)",
+    "Chapter 2: Buoyancy, Floatation & Metacentric Height",
+    "Chapter 3: Fluid Kinematics (Continuity Equation, Velocity Potential)",
+    "Chapter 4: Fluid Dynamics (Euler & Bernoulli Equations)",
+    "Chapter 5: Flow Measurement (Venturimeter, Orifice Plate, Weirs & Notches)",
+    "Chapter 6: Dimensional Analysis & Similitude (Buckingham Pi Theorem)",
+    "Chapter 7: Viscous Flow & Flow in Closed Conduits"
   ],
   "questions": [
     {
-      "chapter": "Fluid Properties, Hydrostatic Pressure & Buoyancy",
+      "chapter": "Chapter 1: Fluid Properties & Fluid Statics (Hydrostatic Pressure on Surfaces)",
       "text": "State Newton's Law of Viscosity ($\\tau = \\mu \\frac{du}{dy}$). Differentiate between Newtonian and Non-Newtonian fluids. A plate of area $1.5\\,\\text{m}^2$ is pulled at a velocity of $0.5\\,\\text{m/s}$ over a fixed plate separated by an oil film of thickness $1.5\\,\\text{mm}$ and dynamic viscosity $\\mu = 0.8\\,\\text{N}\\cdot\\text{s/m}^2$. Calculate the required pulling force.",
       "marks": "3+5",
       "years": [
@@ -23,7 +25,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Fluid Properties, Hydrostatic Pressure & Buoyancy",
+      "chapter": "Chapter 1: Fluid Properties & Fluid Statics (Hydrostatic Pressure on Surfaces)",
       "text": "Derive an expression for the total hydrostatic force $F = \\rho g A \\bar{h}$ and depth of Center of Pressure $h^* = \\bar{h} + \\frac{I_G \\sin^2\\theta}{A \\bar{h}}$ on an inclined plane surface submerged in a liquid of density $\\rho$.",
       "marks": "3+5",
       "years": [
@@ -36,7 +38,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Fluid Properties, Hydrostatic Pressure & Buoyancy",
+      "chapter": "Chapter 2: Buoyancy, Floatation & Metacentric Height",
       "text": "Define Metacenter and Metacentric Height ($GM$). Derive the analytical expression for Metacentric Height of a floating body: $GM = \\frac{I}{\\forall} - BG$. Explain the conditions for stable, unstable, and neutral equilibrium of floating and submerged bodies.",
       "marks": "3+5",
       "years": [
@@ -49,7 +51,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Fluid Kinematics (Continuity, Stream Function & Velocity Potential)",
+      "chapter": "Chapter 3: Fluid Kinematics (Continuity Equation, Velocity Potential)",
       "text": "Differentiate between: (a) Steady and Unsteady flow, (b) Uniform and Non-uniform flow, (c) Laminar and Turbulent flow, (d) Rotational and Irrotational flow. Derive the 3D Continuity Equation in Cartesian coordinates for compressible and incompressible fluids: $\\frac{\\partial \\rho}{\\partial t} + \\nabla \\cdot (\\rho \\mathbf{V}) = 0$.",
       "marks": "3+5",
       "years": [
@@ -62,7 +64,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Fluid Kinematics (Continuity, Stream Function & Velocity Potential)",
+      "chapter": "Chapter 3: Fluid Kinematics (Continuity Equation, Velocity Potential)",
       "text": "Define Stream Function ($\\psi$) and Velocity Potential Function ($\\phi$). Prove that streamlines and equipotential lines intersect orthogonally everywhere ($m_1 m_2 = -1$). Given $\\phi = x(2y - 1)$, determine whether the flow is irrotational and obtain the corresponding stream function $\\psi$.",
       "marks": "3+5",
       "years": [
@@ -75,7 +77,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Fluid Dynamics, Euler & Bernoulli Equations with Applications",
+      "chapter": "Chapter 4: Fluid Dynamics (Euler & Bernoulli Equations)",
       "text": "Derive Euler's Equation of Motion along a streamline: $\\frac{dp}{\\rho} + v\\,dv + g\\,dz = 0$. Integrate it to obtain Bernoulli's Equation $\\frac{p}{\\rho g} + \\frac{v^2}{2g} + z = \\text{constant}$ and state all underlying assumptions.",
       "marks": "4+4",
       "years": [
@@ -88,7 +90,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Fluid Dynamics, Euler & Bernoulli Equations with Applications",
+      "chapter": "Chapter 5: Flow Measurement (Venturimeter, Orifice Plate, Weirs & Notches)",
       "text": "Explain the principle and construction of a Venturimeter. Derive an expression for the theoretical and actual discharge through a horizontal Venturimeter: $Q_{act} = C_d \\frac{a_1 a_2}{\\sqrt{a_1^2 - a_2^2}} \\sqrt{2gh}$.",
       "marks": "3+5",
       "years": [
@@ -101,7 +103,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Viscous Flow Through Pipes & Energy Losses",
+      "chapter": "Chapter 7: Viscous Flow & Flow in Closed Conduits",
       "text": "Derive the Hagen-Poiseuille equation for fully developed laminar viscous flow through a circular pipe: $Q = \\frac{\\pi \\Delta p \\, D^4}{128 \\mu L}$. Show that the velocity profile is parabolic ($u(r) = u_{max}(1 - r^2/R^2)$) and maximum velocity is twice the average velocity ($u_{max} = 2\\bar{u}$).",
       "marks": "8",
       "years": [
@@ -114,7 +116,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Viscous Flow Through Pipes & Energy Losses",
+      "chapter": "Chapter 3: Fluid Kinematics (Continuity Equation, Velocity Potential)",
       "text": "Derive Darcy-Weisbach equation for major head loss due to pipe friction: $h_f = \\frac{f L v^2}{2 g D}$. Explain minor losses (Sudden enlargement $h_e = \\frac{(v_1 - v_2)^2}{2g}$, Sudden contraction, Entrance, Exit, Bends). Draw the Total Energy Line (TEL) and Hydraulic Gradient Line (HGL) for a pipe system connecting two reservoirs.",
       "marks": "4+4",
       "years": [
@@ -127,7 +129,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Dimensional Analysis, Similitude & Boundary Layer Theory",
+      "chapter": "Chapter 6: Dimensional Analysis & Similitude (Buckingham Pi Theorem)",
       "text": "State Buckingham's $\\pi$-Theorem. The resisting force $F$ on a supersonic aircraft depends on length $l$, velocity $v$, density $\\rho$, dynamic viscosity $\\mu$, and bulk modulus of elasticity $K$. Show by dimensional analysis that $F = \\rho l^2 v^2 \\phi\\left(\\frac{\\mu}{\\rho v l}, \\frac{K}{\\rho v^2}\\right) = \\rho l^2 v^2 \\phi(Re, Ma)$.",
       "marks": "3+5",
       "years": [
@@ -140,8 +142,8 @@
       "frequency": 5
     },
     {
-      "chapter": "Dimensional Analysis, Similitude & Boundary Layer Theory",
-      "text": "Explain Boundary Layer theory along a flat plate. Define boundary layer thickness $\\delta$, displacement thickness $\\delta^* = \\int_0^\\delta (1 - \\frac{u}{U})\\,dy$, momentum thickness $\\theta = \\int_0^\\delta \\frac{u}{U}(1 - \\frac{u}{U})\\,dy$, and energy thickness $\\delta^{**}$. State von Kármán momentum integral equation.",
+      "chapter": "Chapter 3: Fluid Kinematics (Continuity Equation, Velocity Potential)",
+      "text": "Explain Boundary Layer theory along a flat plate. Define boundary layer thickness $\\delta$, displacement thickness $\\delta^* = \\int_0^\\delta (1 - \\frac{u}{U})\\,dy$, momentum thickness $\\theta = \\int_0^\\delta \\frac{u}{U}(1 - \\frac{u}{U})\\,dy$, and energy thickness $\\delta^{**}$. State von K\u00e1rm\u00e1n momentum integral equation.",
       "marks": "4+4",
       "years": [
         "2083",
@@ -153,7 +155,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Fluid Dynamics, Euler & Bernoulli Equations with Applications",
+      "chapter": "Chapter 7: Viscous Flow & Flow in Closed Conduits",
       "text": "Explain the working of a Pitot Tube and Pitot-Static Tube to measure flow velocity in a pipe. Derive the velocity formula $v = C_v \\sqrt{2gh}$ considering manometer deflection $x$.",
       "marks": "6",
       "years": [
@@ -165,7 +167,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Fluid Properties, Hydrostatic Pressure & Buoyancy",
+      "chapter": "Chapter 1: Fluid Properties & Fluid Statics (Hydrostatic Pressure on Surfaces)",
       "text": "A practical engineering system operating under Fluid Properties, Hydrostatic Pressure & Buoyancy is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -177,7 +179,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Fluid Kinematics (Continuity, Stream Function & Velocity Potential)",
+      "chapter": "Chapter 3: Fluid Kinematics (Continuity Equation, Velocity Potential)",
       "text": "A practical engineering system operating under Fluid Kinematics (Continuity, Stream Function & Velocity Potential) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -189,7 +191,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Fluid Dynamics, Euler & Bernoulli Equations with Applications",
+      "chapter": "Chapter 4: Fluid Dynamics (Euler & Bernoulli Equations)",
       "text": "A practical engineering system operating under Fluid Dynamics, Euler & Bernoulli Equations with Applications is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -201,7 +203,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Viscous Flow Through Pipes & Energy Losses",
+      "chapter": "Chapter 7: Viscous Flow & Flow in Closed Conduits",
       "text": "A practical engineering system operating under Viscous Flow Through Pipes & Energy Losses is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -213,7 +215,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Dimensional Analysis, Similitude & Boundary Layer Theory",
+      "chapter": "Chapter 6: Dimensional Analysis & Similitude (Buckingham Pi Theorem)",
       "text": "A practical engineering system operating under Dimensional Analysis, Similitude & Boundary Layer Theory is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -225,7 +227,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Fluid Properties, Hydrostatic Pressure & Buoyancy",
+      "chapter": "Chapter 1: Fluid Properties & Fluid Statics (Hydrostatic Pressure on Surfaces)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Fluid Properties, Hydrostatic Pressure & Buoyancy. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -236,7 +238,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Fluid Properties, Hydrostatic Pressure & Buoyancy",
+      "chapter": "Chapter 1: Fluid Properties & Fluid Statics (Hydrostatic Pressure on Surfaces)",
       "text": "Solve the standard numerical problem for Fluid Properties, Hydrostatic Pressure & Buoyancy using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -247,7 +249,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Fluid Kinematics (Continuity, Stream Function & Velocity Potential)",
+      "chapter": "Chapter 3: Fluid Kinematics (Continuity Equation, Velocity Potential)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Fluid Kinematics (Continuity, Stream Function & Velocity Potential). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -258,7 +260,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Fluid Kinematics (Continuity, Stream Function & Velocity Potential)",
+      "chapter": "Chapter 3: Fluid Kinematics (Continuity Equation, Velocity Potential)",
       "text": "Solve the standard numerical problem for Fluid Kinematics (Continuity, Stream Function & Velocity Potential) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -269,7 +271,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Fluid Dynamics, Euler & Bernoulli Equations with Applications",
+      "chapter": "Chapter 4: Fluid Dynamics (Euler & Bernoulli Equations)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Fluid Dynamics, Euler & Bernoulli Equations with Applications. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -280,7 +282,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Fluid Dynamics, Euler & Bernoulli Equations with Applications",
+      "chapter": "Chapter 4: Fluid Dynamics (Euler & Bernoulli Equations)",
       "text": "Solve the standard numerical problem for Fluid Dynamics, Euler & Bernoulli Equations with Applications using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -291,7 +293,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Viscous Flow Through Pipes & Energy Losses",
+      "chapter": "Chapter 7: Viscous Flow & Flow in Closed Conduits",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Viscous Flow Through Pipes & Energy Losses. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -302,7 +304,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Viscous Flow Through Pipes & Energy Losses",
+      "chapter": "Chapter 7: Viscous Flow & Flow in Closed Conduits",
       "text": "Solve the standard numerical problem for Viscous Flow Through Pipes & Energy Losses using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -313,7 +315,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Dimensional Analysis, Similitude & Boundary Layer Theory",
+      "chapter": "Chapter 6: Dimensional Analysis & Similitude (Buckingham Pi Theorem)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Dimensional Analysis, Similitude & Boundary Layer Theory. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -324,7 +326,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Dimensional Analysis, Similitude & Boundary Layer Theory",
+      "chapter": "Chapter 6: Dimensional Analysis & Similitude (Buckingham Pi Theorem)",
       "text": "Solve the standard numerical problem for Dimensional Analysis, Similitude & Boundary Layer Theory using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -335,7 +337,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Fluid Properties, Hydrostatic Pressure & Buoyancy",
+      "chapter": "Chapter 1: Fluid Properties & Fluid Statics (Hydrostatic Pressure on Surfaces)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Fluid Properties, Hydrostatic Pressure & Buoyancy. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -345,7 +347,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Fluid Properties, Hydrostatic Pressure & Buoyancy",
+      "chapter": "Chapter 1: Fluid Properties & Fluid Statics (Hydrostatic Pressure on Surfaces)",
       "text": "State and prove the classical theorems and stability criteria associated with Fluid Properties, Hydrostatic Pressure & Buoyancy. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -355,7 +357,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Fluid Kinematics (Continuity, Stream Function & Velocity Potential)",
+      "chapter": "Chapter 3: Fluid Kinematics (Continuity Equation, Velocity Potential)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Fluid Kinematics (Continuity, Stream Function & Velocity Potential). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -365,7 +367,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Fluid Kinematics (Continuity, Stream Function & Velocity Potential)",
+      "chapter": "Chapter 3: Fluid Kinematics (Continuity Equation, Velocity Potential)",
       "text": "State and prove the classical theorems and stability criteria associated with Fluid Kinematics (Continuity, Stream Function & Velocity Potential). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -375,7 +377,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Fluid Dynamics, Euler & Bernoulli Equations with Applications",
+      "chapter": "Chapter 4: Fluid Dynamics (Euler & Bernoulli Equations)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Fluid Dynamics, Euler & Bernoulli Equations with Applications. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -385,7 +387,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Fluid Dynamics, Euler & Bernoulli Equations with Applications",
+      "chapter": "Chapter 4: Fluid Dynamics (Euler & Bernoulli Equations)",
       "text": "State and prove the classical theorems and stability criteria associated with Fluid Dynamics, Euler & Bernoulli Equations with Applications. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -395,7 +397,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Viscous Flow Through Pipes & Energy Losses",
+      "chapter": "Chapter 7: Viscous Flow & Flow in Closed Conduits",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Viscous Flow Through Pipes & Energy Losses. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -405,7 +407,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Viscous Flow Through Pipes & Energy Losses",
+      "chapter": "Chapter 7: Viscous Flow & Flow in Closed Conduits",
       "text": "State and prove the classical theorems and stability criteria associated with Viscous Flow Through Pipes & Energy Losses. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -415,7 +417,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Dimensional Analysis, Similitude & Boundary Layer Theory",
+      "chapter": "Chapter 6: Dimensional Analysis & Similitude (Buckingham Pi Theorem)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Dimensional Analysis, Similitude & Boundary Layer Theory. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -425,7 +427,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Dimensional Analysis, Similitude & Boundary Layer Theory",
+      "chapter": "Chapter 6: Dimensional Analysis & Similitude (Buckingham Pi Theorem)",
       "text": "State and prove the classical theorems and stability criteria associated with Dimensional Analysis, Similitude & Boundary Layer Theory. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -435,7 +437,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Fluid Properties, Hydrostatic Pressure & Buoyancy",
+      "chapter": "Chapter 1: Fluid Properties & Fluid Statics (Hydrostatic Pressure on Surfaces)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Fluid Properties, Hydrostatic Pressure & Buoyancy.",
       "marks": "6",
       "years": [
@@ -444,7 +446,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Fluid Properties, Hydrostatic Pressure & Buoyancy",
+      "chapter": "Chapter 1: Fluid Properties & Fluid Statics (Hydrostatic Pressure on Surfaces)",
       "text": "Write short technical notes on: (a) Key design parameters in Fluid Properties, Hydrostatic Pressure & Buoyancy, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -453,7 +455,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Fluid Kinematics (Continuity, Stream Function & Velocity Potential)",
+      "chapter": "Chapter 3: Fluid Kinematics (Continuity Equation, Velocity Potential)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Fluid Kinematics (Continuity, Stream Function & Velocity Potential).",
       "marks": "6",
       "years": [
@@ -462,7 +464,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Fluid Kinematics (Continuity, Stream Function & Velocity Potential)",
+      "chapter": "Chapter 3: Fluid Kinematics (Continuity Equation, Velocity Potential)",
       "text": "Write short technical notes on: (a) Key design parameters in Fluid Kinematics (Continuity, Stream Function & Velocity Potential), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -471,7 +473,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Fluid Dynamics, Euler & Bernoulli Equations with Applications",
+      "chapter": "Chapter 4: Fluid Dynamics (Euler & Bernoulli Equations)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Fluid Dynamics, Euler & Bernoulli Equations with Applications.",
       "marks": "6",
       "years": [
@@ -480,7 +482,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Fluid Dynamics, Euler & Bernoulli Equations with Applications",
+      "chapter": "Chapter 4: Fluid Dynamics (Euler & Bernoulli Equations)",
       "text": "Write short technical notes on: (a) Key design parameters in Fluid Dynamics, Euler & Bernoulli Equations with Applications, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -489,7 +491,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Viscous Flow Through Pipes & Energy Losses",
+      "chapter": "Chapter 7: Viscous Flow & Flow in Closed Conduits",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Viscous Flow Through Pipes & Energy Losses.",
       "marks": "6",
       "years": [
@@ -498,7 +500,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Viscous Flow Through Pipes & Energy Losses",
+      "chapter": "Chapter 7: Viscous Flow & Flow in Closed Conduits",
       "text": "Write short technical notes on: (a) Key design parameters in Viscous Flow Through Pipes & Energy Losses, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -507,7 +509,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Dimensional Analysis, Similitude & Boundary Layer Theory",
+      "chapter": "Chapter 6: Dimensional Analysis & Similitude (Buckingham Pi Theorem)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Dimensional Analysis, Similitude & Boundary Layer Theory.",
       "marks": "6",
       "years": [
@@ -516,7 +518,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Dimensional Analysis, Similitude & Boundary Layer Theory",
+      "chapter": "Chapter 6: Dimensional Analysis & Similitude (Buckingham Pi Theorem)",
       "text": "Write short technical notes on: (a) Key design parameters in Dimensional Analysis, Similitude & Boundary Layer Theory, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
