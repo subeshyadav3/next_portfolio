@@ -80,7 +80,7 @@ function driveDownloadUrl(id: string): string {
 }
 
 function driveViewUrl(id: string): string {
-  return `https://drive.google.com/file/d/${id}/view`;
+  return `https://drive.google.com/file/d/${id}/preview`;
 }
 
 export function toPaper(
