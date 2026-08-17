@@ -1,15 +1,15 @@
 {
   "subject": "Probability and Statistics",
   "chapters": [
-    "Probability Concepts, Bayes' Theorem & Random Variables",
-    "Discrete & Continuous Distributions (Binomial, Poisson, Normal)",
-    "Bivariate Distributions, Correlation & Linear Regression",
-    "Sampling Distributions, Central Limit Theorem & Estimation",
-    "Hypothesis Testing ($Z, t, \\chi^2, F$-Tests) & ANOVA"
+    "Chapter 1: Descriptive Statistics & Probability Axioms (Conditional Probability, Bayes Theorem)",
+    "Chapter 3: Probability Distributions (Binomial, Poisson, Normal, Exponential, Uniform)",
+    "Chapter 4: Sampling Distributions & Central Limit Theorem (t-Distribution, Chi-Square, F-Distribution)",
+    "Chapter 5: Estimation & Hypothesis Testing (z-Test, t-Test, Chi-Square Goodness of Fit, ANOVA)",
+    "Chapter 6: Simple & Multiple Linear Regression, Correlation Analysis"
   ],
   "questions": [
     {
-      "chapter": "Probability Concepts, Bayes' Theorem & Random Variables",
+      "chapter": "Chapter 1: Descriptive Statistics & Probability Axioms (Conditional Probability, Bayes Theorem)",
       "text": "State Axioms of Probability. State and prove Bayes' Theorem. A manufacturing plant has three machines $M_1, M_2, M_3$ producing $20\\%, 30\\%$, and $50\\%$ of total items. Defective rates are $1\\%, 2\\%, 3\\%$. An item selected at random is found defective. Find the probability it was produced by machine $M_3$.",
       "marks": "3+5",
       "years": [
@@ -22,7 +22,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Probability Concepts, Bayes' Theorem & Random Variables",
+      "chapter": "Chapter 1: Descriptive Statistics & Probability Axioms (Conditional Probability, Bayes Theorem)",
       "text": "Define Probability Density Function (PDF) $f(x)$ and Cumulative Distribution Function (CDF) $F(x)$. A continuous random variable $X$ has PDF $f(x) = k x(2-x)$ for $0 \\le x \\le 2$. Find: (a) Constant $k$, (b) Mean $\\mu = E[X]$, (c) Variance $\\sigma^2 = \\text{Var}(X)$, and (d) $P(0.5 \\le X \\le 1.5)$.",
       "marks": "2+6",
       "years": [
@@ -35,7 +35,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Discrete & Continuous Distributions (Binomial, Poisson, Normal)",
+      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem (t-Distribution, Chi-Square, F-Distribution)",
       "text": "State the conditions for Binomial Distribution ($P(X=x) = \\binom{n}{x}p^x q^{n-x}$). Derive its Mean ($\\mu = np$) and Variance ($\\sigma^2 = npq$). Show that Poisson distribution is the limiting form of binomial distribution when $n \\to \\infty, p \\to 0$ such that $np = \\lambda$.",
       "marks": "4+6",
       "years": [
@@ -48,7 +48,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Discrete & Continuous Distributions (Binomial, Poisson, Normal)",
+      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem (t-Distribution, Chi-Square, F-Distribution)",
       "text": "Explain the Standard Normal Distribution ( = \\frac{X-\\mu}{\\sigma} \\sim N(0, 1)$). The compressive strength of concrete cubes is normally distributed with mean $\\mu = 25\\,\\text{MPa}$ and standard deviation $\\sigma = 3.5\\,\\text{MPa}$. Find the percentage of cubes with compressive strength: (a) Greater than $30\\,\\text{MPa}$, (b) Less than $20\\,\\text{MPa}$, and (c) Between $22\\,\\text{MPa}$ and $28\\,\\text{MPa}$.",
       "marks": "8",
       "years": [
@@ -61,7 +61,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Bivariate Distributions, Correlation & Linear Regression",
+      "chapter": "Chapter 6: Simple & Multiple Linear Regression, Correlation Analysis",
       "text": "Define Karl Pearson's Coefficient of Correlation ($r = \\frac{\\text{Cov}(X, Y)}{\\sigma_x \\sigma_y}$). Derive the equations of the two regression lines: $Y$ on $X$ ($y - \\bar{y} = b_{yx}(x - \\bar{x})$) and $X$ on $Y$ ($x - \\bar{x} = b_{xy}(y - \\bar{y})$). Prove that $r = \\pm\\sqrt{b_{yx} b_{xy}}$ and $|r| \\le 1$.",
       "marks": "4+6",
       "years": [
@@ -74,7 +74,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Sampling Distributions, Central Limit Theorem & Estimation",
+      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem (t-Distribution, Chi-Square, F-Distribution)",
       "text": "State the Central Limit Theorem (CLT). Explain Sampling Distributions of Sample Mean $\\bar{X}$ and Sample Proportion $\\hat{p}$. Differentiate between Point Estimation and Interval Estimation. Construct a $95\\%$ confidence interval for the population mean $\\mu$ for large and small samples.",
       "marks": "4+4",
       "years": [
@@ -87,7 +87,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Hypothesis Testing ($Z, t, \\chi^2, F$-Tests) & ANOVA",
+      "chapter": "Chapter 5: Estimation & Hypothesis Testing (z-Test, t-Test, Chi-Square Goodness of Fit, ANOVA)",
       "text": "Explain Type I Error ($\\alpha$), Type II Error ($\\beta$), Level of Significance, Critical Region, and $p$-value in hypothesis testing. Conduct a two-sample Student's $t$-test to determine if there is a significant difference between mean tensile strengths of steel bars produced by two different manufacturing processes at $5\\%$ significance level.",
       "marks": "4+6",
       "years": [
@@ -100,7 +100,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Hypothesis Testing ($Z, t, \\chi^2, F$-Tests) & ANOVA",
+      "chapter": "Chapter 5: Estimation & Hypothesis Testing (z-Test, t-Test, Chi-Square Goodness of Fit, ANOVA)",
       "text": "Explain Chi-Square Test for: (a) Goodness of Fit ($\\chi^2 = \\sum \\frac{(O_i - E_i)^2}{E_i}$ with $\\nu = k - 1 - m$ degrees of freedom), and (b) Independence of Attributes in a $2 \\times 2$ contingency table with Yates' continuity correction.",
       "marks": "4+6",
       "years": [
@@ -113,7 +113,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Hypothesis Testing ($Z, t, \\chi^2, F$-Tests) & ANOVA",
+      "chapter": "Chapter 5: Estimation & Hypothesis Testing (z-Test, t-Test, Chi-Square Goodness of Fit, ANOVA)",
       "text": "Explain One-Way Analysis of Variance (ANOVA). Formulate the ANOVA table showing Between-Groups and Within-Groups Sum of Squares ($SSB, SSW$), degrees of freedom, Mean Squares ($MSB, MSW$), and $F$-statistic.",
       "marks": "8",
       "years": [
@@ -125,7 +125,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Probability Concepts, Bayes' Theorem & Random Variables",
+      "chapter": "Chapter 1: Descriptive Statistics & Probability Axioms (Conditional Probability, Bayes Theorem)",
       "text": "A practical engineering system operating under Probability Concepts, Bayes' Theorem & Random Variables is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -137,7 +137,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Discrete & Continuous Distributions (Binomial, Poisson, Normal)",
+      "chapter": "Chapter 3: Probability Distributions (Binomial, Poisson, Normal, Exponential, Uniform)",
       "text": "A practical engineering system operating under Discrete & Continuous Distributions (Binomial, Poisson, Normal) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -149,7 +149,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Bivariate Distributions, Correlation & Linear Regression",
+      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem (t-Distribution, Chi-Square, F-Distribution)",
       "text": "A practical engineering system operating under Bivariate Distributions, Correlation & Linear Regression is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -161,7 +161,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Sampling Distributions, Central Limit Theorem & Estimation",
+      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem (t-Distribution, Chi-Square, F-Distribution)",
       "text": "A practical engineering system operating under Sampling Distributions, Central Limit Theorem & Estimation is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -173,7 +173,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Hypothesis Testing ($Z, t, \\chi^2, F$-Tests) & ANOVA",
+      "chapter": "Chapter 5: Estimation & Hypothesis Testing (z-Test, t-Test, Chi-Square Goodness of Fit, ANOVA)",
       "text": "A practical engineering system operating under Hypothesis Testing ($Z, t, \\chi^2, F$-Tests) & ANOVA is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -185,7 +185,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Probability Concepts, Bayes' Theorem & Random Variables",
+      "chapter": "Chapter 1: Descriptive Statistics & Probability Axioms (Conditional Probability, Bayes Theorem)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Probability Concepts, Bayes' Theorem & Random Variables. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -196,7 +196,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Probability Concepts, Bayes' Theorem & Random Variables",
+      "chapter": "Chapter 1: Descriptive Statistics & Probability Axioms (Conditional Probability, Bayes Theorem)",
       "text": "Solve the standard numerical problem for Probability Concepts, Bayes' Theorem & Random Variables using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -207,7 +207,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Discrete & Continuous Distributions (Binomial, Poisson, Normal)",
+      "chapter": "Chapter 3: Probability Distributions (Binomial, Poisson, Normal, Exponential, Uniform)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Discrete & Continuous Distributions (Binomial, Poisson, Normal). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -218,7 +218,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Discrete & Continuous Distributions (Binomial, Poisson, Normal)",
+      "chapter": "Chapter 3: Probability Distributions (Binomial, Poisson, Normal, Exponential, Uniform)",
       "text": "Solve the standard numerical problem for Discrete & Continuous Distributions (Binomial, Poisson, Normal) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -229,7 +229,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Bivariate Distributions, Correlation & Linear Regression",
+      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem (t-Distribution, Chi-Square, F-Distribution)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Bivariate Distributions, Correlation & Linear Regression. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -240,7 +240,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Bivariate Distributions, Correlation & Linear Regression",
+      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem (t-Distribution, Chi-Square, F-Distribution)",
       "text": "Solve the standard numerical problem for Bivariate Distributions, Correlation & Linear Regression using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -251,7 +251,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Sampling Distributions, Central Limit Theorem & Estimation",
+      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem (t-Distribution, Chi-Square, F-Distribution)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Sampling Distributions, Central Limit Theorem & Estimation. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -262,7 +262,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Sampling Distributions, Central Limit Theorem & Estimation",
+      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem (t-Distribution, Chi-Square, F-Distribution)",
       "text": "Solve the standard numerical problem for Sampling Distributions, Central Limit Theorem & Estimation using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -273,7 +273,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Hypothesis Testing ($Z, t, \\chi^2, F$-Tests) & ANOVA",
+      "chapter": "Chapter 5: Estimation & Hypothesis Testing (z-Test, t-Test, Chi-Square Goodness of Fit, ANOVA)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Hypothesis Testing ($Z, t, \\chi^2, F$-Tests) & ANOVA. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -284,7 +284,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Hypothesis Testing ($Z, t, \\chi^2, F$-Tests) & ANOVA",
+      "chapter": "Chapter 5: Estimation & Hypothesis Testing (z-Test, t-Test, Chi-Square Goodness of Fit, ANOVA)",
       "text": "Solve the standard numerical problem for Hypothesis Testing ($Z, t, \\chi^2, F$-Tests) & ANOVA using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -295,7 +295,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Probability Concepts, Bayes' Theorem & Random Variables",
+      "chapter": "Chapter 1: Descriptive Statistics & Probability Axioms (Conditional Probability, Bayes Theorem)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Probability Concepts, Bayes' Theorem & Random Variables. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -305,7 +305,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Probability Concepts, Bayes' Theorem & Random Variables",
+      "chapter": "Chapter 1: Descriptive Statistics & Probability Axioms (Conditional Probability, Bayes Theorem)",
       "text": "State and prove the classical theorems and stability criteria associated with Probability Concepts, Bayes' Theorem & Random Variables. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -315,7 +315,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Discrete & Continuous Distributions (Binomial, Poisson, Normal)",
+      "chapter": "Chapter 3: Probability Distributions (Binomial, Poisson, Normal, Exponential, Uniform)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Discrete & Continuous Distributions (Binomial, Poisson, Normal). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -325,7 +325,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Discrete & Continuous Distributions (Binomial, Poisson, Normal)",
+      "chapter": "Chapter 3: Probability Distributions (Binomial, Poisson, Normal, Exponential, Uniform)",
       "text": "State and prove the classical theorems and stability criteria associated with Discrete & Continuous Distributions (Binomial, Poisson, Normal). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -335,7 +335,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Bivariate Distributions, Correlation & Linear Regression",
+      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem (t-Distribution, Chi-Square, F-Distribution)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Bivariate Distributions, Correlation & Linear Regression. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -345,7 +345,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Bivariate Distributions, Correlation & Linear Regression",
+      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem (t-Distribution, Chi-Square, F-Distribution)",
       "text": "State and prove the classical theorems and stability criteria associated with Bivariate Distributions, Correlation & Linear Regression. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -355,7 +355,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Sampling Distributions, Central Limit Theorem & Estimation",
+      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem (t-Distribution, Chi-Square, F-Distribution)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Sampling Distributions, Central Limit Theorem & Estimation. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -365,7 +365,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Sampling Distributions, Central Limit Theorem & Estimation",
+      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem (t-Distribution, Chi-Square, F-Distribution)",
       "text": "State and prove the classical theorems and stability criteria associated with Sampling Distributions, Central Limit Theorem & Estimation. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -375,7 +375,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Hypothesis Testing ($Z, t, \\chi^2, F$-Tests) & ANOVA",
+      "chapter": "Chapter 5: Estimation & Hypothesis Testing (z-Test, t-Test, Chi-Square Goodness of Fit, ANOVA)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Hypothesis Testing ($Z, t, \\chi^2, F$-Tests) & ANOVA. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -385,7 +385,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Hypothesis Testing ($Z, t, \\chi^2, F$-Tests) & ANOVA",
+      "chapter": "Chapter 5: Estimation & Hypothesis Testing (z-Test, t-Test, Chi-Square Goodness of Fit, ANOVA)",
       "text": "State and prove the classical theorems and stability criteria associated with Hypothesis Testing ($Z, t, \\chi^2, F$-Tests) & ANOVA. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -395,7 +395,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Probability Concepts, Bayes' Theorem & Random Variables",
+      "chapter": "Chapter 1: Descriptive Statistics & Probability Axioms (Conditional Probability, Bayes Theorem)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Probability Concepts, Bayes' Theorem & Random Variables.",
       "marks": "6",
       "years": [
@@ -404,7 +404,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Probability Concepts, Bayes' Theorem & Random Variables",
+      "chapter": "Chapter 1: Descriptive Statistics & Probability Axioms (Conditional Probability, Bayes Theorem)",
       "text": "Write short technical notes on: (a) Key design parameters in Probability Concepts, Bayes' Theorem & Random Variables, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -413,7 +413,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Discrete & Continuous Distributions (Binomial, Poisson, Normal)",
+      "chapter": "Chapter 3: Probability Distributions (Binomial, Poisson, Normal, Exponential, Uniform)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Discrete & Continuous Distributions (Binomial, Poisson, Normal).",
       "marks": "6",
       "years": [
@@ -422,7 +422,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Discrete & Continuous Distributions (Binomial, Poisson, Normal)",
+      "chapter": "Chapter 3: Probability Distributions (Binomial, Poisson, Normal, Exponential, Uniform)",
       "text": "Write short technical notes on: (a) Key design parameters in Discrete & Continuous Distributions (Binomial, Poisson, Normal), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -431,7 +431,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Bivariate Distributions, Correlation & Linear Regression",
+      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem (t-Distribution, Chi-Square, F-Distribution)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Bivariate Distributions, Correlation & Linear Regression.",
       "marks": "6",
       "years": [
@@ -440,7 +440,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Bivariate Distributions, Correlation & Linear Regression",
+      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem (t-Distribution, Chi-Square, F-Distribution)",
       "text": "Write short technical notes on: (a) Key design parameters in Bivariate Distributions, Correlation & Linear Regression, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -449,7 +449,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Sampling Distributions, Central Limit Theorem & Estimation",
+      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem (t-Distribution, Chi-Square, F-Distribution)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Sampling Distributions, Central Limit Theorem & Estimation.",
       "marks": "6",
       "years": [
@@ -458,7 +458,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Sampling Distributions, Central Limit Theorem & Estimation",
+      "chapter": "Chapter 4: Sampling Distributions & Central Limit Theorem (t-Distribution, Chi-Square, F-Distribution)",
       "text": "Write short technical notes on: (a) Key design parameters in Sampling Distributions, Central Limit Theorem & Estimation, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -467,7 +467,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Hypothesis Testing ($Z, t, \\chi^2, F$-Tests) & ANOVA",
+      "chapter": "Chapter 5: Estimation & Hypothesis Testing (z-Test, t-Test, Chi-Square Goodness of Fit, ANOVA)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Hypothesis Testing ($Z, t, \\chi^2, F$-Tests) & ANOVA.",
       "marks": "6",
       "years": [
@@ -476,7 +476,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Hypothesis Testing ($Z, t, \\chi^2, F$-Tests) & ANOVA",
+      "chapter": "Chapter 5: Estimation & Hypothesis Testing (z-Test, t-Test, Chi-Square Goodness of Fit, ANOVA)",
       "text": "Write short technical notes on: (a) Key design parameters in Hypothesis Testing ($Z, t, \\chi^2, F$-Tests) & ANOVA, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [

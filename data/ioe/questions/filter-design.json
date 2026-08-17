@@ -2,11 +2,14 @@
   "subject": "Filter Design",
   "generated": "2026-08-16T13:00:00.000Z",
   "chapters": [
-    "General"
+    "Chapter 1: Approximation Theory & Lowpass Prototype Filters (Butterworth, Chebyshev Type I & II, Elliptic, Bessel)",
+    "Chapter 3: Active RC Filter Realization (Sallen-Key, Multiple-Feedback, State-Variable, Biquad Topologies)",
+    "Chapter 4: Switched-Capacitor Filters & Continuous-Time Filter Topologies",
+    "Chapter 5: High-Frequency LC & Active Inductor Filter Design"
   ],
   "questions": [
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "What are the significance of normalization and denormalization in filter design? Derive equation to calculate the new values of resistors, inductors and capacitors that will change [3-+4] the half-power frequency of a low pass filter from oo rad/s to wn rad/s",
       "marks": null,
       "years": [
@@ -15,7 +18,7 @@
       "frequency": 2
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 1: Approximation Theory & Lowpass Prototype Filters (Butterworth, Chebyshev Type I & II, Elliptic, Bessel)",
       "text": "What is the importance of all pass filters in delay equalization? Find the transfer function [2+3] of third order Bessel-Thomson low pass filter",
       "marks": null,
       "years": [
@@ -24,7 +27,7 @@
       "frequency": 2
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "What is Bruton transformation? Design the 4th order Butterworth low pass filter with half power frequency 20,000 rad/s and practically realizable elements using FDNR",
       "marks": "3+5",
       "years": [
@@ -33,14 +36,14 @@
       "frequency": 2
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "Design a fourth order Butterworth low pass filter having half power frequency of 4000 rad/s using Leapfrog simulation. [Use table 1]",
       "marks": "6",
       "years": [],
       "frequency": 2
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 3: Active RC Filter Realization (Sallen-Key, Multiple-Feedback, State-Variable, Biquad Topologies)",
       "text": "IIow can excess gain be compensated in Sallen-key circuit? Explain with necessary derivations and diagrams. 17) 710. Perform the sensitivity analysis of qualit! factor in Tow Thomas LPF\" t3l",
       "marks": null,
       "years": [
@@ -49,7 +52,7 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 4: Switched-Capacitor Filters & Continuous-Time Filter Topologies",
       "text": "What is the significance of using current mode filters in the electronic circuit? With basio J block diagram and characteristic equations explain the concepts of first-generation current ICCI) and second-generation current conveyor (CC[)- [l+3] \"oorr\"yor ***",
       "marks": null,
       "years": [
@@ -58,35 +61,35 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 3: Active RC Filter Realization (Sallen-Key, Multiple-Feedback, State-Variable, Biquad Topologies)",
       "text": "Draw the circuit diagram of Tow-Thomas Biquad circuit and derive its transfer function. Design a low pass filter using Tow Thomas Biquad circuit with poles at -450 + j 893.03 and dc gain of 1.5. The final circuit should contain practically realizable values",
       "marks": "8",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 4: Switched-Capacitor Filters & Continuous-Time Filter Topologies",
       "text": "What information do you get when the sensitivity of y with respect to x is O.1? Perform sensitivity analysis for center frequency oo of Tow Thomas low pass filter with respect to all the resistors and capacitors present in the circuit",
       "marks": "1+3",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "What is FDNR? How can you use FDNR to avoid the inductor in filter design? Explain. Design third order Butterworth low pass fiter having half power frequency 4000 rad/s using FDNR. (ReferTable)",
       "marks": "4+6",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 4: Switched-Capacitor Filters & Continuous-Time Filter Topologies",
       "text": "Why resistors. are replaced by switched capacitors in IC technology? How summer. inverting integrator and non-inverting integrator can be realized using switched capacitor? Explain with necessary diagrams and expressions. 12+41 Table: Elements values for doubly terminated Butterworth fiter normalization to. half power frequency of 1 rad/s. Vs L2 C3 L4",
       "marks": null,
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "What are the characteristics of idea filter? What is the importance of scaling in filter design? Derive the necessary expressions to determine the new values of circuit elements in the case of magnitude and frequency scaling",
       "marks": null,
       "years": [
@@ -95,7 +98,7 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 1: Approximation Theory & Lowpass Prototype Filters (Butterworth, Chebyshev Type I & II, Elliptic, Bessel)",
       "text": "Define zeros of transmission. How can zeros of transmission be realized in the circuits? [5] Explain with suitable diagrams",
       "marks": null,
       "years": [
@@ -104,7 +107,7 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "What information do you get when the value of reflection coefficient is zero? Design a third order Butterworth low pass filter using Resistively terminated lossless ladder with [1-+6] equal termination of 1Q. (Refer Table:1) $+8 using non inverting op-amp",
       "marks": null,
       "years": [
@@ -113,8 +116,8 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
-      "text": "Derive the transfer function of low pass sallen-key biquad filter (Refer Tabie :1) The half power frequency should be 10 KHz. Make the largest capacitance 0.01μF and overall [4+4] gain be 1. I0. Explain the importance of sensitivity analysis in the design of filter and perform the 171 sensitivity analysis of wo of lowpass sallen-Key biquad",
+      "chapter": "Chapter 3: Active RC Filter Realization (Sallen-Key, Multiple-Feedback, State-Variable, Biquad Topologies)",
+      "text": "Derive the transfer function of low pass sallen-key biquad filter (Refer Tabie :1) The half power frequency should be 10 KHz. Make the largest capacitance 0.01\u03bcF and overall [4+4] gain be 1. I0. Explain the importance of sensitivity analysis in the design of filter and perform the 171 sensitivity analysis of wo of lowpass sallen-Key biquad",
       "marks": null,
       "years": [
         "2081"
@@ -122,7 +125,7 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 3: Active RC Filter Realization (Sallen-Key, Multiple-Feedback, State-Variable, Biquad Topologies)",
       "text": "What is a constant delay filter? What is its significance? Derive a transfer function of a second order constant delay filter",
       "marks": "1+1+3",
       "years": [
@@ -131,7 +134,7 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "What are the applications of frequency transmission in filter design? How can you. obtain a high pass filter from a given low pass filter? Explain with a suitable example",
       "marks": "1+4",
       "years": [
@@ -140,7 +143,7 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 1: Approximation Theory & Lowpass Prototype Filters (Butterworth, Chebyshev Type I & II, Elliptic, Bessel)",
       "text": "What is zero shifting by partial removal of a pole? Explain with a suitable example",
       "marks": "5",
       "years": [
@@ -149,7 +152,7 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 1: Approximation Theory & Lowpass Prototype Filters (Butterworth, Chebyshev Type I & II, Elliptic, Bessel)",
       "text": "What is transmission coefficient? What information do we get from it? Derive the expression for reflection coefficient for a resistively terminated LC ladder network",
       "marks": null,
       "years": [
@@ -158,7 +161,7 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 3: Active RC Filter Realization (Sallen-Key, Multiple-Feedback, State-Variable, Biquad Topologies)",
       "text": "How is the excess gain compensated in Sallen-Key circuit? Explain with necessary",
       "marks": "5",
       "years": [
@@ -167,7 +170,7 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "618 F Fig: Butterworth filter at normalized frequency",
       "marks": null,
       "years": [
@@ -176,7 +179,7 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 3: Active RC Filter Realization (Sallen-Key, Multiple-Feedback, State-Variable, Biquad Topologies)",
       "text": "What is the importance of sensitivity analysis in filter design? Perform the sensitivity analysis of Wo of sallen-key lowpass biquad filter",
       "marks": null,
       "years": [
@@ -185,7 +188,7 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 4: Switched-Capacitor Filters & Continuous-Time Filter Topologies",
       "text": "Why do we need switched capacitor to simulate resister in MOS technology? How can you simulate a resister using switched capacitor? Explain with necessary derivations",
       "marks": "2+4",
       "years": [
@@ -194,7 +197,7 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "What is frequency transformation? Design a band stop filter having center frequency",
       "marks": "1+4",
       "years": [
@@ -203,7 +206,7 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 3: Active RC Filter Realization (Sallen-Key, Multiple-Feedback, State-Variable, Biquad Topologies)",
       "text": "What is Quality factor and center frequency of low pass biquad filter? Explain with suitable diagram. Realize following low pass filter transfer function using Tow Thomas",
       "marks": "3+5",
       "years": [
@@ -212,7 +215,7 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "Why is sensitivity analysis important in filter design? Perform the sensitivity analysis of [1+4] Oo in Tow Thomas low pass filter",
       "marks": null,
       "years": [
@@ -221,7 +224,7 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "Why is sensitivity analysis importanit in filter design? Perform the sensitivity analysis of Oo in Tow Thomas low pass filiter",
       "marks": null,
       "years": [
@@ -230,7 +233,7 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 3: Active RC Filter Realization (Sallen-Key, Multiple-Feedback, State-Variable, Biquad Topologies)",
       "text": "What information does the transmission coefficient revels in a system? Describe a second order Butterrworth low pass filter using lossless ladder with equal termination of 1Q2 (i.e",
       "marks": "1+5",
       "years": [
@@ -239,8 +242,8 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
-      "text": "Design a 4th order Butterworth LPF using cascade of two Sallenkey biquads having half power frequency of 10 kHz, using 0.1 μ F capacitors. Perform gain compensation if [8] necessary",
+      "chapter": "Chapter 3: Active RC Filter Realization (Sallen-Key, Multiple-Feedback, State-Variable, Biquad Topologies)",
+      "text": "Design a 4th order Butterworth LPF using cascade of two Sallenkey biquads having half power frequency of 10 kHz, using 0.1 \u03bc F capacitors. Perform gain compensation if [8] necessary",
       "marks": "4",
       "years": [
         "2079"
@@ -248,7 +251,7 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 3: Active RC Filter Realization (Sallen-Key, Multiple-Feedback, State-Variable, Biquad Topologies)",
       "text": "Explain the gain enhancement procedure in Sallen and Key biquad circuit",
       "marks": null,
       "years": [
@@ -257,211 +260,211 @@
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "Design a fourth order Butterworth low filter having half power frequency of 16000 rad/s using FDNR. [Refer Table 1]",
       "marks": "5",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "What are the merits and demerits of active filter as compared with passive filter? Explain. [5] Table 1 : Elements values for doubly terminated Butterworth filter normalized to half power frequency of 1 rad/s. L2 C5 C3 L4",
       "marks": null,
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "What is generalized impedance converter (GIC)? How can you simulate the grounded inductor in the passive filter using GIC? Realize the following passive filter to be active simulation of grounded inductors. Use .freguency scale factor Kp -- 2000 and also perform the magnitude scale to get practically realizable element values in your final circuit",
       "marks": "2+3+5",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "What is GIC? How can you simulate a grounded inductor? Design a fourth order Butterwarth highpass filter having w,-16,000 rad/s and practically suitable elements using simulated inductors. [Refer table 2]",
       "marks": "1+3+4",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 4: Switched-Capacitor Filters & Continuous-Time Filter Topologies",
       "text": "What is switched capacitor filter?.How summer, inverting integrator and non-inverting integrator can be realzied using switched capacitor? Explain with necessary diagrams and transferfunction. [1+5] Table 1: Pole Location for Butterworth Responses n=2 n=3 n=4 n-5. - 0.7071068",
       "marks": null,
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 3: Active RC Filter Realization (Sallen-Key, Multiple-Feedback, State-Variable, Biquad Topologies)",
       "text": "What is Sensitivity? What is the importance of sensitivity analysis in filter design? Perform sensitivity analysis of oo in Sallen-Key low pass filter",
       "marks": "1+1+4",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "What is gyrator? How can you simulate inductor using gyrator? Explain with necessary derivation",
       "marks": "1+4",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 3: Active RC Filter Realization (Sallen-Key, Multiple-Feedback, State-Variable, Biquad Topologies)",
       "text": "Draw the circuit diagram of Tow-Thomas low pass biqaud circuit and derive its transfer function. Design a second order low pass filter using Tow-Thomas biquad poles at -450t j893.03 and dc gain of 1.5. The final cireuit should consist practically realizable elements",
       "marks": "4+4",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 3: Active RC Filter Realization (Sallen-Key, Multiple-Feedback, State-Variable, Biquad Topologies)",
       "text": "How excess gain can be compensated in sallen key filter? Explain",
       "marks": "5",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 3: Active RC Filter Realization (Sallen-Key, Multiple-Feedback, State-Variable, Biquad Topologies)",
       "text": "Define sensitivity Perform sensitivity analysis of Tow-Thomas biquad low pass filter",
       "marks": "1+4",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "What is ideal gyrator? How can you simulate inductor using gyrator? Explain with necessary deriation",
       "marks": "1+4",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "Design the fourth order Butterworth low pass\" filter using leapfrag simulation. In your final design the half power frequency should be 10000 rad/s and practically realizable elements. [Refer table 2]",
       "marks": "7",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 4: Switched-Capacitor Filters & Continuous-Time Filter Topologies",
       "text": "What are the-applications of switched capacitor filter? Design a switched capacitor filter for following requirements",
       "marks": "6",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "What is generalized impedance converter (GIC)? Explain how inductors can be simulated using GIC? Simulate the following highpass filter by active simulation of grounded inductors such that oo is 4000 rad/s and [4+4] practically realizable elements. 1618F 05F",
       "marks": null,
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 4: Switched-Capacitor Filters & Continuous-Time Filter Topologies",
       "text": "What are the applications of switched capacitor filiters? Design the switched capacitor filter to realize the magnitude response given in figure 2",
       "marks": "2+5",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "What is sensitivity? Describe it's importance in filter design? Perform sensitivity analysis of quality factor in Tow Thomas Low Pass Filter",
       "marks": "6",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "What is GIC? How a GIC can be used to simulate a grounded inductor? Explain with necessary figures and derivations",
       "marks": "5",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 1: Approximation Theory & Lowpass Prototype Filters (Butterworth, Chebyshev Type I & II, Elliptic, Bessel)",
       "text": "The following circuit is a third-order Chebyshev lowpass filter. Simulate it using the leap- frog method. The final design should have wo - 4000 rad/s and practically realizable element values",
       "marks": null,
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 4: Switched-Capacitor Filters & Continuous-Time Filter Topologies",
       "text": "9941F 13Why.resistors.are. replaced by : switched .capacitor in IC.technology?How can you simulate a resistor using a switched capacitor? Explain with necessary derivations. Also draw the switched capacitor equivalent circuit for inverting summer lossy integration and non inverting integrator:: 173",
       "marks": null,
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 1: Approximation Theory & Lowpass Prototype Filters (Butterworth, Chebyshev Type I & II, Elliptic, Bessel)",
       "text": "Draw the circuit diagram of an generalized impedance converter. Derive the relationship between input and output current. How can it be used to simulate a grounded FDNR? Explain. 15]",
       "marks": null,
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "What is Frequercy Dependent Negative Resistor? How can it be used to avoid bulky [5] inductors in the design of your circuits? Explain with suitable examples",
       "marks": null,
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 3: Active RC Filter Realization (Sallen-Key, Multiple-Feedback, State-Variable, Biquad Topologies)",
       "text": "Using heapfrag method simulate the LC ladder circuit given in question number 4 to [6] obtain a low pass filter having passband of 6KHz and suitable element values",
       "marks": null,
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 4: Switched-Capacitor Filters & Continuous-Time Filter Topologies",
       "text": "What is switched capacitor filter? How inverting lossy integrator, integrator and non- inverting integrator can be realized using switched capacitor? Explain with necessary diagrams and transfer functions",
       "marks": null,
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 3: Active RC Filter Realization (Sallen-Key, Multiple-Feedback, State-Variable, Biquad Topologies)",
       "text": "What is RC-CR transfornation? Draw the circuit diagram of high pass sallen-key biquad obtained by RC-CR transformation of its low pass counterpart",
       "marks": "4",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 3: Active RC Filter Realization (Sallen-Key, Multiple-Feedback, State-Variable, Biquad Topologies)",
       "text": "What is signal parameter sensitivity? Perform sensitivity analysis for center frequency (wo) of Sallen-Key'biquad with respect to all resistors and capacitors present in the circuit",
       "marks": "1+4",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "What.is GIC? How a GIC can be used to simulate grounded inductor? Explain with necessary figures and expression",
       "marks": "5",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "Simulate third order Butterworth low. pass filter using Leapfrog' simulation. (Refer following table) .[6] Elements values for doubly terminated Butterworth filter norimalized to half power frequency of 1 rad/s Vs L2 C3 L4 Cs",
       "marks": null,
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
       "text": "Design the following transfer function using inverting op-amp configuration. [4] S+ 200 You are not allowed to use inductors in the design",
       "marks": null,
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
+      "chapter": "Chapter 4: Switched-Capacitor Filters & Continuous-Time Filter Topologies",
       "text": "What do you understand when the sensitivity of y with respect to x is equal. to -3? Perform sensitivity analysis for Quality factor Q of the Tow Thomas low pass filter with respect to all the resistors and capacitors present in the circuit",
       "marks": "1+4",
       "years": [],
       "frequency": 1
     },
     {
-      "chapter": "General",
-      "text": "What is generalized impendance converter (GIC)? How can you simulate the grounded incuctor in the passive filter using GIC? Explain The following circuit is a high pass filter having half power frequency of 1 rad/sec. Design a high pass filter having half power frequency of 4.S kHz by active simulation of inductors. In your final circuit the largest capacitance should be 0.1 μF",
+      "chapter": "Chapter 5: High-Frequency LC & Active Inductor Filter Design",
+      "text": "What is generalized impendance converter (GIC)? How can you simulate the grounded incuctor in the passive filter using GIC? Explain The following circuit is a high pass filter having half power frequency of 1 rad/sec. Design a high pass filter having half power frequency of 4.S kHz by active simulation of inductors. In your final circuit the largest capacitance should be 0.1 \u03bcF",
       "marks": "2+4+6",
       "years": [],
       "frequency": 1

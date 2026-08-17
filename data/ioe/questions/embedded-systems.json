@@ -2,15 +2,15 @@
   "subject": "Embedded Systems",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Embedded Systems Hardware & Microcontroller Architectures (ARM / AVR)",
-    "Embedded C Programming & Memory Architecture",
-    "Real-Time Operating Systems (RTOS) & Task Scheduling",
-    "Communication Protocols (I2C, SPI, UART & CAN Bus)",
-    "Embedded System Design, Hardware-Software Co-design & Testing"
+    "Chapter 1: Embedded System Architecture & Core Hardware Components (Microcontrollers, RISC vs CISC, ARM Cortex)",
+    "Chapter 2: Embedded Programming & Peripheral Interfacing (GPIO, ADC, DAC, Timers/Counters, PWM)",
+    "Chapter 3: Serial Communication Protocols (UART, SPI, I2C, CAN Bus)",
+    "Chapter 4: Real-Time Operating Systems (RTOS Concepts, Task Scheduling, Priority Inversion, Mutex/Semaphores)",
+    "Chapter 5: Hardware-Software Co-Design, Low-Power Design & Embedded System Debugging (JTAG, In-Circuit Emulation)"
   ],
   "questions": [
     {
-      "chapter": "Embedded Systems Hardware & Microcontroller Architectures (ARM / AVR)",
+      "chapter": "Chapter 4: Real-Time Operating Systems (RTOS Concepts, Task Scheduling, Priority Inversion, Mutex/Semaphores)",
       "text": "Define an Embedded System. Explain the characteristics and constraints of embedded systems (Real-time operation, low power consumption, tight memory footprint, cost, environmental robustness). Compare Microprocessor vs Microcontroller vs System-on-Chip (SoC).",
       "marks": "4+4",
       "years": [
@@ -23,7 +23,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Embedded Systems Hardware & Microcontroller Architectures (ARM / AVR)",
+      "chapter": "Chapter 1: Embedded System Architecture & Core Hardware Components (Microcontrollers, RISC vs CISC, ARM Cortex)",
       "text": "Explain the ARM Cortex-M Architecture (Cortex-M3/M4). Describe the Register set, Nested Vectored Interrupt Controller (NVIC), Memory Map, and Thumb-2 Instruction Set.",
       "marks": "4+4",
       "years": [
@@ -36,7 +36,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Embedded C Programming & Memory Architecture",
+      "chapter": "Chapter 2: Embedded Programming & Peripheral Interfacing (GPIO, ADC, DAC, Timers/Counters, PWM)",
       "text": "Explain the significance of `volatile`, `const`, and `static` keywords in Embedded C programming with practical microcontroller register manipulation examples. Explain bitwise operations in C for setting, clearing, and toggling specific GPIO pins.",
       "marks": "3+5",
       "years": [
@@ -49,7 +49,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Real-Time Operating Systems (RTOS) & Task Scheduling",
+      "chapter": "Chapter 4: Real-Time Operating Systems (RTOS Concepts, Task Scheduling, Priority Inversion, Mutex/Semaphores)",
       "text": "Differentiate between General Purpose OS (GPOS) vs Real-Time OS (RTOS), Hard Real-Time vs Soft Real-Time systems. Explain RTOS Kernel services: Tasks, Task States (Ready, Running, Blocked, Suspended), Context Switching, and Task Control Block (TCB).",
       "marks": "4+4",
       "years": [
@@ -62,7 +62,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Real-Time Operating Systems (RTOS) & Task Scheduling",
+      "chapter": "Chapter 4: Real-Time Operating Systems (RTOS Concepts, Task Scheduling, Priority Inversion, Mutex/Semaphores)",
       "text": "Explain Real-Time Scheduling Algorithms: (a) Rate Monotonic Scheduling (RMS - Static priority), and (b) Earliest Deadline First (EDF - Dynamic priority). Derive Liu and Layland's utilization bound for RMS: $U = \\sum \\frac{C_i}{T_i} \\le n(2^{1/n} - 1)$. Test the schedulability of 3 periodic tasks under RMS and EDF.",
       "marks": "3+5",
       "years": [
@@ -75,7 +75,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Real-Time Operating Systems (RTOS) & Task Scheduling",
+      "chapter": "Chapter 4: Real-Time Operating Systems (RTOS Concepts, Task Scheduling, Priority Inversion, Mutex/Semaphores)",
       "text": "Explain Priority Inversion in RTOS. How does priority inversion cause deadlocks/starvation in mission-critical systems (e.g. Mars Pathfinder)? Explain solutions: (a) Priority Inheritance Protocol (PIP), and (b) Priority Ceiling Protocol (PCP).",
       "marks": "4+4",
       "years": [
@@ -88,7 +88,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Communication Protocols (I2C, SPI, UART & CAN Bus)",
+      "chapter": "Chapter 3: Serial Communication Protocols (UART, SPI, I2C, CAN Bus)",
       "text": "Compare Serial Communication Protocols used in embedded systems: UART, SPI, and I2C in terms of wiring lines, master/slave operation, data rate, transmission distance, and synchronization. Draw the I2C bus timing diagram showing START condition, 7-bit Address, R/W bit, ACK/NACK, Data byte, and STOP condition with pull-up resistors.",
       "marks": "4+6",
       "years": [
@@ -101,7 +101,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Embedded System Design, Hardware-Software Co-design & Testing",
+      "chapter": "Chapter 5: Hardware-Software Co-Design, Low-Power Design & Embedded System Debugging (JTAG, In-Circuit Emulation)",
       "text": "Explain the Hardware-Software Co-Design methodology in embedded systems design. Explain Debugging and Testing techniques: In-Circuit Emulators (ICE), JTAG (IEEE 1149.1 boundary scan), Serial Wire Debug (SWD), and Watchdog Timers (WDT).",
       "marks": "4+4",
       "years": [
@@ -114,7 +114,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Embedded C Programming & Memory Architecture",
+      "chapter": "Chapter 1: Embedded System Architecture & Core Hardware Components (Microcontrollers, RISC vs CISC, ARM Cortex)",
       "text": "Explain Memory Types in embedded systems: SRAM, DRAM, Flash ROM, EEPROM, and FRAM. Explain the Memory Map of an embedded program: Text (.text), Data (.data), BSS (.bss), Heap, and Stack segments.",
       "marks": "4+4",
       "years": [
@@ -126,7 +126,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Communication Protocols (I2C, SPI, UART & CAN Bus)",
+      "chapter": "Chapter 1: Embedded System Architecture & Core Hardware Components (Microcontrollers, RISC vs CISC, ARM Cortex)",
       "text": "Explain Controller Area Network (CAN) Bus protocol in automotive and industrial embedded systems. Explain CAN differential signaling ($CAN_H, CAN_L$), Non-Destructive Bitwise Arbitration using message identifiers, and frame formats.",
       "marks": "6",
       "years": [
@@ -138,7 +138,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Embedded Systems Hardware & Microcontroller Architectures (ARM / AVR)",
+      "chapter": "Chapter 5: Hardware-Software Co-Design, Low-Power Design & Embedded System Debugging (JTAG, In-Circuit Emulation)",
       "text": "A practical engineering system operating under Embedded Systems Hardware & Microcontroller Architectures (ARM / AVR) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -150,7 +150,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Embedded C Programming & Memory Architecture",
+      "chapter": "Chapter 5: Hardware-Software Co-Design, Low-Power Design & Embedded System Debugging (JTAG, In-Circuit Emulation)",
       "text": "A practical engineering system operating under Embedded C Programming & Memory Architecture is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -162,7 +162,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Real-Time Operating Systems (RTOS) & Task Scheduling",
+      "chapter": "Chapter 4: Real-Time Operating Systems (RTOS Concepts, Task Scheduling, Priority Inversion, Mutex/Semaphores)",
       "text": "A practical engineering system operating under Real-Time Operating Systems (RTOS) & Task Scheduling is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -174,7 +174,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Communication Protocols (I2C, SPI, UART & CAN Bus)",
+      "chapter": "Chapter 3: Serial Communication Protocols (UART, SPI, I2C, CAN Bus)",
       "text": "A practical engineering system operating under Communication Protocols (I2C, SPI, UART & CAN Bus) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -186,7 +186,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Embedded System Design, Hardware-Software Co-design & Testing",
+      "chapter": "Chapter 5: Hardware-Software Co-Design, Low-Power Design & Embedded System Debugging (JTAG, In-Circuit Emulation)",
       "text": "A practical engineering system operating under Embedded System Design, Hardware-Software Co-design & Testing is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -198,7 +198,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Embedded Systems Hardware & Microcontroller Architectures (ARM / AVR)",
+      "chapter": "Chapter 5: Hardware-Software Co-Design, Low-Power Design & Embedded System Debugging (JTAG, In-Circuit Emulation)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Embedded Systems Hardware & Microcontroller Architectures (ARM / AVR). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -209,7 +209,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Embedded Systems Hardware & Microcontroller Architectures (ARM / AVR)",
+      "chapter": "Chapter 1: Embedded System Architecture & Core Hardware Components (Microcontrollers, RISC vs CISC, ARM Cortex)",
       "text": "Solve the standard numerical problem for Embedded Systems Hardware & Microcontroller Architectures (ARM / AVR) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -220,7 +220,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Embedded C Programming & Memory Architecture",
+      "chapter": "Chapter 5: Hardware-Software Co-Design, Low-Power Design & Embedded System Debugging (JTAG, In-Circuit Emulation)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Embedded C Programming & Memory Architecture. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -231,7 +231,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Embedded C Programming & Memory Architecture",
+      "chapter": "Chapter 1: Embedded System Architecture & Core Hardware Components (Microcontrollers, RISC vs CISC, ARM Cortex)",
       "text": "Solve the standard numerical problem for Embedded C Programming & Memory Architecture using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -242,7 +242,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Real-Time Operating Systems (RTOS) & Task Scheduling",
+      "chapter": "Chapter 4: Real-Time Operating Systems (RTOS Concepts, Task Scheduling, Priority Inversion, Mutex/Semaphores)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Real-Time Operating Systems (RTOS) & Task Scheduling. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -253,7 +253,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Real-Time Operating Systems (RTOS) & Task Scheduling",
+      "chapter": "Chapter 4: Real-Time Operating Systems (RTOS Concepts, Task Scheduling, Priority Inversion, Mutex/Semaphores)",
       "text": "Solve the standard numerical problem for Real-Time Operating Systems (RTOS) & Task Scheduling using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -264,7 +264,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Communication Protocols (I2C, SPI, UART & CAN Bus)",
+      "chapter": "Chapter 3: Serial Communication Protocols (UART, SPI, I2C, CAN Bus)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Communication Protocols (I2C, SPI, UART & CAN Bus). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -275,7 +275,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Communication Protocols (I2C, SPI, UART & CAN Bus)",
+      "chapter": "Chapter 3: Serial Communication Protocols (UART, SPI, I2C, CAN Bus)",
       "text": "Solve the standard numerical problem for Communication Protocols (I2C, SPI, UART & CAN Bus) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -286,7 +286,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Embedded System Design, Hardware-Software Co-design & Testing",
+      "chapter": "Chapter 5: Hardware-Software Co-Design, Low-Power Design & Embedded System Debugging (JTAG, In-Circuit Emulation)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Embedded System Design, Hardware-Software Co-design & Testing. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -297,7 +297,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Embedded System Design, Hardware-Software Co-design & Testing",
+      "chapter": "Chapter 5: Hardware-Software Co-Design, Low-Power Design & Embedded System Debugging (JTAG, In-Circuit Emulation)",
       "text": "Solve the standard numerical problem for Embedded System Design, Hardware-Software Co-design & Testing using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -308,7 +308,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Embedded Systems Hardware & Microcontroller Architectures (ARM / AVR)",
+      "chapter": "Chapter 1: Embedded System Architecture & Core Hardware Components (Microcontrollers, RISC vs CISC, ARM Cortex)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Embedded Systems Hardware & Microcontroller Architectures (ARM / AVR). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -318,7 +318,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Embedded Systems Hardware & Microcontroller Architectures (ARM / AVR)",
+      "chapter": "Chapter 1: Embedded System Architecture & Core Hardware Components (Microcontrollers, RISC vs CISC, ARM Cortex)",
       "text": "State and prove the classical theorems and stability criteria associated with Embedded Systems Hardware & Microcontroller Architectures (ARM / AVR). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -328,7 +328,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Embedded C Programming & Memory Architecture",
+      "chapter": "Chapter 1: Embedded System Architecture & Core Hardware Components (Microcontrollers, RISC vs CISC, ARM Cortex)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Embedded C Programming & Memory Architecture. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -338,7 +338,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Embedded C Programming & Memory Architecture",
+      "chapter": "Chapter 1: Embedded System Architecture & Core Hardware Components (Microcontrollers, RISC vs CISC, ARM Cortex)",
       "text": "State and prove the classical theorems and stability criteria associated with Embedded C Programming & Memory Architecture. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -348,7 +348,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Real-Time Operating Systems (RTOS) & Task Scheduling",
+      "chapter": "Chapter 4: Real-Time Operating Systems (RTOS Concepts, Task Scheduling, Priority Inversion, Mutex/Semaphores)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Real-Time Operating Systems (RTOS) & Task Scheduling. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -358,7 +358,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Real-Time Operating Systems (RTOS) & Task Scheduling",
+      "chapter": "Chapter 4: Real-Time Operating Systems (RTOS Concepts, Task Scheduling, Priority Inversion, Mutex/Semaphores)",
       "text": "State and prove the classical theorems and stability criteria associated with Real-Time Operating Systems (RTOS) & Task Scheduling. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -368,7 +368,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Communication Protocols (I2C, SPI, UART & CAN Bus)",
+      "chapter": "Chapter 3: Serial Communication Protocols (UART, SPI, I2C, CAN Bus)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Communication Protocols (I2C, SPI, UART & CAN Bus). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -378,7 +378,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Communication Protocols (I2C, SPI, UART & CAN Bus)",
+      "chapter": "Chapter 3: Serial Communication Protocols (UART, SPI, I2C, CAN Bus)",
       "text": "State and prove the classical theorems and stability criteria associated with Communication Protocols (I2C, SPI, UART & CAN Bus). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -388,7 +388,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Embedded System Design, Hardware-Software Co-design & Testing",
+      "chapter": "Chapter 5: Hardware-Software Co-Design, Low-Power Design & Embedded System Debugging (JTAG, In-Circuit Emulation)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Embedded System Design, Hardware-Software Co-design & Testing. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -398,7 +398,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Embedded System Design, Hardware-Software Co-design & Testing",
+      "chapter": "Chapter 5: Hardware-Software Co-Design, Low-Power Design & Embedded System Debugging (JTAG, In-Circuit Emulation)",
       "text": "State and prove the classical theorems and stability criteria associated with Embedded System Design, Hardware-Software Co-design & Testing. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -408,7 +408,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Embedded Systems Hardware & Microcontroller Architectures (ARM / AVR)",
+      "chapter": "Chapter 5: Hardware-Software Co-Design, Low-Power Design & Embedded System Debugging (JTAG, In-Circuit Emulation)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Embedded Systems Hardware & Microcontroller Architectures (ARM / AVR).",
       "marks": "6",
       "years": [
@@ -417,7 +417,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Embedded Systems Hardware & Microcontroller Architectures (ARM / AVR)",
+      "chapter": "Chapter 5: Hardware-Software Co-Design, Low-Power Design & Embedded System Debugging (JTAG, In-Circuit Emulation)",
       "text": "Write short technical notes on: (a) Key design parameters in Embedded Systems Hardware & Microcontroller Architectures (ARM / AVR), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -426,7 +426,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Embedded C Programming & Memory Architecture",
+      "chapter": "Chapter 5: Hardware-Software Co-Design, Low-Power Design & Embedded System Debugging (JTAG, In-Circuit Emulation)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Embedded C Programming & Memory Architecture.",
       "marks": "6",
       "years": [
@@ -435,7 +435,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Embedded C Programming & Memory Architecture",
+      "chapter": "Chapter 5: Hardware-Software Co-Design, Low-Power Design & Embedded System Debugging (JTAG, In-Circuit Emulation)",
       "text": "Write short technical notes on: (a) Key design parameters in Embedded C Programming & Memory Architecture, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -444,7 +444,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Real-Time Operating Systems (RTOS) & Task Scheduling",
+      "chapter": "Chapter 4: Real-Time Operating Systems (RTOS Concepts, Task Scheduling, Priority Inversion, Mutex/Semaphores)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Real-Time Operating Systems (RTOS) & Task Scheduling.",
       "marks": "6",
       "years": [
@@ -453,7 +453,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Real-Time Operating Systems (RTOS) & Task Scheduling",
+      "chapter": "Chapter 4: Real-Time Operating Systems (RTOS Concepts, Task Scheduling, Priority Inversion, Mutex/Semaphores)",
       "text": "Write short technical notes on: (a) Key design parameters in Real-Time Operating Systems (RTOS) & Task Scheduling, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -462,7 +462,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Communication Protocols (I2C, SPI, UART & CAN Bus)",
+      "chapter": "Chapter 3: Serial Communication Protocols (UART, SPI, I2C, CAN Bus)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Communication Protocols (I2C, SPI, UART & CAN Bus).",
       "marks": "6",
       "years": [
@@ -471,7 +471,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Communication Protocols (I2C, SPI, UART & CAN Bus)",
+      "chapter": "Chapter 3: Serial Communication Protocols (UART, SPI, I2C, CAN Bus)",
       "text": "Write short technical notes on: (a) Key design parameters in Communication Protocols (I2C, SPI, UART & CAN Bus), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -480,7 +480,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Embedded System Design, Hardware-Software Co-design & Testing",
+      "chapter": "Chapter 5: Hardware-Software Co-Design, Low-Power Design & Embedded System Debugging (JTAG, In-Circuit Emulation)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Embedded System Design, Hardware-Software Co-design & Testing.",
       "marks": "6",
       "years": [
@@ -489,7 +489,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Embedded System Design, Hardware-Software Co-design & Testing",
+      "chapter": "Chapter 5: Hardware-Software Co-Design, Low-Power Design & Embedded System Debugging (JTAG, In-Circuit Emulation)",
       "text": "Write short technical notes on: (a) Key design parameters in Embedded System Design, Hardware-Software Co-design & Testing, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [

@@ -2,15 +2,16 @@
   "subject": "Operations Research",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Linear Programming Formulation & Graphical Method",
-    "Simplex Method, Duality & Sensitivity Analysis",
-    "Transportation & Assignment Problems (VAM & Hungarian Method)",
-    "Queuing Theory & Inventory Control Models (EOQ)",
-    "Game Theory, Decision Analysis & Dynamic Programming"
+    "Chapter 1: Operations Research Introduction & Linear Programming Problem (LPP) Formulation",
+    "Chapter 2: Graphical Method & Simplex Method (Big-M, Two-Phase Simplex, Duality Theory)",
+    "Chapter 3: Transportation Problem (North-West Corner, Vogel Approximation, MODI Method)",
+    "Chapter 4: Assignment Problem (Hungarian Method) & Travelling Salesman Problem",
+    "Chapter 5: Game Theory & Decision Theory (Two-Person Zero-Sum Games, Minimax Criterion, Decision Trees)",
+    "Chapter 6: Queueing Theory (M/M/1, M/M/s Models) & Inventory Control Models (EOQ)"
   ],
   "questions": [
     {
-      "chapter": "Linear Programming Formulation & Graphical Method",
+      "chapter": "Chapter 1: Operations Research Introduction & Linear Programming Problem (LPP) Formulation",
       "text": "Formulate a Linear Programming Problem (LPP) for an engineering production problem. Solve the LPP using Graphical Method: Maximize $Z = 5x_1 + 7x_2$ subject to $x_1 + x_2 \\le 4, 3x_1 + 8x_2 \\le 24, 10x_1 + 7x_2 \\le 35, x_1, x_2 \\ge 0$. Identify the corner points of the feasible region and optimal solution.",
       "marks": "3+5",
       "years": [
@@ -23,7 +24,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Simplex Method, Duality & Sensitivity Analysis",
+      "chapter": "Chapter 2: Graphical Method & Simplex Method (Big-M, Two-Phase Simplex, Duality Theory)",
       "text": "Solve the following Linear Programming Problem using the Standard Simplex Method:\nMaximize $Z = 3x_1 + 2x_2 + 5x_3$\nSubject to:\n$x_1 + 2x_2 + x_3 \\le 430$\n$3x_1 + 2x_3 \\le 460$\n$x_1 + 4x_2 \\le 420$\n$x_1, x_2, x_3 \\ge 0$. Show all simplex tableaux, entering and leaving variables, and minimum ratio tests.",
       "marks": "10",
       "years": [
@@ -36,7 +37,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Simplex Method, Duality & Sensitivity Analysis",
+      "chapter": "Chapter 2: Graphical Method & Simplex Method (Big-M, Two-Phase Simplex, Duality Theory)",
       "text": "Explain Big-M Method and Two-Phase Simplex Method for handling $\\ge$ and $=$ constraints. Formulate the Dual of a given Primal LPP and state the Duality Theorems (Weak Duality, Strong Duality, Complementary Slackness Theorem).",
       "marks": "4+4",
       "years": [
@@ -49,7 +50,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Transportation & Assignment Problems (VAM & Hungarian Method)",
+      "chapter": "Chapter 3: Transportation Problem (North-West Corner, Vogel Approximation, MODI Method)",
       "text": "Find the Initial Basic Feasible Solution (IBFS) of a Transportation Problem with 3 sources and 4 destinations using Vogel's Approximation Method (VAM). Test the optimality of the solution using the Modified Distribution (MODI / $u-v$) Method and find the minimum transportation cost.",
       "marks": "4+6",
       "years": [
@@ -62,7 +63,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Transportation & Assignment Problems (VAM & Hungarian Method)",
+      "chapter": "Chapter 4: Assignment Problem (Hungarian Method) & Travelling Salesman Problem",
       "text": "Explain the Hungarian Method for solving an $n \\times n$ Assignment Problem. Solve an unbalanced assignment problem where 5 construction machines are to be assigned to 4 construction sites to minimize total cost.",
       "marks": "8",
       "years": [
@@ -75,7 +76,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Queuing Theory & Inventory Control Models (EOQ)",
+      "chapter": "Chapter 6: Queueing Theory (M/M/1, M/M/s Models) & Inventory Control Models (EOQ)",
       "text": "Derive the Economic Order Quantity (EOQ) formula: $EOQ = \\sqrt{\\frac{2 D C_o}{C_h}}$ under deterministic demand with instantaneous replenishment. An infrastructure firm has an annual demand of $10,000\\,\\text{bags}$ of cement. Ordering cost is $\\text{NPR } 500\\,\\text{per order}$ and holding cost is $\\text{NPR } 25\\,\\text{per bag per year}$. Calculate: (a) Optimal order quantity, (b) Number of orders per year, and (c) Total minimum annual inventory cost.",
       "marks": "3+5",
       "years": [
@@ -88,7 +89,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Game Theory, Decision Analysis & Dynamic Programming",
+      "chapter": "Chapter 5: Game Theory & Decision Theory (Two-Person Zero-Sum Games, Minimax Criterion, Decision Trees)",
       "text": "Solve a Two-Person Zero-Sum Game with payoff matrix: Find the Saddle Point if it exists (Maximin-Minimax principle). If no saddle point exists, reduce the $m \\times n$ payoff matrix using the Principle of Dominance and solve the $2 \\times 2$ mixed strategy game using algebraic / probability methods.",
       "marks": "3+5",
       "years": [
@@ -101,7 +102,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Game Theory, Decision Analysis & Dynamic Programming",
+      "chapter": "Chapter 5: Game Theory & Decision Theory (Two-Person Zero-Sum Games, Minimax Criterion, Decision Trees)",
       "text": "Explain Decision Making Under Uncertainty (Maximax, Maximin, Laplace, Hurwicz criterion, and Minimax Regret / Savage criterion). Explain Bellman's Principle of Optimality and solve the Shortest Stagecoach Route Problem using Dynamic Programming (Backward recursion).",
       "marks": "4+4",
       "years": [
@@ -113,7 +114,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Linear Programming Formulation & Graphical Method",
+      "chapter": "Chapter 1: Operations Research Introduction & Linear Programming Problem (LPP) Formulation",
       "text": "A practical engineering system operating under Linear Programming Formulation & Graphical Method is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -125,7 +126,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Simplex Method, Duality & Sensitivity Analysis",
+      "chapter": "Chapter 2: Graphical Method & Simplex Method (Big-M, Two-Phase Simplex, Duality Theory)",
       "text": "A practical engineering system operating under Simplex Method, Duality & Sensitivity Analysis is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -137,7 +138,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Transportation & Assignment Problems (VAM & Hungarian Method)",
+      "chapter": "Chapter 4: Assignment Problem (Hungarian Method) & Travelling Salesman Problem",
       "text": "A practical engineering system operating under Transportation & Assignment Problems (VAM & Hungarian Method) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -149,7 +150,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Queuing Theory & Inventory Control Models (EOQ)",
+      "chapter": "Chapter 6: Queueing Theory (M/M/1, M/M/s Models) & Inventory Control Models (EOQ)",
       "text": "A practical engineering system operating under Queuing Theory & Inventory Control Models (EOQ) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -161,7 +162,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Game Theory, Decision Analysis & Dynamic Programming",
+      "chapter": "Chapter 5: Game Theory & Decision Theory (Two-Person Zero-Sum Games, Minimax Criterion, Decision Trees)",
       "text": "A practical engineering system operating under Game Theory, Decision Analysis & Dynamic Programming is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -173,7 +174,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Linear Programming Formulation & Graphical Method",
+      "chapter": "Chapter 1: Operations Research Introduction & Linear Programming Problem (LPP) Formulation",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Linear Programming Formulation & Graphical Method. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -184,7 +185,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Linear Programming Formulation & Graphical Method",
+      "chapter": "Chapter 1: Operations Research Introduction & Linear Programming Problem (LPP) Formulation",
       "text": "Solve the standard numerical problem for Linear Programming Formulation & Graphical Method using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -195,7 +196,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Simplex Method, Duality & Sensitivity Analysis",
+      "chapter": "Chapter 2: Graphical Method & Simplex Method (Big-M, Two-Phase Simplex, Duality Theory)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Simplex Method, Duality & Sensitivity Analysis. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -206,7 +207,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Simplex Method, Duality & Sensitivity Analysis",
+      "chapter": "Chapter 2: Graphical Method & Simplex Method (Big-M, Two-Phase Simplex, Duality Theory)",
       "text": "Solve the standard numerical problem for Simplex Method, Duality & Sensitivity Analysis using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -217,7 +218,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Transportation & Assignment Problems (VAM & Hungarian Method)",
+      "chapter": "Chapter 4: Assignment Problem (Hungarian Method) & Travelling Salesman Problem",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Transportation & Assignment Problems (VAM & Hungarian Method). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -228,7 +229,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Transportation & Assignment Problems (VAM & Hungarian Method)",
+      "chapter": "Chapter 4: Assignment Problem (Hungarian Method) & Travelling Salesman Problem",
       "text": "Solve the standard numerical problem for Transportation & Assignment Problems (VAM & Hungarian Method) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -239,7 +240,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Queuing Theory & Inventory Control Models (EOQ)",
+      "chapter": "Chapter 6: Queueing Theory (M/M/1, M/M/s Models) & Inventory Control Models (EOQ)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Queuing Theory & Inventory Control Models (EOQ). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -250,7 +251,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Queuing Theory & Inventory Control Models (EOQ)",
+      "chapter": "Chapter 6: Queueing Theory (M/M/1, M/M/s Models) & Inventory Control Models (EOQ)",
       "text": "Solve the standard numerical problem for Queuing Theory & Inventory Control Models (EOQ) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -261,7 +262,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Game Theory, Decision Analysis & Dynamic Programming",
+      "chapter": "Chapter 5: Game Theory & Decision Theory (Two-Person Zero-Sum Games, Minimax Criterion, Decision Trees)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Game Theory, Decision Analysis & Dynamic Programming. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -272,7 +273,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Game Theory, Decision Analysis & Dynamic Programming",
+      "chapter": "Chapter 5: Game Theory & Decision Theory (Two-Person Zero-Sum Games, Minimax Criterion, Decision Trees)",
       "text": "Solve the standard numerical problem for Game Theory, Decision Analysis & Dynamic Programming using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -283,7 +284,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Linear Programming Formulation & Graphical Method",
+      "chapter": "Chapter 1: Operations Research Introduction & Linear Programming Problem (LPP) Formulation",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Linear Programming Formulation & Graphical Method. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -293,7 +294,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Linear Programming Formulation & Graphical Method",
+      "chapter": "Chapter 1: Operations Research Introduction & Linear Programming Problem (LPP) Formulation",
       "text": "State and prove the classical theorems and stability criteria associated with Linear Programming Formulation & Graphical Method. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -303,7 +304,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Simplex Method, Duality & Sensitivity Analysis",
+      "chapter": "Chapter 2: Graphical Method & Simplex Method (Big-M, Two-Phase Simplex, Duality Theory)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Simplex Method, Duality & Sensitivity Analysis. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -313,7 +314,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Simplex Method, Duality & Sensitivity Analysis",
+      "chapter": "Chapter 2: Graphical Method & Simplex Method (Big-M, Two-Phase Simplex, Duality Theory)",
       "text": "State and prove the classical theorems and stability criteria associated with Simplex Method, Duality & Sensitivity Analysis. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -323,7 +324,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Transportation & Assignment Problems (VAM & Hungarian Method)",
+      "chapter": "Chapter 4: Assignment Problem (Hungarian Method) & Travelling Salesman Problem",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Transportation & Assignment Problems (VAM & Hungarian Method). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -333,7 +334,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Transportation & Assignment Problems (VAM & Hungarian Method)",
+      "chapter": "Chapter 4: Assignment Problem (Hungarian Method) & Travelling Salesman Problem",
       "text": "State and prove the classical theorems and stability criteria associated with Transportation & Assignment Problems (VAM & Hungarian Method). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -343,7 +344,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Queuing Theory & Inventory Control Models (EOQ)",
+      "chapter": "Chapter 6: Queueing Theory (M/M/1, M/M/s Models) & Inventory Control Models (EOQ)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Queuing Theory & Inventory Control Models (EOQ). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -353,7 +354,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Queuing Theory & Inventory Control Models (EOQ)",
+      "chapter": "Chapter 6: Queueing Theory (M/M/1, M/M/s Models) & Inventory Control Models (EOQ)",
       "text": "State and prove the classical theorems and stability criteria associated with Queuing Theory & Inventory Control Models (EOQ). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -363,7 +364,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Game Theory, Decision Analysis & Dynamic Programming",
+      "chapter": "Chapter 5: Game Theory & Decision Theory (Two-Person Zero-Sum Games, Minimax Criterion, Decision Trees)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Game Theory, Decision Analysis & Dynamic Programming. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -373,7 +374,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Game Theory, Decision Analysis & Dynamic Programming",
+      "chapter": "Chapter 5: Game Theory & Decision Theory (Two-Person Zero-Sum Games, Minimax Criterion, Decision Trees)",
       "text": "State and prove the classical theorems and stability criteria associated with Game Theory, Decision Analysis & Dynamic Programming. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -383,7 +384,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Linear Programming Formulation & Graphical Method",
+      "chapter": "Chapter 1: Operations Research Introduction & Linear Programming Problem (LPP) Formulation",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Linear Programming Formulation & Graphical Method.",
       "marks": "6",
       "years": [
@@ -392,7 +393,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Linear Programming Formulation & Graphical Method",
+      "chapter": "Chapter 1: Operations Research Introduction & Linear Programming Problem (LPP) Formulation",
       "text": "Write short technical notes on: (a) Key design parameters in Linear Programming Formulation & Graphical Method, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -401,7 +402,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Simplex Method, Duality & Sensitivity Analysis",
+      "chapter": "Chapter 2: Graphical Method & Simplex Method (Big-M, Two-Phase Simplex, Duality Theory)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Simplex Method, Duality & Sensitivity Analysis.",
       "marks": "6",
       "years": [
@@ -410,7 +411,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Simplex Method, Duality & Sensitivity Analysis",
+      "chapter": "Chapter 2: Graphical Method & Simplex Method (Big-M, Two-Phase Simplex, Duality Theory)",
       "text": "Write short technical notes on: (a) Key design parameters in Simplex Method, Duality & Sensitivity Analysis, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -419,7 +420,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Transportation & Assignment Problems (VAM & Hungarian Method)",
+      "chapter": "Chapter 4: Assignment Problem (Hungarian Method) & Travelling Salesman Problem",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Transportation & Assignment Problems (VAM & Hungarian Method).",
       "marks": "6",
       "years": [
@@ -428,7 +429,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Transportation & Assignment Problems (VAM & Hungarian Method)",
+      "chapter": "Chapter 4: Assignment Problem (Hungarian Method) & Travelling Salesman Problem",
       "text": "Write short technical notes on: (a) Key design parameters in Transportation & Assignment Problems (VAM & Hungarian Method), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -437,7 +438,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Queuing Theory & Inventory Control Models (EOQ)",
+      "chapter": "Chapter 6: Queueing Theory (M/M/1, M/M/s Models) & Inventory Control Models (EOQ)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Queuing Theory & Inventory Control Models (EOQ).",
       "marks": "6",
       "years": [
@@ -446,7 +447,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Queuing Theory & Inventory Control Models (EOQ)",
+      "chapter": "Chapter 6: Queueing Theory (M/M/1, M/M/s Models) & Inventory Control Models (EOQ)",
       "text": "Write short technical notes on: (a) Key design parameters in Queuing Theory & Inventory Control Models (EOQ), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -455,7 +456,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Game Theory, Decision Analysis & Dynamic Programming",
+      "chapter": "Chapter 5: Game Theory & Decision Theory (Two-Person Zero-Sum Games, Minimax Criterion, Decision Trees)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Game Theory, Decision Analysis & Dynamic Programming.",
       "marks": "6",
       "years": [
@@ -464,7 +465,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Game Theory, Decision Analysis & Dynamic Programming",
+      "chapter": "Chapter 5: Game Theory & Decision Theory (Two-Person Zero-Sum Games, Minimax Criterion, Decision Trees)",
       "text": "Write short technical notes on: (a) Key design parameters in Game Theory, Decision Analysis & Dynamic Programming, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [

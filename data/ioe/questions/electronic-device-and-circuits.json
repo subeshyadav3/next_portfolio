@@ -1,15 +1,16 @@
 {
   "subject": "Electronic Device and Circuits",
   "chapters": [
-    "Semiconductor Diodes & Diode Applications (Rectifiers, Clippers, Clampers)",
-    "Bipolar Junction Transistors (BJT) & Transistor Biasing",
-    "Field Effect Transistors (JFET & MOSFET) & Small Signal Analysis",
-    "Operational Amplifiers (Op-Amps) & Linear Applications",
-    "Feedback Amplifiers, Sinusoidal Oscillators & Power Amplifiers"
+    "Chapter 1: Semiconductor Diodes, Zener Diodes & Diode Circuits (Rectifiers, Clippers, Clampers)",
+    "Chapter 2: Bipolar Junction Transistors (BJT Characteristics, Biasing & Small-Signal AC Models)",
+    "Chapter 3: Field Effect Transistors (JFET & MOSFET Characteristics, Biasing & Amplifiers)",
+    "Chapter 4: Frequency Response of BJT and FET Amplifiers (Low/High Frequency Cutoff, Bode Plots)",
+    "Chapter 5: Operational Amplifiers (Op-Amps, Inverting/Non-Inverting, Integrators, Differentiators)",
+    "Chapter 6: Feedback Amplifiers & Sinusoidal Oscillators (Barkhausen Criterion, Wien Bridge, Colpitts)"
   ],
   "questions": [
     {
-      "chapter": "Semiconductor Diodes & Diode Applications (Rectifiers, Clippers, Clampers)",
+      "chapter": "Chapter 1: Semiconductor Diodes, Zener Diodes & Diode Circuits (Rectifiers, Clippers, Clampers)",
       "text": "Explain the PN junction diode operation under forward and reverse bias with energy band diagrams and Shockley's Diode Equation: $I = I_s (e^{V_D / \\eta V_T} - 1)$. Explain Dynamic Resistance ($r_d = \\frac{\\eta V_T}{I_D}$) and Transition/Diffusion capacitances.",
       "marks": "4+4",
       "years": [
@@ -22,7 +23,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Semiconductor Diodes & Diode Applications (Rectifiers, Clippers, Clampers)",
+      "chapter": "Chapter 6: Feedback Amplifiers & Sinusoidal Oscillators (Barkhausen Criterion, Wien Bridge, Colpitts)",
       "text": "Explain Full-Wave Bridge Rectifier with a capacitor filter. Derive Ripple Factor ($r = \\frac{1}{4\\sqrt{3} f C R_L}$), DC load voltage ($V_{dc} = V_m - \\frac{I_{dc}}{4 f C}$), and Peak Inverse Voltage ($PIV = V_m$).",
       "marks": "4+6",
       "years": [
@@ -35,7 +36,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Semiconductor Diodes & Diode Applications (Rectifiers, Clippers, Clampers)",
+      "chapter": "Chapter 1: Semiconductor Diodes, Zener Diodes & Diode Circuits (Rectifiers, Clippers, Clampers)",
       "text": "Explain Diode Clipper (Limiter) and Clamper (DC Restorer) circuits. Draw output voltage waveforms for positive and negative biased clippers and clampers with a sinusoidal input $v_{in}(t) = 15\\sin(\\omega t)\\,\\text{V}$.",
       "marks": "8",
       "years": [
@@ -48,7 +49,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Semiconductor Diodes & Diode Applications (Rectifiers, Clippers, Clampers)",
+      "chapter": "Chapter 1: Semiconductor Diodes, Zener Diodes & Diode Circuits (Rectifiers, Clippers, Clampers)",
       "text": "Explain Zener Diode voltage regulation. A $10\\,\\text{V}$ Zener diode has maximum power rating $P_{z,max} = 500\\,\\text{mW}$ and knee current $I_{zk} = 5\\,\\text{mA}$. Design the series current limiting resistor $R_s$ to maintain $10\\,\\text{V}$ across load $R_L$ with input varying from $15\\,\\text{V}$ to $25\\,\\text{V}$ and load current varying from $5\\,\\text{mA}$ to $35\\,\\text{mA}$.",
       "marks": "3+5",
       "years": [
@@ -61,7 +62,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Bipolar Junction Transistors (BJT) & Transistor Biasing",
+      "chapter": "Chapter 3: Field Effect Transistors (JFET & MOSFET Characteristics, Biasing & Amplifiers)",
       "text": "Explain Common Emitter (CE) configuration of BJT. Draw input and output characteristics, and define Cutoff, Active, and Saturation regions. Explain Early Effect (Base-Width Modulation) and Early Voltage ($V_A$).",
       "marks": "4+4",
       "years": [
@@ -74,7 +75,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Bipolar Junction Transistors (BJT) & Transistor Biasing",
+      "chapter": "Chapter 1: Semiconductor Diodes, Zener Diodes & Diode Circuits (Rectifiers, Clippers, Clampers)",
       "text": "Explain BJT Biasing circuits: Fixed Bias, Collector-to-Base Feedback Bias, and Voltage Divider Bias (Self-Bias). Derive the Stability Factor $S(I_{co}) = \\frac{1 + \\beta}{1 + \\beta \\frac{R_e}{R_e + R_{th}}}$ and show that Voltage Divider Bias provides the most stable Q-point.",
       "marks": "4+6",
       "years": [
@@ -87,7 +88,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Bipolar Junction Transistors (BJT) & Transistor Biasing",
+      "chapter": "Chapter 2: Bipolar Junction Transistors (BJT Characteristics, Biasing & Small-Signal AC Models)",
       "text": "Draw the Small-Signal $re$-model and hybrid-$h$ parameter model for a CE amplifier with unbypassed emitter resistor $R_E$. Derive expressions for Input Impedance ($Z_i$), Output Impedance ($Z_o$), Voltage Gain ($A_v = -\\frac{R_c}{r_e + R_E}$), and Current Gain ($A_i$).",
       "marks": "4+6",
       "years": [
@@ -100,7 +101,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Field Effect Transistors (JFET & MOSFET) & Small Signal Analysis",
+      "chapter": "Chapter 3: Field Effect Transistors (JFET & MOSFET Characteristics, Biasing & Amplifiers)",
       "text": "Explain the construction and operation of N-channel Junction Field Effect Transistor (JFET). Explain Pinch-Off Voltage ($V_p$) and derive Shockley's Equation: $I_D = I_{DSS}\\left(1 - \\frac{V_{GS}}{V_p}\\right)^2$. Define Transconductance $g_m = g_{m0}\\left(1 - \\frac{V_{GS}}{V_p}\\right)$ where $g_{m0} = \\frac{2I_{DSS}}{|V_p|}$.",
       "marks": "4+6",
       "years": [
@@ -113,7 +114,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Field Effect Transistors (JFET & MOSFET) & Small Signal Analysis",
+      "chapter": "Chapter 3: Field Effect Transistors (JFET & MOSFET Characteristics, Biasing & Amplifiers)",
       "text": "Compare Enhancement MOSFET (E-MOSFET) vs Depletion MOSFET (D-MOSFET). Explain CMOS Inverter operation, voltage transfer curve (VTC), and explain why static power dissipation in CMOS is virtually zero.",
       "marks": "4+4",
       "years": [
@@ -126,7 +127,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Operational Amplifiers (Op-Amps) & Linear Applications",
+      "chapter": "Chapter 5: Operational Amplifiers (Op-Amps, Inverting/Non-Inverting, Integrators, Differentiators)",
       "text": "Explain Ideal Op-Amp characteristics ($A_{OL} = \\infty, R_{in} = \\infty, R_{out} = 0, \\text{CMRR} = \\infty, BW = \\infty$) and Virtual Ground concept. Derive the closed-loop voltage gain for: (a) Inverting Amplifier ($A_v = -R_f/R_1$), (b) Non-Inverting Amplifier ($A_v = 1 + R_f/R_1$), and (c) Inverting Summing Amplifier.",
       "marks": "4+6",
       "years": [
@@ -139,7 +140,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Operational Amplifiers (Op-Amps) & Linear Applications",
+      "chapter": "Chapter 5: Operational Amplifiers (Op-Amps, Inverting/Non-Inverting, Integrators, Differentiators)",
       "text": "Explain Instrumentation Amplifier using 3 Op-Amps. Derive the differential voltage gain: $A_d = \\left(1 + \\frac{2R_1}{R_{gain}}\\right)\\frac{R_3}{R_2}$. Why is an instrumentation amplifier widely used in biomedical and sensor measurement systems?",
       "marks": "4+4",
       "years": [
@@ -152,7 +153,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Feedback Amplifiers, Sinusoidal Oscillators & Power Amplifiers",
+      "chapter": "Chapter 6: Feedback Amplifiers & Sinusoidal Oscillators (Barkhausen Criterion, Wien Bridge, Colpitts)",
       "text": "Explain Negative Feedback topologies: Voltage-Series, Voltage-Shunt, Current-Series, and Current-Shunt. Prove that negative feedback stabilizes voltage gain ($A_f = \\frac{A}{1 + A\\beta}$), reduces distortion, and increases bandwidth ($BW_f = BW(1 + A\\beta)$).",
       "marks": "4+6",
       "years": [
@@ -165,7 +166,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Feedback Amplifiers, Sinusoidal Oscillators & Power Amplifiers",
+      "chapter": "Chapter 6: Feedback Amplifiers & Sinusoidal Oscillators (Barkhausen Criterion, Wien Bridge, Colpitts)",
       "text": "State Barkhausen's Criterion for sustained sinusoidal oscillations ($|A\\beta| = 1, \\angle A\\beta = 0^\\circ$ or $360^\\circ$). Explain RC Phase Shift Oscillator (Derive $f_0 = \\frac{1}{2\\pi R C \\sqrt{6}}$ and $h_{fe} \\ge 29$) and Wien Bridge Oscillator ($f_0 = \\frac{1}{2\\pi R C}, A_v \\ge 3$).",
       "marks": "4+6",
       "years": [
@@ -178,7 +179,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Feedback Amplifiers, Sinusoidal Oscillators & Power Amplifiers",
+      "chapter": "Chapter 3: Field Effect Transistors (JFET & MOSFET Characteristics, Biasing & Amplifiers)",
       "text": "Classify Power Amplifiers: Class A ($\\eta_{max} = 25\\%$ or $50\\%$), Class B ($\\eta_{max} = 78.5\\%$), Class AB, and Class C. Explain Cross-Over Distortion in Class B push-pull amplifiers and how Class AB complementary symmetry solves it.",
       "marks": "4+6",
       "years": [
@@ -191,7 +192,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Operational Amplifiers (Op-Amps) & Linear Applications",
+      "chapter": "Chapter 4: Frequency Response of BJT and FET Amplifiers (Low/High Frequency Cutoff, Bode Plots)",
       "text": "Derive output equations for Op-Amp Differentiator and Op-Amp Integrator ($v_o(t) = -\\frac{1}{RC}\\int v_{in}(t)dt$). Explain practical integrator and practical differentiator with parallel feedback resistor $R_f$ and series input resistor $R_s$ to overcome high-frequency and low-frequency instability.",
       "marks": "4+4",
       "years": [
@@ -203,7 +204,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Semiconductor Diodes & Diode Applications (Rectifiers, Clippers, Clampers)",
+      "chapter": "Chapter 1: Semiconductor Diodes, Zener Diodes & Diode Circuits (Rectifiers, Clippers, Clampers)",
       "text": "A practical engineering system operating under Semiconductor Diodes & Diode Applications (Rectifiers, Clippers, Clampers) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -215,7 +216,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Bipolar Junction Transistors (BJT) & Transistor Biasing",
+      "chapter": "Chapter 2: Bipolar Junction Transistors (BJT Characteristics, Biasing & Small-Signal AC Models)",
       "text": "A practical engineering system operating under Bipolar Junction Transistors (BJT) & Transistor Biasing is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -227,7 +228,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Field Effect Transistors (JFET & MOSFET) & Small Signal Analysis",
+      "chapter": "Chapter 3: Field Effect Transistors (JFET & MOSFET Characteristics, Biasing & Amplifiers)",
       "text": "A practical engineering system operating under Field Effect Transistors (JFET & MOSFET) & Small Signal Analysis is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -239,7 +240,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Operational Amplifiers (Op-Amps) & Linear Applications",
+      "chapter": "Chapter 5: Operational Amplifiers (Op-Amps, Inverting/Non-Inverting, Integrators, Differentiators)",
       "text": "A practical engineering system operating under Operational Amplifiers (Op-Amps) & Linear Applications is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -251,7 +252,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Feedback Amplifiers, Sinusoidal Oscillators & Power Amplifiers",
+      "chapter": "Chapter 6: Feedback Amplifiers & Sinusoidal Oscillators (Barkhausen Criterion, Wien Bridge, Colpitts)",
       "text": "A practical engineering system operating under Feedback Amplifiers, Sinusoidal Oscillators & Power Amplifiers is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -263,7 +264,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Semiconductor Diodes & Diode Applications (Rectifiers, Clippers, Clampers)",
+      "chapter": "Chapter 1: Semiconductor Diodes, Zener Diodes & Diode Circuits (Rectifiers, Clippers, Clampers)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Semiconductor Diodes & Diode Applications (Rectifiers, Clippers, Clampers). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -274,7 +275,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Semiconductor Diodes & Diode Applications (Rectifiers, Clippers, Clampers)",
+      "chapter": "Chapter 1: Semiconductor Diodes, Zener Diodes & Diode Circuits (Rectifiers, Clippers, Clampers)",
       "text": "Solve the standard numerical problem for Semiconductor Diodes & Diode Applications (Rectifiers, Clippers, Clampers) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -285,7 +286,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Bipolar Junction Transistors (BJT) & Transistor Biasing",
+      "chapter": "Chapter 2: Bipolar Junction Transistors (BJT Characteristics, Biasing & Small-Signal AC Models)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Bipolar Junction Transistors (BJT) & Transistor Biasing. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -296,7 +297,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Bipolar Junction Transistors (BJT) & Transistor Biasing",
+      "chapter": "Chapter 2: Bipolar Junction Transistors (BJT Characteristics, Biasing & Small-Signal AC Models)",
       "text": "Solve the standard numerical problem for Bipolar Junction Transistors (BJT) & Transistor Biasing using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -307,7 +308,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Field Effect Transistors (JFET & MOSFET) & Small Signal Analysis",
+      "chapter": "Chapter 3: Field Effect Transistors (JFET & MOSFET Characteristics, Biasing & Amplifiers)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Field Effect Transistors (JFET & MOSFET) & Small Signal Analysis. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -318,7 +319,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Field Effect Transistors (JFET & MOSFET) & Small Signal Analysis",
+      "chapter": "Chapter 3: Field Effect Transistors (JFET & MOSFET Characteristics, Biasing & Amplifiers)",
       "text": "Solve the standard numerical problem for Field Effect Transistors (JFET & MOSFET) & Small Signal Analysis using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -329,7 +330,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Operational Amplifiers (Op-Amps) & Linear Applications",
+      "chapter": "Chapter 5: Operational Amplifiers (Op-Amps, Inverting/Non-Inverting, Integrators, Differentiators)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Operational Amplifiers (Op-Amps) & Linear Applications. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -340,7 +341,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Operational Amplifiers (Op-Amps) & Linear Applications",
+      "chapter": "Chapter 5: Operational Amplifiers (Op-Amps, Inverting/Non-Inverting, Integrators, Differentiators)",
       "text": "Solve the standard numerical problem for Operational Amplifiers (Op-Amps) & Linear Applications using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -351,7 +352,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Feedback Amplifiers, Sinusoidal Oscillators & Power Amplifiers",
+      "chapter": "Chapter 6: Feedback Amplifiers & Sinusoidal Oscillators (Barkhausen Criterion, Wien Bridge, Colpitts)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Feedback Amplifiers, Sinusoidal Oscillators & Power Amplifiers. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -362,7 +363,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Feedback Amplifiers, Sinusoidal Oscillators & Power Amplifiers",
+      "chapter": "Chapter 6: Feedback Amplifiers & Sinusoidal Oscillators (Barkhausen Criterion, Wien Bridge, Colpitts)",
       "text": "Solve the standard numerical problem for Feedback Amplifiers, Sinusoidal Oscillators & Power Amplifiers using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -373,7 +374,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Semiconductor Diodes & Diode Applications (Rectifiers, Clippers, Clampers)",
+      "chapter": "Chapter 1: Semiconductor Diodes, Zener Diodes & Diode Circuits (Rectifiers, Clippers, Clampers)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Semiconductor Diodes & Diode Applications (Rectifiers, Clippers, Clampers). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -383,7 +384,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Semiconductor Diodes & Diode Applications (Rectifiers, Clippers, Clampers)",
+      "chapter": "Chapter 1: Semiconductor Diodes, Zener Diodes & Diode Circuits (Rectifiers, Clippers, Clampers)",
       "text": "State and prove the classical theorems and stability criteria associated with Semiconductor Diodes & Diode Applications (Rectifiers, Clippers, Clampers). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -393,7 +394,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Bipolar Junction Transistors (BJT) & Transistor Biasing",
+      "chapter": "Chapter 2: Bipolar Junction Transistors (BJT Characteristics, Biasing & Small-Signal AC Models)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Bipolar Junction Transistors (BJT) & Transistor Biasing. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -403,7 +404,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Bipolar Junction Transistors (BJT) & Transistor Biasing",
+      "chapter": "Chapter 2: Bipolar Junction Transistors (BJT Characteristics, Biasing & Small-Signal AC Models)",
       "text": "State and prove the classical theorems and stability criteria associated with Bipolar Junction Transistors (BJT) & Transistor Biasing. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -413,7 +414,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Field Effect Transistors (JFET & MOSFET) & Small Signal Analysis",
+      "chapter": "Chapter 3: Field Effect Transistors (JFET & MOSFET Characteristics, Biasing & Amplifiers)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Field Effect Transistors (JFET & MOSFET) & Small Signal Analysis. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -423,7 +424,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Field Effect Transistors (JFET & MOSFET) & Small Signal Analysis",
+      "chapter": "Chapter 3: Field Effect Transistors (JFET & MOSFET Characteristics, Biasing & Amplifiers)",
       "text": "State and prove the classical theorems and stability criteria associated with Field Effect Transistors (JFET & MOSFET) & Small Signal Analysis. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -433,7 +434,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Operational Amplifiers (Op-Amps) & Linear Applications",
+      "chapter": "Chapter 5: Operational Amplifiers (Op-Amps, Inverting/Non-Inverting, Integrators, Differentiators)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Operational Amplifiers (Op-Amps) & Linear Applications. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -443,7 +444,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Operational Amplifiers (Op-Amps) & Linear Applications",
+      "chapter": "Chapter 5: Operational Amplifiers (Op-Amps, Inverting/Non-Inverting, Integrators, Differentiators)",
       "text": "State and prove the classical theorems and stability criteria associated with Operational Amplifiers (Op-Amps) & Linear Applications. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -453,7 +454,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Feedback Amplifiers, Sinusoidal Oscillators & Power Amplifiers",
+      "chapter": "Chapter 6: Feedback Amplifiers & Sinusoidal Oscillators (Barkhausen Criterion, Wien Bridge, Colpitts)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Feedback Amplifiers, Sinusoidal Oscillators & Power Amplifiers. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -463,7 +464,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Feedback Amplifiers, Sinusoidal Oscillators & Power Amplifiers",
+      "chapter": "Chapter 6: Feedback Amplifiers & Sinusoidal Oscillators (Barkhausen Criterion, Wien Bridge, Colpitts)",
       "text": "State and prove the classical theorems and stability criteria associated with Feedback Amplifiers, Sinusoidal Oscillators & Power Amplifiers. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -473,7 +474,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Semiconductor Diodes & Diode Applications (Rectifiers, Clippers, Clampers)",
+      "chapter": "Chapter 1: Semiconductor Diodes, Zener Diodes & Diode Circuits (Rectifiers, Clippers, Clampers)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Semiconductor Diodes & Diode Applications (Rectifiers, Clippers, Clampers).",
       "marks": "6",
       "years": [
@@ -482,7 +483,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Semiconductor Diodes & Diode Applications (Rectifiers, Clippers, Clampers)",
+      "chapter": "Chapter 1: Semiconductor Diodes, Zener Diodes & Diode Circuits (Rectifiers, Clippers, Clampers)",
       "text": "Write short technical notes on: (a) Key design parameters in Semiconductor Diodes & Diode Applications (Rectifiers, Clippers, Clampers), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -491,7 +492,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Bipolar Junction Transistors (BJT) & Transistor Biasing",
+      "chapter": "Chapter 2: Bipolar Junction Transistors (BJT Characteristics, Biasing & Small-Signal AC Models)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Bipolar Junction Transistors (BJT) & Transistor Biasing.",
       "marks": "6",
       "years": [
@@ -500,7 +501,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Bipolar Junction Transistors (BJT) & Transistor Biasing",
+      "chapter": "Chapter 2: Bipolar Junction Transistors (BJT Characteristics, Biasing & Small-Signal AC Models)",
       "text": "Write short technical notes on: (a) Key design parameters in Bipolar Junction Transistors (BJT) & Transistor Biasing, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -509,7 +510,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Field Effect Transistors (JFET & MOSFET) & Small Signal Analysis",
+      "chapter": "Chapter 3: Field Effect Transistors (JFET & MOSFET Characteristics, Biasing & Amplifiers)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Field Effect Transistors (JFET & MOSFET) & Small Signal Analysis.",
       "marks": "6",
       "years": [
@@ -518,7 +519,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Field Effect Transistors (JFET & MOSFET) & Small Signal Analysis",
+      "chapter": "Chapter 3: Field Effect Transistors (JFET & MOSFET Characteristics, Biasing & Amplifiers)",
       "text": "Write short technical notes on: (a) Key design parameters in Field Effect Transistors (JFET & MOSFET) & Small Signal Analysis, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -527,7 +528,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Operational Amplifiers (Op-Amps) & Linear Applications",
+      "chapter": "Chapter 5: Operational Amplifiers (Op-Amps, Inverting/Non-Inverting, Integrators, Differentiators)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Operational Amplifiers (Op-Amps) & Linear Applications.",
       "marks": "6",
       "years": [
@@ -536,7 +537,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Operational Amplifiers (Op-Amps) & Linear Applications",
+      "chapter": "Chapter 5: Operational Amplifiers (Op-Amps, Inverting/Non-Inverting, Integrators, Differentiators)",
       "text": "Write short technical notes on: (a) Key design parameters in Operational Amplifiers (Op-Amps) & Linear Applications, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -545,7 +546,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Feedback Amplifiers, Sinusoidal Oscillators & Power Amplifiers",
+      "chapter": "Chapter 6: Feedback Amplifiers & Sinusoidal Oscillators (Barkhausen Criterion, Wien Bridge, Colpitts)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Feedback Amplifiers, Sinusoidal Oscillators & Power Amplifiers.",
       "marks": "6",
       "years": [
@@ -554,7 +555,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Feedback Amplifiers, Sinusoidal Oscillators & Power Amplifiers",
+      "chapter": "Chapter 6: Feedback Amplifiers & Sinusoidal Oscillators (Barkhausen Criterion, Wien Bridge, Colpitts)",
       "text": "Write short technical notes on: (a) Key design parameters in Feedback Amplifiers, Sinusoidal Oscillators & Power Amplifiers, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [

@@ -2,15 +2,16 @@
   "subject": "Discrete Structure",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Logic, Propositional Equivalence & Predicates",
-    "Sets, Relations & Functions",
-    "Induction, Recurrence Relations & Counting",
-    "Graph Theory & Network Flows",
-    "Trees & Algebraic Structures"
+    "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
+    "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders (Posets, Lattices)",
+    "Chapter 3: Functions, Pigeonhole Principle & Mathematical Induction",
+    "Chapter 4: Combinatorics & Recurrence Relations (Generating Functions, Master Theorem)",
+    "Chapter 5: Graph Theory (Paths, Circuits, Euler, Hamilton, Planar Graphs, Coloring)",
+    "Chapter 6: Trees, Spanning Trees & Tree Traversals"
   ],
   "questions": [
     {
-      "chapter": "Logic, Propositional Equivalence & Predicates",
+      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
       "text": "Explain Rules of Inference in propositional logic. Test the validity of the following argument using rules of inference:\n\"If I study discrete structures or I am lucky, then I will pass the exam. If I do not study discrete structures, then I am not lucky. Therefore, if I do not pass the exam, then I did not study discrete structures.\"",
       "marks": "3+5",
       "years": [
@@ -23,7 +24,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Sets, Relations & Functions",
+      "chapter": "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders (Posets, Lattices)",
       "text": "Define reflexive, symmetric, antisymmetric, and transitive relations. Let $R$ be a relation on $\\mathbb{Z}^+ \\times \\mathbb{Z}^+$ defined by $(a, b) R (c, d) \\iff ad = bc$. Prove that $R$ is an equivalence relation and determine the equivalence class $[(2, 3)]$.",
       "marks": "2+6",
       "years": [
@@ -36,7 +37,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Sets, Relations & Functions",
+      "chapter": "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders (Posets, Lattices)",
       "text": "Define Partial Ordering Relation (Poset) and Total Ordering. Draw the Hasse diagram of the poset $(D_{36}, \\mid)$ where $D_{36}$ is the set of positive divisors of $36$. Find all maximal elements, minimal elements, greatest element, least element, and check if it is a Lattice.",
       "marks": "3+5",
       "years": [
@@ -49,7 +50,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Sets, Relations & Functions",
+      "chapter": "Chapter 3: Functions, Pigeonhole Principle & Mathematical Induction",
       "text": "State the Pigeonhole Principle and Generalized Pigeonhole Principle. Show that among any group of $n$ people, there must be at least two people who have the same number of friends in the group. What is the minimum number of students required in a class to guarantee that at least 5 of them receive the same grade out of A, B, C, D, F?",
       "marks": "2+4",
       "years": [
@@ -62,7 +63,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Induction, Recurrence Relations & Counting",
+      "chapter": "Chapter 3: Functions, Pigeonhole Principle & Mathematical Induction",
       "text": "State the Principle of Mathematical Induction and Strong Induction. Prove by induction that $\\sum_{i=1}^n i^3 = \\left(\\frac{n(n+1)}{2}\\right)^2$ and that $n^3 + 2n$ is divisible by 3 for all integers $n \\ge 1$.",
       "marks": "3+4",
       "years": [
@@ -75,7 +76,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Induction, Recurrence Relations & Counting",
+      "chapter": "Chapter 4: Combinatorics & Recurrence Relations (Generating Functions, Master Theorem)",
       "text": "Solve the second-order homogeneous linear recurrence relation: $a_n - 7a_{n-1} + 12a_{n-2} = 0$ with initial conditions $a_0 = 2$ and $a_1 = 7$.",
       "marks": "6",
       "years": [
@@ -88,7 +89,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Induction, Recurrence Relations & Counting",
+      "chapter": "Chapter 4: Combinatorics & Recurrence Relations (Generating Functions, Master Theorem)",
       "text": "Solve the non-homogeneous recurrence relation: $a_n - 5a_{n-1} + 6a_{n-2} = 2^n + 3n$ with initial conditions $a_0 = 1$ and $a_1 = 3$.",
       "marks": "8",
       "years": [
@@ -101,7 +102,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Induction, Recurrence Relations & Counting",
+      "chapter": "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders (Posets, Lattices)",
       "text": "State the Principle of Inclusion-Exclusion for $n$ sets. How many integers between $1$ and $1000$ (inclusive) are divisible by $3$, $5$, or $7$? How many integers are not divisible by any of $3, 5, 7$?",
       "marks": "2+4",
       "years": [
@@ -114,7 +115,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Graph Theory & Network Flows",
+      "chapter": "Chapter 4: Combinatorics & Recurrence Relations (Generating Functions, Master Theorem)",
       "text": "State and prove the Handshaking Theorem: $\\sum_{v \\in V} \\text{deg}(v) = 2|E|$. Prove that in any undirected graph, the number of vertices with odd degree is always even. Can a simple graph exist with 15 vertices each having degree 5?",
       "marks": "2+3+1",
       "years": [
@@ -127,7 +128,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Graph Theory & Network Flows",
+      "chapter": "Chapter 5: Graph Theory (Paths, Circuits, Euler, Hamilton, Planar Graphs, Coloring)",
       "text": "Differentiate between Eulerian graph and Hamiltonian graph. State Euler's theorem for the existence of Euler circuits and paths. State Dirac's Theorem and Ore's Theorem for Hamiltonian cycles.",
       "marks": "3+5",
       "years": [
@@ -140,7 +141,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Graph Theory & Network Flows",
+      "chapter": "Chapter 5: Graph Theory (Paths, Circuits, Euler, Hamilton, Planar Graphs, Coloring)",
       "text": "State Euler's Planar Formula $v - e + f = 2$ for connected planar graphs. Prove that for any simple connected planar graph with $v \\ge 3$, $e \\le 3v - 6$. Hence prove that the complete graph $K_5$ and complete bipartite graph $K_{3,3}$ are non-planar (Kuratowski's theorem).",
       "marks": "2+6",
       "years": [
@@ -153,7 +154,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Graph Theory & Network Flows",
+      "chapter": "Chapter 4: Combinatorics & Recurrence Relations (Generating Functions, Master Theorem)",
       "text": "What are Saturated Edges in a flow network? State the Max-Flow Min-Cut Theorem. Find the maximum flow from source $s$ to sink $t$ in a given transport network using the Ford-Fulkerson algorithm and identify the minimum cut.",
       "marks": "2+6",
       "years": [
@@ -166,7 +167,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Trees & Algebraic Structures",
+      "chapter": "Chapter 5: Graph Theory (Paths, Circuits, Euler, Hamilton, Planar Graphs, Coloring)",
       "text": "Prove that a connected graph $T$ is a tree if and only if there is a unique simple path between every pair of vertices. Prove that a tree with $n$ vertices has exactly $n-1$ edges.",
       "marks": "3+4",
       "years": [
@@ -179,7 +180,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Trees & Algebraic Structures",
+      "chapter": "Chapter 6: Trees, Spanning Trees & Tree Traversals",
       "text": "Explain Kruskal's algorithm and Prim's algorithm for finding the Minimum Spanning Tree (MST) of a weighted connected graph. Trace Kruskal's algorithm on a given 8-vertex graph and state its time complexity.",
       "marks": "3+5",
       "years": [
@@ -192,7 +193,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Trees & Algebraic Structures",
+      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
       "text": "Define a Group, Abelian Group, Subgroup, Ring, and Field. Show that the set of integers modulo $n$ under addition modulo $n$, $(\\mathbb{Z}_n, +_n)$, forms an abelian group. Show that the set of non-zero integers modulo prime $p$, $(\\mathbb{Z}_p^*, \\times_p)$, forms an abelian group.",
       "marks": "4+4",
       "years": [
@@ -205,7 +206,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Trees & Algebraic Structures",
+      "chapter": "Chapter 4: Combinatorics & Recurrence Relations (Generating Functions, Master Theorem)",
       "text": "State and prove Lagrange's Theorem for finite groups: If $H$ is a subgroup of a finite group $G$, then $|H|$ divides $|G|$. Prove that every group of prime order is cyclic.",
       "marks": "4+3",
       "years": [
@@ -218,7 +219,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Logic, Propositional Equivalence & Predicates",
+      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
       "text": "Show that the compound proposition $((p \\lor q) \\land \\neg(\\neg p \\land (\\neg q \\lor \\neg r))) \\lor (\\neg p \\land \\neg q) \\lor (\\neg p \\land \\neg r)$ is a tautology using logical equivalence laws (without using truth tables).",
       "marks": "6",
       "years": [
@@ -230,7 +231,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Logic, Propositional Equivalence & Predicates",
+      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
       "text": "Express the following statements using quantifiers, logical connectives, and predicate logic:\n(a) \"Every student in this class has visited at least one country in South Asia.\"\n(b) \"There is a student in this class who has sent an email to everyone else in the class.\"\n(c) \"No one can fool all the people all the time.\"",
       "marks": "2+2+2",
       "years": [
@@ -242,7 +243,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Logic, Propositional Equivalence & Predicates",
+      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
       "text": "Find the Principal Conjunctive Normal Form (PCNF) and Principal Disjunctive Normal Form (PDNF) for the Boolean expression: $(p \\land q) \\lor (\\neg p \\land r) \\lor (q \\land r)$.",
       "marks": "6",
       "years": [
@@ -254,7 +255,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Sets, Relations & Functions",
+      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
       "text": "Find the Reflexive Closure, Symmetric Closure, and Transitive Closure (using Warshall's Algorithm) for the relation $R = \\{(1, 2), (2, 3), (3, 4), (4, 1)\\}$ on the set $A = \\{1, 2, 3, 4\\}$.",
       "marks": "6",
       "years": [
@@ -266,7 +267,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Induction, Recurrence Relations & Counting",
+      "chapter": "Chapter 4: Combinatorics & Recurrence Relations (Generating Functions, Master Theorem)",
       "text": "Solve the Fibonacci recurrence relation $F_n = F_{n-1} + F_{n-2}$ with $F_0 = 0, F_1 = 1$ using Generating Functions and derive Binet's formula: $F_n = \\frac{1}{\\sqrt{5}}\\left[\\left(\\frac{1+\\sqrt{5}}{2}\\right)^n - \\left(\\frac{1-\\sqrt{5}}{2}\\right)^n\\right]$.",
       "marks": "8",
       "years": [
@@ -278,7 +279,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Graph Theory & Network Flows",
+      "chapter": "Chapter 5: Graph Theory (Paths, Circuits, Euler, Hamilton, Planar Graphs, Coloring)",
       "text": "Explain Graph Isomorphism. Determine whether two given graphs $G_1 = (V_1, E_1)$ and $G_2 = (V_2, E_2)$ with $8$ vertices are isomorphic by checking graph invariants (degrees, cycles, adjacency matrices).",
       "marks": "6",
       "years": [
@@ -290,7 +291,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Graph Theory & Network Flows",
+      "chapter": "Chapter 5: Graph Theory (Paths, Circuits, Euler, Hamilton, Planar Graphs, Coloring)",
       "text": "Define Vertex Coloring and Chromatic Number $\\chi(G)$ of a graph. State the Four Color Theorem. Find the chromatic number of: (a) Complete graph $K_n$, (b) Bipartite graph $K_{m,n}$, (c) Cycle graph $C_n$ for even and odd $n$, and (d) Wheel graph $W_n$.",
       "marks": "2+4",
       "years": [
@@ -302,7 +303,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Trees & Algebraic Structures",
+      "chapter": "Chapter 6: Trees, Spanning Trees & Tree Traversals",
       "text": "Explain Tree Traversals (Preorder, Inorder, Postorder). Construct the Binary Search Tree for the words: `[banana, apple, mango, cherry, orange, grape, papaya]` and write its prefix and postfix notations.",
       "marks": "3+4",
       "years": [
@@ -314,7 +315,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Logic, Propositional Equivalence & Predicates",
+      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
       "text": "A practical engineering system operating under Logic, Propositional Equivalence & Predicates is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -326,7 +327,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Sets, Relations & Functions",
+      "chapter": "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders (Posets, Lattices)",
       "text": "A practical engineering system operating under Sets, Relations & Functions is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -338,7 +339,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Induction, Recurrence Relations & Counting",
+      "chapter": "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders (Posets, Lattices)",
       "text": "A practical engineering system operating under Induction, Recurrence Relations & Counting is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -350,7 +351,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Graph Theory & Network Flows",
+      "chapter": "Chapter 5: Graph Theory (Paths, Circuits, Euler, Hamilton, Planar Graphs, Coloring)",
       "text": "A practical engineering system operating under Graph Theory & Network Flows is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -362,7 +363,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Trees & Algebraic Structures",
+      "chapter": "Chapter 6: Trees, Spanning Trees & Tree Traversals",
       "text": "A practical engineering system operating under Trees & Algebraic Structures is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -374,7 +375,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Logic, Propositional Equivalence & Predicates",
+      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
       "text": "Prove that $(p \\to q) \\land (p \\to r) \\equiv p \\to (q \\land r)$ using logical equivalence laws. What is the contrapositive, converse, and inverse of the implication \"If $n$ is an integer divisible by 6, then $n$ is divisible by 2 and 3\"?",
       "marks": "3+3",
       "years": [
@@ -385,7 +386,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Logic, Propositional Equivalence & Predicates",
+      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
       "text": "Show that the premises \"A student in this class has not read the book\" and \"Everyone in this class passed the first exam\" imply the conclusion \"Someone who passed the first exam has not read the book\" using universal and existential instantiation.",
       "marks": "5",
       "years": [
@@ -396,7 +397,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Sets, Relations & Functions",
+      "chapter": "Chapter 3: Functions, Pigeonhole Principle & Mathematical Induction",
       "text": "Let $f: A \\to B$ and $g: B \\to C$ be functions. Prove that: (a) If $f$ and $g$ are one-to-one (injective), then $g \\circ f$ is one-to-one, (b) If $g \\circ f$ is onto (surjective), then $g$ is onto. Find the inverse of $f(x) = \\frac{2x+3}{x-1}$ for $x \\ne 1$.",
       "marks": "3+3",
       "years": [
@@ -407,7 +408,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Sets, Relations & Functions",
+      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
       "text": "Define a Lattice and Distributive Lattice. Show that in any lattice $(L, \\le)$, the modular inequality holds: if $a \\le c$, then $a \\lor (b \\land c) \\le (a \\lor b) \\land c$.",
       "marks": "5",
       "years": [
@@ -418,7 +419,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Induction, Recurrence Relations & Counting",
+      "chapter": "Chapter 4: Combinatorics & Recurrence Relations (Generating Functions, Master Theorem)",
       "text": "Find the number of non-negative integer solutions to the equation $x_1 + x_2 + x_3 + x_4 = 20$ subject to constraints $x_1 \\ge 2, x_2 \\ge 3, 0 \\le x_3 \\le 5, x_4 \\ge 1$ using generating functions / inclusion-exclusion.",
       "marks": "6",
       "years": [
@@ -429,7 +430,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Induction, Recurrence Relations & Counting",
+      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
       "text": "Find the coefficient of $x^{12}$ in the formal power series expansion of $(x^2 + x^3 + x^4 + \\dots)^3$ and $\\frac{1}{(1-2x)(1-3x)}$.",
       "marks": "6",
       "years": [
@@ -440,7 +441,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Logic, Propositional Equivalence & Predicates",
+      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Logic, Propositional Equivalence & Predicates. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -451,7 +452,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Logic, Propositional Equivalence & Predicates",
+      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
       "text": "Solve the standard numerical problem for Logic, Propositional Equivalence & Predicates using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -462,7 +463,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Sets, Relations & Functions",
+      "chapter": "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders (Posets, Lattices)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Sets, Relations & Functions. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -473,7 +474,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Sets, Relations & Functions",
+      "chapter": "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders (Posets, Lattices)",
       "text": "Solve the standard numerical problem for Sets, Relations & Functions using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -484,7 +485,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Induction, Recurrence Relations & Counting",
+      "chapter": "Chapter 3: Functions, Pigeonhole Principle & Mathematical Induction",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Induction, Recurrence Relations & Counting. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -495,7 +496,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Induction, Recurrence Relations & Counting",
+      "chapter": "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders (Posets, Lattices)",
       "text": "Solve the standard numerical problem for Induction, Recurrence Relations & Counting using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -506,7 +507,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Graph Theory & Network Flows",
+      "chapter": "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders (Posets, Lattices)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Graph Theory & Network Flows. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -517,7 +518,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Graph Theory & Network Flows",
+      "chapter": "Chapter 5: Graph Theory (Paths, Circuits, Euler, Hamilton, Planar Graphs, Coloring)",
       "text": "Solve the standard numerical problem for Graph Theory & Network Flows using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -528,7 +529,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Trees & Algebraic Structures",
+      "chapter": "Chapter 6: Trees, Spanning Trees & Tree Traversals",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Trees & Algebraic Structures. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -539,7 +540,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Trees & Algebraic Structures",
+      "chapter": "Chapter 6: Trees, Spanning Trees & Tree Traversals",
       "text": "Solve the standard numerical problem for Trees & Algebraic Structures using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -550,7 +551,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Logic, Propositional Equivalence & Predicates",
+      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Logic, Propositional Equivalence & Predicates. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -560,7 +561,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Logic, Propositional Equivalence & Predicates",
+      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
       "text": "State and prove the classical theorems and stability criteria associated with Logic, Propositional Equivalence & Predicates. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -570,7 +571,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Sets, Relations & Functions",
+      "chapter": "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders (Posets, Lattices)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Sets, Relations & Functions. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -580,7 +581,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Sets, Relations & Functions",
+      "chapter": "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders (Posets, Lattices)",
       "text": "State and prove the classical theorems and stability criteria associated with Sets, Relations & Functions. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -590,7 +591,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Induction, Recurrence Relations & Counting",
+      "chapter": "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders (Posets, Lattices)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Induction, Recurrence Relations & Counting. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -600,7 +601,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Induction, Recurrence Relations & Counting",
+      "chapter": "Chapter 4: Combinatorics & Recurrence Relations (Generating Functions, Master Theorem)",
       "text": "State and prove the classical theorems and stability criteria associated with Induction, Recurrence Relations & Counting. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -610,7 +611,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Graph Theory & Network Flows",
+      "chapter": "Chapter 5: Graph Theory (Paths, Circuits, Euler, Hamilton, Planar Graphs, Coloring)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Graph Theory & Network Flows. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -620,7 +621,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Graph Theory & Network Flows",
+      "chapter": "Chapter 5: Graph Theory (Paths, Circuits, Euler, Hamilton, Planar Graphs, Coloring)",
       "text": "State and prove the classical theorems and stability criteria associated with Graph Theory & Network Flows. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -630,7 +631,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Trees & Algebraic Structures",
+      "chapter": "Chapter 6: Trees, Spanning Trees & Tree Traversals",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Trees & Algebraic Structures. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -640,7 +641,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Trees & Algebraic Structures",
+      "chapter": "Chapter 6: Trees, Spanning Trees & Tree Traversals",
       "text": "State and prove the classical theorems and stability criteria associated with Trees & Algebraic Structures. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -650,7 +651,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Logic, Propositional Equivalence & Predicates",
+      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Logic, Propositional Equivalence & Predicates.",
       "marks": "6",
       "years": [
@@ -659,7 +660,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Logic, Propositional Equivalence & Predicates",
+      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
       "text": "Write short technical notes on: (a) Key design parameters in Logic, Propositional Equivalence & Predicates, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -668,7 +669,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Sets, Relations & Functions",
+      "chapter": "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders (Posets, Lattices)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Sets, Relations & Functions.",
       "marks": "6",
       "years": [
@@ -677,7 +678,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Sets, Relations & Functions",
+      "chapter": "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders (Posets, Lattices)",
       "text": "Write short technical notes on: (a) Key design parameters in Sets, Relations & Functions, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -686,7 +687,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Induction, Recurrence Relations & Counting",
+      "chapter": "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders (Posets, Lattices)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Induction, Recurrence Relations & Counting.",
       "marks": "6",
       "years": [
@@ -695,7 +696,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Induction, Recurrence Relations & Counting",
+      "chapter": "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders (Posets, Lattices)",
       "text": "Write short technical notes on: (a) Key design parameters in Induction, Recurrence Relations & Counting, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -704,7 +705,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Graph Theory & Network Flows",
+      "chapter": "Chapter 5: Graph Theory (Paths, Circuits, Euler, Hamilton, Planar Graphs, Coloring)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Graph Theory & Network Flows.",
       "marks": "6",
       "years": [
@@ -713,7 +714,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Graph Theory & Network Flows",
+      "chapter": "Chapter 5: Graph Theory (Paths, Circuits, Euler, Hamilton, Planar Graphs, Coloring)",
       "text": "Write short technical notes on: (a) Key design parameters in Graph Theory & Network Flows, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -722,7 +723,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Trees & Algebraic Structures",
+      "chapter": "Chapter 6: Trees, Spanning Trees & Tree Traversals",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Trees & Algebraic Structures.",
       "marks": "6",
       "years": [
@@ -731,7 +732,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Trees & Algebraic Structures",
+      "chapter": "Chapter 6: Trees, Spanning Trees & Tree Traversals",
       "text": "Write short technical notes on: (a) Key design parameters in Trees & Algebraic Structures, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [

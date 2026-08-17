@@ -1,15 +1,15 @@
 {
   "subject": "Numerical Methods",
   "chapters": [
-    "Non-Linear Equation Solving (Bisection, Secant, Newton-Raphson)",
-    "Systems of Linear Equations (Gauss Elimination, LU, Gauss-Seidel)",
-    "Interpolation & Approximation (Lagrange, Newton Divided Difference)",
-    "Numerical Differentiation & Numerical Integration (Trapezoidal, Simpson)",
-    "Ordinary & Partial Differential Equations (Euler, RK-4, Finite Difference)"
+    "Chapter 1: Non-Linear Equations (Bisection, Secant, Newton-Raphson, Fixed Point)",
+    "Chapter 2: Systems of Linear Equations (Gauss Elimination, LU Decomposition, Gauss-Seidel)",
+    "Chapter 3: Interpolation & Polynomial Approximation (Lagrange, Newton Divided Difference)",
+    "Chapter 4: Numerical Differentiation & Integration (Trapezoidal, Simpson 1/3 & 3/8, Gaussian Quadrature)",
+    "Chapter 5: Numerical Solution of ODEs (Euler, Heun, Runge-Kutta 4th Order, Boundary Value Problems)"
   ],
   "questions": [
     {
-      "chapter": "Non-Linear Equation Solving (Bisection, Secant, Newton-Raphson)",
+      "chapter": "Chapter 1: Non-Linear Equations (Bisection, Secant, Newton-Raphson, Fixed Point)",
       "text": "Derive the Newton-Raphson Formula: $x_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)}$ using Taylor series. Prove that Newton-Raphson method has Quadratic Convergence (Order $p = 2$). Find a real root of $x e^x - 1 = 0$ correct to 4 decimal places using Newton-Raphson starting with $x_0 = 0.5$.",
       "marks": "4+6",
       "years": [
@@ -22,7 +22,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Non-Linear Equation Solving (Bisection, Secant, Newton-Raphson)",
+      "chapter": "Chapter 1: Non-Linear Equations (Bisection, Secant, Newton-Raphson, Fixed Point)",
       "text": "Compare Bisection Method, False Position (Regula-Falsi) Method, and Secant Method. Find the positive root of $x^3 - 4x - 9 = 0$ using Secant Method with initial guesses $x_0 = 2, x_1 = 3$.",
       "marks": "8",
       "years": [
@@ -35,7 +35,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Systems of Linear Equations (Gauss Elimination, LU, Gauss-Seidel)",
+      "chapter": "Chapter 2: Systems of Linear Equations (Gauss Elimination, LU Decomposition, Gauss-Seidel)",
       "text": "Solve the system of linear equations using Gauss Elimination with Partial Pivoting:\n$2x_1 + x_2 + x_3 = 10$\n$3x_1 + 2x_2 + 3x_3 = 18$\n$x_1 + 4x_2 + 9x_3 = 16$.",
       "marks": "8",
       "years": [
@@ -48,7 +48,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Systems of Linear Equations (Gauss Elimination, LU, Gauss-Seidel)",
+      "chapter": "Chapter 2: Systems of Linear Equations (Gauss Elimination, LU Decomposition, Gauss-Seidel)",
       "text": "Solve the following system using Gauss-Seidel Iterative Method (perform 4 iterations):\n$10x_1 + x_2 + 2x_3 = 44$\n$2x_1 + 10x_2 + x_3 = 51$\n$x_1 + 2x_2 + 10x_3 = 61$. State the condition for convergence (Strict Diagonal Dominance).",
       "marks": "3+5",
       "years": [
@@ -61,7 +61,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Systems of Linear Equations (Gauss Elimination, LU, Gauss-Seidel)",
+      "chapter": "Chapter 5: Numerical Solution of ODEs (Euler, Heun, Runge-Kutta 4th Order, Boundary Value Problems)",
       "text": "Find the Dominant Eigenvalue and corresponding Eigenvector of matrix $\\mathbf{A} = \\begin{bmatrix} 4 & 1 & 0 \\\\ 1 & 2 & 1 \\\\ 0 & 1 & 1 \\end{bmatrix}$ using the Power Method with initial vector $\\mathbf{x}_0 = [1, 1, 1]^T$.",
       "marks": "8",
       "years": [
@@ -74,7 +74,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Interpolation & Approximation (Lagrange, Newton Divided Difference)",
+      "chapter": "Chapter 3: Interpolation & Polynomial Approximation (Lagrange, Newton Divided Difference)",
       "text": "Derive Lagrange's Interpolating Polynomial: $P_n(x) = \\sum_{i=0}^n L_i(x) y_i$. Fit a cubic polynomial to the data points $(0, 1), (1, 3), (3, 49), (4, 129)$ and estimate $y(2)$.",
       "marks": "4+6",
       "years": [
@@ -87,7 +87,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Interpolation & Approximation (Lagrange, Newton Divided Difference)",
+      "chapter": "Chapter 3: Interpolation & Polynomial Approximation (Lagrange, Newton Divided Difference)",
       "text": "Derive Newton's Divided Difference Interpolation formula. Construct the divided difference table and find $f(2.5)$ for given data points.",
       "marks": "8",
       "years": [
@@ -100,7 +100,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Numerical Differentiation & Numerical Integration (Trapezoidal, Simpson)",
+      "chapter": "Chapter 4: Numerical Differentiation & Integration (Trapezoidal, Simpson 1/3 & 3/8, Gaussian Quadrature)",
       "text": "Derive Simpson's 1/3rd Rule ($I = \\frac{h}{3}[y_0 + 4\\sum y_{odd} + 2\\sum y_{even} + y_n]$) and Simpson's 3/8th Rule from Newton-Cotes quadrature formula. Evaluate $\\int_0^1 \\frac{1}{1 + x^2}dx$ with $n = 6$ sub-intervals using: (a) Composite Trapezoidal Rule, and (b) Composite Simpson's 1/3rd Rule. Hence approximate $\\pi$.",
       "marks": "4+6",
       "years": [
@@ -113,7 +113,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Numerical Differentiation & Numerical Integration (Trapezoidal, Simpson)",
+      "chapter": "Chapter 2: Systems of Linear Equations (Gauss Elimination, LU Decomposition, Gauss-Seidel)",
       "text": "Explain Gauss-Legendre Two-Point and Three-Point Quadrature formulas ($I = \\int_{-1}^1 f(\\xi)d\\xi \\approx w_1 f(\\xi_1) + w_2 f(\\xi_2)$). Evaluate $\\int_1^3 \\frac{e^x}{x}dx$ using 2-point Gauss Legendre quadrature.",
       "marks": "6",
       "years": [
@@ -126,7 +126,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Ordinary & Partial Differential Equations (Euler, RK-4, Finite Difference)",
+      "chapter": "Chapter 5: Numerical Solution of ODEs (Euler, Heun, Runge-Kutta 4th Order, Boundary Value Problems)",
       "text": "Derive the Fourth-Order Runge-Kutta (RK-4) Method for solving initial value ODEs $\\frac{dy}{dx} = f(x, y), y(x_0) = y_0$. Solve $\\frac{dy}{dx} = x^2 + y^2$ with $y(0) = 1$ to find $y(0.2)$ using step size $h = 0.1$.",
       "marks": "4+6",
       "years": [
@@ -139,7 +139,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Ordinary & Partial Differential Equations (Euler, RK-4, Finite Difference)",
+      "chapter": "Chapter 5: Numerical Solution of ODEs (Euler, Heun, Runge-Kutta 4th Order, Boundary Value Problems)",
       "text": "Solve the Boundary Value Problem (BVP) $\\frac{d^2y}{dx^2} + y = x$ with $y(0) = 0, y(1) = 0$ using the Finite Difference Method with $h = 0.25$.",
       "marks": "8",
       "years": [
@@ -152,7 +152,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Ordinary & Partial Differential Equations (Euler, RK-4, Finite Difference)",
+      "chapter": "Chapter 5: Numerical Solution of ODEs (Euler, Heun, Runge-Kutta 4th Order, Boundary Value Problems)",
       "text": "Solve the 2D Laplace Equation $\\frac{\\partial^2 u}{\\partial x^2} + \\frac{\\partial^2 u}{\\partial y^2} = 0$ over a square grid of $3 \\times 3$ interior nodes with given Dirichlet boundary temperatures using Liebmann's standard 5-point finite difference formula.",
       "marks": "10",
       "years": [
@@ -165,7 +165,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Systems of Linear Equations (Gauss Elimination, LU, Gauss-Seidel)",
+      "chapter": "Chapter 2: Systems of Linear Equations (Gauss Elimination, LU Decomposition, Gauss-Seidel)",
       "text": "Solve the linear system using LU Decomposition (Doolittle's / Crout's method $\\mathbf{A} = \\mathbf{L}\\mathbf{U}$) and solve by forward and backward substitution.",
       "marks": "8",
       "years": [
@@ -177,7 +177,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Interpolation & Approximation (Lagrange, Newton Divided Difference)",
+      "chapter": "Chapter 1: Non-Linear Equations (Bisection, Secant, Newton-Raphson, Fixed Point)",
       "text": "Fit a straight line $y = ax + b$ and an exponential curve $y = a e^{bx}$ to a given dataset using the Principle of Least Squares (derive the Normal Equations).",
       "marks": "4+4",
       "years": [
@@ -189,7 +189,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Non-Linear Equation Solving (Bisection, Secant, Newton-Raphson)",
+      "chapter": "Chapter 1: Non-Linear Equations (Bisection, Secant, Newton-Raphson, Fixed Point)",
       "text": "A practical engineering system operating under Non-Linear Equation Solving (Bisection, Secant, Newton-Raphson) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -201,7 +201,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Systems of Linear Equations (Gauss Elimination, LU, Gauss-Seidel)",
+      "chapter": "Chapter 2: Systems of Linear Equations (Gauss Elimination, LU Decomposition, Gauss-Seidel)",
       "text": "A practical engineering system operating under Systems of Linear Equations (Gauss Elimination, LU, Gauss-Seidel) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -213,7 +213,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Interpolation & Approximation (Lagrange, Newton Divided Difference)",
+      "chapter": "Chapter 3: Interpolation & Polynomial Approximation (Lagrange, Newton Divided Difference)",
       "text": "A practical engineering system operating under Interpolation & Approximation (Lagrange, Newton Divided Difference) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -225,7 +225,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Numerical Differentiation & Numerical Integration (Trapezoidal, Simpson)",
+      "chapter": "Chapter 4: Numerical Differentiation & Integration (Trapezoidal, Simpson 1/3 & 3/8, Gaussian Quadrature)",
       "text": "A practical engineering system operating under Numerical Differentiation & Numerical Integration (Trapezoidal, Simpson) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -237,7 +237,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Ordinary & Partial Differential Equations (Euler, RK-4, Finite Difference)",
+      "chapter": "Chapter 1: Non-Linear Equations (Bisection, Secant, Newton-Raphson, Fixed Point)",
       "text": "A practical engineering system operating under Ordinary & Partial Differential Equations (Euler, RK-4, Finite Difference) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -249,7 +249,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Non-Linear Equation Solving (Bisection, Secant, Newton-Raphson)",
+      "chapter": "Chapter 1: Non-Linear Equations (Bisection, Secant, Newton-Raphson, Fixed Point)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Non-Linear Equation Solving (Bisection, Secant, Newton-Raphson). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -260,7 +260,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Non-Linear Equation Solving (Bisection, Secant, Newton-Raphson)",
+      "chapter": "Chapter 1: Non-Linear Equations (Bisection, Secant, Newton-Raphson, Fixed Point)",
       "text": "Solve the standard numerical problem for Non-Linear Equation Solving (Bisection, Secant, Newton-Raphson) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -271,7 +271,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Systems of Linear Equations (Gauss Elimination, LU, Gauss-Seidel)",
+      "chapter": "Chapter 2: Systems of Linear Equations (Gauss Elimination, LU Decomposition, Gauss-Seidel)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Systems of Linear Equations (Gauss Elimination, LU, Gauss-Seidel). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -282,7 +282,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Systems of Linear Equations (Gauss Elimination, LU, Gauss-Seidel)",
+      "chapter": "Chapter 2: Systems of Linear Equations (Gauss Elimination, LU Decomposition, Gauss-Seidel)",
       "text": "Solve the standard numerical problem for Systems of Linear Equations (Gauss Elimination, LU, Gauss-Seidel) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -293,7 +293,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Interpolation & Approximation (Lagrange, Newton Divided Difference)",
+      "chapter": "Chapter 3: Interpolation & Polynomial Approximation (Lagrange, Newton Divided Difference)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Interpolation & Approximation (Lagrange, Newton Divided Difference). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -304,7 +304,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Interpolation & Approximation (Lagrange, Newton Divided Difference)",
+      "chapter": "Chapter 3: Interpolation & Polynomial Approximation (Lagrange, Newton Divided Difference)",
       "text": "Solve the standard numerical problem for Interpolation & Approximation (Lagrange, Newton Divided Difference) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -315,7 +315,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Numerical Differentiation & Numerical Integration (Trapezoidal, Simpson)",
+      "chapter": "Chapter 4: Numerical Differentiation & Integration (Trapezoidal, Simpson 1/3 & 3/8, Gaussian Quadrature)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Numerical Differentiation & Numerical Integration (Trapezoidal, Simpson). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -326,7 +326,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Numerical Differentiation & Numerical Integration (Trapezoidal, Simpson)",
+      "chapter": "Chapter 4: Numerical Differentiation & Integration (Trapezoidal, Simpson 1/3 & 3/8, Gaussian Quadrature)",
       "text": "Solve the standard numerical problem for Numerical Differentiation & Numerical Integration (Trapezoidal, Simpson) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -337,7 +337,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Ordinary & Partial Differential Equations (Euler, RK-4, Finite Difference)",
+      "chapter": "Chapter 1: Non-Linear Equations (Bisection, Secant, Newton-Raphson, Fixed Point)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Ordinary & Partial Differential Equations (Euler, RK-4, Finite Difference). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -348,7 +348,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Ordinary & Partial Differential Equations (Euler, RK-4, Finite Difference)",
+      "chapter": "Chapter 5: Numerical Solution of ODEs (Euler, Heun, Runge-Kutta 4th Order, Boundary Value Problems)",
       "text": "Solve the standard numerical problem for Ordinary & Partial Differential Equations (Euler, RK-4, Finite Difference) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -359,7 +359,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Non-Linear Equation Solving (Bisection, Secant, Newton-Raphson)",
+      "chapter": "Chapter 1: Non-Linear Equations (Bisection, Secant, Newton-Raphson, Fixed Point)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Non-Linear Equation Solving (Bisection, Secant, Newton-Raphson). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -369,7 +369,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Non-Linear Equation Solving (Bisection, Secant, Newton-Raphson)",
+      "chapter": "Chapter 1: Non-Linear Equations (Bisection, Secant, Newton-Raphson, Fixed Point)",
       "text": "State and prove the classical theorems and stability criteria associated with Non-Linear Equation Solving (Bisection, Secant, Newton-Raphson). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -379,7 +379,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Systems of Linear Equations (Gauss Elimination, LU, Gauss-Seidel)",
+      "chapter": "Chapter 2: Systems of Linear Equations (Gauss Elimination, LU Decomposition, Gauss-Seidel)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Systems of Linear Equations (Gauss Elimination, LU, Gauss-Seidel). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -389,7 +389,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Systems of Linear Equations (Gauss Elimination, LU, Gauss-Seidel)",
+      "chapter": "Chapter 2: Systems of Linear Equations (Gauss Elimination, LU Decomposition, Gauss-Seidel)",
       "text": "State and prove the classical theorems and stability criteria associated with Systems of Linear Equations (Gauss Elimination, LU, Gauss-Seidel). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -399,7 +399,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Interpolation & Approximation (Lagrange, Newton Divided Difference)",
+      "chapter": "Chapter 3: Interpolation & Polynomial Approximation (Lagrange, Newton Divided Difference)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Interpolation & Approximation (Lagrange, Newton Divided Difference). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -409,7 +409,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Interpolation & Approximation (Lagrange, Newton Divided Difference)",
+      "chapter": "Chapter 3: Interpolation & Polynomial Approximation (Lagrange, Newton Divided Difference)",
       "text": "State and prove the classical theorems and stability criteria associated with Interpolation & Approximation (Lagrange, Newton Divided Difference). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -419,7 +419,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Numerical Differentiation & Numerical Integration (Trapezoidal, Simpson)",
+      "chapter": "Chapter 4: Numerical Differentiation & Integration (Trapezoidal, Simpson 1/3 & 3/8, Gaussian Quadrature)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Numerical Differentiation & Numerical Integration (Trapezoidal, Simpson). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -429,7 +429,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Numerical Differentiation & Numerical Integration (Trapezoidal, Simpson)",
+      "chapter": "Chapter 4: Numerical Differentiation & Integration (Trapezoidal, Simpson 1/3 & 3/8, Gaussian Quadrature)",
       "text": "State and prove the classical theorems and stability criteria associated with Numerical Differentiation & Numerical Integration (Trapezoidal, Simpson). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -439,7 +439,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Ordinary & Partial Differential Equations (Euler, RK-4, Finite Difference)",
+      "chapter": "Chapter 5: Numerical Solution of ODEs (Euler, Heun, Runge-Kutta 4th Order, Boundary Value Problems)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Ordinary & Partial Differential Equations (Euler, RK-4, Finite Difference). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -449,7 +449,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Ordinary & Partial Differential Equations (Euler, RK-4, Finite Difference)",
+      "chapter": "Chapter 5: Numerical Solution of ODEs (Euler, Heun, Runge-Kutta 4th Order, Boundary Value Problems)",
       "text": "State and prove the classical theorems and stability criteria associated with Ordinary & Partial Differential Equations (Euler, RK-4, Finite Difference). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -459,7 +459,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Non-Linear Equation Solving (Bisection, Secant, Newton-Raphson)",
+      "chapter": "Chapter 1: Non-Linear Equations (Bisection, Secant, Newton-Raphson, Fixed Point)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Non-Linear Equation Solving (Bisection, Secant, Newton-Raphson).",
       "marks": "6",
       "years": [
@@ -468,7 +468,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Non-Linear Equation Solving (Bisection, Secant, Newton-Raphson)",
+      "chapter": "Chapter 1: Non-Linear Equations (Bisection, Secant, Newton-Raphson, Fixed Point)",
       "text": "Write short technical notes on: (a) Key design parameters in Non-Linear Equation Solving (Bisection, Secant, Newton-Raphson), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -477,7 +477,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Systems of Linear Equations (Gauss Elimination, LU, Gauss-Seidel)",
+      "chapter": "Chapter 2: Systems of Linear Equations (Gauss Elimination, LU Decomposition, Gauss-Seidel)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Systems of Linear Equations (Gauss Elimination, LU, Gauss-Seidel).",
       "marks": "6",
       "years": [
@@ -486,7 +486,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Systems of Linear Equations (Gauss Elimination, LU, Gauss-Seidel)",
+      "chapter": "Chapter 2: Systems of Linear Equations (Gauss Elimination, LU Decomposition, Gauss-Seidel)",
       "text": "Write short technical notes on: (a) Key design parameters in Systems of Linear Equations (Gauss Elimination, LU, Gauss-Seidel), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -495,7 +495,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Interpolation & Approximation (Lagrange, Newton Divided Difference)",
+      "chapter": "Chapter 3: Interpolation & Polynomial Approximation (Lagrange, Newton Divided Difference)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Interpolation & Approximation (Lagrange, Newton Divided Difference).",
       "marks": "6",
       "years": [
@@ -504,7 +504,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Interpolation & Approximation (Lagrange, Newton Divided Difference)",
+      "chapter": "Chapter 3: Interpolation & Polynomial Approximation (Lagrange, Newton Divided Difference)",
       "text": "Write short technical notes on: (a) Key design parameters in Interpolation & Approximation (Lagrange, Newton Divided Difference), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -513,7 +513,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Numerical Differentiation & Numerical Integration (Trapezoidal, Simpson)",
+      "chapter": "Chapter 4: Numerical Differentiation & Integration (Trapezoidal, Simpson 1/3 & 3/8, Gaussian Quadrature)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Numerical Differentiation & Numerical Integration (Trapezoidal, Simpson).",
       "marks": "6",
       "years": [
@@ -522,7 +522,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Numerical Differentiation & Numerical Integration (Trapezoidal, Simpson)",
+      "chapter": "Chapter 4: Numerical Differentiation & Integration (Trapezoidal, Simpson 1/3 & 3/8, Gaussian Quadrature)",
       "text": "Write short technical notes on: (a) Key design parameters in Numerical Differentiation & Numerical Integration (Trapezoidal, Simpson), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -531,7 +531,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Ordinary & Partial Differential Equations (Euler, RK-4, Finite Difference)",
+      "chapter": "Chapter 5: Numerical Solution of ODEs (Euler, Heun, Runge-Kutta 4th Order, Boundary Value Problems)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Ordinary & Partial Differential Equations (Euler, RK-4, Finite Difference).",
       "marks": "6",
       "years": [
@@ -540,7 +540,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Ordinary & Partial Differential Equations (Euler, RK-4, Finite Difference)",
+      "chapter": "Chapter 5: Numerical Solution of ODEs (Euler, Heun, Runge-Kutta 4th Order, Boundary Value Problems)",
       "text": "Write short technical notes on: (a) Key design parameters in Ordinary & Partial Differential Equations (Euler, RK-4, Finite Difference), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
