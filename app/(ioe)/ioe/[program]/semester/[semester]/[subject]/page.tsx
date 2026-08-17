@@ -45,8 +45,8 @@ export async function generateMetadata({ params }: PageProps) {
   const catalog = findCatalogSubject(subjectRow?.title ?? "");
   if (!subjectRow || !catalog) return {};
   return buildIoeMetadata({
-    title: `${subjectRow.title} (${subjectRow.code}) IOE Past Question Papers & Chapter-wise PYQs | ${program?.code} ${program?.name} TU`,
-    description: `Official ${subjectRow.title} (${subjectRow.code}) past question papers with PDF viewer, direct downloads, and chapter-wise question bank categorized by exam frequency for IOE ${program?.name} (${program?.code}) Semester ${semester}.`,
+    title: `${subjectRow.title} Past Year Questions (PYQ) IOE PDF`,
+    description: `Download ${subjectRow.title} (${subjectRow.code}) IOE past year questions (PYQ) PDF. Chapter-wise question bank with exam repetition frequency for IOE ${program?.name} (${program?.code}) Semester ${semester}, Tribhuvan University.`,
     path: `/ioe/${programSlug}/semester/${semester}/${subjectSlug}`,
   });
 }

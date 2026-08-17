@@ -31,8 +31,8 @@ export async function generateMetadata({ params }: PageProps) {
   const subject = getCatalogs().find((s) => getSubjectSlugFromName(s.name) === slug);
   if (!subject) return {};
   return buildIoeMetadata({
-    title: `${subject.name} IOE Past Question Papers & Chapter-wise PYQs | TU Archive`,
-    description: `Official ${subject.name} IOE past question papers (PDF) with direct download, Drive viewer, and chapter-wise question bank categorized by exam occurrence frequency.`,
+    title: `${subject.name} Past Year Questions (PYQ) IOE PDF`,
+    description: `Download ${subject.name} IOE past year questions (PYQ) PDF. Chapter-wise question bank with exam repetition frequency for TU IOE engineering students.`,
     path: `/ioe/subjects/${slug}`,
   });
 }
