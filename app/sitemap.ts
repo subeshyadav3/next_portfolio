@@ -9,7 +9,6 @@ import { SITE_URL } from "@/lib/site-config";
 import { IOE_ENABLED } from "@/lib/ioe/config";
 import {
   getAllPrograms,
-  getPublicCatalogs,
   findCatalogSubject,
   isSubjectPublic,
   getSubjectSlugFromName,
@@ -110,12 +109,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
             }))
         ),
       ]),
-      ...getPublicCatalogs().map((subject) => ({
-        url: `${SITE_URL}/ioe/subjects/${getSubjectSlugFromName(subject.name)}`,
-        lastModified: new Date(),
-        changeFrequency: "monthly" as const,
-        priority: 0.5,
-      })),
     ];
   }
 
