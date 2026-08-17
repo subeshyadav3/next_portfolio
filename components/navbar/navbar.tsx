@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useActiveSection } from "../../hooks/useActiveSection";
 import { IOE_UI_VISIBLE } from "@/lib/ioe/config";
@@ -102,7 +103,7 @@ export default function Navbar() {
         className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 transition-transform duration-300 ${showNavbar ? "translate-y-0" : "-translate-y-full"} bg-glass border-b border-custom`}
       >
         <Link href="#home" scroll={false}>
-          <img src="/logo.svg" alt="Logo" className="w-8 h-8" />
+          <Image src="/logo.svg" alt="Logo" width={32} height={32} className="w-8 h-8" priority />
         </Link>
         {!isMobile ? (
           <div className="flex items-center gap-8 text-sm font-medium" style={{ color: "var(--text-secondary)" }}>

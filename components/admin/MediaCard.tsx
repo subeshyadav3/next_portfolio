@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { deleteMediaAction } from "@/actions/media";
 
 interface MediaCardProps {
@@ -23,11 +24,14 @@ export function MediaCard({ id, publicId, secureUrl, width, height, bytes }: Med
 
   return (
     <div className="group relative overflow-hidden rounded-lg border border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900">
-      <div className="aspect-video w-full overflow-hidden bg-gray-100 dark:bg-gray-800">
-        <img
+      <div className="relative aspect-video w-full overflow-hidden bg-gray-100 dark:bg-gray-800">
+        <Image
           src={secureUrl}
           alt={publicId}
-          className="h-full w-full object-cover transition-transform group-hover:scale-105"
+          fill
+          unoptimized
+          sizes="(max-width: 768px) 100vw, 300px"
+          className="object-cover transition-transform group-hover:scale-105"
         />
       </div>
       <div className="p-3">

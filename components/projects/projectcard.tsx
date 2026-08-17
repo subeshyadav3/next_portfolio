@@ -1,5 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
+import Image from "next/image";
 import { ExternalLink, Github } from "lucide-react";
 import {
   SiReact, SiNextdotjs, SiNodedotjs, SiTypescript, SiTailwindcss, SiMongodb,
@@ -98,14 +99,13 @@ export default function ProjectCard({
     >
       {/* Thumbnail */}
       {photo && (
-        <div className="hidden sm:block shrink-0">
-          <img
+        <div className="hidden sm:block shrink-0 relative w-20 h-20 overflow-hidden rounded-lg">
+          <Image
             src={Array.isArray(photo) ? photo[0] : photo}
             alt={title}
-            width={80}
-            height={80}
-            loading="lazy"
-            className="w-20 h-20 object-cover rounded-lg"
+            fill
+            sizes="80px"
+            className="object-cover"
           />
         </div>
       )}
