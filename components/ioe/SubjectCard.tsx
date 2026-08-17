@@ -1,7 +1,7 @@
 import Link from "next/link";
-import type { IoeCurriculumSubject, IoePaperFile, IoeProgram } from "@/lib/ioe/types";
+import type { IoeCurriculumSubject, IoeProgram } from "@/lib/ioe/types";
 import { findCatalogSubject, getSubjectSlugFromName } from "@/lib/ioe/data";
-import { FileText, ArrowRight, Clock, Lock } from "lucide-react";
+import { FileText, ArrowRight, Lock } from "lucide-react";
 
 interface SubjectCardProps {
   program: IoeProgram;
@@ -12,14 +12,15 @@ interface SubjectCardProps {
 export function SubjectCard({ program, semester, subject }: SubjectCardProps) {
   const catalog = findCatalogSubject(subject.title);
   const hasPapers = !!catalog && catalog.papers.length > 0;
-  const papers: IoePaperFile[] = catalog?.papers ?? [];
-  const years = Array.from(
+  const papers = catalog?.papers ?? [];
+  const paperTags = Array.from(
     new Set(
-      papers
-        .map((p) => p.file.match(/20\d{2}/)?.[0])
-        .filter((y): y is string => !!y)
+      papers.map((p) => {
+        if (!p.sem) return "";
+        return p.sem.replace(/-/g, " ").replace(/^\w/, (c) => c.toUpperCase());
+      }).filter(Boolean)
     )
-  ).sort((a, b) => Number(b) - Number(a));
+  );
 
   const href = hasPapers
     ? `/ioe/${program.slug}/semester/${semester}/${getSubjectSlugFromName(subject.title)}`
@@ -36,12 +37,12 @@ export function SubjectCard({ program, semester, subject }: SubjectCardProps) {
           {hasPapers ? (
             <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2 py-0.5 text-[11px] font-semibold text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300">
               <FileText className="h-3 w-3" />
-              {papers.length} {papers.length === 1 ? "paper" : "papers"}
+              {papers.length} {papers.length === 1 ? "Paper" : "Papers"}
             </span>
           ) : (
             <span className="inline-flex items-center gap-1 rounded-full bg-slate-100/80 px-2 py-0.5 text-[10px] font-medium text-slate-400 dark:bg-gray-800 dark:text-slate-500">
               <Lock className="h-2.5 w-2.5" />
-              No papers yet
+              Syllabus Listed
             </span>
           )}
         </div>
@@ -55,31 +56,30 @@ export function SubjectCard({ program, semester, subject }: SubjectCardProps) {
       <div className="mt-4 border-t border-slate-100 pt-3 dark:border-gray-800/80">
         {hasPapers ? (
           <div className="flex flex-wrap items-center justify-between gap-2">
-            {/* Year chips */}
+            {/* Paper chips */}
             <div className="flex flex-wrap items-center gap-1">
-              <Clock className="h-3 w-3 text-slate-300 dark:text-slate-600" />
-              {years.slice(0, 3).map((yr) => (
+              {paperTags.slice(0, 2).map((tag) => (
                 <span
-                  key={yr}
+                  key={tag}
                   className="rounded bg-slate-100 px-1.5 py-0.5 font-mono text-[10px] font-medium text-slate-600 dark:bg-gray-800 dark:text-slate-300"
                 >
-                  {yr}
+                  {tag}
                 </span>
               ))}
-              {years.length > 3 && (
+              {paperTags.length > 2 && (
                 <span className="text-[10px] text-slate-400 dark:text-slate-500">
-                  +{years.length - 3} more
+                  +{paperTags.length - 2} more
                 </span>
               )}
             </div>
 
-            <span className="inline-flex items-center gap-0.5 text-xs font-semibold text-blue-600 opacity-0 transition-all group-hover:translate-x-0.5 group-hover:opacity-100 dark:text-blue-400">
-              View <ArrowRight className="h-3 w-3" />
+            <span className="inline-flex items-center gap-0.5 text-xs font-semibold text-blue-600 transition-all group-hover:translate-x-0.5 dark:text-blue-400">
+              View Papers <ArrowRight className="h-3 w-3" />
             </span>
           </div>
         ) : (
           <p className="text-[11px] text-slate-400 dark:text-slate-500">
-            Papers will appear here when available.
+            Papers will appear here when archived.
           </p>
         )}
       </div>

@@ -91,22 +91,26 @@ export function learningResourceLd(input: {
   papers: number;
   questions?: number;
 }): Record<string, unknown> {
-  return {
+  const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "LearningResource",
     name: input.title,
     description: input.description,
     url: ioeAbsolute(input.path),
-    isPartOf: input.program
-      ? { "@type": "Course", name: input.program.fullName }
-      : undefined,
     educationalLevel: "University",
+    learningResourceType: "Past Examination Papers and Syllabus",
     numberOfItems: input.papers,
-    hasPart: input.papers > 0 ? undefined : undefined,
-    ...(input.questions !== undefined && input.questions > 0
-      ? { commentCount: undefined }
-      : {}),
   };
+
+  if (input.program) {
+    schema.isPartOf = {
+      "@type": "Course",
+      name: input.program.fullName,
+      courseCode: input.program.code,
+    };
+  }
+
+  return schema;
 }
 
 export { getSubjectSlugFromName };

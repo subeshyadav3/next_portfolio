@@ -115,7 +115,7 @@ export default function SyllabusSection({
       <div className="flex items-center justify-between">
         <h2 className="flex items-center gap-2 text-base font-bold text-slate-900 dark:text-white">
           <BookOpen className="h-4 w-4 text-blue-600 dark:text-blue-400" />
-          Official Syllabus &amp; Course Topics
+          Curriculum Syllabus &amp; Course Topics
         </h2>
         {(syllabus.syllabus || syllabus.micro) && (
           <span className="text-xs text-slate-400 dark:text-slate-500">
@@ -155,7 +155,7 @@ export default function SyllabusSection({
         <UnitList units={syllabus.units} />
       ) : (
         <p className="text-xs text-slate-500 dark:text-slate-400">
-          Official {subject} syllabus for the current IOE curriculum.
+          Curriculum syllabus for {subject} under the IOE engineering degree program.
         </p>
       )}
     </section>

@@ -2,16 +2,16 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { IOE_ENABLED } from "@/lib/ioe/config";
 import { getCatalogs } from "@/lib/ioe/data";
-import { buildIoeMetadata, jsonLd } from "@/lib/ioe/seo";
+import { buildIoeMetadata } from "@/lib/ioe/seo";
 import { OtherProgramsViewer } from "@/components/ioe/OtherProgramsViewer";
-import { ChevronRight, FileText, BookOpen, Layers } from "lucide-react";
+import { ChevronRight } from "lucide-react";
 import programsData from "@/data/ioe/programs.json";
 import otherProgramsData from "@/data/ioe/other-programs.json";
 
 export const metadata = buildIoeMetadata({
-  title: "Other IOE Engineering Disciplines | Question Papers (PDFs) & Direct Downloads",
+  title: "Other IOE Engineering Disciplines | Past Question Papers (PDF) & Syllabus",
   description:
-    "Official past question papers and PDF downloads for Electrical, Mechanical, Automobile, Geomatics, Industrial, Agriculture, Architecture, Aerospace, and Chemical engineering disciplines (TU IOE).",
+    "Past question papers and PDF downloads for Electrical, Mechanical, Automobile, Geomatics, Industrial, Agriculture, Architecture, Aerospace, and Chemical engineering disciplines (TU IOE).",
   path: "/ioe/other-programs",
 });
 

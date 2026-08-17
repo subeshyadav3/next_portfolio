@@ -113,9 +113,24 @@ export default function DisclaimerPage() {
           </p>
         </section>
 
+        <section aria-labelledby="ioe-disclaimer-heading">
+          <h2 id="ioe-disclaimer-heading" className="text-xl font-bold text-[var(--blog-text)] mb-3 tracking-tight sm:text-2xl">
+            7. IOE &amp; University Past Question Papers Disclaimer
+          </h2>
+          <p className="text-[var(--blog-text-secondary)] leading-relaxed mb-3">
+            The <strong>IOE Papers</strong> section is an independent academic resource designed to assist engineering students with exam preparation. This website is not operated by, endorsed by, or officially affiliated with Tribhuvan University (TU) or the Institute of Engineering (IOE).
+          </p>
+          <p className="text-[var(--blog-text-secondary)] leading-relaxed text-base">
+            All course codes, curriculum structures, and university subject names remain the property of their respective academic authorities. Past question paper files and syllabus data are organized strictly for non-commercial, academic study and reference purposes.
+          </p>
+          <p className="mt-3 text-[var(--blog-text-secondary)] leading-relaxed text-base">
+            Each paper viewer links to the public archive from which the file was cataloged. If you own rights to a document and want it corrected or removed, email <a href="mailto:subeshgaming@gmail.com" className="text-[var(--blog-accent)] font-semibold hover:underline">subeshgaming@gmail.com</a> with the page URL and evidence of ownership. I will review valid requests promptly.
+          </p>
+        </section>
+
         <section aria-labelledby="consent-heading" className="p-5 rounded-2xl border border-[var(--blog-border)] bg-[var(--blog-surface)]">
           <h2 id="consent-heading" className="text-lg font-bold text-[var(--blog-text)] mb-2 uppercase tracking-wide">
-            7. Formal User Consent
+            8. Formal User Consent
           </h2>
           <p className="text-[var(--blog-text-secondary)] text-sm sm:text-base leading-relaxed">
             By accessing, caching, or interacting with our index pages, you hereby give explicit administrative consent to our standard operational disclaimer framework and accept all clauses.

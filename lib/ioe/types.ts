@@ -51,6 +51,10 @@ export interface IoePaper {
   downloadUrl: string;
   /** Google Drive standard view URL (direct tab). */
   driveViewUrl: string;
+  /** Public archive collection from which the file was cataloged. */
+  archiveSourceUrl: string;
+  /** True when paper was compiled from a different semester track for the shared course. */
+  isCrossSemester?: boolean;
 }
 
 export interface IoeQuestionVariation {

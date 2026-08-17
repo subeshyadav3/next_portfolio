@@ -15,7 +15,6 @@ import type {
   IoeProgramsFile,
   IoeSubjectQuestions,
   IoeSyllabus,
-  IoeQuestionIndexEntry,
 } from "./types";
 
 const catalog = catalogJson as IoeCatalog;
@@ -32,11 +31,22 @@ export function normalizeSubjectName(name: string): string {
     .trim();
 }
 
+/** Normalized key stripping common grammatical / numbering variants for robust cross-mapping. */
+export function normalizeSubjectKey(name: string): string {
+  return normalizeSubjectName(name)
+    .replace(/\bmaterials\b/g, "material")
+    .replace(/\bnetworks\b/g, "network")
+    .replace(/\bsystems\b/g, "system")
+    .replace(/\bmicroprocessors\b/g, "microprocessor")
+    .replace(/\bengineering drawing i\b/g, "engineering drawing")
+    .replace(/\bapplied mechanics\b/g, "applied mechanics");
+}
+
 export function getCatalogs(): IoeCatalogSubject[] {
   return catalog.subjects;
 }
 
-export function isSubjectPublic(subjectName: string): boolean {
+export function isSubjectPublic(_subjectName: string): boolean {
   return true;
 }
 
@@ -45,12 +55,17 @@ export function getPublicCatalogs(): IoeCatalogSubject[] {
 }
 
 export function findCatalogSubject(title: string): IoeCatalogSubject | undefined {
+  if (!title) return undefined;
   const targetSlug = getSubjectSlugFromName(title);
   const exact = catalog.subjects.find((s) => getSubjectSlugFromName(s.name) === targetSlug);
   if (exact) return exact;
 
   const want = normalizeSubjectName(title);
-  return catalog.subjects.find((s) => normalizeSubjectName(s.name) === want);
+  const normMatch = catalog.subjects.find((s) => normalizeSubjectName(s.name) === want);
+  if (normMatch) return normMatch;
+
+  const wantKey = normalizeSubjectKey(title);
+  return catalog.subjects.find((s) => normalizeSubjectKey(s.name) === wantKey);
 }
 
 export function getAllPrograms(): IoeProgram[] {
@@ -96,6 +111,7 @@ export function toPaper(
     previewUrl: drivePreviewUrl(file.id),
     downloadUrl: driveDownloadUrl(file.id),
     driveViewUrl: driveViewUrl(file.id),
+    archiveSourceUrl: catalog.source,
   };
 }
 
@@ -116,7 +132,15 @@ export function getPapersForSubject(catalogSubject: IoeCatalogSubject, semester?
     );
   });
 
-  return matched.length > 0 ? matched : allPapers;
+  if (matched.length > 0) {
+    return matched;
+  }
+
+  // Cross-semester paper fallback (e.g. 5th-sem paper used for 6th-sem shared syllabus)
+  return allPapers.map((p) => ({
+    ...p,
+    isCrossSemester: true,
+  }));
 }
 
 export function getPaperById(id: string): IoePaper | null {
@@ -164,12 +188,20 @@ export async function getSubjectQuestions(_subjectSlug: string): Promise<IoeSubj
 }
 
 export function getSyllabusForSubject(subjectName: string): IoeSyllabus | null {
+  if (!subjectName) return null;
   const direct = syllabusMap[subjectName];
   if (direct) return direct;
+
   const norm = normalizeSubjectName(subjectName);
   for (const [title, entry] of Object.entries(syllabusMap)) {
     if (normalizeSubjectName(title) === norm) return entry;
   }
+
+  const normKey = normalizeSubjectKey(subjectName);
+  for (const [title, entry] of Object.entries(syllabusMap)) {
+    if (normalizeSubjectKey(title) === normKey) return entry;
+  }
+
   return null;
 }
 

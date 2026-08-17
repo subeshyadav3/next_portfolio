@@ -14,7 +14,7 @@ import {
 import { PdfViewer } from "@/components/ioe/PdfViewer";
 import SyllabusSection from "@/components/ioe/SyllabusSection";
 import { buildIoeMetadata, breadcrumbLd, jsonLd, learningResourceLd } from "@/lib/ioe/seo";
-import { ChevronRight, FileText, Clock } from "lucide-react";
+import { ChevronRight, FileText } from "lucide-react";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -30,8 +30,8 @@ export async function generateMetadata({ params }: PageProps) {
   const subject = getCatalogs().find((s) => getSubjectSlugFromName(s.name) === slug);
   if (!subject) return {};
   return buildIoeMetadata({
-    title: `${subject.name} Past Year Questions (PYQ) IOE PDF`,
-    description: `Download ${subject.name} IOE past year questions (PYQ) PDF. Chapter-wise question bank with exam repetition frequency for TU IOE engineering students.`,
+    title: `${subject.name} — IOE Past Questions & Syllabus | Subject Archive`,
+    description: `Download ${subject.name} IOE past question papers (PDF). Includes syllabus breakdown and past examination paper viewer for TU IOE engineering students.`,
     path: `/ioe/subjects/${slug}`,
   });
 }
@@ -62,9 +62,6 @@ export default async function IoeSubjectArchivePage({ params }: PageProps) {
   if (papers.length === 0) notFound();
   const questions = await getSubjectQuestions(slug);
   const syllabus = getSyllabusForSubject(subject.name);
-  const chapterList = questions?.chapters?.length
-    ? questions.chapters
-    : Array.from(new Set(questions?.questions.map((q) => q.chapter) ?? []));
 
   const path = `/ioe/subjects/${slug}`;
   const breadcrumb = breadcrumbLd([
@@ -123,9 +120,7 @@ export default async function IoeSubjectArchivePage({ params }: PageProps) {
           {subject.name}
         </h1>
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-600 dark:text-slate-400 sm:text-base">
-          {questions && questions.questions.length > 0
-            ? `${questions.questions.length} questions extracted from 2078–2083 BS exam sessions, classified by syllabus chapters and ranked by repetition frequency.`
-            : `Official exam question papers available in the PDF viewer below. Review past questions to prepare for your semester final exams.`}
+          Past examination question papers available in the PDF viewer below. Review past questions and syllabus units to prepare for your semester final exams.
         </p>
       </header>
 

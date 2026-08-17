@@ -6,7 +6,6 @@ import {
   getAllPrograms,
   getSubjectPrograms,
   getSubjectPrimaryPath,
-  getSubjectSlugFromName,
   isSubjectPublic,
 } from "@/lib/ioe/data";
 import { buildIoeMetadata, collectionLd, jsonLd } from "@/lib/ioe/seo";
@@ -14,9 +13,9 @@ import { SubjectFilter } from "@/components/ioe/SubjectFilter";
 import { ChevronRight, ArrowRight, FileText, Sparkles } from "lucide-react";
 
 export const metadata = buildIoeMetadata({
-  title: "All IOE Engineering Subjects A–Z | Question Papers & Question Bank Archive",
+  title: "All IOE Engineering Subjects A–Z | Past Question Papers & Syllabus Archive",
   description:
-    "Complete IOE past question papers and chapter-wise question banks archive for all 12 engineering disciplines (Civil, Computer, Electronics, Electrical, Mechanical, Chemical, and more) across all semesters.",
+    "Complete archive of IOE past examination question papers and curriculum syllabus for all engineering disciplines across all semesters.",
   path: "/ioe/all",
 });
 

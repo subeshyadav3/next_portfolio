@@ -11,17 +11,11 @@ export function generatePostMetadata(post: Post): Metadata {
   const url = `${SITE_URL}/blog/${post.slug}`;
   const image = post.image || `${SITE_URL}/blog/opengraph-image`;
 
-  const languages: Record<string, string> = { "x-default": url };
-  languages[post.language] = url;
-  const otherLang = post.language === "en" ? "ne" : "en";
-  languages[otherLang] = url;
-
   return {
     title: { absolute: post.title },
     description,
     alternates: {
       canonical: url,
-      languages,
     },
     authors: [{ name: post.author, url: post.authorUrl }],
     keywords: [post.category, ...post.tags],
