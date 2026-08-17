@@ -2,15 +2,16 @@
   "subject": "Digital Logic",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Number Systems, Binary Codes & Boolean Algebra",
-    "Chapter 2: Gate-Level Minimization & Karnaugh Maps (K-Maps)",
-    "Chapter 3: Combinational Logic Circuits (Adders, Multiplexers, Decoders)",
-    "Chapter 4: Sequential Logic Circuits, Flip-Flops & State Tables",
-    "Chapter 6: Memory Units & Programmable Logic Devices (PLA, PAL, FPGA)"
+    "Chapter 1: Number Systems, Binary Arithmetic and Codes",
+    "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
+    "Chapter 3: Combinational Logic Circuits (Adders, Subtractors, Encoders, Decoders, Multiplexers)",
+    "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
+    "Chapter 5: Registers, Shift Registers and Synchronous/Asynchronous Counters",
+    "Chapter 6: Memory Units and Programmable Logic Devices (ROM, RAM, PLA, PAL)"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Number Systems, Binary Codes & Boolean Algebra",
+      "chapter": "Chapter 1: Number Systems, Binary Arithmetic and Codes",
       "text": "Convert the decimal number $(431.625)_{10}$ into: (a) Binary, (b) Octal, and (c) Hexadecimal. Perform the subtraction $(28)_{10} - (45)_{10}$ using 8-bit 2's complement binary arithmetic and indicate overflow.",
       "marks": "3+5",
       "years": [
@@ -23,7 +24,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Number Systems, Binary Codes & Boolean Algebra",
+      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
       "text": "State and prove De Morgan's Theorems algebraically and using truth tables. Simplify the Boolean function $F(A, B, C, D) = (A + B + C)(A + B' + C)(A + B + C')(A + B' + C')$ to minimum product-of-sums (POS) form.",
       "marks": "3+4",
       "years": [
@@ -36,7 +37,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Number Systems, Binary Codes & Boolean Algebra",
+      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
       "text": "Minimize the Boolean function using a 4-variable K-map: $F(A, B, C, D) = \\sum m(0, 2, 5, 7, 8, 10, 13, 15) + d(1, 6)$. Implement the minimal SOP expression using only 2-input NAND gates.",
       "marks": "4+4",
       "years": [
@@ -49,7 +50,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Number Systems, Binary Codes & Boolean Algebra",
+      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
       "text": "Simplify the Boolean function using Quine-McCluskey (Tabulation Method): $F(A, B, C, D) = \\sum m(1, 3, 4, 5, 9, 11, 12, 13, 14, 15)$. Find all prime implicants and essential prime implicants.",
       "marks": "10",
       "years": [
@@ -62,7 +63,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Combinational Logic Circuits (Adders, Multiplexers, Decoders)",
+      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
       "text": "Design a Full Adder circuit using: (a) Basic logic gates, and (b) Two Half Adders and an OR gate. Explain 4-bit Carry Look-Ahead Adder and show how it reduces carry propagation delay from $O(n)$ to $O(1)$.",
       "marks": "4+6",
       "years": [
@@ -75,7 +76,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Number Systems, Binary Codes & Boolean Algebra",
+      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
       "text": "Design a 4-to-16 line decoder using five 2-to-4 line decoders with active-low enable inputs. Implement the Boolean function $F(A, B, C, D) = \\sum m(1, 3, 7, 9, 11, 15)$ using a single 8-to-1 Multiplexer.",
       "marks": "4+4",
       "years": [
@@ -88,7 +89,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops & State Tables",
+      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
       "text": "Explain the Race-Around Condition in JK Flip-Flop. How is race-around avoided using a Master-Slave JK Flip-Flop? Draw its logic diagram and timing waveforms. Convert a JK flip-flop into a D flip-flop and T flip-flop.",
       "marks": "4+4",
       "years": [
@@ -101,7 +102,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops & State Tables",
+      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
       "text": "Derive characteristic equations and excitation tables for SR, JK, D, and T flip-flops. Construct excitation maps for all four flip-flops.",
       "marks": "6",
       "years": [
@@ -114,7 +115,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops & State Tables",
+      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
       "text": "Design a Synchronous 3-bit Up/Down Gray Code Counter using T flip-flops with a control signal $M$ ($M=0$ for up counting, $M=1$ for down counting). Draw the state diagram, excitation table, K-maps, and logic circuit.",
       "marks": "10",
       "years": [
@@ -127,7 +128,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops & State Tables",
+      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
       "text": "Explain 4-bit Universal Shift Register with mode control inputs $S_1S_0$ (00: Hold, 01: Shift-right, 10: Shift-left, 11: Parallel load). Draw the schematic diagram using 4-to-1 multiplexers and D flip-flops.",
       "marks": "8",
       "years": [
@@ -140,7 +141,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops & State Tables",
+      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
       "text": "Compare Mealy Machine vs. Moore Machine with block diagrams and timing diagrams. Design a Mealy finite state machine to detect the overlapping bit sequence `1011` in a serial input data stream using D flip-flops.",
       "marks": "4+6",
       "years": [
@@ -153,7 +154,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Memory Units & Programmable Logic Devices (PLA, PAL, FPGA)",
+      "chapter": "Chapter 6: Memory Units and Programmable Logic Devices (ROM, RAM, PLA, PAL)",
       "text": "Compare Programmable Logic Devices: Read-Only Memory (ROM), Programmable Array Logic (PAL), and Programmable Logic Array (PLA). Implement the functions $F_1(A, B, C) = \\sum m(0, 1, 3, 5, 7)$ and $F_2(A, B, C) = \\sum m(1, 2, 4, 7)$ using a suitable PLA program table and logic diagram.",
       "marks": "4+6",
       "years": [
@@ -166,7 +167,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Number Systems, Binary Codes & Boolean Algebra",
+      "chapter": "Chapter 1: Number Systems, Binary Arithmetic and Codes",
       "text": "Explain BCD (8421), Excess-3, and Gray codes. Why is Gray code called a reflected/unit-distance code? Design a combinational logic circuit to convert a 4-bit Binary code into its equivalent 4-bit Gray code using XOR gates.",
       "marks": "3+5",
       "years": [
@@ -178,7 +179,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Number Systems, Binary Codes & Boolean Algebra",
+      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
       "text": "Minimize the following 5-variable Boolean function using 5-variable K-map: $F(A, B, C, D, E) = \\sum m(0, 1, 4, 5, 16, 17, 21, 25, 29) + d(9, 11, 13, 15)$.",
       "marks": "8",
       "years": [
@@ -190,7 +191,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Number Systems, Binary Codes & Boolean Algebra",
+      "chapter": "Chapter 1: Number Systems, Binary Arithmetic and Codes",
       "text": "Design a 4-bit Binary Parallel Adder/Subtractor circuit using four Full Adders and XOR gates controlled by mode signal $M$ ($M=0$ for addition, $M=1$ for subtraction). Explain how overflow is detected ($V = C_{in} \\oplus C_{out}$).",
       "marks": "6",
       "years": [
@@ -202,7 +203,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops & State Tables",
+      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
       "text": "Design an Asynchronous (Ripple) Modulo-10 (Decade / BCD) Counter using negative edge-triggered JK flip-flops and a NAND reset gate. Draw the logic circuit and timing waveforms.",
       "marks": "8",
       "years": [
@@ -214,7 +215,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops & State Tables",
+      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
       "text": "Design a Moore finite state machine to detect the sequence `1101` with an output $Z=1$ whenever the pattern is recognized. Show state table reduction using the Implication Table Method.",
       "marks": "10",
       "years": [
@@ -226,7 +227,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 6: Memory Units & Programmable Logic Devices (PLA, PAL, FPGA)",
+      "chapter": "Chapter 6: Memory Units and Programmable Logic Devices (ROM, RAM, PLA, PAL)",
       "text": "Explain Static RAM (SRAM 6T cell) vs Dynamic RAM (DRAM 1T-1C cell) memory architectures. Why do DRAM chips require periodic refresh cycles?",
       "marks": "6",
       "years": [
@@ -238,7 +239,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Number Systems, Binary Codes & Boolean Algebra",
+      "chapter": "Chapter 1: Number Systems, Binary Arithmetic and Codes",
       "text": "A practical engineering system operating under Number Systems, Binary Codes & Boolean Algebra is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -250,7 +251,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 2: Gate-Level Minimization & Karnaugh Maps (K-Maps)",
+      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
       "text": "A practical engineering system operating under Karnaugh Maps (K-Maps) & Logic Gate Minimization is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -262,7 +263,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 3: Combinational Logic Circuits (Adders, Multiplexers, Decoders)",
+      "chapter": "Chapter 3: Combinational Logic Circuits (Adders, Subtractors, Encoders, Decoders, Multiplexers)",
       "text": "A practical engineering system operating under Combinational Logic Circuits (Adders, Decoders, Mux) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -274,7 +275,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops & State Tables",
+      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
       "text": "A practical engineering system operating under Sequential Logic Circuits (Flip-Flops, Counters & Registers) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -286,7 +287,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 6: Memory Units & Programmable Logic Devices (PLA, PAL, FPGA)",
+      "chapter": "Chapter 6: Memory Units and Programmable Logic Devices (ROM, RAM, PLA, PAL)",
       "text": "A practical engineering system operating under Finite State Machines (Mealy & Moore) & Memory Devices (PLA, PAL) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -298,7 +299,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 2: Gate-Level Minimization & Karnaugh Maps (K-Maps)",
+      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
       "text": "Prove that NAND and NOR gates are Universal Gates by implementing AND, OR, and NOT operations using only NAND gates and only NOR gates.",
       "marks": "5",
       "years": [
@@ -309,7 +310,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 1: Number Systems, Binary Codes & Boolean Algebra",
+      "chapter": "Chapter 1: Number Systems, Binary Arithmetic and Codes",
       "text": "Design a 4-bit Magnitude Comparator circuit that compares two 4-bit binary numbers $A = A_3A_2A_1A_0$ and $B = B_3B_2B_1B_0$ and outputs $A > B, A = B, A < B$.",
       "marks": "8",
       "years": [
@@ -320,7 +321,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 1: Number Systems, Binary Codes & Boolean Algebra",
+      "chapter": "Chapter 1: Number Systems, Binary Arithmetic and Codes",
       "text": "Design a 2-bit Multiplier that multiplies two 2-bit numbers $A_1A_0$ and $B_1B_0$ to produce a 4-bit product $P_3P_2P_1P_0$.",
       "marks": "6",
       "years": [
@@ -331,7 +332,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops & State Tables",
+      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
       "text": "Explain 4-bit Ring Counter and 4-bit Johnson (Twisted Ring) Counter. Draw circuit diagrams and construct the state sequence tables.",
       "marks": "6",
       "years": [
@@ -342,7 +343,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 1: Number Systems, Binary Codes & Boolean Algebra",
+      "chapter": "Chapter 1: Number Systems, Binary Arithmetic and Codes",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Number Systems, Binary Codes & Boolean Algebra. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -353,7 +354,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 1: Number Systems, Binary Codes & Boolean Algebra",
+      "chapter": "Chapter 1: Number Systems, Binary Arithmetic and Codes",
       "text": "Solve the standard numerical problem for Number Systems, Binary Codes & Boolean Algebra using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -364,7 +365,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 2: Gate-Level Minimization & Karnaugh Maps (K-Maps)",
+      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Karnaugh Maps (K-Maps) & Logic Gate Minimization. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -375,7 +376,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 2: Gate-Level Minimization & Karnaugh Maps (K-Maps)",
+      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
       "text": "Solve the standard numerical problem for Karnaugh Maps (K-Maps) & Logic Gate Minimization using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -386,7 +387,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 3: Combinational Logic Circuits (Adders, Multiplexers, Decoders)",
+      "chapter": "Chapter 3: Combinational Logic Circuits (Adders, Subtractors, Encoders, Decoders, Multiplexers)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Combinational Logic Circuits (Adders, Decoders, Mux). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -397,7 +398,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 3: Combinational Logic Circuits (Adders, Multiplexers, Decoders)",
+      "chapter": "Chapter 3: Combinational Logic Circuits (Adders, Subtractors, Encoders, Decoders, Multiplexers)",
       "text": "Solve the standard numerical problem for Combinational Logic Circuits (Adders, Decoders, Mux) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -408,7 +409,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops & State Tables",
+      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Sequential Logic Circuits (Flip-Flops, Counters & Registers). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -419,7 +420,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops & State Tables",
+      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
       "text": "Solve the standard numerical problem for Sequential Logic Circuits (Flip-Flops, Counters & Registers) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -430,7 +431,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 6: Memory Units & Programmable Logic Devices (PLA, PAL, FPGA)",
+      "chapter": "Chapter 6: Memory Units and Programmable Logic Devices (ROM, RAM, PLA, PAL)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Finite State Machines (Mealy & Moore) & Memory Devices (PLA, PAL). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -441,7 +442,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 6: Memory Units & Programmable Logic Devices (PLA, PAL, FPGA)",
+      "chapter": "Chapter 6: Memory Units and Programmable Logic Devices (ROM, RAM, PLA, PAL)",
       "text": "Solve the standard numerical problem for Finite State Machines (Mealy & Moore) & Memory Devices (PLA, PAL) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -452,7 +453,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 1: Number Systems, Binary Codes & Boolean Algebra",
+      "chapter": "Chapter 1: Number Systems, Binary Arithmetic and Codes",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Number Systems, Binary Codes & Boolean Algebra. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -462,7 +463,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 1: Number Systems, Binary Codes & Boolean Algebra",
+      "chapter": "Chapter 1: Number Systems, Binary Arithmetic and Codes",
       "text": "State and prove the classical theorems and stability criteria associated with Number Systems, Binary Codes & Boolean Algebra. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -472,7 +473,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 2: Gate-Level Minimization & Karnaugh Maps (K-Maps)",
+      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Karnaugh Maps (K-Maps) & Logic Gate Minimization. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -482,7 +483,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 2: Gate-Level Minimization & Karnaugh Maps (K-Maps)",
+      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
       "text": "State and prove the classical theorems and stability criteria associated with Karnaugh Maps (K-Maps) & Logic Gate Minimization. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -492,7 +493,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 3: Combinational Logic Circuits (Adders, Multiplexers, Decoders)",
+      "chapter": "Chapter 3: Combinational Logic Circuits (Adders, Subtractors, Encoders, Decoders, Multiplexers)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Combinational Logic Circuits (Adders, Decoders, Mux). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -502,7 +503,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 3: Combinational Logic Circuits (Adders, Multiplexers, Decoders)",
+      "chapter": "Chapter 3: Combinational Logic Circuits (Adders, Subtractors, Encoders, Decoders, Multiplexers)",
       "text": "State and prove the classical theorems and stability criteria associated with Combinational Logic Circuits (Adders, Decoders, Mux). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -512,7 +513,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops & State Tables",
+      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Sequential Logic Circuits (Flip-Flops, Counters & Registers). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -522,7 +523,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops & State Tables",
+      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
       "text": "State and prove the classical theorems and stability criteria associated with Sequential Logic Circuits (Flip-Flops, Counters & Registers). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -532,7 +533,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 6: Memory Units & Programmable Logic Devices (PLA, PAL, FPGA)",
+      "chapter": "Chapter 6: Memory Units and Programmable Logic Devices (ROM, RAM, PLA, PAL)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Finite State Machines (Mealy & Moore) & Memory Devices (PLA, PAL). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -542,7 +543,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 6: Memory Units & Programmable Logic Devices (PLA, PAL, FPGA)",
+      "chapter": "Chapter 6: Memory Units and Programmable Logic Devices (ROM, RAM, PLA, PAL)",
       "text": "State and prove the classical theorems and stability criteria associated with Finite State Machines (Mealy & Moore) & Memory Devices (PLA, PAL). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -552,7 +553,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 1: Number Systems, Binary Codes & Boolean Algebra",
+      "chapter": "Chapter 1: Number Systems, Binary Arithmetic and Codes",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Number Systems, Binary Codes & Boolean Algebra.",
       "marks": "6",
       "years": [
@@ -561,7 +562,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 1: Number Systems, Binary Codes & Boolean Algebra",
+      "chapter": "Chapter 1: Number Systems, Binary Arithmetic and Codes",
       "text": "Write short technical notes on: (a) Key design parameters in Number Systems, Binary Codes & Boolean Algebra, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -570,7 +571,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 2: Gate-Level Minimization & Karnaugh Maps (K-Maps)",
+      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Karnaugh Maps (K-Maps) & Logic Gate Minimization.",
       "marks": "6",
       "years": [
@@ -579,7 +580,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 2: Gate-Level Minimization & Karnaugh Maps (K-Maps)",
+      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
       "text": "Write short technical notes on: (a) Key design parameters in Karnaugh Maps (K-Maps) & Logic Gate Minimization, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -588,7 +589,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 3: Combinational Logic Circuits (Adders, Multiplexers, Decoders)",
+      "chapter": "Chapter 3: Combinational Logic Circuits (Adders, Subtractors, Encoders, Decoders, Multiplexers)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Combinational Logic Circuits (Adders, Decoders, Mux).",
       "marks": "6",
       "years": [
@@ -597,7 +598,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 3: Combinational Logic Circuits (Adders, Multiplexers, Decoders)",
+      "chapter": "Chapter 3: Combinational Logic Circuits (Adders, Subtractors, Encoders, Decoders, Multiplexers)",
       "text": "Write short technical notes on: (a) Key design parameters in Combinational Logic Circuits (Adders, Decoders, Mux), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -606,7 +607,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops & State Tables",
+      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Sequential Logic Circuits (Flip-Flops, Counters & Registers).",
       "marks": "6",
       "years": [
@@ -615,7 +616,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops & State Tables",
+      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
       "text": "Write short technical notes on: (a) Key design parameters in Sequential Logic Circuits (Flip-Flops, Counters & Registers), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -624,7 +625,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 6: Memory Units & Programmable Logic Devices (PLA, PAL, FPGA)",
+      "chapter": "Chapter 6: Memory Units and Programmable Logic Devices (ROM, RAM, PLA, PAL)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Finite State Machines (Mealy & Moore) & Memory Devices (PLA, PAL).",
       "marks": "6",
       "years": [
@@ -633,13 +634,26 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 6: Memory Units & Programmable Logic Devices (PLA, PAL, FPGA)",
+      "chapter": "Chapter 6: Memory Units and Programmable Logic Devices (ROM, RAM, PLA, PAL)",
       "text": "Write short technical notes on: (a) Key design parameters in Finite State Machines (Mealy & Moore) & Memory Devices (PLA, PAL), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
         "2080"
       ],
       "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Registers, Shift Registers and Synchronous/Asynchronous Counters",
+      "text": "Explain the fundamental theoretical concepts, governing principles, and standard analytical methods associated with Registers, Shift Registers and Synchronous/Asynchronous Counters. Draw neat diagrams and derive key mathematical formulations where applicable.",
+      "marks": "6+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
     }
   ]
 }

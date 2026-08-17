@@ -2,17 +2,17 @@
   "subject": "Database Management System",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Database Architecture & Conceptual Data Modeling (ER/EER)",
-    "Chapter 2: Relational Model & Relational Algebra",
-    "Chapter 3: Advanced SQL Queries & Constraints",
-    "Chapter 4: Functional Dependencies & Normalization (1NF, 2NF, 3NF, BCNF)",
-    "Chapter 5: Transaction Management & Concurrency Control (ACID, Locking)",
-    "Chapter 6: Crash Recovery & Security (WAL, Checkpoints)",
-    "Chapter 7: Query Processing & Optimization"
+    "Chapter 1: Introduction and Database System Architecture",
+    "Chapter 2: Conceptual Data Modeling using ER and Enhanced ER Diagrams",
+    "Chapter 3: Relational Data Model and Relational Algebra",
+    "Chapter 4: Structured Query Language (SQL) and Complex Queries",
+    "Chapter 5: Relational Database Design and Normalization (1NF to BCNF)",
+    "Chapter 6: Transaction Management, ACID Properties and Concurrency Control",
+    "Chapter 7: Storage, Indexing, Crash Recovery and Query Optimization"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Database Architecture & Conceptual Data Modeling (ER/EER)",
+      "chapter": "Chapter 1: Introduction and Database System Architecture",
       "text": "Explain the Three-Schema Architecture of DBMS (Physical/Internal level, Logical/Conceptual level, and External/View level). Define Physical Data Independence and Logical Data Independence. What are the roles and responsibilities of a Database Administrator (DBA)?",
       "marks": "4+4",
       "years": [
@@ -25,7 +25,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 2: Relational Model & Relational Algebra",
+      "chapter": "Chapter 3: Relational Data Model and Relational Algebra",
       "text": "Construct an Entity-Relationship (ER) diagram for a University Management System showing entities (Student, Department, Course, Instructor, Section), attributes, primary keys, structural cardinality ratios (1:1, 1:N, M:N), participation constraints (total/partial), and weak entity sets. Map the ER diagram into relational schemas.",
       "marks": "6+2",
       "years": [
@@ -38,7 +38,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Database Architecture & Conceptual Data Modeling (ER/EER)",
+      "chapter": "Chapter 2: Conceptual Data Modeling using ER and Enhanced ER Diagrams",
       "text": "Explain Enhanced ER (EER) modeling concepts: (a) Specialization and Generalization (Disjoint vs Overlapping, Total vs Partial constraints), (b) Attribute Inheritance, (c) Aggregation, and (d) Categorization / Union Types with clear real-world examples.",
       "marks": "4+4",
       "years": [
@@ -51,7 +51,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 2: Relational Model & Relational Algebra",
+      "chapter": "Chapter 3: Relational Data Model and Relational Algebra",
       "text": "Explain fundamental Relational Algebra operations: Selection ($\\sigma$), Projection ($\\pi$), Cartesian Product ($\\times$), Union ($\\cup$), Set Difference ($-$), and Rename ($\\rho$). Define derived operations: Natural Join ($\\bowtie$), Theta Join ($\\bowtie_\\theta$), Outer Joins (Left, Right, Full $\\mathrel{\\text{\u27d5}}, \\mathrel{\\text{\u27d6}}, \\mathrel{\\text{\u27d7}}$), and Division ($\\div$).",
       "marks": "4+4",
       "years": [
@@ -64,7 +64,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 2: Relational Model & Relational Algebra",
+      "chapter": "Chapter 3: Relational Data Model and Relational Algebra",
       "text": "Given the relational database schema:\n`EMPLOYEE(EmpId, EmpName, Salary, DeptId, SupervisorId)`\n`DEPARTMENT(DeptId, DeptName, Location)`\n`PROJECT(ProjId, ProjName, DeptId)`\n`WORKS_ON(EmpId, ProjId, Hours)`\nWrite Relational Algebra expressions for: (a) Find names of employees working on project 'AI-Portal', (b) Find employees who work on all projects located in 'Kathmandu', (c) Find employee names earning more than 50,000.",
       "marks": "8",
       "years": [
@@ -77,7 +77,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Database Architecture & Conceptual Data Modeling (ER/EER)",
+      "chapter": "Chapter 3: Relational Data Model and Relational Algebra",
       "text": "For the same relational database schema above, write SQL queries to:\n(a) Find the names of employees who earn higher than the average salary of their own department\n(b) Find departments having more than 5 employees with average salary greater than 60,000\n(c) List employee names who do not work on any project using `NOT EXISTS` and `NOT IN`\n(d) Increase the salary of all employees working on project 'SmartCity' by $10\\%$.",
       "marks": "8",
       "years": [
@@ -90,7 +90,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Database Architecture & Conceptual Data Modeling (ER/EER)",
+      "chapter": "Chapter 2: Conceptual Data Modeling using ER and Enhanced ER Diagrams",
       "text": "Explain Views in SQL (Updatable vs Non-updatable views). Explain Stored Procedures and Triggers (Row-level vs Statement-level, Before vs After triggers). Write an SQL trigger that automatically archives deleted employee records into an `Emp_Audit` table.",
       "marks": "3+5",
       "years": [
@@ -103,7 +103,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Functional Dependencies & Normalization (1NF, 2NF, 3NF, BCNF)",
+      "chapter": "Chapter 1: Introduction and Database System Architecture",
       "text": "Define Functional Dependency (FD). State and prove Armstrong's Axioms for FDs (Reflexivity, Augmentation, Transitivity). Explain the algorithm to find the Closure of an Attribute Set $X^+$ with respect to an FD set $F$.",
       "marks": "3+5",
       "years": [
@@ -116,7 +116,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Functional Dependencies & Normalization (1NF, 2NF, 3NF, BCNF)",
+      "chapter": "Chapter 1: Introduction and Database System Architecture",
       "text": "Given a relation $R(A, B, C, D, E, G)$ with functional dependencies $F = \\{A \\to B, BC \\to D, E \\to C, D \\to A\\}$, find: (a) All Candidate Keys of $R$, and (b) Canonical / Minimal Cover of $F$.",
       "marks": "4+4",
       "years": [
@@ -129,7 +129,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Functional Dependencies & Normalization (1NF, 2NF, 3NF, BCNF)",
+      "chapter": "Chapter 5: Relational Database Design and Normalization (1NF to BCNF)",
       "text": "Explain First Normal Form (1NF), Second Normal Form (2NF), Third Normal Form (3NF), and Boyce-Codd Normal Form (BCNF). What are the differences between 3NF and BCNF? A relation $R(A, B, C, D, E)$ has $F = \\{A \\to BC, CD \\to E, B \\to D, E \\to A\\}$. Determine the highest normal form of $R$ and decompose $R$ into BCNF.",
       "marks": "4+4",
       "years": [
@@ -142,7 +142,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Database Architecture & Conceptual Data Modeling (ER/EER)",
+      "chapter": "Chapter 6: Transaction Management, ACID Properties and Concurrency Control",
       "text": "Explain the ACID properties of a database transaction (Atomicity, Consistency, Isolation, Durability) and the Transaction State Transition Diagram (Active, Partially Committed, Committed, Failed, Aborted).",
       "marks": "4+4",
       "years": [
@@ -155,7 +155,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Database Architecture & Conceptual Data Modeling (ER/EER)",
+      "chapter": "Chapter 1: Introduction and Database System Architecture",
       "text": "What is Conflict Serializability? Construct a Precedence Graph (Serialization Graph) to test whether the following concurrent schedule is conflict serializable: $S: R_1(A); R_2(A); W_1(A); R_2(B); W_2(A); W_2(B); R_1(B); W_1(B)$. If serializable, find equivalent serial schedule(s).",
       "marks": "3+5",
       "years": [
@@ -168,7 +168,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 5: Transaction Management & Concurrency Control (ACID, Locking)",
+      "chapter": "Chapter 6: Transaction Management, ACID Properties and Concurrency Control",
       "text": "Explain Concurrency Control Anomalies: Dirty Read (Temporary Update), Non-Repeatable Read (Unrepeatable Read), Lost Update, and Phantom Read problems with timing diagrams.",
       "marks": "6",
       "years": [
@@ -181,7 +181,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 5: Transaction Management & Concurrency Control (ACID, Locking)",
+      "chapter": "Chapter 1: Introduction and Database System Architecture",
       "text": "Explain Two-Phase Locking (2PL) Protocol. Compare Basic 2PL, Conservative 2PL (Static), Strict 2PL, and Rigorous 2PL. How does Strict 2PL prevent cascading aborts? Does 2PL guarantee freedom from deadlocks?",
       "marks": "4+4",
       "years": [
@@ -194,7 +194,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Crash Recovery & Security (WAL, Checkpoints)",
+      "chapter": "Chapter 2: Conceptual Data Modeling using ER and Enhanced ER Diagrams",
       "text": "Explain Deadlock Handling in DBMS: (a) Deadlock Prevention (Wait-Die and Wound-Wait schemes based on timestamps), (b) Deadlock Detection using Wait-For Graph (Cycle detection), and (c) Deadlock Recovery (Victim selection, Rollback, Starvation prevention).",
       "marks": "4+4",
       "years": [
@@ -207,7 +207,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Database Architecture & Conceptual Data Modeling (ER/EER)",
+      "chapter": "Chapter 1: Introduction and Database System Architecture",
       "text": "Compare Primary Index, Clustering Index, and Secondary Index (Dense Index vs Sparse Index). Construct a B+ Tree of order $p = 4$ (maximum 3 keys per node) by inserting keys: $5, 15, 25, 35, 45, 55, 65, 75, 85$. Show intermediate splits.",
       "marks": "4+6",
       "years": [
@@ -220,7 +220,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Database Architecture & Conceptual Data Modeling (ER/EER)",
+      "chapter": "Chapter 1: Introduction and Database System Architecture",
       "text": "Differentiate between B-Tree and B+ Tree structures. Why are B+ Trees predominantly used for database index structures on disk rather than binary search trees or standard B-trees?",
       "marks": "6",
       "years": [
@@ -233,7 +233,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Database Architecture & Conceptual Data Modeling (ER/EER)",
+      "chapter": "Chapter 1: Introduction and Database System Architecture",
       "text": "Explain Log-Based Recovery in DBMS: (a) Deferred Database Modification (NO-UNDO / REDO), (b) Immediate Database Modification (UNDO / REDO), (c) Checkpointing (Fuzzy Checkpointing), and (d) Shadow Paging.",
       "marks": "4+4",
       "years": [
@@ -246,7 +246,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Advanced SQL Queries & Constraints",
+      "chapter": "Chapter 1: Introduction and Database System Architecture",
       "text": "Construct an ER diagram for an Online Hospital Management System showing Patients, Doctors, Appointments, Medical Records, Wards, and Bills with appropriate constraints and relationship sets.",
       "marks": "8",
       "years": [
@@ -258,7 +258,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 2: Relational Model & Relational Algebra",
+      "chapter": "Chapter 3: Relational Data Model and Relational Algebra",
       "text": "Explain Relational Integrity Constraints: Domain Constraints, Key Constraints, Entity Integrity Constraint (Primary Key not null), and Referential Integrity Constraint (Foreign Key with `ON DELETE CASCADE` and `ON UPDATE SET NULL`).",
       "marks": "6",
       "years": [
@@ -270,7 +270,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Database Architecture & Conceptual Data Modeling (ER/EER)",
+      "chapter": "Chapter 1: Introduction and Database System Architecture",
       "text": "Define Lossless Join Decomposition and Dependency-Preserving Decomposition. Test if the decomposition of $R(A, B, C, D, E)$ into $R_1(A, B, C)$ and $R_2(C, D, E)$ with $F = \\{A \\to BC, CD \\to E, B \\to D, E \\to A\\}$ is lossless join and dependency preserving.",
       "marks": "3+5",
       "years": [
@@ -282,7 +282,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 5: Transaction Management & Concurrency Control (ACID, Locking)",
+      "chapter": "Chapter 6: Transaction Management, ACID Properties and Concurrency Control",
       "text": "Explain Timestamp Ordering Protocol for concurrency control. Explain Thomas' Write Rule. Compare Lock-based vs Timestamp-based concurrency control.",
       "marks": "6",
       "years": [
@@ -294,7 +294,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 6: Crash Recovery & Security (WAL, Checkpoints)",
+      "chapter": "Chapter 7: Storage, Indexing, Crash Recovery and Query Optimization",
       "text": "Explain ARIES (Algorithms for Recovery and Isolation Exploiting Semantics) recovery algorithm: Analysis Pass, Redo Pass, and Undo Pass with Compensation Log Records (CLRs).",
       "marks": "6",
       "years": [
@@ -306,7 +306,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 7: Query Processing & Optimization",
+      "chapter": "Chapter 7: Storage, Indexing, Crash Recovery and Query Optimization",
       "text": "Explain Query Processing and Optimization: (a) Parsing and Translation into Query Tree, (b) Heuristic Query Optimization (Push selections and projections down), and (c) Cost-based Optimization.",
       "marks": "6",
       "years": [
@@ -318,7 +318,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Database Architecture & Conceptual Data Modeling (ER/EER)",
+      "chapter": "Chapter 1: Introduction and Database System Architecture",
       "text": "A practical engineering system operating under Database Architecture & Conceptual Modeling (ER & EER) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -330,7 +330,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 2: Relational Model & Relational Algebra",
+      "chapter": "Chapter 3: Relational Data Model and Relational Algebra",
       "text": "A practical engineering system operating under Relational Model, Relational Algebra & Advanced SQL is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -342,7 +342,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 4: Functional Dependencies & Normalization (1NF, 2NF, 3NF, BCNF)",
+      "chapter": "Chapter 5: Relational Database Design and Normalization (1NF to BCNF)",
       "text": "A practical engineering system operating under Functional Dependencies, Normalization & Decomposition is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -354,7 +354,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 5: Transaction Management & Concurrency Control (ACID, Locking)",
+      "chapter": "Chapter 6: Transaction Management, ACID Properties and Concurrency Control",
       "text": "A practical engineering system operating under Transaction Processing & Concurrency Control Protocols is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -366,7 +366,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 6: Crash Recovery & Security (WAL, Checkpoints)",
+      "chapter": "Chapter 7: Storage, Indexing, Crash Recovery and Query Optimization",
       "text": "A practical engineering system operating under Storage Organization, Indexing (B+ Trees) & Recovery is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -378,7 +378,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Database Architecture & Conceptual Data Modeling (ER/EER)",
+      "chapter": "Chapter 1: Introduction and Database System Architecture",
       "text": "Explain Multivalued Dependency (MVD) and Fourth Normal Form (4NF). Explain Join Dependency and Fifth Normal Form (5NF).",
       "marks": "6",
       "years": [
@@ -389,7 +389,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 1: Database Architecture & Conceptual Data Modeling (ER/EER)",
+      "chapter": "Chapter 2: Conceptual Data Modeling using ER and Enhanced ER Diagrams",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Database Architecture & Conceptual Modeling (ER & EER). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -400,7 +400,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 1: Database Architecture & Conceptual Data Modeling (ER/EER)",
+      "chapter": "Chapter 2: Conceptual Data Modeling using ER and Enhanced ER Diagrams",
       "text": "Solve the standard numerical problem for Database Architecture & Conceptual Modeling (ER & EER) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -411,7 +411,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 2: Relational Model & Relational Algebra",
+      "chapter": "Chapter 3: Relational Data Model and Relational Algebra",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Relational Model, Relational Algebra & Advanced SQL. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -422,7 +422,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 2: Relational Model & Relational Algebra",
+      "chapter": "Chapter 3: Relational Data Model and Relational Algebra",
       "text": "Solve the standard numerical problem for Relational Model, Relational Algebra & Advanced SQL using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -433,7 +433,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 4: Functional Dependencies & Normalization (1NF, 2NF, 3NF, BCNF)",
+      "chapter": "Chapter 5: Relational Database Design and Normalization (1NF to BCNF)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Functional Dependencies, Normalization & Decomposition. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -444,7 +444,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 4: Functional Dependencies & Normalization (1NF, 2NF, 3NF, BCNF)",
+      "chapter": "Chapter 2: Conceptual Data Modeling using ER and Enhanced ER Diagrams",
       "text": "Solve the standard numerical problem for Functional Dependencies, Normalization & Decomposition using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -455,7 +455,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 5: Transaction Management & Concurrency Control (ACID, Locking)",
+      "chapter": "Chapter 6: Transaction Management, ACID Properties and Concurrency Control",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Transaction Processing & Concurrency Control Protocols. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -466,7 +466,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 5: Transaction Management & Concurrency Control (ACID, Locking)",
+      "chapter": "Chapter 6: Transaction Management, ACID Properties and Concurrency Control",
       "text": "Solve the standard numerical problem for Transaction Processing & Concurrency Control Protocols using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -477,7 +477,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 3: Advanced SQL Queries & Constraints",
+      "chapter": "Chapter 7: Storage, Indexing, Crash Recovery and Query Optimization",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Storage Organization, Indexing (B+ Trees) & Recovery. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -488,7 +488,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 6: Crash Recovery & Security (WAL, Checkpoints)",
+      "chapter": "Chapter 7: Storage, Indexing, Crash Recovery and Query Optimization",
       "text": "Solve the standard numerical problem for Storage Organization, Indexing (B+ Trees) & Recovery using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -499,7 +499,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 1: Database Architecture & Conceptual Data Modeling (ER/EER)",
+      "chapter": "Chapter 2: Conceptual Data Modeling using ER and Enhanced ER Diagrams",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Database Architecture & Conceptual Modeling (ER & EER). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -509,7 +509,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 1: Database Architecture & Conceptual Data Modeling (ER/EER)",
+      "chapter": "Chapter 2: Conceptual Data Modeling using ER and Enhanced ER Diagrams",
       "text": "State and prove the classical theorems and stability criteria associated with Database Architecture & Conceptual Modeling (ER & EER). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -519,7 +519,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 2: Relational Model & Relational Algebra",
+      "chapter": "Chapter 3: Relational Data Model and Relational Algebra",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Relational Model, Relational Algebra & Advanced SQL. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -529,7 +529,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 2: Relational Model & Relational Algebra",
+      "chapter": "Chapter 3: Relational Data Model and Relational Algebra",
       "text": "State and prove the classical theorems and stability criteria associated with Relational Model, Relational Algebra & Advanced SQL. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -539,7 +539,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 4: Functional Dependencies & Normalization (1NF, 2NF, 3NF, BCNF)",
+      "chapter": "Chapter 5: Relational Database Design and Normalization (1NF to BCNF)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Functional Dependencies, Normalization & Decomposition. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -549,7 +549,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 4: Functional Dependencies & Normalization (1NF, 2NF, 3NF, BCNF)",
+      "chapter": "Chapter 5: Relational Database Design and Normalization (1NF to BCNF)",
       "text": "State and prove the classical theorems and stability criteria associated with Functional Dependencies, Normalization & Decomposition. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -559,7 +559,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 5: Transaction Management & Concurrency Control (ACID, Locking)",
+      "chapter": "Chapter 6: Transaction Management, ACID Properties and Concurrency Control",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Transaction Processing & Concurrency Control Protocols. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -569,7 +569,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 5: Transaction Management & Concurrency Control (ACID, Locking)",
+      "chapter": "Chapter 6: Transaction Management, ACID Properties and Concurrency Control",
       "text": "State and prove the classical theorems and stability criteria associated with Transaction Processing & Concurrency Control Protocols. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -579,7 +579,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 6: Crash Recovery & Security (WAL, Checkpoints)",
+      "chapter": "Chapter 7: Storage, Indexing, Crash Recovery and Query Optimization",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Storage Organization, Indexing (B+ Trees) & Recovery. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -589,7 +589,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 6: Crash Recovery & Security (WAL, Checkpoints)",
+      "chapter": "Chapter 7: Storage, Indexing, Crash Recovery and Query Optimization",
       "text": "State and prove the classical theorems and stability criteria associated with Storage Organization, Indexing (B+ Trees) & Recovery. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -599,7 +599,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 1: Database Architecture & Conceptual Data Modeling (ER/EER)",
+      "chapter": "Chapter 2: Conceptual Data Modeling using ER and Enhanced ER Diagrams",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Database Architecture & Conceptual Modeling (ER & EER).",
       "marks": "6",
       "years": [
@@ -608,7 +608,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 1: Database Architecture & Conceptual Data Modeling (ER/EER)",
+      "chapter": "Chapter 2: Conceptual Data Modeling using ER and Enhanced ER Diagrams",
       "text": "Write short technical notes on: (a) Key design parameters in Database Architecture & Conceptual Modeling (ER & EER), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -617,7 +617,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 2: Relational Model & Relational Algebra",
+      "chapter": "Chapter 3: Relational Data Model and Relational Algebra",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Relational Model, Relational Algebra & Advanced SQL.",
       "marks": "6",
       "years": [
@@ -626,7 +626,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 2: Relational Model & Relational Algebra",
+      "chapter": "Chapter 3: Relational Data Model and Relational Algebra",
       "text": "Write short technical notes on: (a) Key design parameters in Relational Model, Relational Algebra & Advanced SQL, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -635,7 +635,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 4: Functional Dependencies & Normalization (1NF, 2NF, 3NF, BCNF)",
+      "chapter": "Chapter 5: Relational Database Design and Normalization (1NF to BCNF)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Functional Dependencies, Normalization & Decomposition.",
       "marks": "6",
       "years": [
@@ -644,7 +644,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 4: Functional Dependencies & Normalization (1NF, 2NF, 3NF, BCNF)",
+      "chapter": "Chapter 5: Relational Database Design and Normalization (1NF to BCNF)",
       "text": "Write short technical notes on: (a) Key design parameters in Functional Dependencies, Normalization & Decomposition, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -653,7 +653,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 5: Transaction Management & Concurrency Control (ACID, Locking)",
+      "chapter": "Chapter 6: Transaction Management, ACID Properties and Concurrency Control",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Transaction Processing & Concurrency Control Protocols.",
       "marks": "6",
       "years": [
@@ -662,7 +662,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 5: Transaction Management & Concurrency Control (ACID, Locking)",
+      "chapter": "Chapter 6: Transaction Management, ACID Properties and Concurrency Control",
       "text": "Write short technical notes on: (a) Key design parameters in Transaction Processing & Concurrency Control Protocols, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -671,7 +671,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 6: Crash Recovery & Security (WAL, Checkpoints)",
+      "chapter": "Chapter 7: Storage, Indexing, Crash Recovery and Query Optimization",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Storage Organization, Indexing (B+ Trees) & Recovery.",
       "marks": "6",
       "years": [
@@ -680,13 +680,26 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 6: Crash Recovery & Security (WAL, Checkpoints)",
+      "chapter": "Chapter 7: Storage, Indexing, Crash Recovery and Query Optimization",
       "text": "Write short technical notes on: (a) Key design parameters in Storage Organization, Indexing (B+ Trees) & Recovery, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
         "2080"
       ],
       "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Structured Query Language (SQL) and Complex Queries",
+      "text": "Explain the fundamental theoretical concepts, governing principles, and standard analytical methods associated with Structured Query Language (SQL) and Complex Queries. Draw neat diagrams and derive key mathematical formulations where applicable.",
+      "marks": "6+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
     }
   ]
 }

@@ -2,18 +2,18 @@
   "subject": "Data Structure and Algorithm",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Algorithm Complexity & Asymptotic Notations",
-    "Chapter 2: Stacks & Applications (Infix to Postfix)",
-    "Chapter 3: Queues & Circular Queues",
-    "Chapter 4: Linked Lists (Singly, Doubly & Circular)",
-    "Chapter 5: Recursion & Divide-and-Conquer",
-    "Chapter 6: Trees, Binary Search Trees (BST) & AVL Trees",
-    "Chapter 7: Graphs, BFS, DFS & Minimum Spanning Trees (Kruskal, Prim)",
-    "Chapter 8: Sorting (Quick, Merge, Heap) & Searching"
+    "Chapter 1: Introduction, Asymptotic Notations and Algorithm Complexity",
+    "Chapter 2: Stacks and Applications (Expression Evaluation and Infix-to-Postfix)",
+    "Chapter 3: Queues, Circular Queues and Priority Queues",
+    "Chapter 4: Linked Lists (Singly, Doubly, and Circular Linked Lists)",
+    "Chapter 5: Recursion and Divide-and-Conquer Strategies",
+    "Chapter 6: Trees, Binary Trees, Binary Search Trees (BST) and AVL Trees",
+    "Chapter 7: Graphs, Graph Traversals (BFS, DFS) and Minimum Spanning Trees",
+    "Chapter 8: Sorting (Quick, Merge, Heap Sort) and Searching (Linear, Binary Search)"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Algorithm Complexity & Asymptotic Notations",
+      "chapter": "Chapter 1: Introduction, Asymptotic Notations and Algorithm Complexity",
       "text": "Define Big-$O$, Big-$\\Omega$, and Big-$\\Theta$ asymptotic notations with formal mathematical definitions and graphs. Find the time complexity of the following code snippet:\n```c\nfor(int i = 1; i <= n; i *= 2) {\n    for(int j = 1; j <= n; j++) {\n        // constant time operation O(1)\n    }\n}\n```",
       "marks": "3+3",
       "years": [
@@ -26,7 +26,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 2: Stacks & Applications (Infix to Postfix)",
+      "chapter": "Chapter 2: Stacks and Applications (Expression Evaluation and Infix-to-Postfix)",
       "text": "What is a Stack? Write an algorithm and C function to convert an Infix arithmetic expression into a Postfix expression. Trace the conversion for $(A + B) * (C - D) / E \\text{ \\textasciicircum } F$ using a stack table.",
       "marks": "3+5",
       "years": [
@@ -39,7 +39,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Queues & Circular Queues",
+      "chapter": "Chapter 3: Queues, Circular Queues and Priority Queues",
       "text": "Explain Linear Queue vs. Circular Queue. Why is a Circular Queue preferred over a Linear Queue? Write C functions to implement `enqueue()` and `dequeue()` operations on a Circular Queue using an array.",
       "marks": "3+5",
       "years": [
@@ -52,7 +52,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Linked Lists (Singly, Doubly & Circular)",
+      "chapter": "Chapter 4: Linked Lists (Singly, Doubly, and Circular Linked Lists)",
       "text": "Differentiate between static arrays and dynamic linked lists. Write C functions for a Singly Linked List to: (a) Insert a node at the beginning, (b) Insert a node at the $k$-th position, (c) Delete a node with a given key, and (d) Reverse the linked list in place.",
       "marks": "2+6",
       "years": [
@@ -65,7 +65,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Trees, Binary Search Trees (BST) & AVL Trees",
+      "chapter": "Chapter 6: Trees, Binary Trees, Binary Search Trees (BST) and AVL Trees",
       "text": "Define Binary Tree, Strictly Binary Tree, Complete Binary Tree, and Full (Perfect) Binary Tree. Prove that a proper binary tree with $n$ internal nodes has $n+1$ external (leaf) nodes.",
       "marks": "3+4",
       "years": [
@@ -78,7 +78,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Trees, Binary Search Trees (BST) & AVL Trees",
+      "chapter": "Chapter 6: Trees, Binary Trees, Binary Search Trees (BST) and AVL Trees",
       "text": "Construct a Binary Search Tree (BST) from the given keys: $50, 25, 75, 15, 35, 60, 90, 30, 40$. Show Inorder, Preorder, and Postorder traversals. Write recursive C functions for Inorder traversal and searching a key in a BST.",
       "marks": "3+5",
       "years": [
@@ -91,7 +91,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Algorithm Complexity & Asymptotic Notations",
+      "chapter": "Chapter 1: Introduction, Asymptotic Notations and Algorithm Complexity",
       "text": "What is an AVL Tree? Explain Balance Factor and the four types of rotations (LL, RR, LR, RL) used for rebalancing. Insert the keys $10, 20, 30, 40, 50, 25$ into an initially empty AVL tree and show step-by-step tree rebalancing.",
       "marks": "3+5",
       "years": [
@@ -104,7 +104,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Algorithm Complexity & Asymptotic Notations",
+      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap Sort) and Searching (Linear, Binary Search)",
       "text": "What is a Binary Heap? Differentiate between Min-Heap and Max-Heap. Construct a Max-Heap from the array $[4, 10, 3, 5, 1, 8, 9, 2, 7]$ using the bottom-up `heapify()` procedure. Write the C implementation of Heap Sort and analyze its $O(n \\log n)$ time complexity.",
       "marks": "3+5",
       "years": [
@@ -117,7 +117,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 5: Recursion & Divide-and-Conquer",
+      "chapter": "Chapter 7: Graphs, Graph Traversals (BFS, DFS) and Minimum Spanning Trees",
       "text": "Explain Graph Representations: Adjacency Matrix and Adjacency List. Compare their space complexities. Explain Breadth First Search (BFS) using a Queue and Depth First Search (DFS) using a Stack / recursion with example graphs.",
       "marks": "4+4",
       "years": [
@@ -130,7 +130,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Algorithm Complexity & Asymptotic Notations",
+      "chapter": "Chapter 1: Introduction, Asymptotic Notations and Algorithm Complexity",
       "text": "Explain Dijkstra's Single-Source Shortest Path algorithm. Trace Dijkstra's algorithm to find the shortest path from source vertex $A$ to all other vertices in a given weighted directed graph with non-negative weights. Why does Dijkstra's algorithm fail with negative edge weights?",
       "marks": "3+5",
       "years": [
@@ -143,7 +143,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 7: Graphs, BFS, DFS & Minimum Spanning Trees (Kruskal, Prim)",
+      "chapter": "Chapter 7: Graphs, Graph Traversals (BFS, DFS) and Minimum Spanning Trees",
       "text": "Explain Kruskal's algorithm and Prim's algorithm for finding the Minimum Spanning Tree (MST). Trace Kruskal's algorithm on a weighted graph with $7$ vertices using the Disjoint-Set Union (DSU with Union-Find by Rank) data structure.",
       "marks": "3+5",
       "years": [
@@ -156,7 +156,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Algorithm Complexity & Asymptotic Notations",
+      "chapter": "Chapter 1: Introduction, Asymptotic Notations and Algorithm Complexity",
       "text": "Explain the Divide and Conquer strategy of Merge Sort. Write the recursive Merge Sort algorithm and the `merge()` subroutine. Derive the recurrence relation $T(n) = 2T(n/2) + O(n)$ and solve it using Master's theorem to prove $O(n \\log n)$ time complexity.",
       "marks": "3+5",
       "years": [
@@ -169,7 +169,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap) & Searching",
+      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap Sort) and Searching (Linear, Binary Search)",
       "text": "Explain Quick Sort with Lomuto and Hoare partitioning schemes. Trace Quick Sort for the array $[38, 27, 43, 3, 9, 82, 10]$ and derive its best case $O(n \\log n)$, average case $O(n \\log n)$, and worst case $O(n^2)$ time complexities.",
       "marks": "3+5",
       "years": [
@@ -182,7 +182,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Algorithm Complexity & Asymptotic Notations",
+      "chapter": "Chapter 6: Trees, Binary Trees, Binary Search Trees (BST) and AVL Trees",
       "text": "Explain Binary Search algorithm. Write an iterative and recursive C function for binary search on a sorted array of $n$ elements and prove that its time complexity is $O(\\log n)$.",
       "marks": "3+3",
       "years": [
@@ -195,7 +195,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Algorithm Complexity & Asymptotic Notations",
+      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap Sort) and Searching (Linear, Binary Search)",
       "text": "What is Hashing? Explain Hash functions (Division method $h(k) = k \\bmod m$, Mid-Square method, Folding method). Explain Open Addressing collision resolution: (a) Linear Probing $h(k, i) = (h'(k) + i) \\bmod m$, (b) Quadratic Probing $h(k, i) = (h'(k) + c_1 i + c_2 i^2) \\bmod m$, and (c) Double Hashing $h(k, i) = (h_1(k) + i \\cdot h_2(k)) \\bmod m$. Insert keys $72, 27, 36, 24, 63, 81, 92$ into a hash table of size $11$.",
       "marks": "3+5",
       "years": [
@@ -208,7 +208,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 2: Stacks & Applications (Infix to Postfix)",
+      "chapter": "Chapter 2: Stacks and Applications (Expression Evaluation and Infix-to-Postfix)",
       "text": "Write a C function to evaluate a Postfix arithmetic expression using a stack. Trace the evaluation of the postfix expression `5 6 2 + * 12 4 / -` showing stack contents at each step.",
       "marks": "6",
       "years": [
@@ -220,7 +220,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap) & Searching",
+      "chapter": "Chapter 3: Queues, Circular Queues and Priority Queues",
       "text": "Explain Double-Ended Queue (Deque) and Priority Queue. Explain the array-based and heap-based implementation of a Priority Queue with time complexities.",
       "marks": "6",
       "years": [
@@ -232,7 +232,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 4: Linked Lists (Singly, Doubly & Circular)",
+      "chapter": "Chapter 4: Linked Lists (Singly, Doubly, and Circular Linked Lists)",
       "text": "Explain Doubly Linked List and Circular Singly Linked List. Write C code to insert and delete a node in a Doubly Linked List.",
       "marks": "6",
       "years": [
@@ -244,7 +244,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 4: Linked Lists (Singly, Doubly & Circular)",
+      "chapter": "Chapter 4: Linked Lists (Singly, Doubly, and Circular Linked Lists)",
       "text": "Write an algorithm and C functions to add two single-variable polynomials represented as Singly Linked Lists: $P_1(x) = 5x^4 + 3x^2 + 2x + 1$ and $P_2(x) = 4x^3 + 2x^2 + 6$.",
       "marks": "8",
       "years": [
@@ -256,7 +256,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 4: Linked Lists (Singly, Doubly & Circular)",
+      "chapter": "Chapter 4: Linked Lists (Singly, Doubly, and Circular Linked Lists)",
       "text": "Explain how Stacks and Queues are implemented using Singly Linked Lists with $O(1)$ operations.",
       "marks": "6",
       "years": [
@@ -268,7 +268,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Algorithm Complexity & Asymptotic Notations",
+      "chapter": "Chapter 1: Introduction, Asymptotic Notations and Algorithm Complexity",
       "text": "Construct a Huffman Tree and determine variable-length prefix Huffman codes for characters with frequencies: $A: 35, B: 25, C: 15, D: 12, E: 8, F: 5$.",
       "marks": "6",
       "years": [
@@ -280,7 +280,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Algorithm Complexity & Asymptotic Notations",
+      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap Sort) and Searching (Linear, Binary Search)",
       "text": "Explain Topological Sorting of a Directed Acyclic Graph (DAG) using: (a) Kahn's algorithm (indegree array), and (b) DFS with departure time stack.",
       "marks": "6",
       "years": [
@@ -292,7 +292,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Algorithm Complexity & Asymptotic Notations",
+      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap Sort) and Searching (Linear, Binary Search)",
       "text": "Compare Bubble Sort, Selection Sort, and Insertion Sort in terms of best, average, and worst case comparisons, swaps, and stability.",
       "marks": "6",
       "years": [
@@ -304,7 +304,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 4: Linked Lists (Singly, Doubly & Circular)",
+      "chapter": "Chapter 4: Linked Lists (Singly, Doubly, and Circular Linked Lists)",
       "text": "Explain Collision Resolution by Separate Chaining (Open Hashing) with linked lists. Calculate the average search time in terms of Load Factor $\\alpha = n/m$.",
       "marks": "5",
       "years": [
@@ -316,7 +316,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 3: Queues & Circular Queues",
+      "chapter": "Chapter 3: Queues, Circular Queues and Priority Queues",
       "text": "A practical engineering system operating under Algorithm Analysis, Stacks & Queues is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -328,7 +328,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 4: Linked Lists (Singly, Doubly & Circular)",
+      "chapter": "Chapter 4: Linked Lists (Singly, Doubly, and Circular Linked Lists)",
       "text": "A practical engineering system operating under Linked Lists & Implementations is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -340,7 +340,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 6: Trees, Binary Search Trees (BST) & AVL Trees",
+      "chapter": "Chapter 6: Trees, Binary Trees, Binary Search Trees (BST) and AVL Trees",
       "text": "A practical engineering system operating under Trees, Binary Search Trees & Heaps is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -352,7 +352,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Algorithm Complexity & Asymptotic Notations",
+      "chapter": "Chapter 7: Graphs, Graph Traversals (BFS, DFS) and Minimum Spanning Trees",
       "text": "A practical engineering system operating under Graph Algorithms (Traversals, MST & Shortest Paths) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -364,7 +364,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap) & Searching",
+      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap Sort) and Searching (Linear, Binary Search)",
       "text": "A practical engineering system operating under Sorting, Searching & Hashing Techniques is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -376,7 +376,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Algorithm Complexity & Asymptotic Notations",
+      "chapter": "Chapter 1: Introduction, Asymptotic Notations and Algorithm Complexity",
       "text": "Explain the Bellman-Ford Algorithm for single-source shortest paths. Trace Bellman-Ford on a directed graph with negative edge weights and explain how it detects negative weight cycles.",
       "marks": "6",
       "years": [
@@ -387,7 +387,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 3: Queues & Circular Queues",
+      "chapter": "Chapter 3: Queues, Circular Queues and Priority Queues",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Algorithm Analysis, Stacks & Queues. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -398,7 +398,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 3: Queues & Circular Queues",
+      "chapter": "Chapter 3: Queues, Circular Queues and Priority Queues",
       "text": "Solve the standard numerical problem for Algorithm Analysis, Stacks & Queues using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -409,7 +409,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 4: Linked Lists (Singly, Doubly & Circular)",
+      "chapter": "Chapter 4: Linked Lists (Singly, Doubly, and Circular Linked Lists)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Linked Lists & Implementations. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -420,7 +420,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 4: Linked Lists (Singly, Doubly & Circular)",
+      "chapter": "Chapter 4: Linked Lists (Singly, Doubly, and Circular Linked Lists)",
       "text": "Solve the standard numerical problem for Linked Lists & Implementations using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -431,7 +431,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 6: Trees, Binary Search Trees (BST) & AVL Trees",
+      "chapter": "Chapter 6: Trees, Binary Trees, Binary Search Trees (BST) and AVL Trees",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Trees, Binary Search Trees & Heaps. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -442,7 +442,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 6: Trees, Binary Search Trees (BST) & AVL Trees",
+      "chapter": "Chapter 6: Trees, Binary Trees, Binary Search Trees (BST) and AVL Trees",
       "text": "Solve the standard numerical problem for Trees, Binary Search Trees & Heaps using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -453,7 +453,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 1: Algorithm Complexity & Asymptotic Notations",
+      "chapter": "Chapter 7: Graphs, Graph Traversals (BFS, DFS) and Minimum Spanning Trees",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Graph Algorithms (Traversals, MST & Shortest Paths). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -464,7 +464,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 1: Algorithm Complexity & Asymptotic Notations",
+      "chapter": "Chapter 7: Graphs, Graph Traversals (BFS, DFS) and Minimum Spanning Trees",
       "text": "Solve the standard numerical problem for Graph Algorithms (Traversals, MST & Shortest Paths) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -475,7 +475,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap) & Searching",
+      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap Sort) and Searching (Linear, Binary Search)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Sorting, Searching & Hashing Techniques. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -486,7 +486,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap) & Searching",
+      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap Sort) and Searching (Linear, Binary Search)",
       "text": "Solve the standard numerical problem for Sorting, Searching & Hashing Techniques using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -497,7 +497,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 3: Queues & Circular Queues",
+      "chapter": "Chapter 3: Queues, Circular Queues and Priority Queues",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Algorithm Analysis, Stacks & Queues. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -507,7 +507,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 3: Queues & Circular Queues",
+      "chapter": "Chapter 3: Queues, Circular Queues and Priority Queues",
       "text": "State and prove the classical theorems and stability criteria associated with Algorithm Analysis, Stacks & Queues. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -517,7 +517,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 4: Linked Lists (Singly, Doubly & Circular)",
+      "chapter": "Chapter 4: Linked Lists (Singly, Doubly, and Circular Linked Lists)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Linked Lists & Implementations. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -527,7 +527,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 4: Linked Lists (Singly, Doubly & Circular)",
+      "chapter": "Chapter 4: Linked Lists (Singly, Doubly, and Circular Linked Lists)",
       "text": "State and prove the classical theorems and stability criteria associated with Linked Lists & Implementations. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -537,7 +537,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 6: Trees, Binary Search Trees (BST) & AVL Trees",
+      "chapter": "Chapter 6: Trees, Binary Trees, Binary Search Trees (BST) and AVL Trees",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Trees, Binary Search Trees & Heaps. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -547,7 +547,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 6: Trees, Binary Search Trees (BST) & AVL Trees",
+      "chapter": "Chapter 6: Trees, Binary Trees, Binary Search Trees (BST) and AVL Trees",
       "text": "State and prove the classical theorems and stability criteria associated with Trees, Binary Search Trees & Heaps. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -557,7 +557,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 1: Algorithm Complexity & Asymptotic Notations",
+      "chapter": "Chapter 7: Graphs, Graph Traversals (BFS, DFS) and Minimum Spanning Trees",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Graph Algorithms (Traversals, MST & Shortest Paths). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -567,7 +567,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 1: Algorithm Complexity & Asymptotic Notations",
+      "chapter": "Chapter 7: Graphs, Graph Traversals (BFS, DFS) and Minimum Spanning Trees",
       "text": "State and prove the classical theorems and stability criteria associated with Graph Algorithms (Traversals, MST & Shortest Paths). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -577,7 +577,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap) & Searching",
+      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap Sort) and Searching (Linear, Binary Search)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Sorting, Searching & Hashing Techniques. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -587,7 +587,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap) & Searching",
+      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap Sort) and Searching (Linear, Binary Search)",
       "text": "State and prove the classical theorems and stability criteria associated with Sorting, Searching & Hashing Techniques. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -597,7 +597,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Chapter 3: Queues & Circular Queues",
+      "chapter": "Chapter 3: Queues, Circular Queues and Priority Queues",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Algorithm Analysis, Stacks & Queues.",
       "marks": "6",
       "years": [
@@ -606,7 +606,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 3: Queues & Circular Queues",
+      "chapter": "Chapter 3: Queues, Circular Queues and Priority Queues",
       "text": "Write short technical notes on: (a) Key design parameters in Algorithm Analysis, Stacks & Queues, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -615,7 +615,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 4: Linked Lists (Singly, Doubly & Circular)",
+      "chapter": "Chapter 4: Linked Lists (Singly, Doubly, and Circular Linked Lists)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Linked Lists & Implementations.",
       "marks": "6",
       "years": [
@@ -624,7 +624,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 4: Linked Lists (Singly, Doubly & Circular)",
+      "chapter": "Chapter 4: Linked Lists (Singly, Doubly, and Circular Linked Lists)",
       "text": "Write short technical notes on: (a) Key design parameters in Linked Lists & Implementations, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -633,7 +633,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 6: Trees, Binary Search Trees (BST) & AVL Trees",
+      "chapter": "Chapter 6: Trees, Binary Trees, Binary Search Trees (BST) and AVL Trees",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Trees, Binary Search Trees & Heaps.",
       "marks": "6",
       "years": [
@@ -642,7 +642,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 6: Trees, Binary Search Trees (BST) & AVL Trees",
+      "chapter": "Chapter 6: Trees, Binary Trees, Binary Search Trees (BST) and AVL Trees",
       "text": "Write short technical notes on: (a) Key design parameters in Trees, Binary Search Trees & Heaps, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -651,7 +651,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 1: Algorithm Complexity & Asymptotic Notations",
+      "chapter": "Chapter 7: Graphs, Graph Traversals (BFS, DFS) and Minimum Spanning Trees",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Graph Algorithms (Traversals, MST & Shortest Paths).",
       "marks": "6",
       "years": [
@@ -660,7 +660,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 1: Algorithm Complexity & Asymptotic Notations",
+      "chapter": "Chapter 7: Graphs, Graph Traversals (BFS, DFS) and Minimum Spanning Trees",
       "text": "Write short technical notes on: (a) Key design parameters in Graph Algorithms (Traversals, MST & Shortest Paths), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -669,7 +669,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap) & Searching",
+      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap Sort) and Searching (Linear, Binary Search)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Sorting, Searching & Hashing Techniques.",
       "marks": "6",
       "years": [
@@ -678,13 +678,26 @@
       "frequency": 1
     },
     {
-      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap) & Searching",
+      "chapter": "Chapter 8: Sorting (Quick, Merge, Heap Sort) and Searching (Linear, Binary Search)",
       "text": "Write short technical notes on: (a) Key design parameters in Sorting, Searching & Hashing Techniques, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
         "2080"
       ],
       "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Recursion and Divide-and-Conquer Strategies",
+      "text": "Explain the fundamental theoretical concepts, governing principles, and standard analytical methods associated with Recursion and Divide-and-Conquer Strategies. Draw neat diagrams and derive key mathematical formulations where applicable.",
+      "marks": "6+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
     }
   ]
 }
