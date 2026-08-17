@@ -10,13 +10,13 @@ function getRedirectSource(source: string): string {
 
 const cspHeader = `
   default-src 'self';
-  script-src 'self' 'unsafe-eval' 'unsafe-inline' https://upload-widget.cloudinary.com https://*.googletagmanager.com https://pagead2.googlesyndication.com https://*.googlesyndication.com;
-  style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;
+  script-src 'self' 'unsafe-eval' 'unsafe-inline' https://upload-widget.cloudinary.com https://*.googletagmanager.com https://pagead2.googlesyndication.com https://*.googlesyndication.com https://googleads.g.doubleclick.net https://*.google.com https://partner.googleadservices.com https://tpc.googlesyndication.com;
+  style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://fonts.googleapis.com;
   img-src 'self' blob: data: https:;
-  font-src 'self' data: https://cdn.jsdelivr.net;
-  frame-src 'self' https://www.youtube-nocookie.com https://upload-widget.cloudinary.com https://widget.cloudinary.com https://res.cloudinary.com https://drive.google.com https://*.googleusercontent.com;
+  font-src 'self' data: https://cdn.jsdelivr.net https://fonts.gstatic.com;
+  frame-src 'self' https://www.youtube-nocookie.com https://upload-widget.cloudinary.com https://widget.cloudinary.com https://res.cloudinary.com https://drive.google.com https://docs.google.com https://*.google.com https://*.googleusercontent.com https://googleads.g.doubleclick.net https://*.googlesyndication.com https://tpc.googlesyndication.com;
   object-src 'self' https://res.cloudinary.com;
-  connect-src 'self' https://api.cloudinary.com https://*.google-analytics.com https://*.googletagmanager.com https://*.googleadservices.com https://*.googlesyndication.com;
+  connect-src 'self' https://api.cloudinary.com https://*.google-analytics.com https://*.googletagmanager.com https://*.googleadservices.com https://*.googlesyndication.com https://pagead2.googlesyndication.com https://googleads.g.doubleclick.net https://*.google.com https://drive.google.com;
   worker-src 'self' blob:;
   media-src 'self' https:;
 `;
