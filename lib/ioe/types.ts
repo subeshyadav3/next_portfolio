@@ -65,6 +65,8 @@ export interface IoeQuestion {
   marks?: string;
   years: string[];
   frequency: number;
+  year?: string;
+  q_num?: string;
   variations?: IoeQuestionVariation[];
 }
 

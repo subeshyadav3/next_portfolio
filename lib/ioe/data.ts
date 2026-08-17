@@ -6,7 +6,6 @@
 import catalogJson from "@/data/ioe/catalog.json";
 import programsJson from "@/data/ioe/programs.json";
 import syllabusJson from "@/data/ioe/syllabus.json";
-import questionIndexJson from "@/data/ioe/question-index.json";
 import type {
   IoeCatalog,
   IoeCatalogSubject,
@@ -22,7 +21,6 @@ import type {
 const catalog = catalogJson as IoeCatalog;
 const programsFile = programsJson as IoeProgramsFile;
 const syllabusMap = syllabusJson as Record<string, IoeSyllabus>;
-const questionIndex = questionIndexJson as Record<string, IoeQuestionIndexEntry>;
 
 /** Normalize a subject name for matching: lowercase, '&' -> 'and', strip extra symbols. */
 export function normalizeSubjectName(name: string): string {
@@ -39,11 +37,11 @@ export function getCatalogs(): IoeCatalogSubject[] {
 }
 
 export function isSubjectPublic(subjectName: string): boolean {
-  return questionIndex[getSubjectSlugFromName(subjectName)]?.public === true;
+  return true;
 }
 
 export function getPublicCatalogs(): IoeCatalogSubject[] {
-  return catalog.subjects.filter((subject) => isSubjectPublic(subject.name));
+  return catalog.subjects;
 }
 
 export function findCatalogSubject(title: string): IoeCatalogSubject | undefined {
@@ -161,15 +159,8 @@ export function getUnmappedSubjects(): IoeCatalogSubject[] {
   return catalog.subjects.filter((s) => !mapped.has(normalizeSubjectName(s.name)));
 }
 
-export async function getSubjectQuestions(subjectSlug: string): Promise<IoeSubjectQuestions | null> {
-  try {
-    const mod = (await import(`@/data/ioe/questions/${subjectSlug}.json`)) as {
-      default: IoeSubjectQuestions;
-    };
-    return mod.default;
-  } catch {
-    return null;
-  }
+export async function getSubjectQuestions(_subjectSlug: string): Promise<IoeSubjectQuestions | null> {
+  return null;
 }
 
 export function getSyllabusForSubject(subjectName: string): IoeSyllabus | null {

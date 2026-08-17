@@ -48,8 +48,8 @@ export default async function IoeProgramPage({ params }: PageProps) {
     0
   );
 
-  // Tier 1 deep programs have individual subject chapter banks
-  const isDeepProgram = ["bct", "bce", "bei", "bex"].includes(program.code.toLowerCase());
+  // All programs use the unified authoritative program hub with in-page PDF preview and direct download
+  const isDeepProgram = false;
 
   const breadcrumb = breadcrumbLd([
     { name: "Home", path: "/" },

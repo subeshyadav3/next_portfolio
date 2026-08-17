@@ -4,7 +4,7 @@ import { BookOpen, ChevronDown, ExternalLink, FileText } from "lucide-react";
 
 function UnitList({ units }: { units: IoeSyllabusUnit[] }) {
   return (
-    <details className="group rounded-2xl border border-slate-200/90 bg-slate-50/60 transition-colors dark:border-gray-800 dark:bg-gray-800/40">
+    <details open className="group rounded-2xl border border-slate-200/90 bg-slate-50/60 transition-colors dark:border-gray-800 dark:bg-gray-800/40">
       <summary className="flex cursor-pointer list-none items-center justify-between px-5 py-4">
         <span className="text-sm font-semibold text-slate-900 dark:text-white">
           Chapter-wise Units &amp; Topics ({units.length} units)

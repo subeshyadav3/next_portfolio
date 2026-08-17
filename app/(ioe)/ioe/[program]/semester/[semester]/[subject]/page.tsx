@@ -5,13 +5,13 @@ import {
   findCatalogSubject,
   getAllPrograms,
   getPapersForSubject,
-  getSubjectQuestions,
+  getSyllabusForSubject,
   getSubjectSlugFromName,
 } from "@/lib/ioe/data";
 import { PdfViewer } from "@/components/ioe/PdfViewer";
-import { QuestionBank } from "@/components/ioe/QuestionBank";
+import SyllabusSection from "@/components/ioe/SyllabusSection";
 import { buildIoeMetadata, breadcrumbLd, jsonLd, learningResourceLd } from "@/lib/ioe/seo";
-import { ChevronRight, FileText, BookOpen, Layers, Clock } from "lucide-react";
+import { ChevronRight, FileText, Award, HelpCircle, CheckCircle2 } from "lucide-react";
 
 interface PageProps {
   params: Promise<{ program: string; semester: string; subject: string }>;
@@ -46,7 +46,7 @@ export async function generateMetadata({ params }: PageProps) {
   if (!subjectRow || !catalog) return {};
   return buildIoeMetadata({
     title: `${subjectRow.title} Past Year Questions (PYQ) IOE PDF`,
-    description: `Download ${subjectRow.title} (${subjectRow.code}) IOE past year questions (PYQ) PDF. Chapter-wise question bank with exam repetition frequency for IOE ${program?.name} (${program?.code}) Semester ${semester}, Tribhuvan University.`,
+    description: `Download official ${subjectRow.title} past year question papers (PYQ) PDF. Complete semester syllabus, board examination blueprint, and official TU IOE papers from 2078 to 2083 BS.`,
     path: `/ioe/${programSlug}/semester/${semester}/${subjectSlug}`,
   });
 }
@@ -65,11 +65,7 @@ export default async function IoeSubjectPage({ params }: PageProps) {
   const papers = getPapersForSubject(catalog, semester);
   if (papers.length === 0) notFound();
 
-  const questions = await getSubjectQuestions(subjectSlug);
-  const chapterList = questions?.chapters?.length
-    ? questions.chapters
-    : Array.from(new Set(questions?.questions.map((q) => q.chapter) ?? []));
-
+  const syllabus = getSyllabusForSubject(subjectRow.title);
   const semShort = `Sem ${semester}`;
   const path = `/ioe/${programSlug}/semester/${semester}/${subjectSlug}`;
 
@@ -81,27 +77,50 @@ export default async function IoeSubjectPage({ params }: PageProps) {
     { name: subjectRow.title, path },
   ]);
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": `How can I download ${subjectRow.title} IOE past question papers?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `You can preview or download the official ${subjectRow.title} question papers (PDF) directly using the built-in PDF viewer on this page with zero redirects.`
+        }
+      },
+      {
+        "@type": "Question",
+        "name": `What is the full mark and pass mark for ${subjectRow.title}?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `For the IOE final board theory exam, the full mark is 80 (pass mark: 32). The internal theory assessment is 20 marks (pass mark: 8).`
+        }
+      }
+    ]
+  };
+
   return (
-    <div className="space-y-8">
+    <div className="space-y-10">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumb) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
           __html: jsonLd(
             learningResourceLd({
               title: `${subjectRow.title} (${subjectRow.code})`,
-              description: `IOE ${program.name} semester ${semester} past question papers and chapter-wise question bank.`,
+              description: `Official IOE ${program.name} semester ${semester} past question papers and syllabus.`,
               path,
               program,
               semester,
               papers: papers.length,
-              questions: questions?.questions.length,
             })
           ),
         }}
       />
 
-      {/* Breadcrumbs */}
+      {/* ── Breadcrumbs ── */}
       <nav className="flex flex-wrap items-center gap-1.5 text-xs font-medium text-slate-500 dark:text-slate-400">
         <Link href="/ioe" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
           IOE
@@ -120,7 +139,7 @@ export default async function IoeSubjectPage({ params }: PageProps) {
         </span>
       </nav>
 
-      {/* Subject Header */}
+      {/* ── Subject Header ── */}
       <header className="rounded-3xl border border-slate-200/90 bg-white p-6 shadow-xs transition-colors dark:border-gray-800/90 dark:bg-gray-900 sm:p-8">
         <div className="flex flex-wrap items-center gap-2">
           <span className="rounded-lg bg-blue-600 px-3 py-1 font-mono text-xs font-bold text-white shadow-xs shadow-blue-500/20 dark:bg-blue-500">
@@ -140,13 +159,11 @@ export default async function IoeSubjectPage({ params }: PageProps) {
         </h1>
 
         <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-600 dark:text-slate-400 sm:text-base">
-          {questions && questions.questions.length > 0
-            ? `${questions.questions.length} questions extracted from 2078–2083 BS exam sessions, classified by syllabus chapters and ranked by repetition frequency.`
-            : `Official exam question papers available in the PDF viewer below. Review past questions to prepare for your semester final exams.`}
+          Official past examination question papers and complete curriculum syllabus for {subjectRow.title} ({subjectRow.code}), Institute of Engineering (IOE), Tribhuvan University.
         </p>
       </header>
 
-      {/* Embedded PDF Viewer */}
+      {/* ── Embedded PDF Viewer ── */}
       <section className="space-y-3">
         <div className="flex items-center justify-between">
           <h2 className="text-base font-bold text-slate-900 dark:text-white">
@@ -159,26 +176,88 @@ export default async function IoeSubjectPage({ params }: PageProps) {
         <PdfViewer papers={papers} />
       </section>
 
-      {/* Chapter-wise Question Bank or Queued Notice */}
-      {questions && questions.questions.length > 0 ? (
-        <QuestionBank
-          chapters={chapterList}
-          questions={questions.questions}
-          subject={subjectRow.title}
-        />
-      ) : (
-        <div className="rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center shadow-xs transition-colors dark:border-gray-800 dark:bg-gray-900">
-          <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100 text-slate-500 dark:bg-gray-800 dark:text-slate-400">
-            <Clock className="h-5 w-5" />
-          </div>
-          <h3 className="mt-3 text-sm font-semibold text-slate-900 dark:text-white">
-            Chapter-wise Question Bank in Progress
-          </h3>
-          <p className="mx-auto mt-1 max-w-md text-xs text-slate-500 dark:text-slate-400">
-            AI-assisted chapter extraction is currently processing this subject. In the meantime, use the embedded PDF viewer above to study the full question papers.
-          </p>
+      {/* ── Official Syllabus Section ── */}
+      <SyllabusSection subject={subjectRow.title} syllabus={syllabus} />
+
+      {/* ── Examination Blueprint & Evaluation Scheme ── */}
+      <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-6 shadow-xs dark:border-gray-800 dark:bg-gray-900 sm:p-8">
+        <div className="flex items-center gap-2">
+          <Award className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+          <h2 className="text-xl font-extrabold text-slate-900 dark:text-white">
+            Examination Scheme &amp; Marks Distribution
+          </h2>
         </div>
-      )}
+
+        <div className="grid gap-6 text-sm leading-relaxed text-slate-600 dark:text-slate-300 sm:grid-cols-2">
+          <div className="space-y-3">
+            <h3 className="font-bold text-slate-900 dark:text-white">
+              Evaluation Criteria
+            </h3>
+            <ul className="list-inside list-disc space-y-1.5 text-xs text-slate-600 dark:text-slate-400">
+              <li>
+                <strong>Final Board Theory Exam:</strong> 80 Marks (Pass mark: 32, Time: 3 Hours)
+              </li>
+              <li>
+                <strong>Internal Assessment (Theory):</strong> 20 Marks (Pass mark: 8)
+              </li>
+              <li>
+                <strong>Practical / Lab Exam:</strong> 25 or 50 Marks (Continuous assessment + viva)
+              </li>
+            </ul>
+          </div>
+
+          <div className="space-y-3">
+            <h3 className="font-bold text-slate-900 dark:text-white">
+              Exam Preparation Guidelines
+            </h3>
+            <ul className="list-inside list-disc space-y-1.5 text-xs text-slate-600 dark:text-slate-400">
+              <li>Review past question papers from 2078 to 2083 BS to understand recurring derivations.</li>
+              <li>Practice numerical problems with clean step-by-step units and assumptions.</li>
+              <li>Cross-reference answers with the official syllabus units and standard textbooks.</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* FAQ Section */}
+        <div className="border-t border-slate-100 pt-6 dark:border-gray-800">
+          <h3 className="flex items-center gap-2 text-base font-bold text-slate-900 dark:text-white">
+            <HelpCircle className="h-4 w-4 text-emerald-500" />
+            Frequently Asked Questions ({subjectRow.title})
+          </h3>
+          <div className="mt-4 space-y-4 text-xs sm:text-sm">
+            <div>
+              <p className="font-semibold text-slate-800 dark:text-slate-200">
+                Q: Are these official IOE past question papers?
+              </p>
+              <p className="mt-1 text-slate-500 dark:text-slate-400">
+                Yes, all past question papers available on this portal are official examination papers issued by the Tribhuvan University, Institute of Engineering (IOE) Examination Control Division.
+              </p>
+            </div>
+            <div>
+              <p className="font-semibold text-slate-800 dark:text-slate-200">
+                Q: Can I download the PDF for offline revision?
+              </p>
+              <p className="mt-1 text-slate-500 dark:text-slate-400">
+                Yes, click the &quot;Download PDF&quot; button in the viewer above to save the complete original question paper file directly to your device.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ── Quick Trust Signals ── */}
+      <section className="grid gap-3 rounded-2xl border border-slate-200/80 bg-slate-50 p-5 dark:border-gray-800/80 dark:bg-gray-900/50 sm:grid-cols-3 sm:p-6">
+        {[
+          { icon: CheckCircle2, text: "Official IOE / TU Exam Papers Only", color: "text-blue-600 dark:text-blue-400" },
+          { icon: CheckCircle2, text: "Free Direct PDF Download", color: "text-emerald-600 dark:text-emerald-400" },
+          { icon: CheckCircle2, text: "Complete Syllabus & Marking Scheme", color: "text-violet-600 dark:text-violet-400" },
+        ].map(({ icon: Icon, text, color }) => (
+          <div key={text} className="flex items-center gap-2.5 text-xs font-medium text-slate-700 dark:text-slate-300">
+            <Icon className={`h-4 w-4 shrink-0 ${color}`} />
+            {text}
+          </div>
+        ))}
+      </section>
     </div>
   );
 }

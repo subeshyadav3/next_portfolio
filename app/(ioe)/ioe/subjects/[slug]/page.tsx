@@ -12,7 +12,6 @@ import {
   normalizeSubjectName,
 } from "@/lib/ioe/data";
 import { PdfViewer } from "@/components/ioe/PdfViewer";
-import { QuestionBank } from "@/components/ioe/QuestionBank";
 import SyllabusSection from "@/components/ioe/SyllabusSection";
 import { buildIoeMetadata, breadcrumbLd, jsonLd, learningResourceLd } from "@/lib/ioe/seo";
 import { ChevronRight, FileText, Clock } from "lucide-react";
@@ -145,27 +144,6 @@ export default async function IoeSubjectArchivePage({ params }: PageProps) {
         </div>
         <PdfViewer papers={papers} />
       </section>
-
-      {/* Question Bank */}
-      {questions && questions.questions.length > 0 ? (
-        <QuestionBank
-          chapters={chapterList}
-          questions={questions.questions}
-          subject={subject.name}
-        />
-      ) : (
-        <div className="rounded-2xl border border-dashed border-slate-300 bg-white p-8 text-center shadow-xs transition-colors dark:border-gray-800 dark:bg-gray-900">
-          <div className="mx-auto flex h-10 w-10 items-center justify-center rounded-xl bg-slate-100 text-slate-500 dark:bg-gray-800 dark:text-slate-400">
-            <Clock className="h-5 w-5" />
-          </div>
-          <h3 className="mt-3 text-sm font-semibold text-slate-900 dark:text-white">
-            Chapter-wise Question Bank in Progress
-          </h3>
-          <p className="mx-auto mt-1 max-w-md text-xs text-slate-500 dark:text-slate-400">
-            AI-assisted chapter extraction is queued for this subject. Use the embedded PDF viewer above to study the question papers.
-          </p>
-        </div>
-      )}
     </div>
   );
 }
