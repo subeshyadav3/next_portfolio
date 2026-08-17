@@ -49,6 +49,8 @@ export interface IoePaper {
   previewUrl: string;
   /** Google Drive download URL. */
   downloadUrl: string;
+  /** Google Drive standard view URL (direct tab). */
+  driveViewUrl: string;
 }
 
 export interface IoeQuestion {

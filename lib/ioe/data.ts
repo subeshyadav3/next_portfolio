@@ -79,6 +79,10 @@ function driveDownloadUrl(id: string): string {
   return `https://drive.google.com/uc?export=download&id=${id}`;
 }
 
+function driveViewUrl(id: string): string {
+  return `https://drive.google.com/file/d/${id}/view`;
+}
+
 export function toPaper(
   subject: string,
   file: IoePaperFile
@@ -90,6 +94,7 @@ export function toPaper(
     subject,
     previewUrl: drivePreviewUrl(file.id),
     downloadUrl: driveDownloadUrl(file.id),
+    driveViewUrl: driveViewUrl(file.id),
   };
 }
 
