@@ -15,65 +15,49 @@
       "text": "Define Discrete Fourier Transform (DFT) ($X[k] = \\sum_{n=0}^{N-1} x[n] W_N^{kn}$) and Inverse DFT. State properties of DFT: Linearity, Periodicity, Circular Time Shift, Circular Frequency Shift, and Parseval's Theorem. Explain Circular Convolution ($x_1[n] \\mathbin{\\circledast} x_2[n]$) and show how Linear Convolution is computed via DFT and IDFT with zero padding.",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 1: Discrete-Time Signals, Systems & Frequency-Domain Characterization",
       "text": "Derive the Radix-2 Decimation-in-Time (DIT-FFT) butterfly algorithm. Show how the computational complexity is reduced from $O(N^2)$ complex multiplications to $O(N \\log_2 N)$. Draw the complete 8-point DIT-FFT butterfly signal flow graph (Bit-reversal order input to natural order output) and calculate the 8-point DFT for $x[n] = \\{1, 2, 2, 1, 1, 2, 2, 1\\}$.",
       "marks": "4+6",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 5: Infinite Impulse Response Filter Design",
       "text": "Explain the design of Analog Butterworth Lowpass Filter (Magnitude response $|H(j\\Omega)|^2 = \\frac{1}{1 + (\\Omega/\\Omega_c)^{2N}}$, order determination $N \\ge \\frac{\\log_{10}\\left(\\frac{10^{0.1\\alpha_s}-1}{10^{0.1\\alpha_p}-1}\\right)}{2\\log_{10}(\\Omega_s/\\Omega_p)}$, and pole distribution on s-plane). Design an analog Butterworth filter to satisfy passband ripple $\\le 1\\,\\text{dB}$ at $\\Omega_p = 20\\,\\text{rad/s}$ and stopband attenuation $\\ge 30\\,\\text{dB}$ at $\\Omega_s = 50\\,\\text{rad/s}$.",
       "marks": "4+6",
       "years": [
-        "2083",
-        "2082",
         "2081",
         "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 5: Infinite Impulse Response Filter Design",
       "text": "Explain Bilinear Transformation (BLT) ($s = \\frac{2}{T}\\frac{1-z^{-1}}{1+z^{-1}}$) for transforming analog filters into digital IIR filters. What is Frequency Warping ($\\Omega = \\frac{2}{T}\\tan\\frac{\\omega}{2}$) and how is pre-warping used to eliminate warping error? Convert an analog filter $H_a(s) = \\frac{2}{s+2}$ into a digital IIR filter $H(z)$ using BLT with $T = 0.5\\,\\text{s}$.",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 5: Infinite Impulse Response Filter Design",
       "text": "Explain Linear Phase characteristics of FIR filters (Symmetric and Antisymmetric impulse response $h[n] = \\pm h[M-1-n]$ for constant phase delay and group delay). What are the four types of linear phase FIR filters and their zero locations at $z = 1, -1$?",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079",
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 4: Finite Impulse Response Filter Design",
@@ -81,49 +65,38 @@
       "marks": "8",
       "years": [
         "2083",
-        "2082",
         "2081",
-        "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 4: Finite Impulse Response Filter Design",
       "text": "Explain Multirate Digital Signal Processing: (a) Decimation (Downsampling by integer factor $M$ and anti-aliasing filter), (b) Interpolation (Upsampling by integer factor $L$ and anti-imaging filter), and (c) Sampling Rate Conversion by rational factor $I/D$.",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 4: Finite Impulse Response Filter Design",
       "text": "Explain Overlap-Add Method and Overlap-Save Method for linear filtering of long duration data sequences using DFT.",
       "marks": "6",
       "years": [
-        "2083",
         "2082",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 4
+      "frequency": 2
     },
     {
       "chapter": "Chapter 3: Fast Fourier Transform Algorithms",
       "text": "Derive the Radix-2 Decimation-in-Frequency (DIF-FFT) algorithm. Draw the 8-point DIF-FFT butterfly flow graph (Natural order input to bit-reversal order output) and compare DIT vs DIF algorithms.",
       "marks": "8",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2081"
       ],
-      "frequency": 4
+      "frequency": 1
     },
     {
       "chapter": "Chapter 6: Digital Filter Structures & Finite Word-Length Effects",
@@ -131,9 +104,9 @@
       "marks": "6",
       "years": [
         "2083",
-        "2082",
+        "2081",
         "2080",
-        "2078"
+        "2079"
       ],
       "frequency": 4
     }

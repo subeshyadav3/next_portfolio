@@ -53,12 +53,19 @@ export interface IoePaper {
   driveViewUrl: string;
 }
 
+export interface IoeQuestionVariation {
+  year: string;
+  text: string;
+  marks?: string;
+}
+
 export interface IoeQuestion {
   chapter: string;
   text: string;
   marks?: string;
   years: string[];
   frequency: number;
+  variations?: IoeQuestionVariation[];
 }
 
 export interface IoeSubjectQuestions {

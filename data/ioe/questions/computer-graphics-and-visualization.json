@@ -15,65 +15,49 @@
       "text": "Derive Bresenham's Line Drawing Algorithm for lines with positive slope $|m| < 1$. Explain the decision parameter $p_k = 2\\Delta y - \\Delta x$. Digitize a line with endpoints $(20, 10)$ and $(30, 18)$ using Bresenham's algorithm showing all intermediate coordinates.",
       "marks": "3+5",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 1: Introduction to Computer Graphics Hardware & Scan Conversion",
       "text": "Derive the Midpoint Circle Generation Algorithm using eight-way symmetry. Formulate the initial decision parameter $p_0 = \\frac{5}{4} - r \\approx 1 - r$. Digitize a circle centered at origin $(0, 0)$ with radius $r = 10$ pixels in the first octant.",
       "marks": "3+5",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 2: 2D Geometric Transformations & Homogeneous Coordinates",
       "text": "Derive the homogeneous coordinate transformation matrices for 2D Translation, Scaling, Rotation about an arbitrary point $(x_r, y_r)$, and Reflection about the line $y = mx + c$. Magnify a triangle $A(0,0), B(1,1), C(5,2)$ to twice its size keeping vertex $B(1,1)$ fixed.",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
         "2081",
         "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 4: 3D Concepts & 3D Transformations, Projections",
       "text": "Compare Parallel Projections (Orthographic, Axonometric, Oblique - Cavalier and Cabinet) vs. Perspective Projections (One-point, Two-point, Three-point perspective). Derive the 3D Perspective Projection matrix for a center of projection at $(0, 0, -d)$ on the projection plane $z = 0$: $x_p = \\frac{x}{z/d + 1}, y_p = \\frac{y}{z/d + 1}$.",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 3: 2D Viewing & Window-to-Viewport Transformation, Line/Polygon Clipping",
       "text": "Explain Cohen-Sutherland Line Clipping Algorithm using 4-bit region outcodes (Top, Bottom, Right, Left). Clip a line segment from $P_1(-10, 40)$ to $P_2(50, 80)$ against the rectangular clipping window with boundaries $X_{wmin} = 0, X_{wmax} = 40, Y_{wmin} = 0, Y_{wmax} = 60$.",
       "marks": "3+5",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079",
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 3: 2D Viewing & Window-to-Viewport Transformation, Line/Polygon Clipping",
@@ -81,51 +65,38 @@
       "marks": "4+4",
       "years": [
         "2083",
-        "2082",
         "2081",
-        "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 5: Visible Surface Detection Algorithms",
       "text": "Explain the Depth-Buffer ($Z$-Buffer) algorithm for visible surface detection. Derive the incremental depth calculation across scan lines: $z' = z - \\frac{A}{C} \\Delta x$. Explain advantages and limitations of the $Z$-buffer algorithm. What is the $A$-Buffer algorithm for handling antialiasing and transparency?",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 6: Illumination Models & Color Models",
       "text": "Explain the Phong Illumination Model containing Ambient reflection ($I_a k_a$), Diffuse reflection (Lambert's cosine law $I_d = I_p k_d (\\mathbf{N} \\cdot \\mathbf{L})$), and Specular reflection ($I_s = I_p k_s (\\mathbf{R} \\cdot \\mathbf{V})^n$). Compare: (a) Flat / Constant Shading, (b) Gouraud Shading (Intensity interpolation), and (c) Phong Shading (Normal vector interpolation).",
       "marks": "4+4",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 1: Introduction to Computer Graphics Hardware & Scan Conversion",
       "text": "Explain Computer Animation principles (Keyframing, In-betweening / Morphing, Kinematics, Dynamics). Explain B\u00e9zier Curves and B-Spline Curves in 3D computer graphics modeling.",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2081"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 5: Visible Surface Detection Algorithms",
@@ -133,9 +104,9 @@
       "marks": "8",
       "years": [
         "2083",
-        "2082",
+        "2081",
         "2080",
-        "2078"
+        "2079"
       ],
       "frequency": 4
     }

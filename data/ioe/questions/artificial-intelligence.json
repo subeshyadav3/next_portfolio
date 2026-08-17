@@ -14,331 +14,513 @@
   "questions": [
     {
       "chapter": "Chapter 1: Introduction",
-      "text": "Define Artificial Intelligence. Explain the Turing Test and Chinese Room Argument. Explain Rational Agents and the PEAS (Performance Measure, Environment, Actuators, Sensors) framework for: (a) Automated Taxi Driver, and (b) Medical Diagnosis System.",
-      "marks": "4+4",
+      "text": "Differentiate between Natural (Human) Intelligence and Artificial Intelligence. Can AI replace humans? Justify your stance.",
+      "marks": "3+4",
       "years": [
-        "2083",
-        "2081",
-        "2079"
+        "2082 Chaitra",
+        "2079 Chaitra"
       ],
-      "frequency": 3
+      "frequency": 2
     },
     {
       "chapter": "Chapter 1: Introduction",
-      "text": "Explain Environment Types in AI: Fully Observable vs Partially Observable, Deterministic vs Stochastic, Episodic vs Sequential, Static vs Dynamic, Discrete vs Continuous, and Single-Agent vs Multi-Agent. Classify Agent Architectures: Simple Reflex, Model-Based, Goal-Based, and Utility-Based agents.",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Introduction",
-      "text": "Explain the concept of Agentic AI and how it differs from traditional AI systems. Discuss the interdisciplinary foundation of AI spanning Computer Science, Mathematics, Neuroscience, and Philosophy.",
+      "text": "Discuss the role of Artificial Intelligence in public service delivery in the context of Nepal.",
       "marks": "4",
       "years": [
-        "2083",
-        "2082"
+        "2082 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "What is an Intelligent Agent? Do we need PEAS for designing an intelligent agent? Design the PEAS (Performance Measure, Environment, Actuators, Sensors) framework for an Automated Robot in a manufacturing plant.",
+      "marks": "3+5",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Explain different types of Intelligent Agent architectures (Simple Reflex, Model-Based, Goal-Based, Utility-Based) with examples.",
+      "marks": "6",
+      "years": [
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "Can machine think? Explain your stance with appropriate reasons. Relate it with Turing Test and Reverse Turing Test.",
+      "marks": "2+4",
+      "years": [
+        "2080 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Introduction",
+      "text": "What is cognition and learning? Why are they important in AI? Explain the factors that are responsible for learning.",
+      "marks": "6",
+      "years": [
+        "2079 Ashwin"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving and Search",
+      "text": "Mention the problem formulation of 8-Queen problem as a state space search with one appropriate solution.",
+      "marks": "3",
+      "years": [
+        "2082 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving and Search",
+      "text": "Solve the Crypt-Arithmetic problem: LOGIC + LOGIC = PROLOG by showing all required letter-to-digit assignment steps.",
+      "marks": "5",
+      "years": [
+        "2082 Chaitra",
+        "2079 Chaitra"
       ],
       "frequency": 2
     },
     {
       "chapter": "Chapter 2: Problem Solving and Search",
-      "text": "Compare Uninformed Search Algorithms: Breadth-First Search (BFS), Depth-First Search (DFS), Uniform-Cost Search (UCS / Dijkstra), and Iterative Deepening DFS (IDDFS) in terms of Completeness, Time Complexity, Space Complexity, and Optimality.",
-      "marks": "4+4",
+      "text": "What are criteria for defining a problem in AI? Solve the Crypt-Arithmetic problem: BASE + BALL = GAMES showing all steps.",
+      "marks": "2+6",
       "years": [
-        "2083",
-        "2081",
-        "2079",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 2: Problem Solving and Search",
-      "text": "Explain ^*$ Search Algorithm ((n) = g(n) + h(n)$). Define Admissible Heuristic ((n) \\le h^*(n)$) and Consistent (Monotonic) Heuristic ((n) \\le c(n, a, n') + h(n') $). Prove that Tree-search ^*$ is optimal with an admissible heuristic.",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082",
-        "2080"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Problem Solving and Search",
-      "text": "Solve the 8-Puzzle Problem from initial state to goal state using ^*$ search with: (1) Misplaced Tiles heuristic (n)$, and (2) Manhattan Distance heuristic (n)$. Why is $ dominant over 0",
-      "marks": "6",
-      "years": [
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Problem Solving and Search",
-      "text": "Explain Constraint Satisfaction Problems (CSP). Formalize the Map Coloring Problem (Australia map with 7 regions using 3 colors Red, Green, Blue) as a CSP. Explain Backtracking Search with MRV (Minimum Remaining Values), Degree heuristic, and Forward Checking / AC-3 algorithm.",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Problem Solving and Search",
-      "text": "Explain the Minimax Algorithm for two-player zero-sum games. Trace the Minimax algorithm and Alpha-Beta Pruning on a given 4-ply game tree. State the conditions for $\u0007lphahBccutoff and $\betahBccutoff ($\u0007lpha \\ge \beta$).",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 2: Problem Solving and Search",
-      "text": "Explain Local Search Algorithms: Hill Climbing (Steepest Ascent) and Simulated Annealing. How does Simulated Annealing escape local maxima using the Boltzmann probability distribution ( = e^{\\Delta E / T}$)?",
-      "marks": "6",
-      "years": [
-        "2082",
-        "2080"
+        "2082 Kartik",
+        "2079 Ashwin"
       ],
       "frequency": 2
     },
     {
       "chapter": "Chapter 2: Problem Solving and Search",
-      "text": "Explain Genetic Algorithms (GA) for optimization. Explain the basic operators: Selection (Roulette Wheel, Tournament), Crossover (Single-point, Two-point), and Mutation with an example.",
+      "text": "List down characteristics of a well-defined problem. Solve the 2-Jugs Problem (5-litre and 3-litre jugs with no markings and a pump) to measure exactly 1 liter of water by specifying states and production rules.",
+      "marks": "1+5",
+      "years": [
+        "2081 Ashwin"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving and Search",
+      "text": "Define well-defined problem. Solve the Crypt-Arithmetic problem: ONE + ONE + TWO = FOUR by showing all steps.",
+      "marks": "2+6",
+      "years": [
+        "2080 Ashwin"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving and Search",
+      "text": "What do you mean by Constraints Satisfaction Problem (CSP)? List all constraints and solve the Crypt-Arithmetic problem: EAT + THAT = APPLE.",
+      "marks": "2+5",
+      "years": [
+        "2080 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving and Search",
+      "text": "Explain steps of problem solving with suitable example. Solve the Crypt-Arithmetic algorithm: SWIM + WEAR = RELAX.",
+      "marks": "3+6",
+      "years": [
+        "2078 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving and Search",
+      "text": "Solve the Crypt-Arithmetic problem by defining it as a production system: TWO + TWO = FOUR.",
+      "marks": "2+6",
+      "years": [
+        "2078 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving and Search",
+      "text": "What are the dimensions to evaluate search algorithms (Completeness, Time Complexity, Space Complexity, Optimality)? Explain how informed search is different from uninformed search.",
+      "marks": "4",
+      "years": [
+        "2082 Chaitra",
+        "2079 Ashwin"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving and Search",
+      "text": "Why is searching important in problem solving? Differentiate between Depth First Search (DFS), Breadth First Search (BFS), and Depth Limited Search (DLS) with their performance criteria.",
       "marks": "6",
       "years": [
-        "2083",
-        "2081",
-        "2079"
+        "2080 Ashwin",
+        "2079 Ashwin"
       ],
-      "frequency": 3
+      "frequency": 2
     },
     {
-      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
-      "text": "Explain Knowledge Representation techniques: Semantic Networks, Frames, Conceptual Dependency, and Knowledge Graphs with examples.",
-      "marks": "4+4",
+      "chapter": "Chapter 2: Problem Solving and Search",
+      "text": "Explain $A^*$ Search Algorithm ($f(n) = g(n) + h(n)$). How does $A^*$ search overcome problems associated with Greedy Best-First Search? Trace $A^*$ and greedy search on a given graph with heuristic costs.",
+      "marks": "3+4+3",
       "years": [
-        "2083",
-        "2082",
-        "2080"
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving and Search",
+      "text": "What are the drawbacks of the Min-Max algorithm for two-player game playing? Explain how Alpha-Beta Pruning overcomes its limitations, and trace Alpha-Beta pruning on a given game tree to identify pruned branches.",
+      "marks": "3+6",
+      "years": [
+        "2082 Chaitra",
+        "2082 Kartik",
+        "2079 Chaitra"
       ],
       "frequency": 3
     },
     {
+      "chapter": "Chapter 2: Problem Solving and Search",
+      "text": "What are the drawbacks of Hill Climbing search (Local Maxima, Ridges, Plateau)? Explain how the Simulated Annealing algorithm escapes local maxima.",
+      "marks": "6",
+      "years": [
+        "2081 Ashwin"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving and Search",
+      "text": "When shall we use Genetic Algorithms (GA)? Explain all steps in GA including Selection (Roulette wheel, Tournament), Crossover, and Mutation operations with a block diagram.",
+      "marks": "3+5",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
       "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
-      "text": "Convert the following sentences into First-Order Predicate Logic (FOPL) and prove by Resolution Refutation: (a) Marcus was a man, (b) Marcus was a Pompeian, (c) All Pompeians were Romans, (d) Caesar was a ruler, (e) All Romans either loved Caesar or hated him, (f) Everyone loves someone, (g) People only try to assassinate rulers they hate, (h) Marcus tried to assassinate Caesar. Prove: Did Marcus hate Caesar?",
+      "text": "Define Production System. Differentiate between Forward Chaining and Backward Chaining in rule-based inference with suitable examples.",
+      "marks": "2+6",
+      "years": [
+        "2082 Chaitra",
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
+      "text": "Axioms: \"The law says it is a crime for an American to sell weapons to hostile nations. Country Nono, an enemy of America, has some missiles, and all missiles were sold to it by Colonel West, who is American.\" Prove that Colonel West is a criminal using FOPL Resolution Refutation.",
+      "marks": "1+6",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
+      "text": "Axioms: \"Every child loves Santa. Everyone who loves Santa loves any reindeer. Rudolph is a reindeer, and Rudolph has a red nose. Anything which has a red nose is weird or is a clown. No reindeer is a clown. Scrooge does not love anything which is weird.\" Prove: \"Scrooge is not a child\" using Resolution Refutation.",
       "marks": "8",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2081 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
+      "text": "Axioms: \"Every country that has weapons and is hostile is dangerous. Every country that is an enemy of America is hostile. Kadon is a country. Kadon has weapons. Kadon is an enemy of America. Any dangerous country should be sanctioned.\" Prove: \"Kadon should be sanctioned\" using Resolution Refutation.",
+      "marks": "2+5",
+      "years": [
+        "2082 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
+      "text": "Axioms: \"All people who are not poor and are smart are happy. Those people who can read are not stupid. John can read and is wealthy. Happy people have exciting lives.\" Prove: \"Can anyone be found with an exciting life?\" using Resolution Refutation.",
+      "marks": "3+5",
+      "years": [
+        "2080 Ashwin"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
+      "text": "Axioms: \"Everyone who loves all animals is loved by someone. Anyone who kills an animal is loved by no one. Jack loves all animals. Either Jack or Curiosity killed the cat.\" Prove: \"Did Curiosity kill the cat?\" using Resolution Refutation.",
+      "marks": "3+5",
+      "years": [
+        "2080 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
+      "text": "Axioms: \"Steve only likes easy courses. Science courses are hard. All courses in basket weaving department are easy. BK301 is a basket weaving course.\" Prove that Steve likes BK301 course using Resolution Refutation Method.",
+      "marks": "7",
+      "years": [
+        "2079 Ashwin"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
+      "text": "Explain Conceptual Dependency (CD) and Scripts in knowledge representation. Convert sentences into Semantic Network: (a) Average height of adult is 5'6\", (b) Cricket player is adult male, (c) Adult male is a person, (d) Batting average of cricket player is 37.59, (e) Rohit Paudel is a Batsman / Fielder, (f) Batsman is a cricket player, (g) Rohit Paudel is Captain / Team is Nepal.",
+      "marks": "4+3",
+      "years": [
+        "2082 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
+      "text": "Define Semantic Networks and Frames. Represent given facts into a Semantic Network: Cat is a mammal, Bear is a mammal, Whale lives in water, Fish is an animal / Ram likes Jhilke, Jhilke is a cat.",
+      "marks": "2+6",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
+      "text": "An individual has 3 different email accounts (#1: 70%, #2: 20%, #3: 10% messages). Spam rates are 1% for #1, 2% for #2, and 5% for #3. What is the probability that a randomly selected spam message is from account #2?",
+      "marks": "2+5",
+      "years": [
+        "2082 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
+      "text": "In a population 1% of people have a certain genetic defect. 90% of tests detect the defect (true positive), and 9.6% detect positive even without defect. If a person gets a positive test result, what is the probability they actually have the genetic defect?",
+      "marks": "2+6",
+      "years": [
+        "2081 Ashwin"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
+      "text": "Three factories produce light bulbs: Factory A (50%), Factory B (30%), Factory C (20%). Defective rates are 2% for A, 3% for B, and 4% for C. If a randomly selected bulb is found defective, what is the probability it was produced by Factory B?",
+      "marks": "3+5",
+      "years": [
+        "2080 Ashwin"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
+      "text": "What is Prior Probability and Posterior Probability and show how these probabilities are used in Bayes' Theorem? Explain how reasoning is done in a Bayesian Belief Network.",
+      "marks": "3+5",
+      "years": [
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
+      "text": "Why CNF is necessary? \"Everyone who loves all animals are loved by someone\" \u2014 represent this statement in FOPL and explain all steps involved to convert it into CNF.",
+      "marks": "2+6",
+      "years": [
+        "2079 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
+      "text": "What is Fuzzy Logic? When do we use it? Explain Fuzzy Inference Systems (Fuzzification, Membership Functions, Fuzzy Rules, Defuzzification) with a suitable example.",
+      "marks": "1+2+5",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 4: Machine Learning Fundamentals",
+      "text": "What is Reinforcement Learning? Explain Agent, Environment, State, Action, Reward, Policy, and Q-learning with real-world examples.",
+      "marks": "2+6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 4: Machine Learning Fundamentals",
+      "text": "How is the best attribute selected in the ID3 Decision Tree algorithm using Entropy and Information Gain?",
+      "marks": "4",
+      "years": [
+        "2082 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 4: Machine Learning Fundamentals",
+      "text": "Define Machine Learning. Differentiate between Supervised, Unsupervised, and Reinforcement Learning paradigms with examples.",
+      "marks": "2+6",
+      "years": [
+        "2080 Ashwin"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Neural Networks and Deep Learning Algorithms",
+      "text": "Given a neural network with weights a, b, c, d, e, f where hidden layer computes $h_1 = \\max(c \\cdot x_1 + e \\cdot x_2, 0)$ and $h_2 = \\max(d \\cdot x_1 + f \\cdot x_2, 0)$, and inputs $x_1=-1, x_2=-1$, weights $a=1, b=1, c=4, d=7, e=2, f=2$. Perform forward propagation and update weights for second hidden layer for $a$ and $b$.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2078 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 5: Neural Networks and Deep Learning Algorithms",
+      "text": "Explain the McCulloch-Pitts model of a neuron with a diagram. Explain how to choose the best activation function (Sigmoid, ReLU, Tanh) for a particular project.",
+      "marks": "4+3",
+      "years": [
+        "2082 Kartik",
+        "2078 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 5: Neural Networks and Deep Learning Algorithms",
+      "text": "When do we need a Hopfield Neural Network? Make a comparison between Feed-Forward Networks and Hopfield Neural Networks.",
+      "marks": "3+5",
+      "years": [
+        "2080 Ashwin",
+        "2080 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 5: Neural Networks and Deep Learning Algorithms",
+      "text": "What is a Perceptron? Show that a single perceptron is not sufficient to realize a network behaving as an XOR gate (Linear Separability problem).",
+      "marks": "1+8",
+      "years": [
+        "2079 Ashwin"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Neural Networks and Deep Learning Algorithms",
+      "text": "What is a Multi-Layer Perceptron (MLP)? When do we need the Error Backpropagation Algorithm? Explain with an example.",
+      "marks": "2+6",
+      "years": [
+        "2079 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Neural Networks and Deep Learning Algorithms",
+      "text": "Using Hebbian Learning Algorithm, construct a neural network that behaves as an AND gate. Is Hebbian learning a supervised method? Justify.",
+      "marks": "6+3",
+      "years": [
+        "2078 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: AI Applications",
+      "text": "Explain the different levels of linguistic analysis in Natural Language Processing (NLP: Phonological, Morphological, Syntactic, Semantic, Pragmatic). Provide examples for each level.",
+      "marks": "2+6",
+      "years": [
+        "2082 Chaitra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: AI Applications",
+      "text": "What are the problems and ambiguities associated with NLP? List down the different steps involved in Natural Language Processing with suitable examples.",
+      "marks": "2+5",
+      "years": [
+        "2082 Kartik",
+        "2079 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 6: AI Applications",
+      "text": "You are hired by a company to work on a Nepali Language Chatbot / NLP product. What are the knowledge bases and challenges associated with Nepali language? Describe your plan to mitigate them with a block diagram.",
+      "marks": "2+6",
+      "years": [
+        "2081 Ashwin",
+        "2080 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 6: AI Applications",
+      "text": "Define Expert System and Expert System Shells. Draw the architecture block diagram of an Expert System, explain its components (Knowledge Base, Inference Engine, Explanation Facility), and discuss its benefits and limitations.",
+      "marks": "1+4+3",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
-      "text": "Explain Probabilistic Reasoning and Bayesian Networks (Belief Networks). State Bayes' Theorem. Given prior probabilities (D) = 0.01$, and test accuracies (T^+|D) = 0.98$, (T^+|\neg D) = 0.05$, find the posterior probability (D|T^+)$ that a patient has the disease given a positive test result.",
-      "marks": "4+4",
+      "chapter": "Chapter 6: AI Applications",
+      "text": "What is Computer Vision / Machine Vision? Create a scenario where Machine Vision is required (e.g. automated inspection). List down the steps and applications of Machine Vision.",
+      "marks": "2+6",
       "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
-      "text": "Explain Fuzzy Logic and Fuzzy Inference Systems (Mamdani vs Sugeno models). Define Membership Functions (Triangular, Trapezoidal, Gaussian) and explain Fuzzification, Fuzzy Rule Evaluation, and Defuzzification (Centroid / Center of Gravity method).",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Machine Learning Fundamentals",
-      "text": "Explain the Four Pillars of Machine Learning (Linear Algebra, Calculus, Probability & Statistics, Optimization). Differentiate between Generative vs Discriminative models with examples.",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082",
-        "2081"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Machine Learning Fundamentals",
-      "text": "Explain Overfitting, Underfitting, Bias-Variance Tradeoff, and Cross-Validation. How do L1 (Lasso) and L2 (Ridge) Regularization prevent overfitting?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082",
-        "2080"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Machine Learning Fundamentals",
-      "text": "Explain Decision Tree induction using ID3 / C4.5 algorithm. Define Entropy (S) = -\\sum p_i \\log_2 p_i$ and Information Gain (S, A) = H(S) - \\sum \frac{|S_v|}{|S|} H(S_v)$. Given a training dataset with 14 instances, calculate Information Gain for a split attribute.",
-      "marks": "6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Machine Learning Fundamentals",
-      "text": "Explain Support Vector Machines (SVM). Explain Maximum Margin Hyperplane, Support Vectors, Slack Variables for soft-margin classification, and the Kernel Trick (Linear, Polynomial, RBF kernels) for non-linearly separable data.",
-      "marks": "6",
-      "years": [
-        "2083",
-        "2082",
-        "2080"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Machine Learning Fundamentals",
-      "text": "Explain Unsupervised Learning with t-SNE (t-Distributed Stochastic Neighbor Embedding) for high-dimensional data visualization. Explain Reinforcement Learning framework (Agent, Environment, State, Action, Reward, Q-Learning algorithm).",
-      "marks": "6",
-      "years": [
-        "2083",
-        "2081"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Machine Learning Fundamentals",
-      "text": "Explain Model Evaluation Metrics: Confusion Matrix, Accuracy, Precision, Recall, F1-Score, Specificity, ROC Curve, and AUC (Area Under Curve).",
-      "marks": "4",
-      "years": [
-        "2083",
-        "2082",
-        "2081"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Neural Networks and Deep Learning Algorithms",
-      "text": "Explain the Artificial Neuron (Perceptron) model. Derive the Perceptron Learning Rule. Explain why a Single-Layer Perceptron cannot solve the non-linear XOR problem (Linear Separability problem).",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080"
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 5: Neural Networks and Deep Learning Algorithms",
-      "text": "Explain Multi-Layer Perceptron (MLP). Derive the Error Backpropagation Algorithm using the chain rule of calculus for weight updates with Sigmoid activation function (z) = \frac{1}{1+e^{-z}}$.",
-      "marks": "6+2",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 5: Neural Networks and Deep Learning Algorithms",
-      "text": "Explain Activation Functions in Neural Networks: Sigmoid, Hyperbolic Tangent ($\tanh$), ReLU (Rectified Linear Unit), Leaky ReLU, and Softmax. Explain the Vanishing Gradient Problem.",
-      "marks": "4+2",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Neural Networks and Deep Learning Algorithms",
-      "text": "Explain Deep Learning architectures: (a) Convolutional Neural Networks (CNN: Convolution, Pooling, Fully Connected layers), (b) Recurrent Neural Networks (RNN & LSTM for sequential data), and (c) Generative Adversarial Networks (GAN: Generator vs Discriminator).",
+      "chapter": "Chapter 7: Emerging Trends",
+      "text": "Discuss modern transformer-based architectures, Self-Attention mechanisms, and Sequence-to-Sequence (Seq2Seq) conversational models in AI.",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2080"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: AI Applications",
-      "text": "Explain the Architecture and Characteristics of Expert Systems (Knowledge Base, Inference Engine: Forward vs Backward Chaining, Explanation Facility, User Interface). Explain the MYCIN or DENDRAL expert system.",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2081",
-        "2079",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 6: AI Applications",
-      "text": "Explain Natural Language Processing (NLP) levels of analysis: Phonological, Morphological, Syntactic (Parsing), Semantic, Pragmatic, and Discourse processing. Discuss NLP challenges (Ambiguity) and modern transformer-based LLMs.",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082",
-        "2080"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: AI Applications",
-      "text": "Explain the role of AI in Computer Vision (Image Segmentation, Object Detection: YOLO) and Autonomous Robotics.",
-      "marks": "4",
-      "years": [
-        "2083",
-        "2082"
+        "2082 Chaitra",
+        "2080 Chaitra"
       ],
       "frequency": 2
     },
     {
       "chapter": "Chapter 7: Emerging Trends",
-      "text": "Explain Sequence-to-Sequence (Seq2Seq) models and Self-Attention / Transformer architecture.",
+      "text": "Explain Federated Learning and how it preserves data privacy during distributed model training.",
       "marks": "4",
       "years": [
-        "2083",
-        "2082"
+        "2082 Chaitra"
       ],
-      "frequency": 2
+      "frequency": 1
     },
     {
       "chapter": "Chapter 7: Emerging Trends",
-      "text": "Explain Federated Learning (Privacy-preserving distributed training) and Edge AI (On-device machine learning inference).",
+      "text": "Discuss Ethics in AI, AI Bias, Explainable AI (XAI), and the socio-economic challenges of deploying AI products in Nepal.",
       "marks": "4",
       "years": [
-        "2083",
-        "2081"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 7: Emerging Trends",
-      "text": "Discuss Ethics in AI, AI Bias, Explainable AI (XAI), and Responsible AI deployment in Nepal's socio-economic context.",
-      "marks": "4",
-      "years": [
-        "2083",
-        "2082"
+        "2082 Chaitra",
+        "2081 Ashwin"
       ],
       "frequency": 2
     }

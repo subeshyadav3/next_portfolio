@@ -1,329 +1,255 @@
 {
   "subject": "Data Structure and Algorithm",
+  "code": "ENCT 252",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Introduction, Asymptotic Notations and Algorithm Complexity",
-    "Chapter 2: Stacks and Applications",
-    "Chapter 3: Queues, Circular Queues and Priority Queues",
-    "Chapter 4: Linked Lists",
-    "Chapter 6: Trees, Binary Trees, Binary Search Trees and AVL Trees",
-    "Chapter 7: Graphs, Graph Traversals and Minimum Spanning Trees",
-    "Chapter 8: Sorting and Searching"
+    "Chapter 1: Concept of Data Structures",
+    "Chapter 2: Linear Data Structures: Stacks and Queues",
+    "Chapter 3: Linked Lists",
+    "Chapter 4: Non-Linear Data Structures: Trees",
+    "Chapter 5: Graphs and Algorithms",
+    "Chapter 6: Sorting and Searching Techniques",
+    "Chapter 7: Hashing and File Structures"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Introduction, Asymptotic Notations and Algorithm Complexity",
-      "text": "Define Big-$O$, Big-$\\Omega$, and Big-$\\Theta$ asymptotic notations with formal mathematical definitions and graphs. Find the time complexity of the following code snippet:\n```c\nfor(int i = 1; i <= n; i *= 2) {\n    for(int j = 1; j <= n; j++) {\n        // constant time operation O(1)\n    }\n}\n```",
-      "marks": "3+3",
+      "chapter": "Chapter 1: Concept of Data Structures",
+      "text": "Define Data Structure. Differentiate between Primitive vs Non-Primitive, and Linear vs Non-Linear data structures with examples.",
+      "marks": "4",
       "years": [
-        "2083",
+        "2083"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Concept of Data Structures",
+      "text": "Explain Abstract Data Type (ADT). Explain Time and Space Complexity analysis using Big-O, Big-Omega, and Big-Theta notations.",
+      "marks": "4",
+      "years": [
         "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 2: Linear Data Structures: Stacks and Queues",
+      "text": "Define Stack ADT. Explain Stack operations (PUSH, POP, PEEK) with algorithm and array implementation. Explain Overflow and Underflow conditions.",
+      "marks": "6",
+      "years": [
         "2081",
         "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
-      "chapter": "Chapter 2: Stacks and Applications",
-      "text": "What is a Stack? Write an algorithm and C function to convert an Infix arithmetic expression into a Postfix expression. Trace the conversion for $(A + B) * (C - D) / E \\text{ \\textasciicircum } F$ using a stack table.",
-      "marks": "3+5",
+      "chapter": "Chapter 2: Linear Data Structures: Stacks and Queues",
+      "text": "Convert the Infix expression: `(A + B) * C - (D - E) ^ (F + G)` into Postfix and Prefix expressions using Stack algorithm.",
+      "marks": "6",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Linear Data Structures: Stacks and Queues",
+      "text": "Define Circular Queue. Explain why Linear Queue suffers from false overflow. Write C functions to enqueue and dequeue elements in a Circular Queue.",
+      "marks": "6",
+      "years": [
+        "2079",
+        "2083"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 2: Linear Data Structures: Stacks and Queues",
+      "text": "Explain Priority Queue and Deque (Double Ended Queue: Input Restricted and Output Restricted Deque) with applications.",
+      "marks": "4",
       "years": [
         "2083",
-        "2082",
         "2081",
-        "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
-      "chapter": "Chapter 3: Queues, Circular Queues and Priority Queues",
-      "text": "Explain Linear Queue vs. Circular Queue. Why is a Circular Queue preferred over a Linear Queue? Write C functions to implement `enqueue()` and `dequeue()` operations on a Circular Queue using an array.",
-      "marks": "3+5",
+      "chapter": "Chapter 3: Linked Lists",
+      "text": "Define Linked List. Compare Static Memory Allocation (Array) vs Dynamic Memory Allocation (Linked List).",
+      "marks": "4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
-      "chapter": "Chapter 4: Linked Lists",
-      "text": "Differentiate between static arrays and dynamic linked lists. Write C functions for a Singly Linked List to: (a) Insert a node at the beginning, (b) Insert a node at the $k$-th position, (c) Delete a node with a given key, and (d) Reverse the linked list in place.",
-      "marks": "2+6",
+      "chapter": "Chapter 3: Linked Lists",
+      "text": "Write C functions for Singly Linked List: (a) Insert node at beginning, (b) Insert node at specified position, and (c) Delete node from end.",
+      "marks": "8",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
-      "chapter": "Chapter 6: Trees, Binary Trees, Binary Search Trees and AVL Trees",
-      "text": "Define Binary Tree, Strictly Binary Tree, Complete Binary Tree, and Full (Perfect) Binary Tree. Prove that a proper binary tree with $n$ internal nodes has $n+1$ external (leaf) nodes.",
-      "marks": "3+4",
+      "chapter": "Chapter 3: Linked Lists",
+      "text": "Explain Doubly Linked List and Circular Linked List with node structure definitions and memory diagrams.",
+      "marks": "4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2081"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
-      "chapter": "Chapter 6: Trees, Binary Trees, Binary Search Trees and AVL Trees",
-      "text": "Construct a Binary Search Tree (BST) from the given keys: $50, 25, 75, 15, 35, 60, 90, 30, 40$. Show Inorder, Preorder, and Postorder traversals. Write recursive C functions for Inorder traversal and searching a key in a BST.",
-      "marks": "3+5",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 1: Introduction, Asymptotic Notations and Algorithm Complexity",
-      "text": "What is an AVL Tree? Explain Balance Factor and the four types of rotations (LL, RR, LR, RL) used for rebalancing. Insert the keys $10, 20, 30, 40, 50, 25$ into an initially empty AVL tree and show step-by-step tree rebalancing.",
-      "marks": "3+5",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 8: Sorting and Searching",
-      "text": "What is a Binary Heap? Differentiate between Min-Heap and Max-Heap. Construct a Max-Heap from the array $[4, 10, 3, 5, 1, 8, 9, 2, 7]$ using the bottom-up `heapify()` procedure. Write the C implementation of Heap Sort and analyze its $O(n \\log n)$ time complexity.",
-      "marks": "3+5",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 7: Graphs, Graph Traversals and Minimum Spanning Trees",
-      "text": "Explain Graph Representations: Adjacency Matrix and Adjacency List. Compare their space complexities. Explain Breadth First Search (BFS) using a Queue and Depth First Search (DFS) using a Stack / recursion with example graphs.",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 1: Introduction, Asymptotic Notations and Algorithm Complexity",
-      "text": "Explain Dijkstra's Single-Source Shortest Path algorithm. Trace Dijkstra's algorithm to find the shortest path from source vertex $A$ to all other vertices in a given weighted directed graph with non-negative weights. Why does Dijkstra's algorithm fail with negative edge weights?",
-      "marks": "3+5",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 7: Graphs, Graph Traversals and Minimum Spanning Trees",
-      "text": "Explain Kruskal's algorithm and Prim's algorithm for finding the Minimum Spanning Tree (MST). Trace Kruskal's algorithm on a weighted graph with $7$ vertices using the Disjoint-Set Union (DSU with Union-Find by Rank) data structure.",
-      "marks": "3+5",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 1: Introduction, Asymptotic Notations and Algorithm Complexity",
-      "text": "Explain the Divide and Conquer strategy of Merge Sort. Write the recursive Merge Sort algorithm and the `merge()` subroutine. Derive the recurrence relation $T(n) = 2T(n/2) + O(n)$ and solve it using Master's theorem to prove $O(n \\log n)$ time complexity.",
-      "marks": "3+5",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 8: Sorting and Searching",
-      "text": "Explain Quick Sort with Lomuto and Hoare partitioning schemes. Trace Quick Sort for the array $[38, 27, 43, 3, 9, 82, 10]$ and derive its best case $O(n \\log n)$, average case $O(n \\log n)$, and worst case $O(n^2)$ time complexities.",
-      "marks": "3+5",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 6: Trees, Binary Trees, Binary Search Trees and AVL Trees",
-      "text": "Explain Binary Search algorithm. Write an iterative and recursive C function for binary search on a sorted array of $n$ elements and prove that its time complexity is $O(\\log n)$.",
-      "marks": "3+3",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 8: Sorting and Searching",
-      "text": "What is Hashing? Explain Hash functions (Division method $h(k) = k \\bmod m$, Mid-Square method, Folding method). Explain Open Addressing collision resolution: (a) Linear Probing $h(k, i) = (h'(k) + i) \\bmod m$, (b) Quadratic Probing $h(k, i) = (h'(k) + c_1 i + c_2 i^2) \\bmod m$, and (c) Double Hashing $h(k, i) = (h_1(k) + i \\cdot h_2(k)) \\bmod m$. Insert keys $72, 27, 36, 24, 63, 81, 92$ into a hash table of size $11$.",
-      "marks": "3+5",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 2: Stacks and Applications",
-      "text": "Write a C function to evaluate a Postfix arithmetic expression using a stack. Trace the evaluation of the postfix expression `5 6 2 + * 12 4 / -` showing stack contents at each step.",
+      "chapter": "Chapter 3: Linked Lists",
+      "text": "Implement Stack and Queue data structures using Singly Linked List.",
       "marks": "6",
       "years": [
         "2083",
-        "2082",
+        "2081",
         "2080",
         "2079"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 3: Queues, Circular Queues and Priority Queues",
-      "text": "Explain Double-Ended Queue (Deque) and Priority Queue. Explain the array-based and heap-based implementation of a Priority Queue with time complexities.",
+      "chapter": "Chapter 4: Non-Linear Data Structures: Trees",
+      "text": "Define Binary Tree, Full Binary Tree, Complete Binary Tree, and Strictly Binary Tree. Explain Tree Traversals: Inorder, Preorder, and Postorder recursively.",
       "marks": "6",
       "years": [
-        "2083",
-        "2081",
-        "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 4
+      "frequency": 1
     },
     {
-      "chapter": "Chapter 4: Linked Lists",
-      "text": "Explain Doubly Linked List and Circular Singly Linked List. Write C code to insert and delete a node in a Doubly Linked List.",
+      "chapter": "Chapter 4: Non-Linear Data Structures: Trees",
+      "text": "Define Binary Search Tree (BST). Construct a BST by inserting keys: 45, 15, 79, 90, 10, 55, 12, 20, 50. Write algorithm to search a key in BST.",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2078",
+        "2082"
       ],
-      "frequency": 4
+      "frequency": 2
     },
     {
-      "chapter": "Chapter 4: Linked Lists",
-      "text": "Write an algorithm and C functions to add two single-variable polynomials represented as Singly Linked Lists: $P_1(x) = 5x^4 + 3x^2 + 2x + 1$ and $P_2(x) = 4x^3 + 2x^2 + 6$.",
+      "chapter": "Chapter 4: Non-Linear Data Structures: Trees",
+      "text": "Explain AVL Tree and Balance Factor. Explain AVL rotations: LL, RR, LR, and RL rotations with numerical insertion examples.",
       "marks": "8",
       "years": [
         "2083",
         "2082",
+        "2080"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Non-Linear Data Structures: Trees",
+      "text": "Explain B-Tree and B+ Tree properties, structure, and applications in database indexing.",
+      "marks": "4",
+      "years": [
+        "2082"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Graphs and Algorithms",
+      "text": "Define Graph. Differentiate between Directed vs Undirected graph, Connected vs Disconnected graph, Weighted vs Unweighted graph. Explain Adjacency Matrix and Adjacency List representations.",
+      "marks": "6",
+      "years": [
         "2081",
         "2079"
       ],
-      "frequency": 4
+      "frequency": 2
     },
     {
-      "chapter": "Chapter 4: Linked Lists",
-      "text": "Explain how Stacks and Queues are implemented using Singly Linked Lists with $O(1)$ operations.",
+      "chapter": "Chapter 5: Graphs and Algorithms",
+      "text": "Explain Graph Traversal algorithms: Breadth-First Search (BFS) using Queue and Depth-First Search (DFS) using Stack with algorithms and step-by-step trace.",
       "marks": "6",
       "years": [
         "2083",
-        "2081",
         "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 1: Introduction, Asymptotic Notations and Algorithm Complexity",
-      "text": "Construct a Huffman Tree and determine variable-length prefix Huffman codes for characters with frequencies: $A: 35, B: 25, C: 15, D: 12, E: 8, F: 5$.",
-      "marks": "6",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 8: Sorting and Searching",
-      "text": "Explain Topological Sorting of a Directed Acyclic Graph (DAG) using: (a) Kahn's algorithm (indegree array), and (b) DFS with departure time stack.",
-      "marks": "6",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 8: Sorting and Searching",
-      "text": "Compare Bubble Sort, Selection Sort, and Insertion Sort in terms of best, average, and worst case comparisons, swaps, and stability.",
-      "marks": "6",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 4: Linked Lists",
-      "text": "Explain Collision Resolution by Separate Chaining (Open Hashing) with linked lists. Calculate the average search time in terms of Load Factor $\\alpha = n/m$.",
-      "marks": "5",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 1: Introduction, Asymptotic Notations and Algorithm Complexity",
-      "text": "Explain the Bellman-Ford Algorithm for single-source shortest paths. Trace Bellman-Ford on a directed graph with negative edge weights and explain how it detects negative weight cycles.",
-      "marks": "6",
-      "years": [
-        "2083",
-        "2081",
         "2079"
       ],
       "frequency": 3
+    },
+    {
+      "chapter": "Chapter 5: Graphs and Algorithms",
+      "text": "Define Minimum Spanning Tree (MST). Explain Prim's Algorithm and Kruskal's Algorithm for finding MST of a weighted graph with step-by-step numerical examples.",
+      "marks": "8",
+      "years": [
+        "2079"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Graphs and Algorithms",
+      "text": "Explain Dijkstra's Algorithm for Single Source Shortest Path problem with algorithm and trace on a sample weighted graph.",
+      "marks": "8",
+      "years": [
+        "2078",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 6: Sorting and Searching Techniques",
+      "text": "Differentiate between Linear Search and Binary Search algorithms. Derive the Best, Average, and Worst case time complexity of Binary Search.",
+      "marks": "4",
+      "years": [
+        "2083"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Sorting and Searching Techniques",
+      "text": "Explain Quick Sort algorithm using Divide and Conquer strategy. Trace Quick Sort on array: [38, 27, 43, 3, 9, 82, 10] using last element as pivot.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2079"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 6: Sorting and Searching Techniques",
+      "text": "Explain Merge Sort algorithm. Derive its time complexity T(n) = 2T(n/2) + O(n) using recurrence tree method.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 6: Sorting and Searching Techniques",
+      "text": "Explain Heap Sort algorithm. Define Max-Heap and Min-Heap. Build a Max-Heap for keys: [12, 11, 13, 5, 6, 7] and perform heapify operation.",
+      "marks": "6",
+      "years": [
+        "2080",
+        "2078"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 7: Hashing and File Structures",
+      "text": "Define Hashing, Hash Table, and Hash Function. Explain properties of a good hash function (Division method, Multiplication method, Mid-Square method).",
+      "marks": "4",
+      "years": [
+        "2082",
+        "2079",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 7: Hashing and File Structures",
+      "text": "Explain Hash Collisions. Compare Collision Resolution Techniques: Open Addressing (Linear Probing, Quadratic Probing, Double Hashing) vs Chaining (Separate Chaining).",
+      "marks": "6",
+      "years": [
+        "2078"
+      ],
+      "frequency": 1
     }
   ]
 }

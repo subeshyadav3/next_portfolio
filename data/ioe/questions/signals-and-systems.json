@@ -14,65 +14,49 @@
       "text": "Classify Signals: Continuous-Time vs Discrete-Time, Periodic vs Aperiodic ($x(t+T) = x(t)$), Energy vs Power signals ($E = \\int_{-\\infty}^\\infty |x(t)|^2 dt, P = \\lim_{T\\to\\infty} \\frac{1}{T}\\int_{-T/2}^{T/2} |x(t)|^2 dt$), Even vs Odd signals ($x_e(t) = \\frac{x(t)+x(-t)}{2}, x_o(t) = \\frac{x(t)-x(-t)}{2}$), and Deterministic vs Random signals.",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 1: Continuous & Discrete-Time Signals and Systems",
       "text": "Define elementary signals: Unit Step $u(t)$, Dirac Delta Function $\\delta(t)$ (and its sifting property $\\int_{-\\infty}^\\infty x(t)\\delta(t-t_0)dt = x(t_0)$), Unit Ramp $r(t)$, and Complex Exponential. Perform transformations: Time Shifting, Time Reversal, and Time Scaling on a given waveform $x(t)$ to plot $y(t) = x(2t - 3)$ and $z(t) = x(-t/2 + 1)$.",
       "marks": "4+6",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 1: Continuous & Discrete-Time Signals and Systems",
       "text": "Define System Properties: (a) Linearity (Superposition and Homogeneity), (b) Time-Invariance, (c) Causality, (d) Stability (BIBO Stability $\\int |h(t)|dt < \\infty$), (e) Memory / Static, and (f) Invertibility. Test whether $y(t) = t^2 x(t) + 3$ and $y[n] = x[2n]$ are linear, time-invariant, and causal.",
       "marks": "4+6",
       "years": [
-        "2083",
-        "2082",
         "2081",
         "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 2: Linear Time-Invariant Systems, Convolution Integral & Convolution Sum",
       "text": "Explain Convolution Integral ($y(t) = x(t) * h(t) = \\int_{-\\infty}^\\infty x(\\tau)h(t-\\tau)d\\tau$) and Discrete Convolution Sum ($y[n] = \\sum_{k=-\\infty}^\\infty x[k]h[n-k]$). Convolve two rectangular pulses $x(t) = u(t) - u(t-2)$ and $h(t) = u(t) - u(t-3)$ analytically and sketch the resulting trapezoidal output waveform.",
       "marks": "4+6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 3: Continuous-Time Fourier Series & Continuous-Time Fourier Transform",
       "text": "State Dirichlet's Conditions for Fourier Series convergence. Derive Exponential Fourier Series ($x(t) = \\sum_{k=-\\infty}^\\infty c_k e^{jk\\omega_0 t}$) and Trigonometric Fourier Series. Calculate the Fourier coefficients for a symmetric square wave and full-wave rectified sine wave.",
       "marks": "4+6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079",
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 3: Continuous-Time Fourier Series & Continuous-Time Fourier Transform",
@@ -80,51 +64,38 @@
       "marks": "4+6",
       "years": [
         "2083",
-        "2082",
         "2081",
-        "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 4: Discrete-Time Fourier Transform & Sampling Theorem",
       "text": "State the Nyquist-Shannon Sampling Theorem. Explain Aliasing effect and anti-aliasing filter. Find the minimum Nyquist Rate and Nyquist Interval for the signal $x(t) = 10\\cos(400\\pi t)\\text{sinc}(200\\pi t)$.",
       "marks": "3+5",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 5: Laplace Transform & Region of Convergence, Inverse Laplace & System Transfer Function",
       "text": "Define Bilateral (Two-Sided) and Unilateral (One-Sided) Laplace Transform ($X(s) = \\int_{0^-}^\\infty x(t)e^{-st}dt$). Explain the Region of Convergence (ROC) properties on the s-plane. Find the Laplace transform and ROC of: (a) $x(t) = e^{-at}u(t)$, and (b) $x(t) = -e^{-at}u(-t)$.",
       "marks": "3+5",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 5: Laplace Transform & Region of Convergence, Inverse Laplace & System Transfer Function",
       "text": "Solve the second-order LTI differential equation using Laplace Transform with initial conditions: $\\frac{d^2y}{dt^2} + 5\\frac{dy}{dt} + 6y(t) = 2x(t)$ with $y(0^-) = 1, y'(0^-) = 0$, and input $x(t) = u(t)$. Find Zero-Input Response (ZIR), Zero-State Response (ZSR), and Total Response.",
       "marks": "10",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2081"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 5: Laplace Transform & Region of Convergence, Inverse Laplace & System Transfer Function",
@@ -132,37 +103,30 @@
       "marks": "3+5",
       "years": [
         "2083",
-        "2082",
         "2081",
         "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 5
+      "frequency": 4
     },
     {
       "chapter": "Chapter 6: Z-Transform, ROC Properties, Inverse Z-Transform & Discrete System Analysis",
       "text": "Explain Inverse Z-Transform methods: Partial Fraction Expansion, Power Series (Long Division), and Contour Integration (Residue method). Find $x[n]$ for $X(z) = \\frac{1 - \\frac{1}{2}z^{-1}}{(1 - \\frac{1}{4}z^{-1})(1 - \\frac{1}{3}z^{-1})}$ for causal ROC $|z| > 1/3$.",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 1: Continuous & Discrete-Time Signals and Systems",
       "text": "Solve the discrete-time difference equation using Z-Transform: $y[n] - 0.5y[n-1] = x[n]$ with initial condition $y[-1] = 2$ and input $x[n] = (0.25)^n u[n]$.",
       "marks": "8",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2078",
+        "2082"
       ],
-      "frequency": 4
+      "frequency": 2
     }
   ]
 }

@@ -13,65 +13,49 @@
       "text": "Derive the Newton-Raphson Formula: $x_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)}$ using Taylor series. Prove that Newton-Raphson method has Quadratic Convergence (Order $p = 2$). Find a real root of $x e^x - 1 = 0$ correct to 4 decimal places using Newton-Raphson starting with $x_0 = 0.5$.",
       "marks": "4+6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 1: Non-Linear Equations",
       "text": "Compare Bisection Method, False Position (Regula-Falsi) Method, and Secant Method. Find the positive root of $x^3 - 4x - 9 = 0$ using Secant Method with initial guesses $x_0 = 2, x_1 = 3$.",
       "marks": "8",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 2: Systems of Linear Equations",
       "text": "Solve the system of linear equations using Gauss Elimination with Partial Pivoting:\n$2x_1 + x_2 + x_3 = 10$\n$3x_1 + 2x_2 + 3x_3 = 18$\n$x_1 + 4x_2 + 9x_3 = 16$.",
       "marks": "8",
       "years": [
-        "2083",
-        "2082",
         "2081",
         "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 2: Systems of Linear Equations",
       "text": "Solve the following system using Gauss-Seidel Iterative Method (perform 4 iterations):\n$10x_1 + x_2 + 2x_3 = 44$\n$2x_1 + 10x_2 + x_3 = 51$\n$x_1 + 2x_2 + 10x_3 = 61$. State the condition for convergence (Strict Diagonal Dominance).",
       "marks": "3+5",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 5: Numerical Solution of ODEs",
       "text": "Find the Dominant Eigenvalue and corresponding Eigenvector of matrix $\\mathbf{A} = \\begin{bmatrix} 4 & 1 & 0 \\\\ 1 & 2 & 1 \\\\ 0 & 1 & 1 \\end{bmatrix}$ using the Power Method with initial vector $\\mathbf{x}_0 = [1, 1, 1]^T$.",
       "marks": "8",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079",
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 3: Interpolation & Polynomial Approximation",
@@ -79,51 +63,38 @@
       "marks": "4+6",
       "years": [
         "2083",
-        "2082",
         "2081",
-        "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 3: Interpolation & Polynomial Approximation",
       "text": "Derive Newton's Divided Difference Interpolation formula. Construct the divided difference table and find $f(2.5)$ for given data points.",
       "marks": "8",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 4: Numerical Differentiation & Integration",
       "text": "Derive Simpson's 1/3rd Rule ($I = \\frac{h}{3}[y_0 + 4\\sum y_{odd} + 2\\sum y_{even} + y_n]$) and Simpson's 3/8th Rule from Newton-Cotes quadrature formula. Evaluate $\\int_0^1 \\frac{1}{1 + x^2}dx$ with $n = 6$ sub-intervals using: (a) Composite Trapezoidal Rule, and (b) Composite Simpson's 1/3rd Rule. Hence approximate $\\pi$.",
       "marks": "4+6",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 2: Systems of Linear Equations",
       "text": "Explain Gauss-Legendre Two-Point and Three-Point Quadrature formulas ($I = \\int_{-1}^1 f(\\xi)d\\xi \\approx w_1 f(\\xi_1) + w_2 f(\\xi_2)$). Evaluate $\\int_1^3 \\frac{e^x}{x}dx$ using 2-point Gauss Legendre quadrature.",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2081"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 5: Numerical Solution of ODEs",
@@ -131,38 +102,30 @@
       "marks": "4+6",
       "years": [
         "2083",
-        "2082",
         "2081",
         "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 5
+      "frequency": 4
     },
     {
       "chapter": "Chapter 5: Numerical Solution of ODEs",
       "text": "Solve the Boundary Value Problem (BVP) $\\frac{d^2y}{dx^2} + y = x$ with $y(0) = 0, y(1) = 0$ using the Finite Difference Method with $h = 0.25$.",
       "marks": "8",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 5: Numerical Solution of ODEs",
       "text": "Solve the 2D Laplace Equation $\\frac{\\partial^2 u}{\\partial x^2} + \\frac{\\partial^2 u}{\\partial y^2} = 0$ over a square grid of $3 \\times 3$ interior nodes with given Dirichlet boundary temperatures using Liebmann's standard 5-point finite difference formula.",
       "marks": "10",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2078",
+        "2082"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 2: Systems of Linear Equations",
@@ -171,22 +134,18 @@
       "years": [
         "2083",
         "2082",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 4
+      "frequency": 3
     },
     {
       "chapter": "Chapter 1: Non-Linear Equations",
       "text": "Fit a straight line $y = ax + b$ and an exponential curve $y = a e^{bx}$ to a given dataset using the Principle of Least Squares (derive the Normal Equations).",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2082"
       ],
-      "frequency": 4
+      "frequency": 1
     }
   ]
 }

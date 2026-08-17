@@ -13,65 +13,49 @@
       "text": "Explain IEEE 754 Floating-Point Representation for Single Precision (32-bit: 1-bit sign, 8-bit biased exponent, 23-bit mantissa) and Double Precision (64-bit). Represent the decimal number $(-118.625)_{10}$ in IEEE 754 single precision format.",
       "marks": "3+5",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 3: Computer Arithmetic",
       "text": "Explain Booth's Multiplication Algorithm for signed 2's complement binary numbers. Multiply the signed binary numbers $(+13)_{10} = (01101)_2$ and $(-9)_{10} = (10111)_2$ using Booth's algorithm and show all registers ($A, Q, Q_{-1}, M$) at each step.",
       "marks": "4+6",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 2: Instruction Set Architecture and Addressing Modes",
       "text": "Compare CISC (Complex Instruction Set Computer) vs RISC (Reduced Instruction Set Computer) architectures in terms of instruction formats, addressing modes, pipeline efficiency, and register file size.",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
         "2081",
         "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 2: Instruction Set Architecture and Addressing Modes",
       "text": "Explain Computer Addressing Modes: Immediate, Direct (Absolute), Indirect, Register, Register Indirect, Displacement (Relative, Base-Register, Indexed), and Auto-increment/decrement. Calculate the Effective Address (EA) for each mode.",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 4: Control Unit Design",
       "text": "Explain the structure of a Hardwired Control Unit (State table method, Delay element method, Sequence register method). Explain the structure of a Microprogrammed Control Unit (Control Memory, Control Address Register - CAR, Control Data Register - CDR, Next Address Generator / Sequencer). Compare Hardwired vs Microprogrammed control units in terms of speed, flexibility, and complexity.",
       "marks": "4+6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079",
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 4: Control Unit Design",
@@ -79,51 +63,38 @@
       "marks": "6",
       "years": [
         "2083",
-        "2082",
         "2081",
-        "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 5: Memory Organization",
       "text": "Explain Memory Hierarchy in modern computers (Registers, L1/L2/L3 Cache, Main Memory, SSD/HDD) in terms of access time, capacity, and cost per bit. Explain the Principle of Locality of Reference (Temporal Locality and Spatial Locality).",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 5: Memory Organization",
       "text": "Explain Cache Memory Mapping Techniques: (a) Direct Mapping (Tag, Line, Word offsets), (b) Fully Associative Mapping (Tag, Word offsets), and (c) $k$-Way Set Associative Mapping. Given a main memory of $64\\,\\text{MB}$ ($26$-bit address), cache size of $64\\,\\text{KB}$, and block size of $16\\,\\text{bytes}$, compute the number of bits in Tag, Set/Line, and Word fields for: (1) Direct mapping, and (2) 4-Way Set Associative mapping.",
       "marks": "4+6",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 5: Memory Organization",
       "text": "Explain Cache Write Policies: Write-Through vs. Write-Back (with dirty bit), and Write-Allocate vs. No-Write-Allocate. Calculate Average Memory Access Time (AMAT): $\\text{AMAT} = T_{hit} + (1 - h) \\times T_{miss}$.",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2081"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 5: Memory Organization",
@@ -131,38 +102,30 @@
       "marks": "3+5",
       "years": [
         "2083",
-        "2082",
         "2081",
         "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 5
+      "frequency": 4
     },
     {
       "chapter": "Chapter 4: Control Unit Design",
       "text": "Explain Pipeline Hazards and their solutions: (a) Structural Hazards (Resource contention / separate I-Cache and D-Cache), (b) Data Hazards (RAW / True dependency, WAR / Anti-dependency, WAW / Output dependency; Solved by Operand Forwarding / Bypassing, Pipeline Stalling / NOP injection, and Out-of-Order execution), and (c) Control / Branch Hazards (Solved by Static / Dynamic Branch Prediction and Branch Delay Slots).",
       "marks": "4+6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 5: Memory Organization",
       "text": "Explain Flynn's Classification of Computer Architectures: SISD, SIMD (Vector processors / GPUs), MISD, and MIMD. Compare Symmetric Multiprocessing (SMP) vs. Non-Uniform Memory Access (NUMA) and explain Cache Coherence protocols (MESI / Illinois protocol - Modified, Exclusive, Shared, Invalid).",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2078",
+        "2082"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 3: Computer Arithmetic",
@@ -171,34 +134,28 @@
       "years": [
         "2083",
         "2082",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 4
+      "frequency": 3
     },
     {
       "chapter": "Chapter 2: Instruction Set Architecture and Addressing Modes",
       "text": "Write assembly programs for computing $X = (A + B) \\times (C + D)$ using: (a) 3-Address Instructions, (b) 2-Address Instructions, (c) 1-Address (Accumulator) Instructions, and (d) 0-Address (Stack-based) Instructions.",
       "marks": "8",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2082"
       ],
-      "frequency": 4
+      "frequency": 1
     },
     {
       "chapter": "Chapter 5: Memory Organization",
       "text": "Explain Virtual Memory organization with Paging and Translation Lookaside Buffer (TLB). Explain the step-by-step Address Translation from Virtual Address to Physical Address.",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2081",
+        "2079"
       ],
-      "frequency": 4
+      "frequency": 2
     },
     {
       "chapter": "Chapter 2: Instruction Set Architecture and Addressing Modes",
@@ -206,11 +163,10 @@
       "marks": "8",
       "years": [
         "2083",
-        "2082",
         "2080",
         "2079"
       ],
-      "frequency": 4
+      "frequency": 3
     }
   ]
 }

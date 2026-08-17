@@ -13,65 +13,49 @@
       "text": "Explain the Data Science Lifecycle (Data Acquisition, Data Cleaning/Wrangling, EDA, Feature Engineering, Model Training, Evaluation, and Deployment). Explain techniques for handling: (a) Missing values (Imputation strategies), (b) Outliers (Z-score and IQR methods), and (c) Feature Scaling (Min-Max Normalization $x' = \\frac{x - x_{min}}{x_{max} - x_{min}}$ vs Standardization $z = \\frac{x - \\mu}{\\sigma}$).",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 1: Introduction to Data Science, Data Types & Data Pipeline",
       "text": "Explain the Curse of Dimensionality in high-dimensional data spaces: (a) Exponential growth in volume, (b) Distance concentration phenomenon, and (c) Sparsity of points. Explain statistical visualization tools in EDA: Box Plots, Histograms, Pair Plots, and Correlation Heatmaps.",
       "marks": "3+5",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 1: Introduction to Data Science, Data Types & Data Pipeline",
       "text": "Derive Principal Component Analysis (PCA) from the maximization of variance / minimization of reconstruction error. Given a $2\\text{D}$ dataset, compute the Covariance Matrix $\\boldsymbol{\\Sigma} = \\frac{1}{n}\\mathbf{X}^T\\mathbf{X}$, find its eigenvalues and eigenvectors, and project the data onto the first principal component.",
       "marks": "4+6",
       "years": [
-        "2083",
-        "2082",
         "2081",
         "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 1: Introduction to Data Science, Data Types & Data Pipeline",
       "text": "Explain Singular Value Decomposition (SVD): $\\mathbf{A} = \\mathbf{U} \\boldsymbol{\\Sigma} \\mathbf{V}^T$. Explain Low-Rank Matrix Approximation (Eckart-Young-Mirsky Theorem) and its application in image compression and collaborative filtering recommender systems.",
       "marks": "3+5",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 2: Data Preprocessing, Cleaning, Imputation & Feature Scaling",
       "text": "Explain Linear Regression with Ordinary Least Squares (OLS) estimation: $\\boldsymbol{\\beta} = (\\mathbf{X}^T\\mathbf{X})^{-1}\\mathbf{X}^T\\mathbf{y}$. Explain Regularization techniques: (a) Ridge Regression ($L_2$ regularization $\\lambda\\|\\boldsymbol{\\beta}\\|_2^2$), and (b) Lasso Regression ($L_1$ regularization $\\lambda\\|\\boldsymbol{\\beta}\\|_1$). How does Lasso perform feature selection?",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079",
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 5: Supervised Learning Foundations",
@@ -79,38 +63,29 @@
       "marks": "4+4",
       "years": [
         "2083",
-        "2082",
         "2081",
-        "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 6: Unsupervised Learning",
       "text": "Explain $k$-Means Clustering algorithm and its objective function $J = \\sum_{j=1}^k \\sum_{i=1}^n \\|x_i^{(j)} - c_j\\|^2$. Explain the Elbow Method and Silhouette Coefficient for determining optimal $k$. Compare $k$-Means with Hierarchical Clustering (Dendrograms) and DBSCAN (Density-Based Spatial Clustering).",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 1: Introduction to Data Science, Data Types & Data Pipeline",
       "text": "Explain the role of Apache Spark (Resilient Distributed Datasets - RDDs, DataFrames, Spark SQL, Spark MLlib) in big data processing. Discuss Data Privacy, GDPR principles, Differential Privacy, and algorithmic bias in AI/Data Science systems.",
       "marks": "6",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     }
   ]
 }

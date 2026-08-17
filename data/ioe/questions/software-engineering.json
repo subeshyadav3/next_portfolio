@@ -1,205 +1,399 @@
 {
   "subject": "Software Engineering",
+  "code": "ENCT 352",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Software Engineering Fundamentals & Software Process Models",
-    "Chapter 2: Software Requirements Engineering",
-    "Chapter 3: System Modeling & UML Diagrams",
-    "Chapter 4: Architectural Design, Component Design & Design Patterns",
-    "Chapter 5: Software Verification & Validation",
-    "Chapter 6: Software Project Management, Cost Estimation, Risk Analysis & Quality Assurance"
+    "Chapter 1: Introduction",
+    "Chapter 2: The Software Process",
+    "Chapter 3: Software Requirements Engineering",
+    "Chapter 4: Architectural Design",
+    "Chapter 5: System Modeling",
+    "Chapter 6: Coding and Testing",
+    "Chapter 7: Software Quality, Assurance, Maintenance",
+    "Chapter 8: Software Configuration Management",
+    "Chapter 9: Recent Trends"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Software Engineering Fundamentals & Software Process Models",
-      "text": "Explain Software Development Life Cycle (SDLC) models: Classical Waterfall Model, Prototyping Model, Evolutionary (Iterative) Model, and Boehm's Spiral Model (Risk management in four quadrants). Compare their strengths, weaknesses, and suitability.",
-      "marks": "4+6",
+      "chapter": "Chapter 1: Introduction",
+      "text": "What is software and software engineering? Explain the nature and characteristics of software. Differentiate between software engineering and other engineering disciplines.",
+      "marks": "4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2082 Chaitra",
+        "2080 Chaitra"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
-      "chapter": "Chapter 1: Software Engineering Fundamentals & Software Process Models",
-      "text": "Explain Agile Software Development principles according to the Agile Manifesto. Explain the Scrum Framework: Scrum Roles (Product Owner, Scrum Master, Cross-functional Dev Team), Artifacts (Product Backlog, Sprint Backlog, Increment, Burn-Down Chart), and Ceremonies (Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective).",
-      "marks": "4+6",
+      "chapter": "Chapter 1: Introduction",
+      "text": "What are software myths? Discuss management myths, customer myths, and practitioner myths with suitable examples.",
+      "marks": "4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2081 Ashwin",
+        "2078 Chaitra"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
-      "chapter": "Chapter 1: Software Engineering Fundamentals & Software Process Models",
-      "text": "Explain Requirements Engineering processes: Inception, Elicitation (Interviews, Surveys, JAD, Observation), Analysis & Negotiation, Specification (Software Requirements Specification - SRS document conforming to IEEE 830 standard), and Validation. What makes a good SRS?",
-      "marks": "4+4",
+      "chapter": "Chapter 1: Introduction",
+      "text": "What is software crisis? Discuss the major factors responsible for software crisis and how software engineering principles help overcome it.",
+      "marks": "4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2082 Kartik",
+        "2079 Ashwin"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
-      "chapter": "Chapter 3: System Modeling & UML Diagrams",
-      "text": "Construct Unified Modeling Language (UML) diagrams for an Online Ride Sharing System (e.g. Pathao / InDrive):\n(a) Use Case Diagram with `<<include>>` and `<<extend>>` relationships\n(b) Class Diagram showing classes, attributes, operations, multiplicity, associations, and composition\n(c) Sequence Diagram for user booking a ride and driver accepting.",
-      "marks": "4+4+4",
+      "chapter": "Chapter 1: Introduction",
+      "text": "What is legacy software? Why is it challenging to maintain and evolve legacy software systems?",
+      "marks": "3",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080 Ashwin"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
-      "chapter": "Chapter 2: Software Requirements Engineering",
-      "text": "Explain fundamental software design principles: Modularity, Abstraction, Information Hiding, High Cohesion, and Low Coupling. Explain types of Cohesion (Functional, Sequential, Communicational, Procedural, Temporal, Logical, Coincidental) and types of Coupling (Data, Stamp, Control, External, Common, Content).",
-      "marks": "4+6",
+      "chapter": "Chapter 2: The Software Process",
+      "text": "What is a software process framework? Explain generic framework activities and umbrella activities in software engineering.",
+      "marks": "4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2082 Chaitra",
+        "2080 Chaitra"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
-      "chapter": "Chapter 1: Software Engineering Fundamentals & Software Process Models",
-      "text": "Explain Software Architectural Styles: Layered Architecture, Client-Server (2-Tier / 3-Tier), Model-View-Controller (MVC), Pipe-and-Filter, and Event-Driven / Microservices Architecture.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 4: Architectural Design, Component Design & Design Patterns",
-      "text": "Explain Black Box (Behavioral) Testing techniques: (a) Equivalence Class Partitioning (ECP - Valid and invalid partitions), and (b) Boundary Value Analysis (BVA - Min, Min+, Nom, Max-, Max). Design black-box test cases for an input field accepting age integer between $18$ and $60$.",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 5: Software Verification & Validation",
-      "text": "Explain White Box (Structural) Testing: Statement Coverage, Branch / Decision Coverage, Condition Coverage, and Path Coverage. Draw the Control Flow Graph (CFG) for a given C function. Calculate McCabe's Cyclomatic Complexity: $V(G) = E - N + 2P$ and list all linearly independent execution paths.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 5: Software Verification & Validation",
-      "text": "Explain Software Testing Levels: Unit Testing (Mocking / Stubs & Drivers), Integration Testing (Top-Down with stubs vs Bottom-Up with drivers vs Big-Bang), System Testing, and Acceptance Testing (Alpha vs Beta testing). What is Regression Testing?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 6: Software Project Management, Cost Estimation, Risk Analysis & Quality Assurance",
-      "text": "Explain Boehm's COnstructive COst MOdel (COCOMO): Basic COCOMO, Intermediate COCOMO, and Detailed COCOMO. State formulas for Effort ($E = a \\times (KLOC)^b\\,\\text{person-months}$) and Development Time ($D = c \\times (E)^d\\,\\text{months}$) across Organic, Semi-Detached, and Embedded project modes. Calculate effort and nominal duration for an Organic project of size $40\\,\\text{KLOC}$ ($a = 2.4, b = 1.05, c = 2.5, d = 0.38$).",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 1: Software Engineering Fundamentals & Software Process Models",
-      "text": "Explain Software Maintenance categories: Corrective, Adaptive, Perfective, and Preventive maintenance. Explain Software Configuration Management (SCM) baseline, change control board (CCB), and version control systems (Git). Explain DevOps and CI/CD pipelines.",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 5: Software Verification & Validation",
-      "text": "Explain Extreme Programming (XP) core practices: Test-Driven Development (TDD), Pair Programming, Continuous Integration (CI), Collective Code Ownership, and Refactoring.",
+      "chapter": "Chapter 2: The Software Process",
+      "text": "Explain the Classical Waterfall Model and its extensions. Discuss its advantages, limitations, and suitability for real-world projects.",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2081 Ashwin",
+        "2079 Chaitra"
       ],
-      "frequency": 4
+      "frequency": 2
     },
     {
-      "chapter": "Chapter 3: System Modeling & UML Diagrams",
-      "text": "Construct an Activity Diagram with swimlanes and fork/join nodes, and a State Machine Diagram for the order lifecycle of an E-Commerce system.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 4: Architectural Design, Component Design & Design Patterns",
-      "text": "Explain GoF (Gang of Four) Design Patterns with UML class diagrams and code snippets: (a) Singleton Pattern, (b) Factory Method Pattern, and (c) Observer Pattern.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 6: Software Project Management, Cost Estimation, Risk Analysis & Quality Assurance",
-      "text": "Explain Software Quality Assurance (SQA), McCall's Quality Factors (Product Operation, Revision, Transition), Capability Maturity Model Integration (CMMI - 5 maturity levels), and ISO 9001 standard.",
+      "chapter": "Chapter 2: The Software Process",
+      "text": "Explain Evolutionary Process Models: Prototyping Model and Boehm's Spiral Model with its four quadrant activities and risk assessment.",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 2: The Software Process",
+      "text": "What is Agile Software Development? Explain the 12 principles of Agile Manifesto. Differentiate between Agile vs Plan-Driven (Traditional) process models.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2079 Ashwin"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 2: The Software Process",
+      "text": "Explain the Scrum Framework: Scrum Roles (Product Owner, Scrum Master, Dev Team), Artifacts (Product Backlog, Sprint Backlog, Burn-down chart), and Ceremonies (Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective).",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 2: The Software Process",
+      "text": "Explain Extreme Programming (XP) core practices: Pair Programming, Test-Driven Development (TDD), Refactoring, Collective Code Ownership, and Continuous Integration.",
+      "marks": "6",
+      "years": [
+        "2081 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 3: Software Requirements Engineering",
+      "text": "Explain the Requirements Engineering process: Inception, Elicitation (Interviews, Surveys, JAD), Elaboration, Negotiation, Specification, and Validation.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 3: Software Requirements Engineering",
+      "text": "What is Software Requirements Specification (SRS)? What are the characteristics of a good SRS document? Describe its structure according to IEEE 830 standard.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2079 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 3: Software Requirements Engineering",
+      "text": "Differentiate between Functional and Non-Functional Requirements with suitable examples from an E-Commerce or Banking system.",
+      "marks": "4",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Ashwin"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 3: Software Requirements Engineering",
+      "text": "Explain Agile Requirements Engineering: User Stories, Acceptance Criteria, Story Mapping, and Product Backlog grooming.",
+      "marks": "4",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 4: Architectural Design",
+      "text": "What is Software Architecture? Explain architectural design principles and the importance of architecture in managing system complexity.",
+      "marks": "4",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 4: Architectural Design",
+      "text": "Explain taxonomy of Architectural Styles: Layered Architecture, Client-Server (2-tier/3-tier), Model-View-Controller (MVC), Pipe-and-Filter, and Microservices Architecture with diagrams.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2079 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
+    },
+    {
+      "chapter": "Chapter 4: Architectural Design",
+      "text": "Explain modular design principles. Differentiate between Cohesion and Coupling. Explain types of Cohesion (Functional, Sequential, Communicational, etc.) and Coupling (Data, Stamp, Control, Common, Content).",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 5: System Modeling",
+      "text": "What is Data Flow Diagram (DFD)? Draw Context Level (Level 0) and Level 1 DFD for an Online Library Management or Hospital Management System.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 5: System Modeling",
+      "text": "What is Use Case Modeling? Draw a Use Case Diagram for an E-Commerce System showing Actors, Use Cases, and `<<include>>` and `<<extend>>` relationships.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2079 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 5: System Modeling",
+      "text": "Construct a Class Diagram for an ATM / Hospital Management System showing classes, attributes, methods, associations, multiplicity, and generalizations.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Ashwin"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 5: System Modeling",
+      "text": "Construct an Activity Diagram with swimlanes, decision nodes, and fork/join synchronization bars for an Online Food Delivery or Ride-Booking System.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 6: Coding and Testing",
+      "text": "Differentiate between Verification and Validation in software testing with suitable examples.",
+      "marks": "4",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 6: Coding and Testing",
+      "text": "Explain Code Review techniques: Code Walkthrough vs Code Inspection vs Cleanroom engineering.",
+      "marks": "4",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 6: Coding and Testing",
+      "text": "Explain Black-Box Testing techniques: Equivalence Class Partitioning (ECP) and Boundary Value Analysis (BVA). Design test cases for an input integer field accepting age between 18 and 60.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin",
+        "2079 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 6: Coding and Testing",
+      "text": "Explain White-Box Testing: Statement Coverage, Branch Coverage, and Condition Coverage. Draw Control Flow Graph (CFG) and calculate Cyclomatic Complexity $V(G) = E - N + 2P$ for a given C/Java code.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 6: Coding and Testing",
+      "text": "Explain Software Testing Levels: Unit Testing, Integration Testing (Top-Down with stubs, Bottom-Up with drivers, Big-Bang), System Testing, and Acceptance Testing (Alpha vs Beta testing).",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 6: Coding and Testing",
+      "text": "Explain Agile Testing practices: Test-Driven Development (TDD), Automated Unit Testing, Continuous Testing, and Refactoring for code quality.",
+      "marks": "4",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 7: Software Quality, Assurance, Maintenance",
+      "text": "Define Software Quality. Explain McCall's Quality Factors (Product Operation, Product Revision, Product Transition).",
+      "marks": "4",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 7: Software Quality, Assurance, Maintenance",
+      "text": "Explain Software Quality Assurance (SQA). Differentiate between SQA and Software Testing.",
+      "marks": "4",
+      "years": [
+        "2081 Ashwin",
+        "2079 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 7: Software Quality, Assurance, Maintenance",
+      "text": "Explain ISO 9001 quality standards and SEI Capability Maturity Model Integration (CMMI) 5 maturity levels.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 7: Software Quality, Assurance, Maintenance",
+      "text": "Explain Software Maintenance and its four types: Corrective, Adaptive, Perfective, and Preventive maintenance with examples.",
+      "marks": "4",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2079 Ashwin"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 8: Software Configuration Management",
+      "text": "What is Software Configuration Management (SCM)? Explain SCM repository, baselines, and Change Control Board (CCB) change management process.",
+      "marks": "4",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 8: Software Configuration Management",
+      "text": "Explain Version Control Systems (Git), Git-flow branching strategies (main, develop, feature, release, hotfix branches), and Continuous Integration.",
+      "marks": "4",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 9: Recent Trends",
+      "text": "Explain DevOps and Continuous Integration / Continuous Deployment (CI/CD) pipelines in modern software engineering projects.",
+      "marks": "4",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 9: Recent Trends",
+      "text": "Explain Cloud-Native Architecture, Microservices vs Monolithic architectures, and Infrastructure as Code (IaC).",
+      "marks": "4",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 9: Recent Trends",
+      "text": "Discuss AI-Assisted Software Development (AI code generation, automated test generation), Low-Code/No-Code platforms, and Green Software Engineering.",
+      "marks": "4",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin"
+      ],
+      "frequency": 2
     }
   ]
 }

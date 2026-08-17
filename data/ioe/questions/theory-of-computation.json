@@ -13,65 +13,49 @@
       "text": "Define Deterministic Finite Automata (DFA) as a 5-tuple $(Q, \\Sigma, \\delta, q_0, F)$. Design a minimal DFA that accepts the language $L = \\{w \\in \\{0, 1\\}^* \\mid w \\text{ contains '010' as a substring and does not end with '11'}\\}$.",
       "marks": "3+5",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata",
       "text": "Explain the Subset Construction algorithm for converting a Non-Deterministic Finite Automata with $\\epsilon$-transitions ($\\epsilon$-NFA) into an equivalent DFA. Convert the given $\\epsilon$-NFA into DFA and minimize the DFA using the Table-Filling (Myhill-Nerode) algorithm.",
       "marks": "4+6",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 2: Regular Expressions, Regular Languages & Pumping Lemma for Regular Sets",
       "text": "State Arden's Theorem ($R = Q + RP \\implies R = QP^*$). Find the regular expression corresponding to a given 3-state transition system using Arden's theorem.",
       "marks": "3+5",
       "years": [
-        "2083",
-        "2082",
         "2081",
         "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 2: Regular Expressions, Regular Languages & Pumping Lemma for Regular Sets",
       "text": "State the Pumping Lemma for Regular Languages. Prove using the pumping lemma that the language $L = \\{0^n 1^n \\mid n \\ge 0\\}$ and $L = \\{a^p \\mid p \\text{ is a prime number}\\}$ are not regular.",
       "marks": "2+6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 3: Context-Free Grammars, Parse Trees, Ambiguity & Normal Forms",
       "text": "Define Context-Free Grammar (CFG) and ambiguity. Show that the grammar $S \\to aSb \\mid ab \\mid SS$ is ambiguous by constructing two distinct parse trees and leftmost derivations for the string $aabbab$. Convert the CFG into Chomsky Normal Form (CNF).",
       "marks": "3+5",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079",
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata",
@@ -79,51 +63,38 @@
       "marks": "3+5",
       "years": [
         "2083",
-        "2082",
         "2081",
-        "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 5: Turing Machines, Variants of Turing Machines & Church-Turing Thesis",
       "text": "Define standard Single-Tape Turing Machine (TM) as a 7-tuple. Design a Turing Machine that decides the language $L = \\{0^n 1^n 2^n \\mid n \\ge 1\\}$. Draw the complete state transition diagram and show the sequence of tape configurations for the input $001122$.",
       "marks": "3+7",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 5: Turing Machines, Variants of Turing Machines & Church-Turing Thesis",
       "text": "State and prove that the Halting Problem of Turing Machines ($HALT_{TM}$) is undecidable using Cantor's diagonalization argument. Explain Post's Correspondence Problem (PCP) and Rice's Theorem.",
       "marks": "3+5",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 2: Regular Expressions, Regular Languages & Pumping Lemma for Regular Sets",
       "text": "Explain the Chomsky Hierarchy of Languages: Type 0 (Unrestricted / Recursively Enumerable), Type 1 (Context-Sensitive), Type 2 (Context-Free), and Type 3 (Regular) with their corresponding grammar production rules and recognizing automata models.",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2081"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 2: Regular Expressions, Regular Languages & Pumping Lemma for Regular Sets",
@@ -131,9 +102,9 @@
       "marks": "6",
       "years": [
         "2083",
-        "2082",
+        "2081",
         "2080",
-        "2078"
+        "2079"
       ],
       "frequency": 4
     },
@@ -142,12 +113,9 @@
       "text": "Design a Turing Machine to compute the 2's complement of a binary string on tape. Explain variations of Turing Machines: Multi-tape TM, Non-deterministic TM, and Universal Turing Machine (UTM).",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 4
+      "frequency": 1
     }
   ]
 }

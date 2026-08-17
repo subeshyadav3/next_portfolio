@@ -16,65 +16,49 @@
       "text": "Explain key Object-Oriented Programming principles: Encapsulation, Data Hiding, Abstraction, Inheritance, and Polymorphism. Compare Procedure-Oriented Programming (C) vs Object-Oriented Programming (C++).",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 2: Classes, Objects, Constructors and Destructors",
       "text": "Explain different types of Constructors in C++: Default constructor, Parameterized constructor, Copy constructor (`ClassName(const ClassName &obj)`), and Dynamic constructor. Why does the copy constructor pass its argument by reference? Explain the role of Destructors.",
       "marks": "4+4",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 6: Templates and Generic Programming",
       "text": "What is a `friend` function and `friend` class? Why does a friend function violate data encapsulation? Write a C++ program with two classes `ClassA` and `ClassB` to find the maximum of two private data members using a common friend function.",
       "marks": "3+5",
       "years": [
-        "2083",
-        "2082",
         "2081",
         "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 3: Operator Overloading and User-Defined Type Conversions",
       "text": "What is Operator Overloading? What are the rules and limitations of operator overloading in C++ (Which operators cannot be overloaded)? Overload the binary `+` operator and `==` comparison operator for a `Complex` number class $(a + ib)$ using: (a) Member functions, and (b) Friend functions.",
       "marks": "4+6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 6: Templates and Generic Programming",
       "text": "Overload the stream insertion `<<` and stream extraction `>>` operators for a custom `Matrix` / `Time` class $(hours, minutes, seconds)$ using friend functions.",
       "marks": "8",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079",
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 3: Operator Overloading and User-Defined Type Conversions",
@@ -82,51 +66,38 @@
       "marks": "4+6",
       "years": [
         "2083",
-        "2082",
         "2081",
-        "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 4: Inheritance",
       "text": "Explain types of Inheritance: Single, Multiple, Multilevel, Hierarchical, and Hybrid inheritance. Explain the Diamond Problem in Hybrid Inheritance (Ambiguity). How does `virtual` base class resolve the diamond problem in C++?",
       "marks": "4+6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 5: Virtual Functions, Abstract Classes and Runtime Polymorphism",
       "text": "What is Runtime Polymorphism (Dynamic Binding / Late Binding)? Explain Virtual Functions and Pure Virtual Functions (`virtual void func() = 0;`). What is an Abstract Base Class? Explain how the Virtual Method Table (`vtable`) and Virtual Pointer (`vptr`) implement dynamic dispatch at runtime.",
       "marks": "4+6",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 5: Virtual Functions, Abstract Classes and Runtime Polymorphism",
       "text": "Why do base classes with virtual functions require a `virtual destructor`? Explain what happens when a derived class object pointed to by a base class pointer is deleted without a virtual destructor (Memory leak).",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2081"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 6: Templates and Generic Programming",
@@ -134,38 +105,30 @@
       "marks": "3+7",
       "years": [
         "2083",
-        "2082",
         "2081",
         "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 5
+      "frequency": 4
     },
     {
       "chapter": "Chapter 7: Exception Handling",
       "text": "Explain Exception Handling in C++: `try`, `catch`, and `throw` blocks. Explain Multiple `catch` blocks and Catch-All handler (`catch(...)`). Write a program to handle Divide-by-Zero and Array-Index-Out-of-Bounds exceptions using custom exception classes.",
       "marks": "4+6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 6: Templates and Generic Programming",
       "text": "Explain C++ Stream Class Hierarchy (`ios`, `istream`, `ostream`, `iostream`, `ifstream`, `ofstream`, `fstream`). Explain file opening modes (`ios::in`, `ios::out`, `ios::app`, `ios::binary`, `ios::trunc`) and file pointers manipulation using `seekg()`, `seekp()`, `tellg()`, and `tellp()`.",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2078",
+        "2082"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 1: Introduction to Object-Oriented Programming and Principles",
@@ -174,36 +137,28 @@
       "years": [
         "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 1: Introduction to Object-Oriented Programming and Principles",
       "text": "Explain the three main components of the Standard Template Library (STL): Containers (Sequence: `vector, list, deque`; Associative: `map, set`), Iterators, and Algorithms (`sort(), find(), count()`). Write a program demonstrating `std::vector` and `std::map`.",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2082"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 2: Classes, Objects, Constructors and Destructors",
       "text": "Explain `static` data members and `static` member functions in C++. Write a program to count the number of objects currently alive in memory using static variables and constructors/destructors.",
       "marks": "3+5",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2081",
+        "2079"
       ],
-      "frequency": 4
+      "frequency": 2
     },
     {
       "chapter": "Chapter 3: Operator Overloading and User-Defined Type Conversions",
@@ -211,46 +166,38 @@
       "marks": "6",
       "years": [
         "2083",
-        "2082",
         "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 4
+      "frequency": 3
     },
     {
       "chapter": "Chapter 4: Inheritance",
       "text": "Explain the order of execution of Constructors and Destructors in Multiple and Multilevel inheritance when parameterized constructors are present.",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 4
+      "frequency": 1
     },
     {
       "chapter": "Chapter 6: Templates and Generic Programming",
       "text": "Write a generic function template to sort an array of any numeric type using the Bubble Sort algorithm. Explain Template Specialization for `char*` or specific data types.",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2078",
+        "2082"
       ],
-      "frequency": 4
+      "frequency": 2
     },
     {
       "chapter": "Chapter 1: Introduction to Object-Oriented Programming and Principles",
       "text": "Explain `this` pointer in C++. Write a program illustrating method chaining using `return *this;`.",
       "marks": "4",
       "years": [
-        "2083",
-        "2081",
-        "2079"
+        "2083"
       ],
-      "frequency": 3
+      "frequency": 1
     },
     {
       "chapter": "Chapter 7: Exception Handling",
@@ -258,10 +205,11 @@
       "marks": "5",
       "years": [
         "2083",
+        "2082",
         "2081",
         "2079"
       ],
-      "frequency": 3
+      "frequency": 4
     }
   ]
 }

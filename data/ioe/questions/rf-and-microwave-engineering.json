@@ -15,65 +15,49 @@
       "text": "Derive the Transmission Line Equations for voltage $V(z)$ and current $I(z)$ in terms of propagation constant $\\gamma = \\alpha + j\\beta$ and characteristic impedance $Z_0 = \\sqrt{\\frac{R + j\\omega L}{G + j\\omega C}}$. Define Voltage Standing Wave Ratio ($VSWR = \\frac{1 + |\\Gamma|}{1 - |\\Gamma|}$) and Reflection Coefficient $\\Gamma = \\frac{Z_L - Z_0}{Z_L + Z_0}$.",
       "marks": "4+6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 2: Smith Chart Applications",
       "text": "Explain the construction and properties of the Smith Chart (Constant resistance circles and constant reactance arcs). Using a Smith Chart, design a Single-Stub Shunt matching network to match an antenna load impedance $Z_L = 100 + j80\\,\\Omega$ to a $50\\,\\Omega$ lossless transmission line. Find the distance $d$ from the load and the length $l$ of an open/shorted stub.",
       "marks": "4+8",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 2: Smith Chart Applications",
       "text": "Explain Double-Stub Impedance Matching on a transmission line using a Smith Chart. Explain why double-stub matching is preferred over single-stub matching in tunable RF circuits.",
       "marks": "8",
       "years": [
-        "2083",
-        "2082",
         "2081",
         "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 3: Microwave Waveguides",
       "text": "Derive the wave equations for TE and TM modes in a Rectangular Waveguide of dimensions $a \\times b$ ($a > b$). Derive expressions for Cutoff Frequency ($f_c = \\frac{c}{2}\\sqrt{(m/a)^2 + (n/b)^2}$), Guide Wavelength ($\\lambda_g = \\frac{\\lambda_0}{\\sqrt{1 - (f_c/f)^2}}$), Phase Velocity ($v_p = \\frac{c}{\\sqrt{1 - (f_c/f)^2}}$), and Wave Impedance ($Z_{TE} = \\frac{\\eta}{\\sqrt{1 - (f_c/f)^2}}$). Why can TEM waves not propagate inside a hollow waveguide?",
       "marks": "4+10",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 2: Smith Chart Applications",
       "text": "Explain the Dominant Mode ($TE_{10}$) in a rectangular waveguide. An air-filled rectangular waveguide with dimensions $a = 2.286\\,\\text{cm}$ and $b = 1.016\\,\\text{cm}$ (X-band) operates at $10\\,\\text{GHz}$. Calculate: (a) Cutoff wavelength $\\lambda_c$, (b) Guide wavelength $\\lambda_g$, (c) Phase velocity $v_p$, (d) Group velocity $v_g$ ($v_p \\cdot v_g = c^2$), and (e) Wave impedance $Z_{TE}$.",
       "marks": "8",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079",
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 4: Microwave Network Analysis & S-Parameters",
@@ -81,51 +65,38 @@
       "marks": "4+6",
       "years": [
         "2083",
-        "2082",
         "2081",
-        "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 2: Smith Chart Applications",
       "text": "Explain the operation and derive the S-Matrix for: (a) E-Plane Tee (Series Tee), (b) H-Plane Tee (Shunt Tee), and (c) Magic Tee (Hybrid Tee $[S]_{4\\times 4}$). Explain applications of Magic Tee as an RF mixer, duplexer, and impedance bridge.",
       "marks": "4+8",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 5: Passive Microwave Components",
       "text": "Explain Directional Couplers: Coupling Factor ($C = 10\\log_{10}(P_1/P_3)$), Directivity ($D = 10\\log_{10}(P_3/P_4)$), and Isolation ($I = 10\\log_{10}(P_1/P_4)$). Explain Ferrite isolators, circulators, and attenuators.",
       "marks": "4+4",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 6: Active Microwave Devices",
       "text": "Explain the Gunn Effect and Ridley-Watkins-Hilsum (RWH) Transferred-Electron Mechanism in GaAs diode. Draw the velocity-field ($v-E$) characteristic showing negative differential resistance region and explain Gunn domain formation.",
       "marks": "4+6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2081"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 6: Active Microwave Devices",
@@ -133,38 +104,30 @@
       "marks": "4+6",
       "years": [
         "2083",
-        "2082",
         "2081",
         "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 5
+      "frequency": 4
     },
     {
       "chapter": "Chapter 5: Passive Microwave Components",
       "text": "Explain Two-Cavity Klystron Amplifier: Velocity Modulation process, Applegate diagram, bunching parameter ($\theta$), drift space, and cavity interaction. Derive the expression for RF current and electronic efficiency.",
       "marks": "4+8",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 2: Smith Chart Applications",
       "text": "Explain Reflex Klystron Oscillator: Repeller voltage ($V_r$), velocity modulation, round-trip electron bunching transit time ($T = (n + 3/4)T_0$), mode curves, and electronic tuning range.",
       "marks": "4+6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2078",
+        "2082"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 5: Passive Microwave Components",
@@ -173,36 +136,28 @@
       "years": [
         "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 2: Smith Chart Applications",
       "text": "Explain Traveling Wave Tube (TWT) Amplifier: Slow-Wave Structure (Helical waveguide), wave-electron beam synchronization ($v_e \\approx v_p$), amplification mechanism, and comparison with Klystrons.",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2082"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 2: Smith Chart Applications",
       "text": "Explain Quarter-Wave Transformer ($Z_{in} = \\frac{Z_0^2}{Z_L}$) for matching a real load $R_L$ to transmission line $Z_0$. Explain Multi-section binomial and Chebyshev impedance matching transformers.",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2081",
+        "2079"
       ],
-      "frequency": 4
+      "frequency": 2
     },
     {
       "chapter": "Chapter 5: Passive Microwave Components",
@@ -210,34 +165,29 @@
       "marks": "8",
       "years": [
         "2083",
-        "2082",
         "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 4
+      "frequency": 3
     },
     {
       "chapter": "Chapter 6: Active Microwave Devices",
       "text": "Explain PIN Diode (High resistivity intrinsic layer $I$) operation as an RF switch, limiter, and variable attenuator. Explain Varactor Diode and its voltage-variable junction capacitance ($C_j(V) = \\frac{C_0}{(1 - V/V_0)^n}$) in parametric amplifiers.",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 4
+      "frequency": 1
     },
     {
       "chapter": "Chapter 1: Microwave Transmission Lines, Characteristic Impedance, Reflection Coefficient & VSWR",
       "text": "Explain Microstrip Lines: Effective dielectric constant $\\epsilon_{eff}$, characteristic impedance $Z_0$, phase velocity, and attenuation losses (dielectric and conductor losses).",
       "marks": "6",
       "years": [
-        "2083",
-        "2081",
-        "2079"
+        "2078",
+        "2082"
       ],
-      "frequency": 3
+      "frequency": 2
     }
   ]
 }

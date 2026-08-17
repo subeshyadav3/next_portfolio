@@ -12,65 +12,49 @@
       "text": "Derive the mathematical expression for Amplitude Modulated (DSB-FC) wave: $s(t) = A_c [1 + m(t)] \\cos(2\\pi f_c t)$. Derive the total transmitted power $P_t = P_c \\left(1 + \\frac{\\mu^2}{2}\\right)$ and modulation efficiency $\\eta = \\frac{\\mu^2}{2 + \\mu^2}$. Calculate total power for $100\\%$ modulation ($\\mu = 1$).",
       "marks": "3+5",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 3: Angle Modulation",
       "text": "Compare DSB-SC, SSB-SC, and VSB modulation in terms of bandwidth, transmission power efficiency, and demodulator complexity. Explain the generation of SSB-SC using Phase Discrimination (Hartley method) and Frequency Discrimination (Filter method).",
       "marks": "4+4",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 1: Introduction to Communication Systems & Signal Transmission",
       "text": "Derive the frequency spectrum of Frequency Modulated (FM) wave using Bessel functions: $s(t) = A_c \\sum_{n=-\\infty}^\\infty J_n(\\beta) \\cos[2\\pi (f_c + n f_m)t]$. State Carson's Rule for transmission bandwidth: $B_T = 2(\\Delta f + f_m) = 2 f_m(1 + \\beta)$. Compare Narrowband FM (NBFM) vs Wideband FM (WBFM).",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
         "2081",
         "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 3: Angle Modulation",
       "text": "Explain Pulse Code Modulation (PCM): Sampling, Quantization, and Encoding. Derive the Signal-to-Quantization Noise Ratio for a full-scale sinusoidal signal: $(SNR)_{dB} = 6.02 n + 1.76\\,\\text{dB}$ where $n$ is the number of bits per sample. Explain Companding (A-law and $\\mu$-law companders).",
       "marks": "4+6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 3: Angle Modulation",
       "text": "Explain Delta Modulation (DM) and Adaptive Delta Modulation (ADM). Explain Slope Overload Distortion and Granular Noise in DM and derive the condition to prevent slope overload: $A_m \\le \\frac{\\Delta}{2\\pi f_m T_s}$.",
       "marks": "3+5",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079",
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 3: Angle Modulation",
@@ -78,51 +62,38 @@
       "marks": "4+6",
       "years": [
         "2083",
-        "2082",
         "2081",
-        "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 1: Introduction to Communication Systems & Signal Transmission",
       "text": "Represent the binary sequence $11010010$ in Line Coding formats: (a) Unipolar NRZ, (b) Polar NRZ, (c) Bipolar AMI (Alternate Mark Inversion), (d) Manchester, and (e) Differential Manchester encoding. Compare their power spectra and clock recovery capability.",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 1: Introduction to Communication Systems & Signal Transmission",
       "text": "Define Information, Entropy ($H(X) = -\\sum p_i \\log_2 p_i$), Mutual Information, and Channel Capacity. State Shannon-Hartley Theorem: $C = B \\log_2\\left(1 + \\frac{S}{N}\\right)$. A telephone channel has bandwidth $3.4\\,\\text{kHz}$ and $SNR = 30\\,\\text{dB}$. Calculate the theoretical channel capacity.",
       "marks": "3+5",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 1: Introduction to Communication Systems & Signal Transmission",
       "text": "Explain Shannon-Fano Coding and Huffman Source Coding algorithm. A discrete memoryless source emits 5 symbols with probabilities $p(s_1) = 0.4, p(s_2) = 0.2, p(s_3) = 0.2, p(s_4) = 0.1, p(s_5) = 0.1$. Construct the binary Huffman code, calculate average code word length $L$, entropy $H(S)$, and coding efficiency $\\eta = \\frac{H(S)}{L}$.",
       "marks": "3+5",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2081"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 5: Noise in Analog Communication Systems & SNR Analysis",
@@ -130,12 +101,11 @@
       "marks": "4+4",
       "years": [
         "2083",
-        "2082",
         "2081",
         "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 5
+      "frequency": 4
     }
   ]
 }

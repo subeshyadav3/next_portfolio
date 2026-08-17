@@ -13,65 +13,49 @@
       "text": "Draw the functional block diagram of the Intel 8085 8-bit microprocessor. Explain the internal components: Arithmetic Logic Unit (ALU), Accumulator (Reg A), General Purpose Registers (B, C, D, E, H, L), Temporary Registers (W, Z), Program Counter (PC), Stack Pointer (SP), Instruction Register (IR), Instruction Decoder, and Flag Register ($S, Z, AC, P, CY$).",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 1: 8085 Microprocessor Architecture & Bus Structure",
       "text": "Explain the pin diagram of 8085. Explain how the lower order address/data bus ($AD_0-AD_7$) is demultiplexed using the Address Latch Enable ($ALE$) signal and a 74LS373 octal transparent latch with a neat schematic circuit diagram.",
       "marks": "3+5",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 2: 8085 Instruction Set & Assembly Language Programming",
       "text": "Explain the Addressing Modes of 8085 (Immediate, Direct, Register, Register Indirect, Implicit) with two assembly instruction examples for each. Classify 8085 instructions based on byte length (1-byte, 2-byte, 3-byte).",
       "marks": "5",
       "years": [
-        "2083",
-        "2082",
         "2081",
         "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 2: 8085 Instruction Set & Assembly Language Programming",
       "text": "Write an 8085 assembly language program to sort an array of $10$ bytes stored from memory address $2050\\text{H}$ in ascending / descending order using the Bubble Sort algorithm.",
       "marks": "8",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 2: 8085 Instruction Set & Assembly Language Programming",
       "text": "Write an 8085 assembly language program to find the largest and smallest number in a block of $N$ data bytes starting at memory address $3000\\text{H}$. Store the largest byte at $4000\\text{H}$ and smallest byte at $4001\\text{H}$.",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079",
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 1: 8085 Microprocessor Architecture & Bus Structure",
@@ -79,51 +63,38 @@
       "marks": "3+5",
       "years": [
         "2083",
-        "2082",
         "2081",
-        "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 3: Bus Timing Diagrams, Machine Cycles & T-States",
       "text": "Draw the complete bus timing diagram for the instruction `MVI A, 32H` (Opcode Fetch machine cycle $4T$ + Memory Read machine cycle $3T$), showing signals $CLK, A_{15}-A_8, AD_7-AD_0, ALE, \\overline{RD}, \\overline{WR}, IO/\\overline{M}, S_0, S_1$.",
       "marks": "8",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 2: 8085 Instruction Set & Assembly Language Programming",
       "text": "Compare Memory-Mapped I/O vs Peripheral I/O (I/O-Mapped I/O / Isolated I/O) in terms of address bus size, instructions used, decoding hardware, and execution speed.",
       "marks": "6",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 1: 8085 Microprocessor Architecture & Bus Structure",
       "text": "Interface an $8\\,\\text{KB}$ EPROM ($2764$) and an $8\\,\\text{KB}$ Static RAM ($6264$) to the 8085 microprocessor with absolute memory address map: EPROM at $0000\\text{H}-1FFF\\text{H}$ and SRAM at $4000\\text{H}-5FFF\\text{H}$ using a 74LS138 $3:8$ decoder and address latch 74LS373. Draw the complete schematic interface diagram.",
       "marks": "10",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2081"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 5: Interrupts Handling & 8259 Priority Interrupt Controller",
@@ -131,38 +102,30 @@
       "marks": "4+4",
       "years": [
         "2083",
-        "2082",
         "2081",
         "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 5
+      "frequency": 4
     },
     {
       "chapter": "Chapter 1: 8085 Microprocessor Architecture & Bus Structure",
       "text": "Draw the functional block diagram of the Intel 8255 Programmable Peripheral Interface (PPI). Explain its operational modes: Mode 0 (Basic I/O), Mode 1 (Strobed I/O with handshake signals), and Mode 2 (Strobed Bidirectional Bus I/O). Construct the 8255 Control Word format for I/O and BSR (Bit Set/Reset) modes.",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 1: 8085 Microprocessor Architecture & Bus Structure",
       "text": "Interface a matrix keyboard ($4 \\times 4$) and 7-segment display or Stepper Motor to the 8085 microprocessor using the 8255 PPI. Write an assembly program to rotate the stepper motor in clockwise direction by $90^\\circ$.",
       "marks": "8",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2078",
+        "2082"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 1: 8085 Microprocessor Architecture & Bus Structure",
@@ -171,36 +134,28 @@
       "years": [
         "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 2: 8085 Instruction Set & Assembly Language Programming",
       "text": "Explain physical address calculation in 8086. If Code Segment $CS = 2400\\text{H}$ and Instruction Pointer $IP = 3500\\text{H}$, calculate the 20-bit Physical Address ($\\text{PA} = CS \\times 10\\text{H} + IP$). Explain 8086 addressing modes (Base-Index with displacement) and write an 8086 assembly program to add two 16-bit numbers.",
       "marks": "3+5",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2082"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 3: Bus Timing Diagrams, Machine Cycles & T-States",
       "text": "Explain status and control signals in 8085: $IO/\\overline{M}, S_0, S_1, \\overline{RD}, \\overline{WR}$, and $READY$. Construct the Status Table showing machine cycles (Opcode Fetch, Memory Read, Memory Write, I/O Read, I/O Write, Interrupt Acknowledge, Halt, Hold, Reset).",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2081",
+        "2079"
       ],
-      "frequency": 4
+      "frequency": 2
     },
     {
       "chapter": "Chapter 2: 8085 Instruction Set & Assembly Language Programming",
@@ -208,47 +163,38 @@
       "marks": "6",
       "years": [
         "2083",
-        "2082",
         "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 4
+      "frequency": 3
     },
     {
       "chapter": "Chapter 3: Bus Timing Diagrams, Machine Cycles & T-States",
       "text": "Draw the bus timing diagram for: (a) `STA 3000H` (13 $T$-states across 4 machine cycles: Opcode Fetch, Memory Read, Memory Read, Memory Write), and (b) `IN 05H`.",
       "marks": "8",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 4
+      "frequency": 1
     },
     {
       "chapter": "Chapter 5: Interrupts Handling & 8259 Priority Interrupt Controller",
       "text": "Draw the block diagram of Intel 8254 Programmable Interval Timer. Explain its 6 operational modes (Mode 0: Interrupt on terminal count, Mode 1: Hardware retriggerable one-shot, Mode 2: Rate generator, Mode 3: Square wave generator, Mode 4: Software triggered strobe, Mode 5: Hardware triggered strobe).",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2078",
+        "2082"
       ],
-      "frequency": 4
+      "frequency": 2
     },
     {
       "chapter": "Chapter 5: Interrupts Handling & 8259 Priority Interrupt Controller",
       "text": "Explain the architecture and cascading of Intel 8259 Programmable Interrupt Controller (PIC). Explain Initialization Command Words ($ICW_1-ICW_4$) and Operational Command Words ($OCW_1-OCW_3$).",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 4
+      "frequency": 1
     },
     {
       "chapter": "Chapter 1: 8085 Microprocessor Architecture & Bus Structure",
@@ -256,9 +202,9 @@
       "marks": "6",
       "years": [
         "2083",
+        "2082",
         "2081",
-        "2080",
-        "2078"
+        "2079"
       ],
       "frequency": 4
     },
@@ -267,23 +213,19 @@
       "text": "Compare Minimum Mode vs Maximum Mode pin configurations of 8086. Explain the function of the 8288 Bus Controller in Maximum Mode multiprocessing systems.",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2081"
       ],
-      "frequency": 4
+      "frequency": 1
     },
     {
       "chapter": "Chapter 2: 8085 Instruction Set & Assembly Language Programming",
       "text": "Write an 8085 assembly language program to count the number of even and odd numbers, or count the number of 1s in a byte stored at $2500\\text{H}$. Store results in memory.",
       "marks": "6",
       "years": [
-        "2083",
-        "2081",
-        "2079"
+        "2080",
+        "2078"
       ],
-      "frequency": 3
+      "frequency": 2
     }
   ]
 }

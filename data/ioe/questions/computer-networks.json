@@ -16,65 +16,49 @@
       "text": "Compare the 7-layer OSI Reference Model with the 5-layer TCP/IP Reference Model. Explain the primary functions, data protocol units (PDU), and prominent protocols operating at each layer.",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 2: Physical Layer and Data Transmission Media",
       "text": "Differentiate between Circuit Switching, Packet Switching (Datagram vs Virtual Circuit), and Message Switching in terms of connection setup delay, transmission overhead, bandwidth efficiency, and fault tolerance.",
       "marks": "6",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
       "text": "Explain Framing techniques: (a) Character Count, (b) Byte Stuffing (Flag byte with ESC), and (c) Bit Stuffing (Flag `01111110` with zero stuffing after five consecutive 1s). Stuff the payload `0111111011111001` using bit stuffing.",
       "marks": "3+3",
       "years": [
-        "2083",
-        "2082",
         "2081",
         "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 2: Physical Layer and Data Transmission Media",
       "text": "Explain Cyclic Redundancy Check (CRC) error detection. A message bit stream $1101011011$ is to be transmitted using generator polynomial $G(x) = x^4 + x + 1$. Find the transmitted CRC codeword and verify error detection when the third bit from left is corrupted during transmission.",
       "marks": "3+5",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
       "text": "Explain Sliding Window Flow Control protocols: (a) Stop-and-Wait ARQ, (b) Go-Back-N ARQ, and (c) Selective Repeat ARQ. Derive formulas for channel utilization and maximum sender window size for Go-Back-N ($N = 2^k - 1$) and Selective Repeat ($N = 2^{k-1}$).",
       "marks": "4+6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079",
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 4: Medium Access Control Sublayer and IEEE Ethernet/Wi-Fi Standards",
@@ -82,51 +66,38 @@
       "marks": "4+4",
       "years": [
         "2083",
-        "2082",
         "2081",
-        "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 4: Medium Access Control Sublayer and IEEE Ethernet/Wi-Fi Standards",
       "text": "Explain CSMA Protocols (1-persistent, Non-persistent, $p$-persistent CSMA). Explain CSMA/CD in Ethernet and CSMA/CA with RTS/CTS handshake in IEEE 802.11 Wireless LANs (Solving Hidden Terminal and Exposed Terminal problems).",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 4: Medium Access Control Sublayer and IEEE Ethernet/Wi-Fi Standards",
       "text": "In a $10\\,\\text{Mbps}$ CSMA/CD standard Ethernet network with cable length $2.5\\,\\text{km}$ and signal propagation speed $2 \\times 10^8\\,\\text{m/s}$, derive the minimum frame size requirement: $L_{min} = 2 \\times R \\times T_p = 64\\,\\text{bytes}$. Explain Binary Exponential Backoff algorithm.",
       "marks": "3+5",
       "years": [
-        "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 5: Network Layer, IP Addressing and Routing Protocols",
       "text": "An organization is assigned the Class C network block $192.168.10.0/24$. Design a Variable Length Subnet Mask (VLSM) scheme to create 4 subnets: Subnet A with 60 hosts, Subnet B with 28 hosts, Subnet C with 12 hosts, and Subnet D with 2 hosts. Specify subnet mask (CIDR), network address, usable IP range, and broadcast address for each subnet.",
       "marks": "10",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2081"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 5: Network Layer, IP Addressing and Routing Protocols",
@@ -134,38 +105,30 @@
       "marks": "4+6",
       "years": [
         "2083",
-        "2082",
         "2081",
         "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 5
+      "frequency": 4
     },
     {
       "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
       "text": "Explain Link State Routing based on Dijkstra's shortest path algorithm. Describe Link State Advertisements (LSA) and flooding in Open Shortest Path First (OSPF) routing protocol. Compare OSPF vs RIP vs BGP.",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
       "text": "Explain the working of: (a) Address Resolution Protocol (ARP) and Inverse ARP, (b) Dynamic Host Configuration Protocol (DHCP - DORA process), (c) Network Address Translation (NAT/PAT), and (d) Internet Control Message Protocol (ICMP ping & traceroute).",
       "marks": "8",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2078",
+        "2082"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 6: Transport Layer Protocols",
@@ -174,37 +137,28 @@
       "years": [
         "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
       "text": "Explain TCP Congestion Control mechanisms in detail: Slow Start (Exponential increase), Congestion Avoidance (Additive Increase), Fast Retransmit (Triple duplicate ACKs), and Fast Recovery (Multiplicative Decrease - AIMD). Draw the Congestion Window ($cwnd$) growth curve.",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2082"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 7: Application Layer Protocols and Network Security",
       "text": "Explain Domain Name System (DNS) architecture (Hierarchical domain tree, Root servers, TLD servers, Authoritative servers, Recursive vs Iterative resolution, and DNS caching). Explain HTTP/1.1, HTTP/2 (Multiplexing, header compression), and HTTP/3 (QUIC over UDP).",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
         "2081",
-        "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 5
+      "frequency": 2
     },
     {
       "chapter": "Chapter 1: Introduction to Computer Networks and Layered Reference Models",
@@ -212,49 +166,38 @@
       "marks": "4+6",
       "years": [
         "2083",
-        "2082",
-        "2081",
         "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
       "chapter": "Chapter 7: Application Layer Protocols and Network Security",
       "text": "Explain Digital Signatures and Public Key Certificates (X.509 standard). Explain SSL/TLS protocol architecture and the secure HTTPS connection establishment.",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 5
+      "frequency": 1
     },
     {
       "chapter": "Chapter 2: Physical Layer and Data Transmission Media",
       "text": "Explain Transmission Impairments in physical media: Attenuation, Distortion, and Noise (Thermal, Intermodulation, Crosstalk, Impulse noise). State Nyquist Bit Rate formula ($C = 2B \\log_2 M$) and Shannon Capacity formula ($C = B \\log_2(1 + SNR)$).",
       "marks": "4+4",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2078",
+        "2082"
       ],
-      "frequency": 4
+      "frequency": 2
     },
     {
       "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
       "text": "Explain Hamming Code for single error correction and double error detection. Generate the 7-bit Hamming code for data word $1011$ with even parity. Correct the received corrupted codeword $1001011$.",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2083"
       ],
-      "frequency": 4
+      "frequency": 1
     },
     {
       "chapter": "Chapter 2: Physical Layer and Data Transmission Media",
@@ -263,8 +206,8 @@
       "years": [
         "2083",
         "2082",
-        "2080",
-        "2078"
+        "2081",
+        "2079"
       ],
       "frequency": 4
     },
@@ -273,24 +216,19 @@
       "text": "Compare IPv4 Header vs IPv6 Header. Explain IPv6 address representations, Neighbor Discovery Protocol (NDP), and IPv4-to-IPv6 transition strategies (Dual-Stack, Tunneling, and NAT64).",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2081"
       ],
-      "frequency": 4
+      "frequency": 1
     },
     {
       "chapter": "Chapter 7: Application Layer Protocols and Network Security",
       "text": "Explain Email Protocols: Simple Mail Transfer Protocol (SMTP), Post Office Protocol (POP3), and Internet Message Access Protocol (IMAP). Explain MIME (Multipurpose Internet Mail Extensions).",
       "marks": "6",
       "years": [
-        "2083",
-        "2082",
         "2080",
         "2078"
       ],
-      "frequency": 4
+      "frequency": 2
     }
   ]
 }

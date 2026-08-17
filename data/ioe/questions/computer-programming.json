@@ -1,258 +1,654 @@
 {
   "subject": "Computer Programming",
+  "code": "ENCT 101",
+  "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
     "Chapter 1: Overview of Computer Software and Programming Languages",
     "Chapter 2: Problem Solving Using Programs",
+    "Chapter 3: C Language Fundamentals and Data Types",
     "Chapter 4: Operators and Expressions",
     "Chapter 5: Input and Output Operations",
+    "Chapter 6: Control Structures",
     "Chapter 7: Arrays and Strings",
     "Chapter 8: User-Defined Functions and Recursion",
+    "Chapter 9: Structures and Unions",
     "Chapter 10: Pointers and Dynamic Memory Allocation",
     "Chapter 11: File Handling in C"
   ],
   "questions": [
     {
-      "chapter": "Chapter 5: Input and Output Operations",
-      "text": "Define Algorithm and Flowchart. Draw standard flowchart symbols (Terminal, Process, Input/Output, Decision, Connector). Draw a flowchart and write pseudo-code to find the roots of a Quadratic Equation $ax^2 + bx + c = 0$ considering real, equal, and imaginary roots.",
-      "marks": "3+5",
+      "chapter": "Chapter 1: Overview of Computer Software and Programming Languages",
+      "text": "Differentiate between System Software and Application Software with relevant examples.",
+      "marks": "2",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2082 Baishakh",
+        "2081 Bhadra",
+        "2080 Baishakh",
+        "2079 Bhadra"
       ],
-      "frequency": 5
+      "frequency": 4
     },
     {
       "chapter": "Chapter 1: Overview of Computer Software and Programming Languages",
-      "text": "Differentiate between Compiler, Interpreter, Assembler, and Linker/Loader. Explain the compilation stages of a C program (.c -> .i -> .s -> .o -> executable).",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 4: Operators and Expressions",
-      "text": "Explain Operators in C: Arithmetic, Relational, Logical, Bitwise (`&, |, ^, ~, <<, >>`), Conditional (Ternary `?:`), and Assignment operators. What is Operator Precedence and Associativity? Evaluate the expression: `x = 5 + 3 * 2 % 4 - 8 / 2`.",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 1: Overview of Computer Software and Programming Languages",
-      "text": "Write a C program to check whether a given positive integer is: (a) Prime number, (b) Armstrong number ($153 = 1^3 + 5^3 + 3^3$), and (c) Palindrome number.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 2: Problem Solving Using Programs",
-      "text": "Explain Decision-Making and Looping statements: `if-else`, `switch-case`, `while`, `do-while`, and `for` loops. Write a C program using nested loops to print the Pascal's Triangle and Floyd's Triangle up to $N$ rows.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 8: User-Defined Functions and Recursion",
-      "text": "Explain User-Defined Functions in C: Function Prototype/Declaration, Function Definition, and Function Call. Differentiate between Call by Value and Call by Reference with code snippets to swap two numbers.",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 8: User-Defined Functions and Recursion",
-      "text": "What is Recursion? State the base condition in recursive functions. Write recursive C functions to: (a) Compute Factorial $n!$, (b) Generate the $n$-th Fibonacci term, and (c) Solve the Tower of Hanoi problem for $N$ disks.",
-      "marks": "3+7",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 1: Overview of Computer Software and Programming Languages",
-      "text": "Explain Storage Classes in C: `auto`, `register`, `static`, and `extern` in terms of storage location, default initial value, scope, and lifetime.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 7: Arrays and Strings",
-      "text": "Explain 1D and 2D Arrays in C. Write a C program to multiply two matrices of order $m \\times n$ and $n \\times p$ with dynamic compatibility validation.",
-      "marks": "3+7",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 2: Problem Solving Using Programs",
-      "text": "Explain String manipulation in C. Write custom functions (without using `<string.h>` library functions) for: (a) `strlen()`, (b) `strcpy()`, (c) `strcat()`, and (d) `strcmp()`.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 2: Problem Solving Using Programs",
-      "text": "What is a Pointer? Explain Pointer Arithmetic and Pointer to Pointer (Double pointer `**ptr`). Write a C program to sort an array of $N$ integers in ascending order using pointers.",
-      "marks": "3+5",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 10: Pointers and Dynamic Memory Allocation",
-      "text": "Explain Dynamic Memory Allocation functions: `malloc()`, `calloc()`, `realloc()`, and `free()`. What is a Memory Leak and Dangling Pointer? Write a program to dynamically allocate memory for $N$ floating-point numbers, find their average, and deallocate memory.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 10: Pointers and Dynamic Memory Allocation",
-      "text": "Differentiate between `struct` and `union` in terms of memory allocation, member access, and keyword syntax. Explain Nested Structures and Array of Structures. Write a program to store and display records of 50 students (Roll, Name, Marks in 5 subjects) using an array of structures.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 11: File Handling in C",
-      "text": "Explain File Opening Modes in C (`r, w, a, r+, w+, a+, rb, wb`). Explain file handling functions: `fopen()`, `fclose()`, `fprintf()`, `fscanf()`, `fgetc()`, `fputc()`, `fread()`, `fwrite()`, `fseek()`, and `ftell()`. Write a program to copy contents of one text file into another while converting all lowercase characters to uppercase.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 2: Problem Solving Using Programs",
-      "text": "Write a C program to write an array of employee structures (EmpID, Name, Salary) to a binary file `emp.dat` using `fwrite()` and search for an employee by EmpID using `fread()`.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 1: Overview of Computer Software and Programming Languages",
-      "text": "Differentiate between `break` and `continue` statements with code examples. What is the `goto` statement and why is its use discouraged?",
+      "text": "Explain in brief the compilation process of a C program along with a suitable block diagram.",
       "marks": "4",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2083 Baishakh",
+        "2081 Baishakh",
+        "2080 Baishakh",
+        "2078 Kartik"
       ],
       "frequency": 4
     },
     {
       "chapter": "Chapter 1: Overview of Computer Software and Programming Languages",
-      "text": "Write a C program to count the number of vowels, consonants, digits, and white spaces in a given line of text.",
-      "marks": "6",
+      "text": "Define Instruction and Program. Discuss in brief about different generations of programming languages.",
+      "marks": "4",
       "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 2: Problem Solving Using Programs",
-      "text": "Explain Structured Programming paradigm. Compare Top-Down vs Bottom-Up problem solving approaches with examples.",
-      "marks": "6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
+        "2082 Shrawan",
+        "2080 Bhadra",
+        "2078 Bhadra"
       ],
       "frequency": 3
     },
     {
-      "chapter": "Chapter 5: Input and Output Operations",
-      "text": "Explain Formatted vs Unformatted Input/Output functions in C (, , , , , , , ). Explain format specifiers (, , , , ) and escape sequences (, , ). Write a C program demonstrating width, precision, and alignment flags in .",
-      "marks": "4+4",
+      "chapter": "Chapter 1: Overview of Computer Software and Programming Languages",
+      "text": "Why is C programming language most commonly used in simulation and software development?",
+      "marks": "2",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Overview of Computer Software and Programming Languages",
+      "text": "What do you understand by testing and debugging? What are the common errors that might occur during debugging?",
+      "marks": "4",
+      "years": [
+        "2082 Baishakh",
+        "2078 Kartik"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 1: Overview of Computer Software and Programming Languages",
+      "text": "What are preprocessor directives? Explain preprocessor directives in C with examples.",
+      "marks": "4",
+      "years": [
+        "2078 Bhadra",
+        "2078 Kartik"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving Using Programs",
+      "text": "Define Algorithm and Flowchart. List out general rules for flowcharting and explain how algorithms and flowcharts help in computer programming.",
+      "marks": "4",
+      "years": [
+        "2083 Baishakh",
+        "2078 Bhadra",
+        "2078 Kartik"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving Using Programs",
+      "text": "Explain the importance of problem analysis in software development. List the basic steps needed to be followed for developing software.",
+      "marks": "4",
+      "years": [
+        "2082 Shrawan",
+        "2081 Bhadra",
+        "2079 Bhadra",
+        "2078 Kartik"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving Using Programs",
+      "text": "Write an algorithm and draw a flowchart to test whether a number entered by the user is even or odd.",
+      "marks": "4",
+      "years": [
+        "2082 Shrawan"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving Using Programs",
+      "text": "Write an algorithm and draw a flowchart to find the sum of first n natural numbers where the value of n is entered by the user.",
+      "marks": "4",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving Using Programs",
+      "text": "Write an algorithm and draw a flowchart to calculate the factorial of a positive integer.",
+      "marks": "4",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving Using Programs",
+      "text": "Draw a flowchart to calculate the sum of digits contained in a number entered by the user.",
+      "marks": "4",
+      "years": [
+        "2081 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving Using Programs",
+      "text": "Draw a flowchart to calculate the area of a triangle where the values of three sides (a, b, c) are read from the user using semi-perimeter formula.",
+      "marks": "4",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 3: C Language Fundamentals and Data Types",
+      "text": "What is an Identifier? Define Tokens, Keywords, Constants, and Variables in C. List down the rules for writing valid identifiers.",
+      "marks": "4",
+      "years": [
+        "2083 Baishakh",
+        "2082 Baishakh",
+        "2081 Bhadra",
+        "2079 Bhadra",
+        "2078 Kartik"
       ],
       "frequency": 5
+    },
+    {
+      "chapter": "Chapter 3: C Language Fundamentals and Data Types",
+      "text": "What are fundamental Data Types in C? Explain declaring variables and constants in C and FORTRAN.",
+      "marks": "4",
+      "years": [
+        "2081 Baishakh",
+        "2080 Bhadra",
+        "2080 Baishakh"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Operators and Expressions",
+      "text": "What is an expression? Explain types of expressions, precedence, and associativity of operators in C with examples.",
+      "marks": "4",
+      "years": [
+        "2082 Shrawan",
+        "2082 Baishakh",
+        "2080 Bhadra",
+        "2079 Bhadra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 4: Operators and Expressions",
+      "text": "Explain Ternary (Conditional) Operator in C with a suitable programming example.",
+      "marks": "4",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 5: Input and Output Operations",
+      "text": "Explain how scanf() and printf() are used. Differentiate between formatted and unformatted input/output functions in C.",
+      "marks": "4",
+      "years": [
+        "2083 Baishakh",
+        "2082 Shrawan",
+        "2082 Baishakh",
+        "2078 Bhadra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 5: Input and Output Operations",
+      "text": "Write syntax and explain the use of unformatted character I/O functions: gets(), getchar(), getch(), getche(), and putchar().",
+      "marks": "4",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Bhadra",
+        "2078 Kartik"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 6: Control Structures",
+      "text": "Compare nested if statement with else-if ladder structure along with their flowcharts and syntax.",
+      "marks": "4",
+      "years": [
+        "2082 Shrawan",
+        "2081 Baishakh",
+        "2080 Bhadra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 6: Control Structures",
+      "text": "Differentiate between while loop and do-while loop in C. Explain entry-controlled and exit-controlled loops.",
+      "marks": "3",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2080 Baishakh",
+        "2079 Bhadra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 6: Control Structures",
+      "text": "Explain the operation of break and continue statements in loop termination with suitable examples.",
+      "marks": "4",
+      "years": [
+        "2081 Bhadra",
+        "2079 Bhadra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 6: Control Structures",
+      "text": "Write a C program to check whether a number entered by the user is Armstrong or not (for 3-digit and N-digit numbers).",
+      "marks": "5",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 6: Control Structures",
+      "text": "Write a C program to check whether a number entered by the user is Prime or Composite.",
+      "marks": "4",
+      "years": [
+        "2082 Shrawan",
+        "2082 Baishakh"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 6: Control Structures",
+      "text": "Write a C program to check whether a given number or word is a Palindrome or not.",
+      "marks": "5",
+      "years": [
+        "2080 Bhadra",
+        "2078 Bhadra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 6: Control Structures",
+      "text": "Write a C program to display nested loop number/star pattern (e.g., 2 4 / 3 6 9 / 4 8 12 16).",
+      "marks": "4",
+      "years": [
+        "2082 Baishakh",
+        "2081 Baishakh"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 6: Control Structures",
+      "text": "Write a C program to evaluate the cosine series: cos(x) = 1 - x^2/2! + x^4/4! - x^6/6! + ... until term value becomes less than 10^-5.",
+      "marks": "6",
+      "years": [
+        "2079 Bhadra",
+        "2078 Kartik"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 7: Arrays and Strings",
+      "text": "Define 1D and 2D Array. Explain compile-time and run-time initialization of one-dimensional and multi-dimensional arrays.",
+      "marks": "4",
+      "years": [
+        "2083 Baishakh",
+        "2082 Baishakh",
+        "2079 Bhadra",
+        "2078 Bhadra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 7: Arrays and Strings",
+      "text": "Write a C program to display the sum of two 3 x 3 matrices entered by the user.",
+      "marks": "4",
+      "years": [
+        "2083 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Arrays and Strings",
+      "text": "Write a C program to display the transpose of an m x n matrix entered by the user.",
+      "marks": "4",
+      "years": [
+        "2082 Baishakh",
+        "2081 Baishakh"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 7: Arrays and Strings",
+      "text": "Write a C program to display the largest and smallest number among 10 numbers entered by the user.",
+      "marks": "6",
+      "years": [
+        "2082 Shrawan",
+        "2080 Baishakh"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 7: Arrays and Strings",
+      "text": "Write a C program to calculate the length of a string entered by the user without using library string functions.",
+      "marks": "4",
+      "years": [
+        "2082 Baishakh",
+        "2081 Bhadra",
+        "2080 Baishakh"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 7: Arrays and Strings",
+      "text": "Write a C program to reverse a string without using string handling functions.",
+      "marks": "4",
+      "years": [
+        "2082 Shrawan",
+        "2080 Baishakh"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 7: Arrays and Strings",
+      "text": "Write a C program to concatenate two strings without using string handling functions.",
+      "marks": "6",
+      "years": [
+        "2080 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Arrays and Strings",
+      "text": "Write a C program to read names of N countries and display them in alphabetical order.",
+      "marks": "8",
+      "years": [
+        "2081 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 7: Arrays and Strings",
+      "text": "Write a C program to display string pattern: H / HE / HEL / HELL / HELLO / HELL / HEL / HE / H.",
+      "marks": "5",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 8: User-Defined Functions and Recursion",
+      "text": "Define Function Prototype, Function Call, and Function Definition with syntax and short examples.",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Bhadra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 8: User-Defined Functions and Recursion",
+      "text": "Explain Call by Value and Call by Reference parameter passing methods with suitable examples.",
+      "marks": "4",
+      "years": [
+        "2082 Shrawan",
+        "2081 Bhadra",
+        "2080 Bhadra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 8: User-Defined Functions and Recursion",
+      "text": "Write a program to calculate the sum of cubes of first N natural numbers using a recursive function.",
+      "marks": "4",
+      "years": [
+        "2083 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 8: User-Defined Functions and Recursion",
+      "text": "Write a program to display the factorial of an integer entered by the user using recursive function.",
+      "marks": "4",
+      "years": [
+        "2082 Shrawan"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 8: User-Defined Functions and Recursion",
+      "text": "Write a program in C to display nth term / series of Fibonacci sequence using recursive function.",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh",
+        "2081 Bhadra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 8: User-Defined Functions and Recursion",
+      "text": "Write a recursive function program to compute x^y and explain how the execution stack works.",
+      "marks": "8",
+      "years": [
+        "2081 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 8: User-Defined Functions and Recursion",
+      "text": "Write a recursive program to calculate the sum of digits of a given number until the sum becomes a single digit.",
+      "marks": "4",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 9: Structures and Unions",
+      "text": "What is Structure? Why is it necessary? Explain nested structure with an example.",
+      "marks": "4",
+      "years": [
+        "2083 Baishakh",
+        "2082 Shrawan",
+        "2082 Baishakh",
+        "2081 Bhadra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 9: Structures and Unions",
+      "text": "Write a program to define a structure named Person with Name, Address, Salary. Input details of 100 persons and display details in order of salary.",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh",
+        "2082 Baishakh",
+        "2078 Kartik"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 9: Structures and Unions",
+      "text": "Write a program to add two distances given in feet and inch format using Structure.",
+      "marks": "6",
+      "years": [
+        "2082 Shrawan"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 9: Structures and Unions",
+      "text": "Explain Array of Structure. Write a program to create a structure named Student (Roll, Name, Address, Marks) for 48 students and display students with marks between 50 and 70.",
+      "marks": "8",
+      "years": [
+        "2080 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 9: Structures and Unions",
+      "text": "Write a program to create structure Karmachari (ID_Number, Name, Salary) for employees, and search records matching user input salary.",
+      "marks": "8",
+      "years": [
+        "2081 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 9: Structures and Unions",
+      "text": "Explain nested structure Faculty having ServiceYear as a nested structure member. Display faculties with service duration > 10 and < 15 years.",
+      "marks": "8",
+      "years": [
+        "2078 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 10: Pointers and Dynamic Memory Allocation",
+      "text": "Define Pointer. List down the importance of pointers in C programming.",
+      "marks": "4",
+      "years": [
+        "2083 Baishakh",
+        "2082 Baishakh",
+        "2078 Bhadra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 10: Pointers and Dynamic Memory Allocation",
+      "text": "Describe the concept of relationship between array and pointer with suitable programming examples.",
+      "marks": "4",
+      "years": [
+        "2083 Baishakh",
+        "2079 Bhadra",
+        "2078 Bhadra",
+        "2078 Kartik"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 10: Pointers and Dynamic Memory Allocation",
+      "text": "Explain Pointer Arithmetic in C with suitable examples.",
+      "marks": "4",
+      "years": [
+        "2082 Shrawan",
+        "2081 Bhadra",
+        "2081 Baishakh",
+        "2080 Baishakh"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 10: Pointers and Dynamic Memory Allocation",
+      "text": "Write a program to display sum, difference, and product of two numbers using the concept of pointers.",
+      "marks": "4",
+      "years": [
+        "2082 Shrawan"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 10: Pointers and Dynamic Memory Allocation",
+      "text": "Write a program in C to sort n numbers entered by the user in ascending order using pointers.",
+      "marks": "5",
+      "years": [
+        "2082 Baishakh",
+        "2081 Bhadra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 10: Pointers and Dynamic Memory Allocation",
+      "text": "Define Void Pointer. Write a C program using pointers to multiply two 2D matrices (m x n and p x q) or display calculation error if incompatible.",
+      "marks": "8",
+      "years": [
+        "2078 Kartik"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 11: File Handling in C",
+      "text": "Explain different file handling functions (fopen, fclose, fprintf, fscanf, fgetc, fputc, fread, fwrite) along with their syntax and examples.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Bhadra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 11: File Handling in C",
+      "text": "Differentiate between Console I/O and File I/O, and Text File vs Binary File.",
+      "marks": "2",
+      "years": [
+        "2082 Shrawan",
+        "2082 Baishakh",
+        "2081 Bhadra",
+        "2080 Baishakh"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 11: File Handling in C",
+      "text": "A file named \"employee.txt\" stores employee name, id, salary. Write a C program to display details of all employees having salary > 50000.",
+      "marks": "6",
+      "years": [
+        "2082 Shrawan",
+        "2078 Kartik"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 11: File Handling in C",
+      "text": "Write a program in C to copy the contents of file \"source.txt\" into \"destination.txt\".",
+      "marks": "6",
+      "years": [
+        "2082 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 11: File Handling in C",
+      "text": "Write a program to read positive integers from user and write all odd integers to ODD.txt and even integers to EVEN.txt.",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 11: File Handling in C",
+      "text": "Write a C program to write all prime numbers in range n1 to n2 into file \"Source\", copy to file \"Destination\", and display contents of \"Destination\".",
+      "marks": "8",
+      "years": [
+        "2081 Baishakh"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Chapter 11: File Handling in C",
+      "text": "Explain syntax and use of fseek() and rewind() functions in C file handling.",
+      "marks": "4",
+      "years": [
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "frequency": 2
     }
   ]
 }
