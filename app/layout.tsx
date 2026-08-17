@@ -2,14 +2,13 @@ import { Inter, JetBrains_Mono, Source_Serif_4, Noto_Sans_Devanagari } from "nex
 import "./globals.css";
 import "katex/dist/katex.min.css";
 import { ThemeProvider } from "@/providers/ThemeProvider";
-import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/lib/site-config";
+import { SITE_URL, SITE_NAME } from "@/lib/site-config";
 import {
   generateOrganizationSchema,
   generatePersonSchema,
   generateLocalBusinessSchema,
 } from "@/lib/blog/schema";
 import { Metadata } from "next";
-import Script from "next/script";
 import { CookieConsent } from "@/components/blog/CookieConsent";
 
 const inter = Inter({
@@ -64,11 +63,6 @@ export const metadata: Metadata = {
   publisher: SITE_NAME,
   alternates: {
     canonical: SITE_URL,
-    languages: {
-      "en": SITE_URL,
-      "ne": SITE_URL,
-      "x-default": SITE_URL,
-    },
     types: {
       "application/rss+xml": `${SITE_URL}/blog/rss.xml`,
     },
@@ -104,8 +98,6 @@ const organizationSchema = generateOrganizationSchema();
 const personSchema = generatePersonSchema();
 const localBusinessSchema = generateLocalBusinessSchema();
 
-const GA_ID = "G-6HZ0GV26W3";
-
 export default function RootLayout({
   children,
 }: {
@@ -125,13 +117,6 @@ export default function RootLayout({
         <meta name="twitter:creator" content="@subeshyadav" />
       </head>
       <body className="antialiased" style={{ fontFamily: "var(--font-inter)" }}>
-        <Script
-          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
-          strategy="afterInteractive"
-        />
-        <Script id="ga-init" strategy="afterInteractive">
-          {`window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','${GA_ID}');`}
-        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}

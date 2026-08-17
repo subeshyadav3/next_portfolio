@@ -130,6 +130,32 @@ export function PdfViewer({ papers }: PdfViewerProps) {
           Direct Download ↗
         </a>
       </div>
+
+      <div className="border-t border-slate-200 bg-white px-4 py-3 text-[11px] leading-relaxed text-slate-500 dark:border-gray-800 dark:bg-gray-900 dark:text-slate-400">
+        <p>
+          <strong className="font-semibold text-slate-700 dark:text-slate-300">Document information:</strong>{" "}
+          This past examination paper is identified as an IOE/TU academic document and was cataloged from a public{" "}
+          <a
+            href={paper.archiveSourceUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+          >
+            Google Drive archive
+          </a>
+          . This independent website did not create the examination paper and is not affiliated with TU or IOE.
+        </p>
+        <p className="mt-1.5">
+          Rights holders can request correction or removal by emailing{" "}
+          <a
+            href={`mailto:subeshgaming@gmail.com?subject=${encodeURIComponent(`IOE document removal request: ${paper.file}`)}`}
+            className="font-medium text-blue-600 hover:underline dark:text-blue-400"
+          >
+            subeshgaming@gmail.com
+          </a>
+          {" "}with this page URL and supporting details.
+        </p>
+      </div>
     </div>
   );
 }

@@ -123,6 +123,9 @@ export default function DisclaimerPage() {
           <p className="text-[var(--blog-text-secondary)] leading-relaxed text-base">
             All course codes, curriculum structures, and university subject names remain the property of their respective academic authorities. Past question paper files and syllabus data are organized strictly for non-commercial, academic study and reference purposes.
           </p>
+          <p className="mt-3 text-[var(--blog-text-secondary)] leading-relaxed text-base">
+            Each paper viewer links to the public archive from which the file was cataloged. If you own rights to a document and want it corrected or removed, email <a href="mailto:subeshgaming@gmail.com" className="text-[var(--blog-accent)] font-semibold hover:underline">subeshgaming@gmail.com</a> with the page URL and evidence of ownership. I will review valid requests promptly.
+          </p>
         </section>
 
         <section aria-labelledby="consent-heading" className="p-5 rounded-2xl border border-[var(--blog-border)] bg-[var(--blog-surface)]">

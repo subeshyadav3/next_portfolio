@@ -111,6 +111,7 @@ export function toPaper(
     previewUrl: drivePreviewUrl(file.id),
     downloadUrl: driveDownloadUrl(file.id),
     driveViewUrl: driveViewUrl(file.id),
+    archiveSourceUrl: catalog.source,
   };
 }
 

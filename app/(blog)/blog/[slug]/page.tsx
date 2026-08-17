@@ -70,7 +70,7 @@ export default async function BlogPostPage({ params }: PageProps) {
     content = await compilePostMdx(post.content, post.category);
   } catch (e) {
     console.error("MDX compilation failed for slug:", slug, e);
-    content = <pre className="whitespace-pre-wrap text-red-500">Failed to render content. {(e as Error).message}</pre>;
+    notFound();
   }
 
   const toc = extractTableOfContents(post.content);
