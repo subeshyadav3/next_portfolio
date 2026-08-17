@@ -2,15 +2,15 @@
   "subject": "Propogation and Antennna",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Fundamental Antenna Parameters (Radiation Pattern, Gain, Directivity, Effective Aperture, Radiation Resistance)",
-    "Chapter 2: Linear Wire Antennas (Infinitesimal Dipole, Half-Wave Dipole, Monopole)",
-    "Chapter 3: Antenna Arrays (Linear Arrays, Broadside & End-Fire Arrays, Pattern Multiplication, Yagi-Uda)",
-    "Chapter 4: Aperture & High-Frequency Antennas (Horn Antennas, Parabolic Reflectors, Microstrip Patch Antennas)",
-    "Chapter 5: Radio Wave Propagation Mechanisms (Ground Wave, Space Wave/Tropospheric, Sky Wave/Ionospheric Propagation)"
+    "Chapter 1: Fundamental Antenna Parameters",
+    "Chapter 2: Linear Wire Antennas",
+    "Chapter 3: Antenna Arrays",
+    "Chapter 4: Aperture & High-Frequency Antennas",
+    "Chapter 5: Radio Wave Propagation Mechanisms"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Fundamental Antenna Parameters (Radiation Pattern, Gain, Directivity, Effective Aperture, Radiation Resistance)",
+      "chapter": "Chapter 1: Fundamental Antenna Parameters",
       "text": "Define fundamental Antenna Parameters: Radiation Pattern, Half-Power Beamwidth (HPBW), First-Null Beamwidth (FNBW), Radiation Intensity ($U$), Directivity ($D = \\frac{4\\pi U_{max}}{P_{rad}}$), Power Gain ($G = \\eta_{cd} D$), Radiation Resistance ($R_{rad}$), Effective Aperture ($A_e = \\frac{\\lambda^2}{4\\pi} D$), and Polarization (Linear, Circular, Elliptical).",
       "marks": "4+4",
       "years": [
@@ -23,7 +23,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Fundamental Antenna Parameters (Radiation Pattern, Gain, Directivity, Effective Aperture, Radiation Resistance)",
+      "chapter": "Chapter 1: Fundamental Antenna Parameters",
       "text": "Derive the radiated electric and magnetic fields ($E_\\theta, H_\\phi$) of a Half-Wave Dipole antenna (length $l = \\lambda/2$) with sinusoidal current distribution $I(z) = I_0 \\sin[k(l/2 - |z|)]$. Integrate the Poynting vector over a sphere to prove that radiation resistance is $R_{rad} = 73.13\\,\\Omega$ and directivity is $D = 1.64$ ($2.15\\,\\text{dBi}$).",
       "marks": "4+6",
       "years": [
@@ -36,7 +36,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Antenna Arrays (Linear Arrays, Broadside & End-Fire Arrays, Pattern Multiplication, Yagi-Uda)",
+      "chapter": "Chapter 3: Antenna Arrays",
       "text": "State the Principle of Pattern Multiplication: Total Field Pattern = (Element Pattern) $\\times$ (Array Factor). Derive the Array Factor ($AF = \\frac{\\sin(N\\psi/2)}{\\sin(\\psi/2)}$ where $\\psi = k d \\cos\\theta + \\beta$) for an $N$-element uniform linear array. Derive conditions for: (a) Broadside Array ($\\beta = 0$), and (b) End-Fire Array ($\\beta = \\pm k d$). Find null directions and major lobe directions for a 4-element broadside array with spacing $d = \\lambda/2$.",
       "marks": "4+6",
       "years": [
@@ -49,7 +49,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 2: Linear Wire Antennas (Infinitesimal Dipole, Half-Wave Dipole, Monopole)",
+      "chapter": "Chapter 2: Linear Wire Antennas",
       "text": "Explain the construction and working of a Yagi-Uda Antenna (Driven element, Reflector, Directors). Why is the reflector approximately $5\\%$ longer and directors $5\\%$ shorter than the half-wave folded dipole driven element?",
       "marks": "6",
       "years": [
@@ -62,7 +62,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Aperture & High-Frequency Antennas (Horn Antennas, Parabolic Reflectors, Microstrip Patch Antennas)",
+      "chapter": "Chapter 4: Aperture & High-Frequency Antennas",
       "text": "Explain: (a) Pyramidal Horn Antenna and optimal horn design, (b) Microstrip Patch Antenna (Feeding techniques, advantages in wireless gadgets), and (c) Parabolic Reflector Antenna (Cassegrain feed, spillover, aperture efficiency, gain $G = \\left(\\frac{\\pi D}{\\lambda}\\right)^2 \\eta_a$).",
       "marks": "8",
       "years": [
@@ -75,7 +75,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 5: Radio Wave Propagation Mechanisms (Ground Wave, Space Wave/Tropospheric, Sky Wave/Ionospheric Propagation)",
+      "chapter": "Chapter 5: Radio Wave Propagation Mechanisms",
       "text": "Explain Ground (Surface) Wave Propagation at LF and MF bands. Explain Space Wave (Line-of-Sight) Propagation at VHF/UHF bands: Derive the maximum radio horizon distance $d = 4.12(\\sqrt{h_t} + \\sqrt{h_r})\\,\\text{km}$ considering earth curvature.",
       "marks": "4+4",
       "years": [
@@ -88,7 +88,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 5: Radio Wave Propagation Mechanisms (Ground Wave, Space Wave/Tropospheric, Sky Wave/Ionospheric Propagation)",
+      "chapter": "Chapter 5: Radio Wave Propagation Mechanisms",
       "text": "Explain Sky Wave (Ionospheric) Propagation at HF bands. Describe the structure of ionospheric layers ($D, E, F_1, F_2$). Define and derive formulas for: (a) Critical Frequency ($f_c = 9\\sqrt{N_{max}}$), (b) Maximum Usable Frequency ($MUF = f_c \\sec i$), (c) Virtual Height, and (d) Skip Distance ($d_{skip} = 2h \\sqrt{(MUF/f_c)^2 - 1}$).",
       "marks": "4+6",
       "years": [
@@ -101,7 +101,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 2: Linear Wire Antennas (Infinitesimal Dipole, Half-Wave Dipole, Monopole)",
+      "chapter": "Chapter 2: Linear Wire Antennas",
       "text": "Explain Quarter-Wave Monopole antenna over an infinite ground plane using the Method of Images ($R_{rad} = 36.56\\,\\Omega, D = 3.28$). Explain Small Loop Antennas and compare small loop fields with an infinitesimal magnetic dipole.",
       "marks": "3+5",
       "years": [
@@ -113,67 +113,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Fundamental Antenna Parameters (Radiation Pattern, Gain, Directivity, Effective Aperture, Radiation Resistance)",
-      "text": "A practical engineering system operating under Fundamental Antenna Parameters & Radiation Integrals is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 2: Linear Wire Antennas (Infinitesimal Dipole, Half-Wave Dipole, Monopole)",
-      "text": "A practical engineering system operating under Linear Dipoles, Monopoles & Loop Antennas is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 3: Antenna Arrays (Linear Arrays, Broadside & End-Fire Arrays, Pattern Multiplication, Yagi-Uda)",
-      "text": "A practical engineering system operating under Antenna Arrays (Broadside, End-fire & Phased Arrays) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 4: Aperture & High-Frequency Antennas (Horn Antennas, Parabolic Reflectors, Microstrip Patch Antennas)",
-      "text": "A practical engineering system operating under Specialized Antennas (Yagi-Uda, Horn, Microstrip & Parabolic) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 5: Radio Wave Propagation Mechanisms (Ground Wave, Space Wave/Tropospheric, Sky Wave/Ionospheric Propagation)",
-      "text": "A practical engineering system operating under Radio Wave Propagation (Ground, Sky & Space Wave) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 3: Antenna Arrays (Linear Arrays, Broadside & End-Fire Arrays, Pattern Multiplication, Yagi-Uda)",
+      "chapter": "Chapter 3: Antenna Arrays",
       "text": "Explain Binomial Arrays and Hansen-Woodyard Increased Directivity End-Fire Array. How does a binomial array eliminate side lobes?",
       "marks": "6",
       "years": [
@@ -182,306 +122,6 @@
         "2079"
       ],
       "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Fundamental Antenna Parameters (Radiation Pattern, Gain, Directivity, Effective Aperture, Radiation Resistance)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Fundamental Antenna Parameters & Radiation Integrals. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Fundamental Antenna Parameters (Radiation Pattern, Gain, Directivity, Effective Aperture, Radiation Resistance)",
-      "text": "Solve the standard numerical problem for Fundamental Antenna Parameters & Radiation Integrals using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Linear Wire Antennas (Infinitesimal Dipole, Half-Wave Dipole, Monopole)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Linear Dipoles, Monopoles & Loop Antennas. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Linear Wire Antennas (Infinitesimal Dipole, Half-Wave Dipole, Monopole)",
-      "text": "Solve the standard numerical problem for Linear Dipoles, Monopoles & Loop Antennas using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Antenna Arrays (Linear Arrays, Broadside & End-Fire Arrays, Pattern Multiplication, Yagi-Uda)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Antenna Arrays (Broadside, End-fire & Phased Arrays). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Antenna Arrays (Linear Arrays, Broadside & End-Fire Arrays, Pattern Multiplication, Yagi-Uda)",
-      "text": "Solve the standard numerical problem for Antenna Arrays (Broadside, End-fire & Phased Arrays) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Aperture & High-Frequency Antennas (Horn Antennas, Parabolic Reflectors, Microstrip Patch Antennas)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Specialized Antennas (Yagi-Uda, Horn, Microstrip & Parabolic). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Aperture & High-Frequency Antennas (Horn Antennas, Parabolic Reflectors, Microstrip Patch Antennas)",
-      "text": "Solve the standard numerical problem for Specialized Antennas (Yagi-Uda, Horn, Microstrip & Parabolic) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Radio Wave Propagation Mechanisms (Ground Wave, Space Wave/Tropospheric, Sky Wave/Ionospheric Propagation)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Radio Wave Propagation (Ground, Sky & Space Wave). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Radio Wave Propagation Mechanisms (Ground Wave, Space Wave/Tropospheric, Sky Wave/Ionospheric Propagation)",
-      "text": "Solve the standard numerical problem for Radio Wave Propagation (Ground, Sky & Space Wave) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Fundamental Antenna Parameters (Radiation Pattern, Gain, Directivity, Effective Aperture, Radiation Resistance)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Fundamental Antenna Parameters & Radiation Integrals. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Fundamental Antenna Parameters (Radiation Pattern, Gain, Directivity, Effective Aperture, Radiation Resistance)",
-      "text": "State and prove the classical theorems and stability criteria associated with Fundamental Antenna Parameters & Radiation Integrals. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Linear Wire Antennas (Infinitesimal Dipole, Half-Wave Dipole, Monopole)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Linear Dipoles, Monopoles & Loop Antennas. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Linear Wire Antennas (Infinitesimal Dipole, Half-Wave Dipole, Monopole)",
-      "text": "State and prove the classical theorems and stability criteria associated with Linear Dipoles, Monopoles & Loop Antennas. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Antenna Arrays (Linear Arrays, Broadside & End-Fire Arrays, Pattern Multiplication, Yagi-Uda)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Antenna Arrays (Broadside, End-fire & Phased Arrays). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Antenna Arrays (Linear Arrays, Broadside & End-Fire Arrays, Pattern Multiplication, Yagi-Uda)",
-      "text": "State and prove the classical theorems and stability criteria associated with Antenna Arrays (Broadside, End-fire & Phased Arrays). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Aperture & High-Frequency Antennas (Horn Antennas, Parabolic Reflectors, Microstrip Patch Antennas)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Specialized Antennas (Yagi-Uda, Horn, Microstrip & Parabolic). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Aperture & High-Frequency Antennas (Horn Antennas, Parabolic Reflectors, Microstrip Patch Antennas)",
-      "text": "State and prove the classical theorems and stability criteria associated with Specialized Antennas (Yagi-Uda, Horn, Microstrip & Parabolic). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Radio Wave Propagation Mechanisms (Ground Wave, Space Wave/Tropospheric, Sky Wave/Ionospheric Propagation)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Radio Wave Propagation (Ground, Sky & Space Wave). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Radio Wave Propagation Mechanisms (Ground Wave, Space Wave/Tropospheric, Sky Wave/Ionospheric Propagation)",
-      "text": "State and prove the classical theorems and stability criteria associated with Radio Wave Propagation (Ground, Sky & Space Wave). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Fundamental Antenna Parameters (Radiation Pattern, Gain, Directivity, Effective Aperture, Radiation Resistance)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Fundamental Antenna Parameters & Radiation Integrals.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Fundamental Antenna Parameters (Radiation Pattern, Gain, Directivity, Effective Aperture, Radiation Resistance)",
-      "text": "Write short technical notes on: (a) Key design parameters in Fundamental Antenna Parameters & Radiation Integrals, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Linear Wire Antennas (Infinitesimal Dipole, Half-Wave Dipole, Monopole)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Linear Dipoles, Monopoles & Loop Antennas.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Linear Wire Antennas (Infinitesimal Dipole, Half-Wave Dipole, Monopole)",
-      "text": "Write short technical notes on: (a) Key design parameters in Linear Dipoles, Monopoles & Loop Antennas, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Antenna Arrays (Linear Arrays, Broadside & End-Fire Arrays, Pattern Multiplication, Yagi-Uda)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Antenna Arrays (Broadside, End-fire & Phased Arrays).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Antenna Arrays (Linear Arrays, Broadside & End-Fire Arrays, Pattern Multiplication, Yagi-Uda)",
-      "text": "Write short technical notes on: (a) Key design parameters in Antenna Arrays (Broadside, End-fire & Phased Arrays), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 4: Aperture & High-Frequency Antennas (Horn Antennas, Parabolic Reflectors, Microstrip Patch Antennas)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Specialized Antennas (Yagi-Uda, Horn, Microstrip & Parabolic).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 4: Aperture & High-Frequency Antennas (Horn Antennas, Parabolic Reflectors, Microstrip Patch Antennas)",
-      "text": "Write short technical notes on: (a) Key design parameters in Specialized Antennas (Yagi-Uda, Horn, Microstrip & Parabolic), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Radio Wave Propagation Mechanisms (Ground Wave, Space Wave/Tropospheric, Sky Wave/Ionospheric Propagation)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Radio Wave Propagation (Ground, Sky & Space Wave).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Radio Wave Propagation Mechanisms (Ground Wave, Space Wave/Tropospheric, Sky Wave/Ionospheric Propagation)",
-      "text": "Write short technical notes on: (a) Key design parameters in Radio Wave Propagation (Ground, Sky & Space Wave), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
     }
   ]
 }

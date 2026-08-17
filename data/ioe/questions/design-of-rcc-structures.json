@@ -2,16 +2,15 @@
   "subject": "Design of RCC Structures",
   "chapters": [
     "Chapter 1: Working Stress & Limit State Design Philosophies",
-    "Chapter 2: Limit State Design of Beams for Flexure (Singly & Doubly Reinforced)",
+    "Chapter 2: Limit State Design of Beams for Flexure",
     "Chapter 3: Limit State Design of Beams for Shear, Torsion & Bond",
-    "Chapter 4: Design of Flanged Beams (T-Beams & L-Beams)",
-    "Chapter 5: Design of One-Way & Two-Way Slabs",
-    "Chapter 6: Design of Short & Slender Columns (Axial & Eccentric Loading)",
+    "Chapter 4: Design of Flanged Beams",
+    "Chapter 6: Design of Short & Slender Columns",
     "Chapter 7: Design of Isolated & Combined Column Footings"
   ],
   "questions": [
     {
-      "chapter": "Chapter 2: Limit State Design of Beams for Flexure (Singly & Doubly Reinforced)",
+      "chapter": "Chapter 2: Limit State Design of Beams for Flexure",
       "text": "Explain the Limit State Design philosophy of Reinforced Cement Concrete according to IS 456:2000. State the assumptions in the Limit State of Collapse in Flexure. Derive the stress block parameters: depth of neutral axis ($x_u = \\frac{0.87 f_y A_{st}}{0.36 f_{ck} b}$), maximum/limiting neutral axis depth ($x_{u,max} = 0.53d, 0.48d, 0.46d$ for Fe250, Fe415, Fe500), and limiting moment of resistance ($M_{u,lim} = 0.138 f_{ck} b d^2$ for Fe415).",
       "marks": "4+6",
       "years": [
@@ -24,7 +23,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 2: Limit State Design of Beams for Flexure (Singly & Doubly Reinforced)",
+      "chapter": "Chapter 2: Limit State Design of Beams for Flexure",
       "text": "Design a Singly Reinforced rectangular beam section of size $250\\,\\text{mm} \\times 450\\,\\text{mm}$ (effective depth $400\\,\\text{mm}$) to resist a factored bending moment of $120\\,\\text{kNm}$ using M20 grade concrete and Fe415 steel.",
       "marks": "8",
       "years": [
@@ -37,7 +36,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 2: Limit State Design of Beams for Flexure (Singly & Doubly Reinforced)",
+      "chapter": "Chapter 2: Limit State Design of Beams for Flexure",
       "text": "When is a Doubly Reinforced Beam section required? Derive formulas for compressive steel area ($A_{sc} = \\frac{M_u - M_{u,lim}}{(f_{sc} - f_{cc})(d - d')}$) and total tensile steel area ($A_{st} = A_{st1} + A_{st2}$). Design a doubly reinforced beam of size $300\\,\\text{mm} \\times 500\\,\\text{mm}$ to resist a factored moment of $220\\,\\text{kNm}$ using M25 and Fe415.",
       "marks": "4+8",
       "years": [
@@ -50,7 +49,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Design of Flanged Beams (T-Beams & L-Beams)",
+      "chapter": "Chapter 4: Design of Flanged Beams",
       "text": "Explain the design steps for Shear in RCC beams according to IS 456:2000: Nominal shear stress ($\\tau_v = \\frac{V_u}{b d}$), Design shear strength of concrete ($\\tau_c$), Maximum shear stress ($\\tau_{c,max}$), and Shear reinforcement design ($V_{us} = V_u - \\tau_c b d = \\frac{0.87 f_y A_{sv} d}{s_v}$). Check for minimum shear reinforcement ($s_v \\le \\frac{0.87 f_y A_{sv}}{0.4 b}$).",
       "marks": "4+6",
       "years": [
@@ -102,7 +101,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Design of Short & Slender Columns (Axial & Eccentric Loading)",
+      "chapter": "Chapter 6: Design of Short & Slender Columns",
       "text": "Classify RCC Columns based on slenderness ratio (Short vs Slender column $\\lambda = L_{ex}/D < 12$). State the minimum eccentricity check ($e_{min} = \\frac{L}{500} + \\frac{D}{30} \\ge 20\\,\\text{mm}$). Derive the ultimate axial load capacity formula for an axially loaded short column with lateral ties: $P_u = 0.4 f_{ck} A_c + 0.67 f_y A_{sc}$.",
       "marks": "4+4",
       "years": [
@@ -115,7 +114,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Design of Short & Slender Columns (Axial & Eccentric Loading)",
+      "chapter": "Chapter 6: Design of Short & Slender Columns",
       "text": "Design a short square column to carry a factored axial load of $1500\\,\\text{kN}$. Use M25 concrete and Fe415 steel. Design longitudinal steel and transverse lateral ties.",
       "marks": "8",
       "years": [
@@ -139,366 +138,6 @@
         "2078"
       ],
       "frequency": 5
-    },
-    {
-      "chapter": "Chapter 2: Limit State Design of Beams for Flexure (Singly & Doubly Reinforced)",
-      "text": "A practical engineering system operating under Limit State Method (LSM) Philosophy & Singly/Doubly Reinforced Beams is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 3: Limit State Design of Beams for Shear, Torsion & Bond",
-      "text": "A practical engineering system operating under Design of Beams for Shear, Torsion & Bond/Development Length is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 1: Working Stress & Limit State Design Philosophies",
-      "text": "A practical engineering system operating under Design of One-Way & Two-Way Slabs (IS 456:2000) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 6: Design of Short & Slender Columns (Axial & Eccentric Loading)",
-      "text": "A practical engineering system operating under Design of Short & Slender Columns (Axial + Uniaxial/Biaxial Bending) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 7: Design of Isolated & Combined Column Footings",
-      "text": "A practical engineering system operating under Design of Isolated & Combined Footings & Retaining Walls is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 2: Limit State Design of Beams for Flexure (Singly & Doubly Reinforced)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Limit State Method (LSM) Philosophy & Singly/Doubly Reinforced Beams. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Limit State Design of Beams for Flexure (Singly & Doubly Reinforced)",
-      "text": "Solve the standard numerical problem for Limit State Method (LSM) Philosophy & Singly/Doubly Reinforced Beams using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Limit State Design of Beams for Shear, Torsion & Bond",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Design of Beams for Shear, Torsion & Bond/Development Length. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Limit State Design of Beams for Shear, Torsion & Bond",
-      "text": "Solve the standard numerical problem for Design of Beams for Shear, Torsion & Bond/Development Length using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Working Stress & Limit State Design Philosophies",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Design of One-Way & Two-Way Slabs (IS 456:2000). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Design of One-Way & Two-Way Slabs",
-      "text": "Solve the standard numerical problem for Design of One-Way & Two-Way Slabs (IS 456:2000) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: Design of Short & Slender Columns (Axial & Eccentric Loading)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Design of Short & Slender Columns (Axial + Uniaxial/Biaxial Bending). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: Design of Short & Slender Columns (Axial & Eccentric Loading)",
-      "text": "Solve the standard numerical problem for Design of Short & Slender Columns (Axial + Uniaxial/Biaxial Bending) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 7: Design of Isolated & Combined Column Footings",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Design of Isolated & Combined Footings & Retaining Walls. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 7: Design of Isolated & Combined Column Footings",
-      "text": "Solve the standard numerical problem for Design of Isolated & Combined Footings & Retaining Walls using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Limit State Design of Beams for Flexure (Singly & Doubly Reinforced)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Limit State Method (LSM) Philosophy & Singly/Doubly Reinforced Beams. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Limit State Design of Beams for Flexure (Singly & Doubly Reinforced)",
-      "text": "State and prove the classical theorems and stability criteria associated with Limit State Method (LSM) Philosophy & Singly/Doubly Reinforced Beams. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Limit State Design of Beams for Shear, Torsion & Bond",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Design of Beams for Shear, Torsion & Bond/Development Length. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Limit State Design of Beams for Shear, Torsion & Bond",
-      "text": "State and prove the classical theorems and stability criteria associated with Design of Beams for Shear, Torsion & Bond/Development Length. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Design of One-Way & Two-Way Slabs",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Design of One-Way & Two-Way Slabs (IS 456:2000). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Working Stress & Limit State Design Philosophies",
-      "text": "State and prove the classical theorems and stability criteria associated with Design of One-Way & Two-Way Slabs (IS 456:2000). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Design of Short & Slender Columns (Axial & Eccentric Loading)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Design of Short & Slender Columns (Axial + Uniaxial/Biaxial Bending). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Design of Short & Slender Columns (Axial & Eccentric Loading)",
-      "text": "State and prove the classical theorems and stability criteria associated with Design of Short & Slender Columns (Axial + Uniaxial/Biaxial Bending). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 7: Design of Isolated & Combined Column Footings",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Design of Isolated & Combined Footings & Retaining Walls. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 7: Design of Isolated & Combined Column Footings",
-      "text": "State and prove the classical theorems and stability criteria associated with Design of Isolated & Combined Footings & Retaining Walls. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Limit State Design of Beams for Flexure (Singly & Doubly Reinforced)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Limit State Method (LSM) Philosophy & Singly/Doubly Reinforced Beams.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Limit State Design of Beams for Flexure (Singly & Doubly Reinforced)",
-      "text": "Write short technical notes on: (a) Key design parameters in Limit State Method (LSM) Philosophy & Singly/Doubly Reinforced Beams, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Limit State Design of Beams for Shear, Torsion & Bond",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Design of Beams for Shear, Torsion & Bond/Development Length.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Limit State Design of Beams for Shear, Torsion & Bond",
-      "text": "Write short technical notes on: (a) Key design parameters in Design of Beams for Shear, Torsion & Bond/Development Length, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Design of One-Way & Two-Way Slabs",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Design of One-Way & Two-Way Slabs (IS 456:2000).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Design of One-Way & Two-Way Slabs",
-      "text": "Write short technical notes on: (a) Key design parameters in Design of One-Way & Two-Way Slabs (IS 456:2000), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Design of Short & Slender Columns (Axial & Eccentric Loading)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Design of Short & Slender Columns (Axial + Uniaxial/Biaxial Bending).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Design of Short & Slender Columns (Axial & Eccentric Loading)",
-      "text": "Write short technical notes on: (a) Key design parameters in Design of Short & Slender Columns (Axial + Uniaxial/Biaxial Bending), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 7: Design of Isolated & Combined Column Footings",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Design of Isolated & Combined Footings & Retaining Walls.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 7: Design of Isolated & Combined Column Footings",
-      "text": "Write short technical notes on: (a) Key design parameters in Design of Isolated & Combined Footings & Retaining Walls, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
     }
   ]
 }

@@ -3,15 +3,14 @@
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
     "Chapter 1: Distributed Systems Characterization, System Architectures & Models",
-    "Chapter 2: Interprocess Communication (Sockets, Remote Method Invocation: RMI, RPC)",
-    "Chapter 3: Synchronization in Distributed Systems (Physical Clocks, Logical Clocks: Lamport, Vector, Mutual Exclusion)",
-    "Chapter 4: Distributed Consistency, Replication & Consensus Algorithms (Paxos, Raft)",
-    "Chapter 5: Fault Tolerance, Recovery & Distributed File Systems (NFS, HDFS)",
-    "Chapter 6: Cloud Computing Models (IaaS, PaaS, SaaS, Public/Private Clouds, Virtualization)"
+    "Chapter 3: Synchronization in Distributed Systems",
+    "Chapter 4: Distributed Consistency, Replication & Consensus Algorithms",
+    "Chapter 5: Fault Tolerance, Recovery & Distributed File Systems",
+    "Chapter 6: Cloud Computing Models"
   ],
   "questions": [
     {
-      "chapter": "Chapter 5: Fault Tolerance, Recovery & Distributed File Systems (NFS, HDFS)",
+      "chapter": "Chapter 5: Fault Tolerance, Recovery & Distributed File Systems",
       "text": "Define a Distributed System. Explain its key characteristics: Heterogeneity, Openness, Scalability, Fault Tolerance, Transparency (Access, Location, Migration, Relocation, Replication, Concurrency, Failure).",
       "marks": "4+4",
       "years": [
@@ -24,7 +23,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Synchronization in Distributed Systems (Physical Clocks, Logical Clocks: Lamport, Vector, Mutual Exclusion)",
+      "chapter": "Chapter 3: Synchronization in Distributed Systems",
       "text": "Explain the concept of Logical Clocks and Lamport's Happens-Before Relation ($a \\to b$). What are the conditions for Lamport's Logical Clock? Explain Vector Clocks and how they capture causal relationships between events in distributed systems.",
       "marks": "3+5",
       "years": [
@@ -37,7 +36,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Synchronization in Distributed Systems (Physical Clocks, Logical Clocks: Lamport, Vector, Mutual Exclusion)",
+      "chapter": "Chapter 3: Synchronization in Distributed Systems",
       "text": "Explain Distributed Mutual Exclusion algorithms: (a) Centralized Algorithm, (b) Distributed Algorithm (Ricart-Agrawala algorithm using timestamps), and (c) Token Ring Algorithm. Compare their message complexities, synchronization delays, and single points of failure.",
       "marks": "4+4",
       "years": [
@@ -50,7 +49,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Distributed Consistency, Replication & Consensus Algorithms (Paxos, Raft)",
+      "chapter": "Chapter 4: Distributed Consistency, Replication & Consensus Algorithms",
       "text": "State the CAP Theorem (Consistency, Availability, Partition Tolerance) and PACELC Theorem for distributed data stores. Explain Consensus in asynchronous distributed systems and the Raft / Paxos consensus algorithm.",
       "marks": "3+5",
       "years": [
@@ -63,7 +62,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Cloud Computing Models (IaaS, PaaS, SaaS, Public/Private Clouds, Virtualization)",
+      "chapter": "Chapter 6: Cloud Computing Models",
       "text": "Explain Cloud Computing Service Models: Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). Compare Public, Private, Hybrid, and Community Cloud deployment models.",
       "marks": "4+4",
       "years": [
@@ -76,7 +75,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Cloud Computing Models (IaaS, PaaS, SaaS, Public/Private Clouds, Virtualization)",
+      "chapter": "Chapter 6: Cloud Computing Models",
       "text": "Explain Virtualization in Cloud Computing. Compare Type-1 (Bare-Metal) Hypervisor vs. Type-2 (Hosted) Hypervisor. Explain Full Virtualization, Para-Virtualization, and Operating System-Level Virtualization (Containers vs VMs / Docker & Kubernetes).",
       "marks": "4+4",
       "years": [
@@ -89,7 +88,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 5: Fault Tolerance, Recovery & Distributed File Systems (NFS, HDFS)",
+      "chapter": "Chapter 5: Fault Tolerance, Recovery & Distributed File Systems",
       "text": "Explain the architecture of Hadoop Distributed File System (HDFS): NameNode, DataNodes, Secondary NameNode, Block Replication, Heartbeats, and Block Reports. How does HDFS ensure fault tolerance?",
       "marks": "4+4",
       "years": [
@@ -115,7 +114,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Cloud Computing Models (IaaS, PaaS, SaaS, Public/Private Clouds, Virtualization)",
+      "chapter": "Chapter 6: Cloud Computing Models",
       "text": "Explain Service Level Agreements (SLA) in Cloud Computing. Explain Cloud Security challenges (Multi-tenancy isolation, Data encryption at rest and in transit, Identity and Access Management - IAM). Compare Monolithic Architecture vs. Microservices Architecture with API Gateways and Service Mesh.",
       "marks": "4+4",
       "years": [
@@ -138,366 +137,6 @@
         "2078"
       ],
       "frequency": 4
-    },
-    {
-      "chapter": "Chapter 1: Distributed Systems Characterization, System Architectures & Models",
-      "text": "A practical engineering system operating under Distributed Systems Fundamentals & Clock Synchronization is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 3: Synchronization in Distributed Systems (Physical Clocks, Logical Clocks: Lamport, Vector, Mutual Exclusion)",
-      "text": "A practical engineering system operating under Mutual Exclusion, Election & Consensus Algorithms is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 6: Cloud Computing Models (IaaS, PaaS, SaaS, Public/Private Clouds, Virtualization)",
-      "text": "A practical engineering system operating under Cloud Computing Architecture, IaaS, PaaS, SaaS & Virtualization is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 1: Distributed Systems Characterization, System Architectures & Models",
-      "text": "A practical engineering system operating under Distributed File Systems & Big Data Processing (Hadoop, MapReduce) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 1: Distributed Systems Characterization, System Architectures & Models",
-      "text": "A practical engineering system operating under Cloud Security, SLA & Microservices Architecture is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 1: Distributed Systems Characterization, System Architectures & Models",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Distributed Systems Fundamentals & Clock Synchronization. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Synchronization in Distributed Systems (Physical Clocks, Logical Clocks: Lamport, Vector, Mutual Exclusion)",
-      "text": "Solve the standard numerical problem for Distributed Systems Fundamentals & Clock Synchronization using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Synchronization in Distributed Systems (Physical Clocks, Logical Clocks: Lamport, Vector, Mutual Exclusion)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Mutual Exclusion, Election & Consensus Algorithms. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Synchronization in Distributed Systems (Physical Clocks, Logical Clocks: Lamport, Vector, Mutual Exclusion)",
-      "text": "Solve the standard numerical problem for Mutual Exclusion, Election & Consensus Algorithms using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: Cloud Computing Models (IaaS, PaaS, SaaS, Public/Private Clouds, Virtualization)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Cloud Computing Architecture, IaaS, PaaS, SaaS & Virtualization. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: Cloud Computing Models (IaaS, PaaS, SaaS, Public/Private Clouds, Virtualization)",
-      "text": "Solve the standard numerical problem for Cloud Computing Architecture, IaaS, PaaS, SaaS & Virtualization using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Distributed Systems Characterization, System Architectures & Models",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Distributed File Systems & Big Data Processing (Hadoop, MapReduce). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Distributed Systems Characterization, System Architectures & Models",
-      "text": "Solve the standard numerical problem for Distributed File Systems & Big Data Processing (Hadoop, MapReduce) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: Cloud Computing Models (IaaS, PaaS, SaaS, Public/Private Clouds, Virtualization)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Cloud Security, SLA & Microservices Architecture. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Synchronization in Distributed Systems (Physical Clocks, Logical Clocks: Lamport, Vector, Mutual Exclusion)",
-      "text": "Solve the standard numerical problem for Cloud Security, SLA & Microservices Architecture using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Distributed Systems Characterization, System Architectures & Models",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Distributed Systems Fundamentals & Clock Synchronization. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Distributed Systems Characterization, System Architectures & Models",
-      "text": "State and prove the classical theorems and stability criteria associated with Distributed Systems Fundamentals & Clock Synchronization. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Synchronization in Distributed Systems (Physical Clocks, Logical Clocks: Lamport, Vector, Mutual Exclusion)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Mutual Exclusion, Election & Consensus Algorithms. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Synchronization in Distributed Systems (Physical Clocks, Logical Clocks: Lamport, Vector, Mutual Exclusion)",
-      "text": "State and prove the classical theorems and stability criteria associated with Mutual Exclusion, Election & Consensus Algorithms. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Cloud Computing Models (IaaS, PaaS, SaaS, Public/Private Clouds, Virtualization)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Cloud Computing Architecture, IaaS, PaaS, SaaS & Virtualization. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Cloud Computing Models (IaaS, PaaS, SaaS, Public/Private Clouds, Virtualization)",
-      "text": "State and prove the classical theorems and stability criteria associated with Cloud Computing Architecture, IaaS, PaaS, SaaS & Virtualization. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Distributed Systems Characterization, System Architectures & Models",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Distributed File Systems & Big Data Processing (Hadoop, MapReduce). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Distributed Systems Characterization, System Architectures & Models",
-      "text": "State and prove the classical theorems and stability criteria associated with Distributed File Systems & Big Data Processing (Hadoop, MapReduce). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Interprocess Communication (Sockets, Remote Method Invocation: RMI, RPC)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Cloud Security, SLA & Microservices Architecture. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Cloud Computing Models (IaaS, PaaS, SaaS, Public/Private Clouds, Virtualization)",
-      "text": "State and prove the classical theorems and stability criteria associated with Cloud Security, SLA & Microservices Architecture. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Distributed Systems Characterization, System Architectures & Models",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Distributed Systems Fundamentals & Clock Synchronization.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Distributed Systems Characterization, System Architectures & Models",
-      "text": "Write short technical notes on: (a) Key design parameters in Distributed Systems Fundamentals & Clock Synchronization, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Synchronization in Distributed Systems (Physical Clocks, Logical Clocks: Lamport, Vector, Mutual Exclusion)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Mutual Exclusion, Election & Consensus Algorithms.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Synchronization in Distributed Systems (Physical Clocks, Logical Clocks: Lamport, Vector, Mutual Exclusion)",
-      "text": "Write short technical notes on: (a) Key design parameters in Mutual Exclusion, Election & Consensus Algorithms, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Cloud Computing Models (IaaS, PaaS, SaaS, Public/Private Clouds, Virtualization)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Cloud Computing Architecture, IaaS, PaaS, SaaS & Virtualization.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Cloud Computing Models (IaaS, PaaS, SaaS, Public/Private Clouds, Virtualization)",
-      "text": "Write short technical notes on: (a) Key design parameters in Cloud Computing Architecture, IaaS, PaaS, SaaS & Virtualization, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Distributed Systems Characterization, System Architectures & Models",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Distributed File Systems & Big Data Processing (Hadoop, MapReduce).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Distributed Systems Characterization, System Architectures & Models",
-      "text": "Write short technical notes on: (a) Key design parameters in Distributed File Systems & Big Data Processing (Hadoop, MapReduce), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Cloud Computing Models (IaaS, PaaS, SaaS, Public/Private Clouds, Virtualization)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Cloud Security, SLA & Microservices Architecture.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Cloud Computing Models (IaaS, PaaS, SaaS, Public/Private Clouds, Virtualization)",
-      "text": "Write short technical notes on: (a) Key design parameters in Cloud Security, SLA & Microservices Architecture, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
     }
   ]
 }

@@ -3,10 +3,10 @@
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
     "Chapter 1: Foundations of AI, Intelligent Agents & Environment Types",
-    "Chapter 2: Uninformed Search Strategies (BFS, DFS, Uniform Cost Search)",
-    "Chapter 3: Informed & Heuristic Search (Greedy Best-First, A* Search, IDA*, Hill Climbing)",
-    "Chapter 4: Adversarial Search & Game Theory (Minimax Algorithm, Alpha-Beta Pruning)",
-    "Chapter 5: Knowledge Representation & Reasoning (First-Order Logic, Inference, Resolution)",
+    "Chapter 2: Uninformed Search Strategies",
+    "Chapter 3: Informed & Heuristic Search",
+    "Chapter 4: Adversarial Search & Game Theory",
+    "Chapter 5: Knowledge Representation & Reasoning",
     "Chapter 6: Machine Learning, Neural Networks & Natural Language Processing"
   ],
   "questions": [
@@ -37,7 +37,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 2: Uninformed Search Strategies (BFS, DFS, Uniform Cost Search)",
+      "chapter": "Chapter 2: Uninformed Search Strategies",
       "text": "Compare Uninformed Search Algorithms: Breadth-First Search (BFS), Depth-First Search (DFS), Uniform-Cost Search (UCS / Dijkstra), Depth-Limited Search (DLS), and Iterative Deepening DFS (IDDFS) in terms of Completeness, Time Complexity, Space Complexity, and Optimality.",
       "marks": "4+6",
       "years": [
@@ -50,7 +50,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Informed & Heuristic Search (Greedy Best-First, A* Search, IDA*, Hill Climbing)",
+      "chapter": "Chapter 3: Informed & Heuristic Search",
       "text": "Explain $A^*$ Search Algorithm ($f(n) = g(n) + h(n)$). Define Admissible Heuristic ($h(n) \\le h^*(n)$) and Consistent (Monotonic) Heuristic ($h(n) \\le c(n, a, n') + h(n')$). Prove that: (a) Tree-search $A^*$ is optimal if $h(n)$ is admissible, and (b) Graph-search $A^*$ is optimal if $h(n)$ is consistent.",
       "marks": "3+7",
       "years": [
@@ -63,7 +63,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Informed & Heuristic Search (Greedy Best-First, A* Search, IDA*, Hill Climbing)",
+      "chapter": "Chapter 3: Informed & Heuristic Search",
       "text": "Solve the 8-Puzzle Problem from initial state to goal state using $A^*$ search with: (1) Misplaced Tiles heuristic $h_1(n)$, and (2) Manhattan Distance heuristic $h_2(n)$. Why is $h_2$ dominant over $h_1$?",
       "marks": "8",
       "years": [
@@ -76,7 +76,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Adversarial Search & Game Theory (Minimax Algorithm, Alpha-Beta Pruning)",
+      "chapter": "Chapter 4: Adversarial Search & Game Theory",
       "text": "Explain the Minimax Algorithm for two-player zero-sum perfect information games. Trace the Minimax algorithm and Alpha-Beta Pruning on a given 4-ply game tree with 16 terminal leaf utility values. List all branch cuts / pruned nodes and state conditions for $\\alpha$-cutoff and $\\beta$-cutoff ($\\alpha \\ge \\beta$).",
       "marks": "4+8",
       "years": [
@@ -89,7 +89,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Informed & Heuristic Search (Greedy Best-First, A* Search, IDA*, Hill Climbing)",
+      "chapter": "Chapter 3: Informed & Heuristic Search",
       "text": "Explain Constraint Satisfaction Problems (CSP). Formalize the 8-Queens Problem and Map Coloring Problem (Australia map with 7 regions using 3 colors Red, Green, Blue) as CSPs. Explain Backtracking Search with MRV (Minimum Remaining Values) heuristic, Degree heuristic, Least Constraining Value heuristic, and Forward Checking / AC-3 Arc Consistency algorithm.",
       "marks": "4+6",
       "years": [
@@ -102,7 +102,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 5: Knowledge Representation & Reasoning (First-Order Logic, Inference, Resolution)",
+      "chapter": "Chapter 5: Knowledge Representation & Reasoning",
       "text": "Translate the English statements into First-Order Predicate Logic (FOPL):\n(a) \"Every student in IOE likes computer programming.\"\n(b) \"Anyone who is a father of someone is older than that person.\"\n(c) \"Only one student scored $100\\%$ in AI exam.\"\n(d) \"Politicians can fool some people all the time, and all people some of the time, but not all people all the time.\"",
       "marks": "8",
       "years": [
@@ -115,7 +115,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 5: Knowledge Representation & Reasoning (First-Order Logic, Inference, Resolution)",
+      "chapter": "Chapter 5: Knowledge Representation & Reasoning",
       "text": "Explain the steps to convert First-Order Logic formulas into Conjunctive Normal Form (CNF / Clause Form): Eliminate implications, Move negations inward (De Morgan's), Standardize variables, Skolemization ($f(x)$ for existential quantifiers), Drop universal quantifiers, and Distribute $\\lor$ over $\\land$.",
       "marks": "6",
       "years": [
@@ -128,7 +128,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 5: Knowledge Representation & Reasoning (First-Order Logic, Inference, Resolution)",
+      "chapter": "Chapter 5: Knowledge Representation & Reasoning",
       "text": "Explain Resolution Refutation theorem proving in First-Order Logic with Unification and Most General Unifier (MGU). Given the facts:\n1. Marcus was a man.\n2. Marcus was a Pompeian.\n3. All Pompeians were Romans.\n4. Caesar was a ruler.\n5. All Romans were either loyal to Caesar or hated him.\n6. Everyone is loyal to someone.\n7. People only try to assassinate rulers they are not loyal to.\n8. Marcus tried to assassinate Caesar.\nProve that \"Marcus hated Caesar\" using resolution refutation.",
       "marks": "10",
       "years": [
@@ -141,7 +141,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Adversarial Search & Game Theory (Minimax Algorithm, Alpha-Beta Pruning)",
+      "chapter": "Chapter 4: Adversarial Search & Game Theory",
       "text": "Explain Supervised, Unsupervised, and Reinforcement Learning paradigms. Explain Decision Tree learning using ID3 algorithm with Information Gain and Entropy ($H(S) = -\\sum p_i \\log_2 p_i$). Calculate information gain for a dataset of weather attributes predicting whether to play tennis.",
       "marks": "4+6",
       "years": [
@@ -167,7 +167,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 5: Knowledge Representation & Reasoning (First-Order Logic, Inference, Resolution)",
+      "chapter": "Chapter 5: Knowledge Representation & Reasoning",
       "text": "Explain the phases of Natural Language Processing (NLP): Lexical/Morphological Analysis, Syntactic Parsing (Context-Free Grammars & Parse Trees), Semantic Analysis, Pragmatic/Discourse Processing. Explain Expert Systems architecture (Inference Engine, Knowledge Base, Explanation Facility).",
       "marks": "4+4",
       "years": [
@@ -180,7 +180,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Informed & Heuristic Search (Greedy Best-First, A* Search, IDA*, Hill Climbing)",
+      "chapter": "Chapter 3: Informed & Heuristic Search",
       "text": "Explain Local Search Algorithms: Simple Hill Climbing, Steepest-Ascent Hill Climbing, and problems encountered (Local Maxima, Ridges, Plateau / Shoulder). Explain Simulated Annealing ($P(\\Delta E) = e^{\\Delta E / T}$) and Genetic Algorithms (Selection, Crossover, Mutation).",
       "marks": "4+4",
       "years": [
@@ -192,7 +192,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 5: Knowledge Representation & Reasoning (First-Order Logic, Inference, Resolution)",
+      "chapter": "Chapter 5: Knowledge Representation & Reasoning",
       "text": "Compare Forward Chaining vs. Backward Chaining in production rule systems. Explain Semantic Networks, Frames (Slot-and-filler representation), and Conceptual Dependency.",
       "marks": "6",
       "years": [
@@ -214,366 +214,6 @@
         "2078"
       ],
       "frequency": 4
-    },
-    {
-      "chapter": "Chapter 1: Foundations of AI, Intelligent Agents & Environment Types",
-      "text": "A practical engineering system operating under AI Foundations, Rational Agents & Problem Formulation is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 3: Informed & Heuristic Search (Greedy Best-First, A* Search, IDA*, Hill Climbing)",
-      "text": "A practical engineering system operating under Uninformed & Informed Search Algorithms ($A^*$, IDA*, Hill Climbing) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 4: Adversarial Search & Game Theory (Minimax Algorithm, Alpha-Beta Pruning)",
-      "text": "A practical engineering system operating under Adversarial Search & Game Playing (Minimax & Alpha-Beta Pruning) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 5: Knowledge Representation & Reasoning (First-Order Logic, Inference, Resolution)",
-      "text": "A practical engineering system operating under Knowledge Representation, First-Order Logic & Inferences is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 6: Machine Learning, Neural Networks & Natural Language Processing",
-      "text": "A practical engineering system operating under Machine Learning, Neural Networks & Natural Language Processing is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 1: Foundations of AI, Intelligent Agents & Environment Types",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of AI Foundations, Rational Agents & Problem Formulation. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Foundations of AI, Intelligent Agents & Environment Types",
-      "text": "Solve the standard numerical problem for AI Foundations, Rational Agents & Problem Formulation using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Informed & Heuristic Search (Greedy Best-First, A* Search, IDA*, Hill Climbing)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Uninformed & Informed Search Algorithms ($A^*$, IDA*, Hill Climbing). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Informed & Heuristic Search (Greedy Best-First, A* Search, IDA*, Hill Climbing)",
-      "text": "Solve the standard numerical problem for Uninformed & Informed Search Algorithms ($A^*$, IDA*, Hill Climbing) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Adversarial Search & Game Theory (Minimax Algorithm, Alpha-Beta Pruning)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Adversarial Search & Game Playing (Minimax & Alpha-Beta Pruning). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Adversarial Search & Game Theory (Minimax Algorithm, Alpha-Beta Pruning)",
-      "text": "Solve the standard numerical problem for Adversarial Search & Game Playing (Minimax & Alpha-Beta Pruning) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Knowledge Representation & Reasoning (First-Order Logic, Inference, Resolution)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Knowledge Representation, First-Order Logic & Inferences. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Knowledge Representation & Reasoning (First-Order Logic, Inference, Resolution)",
-      "text": "Solve the standard numerical problem for Knowledge Representation, First-Order Logic & Inferences using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: Machine Learning, Neural Networks & Natural Language Processing",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Machine Learning, Neural Networks & Natural Language Processing. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: Machine Learning, Neural Networks & Natural Language Processing",
-      "text": "Solve the standard numerical problem for Machine Learning, Neural Networks & Natural Language Processing using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Foundations of AI, Intelligent Agents & Environment Types",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in AI Foundations, Rational Agents & Problem Formulation. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Foundations of AI, Intelligent Agents & Environment Types",
-      "text": "State and prove the classical theorems and stability criteria associated with AI Foundations, Rational Agents & Problem Formulation. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Informed & Heuristic Search (Greedy Best-First, A* Search, IDA*, Hill Climbing)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Uninformed & Informed Search Algorithms ($A^*$, IDA*, Hill Climbing). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Informed & Heuristic Search (Greedy Best-First, A* Search, IDA*, Hill Climbing)",
-      "text": "State and prove the classical theorems and stability criteria associated with Uninformed & Informed Search Algorithms ($A^*$, IDA*, Hill Climbing). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Adversarial Search & Game Theory (Minimax Algorithm, Alpha-Beta Pruning)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Adversarial Search & Game Playing (Minimax & Alpha-Beta Pruning). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Adversarial Search & Game Theory (Minimax Algorithm, Alpha-Beta Pruning)",
-      "text": "State and prove the classical theorems and stability criteria associated with Adversarial Search & Game Playing (Minimax & Alpha-Beta Pruning). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Knowledge Representation & Reasoning (First-Order Logic, Inference, Resolution)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Knowledge Representation, First-Order Logic & Inferences. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Knowledge Representation & Reasoning (First-Order Logic, Inference, Resolution)",
-      "text": "State and prove the classical theorems and stability criteria associated with Knowledge Representation, First-Order Logic & Inferences. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Machine Learning, Neural Networks & Natural Language Processing",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Machine Learning, Neural Networks & Natural Language Processing. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Machine Learning, Neural Networks & Natural Language Processing",
-      "text": "State and prove the classical theorems and stability criteria associated with Machine Learning, Neural Networks & Natural Language Processing. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Foundations of AI, Intelligent Agents & Environment Types",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in AI Foundations, Rational Agents & Problem Formulation.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Foundations of AI, Intelligent Agents & Environment Types",
-      "text": "Write short technical notes on: (a) Key design parameters in AI Foundations, Rational Agents & Problem Formulation, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Informed & Heuristic Search (Greedy Best-First, A* Search, IDA*, Hill Climbing)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Uninformed & Informed Search Algorithms ($A^*$, IDA*, Hill Climbing).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Informed & Heuristic Search (Greedy Best-First, A* Search, IDA*, Hill Climbing)",
-      "text": "Write short technical notes on: (a) Key design parameters in Uninformed & Informed Search Algorithms ($A^*$, IDA*, Hill Climbing), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 4: Adversarial Search & Game Theory (Minimax Algorithm, Alpha-Beta Pruning)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Adversarial Search & Game Playing (Minimax & Alpha-Beta Pruning).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 4: Adversarial Search & Game Theory (Minimax Algorithm, Alpha-Beta Pruning)",
-      "text": "Write short technical notes on: (a) Key design parameters in Adversarial Search & Game Playing (Minimax & Alpha-Beta Pruning), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Knowledge Representation & Reasoning (First-Order Logic, Inference, Resolution)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Knowledge Representation, First-Order Logic & Inferences.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Knowledge Representation & Reasoning (First-Order Logic, Inference, Resolution)",
-      "text": "Write short technical notes on: (a) Key design parameters in Knowledge Representation, First-Order Logic & Inferences, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Machine Learning, Neural Networks & Natural Language Processing",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Machine Learning, Neural Networks & Natural Language Processing.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Machine Learning, Neural Networks & Natural Language Processing",
-      "text": "Write short technical notes on: (a) Key design parameters in Machine Learning, Neural Networks & Natural Language Processing, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
     }
   ]
 }

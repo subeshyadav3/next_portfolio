@@ -2,13 +2,13 @@
   "subject": "Computer Networks",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Introduction to Computer Networks and Layered Reference Models (OSI, TCP/IP)",
+    "Chapter 1: Introduction to Computer Networks and Layered Reference Models",
     "Chapter 2: Physical Layer and Data Transmission Media",
-    "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control (CRC)",
-    "Chapter 4: Medium Access Control (MAC) Sublayer and IEEE Ethernet/Wi-Fi Standards",
-    "Chapter 5: Network Layer, IP Addressing (IPv4/IPv6, Subnetting, CIDR) and Routing Protocols",
-    "Chapter 6: Transport Layer Protocols (TCP 3-Way Handshake, UDP, Congestion Control)",
-    "Chapter 7: Application Layer Protocols (DNS, HTTP, SMTP, FTP, DHCP) and Network Security"
+    "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
+    "Chapter 4: Medium Access Control Sublayer and IEEE Ethernet/Wi-Fi Standards",
+    "Chapter 5: Network Layer, IP Addressing and Routing Protocols",
+    "Chapter 6: Transport Layer Protocols",
+    "Chapter 7: Application Layer Protocols and Network Security"
   ],
   "questions": [
     {
@@ -38,7 +38,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control (CRC)",
+      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
       "text": "Explain Framing techniques: (a) Character Count, (b) Byte Stuffing (Flag byte with ESC), and (c) Bit Stuffing (Flag `01111110` with zero stuffing after five consecutive 1s). Stuff the payload `0111111011111001` using bit stuffing.",
       "marks": "3+3",
       "years": [
@@ -64,7 +64,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control (CRC)",
+      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
       "text": "Explain Sliding Window Flow Control protocols: (a) Stop-and-Wait ARQ, (b) Go-Back-N ARQ, and (c) Selective Repeat ARQ. Derive formulas for channel utilization and maximum sender window size for Go-Back-N ($N = 2^k - 1$) and Selective Repeat ($N = 2^{k-1}$).",
       "marks": "4+6",
       "years": [
@@ -77,7 +77,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Medium Access Control (MAC) Sublayer and IEEE Ethernet/Wi-Fi Standards",
+      "chapter": "Chapter 4: Medium Access Control Sublayer and IEEE Ethernet/Wi-Fi Standards",
       "text": "Explain Pure ALOHA vs. Slotted ALOHA random access protocols. Derive the throughput equations $S = G e^{-2G}$ for Pure ALOHA ($S_{max} = \\frac{1}{2e} \\approx 18.4\\%$) and $S = G e^{-G}$ for Slotted ALOHA ($S_{max} = \\frac{1}{e} \\approx 36.8\\%$).",
       "marks": "4+4",
       "years": [
@@ -90,7 +90,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Medium Access Control (MAC) Sublayer and IEEE Ethernet/Wi-Fi Standards",
+      "chapter": "Chapter 4: Medium Access Control Sublayer and IEEE Ethernet/Wi-Fi Standards",
       "text": "Explain CSMA Protocols (1-persistent, Non-persistent, $p$-persistent CSMA). Explain CSMA/CD in Ethernet and CSMA/CA with RTS/CTS handshake in IEEE 802.11 Wireless LANs (Solving Hidden Terminal and Exposed Terminal problems).",
       "marks": "4+4",
       "years": [
@@ -103,7 +103,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Medium Access Control (MAC) Sublayer and IEEE Ethernet/Wi-Fi Standards",
+      "chapter": "Chapter 4: Medium Access Control Sublayer and IEEE Ethernet/Wi-Fi Standards",
       "text": "In a $10\\,\\text{Mbps}$ CSMA/CD standard Ethernet network with cable length $2.5\\,\\text{km}$ and signal propagation speed $2 \\times 10^8\\,\\text{m/s}$, derive the minimum frame size requirement: $L_{min} = 2 \\times R \\times T_p = 64\\,\\text{bytes}$. Explain Binary Exponential Backoff algorithm.",
       "marks": "3+5",
       "years": [
@@ -116,7 +116,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 5: Network Layer, IP Addressing (IPv4/IPv6, Subnetting, CIDR) and Routing Protocols",
+      "chapter": "Chapter 5: Network Layer, IP Addressing and Routing Protocols",
       "text": "An organization is assigned the Class C network block $192.168.10.0/24$. Design a Variable Length Subnet Mask (VLSM) scheme to create 4 subnets: Subnet A with 60 hosts, Subnet B with 28 hosts, Subnet C with 12 hosts, and Subnet D with 2 hosts. Specify subnet mask (CIDR), network address, usable IP range, and broadcast address for each subnet.",
       "marks": "10",
       "years": [
@@ -129,7 +129,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 5: Network Layer, IP Addressing (IPv4/IPv6, Subnetting, CIDR) and Routing Protocols",
+      "chapter": "Chapter 5: Network Layer, IP Addressing and Routing Protocols",
       "text": "Explain Distance Vector Routing based on Bellman-Ford algorithm. What is the Count-to-Infinity problem and how is it mitigated using Split Horizon and Poison Reverse? Trace distance vector table updates for a 4-node network when a link fails.",
       "marks": "4+6",
       "years": [
@@ -142,7 +142,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control (CRC)",
+      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
       "text": "Explain Link State Routing based on Dijkstra's shortest path algorithm. Describe Link State Advertisements (LSA) and flooding in Open Shortest Path First (OSPF) routing protocol. Compare OSPF vs RIP vs BGP.",
       "marks": "4+4",
       "years": [
@@ -155,7 +155,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control (CRC)",
+      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
       "text": "Explain the working of: (a) Address Resolution Protocol (ARP) and Inverse ARP, (b) Dynamic Host Configuration Protocol (DHCP - DORA process), (c) Network Address Translation (NAT/PAT), and (d) Internet Control Message Protocol (ICMP ping & traceroute).",
       "marks": "8",
       "years": [
@@ -168,7 +168,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Transport Layer Protocols (TCP 3-Way Handshake, UDP, Congestion Control)",
+      "chapter": "Chapter 6: Transport Layer Protocols",
       "text": "Explain TCP 3-Way Handshake connection establishment (SYN, SYN-ACK, ACK) and 4-way connection teardown (FIN, ACK, FIN, ACK) with sequence numbers and timing diagrams. Differentiate between TCP and UDP headers.",
       "marks": "4+4",
       "years": [
@@ -181,7 +181,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control (CRC)",
+      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
       "text": "Explain TCP Congestion Control mechanisms in detail: Slow Start (Exponential increase), Congestion Avoidance (Additive Increase), Fast Retransmit (Triple duplicate ACKs), and Fast Recovery (Multiplicative Decrease - AIMD). Draw the Congestion Window ($cwnd$) growth curve.",
       "marks": "4+4",
       "years": [
@@ -194,7 +194,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 7: Application Layer Protocols (DNS, HTTP, SMTP, FTP, DHCP) and Network Security",
+      "chapter": "Chapter 7: Application Layer Protocols and Network Security",
       "text": "Explain Domain Name System (DNS) architecture (Hierarchical domain tree, Root servers, TLD servers, Authoritative servers, Recursive vs Iterative resolution, and DNS caching). Explain HTTP/1.1, HTTP/2 (Multiplexing, header compression), and HTTP/3 (QUIC over UDP).",
       "marks": "4+4",
       "years": [
@@ -207,7 +207,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Introduction to Computer Networks and Layered Reference Models (OSI, TCP/IP)",
+      "chapter": "Chapter 1: Introduction to Computer Networks and Layered Reference Models",
       "text": "Explain RSA Public Key Cryptography. In an RSA cryptosystem with prime numbers $p = 7, q = 11$, and public encryption exponent $e = 13$: (a) Calculate modulus $n = pq$ and Euler's totient $\\phi(n) = (p-1)(q-1)$, (b) Determine private decryption key $d$ using Extended Euclidean algorithm, (c) Encrypt plaintext message $M = 9$, and (d) Decrypt ciphertext $C$ back to $M$.",
       "marks": "4+6",
       "years": [
@@ -220,7 +220,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 7: Application Layer Protocols (DNS, HTTP, SMTP, FTP, DHCP) and Network Security",
+      "chapter": "Chapter 7: Application Layer Protocols and Network Security",
       "text": "Explain Digital Signatures and Public Key Certificates (X.509 standard). Explain SSL/TLS protocol architecture and the secure HTTPS connection establishment.",
       "marks": "6",
       "years": [
@@ -245,7 +245,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control (CRC)",
+      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
       "text": "Explain Hamming Code for single error correction and double error detection. Generate the 7-bit Hamming code for data word $1011$ with even parity. Correct the received corrupted codeword $1001011$.",
       "marks": "6",
       "years": [
@@ -269,7 +269,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Introduction to Computer Networks and Layered Reference Models (OSI, TCP/IP)",
+      "chapter": "Chapter 1: Introduction to Computer Networks and Layered Reference Models",
       "text": "Compare IPv4 Header vs IPv6 Header. Explain IPv6 address representations, Neighbor Discovery Protocol (NDP), and IPv4-to-IPv6 transition strategies (Dual-Stack, Tunneling, and NAT64).",
       "marks": "6",
       "years": [
@@ -281,7 +281,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 7: Application Layer Protocols (DNS, HTTP, SMTP, FTP, DHCP) and Network Security",
+      "chapter": "Chapter 7: Application Layer Protocols and Network Security",
       "text": "Explain Email Protocols: Simple Mail Transfer Protocol (SMTP), Post Office Protocol (POP3), and Internet Message Access Protocol (IMAP). Explain MIME (Multipurpose Internet Mail Extensions).",
       "marks": "6",
       "years": [
@@ -291,366 +291,6 @@
         "2078"
       ],
       "frequency": 4
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Computer Networks and Layered Reference Models (OSI, TCP/IP)",
-      "text": "A practical engineering system operating under Network Reference Models (OSI & TCP/IP) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control (CRC)",
-      "text": "A practical engineering system operating under Data Link Layer, Framing, Error Control & Flow Control is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 4: Medium Access Control (MAC) Sublayer and IEEE Ethernet/Wi-Fi Standards",
-      "text": "A practical engineering system operating under Medium Access Control Sublayer & IEEE 802 Standards is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 5: Network Layer, IP Addressing (IPv4/IPv6, Subnetting, CIDR) and Routing Protocols",
-      "text": "A practical engineering system operating under Network Layer, IP Addressing, Subnetting & Routing is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 7: Application Layer Protocols (DNS, HTTP, SMTP, FTP, DHCP) and Network Security",
-      "text": "A practical engineering system operating under Transport & Application Layers, TCP Protocols & Security is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Computer Networks and Layered Reference Models (OSI, TCP/IP)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Network Reference Models (OSI & TCP/IP). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Computer Networks and Layered Reference Models (OSI, TCP/IP)",
-      "text": "Solve the standard numerical problem for Network Reference Models (OSI & TCP/IP) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control (CRC)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Data Link Layer, Framing, Error Control & Flow Control. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control (CRC)",
-      "text": "Solve the standard numerical problem for Data Link Layer, Framing, Error Control & Flow Control using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Medium Access Control (MAC) Sublayer and IEEE Ethernet/Wi-Fi Standards",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Medium Access Control Sublayer & IEEE 802 Standards. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Medium Access Control (MAC) Sublayer and IEEE Ethernet/Wi-Fi Standards",
-      "text": "Solve the standard numerical problem for Medium Access Control Sublayer & IEEE 802 Standards using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Network Layer, IP Addressing (IPv4/IPv6, Subnetting, CIDR) and Routing Protocols",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Network Layer, IP Addressing, Subnetting & Routing. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Network Layer, IP Addressing (IPv4/IPv6, Subnetting, CIDR) and Routing Protocols",
-      "text": "Solve the standard numerical problem for Network Layer, IP Addressing, Subnetting & Routing using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 7: Application Layer Protocols (DNS, HTTP, SMTP, FTP, DHCP) and Network Security",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Transport & Application Layers, TCP Protocols & Security. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 7: Application Layer Protocols (DNS, HTTP, SMTP, FTP, DHCP) and Network Security",
-      "text": "Solve the standard numerical problem for Transport & Application Layers, TCP Protocols & Security using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Computer Networks and Layered Reference Models (OSI, TCP/IP)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Network Reference Models (OSI & TCP/IP). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Computer Networks and Layered Reference Models (OSI, TCP/IP)",
-      "text": "State and prove the classical theorems and stability criteria associated with Network Reference Models (OSI & TCP/IP). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control (CRC)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Data Link Layer, Framing, Error Control & Flow Control. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control (CRC)",
-      "text": "State and prove the classical theorems and stability criteria associated with Data Link Layer, Framing, Error Control & Flow Control. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Medium Access Control (MAC) Sublayer and IEEE Ethernet/Wi-Fi Standards",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Medium Access Control Sublayer & IEEE 802 Standards. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Medium Access Control (MAC) Sublayer and IEEE Ethernet/Wi-Fi Standards",
-      "text": "State and prove the classical theorems and stability criteria associated with Medium Access Control Sublayer & IEEE 802 Standards. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Network Layer, IP Addressing (IPv4/IPv6, Subnetting, CIDR) and Routing Protocols",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Network Layer, IP Addressing, Subnetting & Routing. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Network Layer, IP Addressing (IPv4/IPv6, Subnetting, CIDR) and Routing Protocols",
-      "text": "State and prove the classical theorems and stability criteria associated with Network Layer, IP Addressing, Subnetting & Routing. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 7: Application Layer Protocols (DNS, HTTP, SMTP, FTP, DHCP) and Network Security",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Transport & Application Layers, TCP Protocols & Security. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 7: Application Layer Protocols (DNS, HTTP, SMTP, FTP, DHCP) and Network Security",
-      "text": "State and prove the classical theorems and stability criteria associated with Transport & Application Layers, TCP Protocols & Security. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Computer Networks and Layered Reference Models (OSI, TCP/IP)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Network Reference Models (OSI & TCP/IP).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Computer Networks and Layered Reference Models (OSI, TCP/IP)",
-      "text": "Write short technical notes on: (a) Key design parameters in Network Reference Models (OSI & TCP/IP), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control (CRC)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Data Link Layer, Framing, Error Control & Flow Control.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control (CRC)",
-      "text": "Write short technical notes on: (a) Key design parameters in Data Link Layer, Framing, Error Control & Flow Control, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 4: Medium Access Control (MAC) Sublayer and IEEE Ethernet/Wi-Fi Standards",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Medium Access Control Sublayer & IEEE 802 Standards.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 4: Medium Access Control (MAC) Sublayer and IEEE Ethernet/Wi-Fi Standards",
-      "text": "Write short technical notes on: (a) Key design parameters in Medium Access Control Sublayer & IEEE 802 Standards, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Network Layer, IP Addressing (IPv4/IPv6, Subnetting, CIDR) and Routing Protocols",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Network Layer, IP Addressing, Subnetting & Routing.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Network Layer, IP Addressing (IPv4/IPv6, Subnetting, CIDR) and Routing Protocols",
-      "text": "Write short technical notes on: (a) Key design parameters in Network Layer, IP Addressing, Subnetting & Routing, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 7: Application Layer Protocols (DNS, HTTP, SMTP, FTP, DHCP) and Network Security",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Transport & Application Layers, TCP Protocols & Security.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 7: Application Layer Protocols (DNS, HTTP, SMTP, FTP, DHCP) and Network Security",
-      "text": "Write short technical notes on: (a) Key design parameters in Transport & Application Layers, TCP Protocols & Security, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
     }
   ]
 }

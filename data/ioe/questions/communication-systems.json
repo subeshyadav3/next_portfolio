@@ -3,15 +3,12 @@
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
     "Chapter 1: Introduction to Communication Systems & Signal Transmission",
-    "Chapter 2: Amplitude Modulation & Demodulation (DSB, SSB, VSB)",
-    "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
-    "Chapter 4: Radio Transmitters & Superheterodyne Receivers",
-    "Chapter 5: Noise in Analog Communication Systems & SNR Analysis",
-    "Chapter 6: Pulse Modulation Techniques (PAM, PWM, PPM, PCM, Delta Modulation)"
+    "Chapter 3: Angle Modulation",
+    "Chapter 5: Noise in Analog Communication Systems & SNR Analysis"
   ],
   "questions": [
     {
-      "chapter": "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
+      "chapter": "Chapter 3: Angle Modulation",
       "text": "Derive the mathematical expression for Amplitude Modulated (DSB-FC) wave: $s(t) = A_c [1 + m(t)] \\cos(2\\pi f_c t)$. Derive the total transmitted power $P_t = P_c \\left(1 + \\frac{\\mu^2}{2}\\right)$ and modulation efficiency $\\eta = \\frac{\\mu^2}{2 + \\mu^2}$. Calculate total power for $100\\%$ modulation ($\\mu = 1$).",
       "marks": "3+5",
       "years": [
@@ -24,7 +21,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
+      "chapter": "Chapter 3: Angle Modulation",
       "text": "Compare DSB-SC, SSB-SC, and VSB modulation in terms of bandwidth, transmission power efficiency, and demodulator complexity. Explain the generation of SSB-SC using Phase Discrimination (Hartley method) and Frequency Discrimination (Filter method).",
       "marks": "4+4",
       "years": [
@@ -50,7 +47,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
+      "chapter": "Chapter 3: Angle Modulation",
       "text": "Explain Pulse Code Modulation (PCM): Sampling, Quantization, and Encoding. Derive the Signal-to-Quantization Noise Ratio for a full-scale sinusoidal signal: $(SNR)_{dB} = 6.02 n + 1.76\\,\\text{dB}$ where $n$ is the number of bits per sample. Explain Companding (A-law and $\\mu$-law companders).",
       "marks": "4+6",
       "years": [
@@ -63,7 +60,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
+      "chapter": "Chapter 3: Angle Modulation",
       "text": "Explain Delta Modulation (DM) and Adaptive Delta Modulation (ADM). Explain Slope Overload Distortion and Granular Noise in DM and derive the condition to prevent slope overload: $A_m \\le \\frac{\\Delta}{2\\pi f_m T_s}$.",
       "marks": "3+5",
       "years": [
@@ -76,7 +73,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
+      "chapter": "Chapter 3: Angle Modulation",
       "text": "Explain Quadrature Phase Shift Keying (QPSK) and Quadrature Amplitude Modulation (16-QAM, 32-QAM). Draw the QPSK transmitter block diagram, receiver block diagram, and signal space constellation diagram. Derive the bit error probability $P_b = Q\\left(\\sqrt{\\frac{2E_b}{N_0}}\\right)$.",
       "marks": "4+6",
       "years": [
@@ -131,333 +128,6 @@
       "chapter": "Chapter 5: Noise in Analog Communication Systems & SNR Analysis",
       "text": "Explain Time Division Multiplexing (TDM - E1 and T1 carrier framing) and Frequency Division Multiplexing (FDM). Explain Satellite Communication: Link Budget Analysis, Earth Station, Geostationary Orbit, Uplink/Downlink frequencies, and Transponder architecture.",
       "marks": "4+4",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
-      "text": "A practical engineering system operating under Amplitude Modulation & Angle Modulation (FM / PM) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
-      "text": "A practical engineering system operating under Digital Modulation (ASK, FSK, PSK, QAM) & PCM is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 5: Noise in Analog Communication Systems & SNR Analysis",
-      "text": "A practical engineering system operating under Information Theory, Channel Coding & Noise in Communication is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Communication Systems & Signal Transmission",
-      "text": "A practical engineering system operating under Multiplexing (TDM, FDM) & Satellite Communications is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Amplitude Modulation & Angle Modulation (FM / PM). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
-      "text": "Solve the standard numerical problem for Amplitude Modulation & Angle Modulation (FM / PM) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Digital Modulation (ASK, FSK, PSK, QAM) & PCM. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
-      "text": "Solve the standard numerical problem for Digital Modulation (ASK, FSK, PSK, QAM) & PCM using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Noise in Analog Communication Systems & SNR Analysis",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Information Theory, Channel Coding & Noise in Communication. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Noise in Analog Communication Systems & SNR Analysis",
-      "text": "Solve the standard numerical problem for Information Theory, Channel Coding & Noise in Communication using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Communication Systems & Signal Transmission",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Multiplexing (TDM, FDM) & Satellite Communications. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Communication Systems & Signal Transmission",
-      "text": "Solve the standard numerical problem for Multiplexing (TDM, FDM) & Satellite Communications using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Amplitude Modulation & Angle Modulation (FM / PM). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
-      "text": "State and prove the classical theorems and stability criteria associated with Amplitude Modulation & Angle Modulation (FM / PM). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Digital Modulation (ASK, FSK, PSK, QAM) & PCM. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
-      "text": "State and prove the classical theorems and stability criteria associated with Digital Modulation (ASK, FSK, PSK, QAM) & PCM. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Noise in Analog Communication Systems & SNR Analysis",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Information Theory, Channel Coding & Noise in Communication. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Noise in Analog Communication Systems & SNR Analysis",
-      "text": "State and prove the classical theorems and stability criteria associated with Information Theory, Channel Coding & Noise in Communication. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Communication Systems & Signal Transmission",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Multiplexing (TDM, FDM) & Satellite Communications. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Communication Systems & Signal Transmission",
-      "text": "State and prove the classical theorems and stability criteria associated with Multiplexing (TDM, FDM) & Satellite Communications. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Amplitude Modulation & Angle Modulation (FM / PM).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
-      "text": "Write short technical notes on: (a) Key design parameters in Amplitude Modulation & Angle Modulation (FM / PM), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Digital Modulation (ASK, FSK, PSK, QAM) & PCM.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Angle Modulation (Frequency Modulation: FM & Phase Modulation: PM)",
-      "text": "Write short technical notes on: (a) Key design parameters in Digital Modulation (ASK, FSK, PSK, QAM) & PCM, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Noise in Analog Communication Systems & SNR Analysis",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Information Theory, Channel Coding & Noise in Communication.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Noise in Analog Communication Systems & SNR Analysis",
-      "text": "Write short technical notes on: (a) Key design parameters in Information Theory, Channel Coding & Noise in Communication, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Communication Systems & Signal Transmission",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Multiplexing (TDM, FDM) & Satellite Communications.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Communication Systems & Signal Transmission",
-      "text": "Write short technical notes on: (a) Key design parameters in Multiplexing (TDM, FDM) & Satellite Communications, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Amplitude Modulation & Demodulation (DSB, SSB, VSB)",
-      "text": "Explain the fundamental theoretical concepts, governing principles, and standard analytical methods associated with Amplitude Modulation & Demodulation (DSB, SSB, VSB). Draw neat diagrams and derive key mathematical formulations where applicable.",
-      "marks": "6+4",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 4: Radio Transmitters & Superheterodyne Receivers",
-      "text": "Explain the fundamental theoretical concepts, governing principles, and standard analytical methods associated with Radio Transmitters & Superheterodyne Receivers. Draw neat diagrams and derive key mathematical formulations where applicable.",
-      "marks": "6+4",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 6: Pulse Modulation Techniques (PAM, PWM, PPM, PCM, Delta Modulation)",
-      "text": "Explain the fundamental theoretical concepts, governing principles, and standard analytical methods associated with Pulse Modulation Techniques (PAM, PWM, PPM, PCM, Delta Modulation). Draw neat diagrams and derive key mathematical formulations where applicable.",
-      "marks": "6+4",
       "years": [
         "2083",
         "2082",

@@ -5,11 +5,10 @@
     "Chapter 1: Introduction to Object-Oriented Programming and Principles",
     "Chapter 2: Classes, Objects, Constructors and Destructors",
     "Chapter 3: Operator Overloading and User-Defined Type Conversions",
-    "Chapter 4: Inheritance (Single, Multiple, Hierarchical, Multilevel)",
+    "Chapter 4: Inheritance",
     "Chapter 5: Virtual Functions, Abstract Classes and Runtime Polymorphism",
-    "Chapter 6: Templates and Generic Programming (Function and Class Templates)",
-    "Chapter 7: Exception Handling (try, catch, throw)",
-    "Chapter 8: Streams and File Input/Output in C++"
+    "Chapter 6: Templates and Generic Programming",
+    "Chapter 7: Exception Handling"
   ],
   "questions": [
     {
@@ -39,7 +38,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Templates and Generic Programming (Function and Class Templates)",
+      "chapter": "Chapter 6: Templates and Generic Programming",
       "text": "What is a `friend` function and `friend` class? Why does a friend function violate data encapsulation? Write a C++ program with two classes `ClassA` and `ClassB` to find the maximum of two private data members using a common friend function.",
       "marks": "3+5",
       "years": [
@@ -65,7 +64,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Templates and Generic Programming (Function and Class Templates)",
+      "chapter": "Chapter 6: Templates and Generic Programming",
       "text": "Overload the stream insertion `<<` and stream extraction `>>` operators for a custom `Matrix` / `Time` class $(hours, minutes, seconds)$ using friend functions.",
       "marks": "8",
       "years": [
@@ -91,7 +90,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Inheritance (Single, Multiple, Hierarchical, Multilevel)",
+      "chapter": "Chapter 4: Inheritance",
       "text": "Explain types of Inheritance: Single, Multiple, Multilevel, Hierarchical, and Hybrid inheritance. Explain the Diamond Problem in Hybrid Inheritance (Ambiguity). How does `virtual` base class resolve the diamond problem in C++?",
       "marks": "4+6",
       "years": [
@@ -130,7 +129,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Templates and Generic Programming (Function and Class Templates)",
+      "chapter": "Chapter 6: Templates and Generic Programming",
       "text": "Explain Function Templates and Class Templates with non-type parameters. Write a generic C++ Class Template for a `Stack<T>` data structure supporting `push()`, `pop()`, `top()`, and `isEmpty()` operations for any data type.",
       "marks": "3+7",
       "years": [
@@ -143,7 +142,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 7: Exception Handling (try, catch, throw)",
+      "chapter": "Chapter 7: Exception Handling",
       "text": "Explain Exception Handling in C++: `try`, `catch`, and `throw` blocks. Explain Multiple `catch` blocks and Catch-All handler (`catch(...)`). Write a program to handle Divide-by-Zero and Array-Index-Out-of-Bounds exceptions using custom exception classes.",
       "marks": "4+6",
       "years": [
@@ -156,7 +155,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Templates and Generic Programming (Function and Class Templates)",
+      "chapter": "Chapter 6: Templates and Generic Programming",
       "text": "Explain C++ Stream Class Hierarchy (`ios`, `istream`, `ostream`, `iostream`, `ifstream`, `ofstream`, `fstream`). Explain file opening modes (`ios::in`, `ios::out`, `ios::app`, `ios::binary`, `ios::trunc`) and file pointers manipulation using `seekg()`, `seekp()`, `tellg()`, and `tellp()`.",
       "marks": "4+4",
       "years": [
@@ -219,7 +218,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 4: Inheritance (Single, Multiple, Hierarchical, Multilevel)",
+      "chapter": "Chapter 4: Inheritance",
       "text": "Explain the order of execution of Constructors and Destructors in Multiple and Multilevel inheritance when parameterized constructors are present.",
       "marks": "6",
       "years": [
@@ -231,69 +230,9 @@
       "frequency": 4
     },
     {
-      "chapter": "Chapter 6: Templates and Generic Programming (Function and Class Templates)",
+      "chapter": "Chapter 6: Templates and Generic Programming",
       "text": "Write a generic function template to sort an array of any numeric type using the Bubble Sort algorithm. Explain Template Specialization for `char*` or specific data types.",
       "marks": "6",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 2: Classes, Objects, Constructors and Destructors",
-      "text": "A practical engineering system operating under OOP Principles, Classes, Objects & Constructors is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 3: Operator Overloading and User-Defined Type Conversions",
-      "text": "A practical engineering system operating under Operator Overloading & Data Type Conversions is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 5: Virtual Functions, Abstract Classes and Runtime Polymorphism",
-      "text": "A practical engineering system operating under Inheritance & Runtime Polymorphism (Virtual Functions) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 6: Templates and Generic Programming (Function and Class Templates)",
-      "text": "A practical engineering system operating under Templates, Generic Programming & Exception Handling is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 8: Streams and File Input/Output in C++",
-      "text": "A practical engineering system operating under Streams, File I/O & Standard Template Library (STL) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
       "years": [
         "2083",
         "2082",
@@ -314,7 +253,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Chapter 7: Exception Handling (try, catch, throw)",
+      "chapter": "Chapter 7: Exception Handling",
       "text": "Explain Exception Specification (`throw(type)` / `noexcept`) and Stack Unwinding during exception propagation in C++.",
       "marks": "5",
       "years": [
@@ -323,306 +262,6 @@
         "2079"
       ],
       "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Classes, Objects, Constructors and Destructors",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of OOP Principles, Classes, Objects & Constructors. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Classes, Objects, Constructors and Destructors",
-      "text": "Solve the standard numerical problem for OOP Principles, Classes, Objects & Constructors using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Operator Overloading and User-Defined Type Conversions",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Operator Overloading & Data Type Conversions. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Operator Overloading and User-Defined Type Conversions",
-      "text": "Solve the standard numerical problem for Operator Overloading & Data Type Conversions using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Virtual Functions, Abstract Classes and Runtime Polymorphism",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Inheritance & Runtime Polymorphism (Virtual Functions). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Virtual Functions, Abstract Classes and Runtime Polymorphism",
-      "text": "Solve the standard numerical problem for Inheritance & Runtime Polymorphism (Virtual Functions) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: Templates and Generic Programming (Function and Class Templates)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Templates, Generic Programming & Exception Handling. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: Templates and Generic Programming (Function and Class Templates)",
-      "text": "Solve the standard numerical problem for Templates, Generic Programming & Exception Handling using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 8: Streams and File Input/Output in C++",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Streams, File I/O & Standard Template Library (STL). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 8: Streams and File Input/Output in C++",
-      "text": "Solve the standard numerical problem for Streams, File I/O & Standard Template Library (STL) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Classes, Objects, Constructors and Destructors",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in OOP Principles, Classes, Objects & Constructors. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Classes, Objects, Constructors and Destructors",
-      "text": "State and prove the classical theorems and stability criteria associated with OOP Principles, Classes, Objects & Constructors. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Operator Overloading and User-Defined Type Conversions",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Operator Overloading & Data Type Conversions. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Operator Overloading and User-Defined Type Conversions",
-      "text": "State and prove the classical theorems and stability criteria associated with Operator Overloading & Data Type Conversions. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Virtual Functions, Abstract Classes and Runtime Polymorphism",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Inheritance & Runtime Polymorphism (Virtual Functions). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Virtual Functions, Abstract Classes and Runtime Polymorphism",
-      "text": "State and prove the classical theorems and stability criteria associated with Inheritance & Runtime Polymorphism (Virtual Functions). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Templates and Generic Programming (Function and Class Templates)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Templates, Generic Programming & Exception Handling. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Templates and Generic Programming (Function and Class Templates)",
-      "text": "State and prove the classical theorems and stability criteria associated with Templates, Generic Programming & Exception Handling. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 8: Streams and File Input/Output in C++",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Streams, File I/O & Standard Template Library (STL). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 8: Streams and File Input/Output in C++",
-      "text": "State and prove the classical theorems and stability criteria associated with Streams, File I/O & Standard Template Library (STL). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Classes, Objects, Constructors and Destructors",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in OOP Principles, Classes, Objects & Constructors.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Classes, Objects, Constructors and Destructors",
-      "text": "Write short technical notes on: (a) Key design parameters in OOP Principles, Classes, Objects & Constructors, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Operator Overloading and User-Defined Type Conversions",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Operator Overloading & Data Type Conversions.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Operator Overloading and User-Defined Type Conversions",
-      "text": "Write short technical notes on: (a) Key design parameters in Operator Overloading & Data Type Conversions, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Virtual Functions, Abstract Classes and Runtime Polymorphism",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Inheritance & Runtime Polymorphism (Virtual Functions).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Virtual Functions, Abstract Classes and Runtime Polymorphism",
-      "text": "Write short technical notes on: (a) Key design parameters in Inheritance & Runtime Polymorphism (Virtual Functions), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Templates and Generic Programming (Function and Class Templates)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Templates, Generic Programming & Exception Handling.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Templates and Generic Programming (Function and Class Templates)",
-      "text": "Write short technical notes on: (a) Key design parameters in Templates, Generic Programming & Exception Handling, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 8: Streams and File Input/Output in C++",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Streams, File I/O & Standard Template Library (STL).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 8: Streams and File Input/Output in C++",
-      "text": "Write short technical notes on: (a) Key design parameters in Streams, File I/O & Standard Template Library (STL), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
     }
   ]
 }

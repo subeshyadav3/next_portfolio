@@ -2,15 +2,14 @@
   "subject": "Theory of Computation",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata (DFA, NFA)",
+    "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata",
     "Chapter 2: Regular Expressions, Regular Languages & Pumping Lemma for Regular Sets",
-    "Chapter 3: Context-Free Grammars (CFG), Parse Trees, Ambiguity & Normal Forms (CNF, GNF)",
-    "Chapter 5: Turing Machines, Variants of Turing Machines & Church-Turing Thesis",
-    "Chapter 6: Decidability, Halting Problem, Reducibility & Computational Complexity (P vs NP)"
+    "Chapter 3: Context-Free Grammars, Parse Trees, Ambiguity & Normal Forms",
+    "Chapter 5: Turing Machines, Variants of Turing Machines & Church-Turing Thesis"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata (DFA, NFA)",
+      "chapter": "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata",
       "text": "Define Deterministic Finite Automata (DFA) as a 5-tuple $(Q, \\Sigma, \\delta, q_0, F)$. Design a minimal DFA that accepts the language $L = \\{w \\in \\{0, 1\\}^* \\mid w \\text{ contains '010' as a substring and does not end with '11'}\\}$.",
       "marks": "3+5",
       "years": [
@@ -23,7 +22,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata (DFA, NFA)",
+      "chapter": "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata",
       "text": "Explain the Subset Construction algorithm for converting a Non-Deterministic Finite Automata with $\\epsilon$-transitions ($\\epsilon$-NFA) into an equivalent DFA. Convert the given $\\epsilon$-NFA into DFA and minimize the DFA using the Table-Filling (Myhill-Nerode) algorithm.",
       "marks": "4+6",
       "years": [
@@ -62,7 +61,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Context-Free Grammars (CFG), Parse Trees, Ambiguity & Normal Forms (CNF, GNF)",
+      "chapter": "Chapter 3: Context-Free Grammars, Parse Trees, Ambiguity & Normal Forms",
       "text": "Define Context-Free Grammar (CFG) and ambiguity. Show that the grammar $S \\to aSb \\mid ab \\mid SS$ is ambiguous by constructing two distinct parse trees and leftmost derivations for the string $aabbab$. Convert the CFG into Chomsky Normal Form (CNF).",
       "marks": "3+5",
       "years": [
@@ -75,7 +74,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata (DFA, NFA)",
+      "chapter": "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata",
       "text": "Define Pushdown Automata (PDA) as a 7-tuple. Design a deterministic PDA (DPDA) that accepts the language $L = \\{w c w^R \\mid w \\in \\{a, b\\}^*\\}$ by empty stack and by final state. Show the step-by-step instantaneous description (ID) trace for the string $abacaba$.",
       "marks": "3+5",
       "years": [
@@ -149,366 +148,6 @@
         "2078"
       ],
       "frequency": 4
-    },
-    {
-      "chapter": "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata (DFA, NFA)",
-      "text": "A practical engineering system operating under Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 2: Regular Expressions, Regular Languages & Pumping Lemma for Regular Sets",
-      "text": "A practical engineering system operating under Regular Expressions & Pumping Lemma for Regular Languages is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 3: Context-Free Grammars (CFG), Parse Trees, Ambiguity & Normal Forms (CNF, GNF)",
-      "text": "A practical engineering system operating under Context-Free Grammars (CFG) & Pushdown Automata (PDA) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 5: Turing Machines, Variants of Turing Machines & Church-Turing Thesis",
-      "text": "A practical engineering system operating under Turing Machines (TM) & Computability Theory is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 6: Decidability, Halting Problem, Reducibility & Computational Complexity (P vs NP)",
-      "text": "A practical engineering system operating under Undecidability, Halting Problem & Chomsky Hierarchy is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata (DFA, NFA)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata (DFA, NFA)",
-      "text": "Solve the standard numerical problem for Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Regular Expressions, Regular Languages & Pumping Lemma for Regular Sets",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Regular Expressions & Pumping Lemma for Regular Languages. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Regular Expressions, Regular Languages & Pumping Lemma for Regular Sets",
-      "text": "Solve the standard numerical problem for Regular Expressions & Pumping Lemma for Regular Languages using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Context-Free Grammars (CFG), Parse Trees, Ambiguity & Normal Forms (CNF, GNF)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Context-Free Grammars (CFG) & Pushdown Automata (PDA). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Context-Free Grammars (CFG), Parse Trees, Ambiguity & Normal Forms (CNF, GNF)",
-      "text": "Solve the standard numerical problem for Context-Free Grammars (CFG) & Pushdown Automata (PDA) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Turing Machines, Variants of Turing Machines & Church-Turing Thesis",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Turing Machines (TM) & Computability Theory. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Turing Machines, Variants of Turing Machines & Church-Turing Thesis",
-      "text": "Solve the standard numerical problem for Turing Machines (TM) & Computability Theory using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: Decidability, Halting Problem, Reducibility & Computational Complexity (P vs NP)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Undecidability, Halting Problem & Chomsky Hierarchy. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: Decidability, Halting Problem, Reducibility & Computational Complexity (P vs NP)",
-      "text": "Solve the standard numerical problem for Undecidability, Halting Problem & Chomsky Hierarchy using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata (DFA, NFA)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata (DFA, NFA)",
-      "text": "State and prove the classical theorems and stability criteria associated with Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Regular Expressions, Regular Languages & Pumping Lemma for Regular Sets",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Regular Expressions & Pumping Lemma for Regular Languages. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Regular Expressions, Regular Languages & Pumping Lemma for Regular Sets",
-      "text": "State and prove the classical theorems and stability criteria associated with Regular Expressions & Pumping Lemma for Regular Languages. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Context-Free Grammars (CFG), Parse Trees, Ambiguity & Normal Forms (CNF, GNF)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Context-Free Grammars (CFG) & Pushdown Automata (PDA). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Context-Free Grammars (CFG), Parse Trees, Ambiguity & Normal Forms (CNF, GNF)",
-      "text": "State and prove the classical theorems and stability criteria associated with Context-Free Grammars (CFG) & Pushdown Automata (PDA). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Turing Machines, Variants of Turing Machines & Church-Turing Thesis",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Turing Machines (TM) & Computability Theory. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Turing Machines, Variants of Turing Machines & Church-Turing Thesis",
-      "text": "State and prove the classical theorems and stability criteria associated with Turing Machines (TM) & Computability Theory. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Decidability, Halting Problem, Reducibility & Computational Complexity (P vs NP)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Undecidability, Halting Problem & Chomsky Hierarchy. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Decidability, Halting Problem, Reducibility & Computational Complexity (P vs NP)",
-      "text": "State and prove the classical theorems and stability criteria associated with Undecidability, Halting Problem & Chomsky Hierarchy. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata (DFA, NFA)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata (DFA, NFA)",
-      "text": "Write short technical notes on: (a) Key design parameters in Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Regular Expressions, Regular Languages & Pumping Lemma for Regular Sets",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Regular Expressions & Pumping Lemma for Regular Languages.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Regular Expressions, Regular Languages & Pumping Lemma for Regular Sets",
-      "text": "Write short technical notes on: (a) Key design parameters in Regular Expressions & Pumping Lemma for Regular Languages, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Context-Free Grammars (CFG), Parse Trees, Ambiguity & Normal Forms (CNF, GNF)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Context-Free Grammars (CFG) & Pushdown Automata (PDA).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Context-Free Grammars (CFG), Parse Trees, Ambiguity & Normal Forms (CNF, GNF)",
-      "text": "Write short technical notes on: (a) Key design parameters in Context-Free Grammars (CFG) & Pushdown Automata (PDA), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Turing Machines, Variants of Turing Machines & Church-Turing Thesis",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Turing Machines (TM) & Computability Theory.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Turing Machines, Variants of Turing Machines & Church-Turing Thesis",
-      "text": "Write short technical notes on: (a) Key design parameters in Turing Machines (TM) & Computability Theory, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Decidability, Halting Problem, Reducibility & Computational Complexity (P vs NP)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Undecidability, Halting Problem & Chomsky Hierarchy.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Decidability, Halting Problem, Reducibility & Computational Complexity (P vs NP)",
-      "text": "Write short technical notes on: (a) Key design parameters in Undecidability, Halting Problem & Chomsky Hierarchy, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
     }
   ]
 }

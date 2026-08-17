@@ -3,11 +3,10 @@
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
     "Chapter 1: Introduction to Robotics, Robot Anatomy, Workspace & Classification",
-    "Chapter 2: Spatial Transformations & Homogeneous Transformation Matrices",
-    "Chapter 3: Direct/Forward Kinematics (Denavit-Hartenberg: D-H Parameters)",
+    "Chapter 3: Direct/Forward Kinematics",
     "Chapter 4: Inverse Kinematics & Analytical/Geometric Solutions",
     "Chapter 5: Differential Motion, Manipulator Jacobian, Singularities & Statics",
-    "Chapter 6: Robot Dynamics (Euler-Lagrange Formulation) & Trajectory Planning",
+    "Chapter 6: Robot Dynamics & Trajectory Planning",
     "Chapter 7: Robot Actuators, Sensors, Vision Systems & Control Schemes"
   ],
   "questions": [
@@ -25,7 +24,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Direct/Forward Kinematics (Denavit-Hartenberg: D-H Parameters)",
+      "chapter": "Chapter 3: Direct/Forward Kinematics",
       "text": "State the Denavit-Hartenberg (D-H) convention rules. Derive the generic D-H Link Transformation Matrix $A_{i-1}^i = \\text{Rot}(z, \\theta_i) \\text{Trans}(z, d_i) \\text{Trans}(x, a_i) \\text{Rot}(x, \\alpha_i)$. Establish the D-H parameter table and determine the Forward Kinematic Transformation matrix for a 3-DoF Planar Revolute Robotic Arm (RRR).",
       "marks": "4+6",
       "years": [
@@ -64,7 +63,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Robot Dynamics (Euler-Lagrange Formulation) & Trajectory Planning",
+      "chapter": "Chapter 6: Robot Dynamics & Trajectory Planning",
       "text": "Derive the equations of motion for a 2-DoF planar robot manipulator using the Euler-Lagrange Formulation: $\\frac{d}{dt}\\left(\\frac{\\partial L}{\\partial \\dot{q}_i}\\right) - \\frac{\\partial L}{\\partial q_i} = \\tau_i$ where $L = K - P$. Obtain the mass-inertia matrix $\\mathbf{M}(\\mathbf{q})$, Coriolis/centrifugal matrix $\\mathbf{C}(\\mathbf{q}, \\dot{\\mathbf{q}})$, and gravity vector $\\mathbf{G}(\\mathbf{q})$.",
       "marks": "10",
       "years": [
@@ -77,7 +76,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Robot Dynamics (Euler-Lagrange Formulation) & Trajectory Planning",
+      "chapter": "Chapter 6: Robot Dynamics & Trajectory Planning",
       "text": "Explain Trajectory Planning in joint space: (a) Cubic Polynomial trajectory with initial and final position and velocity constraints, and (b) Linear Segment with Parabolic Blends (LSPB).",
       "marks": "4+4",
       "years": [
@@ -100,366 +99,6 @@
         "2078"
       ],
       "frequency": 4
-    },
-    {
-      "chapter": "Chapter 2: Spatial Transformations & Homogeneous Transformation Matrices",
-      "text": "A practical engineering system operating under Robot Anatomy, Coordinate Frames & Homogeneous Transformations is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 3: Direct/Forward Kinematics (Denavit-Hartenberg: D-H Parameters)",
-      "text": "A practical engineering system operating under Forward & Inverse Kinematics (Denavit-Hartenberg / D-H Parameters) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 5: Differential Motion, Manipulator Jacobian, Singularities & Statics",
-      "text": "A practical engineering system operating under Robot Differential Motion, Jacobian & Singularity Analysis is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 6: Robot Dynamics (Euler-Lagrange Formulation) & Trajectory Planning",
-      "text": "A practical engineering system operating under Robot Dynamics (Euler-Lagrange & Newton-Euler Formulations) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 7: Robot Actuators, Sensors, Vision Systems & Control Schemes",
-      "text": "A practical engineering system operating under Trajectory Planning, Sensors, Actuators & Robot Control is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 2: Spatial Transformations & Homogeneous Transformation Matrices",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Robot Anatomy, Coordinate Frames & Homogeneous Transformations. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Spatial Transformations & Homogeneous Transformation Matrices",
-      "text": "Solve the standard numerical problem for Robot Anatomy, Coordinate Frames & Homogeneous Transformations using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Direct/Forward Kinematics (Denavit-Hartenberg: D-H Parameters)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Forward & Inverse Kinematics (Denavit-Hartenberg / D-H Parameters). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Direct/Forward Kinematics (Denavit-Hartenberg: D-H Parameters)",
-      "text": "Solve the standard numerical problem for Forward & Inverse Kinematics (Denavit-Hartenberg / D-H Parameters) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Differential Motion, Manipulator Jacobian, Singularities & Statics",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Robot Differential Motion, Jacobian & Singularity Analysis. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Differential Motion, Manipulator Jacobian, Singularities & Statics",
-      "text": "Solve the standard numerical problem for Robot Differential Motion, Jacobian & Singularity Analysis using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: Robot Dynamics (Euler-Lagrange Formulation) & Trajectory Planning",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Robot Dynamics (Euler-Lagrange & Newton-Euler Formulations). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: Robot Dynamics (Euler-Lagrange Formulation) & Trajectory Planning",
-      "text": "Solve the standard numerical problem for Robot Dynamics (Euler-Lagrange & Newton-Euler Formulations) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 7: Robot Actuators, Sensors, Vision Systems & Control Schemes",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Trajectory Planning, Sensors, Actuators & Robot Control. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 7: Robot Actuators, Sensors, Vision Systems & Control Schemes",
-      "text": "Solve the standard numerical problem for Trajectory Planning, Sensors, Actuators & Robot Control using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Spatial Transformations & Homogeneous Transformation Matrices",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Robot Anatomy, Coordinate Frames & Homogeneous Transformations. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Spatial Transformations & Homogeneous Transformation Matrices",
-      "text": "State and prove the classical theorems and stability criteria associated with Robot Anatomy, Coordinate Frames & Homogeneous Transformations. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Direct/Forward Kinematics (Denavit-Hartenberg: D-H Parameters)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Forward & Inverse Kinematics (Denavit-Hartenberg / D-H Parameters). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Direct/Forward Kinematics (Denavit-Hartenberg: D-H Parameters)",
-      "text": "State and prove the classical theorems and stability criteria associated with Forward & Inverse Kinematics (Denavit-Hartenberg / D-H Parameters). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Differential Motion, Manipulator Jacobian, Singularities & Statics",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Robot Differential Motion, Jacobian & Singularity Analysis. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Differential Motion, Manipulator Jacobian, Singularities & Statics",
-      "text": "State and prove the classical theorems and stability criteria associated with Robot Differential Motion, Jacobian & Singularity Analysis. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Robot Dynamics (Euler-Lagrange Formulation) & Trajectory Planning",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Robot Dynamics (Euler-Lagrange & Newton-Euler Formulations). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Robot Dynamics (Euler-Lagrange Formulation) & Trajectory Planning",
-      "text": "State and prove the classical theorems and stability criteria associated with Robot Dynamics (Euler-Lagrange & Newton-Euler Formulations). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 7: Robot Actuators, Sensors, Vision Systems & Control Schemes",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Trajectory Planning, Sensors, Actuators & Robot Control. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 7: Robot Actuators, Sensors, Vision Systems & Control Schemes",
-      "text": "State and prove the classical theorems and stability criteria associated with Trajectory Planning, Sensors, Actuators & Robot Control. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Spatial Transformations & Homogeneous Transformation Matrices",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Robot Anatomy, Coordinate Frames & Homogeneous Transformations.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Spatial Transformations & Homogeneous Transformation Matrices",
-      "text": "Write short technical notes on: (a) Key design parameters in Robot Anatomy, Coordinate Frames & Homogeneous Transformations, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Direct/Forward Kinematics (Denavit-Hartenberg: D-H Parameters)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Forward & Inverse Kinematics (Denavit-Hartenberg / D-H Parameters).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Direct/Forward Kinematics (Denavit-Hartenberg: D-H Parameters)",
-      "text": "Write short technical notes on: (a) Key design parameters in Forward & Inverse Kinematics (Denavit-Hartenberg / D-H Parameters), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Differential Motion, Manipulator Jacobian, Singularities & Statics",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Robot Differential Motion, Jacobian & Singularity Analysis.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Differential Motion, Manipulator Jacobian, Singularities & Statics",
-      "text": "Write short technical notes on: (a) Key design parameters in Robot Differential Motion, Jacobian & Singularity Analysis, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Robot Dynamics (Euler-Lagrange Formulation) & Trajectory Planning",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Robot Dynamics (Euler-Lagrange & Newton-Euler Formulations).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Robot Dynamics (Euler-Lagrange Formulation) & Trajectory Planning",
-      "text": "Write short technical notes on: (a) Key design parameters in Robot Dynamics (Euler-Lagrange & Newton-Euler Formulations), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 7: Robot Actuators, Sensors, Vision Systems & Control Schemes",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Trajectory Planning, Sensors, Actuators & Robot Control.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 7: Robot Actuators, Sensors, Vision Systems & Control Schemes",
-      "text": "Write short technical notes on: (a) Key design parameters in Trajectory Planning, Sensors, Actuators & Robot Control, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
     }
   ]
 }

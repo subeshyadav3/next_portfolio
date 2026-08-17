@@ -1,16 +1,15 @@
 {
   "subject": "Control System",
   "chapters": [
-    "Chapter 1: Mathematical Modeling of Physical Systems & Differential Equations",
-    "Chapter 2: Block Diagram Algebra & Signal Flow Graphs (Mason Rule)",
-    "Chapter 3: Time-Domain Response Analysis (Transient & Steady-State)",
+    "Chapter 2: Block Diagram Algebra & Signal Flow Graphs",
+    "Chapter 3: Time-Domain Response Analysis",
     "Chapter 4: Stability Analysis & Routh-Hurwitz Criterion",
-    "Chapter 6: Frequency Response Analysis (Bode Plots, Nyquist Stability)",
+    "Chapter 6: Frequency Response Analysis",
     "Chapter 7: State Space Representation & Controller Design"
   ],
   "questions": [
     {
-      "chapter": "Chapter 2: Block Diagram Algebra & Signal Flow Graphs (Mason Rule)",
+      "chapter": "Chapter 2: Block Diagram Algebra & Signal Flow Graphs",
       "text": "Define Open-Loop and Closed-Loop control systems with block diagrams and practical examples. Explain Transfer Function and its properties. Derive the closed-loop transfer function $\\frac{C(s)}{R(s)} = \\frac{G(s)}{1 + G(s)H(s)}$.",
       "marks": "3+5",
       "years": [
@@ -23,7 +22,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 2: Block Diagram Algebra & Signal Flow Graphs (Mason Rule)",
+      "chapter": "Chapter 2: Block Diagram Algebra & Signal Flow Graphs",
       "text": "Explain Block Diagram Reduction Rules (Moving summing points and takeoff points). Reduce a given complex multi-loop block diagram to find its overall transfer function $\\frac{C(s)}{R(s)}$.",
       "marks": "8",
       "years": [
@@ -36,7 +35,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 2: Block Diagram Algebra & Signal Flow Graphs (Mason Rule)",
+      "chapter": "Chapter 2: Block Diagram Algebra & Signal Flow Graphs",
       "text": "State Mason's Gain Formula: $T = \\frac{\\sum P_k \\Delta_k}{\\Delta}$. Construct the Signal Flow Graph (SFG) for a given set of simultaneous differential/algebraic equations and calculate the overall transfer function.",
       "marks": "3+7",
       "years": [
@@ -49,7 +48,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Time-Domain Response Analysis (Transient & Steady-State)",
+      "chapter": "Chapter 3: Time-Domain Response Analysis",
       "text": "Derive the unit step response of a standard Second-Order Underdamped Control System ($0 < \\zeta < 1$): $c(t) = 1 - \\frac{e^{-\\zeta\\omega_n t}}{\\sqrt{1-\\zeta^2}}\\sin(\\omega_d t + \\theta)$. Define and derive formulas for: (a) Delay Time ($t_d$), (b) Rise Time ($t_r = \\frac{\\pi-\\theta}{\\omega_d}$), (c) Peak Time ($t_p = \\frac{\\pi}{\\omega_d}$), (d) Maximum Percentage Overshoot ($M_p = e^{-\\frac{\\pi\\zeta}{\\sqrt{1-\\zeta^2}}} \\times 100\\%$), and (e) Settling Time ($t_s = \\frac{4}{\\zeta\\omega_n}$ for $2\\%$ criterion).",
       "marks": "4+8",
       "years": [
@@ -62,7 +61,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Time-Domain Response Analysis (Transient & Steady-State)",
+      "chapter": "Chapter 3: Time-Domain Response Analysis",
       "text": "Define Steady-State Error ($e_{ss}$) and Static Error Constants: Positional Error Constant ($K_p = \\lim_{s\\to 0} G(s)H(s)$), Velocity Error Constant ($K_v = \\lim_{s\\to 0} s G(s)H(s)$), and Acceleration Error Constant ($K_a = \\lim_{s\\to 0} s^2 G(s)H(s)$). Construct the steady-state error table for Type 0, Type 1, and Type 2 systems subjected to unit step, ramp, and parabolic inputs.",
       "marks": "4+6",
       "years": [
@@ -101,7 +100,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Frequency Response Analysis (Bode Plots, Nyquist Stability)",
+      "chapter": "Chapter 6: Frequency Response Analysis",
       "text": "Define Gain Margin (GM) and Phase Margin (PM). Draw the asymptotic Bode Magnitude and Phase plots for the open-loop transfer function: $G(s) = \\frac{100(s+2)}{s(s+10)(s+50)}$. From the Bode plot, determine the Gain Crossover Frequency ($\\omega_{gc}$), Phase Crossover Frequency ($\\omega_{pc}$), Gain Margin, and Phase Margin.",
       "marks": "4+8",
       "years": [
@@ -140,7 +139,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Time-Domain Response Analysis (Transient & Steady-State)",
+      "chapter": "Chapter 3: Time-Domain Response Analysis",
       "text": "Define Controllability and Observability. State Kalman's Controllability Test (Rank of $\\mathbf{Q}_c = [\\mathbf{B}, \\mathbf{A}\\mathbf{B}, \\dots, \\mathbf{A}^{n-1}\\mathbf{B}]$) and Observability Test (Rank of $\\mathbf{Q}_o = [\\mathbf{C}^T, \\mathbf{A}^T\\mathbf{C}^T, \\dots, (\\mathbf{A}^T)^{n-1}\\mathbf{C}^T]$).",
       "marks": "3+5",
       "years": [
@@ -153,7 +152,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 3: Time-Domain Response Analysis (Transient & Steady-State)",
+      "chapter": "Chapter 3: Time-Domain Response Analysis",
       "text": "Compare Lead Compensator, Lag Compensator, and Lag-Lead Compensator in terms of frequency response, phase shift, bandwidth, and transient/steady-state performance. Explain PID Controller tuning using the Ziegler-Nichols method.",
       "marks": "4+4",
       "years": [
@@ -164,366 +163,6 @@
         "2078"
       ],
       "frequency": 5
-    },
-    {
-      "chapter": "Chapter 2: Block Diagram Algebra & Signal Flow Graphs (Mason Rule)",
-      "text": "A practical engineering system operating under System Modeling, Transfer Functions & Block Diagram Algebra is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 3: Time-Domain Response Analysis (Transient & Steady-State)",
-      "text": "A practical engineering system operating under Time Response Analysis (Transient & Steady-State) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 4: Stability Analysis & Routh-Hurwitz Criterion",
-      "text": "A practical engineering system operating under Stability Analysis (Routh-Hurwitz Criterion) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 6: Frequency Response Analysis (Bode Plots, Nyquist Stability)",
-      "text": "A practical engineering system operating under Root Locus Technique & Frequency Response (Bode & Nyquist) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 7: State Space Representation & Controller Design",
-      "text": "A practical engineering system operating under State-Space Analysis & Compensator Design (Lead, Lag, PID) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080",
-        "2078"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Chapter 1: Mathematical Modeling of Physical Systems & Differential Equations",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of System Modeling, Transfer Functions & Block Diagram Algebra. Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Block Diagram Algebra & Signal Flow Graphs (Mason Rule)",
-      "text": "Solve the standard numerical problem for System Modeling, Transfer Functions & Block Diagram Algebra using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Time-Domain Response Analysis (Transient & Steady-State)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Time Response Analysis (Transient & Steady-State). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Time-Domain Response Analysis (Transient & Steady-State)",
-      "text": "Solve the standard numerical problem for Time Response Analysis (Transient & Steady-State) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Stability Analysis & Routh-Hurwitz Criterion",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Stability Analysis (Routh-Hurwitz Criterion). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Stability Analysis & Routh-Hurwitz Criterion",
-      "text": "Solve the standard numerical problem for Stability Analysis (Routh-Hurwitz Criterion) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: Frequency Response Analysis (Bode Plots, Nyquist Stability)",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Root Locus Technique & Frequency Response (Bode & Nyquist). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: Frequency Response Analysis (Bode Plots, Nyquist Stability)",
-      "text": "Solve the standard numerical problem for Root Locus Technique & Frequency Response (Bode & Nyquist) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 7: State Space Representation & Controller Design",
-      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of State-Space Analysis & Compensator Design (Lead, Lag, PID). Derive the governing mathematical relations and discuss practical design constraints.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 7: State Space Representation & Controller Design",
-      "text": "Solve the standard numerical problem for State-Space Analysis & Compensator Design (Lead, Lag, PID) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Block Diagram Algebra & Signal Flow Graphs (Mason Rule)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in System Modeling, Transfer Functions & Block Diagram Algebra. What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Block Diagram Algebra & Signal Flow Graphs (Mason Rule)",
-      "text": "State and prove the classical theorems and stability criteria associated with System Modeling, Transfer Functions & Block Diagram Algebra. What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Time-Domain Response Analysis (Transient & Steady-State)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Time Response Analysis (Transient & Steady-State). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Time-Domain Response Analysis (Transient & Steady-State)",
-      "text": "State and prove the classical theorems and stability criteria associated with Time Response Analysis (Transient & Steady-State). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Stability Analysis & Routh-Hurwitz Criterion",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Stability Analysis (Routh-Hurwitz Criterion). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Stability Analysis & Routh-Hurwitz Criterion",
-      "text": "State and prove the classical theorems and stability criteria associated with Stability Analysis (Routh-Hurwitz Criterion). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Frequency Response Analysis (Bode Plots, Nyquist Stability)",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in Root Locus Technique & Frequency Response (Bode & Nyquist). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Frequency Response Analysis (Bode Plots, Nyquist Stability)",
-      "text": "State and prove the classical theorems and stability criteria associated with Root Locus Technique & Frequency Response (Bode & Nyquist). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 7: State Space Representation & Controller Design",
-      "text": "Differentiate between the various analytical methods and experimental techniques used in State-Space Analysis & Compensator Design (Lead, Lag, PID). What are the sources of error and how are boundary conditions satisfied?",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 7: State Space Representation & Controller Design",
-      "text": "State and prove the classical theorems and stability criteria associated with State-Space Analysis & Compensator Design (Lead, Lag, PID). What happens when non-ideal effects and higher-order terms are considered?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Block Diagram Algebra & Signal Flow Graphs (Mason Rule)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in System Modeling, Transfer Functions & Block Diagram Algebra.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Block Diagram Algebra & Signal Flow Graphs (Mason Rule)",
-      "text": "Write short technical notes on: (a) Key design parameters in System Modeling, Transfer Functions & Block Diagram Algebra, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Time-Domain Response Analysis (Transient & Steady-State)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Time Response Analysis (Transient & Steady-State).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Time-Domain Response Analysis (Transient & Steady-State)",
-      "text": "Write short technical notes on: (a) Key design parameters in Time Response Analysis (Transient & Steady-State), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 4: Stability Analysis & Routh-Hurwitz Criterion",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Stability Analysis (Routh-Hurwitz Criterion).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 4: Stability Analysis & Routh-Hurwitz Criterion",
-      "text": "Write short technical notes on: (a) Key design parameters in Stability Analysis (Routh-Hurwitz Criterion), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Frequency Response Analysis (Bode Plots, Nyquist Stability)",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Root Locus Technique & Frequency Response (Bode & Nyquist).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Frequency Response Analysis (Bode Plots, Nyquist Stability)",
-      "text": "Write short technical notes on: (a) Key design parameters in Root Locus Technique & Frequency Response (Bode & Nyquist), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 7: State Space Representation & Controller Design",
-      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in State-Space Analysis & Compensator Design (Lead, Lag, PID).",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 7: State Space Representation & Controller Design",
-      "text": "Write short technical notes on: (a) Key design parameters in State-Space Analysis & Compensator Design (Lead, Lag, PID), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
     }
   ]
 }
