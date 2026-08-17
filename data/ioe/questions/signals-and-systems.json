@@ -1,15 +1,16 @@
 {
   "subject": "Signals and Systems",
   "chapters": [
-    "Continuous & Discrete-Time Signals & Basic Operations",
-    "Linear Time-Invariant (LTI) Systems & Convolution Integral/Sum",
-    "Fourier Series & Continuous-Time Fourier Transform (CTFT)",
-    "Laplace Transform & System Transfer Functions",
-    "Z-Transform & Discrete-Time System Analysis"
+    "Chapter 1: Continuous & Discrete-Time Signals and Systems (Classification, Linearity, Time-Invariance, Causality, Stability)",
+    "Chapter 2: Linear Time-Invariant (LTI) Systems, Convolution Integral & Convolution Sum",
+    "Chapter 3: Continuous-Time Fourier Series (CTFS) & Continuous-Time Fourier Transform (CTFT)",
+    "Chapter 4: Discrete-Time Fourier Transform (DTFT) & Sampling Theorem (Nyquist Rate, Aliasing)",
+    "Chapter 5: Laplace Transform & Region of Convergence (ROC), Inverse Laplace & System Transfer Function",
+    "Chapter 6: Z-Transform, ROC Properties, Inverse Z-Transform & Discrete System Analysis"
   ],
   "questions": [
     {
-      "chapter": "Continuous & Discrete-Time Signals & Basic Operations",
+      "chapter": "Chapter 1: Continuous & Discrete-Time Signals and Systems (Classification, Linearity, Time-Invariance, Causality, Stability)",
       "text": "Classify Signals: Continuous-Time vs Discrete-Time, Periodic vs Aperiodic ($x(t+T) = x(t)$), Energy vs Power signals ($E = \\int_{-\\infty}^\\infty |x(t)|^2 dt, P = \\lim_{T\\to\\infty} \\frac{1}{T}\\int_{-T/2}^{T/2} |x(t)|^2 dt$), Even vs Odd signals ($x_e(t) = \\frac{x(t)+x(-t)}{2}, x_o(t) = \\frac{x(t)-x(-t)}{2}$), and Deterministic vs Random signals.",
       "marks": "4+4",
       "years": [
@@ -22,7 +23,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Continuous & Discrete-Time Signals & Basic Operations",
+      "chapter": "Chapter 1: Continuous & Discrete-Time Signals and Systems (Classification, Linearity, Time-Invariance, Causality, Stability)",
       "text": "Define elementary signals: Unit Step $u(t)$, Dirac Delta Function $\\delta(t)$ (and its sifting property $\\int_{-\\infty}^\\infty x(t)\\delta(t-t_0)dt = x(t_0)$), Unit Ramp $r(t)$, and Complex Exponential. Perform transformations: Time Shifting, Time Reversal, and Time Scaling on a given waveform $x(t)$ to plot $y(t) = x(2t - 3)$ and $z(t) = x(-t/2 + 1)$.",
       "marks": "4+6",
       "years": [
@@ -35,7 +36,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Linear Time-Invariant (LTI) Systems & Convolution Integral/Sum",
+      "chapter": "Chapter 1: Continuous & Discrete-Time Signals and Systems (Classification, Linearity, Time-Invariance, Causality, Stability)",
       "text": "Define System Properties: (a) Linearity (Superposition and Homogeneity), (b) Time-Invariance, (c) Causality, (d) Stability (BIBO Stability $\\int |h(t)|dt < \\infty$), (e) Memory / Static, and (f) Invertibility. Test whether $y(t) = t^2 x(t) + 3$ and $y[n] = x[2n]$ are linear, time-invariant, and causal.",
       "marks": "4+6",
       "years": [
@@ -48,7 +49,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Linear Time-Invariant (LTI) Systems & Convolution Integral/Sum",
+      "chapter": "Chapter 2: Linear Time-Invariant (LTI) Systems, Convolution Integral & Convolution Sum",
       "text": "Explain Convolution Integral ($y(t) = x(t) * h(t) = \\int_{-\\infty}^\\infty x(\\tau)h(t-\\tau)d\\tau$) and Discrete Convolution Sum ($y[n] = \\sum_{k=-\\infty}^\\infty x[k]h[n-k]$). Convolve two rectangular pulses $x(t) = u(t) - u(t-2)$ and $h(t) = u(t) - u(t-3)$ analytically and sketch the resulting trapezoidal output waveform.",
       "marks": "4+6",
       "years": [
@@ -61,7 +62,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Fourier Series & Continuous-Time Fourier Transform (CTFT)",
+      "chapter": "Chapter 3: Continuous-Time Fourier Series (CTFS) & Continuous-Time Fourier Transform (CTFT)",
       "text": "State Dirichlet's Conditions for Fourier Series convergence. Derive Exponential Fourier Series ($x(t) = \\sum_{k=-\\infty}^\\infty c_k e^{jk\\omega_0 t}$) and Trigonometric Fourier Series. Calculate the Fourier coefficients for a symmetric square wave and full-wave rectified sine wave.",
       "marks": "4+6",
       "years": [
@@ -74,7 +75,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Fourier Series & Continuous-Time Fourier Transform (CTFT)",
+      "chapter": "Chapter 3: Continuous-Time Fourier Series (CTFS) & Continuous-Time Fourier Transform (CTFT)",
       "text": "Define Continuous-Time Fourier Transform (CTFT) ($X(j\\omega) = \\int_{-\\infty}^\\infty x(t)e^{-j\\omega t}dt$) and Inverse CTFT. State and prove CTFT Properties: Linearity, Time Shifting ($x(t-t_0) \\leftrightarrow e^{-j\\omega t_0}X(j\\omega)$), Frequency Shifting (Modulation), Time Scaling, Differentiation in Time, Convolution Property ($x(t)*h(t) \\leftrightarrow X(j\\omega)H(j\\omega)$), and Parseval's Energy Theorem.",
       "marks": "4+6",
       "years": [
@@ -87,7 +88,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Fourier Series & Continuous-Time Fourier Transform (CTFT)",
+      "chapter": "Chapter 4: Discrete-Time Fourier Transform (DTFT) & Sampling Theorem (Nyquist Rate, Aliasing)",
       "text": "State the Nyquist-Shannon Sampling Theorem. Explain Aliasing effect and anti-aliasing filter. Find the minimum Nyquist Rate and Nyquist Interval for the signal $x(t) = 10\\cos(400\\pi t)\\text{sinc}(200\\pi t)$.",
       "marks": "3+5",
       "years": [
@@ -100,7 +101,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Laplace Transform & System Transfer Functions",
+      "chapter": "Chapter 5: Laplace Transform & Region of Convergence (ROC), Inverse Laplace & System Transfer Function",
       "text": "Define Bilateral (Two-Sided) and Unilateral (One-Sided) Laplace Transform ($X(s) = \\int_{0^-}^\\infty x(t)e^{-st}dt$). Explain the Region of Convergence (ROC) properties on the s-plane. Find the Laplace transform and ROC of: (a) $x(t) = e^{-at}u(t)$, and (b) $x(t) = -e^{-at}u(-t)$.",
       "marks": "3+5",
       "years": [
@@ -113,7 +114,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Laplace Transform & System Transfer Functions",
+      "chapter": "Chapter 5: Laplace Transform & Region of Convergence (ROC), Inverse Laplace & System Transfer Function",
       "text": "Solve the second-order LTI differential equation using Laplace Transform with initial conditions: $\\frac{d^2y}{dt^2} + 5\\frac{dy}{dt} + 6y(t) = 2x(t)$ with $y(0^-) = 1, y'(0^-) = 0$, and input $x(t) = u(t)$. Find Zero-Input Response (ZIR), Zero-State Response (ZSR), and Total Response.",
       "marks": "10",
       "years": [
@@ -126,7 +127,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Z-Transform & Discrete-Time System Analysis",
+      "chapter": "Chapter 5: Laplace Transform & Region of Convergence (ROC), Inverse Laplace & System Transfer Function",
       "text": "Define Z-Transform ($X(z) = \\sum_{n=-\\infty}^\\infty x[n] z^{-n}$) and Region of Convergence (ROC) on the z-plane. State ROC properties for finite, right-sided, left-sided, and two-sided sequences. Determine the Z-transform and ROC of $x[n] = a^n u[n] - b^n u[-n-1]$.",
       "marks": "3+5",
       "years": [
@@ -139,7 +140,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Z-Transform & Discrete-Time System Analysis",
+      "chapter": "Chapter 6: Z-Transform, ROC Properties, Inverse Z-Transform & Discrete System Analysis",
       "text": "Explain Inverse Z-Transform methods: Partial Fraction Expansion, Power Series (Long Division), and Contour Integration (Residue method). Find $x[n]$ for $X(z) = \\frac{1 - \\frac{1}{2}z^{-1}}{(1 - \\frac{1}{4}z^{-1})(1 - \\frac{1}{3}z^{-1})}$ for causal ROC $|z| > 1/3$.",
       "marks": "4+4",
       "years": [
@@ -152,7 +153,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Z-Transform & Discrete-Time System Analysis",
+      "chapter": "Chapter 1: Continuous & Discrete-Time Signals and Systems (Classification, Linearity, Time-Invariance, Causality, Stability)",
       "text": "Solve the discrete-time difference equation using Z-Transform: $y[n] - 0.5y[n-1] = x[n]$ with initial condition $y[-1] = 2$ and input $x[n] = (0.25)^n u[n]$.",
       "marks": "8",
       "years": [
@@ -164,7 +165,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Continuous & Discrete-Time Signals & Basic Operations",
+      "chapter": "Chapter 1: Continuous & Discrete-Time Signals and Systems (Classification, Linearity, Time-Invariance, Causality, Stability)",
       "text": "A practical engineering system operating under Continuous & Discrete-Time Signals & Basic Operations is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -176,7 +177,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Linear Time-Invariant (LTI) Systems & Convolution Integral/Sum",
+      "chapter": "Chapter 2: Linear Time-Invariant (LTI) Systems, Convolution Integral & Convolution Sum",
       "text": "A practical engineering system operating under Linear Time-Invariant (LTI) Systems & Convolution Integral/Sum is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -188,7 +189,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Fourier Series & Continuous-Time Fourier Transform (CTFT)",
+      "chapter": "Chapter 3: Continuous-Time Fourier Series (CTFS) & Continuous-Time Fourier Transform (CTFT)",
       "text": "A practical engineering system operating under Fourier Series & Continuous-Time Fourier Transform (CTFT) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -200,7 +201,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Laplace Transform & System Transfer Functions",
+      "chapter": "Chapter 5: Laplace Transform & Region of Convergence (ROC), Inverse Laplace & System Transfer Function",
       "text": "A practical engineering system operating under Laplace Transform & System Transfer Functions is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -212,7 +213,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Z-Transform & Discrete-Time System Analysis",
+      "chapter": "Chapter 6: Z-Transform, ROC Properties, Inverse Z-Transform & Discrete System Analysis",
       "text": "A practical engineering system operating under Z-Transform & Discrete-Time System Analysis is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -224,7 +225,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Continuous & Discrete-Time Signals & Basic Operations",
+      "chapter": "Chapter 1: Continuous & Discrete-Time Signals and Systems (Classification, Linearity, Time-Invariance, Causality, Stability)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Continuous & Discrete-Time Signals & Basic Operations. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -235,7 +236,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Continuous & Discrete-Time Signals & Basic Operations",
+      "chapter": "Chapter 1: Continuous & Discrete-Time Signals and Systems (Classification, Linearity, Time-Invariance, Causality, Stability)",
       "text": "Solve the standard numerical problem for Continuous & Discrete-Time Signals & Basic Operations using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -246,7 +247,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Linear Time-Invariant (LTI) Systems & Convolution Integral/Sum",
+      "chapter": "Chapter 2: Linear Time-Invariant (LTI) Systems, Convolution Integral & Convolution Sum",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Linear Time-Invariant (LTI) Systems & Convolution Integral/Sum. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -257,7 +258,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Linear Time-Invariant (LTI) Systems & Convolution Integral/Sum",
+      "chapter": "Chapter 2: Linear Time-Invariant (LTI) Systems, Convolution Integral & Convolution Sum",
       "text": "Solve the standard numerical problem for Linear Time-Invariant (LTI) Systems & Convolution Integral/Sum using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -268,7 +269,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Fourier Series & Continuous-Time Fourier Transform (CTFT)",
+      "chapter": "Chapter 3: Continuous-Time Fourier Series (CTFS) & Continuous-Time Fourier Transform (CTFT)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Fourier Series & Continuous-Time Fourier Transform (CTFT). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -279,7 +280,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Fourier Series & Continuous-Time Fourier Transform (CTFT)",
+      "chapter": "Chapter 3: Continuous-Time Fourier Series (CTFS) & Continuous-Time Fourier Transform (CTFT)",
       "text": "Solve the standard numerical problem for Fourier Series & Continuous-Time Fourier Transform (CTFT) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -290,7 +291,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Laplace Transform & System Transfer Functions",
+      "chapter": "Chapter 5: Laplace Transform & Region of Convergence (ROC), Inverse Laplace & System Transfer Function",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Laplace Transform & System Transfer Functions. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -301,7 +302,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Laplace Transform & System Transfer Functions",
+      "chapter": "Chapter 5: Laplace Transform & Region of Convergence (ROC), Inverse Laplace & System Transfer Function",
       "text": "Solve the standard numerical problem for Laplace Transform & System Transfer Functions using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -312,7 +313,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Z-Transform & Discrete-Time System Analysis",
+      "chapter": "Chapter 6: Z-Transform, ROC Properties, Inverse Z-Transform & Discrete System Analysis",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Z-Transform & Discrete-Time System Analysis. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -323,7 +324,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Z-Transform & Discrete-Time System Analysis",
+      "chapter": "Chapter 6: Z-Transform, ROC Properties, Inverse Z-Transform & Discrete System Analysis",
       "text": "Solve the standard numerical problem for Z-Transform & Discrete-Time System Analysis using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -334,7 +335,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Continuous & Discrete-Time Signals & Basic Operations",
+      "chapter": "Chapter 1: Continuous & Discrete-Time Signals and Systems (Classification, Linearity, Time-Invariance, Causality, Stability)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Continuous & Discrete-Time Signals & Basic Operations. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -344,7 +345,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Continuous & Discrete-Time Signals & Basic Operations",
+      "chapter": "Chapter 1: Continuous & Discrete-Time Signals and Systems (Classification, Linearity, Time-Invariance, Causality, Stability)",
       "text": "State and prove the classical theorems and stability criteria associated with Continuous & Discrete-Time Signals & Basic Operations. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -354,7 +355,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Linear Time-Invariant (LTI) Systems & Convolution Integral/Sum",
+      "chapter": "Chapter 2: Linear Time-Invariant (LTI) Systems, Convolution Integral & Convolution Sum",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Linear Time-Invariant (LTI) Systems & Convolution Integral/Sum. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -364,7 +365,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Linear Time-Invariant (LTI) Systems & Convolution Integral/Sum",
+      "chapter": "Chapter 2: Linear Time-Invariant (LTI) Systems, Convolution Integral & Convolution Sum",
       "text": "State and prove the classical theorems and stability criteria associated with Linear Time-Invariant (LTI) Systems & Convolution Integral/Sum. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -374,7 +375,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Fourier Series & Continuous-Time Fourier Transform (CTFT)",
+      "chapter": "Chapter 3: Continuous-Time Fourier Series (CTFS) & Continuous-Time Fourier Transform (CTFT)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Fourier Series & Continuous-Time Fourier Transform (CTFT). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -384,7 +385,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Fourier Series & Continuous-Time Fourier Transform (CTFT)",
+      "chapter": "Chapter 3: Continuous-Time Fourier Series (CTFS) & Continuous-Time Fourier Transform (CTFT)",
       "text": "State and prove the classical theorems and stability criteria associated with Fourier Series & Continuous-Time Fourier Transform (CTFT). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -394,7 +395,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Laplace Transform & System Transfer Functions",
+      "chapter": "Chapter 5: Laplace Transform & Region of Convergence (ROC), Inverse Laplace & System Transfer Function",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Laplace Transform & System Transfer Functions. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -404,7 +405,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Laplace Transform & System Transfer Functions",
+      "chapter": "Chapter 5: Laplace Transform & Region of Convergence (ROC), Inverse Laplace & System Transfer Function",
       "text": "State and prove the classical theorems and stability criteria associated with Laplace Transform & System Transfer Functions. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -414,7 +415,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Z-Transform & Discrete-Time System Analysis",
+      "chapter": "Chapter 6: Z-Transform, ROC Properties, Inverse Z-Transform & Discrete System Analysis",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Z-Transform & Discrete-Time System Analysis. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -424,7 +425,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Z-Transform & Discrete-Time System Analysis",
+      "chapter": "Chapter 6: Z-Transform, ROC Properties, Inverse Z-Transform & Discrete System Analysis",
       "text": "State and prove the classical theorems and stability criteria associated with Z-Transform & Discrete-Time System Analysis. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -434,7 +435,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Continuous & Discrete-Time Signals & Basic Operations",
+      "chapter": "Chapter 1: Continuous & Discrete-Time Signals and Systems (Classification, Linearity, Time-Invariance, Causality, Stability)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Continuous & Discrete-Time Signals & Basic Operations.",
       "marks": "6",
       "years": [
@@ -443,7 +444,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Continuous & Discrete-Time Signals & Basic Operations",
+      "chapter": "Chapter 1: Continuous & Discrete-Time Signals and Systems (Classification, Linearity, Time-Invariance, Causality, Stability)",
       "text": "Write short technical notes on: (a) Key design parameters in Continuous & Discrete-Time Signals & Basic Operations, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -452,7 +453,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Linear Time-Invariant (LTI) Systems & Convolution Integral/Sum",
+      "chapter": "Chapter 2: Linear Time-Invariant (LTI) Systems, Convolution Integral & Convolution Sum",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Linear Time-Invariant (LTI) Systems & Convolution Integral/Sum.",
       "marks": "6",
       "years": [
@@ -461,7 +462,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Linear Time-Invariant (LTI) Systems & Convolution Integral/Sum",
+      "chapter": "Chapter 2: Linear Time-Invariant (LTI) Systems, Convolution Integral & Convolution Sum",
       "text": "Write short technical notes on: (a) Key design parameters in Linear Time-Invariant (LTI) Systems & Convolution Integral/Sum, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -470,7 +471,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Fourier Series & Continuous-Time Fourier Transform (CTFT)",
+      "chapter": "Chapter 3: Continuous-Time Fourier Series (CTFS) & Continuous-Time Fourier Transform (CTFT)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Fourier Series & Continuous-Time Fourier Transform (CTFT).",
       "marks": "6",
       "years": [
@@ -479,7 +480,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Fourier Series & Continuous-Time Fourier Transform (CTFT)",
+      "chapter": "Chapter 3: Continuous-Time Fourier Series (CTFS) & Continuous-Time Fourier Transform (CTFT)",
       "text": "Write short technical notes on: (a) Key design parameters in Fourier Series & Continuous-Time Fourier Transform (CTFT), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -488,7 +489,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Laplace Transform & System Transfer Functions",
+      "chapter": "Chapter 5: Laplace Transform & Region of Convergence (ROC), Inverse Laplace & System Transfer Function",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Laplace Transform & System Transfer Functions.",
       "marks": "6",
       "years": [
@@ -497,7 +498,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Laplace Transform & System Transfer Functions",
+      "chapter": "Chapter 5: Laplace Transform & Region of Convergence (ROC), Inverse Laplace & System Transfer Function",
       "text": "Write short technical notes on: (a) Key design parameters in Laplace Transform & System Transfer Functions, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -506,7 +507,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Z-Transform & Discrete-Time System Analysis",
+      "chapter": "Chapter 6: Z-Transform, ROC Properties, Inverse Z-Transform & Discrete System Analysis",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Z-Transform & Discrete-Time System Analysis.",
       "marks": "6",
       "years": [
@@ -515,7 +516,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Z-Transform & Discrete-Time System Analysis",
+      "chapter": "Chapter 6: Z-Transform, ROC Properties, Inverse Z-Transform & Discrete System Analysis",
       "text": "Write short technical notes on: (a) Key design parameters in Z-Transform & Discrete-Time System Analysis, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [

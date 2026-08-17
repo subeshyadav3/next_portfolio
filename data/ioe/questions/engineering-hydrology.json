@@ -1,15 +1,17 @@
 {
   "subject": "Engineering Hydrology",
   "chapters": [
-    "Hydrologic Cycle, Precipitation & Rainfall Data Analysis",
-    "Evaporation, Infiltration (Horton) & Streamflow Measurement",
-    "Hydrograph Analysis & Unit Hydrograph (UH & S-Curve)",
-    "Flood Routing (Muskingum) & Extreme Flood Frequency (Gumbel)",
-    "Groundwater Hydrology, Aquifers & Well Hydraulics (Thiem/Theis)"
+    "Chapter 1: Introduction to Hydrologic Cycle & Catchment Characteristics",
+    "Chapter 2: Precipitation & Measurement (Rain Gauges, Thiessen Polygon, Isohyetal Method, Hyetograph)",
+    "Chapter 3: Hydrological Abstractions (Evaporation, Evapotranspiration, Infiltration Indices: $\\PhihBcIndex, hBcIndex)",
+    "Chapter 4: Streamflow Measurement (Area-Velocity Method, Stage-Discharge Rating Curve)",
+    "Chapter 5: Hydrograph Analysis & Unit Hydrograph Theory (1-hr, 6-hr, S-Curve, Synthetic Unit Hydrograph)",
+    "Chapter 6: Flood Routing & Flood Frequency Analysis (Gumbel Method, Log-Pearson Type III, Muskingum Method)",
+    "Chapter 7: Groundwater Hydrology & Well Hydraulics (Steady Flow in Confined & Unconfined Aquifers, Theis Method)"
   ],
   "questions": [
     {
-      "chapter": "Hydrologic Cycle, Precipitation & Rainfall Data Analysis",
+      "chapter": "Chapter 1: Introduction to Hydrologic Cycle & Catchment Characteristics",
       "text": "Explain the Hydrologic Cycle with a neat block diagram and water budget equation: $P - R - G - E - T = \\Delta S$. Explain methods for estimating missing precipitation data: (a) Arithmetic Mean Method, and (b) Normal Ratio Method ($P_x = \\frac{N_x}{m}\\sum \\frac{P_i}{N_i}$).",
       "marks": "3+5",
       "years": [
@@ -22,7 +24,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Hydrologic Cycle, Precipitation & Rainfall Data Analysis",
+      "chapter": "Chapter 2: Precipitation & Measurement (Rain Gauges, Thiessen Polygon, Isohyetal Method, Hyetograph)",
       "text": "Explain methods to calculate Mean Areal Rainfall over a catchment: (a) Arithmetic Average Method, (b) Thiessen Polygon Method, and (c) Isohyetal Method. Explain Double Mass Curve analysis for checking consistency of rainfall records.",
       "marks": "4+6",
       "years": [
@@ -35,7 +37,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Evaporation, Infiltration (Horton) & Streamflow Measurement",
+      "chapter": "Chapter 1: Introduction to Hydrologic Cycle & Catchment Characteristics",
       "text": "Explain Horton's Infiltration Equation: $f_p = f_c + (f_0 - f_c)e^{-k t}$. Define $\\phi$-Index and $W$-Index. A 6-hour storm produces rainfall increments of $1.5, 2.5, 4.0, 3.0, 1.8, 1.2\\,\\text{cm/hr}$. If total runoff depth is $6.5\\,\\text{cm}$, determine the $\\phi$-index of the catchment.",
       "marks": "3+5",
       "years": [
@@ -48,7 +50,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Evaporation, Infiltration (Horton) & Streamflow Measurement",
+      "chapter": "Chapter 4: Streamflow Measurement (Area-Velocity Method, Stage-Discharge Rating Curve)",
       "text": "Explain Streamflow Measurement methods: Area-Velocity Method using Current Meter (0.2D & 0.8D point methods), Dilution Gauging (Tracer method), and Stage-Discharge Rating Curve ($Q = C_r(G - a)^b$).",
       "marks": "4+4",
       "years": [
@@ -61,7 +63,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Hydrograph Analysis & Unit Hydrograph (UH & S-Curve)",
+      "chapter": "Chapter 5: Hydrograph Analysis & Unit Hydrograph Theory (1-hr, 6-hr, S-Curve, Synthetic Unit Hydrograph)",
       "text": "Define Unit Hydrograph (UH). State the underlying assumptions of Unit Hydrograph Theory (Linear response and Time invariance). Describe base flow separation methods (Straight line method, Fixed base method, Variable slope method).",
       "marks": "4+4",
       "years": [
@@ -74,7 +76,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Hydrograph Analysis & Unit Hydrograph (UH & S-Curve)",
+      "chapter": "Chapter 5: Hydrograph Analysis & Unit Hydrograph Theory (1-hr, 6-hr, S-Curve, Synthetic Unit Hydrograph)",
       "text": "Given the ordinates of a 4-hour Unit Hydrograph at 2-hour intervals: $[0, 12, 35, 60, 48, 30, 18, 8, 0]\\,\\text{m}^3/\\text{s}$, derive the ordinates of a 6-hour Unit Hydrograph for the same catchment using the S-Curve (Summation Hydrograph) method.",
       "marks": "10",
       "years": [
@@ -87,7 +89,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Flood Routing (Muskingum) & Extreme Flood Frequency (Gumbel)",
+      "chapter": "Chapter 6: Flood Routing & Flood Frequency Analysis (Gumbel Method, Log-Pearson Type III, Muskingum Method)",
       "text": "Explain the Muskingum Channel Flood Routing Method ($Q_{j+1} = C_0 I_{j+1} + C_1 I_j + C_2 Q_j$ where $C_0 + C_1 + C_2 = 1$). Route a given inflow flood hydrograph through a river reach with parameters $K = 12\\,\\text{hours}$ and $x = 0.2$ with routing time step $\\Delta t = 6\\,\\text{hours}$.",
       "marks": "4+8",
       "years": [
@@ -100,7 +102,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Flood Routing (Muskingum) & Extreme Flood Frequency (Gumbel)",
+      "chapter": "Chapter 6: Flood Routing & Flood Frequency Analysis (Gumbel Method, Log-Pearson Type III, Muskingum Method)",
       "text": "Explain Gumbel's Extreme Value Distribution Method for flood frequency analysis: $x_T = \\bar{x} + K_T \\sigma_x$ where $K_T = \\frac{y_T - \\bar{y}_n}{S_n}$ and $y_T = -\\ln\\left[-\\ln\\left(1 - \\frac{1}{T}\\right)\\right]$. Calculate the 50-year and 100-year return period peak floods for a river with 30 years of annual maximum flood data (Mean $\\bar{x} = 1200\\,\\text{m}^3/\\text{s}$, Standard deviation $\\sigma_x = 350\\,\\text{m}^3/\\text{s}$).",
       "marks": "4+6",
       "years": [
@@ -113,7 +115,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Groundwater Hydrology, Aquifers & Well Hydraulics (Thiem/Theis)",
+      "chapter": "Chapter 7: Groundwater Hydrology & Well Hydraulics (Steady Flow in Confined & Unconfined Aquifers, Theis Method)",
       "text": "Derive Dupuit-Thiem Equations for steady-state radial flow to a fully penetrating well in: (a) Unconfined Aquifer ($Q = \\frac{\\pi K (h_2^2 - h_1^2)}{\\ln(r_2/r_1)}$), and (b) Confined Aquifer ($Q = \\frac{2\\pi K b (h_2 - h_1)}{\\ln(r_2/r_1)}$). What is Specific Yield ($S_y$) and Specific Retention ($S_r$)?",
       "marks": "4+6",
       "years": [
@@ -126,7 +128,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Hydrologic Cycle, Precipitation & Rainfall Data Analysis",
+      "chapter": "Chapter 1: Introduction to Hydrologic Cycle & Catchment Characteristics",
       "text": "A practical engineering system operating under Hydrologic Cycle, Precipitation & Rainfall Data Analysis is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -138,7 +140,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Evaporation, Infiltration (Horton) & Streamflow Measurement",
+      "chapter": "Chapter 4: Streamflow Measurement (Area-Velocity Method, Stage-Discharge Rating Curve)",
       "text": "A practical engineering system operating under Evaporation, Infiltration (Horton) & Streamflow Measurement is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -150,7 +152,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Hydrograph Analysis & Unit Hydrograph (UH & S-Curve)",
+      "chapter": "Chapter 5: Hydrograph Analysis & Unit Hydrograph Theory (1-hr, 6-hr, S-Curve, Synthetic Unit Hydrograph)",
       "text": "A practical engineering system operating under Hydrograph Analysis & Unit Hydrograph (UH & S-Curve) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -162,7 +164,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Flood Routing (Muskingum) & Extreme Flood Frequency (Gumbel)",
+      "chapter": "Chapter 6: Flood Routing & Flood Frequency Analysis (Gumbel Method, Log-Pearson Type III, Muskingum Method)",
       "text": "A practical engineering system operating under Flood Routing (Muskingum) & Extreme Flood Frequency (Gumbel) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -174,7 +176,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Groundwater Hydrology, Aquifers & Well Hydraulics (Thiem/Theis)",
+      "chapter": "Chapter 7: Groundwater Hydrology & Well Hydraulics (Steady Flow in Confined & Unconfined Aquifers, Theis Method)",
       "text": "A practical engineering system operating under Groundwater Hydrology, Aquifers & Well Hydraulics (Thiem/Theis) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -186,7 +188,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Hydrologic Cycle, Precipitation & Rainfall Data Analysis",
+      "chapter": "Chapter 1: Introduction to Hydrologic Cycle & Catchment Characteristics",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Hydrologic Cycle, Precipitation & Rainfall Data Analysis. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -197,7 +199,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Hydrologic Cycle, Precipitation & Rainfall Data Analysis",
+      "chapter": "Chapter 1: Introduction to Hydrologic Cycle & Catchment Characteristics",
       "text": "Solve the standard numerical problem for Hydrologic Cycle, Precipitation & Rainfall Data Analysis using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -208,7 +210,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Evaporation, Infiltration (Horton) & Streamflow Measurement",
+      "chapter": "Chapter 2: Precipitation & Measurement (Rain Gauges, Thiessen Polygon, Isohyetal Method, Hyetograph)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Evaporation, Infiltration (Horton) & Streamflow Measurement. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -219,7 +221,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Evaporation, Infiltration (Horton) & Streamflow Measurement",
+      "chapter": "Chapter 3: Hydrological Abstractions (Evaporation, Evapotranspiration, Infiltration Indices: $\\PhihBcIndex, hBcIndex)",
       "text": "Solve the standard numerical problem for Evaporation, Infiltration (Horton) & Streamflow Measurement using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -230,7 +232,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Hydrograph Analysis & Unit Hydrograph (UH & S-Curve)",
+      "chapter": "Chapter 5: Hydrograph Analysis & Unit Hydrograph Theory (1-hr, 6-hr, S-Curve, Synthetic Unit Hydrograph)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Hydrograph Analysis & Unit Hydrograph (UH & S-Curve). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -241,7 +243,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Hydrograph Analysis & Unit Hydrograph (UH & S-Curve)",
+      "chapter": "Chapter 5: Hydrograph Analysis & Unit Hydrograph Theory (1-hr, 6-hr, S-Curve, Synthetic Unit Hydrograph)",
       "text": "Solve the standard numerical problem for Hydrograph Analysis & Unit Hydrograph (UH & S-Curve) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -252,7 +254,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Flood Routing (Muskingum) & Extreme Flood Frequency (Gumbel)",
+      "chapter": "Chapter 6: Flood Routing & Flood Frequency Analysis (Gumbel Method, Log-Pearson Type III, Muskingum Method)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Flood Routing (Muskingum) & Extreme Flood Frequency (Gumbel). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -263,7 +265,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Flood Routing (Muskingum) & Extreme Flood Frequency (Gumbel)",
+      "chapter": "Chapter 6: Flood Routing & Flood Frequency Analysis (Gumbel Method, Log-Pearson Type III, Muskingum Method)",
       "text": "Solve the standard numerical problem for Flood Routing (Muskingum) & Extreme Flood Frequency (Gumbel) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -274,7 +276,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Groundwater Hydrology, Aquifers & Well Hydraulics (Thiem/Theis)",
+      "chapter": "Chapter 7: Groundwater Hydrology & Well Hydraulics (Steady Flow in Confined & Unconfined Aquifers, Theis Method)",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Groundwater Hydrology, Aquifers & Well Hydraulics (Thiem/Theis). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -285,7 +287,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Groundwater Hydrology, Aquifers & Well Hydraulics (Thiem/Theis)",
+      "chapter": "Chapter 7: Groundwater Hydrology & Well Hydraulics (Steady Flow in Confined & Unconfined Aquifers, Theis Method)",
       "text": "Solve the standard numerical problem for Groundwater Hydrology, Aquifers & Well Hydraulics (Thiem/Theis) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -296,7 +298,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Hydrologic Cycle, Precipitation & Rainfall Data Analysis",
+      "chapter": "Chapter 2: Precipitation & Measurement (Rain Gauges, Thiessen Polygon, Isohyetal Method, Hyetograph)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Hydrologic Cycle, Precipitation & Rainfall Data Analysis. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -306,7 +308,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Hydrologic Cycle, Precipitation & Rainfall Data Analysis",
+      "chapter": "Chapter 1: Introduction to Hydrologic Cycle & Catchment Characteristics",
       "text": "State and prove the classical theorems and stability criteria associated with Hydrologic Cycle, Precipitation & Rainfall Data Analysis. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -316,7 +318,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Evaporation, Infiltration (Horton) & Streamflow Measurement",
+      "chapter": "Chapter 4: Streamflow Measurement (Area-Velocity Method, Stage-Discharge Rating Curve)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Evaporation, Infiltration (Horton) & Streamflow Measurement. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -326,7 +328,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Evaporation, Infiltration (Horton) & Streamflow Measurement",
+      "chapter": "Chapter 3: Hydrological Abstractions (Evaporation, Evapotranspiration, Infiltration Indices: $\\PhihBcIndex, hBcIndex)",
       "text": "State and prove the classical theorems and stability criteria associated with Evaporation, Infiltration (Horton) & Streamflow Measurement. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -336,7 +338,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Hydrograph Analysis & Unit Hydrograph (UH & S-Curve)",
+      "chapter": "Chapter 5: Hydrograph Analysis & Unit Hydrograph Theory (1-hr, 6-hr, S-Curve, Synthetic Unit Hydrograph)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Hydrograph Analysis & Unit Hydrograph (UH & S-Curve). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -346,7 +348,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Hydrograph Analysis & Unit Hydrograph (UH & S-Curve)",
+      "chapter": "Chapter 5: Hydrograph Analysis & Unit Hydrograph Theory (1-hr, 6-hr, S-Curve, Synthetic Unit Hydrograph)",
       "text": "State and prove the classical theorems and stability criteria associated with Hydrograph Analysis & Unit Hydrograph (UH & S-Curve). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -356,7 +358,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Flood Routing (Muskingum) & Extreme Flood Frequency (Gumbel)",
+      "chapter": "Chapter 6: Flood Routing & Flood Frequency Analysis (Gumbel Method, Log-Pearson Type III, Muskingum Method)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Flood Routing (Muskingum) & Extreme Flood Frequency (Gumbel). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -366,7 +368,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Flood Routing (Muskingum) & Extreme Flood Frequency (Gumbel)",
+      "chapter": "Chapter 6: Flood Routing & Flood Frequency Analysis (Gumbel Method, Log-Pearson Type III, Muskingum Method)",
       "text": "State and prove the classical theorems and stability criteria associated with Flood Routing (Muskingum) & Extreme Flood Frequency (Gumbel). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -376,7 +378,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Groundwater Hydrology, Aquifers & Well Hydraulics (Thiem/Theis)",
+      "chapter": "Chapter 7: Groundwater Hydrology & Well Hydraulics (Steady Flow in Confined & Unconfined Aquifers, Theis Method)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Groundwater Hydrology, Aquifers & Well Hydraulics (Thiem/Theis). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -386,7 +388,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Groundwater Hydrology, Aquifers & Well Hydraulics (Thiem/Theis)",
+      "chapter": "Chapter 7: Groundwater Hydrology & Well Hydraulics (Steady Flow in Confined & Unconfined Aquifers, Theis Method)",
       "text": "State and prove the classical theorems and stability criteria associated with Groundwater Hydrology, Aquifers & Well Hydraulics (Thiem/Theis). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -396,7 +398,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Hydrologic Cycle, Precipitation & Rainfall Data Analysis",
+      "chapter": "Chapter 1: Introduction to Hydrologic Cycle & Catchment Characteristics",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Hydrologic Cycle, Precipitation & Rainfall Data Analysis.",
       "marks": "6",
       "years": [
@@ -405,7 +407,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Hydrologic Cycle, Precipitation & Rainfall Data Analysis",
+      "chapter": "Chapter 1: Introduction to Hydrologic Cycle & Catchment Characteristics",
       "text": "Write short technical notes on: (a) Key design parameters in Hydrologic Cycle, Precipitation & Rainfall Data Analysis, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -414,7 +416,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Evaporation, Infiltration (Horton) & Streamflow Measurement",
+      "chapter": "Chapter 3: Hydrological Abstractions (Evaporation, Evapotranspiration, Infiltration Indices: $\\PhihBcIndex, hBcIndex)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Evaporation, Infiltration (Horton) & Streamflow Measurement.",
       "marks": "6",
       "years": [
@@ -423,7 +425,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Evaporation, Infiltration (Horton) & Streamflow Measurement",
+      "chapter": "Chapter 3: Hydrological Abstractions (Evaporation, Evapotranspiration, Infiltration Indices: $\\PhihBcIndex, hBcIndex)",
       "text": "Write short technical notes on: (a) Key design parameters in Evaporation, Infiltration (Horton) & Streamflow Measurement, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -432,7 +434,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Hydrograph Analysis & Unit Hydrograph (UH & S-Curve)",
+      "chapter": "Chapter 5: Hydrograph Analysis & Unit Hydrograph Theory (1-hr, 6-hr, S-Curve, Synthetic Unit Hydrograph)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Hydrograph Analysis & Unit Hydrograph (UH & S-Curve).",
       "marks": "6",
       "years": [
@@ -441,7 +443,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Hydrograph Analysis & Unit Hydrograph (UH & S-Curve)",
+      "chapter": "Chapter 5: Hydrograph Analysis & Unit Hydrograph Theory (1-hr, 6-hr, S-Curve, Synthetic Unit Hydrograph)",
       "text": "Write short technical notes on: (a) Key design parameters in Hydrograph Analysis & Unit Hydrograph (UH & S-Curve), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -450,7 +452,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Flood Routing (Muskingum) & Extreme Flood Frequency (Gumbel)",
+      "chapter": "Chapter 6: Flood Routing & Flood Frequency Analysis (Gumbel Method, Log-Pearson Type III, Muskingum Method)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Flood Routing (Muskingum) & Extreme Flood Frequency (Gumbel).",
       "marks": "6",
       "years": [
@@ -459,7 +461,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Flood Routing (Muskingum) & Extreme Flood Frequency (Gumbel)",
+      "chapter": "Chapter 6: Flood Routing & Flood Frequency Analysis (Gumbel Method, Log-Pearson Type III, Muskingum Method)",
       "text": "Write short technical notes on: (a) Key design parameters in Flood Routing (Muskingum) & Extreme Flood Frequency (Gumbel), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -468,7 +470,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Groundwater Hydrology, Aquifers & Well Hydraulics (Thiem/Theis)",
+      "chapter": "Chapter 7: Groundwater Hydrology & Well Hydraulics (Steady Flow in Confined & Unconfined Aquifers, Theis Method)",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Groundwater Hydrology, Aquifers & Well Hydraulics (Thiem/Theis).",
       "marks": "6",
       "years": [
@@ -477,7 +479,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Groundwater Hydrology, Aquifers & Well Hydraulics (Thiem/Theis)",
+      "chapter": "Chapter 7: Groundwater Hydrology & Well Hydraulics (Steady Flow in Confined & Unconfined Aquifers, Theis Method)",
       "text": "Write short technical notes on: (a) Key design parameters in Groundwater Hydrology, Aquifers & Well Hydraulics (Thiem/Theis), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [

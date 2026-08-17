@@ -2,15 +2,16 @@
   "subject": "Engineering Survey II",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Tachometry & Stadia Surveying Principles",
-    "Horizontal Curve Setting (Rankine's & Transition Curves)",
-    "Vertical Curves & Sight Distance Design",
-    "Triangulation, Baseline Measurement & Satellite Stations",
-    "Trigonometrical Leveling, Total Station & GPS Principles"
+    "Chapter 1: Theodolite Components, Adjustments & Angular Measurements",
+    "Chapter 2: Theodolite Traversing, Gale Table & Balancing Traversing",
+    "Chapter 3: Tacheometric Surveying & Stadia Diaphragm Computations",
+    "Chapter 4: Curve Setting (Simple Circular, Compound & Reverse Curves)",
+    "Chapter 5: Transition Curves & Vertical Curves Design",
+    "Chapter 6: Triangulation Principles, Baseline Measurement & Total Station"
   ],
   "questions": [
     {
-      "chapter": "Tachometry & Stadia Surveying Principles",
+      "chapter": "Chapter 3: Tacheometric Surveying & Stadia Diaphragm Computations",
       "text": "Derive the fundamental tachometric equations for a stadia tachometer with line of sight inclined at an angle $\\theta$ to the horizontal and staff held vertically: Horizontal distance $D = k s \\cos^2\\theta + c \\cos\\theta$ and Vertical distance $V = \\frac{1}{2} k s \\sin 2\\theta + c \\sin\\theta$, where $k = \\frac{f}{i}$ is the multiplying constant and $c = f + d$ is the additive constant. What is an anallatic lens?",
       "marks": "3+5",
       "years": [
@@ -23,7 +24,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Horizontal Curve Setting (Rankine's & Transition Curves)",
+      "chapter": "Chapter 4: Curve Setting (Simple Circular, Compound & Reverse Curves)",
       "text": "Define the elements of a Simple Circular Curve (Radius $R$, Deflection angle $\\Delta$, Tangent length $T = R \\tan(\\Delta/2)$, Length of curve $L = \\frac{\\pi R \\Delta}{180^\\circ}$, Apex distance $E = R(\\sec(\\Delta/2) - 1)$, Mid-ordinate $M = R(1 - \\cos(\\Delta/2))$). Explain Rankine's Method of Deflection Angles (Tangential angles $\\delta = 1718.9 \\frac{c}{R}$ minutes) for setting out a circular curve using a theodolite and tape.",
       "marks": "4+4",
       "years": [
@@ -36,7 +37,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Horizontal Curve Setting (Rankine's & Transition Curves)",
+      "chapter": "Chapter 4: Curve Setting (Simple Circular, Compound & Reverse Curves)",
       "text": "Calculate the setting out data by Rankine's deflection angle method for a circular curve of radius $300\\,\\text{m}$ connecting two straights deflecting through $40^\\circ$. The chainage of intersection point is $1250.0\\,\\text{m}$. Peg interval is $20\\,\\text{m}$. Prepare the complete setting out table.",
       "marks": "8",
       "years": [
@@ -49,7 +50,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Horizontal Curve Setting (Rankine's & Transition Curves)",
+      "chapter": "Chapter 4: Curve Setting (Simple Circular, Compound & Reverse Curves)",
       "text": "What is a Transition Curve and why is it introduced in road/rail alignment? Derive the length of transition curve based on: (a) Rate of change of centrifugal acceleration ($L_s = \\frac{v^3}{C R}$), (b) Rate of introduction of superelevation, and (c) Empirical formulas. Derive the equation of cubic parabola / clothoid spiral ($y = \\frac{x^3}{6 R L_s}$).",
       "marks": "3+5",
       "years": [
@@ -62,7 +63,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Vertical Curves & Sight Distance Design",
+      "chapter": "Chapter 5: Transition Curves & Vertical Curves Design",
       "text": "Explain Summit Curves (Crest curves) and Valley Curves (Sag curves) on highways. Explain the design criteria for vertical curves (Stopping Sight Distance - SSD and Headlight Sight Distance - HSD). Derive the equation of a parabolic vertical curve $y = c x^2$ and calculate RL of pegs on a vertical curve connecting a $+2\\%$ grade with a $-1.5\\%$ grade.",
       "marks": "3+5",
       "years": [
@@ -75,7 +76,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Triangulation, Baseline Measurement & Satellite Stations",
+      "chapter": "Chapter 6: Triangulation Principles, Baseline Measurement & Total Station",
       "text": "Explain Triangulation System classifications (Primary, Secondary, Tertiary). What is a Well-Conditioned Triangle? State the criteria for strength of figure ($R = \\frac{D-C}{D} \\sum(\\delta_A^2 + \\delta_A \\delta_B + \\delta_B^2)$).",
       "marks": "4+4",
       "years": [
@@ -88,7 +89,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Triangulation, Baseline Measurement & Satellite Stations",
+      "chapter": "Chapter 6: Triangulation Principles, Baseline Measurement & Total Station",
       "text": "What is a Satellite Station (False station) and why is it required? Derive the formula for Reduction to Center to calculate true angles $\\theta$ from observed angles $\\theta'$ when the instrument is set at a satellite station $S$ at a small distance $d$ from the main triangulation station $C$: $\\theta = \\theta' - \\frac{d \\sin(\\alpha + \\theta')}{b \\sin 1''} + \\frac{d \\sin\\alpha}{a \\sin 1''}$.",
       "marks": "3+5",
       "years": [
@@ -101,7 +102,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Trigonometrical Leveling, Total Station & GPS Principles",
+      "chapter": "Chapter 6: Triangulation Principles, Baseline Measurement & Total Station",
       "text": "Explain the Electronic Distance Measurement (EDM) principle (Phase difference and time-of-flight methods) used in Total Stations. Describe the segments of the Global Positioning System (Space, Control, User segments) and explain Differential GPS (DGPS) and Real-Time Kinematic (RTK) surveying.",
       "marks": "3+5",
       "years": [
@@ -114,7 +115,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Tachometry & Stadia Surveying Principles",
+      "chapter": "Chapter 5: Transition Curves & Vertical Curves Design",
       "text": "Explain Tangential Tachometry and Subtense Bar method. In a tangential tachometric observation, vertical angles of $+3^\\circ 20'$ and $+1^\\circ 10'$ were observed to targets placed at $1.0\\,\\text{m}$ and $3.5\\,\\text{m}$ above the foot of a vertical staff. Calculate the horizontal distance and RL of the staff station.",
       "marks": "3+5",
       "years": [
@@ -126,7 +127,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Trigonometrical Leveling, Total Station & GPS Principles",
+      "chapter": "Chapter 5: Transition Curves & Vertical Curves Design",
       "text": "Explain Trigonometrical Leveling for finding the elevation of an inaccessible peak/tower when: (a) Base is inaccessible and instrument stations are in the same vertical plane, and (b) Instrument stations are not in the same vertical plane. Derive elevation formulas.",
       "marks": "8",
       "years": [
@@ -138,7 +139,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Tachometry & Stadia Surveying Principles",
+      "chapter": "Chapter 3: Tacheometric Surveying & Stadia Diaphragm Computations",
       "text": "A practical engineering system operating under Tachometry & Stadia Surveying Principles is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -150,7 +151,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Horizontal Curve Setting (Rankine's & Transition Curves)",
+      "chapter": "Chapter 5: Transition Curves & Vertical Curves Design",
       "text": "A practical engineering system operating under Horizontal Curve Setting (Rankine's & Transition Curves) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -162,7 +163,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Vertical Curves & Sight Distance Design",
+      "chapter": "Chapter 5: Transition Curves & Vertical Curves Design",
       "text": "A practical engineering system operating under Vertical Curves & Sight Distance Design is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -174,7 +175,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Triangulation, Baseline Measurement & Satellite Stations",
+      "chapter": "Chapter 6: Triangulation Principles, Baseline Measurement & Total Station",
       "text": "A practical engineering system operating under Triangulation, Baseline Measurement & Satellite Stations is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -186,7 +187,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Trigonometrical Leveling, Total Station & GPS Principles",
+      "chapter": "Chapter 6: Triangulation Principles, Baseline Measurement & Total Station",
       "text": "A practical engineering system operating under Trigonometrical Leveling, Total Station & GPS Principles is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
       "marks": "8",
       "years": [
@@ -198,7 +199,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Tachometry & Stadia Surveying Principles",
+      "chapter": "Chapter 3: Tacheometric Surveying & Stadia Diaphragm Computations",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Tachometry & Stadia Surveying Principles. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -209,7 +210,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Tachometry & Stadia Surveying Principles",
+      "chapter": "Chapter 3: Tacheometric Surveying & Stadia Diaphragm Computations",
       "text": "Solve the standard numerical problem for Tachometry & Stadia Surveying Principles using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -220,7 +221,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Horizontal Curve Setting (Rankine's & Transition Curves)",
+      "chapter": "Chapter 5: Transition Curves & Vertical Curves Design",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Horizontal Curve Setting (Rankine's & Transition Curves). Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -231,7 +232,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Horizontal Curve Setting (Rankine's & Transition Curves)",
+      "chapter": "Chapter 4: Curve Setting (Simple Circular, Compound & Reverse Curves)",
       "text": "Solve the standard numerical problem for Horizontal Curve Setting (Rankine's & Transition Curves) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -242,7 +243,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Vertical Curves & Sight Distance Design",
+      "chapter": "Chapter 5: Transition Curves & Vertical Curves Design",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Vertical Curves & Sight Distance Design. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -253,7 +254,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Vertical Curves & Sight Distance Design",
+      "chapter": "Chapter 5: Transition Curves & Vertical Curves Design",
       "text": "Solve the standard numerical problem for Vertical Curves & Sight Distance Design using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -264,7 +265,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Triangulation, Baseline Measurement & Satellite Stations",
+      "chapter": "Chapter 6: Triangulation Principles, Baseline Measurement & Total Station",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Triangulation, Baseline Measurement & Satellite Stations. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -275,7 +276,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Triangulation, Baseline Measurement & Satellite Stations",
+      "chapter": "Chapter 6: Triangulation Principles, Baseline Measurement & Total Station",
       "text": "Solve the standard numerical problem for Triangulation, Baseline Measurement & Satellite Stations using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -286,7 +287,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Trigonometrical Leveling, Total Station & GPS Principles",
+      "chapter": "Chapter 6: Triangulation Principles, Baseline Measurement & Total Station",
       "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Trigonometrical Leveling, Total Station & GPS Principles. Derive the governing mathematical relations and discuss practical design constraints.",
       "marks": "4+6",
       "years": [
@@ -297,7 +298,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Trigonometrical Leveling, Total Station & GPS Principles",
+      "chapter": "Chapter 6: Triangulation Principles, Baseline Measurement & Total Station",
       "text": "Solve the standard numerical problem for Trigonometrical Leveling, Total Station & GPS Principles using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
       "marks": "8",
       "years": [
@@ -308,7 +309,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Tachometry & Stadia Surveying Principles",
+      "chapter": "Chapter 3: Tacheometric Surveying & Stadia Diaphragm Computations",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Tachometry & Stadia Surveying Principles. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -318,7 +319,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Tachometry & Stadia Surveying Principles",
+      "chapter": "Chapter 3: Tacheometric Surveying & Stadia Diaphragm Computations",
       "text": "State and prove the classical theorems and stability criteria associated with Tachometry & Stadia Surveying Principles. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -328,7 +329,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Horizontal Curve Setting (Rankine's & Transition Curves)",
+      "chapter": "Chapter 4: Curve Setting (Simple Circular, Compound & Reverse Curves)",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Horizontal Curve Setting (Rankine's & Transition Curves). What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -338,7 +339,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Horizontal Curve Setting (Rankine's & Transition Curves)",
+      "chapter": "Chapter 4: Curve Setting (Simple Circular, Compound & Reverse Curves)",
       "text": "State and prove the classical theorems and stability criteria associated with Horizontal Curve Setting (Rankine's & Transition Curves). What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -348,7 +349,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Vertical Curves & Sight Distance Design",
+      "chapter": "Chapter 5: Transition Curves & Vertical Curves Design",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Vertical Curves & Sight Distance Design. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -358,7 +359,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Vertical Curves & Sight Distance Design",
+      "chapter": "Chapter 5: Transition Curves & Vertical Curves Design",
       "text": "State and prove the classical theorems and stability criteria associated with Vertical Curves & Sight Distance Design. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -368,7 +369,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Triangulation, Baseline Measurement & Satellite Stations",
+      "chapter": "Chapter 6: Triangulation Principles, Baseline Measurement & Total Station",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Triangulation, Baseline Measurement & Satellite Stations. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -378,7 +379,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Triangulation, Baseline Measurement & Satellite Stations",
+      "chapter": "Chapter 6: Triangulation Principles, Baseline Measurement & Total Station",
       "text": "State and prove the classical theorems and stability criteria associated with Triangulation, Baseline Measurement & Satellite Stations. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -388,7 +389,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Trigonometrical Leveling, Total Station & GPS Principles",
+      "chapter": "Chapter 6: Triangulation Principles, Baseline Measurement & Total Station",
       "text": "Differentiate between the various analytical methods and experimental techniques used in Trigonometrical Leveling, Total Station & GPS Principles. What are the sources of error and how are boundary conditions satisfied?",
       "marks": "4+4",
       "years": [
@@ -398,7 +399,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Trigonometrical Leveling, Total Station & GPS Principles",
+      "chapter": "Chapter 6: Triangulation Principles, Baseline Measurement & Total Station",
       "text": "State and prove the classical theorems and stability criteria associated with Trigonometrical Leveling, Total Station & GPS Principles. What happens when non-ideal effects and higher-order terms are considered?",
       "marks": "4+4",
       "years": [
@@ -408,7 +409,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Tachometry & Stadia Surveying Principles",
+      "chapter": "Chapter 3: Tacheometric Surveying & Stadia Diaphragm Computations",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Tachometry & Stadia Surveying Principles.",
       "marks": "6",
       "years": [
@@ -417,7 +418,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Tachometry & Stadia Surveying Principles",
+      "chapter": "Chapter 3: Tacheometric Surveying & Stadia Diaphragm Computations",
       "text": "Write short technical notes on: (a) Key design parameters in Tachometry & Stadia Surveying Principles, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -426,7 +427,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Horizontal Curve Setting (Rankine's & Transition Curves)",
+      "chapter": "Chapter 5: Transition Curves & Vertical Curves Design",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Horizontal Curve Setting (Rankine's & Transition Curves).",
       "marks": "6",
       "years": [
@@ -435,7 +436,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Horizontal Curve Setting (Rankine's & Transition Curves)",
+      "chapter": "Chapter 5: Transition Curves & Vertical Curves Design",
       "text": "Write short technical notes on: (a) Key design parameters in Horizontal Curve Setting (Rankine's & Transition Curves), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -444,7 +445,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Vertical Curves & Sight Distance Design",
+      "chapter": "Chapter 5: Transition Curves & Vertical Curves Design",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Vertical Curves & Sight Distance Design.",
       "marks": "6",
       "years": [
@@ -453,7 +454,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Vertical Curves & Sight Distance Design",
+      "chapter": "Chapter 5: Transition Curves & Vertical Curves Design",
       "text": "Write short technical notes on: (a) Key design parameters in Vertical Curves & Sight Distance Design, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -462,7 +463,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Triangulation, Baseline Measurement & Satellite Stations",
+      "chapter": "Chapter 6: Triangulation Principles, Baseline Measurement & Total Station",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Triangulation, Baseline Measurement & Satellite Stations.",
       "marks": "6",
       "years": [
@@ -471,7 +472,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Triangulation, Baseline Measurement & Satellite Stations",
+      "chapter": "Chapter 6: Triangulation Principles, Baseline Measurement & Total Station",
       "text": "Write short technical notes on: (a) Key design parameters in Triangulation, Baseline Measurement & Satellite Stations, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
@@ -480,7 +481,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Trigonometrical Leveling, Total Station & GPS Principles",
+      "chapter": "Chapter 6: Triangulation Principles, Baseline Measurement & Total Station",
       "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Trigonometrical Leveling, Total Station & GPS Principles.",
       "marks": "6",
       "years": [
@@ -489,13 +490,39 @@
       "frequency": 1
     },
     {
-      "chapter": "Trigonometrical Leveling, Total Station & GPS Principles",
+      "chapter": "Chapter 6: Triangulation Principles, Baseline Measurement & Total Station",
       "text": "Write short technical notes on: (a) Key design parameters in Trigonometrical Leveling, Total Station & GPS Principles, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
       "marks": "4+4",
       "years": [
         "2080"
       ],
       "frequency": 1
+    },
+    {
+      "chapter": "Chapter 1: Theodolite Components, Adjustments & Angular Measurements",
+      "text": "Explain the fundamental theoretical concepts, governing principles, and standard analytical methods associated with Theodolite Components, Adjustments & Angular Measurements. Draw neat diagrams and derive key mathematical formulations where applicable.",
+      "marks": "6+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 2: Theodolite Traversing, Gale Table & Balancing Traversing",
+      "text": "Explain the fundamental theoretical concepts, governing principles, and standard analytical methods associated with Theodolite Traversing, Gale Table & Balancing Traversing. Draw neat diagrams and derive key mathematical formulations where applicable.",
+      "marks": "6+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
     }
   ]
 }
