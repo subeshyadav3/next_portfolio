@@ -1,0 +1,503 @@
+{
+  "subject": "Wireless Communication",
+  "generated": "2026-08-17T02:30:00.000Z",
+  "chapters": [
+    "Cellular Concept, Frequency Reuse & System Capacity",
+    "Radio Wave Propagation & Small-Scale Fading",
+    "Modulation Techniques & Equalization / Diversity",
+    "Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA)",
+    "Wireless Standards (GSM, 3G WCDMA, 4G LTE & 5G NR)"
+  ],
+  "questions": [
+    {
+      "chapter": "Cellular Concept, Frequency Reuse & System Capacity",
+      "text": "Explain the Cellular Concept and Frequency Reuse. Define Cluster Size ($N = i^2 + ij + j^2$), Co-channel Reuse Ratio ($Q = \\frac{D}{R} = \\sqrt{3N}$), and Signal-to-Interference Ratio ($S/I = \\frac{(\\sqrt{3N})^n}{i_0}$). Prove that for a 7-cell reuse pattern with path loss exponent $n = 4$ and 6 first-tier co-channel interferers, $S/I \\approx 18.7\\,\\text{dB}$.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Cellular Concept, Frequency Reuse & System Capacity",
+      "text": "Explain Cellular System Capacity expansion techniques: (a) Cell Splitting, (b) Cell Sectoring ($120^\\circ$ and $60^\\circ$ sectoring), and (c) Microcell Zone Concept. Explain Handoff Strategies (Hard handoff vs Soft handoff) and Trunking Efficiency (Erlang B vs Erlang C formulas).",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Radio Wave Propagation & Small-Scale Fading",
+      "text": "Explain Free Space Path Loss (Friis Transmission Equation $P_r = P_t G_t G_r \\left(\\frac{\\lambda}{4\\pi d}\\right)^2$). Explain Ground Reflection (2-Ray Model) and prove that received power falls off with the fourth power of distance: $P_r \\approx P_t G_t G_r \\frac{h_t^2 h_r^2}{d^4}$.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Radio Wave Propagation & Small-Scale Fading",
+      "text": "Explain Small-Scale Fading mechanisms (Multipath time delay spread, Doppler spread). Differentiate between: (a) Flat Fading vs Frequency Selective Fading (Coherence Bandwidth $B_c \\approx \\frac{1}{5\\sigma_\\tau}$), and (b) Fast Fading vs Slow Fading (Coherence Time $T_c \\approx \\frac{9}{16\\pi f_m}$). Explain Rayleigh Fading and Rician Fading distributions.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Modulation Techniques & Equalization / Diversity",
+      "text": "Explain Digital Modulation schemes for mobile communications: Minimum Shift Keying (MSK), Gaussian MSK (GMSK) in GSM, and Quadrature Amplitude Modulation (16-QAM, 64-QAM). Why is constant-envelope modulation favored for power-efficient non-linear RF power amplifiers?",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Modulation Techniques & Equalization / Diversity",
+      "text": "Explain Diversity Techniques to combat multipath fading: (a) Space / Antenna Diversity, (b) Frequency Diversity, and (c) Time Diversity. Compare Combining Techniques: Selection Combining (SC), Equal Gain Combining (EGC), and Maximal Ratio Combining (MRC).",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA)",
+      "text": "Compare FDMA, TDMA, and CDMA multiple access schemes. Explain Direct Sequence Spread Spectrum (DSSS) and Code Division Multiple Access (CDMA). Explain Walsh orthogonal codes, PN spreading codes, Processing Gain ($PG = 10\\log_{10}\\frac{W}{R}$), Near-Far Problem, and Fast Closed-Loop Power Control in CDMA.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA)",
+      "text": "Explain Orthogonal Frequency Division Multiplexing (OFDM) and OFDMA used in 4G LTE and 5G NR. How does the Cyclic Prefix (CP) eliminate Inter-Symbol Interference (ISI) and Inter-Carrier Interference (ICI)?",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Wireless Standards (GSM, 3G WCDMA, 4G LTE & 5G NR)",
+      "text": "Draw the complete GSM Network Architecture: Mobile Station (MS), Base Station Subsystem (BSS: BTS, BSC), Network and Switching Subsystem (NSS: MSC, HLR, VLR, AUC, EIR), and Operation Subsystem (OSS). Explain GSM frame hierarchy and call setup procedure.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Wireless Standards (GSM, 3G WCDMA, 4G LTE & 5G NR)",
+      "text": "Explain the key architectural enhancements in 4G LTE (E-UTRAN and Evolved Packet Core - EPC) and 5G New Radio (eMBB, URLLC, mMTC, Massive MIMO, Beamforming, and Network Slicing).",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Cellular Concept, Frequency Reuse & System Capacity",
+      "text": "A practical engineering system operating under Cellular Concept, Frequency Reuse & System Capacity is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Radio Wave Propagation & Small-Scale Fading",
+      "text": "A practical engineering system operating under Radio Wave Propagation & Small-Scale Fading is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Modulation Techniques & Equalization / Diversity",
+      "text": "A practical engineering system operating under Modulation Techniques & Equalization / Diversity is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA)",
+      "text": "A practical engineering system operating under Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Wireless Standards (GSM, 3G WCDMA, 4G LTE & 5G NR)",
+      "text": "A practical engineering system operating under Wireless Standards (GSM, 3G WCDMA, 4G LTE & 5G NR) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Cellular Concept, Frequency Reuse & System Capacity",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Cellular Concept, Frequency Reuse & System Capacity. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Cellular Concept, Frequency Reuse & System Capacity",
+      "text": "Solve the standard numerical problem for Cellular Concept, Frequency Reuse & System Capacity using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Radio Wave Propagation & Small-Scale Fading",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Radio Wave Propagation & Small-Scale Fading. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Radio Wave Propagation & Small-Scale Fading",
+      "text": "Solve the standard numerical problem for Radio Wave Propagation & Small-Scale Fading using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Modulation Techniques & Equalization / Diversity",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Modulation Techniques & Equalization / Diversity. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Modulation Techniques & Equalization / Diversity",
+      "text": "Solve the standard numerical problem for Modulation Techniques & Equalization / Diversity using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA)",
+      "text": "Solve the standard numerical problem for Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Wireless Standards (GSM, 3G WCDMA, 4G LTE & 5G NR)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Wireless Standards (GSM, 3G WCDMA, 4G LTE & 5G NR). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Wireless Standards (GSM, 3G WCDMA, 4G LTE & 5G NR)",
+      "text": "Solve the standard numerical problem for Wireless Standards (GSM, 3G WCDMA, 4G LTE & 5G NR) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Cellular Concept, Frequency Reuse & System Capacity",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Cellular Concept, Frequency Reuse & System Capacity. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Cellular Concept, Frequency Reuse & System Capacity",
+      "text": "State and prove the classical theorems and stability criteria associated with Cellular Concept, Frequency Reuse & System Capacity. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Radio Wave Propagation & Small-Scale Fading",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Radio Wave Propagation & Small-Scale Fading. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Radio Wave Propagation & Small-Scale Fading",
+      "text": "State and prove the classical theorems and stability criteria associated with Radio Wave Propagation & Small-Scale Fading. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Modulation Techniques & Equalization / Diversity",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Modulation Techniques & Equalization / Diversity. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Modulation Techniques & Equalization / Diversity",
+      "text": "State and prove the classical theorems and stability criteria associated with Modulation Techniques & Equalization / Diversity. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA)",
+      "text": "State and prove the classical theorems and stability criteria associated with Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Wireless Standards (GSM, 3G WCDMA, 4G LTE & 5G NR)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Wireless Standards (GSM, 3G WCDMA, 4G LTE & 5G NR). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Wireless Standards (GSM, 3G WCDMA, 4G LTE & 5G NR)",
+      "text": "State and prove the classical theorems and stability criteria associated with Wireless Standards (GSM, 3G WCDMA, 4G LTE & 5G NR). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Cellular Concept, Frequency Reuse & System Capacity",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Cellular Concept, Frequency Reuse & System Capacity.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Cellular Concept, Frequency Reuse & System Capacity",
+      "text": "Write short technical notes on: (a) Key design parameters in Cellular Concept, Frequency Reuse & System Capacity, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Radio Wave Propagation & Small-Scale Fading",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Radio Wave Propagation & Small-Scale Fading.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Radio Wave Propagation & Small-Scale Fading",
+      "text": "Write short technical notes on: (a) Key design parameters in Radio Wave Propagation & Small-Scale Fading, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Modulation Techniques & Equalization / Diversity",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Modulation Techniques & Equalization / Diversity.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Modulation Techniques & Equalization / Diversity",
+      "text": "Write short technical notes on: (a) Key design parameters in Modulation Techniques & Equalization / Diversity, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA)",
+      "text": "Write short technical notes on: (a) Key design parameters in Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Wireless Standards (GSM, 3G WCDMA, 4G LTE & 5G NR)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Wireless Standards (GSM, 3G WCDMA, 4G LTE & 5G NR).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Wireless Standards (GSM, 3G WCDMA, 4G LTE & 5G NR)",
+      "text": "Write short technical notes on: (a) Key design parameters in Wireless Standards (GSM, 3G WCDMA, 4G LTE & 5G NR), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    }
+  ]
+}

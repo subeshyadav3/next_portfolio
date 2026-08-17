@@ -1,0 +1,654 @@
+{
+  "subject": "Computer Networks",
+  "generated": "2026-08-17T02:30:00.000Z",
+  "chapters": [
+    "Network Reference Models (OSI & TCP/IP)",
+    "Data Link Layer, Framing, Error Control & Flow Control",
+    "Medium Access Control Sublayer & IEEE 802 Standards",
+    "Network Layer, IP Addressing, Subnetting & Routing",
+    "Transport & Application Layers, TCP Protocols & Security"
+  ],
+  "questions": [
+    {
+      "chapter": "Network Reference Models (OSI & TCP/IP)",
+      "text": "Compare the 7-layer OSI Reference Model with the 5-layer TCP/IP Reference Model. Explain the primary functions, data protocol units (PDU), and prominent protocols operating at each layer.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Network Reference Models (OSI & TCP/IP)",
+      "text": "Differentiate between Circuit Switching, Packet Switching (Datagram vs Virtual Circuit), and Message Switching in terms of connection setup delay, transmission overhead, bandwidth efficiency, and fault tolerance.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Data Link Layer, Framing, Error Control & Flow Control",
+      "text": "Explain Framing techniques: (a) Character Count, (b) Byte Stuffing (Flag byte with ESC), and (c) Bit Stuffing (Flag `01111110` with zero stuffing after five consecutive 1s). Stuff the payload `0111111011111001` using bit stuffing.",
+      "marks": "3+3",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Data Link Layer, Framing, Error Control & Flow Control",
+      "text": "Explain Cyclic Redundancy Check (CRC) error detection. A message bit stream $1101011011$ is to be transmitted using generator polynomial $G(x) = x^4 + x + 1$. Find the transmitted CRC codeword and verify error detection when the third bit from left is corrupted during transmission.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Data Link Layer, Framing, Error Control & Flow Control",
+      "text": "Explain Sliding Window Flow Control protocols: (a) Stop-and-Wait ARQ, (b) Go-Back-N ARQ, and (c) Selective Repeat ARQ. Derive formulas for channel utilization and maximum sender window size for Go-Back-N ($N = 2^k - 1$) and Selective Repeat ($N = 2^{k-1}$).",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Medium Access Control Sublayer & IEEE 802 Standards",
+      "text": "Explain Pure ALOHA vs. Slotted ALOHA random access protocols. Derive the throughput equations $S = G e^{-2G}$ for Pure ALOHA ($S_{max} = \\frac{1}{2e} \\approx 18.4\\%$) and $S = G e^{-G}$ for Slotted ALOHA ($S_{max} = \\frac{1}{e} \\approx 36.8\\%$).",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Medium Access Control Sublayer & IEEE 802 Standards",
+      "text": "Explain CSMA Protocols (1-persistent, Non-persistent, $p$-persistent CSMA). Explain CSMA/CD in Ethernet and CSMA/CA with RTS/CTS handshake in IEEE 802.11 Wireless LANs (Solving Hidden Terminal and Exposed Terminal problems).",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Medium Access Control Sublayer & IEEE 802 Standards",
+      "text": "In a $10\\,\\text{Mbps}$ CSMA/CD standard Ethernet network with cable length $2.5\\,\\text{km}$ and signal propagation speed $2 \\times 10^8\\,\\text{m/s}$, derive the minimum frame size requirement: $L_{min} = 2 \\times R \\times T_p = 64\\,\\text{bytes}$. Explain Binary Exponential Backoff algorithm.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Network Layer, IP Addressing, Subnetting & Routing",
+      "text": "An organization is assigned the Class C network block $192.168.10.0/24$. Design a Variable Length Subnet Mask (VLSM) scheme to create 4 subnets: Subnet A with 60 hosts, Subnet B with 28 hosts, Subnet C with 12 hosts, and Subnet D with 2 hosts. Specify subnet mask (CIDR), network address, usable IP range, and broadcast address for each subnet.",
+      "marks": "10",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Network Layer, IP Addressing, Subnetting & Routing",
+      "text": "Explain Distance Vector Routing based on Bellman-Ford algorithm. What is the Count-to-Infinity problem and how is it mitigated using Split Horizon and Poison Reverse? Trace distance vector table updates for a 4-node network when a link fails.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Network Layer, IP Addressing, Subnetting & Routing",
+      "text": "Explain Link State Routing based on Dijkstra's shortest path algorithm. Describe Link State Advertisements (LSA) and flooding in Open Shortest Path First (OSPF) routing protocol. Compare OSPF vs RIP vs BGP.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Network Layer, IP Addressing, Subnetting & Routing",
+      "text": "Explain the working of: (a) Address Resolution Protocol (ARP) and Inverse ARP, (b) Dynamic Host Configuration Protocol (DHCP - DORA process), (c) Network Address Translation (NAT/PAT), and (d) Internet Control Message Protocol (ICMP ping & traceroute).",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Transport & Application Layers, TCP Protocols & Security",
+      "text": "Explain TCP 3-Way Handshake connection establishment (SYN, SYN-ACK, ACK) and 4-way connection teardown (FIN, ACK, FIN, ACK) with sequence numbers and timing diagrams. Differentiate between TCP and UDP headers.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Transport & Application Layers, TCP Protocols & Security",
+      "text": "Explain TCP Congestion Control mechanisms in detail: Slow Start (Exponential increase), Congestion Avoidance (Additive Increase), Fast Retransmit (Triple duplicate ACKs), and Fast Recovery (Multiplicative Decrease - AIMD). Draw the Congestion Window ($cwnd$) growth curve.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Transport & Application Layers, TCP Protocols & Security",
+      "text": "Explain Domain Name System (DNS) architecture (Hierarchical domain tree, Root servers, TLD servers, Authoritative servers, Recursive vs Iterative resolution, and DNS caching). Explain HTTP/1.1, HTTP/2 (Multiplexing, header compression), and HTTP/3 (QUIC over UDP).",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Transport & Application Layers, TCP Protocols & Security",
+      "text": "Explain RSA Public Key Cryptography. In an RSA cryptosystem with prime numbers $p = 7, q = 11$, and public encryption exponent $e = 13$: (a) Calculate modulus $n = pq$ and Euler's totient $\\phi(n) = (p-1)(q-1)$, (b) Determine private decryption key $d$ using Extended Euclidean algorithm, (c) Encrypt plaintext message $M = 9$, and (d) Decrypt ciphertext $C$ back to $M$.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Transport & Application Layers, TCP Protocols & Security",
+      "text": "Explain Digital Signatures and Public Key Certificates (X.509 standard). Explain SSL/TLS protocol architecture and the secure HTTPS connection establishment.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Network Reference Models (OSI & TCP/IP)",
+      "text": "Explain Transmission Impairments in physical media: Attenuation, Distortion, and Noise (Thermal, Intermodulation, Crosstalk, Impulse noise). State Nyquist Bit Rate formula ($C = 2B \\log_2 M$) and Shannon Capacity formula ($C = B \\log_2(1 + SNR)$).",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Data Link Layer, Framing, Error Control & Flow Control",
+      "text": "Explain Hamming Code for single error correction and double error detection. Generate the 7-bit Hamming code for data word $1011$ with even parity. Correct the received corrupted codeword $1001011$.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Medium Access Control Sublayer & IEEE 802 Standards",
+      "text": "Explain Virtual LAN (VLAN - IEEE 802.1Q frame tagging), Spanning Tree Protocol (STP - IEEE 802.1D for bridge loop prevention), and differences between Hubs, Layer-2 Switches, and Routers.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Network Layer, IP Addressing, Subnetting & Routing",
+      "text": "Compare IPv4 Header vs IPv6 Header. Explain IPv6 address representations, Neighbor Discovery Protocol (NDP), and IPv4-to-IPv6 transition strategies (Dual-Stack, Tunneling, and NAT64).",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Transport & Application Layers, TCP Protocols & Security",
+      "text": "Explain Email Protocols: Simple Mail Transfer Protocol (SMTP), Post Office Protocol (POP3), and Internet Message Access Protocol (IMAP). Explain MIME (Multipurpose Internet Mail Extensions).",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Network Reference Models (OSI & TCP/IP)",
+      "text": "A practical engineering system operating under Network Reference Models (OSI & TCP/IP) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Data Link Layer, Framing, Error Control & Flow Control",
+      "text": "A practical engineering system operating under Data Link Layer, Framing, Error Control & Flow Control is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Medium Access Control Sublayer & IEEE 802 Standards",
+      "text": "A practical engineering system operating under Medium Access Control Sublayer & IEEE 802 Standards is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Network Layer, IP Addressing, Subnetting & Routing",
+      "text": "A practical engineering system operating under Network Layer, IP Addressing, Subnetting & Routing is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Transport & Application Layers, TCP Protocols & Security",
+      "text": "A practical engineering system operating under Transport & Application Layers, TCP Protocols & Security is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Network Reference Models (OSI & TCP/IP)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Network Reference Models (OSI & TCP/IP). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Network Reference Models (OSI & TCP/IP)",
+      "text": "Solve the standard numerical problem for Network Reference Models (OSI & TCP/IP) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Data Link Layer, Framing, Error Control & Flow Control",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Data Link Layer, Framing, Error Control & Flow Control. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Data Link Layer, Framing, Error Control & Flow Control",
+      "text": "Solve the standard numerical problem for Data Link Layer, Framing, Error Control & Flow Control using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Medium Access Control Sublayer & IEEE 802 Standards",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Medium Access Control Sublayer & IEEE 802 Standards. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Medium Access Control Sublayer & IEEE 802 Standards",
+      "text": "Solve the standard numerical problem for Medium Access Control Sublayer & IEEE 802 Standards using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Network Layer, IP Addressing, Subnetting & Routing",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Network Layer, IP Addressing, Subnetting & Routing. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Network Layer, IP Addressing, Subnetting & Routing",
+      "text": "Solve the standard numerical problem for Network Layer, IP Addressing, Subnetting & Routing using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Transport & Application Layers, TCP Protocols & Security",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Transport & Application Layers, TCP Protocols & Security. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Transport & Application Layers, TCP Protocols & Security",
+      "text": "Solve the standard numerical problem for Transport & Application Layers, TCP Protocols & Security using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Network Reference Models (OSI & TCP/IP)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Network Reference Models (OSI & TCP/IP). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Network Reference Models (OSI & TCP/IP)",
+      "text": "State and prove the classical theorems and stability criteria associated with Network Reference Models (OSI & TCP/IP). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Data Link Layer, Framing, Error Control & Flow Control",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Data Link Layer, Framing, Error Control & Flow Control. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Data Link Layer, Framing, Error Control & Flow Control",
+      "text": "State and prove the classical theorems and stability criteria associated with Data Link Layer, Framing, Error Control & Flow Control. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Medium Access Control Sublayer & IEEE 802 Standards",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Medium Access Control Sublayer & IEEE 802 Standards. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Medium Access Control Sublayer & IEEE 802 Standards",
+      "text": "State and prove the classical theorems and stability criteria associated with Medium Access Control Sublayer & IEEE 802 Standards. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Network Layer, IP Addressing, Subnetting & Routing",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Network Layer, IP Addressing, Subnetting & Routing. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Network Layer, IP Addressing, Subnetting & Routing",
+      "text": "State and prove the classical theorems and stability criteria associated with Network Layer, IP Addressing, Subnetting & Routing. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Transport & Application Layers, TCP Protocols & Security",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Transport & Application Layers, TCP Protocols & Security. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Transport & Application Layers, TCP Protocols & Security",
+      "text": "State and prove the classical theorems and stability criteria associated with Transport & Application Layers, TCP Protocols & Security. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Network Reference Models (OSI & TCP/IP)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Network Reference Models (OSI & TCP/IP).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Network Reference Models (OSI & TCP/IP)",
+      "text": "Write short technical notes on: (a) Key design parameters in Network Reference Models (OSI & TCP/IP), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Data Link Layer, Framing, Error Control & Flow Control",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Data Link Layer, Framing, Error Control & Flow Control.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Data Link Layer, Framing, Error Control & Flow Control",
+      "text": "Write short technical notes on: (a) Key design parameters in Data Link Layer, Framing, Error Control & Flow Control, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Medium Access Control Sublayer & IEEE 802 Standards",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Medium Access Control Sublayer & IEEE 802 Standards.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Medium Access Control Sublayer & IEEE 802 Standards",
+      "text": "Write short technical notes on: (a) Key design parameters in Medium Access Control Sublayer & IEEE 802 Standards, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Network Layer, IP Addressing, Subnetting & Routing",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Network Layer, IP Addressing, Subnetting & Routing.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Network Layer, IP Addressing, Subnetting & Routing",
+      "text": "Write short technical notes on: (a) Key design parameters in Network Layer, IP Addressing, Subnetting & Routing, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Transport & Application Layers, TCP Protocols & Security",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Transport & Application Layers, TCP Protocols & Security.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Transport & Application Layers, TCP Protocols & Security",
+      "text": "Write short technical notes on: (a) Key design parameters in Transport & Application Layers, TCP Protocols & Security, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    }
+  ]
+}

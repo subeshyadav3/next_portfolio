@@ -1,0 +1,526 @@
+{
+  "subject": "Electrical Circuits and Machines",
+  "chapters": [
+    "Circuit Analysis Techniques & Network Theorems",
+    "AC Circuit Analysis, Polyphase Systems & Resonance",
+    "Transient Analysis of First & Second Order Circuits (RL, RC, RLC)",
+    "Transformers & Single-Phase Induction Motors",
+    "Three-Phase Synchronous & Induction Machines"
+  ],
+  "questions": [
+    {
+      "chapter": "Circuit Analysis Techniques & Network Theorems",
+      "text": "State and prove Superposition Theorem, Thevenin's Theorem, Norton's Theorem, and Maximum Power Transfer Theorem for AC circuits containing independent and dependent sources. Determine the load impedance $Z_L$ for maximum power transfer ($Z_L = Z_{th}^*$).",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Circuit Analysis Techniques & Network Theorems",
+      "text": "Solve a two-port network: Define $Z$-parameters, $Y$-parameters, $ABCD$ (Transmission) parameters, and $h$-parameters. Derive conditions for Reciprocity ($Z_{12} = Z_{21}, AD - BC = 1$) and Symmetry ($Z_{11} = Z_{22}, A = D$).",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "AC Circuit Analysis, Polyphase Systems & Resonance",
+      "text": "Derive expressions for Resonant Frequency ($f_0 = \\frac{1}{2\\pi\\sqrt{LC}}$), Quality Factor ($Q = \\frac{\\omega_0 L}{R}$), and Half-Power Bandwidth ($\\Delta f = f_0 / Q$) in Series RLC and Parallel RLC circuits. Draw frequency response curves for current and impedance.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "AC Circuit Analysis, Polyphase Systems & Resonance",
+      "text": "Derive Line and Phase relationships in balanced Star and Delta 3-phase connections. Explain the Two-Wattmeter Method for measuring active and reactive power. Show that $\\tan\\phi = \\sqrt{3}\\frac{W_1 - W_2}{W_1 + W_2}$.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Transient Analysis of First & Second Order Circuits (RL, RC, RLC)",
+      "text": "Derive the transient current response $i(t)$ when a DC voltage $V$ is switched across a series $R-L$ circuit ($i(t) = \\frac{V}{R}(1 - e^{-t/\\tau})$) and series $R-C$ circuit ($i(t) = \\frac{V}{R}e^{-t/\\tau}$). Define Time Constant $\\tau$.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Transient Analysis of First & Second Order Circuits (RL, RC, RLC)",
+      "text": "Formulate the Second-Order differential equation for a series $R-L-C$ circuit subjected to a step voltage. Classify and sketch responses for Overdamped ($R > 2\\sqrt{L/C}$), Critically Damped ($R = 2\\sqrt{L/C}$), and Underdamped ($R < 2\\sqrt{L/C}$) conditions using Laplace Transforms.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Transformers & Single-Phase Induction Motors",
+      "text": "Derive the Equivalent Circuit of a Single-Phase Transformer referred to primary and secondary windings. Explain Open-Circuit (OC) test and Short-Circuit (SC) test for finding core loss ($P_i$), copper loss ($P_{cu}$), equivalent resistance $R_{01}$, and reactance $X_{01}$. Derive the condition for Maximum Efficiency (Iron loss = Copper loss).",
+      "marks": "4+8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Transformers & Single-Phase Induction Motors",
+      "text": "Explain Voltage Regulation of a transformer at lagging, unity, and leading power factors: $\\text{VR} = \\frac{I_2(R_{02}\\cos\\phi_2 \\pm X_{02}\\sin\\phi_2)}{V_2} \\times 100\\%$. Draw the complete phasor diagram for lagging power factor load.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Three-Phase Synchronous & Induction Machines",
+      "text": "Explain the production of a Rotating Magnetic Field in a 3-Phase Induction Motor. Derive the Torque equation: $T = \\frac{3}{\\omega_s} \\frac{V^2 (R_2'/s)}{(R_1 + R_2'/s)^2 + (X_1 + X_2')^2}$. Derive maximum torque ($T_{max} = \\frac{3 V^2}{2\\omega_s [R_1 + \\sqrt{R_1^2 + (X_1 + X_2')^2}]}$) and slip at maximum torque ($s_{max} = \\frac{R_2'}{\\sqrt{R_1^2 + (X_1 + X_2')^2}}$).",
+      "marks": "4+8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Three-Phase Synchronous & Induction Machines",
+      "text": "Explain working of a 3-Phase Synchronous Generator (Alternator). Derive the EMF equation: $E_{ph} = 4.44 k_p k_d f \\Phi T_{ph}$. Explain Synchronous Impedance Method (EMF Method) for determining voltage regulation.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Transformers & Single-Phase Induction Motors",
+      "text": "Explain Double Revolving Field Theory for Single-Phase Induction Motors. Explain starting methods: Split-Phase, Capacitor-Start, Capacitor-Start Capacitor-Run, and Shaded-Pole motors.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Three-Phase Synchronous & Induction Machines",
+      "text": "Explain Synchronous Motor starting methods (Damper windings, pony motor). Draw $V$-Curves and Inverted $V$-Curves showing variation of armature current and power factor with field excitation. Explain Synchronous Condenser.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Circuit Analysis Techniques & Network Theorems",
+      "text": "A practical engineering system operating under Circuit Analysis Techniques & Network Theorems is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "AC Circuit Analysis, Polyphase Systems & Resonance",
+      "text": "A practical engineering system operating under AC Circuit Analysis, Polyphase Systems & Resonance is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Transient Analysis of First & Second Order Circuits (RL, RC, RLC)",
+      "text": "A practical engineering system operating under Transient Analysis of First & Second Order Circuits (RL, RC, RLC) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Transformers & Single-Phase Induction Motors",
+      "text": "A practical engineering system operating under Transformers & Single-Phase Induction Motors is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Three-Phase Synchronous & Induction Machines",
+      "text": "A practical engineering system operating under Three-Phase Synchronous & Induction Machines is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Circuit Analysis Techniques & Network Theorems",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Circuit Analysis Techniques & Network Theorems. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Circuit Analysis Techniques & Network Theorems",
+      "text": "Solve the standard numerical problem for Circuit Analysis Techniques & Network Theorems using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "AC Circuit Analysis, Polyphase Systems & Resonance",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of AC Circuit Analysis, Polyphase Systems & Resonance. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "AC Circuit Analysis, Polyphase Systems & Resonance",
+      "text": "Solve the standard numerical problem for AC Circuit Analysis, Polyphase Systems & Resonance using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Transient Analysis of First & Second Order Circuits (RL, RC, RLC)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Transient Analysis of First & Second Order Circuits (RL, RC, RLC). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Transient Analysis of First & Second Order Circuits (RL, RC, RLC)",
+      "text": "Solve the standard numerical problem for Transient Analysis of First & Second Order Circuits (RL, RC, RLC) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Transformers & Single-Phase Induction Motors",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Transformers & Single-Phase Induction Motors. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Transformers & Single-Phase Induction Motors",
+      "text": "Solve the standard numerical problem for Transformers & Single-Phase Induction Motors using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Three-Phase Synchronous & Induction Machines",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Three-Phase Synchronous & Induction Machines. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Three-Phase Synchronous & Induction Machines",
+      "text": "Solve the standard numerical problem for Three-Phase Synchronous & Induction Machines using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Circuit Analysis Techniques & Network Theorems",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Circuit Analysis Techniques & Network Theorems. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Circuit Analysis Techniques & Network Theorems",
+      "text": "State and prove the classical theorems and stability criteria associated with Circuit Analysis Techniques & Network Theorems. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "AC Circuit Analysis, Polyphase Systems & Resonance",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in AC Circuit Analysis, Polyphase Systems & Resonance. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "AC Circuit Analysis, Polyphase Systems & Resonance",
+      "text": "State and prove the classical theorems and stability criteria associated with AC Circuit Analysis, Polyphase Systems & Resonance. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Transient Analysis of First & Second Order Circuits (RL, RC, RLC)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Transient Analysis of First & Second Order Circuits (RL, RC, RLC). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Transient Analysis of First & Second Order Circuits (RL, RC, RLC)",
+      "text": "State and prove the classical theorems and stability criteria associated with Transient Analysis of First & Second Order Circuits (RL, RC, RLC). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Transformers & Single-Phase Induction Motors",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Transformers & Single-Phase Induction Motors. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Transformers & Single-Phase Induction Motors",
+      "text": "State and prove the classical theorems and stability criteria associated with Transformers & Single-Phase Induction Motors. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Three-Phase Synchronous & Induction Machines",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Three-Phase Synchronous & Induction Machines. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Three-Phase Synchronous & Induction Machines",
+      "text": "State and prove the classical theorems and stability criteria associated with Three-Phase Synchronous & Induction Machines. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Circuit Analysis Techniques & Network Theorems",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Circuit Analysis Techniques & Network Theorems.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Circuit Analysis Techniques & Network Theorems",
+      "text": "Write short technical notes on: (a) Key design parameters in Circuit Analysis Techniques & Network Theorems, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "AC Circuit Analysis, Polyphase Systems & Resonance",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in AC Circuit Analysis, Polyphase Systems & Resonance.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "AC Circuit Analysis, Polyphase Systems & Resonance",
+      "text": "Write short technical notes on: (a) Key design parameters in AC Circuit Analysis, Polyphase Systems & Resonance, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Transient Analysis of First & Second Order Circuits (RL, RC, RLC)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Transient Analysis of First & Second Order Circuits (RL, RC, RLC).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Transient Analysis of First & Second Order Circuits (RL, RC, RLC)",
+      "text": "Write short technical notes on: (a) Key design parameters in Transient Analysis of First & Second Order Circuits (RL, RC, RLC), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Transformers & Single-Phase Induction Motors",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Transformers & Single-Phase Induction Motors.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Transformers & Single-Phase Induction Motors",
+      "text": "Write short technical notes on: (a) Key design parameters in Transformers & Single-Phase Induction Motors, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Three-Phase Synchronous & Induction Machines",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Three-Phase Synchronous & Induction Machines.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Three-Phase Synchronous & Induction Machines",
+      "text": "Write short technical notes on: (a) Key design parameters in Three-Phase Synchronous & Induction Machines, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    }
+  ]
+}

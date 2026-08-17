@@ -1,0 +1,652 @@
+{
+  "subject": "Engineering Mathematics III",
+  "chapters": [
+    "Determinants, Matrices & Vector Spaces",
+    "Linear Transformations & Eigenvalues/Eigenvectors",
+    "Fourier Series & Fourier Integrals",
+    "Laplace Transforms & Applications to Differential Equations",
+    "Partial Differential Equations (Wave, Heat & Laplace Equations)",
+    "Functions of Complex Variables (Analytic Functions & Residues)"
+  ],
+  "questions": [
+    {
+      "chapter": "Determinants, Matrices & Vector Spaces",
+      "text": "Define Rank of a matrix. Reduce the matrix $\\mathbf{A} = \\begin{bmatrix} 1 & 2 & 3 & 4 \\\\ 2 & 1 & 4 & 5 \\\\ 1 & 5 & 5 & 7 \\\\ 8 & 1 & 14 & 16 \\end{bmatrix}$ to Row Echelon Form and Normal Form $(\\begin{bmatrix} \\mathbf{I}_r & 0 \\\\ 0 & 0 \\end{bmatrix})$, and find its rank.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Determinants, Matrices & Vector Spaces",
+      "text": "Investigate for what values of $\\lambda$ and $\\mu$ the system of linear equations:\n$x + y + z = 6$\n$x + 2y + 3z = 10$\n$x + 2y + \\lambda z = \\mu$\nhas: (a) No solution, (b) A unique solution, and (c) An infinite number of solutions.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Determinants, Matrices & Vector Spaces",
+      "text": "Define a Vector Space and Subspace. Determine whether the set $W = \\{(x, y, z) \\in \\mathbb{R}^3 \\mid 2x - 3y + z = 0\\}$ is a subspace of $\\mathbb{R}^3$. Find a basis and dimension of $W$.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Linear Transformations & Eigenvalues/Eigenvectors",
+      "text": "Find the Eigenvalues and Eigenvectors of the matrix $\\mathbf{A} = \\begin{bmatrix} 8 & -6 & 2 \\\\ -6 & 7 & -4 \\\\ 2 & -4 & 3 \\end{bmatrix}$. Diagonalize the matrix $\\mathbf{A}$ using modal matrix $\\mathbf{P}$ such that $\\mathbf{P}^{-1}\\mathbf{A}\\mathbf{P} = \\mathbf{D}$.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Linear Transformations & Eigenvalues/Eigenvectors",
+      "text": "State the Cayley-Hamilton Theorem. Verify Cayley-Hamilton theorem for the matrix $\\mathbf{A} = \\begin{bmatrix} 1 & 2 \\\\ -1 & 3 \\end{bmatrix}$ and use it to find $\\mathbf{A}^{-1}$ and $\\mathbf{A}^4$.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Fourier Series & Fourier Integrals",
+      "text": "Find the Fourier Series expansion of the periodic function $f(x) = x^2$ in the interval $(-\\pi, \\pi)$. Hence deduce that: (a) $\\frac{\\pi^2}{6} = 1 + \\frac{1}{2^2} + \\frac{1}{3^2} + \\dots$, and (b) $\\frac{\\pi^2}{12} = 1 - \\frac{1}{2^2} + \\frac{1}{3^2} - \\dots$.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Fourier Series & Fourier Integrals",
+      "text": "Find the Half-Range Fourier Cosine Series and Sine Series for $f(x) = x(\\pi - x)$ in $0 < x < \\pi$.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Laplace Transforms & Applications to Differential Equations",
+      "text": "State First and Second Shifting Theorems of Laplace Transforms. Find $\\mathcal{L}\\{t e^{-2t}\\sin 3t\\}$ and $\\mathcal{L}\\left\\{\\frac{e^{-at} - e^{-bt}}{t}\\right\\}$.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Laplace Transforms & Applications to Differential Equations",
+      "text": "State Convolution Theorem for Laplace transforms: $\\mathcal{L}^{-1}\\{F(s)G(s)\\} = f(t) * g(t) = \\int_0^t f(\\tau)g(t-\\tau)d\\tau$. Use convolution theorem to find $\\mathcal{L}^{-1}\\left\\{\\frac{1}{s^2(s^2 + 4)}\\right\\}$.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Laplace Transforms & Applications to Differential Equations",
+      "text": "Solve the ordinary differential equation using Laplace Transform: $\\frac{d^2y}{dt^2} + 4\\frac{dy}{dt} + 13y = e^{-t}$ with initial conditions $y(0) = 0, y'(0) = 2$.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Partial Differential Equations (Wave, Heat & Laplace Equations)",
+      "text": "Solve the One-Dimensional Wave Equation $\\frac{\\partial^2 u}{\\partial t^2} = c^2 \\frac{\\partial^2 u}{\\partial x^2}$ for a vibrating string of length $L$ with fixed ends ($u(0, t) = 0, u(L, t) = 0$) and initial displacement $u(x, 0) = k(Lx - x^2)$ and zero initial velocity using the Method of Separation of Variables.",
+      "marks": "4+8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Partial Differential Equations (Wave, Heat & Laplace Equations)",
+      "text": "Solve the One-Dimensional Heat Conduction Equation $\\frac{\\partial u}{\\partial t} = c^2 \\frac{\\partial^2 u}{\\partial x^2}$ for a rod of length $L$ with insulated ends with initial temperature distribution $f(x) = 100\\sin(\\pi x/L)$.",
+      "marks": "10",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Functions of Complex Variables (Analytic Functions & Residues)",
+      "text": "Derive the Cauchy-Riemann (C-R) Equations in Cartesian coordinates ($\\frac{\\partial u}{\\partial x} = \\frac{\\partial v}{\\partial y}, \\frac{\\partial u}{\\partial y} = -\\frac{\\partial v}{\\partial x}$) and Polar coordinates for an analytic function $f(z) = u(x, y) + i v(x, y)$. If $u(x, y) = e^x(x\\cos y - y\\sin y)$, find its harmonic conjugate $v(x, y)$ and express $f(z)$ as a function of $z$ using Milne-Thomson method.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Functions of Complex Variables (Analytic Functions & Residues)",
+      "text": "State Cauchy's Integral Formula: $f^{(n)}(z_0) = \\frac{n!}{2\\pi i}\\oint_C \\frac{f(z)}{(z-z_0)^{n+1}}dz$. Evaluate the contour integral $\\oint_C \\frac{z+1}{z^2(z-2)}dz$ where $C$ is the circle $|z| = 3$ and $|z| = 1$.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Functions of Complex Variables (Analytic Functions & Residues)",
+      "text": "State Cauchy's Residue Theorem: $\\oint_C f(z)dz = 2\\pi i \\sum \\text{Res}(f, z_k)$. Evaluate the real definite integral using contour integration: $\\int_0^{2\\pi} \\frac{d\\theta}{5 - 4\\sin\\theta}$ and $\\int_{-\\infty}^\\infty \\frac{x^2 dx}{(x^2+1)(x^2+4)}$.",
+      "marks": "4+8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Fourier Series & Fourier Integrals",
+      "text": "State Fourier Integral Theorem. Express the function $f(x) = \\begin{cases} 1 & \\text{for } |x| \\le 1 \\\\ 0 & \\text{for } |x| > 1 \\end{cases}$ as a Fourier integral. Hence evaluate $\\int_0^\\infty \\frac{\\sin\\lambda \\cos\\lambda x}{\\lambda}d\\lambda$.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Determinants, Matrices & Vector Spaces",
+      "text": "A practical engineering system operating under Determinants, Matrices & Vector Spaces is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Linear Transformations & Eigenvalues/Eigenvectors",
+      "text": "A practical engineering system operating under Linear Transformations & Eigenvalues/Eigenvectors is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Fourier Series & Fourier Integrals",
+      "text": "A practical engineering system operating under Fourier Series & Fourier Integrals is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Laplace Transforms & Applications to Differential Equations",
+      "text": "A practical engineering system operating under Laplace Transforms & Applications to Differential Equations is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Partial Differential Equations (Wave, Heat & Laplace Equations)",
+      "text": "A practical engineering system operating under Partial Differential Equations (Wave, Heat & Laplace Equations) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Functions of Complex Variables (Analytic Functions & Residues)",
+      "text": "A practical engineering system operating under Functions of Complex Variables (Analytic Functions & Residues) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Determinants, Matrices & Vector Spaces",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Determinants, Matrices & Vector Spaces. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Determinants, Matrices & Vector Spaces",
+      "text": "Solve the standard numerical problem for Determinants, Matrices & Vector Spaces using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Linear Transformations & Eigenvalues/Eigenvectors",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Linear Transformations & Eigenvalues/Eigenvectors. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Linear Transformations & Eigenvalues/Eigenvectors",
+      "text": "Solve the standard numerical problem for Linear Transformations & Eigenvalues/Eigenvectors using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Fourier Series & Fourier Integrals",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Fourier Series & Fourier Integrals. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Fourier Series & Fourier Integrals",
+      "text": "Solve the standard numerical problem for Fourier Series & Fourier Integrals using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Laplace Transforms & Applications to Differential Equations",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Laplace Transforms & Applications to Differential Equations. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Laplace Transforms & Applications to Differential Equations",
+      "text": "Solve the standard numerical problem for Laplace Transforms & Applications to Differential Equations using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Partial Differential Equations (Wave, Heat & Laplace Equations)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Partial Differential Equations (Wave, Heat & Laplace Equations). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Partial Differential Equations (Wave, Heat & Laplace Equations)",
+      "text": "Solve the standard numerical problem for Partial Differential Equations (Wave, Heat & Laplace Equations) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Functions of Complex Variables (Analytic Functions & Residues)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Functions of Complex Variables (Analytic Functions & Residues). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Functions of Complex Variables (Analytic Functions & Residues)",
+      "text": "Solve the standard numerical problem for Functions of Complex Variables (Analytic Functions & Residues) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Determinants, Matrices & Vector Spaces",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Determinants, Matrices & Vector Spaces. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Determinants, Matrices & Vector Spaces",
+      "text": "State and prove the classical theorems and stability criteria associated with Determinants, Matrices & Vector Spaces. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Linear Transformations & Eigenvalues/Eigenvectors",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Linear Transformations & Eigenvalues/Eigenvectors. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Linear Transformations & Eigenvalues/Eigenvectors",
+      "text": "State and prove the classical theorems and stability criteria associated with Linear Transformations & Eigenvalues/Eigenvectors. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Fourier Series & Fourier Integrals",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Fourier Series & Fourier Integrals. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Fourier Series & Fourier Integrals",
+      "text": "State and prove the classical theorems and stability criteria associated with Fourier Series & Fourier Integrals. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Laplace Transforms & Applications to Differential Equations",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Laplace Transforms & Applications to Differential Equations. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Laplace Transforms & Applications to Differential Equations",
+      "text": "State and prove the classical theorems and stability criteria associated with Laplace Transforms & Applications to Differential Equations. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Partial Differential Equations (Wave, Heat & Laplace Equations)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Partial Differential Equations (Wave, Heat & Laplace Equations). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Partial Differential Equations (Wave, Heat & Laplace Equations)",
+      "text": "State and prove the classical theorems and stability criteria associated with Partial Differential Equations (Wave, Heat & Laplace Equations). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Functions of Complex Variables (Analytic Functions & Residues)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Functions of Complex Variables (Analytic Functions & Residues). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Functions of Complex Variables (Analytic Functions & Residues)",
+      "text": "State and prove the classical theorems and stability criteria associated with Functions of Complex Variables (Analytic Functions & Residues). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Determinants, Matrices & Vector Spaces",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Determinants, Matrices & Vector Spaces.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Determinants, Matrices & Vector Spaces",
+      "text": "Write short technical notes on: (a) Key design parameters in Determinants, Matrices & Vector Spaces, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Linear Transformations & Eigenvalues/Eigenvectors",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Linear Transformations & Eigenvalues/Eigenvectors.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Linear Transformations & Eigenvalues/Eigenvectors",
+      "text": "Write short technical notes on: (a) Key design parameters in Linear Transformations & Eigenvalues/Eigenvectors, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Fourier Series & Fourier Integrals",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Fourier Series & Fourier Integrals.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Fourier Series & Fourier Integrals",
+      "text": "Write short technical notes on: (a) Key design parameters in Fourier Series & Fourier Integrals, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Laplace Transforms & Applications to Differential Equations",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Laplace Transforms & Applications to Differential Equations.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Laplace Transforms & Applications to Differential Equations",
+      "text": "Write short technical notes on: (a) Key design parameters in Laplace Transforms & Applications to Differential Equations, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Partial Differential Equations (Wave, Heat & Laplace Equations)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Partial Differential Equations (Wave, Heat & Laplace Equations).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Partial Differential Equations (Wave, Heat & Laplace Equations)",
+      "text": "Write short technical notes on: (a) Key design parameters in Partial Differential Equations (Wave, Heat & Laplace Equations), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Functions of Complex Variables (Analytic Functions & Residues)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Functions of Complex Variables (Analytic Functions & Residues).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Functions of Complex Variables (Analytic Functions & Residues)",
+      "text": "Write short technical notes on: (a) Key design parameters in Functions of Complex Variables (Analytic Functions & Residues), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    }
+  ]
+}

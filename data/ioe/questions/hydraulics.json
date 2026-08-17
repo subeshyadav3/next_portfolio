@@ -1,0 +1,490 @@
+{
+  "subject": "Hydraulics",
+  "generated": "2026-08-17T02:30:00.000Z",
+  "chapters": [
+    "Pipe Flow Systems, Pipe Networks (Hardy Cross) & Water Hammer",
+    "Uniform Flow in Open Channels (Manning & Chezy Equations)",
+    "Energy & Momentum Principles (Specific Energy & Hydraulic Jump)",
+    "Gradually Varied Flow (GVF Computations & Water Surface Profiles)",
+    "Hydraulic Turbines (Pelton, Francis, Kaplan) & Centrifugal Pumps"
+  ],
+  "questions": [
+    {
+      "chapter": "Pipe Flow Systems, Pipe Networks (Hardy Cross) & Water Hammer",
+      "text": "State Darcy-Weisbach equation for head loss ($h_f = \\frac{f L V^2}{2 g D}$). Explain Moody's diagram. Explain Pipe Networks analysis using the Hardy Cross Method based on balancing heads: $\\Delta Q = -\\frac{\\sum h_f}{n \\sum (h_f / Q)}$. Perform two iterations of Hardy Cross for a two-loop pipe distribution network.",
+      "marks": "3+7",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Pipe Flow Systems, Pipe Networks (Hardy Cross) & Water Hammer",
+      "text": "Explain Water Hammer in pipes. Derive Joukowsky's formula for water hammer pressure due to instantaneous closure of valve: $\\Delta P = \\rho c V$ where celerity $c = \\sqrt{\\frac{K/\\rho}{1 + (K/E)(D/t)}}$. Differentiate between Rapid Closure ($t_c < \\frac{2L}{c}$) and Slow Closure ($t_c > \\frac{2L}{c}$). Explain functions of a Surge Tank.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Uniform Flow in Open Channels (Manning & Chezy Equations)",
+      "text": "State Chezy's formula ($V = C \\sqrt{R S_0}$) and Manning's formula ($V = \\frac{1}{n} R^{2/3} S_0^{1/2}$). Derive conditions for the Most Economical (Hydraulically Efficient) channel sections: (a) Rectangular section ($B = 2y, R = y/2$), (b) Trapezoidal section ($R = y/2$, side slope $1:\\sqrt{3}$ or $\\theta = 60^\\circ$, half hexagon), and (c) Triangular section ($R = \\frac{y}{2\\sqrt{2}}, \\theta = 45^\\circ$).",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Uniform Flow in Open Channels (Manning & Chezy Equations)",
+      "text": "Design a hydraulically efficient trapezoidal channel with side slopes $1.5\\text{H}:1\\text{V}$ to convey a discharge of $25\\,\\text{m}^3/\\text{s}$ at bed slope $S_0 = 1/2500$ with Manning's $n = 0.022$. Check for critical velocity and Froude number.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Energy & Momentum Principles (Specific Energy & Hydraulic Jump)",
+      "text": "Define Specific Energy ($E = y + \\frac{V^2}{2g} = y + \\frac{Q^2}{2gA^2}$). Derive the Critical Depth condition ($F_r = 1, \\frac{Q^2 T}{g A^3} = 1$). Show that for a rectangular channel: (a) Critical depth $y_c = \\left(\\frac{q^2}{g}\\right)^{1/3}$, and (b) Minimum specific energy $E_{min} = 1.5 y_c$. Explain Choking at channel transitions (width constriction and bed hump $\\Delta z$).",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Energy & Momentum Principles (Specific Energy & Hydraulic Jump)",
+      "text": "Explain Hydraulic Jump in a horizontal rectangular channel. Derive the Belanger Equation for Sequent (Conjugate) Depths: $\\frac{y_2}{y_1} = \\frac{1}{2}\\left(\\sqrt{1 + 8F_{r1}^2} - 1\\right)$. Derive the expression for energy head loss in a hydraulic jump: $\\Delta E = \\frac{(y_2 - y_1)^3}{4 y_1 y_2}$. Calculate the jump height, efficiency, and power dissipated for initial depth $y_1 = 0.4\\,\\text{m}$ and $F_{r1} = 5.0$.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Gradually Varied Flow (GVF Computations & Water Surface Profiles)",
+      "text": "Derive the Dynamic Equation of Gradually Varied Flow (GVF): $\\frac{dy}{dx} = \\frac{S_0 - S_f}{1 - F_r^2}$. Classify and sketch Water Surface Profiles for Mild ($M_1, M_2, M_3$), Steep ($S_1, S_2, S_3$), Critical ($C_1, C_3$), Horizontal ($H_2, H_3$), and Adverse ($A_2, A_3$) slopes. Explain the Direct Step Method and Standard Step Method for GVF profile computation.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Hydraulic Turbines (Pelton, Francis, Kaplan) & Centrifugal Pumps",
+      "text": "Classify Hydraulic Turbines based on head, specific speed, and action of water (Impulse vs Reaction). Explain the working principle and draw velocity triangles at inlet and outlet for a Pelton Turbine (Derive hydraulic efficiency $\\eta_h = \\frac{2(V_1 - u)(1 + k\\cos\\beta)u}{V_1^2}$, maximum efficiency $\\eta_{max} = \\frac{1 + k\\cos\\beta}{2}$ when $u = 0.5 V_1$) and Francis Turbine.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Hydraulic Turbines (Pelton, Francis, Kaplan) & Centrifugal Pumps",
+      "text": "Explain Draft Tube in reaction turbines (Types, functions, and efficiency $\\eta_d = \\frac{V_1^2 - V_2^2 - 2gh_f}{V_1^2}$). What is Cavitation in turbines and pumps? Explain Thoma's Cavitation Factor ($\\sigma = \\frac{H_{atm} - H_v - H_s}{H}$) and NPSH (Net Positive Suction Head) in Centrifugal Pumps.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Pipe Flow Systems, Pipe Networks (Hardy Cross) & Water Hammer",
+      "text": "A practical engineering system operating under Pipe Flow Systems, Pipe Networks (Hardy Cross) & Water Hammer is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Uniform Flow in Open Channels (Manning & Chezy Equations)",
+      "text": "A practical engineering system operating under Uniform Flow in Open Channels (Manning & Chezy Equations) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Energy & Momentum Principles (Specific Energy & Hydraulic Jump)",
+      "text": "A practical engineering system operating under Energy & Momentum Principles (Specific Energy & Hydraulic Jump) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Gradually Varied Flow (GVF Computations & Water Surface Profiles)",
+      "text": "A practical engineering system operating under Gradually Varied Flow (GVF Computations & Water Surface Profiles) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Hydraulic Turbines (Pelton, Francis, Kaplan) & Centrifugal Pumps",
+      "text": "A practical engineering system operating under Hydraulic Turbines (Pelton, Francis, Kaplan) & Centrifugal Pumps is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Pipe Flow Systems, Pipe Networks (Hardy Cross) & Water Hammer",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Pipe Flow Systems, Pipe Networks (Hardy Cross) & Water Hammer. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Pipe Flow Systems, Pipe Networks (Hardy Cross) & Water Hammer",
+      "text": "Solve the standard numerical problem for Pipe Flow Systems, Pipe Networks (Hardy Cross) & Water Hammer using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Uniform Flow in Open Channels (Manning & Chezy Equations)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Uniform Flow in Open Channels (Manning & Chezy Equations). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Uniform Flow in Open Channels (Manning & Chezy Equations)",
+      "text": "Solve the standard numerical problem for Uniform Flow in Open Channels (Manning & Chezy Equations) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Energy & Momentum Principles (Specific Energy & Hydraulic Jump)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Energy & Momentum Principles (Specific Energy & Hydraulic Jump). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Energy & Momentum Principles (Specific Energy & Hydraulic Jump)",
+      "text": "Solve the standard numerical problem for Energy & Momentum Principles (Specific Energy & Hydraulic Jump) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Gradually Varied Flow (GVF Computations & Water Surface Profiles)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Gradually Varied Flow (GVF Computations & Water Surface Profiles). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Gradually Varied Flow (GVF Computations & Water Surface Profiles)",
+      "text": "Solve the standard numerical problem for Gradually Varied Flow (GVF Computations & Water Surface Profiles) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Hydraulic Turbines (Pelton, Francis, Kaplan) & Centrifugal Pumps",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Hydraulic Turbines (Pelton, Francis, Kaplan) & Centrifugal Pumps. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Hydraulic Turbines (Pelton, Francis, Kaplan) & Centrifugal Pumps",
+      "text": "Solve the standard numerical problem for Hydraulic Turbines (Pelton, Francis, Kaplan) & Centrifugal Pumps using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Pipe Flow Systems, Pipe Networks (Hardy Cross) & Water Hammer",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Pipe Flow Systems, Pipe Networks (Hardy Cross) & Water Hammer. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Pipe Flow Systems, Pipe Networks (Hardy Cross) & Water Hammer",
+      "text": "State and prove the classical theorems and stability criteria associated with Pipe Flow Systems, Pipe Networks (Hardy Cross) & Water Hammer. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Uniform Flow in Open Channels (Manning & Chezy Equations)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Uniform Flow in Open Channels (Manning & Chezy Equations). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Uniform Flow in Open Channels (Manning & Chezy Equations)",
+      "text": "State and prove the classical theorems and stability criteria associated with Uniform Flow in Open Channels (Manning & Chezy Equations). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Energy & Momentum Principles (Specific Energy & Hydraulic Jump)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Energy & Momentum Principles (Specific Energy & Hydraulic Jump). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Energy & Momentum Principles (Specific Energy & Hydraulic Jump)",
+      "text": "State and prove the classical theorems and stability criteria associated with Energy & Momentum Principles (Specific Energy & Hydraulic Jump). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Gradually Varied Flow (GVF Computations & Water Surface Profiles)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Gradually Varied Flow (GVF Computations & Water Surface Profiles). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Gradually Varied Flow (GVF Computations & Water Surface Profiles)",
+      "text": "State and prove the classical theorems and stability criteria associated with Gradually Varied Flow (GVF Computations & Water Surface Profiles). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Hydraulic Turbines (Pelton, Francis, Kaplan) & Centrifugal Pumps",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Hydraulic Turbines (Pelton, Francis, Kaplan) & Centrifugal Pumps. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Hydraulic Turbines (Pelton, Francis, Kaplan) & Centrifugal Pumps",
+      "text": "State and prove the classical theorems and stability criteria associated with Hydraulic Turbines (Pelton, Francis, Kaplan) & Centrifugal Pumps. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Pipe Flow Systems, Pipe Networks (Hardy Cross) & Water Hammer",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Pipe Flow Systems, Pipe Networks (Hardy Cross) & Water Hammer.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Pipe Flow Systems, Pipe Networks (Hardy Cross) & Water Hammer",
+      "text": "Write short technical notes on: (a) Key design parameters in Pipe Flow Systems, Pipe Networks (Hardy Cross) & Water Hammer, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Uniform Flow in Open Channels (Manning & Chezy Equations)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Uniform Flow in Open Channels (Manning & Chezy Equations).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Uniform Flow in Open Channels (Manning & Chezy Equations)",
+      "text": "Write short technical notes on: (a) Key design parameters in Uniform Flow in Open Channels (Manning & Chezy Equations), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Energy & Momentum Principles (Specific Energy & Hydraulic Jump)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Energy & Momentum Principles (Specific Energy & Hydraulic Jump).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Energy & Momentum Principles (Specific Energy & Hydraulic Jump)",
+      "text": "Write short technical notes on: (a) Key design parameters in Energy & Momentum Principles (Specific Energy & Hydraulic Jump), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Gradually Varied Flow (GVF Computations & Water Surface Profiles)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Gradually Varied Flow (GVF Computations & Water Surface Profiles).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Gradually Varied Flow (GVF Computations & Water Surface Profiles)",
+      "text": "Write short technical notes on: (a) Key design parameters in Gradually Varied Flow (GVF Computations & Water Surface Profiles), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Hydraulic Turbines (Pelton, Francis, Kaplan) & Centrifugal Pumps",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Hydraulic Turbines (Pelton, Francis, Kaplan) & Centrifugal Pumps.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Hydraulic Turbines (Pelton, Francis, Kaplan) & Centrifugal Pumps",
+      "text": "Write short technical notes on: (a) Key design parameters in Hydraulic Turbines (Pelton, Francis, Kaplan) & Centrifugal Pumps, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    }
+  ]
+}

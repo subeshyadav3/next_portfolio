@@ -1,13 +1,38 @@
 import Link from "next/link";
 import { getPosts } from "@/services/posts.service";
 import { deletePostAction, restorePostAction } from "@/actions/posts";
+import { IoeAdminPanel } from "@/components/admin/IoeAdminPanel";
 
 export default async function AdminPostsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ page?: string; status?: string; search?: string; created?: string; updated?: string }>;
+  searchParams: Promise<{ page?: string; status?: string; search?: string; created?: string; updated?: string; area?: string }>;
 }) {
   const sp = await searchParams;
+  const area = sp.area === "ioe" ? "ioe" : "blog";
+
+  if (area === "ioe") {
+    return (
+      <div>
+        <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Posts</h1>
+        <div className="mt-4 flex gap-2">
+          <Link
+            href="/admin/posts"
+            className="rounded-lg bg-gray-200 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-300 dark:bg-gray-800 dark:text-gray-300"
+          >
+            Blog
+          </Link>
+          <span className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white">
+            IOE
+          </span>
+        </div>
+        <div className="mt-4">
+          <IoeAdminPanel />
+        </div>
+      </div>
+    );
+  }
+
   const page = parseInt(sp.page ?? "1", 10);
   const { posts, total, totalPages } = await getPosts({
     page,
@@ -34,12 +59,20 @@ export default async function AdminPostsPage({
 
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold text-gray-900 dark:text-white">Posts</h1>
-        <Link
-          href="/admin/posts/new"
-          className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
-        >
-          New Post
-        </Link>
+        <div className="flex items-center gap-2">
+          <Link
+            href="/admin/posts?area=ioe"
+            className="rounded-lg bg-gray-200 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-300 dark:bg-gray-800 dark:text-gray-300"
+          >
+            IOE
+          </Link>
+          <Link
+            href="/admin/posts/new"
+            className="rounded-lg bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
+          >
+            New Post
+          </Link>
+        </div>
       </div>
 
       <div className="mt-6 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800">

@@ -1,0 +1,503 @@
+{
+  "subject": "Network and Cyber Security",
+  "generated": "2026-08-17T02:30:00.000Z",
+  "chapters": [
+    "Security Principles, Attacks & Classical Ciphers",
+    "Symmetric & Asymmetric Cryptography (AES, RSA, ECC)",
+    "Cryptographic Hashes, Digital Signatures & PKI",
+    "Network Security Protocols (IPsec, SSL/TLS, HTTPS & Kerberos)",
+    "Firewalls, IDS/IPS, Cyber Attacks & Security Auditing"
+  ],
+  "questions": [
+    {
+      "chapter": "Security Principles, Attacks & Classical Ciphers",
+      "text": "Explain the CIA Triad (Confidentiality, Integrity, Availability) and the broader security goals (Authentication, Non-repudiation, Access Control). Classify Security Attacks: Passive Attacks (Eavesdropping, Traffic analysis) vs. Active Attacks (Masquerade, Replay, Modification of messages, Denial of Service - DoS/DDoS).",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Security Principles, Attacks & Classical Ciphers",
+      "text": "Explain Classical Substitution and Transposition Ciphers: Playfair Cipher, Polyalphabetic (Vigenère) Cipher, Rail Fence Cipher, and Hill Cipher. Encrypt the plaintext message \"SECURITY\" using a Hill Cipher with key matrix $K = \\begin{bmatrix} 9 & 4 \\\\ 5 & 7 \\end{bmatrix} \\pmod{26}$ and find its decryption matrix $K^{-1}$.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Symmetric & Asymmetric Cryptography (AES, RSA, ECC)",
+      "text": "Explain the structure of Advanced Encryption Standard (AES). Describe the 4 round transformations: (a) `SubBytes` (Non-linear S-Box substitution), (b) `ShiftRows`, (c) `MixColumns` (Matrix multiplication in $GF(2^8)$), and (d) `AddRoundKey` (XOR with round key schedule). Compare AES with DES/3DES.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Symmetric & Asymmetric Cryptography (AES, RSA, ECC)",
+      "text": "Explain Diffie-Hellman Key Exchange algorithm. In a Diffie-Hellman setup with public prime $q = 23$ and primitive root $\\alpha = 5$, User A selects private key $X_A = 6$ and User B selects $X_B = 15$. (a) Calculate public keys $Y_A$ and $Y_B$, (b) Compute the shared secret session key $K$. Explain Man-in-the-Middle (MitM) attack on Diffie-Hellman.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Cryptographic Hashes, Digital Signatures & PKI",
+      "text": "What are Cryptographic Hash Functions? Explain the three essential security properties: (a) Pre-image resistance (One-way), (b) Second pre-image resistance (Weak collision resistance), and (c) Collision resistance (Strong collision resistance). Explain the Birthday Attack on hash functions and the structure of SHA-256 / SHA-3.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Cryptographic Hashes, Digital Signatures & PKI",
+      "text": "Explain Digital Signature Scheme (Signing and Verification algorithms) using RSA and Digital Signature Standard (DSS / DSA). Explain Public Key Infrastructure (PKI), Digital Certificates (X.509 standard), Certificate Authorities (CA), and Certificate Revocation Lists (CRL).",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Network Security Protocols (IPsec, SSL/TLS, HTTPS & Kerberos)",
+      "text": "Explain IPsec Architecture: (a) Authentication Header (AH), (b) Encapsulating Security Payload (ESP), (c) Transport Mode vs. Tunnel Mode, and (d) Security Associations (SA) and Internet Key Exchange (IKE).",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Network Security Protocols (IPsec, SSL/TLS, HTTPS & Kerberos)",
+      "text": "Explain the TLS/HTTPS Handshake Protocol (ClientHello, ServerHello, Certificate verification, Pre-Master Secret exchange, CipherSpec negotiation, and symmetric session key generation). Explain Kerberos Authentication System (Authentication Server - AS and Ticket Granting Server - TGS).",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Firewalls, IDS/IPS, Cyber Attacks & Security Auditing",
+      "text": "Classify Firewalls: (a) Packet Filtering Firewall (Stateless), (b) Stateful Inspection Firewall, (c) Application-Level Gateway (Proxy), and (d) Circuit-Level Gateway. Explain Demilitarized Zone (DMZ) network design.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Firewalls, IDS/IPS, Cyber Attacks & Security Auditing",
+      "text": "Compare Intrusion Detection Systems (IDS) vs. Intrusion Prevention Systems (IPS). Explain Signature-Based vs. Anomaly-Based detection. Describe common web application vulnerabilities from OWASP Top-10: SQL Injection, Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), and Buffer Overflow.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Security Principles, Attacks & Classical Ciphers",
+      "text": "A practical engineering system operating under Security Principles, Attacks & Classical Ciphers is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Symmetric & Asymmetric Cryptography (AES, RSA, ECC)",
+      "text": "A practical engineering system operating under Symmetric & Asymmetric Cryptography (AES, RSA, ECC) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Cryptographic Hashes, Digital Signatures & PKI",
+      "text": "A practical engineering system operating under Cryptographic Hashes, Digital Signatures & PKI is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Network Security Protocols (IPsec, SSL/TLS, HTTPS & Kerberos)",
+      "text": "A practical engineering system operating under Network Security Protocols (IPsec, SSL/TLS, HTTPS & Kerberos) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Firewalls, IDS/IPS, Cyber Attacks & Security Auditing",
+      "text": "A practical engineering system operating under Firewalls, IDS/IPS, Cyber Attacks & Security Auditing is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Security Principles, Attacks & Classical Ciphers",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Security Principles, Attacks & Classical Ciphers. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Security Principles, Attacks & Classical Ciphers",
+      "text": "Solve the standard numerical problem for Security Principles, Attacks & Classical Ciphers using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Symmetric & Asymmetric Cryptography (AES, RSA, ECC)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Symmetric & Asymmetric Cryptography (AES, RSA, ECC). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Symmetric & Asymmetric Cryptography (AES, RSA, ECC)",
+      "text": "Solve the standard numerical problem for Symmetric & Asymmetric Cryptography (AES, RSA, ECC) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Cryptographic Hashes, Digital Signatures & PKI",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Cryptographic Hashes, Digital Signatures & PKI. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Cryptographic Hashes, Digital Signatures & PKI",
+      "text": "Solve the standard numerical problem for Cryptographic Hashes, Digital Signatures & PKI using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Network Security Protocols (IPsec, SSL/TLS, HTTPS & Kerberos)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Network Security Protocols (IPsec, SSL/TLS, HTTPS & Kerberos). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Network Security Protocols (IPsec, SSL/TLS, HTTPS & Kerberos)",
+      "text": "Solve the standard numerical problem for Network Security Protocols (IPsec, SSL/TLS, HTTPS & Kerberos) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Firewalls, IDS/IPS, Cyber Attacks & Security Auditing",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Firewalls, IDS/IPS, Cyber Attacks & Security Auditing. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Firewalls, IDS/IPS, Cyber Attacks & Security Auditing",
+      "text": "Solve the standard numerical problem for Firewalls, IDS/IPS, Cyber Attacks & Security Auditing using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Security Principles, Attacks & Classical Ciphers",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Security Principles, Attacks & Classical Ciphers. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Security Principles, Attacks & Classical Ciphers",
+      "text": "State and prove the classical theorems and stability criteria associated with Security Principles, Attacks & Classical Ciphers. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Symmetric & Asymmetric Cryptography (AES, RSA, ECC)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Symmetric & Asymmetric Cryptography (AES, RSA, ECC). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Symmetric & Asymmetric Cryptography (AES, RSA, ECC)",
+      "text": "State and prove the classical theorems and stability criteria associated with Symmetric & Asymmetric Cryptography (AES, RSA, ECC). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Cryptographic Hashes, Digital Signatures & PKI",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Cryptographic Hashes, Digital Signatures & PKI. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Cryptographic Hashes, Digital Signatures & PKI",
+      "text": "State and prove the classical theorems and stability criteria associated with Cryptographic Hashes, Digital Signatures & PKI. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Network Security Protocols (IPsec, SSL/TLS, HTTPS & Kerberos)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Network Security Protocols (IPsec, SSL/TLS, HTTPS & Kerberos). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Network Security Protocols (IPsec, SSL/TLS, HTTPS & Kerberos)",
+      "text": "State and prove the classical theorems and stability criteria associated with Network Security Protocols (IPsec, SSL/TLS, HTTPS & Kerberos). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Firewalls, IDS/IPS, Cyber Attacks & Security Auditing",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Firewalls, IDS/IPS, Cyber Attacks & Security Auditing. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Firewalls, IDS/IPS, Cyber Attacks & Security Auditing",
+      "text": "State and prove the classical theorems and stability criteria associated with Firewalls, IDS/IPS, Cyber Attacks & Security Auditing. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Security Principles, Attacks & Classical Ciphers",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Security Principles, Attacks & Classical Ciphers.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Security Principles, Attacks & Classical Ciphers",
+      "text": "Write short technical notes on: (a) Key design parameters in Security Principles, Attacks & Classical Ciphers, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Symmetric & Asymmetric Cryptography (AES, RSA, ECC)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Symmetric & Asymmetric Cryptography (AES, RSA, ECC).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Symmetric & Asymmetric Cryptography (AES, RSA, ECC)",
+      "text": "Write short technical notes on: (a) Key design parameters in Symmetric & Asymmetric Cryptography (AES, RSA, ECC), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Cryptographic Hashes, Digital Signatures & PKI",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Cryptographic Hashes, Digital Signatures & PKI.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Cryptographic Hashes, Digital Signatures & PKI",
+      "text": "Write short technical notes on: (a) Key design parameters in Cryptographic Hashes, Digital Signatures & PKI, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Network Security Protocols (IPsec, SSL/TLS, HTTPS & Kerberos)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Network Security Protocols (IPsec, SSL/TLS, HTTPS & Kerberos).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Network Security Protocols (IPsec, SSL/TLS, HTTPS & Kerberos)",
+      "text": "Write short technical notes on: (a) Key design parameters in Network Security Protocols (IPsec, SSL/TLS, HTTPS & Kerberos), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Firewalls, IDS/IPS, Cyber Attacks & Security Auditing",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Firewalls, IDS/IPS, Cyber Attacks & Security Auditing.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Firewalls, IDS/IPS, Cyber Attacks & Security Auditing",
+      "text": "Write short technical notes on: (a) Key design parameters in Firewalls, IDS/IPS, Cyber Attacks & Security Auditing, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    }
+  ]
+}

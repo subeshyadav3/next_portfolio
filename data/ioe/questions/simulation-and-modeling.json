@@ -1,0 +1,501 @@
+{
+  "subject": "Simulation and Modeling",
+  "generated": "2026-08-17T02:30:00.000Z",
+  "chapters": [
+    "Introduction to Simulation & System Modeling",
+    "Discrete Event Simulation & Queuing Models (M/M/1)",
+    "Random Number & Random Variate Generation",
+    "Model Verification, Validation & Output Analysis",
+    "Simulation Languages & Continuous Simulation Systems"
+  ],
+  "questions": [
+    {
+      "chapter": "Introduction to Simulation & System Modeling",
+      "text": "Define System, Model, and Simulation. When is simulation appropriate and when is it not appropriate? Explain the steps in a Simulation Study (Problem formulation, Model conceptualization, Data collection, Model translation, Verification and Validation, Experimental design, Production runs, and Documentation).",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Discrete Event Simulation & Queuing Models (M/M/1)",
+      "text": "Explain Discrete-Event Simulation (DES) components: Entities, Attributes, Activities, Events, Event List (FEL), System State, and Clock Mechanism (Time-advance algorithm). Manually simulate a Single-Server Queuing System ($M/M/1$) for 6 customer arrivals showing simulation clock, event list, queue status, and server utilization.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Discrete Event Simulation & Queuing Models (M/M/1)",
+      "text": "Explain Kendall's notation for queuing systems ($A/B/c/N/K$). Derive formulas for steady-state probabilities $P_n = (1-\\rho)\\rho^n$, Average number of customers in system ($L = \\frac{\\lambda}{\\mu - \\lambda}$), Average waiting time in queue ($W_q = \\frac{\\lambda}{\\mu(\\mu - \\lambda)}$) for an $M/M/1$ queue with arrival rate $\\lambda$ and service rate $\\mu$.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Random Number & Random Variate Generation",
+      "text": "Explain properties of Pseudo-Random Numbers (Uniformity and Independence). Explain Linear Congruential Generator (LCG): $X_{i+1} = (a X_i + c) \\bmod m$. Generate a sequence of 5 random numbers between $0$ and $1$ using Mixed LCG with $a = 7, c = 5, m = 64$, and seed $X_0 = 3$.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Random Number & Random Variate Generation",
+      "text": "Explain statistical tests for Pseudo-Random numbers: (a) Chi-Square Frequency Test for uniformity ($\\chi^2 = \\sum \\frac{(O_i - E_i)^2}{E_i}$), (b) Kolmogorov-Smirnov (K-S) Test, and (c) Runs Test for independence (Runs above/below the mean and Runs up/down).",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Random Number & Random Variate Generation",
+      "text": "Explain the Inverse Transform Technique for generating random variates. Derive the inverse transform formula for generating: (a) Exponentially distributed variates ($X = -\\frac{1}{\\lambda} \\ln(1 - R)$), (b) Uniformly distributed variates, and (c) Triangular distribution.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Model Verification, Validation & Output Analysis",
+      "text": "Differentiate between Model Verification (building the model right) and Model Validation (building the right model). Explain calibration and validation of simulation models using Naylor and Finger's 3-step validation approach (Face validity, Validation of model assumptions, Validating input-output transformations with historical data using Turing test).",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Simulation Languages & Continuous Simulation Systems",
+      "text": "Differentiate between Terminating Simulation and Non-Terminating (Steady-State) Simulation. How is Initialization Bias / Warm-up Period handled using Welch's graphical method and Batch Means method for output analysis?",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Introduction to Simulation & System Modeling",
+      "text": "Differentiate between: (a) Static vs Dynamic simulation models, (b) Deterministic vs Stochastic models, and (c) Discrete vs Continuous simulation models with engineering examples.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Random Number & Random Variate Generation",
+      "text": "Explain Acceptance-Rejection Method and Box-Muller Transformation for generating Standard Normal random variates from uniform random numbers: $Z_1 = \\sqrt{-2\\ln R_1}\\cos(2\\pi R_2)$ and $Z_2 = \\sqrt{-2\\ln R_1}\\sin(2\\pi R_2)$.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Introduction to Simulation & System Modeling",
+      "text": "A practical engineering system operating under Introduction to Simulation & System Modeling is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Discrete Event Simulation & Queuing Models (M/M/1)",
+      "text": "A practical engineering system operating under Discrete Event Simulation & Queuing Models (M/M/1) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Random Number & Random Variate Generation",
+      "text": "A practical engineering system operating under Random Number & Random Variate Generation is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Model Verification, Validation & Output Analysis",
+      "text": "A practical engineering system operating under Model Verification, Validation & Output Analysis is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Simulation Languages & Continuous Simulation Systems",
+      "text": "A practical engineering system operating under Simulation Languages & Continuous Simulation Systems is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Introduction to Simulation & System Modeling",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Introduction to Simulation & System Modeling. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Introduction to Simulation & System Modeling",
+      "text": "Solve the standard numerical problem for Introduction to Simulation & System Modeling using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Discrete Event Simulation & Queuing Models (M/M/1)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Discrete Event Simulation & Queuing Models (M/M/1). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Discrete Event Simulation & Queuing Models (M/M/1)",
+      "text": "Solve the standard numerical problem for Discrete Event Simulation & Queuing Models (M/M/1) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Random Number & Random Variate Generation",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Random Number & Random Variate Generation. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Random Number & Random Variate Generation",
+      "text": "Solve the standard numerical problem for Random Number & Random Variate Generation using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Model Verification, Validation & Output Analysis",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Model Verification, Validation & Output Analysis. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Model Verification, Validation & Output Analysis",
+      "text": "Solve the standard numerical problem for Model Verification, Validation & Output Analysis using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Simulation Languages & Continuous Simulation Systems",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Simulation Languages & Continuous Simulation Systems. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Simulation Languages & Continuous Simulation Systems",
+      "text": "Solve the standard numerical problem for Simulation Languages & Continuous Simulation Systems using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Introduction to Simulation & System Modeling",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Introduction to Simulation & System Modeling. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Introduction to Simulation & System Modeling",
+      "text": "State and prove the classical theorems and stability criteria associated with Introduction to Simulation & System Modeling. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Discrete Event Simulation & Queuing Models (M/M/1)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Discrete Event Simulation & Queuing Models (M/M/1). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Discrete Event Simulation & Queuing Models (M/M/1)",
+      "text": "State and prove the classical theorems and stability criteria associated with Discrete Event Simulation & Queuing Models (M/M/1). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Random Number & Random Variate Generation",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Random Number & Random Variate Generation. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Random Number & Random Variate Generation",
+      "text": "State and prove the classical theorems and stability criteria associated with Random Number & Random Variate Generation. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Model Verification, Validation & Output Analysis",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Model Verification, Validation & Output Analysis. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Model Verification, Validation & Output Analysis",
+      "text": "State and prove the classical theorems and stability criteria associated with Model Verification, Validation & Output Analysis. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Simulation Languages & Continuous Simulation Systems",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Simulation Languages & Continuous Simulation Systems. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Simulation Languages & Continuous Simulation Systems",
+      "text": "State and prove the classical theorems and stability criteria associated with Simulation Languages & Continuous Simulation Systems. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Introduction to Simulation & System Modeling",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Introduction to Simulation & System Modeling.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Introduction to Simulation & System Modeling",
+      "text": "Write short technical notes on: (a) Key design parameters in Introduction to Simulation & System Modeling, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Discrete Event Simulation & Queuing Models (M/M/1)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Discrete Event Simulation & Queuing Models (M/M/1).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Discrete Event Simulation & Queuing Models (M/M/1)",
+      "text": "Write short technical notes on: (a) Key design parameters in Discrete Event Simulation & Queuing Models (M/M/1), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Random Number & Random Variate Generation",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Random Number & Random Variate Generation.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Random Number & Random Variate Generation",
+      "text": "Write short technical notes on: (a) Key design parameters in Random Number & Random Variate Generation, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Model Verification, Validation & Output Analysis",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Model Verification, Validation & Output Analysis.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Model Verification, Validation & Output Analysis",
+      "text": "Write short technical notes on: (a) Key design parameters in Model Verification, Validation & Output Analysis, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Simulation Languages & Continuous Simulation Systems",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Simulation Languages & Continuous Simulation Systems.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Simulation Languages & Continuous Simulation Systems",
+      "text": "Write short technical notes on: (a) Key design parameters in Simulation Languages & Continuous Simulation Systems, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    }
+  ]
+}

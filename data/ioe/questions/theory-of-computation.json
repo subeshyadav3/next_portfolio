@@ -1,0 +1,514 @@
+{
+  "subject": "Theory of Computation",
+  "generated": "2026-08-17T02:30:00.000Z",
+  "chapters": [
+    "Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence)",
+    "Regular Expressions & Pumping Lemma for Regular Languages",
+    "Context-Free Grammars (CFG) & Pushdown Automata (PDA)",
+    "Turing Machines (TM) & Computability Theory",
+    "Undecidability, Halting Problem & Chomsky Hierarchy"
+  ],
+  "questions": [
+    {
+      "chapter": "Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence)",
+      "text": "Define Deterministic Finite Automata (DFA) as a 5-tuple $(Q, \\Sigma, \\delta, q_0, F)$. Design a minimal DFA that accepts the language $L = \\{w \\in \\{0, 1\\}^* \\mid w \\text{ contains '010' as a substring and does not end with '11'}\\}$.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence)",
+      "text": "Explain the Subset Construction algorithm for converting a Non-Deterministic Finite Automata with $\\epsilon$-transitions ($\\epsilon$-NFA) into an equivalent DFA. Convert the given $\\epsilon$-NFA into DFA and minimize the DFA using the Table-Filling (Myhill-Nerode) algorithm.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Regular Expressions & Pumping Lemma for Regular Languages",
+      "text": "State Arden's Theorem ($R = Q + RP \\implies R = QP^*$). Find the regular expression corresponding to a given 3-state transition system using Arden's theorem.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Regular Expressions & Pumping Lemma for Regular Languages",
+      "text": "State the Pumping Lemma for Regular Languages. Prove using the pumping lemma that the language $L = \\{0^n 1^n \\mid n \\ge 0\\}$ and $L = \\{a^p \\mid p \\text{ is a prime number}\\}$ are not regular.",
+      "marks": "2+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Context-Free Grammars (CFG) & Pushdown Automata (PDA)",
+      "text": "Define Context-Free Grammar (CFG) and ambiguity. Show that the grammar $S \\to aSb \\mid ab \\mid SS$ is ambiguous by constructing two distinct parse trees and leftmost derivations for the string $aabbab$. Convert the CFG into Chomsky Normal Form (CNF).",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Context-Free Grammars (CFG) & Pushdown Automata (PDA)",
+      "text": "Define Pushdown Automata (PDA) as a 7-tuple. Design a deterministic PDA (DPDA) that accepts the language $L = \\{w c w^R \\mid w \\in \\{a, b\\}^*\\}$ by empty stack and by final state. Show the step-by-step instantaneous description (ID) trace for the string $abacaba$.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Turing Machines (TM) & Computability Theory",
+      "text": "Define standard Single-Tape Turing Machine (TM) as a 7-tuple. Design a Turing Machine that decides the language $L = \\{0^n 1^n 2^n \\mid n \\ge 1\\}$. Draw the complete state transition diagram and show the sequence of tape configurations for the input $001122$.",
+      "marks": "3+7",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Undecidability, Halting Problem & Chomsky Hierarchy",
+      "text": "State and prove that the Halting Problem of Turing Machines ($HALT_{TM}$) is undecidable using Cantor's diagonalization argument. Explain Post's Correspondence Problem (PCP) and Rice's Theorem.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Undecidability, Halting Problem & Chomsky Hierarchy",
+      "text": "Explain the Chomsky Hierarchy of Languages: Type 0 (Unrestricted / Recursively Enumerable), Type 1 (Context-Sensitive), Type 2 (Context-Free), and Type 3 (Regular) with their corresponding grammar production rules and recognizing automata models.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Context-Free Grammars (CFG) & Pushdown Automata (PDA)",
+      "text": "State the Pumping Lemma for Context-Free Languages. Prove that the language $L = \\{a^n b^n c^n \\mid n \\ge 1\\}$ is not context-free.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Turing Machines (TM) & Computability Theory",
+      "text": "Design a Turing Machine to compute the 2's complement of a binary string on tape. Explain variations of Turing Machines: Multi-tape TM, Non-deterministic TM, and Universal Turing Machine (UTM).",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence)",
+      "text": "A practical engineering system operating under Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Regular Expressions & Pumping Lemma for Regular Languages",
+      "text": "A practical engineering system operating under Regular Expressions & Pumping Lemma for Regular Languages is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Context-Free Grammars (CFG) & Pushdown Automata (PDA)",
+      "text": "A practical engineering system operating under Context-Free Grammars (CFG) & Pushdown Automata (PDA) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Turing Machines (TM) & Computability Theory",
+      "text": "A practical engineering system operating under Turing Machines (TM) & Computability Theory is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Undecidability, Halting Problem & Chomsky Hierarchy",
+      "text": "A practical engineering system operating under Undecidability, Halting Problem & Chomsky Hierarchy is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence)",
+      "text": "Solve the standard numerical problem for Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Regular Expressions & Pumping Lemma for Regular Languages",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Regular Expressions & Pumping Lemma for Regular Languages. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Regular Expressions & Pumping Lemma for Regular Languages",
+      "text": "Solve the standard numerical problem for Regular Expressions & Pumping Lemma for Regular Languages using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Context-Free Grammars (CFG) & Pushdown Automata (PDA)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Context-Free Grammars (CFG) & Pushdown Automata (PDA). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Context-Free Grammars (CFG) & Pushdown Automata (PDA)",
+      "text": "Solve the standard numerical problem for Context-Free Grammars (CFG) & Pushdown Automata (PDA) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Turing Machines (TM) & Computability Theory",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Turing Machines (TM) & Computability Theory. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Turing Machines (TM) & Computability Theory",
+      "text": "Solve the standard numerical problem for Turing Machines (TM) & Computability Theory using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Undecidability, Halting Problem & Chomsky Hierarchy",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Undecidability, Halting Problem & Chomsky Hierarchy. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Undecidability, Halting Problem & Chomsky Hierarchy",
+      "text": "Solve the standard numerical problem for Undecidability, Halting Problem & Chomsky Hierarchy using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence)",
+      "text": "State and prove the classical theorems and stability criteria associated with Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Regular Expressions & Pumping Lemma for Regular Languages",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Regular Expressions & Pumping Lemma for Regular Languages. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Regular Expressions & Pumping Lemma for Regular Languages",
+      "text": "State and prove the classical theorems and stability criteria associated with Regular Expressions & Pumping Lemma for Regular Languages. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Context-Free Grammars (CFG) & Pushdown Automata (PDA)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Context-Free Grammars (CFG) & Pushdown Automata (PDA). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Context-Free Grammars (CFG) & Pushdown Automata (PDA)",
+      "text": "State and prove the classical theorems and stability criteria associated with Context-Free Grammars (CFG) & Pushdown Automata (PDA). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Turing Machines (TM) & Computability Theory",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Turing Machines (TM) & Computability Theory. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Turing Machines (TM) & Computability Theory",
+      "text": "State and prove the classical theorems and stability criteria associated with Turing Machines (TM) & Computability Theory. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Undecidability, Halting Problem & Chomsky Hierarchy",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Undecidability, Halting Problem & Chomsky Hierarchy. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Undecidability, Halting Problem & Chomsky Hierarchy",
+      "text": "State and prove the classical theorems and stability criteria associated with Undecidability, Halting Problem & Chomsky Hierarchy. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence)",
+      "text": "Write short technical notes on: (a) Key design parameters in Finite Automata (DFA, NFA & $\\epsilon$-NFA Equivalence), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Regular Expressions & Pumping Lemma for Regular Languages",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Regular Expressions & Pumping Lemma for Regular Languages.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Regular Expressions & Pumping Lemma for Regular Languages",
+      "text": "Write short technical notes on: (a) Key design parameters in Regular Expressions & Pumping Lemma for Regular Languages, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Context-Free Grammars (CFG) & Pushdown Automata (PDA)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Context-Free Grammars (CFG) & Pushdown Automata (PDA).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Context-Free Grammars (CFG) & Pushdown Automata (PDA)",
+      "text": "Write short technical notes on: (a) Key design parameters in Context-Free Grammars (CFG) & Pushdown Automata (PDA), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Turing Machines (TM) & Computability Theory",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Turing Machines (TM) & Computability Theory.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Turing Machines (TM) & Computability Theory",
+      "text": "Write short technical notes on: (a) Key design parameters in Turing Machines (TM) & Computability Theory, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Undecidability, Halting Problem & Chomsky Hierarchy",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Undecidability, Halting Problem & Chomsky Hierarchy.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Undecidability, Halting Problem & Chomsky Hierarchy",
+      "text": "Write short technical notes on: (a) Key design parameters in Undecidability, Halting Problem & Chomsky Hierarchy, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    }
+  ]
+}

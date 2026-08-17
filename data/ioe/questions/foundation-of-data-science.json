@@ -1,0 +1,477 @@
+{
+  "subject": "Foundation of Data Science",
+  "generated": "2026-08-17T02:30:00.000Z",
+  "chapters": [
+    "Data Science Fundamentals, Data Wrangling & Preprocessing",
+    "Exploratory Data Analysis (EDA) & High-Dimensional Geometry",
+    "Dimensionality Reduction (PCA & SVD)",
+    "Supervised & Unsupervised Machine Learning for Data Science",
+    "Big Data Tools, Data Ethics & Case Studies"
+  ],
+  "questions": [
+    {
+      "chapter": "Data Science Fundamentals, Data Wrangling & Preprocessing",
+      "text": "Explain the Data Science Lifecycle (Data Acquisition, Data Cleaning/Wrangling, EDA, Feature Engineering, Model Training, Evaluation, and Deployment). Explain techniques for handling: (a) Missing values (Imputation strategies), (b) Outliers (Z-score and IQR methods), and (c) Feature Scaling (Min-Max Normalization $x' = \\frac{x - x_{min}}{x_{max} - x_{min}}$ vs Standardization $z = \\frac{x - \\mu}{\\sigma}$).",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Exploratory Data Analysis (EDA) & High-Dimensional Geometry",
+      "text": "Explain the Curse of Dimensionality in high-dimensional data spaces: (a) Exponential growth in volume, (b) Distance concentration phenomenon, and (c) Sparsity of points. Explain statistical visualization tools in EDA: Box Plots, Histograms, Pair Plots, and Correlation Heatmaps.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Dimensionality Reduction (PCA & SVD)",
+      "text": "Derive Principal Component Analysis (PCA) from the maximization of variance / minimization of reconstruction error. Given a $2\\text{D}$ dataset, compute the Covariance Matrix $\\boldsymbol{\\Sigma} = \\frac{1}{n}\\mathbf{X}^T\\mathbf{X}$, find its eigenvalues and eigenvectors, and project the data onto the first principal component.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Dimensionality Reduction (PCA & SVD)",
+      "text": "Explain Singular Value Decomposition (SVD): $\\mathbf{A} = \\mathbf{U} \\boldsymbol{\\Sigma} \\mathbf{V}^T$. Explain Low-Rank Matrix Approximation (Eckart-Young-Mirsky Theorem) and its application in image compression and collaborative filtering recommender systems.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Supervised & Unsupervised Machine Learning for Data Science",
+      "text": "Explain Linear Regression with Ordinary Least Squares (OLS) estimation: $\\boldsymbol{\\beta} = (\\mathbf{X}^T\\mathbf{X})^{-1}\\mathbf{X}^T\\mathbf{y}$. Explain Regularization techniques: (a) Ridge Regression ($L_2$ regularization $\\lambda\\|\\boldsymbol{\\beta}\\|_2^2$), and (b) Lasso Regression ($L_1$ regularization $\\lambda\\|\\boldsymbol{\\beta}\\|_1$). How does Lasso perform feature selection?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Supervised & Unsupervised Machine Learning for Data Science",
+      "text": "Explain Logistic Regression for binary classification and derive the cross-entropy loss function $J(\\theta) = -\\frac{1}{m}\\sum [y^{(i)}\\ln(h_\\theta(x^{(i)})) + (1-y^{(i)})\\ln(1-h_\\theta(x^{(i)}))]$. Define classification evaluation metrics: Confusion Matrix, Precision, Recall, $F_1$-score, ROC curve, and AUC.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Supervised & Unsupervised Machine Learning for Data Science",
+      "text": "Explain $k$-Means Clustering algorithm and its objective function $J = \\sum_{j=1}^k \\sum_{i=1}^n \\|x_i^{(j)} - c_j\\|^2$. Explain the Elbow Method and Silhouette Coefficient for determining optimal $k$. Compare $k$-Means with Hierarchical Clustering (Dendrograms) and DBSCAN (Density-Based Spatial Clustering).",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Big Data Tools, Data Ethics & Case Studies",
+      "text": "Explain the role of Apache Spark (Resilient Distributed Datasets - RDDs, DataFrames, Spark SQL, Spark MLlib) in big data processing. Discuss Data Privacy, GDPR principles, Differential Privacy, and algorithmic bias in AI/Data Science systems.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Data Science Fundamentals, Data Wrangling & Preprocessing",
+      "text": "A practical engineering system operating under Data Science Fundamentals, Data Wrangling & Preprocessing is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Exploratory Data Analysis (EDA) & High-Dimensional Geometry",
+      "text": "A practical engineering system operating under Exploratory Data Analysis (EDA) & High-Dimensional Geometry is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Dimensionality Reduction (PCA & SVD)",
+      "text": "A practical engineering system operating under Dimensionality Reduction (PCA & SVD) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Supervised & Unsupervised Machine Learning for Data Science",
+      "text": "A practical engineering system operating under Supervised & Unsupervised Machine Learning for Data Science is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Big Data Tools, Data Ethics & Case Studies",
+      "text": "A practical engineering system operating under Big Data Tools, Data Ethics & Case Studies is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Data Science Fundamentals, Data Wrangling & Preprocessing",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Data Science Fundamentals, Data Wrangling & Preprocessing. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Data Science Fundamentals, Data Wrangling & Preprocessing",
+      "text": "Solve the standard numerical problem for Data Science Fundamentals, Data Wrangling & Preprocessing using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Exploratory Data Analysis (EDA) & High-Dimensional Geometry",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Exploratory Data Analysis (EDA) & High-Dimensional Geometry. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Exploratory Data Analysis (EDA) & High-Dimensional Geometry",
+      "text": "Solve the standard numerical problem for Exploratory Data Analysis (EDA) & High-Dimensional Geometry using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Dimensionality Reduction (PCA & SVD)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Dimensionality Reduction (PCA & SVD). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Dimensionality Reduction (PCA & SVD)",
+      "text": "Solve the standard numerical problem for Dimensionality Reduction (PCA & SVD) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Supervised & Unsupervised Machine Learning for Data Science",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Supervised & Unsupervised Machine Learning for Data Science. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Supervised & Unsupervised Machine Learning for Data Science",
+      "text": "Solve the standard numerical problem for Supervised & Unsupervised Machine Learning for Data Science using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Big Data Tools, Data Ethics & Case Studies",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Big Data Tools, Data Ethics & Case Studies. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Big Data Tools, Data Ethics & Case Studies",
+      "text": "Solve the standard numerical problem for Big Data Tools, Data Ethics & Case Studies using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Data Science Fundamentals, Data Wrangling & Preprocessing",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Data Science Fundamentals, Data Wrangling & Preprocessing. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Data Science Fundamentals, Data Wrangling & Preprocessing",
+      "text": "State and prove the classical theorems and stability criteria associated with Data Science Fundamentals, Data Wrangling & Preprocessing. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Exploratory Data Analysis (EDA) & High-Dimensional Geometry",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Exploratory Data Analysis (EDA) & High-Dimensional Geometry. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Exploratory Data Analysis (EDA) & High-Dimensional Geometry",
+      "text": "State and prove the classical theorems and stability criteria associated with Exploratory Data Analysis (EDA) & High-Dimensional Geometry. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Dimensionality Reduction (PCA & SVD)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Dimensionality Reduction (PCA & SVD). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Dimensionality Reduction (PCA & SVD)",
+      "text": "State and prove the classical theorems and stability criteria associated with Dimensionality Reduction (PCA & SVD). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Supervised & Unsupervised Machine Learning for Data Science",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Supervised & Unsupervised Machine Learning for Data Science. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Supervised & Unsupervised Machine Learning for Data Science",
+      "text": "State and prove the classical theorems and stability criteria associated with Supervised & Unsupervised Machine Learning for Data Science. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Big Data Tools, Data Ethics & Case Studies",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Big Data Tools, Data Ethics & Case Studies. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Big Data Tools, Data Ethics & Case Studies",
+      "text": "State and prove the classical theorems and stability criteria associated with Big Data Tools, Data Ethics & Case Studies. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Data Science Fundamentals, Data Wrangling & Preprocessing",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Data Science Fundamentals, Data Wrangling & Preprocessing.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Data Science Fundamentals, Data Wrangling & Preprocessing",
+      "text": "Write short technical notes on: (a) Key design parameters in Data Science Fundamentals, Data Wrangling & Preprocessing, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Exploratory Data Analysis (EDA) & High-Dimensional Geometry",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Exploratory Data Analysis (EDA) & High-Dimensional Geometry.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Exploratory Data Analysis (EDA) & High-Dimensional Geometry",
+      "text": "Write short technical notes on: (a) Key design parameters in Exploratory Data Analysis (EDA) & High-Dimensional Geometry, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Dimensionality Reduction (PCA & SVD)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Dimensionality Reduction (PCA & SVD).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Dimensionality Reduction (PCA & SVD)",
+      "text": "Write short technical notes on: (a) Key design parameters in Dimensionality Reduction (PCA & SVD), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Supervised & Unsupervised Machine Learning for Data Science",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Supervised & Unsupervised Machine Learning for Data Science.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Supervised & Unsupervised Machine Learning for Data Science",
+      "text": "Write short technical notes on: (a) Key design parameters in Supervised & Unsupervised Machine Learning for Data Science, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Big Data Tools, Data Ethics & Case Studies",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Big Data Tools, Data Ethics & Case Studies.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Big Data Tools, Data Ethics & Case Studies",
+      "text": "Write short technical notes on: (a) Key design parameters in Big Data Tools, Data Ethics & Case Studies, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    }
+  ]
+}

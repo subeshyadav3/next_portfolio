@@ -1,5 +1,6 @@
 import { Inter, JetBrains_Mono, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
+import "katex/dist/katex.min.css";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import { SITE_URL, SITE_NAME, SITE_DESCRIPTION } from "@/lib/site-config";
 import {
@@ -113,6 +114,7 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-adsense-account" content="ca-pub-1645582511604527" />
+
         {/* Per-search-engine hint: companion, alternative, social links */}
         <meta name="twitter:creator" content="@subeshyadav" />
       </head>

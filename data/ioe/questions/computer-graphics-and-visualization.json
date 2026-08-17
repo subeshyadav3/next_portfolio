@@ -1,0 +1,502 @@
+{
+  "subject": "Computer Graphics and Visualization",
+  "generated": "2026-08-17T02:30:00.000Z",
+  "chapters": [
+    "Raster Graphics, Line & Circle Drawing Algorithms",
+    "2D & 3D Geometric Transformations & Projections",
+    "Clipping Algorithms (Cohen-Sutherland & Sutherland-Hodgman)",
+    "Visible Surface Detection (Z-Buffer, A-Buffer & Ray Casting)",
+    "Illumination Models, Shading & Animation Techniques"
+  ],
+  "questions": [
+    {
+      "chapter": "Raster Graphics, Line & Circle Drawing Algorithms",
+      "text": "Derive Bresenham's Line Drawing Algorithm for lines with positive slope $|m| < 1$. Explain the decision parameter $p_k = 2\\Delta y - \\Delta x$. Digitize a line with endpoints $(20, 10)$ and $(30, 18)$ using Bresenham's algorithm showing all intermediate coordinates.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Raster Graphics, Line & Circle Drawing Algorithms",
+      "text": "Derive the Midpoint Circle Generation Algorithm using eight-way symmetry. Formulate the initial decision parameter $p_0 = \\frac{5}{4} - r \\approx 1 - r$. Digitize a circle centered at origin $(0, 0)$ with radius $r = 10$ pixels in the first octant.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "2D & 3D Geometric Transformations & Projections",
+      "text": "Derive the homogeneous coordinate transformation matrices for 2D Translation, Scaling, Rotation about an arbitrary point $(x_r, y_r)$, and Reflection about the line $y = mx + c$. Magnify a triangle $A(0,0), B(1,1), C(5,2)$ to twice its size keeping vertex $B(1,1)$ fixed.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "2D & 3D Geometric Transformations & Projections",
+      "text": "Compare Parallel Projections (Orthographic, Axonometric, Oblique - Cavalier and Cabinet) vs. Perspective Projections (One-point, Two-point, Three-point perspective). Derive the 3D Perspective Projection matrix for a center of projection at $(0, 0, -d)$ on the projection plane $z = 0$: $x_p = \\frac{x}{z/d + 1}, y_p = \\frac{y}{z/d + 1}$.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Clipping Algorithms (Cohen-Sutherland & Sutherland-Hodgman)",
+      "text": "Explain Cohen-Sutherland Line Clipping Algorithm using 4-bit region outcodes (Top, Bottom, Right, Left). Clip a line segment from $P_1(-10, 40)$ to $P_2(50, 80)$ against the rectangular clipping window with boundaries $X_{wmin} = 0, X_{wmax} = 40, Y_{wmin} = 0, Y_{wmax} = 60$.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Clipping Algorithms (Cohen-Sutherland & Sutherland-Hodgman)",
+      "text": "Explain the Sutherland-Hodgman Polygon Clipping Algorithm. How does the algorithm process polygon vertices against the four window boundaries (Left, Right, Bottom, Top)? Explain the four vertex classification cases (In-to-In, In-to-Out, Out-to-Out, Out-to-In). Why does it fail for concave polygons and how does Weiler-Atherton algorithm resolve it?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Visible Surface Detection (Z-Buffer, A-Buffer & Ray Casting)",
+      "text": "Explain the Depth-Buffer ($Z$-Buffer) algorithm for visible surface detection. Derive the incremental depth calculation across scan lines: $z' = z - \\frac{A}{C} \\Delta x$. Explain advantages and limitations of the $Z$-buffer algorithm. What is the $A$-Buffer algorithm for handling antialiasing and transparency?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Illumination Models, Shading & Animation Techniques",
+      "text": "Explain the Phong Illumination Model containing Ambient reflection ($I_a k_a$), Diffuse reflection (Lambert's cosine law $I_d = I_p k_d (\\mathbf{N} \\cdot \\mathbf{L})$), and Specular reflection ($I_s = I_p k_s (\\mathbf{R} \\cdot \\mathbf{V})^n$). Compare: (a) Flat / Constant Shading, (b) Gouraud Shading (Intensity interpolation), and (c) Phong Shading (Normal vector interpolation).",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Illumination Models, Shading & Animation Techniques",
+      "text": "Explain Computer Animation principles (Keyframing, In-betweening / Morphing, Kinematics, Dynamics). Explain Bézier Curves and B-Spline Curves in 3D computer graphics modeling.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Visible Surface Detection (Z-Buffer, A-Buffer & Ray Casting)",
+      "text": "Explain Object-Space vs Image-Space hidden surface removal methods. Describe: (a) Back-Face Detection using surface normal dot product $\\mathbf{N} \\cdot \\mathbf{V}_{view}$, (b) Depth-Sort (Painter's) Algorithm, and (c) BSP Tree (Binary Space Partitioning) algorithm.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Raster Graphics, Line & Circle Drawing Algorithms",
+      "text": "A practical engineering system operating under Raster Graphics, Line & Circle Drawing Algorithms is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "2D & 3D Geometric Transformations & Projections",
+      "text": "A practical engineering system operating under 2D & 3D Geometric Transformations & Projections is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Clipping Algorithms (Cohen-Sutherland & Sutherland-Hodgman)",
+      "text": "A practical engineering system operating under Clipping Algorithms (Cohen-Sutherland & Sutherland-Hodgman) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Visible Surface Detection (Z-Buffer, A-Buffer & Ray Casting)",
+      "text": "A practical engineering system operating under Visible Surface Detection (Z-Buffer, A-Buffer & Ray Casting) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Illumination Models, Shading & Animation Techniques",
+      "text": "A practical engineering system operating under Illumination Models, Shading & Animation Techniques is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Raster Graphics, Line & Circle Drawing Algorithms",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Raster Graphics, Line & Circle Drawing Algorithms. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Raster Graphics, Line & Circle Drawing Algorithms",
+      "text": "Solve the standard numerical problem for Raster Graphics, Line & Circle Drawing Algorithms using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "2D & 3D Geometric Transformations & Projections",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of 2D & 3D Geometric Transformations & Projections. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "2D & 3D Geometric Transformations & Projections",
+      "text": "Solve the standard numerical problem for 2D & 3D Geometric Transformations & Projections using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Clipping Algorithms (Cohen-Sutherland & Sutherland-Hodgman)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Clipping Algorithms (Cohen-Sutherland & Sutherland-Hodgman). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Clipping Algorithms (Cohen-Sutherland & Sutherland-Hodgman)",
+      "text": "Solve the standard numerical problem for Clipping Algorithms (Cohen-Sutherland & Sutherland-Hodgman) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Visible Surface Detection (Z-Buffer, A-Buffer & Ray Casting)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Visible Surface Detection (Z-Buffer, A-Buffer & Ray Casting). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Visible Surface Detection (Z-Buffer, A-Buffer & Ray Casting)",
+      "text": "Solve the standard numerical problem for Visible Surface Detection (Z-Buffer, A-Buffer & Ray Casting) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Illumination Models, Shading & Animation Techniques",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Illumination Models, Shading & Animation Techniques. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Illumination Models, Shading & Animation Techniques",
+      "text": "Solve the standard numerical problem for Illumination Models, Shading & Animation Techniques using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Raster Graphics, Line & Circle Drawing Algorithms",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Raster Graphics, Line & Circle Drawing Algorithms. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Raster Graphics, Line & Circle Drawing Algorithms",
+      "text": "State and prove the classical theorems and stability criteria associated with Raster Graphics, Line & Circle Drawing Algorithms. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "2D & 3D Geometric Transformations & Projections",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in 2D & 3D Geometric Transformations & Projections. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "2D & 3D Geometric Transformations & Projections",
+      "text": "State and prove the classical theorems and stability criteria associated with 2D & 3D Geometric Transformations & Projections. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Clipping Algorithms (Cohen-Sutherland & Sutherland-Hodgman)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Clipping Algorithms (Cohen-Sutherland & Sutherland-Hodgman). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Clipping Algorithms (Cohen-Sutherland & Sutherland-Hodgman)",
+      "text": "State and prove the classical theorems and stability criteria associated with Clipping Algorithms (Cohen-Sutherland & Sutherland-Hodgman). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Visible Surface Detection (Z-Buffer, A-Buffer & Ray Casting)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Visible Surface Detection (Z-Buffer, A-Buffer & Ray Casting). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Visible Surface Detection (Z-Buffer, A-Buffer & Ray Casting)",
+      "text": "State and prove the classical theorems and stability criteria associated with Visible Surface Detection (Z-Buffer, A-Buffer & Ray Casting). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Illumination Models, Shading & Animation Techniques",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Illumination Models, Shading & Animation Techniques. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Illumination Models, Shading & Animation Techniques",
+      "text": "State and prove the classical theorems and stability criteria associated with Illumination Models, Shading & Animation Techniques. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Raster Graphics, Line & Circle Drawing Algorithms",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Raster Graphics, Line & Circle Drawing Algorithms.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Raster Graphics, Line & Circle Drawing Algorithms",
+      "text": "Write short technical notes on: (a) Key design parameters in Raster Graphics, Line & Circle Drawing Algorithms, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "2D & 3D Geometric Transformations & Projections",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in 2D & 3D Geometric Transformations & Projections.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "2D & 3D Geometric Transformations & Projections",
+      "text": "Write short technical notes on: (a) Key design parameters in 2D & 3D Geometric Transformations & Projections, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Clipping Algorithms (Cohen-Sutherland & Sutherland-Hodgman)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Clipping Algorithms (Cohen-Sutherland & Sutherland-Hodgman).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Clipping Algorithms (Cohen-Sutherland & Sutherland-Hodgman)",
+      "text": "Write short technical notes on: (a) Key design parameters in Clipping Algorithms (Cohen-Sutherland & Sutherland-Hodgman), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Visible Surface Detection (Z-Buffer, A-Buffer & Ray Casting)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Visible Surface Detection (Z-Buffer, A-Buffer & Ray Casting).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Visible Surface Detection (Z-Buffer, A-Buffer & Ray Casting)",
+      "text": "Write short technical notes on: (a) Key design parameters in Visible Surface Detection (Z-Buffer, A-Buffer & Ray Casting), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Illumination Models, Shading & Animation Techniques",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Illumination Models, Shading & Animation Techniques.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Illumination Models, Shading & Animation Techniques",
+      "text": "Write short technical notes on: (a) Key design parameters in Illumination Models, Shading & Animation Techniques, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    }
+  ]
+}

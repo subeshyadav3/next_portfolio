@@ -3,6 +3,8 @@ import { useRef, useEffect } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Github, Linkedin, ArrowUpRight, Heart } from "lucide-react";
+import { IOE_UI_VISIBLE } from "@/lib/ioe/config";
+import Link from "next/link";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -74,6 +76,18 @@ $ ls socials/`}
             <ArrowUpRight size={10} className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
           </a>
         </div>
+
+        {IOE_UI_VISIBLE && (
+          <div className="mb-6 footer-animate">
+            <Link
+              href="/ioe"
+              className="mono text-xs text-secondary hover:text-green transition-all duration-300 flex items-center gap-2 group"
+            >
+              IOE Question Papers
+              <ArrowUpRight size={10} className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
+            </Link>
+          </div>
+        )}
 
         <div className="footer-animate flex items-center justify-between flex-wrap gap-4 pt-6" style={{ borderTop: "1px solid var(--border)" }}>
           <p className="mono text-xs text-muted">

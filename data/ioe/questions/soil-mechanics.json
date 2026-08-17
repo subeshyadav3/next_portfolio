@@ -1,0 +1,591 @@
+{
+  "subject": "Soil Mechanics",
+  "generated": "2026-08-17T02:30:00.000Z",
+  "chapters": [
+    "Soil Phase Relations, Index Properties & Soil Classification (USCS)",
+    "Soil Permeability, Seepage & Flow Nets (Laplace Equation)",
+    "Effective Stress Principle, Stress Distribution (Boussinesq & Westergaard)",
+    "Compaction & One-Dimensional Consolidation Theory (Terzaghi)",
+    "Shear Strength of Soil (Mohr-Coulomb Failure Criteria & Triaxial Tests)"
+  ],
+  "questions": [
+    {
+      "chapter": "Soil Phase Relations, Index Properties & Soil Classification (USCS)",
+      "text": "Draw 3-Phase diagrams for soil (Partially saturated, Fully saturated, and Oven-dry). Derive the fundamental soil volume-weight relationships: (a) $e = \\frac{w G}{S_r}$, (b) $\\gamma = \\frac{(G + S_r e)\\gamma_w}{1 + e}$, (c) $\\gamma_{sat} = \\frac{(G + e)\\gamma_w}{1 + e}$, and (d) $\\gamma_d = \\frac{\\gamma}{1 + w} = \\frac{G \\gamma_w}{1 + e}$.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Soil Phase Relations, Index Properties & Soil Classification (USCS)",
+      "text": "A partially saturated soil sample has a total volume of $1000\\,\\text{cm}^3$ and mass $1900\\,\\text{g}$. After oven drying, mass is $1600\\,\\text{g}$. If specific gravity $G = 2.68$, compute: (a) Water content $w$, (b) Void ratio $e$, (c) Porosity $n$, (d) Degree of saturation $S_r$, and (e) Air content $a_c$.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Soil Phase Relations, Index Properties & Soil Classification (USCS)",
+      "text": "Explain Atterberg Limits (Liquid Limit $LL$, Plastic Limit $PL$, Shrinkage Limit $SL$). Define Plasticity Index ($I_p = LL - PL$), Liquidity Index ($I_L = \\frac{w - PL}{I_p}$), Consistency Index ($I_c$), and Activity of Clay ($A = \\frac{I_p}{\\%<2\\mu\\text{m}}$). Classify fine-grained soils using Casagrande's Plasticity Chart ($A$-line equation: $I_p = 0.73(LL - 20)$).",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Soil Permeability, Seepage & Flow Nets (Laplace Equation)",
+      "text": "State Darcy's Law for 1D flow through saturated porous media ($v = k i$). Differentiate between Discharge Velocity $v$ and Seepage Velocity $v_s = v/n$. Derive expressions for coefficient of permeability $k$ using: (a) Constant Head Permeameter ($k = \\frac{Q L}{A h t}$), and (b) Falling (Variable) Head Permeameter ($k = \\frac{a L}{A t} \\ln\\frac{h_1}{h_2}$).",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Soil Permeability, Seepage & Flow Nets (Laplace Equation)",
+      "text": "Derive the equivalent permeability for stratified soil deposits: (a) Flow parallel to bedding planes ($k_x = \\frac{\\sum k_i H_i}{\\sum H_i}$), and (b) Flow perpendicular to bedding planes ($k_z = \\frac{\\sum H_i}{\\sum (H_i / k_i)}$). Prove that $k_x \\ge k_z$.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Soil Permeability, Seepage & Flow Nets (Laplace Equation)",
+      "text": "Derive 2D Laplace equation for steady-state seepage: $\\frac{\\partial^2 h}{\\partial x^2} + \\frac{\\partial^2 h}{\\partial z^2} = 0$. Define Flow Net, Flow Lines, and Equipotential Lines. Derive the formula for seepage discharge through a weir foundation: $q = k H \\frac{N_f}{N_d}$. What is Critical Hydraulic Gradient ($i_{cr} = \\frac{G - 1}{1 + e}$) and Quick Sand condition?",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Effective Stress Principle, Stress Distribution (Boussinesq & Westergaard)",
+      "text": "State Terzaghi's Effective Stress Principle: $\\sigma' = \\sigma - u$. Draw total stress, pore water pressure, and effective stress diagrams for a soil stratum with: (a) Static water table, (b) Upward seepage flow, and (c) Downward seepage flow.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Effective Stress Principle, Stress Distribution (Boussinesq & Westergaard)",
+      "text": "State Boussinesq's theory assumptions for point load $Q$ on a semi-infinite elastic medium: $\\sigma_z = \\frac{3Q}{2\\pi z^2} \\left[1 + \\left(\\frac{r}{z}\\right)^2\\right]^{-5/2} = I_B \\frac{Q}{z^2}$. Explain Newmark's Influence Chart and 2:1 Stress Distribution Method for rectangular loaded footings.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Compaction & One-Dimensional Consolidation Theory (Terzaghi)",
+      "text": "Compare Standard Proctor Compaction Test vs Modified Proctor Compaction Test. Explain Optimum Moisture Content (OMC) and Maximum Dry Density (MDD). What is the Zero Air Void line ($\\gamma_d = \\frac{G\\gamma_w}{1 + wG}$)?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Compaction & One-Dimensional Consolidation Theory (Terzaghi)",
+      "text": "Derive Terzaghi's 1D Consolidation Differential Equation: $\\frac{\\partial u}{\\partial t} = C_v \\frac{\\partial^2 u}{\\partial z^2}$ where $C_v = \\frac{k}{m_v \\gamma_w}$. State all underlying assumptions in Terzaghi's consolidation theory. Define Coefficient of Compressibility ($a_v$), Coefficient of Volume Compressibility ($m_v$), and Compression Index ($C_c = 0.009(LL - 10)$).",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Compaction & One-Dimensional Consolidation Theory (Terzaghi)",
+      "text": "A $4.0\\,\\text{m}$ thick normally consolidated clay layer has initial void ratio $e_0 = 0.85$, $LL = 45\\%$, and initial effective overburden pressure $\\sigma_0' = 120\\,\\text{kN/m}^2$. If construction of a building increases stress by $\\Delta\\sigma' = 60\\,\\text{kN/m}^2$, calculate ultimate consolidation settlement ($S_c$). If $C_v = 3.5 \\times 10^{-4}\\,\\text{cm}^2/\\text{s}$ with two-way drainage, calculate the time required for $50\\%$ consolidation ($T_{v50} = 0.197$).",
+      "marks": "10",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Shear Strength of Soil (Mohr-Coulomb Failure Criteria & Triaxial Tests)",
+      "text": "State Mohr-Coulomb Failure Criterion for soils: $\\tau_f = c' + \\sigma' \\tan\\phi'$. Derive the relationship between Principal Stresses at failure: $\\sigma_1' = \\sigma_3' \\tan^2\\left(45^\\circ + \\frac{\\phi'}{2}\\right) + 2c'\\tan\\left(45^\\circ + \\frac{\\phi'}{2}\\right) = \\sigma_3' N_\\phi + 2c'\\sqrt{N_\\phi}$.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Shear Strength of Soil (Mohr-Coulomb Failure Criteria & Triaxial Tests)",
+      "text": "Explain Triaxial Shear Tests: (a) Unconsolidated Undrained (UU) test, (b) Consolidated Undrained (CU) test with pore pressure measurement (Skempton's pore pressure parameters $A$ and $B$), and (c) Consolidated Drained (CD) test. Draw Mohr circles and failure envelopes.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Shear Strength of Soil (Mohr-Coulomb Failure Criteria & Triaxial Tests)",
+      "text": "Two identical specimens of saturated clay were tested in triaxial apparatus. Specimen 1 under cell pressure $\\sigma_3 = 150\\,\\text{kN/m}^2$ failed at deviator stress $\\sigma_d = 240\\,\\text{kN/m}^2$. Specimen 2 under $\\sigma_3 = 300\\,\\text{kN/m}^2$ failed at $\\sigma_d = 380\\,\\text{kN/m}^2$. Determine the shear strength parameters $c'$ and $\\phi'$ both analytically and graphically.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Soil Phase Relations, Index Properties & Soil Classification (USCS)",
+      "text": "Classify a soil having $60\\%$ passing $4.75\\,\\text{mm}$ sieve, $45\\%$ passing $75\\,\\mu\\text{m}$ sieve, $LL = 42\\%$, and $PL = 22\\%$ according to Unified Soil Classification System (USCS) and AASHTO system.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Compaction & One-Dimensional Consolidation Theory (Terzaghi)",
+      "text": "Explain Square Root of Time Fitting Method (Taylor's method) and Logarithm of Time Fitting Method (Casagrande's method) for determining Coefficient of Consolidation $C_v$ from laboratory oedometer test data.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Shear Strength of Soil (Mohr-Coulomb Failure Criteria & Triaxial Tests)",
+      "text": "Explain Direct Shear Box Test and Unconfined Compressive Strength (UCS) test ($q_u = 2 c_u$). Discuss advantages and limitations of the direct shear test.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Soil Phase Relations, Index Properties & Soil Classification (USCS)",
+      "text": "A practical engineering system operating under Soil Phase Relations, Index Properties & Soil Classification (USCS) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Soil Permeability, Seepage & Flow Nets (Laplace Equation)",
+      "text": "A practical engineering system operating under Soil Permeability, Seepage & Flow Nets (Laplace Equation) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Effective Stress Principle, Stress Distribution (Boussinesq & Westergaard)",
+      "text": "A practical engineering system operating under Effective Stress Principle, Stress Distribution (Boussinesq & Westergaard) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Compaction & One-Dimensional Consolidation Theory (Terzaghi)",
+      "text": "A practical engineering system operating under Compaction & One-Dimensional Consolidation Theory (Terzaghi) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Shear Strength of Soil (Mohr-Coulomb Failure Criteria & Triaxial Tests)",
+      "text": "A practical engineering system operating under Shear Strength of Soil (Mohr-Coulomb Failure Criteria & Triaxial Tests) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Soil Phase Relations, Index Properties & Soil Classification (USCS)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Soil Phase Relations, Index Properties & Soil Classification (USCS). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Soil Phase Relations, Index Properties & Soil Classification (USCS)",
+      "text": "Solve the standard numerical problem for Soil Phase Relations, Index Properties & Soil Classification (USCS) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Soil Permeability, Seepage & Flow Nets (Laplace Equation)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Soil Permeability, Seepage & Flow Nets (Laplace Equation). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Soil Permeability, Seepage & Flow Nets (Laplace Equation)",
+      "text": "Solve the standard numerical problem for Soil Permeability, Seepage & Flow Nets (Laplace Equation) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Effective Stress Principle, Stress Distribution (Boussinesq & Westergaard)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Effective Stress Principle, Stress Distribution (Boussinesq & Westergaard). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Effective Stress Principle, Stress Distribution (Boussinesq & Westergaard)",
+      "text": "Solve the standard numerical problem for Effective Stress Principle, Stress Distribution (Boussinesq & Westergaard) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Compaction & One-Dimensional Consolidation Theory (Terzaghi)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Compaction & One-Dimensional Consolidation Theory (Terzaghi). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Compaction & One-Dimensional Consolidation Theory (Terzaghi)",
+      "text": "Solve the standard numerical problem for Compaction & One-Dimensional Consolidation Theory (Terzaghi) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Shear Strength of Soil (Mohr-Coulomb Failure Criteria & Triaxial Tests)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Shear Strength of Soil (Mohr-Coulomb Failure Criteria & Triaxial Tests). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Shear Strength of Soil (Mohr-Coulomb Failure Criteria & Triaxial Tests)",
+      "text": "Solve the standard numerical problem for Shear Strength of Soil (Mohr-Coulomb Failure Criteria & Triaxial Tests) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Soil Phase Relations, Index Properties & Soil Classification (USCS)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Soil Phase Relations, Index Properties & Soil Classification (USCS). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Soil Phase Relations, Index Properties & Soil Classification (USCS)",
+      "text": "State and prove the classical theorems and stability criteria associated with Soil Phase Relations, Index Properties & Soil Classification (USCS). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Soil Permeability, Seepage & Flow Nets (Laplace Equation)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Soil Permeability, Seepage & Flow Nets (Laplace Equation). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Soil Permeability, Seepage & Flow Nets (Laplace Equation)",
+      "text": "State and prove the classical theorems and stability criteria associated with Soil Permeability, Seepage & Flow Nets (Laplace Equation). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Effective Stress Principle, Stress Distribution (Boussinesq & Westergaard)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Effective Stress Principle, Stress Distribution (Boussinesq & Westergaard). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Effective Stress Principle, Stress Distribution (Boussinesq & Westergaard)",
+      "text": "State and prove the classical theorems and stability criteria associated with Effective Stress Principle, Stress Distribution (Boussinesq & Westergaard). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Compaction & One-Dimensional Consolidation Theory (Terzaghi)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Compaction & One-Dimensional Consolidation Theory (Terzaghi). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Compaction & One-Dimensional Consolidation Theory (Terzaghi)",
+      "text": "State and prove the classical theorems and stability criteria associated with Compaction & One-Dimensional Consolidation Theory (Terzaghi). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Shear Strength of Soil (Mohr-Coulomb Failure Criteria & Triaxial Tests)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Shear Strength of Soil (Mohr-Coulomb Failure Criteria & Triaxial Tests). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Shear Strength of Soil (Mohr-Coulomb Failure Criteria & Triaxial Tests)",
+      "text": "State and prove the classical theorems and stability criteria associated with Shear Strength of Soil (Mohr-Coulomb Failure Criteria & Triaxial Tests). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Soil Phase Relations, Index Properties & Soil Classification (USCS)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Soil Phase Relations, Index Properties & Soil Classification (USCS).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Soil Phase Relations, Index Properties & Soil Classification (USCS)",
+      "text": "Write short technical notes on: (a) Key design parameters in Soil Phase Relations, Index Properties & Soil Classification (USCS), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Soil Permeability, Seepage & Flow Nets (Laplace Equation)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Soil Permeability, Seepage & Flow Nets (Laplace Equation).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Soil Permeability, Seepage & Flow Nets (Laplace Equation)",
+      "text": "Write short technical notes on: (a) Key design parameters in Soil Permeability, Seepage & Flow Nets (Laplace Equation), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Effective Stress Principle, Stress Distribution (Boussinesq & Westergaard)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Effective Stress Principle, Stress Distribution (Boussinesq & Westergaard).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Effective Stress Principle, Stress Distribution (Boussinesq & Westergaard)",
+      "text": "Write short technical notes on: (a) Key design parameters in Effective Stress Principle, Stress Distribution (Boussinesq & Westergaard), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Compaction & One-Dimensional Consolidation Theory (Terzaghi)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Compaction & One-Dimensional Consolidation Theory (Terzaghi).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Compaction & One-Dimensional Consolidation Theory (Terzaghi)",
+      "text": "Write short technical notes on: (a) Key design parameters in Compaction & One-Dimensional Consolidation Theory (Terzaghi), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Shear Strength of Soil (Mohr-Coulomb Failure Criteria & Triaxial Tests)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Shear Strength of Soil (Mohr-Coulomb Failure Criteria & Triaxial Tests).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Shear Strength of Soil (Mohr-Coulomb Failure Criteria & Triaxial Tests)",
+      "text": "Write short technical notes on: (a) Key design parameters in Shear Strength of Soil (Mohr-Coulomb Failure Criteria & Triaxial Tests), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    }
+  ]
+}

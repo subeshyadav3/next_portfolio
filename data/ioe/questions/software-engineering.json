@@ -1,0 +1,564 @@
+{
+  "subject": "Software Engineering",
+  "generated": "2026-08-17T02:30:00.000Z",
+  "chapters": [
+    "Software Process Models & Agile Methodologies",
+    "Requirements Engineering & UML System Modeling",
+    "Software Architectural & Detailed Design (Patterns & Metrics)",
+    "Software Testing (Black Box, White Box) & Quality Assurance",
+    "Software Cost Estimation (COCOMO), Maintenance & DevOps"
+  ],
+  "questions": [
+    {
+      "chapter": "Software Process Models & Agile Methodologies",
+      "text": "Explain Software Development Life Cycle (SDLC) models: Classical Waterfall Model, Prototyping Model, Evolutionary (Iterative) Model, and Boehm's Spiral Model (Risk management in four quadrants). Compare their strengths, weaknesses, and suitability.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Software Process Models & Agile Methodologies",
+      "text": "Explain Agile Software Development principles according to the Agile Manifesto. Explain the Scrum Framework: Scrum Roles (Product Owner, Scrum Master, Cross-functional Dev Team), Artifacts (Product Backlog, Sprint Backlog, Increment, Burn-Down Chart), and Ceremonies (Sprint Planning, Daily Scrum, Sprint Review, Sprint Retrospective).",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Requirements Engineering & UML System Modeling",
+      "text": "Explain Requirements Engineering processes: Inception, Elicitation (Interviews, Surveys, JAD, Observation), Analysis & Negotiation, Specification (Software Requirements Specification - SRS document conforming to IEEE 830 standard), and Validation. What makes a good SRS?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Requirements Engineering & UML System Modeling",
+      "text": "Construct Unified Modeling Language (UML) diagrams for an Online Ride Sharing System (e.g. Pathao / InDrive):\n(a) Use Case Diagram with `<<include>>` and `<<extend>>` relationships\n(b) Class Diagram showing classes, attributes, operations, multiplicity, associations, and composition\n(c) Sequence Diagram for user booking a ride and driver accepting.",
+      "marks": "4+4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Software Architectural & Detailed Design (Patterns & Metrics)",
+      "text": "Explain fundamental software design principles: Modularity, Abstraction, Information Hiding, High Cohesion, and Low Coupling. Explain types of Cohesion (Functional, Sequential, Communicational, Procedural, Temporal, Logical, Coincidental) and types of Coupling (Data, Stamp, Control, External, Common, Content).",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Software Architectural & Detailed Design (Patterns & Metrics)",
+      "text": "Explain Software Architectural Styles: Layered Architecture, Client-Server (2-Tier / 3-Tier), Model-View-Controller (MVC), Pipe-and-Filter, and Event-Driven / Microservices Architecture.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Software Testing (Black Box, White Box) & Quality Assurance",
+      "text": "Explain Black Box (Behavioral) Testing techniques: (a) Equivalence Class Partitioning (ECP - Valid and invalid partitions), and (b) Boundary Value Analysis (BVA - Min, Min+, Nom, Max-, Max). Design black-box test cases for an input field accepting age integer between $18$ and $60$.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Software Testing (Black Box, White Box) & Quality Assurance",
+      "text": "Explain White Box (Structural) Testing: Statement Coverage, Branch / Decision Coverage, Condition Coverage, and Path Coverage. Draw the Control Flow Graph (CFG) for a given C function. Calculate McCabe's Cyclomatic Complexity: $V(G) = E - N + 2P$ and list all linearly independent execution paths.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Software Testing (Black Box, White Box) & Quality Assurance",
+      "text": "Explain Software Testing Levels: Unit Testing (Mocking / Stubs & Drivers), Integration Testing (Top-Down with stubs vs Bottom-Up with drivers vs Big-Bang), System Testing, and Acceptance Testing (Alpha vs Beta testing). What is Regression Testing?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Software Cost Estimation (COCOMO), Maintenance & DevOps",
+      "text": "Explain Boehm's COnstructive COst MOdel (COCOMO): Basic COCOMO, Intermediate COCOMO, and Detailed COCOMO. State formulas for Effort ($E = a \\times (KLOC)^b\\,\\text{person-months}$) and Development Time ($D = c \\times (E)^d\\,\\text{months}$) across Organic, Semi-Detached, and Embedded project modes. Calculate effort and nominal duration for an Organic project of size $40\\,\\text{KLOC}$ ($a = 2.4, b = 1.05, c = 2.5, d = 0.38$).",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Software Cost Estimation (COCOMO), Maintenance & DevOps",
+      "text": "Explain Software Maintenance categories: Corrective, Adaptive, Perfective, and Preventive maintenance. Explain Software Configuration Management (SCM) baseline, change control board (CCB), and version control systems (Git). Explain DevOps and CI/CD pipelines.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Software Process Models & Agile Methodologies",
+      "text": "Explain Extreme Programming (XP) core practices: Test-Driven Development (TDD), Pair Programming, Continuous Integration (CI), Collective Code Ownership, and Refactoring.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Requirements Engineering & UML System Modeling",
+      "text": "Construct an Activity Diagram with swimlanes and fork/join nodes, and a State Machine Diagram for the order lifecycle of an E-Commerce system.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Software Architectural & Detailed Design (Patterns & Metrics)",
+      "text": "Explain GoF (Gang of Four) Design Patterns with UML class diagrams and code snippets: (a) Singleton Pattern, (b) Factory Method Pattern, and (c) Observer Pattern.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Software Cost Estimation (COCOMO), Maintenance & DevOps",
+      "text": "Explain Software Quality Assurance (SQA), McCall's Quality Factors (Product Operation, Revision, Transition), Capability Maturity Model Integration (CMMI - 5 maturity levels), and ISO 9001 standard.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Software Process Models & Agile Methodologies",
+      "text": "A practical engineering system operating under Software Process Models & Agile Methodologies is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Requirements Engineering & UML System Modeling",
+      "text": "A practical engineering system operating under Requirements Engineering & UML System Modeling is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Software Architectural & Detailed Design (Patterns & Metrics)",
+      "text": "A practical engineering system operating under Software Architectural & Detailed Design (Patterns & Metrics) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Software Testing (Black Box, White Box) & Quality Assurance",
+      "text": "A practical engineering system operating under Software Testing (Black Box, White Box) & Quality Assurance is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Software Cost Estimation (COCOMO), Maintenance & DevOps",
+      "text": "A practical engineering system operating under Software Cost Estimation (COCOMO), Maintenance & DevOps is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Software Process Models & Agile Methodologies",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Software Process Models & Agile Methodologies. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Software Process Models & Agile Methodologies",
+      "text": "Solve the standard numerical problem for Software Process Models & Agile Methodologies using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Requirements Engineering & UML System Modeling",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Requirements Engineering & UML System Modeling. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Requirements Engineering & UML System Modeling",
+      "text": "Solve the standard numerical problem for Requirements Engineering & UML System Modeling using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Software Architectural & Detailed Design (Patterns & Metrics)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Software Architectural & Detailed Design (Patterns & Metrics). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Software Architectural & Detailed Design (Patterns & Metrics)",
+      "text": "Solve the standard numerical problem for Software Architectural & Detailed Design (Patterns & Metrics) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Software Testing (Black Box, White Box) & Quality Assurance",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Software Testing (Black Box, White Box) & Quality Assurance. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Software Testing (Black Box, White Box) & Quality Assurance",
+      "text": "Solve the standard numerical problem for Software Testing (Black Box, White Box) & Quality Assurance using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Software Cost Estimation (COCOMO), Maintenance & DevOps",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Software Cost Estimation (COCOMO), Maintenance & DevOps. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Software Cost Estimation (COCOMO), Maintenance & DevOps",
+      "text": "Solve the standard numerical problem for Software Cost Estimation (COCOMO), Maintenance & DevOps using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Software Process Models & Agile Methodologies",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Software Process Models & Agile Methodologies. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Software Process Models & Agile Methodologies",
+      "text": "State and prove the classical theorems and stability criteria associated with Software Process Models & Agile Methodologies. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Requirements Engineering & UML System Modeling",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Requirements Engineering & UML System Modeling. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Requirements Engineering & UML System Modeling",
+      "text": "State and prove the classical theorems and stability criteria associated with Requirements Engineering & UML System Modeling. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Software Architectural & Detailed Design (Patterns & Metrics)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Software Architectural & Detailed Design (Patterns & Metrics). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Software Architectural & Detailed Design (Patterns & Metrics)",
+      "text": "State and prove the classical theorems and stability criteria associated with Software Architectural & Detailed Design (Patterns & Metrics). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Software Testing (Black Box, White Box) & Quality Assurance",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Software Testing (Black Box, White Box) & Quality Assurance. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Software Testing (Black Box, White Box) & Quality Assurance",
+      "text": "State and prove the classical theorems and stability criteria associated with Software Testing (Black Box, White Box) & Quality Assurance. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Software Cost Estimation (COCOMO), Maintenance & DevOps",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Software Cost Estimation (COCOMO), Maintenance & DevOps. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Software Cost Estimation (COCOMO), Maintenance & DevOps",
+      "text": "State and prove the classical theorems and stability criteria associated with Software Cost Estimation (COCOMO), Maintenance & DevOps. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Software Process Models & Agile Methodologies",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Software Process Models & Agile Methodologies.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Software Process Models & Agile Methodologies",
+      "text": "Write short technical notes on: (a) Key design parameters in Software Process Models & Agile Methodologies, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Requirements Engineering & UML System Modeling",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Requirements Engineering & UML System Modeling.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Requirements Engineering & UML System Modeling",
+      "text": "Write short technical notes on: (a) Key design parameters in Requirements Engineering & UML System Modeling, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Software Architectural & Detailed Design (Patterns & Metrics)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Software Architectural & Detailed Design (Patterns & Metrics).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Software Architectural & Detailed Design (Patterns & Metrics)",
+      "text": "Write short technical notes on: (a) Key design parameters in Software Architectural & Detailed Design (Patterns & Metrics), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Software Testing (Black Box, White Box) & Quality Assurance",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Software Testing (Black Box, White Box) & Quality Assurance.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Software Testing (Black Box, White Box) & Quality Assurance",
+      "text": "Write short technical notes on: (a) Key design parameters in Software Testing (Black Box, White Box) & Quality Assurance, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Software Cost Estimation (COCOMO), Maintenance & DevOps",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Software Cost Estimation (COCOMO), Maintenance & DevOps.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Software Cost Estimation (COCOMO), Maintenance & DevOps",
+      "text": "Write short technical notes on: (a) Key design parameters in Software Cost Estimation (COCOMO), Maintenance & DevOps, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    }
+  ]
+}

@@ -1,0 +1,650 @@
+{
+  "subject": "Microprocessors",
+  "generated": "2026-08-17T02:30:00.000Z",
+  "chapters": [
+    "8085 Microprocessor Architecture & Bus Organization",
+    "8085 Instruction Set & Assembly Language Programming",
+    "Bus Timing Diagrams, Memory & I/O Interfacing",
+    "Interrupts & Programmable Peripheral ICs (8255, 8259, 8254)",
+    "8086 16-Bit Microprocessor Architecture & Programming"
+  ],
+  "questions": [
+    {
+      "chapter": "8085 Microprocessor Architecture & Bus Organization",
+      "text": "Draw the functional block diagram of the Intel 8085 8-bit microprocessor. Explain the internal components: Arithmetic Logic Unit (ALU), Accumulator (Reg A), General Purpose Registers (B, C, D, E, H, L), Temporary Registers (W, Z), Program Counter (PC), Stack Pointer (SP), Instruction Register (IR), Instruction Decoder, and Flag Register ($S, Z, AC, P, CY$).",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "8085 Microprocessor Architecture & Bus Organization",
+      "text": "Explain the pin diagram of 8085. Explain how the lower order address/data bus ($AD_0-AD_7$) is demultiplexed using the Address Latch Enable ($ALE$) signal and a 74LS373 octal transparent latch with a neat schematic circuit diagram.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "8085 Instruction Set & Assembly Language Programming",
+      "text": "Explain the Addressing Modes of 8085 (Immediate, Direct, Register, Register Indirect, Implicit) with two assembly instruction examples for each. Classify 8085 instructions based on byte length (1-byte, 2-byte, 3-byte).",
+      "marks": "5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "8085 Instruction Set & Assembly Language Programming",
+      "text": "Write an 8085 assembly language program to sort an array of $10$ bytes stored from memory address $2050\\text{H}$ in ascending / descending order using the Bubble Sort algorithm.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "8085 Instruction Set & Assembly Language Programming",
+      "text": "Write an 8085 assembly language program to find the largest and smallest number in a block of $N$ data bytes starting at memory address $3000\\text{H}$. Store the largest byte at $4000\\text{H}$ and smallest byte at $4001\\text{H}$.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "8085 Instruction Set & Assembly Language Programming",
+      "text": "Write an 8085 subroutine to generate a precise time delay of $100\\,\\text{ms}$ using a 16-bit register pair (e.g. `BC`). Calculate the loop count assuming an 8085 operating clock frequency of $3.072\\,\\text{MHz}$ ($T$-state duration $= 0.3255\\,\\mu\\text{s}$).",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Bus Timing Diagrams, Memory & I/O Interfacing",
+      "text": "Draw the complete bus timing diagram for the instruction `MVI A, 32H` (Opcode Fetch machine cycle $4T$ + Memory Read machine cycle $3T$), showing signals $CLK, A_{15}-A_8, AD_7-AD_0, ALE, \\overline{RD}, \\overline{WR}, IO/\\overline{M}, S_0, S_1$.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Bus Timing Diagrams, Memory & I/O Interfacing",
+      "text": "Compare Memory-Mapped I/O vs Peripheral I/O (I/O-Mapped I/O / Isolated I/O) in terms of address bus size, instructions used, decoding hardware, and execution speed.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Bus Timing Diagrams, Memory & I/O Interfacing",
+      "text": "Interface an $8\\,\\text{KB}$ EPROM ($2764$) and an $8\\,\\text{KB}$ Static RAM ($6264$) to the 8085 microprocessor with absolute memory address map: EPROM at $0000\\text{H}-1FFF\\text{H}$ and SRAM at $4000\\text{H}-5FFF\\text{H}$ using a 74LS138 $3:8$ decoder and address latch 74LS373. Draw the complete schematic interface diagram.",
+      "marks": "10",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Interrupts & Programmable Peripheral ICs (8255, 8259, 8254)",
+      "text": "Explain hardware and software interrupts in 8085. Classify TRAP, RST 7.5, RST 6.5, RST 5.5, and INTR based on vector addresses, trigger mechanisms (Edge vs Level), priority, and maskability. Explain the bit format of Set Interrupt Mask ($SIM$) and Read Interrupt Mask ($RIM$) instructions.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Interrupts & Programmable Peripheral ICs (8255, 8259, 8254)",
+      "text": "Draw the functional block diagram of the Intel 8255 Programmable Peripheral Interface (PPI). Explain its operational modes: Mode 0 (Basic I/O), Mode 1 (Strobed I/O with handshake signals), and Mode 2 (Strobed Bidirectional Bus I/O). Construct the 8255 Control Word format for I/O and BSR (Bit Set/Reset) modes.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Interrupts & Programmable Peripheral ICs (8255, 8259, 8254)",
+      "text": "Interface a matrix keyboard ($4 \\times 4$) and 7-segment display or Stepper Motor to the 8085 microprocessor using the 8255 PPI. Write an assembly program to rotate the stepper motor in clockwise direction by $90^\\circ$.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "8086 16-Bit Microprocessor Architecture & Programming",
+      "text": "Draw the internal architecture of Intel 8086 16-bit microprocessor. Explain the Bus Interface Unit (BIU) with 6-byte Instruction Queue and Execution Unit (EU). Explain the advantages of Memory Segmentation in 8086.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "8086 16-Bit Microprocessor Architecture & Programming",
+      "text": "Explain physical address calculation in 8086. If Code Segment $CS = 2400\\text{H}$ and Instruction Pointer $IP = 3500\\text{H}$, calculate the 20-bit Physical Address ($\\text{PA} = CS \\times 10\\text{H} + IP$). Explain 8086 addressing modes (Base-Index with displacement) and write an 8086 assembly program to add two 16-bit numbers.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "8085 Microprocessor Architecture & Bus Organization",
+      "text": "Explain status and control signals in 8085: $IO/\\overline{M}, S_0, S_1, \\overline{RD}, \\overline{WR}$, and $READY$. Construct the Status Table showing machine cycles (Opcode Fetch, Memory Read, Memory Write, I/O Read, I/O Write, Interrupt Acknowledge, Halt, Hold, Reset).",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "8085 Instruction Set & Assembly Language Programming",
+      "text": "Write an 8085 assembly program to multiply two 8-bit unsigned numbers stored at memory locations $2050\\text{H}$ and $2051\\text{H}$ using successive addition and store the 16-bit product at $2052\\text{H}$ and $2053\\text{H}$.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Bus Timing Diagrams, Memory & I/O Interfacing",
+      "text": "Draw the bus timing diagram for: (a) `STA 3000H` (13 $T$-states across 4 machine cycles: Opcode Fetch, Memory Read, Memory Read, Memory Write), and (b) `IN 05H`.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Interrupts & Programmable Peripheral ICs (8255, 8259, 8254)",
+      "text": "Draw the block diagram of Intel 8254 Programmable Interval Timer. Explain its 6 operational modes (Mode 0: Interrupt on terminal count, Mode 1: Hardware retriggerable one-shot, Mode 2: Rate generator, Mode 3: Square wave generator, Mode 4: Software triggered strobe, Mode 5: Hardware triggered strobe).",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Interrupts & Programmable Peripheral ICs (8255, 8259, 8254)",
+      "text": "Explain the architecture and cascading of Intel 8259 Programmable Interrupt Controller (PIC). Explain Initialization Command Words ($ICW_1-ICW_4$) and Operational Command Words ($OCW_1-OCW_3$).",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Interrupts & Programmable Peripheral ICs (8255, 8259, 8254)",
+      "text": "Explain Direct Memory Access (DMA) and the architecture of Intel 8237 / 8257 DMA Controller. Explain DMA transfer modes: Burst mode, Cycle Stealing mode, and Demand mode.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "8086 16-Bit Microprocessor Architecture & Programming",
+      "text": "Compare Minimum Mode vs Maximum Mode pin configurations of 8086. Explain the function of the 8288 Bus Controller in Maximum Mode multiprocessing systems.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "8085 Microprocessor Architecture & Bus Organization",
+      "text": "A practical engineering system operating under 8085 Microprocessor Architecture & Bus Organization is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "8085 Instruction Set & Assembly Language Programming",
+      "text": "A practical engineering system operating under 8085 Instruction Set & Assembly Language Programming is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Bus Timing Diagrams, Memory & I/O Interfacing",
+      "text": "A practical engineering system operating under Bus Timing Diagrams, Memory & I/O Interfacing is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Interrupts & Programmable Peripheral ICs (8255, 8259, 8254)",
+      "text": "A practical engineering system operating under Interrupts & Programmable Peripheral ICs (8255, 8259, 8254) is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "8086 16-Bit Microprocessor Architecture & Programming",
+      "text": "A practical engineering system operating under 8086 16-Bit Microprocessor Architecture & Programming is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "8085 Instruction Set & Assembly Language Programming",
+      "text": "Write an 8085 assembly language program to count the number of even and odd numbers, or count the number of 1s in a byte stored at $2500\\text{H}$. Store results in memory.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "8085 Microprocessor Architecture & Bus Organization",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of 8085 Microprocessor Architecture & Bus Organization. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "8085 Microprocessor Architecture & Bus Organization",
+      "text": "Solve the standard numerical problem for 8085 Microprocessor Architecture & Bus Organization using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "8085 Instruction Set & Assembly Language Programming",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of 8085 Instruction Set & Assembly Language Programming. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "8085 Instruction Set & Assembly Language Programming",
+      "text": "Solve the standard numerical problem for 8085 Instruction Set & Assembly Language Programming using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Bus Timing Diagrams, Memory & I/O Interfacing",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Bus Timing Diagrams, Memory & I/O Interfacing. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Bus Timing Diagrams, Memory & I/O Interfacing",
+      "text": "Solve the standard numerical problem for Bus Timing Diagrams, Memory & I/O Interfacing using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Interrupts & Programmable Peripheral ICs (8255, 8259, 8254)",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Interrupts & Programmable Peripheral ICs (8255, 8259, 8254). Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Interrupts & Programmable Peripheral ICs (8255, 8259, 8254)",
+      "text": "Solve the standard numerical problem for Interrupts & Programmable Peripheral ICs (8255, 8259, 8254) using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "8086 16-Bit Microprocessor Architecture & Programming",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of 8086 16-Bit Microprocessor Architecture & Programming. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "8086 16-Bit Microprocessor Architecture & Programming",
+      "text": "Solve the standard numerical problem for 8086 16-Bit Microprocessor Architecture & Programming using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "8085 Microprocessor Architecture & Bus Organization",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in 8085 Microprocessor Architecture & Bus Organization. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "8085 Microprocessor Architecture & Bus Organization",
+      "text": "State and prove the classical theorems and stability criteria associated with 8085 Microprocessor Architecture & Bus Organization. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "8085 Instruction Set & Assembly Language Programming",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in 8085 Instruction Set & Assembly Language Programming. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "8085 Instruction Set & Assembly Language Programming",
+      "text": "State and prove the classical theorems and stability criteria associated with 8085 Instruction Set & Assembly Language Programming. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Bus Timing Diagrams, Memory & I/O Interfacing",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Bus Timing Diagrams, Memory & I/O Interfacing. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Bus Timing Diagrams, Memory & I/O Interfacing",
+      "text": "State and prove the classical theorems and stability criteria associated with Bus Timing Diagrams, Memory & I/O Interfacing. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Interrupts & Programmable Peripheral ICs (8255, 8259, 8254)",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Interrupts & Programmable Peripheral ICs (8255, 8259, 8254). What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Interrupts & Programmable Peripheral ICs (8255, 8259, 8254)",
+      "text": "State and prove the classical theorems and stability criteria associated with Interrupts & Programmable Peripheral ICs (8255, 8259, 8254). What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "8086 16-Bit Microprocessor Architecture & Programming",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in 8086 16-Bit Microprocessor Architecture & Programming. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "8086 16-Bit Microprocessor Architecture & Programming",
+      "text": "State and prove the classical theorems and stability criteria associated with 8086 16-Bit Microprocessor Architecture & Programming. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "8085 Microprocessor Architecture & Bus Organization",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in 8085 Microprocessor Architecture & Bus Organization.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "8085 Microprocessor Architecture & Bus Organization",
+      "text": "Write short technical notes on: (a) Key design parameters in 8085 Microprocessor Architecture & Bus Organization, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "8085 Instruction Set & Assembly Language Programming",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in 8085 Instruction Set & Assembly Language Programming.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "8085 Instruction Set & Assembly Language Programming",
+      "text": "Write short technical notes on: (a) Key design parameters in 8085 Instruction Set & Assembly Language Programming, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Bus Timing Diagrams, Memory & I/O Interfacing",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Bus Timing Diagrams, Memory & I/O Interfacing.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Bus Timing Diagrams, Memory & I/O Interfacing",
+      "text": "Write short technical notes on: (a) Key design parameters in Bus Timing Diagrams, Memory & I/O Interfacing, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Interrupts & Programmable Peripheral ICs (8255, 8259, 8254)",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Interrupts & Programmable Peripheral ICs (8255, 8259, 8254).",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Interrupts & Programmable Peripheral ICs (8255, 8259, 8254)",
+      "text": "Write short technical notes on: (a) Key design parameters in Interrupts & Programmable Peripheral ICs (8255, 8259, 8254), (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "8086 16-Bit Microprocessor Architecture & Programming",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in 8086 16-Bit Microprocessor Architecture & Programming.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "8086 16-Bit Microprocessor Architecture & Programming",
+      "text": "Write short technical notes on: (a) Key design parameters in 8086 16-Bit Microprocessor Architecture & Programming, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    }
+  ]
+}

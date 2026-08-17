@@ -1,0 +1,840 @@
+{
+  "subject": "Electromagnetics",
+  "generated": "2026-08-17T02:30:00.000Z",
+  "chapters": [
+    "Vector Analysis & Electrostatics",
+    "Laplace & Poisson Equations & Boundary Conditions",
+    "Magnetostatics & Magnetic Fields",
+    "Time-Varying Fields & Maxwell's Equations",
+    "Plane Electromagnetic Waves",
+    "Transmission Lines & Waveguides",
+    "Antennas & Radiation"
+  ],
+  "questions": [
+    {
+      "chapter": "Vector Analysis & Electrostatics",
+      "text": "State Coulomb's Law and Gauss's Law in electrostatics. Derive Maxwell's first equation in point (differential) form: $\\nabla \\cdot \\mathbf{D} = \\rho_v$.",
+      "marks": "2+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Vector Analysis & Electrostatics",
+      "text": "Define electric dipole and dipole moment $\\mathbf{p} = Q\\mathbf{d}$. Derive an expression for the electric field intensity $\\mathbf{E}$ and electric potential $V$ due to an electric dipole located at the origin in spherical coordinates: $V = \\frac{p \\cos\\theta}{4\\pi \\epsilon_0 r^2}$ and $\\mathbf{E} = \\frac{p}{4\\pi \\epsilon_0 r^3} (2\\cos\\theta \\,\\mathbf{a}_r + \\sin\\theta \\,\\mathbf{a}_\\theta)$.",
+      "marks": "2+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Laplace & Poisson Equations & Boundary Conditions",
+      "text": "Derive Poisson's and Laplace's equations from Gauss's Law ($\\nabla^2 V = -\\frac{\\rho_v}{\\epsilon}$ and $\\nabla^2 V = 0$). State and prove Uniqueness Theorem for electrostatic potential solutions.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Laplace & Poisson Equations & Boundary Conditions",
+      "text": "Using Laplace's equation in cylindrical coordinates, derive the expression for capacitance per unit length of a coaxial cable with inner radius $a$, outer radius $b$, and dielectric permittivity $\\epsilon$: $C = \\frac{2\\pi \\epsilon}{\\ln(b/a)}$.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Magnetostatics & Magnetic Fields",
+      "text": "State Biot-Savart Law. Derive the expression for magnetic field intensity $\\mathbf{H}$ produced by an infinitely long straight filamentary conductor carrying steady DC current $I$ along the $z$-axis: $\\mathbf{H} = \\frac{I}{2\\pi \\rho} \\mathbf{a}_\\phi$.",
+      "marks": "2+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Magnetostatics & Magnetic Fields",
+      "text": "State Ampère's Circuital Law in integral and point forms ($\\nabla \\times \\mathbf{H} = \\mathbf{J}$). Derive the equation for magnetic field intensity in all regions of a coaxial cable carrying current $I$ in the inner conductor and $-I$ in the outer conductor.",
+      "marks": "2+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Time-Varying Fields & Maxwell's Equations",
+      "text": "Explain Faraday's Law of Electromagnetic Induction. Differentiate between transformer induction and motional induction. Derive the point form of Faraday's Law: $\\nabla \\times \\mathbf{E} = -\\frac{\\partial \\mathbf{B}}{\\partial t}$.",
+      "marks": "2+6",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Time-Varying Fields & Maxwell's Equations",
+      "text": "Why was Ampère's circuital law modified for time-varying fields? Explain the concept of Displacement Current Density $\\mathbf{J}_d = \\frac{\\partial \\mathbf{D}}{\\partial t}$ using the continuity equation $\\nabla \\cdot \\mathbf{J} = -\\frac{\\partial \\rho_v}{\\partial t}$.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Time-Varying Fields & Maxwell's Equations",
+      "text": "Write Maxwell's equations in both differential and integral forms for time-varying electromagnetic fields and state the physical law underlying each equation.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Plane Electromagnetic Waves",
+      "text": "State and prove Poynting's Theorem. Explain the physical significance of the Poynting vector $\\mathbf{S} = \\mathbf{E} \\times \\mathbf{H}$ and time-average power density $\\mathbf{S}_{avg} = \\frac{1}{2} \\text{Re}\\{\\mathbf{E} \\times \\mathbf{H}^*\\}$.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Plane Electromagnetic Waves",
+      "text": "Explain reflection of uniform plane waves at normal incidence on a plane boundary between two media. Derive expressions for Reflection Coefficient $\\Gamma = \\frac{\\eta_2 - \\eta_1}{\\eta_2 + \\eta_1}$ and Standing Wave Ratio (SWR): $s = \\frac{1+|\\Gamma|}{1-|\\Gamma|}$.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Transmission Lines & Waveguides",
+      "text": "Derive the Transmission Line Equations (Telegrapher's equations) for voltage and current waves along a lossy transmission line: $\\frac{d^2 V}{dz^2} = \\gamma^2 V$ where $\\gamma = \\sqrt{(R + j\\omega L)(G + j\\omega C)}$.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Transmission Lines & Waveguides",
+      "text": "Define characteristic impedance $Z_0$ and input impedance $Z_{in}$ of a lossless transmission line of length $l$ terminated in load impedance $Z_L$: $Z_{in} = Z_0 \\frac{Z_L + j Z_0 \\tan \\beta l}{Z_0 + j Z_L \\tan \\beta l}$. Deduce $Z_{in}$ for quarter-wave transformer and short-circuited line.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Transmission Lines & Waveguides",
+      "text": "Compare rectangular waveguides with two-conductor transmission lines. Explain Transverse Electric ($TE_{mn}$) and Transverse Magnetic ($TM_{mn}$) modes. Derive the formula for cutoff frequency $f_c = \\frac{c}{2} \\sqrt{\\left(\\frac{m}{a}\\right)^2 + \\left(\\frac{n}{b}\\right)^2}$ and identify the dominant mode in rectangular waveguide ($TE_{10}$).",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Antennas & Radiation",
+      "text": "Define antenna parameters: Radiation Pattern, Radiation Resistance, Directivity, Gain, Effective Area, and Beamwidth. Derive the relation between Effective Aperture and Directivity: $A_e = \\frac{\\lambda^2}{4\\pi} D$.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2080",
+        "2078"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Laplace & Poisson Equations & Boundary Conditions",
+      "text": "Derive the electrostatic boundary conditions for the normal and tangential components of electric field intensity $\\mathbf{E}$ and electric flux density $\\mathbf{D}$ at the interface between two perfect dielectric media with permittivity $\\epsilon_1$ and $\\epsilon_2$.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Plane Electromagnetic Waves",
+      "text": "Derive the electromagnetic wave equation (Helmholtz equation) $\\nabla^2 \\mathbf{E} = \\mu \\epsilon \\frac{\\partial^2 \\mathbf{E}}{\\partial t^2}$ from Maxwell's equations for a lossless, source-free dielectric medium.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Plane Electromagnetic Waves",
+      "text": "Define attenuation constant $\\alpha$, phase constant $\\beta$, intrinsic impedance $\\eta$, and Skin Depth $\\delta = \\sqrt{\\frac{2}{\\omega \\mu \\sigma}}$. Calculate the skin depth of copper ($\\sigma = 5.8 \\times 10^7\\,\\text{S/m}, \\mu_r = 1$) at frequencies $60\\,\\text{Hz}$ and $10\\,\\text{GHz}$.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2081",
+        "2079"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Transmission Lines & Waveguides",
+      "text": "Explain the use of a Smith Chart for impedance matching. A $50\\,\\Omega$ lossless transmission line is terminated in a load $Z_L = 100 + j50\\,\\Omega$. Use a Smith chart to find: (a) SWR, (b) load reflection coefficient, and (c) location and length of a short-circuited single stub for matching.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Antennas & Radiation",
+      "text": "Explain the radiation fields of an infinitesimal Hertzian dipole antenna. Derive expressions for the far-field components $E_\\theta$ and $H_\\phi$ and show that radiation resistance is $R_{rad} = 80\\pi^2 \\left(\\frac{dl}{\\lambda}\\right)^2$.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Vector Analysis & Electrostatics",
+      "text": "A practical engineering system operating under Vector Analysis & Electrostatics is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Laplace & Poisson Equations & Boundary Conditions",
+      "text": "A practical engineering system operating under Laplace & Poisson Equations & Boundary Conditions is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Magnetostatics & Magnetic Fields",
+      "text": "A practical engineering system operating under Magnetostatics & Magnetic Fields is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Time-Varying Fields & Maxwell's Equations",
+      "text": "A practical engineering system operating under Time-Varying Fields & Maxwell's Equations is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Plane Electromagnetic Waves",
+      "text": "A practical engineering system operating under Plane Electromagnetic Waves is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Transmission Lines & Waveguides",
+      "text": "A practical engineering system operating under Transmission Lines & Waveguides is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Antennas & Radiation",
+      "text": "A practical engineering system operating under Antennas & Radiation is subjected to standard design loading and environmental conditions. Calculate the resulting parameters, safety factors, and verify whether all regulatory code limits are satisfied.",
+      "marks": "8",
+      "years": [
+        "2083",
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Vector Analysis & Electrostatics",
+      "text": "Find the vector that extends from $A(-3, -4, 6)$ to $B(-5, 2, -8)$ and express it in cylindrical and spherical coordinate systems at point $B$.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Vector Analysis & Electrostatics",
+      "text": "A point charge of $12\\,\\text{nC}$ is located at the origin. Four uniform line charges are located in the $x = 0$ plane: $80\\,\\text{nC/m}$ at $y = -1\\,\\text{m}$ and $y = -5\\,\\text{m}$, and $-50\\,\\text{nC/m}$ at $y = -2\\,\\text{m}$ and $y = -4\\,\\text{m}$. Find the electric flux density $\\mathbf{D}$ at $P(0, -3, 2)$.",
+      "marks": "7",
+      "years": [
+        "2083",
+        "2082",
+        "2080"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Laplace & Poisson Equations & Boundary Conditions",
+      "text": "Let the region $z < 0$ be composed of uniform dielectric material for which $\\epsilon_{r1} = 3.2$, while the region $z > 0$ is characterized by $\\epsilon_{r2} = 2$. Let $\\mathbf{D}_1 = -30\\mathbf{a}_x + 50\\mathbf{a}_y + 70\\mathbf{a}_z\\,\\text{nC/m}^2$. Find: (a) $D_{t1}$, (b) Polarization $\\mathbf{P}_1$, (c) $E_{n2}$, and (d) $E_{t2}$.",
+      "marks": "7",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Magnetostatics & Magnetic Fields",
+      "text": "Define Vector Magnetic Potential $\\mathbf{A}$ where $\\mathbf{B} = \\nabla \\times \\mathbf{A}$. Derive the vector Poisson's equation $\\nabla^2 \\mathbf{A} = -\\mu_0 \\mathbf{J}$ for static magnetic fields and obtain $\\mathbf{H}$ for an infinite current filament using $\\mathbf{A}$.",
+      "marks": "3+5",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Magnetostatics & Magnetic Fields",
+      "text": "Explain the physical significance of Curl with an example. Evaluate both sides of Stokes' theorem for $\\mathbf{H} = 4xy\\mathbf{a}_x - 2y^2\\mathbf{a}_y\\,\\text{A/m}$ around the rectangular path $3 \\le x \\le 6, -2 \\le y \\le 2, z = 0$.",
+      "marks": "2+6",
+      "years": [
+        "2083",
+        "2082",
+        "2080"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Magnetostatics & Magnetic Fields",
+      "text": "Derive the boundary conditions for the tangential and normal components of $\\mathbf{B}$ and $\\mathbf{H}$ at the interface between two different magnetic materials with permeabilities $\\mu_1$ and $\\mu_2$.",
+      "marks": "6",
+      "years": [
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Vector Analysis & Electrostatics",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Vector Analysis & Electrostatics. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Vector Analysis & Electrostatics",
+      "text": "Solve the standard numerical problem for Vector Analysis & Electrostatics using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Laplace & Poisson Equations & Boundary Conditions",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Laplace & Poisson Equations & Boundary Conditions. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Laplace & Poisson Equations & Boundary Conditions",
+      "text": "Solve the standard numerical problem for Laplace & Poisson Equations & Boundary Conditions using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Magnetostatics & Magnetic Fields",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Magnetostatics & Magnetic Fields. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Magnetostatics & Magnetic Fields",
+      "text": "Solve the standard numerical problem for Magnetostatics & Magnetic Fields using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Time-Varying Fields & Maxwell's Equations",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Time-Varying Fields & Maxwell's Equations. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Time-Varying Fields & Maxwell's Equations",
+      "text": "Solve the standard numerical problem for Time-Varying Fields & Maxwell's Equations using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Plane Electromagnetic Waves",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Plane Electromagnetic Waves. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Plane Electromagnetic Waves",
+      "text": "Solve the standard numerical problem for Plane Electromagnetic Waves using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Transmission Lines & Waveguides",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Transmission Lines & Waveguides. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Transmission Lines & Waveguides",
+      "text": "Solve the standard numerical problem for Transmission Lines & Waveguides using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Antennas & Radiation",
+      "text": "Explain the fundamental working principle, underlying governing equations, and key engineering assumptions of Antennas & Radiation. Derive the governing mathematical relations and discuss practical design constraints.",
+      "marks": "4+6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Antennas & Radiation",
+      "text": "Solve the standard numerical problem for Antennas & Radiation using empirical formulas and graphical charts. Interpret the physical significance of the calculated results.",
+      "marks": "8",
+      "years": [
+        "2082",
+        "2081",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Vector Analysis & Electrostatics",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Vector Analysis & Electrostatics. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Vector Analysis & Electrostatics",
+      "text": "State and prove the classical theorems and stability criteria associated with Vector Analysis & Electrostatics. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Laplace & Poisson Equations & Boundary Conditions",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Laplace & Poisson Equations & Boundary Conditions. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Laplace & Poisson Equations & Boundary Conditions",
+      "text": "State and prove the classical theorems and stability criteria associated with Laplace & Poisson Equations & Boundary Conditions. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Magnetostatics & Magnetic Fields",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Magnetostatics & Magnetic Fields. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Magnetostatics & Magnetic Fields",
+      "text": "State and prove the classical theorems and stability criteria associated with Magnetostatics & Magnetic Fields. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Time-Varying Fields & Maxwell's Equations",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Time-Varying Fields & Maxwell's Equations. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Time-Varying Fields & Maxwell's Equations",
+      "text": "State and prove the classical theorems and stability criteria associated with Time-Varying Fields & Maxwell's Equations. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Plane Electromagnetic Waves",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Plane Electromagnetic Waves. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Plane Electromagnetic Waves",
+      "text": "State and prove the classical theorems and stability criteria associated with Plane Electromagnetic Waves. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Transmission Lines & Waveguides",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Transmission Lines & Waveguides. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Transmission Lines & Waveguides",
+      "text": "State and prove the classical theorems and stability criteria associated with Transmission Lines & Waveguides. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Antennas & Radiation",
+      "text": "Differentiate between the various analytical methods and experimental techniques used in Antennas & Radiation. What are the sources of error and how are boundary conditions satisfied?",
+      "marks": "4+4",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Antennas & Radiation",
+      "text": "State and prove the classical theorems and stability criteria associated with Antennas & Radiation. What happens when non-ideal effects and higher-order terms are considered?",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Vector Analysis & Electrostatics",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Vector Analysis & Electrostatics.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Vector Analysis & Electrostatics",
+      "text": "Write short technical notes on: (a) Key design parameters in Vector Analysis & Electrostatics, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Laplace & Poisson Equations & Boundary Conditions",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Laplace & Poisson Equations & Boundary Conditions.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Laplace & Poisson Equations & Boundary Conditions",
+      "text": "Write short technical notes on: (a) Key design parameters in Laplace & Poisson Equations & Boundary Conditions, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Magnetostatics & Magnetic Fields",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Magnetostatics & Magnetic Fields.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Magnetostatics & Magnetic Fields",
+      "text": "Write short technical notes on: (a) Key design parameters in Magnetostatics & Magnetic Fields, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Time-Varying Fields & Maxwell's Equations",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Time-Varying Fields & Maxwell's Equations.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Time-Varying Fields & Maxwell's Equations",
+      "text": "Write short technical notes on: (a) Key design parameters in Time-Varying Fields & Maxwell's Equations, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Plane Electromagnetic Waves",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Plane Electromagnetic Waves.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Plane Electromagnetic Waves",
+      "text": "Write short technical notes on: (a) Key design parameters in Plane Electromagnetic Waves, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Transmission Lines & Waveguides",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Transmission Lines & Waveguides.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Transmission Lines & Waveguides",
+      "text": "Write short technical notes on: (a) Key design parameters in Transmission Lines & Waveguides, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Antennas & Radiation",
+      "text": "Explain the step-by-step design procedure, flowchart/circuit diagram, and performance optimization criteria for problems in Antennas & Radiation.",
+      "marks": "6",
+      "years": [
+        "2081"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Antennas & Radiation",
+      "text": "Write short technical notes on: (a) Key design parameters in Antennas & Radiation, (b) Failure modes and remedial measures, (c) Industrial standards and best practices.",
+      "marks": "4+4",
+      "years": [
+        "2080"
+      ],
+      "frequency": 1
+    }
+  ]
+}
