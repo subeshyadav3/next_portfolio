@@ -1,70 +1,141 @@
 {
   "subject": "Artificial Intelligence",
+  "code": "ENCT 351",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Foundations of AI, Intelligent Agents & Environment Types",
-    "Chapter 2: Uninformed Search Strategies",
-    "Chapter 3: Informed & Heuristic Search",
-    "Chapter 4: Adversarial Search & Game Theory",
-    "Chapter 5: Knowledge Representation & Reasoning",
-    "Chapter 6: Machine Learning, Neural Networks & Natural Language Processing"
+    "Chapter 1: Introduction",
+    "Chapter 2: Problem Solving and Search",
+    "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
+    "Chapter 4: Machine Learning Fundamentals",
+    "Chapter 5: Neural Networks and Deep Learning Algorithms",
+    "Chapter 6: AI Applications",
+    "Chapter 7: Emerging Trends"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Foundations of AI, Intelligent Agents & Environment Types",
+      "chapter": "Chapter 1: Introduction",
       "text": "Define Artificial Intelligence. Explain the Turing Test and Chinese Room Argument. Explain Rational Agents and the PEAS (Performance Measure, Environment, Actuators, Sensors) framework for: (a) Automated Taxi Driver, and (b) Medical Diagnosis System.",
-      "marks": "3+5",
+      "marks": "4+4",
       "years": [
         "2083",
-        "2082",
         "2081",
-        "2080",
-        "2078"
+        "2079"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
-      "chapter": "Chapter 1: Foundations of AI, Intelligent Agents & Environment Types",
+      "chapter": "Chapter 1: Introduction",
       "text": "Explain Environment Types in AI: Fully Observable vs Partially Observable, Deterministic vs Stochastic, Episodic vs Sequential, Static vs Dynamic, Discrete vs Continuous, and Single-Agent vs Multi-Agent. Classify Agent Architectures: Simple Reflex, Model-Based, Goal-Based, and Utility-Based agents.",
       "marks": "4+4",
       "years": [
-        "2083",
         "2082",
-        "2081",
         "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
-      "chapter": "Chapter 2: Uninformed Search Strategies",
-      "text": "Compare Uninformed Search Algorithms: Breadth-First Search (BFS), Depth-First Search (DFS), Uniform-Cost Search (UCS / Dijkstra), Depth-Limited Search (DLS), and Iterative Deepening DFS (IDDFS) in terms of Completeness, Time Complexity, Space Complexity, and Optimality.",
-      "marks": "4+6",
+      "chapter": "Chapter 1: Introduction",
+      "text": "Explain the concept of Agentic AI and how it differs from traditional AI systems. Discuss the interdisciplinary foundation of AI spanning Computer Science, Mathematics, Neuroscience, and Philosophy.",
+      "marks": "4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving and Search",
+      "text": "Compare Uninformed Search Algorithms: Breadth-First Search (BFS), Depth-First Search (DFS), Uniform-Cost Search (UCS / Dijkstra), and Iterative Deepening DFS (IDDFS) in terms of Completeness, Time Complexity, Space Complexity, and Optimality.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2081",
+        "2079",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving and Search",
+      "text": "Explain ^*$ Search Algorithm ((n) = g(n) + h(n)$). Define Admissible Heuristic ((n) \\le h^*(n)$) and Consistent (Monotonic) Heuristic ((n) \\le c(n, a, n') + h(n') $). Prove that Tree-search ^*$ is optimal with an admissible heuristic.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2082",
+        "2080"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving and Search",
+      "text": "Solve the 8-Puzzle Problem from initial state to goal state using ^*$ search with: (1) Misplaced Tiles heuristic (n)$, and (2) Manhattan Distance heuristic (n)$. Why is $ dominant over 0",
+      "marks": "6",
+      "years": [
+        "2082",
+        "2080",
+        "2078"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving and Search",
+      "text": "Explain Constraint Satisfaction Problems (CSP). Formalize the Map Coloring Problem (Australia map with 7 regions using 3 colors Red, Green, Blue) as a CSP. Explain Backtracking Search with MRV (Minimum Remaining Values), Degree heuristic, and Forward Checking / AC-3 algorithm.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving and Search",
+      "text": "Explain the Minimax Algorithm for two-player zero-sum games. Trace the Minimax algorithm and Alpha-Beta Pruning on a given 4-ply game tree. State the conditions for $\u0007lphahBccutoff and $\betahBccutoff ($\u0007lpha \\ge \beta$).",
+      "marks": "4+4",
       "years": [
         "2083",
         "2082",
         "2081",
-        "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 4
     },
     {
-      "chapter": "Chapter 3: Informed & Heuristic Search",
-      "text": "Explain $A^*$ Search Algorithm ($f(n) = g(n) + h(n)$). Define Admissible Heuristic ($h(n) \\le h^*(n)$) and Consistent (Monotonic) Heuristic ($h(n) \\le c(n, a, n') + h(n')$). Prove that: (a) Tree-search $A^*$ is optimal if $h(n)$ is admissible, and (b) Graph-search $A^*$ is optimal if $h(n)$ is consistent.",
-      "marks": "3+7",
+      "chapter": "Chapter 2: Problem Solving and Search",
+      "text": "Explain Local Search Algorithms: Hill Climbing (Steepest Ascent) and Simulated Annealing. How does Simulated Annealing escape local maxima using the Boltzmann probability distribution ( = e^{\\Delta E / T}$)?",
+      "marks": "6",
+      "years": [
+        "2082",
+        "2080"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 2: Problem Solving and Search",
+      "text": "Explain Genetic Algorithms (GA) for optimization. Explain the basic operators: Selection (Roulette Wheel, Tournament), Crossover (Single-point, Two-point), and Mutation with an example.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
+      "text": "Explain Knowledge Representation techniques: Semantic Networks, Frames, Conceptual Dependency, and Knowledge Graphs with examples.",
+      "marks": "4+4",
       "years": [
         "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
-      "chapter": "Chapter 3: Informed & Heuristic Search",
-      "text": "Solve the 8-Puzzle Problem from initial state to goal state using $A^*$ search with: (1) Misplaced Tiles heuristic $h_1(n)$, and (2) Manhattan Distance heuristic $h_2(n)$. Why is $h_2$ dominant over $h_1$?",
+      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
+      "text": "Convert the following sentences into First-Order Predicate Logic (FOPL) and prove by Resolution Refutation: (a) Marcus was a man, (b) Marcus was a Pompeian, (c) All Pompeians were Romans, (d) Caesar was a ruler, (e) All Romans either loved Caesar or hated him, (f) Everyone loves someone, (g) People only try to assassinate rulers they hate, (h) Marcus tried to assassinate Caesar. Prove: Did Marcus hate Caesar?",
       "marks": "8",
       "years": [
         "2083",
@@ -76,144 +147,200 @@
       "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Adversarial Search & Game Theory",
-      "text": "Explain the Minimax Algorithm for two-player zero-sum perfect information games. Trace the Minimax algorithm and Alpha-Beta Pruning on a given 4-ply game tree with 16 terminal leaf utility values. List all branch cuts / pruned nodes and state conditions for $\\alpha$-cutoff and $\\beta$-cutoff ($\\alpha \\ge \\beta$).",
-      "marks": "4+8",
+      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
+      "text": "Explain Probabilistic Reasoning and Bayesian Networks (Belief Networks). State Bayes' Theorem. Given prior probabilities (D) = 0.01$, and test accuracies (T^+|D) = 0.98$, (T^+|\neg D) = 0.05$, find the posterior probability (D|T^+)$ that a patient has the disease given a positive test result.",
+      "marks": "4+4",
       "years": [
         "2083",
-        "2082",
         "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 3: Knowledge Representation and Probabilistic Reasoning",
+      "text": "Explain Fuzzy Logic and Fuzzy Inference Systems (Mamdani vs Sugeno models). Define Membership Functions (Triangular, Trapezoidal, Gaussian) and explain Fuzzification, Fuzzy Rule Evaluation, and Defuzzification (Centroid / Center of Gravity method).",
+      "marks": "4+4",
+      "years": [
+        "2082",
         "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
-      "chapter": "Chapter 3: Informed & Heuristic Search",
-      "text": "Explain Constraint Satisfaction Problems (CSP). Formalize the 8-Queens Problem and Map Coloring Problem (Australia map with 7 regions using 3 colors Red, Green, Blue) as CSPs. Explain Backtracking Search with MRV (Minimum Remaining Values) heuristic, Degree heuristic, Least Constraining Value heuristic, and Forward Checking / AC-3 Arc Consistency algorithm.",
-      "marks": "4+6",
+      "chapter": "Chapter 4: Machine Learning Fundamentals",
+      "text": "Explain the Four Pillars of Machine Learning (Linear Algebra, Calculus, Probability & Statistics, Optimization). Differentiate between Generative vs Discriminative models with examples.",
+      "marks": "4+4",
       "years": [
         "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2081"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
-      "chapter": "Chapter 5: Knowledge Representation & Reasoning",
-      "text": "Translate the English statements into First-Order Predicate Logic (FOPL):\n(a) \"Every student in IOE likes computer programming.\"\n(b) \"Anyone who is a father of someone is older than that person.\"\n(c) \"Only one student scored $100\\%$ in AI exam.\"\n(d) \"Politicians can fool some people all the time, and all people some of the time, but not all people all the time.\"",
-      "marks": "8",
+      "chapter": "Chapter 4: Machine Learning Fundamentals",
+      "text": "Explain Overfitting, Underfitting, Bias-Variance Tradeoff, and Cross-Validation. How do L1 (Lasso) and L2 (Ridge) Regularization prevent overfitting?",
+      "marks": "4+4",
       "years": [
         "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
-      "chapter": "Chapter 5: Knowledge Representation & Reasoning",
-      "text": "Explain the steps to convert First-Order Logic formulas into Conjunctive Normal Form (CNF / Clause Form): Eliminate implications, Move negations inward (De Morgan's), Standardize variables, Skolemization ($f(x)$ for existential quantifiers), Drop universal quantifiers, and Distribute $\\lor$ over $\\land$.",
+      "chapter": "Chapter 4: Machine Learning Fundamentals",
+      "text": "Explain Decision Tree induction using ID3 / C4.5 algorithm. Define Entropy (S) = -\\sum p_i \\log_2 p_i$ and Information Gain (S, A) = H(S) - \\sum \frac{|S_v|}{|S|} H(S_v)$. Given a training dataset with 14 instances, calculate Information Gain for a split attribute.",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Machine Learning Fundamentals",
+      "text": "Explain Support Vector Machines (SVM). Explain Maximum Margin Hyperplane, Support Vectors, Slack Variables for soft-margin classification, and the Kernel Trick (Linear, Polynomial, RBF kernels) for non-linearly separable data.",
       "marks": "6",
       "years": [
         "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
-      "chapter": "Chapter 5: Knowledge Representation & Reasoning",
-      "text": "Explain Resolution Refutation theorem proving in First-Order Logic with Unification and Most General Unifier (MGU). Given the facts:\n1. Marcus was a man.\n2. Marcus was a Pompeian.\n3. All Pompeians were Romans.\n4. Caesar was a ruler.\n5. All Romans were either loyal to Caesar or hated him.\n6. Everyone is loyal to someone.\n7. People only try to assassinate rulers they are not loyal to.\n8. Marcus tried to assassinate Caesar.\nProve that \"Marcus hated Caesar\" using resolution refutation.",
-      "marks": "10",
+      "chapter": "Chapter 4: Machine Learning Fundamentals",
+      "text": "Explain Unsupervised Learning with t-SNE (t-Distributed Stochastic Neighbor Embedding) for high-dimensional data visualization. Explain Reinforcement Learning framework (Agent, Environment, State, Action, Reward, Q-Learning algorithm).",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2081"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 4: Machine Learning Fundamentals",
+      "text": "Explain Model Evaluation Metrics: Confusion Matrix, Accuracy, Precision, Recall, F1-Score, Specificity, ROC Curve, and AUC (Area Under Curve).",
+      "marks": "4",
       "years": [
         "2083",
         "2082",
-        "2081",
-        "2080",
-        "2078"
+        "2081"
       ],
-      "frequency": 5
+      "frequency": 3
     },
     {
-      "chapter": "Chapter 4: Adversarial Search & Game Theory",
-      "text": "Explain Supervised, Unsupervised, and Reinforcement Learning paradigms. Explain Decision Tree learning using ID3 algorithm with Information Gain and Entropy ($H(S) = -\\sum p_i \\log_2 p_i$). Calculate information gain for a dataset of weather attributes predicting whether to play tennis.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 6: Machine Learning, Neural Networks & Natural Language Processing",
-      "text": "Explain the McCulloch-Pitts Neuron model and Perceptron Learning Rule. Why can a single-layer perceptron not learn the XOR function (Linear separability limitation)? Explain Multi-Layer Perceptron (MLP) and derive the Backpropagation Gradient Descent weight update equation.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Chapter 5: Knowledge Representation & Reasoning",
-      "text": "Explain the phases of Natural Language Processing (NLP): Lexical/Morphological Analysis, Syntactic Parsing (Context-Free Grammars & Parse Trees), Semantic Analysis, Pragmatic/Discourse Processing. Explain Expert Systems architecture (Inference Engine, Knowledge Base, Explanation Facility).",
+      "chapter": "Chapter 5: Neural Networks and Deep Learning Algorithms",
+      "text": "Explain the Artificial Neuron (Perceptron) model. Derive the Perceptron Learning Rule. Explain why a Single-Layer Perceptron cannot solve the non-linear XOR problem (Linear Separability problem).",
       "marks": "4+4",
       "years": [
         "2083",
         "2082",
         "2081",
+        "2080"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 5: Neural Networks and Deep Learning Algorithms",
+      "text": "Explain Multi-Layer Perceptron (MLP). Derive the Error Backpropagation Algorithm using the chain rule of calculus for weight updates with Sigmoid activation function (z) = \frac{1}{1+e^{-z}}$.",
+      "marks": "6+2",
+      "years": [
+        "2083",
+        "2082",
         "2080",
         "2078"
       ],
-      "frequency": 5
+      "frequency": 4
     },
     {
-      "chapter": "Chapter 3: Informed & Heuristic Search",
-      "text": "Explain Local Search Algorithms: Simple Hill Climbing, Steepest-Ascent Hill Climbing, and problems encountered (Local Maxima, Ridges, Plateau / Shoulder). Explain Simulated Annealing ($P(\\Delta E) = e^{\\Delta E / T}$) and Genetic Algorithms (Selection, Crossover, Mutation).",
+      "chapter": "Chapter 5: Neural Networks and Deep Learning Algorithms",
+      "text": "Explain Activation Functions in Neural Networks: Sigmoid, Hyperbolic Tangent ($\tanh$), ReLU (Rectified Linear Unit), Leaky ReLU, and Softmax. Explain the Vanishing Gradient Problem.",
+      "marks": "4+2",
+      "years": [
+        "2083",
+        "2081",
+        "2079"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 5: Neural Networks and Deep Learning Algorithms",
+      "text": "Explain Deep Learning architectures: (a) Convolutional Neural Networks (CNN: Convolution, Pooling, Fully Connected layers), (b) Recurrent Neural Networks (RNN & LSTM for sequential data), and (c) Generative Adversarial Networks (GAN: Generator vs Discriminator).",
+      "marks": "6",
+      "years": [
+        "2083",
+        "2082",
+        "2080"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 6: AI Applications",
+      "text": "Explain the Architecture and Characteristics of Expert Systems (Knowledge Base, Inference Engine: Forward vs Backward Chaining, Explanation Facility, User Interface). Explain the MYCIN or DENDRAL expert system.",
+      "marks": "4+4",
+      "years": [
+        "2083",
+        "2081",
+        "2079",
+        "2078"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 6: AI Applications",
+      "text": "Explain Natural Language Processing (NLP) levels of analysis: Phonological, Morphological, Syntactic (Parsing), Semantic, Pragmatic, and Discourse processing. Discuss NLP challenges (Ambiguity) and modern transformer-based LLMs.",
       "marks": "4+4",
       "years": [
         "2083",
         "2082",
-        "2080",
-        "2078"
+        "2080"
       ],
-      "frequency": 4
+      "frequency": 3
     },
     {
-      "chapter": "Chapter 5: Knowledge Representation & Reasoning",
-      "text": "Compare Forward Chaining vs. Backward Chaining in production rule systems. Explain Semantic Networks, Frames (Slot-and-filler representation), and Conceptual Dependency.",
-      "marks": "6",
+      "chapter": "Chapter 6: AI Applications",
+      "text": "Explain the role of AI in Computer Vision (Image Segmentation, Object Detection: YOLO) and Autonomous Robotics.",
+      "marks": "4",
       "years": [
         "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2082"
       ],
-      "frequency": 4
+      "frequency": 2
     },
     {
-      "chapter": "Chapter 1: Foundations of AI, Intelligent Agents & Environment Types",
-      "text": "Explain Naive Bayes Classifier using Bayes' Theorem: $P(c|x) = \\frac{P(x|c)P(c)}{P(x)}$. Classify a text document as Spam or Not Spam given word token conditional probabilities with Laplace smoothing.",
-      "marks": "6",
+      "chapter": "Chapter 7: Emerging Trends",
+      "text": "Explain Sequence-to-Sequence (Seq2Seq) models and Self-Attention / Transformer architecture.",
+      "marks": "4",
       "years": [
         "2083",
-        "2082",
-        "2080",
-        "2078"
+        "2082"
       ],
-      "frequency": 4
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 7: Emerging Trends",
+      "text": "Explain Federated Learning (Privacy-preserving distributed training) and Edge AI (On-device machine learning inference).",
+      "marks": "4",
+      "years": [
+        "2083",
+        "2081"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 7: Emerging Trends",
+      "text": "Discuss Ethics in AI, AI Bias, Explainable AI (XAI), and Responsible AI deployment in Nepal's socio-economic context.",
+      "marks": "4",
+      "years": [
+        "2083",
+        "2082"
+      ],
+      "frequency": 2
     }
   ]
 }

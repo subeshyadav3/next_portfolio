@@ -62,7 +62,7 @@ export default async function IoeSubjectPage({ params }: PageProps) {
   const catalog = findCatalogSubject(subjectRow?.title ?? "");
   if (!program || !subjectRow || !catalog) notFound();
 
-  const papers = getPapersForSubject(catalog);
+  const papers = getPapersForSubject(catalog, semester);
   if (papers.length === 0) notFound();
 
   const questions = await getSubjectQuestions(subjectSlug);

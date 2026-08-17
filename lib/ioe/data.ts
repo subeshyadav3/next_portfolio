@@ -101,8 +101,24 @@ export function toPaper(
   };
 }
 
-export function getPapersForSubject(catalogSubject: IoeCatalogSubject): IoePaper[] {
-  return catalogSubject.papers.map((p) => toPaper(catalogSubject.name, p));
+export function getPapersForSubject(catalogSubject: IoeCatalogSubject, semester?: string): IoePaper[] {
+  const allPapers = catalogSubject.papers.map((p) => toPaper(catalogSubject.name, p));
+  if (!semester) return allPapers;
+
+  const target = semester.toLowerCase().replace(/[^0-9]/g, "");
+  if (!target) return allPapers;
+
+  const matched = allPapers.filter((p) => {
+    const semLower = p.sem.toLowerCase();
+    return (
+      semLower.includes(`${target}th`) ||
+      semLower.includes(`${target}st`) ||
+      semLower.includes(`${target}nd`) ||
+      semLower.includes(`${target}rd`)
+    );
+  });
+
+  return matched.length > 0 ? matched : allPapers;
 }
 
 export function getPaperById(id: string): IoePaper | null {
