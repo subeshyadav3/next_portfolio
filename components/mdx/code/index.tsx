@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { Copy, Check } from "lucide-react";
+import { copyToClipboard } from "@/lib/clipboard";
 
 /* -------------------------------------------------------------------------- */
 /*  CodeBlock                                                                 */
@@ -62,13 +63,11 @@ export function CopyButton({ text }: { text: string }) {
   }, []);
 
   async function handleCopy() {
-    try {
-      await navigator.clipboard.writeText(text);
+    const success = await copyToClipboard(text);
+    if (success) {
       setCopied(true);
       if (timer.current) clearTimeout(timer.current);
       timer.current = setTimeout(() => setCopied(false), 1500);
-    } catch {
-      /* no-op */
     }
   }
 

@@ -2,8 +2,9 @@
 
 import { useMemo, useState, useEffect } from "react";
 import type { IoeQuestion } from "@/lib/ioe/types";
-import { Search, X, Flame, Copy, Check, Filter, BookOpen, Sparkles, Layers, ChevronDown, ArrowUp } from "lucide-react";
+import { Search, X, Flame, Copy, Check, Sparkles, Layers, ChevronDown, ArrowUp } from "lucide-react";
 import { MathText } from "@/components/ioe/MathText";
+import { copyToClipboard } from "@/lib/clipboard";
 
 interface QuestionBankProps {
   chapters: string[];
@@ -55,10 +56,12 @@ export function QuestionBank({ chapters, questions, subject }: QuestionBankProps
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const handleCopy = (text: string, id: string) => {
-    navigator.clipboard.writeText(text);
-    setCopiedIndex(id);
-    setTimeout(() => setCopiedIndex(null), 2000);
+  const handleCopy = async (text: string, id: string) => {
+    const success = await copyToClipboard(text);
+    if (success) {
+      setCopiedIndex(id);
+      setTimeout(() => setCopiedIndex(null), 2000);
+    }
   };
 
   const scoped = useMemo(() => {

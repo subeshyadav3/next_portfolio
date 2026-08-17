@@ -58,7 +58,7 @@ export function PdfViewer({ papers }: PdfViewerProps) {
 
         <div className="flex items-center gap-2.5">
           <a
-            href={paper.downloadUrl}
+            href={paper.driveViewUrl}
             target="_blank"
             rel="noopener noreferrer"
             title="Open in Drive / New Tab"

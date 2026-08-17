@@ -60,7 +60,10 @@ export function getAllPrograms(): IoeProgram[] {
 }
 
 export function getProgram(code: string): IoeProgram | undefined {
-  return programsFile.programs.find((p) => p.code.toLowerCase() === code.toLowerCase());
+  const query = code.toLowerCase();
+  return programsFile.programs.find(
+    (p) => p.code.toLowerCase() === query || p.slug.toLowerCase() === query
+  );
 }
 
 export function getSemesterSubjects(program: IoeProgram, semester: string) {
@@ -79,6 +82,10 @@ function driveDownloadUrl(id: string): string {
   return `https://drive.google.com/uc?export=download&id=${id}`;
 }
 
+function driveViewUrl(id: string): string {
+  return `https://drive.google.com/file/d/${id}/preview`;
+}
+
 export function toPaper(
   subject: string,
   file: IoePaperFile
@@ -90,6 +97,7 @@ export function toPaper(
     subject,
     previewUrl: drivePreviewUrl(file.id),
     downloadUrl: driveDownloadUrl(file.id),
+    driveViewUrl: driveViewUrl(file.id),
   };
 }
 
@@ -156,4 +164,50 @@ export function getSyllabusForSubject(subjectName: string): IoeSyllabus | null {
     if (normalizeSubjectName(title) === norm) return entry;
   }
   return null;
+}
+
+export interface SubjectProgramInfo {
+  code: string;
+  slug: string;
+  name: string;
+  semester: string;
+}
+
+export function getSubjectPrograms(subjectName: string): SubjectProgramInfo[] {
+  const normTarget = normalizeSubjectName(subjectName);
+  const targetSlug = getSubjectSlugFromName(subjectName);
+  const results: SubjectProgramInfo[] = [];
+  const seen = new Set<string>();
+
+  for (const program of programsFile.programs) {
+    for (const [semester, rows] of Object.entries(program.semesters)) {
+      for (const row of rows) {
+        if (
+          normalizeSubjectName(row.title) === normTarget ||
+          getSubjectSlugFromName(row.title) === targetSlug
+        ) {
+          const key = `${program.code}-${semester}`;
+          if (!seen.has(key)) {
+            seen.add(key);
+            results.push({
+              code: program.code,
+              slug: program.slug,
+              name: program.name,
+              semester,
+            });
+          }
+        }
+      }
+    }
+  }
+  return results;
+}
+
+export function getSubjectPrimaryPath(subjectName: string): string {
+  const progs = getSubjectPrograms(subjectName);
+  if (progs.length > 0) {
+    const first = progs[0];
+    return `/ioe/${first.slug}/semester/${first.semester}/${getSubjectSlugFromName(subjectName)}`;
+  }
+  return `/ioe/subjects/${getSubjectSlugFromName(subjectName)}`;
 }

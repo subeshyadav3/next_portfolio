@@ -1,4 +1,4 @@
-import { Inter, JetBrains_Mono, Source_Serif_4 } from "next/font/google";
+import { Inter, JetBrains_Mono, Source_Serif_4, Noto_Sans_Devanagari } from "next/font/google";
 import "./globals.css";
 import "katex/dist/katex.min.css";
 import { ThemeProvider } from "@/providers/ThemeProvider";
@@ -28,6 +28,12 @@ const sourceSerif = Source_Serif_4({
   subsets: ["latin"],
   variable: "--prose-font-family-body",
   weight: ["400", "500", "600", "700"],
+});
+
+const notoSansDevanagari = Noto_Sans_Devanagari({
+  subsets: ["devanagari"],
+  variable: "--font-devanagari",
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 // 56 chars — within the recommended 50-60 range and packed with the main search keywords.
@@ -108,7 +114,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${jetbrainsMono.variable} ${sourceSerif.variable}`}
+      className={`${inter.variable} ${jetbrainsMono.variable} ${sourceSerif.variable} ${notoSansDevanagari.variable}`}
       suppressHydrationWarning
     >
       <head>
