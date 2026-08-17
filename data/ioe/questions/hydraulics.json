@@ -1,102 +1,136 @@
 {
   "subject": "Hydraulics",
+  "code": "ENCE 251",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Pipe Flow Analysis & Complex Pipe Networks",
-    "Chapter 2: Fundamentals of Open Channel Flow & Specific Energy Curves",
-    "Chapter 3: Uniform Flow in Open Channels",
-    "Chapter 4: Gradually Varied Flow",
-    "Chapter 6: Hydraulic Turbines",
-    "Chapter 7: Centrifugal Pumps & Hydraulic Performance"
+    "Chapter 1: Pipe Flow Analysis and Pipe Networks (Hardy Cross Method)",
+    "Chapter 2: Uniform Flow in Open Channels (Manning's and Chezy's Formula)",
+    "Chapter 3: Energy and Momentum Principles in Open Channel Flow",
+    "Chapter 4: Non-Uniform Gradually Varied Flow (GVF) and Water Surface Profiles",
+    "Chapter 5: Rapidly Varied Flow (RVF) and Hydraulic Jump",
+    "Chapter 6: Hydraulic Turbines (Pelton, Francis, Kaplan) and Centrifugal Pumps"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Pipe Flow Analysis & Complex Pipe Networks",
-      "text": "State Darcy-Weisbach equation for head loss ($h_f = \\frac{f L V^2}{2 g D}$). Explain Moody's diagram. Explain Pipe Networks analysis using the Hardy Cross Method based on balancing heads: $\\Delta Q = -\\frac{\\sum h_f}{n \\sum (h_f / Q)}$. Perform two iterations of Hardy Cross for a two-loop pipe distribution network.",
-      "marks": "3+7",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Pipe Flow Analysis & Complex Pipe Networks",
-      "text": "Explain Water Hammer in pipes. Derive Joukowsky's formula for water hammer pressure due to instantaneous closure of valve: $\\Delta P = \\rho c V$ where celerity $c = \\sqrt{\\frac{K/\\rho}{1 + (K/E)(D/t)}}$. Differentiate between Rapid Closure ($t_c < \\frac{2L}{c}$) and Slow Closure ($t_c > \\frac{2L}{c}$). Explain functions of a Surge Tank.",
-      "marks": "4+6",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Uniform Flow in Open Channels",
-      "text": "State Chezy's formula ($V = C \\sqrt{R S_0}$) and Manning's formula ($V = \\frac{1}{n} R^{2/3} S_0^{1/2}$). Derive conditions for the Most Economical (Hydraulically Efficient) channel sections: (a) Rectangular section ($B = 2y, R = y/2$), (b) Trapezoidal section ($R = y/2$, side slope $1:\\sqrt{3}$ or $\\theta = 60^\\circ$, half hexagon), and (c) Triangular section ($R = \\frac{y}{2\\sqrt{2}}, \\theta = 45^\\circ$).",
-      "marks": "4+6",
-      "years": [
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Fundamentals of Open Channel Flow & Specific Energy Curves",
-      "text": "Design a hydraulically efficient trapezoidal channel with side slopes $1.5\\text{H}:1\\text{V}$ to convey a discharge of $25\\,\\text{m}^3/\\text{s}$ at bed slope $S_0 = 1/2500$ with Manning's $n = 0.022$. Check for critical velocity and Froude number.",
+      "chapter": "Chapter 1: Pipe Flow Analysis and Pipe Networks (Hardy Cross Method)",
+      "text": "Explain Pipe Network Analysis using Hardy Cross Method. Derive flow correction formula $\\Delta Q = -\\frac{\\sum r Q_0 |Q_0|^{n-1}}{n \\sum r |Q_0|^{n-1}}$ for a closed loop. Perform one iteration for a given two-loop pipe network.",
       "marks": "8",
       "years": [
-        "2080"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 4
     },
     {
-      "chapter": "Chapter 2: Fundamentals of Open Channel Flow & Specific Energy Curves",
-      "text": "Define Specific Energy ($E = y + \\frac{V^2}{2g} = y + \\frac{Q^2}{2gA^2}$). Derive the Critical Depth condition ($F_r = 1, \\frac{Q^2 T}{g A^3} = 1$). Show that for a rectangular channel: (a) Critical depth $y_c = \\left(\\frac{q^2}{g}\\right)^{1/3}$, and (b) Minimum specific energy $E_{min} = 1.5 y_c$. Explain Choking at channel transitions (width constriction and bed hump $\\Delta z$).",
-      "marks": "4+6",
+      "chapter": "Chapter 1: Pipe Flow Analysis and Pipe Networks (Hardy Cross Method)",
+      "text": "Explain Water Hammer phenomenon in pipes. Derive acoustic wave velocity $c = \\sqrt{\\frac{K/\\rho}{1 + (K/E)(D/t)}}$. Differentiate between Rapid Closure ($t_c < \\frac{2L}{c}$) and Slow Closure ($t_c > \\frac{2L}{c}$). Explain Surge Tanks and Air Vessels.",
+      "marks": "8",
       "years": [
-        "2079",
-        "2083"
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
       ],
-      "frequency": 2
+      "frequency": 4
     },
     {
-      "chapter": "Chapter 2: Fundamentals of Open Channel Flow & Specific Energy Curves",
-      "text": "Explain Hydraulic Jump in a horizontal rectangular channel. Derive the Belanger Equation for Sequent (Conjugate) Depths: $\\frac{y_2}{y_1} = \\frac{1}{2}\\left(\\sqrt{1 + 8F_{r1}^2} - 1\\right)$. Derive the expression for energy head loss in a hydraulic jump: $\\Delta E = \\frac{(y_2 - y_1)^3}{4 y_1 y_2}$. Calculate the jump height, efficiency, and power dissipated for initial depth $y_1 = 0.4\\,\\text{m}$ and $F_{r1} = 5.0$.",
-      "marks": "4+6",
+      "chapter": "Chapter 2: Uniform Flow in Open Channels (Manning's and Chezy's Formula)",
+      "text": "State Chezy's and Manning's formulas for uniform open channel flow ($v = \\frac{1}{n} R^{2/3} S_0^{1/2}$). Derive conditions for Most Economical (Hydraulically Efficient) channel sections for: (a) Rectangular section ($b = 2y, R = y/2$), and (b) Trapezoidal section ($R = y/2$, side slope $\\theta = 60^\\circ$).",
+      "marks": "8",
       "years": [
-        "2083",
-        "2081",
-        "2078"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 3: Energy and Momentum Principles in Open Channel Flow",
+      "text": "Define Specific Energy ($E = y + \\frac{q^2}{2g y^2}$) in open channels. Draw Specific Energy curve. Derive Critical Depth ($y_c = \\left(\\frac{q^2}{g}\\right)^{1/3}$), Minimum Specific Energy ($E_{min} = \\frac{3}{2} y_c$), and condition for Froude Number $Fr = 1$ at critical flow.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 3: Energy and Momentum Principles in Open Channel Flow",
+      "text": "Explain Channel Transitions: Flow over a broad-crested weir and flow through a channel constriction/width reduction. Explain Choking condition in supercritical and subcritical flows.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Ashwin"
       ],
       "frequency": 3
     },
     {
-      "chapter": "Chapter 4: Gradually Varied Flow",
-      "text": "Derive the Dynamic Equation of Gradually Varied Flow (GVF): $\\frac{dy}{dx} = \\frac{S_0 - S_f}{1 - F_r^2}$. Classify and sketch Water Surface Profiles for Mild ($M_1, M_2, M_3$), Steep ($S_1, S_2, S_3$), Critical ($C_1, C_3$), Horizontal ($H_2, H_3$), and Adverse ($A_2, A_3$) slopes. Explain the Direct Step Method and Standard Step Method for GVF profile computation.",
-      "marks": "4+6",
+      "chapter": "Chapter 4: Non-Uniform Gradually Varied Flow (GVF) and Water Surface Profiles",
+      "text": "Derive the Dynamic Equation of Gradually Varied Flow (GVF): $\\frac{dy}{dx} = \\frac{S_0 - S_f}{1 - Fr^2}$. Classify and sketch all 12 water surface profiles (Mild: $M_1, M_2, M_3$; Steep: $S_1, S_2, S_3$; Critical: $C_1, C_3$; Horizontal: $H_2, H_3$; Adverse: $A_2, A_3$).",
+      "marks": "8",
       "years": [
-        "2083"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Hydraulic Turbines",
-      "text": "Classify Hydraulic Turbines based on head, specific speed, and action of water (Impulse vs Reaction). Explain the working principle and draw velocity triangles at inlet and outlet for a Pelton Turbine (Derive hydraulic efficiency $\\eta_h = \\frac{2(V_1 - u)(1 + k\\cos\\beta)u}{V_1^2}$, maximum efficiency $\\eta_{max} = \\frac{1 + k\\cos\\beta}{2}$ when $u = 0.5 V_1$) and Francis Turbine.",
-      "marks": "4+6",
+      "chapter": "Chapter 4: Non-Uniform Gradually Varied Flow (GVF) and Water Surface Profiles",
+      "text": "Explain Direct Step Method and Standard Step Method for computation of GVF surface profile length between two sections.",
+      "marks": "6",
       "years": [
-        "2082",
-        "2080"
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 2
+      "frequency": 3
     },
     {
-      "chapter": "Chapter 7: Centrifugal Pumps & Hydraulic Performance",
-      "text": "Explain Draft Tube in reaction turbines (Types, functions, and efficiency $\\eta_d = \\frac{V_1^2 - V_2^2 - 2gh_f}{V_1^2}$). What is Cavitation in turbines and pumps? Explain Thoma's Cavitation Factor ($\\sigma = \\frac{H_{atm} - H_v - H_s}{H}$) and NPSH (Net Positive Suction Head) in Centrifugal Pumps.",
-      "marks": "4+4",
+      "chapter": "Chapter 5: Rapidly Varied Flow (RVF) and Hydraulic Jump",
+      "text": "Explain Hydraulic Jump in a horizontal rectangular channel. Derive the Belanger Equation for conjugate depths: $\\frac{y_2}{y_1} = \\frac{1}{2} \\left( \\sqrt{1 + 8 Fr_1^2} - 1 \\right)$. Derive expression for energy loss in jump $\\Delta E = \\frac{(y_2 - y_1)^3}{4 y_1 y_2}$ and explain Stilling Basins.",
+      "marks": "8",
       "years": [
-        "2081"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 6: Hydraulic Turbines (Pelton, Francis, Kaplan) and Centrifugal Pumps",
+      "text": "Explain Hydraulic Turbines: Classify Impulse Turbine (Pelton Wheel) vs Reaction Turbines (Francis, Kaplan). Draw velocity triangles and derive expression for hydraulic efficiency $\\eta_h$. Define Specific Speed ($N_s = \\frac{N \\sqrt{P}}{H^{5/4}}$) and Unit Quantities ($N_u, Q_u, P_u$).",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 6: Hydraulic Turbines (Pelton, Francis, Kaplan) and Centrifugal Pumps",
+      "text": "Explain Centrifugal Pumps: Working principle, velocity triangles, Manometric Head ($H_m$), Manometric Efficiency, Cavitation, and Net Positive Suction Head (NPSH).",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
     }
   ]
 }

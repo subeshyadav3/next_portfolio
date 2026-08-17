@@ -1,172 +1,155 @@
 {
   "subject": "Computer Organization and Architecture",
+  "code": "CT 551",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 2: Instruction Set Architecture and Addressing Modes",
-    "Chapter 3: Computer Arithmetic",
-    "Chapter 4: Control Unit Design",
-    "Chapter 5: Memory Organization"
+    "Chapter 1: Introduction to Computer System and Instruction Set Architecture",
+    "Chapter 2: Central Processing Unit and Control Unit Design",
+    "Chapter 3: Computer Arithmetic and Pipelining",
+    "Chapter 4: Memory Organization and Input-Output Systems"
   ],
   "questions": [
     {
-      "chapter": "Chapter 3: Computer Arithmetic",
-      "text": "Explain IEEE 754 Floating-Point Representation for Single Precision (32-bit: 1-bit sign, 8-bit biased exponent, 23-bit mantissa) and Double Precision (64-bit). Represent the decimal number $(-118.625)_{10}$ in IEEE 754 single precision format.",
-      "marks": "3+5",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Computer Arithmetic",
-      "text": "Explain Booth's Multiplication Algorithm for signed 2's complement binary numbers. Multiply the signed binary numbers $(+13)_{10} = (01101)_2$ and $(-9)_{10} = (10111)_2$ using Booth's algorithm and show all registers ($A, Q, Q_{-1}, M$) at each step.",
-      "marks": "4+6",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Instruction Set Architecture and Addressing Modes",
-      "text": "Compare CISC (Complex Instruction Set Computer) vs RISC (Reduced Instruction Set Computer) architectures in terms of instruction formats, addressing modes, pipeline efficiency, and register file size.",
+      "chapter": "Chapter 1: Introduction to Computer System and Instruction Set Architecture",
+      "text": "Explain Von Neumann Architecture vs Harvard Architecture with diagrams. Explain the Stored Program Concept and Instruction Cycle (Fetch, Decode, Execute).",
       "marks": "6",
       "years": [
-        "2081",
-        "2080",
-        "2078"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2079 Ashwin"
       ],
       "frequency": 3
     },
     {
-      "chapter": "Chapter 2: Instruction Set Architecture and Addressing Modes",
-      "text": "Explain Computer Addressing Modes: Immediate, Direct (Absolute), Indirect, Register, Register Indirect, Displacement (Relative, Base-Register, Indexed), and Auto-increment/decrement. Calculate the Effective Address (EA) for each mode.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 4: Control Unit Design",
-      "text": "Explain the structure of a Hardwired Control Unit (State table method, Delay element method, Sequence register method). Explain the structure of a Microprogrammed Control Unit (Control Memory, Control Address Register - CAR, Control Data Register - CDR, Next Address Generator / Sequencer). Compare Hardwired vs Microprogrammed control units in terms of speed, flexibility, and complexity.",
-      "marks": "4+6",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Control Unit Design",
-      "text": "Compare Horizontal Microinstructions vs. Vertical Microinstructions in terms of control field encoding, execution speed, and control memory width.",
+      "chapter": "Chapter 1: Introduction to Computer System and Instruction Set Architecture",
+      "text": "Compare RISC (Reduced Instruction Set Computer) vs CISC (Complex Instruction Set Computer) architectures in terms of instruction format, addressing modes, CPI, and compiler complexity.",
       "marks": "6",
       "years": [
-        "2083",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Memory Organization",
-      "text": "Explain Memory Hierarchy in modern computers (Registers, L1/L2/L3 Cache, Main Memory, SSD/HDD) in terms of access time, capacity, and cost per bit. Explain the Principle of Locality of Reference (Temporal Locality and Spatial Locality).",
-      "marks": "4+4",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Memory Organization",
-      "text": "Explain Cache Memory Mapping Techniques: (a) Direct Mapping (Tag, Line, Word offsets), (b) Fully Associative Mapping (Tag, Word offsets), and (c) $k$-Way Set Associative Mapping. Given a main memory of $64\\,\\text{MB}$ ($26$-bit address), cache size of $64\\,\\text{KB}$, and block size of $16\\,\\text{bytes}$, compute the number of bits in Tag, Set/Line, and Word fields for: (1) Direct mapping, and (2) 4-Way Set Associative mapping.",
-      "marks": "4+6",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Memory Organization",
-      "text": "Explain Cache Write Policies: Write-Through vs. Write-Back (with dirty bit), and Write-Allocate vs. No-Write-Allocate. Calculate Average Memory Access Time (AMAT): $\\text{AMAT} = T_{hit} + (1 - h) \\times T_{miss}$.",
-      "marks": "4+4",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Memory Organization",
-      "text": "Explain 5-stage Instruction Pipelining (Instruction Fetch - IF, Instruction Decode - ID, Execute - EX, Memory Access - MEM, Write Back - WB). Derive the Theoretical Speedup of a $k$-stage pipeline executing $n$ instructions: $S_k = \\frac{n \\cdot k}{k + n - 1}$. Calculate speedup as $n \\to \\infty$.",
-      "marks": "3+5",
-      "years": [
-        "2083",
-        "2081",
-        "2080",
-        "2079"
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 4: Control Unit Design",
-      "text": "Explain Pipeline Hazards and their solutions: (a) Structural Hazards (Resource contention / separate I-Cache and D-Cache), (b) Data Hazards (RAW / True dependency, WAR / Anti-dependency, WAW / Output dependency; Solved by Operand Forwarding / Bypassing, Pipeline Stalling / NOP injection, and Out-of-Order execution), and (c) Control / Branch Hazards (Solved by Static / Dynamic Branch Prediction and Branch Delay Slots).",
-      "marks": "4+6",
-      "years": [
-        "2079"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Memory Organization",
-      "text": "Explain Flynn's Classification of Computer Architectures: SISD, SIMD (Vector processors / GPUs), MISD, and MIMD. Compare Symmetric Multiprocessing (SMP) vs. Non-Uniform Memory Access (NUMA) and explain Cache Coherence protocols (MESI / Illinois protocol - Modified, Exclusive, Shared, Invalid).",
-      "marks": "4+4",
-      "years": [
-        "2078",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Computer Arithmetic",
-      "text": "Explain Restoring and Non-Restoring Division Algorithms for unsigned binary integers. Divide $(14)_{10} = (1110)_2$ by $(3)_{10} = (0011)_2$ using the Non-Restoring division algorithm.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2082",
-        "2080"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Instruction Set Architecture and Addressing Modes",
-      "text": "Write assembly programs for computing $X = (A + B) \\times (C + D)$ using: (a) 3-Address Instructions, (b) 2-Address Instructions, (c) 1-Address (Accumulator) Instructions, and (d) 0-Address (Stack-based) Instructions.",
-      "marks": "8",
-      "years": [
-        "2082"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Memory Organization",
-      "text": "Explain Virtual Memory organization with Paging and Translation Lookaside Buffer (TLB). Explain the step-by-step Address Translation from Virtual Address to Physical Address.",
+      "chapter": "Chapter 2: Central Processing Unit and Control Unit Design",
+      "text": "Explain General Register Organization and Stack Organization (Reverse Polish Notation evaluation using stack).",
       "marks": "6",
       "years": [
-        "2081",
-        "2079"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Instruction Set Architecture and Addressing Modes",
-      "text": "Explain Superscalar Architecture and Very Long Instruction Word (VLIW) processors. Explain Tomasulo's Algorithm for dynamic instruction scheduling and register renaming using Reservation Stations and Common Data Bus (CDB).",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2080",
-        "2079"
+        "2082 Chaitra",
+        "2080 Ashwin",
+        "2078 Chaitra"
       ],
       "frequency": 3
+    },
+    {
+      "chapter": "Chapter 2: Central Processing Unit and Control Unit Design",
+      "text": "Compare Hardwired Control Unit vs Microprogrammed Control Unit design. Explain Horizontal Microinstruction vs Vertical Microinstruction formats with control word examples.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 3: Computer Arithmetic and Pipelining",
+      "text": "Explain Booth's Multiplication Algorithm for signed 2's complement binary numbers. Trace Booth's algorithm for multiplying multiplicand $M = (-9)_{10} = 10111_2$ and multiplier $Q = (+6)_{10} = 00110_2$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 3: Computer Arithmetic and Pipelining",
+      "text": "Explain Restoring Division Algorithm and Non-Restoring Division Algorithm with step-by-step register trace tables.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 3: Computer Arithmetic and Pipelining",
+      "text": "Explain Linear Instruction Pipelining (4-segment and 5-segment pipelines: IF, ID, EX, MEM, WB). Calculate Speedup ($S$), Efficiency ($\\eta$), and Throughput ($TP$) of a $k$-stage pipeline for $n$ instructions.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 3: Computer Arithmetic and Pipelining",
+      "text": "Explain Pipeline Hazards: Structural Hazards, Data Hazards (RAW, WAR, WAW hazards and forwarding/bypassing), and Control Hazards (Branch prediction and branch delay slots).",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2079 Ashwin"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 4: Memory Organization and Input-Output Systems",
+      "text": "Explain Memory Hierarchy (Registers, L1/L2 Cache, Main Memory, Secondary Storage) in terms of speed, cost, and capacity.",
+      "marks": "4",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Memory Organization and Input-Output Systems",
+      "text": "Explain Cache Memory Mapping Techniques: Direct Mapping, Fully Associative Mapping, and Set-Associative Mapping (2-way / 4-way). Calculate Tag, Set/Line, and Word fields for a given main memory and cache size.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 4: Memory Organization and Input-Output Systems",
+      "text": "Explain Cache Write Policies: Write-Through (with write buffer) vs Write-Back (with dirty bit), and Cache Replacement Policies (LRU, FIFO, LFU, Random).",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2079 Ashwin"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Memory Organization and Input-Output Systems",
+      "text": "Explain I/O Data Transfer Modes: Programmed I/O, Interrupt-Driven I/O, and Direct Memory Access (DMA). Explain DMA Controller (8237) architecture, Burst Mode, and Cycle Stealing mode.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
     }
   ]
 }

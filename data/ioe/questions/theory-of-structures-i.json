@@ -1,101 +1,124 @@
 {
   "subject": "Theory of Structures I",
+  "code": "ENCE 202",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 2: Analysis of Determinate Plane & Space Trusses",
-    "Chapter 3: Influence Lines for Beams & Trusses",
-    "Chapter 4: Deflection of Beams",
-    "Chapter 5: Energy Principles & Virtual Work Method",
-    "Chapter 6: Three-Hinged Arches & Cable Structures"
+    "Chapter 1: Energy Principles, Virtual Work, and Deflections",
+    "Chapter 2: Influence Line Diagrams (ILD) for Determinate Structures",
+    "Chapter 3: Analysis of Determinate Three-Hinged Arches and Suspension Cables",
+    "Chapter 4: Indeterminate Structure Basics and Method of Consistent Deformation (Force Method)",
+    "Chapter 5: Slope Deflection Method and Moment Distribution Method"
   ],
   "questions": [
     {
-      "chapter": "Chapter 2: Analysis of Determinate Plane & Space Trusses",
-      "text": "Explain Static and Kinematic Indeterminacy ($D_s, D_k$) of plane trusses, beams, and rigid-jointed plane frames with internal releases (hinges, sliders). Calculate $D_s$ and $D_k$ for a two-bay three-story plane frame with fixed bases.",
-      "marks": "3+5",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 4: Deflection of Beams",
-      "text": "State and prove Mohr's Theorems (Moment-Area Theorems I & II). Calculate the slope and deflection at the free end of a cantilever beam carrying a uniformly distributed load (UDL) of $w\\,\\text{kN/m}$ over half its span from the fixed support.",
-      "marks": "3+5",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Deflection of Beams",
-      "text": "State the Conjugate Beam Theorems. Find the slope at supports and maximum deflection for a simply supported beam with varying cross-section (moment of inertia $2I$ in middle half, $I$ near supports) carrying a central point load $W$ using the Conjugate Beam Method.",
-      "marks": "3+7",
-      "years": [
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Deflection of Beams",
-      "text": "State Castigliano's First and Second Theorems. State the Principle of Minimum Strain Energy. Find the vertical deflection at the loaded joint of a rigid portal frame using Castigliano's Theorem ($U = \\int \\frac{M^2 dx}{2EI}$).",
-      "marks": "4+6",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Three-Hinged Arches & Cable Structures",
-      "text": "A Three-Hinged Parabolic Arch of span $L = 30\\,\\text{m}$ and central rise $h = 6\\,\\text{m}$ carries a uniformly distributed load of $20\\,\\text{kN/m}$ on the left half of the span. Determine: (a) Horizontal thrust $H$, (b) Bending moment, Normal Thrust ($N = V\\sin\\theta + H\\cos\\theta$), and Radial Shear ($Q = V\\cos\\theta - H\\sin\\theta$) at a section $7.5\\,\\text{m}$ from the left support. Prove that a three-hinged parabolic arch under full UDL carries zero bending moment everywhere.",
-      "marks": "4+8",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Three-Hinged Arches & Cable Structures",
-      "text": "Derive equations for maximum cable tension ($T_{max} = \\sqrt{H^2 + V_{max}^2}$) and cable length ($L_c = L + \\frac{8h^2}{3L}$) for a light flexible suspension cable supported at same level carrying a horizontal UDL. Determine tensions in anchor cables over saddles and guide pulleys.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Influence Lines for Beams & Trusses",
-      "text": "Define Influence Line Diagram (ILD) and state Muller-Breslau Principle for determinate structures. Draw ILD for support reactions $R_A, R_B$, shear force, and bending moment at a section $X$ for a simply supported beam with an overhang. Using the ILD, find maximum shear force and bending moment caused by a moving train of concentrated wheel loads.",
-      "marks": "3+7",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Energy Principles & Virtual Work Method",
-      "text": "State the Unit Load Method (Virtual Work Principle) for pin-jointed trusses: $\\Delta = \\sum \\frac{P k L}{A E}$. Calculate the vertical and horizontal deflection at the loaded joint of a steel cantilever truss. If one member was fabricated $5\\,\\text{mm}$ too short, calculate the resulting joint displacement.",
-      "marks": "4+6",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Influence Lines for Beams & Trusses",
-      "text": "Draw Influence Line Diagrams for forces in bottom chord $L_2L_3$, top chord $U_2U_3$, and diagonal $U_2L_3$ of a through-type Warren Pratt bridge truss of span $24\\,\\text{m}$ with 6 panels.",
+      "chapter": "Chapter 1: Energy Principles, Virtual Work, and Deflections",
+      "text": "State and prove Castigliano's First and Second Theorems and Principle of Virtual Work (Unit Load Method). Calculate vertical deflection and slope at the free end of a cantilever / simply supported beam with varying $EI$ using unit load method: $\\Delta = \\int \\frac{M m}{E I} dx$.",
       "marks": "8",
       "years": [
-        "2081"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 1: Energy Principles, Virtual Work, and Deflections",
+      "text": "Calculate vertical and horizontal deflections at joint C of a pin-jointed plane truss using Unit Load Method: $\\Delta = \\sum \\frac{N n L}{A E}$.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 2: Influence Line Diagrams (ILD) for Determinate Structures",
+      "text": "Define Influence Line Diagram (ILD). Draw ILD for support reactions ($R_A, R_B$), Shear Force ($SF_C$), and Bending Moment ($BM_C$) at a section C for a simply supported beam. Calculate maximum bending moment at C due to a train of moving concentrated loads.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 2: Influence Line Diagrams (ILD) for Determinate Structures",
+      "text": "Draw ILD for forces in top chord, bottom chord, and diagonal members of a Pratt / Warren truss. Calculate maximum tensile and compressive forces due to moving UDL.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 3: Analysis of Determinate Three-Hinged Arches and Suspension Cables",
+      "text": "Analyze a Three-Hinged Parabolic Arch of span $L$ and central rise $h$ carrying a UDL over left half span. Derive expression for Horizontal Thrust ($H = \\frac{w L^2}{8 h}$) and calculate Normal Thrust ($N$) and Radial Shear ($Q$) at a quarter span section.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 3: Analysis of Determinate Three-Hinged Arches and Suspension Cables",
+      "text": "Analyze a Suspension Cable with supports at same / different levels carrying concentrated loads and UDL. Calculate maximum tension ($T_{max} = \\sqrt{H^2 + V_{max}^2}$), minimum tension ($H$), and total cable length.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 4: Indeterminate Structure Basics and Method of Consistent Deformation (Force Method)",
+      "text": "Explain Static Indeterminacy ($D_s$) and Kinematic Indeterminacy ($D_k$) for beams, rigid frames, and trusses. Analyze a Propped Cantilever beam / Two-Span Continuous beam using Method of Consistent Deformation (Force Method) and draw SFD and BMD.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 5: Slope Deflection Method and Moment Distribution Method",
+      "text": "Derive Slope Deflection Equations ($M_{ab} = MF_{ab} + \\frac{2EI}{L}(2\\theta_a + \\theta_b - \\frac{3\\Delta}{L})$). Analyze a continuous beam with support settlement using Slope Deflection Method and draw Shear Force Diagram (SFD) and Bending Moment Diagram (BMD).",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 5: Slope Deflection Method and Moment Distribution Method",
+      "text": "Explain Moment Distribution Method (Hardy Cross Method): Distribution Factor, Carry-Over Factor, and Stiffness Factor ($4EI/L, 3EI/L$). Analyze a portal frame with/without side sway and draw SFD and BMD.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
     }
   ]
 }

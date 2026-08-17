@@ -10,104 +10,87 @@
   ],
   "questions": [
     {
-      "chapter": "Chapter 5: Fault Tolerance, Recovery & Distributed File Systems",
-      "text": "Define a Distributed System. Explain its key characteristics: Heterogeneity, Openness, Scalability, Fault Tolerance, Transparency (Access, Location, Migration, Relocation, Replication, Concurrency, Failure).",
-      "marks": "4+4",
+      "chapter": "Chapter 1: Distributed Systems Characterization, System Architectures & Models",
+      "text": "Define Distributed System. Explain its goals (Transparency, Scalability, Reliability, Openness). Differentiate between Tightly Coupled vs Loosely Coupled systems.",
+      "marks": "6",
       "years": [
-        "2083"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 1: Distributed Systems Characterization, System Architectures & Models",
+      "text": "Explain Communication in Distributed Systems: Remote Procedure Call (RPC) execution model, Remote Method Invocation (RMI), and Message-Oriented Middleware (MOM).",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
     },
     {
       "chapter": "Chapter 3: Synchronization in Distributed Systems",
-      "text": "Explain the concept of Logical Clocks and Lamport's Happens-Before Relation ($a \\to b$). What are the conditions for Lamport's Logical Clock? Explain Vector Clocks and how they capture causal relationships between events in distributed systems.",
-      "marks": "3+5",
+      "text": "Explain Synchronization in Distributed Systems: Lamport's Logical Clocks, Vector Clocks, and Mutual Exclusion Algorithms (Ricart-Agrawala, Maekawa, Token Ring).",
+      "marks": "8",
       "years": [
-        "2082",
-        "2080"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 2
+      "frequency": 4
     },
     {
       "chapter": "Chapter 3: Synchronization in Distributed Systems",
-      "text": "Explain Distributed Mutual Exclusion algorithms: (a) Centralized Algorithm, (b) Distributed Algorithm (Ricart-Agrawala algorithm using timestamps), and (c) Token Ring Algorithm. Compare their message complexities, synchronization delays, and single points of failure.",
-      "marks": "4+4",
+      "text": "Explain Election Algorithms in Distributed Systems: Bully Algorithm and Ring Algorithm with step-by-step failure recovery examples.",
+      "marks": "6",
       "years": [
-        "2081",
-        "2080",
-        "2078"
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Chaitra"
       ],
       "frequency": 3
     },
     {
       "chapter": "Chapter 4: Distributed Consistency, Replication & Consensus Algorithms",
-      "text": "State the CAP Theorem (Consistency, Availability, Partition Tolerance) and PACELC Theorem for distributed data stores. Explain Consensus in asynchronous distributed systems and the Raft / Paxos consensus algorithm.",
-      "marks": "3+5",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Cloud Computing Models",
-      "text": "Explain Cloud Computing Service Models: Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). Compare Public, Private, Hybrid, and Community Cloud deployment models.",
-      "marks": "4+4",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Cloud Computing Models",
-      "text": "Explain Virtualization in Cloud Computing. Compare Type-1 (Bare-Metal) Hypervisor vs. Type-2 (Hosted) Hypervisor. Explain Full Virtualization, Para-Virtualization, and Operating System-Level Virtualization (Containers vs VMs / Docker & Kubernetes).",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Fault Tolerance, Recovery & Distributed File Systems",
-      "text": "Explain the architecture of Hadoop Distributed File System (HDFS): NameNode, DataNodes, Secondary NameNode, Block Replication, Heartbeats, and Block Reports. How does HDFS ensure fault tolerance?",
-      "marks": "4+4",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Distributed Systems Characterization, System Architectures & Models",
-      "text": "Explain the MapReduce Distributed Computing Paradigm (Map phase, Shuffle & Sort, Reduce phase). Write the pseudo-code for Word Count problem in MapReduce and trace the execution for a given text dataset across 3 nodes.",
-      "marks": "3+5",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Cloud Computing Models",
-      "text": "Explain Service Level Agreements (SLA) in Cloud Computing. Explain Cloud Security challenges (Multi-tenancy isolation, Data encryption at rest and in transit, Identity and Access Management - IAM). Compare Monolithic Architecture vs. Microservices Architecture with API Gateways and Service Mesh.",
-      "marks": "4+4",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Distributed Systems Characterization, System Architectures & Models",
-      "text": "Explain Election Algorithms in distributed systems: (a) Bully Algorithm, and (b) Ring Algorithm. Show the sequence of messages passed when the current coordinator process crashes.",
+      "text": "Explain Cloud Computing Service Models: IaaS, PaaS, SaaS. Explain Cloud Deployment Models: Public, Private, Hybrid, and Community clouds.",
       "marks": "6",
       "years": [
-        "2083",
-        "2081",
-        "2080",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 4: Distributed Consistency, Replication & Consensus Algorithms",
+      "text": "Explain Virtualization in Cloud Computing: Hypervisor Type 1 (Bare-metal) vs Type 2 (Hosted). Compare Virtual Machines (VMs) vs Containerization (Docker and Kubernetes).",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 6: Cloud Computing Models",
+      "text": "Explain Cloud Storage, Big Data Processing using MapReduce framework and Apache Hadoop / Spark architecture. Explain CAP Theorem (Consistency, Availability, Partition Tolerance).",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
     }
-  ]
+  ],
+  "code": "ENCT 353"
 }

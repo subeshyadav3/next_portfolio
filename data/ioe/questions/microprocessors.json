@@ -1,231 +1,270 @@
 {
   "subject": "Microprocessors",
+  "code": "ENEX 201",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: 8085 Microprocessor Architecture & Bus Structure",
-    "Chapter 2: 8085 Instruction Set & Assembly Language Programming",
-    "Chapter 3: Bus Timing Diagrams, Machine Cycles & T-States",
-    "Chapter 5: Interrupts Handling & 8259 Priority Interrupt Controller"
+    "Chapter 1: Introduction",
+    "Chapter 2: Intel 8085 Microprocessor",
+    "Chapter 3: Intel 8086 Microprocessor",
+    "Chapter 4: Microprocessor System",
+    "Chapter 5: Interrupt Operations",
+    "Chapter 6: Serial Interface"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: 8085 Microprocessor Architecture & Bus Structure",
-      "text": "Draw the functional block diagram of the Intel 8085 8-bit microprocessor. Explain the internal components: Arithmetic Logic Unit (ALU), Accumulator (Reg A), General Purpose Registers (B, C, D, E, H, L), Temporary Registers (W, Z), Program Counter (PC), Stack Pointer (SP), Instruction Register (IR), Instruction Decoder, and Flag Register ($S, Z, AC, P, CY$).",
-      "marks": "4+4",
+      "chapter": "Chapter 1: Introduction",
+      "text": "Explain the basic block diagram of a digital computer. Differentiate between Microprocessor and Microcontroller with architecture and applications.",
+      "marks": "4",
       "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: 8085 Microprocessor Architecture & Bus Structure",
-      "text": "Explain the pin diagram of 8085. Explain how the lower order address/data bus ($AD_0-AD_7$) is demultiplexed using the Address Latch Enable ($ALE$) signal and a 74LS373 octal transparent latch with a neat schematic circuit diagram.",
-      "marks": "3+5",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: 8085 Instruction Set & Assembly Language Programming",
-      "text": "Explain the Addressing Modes of 8085 (Immediate, Direct, Register, Register Indirect, Implicit) with two assembly instruction examples for each. Classify 8085 instructions based on byte length (1-byte, 2-byte, 3-byte).",
-      "marks": "5",
-      "years": [
-        "2081",
-        "2080",
-        "2078"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2079 Ashwin"
       ],
       "frequency": 3
     },
     {
-      "chapter": "Chapter 2: 8085 Instruction Set & Assembly Language Programming",
-      "text": "Write an 8085 assembly language program to sort an array of $10$ bytes stored from memory address $2050\\text{H}$ in ascending / descending order using the Bubble Sort algorithm.",
-      "marks": "8",
+      "chapter": "Chapter 1: Introduction",
+      "text": "Explain the Stored Program Concept (Von Neumann architecture) and the Bus Organization (Address, Data, and Control buses) of a computer system.",
+      "marks": "4",
       "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: 8085 Instruction Set & Assembly Language Programming",
-      "text": "Write an 8085 assembly language program to find the largest and smallest number in a block of $N$ data bytes starting at memory address $3000\\text{H}$. Store the largest byte at $4000\\text{H}$ and smallest byte at $4001\\text{H}$.",
-      "marks": "6",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: 8085 Microprocessor Architecture & Bus Structure",
-      "text": "Write an 8085 subroutine to generate a precise time delay of $100\\,\\text{ms}$ using a 16-bit register pair (e.g. `BC`). Calculate the loop count assuming an 8085 operating clock frequency of $3.072\\,\\text{MHz}$ ($T$-state duration $= 0.3255\\,\\mu\\text{s}$).",
-      "marks": "3+5",
-      "years": [
-        "2083",
-        "2081",
-        "2078"
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 3
     },
     {
-      "chapter": "Chapter 3: Bus Timing Diagrams, Machine Cycles & T-States",
-      "text": "Draw the complete bus timing diagram for the instruction `MVI A, 32H` (Opcode Fetch machine cycle $4T$ + Memory Read machine cycle $3T$), showing signals $CLK, A_{15}-A_8, AD_7-AD_0, ALE, \\overline{RD}, \\overline{WR}, IO/\\overline{M}, S_0, S_1$.",
-      "marks": "8",
+      "chapter": "Chapter 1: Introduction",
+      "text": "Explain the processing cycle (Fetch, Decode, Execute) of a stored program computer system with a flow diagram.",
+      "marks": "4",
       "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: 8085 Instruction Set & Assembly Language Programming",
-      "text": "Compare Memory-Mapped I/O vs Peripheral I/O (I/O-Mapped I/O / Isolated I/O) in terms of address bus size, instructions used, decoding hardware, and execution speed.",
-      "marks": "6",
-      "years": [
-        "2082",
-        "2080"
+        "2080 Ashwin",
+        "2078 Chaitra"
       ],
       "frequency": 2
     },
     {
-      "chapter": "Chapter 1: 8085 Microprocessor Architecture & Bus Structure",
-      "text": "Interface an $8\\,\\text{KB}$ EPROM ($2764$) and an $8\\,\\text{KB}$ Static RAM ($6264$) to the 8085 microprocessor with absolute memory address map: EPROM at $0000\\text{H}-1FFF\\text{H}$ and SRAM at $4000\\text{H}-5FFF\\text{H}$ using a 74LS138 $3:8$ decoder and address latch 74LS373. Draw the complete schematic interface diagram.",
-      "marks": "10",
+      "chapter": "Chapter 2: Intel 8085 Microprocessor",
+      "text": "Explain the internal architecture of Intel 8085 microprocessor with a neat functional block diagram. Explain the functions of ALU, General Purpose Registers (B, C, D, E, H, L), Program Counter (PC), Stack Pointer (SP), and Flag Register (S, Z, AC, P, CY).",
+      "marks": "8",
       "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Interrupts Handling & 8259 Priority Interrupt Controller",
-      "text": "Explain hardware and software interrupts in 8085. Classify TRAP, RST 7.5, RST 6.5, RST 5.5, and INTR based on vector addresses, trigger mechanisms (Edge vs Level), priority, and maskability. Explain the bit format of Set Interrupt Mask ($SIM$) and Read Interrupt Mask ($RIM$) instructions.",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2081",
-        "2080",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: 8085 Microprocessor Architecture & Bus Structure",
-      "text": "Draw the functional block diagram of the Intel 8255 Programmable Peripheral Interface (PPI). Explain its operational modes: Mode 0 (Basic I/O), Mode 1 (Strobed I/O with handshake signals), and Mode 2 (Strobed Bidirectional Bus I/O). Construct the 8255 Control Word format for I/O and BSR (Bit Set/Reset) modes.",
-      "marks": "4+4",
-      "years": [
-        "2079"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: 8085 Microprocessor Architecture & Bus Structure",
-      "text": "Interface a matrix keyboard ($4 \\times 4$) and 7-segment display or Stepper Motor to the 8085 microprocessor using the 8255 PPI. Write an assembly program to rotate the stepper motor in clockwise direction by $90^\\circ$.",
-      "marks": "8",
-      "years": [
-        "2078",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: 8085 Microprocessor Architecture & Bus Structure",
-      "text": "Draw the internal architecture of Intel 8086 16-bit microprocessor. Explain the Bus Interface Unit (BIU) with 6-byte Instruction Queue and Execution Unit (EU). Explain the advantages of Memory Segmentation in 8086.",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2082",
-        "2080"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: 8085 Instruction Set & Assembly Language Programming",
-      "text": "Explain physical address calculation in 8086. If Code Segment $CS = 2400\\text{H}$ and Instruction Pointer $IP = 3500\\text{H}$, calculate the 20-bit Physical Address ($\\text{PA} = CS \\times 10\\text{H} + IP$). Explain 8086 addressing modes (Base-Index with displacement) and write an 8086 assembly program to add two 16-bit numbers.",
-      "marks": "3+5",
-      "years": [
-        "2082"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Bus Timing Diagrams, Machine Cycles & T-States",
-      "text": "Explain status and control signals in 8085: $IO/\\overline{M}, S_0, S_1, \\overline{RD}, \\overline{WR}$, and $READY$. Construct the Status Table showing machine cycles (Opcode Fetch, Memory Read, Memory Write, I/O Read, I/O Write, Interrupt Acknowledge, Halt, Hold, Reset).",
+      "chapter": "Chapter 2: Intel 8085 Microprocessor",
+      "text": "Explain Demultiplexing of the Address/Data Bus ($AD_0-AD_7$) in 8085 using 74LS373 latch and the ALE signal. Draw the bus timing diagram for Opcode Fetch Machine Cycle (e.g. MOV A, M).",
       "marks": "6",
       "years": [
-        "2081",
-        "2079"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: 8085 Instruction Set & Assembly Language Programming",
-      "text": "Write an 8085 assembly program to multiply two 8-bit unsigned numbers stored at memory locations $2050\\text{H}$ and $2051\\text{H}$ using successive addition and store the 16-bit product at $2052\\text{H}$ and $2053\\text{H}$.",
-      "marks": "6",
-      "years": [
-        "2083",
-        "2080",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Bus Timing Diagrams, Machine Cycles & T-States",
-      "text": "Draw the bus timing diagram for: (a) `STA 3000H` (13 $T$-states across 4 machine cycles: Opcode Fetch, Memory Read, Memory Read, Memory Write), and (b) `IN 05H`.",
-      "marks": "8",
-      "years": [
-        "2079"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Interrupts Handling & 8259 Priority Interrupt Controller",
-      "text": "Draw the block diagram of Intel 8254 Programmable Interval Timer. Explain its 6 operational modes (Mode 0: Interrupt on terminal count, Mode 1: Hardware retriggerable one-shot, Mode 2: Rate generator, Mode 3: Square wave generator, Mode 4: Software triggered strobe, Mode 5: Hardware triggered strobe).",
-      "marks": "4+4",
-      "years": [
-        "2078",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Interrupts Handling & 8259 Priority Interrupt Controller",
-      "text": "Explain the architecture and cascading of Intel 8259 Programmable Interrupt Controller (PIC). Explain Initialization Command Words ($ICW_1-ICW_4$) and Operational Command Words ($OCW_1-OCW_3$).",
-      "marks": "6",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: 8085 Microprocessor Architecture & Bus Structure",
-      "text": "Explain Direct Memory Access (DMA) and the architecture of Intel 8237 / 8257 DMA Controller. Explain DMA transfer modes: Burst mode, Cycle Stealing mode, and Demand mode.",
-      "marks": "6",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2079"
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 5: Interrupts Handling & 8259 Priority Interrupt Controller",
-      "text": "Compare Minimum Mode vs Maximum Mode pin configurations of 8086. Explain the function of the 8288 Bus Controller in Maximum Mode multiprocessing systems.",
-      "marks": "6",
+      "chapter": "Chapter 2: Intel 8085 Microprocessor",
+      "text": "Explain the Addressing Modes of 8085 (Immediate, Direct, Register, Register Indirect, Implicit) with code examples.",
+      "marks": "4",
       "years": [
-        "2081"
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Ashwin"
       ],
-      "frequency": 1
+      "frequency": 3
     },
     {
-      "chapter": "Chapter 2: 8085 Instruction Set & Assembly Language Programming",
-      "text": "Write an 8085 assembly language program to count the number of even and odd numbers, or count the number of 1s in a byte stored at $2500\\text{H}$. Store results in memory.",
+      "chapter": "Chapter 2: Intel 8085 Microprocessor",
+      "text": "Write an 8085 Assembly Language Program (ALP) to sort an array of 10 bytes stored from memory location 2050H in ascending order using Bubble Sort.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 2: Intel 8085 Microprocessor",
+      "text": "Write an 8085 ALP to find the largest and smallest number from a block of N bytes stored starting from 3000H.",
       "marks": "6",
       "years": [
-        "2080",
-        "2078"
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Chaitra"
       ],
-      "frequency": 2
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 2: Intel 8085 Microprocessor",
+      "text": "Write an 8085 ALP to generate a time delay of 100 ms using nested loops. Show accurate calculation of T-states assuming 3 MHz crystal frequency.",
+      "marks": "6",
+      "years": [
+        "2081 Ashwin",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 3: Intel 8086 Microprocessor",
+      "text": "Explain the internal architecture of Intel 8086 microprocessor. Differentiate between Bus Interface Unit (BIU) and Execution Unit (EU). Explain the benefits of Instruction Pipelining in 8086.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 3: Intel 8086 Microprocessor",
+      "text": "Explain Memory Segmentation in 8086 (Code, Data, Stack, Extra Segments). Calculate the 20-bit Physical Address given Segment Address `2000H` and Offset Address `0150H` ($Physical = Segment \\times 10H + Offset$).",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 3: Intel 8086 Microprocessor",
+      "text": "Explain Minimum Mode vs Maximum Mode of 8086. Explain functions of pins: $MN/\\overline{MX}$, $HOLD$, $HLDA$, $LOCK$, and $\\overline{TEST}$.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Ashwin"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 3: Intel 8086 Microprocessor",
+      "text": "Explain 8086 Assembly Language Syntax: Directives (DB, DW, DD, SEGMENT, ENDS, ASSUME, PROC, ENDP), Statements, and Operators. Differentiate between EXE and COM programs.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 3: Intel 8086 Microprocessor",
+      "text": "Write an 8086 ALP to reverse a given string and check whether it is a Palindrome or not using INT 21H DOS function calls.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 4: Microprocessor System",
+      "text": "Explain Address Decoding techniques: Absolute (Unique) Decoding vs Linear Select (Non-Unique / Partial) Decoding with diagrams.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 4: Microprocessor System",
+      "text": "Interface 8 KB EPROM (2764) and 8 KB SRAM (6264) with 8085 microprocessor starting at address 0000H and 8000H respectively using 74LS138 (3-to-8 decoder). Show memory map and circuit schematic.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 4: Microprocessor System",
+      "text": "Explain 8255 Programmable Peripheral Interface (PPI) block diagram, Operating Modes (Mode 0: Basic I/O, Mode 1: Strobed I/O, Mode 2: Bidirectional Bus), and Control Word formats (I/O mode and BSR mode).",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 5: Interrupt Operations",
+      "text": "Explain Interrupt Structure of 8085: Hardware Interrupts (TRAP, RST 7.5, RST 6.5, RST 5.5, INTR) in order of priority, trigger type (edge/level), vector addresses, and SIM / RIM instructions.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 5: Interrupt Operations",
+      "text": "Explain 8086 Interrupt Processing Sequence and Interrupt Vector Table (IVT). Differentiate between Hardware Interrupts (NMI, INTR) and Software Interrupts (INT n).",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2079 Ashwin"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 5: Interrupt Operations",
+      "text": "Explain 8259 Programmable Interrupt Controller (PIC) architecture and Initialization Command Words (ICW1-ICW4) in cascading mode.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 6: Serial Interface",
+      "text": "Differentiate between Synchronous and Asynchronous Serial Data Transmission. Explain Baud Rate and framing in serial communication.",
+      "marks": "4",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Ashwin"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 6: Serial Interface",
+      "text": "Explain Serial Interface Standards: RS-232C standard (voltage levels, handshaking signals RxD, TxD, RTS, CTS, DTR, DSR) and USB. Explain Universal Synchronous Asynchronous Receiver Transmitter (USART 8251) architecture.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
     }
   ]
 }

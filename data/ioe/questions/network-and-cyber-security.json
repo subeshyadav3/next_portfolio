@@ -11,104 +11,78 @@
   ],
   "questions": [
     {
-      "chapter": "Chapter 4: Message Integrity, Hash Functions, Digital Signatures & HMAC",
-      "text": "Explain the CIA Triad (Confidentiality, Integrity, Availability) and the broader security goals (Authentication, Non-repudiation, Access Control). Classify Security Attacks: Passive Attacks (Eavesdropping, Traffic analysis) vs. Active Attacks (Masquerade, Replay, Modification of messages, Denial of Service - DoS/DDoS).",
-      "marks": "4+4",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
       "chapter": "Chapter 1: Security Fundamentals, Threat Models & Cryptographic Principles",
-      "text": "Explain Classical Substitution and Transposition Ciphers: Playfair Cipher, Polyalphabetic (Vigen\u00e8re) Cipher, Rail Fence Cipher, and Hill Cipher. Encrypt the plaintext message \"SECURITY\" using a Hill Cipher with key matrix $K = \\begin{bmatrix} 9 & 4 \\\\ 5 & 7 \\end{bmatrix} \\pmod{26}$ and find its decryption matrix $K^{-1}$.",
-      "marks": "3+5",
+      "text": "Explain the CIA Triad (Confidentiality, Integrity, Availability), Non-Repudiation, and Authentication in Cyber Security. Explain Active Attacks vs Passive Attacks with examples.",
+      "marks": "6",
       "years": [
-        "2082",
-        "2080"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Security Fundamentals, Threat Models & Cryptographic Principles",
-      "text": "Explain the structure of Advanced Encryption Standard (AES). Describe the 4 round transformations: (a) `SubBytes` (Non-linear S-Box substitution), (b) `ShiftRows`, (c) `MixColumns` (Matrix multiplication in $GF(2^8)$), and (d) `AddRoundKey` (XOR with round key schedule). Compare AES with DES/3DES.",
-      "marks": "4+4",
-      "years": [
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Asymmetric Key Cryptography",
-      "text": "Explain Diffie-Hellman Key Exchange algorithm. In a Diffie-Hellman setup with public prime $q = 23$ and primitive root $\\alpha = 5$, User A selects private key $X_A = 6$ and User B selects $X_B = 15$. (a) Calculate public keys $Y_A$ and $Y_B$, (b) Compute the shared secret session key $K$. Explain Man-in-the-Middle (MitM) attack on Diffie-Hellman.",
-      "marks": "3+5",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Security Fundamentals, Threat Models & Cryptographic Principles",
-      "text": "What are Cryptographic Hash Functions? Explain the three essential security properties: (a) Pre-image resistance (One-way), (b) Second pre-image resistance (Weak collision resistance), and (c) Collision resistance (Strong collision resistance). Explain the Birthday Attack on hash functions and the structure of SHA-256 / SHA-3.",
-      "marks": "4+4",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Public Key Infrastructure, Certificates & Authentication Protocols",
-      "text": "Explain Digital Signature Scheme (Signing and Verification algorithms) using RSA and Digital Signature Standard (DSS / DSA). Explain Public Key Infrastructure (PKI), Digital Certificates (X.509 standard), Certificate Authorities (CA), and Certificate Revocation Lists (CRL).",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: Network Security Protocols",
-      "text": "Explain IPsec Architecture: (a) Authentication Header (AH), (b) Encapsulating Security Payload (ESP), (c) Transport Mode vs. Tunnel Mode, and (d) Security Associations (SA) and Internet Key Exchange (IKE).",
-      "marks": "8",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
+      "frequency": 4
     },
     {
       "chapter": "Chapter 2: Symmetric Key Cryptography & Block Cipher Modes",
-      "text": "Explain the TLS/HTTPS Handshake Protocol (ClientHello, ServerHello, Certificate verification, Pre-Master Secret exchange, CipherSpec negotiation, and symmetric session key generation). Explain Kerberos Authentication System (Authentication Server - AS and Ticket Granting Server - TGS).",
-      "marks": "4+4",
+      "text": "Explain Symmetric Key Cryptography: Data Encryption Standard (DES - Feistel cipher structure) vs Advanced Encryption Standard (AES - Substitution, ShiftRows, MixColumns, AddRoundKey).",
+      "marks": "8",
       "years": [
-        "2082",
-        "2080"
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
       ],
-      "frequency": 2
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 2: Symmetric Key Cryptography & Block Cipher Modes",
+      "text": "Explain Asymmetric Key Cryptography: RSA Algorithm. Given prime numbers $p = 7, q = 11$, and encryption key $e = 13$, compute private key $d$, encrypt message $M = 9$, and decrypt ciphertext $C$. Explain Diffie-Hellman Key Exchange and Man-in-the-Middle attack.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 3: Asymmetric Key Cryptography",
+      "text": "Explain Cryptographic Hash Functions (MD5, SHA-256) and Message Authentication Code (HMAC). Explain Digital Signatures (DSA) and Digital Certificates (X.509 standard).",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 4: Message Integrity, Hash Functions, Digital Signatures & HMAC",
+      "text": "Explain Network Security Protocols: IPsec (AH and ESP protocols, Transport vs Tunnel mode), SSL/TLS Handshake Protocol, and HTTPS.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
     },
     {
       "chapter": "Chapter 6: Network Security Protocols",
-      "text": "Classify Firewalls: (a) Packet Filtering Firewall (Stateless), (b) Stateful Inspection Firewall, (c) Application-Level Gateway (Proxy), and (d) Circuit-Level Gateway. Explain Demilitarized Zone (DMZ) network design.",
-      "marks": "4+4",
+      "text": "Explain Web and System Vulnerabilities: SQL Injection (SQLi), Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), Denial of Service (DoS/DDoS), and Firewalls / Intrusion Detection Systems (IDS).",
+      "marks": "8",
       "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Security Fundamentals, Threat Models & Cryptographic Principles",
-      "text": "Compare Intrusion Detection Systems (IDS) vs. Intrusion Prevention Systems (IPS). Explain Signature-Based vs. Anomaly-Based detection. Describe common web application vulnerabilities from OWASP Top-10: SQL Injection, Cross-Site Scripting (XSS), Cross-Site Request Forgery (CSRF), and Buffer Overflow.",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2081",
-        "2080",
-        "2079"
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
     }
-  ]
+  ],
+  "code": "ENCT 354"
 }

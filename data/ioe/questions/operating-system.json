@@ -1,253 +1,223 @@
 {
   "subject": "Operating System",
+  "code": "ENCT 303",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Introduction to Operating Systems and System Calls",
-    "Chapter 2: Process Management, Threads and CPU Scheduling Algorithms",
-    "Chapter 3: Process Synchronization, Critical Section and Deadlocks",
-    "Chapter 4: Memory Management, Paging, Segmentation and Virtual Memory",
-    "Chapter 5: Storage Management, File Systems and Directory Implementation",
-    "Chapter 6: Mass Storage Structure, Disk Scheduling and I/O Systems"
+    "Chapter 1: Introduction to Operating Systems",
+    "Chapter 2: Process Management and CPU Scheduling",
+    "Chapter 3: Process Synchronization and Deadlocks",
+    "Chapter 4: Memory Management",
+    "Chapter 5: File Systems and Mass Storage Management",
+    "Chapter 6: Protection, Security and Linux System"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Introduction to Operating Systems and System Calls",
-      "text": "Explain the Dual-Mode Operation of an Operating System (User Mode vs. Kernel / Privileged Mode) with the Mode Bit. What are System Calls? Explain the step-by-step mechanism of executing a system call using hardware interrupts, software traps, and system call interface tables.",
-      "marks": "4+4",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Operating Systems and System Calls",
-      "text": "Compare Monolithic Kernel, Layered Architecture, and Microkernel Architecture with neat diagrams. What are the advantages and disadvantages of a microkernel architecture (e.g. Mach, QNX)?",
+      "chapter": "Chapter 1: Introduction to Operating Systems",
+      "text": "Define Operating System. Explain OS functions and services. Differentiate between Monolithic, Layered, Microkernel, and Hybrid OS architectures with diagrams.",
       "marks": "6",
       "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Process Management, Threads and CPU Scheduling Algorithms",
-      "text": "Explain the 5-state Process State Transition Diagram (New, Ready, Running, Waiting/Blocked, Terminated). Explain the contents of a Process Control Block (PCB). Differentiate between Short-term, Medium-term, and Long-term Schedulers.",
-      "marks": "4+4",
-      "years": [
-        "2081",
-        "2080",
-        "2078"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2079 Ashwin"
       ],
       "frequency": 3
     },
     {
-      "chapter": "Chapter 2: Process Management, Threads and CPU Scheduling Algorithms",
-      "text": "What is a Thread? Differentiate between Process and Thread. Compare User-Level Threads (ULT) vs Kernel-Level Threads (KLT). Describe Multithreading Models: Many-to-One, One-to-One, and Many-to-Many.",
-      "marks": "4+4",
+      "chapter": "Chapter 1: Introduction to Operating Systems",
+      "text": "Explain Dual-Mode Operation (User Mode vs Kernel Mode) and privileged instructions. Explain System Calls, system call execution cycle, and context switching.",
+      "marks": "6",
       "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Process Management, Threads and CPU Scheduling Algorithms",
-      "text": "Consider the following set of processes arriving at given arrival times with CPU burst times in milliseconds:\n$P_1$: Arrival 0, Burst 8\n$P_2$: Arrival 1, Burst 4\n$P_3$: Arrival 2, Burst 9\n$P_4$: Arrival 3, Burst 5.\nDraw Gantt charts and calculate average waiting time and turnaround time for: (a) FCFS, (b) Shortest Job First (SJF Non-preemptive), (c) Shortest Remaining Time First (SRTF Preemptive), and (d) Round Robin (Time Quantum $q = 3\\,\\text{ms}$).",
-      "marks": "10",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Process Management, Threads and CPU Scheduling Algorithms",
-      "text": "Explain Priority Scheduling (Preemptive vs Non-preemptive). What is Starvation / Indefinite Blocking and how does Aging solve it? Explain Multilevel Queue Scheduling and Multilevel Feedback Queue Scheduling.",
-      "marks": "3+5",
-      "years": [
-        "2083",
-        "2081",
-        "2078"
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 3
     },
     {
-      "chapter": "Chapter 3: Process Synchronization, Critical Section and Deadlocks",
-      "text": "Define the Critical Section Problem. State the three essential requirements (Mutual Exclusion, Progress, Bounded Waiting) that every critical section solution must satisfy. Explain Peterson's Algorithm for two-process mutual exclusion and prove that it satisfies all three requirements.",
-      "marks": "3+5",
+      "chapter": "Chapter 2: Process Management and CPU Scheduling",
+      "text": "Define Process and Process Control Block (PCB). Explain 5-State Process Transition Diagram (New, Ready, Running, Waiting, Terminated).",
+      "marks": "4",
       "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Operating Systems and System Calls",
-      "text": "What are Semaphores? Differentiate between Binary Semaphore (Mutex) and Counting Semaphore. Define atomic `wait()` (P) and `signal()` (V) operations. Write a deadlock-free and race-condition-free solution to the Classical Producer-Consumer (Bounded Buffer) Problem using semaphores.",
-      "marks": "3+5",
-      "years": [
-        "2082",
-        "2080"
+        "2082 Chaitra",
+        "2080 Ashwin"
       ],
       "frequency": 2
     },
     {
-      "chapter": "Chapter 1: Introduction to Operating Systems and System Calls",
-      "text": "Implement a starvation-free solution to the Readers-Writers Problem and Dining Philosophers Problem using semaphores and monitors.",
+      "chapter": "Chapter 2: Process Management and CPU Scheduling",
+      "text": "Differentiate between Process and Thread. Explain User-Level Threads (ULT) vs Kernel-Level Threads (KLT) and Multithreading Models (1:1, Many:1, Many:Many).",
+      "marks": "4",
+      "years": [
+        "2081 Ashwin",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 2: Process Management and CPU Scheduling",
+      "text": "Explain CPU Scheduling Criteria (Throughput, Turnaround Time, Waiting Time, Response Time). Given processes with Arrival Times and Burst Times, draw Gantt Chart and calculate average waiting time for: (a) FCFS, (b) SJF / SRTF, (c) Priority Scheduling, and (d) Round Robin (Time Quantum $q=2$).",
       "marks": "8",
       "years": [
-        "2081"
+        "2082 Chaitra",
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 6
     },
     {
-      "chapter": "Chapter 1: Introduction to Operating Systems and System Calls",
-      "text": "What is a Deadlock? State and explain the four Coffman Conditions necessary for a deadlock to occur: (1) Mutual Exclusion, (2) Hold and Wait, (3) No Preemption, and (4) Circular Wait.",
+      "chapter": "Chapter 3: Process Synchronization and Deadlocks",
+      "text": "Define Critical Section Problem and Race Condition. Explain the three requirements for a valid critical section solution (Mutual Exclusion, Progress, Bounded Waiting).",
       "marks": "6",
       "years": [
-        "2083",
-        "2081",
-        "2080",
-        "2079"
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Introduction to Operating Systems and System Calls",
-      "text": "Explain Banker's Algorithm for Deadlock Avoidance. A system has 5 processes ($P_0-P_4$) and 3 resource types ($A, B, C$) with total instances $(10, 5, 7)$. Allocation matrix and Max claim matrix are given. (a) Compute the Need Matrix, (b) Verify if the system is in a safe state and determine the safe sequence, (c) If $P_1$ requests $(1, 0, 2)$, can the request be granted immediately?",
-      "marks": "10",
-      "years": [
-        "2079"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 4: Memory Management, Paging, Segmentation and Virtual Memory",
-      "text": "Explain Contiguous Memory Allocation strategies: First Fit, Best Fit, and Worst Fit. Differentiate between Internal Fragmentation and External Fragmentation. How does Compaction resolve external fragmentation?",
-      "marks": "4+4",
-      "years": [
-        "2078",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Memory Management, Paging, Segmentation and Virtual Memory",
-      "text": "Explain Paging hardware with Translation Lookaside Buffer (TLB). Given a system with page size $4\\,\\text{KB}$, 32-bit logical address space, and 32-bit physical address space, calculate page table size. Calculate Effective Memory Access Time (EMAT) if TLB hit ratio is $95\\%$, TLB access time is $20\\,\\text{ns}$, and main memory access time is $120\\,\\text{ns}$.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2082",
-        "2080"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Memory Management, Paging, Segmentation and Virtual Memory",
-      "text": "Explain Hierarchical Paging (Two-level paging), Inverted Page Table, and Segmentation hardware with Segment Table (Base and Limit registers). Compare Paging vs Segmentation.",
-      "marks": "4+4",
-      "years": [
-        "2082"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 4: Memory Management, Paging, Segmentation and Virtual Memory",
-      "text": "What is Virtual Memory and Demand Paging? Explain the step-by-step Page Fault Handling sequence. Calculate Effective Access Time (EAT) under demand paging with page fault service time $8\\,\\text{ms}$.",
-      "marks": "4+4",
-      "years": [
-        "2081",
-        "2079"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Memory Management, Paging, Segmentation and Virtual Memory",
-      "text": "Consider the page reference string: $7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1$. Calculate the number of page faults for a system with 3 memory frames using: (a) FIFO, (b) Optimal (OPT), and (c) Least Recently Used (LRU) page replacement algorithms. What is Belady's Anomaly and which page replacement algorithm exhibits it?",
-      "marks": "10",
-      "years": [
-        "2083",
-        "2080",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Operating Systems and System Calls",
-      "text": "What is Thrashing? What causes thrashing in multiprogramming operating systems? Explain how thrashing is prevented using: (a) Working-Set Model (Locality of reference), and (b) Page Fault Frequency (PFF) strategy.",
-      "marks": "3+5",
-      "years": [
-        "2079"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Storage Management, File Systems and Directory Implementation",
-      "text": "Explain File Allocation Methods: (a) Contiguous Allocation, (b) Linked Allocation, and (c) Indexed Allocation (UNIX Inode structure with direct, single indirect, double indirect, and triple indirect pointers). Compare their access speeds and external fragmentation.",
-      "marks": "4+4",
-      "years": [
-        "2078",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Mass Storage Structure, Disk Scheduling and I/O Systems",
-      "text": "A magnetic disk drive has 200 cylinders (0 to 199). The read/write head is initially at cylinder 53 moving towards higher cylinders. The pending I/O request queue in FIFO order is: $98, 183, 37, 122, 14, 124, 65, 67$. Calculate total head movements (tracks) and illustrate head trajectory for: (a) FCFS, (b) Shortest Seek Time First (SSTF), (c) SCAN (Elevator algorithm), (d) C-SCAN, and (e) LOOK / C-LOOK.",
-      "marks": "10",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Mass Storage Structure, Disk Scheduling and I/O Systems",
-      "text": "Explain Redundant Array of Independent Disks (RAID) levels: RAID 0 (Striping), RAID 1 (Mirroring), RAID 5 (Block-level striping with distributed parity), and RAID 6 (Dual distributed parity). Compare their storage efficiency, data redundancy, and fault tolerance.",
+      "chapter": "Chapter 3: Process Synchronization and Deadlocks",
+      "text": "Explain Semaphores (Counting Semaphore vs Binary Semaphore/Mutex). Implement solutions using Semaphores for Classical Synchronization Problems: (a) Producer-Consumer Problem, (b) Readers-Writers Problem, or (c) Dining Philosophers Problem.",
       "marks": "8",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 3: Process Synchronization and Deadlocks",
+      "text": "Define Deadlock. Explain four necessary conditions for Deadlock (Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait).",
+      "marks": "4",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Ashwin"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 3: Process Synchronization and Deadlocks",
+      "text": "Explain Deadlock Avoidance using Dijkstra's Banker's Algorithm (Safety Algorithm and Resource-Request Algorithm). Given Allocation, Max, and Available matrices, determine if the system is in a safe state and list safe sequences.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 4: Memory Management, Paging, Segmentation and Virtual Memory",
-      "text": "Explain the role and architecture of Virtual Machines (Type-1 Hypervisor vs Type-2 Hypervisor) and Containers (Docker). What is the difference between Bootstrapping (IPL) and Context Switching?",
+      "chapter": "Chapter 4: Memory Management",
+      "text": "Explain Contiguous Memory Allocation: Fixed Partitioning vs Dynamic Partitioning. Compare Placement Algorithms: First-Fit, Best-Fit, and Worst-Fit with internal and external fragmentation.",
       "marks": "6",
       "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Process Management, Threads and CPU Scheduling Algorithms",
-      "text": "Explain Deadlock Detection using Resource Allocation Graphs (RAG) and Wait-For Graphs. Explain Deadlock Recovery strategies: Process Termination and Resource Preemption (Victim selection, Rollback, Starvation).",
-      "marks": "6",
-      "years": [
-        "2080",
-        "2078"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Process Management, Threads and CPU Scheduling Algorithms",
-      "text": "Explain Free Space Management techniques on disk: Bit Vector (Bit Map), Linked Free Space List, Grouping, and Counting.",
-      "marks": "6",
-      "years": [
-        "2082",
-        "2079",
-        "2078"
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Chaitra"
       ],
       "frequency": 3
     },
     {
-      "chapter": "Chapter 4: Memory Management, Paging, Segmentation and Virtual Memory",
-      "text": "Explain I/O Hardware principles: Memory-Mapped I/O vs Port-Mapped I/O, Polling (Busy waiting), Interrupt-Driven I/O, and Direct Memory Access (DMA) with cycle stealing.",
+      "chapter": "Chapter 4: Memory Management",
+      "text": "Explain Paging Hardware Architecture with Page Table and Translation Lookaside Buffer (TLB). Calculate Effective Memory Access Time (EMAT) given TLB hit ratio and access times.",
       "marks": "6",
       "years": [
-        "2078"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 4: Memory Management",
+      "text": "Define Virtual Memory and Demand Paging. Explain Page Fault handling sequence. Given a reference string and frame capacity, calculate page faults for: (a) FIFO, (b) Optimal (OPT), and (c) LRU Page Replacement algorithms. Explain Belady's Anomaly.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 6
+    },
+    {
+      "chapter": "Chapter 4: Memory Management",
+      "text": "Explain Segmentation with hardware diagram. Compare Paging vs Segmentation.",
+      "marks": "4",
+      "years": [
+        "2081 Ashwin",
+        "2079 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 5: File Systems and Mass Storage Management",
+      "text": "Explain File Access Methods (Sequential, Direct/Random) and Directory Structures (Single-level, Two-level, Tree-structured, Acyclic-graph).",
+      "marks": "4",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 5: File Systems and Mass Storage Management",
+      "text": "Explain File Allocation Methods: Contiguous Allocation, Linked Allocation, and Indexed Allocation (UNIX Inode structure with direct, single, double, triple indirect blocks).",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 5: File Systems and Mass Storage Management",
+      "text": "Explain Disk Scheduling Algorithms: FCFS, SSTF, SCAN (Elevator), C-SCAN, LOOK, and C-LOOK. Given a cylinder request queue and initial head position, calculate total head movement.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 6: Protection, Security and Linux System",
+      "text": "Explain Access Matrix model for system protection and its implementation using Access Control Lists (ACL) and Capabilities.",
+      "marks": "4",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 6: Protection, Security and Linux System",
+      "text": "Explain Linux System Architecture: Linux Kernel, Shell, Virtual File System (VFS), and process management (`fork()`, `exec()`, `wait()`).",
+      "marks": "4",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2079 Ashwin"
+      ],
+      "frequency": 3
     }
   ]
 }

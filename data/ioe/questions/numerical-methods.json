@@ -1,151 +1,181 @@
 {
   "subject": "Numerical Methods",
+  "code": "ENSH 202",
+  "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Non-Linear Equations",
-    "Chapter 2: Systems of Linear Equations",
-    "Chapter 3: Interpolation & Polynomial Approximation",
-    "Chapter 4: Numerical Differentiation & Integration",
-    "Chapter 5: Numerical Solution of ODEs"
+    "Chapter 1: Solution of Non-Linear Equations",
+    "Chapter 2: Interpolation and Polynomial Approximation",
+    "Chapter 3: Numerical Differentiation and Integration",
+    "Chapter 4: Solution of Linear System of Equations and Eigenvalues",
+    "Chapter 5: Solution of Ordinary Differential Equations (ODE) and Partial Differential Equations (PDE)"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Non-Linear Equations",
-      "text": "Derive the Newton-Raphson Formula: $x_{n+1} = x_n - \\frac{f(x_n)}{f'(x_n)}$ using Taylor series. Prove that Newton-Raphson method has Quadratic Convergence (Order $p = 2$). Find a real root of $x e^x - 1 = 0$ correct to 4 decimal places using Newton-Raphson starting with $x_0 = 0.5$.",
-      "marks": "4+6",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Non-Linear Equations",
-      "text": "Compare Bisection Method, False Position (Regula-Falsi) Method, and Secant Method. Find the positive root of $x^3 - 4x - 9 = 0$ using Secant Method with initial guesses $x_0 = 2, x_1 = 3$.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Systems of Linear Equations",
-      "text": "Solve the system of linear equations using Gauss Elimination with Partial Pivoting:\n$2x_1 + x_2 + x_3 = 10$\n$3x_1 + 2x_2 + 3x_3 = 18$\n$x_1 + 4x_2 + 9x_3 = 16$.",
-      "marks": "8",
-      "years": [
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Systems of Linear Equations",
-      "text": "Solve the following system using Gauss-Seidel Iterative Method (perform 4 iterations):\n$10x_1 + x_2 + 2x_3 = 44$\n$2x_1 + 10x_2 + x_3 = 51$\n$x_1 + 2x_2 + 10x_3 = 61$. State the condition for convergence (Strict Diagonal Dominance).",
-      "marks": "3+5",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Numerical Solution of ODEs",
-      "text": "Find the Dominant Eigenvalue and corresponding Eigenvector of matrix $\\mathbf{A} = \\begin{bmatrix} 4 & 1 & 0 \\\\ 1 & 2 & 1 \\\\ 0 & 1 & 1 \\end{bmatrix}$ using the Power Method with initial vector $\\mathbf{x}_0 = [1, 1, 1]^T$.",
-      "marks": "8",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Interpolation & Polynomial Approximation",
-      "text": "Derive Lagrange's Interpolating Polynomial: $P_n(x) = \\sum_{i=0}^n L_i(x) y_i$. Fit a cubic polynomial to the data points $(0, 1), (1, 3), (3, 49), (4, 129)$ and estimate $y(2)$.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Interpolation & Polynomial Approximation",
-      "text": "Derive Newton's Divided Difference Interpolation formula. Construct the divided difference table and find $f(2.5)$ for given data points.",
-      "marks": "8",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 4: Numerical Differentiation & Integration",
-      "text": "Derive Simpson's 1/3rd Rule ($I = \\frac{h}{3}[y_0 + 4\\sum y_{odd} + 2\\sum y_{even} + y_n]$) and Simpson's 3/8th Rule from Newton-Cotes quadrature formula. Evaluate $\\int_0^1 \\frac{1}{1 + x^2}dx$ with $n = 6$ sub-intervals using: (a) Composite Trapezoidal Rule, and (b) Composite Simpson's 1/3rd Rule. Hence approximate $\\pi$.",
-      "marks": "4+6",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Systems of Linear Equations",
-      "text": "Explain Gauss-Legendre Two-Point and Three-Point Quadrature formulas ($I = \\int_{-1}^1 f(\\xi)d\\xi \\approx w_1 f(\\xi_1) + w_2 f(\\xi_2)$). Evaluate $\\int_1^3 \\frac{e^x}{x}dx$ using 2-point Gauss Legendre quadrature.",
+      "chapter": "Chapter 1: Solution of Non-Linear Equations",
+      "text": "Explain errors in numerical computation (Round-off error, Truncation error, Absolute error, Relative error). Explain Bisection Method and Newton-Raphson Method. Find real root of $x^3 - 2x - 5 = 0$ or $x e^x - 1 = 0$ correct to 4 decimal places.",
       "marks": "6",
       "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Numerical Solution of ODEs",
-      "text": "Derive the Fourth-Order Runge-Kutta (RK-4) Method for solving initial value ODEs $\\frac{dy}{dx} = f(x, y), y(x_0) = y_0$. Solve $\\frac{dy}{dx} = x^2 + y^2$ with $y(0) = 1$ to find $y(0.2)$ using step size $h = 0.1$.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2080",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 5: Numerical Solution of ODEs",
-      "text": "Solve the Boundary Value Problem (BVP) $\\frac{d^2y}{dx^2} + y = x$ with $y(0) = 0, y(1) = 0$ using the Finite Difference Method with $h = 0.25$.",
-      "marks": "8",
+      "chapter": "Chapter 1: Solution of Non-Linear Equations",
+      "text": "Explain Secant Method and Fixed Point Iteration Method. Derive condition for convergence of fixed point iteration $|g'(x)| < 1$.",
+      "marks": "6",
       "years": [
-        "2079"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Numerical Solution of ODEs",
-      "text": "Solve the 2D Laplace Equation $\\frac{\\partial^2 u}{\\partial x^2} + \\frac{\\partial^2 u}{\\partial y^2} = 0$ over a square grid of $3 \\times 3$ interior nodes with given Dirichlet boundary temperatures using Liebmann's standard 5-point finite difference formula.",
-      "marks": "10",
-      "years": [
-        "2078",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Systems of Linear Equations",
-      "text": "Solve the linear system using LU Decomposition (Doolittle's / Crout's method $\\mathbf{A} = \\mathbf{L}\\mathbf{U}$) and solve by forward and backward substitution.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080"
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Chaitra"
       ],
       "frequency": 3
     },
     {
-      "chapter": "Chapter 1: Non-Linear Equations",
-      "text": "Fit a straight line $y = ax + b$ and an exponential curve $y = a e^{bx}$ to a given dataset using the Principle of Least Squares (derive the Normal Equations).",
-      "marks": "4+4",
+      "chapter": "Chapter 2: Interpolation and Polynomial Approximation",
+      "text": "Derive Lagrange's Interpolation Formula for unequally spaced data. Given data points $(1, 3), (2, 12), (4, 48), (5, 75)$, find interpolated value at $x = 3$.",
+      "marks": "6",
       "years": [
-        "2082"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 2: Interpolation and Polynomial Approximation",
+      "text": "Explain Newton's Forward and Backward Difference Interpolation formulas. Construct difference table and evaluate $f(2.5)$ from given data table.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 2: Interpolation and Polynomial Approximation",
+      "text": "Explain Least Squares Method for Curve Fitting. Fit a linear curve $y = ax + b$ and an exponential curve $y = a e^{bx}$ to a given set of experimental data.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 3: Numerical Differentiation and Integration",
+      "text": "Derive Newton-Cotes Quadrature Formulas. State and derive Trapezoidal Rule, Simpson's 1/3 Rule, and Simpson's 3/8 Rule for numerical integration. Evaluate $\\int_0^1 \\frac{1}{1 + x^2} dx$ with $n = 6$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 3: Numerical Differentiation and Integration",
+      "text": "Explain Gauss-Legendre Quadrature Formula (2-point and 3-point Gaussian integration). Evaluate $\\int_{-1}^1 (x^4 + 3x^2 + 1) dx$ and $\\int_1^3 \\frac{1}{x} dx$ using Gauss 2-point and 3-point formulas.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 4: Solution of Linear System of Equations and Eigenvalues",
+      "text": "Explain Direct Methods for solving linear equations: Gauss Elimination with Partial Pivoting vs Gauss-Jordan Elimination. Solve system: $2x + y + z = 10, 3x + 2y + 3z = 18, x + 4y + 9z = 16$.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 4: Solution of Linear System of Equations and Eigenvalues",
+      "text": "Explain LU Decomposition Method (Doolittle / Crout / Cholesky method) to solve a system of linear equations $AX = B$.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Solution of Linear System of Equations and Eigenvalues",
+      "text": "Explain Iterative Methods: Gauss-Jacobi Method vs Gauss-Seidel Method. State condition for diagonal dominance and solve system to 3 iterations.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 4: Solution of Linear System of Equations and Eigenvalues",
+      "text": "Explain Power Method to find the dominant (largest) eigenvalue and corresponding eigenvector of a square matrix $A = \\begin{bmatrix} 4 & 1 \\\\ 1 & 3 \\end{bmatrix}$.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 5: Solution of Ordinary Differential Equations (ODE) and Partial Differential Equations (PDE)",
+      "text": "Explain Euler's Method, Modified Euler's (Heun's) Method, and 4th-Order Runge-Kutta (RK-4) Method for solving initial value ODE: $\\frac{dy}{dx} = x + y, y(0) = 1$ to find $y(0.2)$ with step size $h = 0.1$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 5: Solution of Ordinary Differential Equations (ODE) and Partial Differential Equations (PDE)",
+      "text": "Solve Boundary Value Problem (BVP) $y'' + y = x, y(0)=0, y(1)=0$ using Finite Difference Method with grid spacing $h = 0.25$.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 5: Solution of Ordinary Differential Equations (ODE) and Partial Differential Equations (PDE)",
+      "text": "Solve Laplace's Equation $\\nabla^2 u = \\frac{\\partial^2 u}{\\partial x^2} + \\frac{\\partial^2 u}{\\partial y^2} = 0$ and Poisson's Equation on a square domain with given Dirichlet boundary conditions using finite difference scheme.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
     }
   ]
 }

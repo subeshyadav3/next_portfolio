@@ -1,225 +1,130 @@
 {
   "subject": "Engineering Physics",
+  "code": "ENSH 102",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Oscillations",
-    "Chapter 2: Wave Optics",
-    "Chapter 3: Lasers and Optical Fibers",
-    "Chapter 4: Electrostatics and Dielectrics",
-    "Chapter 6: Electromagnetic Waves and Maxwell Equations",
-    "Chapter 7: Quantum Mechanics",
-    "Chapter 8: Solid State Physics and Semiconductors",
-    "Chapter 9: Superconductivity and Nanoscience"
+    "Chapter 1: Simple Harmonic Motion, Damped and Forced Oscillations",
+    "Chapter 2: Wave Motion and Acoustics (Ultrasonics, Reverberation, Sabine's Formula)",
+    "Chapter 3: Wave Optics: Interference of Light (Thin Films, Newton's Rings)",
+    "Chapter 4: Wave Optics: Diffraction of Light (Fresnel and Fraunhofer, Diffraction Grating)",
+    "Chapter 5: Wave Optics: Polarization of Light (Brewster's Law, Double Refraction, Optical Activity)",
+    "Chapter 6: Electromagnetism and Maxwell's Equations",
+    "Chapter 7: Quantum Mechanics (De Broglie Waves, Heisenberg Uncertainty, Schr\u00f6dinger Equation)",
+    "Chapter 8: Laser, Photonics, and Fiber Optics"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Oscillations",
-      "text": "Explain the formation of Newton's rings by reflected monochromatic light. Derive an expression for the diameter of the $n$-th dark ring: $D_n = \\sqrt{4n\\lambda R}$.",
-      "marks": "2+5",
+      "chapter": "Chapter 1: Simple Harmonic Motion, Damped and Forced Oscillations",
+      "text": "Derive differential equation of Damped Harmonic Oscillations: $\\frac{d^2 x}{dt^2} + 2\\gamma \\frac{dx}{dt} + \\omega_0^2 x = 0$. Solve for: (a) Underdamped ($\\gamma < \\omega_0$), (b) Critically damped ($\\gamma = \\omega_0$), and (c) Overdamped ($\\gamma > \\omega_0$) motions. Define Logarithmic Decrement and Quality Factor ($Q$).",
+      "marks": "8",
       "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 7: Quantum Mechanics",
-      "text": "Derive the one-dimensional time-independent Schr\u00f6dinger wave equation: $-\\frac{\\hbar^2}{2m} \\frac{d^2\\psi}{dx^2} + V(x)\\psi = E\\psi$.",
-      "marks": "6",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 9: Superconductivity and Nanoscience",
-      "text": "What is superconductivity? Explain the Meissner effect and differentiate between Type I and Type II superconductors.",
-      "marks": "2+4",
-      "years": [
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Oscillations",
-      "text": "Derive the differential equation of damped harmonic oscillation: $\\frac{d^2x}{dt^2} + 2\\gamma \\frac{dx}{dt} + \\omega_0^2 x = 0$. Discuss the cases of underdamping, critical damping, and overdamping.",
-      "marks": "5+3",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Oscillations",
-      "text": "What is acoustic resonance and sharpness of resonance? Define Quality factor ($Q$) and derive the relation $Q = \\frac{\\omega_0}{2\\gamma}$.",
-      "marks": "2+4",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 8: Solid State Physics and Semiconductors",
-      "text": "State Sabine's formula for reverberation time in an auditorium: $T = \\frac{0.161 V}{\\sum a S}$. Explain the factors affecting acoustic design of a building.",
-      "marks": "2+4",
-      "years": [
-        "2083",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Wave Optics",
-      "text": "Discuss Fraunhofer diffraction at a single slit. Derive the conditions for central maximum, secondary maxima, and minima, and draw the intensity distribution curve.",
-      "marks": "6+2",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 8: Solid State Physics and Semiconductors",
-      "text": "State and prove Brewster's Law ($\\mu = \\tan i_p$). Show that when light is incident at the polarizing angle, the reflected and refracted rays are mutually perpendicular.",
-      "marks": "2+3",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Wave Optics",
-      "text": "Explain the essential components and working principle of a continuous-wave Helium-Neon (He-Ne) gas laser with an energy level diagram.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Lasers and Optical Fibers",
-      "text": "Define Numerical Aperture (NA) and acceptance angle of an optical fiber. Derive the expression $\\text{NA} = \\sqrt{n_1^2 - n_2^2}$.",
-      "marks": "2+4",
-      "years": [
-        "2083",
-        "2081",
-        "2080",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 4: Electrostatics and Dielectrics",
-      "text": "State Gauss's Law in electrostatics. Use it to find the electric field intensity due to an infinitely long uniform line charge with charge density $\\lambda$.",
-      "marks": "1+5",
+      "chapter": "Chapter 2: Wave Motion and Acoustics (Ultrasonics, Reverberation, Sabine's Formula)",
+      "text": "Explain Acoustics of Buildings. Define Reverberation Time ($T$). State and derive Sabine's Formula: $T = \\frac{0.161 V}{\\sum a S}$. Explain factors affecting architectural acoustics and their remedies.",
+      "marks": "6",
       "years": [
-        "2079"
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2079 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 5
     },
     {
-      "chapter": "Chapter 2: Wave Optics",
-      "text": "Define polarization vector $\\mathbf{P}$, electric displacement $\\mathbf{D}$, and electric susceptibility $\\chi_e$. Derive the relation $\\mathbf{D} = \\epsilon_0 \\mathbf{E} + \\mathbf{P}$.",
-      "marks": "3+3",
-      "years": [
-        "2078",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Oscillations",
-      "text": "Explain the principle and working of a Cyclotron. Derive expressions for cyclotron frequency and maximum kinetic energy of accelerated ions.",
-      "marks": "2+5",
-      "years": [
-        "2083",
-        "2082",
-        "2080"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 8: Solid State Physics and Semiconductors",
-      "text": "State and prove Hall Effect. Derive the formula for Hall coefficient $R_H = \\frac{1}{ne}$ and discuss its engineering applications.",
-      "marks": "2+4",
-      "years": [
-        "2082"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Electromagnetic Waves and Maxwell Equations",
-      "text": "Write Maxwell's equations in differential and integral forms for time-varying electromagnetic fields in free space and explain the physical significance of each equation.",
+      "chapter": "Chapter 3: Wave Optics: Interference of Light (Thin Films, Newton's Rings)",
+      "text": "Explain Interference of Light in Thin Films due to reflected rays ($2 \\mu t \\cos r = n \\lambda$ for dark fringe). Explain Newton's Rings experiment with ray diagram. Derive expression for diameter of $n$-th dark ring: $D_n^2 = 4 n \\lambda R$ and show how it is used to measure wavelength $\\lambda$ and refractive index $\\mu$.",
       "marks": "8",
       "years": [
-        "2081",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
       ],
-      "frequency": 2
+      "frequency": 5
     },
     {
-      "chapter": "Chapter 2: Wave Optics",
-      "text": "State de Broglie hypothesis of matter waves. Describe Davisson and Germer experiment for the verification of wave nature of electrons.",
-      "marks": "2+5",
-      "years": [
-        "2083",
-        "2080",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 8: Solid State Physics and Semiconductors",
-      "text": "State Heisenberg's Uncertainty Principle. Using it, prove that electrons cannot reside inside the atomic nucleus.",
-      "marks": "2+4",
-      "years": [
-        "2079"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 7: Quantum Mechanics",
-      "text": "Solve the Schr\u00f6dinger wave equation for a particle trapped in a one-dimensional infinite potential well of width $L$. Find the normalized wave functions and quantized energy eigenvalues $E_n = \\frac{n^2 \\pi^2 \\hbar^2}{2mL^2}$.",
+      "chapter": "Chapter 4: Wave Optics: Diffraction of Light (Fresnel and Fraunhofer, Diffraction Grating)",
+      "text": "Explain Fraunhofer Diffraction at a Single Slit. Derive expressions for intensity distribution $I = I_0 \\left(\\frac{\\sin\\beta}{\\beta}\\right)^2$, central maximum, and minima. Explain Plane Diffraction Grating, Grating Equation $(a+b)\\sin\\theta = n\\lambda$, and Resolving Power of Grating ($\\frac{\\lambda}{d\\lambda} = n N$).",
       "marks": "8",
       "years": [
-        "2078",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Oscillations",
-      "text": "Discuss the classical free electron theory of metals (Drude-Lorentz model). Derive expressions for electrical and thermal conductivities and verify Wiedemann-Franz law.",
-      "marks": "6+2",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Oscillations",
-      "text": "Define Fermi energy $E_F$ and Fermi-Dirac distribution function $f(E)$. Derive an expression for the Fermi energy of a free electron gas at absolute zero.",
-      "marks": "2+5",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 2: Wave Optics",
-      "text": "Explain the production of ultrasonic waves using the Piezoelectric oscillator method with a neat circuit diagram.",
+      "chapter": "Chapter 5: Wave Optics: Polarization of Light (Brewster's Law, Double Refraction, Optical Activity)",
+      "text": "State and prove Brewster's Law ($\\mu = \\tan i_p$). Explain Double Refraction in Calcite crystal (Ordinary ray vs Extraordinary ray). Explain Nicol Prism, Quarter Wave Plate, Half Wave Plate, and Specific Rotation of optically active solution using Laurent's Half-Shade Polarimeter.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 6: Electromagnetism and Maxwell's Equations",
+      "text": "State Maxwell's Equations in differential and integral forms. Explain Maxwell's concept of Displacement Current ($J_d = \\epsilon_0 \\frac{\\partial E}{\\partial t}$). Derive Electromagnetic Wave Equation in free space and show that EM waves propagate with velocity $c = \\frac{1}{\\sqrt{\\mu_0 \\epsilon_0}}$. State Poynting Theorem and Poynting Vector $\\vec{S} = \\vec{E} \\times \\vec{H}$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 7: Quantum Mechanics (De Broglie Waves, Heisenberg Uncertainty, Schr\u00f6dinger Equation)",
+      "text": "State De Broglie hypothesis of Matter Waves ($\\lambda = \\frac{h}{p}$). State and explain Heisenberg's Uncertainty Principle. Derive 1-D Time-Independent Schr\u00f6dinger Wave Equation: $\\frac{d^2 \\psi}{dx^2} + \\frac{2m}{\\hbar^2}(E - V)\\psi = 0$. Solve for a particle trapped in an infinite 1-D potential well (box) and derive energy quantization $E_n = \\frac{n^2 h^2}{8 m L^2}$ and normalized wave functions.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 8: Laser, Photonics, and Fiber Optics",
+      "text": "Explain principle of LASER (Stimulated Absorption, Spontaneous Emission, Stimulated Emission, Population Inversion, Optical Pumping, Metastable States). Explain Helium-Neon (He-Ne) Gas Laser construction and energy level transitions.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 8: Laser, Photonics, and Fiber Optics",
+      "text": "Explain Optical Fiber structure (Core, Cladding, Buffer). Derive Numerical Aperture ($NA = \\sqrt{n_1^2 - n_2^2}$) and Acceptance Angle ($\\theta_a = \\sin^{-1}(NA)$). Compare Step-Index vs Graded-Index and Single-Mode vs Multi-Mode optical fibers.",
       "marks": "6",
       "years": [
-        "2081"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 4
     }
   ]
 }

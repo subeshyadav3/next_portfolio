@@ -83,7 +83,8 @@ export interface IoeSyllabusTopic {
 export interface IoeSyllabusUnit {
   num: number;
   title: string;
-  topics: IoeSyllabusTopic[];
+  hours?: string;
+  topics?: IoeSyllabusTopic[];
 }
 
 export interface IoeSyllabus {

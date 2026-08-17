@@ -9,153 +9,79 @@
   ],
   "questions": [
     {
-      "chapter": "Chapter 2: Bipolar Junction Transistors",
-      "text": "Explain the PN junction diode operation under forward and reverse bias with energy band diagrams and Shockley's Diode Equation: $I = I_s (e^{V_D / \\eta V_T} - 1)$. Explain Dynamic Resistance ($r_d = \\frac{\\eta V_T}{I_D}$) and Transition/Diffusion capacitances.",
-      "marks": "4+4",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
       "chapter": "Chapter 1: Semiconductor Diodes, Zener Diodes and Rectifier/Clipping Circuits",
-      "text": "Explain Full-Wave Bridge Rectifier with a capacitor filter. Derive Ripple Factor ($r = \\frac{1}{4\\sqrt{3} f C R_L}$), DC load voltage ($V_{dc} = V_m - \\frac{I_{dc}}{4 f C}$), and Peak Inverse Voltage ($PIV = V_m$).",
-      "marks": "4+6",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Semiconductor Diodes, Zener Diodes and Rectifier/Clipping Circuits",
-      "text": "Explain Diode Clipper (Limiter) and Clamper (DC Restorer) circuits. Draw output voltage waveforms for positive and negative biased clippers and clampers with a sinusoidal input $v_{in}(t) = 15\\sin(\\omega t)\\,\\text{V}$.",
+      "text": "Explain PN Junction Diode: Forward and Reverse bias V-I characteristics, Diode current equation ($I = I_0 (e^{V / \\eta V_T} - 1)$), Dynamic resistance, and Diffusion vs Transition capacitance. Explain Zener Diode and Zener Voltage Regulator circuit.",
       "marks": "8",
       "years": [
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Semiconductor Diodes, Zener Diodes and Rectifier/Clipping Circuits",
-      "text": "Explain Zener Diode voltage regulation. A $10\\,\\text{V}$ Zener diode has maximum power rating $P_{z,max} = 500\\,\\text{mW}$ and knee current $I_{zk} = 5\\,\\text{mA}$. Design the series current limiting resistor $R_s$ to maintain $10\\,\\text{V}$ across load $R_L$ with input varying from $15\\,\\text{V}$ to $25\\,\\text{V}$ and load current varying from $5\\,\\text{mA}$ to $35\\,\\text{mA}$.",
-      "marks": "3+5",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Field Effect Transistors",
-      "text": "Explain Common Emitter (CE) configuration of BJT. Draw input and output characteristics, and define Cutoff, Active, and Saturation regions. Explain Early Effect (Base-Width Modulation) and Early Voltage ($V_A$).",
-      "marks": "4+4",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Semiconductor Diodes, Zener Diodes and Rectifier/Clipping Circuits",
-      "text": "Explain BJT Biasing circuits: Fixed Bias, Collector-to-Base Feedback Bias, and Voltage Divider Bias (Self-Bias). Derive the Stability Factor $S(I_{co}) = \\frac{1 + \\beta}{1 + \\beta \\frac{R_e}{R_e + R_{th}}}$ and show that Voltage Divider Bias provides the most stable Q-point.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Bipolar Junction Transistors",
-      "text": "Draw the Small-Signal $re$-model and hybrid-$h$ parameter model for a CE amplifier with unbypassed emitter resistor $R_E$. Derive expressions for Input Impedance ($Z_i$), Output Impedance ($Z_o$), Voltage Gain ($A_v = -\\frac{R_c}{r_e + R_E}$), and Current Gain ($A_i$).",
-      "marks": "4+6",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Field Effect Transistors",
-      "text": "Explain the construction and operation of N-channel Junction Field Effect Transistor (JFET). Explain Pinch-Off Voltage ($V_p$) and derive Shockley's Equation: $I_D = I_{DSS}\\left(1 - \\frac{V_{GS}}{V_p}\\right)^2$. Define Transconductance $g_m = g_{m0}\\left(1 - \\frac{V_{GS}}{V_p}\\right)$ where $g_{m0} = \\frac{2I_{DSS}}{|V_p|}$.",
-      "marks": "4+6",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Field Effect Transistors",
-      "text": "Compare Enhancement MOSFET (E-MOSFET) vs Depletion MOSFET (D-MOSFET). Explain CMOS Inverter operation, voltage transfer curve (VTC), and explain why static power dissipation in CMOS is virtually zero.",
-      "marks": "4+4",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Field Effect Transistors",
-      "text": "Explain Ideal Op-Amp characteristics ($A_{OL} = \\infty, R_{in} = \\infty, R_{out} = 0, \\text{CMRR} = \\infty, BW = \\infty$) and Virtual Ground concept. Derive the closed-loop voltage gain for: (a) Inverting Amplifier ($A_v = -R_f/R_1$), (b) Non-Inverting Amplifier ($A_v = 1 + R_f/R_1$), and (c) Inverting Summing Amplifier.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2080",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
       "chapter": "Chapter 1: Semiconductor Diodes, Zener Diodes and Rectifier/Clipping Circuits",
-      "text": "Explain Instrumentation Amplifier using 3 Op-Amps. Derive the differential voltage gain: $A_d = \\left(1 + \\frac{2R_1}{R_{gain}}\\right)\\frac{R_3}{R_2}$. Why is an instrumentation amplifier widely used in biomedical and sensor measurement systems?",
-      "marks": "4+4",
+      "text": "Explain Rectifiers: Center-Tapped Full-Wave Rectifier vs Bridge Rectifier. Derive expressions for DC output voltage ($V_{dc} = \\frac{2 V_m}{\\pi}$), RMS current, Ripple Factor ($\\gamma = 0.482$), and Rectification Efficiency ($\\eta = 81.2\\%$). Explain Capacitor Filter ($C$-filter).",
+      "marks": "8",
       "years": [
-        "2079"
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 2: Bipolar Junction Transistors",
+      "text": "Explain Bipolar Junction Transistor (BJT): Input and Output characteristics in Common Emitter (CE), Common Base (CB), and Common Collector (CC) configurations. Derive relation $\\beta = \\frac{\\alpha}{1 - \\alpha}$ and explain Early Effect (Base Width Modulation).",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 2: Bipolar Junction Transistors",
+      "text": "Explain BJT Biasing: Fixed Bias, Collector-to-Base Bias, and Voltage Divider (Self) Bias. Derive Stability Factor $S = \\frac{\\partial I_C}{\\partial I_{CO}}$ for voltage divider bias and draw DC Load Line and Q-point.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 3: Field Effect Transistors",
+      "text": "Explain Field Effect Transistors (FET): Construction and characteristics of JFET (Shockley's equation: $I_D = I_{DSS}(1 - \\frac{V_{GS}}{V_P})^2$) and MOSFET (Depletion MOSFET vs Enhancement MOSFET). Compare BJT vs FET.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
     },
     {
       "chapter": "Chapter 6: Feedback Amplifiers and Sinusoidal Oscillators",
-      "text": "Explain Negative Feedback topologies: Voltage-Series, Voltage-Shunt, Current-Series, and Current-Shunt. Prove that negative feedback stabilizes voltage gain ($A_f = \\frac{A}{1 + A\\beta}$), reduces distortion, and increases bandwidth ($BW_f = BW(1 + A\\beta)$).",
-      "marks": "4+6",
+      "text": "Explain Small-Signal Low Frequency BJT Amplifier Analysis using $h$-parameter model ($h_{ie}, h_{re}, h_{fe}, h_{oe}$) and $r_e$ model. Calculate Voltage Gain ($A_v$), Current Gain ($A_i$), Input Impedance ($Z_{in}$), and Output Impedance ($Z_{out}$) for a CE amplifier.",
+      "marks": "8",
       "years": [
-        "2078",
-        "2082"
+        "2082 Chaitra",
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Feedback Amplifiers and Sinusoidal Oscillators",
-      "text": "State Barkhausen's Criterion for sustained sinusoidal oscillations ($|A\\beta| = 1, \\angle A\\beta = 0^\\circ$ or $360^\\circ$). Explain RC Phase Shift Oscillator (Derive $f_0 = \\frac{1}{2\\pi R C \\sqrt{6}}$ and $h_{fe} \\ge 29$) and Wien Bridge Oscillator ($f_0 = \\frac{1}{2\\pi R C}, A_v \\ge 3$).",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2082",
-        "2080"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Frequency Response of BJT and FET Amplifiers",
-      "text": "Classify Power Amplifiers: Class A ($\\eta_{max} = 25\\%$ or $50\\%$), Class B ($\\eta_{max} = 78.5\\%$), Class AB, and Class C. Explain Cross-Over Distortion in Class B push-pull amplifiers and how Class AB complementary symmetry solves it.",
-      "marks": "4+6",
-      "years": [
-        "2082"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 4: Frequency Response of BJT and FET Amplifiers",
-      "text": "Derive output equations for Op-Amp Differentiator and Op-Amp Integrator ($v_o(t) = -\\frac{1}{RC}\\int v_{in}(t)dt$). Explain practical integrator and practical differentiator with parallel feedback resistor $R_f$ and series input resistor $R_s$ to overcome high-frequency and low-frequency instability.",
-      "marks": "4+4",
-      "years": [
-        "2081",
-        "2079"
-      ],
-      "frequency": 2
+      "frequency": 5
     }
-  ]
+  ],
+  "code": "EX 452"
 }

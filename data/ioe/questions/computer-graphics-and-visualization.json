@@ -1,114 +1,151 @@
 {
   "subject": "Computer Graphics and Visualization",
+  "code": "ENCT 201",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Introduction to Computer Graphics Hardware & Scan Conversion",
-    "Chapter 2: 2D Geometric Transformations & Homogeneous Coordinates",
-    "Chapter 3: 2D Viewing & Window-to-Viewport Transformation, Line/Polygon Clipping",
-    "Chapter 4: 3D Concepts & 3D Transformations, Projections",
-    "Chapter 5: Visible Surface Detection Algorithms",
-    "Chapter 6: Illumination Models & Color Models"
+    "Chapter 1: Introduction to Computer Graphics and Display Hardware",
+    "Chapter 2: Scan Conversion and Line/Circle Drawing Algorithms",
+    "Chapter 3: Two-Dimensional Geometric Transformations and Viewing/Clipping",
+    "Chapter 4: Three-Dimensional Transformations and Viewing",
+    "Chapter 5: 3D Object Representation (Curves and Surfaces)",
+    "Chapter 6: Visible Surface Detection and Illumination/Shading Models"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Introduction to Computer Graphics Hardware & Scan Conversion",
-      "text": "Derive Bresenham's Line Drawing Algorithm for lines with positive slope $|m| < 1$. Explain the decision parameter $p_k = 2\\Delta y - \\Delta x$. Digitize a line with endpoints $(20, 10)$ and $(30, 18)$ using Bresenham's algorithm showing all intermediate coordinates.",
-      "marks": "3+5",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Computer Graphics Hardware & Scan Conversion",
-      "text": "Derive the Midpoint Circle Generation Algorithm using eight-way symmetry. Formulate the initial decision parameter $p_0 = \\frac{5}{4} - r \\approx 1 - r$. Digitize a circle centered at origin $(0, 0)$ with radius $r = 10$ pixels in the first octant.",
-      "marks": "3+5",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: 2D Geometric Transformations & Homogeneous Coordinates",
-      "text": "Derive the homogeneous coordinate transformation matrices for 2D Translation, Scaling, Rotation about an arbitrary point $(x_r, y_r)$, and Reflection about the line $y = mx + c$. Magnify a triangle $A(0,0), B(1,1), C(5,2)$ to twice its size keeping vertex $B(1,1)$ fixed.",
-      "marks": "4+4",
-      "years": [
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: 3D Concepts & 3D Transformations, Projections",
-      "text": "Compare Parallel Projections (Orthographic, Axonometric, Oblique - Cavalier and Cabinet) vs. Perspective Projections (One-point, Two-point, Three-point perspective). Derive the 3D Perspective Projection matrix for a center of projection at $(0, 0, -d)$ on the projection plane $z = 0$: $x_p = \\frac{x}{z/d + 1}, y_p = \\frac{y}{z/d + 1}$.",
-      "marks": "4+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: 2D Viewing & Window-to-Viewport Transformation, Line/Polygon Clipping",
-      "text": "Explain Cohen-Sutherland Line Clipping Algorithm using 4-bit region outcodes (Top, Bottom, Right, Left). Clip a line segment from $P_1(-10, 40)$ to $P_2(50, 80)$ against the rectangular clipping window with boundaries $X_{wmin} = 0, X_{wmax} = 40, Y_{wmin} = 0, Y_{wmax} = 60$.",
-      "marks": "3+5",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: 2D Viewing & Window-to-Viewport Transformation, Line/Polygon Clipping",
-      "text": "Explain the Sutherland-Hodgman Polygon Clipping Algorithm. How does the algorithm process polygon vertices against the four window boundaries (Left, Right, Bottom, Top)? Explain the four vertex classification cases (In-to-In, In-to-Out, Out-to-Out, Out-to-In). Why does it fail for concave polygons and how does Weiler-Atherton algorithm resolve it?",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Visible Surface Detection Algorithms",
-      "text": "Explain the Depth-Buffer ($Z$-Buffer) algorithm for visible surface detection. Derive the incremental depth calculation across scan lines: $z' = z - \\frac{A}{C} \\Delta x$. Explain advantages and limitations of the $Z$-buffer algorithm. What is the $A$-Buffer algorithm for handling antialiasing and transparency?",
-      "marks": "4+4",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Illumination Models & Color Models",
-      "text": "Explain the Phong Illumination Model containing Ambient reflection ($I_a k_a$), Diffuse reflection (Lambert's cosine law $I_d = I_p k_d (\\mathbf{N} \\cdot \\mathbf{L})$), and Specular reflection ($I_s = I_p k_s (\\mathbf{R} \\cdot \\mathbf{V})^n$). Compare: (a) Flat / Constant Shading, (b) Gouraud Shading (Intensity interpolation), and (c) Phong Shading (Normal vector interpolation).",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Computer Graphics Hardware & Scan Conversion",
-      "text": "Explain Computer Animation principles (Keyframing, In-betweening / Morphing, Kinematics, Dynamics). Explain B\u00e9zier Curves and B-Spline Curves in 3D computer graphics modeling.",
+      "chapter": "Chapter 1: Introduction to Computer Graphics and Display Hardware",
+      "text": "Explain Video Display Devices: Cathode Ray Tube (CRT), Refresh Cathode Ray Tubes, Raster Scan Display vs Random Scan (Vector) Display systems in terms of architecture, frame buffer, and refresh rate.",
       "marks": "6",
       "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Visible Surface Detection Algorithms",
-      "text": "Explain Object-Space vs Image-Space hidden surface removal methods. Describe: (a) Back-Face Detection using surface normal dot product $\\mathbf{N} \\cdot \\mathbf{V}_{view}$, (b) Depth-Sort (Painter's) Algorithm, and (c) BSP Tree (Binary Space Partitioning) algorithm.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2081",
-        "2080",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
+    },
+    {
+      "chapter": "Chapter 2: Scan Conversion and Line/Circle Drawing Algorithms",
+      "text": "Explain DDA (Digital Differential Analyzer) Line Drawing Algorithm. Derive Bresenham's Line Drawing Algorithm for $|m| < 1$. Trace Bresenham's algorithm to rasterize a line from $(2, 3)$ to $(10, 8)$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 2: Scan Conversion and Line/Circle Drawing Algorithms",
+      "text": "Derive Midpoint Circle Drawing Algorithm using 8-way symmetry. Calculate pixel coordinates to draw a circle with radius $r = 10$ centered at origin $(0, 0)$.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 3: Two-Dimensional Geometric Transformations and Viewing/Clipping",
+      "text": "Explain 2D Affine Transformations: Translation, Rotation about origin, Scaling, Reflection, and Shear in Homogeneous Coordinate matrix representation. Perform 2D Composite Transformation: Rotate triangle $A(1,1), B(4,1), C(2,3)$ by $45^\\circ$ about arbitrary point $P(2,2)$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 3: Two-Dimensional Geometric Transformations and Viewing/Clipping",
+      "text": "Explain Cohen-Sutherland Line Clipping Algorithm (4-bit Outcodes: Top, Bottom, Right, Left). Clip the line segment $P_1(10, 20)$ to $P_2(80, 90)$ against the rectangular window $W(x_{min}=20, y_{min}=20, x_{max}=60, y_{max}=60)$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 3: Two-Dimensional Geometric Transformations and Viewing/Clipping",
+      "text": "Explain Liang-Barsky Line Clipping Algorithm using parametric equations. Explain Sutherland-Hodgman Polygon Clipping Algorithm (Left, Right, Bottom, Top clippers).",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 4: Three-Dimensional Transformations and Viewing",
+      "text": "Explain 3D Transformations: 3D Translation, 3D Scaling, and 3D Rotation about arbitrary axis in space in $4 \\times 4$ homogeneous matrix form.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Three-Dimensional Transformations and Viewing",
+      "text": "Explain Projections in 3D Viewing: Parallel Projections (Orthographic, Axonometric, Isometric, Oblique Cavalier/Cabinet) vs Perspective Projections (1-point, 2-point, 3-point vanishing points). Derive Perspective Projection Transformation Matrix.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 5: 3D Object Representation (Curves and Surfaces)",
+      "text": "Explain Bezier Curves and B-Spline Curves. State properties of Bezier Curves (Convex Hull property, Affine Invariance). Construct cubic Bezier curve for given 4 control points $P_0, P_1, P_2, P_3$ using Bernstein Polynomials: $P(u) = \\sum_{k=0}^n B_{k,n}(u) P_k$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 6: Visible Surface Detection and Illumination/Shading Models",
+      "text": "Explain Visible Surface Detection (Hidden Surface Removal) Algorithms: (a) Depth-Buffer (Z-Buffer) Algorithm, (b) A-Buffer Algorithm, (c) Depth-Sort (Painter's) Algorithm, and (d) Back-Face Culling.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 6: Visible Surface Detection and Illumination/Shading Models",
+      "text": "Explain Illumination Models: Ambient light, Diffuse reflection (Lambert's Cosine Law: $I_{diff} = I_p K_d \\cos\\theta$), and Specular reflection (Phong Model: $I_{spec} = I_p K_s \\cos^n\\phi$). Compare Flat Shading vs Gouraud Shading (Intensity Interpolation) vs Phong Shading (Normal Vector Interpolation).",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
     }
   ]
 }

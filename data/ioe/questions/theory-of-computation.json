@@ -1,121 +1,209 @@
 {
   "subject": "Theory of Computation",
+  "code": "ENCT 203",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata",
-    "Chapter 2: Regular Expressions, Regular Languages & Pumping Lemma for Regular Sets",
-    "Chapter 3: Context-Free Grammars, Parse Trees, Ambiguity & Normal Forms",
-    "Chapter 5: Turing Machines, Variants of Turing Machines & Church-Turing Thesis"
+    "Chapter 1: Introduction to Theory of Computation and Regular Expressions",
+    "Chapter 2: Finite Automata (DFA, NFA, epsilon-NFA, State Minimization)",
+    "Chapter 3: Regular Languages and Regular Grammars (Pumping Lemma)",
+    "Chapter 4: Context-Free Grammars (CFG), Parse Trees, and Normal Forms",
+    "Chapter 5: Pushdown Automata (PDA) and Context-Free Languages",
+    "Chapter 6: Turing Machines and Computability Theory",
+    "Chapter 7: Undecidability and Computational Complexity (P, NP, NP-Complete)"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata",
-      "text": "Define Deterministic Finite Automata (DFA) as a 5-tuple $(Q, \\Sigma, \\delta, q_0, F)$. Design a minimal DFA that accepts the language $L = \\{w \\in \\{0, 1\\}^* \\mid w \\text{ contains '010' as a substring and does not end with '11'}\\}$.",
-      "marks": "3+5",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata",
-      "text": "Explain the Subset Construction algorithm for converting a Non-Deterministic Finite Automata with $\\epsilon$-transitions ($\\epsilon$-NFA) into an equivalent DFA. Convert the given $\\epsilon$-NFA into DFA and minimize the DFA using the Table-Filling (Myhill-Nerode) algorithm.",
-      "marks": "4+6",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Regular Expressions, Regular Languages & Pumping Lemma for Regular Sets",
-      "text": "State Arden's Theorem ($R = Q + RP \\implies R = QP^*$). Find the regular expression corresponding to a given 3-state transition system using Arden's theorem.",
-      "marks": "3+5",
-      "years": [
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Regular Expressions, Regular Languages & Pumping Lemma for Regular Sets",
-      "text": "State the Pumping Lemma for Regular Languages. Prove using the pumping lemma that the language $L = \\{0^n 1^n \\mid n \\ge 0\\}$ and $L = \\{a^p \\mid p \\text{ is a prime number}\\}$ are not regular.",
-      "marks": "2+6",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Context-Free Grammars, Parse Trees, Ambiguity & Normal Forms",
-      "text": "Define Context-Free Grammar (CFG) and ambiguity. Show that the grammar $S \\to aSb \\mid ab \\mid SS$ is ambiguous by constructing two distinct parse trees and leftmost derivations for the string $aabbab$. Convert the CFG into Chomsky Normal Form (CNF).",
-      "marks": "3+5",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Automata Theory, Deterministic & Nondeterministic Finite Automata",
-      "text": "Define Pushdown Automata (PDA) as a 7-tuple. Design a deterministic PDA (DPDA) that accepts the language $L = \\{w c w^R \\mid w \\in \\{a, b\\}^*\\}$ by empty stack and by final state. Show the step-by-step instantaneous description (ID) trace for the string $abacaba$.",
-      "marks": "3+5",
-      "years": [
-        "2083",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Turing Machines, Variants of Turing Machines & Church-Turing Thesis",
-      "text": "Define standard Single-Tape Turing Machine (TM) as a 7-tuple. Design a Turing Machine that decides the language $L = \\{0^n 1^n 2^n \\mid n \\ge 1\\}$. Draw the complete state transition diagram and show the sequence of tape configurations for the input $001122$.",
-      "marks": "3+7",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Turing Machines, Variants of Turing Machines & Church-Turing Thesis",
-      "text": "State and prove that the Halting Problem of Turing Machines ($HALT_{TM}$) is undecidable using Cantor's diagonalization argument. Explain Post's Correspondence Problem (PCP) and Rice's Theorem.",
-      "marks": "3+5",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Regular Expressions, Regular Languages & Pumping Lemma for Regular Sets",
-      "text": "Explain the Chomsky Hierarchy of Languages: Type 0 (Unrestricted / Recursively Enumerable), Type 1 (Context-Sensitive), Type 2 (Context-Free), and Type 3 (Regular) with their corresponding grammar production rules and recognizing automata models.",
+      "chapter": "Chapter 1: Introduction to Theory of Computation and Regular Expressions",
+      "text": "Define Alphabet ($\\Sigma$), String, Language, and Kleene Closure ($\\Sigma^*, \\Sigma^+$). Write Regular Expressions for: (a) Strings of $a$'s and $b$'s starting with $ab$ and ending with $ba$, (b) Strings with even number of 0's, (c) Strings over $\\{0, 1\\}$ not containing substring 11.",
       "marks": "6",
       "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Regular Expressions, Regular Languages & Pumping Lemma for Regular Sets",
-      "text": "State the Pumping Lemma for Context-Free Languages. Prove that the language $L = \\{a^n b^n c^n \\mid n \\ge 1\\}$ is not context-free.",
-      "marks": "6",
-      "years": [
-        "2083",
-        "2081",
-        "2080",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 5: Turing Machines, Variants of Turing Machines & Church-Turing Thesis",
-      "text": "Design a Turing Machine to compute the 2's complement of a binary string on tape. Explain variations of Turing Machines: Multi-tape TM, Non-deterministic TM, and Universal Turing Machine (UTM).",
-      "marks": "4+4",
+      "chapter": "Chapter 2: Finite Automata (DFA, NFA, epsilon-NFA, State Minimization)",
+      "text": "Define Deterministic Finite Automaton (DFA). Construct a minimal DFA that accepts the language $L = \\{w \\in \\{0, 1\\}^* : w \\text{ contains substring } 101\\}$ and $L = \\{w \\in \\{a, b\\}^* : |w| \\bmod 3 = 0\\}$.",
+      "marks": "8",
       "years": [
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 2: Finite Automata (DFA, NFA, epsilon-NFA, State Minimization)",
+      "text": "Convert the given Non-Deterministic Finite Automaton with $\\epsilon$-transitions ($\\epsilon$-NFA) into an equivalent DFA using Subset Construction Method.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 2: Finite Automata (DFA, NFA, epsilon-NFA, State Minimization)",
+      "text": "Minimize the states of a given DFA using Myhill-Nerode State Equivalence / Table Filling Algorithm. Show equivalence partitioning steps.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 3: Regular Languages and Regular Grammars (Pumping Lemma)",
+      "text": "Convert a given DFA into a Regular Expression using Arden's Theorem or State Elimination Method.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 3: Regular Languages and Regular Grammars (Pumping Lemma)",
+      "text": "State the Pumping Lemma for Regular Languages. Using Pumping Lemma, prove that the language $L = \\{0^n 1^n : n \\ge 0\\}$ or $L = \\{a^p : p \\text{ is prime}\\}$ is NOT regular.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 4: Context-Free Grammars (CFG), Parse Trees, and Normal Forms",
+      "text": "Define Context-Free Grammar (CFG). Construct CFG for languages: (a) $L = \\{a^n b^{2n} : n \\ge 1\\}$, (b) Palindromes over $\\{a, b\\}$, (c) Equal number of $a$'s and $b$'s. Show derivation trees and parse trees.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 4: Context-Free Grammars (CFG), Parse Trees, and Normal Forms",
+      "text": "Define Ambiguous Grammar. Show that the grammar $E \\rightarrow E + E \\mid E * E \\mid (E) \\mid id$ is ambiguous by deriving two distinct parse trees for $id + id * id$. How can ambiguity be eliminated?",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Ashwin"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Context-Free Grammars (CFG), Parse Trees, and Normal Forms",
+      "text": "Explain simplification of CFG (Eliminating $\\epsilon$-productions, Unit productions, and Useless symbols). Convert a given CFG into Chomsky Normal Form (CNF) and Greibach Normal Form (GNF).",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 5: Pushdown Automata (PDA) and Context-Free Languages",
+      "text": "Define Pushdown Automaton (PDA). Differentiate between Acceptance by Final State vs Acceptance by Empty Stack. Construct a deterministic PDA for $L = \\{w c w^R : w \\in \\{0, 1\\}^*\\}$ or $L = \\{a^n b^n : n \\ge 1\\}$. Trace transitions using Instantaneous Descriptions (IDs).",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 5: Pushdown Automata (PDA) and Context-Free Languages",
+      "text": "State Pumping Lemma for Context-Free Languages. Prove that $L = \\{a^n b^n c^n : n \\ge 1\\}$ is NOT context-free.",
+      "marks": "6",
+      "years": [
+        "2081 Ashwin",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 6: Turing Machines and Computability Theory",
+      "text": "Define Turing Machine (TM) formally with 7-tuple notation. Design a Turing Machine that accepts $L = \\{a^n b^n c^n : n \\ge 1\\}$ or performs binary addition / 1's complement. Show transition diagram and instantaneous description trace.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 6: Turing Machines and Computability Theory",
+      "text": "Explain Church-Turing Thesis. Explain variations of Turing Machines: Multi-tape TM, Non-deterministic TM, and Universal Turing Machine (UTM).",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 7: Undecidability and Computational Complexity (P, NP, NP-Complete)",
+      "text": "Explain Chomsky Hierarchy of Languages (Type 0: Recursively Enumerable, Type 1: Context-Sensitive, Type 2: Context-Free, Type 3: Regular) with corresponding automata and grammar types.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 7: Undecidability and Computational Complexity (P, NP, NP-Complete)",
+      "text": "Define Decidability and Undecidability. State and prove the Halting Problem of Turing Machine is undecidable using diagonalization argument. Explain Post Correspondence Problem (PCP).",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 7: Undecidability and Computational Complexity (P, NP, NP-Complete)",
+      "text": "Explain Computational Complexity Classes: P, NP, NP-Complete, and NP-Hard. State Cook-Levin theorem and explain polynomial time reduction.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
     }
   ]
 }

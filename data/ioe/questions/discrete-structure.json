@@ -1,312 +1,195 @@
 {
   "subject": "Discrete Structure",
+  "code": "ENCT 204",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
-    "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders",
-    "Chapter 3: Functions, Pigeonhole Principle & Mathematical Induction",
-    "Chapter 4: Combinatorics & Recurrence Relations",
-    "Chapter 5: Graph Theory",
-    "Chapter 6: Trees, Spanning Trees & Tree Traversals"
+    "Chapter 1: Logic, Propositional Calculus, and Proof Techniques",
+    "Chapter 2: Sets, Relations, and Functions",
+    "Chapter 3: Number Theory and Mathematical Induction",
+    "Chapter 4: Combinatorics, Permutations, and Recurrence Relations",
+    "Chapter 5: Graph Theory and Trees",
+    "Chapter 6: Algebraic Structures (Groups, Rings, Fields, Lattices, and Boolean Algebras)"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
-      "text": "Explain Rules of Inference in propositional logic. Test the validity of the following argument using rules of inference:\n\"If I study discrete structures or I am lucky, then I will pass the exam. If I do not study discrete structures, then I am not lucky. Therefore, if I do not pass the exam, then I did not study discrete structures.\"",
-      "marks": "3+5",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders",
-      "text": "Define reflexive, symmetric, antisymmetric, and transitive relations. Let $R$ be a relation on $\\mathbb{Z}^+ \\times \\mathbb{Z}^+$ defined by $(a, b) R (c, d) \\iff ad = bc$. Prove that $R$ is an equivalence relation and determine the equivalence class $[(2, 3)]$.",
-      "marks": "2+6",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders",
-      "text": "Define Partial Ordering Relation (Poset) and Total Ordering. Draw the Hasse diagram of the poset $(D_{36}, \\mid)$ where $D_{36}$ is the set of positive divisors of $36$. Find all maximal elements, minimal elements, greatest element, least element, and check if it is a Lattice.",
-      "marks": "3+5",
-      "years": [
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Functions, Pigeonhole Principle & Mathematical Induction",
-      "text": "State the Pigeonhole Principle and Generalized Pigeonhole Principle. Show that among any group of $n$ people, there must be at least two people who have the same number of friends in the group. What is the minimum number of students required in a class to guarantee that at least 5 of them receive the same grade out of A, B, C, D, F?",
-      "marks": "2+4",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Functions, Pigeonhole Principle & Mathematical Induction",
-      "text": "State the Principle of Mathematical Induction and Strong Induction. Prove by induction that $\\sum_{i=1}^n i^3 = \\left(\\frac{n(n+1)}{2}\\right)^2$ and that $n^3 + 2n$ is divisible by 3 for all integers $n \\ge 1$.",
-      "marks": "3+4",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Combinatorics & Recurrence Relations",
-      "text": "Solve the second-order homogeneous linear recurrence relation: $a_n - 7a_{n-1} + 12a_{n-2} = 0$ with initial conditions $a_0 = 2$ and $a_1 = 7$.",
+      "chapter": "Chapter 1: Logic, Propositional Calculus, and Proof Techniques",
+      "text": "Show that $(p \\rightarrow q) \\land (q \\rightarrow r) \\rightarrow (p \\rightarrow r)$ is a Tautology using Truth Table and Logical Equivalences. Explain Predicates and Quantifiers (Universal $\\forall$ and Existential $\\exists$).",
       "marks": "6",
       "years": [
-        "2083",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Combinatorics & Recurrence Relations",
-      "text": "Solve the non-homogeneous recurrence relation: $a_n - 5a_{n-1} + 6a_{n-2} = 2^n + 3n$ with initial conditions $a_0 = 1$ and $a_1 = 3$.",
-      "marks": "8",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Sets, Relations, Equivalence Relations & Partial Orders",
-      "text": "State the Principle of Inclusion-Exclusion for $n$ sets. How many integers between $1$ and $1000$ (inclusive) are divisible by $3$, $5$, or $7$? How many integers are not divisible by any of $3, 5, 7$?",
-      "marks": "2+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Combinatorics & Recurrence Relations",
-      "text": "State and prove the Handshaking Theorem: $\\sum_{v \\in V} \\text{deg}(v) = 2|E|$. Prove that in any undirected graph, the number of vertices with odd degree is always even. Can a simple graph exist with 15 vertices each having degree 5?",
-      "marks": "2+3+1",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Graph Theory",
-      "text": "Differentiate between Eulerian graph and Hamiltonian graph. State Euler's theorem for the existence of Euler circuits and paths. State Dirac's Theorem and Ore's Theorem for Hamiltonian cycles.",
-      "marks": "3+5",
-      "years": [
-        "2083",
-        "2081",
-        "2080",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 5: Graph Theory",
-      "text": "State Euler's Planar Formula $v - e + f = 2$ for connected planar graphs. Prove that for any simple connected planar graph with $v \\ge 3$, $e \\le 3v - 6$. Hence prove that the complete graph $K_5$ and complete bipartite graph $K_{3,3}$ are non-planar (Kuratowski's theorem).",
-      "marks": "2+6",
+      "chapter": "Chapter 1: Logic, Propositional Calculus, and Proof Techniques",
+      "text": "Explain Proof Techniques: Direct Proof, Proof by Contraposition, Proof by Contradiction, and Proof by Counterexample. Prove that $\\sqrt{2}$ is irrational and that if $3n + 2$ is odd, then $n$ is odd.",
+      "marks": "8",
       "years": [
-        "2079"
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2079 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Combinatorics & Recurrence Relations",
-      "text": "What are Saturated Edges in a flow network? State the Max-Flow Min-Cut Theorem. Find the maximum flow from source $s$ to sink $t$ in a given transport network using the Ford-Fulkerson algorithm and identify the minimum cut.",
-      "marks": "2+6",
-      "years": [
-        "2078",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Graph Theory",
-      "text": "Prove that a connected graph $T$ is a tree if and only if there is a unique simple path between every pair of vertices. Prove that a tree with $n$ vertices has exactly $n-1$ edges.",
-      "marks": "3+4",
-      "years": [
-        "2083",
-        "2082",
-        "2080"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 6: Trees, Spanning Trees & Tree Traversals",
-      "text": "Explain Kruskal's algorithm and Prim's algorithm for finding the Minimum Spanning Tree (MST) of a weighted connected graph. Trace Kruskal's algorithm on a given 8-vertex graph and state its time complexity.",
-      "marks": "3+5",
-      "years": [
-        "2082"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
-      "text": "Define a Group, Abelian Group, Subgroup, Ring, and Field. Show that the set of integers modulo $n$ under addition modulo $n$, $(\\mathbb{Z}_n, +_n)$, forms an abelian group. Show that the set of non-zero integers modulo prime $p$, $(\\mathbb{Z}_p^*, \\times_p)$, forms an abelian group.",
-      "marks": "4+4",
-      "years": [
-        "2081",
-        "2079"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Combinatorics & Recurrence Relations",
-      "text": "State and prove Lagrange's Theorem for finite groups: If $H$ is a subgroup of a finite group $G$, then $|H|$ divides $|G|$. Prove that every group of prime order is cyclic.",
-      "marks": "4+3",
-      "years": [
-        "2083",
-        "2080",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
-      "text": "Show that the compound proposition $((p \\lor q) \\land \\neg(\\neg p \\land (\\neg q \\lor \\neg r))) \\lor (\\neg p \\land \\neg q) \\lor (\\neg p \\land \\neg r)$ is a tautology using logical equivalence laws (without using truth tables).",
+      "chapter": "Chapter 2: Sets, Relations, and Functions",
+      "text": "Define Equivalence Relation (Reflexive, Symmetric, Transitive). Given set $A = \\{1, 2, 3, 4\\}$ and relation $R = \\{(a, b) : a \\equiv b \\pmod 2\\}$, prove $R$ is an equivalence relation and determine its equivalence classes.",
       "marks": "6",
       "years": [
-        "2079"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
-      "text": "Express the following statements using quantifiers, logical connectives, and predicate logic:\n(a) \"Every student in this class has visited at least one country in South Asia.\"\n(b) \"There is a student in this class who has sent an email to everyone else in the class.\"\n(c) \"No one can fool all the people all the time.\"",
-      "marks": "2+2+2",
-      "years": [
-        "2078",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
-      "text": "Find the Principal Conjunctive Normal Form (PCNF) and Principal Disjunctive Normal Form (PDNF) for the Boolean expression: $(p \\land q) \\lor (\\neg p \\land r) \\lor (q \\land r)$.",
-      "marks": "6",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
-      "text": "Find the Reflexive Closure, Symmetric Closure, and Transitive Closure (using Warshall's Algorithm) for the relation $R = \\{(1, 2), (2, 3), (3, 4), (4, 1)\\}$ on the set $A = \\{1, 2, 3, 4\\}$.",
-      "marks": "6",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 4: Combinatorics & Recurrence Relations",
-      "text": "Solve the Fibonacci recurrence relation $F_n = F_{n-1} + F_{n-2}$ with $F_0 = 0, F_1 = 1$ using Generating Functions and derive Binet's formula: $F_n = \\frac{1}{\\sqrt{5}}\\left[\\left(\\frac{1+\\sqrt{5}}{2}\\right)^n - \\left(\\frac{1-\\sqrt{5}}{2}\\right)^n\\right]$.",
+      "chapter": "Chapter 2: Sets, Relations, and Functions",
+      "text": "Define Partially Ordered Set (Poset). Draw Hasse Diagram for the divisibility relation on set $D_{24} = \\{1, 2, 3, 4, 6, 8, 12, 24\\}$. Find Maximal, Minimal, Greatest (GLB), and Least (LUB) elements.",
       "marks": "8",
       "years": [
-        "2081"
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2079 Ashwin",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 5
     },
     {
-      "chapter": "Chapter 5: Graph Theory",
-      "text": "Explain Graph Isomorphism. Determine whether two given graphs $G_1 = (V_1, E_1)$ and $G_2 = (V_2, E_2)$ with $8$ vertices are isomorphic by checking graph invariants (degrees, cycles, adjacency matrices).",
+      "chapter": "Chapter 2: Sets, Relations, and Functions",
+      "text": "Explain Bijective (One-to-One and Onto) Functions. Find the inverse and composition $(f \\circ g)(x)$ for given functions $f(x) = 2x + 3$ and $g(x) = x^2 - 1$. State Pigeonhole Principle and solve application problems.",
       "marks": "6",
       "years": [
-        "2080",
-        "2078"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Graph Theory",
-      "text": "Define Vertex Coloring and Chromatic Number $\\chi(G)$ of a graph. State the Four Color Theorem. Find the chromatic number of: (a) Complete graph $K_n$, (b) Bipartite graph $K_{m,n}$, (c) Cycle graph $C_n$ for even and odd $n$, and (d) Wheel graph $W_n$.",
-      "marks": "2+4",
-      "years": [
-        "2082",
-        "2079",
-        "2078"
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 3
     },
     {
-      "chapter": "Chapter 6: Trees, Spanning Trees & Tree Traversals",
-      "text": "Explain Tree Traversals (Preorder, Inorder, Postorder). Construct the Binary Search Tree for the words: `[banana, apple, mango, cherry, orange, grape, papaya]` and write its prefix and postfix notations.",
-      "marks": "3+4",
+      "chapter": "Chapter 3: Number Theory and Mathematical Induction",
+      "text": "State the Principle of Mathematical Induction (Weak and Strong Induction). Prove by induction that $1^2 + 2^2 + 3^2 + \\dots + n^2 = \\frac{n(n+1)(2n+1)}{6}$ and $11^n - 4^n$ is divisible by 7 for all $n \\ge 1$.",
+      "marks": "8",
       "years": [
-        "2078"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
-      "text": "Prove that $(p \\to q) \\land (p \\to r) \\equiv p \\to (q \\land r)$ using logical equivalence laws. What is the contrapositive, converse, and inverse of the implication \"If $n$ is an integer divisible by 6, then $n$ is divisible by 2 and 3\"?",
-      "marks": "3+3",
+      "chapter": "Chapter 3: Number Theory and Mathematical Induction",
+      "text": "Explain Euclidean Algorithm and Extended Euclidean Algorithm to find $\\gcd(a, b)$ and express it as a linear combination $s a + t b = \\gcd(a, b)$. Solve the linear congruence $14x \\equiv 12 \\pmod{18}$.",
+      "marks": "6",
       "years": [
-        "2083",
-        "2081"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
-      "text": "Show that the premises \"A student in this class has not read the book\" and \"Everyone in this class passed the first exam\" imply the conclusion \"Someone who passed the first exam has not read the book\" using universal and existential instantiation.",
-      "marks": "5",
-      "years": [
-        "2082",
-        "2081",
-        "2079"
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2078 Chaitra"
       ],
       "frequency": 3
     },
     {
-      "chapter": "Chapter 3: Functions, Pigeonhole Principle & Mathematical Induction",
-      "text": "Let $f: A \\to B$ and $g: B \\to C$ be functions. Prove that: (a) If $f$ and $g$ are one-to-one (injective), then $g \\circ f$ is one-to-one, (b) If $g \\circ f$ is onto (surjective), then $g$ is onto. Find the inverse of $f(x) = \\frac{2x+3}{x-1}$ for $x \\ne 1$.",
-      "marks": "3+3",
+      "chapter": "Chapter 3: Number Theory and Mathematical Induction",
+      "text": "State Fermat's Little Theorem and Chinese Remainder Theorem (CRT). Solve system of linear congruences: $x \\equiv 2 \\pmod 3, x \\equiv 3 \\pmod 5, x \\equiv 2 \\pmod 7$ using CRT.",
+      "marks": "8",
       "years": [
-        "2081"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
-      "text": "Define a Lattice and Distributive Lattice. Show that in any lattice $(L, \\le)$, the modular inequality holds: if $a \\le c$, then $a \\lor (b \\land c) \\le (a \\lor b) \\land c$.",
-      "marks": "5",
-      "years": [
-        "2080",
-        "2078"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Combinatorics & Recurrence Relations",
-      "text": "Find the number of non-negative integer solutions to the equation $x_1 + x_2 + x_3 + x_4 = 20$ subject to constraints $x_1 \\ge 2, x_2 \\ge 3, 0 \\le x_3 \\le 5, x_4 \\ge 1$ using generating functions / inclusion-exclusion.",
+      "chapter": "Chapter 4: Combinatorics, Permutations, and Recurrence Relations",
+      "text": "State and prove the Principle of Inclusion-Exclusion for three finite sets. Find the number of integers between 1 and 1000 divisible by 3, 5, or 7.",
       "marks": "6",
       "years": [
-        "2079"
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Ashwin",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Propositional & Predicate Logic, Inference Rules, Proof Techniques",
-      "text": "Find the coefficient of $x^{12}$ in the formal power series expansion of $(x^2 + x^3 + x^4 + \\dots)^3$ and $\\frac{1}{(1-2x)(1-3x)}$.",
+      "chapter": "Chapter 4: Combinatorics, Permutations, and Recurrence Relations",
+      "text": "Solve the Linear Homogeneous Recurrence Relation with constant coefficients: $a_n - 7a_{n-1} + 10a_{n-2} = 0$ with initial conditions $a_0 = 2, a_1 = 7$.",
       "marks": "6",
       "years": [
-        "2083",
-        "2081",
-        "2079",
-        "2078"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 4: Combinatorics, Permutations, and Recurrence Relations",
+      "text": "Solve the Non-Homogeneous Recurrence Relation: $a_n - 5a_{n-1} + 6a_{n-2} = 3^n + 2n$ using Method of Generating Functions.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 5: Graph Theory and Trees",
+      "text": "Explain Graph Isomorphism. State Handshaking Lemma ($\\sum \\deg(v) = 2|E|$) and prove that the number of vertices with odd degree in any graph is always even.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 5: Graph Theory and Trees",
+      "text": "Differentiate between Eulerian Graph (Euler Path and Euler Circuit) vs Hamiltonian Graph (Hamiltonian Path and Hamiltonian Cycle). State Euler's formula $V - E + F = 2$ for planar graphs and Kuratowski's theorem ($K_5$ and $K_{3,3}$).",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 6: Algebraic Structures (Groups, Rings, Fields, Lattices, and Boolean Algebras)",
+      "text": "Define Algebraic Structures: Semigroup, Monoid, Group, and Abelian Group. Prove that the set of integers $\\mathbb{Z}$ modulo $n$ ($\\{0, 1, 2, \\dots, n-1\\}$) forms an abelian group under addition modulo $n$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 6: Algebraic Structures (Groups, Rings, Fields, Lattices, and Boolean Algebras)",
+      "text": "Define Ring, Integral Domain, Field, and Lattice. Explain Bounded, Complemented, and Distributive Lattices and state properties of Boolean Algebra.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Ashwin",
+        "2078 Chaitra"
       ],
       "frequency": 4
     }

@@ -1,231 +1,187 @@
 {
   "subject": "Digital Logic",
+  "code": "EX 451",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Number Systems, Binary Arithmetic and Codes",
-    "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
-    "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
-    "Chapter 6: Memory Units and Programmable Logic Devices"
+    "Chapter 1: Number Systems and Boolean Algebra",
+    "Chapter 2: Combinational Logic Circuits",
+    "Chapter 3: Sequential Logic Circuits",
+    "Chapter 4: Registers, Counters and Memory Devices"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Number Systems, Binary Arithmetic and Codes",
-      "text": "Convert the decimal number $(431.625)_{10}$ into: (a) Binary, (b) Octal, and (c) Hexadecimal. Perform the subtraction $(28)_{10} - (45)_{10}$ using 8-bit 2's complement binary arithmetic and indicate overflow.",
-      "marks": "3+5",
+      "chapter": "Chapter 1: Number Systems and Boolean Algebra",
+      "text": "Convert $(345.625)_{10}$ into Binary, Octal, and Hexadecimal. Perform subtraction using 2's complement: $(25)_{10} - (42)_{10}$.",
+      "marks": "4",
       "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
-      "text": "State and prove De Morgan's Theorems algebraically and using truth tables. Simplify the Boolean function $F(A, B, C, D) = (A + B + C)(A + B' + C)(A + B + C')(A + B' + C')$ to minimum product-of-sums (POS) form.",
-      "marks": "3+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
-      "text": "Minimize the Boolean function using a 4-variable K-map: $F(A, B, C, D) = \\sum m(0, 2, 5, 7, 8, 10, 13, 15) + d(1, 6)$. Implement the minimal SOP expression using only 2-input NAND gates.",
-      "marks": "4+4",
-      "years": [
-        "2081",
-        "2080",
-        "2078"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Ashwin"
       ],
       "frequency": 3
     },
     {
-      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
-      "text": "Simplify the Boolean function using Quine-McCluskey (Tabulation Method): $F(A, B, C, D) = \\sum m(1, 3, 4, 5, 9, 11, 12, 13, 14, 15)$. Find all prime implicants and essential prime implicants.",
-      "marks": "10",
+      "chapter": "Chapter 1: Number Systems and Boolean Algebra",
+      "text": "State and prove De Morgan's Theorems. Realize basic gates (AND, OR, NOT) using only Universal Gates (NAND / NOR).",
+      "marks": "4",
       "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
-      "text": "Design a Full Adder circuit using: (a) Basic logic gates, and (b) Two Half Adders and an OR gate. Explain 4-bit Carry Look-Ahead Adder and show how it reduces carry propagation delay from $O(n)$ to $O(1)$.",
-      "marks": "4+6",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
-      "text": "Design a 4-to-16 line decoder using five 2-to-4 line decoders with active-low enable inputs. Implement the Boolean function $F(A, B, C, D) = \\sum m(1, 3, 7, 9, 11, 15)$ using a single 8-to-1 Multiplexer.",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2081",
-        "2078"
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 3
     },
     {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
-      "text": "Explain the Race-Around Condition in JK Flip-Flop. How is race-around avoided using a Master-Slave JK Flip-Flop? Draw its logic diagram and timing waveforms. Convert a JK flip-flop into a D flip-flop and T flip-flop.",
-      "marks": "4+4",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
-      "text": "Derive characteristic equations and excitation tables for SR, JK, D, and T flip-flops. Construct excitation maps for all four flip-flops.",
+      "chapter": "Chapter 1: Number Systems and Boolean Algebra",
+      "text": "Simplify Boolean function $F(A,B,C,D) = \\sum m(0, 2, 5, 7, 8, 10, 13, 15) + d(1, 4)$ using Karnaugh Map (K-Map). Realize the minimal SOP expression using NAND gates.",
       "marks": "6",
       "years": [
-        "2082",
-        "2080"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 2
+      "frequency": 5
     },
     {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
-      "text": "Design a Synchronous 3-bit Up/Down Gray Code Counter using T flip-flops with a control signal $M$ ($M=0$ for up counting, $M=1$ for down counting). Draw the state diagram, excitation table, K-maps, and logic circuit.",
-      "marks": "10",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
-      "text": "Explain 4-bit Universal Shift Register with mode control inputs $S_1S_0$ (00: Hold, 01: Shift-right, 10: Shift-left, 11: Parallel load). Draw the schematic diagram using 4-to-1 multiplexers and D flip-flops.",
+      "chapter": "Chapter 1: Number Systems and Boolean Algebra",
+      "text": "Simplify the Boolean function using Quine-McCluskey (Tabulation) Method: $F(w,x,y,z) = \\sum m(1, 3, 4, 5, 10, 11, 12, 13, 14, 15)$. List all Prime Implicants and Essential Prime Implicants.",
       "marks": "8",
       "years": [
-        "2083",
-        "2081",
-        "2080",
-        "2079"
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
-      "text": "Compare Mealy Machine vs. Moore Machine with block diagrams and timing diagrams. Design a Mealy finite state machine to detect the overlapping bit sequence `1011` in a serial input data stream using D flip-flops.",
-      "marks": "4+6",
-      "years": [
-        "2079"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Memory Units and Programmable Logic Devices",
-      "text": "Compare Programmable Logic Devices: Read-Only Memory (ROM), Programmable Array Logic (PAL), and Programmable Logic Array (PLA). Implement the functions $F_1(A, B, C) = \\sum m(0, 1, 3, 5, 7)$ and $F_2(A, B, C) = \\sum m(1, 2, 4, 7)$ using a suitable PLA program table and logic diagram.",
-      "marks": "4+6",
-      "years": [
-        "2078",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Number Systems, Binary Arithmetic and Codes",
-      "text": "Explain BCD (8421), Excess-3, and Gray codes. Why is Gray code called a reflected/unit-distance code? Design a combinational logic circuit to convert a 4-bit Binary code into its equivalent 4-bit Gray code using XOR gates.",
-      "marks": "3+5",
-      "years": [
-        "2083",
-        "2082",
-        "2080"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
-      "text": "Minimize the following 5-variable Boolean function using 5-variable K-map: $F(A, B, C, D, E) = \\sum m(0, 1, 4, 5, 16, 17, 21, 25, 29) + d(9, 11, 13, 15)$.",
-      "marks": "8",
-      "years": [
-        "2082"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Number Systems, Binary Arithmetic and Codes",
-      "text": "Design a 4-bit Binary Parallel Adder/Subtractor circuit using four Full Adders and XOR gates controlled by mode signal $M$ ($M=0$ for addition, $M=1$ for subtraction). Explain how overflow is detected ($V = C_{in} \\oplus C_{out}$).",
+      "chapter": "Chapter 2: Combinational Logic Circuits",
+      "text": "Design a Half Adder and Full Adder circuit using logic gates. Design a 4-bit Parallel Binary Adder/Subtractor circuit using 7483 IC and XOR gates.",
       "marks": "6",
       "years": [
-        "2081",
-        "2079"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
-      "text": "Design an Asynchronous (Ripple) Modulo-10 (Decade / BCD) Counter using negative edge-triggered JK flip-flops and a NAND reset gate. Draw the logic circuit and timing waveforms.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2080",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
-      "text": "Design a Moore finite state machine to detect the sequence `1101` with an output $Z=1$ whenever the pattern is recognized. Show state table reduction using the Implication Table Method.",
-      "marks": "10",
-      "years": [
-        "2079"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Memory Units and Programmable Logic Devices",
-      "text": "Explain Static RAM (SRAM 6T cell) vs Dynamic RAM (DRAM 1T-1C cell) memory architectures. Why do DRAM chips require periodic refresh cycles?",
-      "marks": "6",
-      "years": [
-        "2078",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Boolean Algebra, Logic Gates and K-Map Minimization",
-      "text": "Prove that NAND and NOR gates are Universal Gates by implementing AND, OR, and NOT operations using only NAND gates and only NOR gates.",
-      "marks": "5",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Number Systems, Binary Arithmetic and Codes",
-      "text": "Design a 4-bit Magnitude Comparator circuit that compares two 4-bit binary numbers $A = A_3A_2A_1A_0$ and $B = B_3B_2B_1B_0$ and outputs $A > B, A = B, A < B$.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Number Systems, Binary Arithmetic and Codes",
-      "text": "Design a 2-bit Multiplier that multiplies two 2-bit numbers $A_1A_0$ and $B_1B_0$ to produce a 4-bit product $P_3P_2P_1P_0$.",
+      "chapter": "Chapter 2: Combinational Logic Circuits",
+      "text": "Design a 3-to-8 line Decoder with enable input using basic gates. Implement full subtractor using 3-to-8 decoder and external OR gates.",
       "marks": "6",
       "years": [
-        "2081"
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Ashwin"
       ],
-      "frequency": 1
+      "frequency": 3
     },
     {
-      "chapter": "Chapter 4: Sequential Logic Circuits, Flip-Flops and State Tables",
-      "text": "Explain 4-bit Ring Counter and 4-bit Johnson (Twisted Ring) Counter. Draw circuit diagrams and construct the state sequence tables.",
+      "chapter": "Chapter 2: Combinational Logic Circuits",
+      "text": "Design an 8-to-1 Multiplexer (MUX) using logic gates. Implement Boolean function $F(A,B,C,D) = \\sum m(1, 3, 4, 11, 12, 13, 14, 15)$ using an 8-to-1 MUX.",
       "marks": "6",
       "years": [
-        "2080",
-        "2078"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 2: Combinational Logic Circuits",
+      "text": "Design a BCD to Seven-Segment Display Decoder for a common cathode display.",
+      "marks": "6",
+      "years": [
+        "2081 Ashwin",
+        "2079 Chaitra"
       ],
       "frequency": 2
+    },
+    {
+      "chapter": "Chapter 3: Sequential Logic Circuits",
+      "text": "Differentiate between Combinational Logic and Sequential Logic circuits. Differentiate between Latches and Flip-Flops. Explain Clocked SR Flip-Flop with characteristic table, characteristic equation, and race-around condition.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 3: Sequential Logic Circuits",
+      "text": "Explain Master-Slave JK Flip-Flop with logic diagram and timing waveforms. Show how Master-Slave configuration eliminates the race-around problem.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2079 Ashwin"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 3: Sequential Logic Circuits",
+      "text": "Explain Flip-Flop Conversion: Convert a JK Flip-Flop into a D Flip-Flop and a T Flip-Flop by designing conversion logic with excitation tables.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 4: Registers, Counters and Memory Devices",
+      "text": "Design a 3-bit Synchronous Up/Down Counter using JK Flip-Flops with state diagram, excitation table, K-maps, and circuit diagram.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 4: Registers, Counters and Memory Devices",
+      "text": "Design a Mod-10 (Decade) Asynchronous/Ripple Counter using T or JK flip-flops.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Registers, Counters and Memory Devices",
+      "text": "Explain 4-bit Shift Registers: Serial-In Serial-Out (SISO), Serial-In Parallel-Out (SIPO), Parallel-In Serial-Out (PISO), and Universal Shift Register with bidirectional control.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Registers, Counters and Memory Devices",
+      "text": "Explain Programmable Logic Devices (PLD): Compare PROM, PLA (Programmable Logic Array), and PAL (Programmable Array Logic). Implement Boolean functions using PLA.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
     }
   ]
 }

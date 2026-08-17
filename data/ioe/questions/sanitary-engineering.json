@@ -10,123 +10,67 @@
   ],
   "questions": [
     {
-      "chapter": "Chapter 2: Design of Sewer Systems & Sewer Appurtenances",
-      "text": "Compare Sewerage Systems: Separate System, Combined System, and Partially Separate System. Explain conditions under which each system is preferred in urban town planning.",
-      "marks": "4+4",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Design of Sewer Systems & Sewer Appurtenances",
-      "text": "Explain the concept of Self-Cleansing Velocity ($0.6-0.8\\,\\text{m/s}$) and Non-Scouring Velocity ($2.5-3.0\\,\\text{m/s}$) in sewer design. Design a circular sewer running half-full at maximum flow using Manning's formula ($n = 0.013$) to serve a population of $50,000$ with per capita water supply of $150\\,\\text{lpcd}$ and peak factor $3.0$ at a ground slope of $1$ in $1000$.",
-      "marks": "3+7",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
       "chapter": "Chapter 1: Quantity of Wastewater & Storm Water Flow Estimation",
-      "text": "Explain Sewer Appurtenances: (a) Manholes (Drop manhole, Deep manhole, Spacing rules), (b) Inverted Siphon (Depressed sewer across rivers/depressions), (c) Catch Basins, and (d) Stormwater Regulators (Leaping weir, Overflow weir).",
-      "marks": "4+4",
+      "text": "Explain Sewerage Systems: Separate, Combined, and Partially Separate systems. Compare their merits, demerits, and suitability in the Nepalese context.",
+      "marks": "6",
       "years": [
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Quantity of Wastewater & Storm Water Flow Estimation",
-      "text": "Define Biochemical Oxygen Demand (BOD), Chemical Oxygen Demand (COD), and Theoretical Oxygen Demand (ThOD). Derive the First-Order BOD Kinetics equation: $y_t = L_0(1 - e^{-k t}) = L_0(1 - 10^{-K_D t})$. If 5-day $20^\\circ\\text{C}$ BOD of a wastewater is $220\\,\\text{mg/L}$ and deoxygenation constant $K_D = 0.1\\,\\text{day}^{-1}$ (base 10), calculate the Ultimate First-Stage Carbonaceous BOD ($L_0$) and 3-day BOD at $25^\\circ\\text{C}$ ($K_T = K_{20}\\theta^{T-20}, \\theta = 1.047$).",
-      "marks": "4+6",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Quantity of Wastewater & Storm Water Flow Estimation",
-      "text": "Explain the Streeter-Phelps Oxygen Sag Equation for stream self-purification: $D_t = \\frac{K_1 L_0}{K_2 - K_1}(e^{-K_1 t} - e^{-K_2 t}) + D_0 e^{-K_2 t}$. Derive expressions for Critical Time ($t_c = \\frac{1}{K_2 - K_1}\\ln\\left[\\frac{K_2}{K_1}\\left(1 - D_0\\frac{K_2 - K_1}{K_1 L_0}\\right)\\right]$) and Critical Dissolved Oxygen Deficit ($D_c$). Draw the Oxygen Sag Curve showing Deoxygenation and Reaeration curves.",
-      "marks": "4+6",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Primary Wastewater Treatment",
-      "text": "Draw the complete Process Flowsheet of a Modern Municipal Wastewater Treatment Plant showing Screens, Grit Chamber, Primary Clarifier, Activated Sludge Aeration Tank, Secondary Clarifier, Sludge Digester, and Disinfection.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 5: Secondary Biological Treatment",
-      "text": "Explain Activated Sludge Process (ASP) design parameters: Food-to-Microorganism ratio ($F/M = \\frac{Q S_0}{V X}$), Mean Cell Residence Time / Sludge Age ($\\theta_c = \\frac{V X}{Q_w X_w}$), Hydraulic Retention Time ($HRT = V/Q$), and Sludge Volume Index (SVI). What causes Sludge Bulking and Foaming in ASP?",
-      "marks": "4+6",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Secondary Biological Treatment",
-      "text": "Explain the working and biological mechanism of Standard Rate vs High Rate Trickling Filters. Explain NRC (National Research Council) formula for single-stage and two-stage trickling filter efficiencies ($\\eta = \\frac{100}{1 + 0.443\\sqrt{\\frac{W}{V F}}}$ where recirculation factor $F = \\frac{1 + R/I}{(1 + 0.1 R/I)^2}$).",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Sludge Treatment, Anaerobic Digestion & Solid Waste Management",
-      "text": "Explain the biochemistry of Anaerobic Sludge Digestion: (1) Hydrolysis, (2) Acidogenesis, (3) Acetogenesis, and (4) Methanogenesis. Explain operational parameters affecting digestion (Temperature - Mesophilic $35^\\circ\\text{C}$ vs Thermophilic $55^\\circ\\text{C}$, pH $6.5-7.5$, volatile acids, biogas composition $65\\%\\,\\text{CH}_4, 30\\%\\,\\text{CO}_2$).",
-      "marks": "4+4",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Quantity of Wastewater & Storm Water Flow Estimation",
-      "text": "Design a Septic Tank and Soak Pit for a residential hostel accommodating 100 persons. Water consumption is $135\\,\\text{lpcd}$, sludge accumulation rate is $30\\,\\text{L/capita/year}$, and desludging interval is 2 years. Percolation rate of soil is $15\\,\\text{min/cm}$. Draw neat plan and cross-sectional view with inlet, outlet baffle walls, and vent pipe.",
-      "marks": "10",
-      "years": [
-        "2083",
-        "2081",
-        "2080",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 6: Sludge Treatment, Anaerobic Digestion & Solid Waste Management",
-      "text": "Explain Municipal Solid Waste Management: Generation rate, Physical/Chemical composition, Segregation at source, 3R principles (Reduce, Reuse, Recycle), Composting (Aerobic windrow vs Anaerobic Indore/Bangalore methods), and Engineered Sanitary Landfill (Liners, Leachate collection, Landfill gas extraction).",
-      "marks": "4+4",
+      "chapter": "Chapter 2: Design of Sewer Systems & Sewer Appurtenances",
+      "text": "Explain Quantity of Sewage: Dry Weather Flow (DWF) and Storm Water Flow (Rational Formula: $Q = \\frac{1}{360} C I A$). Explain design criteria for sewers (Self-cleansing velocity and non-scouring velocity). Design a circular sewer running partially full using Manning's formula.",
+      "marks": "8",
       "years": [
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 4: Primary Wastewater Treatment",
+      "text": "Explain Sewer Appurtenances: Manholes (Drop Manhole, Deep Manhole), Inlets, Catch Basins, Inverted Siphons, and Grease Traps with diagrams.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
     },
     {
       "chapter": "Chapter 6: Sludge Treatment, Anaerobic Digestion & Solid Waste Management",
-      "text": "Design a High-Rate Anaerobic Sludge Digester for a town of population $100,000$ producing $70\\,\\text{g/capita/day}$ of dry suspended solids ($70\\%$ volatile matter) with digestion period of $20\\,\\text{days}$. Calculate daily biogas production volume in $\\text{m}^3/\\text{day}$.",
+      "text": "Explain Characteristics of Sewage: Physical, Chemical (BOD, COD, DO, Total Solids). Derive BOD formula: $BOD_t = L_0 (1 - 10^{-K t})$. Given 5-day BOD at $20^\\circ\\text{C}$ is $200 \\text{ mg/L}$ and $K_{20} = 0.1 \\text{ day}^{-1}$, calculate ultimate first-stage BOD ($L_0$) and 3-day BOD at $25^\\circ\\text{C}$.",
       "marks": "8",
       "years": [
-        "2078",
-        "2082"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
       ],
-      "frequency": 2
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 6: Sludge Treatment, Anaerobic Digestion & Solid Waste Management",
+      "text": "Explain Sewage Treatment: Primary Treatment (Screening, Grit Chamber, Primary Clarifier), Secondary Biological Treatment: Activated Sludge Process (ASP) vs Trickling Filter, Septic Tank design with Soak Pit for domestic wastewater, and Anaerobic Sludge Digestion.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
     }
-  ]
+  ],
+  "code": "ENCE 354"
 }

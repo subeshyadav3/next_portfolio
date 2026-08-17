@@ -13,182 +13,67 @@
   "questions": [
     {
       "chapter": "Chapter 1: Matrices and Determinants",
-      "text": "State and prove Euler's Theorem on homogeneous functions of two variables. If $u = \\sin^{-1}\\left(\\frac{x^2 + y^2}{x + y}\\right)$, show that $x \\frac{\\partial u}{\\partial x} + y \\frac{\\partial u}{\\partial y} = \\tan u$.",
-      "marks": "2+4",
+      "text": "Explain Linear Differential Equations of First Order and First Degree: Integrating Factor ($IF = e^{\\int P dx}$). Solve $(x^2 + 1)\\frac{dy}{dx} + 2xy = 4x^2$. Explain Bernoulli's Equation and Exact Differential Equations ($M dx + N dy = 0, \\frac{\\partial M}{\\partial y} = \\frac{\\partial N}{\\partial x}$).",
+      "marks": "8",
       "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Vector Calculus",
-      "text": "Define a vector space and subspace. Show that the set $W = \\{(x, y, z) \\in \\mathbb{R}^3 : 2x - 3y + z = 0\\}$ is a subspace of $\\mathbb{R}^3$.",
-      "marks": "2+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Systems of Linear Equations",
-      "text": "Define linear independence of vectors. Determine whether the set of vectors $v_1 = (1, 2, 1)$, $v_2 = (2, 1, 0)$, $v_3 = (1, -1, 2)$ forms a basis for $\\mathbb{R}^3$.",
-      "marks": "2+4",
-      "years": [
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Matrices and Determinants",
-      "text": "Let $T: \\mathbb{R}^3 \\to \\mathbb{R}^3$ be a linear transformation defined by $T(x, y, z) = (x + 2y - z, y + z, x + y - 2z)$. Find the basis and dimension of $\\text{Ker}(T)$ and $\\text{Range}(T)$, and verify the Rank-Nullity Theorem.",
-      "marks": "6",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Vector Calculus",
-      "text": "Apply the Gram-Schmidt orthogonalization process to transform the basis vectors $u_1 = (1, 1, 1)$, $u_2 = (0, 1, 1)$, $u_3 = (0, 0, 1)$ into an orthonormal basis for $\\mathbb{R}^3$ with the standard Euclidean inner product.",
-      "marks": "6",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 7: Infinite Series and Tests of Convergence",
-      "text": "State D'Alembert's Ratio Test. Test the convergence of the series: $\\sum_{n=1}^\\infty \\frac{n! \\, 2^n}{n^n}$.",
-      "marks": "1+4",
-      "years": [
-        "2083",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 7: Infinite Series and Tests of Convergence",
-      "text": "State Raabe's Test. Test the convergence of the series: $\\sum_{n=1}^\\infty \\frac{1 \\cdot 3 \\cdot 5 \\cdots (2n-1)}{2 \\cdot 4 \\cdot 6 \\cdots 2n} \\cdot \\frac{1}{n}$.",
-      "marks": "1+5",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 7: Infinite Series and Tests of Convergence",
-      "text": "Define absolute and conditional convergence. Test the alternating series for conditional and absolute convergence: $\\sum_{n=1}^\\infty (-1)^{n-1} \\frac{1}{n \\sqrt{n+1}}$.",
-      "marks": "2+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Matrices and Determinants",
-      "text": "If $u = f(r)$ where $r^2 = x^2 + y^2 + z^2$, prove that $\\frac{\\partial^2 u}{\\partial x^2} + \\frac{\\partial^2 u}{\\partial y^2} + \\frac{\\partial^2 u}{\\partial z^2} = f''(r) + \\frac{2}{r} f'(r)$.",
-      "marks": "6",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Matrices and Determinants",
-      "text": "If $x = r \\sin\\theta \\cos\\phi$, $y = r \\sin\\theta \\sin\\phi$, $z = r \\cos\\theta$, find the Jacobian $\\frac{\\partial(x, y, z)}{\\partial(r, \\theta, \\phi)}$.",
-      "marks": "5",
-      "years": [
-        "2083",
-        "2081",
-        "2080",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Matrices and Determinants",
-      "text": "Find the extreme values (maxima, minima, and saddle points) of the function $f(x, y) = x^3 + y^3 - 3axy$.",
-      "marks": "6",
+      "chapter": "Chapter 2: Systems of Linear Equations",
+      "text": "Solve Linear Differential Equations of Higher Order with Constant Coefficients: $\\frac{d^2 y}{dx^2} - 4\\frac{dy}{dx} + 4y = e^{2x} + \\sin 2x$. Explain Complementary Function (CF) and Particular Integral (PI). Solve using Method of Variation of Parameters.",
+      "marks": "8",
       "years": [
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 5
     },
     {
-      "chapter": "Chapter 1: Matrices and Determinants",
-      "text": "Change the order of integration and evaluate: $\\int_0^1 \\int_x^1 e^{y^2} \\, dy \\, dx$.",
-      "marks": "5",
+      "chapter": "Chapter 3: Vector Calculus",
+      "text": "Evaluate Double Integrals $\\iint_R f(x, y) dx dy$ by changing order of integration and by transforming to Polar coordinates: $\\int_0^1 \\int_x^1 \\frac{x}{x^2 + y^2} dy dx$ and $\\iint_R e^{-(x^2 + y^2)} dx dy$.",
+      "marks": "8",
       "years": [
-        "2078",
-        "2082"
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
       ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Matrices and Determinants",
-      "text": "Evaluate $\\iint_R (x^2 + y^2) \\, dx \\, dy$ over the region $R$ in the first quadrant bounded by $y = 0$, $y = x$, and $x^2 + y^2 = a^2$ by converting to polar coordinates.",
-      "marks": "6",
-      "years": [
-        "2083",
-        "2082",
-        "2080"
-      ],
-      "frequency": 3
+      "frequency": 4
     },
     {
       "chapter": "Chapter 4: Line, Surface, and Volume Integrals",
-      "text": "Find the volume of the region bounded by the paraboloid $z = x^2 + y^2$ and the plane $z = 4$ using triple integration in cylindrical coordinates.",
-      "marks": "6",
+      "text": "Explain Vector Differential Calculus: Gradient ($\\nabla \\phi$), Directional Derivative, Divergence ($\\nabla \\cdot \\vec{F}$), Curl ($\\nabla \\times \\vec{F}$), and Solenoidal vs Irrotational vector fields. Find scalar potential $\\phi$ for conservative field $\\vec{F}$.",
+      "marks": "8",
       "years": [
-        "2082"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
       ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 7: Infinite Series and Tests of Convergence",
-      "text": "State Cauchy's Root Test. Test the convergence of the series: $\\sum_{n=1}^\\infty \\left(\\frac{n}{n+1}\\right)^{n^2}$.",
-      "marks": "1+4",
-      "years": [
-        "2081",
-        "2079"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 7: Infinite Series and Tests of Convergence",
-      "text": "Find the radius and interval of convergence of the power series: $\\sum_{n=1}^\\infty \\frac{(x-2)^n}{n \\cdot 3^n}$.",
-      "marks": "5",
-      "years": [
-        "2083",
-        "2080",
-        "2079"
-      ],
-      "frequency": 3
+      "frequency": 5
     },
     {
       "chapter": "Chapter 8: Fourier Series and Half-Range Expansions",
-      "text": "Use the method of Lagrange multipliers to find the maximum and minimum distances from the origin to the curve $5x^2 + 6xy + 5y^2 = 8$.",
-      "marks": "6",
+      "text": "State and verify Vector Integral Theorems: (a) Green's Theorem in a plane, (b) Gauss's Divergence Theorem: $\\iint_S \\vec{F} \\cdot \\hat{n} dS = \\iiint_V (\\nabla \\cdot \\vec{F}) dV$, and (c) Stokes's Theorem: $\\oint_C \\vec{F} \\cdot d\\vec{r} = \\iint_S (\\nabla \\times \\vec{F}) \\cdot \\hat{n} dS$.",
+      "marks": "8",
       "years": [
-        "2079"
+        "2082 Chaitra",
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Ordinary Linear Differential Equations with Constant Coefficients",
-      "text": "Find the center of mass of a uniform thin hemispherical shell of radius $a$ and constant density $\\rho$.",
-      "marks": "6",
-      "years": [
-        "2078",
-        "2082"
-      ],
-      "frequency": 2
+      "frequency": 5
     }
-  ]
+  ],
+  "code": "ENSH 151"
 }

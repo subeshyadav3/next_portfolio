@@ -1,234 +1,301 @@
 {
   "subject": "Computer Networks",
+  "code": "ENCT 304",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Introduction to Computer Networks and Layered Reference Models",
-    "Chapter 2: Physical Layer and Data Transmission Media",
-    "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
-    "Chapter 4: Medium Access Control Sublayer and IEEE Ethernet/Wi-Fi Standards",
-    "Chapter 5: Network Layer, IP Addressing and Routing Protocols",
-    "Chapter 6: Transport Layer Protocols",
-    "Chapter 7: Application Layer Protocols and Network Security"
+    "Chapter 1: Introduction",
+    "Chapter 2: Physical Layer",
+    "Chapter 3: Data Link Layer",
+    "Chapter 4: Network Layer",
+    "Chapter 5: Transport Layer",
+    "Chapter 6: Upper Layers and Network Design",
+    "Chapter 7: Advanced Topics"
   ],
   "questions": [
     {
-      "chapter": "Chapter 2: Physical Layer and Data Transmission Media",
-      "text": "Compare the 7-layer OSI Reference Model with the 5-layer TCP/IP Reference Model. Explain the primary functions, data protocol units (PDU), and prominent protocols operating at each layer.",
-      "marks": "4+4",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Physical Layer and Data Transmission Media",
-      "text": "Differentiate between Circuit Switching, Packet Switching (Datagram vs Virtual Circuit), and Message Switching in terms of connection setup delay, transmission overhead, bandwidth efficiency, and fault tolerance.",
+      "chapter": "Chapter 1: Introduction",
+      "text": "Define Computer Network. Compare the OSI 7-Layer Reference Model and TCP/IP 4-Layer Reference Model with their layer functionalities and design differences.",
       "marks": "6",
       "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
-      "text": "Explain Framing techniques: (a) Character Count, (b) Byte Stuffing (Flag byte with ESC), and (c) Bit Stuffing (Flag `01111110` with zero stuffing after five consecutive 1s). Stuff the payload `0111111011111001` using bit stuffing.",
-      "marks": "3+3",
-      "years": [
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 2: Physical Layer and Data Transmission Media",
-      "text": "Explain Cyclic Redundancy Check (CRC) error detection. A message bit stream $1101011011$ is to be transmitted using generator polynomial $G(x) = x^4 + x + 1$. Find the transmitted CRC codeword and verify error detection when the third bit from left is corrupted during transmission.",
-      "marks": "3+5",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
-      "text": "Explain Sliding Window Flow Control protocols: (a) Stop-and-Wait ARQ, (b) Go-Back-N ARQ, and (c) Selective Repeat ARQ. Derive formulas for channel utilization and maximum sender window size for Go-Back-N ($N = 2^k - 1$) and Selective Repeat ($N = 2^{k-1}$).",
-      "marks": "4+6",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 4: Medium Access Control Sublayer and IEEE Ethernet/Wi-Fi Standards",
-      "text": "Explain Pure ALOHA vs. Slotted ALOHA random access protocols. Derive the throughput equations $S = G e^{-2G}$ for Pure ALOHA ($S_{max} = \\frac{1}{2e} \\approx 18.4\\%$) and $S = G e^{-G}$ for Slotted ALOHA ($S_{max} = \\frac{1}{e} \\approx 36.8\\%$).",
-      "marks": "4+4",
-      "years": [
-        "2083",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Medium Access Control Sublayer and IEEE Ethernet/Wi-Fi Standards",
-      "text": "Explain CSMA Protocols (1-persistent, Non-persistent, $p$-persistent CSMA). Explain CSMA/CD in Ethernet and CSMA/CA with RTS/CTS handshake in IEEE 802.11 Wireless LANs (Solving Hidden Terminal and Exposed Terminal problems).",
-      "marks": "4+4",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 4: Medium Access Control Sublayer and IEEE Ethernet/Wi-Fi Standards",
-      "text": "In a $10\\,\\text{Mbps}$ CSMA/CD standard Ethernet network with cable length $2.5\\,\\text{km}$ and signal propagation speed $2 \\times 10^8\\,\\text{m/s}$, derive the minimum frame size requirement: $L_{min} = 2 \\times R \\times T_p = 64\\,\\text{bytes}$. Explain Binary Exponential Backoff algorithm.",
-      "marks": "3+5",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Network Layer, IP Addressing and Routing Protocols",
-      "text": "An organization is assigned the Class C network block $192.168.10.0/24$. Design a Variable Length Subnet Mask (VLSM) scheme to create 4 subnets: Subnet A with 60 hosts, Subnet B with 28 hosts, Subnet C with 12 hosts, and Subnet D with 2 hosts. Specify subnet mask (CIDR), network address, usable IP range, and broadcast address for each subnet.",
-      "marks": "10",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Network Layer, IP Addressing and Routing Protocols",
-      "text": "Explain Distance Vector Routing based on Bellman-Ford algorithm. What is the Count-to-Infinity problem and how is it mitigated using Split Horizon and Poison Reverse? Trace distance vector table updates for a 4-node network when a link fails.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2080",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
-      "text": "Explain Link State Routing based on Dijkstra's shortest path algorithm. Describe Link State Advertisements (LSA) and flooding in Open Shortest Path First (OSPF) routing protocol. Compare OSPF vs RIP vs BGP.",
-      "marks": "4+4",
+      "chapter": "Chapter 1: Introduction",
+      "text": "Explain Network Topologies (Bus, Star, Ring, Mesh, Hybrid). Differentiate between Client-Server and Peer-to-Peer (P2P) network architectures.",
+      "marks": "4",
       "years": [
-        "2079"
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Ashwin"
       ],
-      "frequency": 1
+      "frequency": 3
     },
     {
-      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
-      "text": "Explain the working of: (a) Address Resolution Protocol (ARP) and Inverse ARP, (b) Dynamic Host Configuration Protocol (DHCP - DORA process), (c) Network Address Translation (NAT/PAT), and (d) Internet Control Message Protocol (ICMP ping & traceroute).",
+      "chapter": "Chapter 1: Introduction",
+      "text": "Explain networking devices: Repeater, Hub, Bridge, Switch, Router, and Gateway. Explain at which OSI layer each device operates.",
+      "marks": "6",
+      "years": [
+        "2081 Ashwin",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 2: Physical Layer",
+      "text": "Explain Transmission Media: Guided Media (Twisted Pair, Coaxial Cable, Fiber Optic Cable) vs Unguided Media (Radio waves, Microwaves, Infrared). Compare single-mode vs multi-mode optical fiber.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 2: Physical Layer",
+      "text": "Explain Switching Techniques: Circuit Switching, Packet Switching (Datagram approach vs Virtual Circuit approach), and Message Switching.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 2: Physical Layer",
+      "text": "Explain Multiplexing techniques: Frequency Division Multiplexing (FDM), Time Division Multiplexing (Synchronous vs Statistical TDM), and Wavelength Division Multiplexing (WDM). Explain data encoding schemes (Manchester, NRZ-I, 4B/5B).",
+      "marks": "6",
+      "years": [
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2079 Ashwin"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 3: Data Link Layer",
+      "text": "Explain Data Link Layer Framing methods (Character count, Byte stuffing, Bit stuffing). Explain Error Detection using Cyclic Redundancy Check (CRC). Given data word `1101011011` and generator polynomial $G(x) = x^4 + x + 1$, compute the transmitted codeword.",
       "marks": "8",
       "years": [
-        "2078",
-        "2082"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 2
+      "frequency": 5
     },
     {
-      "chapter": "Chapter 6: Transport Layer Protocols",
-      "text": "Explain TCP 3-Way Handshake connection establishment (SYN, SYN-ACK, ACK) and 4-way connection teardown (FIN, ACK, FIN, ACK) with sequence numbers and timing diagrams. Differentiate between TCP and UDP headers.",
-      "marks": "4+4",
+      "chapter": "Chapter 3: Data Link Layer",
+      "text": "Explain Sliding Window Flow Control Protocols: Stop-and-Wait ARQ, Go-Back-N ARQ, and Selective Repeat ARQ with timing diagrams and window size constraints.",
+      "marks": "8",
       "years": [
-        "2083",
-        "2082",
-        "2080"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
-      "text": "Explain TCP Congestion Control mechanisms in detail: Slow Start (Exponential increase), Congestion Avoidance (Additive Increase), Fast Retransmit (Triple duplicate ACKs), and Fast Recovery (Multiplicative Decrease - AIMD). Draw the Congestion Window ($cwnd$) growth curve.",
-      "marks": "4+4",
-      "years": [
-        "2082"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 7: Application Layer Protocols and Network Security",
-      "text": "Explain Domain Name System (DNS) architecture (Hierarchical domain tree, Root servers, TLD servers, Authoritative servers, Recursive vs Iterative resolution, and DNS caching). Explain HTTP/1.1, HTTP/2 (Multiplexing, header compression), and HTTP/3 (QUIC over UDP).",
-      "marks": "4+4",
-      "years": [
-        "2081",
-        "2079"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Computer Networks and Layered Reference Models",
-      "text": "Explain RSA Public Key Cryptography. In an RSA cryptosystem with prime numbers $p = 7, q = 11$, and public encryption exponent $e = 13$: (a) Calculate modulus $n = pq$ and Euler's totient $\\phi(n) = (p-1)(q-1)$, (b) Determine private decryption key $d$ using Extended Euclidean algorithm, (c) Encrypt plaintext message $M = 9$, and (d) Decrypt ciphertext $C$ back to $M$.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2080",
-        "2079"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 7: Application Layer Protocols and Network Security",
-      "text": "Explain Digital Signatures and Public Key Certificates (X.509 standard). Explain SSL/TLS protocol architecture and the secure HTTPS connection establishment.",
-      "marks": "6",
-      "years": [
-        "2079"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Physical Layer and Data Transmission Media",
-      "text": "Explain Transmission Impairments in physical media: Attenuation, Distortion, and Noise (Thermal, Intermodulation, Crosstalk, Impulse noise). State Nyquist Bit Rate formula ($C = 2B \\log_2 M$) and Shannon Capacity formula ($C = B \\log_2(1 + SNR)$).",
-      "marks": "4+4",
-      "years": [
-        "2078",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Data Link Layer, Framing, Flow Control and Error Control",
-      "text": "Explain Hamming Code for single error correction and double error detection. Generate the 7-bit Hamming code for data word $1011$ with even parity. Correct the received corrupted codeword $1001011$.",
-      "marks": "6",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Physical Layer and Data Transmission Media",
-      "text": "Explain Virtual LAN (VLAN - IEEE 802.1Q frame tagging), Spanning Tree Protocol (STP - IEEE 802.1D for bridge loop prevention), and differences between Hubs, Layer-2 Switches, and Routers.",
-      "marks": "6",
-      "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2079"
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 1: Introduction to Computer Networks and Layered Reference Models",
-      "text": "Compare IPv4 Header vs IPv6 Header. Explain IPv6 address representations, Neighbor Discovery Protocol (NDP), and IPv4-to-IPv6 transition strategies (Dual-Stack, Tunneling, and NAT64).",
-      "marks": "6",
+      "chapter": "Chapter 3: Data Link Layer",
+      "text": "Explain Random Access Protocols: Pure ALOHA vs Slotted ALOHA (derive maximum throughput $S = G e^{-2G}$ and $S = G e^{-G}$), CSMA/CD (Ethernet IEEE 802.3), and CSMA/CA (Wireless LAN IEEE 802.11).",
+      "marks": "8",
       "years": [
-        "2081"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 5
     },
     {
-      "chapter": "Chapter 7: Application Layer Protocols and Network Security",
-      "text": "Explain Email Protocols: Simple Mail Transfer Protocol (SMTP), Post Office Protocol (POP3), and Internet Message Access Protocol (IMAP). Explain MIME (Multipurpose Internet Mail Extensions).",
-      "marks": "6",
+      "chapter": "Chapter 3: Data Link Layer",
+      "text": "Explain Virtual LAN (VLAN) and its importance. Explain High-Level Data Link Control (HDLC) and Point-to-Point Protocol (PPP) frame formats.",
+      "marks": "4",
       "years": [
-        "2080",
-        "2078"
+        "2082 Kartik",
+        "2080 Ashwin"
       ],
       "frequency": 2
+    },
+    {
+      "chapter": "Chapter 4: Network Layer",
+      "text": "Explain IPv4 Addressing, Classful vs Classless (CIDR) addressing, Subnetting (FLSM and VLSM), and Supernetting. Given IP network `192.168.10.0/24`, design 4 subnets with subnet masks, network IDs, broadcast IDs, and usable host ranges.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 6
+    },
+    {
+      "chapter": "Chapter 4: Network Layer",
+      "text": "Explain Routing Algorithms: Distance Vector Routing (Bellman-Ford algorithm and Count-to-Infinity problem with solutions) vs Link State Routing (Dijkstra's Shortest Path First algorithm).",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 4: Network Layer",
+      "text": "Compare Interior Gateway Protocols (RIP, OSPF, EIGRP) vs Exterior Gateway Protocol (BGP). Explain how OSPF divides an autonomous system into areas.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Network Layer",
+      "text": "Explain Network Address Translation (NAT) and Private IP address ranges (RFC 1918). Explain Address Resolution Protocol (ARP) and Internet Control Message Protocol (ICMP).",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Network Layer",
+      "text": "Explain IPv6 Addressing, IPv6 Header format, and transition strategies from IPv4 to IPv6 (Dual Stack, Tunneling, Header Translation).",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Network Layer",
+      "text": "Explain Congestion Control Mechanisms in Network Layer: Leaky Bucket Algorithm vs Token Bucket Algorithm for traffic shaping.",
+      "marks": "6",
+      "years": [
+        "2081 Ashwin",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 5: Transport Layer",
+      "text": "Differentiate between TCP and UDP in terms of connection management, reliability, header overhead, flow control, and application use cases.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 5: Transport Layer",
+      "text": "Explain TCP 3-Way Handshake connection establishment, 4-Way connection release, and TCP Segment Header structure.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 5: Transport Layer",
+      "text": "Explain TCP Congestion Control Mechanisms: Slow Start, Congestion Avoidance (Additive Increase Multiplicative Decrease - AIMD), Fast Retransmit, and Fast Recovery.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 6: Upper Layers and Network Design",
+      "text": "Explain Domain Name System (DNS): Hierarchical namespace, Recursive vs Iterative DNS resolution queries, and DNS Resource Records (A, AAAA, MX, CNAME, PTR).",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 6: Upper Layers and Network Design",
+      "text": "Explain Application Layer Protocols: Dynamic Host Configuration Protocol (DHCP DORA process), HTTP/HTTPS, FTP, and Email Protocols (SMTP, POP3, IMAP).",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2079 Ashwin"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 6: Upper Layers and Network Design",
+      "text": "Explain Network Management protocol: Simple Network Management Protocol (SNMP) architecture (Manager, Agent, MIB, Trap). Explain VoIP and IP interconnection basics.",
+      "marks": "4",
+      "years": [
+        "2081 Ashwin",
+        "2079 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 7: Advanced Topics",
+      "text": "Explain Software-Defined Networking (SDN): Architecture (Control Plane vs Data Plane separation, OpenFlow protocol), importance, and applications.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 7: Advanced Topics",
+      "text": "Explain Content Delivery Networks (CDNs), Network Virtualization, and recent trends in Computer Networking (Named Data Networking, Quantum Networking).",
+      "marks": "4",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Chapter 7: Advanced Topics",
+      "text": "Explain Network Security essentials: Symmetric vs Asymmetric cryptography, Firewalls (Packet filtering vs Stateful), and IPsec protocol (AH and ESP modes).",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
     }
   ]
 }

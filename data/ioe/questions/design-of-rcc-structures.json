@@ -1,113 +1,113 @@
 {
   "subject": "Design of RCC Structures",
+  "code": "ENCE 351",
+  "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Working Stress & Limit State Design Philosophies",
-    "Chapter 2: Limit State Design of Beams for Flexure",
-    "Chapter 3: Limit State Design of Beams for Shear, Torsion & Bond",
-    "Chapter 4: Design of Flanged Beams",
-    "Chapter 6: Design of Short & Slender Columns",
-    "Chapter 7: Design of Isolated & Combined Column Footings"
+    "Chapter 1: Design Philosophies (Working Stress Method vs Limit State Method)",
+    "Chapter 2: Limit State Design of Beams in Flexure (Singly and Doubly Reinforced)",
+    "Chapter 3: Limit State Design of Beams for Shear, Torsion, and Bond/Anchorage",
+    "Chapter 4: Limit State Design of Slabs (One-Way and Two-Way Slabs)",
+    "Chapter 5: Limit State Design of Columns (Short Axially Loaded and Uniaxial/Biaxial Bending)",
+    "Chapter 6: Design of Footings (Isolated Pad and Sloped Footing) and Retaining Walls"
   ],
   "questions": [
     {
-      "chapter": "Chapter 2: Limit State Design of Beams for Flexure",
-      "text": "Explain the Limit State Design philosophy of Reinforced Cement Concrete according to IS 456:2000. State the assumptions in the Limit State of Collapse in Flexure. Derive the stress block parameters: depth of neutral axis ($x_u = \\frac{0.87 f_y A_{st}}{0.36 f_{ck} b}$), maximum/limiting neutral axis depth ($x_{u,max} = 0.53d, 0.48d, 0.46d$ for Fe250, Fe415, Fe500), and limiting moment of resistance ($M_{u,lim} = 0.138 f_{ck} b d^2$ for Fe415).",
-      "marks": "4+6",
+      "chapter": "Chapter 1: Design Philosophies (Working Stress Method vs Limit State Method)",
+      "text": "Compare Working Stress Method (WSM) vs Ultimate Load Method (ULM) vs Limit State Method (LSM) (IS 456:2000). Explain Limit State of Collapse vs Limit State of Serviceability (Deflection and Cracking). State partial safety factors for materials ($\\gamma_c = 1.5, \\gamma_s = 1.15$) and load combinations.",
+      "marks": "6",
       "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Limit State Design of Beams for Flexure",
-      "text": "Design a Singly Reinforced rectangular beam section of size $250\\,\\text{mm} \\times 450\\,\\text{mm}$ (effective depth $400\\,\\text{mm}$) to resist a factored bending moment of $120\\,\\text{kNm}$ using M20 grade concrete and Fe415 steel.",
-      "marks": "8",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Limit State Design of Beams for Flexure",
-      "text": "When is a Doubly Reinforced Beam section required? Derive formulas for compressive steel area ($A_{sc} = \\frac{M_u - M_{u,lim}}{(f_{sc} - f_{cc})(d - d')}$) and total tensile steel area ($A_{st} = A_{st1} + A_{st2}$). Design a doubly reinforced beam of size $300\\,\\text{mm} \\times 500\\,\\text{mm}$ to resist a factored moment of $220\\,\\text{kNm}$ using M25 and Fe415.",
-      "marks": "4+8",
-      "years": [
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Design of Flanged Beams",
-      "text": "Explain the design steps for Shear in RCC beams according to IS 456:2000: Nominal shear stress ($\\tau_v = \\frac{V_u}{b d}$), Design shear strength of concrete ($\\tau_c$), Maximum shear stress ($\\tau_{c,max}$), and Shear reinforcement design ($V_{us} = V_u - \\tau_c b d = \\frac{0.87 f_y A_{sv} d}{s_v}$). Check for minimum shear reinforcement ($s_v \\le \\frac{0.87 f_y A_{sv}}{0.4 b}$).",
-      "marks": "4+6",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Limit State Design of Beams for Shear, Torsion & Bond",
-      "text": "Define Development Length ($L_d = \\frac{\\phi \\sigma_s}{4 \\tau_{bd}}$) and mechanism of bond failure (Flexural bond vs Anchorage bond). Design vertical shear stirrups for a simply supported beam of span $6.0\\,\\text{m}$ carrying a factored UDL of $60\\,\\text{kN/m}$.",
-      "marks": "3+7",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Working Stress & Limit State Design Philosophies",
-      "text": "Differentiate between One-Way Slab ($L_y/L_x > 2$) and Two-Way Slab ($L_y/L_x \\le 2$). Design a simply supported One-Way RCC slab of clear span $3.5\\,\\text{m}$ supported on $230\\,\\text{mm}$ thick masonry walls carrying a live load of $3.0\\,\\text{kN/m}^2$ and floor finish of $1.0\\,\\text{kN/m}^2$ using M20 concrete and Fe415 steel. Check for deflection according to IS 456.",
-      "marks": "4+8",
-      "years": [
-        "2083",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Limit State Design of Beams for Shear, Torsion & Bond",
-      "text": "Design a Two-Way Slab of size $4.0\\,\\text{m} \\times 5.0\\,\\text{m}$ with corners held down (restrained against lifting) carrying a live load of $4.0\\,\\text{kN/m}^2$ using IS 456 moment coefficients $\\alpha_x, \\alpha_y$. Design torsional reinforcement at corners.",
-      "marks": "12",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Design of Short & Slender Columns",
-      "text": "Classify RCC Columns based on slenderness ratio (Short vs Slender column $\\lambda = L_{ex}/D < 12$). State the minimum eccentricity check ($e_{min} = \\frac{L}{500} + \\frac{D}{30} \\ge 20\\,\\text{mm}$). Derive the ultimate axial load capacity formula for an axially loaded short column with lateral ties: $P_u = 0.4 f_{ck} A_c + 0.67 f_y A_{sc}$.",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Design of Short & Slender Columns",
-      "text": "Design a short square column to carry a factored axial load of $1500\\,\\text{kN}$. Use M25 concrete and Fe415 steel. Design longitudinal steel and transverse lateral ties.",
-      "marks": "8",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 7: Design of Isolated & Combined Column Footings",
-      "text": "Design an Isolated Sloped/Pad Footing of uniform thickness for an RCC column of size $400\\,\\text{mm} \\times 400\\,\\text{mm}$ carrying an axial load of $1000\\,\\text{kN}$. Safe bearing capacity of soil is $180\\,\\text{kN/m}^2$. Use M20 concrete and Fe415 steel. Perform checks for: (a) One-way shear at distance $d$ from column face, (b) Two-way (Punching) shear at distance $d/2$ from column face ($\\tau_v \\le k_s \\tau_c = 0.25\\sqrt{f_{ck}}$), and (c) Development length.",
-      "marks": "14",
-      "years": [
-        "2083",
-        "2081",
-        "2080",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
+    },
+    {
+      "chapter": "Chapter 2: Limit State Design of Beams in Flexure (Singly and Doubly Reinforced)",
+      "text": "Explain Stress-Strain block diagram for Singly Reinforced Rectangular beam under Limit State Method. Derive formula for depth of neutral axis ($x_u = \\frac{0.87 f_y A_{st}}{0.36 f_{ck} b}$) and limiting moment of resistance ($M_{u,lim} = 0.138 f_{ck} b d^2$ for Fe415). Differentiate under-reinforced, balanced, and over-reinforced sections.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 2: Limit State Design of Beams in Flexure (Singly and Doubly Reinforced)",
+      "text": "Design a Doubly Reinforced Rectangular Beam of size $250 \\text{ mm} \\times 500 \\text{ mm}$ effective depth to resist an ultimate factored bending moment $M_u = 220 \\text{ kNm}$. Use M20 grade concrete and Fe415 steel with effective cover $d' = 50 \\text{ mm}$.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 3: Limit State Design of Beams for Shear, Torsion, and Bond/Anchorage",
+      "text": "Explain Shear failure mechanisms in RCC beams (Diagonal Tension, Diagonal Compression). Calculate nominal shear stress $\\tau_v = \\frac{V_u}{b d}$ and design vertical 2-legged shear stirrups ($A_{sv}$) for a factored shear force $V_u = 120 \\text{ kN}$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 3: Limit State Design of Beams for Shear, Torsion, and Bond/Anchorage",
+      "text": "Define Development Length ($L_d = \\frac{\\phi \\sigma_s}{4 \\tau_{bd}}$) of reinforcing bars. Explain mechanism of bond failure (Flexural bond vs Anchorage bond) and curtailment of tension reinforcement.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2079 Ashwin"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Limit State Design of Slabs (One-Way and Two-Way Slabs)",
+      "text": "Differentiate between One-Way Slab ($l_y / l_x > 2$) and Two-Way Slab ($l_y / l_x \\le 2$). Design a Two-Way Simply Supported RCC Slab of size $4 \\text{ m} \\times 5 \\text{ m}$ supporting a live load of $4 \\text{ kN/m}^2$ and floor finish $1 \\text{ kN/m}^2$ using IS 456:2000 moment coefficients. Apply check for shear and deflection.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 5: Limit State Design of Columns (Short Axially Loaded and Uniaxial/Biaxial Bending)",
+      "text": "Differentiate between Short Column vs Slender (Long) Column. Explain minimum eccentricity requirement ($e_{min} = \\frac{L}{500} + \\frac{D}{30} \\ge 20 \\text{ mm}$). Design a Short Square RCC Column to support an axial factored load $P_u = 1500 \\text{ kN}$ using M20 concrete and Fe415 steel with lateral ties.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 6: Design of Footings (Isolated Pad and Sloped Footing) and Retaining Walls",
+      "text": "Design an Isolated Square Pad Footing for a square column $400 \\text{ mm} \\times 400 \\text{ mm}$ transmitting an axial load $P = 1000 \\text{ kN}$. Safe bearing capacity of soil $SBC = 180 \\text{ kN/m}^2$. Perform checks for: (a) One-way shear, (b) Two-way (Punching) shear, and (c) Development length.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
     }
   ]
 }

@@ -1,215 +1,243 @@
 {
   "subject": "Object Oriented Programming",
+  "code": "ENCT 151",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Introduction to Object-Oriented Programming and Principles",
-    "Chapter 2: Classes, Objects, Constructors and Destructors",
-    "Chapter 3: Operator Overloading and User-Defined Type Conversions",
-    "Chapter 4: Inheritance",
-    "Chapter 5: Virtual Functions, Abstract Classes and Runtime Polymorphism",
-    "Chapter 6: Templates and Generic Programming",
-    "Chapter 7: Exception Handling"
+    "Chapter 1: Introduction to Object-Oriented Programming",
+    "Chapter 2: C++ Language Basics and Functions",
+    "Chapter 3: Classes and Objects",
+    "Chapter 4: Operator Overloading",
+    "Chapter 5: Inheritance",
+    "Chapter 6: Polymorphism and Virtual Functions",
+    "Chapter 7: Templates, Exception Handling, and File I/O Streams"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Introduction to Object-Oriented Programming and Principles",
-      "text": "Explain key Object-Oriented Programming principles: Encapsulation, Data Hiding, Abstraction, Inheritance, and Polymorphism. Compare Procedure-Oriented Programming (C) vs Object-Oriented Programming (C++).",
-      "marks": "4+4",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Classes, Objects, Constructors and Destructors",
-      "text": "Explain different types of Constructors in C++: Default constructor, Parameterized constructor, Copy constructor (`ClassName(const ClassName &obj)`), and Dynamic constructor. Why does the copy constructor pass its argument by reference? Explain the role of Destructors.",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Templates and Generic Programming",
-      "text": "What is a `friend` function and `friend` class? Why does a friend function violate data encapsulation? Write a C++ program with two classes `ClassA` and `ClassB` to find the maximum of two private data members using a common friend function.",
-      "marks": "3+5",
-      "years": [
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Operator Overloading and User-Defined Type Conversions",
-      "text": "What is Operator Overloading? What are the rules and limitations of operator overloading in C++ (Which operators cannot be overloaded)? Overload the binary `+` operator and `==` comparison operator for a `Complex` number class $(a + ib)$ using: (a) Member functions, and (b) Friend functions.",
-      "marks": "4+6",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Templates and Generic Programming",
-      "text": "Overload the stream insertion `<<` and stream extraction `>>` operators for a custom `Matrix` / `Time` class $(hours, minutes, seconds)$ using friend functions.",
-      "marks": "8",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Operator Overloading and User-Defined Type Conversions",
-      "text": "Explain Type Conversions in C++: (a) Basic type to User-defined Class type (using Constructor), (b) User-defined Class type to Basic type (using Casting Operator function `operator type()`), and (c) One Class type to Another Class type (Conversion Routine in source class vs Destination constructor). Write code to convert `Polar(radius, angle)` to `Cartesian(x, y)`.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 4: Inheritance",
-      "text": "Explain types of Inheritance: Single, Multiple, Multilevel, Hierarchical, and Hybrid inheritance. Explain the Diamond Problem in Hybrid Inheritance (Ambiguity). How does `virtual` base class resolve the diamond problem in C++?",
-      "marks": "4+6",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Virtual Functions, Abstract Classes and Runtime Polymorphism",
-      "text": "What is Runtime Polymorphism (Dynamic Binding / Late Binding)? Explain Virtual Functions and Pure Virtual Functions (`virtual void func() = 0;`). What is an Abstract Base Class? Explain how the Virtual Method Table (`vtable`) and Virtual Pointer (`vptr`) implement dynamic dispatch at runtime.",
-      "marks": "4+6",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 5: Virtual Functions, Abstract Classes and Runtime Polymorphism",
-      "text": "Why do base classes with virtual functions require a `virtual destructor`? Explain what happens when a derived class object pointed to by a base class pointer is deleted without a virtual destructor (Memory leak).",
+      "chapter": "Chapter 1: Introduction to Object-Oriented Programming",
+      "text": "Compare Procedure-Oriented Programming (POP) vs Object-Oriented Programming (OOP). Explain core OOP principles: Encapsulation, Data Abstraction, Inheritance, and Polymorphism with examples.",
       "marks": "6",
       "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Templates and Generic Programming",
-      "text": "Explain Function Templates and Class Templates with non-type parameters. Write a generic C++ Class Template for a `Stack<T>` data structure supporting `push()`, `pop()`, `top()`, and `isEmpty()` operations for any data type.",
-      "marks": "3+7",
-      "years": [
-        "2083",
-        "2081",
-        "2080",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 7: Exception Handling",
-      "text": "Explain Exception Handling in C++: `try`, `catch`, and `throw` blocks. Explain Multiple `catch` blocks and Catch-All handler (`catch(...)`). Write a program to handle Divide-by-Zero and Array-Index-Out-of-Bounds exceptions using custom exception classes.",
-      "marks": "4+6",
-      "years": [
-        "2079"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Templates and Generic Programming",
-      "text": "Explain C++ Stream Class Hierarchy (`ios`, `istream`, `ostream`, `iostream`, `ifstream`, `ofstream`, `fstream`). Explain file opening modes (`ios::in`, `ios::out`, `ios::app`, `ios::binary`, `ios::trunc`) and file pointers manipulation using `seekg()`, `seekp()`, `tellg()`, and `tellp()`.",
-      "marks": "4+4",
-      "years": [
-        "2078",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Object-Oriented Programming and Principles",
-      "text": "Write a C++ program to write an array of `Student` objects (RollNo, Name, GPA) to a binary file `students.dat` using `write()` and read them back into memory using `read()` to search for a student by roll number.",
-      "marks": "8",
-      "years": [
-        "2083",
-        "2082",
-        "2080"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Object-Oriented Programming and Principles",
-      "text": "Explain the three main components of the Standard Template Library (STL): Containers (Sequence: `vector, list, deque`; Associative: `map, set`), Iterators, and Algorithms (`sort(), find(), count()`). Write a program demonstrating `std::vector` and `std::map`.",
-      "marks": "4+4",
-      "years": [
-        "2082"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Classes, Objects, Constructors and Destructors",
-      "text": "Explain `static` data members and `static` member functions in C++. Write a program to count the number of objects currently alive in memory using static variables and constructors/destructors.",
-      "marks": "3+5",
-      "years": [
-        "2081",
-        "2079"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Operator Overloading and User-Defined Type Conversions",
-      "text": "Overload unary prefix `++` and postfix `++` increment operators for a `Counter` class. Explain how the dummy `int` parameter distinguishes postfix from prefix in C++.",
+      "chapter": "Chapter 2: C++ Language Basics and Functions",
+      "text": "Explain Inline Functions in C++. When does the compiler ignore the inline request? Explain Function Overloading and Default Arguments with code examples.",
       "marks": "6",
       "years": [
-        "2083",
-        "2080",
-        "2079"
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2079 Chaitra"
       ],
-      "frequency": 3
+      "frequency": 4
     },
     {
-      "chapter": "Chapter 4: Inheritance",
-      "text": "Explain the order of execution of Constructors and Destructors in Multiple and Multilevel inheritance when parameterized constructors are present.",
-      "marks": "6",
-      "years": [
-        "2079"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 6: Templates and Generic Programming",
-      "text": "Write a generic function template to sort an array of any numeric type using the Bubble Sort algorithm. Explain Template Specialization for `char*` or specific data types.",
-      "marks": "6",
-      "years": [
-        "2078",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Object-Oriented Programming and Principles",
-      "text": "Explain `this` pointer in C++. Write a program illustrating method chaining using `return *this;`.",
+      "chapter": "Chapter 2: C++ Language Basics and Functions",
+      "text": "Explain Pass by Value, Pass by Pointer, and Pass by Reference (Reference Variables). Explain Return by Reference with a code example.",
       "marks": "4",
       "years": [
-        "2083"
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 3
     },
     {
-      "chapter": "Chapter 7: Exception Handling",
-      "text": "Explain Exception Specification (`throw(type)` / `noexcept`) and Stack Unwinding during exception propagation in C++.",
-      "marks": "5",
+      "chapter": "Chapter 3: Classes and Objects",
+      "text": "Define Class and Object. Explain Constructors: Default Constructor, Parameterized Constructor, Copy Constructor, and Dynamic Constructor. Explain Destructors and their execution order.",
+      "marks": "8",
       "years": [
-        "2083",
-        "2082",
-        "2081",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 3: Classes and Objects",
+      "text": "Explain Friend Function and Friend Class. Why does a friend function violate data hiding? Demonstrate friend function bridging two different classes with a complete C++ program.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
       ],
       "frequency": 4
+    },
+    {
+      "chapter": "Chapter 3: Classes and Objects",
+      "text": "Explain Static Data Members and Static Member Functions in C++ with memory allocation concept and code example.",
+      "marks": "4",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Operator Overloading",
+      "text": "What is Operator Overloading? What are the rules for operator overloading? Which operators cannot be overloaded in C++?",
+      "marks": "4",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Operator Overloading",
+      "text": "Write a C++ program to overload binary `+` operator to add two `Complex` numbers (real and imag) and two `Time` objects (hr, min, sec).",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 4: Operator Overloading",
+      "text": "Write a C++ program to overload unary `++` and `--` operators in both Prefix and Postfix forms using member functions.",
+      "marks": "6",
+      "years": [
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 4: Operator Overloading",
+      "text": "Explain Data Type Conversions in C++: (a) Basic to Class type (using constructor), (b) Class to Basic type (using casting operator function), and (c) One Class type to Another Class type.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 5: Inheritance",
+      "text": "Explain types of Inheritance: Single, Multiple, Multilevel, Hierarchical, and Hybrid Inheritance with syntax and block diagrams.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 5: Inheritance",
+      "text": "Explain Ambiguity in Multiple Inheritance and Multipath (Diamond) Inheritance problem. How does Virtual Base Class solve the diamond problem? Explain with C++ program.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 5: Inheritance",
+      "text": "Explain Constructor and Destructor invocation order in Derived and Base classes during single and multiple inheritance.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 6: Polymorphism and Virtual Functions",
+      "text": "Differentiate between Compile-Time (Early/Static Binding) Polymorphism vs Run-Time (Late/Dynamic Binding) Polymorphism in C++.",
+      "marks": "4",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2079 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 6: Polymorphism and Virtual Functions",
+      "text": "Explain Virtual Functions and Pure Virtual Functions. Explain Abstract Base Class. Demonstrate dynamic binding using base class pointer pointing to derived class objects.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 6: Polymorphism and Virtual Functions",
+      "text": "Explain Virtual Destructor and why a base class destructor should always be declared virtual when deleting derived objects via base pointers.",
+      "marks": "4",
+      "years": [
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 7: Templates, Exception Handling, and File I/O Streams",
+      "text": "Explain Function Templates and Class Templates. Write a generic C++ class template for a `Stack` data structure supporting `int`, `float`, and `char` data types.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 7: Templates, Exception Handling, and File I/O Streams",
+      "text": "Explain Exception Handling in C++ using `try`, `catch`, and `throw` blocks. Explain multiple catch blocks, catch-all handler (`catch(...)`), and rethrowing exceptions.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 7: Templates, Exception Handling, and File I/O Streams",
+      "text": "Explain C++ File I/O Stream hierarchy (`ifstream`, `ofstream`, `fstream`). Write a C++ program to write student objects (name, roll, marks) into a binary file `student.dat` and read/search records using `read()` and `write()` functions.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
     }
   ]
 }

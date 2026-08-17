@@ -1,183 +1,159 @@
 {
   "subject": "Soil Mechanics",
+  "code": "ENCE 252",
   "generated": "2026-08-17T02:30:00.000Z",
   "chapters": [
-    "Chapter 1: Physical Properties of Soils & Three-Phase System",
-    "Chapter 2: Soil Classification & Compaction of Soils",
-    "Chapter 3: Permeability & 2D Seepage Flow",
-    "Chapter 4: Stress Distribution in Soils",
-    "Chapter 5: Consolidation & Settlement Analysis of Soil Layers",
-    "Chapter 6: Shear Strength of Soil"
+    "Chapter 1: Physical Properties of Soil and Phase Relationships",
+    "Chapter 2: Soil Classification Systems",
+    "Chapter 3: Soil Permeability and Seepage Analysis",
+    "Chapter 4: Stress Distribution in Soil",
+    "Chapter 5: Soil Compaction and Compressibility/Consolidation",
+    "Chapter 6: Shear Strength of Soil and Earth Pressure Theories"
   ],
   "questions": [
     {
-      "chapter": "Chapter 1: Physical Properties of Soils & Three-Phase System",
-      "text": "Draw 3-Phase diagrams for soil (Partially saturated, Fully saturated, and Oven-dry). Derive the fundamental soil volume-weight relationships: (a) $e = \\frac{w G}{S_r}$, (b) $\\gamma = \\frac{(G + S_r e)\\gamma_w}{1 + e}$, (c) $\\gamma_{sat} = \\frac{(G + e)\\gamma_w}{1 + e}$, and (d) $\\gamma_d = \\frac{\\gamma}{1 + w} = \\frac{G \\gamma_w}{1 + e}$.",
-      "marks": "4+6",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 2: Soil Classification & Compaction of Soils",
-      "text": "A partially saturated soil sample has a total volume of $1000\\,\\text{cm}^3$ and mass $1900\\,\\text{g}$. After oven drying, mass is $1600\\,\\text{g}$. If specific gravity $G = 2.68$, compute: (a) Water content $w$, (b) Void ratio $e$, (c) Porosity $n$, (d) Degree of saturation $S_r$, and (e) Air content $a_c$.",
+      "chapter": "Chapter 1: Physical Properties of Soil and Phase Relationships",
+      "text": "Explain 3-Phase Soil System. Derive relationship between Void Ratio ($e$), Specific Gravity ($G$), Degree of Saturation ($S$), and Moisture Content ($w$): $S \\cdot e = w \\cdot G$. Derive expression for bulk unit weight $\\gamma = \\frac{(G + S e)\\gamma_w}{1 + e}$.",
       "marks": "8",
       "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Soil Classification & Compaction of Soils",
-      "text": "Explain Atterberg Limits (Liquid Limit $LL$, Plastic Limit $PL$, Shrinkage Limit $SL$). Define Plasticity Index ($I_p = LL - PL$), Liquidity Index ($I_L = \\frac{w - PL}{I_p}$), Consistency Index ($I_c$), and Activity of Clay ($A = \\frac{I_p}{\\%<2\\mu\\text{m}}$). Classify fine-grained soils using Casagrande's Plasticity Chart ($A$-line equation: $I_p = 0.73(LL - 20)$).",
-      "marks": "4+4",
-      "years": [
-        "2081",
-        "2080",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Permeability & 2D Seepage Flow",
-      "text": "State Darcy's Law for 1D flow through saturated porous media ($v = k i$). Differentiate between Discharge Velocity $v$ and Seepage Velocity $v_s = v/n$. Derive expressions for coefficient of permeability $k$ using: (a) Constant Head Permeameter ($k = \\frac{Q L}{A h t}$), and (b) Falling (Variable) Head Permeameter ($k = \\frac{a L}{A t} \\ln\\frac{h_1}{h_2}$).",
-      "marks": "3+5",
-      "years": [
-        "2080"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 3: Permeability & 2D Seepage Flow",
-      "text": "Derive the equivalent permeability for stratified soil deposits: (a) Flow parallel to bedding planes ($k_x = \\frac{\\sum k_i H_i}{\\sum H_i}$), and (b) Flow perpendicular to bedding planes ($k_z = \\frac{\\sum H_i}{\\sum (H_i / k_i)}$). Prove that $k_x \\ge k_z$.",
-      "marks": "6",
-      "years": [
-        "2079",
-        "2083"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 3: Permeability & 2D Seepage Flow",
-      "text": "Derive 2D Laplace equation for steady-state seepage: $\\frac{\\partial^2 h}{\\partial x^2} + \\frac{\\partial^2 h}{\\partial z^2} = 0$. Define Flow Net, Flow Lines, and Equipotential Lines. Derive the formula for seepage discharge through a weir foundation: $q = k H \\frac{N_f}{N_d}$. What is Critical Hydraulic Gradient ($i_{cr} = \\frac{G - 1}{1 + e}$) and Quick Sand condition?",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2078"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Chapter 3: Permeability & 2D Seepage Flow",
-      "text": "State Terzaghi's Effective Stress Principle: $\\sigma' = \\sigma - u$. Draw total stress, pore water pressure, and effective stress diagrams for a soil stratum with: (a) Static water table, (b) Upward seepage flow, and (c) Downward seepage flow.",
-      "marks": "4+4",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 4: Stress Distribution in Soils",
-      "text": "State Boussinesq's theory assumptions for point load $Q$ on a semi-infinite elastic medium: $\\sigma_z = \\frac{3Q}{2\\pi z^2} \\left[1 + \\left(\\frac{r}{z}\\right)^2\\right]^{-5/2} = I_B \\frac{Q}{z^2}$. Explain Newmark's Influence Chart and 2:1 Stress Distribution Method for rectangular loaded footings.",
-      "marks": "4+4",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 2: Soil Classification & Compaction of Soils",
-      "text": "Compare Standard Proctor Compaction Test vs Modified Proctor Compaction Test. Explain Optimum Moisture Content (OMC) and Maximum Dry Density (MDD). What is the Zero Air Void line ($\\gamma_d = \\frac{G\\gamma_w}{1 + wG}$)?",
-      "marks": "4+4",
-      "years": [
-        "2081"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 5: Consolidation & Settlement Analysis of Soil Layers",
-      "text": "Derive Terzaghi's 1D Consolidation Differential Equation: $\\frac{\\partial u}{\\partial t} = C_v \\frac{\\partial^2 u}{\\partial z^2}$ where $C_v = \\frac{k}{m_v \\gamma_w}$. State all underlying assumptions in Terzaghi's consolidation theory. Define Coefficient of Compressibility ($a_v$), Coefficient of Volume Compressibility ($m_v$), and Compression Index ($C_c = 0.009(LL - 10)$).",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2081",
-        "2080",
-        "2079"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
       "frequency": 4
     },
     {
-      "chapter": "Chapter 5: Consolidation & Settlement Analysis of Soil Layers",
-      "text": "A $4.0\\,\\text{m}$ thick normally consolidated clay layer has initial void ratio $e_0 = 0.85$, $LL = 45\\%$, and initial effective overburden pressure $\\sigma_0' = 120\\,\\text{kN/m}^2$. If construction of a building increases stress by $\\Delta\\sigma' = 60\\,\\text{kN/m}^2$, calculate ultimate consolidation settlement ($S_c$). If $C_v = 3.5 \\times 10^{-4}\\,\\text{cm}^2/\\text{s}$ with two-way drainage, calculate the time required for $50\\%$ consolidation ($T_{v50} = 0.197$).",
-      "marks": "10",
+      "chapter": "Chapter 1: Physical Properties of Soil and Phase Relationships",
+      "text": "A soil sample has moist weight $W = 1.95 \\text{ kg}$, volume $V = 10^{-3} \\text{ m}^3$, moisture content $w = 12\\%$, and $G = 2.68$. Calculate: (a) Dry density, (b) Void ratio, (c) Porosity, (d) Degree of saturation, and (e) Saturated unit weight.",
+      "marks": "6",
       "years": [
-        "2079"
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2079 Ashwin",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 4
     },
     {
-      "chapter": "Chapter 2: Soil Classification & Compaction of Soils",
-      "text": "State Mohr-Coulomb Failure Criterion for soils: $\\tau_f = c' + \\sigma' \\tan\\phi'$. Derive the relationship between Principal Stresses at failure: $\\sigma_1' = \\sigma_3' \\tan^2\\left(45^\\circ + \\frac{\\phi'}{2}\\right) + 2c'\\tan\\left(45^\\circ + \\frac{\\phi'}{2}\\right) = \\sigma_3' N_\\phi + 2c'\\sqrt{N_\\phi}$.",
-      "marks": "4+4",
+      "chapter": "Chapter 2: Soil Classification Systems",
+      "text": "Explain Consistency Limits (Atterberg Limits: Liquid Limit $LL$, Plastic Limit $PL$, Shrinkage Limit $SL$). Explain Plasticity Index ($I_P$), Liquidity Index ($I_L$), and Toughness Index. Explain Casagrande Plasticity Chart.",
+      "marks": "6",
       "years": [
-        "2078",
-        "2082"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 6: Shear Strength of Soil",
-      "text": "Explain Triaxial Shear Tests: (a) Unconsolidated Undrained (UU) test, (b) Consolidated Undrained (CU) test with pore pressure measurement (Skempton's pore pressure parameters $A$ and $B$), and (c) Consolidated Drained (CD) test. Draw Mohr circles and failure envelopes.",
-      "marks": "4+6",
-      "years": [
-        "2083",
-        "2082",
-        "2080"
+        "2082 Chaitra",
+        "2080 Ashwin",
+        "2078 Chaitra"
       ],
       "frequency": 3
     },
     {
-      "chapter": "Chapter 6: Shear Strength of Soil",
-      "text": "Two identical specimens of saturated clay were tested in triaxial apparatus. Specimen 1 under cell pressure $\\sigma_3 = 150\\,\\text{kN/m}^2$ failed at deviator stress $\\sigma_d = 240\\,\\text{kN/m}^2$. Specimen 2 under $\\sigma_3 = 300\\,\\text{kN/m}^2$ failed at $\\sigma_d = 380\\,\\text{kN/m}^2$. Determine the shear strength parameters $c'$ and $\\phi'$ both analytically and graphically.",
+      "chapter": "Chapter 2: Soil Classification Systems",
+      "text": "Classify soil samples according to Unified Soil Classification System (USCS) and AASHTO Soil Classification system using given particle size distribution curve and Atterberg limits.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 3: Soil Permeability and Seepage Analysis",
+      "text": "State Darcy's Law for flow through porous media. Differentiate between Constant Head Permeability Test (for coarse soils) and Falling Head Permeability Test (for fine soils). Derive formula for coefficient of permeability in falling head test: $k = 2.303 \\frac{a L}{A t} \\log_{10}\\left(\\frac{h_1}{h_2}\\right)$.",
       "marks": "8",
       "years": [
-        "2082"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 4
     },
     {
-      "chapter": "Chapter 2: Soil Classification & Compaction of Soils",
-      "text": "Classify a soil having $60\\%$ passing $4.75\\,\\text{mm}$ sieve, $45\\%$ passing $75\\,\\mu\\text{m}$ sieve, $LL = 42\\%$, and $PL = 22\\%$ according to Unified Soil Classification System (USCS) and AASHTO system.",
-      "marks": "6",
+      "chapter": "Chapter 3: Soil Permeability and Seepage Analysis",
+      "text": "Explain Flow Net, its characteristics and boundary conditions. Explain calculation of seepage quantity $q = k H \\frac{N_f}{N_d}$, uplift pressure, and piping failure / critical hydraulic gradient ($i_c = \\frac{G - 1}{1 + e}$).",
+      "marks": "8",
       "years": [
-        "2081",
-        "2079"
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
       ],
-      "frequency": 2
+      "frequency": 4
     },
     {
-      "chapter": "Chapter 5: Consolidation & Settlement Analysis of Soil Layers",
-      "text": "Explain Square Root of Time Fitting Method (Taylor's method) and Logarithm of Time Fitting Method (Casagrande's method) for determining Coefficient of Consolidation $C_v$ from laboratory oedometer test data.",
+      "chapter": "Chapter 4: Stress Distribution in Soil",
+      "text": "Explain Effective Stress Principle (Terzaghi's equation: $\\sigma = \\sigma' + u$). Explain Total Stress, Pore Water Pressure, and Effective Stress with stress distribution diagrams under different water table conditions.",
       "marks": "6",
       "years": [
-        "2083",
-        "2080",
-        "2079"
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Ashwin"
       ],
       "frequency": 3
     },
     {
-      "chapter": "Chapter 6: Shear Strength of Soil",
-      "text": "Explain Direct Shear Box Test and Unconfined Compressive Strength (UCS) test ($q_u = 2 c_u$). Discuss advantages and limitations of the direct shear test.",
+      "chapter": "Chapter 4: Stress Distribution in Soil",
+      "text": "Explain Boussinesq's Theory for vertical stress distribution due to point load: $\\sigma_z = \\frac{3Q}{2\\pi z^2} \\left[1 + \\left(\\frac{r}{z}\\right)^2\\right]^{-5/2}$. Explain Westergaard's Theory and Newmark's Influence Chart.",
       "marks": "6",
       "years": [
-        "2079"
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 5: Soil Compaction and Compressibility/Consolidation",
+      "text": "Explain Standard Proctor Compaction Test vs Modified Proctor Test. Explain Optimum Moisture Content (OMC), Maximum Dry Density (MDD), and factors affecting soil compaction.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Chapter 5: Soil Compaction and Compressibility/Consolidation",
+      "text": "Explain Terzaghi's 1-D Consolidation Theory. State assumptions and differential equation: $\\frac{\\partial u}{\\partial t} = c_v \\frac{\\partial^2 u}{\\partial z^2}$. Calculate final settlement of a clay layer: $S_c = \\frac{C_c H_0}{1 + e_0} \\log_{10}\\left(\\frac{\\sigma'_0 + \\Delta \\sigma'}{\\sigma'_0}\\right)$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Chapter 6: Shear Strength of Soil and Earth Pressure Theories",
+      "text": "Explain Mohr-Coulomb Failure Criterion: $\\tau_f = c + \\sigma \\tan\\phi$. Compare Laboratory Shear Strength Tests: Direct Shear Test vs Triaxial Compression Test (UU, CU, CD tests) vs Unconfined Compression Test.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 6: Shear Strength of Soil and Earth Pressure Theories",
+      "text": "Explain Lateral Earth Pressure: Rankine's Earth Pressure Theory vs Coulomb's Earth Pressure Theory. Calculate Active Earth Pressure ($K_a = \\frac{1 - \\sin\\phi}{1 + \\sin\\phi}$) and Passive Earth Pressure ($K_p = \\frac{1 + \\sin\\phi}{1 - \\sin\\phi}$) for a retaining wall with layered soil backfill and uniform surcharge.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 6
     }
   ]
 }

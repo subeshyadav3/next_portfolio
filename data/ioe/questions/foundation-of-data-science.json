@@ -9,83 +9,86 @@
   ],
   "questions": [
     {
-      "chapter": "Chapter 2: Data Preprocessing, Cleaning, Imputation & Feature Scaling",
-      "text": "Explain the Data Science Lifecycle (Data Acquisition, Data Cleaning/Wrangling, EDA, Feature Engineering, Model Training, Evaluation, and Deployment). Explain techniques for handling: (a) Missing values (Imputation strategies), (b) Outliers (Z-score and IQR methods), and (c) Feature Scaling (Min-Max Normalization $x' = \\frac{x - x_{min}}{x_{max} - x_{min}}$ vs Standardization $z = \\frac{x - \\mu}{\\sigma}$).",
-      "marks": "4+4",
-      "years": [
-        "2083"
-      ],
-      "frequency": 1
-    },
-    {
       "chapter": "Chapter 1: Introduction to Data Science, Data Types & Data Pipeline",
-      "text": "Explain the Curse of Dimensionality in high-dimensional data spaces: (a) Exponential growth in volume, (b) Distance concentration phenomenon, and (c) Sparsity of points. Explain statistical visualization tools in EDA: Box Plots, Histograms, Pair Plots, and Correlation Heatmaps.",
-      "marks": "3+5",
+      "text": "Define Data Science. Explain the Data Science Life Cycle: Problem Definition, Data Collection, Data Cleaning, Exploratory Data Analysis (EDA), Model Building, Evaluation, and Deployment.",
+      "marks": "6",
       "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Data Science, Data Types & Data Pipeline",
-      "text": "Derive Principal Component Analysis (PCA) from the maximization of variance / minimization of reconstruction error. Given a $2\\text{D}$ dataset, compute the Covariance Matrix $\\boldsymbol{\\Sigma} = \\frac{1}{n}\\mathbf{X}^T\\mathbf{X}$, find its eigenvalues and eigenvectors, and project the data onto the first principal component.",
-      "marks": "4+6",
-      "years": [
-        "2081",
-        "2080",
-        "2078"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra"
       ],
       "frequency": 3
     },
     {
       "chapter": "Chapter 1: Introduction to Data Science, Data Types & Data Pipeline",
-      "text": "Explain Singular Value Decomposition (SVD): $\\mathbf{A} = \\mathbf{U} \\boldsymbol{\\Sigma} \\mathbf{V}^T$. Explain Low-Rank Matrix Approximation (Eckart-Young-Mirsky Theorem) and its application in image compression and collaborative filtering recommender systems.",
-      "marks": "3+5",
+      "text": "Explain structured, semi-structured, and unstructured data with examples. Explain the role of Data Scientist vs Data Analyst vs Data Engineer.",
+      "marks": "4",
       "years": [
-        "2080"
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2078 Chaitra"
       ],
-      "frequency": 1
+      "frequency": 3
     },
     {
       "chapter": "Chapter 2: Data Preprocessing, Cleaning, Imputation & Feature Scaling",
-      "text": "Explain Linear Regression with Ordinary Least Squares (OLS) estimation: $\\boldsymbol{\\beta} = (\\mathbf{X}^T\\mathbf{X})^{-1}\\mathbf{X}^T\\mathbf{y}$. Explain Regularization techniques: (a) Ridge Regression ($L_2$ regularization $\\lambda\\|\\boldsymbol{\\beta}\\|_2^2$), and (b) Lasso Regression ($L_1$ regularization $\\lambda\\|\\boldsymbol{\\beta}\\|_1$). How does Lasso perform feature selection?",
-      "marks": "4+4",
+      "text": "Explain Data Preprocessing techniques: Handling Missing Values (Mean, Median, Mode, KNN Imputation), Outlier Detection (Z-score, IQR method, Box plots), and Data Normalization (Min-Max Scaling vs Standard Z-score Normalization).",
+      "marks": "8",
       "years": [
-        "2079",
-        "2083"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 2
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 2: Data Preprocessing, Cleaning, Imputation & Feature Scaling",
+      "text": "Explain Feature Engineering and Dimensionality Reduction. Explain Principal Component Analysis (PCA) algorithm: Covariance Matrix, Eigenvalues, Eigenvectors, and Variance Explained.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
     },
     {
       "chapter": "Chapter 5: Supervised Learning Foundations",
-      "text": "Explain Logistic Regression for binary classification and derive the cross-entropy loss function $J(\\theta) = -\\frac{1}{m}\\sum [y^{(i)}\\ln(h_\\theta(x^{(i)})) + (1-y^{(i)})\\ln(1-h_\\theta(x^{(i)}))]$. Define classification evaluation metrics: Confusion Matrix, Precision, Recall, $F_1$-score, ROC curve, and AUC.",
-      "marks": "4+4",
+      "text": "Explain Supervised Learning algorithms: Simple & Multiple Linear Regression (Cost Function, Gradient Descent) and Logistic Regression for binary classification (Sigmoid function, Log-Loss).",
+      "marks": "8",
       "years": [
-        "2083",
-        "2081",
-        "2078"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Chapter 5: Supervised Learning Foundations",
+      "text": "Explain Unsupervised Learning algorithms: K-Means Clustering (Elbow Method for optimal K) and Hierarchical Clustering (Dendrograms).",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2079 Ashwin"
       ],
       "frequency": 3
     },
     {
       "chapter": "Chapter 6: Unsupervised Learning",
-      "text": "Explain $k$-Means Clustering algorithm and its objective function $J = \\sum_{j=1}^k \\sum_{i=1}^n \\|x_i^{(j)} - c_j\\|^2$. Explain the Elbow Method and Silhouette Coefficient for determining optimal $k$. Compare $k$-Means with Hierarchical Clustering (Dendrograms) and DBSCAN (Density-Based Spatial Clustering).",
-      "marks": "4+4",
+      "text": "Explain Model Evaluation Metrics: Confusion Matrix, Accuracy, Precision, Recall, F1-Score, ROC Curve, and AUC for classification; MSE, RMSE, MAE, and $R^2$ score for regression.",
+      "marks": "8",
       "years": [
-        "2083"
+        "2082 Chaitra",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Chapter 1: Introduction to Data Science, Data Types & Data Pipeline",
-      "text": "Explain the role of Apache Spark (Resilient Distributed Datasets - RDDs, DataFrames, Spark SQL, Spark MLlib) in big data processing. Discuss Data Privacy, GDPR principles, Differential Privacy, and algorithmic bias in AI/Data Science systems.",
-      "marks": "6",
-      "years": [
-        "2082",
-        "2080"
-      ],
-      "frequency": 2
+      "frequency": 4
     }
-  ]
+  ],
+  "code": "ENCT 202"
 }
