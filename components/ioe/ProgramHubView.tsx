@@ -175,7 +175,7 @@ export function ProgramHubView({
                             </span>
                           )}
                         </div>
-                        {hasPapers && isDeepProgram ? (
+                        {hasPapers ? (
                           <Link
                             href={subjectUrl}
                             className="group inline-block text-sm font-semibold text-slate-900 transition-colors hover:text-blue-600 dark:text-white dark:hover:text-blue-400 sm:text-[15px]"
@@ -215,16 +215,13 @@ export function ProgramHubView({
                               <Download className="h-3.5 w-3.5" />
                               Download
                             </a>
+                            <Link
+                              href={subjectUrl}
+                              className="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 hover:underline dark:text-blue-400"
+                            >
+                              View Subject Page &rarr;
+                            </Link>
                           </>
-                        )}
-
-                        {isDeepProgram && (
-                          <Link
-                            href={subjectUrl}
-                            className="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 hover:underline dark:text-blue-400"
-                          >
-                            View Subject Page &rarr;
-                          </Link>
                         )}
                       </div>
                     </div>
