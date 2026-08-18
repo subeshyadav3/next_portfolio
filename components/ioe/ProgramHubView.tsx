@@ -11,8 +11,8 @@ import {
   Award,
   X,
 } from "lucide-react";
-import type { IoeCurriculumSubject, IoePaperFile, IoeProgram } from "@/lib/ioe/types";
-import { findCatalogSubject, getSubjectSlugFromName } from "@/lib/ioe/data";
+import type { IoeCurriculumSubject, IoePaper, IoePaperFile, IoeProgram } from "@/lib/ioe/types";
+import { findCatalogSubject, getPapersForSubject, getSubjectSlugFromName } from "@/lib/ioe/data";
 
 interface ProgramHubViewProps {
   program: IoeProgram;
@@ -30,10 +30,15 @@ export function ProgramHubView({
 }: ProgramHubViewProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [activeSem, setActiveSem] = useState<string>("all");
-  const [previewPaper, setPreviewPaper] = useState<{
+  const [previewModalData, setPreviewModalData] = useState<{
     subject: string;
-    file: IoePaperFile;
+    papers: IoePaper[];
+    activePaperIndex: number;
   } | null>(null);
+
+  const currentPreviewPaper = previewModalData
+    ? previewModalData.papers[previewModalData.activePaperIndex] || previewModalData.papers[0]
+    : null;
 
   // Flattened search filter
   const filteredRows = useMemo(() => {
@@ -142,10 +147,11 @@ export function ProgramHubView({
               <div className="divide-y divide-slate-100 dark:divide-gray-800/60">
                 {subjects.map((subject) => {
                   const catalog = findCatalogSubject(subject.title);
-                  const papers: IoePaperFile[] = catalog?.papers ?? [];
-                  const hasPapers = papers.length > 0;
-                  const primaryPaper = papers[0];
+                  const matchedPapers = catalog ? getPapersForSubject(catalog, sem) : [];
+                  const hasPapers = matchedPapers.length > 0;
+                  const primaryPaper = matchedPapers[0];
                   const slug = getSubjectSlugFromName(subject.title);
+                  const subjectUrl = `/ioe/${program.slug}/semester/${sem}/${slug}`;
 
                   return (
                     <div
@@ -169,9 +175,18 @@ export function ProgramHubView({
                             </span>
                           )}
                         </div>
-                        <h3 className="text-sm font-semibold text-slate-900 dark:text-white sm:text-[15px]">
-                          {subject.title}
-                        </h3>
+                        {hasPapers && isDeepProgram ? (
+                          <Link
+                            href={subjectUrl}
+                            className="group inline-block text-sm font-semibold text-slate-900 transition-colors hover:text-blue-600 dark:text-white dark:hover:text-blue-400 sm:text-[15px]"
+                          >
+                            {subject.title}
+                          </Link>
+                        ) : (
+                          <h3 className="text-sm font-semibold text-slate-900 dark:text-white sm:text-[15px]">
+                            {subject.title}
+                          </h3>
+                        )}
                       </div>
 
                       {/* Right: Actions */}
@@ -180,15 +195,16 @@ export function ProgramHubView({
                           <>
                             <button
                               onClick={() =>
-                                setPreviewPaper({
+                                setPreviewModalData({
                                   subject: subject.title,
-                                  file: primaryPaper,
+                                  papers: matchedPapers,
+                                  activePaperIndex: 0,
                                 })
                               }
                               className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 shadow-xs transition hover:border-blue-400 hover:bg-blue-50 hover:text-blue-600 dark:border-gray-700 dark:bg-gray-800 dark:text-slate-200 dark:hover:bg-gray-700"
                             >
                               <Eye className="h-3.5 w-3.5 text-blue-500" />
-                              Preview PDF
+                              Preview PDF {matchedPapers.length > 1 ? `(${matchedPapers.length})` : ""}
                             </button>
                             <a
                               href={`https://drive.google.com/uc?export=download&id=${primaryPaper.id}`}
@@ -204,10 +220,10 @@ export function ProgramHubView({
 
                         {isDeepProgram && (
                           <Link
-                            href={`/ioe/${program.slug}/semester/${sem}/${slug}`}
+                            href={subjectUrl}
                             className="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 hover:underline dark:text-blue-400"
                           >
-                            Chapter Bank &rarr;
+                            View Subject Page &rarr;
                           </Link>
                         )}
                       </div>
@@ -296,22 +312,22 @@ export function ProgramHubView({
       </section>
 
       {/* ── Interactive PDF Preview Modal ── */}
-      {previewPaper && (
+      {previewModalData && currentPreviewPaper && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-4 backdrop-blur-xs">
           <div className="flex h-[90vh] w-full max-w-5xl flex-col overflow-hidden rounded-3xl bg-white shadow-2xl dark:bg-gray-900">
             {/* Modal Header */}
             <div className="flex items-center justify-between border-b border-slate-200 bg-slate-50 px-6 py-4 dark:border-gray-800 dark:bg-gray-800">
               <div>
                 <h3 className="font-bold text-slate-900 dark:text-white">
-                  {previewPaper.subject} — Past Question Paper
+                  {previewModalData.subject} — Past Question Paper
                 </h3>
                 <p className="text-xs text-slate-500 dark:text-slate-400">
-                  {previewPaper.file.file}
+                  {currentPreviewPaper.file}
                 </p>
               </div>
               <div className="flex items-center gap-3">
                 <a
-                  href={`https://drive.google.com/uc?export=download&id=${previewPaper.file.id}`}
+                  href={currentPreviewPaper.downloadUrl || `https://drive.google.com/uc?export=download&id=${currentPreviewPaper.id}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1.5 rounded-xl bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white transition hover:bg-blue-700"
@@ -320,7 +336,7 @@ export function ProgramHubView({
                   Download
                 </a>
                 <button
-                  onClick={() => setPreviewPaper(null)}
+                  onClick={() => setPreviewModalData(null)}
                   className="rounded-xl p-1.5 text-slate-400 transition hover:bg-slate-200 hover:text-slate-700 dark:hover:bg-gray-700 dark:hover:text-white"
                 >
                   <X className="h-5 w-5" />
@@ -328,12 +344,48 @@ export function ProgramHubView({
               </div>
             </div>
 
+            {/* Paper Selection Tabs (if multiple PDFs exist) */}
+            {previewModalData.papers.length > 1 && (
+              <div className="flex flex-wrap items-center gap-2 border-b border-slate-200 bg-slate-100/70 px-6 py-2.5 dark:border-gray-800 dark:bg-gray-950">
+                <span className="mr-1 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+                  Available Papers ({previewModalData.papers.length}):
+                </span>
+                {previewModalData.papers.map((p, idx) => {
+                  const isActive = previewModalData.activePaperIndex === idx;
+                  const label = p.sem
+                    ? p.sem.replace(/-/g, " ").toUpperCase()
+                    : `Paper ${idx + 1}`;
+
+                  return (
+                    <button
+                      key={p.id || idx}
+                      onClick={() =>
+                        setPreviewModalData({
+                          ...previewModalData,
+                          activePaperIndex: idx,
+                        })
+                      }
+                      className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1 text-xs font-semibold transition ${
+                        isActive
+                          ? "bg-blue-600 text-white shadow-xs"
+                          : "border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 dark:border-gray-800 dark:bg-gray-900 dark:text-slate-300 dark:hover:bg-gray-800"
+                      }`}
+                    >
+                      <FileText className="h-3 w-3" />
+                      {label}
+                    </button>
+                  );
+                })}
+              </div>
+            )}
+
             {/* Iframe Viewer */}
             <div className="flex-1 bg-slate-100 dark:bg-gray-950">
               <iframe
-                src={`https://drive.google.com/file/d/${previewPaper.file.id}/preview`}
+                key={currentPreviewPaper.id}
+                src={currentPreviewPaper.previewUrl || `https://drive.google.com/file/d/${currentPreviewPaper.id}/preview`}
                 className="h-full w-full border-none"
-                title={`${previewPaper.subject} Past Paper Preview`}
+                title={`${previewModalData.subject} Past Paper Preview`}
                 allow="autoplay"
               />
             </div>

@@ -48,8 +48,8 @@ export default async function IoeProgramPage({ params }: PageProps) {
     0
   );
 
-  // All programs use the unified authoritative program hub with in-page PDF preview and direct download
-  const isDeepProgram = false;
+  // Deep subject pages exist for BCT, BCE, BEX
+  const isDeepProgram = ["bct", "bce", "bex"].includes(program.slug.toLowerCase());
 
   const breadcrumb = breadcrumbLd([
     { name: "Home", path: "/" },
