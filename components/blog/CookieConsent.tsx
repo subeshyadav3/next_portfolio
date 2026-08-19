@@ -5,6 +5,7 @@ import Link from "next/link";
 
 const CONSENT_KEY = "cookie-consent";
 const GA_ID = "G-6HZ0GV26W3";
+const GA_DISABLE_KEY = `ga-disable-${GA_ID}`;
 
 type Consent = "accepted" | "declined" | null;
 
@@ -28,6 +29,7 @@ function enableAnalytics() {
 declare global {
   interface Window {
     dataLayer: unknown[];
+    [key: string]: unknown;
   }
 }
 
@@ -39,18 +41,24 @@ export function CookieConsent() {
     const stored = localStorage.getItem(CONSENT_KEY) as Consent;
     setConsent(stored);
     setVisible(!stored);
-    if (stored === "accepted") enableAnalytics();
+    if (stored === "declined") window[GA_DISABLE_KEY] = true;
+    enableAnalytics();
   }, []);
 
   function accept() {
     localStorage.setItem(CONSENT_KEY, "accepted");
     setConsent("accepted");
-    enableAnalytics();
+    if (consent === "declined") window.location.reload();
+    else {
+      window[GA_DISABLE_KEY] = false;
+      enableAnalytics();
+    }
     setVisible(false);
   }
 
   function decline() {
     localStorage.setItem(CONSENT_KEY, "declined");
+    window[GA_DISABLE_KEY] = true;
     document.cookie.split(";").forEach((cookie) => {
       const name = cookie.split("=")[0]?.trim();
       if (name?.startsWith("_ga")) {
