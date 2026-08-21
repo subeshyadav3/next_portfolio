@@ -53,7 +53,14 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: PageProps) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
-  if (!post) return {};
+  if (!post || (process.env.SHOW_ALL_LANGUAGES !== "true" && post.language === "ne")) {
+    return {
+      robots: {
+        index: false,
+        follow: false,
+      },
+    };
+  }
   return generatePostMetadata(post);
 }
 
