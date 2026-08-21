@@ -25,10 +25,21 @@ import {
 } from "lucide-react";
 
 export const metadata = buildIoeMetadata({
-  title: "IOE Past Question Papers & Syllabus Archive | TU Engineering PYQs",
+  title: "IOE Past Question Papers & Syllabus Archive | TU Engineering PYQs PDF",
   description:
-    "Free repository of IOE (Institute of Engineering, TU) past examination question papers, curriculum syllabus, and exam preparation resources for BCT, BCE, BEX, and all engineering programs.",
+    "Free repository of IOE (Institute of Engineering, TU) past examination question papers (PYQs), curriculum syllabus, and exam preparation resources for BCT, BCE, BEX, and all engineering programs.",
   path: "/ioe",
+  keywords: [
+    "IOE past question papers",
+    "IOE PYQ",
+    "IOE syllabus",
+    "Tribhuvan University engineering PYQ",
+    "IOE question bank PDF",
+    "BCT past papers",
+    "BCE past papers",
+    "BEX past papers",
+    "IOE notes PDF",
+  ],
 });
 
 const PROGRAM_CONFIG: Record<string, {

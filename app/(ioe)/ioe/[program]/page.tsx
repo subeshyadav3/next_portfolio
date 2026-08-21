@@ -25,9 +25,17 @@ export async function generateMetadata({ params }: PageProps) {
   const program = getProgram(slug);
   if (!program) return {};
   return buildIoeMetadata({
-    title: `${program.fullName} (${program.code}) Past Question Papers & Syllabus — IOE TU`,
-    description: `IOE past question papers (PDF), curriculum structure, and semester syllabus for ${program.fullName} (${program.code}). Preview online or download for free.`,
+    title: `${program.name} (${program.code}) Past Question Papers & Syllabus — IOE PYQ`,
+    description: `Download IOE past question papers (PDF), semester syllabus, and course blueprint for ${program.fullName} (${program.code}), Tribhuvan University.`,
     path: `/ioe/${program.slug}`,
+    keywords: [
+      `IOE ${program.code} past question papers`,
+      `${program.name} IOE PYQ`,
+      `IOE ${program.code} syllabus`,
+      `${program.code} past papers PDF download`,
+      `Tribhuvan University ${program.code} exam papers`,
+      `IOE engineering question bank ${program.code}`,
+    ],
   });
 }
 

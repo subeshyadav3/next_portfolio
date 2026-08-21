@@ -4,72 +4,36 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const CONSENT_KEY = "cookie-consent";
-const GA_ID = "G-6HZ0GV26W3";
-const GA_DISABLE_KEY = `ga-disable-${GA_ID}`;
 
 type Consent = "accepted" | "declined" | null;
-
-function enableAnalytics() {
-  if (document.querySelector(`script[data-google-analytics="${GA_ID}"]`)) return;
-
-  const script = document.createElement("script");
-  script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-  script.dataset.googleAnalytics = GA_ID;
-  document.head.appendChild(script);
-
-  window.dataLayer = window.dataLayer || [];
-  function gtag(...args: unknown[]) {
-    window.dataLayer.push(args);
-  }
-  gtag("js", new Date());
-  gtag("config", GA_ID, { anonymize_ip: true });
-}
-
-declare global {
-  interface Window {
-    dataLayer: unknown[];
-    [key: string]: unknown;
-  }
-}
 
 export function CookieConsent() {
   const [consent, setConsent] = useState<Consent>(null);
   const [visible, setVisible] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const stored = localStorage.getItem(CONSENT_KEY) as Consent;
     setConsent(stored);
+    // Show banner only if user has never made a choice
     setVisible(!stored);
-    if (stored === "declined") window[GA_DISABLE_KEY] = true;
-    enableAnalytics();
   }, []);
 
   function accept() {
     localStorage.setItem(CONSENT_KEY, "accepted");
     setConsent("accepted");
-    if (consent === "declined") window.location.reload();
-    else {
-      window[GA_DISABLE_KEY] = false;
-      enableAnalytics();
-    }
     setVisible(false);
   }
 
   function decline() {
     localStorage.setItem(CONSENT_KEY, "declined");
-    window[GA_DISABLE_KEY] = true;
-    document.cookie.split(";").forEach((cookie) => {
-      const name = cookie.split("=")[0]?.trim();
-      if (name?.startsWith("_ga")) {
-        document.cookie = `${name}=; Max-Age=0; path=/`;
-      }
-    });
-    const wasAccepted = consent === "accepted";
     setConsent("declined");
     setVisible(false);
-    if (wasAccepted) window.location.reload();
   }
+
+  // Avoid hydration mismatch - don't render until mounted
+  if (!mounted) return null;
 
   if (!visible) {
     if (!consent) return null;
@@ -88,7 +52,7 @@ export function CookieConsent() {
     <div className="fixed bottom-0 left-0 right-0 z-[100] border-t border-slate-200 bg-white p-4 shadow-lg dark:border-slate-700 dark:bg-slate-900">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-4 sm:flex-row">
         <p className="flex-1 text-sm text-slate-600 dark:text-slate-300">
-          With your permission, this site uses Google Analytics to understand traffic. Advertising cookies may also be used after AdSense is enabled. Read the{" "}
+          This site uses Google Analytics (anonymized) to understand traffic. Advertising cookies may also be used after AdSense is enabled. Read the{" "}
           <Link href="/blog/privacy" className="font-medium text-blue-600 hover:underline dark:text-blue-400">Privacy Policy</Link>.
         </p>
         <div className="flex shrink-0 gap-2">

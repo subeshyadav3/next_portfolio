@@ -9,10 +9,17 @@ import programsData from "@/data/ioe/programs.json";
 import otherProgramsData from "@/data/ioe/other-programs.json";
 
 export const metadata = buildIoeMetadata({
-  title: "Other IOE Engineering Disciplines | Past Question Papers (PDF) & Syllabus",
+  title: "Other IOE Engineering Disciplines | Past Question Papers & Syllabus PDF",
   description:
-    "Past question papers and PDF downloads for Electrical, Mechanical, Automobile, Geomatics, Industrial, Agriculture, Architecture, Aerospace, and Chemical engineering disciplines (TU IOE).",
+    "Past question papers (PYQ PDF) and curriculum syllabus for Electrical, Mechanical, Automobile, Geomatics, Industrial, Agriculture, Architecture, Aerospace, and Chemical engineering disciplines (TU IOE).",
   path: "/ioe/other-programs",
+  keywords: [
+    "IOE chemical past papers",
+    "IOE mechanical PYQ",
+    "IOE aerospace syllabus",
+    "IOE electrical exam questions",
+    "IOE agriculture engineering PDF",
+  ],
 });
 
 export default function IoeOtherProgramsPage() {

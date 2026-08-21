@@ -30,9 +30,16 @@ export async function generateMetadata({ params }: PageProps) {
   const subject = getCatalogs().find((s) => getSubjectSlugFromName(s.name) === slug);
   if (!subject) return {};
   return buildIoeMetadata({
-    title: `${subject.name} — IOE Past Questions & Syllabus | Subject Archive`,
-    description: `Download ${subject.name} IOE past question papers (PDF). Includes syllabus breakdown and past examination paper viewer for TU IOE engineering students.`,
+    title: `${subject.name} IOE PYQ Past Year Questions & Official Syllabus`,
+    description: `Download ${subject.name} IOE past year question papers (PYQ PDF) and official syllabus units for TU engineering students.`,
     path: `/ioe/subjects/${slug}`,
+    keywords: [
+      `${subject.name} IOE PYQ`,
+      `${subject.name} past year question`,
+      `${subject.name} past paper PDF`,
+      `${subject.name} syllabus IOE`,
+      `IOE TU ${subject.name} exam questions`,
+    ],
   });
 }
 

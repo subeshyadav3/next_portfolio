@@ -15,6 +15,7 @@ export interface IoePageSeo {
   title: string;
   description: string;
   path: string;
+  keywords?: string[];
 }
 
 export function buildIoeMetadata(seo: IoePageSeo): Metadata {
@@ -22,6 +23,13 @@ export function buildIoeMetadata(seo: IoePageSeo): Metadata {
     metadataBase: new URL(SITE_URL),
     title: seo.title,
     description: seo.description,
+    keywords: seo.keywords ?? [
+      "IOE past question papers",
+      "IOE PYQ",
+      "IOE syllabus",
+      "Tribhuvan University engineering",
+      "IOE exam PDF download",
+    ],
     alternates: { canonical: ioeAbsolute(seo.path) },
     openGraph: {
       title: seo.title,

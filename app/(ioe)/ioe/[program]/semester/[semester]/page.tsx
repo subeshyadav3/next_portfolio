@@ -31,9 +31,16 @@ export async function generateMetadata({ params }: PageProps) {
   const program = getProgram(slug);
   if (!program || !(semester in program.semesters)) return {};
   return buildIoeMetadata({
-    title: `${program.fullName} Semester ${semester} Subjects — IOE PYQs & Syllabus | ${program.code}`,
-    description: `All ${program.fullName} Semester ${semester} subjects with course codes, curriculum syllabus, and past question papers (PDF).`,
+    title: `${program.name} Semester ${semester} Past Question Papers & Syllabus — IOE PYQs`,
+    description: `Download IOE past question papers (PDF), curriculum syllabus, and exam pattern for ${program.fullName} (${program.code}) Semester ${semester}.`,
     path: `/ioe/${program.slug}/semester/${semester}`,
+    keywords: [
+      `IOE ${program.code} semester ${semester} past papers`,
+      `${program.name} semester ${semester} PYQ`,
+      `IOE ${program.code} sem ${semester} syllabus`,
+      `${program.code} semester ${semester} PDF download`,
+      `Tribhuvan University ${program.code} semester ${semester}`,
+    ],
   });
 }
 

@@ -45,9 +45,19 @@ export async function generateMetadata({ params }: PageProps) {
   const catalog = findCatalogSubject(subjectRow?.title ?? "");
   if (!subjectRow || !catalog) return {};
   return buildIoeMetadata({
-    title: `${subjectRow.title} (${subjectRow.code}) — IOE Past Questions & Syllabus | ${program.code} Sem ${semester}`,
-    description: `Download ${subjectRow.title} (${subjectRow.code}) IOE past question papers (PDF) for ${program.fullName} Semester ${semester}. Includes curriculum syllabus, examination blueprint, and exam guidelines.`,
+    title: `${subjectRow.title} IOE PYQ Past Year Questions & Syllabus PDF`,
+    description: `Download ${subjectRow.title} (${subjectRow.code}) IOE past year question papers (PYQ PDF) for ${program.fullName} Semester ${semester}. Sourced from official IOE TU exam archives with complete syllabus breakdown.`,
     path: `/ioe/${programSlug}/semester/${semester}/${subjectSlug}`,
+    keywords: [
+      `${subjectRow.title} IOE PYQ`,
+      `${subjectRow.title} past year question`,
+      `${subjectRow.title} past paper PDF`,
+      `${subjectRow.title} syllabus IOE`,
+      `${subjectRow.code} past papers`,
+      `IOE ${program.code} semester ${semester} ${subjectRow.title}`,
+      `IOE exam questions ${subjectRow.title}`,
+      `Tribhuvan University ${subjectRow.title} PDF`,
+    ],
   });
 }
 

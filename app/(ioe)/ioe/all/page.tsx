@@ -13,10 +13,17 @@ import { SubjectFilter } from "@/components/ioe/SubjectFilter";
 import { ChevronRight, ArrowRight, FileText, Sparkles } from "lucide-react";
 
 export const metadata = buildIoeMetadata({
-  title: "All IOE Engineering Subjects A–Z | Past Question Papers & Syllabus Archive",
+  title: "All IOE Engineering Subjects A–Z | Past Question Papers & Syllabus PDF",
   description:
-    "Complete archive of IOE past examination question papers and curriculum syllabus for all engineering disciplines across all semesters.",
+    "Complete directory of IOE past examination question papers (PYQs) and curriculum syllabus for all engineering disciplines across all semesters.",
   path: "/ioe/all",
+  keywords: [
+    "all IOE subjects past papers",
+    "IOE question bank A-Z",
+    "IOE syllabus download",
+    "IOE PYQ collection",
+    "Tribhuvan University engineering subjects list",
+  ],
 });
 
 export default function IoeAllSubjectsPage() {

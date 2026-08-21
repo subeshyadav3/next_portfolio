@@ -9,6 +9,7 @@ import {
   generateLocalBusinessSchema,
 } from "@/lib/blog/schema";
 import { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { CookieConsent } from "@/components/blog/CookieConsent";
 
 const inter = Inter({
@@ -131,6 +132,7 @@ export default function RootLayout({
         />
         <ThemeProvider>{children}</ThemeProvider>
         <CookieConsent />
+        <GoogleAnalytics gaId="G-6HZ0GV26W3" />
       </body>
     </html>
   );
