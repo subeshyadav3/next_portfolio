@@ -39,7 +39,7 @@ export function PdfOverlayTrigger({ src, label }: PdfOverlayTriggerProps) {
         </a>
       </span>
       {open && (
-        <PdfOverlay src={src} title={label ?? "PDF document"} downloadUrl={src} onClose={() => setOpen(false)} />
+        <PdfOverlay src={src} title={label ?? "PDF document"} onClose={() => setOpen(false)} />
       )}
     </>
   );

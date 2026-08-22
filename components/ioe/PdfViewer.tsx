@@ -130,7 +130,6 @@ export function PdfViewer({ papers }: PdfViewerProps) {
         <PdfOverlay
           src={paper.previewUrl}
           title={paper.file}
-          downloadUrl={paper.downloadUrl}
           onClose={() => setOverlayOpen(false)}
         />
       )}

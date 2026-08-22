@@ -9,10 +9,10 @@ import {
   Search,
   HelpCircle,
   Award,
-  X,
 } from "lucide-react";
 import type { IoeCurriculumSubject, IoePaper, IoePaperFile, IoeProgram } from "@/lib/ioe/types";
 import { findCatalogSubject, getAssessmentScheme, getPapersForSubject, getSubjectSlugFromName } from "@/lib/ioe/data";
+import { PdfOverlay } from "@/components/pdf/PdfOverlay";
 
 interface ProgramHubViewProps {
   program: IoeProgram;
@@ -152,7 +152,7 @@ export function ProgramHubView({
                   const hasPapers = matchedPapers.length > 0;
                   const primaryPaper = matchedPapers[0];
                   const slug = getSubjectSlugFromName(subject.title);
-                  const subjectUrl = `/ioe/${program.slug}/semester/${sem}/${slug}`;
+                   const subjectUrl = `/ioe/${program.slug}/semester/${sem}/${slug}`;
 
                   return (
                     <div
@@ -207,15 +207,16 @@ export function ProgramHubView({
                               <Eye className="h-3.5 w-3.5 text-blue-500" />
                               Preview PDF {matchedPapers.length > 1 ? `(${matchedPapers.length})` : ""}
                             </button>
-                            <a
-                              href={`https://drive.google.com/uc?export=download&id=${primaryPaper.id}`}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center gap-1.5 rounded-xl bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white shadow-xs transition hover:bg-blue-700"
-                            >
-                              <Download className="h-3.5 w-3.5" />
-                              Download
-                            </a>
+                             <a
+                               href={`https://drive.google.com/uc?export=download&id=${primaryPaper.id}`}
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               title="Download PDF"
+                               aria-label={`Download ${subject.title} PDF`}
+                               className="inline-flex h-8 w-8 items-center justify-center rounded-xl bg-blue-600 text-white shadow-xs transition hover:bg-blue-700"
+                             >
+                               <Download className="h-3.5 w-3.5" />
+                             </a>
                             <Link
                               href={subjectUrl}
                               className="inline-flex items-center gap-1 text-xs font-semibold text-blue-600 hover:underline dark:text-blue-400"
@@ -309,86 +310,13 @@ export function ProgramHubView({
         </div>
       </section>
 
-      {/* ── Interactive PDF Preview Modal ── */}
+      {/* ── In-site PDF full view ── */}
       {previewModalData && currentPreviewPaper && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-4 backdrop-blur-xs">
-          <div className="flex h-[90vh] w-full max-w-5xl flex-col overflow-hidden rounded-3xl bg-white shadow-2xl dark:bg-gray-900">
-            {/* Modal Header */}
-            <div className="flex items-center justify-between border-b border-slate-200 bg-slate-50 px-6 py-4 dark:border-gray-800 dark:bg-gray-800">
-              <div>
-                <h3 className="font-bold text-slate-900 dark:text-white">
-                  {previewModalData.subject} — Past Question Paper
-                </h3>
-                <p className="text-xs text-slate-500 dark:text-slate-400">
-                  {currentPreviewPaper.file}
-                </p>
-              </div>
-              <div className="flex items-center gap-3">
-                <a
-                  href={currentPreviewPaper.downloadUrl || `https://drive.google.com/uc?export=download&id=${currentPreviewPaper.id}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 rounded-xl bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white transition hover:bg-blue-700"
-                >
-                  <Download className="h-3.5 w-3.5" />
-                  Download
-                </a>
-                <button
-                  onClick={() => setPreviewModalData(null)}
-                  className="rounded-xl p-1.5 text-slate-400 transition hover:bg-slate-200 hover:text-slate-700 dark:hover:bg-gray-700 dark:hover:text-white"
-                >
-                  <X className="h-5 w-5" />
-                </button>
-              </div>
-            </div>
-
-            {/* Paper Selection Tabs (if multiple PDFs exist) */}
-            {previewModalData.papers.length > 1 && (
-              <div className="flex flex-wrap items-center gap-2 border-b border-slate-200 bg-slate-100/70 px-6 py-2.5 dark:border-gray-800 dark:bg-gray-950">
-                <span className="mr-1 text-xs font-semibold uppercase tracking-wider text-slate-500 dark:text-slate-400">
-                  Available Papers ({previewModalData.papers.length}):
-                </span>
-                {previewModalData.papers.map((p, idx) => {
-                  const isActive = previewModalData.activePaperIndex === idx;
-                  const label = p.sem
-                    ? p.sem.replace(/-/g, " ").toUpperCase()
-                    : `Paper ${idx + 1}`;
-
-                  return (
-                    <button
-                      key={p.id || idx}
-                      onClick={() =>
-                        setPreviewModalData({
-                          ...previewModalData,
-                          activePaperIndex: idx,
-                        })
-                      }
-                      className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-1 text-xs font-semibold transition ${
-                        isActive
-                          ? "bg-blue-600 text-white shadow-xs"
-                          : "border border-slate-200 bg-white text-slate-700 hover:bg-slate-50 dark:border-gray-800 dark:bg-gray-900 dark:text-slate-300 dark:hover:bg-gray-800"
-                      }`}
-                    >
-                      <FileText className="h-3 w-3" />
-                      {label}
-                    </button>
-                  );
-                })}
-              </div>
-            )}
-
-            {/* Iframe Viewer */}
-            <div className="flex-1 bg-slate-100 dark:bg-gray-950">
-              <iframe
-                key={currentPreviewPaper.id}
-                src={currentPreviewPaper.previewUrl || `https://drive.google.com/file/d/${currentPreviewPaper.id}/preview`}
-                className="h-full w-full border-none"
-                title={`${previewModalData.subject} Past Paper Preview`}
-                allow="autoplay"
-              />
-            </div>
-          </div>
-        </div>
+        <PdfOverlay
+          src={currentPreviewPaper.previewUrl}
+          title={`${previewModalData.subject} — ${currentPreviewPaper.file}`}
+          onClose={() => setPreviewModalData(null)}
+        />
       )}
     </div>
   );

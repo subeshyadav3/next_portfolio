@@ -1,12 +1,11 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { Download, Minimize2, Maximize2, X } from "lucide-react";
+import { Minimize2, Maximize2, X } from "lucide-react";
 
 interface PdfOverlayProps {
   src: string;
   title: string;
-  downloadUrl?: string;
   onClose: () => void;
 }
 
@@ -15,7 +14,7 @@ interface PdfOverlayProps {
  * distraction-free reading mode. Supports native fullscreen (with graceful
  * fallback to a fixed viewport overlay), Esc to exit, and body scroll lock.
  */
-export function PdfOverlay({ src, title, downloadUrl, onClose }: PdfOverlayProps) {
+export function PdfOverlay({ src, title, onClose }: PdfOverlayProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const [isNativeFs, setIsNativeFs] = useState(false);
 
@@ -64,17 +63,6 @@ export function PdfOverlay({ src, title, downloadUrl, onClose }: PdfOverlayProps
           <p className="text-[11px] text-slate-400">Reading in full view — press Esc or ✕ to exit</p>
         </div>
         <div className="flex shrink-0 items-center gap-2">
-          {downloadUrl && (
-            <a
-              href={downloadUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              title="Download PDF"
-              className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-white/15 text-slate-200 transition hover:bg-white/10 hover:text-white"
-            >
-              <Download className="h-4 w-4" />
-            </a>
-          )}
           <button
             type="button"
             onClick={toggleNativeFs}

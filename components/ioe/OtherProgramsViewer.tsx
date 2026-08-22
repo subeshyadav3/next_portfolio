@@ -2,7 +2,7 @@
 
 import { useState, useMemo } from "react";
 import type { IoeCatalogSubject } from "@/lib/ioe/types";
-import { Search, FileText, Download, ExternalLink, ChevronDown, ChevronUp, X } from "lucide-react";
+import { Search, FileText, Download, ChevronDown, ChevronUp, X } from "lucide-react";
 
 interface OtherProgramsViewerProps {
   subjects: IoeCatalogSubject[];
@@ -165,19 +165,11 @@ export function OtherProgramsViewer({ subjects }: OtherProgramsViewerProps) {
                             href={`https://drive.google.com/uc?export=download&id=${currentPaper.id}`}
                             target="_blank"
                             rel="noopener noreferrer"
+                            title="Download PDF"
+                            aria-label={`Download ${currentPaper.file}`}
                             className="inline-flex items-center gap-1.5 rounded-lg bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white shadow-xs hover:bg-blue-700 transition dark:bg-blue-500 dark:hover:bg-blue-600"
                           >
                             <Download className="h-3.5 w-3.5" />
-                            Download PDF
-                          </a>
-                          <a
-                            href={`https://drive.google.com/file/d/${currentPaper.id}/view`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-50 transition dark:border-gray-800 dark:bg-gray-900 dark:text-slate-300 dark:hover:bg-gray-800"
-                          >
-                            <ExternalLink className="h-3.5 w-3.5" />
-                            Drive Link
                           </a>
                         </div>
                       </div>
