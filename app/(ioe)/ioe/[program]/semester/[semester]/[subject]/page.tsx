@@ -1,11 +1,13 @@
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
 import { IOE_ENABLED } from "@/lib/ioe/config";
 import {
   findCatalogSubject,
   getAllPrograms,
   getPapersForSubject,
   getSyllabusForSubject,
+  getAssessmentScheme,
+  getSubjectPrimaryPath,
   getSubjectSlugFromName,
 } from "@/lib/ioe/data";
 import { PdfViewer } from "@/components/ioe/PdfViewer";
@@ -47,7 +49,7 @@ export async function generateMetadata({ params }: PageProps) {
   return buildIoeMetadata({
     title: `${subjectRow.title} IOE PYQ Past Year Questions & Syllabus PDF`,
     description: `Download ${subjectRow.title} (${subjectRow.code}) IOE past year question papers (PYQ PDF) for ${program.fullName} Semester ${semester}. Sourced from official IOE TU exam archives with complete syllabus breakdown.`,
-    path: `/ioe/${programSlug}/semester/${semester}/${subjectSlug}`,
+    path: getSubjectPrimaryPath(subjectRow.title),
     keywords: [
       `${subjectRow.title} IOE PYQ`,
       `${subjectRow.title} past year question`,
@@ -75,7 +77,13 @@ export default async function IoeSubjectPage({ params }: PageProps) {
   const papers = getPapersForSubject(catalog, semester);
   if (papers.length === 0) notFound();
 
+  const primaryPath = getSubjectPrimaryPath(subjectRow.title);
+  if (primaryPath !== `/ioe/${programSlug}/semester/${semester}/${subjectSlug}`) {
+    redirect(primaryPath);
+  }
+
   const syllabus = getSyllabusForSubject(subjectRow.title);
+  const assessment = getAssessmentScheme(subjectRow.title);
   const semShort = `Sem ${semester}`;
   const path = `/ioe/${programSlug}/semester/${semester}/${subjectSlug}`;
 
@@ -104,7 +112,7 @@ export default async function IoeSubjectPage({ params }: PageProps) {
         "name": `What is the examination scheme for ${subjectRow.title} (${subjectRow.code})?`,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `For standard IOE final board exams, the theory exam is 80 marks (pass mark: 32) with a 20-mark internal theory assessment (pass mark: 8). Lab and practical components carry continuous assessment marks as detailed in the syllabus.`
+          "text": `The general current IOE scheme uses a 60-mark final theory exam and 40-mark internal assessment, with pass marks of 24 and 16. Course-specific practical and project evaluation may differ, so students should verify the available syllabus.`
         }
       }
     ]
@@ -218,19 +226,19 @@ export default async function IoeSubjectPage({ params }: PageProps) {
               </ul>
             ) : isDrawing ? (
               <ul className="list-inside list-disc space-y-1.5 text-xs text-slate-600 dark:text-slate-400">
-                <li><strong>Final Board Drawing Exam:</strong> 40 or 80 Marks (Pass mark: 40%, Time: 3–4 Hours)</li>
-                <li><strong>Internal Sheet Assessment:</strong> 20 or 60 Marks (Continuous drafting sheets + class assignments)</li>
+                <li><strong>Final Board Drawing Exam:</strong> {assessment.theory} Marks (Pass mark: {assessment.passTheory})</li>
+                <li><strong>Internal Sheet Assessment:</strong> {assessment.internal} Marks (Continuous drafting sheets + class assignments)</li>
                 <li><strong>Viva / Practical:</strong> Practical drawing exam and viva assessment.</li>
               </ul>
             ) : (
               <ul className="list-inside list-disc space-y-1.5 text-xs text-slate-600 dark:text-slate-400">
-                <li><strong>Final Board Theory Exam:</strong> 80 Marks (Pass mark: 32, Time: 3 Hours)</li>
-                <li><strong>Internal Assessment (Theory):</strong> 20 Marks (Pass mark: 8)</li>
+                <li><strong>Final Board Theory Exam:</strong> {assessment.theory} Marks (Pass mark: {assessment.passTheory})</li>
+                <li><strong>Internal Assessment:</strong> {assessment.internal} Marks (Pass mark: {assessment.passInternal})</li>
                 <li><strong>Practical / Lab Exam:</strong> 25 or 50 Marks (Continuous lab evaluation + viva, where applicable)</li>
               </ul>
             )}
             <p className="text-[11px] text-slate-400 dark:text-slate-500">
-              * Marking schemes follow standard IOE evaluation norms. Verify course-specific blueprints from the official syllabus above.
+              * {assessment.source === "syllabus" ? "Marks were extracted from the available curriculum syllabus." : "This is the general current IOE 60/40 scheme; verify course-specific details in the syllabus above."}
             </p>
           </div>
 
@@ -282,7 +290,7 @@ export default async function IoeSubjectPage({ params }: PageProps) {
                 Q: What is the pass mark for {subjectRow.title}?
               </p>
               <p className="mt-1 text-slate-500 dark:text-slate-400">
-                For standard IOE 80-mark final board theory exams, the pass mark is 32. For the 20-mark internal theory assessment, the pass mark is 8.
+                The general current scheme is a {assessment.theory}-mark final theory exam and a {assessment.internal}-mark internal assessment, with pass marks of {assessment.passTheory} and {assessment.passInternal}. Verify the course-specific syllabus above.
               </p>
             </div>
             <div>

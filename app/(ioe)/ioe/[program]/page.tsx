@@ -95,7 +95,7 @@ export default async function IoeProgramPage({ params }: PageProps) {
         "name": `What is the passing mark for IOE ${program.code} examinations?`,
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": `For IOE 80-mark final board exams, the passing mark is 32. For 20-mark internal theory assessments, the passing mark is 8.`
+          "text": "The general current IOE scheme uses a 60-mark final theory exam and 40-mark internal assessment, with pass marks of 24 and 16. Course-specific practical and project evaluation may differ."
         }
       }
     ]

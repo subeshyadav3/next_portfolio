@@ -102,6 +102,14 @@ export interface IoeSyllabus {
   units?: IoeSyllabusUnit[];
 }
 
+export interface IoeAssessmentScheme {
+  theory: number;
+  internal: number;
+  passTheory: number;
+  passInternal: number;
+  source: "syllabus" | "general";
+}
+
 export interface IoeQuestionIndexEntry {
   questions: number;
   words: number;

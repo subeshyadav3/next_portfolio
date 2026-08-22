@@ -12,6 +12,7 @@ import type {
   IoePaper,
   IoePaperFile,
   IoeProgram,
+  IoeAssessmentScheme,
   IoeProgramsFile,
   IoeSubjectQuestions,
   IoeSyllabus,
@@ -87,12 +88,14 @@ export function subjectHasPapers(catalogSubject: IoeCatalogSubject | undefined):
   return !!catalogSubject && catalogSubject.papers.length > 0;
 }
 
-function drivePreviewUrl(id: string): string {
-  return `https://drive.google.com/file/d/${id}/preview`;
+const CLOUDINARY_PDF_BASE = "https://res.cloudinary.com/dbfo8ibyu/raw/upload";
+
+function cloudinaryPaperUrl(sem: string, file: string): string {
+  return `${CLOUDINARY_PDF_BASE}/ioe-papers/${sem}/${encodeURIComponent(file)}`;
 }
 
-function driveDownloadUrl(id: string): string {
-  return `https://drive.google.com/uc?export=download&id=${id}`;
+function cloudinaryDownloadUrl(sem: string, file: string): string {
+  return `${CLOUDINARY_PDF_BASE}/fl_attachment/ioe-papers/${sem}/${encodeURIComponent(file)}`;
 }
 
 function driveViewUrl(id: string): string {
@@ -108,8 +111,8 @@ export function toPaper(
     file: file.file,
     sem: file.sem,
     subject,
-    previewUrl: drivePreviewUrl(file.id),
-    downloadUrl: driveDownloadUrl(file.id),
+    previewUrl: cloudinaryPaperUrl(file.sem, file.file),
+    downloadUrl: cloudinaryDownloadUrl(file.sem, file.file),
     driveViewUrl: driveViewUrl(file.id),
     archiveSourceUrl: catalog.source,
   };
@@ -203,6 +206,38 @@ export function getSyllabusForSubject(subjectName: string): IoeSyllabus | null {
   }
 
   return null;
+}
+
+function syllabusText(syllabus: IoeSyllabus): string {
+  return (syllabus.units ?? [])
+    .flatMap((unit) => [unit.title, ...(unit.topics ?? []).map((topic) => topic.title)])
+    .join(" ");
+}
+
+export function getAssessmentScheme(subjectName: string): IoeAssessmentScheme {
+  const syllabus = getSyllabusForSubject(subjectName);
+  const text = syllabus ? syllabusText(syllabus) : "";
+  const explicit = text.match(/(?:theory|written|external)[^\d]{0,80}(\d{2})\s*marks[^\d]{0,80}(?:internal|assessment)[^\d]{0,80}(\d{2})\s*marks/i);
+
+  if (explicit) {
+    const theory = Number(explicit[1]);
+    const internal = Number(explicit[2]);
+    return {
+      theory,
+      internal,
+      passTheory: Math.round(theory * 0.4),
+      passInternal: Math.round(internal * 0.4),
+      source: "syllabus",
+    };
+  }
+
+  return {
+    theory: 60,
+    internal: 40,
+    passTheory: 24,
+    passInternal: 16,
+    source: "general",
+  };
 }
 
 export interface SubjectProgramInfo {

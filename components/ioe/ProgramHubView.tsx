@@ -12,7 +12,7 @@ import {
   X,
 } from "lucide-react";
 import type { IoeCurriculumSubject, IoePaper, IoePaperFile, IoeProgram } from "@/lib/ioe/types";
-import { findCatalogSubject, getPapersForSubject, getSubjectSlugFromName } from "@/lib/ioe/data";
+import { findCatalogSubject, getAssessmentScheme, getPapersForSubject, getSubjectSlugFromName } from "@/lib/ioe/data";
 
 interface ProgramHubViewProps {
   program: IoeProgram;
@@ -39,6 +39,7 @@ export function ProgramHubView({
   const currentPreviewPaper = previewModalData
     ? previewModalData.papers[previewModalData.activePaperIndex] || previewModalData.papers[0]
     : null;
+  const assessment = getAssessmentScheme(program.name);
 
   // Flattened search filter
   const filteredRows = useMemo(() => {
@@ -253,10 +254,10 @@ export function ProgramHubView({
             </p>
             <ul className="list-inside list-disc space-y-1.5 text-xs text-slate-600 dark:text-slate-400">
               <li>
-                <strong>Final Board Theory Exam:</strong> 80 Marks (Pass mark: 32, Time: 3 Hours)
+                  <strong>Final Board Theory Exam:</strong> {assessment.theory} Marks (Pass mark: {assessment.passTheory})
               </li>
               <li>
-                <strong>Internal Assessment (Theory):</strong> 20 Marks (Pass mark: 8)
+                  <strong>Internal Assessment:</strong> {assessment.internal} Marks (Pass mark: {assessment.passInternal})
               </li>
               <li>
                 <strong>Practical / Lab Evaluation:</strong> 25 or 50 Marks (Continuous assessment + practical exam, where applicable)
@@ -301,7 +302,7 @@ export function ProgramHubView({
                 Q: What syllabus does this program follow?
               </p>
               <p className="mt-1 text-slate-500 dark:text-slate-400">
-                The course structure and subject list reflect the official undergraduate engineering curriculum of the Institute of Engineering (IOE), Tribhuvan University.
+                The course structure and subject list reflect the available undergraduate engineering curriculum data. Verify current examination details with the official IOE/TU syllabus.
               </p>
             </div>
           </div>
