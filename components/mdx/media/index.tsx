@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { ReactNode } from "react";
+import { PdfOverlayTrigger } from "@/components/pdf/PdfOverlayTrigger";
 
 /* -------------------------------------------------------------------------- */
 /*  YouTube                                                                   */
@@ -42,27 +43,22 @@ interface PdfEmbedProps { src: string; title?: string; height?: number; }
 
 export function PdfEmbed({ src, title, height = 800 }: PdfEmbedProps) {
   const viewerSrc = `/pdf-viewer?url=${encodeURIComponent(src)}`;
+  const label = title ?? "PDF document";
 
   return (
     <figure className="my-6 not-prose">
       <div className="overflow-hidden rounded-lg border border-[var(--blog-border)] bg-[var(--blog-surface)] shadow-sm">
         <iframe
           src={viewerSrc}
-          title={title ?? "PDF document"}
+          title={label}
           style={{ width: "100%", height: `${height}px`, border: 0 }}
           loading="lazy"
+          allow="fullscreen"
         />
       </div>
-      <div className="mt-2 flex items-center justify-between text-sm">
-        <span className="text-[var(--blog-text-muted)]">{title ?? "PDF document"}</span>
-        <a
-          href={src}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-medium text-[var(--blog-accent)] hover:underline"
-        >
-          Download ↓
-        </a>
+      <div className="mt-2 flex items-center justify-between gap-3 text-sm">
+        <span className="text-[var(--blog-text-muted)]">{label}</span>
+        <PdfOverlayTrigger src={src} viewerSrc={viewerSrc} label={label} />
       </div>
     </figure>
   );

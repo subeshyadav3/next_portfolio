@@ -1,4 +1,10 @@
 import { Suspense } from "react";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "PDF Viewer",
+  robots: { index: false, follow: false },
+};
 
 interface Props {
   searchParams: Promise<{ url?: string }>;

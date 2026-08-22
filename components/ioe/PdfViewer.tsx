@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import type { IoePaper } from "@/lib/ioe/types";
-import { Download, ExternalLink, FileText, Info } from "lucide-react";
+import { Download, ExternalLink, FileText, Info, Maximize2 } from "lucide-react";
+import { PdfOverlay } from "@/components/pdf/PdfOverlay";
 
 interface PdfViewerProps {
   papers: IoePaper[];
@@ -14,6 +15,7 @@ interface PdfViewerProps {
  */
 export function PdfViewer({ papers }: PdfViewerProps) {
   const [active, setActive] = useState(0);
+  const [overlayOpen, setOverlayOpen] = useState(false);
   const paper = papers[Math.min(active, papers.length - 1)];
 
   if (!paper) return null;
@@ -83,6 +85,15 @@ export function PdfViewer({ papers }: PdfViewerProps) {
         </div>
 
         <div className="flex items-center gap-2.5">
+          <button
+            type="button"
+            onClick={() => setOverlayOpen(true)}
+            title="Read in full view (stays on site)"
+            className="inline-flex items-center gap-1.5 rounded-xl border border-blue-200 bg-blue-50 px-3 py-2 text-xs font-semibold text-blue-700 shadow-xs transition hover:bg-blue-100 dark:border-blue-900/60 dark:bg-blue-950/50 dark:text-blue-300 dark:hover:bg-blue-900/50"
+          >
+            <Maximize2 className="h-3.5 w-3.5" />
+            <span className="hidden sm:inline">Full View</span>
+          </button>
           <a
             href={paper.driveViewUrl}
             target="_blank"
@@ -112,9 +123,27 @@ export function PdfViewer({ papers }: PdfViewerProps) {
           title={paper.file}
           className="h-[52vh] min-h-[360px] sm:h-[68vh] sm:min-h-[480px] w-full border-0"
           loading="lazy"
-          allow="autoplay"
+          allow="fullscreen"
         />
+        <button
+          type="button"
+          onClick={() => setOverlayOpen(true)}
+          title="Read in full view (stays on site)"
+          aria-label="Read in full view"
+          className="absolute right-3 top-3 inline-flex h-9 w-9 items-center justify-center rounded-lg bg-slate-900/70 text-white shadow-md backdrop-blur transition hover:bg-slate-900"
+        >
+          <Maximize2 className="h-4 w-4" />
+        </button>
       </div>
+
+      {overlayOpen && (
+        <PdfOverlay
+          src={paper.previewUrl}
+          title={paper.file}
+          downloadUrl={paper.downloadUrl}
+          onClose={() => setOverlayOpen(false)}
+        />
+      )}
 
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 border-t border-slate-200 bg-slate-50 px-4 py-3 text-xs text-slate-500 dark:border-gray-800 dark:bg-gray-950 dark:text-slate-400">
         <div className="flex items-center gap-1.5">
