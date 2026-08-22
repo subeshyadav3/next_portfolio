@@ -41,7 +41,9 @@ export async function getAllPosts(opts?: { limit?: number; offset?: number }) {
 }
 
 export async function getPostBySlug(slug: string) {
-  return defaultSource.get(slug);
+  const post = await defaultSource.get(slug);
+  if (!SHOW_ALL && post?.language !== "en") return null;
+  return post;
 }
 
 export async function getPostsByCategory(slug: string, opts?: { limit?: number; offset?: number }) {
@@ -196,7 +198,8 @@ export async function getPostsByAuthor(
     skip: opts?.offset,
   });
 
-  return posts.map((p) => ({
+  const visiblePosts = SHOW_ALL ? posts : posts.filter((p) => p.language === "en");
+  return visiblePosts.map((p) => ({
     slug: p.slug,
     title: p.title,
     description: p.excerpt ?? "",

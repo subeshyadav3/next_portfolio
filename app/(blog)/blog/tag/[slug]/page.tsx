@@ -20,12 +20,14 @@ export async function generateStaticParams() {
   return (await getTags()).map((tag) => ({ slug: tag.slug }));
 }
 
-export async function generateMetadata({ params }: PageProps) {
+export async function generateMetadata({ params, searchParams }: PageProps) {
   const { slug } = await params;
   const tags = await getTags();
   const tag = tags.find((t) => t.slug === slug);
   if (!tag) return {};
-  return generateTagMetadata(tag);
+  const metadata = generateTagMetadata(tag);
+  const page = Number((await searchParams)?.page ?? "1");
+  return page > 1 ? { ...metadata, robots: { index: false, follow: true } } : metadata;
 }
 
 export default async function TagPage({ params, searchParams }: PageProps) {

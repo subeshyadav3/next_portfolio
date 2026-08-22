@@ -22,7 +22,8 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }: PageProps) {
   const { year } = await params;
-  return generateArchiveMetadata(year);
+  const metadata = generateArchiveMetadata(year);
+  return { ...metadata, robots: { index: false, follow: true } };
 }
 
 export default async function ArchivePage({ params, searchParams }: PageProps) {

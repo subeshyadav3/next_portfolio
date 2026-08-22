@@ -21,12 +21,14 @@ export async function generateStaticParams() {
   return (await getCategories()).map((category) => ({ slug: category.slug }));
 }
 
-export async function generateMetadata({ params }: PageProps) {
+export async function generateMetadata({ params, searchParams }: PageProps) {
   const { slug } = await params;
   const categories = await getCategories();
   const category = categories.find((c) => c.slug === slug);
   if (!category) return {};
-  return generateCategoryMetadata(category);
+  const metadata = generateCategoryMetadata(category);
+  const page = Number((await searchParams)?.page ?? "1");
+  return page > 1 ? { ...metadata, robots: { index: false, follow: true } } : metadata;
 }
 
 const OLD_SLUG_REDIRECTS: Record<string, string> = {

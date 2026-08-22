@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Search | Neb Master",
   description:
     "Search essays, poems, SEE/BLB notes, and educational content in Nepali and English.",
+  robots: { index: false, follow: true },
 };
 
 export default async function SearchPage() {

@@ -3,21 +3,19 @@ import {
   getAllPosts,
   getCategories,
   getTags,
-  getArchiveYears,
 } from "@/lib/blog/posts";
 import { SITE_URL } from "@/lib/site-config";
 import { IOE_ENABLED } from "@/lib/ioe/config";
 import {
   getAllPrograms,
   findCatalogSubject,
-  getSubjectSlugFromName,
+  getSubjectPrimaryPath,
 } from "@/lib/ioe/data";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const posts = await getAllPosts();
   const categories = await getCategories();
   const tags = await getTags();
-  const archives = await getArchiveYears();
 
   const postUrls = posts.map((post) => ({
     url: `${SITE_URL}/blog/${post.slug}`,
@@ -41,12 +39,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "weekly" as const,
       priority: 0.5,
     }));
-
-  const archiveUrls = archives.map((archive) => ({
-    url: `${SITE_URL}/blog/archive/${archive.year}`,
-    changeFrequency: "monthly" as const,
-    priority: 0.4,
-  }));
 
   let ioeUrls: MetadataRoute.Sitemap = [];
   if (IOE_ENABLED) {
@@ -88,17 +80,18 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     );
 
     // 4. Individual subject pages with cataloged past-paper PDFs
-    const subjectUrls = programs.flatMap((program) =>
+    const subjectPaths = programs.flatMap((program) =>
       Object.entries(program.semesters).flatMap(([semester, subjects]) =>
         subjects
           .filter((subject) => Boolean(findCatalogSubject(subject.title)))
-          .map((subject) => ({
-            url: `${SITE_URL}/ioe/${program.slug}/semester/${semester}/${getSubjectSlugFromName(subject.title)}`,
-            changeFrequency: "monthly" as const,
-            priority: 0.8,
-          }))
+          .map((subject) => getSubjectPrimaryPath(subject.title))
       )
     );
+    const subjectUrls = [...new Set(subjectPaths)].map((path) => ({
+      url: `${SITE_URL}${path}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.8,
+    }));
 
     ioeUrls = [...coreUrls, ...programUrls, ...semesterUrls, ...subjectUrls];
   }
@@ -114,40 +107,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "daily",
       priority: 0.9,
     },
-    {
-      url: `${SITE_URL}/blog/author`,
-      changeFrequency: "monthly",
-      priority: 0.5,
-    },
-    {
-      url: `${SITE_URL}/blog/about`,
-      changeFrequency: "monthly",
-      priority: 0.5,
-    },
-    {
-      url: `${SITE_URL}/blog/contact`,
-      changeFrequency: "monthly",
-      priority: 0.5,
-    },
-    {
-      url: `${SITE_URL}/blog/privacy`,
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    {
-      url: `${SITE_URL}/blog/terms`,
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    {
-      url: `${SITE_URL}/blog/disclaimer`,
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
     ...postUrls,
     ...categoryUrls,
     ...tagUrls,
-    ...archiveUrls,
     ...ioeUrls,
   ];
 }
