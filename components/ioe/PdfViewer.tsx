@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { IoePaper } from "@/lib/ioe/types";
-import { Download, ExternalLink, FileText, Info, Maximize2 } from "lucide-react";
+import { Download, FileText, Info, Maximize2 } from "lucide-react";
 import { PdfOverlay } from "@/components/pdf/PdfOverlay";
 
 interface PdfViewerProps {
@@ -94,16 +94,6 @@ export function PdfViewer({ papers }: PdfViewerProps) {
             <Maximize2 className="h-3.5 w-3.5" />
             <span className="hidden sm:inline">Full View</span>
           </button>
-          <a
-            href={paper.driveViewUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Open in Drive / New Tab"
-            className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-700 shadow-xs transition hover:bg-slate-50 hover:text-slate-900 dark:border-gray-800 dark:bg-gray-800 dark:text-slate-300 dark:hover:bg-gray-700 dark:hover:text-white"
-          >
-            <ExternalLink className="h-3.5 w-3.5" />
-            <span className="hidden sm:inline">Drive View</span>
-          </a>
           <a
             href={paper.downloadUrl}
             target="_blank"
