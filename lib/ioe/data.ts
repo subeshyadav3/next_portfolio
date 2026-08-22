@@ -88,14 +88,12 @@ export function subjectHasPapers(catalogSubject: IoeCatalogSubject | undefined):
   return !!catalogSubject && catalogSubject.papers.length > 0;
 }
 
-const CLOUDINARY_PDF_BASE = "https://res.cloudinary.com/dbfo8ibyu/raw/upload";
-
-function cloudinaryPaperUrl(sem: string, file: string): string {
-  return `${CLOUDINARY_PDF_BASE}/ioe-papers/${sem}/${encodeURIComponent(file)}`;
+function drivePreviewUrl(id: string): string {
+  return `https://drive.google.com/file/d/${id}/preview`;
 }
 
-function cloudinaryDownloadUrl(sem: string, file: string): string {
-  return `${CLOUDINARY_PDF_BASE}/fl_attachment/ioe-papers/${sem}/${encodeURIComponent(file)}`;
+function driveDownloadUrl(id: string): string {
+  return `https://drive.google.com/uc?export=download&id=${id}`;
 }
 
 function driveViewUrl(id: string): string {
@@ -111,8 +109,8 @@ export function toPaper(
     file: file.file,
     sem: file.sem,
     subject,
-    previewUrl: cloudinaryPaperUrl(file.sem, file.file),
-    downloadUrl: cloudinaryDownloadUrl(file.sem, file.file),
+    previewUrl: drivePreviewUrl(file.id),
+    downloadUrl: driveDownloadUrl(file.id),
     driveViewUrl: driveViewUrl(file.id),
     archiveSourceUrl: catalog.source,
   };
