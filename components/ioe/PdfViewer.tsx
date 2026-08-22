@@ -130,6 +130,7 @@ export function PdfViewer({ papers }: PdfViewerProps) {
         <PdfOverlay
           src={paper.previewUrl}
           title={paper.file}
+          downloadUrl={paper.downloadUrl}
           onClose={() => setOverlayOpen(false)}
         />
       )}
@@ -137,16 +138,28 @@ export function PdfViewer({ papers }: PdfViewerProps) {
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 border-t border-slate-200 bg-slate-50 px-4 py-3 text-xs text-slate-500 dark:border-gray-800 dark:bg-gray-950 dark:text-slate-400">
         <div className="flex items-center gap-1.5">
           <Info className="h-3.5 w-3.5 shrink-0 text-slate-400" />
-          <span>If preview is slow to load or blocked by your browser, use direct download.</span>
+          <span>Served via fast CDN. Read in full view or download for offline study.</span>
         </div>
-        <a
-          href={paper.downloadUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="font-semibold text-blue-600 hover:underline dark:text-blue-400 shrink-0"
-        >
-          Direct Download ↗
-        </a>
+        <div className="flex items-center gap-3 shrink-0">
+          {paper.driveViewUrl && (
+            <a
+              href={paper.driveViewUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-500 hover:text-slate-800 hover:underline dark:text-slate-400 dark:hover:text-slate-200"
+            >
+              Drive Mirror ↗
+            </a>
+          )}
+          <a
+            href={paper.downloadUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-semibold text-blue-600 hover:underline dark:text-blue-400"
+          >
+            Direct Download ↓
+          </a>
+        </div>
       </div>
 
       <div className="border-t border-slate-200 bg-white px-4 py-3 text-[11px] leading-relaxed text-slate-500 dark:border-gray-800 dark:bg-gray-900 dark:text-slate-400">
