@@ -10,7 +10,7 @@ interface PdfViewerProps {
 }
 
 /**
- * Embedded Google Drive PDF viewer with paper/year tabs, action toolbar,
+  * Embedded PDF viewer with paper/year tabs, action toolbar,
  * cross-semester notes, and direct download fallback.
  */
 export function PdfViewer({ papers }: PdfViewerProps) {

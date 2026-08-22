@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: PageProps) {
   if (!subjectRow || !catalog) return {};
   return buildIoeMetadata({
     title: `${subjectRow.title} IOE PYQ Past Year Questions & Syllabus PDF`,
-    description: `Download ${subjectRow.title} (${subjectRow.code}) IOE past year question papers (PYQ PDF) for ${program.fullName} Semester ${semester}. Sourced from official IOE TU exam archives with complete syllabus breakdown.`,
+     description: `Browse ${subjectRow.title} (${subjectRow.code}) IOE past year question papers (PYQ PDF) for ${program.fullName} Semester ${semester}, with a curriculum syllabus breakdown and archive source details.`,
     path: getSubjectPrimaryPath(subjectRow.title),
     keywords: [
       `${subjectRow.title} IOE PYQ`,
@@ -298,7 +298,7 @@ export default async function IoeSubjectPage({ params }: PageProps) {
                 Q: Where can I find the complete syllabus for this subject?
               </p>
               <p className="mt-1 text-slate-500 dark:text-slate-400">
-                The complete chapter-wise syllabus and topic breakdown is indexed in the Syllabus section above, with links to the official curriculum PDF.
+                 The available chapter-wise syllabus and topic breakdown is indexed in the Syllabus section above, with links to the curriculum PDF source.
               </p>
             </div>
           </div>

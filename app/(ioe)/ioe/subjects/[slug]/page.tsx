@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: PageProps) {
   if (!subject) return {};
   return buildIoeMetadata({
     title: `${subject.name} IOE PYQ Past Year Questions & Official Syllabus`,
-    description: `Download ${subject.name} IOE past year question papers (PYQ PDF) and official syllabus units for TU engineering students.`,
+     description: `Browse ${subject.name} IOE past year question papers (PYQ PDF) and available curriculum syllabus units for TU engineering students.`,
     path: `/ioe/subjects/${slug}`,
     keywords: [
       `${subject.name} IOE PYQ`,

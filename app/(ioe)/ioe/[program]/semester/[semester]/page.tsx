@@ -5,7 +5,7 @@ import {
   getAllPrograms,
   getProgram,
   getSemesterSubjects,
-  getSubjectSlugFromName,
+  getSubjectPrimaryPath,
 } from "@/lib/ioe/data";
 import { SubjectCard } from "@/components/ioe/SubjectCard";
 import { buildIoeMetadata, breadcrumbLd, jsonLd, collectionLd } from "@/lib/ioe/seo";
@@ -66,7 +66,7 @@ export default async function IoeSemesterPage({ params }: PageProps) {
     `/ioe/${program.slug}/semester/${semester}`,
     subjects.map((s) => ({
       name: `${s.title} (${s.code})`,
-      path: `/ioe/${program.slug}/semester/${semester}/${getSubjectSlugFromName(s.title)}`,
+      path: getSubjectPrimaryPath(s.title),
     }))
   );
 

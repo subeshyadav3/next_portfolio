@@ -84,7 +84,7 @@ const PROGRAM_CONFIG: Record<string, {
 const FAQ_ITEMS = [
   {
     q: "Are these IOE past question papers free to download?",
-    a: "Yes. All IOE past question papers on this portal are completely free. You can view them online in the built-in PDF viewer or download the original PDF files directly.",
+    a: "Yes. The archived question papers on this portal are free to view and download through the available document links.",
   },
   {
     q: "Is this website officially affiliated with TU or IOE?",
@@ -359,14 +359,14 @@ export default function IoeLandingPage() {
             {
               icon: Download,
               title: "Free PDF Downloads",
-              desc: "Every paper is available as a PDF. Download for offline study or print for your revision sessions — 100% free with zero paywalls.",
+              desc: "Archived papers are available as PDFs for offline study and revision through the document links.",
               color: "text-emerald-600 dark:text-emerald-400",
               bg: "bg-emerald-50 dark:bg-emerald-950/40",
             },
             {
               icon: BookOpen,
               title: "Curriculum Syllabus Breakdown",
-              desc: "Complete unit topics, lecture hours, and official TU curriculum links for semester courses to structure your study roadmap.",
+              desc: "Unit topics, lecture hours, and curriculum source links help you structure a semester study roadmap.",
               color: "text-violet-600 dark:text-violet-400",
               bg: "bg-violet-50 dark:bg-violet-950/40",
             },

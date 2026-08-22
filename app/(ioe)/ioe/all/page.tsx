@@ -150,10 +150,9 @@ export default function IoeAllSubjectsPage() {
                   const subjectProgs = getSubjectPrograms(subject.name);
                   const dataPrograms = subjectProgs.map((p) => p.code.toLowerCase()).join(",");
                   const primaryPath = getSubjectPrimaryPath(subject.name);
-                  const hasQuestions = isSubjectPublic(subject.name);
+                  const hasQuestions = isSubjectPublic(subject.name) && subject.papers.length > 0;
 
-                  return (
-                    <Link
+                  return hasQuestions ? <Link
                       key={subject.name}
                       data-subject-link
                       data-subject-name={subject.name}
@@ -204,8 +203,19 @@ export default function IoeAllSubjectsPage() {
                           <ArrowRight className="h-3 w-3" />
                         </span>
                       </div>
-                    </Link>
-                  );
+                    </Link> : <div
+                      data-subject-link
+                      data-subject-name={subject.name}
+                      data-programs={dataPrograms}
+                      className="group flex flex-col justify-between rounded-2xl border border-slate-200/90 bg-white p-4 opacity-60 shadow-xs dark:border-gray-800/90 dark:bg-gray-900"
+                    >
+                      <span className="block text-sm font-semibold leading-snug text-slate-900 dark:text-slate-100">
+                        {subject.name}
+                      </span>
+                      <span className="mt-3 border-t border-slate-100 pt-2.5 text-[11px] text-slate-400 dark:border-gray-800/80 dark:text-slate-500">
+                        Syllabus listed; papers are not available yet.
+                      </span>
+                    </div>;
                 })}
               </div>
             </section>
