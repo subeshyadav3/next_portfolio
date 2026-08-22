@@ -21,7 +21,8 @@ export default async function PdfViewerPage({ searchParams }: Props) {
     );
   }
 
-  const decodedUrl = decodeURIComponent(url);
+  // Next already decodes searchParams. Decoding again corrupts encoded URLs.
+  const decodedUrl = url;
 
   return (
     <div className="min-h-screen bg-gray-100">

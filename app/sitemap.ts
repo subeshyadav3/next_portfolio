@@ -52,6 +52,11 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         priority: 0.9,
       },
       {
+        url: `${SITE_URL}/ioe/about`,
+        changeFrequency: "yearly" as const,
+        priority: 0.4,
+      },
+      {
         url: `${SITE_URL}/ioe/all`,
         changeFrequency: "weekly" as const,
         priority: 0.7,

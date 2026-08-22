@@ -156,6 +156,7 @@ export default function IoeLayout({ children }: { children: React.ReactNode }) {
               </h3>
               <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-400">
                 {[
+                  { label: "About this archive", href: "/ioe/about" },
                   { label: "About Us", href: "/blog/about" },
                   { label: "Contact Us", href: "/blog/contact" },
                   { label: "Privacy Policy", href: "/blog/privacy" },

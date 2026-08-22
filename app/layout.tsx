@@ -6,11 +6,10 @@ import { SITE_URL, SITE_NAME } from "@/lib/site-config";
 import {
   generateOrganizationSchema,
   generatePersonSchema,
-  generateLocalBusinessSchema,
 } from "@/lib/blog/schema";
 import { Metadata } from "next";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import { CookieConsent } from "@/components/blog/CookieConsent";
+import { ConsentAwareAnalytics } from "@/components/blog/ConsentAwareAnalytics";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -97,7 +96,6 @@ export const metadata: Metadata = {
 
 const organizationSchema = generateOrganizationSchema();
 const personSchema = generatePersonSchema();
-const localBusinessSchema = generateLocalBusinessSchema();
 
 export default function RootLayout({
   children,
@@ -126,13 +124,9 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
         />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-        />
         <ThemeProvider>{children}</ThemeProvider>
         <CookieConsent />
-        <GoogleAnalytics gaId="G-6HZ0GV26W3" />
+        <ConsentAwareAnalytics />
       </body>
     </html>
   );

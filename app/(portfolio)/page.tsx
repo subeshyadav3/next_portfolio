@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import Hero from "../../components/hero/Hero";
 import About from "../../components/about/about";
 import Stats from "../../components/stats/Stats";
+import { generateLocalBusinessSchema } from "../../lib/blog/schema";
 
 const Education = dynamic(() => import("../../components/education/education"), { ssr: false });
 const Experience = dynamic(() => import("../../components/experience/experience"), { ssr: false });
@@ -11,8 +12,14 @@ const Project = dynamic(() => import("../../components/projects/projects"), { ss
 const ContactPage = dynamic(() => import("../../components/contact/contact"), { ssr: false });
 
 export default function HomePage() {
+  const serviceSchema = generateLocalBusinessSchema();
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }}
+      />
       <Hero />
       <About />
       <Stats />

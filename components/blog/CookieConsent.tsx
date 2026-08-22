@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 
 const CONSENT_KEY = "cookie-consent";
+const CONSENT_EVENT = "cookie-consent-updated";
 
 type Consent = "accepted" | "declined" | null;
 
@@ -22,12 +23,14 @@ export function CookieConsent() {
 
   function accept() {
     localStorage.setItem(CONSENT_KEY, "accepted");
+    window.dispatchEvent(new Event(CONSENT_EVENT));
     setConsent("accepted");
     setVisible(false);
   }
 
   function decline() {
     localStorage.setItem(CONSENT_KEY, "declined");
+    window.dispatchEvent(new Event(CONSENT_EVENT));
     setConsent("declined");
     setVisible(false);
   }
