@@ -169,3 +169,63 @@ export async function restorePost(id: string) {
     data: { status: "DRAFT" },
   });
 }
+
+export type ViewsPeriod = "all" | "month" | "week";
+
+export interface ViewsStats {
+  period: ViewsPeriod;
+  websiteViews: number;
+  postViews: number;
+  otherViews: number;
+}
+
+export async function getViewsStats(period: ViewsPeriod = "all"): Promise<ViewsStats> {
+  const now = new Date();
+  const since =
+    period === "week"
+      ? new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000)
+      : period === "month"
+      ? new Date(now.getTime() - 30 * 24 * 60 * 60 * 1000)
+      : null;
+
+  try {
+    if (since) {
+      const [websiteViews, postViews] = await Promise.all([
+        prisma.pageView.count({
+          where: { createdAt: { gte: since } },
+        }),
+        prisma.pageView.count({
+          where: { slug: { not: null }, createdAt: { gte: since } },
+        }),
+      ]);
+      return {
+        period,
+        websiteViews,
+        postViews,
+        otherViews: Math.max(0, websiteViews - postViews),
+      };
+    } else {
+      const [postViewsSum, otherPageViews] = await Promise.all([
+        prisma.post.aggregate({ _sum: { views: true } }),
+        prisma.pageView.count({ where: { slug: null } }),
+      ]);
+      const postViews = postViewsSum._sum.views ?? 0;
+      const otherViews = otherPageViews;
+      const websiteViews = postViews + otherViews;
+      return {
+        period,
+        websiteViews,
+        postViews,
+        otherViews,
+      };
+    }
+  } catch {
+    return {
+      period,
+      websiteViews: 0,
+      postViews: 0,
+      otherViews: 0,
+    };
+  }
+}
+

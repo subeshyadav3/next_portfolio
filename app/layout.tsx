@@ -10,6 +10,7 @@ import {
 import { Metadata } from "next";
 import { CookieConsent } from "@/components/blog/CookieConsent";
 import { ConsentAwareAnalytics } from "@/components/blog/ConsentAwareAnalytics";
+import { SiteViewTracker } from "@/components/analytics/SiteViewTracker";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -127,6 +128,7 @@ export default function RootLayout({
         <ThemeProvider>{children}</ThemeProvider>
         <CookieConsent />
         <ConsentAwareAnalytics />
+        <SiteViewTracker />
       </body>
     </html>
   );

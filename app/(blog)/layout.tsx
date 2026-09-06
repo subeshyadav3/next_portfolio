@@ -382,6 +382,15 @@ export default function BlogLayout({
                     Disclaimer
                   </Link>
                 </li>
+                <li>
+                  <button
+                    type="button"
+                    onClick={() => window.dispatchEvent(new Event("open-privacy-choices"))}
+                    className="text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)] transition-colors text-left"
+                  >
+                    Privacy Choices
+                  </button>
+                </li>
               </ul>
             </div>
             <div>

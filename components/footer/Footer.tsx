@@ -90,9 +90,18 @@ $ ls socials/`}
         )}
 
         <div className="footer-animate flex items-center justify-between flex-wrap gap-4 pt-6" style={{ borderTop: "1px solid var(--border)" }}>
-          <p className="mono text-xs text-muted">
-            Subesh Yadav · © {new Date().getFullYear()}
-          </p>
+          <div className="flex items-center gap-4 flex-wrap">
+            <p className="mono text-xs text-muted">
+              Subesh Yadav · © {new Date().getFullYear()}
+            </p>
+            <button
+              type="button"
+              onClick={() => window.dispatchEvent(new Event("open-privacy-choices"))}
+              className="mono text-xs text-muted hover:text-green transition-colors"
+            >
+              Privacy Choices
+            </button>
+          </div>
           <p className="mono text-xs text-muted flex items-center gap-1">
             Built with <Heart size={12} className="text-red-500 fill-red-500 animate-pulse" /> and Next.Js
           </p>

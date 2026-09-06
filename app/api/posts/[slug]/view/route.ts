@@ -8,10 +8,18 @@ export async function POST(
   const { slug } = await params;
 
   try {
-    await prisma.post.updateMany({
-      where: { slug },
-      data: { views: { increment: 1 } },
-    });
+    await Promise.all([
+      prisma.post.updateMany({
+        where: { slug },
+        data: { views: { increment: 1 } },
+      }),
+      prisma.pageView.create({
+        data: {
+          path: `/blog/${slug}`,
+          slug,
+        },
+      }),
+    ]);
   } catch {
     // DB unavailable — ignore so tracking never breaks the page
   }

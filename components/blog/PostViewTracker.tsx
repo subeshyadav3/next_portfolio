@@ -5,7 +5,7 @@ import { useEffect } from "react";
 export default function PostViewTracker({ slug }: { slug: string }) {
   useEffect(() => {
     if (!slug) return;
-    const key = `post-viewed:${slug}`;
+    const key = `pv:/blog/${slug}`;
     try {
       if (sessionStorage.getItem(key)) return;
       sessionStorage.setItem(key, "1");

@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { getPosts } from "@/services/posts.service";
+import { getPosts, getViewsStats, ViewsPeriod } from "@/services/posts.service";
 import { deletePostAction, restorePostAction } from "@/actions/posts";
 import { IoeAdminPanel } from "@/components/admin/IoeAdminPanel";
 
 export default async function AdminPostsPage({
   searchParams,
 }: {
-  searchParams: Promise<{ page?: string; status?: string; search?: string; created?: string; updated?: string; area?: string }>;
+  searchParams: Promise<{ page?: string; status?: string; search?: string; created?: string; updated?: string; area?: string; period?: string }>;
 }) {
   const sp = await searchParams;
   const area = sp.area === "ioe" ? "ioe" : "blog";
@@ -34,12 +34,16 @@ export default async function AdminPostsPage({
   }
 
   const page = parseInt(sp.page ?? "1", 10);
-  const { posts, total, totalPages } = await getPosts({
-    page,
-    status: sp.status,
-    search: sp.search,
-    limit: 20,
-  });
+  const period: ViewsPeriod = (sp.period === "week" || sp.period === "month") ? sp.period : "all";
+  const [{ posts, total, totalPages }, viewsStats] = await Promise.all([
+    getPosts({
+      page,
+      status: sp.status,
+      search: sp.search,
+      limit: 20,
+    }),
+    getViewsStats(period),
+  ]);
 
   const showCreated = sp.created === "1";
   const showUpdated = sp.updated === "1";
@@ -72,6 +76,107 @@ export default async function AdminPostsPage({
           >
             New Post
           </Link>
+        </div>
+      </div>
+
+      {/* Website & Post Views Section */}
+      <div className="mt-6 rounded-xl border border-gray-200 bg-white p-5 shadow-sm dark:border-gray-800 dark:bg-gray-900">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <h2 className="text-base font-semibold text-gray-900 dark:text-white">
+              Website Traffic & Views
+            </h2>
+            <p className="text-xs text-gray-500 dark:text-gray-400">
+              Overview of all visits across the entire website and individual blog posts.
+            </p>
+          </div>
+
+          {/* Timeframe Filter: All Time, Monthly, Weekly */}
+          <div className="flex items-center gap-1 rounded-lg bg-gray-100 p-1 text-xs font-medium dark:bg-gray-800">
+            <Link
+              href={buildPeriodLink(sp, "all")}
+              className={`rounded-md px-3 py-1.5 transition-colors ${
+                period === "all"
+                  ? "bg-white text-gray-900 shadow-sm dark:bg-gray-700 dark:text-white"
+                  : "text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+              }`}
+            >
+              All Time
+            </Link>
+            <Link
+              href={buildPeriodLink(sp, "month")}
+              className={`rounded-md px-3 py-1.5 transition-colors ${
+                period === "month"
+                  ? "bg-white text-gray-900 shadow-sm dark:bg-gray-700 dark:text-white"
+                  : "text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+              }`}
+            >
+              This Month
+            </Link>
+            <Link
+              href={buildPeriodLink(sp, "week")}
+              className={`rounded-md px-3 py-1.5 transition-colors ${
+                period === "week"
+                  ? "bg-white text-gray-900 shadow-sm dark:bg-gray-700 dark:text-white"
+                  : "text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+              }`}
+            >
+              This Week
+            </Link>
+          </div>
+        </div>
+
+        <div className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <div className="rounded-lg border border-blue-100 bg-blue-50/50 p-4 dark:border-blue-900/40 dark:bg-blue-950/20">
+            <span className="text-xs font-medium uppercase tracking-wider text-blue-600 dark:text-blue-400">
+              Total Website Views
+            </span>
+            <div className="mt-1 flex items-baseline gap-2">
+              <span className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                {viewsStats.websiteViews.toLocaleString()}
+              </span>
+              <span className="text-xs text-gray-500 dark:text-gray-400">
+                {period === "week" ? "past 7 days" : period === "month" ? "past 30 days" : "entire site"}
+              </span>
+            </div>
+            <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+              Home, Blog, IOE, Syllabus & Notes
+            </p>
+          </div>
+
+          <div className="rounded-lg border border-purple-100 bg-purple-50/50 p-4 dark:border-purple-900/40 dark:bg-purple-950/20">
+            <span className="text-xs font-medium uppercase tracking-wider text-purple-600 dark:text-purple-400">
+              Blog Posts Views
+            </span>
+            <div className="mt-1 flex items-baseline gap-2">
+              <span className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                {viewsStats.postViews.toLocaleString()}
+              </span>
+              <span className="text-xs text-gray-500 dark:text-gray-400">
+                {period === "week" ? "past 7 days" : period === "month" ? "past 30 days" : "all posts"}
+              </span>
+            </div>
+            <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+              Articles, essays, poems, and questions
+            </p>
+          </div>
+
+          <div className="rounded-lg border border-emerald-100 bg-emerald-50/50 p-4 dark:border-emerald-900/40 dark:bg-emerald-950/20">
+            <span className="text-xs font-medium uppercase tracking-wider text-emerald-600 dark:text-emerald-400">
+              Other Pages Views
+            </span>
+            <div className="mt-1 flex items-baseline gap-2">
+              <span className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                {viewsStats.otherViews.toLocaleString()}
+              </span>
+              <span className="text-xs text-gray-500 dark:text-gray-400">
+                {period === "week" ? "past 7 days" : period === "month" ? "past 30 days" : "non-post views"}
+              </span>
+            </div>
+            <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
+              Portfolio home, IOE portal, etc.
+            </p>
+          </div>
         </div>
       </div>
 
@@ -201,4 +306,14 @@ function StatusBadge({ status }: { status: string }) {
       {status}
     </span>
   );
+}
+
+function buildPeriodLink(sp: Record<string, string | undefined>, newPeriod: string) {
+  const params = new URLSearchParams();
+  for (const [k, v] of Object.entries(sp)) {
+    if (v && k !== "period") params.set(k, v);
+  }
+  if (newPeriod !== "all") params.set("period", newPeriod);
+  const q = params.toString();
+  return q ? `/admin/posts?${q}` : "/admin/posts";
 }

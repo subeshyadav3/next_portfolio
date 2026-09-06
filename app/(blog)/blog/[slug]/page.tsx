@@ -85,7 +85,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   let dbPost: { id: string; allowComments: boolean } | null = null;
   try {
-    dbPost = post.source === "DB" ? await prisma.post.findUnique({ where: { slug: post.slug }, select: { id: true, allowComments: true } }) : null;
+    dbPost = await prisma.post.findUnique({ where: { slug: post.slug }, select: { id: true, allowComments: true } });
   } catch {
     // DB not available during build, skip
   }
@@ -113,7 +113,7 @@ export default async function BlogPostPage({ params }: PageProps) {
 
   return (
     <div>
-      {dbPost && <PostViewTracker slug={post.slug} />}
+      <PostViewTracker slug={post.slug} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }}
