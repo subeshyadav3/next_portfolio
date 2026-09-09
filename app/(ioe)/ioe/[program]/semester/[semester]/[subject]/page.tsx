@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { notFound, redirect } from "next/navigation";
+import { notFound } from "next/navigation";
 import { IOE_ENABLED } from "@/lib/ioe/config";
 import {
   findCatalogSubject,
@@ -7,7 +7,6 @@ import {
   getPapersForSubject,
   getSyllabusForSubject,
   getAssessmentScheme,
-  getSubjectPrimaryPath,
   getSubjectSlugFromName,
 } from "@/lib/ioe/data";
 import { PdfViewer } from "@/components/ioe/PdfViewer";
@@ -46,10 +45,11 @@ export async function generateMetadata({ params }: PageProps) {
   );
   const catalog = findCatalogSubject(subjectRow?.title ?? "");
   if (!subjectRow || !catalog) return {};
+  const currentPath = `/ioe/${programSlug}/semester/${semester}/${subjectSlug}`;
   return buildIoeMetadata({
     title: `${subjectRow.title} IOE PYQ Past Year Questions & Syllabus PDF`,
-     description: `Browse ${subjectRow.title} (${subjectRow.code}) IOE past year question papers (PYQ PDF) for ${program.fullName} Semester ${semester}, with a curriculum syllabus breakdown and archive source details.`,
-    path: getSubjectPrimaryPath(subjectRow.title),
+    description: `Browse ${subjectRow.title} (${subjectRow.code}) IOE past year question papers (PYQ PDF) for ${program.fullName} Semester ${semester}, with a curriculum syllabus breakdown and archive source details.`,
+    path: currentPath,
     keywords: [
       `${subjectRow.title} IOE PYQ`,
       `${subjectRow.title} past year question`,
@@ -76,11 +76,6 @@ export default async function IoeSubjectPage({ params }: PageProps) {
 
   const papers = getPapersForSubject(catalog, semester);
   if (papers.length === 0) notFound();
-
-  const primaryPath = getSubjectPrimaryPath(subjectRow.title);
-  if (primaryPath !== `/ioe/${programSlug}/semester/${semester}/${subjectSlug}`) {
-    redirect(primaryPath);
-  }
 
   const syllabus = getSyllabusForSubject(subjectRow.title);
   const assessment = getAssessmentScheme(subjectRow.title);

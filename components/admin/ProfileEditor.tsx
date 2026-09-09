@@ -127,7 +127,7 @@ export function ProfileEditor({ author }: ProfileEditorProps) {
               name="name"
               defaultValue={author.name}
               required
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+              className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
             />
           </div>
           <div>
@@ -138,7 +138,7 @@ export function ProfileEditor({ author }: ProfileEditorProps) {
               name="bio"
               defaultValue={author.bio ?? ""}
               rows={3}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+              className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
               placeholder="A short bio that appears on your posts..."
             />
           </div>
@@ -150,7 +150,7 @@ export function ProfileEditor({ author }: ProfileEditorProps) {
               name="websiteUrl"
               type="url"
               defaultValue={author.websiteUrl ?? ""}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+              className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
               placeholder="https://example.com"
             />
           </div>
@@ -171,7 +171,7 @@ export function ProfileEditor({ author }: ProfileEditorProps) {
               type="url"
               value={socialGithub}
               onChange={(e) => setSocialGithub(e.target.value)}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+              className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
               placeholder="https://github.com/username"
             />
           </div>
@@ -183,7 +183,7 @@ export function ProfileEditor({ author }: ProfileEditorProps) {
               type="url"
               value={socialLinkedin}
               onChange={(e) => setSocialLinkedin(e.target.value)}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+              className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
               placeholder="https://linkedin.com/in/username"
             />
           </div>
@@ -195,7 +195,7 @@ export function ProfileEditor({ author }: ProfileEditorProps) {
               type="url"
               value={socialTwitter}
               onChange={(e) => setSocialTwitter(e.target.value)}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+              className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
               placeholder="https://x.com/username"
             />
           </div>
@@ -207,7 +207,7 @@ export function ProfileEditor({ author }: ProfileEditorProps) {
               type="url"
               value={socialFacebook}
               onChange={(e) => setSocialFacebook(e.target.value)}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+              className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
               placeholder="https://facebook.com/username"
             />
           </div>

@@ -31,22 +31,22 @@ export function IoeAdminPanel() {
           { label: "Papers", value: countPapers() },
           { label: "Drive source", value: "Linked" },
         ].map((stat) => (
-          <div key={stat.label} className="rounded-lg border border-gray-200 p-4 dark:border-gray-800">
-            <div className="text-2xl font-bold">{stat.value}</div>
+          <div key={stat.label} className="rounded-lg border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900">
+            <div className="text-2xl font-bold text-gray-900 dark:text-white">{stat.value}</div>
             <div className="mt-1 text-xs text-gray-500 dark:text-gray-400">{stat.label}</div>
           </div>
         ))}
       </div>
 
       <section>
-        <h2 className="text-lg font-semibold">Programs &amp; curriculum</h2>
+        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Programs &amp; curriculum</h2>
         <div className="mt-3 space-y-3">
           {programs.map((program) => (
-            <div key={program.code} className="rounded-lg border border-gray-200 p-4 dark:border-gray-800">
+            <div key={program.code} className="rounded-lg border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900">
               <div className="flex items-center justify-between">
                 <div>
                   <span className="font-mono text-xs text-blue-600 dark:text-blue-400">{program.code}</span>
-                  <span className="ml-2 font-medium">{program.fullName}</span>
+                  <span className="ml-2 font-medium text-gray-900 dark:text-white">{program.fullName}</span>
                 </div>
                 <Link
                   href={`/ioe/${program.slug}`}
@@ -56,7 +56,7 @@ export function IoeAdminPanel() {
                   View public page
                 </Link>
               </div>
-              <p className="mt-1 text-xs text-gray-400">
+              <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">
                 {Object.keys(program.semesters).length} semesters ·{" "}
                 {Object.values(program.semesters).reduce((n, s) => n + s.length, 0)} subjects
               </p>
@@ -66,7 +66,7 @@ export function IoeAdminPanel() {
       </section>
 
       <section>
-        <h2 className="text-lg font-semibold">Subjects with papers</h2>
+        <h2 className="text-lg font-semibold text-gray-900 dark:text-white">Subjects with papers</h2>
         <div className="mt-3 overflow-hidden rounded-lg border border-gray-200 dark:border-gray-800">
           <table className="min-w-full divide-y divide-gray-200 dark:divide-gray-800">
             <thead className="bg-gray-50 dark:bg-gray-900">
@@ -79,7 +79,7 @@ export function IoeAdminPanel() {
             <tbody className="divide-y divide-gray-200 bg-white dark:divide-gray-800 dark:bg-gray-950">
               {subjects.map((subject) => (
                 <tr key={subject.name}>
-                  <td className="px-4 py-2.5 text-sm">{subject.name}</td>
+                  <td className="px-4 py-2.5 text-sm font-medium text-gray-900 dark:text-white">{subject.name}</td>
                   <td className="px-4 py-2.5 text-sm text-gray-500 dark:text-gray-400">
                     {subject.papers.length}
                   </td>
@@ -99,7 +99,7 @@ export function IoeAdminPanel() {
         </div>
       </section>
 
-      <section className="rounded-lg border border-gray-200 p-4 text-sm text-gray-500 dark:border-gray-800 dark:text-gray-400">
+      <section className="rounded-lg border border-gray-200 bg-white p-4 text-sm text-gray-500 dark:border-gray-800 dark:bg-gray-900 dark:text-gray-400">
         <span className="font-medium text-gray-700 dark:text-gray-300">Source:</span>{" "}
         <a
           href={IOE_DRIVE_SOURCE}

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { IoeCurriculumSubject, IoeProgram } from "@/lib/ioe/types";
-import { findCatalogSubject, getSubjectPrimaryPath } from "@/lib/ioe/data";
+import { findCatalogSubject, getSubjectSlugFromName } from "@/lib/ioe/data";
 import { FileText, ArrowRight, Lock } from "lucide-react";
 
 interface SubjectCardProps {
@@ -23,7 +23,7 @@ export function SubjectCard({ program, semester, subject }: SubjectCardProps) {
   );
 
   const href = hasPapers
-    ? getSubjectPrimaryPath(subject.title)
+    ? `/ioe/${program.slug}/semester/${semester}/${getSubjectSlugFromName(subject.title)}`
     : undefined;
 
   const inner = (

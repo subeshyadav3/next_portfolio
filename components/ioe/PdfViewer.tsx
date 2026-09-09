@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { IoePaper } from "@/lib/ioe/types";
-import { Download, FileText, Info, Maximize2 } from "lucide-react";
+import { Download, ExternalLink, FileText, Info, Layers, Maximize2 } from "lucide-react";
 import { PdfOverlay } from "@/components/pdf/PdfOverlay";
 
 interface PdfViewerProps {
@@ -10,15 +10,33 @@ interface PdfViewerProps {
 }
 
 /**
-  * Embedded PDF viewer with paper/year tabs, action toolbar,
+ * Embedded PDF viewer with paper/year tabs, action toolbar,
  * cross-semester notes, and direct download fallback.
  */
 export function PdfViewer({ papers }: PdfViewerProps) {
   const [active, setActive] = useState(0);
   const [overlayOpen, setOverlayOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [viewerMode, setViewerMode] = useState<"cdn" | "drive">("cdn");
+
+  useEffect(() => {
+    const ua = typeof navigator !== "undefined" ? navigator.userAgent : "";
+    setIsMobile(
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua) ||
+      window.innerWidth < 768
+    );
+  }, []);
+
   const paper = papers[Math.min(active, papers.length - 1)];
 
   if (!paper) return null;
+
+  const embedSrc =
+    (isMobile || viewerMode === "drive") && paper.id
+      ? `https://drive.google.com/file/d/${paper.id}/preview`
+      : isMobile
+        ? `https://docs.google.com/viewer?url=${encodeURIComponent(paper.previewUrl)}&embedded=true`
+        : paper.previewUrl;
 
   return (
     <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xs transition-colors dark:border-gray-800 dark:bg-gray-900">
@@ -52,6 +70,11 @@ export function PdfViewer({ papers }: PdfViewerProps) {
               >
                 <FileText className="h-3 w-3" />
                 <span>{semLabel}</span>
+                {p.isCrossSemester && (
+                  <span className="rounded bg-amber-100 px-1 py-0.2 text-[9px] font-bold text-amber-800 dark:bg-amber-950 dark:text-amber-300">
+                    Cross-Prog
+                  </span>
+                )}
               </button>
             );
           })}
@@ -85,6 +108,29 @@ export function PdfViewer({ papers }: PdfViewerProps) {
         </div>
 
         <div className="flex items-center gap-2.5">
+          {paper.id && (
+            <button
+              type="button"
+              onClick={() => setViewerMode((m) => (m === "drive" ? "cdn" : "drive"))}
+              title="Switch between Cloudinary CDN and Google Drive mirror"
+              className="hidden sm:inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-700 shadow-xs transition hover:bg-slate-50 dark:border-gray-800 dark:bg-gray-900 dark:text-slate-300 dark:hover:bg-gray-800"
+            >
+              <Layers className="h-3.5 w-3.5 text-blue-500" />
+              <span>{(isMobile || viewerMode === "drive") ? "Drive Mirror" : "CDN View"}</span>
+            </button>
+          )}
+          {isMobile && (
+            <a
+              href={paper.previewUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Open directly in your mobile PDF viewer app"
+              className="inline-flex items-center gap-1 rounded-xl border border-blue-200 bg-blue-50 px-3 py-2 text-xs font-semibold text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/50 dark:text-blue-300"
+            >
+              <ExternalLink className="h-3.5 w-3.5" />
+              <span>Open</span>
+            </a>
+          )}
           <button
             type="button"
             onClick={() => setOverlayOpen(true)}
@@ -108,8 +154,8 @@ export function PdfViewer({ papers }: PdfViewerProps) {
 
       <div className="relative border-t border-slate-200 bg-slate-100 dark:border-gray-800 dark:bg-gray-950">
         <iframe
-          key={paper.id}
-          src={paper.previewUrl}
+          key={`${paper.id}-${embedSrc}`}
+          src={embedSrc}
           title={paper.file}
           className="h-[52vh] min-h-[360px] sm:h-[68vh] sm:min-h-[480px] w-full border-0"
           loading="lazy"
@@ -128,9 +174,13 @@ export function PdfViewer({ papers }: PdfViewerProps) {
 
       {overlayOpen && (
         <PdfOverlay
+          papers={papers}
+          activePaperIndex={active}
+          onPaperSelect={(idx) => setActive(idx)}
           src={paper.previewUrl}
           title={paper.file}
           downloadUrl={paper.downloadUrl}
+          subjectTitle={paper.subject}
           onClose={() => setOverlayOpen(false)}
         />
       )}

@@ -208,7 +208,7 @@ export function ProgramHubView({
                               Preview PDF {matchedPapers.length > 1 ? `(${matchedPapers.length})` : ""}
                             </button>
                              <a
-                               href={`https://drive.google.com/uc?export=download&id=${primaryPaper.id}`}
+                               href={primaryPaper.downloadUrl}
                                target="_blank"
                                rel="noopener noreferrer"
                                title="Download PDF"
@@ -313,8 +313,17 @@ export function ProgramHubView({
       {/* ── In-site PDF full view ── */}
       {previewModalData && currentPreviewPaper && (
         <PdfOverlay
+          papers={previewModalData.papers}
+          activePaperIndex={previewModalData.activePaperIndex}
+          onPaperSelect={(idx) =>
+            setPreviewModalData((prev) =>
+              prev ? { ...prev, activePaperIndex: idx } : null
+            )
+          }
           src={currentPreviewPaper.previewUrl}
           title={`${previewModalData.subject} — ${currentPreviewPaper.file}`}
+          downloadUrl={currentPreviewPaper.downloadUrl}
+          subjectTitle={previewModalData.subject}
           onClose={() => setPreviewModalData(null)}
         />
       )}

@@ -23,14 +23,14 @@ export default async function AdminCategoriesPage() {
 
       <form
         action={createCategoryAction}
-        className="flex flex-wrap items-end gap-3 rounded-lg border p-4 dark:border-gray-800"
+        className="flex flex-wrap items-end gap-3 rounded-lg border border-gray-200 bg-white p-4 dark:border-gray-800 dark:bg-gray-900"
       >
         <div>
           <label className="mb-1 block text-xs font-medium text-gray-600 dark:text-gray-400">Name</label>
           <input
             name="name"
             required
-            className="rounded-lg border px-3 py-2 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+            className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
             placeholder="Category name"
           />
         </div>
@@ -40,7 +40,7 @@ export default async function AdminCategoriesPage() {
           </label>
           <input
             name="slug"
-            className="rounded-lg border px-3 py-2 text-sm font-mono dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+            className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm font-mono text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
             placeholder="auto-generated"
           />
         </div>
@@ -48,7 +48,7 @@ export default async function AdminCategoriesPage() {
           <label className="mb-1 block text-xs font-medium text-gray-600 dark:text-gray-400">Description</label>
           <input
             name="description"
-            className="rounded-lg border px-3 py-2 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+            className="rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
             placeholder="Optional"
           />
         </div>
@@ -60,7 +60,7 @@ export default async function AdminCategoriesPage() {
         </button>
       </form>
 
-      <div className="overflow-x-auto rounded-lg border dark:border-gray-800">
+      <div className="overflow-x-auto rounded-lg border border-gray-200 bg-white dark:border-gray-800 dark:bg-gray-900">
         <table className="w-full text-sm">
           <thead className="bg-gray-50 dark:bg-gray-900">
             <tr>
@@ -70,9 +70,9 @@ export default async function AdminCategoriesPage() {
               <Th>Actions</Th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="divide-y divide-gray-200 dark:divide-gray-800">
             {categories.map((cat) => (
-              <tr key={cat.id} className="border-t dark:border-gray-800">
+              <tr key={cat.id} className="border-t border-gray-200 dark:border-gray-800">
                 <td className="px-4 py-3 text-gray-900 dark:text-white">{cat.name}</td>
                 <td className="px-4 py-3 font-mono text-gray-600 dark:text-gray-400">{cat.slug}</td>
                 <td className="px-4 py-3 text-gray-600 dark:text-gray-400">{cat._count.posts}</td>

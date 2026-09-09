@@ -132,7 +132,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
           value={title}
           onChange={(e) => handleTitleChange(e.target.value)}
           required
-          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+          className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
           placeholder="Post title"
         />
 
@@ -143,7 +143,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
           value={slug}
           onChange={(e) => setSlug(e.target.value)}
           required
-          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm font-mono dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+          className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm font-mono text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
           placeholder="post-title-slug"
         />
       </Section>
@@ -157,7 +157,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
           defaultValue={post?.content ?? ""}
           required
           rows={20}
-          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm font-mono dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+          className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm font-mono text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
           placeholder="Write your MDX content here..."
         />
       </Section>
@@ -170,7 +170,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
           name="excerpt"
           defaultValue={post?.excerpt ?? ""}
           rows={3}
-          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+          className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
           placeholder="Short summary..."
         />
       </Section>
@@ -183,7 +183,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
             id="categoryId"
             name="categoryId"
             defaultValue={post?.categoryId ?? ""}
-            className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+            className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
           >
             <option value="">— No category —</option>
             {categories.map((cat) => (
@@ -233,7 +233,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
               value={coverUrlInput}
               onChange={(e) => setCoverUrlInput(e.target.value)}
               placeholder="Paste image URL..."
-              className="flex-1 rounded-lg border border-gray-300 px-3 py-2 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+              className="flex-1 rounded-lg border border-gray-300 bg-white px-3 py-2 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
             />
             <button
               type="button"
@@ -282,7 +282,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
           name="tagNames"
           value={tagInput}
           onChange={(e) => setTagInput(e.target.value)}
-          className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+          className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
           placeholder="e.g. class-10, math, SEE"
         />
       </Section>
@@ -296,7 +296,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
               id="status"
               name="status"
               defaultValue={post?.status ?? "DRAFT"}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+              className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
             >
               <option value="DRAFT">Draft</option>
               <option value="PUBLISHED">Published</option>
@@ -310,7 +310,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
               id="language"
               name="language"
               defaultValue={post?.language ?? "en"}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+              className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
             >
               <option value="en">English</option>
               <option value="ne">Nepali</option>
@@ -323,7 +323,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
               id="featured"
               name="featured"
               defaultValue={post?.featured ? "true" : "false"}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+              className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
             >
               <option value="false">No</option>
               <option value="true">Yes</option>
@@ -342,7 +342,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
               name="classLevel"
               value={classLevel}
               onChange={(e) => handleClassLevelChange(e.target.value)}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+              className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
             >
               <option value="">—</option>
               <option value="class-7">Class 7</option>
@@ -359,7 +359,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
               id="subject"
               name="subject"
               defaultValue={post?.subject ?? ""}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+              className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
               placeholder="e.g. Math, Science"
             />
           </div>
@@ -369,7 +369,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
               id="board"
               name="board"
               defaultValue={post?.board ?? ""}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+              className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
             >
               <option value="">—</option>
               <option value="NEB">NEB</option>
@@ -383,7 +383,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
               id="difficulty"
               name="difficulty"
               defaultValue={post?.difficulty ?? ""}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+              className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
             >
               <option value="">—</option>
               <option value="EASY">Easy</option>
@@ -398,7 +398,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
               name="examType"
               value={examType}
               onChange={(e) => handleExamTypeChange(e.target.value)}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+              className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
             >
               <option value="">—</option>
               <option value="SEE">SEE</option>
@@ -414,7 +414,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
               name="scheduledFor"
               type="datetime-local"
               defaultValue={post?.scheduledFor ? new Date(post.scheduledFor).toISOString().slice(0, 16) : ""}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+              className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
             />
           </div>
         </div>
@@ -430,7 +430,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
               name="metaTitle"
               defaultValue={post?.metaTitle ?? ""}
               maxLength={70}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+              className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
               placeholder="Custom SEO title (optional)"
             />
           </div>
@@ -442,7 +442,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
               defaultValue={post?.metaDescription ?? ""}
               maxLength={160}
               rows={2}
-              className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+              className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
               placeholder="Custom meta description (optional)"
             />
           </div>
@@ -453,7 +453,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
                 id="focusKeyword"
                 name="focusKeyword"
                 defaultValue={post?.focusKeyword ?? ""}
-                className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
                 placeholder="Main keyword"
               />
             </div>
@@ -463,7 +463,7 @@ export function PostEditor({ post, categories, authors, tags: allTags, action }:
                 id="canonicalUrl"
                 name="canonicalUrl"
                 defaultValue={post?.canonicalUrl ?? ""}
-                className="w-full rounded-lg border border-gray-300 px-4 py-2.5 text-sm dark:border-gray-600 dark:bg-gray-900 dark:text-white"
+                className="w-full rounded-lg border border-gray-300 bg-white px-4 py-2.5 text-sm text-gray-900 dark:border-gray-600 dark:bg-gray-900 dark:text-white"
                 placeholder="https://..."
               />
             </div>
@@ -515,7 +515,7 @@ function SubmitButton({ isUpdate }: { isUpdate: boolean }) {
 
 function Section({ title, children }: { title: string; children: React.ReactNode }) {
   return (
-    <fieldset className="rounded-lg border border-gray-200 p-6 dark:border-gray-800">
+    <fieldset className="rounded-lg border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
       <legend className="text-sm font-semibold text-gray-700 dark:text-gray-300">{title}</legend>
       <div className="mt-4 space-y-4">{children}</div>
     </fieldset>

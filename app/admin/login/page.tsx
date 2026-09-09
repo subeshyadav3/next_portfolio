@@ -15,7 +15,7 @@ export default async function LoginPage({
   }
 
   return (
-    <div className="flex min-h-screen items-center justify-center bg-gray-50 px-4 dark:bg-gray-950">
+    <div className="flex min-h-screen items-center justify-center bg-gray-50 px-4 text-gray-900 dark:bg-gray-950 dark:text-gray-100">
       <div className="w-full max-w-sm">
         <h1 className="text-2xl font-bold text-gray-900 dark:text-white text-center">
           Admin Login

@@ -134,7 +134,11 @@ export function getPapersForSubject(catalogSubject: IoeCatalogSubject, semester?
   });
 
   if (matched.length > 0) {
-    return matched;
+    const matchedIds = new Set(matched.map((m) => m.id));
+    const crossProgramPapers = allPapers
+      .filter((p) => !matchedIds.has(p.id))
+      .map((p) => ({ ...p, isCrossSemester: true }));
+    return [...matched, ...crossProgramPapers];
   }
 
   // Cross-semester paper fallback (e.g. 5th-sem paper used for 6th-sem shared syllabus)
