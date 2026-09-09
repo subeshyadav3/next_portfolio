@@ -36,7 +36,7 @@ export function QuestionBank({ chapters = [], questions = [], subject }: Questio
     return Array.from(set);
   }, [chapters, questions]);
 
-  const [viewMode, setViewMode] = useState<ViewMode>("frequency");
+  const [viewMode, setViewMode] = useState<ViewMode>("chapter");
   const [selectedChapter, setSelectedChapter] = useState<string>("all");
   const [minFrequency, setMinFrequency] = useState<number>(0);
   const [query, setQuery] = useState("");
@@ -236,18 +236,6 @@ export function QuestionBank({ chapters = [], questions = [], subject }: Questio
         <div className="inline-flex rounded-xl border border-slate-200 bg-slate-100/80 p-1 dark:border-gray-800 dark:bg-gray-800/80 shrink-0">
           <button
             type="button"
-            onClick={() => setViewMode("frequency")}
-            className={`inline-flex items-center gap-1.5 rounded-lg px-3.5 py-1.5 text-xs font-bold transition ${
-              viewMode === "frequency"
-                ? "bg-white text-slate-900 shadow-xs dark:bg-gray-900 dark:text-white"
-                : "text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
-            }`}
-          >
-            <Flame className="h-3.5 w-3.5 text-amber-500" />
-            Ranked by Frequency
-          </button>
-          <button
-            type="button"
             onClick={() => setViewMode("chapter")}
             className={`inline-flex items-center gap-1.5 rounded-lg px-3.5 py-1.5 text-xs font-bold transition ${
               viewMode === "chapter"
@@ -257,6 +245,18 @@ export function QuestionBank({ chapters = [], questions = [], subject }: Questio
           >
             <BookOpen className="h-3.5 w-3.5 text-blue-500" />
             By Syllabus Chapter
+          </button>
+          <button
+            type="button"
+            onClick={() => setViewMode("frequency")}
+            className={`inline-flex items-center gap-1.5 rounded-lg px-3.5 py-1.5 text-xs font-bold transition ${
+              viewMode === "frequency"
+                ? "bg-white text-slate-900 shadow-xs dark:bg-gray-900 dark:text-white"
+                : "text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white"
+            }`}
+          >
+            <Flame className="h-3.5 w-3.5 text-amber-500" />
+            Ranked by Frequency
           </button>
         </div>
       </div>

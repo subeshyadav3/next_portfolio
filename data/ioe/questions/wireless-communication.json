@@ -3,7 +3,7 @@
   "subjectCode": "ENEX 415",
   "questions": [
     {
-      "chapter": "Cellular Concept and System Design",
+      "chapter": "Cellular Concept: System Design Fundamentals",
       "text": "Explain the cellular concept and frequency reuse. Define cluster size $N = i^2 + ij + j^2$ and co-channel reuse ratio $Q = \\frac{D}{R} = \\sqrt{3N}$. Calculate the co-channel interference ratio ($S/I$) for a 7-cell cluster with omnidirectional versus $120^\\circ$ and $60^\\circ$ directional sectoring.",
       "marks": "10",
       "years": [
@@ -15,7 +15,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Cellular Concept and System Design",
+      "chapter": "Cellular Concept: System Design Fundamentals",
       "text": "Explain Handoff (Handover) strategies in mobile cellular systems: Hard Handoff vs Soft Handoff, Mobile-Assisted Handoff (MAHO), Delayed handoff, Queuing of handoffs, and cell dragging.",
       "marks": "8",
       "years": [
@@ -27,7 +27,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Mobile Radio Propagation and Fading",
+      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
       "text": "What is fading? Distinguish between Large-Scale Path Loss and Small-Scale Fading. Explain the types of small-scale fading based on multipath time delay spread (Flat Fading vs Frequency Selective Fading) and Doppler spread (Fast Fading vs Slow Fading). Define Coherence Bandwidth ($B_c$) and Coherence Time ($T_c$).",
       "marks": "10",
       "years": [
@@ -39,7 +39,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Mobile Radio Propagation and Fading",
+      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
       "text": "Distinguish between Rayleigh fading (NLOS) and Rician fading (LOS) multipath distributions. State their probability density functions and explain the significance of the Rician $K$-factor.",
       "marks": "6",
       "years": [
@@ -51,7 +51,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Radio Propagation Models",
+      "chapter": "Mobile Radio Propagation: Large-Scale Path Loss",
       "text": "Explain the Log-Distance Path Loss Model and Log-Normal Shadowing. Describe empirical outdoor propagation models: Okumura Model and Hata (COST-231) Model for urban, suburban, and rural environments.",
       "marks": "8",
       "years": [
@@ -63,7 +63,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Spread Spectrum Techniques",
+      "chapter": "Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA)",
       "text": "Explain Direct Sequence Spread Spectrum (DSSS) and Frequency Hopping Spread Spectrum (FHSS: Fast vs Slow hopping). Define Processing Gain ($PG = \\frac{BW_{ss}}{BW_{info}}$) and Jamming Margin.",
       "marks": "8",
       "years": [
@@ -75,7 +75,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Multiple Access Techniques",
+      "chapter": "Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA)",
       "text": "Compare FDMA, TDMA, and CDMA multiple access techniques. What is the Near-Far problem in CDMA and how does fast closed-loop power control solve it? What is self-jamming?",
       "marks": "8",
       "years": [
@@ -88,7 +88,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Multiple Access Techniques",
+      "chapter": "Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA)",
       "text": "Demonstrate the orthogonal Walsh code encoding and decoding mechanism for a multi-user CDMA system. Explain Pseudo-Noise (PN) sequences and their cross-correlation and auto-correlation properties.",
       "marks": "8",
       "years": [
@@ -98,7 +98,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Cellular Wireless Standards (GSM and CDMA)",
+      "chapter": "Wireless Networking and Cellular Standards (2G, 3G, 4G, 5G)",
       "text": "Draw the GSM network architecture diagram showing Mobile Station (MS), Base Station Subsystem (BSS: BTS, BSC), Network Switching Subsystem (NSS: MSC, HLR, VLR, AUC, EIR), and Operation Subsystem (OSS). Explain the GSM frame hierarchy (burst, TDMA frame, multiframe, superframe).",
       "marks": "10",
       "years": [
@@ -110,7 +110,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Cellular Wireless Standards (GSM and CDMA)",
+      "chapter": "Wireless Networking and Cellular Standards (2G, 3G, 4G, 5G)",
       "text": "Explain the classification and operation of Traffic Channels (TCH) and Control Channels (BCH: FCCH, SCH, BCCH; CCCH: PCH, RACH, AGCH; DCCH: SDCCH, SACCH, FACCH) used in GSM.",
       "marks": "8",
       "years": [
@@ -121,7 +121,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Diversity and Equalization",
+      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
       "text": "How does diversity improve link quality in wireless fading channels? Compare Space Diversity, Frequency Diversity, and Time Diversity. Compare combining techniques: Selection Combining (SC), Maximal Ratio Combining (MRC), and Equal Gain Combining (EGC).",
       "marks": "8",
       "years": [
@@ -132,7 +132,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Diversity and Equalization",
+      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
       "text": "Explain the working principle and block diagram of a RAKE Receiver in CDMA wideband channels. How does it resolve individual multipath echoes and perform coherent combining to combat fading?",
       "marks": "6",
       "years": [
@@ -142,7 +142,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Multicarrier Modulation (OFDM)",
+      "chapter": "Modulation Techniques for Mobile Radio",
       "text": "Explain the block diagram of an Orthogonal Frequency Division Multiplexing (OFDM) transmitter and receiver using IFFT/FFT. Explain how the insertion of a Cyclic Prefix (CP) eliminates Inter-Symbol Interference (ISI) and preserves subchannel orthogonality.",
       "marks": "8",
       "years": [
@@ -152,7 +152,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Digital Modulation for Mobile Radio",
+      "chapter": "Modulation Techniques for Mobile Radio",
       "text": "Explain $\\pi/4$-DQPSK, MSK, and Gaussian MSK (GMSK) modulation. Why is GMSK preferred in GSM systems due to its constant envelope and compact power spectral density?",
       "marks": "8",
       "years": [
@@ -162,7 +162,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Cellular Concept and System Design",
+      "chapter": "Cellular Concept: System Design Fundamentals",
       "text": "In an urban cellular system with given total bandwidth, channel bandwidth, cluster size $N = 7$, and Grade of Service (GoS = $1\\%$ or $2\\%$ blocking probability), use Erlang-B traffic model to compute total traffic carried and the maximum number of subscribers that can be supported.",
       "marks": "8",
       "years": [
@@ -173,7 +173,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Cellular Wireless Standards (GSM and CDMA)",
+      "chapter": "Wireless Networking and Cellular Standards (2G, 3G, 4G, 5G)",
       "text": "Compare 1G, 2G, 3G, 4G LTE, and 5G cellular communication standards in terms of data rates, multiple access schemes, circuit vs packet switching, latency, and core network architecture.",
       "marks": "8",
       "years": [
@@ -185,7 +185,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Cellular Concept and System Design",
+      "chapter": "Cellular Concept: System Design Fundamentals",
       "text": "Explain Co-channel Interference (CCI) and Signal-to-Interference Ratio ($S/I$). Derive the relationship $S/I = \\frac{(\\sqrt{3N})^n}{i_0}$ for a hexagonal cellular geometry with cluster size $N$ and path loss exponent $n$. Calculate the minimum cluster size $N$ required for $S/I \\ge 18\\text{ dB}$ with $n=4$ and 6 first-tier co-channel cells.",
       "marks": "8",
       "years": [
@@ -198,7 +198,7 @@
       "solutionOutline": "Co-channel reuse distance D = R * sqrt(3N). Co-channel reuse ratio Q = D/R = sqrt(3N). Signal power S proportional to R^(-n); interference I = sum I_k = i_0 * D^(-n). S/I = (D/R)^n / i_0 = (sqrt(3N))^n / i_0. For i_0 = 6, n=4: S/I = (3N)^2 / 6 = 1.5 N^2. Required S/I = 18 dB = 63.1 => 1.5 N^2 >= 63.1 => N^2 >= 42.06 => N >= 6.48. Valid hexagonal cluster sizes N = i^2 + ij + j^2 gives N = 7."
     },
     {
-      "chapter": "Cellular Concept and System Design",
+      "chapter": "Cellular Concept: System Design Fundamentals",
       "text": "Explain Channel Assignment Strategies in cellular systems: Fixed Channel Assignment (FCA) vs Dynamic Channel Assignment (DCA). Describe Cell Splitting, Cell Sectoring ($120^\\circ$ and $60^\\circ$), and Microcell Zone concepts for network capacity expansion.",
       "marks": "8",
       "years": [
@@ -211,7 +211,7 @@
       "solutionOutline": "FCA allocates fixed channels to cells (simple, high blocking during traffic bursts). DCA pools all channels at MSC, allocating dynamically based on real-time interference and traffic. Cell splitting subdivides congested cells into smaller microcells with lower transmit power, multiplying channel reuse per unit area. Cell sectoring uses directional antennas (120 deg reduces co-channel interferers from 6 to 2), dramatically increasing S/I."
     },
     {
-      "chapter": "Mobile Radio Propagation and Fading",
+      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
       "text": "Explain Small-Scale Multipath Fading. Distinguish between Flat Fading vs Frequency Selective Fading based on multipath delay spread and coherence bandwidth ($B_c \\approx \\frac{1}{5\\sigma_\\tau}$), and Fast Fading vs Slow Fading based on Doppler spread ($B_D$) and coherence time ($T_c$).",
       "marks": "8",
       "years": [
@@ -224,7 +224,7 @@
       "solutionOutline": "Multipath creates constructive/destructive interference. Time dispersion: Flat fading occurs when signal bandwidth B_s << B_c (all frequencies experience uniform gain/phase; no ISI). Frequency selective fading occurs when B_s > B_c (channel induces severe intersymbol interference, requiring equalization). Frequency dispersion: Fast fading occurs when symbol period T_s > T_c (channel changes within symbol duration). Slow fading occurs when T_s << T_c."
     },
     {
-      "chapter": "Mobile Radio Propagation and Fading",
+      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
       "text": "Derive the Doppler Shift formula $f_d = \\frac{v}{\\lambda}\\cos\\theta$. For a vehicle traveling at $108\\text{ km/h}$ receiving an $1800\\text{ MHz}$ GSM carrier, compute the maximum Doppler shift and the coherence time ($T_c$) of the fading wireless channel.",
       "marks": "6",
       "years": [
@@ -237,7 +237,7 @@
       "solutionOutline": "Path difference Delta l = v Delta t cos theta. Phase change Delta phi = 2 pi Delta l / lambda => f_d = (1/2 pi) d phi/dt = (v / lambda) cos theta. Maximum shift f_m = v / lambda when theta = 0. Velocity v = 108 km/h = 30 m/s. Carrier lambda = c / f = 3*10^8 / (1800*10^6) = 0.1667 m. Max Doppler shift f_m = 30 / 0.1667 = 180 Hz. Coherence time T_c approx 0.423 / f_m = 0.423 / 180 = 2.35 ms."
     },
     {
-      "chapter": "Mobile Radio Propagation and Fading",
+      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
       "text": "Explain Rayleigh and Rician Fading Probability Density Functions (PDF). When does a mobile propagation channel follow Rayleigh distribution versus Rician distribution with Ricean factor $K$?",
       "marks": "8",
       "years": [
@@ -250,7 +250,7 @@
       "solutionOutline": "Rayleigh fading models non-line-of-sight (NLOS) environments where received signal consists of large number of independent identically distributed scattered multipath components: envelope r has PDF p(r) = (r / sigma^2) exp(-r^2 / 2 sigma^2). Rician fading occurs when strong direct Line-of-Sight (LOS) specular path exists alongside diffuse scattered waves: parameterized by K = (power in specular path) / (power in scattered components). As K -> 0, Rician degenerates to Rayleigh."
     },
     {
-      "chapter": "Radio Propagation Models",
+      "chapter": "Mobile Radio Propagation: Large-Scale Path Loss",
       "text": "Describe the Log-Distance Path Loss Model $PL(d) = PL(d_0) + 10 n \\log_{10}(d/d_0) + X_\\sigma$. Explain Log-Normal Shadowing and outage probability computation using the Gaussian $Q$-function.",
       "marks": "8",
       "years": [
@@ -263,7 +263,7 @@
       "solutionOutline": "Path loss increases logarithmically with distance d from reference distance d_0 (typically 100m or 1km). Path loss exponent n varies from 2 (free space) to 3-5 (urban macrocell). X_sigma is zero-mean Gaussian random variable (in dB) with standard deviation sigma representing large-scale shadowing by buildings/topography. Outage probability P(Pr < gamma) = Q((Pr_mean - gamma) / sigma)."
     },
     {
-      "chapter": "Radio Propagation Models",
+      "chapter": "Mobile Radio Propagation: Large-Scale Path Loss",
       "text": "Explain Empirical Propagation Models for urban cellular coverage: Okumura Model and Hata Model. State the empirical formulas for path loss as functions of base station antenna height, mobile antenna height, and carrier frequency.",
       "marks": "8",
       "years": [
@@ -276,7 +276,7 @@
       "solutionOutline": "Okumura model provides graphical curves based on extensive Tokyo field measurements. Hata formulated empirical equations for 150-1500 MHz: L_50(urban) = 69.55 + 26.16 log10(f_c) - 13.82 log10(h_b) - a(h_m) + (44.9 - 6.55 log10(h_b)) log10(d), where a(h_m) is correction factor for mobile antenna height. Includes correction offsets for suburban and open rural environments."
     },
     {
-      "chapter": "Diversity and Equalization",
+      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
       "text": "Explain Diversity Techniques to combat multipath fading: Space Diversity, Frequency Diversity, Time Diversity, and Polarization Diversity. Compare Combining Techniques: Selection Combining (SC), Equal Gain Combining (EGC), and Maximal Ratio Combining (MRC).",
       "marks": "8",
       "years": [
@@ -289,7 +289,7 @@
       "solutionOutline": "Transmits multiple copies of same information over independent fading channels. Space: multiple antennas spaced > lambda/2 apart. Frequency: carriers separated > B_c. Time: interleaving beyond T_c. Combining: SC selects branch with highest instantaneous SNR (simplest, sub-optimal). EGC co-phases all branches and sums with equal weights. MRC co-phases and weights each branch proportionally to its signal amplitude (optimal SNR = sum of branch SNRs)."
     },
     {
-      "chapter": "Diversity and Equalization",
+      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
       "text": "Explain Adaptive Equalization in digital receivers. Compare Zero-Forcing (ZF) Equalizer with Minimum Mean Square Error (MMSE) Equalizer and Decision Feedback Equalizer (DFE) with the LMS adaptive tap update algorithm.",
       "marks": "8",
       "years": [
@@ -302,7 +302,7 @@
       "solutionOutline": "Compensates for ISI caused by frequency-selective multipath dispersion. ZF inverts channel transfer function: H_eq(f) = 1/H(f); completely eliminates ISI but causes severe noise enhancement at spectral nulls. MMSE minimizes E[|e[n]|^2], balancing ISI cancellation and noise amplification. DFE uses feedforward and feedback filters, subtracting previously detected symbols to cancel postcursor ISI without boosting noise. LMS updates weights w_{k+1} = w_k + mu e_k x_k."
     },
     {
-      "chapter": "Multicarrier Modulation (OFDM)",
+      "chapter": "Modulation Techniques for Mobile Radio",
       "text": "Describe Orthogonal Frequency Division Multiplexing (OFDM). Explain subcarrier orthogonality, IFFT/FFT modulation implementation, Cyclic Prefix (CP) insertion to eliminate ISI and ICI, and Peak-to-Average Power Ratio (PAPR) challenges.",
       "marks": "8",
       "years": [
@@ -315,7 +315,7 @@
       "solutionOutline": "Divides broadband channel into N narrow orthogonal flat-fading subcarriers spaced Delta f = 1/T_s. Orthogonality integral_0^T cos(2 pi f_i t) cos(2 pi f_j t) dt = 0 allows overlapping spectra without ICI. Implemented efficiently using IFFT at transmitter and FFT at receiver. Cyclic Prefix copies tail of symbol to guard interval; converts linear channel convolution into circular convolution, eliminating ISI. PAPR is high due to constructive addition of N subcarriers, requiring linear power amplifiers."
     },
     {
-      "chapter": "Diversity and Equalization",
+      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
       "text": "Describe Multiple Input Multiple Output (MIMO) wireless systems. Compare Spatial Diversity (Alamouti Space-Time Block Coding) with Spatial Multiplexing (V-BLAST) for boosting link reliability and spectral efficiency.",
       "marks": "8",
       "years": [
@@ -328,7 +328,7 @@
       "solutionOutline": "MIMO uses multiple antennas at transmitter (N_t) and receiver (N_r). Spatial diversity (Alamouti 2x1 or 2x2 STBC) transmits orthogonal space-time blocks, maximizing diversity order without requiring channel knowledge at transmitter. Spatial multiplexing splits high-rate data stream into independent sub-streams transmitted simultaneously over same frequency, multiplying channel capacity linearly C approx min(N_t, N_r) log2(1 + SNR)."
     },
     {
-      "chapter": "Cellular Wireless Standards (GSM and CDMA)",
+      "chapter": "Wireless Networking and Cellular Standards (2G, 3G, 4G, 5G)",
       "text": "Detail the Global System for Mobile Communications (GSM) Architecture: Base Station Subsystem (BTS, BSC), Network Switching Subsystem (MSC, HLR, VLR, AuC, EIR), and Operation Support Subsystem (OSS). Explain the GSM frame hierarchy and authentication triplet ($RAND, SRES, K_c$).",
       "marks": "8",
       "years": [
@@ -341,7 +341,7 @@
       "solutionOutline": "2G cellular standard using TDMA/FDD (8 time slots per 200 kHz carrier, frame 4.615 ms). BSS: BTS contains radio transceivers; BSC manages radio resources and handovers. NSS: MSC routes calls; HLR stores permanent subscriber profiles; VLR caches roaming subscriber data; AuC generates authentication triplets (A3 algorithm produces SRES from RAND and Ki; A8 generates cipher key Kc); EIR tracks stolen IMEI devices."
     },
     {
-      "chapter": "Cellular Wireless Standards (GSM and CDMA)",
+      "chapter": "Wireless Networking and Cellular Standards (2G, 3G, 4G, 5G)",
       "text": "Describe IS-95 CDMA (cdmaOne) and WCDMA (3G UMTS). Explain Walsh codes for downlink orthogonality, PN short/long codes for cell separation, soft handoff, and RAKE receiver fingers with multipath resolving capability.",
       "marks": "8",
       "years": [
@@ -354,7 +354,7 @@
       "solutionOutline": "Direct Sequence CDMA. IS-95 uses 1.2288 Mcps spreading over 1.25 MHz channel. 64-chip Walsh codes provide mutually orthogonal downlink channels. PN short codes identify base station sectors via time offsets. Soft handoff ('make-before-break') allows mobile to communicate with multiple base stations simultaneously during cell transition. RAKE receiver uses multiple correlator fingers to capture multipath components separated by > 1 chip duration, combining them via MRC."
     },
     {
-      "chapter": "Cellular Wireless Standards (GSM and CDMA)",
+      "chapter": "Wireless Networking and Cellular Standards (2G, 3G, 4G, 5G)",
       "text": "Explain 4G LTE and 5G New Radio (NR) architectures. Discuss key technological evolutions: Evolved Packet System (EPS/EPC), OFDMA downlink / SC-FDMA uplink, Massive MIMO, Beamforming, and Network Slicing.",
       "marks": "8",
       "years": [
@@ -368,14 +368,12 @@
     }
   ],
   "chapters": [
-    "Cellular Concept and System Design",
-    "Mobile Radio Propagation and Fading",
-    "Radio Propagation Models",
-    "Digital Modulation for Mobile Radio",
-    "Diversity and Equalization",
-    "Multiple Access Techniques",
-    "Multicarrier Modulation (OFDM)",
-    "Cellular Wireless Standards (GSM and CDMA)",
-    "Spread Spectrum Techniques"
+    "Introduction to Wireless Communication Systems",
+    "Cellular Concept: System Design Fundamentals",
+    "Mobile Radio Propagation: Large-Scale Path Loss",
+    "Mobile Radio Propagation: Small-Scale Fading and Multipath",
+    "Modulation Techniques for Mobile Radio",
+    "Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA)",
+    "Wireless Networking and Cellular Standards (2G, 3G, 4G, 5G)"
   ]
 }

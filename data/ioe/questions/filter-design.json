@@ -3,7 +3,7 @@
   "subjectCode": "ENEX 301",
   "questions": [
     {
-      "chapter": "Filter Approximations",
+      "chapter": "Approximation Methods",
       "text": "Derive an expression to calculate the order of a Butterworth low pass filter. Use this expression to calculate the order of Butterworth low pass filter with the following specifications: Maximum passband attenuation $\\alpha_{\\max} = 3\\text{ dB}$ at $1\\text{ kHz}$, Minimum stopband attenuation $\\alpha_{\\min} = 40\\text{ dB}$ at $2.5\\text{ kHz}$. Also determine the pole locations and transfer function.",
       "marks": "9",
       "years": [
@@ -13,7 +13,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Filter Approximations",
+      "chapter": "Approximation Methods",
       "text": "Derive an expression to calculate the required order for given low pass specifications using Chebyshev approximation. Using the derived expression, calculate the order of Chebyshev filter for following specifications: $\\alpha_{\\max} = 0.5\\text{ dB}$ (or $1\\text{ dB}$), $\\alpha_{\\min} = 15\\text{ dB}$ (or $18\\text{ dB}$), $\\omega_p = 1000\\text{ rad/s}$, $\\omega_s = 2000\\text{ rad/s}$ (or $1400\\text{ rad/s}$). Also determine pole locations and transfer function.",
       "marks": "9",
       "years": [
@@ -23,7 +23,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Active Filter Biquads",
+      "chapter": "Design of Active Filters",
       "text": "Draw the circuit diagram of Tow-Thomas low pass biquad circuit and derive its transfer function. Design a second order low pass filter using Tow-Thomas biquad with poles at $-450 \\pm j893.03$ and DC gain of $1.3$ (or $1.5$). Make sure the elements in the final circuit are of practically realizable values.",
       "marks": "9",
       "years": [
@@ -33,7 +33,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Active Filter Biquads",
+      "chapter": "Design of Active Filters",
       "text": "Draw a neat circuit diagram of Tow-Thomas band-pass biquad and derive its transfer function. Design a band-pass filter with specified center frequency and bandwidth.",
       "marks": "5",
       "years": [
@@ -42,7 +42,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Filter Fundamentals and Transformations",
+      "chapter": "Frequency Transformation",
       "text": "Compare and contrast between ideal and practical filters. Explain the significance of magnitude scaling and frequency scaling used in filter design, and derive the necessary formulae to modify component values from $\\omega_{\\text{old}}$ to $\\omega_{\\text{new}}$.",
       "marks": "7",
       "years": [
@@ -53,7 +53,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Passive Network Synthesis",
+      "chapter": "Properties and Synthesis of Passive Networks",
       "text": "Determine whether the following functions are valid RC driving point impedance/admittance functions or not. State with reason:\n(a) $Z(s) = \\frac{(s+3)(s+6)}{(s+1)(s+5)}$, (b) $Z(s) = \\frac{2(s+1)(s+3)}{(s+2)(s+4)}$. Pick the valid RC function and synthesize it with Foster-II and Cauer-I form.",
       "marks": "8",
       "years": [
@@ -63,7 +63,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Passive Network Synthesis",
+      "chapter": "Properties and Synthesis of Passive Networks",
       "text": "Which of the following is an LC lossless function and why? Pick one of the valid LC lossless functions and realize it using Foster-I and Cauer-I form:\n(a) $Z_1(s) = \\frac{s(s^2+4)(s^2+6)}{(s^2+3)(s^2+9)}$, (b) $Z_2(s) = \\frac{(s^2+3)(s^2+6)}{s(s^2+4)(s^2+9)}$.",
       "marks": "8",
       "years": [
@@ -72,7 +72,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Lossless Ladder Filter Synthesis",
+      "chapter": "Design of Resistively- Terminated Lossless Filters",
       "text": "What information can be obtained from the reflection coefficient in filter design? Design a third-order Butterworth high pass filter using resistively terminated lossless ladder with equal termination of $1\\ \\Omega$ for both source and load.",
       "marks": "6",
       "years": [
@@ -82,7 +82,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Lossless Ladder Filter Synthesis",
+      "chapter": "Design of Resistively- Terminated Lossless Filters",
       "text": "Simulate the fourth order Butterworth low-pass filter in resistively terminated lossless ladder network using FDNR (Bruton Transformation) or leapfrog simulation. Accommodate half power frequency of $1000\\text{ rad/sec}$ (or $2000\\text{ rad/sec}$) with practically realizable components.",
       "marks": "6",
       "years": [
@@ -92,7 +92,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Active Filter Biquads",
+      "chapter": "Design of Active Filters",
       "text": "Design a 5th order Butterworth LPF using cascade of 1st order active section and MFB biquads with DC gain equal to unity and half power frequency at $1\\text{ kHz}$. Make the largest capacitance $0.1\\ \\mu\\text{F}$.",
       "marks": "8",
       "years": [
@@ -101,7 +101,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Sensitivity Analysis",
+      "chapter": "Sensitivity",
       "text": "Define sensitivity. Perform the sensitivity analysis for center frequency ($\\omega_0$) and quality factor ($Q$) of the Sallen-Key and Tow-Thomas low pass biquad with respect to all resistors and capacitors.",
       "marks": "5",
       "years": [
@@ -112,7 +112,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Active Filter Components",
+      "chapter": "Design of Active Filters",
       "text": "What is Bruton Transformation? What is a Generalized Impedance Converter (GIC)? How can a GIC be used to simulate a grounded inductor and FDNR? Explain with circuit diagrams and derivations.",
       "marks": "6",
       "years": [
@@ -122,7 +122,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Filter Approximations",
+      "chapter": "Approximation Methods",
       "text": "What is an all-pass filter and constant delay filter? State its importance in phase equalization. Find the transfer function of a third order Bessel-Thomson response having constant delay.",
       "marks": "5",
       "years": [
@@ -132,7 +132,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Filter Fundamentals and Transformations",
+      "chapter": "Frequency Transformation",
       "text": "Describe the frequency transformation from prototype low-pass filter to band-pass filter and high-pass filter with necessary mathematical derivations and examples.",
       "marks": "4",
       "years": [
@@ -143,7 +143,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Switched Capacitor and Current Mode Filters",
+      "chapter": "Other Filters",
       "text": "What is the significance of using current-mode filters in electronic circuits? With basic block diagram and characteristic equations, explain first-generation current conveyor (CCI) and second-generation current conveyor (CCII).",
       "marks": "4",
       "years": [
@@ -152,7 +152,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Switched Capacitor and Current Mode Filters",
+      "chapter": "Other Filters",
       "text": "What are switched capacitor filters? Explain how an equivalent resistor is simulated using a switched capacitor ($R_{eq} = \\frac{1}{f_c C}$) and state their advantages in MOS VLSI fabrication.",
       "marks": "6",
       "years": [
@@ -161,7 +161,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Filter Fundamentals and Transformations",
+      "chapter": "Frequency Transformation",
       "text": "Derive the Frequency Transformation formulas to map a normalized low-pass filter prototype ($s$) to High-Pass ($S = \\Omega_0/s$), Band-Pass ($S = \\frac{s^2 + \\omega_0^2}{B s}$), and Band-Stop filters.",
       "marks": "8",
       "years": [
@@ -174,7 +174,7 @@
       "solutionOutline": "Transforms normalized lowpass prototype into other filter responses. LP to HP: replace s with Omega_0/s (inverts passband and stopband). LP to BP: replace s with (s^2 + omega_0^2) / (B*s), mapping LP zero frequency to center frequency omega_0 and doubling filter order. LP to BS: replace s with B*s / (s^2 + omega_0^2), inverting bandpass response."
     },
     {
-      "chapter": "Passive Network Synthesis",
+      "chapter": "Properties and Synthesis of Passive Networks",
       "text": "State the necessary and sufficient properties of Positive Real (PR) functions. Test whether $F(s) = \\frac{s^2 + 2s + 6}{s^2 + 3s + 2}$ is a positive real function.",
       "marks": "8",
       "years": [
@@ -187,7 +187,7 @@
       "solutionOutline": "PR conditions: 1) F(s) real for real s; 2) Re[F(s)] >= 0 for Re[s] >= 0; 3) Poles and zeros in left-half s-plane or simple on j-omega axis with positive real residues. Test F(s): poles at s = -1, -2 (Hurwitz). Evaluate Re[F(j omega)] = (omega^4 - 2 omega^2 + 12) / ((2 - omega^2)^2 + 9 omega^2) >= 0 for all omega since discriminant of numerator is negative (no real roots). Hence F(s) is PR."
     },
     {
-      "chapter": "Passive Network Synthesis",
+      "chapter": "Properties and Synthesis of Passive Networks",
       "text": "Synthesize Foster-I and Foster-II realization networks for a driving-point LC impedance function $Z(s) = \\frac{10(s^2 + 4)(s^2 + 16)}{s(s^2 + 9)}$.",
       "marks": "8",
       "years": [
@@ -200,7 +200,7 @@
       "solutionOutline": "LC impedance: alternating poles and zeros on j-omega axis. Foster-I: partial fraction expansion of Z(s) yields series combination of pole terms: Z(s) = k_0/s + 2*k_1*s/(s^2 + 9) + k_infty*s, realizing series capacitor, parallel LC tanks, and series inductor. Foster-II: partial fraction expansion of Y(s) = 1/Z(s) gives parallel branches of series LC tanks."
     },
     {
-      "chapter": "Passive Network Synthesis",
+      "chapter": "Properties and Synthesis of Passive Networks",
       "text": "Synthesize Cauer-I and Cauer-II ladder networks for a driving-point RC impedance function $Z(s) = \\frac{(s + 1)(s + 3)}{s(s + 2)}$.",
       "marks": "8",
       "years": [
@@ -213,7 +213,7 @@
       "solutionOutline": "RC impedance: poles and zeros interlace on negative real axis, lowest critical frequency is pole at origin. Cauer-I: continued fraction expansion around s = infty (dividing in descending powers of s) realizes ladder of series resistors and shunt capacitors. Cauer-II: continued fraction expansion around s = 0 (ascending powers of s) realizes ladder of series capacitors and shunt resistors."
     },
     {
-      "chapter": "Lossless Ladder Filter Synthesis",
+      "chapter": "Design of Resistively- Terminated Lossless Filters",
       "text": "Explain Darlington Synthesis procedure for doubly-terminated lossless two-port LC ladder filter networks with source and load resistances.",
       "marks": "8",
       "years": [
@@ -226,7 +226,7 @@
       "solutionOutline": "Darlington method synthesizes any PR driving-point impedance as a lossless LC two-port terminated in a single resistor. Doubly-terminated LC ladder filters achieve minimum sensitivity to component tolerances in passband because maximum power transfer theorem guarantees zero first-order sensitivity d|T|/dx = 0 at reflection zeros."
     },
     {
-      "chapter": "Active Filter Biquads",
+      "chapter": "Design of Active Filters",
       "text": "Explain Sallen-Key Low-Pass and High-Pass active biquad filter topologies. Derive the voltage transfer function $T(s) = \\frac{V_o(s)}{V_i(s)}$, resonant frequency $\\omega_0$, and quality factor $Q$.",
       "marks": "8",
       "years": [
@@ -239,7 +239,7 @@
       "solutionOutline": "Single op-amp active biquad with positive feedback. Lowpass topology uses two series resistors R1, R2 and capacitors C1 (bootstrapped feedback to output) and C2 (to ground). T(s) = K / [s^2 (R1 R2 C1 C2) + s(R1 C2 + R2 C2 + R1 C1(1 - K)) + 1]. omega_0 = 1 / sqrt(R1 R2 C1 C2). Q determined by op-amp gain K and RC ratios."
     },
     {
-      "chapter": "Active Filter Biquads",
+      "chapter": "Design of Active Filters",
       "text": "Explain the Tow-Thomas Biquad and State-Variable Biquad architectures. Derive the simultaneous transfer functions for Low-Pass, Band-Pass, and High-Pass outputs.",
       "marks": "8",
       "years": [
@@ -252,7 +252,7 @@
       "solutionOutline": "Tow-Thomas biquad uses three op-amps: lossy integrator, lossless inverting integrator, and inverter. Resolves high Q sensitivity of single-op-amp circuits by independent tuning of gain, resonant frequency omega_0 = 1/(RC), and quality factor Q. Offers low passive component sensitivity and simultaneous outputs."
     },
     {
-      "chapter": "Sensitivity Analysis",
+      "chapter": "Sensitivity",
       "text": "Define $\\omega_0$-sensitivity and $Q$-sensitivity with respect to passive components ($R, C$) and active operational amplifier gain $K$: $S_x^y = \\frac{x}{y} \\frac{\\partial y}{\\partial x}$. Calculate sensitivities for a Sallen-Key biquad.",
       "marks": "8",
       "years": [
@@ -265,7 +265,7 @@
       "solutionOutline": "Sensitivity measures fractional change in network parameter y due to fractional variation in element x: S_x^y = (d y / y) / (d x / x). For Sallen-Key: S_R1^{omega_0} = S_R2^{omega_0} = S_C1^{omega_0} = S_C2^{omega_0} = -0.5. For high Q, Q-sensitivity to op-amp gain K is proportional to (2Q - 1), showing high sensitivity for large Q values in single-op-amp topologies."
     },
     {
-      "chapter": "Switched Capacitor and Current Mode Filters",
+      "chapter": "Other Filters",
       "text": "Explain Switched Capacitor Filters (SCF). Prove that a parallel-switched capacitor resistor equivalent has resistance $R_{eq} = \\frac{1}{f_c C}$. Discuss advantages of SC filters over active RC filters in VLSI integration.",
       "marks": "8",
       "years": [
@@ -278,7 +278,7 @@
       "solutionOutline": "In non-overlapping two-phase clock phi1, phi2 at frequency f_c: charge transferred per cycle Delta q = C(V1 - V2). Average current I_avg = Delta q / T_c = f_c C (V1 - V2). Equivalent resistance R_eq = (V1 - V2)/I_avg = 1 / (f_c C). Critical pole frequencies depend only on capacitor ratios (C1/C2) and clock frequency f_c, achieving 0.1% accuracy on CMOS ICs without external tuning."
     },
     {
-      "chapter": "Active Filter Components",
+      "chapter": "Design of Active Filters",
       "text": "Explain Operational Transconductance Amplifiers (OTA) and OTA-C (Gm-C) filter design. Synthesize a first-order and second-order low-pass filter using OTAs and grounded capacitors.",
       "marks": "8",
       "years": [
@@ -291,7 +291,7 @@
       "solutionOutline": "OTA is a voltage-controlled current source (VCCS) where output current I_out = g_m (V_+ - V_-), and transconductance g_m is electronically tunable via DC bias current I_bias. Eliminates resistors completely, making it ideal for high-frequency (MHz-GHz) CMOS monolithic integration using grounded capacitors."
     },
     {
-      "chapter": "Filter Approximations",
+      "chapter": "Approximation Methods",
       "text": "Compare Butterworth, Chebyshev Type-I, Chebyshev Type-II (Inverse Chebyshev), and Elliptic (Cauer) filter approximations in terms of pole-zero locations, transition width, and passband/stopband ripple characteristics.",
       "marks": "8",
       "years": [
@@ -304,7 +304,7 @@
       "solutionOutline": "Butterworth: maximally flat in passband and stopband, all-pole on circle of radius Omega_c. Chebyshev Type-I: equiripple passband, monotonic stopband, poles on ellipse. Chebyshev Type-II: monotonic passband, equiripple stopband (contains j-omega zeros). Elliptic: equiripple in both passband and stopband with transmission zeros, achieving steepest transition roll-off for a given filter order N."
     },
     {
-      "chapter": "Filter Approximations",
+      "chapter": "Approximation Methods",
       "text": "Explain Bessel (Maximally Flat Delay) Filter Approximation. Derive the Thomson polynomial and discuss why Bessel filters provide linear phase response and zero ringing/overshoot in pulse transmission.",
       "marks": "6",
       "years": [
@@ -317,7 +317,7 @@
       "solutionOutline": "Bessel approximation maximizes flatness of group delay tau_g(omega) = -d theta/d omega around omega = 0 using Bessel/Thomson polynomials B_N(s). Linear phase ensures all frequency components propagate with identical time delay, eliminating pulse distortion, dispersion, and overshoot in digital data transmission."
     },
     {
-      "chapter": "Active Filter Components",
+      "chapter": "Design of Active Filters",
       "text": "Describe Inductor Simulation using Active RC Networks (Antoniou General Impedance Converter - GIC). Derive the simulated inductance $L = \\frac{R_1 R_3 R_5 C_4}{R_2}$ and show how it replaces inductors in ladder filters.",
       "marks": "8",
       "years": [
@@ -330,7 +330,7 @@
       "solutionOutline": "Antoniou GIC uses two op-amps and five passive elements. Input impedance Z_in(s) = (Z1 Z3 Z5) / (Z2 Z4). Choosing Z1=R1, Z2=R2, Z3=R3, Z4=1/(sC4), Z5=R5 gives Z_in(s) = s * (R1 R3 R5 C4 / R2) = s L. Replaces bulky physical lossy inductors in high-order passive ladder prototypes with stable, high-Q active circuits."
     },
     {
-      "chapter": "Switched Capacitor and Current Mode Filters",
+      "chapter": "Other Filters",
       "text": "Explain Current Conveyors (CCI, CCII, CCIII) in current-mode signal processing. Draw the port characteristics matrix of CCII+ and synthesize an active current-mode bandpass filter.",
       "marks": "8",
       "years": [
@@ -344,13 +344,13 @@
     }
   ],
   "chapters": [
-    "Filter Fundamentals and Transformations",
-    "Filter Approximations",
-    "Passive Network Synthesis",
-    "Lossless Ladder Filter Synthesis",
-    "Active Filter Components",
-    "Active Filter Biquads",
-    "Sensitivity Analysis",
-    "Switched Capacitor and Current Mode Filters"
+    "Introduction",
+    "Approximation Methods",
+    "Frequency Transformation",
+    "Properties and Synthesis of Passive Networks",
+    "Design of Resistively- Terminated Lossless Filters",
+    "Design of Active Filters",
+    "Sensitivity",
+    "Other Filters"
   ]
 }

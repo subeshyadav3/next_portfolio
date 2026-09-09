@@ -2,19 +2,18 @@
   "subject": "Operating System",
   "generated": "2026-09-09",
   "chapters": [
-    "Introduction to Operating System",
-    "Processes and Threads",
-    "CPU Scheduling",
-    "Process Synchronization",
-    "Deadlocks",
-    "Memory Management",
+    "Introduction",
+    "Process Management",
+    "Process Communication and Synchronization",
+    "I/O and Memory Management",
     "File Systems",
-    "I/O Systems",
-    "Security and Protection"
+    "Security and System Administration",
+    "Hypervisors and Virtual Systems",
+    "Overview of Contemporary OS"
   ],
   "questions": [
     {
-      "chapter": "CPU Scheduling",
+      "chapter": "Process Management",
       "text": "Explain the significance of the Process Control Block (PCB). For the given set of processes with arrival time, burst time, and priority, draw Gantt charts and calculate average Turnaround Time (TAT), average Waiting Time (WT), CPU utilization, and throughput according to FCFS, Shortest Remaining Time First (SRTF), and Round Robin (RR) scheduling algorithms.",
       "marks": "10",
       "years": [
@@ -42,7 +41,7 @@
       ]
     },
     {
-      "chapter": "Deadlocks",
+      "chapter": "Process Communication and Synchronization",
       "text": "What are the four necessary conditions for deadlock? Consider a system with 5 processes (P0-P4) and 3 resource types (A, B, C) with given Allocation, Max, and Available matrices. (a) Compute the Need matrix, (b) Check if the system is in a safe state and show the safe execution sequence using Banker's Algorithm, and (c) Determine if an immediate resource request from P1 can be granted.",
       "marks": "10",
       "years": [
@@ -70,7 +69,7 @@
       ]
     },
     {
-      "chapter": "Memory Management",
+      "chapter": "I/O and Memory Management",
       "text": "Differentiate between internal and external fragmentation. Consider the following page reference string: 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1 with 3 (or 4) page frames. Calculate the number of page faults that occur for: (a) FIFO, (b) LRU, and (c) Optimal page replacement algorithms, and identify Belady's Anomaly.",
       "marks": "10",
       "years": [
@@ -98,7 +97,7 @@
       ]
     },
     {
-      "chapter": "Process Synchronization",
+      "chapter": "Process Communication and Synchronization",
       "text": "What is a race condition and critical section problem? Explain binary and counting semaphores along with wait() and signal() operations. Provide pseudocode to solve the Producer-Consumer problem using bounded-buffer semaphores (mutex, empty, full).",
       "marks": "8",
       "years": [
@@ -126,7 +125,7 @@
       ]
     },
     {
-      "chapter": "I/O Systems",
+      "chapter": "I/O and Memory Management",
       "text": "Suppose a disk drive has 200 tracks (numbered 0-199). The read/write head is currently serving a request at track 53 (or 60) and previous request was at track 54. The queue of pending requests in FIFO order is: 98, 183, 37, 122, 14, 124, 65, 67. Calculate the total head movement (seek distance in cylinders) for: (a) FCFS, (b) SSTF, (c) SCAN, and (d) C-LOOK algorithms.",
       "marks": "8",
       "years": [
@@ -154,7 +153,7 @@
       ]
     },
     {
-      "chapter": "Introduction to Operating System",
+      "chapter": "Introduction",
       "text": "How does an operating system act as an extended machine and a resource manager? Explain with examples. What are the architectural trade-offs between Monolithic, Layered, and Microkernel operating system structures?",
       "marks": "8",
       "years": [
@@ -180,7 +179,7 @@
       ]
     },
     {
-      "chapter": "Memory Management",
+      "chapter": "I/O and Memory Management",
       "text": "Explain how a logical address is mapped to a physical address in a paging scheme using a Page Table and Translation Lookaside Buffer (TLB). Define Effective Memory Access Time (EMAT) and calculate EMAT for given memory access time and TLB hit ratio.",
       "marks": "8",
       "years": [
@@ -232,7 +231,7 @@
       ]
     },
     {
-      "chapter": "Processes and Threads",
+      "chapter": "Process Management",
       "text": "Why are threads called lightweight processes (LWP)? Compare User-Level Threads (ULT) and Kernel-Level Threads (KLT) with respect to context switching overhead, kernel scheduling, and system call blocking.",
       "marks": "6",
       "years": [
@@ -258,7 +257,7 @@
       ]
     },
     {
-      "chapter": "Processes and Threads",
+      "chapter": "Process Management",
       "text": "Explain process lifecycle states (New, Ready, Running, Waiting, Terminated) and draw the complete state transition diagram. Explain context switching and what data structures are saved and restored during a context switch.",
       "marks": "6",
       "years": [
@@ -282,7 +281,7 @@
       ]
     },
     {
-      "chapter": "Deadlocks",
+      "chapter": "Process Communication and Synchronization",
       "text": "Explain deadlock handling strategies: Deadlock Prevention, Deadlock Avoidance, and Deadlock Detection and Recovery. How does eliminating mutual exclusion, hold-and-wait, no preemption, or circular wait prevent deadlocks?",
       "marks": "6",
       "years": [
@@ -306,7 +305,7 @@
       ]
     },
     {
-      "chapter": "Memory Management",
+      "chapter": "I/O and Memory Management",
       "text": "What is thrashing in virtual memory? Explain the causes of thrashing and describe how the Working Set model and Page Fault Frequency (PFF) technique detect and prevent thrashing.",
       "marks": "6",
       "years": [
@@ -330,7 +329,7 @@
       ]
     },
     {
-      "chapter": "Introduction to Operating System",
+      "chapter": "Introduction",
       "text": "Explain dual-mode operation (User Mode vs Kernel/Privileged Mode) and hardware protection using mode bits. Trace the step-by-step mechanism of a system call from user-space invocation to kernel-space service execution.",
       "marks": "6",
       "years": [
@@ -354,7 +353,7 @@
       ]
     },
     {
-      "chapter": "I/O Systems",
+      "chapter": "I/O and Memory Management",
       "text": "Describe the layered architecture of I/O software. Differentiate between Programmed I/O, Interrupt-Driven I/O, and Direct Memory Access (DMA). What is the role of a device driver?",
       "marks": "6",
       "years": [
@@ -376,7 +375,7 @@
       ]
     },
     {
-      "chapter": "Security and Protection",
+      "chapter": "Security and System Administration",
       "text": "Differentiate between Access Control Lists (ACL) and Capability Lists for resource authorization. Explain the principles of protection (Domain of protection) and how encryption/decryption safeguards operating system files.",
       "marks": "6",
       "years": [
@@ -398,7 +397,7 @@
       ]
     },
     {
-      "chapter": "Process Synchronization",
+      "chapter": "Process Communication and Synchronization",
       "text": "What is the Critical Section Problem? State the three requirements (Mutual Exclusion, Progress, Bounded Waiting) that any valid solution must satisfy. Explain Peterson's algorithm for two processes.",
       "marks": "6",
       "years": [
@@ -421,7 +420,7 @@
     },
     {
       "id": "operating-system-17",
-      "chapter": "Introduction to Operating System",
+      "chapter": "Introduction",
       "question": "Explain dual-mode operation (User mode vs Kernel mode) in modern operating systems. How does a system call switch modes using hardware interrupts?",
       "text": "Explain dual-mode operation (User mode vs Kernel mode) in modern operating systems. How does a system call switch modes using hardware interrupts?",
       "marks": "6",
@@ -439,7 +438,7 @@
     },
     {
       "id": "operating-system-18",
-      "chapter": "Processes and Threads",
+      "chapter": "Process Management",
       "question": "Differentiate between user-level threads and kernel-level threads. Explain multithreading models: Many-to-One, One-to-One, and Many-to-Many.",
       "text": "Differentiate between user-level threads and kernel-level threads. Explain multithreading models: Many-to-One, One-to-One, and Many-to-Many.",
       "marks": "6",
@@ -457,7 +456,7 @@
     },
     {
       "id": "operating-system-19",
-      "chapter": "Processes and Threads",
+      "chapter": "Process Management",
       "question": "Explain the process life cycle state transition diagram. What happens during a context switch and what are its overheads?",
       "text": "Explain the process life cycle state transition diagram. What happens during a context switch and what are its overheads?",
       "marks": "6",
@@ -475,7 +474,7 @@
     },
     {
       "id": "operating-system-20",
-      "chapter": "CPU Scheduling",
+      "chapter": "Process Management",
       "question": "Consider five processes P1, P2, P3, P4, P5 with arrival times (0, 1, 2, 3, 4) and burst times (10, 1, 2, 1, 5). Draw Gantt charts and calculate average turnaround time and average waiting time for: (i) FCFS, (ii) SJF (preemptive), and (iii) Round Robin (quantum = 2).",
       "text": "Consider five processes P1, P2, P3, P4, P5 with arrival times (0, 1, 2, 3, 4) and burst times (10, 1, 2, 1, 5). Draw Gantt charts and calculate average turnaround time and average waiting time for: (i) FCFS, (ii) SJF (preemptive), and (iii) Round Robin (quantum = 2).",
       "marks": "8",
@@ -493,7 +492,7 @@
     },
     {
       "id": "operating-system-21",
-      "chapter": "Process Synchronization",
+      "chapter": "Process Communication and Synchronization",
       "question": "Explain Peterson's algorithm for two-process mutual exclusion. Prove that it satisfies Mutual Exclusion, Progress, and Bounded Waiting requirements.",
       "text": "Explain Peterson's algorithm for two-process mutual exclusion. Prove that it satisfies Mutual Exclusion, Progress, and Bounded Waiting requirements.",
       "marks": "8",
@@ -511,7 +510,7 @@
     },
     {
       "id": "operating-system-22",
-      "chapter": "Process Synchronization",
+      "chapter": "Process Communication and Synchronization",
       "question": "Explain the Dining Philosophers Problem. Provide a deadlock-free solution using semaphores or monitors.",
       "text": "Explain the Dining Philosophers Problem. Provide a deadlock-free solution using semaphores or monitors.",
       "marks": "8",
@@ -529,7 +528,7 @@
     },
     {
       "id": "operating-system-23",
-      "chapter": "Process Synchronization",
+      "chapter": "Process Communication and Synchronization",
       "question": "Explain the Readers-Writers problem. Provide a synchronization solution using semaphores giving priority to readers.",
       "text": "Explain the Readers-Writers problem. Provide a synchronization solution using semaphores giving priority to readers.",
       "marks": "8",
@@ -547,7 +546,7 @@
     },
     {
       "id": "operating-system-24",
-      "chapter": "Deadlocks",
+      "chapter": "Process Communication and Synchronization",
       "question": "State and explain Banker's Algorithm for deadlock avoidance. Given Allocation, Max, and Available resource matrices for 5 processes and 3 resource types (A, B, C), determine if the system is in a safe state and find a safe sequence.",
       "text": "State and explain Banker's Algorithm for deadlock avoidance. Given Allocation, Max, and Available resource matrices for 5 processes and 3 resource types (A, B, C), determine if the system is in a safe state and find a safe sequence.",
       "marks": "8",
@@ -565,7 +564,7 @@
     },
     {
       "id": "operating-system-25",
-      "chapter": "Deadlocks",
+      "chapter": "Process Communication and Synchronization",
       "question": "Explain Resource Allocation Graph (RAG) and Wait-For Graph (WFG). Explain how deadlock detection is performed in single vs multiple instances of resource types.",
       "text": "Explain Resource Allocation Graph (RAG) and Wait-For Graph (WFG). Explain how deadlock detection is performed in single vs multiple instances of resource types.",
       "marks": "6",
@@ -583,7 +582,7 @@
     },
     {
       "id": "operating-system-26",
-      "chapter": "Memory Management",
+      "chapter": "I/O and Memory Management",
       "question": "Explain Paging and Segmentation memory management schemes. Describe the hardware implementation of paging with Translation Lookaside Buffer (TLB) and calculate Effective Memory Access Time (EMAT).",
       "text": "Explain Paging and Segmentation memory management schemes. Describe the hardware implementation of paging with Translation Lookaside Buffer (TLB) and calculate Effective Memory Access Time (EMAT).",
       "marks": "8",
@@ -601,7 +600,7 @@
     },
     {
       "id": "operating-system-27",
-      "chapter": "Memory Management",
+      "chapter": "I/O and Memory Management",
       "question": "Consider the page reference string: $7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1$. Calculate the number of page faults for 3 frames using: (i) FIFO, (ii) Optimal, and (iii) LRU page replacement algorithms. Explain Belady's Anomaly.",
       "text": "Consider the page reference string: $7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1$. Calculate the number of page faults for 3 frames using: (i) FIFO, (ii) Optimal, and (iii) LRU page replacement algorithms. Explain Belady's Anomaly.",
       "marks": "8",
@@ -637,7 +636,7 @@
     },
     {
       "id": "operating-system-29",
-      "chapter": "I/O Systems",
+      "chapter": "I/O and Memory Management",
       "question": "Explain disk scheduling algorithms: FCFS, SSTF, SCAN, and C-SCAN. For a disk with 200 cylinders (0 to 199), calculate total head movement for requests: $98, 183, 37, 122, 14, 124, 65, 67$ starting at cylinder 53 moving towards larger cylinder numbers.",
       "text": "Explain disk scheduling algorithms: FCFS, SSTF, SCAN, and C-SCAN. For a disk with 200 cylinders (0 to 199), calculate total head movement for requests: $98, 183, 37, 122, 14, 124, 65, 67$ starting at cylinder 53 moving towards larger cylinder numbers.",
       "marks": "8",
@@ -655,7 +654,7 @@
     },
     {
       "id": "operating-system-30",
-      "chapter": "Security and Protection",
+      "chapter": "Security and System Administration",
       "question": "Explain the Access Matrix model for system protection and its implementation mechanisms: Access Control Lists (ACL) and Capabilities.",
       "text": "Explain the Access Matrix model for system protection and its implementation mechanisms: Access Control Lists (ACL) and Capabilities.",
       "marks": "6",

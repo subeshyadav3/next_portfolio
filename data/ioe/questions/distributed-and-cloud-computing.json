@@ -3,7 +3,7 @@
   "subjectCode": "ENCT 411",
   "questions": [
     {
-      "chapter": "Consistency and Replication",
+      "chapter": "Consistency, Replication, and Fault Tolerance",
       "text": "State and explain Brewer's CAP Theorem (Consistency, Availability, Partition Tolerance). Explain why a distributed system can guarantee at most two of the three properties under network partitions. Compare Strong Consistency, Sequential Consistency, and Eventual Consistency.",
       "marks": "10",
       "years": [
@@ -25,7 +25,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Cloud Computing Models and Architecture",
+      "chapter": "Cloud Computing Architecture and Service Models",
       "text": "Compare Cloud Service Models: Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) with shared responsibility architectural diagrams. Compare Public, Private, Hybrid, and Community cloud deployment models.",
       "marks": "8",
       "years": [
@@ -36,7 +36,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Virtualization and Resource Management",
+      "chapter": "Virtualization and Containerization",
       "text": "Explain Cloud Virtualization techniques: Full Virtualization, Paravirtualization, and Hardware-Assisted Virtualization. Compare Hypervisor-based Virtual Machines (VMs) with OS-level Containerization (Docker) in terms of isolation, resource overhead, startup latency, and density.",
       "marks": "8",
       "years": [
@@ -59,7 +59,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Characterization of Distributed Systems",
+      "chapter": "Introduction to Distributed Systems",
       "text": "How is Enterprise Application Integration different from legacy middleware systems? Explain the benefits of N-tier distributed architecture over monolithic architecture in software development.",
       "marks": "8",
       "years": [
@@ -117,7 +117,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Synchronization and Clock Synchronization",
+      "chapter": "Synchronization and Coordination",
       "text": "Explain Clock Synchronization in distributed systems: Lamport's Logical Clocks and Vector Clocks. Prove that if event $a$ happened-before event $b$ ($a \\to b$), then $C(a) < C(b)$.",
       "marks": "8",
       "years": [
@@ -128,7 +128,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Synchronization and Clock Synchronization",
+      "chapter": "Synchronization and Coordination",
       "text": "Explain Election Algorithms in distributed systems: (a) The Bully Algorithm, and (b) The Ring Election Algorithm. Trace message exchanges and state updates when the current coordinator node crashes.",
       "marks": "7",
       "years": [
@@ -139,7 +139,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Fault Tolerance and Consensus",
+      "chapter": "Consistency, Replication, and Fault Tolerance",
       "text": "Explain the Two-Phase Commit (2PC) atomic transaction protocol in distributed systems. Describe the Voting Phase, Commit Phase, and coordinator recovery mechanisms under failure.",
       "marks": "8",
       "years": [
@@ -150,7 +150,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Cloud Storage and Big Data Frameworks",
+      "chapter": "Distributed File Systems and Storage",
       "text": "Explain the architecture of the Hadoop Distributed File System (HDFS): NameNode, DataNodes, Secondary NameNode, chunk block replication ($128\\text{ MB}$), and rack awareness. Explain the MapReduce distributed computational model with WordCount dataflow.",
       "marks": "10",
       "years": [
@@ -161,7 +161,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Cloud Computing Models and Architecture",
+      "chapter": "Cloud Computing Architecture and Service Models",
       "text": "Write short notes on: (a) Edge Computing versus Cloud Computing, (b) Facade Design Pattern in enterprise tiers, (c) Web 3.0 and data decentralization.",
       "marks": "6",
       "years": [
@@ -171,7 +171,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Virtualization and Resource Management",
+      "chapter": "Virtualization and Containerization",
       "text": "Explain Elasticity and Auto-Scaling in cloud infrastructure. Differentiate between Horizontal Scaling (Scale-Out/Scale-In) and Vertical Scaling (Scale-Up/Scale-Down). Describe live virtual machine migration.",
       "marks": "7",
       "years": [
@@ -181,7 +181,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Synchronization and Clock Synchronization",
+      "chapter": "Synchronization and Coordination",
       "text": "Explain Lamport's Logical Clocks and Vector Clocks. Prove the happens-before relationship and causal ordering of events in distributed systems. Trace vector timestamps for a three-process communication scenario.",
       "marks": "8",
       "years": [
@@ -194,7 +194,7 @@
       "solutionOutline": "Lamport scalar clocks assign monotonically increasing counters L(e) to events: if a -> b, then L(a) < L(b), but converse does not hold (cannot detect concurrent events). Vector clocks assign vector V of size N: Vi[j] represents process Pi knowledge of Pj clock. If V(a) < V(b), then a causally precedes b, enabling precise detection of concurrency."
     },
     {
-      "chapter": "Synchronization and Clock Synchronization",
+      "chapter": "Synchronization and Coordination",
       "text": "Explain Distributed Mutual Exclusion algorithms: Centralized algorithm, Ricart-Agrawala algorithm, and Maekawa's voting algorithm. Compare message complexity and synchronization delay.",
       "marks": "8",
       "years": [
@@ -207,7 +207,7 @@
       "solutionOutline": "Centralized: 3 messages per CS entry/exit (single point of failure). Ricart-Agrawala: broadcasts timestamped request to all N-1 nodes; enters CS only after receiving OK from all; requires 2(N-1) messages. Maekawa: divides N nodes into voting subsets of size K approx sqrt(N); process enters CS upon receiving grants from its quorum; requires 3*sqrt(N) messages."
     },
     {
-      "chapter": "Synchronization and Clock Synchronization",
+      "chapter": "Synchronization and Coordination",
       "text": "Explain Coordinator Election Algorithms in distributed systems: Bully Algorithm and Ring Algorithm. Trace coordinator election when the highest priority process crashes.",
       "marks": "8",
       "years": [
@@ -220,7 +220,7 @@
       "solutionOutline": "Bully algorithm: any process detecting coordinator failure sends ELECTION message to all processes with higher IDs. If no answer, process declares itself coordinator and sends COORDINATOR message to all lower IDs; if higher ID answers, higher ID takes over. Ring algorithm: processes organized in logical ring; election token circulates collecting active process IDs; highest ID elected."
     },
     {
-      "chapter": "Fault Tolerance and Consensus",
+      "chapter": "Consistency, Replication, and Fault Tolerance",
       "text": "Explain the Byzantine Generals Problem. Prove why consensus cannot be reached among $m$ faulty (arbitrary/malicious) generals unless the total number of generals is at least $3m + 1$ under oral messaging.",
       "marks": "8",
       "years": [
@@ -233,7 +233,7 @@
       "solutionOutline": "Byzantine fault models components that can fail arbitrarily and send conflicting, contradictory information. For 3 generals (1 traitor, m=1), loyal general cannot distinguish whether commander or other lieutenant is traitor (requires N >= 3m+1 = 4). Solved using oral message algorithms OM(m) with m rounds of message forwarding or cryptographic digital signatures."
     },
     {
-      "chapter": "Fault Tolerance and Consensus",
+      "chapter": "Consistency, Replication, and Fault Tolerance",
       "text": "Explain the Raft Consensus Algorithm. Describe Leader Election, Log Replication, Term numbers, and Safety guarantees compared with Multi-Paxos.",
       "marks": "8",
       "years": [
@@ -245,7 +245,7 @@
       "solutionOutline": "Raft decomposes consensus into understandable sub-problems. Nodes in states: Follower, Candidate, Leader. Leader election uses randomized election timers and RequestVote RPCs. Log replication: Leader receives client commands, appends to log, broadcasts AppendEntries RPCs to followers, committing entry upon majority ACK. Safety: candidate must possess all committed entries to win election."
     },
     {
-      "chapter": "Fault Tolerance and Consensus",
+      "chapter": "Consistency, Replication, and Fault Tolerance",
       "text": "Explain Two-Phase Commit (2PC) and Three-Phase Commit (3PC) protocols for distributed atomic transactions. Why is 2PC a blocking protocol upon coordinator crash?",
       "marks": "8",
       "years": [
@@ -258,7 +258,7 @@
       "solutionOutline": "2PC guarantees all distributed participants either commit or abort. Phase 1 (Prepare): coordinator asks can-commit; participants respond yes/no. Phase 2 (Commit): coordinator sends global-commit if all yes, else global-abort. Blocking: if coordinator crashes during Phase 2 after participants voted yes, participants remain blocked holding locks indefinitely. 3PC inserts Pre-Commit state to avoid blocking under fail-stop assumptions."
     },
     {
-      "chapter": "Virtualization and Resource Management",
+      "chapter": "Virtualization and Containerization",
       "text": "Describe Hypervisor Virtualization: Type-1 (Bare-Metal) vs Type-2 (Hosted). Explain hardware-assisted virtualization (Intel VT-x, AMD-V) and full virtualization vs paravirtualization.",
       "marks": "8",
       "years": [
@@ -271,7 +271,7 @@
       "solutionOutline": "Type-1 hypervisors (ESXi, Xen, KVM) run directly on host hardware; high performance, enterprise cloud servers. Type-2 hypervisors (VirtualBox, VMware Workstation) run on top of host OS. Full virtualization runs unmodified guest OS using binary translation or VT-x hardware root/non-root modes. Paravirtualization modifies guest OS kernel with hypercalls (Xen) for lower virtualization overhead."
     },
     {
-      "chapter": "Virtualization and Resource Management",
+      "chapter": "Virtualization and Containerization",
       "text": "Explain Containerization and OS-level virtualization. Compare Docker containers with Virtual Machines (VMs) in terms of startup latency, kernel sharing, resource overhead, and isolation.",
       "marks": "8",
       "years": [
@@ -283,7 +283,7 @@
       "solutionOutline": "Containers isolate user-space processes sharing host OS kernel using Linux kernel namespaces (pid, net, mnt, ipc) and cgroups (CPU, memory resource limits). Comparison: Containers share host kernel (millisecond startup, megabyte footprints, high density); VMs emulate hardware with separate guest OS kernel (minute startup, gigabyte footprint, hardware-level isolation)."
     },
     {
-      "chapter": "Virtualization and Resource Management",
+      "chapter": "Virtualization and Containerization",
       "text": "Explain Container Orchestration with Kubernetes (K8s). Describe Control Plane components (API Server, etcd, Scheduler, Controller Manager) and Worker Node components (Kubelet, Kube-proxy, Container Runtime, Pods).",
       "marks": "8",
       "years": [
@@ -295,7 +295,7 @@
       "solutionOutline": "Automates deployment, scaling, and operations of containerized applications. Control Plane: kube-apiserver (REST API gateway), etcd (distributed key-value store for cluster state), kube-scheduler (assigns pods to nodes), kube-controller-manager (maintains desired state). Worker Node: kubelet (node agent enforcing pod specs), kube-proxy (network packet forwarding/load balancing), Pod (atomic unit of co-located containers)."
     },
     {
-      "chapter": "Cloud Storage and Big Data Frameworks",
+      "chapter": "Distributed File Systems and Storage",
       "text": "Explain the MapReduce programming paradigm. Formulate the Map and Reduce functions for word count and inverted index generation with execution flow across Mappers and Reducers.",
       "marks": "8",
       "years": [
@@ -308,7 +308,7 @@
       "solutionOutline": "Processes large datasets in parallel across clusters. Map: (k1, v1) -> list(k2, v2). Shuffling & Sorting: partitions intermediate keys and groups values by key: (k2, list(v2)). Reduce: (k2, list(v2)) -> list(k3, v3). Word count: Map outputs (word, 1); Reduce sums counts for each word. Inverted index: Map outputs (word, docID); Reduce aggregates unique docIDs for search index."
     },
     {
-      "chapter": "Cloud Storage and Big Data Frameworks",
+      "chapter": "Distributed File Systems and Storage",
       "text": "Describe the Hadoop Distributed File System (HDFS) architecture: NameNode, DataNodes, Block Replication (default 3x), Heartbeat signals, and Secondary NameNode checkpointing.",
       "marks": "8",
       "years": [
@@ -321,7 +321,7 @@
       "solutionOutline": "Master/slave distributed file system for large sequential data streaming. Files split into large blocks (128MB). NameNode stores metadata and block mapping in RAM and EditLog/FsImage. DataNodes store physical blocks on local disks. Default 3x replication places 2 copies on same rack, 1 on remote rack for rack-fault tolerance. Secondary NameNode merges EditLog into FsImage periodically to prevent log bloat."
     },
     {
-      "chapter": "Cloud Computing Models and Architecture",
+      "chapter": "Cloud Computing Architecture and Service Models",
       "text": "What is Serverless Computing (Function-as-a-Service - FaaS)? Explain cold start latency, event-driven triggers, stateless execution, and autoscaling compared with containerized microservices.",
       "marks": "6",
       "years": [
@@ -359,13 +359,13 @@
     }
   ],
   "chapters": [
-    "Characterization of Distributed Systems",
+    "Introduction to Distributed Systems",
     "Communication in Distributed Systems",
-    "Synchronization and Clock Synchronization",
-    "Consistency and Replication",
-    "Fault Tolerance and Consensus",
-    "Cloud Computing Models and Architecture",
-    "Virtualization and Resource Management",
-    "Cloud Storage and Big Data Frameworks"
+    "Synchronization and Coordination",
+    "Consistency, Replication, and Fault Tolerance",
+    "Distributed File Systems and Storage",
+    "Cloud Computing Architecture and Service Models",
+    "Virtualization and Containerization",
+    "Cloud Resource Management and Security"
   ]
 }

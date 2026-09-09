@@ -3,7 +3,7 @@
   "subjectCode": "ENEX 255",
   "questions": [
     {
-      "chapter": "Signals and Signal Classification",
+      "chapter": "Signal and its Types",
       "text": "Define energy signal and power signal with mathematical expressions and examples. Determine whether the signal $x(t) = e^{-at}u(t)$ for $a > 0$ (or $x(t) = 5\\cos(t)$) is an energy signal, power signal, or neither, and calculate its total energy or average power.",
       "marks": "8",
       "years": [
@@ -15,7 +15,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Signals and Signal Classification",
+      "chapter": "Signal and its Types",
       "text": "Show that any arbitrary continuous or discrete time signal can be decomposed into an even component and an odd component ($x(t) = x_e(t) + x_o(t)$). Find and sketch the even and odd components of a given signal.",
       "marks": "4",
       "years": [
@@ -25,7 +25,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Signals and Signal Classification",
+      "chapter": "Signal and its Types",
       "text": "Explain time shifting, time scaling, and time reversal (reflection) operations on continuous-time and discrete-time signals with neat graphical illustrations.",
       "marks": "6",
       "years": [
@@ -35,7 +35,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Signals and Signal Classification",
+      "chapter": "Signal and its Types",
       "text": "Derive the necessary condition for a discrete-time complex exponential signal $x[n] = e^{j\\omega_0 n}$ to be periodic. What is its fundamental period $N$?",
       "marks": "4",
       "years": [
@@ -45,7 +45,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Fourier Analysis of Continuous-Time and Discrete-Time Signals",
+      "chapter": "Fourier Transform",
       "text": "State and prove Parseval's relation for: (a) Continuous-Time Fourier Series, and (b) Discrete-Time Fourier Series (DTFS).",
       "marks": "6",
       "years": [
@@ -57,7 +57,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Fourier Analysis of Continuous-Time and Discrete-Time Signals",
+      "chapter": "Fourier Transform",
       "text": "Find the Continuous-Time Fourier Transform (CTFT) of the signal $x(t) = e^{-at}u(t)$ for $a > 0$. Plot its magnitude and phase spectrum.",
       "marks": "6",
       "years": [
@@ -69,7 +69,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Fourier Analysis of Continuous-Time and Discrete-Time Signals",
+      "chapter": "Fourier Transform",
       "text": "State and prove the Convolution property of the Continuous-Time Fourier Transform: $\\mathcal{F}\\{x_1(t) * x_2(t)\\} = X_1(j\\omega) X_2(j\\omega)$.",
       "marks": "6",
       "years": [
@@ -80,7 +80,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Fourier Analysis of Continuous-Time and Discrete-Time Signals",
+      "chapter": "Fourier Transform",
       "text": "State and prove the Duality property and Time-Scaling property of the Continuous-Time Fourier Transform.",
       "marks": "6",
       "years": [
@@ -90,7 +90,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Linear Time-Invariant (LTI) Systems",
+      "chapter": "Linear Time Invariant (LTI) System",
       "text": "Derive the Convolution Integral for a continuous-time Linear Time-Invariant (LTI) system: $y(t) = \\int_{-\\infty}^\\infty x(\\tau)h(t-\\tau)d\\tau$.",
       "marks": "6",
       "years": [
@@ -101,7 +101,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Linear Time-Invariant (LTI) Systems",
+      "chapter": "Linear Time Invariant (LTI) System",
       "text": "Derive the Convolution Sum for a discrete-time LTI system: $y[n] = \\sum_{k=-\\infty}^\\infty x[k]h[n-k]$. Find and plot the convolution sum of sequences $x[n] = \\{1, 3, 4, 3, 1\\}$ and $h[n] = \\{2, 2, -2\\}$ (or $x[n] = \\{3, 1, 5\\}$ and $h[n] = \\{1, 4, -2, 3\\}$).",
       "marks": "8",
       "years": [
@@ -112,7 +112,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Linear Time-Invariant (LTI) Systems",
+      "chapter": "Linear Time Invariant (LTI) System",
       "text": "Define an LTI system and explain fundamental system properties: Linearity, Time-Invariance, Causality, Memory, and BIBO Stability. State the condition for an LTI system to be causal and stable in terms of impulse response.",
       "marks": "8",
       "years": [
@@ -124,7 +124,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Sampling of Continuous-Time Signals",
+      "chapter": "Sampling",
       "text": "State and prove the Nyquist-Shannon Sampling Theorem using frequency-domain analysis. Define Nyquist rate and Nyquist interval. What is aliasing and how is it prevented? Determine the Nyquist rate for $x(t) = \\cos(200\\pi t) + \\sin(400\\pi t)$.",
       "marks": "8",
       "years": [
@@ -137,7 +137,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Linear Time-Invariant (LTI) Systems",
+      "chapter": "Linear Time Invariant (LTI) System",
       "text": "Derive formula to calculate the impulse response of an Ideal Low-Pass Filter in continuous/discrete time. Prove, with necessary mathematical derivations, that an ideal low-pass filter is non-causal and physically unrealizable.",
       "marks": "7",
       "years": [
@@ -148,7 +148,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Fourier Analysis of Continuous-Time and Discrete-Time Signals",
+      "chapter": "Fourier Transform",
       "text": "Derive the synthesis and analysis equations of the Discrete-Time Fourier Transform (DTFT). State and prove the Linearity, Time-Shifting, and Frequency-Shifting properties of DTFT.",
       "marks": "8",
       "years": [
@@ -159,7 +159,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Fourier Analysis of Continuous-Time and Discrete-Time Signals",
+      "chapter": "Fourier Transform",
       "text": "Compute the 4-point Discrete Fourier Transform (DFT) for the sequence $x[n] = \\{3, -2, 1, 4\\}$ using the twiddle factor matrix $W_N^{kn}$.",
       "marks": "6",
       "years": [
@@ -168,7 +168,7 @@
       "frequency": 1
     },
     {
-      "chapter": "Linear Time-Invariant (LTI) Systems",
+      "chapter": "Linear Time Invariant (LTI) System",
       "text": "For a system characterized by a linear constant coefficient difference equation, determine the frequency response $H(e^{j\\omega})$ and impulse response $h[n]$. Plot the magnitude and phase response.",
       "marks": "8",
       "years": [
@@ -178,7 +178,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Linear Time-Invariant (LTI) Systems",
+      "chapter": "Linear Time Invariant (LTI) System",
       "text": "Define the Continuous-Time Convolution Integral $y(t) = \\int_{-\\infty}^{\\infty} x(\\tau) h(t - \\tau) d\\tau$. Compute the analytical and graphical convolution of two rectangular pulses $x(t) = u(t) - u(t - 2)$ and $h(t) = u(t) - u(t - 3)$.",
       "marks": "8",
       "years": [
@@ -191,7 +191,7 @@
       "solutionOutline": "Convolution computes zero-state response of LTI system to arbitrary input. Flip and shift h(t - tau). Intervals of overlap: for t < 0, y(t) = 0; for 0 <= t < 2, y(t) = integral_0^t 1 d tau = t; for 2 <= t < 3, overlap is full duration 2, y(t) = 2; for 3 <= t < 5, overlap from t-3 to 2, y(t) = 5 - t; for t >= 5, y(t) = 0. Produces trapezoidal pulse response."
     },
     {
-      "chapter": "Fourier Analysis of Continuous-Time and Discrete-Time Signals",
+      "chapter": "Fourier Transform",
       "text": "State and prove the Dirichlet Conditions for the existence and convergence of Fourier Series. Determine the Continuous-Time Fourier Series (CTFS) exponential coefficients $c_n$ for a periodic symmetric square wave and plot its line spectrum.",
       "marks": "8",
       "years": [
@@ -204,7 +204,7 @@
       "solutionOutline": "Dirichlet conditions: 1) Absolutely integrable over one period: integral |x(t)| dt < infty; 2) Finite number of maxima and minima within one period; 3) Finite number of finite discontinuities. For square wave with period T and amplitude A: c_n = (1/T) integral_{-T/4}^{T/4} A e^(-j n omega_0 t) dt = (A / n pi) sin(n pi / 2) = (2A / n pi) for n = 1, 5, 9... and -(2A / n pi) for n = 3, 7... Sinc envelope line spectrum."
     },
     {
-      "chapter": "Fourier Analysis of Continuous-Time and Discrete-Time Signals",
+      "chapter": "Fourier Transform",
       "text": "State and prove key properties of the Continuous-Time Fourier Transform (CTFT): Time-Shifting, Frequency-Shifting (Modulation), Time-Scaling, and Duality Property. Compute the Fourier transform of a Gaussian pulse $x(t) = e^{-a t^2}$.",
       "marks": "8",
       "years": [
@@ -217,7 +217,7 @@
       "solutionOutline": "Time-shift: x(t - t0) <-> X(omega) e^(-j omega t0). Frequency shift: x(t) e^(j omega_0 t) <-> X(omega - omega_0). Time scaling: x(a t) <-> (1/|a|) X(omega / a). Duality: X(t) <-> 2 pi x(-omega). For Gaussian x(t) = exp(-a t^2): complete square in exponent: X(omega) = integral exp(-a t^2 - j omega t) dt = sqrt(pi / a) exp(-omega^2 / 4a), proving Gaussian transform is also Gaussian."
     },
     {
-      "chapter": "Fourier Analysis of Continuous-Time and Discrete-Time Signals",
+      "chapter": "Fourier Transform",
       "text": "State and prove Parseval's Theorem for Continuous-Time Energy and Power Signals. For signal $x(t) = e^{-a t} u(t)$ ($a > 0$), calculate the total energy in the time domain and verify using frequency domain energy spectral density $|X(\\omega)|^2$.",
       "marks": "8",
       "years": [
@@ -230,7 +230,7 @@
       "solutionOutline": "Parseval theorem states energy E = integral_{-infty}^{infty} |x(t)|^2 dt = (1/2 pi) integral_{-infty}^{infty} |X(omega)|^2 d omega. For e^(-at) u(t): time-domain E = integral_0^infty e^(-2at) dt = 1/(2a). In frequency domain: X(omega) = 1/(a + j omega) => |X(omega)|^2 = 1/(a^2 + omega^2). Energy E = (1/2 pi) integral_{-infty}^{infty} d omega / (a^2 + omega^2) = (1/2 pi) * (pi / a) = 1/(2a). Exactly verified."
     },
     {
-      "chapter": "Linear Time-Invariant (LTI) Systems",
+      "chapter": "Linear Time Invariant (LTI) System",
       "text": "Explain Ideal Lowpass Filter and Paley-Wiener Criterion for filter physical realizability. Prove that an ideal brick-wall lowpass filter is non-causal and exhibits the Gibbs phenomenon in its step response.",
       "marks": "8",
       "years": [
@@ -243,7 +243,7 @@
       "solutionOutline": "Paley-Wiener theorem: for causal filter, frequency response must satisfy integral_{-infty}^infty |ln|H(omega)|| / (1 + omega^2) d omega < infty. Ideal brick-wall filter has H(omega) = 0 for |omega| > omega_c, making integral diverge (-infty), so it is physically unrealizable. Impulse response h(t) = (omega_c / pi) sinc(omega_c t) exists for all t < 0 (non-causal). Step response truncation produces Gibbs phenomenon 8.95% overshoot at discontinuity."
     },
     {
-      "chapter": "Sampling of Continuous-Time Signals",
+      "chapter": "Sampling",
       "text": "Explain the Sampling Theorem for low-pass and band-pass signals. What is Aliasing? Explain Flat-top sampling and the derivation of aperture distortion with equalizer reconstruction.",
       "marks": "8",
       "years": [
@@ -256,7 +256,7 @@
       "solutionOutline": "Continuous signal can be uniquely recovered if sampled at rate f_s >= 2 f_max. Flat-top sampling models pulse train convolved with rectangular aperture p(t) of width tau. Spectrum X_s(f) = (1/T_s) P(f) sum X(f - k f_s), where P(f) = tau sinc(f tau). The sinc roll-off attenuates high frequencies within baseband (aperture effect / high-frequency roll-off). Compensated by equalization filter with response 1 / sinc(f tau)."
     },
     {
-      "chapter": "Laplace Transform and System Analysis",
+      "chapter": "Linear Time Invariant (LTI) System",
       "text": "Define the Bilateral Laplace Transform and Region of Convergence (ROC). Derive properties of ROC for causal, anti-causal, and two-sided signals. Determine the Laplace transform and ROC of $x(t) = e^{-2t} u(t) + e^{-3t} u(-t)$.",
       "marks": "8",
       "years": [
@@ -269,7 +269,7 @@
       "solutionOutline": "X(s) = integral_{-infty}^infty x(t) e^(-st) dt, s = sigma + j omega. ROC consists of vertical strips in s-plane containing no poles. For causal signal (right-sided), ROC is Re(s) > max(Re(poles)). For anti-causal (left-sided), ROC is Re(s) < min(Re(poles)). For e^(-2t) u(t), pole at s = -2, ROC: Re(s) > -2. For e^(-3t) u(-t), pole at s = -3, ROC: Re(s) < -3. Intersection of ROCs is empty set (Re(s) > -2 and Re(s) < -3 has no overlap); hence Laplace transform does not exist."
     },
     {
-      "chapter": "Laplace Transform and System Analysis",
+      "chapter": "Linear Time Invariant (LTI) System",
       "text": "Solve the differential equation $\\frac{d^2 y}{dt^2} + 5\\frac{dy}{dt} + 6y(t) = \\frac{dx}{dt} + x(t)$ for unit step input $x(t) = u(t)$ with initial conditions $y(0^-) = 1, y'(0^-) = 2$ using the unilateral Laplace transform, separating Zero-Input and Zero-State responses.",
       "marks": "8",
       "years": [
@@ -282,7 +282,7 @@
       "solutionOutline": "Unilateral transform: L{y'} = s Y(s) - y(0^-); L{y''} = s^2 Y(s) - s y(0^-) - y'(0^-). Substituting gives (s^2 + 5s + 6) Y(s) - s - 7 = (s + 1)/s. Y(s) = [s + 7]/(s+2)(s+3) [Zero-Input Response] + [s + 1]/s(s+2)(s+3) [Zero-State Response]. Partial fractions yield y_zi(t) = (5 e^(-2t) - 4 e^(-3t)) u(t) and y_zs(t) = (1/6 - 0.5 e^(-2t) + 1/3 e^(-3t)) u(t). Total y(t) = y_zi + y_zs."
     },
     {
-      "chapter": "Linear Time-Invariant (LTI) Systems",
+      "chapter": "Linear Time Invariant (LTI) System",
       "text": "Define the Discrete-Time Convolution Sum $y[n] = \\sum_{k=-\\infty}^{\\infty} x[k] h[n - k]$. Compute the convolution of $x[n] = (0.5)^n u[n]$ and $h[n] = u[n] - u[n - 4]$.",
       "marks": "8",
       "years": [
@@ -295,7 +295,7 @@
       "solutionOutline": "h[k] is non-zero (value 1) for k = 0, 1, 2, 3. y[n] = sum_{k=0}^3 x[n - k] = x[n] + x[n-1] + x[n-2] + x[n-3]. For n < 0: y[n] = 0. For 0 <= n < 3: y[n] = sum_{k=0}^n (0.5)^(n-k) = (0.5)^n sum_{m=0}^n 2^m = 2 - (0.5)^n. For n >= 3: sum over all 4 taps y[n] = (0.5)^n [1 + 2 + 4 + 8] = 15 * (0.5)^n."
     },
     {
-      "chapter": "Fourier Analysis of Continuous-Time and Discrete-Time Signals",
+      "chapter": "Fourier Transform",
       "text": "Define the Discrete-Time Fourier Transform (DTFT). State its properties and compute the frequency response $H(e^{j\\Omega})$ and magnitude response $|H(e^{j\\Omega})|$ of an LTI system described by difference equation $y[n] - 0.5 y[n-1] = x[n]$.",
       "marks": "8",
       "years": [
@@ -308,7 +308,7 @@
       "solutionOutline": "DTFT X(Omega) = sum x[n] e^(-j Omega n); periodic in Omega with period 2 pi. Taking DTFT of difference equation: Y(Omega)(1 - 0.5 e^(-j Omega)) = X(Omega). Frequency response H(e^(j Omega)) = 1 / (1 - 0.5 e^(-j Omega)). Magnitude |H| = 1 / sqrt(1.25 - cos Omega). At Omega=0, |H|=2 (lowpass peak); at Omega=pi, |H|=1/1.5=0.67."
     },
     {
-      "chapter": "Z-Transform and Discrete LTI Systems",
+      "chapter": "Linear Time Invariant (LTI) System",
       "text": "Determine the System Function $H(z)$, pole-zero constellation, impulse response $h[n]$, and BIBO stability for a discrete LTI system given by $y[n] - \\frac{3}{4} y[n-1] + \\frac{1}{8} y[n-2] = x[n] + 2 x[n-1]$.",
       "marks": "8",
       "years": [
@@ -321,7 +321,7 @@
       "solutionOutline": "Z-transform yields H(z) = (1 + 2 z^(-1)) / (1 - 0.75 z^(-1) + 0.125 z^(-2)) = (1 + 2 z^(-1)) / [(1 - 0.5 z^(-1))(1 - 0.25 z^(-1))]. Poles at z = 0.5 and z = 0.25; zero at z = -2. Both poles lie strictly inside unit circle (|z| < 1), so causal ROC |z| > 0.5 contains unit circle, proving system is BIBO stable. Partial fractions give h[n] = [10 (0.5)^n - 9 (0.25)^n] u[n]."
     },
     {
-      "chapter": "Signals and Signal Classification",
+      "chapter": "Signal and its Types",
       "text": "Explain System Properties: Linearity, Time-Invariance, Memory, Causality, and Invertibility. Test whether the following systems satisfy linearity and time-invariance: (a) $y(t) = x(2t)$, (b) $y(t) = t x(t)$, (c) $y[n] = x^2[n]$.",
       "marks": "6",
       "years": [
@@ -334,7 +334,7 @@
       "solutionOutline": "(a) y(t) = x(2t): Linear (superposition holds), but Time-Variant (delaying input gives x(2t - 2t0) != y(t - t0) = x(2(t - t0))). (b) y(t) = t x(t): Linear, but Time-Variant due to explicit t multiplier. (c) y[n] = x^2[n]: Time-Invariant, but Non-Linear because (a x1 + b x2)^2 != a x1^2 + b x2^2."
     },
     {
-      "chapter": "Fourier Analysis of Continuous-Time and Discrete-Time Signals",
+      "chapter": "Fourier Transform",
       "text": "Explain the relationship and mapping between Continuous-Time Fourier Transform (CTFT), Laplace Transform, Discrete-Time Fourier Transform (DTFT), and Z-Transform.",
       "marks": "6",
       "years": [
@@ -347,7 +347,7 @@
       "solutionOutline": "Laplace transform evaluates signals over entire complex s = sigma + j omega plane; CTFT is special case of Laplace evaluated strictly on imaginary axis s = j omega (valid if ROC contains j-omega axis). Z-transform evaluates discrete signals over complex z = r e^(j Omega) plane; DTFT is Z-transform evaluated on unit circle |z| = 1. Continuous to discrete mapping uses z = e^(s T)."
     },
     {
-      "chapter": "Linear Time-Invariant (LTI) Systems",
+      "chapter": "Linear Time Invariant (LTI) System",
       "text": "Define Group Delay $\\tau_g(\\omega) = -\\frac{d\\theta(\\omega)}{d\\omega}$ and Phase Delay $\\tau_p(\\omega) = -\\frac{\\theta(\\omega)}{\\omega}$. Explain how non-linear phase response causes dispersion and waveform distortion in broadband communication channels.",
       "marks": "6",
       "years": [
@@ -361,11 +361,11 @@
     }
   ],
   "chapters": [
-    "Signals and Signal Classification",
-    "Linear Time-Invariant (LTI) Systems",
-    "Fourier Analysis of Continuous-Time and Discrete-Time Signals",
-    "Sampling of Continuous-Time Signals",
-    "Laplace Transform and System Analysis",
-    "Z-Transform and Discrete LTI Systems"
+    "Signal and its Types",
+    "Fourier Series",
+    "Fourier Transform",
+    "Linear Time Invariant (LTI) System",
+    "Sampling",
+    "Frequency Response of Continuous and Discrete Time Systems"
   ]
 }

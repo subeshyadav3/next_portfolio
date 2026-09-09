@@ -2,19 +2,18 @@
   "subject": "Computer Graphics and Visualization",
   "generated": "2026-09-09",
   "chapters": [
-    "Introduction to Computer Graphics",
-    "Scan Conversion and Output Primitives",
-    "Two-Dimensional Geometric Transformations",
-    "Two-Dimensional Viewing and Clipping",
-    "Three-Dimensional Representations and Splines",
-    "Three-Dimensional Geometric Transformations and Viewing",
-    "Visible Surface Detection",
-    "Illumination Models and Surface Rendering",
-    "Introduction to OpenGL"
+    "Introduction and Application",
+    "Raster Graphics and Algorithms",
+    "2D and 3D Coordinate Systems and Viewing Transformations",
+    "Curve Modeling and Surface Modelling",
+    "Visible Surface Determination",
+    "Illumination and Surface Rendering Methods",
+    "Computer Animation and Visualization",
+    "Latest Trends in Computer Graphics"
   ],
   "questions": [
     {
-      "chapter": "Scan Conversion and Output Primitives",
+      "chapter": "Raster Graphics and Algorithms",
       "text": "Differentiate between DDA and Bresenham's line drawing algorithm. Derive Bresenham's line drawing algorithm for slope $|m| < 1$. Digitize the line with endpoints $A(20, 10)$ and $B(30, 18)$.",
       "marks": "8",
       "years": [
@@ -36,7 +35,7 @@
       ]
     },
     {
-      "chapter": "Scan Conversion and Output Primitives",
+      "chapter": "Raster Graphics and Algorithms",
       "text": "Derive and write the Midpoint Circle Algorithm. How does the 8-way symmetry of a circle reduce computational complexity? Calculate pixel positions along the circle octant for radius $r=10$.",
       "marks": "8",
       "years": [
@@ -58,7 +57,7 @@
       ]
     },
     {
-      "chapter": "Introduction to Computer Graphics",
+      "chapter": "Introduction and Application",
       "text": "Compare Raster-scan Display with Random-scan (Vector) Display. What is the size of frame buffer required to store a SVGA resolution ($800 \\times 600$) with 24-bit true color video?",
       "marks": "6",
       "years": [
@@ -78,7 +77,7 @@
       ]
     },
     {
-      "chapter": "Two-Dimensional Geometric Transformations",
+      "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
       "text": "What do you mean by homogeneous coordinates? Find the composite 2D transformation matrix for reflection of an object about an arbitrary line $y = mx + c$.",
       "marks": "8",
       "years": [
@@ -100,7 +99,7 @@
       ]
     },
     {
-      "chapter": "Two-Dimensional Viewing and Clipping",
+      "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
       "text": "Define window and viewport. Describe the two-dimensional viewing pipeline and derive the transformation matrix responsible for window-to-viewport mapping.",
       "marks": "6",
       "years": [
@@ -122,7 +121,7 @@
       ]
     },
     {
-      "chapter": "Two-Dimensional Viewing and Clipping",
+      "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
       "text": "Explain Cohen-Sutherland line clipping algorithm. Obtain the end points of the line that connects $P_1(0, 120)$ and $P_2(130, 5)$ after clipping against window with diagonal corners $(10, 10)$ and $(100, 100)$.",
       "marks": "8",
       "years": [
@@ -142,7 +141,7 @@
       ]
     },
     {
-      "chapter": "Two-Dimensional Viewing and Clipping",
+      "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
       "text": "Explain the Sutherland-Hodgman polygon clipping algorithm. How does it clip a polygon against the four boundaries of a clipping window and what is its limitation with concave polygons?",
       "marks": "6",
       "years": [
@@ -162,7 +161,7 @@
       ]
     },
     {
-      "chapter": "Three-Dimensional Geometric Transformations and Viewing",
+      "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
       "text": "Explain the steps required to rotate an object in 3D about an arbitrary axis that is not parallel to any coordinate axis. Derive the sequence of composite transformation matrices.",
       "marks": "8",
       "years": [
@@ -184,7 +183,7 @@
       ]
     },
     {
-      "chapter": "Three-Dimensional Geometric Transformations and Viewing",
+      "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
       "text": "Describe the 3D viewing pipeline. Differentiate between parallel projection and perspective projection. Derive the transformation matrix for perspective projection onto a view plane.",
       "marks": "8",
       "years": [
@@ -206,7 +205,7 @@
       ]
     },
     {
-      "chapter": "Three-Dimensional Representations and Splines",
+      "chapter": "Curve Modeling and Surface Modelling",
       "text": "Explain the properties of Bezier curves. Find the coordinates of the point at parameter $u = 0.5$ with respect to the control points $(10, 10)$, $(20, 30)$, $(40, 30)$, and $(30, 10)$.",
       "marks": "8",
       "years": [
@@ -228,7 +227,7 @@
       ]
     },
     {
-      "chapter": "Three-Dimensional Representations and Splines",
+      "chapter": "Curve Modeling and Surface Modelling",
       "text": "Why do we use geometric tables (Polygon, Vertex, and Edge tables) and attribute tables for defining a polygon surface? Explain with an example of a 3D object.",
       "marks": "6",
       "years": [
@@ -250,7 +249,7 @@
       ]
     },
     {
-      "chapter": "Visible Surface Detection",
+      "chapter": "Visible Surface Determination",
       "text": "Explain the Back-Face Detection algorithm for visible surface determination. Determine whether a surface of an object with normal vector $\\mathbf{N} = (1, 2, 3)$ is visible from viewing direction $\\mathbf{V}_{view} = (0, 0, 1)$.",
       "marks": "6",
       "years": [
@@ -270,7 +269,7 @@
       ]
     },
     {
-      "chapter": "Visible Surface Detection",
+      "chapter": "Visible Surface Determination",
       "text": "Explain the Depth-Buffer (Z-buffer) algorithm for visible surface detection with necessary steps. What is the limitation of Z-buffer and how does A-buffer method overcome it?",
       "marks": "8",
       "years": [
@@ -292,7 +291,7 @@
       ]
     },
     {
-      "chapter": "Illumination Models and Surface Rendering",
+      "chapter": "Illumination and Surface Rendering Methods",
       "text": "Derive the mathematical expression to calculate the total light intensity at a point using the Phong illumination model considering ambient, diffuse, and specular reflection components.",
       "marks": "8",
       "years": [
@@ -314,7 +313,7 @@
       ]
     },
     {
-      "chapter": "Illumination Models and Surface Rendering",
+      "chapter": "Illumination and Surface Rendering Methods",
       "text": "Explain Gouraud shading for polygon rendering and compare it with Phong shading. Why is Phong shading preferred despite higher computational cost?",
       "marks": "8",
       "years": [
@@ -336,7 +335,7 @@
       ]
     },
     {
-      "chapter": "Introduction to OpenGL",
+      "chapter": "Introduction and Application",
       "text": "What is OpenGL? Explain the role of callback functions in event-driven programming and explain how polygons and lighting are specified in OpenGL.",
       "marks": "6",
       "years": [
@@ -359,7 +358,7 @@
     },
     {
       "id": "computer-graphics-and-visualization-17",
-      "chapter": "Introduction to Computer Graphics",
+      "chapter": "Introduction and Application",
       "question": "Explain the working principle of a Cathode Ray Tube (CRT). Define refresh rate, persistence, and aspect ratio. How does Shadow Mask CRT produce color?",
       "text": "Explain the working principle of a Cathode Ray Tube (CRT). Define refresh rate, persistence, and aspect ratio. How does Shadow Mask CRT produce color?",
       "marks": "6",
@@ -377,7 +376,7 @@
     },
     {
       "id": "computer-graphics-and-visualization-18",
-      "chapter": "Scan Conversion and Output Primitives",
+      "chapter": "Raster Graphics and Algorithms",
       "question": "Derive the decision parameter for the Midpoint Ellipse Generation algorithm for Region 1 and Region 2. Write the complete algorithm.",
       "text": "Derive the decision parameter for the Midpoint Ellipse Generation algorithm for Region 1 and Region 2. Write the complete algorithm.",
       "marks": "8",
@@ -395,7 +394,7 @@
     },
     {
       "id": "computer-graphics-and-visualization-19",
-      "chapter": "Scan Conversion and Output Primitives",
+      "chapter": "Raster Graphics and Algorithms",
       "question": "Explain the Scan-Line Polygon Fill algorithm. Explain edge table (ET) and active edge table (AET) data structures.",
       "text": "Explain the Scan-Line Polygon Fill algorithm. Explain edge table (ET) and active edge table (AET) data structures.",
       "marks": "8",
@@ -413,7 +412,7 @@
     },
     {
       "id": "computer-graphics-and-visualization-20",
-      "chapter": "Two-Dimensional Geometric Transformations",
+      "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
       "question": "Derive the transformation matrix for 2D reflection about an arbitrary line $y = mx + c$.",
       "text": "Derive the transformation matrix for 2D reflection about an arbitrary line $y = mx + c$.",
       "marks": "8",
@@ -431,7 +430,7 @@
     },
     {
       "id": "computer-graphics-and-visualization-21",
-      "chapter": "Two-Dimensional Viewing and Clipping",
+      "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
       "question": "Explain the Cohen-Sutherland line clipping algorithm. Use the algorithm to clip the line segment between $P_1(10, 30)$ and $P_2(80, 90)$ against a rectangular window $W(20, 20)$ to $W(60, 60)$.",
       "text": "Explain the Cohen-Sutherland line clipping algorithm. Use the algorithm to clip the line segment between $P_1(10, 30)$ and $P_2(80, 90)$ against a rectangular window $W(20, 20)$ to $W(60, 60)$.",
       "marks": "8",
@@ -449,7 +448,7 @@
     },
     {
       "id": "computer-graphics-and-visualization-22",
-      "chapter": "Two-Dimensional Viewing and Clipping",
+      "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
       "question": "Explain the Liang-Barsky line clipping algorithm based on parametric equations. Compare its computational efficiency with the Cohen-Sutherland algorithm.",
       "text": "Explain the Liang-Barsky line clipping algorithm based on parametric equations. Compare its computational efficiency with the Cohen-Sutherland algorithm.",
       "marks": "8",
@@ -467,7 +466,7 @@
     },
     {
       "id": "computer-graphics-and-visualization-23",
-      "chapter": "Two-Dimensional Viewing and Clipping",
+      "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
       "question": "Explain Sutherland-Hodgeman polygon clipping algorithm with an example. What is its major limitation regarding non-convex (concave) polygons?",
       "text": "Explain Sutherland-Hodgeman polygon clipping algorithm with an example. What is its major limitation regarding non-convex (concave) polygons?",
       "marks": "6",
@@ -485,7 +484,7 @@
     },
     {
       "id": "computer-graphics-and-visualization-24",
-      "chapter": "Three-Dimensional Representations and Splines",
+      "chapter": "Curve Modeling and Surface Modelling",
       "question": "Explain Bezier curves. State their key properties: convex hull property, affine invariance, and endpoint interpolation. Derive the blending functions for a cubic Bezier curve.",
       "text": "Explain Bezier curves. State their key properties: convex hull property, affine invariance, and endpoint interpolation. Derive the blending functions for a cubic Bezier curve.",
       "marks": "8",
@@ -503,7 +502,7 @@
     },
     {
       "id": "computer-graphics-and-visualization-25",
-      "chapter": "Three-Dimensional Representations and Splines",
+      "chapter": "Curve Modeling and Surface Modelling",
       "question": "Compare Bezier curves with B-Spline curves. What is local control and why do B-splines provide better shape editing than Bezier curves?",
       "text": "Compare Bezier curves with B-Spline curves. What is local control and why do B-splines provide better shape editing than Bezier curves?",
       "marks": "6",
@@ -521,7 +520,7 @@
     },
     {
       "id": "computer-graphics-and-visualization-26",
-      "chapter": "Three-Dimensional Geometric Transformations and Viewing",
+      "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
       "question": "Explain 3D rotation about an arbitrary axis in space passing through $(x_0, y_0, z_0)$ with direction cosines $(u_x, u_y, u_z)$. Write the sequence of transformation matrices.",
       "text": "Explain 3D rotation about an arbitrary axis in space passing through $(x_0, y_0, z_0)$ with direction cosines $(u_x, u_y, u_z)$. Write the sequence of transformation matrices.",
       "marks": "8",
@@ -539,7 +538,7 @@
     },
     {
       "id": "computer-graphics-and-visualization-27",
-      "chapter": "Three-Dimensional Geometric Transformations and Viewing",
+      "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
       "question": "Differentiate between Parallel Projection (Orthographic and Oblique) and Perspective Projection (1-point, 2-point, 3-point). Derive the perspective transformation matrix with center of projection at $(0, 0, -d)$.",
       "text": "Differentiate between Parallel Projection (Orthographic and Oblique) and Perspective Projection (1-point, 2-point, 3-point). Derive the perspective transformation matrix with center of projection at $(0, 0, -d)$.",
       "marks": "8",
@@ -557,7 +556,7 @@
     },
     {
       "id": "computer-graphics-and-visualization-28",
-      "chapter": "Visible Surface Detection",
+      "chapter": "Visible Surface Determination",
       "question": "Explain the Z-Buffer (Depth-Buffer) algorithm for visible surface detection. How is it implemented at the hardware/pixel level? What are its memory and depth resolution limitations?",
       "text": "Explain the Z-Buffer (Depth-Buffer) algorithm for visible surface detection. How is it implemented at the hardware/pixel level? What are its memory and depth resolution limitations?",
       "marks": "8",
@@ -575,7 +574,7 @@
     },
     {
       "id": "computer-graphics-and-visualization-29",
-      "chapter": "Visible Surface Detection",
+      "chapter": "Visible Surface Determination",
       "question": "Explain the A-Buffer algorithm and BSP-Tree (Binary Space Partitioning) algorithm for hidden surface removal.",
       "text": "Explain the A-Buffer algorithm and BSP-Tree (Binary Space Partitioning) algorithm for hidden surface removal.",
       "marks": "6",
@@ -593,7 +592,7 @@
     },
     {
       "id": "computer-graphics-and-visualization-30",
-      "chapter": "Illumination Models and Surface Rendering",
+      "chapter": "Illumination and Surface Rendering Methods",
       "question": "Explain Phong illumination model combining ambient, diffuse, and specular reflection. Compare Gouraud shading and Phong shading techniques.",
       "text": "Explain Phong illumination model combining ambient, diffuse, and specular reflection. Compare Gouraud shading and Phong shading techniques.",
       "marks": "8",

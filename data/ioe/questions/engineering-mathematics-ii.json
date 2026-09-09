@@ -2,12 +2,12 @@
   "subject": "Engineering Mathematics II",
   "generated": "2026-09-09",
   "chapters": [
-    "Linear Algebra",
+    "Calculus of Two and More Variables",
     "Multiple Integrals",
-    "Beta and Gamma Functions",
     "Vector Calculus",
-    "Fourier Series",
-    "Partial Differential Equations"
+    "Laplace Transform",
+    "Matrices",
+    "Solution of Differential Equation in Series and Special Functions"
   ],
   "questions": [
     {
@@ -129,7 +129,7 @@
       ]
     },
     {
-      "chapter": "Partial Differential Equations",
+      "chapter": "Calculus of Two and More Variables",
       "text": "If $u = \\sin^{-1}\\left(\\frac{x^2 + y^2}{x + y}\\right)$, show that $x\\frac{\\partial u}{\\partial x} + y\\frac{\\partial u}{\\partial y} = \\tan u$.",
       "marks": "2",
       "years": [
@@ -145,7 +145,7 @@
       ]
     },
     {
-      "chapter": "Partial Differential Equations",
+      "chapter": "Calculus of Two and More Variables",
       "text": "If $u = x+y+z, v = xy+yz+zx, w = x^2+y^2+z^2$, find the Jacobian $\\frac{\\partial(u,v,w)}{\\partial(x,y,z)}$.",
       "marks": "2",
       "years": [
@@ -159,7 +159,7 @@
       ]
     },
     {
-      "chapter": "Partial Differential Equations",
+      "chapter": "Calculus of Two and More Variables",
       "text": "State existence criteria of the Laplace transform. Solve the differential equation $y\"(t) + 4y'(t) + 4y(t) = e^{-t}; y(0) = 0, y'(0) = 0$, using Laplace transform method.",
       "marks": "4",
       "years": [
@@ -173,7 +173,7 @@
       ]
     },
     {
-      "chapter": "Linear Algebra",
+      "chapter": "Matrices",
       "text": "Reduce the quadratic form $Q(x) = 6x_1^2 + 3x_2^2 + 3x_3^2 - 4x_1 x_2 + 2x_2 x_3 - 4x_1 x_3$ into canonical form.",
       "marks": "4",
       "years": [
@@ -187,7 +187,7 @@
       ]
     },
     {
-      "chapter": "Linear Algebra",
+      "chapter": "Matrices",
       "text": "Find the rank of the matrix $\\begin{pmatrix} 1 & 2 & 3 \\\\ 2 & 4 & 7 \\\\ 3 & 6 & 10 \\end{pmatrix}$.",
       "marks": "2",
       "years": [
@@ -201,7 +201,7 @@
       ]
     },
     {
-      "chapter": "Linear Algebra",
+      "chapter": "Matrices",
       "text": "Apply Cayley-Hamilton theorem to find the inverse of matrix $\\begin{pmatrix} 1 & 2 & 1 \\\\ 0 & 1 & -1 \\\\ 3 & -1 & 1 \\end{pmatrix}$.",
       "marks": "4",
       "years": [
@@ -215,7 +215,7 @@
       ]
     },
     {
-      "chapter": "Linear Algebra",
+      "chapter": "Matrices",
       "text": "Express the function $f(x) = 1 + x - x^2$ in terms of Legendre's polynomials.",
       "marks": "2",
       "years": [
@@ -231,7 +231,7 @@
       ]
     },
     {
-      "chapter": "Partial Differential Equations",
+      "chapter": "Calculus of Two and More Variables",
       "text": "Solve $y\" - 4xy' + (4x^2 - 2)y = 0$ by power series method.",
       "marks": "4",
       "years": [
@@ -246,7 +246,7 @@
     },
     {
       "id": "engineering-mathematics-ii-17",
-      "chapter": "Linear Algebra",
+      "chapter": "Matrices",
       "question": "Find the eigenvalues and corresponding eigenvectors of the matrix $A = \\begin{pmatrix} 2 & 2 & 1 \\\\ 1 & 3 & 1 \\\\ 1 & 2 & 2 \\end{pmatrix}$. Verify the Cayley-Hamilton theorem for $A$.",
       "text": "Find the eigenvalues and corresponding eigenvectors of the matrix $A = \\begin{pmatrix} 2 & 2 & 1 \\\\ 1 & 3 & 1 \\\\ 1 & 2 & 2 \\end{pmatrix}$. Verify the Cayley-Hamilton theorem for $A$.",
       "marks": "6",
@@ -264,7 +264,7 @@
     },
     {
       "id": "engineering-mathematics-ii-18",
-      "chapter": "Linear Algebra",
+      "chapter": "Matrices",
       "question": "Test the consistency of the following system of linear equations and solve if consistent using Gaussian elimination: $x + 2y - z = 3$, $3x - y + 2z = 1$, $2x - 2y + 3z = 2$, $x - y + z = -1$.",
       "text": "Test the consistency of the following system of linear equations and solve if consistent using Gaussian elimination: $x + 2y - z = 3$, $3x - y + 2z = 1$, $2x - 2y + 3z = 2$, $x - y + z = -1$.",
       "marks": "6",
@@ -282,7 +282,7 @@
     },
     {
       "id": "engineering-mathematics-ii-19",
-      "chapter": "Linear Algebra",
+      "chapter": "Matrices",
       "question": "Define rank of a matrix. Reduce the matrix $A = \\begin{pmatrix} 1 & 2 & -1 & 4 \\\\ 2 & 4 & 3 & 5 \\\\ -1 & -2 & 6 & -7 \\end{pmatrix}$ to its normal form and find its rank.",
       "text": "Define rank of a matrix. Reduce the matrix $A = \\begin{pmatrix} 1 & 2 & -1 & 4 \\\\ 2 & 4 & 3 & 5 \\\\ -1 & -2 & 6 & -7 \\end{pmatrix}$ to its normal form and find its rank.",
       "marks": "5",
@@ -372,7 +372,7 @@
     },
     {
       "id": "engineering-mathematics-ii-24",
-      "chapter": "Beta and Gamma Functions",
+      "chapter": "Solution of Differential Equation in Series and Special Functions",
       "question": "State and prove the duplication formula for Gamma function: $\\Gamma(m)\\Gamma\\left(m + \\frac{1}{2}\\right) = \\frac{\\sqrt{\\pi}}{2^{2m-1}}\\Gamma(2m)$.",
       "text": "State and prove the duplication formula for Gamma function: $\\Gamma(m)\\Gamma\\left(m + \\frac{1}{2}\\right) = \\frac{\\sqrt{\\pi}}{2^{2m-1}}\\Gamma(2m)$.",
       "marks": "5",
@@ -426,7 +426,7 @@
     },
     {
       "id": "engineering-mathematics-ii-27",
-      "chapter": "Fourier Series",
+      "chapter": "Calculus of Two and More Variables",
       "question": "Find the Fourier series representation of the function $f(x) = x^2$ in the interval $-\\pi < x < \\pi$. Hence deduce that $\\frac{1}{1^2} - \\frac{1}{2^2} + \\frac{1}{3^2} - \\frac{1}{4^2} + \\dots = \\frac{\\pi^2}{12}$.",
       "text": "Find the Fourier series representation of the function $f(x) = x^2$ in the interval $-\\pi < x < \\pi$. Hence deduce that $\\frac{1}{1^2} - \\frac{1}{2^2} + \\frac{1}{3^2} - \\frac{1}{4^2} + \\dots = \\frac{\\pi^2}{12}$.",
       "marks": "6",
@@ -444,7 +444,7 @@
     },
     {
       "id": "engineering-mathematics-ii-28",
-      "chapter": "Fourier Series",
+      "chapter": "Calculus of Two and More Variables",
       "question": "Obtain the half-range Fourier sine series for $f(x) = x(\\pi - x)$ in $0 < x < \\pi$. Hence deduce that $\\frac{1}{1^3} - \\frac{1}{3^3} + \\frac{1}{5^3} - \\frac{1}{7^3} + \\dots = \\frac{\\pi^3}{32}$.",
       "text": "Obtain the half-range Fourier sine series for $f(x) = x(\\pi - x)$ in $0 < x < \\pi$. Hence deduce that $\\frac{1}{1^3} - \\frac{1}{3^3} + \\frac{1}{5^3} - \\frac{1}{7^3} + \\dots = \\frac{\\pi^3}{32}$.",
       "marks": "6",
@@ -462,7 +462,7 @@
     },
     {
       "id": "engineering-mathematics-ii-29",
-      "chapter": "Partial Differential Equations",
+      "chapter": "Calculus of Two and More Variables",
       "question": "Solve Lagrange's linear partial differential equation: $x(y^2 - z^2)p + y(z^2 - x^2)q = z(x^2 - y^2)$, where $p = \\frac{\\partial z}{\\partial x}$ and $q = \\frac{\\partial z}{\\partial y}$.",
       "text": "Solve Lagrange's linear partial differential equation: $x(y^2 - z^2)p + y(z^2 - x^2)q = z(x^2 - y^2)$, where $p = \\frac{\\partial z}{\\partial x}$ and $q = \\frac{\\partial z}{\\partial y}$.",
       "marks": "6",
@@ -480,7 +480,7 @@
     },
     {
       "id": "engineering-mathematics-ii-30",
-      "chapter": "Partial Differential Equations",
+      "chapter": "Calculus of Two and More Variables",
       "question": "Solve the one-dimensional wave equation $\\frac{\\partial^2 u}{\\partial t^2} = c^2 \\frac{\\partial^2 u}{\\partial x^2}$ for a vibrating string of length $L$ fixed at both ends with boundary conditions $u(0, t) = 0, u(L, t) = 0$ and initial velocity zero using the method of separation of variables.",
       "text": "Solve the one-dimensional wave equation $\\frac{\\partial^2 u}{\\partial t^2} = c^2 \\frac{\\partial^2 u}{\\partial x^2}$ for a vibrating string of length $L$ fixed at both ends with boundary conditions $u(0, t) = 0, u(L, t) = 0$ and initial velocity zero using the method of separation of variables.",
       "marks": "8",

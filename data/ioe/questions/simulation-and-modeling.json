@@ -2,18 +2,20 @@
   "subject": "Simulation and Modeling",
   "generated": "2026-09-09",
   "chapters": [
-    "Introduction to Simulation and Modeling",
+    "Introduction to Simulation",
     "Physical and Mathematical Models",
-    "Continuous and Discrete System Simulation",
-    "Queuing Systems and Markov Chains",
-    "Random Number Generation and Testing",
+    "Simulation of Continuous System",
+    "Simulation of Queuing System",
+    "Markov Chains",
+    "Random Number",
     "Verification and Validation of Simulation Models",
-    "Simulation Output Analysis",
-    "Simulation Software and System Simulation"
+    "Analysis of simulation output",
+    "Simulation software",
+    "Simulation of Computer Systems"
   ],
   "questions": [
     {
-      "chapter": "Introduction to Simulation and Modeling",
+      "chapter": "Introduction to Simulation",
       "text": "Explain various steps in a simulation study with a detailed block diagram/flowchart. List the advantages and disadvantages of simulation.",
       "marks": "8",
       "years": [
@@ -41,7 +43,7 @@
       "frequency": 6
     },
     {
-      "chapter": "Continuous and Discrete System Simulation",
+      "chapter": "Simulation of Continuous System",
       "text": "Define analog methods in simulation. Design and explain the analog computer model of an automobile suspension problem (or liver model) with necessary differential equations and block diagram.",
       "marks": "8",
       "years": [
@@ -53,7 +55,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Queuing Systems and Markov Chains",
+      "chapter": "Simulation of Queuing System",
       "text": "Explain the characteristics and performance measures of queuing systems. Explain Kendall notation and interpret $M/M/3/20/1500/FCFS$ and $D/M/1/LIFO/20/80$.",
       "marks": "8",
       "years": [
@@ -66,7 +68,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Queuing Systems and Markov Chains",
+      "chapter": "Simulation of Queuing System",
       "text": "Explain the features of a Markov chain. Given brand switching probabilities where a current user of Brand A has a 70% chance to buy A again and 30% to buy B, while a user of Brand B has an 80% chance to buy B and 20% to buy A:\n(a) Construct the state transition diagram and transition matrix.\n(b) Calculate the probability that a current user of Brand A buys Brand B after 3 purchases.\n(c) If 60% of consumers initially use Brand A, find the market share after 3 purchases.",
       "marks": "8",
       "years": [
@@ -78,7 +80,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Queuing Systems and Markov Chains",
+      "chapter": "Simulation of Queuing System",
       "text": "In a single server queue ($M/M/1$), customers arrive according to a Poisson process at a rate of one every 40 minutes and service time takes 30 minutes exponentially distributed. Find the server utilization, average queue length $L_q$, average waiting time in queue $W_q$, and average time spent in the system $W$.",
       "marks": "8",
       "years": [
@@ -89,7 +91,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Random Number Generation and Testing",
+      "chapter": "Random Number",
       "text": "Define pseudo-random numbers and their desired properties. Explain the Linear Congruential Method (LCM). Using the mixed congruential formula $X_{i+1} = (17X_i + 43) \\pmod{100}$ with seed $X_0 = 27$, generate a sequence of six random numbers.",
       "marks": "8",
       "years": [
@@ -100,7 +102,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Random Number Generation and Testing",
+      "chapter": "Random Number",
       "text": "Explain the Poker test for random number independence. A sequence of 10,000 four-digit numbers yields: 5120 all different, 4230 one pair, 560 two pairs, 75 three of a kind, and 15 four of a kind. Using Chi-Square test at $\\alpha = 0.05$ (critical $\\chi^2 = 9.49$), determine whether these random numbers are independent.",
       "marks": "8",
       "years": [
@@ -113,7 +115,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Random Number Generation and Testing",
+      "chapter": "Random Number",
       "text": "Write down the algorithm for Kolmogorov-Smirnov (KS) test. Perform a uniformity test using KS test with level of significance $\\alpha = 0.05$ on generated numbers: $0.44, 0.81, 0.14, 0.05, 0.93$ (given critical $D_{0.05} = 0.565$).",
       "marks": "8",
       "years": [
@@ -124,7 +126,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Random Number Generation and Testing",
+      "chapter": "Random Number",
       "text": "Write down the algorithm for the Gap test and Autocorrelation test for examining the independence of pseudo-random numbers.",
       "marks": "6",
       "years": [
@@ -147,7 +149,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Simulation Output Analysis",
+      "chapter": "Analysis of simulation output",
       "text": "How can you analyze simulation output using simulation run statistics? Explain methods for the elimination of initial bias (warm-up period) in steady-state simulations.",
       "marks": "6",
       "years": [
@@ -159,7 +161,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Simulation Output Analysis",
+      "chapter": "Analysis of simulation output",
       "text": "Explain the Replication of Runs method for a single-server queue ($M/M/1$) simulation. How does it enable constructing confidence intervals for performance measures?",
       "marks": "5",
       "years": [
@@ -170,7 +172,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Simulation Software and System Simulation",
+      "chapter": "Simulation software",
       "text": "Explain the implementation of a single-server queuing simulation model using Java with flowcharts, event scheduling, and simulation clock advancement.",
       "marks": "6",
       "years": [
@@ -182,7 +184,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Simulation Software and System Simulation",
+      "chapter": "Simulation software",
       "text": "How is memory and CPU simulation conducted in a computer system? Explain the different levels of abstraction in computer system simulation.",
       "marks": "6",
       "years": [
@@ -195,7 +197,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Simulation Software and System Simulation",
+      "chapter": "Simulation software",
       "text": "What do you mean by simulation software? Explain at least three GPSS block diagrams (GENERATE, QUEUE, SEIZE, DEPART, ADVANCE, RELEASE, TERMINATE) with an example of a service facility.",
       "marks": "6",
       "years": [
@@ -206,7 +208,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Random Number Generation and Testing",
+      "chapter": "Random Number",
       "text": "Derive the Kolmogorov-Smirnov (K-S) Test and Chi-Square Goodness-of-Fit Test for verifying uniformity and independence of pseudo-random numbers at significance level $\\alpha = 0.05$.",
       "marks": "8",
       "years": [
@@ -219,7 +221,7 @@
       "solutionOutline": "K-S test compares empirical cumulative distribution Fn(x) with theoretical uniform distribution F(x) = x over [0, 1]. Computes D = max(|Fn(x) - F(x)|); if D <= D_alpha, hypothesis of uniformity is accepted (exact for small n). Chi-square test divides [0, 1] into k equal sub-intervals, computing chi^2 = sum((Oi - Ei)^2 / Ei) with k-1 degrees of freedom."
     },
     {
-      "chapter": "Random Number Generation and Testing",
+      "chapter": "Random Number",
       "text": "Explain Linear Congruential Generators (LCG) $X_{i+1} = (a X_i + c) \\pmod m$. State the Hull-Dobell Theorem for achieving full period $m$. Generate 5 pseudo-random numbers for $a=13, c=7, m=64, X_0=5$.",
       "marks": "8",
       "years": [
@@ -232,7 +234,7 @@
       "solutionOutline": "Generates sequence of pseudo-random integers. Hull-Dobell theorem guarantees full period m if and only if: 1) c and m are coprime; 2) a-1 is divisible by all prime factors of m; 3) a-1 is divisible by 4 if m is divisible by 4. Calculation: X1=(13*5+7)%64=8; X2=(13*8+7)%64=47; X3=(13*47+7)%64=42; X4=(13*42+7)%64=41; X5=(13*41+7)%64=28. Uniform numbers Ri = Xi / m."
     },
     {
-      "chapter": "Random Number Generation and Testing",
+      "chapter": "Random Number",
       "text": "Explain Inverse Transform Technique, Acceptance-Rejection Method, and Box-Muller Transformation for generating non-uniform random variates (Exponential, Uniform, and Normal distributions).",
       "marks": "8",
       "years": [
@@ -245,7 +247,7 @@
       "solutionOutline": "Inverse transform: set uniform random number R = F(X) and solve X = F^(-1)(R). For exponential distribution F(x) = 1 - e^(-lambda x) => X = -(1/lambda) ln(1 - R). Acceptance-Rejection: samples proposal distribution g(x) and accepts with probability f(x)/(c*g(x)). Box-Muller: transforms two independent uniform variates U1, U2 into two standard normal variates Z1 = sqrt(-2 ln U1) cos(2 pi U2) and Z2 = sqrt(-2 ln U1) sin(2 pi U2)."
     },
     {
-      "chapter": "Queuing Systems and Markov Chains",
+      "chapter": "Simulation of Queuing System",
       "text": "Derive steady-state probabilities, average queue length ($L_q$), average system length ($L$), waiting time in queue ($W_q$), and waiting time in system ($W$) for an $M/M/1$ queuing system using Little's Law ($L = \\lambda W$).",
       "marks": "8",
       "years": [
@@ -258,7 +260,7 @@
       "solutionOutline": "Poisson arrival rate lambda, exponential service rate mu. Utilization rho = lambda / mu < 1. Balance equations yield P_n = rho^n (1 - rho). Expected system customers L = sum n P_n = rho / (1 - rho). By Little Law: average time in system W = L / lambda = 1 / (mu - lambda). Time in queue W_q = W - 1/mu = rho / (mu - lambda). Average queue length L_q = lambda * W_q = rho^2 / (1 - rho)."
     },
     {
-      "chapter": "Queuing Systems and Markov Chains",
+      "chapter": "Simulation of Queuing System",
       "text": "Explain an $M/M/c$ multi-server queuing system. Derive the Erlang-C delay probability formula and calculate the probability that an arriving customer must wait in queue.",
       "marks": "8",
       "years": [
@@ -271,7 +273,7 @@
       "solutionOutline": "Poisson arrivals, c identical parallel exponential servers with rate mu. System utilization rho = lambda / (c mu) < 1. Service rate is n*mu for n < c and c*mu for n >= c. Probability of zero customers P_0 = [sum_{n=0}^{c-1} (c rho)^n / n! + (c rho)^c / (c! (1 - rho))]^(-1). Erlang-C formula gives probability that all c servers are busy: P(Wait) = [ (c rho)^c / (c! (1 - rho)) ] * P_0."
     },
     {
-      "chapter": "Queuing Systems and Markov Chains",
+      "chapter": "Simulation of Queuing System",
       "text": "Explain Markov Chains: Transition Probability Matrix ($P$), Chapman-Kolmogorov equations, absorbing states, and steady-state vector $\\pi P = \\pi$. Calculate long-term market share for a brand switching process.",
       "marks": "8",
       "years": [
@@ -284,7 +286,7 @@
       "solutionOutline": "Stochastic process satisfying Markov property: future state depends solely on current state. Chapman-Kolmogorov equation P^(n+m) = P^n * P^m. Stationary distribution pi satisfies pi * P = pi and sum(pi_i) = 1. Absorbing state has p_ii = 1. In brand switching between Brand A and B with transition matrix P, solve system of linear equations to find equilibrium market penetration."
     },
     {
-      "chapter": "Continuous and Discrete System Simulation",
+      "chapter": "Simulation of Continuous System",
       "text": "Describe the Event-Scheduling / Time-Advance Algorithm for Discrete Event Simulation (DES). Explain Future Event List (FEL), simulation clock advance, event routines, and state variables for a single-server banking queue.",
       "marks": "8",
       "years": [
@@ -297,7 +299,7 @@
       "solutionOutline": "DES models system as chronological sequence of instantaneous events altering system state. FEL stores scheduled future event notices sorted by occurrence time. Execution loop: 1) Remove earliest event from FEL; 2) Advance clock to event time; 3) Execute corresponding event routine (Arrival: updates queue, schedules next arrival, schedules departure if server idle; Departure: updates stats, services next customer from queue); 4) Repeat until stopping condition."
     },
     {
-      "chapter": "Continuous and Discrete System Simulation",
+      "chapter": "Simulation of Continuous System",
       "text": "Explain Continuous System Simulation using Differential Equations. Describe Euler's method and 4th-Order Runge-Kutta (RK4) numerical integration methods for simulating a mass-spring-damper physical system.",
       "marks": "8",
       "years": [
@@ -323,7 +325,7 @@
       "solutionOutline": "Verification ensures model is programmed correctly matching conceptual design ('building the model right'). Validation ensures model accurately represents real-world system behavior ('building the right model'). Face validity: domain experts inspect model output for plausibility. Historical data validation: compares simulation outputs against recorded historical system measurements. Turing test: experts asked to distinguish model output from real system data."
     },
     {
-      "chapter": "Simulation Output Analysis",
+      "chapter": "Analysis of simulation output",
       "text": "Explain Simulation Output Analysis for terminating vs steady-state non-terminating systems. Describe the replication method, batch means method, and Welch's graphical procedure for identifying initialization warmup bias.",
       "marks": "8",
       "years": [
@@ -336,7 +338,7 @@
       "solutionOutline": "Terminating systems have natural event ending the run (bank closing time). Steady-state systems operate indefinitely (manufacturing plant). Starting simulation empty creates transient warmup bias. Welch graphical method runs R replications, computes moving average across time, and visually identifies truncation point where output stabilizes. Batch means splits single long run into contiguous batches to obtain independent observations."
     },
     {
-      "chapter": "Simulation Output Analysis",
+      "chapter": "Analysis of simulation output",
       "text": "Explain Variance Reduction Techniques in stochastic simulation: Common Random Numbers (CRN), Antithetic Variates, and Control Variates. Prove how Antithetic Variates reduce variance of estimator $\\bar{X}$.",
       "marks": "8",
       "years": [
@@ -375,7 +377,7 @@
       "solutionOutline": "Methodology for studying complex non-linear systems over time with feedback loops and delays. CLD visualizes cause-effect linkages: positive link (same direction), negative link (opposite direction). Reinforcing loop (even number of negative links) generates exponential growth/collapse. Balancing loop (odd number of negative links) seeks equilibrium. Stocks represent accumulations (levels); flows represent rates of change (derivatives)."
     },
     {
-      "chapter": "Simulation Software and System Simulation",
+      "chapter": "Simulation software",
       "text": "Describe Simulation Languages and Software Tools: GPSS, SIMSCRIPT, Arena, and MATLAB/Simulink. Compare general-purpose high-level programming languages (Python/C++) with special-purpose simulation packages.",
       "marks": "6",
       "years": [

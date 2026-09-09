@@ -2,17 +2,18 @@
   "subject": "Data Structure and Algorithm",
   "generated": "2026-09-09",
   "chapters": [
-    "Introduction to Data Structures and Algorithms",
-    "Linear Data Structures: Stacks, Queues, and Lists",
-    "Recursion",
-    "Trees",
-    "Sorting",
-    "Searching and Hashing",
-    "Graphs"
+    "Introduction",
+    "Stack and Recursion",
+    "Queues",
+    "Linked List",
+    "Tree",
+    "Graphs",
+    "Sorting Algorithms",
+    "Searching Algorithms"
   ],
   "questions": [
     {
-      "chapter": "Trees",
+      "chapter": "Tree",
       "text": "Describe an AVL tree. Construct an AVL balanced tree showing balance factors and rotation operations (LL, RR, LR, RL) after each insertion for the following sequence of data: 15, 20, 24, 10, 13, 7, 30, 36, 25 (or 18, 27, 9, 11, 36, 54, 81, 63, 72).",
       "marks": "8",
       "years": [
@@ -38,7 +39,7 @@
       ]
     },
     {
-      "chapter": "Linear Data Structures: Stacks, Queues, and Lists",
+      "chapter": "Linked List",
       "text": "Define stack. Write an algorithm for converting an infix expression to a postfix expression. Convert the given infix expression to postfix showing the status of the stack after every step: A * (B + C) - (B ^ D) * A + E / F or (A * B * (((C ^ X + D ^ Y) + E / Z) * F)).",
       "marks": "8",
       "years": [
@@ -64,7 +65,7 @@
       ]
     },
     {
-      "chapter": "Searching and Hashing",
+      "chapter": "Searching Algorithms",
       "text": "What is collision in hashing? What are the techniques used for collision resolution? Insert the keys: 62, 37, 36, 44, 67, 91, 82, and 31 into a hash table of size 10 using quadratic probing (or linear probing) where hash function h(key) = key % 10.",
       "marks": "8",
       "years": [
@@ -114,7 +115,7 @@
       ]
     },
     {
-      "chapter": "Recursion",
+      "chapter": "Stack and Recursion",
       "text": "Explain how recursion uses the stack data structure with an illustrative call stack diagram. Write an algorithm to solve the Tower of Hanoi (TOH) problem for n disks and draw the recursion tree for 3 disks.",
       "marks": "8",
       "years": [
@@ -138,8 +139,8 @@
       ]
     },
     {
-      "chapter": "Introduction to Data Structures and Algorithms",
-      "text": "What do you mean by asymptotic notations? Define Big-O, Omega (\u03a9), and Theta (\u0398) notations with their mathematical definitions and graphical diagrams. Explain how time and space complexity of an algorithm are analyzed.",
+      "chapter": "Introduction",
+      "text": "What do you mean by asymptotic notations? Define Big-O, Omega (Ω), and Theta (Θ) notations with their mathematical definitions and graphical diagrams. Explain how time and space complexity of an algorithm are analyzed.",
       "marks": "4",
       "years": [
         "2082 Kartik",
@@ -151,7 +152,7 @@
       ],
       "frequency": 6,
       "id": "data-structure-and-algorithm-6",
-      "question": "What do you mean by asymptotic notations? Define Big-O, Omega (\u03a9), and Theta (\u0398) notations with their mathematical definitions and graphical diagrams. Explain how time and space complexity of an algorithm are analyzed.",
+      "question": "What do you mean by asymptotic notations? Define Big-O, Omega (Ω), and Theta (Θ) notations with their mathematical definitions and graphical diagrams. Explain how time and space complexity of an algorithm are analyzed.",
       "examSessions": [
         "2082 Kartik",
         "2080 Chaitra",
@@ -162,7 +163,7 @@
       ]
     },
     {
-      "chapter": "Linear Data Structures: Stacks, Queues, and Lists",
+      "chapter": "Linked List",
       "text": "Differentiate between linear queue and circular queue with suitable diagrams. Write down conditions for queue full and queue empty in a circular queue. Write algorithms for enqueue and dequeue operations in a circular queue.",
       "marks": "6",
       "years": [
@@ -184,7 +185,7 @@
       ]
     },
     {
-      "chapter": "Linear Data Structures: Stacks, Queues, and Lists",
+      "chapter": "Linked List",
       "text": "Explain how linked lists are used to represent and add/subtract two polynomial equations. Write an algorithm and program to implement addition of two polynomials using singly linked lists.",
       "marks": "10",
       "years": [
@@ -206,7 +207,7 @@
       ]
     },
     {
-      "chapter": "Sorting",
+      "chapter": "Sorting Algorithms",
       "text": "Create a max-heap showing each insertion step for data: 28, 24, 50, 36, 42, 58, 22, 56, 46. Use the same heap tree to sort the data in ascending order showing all intermediate heapify and deletion steps.",
       "marks": "8",
       "years": [
@@ -228,7 +229,7 @@
       ]
     },
     {
-      "chapter": "Sorting",
+      "chapter": "Sorting Algorithms",
       "text": "Write an algorithm for Quick Sort. Trace the quick sort algorithm step-by-step to sort the following numbers: 30, 25, 79, 19, 48, 28, 21, 44, and 110.",
       "marks": "8",
       "years": [
@@ -250,7 +251,7 @@
       ]
     },
     {
-      "chapter": "Introduction to Data Structures and Algorithms",
+      "chapter": "Introduction",
       "text": "Define data structure and Abstract Data Type (ADT). Briefly explain why Stack, Queue, and List are called Abstract Data Types with suitable examples demonstrating abstraction and encapsulation.",
       "marks": "4",
       "years": [
@@ -272,7 +273,7 @@
       ]
     },
     {
-      "chapter": "Trees",
+      "chapter": "Tree",
       "text": "Construct a Huffman code tree for the given set of symbols with their frequencies: A (35), B (18), C (10), D (20), E (9), F (8). Determine the binary code word for each symbol and calculate the average code length.",
       "marks": "6",
       "years": [
@@ -294,7 +295,7 @@
       ]
     },
     {
-      "chapter": "Linear Data Structures: Stacks, Queues, and Lists",
+      "chapter": "Linked List",
       "text": "Explain operations of stack and queue using linked lists. Write an algorithm to insert a node at the k-th position of a doubly linked list and delete the n-th node from a singly linked list.",
       "marks": "8",
       "years": [
@@ -338,7 +339,7 @@
       ]
     },
     {
-      "chapter": "Trees",
+      "chapter": "Tree",
       "text": "Explain deletion of a node having two children in a Binary Search Tree (BST) using in-order predecessor or in-order successor. Describe insertion and node-splitting operations in a B-tree with an example.",
       "marks": "8",
       "years": [
@@ -360,7 +361,7 @@
       ]
     },
     {
-      "chapter": "Linear Data Structures: Stacks, Queues, and Lists",
+      "chapter": "Linked List",
       "text": "Evaluate the given postfix expression using a stack showing the stack status at each operand and operator token: A B C * + D E ^ / F G * - where A = 2, B = 3, C = 10, D = 5, E = 2, F = 4, and G = 6.",
       "marks": "5",
       "years": [
@@ -381,7 +382,7 @@
     },
     {
       "id": "data-structure-and-algorithm-17",
-      "chapter": "Introduction to Data Structures and Algorithms",
+      "chapter": "Introduction",
       "question": "Define Abstract Data Type (ADT). Explain asymptotic notations (Big-O, Big-Omega $\\Omega$, Big-Theta $\\Theta$) used in algorithm analysis with mathematical definitions and graphical plots.",
       "text": "Define Abstract Data Type (ADT). Explain asymptotic notations (Big-O, Big-Omega $\\Omega$, Big-Theta $\\Theta$) used in algorithm analysis with mathematical definitions and graphical plots.",
       "marks": "6",
@@ -399,7 +400,7 @@
     },
     {
       "id": "data-structure-and-algorithm-18",
-      "chapter": "Linear Data Structures: Stacks, Queues, and Lists",
+      "chapter": "Linked List",
       "question": "Explain circular queue and its advantages over linear queue. Write C functions for `enqueue()` and `dequeue()` operations on a circular queue implemented using an array.",
       "text": "Explain circular queue and its advantages over linear queue. Write C functions for `enqueue()` and `dequeue()` operations on a circular queue implemented using an array.",
       "marks": "8",
@@ -417,7 +418,7 @@
     },
     {
       "id": "data-structure-and-algorithm-19",
-      "chapter": "Linear Data Structures: Stacks, Queues, and Lists",
+      "chapter": "Linked List",
       "question": "What is a doubly linked list? Write an algorithm or C function to insert a new node at a given position and delete a node with a specific value from a doubly linked list.",
       "text": "What is a doubly linked list? Write an algorithm or C function to insert a new node at a given position and delete a node with a specific value from a doubly linked list.",
       "marks": "8",
@@ -435,7 +436,7 @@
     },
     {
       "id": "data-structure-and-algorithm-20",
-      "chapter": "Linear Data Structures: Stacks, Queues, and Lists",
+      "chapter": "Linked List",
       "question": "Evaluate the postfix expression: $12, 7, 3, -, /, 2, 1, 5, +, *, +$ showing the status of the stack at each step.",
       "text": "Evaluate the postfix expression: $12, 7, 3, -, /, 2, 1, 5, +, *, +$ showing the status of the stack at each step.",
       "marks": "6",
@@ -453,7 +454,7 @@
     },
     {
       "id": "data-structure-and-algorithm-21",
-      "chapter": "Recursion",
+      "chapter": "Stack and Recursion",
       "question": "Explain the principle of Divide and Conquer. Write a recursive function to solve the Tower of Hanoi problem for $N$ disks and analyze its time complexity.",
       "text": "Explain the principle of Divide and Conquer. Write a recursive function to solve the Tower of Hanoi problem for $N$ disks and analyze its time complexity.",
       "marks": "8",
@@ -471,7 +472,7 @@
     },
     {
       "id": "data-structure-and-algorithm-22",
-      "chapter": "Trees",
+      "chapter": "Tree",
       "question": "What is a Binary Search Tree (BST)? Write an algorithm to insert a node, delete a node with two children, and search for a given key in a BST.",
       "text": "What is a Binary Search Tree (BST)? Write an algorithm to insert a node, delete a node with two children, and search for a given key in a BST.",
       "marks": "8",
@@ -489,7 +490,7 @@
     },
     {
       "id": "data-structure-and-algorithm-23",
-      "chapter": "Trees",
+      "chapter": "Tree",
       "question": "Define B-Tree of order $M$. Construct a B-Tree of order 4 (2-3-4 tree) by inserting the keys: $5, 12, 8, 22, 15, 30, 25, 18, 40, 35$.",
       "text": "Define B-Tree of order $M$. Construct a B-Tree of order 4 (2-3-4 tree) by inserting the keys: $5, 12, 8, 22, 15, 30, 25, 18, 40, 35$.",
       "marks": "8",
@@ -507,7 +508,7 @@
     },
     {
       "id": "data-structure-and-algorithm-24",
-      "chapter": "Trees",
+      "chapter": "Tree",
       "question": "Explain tree traversal algorithms (Inorder, Preorder, Postorder). Construct a binary tree whose Inorder and Preorder traversals are: Inorder: D, B, H, E, A, I, F, J, C, G; Preorder: A, B, D, E, H, C, F, I, J, G.",
       "text": "Explain tree traversal algorithms (Inorder, Preorder, Postorder). Construct a binary tree whose Inorder and Preorder traversals are: Inorder: D, B, H, E, A, I, F, J, C, G; Preorder: A, B, D, E, H, C, F, I, J, G.",
       "marks": "8",
@@ -525,7 +526,7 @@
     },
     {
       "id": "data-structure-and-algorithm-25",
-      "chapter": "Sorting",
+      "chapter": "Sorting Algorithms",
       "question": "Explain Merge Sort algorithm with a Divide and Conquer approach. Trace the algorithm for sorting the list: $38, 27, 43, 3, 9, 82, 10$ and prove its time complexity is $O(N \\log N)$.",
       "text": "Explain Merge Sort algorithm with a Divide and Conquer approach. Trace the algorithm for sorting the list: $38, 27, 43, 3, 9, 82, 10$ and prove its time complexity is $O(N \\log N)$.",
       "marks": "8",
@@ -543,7 +544,7 @@
     },
     {
       "id": "data-structure-and-algorithm-26",
-      "chapter": "Sorting",
+      "chapter": "Sorting Algorithms",
       "question": "Explain Quick Sort algorithm. Trace Quick Sort for partitioning the array $[25, 57, 48, 37, 12, 92, 86, 33]$ with the first element as pivot. Discuss best-case, average-case, and worst-case time complexities.",
       "text": "Explain Quick Sort algorithm. Trace Quick Sort for partitioning the array $[25, 57, 48, 37, 12, 92, 86, 33]$ with the first element as pivot. Discuss best-case, average-case, and worst-case time complexities.",
       "marks": "8",
@@ -561,7 +562,7 @@
     },
     {
       "id": "data-structure-and-algorithm-27",
-      "chapter": "Sorting",
+      "chapter": "Sorting Algorithms",
       "question": "Explain Heap Sort algorithm. Build a Max-Heap from the array $[15, 30, 8, 45, 20, 50, 10]$ and sort it using Heap Sort.",
       "text": "Explain Heap Sort algorithm. Build a Max-Heap from the array $[15, 30, 8, 45, 20, 50, 10]$ and sort it using Heap Sort.",
       "marks": "8",
@@ -579,7 +580,7 @@
     },
     {
       "id": "data-structure-and-algorithm-28",
-      "chapter": "Searching and Hashing",
+      "chapter": "Searching Algorithms",
       "question": "Compare linear search and binary search. Explain open addressing (linear probing, quadratic probing, and double hashing) vs separate chaining for collision resolution in hash tables.",
       "text": "Compare linear search and binary search. Explain open addressing (linear probing, quadratic probing, and double hashing) vs separate chaining for collision resolution in hash tables.",
       "marks": "8",

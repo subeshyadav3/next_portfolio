@@ -21,7 +21,7 @@ import type {
 
 const catalog = catalogJson as IoeCatalog;
 const programsFile = programsJson as IoeProgramsFile;
-const syllabusMap = syllabusJson as Record<string, IoeSyllabus>;
+const syllabusMap = syllabusJson as unknown as Record<string, IoeSyllabus>;
 
 /** Normalize a subject name for matching: lowercase, '&' -> 'and', strip extra symbols. */
 export function normalizeSubjectName(name: string): string {

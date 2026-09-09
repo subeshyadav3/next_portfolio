@@ -3,7 +3,7 @@
   "subjectCode": "ENEX 411",
   "questions": [
     {
-      "chapter": "Microwave Network Analysis",
+      "chapter": "Microwave Passive Components and Scattering Matrix",
       "text": "Why are Scattering Parameters (S-parameters) preferred over Z, Y, and h parameters at microwave frequencies? Define the S-matrix for a two-port and three-port network and prove that for a lossless reciprocal network, $[S]^T = [S]$ and $[S]^\\dagger [S] = [I]$.",
       "marks": "8",
       "years": [
@@ -14,7 +14,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Transmission Lines and Smith Chart",
+      "chapter": "Introduction to Microwave Engineering and Transmission Lines",
       "text": "A load impedance $Z_L = 110 + j110\\ \\Omega$ (or $75 + j100\\ \\Omega$) is connected to a $50\\ \\Omega$ lossless transmission line. Using the Smith Chart, determine: (a) Voltage Reflection Coefficient $\\Gamma_L$, (b) Standing Wave Ratio (SWR), (c) Input impedance at a distance $0.2\\lambda$ from load, and (d) Locations of voltage maxima and minima.",
       "marks": "8",
       "years": [
@@ -25,7 +25,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Impedance Matching and Tuning",
+      "chapter": "Introduction to Microwave Engineering and Transmission Lines",
       "text": "Design a single-stub (shunt or series, open or short-circuited) impedance matching network to match an arbitrary load impedance to a $50\\ \\Omega$ transmission line using the Smith Chart. Calculate the stub position from the load and stub electrical length.",
       "marks": "8",
       "years": [
@@ -47,7 +47,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Microwave Passive Components",
+      "chapter": "Microwave Passive Components and Scattering Matrix",
       "text": "Explain the construction, operational principle, and derive the S-matrix of a Magic Tee (Hybrid Tee). Show that the E-arm and H-arm are mutually decoupled, and explain its applications as a duplexer or balanced mixer.",
       "marks": "8",
       "years": [
@@ -58,7 +58,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Microwave Passive Components",
+      "chapter": "Microwave Passive Components and Scattering Matrix",
       "text": "Define coupling factor ($C$), directivity ($D$), and isolation ($I$) of a Directional Coupler. Explain the working principle and S-matrix of a two-hole waveguide directional coupler and a Bethe-hole directional coupler.",
       "marks": "8",
       "years": [
@@ -69,7 +69,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Microwave Passive Components",
+      "chapter": "Microwave Passive Components and Scattering Matrix",
       "text": "Explain Faraday Rotation in microwave ferrites. Describe the operational principle, internal structure, and scattering matrix of Microwave Isolators and Circulators.",
       "marks": "8",
       "years": [
@@ -79,7 +79,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Microwave Transistor Amplifiers",
+      "chapter": "Microwave Semiconductor Devices",
       "text": "For a microwave transistor with given S-parameters at $5\\text{ GHz}$, check unconditional stability using Rollet's stability criteria: $K > 1$ and $|\\Delta| < 1$, where $\\Delta = S_{11}S_{22} - S_{12}S_{21}$ and $K = \\frac{1 - |S_{11}|^2 - |S_{22}|^2 + |\\Delta|^2}{2|S_{12}S_{21}|}$. Plot input and output stability circles on the Smith Chart.",
       "marks": "10",
       "years": [
@@ -91,7 +91,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Microwave Transistor Amplifiers",
+      "chapter": "Microwave Semiconductor Devices",
       "text": "Design input and output matching networks for a microwave transistor amplifier to achieve maximum transducer power gain ($G_{T,\\max}$) or specified unilateral gain ($G_U$) with matching stubs on a $50\\ \\Omega$ microstrip line.",
       "marks": "8",
       "years": [
@@ -102,7 +102,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Microwave Tubes",
+      "chapter": "Microwave Tubes (Klystron, TWT, Magnetron)",
       "text": "What is velocity modulation and bunching effect? Describe the construction, operational principle, and Applegate diagram of a Two-Cavity Klystron amplifier and Reflex Klystron oscillator.",
       "marks": "10",
       "years": [
@@ -113,7 +113,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Microwave Tubes",
+      "chapter": "Microwave Tubes (Klystron, TWT, Magnetron)",
       "text": "Explain the operational principle of a Cavity Magnetron oscillator. Describe electron trajectory under crossed electric and magnetic fields, phase focusing effect, and Hull cutoff magnetic field / Hartree condition.",
       "marks": "8",
       "years": [
@@ -123,7 +123,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Microwave Solid State Devices",
+      "chapter": "Microwave Semiconductor Devices",
       "text": "Explain the transferred electron mechanism (Gunn Effect and Ridley-Watkins-Hilsum theory) in a GaAs Gunn Diode. Describe the formation and drift of high-field dipole domains.",
       "marks": "8",
       "years": [
@@ -133,7 +133,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Microwave Measurements",
+      "chapter": "Microwave Measurements and Applications",
       "text": "Explain microwave power measurement using Bolometer bridges (thermistors and barretters) and static calorimeters. Describe the operation and calibration of a Vector Network Analyzer (VNA) for measuring device S-parameters.",
       "marks": "8",
       "years": [
@@ -145,7 +145,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Radiation Hazards and Safety Standards",
+      "chapter": "Microwave Measurements and Applications",
       "text": "Define Specific Absorption Rate (SAR) and power density. Discuss microwave electromagnetic radiation biological hazards (thermal cataracts, tissue heating) and list major international RF safety standards and practices.",
       "marks": "6",
       "years": [
@@ -157,7 +157,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Microwave Filters",
+      "chapter": "Microwave Passive Components and Scattering Matrix",
       "text": "Explain the Insertion Loss method for microwave filter design. Describe Richard's Transformation and Kuroda's Identities for converting lumped element prototype low-pass filters into distributed microstrip transmission line stubs.",
       "marks": "8",
       "years": [
@@ -169,7 +169,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Introduction to Microwaves",
+      "chapter": "Introduction to Microwave Engineering and Transmission Lines",
       "text": "Explain how microwave systems differ from conventional low-frequency lumped circuits. Compare lumped and distributed circuit models, and explain skin depth and dielectric loss at microwave frequencies.",
       "marks": "6",
       "years": [
@@ -206,7 +206,7 @@
       "solutionOutline": "Formed by enclosing rectangular waveguide with conducting plates at z = 0 and z = d. Standing wave condition requires length d = p (lambda_g / 2). Resonant frequency f_mnp = (c/2) sqrt((m/a)^2 + (n/b)^2 + (p/d)^2). For dominant TE101 mode: f_101 = (c/2) sqrt((1/a)^2 + (1/d)^2). Quality factor Q = omega W / P_loss measures frequency selectivity; high Q (~10,000) due to large volume-to-surface-area ratio and low wall conduction losses."
     },
     {
-      "chapter": "Impedance Matching and Tuning",
+      "chapter": "Introduction to Microwave Engineering and Transmission Lines",
       "text": "Explain Single-Stub and Double-Stub Shunt Impedance Matching using the Smith Chart. For a load $Z_L = 100 + j80\\ \\Omega$ connected to a $50\\ \\Omega$ line, determine the location and length of a short-circuited shunt stub.",
       "marks": "8",
       "years": [
@@ -219,7 +219,7 @@
       "solutionOutline": "Normalized impedance z_L = Z_L / Z_0 = 2 + j1.6. Convert to admittance y_L. Rotate towards generator along SWR circle to intersect 1 + jb circle at distance d. Shunt stub placed at d must provide susceptance -jb to cancel reactive part. Stub length l found on perimeter from short-circuit admittance (infinite conductance y = infty) to -jb. Double stub uses fixed locations separated by 3 lambda / 8, altering stub lengths to match."
     },
     {
-      "chapter": "Microwave Passive Components",
+      "chapter": "Microwave Passive Components and Scattering Matrix",
       "text": "Explain the Magic-Tee (Hybrid-Tee) microwave junction. Derive its $4 \\times 4$ Scattering Matrix ($S$-matrix) from symmetry and unitary properties, and explain its applications as an E-H tuner, duplexer, and balanced mixer.",
       "marks": "8",
       "years": [
@@ -232,7 +232,7 @@
       "solutionOutline": "Combination of E-plane and H-plane tees. Port 1 & 2 collinear, Port 3 H-plane (sum port), Port 4 E-plane (difference port). Symmetry: S13=S23=1/sqrt(2), S14=-S24=1/sqrt(2). Matched ports: S33=S44=0. Unitary property yields S-matrix where power into Port 3 divides equally in-phase to Ports 1 & 2; power into Port 4 divides equally out-of-phase (180 deg) to Ports 1 & 2; Ports 3 and 4 are completely isolated (S34 = S43 = 0)."
     },
     {
-      "chapter": "Microwave Passive Components",
+      "chapter": "Microwave Passive Components and Scattering Matrix",
       "text": "Describe Directional Couplers. Define Coupling Factor ($C = 10\\log_{10}(P_1/P_3)$), Directivity ($D = 10\\log_{10}(P_3/P_4)$), and Isolation ($I = 10\\log_{10}(P_1/P_4)$). Explain the Bethe-hole coupler and two-hole directional coupler.",
       "marks": "8",
       "years": [
@@ -245,7 +245,7 @@
       "solutionOutline": "Four-port passive network that samples portion of forward travelling power. Port 1: Input, Port 2: Through, Port 3: Coupled, Port 4: Isolated. Relation: I = C + D (in dB). Two-hole coupler places two aperture holes spaced lambda_g / 4 apart between waveguides. Forward coupled waves add in phase at Port 3; backward coupled waves travel 2 * (lambda_g / 4) = 180 deg out of phase, canceling completely at Port 4."
     },
     {
-      "chapter": "Microwave Passive Components",
+      "chapter": "Microwave Passive Components and Scattering Matrix",
       "text": "Explain Ferrite Microwave Devices: Faraday Rotation Isolators and Circulators. Derive the $3 \\times 3$ S-matrix of an ideal 3-port circulator and explain non-reciprocal phase shift under external DC magnetic bias.",
       "marks": "8",
       "years": [
@@ -258,7 +258,7 @@
       "solutionOutline": "Ferrites are anisotropic magnetic materials exhibiting gyromagnetic resonance under DC magnetic bias H_0. Faraday rotation rotates plane of polarization non-reciprocally. Isolator transmits forward wave unattenuated, while reflected wave is rotated into resistive absorber vane (infinite reverse attenuation). Ideal 3-port circulator transfers power sequentially 1->2, 2->3, 3->1 with S-matrix having S21=S32=1, all other entries 0."
     },
     {
-      "chapter": "Microwave Tubes",
+      "chapter": "Microwave Tubes (Klystron, TWT, Magnetron)",
       "text": "Describe the Reflex Klystron oscillator. Explain velocity modulation, bunching process with Applegate diagram, repeller voltage modes ($n + 3/4$), electronic tuning, and power output efficiency.",
       "marks": "8",
       "years": [
@@ -271,7 +271,7 @@
       "solutionOutline": "Single-cavity microwave oscillator tube. Electron beam passes through resonator cavity gap experiencing velocity modulation from RF electric field. Electrons enter retarding space against negative repeller voltage V_r, reflect back, and bunch together. Bunches re-enter cavity gap during positive retarding phase, giving energy to RF field. Optimum bunching occurs when round-trip transit time T = (n + 3/4) T_0 (modes 1 3/4, 2 3/4...)."
     },
     {
-      "chapter": "Microwave Tubes",
+      "chapter": "Microwave Tubes (Klystron, TWT, Magnetron)",
       "text": "Explain the Two-Cavity Klystron amplifier: Bunched electron beam dynamics, bunching parameter, cavity gap transit angle, and RF power amplification mechanism.",
       "marks": "8",
       "years": [
@@ -284,7 +284,7 @@
       "solutionOutline": "Linear-beam O-type amplifier. Electron gun emits beam. Input cavity (Buncher) sets up RF field velocity-modulating electrons: early electrons accelerated, late electrons decelerated. Field-free drift space allows fast electrons to catch up with slow ones, forming tight electron bunches. Bunched beam passes through output cavity (Catcher), inducing large RF current across catcher gap, delivering amplified power to load."
     },
     {
-      "chapter": "Microwave Tubes",
+      "chapter": "Microwave Tubes (Klystron, TWT, Magnetron)",
       "text": "Explain the Traveling Wave Tube (TWT) amplifier. Describe the slow-wave helical structure, continuous beam-wave interaction, axial phase velocity synchronism, and gain mechanism.",
       "marks": "8",
       "years": [
@@ -297,7 +297,7 @@
       "solutionOutline": "Broadband microwave amplifier (several GHz bandwidth). Solves klystron bandwidth limits by replacing resonant cavities with continuous slow-wave helical transmission line. Helix slows RF wave axial phase velocity v_p = c * sin(psi) down to match electron beam DC velocity v_0. Continuous interaction over entire tube length causes electrons to decelerate in retarding RF electric fields, transferring kinetic energy to wave and amplifying it exponentially."
     },
     {
-      "chapter": "Microwave Tubes",
+      "chapter": "Microwave Tubes (Klystron, TWT, Magnetron)",
       "text": "Explain the Cylindrical Magnetron oscillator. Describe crossed-field dynamics ($E \\perp B$), Hull cut-off magnetic field, Hartree resonance condition, $\\pi$-mode oscillation, and strapping techniques.",
       "marks": "8",
       "years": [
@@ -310,7 +310,7 @@
       "solutionOutline": "High-power cross-field (M-type) microwave oscillator. Radial DC electric field E and axial DC magnetic field B force electrons into cycloidal/epicycloidal paths forming rotating spokes. Hull cut-off magnetic field B_c prevents electrons from reaching anode in absence of RF field. In pi-mode, adjacent resonant cavities oscillate 180 deg out of phase. Strapping connects alternate cavity vanes to stabilize pi-mode against adjacent mode jumping."
     },
     {
-      "chapter": "Microwave Solid State Devices",
+      "chapter": "Microwave Semiconductor Devices",
       "text": "Explain the Gunn Diode oscillator based on the Ridley-Watkins-Hilsum (RWH) transferred electron mechanism. Describe negative differential resistance, GaAs conduction band valleys ($\\Gamma$ and $L$), and high-field domain transit modes.",
       "marks": "8",
       "years": [
@@ -323,7 +323,7 @@
       "solutionOutline": "Bulk semiconductor device without p-n junction (n-type GaAs/InP). Operates via two-valley model: lower central valley has high electron mobility (mu1 ~ 8000 cm^2/Vs), upper satellite valley has low mobility (mu2 ~ 180 cm^2/Vs) separated by Delta E = 0.31 eV. When applied electric field exceeds threshold E_th ~ 3.2 kV/cm, electrons scatter into upper valley, decreasing drift velocity and creating negative differential resistance dv/dE < 0, launching dipole domains."
     },
     {
-      "chapter": "Microwave Solid State Devices",
+      "chapter": "Microwave Semiconductor Devices",
       "text": "Describe IMPATT and TRAPATT avalanche transit-time diodes. Explain impact ionization avalanche breakdown, $90^\\circ$ phase delay, drift transit delay, and dynamic negative resistance generation.",
       "marks": "8",
       "years": [
@@ -336,7 +336,7 @@
       "solutionOutline": "Impact Avalanche Transit Time diode (Read diode p+-n-i-n+). High reverse bias causes impact ionization avalanche breakdown. Avalanche current lags terminal RF voltage by 90 deg. Generated carriers drift across intrinsic region of length W taking transit time tau = W / v_d = T/2, introducing additional 90 deg phase shift. Total 180 deg phase shift creates dynamic negative resistance, delivering RF power up to 100 GHz."
     },
     {
-      "chapter": "Microwave Measurements",
+      "chapter": "Microwave Measurements and Applications",
       "text": "Explain Microwave Power and VSWR Measurements. Describe the Bolometer/Thermistor sensor bridge, slotted line method for measuring high and low VSWR (double minimum method), and frequency meter cavity operation.",
       "marks": "8",
       "years": [
@@ -349,7 +349,7 @@
       "solutionOutline": "Power measurement: Bolometer/Barretter (positive temp coefficient) or Thermistor (negative temp coefficient) absorbs RF power, changing resistance in balanced Wheatstone bridge; substituted DC bias power measures RF power. VSWR measurement: slotted line with tunable probe detector measures V_max and V_min directly for low VSWR (< 10). For high VSWR (> 10), probe voltage at minimum is sharp: double-minimum method measures width Delta x where power doubles, VSWR = lambda_g / (pi Delta x)."
     },
     {
-      "chapter": "Radiation Hazards and Safety Standards",
+      "chapter": "Microwave Measurements and Applications",
       "text": "Explain Microwave Radiation Hazards and IEEE/ICNIRP Safety Standards. Discuss Specific Absorption Rate (SAR in W/kg), thermal and non-thermal biological effects of microwave exposure, and maximum permissible exposure limits.",
       "marks": "6",
       "years": [
@@ -363,17 +363,11 @@
     }
   ],
   "chapters": [
-    "Introduction to Microwaves",
-    "Transmission Lines and Smith Chart",
+    "Introduction to Microwave Engineering and Transmission Lines",
     "Waveguides and Cavity Resonators",
-    "Microwave Network Analysis",
-    "Impedance Matching and Tuning",
-    "Microwave Passive Components",
-    "Microwave Tubes",
-    "Microwave Solid State Devices",
-    "Microwave Filters",
-    "Microwave Transistor Amplifiers",
-    "Microwave Measurements",
-    "Radiation Hazards and Safety Standards"
+    "Microwave Passive Components and Scattering Matrix",
+    "Microwave Semiconductor Devices",
+    "Microwave Tubes (Klystron, TWT, Magnetron)",
+    "Microwave Measurements and Applications"
   ]
 }

@@ -2,13 +2,14 @@
   "subject": "Computer Organization and Architecture",
   "generated": "2026-09-09",
   "chapters": [
-    "Introduction and Instruction Set Architecture",
+    "Introduction",
+    "Central Processing Unit (CPU)",
+    "Control Unit (CU)",
+    "Memory System",
     "Computer Arithmetic",
-    "Control Unit Design",
-    "Pipelining and Parallel Processing",
-    "Memory Organization",
-    "Input-Output Organization",
-    "Multiprocessor Systems"
+    "Pipelining and Vector Processing",
+    "Input/ Output",
+    "Multiprocessor System"
   ],
   "questions": [
     {
@@ -34,7 +35,7 @@
       ]
     },
     {
-      "chapter": "Introduction and Instruction Set Architecture",
+      "chapter": "Introduction",
       "text": "Write down the code to evaluate the arithmetic statement $Y = (A - B / C) \\times [D + (E \\times G)]$ using zero-address, one-address, two-address, and three-address instructions.",
       "marks": "8",
       "years": [
@@ -54,7 +55,7 @@
       ]
     },
     {
-      "chapter": "Introduction and Instruction Set Architecture",
+      "chapter": "Introduction",
       "text": "Define addressing modes. Explain the different types of addressing modes with suitable examples and compare each of them.",
       "marks": "8",
       "years": [
@@ -76,7 +77,7 @@
       ]
     },
     {
-      "chapter": "Control Unit Design",
+      "chapter": "Control Unit (CU)",
       "text": "Differentiate between hardwired control unit and microprogrammed control unit. Draw and explain the block diagram of microprogrammed control organization and address sequencing.",
       "marks": "8",
       "years": [
@@ -98,7 +99,7 @@
       ]
     },
     {
-      "chapter": "Pipelining and Parallel Processing",
+      "chapter": "Pipelining and Vector Processing",
       "text": "How pipeline processing is done in an instruction pipeline? Explain four-segment instruction pipeline with timing diagram. What are the major pipeline hazards and how are they resolved?",
       "marks": "8",
       "years": [
@@ -160,7 +161,7 @@
       ]
     },
     {
-      "chapter": "Memory Organization",
+      "chapter": "Memory System",
       "text": "Explain various mapping methods used in cache memory organization (Direct mapping, Associative mapping, and Set-associative mapping) and compare each with suitable diagrams.",
       "marks": "8",
       "years": [
@@ -182,7 +183,7 @@
       ]
     },
     {
-      "chapter": "Memory Organization",
+      "chapter": "Memory System",
       "text": "Explain Least Recently Used (LRU) replacement algorithm in case of hit and miss. Suppose main memory has 64 blocks and cache has 16 lines; determine the size of tag, line, and word fields.",
       "marks": "8",
       "years": [
@@ -202,7 +203,7 @@
       ]
     },
     {
-      "chapter": "Input-Output Organization",
+      "chapter": "Input/ Output",
       "text": "Compare Programmed I/O, Interrupt-driven I/O, and Direct Memory Access (DMA). How does a DMA controller transfer data between high-speed peripheral and memory?",
       "marks": "8",
       "years": [
@@ -222,7 +223,7 @@
       ]
     },
     {
-      "chapter": "Input-Output Organization",
+      "chapter": "Input/ Output",
       "text": "Differentiate between isolated I/O and memory-mapped I/O. Explain with block diagram and control signal requirements.",
       "marks": "6",
       "years": [
@@ -240,7 +241,7 @@
       ]
     },
     {
-      "chapter": "Input-Output Organization",
+      "chapter": "Input/ Output",
       "text": "Why is an Input-Output Processor (IOP) needed in an input-output organization? Explain how CPU and IOP communicate with each other.",
       "marks": "8",
       "years": [
@@ -260,7 +261,7 @@
       ]
     },
     {
-      "chapter": "Multiprocessor Systems",
+      "chapter": "Multiprocessor System",
       "text": "Differentiate between tightly coupled multiprocessor and loosely coupled multiprocessor systems with neat block diagrams.",
       "marks": "6",
       "years": [
@@ -280,7 +281,7 @@
       ]
     },
     {
-      "chapter": "Multiprocessor Systems",
+      "chapter": "Multiprocessor System",
       "text": "Compare and contrast the interconnection structures used in multiprocessor systems: Time-shared common bus, Multiport memory, Crossbar switch, and Hypercube network.",
       "marks": "8",
       "years": [
@@ -300,7 +301,7 @@
       ]
     },
     {
-      "chapter": "Multiprocessor Systems",
+      "chapter": "Multiprocessor System",
       "text": "Explain inter-processor synchronization with suitable example. What is mutual exclusion with a semaphore and how is it implemented?",
       "marks": "6",
       "years": [
@@ -318,7 +319,7 @@
       ]
     },
     {
-      "chapter": "Introduction and Instruction Set Architecture",
+      "chapter": "Introduction",
       "text": "Design a 2-bit ALU that can perform subtraction, AND, OR, and XOR operations with function table and logic diagram.",
       "marks": "8",
       "years": [
@@ -337,7 +338,7 @@
     },
     {
       "id": "computer-organization-and-architecture-17",
-      "chapter": "Introduction and Instruction Set Architecture",
+      "chapter": "Introduction",
       "question": "Compare RISC and CISC architectures with respect to instruction set complexity, register usage, memory operands, pipelining, and clock cycle per instruction (CPI).",
       "text": "Compare RISC and CISC architectures with respect to instruction set complexity, register usage, memory operands, pipelining, and clock cycle per instruction (CPI).",
       "marks": "6",
@@ -355,7 +356,7 @@
     },
     {
       "id": "computer-organization-and-architecture-18",
-      "chapter": "Introduction and Instruction Set Architecture",
+      "chapter": "Introduction",
       "question": "Explain the Instruction Cycle: Fetch, Decode, Read Effective Address, Execute, and Interrupt. Draw the flowchart of the complete instruction cycle.",
       "text": "Explain the Instruction Cycle: Fetch, Decode, Read Effective Address, Execute, and Interrupt. Draw the flowchart of the complete instruction cycle.",
       "marks": "8",
@@ -409,7 +410,7 @@
     },
     {
       "id": "computer-organization-and-architecture-21",
-      "chapter": "Control Unit Design",
+      "chapter": "Control Unit (CU)",
       "question": "Explain Microprogrammed Control Unit organization. Describe horizontal versus vertical microinstructions, address sequencing, and microinstruction formatting.",
       "text": "Explain Microprogrammed Control Unit organization. Describe horizontal versus vertical microinstructions, address sequencing, and microinstruction formatting.",
       "marks": "8",
@@ -427,7 +428,7 @@
     },
     {
       "id": "computer-organization-and-architecture-22",
-      "chapter": "Pipelining and Parallel Processing",
+      "chapter": "Pipelining and Vector Processing",
       "question": "Explain instruction pipelining and calculate pipeline speedup, throughput, and efficiency. A 4-segment instruction pipeline has stage delays of $20\\text{ ns}, 30\\text{ ns}, 15\\text{ ns}, 25\\text{ ns}$. Calculate speedup over non-pipelined execution for 100 instructions.",
       "text": "Explain instruction pipelining and calculate pipeline speedup, throughput, and efficiency. A 4-segment instruction pipeline has stage delays of $20\\text{ ns}, 30\\text{ ns}, 15\\text{ ns}, 25\\text{ ns}$. Calculate speedup over non-pipelined execution for 100 instructions.",
       "marks": "8",
@@ -445,7 +446,7 @@
     },
     {
       "id": "computer-organization-and-architecture-23",
-      "chapter": "Pipelining and Parallel Processing",
+      "chapter": "Pipelining and Vector Processing",
       "question": "Explain pipeline hazards: Structural Hazards, Data Hazards (RAW, WAR, WAW), and Control (Branch) Hazards. How are data hazards resolved using operand forwarding and delayed branching?",
       "text": "Explain pipeline hazards: Structural Hazards, Data Hazards (RAW, WAR, WAW), and Control (Branch) Hazards. How are data hazards resolved using operand forwarding and delayed branching?",
       "marks": "8",
@@ -463,7 +464,7 @@
     },
     {
       "id": "computer-organization-and-architecture-24",
-      "chapter": "Pipelining and Parallel Processing",
+      "chapter": "Pipelining and Vector Processing",
       "question": "Explain Flynn's classification of computer architectures (SISD, SIMD, MISD, MIMD) with examples and architectural diagrams.",
       "text": "Explain Flynn's classification of computer architectures (SISD, SIMD, MISD, MIMD) with examples and architectural diagrams.",
       "marks": "6",
@@ -481,7 +482,7 @@
     },
     {
       "id": "computer-organization-and-architecture-25",
-      "chapter": "Memory Organization",
+      "chapter": "Memory System",
       "question": "Explain the memory hierarchy in modern computer systems. What is Locality of Reference (Temporal and Spatial)? How does it justify the use of cache memory?",
       "text": "Explain the memory hierarchy in modern computer systems. What is Locality of Reference (Temporal and Spatial)? How does it justify the use of cache memory?",
       "marks": "6",
@@ -499,7 +500,7 @@
     },
     {
       "id": "computer-organization-and-architecture-26",
-      "chapter": "Memory Organization",
+      "chapter": "Memory System",
       "question": "Explain cache memory mapping techniques: Direct Mapping, Fully Associative Mapping, and Set-Associative Mapping. A system has a $64\\text{ KB}$ cache with 16-byte blocks and a $16\\text{ MB}$ main memory. Find Tag, Set/Index, and Word bits for 4-way set-associative mapping.",
       "text": "Explain cache memory mapping techniques: Direct Mapping, Fully Associative Mapping, and Set-Associative Mapping. A system has a $64\\text{ KB}$ cache with 16-byte blocks and a $16\\text{ MB}$ main memory. Find Tag, Set/Index, and Word bits for 4-way set-associative mapping.",
       "marks": "8",
@@ -517,7 +518,7 @@
     },
     {
       "id": "computer-organization-and-architecture-27",
-      "chapter": "Memory Organization",
+      "chapter": "Memory System",
       "question": "Explain cache write policies: Write-Through vs Write-Back, and Write-Allocate vs No-Write-Allocate. Explain cache replacement algorithms (LRU, FIFO, Random).",
       "text": "Explain cache write policies: Write-Through vs Write-Back, and Write-Allocate vs No-Write-Allocate. Explain cache replacement algorithms (LRU, FIFO, Random).",
       "marks": "6",
@@ -535,7 +536,7 @@
     },
     {
       "id": "computer-organization-and-architecture-28",
-      "chapter": "Input-Output Organization",
+      "chapter": "Input/ Output",
       "question": "Explain Programmed I/O, Interrupt-Driven I/O, and Direct Memory Access (DMA). Compare their CPU overheads and data transfer bandwidths.",
       "text": "Explain Programmed I/O, Interrupt-Driven I/O, and Direct Memory Access (DMA). Compare their CPU overheads and data transfer bandwidths.",
       "marks": "8",
@@ -553,7 +554,7 @@
     },
     {
       "id": "computer-organization-and-architecture-29",
-      "chapter": "Input-Output Organization",
+      "chapter": "Input/ Output",
       "question": "Explain daisy-chaining and priority encoder mechanisms for resolving simultaneous bus requests from multiple I/O devices.",
       "text": "Explain daisy-chaining and priority encoder mechanisms for resolving simultaneous bus requests from multiple I/O devices.",
       "marks": "6",
@@ -571,7 +572,7 @@
     },
     {
       "id": "computer-organization-and-architecture-30",
-      "chapter": "Multiprocessor Systems",
+      "chapter": "Multiprocessor System",
       "question": "Explain cache coherence problem in shared-memory multiprocessor systems. Explain Snooping protocol (MESI protocol) and Directory-based protocol for maintaining cache coherence.",
       "text": "Explain cache coherence problem in shared-memory multiprocessor systems. Explain Snooping protocol (MESI protocol) and Directory-based protocol for maintaining cache coherence.",
       "marks": "8",

@@ -2,18 +2,16 @@
   "subject": "Web Application Programming",
   "generated": "2026-09-09",
   "chapters": [
-    "Introduction to Web and Web Architectures",
-    "HTML5 and CSS3",
-    "Client-Side Programming and DOM Manipulation",
-    "Frontend Frameworks (React.js)",
-    "Server-Side Development and MVC Architecture",
-    "Web Services, RESTful APIs, and Serialization",
-    "Web Security and Authentication",
-    "Modern Web Deployment, PWAs, and DevOps"
+    "Introduction",
+    "JavaScript and Client-Side Programming",
+    "Server-Side Web Programming",
+    "Web Services & APIs",
+    "Web Application Security",
+    "Web Application Deployment and Modern Trends"
   ],
   "questions": [
     {
-      "chapter": "Frontend Frameworks (React.js)",
+      "chapter": "JavaScript and Client-Side Programming",
       "text": "Create a React component named `Counter` with a title that:\n(a) Displays a counter starting at 0.\n(b) Has a button labeled \"Increment\" to increase the counter by 1.\n(c) Updates the document title using `useEffect` hook to reflect the current counter value whenever it changes.\n(d) Resets the counter to 0 upon reaching 10.",
       "marks": "8",
       "years": [
@@ -22,7 +20,7 @@
       "frequency": 2
     },
     {
-      "chapter": "HTML5 and CSS3",
+      "chapter": "JavaScript and Client-Side Programming",
       "text": "Explain the evolution of web architecture. Why do we need semantic elements in HTML5? Create an HTML form that includes Student Roll Number (number), Student Name (text), Student Faculty (select dropdown: Computer, Electronics, Electrical), and a Submit button with client-side validation.",
       "marks": "8",
       "years": [
@@ -32,7 +30,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Client-Side Programming and DOM Manipulation",
+      "chapter": "JavaScript and Client-Side Programming",
       "text": "Differentiate between arrow functions and normal functions in JavaScript with examples, highlighting the `this` binding. Explain JavaScript event handling, event bubbling, and event delegation with suitable examples.",
       "marks": "6",
       "years": [
@@ -42,7 +40,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Server-Side Development and MVC Architecture",
+      "chapter": "Server-Side Web Programming",
       "text": "Explain the MVC (Model-View-Controller) architecture in web development with a neat architectural diagram. Discuss CRUD operations and Object-Relational Mapping (ORM) concepts.",
       "marks": "6",
       "years": [
@@ -53,7 +51,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Server-Side Development and MVC Architecture",
+      "chapter": "Server-Side Web Programming",
       "text": "Explain how Django (or Express/Node.js) handles HTTP request and response cycles. Explain form data handling, request validation, and database model mapping with a suitable example.",
       "marks": "6",
       "years": [
@@ -62,7 +60,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Web Services, RESTful APIs, and Serialization",
+      "chapter": "Web Services & APIs",
       "text": "Define REST architectural principles and constraints. Compare and contrast JSON and XML for data exchange in web services with suitable syntax examples. Describe standard HTTP methods (GET, POST, PUT, DELETE, PATCH).",
       "marks": "8",
       "years": [
@@ -73,7 +71,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Web Services, RESTful APIs, and Serialization",
+      "chapter": "Web Services & APIs",
       "text": "What are data validation and serialization in web services? Differentiate between monolithic web architectures and Microservices architectures with their pros and cons.",
       "marks": "5",
       "years": [
@@ -82,7 +80,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Web Security and Authentication",
+      "chapter": "Web Application Security",
       "text": "Explain Cross-Site Scripting (XSS), SQL Injection, and Cross-Site Request Forgery (CSRF). Illustrate each vulnerability with a code example and describe prevention mechanisms including parameterized queries, sanitization, and CSRF tokens.",
       "marks": "8",
       "years": [
@@ -92,7 +90,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Modern Web Deployment, PWAs, and DevOps",
+      "chapter": "Web Application Deployment and Modern Trends",
       "text": "Define a Progressive Web App (PWA). Explain the roles of Service Workers, Web App Manifest, and caching strategies. Explain the CI/CD deployment pipeline with a neat workflow diagram.",
       "marks": "6",
       "years": [
@@ -101,7 +99,7 @@
       "frequency": 2
     },
     {
-      "chapter": "Client-Side Programming and DOM Manipulation",
+      "chapter": "JavaScript and Client-Side Programming",
       "text": "What are Cookies and Sessions? Compare and contrast Cookies, Sessions, LocalStorage, and SessionStorage in terms of lifetime, capacity, security (`HttpOnly`, `SameSite`), and server accessibility.",
       "marks": "6",
       "years": [
@@ -112,7 +110,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Client-Side Programming and DOM Manipulation",
+      "chapter": "JavaScript and Client-Side Programming",
       "text": "Explain the Document Object Model (DOM). Write a JavaScript program to dynamically create, manipulate, and remove HTML table rows and validate form inputs before form submission.",
       "marks": "6",
       "years": [
@@ -123,7 +121,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Client-Side Programming and DOM Manipulation",
+      "chapter": "JavaScript and Client-Side Programming",
       "text": "Explain the working principle of AJAX (Asynchronous JavaScript and XML) request and response using the `fetch()` API and `XMLHttpRequest`. How does AJAX differ from WebSockets for bidirectional communication?",
       "marks": "6",
       "years": [
@@ -134,7 +132,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Introduction to Web and Web Architectures",
+      "chapter": "Introduction",
       "text": "Differentiate between Web 1.0, Web 2.0, and Web 3.0. Explain multi-tier web application architecture and compare client-side rendering (CSR) with server-side rendering (SSR).",
       "marks": "6",
       "years": [
@@ -145,7 +143,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Web Services, RESTful APIs, and Serialization",
+      "chapter": "Web Services & APIs",
       "text": "Explain Service-Oriented Architecture (SOA). Compare and contrast SOAP and RESTful web services in terms of transport protocol, payload format, standards, and performance.",
       "marks": "6",
       "years": [
@@ -156,7 +154,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Web Services, RESTful APIs, and Serialization",
+      "chapter": "Web Services & APIs",
       "text": "What is the Semantic Web? Explain the purpose and components of the Semantic Web including RDF (Resource Description Framework), RDFS, and OWL (Web Ontology Language).",
       "marks": "6",
       "years": [
@@ -168,7 +166,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Modern Web Deployment, PWAs, and DevOps",
+      "chapter": "Web Application Deployment and Modern Trends",
       "text": "Write short notes on: (a) JavaScript Callbacks and Promises, (b) DevOps culture and Containerization (Docker), (c) Input sanitization and Content Security Policy (CSP).",
       "marks": "6",
       "years": [
@@ -178,7 +176,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Client-Side Programming and DOM Manipulation",
+      "chapter": "JavaScript and Client-Side Programming",
       "text": "Explain asynchronous JavaScript programming. Compare Callbacks, Promises, and async/await syntax. How does the JavaScript Event Loop (Call Stack, Web APIs, Task Queue, Microtask Queue) handle asynchronous operations without blocking the single thread?",
       "marks": "8",
       "years": [
@@ -191,7 +189,7 @@
       "solutionOutline": "JavaScript runs on single thread with run-to-completion semantics. Synchronous code executes on Call Stack. Asynchronous tasks (timers, fetch) are delegated to browser Web APIs. Upon completion, callback enters Task/Callback Queue (macrotask) or Microtask Queue (Promises, queueMicrotask). Event loop prioritizes drain of Microtask queue before picking next macrotask."
     },
     {
-      "chapter": "Frontend Frameworks (React.js)",
+      "chapter": "JavaScript and Client-Side Programming",
       "text": "Explain the React Component Lifecycle and React Hooks. Differentiate between useState, useEffect, useContext, and useMemo with functional component code snippets.",
       "marks": "8",
       "years": [
@@ -203,7 +201,7 @@
       "solutionOutline": "React hooks allow functional components to use state and lifecycle features. useState manages local reactive state. useEffect runs side effects (API calls, subscriptions) with optional dependency array and cleanup function. useContext accesses React Context without prop drilling. useMemo memoizes computed values across re-renders to prevent expensive recalculations."
     },
     {
-      "chapter": "Web Services, RESTful APIs, and Serialization",
+      "chapter": "Web Services & APIs",
       "text": "Design a RESTful API for an Online E-Commerce System with endpoints for user authentication, product catalog, cart management, and order checkout. Explain HTTP methods (GET, POST, PUT, DELETE, PATCH) and standard HTTP status codes (200, 201, 400, 401, 403, 404, 500).",
       "marks": "8",
       "years": [
@@ -216,7 +214,7 @@
       "solutionOutline": "REST principles: stateless, uniform interface, resource-oriented URIs (/api/v1/products, /api/v1/cart, /api/v1/orders). POST creates resources (201 Created), GET retrieves (200 OK), PUT replaces, PATCH partially updates, DELETE removes (204 No Content). Status codes: 400 Bad Request, 401 Unauthorized, 403 Forbidden, 404 Not Found, 500 Internal Server Error."
     },
     {
-      "chapter": "Web Security and Authentication",
+      "chapter": "Web Application Security",
       "text": "Explain Web Security vulnerabilities: Cross-Site Scripting (XSS: Stored, Reflected, DOM-based), Cross-Site Request Forgery (CSRF), and SQL Injection. Describe comprehensive mitigation strategies for each.",
       "marks": "8",
       "years": [
@@ -229,7 +227,7 @@
       "solutionOutline": "XSS injects malicious client-side JavaScript (mitigated by context-aware output encoding, Content Security Policy, and HttpOnly cookie flags). CSRF tricks victim browser into executing unwanted actions (mitigated by Anti-CSRF tokens and SameSite=Lax/Strict cookie attributes). SQL injection injects malicious SQL statements into database queries (mitigated by Prepared Statements / Parameterized Queries and ORM frameworks)."
     },
     {
-      "chapter": "Web Security and Authentication",
+      "chapter": "Web Application Security",
       "text": "Compare Session-based Authentication with Token-based Authentication (JSON Web Tokens - JWT). Explain the three parts of a JWT (Header, Payload, Signature) and secure cookie storage flags (HttpOnly, Secure, SameSite).",
       "marks": "8",
       "years": [
@@ -241,7 +239,7 @@
       "solutionOutline": "Session-based: server maintains state in memory/database, client stores session ID in cookie; stateful, harder to scale across distributed servers. JWT: stateless cryptographic token. Parts: Header (algorithm & token type), Payload (claims like user id, exp), Signature (HMACSHA256(base64(header) + '.' + base64(payload), secret)). Cookies: HttpOnly blocks JS document.cookie access (anti-XSS), Secure requires HTTPS, SameSite protects against CSRF."
     },
     {
-      "chapter": "Server-Side Development and MVC Architecture",
+      "chapter": "Server-Side Web Programming",
       "text": "Explain the Model-View-Controller (MVC) architectural pattern in server-side web development (e.g., Express.js / Node.js or Django). Explain middleware functions, routing, and database ORM/ODM integration.",
       "marks": "8",
       "years": [
@@ -254,7 +252,7 @@
       "solutionOutline": "MVC separates concern: Model represents data schema and business rules (e.g. Mongoose, Prisma, SQLAlchemy); View renders user presentation; Controller receives requests, interacts with Model, and serves View or JSON response. Middleware functions access req, res, and next() for logging, body parsing, CORS, and authentication verification before route handlers."
     },
     {
-      "chapter": "HTML5 and CSS3",
+      "chapter": "JavaScript and Client-Side Programming",
       "text": "Explain CSS Grid Layout versus CSS Flexbox. Write CSS rules for responsive design using Media Queries to adjust a three-column card layout into a single-column stacked layout on mobile viewports.",
       "marks": "6",
       "years": [
@@ -266,7 +264,7 @@
       "solutionOutline": "Flexbox is one-dimensional (row OR column), ideal for component layouts and alignment. CSS Grid is two-dimensional (rows AND columns simultaneously), ideal for overall page structure. Media queries use @media (max-width: 768px) to redefine grid-template-columns from repeat(3, 1fr) to 1fr for responsive mobile displays."
     },
     {
-      "chapter": "Modern Web Deployment, PWAs, and DevOps",
+      "chapter": "Web Application Deployment and Modern Trends",
       "text": "What is a Progressive Web App (PWA)? Explain Service Workers, Web App Manifest (manifest.json), Cache Storage API, and offline capabilities with application lifecycle.",
       "marks": "6",
       "years": [
@@ -278,7 +276,7 @@
       "solutionOutline": "PWAs deliver app-like experiences within web browsers. Key pillars: 1) Web App Manifest (provides name, icons, theme-color, standalone display); 2) Service Worker (background client proxy script intercepting network fetch events); 3) HTTPS requirement; 4) Cache Storage API implementing cache-first or stale-while-revalidate strategies enabling complete offline accessibility."
     },
     {
-      "chapter": "Web Services, RESTful APIs, and Serialization",
+      "chapter": "Web Services & APIs",
       "text": "Explain WebSockets and Server-Sent Events (SSE). Contrast full-duplex WebSocket communication with traditional HTTP long-polling for real-time collaborative applications.",
       "marks": "8",
       "years": [
@@ -290,7 +288,7 @@
       "solutionOutline": "HTTP long-polling repeatedly opens new HTTP connections with large header overhead. WebSocket establishes persistent, full-duplex, bi-directional TCP connection initiated via HTTP Upgrade handshake (ws:// or wss://), sending lightweight binary/text frames with minimal 2-byte header overhead. SSE provides unidirectional server-to-client streaming over standard HTTP text/event-stream."
     },
     {
-      "chapter": "Frontend Frameworks (React.js)",
+      "chapter": "JavaScript and Client-Side Programming",
       "text": "Explain the Virtual DOM mechanism in React. How does React's Reconciliation and Diffing algorithm update the browser DOM efficiently?",
       "marks": "6",
       "years": [
@@ -302,7 +300,7 @@
       "solutionOutline": "Virtual DOM is a lightweight in-memory JavaScript representation of real DOM. Direct DOM manipulation is slow due to browser layout and repaint cycles. When state changes, React renders new Virtual DOM tree, computes diff with previous tree using O(n) heuristic reconciliation rules (different element types produce different trees, keys identify list elements across renders), and batches minimal updates to real DOM."
     },
     {
-      "chapter": "Web Services, RESTful APIs, and Serialization",
+      "chapter": "Web Services & APIs",
       "text": "Compare GraphQL with RESTful API architecture. Explain how GraphQL resolves over-fetching and under-fetching problems using Queries, Mutations, and Subscriptions.",
       "marks": "6",
       "years": [
@@ -314,7 +312,7 @@
       "solutionOutline": "REST uses fixed endpoints returning predefined data structures; fetching related data often requires multiple roundtrips (under-fetching) or returns excess fields (over-fetching). GraphQL uses single endpoint (/graphql) with strongly typed schema. Clients query exactly the fields they need. Queries fetch data, Mutations modify data, Subscriptions push real-time updates over WebSockets."
     },
     {
-      "chapter": "Introduction to Web and Web Architectures",
+      "chapter": "Introduction",
       "text": "Explain Single Page Application (SPA) vs Multi-Page Application (MPA), and Client-Side Rendering (CSR) vs Server-Side Rendering (SSR) vs Static Site Generation (SSG) in modern web development frameworks.",
       "marks": "8",
       "years": [
@@ -326,7 +324,7 @@
       "solutionOutline": "SPA loads single HTML shell and dynamic JS bundles; routing handled on client without page reloads. CSR renders HTML in browser JS (faster interactions, poor initial load & SEO). SSR generates full HTML per request on server (great SEO, fast FCP, heavier server load). SSG pre-renders static HTML at build time (fastest CDN delivery, ideal for blogs/docs)."
     },
     {
-      "chapter": "Modern Web Deployment, PWAs, and DevOps",
+      "chapter": "Web Application Deployment and Modern Trends",
       "text": "Explain Web Performance Optimization techniques: Lazy Loading of images and components, Code Splitting, Asset Minification, CDN edge caching, and Core Web Vitals (LCP, FID/INP, CLS).",
       "marks": "6",
       "years": [
@@ -338,7 +336,7 @@
       "solutionOutline": "Performance optimization speeds loading and user responsiveness. Lazy loading defers off-screen images/routes using dynamic import() and IntersectionObserver. Code splitting breaks JS bundle into smaller chunks. Minification strips whitespace and comments. Core Web Vitals: Largest Contentful Paint (LCP < 2.5s), Interaction to Next Paint (INP < 200ms), Cumulative Layout Shift (CLS < 0.1)."
     },
     {
-      "chapter": "Web Security and Authentication",
+      "chapter": "Web Application Security",
       "text": "What is Cross-Origin Resource Sharing (CORS)? Explain Simple Requests vs Preflight Requests (OPTIONS method), Access-Control-Allow-Origin headers, and Content Security Policy (CSP).",
       "marks": "6",
       "years": [

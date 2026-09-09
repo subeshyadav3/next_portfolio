@@ -2,18 +2,17 @@
   "subject": "Digital Signal Processing",
   "generated": "2026-09-09",
   "chapters": [
+    "Introduction to Digital Signal Processing",
     "Discrete-Time Signals and Systems",
-    "Z-Transform and LTI System Analysis",
-    "Discrete Fourier Transform (DFT)",
-    "Fast Fourier Transform (FFT) Algorithms",
-    "Realization of Digital Filter Structures",
-    "Design of Infinite Impulse Response (IIR) Digital Filters",
-    "Design of Finite Impulse Response (FIR) Digital Filters",
-    "Finite Word Length Effects and DSP Processors"
+    "Z-Transform and Analysis of LTI Systems",
+    "Discrete Fourier Transform (DFT) and FFT Algorithms",
+    "Implementation of Discrete-Time Systems",
+    "Design of Digital Filters (FIR and IIR)",
+    "Multirate Digital Signal Processing and Applications"
   ],
   "questions": [
     {
-      "chapter": "Fast Fourier Transform (FFT) Algorithms",
+      "chapter": "Discrete Fourier Transform (DFT) and FFT Algorithms",
       "text": "Discuss the computational efficiency of FFT algorithms over direct DFT computation ($O(N^2)$ vs $O(N \\log_2 N)$). Draw the complete 8-point Decimation-in-Time (DIT) Radix-2 FFT butterfly flow graph and compute the DFT of sequence $x[n] = \\{1, 1, 0, -1, 2, 0, 0, 0\\}$.",
       "marks": "8",
       "years": [
@@ -26,7 +25,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Design of Infinite Impulse Response (IIR) Digital Filters",
+      "chapter": "Design of Digital Filters (FIR and IIR)",
       "text": "Design a digital low-pass Butterworth IIR filter using the Bilinear Transformation Method (BTM) to satisfy monotonic passband attenuation $\\le 1\\text{ dB}$ at $\\omega_p = 0.2\\pi$ and stopband attenuation $\\ge 15\\text{ dB}$ at $\\omega_s = 0.3\\pi$. Explain frequency warping and pre-warping.",
       "marks": "8",
       "years": [
@@ -39,7 +38,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Design of Finite Impulse Response (FIR) Digital Filters",
+      "chapter": "Design of Digital Filters (FIR and IIR)",
       "text": "What is the condition for an FIR filter to have linear phase? Design a linear-phase low-pass FIR filter with cut-off frequency $\\omega_c = 0.5\\pi\\text{ rad/sample}$ and length $M = 7$ using a Hamming (or Hanning) window. Explain Gibbs phenomenon.",
       "marks": "8",
       "years": [
@@ -52,7 +51,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Realization of Digital Filter Structures",
+      "chapter": "Implementation of Discrete-Time Systems",
       "text": "Draw Direct Form I, Direct Form II, Cascade, and Parallel realizations for the LTI system characterized by the system function:\n$$H(z) = \\frac{1 + 2z^{-1} + z^{-2}}{1 - 0.75z^{-1} + 0.125z^{-2}}$$",
       "marks": "8",
       "years": [
@@ -64,7 +63,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Realization of Digital Filter Structures",
+      "chapter": "Implementation of Discrete-Time Systems",
       "text": "Compute the lattice reflection coefficients $K_1, K_2, K_3$ and draw the Lattice filter structure for the all-pole (or FIR) system given by the transfer function $H(z)$.",
       "marks": "6",
       "years": [
@@ -76,7 +75,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Z-Transform and LTI System Analysis",
+      "chapter": "Z-Transform and Analysis of LTI Systems",
       "text": "List the properties of Region of Convergence (ROC) for the Z-transform. Determine the inverse Z-transform of $X(z) = \\frac{1 - 0.5z^{-1}}{(1 - 0.8z^{-1})(1 + 0.4z^{-1})}$ for: (a) Causal stable system, (b) Non-causal system, and (c) Anti-causal system.",
       "marks": "8",
       "years": [
@@ -89,7 +88,7 @@
       "frequency": 5
     },
     {
-      "chapter": "Discrete Fourier Transform (DFT)",
+      "chapter": "Discrete Fourier Transform (DFT) and FFT Algorithms",
       "text": "Differentiate between linear convolution and circular convolution. Compute the linear convolution of two sequences $x_1[n] = \\{1, 1, 1\\}$ and $x_2[n] = \\{2, 2, 2\\}$ using circular convolution and explain the role of zero padding.",
       "marks": "6",
       "years": [
@@ -101,7 +100,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Design of Finite Impulse Response (FIR) Digital Filters",
+      "chapter": "Design of Digital Filters (FIR and IIR)",
       "text": "Explain FIR filter design using the Remez Exchange (Parks-McClellan) algorithm. Why is the Remez Exchange algorithm generally considered superior to the windowing method for equiripple filter design?",
       "marks": "6",
       "years": [
@@ -113,7 +112,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Finite Word Length Effects and DSP Processors",
+      "chapter": "Implementation of Discrete-Time Systems",
       "text": "What are round-off noise and finite word-length effects in digital filters? Explain Limit Cycle Oscillations (zero-input limit cycles and overflow oscillations) with an illustrative second-order recursive system.",
       "marks": "6",
       "years": [
@@ -125,7 +124,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Finite Word Length Effects and DSP Processors",
+      "chapter": "Implementation of Discrete-Time Systems",
       "text": "Explain the architectural features of Digital Signal Processors (DSP). Explain bit-serial arithmetic, pipelining, and distributed arithmetic used in real-time DSP hardware implementations.",
       "marks": "6",
       "years": [
@@ -137,7 +136,7 @@
       "frequency": 4
     },
     {
-      "chapter": "Design of Infinite Impulse Response (IIR) Digital Filters",
+      "chapter": "Design of Digital Filters (FIR and IIR)",
       "text": "Compare Butterworth filter approximation with Chebyshev Type I and Type II approximations in terms of pole locations, passband ripple, and roll-off rate.",
       "marks": "6",
       "years": [
@@ -148,7 +147,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Design of Infinite Impulse Response (IIR) Digital Filters",
+      "chapter": "Design of Digital Filters (FIR and IIR)",
       "text": "Design a discrete-time low-pass filter using the Impulse Invariance Method (IIM). Discuss aliasing problems associated with the impulse invariance technique and why it is unsuitable for high-pass filters.",
       "marks": "6",
       "years": [
@@ -170,7 +169,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Z-Transform and LTI System Analysis",
+      "chapter": "Z-Transform and Analysis of LTI Systems",
       "text": "Explain how the poles and zeros of a system function $H(z)$ affect the stability, causality, and magnitude frequency response $|H(e^{j\\omega})|$ of a discrete-time filter with pole-zero geometric plots.",
       "marks": "6",
       "years": [
@@ -192,7 +191,7 @@
       "frequency": 3
     },
     {
-      "chapter": "Fast Fourier Transform (FFT) Algorithms",
+      "chapter": "Discrete Fourier Transform (DFT) and FFT Algorithms",
       "text": "Explain Decimation-in-Frequency (DIF) Radix-2 FFT algorithm. How does the DIF butterfly structure differ from the DIT butterfly structure in terms of input ordering, twiddle factors, and output bit reversal?",
       "marks": "6",
       "years": [
@@ -216,7 +215,7 @@
       "solutionOutline": "Nyquist rate f_N = 2 f_max. Frequencies: f1 = 50 Hz, f2 = 125 Hz => f_max = 125 Hz. Minimum Nyquist rate = 250 Hz. When sampled at f_s = 200 Hz, f1 = 50 Hz is below folding frequency (100 Hz). The 125 Hz component aliases to |125 - 200| = 75 Hz. Reconstructed signal becomes x_r(t) = 3 cos(100 pi t) + 2 sin(150 pi t - pi/2)."
     },
     {
-      "chapter": "Discrete Fourier Transform (DFT)",
+      "chapter": "Discrete Fourier Transform (DFT) and FFT Algorithms",
       "text": "Define Circular Convolution of two finite-duration sequences $x_1(n)$ and $x_2(n)$ of length $N$. Explain how linear convolution can be computed using circular convolution and describe the Overlap-Add and Overlap-Save block convolution methods for filtering long audio sequences.",
       "marks": "8",
       "years": [
@@ -230,7 +229,7 @@
       "solutionOutline": "Circular convolution y(n) = sum x1(m) x2((n-m) mod N) corresponds to point-by-point product of DFTs: Y(k) = X1(k) X2(k). Linear convolution of lengths L and M requires zero-padding to N >= L + M - 1. Overlap-Add decomposes input into non-overlapping blocks, circular convolves each with h(n), and overlaps/adds tail ends. Overlap-Save uses overlapping input segments and discards corrupted initial points."
     },
     {
-      "chapter": "Z-Transform and LTI System Analysis",
+      "chapter": "Z-Transform and Analysis of LTI Systems",
       "text": "State and prove the Initial Value Theorem and Final Value Theorem for unilateral Z-transforms. Determine the inverse Z-transform of $X(z) = \\frac{1}{(1 - 0.5z^{-1})(1 - 2z^{-1})}$ for: (a) stable system, (b) causal system, and (c) anti-causal system, clearly showing regions of convergence (ROC).",
       "marks": "8",
       "years": [
@@ -244,7 +243,7 @@
       "solutionOutline": "Initial value x(0) = lim_{z -> infty} X(z). Final value lim_{n -> infty} x(n) = lim_{z -> 1} (1 - z^(-1)) X(z). Poles at z = 0.5 and z = 2. Partial fractions: X(z) = (-1/3)/(1 - 0.5z^(-1)) + (4/3)/(1 - 2z^(-1)). (a) Stable requires unit circle in ROC (0.5 < |z| < 2): x(n) = -(1/3)(0.5)^n u(n) - (4/3)(2)^n u(-n-1). (b) Causal: |z| > 2. (c) Anti-causal: |z| < 0.5."
     },
     {
-      "chapter": "Fast Fourier Transform (FFT) Algorithms",
+      "chapter": "Discrete Fourier Transform (DFT) and FFT Algorithms",
       "text": "Derive the Radix-2 Decimation-in-Frequency (DIF) Fast Fourier Transform algorithm. Draw the complete 8-point butterfly signal flow graph, explain bit-reversal indexing, and compare computational complexity with direct DFT ($O(N^2)$ vs $O(N \\log_2 N)$).",
       "marks": "8",
       "years": [
@@ -258,7 +257,7 @@
       "solutionOutline": "DIF splits output frequency points into even and odd indices: X(2k) and X(2k+1). First stage computes N/2 point additions/subtractions followed by twiddle factor multiplications W_N^n. Input is in natural order; output is in bit-reversed order. Reduces complex multiplications from N^2 = 64 to (N/2) log2 N = 12 for N = 8."
     },
     {
-      "chapter": "Design of Infinite Impulse Response (IIR) Digital Filters",
+      "chapter": "Design of Digital Filters (FIR and IIR)",
       "text": "Explain the design of digital Chebyshev Type-I lowpass filters. Derive the Chebyshev polynomial $C_N(\\Omega) = \\cos(N \\arccos \\Omega)$ and formulate how filter order $N$ and cut-off frequency $\\Omega_c$ are obtained from given passband ripple ($\\alpha_p$) and stopband attenuation ($\\alpha_s$) specifications.",
       "marks": "8",
       "years": [
@@ -272,7 +271,7 @@
       "solutionOutline": "|H(j Omega)|^2 = 1 / [1 + epsilon^2 C_N^2(Omega / Omega_p)]. Equiripple in passband, monotonic in stopband. Parameter epsilon = sqrt(10^(0.1 alpha_p) - 1). Order N = arccosh(sqrt((10^(0.1 alpha_s) - 1) / epsilon^2)) / arccosh(Omega_s / Omega_p). Bilinear transformation maps analog Chebyshev poles to digital z-plane poles."
     },
     {
-      "chapter": "Design of Finite Impulse Response (FIR) Digital Filters",
+      "chapter": "Design of Digital Filters (FIR and IIR)",
       "text": "Explain the Frequency Sampling Method for designing FIR digital filters. Derive the relationship expressing filter impulse response $h(n)$ in terms of frequency response samples $H(k)$. How is transition band optimization applied to minimize stopband ripple?",
       "marks": "8",
       "years": [
@@ -286,7 +285,7 @@
       "solutionOutline": "Samples frequency response H(e^(j omega)) at N equidistant points omega_k = 2 pi k / N: H(k) = H(e^(j 2 pi k / N)). Impulse response h(n) = (1/N) sum_{k=0}^{N-1} H(k) e^(j 2 pi k n / N). Abrupt discontinuity at cutoff causes high Gibbs ripples; transition band optimization inserts unconstrained sample values T1, T2 in transition band to maximize stopband attenuation."
     },
     {
-      "chapter": "Design of Finite Impulse Response (FIR) Digital Filters",
+      "chapter": "Design of Digital Filters (FIR and IIR)",
       "text": "Compare Window Functions used in FIR filter design: Rectangular, Hanning, Hamming, and Blackman windows. Contrast main lobe width, peak side lobe attenuation (dB), and transition bandwidth trade-offs.",
       "marks": "8",
       "years": [
@@ -300,7 +299,7 @@
       "solutionOutline": "Rectangular: main lobe 4 pi / M, side lobe -13 dB (poor stopband attenuation). Hanning: main lobe 8 pi / M, side lobe -31 dB. Hamming: main lobe 8 pi / M, side lobe -41 dB (excellent general-purpose balance). Blackman: main lobe 12 pi / M, side lobe -58 dB (steepest stopband rejection, widest transition width)."
     },
     {
-      "chapter": "Design of Infinite Impulse Response (IIR) Digital Filters",
+      "chapter": "Design of Digital Filters (FIR and IIR)",
       "text": "Compare Impulse Invariance Method and Bilinear Transformation Method for IIR filter design. Explain the mapping from continuous $s$-plane to discrete $z$-plane, aliasing limitations, and the frequency warping effect in Bilinear Transformation with pre-warping formula $\\Omega = \\frac{2}{T} \\tan\\left(\\frac{\\omega}{2}\\right)$.",
       "marks": "8",
       "years": [
@@ -314,7 +313,7 @@
       "solutionOutline": "Impulse Invariance preserves time-domain impulse response: h(n) = T_s h_a(n T_s); maps vertical strips of s-plane to z-plane causing severe aliasing for non-bandlimited filters. Bilinear transformation uses trapezoidal integration s = (2/T)(1 - z^(-1))/(1 + z^(-1)), mapping entire j-Omega axis nonlinearly to unit circle e^(j omega). Eliminates aliasing but introduces frequency warping, compensated by pre-warping analog critical frequencies."
     },
     {
-      "chapter": "Z-Transform and LTI System Analysis",
+      "chapter": "Z-Transform and Analysis of LTI Systems",
       "text": "Explain causality and BIBO stability criteria in the Z-domain. For a discrete-time system described by difference equation $y(n) - 0.9 y(n-1) = x(n) + x(n-1)$, determine system function $H(z)$, pole-zero plot, impulse response $h(n)$, and frequency response magnitude $|H(e^{j\\omega})|$.",
       "marks": "8",
       "years": [
@@ -328,7 +327,7 @@
       "solutionOutline": "H(z) = (1 + z^(-1)) / (1 - 0.9 z^(-1)). Pole at z = 0.9, zero at z = -1. For causality and stability, ROC is |z| > 0.9 (contains unit circle => BIBO stable). Inverse Z-transform h(n) = (0.9)^n u(n) + (0.9)^(n-1) u(n-1). Frequency response evaluated on unit circle z = e^(j omega); behaves as lowpass filter."
     },
     {
-      "chapter": "Discrete Fourier Transform (DFT)",
+      "chapter": "Discrete Fourier Transform (DFT) and FFT Algorithms",
       "text": "Differentiate between Discrete-Time Fourier Transform (DTFT) and Discrete Fourier Transform (DFT). Explain how DFT samples DTFT and describe Spectral Leakage, Picket-Fence effect, and the role of Zero Padding in spectral analysis.",
       "marks": "6",
       "years": [
@@ -342,7 +341,7 @@
       "solutionOutline": "DTFT operates on infinite discrete sequences yielding continuous periodic spectrum in omega. DFT computes discrete frequency samples of finite sequences: X(k) = X_{DTFT}(2 pi k / N). Spectral leakage occurs when signal frequency is non-integer multiple of bin spacing. Picket-fence effect causes peak amplitude underestimation between bins. Zero padding increases DFT frequency grid density (interpolation) without increasing physical resolution."
     },
     {
-      "chapter": "Finite Word Length Effects and DSP Processors",
+      "chapter": "Implementation of Discrete-Time Systems",
       "text": "Explain Finite Word Length Effects in digital filter implementations: Input Quantization Error, Coefficient Quantization Error, and Limit Cycle Oscillations (Zero-Input Dead-Band and Overflow Oscillations). How does saturation arithmetic mitigate overflow oscillations?",
       "marks": "8",
       "years": [
@@ -356,7 +355,7 @@
       "solutionOutline": "Real digital hardware uses finite bits. Input quantization models round-off noise as white noise. Coefficient quantization shifts pole/zero locations, risking instability in high-order poles near unit circle. Limit cycle oscillations occur in recursive IIR feedback loops: dead-band oscillations caused by round-off, overflow oscillations caused by two-complement wraparound. Saturation arithmetic clamps overflow to max/min limits, breaking overflow cycles."
     },
     {
-      "chapter": "Finite Word Length Effects and DSP Processors",
+      "chapter": "Implementation of Discrete-Time Systems",
       "text": "Describe the architectural features of Digital Signal Processors (DSPs) optimized for high-throughput arithmetic. Compare Harvard Architecture with Von Neumann Architecture, and explain Multiply-Accumulate (MAC) units, circular addressing, and bit-reversed addressing.",
       "marks": "8",
       "years": [
@@ -384,7 +383,7 @@
       "solutionOutline": "Decimation reduces sampling rate: x_d(m) = x(m M). Requires digital anti-aliasing lowpass filter with cutoff omega_c = pi / M before decimation. Interpolation increases sampling rate by inserting L-1 zeros between samples, causing spectral replication (images). Requires anti-imaging lowpass filter with cutoff omega_c = pi / L and gain L to reconstruct intermediate values."
     },
     {
-      "chapter": "Design of Finite Impulse Response (FIR) Digital Filters",
+      "chapter": "Design of Digital Filters (FIR and IIR)",
       "text": "Prove that an FIR filter with symmetric impulse response $h(n) = h(N - 1 - n)$ or anti-symmetric impulse response $h(n) = -h(N - 1 - n)$ possesses generalized linear phase. Classify Type-I, Type-II, Type-III, and Type-IV linear phase FIR filters and explain their frequency restrictions at $\\omega = 0$ and $\\omega = \\pi$.",
       "marks": "8",
       "years": [
