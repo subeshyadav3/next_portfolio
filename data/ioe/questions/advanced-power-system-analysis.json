@@ -1,0 +1,615 @@
+{
+  "subject": "Advanced Power System Analysis",
+  "chapters": [
+    "Advanced Power Flow Methods and Fast Decoupled Load Flow",
+    "Optimal Power Flow (OPF) and Economic Dispatch",
+    "Power System State Estimation and Bad Data Detection",
+    "Power System Security Analysis and Contingency Screening",
+    "Dynamic Modeling and Multi-Machine Transient Stability",
+    "Voltage Stability and P-V / Q-V Modal Analysis"
+  ],
+  "questions": [
+    {
+      "id": "advanced-power-system-analysis-1",
+      "chapter": "Advanced Power Flow Methods and Fast Decoupled Load Flow",
+      "text": "Formulate the Fast Decoupled Load Flow (FDLF) equations from the Newton-Raphson method by justifying $P-\\theta$ and $Q-V$ decoupling assumptions. Write the $B'$ and $B''$ matrices.",
+      "question": "Formulate the Fast Decoupled Load Flow (FDLF) equations from the Newton-Raphson method by justifying $P-\\theta$ and $Q-V$ decoupling assumptions. Write the $B'$ and $B''$ matrices.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 4,
+      "difficulty": "Hard",
+      "importance": "High"
+    },
+    {
+      "id": "advanced-power-system-analysis-2",
+      "chapter": "Advanced Power Flow Methods and Fast Decoupled Load Flow",
+      "text": "Derive the DC Power Flow formulation from AC power flow equations. State the assumptions involved and explain its application in electricity market clearing.",
+      "question": "Derive the DC Power Flow formulation from AC power flow equations. State the assumptions involved and explain its application in electricity market clearing.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-3",
+      "chapter": "Advanced Power Flow Methods and Fast Decoupled Load Flow",
+      "text": "Explain load flow handling of tap-changing transformers and phase-shifting transformers in the $Y_{bus}$ admittance matrix.",
+      "question": "Explain load flow handling of tap-changing transformers and phase-shifting transformers in the $Y_{bus}$ admittance matrix.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-4",
+      "chapter": "Advanced Power Flow Methods and Fast Decoupled Load Flow",
+      "text": "Compare Newton-Raphson, Fast Decoupled, and Gauss-Seidel load flow algorithms with respect to convergence rate, memory requirements, and sensitivity to line $R/X$ ratio.",
+      "question": "Compare Newton-Raphson, Fast Decoupled, and Gauss-Seidel load flow algorithms with respect to convergence rate, memory requirements, and sensitivity to line $R/X$ ratio.",
+      "marks": "6",
+      "years": [
+        "2081 Chaitra",
+        "2079 Baishakh",
+        "2076 Baishakh"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Baishakh",
+        "2076 Baishakh"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-5",
+      "chapter": "Advanced Power Flow Methods and Fast Decoupled Load Flow",
+      "text": "Formulate continuation power flow (CPF) for calculating maximum loadability and tracing P-V curves near the voltage collapse point.",
+      "question": "Formulate continuation power flow (CPF) for calculating maximum loadability and tracing P-V curves near the voltage collapse point.",
+      "marks": "8",
+      "years": [
+        "2081 Baishakh",
+        "2078 Chaitra",
+        "2075 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Baishakh",
+        "2078 Chaitra",
+        "2075 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-6",
+      "chapter": "Optimal Power Flow (OPF) and Economic Dispatch",
+      "text": "Formulate the Classical Economic Dispatch problem including transmission line losses using Kron's loss formula $P_L = \\sum \\sum P_i B_{ij} P_j$. Derive the coordination equations.",
+      "question": "Formulate the Classical Economic Dispatch problem including transmission line losses using Kron's loss formula $P_L = \\sum \\sum P_i B_{ij} P_j$. Derive the coordination equations.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-7",
+      "chapter": "Optimal Power Flow (OPF) and Economic Dispatch",
+      "text": "Formulate the general AC Optimal Power Flow (AC-OPF) as a non-linear programming problem. Identify objective functions, equality constraints, and inequality constraints.",
+      "question": "Formulate the general AC Optimal Power Flow (AC-OPF) as a non-linear programming problem. Identify objective functions, equality constraints, and inequality constraints.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-8",
+      "chapter": "Optimal Power Flow (OPF) and Economic Dispatch",
+      "text": "Solve the economic dispatch problem using Karush-Kuhn-Tucker (KKT) necessary conditions when generator generation limits ($P_{i,\\min} \\le P_i \\le P_{i,\\max}$) are imposed.",
+      "question": "Solve the economic dispatch problem using Karush-Kuhn-Tucker (KKT) necessary conditions when generator generation limits ($P_{i,\\min} \\le P_i \\le P_{i,\\max}$) are imposed.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-9",
+      "chapter": "Optimal Power Flow (OPF) and Economic Dispatch",
+      "text": "Explain the gradient projection method and interior point method for solving large-scale Optimal Power Flow problems.",
+      "question": "Explain the gradient projection method and interior point method for solving large-scale Optimal Power Flow problems.",
+      "marks": "8",
+      "years": [
+        "2081 Bhadra",
+        "2078 Bhadra",
+        "2075 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2078 Bhadra",
+        "2075 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-10",
+      "chapter": "Optimal Power Flow (OPF) and Economic Dispatch",
+      "text": "Explain unit commitment (UC) problem and discuss dynamic programming formulation for solving the unit commitment of thermal/hydro units over a 24-hour horizon.",
+      "question": "Explain unit commitment (UC) problem and discuss dynamic programming formulation for solving the unit commitment of thermal/hydro units over a 24-hour horizon.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2080 Baishakh",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2080 Baishakh",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-11",
+      "chapter": "Power System State Estimation and Bad Data Detection",
+      "text": "Explain the function of State Estimation in modern Energy Management Systems (EMS). Compare state estimation with standard power flow.",
+      "question": "Explain the function of State Estimation in modern Energy Management Systems (EMS). Compare state estimation with standard power flow.",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-12",
+      "chapter": "Power System State Estimation and Bad Data Detection",
+      "text": "Derive the Weighted Least Squares (WLS) state estimation equations. Formulate the measurement Jacobian matrix $H$ and the gain matrix $G = H^T R^{-1} H$.",
+      "question": "Derive the Weighted Least Squares (WLS) state estimation equations. Formulate the measurement Jacobian matrix $H$ and the gain matrix $G = H^T R^{-1} H$.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-13",
+      "chapter": "Power System State Estimation and Bad Data Detection",
+      "text": "Explain network observability in power system state estimation. Differentiate between numerical and topological observability algorithms.",
+      "question": "Explain network observability in power system state estimation. Differentiate between numerical and topological observability algorithms.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-14",
+      "chapter": "Power System State Estimation and Bad Data Detection",
+      "text": "Describe bad data detection and identification techniques using the Chi-Square test ($\\chi^2$) and normalized residual test ($r_N$).",
+      "question": "Describe bad data detection and identification techniques using the Chi-Square test ($\\chi^2$) and normalized residual test ($r_N$).",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2078 Chaitra",
+        "2076 Baishakh"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2078 Chaitra",
+        "2076 Baishakh"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-15",
+      "chapter": "Power System State Estimation and Bad Data Detection",
+      "text": "Explain the role of Phasor Measurement Units (PMUs) and Wide Area Monitoring Systems (WAMS) in linear state estimation.",
+      "question": "Explain the role of Phasor Measurement Units (PMUs) and Wide Area Monitoring Systems (WAMS) in linear state estimation.",
+      "marks": "6",
+      "years": [
+        "2081 Baishakh",
+        "2079 Baishakh",
+        "2075 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Baishakh",
+        "2079 Baishakh",
+        "2075 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-16",
+      "chapter": "Power System Security Analysis and Contingency Screening",
+      "text": "Explain the operating states of a power system: Normal, Alert, Emergency, Extremis, and Restorative. Show transitions between states.",
+      "question": "Explain the operating states of a power system: Normal, Alert, Emergency, Extremis, and Restorative. Show transitions between states.",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-17",
+      "chapter": "Power System Security Analysis and Contingency Screening",
+      "text": "Derive Line Outage Distribution Factors (LODF) and Generation Shift Distribution Factors (GSDF) for fast $N-1$ contingency analysis.",
+      "question": "Derive Line Outage Distribution Factors (LODF) and Generation Shift Distribution Factors (GSDF) for fast $N-1$ contingency analysis.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-18",
+      "chapter": "Power System Security Analysis and Contingency Screening",
+      "text": "Explain contingency screening and ranking algorithms using performance indices $PI_V$ and $PI_{MW}$.",
+      "question": "Explain contingency screening and ranking algorithms using performance indices $PI_V$ and $PI_{MW}$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-19",
+      "chapter": "Power System Security Analysis and Contingency Screening",
+      "text": "Describe automatic generation control (AGC) and SCADA functions in power system security and frequency restoration.",
+      "question": "Describe automatic generation control (AGC) and SCADA functions in power system security and frequency restoration.",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra",
+        "2078 Bhadra",
+        "2075 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2078 Bhadra",
+        "2075 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-20",
+      "chapter": "Power System Security Analysis and Contingency Screening",
+      "text": "Explain emergency control actions: under-frequency load shedding (UFLS), generation rejection, and intentional islanding.",
+      "question": "Explain emergency control actions: under-frequency load shedding (UFLS), generation rejection, and intentional islanding.",
+      "marks": "6",
+      "years": [
+        "2081 Chaitra",
+        "2079 Baishakh",
+        "2076 Baishakh"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Baishakh",
+        "2076 Baishakh"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-21",
+      "chapter": "Dynamic Modeling and Multi-Machine Transient Stability",
+      "text": "Derive the non-linear swing equation for a synchronous machine: $M \\frac{d^2 \\delta}{dt^2} = P_m - P_e - D \\frac{d\\delta}{dt}$.",
+      "question": "Derive the non-linear swing equation for a synchronous machine: $M \\frac{d^2 \\delta}{dt^2} = P_m - P_e - D \\frac{d\\delta}{dt}$.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-22",
+      "chapter": "Dynamic Modeling and Multi-Machine Transient Stability",
+      "text": "Formulate multi-machine transient stability equations using classical synchronous machine models and Kron-reduced bus admittance matrix.",
+      "question": "Formulate multi-machine transient stability equations using classical synchronous machine models and Kron-reduced bus admittance matrix.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-23",
+      "chapter": "Dynamic Modeling and Multi-Machine Transient Stability",
+      "text": "Explain step-by-step numerical integration methods (Modified Euler and Runge-Kutta 4th order) for solving swing equations.",
+      "question": "Explain step-by-step numerical integration methods (Modified Euler and Runge-Kutta 4th order) for solving swing equations.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-24",
+      "chapter": "Dynamic Modeling and Multi-Machine Transient Stability",
+      "text": "Calculate Critical Clearing Time (CCT) and Critical Clearing Angle (CCA) using Equal Area Criterion for a three-phase fault on a transmission line.",
+      "question": "Calculate Critical Clearing Time (CCT) and Critical Clearing Angle (CCA) using Equal Area Criterion for a three-phase fault on a transmission line.",
+      "marks": "8",
+      "years": [
+        "2081 Baishakh",
+        "2078 Chaitra",
+        "2075 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Baishakh",
+        "2078 Chaitra",
+        "2075 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-25",
+      "chapter": "Dynamic Modeling and Multi-Machine Transient Stability",
+      "text": "Describe the dynamic modeling of excitation systems (IEEE Type 1 AVR) and Power System Stabilizers (PSS) for damping low-frequency inter-area oscillations.",
+      "question": "Describe the dynamic modeling of excitation systems (IEEE Type 1 AVR) and Power System Stabilizers (PSS) for damping low-frequency inter-area oscillations.",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2079 Baishakh",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Baishakh",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-26",
+      "chapter": "Voltage Stability and P-V / Q-V Modal Analysis",
+      "text": "Differentiate between angle stability and voltage stability. Discuss causes and physical mechanisms of voltage collapse in stressed power systems.",
+      "question": "Differentiate between angle stability and voltage stability. Discuss causes and physical mechanisms of voltage collapse in stressed power systems.",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-27",
+      "chapter": "Voltage Stability and P-V / Q-V Modal Analysis",
+      "text": "Derive the mathematical relationship between real power $P$, reactive power $Q$, receiving-end voltage $V$, and line impedance for a 2-bus system. Draw P-V and V-Q curves.",
+      "question": "Derive the mathematical relationship between real power $P$, reactive power $Q$, receiving-end voltage $V$, and line impedance for a 2-bus system. Draw P-V and V-Q curves.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-28",
+      "chapter": "Voltage Stability and P-V / Q-V Modal Analysis",
+      "text": "Explain modal analysis (eigenvalue and eigenvector analysis of reduced power flow Jacobian) to identify weak buses and voltage collapse modes.",
+      "question": "Explain modal analysis (eigenvalue and eigenvector analysis of reduced power flow Jacobian) to identify weak buses and voltage collapse modes.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2079 Chaitra",
+        "2076 Baishakh"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2079 Chaitra",
+        "2076 Baishakh"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-29",
+      "chapter": "Voltage Stability and P-V / Q-V Modal Analysis",
+      "text": "Explain reactive power compensation techniques (shunt capacitors, SVC, and STATCOM) for voltage stability enhancement.",
+      "question": "Explain reactive power compensation techniques (shunt capacitors, SVC, and STATCOM) for voltage stability enhancement.",
+      "marks": "8",
+      "years": [
+        "2081 Bhadra",
+        "2078 Chaitra",
+        "2075 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2078 Chaitra",
+        "2075 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "advanced-power-system-analysis-30",
+      "chapter": "Voltage Stability and P-V / Q-V Modal Analysis",
+      "text": "Discuss the effect of tap changers (OLTC) and induction motor stall on voltage instability and cascading blackouts.",
+      "question": "Discuss the effect of tap changers (OLTC) and induction motor stall on voltage instability and cascading blackouts.",
+      "marks": "6",
+      "years": [
+        "2081 Chaitra",
+        "2079 Baishakh",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Baishakh",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    }
+  ]
+}

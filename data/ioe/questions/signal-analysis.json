@@ -1,0 +1,616 @@
+{
+  "subject": "Signal Analysis",
+  "chapters": [
+    "Signal Classification and Elementary Operations",
+    "Continuous and Discrete Linear Time-Invariant Systems",
+    "Continuous-Time Fourier Series and Transform",
+    "Discrete-Time Fourier Transform and DFT",
+    "Laplace Transform and s-Domain System Analysis",
+    "Z-Transform and Discrete System Analysis",
+    "Sampling Theorem and Aliasing"
+  ],
+  "questions": [
+    {
+      "id": "signal-analysis-1",
+      "chapter": "Signal Classification and Elementary Operations",
+      "text": "Define and classify signals: continuous-time vs discrete-time, deterministic vs random, periodic vs aperiodic, and energy vs power signals. Determine if $x(t) = e^{-2t} u(t)$ is an energy or power signal and calculate its total energy.",
+      "question": "Define and classify signals: continuous-time vs discrete-time, deterministic vs random, periodic vs aperiodic, and energy vs power signals. Determine if $x(t) = e^{-2t} u(t)$ is an energy or power signal and calculate its total energy.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 4,
+      "difficulty": "Medium",
+      "importance": "High"
+    },
+    {
+      "id": "signal-analysis-2",
+      "chapter": "Signal Classification and Elementary Operations",
+      "text": "Explain elementary signals: Unit impulse $\\delta(t)$, unit step $u(t)$, unit ramp $r(t)$, and complex exponential signals. Prove the sifting property of the Dirac delta function: $\\int_{-\\infty}^\\infty x(t) \\delta(t - t_0) dt = x(t_0)$.",
+      "question": "Explain elementary signals: Unit impulse $\\delta(t)$, unit step $u(t)$, unit ramp $r(t)$, and complex exponential signals. Prove the sifting property of the Dirac delta function: $\\int_{-\\infty}^\\infty x(t) \\delta(t - t_0) dt = x(t_0)$.",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-3",
+      "chapter": "Signal Classification and Elementary Operations",
+      "text": "Perform basic operations on the continuous signal $x(t)$: time shifting $x(t - t_0)$, time scaling $x(at)$, and time reversal $x(-t)$. Sketch $y(t) = x(2t + 3)$ for a given triangular pulse.",
+      "question": "Perform basic operations on the continuous signal $x(t)$: time shifting $x(t - t_0)$, time scaling $x(at)$, and time reversal $x(-t)$. Sketch $y(t) = x(2t + 3)$ for a given triangular pulse.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-4",
+      "chapter": "Signal Classification and Elementary Operations",
+      "text": "Decompose an arbitrary signal into its even and odd components. Prove that the product of two odd signals is an even signal.",
+      "question": "Decompose an arbitrary signal into its even and odd components. Prove that the product of two odd signals is an even signal.",
+      "marks": "6",
+      "years": [
+        "2081 Chaitra",
+        "2079 Baishakh",
+        "2076 Baishakh"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Baishakh",
+        "2076 Baishakh"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-5",
+      "chapter": "Continuous and Discrete Linear Time-Invariant Systems",
+      "text": "Define Linear Time-Invariant (LTI) systems. Test the system $y(t) = t x(t) + 5$ for linearity, time-invariance, causality, and BIBO stability.",
+      "question": "Define Linear Time-Invariant (LTI) systems. Test the system $y(t) = t x(t) + 5$ for linearity, time-invariance, causality, and BIBO stability.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-6",
+      "chapter": "Continuous and Discrete Linear Time-Invariant Systems",
+      "text": "Derive the convolution integral for continuous-time LTI systems: $y(t) = x(t) * h(t) = \\int_{-\\infty}^\\infty x(\\tau) h(t - \\tau) d\\tau$. State and prove properties of convolution.",
+      "question": "Derive the convolution integral for continuous-time LTI systems: $y(t) = x(t) * h(t) = \\int_{-\\infty}^\\infty x(\\tau) h(t - \\tau) d\\tau$. State and prove properties of convolution.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-7",
+      "chapter": "Continuous and Discrete Linear Time-Invariant Systems",
+      "text": "Evaluate the convolution of two rectangular pulses $x(t) = u(t) - u(t - 2)$ and $h(t) = u(t) - u(t - 1)$ analytically and sketch the resulting waveform.",
+      "question": "Evaluate the convolution of two rectangular pulses $x(t) = u(t) - u(t - 2)$ and $h(t) = u(t) - u(t - 1)$ analytically and sketch the resulting waveform.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-8",
+      "chapter": "Continuous and Discrete Linear Time-Invariant Systems",
+      "text": "Derive the convolution sum for discrete-time LTI systems: $y[n] = \\sum_{k=-\\infty}^\\infty x[k] h[n-k]$. Compute $y[n]$ when $x[n] = (0.5)^n u[n]$ and $h[n] = u[n]$.",
+      "question": "Derive the convolution sum for discrete-time LTI systems: $y[n] = \\sum_{k=-\\infty}^\\infty x[k] h[n-k]$. Compute $y[n]$ when $x[n] = (0.5)^n u[n]$ and $h[n] = u[n]$.",
+      "marks": "8",
+      "years": [
+        "2081 Bhadra",
+        "2078 Bhadra",
+        "2075 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2078 Bhadra",
+        "2075 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-9",
+      "chapter": "Continuous and Discrete Linear Time-Invariant Systems",
+      "text": "State the necessary and sufficient condition for BIBO stability of an LTI system in terms of its impulse response: $\\int_{-\\infty}^\\infty |h(t)| dt < \\infty$.",
+      "question": "State the necessary and sufficient condition for BIBO stability of an LTI system in terms of its impulse response: $\\int_{-\\infty}^\\infty |h(t)| dt < \\infty$.",
+      "marks": "6",
+      "years": [
+        "2081 Baishakh",
+        "2078 Chaitra",
+        "2075 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Baishakh",
+        "2078 Chaitra",
+        "2075 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-10",
+      "chapter": "Continuous-Time Fourier Series and Transform",
+      "text": "State Dirichlet conditions for the existence of Fourier series. Derive trigonometric and exponential Fourier series coefficients $a_0, a_n, b_n$ and $c_n$.",
+      "question": "State Dirichlet conditions for the existence of Fourier series. Derive trigonometric and exponential Fourier series coefficients $a_0, a_n, b_n$ and $c_n$.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-11",
+      "chapter": "Continuous-Time Fourier Series and Transform",
+      "text": "Determine the trigonometric and exponential Fourier series for a periodic square wave of period $T_0$, amplitude $A$, and 50% duty cycle.",
+      "question": "Determine the trigonometric and exponential Fourier series for a periodic square wave of period $T_0$, amplitude $A$, and 50% duty cycle.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-12",
+      "chapter": "Continuous-Time Fourier Series and Transform",
+      "text": "State and prove Parseval's Power Theorem for periodic continuous signals: $P = \\frac{1}{T_0} \\int_{T_0} |x(t)|^2 dt = \\sum_{n=-\\infty}^\\infty |c_n|^2$.",
+      "question": "State and prove Parseval's Power Theorem for periodic continuous signals: $P = \\frac{1}{T_0} \\int_{T_0} |x(t)|^2 dt = \\sum_{n=-\\infty}^\\infty |c_n|^2$.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2079 Baishakh",
+        "2076 Baishakh"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2079 Baishakh",
+        "2076 Baishakh"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-13",
+      "chapter": "Continuous-Time Fourier Series and Transform",
+      "text": "Define the Continuous-Time Fourier Transform (CTFT) pair. Derive the Fourier transform of a rectangular pulse $x(t) = \\text{rect}(t/\\tau)$ and show that it is a $\\text{sinc}$ function.",
+      "question": "Define the Continuous-Time Fourier Transform (CTFT) pair. Derive the Fourier transform of a rectangular pulse $x(t) = \\text{rect}(t/\\tau)$ and show that it is a $\\text{sinc}$ function.",
+      "marks": "8",
+      "years": [
+        "2081 Bhadra",
+        "2078 Chaitra",
+        "2075 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2078 Chaitra",
+        "2075 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-14",
+      "chapter": "Continuous-Time Fourier Series and Transform",
+      "text": "State and prove properties of CTFT: Duality, Frequency Shifting (Modulation), Time Differentiation, and Convolution in time domain.",
+      "question": "State and prove properties of CTFT: Duality, Frequency Shifting (Modulation), Time Differentiation, and Convolution in time domain.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2080 Baishakh",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2080 Baishakh",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-15",
+      "chapter": "Discrete-Time Fourier Transform and DFT",
+      "text": "Define the Discrete-Time Fourier Transform (DTFT) pair. Show that the spectrum $X(e^{j\\omega})$ is periodic with period $2\\pi$.",
+      "question": "Define the Discrete-Time Fourier Transform (DTFT) pair. Show that the spectrum $X(e^{j\\omega})$ is periodic with period $2\\pi$.",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-16",
+      "chapter": "Discrete-Time Fourier Transform and DFT",
+      "text": "Compute the DTFT of $x[n] = a^n u[n]$ for $|a| < 1$. Plot the magnitude and phase spectra.",
+      "question": "Compute the DTFT of $x[n] = a^n u[n]$ for $|a| < 1$. Plot the magnitude and phase spectra.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-17",
+      "chapter": "Discrete-Time Fourier Transform and DFT",
+      "text": "Define the Discrete Fourier Transform (DFT) and its inverse (IDFT). Explain the relationship between DTFT, DFT, and continuous Fourier transform.",
+      "question": "Define the Discrete Fourier Transform (DFT) and its inverse (IDFT). Explain the relationship between DTFT, DFT, and continuous Fourier transform.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-18",
+      "chapter": "Discrete-Time Fourier Transform and DFT",
+      "text": "Explain circular convolution in DFT. How does circular convolution differ from linear convolution, and how is linear convolution computed using zero-padding and DFT?",
+      "question": "Explain circular convolution in DFT. How does circular convolution differ from linear convolution, and how is linear convolution computed using zero-padding and DFT?",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2078 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2078 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-19",
+      "chapter": "Discrete-Time Fourier Transform and DFT",
+      "text": "Describe the Radix-2 Decimation-In-Time (DIT) Fast Fourier Transform (FFT) algorithm. Show the butterfly computational structure for an 8-point DFT.",
+      "question": "Describe the Radix-2 Decimation-In-Time (DIT) Fast Fourier Transform (FFT) algorithm. Show the butterfly computational structure for an 8-point DFT.",
+      "marks": "8",
+      "years": [
+        "2081 Baishakh",
+        "2079 Baishakh",
+        "2075 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Baishakh",
+        "2079 Baishakh",
+        "2075 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-20",
+      "chapter": "Laplace Transform and s-Domain System Analysis",
+      "text": "Define bilateral and unilateral Laplace Transform with Region of Convergence (ROC). Discuss ROC properties for causal, anti-causal, and two-sided signals.",
+      "question": "Define bilateral and unilateral Laplace Transform with Region of Convergence (ROC). Discuss ROC properties for causal, anti-causal, and two-sided signals.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-21",
+      "chapter": "Laplace Transform and s-Domain System Analysis",
+      "text": "Find the Laplace transform and ROC of $x(t) = e^{-3t} u(t) - e^{2t} u(-t)$.",
+      "question": "Find the Laplace transform and ROC of $x(t) = e^{-3t} u(t) - e^{2t} u(-t)$.",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-22",
+      "chapter": "Laplace Transform and s-Domain System Analysis",
+      "text": "Using the unilateral Laplace transform, solve the second-order differential equation $\\frac{d^2 y}{dt^2} + 4 \\frac{dy}{dt} + 3y(t) = 2 u(t)$ with initial conditions $y(0^-) = 1$ and $y'(0^-) = 0$.",
+      "question": "Using the unilateral Laplace transform, solve the second-order differential equation $\\frac{d^2 y}{dt^2} + 4 \\frac{dy}{dt} + 3y(t) = 2 u(t)$ with initial conditions $y(0^-) = 1$ and $y'(0^-) = 0$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-23",
+      "chapter": "Laplace Transform and s-Domain System Analysis",
+      "text": "Explain system transfer function $H(s)$. Relate pole locations in the $s$-plane to system stability, damping ratio $\\zeta$, and transient response.",
+      "question": "Explain system transfer function $H(s)$. Relate pole locations in the $s$-plane to system stability, damping ratio $\\zeta$, and transient response.",
+      "marks": "8",
+      "years": [
+        "2081 Bhadra",
+        "2078 Bhadra",
+        "2075 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2078 Bhadra",
+        "2075 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-24",
+      "chapter": "Z-Transform and Discrete System Analysis",
+      "text": "Define the Z-Transform pair with Region of Convergence (ROC). Discuss ROC properties for finite-duration, right-sided, left-sided, and two-sided sequences.",
+      "question": "Define the Z-Transform pair with Region of Convergence (ROC). Discuss ROC properties for finite-duration, right-sided, left-sided, and two-sided sequences.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-25",
+      "chapter": "Z-Transform and Discrete System Analysis",
+      "text": "Determine the inverse Z-Transform of $X(z) = \\frac{1}{(1 - 0.5z^{-1})(1 - 2z^{-1})}$ for: (a) ROC: $|z| > 2$, (b) ROC: $0.5 < |z| < 2$, (c) ROC: $|z| < 0.5$.",
+      "question": "Determine the inverse Z-Transform of $X(z) = \\frac{1}{(1 - 0.5z^{-1})(1 - 2z^{-1})}$ for: (a) ROC: $|z| > 2$, (b) ROC: $0.5 < |z| < 2$, (c) ROC: $|z| < 0.5$.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-26",
+      "chapter": "Z-Transform and Discrete System Analysis",
+      "text": "Solve the linear difference equation $y[n] - 0.75 y[n-1] + 0.125 y[n-2] = x[n]$ with $x[n] = u[n]$ using the Z-Transform method with zero initial conditions.",
+      "question": "Solve the linear difference equation $y[n] - 0.75 y[n-1] + 0.125 y[n-2] = x[n]$ with $x[n] = u[n]$ using the Z-Transform method with zero initial conditions.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2079 Baishakh",
+        "2076 Baishakh"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2079 Baishakh",
+        "2076 Baishakh"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-27",
+      "chapter": "Z-Transform and Discrete System Analysis",
+      "text": "Explain discrete system transfer function $H(z)$ and relate stability criteria to pole locations with respect to the unit circle $|z| = 1$.",
+      "question": "Explain discrete system transfer function $H(z)$ and relate stability criteria to pole locations with respect to the unit circle $|z| = 1$.",
+      "marks": "6",
+      "years": [
+        "2081 Chaitra",
+        "2078 Chaitra",
+        "2075 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2078 Chaitra",
+        "2075 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-28",
+      "chapter": "Sampling Theorem and Aliasing",
+      "text": "State and prove the Nyquist-Shannon Sampling Theorem for bandlimited continuous-time signals. Derive the ideal reconstruction formula using the $\\text{sinc}$ interpolation function.",
+      "question": "State and prove the Nyquist-Shannon Sampling Theorem for bandlimited continuous-time signals. Derive the ideal reconstruction formula using the $\\text{sinc}$ interpolation function.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-29",
+      "chapter": "Sampling Theorem and Aliasing",
+      "text": "Explain the phenomenon of aliasing in frequency domain during undersampling ($f_s < 2 f_m$). Discuss anti-aliasing low-pass filter design.",
+      "question": "Explain the phenomenon of aliasing in frequency domain during undersampling ($f_s < 2 f_m$). Discuss anti-aliasing low-pass filter design.",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "signal-analysis-30",
+      "chapter": "Sampling Theorem and Aliasing",
+      "text": "Compare ideal impulse sampling, natural sampling, and flat-top sampling (with sample-and-hold circuit). Explain aperture distortion in flat-top sampling.",
+      "question": "Compare ideal impulse sampling, natural sampling, and flat-top sampling (with sample-and-hold circuit). Explain aperture distortion in flat-top sampling.",
+      "marks": "8",
+      "years": [
+        "2081 Baishakh",
+        "2078 Bhadra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Baishakh",
+        "2078 Bhadra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    }
+  ]
+}

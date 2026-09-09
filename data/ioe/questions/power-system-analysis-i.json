@@ -1,0 +1,618 @@
+{
+  "subject": "Power System Analysis I",
+  "chapters": [
+    "General Background and Structure of Power Systems",
+    "Overhead Transmission Line Parameters (R, L, C)",
+    "Performance and Modeling of Transmission Lines",
+    "Mechanical Design of Overhead Lines and Insulators",
+    "Underground Cables: Construction and Capacitance",
+    "Representation of Power System Components and Per-Unit System",
+    "Symmetrical Three-Phase Fault Analysis"
+  ],
+  "questions": [
+    {
+      "id": "power-system-analysis-i-1",
+      "chapter": "Representation of Power System Components and Per-Unit System",
+      "text": "Explain the single-line diagram and impedance/reactance diagram of a power system. What are the advantages of the per-unit system in power system analysis and fault calculations?",
+      "question": "Explain the single-line diagram and impedance/reactance diagram of a power system. What are the advantages of the per-unit system in power system analysis and fault calculations?",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 4,
+      "difficulty": "Easy",
+      "importance": "High"
+    },
+    {
+      "id": "power-system-analysis-i-2",
+      "chapter": "Representation of Power System Components and Per-Unit System",
+      "text": "Derive the conversion formula for per-unit impedance from old base to new base: $Z_{pu}^{new} = Z_{pu}^{old} \\times \\left(\\frac{V_{base}^{old}}{V_{base}^{new}}\\right)^2 \\times \\left(\\frac{S_{base}^{new}}{S_{base}^{old}}\\right)$.",
+      "question": "Derive the conversion formula for per-unit impedance from old base to new base: $Z_{pu}^{new} = Z_{pu}^{old} \\times \\left(\\frac{V_{base}^{old}}{V_{base}^{new}}\\right)^2 \\times \\left(\\frac{S_{base}^{new}}{S_{base}^{old}}\\right)$.",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh",
+        "2075 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh",
+        "2075 Bhadra"
+      ],
+      "frequency": 4,
+      "difficulty": "Easy",
+      "importance": "High"
+    },
+    {
+      "id": "power-system-analysis-i-3",
+      "chapter": "Representation of Power System Components and Per-Unit System",
+      "text": "A 3-phase, $50\\text{ MVA}, 11\\text{ kV}$ generator has $X'' = 0.20\\text{ pu}$. It is connected through a $60\\text{ MVA}, 11/132\\text{ kV}$ transformer ($X = 0.10\\text{ pu}$) to a $132\\text{ kV}$ line of reactance $40\\,\\Omega$. Select base as $100\\text{ MVA}, 11\\text{ kV}$ at generator and draw the per-unit reactance diagram.",
+      "question": "A 3-phase, $50\\text{ MVA}, 11\\text{ kV}$ generator has $X'' = 0.20\\text{ pu}$. It is connected through a $60\\text{ MVA}, 11/132\\text{ kV}$ transformer ($X = 0.10\\text{ pu}$) to a $132\\text{ kV}$ line of reactance $40\\,\\Omega$. Select base as $100\\text{ MVA}, 11\\text{ kV}$ at generator and draw the per-unit reactance diagram.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-4",
+      "chapter": "Overhead Transmission Line Parameters (R, L, C)",
+      "text": "Derive the loop inductance of a single-phase two-wire line considering internal flux linkage ($L_{int} = \\frac{\\mu_0}{8\\pi}$) and external flux linkage ($L_{ext} = \\frac{\\mu_0}{2\\pi}\\ln(D/r)$): $L = \\frac{\\mu_0}{\\pi}\\left(\\frac{1}{4} + \\ln(D/r)\\right)\\text{ H/m}$.",
+      "question": "Derive the loop inductance of a single-phase two-wire line considering internal flux linkage ($L_{int} = \\frac{\\mu_0}{8\\pi}$) and external flux linkage ($L_{ext} = \\frac{\\mu_0}{2\\pi}\\ln(D/r)$): $L = \\frac{\\mu_0}{\\pi}\\left(\\frac{1}{4} + \\ln(D/r)\\right)\\text{ H/m}$.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2079 Baishakh"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2079 Baishakh"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-5",
+      "chapter": "Overhead Transmission Line Parameters (R, L, C)",
+      "text": "Explain the concept of Self Geometric Mean Distance (Self-GMD or GMR) and Mutual GMD ($D_m$). Derive the inductance per phase of a 3-phase transposed line with equilateral and unsymmetrical spacing.",
+      "question": "Explain the concept of Self Geometric Mean Distance (Self-GMD or GMR) and Mutual GMD ($D_m$). Derive the inductance per phase of a 3-phase transposed line with equilateral and unsymmetrical spacing.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-6",
+      "chapter": "Overhead Transmission Line Parameters (R, L, C)",
+      "text": "What are bundled conductors? Why are bundled conductors used in extra-high-voltage (EHV) lines? Derive expressions for the equivalent GMR of two-conductor, three-conductor, and four-conductor bundle arrangements.",
+      "question": "What are bundled conductors? Why are bundled conductors used in extra-high-voltage (EHV) lines? Derive expressions for the equivalent GMR of two-conductor, three-conductor, and four-conductor bundle arrangements.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-7",
+      "chapter": "Overhead Transmission Line Parameters (R, L, C)",
+      "text": "Derive the line-to-neutral capacitance of a 3-phase transposed overhead transmission line: $C_n = \\frac{2\\pi \\epsilon_0}{\\ln(D_{eq}/r)}\\text{ F/m}$. Explain how the presence of earth affects line capacitance using the method of images.",
+      "question": "Derive the line-to-neutral capacitance of a 3-phase transposed overhead transmission line: $C_n = \\frac{2\\pi \\epsilon_0}{\\ln(D_{eq}/r)}\\text{ F/m}$. Explain how the presence of earth affects line capacitance using the method of images.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-8",
+      "chapter": "Performance and Modeling of Transmission Lines",
+      "text": "Classify transmission lines into Short, Medium, and Long lines based on line length and operating voltage. State the approximations made in each category.",
+      "question": "Classify transmission lines into Short, Medium, and Long lines based on line length and operating voltage. State the approximations made in each category.",
+      "marks": "6",
+      "years": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2075 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2075 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-9",
+      "chapter": "Performance and Modeling of Transmission Lines",
+      "text": "Derive the $ABCD$ parameters and voltage regulation for a short transmission line. Draw its phasor diagram for lagging, unity, and leading power factor loads.",
+      "question": "Derive the $ABCD$ parameters and voltage regulation for a short transmission line. Draw its phasor diagram for lagging, unity, and leading power factor loads.",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-10",
+      "chapter": "Performance and Modeling of Transmission Lines",
+      "text": "Explain Nominal-T and Nominal-$\\pi$ representations of medium transmission lines. Derive expressions for their $ABCD$ parameters and verify that $AD - BC = 1$.",
+      "question": "Explain Nominal-T and Nominal-$\\pi$ representations of medium transmission lines. Derive expressions for their $ABCD$ parameters and verify that $AD - BC = 1$.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-11",
+      "chapter": "Performance and Modeling of Transmission Lines",
+      "text": "A 3-phase, $50\\text{ Hz}, 132\\text{ kV}$ transmission line is $100\\text{ km}$ long. The line parameters per phase are $R = 0.15\\,\\Omega/\\text{km}$, $L = 1.1\\text{ mH/km}$, and $C = 0.009\\,\\mu\\text{F/km}$. Using Nominal-$\\pi$ method, find sending end voltage, sending end current, and efficiency when delivering $40\\text{ MW}$ at $0.8$ pf lagging.",
+      "question": "A 3-phase, $50\\text{ Hz}, 132\\text{ kV}$ transmission line is $100\\text{ km}$ long. The line parameters per phase are $R = 0.15\\,\\Omega/\\text{km}$, $L = 1.1\\text{ mH/km}$, and $C = 0.009\\,\\mu\\text{F/km}$. Using Nominal-$\\pi$ method, find sending end voltage, sending end current, and efficiency when delivering $40\\text{ MW}$ at $0.8$ pf lagging.",
+      "marks": "8",
+      "years": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-12",
+      "chapter": "Performance and Modeling of Transmission Lines",
+      "text": "Derive the wave equations for voltage and current on a long distributed transmission line: $V(x) = V_R \\cosh(\\gamma x) + I_R Z_c \\sinh(\\gamma x)$ and $I(x) = I_R \\cosh(\\gamma x) + \\frac{V_R}{Z_c} \\sinh(\\gamma x)$. Define propagation constant ($\\gamma = \\alpha + j\\beta$) and characteristic impedance ($Z_c$).",
+      "question": "Derive the wave equations for voltage and current on a long distributed transmission line: $V(x) = V_R \\cosh(\\gamma x) + I_R Z_c \\sinh(\\gamma x)$ and $I(x) = I_R \\cosh(\\gamma x) + \\frac{V_R}{Z_c} \\sinh(\\gamma x)$. Define propagation constant ($\\gamma = \\alpha + j\\beta$) and characteristic impedance ($Z_c$).",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2076 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2076 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-13",
+      "chapter": "Performance and Modeling of Transmission Lines",
+      "text": "Explain Ferranti effect in long unloaded or lightly loaded transmission lines. Derive the expression for voltage rise at the receiving end ($\\Delta V \\approx \\frac{\\omega^2 l^2 L C}{2} V_R$). How is Ferranti effect mitigated using shunt reactors?",
+      "question": "Explain Ferranti effect in long unloaded or lightly loaded transmission lines. Derive the expression for voltage rise at the receiving end ($\\Delta V \\approx \\frac{\\omega^2 l^2 L C}{2} V_R$). How is Ferranti effect mitigated using shunt reactors?",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-14",
+      "chapter": "Performance and Modeling of Transmission Lines",
+      "text": "Define Surge Impedance Loading (SIL = $V_{LL}^2/Z_c$) of a transmission line. What are the loading limits for short, medium, and long lines based on thermal, voltage drop, and steady-state stability limits?",
+      "question": "Define Surge Impedance Loading (SIL = $V_{LL}^2/Z_c$) of a transmission line. What are the loading limits for short, medium, and long lines based on thermal, voltage drop, and steady-state stability limits?",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-15",
+      "chapter": "Mechanical Design of Overhead Lines and Insulators",
+      "text": "Derive the sag formula for an overhead transmission line conductor supported between supports at equal levels: $S = \\frac{w l^2}{8 T}$. How is sag modified when considering wind pressure ($w_w$) and ice loading ($w_i$)?",
+      "question": "Derive the sag formula for an overhead transmission line conductor supported between supports at equal levels: $S = \\frac{w l^2}{8 T}$. How is sag modified when considering wind pressure ($w_w$) and ice loading ($w_i$)?",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-16",
+      "chapter": "Mechanical Design of Overhead Lines and Insulators",
+      "text": "Derive the sag and tension equations when supports are at unequal levels ($h$ height difference, $l$ span). Locate the lowest point of the conductor from the lower support ($x_1 = \\frac{l}{2} - \\frac{T h}{w l}$).",
+      "question": "Derive the sag and tension equations when supports are at unequal levels ($h$ height difference, $l$ span). Locate the lowest point of the conductor from the lower support ($x_1 = \\frac{l}{2} - \\frac{T h}{w l}$).",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-17",
+      "chapter": "Mechanical Design of Overhead Lines and Insulators",
+      "text": "Explain conductor vibration in overhead lines: Aeolian vibrations, Galloping, and Sub-conductor oscillation. Describe Stockbridge dampers and spacer dampers used to suppress these vibrations.",
+      "question": "Explain conductor vibration in overhead lines: Aeolian vibrations, Galloping, and Sub-conductor oscillation. Describe Stockbridge dampers and spacer dampers used to suppress these vibrations.",
+      "marks": "6",
+      "years": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-18",
+      "chapter": "Mechanical Design of Overhead Lines and Insulators",
+      "text": "Describe the types of overhead line insulators: Pin type, Suspension type, Strain type, and Shackle type. Compare their construction, working voltage range, and applications.",
+      "question": "Describe the types of overhead line insulators: Pin type, Suspension type, Strain type, and Shackle type. Compare their construction, working voltage range, and applications.",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-19",
+      "chapter": "Mechanical Design of Overhead Lines and Insulators",
+      "text": "Explain why voltage distribution across a string of suspension insulators is non-uniform due to shunt capacitance between insulator pin and tower body ($k = C_1/C$). Derive the expression for string efficiency.",
+      "question": "Explain why voltage distribution across a string of suspension insulators is non-uniform due to shunt capacitance between insulator pin and tower body ($k = C_1/C$). Derive the expression for string efficiency.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-20",
+      "chapter": "Mechanical Design of Overhead Lines and Insulators",
+      "text": "In a 3-unit suspension insulator string, the capacitance between each unit pin and earth is $15\\%$ of the self-capacitance ($k = 0.15$). Find the voltage across each unit as a percentage of total voltage and calculate the string efficiency.",
+      "question": "In a 3-unit suspension insulator string, the capacitance between each unit pin and earth is $15\\%$ of the self-capacitance ($k = 0.15$). Find the voltage across each unit as a percentage of total voltage and calculate the string efficiency.",
+      "marks": "8",
+      "years": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2076 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2076 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-21",
+      "chapter": "Mechanical Design of Overhead Lines and Insulators",
+      "text": "Describe methods for improving string efficiency of suspension insulators: (a) using longer cross-arms (reducing $k$), (b) grading of insulator units (capacitance grading), and (c) use of a guard/static ring.",
+      "question": "Describe methods for improving string efficiency of suspension insulators: (a) using longer cross-arms (reducing $k$), (b) grading of insulator units (capacitance grading), and (c) use of a guard/static ring.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-22",
+      "chapter": "Mechanical Design of Overhead Lines and Insulators",
+      "text": "Explain the phenomenon of Corona in overhead transmission lines. Define Critical Disruptive Voltage ($V_d$), Visual Critical Voltage ($V_v$), and Peek's formula for corona power loss ($P = \\frac{242.2}{\\delta}(f+25)\\sqrt{r/D}(V_{ph} - V_d)^2 \\times 10^{-5}\\text{ kW/km/phase}$).",
+      "question": "Explain the phenomenon of Corona in overhead transmission lines. Define Critical Disruptive Voltage ($V_d$), Visual Critical Voltage ($V_v$), and Peek's formula for corona power loss ($P = \\frac{242.2}{\\delta}(f+25)\\sqrt{r/D}(V_{ph} - V_d)^2 \\times 10^{-5}\\text{ kW/km/phase}$).",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2079 Baishakh"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2079 Baishakh"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-23",
+      "chapter": "Mechanical Design of Overhead Lines and Insulators",
+      "text": "What factors affect corona loss? Discuss the advantages (surge attenuation) and disadvantages (power loss, ozone formation, radio interference) of corona. How is corona minimized?",
+      "question": "What factors affect corona loss? Discuss the advantages (surge attenuation) and disadvantages (power loss, ozone formation, radio interference) of corona. How is corona minimized?",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-24",
+      "chapter": "Underground Cables: Construction and Capacitance",
+      "text": "Describe the construction of underground cables with a neat cross-sectional sketch showing core, insulation, metallic sheath, bedding, armouring, and serving.",
+      "question": "Describe the construction of underground cables with a neat cross-sectional sketch showing core, insulation, metallic sheath, bedding, armouring, and serving.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-25",
+      "chapter": "Underground Cables: Construction and Capacitance",
+      "text": "Derive the expression for insulation resistance of a single-core cable: $R_{ins} = \\frac{\\rho}{2\\pi l}\\ln(R/r)$. Why does insulation resistance decrease with increasing cable length?",
+      "question": "Derive the expression for insulation resistance of a single-core cable: $R_{ins} = \\frac{\\rho}{2\\pi l}\\ln(R/r)$. Why does insulation resistance decrease with increasing cable length?",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-26",
+      "chapter": "Underground Cables: Construction and Capacitance",
+      "text": "Derive the electrostatic stress distribution in the dielectric of a single-core cable: $g(x) = \\frac{V}{x \\ln(R/r)}$. Find the condition for minimum dielectric stress ($R/r = e \\approx 2.718$).",
+      "question": "Derive the electrostatic stress distribution in the dielectric of a single-core cable: $g(x) = \\frac{V}{x \\ln(R/r)}$. Find the condition for minimum dielectric stress ($R/r = e \\approx 2.718$).",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2075 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2075 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-27",
+      "chapter": "Underground Cables: Construction and Capacitance",
+      "text": "Explain the methods of grading underground cables to achieve uniform electrostatic stress: (a) Capacitance grading (using dielectrics of different permittivity), and (b) Intersheath grading (using metallic intersheaths at intermediate potentials).",
+      "question": "Explain the methods of grading underground cables to achieve uniform electrostatic stress: (a) Capacitance grading (using dielectrics of different permittivity), and (b) Intersheath grading (using metallic intersheaths at intermediate potentials).",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-28",
+      "chapter": "Underground Cables: Construction and Capacitance",
+      "text": "Derive the capacitance of a single-core cable ($C = \\frac{2\\pi \\epsilon_0 \\epsilon_r}{\\ln(R/r)}$) and charging current. How are capacitances between core-to-core ($C_c$) and core-to-sheath ($C_s$) measured in 3-core belted cables?",
+      "question": "Derive the capacitance of a single-core cable ($C = \\frac{2\\pi \\epsilon_0 \\epsilon_r}{\\ln(R/r)}$) and charging current. How are capacitances between core-to-core ($C_c$) and core-to-sheath ($C_s$) measured in 3-core belted cables?",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-29",
+      "chapter": "Underground Cables: Construction and Capacitance",
+      "text": "Compare Radial, Ring Main, and Interconnected distribution systems in terms of reliability, voltage regulation, and initial capital cost. Calculate voltage drops along a DC distributor fed at one end and both ends.",
+      "question": "Compare Radial, Ring Main, and Interconnected distribution systems in terms of reliability, voltage regulation, and initial capital cost. Calculate voltage drops along a DC distributor fed at one end and both ends.",
+      "marks": "8",
+      "years": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-i-30",
+      "chapter": "Underground Cables: Construction and Capacitance",
+      "text": "Explain Kelvin's Law for the most economical size of a conductor. State its mathematical statement and discuss its practical limitations in overhead line and cable sizing.",
+      "question": "Explain Kelvin's Law for the most economical size of a conductor. State its mathematical statement and discuss its practical limitations in overhead line and cable sizing.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2076 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2076 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    }
+  ]
+}

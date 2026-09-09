@@ -1,0 +1,619 @@
+{
+  "subject": "Power System Analysis II",
+  "chapters": [
+    "Symmetrical Components and Sequence Networks",
+    "Unsymmetrical Fault Analysis (LG, LL, LLG)",
+    "Power Flow Studies (Gauss-Seidel and Newton-Raphson)",
+    "Economic Operation and Dispatch of Power Systems",
+    "Power System Stability: Steady-State and Transient",
+    "Voltage Control and Reactive Power Management"
+  ],
+  "questions": [
+    {
+      "id": "power-system-analysis-ii-1",
+      "chapter": "Power Flow Studies (Gauss-Seidel and Newton-Raphson)",
+      "text": "Formulate the nodal admittance matrix ($Y_{bus}$) of a power network by singular transformation $[Y_{bus}] = [A]^T [y] [A]$ and by direct inspection method. Explain the sparsity of $Y_{bus}$.",
+      "question": "Formulate the nodal admittance matrix ($Y_{bus}$) of a power network by singular transformation $[Y_{bus}] = [A]^T [y] [A]$ and by direct inspection method. Explain the sparsity of $Y_{bus}$.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 4,
+      "difficulty": "Medium",
+      "importance": "High"
+    },
+    {
+      "id": "power-system-analysis-ii-2",
+      "chapter": "Power Flow Studies (Gauss-Seidel and Newton-Raphson)",
+      "text": "Explain the step-by-step $Z_{bus}$ building algorithm for adding a branch: (a) adding a branch from a new bus to reference, (b) adding a branch from a new bus to an existing bus, (c) adding a link between two existing buses.",
+      "question": "Explain the step-by-step $Z_{bus}$ building algorithm for adding a branch: (a) adding a branch from a new bus to reference, (b) adding a branch from a new bus to an existing bus, (c) adding a link between two existing buses.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh",
+        "2075 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh",
+        "2075 Bhadra"
+      ],
+      "frequency": 4,
+      "difficulty": "Hard",
+      "importance": "High"
+    },
+    {
+      "id": "power-system-analysis-ii-3",
+      "chapter": "Power Flow Studies (Gauss-Seidel and Newton-Raphson)",
+      "text": "Explain the classification of buses in load flow studies: Slack (Swing) bus, Generator ($P-V$) bus, and Load ($P-Q$) bus. State the specified and unknown variables for each bus type.",
+      "question": "Explain the classification of buses in load flow studies: Slack (Swing) bus, Generator ($P-V$) bus, and Load ($P-Q$) bus. State the specified and unknown variables for each bus type.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-4",
+      "chapter": "Power Flow Studies (Gauss-Seidel and Newton-Raphson)",
+      "text": "Derive the static load flow equations for real power ($P_i$) and reactive power ($Q_i$) at bus $i$ in terms of bus voltages, phase angles, and bus admittance parameters ($G_{ij}, B_{ij}$).",
+      "question": "Derive the static load flow equations for real power ($P_i$) and reactive power ($Q_i$) at bus $i$ in terms of bus voltages, phase angles, and bus admittance parameters ($G_{ij}, B_{ij}$).",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2079 Baishakh"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2079 Baishakh"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-5",
+      "chapter": "Power Flow Studies (Gauss-Seidel and Newton-Raphson)",
+      "text": "Explain the Gauss-Seidel load flow algorithm. Derive the iterative update formula for bus voltage $V_i^{(k+1)}$ for $P-Q$ buses and describe how $P-V$ buses with reactive power limits ($Q_{i,\\min} \\le Q_i \\le Q_{i,\\max}$) are handled.",
+      "question": "Explain the Gauss-Seidel load flow algorithm. Derive the iterative update formula for bus voltage $V_i^{(k+1)}$ for $P-Q$ buses and describe how $P-V$ buses with reactive power limits ($Q_{i,\\min} \\le Q_i \\le Q_{i,\\max}$) are handled.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-6",
+      "chapter": "Power Flow Studies (Gauss-Seidel and Newton-Raphson)",
+      "text": "Explain the Newton-Raphson (NR) load flow method in polar coordinates. Formulate the Jacobian matrix structure $\\begin{bmatrix} J_{11} & J_{12} \\\\ J_{21} & J_{22} \\end{bmatrix} = \\begin{bmatrix} \\frac{\\partial P}{\\partial \\delta} & \\frac{\\partial P}{\\partial |V|} \\\\ \\frac{\\partial Q}{\\partial \\delta} & \\frac{\\partial Q}{\\partial |V|} \\end{bmatrix}$.",
+      "question": "Explain the Newton-Raphson (NR) load flow method in polar coordinates. Formulate the Jacobian matrix structure $\\begin{bmatrix} J_{11} & J_{12} \\\\ J_{21} & J_{22} \\end{bmatrix} = \\begin{bmatrix} \\frac{\\partial P}{\\partial \\delta} & \\frac{\\partial P}{\\partial |V|} \\\\ \\frac{\\partial Q}{\\partial \\delta} & \\frac{\\partial Q}{\\partial |V|} \\end{bmatrix}$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-7",
+      "chapter": "Power Flow Studies (Gauss-Seidel and Newton-Raphson)",
+      "text": "Derive the Fast Decoupled Load Flow (FDLF) method from the Newton-Raphson method by applying assumptions of weak $P-V$ and $Q-\\delta$ coupling, flat voltage start ($|V| \\approx 1.0$), and negligible line resistance ($R \\ll X$).",
+      "question": "Derive the Fast Decoupled Load Flow (FDLF) method from the Newton-Raphson method by applying assumptions of weak $P-V$ and $Q-\\delta$ coupling, flat voltage start ($|V| \\approx 1.0$), and negligible line resistance ($R \\ll X$).",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-8",
+      "chapter": "Power Flow Studies (Gauss-Seidel and Newton-Raphson)",
+      "text": "Compare Gauss-Seidel, Newton-Raphson, and Fast Decoupled Load Flow methods in terms of convergence speed, memory storage, iteration count dependency on system size, and computational time per iteration.",
+      "question": "Compare Gauss-Seidel, Newton-Raphson, and Fast Decoupled Load Flow methods in terms of convergence speed, memory storage, iteration count dependency on system size, and computational time per iteration.",
+      "marks": "6",
+      "years": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2075 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2075 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-9",
+      "chapter": "Unsymmetrical Fault Analysis (LG, LL, LLG)",
+      "text": "Explain the transient behavior of a synchronous generator during a 3-phase symmetrical fault at its terminals. Define subtransient reactance ($X_d''$), transient reactance ($X_d'$), and synchronous reactance ($X_d$).",
+      "question": "Explain the transient behavior of a synchronous generator during a 3-phase symmetrical fault at its terminals. Define subtransient reactance ($X_d''$), transient reactance ($X_d'$), and synchronous reactance ($X_d$).",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-10",
+      "chapter": "Unsymmetrical Fault Analysis (LG, LL, LLG)",
+      "text": "Explain the DC offset component of short-circuit current during a 3-phase fault. What is the doubling effect and how does doubling occur when the fault initiates at voltage zero crossing?",
+      "question": "Explain the DC offset component of short-circuit current during a 3-phase fault. What is the doubling effect and how does doubling occur when the fault initiates at voltage zero crossing?",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-11",
+      "chapter": "Unsymmetrical Fault Analysis (LG, LL, LLG)",
+      "text": "Explain how the bus impedance matrix ($Z_{bus}$) is utilized to calculate symmetrical 3-phase fault current at any bus $k$ ($I_f = \\frac{V_k(0)}{Z_{kk} + Z_f}$) and the resulting post-fault bus voltages.",
+      "question": "Explain how the bus impedance matrix ($Z_{bus}$) is utilized to calculate symmetrical 3-phase fault current at any bus $k$ ($I_f = \\frac{V_k(0)}{Z_{kk} + Z_f}$) and the resulting post-fault bus voltages.",
+      "marks": "8",
+      "years": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-12",
+      "chapter": "Unsymmetrical Fault Analysis (LG, LL, LLG)",
+      "text": "Define short-circuit MVA (fault level) of a bus ($SCMVA = \\sqrt{3} V_{prefault} I_f$). Explain the selection and rating of circuit breakers based on symmetrical breaking capacity and asymmetrical making capacity ($2.55 \\times I_{sym}$).",
+      "question": "Define short-circuit MVA (fault level) of a bus ($SCMVA = \\sqrt{3} V_{prefault} I_f$). Explain the selection and rating of circuit breakers based on symmetrical breaking capacity and asymmetrical making capacity ($2.55 \\times I_{sym}$).",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2076 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2076 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-13",
+      "chapter": "Symmetrical Components and Sequence Networks",
+      "text": "Derive the symmetrical components transformation matrix $[A]$ and its inverse $[A]^{-1}$. Express sequence voltages ($V_{a0}, V_{a1}, V_{a2}$) in terms of phase voltages ($V_a, V_b, V_c$).",
+      "question": "Derive the symmetrical components transformation matrix $[A]$ and its inverse $[A]^{-1}$. Express sequence voltages ($V_{a0}, V_{a1}, V_{a2}$) in terms of phase voltages ($V_a, V_b, V_c$).",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-14",
+      "chapter": "Symmetrical Components and Sequence Networks",
+      "text": "Draw and explain the positive, negative, and zero sequence equivalent circuits of an unloaded synchronous generator with neutral grounded through reactance $Z_n$. Write the sequence voltage equations: $\\begin{bmatrix} V_{a0} \\\\ V_{a1} \\\\ V_{a2} \\end{bmatrix} = \\begin{bmatrix} 0 \\\\ E_a \\\\ 0 \\end{bmatrix} - \\begin{bmatrix} Z_0+3Z_n & 0 & 0 \\\\ 0 & Z_1 & 0 \\\\ 0 & 0 & Z_2 \\end{bmatrix} \\begin{bmatrix} I_{a0} \\\\ I_{a1} \\\\ I_{a2} \\end{bmatrix}$.",
+      "question": "Draw and explain the positive, negative, and zero sequence equivalent circuits of an unloaded synchronous generator with neutral grounded through reactance $Z_n$. Write the sequence voltage equations: $\\begin{bmatrix} V_{a0} \\\\ V_{a1} \\\\ V_{a2} \\end{bmatrix} = \\begin{bmatrix} 0 \\\\ E_a \\\\ 0 \\end{bmatrix} - \\begin{bmatrix} Z_0+3Z_n & 0 & 0 \\\\ 0 & Z_1 & 0 \\\\ 0 & 0 & Z_2 \\end{bmatrix} \\begin{bmatrix} I_{a0} \\\\ I_{a1} \\\\ I_{a2} \\end{bmatrix}$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-15",
+      "chapter": "Symmetrical Components and Sequence Networks",
+      "text": "Explain zero sequence networks of 3-phase transformers for connections: (a) Y-Y with both neutrals grounded, (b) Y-Delta, (c) Delta-Delta, and (d) Y-Y with isolated neutral.",
+      "question": "Explain zero sequence networks of 3-phase transformers for connections: (a) Y-Y with both neutrals grounded, (b) Y-Delta, (c) Delta-Delta, and (d) Y-Y with isolated neutral.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-16",
+      "chapter": "Unsymmetrical Fault Analysis (LG, LL, LLG)",
+      "text": "For a Single Line-to-Ground (L-G) fault on phase $a$ through fault impedance $Z_f$, derive the boundary conditions ($I_b = 0, I_c = 0, V_a = I_a Z_f$) and prove that sequence networks are connected in series ($I_{a1} = I_{a2} = I_{a0} = \\frac{E_a}{Z_1 + Z_2 + Z_0 + 3Z_f}$).",
+      "question": "For a Single Line-to-Ground (L-G) fault on phase $a$ through fault impedance $Z_f$, derive the boundary conditions ($I_b = 0, I_c = 0, V_a = I_a Z_f$) and prove that sequence networks are connected in series ($I_{a1} = I_{a2} = I_{a0} = \\frac{E_a}{Z_1 + Z_2 + Z_0 + 3Z_f}$).",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2077 Chaitra",
+        "2075 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2077 Chaitra",
+        "2075 Bhadra"
+      ],
+      "frequency": 4,
+      "difficulty": "Hard",
+      "importance": "High"
+    },
+    {
+      "id": "power-system-analysis-ii-17",
+      "chapter": "Unsymmetrical Fault Analysis (LG, LL, LLG)",
+      "text": "For a Line-to-Line (L-L) fault between phases $b$ and $c$ through fault impedance $Z_f$, derive the boundary conditions and prove that positive and negative sequence networks are connected in parallel opposition ($I_{a1} = -I_{a2}, I_{a0} = 0$).",
+      "question": "For a Line-to-Line (L-L) fault between phases $b$ and $c$ through fault impedance $Z_f$, derive the boundary conditions and prove that positive and negative sequence networks are connected in parallel opposition ($I_{a1} = -I_{a2}, I_{a0} = 0$).",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-18",
+      "chapter": "Unsymmetrical Fault Analysis (LG, LL, LLG)",
+      "text": "For a Double Line-to-Ground (L-L-G) fault between phases $b$ and $c$ to ground through impedance $Z_f$, derive the boundary conditions and show that all three sequence networks are connected in parallel.",
+      "question": "For a Double Line-to-Ground (L-L-G) fault between phases $b$ and $c$ to ground through impedance $Z_f$, derive the boundary conditions and show that all three sequence networks are connected in parallel.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-19",
+      "chapter": "Unsymmetrical Fault Analysis (LG, LL, LLG)",
+      "text": "A $25\\text{ MVA}, 11\\text{ kV}$ generator with solidly grounded neutral has $X_1 = X_2 = 0.20\\text{ pu}$ and $X_0 = 0.08\\text{ pu}$. Calculate the fault current in amperes for: (a) a 3-phase symmetrical fault, (b) a single line-to-ground fault. Which fault current is higher?",
+      "question": "A $25\\text{ MVA}, 11\\text{ kV}$ generator with solidly grounded neutral has $X_1 = X_2 = 0.20\\text{ pu}$ and $X_0 = 0.08\\text{ pu}$. Calculate the fault current in amperes for: (a) a 3-phase symmetrical fault, (b) a single line-to-ground fault. Which fault current is higher?",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-20",
+      "chapter": "Unsymmetrical Fault Analysis (LG, LL, LLG)",
+      "text": "Explain open-conductor faults in power systems (one conductor open, two conductors open). How are sequence networks interconnected to analyze series unsymmetrical faults?",
+      "question": "Explain open-conductor faults in power systems (one conductor open, two conductors open). How are sequence networks interconnected to analyze series unsymmetrical faults?",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2076 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2076 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-21",
+      "chapter": "Power System Stability: Steady-State and Transient",
+      "text": "Define power system stability and classify stability into Steady-State Stability, Transient Stability, and Dynamic Stability. What is the power-angle curve ($P = P_{\\max} \\sin \\delta$)?",
+      "question": "Define power system stability and classify stability into Steady-State Stability, Transient Stability, and Dynamic Stability. What is the power-angle curve ($P = P_{\\max} \\sin \\delta$)?",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-22",
+      "chapter": "Power System Stability: Steady-State and Transient",
+      "text": "Derive the swing equation of a synchronous machine: $M \\frac{d^2 \\delta}{dt^2} = \\frac{H}{\\pi f_0}\\frac{d^2 \\delta}{dt^2} = P_m - P_e$. Define inertia constant ($H$ in MJ/MVA) and angular momentum ($M$).",
+      "question": "Derive the swing equation of a synchronous machine: $M \\frac{d^2 \\delta}{dt^2} = \\frac{H}{\\pi f_0}\\frac{d^2 \\delta}{dt^2} = P_m - P_e$. Define inertia constant ($H$ in MJ/MVA) and angular momentum ($M$).",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2079 Baishakh"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2079 Baishakh"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-23",
+      "chapter": "Power System Stability: Steady-State and Transient",
+      "text": "State and prove the Equal Area Criterion for transient stability of a single machine connected to an infinite bus (SMIB). Explain how it evaluates stability under a sudden increase in mechanical input power.",
+      "question": "State and prove the Equal Area Criterion for transient stability of a single machine connected to an infinite bus (SMIB). Explain how it evaluates stability under a sudden increase in mechanical input power.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-24",
+      "chapter": "Power System Stability: Steady-State and Transient",
+      "text": "Using the Equal Area Criterion, derive the formula for Critical Clearing Angle ($\\delta_{cr}$) and Critical Clearing Time ($t_{cr}$) for a 3-phase fault cleared by opening the faulted circuit: $\\cos \\delta_{cr} = \\frac{P_m (\\delta_{\\max} - \\delta_0) + P_{\\max 3}\\cos \\delta_{\\max} - P_{\\max 2}\\cos \\delta_0}{P_{\\max 3} - P_{\\max 2}}$.",
+      "question": "Using the Equal Area Criterion, derive the formula for Critical Clearing Angle ($\\delta_{cr}$) and Critical Clearing Time ($t_{cr}$) for a 3-phase fault cleared by opening the faulted circuit: $\\cos \\delta_{cr} = \\frac{P_m (\\delta_{\\max} - \\delta_0) + P_{\\max 3}\\cos \\delta_{\\max} - P_{\\max 2}\\cos \\delta_0}{P_{\\max 3} - P_{\\max 2}}$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-25",
+      "chapter": "Power System Stability: Steady-State and Transient",
+      "text": "A $50\\text{ Hz}$ generator delivers $0.8\\text{ pu}$ power to an infinite bus through a double-circuit line. The maximum power transfer before fault is $2.0\\text{ pu}$, during fault is $0.5\\text{ pu}$, and after fault clearance is $1.5\\text{ pu}$. Calculate the critical clearing angle.",
+      "question": "A $50\\text{ Hz}$ generator delivers $0.8\\text{ pu}$ power to an infinite bus through a double-circuit line. The maximum power transfer before fault is $2.0\\text{ pu}$, during fault is $0.5\\text{ pu}$, and after fault clearance is $1.5\\text{ pu}$. Calculate the critical clearing angle.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-26",
+      "chapter": "Power System Stability: Steady-State and Transient",
+      "text": "Explain numerical methods for solving the swing equation: Point-by-Point method, Modified Euler's method, and Fourth-order Runge-Kutta (RK4) method.",
+      "question": "Explain numerical methods for solving the swing equation: Point-by-Point method, Modified Euler's method, and Fourth-order Runge-Kutta (RK4) method.",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2075 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2075 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-27",
+      "chapter": "Power System Stability: Steady-State and Transient",
+      "text": "Discuss methods for improving transient stability of power systems: high-speed circuit breakers, auto-reclosing, fast valving, dynamic braking resistors, series capacitor compensation, and excitation system stabilizers (PSS).",
+      "question": "Discuss methods for improving transient stability of power systems: high-speed circuit breakers, auto-reclosing, fast valving, dynamic braking resistors, series capacitor compensation, and excitation system stabilizers (PSS).",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-28",
+      "chapter": "Power System Stability: Steady-State and Transient",
+      "text": "Explain voltage stability in power systems. Define $P-V$ (nose) curves and $V-Q$ curves, maximum permissible power transfer, and reactive power margin.",
+      "question": "Explain voltage stability in power systems. Define $P-V$ (nose) curves and $V-Q$ curves, maximum permissible power transfer, and reactive power margin.",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-29",
+      "chapter": "Power System Stability: Steady-State and Transient",
+      "text": "Explain Small Signal (Steady-State) Stability. Linearize the swing equation around an operating point $\\delta_0$ to derive the undamped natural frequency of oscillation ($\\omega_n = \\sqrt{K_s/M}$) and damping ratio.",
+      "question": "Explain Small Signal (Steady-State) Stability. Linearize the swing equation around an operating point $\\delta_0$ to derive the undamped natural frequency of oscillation ($\\omega_n = \\sqrt{K_s/M}$) and damping ratio.",
+      "marks": "8",
+      "years": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-system-analysis-ii-30",
+      "chapter": "Power Flow Studies (Gauss-Seidel and Newton-Raphson)",
+      "text": "Write short notes on: (a) Contingency analysis in power systems, (b) Optimal Power Flow (OPF), (c) SCADA and Energy Management Systems (EMS) in power system operation.",
+      "question": "Write short notes on: (a) Contingency analysis in power systems, (b) Optimal Power Flow (OPF), (c) SCADA and Energy Management Systems (EMS) in power system operation.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2076 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2076 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    }
+  ]
+}

@@ -1,0 +1,618 @@
+{
+  "subject": "Electric Circuit II",
+  "chapters": [
+    "First-Order Circuits and Transient Response",
+    "Second-Order Circuits and Natural/Forced Response",
+    "Laplace Transform in Circuit Analysis (s-Domain)",
+    "Fourier Series and Transform in AC Circuits",
+    "Two-Port Network Parameters (z, y, h, ABCD)",
+    "Network Functions and Frequency Response",
+    "Passive Filter Design and Synthesis"
+  ],
+  "questions": [
+    {
+      "id": "electric-circuit-ii-1",
+      "chapter": "First-Order Circuits and Transient Response",
+      "text": "Derive the transient current response $i(t)$ of a series R-L circuit connected to a DC voltage $V$ at $t = 0$. Define time constant ($\\tau = L/R$) and determine initial condition $i(0^+)$ and final steady-state condition $i(\\infty)$.",
+      "question": "Derive the transient current response $i(t)$ of a series R-L circuit connected to a DC voltage $V$ at $t = 0$. Define time constant ($\\tau = L/R$) and determine initial condition $i(0^+)$ and final steady-state condition $i(\\infty)$.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 4,
+      "difficulty": "Medium",
+      "importance": "High"
+    },
+    {
+      "id": "electric-circuit-ii-2",
+      "chapter": "First-Order Circuits and Transient Response",
+      "text": "Derive the charging and discharging voltage equations $v_c(t)$ for a series R-C circuit subjected to a step DC voltage. Show that energy stored in the capacitor at steady state is half of total energy drawn from source.",
+      "question": "Derive the charging and discharging voltage equations $v_c(t)$ for a series R-C circuit subjected to a step DC voltage. Show that energy stored in the capacitor at steady state is half of total energy drawn from source.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh",
+        "2075 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh",
+        "2075 Bhadra"
+      ],
+      "frequency": 4,
+      "difficulty": "Medium",
+      "importance": "High"
+    },
+    {
+      "id": "electric-circuit-ii-3",
+      "chapter": "First-Order Circuits and Transient Response",
+      "text": "Derive the complete differential equation for a series R-L-C circuit. Classify the transient response into overdamped, critically damped, and underdamped cases based on roots of characteristic equation ($R \\gtrless 2\\sqrt{L/C}$).",
+      "question": "Derive the complete differential equation for a series R-L-C circuit. Classify the transient response into overdamped, critically damped, and underdamped cases based on roots of characteristic equation ($R \\gtrless 2\\sqrt{L/C}$).",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-4",
+      "chapter": "First-Order Circuits and Transient Response",
+      "text": "A series R-L-C circuit with $R = 20\\,\\Omega$, $L = 0.1\\text{ H}$, and $C = 100\\,\\mu\\text{F}$ is energized by a $100\\text{ V}$ DC supply at $t = 0$. Assuming zero initial conditions, find the expression for current $i(t)$ and voltage across capacitor.",
+      "question": "A series R-L-C circuit with $R = 20\\,\\Omega$, $L = 0.1\\text{ H}$, and $C = 100\\,\\mu\\text{F}$ is energized by a $100\\text{ V}$ DC supply at $t = 0$. Assuming zero initial conditions, find the expression for current $i(t)$ and voltage across capacitor.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2079 Baishakh"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2079 Baishakh"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-5",
+      "chapter": "First-Order Circuits and Transient Response",
+      "text": "Explain transient response of a parallel R-L-C circuit with DC current source excitation. Formulate the state differential equations for node voltage $v(t)$.",
+      "question": "Explain transient response of a parallel R-L-C circuit with DC current source excitation. Formulate the state differential equations for node voltage $v(t)$.",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-6",
+      "chapter": "First-Order Circuits and Transient Response",
+      "text": "Explain initial condition evaluations: determine $i_L(0^+)$, $v_C(0^+)$, $\\frac{di_L}{dt}(0^+)$, and $\\frac{dv_C}{dt}(0^+)$ in switched circuits containing inductors and capacitors.",
+      "question": "Explain initial condition evaluations: determine $i_L(0^+)$, $v_C(0^+)$, $\\frac{di_L}{dt}(0^+)$, and $\\frac{dv_C}{dt}(0^+)$ in switched circuits containing inductors and capacitors.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-7",
+      "chapter": "Laplace Transform in Circuit Analysis (s-Domain)",
+      "text": "Define Laplace transform and state its key properties: Linearity, Time shifting, Frequency shifting, Differentiation in time, Integration in time, Initial Value Theorem, and Final Value Theorem.",
+      "question": "Define Laplace transform and state its key properties: Linearity, Time shifting, Frequency shifting, Differentiation in time, Integration in time, Initial Value Theorem, and Final Value Theorem.",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-8",
+      "chapter": "Laplace Transform in Circuit Analysis (s-Domain)",
+      "text": "Derive the s-domain equivalent representations for inductor ($sL$ with initial current source $i(0^-)/s$ or series voltage source $L i(0^-)$) and capacitor ($1/(sC)$ with initial voltage source).",
+      "question": "Derive the s-domain equivalent representations for inductor ($sL$ with initial current source $i(0^-)/s$ or series voltage source $L i(0^-)$) and capacitor ($1/(sC)$ with initial voltage source).",
+      "marks": "6",
+      "years": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2075 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2075 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-9",
+      "chapter": "Laplace Transform in Circuit Analysis (s-Domain)",
+      "text": "Using Laplace transform, solve for the loop current $i(t)$ in a series R-L circuit excited by a sinusoidal voltage $v(t) = V_m \\sin(\\omega t + \\theta)$ switched on at $t = 0$.",
+      "question": "Using Laplace transform, solve for the loop current $i(t)$ in a series R-L circuit excited by a sinusoidal voltage $v(t) = V_m \\sin(\\omega t + \\theta)$ switched on at $t = 0$.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-10",
+      "chapter": "Laplace Transform in Circuit Analysis (s-Domain)",
+      "text": "Find the unit step response and unit impulse response of an underdamped second-order R-L-C circuit using partial fraction expansion and inverse Laplace transform.",
+      "question": "Find the unit step response and unit impulse response of an underdamped second-order R-L-C circuit using partial fraction expansion and inverse Laplace transform.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-11",
+      "chapter": "Two-Port Network Parameters (z, y, h, ABCD)",
+      "text": "Define Two-Port Network parameters: Impedance ($Z$) parameters, Admittance ($Y$) parameters, Transmission ($ABCD$) parameters, and Hybrid ($h$) parameters. Write down their governing matrix equations.",
+      "question": "Define Two-Port Network parameters: Impedance ($Z$) parameters, Admittance ($Y$) parameters, Transmission ($ABCD$) parameters, and Hybrid ($h$) parameters. Write down their governing matrix equations.",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-12",
+      "chapter": "Two-Port Network Parameters (z, y, h, ABCD)",
+      "text": "Derive the conditions for reciprocity and symmetry for: (a) $Z$-parameters ($Z_{12} = Z_{21}, Z_{11} = Z_{22}$), (b) $Y$-parameters ($Y_{12} = Y_{21}, Y_{11} = Y_{22}$), and (c) $ABCD$-parameters ($AD - BC = 1, A = D$).",
+      "question": "Derive the conditions for reciprocity and symmetry for: (a) $Z$-parameters ($Z_{12} = Z_{21}, Z_{11} = Z_{22}$), (b) $Y$-parameters ($Y_{12} = Y_{21}, Y_{11} = Y_{22}$), and (c) $ABCD$-parameters ($AD - BC = 1, A = D$).",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2076 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2076 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-13",
+      "chapter": "Two-Port Network Parameters (z, y, h, ABCD)",
+      "text": "Find the $Z$-parameters and $Y$-parameters for a symmetrical T-network and $\\pi$-network with given branch impedances $Z_1, Z_2, Z_3$.",
+      "question": "Find the $Z$-parameters and $Y$-parameters for a symmetrical T-network and $\\pi$-network with given branch impedances $Z_1, Z_2, Z_3$.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-14",
+      "chapter": "Two-Port Network Parameters (z, y, h, ABCD)",
+      "text": "Explain the interconnection of two-port networks: series-series (Z-matrix addition), parallel-parallel (Y-matrix addition), and cascade connection (ABCD-matrix multiplication). State Brune's validity test.",
+      "question": "Explain the interconnection of two-port networks: series-series (Z-matrix addition), parallel-parallel (Y-matrix addition), and cascade connection (ABCD-matrix multiplication). State Brune's validity test.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-15",
+      "chapter": "Two-Port Network Parameters (z, y, h, ABCD)",
+      "text": "For a two-port network terminated with a load impedance $Z_L$, derive expressions for input impedance ($Z_{in}$), output impedance ($Z_{out}$), voltage gain ($A_v$), and current gain ($A_i$) in terms of $h$-parameters.",
+      "question": "For a two-port network terminated with a load impedance $Z_L$, derive expressions for input impedance ($Z_{in}$), output impedance ($Z_{out}$), voltage gain ($A_v$), and current gain ($A_i$) in terms of $h$-parameters.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-16",
+      "chapter": "Fourier Series and Transform in AC Circuits",
+      "text": "Explain trigonometric and exponential Fourier series representations for periodic non-sinusoidal waveforms. Define Dirichlet's conditions for convergence of Fourier series.",
+      "question": "Explain trigonometric and exponential Fourier series representations for periodic non-sinusoidal waveforms. Define Dirichlet's conditions for convergence of Fourier series.",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-17",
+      "chapter": "Fourier Series and Transform in AC Circuits",
+      "text": "Determine the trigonometric Fourier series for a square wave of amplitude $V_m$ and period $T$. Show that it contains only odd harmonics and calculate total harmonic distortion (THD).",
+      "question": "Determine the trigonometric Fourier series for a square wave of amplitude $V_m$ and period $T$. Show that it contains only odd harmonics and calculate total harmonic distortion (THD).",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-18",
+      "chapter": "Fourier Series and Transform in AC Circuits",
+      "text": "Explain waveform symmetries: Even symmetry, Odd symmetry, Half-wave symmetry, and Quarter-wave symmetry. How do these symmetries simplify the calculation of Fourier coefficients $a_0, a_n, b_n$?",
+      "question": "Explain waveform symmetries: Even symmetry, Odd symmetry, Half-wave symmetry, and Quarter-wave symmetry. How do these symmetries simplify the calculation of Fourier coefficients $a_0, a_n, b_n$?",
+      "marks": "6",
+      "years": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-19",
+      "chapter": "Fourier Series and Transform in AC Circuits",
+      "text": "A non-sinusoidal voltage $v(t) = 100 + 50\\sin(\\omega t) + 20\\sin(3\\omega t + 30^\\circ)\\text{ V}$ is applied across a series circuit of $R = 10\\,\\Omega$ and $L = 0.05\\text{ H}$ (with $\\omega = 314\\text{ rad/s}$). Find the RMS value of voltage, RMS current, and total active power dissipated.",
+      "question": "A non-sinusoidal voltage $v(t) = 100 + 50\\sin(\\omega t) + 20\\sin(3\\omega t + 30^\\circ)\\text{ V}$ is applied across a series circuit of $R = 10\\,\\Omega$ and $L = 0.05\\text{ H}$ (with $\\omega = 314\\text{ rad/s}$). Find the RMS value of voltage, RMS current, and total active power dissipated.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-20",
+      "chapter": "Network Functions and Frequency Response",
+      "text": "Define driving point impedance, driving point admittance, and transfer functions in linear time-invariant networks. State the necessary conditions for positive real functions (PRF).",
+      "question": "Define driving point impedance, driving point admittance, and transfer functions in linear time-invariant networks. State the necessary conditions for positive real functions (PRF).",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2076 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2076 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-21",
+      "chapter": "Network Functions and Frequency Response",
+      "text": "Explain poles and zeros of a network function. Discuss their physical significance regarding natural response stability. Plot the pole-zero constellation for $H(s) = \\frac{s+3}{(s+1)(s^2 + 4s + 13)}$.",
+      "question": "Explain poles and zeros of a network function. Discuss their physical significance regarding natural response stability. Plot the pole-zero constellation for $H(s) = \\frac{s+3}{(s+1)(s^2 + 4s + 13)}$.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-22",
+      "chapter": "Network Functions and Frequency Response",
+      "text": "Construct the asymptotic magnitude Bode plot and phase plot for the transfer function $G(s) = \\frac{100(s+2)}{s(s+10)(s+50)}$. Determine corner frequencies, gain margin (GM), and phase margin (PM).",
+      "question": "Construct the asymptotic magnitude Bode plot and phase plot for the transfer function $G(s) = \\frac{100(s+2)}{s(s+10)(s+50)}$. Determine corner frequencies, gain margin (GM), and phase margin (PM).",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2079 Baishakh"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2079 Baishakh"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-23",
+      "chapter": "Network Functions and Frequency Response",
+      "text": "Explain Hurwitz polynomials and Routh-Hurwitz stability criterion. Test whether the polynomial $P(s) = s^4 + 2s^3 + 3s^2 + 4s + 5$ has any roots in the right half of the s-plane.",
+      "question": "Explain Hurwitz polynomials and Routh-Hurwitz stability criterion. Test whether the polynomial $P(s) = s^4 + 2s^3 + 3s^2 + 4s + 5$ has any roots in the right half of the s-plane.",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-24",
+      "chapter": "Network Functions and Frequency Response",
+      "text": "Describe Foster I and Foster II form synthesis for LC driving-point immittance functions. Synthesize $Z(s) = \\frac{s(s^2 + 4)}{(s^2 + 1)(s^2 + 9)}$.",
+      "question": "Describe Foster I and Foster II form synthesis for LC driving-point immittance functions. Synthesize $Z(s) = \\frac{s(s^2 + 4)}{(s^2 + 1)(s^2 + 9)}$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-25",
+      "chapter": "Network Functions and Frequency Response",
+      "text": "Describe Cauer I and Cauer II ladder network synthesis for RC and RL immittance functions using continued fraction expansion.",
+      "question": "Describe Cauer I and Cauer II ladder network synthesis for RC and RL immittance functions using continued fraction expansion.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-26",
+      "chapter": "Second-Order Circuits and Natural/Forced Response",
+      "text": "Explain Fortescue's symmetrical components theorem. Define the symmetrical component operator $a = e^{j120^\\circ} = -0.5 + j0.866$. Express phase quantities in terms of positive, negative, and zero sequence components.",
+      "question": "Explain Fortescue's symmetrical components theorem. Define the symmetrical component operator $a = e^{j120^\\circ} = -0.5 + j0.866$. Express phase quantities in terms of positive, negative, and zero sequence components.",
+      "marks": "6",
+      "years": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2075 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2075 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-27",
+      "chapter": "Second-Order Circuits and Natural/Forced Response",
+      "text": "A 3-phase unbalanced system has line currents $I_a = 10\\angle 0^\\circ\\text{ A}$, $I_b = 10\\angle -90^\\circ\\text{ A}$, and $I_c = 10\\angle 120^\\circ\\text{ A}$. Calculate the positive, negative, and zero sequence components of the currents.",
+      "question": "A 3-phase unbalanced system has line currents $I_a = 10\\angle 0^\\circ\\text{ A}$, $I_b = 10\\angle -90^\\circ\\text{ A}$, and $I_c = 10\\angle 120^\\circ\\text{ A}$. Calculate the positive, negative, and zero sequence components of the currents.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-28",
+      "chapter": "Second-Order Circuits and Natural/Forced Response",
+      "text": "Derive the sequence impedance networks (positive, negative, and zero sequence) for: (a) balanced transmission lines, (b) synchronous generators with neutral grounding impedance $Z_n$.",
+      "question": "Derive the sequence impedance networks (positive, negative, and zero sequence) for: (a) balanced transmission lines, (b) synchronous generators with neutral grounding impedance $Z_n$.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-29",
+      "chapter": "Second-Order Circuits and Natural/Forced Response",
+      "text": "Explain zero sequence networks for three-phase transformers with different winding connections (star-star, star-delta, delta-delta, and grounded vs ungrounded neutral).",
+      "question": "Explain zero sequence networks for three-phase transformers with different winding connections (star-star, star-delta, delta-delta, and grounded vs ungrounded neutral).",
+      "marks": "8",
+      "years": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "electric-circuit-ii-30",
+      "chapter": "Second-Order Circuits and Natural/Forced Response",
+      "text": "Explain power invariance in symmetrical components transformation. Prove that total 3-phase complex power is given by $\\mathbf{S}_{3\\phi} = 3[V_{a0} I_{a0}^* + V_{a1} I_{a1}^* + V_{a2} I_{a2}^*]$.",
+      "question": "Explain power invariance in symmetrical components transformation. Prove that total 3-phase complex power is given by $\\mathbf{S}_{3\\phi} = 3[V_{a0} I_{a0}^* + V_{a1} I_{a1}^* + V_{a2} I_{a2}^*]$.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2076 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2076 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    }
+  ]
+}

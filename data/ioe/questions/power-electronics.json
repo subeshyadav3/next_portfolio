@@ -1,0 +1,616 @@
+{
+  "subject": "Power Electronics",
+  "chapters": [
+    "Power Semiconductor Devices and Characteristics",
+    "Thyristors and Gating/Commutation Techniques",
+    "Phase-Controlled Rectifiers (AC to DC Converters)",
+    "DC-DC Converters (Buck, Boost, Buck-Boost Choppers)",
+    "Inverters (Single-Phase and Three-Phase PWM Inverters)",
+    "AC Voltage Regulators and Cycloconverters",
+    "Applications in Motor Drives and Power Supplies"
+  ],
+  "questions": [
+    {
+      "id": "power-electronics-1",
+      "chapter": "Power Semiconductor Devices and Characteristics",
+      "text": "Compare the V-I characteristics, switching speed, power handling capability, and safe operating area (SOA) of Power BJT, Power MOSFET, and IGBT.",
+      "question": "Compare the V-I characteristics, switching speed, power handling capability, and safe operating area (SOA) of Power BJT, Power MOSFET, and IGBT.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 4,
+      "difficulty": "Medium",
+      "importance": "High"
+    },
+    {
+      "id": "power-electronics-2",
+      "chapter": "Power Semiconductor Devices and Characteristics",
+      "text": "Explain the reverse recovery characteristics of a power diode. Derive expressions for reverse recovery time $t_{rr}$ and peak reverse current $I_{RM}$.",
+      "question": "Explain the reverse recovery characteristics of a power diode. Derive expressions for reverse recovery time $t_{rr}$ and peak reverse current $I_{RM}$.",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-3",
+      "chapter": "Power Semiconductor Devices and Characteristics",
+      "text": "Discuss Silicon Carbide (SiC) and Gallium Nitride (GaN) wide bandgap semiconductor devices. Why do they outperform Silicon in high-frequency power converters?",
+      "question": "Discuss Silicon Carbide (SiC) and Gallium Nitride (GaN) wide bandgap semiconductor devices. Why do they outperform Silicon in high-frequency power converters?",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-4",
+      "chapter": "Power Semiconductor Devices and Characteristics",
+      "text": "Explain snubber circuits (RC and RCD snubbers) for protecting power switches against $dv/dt$ and $di/dt$ stresses.",
+      "question": "Explain snubber circuits (RC and RCD snubbers) for protecting power switches against $dv/dt$ and $di/dt$ stresses.",
+      "marks": "6",
+      "years": [
+        "2081 Chaitra",
+        "2079 Baishakh",
+        "2076 Baishakh"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Baishakh",
+        "2076 Baishakh"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-5",
+      "chapter": "Thyristors and Gating/Commutation Techniques",
+      "text": "Describe the two-transistor analogy of an SCR. Derive the expression for anode current $I_A$ and explain the regenerative latching mechanism.",
+      "question": "Describe the two-transistor analogy of an SCR. Derive the expression for anode current $I_A$ and explain the regenerative latching mechanism.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-6",
+      "chapter": "Thyristors and Gating/Commutation Techniques",
+      "text": "Explain different gate triggering circuits for SCRs: Resistance firing, RC firing, and UJT relaxation oscillator triggering circuits.",
+      "question": "Explain different gate triggering circuits for SCRs: Resistance firing, RC firing, and UJT relaxation oscillator triggering circuits.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-7",
+      "chapter": "Thyristors and Gating/Commutation Techniques",
+      "text": "Classify thyristor commutation techniques: Natural (line) commutation vs forced commutation (Class A, B, C, D, E). Explain resonant commutation.",
+      "question": "Classify thyristor commutation techniques: Natural (line) commutation vs forced commutation (Class A, B, C, D, E). Explain resonant commutation.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-8",
+      "chapter": "Thyristors and Gating/Commutation Techniques",
+      "text": "Explain GTO (Gate Turn-Off Thyristor) and TRIAC: Construction, two-way conduction mechanism, and gate drive circuit requirements.",
+      "question": "Explain GTO (Gate Turn-Off Thyristor) and TRIAC: Construction, two-way conduction mechanism, and gate drive circuit requirements.",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra",
+        "2078 Bhadra",
+        "2075 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2078 Bhadra",
+        "2075 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-9",
+      "chapter": "Phase-Controlled Rectifiers (AC to DC Converters)",
+      "text": "Derive expressions for average output voltage $V_{dc}$, RMS voltage $V_{rms}$, and ripple factor of a single-phase fully-controlled bridge rectifier with RL load and continuous conduction.",
+      "question": "Derive expressions for average output voltage $V_{dc}$, RMS voltage $V_{rms}$, and ripple factor of a single-phase fully-controlled bridge rectifier with RL load and continuous conduction.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-10",
+      "chapter": "Phase-Controlled Rectifiers (AC to DC Converters)",
+      "text": "Analyze a single-phase semi-converter with RL load. Explain the role of the freewheeling diode in preventing negative output voltage and improving input power factor.",
+      "question": "Analyze a single-phase semi-converter with RL load. Explain the role of the freewheeling diode in preventing negative output voltage and improving input power factor.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-11",
+      "chapter": "Phase-Controlled Rectifiers (AC to DC Converters)",
+      "text": "Derive the average DC voltage of a 3-phase fully-controlled bridge converter with RL load: $V_{dc} = \\frac{3\\sqrt{3}}{\\pi} V_{ml} \\cos \\alpha$. Draw voltage and current waveforms for $\\alpha = 60^\\circ$.",
+      "question": "Derive the average DC voltage of a 3-phase fully-controlled bridge converter with RL load: $V_{dc} = \\frac{3\\sqrt{3}}{\\pi} V_{ml} \\cos \\alpha$. Draw voltage and current waveforms for $\\alpha = 60^\\circ$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-12",
+      "chapter": "Phase-Controlled Rectifiers (AC to DC Converters)",
+      "text": "Explain the effect of source inductance ($L_s$) on the performance of a 3-phase full converter. Derive expression for voltage drop due to commutation overlap: $\\Delta V_{dc} = \\frac{3\\omega L_s}{\\pi} I_{dc}$.",
+      "question": "Explain the effect of source inductance ($L_s$) on the performance of a 3-phase full converter. Derive expression for voltage drop due to commutation overlap: $\\Delta V_{dc} = \\frac{3\\omega L_s}{\\pi} I_{dc}$.",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2078 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2078 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-13",
+      "chapter": "Phase-Controlled Rectifiers (AC to DC Converters)",
+      "text": "Describe dual converters (circulating and non-circulating current modes) for four-quadrant operation of DC drives.",
+      "question": "Describe dual converters (circulating and non-circulating current modes) for four-quadrant operation of DC drives.",
+      "marks": "8",
+      "years": [
+        "2081 Baishakh",
+        "2079 Baishakh",
+        "2075 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Baishakh",
+        "2079 Baishakh",
+        "2075 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-14",
+      "chapter": "DC-DC Converters (Buck, Boost, Buck-Boost Choppers)",
+      "text": "Explain the step-down (Buck) converter operating in Continuous Conduction Mode (CCM). Derive expressions for output voltage $V_o = D V_s$, inductor ripple current, and critical inductance $L_c$.",
+      "question": "Explain the step-down (Buck) converter operating in Continuous Conduction Mode (CCM). Derive expressions for output voltage $V_o = D V_s$, inductor ripple current, and critical inductance $L_c$.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-15",
+      "chapter": "DC-DC Converters (Buck, Boost, Buck-Boost Choppers)",
+      "text": "Explain the step-up (Boost) converter operating in CCM. Derive output voltage equation $V_o = \\frac{V_s}{1 - D}$ and output capacitor ripple voltage.",
+      "question": "Explain the step-up (Boost) converter operating in CCM. Derive output voltage equation $V_o = \\frac{V_s}{1 - D}$ and output capacitor ripple voltage.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-16",
+      "chapter": "DC-DC Converters (Buck, Boost, Buck-Boost Choppers)",
+      "text": "Derive the transfer function and duty cycle relationship for a Buck-Boost converter: $V_o = -\\frac{D}{1 - D} V_s$. Explain why the output polarity is reversed.",
+      "question": "Derive the transfer function and duty cycle relationship for a Buck-Boost converter: $V_o = -\\frac{D}{1 - D} V_s$. Explain why the output polarity is reversed.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2079 Chaitra",
+        "2076 Baishakh"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2079 Chaitra",
+        "2076 Baishakh"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-17",
+      "chapter": "DC-DC Converters (Buck, Boost, Buck-Boost Choppers)",
+      "text": "Explain the operation of an isolated Flyback and Forward DC-DC converter. Discuss transformer core reset mechanisms.",
+      "question": "Explain the operation of an isolated Flyback and Forward DC-DC converter. Discuss transformer core reset mechanisms.",
+      "marks": "8",
+      "years": [
+        "2081 Bhadra",
+        "2078 Bhadra",
+        "2075 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2078 Bhadra",
+        "2075 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-18",
+      "chapter": "DC-DC Converters (Buck, Boost, Buck-Boost Choppers)",
+      "text": "Explain four-quadrant chopper (Class E chopper) configuration and operation for bidirectional power flow in DC motor regenerative braking.",
+      "question": "Explain four-quadrant chopper (Class E chopper) configuration and operation for bidirectional power flow in DC motor regenerative braking.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2080 Baishakh",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2080 Baishakh",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-19",
+      "chapter": "Inverters (Single-Phase and Three-Phase PWM Inverters)",
+      "text": "Explain the single-phase full-bridge voltage source inverter (VSI) with square-wave and quasi-square-wave switching. Derive Fourier series of output voltage.",
+      "question": "Explain the single-phase full-bridge voltage source inverter (VSI) with square-wave and quasi-square-wave switching. Derive Fourier series of output voltage.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-20",
+      "chapter": "Inverters (Single-Phase and Three-Phase PWM Inverters)",
+      "text": "Analyze Sinusoidal Pulse Width Modulation (SPWM) for inverters. Define modulation index $m_a$ and frequency ratio $m_f$. Explain harmonic elimination using SPWM.",
+      "question": "Analyze Sinusoidal Pulse Width Modulation (SPWM) for inverters. Define modulation index $m_a$ and frequency ratio $m_f$. Explain harmonic elimination using SPWM.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-21",
+      "chapter": "Inverters (Single-Phase and Three-Phase PWM Inverters)",
+      "text": "Explain the 3-phase bridge inverter in $180^\\circ$ conduction mode and $120^\\circ$ conduction mode. Draw phase and line voltage waveforms for both modes.",
+      "question": "Explain the 3-phase bridge inverter in $180^\\circ$ conduction mode and $120^\\circ$ conduction mode. Draw phase and line voltage waveforms for both modes.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-22",
+      "chapter": "Inverters (Single-Phase and Three-Phase PWM Inverters)",
+      "text": "Explain Space Vector Pulse Width Modulation (SVPWM) for 3-phase VSIs. Discuss switching vectors, sector identification, and maximum linear modulation voltage compared to SPWM.",
+      "question": "Explain Space Vector Pulse Width Modulation (SVPWM) for 3-phase VSIs. Discuss switching vectors, sector identification, and maximum linear modulation voltage compared to SPWM.",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2078 Chaitra",
+        "2076 Baishakh"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2078 Chaitra",
+        "2076 Baishakh"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-23",
+      "chapter": "Inverters (Single-Phase and Three-Phase PWM Inverters)",
+      "text": "Describe Current Source Inverters (CSI) and compare them with Voltage Source Inverters (VSI) in terms of circuit topology, reliability, and motor drive performance.",
+      "question": "Describe Current Source Inverters (CSI) and compare them with Voltage Source Inverters (VSI) in terms of circuit topology, reliability, and motor drive performance.",
+      "marks": "6",
+      "years": [
+        "2081 Baishakh",
+        "2079 Baishakh",
+        "2075 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Baishakh",
+        "2079 Baishakh",
+        "2075 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-24",
+      "chapter": "AC Voltage Regulators and Cycloconverters",
+      "text": "Analyze a single-phase AC voltage controller with resistive and inductive loads. Derive the expression for RMS output voltage as a function of firing angle $\\alpha$.",
+      "question": "Analyze a single-phase AC voltage controller with resistive and inductive loads. Derive the expression for RMS output voltage as a function of firing angle $\\alpha$.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-25",
+      "chapter": "AC Voltage Regulators and Cycloconverters",
+      "text": "Explain integral cycle control (burst firing) of AC voltage controllers. Discuss its advantages over phase angle control for heating loads.",
+      "question": "Explain integral cycle control (burst firing) of AC voltage controllers. Discuss its advantages over phase angle control for heating loads.",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2077 Magh"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-26",
+      "chapter": "AC Voltage Regulators and Cycloconverters",
+      "text": "Describe the operating principle of a single-phase to single-phase midpoint and bridge cycloconverter for sub-harmonic frequency generation.",
+      "question": "Describe the operating principle of a single-phase to single-phase midpoint and bridge cycloconverter for sub-harmonic frequency generation.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Medium",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-27",
+      "chapter": "Applications in Motor Drives and Power Supplies",
+      "text": "Explain speed control of separately excited DC motor using single-phase and three-phase full converters in both armature and field control modes.",
+      "question": "Explain speed control of separately excited DC motor using single-phase and three-phase full converters in both armature and field control modes.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-28",
+      "chapter": "Applications in Motor Drives and Power Supplies",
+      "text": "Describe constant $V/f$ control of 3-phase induction motor drives using SPWM inverters. Explain why torque remains constant below base speed.",
+      "question": "Describe constant $V/f$ control of 3-phase induction motor drives using SPWM inverters. Explain why torque remains constant below base speed.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Hard",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-29",
+      "chapter": "Applications in Motor Drives and Power Supplies",
+      "text": "Explain Switched Mode Power Supplies (SMPS) topologies (Push-Pull, Half-Bridge, and Full-Bridge). State advantages over linear power supplies.",
+      "question": "Explain Switched Mode Power Supplies (SMPS) topologies (Push-Pull, Half-Bridge, and Full-Bridge). State advantages over linear power supplies.",
+      "marks": "6",
+      "years": [
+        "2081 Bhadra",
+        "2078 Chaitra",
+        "2075 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2078 Chaitra",
+        "2075 Chaitra"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    },
+    {
+      "id": "power-electronics-30",
+      "chapter": "Applications in Motor Drives and Power Supplies",
+      "text": "Describe Uninterruptible Power Supply (UPS) configurations: Online UPS, Offline UPS, and Line-Interactive UPS with static bypass transfer switches.",
+      "question": "Describe Uninterruptible Power Supply (UPS) configurations: Online UPS, Offline UPS, and Line-Interactive UPS with static bypass transfer switches.",
+      "marks": "6",
+      "years": [
+        "2081 Chaitra",
+        "2079 Baishakh",
+        "2076 Baishakh"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Baishakh",
+        "2076 Baishakh"
+      ],
+      "frequency": 3,
+      "difficulty": "Easy",
+      "importance": "Medium"
+    }
+  ]
+}
