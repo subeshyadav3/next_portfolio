@@ -7,10 +7,12 @@ import {
   getPapersForSubject,
   getSyllabusForSubject,
   getAssessmentScheme,
+  getSubjectQuestions,
   getSubjectSlugFromName,
 } from "@/lib/ioe/data";
 import { PdfViewer } from "@/components/ioe/PdfViewer";
 import SyllabusSection from "@/components/ioe/SyllabusSection";
+import { QuestionBank } from "@/components/ioe/QuestionBank";
 import { buildIoeMetadata, breadcrumbLd, jsonLd, learningResourceLd } from "@/lib/ioe/seo";
 import { ChevronRight, FileText, Award, HelpCircle, CheckCircle2 } from "lucide-react";
 
@@ -79,6 +81,7 @@ export default async function IoeSubjectPage({ params }: PageProps) {
 
   const syllabus = getSyllabusForSubject(subjectRow.title);
   const assessment = getAssessmentScheme(subjectRow.title);
+  const questionsData = await getSubjectQuestions(subjectSlug);
   const semShort = `Sem ${semester}`;
   const path = `/ioe/${programSlug}/semester/${semester}/${subjectSlug}`;
 
@@ -196,6 +199,15 @@ export default async function IoeSubjectPage({ params }: PageProps) {
         </div>
         <PdfViewer papers={papers} />
       </section>
+
+      {/* ── Top Repeated Past Examination Questions ── */}
+      {questionsData && questionsData.questions.length > 0 && (
+        <QuestionBank
+          subject={subjectRow.title}
+          chapters={questionsData.chapters}
+          questions={questionsData.questions}
+        />
+      )}
 
       {/* ── Official Syllabus Section ── */}
       <SyllabusSection subject={subjectRow.title} syllabus={syllabus} />

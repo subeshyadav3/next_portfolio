@@ -1,0 +1,181 @@
+{
+  "subject": "Signals and Systems",
+  "subjectCode": "ENEX 255",
+  "questions": [
+    {
+      "chapter": "Signals and Signal Classification",
+      "text": "Define energy signal and power signal with mathematical expressions and examples. Determine whether the signal $x(t) = e^{-at}u(t)$ for $a > 0$ (or $x(t) = 5\\cos(t)$) is an energy signal, power signal, or neither, and calculate its total energy or average power.",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2079 Jestha",
+        "2078 Chaitra",
+        "2077 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Signals and Signal Classification",
+      "text": "Show that any arbitrary continuous or discrete time signal can be decomposed into an even component and an odd component ($x(t) = x_e(t) + x_o(t)$). Find and sketch the even and odd components of a given signal.",
+      "marks": "4",
+      "years": [
+        "2076 Baisakh",
+        "2075 Bhadra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Signals and Signal Classification",
+      "text": "Explain time shifting, time scaling, and time reversal (reflection) operations on continuous-time and discrete-time signals with neat graphical illustrations.",
+      "marks": "6",
+      "years": [
+        "2081 Chaitra",
+        "2076 Baisakh"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Signals and Signal Classification",
+      "text": "Derive the necessary condition for a discrete-time complex exponential signal $x[n] = e^{j\\omega_0 n}$ to be periodic. What is its fundamental period $N$?",
+      "marks": "4",
+      "years": [
+        "2079 Jestha",
+        "2076 Baisakh"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Fourier Analysis of Continuous-Time and Discrete-Time Signals",
+      "text": "State and prove Parseval's relation for: (a) Continuous-Time Fourier Series, and (b) Discrete-Time Fourier Series (DTFS).",
+      "marks": "6",
+      "years": [
+        "2079 Jestha",
+        "2078 Chaitra",
+        "2076 Baisakh",
+        "2076 Bhadra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Fourier Analysis of Continuous-Time and Discrete-Time Signals",
+      "text": "Find the Continuous-Time Fourier Transform (CTFT) of the signal $x(t) = e^{-at}u(t)$ for $a > 0$. Plot its magnitude and phase spectrum.",
+      "marks": "6",
+      "years": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Bhadra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Fourier Analysis of Continuous-Time and Discrete-Time Signals",
+      "text": "State and prove the Convolution property of the Continuous-Time Fourier Transform: $\\mathcal{F}\\{x_1(t) * x_2(t)\\} = X_1(j\\omega) X_2(j\\omega)$.",
+      "marks": "6",
+      "years": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2076 Bhadra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Fourier Analysis of Continuous-Time and Discrete-Time Signals",
+      "text": "State and prove the Duality property and Time-Scaling property of the Continuous-Time Fourier Transform.",
+      "marks": "6",
+      "years": [
+        "2081 Chaitra",
+        "2077 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Linear Time-Invariant (LTI) Systems",
+      "text": "Derive the Convolution Integral for a continuous-time Linear Time-Invariant (LTI) system: $y(t) = \\int_{-\\infty}^\\infty x(\\tau)h(t-\\tau)d\\tau$.",
+      "marks": "6",
+      "years": [
+        "2081 Chaitra",
+        "2077 Chaitra",
+        "2075 Bhadra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Linear Time-Invariant (LTI) Systems",
+      "text": "Derive the Convolution Sum for a discrete-time LTI system: $y[n] = \\sum_{k=-\\infty}^\\infty x[k]h[n-k]$. Find and plot the convolution sum of sequences $x[n] = \\{1, 3, 4, 3, 1\\}$ and $h[n] = \\{2, 2, -2\\}$ (or $x[n] = \\{3, 1, 5\\}$ and $h[n] = \\{1, 4, -2, 3\\}$).",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2076 Baisakh"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Linear Time-Invariant (LTI) Systems",
+      "text": "Define an LTI system and explain fundamental system properties: Linearity, Time-Invariance, Causality, Memory, and BIBO Stability. State the condition for an LTI system to be causal and stable in terms of impulse response.",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Baisakh"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Sampling of Continuous-Time Signals",
+      "text": "State and prove the Nyquist-Shannon Sampling Theorem using frequency-domain analysis. Define Nyquist rate and Nyquist interval. What is aliasing and how is it prevented? Determine the Nyquist rate for $x(t) = \\cos(200\\pi t) + \\sin(400\\pi t)$.",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Baisakh",
+        "2076 Bhadra"
+      ],
+      "frequency": 5
+    },
+    {
+      "chapter": "Linear Time-Invariant (LTI) Systems",
+      "text": "Derive formula to calculate the impulse response of an Ideal Low-Pass Filter in continuous/discrete time. Prove, with necessary mathematical derivations, that an ideal low-pass filter is non-causal and physically unrealizable.",
+      "marks": "7",
+      "years": [
+        "2079 Jestha",
+        "2077 Chaitra",
+        "2076 Baisakh"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Fourier Analysis of Continuous-Time and Discrete-Time Signals",
+      "text": "Derive the synthesis and analysis equations of the Discrete-Time Fourier Transform (DTFT). State and prove the Linearity, Time-Shifting, and Frequency-Shifting properties of DTFT.",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2077 Chaitra",
+        "2076 Baisakh"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Fourier Analysis of Continuous-Time and Discrete-Time Signals",
+      "text": "Compute the 4-point Discrete Fourier Transform (DFT) for the sequence $x[n] = \\{3, -2, 1, 4\\}$ using the twiddle factor matrix $W_N^{kn}$.",
+      "marks": "6",
+      "years": [
+        "2079 Jestha"
+      ],
+      "frequency": 1
+    },
+    {
+      "chapter": "Linear Time-Invariant (LTI) Systems",
+      "text": "For a system characterized by a linear constant coefficient difference equation, determine the frequency response $H(e^{j\\omega})$ and impulse response $h[n]$. Plot the magnitude and phase response.",
+      "marks": "8",
+      "years": [
+        "2079 Jestha",
+        "2077 Chaitra"
+      ],
+      "frequency": 2
+    }
+  ]
+}

@@ -20,7 +20,9 @@ const cspHeader = `
   worker-src 'self' blob:;
   media-src 'self' https:;
 `;
+
 const nextConfig: NextConfig = {
+  serverExternalPackages: ["katex"],
   images: {
     remotePatterns: [
       {

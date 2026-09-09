@@ -1,0 +1,128 @@
+{
+  "subject": "Digital Signal Processing",
+  "generated": "2026-09-09",
+  "chapters": [
+    "Discrete-Time Signals and Systems",
+    "Z-Transform and LTI System Analysis",
+    "Discrete Fourier Transform (DFT)",
+    "Fast Fourier Transform (FFT) Algorithms",
+    "Realization of Digital Filter Structures",
+    "Design of Infinite Impulse Response (IIR) Digital Filters",
+    "Design of Finite Impulse Response (FIR) Digital Filters",
+    "Finite Word Length Effects and DSP Processors"
+  ],
+  "questions": [
+    {
+      "chapter": "Fast Fourier Transform (FFT) Algorithms",
+      "text": "Discuss the computational efficiency of FFT algorithms over direct DFT computation ($O(N^2)$ vs $O(N \\log_2 N)$). Draw the complete 8-point Decimation-in-Time (DIT) Radix-2 FFT butterfly flow graph and compute the DFT of sequence $x[n] = \\{1, 1, 0, -1, 2, 0, 0, 0\\}$.",
+      "marks": "8",
+      "years": ["2081 Chaitra", "2077 Chaitra", "2075 Bhadra", "2074 Magh", "2072 Ashwin"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Design of Infinite Impulse Response (IIR) Digital Filters",
+      "text": "Design a digital low-pass Butterworth IIR filter using the Bilinear Transformation Method (BTM) to satisfy monotonic passband attenuation $\\le 1\\text{ dB}$ at $\\omega_p = 0.2\\pi$ and stopband attenuation $\\ge 15\\text{ dB}$ at $\\omega_s = 0.3\\pi$. Explain frequency warping and pre-warping.",
+      "marks": "8",
+      "years": ["2081 Chaitra", "2079 Chaitra", "2075 Bhadra", "2074 Magh", "2071 Bhadra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Design of Finite Impulse Response (FIR) Digital Filters",
+      "text": "What is the condition for an FIR filter to have linear phase? Design a linear-phase low-pass FIR filter with cut-off frequency $\\omega_c = 0.5\\pi\\text{ rad/sample}$ and length $M = 7$ using a Hamming (or Hanning) window. Explain Gibbs phenomenon.",
+      "marks": "8",
+      "years": ["2080 Chaitra", "2077 Chaitra", "2075 Bhadra", "2074 Magh", "2073 Bhadra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Realization of Digital Filter Structures",
+      "text": "Draw Direct Form I, Direct Form II, Cascade, and Parallel realizations for the LTI system characterized by the system function:\n$$H(z) = \\frac{1 + 2z^{-1} + z^{-2}}{1 - 0.75z^{-1} + 0.125z^{-2}}$$",
+      "marks": "8",
+      "years": ["2080 Chaitra", "2077 Chaitra", "2074 Magh", "2072 Ashwin"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Realization of Digital Filter Structures",
+      "text": "Compute the lattice reflection coefficients $K_1, K_2, K_3$ and draw the Lattice filter structure for the all-pole (or FIR) system given by the transfer function $H(z)$.",
+      "marks": "6",
+      "years": ["2079 Chaitra", "2077 Chaitra", "2075 Bhadra", "2074 Magh"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Z-Transform and LTI System Analysis",
+      "text": "List the properties of Region of Convergence (ROC) for the Z-transform. Determine the inverse Z-transform of $X(z) = \\frac{1 - 0.5z^{-1}}{(1 - 0.8z^{-1})(1 + 0.4z^{-1})}$ for: (a) Causal stable system, (b) Non-causal system, and (c) Anti-causal system.",
+      "marks": "8",
+      "years": ["2080 Chaitra", "2077 Chaitra", "2075 Bhadra", "2074 Magh", "2071 Bhadra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Discrete Fourier Transform (DFT)",
+      "text": "Differentiate between linear convolution and circular convolution. Compute the linear convolution of two sequences $x_1[n] = \\{1, 1, 1\\}$ and $x_2[n] = \\{2, 2, 2\\}$ using circular convolution and explain the role of zero padding.",
+      "marks": "6",
+      "years": ["2077 Chaitra", "2075 Bhadra", "2074 Magh", "2072 Ashwin"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Design of Finite Impulse Response (FIR) Digital Filters",
+      "text": "Explain FIR filter design using the Remez Exchange (Parks-McClellan) algorithm. Why is the Remez Exchange algorithm generally considered superior to the windowing method for equiripple filter design?",
+      "marks": "6",
+      "years": ["2079 Chaitra", "2075 Bhadra", "2074 Magh", "2071 Bhadra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Finite Word Length Effects and DSP Processors",
+      "text": "What are round-off noise and finite word-length effects in digital filters? Explain Limit Cycle Oscillations (zero-input limit cycles and overflow oscillations) with an illustrative second-order recursive system.",
+      "marks": "6",
+      "years": ["2079 Chaitra", "2075 Bhadra", "2073 Bhadra", "2069 Bhadra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Finite Word Length Effects and DSP Processors",
+      "text": "Explain the architectural features of Digital Signal Processors (DSP). Explain bit-serial arithmetic, pipelining, and distributed arithmetic used in real-time DSP hardware implementations.",
+      "marks": "6",
+      "years": ["2081 Chaitra", "2079 Chaitra", "2077 Chaitra", "2074 Magh"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Design of Infinite Impulse Response (IIR) Digital Filters",
+      "text": "Compare Butterworth filter approximation with Chebyshev Type I and Type II approximations in terms of pole locations, passband ripple, and roll-off rate.",
+      "marks": "6",
+      "years": ["2080 Chaitra", "2077 Chaitra", "2073 Bhadra"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Design of Infinite Impulse Response (IIR) Digital Filters",
+      "text": "Design a discrete-time low-pass filter using the Impulse Invariance Method (IIM). Discuss aliasing problems associated with the impulse invariance technique and why it is unsuitable for high-pass filters.",
+      "marks": "6",
+      "years": ["2075 Bhadra", "2073 Bhadra", "2069 Bhadra"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Discrete-Time Signals and Systems",
+      "text": "Explain the conditions for a Discrete-Time LTI system to be causal and BIBO (Bounded-Input Bounded-Output) stable in terms of its impulse response $h[n]$ and pole locations in the z-plane.",
+      "marks": "6",
+      "years": ["2080 Chaitra", "2074 Magh", "2072 Ashwin"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Z-Transform and LTI System Analysis",
+      "text": "Explain how the poles and zeros of a system function $H(z)$ affect the stability, causality, and magnitude frequency response $|H(e^{j\\omega})|$ of a discrete-time filter with pole-zero geometric plots.",
+      "marks": "6",
+      "years": ["2079 Chaitra", "2074 Magh", "2071 Bhadra"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Discrete-Time Signals and Systems",
+      "text": "Why do we need anti-aliasing pre-filters before sampling an analog signal? Explain the Nyquist sampling theorem, the effect of undersampling (aliasing), and sample-and-hold aperture distortion.",
+      "marks": "6",
+      "years": ["2077 Chaitra", "2074 Magh", "2071 Bhadra"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Fast Fourier Transform (FFT) Algorithms",
+      "text": "Explain Decimation-in-Frequency (DIF) Radix-2 FFT algorithm. How does the DIF butterfly structure differ from the DIT butterfly structure in terms of input ordering, twiddle factors, and output bit reversal?",
+      "marks": "6",
+      "years": ["2075 Bhadra", "2073 Bhadra"],
+      "frequency": 2
+    }
+  ]
+}

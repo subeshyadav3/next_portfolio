@@ -1,0 +1,129 @@
+{
+  "subject": "Data Communication",
+  "generated": "2026-09-09",
+  "chapters": [
+    "Introduction and Transmission Impairments",
+    "Signals and Systems in Communication",
+    "Digital Transmission and Line Coding",
+    "Analog Transmission and Modulation",
+    "Multiplexing and Spread Spectrum",
+    "Transmission Media and Switching",
+    "Error Detection and Correction",
+    "Source Coding and Information Theory",
+    "Channel Coding"
+  ],
+  "questions": [
+    {
+      "chapter": "Introduction and Transmission Impairments",
+      "text": "Describe transmission impairments in data communication systems (attenuation, distortion, and noise). State and explain Shannon-Hartley channel capacity theorem and Nyquist bit rate formula with their practical implications.",
+      "marks": "8",
+      "years": ["2080 Bhadra", "2075 Ashwin", "2072 Chaitra", "2070 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Digital Transmission and Line Coding",
+      "text": "Encode the bit stream `1010011001` using NRZ-L, NRZ-I, RZ, Manchester, Differential Manchester, and Bipolar AMI schemes. Explain DC component and baseline wandering.",
+      "marks": "8",
+      "years": ["2080 Baishakh", "2075 Ashwin", "2074 Chaitra", "2072 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Digital Transmission and Line Coding",
+      "text": "Encode the sequence `111000000000000011` using B8ZS and HDB3 scrambling techniques. Why is scrambling necessary in digital transmission?",
+      "marks": "6",
+      "years": ["2080 Baishakh", "2078 Bhadra", "2076 Ashwin"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Signals and Systems in Communication",
+      "text": "Distinguish between Energy signal and Power signal with examples. Check whether the unit step signal $x(t) = u(t)$ and rectangular pulse are energy or power signals.",
+      "marks": "6",
+      "years": ["2080 Baishakh", "2075 Chaitra", "2075 Ashwin", "2072 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Signals and Systems in Communication",
+      "text": "Define LTI system. Compute the convolution integral $y(t) = x(t) * h(t)$ between two continuous-time signals where $x(t) = e^{-at}u(t)$ and $h(t) = u(t)$ ($a > 0$). Sketch the resulting output signal.",
+      "marks": "8",
+      "years": ["2080 Baishakh", "2078 Bhadra", "2075 Ashwin", "2071 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Analog Transmission and Modulation",
+      "text": "Explain the working principle of Pulse Code Modulation (PCM). Detail sampling (Nyquist rate), uniform vs non-uniform quantization, companding ($\\mu$-law and A-law), and PCM frame format.",
+      "marks": "8",
+      "years": ["2080 Bhadra", "2078 Bhadra", "2075 Ashwin", "2072 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Multiplexing and Spread Spectrum",
+      "text": "What is multiplexing? Compare Synchronous TDM with Statistical (Asynchronous) TDM. Describe Frequency Division Multiplexing (FDM) and Wavelength Division Multiplexing (WDM).",
+      "marks": "8",
+      "years": ["2080 Baishakh", "2078 Bhadra", "2075 Ashwin", "2074 Chaitra", "2072 Chaitra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Multiplexing and Spread Spectrum",
+      "text": "Explain the working principle of Spread Spectrum. Differentiate between Frequency Hopping Spread Spectrum (FHSS) and Direct Sequence Spread Spectrum (DSSS) with waveforms and block diagrams.",
+      "marks": "8",
+      "years": ["2080 Baishakh", "2078 Bhadra", "2076 Chaitra", "2073 Shrawan"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Error Detection and Correction",
+      "text": "Explain the operation of Cyclic Redundancy Check (CRC). Given data bit stream $D = 1010001101$ and divisor polynomial $G(x) = x^4 + x^2 + 1$, determine the CRC code (remainder) and transmitted codeword. Show error detection when one bit is corrupted.",
+      "marks": "8",
+      "years": ["2080 Bhadra", "2080 Baishakh", "2078 Bhadra", "2075 Chaitra", "2075 Ashwin"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Error Detection and Correction",
+      "text": "What are Hamming codes? Explain how parity bits are placed and calculated in a $(7, 4)$ Hamming code. If the received word is $r = 1010110$, detect and correct the single-bit error using syndrome decoding.",
+      "marks": "8",
+      "years": ["2078 Bhadra", "2075 Ashwin", "2072 Chaitra", "2070 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Source Coding and Information Theory",
+      "text": "Write down the binary Huffman Coding Algorithm clearly. Given a message source emitting symbols with probabilities $P = [0.35, 0.25, 0.15, 0.10, 0.08, 0.07]$, construct the Huffman tree, determine codeword for each symbol, average code length, source entropy $H(X)$, and coding efficiency.",
+      "marks": "8",
+      "years": ["2080 Baishakh", "2078 Bhadra", "2075 Ashwin", "2074 Chaitra", "2072 Chaitra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Channel Coding",
+      "text": "What are Linear Block Codes? Given a $(6, 3)$ linear block code with generator matrix $G$, find all valid codewords, parity check matrix $H$, minimum Hamming distance $d_{min}$, and error detecting/correcting capabilities.",
+      "marks": "8",
+      "years": ["2078 Bhadra", "2075 Ashwin", "2072 Chaitra", "2071 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Channel Coding",
+      "text": "Where are convolutional codes used? Explain a rate $r = 1/2$, constraint length $K = 3$ convolutional encoder with state diagram, tree diagram, and trellis diagram. Explain how the Viterbi algorithm performs decoding.",
+      "marks": "8",
+      "years": ["2080 Baishakh", "2078 Bhadra", "2075 Ashwin", "2074 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Transmission Media and Switching",
+      "text": "Differentiate between Circuit Switching and Packet Switching. Contrast Datagram packet switching with Virtual Circuit packet switching with respect to setup phase, routing, and header overhead.",
+      "marks": "8",
+      "years": ["2080 Baishakh", "2075 Ashwin", "2072 Chaitra", "2069 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Transmission Media and Switching",
+      "text": "Compare the transmission characteristics and performance (bandwidth, attenuation, immunity to EMI, and cost) of Twisted Pair cable, Coaxial cable, and Optical Fiber cable.",
+      "marks": "6",
+      "years": ["2075 Ashwin", "2072 Chaitra", "2070 Chaitra"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Signals and Systems in Communication",
+      "text": "State the properties of Continuous-Time Fourier Transform (CTFT). Find the Fourier transform of the double exponential pulse signal $x(t) = e^{-a|t|}$ ($a > 0$) and plot its magnitude spectrum.",
+      "marks": "8",
+      "years": ["2078 Bhadra", "2075 Ashwin", "2072 Chaitra", "2068 Chaitra"],
+      "frequency": 4
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "subject": "Microprocessors",
+  "generated": "2026-09-09",
+  "chapters": [
+    "Introduction",
+    "Intel 8085 Microprocessor",
+    "Intel 8086 Microprocessor",
+    "Microprocessor System",
+    "Interrupt Operations",
+    "Advanced Topics"
+  ],
+  "questions": [
+    {
+      "chapter": "Introduction",
+      "text": "Define stored program concept. How Harvard Architecture differs from Von Neumann Architecture? Differentiate between hardwired and microprogrammed control unit.",
+      "marks": "8",
+      "years": ["2082 Kartik", "2081 Chaitra", "2076 Bhadra", "2075 Bhadra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Introduction",
+      "text": "Differentiate between microprocessor and microcontroller. Explain fetch and execute cycle using RTL for instruction LXI B, 2050H.",
+      "marks": "8",
+      "years": ["2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2075 Baisakh"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Intel 8085 Microprocessor",
+      "text": "Draw the internal architecture of Intel 8085 microprocessor and explain each functional block in detail.",
+      "marks": "8",
+      "years": ["2078 Chaitra", "2076 Bhadra", "2074 Bhadra", "2071 Bhadra", "2064 Shrawan"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Intel 8085 Microprocessor",
+      "text": "What is addressing mode? Explain all the addressing modes used by Intel 8085 microprocessor with suitable examples.",
+      "marks": "8",
+      "years": ["2082 Kartik", "2081 Chaitra", "2079 Chaitra", "2078 Chaitra", "2070 Bhadra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Intel 8086 Microprocessor",
+      "text": "Draw the internal architecture of Intel 8086 microprocessor. Explain the functions of Bus Interface Unit (BIU) and Execution Unit (EU). How is pipelining implemented in 8086?",
+      "marks": "8",
+      "years": ["2082 Kartik", "2081 Chaitra", "2080 Chaitra", "2076 Baisakh", "2074 Bhadra", "2071 Bhadra"],
+      "frequency": 6
+    },
+    {
+      "chapter": "Intel 8086 Microprocessor",
+      "text": "Explain how segmented memory is implemented in Intel 8086 microprocessor. Calculate the physical address if CS = 2400H and IP = 3500H.",
+      "marks": "6",
+      "years": ["2081 Chaitra", "2077 Chaitra", "2075 Bhadra"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Intel 8085 Microprocessor",
+      "text": "Draw the bus timing diagram of instruction OUT 01H which is at location 4000H. Also calculate the time required to execute the instruction if clock frequency is 5 MHz.",
+      "marks": "8",
+      "years": ["2080 Chaitra", "2078 Chaitra", "2076 Bhadra"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Intel 8085 Microprocessor",
+      "text": "Explain bus timing diagram. Draw and explain the timing diagram of the 8085 instruction STA 2050H.",
+      "marks": "8",
+      "years": ["2082 Kartik", "2073 Bhadra", "2071 Bhadra"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Microprocessor System",
+      "text": "Design an interfacing circuit for 8085 using 3:8 decoder for a 4 KB ROM and 2 KB RAM starting at address C000H in consecutive addresses as far as possible. Explain your circuit.",
+      "marks": "8",
+      "years": ["2081 Chaitra", "2076 Bhadra", "2071 Bhadra", "2068 Bhadra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Interrupt Operations",
+      "text": "Describe Polled Interrupt and Chained Interrupt. Explain the interrupt processing cycle of 8085 microprocessor.",
+      "marks": "8",
+      "years": ["2080 Chaitra", "2077 Chaitra", "2075 Bhadra", "2074 Bhadra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Interrupt Operations",
+      "text": "Explain SIM and RIM instructions in 8085. Explain how different hardware interrupt pins (TRAP, RST 7.5, RST 6.5, RST 5.5, INTR) are handled specifying their priorities and vector addresses.",
+      "marks": "8",
+      "years": ["2082 Kartik", "2076 Bhadra", "2074 Bhadra", "2070 Bhadra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Intel 8085 Microprocessor",
+      "text": "Write an assembly language program for 8085 to transfer eight-bit numbers from 9010H to 9020H if bit D6 is 1. Otherwise transfer data by exchanging bit D1 and D5. Assume there are ten 8-bit data.",
+      "marks": "8",
+      "years": ["2082 Kartik", "2080 Chaitra", "2074 Bhadra", "2064 Shrawan"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Intel 8086 Microprocessor",
+      "text": "Write an assembly language program in 8086 to read a string from user, convert uppercase characters to lowercase and vice versa, and display each word in a new line.",
+      "marks": "8",
+      "years": ["2082 Kartik", "2076 Baisakh", "2071 Bhadra", "2070 Bhadra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Microprocessor System",
+      "text": "Explain parallel interface and its modes of operation. Briefly explain the functional block diagram and operating modes of 8255 Programmable Peripheral Interface (PPI).",
+      "marks": "8",
+      "years": ["2081 Chaitra", "2076 Bhadra", "2074 Bhadra"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Advanced Topics",
+      "text": "Discuss about Flynn's Classification. Write the differences between RISC and CISC computers.",
+      "marks": "8",
+      "years": ["2080 Chaitra", "2077 Chaitra", "2074 Bhadra", "2072 Ashwin"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Advanced Topics",
+      "text": "Write short notes on: (a) RS-232 serial communication standard, (b) Direct Memory Access (DMA) data transfer.",
+      "marks": "8",
+      "years": ["2081 Chaitra", "2079 Chaitra", "2075 Bhadra", "2066 Magh"],
+      "frequency": 4
+    }
+  ]
+}

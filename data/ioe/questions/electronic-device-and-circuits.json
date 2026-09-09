@@ -1,0 +1,128 @@
+{
+  "subject": "Electronic Device and Circuits",
+  "generated": "2026-09-09",
+  "chapters": [
+    "Diodes and Diode Applications",
+    "Bipolar Junction Transistors (BJT) and Small-Signal Analysis",
+    "Field Effect Transistors (FET) and MOSFETs",
+    "Power Amplifiers",
+    "Tuned Amplifiers",
+    "Feedback Amplifiers and Oscillators",
+    "Timer IC 555 and Multivibrator Circuits",
+    "Voltage Regulators and Operational Amplifier Circuits"
+  ],
+  "questions": [
+    {
+      "chapter": "Power Amplifiers",
+      "text": "Draw the circuit diagram of a transformer-coupled Class B push-pull power amplifier. Derive the expression for its maximum theoretical conversion efficiency ($\\\\eta = 78.5\\\\%$) and maximum transistor power dissipation.",
+      "marks": "8",
+      "years": ["2081 Bhadra", "2079 Bhadra", "2076 Chaitra", "2074 Ashwin"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Power Amplifiers",
+      "text": "What is crossover distortion in a Class B amplifier? Draw the circuit diagram of a complementary-symmetry (or quasi-complementary) Class AB amplifier and explain how diode bias eliminates crossover distortion.",
+      "marks": "6",
+      "years": ["2081 Bhadra", "2079 Bhadra", "2076 Chaitra", "2074 Ashwin"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Bipolar Junction Transistors (BJT) and Small-Signal Analysis",
+      "text": "Draw the AC equivalent circuit of a Common Emitter (CE) BJT amplifier with a bypassed emitter resistor using the re-model. Derive mathematical expressions for input impedance $Z_{in}$, output impedance $Z_{out}$, voltage gain $A_v$, and current gain $A_i$.",
+      "marks": "8",
+      "years": ["2082 Baishakh", "2079 Bhadra", "2076 Chaitra", "2074 Ashwin"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Field Effect Transistors (FET) and MOSFETs",
+      "text": "Describe the physical construction and working principle of an N-channel Enhancement-type MOSFET (E-MOSFET) with neat drain and transfer characteristic curves. Define threshold voltage $V_{th}$ and transconductance $g_m$.",
+      "marks": "8",
+      "years": ["2082 Baishakh", "2079 Bhadra", "2076 Chaitra", "2074 Ashwin"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Field Effect Transistors (FET) and MOSFETs",
+      "text": "Explain the construction and operation of N-channel Depletion-type MOSFET (D-MOSFET). Derive the transconductance formula $g_m = \\frac{2I_{DSS}}{|V_P|}\\left(1 - \\frac{V_{GS}}{V_P}\\right)$ from Shockley's equation.",
+      "marks": "6",
+      "years": ["2079 Bhadra", "2076 Chaitra", "2074 Ashwin"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Field Effect Transistors (FET) and MOSFETs",
+      "text": "For a voltage-divider biased JFET circuit with $I_{DSS} = 10\\text{ mA}$ and $V_P = -5\\text{ V}$, calculate the quiescent operating point ($I_{DQ}$ and $V_{DSQ}$) and draw the DC load line.",
+      "marks": "6",
+      "years": ["2082 Baishakh", "2079 Bhadra", "2076 Chaitra"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Feedback Amplifiers and Oscillators",
+      "text": "State the Barkhausen criteria for sustained oscillations. Draw the circuit diagram of an RC Phase Shift Oscillator using BJT/Op-Amp and derive the expression for the frequency of oscillation $f_0 = \\frac{1}{2\\pi R C \\sqrt{6}}$ and required amplifier gain.",
+      "marks": "8",
+      "years": ["2081 Bhadra", "2079 Bhadra", "2076 Chaitra", "2074 Ashwin"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Feedback Amplifiers and Oscillators",
+      "text": "Draw the circuit diagram of an Op-Amp Wien Bridge Oscillator. Derive the expression for frequency of oscillation $f_0 = \\frac{1}{2\\pi RC}$ and the condition on resistor ratio for sustained oscillations ($A_v \\ge 3$).",
+      "marks": "6",
+      "years": ["2079 Bhadra", "2076 Chaitra", "2074 Ashwin"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Feedback Amplifiers and Oscillators",
+      "text": "Draw the circuit diagram of a Colpitts (or Hartley) LC oscillator and derive the expression for its resonant frequency of oscillation.",
+      "marks": "6",
+      "years": ["2076 Chaitra", "2074 Ashwin"],
+      "frequency": 2
+    },
+    {
+      "chapter": "Tuned Amplifiers",
+      "text": "When are tuned amplifiers used? Draw the circuit diagram of a single-tuned Class A amplifier and derive the expression for its resonant frequency, quality factor ($Q$), and 3dB bandwidth.",
+      "marks": "8",
+      "years": ["2082 Baishakh", "2079 Bhadra", "2076 Chaitra", "2074 Ashwin"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Timer IC 555 and Multivibrator Circuits",
+      "text": "Explain the internal block diagram and operation of an Astable Multivibrator using IC 555 timer. Sketch capacitor and output voltage waveforms, and derive expressions for charging time $T_{high}$, discharging time $T_{low}$, frequency, and duty cycle.",
+      "marks": "8",
+      "years": ["2082 Baishakh", "2076 Chaitra", "2074 Ashwin"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Voltage Regulators and Operational Amplifier Circuits",
+      "text": "Draw a standard series DC voltage regulator circuit using BJT and Zener diode. Derive its voltage stability factor ($S_V = \\frac{\\Delta V_o}{\\Delta V_{in}}$) and explain the operation of short-circuit current limiting protection.",
+      "marks": "8",
+      "years": ["2082 Baishakh", "2079 Bhadra", "2076 Chaitra", "2074 Ashwin"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Voltage Regulators and Operational Amplifier Circuits",
+      "text": "Design a variable DC voltage regulator circuit providing an output from $5\\text{ V}$ to $20\\text{ V}$ using the three-terminal adjustable voltage regulator IC LM317. Show all resistor calculations.",
+      "marks": "6",
+      "years": ["2082 Baishakh", "2076 Chaitra", "2074 Ashwin"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Voltage Regulators and Operational Amplifier Circuits",
+      "text": "Explain the operation of an Op-Amp based Precision Half-Wave Rectifier with circuit diagram and transfer characteristics. Why is it preferred over ordinary diode rectifiers for small signals?",
+      "marks": "6",
+      "years": ["2079 Bhadra", "2076 Chaitra"],
+      "frequency": 2
+    },
+    {
+      "chapter": "Diodes and Diode Applications",
+      "text": "Derive the mathematical expression for dynamic (AC) resistance of a PN junction diode. If a diode conducts $1\\text{ mA}$ at $20^\\circ\\text{C}$, determine its dynamic resistance at forward bias.",
+      "marks": "4",
+      "years": ["2082 Baishakh", "2076 Chaitra", "2074 Ashwin"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Bipolar Junction Transistors (BJT) and Small-Signal Analysis",
+      "text": "Determine the input resistance, output resistance, and voltage gain of a Common Collector (Emitter Follower) BJT amplifier. Explain why it is used as a buffer amplifier.",
+      "marks": "6",
+      "years": ["2076 Chaitra", "2074 Ashwin"],
+      "frequency": 2
+    }
+  ]
+}

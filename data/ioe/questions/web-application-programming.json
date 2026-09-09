@@ -1,0 +1,128 @@
+{
+  "subject": "Web Application Programming",
+  "generated": "2026-09-09",
+  "chapters": [
+    "Introduction to Web and Web Architectures",
+    "HTML5 and CSS3",
+    "Client-Side Programming and DOM Manipulation",
+    "Frontend Frameworks (React.js)",
+    "Server-Side Development and MVC Architecture",
+    "Web Services, RESTful APIs, and Serialization",
+    "Web Security and Authentication",
+    "Modern Web Deployment, PWAs, and DevOps"
+  ],
+  "questions": [
+    {
+      "chapter": "Frontend Frameworks (React.js)",
+      "text": "Create a React component named `Counter` with a title that:\n(a) Displays a counter starting at 0.\n(b) Has a button labeled \"Increment\" to increase the counter by 1.\n(c) Updates the document title using `useEffect` hook to reflect the current counter value whenever it changes.\n(d) Resets the counter to 0 upon reaching 10.",
+      "marks": "8",
+      "years": ["2082 Chaitra"],
+      "frequency": 2
+    },
+    {
+      "chapter": "HTML5 and CSS3",
+      "text": "Explain the evolution of web architecture. Why do we need semantic elements in HTML5? Create an HTML form that includes Student Roll Number (number), Student Name (text), Student Faculty (select dropdown: Computer, Electronics, Electrical), and a Submit button with client-side validation.",
+      "marks": "8",
+      "years": ["2082 Chaitra", "2080 Baishakh"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Client-Side Programming and DOM Manipulation",
+      "text": "Differentiate between arrow functions and normal functions in JavaScript with examples, highlighting the `this` binding. Explain JavaScript event handling, event bubbling, and event delegation with suitable examples.",
+      "marks": "6",
+      "years": ["2082 Chaitra", "2080 Bhadra"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Server-Side Development and MVC Architecture",
+      "text": "Explain the MVC (Model-View-Controller) architecture in web development with a neat architectural diagram. Discuss CRUD operations and Object-Relational Mapping (ORM) concepts.",
+      "marks": "6",
+      "years": ["2082 Chaitra", "2080 Baishakh", "2079 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Server-Side Development and MVC Architecture",
+      "text": "Explain how Django (or Express/Node.js) handles HTTP request and response cycles. Explain form data handling, request validation, and database model mapping with a suitable example.",
+      "marks": "6",
+      "years": ["2082 Chaitra"],
+      "frequency": 2
+    },
+    {
+      "chapter": "Web Services, RESTful APIs, and Serialization",
+      "text": "Define REST architectural principles and constraints. Compare and contrast JSON and XML for data exchange in web services with suitable syntax examples. Describe standard HTTP methods (GET, POST, PUT, DELETE, PATCH).",
+      "marks": "8",
+      "years": ["2082 Chaitra", "2080 Baishakh", "2079 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Web Services, RESTful APIs, and Serialization",
+      "text": "What are data validation and serialization in web services? Differentiate between monolithic web architectures and Microservices architectures with their pros and cons.",
+      "marks": "5",
+      "years": ["2082 Chaitra"],
+      "frequency": 2
+    },
+    {
+      "chapter": "Web Security and Authentication",
+      "text": "Explain Cross-Site Scripting (XSS), SQL Injection, and Cross-Site Request Forgery (CSRF). Illustrate each vulnerability with a code example and describe prevention mechanisms including parameterized queries, sanitization, and CSRF tokens.",
+      "marks": "8",
+      "years": ["2082 Chaitra", "2080 Baishakh"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Modern Web Deployment, PWAs, and DevOps",
+      "text": "Define a Progressive Web App (PWA). Explain the roles of Service Workers, Web App Manifest, and caching strategies. Explain the CI/CD deployment pipeline with a neat workflow diagram.",
+      "marks": "6",
+      "years": ["2082 Chaitra"],
+      "frequency": 2
+    },
+    {
+      "chapter": "Client-Side Programming and DOM Manipulation",
+      "text": "What are Cookies and Sessions? Compare and contrast Cookies, Sessions, LocalStorage, and SessionStorage in terms of lifetime, capacity, security (`HttpOnly`, `SameSite`), and server accessibility.",
+      "marks": "6",
+      "years": ["2080 Bhadra", "2080 Baishakh", "2078 Bhadra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Client-Side Programming and DOM Manipulation",
+      "text": "Explain the Document Object Model (DOM). Write a JavaScript program to dynamically create, manipulate, and remove HTML table rows and validate form inputs before form submission.",
+      "marks": "6",
+      "years": ["2080 Baishakh", "2079 Chaitra", "2076 Ashwin"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Client-Side Programming and DOM Manipulation",
+      "text": "Explain the working principle of AJAX (Asynchronous JavaScript and XML) request and response using the `fetch()` API and `XMLHttpRequest`. How does AJAX differ from WebSockets for bidirectional communication?",
+      "marks": "6",
+      "years": ["2080 Baishakh", "2079 Chaitra", "2078 Bhadra"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Introduction to Web and Web Architectures",
+      "text": "Differentiate between Web 1.0, Web 2.0, and Web 3.0. Explain multi-tier web application architecture and compare client-side rendering (CSR) with server-side rendering (SSR).",
+      "marks": "6",
+      "years": ["2080 Baishakh", "2079 Chaitra", "2078 Bhadra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Web Services, RESTful APIs, and Serialization",
+      "text": "Explain Service-Oriented Architecture (SOA). Compare and contrast SOAP and RESTful web services in terms of transport protocol, payload format, standards, and performance.",
+      "marks": "6",
+      "years": ["2080 Baishakh", "2079 Chaitra", "2077 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Web Services, RESTful APIs, and Serialization",
+      "text": "What is the Semantic Web? Explain the purpose and components of the Semantic Web including RDF (Resource Description Framework), RDFS, and OWL (Web Ontology Language).",
+      "marks": "6",
+      "years": ["2080 Bhadra", "2080 Baishakh", "2079 Chaitra", "2078 Bhadra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Modern Web Deployment, PWAs, and DevOps",
+      "text": "Write short notes on: (a) JavaScript Callbacks and Promises, (b) DevOps culture and Containerization (Docker), (c) Input sanitization and Content Security Policy (CSP).",
+      "marks": "6",
+      "years": ["2082 Chaitra", "2080 Baishakh"],
+      "frequency": 3
+    }
+  ]
+}

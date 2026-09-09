@@ -1,0 +1,175 @@
+{
+  "subject": "Communication Systems",
+  "subjectCode": "ENEX 351",
+  "questions": [
+    {
+      "chapter": "Line Coding and Baseband Transmission",
+      "text": "For a given binary sequence (e.g. 100000000001101 or 110011000001), draw the resulting waveforms for: Unipolar RZ, Polar NRZ, Bipolar AMI, Manchester, and HDB3 / B8ZS scrambling line codes. Discuss DC component, clock recovery, and bandwidth requirements.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra",
+        "2080 Ashwin",
+        "2079 Ashwin",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 6
+    },
+    {
+      "chapter": "Information Theory and Source Coding",
+      "text": "What is the aim of source coding? For a given message string with character frequencies, construct the Huffman code tree, generate binary codewords, and calculate source entropy $H(X)$, average codeword length $L$, coding efficiency $\\eta = \\frac{H(X)}{L}$, and redundancy.",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2080 Ashwin",
+        "2079 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Channel Coding and Error Control",
+      "text": "A $(6, 3)$ linear block code has a specified parity check matrix $H$. (a) Determine the generator matrix $G$, (b) Generate the valid codeword for message vector $m = [1, 1, 0]$, (c) Compute the syndrome vector $S = r H^T$ for a received word $r$ and demonstrate single-bit error detection and correction.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Bandpass Digital Transmission",
+      "text": "Draw and explain the constellation diagram of 16-QAM and 32-QAM. Compare QAM with QPSK and Minimum Shift Keying (MSK) in terms of bandwidth efficiency, bit error rate, and constant envelope property.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Optimum Receivers and Noise",
+      "text": "Derive the impulse response $h(t) = s(T-t)$ and maximum output signal-to-noise ratio ($SNR = \\frac{2E}{N_0}$) of a Matched Filter receiver operating in an Additive White Gaussian Noise (AWGN) channel.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Information Theory and Source Coding",
+      "text": "State the Shannon-Hartley Channel Capacity Theorem: $C = B \\log_2\\left(1 + \\frac{S}{N}\\right)$. Discuss the trade-off between bandwidth and signal-to-noise ratio, and prove the Shannon capacity limit: $\\frac{E_b}{N_0} \\ge \\ln 2 = -1.59\\text{ dB}$ as channel bandwidth approaches infinity.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Continuous Wave Modulation",
+      "text": "Derive the mathematical expression for double-tone Amplitude Modulation (AM). Calculate the percentage of total transmitted power saved in DSB-SC and SSB-SC as compared to standard AM with modulation index $\\mu = 1$.",
+      "marks": "8",
+      "years": [
+        "2080 Ashwin",
+        "2079 Ashwin",
+        "2079 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Angle Modulation",
+      "text": "Explain Armstrong's indirect method for generating Wideband Frequency Modulation (WBFM) from Narrowband FM using frequency multipliers and mixers. Why are Pre-emphasis and De-emphasis filtering circuits used in FM broadcast?",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2079 Ashwin"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Pulse Modulation and Sampling",
+      "text": "Why is non-uniform quantization required in telephony? Explain $\\mu$-law and A-law logarithmic companding curves. Prove that for a standard voice channel ($300\\text{ Hz} - 3.4\\text{ kHz}$), 8-bit PCM sampled at $8\\text{ kHz}$ yields a bit rate of $64\\text{ kbps}$.",
+      "marks": "8",
+      "years": [
+        "2080 Ashwin",
+        "2079 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Pulse Modulation and Sampling",
+      "text": "Compare Pulse Code Modulation (PCM), Differential Pulse Code Modulation (DPCM), and Delta Modulation (DM). Explain slope overload distortion and granular noise in Delta Modulation and how Adaptive Delta Modulation (ADM) solves them.",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Multiplexing and Digital Hierarchies",
+      "text": "Compare Time Division Multiplexing (TDM) with Frequency Division Multiplexing (FDM). Compare T1 ($1.544\\text{ Mbps}$, 24 channels) and E1 ($2.048\\text{ Mbps}$, 32 channels) digital PCM transmission hierarchies with frame structures.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Continuous Wave Modulation",
+      "text": "Explain the operation of a Superheterodyne Receiver with a block diagram. Explain RF amplifier, mixer, Intermediate Frequency (IF), Automatic Gain Control (AGC), and Image Frequency Rejection Ratio (IFRR).",
+      "marks": "8",
+      "years": [
+        "2079 Ashwin",
+        "2078 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Channel Coding and Error Control",
+      "text": "For a rate-1/2 convolutional encoder with given generator polynomials, draw the State Diagram, Tree Diagram, and Trellis Diagram. Explain how the Viterbi decoding algorithm performs maximum-likelihood path decoding.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Continuous Wave Modulation",
+      "text": "What is the Hilbert Transform? State its essential properties. Explain how the Hilbert transform is used to generate Single Sideband Suppressed Carrier (SSB-SC) modulated signals using the phase-shift method.",
+      "marks": "6",
+      "years": [
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Optimum Receivers and Noise",
+      "text": "Define Noise Figure ($F$), Equivalent Noise Temperature ($T_e$), and Noise Factor in cascaded stages (Friis formula for noise). Derive the Figure of Merit $(\\gamma = \\frac{SNR_o}{SNR_c})$ for SSB, DSB-SC, and AM receivers.",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2080 Ashwin"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Signals and Noise Analysis",
+      "text": "Define Auto-correlation and Cross-correlation for energy and power signals. State and prove the Wiener-Khinchin theorem relating the autocorrelation function and the Power Spectral Density (PSD).",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2079 Ashwin"
+      ],
+      "frequency": 2
+    }
+  ]
+}

@@ -13,6 +13,7 @@ import {
 } from "@/lib/ioe/data";
 import { PdfViewer } from "@/components/ioe/PdfViewer";
 import SyllabusSection from "@/components/ioe/SyllabusSection";
+import { QuestionBank } from "@/components/ioe/QuestionBank";
 import { buildIoeMetadata, breadcrumbLd, jsonLd, learningResourceLd } from "@/lib/ioe/seo";
 import { ChevronRight, FileText } from "lucide-react";
 
@@ -131,9 +132,6 @@ export default async function IoeSubjectArchivePage({ params }: PageProps) {
         </p>
       </header>
 
-      {/* Official Syllabus */}
-      <SyllabusSection subject={subject.name} syllabus={syllabus} />
-
       {/* PDF Viewer */}
       <section className="space-y-3">
         <div className="flex items-center justify-between">
@@ -141,11 +139,23 @@ export default async function IoeSubjectArchivePage({ params }: PageProps) {
             Past Question Papers (PDF)
           </h2>
           <span className="text-xs text-slate-400 dark:text-slate-500">
-            Switch tabs to view different exam years
+            Switch tabs to view different exam papers
           </span>
         </div>
         <PdfViewer papers={papers} />
       </section>
+
+      {/* Top Repeated Past Examination Questions */}
+      {questions && questions.questions.length > 0 && (
+        <QuestionBank
+          subject={subject.name}
+          chapters={questions.chapters}
+          questions={questions.questions}
+        />
+      )}
+
+      {/* Official Syllabus */}
+      <SyllabusSection subject={subject.name} syllabus={syllabus} />
     </div>
   );
 }

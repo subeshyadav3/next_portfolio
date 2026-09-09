@@ -1,0 +1,129 @@
+{
+  "subject": "Computer Graphics and Visualization",
+  "generated": "2026-09-09",
+  "chapters": [
+    "Introduction to Computer Graphics",
+    "Scan Conversion and Output Primitives",
+    "Two-Dimensional Geometric Transformations",
+    "Two-Dimensional Viewing and Clipping",
+    "Three-Dimensional Representations and Splines",
+    "Three-Dimensional Geometric Transformations and Viewing",
+    "Visible Surface Detection",
+    "Illumination Models and Surface Rendering",
+    "Introduction to OpenGL"
+  ],
+  "questions": [
+    {
+      "chapter": "Scan Conversion and Output Primitives",
+      "text": "Differentiate between DDA and Bresenham's line drawing algorithm. Derive Bresenham's line drawing algorithm for slope $|m| < 1$. Digitize the line with endpoints $A(20, 10)$ and $B(30, 18)$.",
+      "marks": "8",
+      "years": ["2082 Bhadra", "2080 Baishakh", "2078 Bhadra", "2074 Ashwin", "2072 Chaitra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Scan Conversion and Output Primitives",
+      "text": "Derive and write the Midpoint Circle Algorithm. How does the 8-way symmetry of a circle reduce computational complexity? Calculate pixel positions along the circle octant for radius $r=10$.",
+      "marks": "8",
+      "years": ["2082 Bhadra", "2078 Bhadra", "2074 Ashwin", "2073 Shrawan", "2066 Magh"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Introduction to Computer Graphics",
+      "text": "Compare Raster-scan Display with Random-scan (Vector) Display. What is the size of frame buffer required to store a SVGA resolution ($800 \\times 600$) with 24-bit true color video?",
+      "marks": "6",
+      "years": ["2082 Bhadra", "2080 Baishakh", "2075 Ashwin", "2071 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Two-Dimensional Geometric Transformations",
+      "text": "What do you mean by homogeneous coordinates? Find the composite 2D transformation matrix for reflection of an object about an arbitrary line $y = mx + c$.",
+      "marks": "8",
+      "years": ["2082 Bhadra", "2078 Bhadra", "2074 Ashwin", "2072 Chaitra", "2070 Chaitra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Two-Dimensional Viewing and Clipping",
+      "text": "Define window and viewport. Describe the two-dimensional viewing pipeline and derive the transformation matrix responsible for window-to-viewport mapping.",
+      "marks": "6",
+      "years": ["2083 Baishakh", "2082 Bhadra", "2078 Bhadra", "2074 Ashwin", "2072 Chaitra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Two-Dimensional Viewing and Clipping",
+      "text": "Explain Cohen-Sutherland line clipping algorithm. Obtain the end points of the line that connects $P_1(0, 120)$ and $P_2(130, 5)$ after clipping against window with diagonal corners $(10, 10)$ and $(100, 100)$.",
+      "marks": "8",
+      "years": ["2080 Baishakh", "2078 Bhadra", "2075 Ashwin", "2074 Ashwin"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Two-Dimensional Viewing and Clipping",
+      "text": "Explain the Sutherland-Hodgman polygon clipping algorithm. How does it clip a polygon against the four boundaries of a clipping window and what is its limitation with concave polygons?",
+      "marks": "6",
+      "years": ["2081 Baishakh", "2079 Bhadra", "2076 Ashwin", "2073 Shrawan"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Three-Dimensional Geometric Transformations and Viewing",
+      "text": "Explain the steps required to rotate an object in 3D about an arbitrary axis that is not parallel to any coordinate axis. Derive the sequence of composite transformation matrices.",
+      "marks": "8",
+      "years": ["2082 Bhadra", "2080 Baishakh", "2078 Bhadra", "2072 Chaitra", "2068 Chaitra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Three-Dimensional Geometric Transformations and Viewing",
+      "text": "Describe the 3D viewing pipeline. Differentiate between parallel projection and perspective projection. Derive the transformation matrix for perspective projection onto a view plane.",
+      "marks": "8",
+      "years": ["2083 Baishakh", "2082 Bhadra", "2080 Baishakh", "2078 Bhadra", "2074 Ashwin"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Three-Dimensional Representations and Splines",
+      "text": "Explain the properties of Bezier curves. Find the coordinates of the point at parameter $u = 0.5$ with respect to the control points $(10, 10)$, $(20, 30)$, $(40, 30)$, and $(30, 10)$.",
+      "marks": "8",
+      "years": ["2082 Bhadra", "2080 Baishakh", "2078 Bhadra", "2074 Ashwin", "2072 Chaitra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Three-Dimensional Representations and Splines",
+      "text": "Why do we use geometric tables (Polygon, Vertex, and Edge tables) and attribute tables for defining a polygon surface? Explain with an example of a 3D object.",
+      "marks": "6",
+      "years": ["2083 Baishakh", "2082 Bhadra", "2080 Baishakh", "2074 Ashwin", "2072 Chaitra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Visible Surface Detection",
+      "text": "Explain the Back-Face Detection algorithm for visible surface determination. Determine whether a surface of an object with normal vector $\\mathbf{N} = (1, 2, 3)$ is visible from viewing direction $\\mathbf{V}_{view} = (0, 0, 1)$.",
+      "marks": "6",
+      "years": ["2083 Baishakh", "2082 Bhadra", "2078 Bhadra", "2075 Ashwin"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Visible Surface Detection",
+      "text": "Explain the Depth-Buffer (Z-buffer) algorithm for visible surface detection with necessary steps. What is the limitation of Z-buffer and how does A-buffer method overcome it?",
+      "marks": "8",
+      "years": ["2083 Baishakh", "2082 Bhadra", "2080 Baishakh", "2075 Ashwin", "2072 Chaitra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Illumination Models and Surface Rendering",
+      "text": "Derive the mathematical expression to calculate the total light intensity at a point using the Phong illumination model considering ambient, diffuse, and specular reflection components.",
+      "marks": "8",
+      "years": ["2083 Baishakh", "2082 Bhadra", "2078 Bhadra", "2074 Ashwin", "2072 Chaitra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Illumination Models and Surface Rendering",
+      "text": "Explain Gouraud shading for polygon rendering and compare it with Phong shading. Why is Phong shading preferred despite higher computational cost?",
+      "marks": "8",
+      "years": ["2082 Bhadra", "2078 Bhadra", "2074 Ashwin", "2072 Chaitra", "2066 Magh"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Introduction to OpenGL",
+      "text": "What is OpenGL? Explain the role of callback functions in event-driven programming and explain how polygons and lighting are specified in OpenGL.",
+      "marks": "6",
+      "years": ["2083 Baishakh", "2082 Bhadra", "2080 Baishakh", "2078 Bhadra", "2074 Ashwin"],
+      "frequency": 5
+    }
+  ]
+}

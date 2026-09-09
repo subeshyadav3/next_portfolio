@@ -1,0 +1,128 @@
+{
+  "subject": "Simulation and Modeling",
+  "generated": "2026-09-09",
+  "chapters": [
+    "Introduction to Simulation and Modeling",
+    "Physical and Mathematical Models",
+    "Continuous and Discrete System Simulation",
+    "Queuing Systems and Markov Chains",
+    "Random Number Generation and Testing",
+    "Verification and Validation of Simulation Models",
+    "Simulation Output Analysis",
+    "Simulation Software and System Simulation"
+  ],
+  "questions": [
+    {
+      "chapter": "Introduction to Simulation and Modeling",
+      "text": "Explain various steps in a simulation study with a detailed block diagram/flowchart. List the advantages and disadvantages of simulation.",
+      "marks": "8",
+      "years": ["2082 Chaitra", "2082 Shrawan", "2081 Chaitra", "2081 Shrawan", "2080 Chaitra", "2079 Chaitra"],
+      "frequency": 6
+    },
+    {
+      "chapter": "Physical and Mathematical Models",
+      "text": "Differentiate between static mathematical model and dynamic mathematical model with necessary mathematical equations and a practical example of each model.",
+      "marks": "8",
+      "years": ["2082 Chaitra", "2082 Shrawan", "2081 Chaitra", "2081 Shrawan", "2080 Chaitra", "2079 Chaitra"],
+      "frequency": 6
+    },
+    {
+      "chapter": "Continuous and Discrete System Simulation",
+      "text": "Define analog methods in simulation. Design and explain the analog computer model of an automobile suspension problem (or liver model) with necessary differential equations and block diagram.",
+      "marks": "8",
+      "years": ["2082 Chaitra", "2082 Shrawan", "2081 Shrawan", "2079 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Queuing Systems and Markov Chains",
+      "text": "Explain the characteristics and performance measures of queuing systems. Explain Kendall notation and interpret $M/M/3/20/1500/FCFS$ and $D/M/1/LIFO/20/80$.",
+      "marks": "8",
+      "years": ["2082 Chaitra", "2081 Chaitra", "2081 Shrawan", "2080 Chaitra", "2079 Chaitra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Queuing Systems and Markov Chains",
+      "text": "Explain the features of a Markov chain. Given brand switching probabilities where a current user of Brand A has a 70% chance to buy A again and 30% to buy B, while a user of Brand B has an 80% chance to buy B and 20% to buy A:\n(a) Construct the state transition diagram and transition matrix.\n(b) Calculate the probability that a current user of Brand A buys Brand B after 3 purchases.\n(c) If 60% of consumers initially use Brand A, find the market share after 3 purchases.",
+      "marks": "8",
+      "years": ["2082 Shrawan", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Queuing Systems and Markov Chains",
+      "text": "In a single server queue ($M/M/1$), customers arrive according to a Poisson process at a rate of one every 40 minutes and service time takes 30 minutes exponentially distributed. Find the server utilization, average queue length $L_q$, average waiting time in queue $W_q$, and average time spent in the system $W$.",
+      "marks": "8",
+      "years": ["2079 Chaitra", "2078 Chaitra", "2075 Chaitra"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Random Number Generation and Testing",
+      "text": "Define pseudo-random numbers and their desired properties. Explain the Linear Congruential Method (LCM). Using the mixed congruential formula $X_{i+1} = (17X_i + 43) \\pmod{100}$ with seed $X_0 = 27$, generate a sequence of six random numbers.",
+      "marks": "8",
+      "years": ["2082 Shrawan", "2079 Chaitra", "2078 Chaitra"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Random Number Generation and Testing",
+      "text": "Explain the Poker test for random number independence. A sequence of 10,000 four-digit numbers yields: 5120 all different, 4230 one pair, 560 two pairs, 75 three of a kind, and 15 four of a kind. Using Chi-Square test at $\\alpha = 0.05$ (critical $\\chi^2 = 9.49$), determine whether these random numbers are independent.",
+      "marks": "8",
+      "years": ["2082 Chaitra", "2082 Shrawan", "2081 Chaitra", "2081 Shrawan", "2080 Chaitra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Random Number Generation and Testing",
+      "text": "Write down the algorithm for Kolmogorov-Smirnov (KS) test. Perform a uniformity test using KS test with level of significance $\\alpha = 0.05$ on generated numbers: $0.44, 0.81, 0.14, 0.05, 0.93$ (given critical $D_{0.05} = 0.565$).",
+      "marks": "8",
+      "years": ["2081 Chaitra", "2079 Chaitra", "2078 Chaitra"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Random Number Generation and Testing",
+      "text": "Write down the algorithm for the Gap test and Autocorrelation test for examining the independence of pseudo-random numbers.",
+      "marks": "6",
+      "years": ["2081 Chaitra", "2081 Shrawan", "2078 Chaitra"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Verification and Validation of Simulation Models",
+      "text": "Explain Naylor and Finger's three-step approach used in the validation process of simulation models. How do verification and validation differ in simulation?",
+      "marks": "6",
+      "years": ["2082 Chaitra", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Simulation Output Analysis",
+      "text": "How can you analyze simulation output using simulation run statistics? Explain methods for the elimination of initial bias (warm-up period) in steady-state simulations.",
+      "marks": "6",
+      "years": ["2082 Chaitra", "2081 Chaitra", "2081 Shrawan", "2079 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Simulation Output Analysis",
+      "text": "Explain the Replication of Runs method for a single-server queue ($M/M/1$) simulation. How does it enable constructing confidence intervals for performance measures?",
+      "marks": "5",
+      "years": ["2082 Chaitra", "2080 Chaitra", "2078 Chaitra"],
+      "frequency": 3
+    },
+    {
+      "chapter": "Simulation Software and System Simulation",
+      "text": "Explain the implementation of a single-server queuing simulation model using Java with flowcharts, event scheduling, and simulation clock advancement.",
+      "marks": "6",
+      "years": ["2082 Chaitra", "2082 Shrawan", "2081 Chaitra", "2081 Shrawan"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Simulation Software and System Simulation",
+      "text": "How is memory and CPU simulation conducted in a computer system? Explain the different levels of abstraction in computer system simulation.",
+      "marks": "6",
+      "years": ["2082 Chaitra", "2082 Shrawan", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Simulation Software and System Simulation",
+      "text": "What do you mean by simulation software? Explain at least three GPSS block diagrams (GENERATE, QUEUE, SEIZE, DEPART, ADVANCE, RELEASE, TERMINATE) with an example of a service facility.",
+      "marks": "6",
+      "years": ["2080 Chaitra", "2079 Chaitra", "2078 Chaitra"],
+      "frequency": 3
+    }
+  ]
+}

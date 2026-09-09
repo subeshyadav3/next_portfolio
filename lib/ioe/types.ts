@@ -66,20 +66,25 @@ export interface IoeQuestionVariation {
 }
 
 export interface IoeQuestion {
-  chapter: string;
-  text: string;
-  marks?: string;
-  years: string[];
-  frequency: number;
+  chapter?: string;
+  text?: string;
+  question?: string;
+  marks?: string | number;
+  years?: string[];
+  examSessions?: string[];
+  frequency?: number;
   year?: string;
   q_num?: string;
+  id?: string;
+  importance?: string;
+  difficulty?: string;
   variations?: IoeQuestionVariation[];
 }
 
 export interface IoeSubjectQuestions {
   subject: string;
   generated?: string;
-  chapters: string[];
+  chapters?: string[];
   questions: IoeQuestion[];
 }
 

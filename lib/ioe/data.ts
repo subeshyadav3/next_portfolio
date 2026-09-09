@@ -14,6 +14,7 @@ import type {
   IoeProgram,
   IoeAssessmentScheme,
   IoeProgramsFile,
+  IoeQuestion,
   IoeSubjectQuestions,
   IoeSyllabus,
 } from "./types";
@@ -188,8 +189,104 @@ export function getUnmappedSubjects(): IoeCatalogSubject[] {
   return catalog.subjects.filter((s) => !mapped.has(normalizeSubjectName(s.name)));
 }
 
-export async function getSubjectQuestions(_subjectSlug: string): Promise<IoeSubjectQuestions | null> {
-  return null;
+const QUESTION_SLUG_MAP: Record<string, string> = {
+  "c-programming": "computer-programming",
+  "data-structures-and-algorithms": "data-structure-and-algorithm",
+  "data-structure-and-algorithum": "data-structure-and-algorithm",
+  "database-management-systems": "database-management-system",
+  "operating-systems": "operating-system",
+  "microprocessor": "microprocessors",
+  "microprocessors-and-microcontrollers": "microprocessors",
+  "computer-network": "computer-networks",
+  "computer-organization-architecture": "computer-organization-and-architecture",
+  "computer-graphics": "computer-graphics-and-visualization",
+  "digital-logic-bei": "digital-logic",
+  "digital-signal-analysis-and-processing": "digital-signal-processing",
+  "digital-signal-processing-and-application": "digital-signal-processing",
+  "energy-environment-and-society": "energy-environment-and-social-engineering",
+  "technology-environment-and-society": "energy-environment-and-social-engineering",
+  "electronic-devices-and-circuits": "electronic-device-and-circuits",
+  "basic-electrical-engineering": "fundamental-of-electrical-and-electronics-engineering",
+  "basic-electrical-and-electronics-engineering": "fundamental-of-electrical-and-electronics-engineering",
+  "propogation-and-antennna": "propagation-and-antenna",
+  "propogation-and-antenna": "propagation-and-antenna",
+  "telecommunication": "telecommunication-and-computer-networks",
+  "applied-mechanics": "engineering-mechanics",
+  "civil-engineering-material": "civil-engineering-materials",
+  "engineering-geology": "engineering-geology-i",
+  "strength-of-material": "strength-of-materials",
+  "stregth-of-materials": "strength-of-materials",
+  "surveying-i": "engineering-survey-i",
+  "surveying-ii": "engineering-survey-ii",
+  "theory-of-structure-i": "theory-of-structures-i",
+  "theory-of-structure-ii": "theory-of-structures-ii",
+  "design-of-steel-and-timber-structure": "design-of-steel-structures",
+  "transportation-engineering": "transportation-engineering-ii",
+  "professional-and-social-engineering": "energy-environment-and-social-engineering",
+  "hydropower": "hydropower-engineering",
+  "project-and-construction-engineering": "construction-management",
+};
+
+type RawQuestionInput = Partial<IoeQuestion> & Record<string, unknown>;
+
+interface RawSubjectQuestionsInput {
+  subject?: string;
+  chapters?: string[];
+  questions: RawQuestionInput[];
+  [key: string]: unknown;
+}
+
+function normalizeQuestionsData(raw: RawSubjectQuestionsInput | null | undefined): IoeSubjectQuestions | null {
+  if (!raw || !Array.isArray(raw.questions)) return null;
+  const chSet = new Set<string>();
+  const questions: IoeQuestion[] = raw.questions.map((q: RawQuestionInput) => {
+    const text = q.text || q.question || "";
+    const years = q.years || q.examSessions || (q.year ? [q.year] : []);
+    const frequency = q.frequency || years.length || 1;
+    const chapter = q.chapter || "General";
+    chSet.add(chapter);
+    return {
+      ...q,
+      text,
+      question: text,
+      years,
+      examSessions: years,
+      frequency,
+      chapter,
+      marks: q.marks !== undefined ? String(q.marks) : undefined,
+    };
+  });
+
+  const chapters =
+    raw.chapters && raw.chapters.length > 0
+      ? raw.chapters
+      : Array.from(chSet);
+
+  return {
+    ...raw,
+    subject: raw.subject ?? "",
+    chapters,
+    questions,
+  };
+}
+
+export async function getSubjectQuestions(subjectSlug: string): Promise<IoeSubjectQuestions | null> {
+  if (!subjectSlug) return null;
+  const target = QUESTION_SLUG_MAP[subjectSlug] || subjectSlug;
+  try {
+    const mod = await import(`@/data/ioe/questions/${target}.json`);
+    return normalizeQuestionsData(mod.default ?? mod);
+  } catch {
+    if (target !== subjectSlug) {
+      try {
+        const fallbackMod = await import(`@/data/ioe/questions/${subjectSlug}.json`);
+        return normalizeQuestionsData(fallbackMod.default ?? fallbackMod);
+      } catch {
+        return null;
+      }
+    }
+    return null;
+  }
 }
 
 export function getSyllabusForSubject(subjectName: string): IoeSyllabus | null {

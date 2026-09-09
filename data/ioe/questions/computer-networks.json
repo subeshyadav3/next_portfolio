@@ -1,0 +1,128 @@
+{
+  "subject": "Computer Networks",
+  "generated": "2026-09-09",
+  "chapters": [
+    "Introduction to Computer Networks",
+    "Physical Layer and Network Media",
+    "Data Link Layer and Local Area Networks",
+    "Network Layer and IP Addressing",
+    "Routing Protocols",
+    "Transport Layer",
+    "Application Layer",
+    "Network Security and Cryptography"
+  ],
+  "questions": [
+    {
+      "chapter": "Network Layer and IP Addressing",
+      "text": "Suppose a company has an assigned network IP address 150.10.0.0/16 (or 202.35.91.32/25) with 6 departments containing 1010, 505, 225, 107, 60, and 45 hosts. As a network engineer, design an IP addressing plan using Variable Length Subnet Masking (VLSM). List out the CIDR prefix, subnet mask, network ID, broadcast ID, usable host IP address range, and number of wasted IP addresses for each department.",
+      "marks": "10",
+      "years": ["2082 Bhadra", "2081 Baishakh", "2080 Bhadra", "2080 Baishakh", "2079 Bhadra", "2078 Bhadra", "2076 Chaitra", "2074 Ashwin"],
+      "frequency": 8
+    },
+    {
+      "chapter": "Introduction to Computer Networks",
+      "text": "Compare the OSI 7-layer reference model with the TCP/IP protocol suite. Discuss the functions, protocols, and data units (PDUs) at each layer, and explain the key design issues in layering: encapsulation, addressing, and multiplexing.",
+      "marks": "8",
+      "years": ["2082 Bhadra", "2081 Baishakh", "2080 Bhadra", "2080 Baishakh", "2079 Bhadra", "2078 Bhadra", "2076 Ashwin", "2074 Ashwin"],
+      "frequency": 8
+    },
+    {
+      "chapter": "Data Link Layer and Local Area Networks",
+      "text": "Compare byte stuffing and bit stuffing in framing. A received frame is 0101101101 and the generator polynomial is G(x) = x^3 + 1 (or 1001). Check whether the received bit sequence contains transmission errors using Cyclic Redundancy Check (CRC). Show the complete modulo-2 division steps.",
+      "marks": "8",
+      "years": ["2082 Bhadra", "2081 Baishakh", "2080 Bhadra", "2080 Baishakh", "2078 Bhadra", "2076 Chaitra", "2073 Shrawan", "2071 Chaitra"],
+      "frequency": 8
+    },
+    {
+      "chapter": "Transport Layer",
+      "text": "Compare TCP and UDP header formats and functionalities. How is a connection established and terminated in TCP using the three-way handshake? How is congestion handled using the Token Bucket and Leaky Bucket algorithms? Explain with block diagrams.",
+      "marks": "8",
+      "years": ["2082 Bhadra", "2081 Baishakh", "2080 Bhadra", "2080 Baishakh", "2079 Bhadra", "2078 Bhadra", "2076 Chaitra", "2074 Ashwin"],
+      "frequency": 8
+    },
+    {
+      "chapter": "Application Layer",
+      "text": "Explain why Domain Name System (DNS) is hierarchical and distributed in nature. Differentiate between Iterative DNS query and Recursive DNS query with a step-by-step resolution diagram for www.facebook.com. What is the role of a proxy server and web caching?",
+      "marks": "8",
+      "years": ["2082 Bhadra", "2081 Baishakh", "2080 Bhadra", "2080 Baishakh", "2079 Bhadra", "2078 Bhadra", "2076 Ashwin", "2073 Chaitra"],
+      "frequency": 8
+    },
+    {
+      "chapter": "Network Security and Cryptography",
+      "text": "Describe the CIA (Confidentiality, Integrity, Availability) security principle. Explain the RSA public-key cryptographic algorithm step-by-step. Encrypt the plaintext word 'virus' (or 'hacker', 'MACHINE') using RSA given prime numbers p, q, and encryption key e.",
+      "marks": "8",
+      "years": ["2082 Bhadra", "2081 Baishakh", "2080 Bhadra", "2080 Baishakh", "2079 Bhadra", "2078 Bhadra", "2076 Chaitra", "2074 Ashwin"],
+      "frequency": 8
+    },
+    {
+      "chapter": "Network Layer and IP Addressing",
+      "text": "What are the features of the IPv6 base header compared to the IPv4 header? Explain IPv4 to IPv6 transition mechanisms: Dual Stack, Tunneling (6to4, 4to6, configured tunnels), and Network Address Translation - Protocol Translation (NAT-PT).",
+      "marks": "8",
+      "years": ["2082 Bhadra", "2081 Baishakh", "2080 Bhadra", "2080 Baishakh", "2079 Bhadra", "2078 Bhadra", "2076 Baisakh"],
+      "frequency": 7
+    },
+    {
+      "chapter": "Routing Protocols",
+      "text": "Differentiate between Distance Vector Routing and Link State Routing algorithms. Explain the working principle of Routing Information Protocol (RIP) with its timers. What is the Count-to-Infinity problem in distance vector routing and how is it resolved using Split Horizon with Poison Reverse?",
+      "marks": "8",
+      "years": ["2082 Bhadra", "2081 Baishakh", "2080 Bhadra", "2079 Bhadra", "2078 Bhadra", "2076 Chaitra", "2074 Ashwin"],
+      "frequency": 7
+    },
+    {
+      "chapter": "Physical Layer and Network Media",
+      "text": "What factors are considered when selecting transmission media? Explain the construction, propagation characteristics, advantages, and disadvantages of Optical Fiber cables (Single-mode vs Multi-mode). Compare FDM, TDM, and WDM multiplexing techniques.",
+      "marks": "8",
+      "years": ["2082 Bhadra", "2081 Baishakh", "2080 Bhadra", "2080 Baishakh", "2078 Bhadra", "2076 Ashwin", "2073 Shrawan"],
+      "frequency": 7
+    },
+    {
+      "chapter": "Data Link Layer and Local Area Networks",
+      "text": "What is a Virtual LAN (VLAN)? Explain the advantages of VLANs and how frame tagging is implemented according to the IEEE 802.1Q standard. Differentiate between static and dynamic VLANs.",
+      "marks": "6",
+      "years": ["2082 Bhadra", "2080 Bhadra", "2079 Bhadra", "2078 Bhadra", "2076 Chaitra", "2074 Ashwin"],
+      "frequency": 6
+    },
+    {
+      "chapter": "Application Layer",
+      "text": "Draw the architecture of an Electronic Mail system showing User Agents (UA), Message Transfer Agents (MTA), and Message Access Agents (MAA). Compare Post Office Protocol (POP3) and Internet Message Access Protocol (IMAP).",
+      "marks": "6",
+      "years": ["2082 Bhadra", "2081 Baishakh", "2080 Baishakh", "2078 Bhadra", "2076 Ashwin", "2073 Chaitra"],
+      "frequency": 6
+    },
+    {
+      "chapter": "Data Link Layer and Local Area Networks",
+      "text": "Compare Stop-and-Wait ARQ, Go-Back-N ARQ, and Selective Repeat ARQ sliding window protocols. Calculate maximum throughput and line efficiency for a given transmission rate, frame size, and round-trip propagation delay.",
+      "marks": "8",
+      "years": ["2080 Bhadra", "2079 Bhadra", "2078 Bhadra", "2076 Chaitra", "2074 Ashwin", "2071 Chaitra"],
+      "frequency": 6
+    },
+    {
+      "chapter": "Network Security and Cryptography",
+      "text": "Explain IP Security (IPSec) architecture: Authentication Header (AH) vs Encapsulating Security Payload (ESP), and Transport Mode vs Tunnel Mode. Differentiate between Packet-Filtering Firewalls and Application-Level Gateways.",
+      "marks": "6",
+      "years": ["2082 Bhadra", "2081 Baishakh", "2080 Bhadra", "2078 Bhadra", "2076 Baisakh", "2073 Shrawan"],
+      "frequency": 6
+    },
+    {
+      "chapter": "Data Link Layer and Local Area Networks",
+      "text": "Explain the Medium Access Control (MAC) protocol CSMA/CD used in Ethernet and CSMA/CA used in IEEE 802.11 wireless networks. Why is collision detection not feasible in wireless transmissions?",
+      "marks": "6",
+      "years": ["2081 Baishakh", "2080 Baishakh", "2079 Bhadra", "2078 Bhadra", "2076 Ashwin", "2072 Kartik"],
+      "frequency": 6
+    },
+    {
+      "chapter": "Network Layer and IP Addressing",
+      "text": "Explain how the Address Resolution Protocol (ARP) resolves an IP address to a physical MAC address with request and reply frame structures. What is the role of ICMP and how is it used in ping and traceroute diagnostics?",
+      "marks": "6",
+      "years": ["2082 Bhadra", "2080 Bhadra", "2079 Bhadra", "2076 Chaitra", "2074 Ashwin"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Application Layer",
+      "text": "Explain HTTP request methods (GET, POST, PUT, DELETE) and HTTP status code categories (2xx, 3xx, 4xx, 5xx). Compare persistent HTTP with pipelining versus non-persistent HTTP connections.",
+      "marks": "6",
+      "years": ["2081 Baishakh", "2080 Bhadra", "2079 Bhadra", "2078 Bhadra", "2075 Bhadra"],
+      "frequency": 5
+    }
+  ]
+}

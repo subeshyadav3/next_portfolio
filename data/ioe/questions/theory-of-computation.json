@@ -1,0 +1,127 @@
+{
+  "subject": "Theory of Computation",
+  "generated": "2026-09-09",
+  "chapters": [
+    "Introduction to Theory of Computation",
+    "Finite Automata and Regular Expressions",
+    "Context Free Grammar and Languages",
+    "Pushdown Automata",
+    "Turing Machine",
+    "Undecidability and Intractability",
+    "Computational Complexity"
+  ],
+  "questions": [
+    {
+      "chapter": "Turing Machine",
+      "text": "Design a Turing Machine that recognizes the language $L = \\{a^n b^n c^n \\mid n \\ge 1\\}$ (or $L = \\{a^n b^n c^n d^n \\mid n \\ge 0\\}$). Show the transition table, state diagram, and trace how the input string $w = aaabbbccc$ is processed and accepted by your machine.",
+      "marks": "6",
+      "years": ["2082 Chaitra", "2082 Kartik", "2081 Chaitra", "2078 Chaitra", "2076 Chaitra", "2074 Chaitra"],
+      "frequency": 6
+    },
+    {
+      "chapter": "Pushdown Automata",
+      "text": "Define Instantaneous Description (ID) of a Pushdown Automaton (PDA). Design a PDA to accept the language $L = \\{a^m b^n \\mid m, n > 0 \\text{ and } m \\ge n\\}$ (or $L = \\{w c w^R \\mid w \\in \\{a, b\\}^*\\}$). Show how your design recognizes the input string $w = aaaaabbb$.",
+      "marks": "5",
+      "years": ["2082 Chaitra", "2082 Kartik", "2081 Chaitra", "2079 Chaitra", "2077 Magh", "2075 Chaitra"],
+      "frequency": 6
+    },
+    {
+      "chapter": "Finite Automata and Regular Expressions",
+      "text": "Design a DFA over $\\Sigma = \\{0, 1\\}$ that accepts all strings containing an even number of 0's and odd number of 1's (or number of 1's multiple of 3 and number of 0's multiple of 2). Verify your design by tracing the transition sequence for $w = 1010111001$.",
+      "marks": "4",
+      "years": ["2082 Chaitra", "2082 Kartik", "2081 Chaitra", "2078 Chaitra", "2076 Baisakh", "2073 Chaitra"],
+      "frequency": 6
+    },
+    {
+      "chapter": "Finite Automata and Regular Expressions",
+      "text": "Explain how to minimize the states of a DFA using the table filling algorithm (equivalence theorem). Convert a given NFA with $\\epsilon$-transitions to an equivalent DFA and minimize the resulting DFA.",
+      "marks": "6",
+      "years": ["2082 Chaitra", "2082 Kartik", "2081 Chaitra", "2079 Chaitra", "2076 Chaitra", "2074 Chaitra"],
+      "frequency": 6
+    },
+    {
+      "chapter": "Context Free Grammar and Languages",
+      "text": "Convert the given Context-Free Grammar (CFG) into Chomsky Normal Form (CNF) or Greibach Normal Form (GNF). Step-by-step eliminate $\\epsilon$-productions, unit productions, and useless symbols.",
+      "marks": "5",
+      "years": ["2082 Kartik", "2081 Chaitra", "2079 Chaitra", "2077 Magh", "2075 Chaitra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Finite Automata and Regular Expressions",
+      "text": "State the Pumping Lemma for regular languages. Use the pumping lemma to prove that the language $L = \\{a^p \\mid p \\text{ is a prime number}\\}$ or $L = \\{0^n 1^n \\mid n \\ge 0\\}$ is not regular.",
+      "marks": "4",
+      "years": ["2082 Chaitra", "2081 Chaitra", "2078 Chaitra", "2076 Baisakh", "2074 Chaitra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Introduction to Theory of Computation",
+      "text": "Define equivalence relation and partial order relation. Using mathematical induction, show that: (a) for every integer $n \\ge 0$, $4^{2n+1} + 3^{n+2}$ is a multiple of 13, and (b) $1^3 + 2^3 + \\dots + n^3 = \\left[\\frac{n(n+1)}{2}\\right]^2$.",
+      "marks": "4",
+      "years": ["2082 Chaitra", "2082 Kartik", "2081 Chaitra", "2079 Chaitra", "2076 Chaitra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Undecidability and Intractability",
+      "text": "State and explain the Church-Turing Thesis. State the Halting Problem of Turing Machines and prove by contradiction that the halting problem is undecidable. Explain the encoding process of a Universal Turing Machine (UTM).",
+      "marks": "4",
+      "years": ["2082 Chaitra", "2082 Kartik", "2081 Chaitra", "2078 Chaitra", "2075 Chaitra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Turing Machine",
+      "text": "Design a Turing Machine that computes the arithmetic function $f(x) = 2x$ (or predecessor/successor function). Explain the architecture and computational power of multi-tape Turing Machines and Turing Machines with storage in states.",
+      "marks": "6",
+      "years": ["2082 Chaitra", "2082 Kartik", "2081 Chaitra", "2077 Magh", "2074 Chaitra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Finite Automata and Regular Expressions",
+      "text": "Write regular expressions for: (a) strings containing odd number of 1's followed by even number of 0's or vice versa, and (b) strings containing at least one 'a' and two 'b's over alphabet $\\Sigma = \\{a, b\\}$. Obtain a regular expression from a given state transition diagram using Arden's Theorem.",
+      "marks": "4",
+      "years": ["2082 Chaitra", "2082 Kartik", "2081 Chaitra", "2079 Chaitra", "2076 Baisakh"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Computational Complexity",
+      "text": "Define space and time complexity for Turing Machines. Explain the complexity classes P, NP, NP-Complete, and NP-Hard. Explain why the Boolean Satisfiability problem (SAT) is NP-Complete by Cook's Theorem.",
+      "marks": "4",
+      "years": ["2082 Kartik", "2081 Chaitra", "2078 Chaitra", "2076 Chaitra", "2073 Chaitra"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Context Free Grammar and Languages",
+      "text": "Prove that Context-Free Languages (CFLs) are closed under Union, Concatenation, and Kleene Star, but are NOT closed under Intersection and Complementation. Give suitable proofs and counterexamples.",
+      "marks": "4",
+      "years": ["2082 Chaitra", "2082 Kartik", "2078 Chaitra", "2075 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Introduction to Theory of Computation",
+      "text": "Using rules of inference and the principle of resolution in propositional logic, prove that the premises 'If it is raining then Prem has his umbrella', 'Prem does not have his umbrella or he does not get wet', and 'It is raining or Prem does not get wet' logically imply 'Prem does not get wet'.",
+      "marks": "3",
+      "years": ["2082 Chaitra", "2081 Chaitra", "2077 Magh", "2074 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Turing Machine",
+      "text": "Design a Turing Machine that reads an arbitrary binary string on its tape and outputs its 1's complement (or reverses a given string $w$ over alphabet $\\{a, b\\}$). Trace the execution step-by-step.",
+      "marks": "4",
+      "years": ["2082 Chaitra", "2082 Kartik", "2078 Chaitra", "2075 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Undecidability and Intractability",
+      "text": "Differentiate between Recursive languages and Recursively Enumerable (RE) languages. Prove that if a language $L$ and its complement $\\bar{L}$ are both recursively enumerable, then $L$ is recursive.",
+      "marks": "4",
+      "years": ["2082 Kartik", "2081 Chaitra", "2079 Chaitra", "2076 Chaitra"],
+      "frequency": 4
+    },
+    {
+      "chapter": "Introduction to Theory of Computation",
+      "text": "Explain how tokens are generated by the lexical analyzer phase of a compiler using Finite Automata. Describe how a syntax analyzer uses Context-Free Grammars to construct parse trees for expressions like $r = a + b * c / (d * e)$.",
+      "marks": "5",
+      "years": ["2082 Chaitra", "2082 Kartik", "2081 Chaitra", "2078 Chaitra"],
+      "frequency": 4
+    }
+  ]
+}

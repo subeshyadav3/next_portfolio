@@ -1,0 +1,184 @@
+{
+  "subject": "Distributed and Cloud Computing",
+  "subjectCode": "ENCT 411",
+  "questions": [
+    {
+      "chapter": "Consistency and Replication",
+      "text": "State and explain Brewer's CAP Theorem (Consistency, Availability, Partition Tolerance). Explain why a distributed system can guarantee at most two of the three properties under network partitions. Compare Strong Consistency, Sequential Consistency, and Eventual Consistency.",
+      "marks": "10",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2080 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Communication in Distributed Systems",
+      "text": "Explain the architecture of Remote Procedure Call (RPC) and Java RMI. Describe the roles of Client Stub, Server Stub, Parameter Marshalling, and Dispatcher. Compare At-Least-Once, At-Most-Once, and Exactly-Once delivery semantics.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Cloud Computing Models and Architecture",
+      "text": "Compare Cloud Service Models: Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS) with shared responsibility architectural diagrams. Compare Public, Private, Hybrid, and Community cloud deployment models.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2080 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Virtualization and Resource Management",
+      "text": "Explain Cloud Virtualization techniques: Full Virtualization, Paravirtualization, and Hardware-Assisted Virtualization. Compare Hypervisor-based Virtual Machines (VMs) with OS-level Containerization (Docker) in terms of isolation, resource overhead, startup latency, and density.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2080 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Communication in Distributed Systems",
+      "text": "What is a Web Service? Why is RESTful web service more popular than SOAP-based web service in today's distributed application development? Explain with real-world examples.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2076 Bhadra",
+        "2073 Magh"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Characterization of Distributed Systems",
+      "text": "How is Enterprise Application Integration different from legacy middleware systems? Explain the benefits of N-tier distributed architecture over monolithic architecture in software development.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2076 Bhadra",
+        "2073 Magh"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Communication in Distributed Systems",
+      "text": "Describe the mechanism of database connection pooling in high-traffic enterprise applications. What are the major considerations for creating and sizing an efficient connection pool?",
+      "marks": "7",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2076 Bhadra",
+        "2075 Bhadra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Communication in Distributed Systems",
+      "text": "What is Inversion of Control (IoC)? Explain the different techniques how Dependency Injection (DI) is implemented in distributed application frameworks.",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2076 Bhadra",
+        "2073 Magh"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Communication in Distributed Systems",
+      "text": "Explain Service-Oriented Architecture (SOA) concepts and design principles. Compare Service-Oriented Architecture with Microservices architecture in distributed cloud deployments.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2076 Bhadra",
+        "2075 Bhadra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Communication in Distributed Systems",
+      "text": "Explain Enterprise Java Beans (EJB) architecture with its importance. List out the differences between Session Beans (Stateless, Stateful, Singleton) and Message-Driven Beans.",
+      "marks": "7",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2076 Bhadra",
+        "2075 Bhadra"
+      ],
+      "frequency": 4
+    },
+    {
+      "chapter": "Synchronization and Clock Synchronization",
+      "text": "Explain Clock Synchronization in distributed systems: Lamport's Logical Clocks and Vector Clocks. Prove that if event $a$ happened-before event $b$ ($a \\to b$), then $C(a) < C(b)$.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2080 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Synchronization and Clock Synchronization",
+      "text": "Explain Election Algorithms in distributed systems: (a) The Bully Algorithm, and (b) The Ring Election Algorithm. Trace message exchanges and state updates when the current coordinator node crashes.",
+      "marks": "7",
+      "years": [
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Fault Tolerance and Consensus",
+      "text": "Explain the Two-Phase Commit (2PC) atomic transaction protocol in distributed systems. Describe the Voting Phase, Commit Phase, and coordinator recovery mechanisms under failure.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Cloud Storage and Big Data Frameworks",
+      "text": "Explain the architecture of the Hadoop Distributed File System (HDFS): NameNode, DataNodes, Secondary NameNode, chunk block replication ($128\\text{ MB}$), and rack awareness. Explain the MapReduce distributed computational model with WordCount dataflow.",
+      "marks": "10",
+      "years": [
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3
+    },
+    {
+      "chapter": "Cloud Computing Models and Architecture",
+      "text": "Write short notes on: (a) Edge Computing versus Cloud Computing, (b) Facade Design Pattern in enterprise tiers, (c) Web 3.0 and data decentralization.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra"
+      ],
+      "frequency": 2
+    },
+    {
+      "chapter": "Virtualization and Resource Management",
+      "text": "Explain Elasticity and Auto-Scaling in cloud infrastructure. Differentiate between Horizontal Scaling (Scale-Out/Scale-In) and Vertical Scaling (Scale-Up/Scale-Down). Describe live virtual machine migration.",
+      "marks": "7",
+      "years": [
+        "2081 Chaitra",
+        "2080 Chaitra"
+      ],
+      "frequency": 2
+    }
+  ]
+}

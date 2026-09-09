@@ -1,0 +1,129 @@
+{
+  "subject": "Database Management System",
+  "generated": "2026-09-09",
+  "chapters": [
+    "Introduction to Database Systems",
+    "Data Models and the Relational Database Model",
+    "Integrity Constraints and Relational Algebra",
+    "SQL (Structured Query Language)",
+    "Database Design and Normalization",
+    "Transaction Processing and Concurrency Control",
+    "Crash Recovery",
+    "Storage and File Structures: Indexing and Hashing",
+    "Query Processing and Optimization"
+  ],
+  "questions": [
+    {
+      "chapter": "Data Models and the Relational Database Model",
+      "text": "Design an Entity-Relationship (ER) diagram for a Hospital Management System (or University / E-Commerce system) with given requirements. Identify strong and weak entity sets, primary keys, composite and multivalued attributes, cardinality ratios (1:1, 1:N, M:N), and participation constraints. Convert the ER diagram into relational schemas.",
+      "marks": "10",
+      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Baisakh", "2076 Bhadra"],
+      "frequency": 8
+    },
+    {
+      "chapter": "Database Design and Normalization",
+      "text": "Define Functional Dependency and Attribute Closure ($X^+$). Given relation schema $R(A, B, C, D, E)$ with functional dependencies $F = \\{A \\to B, BC \\to D, E \\to C, D \\to A\\}$, find all candidate keys of $R$. Determine whether the decomposition of $R$ into $R_1(A, B, C)$ and $R_2(C, D, E)$ is lossless-join and dependency-preserving. Differentiate 3NF and BCNF.",
+      "marks": "10",
+      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Baisakh", "2075 Bhadra"],
+      "frequency": 8
+    },
+    {
+      "chapter": "Integrity Constraints and Relational Algebra",
+      "text": "Consider the relational schema: Student(sid, name, age, major, dept_id), Course(cid, title, credits, dept_id), Enrollment(sid, cid, semester, year, grade), Professor(pid, name, salary, dept_id). Write relational algebra expressions for: (a) Find sid and name of students enrolled in 'Database Systems', (b) List cid and title of courses with credits > 4 in 'Computer Science', (c) Increase salary of professors in 'Mathematics' by 15%.",
+      "marks": "8",
+      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Baisakh", "2076 Bhadra"],
+      "frequency": 8
+    },
+    {
+      "chapter": "SQL (Structured Query Language)",
+      "text": "Given the relational schemas: Employee(empid, name, address, title, deptid), Project(pid, pname, budget, location), Works_On(empid, pid, responsibility, duration), Payment(title, salary). Write SQL queries to: (a) Create the tables with primary and foreign key constraints, (b) Find employees working on 'ICT' project earning > 20K, (c) Count projects running > 2 years, (d) Update employee salaries based on salary slabs.",
+      "marks": "8",
+      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Baisakh", "2074 Ashwin"],
+      "frequency": 8
+    },
+    {
+      "chapter": "Transaction Processing and Concurrency Control",
+      "text": "Explain ACID properties (Atomicity, Consistency, Isolation, Durability) of database transactions with concrete examples. Draw the transaction lifecycle state transition diagram (Active, Partially Committed, Committed, Failed, Aborted).",
+      "marks": "6",
+      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Baisakh", "2075 Bhadra"],
+      "frequency": 8
+    },
+    {
+      "chapter": "Transaction Processing and Concurrency Control",
+      "text": "Explain the Two-Phase Locking (2PL) protocol: Basic 2PL, Strict 2PL, and Rigorous 2PL. Prove how 2PL guarantees conflict serializability. What are the deadlock prevention schemes: Wait-Die scheme and Wound-Wait scheme based on transaction timestamps?",
+      "marks": "8",
+      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Bhadra", "2074 Ashwin"],
+      "frequency": 8
+    },
+    {
+      "chapter": "Crash Recovery",
+      "text": "Explain Log-Based Recovery techniques: Immediate Database Modification vs Deferred Database Modification. What is checkpointing in database recovery? Describe how the recovery manager uses checkpoints and log records to execute UNDO and REDO operations after a system crash.",
+      "marks": "8",
+      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Baisakh", "2073 Chaitra"],
+      "frequency": 8
+    },
+    {
+      "chapter": "Query Processing and Optimization",
+      "text": "What are the different steps involved in query processing? Explain how an SQL query is translated into relational algebra and an initial query evaluation tree. Explain query optimization approaches using equivalence rules and cost estimation.",
+      "marks": "8",
+      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Bhadra"],
+      "frequency": 7
+    },
+    {
+      "chapter": "Storage and File Structures: Indexing and Hashing",
+      "text": "What is indexing in databases? Differentiate between Primary Index, Clustering Index, and Secondary Index, and compare Dense vs Sparse indices. Explain the structure of B+ Trees and why B+ Trees are preferred over binary search trees for disk storage.",
+      "marks": "8",
+      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Baisakh"],
+      "frequency": 7
+    },
+    {
+      "chapter": "Introduction to Database Systems",
+      "text": "Explain the Three-Schema Architecture (Internal/Physical, Conceptual, External/View levels) of DBMS. Define Data Independence and differentiate between Logical Data Independence and Physical Data Independence with examples.",
+      "marks": "6",
+      "years": ["2082 Kartik", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Baisakh", "2074 Ashwin"],
+      "frequency": 7
+    },
+    {
+      "chapter": "Integrity Constraints and Relational Algebra",
+      "text": "Explain Referential Integrity constraints in relational databases. What are the different possibilities and actions (RESTRICT, CASCADE, SET NULL, SET DEFAULT) on foreign keys when an update or delete violation occurs?",
+      "marks": "6",
+      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Bhadra", "2073 Chaitra"],
+      "frequency": 7
+    },
+    {
+      "chapter": "Transaction Processing and Concurrency Control",
+      "text": "Define Serializability. Differentiate between Conflict Serializability and View Serializability. Construct the precedence graph (serialization graph) for a given concurrent transaction schedule and determine if it is conflict serializable.",
+      "marks": "6",
+      "years": ["2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2078 Chaitra", "2076 Baisakh", "2075 Bhadra"],
+      "frequency": 6
+    },
+    {
+      "chapter": "Storage and File Structures: Indexing and Hashing",
+      "text": "What is the purpose of using RAID? Compare RAID Level 0 (Striping), RAID Level 1 (Mirroring), RAID Level 5 (Distributed Parity), and RAID Level 10 (Striped Mirrors) in terms of storage efficiency, performance, and fault tolerance.",
+      "marks": "6",
+      "years": ["2081 Ashwin", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Bhadra", "2074 Ashwin"],
+      "frequency": 6
+    },
+    {
+      "chapter": "Data Models and the Relational Database Model",
+      "text": "Define and differentiate between Super Key, Candidate Key, Primary Key, Alternate Key, and Foreign Key with an illustrative schema. What is a surrogate key?",
+      "marks": "4",
+      "years": ["2082 Kartik", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2076 Baisakh", "2073 Chaitra"],
+      "frequency": 6
+    },
+    {
+      "chapter": "Introduction to Database Systems",
+      "text": "Differentiate between Centralized and Distributed Database Systems. Explain data fragmentation (Horizontal, Vertical, and Mixed fragmentation) and data replication schemes.",
+      "marks": "6",
+      "years": ["2082 Kartik", "2081 Ashwin", "2079 Chaitra", "2078 Chaitra", "2076 Baisakh"],
+      "frequency": 5
+    },
+    {
+      "chapter": "Introduction to Database Systems",
+      "text": "Explain Data Warehouse architecture and its key characteristics: subject-oriented, integrated, time-variant, and non-volatile. Differentiate between OLTP (Online Transaction Processing) and OLAP (Online Analytical Processing).",
+      "marks": "6",
+      "years": ["2082 Kartik", "2081 Ashwin", "2080 Chaitra", "2078 Chaitra", "2076 Bhadra"],
+      "frequency": 5
+    }
+  ]
+}
