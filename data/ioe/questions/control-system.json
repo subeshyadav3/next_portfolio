@@ -201,6 +201,159 @@
         "2078 Kartik"
       ],
       "frequency": 2
+    },
+    {
+      "chapter": "System Transfer Function and Responses",
+      "text": "Explain Mason's Gain Formula $T = \\frac{1}{\\Delta}\\sum P_k \\Delta_k$. For a given signal flow graph with multiple forward paths and feedback loops, determine the overall closed-loop transfer function $\\frac{C(s)}{R(s)}$.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2082 Shrawan",
+        "2080 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Mason rule computes transfer function directly from SFG without algebraic reduction. Delta = 1 - sum(all individual loop gains) + sum(gain products of two non-touching loops) - sum(gain products of three non-touching loops). P_k is gain of k-th forward path; Delta_k is cofactor of path k formed by eliminating loops that touch path k."
+    },
+    {
+      "chapter": "System Transfer Function and Responses",
+      "text": "Derive the unit step response of a standard second-order underdamped control system $c(t) = 1 - \\frac{e^{-\\zeta \\omega_n t}}{\\sqrt{1 - \\zeta^2}}\\sin(\\omega_d t + \\phi)$. Formulate expressions for Rise Time ($t_r$), Peak Time ($t_p$), Maximum Percentage Overshoot ($M_p$), and Settling Time ($t_s$).",
+      "marks": "8",
+      "years": [
+        "2082 Shrawan",
+        "2081 Bhadra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Standard second order: T(s) = omega_n^2 / (s^2 + 2 zeta omega_n s + omega_n^2). Underdamped (0 < zeta < 1) has complex poles -zeta omega_n +/- j omega_d with damped frequency omega_d = omega_n sqrt(1 - zeta^2). Step response derived via partial fractions. Peak time t_p = pi / omega_d; Rise time t_r = (pi - phi) / omega_d; Max overshoot Mp = exp(-pi zeta / sqrt(1 - zeta^2)) * 100%; Settling time t_s = 4 / (zeta omega_n) for 2% criterion."
+    },
+    {
+      "chapter": "Stability",
+      "text": "State the Routh-Hurwitz Stability Criterion. Determine the stability of a closed-loop system having characteristic equation $s^6 + 2s^5 + 8s^4 + 12s^3 + 20s^2 + 16s + 16 = 0$. Explain how special cases (first column element zero, entire row zero) are handled using auxiliary polynomials.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Necessary condition: all coefficients positive. Construct Routh array. Special Case 1: First column element is zero -> replace with small epsilon > 0 and take limit epsilon -> 0. Special Case 2: Entire row of zeros -> indicates symmetric roots on j-omega axis; form auxiliary polynomial A(s) from previous row, differentiate dA/ds, and replace zero row with coefficients to continue."
+    },
+    {
+      "chapter": "Root Locus Techniques",
+      "text": "Explain the construction rules of the Root Locus: real-axis segments, asymptotes centroid $\\sigma_a = \\frac{\\sum P - \\sum Z}{n - m}$, angle $\\theta_a = \\frac{(2q+1)180^\\circ}{n - m}$, breakaway/break-in points, and $j\\omega$-axis crossing. Sketch the root locus for $G(s)H(s) = \\frac{K}{s(s+2)(s+4)}$.",
+      "marks": "8",
+      "years": [
+        "2082 Shrawan",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Plots closed-loop poles as K varies from 0 to infty based on angle condition angle(GH) = 180(2k+1) and magnitude condition |GH| = 1. Poles at s = 0, -2, -4 (n=3, m=0). Centroid sigma_a = (0 - 2 - 4)/3 = -2. Asymptote angles: 60, 180, 300 deg. Breakaway point from dK/ds = 0: s = -0.845. j-omega crossing via Routh array gives K_crit = 48 at omega = sqrt(8) rad/s."
+    },
+    {
+      "chapter": "Frequency Response Techniques",
+      "text": "Define Gain Margin ($GM$) and Phase Margin ($PM$). Sketch the asymptotic Bode magnitude and phase plots for open-loop transfer function $G(s) = \\frac{200}{s(s+2)(s+10)}$, and determine gain crossover frequency $\\omega_{gc}$, phase crossover frequency $\\omega_{pc}$, $GM$, and $PM$.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2082 Shrawan",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Bode plot plots 20 log|G| and angle(G) against log omega. G(s) = 10 / [s (1 + s/2)(1 + s/10)]. Corner frequencies at omega = 2 and 10 rad/s. Initial slope -20 dB/dec passing through 20 log(10) at omega=1. Slope changes to -40 dB/dec at omega=2, and -60 dB/dec at omega=10. Phase crossover omega_pc is where angle = -180 deg; GM = -20 log|G(j omega_pc)|. Gain crossover omega_gc is where |G| = 1 (0 dB); PM = 180 + angle(G(j omega_gc))."
+    },
+    {
+      "chapter": "Frequency Response Techniques",
+      "text": "State and explain the Nyquist Stability Criterion $Z = N + P$. Sketch the Nyquist plot for open-loop transfer function $G(s)H(s) = \\frac{K}{s(s+1)(s+2)}$ and find the range of $K$ for closed-loop stability.",
+      "marks": "8",
+      "years": [
+        "2082 Baishakh",
+        "2081 Bhadra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Maps closed Nyquist D-contour enclosing right-half s-plane into GH-plane. N = number of clockwise encirclements of (-1 + j0). P = number of open-loop poles in RHP (here P=0). For stability Z = N + P = 0 => N = 0 (no encirclement). As s -> j omega, GH crosses negative real axis at omega_pc = sqrt(2) rad/s with intercept -K/6. For stability -K/6 > -1 => 0 < K < 6."
+    },
+    {
+      "chapter": "Performance Specifications and Compensation Design",
+      "text": "Explain Lead, Lag, and Lag-Lead Compensators. Compare their transfer functions, pole-zero placements on the s-plane, and their relative effects on transient response speed and steady-state accuracy.",
+      "marks": "8",
+      "years": [
+        "2082 Shrawan",
+        "2080 Chaitra",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Lead compensator D(s) = (s + z)/(s + p) with z < p; adds positive phase lead, increases phase margin, widens bandwidth, speeding up transient rise/settling time. Lag compensator has p < z; adds high gain at low frequencies, reducing steady-state error without altering transient response. Lag-lead combines both: lag section improves steady-state accuracy, lead section preserves stability and transient speed."
+    },
+    {
+      "chapter": "Performance Specifications and Compensation Design",
+      "text": "Explain the Proportional-Integral-Derivative (PID) Controller: $u(t) = K_p e(t) + K_i \\int e(t) dt + K_d \\frac{de(t)}{dt}$. Describe the operational impact of P, I, and D terms on rise time, peak overshoot, settling time, and steady-state error. Explain Ziegler-Nichols frequency response tuning method.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "P term reduces rise time and steady-state error but increases overshoot. I term eliminates steady-state offset (drives e -> 0) but increases overshoot and settling time. D term adds anticipatory damping, reducing peak overshoot and settling time. Ziegler-Nichols tuning: increase K until system reaches sustained oscillation at ultimate gain K_u with period T_u; set K_p = 0.6 K_u, T_i = 0.5 T_u, T_d = 0.125 T_u."
+    },
+    {
+      "chapter": "State Space Analysis",
+      "text": "Define State, State Variables, State Vector, and State Space Representation. Obtain the state space model ($\\dot{x} = Ax + Bu, y = Cx + Du$) in Controllable Canonical Form and Observable Canonical Form for transfer function $T(s) = \\frac{s + 3}{s^3 + 5s^2 + 8s + 6}$.",
+      "marks": "8",
+      "years": [
+        "2082 Shrawan",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "State space provides time-domain internal variable formulation for multi-input multi-output systems. Controllable canonical form: matrix A has companion structure with negative denominator coefficients [-6, -8, -5] in bottom row, 1s on superdiagonal; B = [0, 0, 1]^T; C = [3, 1, 0] containing numerator coefficients. Observable form is dual transpose."
+    },
+    {
+      "chapter": "State Space Analysis",
+      "text": "Define the State Transition Matrix $\\Phi(t) = e^{At} = \\mathcal{L}^{-1}\\{(sI - A)^{-1}\\}$. Derive its mathematical properties and compute $\\Phi(t)$ for system matrix $A = \\begin{bmatrix} 0 & 1 \\\\ -2 & -3 \\end{bmatrix}$.",
+      "marks": "8",
+      "years": [
+        "2082 Baishakh",
+        "2081 Bhadra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Phi(t) maps initial state x(0) to future state x(t): x(t) = Phi(t) x(0). Properties: Phi(0) = I, Phi(t1 + t2) = Phi(t1)*Phi(t2), [Phi(t)]^(-1) = Phi(-t). Calculation: (sI - A) = [[s, -1], [2, s+3]]; det = s^2 + 3s + 2 = (s+1)(s+2). (sI - A)^(-1) = (1/det) * [[s+3, 1], [-2, s]]. Inverse Laplace yields Phi(t) = [[2e^(-t) - e^(-2t), e^(-t) - e^(-2t)], [-2e^(-t) + 2e^(-2t), -e^(-t) + 2e^(-2t)]]."
+    },
+    {
+      "chapter": "State Space Analysis",
+      "text": "Define Controllability and Observability of LTI systems. State Kalman's Rank Conditions for Controllability matrix $U = [B \\ AB \\ A^2B \\dots A^{n-1}B]$ and Observability matrix $V = [C^T \\ A^T C^T \\ \\dots \\ (A^T)^{n-1} C^T]$. Test controllability and observability for a given system.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2082 Shrawan",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "System is completely state controllable if any initial state x(0) can be steered to any desired final state x(t1) in finite time t1 by unconstrained control vector u(t). Condition: rank(U) = n. System is completely observable if any initial state x(0) can be uniquely reconstructed from observation of output y(t) over finite interval [0, t1]. Condition: rank(V) = n. Evaluate determinant: non-zero determinant implies full rank n."
     }
+  ],
+  "chapters": [
+    "Control System Background",
+    "Component Modeling",
+    "System Transfer Function and Responses",
+    "Stability",
+    "Root Locus Techniques",
+    "Frequency Response Techniques",
+    "Performance Specifications and Compensation Design",
+    "State Space Analysis"
   ]
 }

@@ -290,6 +290,171 @@
       "chapter": "Soil Compaction",
       "importance": "High",
       "difficulty": "Medium"
+    },
+    {
+      "chapter": "Phase Relationship, Index Property and Soil Classification",
+      "text": "Derive the fundamental Three-Phase Soil Relationships: $e = \\frac{w G_s}{S_r}$, $\\gamma = \\frac{G_s + S_r e}{1 + e}\\gamma_w$, and $\\gamma_d = \\frac{\\gamma}{1 + w}$. Given sample measurements, compute void ratio ($e$), porosity ($n$), dry unit weight ($\\gamma_d$), and degree of saturation ($S_r$).",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Three-phase diagram: Solids (Vs=1, Ws=Gs gamma_w), Water (Vw=w Gs, Ww=w Gs gamma_w), Air (Va = e - w Gs, Wa=0). Total volume V = 1 + e. Total weight W = Gs gamma_w (1 + w). Bulk unit weight gamma = W/V = (Gs + Sr e) gamma_w / (1 + e). Dry unit weight gamma_d = Ws / V = Gs gamma_w / (1 + e) = gamma / (1 + w). Degree of saturation Sr = Vw / Vv = w Gs / e => e Sr = w Gs. Porosity n = e / (1 + e)."
+    },
+    {
+      "chapter": "Phase Relationship, Index Property and Soil Classification",
+      "text": "Explain Soil Consistency and Atterberg Limits: Liquid Limit ($LL$), Plastic Limit ($PL$), and Shrinkage Limit ($SL$). Define Plasticity Index ($PI$), Liquidity Index ($LI$), and Consistency Index ($CI$). Classify soils using Casagrande's Plasticity Chart ($A$-line equation $PI = 0.73(LL - 20)$).",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Atterberg limits mark boundary moisture contents between solid, semi-solid, plastic, and liquid states. LL determined by Casagrande cup (25 blows) or cone penetrometer. PL determined by rolling 3mm threads without crumbling. Plasticity Index PI = LL - PL. Liquidity Index LI = (w - PL)/PI. Consistency Index CI = (LL - w)/PI. Casagrande chart plots PI vs LL: A-line PI = 0.73(LL - 20) separates inorganic clays (above A-line: CL, CI, CH) from organic soils and silts (below A-line: ML, MI, MH)."
+    },
+    {
+      "chapter": "Soil Water, Permeability and Seepage Analysis",
+      "text": "Explain Darcy's Law for flow of water through porous soils ($v = k i$). Compare the Constant Head Permeability Test (for coarse soils) with the Falling Head Permeability Test (for fine-grained soils), deriving formulas for coefficient of permeability $k$.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Darcy law: discharge velocity v = k i, where i = h/L is hydraulic gradient. Discharge Q = k i A. Constant head test: maintains constant head h; Q collected in time t: k = Q L / (A h t). Falling head test: standpipe of area a connected to soil sample of area A; water level drops from h1 to h2 in time t: -a dh = k (h/L) A dt => k = (2.303 a L / A t) log10(h1 / h2). Constant head suited for sands/gravels; falling head suited for silts/clays."
+    },
+    {
+      "chapter": "Soil Water, Permeability and Seepage Analysis",
+      "text": "Explain Two-Dimensional Seepage and Flow Nets. Define Streamlines, Equipotential lines, Flow channels ($N_f$), and Potential drops ($N_d$). Derive the formula for seepage discharge $q = k H \\frac{N_f}{N_d}$ under a concrete weir and calculate the exit hydraulic gradient ($i_{exit}$).",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Governed by Laplace equation d^2 h/dx^2 + d^2 h/dz^2 = 0. Flow net is orthogonal grid of flow lines and equipotential lines forming curvilinear squares (Delta s = Delta l). Seepage discharge per channel Delta q = k Delta h Delta s / Delta l = k (H / N_d). Total seepage q = sum Delta q = k H (N_f / N_d). Exit gradient at downstream toe i_exit = Delta h / Delta l = (H / N_d) / Delta l, where Delta l is length of last field."
+    },
+    {
+      "chapter": "Soil Water, Permeability and Seepage Analysis",
+      "text": "Explain Critical Hydraulic Gradient ($i_c = \\frac{G_s - 1}{1 + e}$) and the Quick Sand Condition (Boiling). How is piping failure prevented downstream of hydraulic structures using graded inverted filters?",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Upward seepage exerts upward seepage force j = i * gamma_w counteracting effective submerged weight gamma'. When upward seepage pressure balances submerged weight: sigma' = gamma' z - i gamma_w z = 0 => i_c = gamma' / gamma_w = (Gs - 1) / (1 + e) approx 1.0. Soil loses all shear strength, behaving as liquid (boiling/quicksand). Leads to progressive erosion (piping). Prevented by sheet piles lengthening seepage path and inverted gravel filters satisfying Terzaghi filter criteria."
+    },
+    {
+      "chapter": "Soil Stresses",
+      "text": "Define Terzaghi's Effective Stress Principle ($\\sigma = \\sigma' + u$). Calculate total stress ($\\sigma$), pore water pressure ($u$), and effective stress ($\\sigma'$) profiles across depth in a stratified soil deposit with steady upward and downward seepage flow.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Total stress sigma is total load per unit area. Pore pressure u is hydrostatic pressure in water. Effective stress sigma' = sigma - u represents intergranular skeletal stress governing shear strength and consolidation. Under downward seepage, seepage force acts downward, increasing effective stress: sigma' = gamma' z + i gamma_w z. Under upward seepage, seepage force acts upward, reducing effective stress: sigma' = gamma' z - i gamma_w z."
+    },
+    {
+      "chapter": "Soil Stresses",
+      "text": "Explain Boussinesq's Theory for vertical stress distribution due to a concentrated surface point load $Q$: $\\sigma_z = \\frac{3Q}{2\\pi z^2}\\left[1 + (r/z)^2\\right]^{-5/2}$. Compare with Westergaard's theory for stratified soils and explain Newmark's Influence Chart.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Assumes elastic, homogeneous, isotropic semi-infinite half-space. Vertical stress sigma_z = (Q / z^2) * I_B, where I_B = (3/2pi) [1 + (r/z)^2]^(-5/2). Westergaard assumes non-isotropic soil with rigid horizontal laminations preventing lateral strain: I_W = (1/pi) [1 + 2(r/z)^2]^(-1.5). Newmark chart consists of concentric circles and radial lines with influence coefficient C = 1/(N*M); stress under irregular foundation sigma_z = C * N_blocks * q."
+    },
+    {
+      "chapter": "Soil Compaction",
+      "text": "Explain Soil Compaction. Compare the Standard Proctor Test with the Modified Proctor Test. Explain Optimum Moisture Content (OMC), Maximum Dry Density (MDD), Zero Air Voids Line ($ZAV$), and field compaction machinery.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Mechanical densification expelling air voids. Standard Proctor: 2.49 kg hammer dropped 305mm, 3 layers, 25 blows/layer (compactive energy ~593 kJ/m^3). Modified Proctor: 4.54 kg hammer dropped 457mm, 5 layers (energy ~2696 kJ/m^3); results in higher MDD and lower OMC. ZAV line represents 100% saturation: gamma_d = Gs gamma_w / (1 + w Gs). Field compaction: Sheepsfoot roller for cohesive clays; Smooth-wheel roller for granular bases; Pneumatic-tired for silts/sands."
+    },
+    {
+      "chapter": "Consolidation",
+      "text": "Derive Terzaghi's One-Dimensional Consolidation Differential Equation: $\\frac{\\partial u}{\\partial t} = c_v \\frac{\\partial^2 u}{\\partial z^2}$. State all assumptions and define Coefficient of Compressibility ($a_v$), Coefficient of Volume Compressibility ($m_v$), and Coefficient of Consolidation ($c_v$).",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Time-dependent expulsion of pore water from saturated clay under sustained load. Assumptions: 1D compression/flow, Darcy law holds, soil homogeneous/saturated, soil grains/water incompressible. Mass conservation on layer dz: (k/gamma_w) d^2u/dz^2 dz dt = -d V_v = -m_v dz du. Rearranging gives du/dt = c_v d^2u/dz^2, where c_v = k / (m_v gamma_w). a_v = -de / d sigma'. m_v = a_v / (1 + e_0)."
+    },
+    {
+      "chapter": "Consolidation",
+      "text": "Calculate Primary Consolidation Settlement of a clay stratum: $S_c = \\frac{C_c H_0}{1 + e_0}\\log_{10}\\left(\\frac{\\sigma_0' + \\Delta\\sigma'}{\\sigma_0'}\\right)$. Explain Taylor's Square Root of Time method and Casagrande's Logarithm of Time method for determining $c_v$.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Settlement equation derived from e vs log sigma' curve with compression index C_c = (e0 - e1)/log(sigma1/sigma0). Overconsolidated clay uses recompression index C_r. Taylor sqrt(t) method: plots dial reading vs sqrt(t); straight line drawn through origin, second line drawn with abscissas 1.15 times greater; intersection gives t_90; c_v = 0.848 d^2 / t_90. Casagrande log(t) method: determines d_0 and d_100 by tangents to find t_50; c_v = 0.197 d^2 / t_50."
+    },
+    {
+      "chapter": "Shear Strength",
+      "text": "State the Mohr-Coulomb Failure Criterion: $\\tau_f = c' + \\sigma' \\tan\\phi'$. Compare the Direct Shear Test, Unconfined Compression Test (UCT), and Vane Shear Test with their advantages, limitations, and drainage control.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Shear strength resists sliding failure. c' = cohesion, phi' = angle of internal friction. Direct shear test: split box (60x60mm); fast, simple for sands, but pre-determines horizontal failure plane and cannot control drainage or measure pore pressure. UCT: cylindrical cohesive specimen (sigma3 = 0); quick, gives undrained shear strength s_u = q_u / 2 for saturated clays. Vane shear: 4-blade vane rotated in-situ; torque T measures undrained cohesion c_u = T / [pi d^2 (h/2 + d/6)] for soft marine clays."
+    },
+    {
+      "chapter": "Shear Strength",
+      "text": "Describe the Triaxial Shear Test on soils. Contrast Consolidated-Drained (CD), Consolidated-Undrained (CU with pore pressure measurement), and Unconsolidated-Undrained (UU) test procedures. Sketch effective stress Mohr's circles and failure envelopes.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Cylindrical sample enclosed in rubber membrane inside pressurized fluid chamber. Stage 1: cell pressure sigma_3 applied. Stage 2: deviator stress Delta sigma = sigma_1 - sigma_3 applied to failure. UU test: no drainage in either stage (fast, measures undrained strength s_u, phi_u = 0). CU test: consolidated under sigma_3, sheared undrained while measuring pore pressure u (gives effective c', phi' and Skempton pore pressure parameters A and B). CD test: drainage permitted throughout (gives drained long-term parameters)."
     }
+  ],
+  "chapters": [
+    "Introduction",
+    "Phase Relationship, Index Property and Soil Classification",
+    "Soil Water, Permeability and Seepage Analysis",
+    "Soil Stresses",
+    "Soil Compaction",
+    "Consolidation",
+    "Shear Strength"
   ]
 }

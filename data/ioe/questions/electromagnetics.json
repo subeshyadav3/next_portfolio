@@ -163,6 +163,175 @@
         "2082 Bhadra"
       ],
       "frequency": 1
+    },
+    {
+      "chapter": "Electric Field",
+      "text": "State Gauss's Law in integral and differential forms. Apply Gauss's Law to derive the electric field intensity $\\vec{E}$ everywhere due to an infinitely long uniform line charge $\\rho_L$ and a uniformly charged solid sphere of radius $a$ with total charge $Q$.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2082 Bhadra",
+        "2080 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Gauss law: total outward flux equals enclosed charge: closed_integral D . dS = Q_enc; point form div D = rho_v. For infinite line charge, cylindrical Gaussian surface gives D_r (2 pi r L) = rho_L L => E_r = rho_L / (2 pi eps r) a_r. For solid sphere: inside r < a: Q_enc = Q(r/a)^3 => E = Q r / (4 pi eps a^3); outside r >= a: E = Q / (4 pi eps r^2)."
+    },
+    {
+      "chapter": "Electric Field",
+      "text": "State and derive Poisson's and Laplace's equations from Gauss's Law and electrostatic potential relations. Solve Laplace's equation $\\nabla^2 V = 0$ in one dimension to find the potential distribution and capacitance between two infinite parallel conducting plates separated by distance $d$.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "From div D = rho_v and D = eps E with E = -grad V: div(-eps grad V) = rho_v => del^2 V = -rho_v / eps (Poisson equation). In charge-free region rho_v = 0 => del^2 V = 0 (Laplace equation). Between parallel plates: d^2 V / dx^2 = 0 => V(x) = A x + B. Boundary conditions V(0) = 0, V(d) = V_0 => V(x) = V_0 x / d. Field E = -dV/dx = -V_0/d. Surface charge rho_s = eps V_0/d => Capacitance C = Q/V_0 = eps A / d."
+    },
+    {
+      "chapter": "Magnetic Field",
+      "text": "State the Biot-Savart Law and Ampere's Circuital Law in integral and point forms. Derive the magnetic field intensity $\\vec{H}$ at the center and along the axis of a circular current loop of radius $a$ carrying steady current $I$.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Biot-Savart: dH = (I dl x a_R) / (4 pi R^2). Ampere circuital law: closed_integral H . dl = I_enc; curl H = J. For circular loop on z-axis at distance h: radial components cancel by symmetry. Axial field H_z = (I a^2) / [2 (a^2 + h^2)^(3/2)] a_z. At center of loop (h = 0): H = I / (2a) a_z."
+    },
+    {
+      "chapter": "Electric Field",
+      "text": "Derive the Boundary Conditions for electrostatic fields across the interface between two lossless dielectric media with permittivity $\\epsilon_1$ and $\\epsilon_2$: continuity of tangential electric field $E_{t1} = E_{t2}$ and normal displacement vector $D_{n1} - D_{n2} = \\rho_s$.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Tangential condition: apply closed_integral E . dl = 0 around small rectangular loop spanning interface with height Delta h -> 0: E_t1 Delta w - E_t2 Delta w = 0 => E_t1 = E_t2. Normal condition: apply closed_integral D . dS = Q_enc over small pillbox: D_n1 Delta S - D_n2 Delta S = rho_s Delta S => D_n1 - D_n2 = rho_s. If interface is charge-free (rho_s = 0): D_n1 = D_n2 => eps1 E_n1 = eps2 E_n2."
+    },
+    {
+      "chapter": "Magnetic Field",
+      "text": "Derive the Boundary Conditions for magnetostatic fields across the interface between two magnetic media with permeability $\\mu_1$ and $\\mu_2$: continuity of normal magnetic flux density $B_{n1} = B_{n2}$ and tangential magnetic field intensity $H_{t1} - H_{t2} = K$.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Normal condition: from div B = 0, construct small Gaussian pillbox spanning interface: closed_integral B . dS = 0 => B_n1 Delta S - B_n2 Delta S = 0 => B_n1 = B_n2 (normal B is continuous). Tangential condition: from curl H = J, evaluate closed_integral H . dl = I_enc over rectangular loop: (H_t1 - H_t2) Delta l = K Delta l => H_t1 - H_t2 = K. If surface current K = 0, H_t1 = H_t2."
+    },
+    {
+      "chapter": "Time Varying Fields",
+      "text": "Explain Faraday's Law of Electromagnetic Induction and Lenz's Law. Derive the differential Maxwell equation $\\nabla \\times \\vec{E} = -\\frac{\\partial \\vec{B}}{\\partial t}$ accounting for both transformer EMF and motional EMF.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "EMF induced in closed circuit equals negative time rate of change of magnetic flux: V_emf = -d Phi/dt = -d/dt closed_integral B . dS. Using Stokes theorem closed_integral E . dl = integral (curl E) . dS. For stationary path (transformer EMF): curl E = -dB/dt. For moving conductor in static field (motional EMF): E_m = v x B. Total EMF = closed_integral (E + v x B) . dl."
+    },
+    {
+      "chapter": "Time Varying Fields",
+      "text": "Explain Maxwell's modification of Ampere's Law. Define Displacement Current Density $\\vec{J}_d = \\frac{\\partial \\vec{D}}{\\partial t}$. Write Maxwell's equations in both differential and integral forms for time-varying fields.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2082 Bhadra",
+        "2080 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Taking divergence of steady Ampere law div(curl H) = div J = 0 contradicts continuity equation div J = -d rho_v/dt. Maxwell added displacement current: div(J + J_d) = 0 => J_d = dD/dt. Differential equations: 1) div D = rho_v; 2) div B = 0; 3) curl E = -dB/dt; 4) curl H = J + dD/dt. Explains how alternating E and B sustain wave propagation across vacuum without physical conductors."
+    },
+    {
+      "chapter": "Plane Waves",
+      "text": "Derive the Helmholtz Wave Equations for electric and magnetic fields in a source-free lossy dielectric medium: $\\nabla^2 \\vec{E} - \\gamma^2 \\vec{E} = 0$. Define propagation constant $\\gamma = \\alpha + j\\beta$, attenuation constant $\\alpha$, phase constant $\\beta$, skin depth $\\delta$, and intrinsic impedance $\\eta$.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Take curl of curl E = -j omega mu H: curl(curl E) = grad(div E) - del^2 E = -del^2 E = -j omega mu (sigma + j omega eps) E => del^2 E = gamma^2 E. Propagation constant gamma = sqrt(j omega mu (sigma + j omega eps)) = alpha + j beta. Attenuation alpha causes exponential decay e^(-alpha z); phase constant beta = 2 pi / lambda. Skin depth delta = 1/alpha = sqrt(2 / (omega mu sigma)) in good conductors. Intrinsic impedance eta = sqrt(j omega mu / (sigma + j omega eps))."
+    },
+    {
+      "chapter": "Plane Waves",
+      "text": "Define the Poynting Vector $\\vec{\\mathcal{P}} = \\vec{E} \\times \\vec{H}$ and Time-Average Poynting Vector $\\vec{P}_{avg} = \\frac{1}{2}\\text{Re}[\\vec{E} \\times \\vec{H}^*]$. State and prove Poynting's Theorem of electromagnetic power flow and energy conservation.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Vector identity: div(E x H) = H . (curl E) - E . (curl H). Substituting Maxwell equations yields div(E x H) = -H . dB/dt - E . J - E . dD/dt = -d/dt (0.5 mu H^2 + 0.5 eps E^2) - sigma E^2. Integrating over volume V: total outward power flow through surface equals rate of decrease of stored magnetic/electric energy minus ohmic heat dissipation."
+    },
+    {
+      "chapter": "Plane Waves",
+      "text": "Define Polarization of electromagnetic plane waves. Distinguish between Linear, Circular (Left-Hand and Right-Hand), and Elliptical Polarization with mathematical conditions on amplitudes ($E_{0x}, E_{0y}$) and phase angle difference ($\\delta$).",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Polarization describes orientation of electric field vector over time at fixed spatial point. E = E_0x cos(omega t - beta z) a_x + E_0y cos(omega t - beta z + delta) a_y. Linear: delta = 0 or +/- pi (tip moves along straight line). Circular: E_0x = E_0y and delta = +/- pi/2 (+pi/2 is LHCP, -pi/2 is RHCP). Elliptical: arbitrary amplitudes E_0x != E_0y and delta != 0, +/- pi."
+    },
+    {
+      "chapter": "Plane Waves",
+      "text": "Explain Normal and Oblique Incidence of uniform plane waves on a plane dielectric boundary. State Snell's Laws of Reflection and Refraction, and derive Brewster's Angle $\\theta_B = \\arctan\\sqrt{\\frac{\\epsilon_2}{\\epsilon_1}}$ for parallel polarization.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Snell laws: angle of reflection equals angle of incidence theta_r = theta_i; refraction obeys sin(theta_t)/sin(theta_i) = n1/n2 = sqrt(eps1/eps2). For parallel polarization (E in plane of incidence), reflection coefficient Gamma_parallel = (eta2 cos theta_t - eta1 cos theta_i) / (eta2 cos theta_t + eta1 cos theta_i). Vanishes at Brewster angle theta_B = arctan(sqrt(eps2/eps1)) producing 100% transmission."
+    },
+    {
+      "chapter": "Transmission Lines",
+      "text": "Derive the Transmission Line Wave Equations from the lumped-element equivalent circuit ($R, L, G, C$). Derive the characteristic impedance $Z_0 = \\sqrt{\\frac{R + j\\omega L}{G + j\\omega C}}$ and propagation constant $\\gamma$. For a lossless line, show $Z_0 = \\sqrt{L/C}$ and velocity $v = \\frac{1}{\\sqrt{LC}}$.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Applying KVL and KCL to differential slice Delta z: -dV/dz = (R + j omega L) I and -dI/dz = (G + j omega C) V. Differentiating yields d^2 V / dz^2 = gamma^2 V with gamma = sqrt((R + j omega L)(G + j omega C)). V(z) = V_0^+ e^(-gamma z) + V_0^- e^(gamma z). Characteristic impedance Z_0 = V^+ / I^+ = sqrt((R + j omega L)/(G + j omega C)). For lossless line R=G=0: Z_0 = sqrt(L/C), gamma = j omega sqrt(LC), phase velocity v = omega / beta = 1 / sqrt(LC)."
+    },
+    {
+      "chapter": "Transmission Lines",
+      "text": "Define Voltage Standing Wave Ratio ($VSWR = \\frac{1 + |\\Gamma|}{1 - |\\Gamma|}$) and Voltage Reflection Coefficient ($\\Gamma = \\frac{Z_L - Z_0}{Z_L + Z_0}$). Explain Quarter-Wave Transformer impedance matching ($Z_0' = \\sqrt{Z_0 Z_L}$) on a lossless transmission line.",
+      "marks": "8",
+      "years": [
+        "2083 Baishakh",
+        "2082 Bhadra",
+        "2080 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Reflection coefficient Gamma is ratio of reflected to incident voltage wave. On line terminated in load Z_L, Gamma_L = (Z_L - Z_0)/(Z_L + Z_0). Superposition creates standing waves with V_max = |V+| (1 + |Gamma|) and V_min = |V+| (1 - |Gamma|); VSWR = V_max / V_min. Quarter-wave transformer: line of length l = lambda/4 has input impedance Z_in = (Z_0')^2 / Z_L. Setting Z_in = Z_0 yields matching characteristic impedance Z_0' = sqrt(Z_0 Z_L)."
     }
   ]
 }

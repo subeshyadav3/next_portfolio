@@ -70,7 +70,7 @@
     },
     {
       "id": "eh-5",
-      "question": "What is the Φ-index (phi-index) and how does it differ from the W-index? A 6-hour storm produces a total rainfall of 12.0 cm. If the phi-index of the catchment is 0.8 cm/hr, calculate the total direct surface runoff and runoff coefficient.",
+      "question": "What is the \u03a6-index (phi-index) and how does it differ from the W-index? A 6-hour storm produces a total rainfall of 12.0 cm. If the phi-index of the catchment is 0.8 cm/hr, calculate the total direct surface runoff and runoff coefficient.",
       "frequency": 5,
       "marks": 5,
       "examSessions": [
@@ -86,7 +86,7 @@
     },
     {
       "id": "eh-6",
-      "question": "Estimate the Potential Evapotranspiration (PET) for an agricultural field near Birgunj during April using Penman's method, given: Mean temperature = 28°C, Relative humidity = 70%, Wind speed at 2 m height = 1.5 m/s, Net radiation = 10.1 mm/day, Slope of saturation vapor pressure curve Δ = 1.8 mm/°C, and Psychrometric constant γ = 0.49 mm/°C.",
+      "question": "Estimate the Potential Evapotranspiration (PET) for an agricultural field near Birgunj during April using Penman's method, given: Mean temperature = 28\u00b0C, Relative humidity = 70%, Wind speed at 2 m height = 1.5 m/s, Net radiation = 10.1 mm/day, Slope of saturation vapor pressure curve \u0394 = 1.8 mm/\u00b0C, and Psychrometric constant \u03b3 = 0.49 mm/\u00b0C.",
       "frequency": 5,
       "marks": 6,
       "examSessions": [
@@ -274,7 +274,7 @@
     },
     {
       "id": "eh-18",
-      "question": "Describe the Modified Puls (Storage-Indication) method for hydrologic reservoir flood routing. Formulate the routing equation in finite-difference form and explain the preparation and use of the (S/Δt + Q/2) vs Q curve.",
+      "question": "Describe the Modified Puls (Storage-Indication) method for hydrologic reservoir flood routing. Formulate the routing equation in finite-difference form and explain the preparation and use of the (S/\u0394t + Q/2) vs Q curve.",
       "frequency": 4,
       "marks": 6,
       "examSessions": [
@@ -286,6 +286,178 @@
       "chapter": "Flood Routing",
       "importance": "High",
       "difficulty": "Medium"
+    },
+    {
+      "id": "eh-19",
+      "question": "Explain the presentation of rainfall data: Hyetograph, Mass curve of rainfall, and Depth-Area-Duration (DAD) curves. Explain Intensity-Duration-Frequency (IDF) curves and their civil engineering design importance.",
+      "frequency": 3,
+      "marks": 6,
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra"
+      ],
+      "chapter": "Precipitation",
+      "importance": "High",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "eh-20",
+      "question": "How is rainfall data checked for consistency? Describe the Double Mass Curve analysis procedure with a neat sketch and explain how inconsistent rain gauge records are adjusted.",
+      "frequency": 3,
+      "marks": 6,
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "chapter": "Precipitation",
+      "importance": "High",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "eh-21",
+      "question": "Explain the methods for estimating lake evaporation: Water budget method, Energy balance method, and Penman's equation combining aerodynamic and energy balance terms.",
+      "frequency": 3,
+      "marks": 8,
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra"
+      ],
+      "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+      "importance": "High",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "eh-22",
+      "question": "Explain Horton's infiltration equation: $f_p = f_c + (f_0 - f_c)e^{-k_h t}$. Explain $\\phi$-index and $W$-index. A storm of 4-hour duration has rainfall depths of 25, 40, 35, and 15 mm in successive hours. If total runoff is 55 mm, calculate the $\\phi$-index.",
+      "frequency": 4,
+      "marks": 8,
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2079 Baishakh",
+        "2076 Chaitra"
+      ],
+      "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+      "importance": "High",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "eh-23",
+      "question": "Explain stream gauging using the Area-Velocity method. Compare 0.6 depth method and two-point (0.2 and 0.8 depth) velocity observation methods using a current meter.",
+      "frequency": 3,
+      "marks": 6,
+      "examSessions": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2078 Chaitra"
+      ],
+      "chapter": "Streamflow Measurement",
+      "importance": "High",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "eh-24",
+      "question": "What is a stage-discharge rating curve ($Q = C_r (G - G_0)^\\beta$)? Explain how the rating curve is established and how shifting control occurs due to scour, silting, and weed growth.",
+      "frequency": 3,
+      "marks": 8,
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "chapter": "Streamflow Measurement",
+      "importance": "High",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "eh-25",
+      "question": "Explain the S-curve (S-hydrograph) technique. How is an S-curve constructed and used to derive a $T$-hour unit hydrograph from an available $D$-hour unit hydrograph?",
+      "frequency": 4,
+      "marks": 8,
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2077 Chaitra",
+        "2075 Bhadra"
+      ],
+      "chapter": "Hydrograph Analysis",
+      "importance": "High",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "eh-26",
+      "question": "Explain Snyder's synthetic unit hydrograph method. Define basin lag ($t_p$), peak discharge ($Q_p$), time base ($T_b$), and widths at $50\\%$ and $75\\%$ peak discharge ($W_{50}, W_{75}$) in ungauged catchments.",
+      "frequency": 3,
+      "marks": 8,
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2075 Bhadra"
+      ],
+      "chapter": "Hydrograph Analysis",
+      "importance": "High",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "eh-27",
+      "question": "Explain Gumbel's Extreme Value Type-I distribution for flood frequency analysis: $x_T = \\bar{x} + K_T \\sigma_n$ where $K_T = \\frac{y_T - \\bar{y}_n}{S_n}$ and $y_T = -\\ln[\\ln(T/(T-1))]$.",
+      "frequency": 4,
+      "marks": 8,
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2078 Chaitra",
+        "2075 Chaitra"
+      ],
+      "chapter": "Flood Hydrology",
+      "importance": "High",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "eh-28",
+      "question": "Define return period ($T$), hydrologic risk ($R = 1 - (1 - 1/T)^n$), and reliability. Calculate the risk of a 100-year design flood being equaled or exceeded at least once during the 40-year design life of a bridge.",
+      "frequency": 3,
+      "marks": 6,
+      "examSessions": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "chapter": "Flood Hydrology",
+      "importance": "High",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "eh-29",
+      "question": "Explain reservoir flood routing (Modified Puls method). Derive the storage indication curve equation: $\\frac{2S_2}{\\Delta t} + O_2 = (I_1 + I_2) + (\\frac{2S_1}{\\Delta t} - O_1)$.",
+      "frequency": 4,
+      "marks": 8,
+      "examSessions": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2077 Magh",
+        "2074 Bhadra"
+      ],
+      "chapter": "Flood Routing",
+      "importance": "High",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "eh-30",
+      "question": "Explain the Muskingum method of channel flood routing: $Q_2 = C_0 I_2 + C_1 I_1 + C_2 Q_1$. Show that $C_0 + C_1 + C_2 = 1$ and explain the physical significance of routing constants $K$ and $x$.",
+      "frequency": 3,
+      "marks": 8,
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2076 Bhadra"
+      ],
+      "chapter": "Flood Routing",
+      "importance": "High",
+      "difficulty": "Hard"
     }
   ]
 }

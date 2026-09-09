@@ -176,7 +176,7 @@
     },
     {
       "id": "fm-12",
-      "question": "A pipe carrying water has a 30 cm × 15 cm venturimeter which is positioned inclined at 30° to the horizontal. The flow is upwards. The converging cone is 45 cm in length and the Cd of the meter is 0.98. A differential U-tube manometer with mercury as indicating fluid is connected to the inlet and to the throat and shows a differential column height of 30 cm. (a) Calculate the discharge in the pipe. (b) If the pressure in the inlet section is 50 kPa, determine the pressure at the throat. (c) Find the head loss in the converging section of the venturimeter.",
+      "question": "A pipe carrying water has a 30 cm \u00d7 15 cm venturimeter which is positioned inclined at 30\u00b0 to the horizontal. The flow is upwards. The converging cone is 45 cm in length and the Cd of the meter is 0.98. A differential U-tube manometer with mercury as indicating fluid is connected to the inlet and to the throat and shows a differential column height of 30 cm. (a) Calculate the discharge in the pipe. (b) If the pressure in the inlet section is 50 kPa, determine the pressure at the throat. (c) Find the head loss in the converging section of the venturimeter.",
       "frequency": 4,
       "marks": 8,
       "examSessions": [
@@ -191,7 +191,7 @@
     },
     {
       "id": "fm-13",
-      "question": "State impulse-momentum principle. A jet of water flows smoothly on to a stationary curved vane which turns it through 60°. The initial jet is 50 mm in diameter and the velocity, which is uniform, is 36 m/s. As a result of friction, the velocity of the water leaving the surface is 30 m/s. Neglecting gravity effects, calculate the hydrodynamic force on the vane.",
+      "question": "State impulse-momentum principle. A jet of water flows smoothly on to a stationary curved vane which turns it through 60\u00b0. The initial jet is 50 mm in diameter and the velocity, which is uniform, is 36 m/s. As a result of friction, the velocity of the water leaving the surface is 30 m/s. Neglecting gravity effects, calculate the hydrodynamic force on the vane.",
       "frequency": 4,
       "marks": 8,
       "examSessions": [
@@ -221,7 +221,7 @@
     },
     {
       "id": "fm-15",
-      "question": "The discharge Q over a small rectangular weir is known to depend upon the head H over the weir, the weir height P, gravity g, width of the weir L, density ρ, dynamic viscosity μ and surface tension σ. Express the relationship between the variables in dimensionless form using Buckingham's π-theorem.",
+      "question": "The discharge Q over a small rectangular weir is known to depend upon the head H over the weir, the weir height P, gravity g, width of the weir L, density \u03c1, dynamic viscosity \u03bc and surface tension \u03c3. Express the relationship between the variables in dimensionless form using Buckingham's \u03c0-theorem.",
       "frequency": 5,
       "marks": 8,
       "examSessions": [
@@ -237,7 +237,7 @@
     },
     {
       "id": "fm-16",
-      "question": "Define displacement thickness, momentum thickness and energy thickness for a boundary layer developed on a flat plate and derive their expressions. For the velocity distribution in laminar boundary layer given by u/U = (3/2)(y/δ) - (1/2)(y/δ)^3, find the ratio of displacement thickness to momentum thickness.",
+      "question": "Define displacement thickness, momentum thickness and energy thickness for a boundary layer developed on a flat plate and derive their expressions. For the velocity distribution in laminar boundary layer given by u/U = (3/2)(y/\u03b4) - (1/2)(y/\u03b4)^3, find the ratio of displacement thickness to momentum thickness.",
       "frequency": 5,
       "marks": 8,
       "examSessions": [
@@ -265,6 +265,184 @@
       "chapter": "Flow Through Submerged Body and Boundary Layer Theory",
       "importance": "High",
       "difficulty": "Medium"
+    },
+    {
+      "chapter": "Fluid Statics",
+      "text": "State and prove Pascal's Law of hydrostatic pressure. Derive the Hydrostatic Law $\\frac{dp}{dz} = -\\rho g$ and calculate total hydrostatic force and Center of Pressure ($h_{cp} = \\bar{h} + \\frac{I_{xx}}{\\bar{h} A}$) on an inclined plane surface submerged in liquid.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Pascal law: pressure at a point in static fluid is equal in all directions (proven using small wedge element). Hydrostatic law: vertical pressure gradient dp/dz = -gamma. Submerged plane inclined at theta: Total force F = integral p dA = rho g sin(theta) integral y dA = rho g A h_bar. Center of pressure y_cp = integral y dF / F = integral y^2 dA / (y_bar A) = I_x / (y_bar A) = y_bar + I_xx / (y_bar A). Vertical depth h_cp = h_bar + (I_xx sin^2 theta)/(h_bar A)."
+    },
+    {
+      "chapter": "Fluid Statics",
+      "text": "Derive hydrostatic force components (horizontal $F_H$ and vertical $F_V$) on a curved submerged surface (e.g. radial spillway gate). Explain how the line of action of resultant force passes through the center of curvature.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Horizontal force F_H equals total hydrostatic force on vertical projection of curved surface: F_H = rho g A_proj h_bar, acting at center of pressure of vertical projection. Vertical force F_V equals weight of liquid column vertically above curved surface extending up to free surface: F_V = rho g * Volume, acting through centroid of liquid volume. Resultant force F_R = sqrt(F_H^2 + F_V^2) at angle theta = arctan(F_V / F_H). For circular cylindrical surface, all pressure forces act normal to surface, passing through center of circle."
+    },
+    {
+      "chapter": "Fluid Statics",
+      "text": "Explain Buoyancy and Floatation. Define Metacenter and Metacentric Height ($GM = \\frac{I}{V} - BG$). Derive conditions for stable, neutral, and unstable equilibrium of floating bodies.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Archimedes principle: buoyant force F_B = rho g V_displaced acting through centroid of displaced volume (center of buoyancy B). When body tilts by angle theta, B shifts to B'. Metacenter M is intersection of vertical buoyant force line with original tilt centerline. Distance BM = I / V_displaced, where I is second moment of area of waterplane. Metacentric height GM = BM - BG = I/V - BG. Equilibrium: Stable if M lies above G (GM > 0, restoring moment); Neutral if M coincides with G (GM = 0); Unstable if M lies below G (GM < 0, overturning moment)."
+    },
+    {
+      "chapter": "Fluid Flow Kinematics",
+      "text": "Derive the Continuity Equation in 3D Cartesian coordinates for steady and unsteady compressible flow: $\\frac{\\partial \\rho}{\\partial t} + \\nabla \\cdot (\\rho \\vec{V}) = 0$. Simplify for steady incompressible flow $\\frac{\\partial u}{\\partial x} + \\frac{\\partial v}{\\partial y} + \\frac{\\partial w}{\\partial z} = 0$.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Conservation of mass on differential control volume dx dy dz. Mass entering x-face = rho u dy dz; mass leaving = [rho u + d(rho u)/dx dx] dy dz. Net mass accumulation = -[d(rho u)/dx + d(rho v)/dy + d(rho w)/dz] dx dy dz. Rate of mass increase inside CV = d(rho dx dy dz)/dt = (d rho / dt) dx dy dz. Equating gives d rho/dt + div(rho V) = 0. For incompressible (rho = constant) and steady flow: div V = du/dx + dv/dy + dw/dz = 0."
+    },
+    {
+      "chapter": "Fluid Flow Kinematics",
+      "text": "Define Velocity Potential Function ($\\phi$) and Stream Function ($\\psi$). State the Cauchy-Riemann equations relating $\\phi$ and $\\psi$ for 2D irrotational incompressible flow. Prove that equipotential lines and streamlines intersect orthogonally.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Velocity potential phi: u = -d phi / dx, v = -d phi / dy (exists only for irrotational flow curl V = 0). Stream function psi: u = -d psi / dy, v = d psi / dx (automatically satisfies continuity). Cauchy-Riemann: d phi / dx = d psi / dy and d phi / dy = -d psi / dx. Equipotential line (phi = const): dy/dx|_{phi} = -u/v. Streamline (psi = const): dy/dx|_{psi} = v/u. Product of slopes = (-u/v) * (v/u) = -1, proving orthogonal intersection."
+    },
+    {
+      "chapter": "Fluid Dynamics",
+      "text": "Derive Euler's Equation of Motion along a streamline $\\frac{dp}{\\rho} + v dv + g dz = 0$. Integrate to derive Bernoulli's Equation $\\frac{p}{\\rho g} + \\frac{v^2}{2g} + z = \\text{constant}$ and state all underlying assumptions.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Consider fluid element of cross-section dA and length ds along streamline. Forces acting: pressure forces p dA and -(p + dp/ds ds) dA, gravity component -rho g dA ds cos(theta), where cos(theta) = dz/ds. Net force = -dp dA - rho g dA dz = mass * acceleration = (rho dA ds) * (v dv/ds). Dividing by rho dA ds yields dp/rho + v dv + g dz = 0. Integrating along streamline gives p/(rho g) + v^2/(2g) + z = constant. Assumptions: steady, incompressible, frictionless (inviscid), flow along streamline."
+    },
+    {
+      "chapter": "Application of Energy and Momentum Equation",
+      "text": "Apply Bernoulli's equation to a Venturimeter. Derive the theoretical and actual discharge formula $Q_{act} = C_d \\frac{a_1 a_2}{\\sqrt{a_1^2 - a_2^2}}\\sqrt{2g h}$, where $h$ is differential piezometric head.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Venturimeter has convergent cone (angle ~21 deg), throat, and divergent cone (angle 5-7 deg to prevent boundary layer separation). Bernoulli between inlet (1) and throat (2): p1/gamma + v1^2/2g + z1 = p2/gamma + v2^2/2g + z2. Continuity: Q = a1 v1 = a2 v2. Differential piezometric head h = (p1/gamma + z1) - (p2/gamma + z2) = (v2^2 - v1^2)/2g = v2^2 [1 - (a2/a1)^2]/2g. Theoretical Q_th = a1 a2 sqrt(2gh) / sqrt(a1^2 - a2^2). Actual Q_act = C_d * Q_th, where C_d ~ 0.96-0.98 accounts for friction loss."
+    },
+    {
+      "chapter": "Application of Energy and Momentum Equation",
+      "text": "Derive the Linear Momentum Equation for steady fluid flow through a control volume: $\\sum \\vec{F} = \\rho Q (\\vec{v}_2 - \\vec{v}_1)$. Apply it to compute the dynamic force exerted by a fluid jet striking a stationary and moving curved symmetrical vane.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "From Newton second law, net external force equals time rate of change of momentum: sum F = m_dot (v_out - v_in) = rho Q (v2 - v1). For stationary curved vane deflecting jet of area A and velocity v through angle theta: F_x = rho A v^2 (1 + cos theta). For moving vane traveling at velocity u: mass striking vane per second is rho A (v - u); dynamic force F_x = rho A (v - u)^2 (1 + cos theta); Work done per second W = F_x * u; Efficiency eta = 2 u (v - u)(1 + cos theta) / v^2; maximum efficiency eta_max = (1 + cos theta)/2 at u = v/2 (100% for 180 deg Pelton bucket)."
+    },
+    {
+      "chapter": "Application of Energy and Momentum Equation",
+      "text": "Derive the Moment of Momentum (Angular Momentum) equation. Apply it to formulate Euler's Turbine Equation for torque $T = \\rho Q (v_{w1} r_1 - v_{w2} r_2)$ and power developed by rotating hydraulic turbomachines.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Torque T equals rate of change of angular momentum: T = m_dot (r1 v_t1 - r2 v_t2) = rho Q (r1 v_w1 - r2 v_w2), where v_w is tangential whirl velocity component at inlet radius r1 and outlet radius r2. Power developed P = T * omega = rho Q (u1 v_w1 - u2 v_w2), where u = omega * r is blade peripheral speed. Head developed (Euler head) H_e = P / (rho g Q) = (u1 v_w1 - u2 v_w2) / g. Fundamental equation for all radial and axial pumps and turbines."
+    },
+    {
+      "chapter": "Flow Through Submerged Body and Boundary Layer Theory",
+      "text": "Explain Boundary Layer Theory on a flat plate (Prandtl's boundary layer). Define Boundary Layer Thickness ($\\delta$), Displacement Thickness ($\\delta^* = \\int_0^\\delta (1 - u/U) dy$), and Momentum Thickness ($\\theta = \\int_0^\\delta \\frac{u}{U}(1 - u/U) dy$).",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "High Reynolds number flow confines viscous shear forces to thin layer adjacent to solid surface. Boundary layer thickness delta: distance from surface where velocity u reaches 0.99 U_infty. Displacement thickness delta* is distance by which external streamlines are shifted outwards due to boundary layer velocity deficit (maintains mass flow). Momentum thickness theta represents loss of momentum flux due to boundary layer drag. Shape factor H = delta* / theta (~2.6 for laminar, ~1.4 for turbulent)."
+    },
+    {
+      "chapter": "Flow Through Submerged Body and Boundary Layer Theory",
+      "text": "Explain Boundary Layer Separation: physical causes (adverse pressure gradient $\\frac{dp}{dx} > 0$), point of separation ($\\frac{\\partial u}{\\partial y}\\big|_{y=0} = 0$), wake formation, and methods to prevent separation (streamlining, suction, blowing, vortex generators).",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "In divergent passages or rear of bluff bodies, fluid flows against increasing pressure (adverse gradient dp/dx > 0). Kinetic energy of near-wall fluid decelerates to zero: du/dy|_{y=0} = 0 (separation point). Downstream, reverse flow occurs forming large turbulent recirculating eddies (wake), causing severe pressure drag. Mitigated by: 1) Streamlining body profile (delays separation to rear trailing edge); 2) Boundary layer suction (removes sluggish low-energy fluid); 3) High-velocity jet blowing; 4) Vortex generators mixing high-momentum fluid into boundary layer."
+    },
+    {
+      "chapter": "Flow Through Submerged Body and Boundary Layer Theory",
+      "text": "Define Total Drag and Lift forces on submerged bodies: $F_D = \\frac{1}{2} C_D \\rho A v^2$ and $F_L = \\frac{1}{2} C_L \\rho A v^2$. Differentiate between Skin Friction Drag and Form (Pressure) Drag. Explain Terminal Velocity of a falling sphere using Stokes' Law $F_D = 6\\pi \\mu r v$.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Drag is force parallel to relative flow direction; Lift is force perpendicular. Total drag = Skin friction drag (tangential shear stresses) + Form drag (pressure difference between front stagnation point and rear separation wake). For streamlined airfoil: skin friction dominates (~90%). For bluff sphere/cylinder: form drag dominates (~90%). For creeping flow Re < 0.2: Stokes law gives F_D = 3 pi mu D v (C_D = 24/Re). Terminal velocity occurs when submerged buoyant weight equals drag: v_t = 2 r^2 g (rho_s - rho) / (9 mu)."
+    },
+    {
+      "chapter": "Dimensional Analysis and Physical Modelling",
+      "text": "State Buckingham's $\\Pi$-Theorem for dimensional analysis. Derive the dimensionless relationship for drag force on a submerged body: $F_D = \\rho v^2 L^2 \\phi(Re, Fr)$. Explain Reynolds and Froude Model Laws for dynamic similitude in hydraulic models.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Pi theorem: if n physical variables involve m fundamental dimensions (M, L, T), they can be grouped into (n - m) dimensionless Pi terms. Selecting repeating variables rho, v, L. Reynolds model law: Re_m = Re_p => (rho v L / mu)_m = (rho v L / mu)_p (used for closed conduit pipe flows and submarine models where viscous forces dominate). Froude model law: Fr_m = Fr_p => (v / sqrt(g L))_m = (v / sqrt(g L))_p (used for open channels, spillways, and ship wave resistance where gravity forces dominate). Velocity scale v_r = sqrt(L_r); discharge scale Q_r = L_r^(2.5)."
     }
+  ],
+  "chapters": [
+    "Fundamental Concepts of Fluids",
+    "Fluid Statics",
+    "Fluid Flow Kinematics",
+    "Fluid Dynamics",
+    "Application of Energy and Momentum Equation",
+    "Flow Through Submerged Body and Boundary Layer Theory",
+    "Dimensional Analysis and Physical Modelling"
   ]
 }

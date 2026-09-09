@@ -177,6 +177,197 @@
         "2077 Chaitra"
       ],
       "frequency": 3
+    },
+    {
+      "chapter": "Instrumentation and Isolation Amplifiers",
+      "text": "Derive the voltage gain $A_v = \\left(1 + \\frac{2 R_1}{R_g}\\right)\\left(\\frac{R_3}{R_2}\\right)$ and Common-Mode Rejection Ratio (CMRR) of a three-op-amp Instrumentation Amplifier. Why does it provide exceptionally high input impedance and high CMRR without matched source impedances?",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "First stage consists of two non-inverting buffers cross-coupled via gain-setting resistor R_g. Input impedance is op-amp non-inverting terminal impedance (gigohms). Differential gain of stage 1 is A_d1 = 1 + 2 R1 / R_g; common-mode gain is A_cm1 = 1 (amplifies difference while passing common-mode unity). Second stage is difference amplifier with gain R3 / R2, rejecting common-mode voltage. CMRR is multiplied by stage-1 differential gain."
+    },
+    {
+      "chapter": "Instrumentation and Isolation Amplifiers",
+      "text": "Explain Isolation Amplifiers. Compare Transformer-Coupled, Optically-Coupled, and Capacitively-Coupled isolation amplifiers with respect to barrier breakdown voltage, common-mode rejection, and medical bio-potential isolation applications.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Provides complete galvanic isolation (thousands of volts) between input and output grounds, breaking ground loops and protecting patients/sensitive instrumentation. Transformer coupling uses modulator/demodulator with high-frequency carrier (20-100 kHz) across toroidal transformer barrier. Optical coupling uses matched linear optocoupler LEDs and photodiodes. Capacitive coupling uses differential digital modulator across low-capacitance ceramic barrier (high CMRR and bandwidth)."
+    },
+    {
+      "chapter": "Operational Amplifier-Bipolar Transistor Logarithmic Amplifier",
+      "text": "Derive the output voltage of a Translog (BJT-based) Logarithmic Amplifier: $v_o = -V_T \\ln\\left(\\frac{v_i}{I_s R}\\right)$. Explain why uncompensated log amplifiers suffer severe temperature drift due to $V_T$ and $I_s$, and describe the dual-transistor temperature compensation circuit.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "BJT in feedback loop of op-amp with base grounded (v_B = 0). Collector current I_c = I_s [exp(v_BE / V_T) - 1] approx I_s exp(v_BE / V_T). Inverting virtual ground sets I_c = v_i / R. Output v_o = -v_BE = -V_T ln(v_i / (I_s R)). Temperature drift: I_s doubles every 5 deg C; thermal voltage V_T = k T / q is proportional to absolute temperature. Compensated by subtracting reference log output v_o2 = -V_T ln(V_ref / (I_s R_ref)) using matched dual BJT (cancels I_s) and PTAT thermistor (cancels V_T)."
+    },
+    {
+      "chapter": "Log-Antilog Circuit Application",
+      "text": "Design an Analog Multiplier and Divider circuit using Log and Anti-log amplifiers and summing op-amps based on the mathematical identity $\\ln(v_1 v_2) = \\ln v_1 + \\ln v_2$ and $\\ln(v_1 / v_2) = \\ln v_1 - \\ln v_2$.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Multiplier: Input voltages v1, v2 fed into log amplifiers producing -K ln(v1) and -K ln(v2). Summing amplifier computes -(-K ln v1 - K ln v2) = K ln(v1 * v2). Output fed to anti-log amplifier (BJT in input path, resistor in feedback) which computes exp(ln(v1 * v2)) = v1 * v2. Divider uses differential subtraction: log(v1) - log(v2) = log(v1 / v2) prior to anti-log stage. Requires positive unipolar inputs (single-quadrant operation)."
+    },
+    {
+      "chapter": "Log-Antilog Circuit Application",
+      "text": "Explain the Analog Four-Quadrant Gilbert Multiplier Cell. Derive the differential output current as a function of the hyperbolic tangent of differential input voltages: $I_{out} = I_0 \\tanh\\left(\\frac{v_1}{2V_T}\\right)\\tanh\\left(\\frac{v_2}{2V_T}\\right)$.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Cross-coupled differential pairs of BJTs. Lower pair splits tail current I_0 into I_1, I_2 based on differential input v1: I_1 - I_2 = I_0 tanh(v1 / 2V_T). Upper cross-coupled pairs modulate currents based on differential input v2: output current Delta I = (I_1 - I_2) tanh(v2 / 2V_T) = I_0 tanh(v1 / 2V_T) tanh(v2 / 2V_T). For small signals v1, v2 << 2V_T: tanh(x) approx x, giving linear true 4-quadrant multiplication v_out proportional to v1 * v2."
+    },
+    {
+      "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+      "text": "Explain R-2R Ladder Digital-to-Analog Converter (DAC) in voltage and current modes. Derive the output voltage $V_o = -V_{ref} \\sum_{i=1}^n \\frac{b_i}{2^i}$. Why is the R-2R ladder preferred over binary weighted-resistor DACs for high resolution (12-16 bits)?",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Uses only two resistor values (R and 2R). Thevenin equivalent resistance looking into each node is always R. Node voltages divide by factor of 2 at each progressive ladder stage. Binary switches direct currents to virtual ground summing bus of op-amp. Output V_o = -V_ref sum b_i 2^(-i). Preferred because binary weighted DAC requires 2^n resistor spread (e.g. 1k to 64M for 16-bit), which is impossible to track accurately on monolithic ICs over temperature; R-2R needs only 2:1 matching."
+    },
+    {
+      "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+      "text": "Explain Dual-Slope Integrating Analog-to-Digital Converter (ADC). Derive the relation showing conversion result $N = \\frac{V_{in}}{V_{ref}} 2^n$ is independent of integrator $R, C$ values and clock frequency drift. Why is it used in digital multimeters?",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra",
+        "2078 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Run-up phase: switch connects V_in to integrator for fixed clock counts N1 = 2^n (time T1): V_peak = -V_in T1 / (RC). Run-down phase: switch connects -V_ref; integrator ramps back to 0 in counts N2 (time T2): V_peak = V_ref T2 / (RC). Equating gives V_in T1 = V_ref T2 => N2 = N1 (V_in / V_ref). R, C, and clock frequency f cancel out completely. Integrating over period T1 = 20 ms provides infinite rejection of 50 Hz AC power line hum."
+    },
+    {
+      "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+      "text": "Explain Successive Approximation Register (SAR) ADC. Detail the binary search conversion sequence with D/A converter, sample-and-hold circuit, and comparator. Calculate conversion time for an 8-bit SAR ADC clocked at $2\\text{ MHz}$.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Performs binary search. Sample-and-hold freezes analog input. SAR tests bits from MSB (bit n-1) to LSB (bit 0). Sets trial bit to 1, internal DAC generates trial analog voltage. Comparator tests if V_in >= V_DAC: if yes, trial bit remains 1; if no, trial bit resets to 0. Takes exactly n clock cycles for n bits. For 8 bits at f_clk = 2 MHz: clock period T = 0.5 us; conversion time T_conv = 8 * 0.5 us = 4.0 us (plus 1 sample cycle = 4.5 us)."
+    },
+    {
+      "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+      "text": "Describe Sigma-Delta ($\\Sigma\\Delta$) ADC architecture: Over-sampling ($f_s \\gg 2 f_B$), 1-bit DAC/ADC, Noise Shaping with loop integrator, and Digital Decimation Filter. Why do Sigma-Delta ADCs achieve ultra-high 24-bit resolution at audio frequencies?",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Over-samples input by large factor OSR = f_s / (2 f_B). Modulator subtracts 1-bit DAC output from input, integrates difference, and quantizes via 1-bit comparator. Integrator acts as high-pass filter for quantization noise (Noise Shaping), pushing quantization noise power out of audio band into high frequencies. Digital decimation lowpass filter filters out high-frequency noise and down-samples to Nyquist rate, yielding 16-24 bit resolution without precision analog resistors."
+    },
+    {
+      "chapter": "Switched Mode Power Supplies and Drives",
+      "text": "Explain the Buck (Step-Down) DC-DC Converter. Derive the continuous conduction mode (CCM) voltage conversion ratio $V_o / V_s = D$, inductor current ripple $\\Delta I_L$, and the minimum critical inductance $L_{min}$ to avoid discontinuous conduction.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2077 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Switch closed for duration D*T: inductor voltage v_L = V_s - V_o; inductor current ramps up by Delta I_L = (V_s - V_o) D T / L. Switch open for (1-D)T: diode conducts, v_L = -V_o; inductor current ramps down by Delta I_L = V_o (1 - D) T / L. Volt-second balance (V_s - V_o) D = V_o (1 - D) => V_o = D * V_s. Continuous conduction requires minimum average current I_L >= Delta I_L / 2 => L_min = (1 - D) R / (2 f)."
+    },
+    {
+      "chapter": "Switched Mode Power Supplies and Drives",
+      "text": "Explain Boost (Step-Up) and Buck-Boost DC-DC Converters. Derive their output voltage conversion ratios $V_o / V_s = \\frac{1}{1 - D}$ and $V_o / V_s = -\\frac{D}{1 - D}$, sketch inductor current waveforms, and calculate capacitor voltage ripple.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Boost converter: switch on charges inductor from V_s; switch off delivers stored energy in series with input through diode to load: V_s D T + (V_s - V_o)(1 - D) T = 0 => V_o = V_s / (1 - D) > V_s. Buck-boost converter: switch on stores energy in inductor; switch off inverts polarity across load: V_s D T + (-V_o)(1 - D) T = 0 => V_o = -V_s * [D / (1 - D)]. Output voltage ripple Delta V_o = I_o D / (f C)."
+    },
+    {
+      "chapter": "Switched Mode Power Supplies and Drives",
+      "text": "Explain Isolated SMPS Topologies: Flyback Converter and Forward Converter. Contrast transformer core demagnetization (tertiary reset winding), transformer utilization, and peak transistor stress in offline power supplies.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Flyback is isolated buck-boost: energy stored in coupled inductor (gapped core) during switch on; delivered to secondary when switch turns off; low cost for <150W supplies. Forward converter is isolated buck: energy transferred directly to secondary when switch is on via un-gapped transformer. Forward converter requires tertiary demagnetizing winding and diode to reset core flux to zero during off-time, preventing core saturation."
+    },
+    {
+      "chapter": "Power Electronics",
+      "text": "Explain the Silicon Controlled Rectifier (SCR / Thyristor): Two-transistor analogy (p-n-p and n-p-n regenerative feedback), turn-on mechanisms, latching vs holding currents, and turn-off commutation techniques (Natural vs Forced commutation).",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Four-layer p-n-p-n device modeled as coupled PNP (Q1) and NPN (Q2) transistors. Anode current I_A = (alpha2 I_g + I_co1 + I_co2) / [1 - (alpha1 + alpha2)]. Gate pulse injects I_g, driving loop gain alpha1 + alpha2 -> 1, triggering regenerative latch-up into low-resistance conduction. Latching current is minimum anode current to sustain conduction as gate pulse is removed; Holding current is minimum current below which SCR turns off. Commutation turns SCR off by reversing anode-cathode voltage."
+    },
+    {
+      "chapter": "Switched Mode Power Supplies and Drives",
+      "text": "Explain H-Bridge DC Motor Drives using power MOSFETs/IGBTs. Describe Bipolar and Unipolar Pulse Width Modulation (PWM) switching schemes, shoot-through prevention using dead-time control, and freewheeling diode protection.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Four semiconductor switches (Q1, Q2, Q3, Q4) in H configuration driving motor bi-directionally. Forward: Q1 and Q4 on. Reverse: Q2 and Q3 on. Shoot-through (fatal short circuit) occurs if both high-side Q1 and low-side Q2 turn on simultaneously; prevented by dead-time delay circuitry in gate driver. Bipolar PWM switches diagonals simultaneously (-Vs to +Vs). Unipolar PWM switches legs independently (0 to +Vs). Antiparallel freewheeling diodes clamp inductive kickback V = -L di/dt."
     }
+  ],
+  "chapters": [
+    "Operational Amplifier Characterization",
+    "Instrumentation and Isolation Amplifiers",
+    "Operational Amplifier-Bipolar Transistor Logarithmic Amplifier",
+    "Log-Antilog Circuit Application",
+    "Digital-to-Analog and Analog-to-Digital Conversion",
+    "Switched Mode Power Supplies and Drives",
+    "Power Electronics"
   ]
 }

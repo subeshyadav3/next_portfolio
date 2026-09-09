@@ -54,7 +54,7 @@
     },
     {
       "id": "hp-4",
-      "question": "A concrete gravity dam of height 40 m has a triangular cross-section with vertical upstream face and downstream slope 0.8:1. Considering hydrostatic water pressure, uplift pressure with drainage gallery, and silt pressure, calculate: (i) the eccentricity of the resultant force, (ii) factors of safety against overturning and sliding, and (iii) maximum vertical compressive stress at the toe. (Assume unit weight of concrete = 24 kN/m^3 and coefficient of friction μ = 0.7).",
+      "question": "A concrete gravity dam of height 40 m has a triangular cross-section with vertical upstream face and downstream slope 0.8:1. Considering hydrostatic water pressure, uplift pressure with drainage gallery, and silt pressure, calculate: (i) the eccentricity of the resultant force, (ii) factors of safety against overturning and sliding, and (iii) maximum vertical compressive stress at the toe. (Assume unit weight of concrete = 24 kN/m^3 and coefficient of friction \u03bc = 0.7).",
       "frequency": 5,
       "marks": 10,
       "examSessions": [
@@ -229,7 +229,7 @@
     },
     {
       "id": "hp-15",
-      "question": "Explain cavitation in reaction hydraulic turbines. Define Thoma's cavitation parameter σ and explain how the turbine runner setting height with respect to tailrace water level (Hs) is determined to prevent cavitation.",
+      "question": "Explain cavitation in reaction hydraulic turbines. Define Thoma's cavitation parameter \u03c3 and explain how the turbine runner setting height with respect to tailrace water level (Hs) is determined to prevent cavitation.",
       "frequency": 5,
       "marks": 6,
       "examSessions": [
@@ -257,6 +257,210 @@
       "chapter": "Hydraulic Turbines & Powerhouse",
       "importance": "Medium",
       "difficulty": "Easy"
+    },
+    {
+      "id": "hp-17",
+      "question": "Explain Flow Duration Curve (FDC) and Power Duration Curve (PDC). How are they constructed from daily/monthly streamflow discharge records, and how is design discharge for Run-of-River (RoR) projects determined?",
+      "frequency": 4,
+      "marks": 8,
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "chapter": "Introduction & Power Potential",
+      "importance": "High",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "hp-18",
+      "question": "Compare Run-of-River (RoR), Peaking Run-of-River (PROR), Storage (Reservoir), and Pumped Storage hydropower schemes with neat schematic layouts and operational characteristics.",
+      "frequency": 3,
+      "marks": 8,
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "chapter": "Introduction & Power Potential",
+      "importance": "High",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "hp-19",
+      "question": "Explain the forces acting on a gravity dam: self-weight, hydrostatic water pressure, uplift pressure, silt pressure, wave pressure, ice pressure, and earthquake inertia forces.",
+      "frequency": 4,
+      "marks": 8,
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra",
+        "2075 Bhadra"
+      ],
+      "chapter": "Dams and Headworks",
+      "importance": "High",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "hp-20",
+      "question": "Explain the stability criteria of a concrete gravity dam: factor of safety against overturning ($FSO \\ge 1.5$), sliding factor of safety ($FSS \\ge 1.0$), shear friction factor ($SFF \\ge 3.0$), and normal stresses at toe and heel (no tension condition).",
+      "frequency": 4,
+      "marks": 8,
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2079 Baishakh",
+        "2076 Chaitra"
+      ],
+      "chapter": "Dams and Headworks",
+      "importance": "High",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "hp-21",
+      "question": "Describe the components and seepage control in earth and rockfill dams: clay core, transition filters, rock shell, rock toe, relief wells, and cutoff trenches.",
+      "frequency": 3,
+      "marks": 6,
+      "examSessions": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2078 Chaitra"
+      ],
+      "chapter": "Dams and Headworks",
+      "importance": "Medium",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "hp-22",
+      "question": "Explain the settling velocity of sediment particles using Stokes' Law and Camp's sediment settling theory. Design the surface area and length of a settling basin for removing quartz particles of size $d \\ge 0.2\\text{ mm}$.",
+      "frequency": 4,
+      "marks": 8,
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2076 Chaitra",
+        "2074 Bhadra"
+      ],
+      "chapter": "Water Conveyance System",
+      "importance": "High",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "hp-23",
+      "question": "Explain the hydraulic design of a headrace tunnel: horse-shoe, D-shaped, and circular sections. Discuss Manning's roughness coefficient for unlined rock, shotcreted, and concrete lined tunnels.",
+      "frequency": 3,
+      "marks": 6,
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2077 Chaitra"
+      ],
+      "chapter": "Water Conveyance System",
+      "importance": "High",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "hp-24",
+      "question": "Explain water hammer analysis in penstock pipes using Allievi's equations. What is the critical time of valve closure ($T_c = 2L/a$), and how does water hammer pressure vary for rapid versus slow valve closure?",
+      "frequency": 4,
+      "marks": 8,
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2077 Magh",
+        "2075 Bhadra"
+      ],
+      "chapter": "Water Conveyance System",
+      "importance": "High",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "hp-25",
+      "question": "Differentiate between simple surge tank, restricted orifice surge tank, and differential surge tank. Explain the maximum upsurge and downsurge equations during complete rejection and acceptance of load.",
+      "frequency": 3,
+      "marks": 8,
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2078 Chaitra"
+      ],
+      "chapter": "Water Conveyance System",
+      "importance": "High",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "hp-26",
+      "question": "Derive the discharge equation for an Ogee spillway: $Q = C_d L_e H_e^{3/2}$ where effective length $L_e = L - 2(N K_p + K_a)H_e$. Explain the profile coordinates ($y/H_d = -K(x/H_d)^n$) based on USBR / WES standards.",
+      "frequency": 4,
+      "marks": 8,
+      "examSessions": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2075 Chaitra"
+      ],
+      "chapter": "Spillways and Energy Dissipation",
+      "importance": "High",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "hp-27",
+      "question": "Explain the hydraulic jump energy dissipator below spillways. Derive the conjugate depth equation: $\\frac{y_2}{y_1} = \\frac{1}{2}(\\sqrt{1 + 8Fr_1^2} - 1)$ and explain USBR Stilling Basin types (Type II, III, IV) with chute blocks and baffle piers.",
+      "frequency": 4,
+      "marks": 8,
+      "examSessions": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2077 Magh",
+        "2074 Chaitra"
+      ],
+      "chapter": "Spillways and Energy Dissipation",
+      "importance": "High",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "hp-28",
+      "question": "Define specific speed ($N_s = \\frac{N \\sqrt{P}}{H^{5/4}}$) of a hydraulic turbine. Derive this formula from dimensionless unit parameters and show how specific speed is used to select Pelton, Francis, or Kaplan turbines for a given head and discharge.",
+      "frequency": 4,
+      "marks": 8,
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2076 Bhadra",
+        "2074 Bhadra"
+      ],
+      "chapter": "Hydraulic Turbines & Powerhouse",
+      "importance": "High",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "hp-29",
+      "question": "Describe the governing mechanism of hydraulic turbines: electro-hydraulic governors, servomotor operation, deflector mechanism in Pelton turbines, and wicket gate adjustment in Francis turbines.",
+      "frequency": 3,
+      "marks": 6,
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2078 Bhadra"
+      ],
+      "chapter": "Hydraulic Turbines & Powerhouse",
+      "importance": "High",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "hp-30",
+      "question": "Explain the advantages and structural layout of an underground powerhouse versus a surface powerhouse. Describe the machine hall, transformer cavern, surge chamber, and tailrace tunnel arrangements.",
+      "frequency": 3,
+      "marks": 6,
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "chapter": "Hydraulic Turbines & Powerhouse",
+      "importance": "Medium",
+      "difficulty": "Medium"
     }
   ]
 }

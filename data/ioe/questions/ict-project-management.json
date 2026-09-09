@@ -180,6 +180,200 @@
         "2078 Chaitra"
       ],
       "frequency": 3
+    },
+    {
+      "chapter": "Introduction",
+      "text": "Explain the Project Management Body of Knowledge (PMBOK) framework: 5 Process Groups (Initiating, Planning, Executing, Monitoring & Controlling, Closing) and 10 Knowledge Areas with their interactions throughout project lifecycle.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "PMBOK organizes project activities. 5 Process Groups span lifecycle from initial charter authorization to final handover. 10 Knowledge Areas: Integration, Scope, Schedule, Cost, Quality, Resource, Communications, Risk, Procurement, and Stakeholder Management. Matrix maps 49 individual processes across groups and areas."
+    },
+    {
+      "chapter": "Project Scope Management",
+      "text": "Explain Project Scope Management. How is the Work Breakdown Structure (WBS) constructed? Explain the 100% Rule, WBS Dictionary, and Scope Baseline control against Scope Creep.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Defines and controls what is and is not included in project. WBS decomposes total project scope hierarchically into smaller, manageable work packages. 100% Rule: WBS includes 100% of work defined by project scope without omitting or adding unauthorized tasks. WBS Dictionary provides detailed descriptions of work packages. Scope baseline (Scope Statement, WBS, WBS Dictionary) prevents uncontrolled scope creep via formal change control."
+    },
+    {
+      "chapter": "Project Time Management",
+      "text": "Construct a Project Network Diagram using the Precedence Diagramming Method (PDM). Given activity dependencies and durations, determine Early Start (ES), Early Finish (EF), Late Start (LS), Late Finish (LF), Total Float (TF), Free Float (FF), and the Critical Path.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "PDM uses activity-on-node (AON) representation. Forward pass calculates earliest start and finish: EF = ES + Duration. Backward pass calculates latest start and finish: LS = LF - Duration. Total Float TF = LS - ES = LF - EF (time activity can be delayed without delaying project completion). Free Float FF = min(ES of successors) - EF. Critical path is longest path where Total Float = 0."
+    },
+    {
+      "chapter": "Project Time Management",
+      "text": "Explain Program Evaluation and Review Technique (PERT). Derive formulas for expected activity duration $t_e = \\frac{a + 4m + b}{6}$ and variance $\\sigma^2 = \\left(\\frac{b - a}{6}\\right)^2$. Calculate the probability of project completion before a target deadline using standard normal $Z$-tables.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Probabilistic scheduling method accounting for uncertainty using beta distribution. Estimates: Optimistic time a, Most likely time m, Pessimistic time b. Total expected project duration T_e = sum(t_e on critical path); total variance sigma_p^2 = sum(sigma^2 on critical path). Compute standard normal deviate Z = (Target Date - T_e) / sigma_p, lookup cumulative probability P(T <= Target)."
+    },
+    {
+      "chapter": "Project Time Management",
+      "text": "Explain Project Schedule Compression techniques: Crashing and Fast-Tracking. Given normal time, normal cost, crash time, and crash cost, determine optimal crashing sequence to compress schedule at minimum additional cost.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Techniques to shorten schedule without altering project scope. Fast-tracking executes sequential activities in parallel (increases risk and rework). Crashing adds resources to critical activities to compress duration. Crash cost slope = (Crash Cost - Normal Cost) / (Normal Time - Crash Time). Iteratively crash critical activities with lowest cost slope until desired duration is reached or activities become non-critical."
+    },
+    {
+      "chapter": "Project Cost Management",
+      "text": "Explain Earned Value Management (EVM). Define Planned Value (PV), Earned Value (EV), and Actual Cost (AC). Derive Cost Variance (CV), Schedule Variance (SV), Cost Performance Index (CPI), Schedule Performance Index (SPI), and Estimate at Completion (EAC).",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Integrates scope, schedule, and cost. PV = budgeted cost of work scheduled. EV = budgeted cost of work actually performed. AC = actual cost incurred. CV = EV - AC (>0 under budget). SV = EV - PV (>0 ahead of schedule). CPI = EV / AC (>1 good). SPI = EV / PV (>1 good). Estimate at Completion EAC = BAC / CPI (assuming present cost performance continues)."
+    },
+    {
+      "chapter": "Project Risk Management",
+      "text": "Explain Project Risk Management processes: Risk Identification, Qualitative Risk Analysis (Probability-Impact Matrix), Quantitative Risk Analysis (Decision Tree Analysis / EMV), and Risk Response Strategies (Avoid, Transfer, Mitigate, Accept).",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Identifies and manages uncertainties. Qualitative analysis scores probability (1-5) and impact (1-5) to rank risks on P-I matrix. Quantitative analysis computes Expected Monetary Value EMV = Probability * Financial Impact using decision trees. Responses for negative threats: Avoid (eliminate cause), Transfer (insurance/subcontracting), Mitigate (reduce probability/impact), Accept (establish contingency reserve)."
+    },
+    {
+      "chapter": "Project Resource and Stakeholder Management",
+      "text": "Explain Project Stakeholder Management. Describe Stakeholder Identification, Power-Interest Grid ($2 \\times 2$ matrix), and Stakeholder Engagement Assessment Matrix.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Identifies individuals/organizations affected by project. Power-Interest Grid classifies stakeholders into 4 quadrants: High Power / High Interest (Manage Closely - key decision makers); High Power / Low Interest (Keep Satisfied); Low Power / High Interest (Keep Informed); Low Power / Low Interest (Monitor). Stakeholder engagement matrix compares current vs desired engagement levels (Unaware, Resistant, Neutral, Supportive, Leading)."
+    },
+    {
+      "chapter": "Project Resource and Stakeholder Management",
+      "text": "Explain Project Human Resource Management. Describe Tuckman's Team Development Stages (Forming, Storming, Norming, Performing, Adjourning), RACI Responsibility Assignment Matrix, and Conflict Management techniques.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Tuckman stages: Forming (orientation), Storming (interpersonal friction/competition), Norming (cohesion and shared standards), Performing (high productivity), Adjourning (project completion and dissolution). RACI matrix defines who is Responsible, Accountable (only one per task), Consulted, and Informed. Conflict management strategies: Collaborate/Problem-Solve (win-win), Compromise, Smooth/Accommodate, Force/Direct, Withdraw/Avoid."
+    },
+    {
+      "chapter": "Project Integration Management",
+      "text": "Explain Project Procurement Management. Compare Contract Types: Fixed-Price Contracts (FP/FFP), Cost-Reimbursable Contracts (CPFF/CPIF), and Time & Materials Contracts (T&M) from buyer and seller risk perspectives.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Procuring goods and services from external vendors. Fixed Price: set price for well-defined deliverables; highest risk to seller, lowest to buyer. Cost Reimbursable: buyer pays actual costs plus contractor fee/profit; highest risk to buyer, lowest to seller (used when scope uncertain). Time and Materials: hybrid contract paid on hourly rates plus materials, used for staff augmentation or short-term expert consultancies."
+    },
+    {
+      "chapter": "Project Integration Management",
+      "text": "Describe the Project Charter: key components, project justification, measurable objectives, high-level requirements, and authorization of the project manager.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Formal document issued by project sponsor or initiator authorizing project existence. Provides PM with authority to apply organizational resources to project activities. Components: Business need/justification, measurable objectives and success criteria, high-level requirements, summary milestone schedule, pre-approved budget, assigned project manager authority, sponsor signature."
+    },
+    {
+      "chapter": "Trends in ICT Project management",
+      "text": "Explain Agile and DevOps Trends in ICT Project Management. Contrast Traditional Waterfall project management with Agile frameworks (Scrum, Kanban) in terms of scope flexibility, iteration cadence, and continuous delivery pipelines.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2080 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Traditional Waterfall uses rigid sequential phases with upfront planning and strict change requests. Agile promotes iterative 2-4 week sprints, continuous customer feedback, and emergent architecture. Kanban focuses on continuous flow with WIP limits. DevOps unifies software development and IT operations via automated CI/CD deployment pipelines, automated testing, and infrastructure-as-code."
+    },
+    {
+      "chapter": "Project Communication Management",
+      "text": "Explain Project Communication Management. Calculate the number of potential communication channels $C = \\frac{N(N-1)}{2}$ for a team of $N$ stakeholders. Explain communication models, barriers, and communication management plans.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Ensures timely and appropriate collection, distribution, and storage of project information. Communication channels grow quadratically: N=10 gives 45 channels; N=20 gives 190 channels, illustrating communication complexity. Communication management plan specifies who needs what information, format, frequency, distribution channel, and responsible person."
+    },
+    {
+      "chapter": "Portfolio and Project Management Framework",
+      "text": "Explain Project Quality Management. Describe Plan Quality, Quality Assurance, and Quality Control. Explain the 7 Basic Quality Tools (Fishbone/Ishikawa diagram, Pareto chart, Control charts, Checklists, Histograms, Scatter diagrams, Flowcharts).",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Plan Quality identifies standards; QA audits quality requirements and process results; QC monitors deliverables to eliminate defects. 7 QC tools: Cause-and-Effect (Fishbone) identifies root causes; Pareto chart (80/20 rule) highlights vital few defects; Control charts monitor process stability between Upper/Lower Control Limits; Checklists ensure consistency; Histograms show distributions; Scatter plots identify correlations; Flowcharts map processes."
     }
+  ],
+  "chapters": [
+    "Introduction",
+    "Portfolio and Project Management Framework",
+    "Project Integration Management",
+    "Project Scope Management",
+    "Project Time Management",
+    "Project Cost Management",
+    "Project Resource and Stakeholder Management",
+    "Project Communication Management",
+    "Project Risk Management",
+    "Trends in ICT Project management"
   ]
 }

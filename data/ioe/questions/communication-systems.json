@@ -170,6 +170,212 @@
         "2079 Ashwin"
       ],
       "frequency": 2
+    },
+    {
+      "chapter": "Introduction to Communication Systems",
+      "text": "Sketch and describe the functional block diagram of a digital communication system operating in duplex mode. Contrast it with an analog communication system and discuss channel impairments (attenuation, distortion, noise, interference).",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Blocks: Information source, Source Encoder, Channel Encoder, Digital Modulator, Transmission Channel, Digital Demodulator, Channel Decoder, Source Decoder, Transducer. Digital advantages: high noise immunity, regenerative repeaters, cryptographic security, uniform multiplexing of diverse media types."
+    },
+    {
+      "chapter": "Amplitude Modulation (AM) and Angle Modulation (FM/PM)",
+      "text": "Derive the mathematical expression for Standard Amplitude Modulated (DSB-FC) wave. Calculate modulation index $\\mu$, total transmitted power $P_t = P_c(1 + \\frac{\\mu^2}{2})$, and modulation efficiency $\\eta$. Why does standard AM waste over $66.7\\%$ of transmitted power in the carrier?",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2078 Kartik",
+        "2075 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "s(t) = A_c [1 + mu m_n(t)] cos(2 pi f_c t). Total power P_t = P_c + P_USB + P_LSB = P_c(1 + mu^2/2). Sideband power ratio eta = mu^2 / (2 + mu^2). For 100% modulation (mu = 1), sidebands contain only 1/3 (33.3%) of power, while 2/3 (66.7%) is wasted in redundant carrier. Solved by DSB-SC and SSB-SC."
+    },
+    {
+      "chapter": "Amplitude Modulation (AM) and Angle Modulation (FM/PM)",
+      "text": "Derive the time-domain equation and frequency spectrum for Frequency Modulated (FM) signal with single-tone sinusoidal modulation. Explain Carson's Rule for FM bandwidth $B_T = 2(\\Delta f + f_m)$ and frequency demodulation using Phase Locked Loop (PLL).",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "Instantaneous frequency f_i(t) = f_c + k_f m(t). s_FM(t) = A_c cos(2 pi f_c t + beta sin(2 pi f_m t)), expanding into Bessel series sum J_n(beta) cos(2 pi (f_c + n f_m) t). Carson Rule accounts for sidebands carrying 98% of power: B_T = 2(Delta f + f_m) = 2 f_m (1 + beta). PLL tracks input frequency through phase detector, loop filter, and VCO."
+    },
+    {
+      "chapter": "Digital Baseband Transmission and Line Coding",
+      "text": "Explain Pulse Code Modulation (PCM). Detail the processes of Sampling, Uniform vs Non-uniform Quantization, and Encoding. Derive the signal-to-quantization noise ratio formula $(S/N_q) = 1.8 + 6n \\text{ dB}$ for an $n$-bit quantizer. Compare $\\mu$-law and A-law companding.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "PCM converts analog to digital sequence. Quantization error e in [-Delta/2, Delta/2] has variance sigma_e^2 = Delta^2/12. With step size Delta = 2V_max / 2^n, SNR_q = 3 * 2^(2n) * (P / V_max^2), giving SNR_dB = 1.76 + 6.02 n dB. Companding applies non-linear compression before uniform quantization to maintain uniform SNR for weak speech signals (mu-law: North America/Japan; A-law: Europe/Nepal)."
+    },
+    {
+      "chapter": "Digital Baseband Transmission and Line Coding",
+      "text": "State the Nyquist Criterion for Zero Intersymbol Interference (ISI). Derive the condition on transfer function $H(f)$ for distortionless baseband pulse transmission. Explain the Raised Cosine roll-off filter and the concept of excess bandwidth factor ($\\alpha$).",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2078 Bhadra",
+        "2075 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "Nyquist criterion states sum_{k} H(f - k R_b) = T_b = constant. Minimum theoretical bandwidth B_min = R_b/2 for ideal brick-wall sinc pulses. Raised Cosine filter introduces practical gradual transition band with roll-off factor alpha in [0, 1]. Total bandwidth B = (1 + alpha) R_b / 2. Higher alpha reduces ISI sensitivity and timing jitter at expense of bandwidth."
+    },
+    {
+      "chapter": "Bandpass Digital Transmission and Digital Modulation",
+      "text": "Explain Binary Phase Shift Keying (BPSK) and Quadrature Phase Shift Keying (QPSK). Draw transmitter and receiver block diagrams, signal constellations, and derive the probability of bit error $P_b = Q\\left(\\sqrt{\\frac{2E_b}{N_0}}\\right)$ for coherent BPSK.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2076 Ashwin"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "BPSK shifts carrier phase by 180 degrees: s_1(t) = sqrt(2 E_b / T_b) cos(2 pi f_c t), s_2(t) = -s_1(t). Decision distance d_12 = 2 sqrt(E_b). P_b = Q(d_12 / 2 sigma) = Q(sqrt(2 E_b / N_0)). QPSK splits bit stream into In-phase (I) and Quadrature (Q) streams with 4 constellation points separated by 90 degrees, achieving double bandwidth efficiency (2 bits/s/Hz) with identical bit error rate."
+    },
+    {
+      "chapter": "Information Theory and Source Coding",
+      "text": "State the Shannon-Hartley Channel Capacity Theorem $C = B \\log_2\\left(1 + \\frac{S}{N}\\right)$. Prove that as bandwidth $B \\to \\infty$, the channel capacity approaches the Shannon Limit $C_{\\infty} = \\frac{S}{N_0 \\ln 2} \\approx 1.44 \\frac{S}{N_0}$ and determine the minimum $E_b/N_0 = -1.59 \\text{ dB}$.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2078 Kartik",
+        "2074 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "C = B log2(1 + S / (N_0 B)). Let x = S / (N_0 B); as B -> infty, x -> 0. C = (S/N_0) * log2(1 + x)^(1/x) -> (S/N_0) log2(e) = 1.442 S/N_0. Since S = C * E_b, we obtain C <= (C E_b / N_0) / ln 2 => E_b / N_0 >= ln 2 = 0.693 = -1.59 dB, the absolute fundamental limit for error-free digital transmission."
+    },
+    {
+      "chapter": "Channel Coding and Error Detection/Correction",
+      "text": "Explain Cyclic Redundancy Check (CRC) codes. Given generator polynomial $G(X) = X^4 + X + 1$ and message bits $M = 1101011011$, compute the transmitted codeword using modulo-2 polynomial division. Show how the receiver detects an error if a bit flips during transmission.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2075 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "Append r = degree(G) = 4 zeros to M: M(X)*X^4. Perform modulo-2 polynomial division by G(X). Remainder R(X) is appended to message: Codeword T(X) = M(X)*X^4 + R(X). Receiver divides received vector R_rx(X) by G(X); non-zero remainder (syndrome) signals transmission error."
+    },
+    {
+      "chapter": "Channel Coding and Error Detection/Correction",
+      "text": "Describe Convolutional Encoding and Viterbi Decoding. For a rate $r = 1/2$ convolutional encoder with generator polynomials $g_1 = (1, 1, 1)$ and $g_2 = (1, 0, 1)$, draw the state transition diagram, tree diagram, and trellis diagram. Trace Viterbi decoding of a received bit stream.",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2078 Bhadra",
+        "2076 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "Convolutional codes have memory: output depends on current bit and previous m shift register stages. Trellis diagram represents states across time intervals. Viterbi algorithm implements maximum likelihood decoding: calculates branch metrics (Hamming distance), accumulates path metrics at each node, and prunes non-survivor paths to find minimum metric path."
+    },
+    {
+      "chapter": "Spread Spectrum Systems and Multiple Access",
+      "text": "Explain Spread Spectrum Communication principles. Compare Direct Sequence Spread Spectrum (DSSS) and Frequency Hopping Spread Spectrum (FHSS). Define Pseudo-Noise (PN) sequence properties and calculate Processing Gain ($PG = B_{ss}/B$).",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "Spread spectrum expands signal transmission bandwidth well beyond minimum necessary information bandwidth using independent pseudo-random code. DSSS multiplies baseband data directly with high chip-rate PN sequence. FHSS shifts carrier frequency rapidly among wide set of hopping channels. Processing Gain PG = B_ss / B_info = T_b / T_c. High PG provides anti-jamming and low probability of intercept."
+    },
+    {
+      "chapter": "Spread Spectrum Systems and Multiple Access",
+      "text": "Compare Frequency Division Multiple Access (FDMA), Time Division Multiple Access (TDMA), and Code Division Multiple Access (CDMA) in terms of spectrum allocation, synchronization requirements, and the near-far effect.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2080 Chaitra",
+        "2078 Kartik",
+        "2075 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "FDMA assigns dedicated non-overlapping frequency bands with guard bands. TDMA allocates entire frequency channel in cyclically repeated time slots with guard times (requires precise frame synchronization). CDMA shares same frequency band continuously using orthogonal pseudo-random spreading codes (Walsh/Gold). Near-far problem occurs in CDMA when strong nearby transmitter drowns out distant user; solved by precise closed-loop power control."
+    },
+    {
+      "chapter": "Noise in Communication Systems and Optimum Receivers",
+      "text": "Define Additive White Gaussian Noise (AWGN), Equivalent Noise Temperature ($T_e$), and Noise Figure ($F$). Derive Friis' formula for the overall noise factor of a multi-stage cascaded amplifier: $F = F_1 + \\frac{F_2 - 1}{G_1} + \\frac{F_3 - 1}{G_1 G_2}$.",
+      "marks": "8",
+      "years": [
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2078 Bhadra",
+        "2074 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "AWGN has flat two-sided power spectral density S_N(f) = N_0/2 and Gaussian amplitude distribution. Noise figure F = (SNR_in) / (SNR_out) = 1 + T_e / T_0. Friis formula proves that first stage amplifier noise dominates the cascaded system: high first stage gain G_1 suppresses noise contributions from all succeeding stages."
+    },
+    {
+      "chapter": "Digital Baseband Transmission and Line Coding",
+      "text": "Explain the working of Delta Modulation (DM) system. Describe the causes and waveforms of Slope Overload Distortion and Granular Noise. How does Adaptive Delta Modulation (ADM) overcome these limitations?",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2079 Chaitra",
+        "2077 Magh",
+        "2073 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "DM transmits 1-bit per sample indicating whether signal increased (+Delta) or decreased (-Delta). Slope overload occurs when slope of input signal exceeds max tracking rate: |dm/dt| > Delta / T_s. Granular noise occurs when signal varies slowly compared to step size Delta. ADM dynamically increases step size during steep slopes and decreases step size during flat signal regions."
+    },
+    {
+      "chapter": "Digital Baseband Transmission and Line Coding",
+      "text": "What is an Eye Pattern (Eye Diagram)? Explain how an eye pattern is generated on an oscilloscope and how it is used to measure ISI, optimum sampling instant, timing jitter, sensitivity to timing error, and noise margin in digital communication systems.",
+      "marks": "6",
+      "years": [
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2078 Kartik",
+        "2075 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "Display formed by superimposing successive symbol waveforms synchronized to symbol clock rate on an oscilloscope. Eye opening height indicates noise margin against error. Optimum sampling instant is point of maximum eye opening. Eye width indicates time interval over which sampling can occur without error. Slope of eye edge measures sensitivity to timing jitter."
     }
+  ],
+  "chapters": [
+    "Introduction to Communication Systems",
+    "Spectral Analysis and Signal Transmission",
+    "Amplitude Modulation (AM) and Angle Modulation (FM/PM)",
+    "Digital Baseband Transmission and Line Coding",
+    "Bandpass Digital Transmission and Digital Modulation",
+    "Information Theory and Source Coding",
+    "Channel Coding and Error Detection/Correction",
+    "Spread Spectrum Systems and Multiple Access",
+    "Noise in Communication Systems and Optimum Receivers"
   ]
 }

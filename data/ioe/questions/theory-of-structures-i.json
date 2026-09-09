@@ -83,7 +83,7 @@
     },
     {
       "id": "tos1-6",
-      "question": "For a pin-jointed plane truss, calculate the vertical and horizontal deflection at a loaded joint due to: (i) external joint loads, (ii) a temperature change of 20°C in bottom chord members, and (iii) a fabrication lack of fit where one diagonal member is 3 mm too long. Take A = 800 mm^2, E = 200 GPa, and α = 1.2 × 10^-5 /°C.",
+      "question": "For a pin-jointed plane truss, calculate the vertical and horizontal deflection at a loaded joint due to: (i) external joint loads, (ii) a temperature change of 20\u00b0C in bottom chord members, and (iii) a fabrication lack of fit where one diagonal member is 3 mm too long. Take A = 800 mm^2, E = 200 GPa, and \u03b1 = 1.2 \u00d7 10^-5 /\u00b0C.",
       "frequency": 5,
       "marks": 10,
       "examSessions": [
@@ -268,6 +268,185 @@
       "chapter": "Simple Space Truss",
       "importance": "High",
       "difficulty": "Hard"
+    },
+    {
+      "chapter": "Strain Energy Method",
+      "text": "State Castigliano's First and Second Theorems. Apply Castigliano's Theorem to find the vertical and horizontal deflection at the free end of a curved quarter-circular cantilever beam or portal frame.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Castigliano Theorem 1: partial derivative of strain energy with respect to displacement equals corresponding applied force: dU/ddelta_i = P_i. Castigliano Theorem 2: partial derivative of complementary strain energy (or strain energy for linearly elastic material) with respect to force equals displacement: dU/dP_i = delta_i. For curved quarter-circular cantilever with vertical end load P: M(theta) = P R sin(theta); strain energy U = integral_0^{pi/2} [P^2 R^2 sin^2(theta) / (2EI)] R dtheta => delta_v = dU/dP = (pi P R^3) / (4EI)."
+    },
+    {
+      "chapter": "Virtual Work Method",
+      "text": "Explain the Principle of Virtual Work (Unit Load Method) for trusses: $\\Delta = \\sum \\frac{n N L}{A E}$. Determine the vertical deflection of a loaded lower chord joint of a statically determinate plane pin-jointed truss.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Real system has actual loads producing internal member axial forces N. Virtual system applies dummy unit load 1.0 at desired joint in desired deflection direction, producing internal member virtual forces n. Work-energy balance: 1.0 * Delta = sum n * Delta L = sum (n N L) / (A E). Tabulate members, length L, area A, real force N, virtual force n, and calculate sum (n N L / A E)."
+    },
+    {
+      "chapter": "Virtual Work Method",
+      "text": "Use the Unit Load Method (Dummy Unit Load method) to determine the vertical deflection and slope at the mid-span of a simply supported beam with non-prismatic variable flexural rigidity $E I$.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "For beams, virtual work equation is 1.0 * Delta = integral_0^L [m(x) M(x) / (E I)] dx, where M(x) is real bending moment due to applied loads, and m(x) is virtual bending moment due to dummy unit load at midspan. For slope theta, apply dummy unit moment 1.0 at midspan: 1.0 * theta = integral_0^L [m_theta(x) M(x) / (EI)] dx. Integrate piecewise across sections of varying flexural rigidity EI."
+    },
+    {
+      "chapter": "Strain Energy Method",
+      "text": "Explain Strain Energy stored due to axial force, bending moment ($U = \\int \\frac{M^2 dx}{2EI}$), shear force, and torsion. State and prove Betti's Law and Maxwell's Reciprocal Deflection Theorem.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Axial: U = integral N^2 dx / (2AE). Bending: U = integral M^2 dx / (2EI). Torsion: U = integral T^2 dx / (2GJ). Betti law: in any linearly elastic structure, virtual work done by system of forces P1 acting through displacements caused by system of forces P2 equals work done by P2 acting through displacements caused by P1: sum P1_i * delta_{2i} = sum P2_j * delta_{1j}. Maxwell reciprocal theorem (special case for unit loads): deflection at point j due to unit load at i equals deflection at i due to unit load at j: delta_ji = delta_ij."
+    },
+    {
+      "chapter": "Influence Lines for Simple Structures",
+      "text": "Construct Influence Line Diagrams (ILD) for support reactions, shear force, and bending moment at a given section $C$ of a simply supported beam. Calculate the maximum shear force and bending moment caused by a moving train of concentrated wheel loads.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "ILD represents variation of a structural response (reaction, shear, moment) at fixed section as unit load traverses across span. ILD for R_A is triangle from 1 at A to 0 at B. ILD for shear at C drops by 1.0 from x/L to -(L-x)/L. ILD for BM at C is triangle peaking at x(L-x)/L. For train of moving loads, maximum moment occurs under a load when that load divides beam in same ratio as section C divides span (average load on left = average load on right)."
+    },
+    {
+      "chapter": "Influence Lines for Simple Structures",
+      "text": "Construct Influence Line Diagrams for axial forces in the top chord, bottom chord, and vertical/diagonal web members of a Pratt or Warren truss under a rolling unit load on the bottom deck.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Pass imaginary vertical cut through panel containing target member. Top/bottom chord forces found by method of sections: taking moment about opposing joint yields chord force proportional to bending moment at that joint (triangular ILD). Web diagonal force found by vertical shear equilibrium: diagonal force F_diag = V_panel / sin(theta). ILD for diagonal mirrors panel shear, with linear transition between panel panel-point joints."
+    },
+    {
+      "chapter": "Statically Determinate Arches",
+      "text": "Analyze a Three-Hinged Parabolic Arch with hinges at both springings and crown. Derive the expression for horizontal thrust $H = \\frac{w L^2}{8 h}$ under a uniformly distributed load $w$ over the entire span, and prove that the resultant bending moment is identically zero everywhere.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Arch profile y = 4h x(L - x) / L^2. Vertical reactions V_A = V_B = w L / 2. Take moment about crown hinge C: sum M_c = 0 => V_A (L/2) - w (L/2)^2 / 2 - H * h = 0 => H = w L^2 / (8 h). At any section x: beam moment M_0(x) = (w L x / 2) - (w x^2 / 2) = w x (L - x) / 2. Arch bending moment M(x) = M_0(x) - H * y = w x (L - x) / 2 - [w L^2 / (8h)] * [4h x (L - x) / L^2] = 0 identically for all x, proving parabolic arch is funicular shape for UDL."
+    },
+    {
+      "chapter": "Statically Determinate Arches",
+      "text": "Analyze a Three-Hinged Circular Arch carrying concentrated point loads. Calculate the normal thrust ($N$) and radial shear ($Q$) at a section defined by angular coordinate $\\theta$ from the support.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Determine horizontal thrust H and vertical reactions V_A, V_B. At section x, vertical shear is V_x = V_A - sum W_left, and horizontal force is H. The tangent to arch axis makes angle theta with horizontal. Resolve forces along tangent and normal: Normal thrust N = H cos(theta) + V_x sin(theta); Radial shear Q = V_x cos(theta) - H sin(theta). Resultant axial compression reduces tensile flexural cracking."
+    },
+    {
+      "chapter": "Statically Determinate Arches",
+      "text": "Construct Influence Line Diagrams for horizontal thrust $H$, bending moment, normal thrust, and radial shear at a given section of a Three-Hinged Parabolic Arch.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "ILD for H: unit load at distance z from left support. For z <= L/2, taking moment about crown gives H = z / (2h); for z > L/2, H = (L - z) / (2h). Peak value of H is L / (4h) when unit load is at crown hinge. ILD for bending moment at section x is difference between beam moment ILD and arch thrust relief H * y: ILD(M_x) = ILD(M_0) - y * ILD(H), creating positive and negative lobes."
+    },
+    {
+      "chapter": "Suspension Cable Systems",
+      "text": "Derive the cable profile equation for a flexible suspension cable carrying a uniformly distributed load $w$ per horizontal meter. Derive cable tension $T = \\sqrt{H^2 + V^2}$, maximum tension at the support, and total cable length $S = L + \\frac{8h^2}{3L}$.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Flexible cable carries only axial tension. Differential equation of cable: d^2y/dx^2 = w / H. Integrating with y(0)=0 and dy/dx|_{x=L/2} = 0 yields parabolic profile y = 4h x(L - x) / L^2. Horizontal tension H is constant throughout. Vertical reaction V = w L / 2. Maximum tension occurs at highest support: T_max = sqrt(H^2 + V^2) = H sqrt(1 + (4h/L)^2). Arc length S = integral sqrt(1 + (dy/dx)^2) dx approx L + 8 h^2 / (3 L) using binomial expansion."
+    },
+    {
+      "chapter": "Suspension Cable Systems",
+      "text": "Analyze a Suspension Bridge with a Three-Hinged Stiffening Girder. Calculate the cable tension, uniform upward hanger tension, and draw bending moment and shear force diagrams for the stiffening girder under rolling point loads.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Stiffening girder distributes concentrated live loads uniformly to suspension cable via vertical hangers. Upward hanger load per unit length is w_e = 8 H h / L^2. Girder behaves as simply supported beam subjected to external live loads acting downwards and uniform hanger pull w_e acting upwards. Moment in girder M_g(x) = M_beam(x) - H * y(x). Since girder has crown hinge, moment at crown is zero, allowing determination of H."
+    },
+    {
+      "chapter": "Simple Space Truss",
+      "text": "Analyze a Statically Determinate Simple Space Truss using the Method of Tension Coefficients. Determine the member forces for a tripod or transmission tower subjected to horizontal and vertical joint loads.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Tension coefficient t_AB = T_AB / L_AB. Equilibrium equations for joint A in 3D: sum F_x = sum t_AB (x_B - x_A) + P_x = 0; sum F_y = sum t_AB (y_B - y_A) + P_y = 0; sum F_z = sum t_AB (z_B - z_A) + P_z = 0. Yields system of 3 linear algebraic equations per joint without resolving trigonometric direction cosines. Member axial force T_AB = t_AB * L_AB (positive tension, negative compression)."
+    },
+    {
+      "chapter": "Introduction",
+      "text": "Differentiate between Static Indeterminacy ($D_s$) and Kinematic Indeterminacy ($D_k$). Formulate degree of static indeterminacy ($D_s = D_{se} + D_{si}$) and kinematic indeterminacy for plane frames, space frames, and pin-jointed trusses with rigid and semi-rigid joints.",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Static indeterminacy (D_s) is number of unknown forces exceeding available equilibrium equations: D_se = r - 3 (external), D_si = 3m - 3j (internal for closed frame loops), total D_s = 3m + r - 3j - c (c = internal releases). Kinematic indeterminacy (D_k / degrees of freedom) is number of independent joint displacements (translations and rotations): D_k = 3j - r - m_ext (unextensible members). For plane truss D_s = m + r - 2j, D_k = 2j - r."
     }
+  ],
+  "chapters": [
+    "Introduction",
+    "Deflection of Beams",
+    "Virtual Work Method",
+    "Strain Energy Method",
+    "Influence Lines for Simple Structures",
+    "Statically Determinate Arches",
+    "Suspension Cable Systems",
+    "Simple Space Truss"
   ]
 }

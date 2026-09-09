@@ -161,6 +161,197 @@
         "2078 Chaitra"
       ],
       "frequency": 2
+    },
+    {
+      "chapter": "Introduction to Embedded Systems",
+      "text": "Compare RISC and CISC architectures in embedded processors. Explain Harvard vs Princeton (Von Neumann) memory architecture and their performance impact on pipelining.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "RISC uses single-cycle fixed-length instructions, load-store architecture, and large register sets suitable for low-power embedded microcontrollers. CISC provides complex multi-cycle instructions saving code space. Harvard provides independent program and data buses enabling simultaneous instruction fetch and data operand access, avoiding Von Neumann bus bottleneck in deep pipelines."
+    },
+    {
+      "chapter": "Interfacing and Communication Buses",
+      "text": "Explain the Controller Area Network (CAN) bus protocol. Describe CAN message frame format, bit stuffing, non-destructive bitwise arbitration using dominant and recessive bits, and error handling mechanisms in automotive applications.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "CAN is a differential two-wire (CAN_H, CAN_L) multi-master serial bus. Frame contains: SOF, 11-bit/29-bit Identifier, RTR, Control, 0-8 byte Data, CRC, and ACK. Bitwise arbitration: Dominant bit (0) overwrites Recessive bit (1); lowest ID has highest priority and transmits without corruption. Error handling uses bit monitoring, bit stuffing (5 consecutive identical bits trigger stuff bit), CRC check, frame check, and error counters."
+    },
+    {
+      "chapter": "Interfacing and Communication Buses",
+      "text": "Explain Serial Peripheral Interface (SPI) and Inter-Integrated Circuit ($I^2C$) bus protocols. Compare them with respect to clock synchronization, transmission speed, multi-master arbitration, and pin count.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "SPI is full-duplex synchronous 4-wire bus (MOSI, MISO, SCK, SS); simple hardware shift registers, fast data rates (>10 Mbps), but requires dedicated SS pin for every slave. I2C is half-duplex synchronous 2-wire bus (SDA, SCL) with open-drain pull-up topology; supports 7-bit/10-bit addressing, clock stretching, and multi-master arbitration with only 2 pins."
+    },
+    {
+      "chapter": "Real-Time Operating Systems (RTOS)",
+      "text": "Explain Priority Inversion in real-time embedded systems. Describe how Priority Inheritance Protocol (PIP) and Priority Ceiling Protocol (PCP) prevent unbounded priority inversion with an illustrative timing diagram.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "Priority inversion happens when a low-priority task holds a shared resource needed by high-priority task, while intermediate medium-priority tasks preempt low-priority task, delaying high-priority task indefinitely (Mars Pathfinder bug). PIP elevates priority of resource-holding low task to priority of waiting high task until resource release. PCP assigns priority ceiling to resource, preventing chained blocks and deadlocks."
+    },
+    {
+      "chapter": "Real-Time Operating Systems (RTOS)",
+      "text": "Explain Real-Time Task Scheduling algorithms: Rate Monotonic Scheduling (RMS) and Earliest Deadline First (EDF). State their utilization bounds $U = N(2^{1/N} - 1)$ and $U \\le 1$, and determine schedulability of a given periodic task set.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "RMS is static fixed-priority scheduling where tasks with shorter periods receive higher priority. Schedulable if sum(Ci/Ti) <= N(2^(1/N) - 1) (e.g. 69.3% as N -> infty). EDF is dynamic-priority scheduling where task with closest absolute deadline has highest priority; optimal on uniprocessor with schedulability condition sum(Ci/Ti) <= 1 (100% processor utilization)."
+    },
+    {
+      "chapter": "Microcontrollers and Assembly Programming",
+      "text": "Describe the architecture of ARM Cortex-M microcontrollers. Explain the NVIC (Nested Vectored Interrupt Controller), operational modes (Thread and Handler), and low-power sleep modes.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "32-bit RISC core with Thumb-2 instruction set. NVIC provides deterministic low-latency hardware interrupt handling with automatic register stacking/unstacking and tail-chaining. Modes: Thread mode (user application, Privileged/Unprivileged) and Handler mode (ISR execution, always Privileged). Low-power modes: Sleep, Deep Sleep, and Standby with wake-up interrupt controller."
+    },
+    {
+      "chapter": "Interfacing and Communication Buses",
+      "text": "Explain analog-to-digital converter (ADC) interfacing with microcontrollers. Compare Successive Approximation Register (SAR) ADC and Flash ADC in terms of conversion time, resolution, and hardware complexity.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "SAR ADC performs binary search comparing input with internal DAC output using n clock cycles for n-bit conversion; low power, moderate speed, compact chip area (standard in embedded microcontrollers). Flash ADC uses 2^n - 1 parallel comparators converting in single clock cycle; highest speed but exponential power and silicon area overhead."
+    },
+    {
+      "chapter": "Microcontrollers and Assembly Programming",
+      "text": "What is a Watchdog Timer (WDT) in embedded systems? How does it safeguard system reliability in critical automotive and industrial controllers against infinite loops or software hangs?",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Hardware countdown timer clocked independently of main processor. Application software must periodically refresh (service/kick) watchdog before timeout counter reaches zero. If processor hangs in infinite loop or crashes due to electrostatic discharge, timer underflows and asserts hardware system reset, automatically restoring normal operation."
+    },
+    {
+      "chapter": "Custom Single Purpose Processor Design",
+      "text": "Explain Custom Single-Purpose Processor (FSMD) design for an embedded computing module. Design the datapath and control unit (Finite State Machine with Data) to compute the Greatest Common Divisor (GCD) of two 8-bit numbers using Euclid's subtraction algorithm.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "FSMD separates system into Datapath (registers X, Y, subtractor, comparator X > Y, X < Y, X == Y) and Control Unit (state machine). States: S_START (load inputs), S_COMPARE (check equality), S_SUB_X (X = X - Y if X > Y), S_SUB_Y (Y = Y - X if Y > X), S_DONE (assert ready flag and output X). Generates register load and mux control signals."
+    },
+    {
+      "chapter": "IC Technology and Design Trends",
+      "text": "Compare Full-Custom ASIC, Semi-Custom ASIC (Standard Cell and Gate Array), and Field Programmable Gate Array (FPGA) design methodologies in terms of Non-Recurring Engineering (NRE) cost, unit cost, performance, and time-to-market.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Full-custom: maximum performance and density, lowest unit cost at ultra-high volume, but massive NRE cost and months of fabrication time. Standard cell: pre-designed verified logic blocks, lower design cost. Gate array: prefabricated transistor gates customized by metal layers. FPGA: reprogrammable SRAM/LUT fabric, zero NRE cost, instant time-to-market, but higher unit cost and lower clock speed."
+    },
+    {
+      "chapter": "Introduction to Embedded Systems",
+      "text": "Explain Memory Hierarchy and Cache Memory in high-performance embedded systems. Discuss cache mapping techniques (Direct Mapped, Fully Associative, Set-Associative) and cache write policies (Write-Through vs Write-Back).",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2079 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Hierarchy: CPU registers -> L1/L2 Cache (SRAM) -> Main RAM (DRAM) -> Flash ROM. Direct mapped: each block maps to exactly one cache line (simple, high conflict misses). Fully associative: block can reside in any cache line (requires expensive content-addressable memory). Set-associative: block maps to any slot within a set of k ways. Write-Through updates cache and RAM simultaneously; Write-Back updates RAM only upon dirty line eviction."
+    },
+    {
+      "chapter": "Interfacing and Communication Buses",
+      "text": "Describe Direct Memory Access (DMA) controller operation in embedded systems. Explain Burst mode, Cycle Stealing mode, and Transparent mode of DMA transfer.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "DMA transfers high-speed data directly between peripherals and memory without CPU intervention, freeing processor cycles. CPU initializes DMA registers (source address, destination address, byte count). Burst mode: DMA retains bus until complete data block is transferred. Cycle stealing: DMA takes bus for single word transfers between CPU cycles. Transparent mode: DMA transfers only when CPU uses internal buses without accessing system bus."
+    },
+    {
+      "chapter": "Real-Time Operating Systems (RTOS)",
+      "text": "Explain Inter-Process Communication (IPC) and Synchronization mechanisms in RTOS: Binary Semaphores, Counting Semaphores, Mutexes with ownership, and Message Queues. Explain conditions leading to Deadlock and Coffman's conditions.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Semaphores signal event occurrences between ISRs and tasks. Mutex enforces mutual exclusion with priority inheritance and owner tracking. Message queue provides buffered asynchronous FIFO data exchange between tasks. Deadlock occurs when 4 Coffman conditions hold: Mutual Exclusion, Hold and Wait, No Preemption, Circular Wait. Avoided by lock ordering protocols or timeouts."
+    },
+    {
+      "chapter": "IC Technology and Design Trends",
+      "text": "What is Low-Power Embedded Design? Explain dynamic power dissipation $P_{dyn} = \\alpha C V_{dd}^2 f$ and static leakage current. Discuss Dynamic Voltage and Frequency Scaling (DVFS) and power gating techniques.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2080 Ashwin",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Dynamic power comes from charging/discharging load capacitances and switching activity alpha. Static power arises from sub-threshold leakage in nanoscale transistors. DVFS scales voltage and clock frequency down proportionally during low workload periods, yielding cubic energy savings since P is proportional to V^2 * f. Power gating shuts off power rail to idle peripheral modules using sleep transistors."
     }
+  ],
+  "chapters": [
+    "Introduction to Embedded Systems",
+    "Microcontrollers and Assembly Programming",
+    "Interfacing and Communication Buses",
+    "Real-Time Operating Systems (RTOS)",
+    "Custom Single Purpose Processor Design",
+    "IC Technology and Design Trends"
   ]
 }

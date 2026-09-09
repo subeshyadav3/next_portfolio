@@ -54,7 +54,7 @@
     },
     {
       "id": "fe-4",
-      "question": "Differentiate between finite and infinite slopes. Describe the Swedish slip circle method (Method of Slices) and Bishop's simplified method for evaluating the factor of safety of finite slopes in c-φ soils.",
+      "question": "Differentiate between finite and infinite slopes. Describe the Swedish slip circle method (Method of Slices) and Bishop's simplified method for evaluating the factor of safety of finite slopes in c-\u03c6 soils.",
       "frequency": 5,
       "marks": 8,
       "examSessions": [
@@ -86,7 +86,7 @@
     },
     {
       "id": "fe-6",
-      "question": "A retaining wall of 6 m height supports a two-layered backfill. The upper layer is 3 m dry sand (γ = 17.5 kN/m^3, φ = 30°), overlying saturated sandy clay (γ_sat = 19 kN/m^3, φ = 20°, c = 10 kPa) with the water table at 3 m depth. Draw the lateral active earth pressure distribution diagram and calculate the total active thrust per meter length and its point of application.",
+      "question": "A retaining wall of 6 m height supports a two-layered backfill. The upper layer is 3 m dry sand (\u03b3 = 17.5 kN/m^3, \u03c6 = 30\u00b0), overlying saturated sandy clay (\u03b3_sat = 19 kN/m^3, \u03c6 = 20\u00b0, c = 10 kPa) with the water table at 3 m depth. Draw the lateral active earth pressure distribution diagram and calculate the total active thrust per meter length and its point of application.",
       "frequency": 5,
       "marks": 8,
       "examSessions": [
@@ -118,7 +118,7 @@
     },
     {
       "id": "fe-8",
-      "question": "A circular footing of 2.5 m diameter carries a gross column load of 2000 kN. The supporting soil is clayey sand (φ = 30°, γ = 19 kN/m^3). Using Terzaghi's theory, determine the depth at which the footing must be placed to ensure a factor of safety of 3. (Take Nc = 37.2, Nq = 22.5, Nγ = 19.7).",
+      "question": "A circular footing of 2.5 m diameter carries a gross column load of 2000 kN. The supporting soil is clayey sand (\u03c6 = 30\u00b0, \u03b3 = 19 kN/m^3). Using Terzaghi's theory, determine the depth at which the footing must be placed to ensure a factor of safety of 3. (Take Nc = 37.2, Nq = 22.5, N\u03b3 = 19.7).",
       "frequency": 5,
       "marks": 8,
       "examSessions": [
@@ -165,7 +165,7 @@
     },
     {
       "id": "fe-11",
-      "question": "What is a floating (fully compensated) raft foundation? A raft foundation of 20 m x 30 m is constructed over a soft clay stratum having cu = 30 kN/m^2 and γ = 19 kN/m^3. Calculate the required depth of the foundation for: (i) fully compensated foundation, and (ii) a factor of safety of 3 against bearing capacity failure under total working load.",
+      "question": "What is a floating (fully compensated) raft foundation? A raft foundation of 20 m x 30 m is constructed over a soft clay stratum having cu = 30 kN/m^2 and \u03b3 = 19 kN/m^3. Calculate the required depth of the foundation for: (i) fully compensated foundation, and (ii) a factor of safety of 3 against bearing capacity failure under total working load.",
       "frequency": 5,
       "marks": 8,
       "examSessions": [
@@ -197,7 +197,7 @@
     },
     {
       "id": "fe-13",
-      "question": "A 30 cm square precast concrete pile of 15 m length is driven into a deposit of medium dense sand (φ = 36°, Nq = 42, γ = 18 kN/m^3). Determine the allowable load carrying capacity of the pile using a factor of safety of 3.",
+      "question": "A 30 cm square precast concrete pile of 15 m length is driven into a deposit of medium dense sand (\u03c6 = 36\u00b0, Nq = 42, \u03b3 = 18 kN/m^3). Determine the allowable load carrying capacity of the pile using a factor of safety of 3.",
       "frequency": 5,
       "marks": 8,
       "examSessions": [
@@ -274,6 +274,191 @@
       "chapter": "Retaining Structures: Rigid and Flexible",
       "importance": "High",
       "difficulty": "Hard"
+    },
+    {
+      "id": "fe-18",
+      "question": "Describe Cone Penetration Testing (CPT and CPTu). Explain cone tip resistance ($q_c$), sleeve friction ($f_s$), and friction ratio ($R_f$). How are CPT data used for soil profiling and continuous determination of undrained shear strength ($s_u$)?",
+      "frequency": 3,
+      "marks": 6,
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2079 Chaitra"
+      ],
+      "chapter": "Geotechnical Investigation",
+      "importance": "High",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "fe-19",
+      "question": "Explain the pressuremeter test (PMT) and flat dilatometer test (DMT). What geotechnical parameters (in-situ horizontal stress, deformation modulus, undrained shear strength) are derived from these in-situ testing techniques?",
+      "frequency": 3,
+      "marks": 6,
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "chapter": "Geotechnical Investigation",
+      "importance": "Medium",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "fe-20",
+      "question": "Derive Terzaghi's ultimate bearing capacity equation for a continuous strip footing on cohesive-frictional soil: $q_{ult} = c N_c + q N_q + \\frac{1}{2}\\gamma B N_\\gamma$. State all assumptions and explain the zone of elastic equilibrium, radial shear zone, and passive Rankine zone.",
+      "frequency": 4,
+      "marks": 8,
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Baishakh",
+        "2078 Bhadra",
+        "2076 Chaitra"
+      ],
+      "chapter": "Bearing Capacity Theories",
+      "importance": "High",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "fe-21",
+      "question": "Explain the effect of water table location on the bearing capacity of shallow foundations. Formulate the modified bearing capacity equation when the water table is: (a) at ground level, (b) at the base of the footing, and (c) at depth $d_w < B$ below the footing base.",
+      "frequency": 3,
+      "marks": 6,
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2079 Baishakh"
+      ],
+      "chapter": "Bearing Capacity Theories",
+      "importance": "High",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "fe-22",
+      "question": "A square footing $2\\text{ m} \\times 2\\text{ m}$ is located at a depth of $1.5\\text{ m}$ in a sand deposit with $\\gamma = 18\\text{ kN/m}^3$, $\\gamma_{sat} = 20\\text{ kN/m}^3$, and $\\phi' = 35^\\circ$. For $\\phi' = 35^\\circ$, $N_q = 33.3$, $N_\\gamma = 48.0$. Determine the safe bearing capacity with a factor of safety of 3.0 when: (i) the water table is well below the footing, (ii) the water table rises to the ground surface.",
+      "frequency": 4,
+      "marks": 8,
+      "examSessions": [
+        "2082 Bhadra",
+        "2081 Baishakh",
+        "2078 Chaitra",
+        "2075 Bhadra"
+      ],
+      "chapter": "Bearing Capacity Theories",
+      "importance": "High",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "fe-23",
+      "question": "Explain the components of settlement of shallow foundations: immediate (elastic) settlement ($S_i$), primary consolidation settlement ($S_c$), and secondary compression ($S_s$). How is immediate settlement calculated using Janbu or Fox's depth influence factor?",
+      "frequency": 3,
+      "marks": 8,
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "chapter": "Analysis of Shallow Foundation",
+      "importance": "High",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "fe-24",
+      "question": "Explain the permissible total settlement and differential settlement criteria for foundations in sand and clay according to IS / NBC codes. What are the structural consequences of excessive angular distortion ($\\delta/L > 1/500$)?",
+      "frequency": 3,
+      "marks": 6,
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Bhadra",
+        "2077 Chaitra"
+      ],
+      "chapter": "Analysis of Shallow Foundation",
+      "importance": "High",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "fe-25",
+      "question": "Explain Bishop's Simplified Method of slices for stability analysis of circular slip surfaces. Derive the expression for the factor of safety: $F_s = \\frac{\\sum [c' b + (W - u b)\\tan \\phi'] \\frac{1}{m_\\alpha}}{\\sum W \\sin \\alpha}$ where $m_\\alpha = \\cos \\alpha (1 + \\frac{\\tan \\alpha \\tan \\phi'}{F_s})$.",
+      "frequency": 4,
+      "marks": 8,
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2077 Magh",
+        "2075 Bhadra"
+      ],
+      "chapter": "Slope Stability Analysis",
+      "importance": "High",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "fe-26",
+      "question": "Explain Taylor's Stability Number ($S_n = \\frac{c}{F_c \\gamma H}$) method for homogeneous cohesive soil slopes. A cutting in clay has a slope angle of $30^\\circ$ and depth $8\\text{ m}$. Given $\\gamma = 19\\text{ kN/m}^3$, $c = 30\\text{ kN/m}^2$, $\\phi = 0^\\circ$, and Taylor's stability number $S_n = 0.18$. Calculate the factor of safety against shear failure.",
+      "frequency": 3,
+      "marks": 6,
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2078 Chaitra"
+      ],
+      "chapter": "Slope Stability Analysis",
+      "importance": "High",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "fe-27",
+      "question": "Explain pile group action. Define group efficiency ($\\eta_g$). How is the settlement of a pile group in saturated cohesive soil estimated using an equivalent raft foundation located at two-thirds depth ($2/3 D$) of the embedment?",
+      "frequency": 3,
+      "marks": 8,
+      "examSessions": [
+        "2083 Baishakh",
+        "2082 Chaitra",
+        "2080 Chaitra"
+      ],
+      "chapter": "Analysis of Deep Foundation",
+      "importance": "High",
+      "difficulty": "Medium"
+    },
+    {
+      "id": "fe-28",
+      "question": "Describe the static pile load test procedure according to IS 2911 (cyclic and maintained load tests). How are the safe working load and ultimate bearing capacity determined from load-settlement curves?",
+      "frequency": 3,
+      "marks": 6,
+      "examSessions": [
+        "2081 Bhadra",
+        "2079 Baishakh",
+        "2077 Magh"
+      ],
+      "chapter": "Analysis of Deep Foundation",
+      "importance": "Medium",
+      "difficulty": "Easy"
+    },
+    {
+      "id": "fe-29",
+      "question": "Explain the lateral load capacity of vertical piles. Differentiate between short (rigid) piles and long (flexible) piles based on Broms' theory in cohesive and cohesionless soils.",
+      "frequency": 3,
+      "marks": 6,
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Baishakh",
+        "2076 Bhadra"
+      ],
+      "chapter": "Analysis of Deep Foundation",
+      "importance": "Medium",
+      "difficulty": "Hard"
+    },
+    {
+      "id": "fe-30",
+      "question": "Explain the design and stability principles of Mechanically Stabilized Earth (MSE) / Reinforced Earth retaining walls. Discuss internal stability (reinforcement tensile rupture and pullout) and external stability (sliding, overturning, bearing capacity).",
+      "frequency": 3,
+      "marks": 8,
+      "examSessions": [
+        "2083 Baishakh",
+        "2081 Chaitra",
+        "2078 Bhadra"
+      ],
+      "chapter": "Retaining Structures: Rigid and Flexible",
+      "importance": "High",
+      "difficulty": "Medium"
     }
   ]
 }

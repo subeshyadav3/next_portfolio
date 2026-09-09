@@ -17,113 +17,437 @@
       "chapter": "Data Models and the Relational Database Model",
       "text": "Design an Entity-Relationship (ER) diagram for a Hospital Management System (or University / E-Commerce system) with given requirements. Identify strong and weak entity sets, primary keys, composite and multivalued attributes, cardinality ratios (1:1, 1:N, M:N), and participation constraints. Convert the ER diagram into relational schemas.",
       "marks": "10",
-      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Baisakh", "2076 Bhadra"],
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Baisakh",
+        "2076 Bhadra"
+      ],
       "frequency": 8
     },
     {
       "chapter": "Database Design and Normalization",
       "text": "Define Functional Dependency and Attribute Closure ($X^+$). Given relation schema $R(A, B, C, D, E)$ with functional dependencies $F = \\{A \\to B, BC \\to D, E \\to C, D \\to A\\}$, find all candidate keys of $R$. Determine whether the decomposition of $R$ into $R_1(A, B, C)$ and $R_2(C, D, E)$ is lossless-join and dependency-preserving. Differentiate 3NF and BCNF.",
       "marks": "10",
-      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Baisakh", "2075 Bhadra"],
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Baisakh",
+        "2075 Bhadra"
+      ],
       "frequency": 8
     },
     {
       "chapter": "Integrity Constraints and Relational Algebra",
       "text": "Consider the relational schema: Student(sid, name, age, major, dept_id), Course(cid, title, credits, dept_id), Enrollment(sid, cid, semester, year, grade), Professor(pid, name, salary, dept_id). Write relational algebra expressions for: (a) Find sid and name of students enrolled in 'Database Systems', (b) List cid and title of courses with credits > 4 in 'Computer Science', (c) Increase salary of professors in 'Mathematics' by 15%.",
       "marks": "8",
-      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Baisakh", "2076 Bhadra"],
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Baisakh",
+        "2076 Bhadra"
+      ],
       "frequency": 8
     },
     {
       "chapter": "SQL (Structured Query Language)",
       "text": "Given the relational schemas: Employee(empid, name, address, title, deptid), Project(pid, pname, budget, location), Works_On(empid, pid, responsibility, duration), Payment(title, salary). Write SQL queries to: (a) Create the tables with primary and foreign key constraints, (b) Find employees working on 'ICT' project earning > 20K, (c) Count projects running > 2 years, (d) Update employee salaries based on salary slabs.",
       "marks": "8",
-      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Baisakh", "2074 Ashwin"],
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Baisakh",
+        "2074 Ashwin"
+      ],
       "frequency": 8
     },
     {
       "chapter": "Transaction Processing and Concurrency Control",
       "text": "Explain ACID properties (Atomicity, Consistency, Isolation, Durability) of database transactions with concrete examples. Draw the transaction lifecycle state transition diagram (Active, Partially Committed, Committed, Failed, Aborted).",
       "marks": "6",
-      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Baisakh", "2075 Bhadra"],
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Baisakh",
+        "2075 Bhadra"
+      ],
       "frequency": 8
     },
     {
       "chapter": "Transaction Processing and Concurrency Control",
       "text": "Explain the Two-Phase Locking (2PL) protocol: Basic 2PL, Strict 2PL, and Rigorous 2PL. Prove how 2PL guarantees conflict serializability. What are the deadlock prevention schemes: Wait-Die scheme and Wound-Wait scheme based on transaction timestamps?",
       "marks": "8",
-      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Bhadra", "2074 Ashwin"],
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Bhadra",
+        "2074 Ashwin"
+      ],
       "frequency": 8
     },
     {
       "chapter": "Crash Recovery",
       "text": "Explain Log-Based Recovery techniques: Immediate Database Modification vs Deferred Database Modification. What is checkpointing in database recovery? Describe how the recovery manager uses checkpoints and log records to execute UNDO and REDO operations after a system crash.",
       "marks": "8",
-      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Baisakh", "2073 Chaitra"],
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Baisakh",
+        "2073 Chaitra"
+      ],
       "frequency": 8
     },
     {
       "chapter": "Query Processing and Optimization",
       "text": "What are the different steps involved in query processing? Explain how an SQL query is translated into relational algebra and an initial query evaluation tree. Explain query optimization approaches using equivalence rules and cost estimation.",
       "marks": "8",
-      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Bhadra"],
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Bhadra"
+      ],
       "frequency": 7
     },
     {
       "chapter": "Storage and File Structures: Indexing and Hashing",
       "text": "What is indexing in databases? Differentiate between Primary Index, Clustering Index, and Secondary Index, and compare Dense vs Sparse indices. Explain the structure of B+ Trees and why B+ Trees are preferred over binary search trees for disk storage.",
       "marks": "8",
-      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Baisakh"],
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Baisakh"
+      ],
       "frequency": 7
     },
     {
       "chapter": "Introduction to Database Systems",
       "text": "Explain the Three-Schema Architecture (Internal/Physical, Conceptual, External/View levels) of DBMS. Define Data Independence and differentiate between Logical Data Independence and Physical Data Independence with examples.",
       "marks": "6",
-      "years": ["2082 Kartik", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Baisakh", "2074 Ashwin"],
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Baisakh",
+        "2074 Ashwin"
+      ],
       "frequency": 7
     },
     {
       "chapter": "Integrity Constraints and Relational Algebra",
       "text": "Explain Referential Integrity constraints in relational databases. What are the different possibilities and actions (RESTRICT, CASCADE, SET NULL, SET DEFAULT) on foreign keys when an update or delete violation occurs?",
       "marks": "6",
-      "years": ["2082 Kartik", "2081 Ashwin", "2081 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Bhadra", "2073 Chaitra"],
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Bhadra",
+        "2073 Chaitra"
+      ],
       "frequency": 7
     },
     {
       "chapter": "Transaction Processing and Concurrency Control",
       "text": "Define Serializability. Differentiate between Conflict Serializability and View Serializability. Construct the precedence graph (serialization graph) for a given concurrent transaction schedule and determine if it is conflict serializable.",
       "marks": "6",
-      "years": ["2081 Ashwin", "2081 Chaitra", "2080 Chaitra", "2078 Chaitra", "2076 Baisakh", "2075 Bhadra"],
+      "years": [
+        "2081 Ashwin",
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2078 Chaitra",
+        "2076 Baisakh",
+        "2075 Bhadra"
+      ],
       "frequency": 6
     },
     {
       "chapter": "Storage and File Structures: Indexing and Hashing",
       "text": "What is the purpose of using RAID? Compare RAID Level 0 (Striping), RAID Level 1 (Mirroring), RAID Level 5 (Distributed Parity), and RAID Level 10 (Striped Mirrors) in terms of storage efficiency, performance, and fault tolerance.",
       "marks": "6",
-      "years": ["2081 Ashwin", "2080 Chaitra", "2079 Chaitra", "2078 Chaitra", "2076 Bhadra", "2074 Ashwin"],
+      "years": [
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Bhadra",
+        "2074 Ashwin"
+      ],
       "frequency": 6
     },
     {
       "chapter": "Data Models and the Relational Database Model",
       "text": "Define and differentiate between Super Key, Candidate Key, Primary Key, Alternate Key, and Foreign Key with an illustrative schema. What is a surrogate key?",
       "marks": "4",
-      "years": ["2082 Kartik", "2081 Chaitra", "2080 Chaitra", "2079 Chaitra", "2076 Baisakh", "2073 Chaitra"],
+      "years": [
+        "2082 Kartik",
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2076 Baisakh",
+        "2073 Chaitra"
+      ],
       "frequency": 6
     },
     {
       "chapter": "Introduction to Database Systems",
       "text": "Differentiate between Centralized and Distributed Database Systems. Explain data fragmentation (Horizontal, Vertical, and Mixed fragmentation) and data replication schemes.",
       "marks": "6",
-      "years": ["2082 Kartik", "2081 Ashwin", "2079 Chaitra", "2078 Chaitra", "2076 Baisakh"],
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Baisakh"
+      ],
       "frequency": 5
     },
     {
       "chapter": "Introduction to Database Systems",
       "text": "Explain Data Warehouse architecture and its key characteristics: subject-oriented, integrated, time-variant, and non-volatile. Differentiate between OLTP (Online Transaction Processing) and OLAP (Online Analytical Processing).",
       "marks": "6",
-      "years": ["2082 Kartik", "2081 Ashwin", "2080 Chaitra", "2078 Chaitra", "2076 Bhadra"],
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Chaitra",
+        "2078 Chaitra",
+        "2076 Bhadra"
+      ],
       "frequency": 5
+    },
+    {
+      "chapter": "Transaction Processing and Concurrency Control",
+      "text": "Define Deadlock in DBMS. Explain Deadlock Detection using Wait-For Graph (WFG) and recovery mechanisms (selection of a victim, rollback, starvation). Compare Deadlock Prevention schemes: Wait-Die vs Wound-Wait.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2079 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "Deadlock occurs when transactions wait circularly for locks held by each other. Wait-For Graph has directed edge Ti -> Tj if Ti waits for Tj; cycle indicates deadlock. Victim selection considers transaction age, cost of rollback, and number of updates. Wait-Die is non-preemptive (older waits, younger dies); Wound-Wait is preemptive (older wounds younger, younger waits)."
+    },
+    {
+      "chapter": "Storage and File Structures: Indexing and Hashing",
+      "text": "Explain B+ Tree Indexing. Show how B+ tree insertion and node splitting algorithms operate. Construct a B+ tree of order $p = 4$ for inserting keys: 10, 20, 30, 40, 50, 60, 70, 80. Why is B+ tree preferred over B-tree for database index files?",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2078 Kartik",
+        "2075 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "B+ tree is a balanced search tree where all data pointers reside in leaf nodes, linked sequentially for range queries. Internal nodes store search keys as routers. Max keys per node = p-1. Insertion splits leaf when full, promoting median key to parent. Preferred because leaf link enables fast range scans and higher branching factor due to smaller internal node size."
+    },
+    {
+      "chapter": "Storage and File Structures: Indexing and Hashing",
+      "text": "Explain Static Hashing and Dynamic Hashing. Discuss Extendible Hashing with bucket address table, global directory depth ($d$), and local bucket depth ($d_i$) during bucket splitting and directory doubling.",
+      "marks": "8",
+      "years": [
+        "2081 Ashwin",
+        "2079 Chaitra",
+        "2076 Ashwin",
+        "2073 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "Static hashing uses fixed number of buckets causing overflow chains as database grows. Extendible hashing uses hash function yielding binary string; global depth d determines directory size 2^d. If bucket overflows and local depth di = d, directory doubles (d becomes d+1). If di < d, only bucket splits and local depth increments."
+    },
+    {
+      "chapter": "Database Design and Normalization",
+      "text": "Differentiate between Lossless Join Decomposition and Dependency Preserving Decomposition. Given relation schema $R(A, B, C, D)$ and FDs $A \\to B, B \\to C, C \\to D, D \\to A$, test if decomposition into $R_1(A, B), R_2(B, C), R_3(C, D)$ is lossless and dependency preserving.",
+      "marks": "8",
+      "years": [
+        "2081 Ashwin",
+        "2080 Ashwin",
+        "2078 Bhadra",
+        "2074 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "Lossless join ensures natural join reconstructs original relation without spurious tuples (R1 intersect R2 -> R1 or R2). Dependency preservation ensures all FDs in F can be enforced by individual decomposed relations without computing joins. Use chase tableau: R1(A,B), R2(B,C), R3(C,D) has R1 intersect R2 = B, B+ = BCDA (superkey of R2, lossless). Check D -> A: not directly preserved without join."
+    },
+    {
+      "chapter": "Transaction Processing and Concurrency Control",
+      "text": "Explain Thomas' Write Rule and Timestamp-Based Concurrency Control protocol. How does it guarantee conflict serializability and freedom from deadlock?",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2079 Chaitra",
+        "2077 Magh",
+        "2074 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "Timestamp protocol assigns unique monotonic timestamp TS(Ti) to transactions and maintains W-timestamp(Q) and R-timestamp(Q). Write is rejected and Ti aborted if TS(Ti) < R-timestamp(Q). Thomas Write Rule modifies this: if TS(Ti) < W-timestamp(Q), ignore the obsolete write instead of aborting Ti, allowing greater concurrency."
+    },
+    {
+      "chapter": "SQL (Structured Query Language)",
+      "text": "What are Views in SQL? Explain the concept of Updatable Views and conditions under which a view cannot be updated. Explain View Materialization and View Maintenance strategies.",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2078 Kartik",
+        "2075 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "View is a virtual table defined by an SQL query. Updatable views must derive from a single base table without aggregate functions, DISTINCT, GROUP BY, or set operators. View materialization physically stores the view result on disk; view maintenance updates materialized views incrementally upon base relation modifications."
+    },
+    {
+      "chapter": "Crash Recovery",
+      "text": "Explain Shadow Paging recovery technique and compare it with Log-Based Recovery in terms of commit overhead, garbage collection, and checkpointing.",
+      "marks": "6",
+      "years": [
+        "2080 Ashwin",
+        "2077 Magh",
+        "2075 Chaitra",
+        "2072 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "Shadow paging maintains two page tables: Current Page Table and Shadow Page Table. Writes are performed on new copies of disk blocks; at commit, current page table pointer replaces shadow page table pointer atomically. No UNDO/REDO log needed. Drawbacks: data fragmentation, large page table overhead, and complex garbage collection of unreferenced blocks."
+    },
+    {
+      "chapter": "Query Processing and Optimization",
+      "text": "What are Heuristic Optimization techniques for relational algebra queries? Explain the push-down selection ($\\sigma$) and projection ($\\pi$) rules to minimize intermediate relation sizes with an annotated query tree.",
+      "marks": "8",
+      "years": [
+        "2083 Chaitra",
+        "2080 Ashwin",
+        "2078 Bhadra",
+        "2076 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "Heuristic optimization transforms relational algebra query tree into an equivalent more efficient form using algebraic equivalence rules. Primary heuristics: push select operations down as far as possible (early reduction of cardinality), push project operations down (dropping unnecessary columns), and combine selections with Cartesian products into joins."
+    },
+    {
+      "chapter": "Crash Recovery",
+      "text": "Explain the Checkpoint mechanism in database crash recovery. How does the recovery manager use Fuzzy Checkpointing or Checkpointing with active transaction lists to minimize recovery time?",
+      "marks": "6",
+      "years": [
+        "2082 Kartik",
+        "2080 Ashwin",
+        "2076 Ashwin",
+        "2073 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "Checkpoint flushes modified buffer pages (dirty blocks) and log records to stable storage. During crash recovery, log analysis starts from checkpoint record rather than beginning of log. Active transaction list records all transactions running at checkpoint. Prevents redundant REDO operations for transactions already committed before the checkpoint."
+    },
+    {
+      "chapter": "Data Models and the Relational Database Model",
+      "text": "Explain Generalization, Specialization, and Aggregation in Extended Entity-Relationship (EER) modeling. Differentiate between Disjoint vs Overlapping and Total vs Partial specialization constraints.",
+      "marks": "6",
+      "years": [
+        "2081 Ashwin",
+        "2079 Chaitra",
+        "2076 Chaitra",
+        "2071 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "Generalization is bottom-up abstraction synthesizing common attributes of lower-level entities into a higher-level superclass. Specialization is top-down differentiation into subclasses. Aggregation represents a relationship between relationships. Disjointness: entity belongs to at most one subclass (d) or multiple (o). Completeness: Total (double line, must belong to a subclass) or Partial (single line)."
+    },
+    {
+      "chapter": "Database Design and Normalization",
+      "text": "What are Multivalued Dependencies (MVD) and Join Dependencies? Define Fourth Normal Form (4NF) and Fifth Normal Form (5NF / Project-Join Normal Form) with illustrative counterexamples of redundancy.",
+      "marks": "6",
+      "years": [
+        "2080 Ashwin",
+        "2078 Bhadra",
+        "2075 Chaitra",
+        "2072 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "MVD alpha ->-> beta states that beta values are independent of other attributes for a given alpha. 4NF requires all non-trivial MVDs to have a superkey on the LHS. 5NF (PJNF) applies when a relation cannot be losslessly decomposed into smaller projections without losing information unless every join dependency is implied by candidate keys."
+    },
+    {
+      "chapter": "Transaction Processing and Concurrency Control",
+      "text": "Explain Granularity of Data Items and Multiple Granularity Locking (MGL) protocol. Describe intention lock modes (IS, IX, SIX) and provide the lock compatibility matrix in a hierarchical database lock tree.",
+      "marks": "8",
+      "years": [
+        "2082 Kartik",
+        "2079 Chaitra",
+        "2075 Ashwin",
+        "2073 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "Granularity defines the size of data items locked (database, area, file, page, record). MGL allows locking nodes at different tree levels. Intention locks signal locks held lower in hierarchy: IS (intention shared), IX (intention exclusive), SIX (shared + intention exclusive). Lock tree must be traversed root-to-leaf, releasing leaf-to-root."
+    },
+    {
+      "chapter": "Storage and File Structures: Indexing and Hashing",
+      "text": "Explain Dense Index versus Sparse Index, and Clustered versus Non-Clustered Indexing. When is a sparse index preferred over a dense index on a primary key file?",
+      "marks": "6",
+      "years": [
+        "2083 Chaitra",
+        "2081 Ashwin",
+        "2077 Magh",
+        "2074 Chaitra"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "Dense index contains an index record for every search-key value in file. Sparse index contains index records for only some search-key values (typically one per disk block). Sparse index requires file to be physically sorted by search key. Sparse is preferred for sorted primary files because it fits in main memory and drastically lowers disk I/O overhead."
+    },
+    {
+      "chapter": "Introduction to Database Systems",
+      "text": "What is NoSQL Database? Compare Relational DBMS and NoSQL (Document, Key-Value, Columnar, Graph) database models with respect to schema flexibility, horizontal scalability, and ACID vs BASE consistency properties.",
+      "marks": "8",
+      "years": [
+        "2083 Chaitra",
+        "2082 Kartik",
+        "2081 Ashwin",
+        "2080 Ashwin"
+      ],
+      "frequency": 4,
+      "frequencyTier": "Very High",
+      "solutionOutline": "NoSQL provides schema-less, distributed, highly available data storage for unstructured/semi-structured big data. Key-Value (Redis), Document (MongoDB), Columnar (Cassandra), Graph (Neo4j). RDBMS guarantees ACID with vertical scaling; NoSQL follows BASE (Basically Available, Soft state, Eventual consistency) with horizontal scale-out."
     }
   ]
 }

@@ -211,7 +211,7 @@
     },
     {
       "id": "tos2-14",
-      "question": "State and explain the Müller-Breslau principle. Prove that the Müller-Breslau principle is applicable to indeterminate beams as well as determinate structures.",
+      "question": "State and explain the M\u00fcller-Breslau principle. Prove that the M\u00fcller-Breslau principle is applicable to indeterminate beams as well as determinate structures.",
       "frequency": 5,
       "marks": 6,
       "examSessions": [
@@ -227,7 +227,7 @@
     },
     {
       "id": "tos2-15",
-      "question": "Using the Müller-Breslau principle, draw the influence line diagram for the intermediate support reaction and central bending moment of a two-span continuous beam by computing ordinates at 1 m intervals.",
+      "question": "Using the M\u00fcller-Breslau principle, draw the influence line diagram for the intermediate support reaction and central bending moment of a two-span continuous beam by computing ordinates at 1 m intervals.",
       "frequency": 5,
       "marks": 8,
       "examSessions": [
@@ -272,6 +272,185 @@
       "chapter": "Introduction to Plastic Analysis",
       "importance": "High",
       "difficulty": "Hard"
+    },
+    {
+      "chapter": "Force Method",
+      "text": "Analyze a continuous beam of two unequal spans with support settlement using the Force Method (Method of Consistent Deformations). Select redundant reactions, form compatibility equations using flexibility coefficients ($f_{ij}$), and draw final SFD and BMD.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Primary structure created by removing redundants (e.g. intermediate reaction R_B or support moments). Calculate displacements delta_{10}, delta_{20} on released structure due to external loads. Compute flexibility coefficients f_{11}, f_{12}, f_{22} by applying unit forces. Compatibility equation: [f] {R} + {delta_0} = {delta_support}. Solve for redundant reactions R and obtain bending moments by superposition: M = M_0 + sum R_i * m_i."
+    },
+    {
+      "chapter": "Slope Deflection Method",
+      "text": "Analyze an indeterminate rigid portal frame with lateral sway using the Slope-Deflection Method. Set up slope-deflection equations, joint equilibrium equations, and column shear equation to solve for rotational and sway displacements, and sketch BMD.",
+      "marks": "10",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Slope-deflection equation: M_AB = FEM_AB + (2EI/L)[2 theta_A + theta_B - 3 delta/L]. Unknowns: joint rotations theta_B, theta_C and lateral sway delta. Equilibrium: sum M_B = 0 and sum M_C = 0. Shear equation: horizontal equilibrium of columns sum H = (M_AB + M_BA + H_ext)/L1 + (M_CD + M_DC)/L2 + P_lateral = 0. Solve 3 simultaneous equations for theta_B, theta_C, delta and compute end moments."
+    },
+    {
+      "chapter": "Moment Distribution Method",
+      "text": "Analyze a two-span continuous beam with overhangs using the Moment Distribution Method (Hardy Cross Method) considering non-prismatic sections and support sinking. Determine distribution factors and draw final BMD.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Stiffness k: 4EI/L (far end fixed), 3EI/L (far end hinged). Distribution Factor DF = k / sum k. Calculate Fixed End Moments (FEM) including support sinking moments -6EI delta / L^2. Successive distribution cycles: balance out-of-balance joint moment and carry over half (1/2) to opposite fixed joints. Iterate until unbalanced moments converge to zero, sum distributed moments to find final support moments."
+    },
+    {
+      "chapter": "Moment Distribution Method",
+      "text": "Analyze a single-bay, single-story portal frame subjected to lateral unsymmetrical loading using the Moment Distribution Method with sway correction.",
+      "marks": "10",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Superposition of Non-Sway and Sway analyses. Step 1: Prevent sway by artificial lateral restraint; perform standard moment distribution, compute restraint force R from column shear. Step 2: Apply arbitrary lateral sway delta_0 (column FEM = -6EI delta_0 / L^2) with no lateral restraint; distribute moments and compute resulting shear force S. Correction factor k = R / S. Final moments M = M_{non-sway} + k * M_{sway}."
+    },
+    {
+      "chapter": "Stiffness Matrix Method",
+      "text": "Analyze a continuous beam using the Direct Stiffness Matrix Method. Assemble the global structure stiffness matrix $[K]$, displacement vector $\\{\\Delta\\}$, and equivalent joint load vector $\\{P\\}$, and solve for unknown joint displacements and member end forces.",
+      "marks": "10",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Identify degrees of freedom (joint rotations theta). Member stiffness matrix: [k] = (2EI/L) [[2, 1], [1, 2]] or 4x4 including translations. Form equivalent joint load vector {P_j} from reversed fixed-end moments. Global equilibrium [K]{Delta} = {P_j}. Invert [K] to find joint displacements {Delta}. Post-multiply member stiffness by member displacements to obtain final end moments and shears."
+    },
+    {
+      "chapter": "Stiffness Matrix Method",
+      "text": "Apply the Direct Stiffness Matrix Method to analyze a pin-jointed plane truss. Formulate member stiffness matrices in local and global coordinate systems using transformation matrix $[T]$: $[K_m] = [T]^T [k_m] [T]$.",
+      "marks": "10",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Local member stiffness matrix has axial stiffness EA/L: [k] = (EA/L) [[1, -1], [-1, 1]]. Transformation matrix [T] with direction cosines lambda_x = cos(theta), lambda_y = sin(theta). Global 4x4 member stiffness matrix [K_m] = (EA/L) [[c^2, cs, -c^2, -cs], [cs, s^2, -cs, -s^2], [-c^2, -cs, c^2, cs], [-cs, -s^2, cs, s^2]]. Assemble into structure stiffness matrix [K], apply boundary conditions, and solve [K]{u} = {P}."
+    },
+    {
+      "chapter": "Influence Line for Indeterminate Beams",
+      "text": "State and explain the M\u00fcller-Breslau Principle for indeterminate structures. Draw qualitative and quantitative Influence Line Diagrams for reaction at intermediate support, shear force, and bending moment for a propped cantilever beam.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Muller-Breslau principle: deflected shape of structure resulting from unit virtual displacement corresponding to redundant force represents (to some scale) the influence line for that force. For reaction R_B of propped cantilever: remove support B, apply unit upward displacement; deflected shape y(x) = ILD(R_B). For moment at fixed support: introduce internal hinge, apply unit rotation theta=1; resulting deflection curve is ILD for support moment."
+    },
+    {
+      "chapter": "Analysis of Indeterminate Arches",
+      "text": "Analyze a Two-Hinged Parabolic Arch using the Force Method. Derive the formula for horizontal thrust $H = \\frac{\\int \\frac{M_0 y dx}{E I}}{\\int \\frac{y^2 dx}{E I}}$ under central point load and uniformly distributed load, accounting for temperature change $\\Delta T$.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Arch has one degree of static indeterminacy (D_s = 1); choose horizontal thrust H as redundant. Release horizontal constraint at support B: horizontal displacement due to loads is delta_{10} = integral (M_0 y / EI) dx. Flexibility coefficient f_{11} = integral (y^2 / EI) dx. Compatibility: delta_{10} + H * f_{11} + alpha L Delta T = 0 => H = (integral M_0 y dx / EI - alpha L Delta T) / (integral y^2 dx / EI). For UDL over entire span, H = w L^2 / (8h) (independent of EI for constant section)."
+    },
+    {
+      "chapter": "Analysis of Indeterminate Arches",
+      "text": "Explain Fixed Arches (Symmetric fixed parabolic arch). Formulate the three compatibility equations to determine redundant forces ($H, V, M$) using the Elastic Center Method.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Fixed arch has 3 degrees of static indeterminacy (D_s = 3). Elastic Center method shifts coordinate origin to centroid of elastic weights ds / (EI) at depth y_c = integral y ds / integral ds. Rigid arm connects elastic center to crown. Decouples 3 simultaneous compatibility equations: X1 (thrust) depends purely on y', X2 (shear) depends purely on x, X3 (moment) depends on integral M_0 ds, allowing direct uncoupled solutions."
+    },
+    {
+      "chapter": "Introduction to Plastic Analysis",
+      "text": "Explain Plastic Analysis of steel structures. Define Plastic Moment capacity ($M_p$), Shape Factor ($S = Z_p / Z_e$), Plastic Hinge, and Upper Bound (Kinematic) and Lower Bound (Static) theorems of plastic collapse.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Assumes rigid-plastic material behavior. Plastic moment M_p = f_y * Z_p, where Z_p = A/2 * (y1_bar + y2_bar) is plastic section modulus. Shape factor S = Z_p / Z_e measures reserve plastic strength beyond first yield (S = 1.5 for rectangle, S ~ 1.12-1.15 for I-beams). Plastic hinge represents cross-section fully yielded under M_p undergoing rotation at constant moment. Lower bound theorem: collapse load >= load for any statically admissible stress field. Upper bound theorem: collapse load <= load for any assumed kinematic collapse mechanism."
+    },
+    {
+      "chapter": "Introduction to Plastic Analysis",
+      "text": "Determine the Plastic Collapse Load ($W_c$) for a fixed-ended beam and propped cantilever beam carrying uniformly distributed load using the virtual work kinematic mechanism method.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Kinematic method equates external work to internal plastic work: W_ext = W_int. Fixed beam with UDL w: collapse requires 3 plastic hinges (at both supports and center). Center deflection delta = L theta / 2. Internal work W_int = M_p * theta + M_p * (2 theta) + M_p * theta = 4 M_p theta. External work W_ext = w * (0.5 * L * delta) = w L^2 theta / 4. Equating gives 4 M_p theta = w_c L^2 theta / 4 => w_c = 16 M_p / L^2. Propped cantilever requires 2 hinges; gives w_c = 11.656 M_p / L^2."
+    },
+    {
+      "chapter": "Introduction to Plastic Analysis",
+      "text": "Determine the Plastic Collapse Load for a single-bay portal frame under combined vertical load $W$ and horizontal lateral load $H$, testing beam mechanism, sway mechanism, and combined mechanism.",
+      "marks": "8",
+      "years": [
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Degrees of redundancy D_s = 3; total hinges for collapse = 3 + 1 = 4. Mechanism 1 (Beam mechanism): hinges at beam ends and center: W_c = 8 M_p / L. Mechanism 2 (Sway mechanism): hinges at column tops and bases: H_c * h * theta = 4 M_p * theta => H_c = 4 M_p / h. Mechanism 3 (Combined mechanism): beam and sway superimpose; right corner hinge cancels, hinges form at bases, left corner, and midspan. Equating work gives lowest collapse load (true collapse mechanism by upper bound theorem)."
+    },
+    {
+      "chapter": "Theorem of Displacements",
+      "text": "State and explain Castigliano's Theorem of Least Work and Principle of Stationary Total Potential Energy in displacement-based structural mechanics.",
+      "marks": "6",
+      "years": [
+        "2082 Bhadra",
+        "2081 Chaitra",
+        "2076 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Principle of Least Work states that in statically indeterminate structure, redundant forces take values that minimize total internal strain energy: dU/dR_i = 0 (compatibility condition of zero relative displacement). Principle of Stationary Total Potential Energy: of all geometrically admissible displacement fields satisfying kinematic boundary conditions, true equilibrium state renders total potential energy Pi = U - W_ext stationary (d Pi = 0), and stable if second variation d^2 Pi > 0."
     }
+  ],
+  "chapters": [
+    "Force Method",
+    "Theorem of Displacements",
+    "Slope Deflection Method",
+    "Moment Distribution Method",
+    "Stiffness Matrix Method",
+    "Influence Line for Indeterminate Beams",
+    "Analysis of Indeterminate Arches",
+    "Introduction to Plastic Analysis"
   ]
 }

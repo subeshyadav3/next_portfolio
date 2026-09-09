@@ -179,6 +179,193 @@
         "2080 Chaitra"
       ],
       "frequency": 2
+    },
+    {
+      "chapter": "Synchronization and Clock Synchronization",
+      "text": "Explain Lamport's Logical Clocks and Vector Clocks. Prove the happens-before relationship and causal ordering of events in distributed systems. Trace vector timestamps for a three-process communication scenario.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Lamport scalar clocks assign monotonically increasing counters L(e) to events: if a -> b, then L(a) < L(b), but converse does not hold (cannot detect concurrent events). Vector clocks assign vector V of size N: Vi[j] represents process Pi knowledge of Pj clock. If V(a) < V(b), then a causally precedes b, enabling precise detection of concurrency."
+    },
+    {
+      "chapter": "Synchronization and Clock Synchronization",
+      "text": "Explain Distributed Mutual Exclusion algorithms: Centralized algorithm, Ricart-Agrawala algorithm, and Maekawa's voting algorithm. Compare message complexity and synchronization delay.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2080 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Centralized: 3 messages per CS entry/exit (single point of failure). Ricart-Agrawala: broadcasts timestamped request to all N-1 nodes; enters CS only after receiving OK from all; requires 2(N-1) messages. Maekawa: divides N nodes into voting subsets of size K approx sqrt(N); process enters CS upon receiving grants from its quorum; requires 3*sqrt(N) messages."
+    },
+    {
+      "chapter": "Synchronization and Clock Synchronization",
+      "text": "Explain Coordinator Election Algorithms in distributed systems: Bully Algorithm and Ring Algorithm. Trace coordinator election when the highest priority process crashes.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Bully algorithm: any process detecting coordinator failure sends ELECTION message to all processes with higher IDs. If no answer, process declares itself coordinator and sends COORDINATOR message to all lower IDs; if higher ID answers, higher ID takes over. Ring algorithm: processes organized in logical ring; election token circulates collecting active process IDs; highest ID elected."
+    },
+    {
+      "chapter": "Fault Tolerance and Consensus",
+      "text": "Explain the Byzantine Generals Problem. Prove why consensus cannot be reached among $m$ faulty (arbitrary/malicious) generals unless the total number of generals is at least $3m + 1$ under oral messaging.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Byzantine fault models components that can fail arbitrarily and send conflicting, contradictory information. For 3 generals (1 traitor, m=1), loyal general cannot distinguish whether commander or other lieutenant is traitor (requires N >= 3m+1 = 4). Solved using oral message algorithms OM(m) with m rounds of message forwarding or cryptographic digital signatures."
+    },
+    {
+      "chapter": "Fault Tolerance and Consensus",
+      "text": "Explain the Raft Consensus Algorithm. Describe Leader Election, Log Replication, Term numbers, and Safety guarantees compared with Multi-Paxos.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra"
+      ],
+      "frequency": 2,
+      "frequencyTier": "High",
+      "solutionOutline": "Raft decomposes consensus into understandable sub-problems. Nodes in states: Follower, Candidate, Leader. Leader election uses randomized election timers and RequestVote RPCs. Log replication: Leader receives client commands, appends to log, broadcasts AppendEntries RPCs to followers, committing entry upon majority ACK. Safety: candidate must possess all committed entries to win election."
+    },
+    {
+      "chapter": "Fault Tolerance and Consensus",
+      "text": "Explain Two-Phase Commit (2PC) and Three-Phase Commit (3PC) protocols for distributed atomic transactions. Why is 2PC a blocking protocol upon coordinator crash?",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2078 Bhadra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "2PC guarantees all distributed participants either commit or abort. Phase 1 (Prepare): coordinator asks can-commit; participants respond yes/no. Phase 2 (Commit): coordinator sends global-commit if all yes, else global-abort. Blocking: if coordinator crashes during Phase 2 after participants voted yes, participants remain blocked holding locks indefinitely. 3PC inserts Pre-Commit state to avoid blocking under fail-stop assumptions."
+    },
+    {
+      "chapter": "Virtualization and Resource Management",
+      "text": "Describe Hypervisor Virtualization: Type-1 (Bare-Metal) vs Type-2 (Hosted). Explain hardware-assisted virtualization (Intel VT-x, AMD-V) and full virtualization vs paravirtualization.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Type-1 hypervisors (ESXi, Xen, KVM) run directly on host hardware; high performance, enterprise cloud servers. Type-2 hypervisors (VirtualBox, VMware Workstation) run on top of host OS. Full virtualization runs unmodified guest OS using binary translation or VT-x hardware root/non-root modes. Paravirtualization modifies guest OS kernel with hypercalls (Xen) for lower virtualization overhead."
+    },
+    {
+      "chapter": "Virtualization and Resource Management",
+      "text": "Explain Containerization and OS-level virtualization. Compare Docker containers with Virtual Machines (VMs) in terms of startup latency, kernel sharing, resource overhead, and isolation.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra"
+      ],
+      "frequency": 2,
+      "frequencyTier": "High",
+      "solutionOutline": "Containers isolate user-space processes sharing host OS kernel using Linux kernel namespaces (pid, net, mnt, ipc) and cgroups (CPU, memory resource limits). Comparison: Containers share host kernel (millisecond startup, megabyte footprints, high density); VMs emulate hardware with separate guest OS kernel (minute startup, gigabyte footprint, hardware-level isolation)."
+    },
+    {
+      "chapter": "Virtualization and Resource Management",
+      "text": "Explain Container Orchestration with Kubernetes (K8s). Describe Control Plane components (API Server, etcd, Scheduler, Controller Manager) and Worker Node components (Kubelet, Kube-proxy, Container Runtime, Pods).",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra"
+      ],
+      "frequency": 2,
+      "frequencyTier": "High",
+      "solutionOutline": "Automates deployment, scaling, and operations of containerized applications. Control Plane: kube-apiserver (REST API gateway), etcd (distributed key-value store for cluster state), kube-scheduler (assigns pods to nodes), kube-controller-manager (maintains desired state). Worker Node: kubelet (node agent enforcing pod specs), kube-proxy (network packet forwarding/load balancing), Pod (atomic unit of co-located containers)."
+    },
+    {
+      "chapter": "Cloud Storage and Big Data Frameworks",
+      "text": "Explain the MapReduce programming paradigm. Formulate the Map and Reduce functions for word count and inverted index generation with execution flow across Mappers and Reducers.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2079 Chaitra"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Processes large datasets in parallel across clusters. Map: (k1, v1) -> list(k2, v2). Shuffling & Sorting: partitions intermediate keys and groups values by key: (k2, list(v2)). Reduce: (k2, list(v2)) -> list(k3, v3). Word count: Map outputs (word, 1); Reduce sums counts for each word. Inverted index: Map outputs (word, docID); Reduce aggregates unique docIDs for search index."
+    },
+    {
+      "chapter": "Cloud Storage and Big Data Frameworks",
+      "text": "Describe the Hadoop Distributed File System (HDFS) architecture: NameNode, DataNodes, Block Replication (default 3x), Heartbeat signals, and Secondary NameNode checkpointing.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2078 Kartik"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "Master/slave distributed file system for large sequential data streaming. Files split into large blocks (128MB). NameNode stores metadata and block mapping in RAM and EditLog/FsImage. DataNodes store physical blocks on local disks. Default 3x replication places 2 copies on same rack, 1 on remote rack for rack-fault tolerance. Secondary NameNode merges EditLog into FsImage periodically to prevent log bloat."
+    },
+    {
+      "chapter": "Cloud Computing Models and Architecture",
+      "text": "What is Serverless Computing (Function-as-a-Service - FaaS)? Explain cold start latency, event-driven triggers, stateless execution, and autoscaling compared with containerized microservices.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra"
+      ],
+      "frequency": 2,
+      "frequencyTier": "High",
+      "solutionOutline": "Cloud execution model where cloud provider dynamically manages machine resource allocation (AWS Lambda, Google Cloud Functions). Developer deploys individual functions executing on event triggers (HTTP request, database write). Cold start: delay when spinning up new container instance upon idle invocation. Stateless design enables instantaneous auto-scaling from 0 to thousands of concurrent requests."
+    },
+    {
+      "chapter": "Communication in Distributed Systems",
+      "text": "Explain Distributed File Systems: Network File System (NFS) vs Andrew File System (AFS). Compare caching strategies, file state management, and consistency semantics.",
+      "marks": "8",
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2077 Magh"
+      ],
+      "frequency": 3,
+      "frequencyTier": "High",
+      "solutionOutline": "NFS (v3): stateless server, block-level caching at client with periodic validation checks; simple crash recovery but high network traffic and weak consistency. AFS: stateful server, whole-file caching on client local disk, callback mechanism (server notifies client when cached file modified); highly scalable for campus networks with session-level consistency (changes visible upon file close)."
+    },
+    {
+      "chapter": "Communication in Distributed Systems",
+      "text": "Explain Service-Oriented Architecture (SOA) and Microservices. Compare RESTful APIs and gRPC (Protocol Buffers, HTTP/2 multiplexing) for inter-service RPC communication in distributed cloud platforms.",
+      "marks": "6",
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra"
+      ],
+      "frequency": 2,
+      "frequencyTier": "High",
+      "solutionOutline": "Microservices decompose application into loosely coupled, independently deployable services organized around business domains. REST uses JSON over HTTP/1.1; human-readable, universal browser support, but high payload overhead and textual serialization cost. gRPC uses binary Protocol Buffers over HTTP/2; strongly typed contracts, multiplexed bidirectional streaming, high performance for backend inter-service calls."
     }
+  ],
+  "chapters": [
+    "Characterization of Distributed Systems",
+    "Communication in Distributed Systems",
+    "Synchronization and Clock Synchronization",
+    "Consistency and Replication",
+    "Fault Tolerance and Consensus",
+    "Cloud Computing Models and Architecture",
+    "Virtualization and Resource Management",
+    "Cloud Storage and Big Data Frameworks"
   ]
 }
