@@ -291,11 +291,13 @@ export function QuestionBank({ chapters = [], questions = [], subject }: Questio
               value={selectedChapter}
               onChange={(e) => setSelectedChapter(e.target.value)}
               aria-label="Filter by syllabus chapter"
-              className="w-full appearance-none rounded-xl border border-slate-200 bg-slate-50 px-3.5 py-2.5 pr-9 text-xs sm:text-sm font-semibold text-slate-800 transition focus:border-blue-500 focus:bg-white focus:outline-hidden dark:border-gray-700 dark:bg-gray-800 dark:text-slate-100"
+              className="w-full appearance-none rounded-xl border border-slate-200 bg-slate-50 px-3.5 py-2.5 pr-9 text-xs sm:text-sm font-semibold text-slate-800 transition focus:border-blue-500 focus:bg-white focus:outline-hidden dark:border-gray-700 dark:bg-gray-800 dark:text-slate-100 dark:focus:bg-gray-800 dark:focus:text-white"
             >
-              <option value="all">All Syllabus Chapters ({chapterList.length})</option>
+              <option value="all" className="bg-white text-slate-800 dark:bg-gray-900 dark:text-slate-100">
+                All Syllabus Chapters ({chapterList.length})
+              </option>
               {chapterList.map((c) => (
-                <option key={c} value={c}>
+                <option key={c} value={c} className="bg-white text-slate-800 dark:bg-gray-900 dark:text-slate-100">
                   {c}
                 </option>
               ))}
