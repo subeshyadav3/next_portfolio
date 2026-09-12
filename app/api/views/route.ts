@@ -34,27 +34,39 @@ export async function POST(request: Request) {
       return NextResponse.json({ ok: false, message: "Missing path or slug" }, { status: 400 });
     }
 
-    // Sanitize path (strip query params, hash)
-    const cleanPath = path ? path.split("?")[0].split("#")[0] : (slug ? `/blog/${slug}` : "/");
+    // Sanitize path (strip query params, hash, trailing slashes)
+    const rawPath = path ? path.split("?")[0].split("#")[0].replace(/\/+$/, "") || "/" : (slug ? `/blog/${slug}` : "/");
+
+    let normalizedPath = rawPath;
 
     // If slug not provided, try to extract from /blog/<slug>
-    if (!slug && cleanPath.startsWith("/blog/")) {
-      const segments = cleanPath.replace(/^\/blog\//, "").split("/");
+    if (!slug && rawPath.startsWith("/blog/")) {
+      const segments = rawPath.replace(/^\/blog\//, "").split("/");
       const candidate = segments[0];
       if (candidate && !RESERVED_BLOG_SEGMENTS.has(candidate)) {
         slug = candidate;
+        normalizedPath = `/blog/${slug}`;
+      }
+    } else if (rawPath.startsWith("/ioe")) {
+      // Cost-optimization for Neon Tech: normalize IOE deep links to program level
+      // e.g. /ioe/bct/semester/6/software-engineering -> /ioe/bct
+      const parts = rawPath.split("/").filter(Boolean); // ["ioe", "bct", ...]
+      if (parts.length > 1) {
+        normalizedPath = `/ioe/${parts[1].toLowerCase()}`;
+      } else {
+        normalizedPath = "/ioe";
       }
     }
 
     // Record page view in PageView table
     await prisma.pageView.create({
       data: {
-        path: cleanPath || "/",
+        path: normalizedPath,
         slug: slug || null,
       },
     });
 
-    // If it's a blog post, increment Post.views
+    // If it is a verified blog post, increment Post.views
     if (slug) {
       await prisma.post.updateMany({
         where: { slug },
