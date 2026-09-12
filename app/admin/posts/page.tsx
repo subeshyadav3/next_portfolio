@@ -89,6 +89,14 @@ export default async function AdminPostsPage({
             <p className="text-xs text-gray-500 dark:text-gray-400">
               Overview of all visits across the entire website and individual blog posts.
             </p>
+            <div className="mt-2">
+              <Link
+                href="/admin/stats"
+                className="inline-flex items-center text-xs font-semibold text-blue-600 hover:underline dark:text-blue-400"
+              >
+                View Full Traffic Analytics & IOE Stats &rarr;
+              </Link>
+            </div>
           </div>
 
           {/* Timeframe Filter: All Time, Monthly, Weekly */}
