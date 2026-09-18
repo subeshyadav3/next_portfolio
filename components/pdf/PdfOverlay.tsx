@@ -13,6 +13,8 @@ import {
   Info,
   ExternalLink,
   Layers,
+  ChevronDown,
+  Check,
 } from "lucide-react";
 
 interface PdfOverlayProps {
@@ -44,7 +46,9 @@ export function PdfOverlay({
   subjectTitle,
 }: PdfOverlayProps) {
   const containerRef = useRef<HTMLDivElement>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
   const [isNativeFs, setIsNativeFs] = useState(false);
+  const [paperDropdownOpen, setPaperDropdownOpen] = useState(false);
   const [activeIdx, setActiveIdx] = useState(activePaperIndex);
   const [isMobile, setIsMobile] = useState(false);
   const [viewerEngine, setViewerEngine] = useState<"auto" | "cdn" | "drive">("auto");
@@ -67,9 +71,12 @@ export function PdfOverlay({
   }, []);
 
   const hasMultiple = Boolean(papers && papers.length > 1);
-  const currentPaper = papers && papers.length > 0
-    ? papers[Math.min(activeIdx, papers.length - 1)]
-    : null;
+  const currentPaper =
+    papers && papers.length > 0 ? papers[Math.min(activeIdx, papers.length - 1)] : null;
+
+  const currentPaperSemLabel = currentPaper?.sem
+    ? currentPaper.sem.replace(/-/g, " ").replace(/^\w/, (c) => c.toUpperCase())
+    : `Paper ${activeIdx + 1}`;
 
   const currentTitle = currentPaper
     ? `${subjectTitle ? `${subjectTitle} — ` : ""}${currentPaper.file}`
@@ -113,6 +120,18 @@ export function PdfOverlay({
     onClose();
   }, [onClose]);
 
+  // Close dropdown on click outside
+  useEffect(() => {
+    if (!paperDropdownOpen) return;
+    const handleClickOutside = (e: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
+        setPaperDropdownOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [paperDropdownOpen]);
+
   const toggleNativeFs = useCallback(() => {
     if (document.fullscreenElement) {
       document.exitFullscreen().catch(() => {});
@@ -124,7 +143,11 @@ export function PdfOverlay({
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === "Escape") {
-        exit();
+        if (paperDropdownOpen) {
+          setPaperDropdownOpen(false);
+        } else {
+          exit();
+        }
       } else if (hasMultiple && papers) {
         if (e.key === "ArrowLeft") {
           setActiveIdx((prev) => {
@@ -151,7 +174,7 @@ export function PdfOverlay({
       document.removeEventListener("fullscreenchange", onFsChange);
       document.body.style.overflow = prevOverflow;
     };
-  }, [exit, hasMultiple, papers, onPaperSelect]);
+  }, [exit, hasMultiple, papers, onPaperSelect, paperDropdownOpen]);
 
   return (
     <div
@@ -163,12 +186,140 @@ export function PdfOverlay({
     >
       {/* ── Compact Slim Header Bar (44px) ── */}
       <div className="flex h-11 shrink-0 items-center justify-between gap-2 border-b border-white/10 bg-slate-900/95 px-3 backdrop-blur-sm sm:px-4">
-        <div className="flex min-w-0 items-center gap-2">
-          <FileText className="h-4 w-4 shrink-0 text-blue-400" />
-          <h2 className="truncate text-xs font-semibold text-white sm:text-sm">{currentTitle}</h2>
-          {isMobile && (
-            <span className="hidden xs:inline rounded bg-blue-900/50 px-1.5 py-0.2 text-[10px] font-medium text-blue-300">
-              Mobile
+        {/* Left: Paper Selector Dropdown or Document Icon */}
+        <div className="flex min-w-0 items-center gap-1.5">
+          {hasMultiple && papers ? (
+            <div className="relative flex items-center gap-1" ref={dropdownRef}>
+              {/* Dropdown Trigger Button */}
+              <button
+                type="button"
+                onClick={() => setPaperDropdownOpen((prev) => !prev)}
+                className="inline-flex items-center gap-1.5 rounded-lg border border-white/15 bg-white/10 px-2.5 py-1 text-xs font-semibold text-white shadow-xs transition hover:bg-white/15 focus:outline-hidden"
+                aria-expanded={paperDropdownOpen}
+                aria-haspopup="listbox"
+                title="Switch between available papers"
+              >
+                <FileText className="h-3.5 w-3.5 text-blue-400 shrink-0" />
+                <span className="truncate max-w-[130px] sm:max-w-[200px]">
+                  {currentPaperSemLabel}
+                </span>
+                <span className="text-[10px] text-slate-400 font-normal">
+                  ({activeIdx + 1}/{papers.length})
+                </span>
+                {currentPaper?.isCrossSemester && (
+                  <span className="rounded bg-amber-400/25 px-1 py-0.2 text-[9px] font-bold text-amber-300">
+                    Cross
+                  </span>
+                )}
+                <ChevronDown
+                  className={`h-3 w-3 text-slate-400 transition-transform duration-200 ${
+                    paperDropdownOpen ? "rotate-180" : ""
+                  }`}
+                />
+              </button>
+
+              {/* Quick arrow pagination next to dropdown */}
+              <div className="flex items-center gap-0.5">
+                <button
+                  type="button"
+                  disabled={activeIdx === 0}
+                  onClick={() => handleSelectPaper(activeIdx - 1)}
+                  title="Previous paper (← key)"
+                  className="rounded p-1 text-slate-400 hover:bg-white/10 hover:text-white disabled:opacity-20 transition"
+                >
+                  <ChevronLeft className="h-3.5 w-3.5" />
+                </button>
+                <button
+                  type="button"
+                  disabled={activeIdx === papers.length - 1}
+                  onClick={() => handleSelectPaper(activeIdx + 1)}
+                  title="Next paper (→ key)"
+                  className="rounded p-1 text-slate-400 hover:bg-white/10 hover:text-white disabled:opacity-20 transition"
+                >
+                  <ChevronRight className="h-3.5 w-3.5" />
+                </button>
+              </div>
+
+              {/* Dropdown Popover */}
+              {paperDropdownOpen && (
+                <div className="absolute left-0 top-full mt-1.5 z-50 w-72 sm:w-80 rounded-xl border border-white/15 bg-slate-900/98 p-1.5 shadow-2xl backdrop-blur-xl ring-1 ring-black/40">
+                  <div className="flex items-center justify-between border-b border-white/10 px-2.5 py-1.5 text-[10px] font-semibold uppercase tracking-wider text-slate-400">
+                    <span>Available Papers ({papers.length})</span>
+                    <span className="text-[10px] font-normal text-slate-500">
+                      Use ← / → keys
+                    </span>
+                  </div>
+
+                  <div className="max-h-64 overflow-y-auto space-y-1 py-1">
+                    {papers.map((p, idx) => {
+                      const isSelected = idx === activeIdx;
+                      const semLabel = p.sem
+                        ? p.sem.replace(/-/g, " ").replace(/^\w/, (c) => c.toUpperCase())
+                        : `Paper ${idx + 1}`;
+
+                      return (
+                        <button
+                          key={p.id || idx}
+                          type="button"
+                          onClick={() => {
+                            handleSelectPaper(idx);
+                            setPaperDropdownOpen(false);
+                          }}
+                          className={`flex w-full items-start justify-between gap-2 rounded-lg px-2.5 py-2 text-left text-xs transition ${
+                            isSelected
+                              ? "bg-blue-600 text-white font-medium shadow-xs"
+                              : "text-slate-300 hover:bg-white/10 hover:text-white"
+                          }`}
+                        >
+                          <div className="min-w-0 flex-1">
+                            <div className="flex items-center gap-1.5">
+                              <FileText className="h-3.5 w-3.5 shrink-0" />
+                              <span className="font-semibold">{semLabel}</span>
+                              {p.isCrossSemester && (
+                                <span className="rounded bg-amber-400/25 px-1.5 py-0.2 text-[9px] font-bold text-amber-300">
+                                  Cross-Prog
+                                </span>
+                              )}
+                            </div>
+                            {p.file && (
+                              <p
+                                className={`mt-0.5 truncate text-[11px] ${
+                                  isSelected ? "text-blue-100" : "text-slate-400"
+                                }`}
+                              >
+                                {p.file}
+                              </p>
+                            )}
+                          </div>
+                          {isSelected && (
+                            <Check className="mt-0.5 h-4 w-4 shrink-0 text-white" />
+                          )}
+                        </button>
+                      );
+                    })}
+                  </div>
+
+                  {currentPaper?.isCrossSemester && (
+                    <div className="mt-1 border-t border-white/10 px-2.5 pt-1.5 text-[10px] leading-relaxed text-amber-300/90">
+                      ⚠️ Note: This paper is archived from another IOE program track sharing this course syllabus.
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          ) : (
+            <div className="flex items-center gap-2 truncate">
+              <FileText className="h-4 w-4 shrink-0 text-blue-400" />
+              <h2 className="truncate text-xs font-semibold text-white sm:text-sm">
+                {currentTitle}
+              </h2>
+            </div>
+          )}
+
+          {/* Subtle subject title display */}
+          {hasMultiple && subjectTitle && (
+            <span className="hidden lg:inline truncate text-xs text-slate-400 max-w-[220px] xl:max-w-sm pl-2 border-l border-white/10">
+              {subjectTitle}
             </span>
           )}
         </div>
@@ -247,78 +398,6 @@ export function PdfOverlay({
           </button>
         </div>
       </div>
-
-      {/* ── Multi-Paper Selector Toolbar (when > 1 paper) ── */}
-      {hasMultiple && papers && (
-        <div className="flex items-center justify-between gap-2 overflow-x-auto border-b border-white/10 bg-slate-900/95 px-3.5 py-2">
-          <div className="flex items-center gap-1.5">
-            <span className="mr-1 text-[11px] font-semibold uppercase tracking-wider text-slate-400">
-              Papers:
-            </span>
-            {papers.map((p, idx) => {
-              const isSelected = idx === activeIdx;
-              const semLabel = p.sem
-                ? p.sem.replace(/-/g, " ").replace(/^\w/, (c) => c.toUpperCase())
-                : `Paper ${idx + 1}`;
-
-              return (
-                <button
-                  key={p.id || idx}
-                  type="button"
-                  onClick={() => handleSelectPaper(idx)}
-                  className={`inline-flex shrink-0 items-center gap-1.5 rounded-lg px-2.5 py-1 text-xs font-semibold transition ${
-                    isSelected
-                      ? "bg-blue-600 text-white shadow-xs"
-                      : "bg-white/10 text-slate-300 hover:bg-white/20 hover:text-white"
-                  }`}
-                >
-                  <FileText className="h-3 w-3" />
-                  <span>{semLabel}</span>
-                  {p.isCrossSemester && (
-                    <span className="rounded bg-amber-400/20 px-1 py-0.2 text-[9px] font-bold text-amber-300">
-                      Cross-Prog
-                    </span>
-                  )}
-                </button>
-              );
-            })}
-          </div>
-
-          <div className="flex shrink-0 items-center gap-1 pl-2">
-            <button
-              type="button"
-              disabled={activeIdx === 0}
-              onClick={() => handleSelectPaper(activeIdx - 1)}
-              title="Previous paper"
-              className="rounded p-1 text-slate-400 hover:bg-white/10 hover:text-white disabled:opacity-30 transition"
-            >
-              <ChevronLeft className="h-4 w-4" />
-            </button>
-            <span className="text-xs font-medium text-slate-400 tabular-nums">
-              {activeIdx + 1}/{papers.length}
-            </span>
-            <button
-              type="button"
-              disabled={activeIdx === papers.length - 1}
-              onClick={() => handleSelectPaper(activeIdx + 1)}
-              title="Next paper"
-              className="rounded p-1 text-slate-400 hover:bg-white/10 hover:text-white disabled:opacity-30 transition"
-            >
-              <ChevronRight className="h-4 w-4" />
-            </button>
-          </div>
-        </div>
-      )}
-
-      {/* ── Cross-Program Notice (if active paper is cross-program) ── */}
-      {currentPaper?.isCrossSemester && (
-        <div className="flex items-center gap-2 border-b border-amber-500/20 bg-amber-950/40 px-4 py-1.5 text-xs text-amber-300">
-          <Info className="h-3.5 w-3.5 shrink-0 text-amber-400" />
-          <span>
-            This past paper ({currentPaper.sem.replace(/-/g, " ")}) was archived from another IOE program/semester track sharing the same course syllabus.
-          </span>
-        </div>
-      )}
 
       {/* ── Main PDF iframe viewer ── */}
       <div className="relative flex-1 bg-slate-900">
