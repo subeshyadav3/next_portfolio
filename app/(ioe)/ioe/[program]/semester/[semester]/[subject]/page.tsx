@@ -13,6 +13,8 @@ import {
 import { PdfViewer } from "@/components/ioe/PdfViewer";
 import SyllabusSection from "@/components/ioe/SyllabusSection";
 import { QuestionBank } from "@/components/ioe/QuestionBank";
+import { YearWiseQuestions } from "@/components/ioe/YearWiseQuestions";
+import { IoeSubjectJumpNav } from "@/components/ioe/IoeSubjectJumpNav";
 import { buildIoeMetadata, breadcrumbLd, jsonLd, learningResourceLd } from "@/lib/ioe/seo";
 import { ChevronRight, FileText, Award, HelpCircle, CheckCircle2 } from "lucide-react";
 
@@ -188,7 +190,7 @@ export default async function IoeSubjectPage({ params }: PageProps) {
       </header>
 
       {/* ── Embedded PDF Viewer ── */}
-      <section className="space-y-3">
+      <section id="pdf-viewer" className="space-y-3">
         <div className="flex items-center justify-between">
           <h2 className="text-base font-bold text-slate-900 dark:text-white">
             Past Question Papers (PDF)
@@ -200,20 +202,34 @@ export default async function IoeSubjectPage({ params }: PageProps) {
         <PdfViewer papers={papers} />
       </section>
 
+      {/* ── Quick Jump Navigation Bar ── */}
+      <IoeSubjectJumpNav
+        hasQuestions={Boolean(questionsData && questionsData.questions.length > 0)}
+        hasSyllabus={Boolean(syllabus)}
+        hasExamScheme={true}
+        hasFaq={true}
+      />
+
       {/* ── Top Repeated Past Examination Questions ── */}
       {questionsData && questionsData.questions.length > 0 && (
-        <QuestionBank
-          subject={subjectRow.title}
-          chapters={questionsData.chapters}
-          questions={questionsData.questions}
-        />
+        <>
+          <QuestionBank
+            subject={subjectRow.title}
+            chapters={questionsData.chapters}
+            questions={questionsData.questions}
+          />
+          <YearWiseQuestions
+            subject={subjectRow.title}
+            questions={questionsData.questions}
+          />
+        </>
       )}
 
       {/* ── Official Syllabus Section ── */}
       <SyllabusSection subject={subjectRow.title} syllabus={syllabus} />
 
       {/* ── Examination Blueprint & Evaluation Scheme ── */}
-      <section className="space-y-6 rounded-3xl border border-slate-200 bg-white p-6 shadow-xs dark:border-gray-800 dark:bg-gray-900 sm:p-8">
+      <section id="exam-scheme" className="space-y-6 rounded-3xl border border-slate-200 bg-white p-6 shadow-xs dark:border-gray-800 dark:bg-gray-900 sm:p-8">
         <div className="flex items-center gap-2">
           <Award className="h-5 w-5 text-blue-600 dark:text-blue-400" />
           <h2 className="text-xl font-extrabold text-slate-900 dark:text-white">
@@ -278,7 +294,7 @@ export default async function IoeSubjectPage({ params }: PageProps) {
         </div>
 
         {/* FAQ Section */}
-        <div className="border-t border-slate-100 pt-6 dark:border-gray-800">
+        <div id="faq" className="border-t border-slate-100 pt-6 dark:border-gray-800">
           <h3 className="flex items-center gap-2 text-base font-bold text-slate-900 dark:text-white">
             <HelpCircle className="h-4 w-4 text-emerald-500" />
             Frequently Asked Questions ({subjectRow.title})

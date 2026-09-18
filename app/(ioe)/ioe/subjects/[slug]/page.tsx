@@ -14,6 +14,8 @@ import {
 import { PdfViewer } from "@/components/ioe/PdfViewer";
 import SyllabusSection from "@/components/ioe/SyllabusSection";
 import { QuestionBank } from "@/components/ioe/QuestionBank";
+import { YearWiseQuestions } from "@/components/ioe/YearWiseQuestions";
+import { IoeSubjectJumpNav } from "@/components/ioe/IoeSubjectJumpNav";
 import { buildIoeMetadata, breadcrumbLd, jsonLd, learningResourceLd } from "@/lib/ioe/seo";
 import { ChevronRight, FileText } from "lucide-react";
 
@@ -133,7 +135,7 @@ export default async function IoeSubjectArchivePage({ params }: PageProps) {
       </header>
 
       {/* PDF Viewer */}
-      <section className="space-y-3">
+      <section id="pdf-viewer" className="space-y-3">
         <div className="flex items-center justify-between">
           <h2 className="text-base font-bold text-slate-900 dark:text-white">
             Past Question Papers (PDF)
@@ -145,13 +147,27 @@ export default async function IoeSubjectArchivePage({ params }: PageProps) {
         <PdfViewer papers={papers} />
       </section>
 
+      {/* ── Quick Jump Navigation Bar ── */}
+      <IoeSubjectJumpNav
+        hasQuestions={Boolean(questions && questions.questions.length > 0)}
+        hasSyllabus={Boolean(syllabus)}
+        hasExamScheme={false}
+        hasFaq={false}
+      />
+
       {/* Top Repeated Past Examination Questions */}
       {questions && questions.questions.length > 0 && (
-        <QuestionBank
-          subject={subject.name}
-          chapters={questions.chapters}
-          questions={questions.questions}
-        />
+        <>
+          <QuestionBank
+            subject={subject.name}
+            chapters={questions.chapters}
+            questions={questions.questions}
+          />
+          <YearWiseQuestions
+            subject={subject.name}
+            questions={questions.questions}
+          />
+        </>
       )}
 
       {/* Official Syllabus */}
