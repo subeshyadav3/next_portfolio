@@ -161,56 +161,51 @@ export function PdfOverlay({
       aria-label={`PDF viewer: ${currentTitle}`}
       className="fixed inset-0 z-[100] flex flex-col bg-slate-950/95 backdrop-blur-sm"
     >
-      {/* ── Top Bar ── */}
-      <div className="flex items-center justify-between gap-3 border-b border-white/10 bg-slate-900/90 px-3.5 py-2.5 sm:px-4">
-        <div className="min-w-0 flex-1 pr-2">
-          <h2 className="truncate text-xs sm:text-sm font-semibold text-white">{currentTitle}</h2>
-          <div className="flex flex-wrap items-center gap-2 pt-0.5 text-[10px] sm:text-[11px] text-slate-400">
-            <span>Reading in full view</span>
-            {hasMultiple && (
-              <span className="hidden sm:inline text-slate-500">
-                · Use ← / → arrows to switch papers
-              </span>
-            )}
-            {isMobile && (
-              <span className="rounded bg-blue-900/50 px-1.5 py-0.2 text-[10px] font-medium text-blue-300">
-                Mobile Safe View
-              </span>
-            )}
-          </div>
+      {/* ── Compact Slim Header Bar (44px) ── */}
+      <div className="flex h-11 shrink-0 items-center justify-between gap-2 border-b border-white/10 bg-slate-900/95 px-3 backdrop-blur-sm sm:px-4">
+        <div className="flex min-w-0 items-center gap-2">
+          <FileText className="h-4 w-4 shrink-0 text-blue-400" />
+          <h2 className="truncate text-xs font-semibold text-white sm:text-sm">{currentTitle}</h2>
+          {isMobile && (
+            <span className="hidden xs:inline rounded bg-blue-900/50 px-1.5 py-0.2 text-[10px] font-medium text-blue-300">
+              Mobile
+            </span>
+          )}
         </div>
 
-        <div className="flex shrink-0 items-center gap-1.5 sm:gap-2">
+        <div className="flex shrink-0 items-center gap-1 sm:gap-1.5">
           {/* Viewer Engine Switcher */}
           {currentDriveId && (
             <button
               type="button"
               onClick={() =>
-                setViewerEngine((curr) =>
-                  curr === "drive" ? "cdn" : "drive"
-                )
+                setViewerEngine((curr) => (curr === "drive" ? "cdn" : "drive"))
               }
-              title={`Switch viewer engine (currently ${viewerEngine === "drive" || (viewerEngine === "auto" && isMobile) ? "Drive Mirror" : "Cloudinary CDN"})`}
-              className="hidden md:inline-flex items-center gap-1 rounded-lg border border-white/15 px-2.5 py-1.5 text-[11px] font-medium text-slate-300 transition hover:bg-white/10 hover:text-white"
+              title={`Switch viewer engine (currently ${
+                viewerEngine === "drive" || (viewerEngine === "auto" && isMobile)
+                  ? "Drive Mirror"
+                  : "Cloudinary CDN"
+              })`}
+              className="hidden md:inline-flex h-8 items-center gap-1 rounded-lg border border-white/15 px-2 text-[11px] font-medium text-slate-300 transition hover:bg-white/10 hover:text-white"
             >
               <Layers className="h-3 w-3 text-blue-400" />
               <span>
-                {viewerEngine === "drive" || (viewerEngine === "auto" && isMobile) ? "Drive Mirror" : "CDN View"}
+                {viewerEngine === "drive" || (viewerEngine === "auto" && isMobile) ? "Drive" : "CDN"}
               </span>
             </button>
           )}
 
-          {/* Open Native in mobile or new tab */}
+          {/* Open Native in new tab */}
           {currentDownloadUrl && (
             <a
               href={currentDownloadUrl}
               target="_blank"
               rel="noopener noreferrer"
               title="Open direct file in new tab"
-              className="inline-flex h-8 sm:h-9 items-center gap-1 rounded-lg border border-white/15 px-2 sm:px-2.5 text-xs text-slate-200 transition hover:bg-white/10 hover:text-white"
+              aria-label="Open direct file in new tab"
+              className="inline-flex h-8 w-8 items-center justify-center rounded-lg border border-white/15 text-slate-300 transition hover:bg-white/10 hover:text-white"
             >
               <ExternalLink className="h-3.5 w-3.5" />
-              <span className="hidden sm:inline">Open</span>
             </a>
           )}
 
@@ -222,9 +217,9 @@ export function PdfOverlay({
               rel="noopener noreferrer"
               title="Download PDF"
               aria-label="Download PDF"
-              className="inline-flex h-8 sm:h-9 w-8 sm:w-9 items-center justify-center rounded-lg border border-white/15 text-slate-200 transition hover:bg-white/10 hover:text-white"
+              className="inline-flex h-8 w-8 items-center justify-center rounded-lg border border-white/15 text-slate-300 transition hover:bg-white/10 hover:text-white"
             >
-              <Download className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+              <Download className="h-3.5 w-3.5" />
             </a>
           )}
 
@@ -234,9 +229,9 @@ export function PdfOverlay({
             onClick={toggleNativeFs}
             title={isNativeFs ? "Exit device fullscreen" : "Use device fullscreen"}
             aria-label={isNativeFs ? "Exit device fullscreen" : "Use device fullscreen"}
-            className="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-lg border border-white/15 text-slate-200 transition hover:bg-white/10 hover:text-white"
+            className="hidden sm:inline-flex h-8 w-8 items-center justify-center rounded-lg border border-white/15 text-slate-300 transition hover:bg-white/10 hover:text-white"
           >
-            {isNativeFs ? <Minimize2 className="h-4 w-4" /> : <Maximize2 className="h-4 w-4" />}
+            {isNativeFs ? <Minimize2 className="h-3.5 w-3.5" /> : <Maximize2 className="h-3.5 w-3.5" />}
           </button>
 
           {/* Exit Modal */}
@@ -245,9 +240,9 @@ export function PdfOverlay({
             onClick={exit}
             title="Exit full view (Esc)"
             aria-label="Exit full view"
-            className="inline-flex h-8 sm:h-9 items-center gap-1 rounded-lg bg-blue-600 px-2.5 sm:px-3 text-xs font-semibold text-white transition hover:bg-blue-500"
+            className="inline-flex h-8 items-center gap-1 rounded-lg bg-blue-600 px-2.5 text-xs font-semibold text-white transition hover:bg-blue-500"
           >
-            <X className="h-3.5 w-3.5 sm:h-4 sm:w-4" />
+            <X className="h-3.5 w-3.5" />
             <span>Exit</span>
           </button>
         </div>
