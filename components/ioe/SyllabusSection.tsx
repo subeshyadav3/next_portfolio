@@ -111,7 +111,7 @@ export default function SyllabusSection({
   }
 
   return (
-    <section className="space-y-3">
+    <section id="syllabus" className="space-y-3">
       <div className="flex items-center justify-between">
         <h2 className="flex items-center gap-2 text-base font-bold text-slate-900 dark:text-white">
           <BookOpen className="h-4 w-4 text-blue-600 dark:text-blue-400" />

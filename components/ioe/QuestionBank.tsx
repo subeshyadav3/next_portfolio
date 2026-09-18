@@ -215,7 +215,7 @@ export function QuestionBank({ chapters = [], questions = [], subject }: Questio
   };
 
   return (
-    <section className="space-y-6">
+    <section id="most-asked" className="space-y-6">
       {/* ── Section Header & View Mode Switcher ── */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
         <div>
