@@ -1,451 +1,1459 @@
 {
   "subject": "Hydraulics",
-  "subjectCode": "ENCE 251",
-  "program": "Civil Engineering",
   "semester": "4",
   "questions": [
     {
-      "id": "hyd-1",
-      "question": "Prove that the velocity distribution for steady laminar flow in a circular pipe is parabolic (Hagen-Poiseuille law) and show that the maximum velocity is twice the average flow velocity.",
-      "frequency": 5,
-      "marks": 6,
-      "examSessions": [
-        "2080 Chaitra",
-        "2077 Chaitra",
-        "2075 Baisakh",
-        "2073 Bhadra",
-        "2071 Bhadra"
-      ],
-      "chapter": "Pipe Flow Regimes",
-      "importance": "High",
-      "difficulty": "Medium"
+      "id": "hydraulics-1",
+      "question": "Describe shield's tractive force theory. Also derive relationship between critical grain diameter and hydraulic radius for incipient motion condition using shield's parameter.\n1 2",
+      "text": "Describe shield's tractive force theory. Also derive relationship between critical grain diameter and hydraulic radius for incipient motion condition using shield's parameter.\n1 2",
+      "chapter": "Archive Questions",
+      "marks": "3",
+      "frequency": 12,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "id": "hyd-2",
-      "question": "Explain Prandtl's mixing length theory. Show that the velocity distribution in pipes for turbulent flow is logarithmic. Derive an expression for head loss due to sudden expansion in a pipeline.",
-      "frequency": 5,
-      "marks": 8,
-      "examSessions": [
-        "2081 Chaitra",
-        "2078 Bhadra",
-        "2076 Baisakh",
-        "2074 Bhadra"
-      ],
-      "chapter": "Pipe Flow Regimes",
-      "importance": "High",
-      "difficulty": "Medium"
+      "id": "hydraulics-2",
+      "question": "A vertical sluice gate with an opening of $0.67\\text{ m}$ produces a downstream jet of depth $0.4m$ when installed in a long rectangular channel $5m$ wide carrying a steady discharge of $20m^3/s$. Assuming that the flow depth downstream of gate eventually returns to the uniform flow depth of $2.5m$\n\na) Verify the hydraulic jump occurs. Take $\\alpha=\\beta=1$\n\nb) Calculate loss of head during jump.\n\nc) If head loss through the gate is $5\\%$ of velocity head of jet at venacontracta, calculate force on the gate.",
+      "text": "A vertical sluice gate with an opening of $0.67\\text{ m}$ produces a downstream jet of depth $0.4m$ when installed in a long rectangular channel $5m$ wide carrying a steady discharge of $20m^3/s$. Assuming that the flow depth downstream of gate eventually returns to the uniform flow depth of $2.5m$\n\na) Verify the hydraulic jump occurs. Take $\\alpha=\\beta=1$\n\nb) Calculate loss of head during jump.\n\nc) If head loss through the gate is $5\\%$ of velocity head of jet at venacontracta, calculate force on the gate.",
+      "chapter": "Archive Questions",
+      "marks": "3",
+      "frequency": 11,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "id": "hyd-3",
-      "question": "What are hydrodynamically smooth and rough boundaries? State the boundary roughness criteria based on roughness Reynolds number and explain Nikuradse's sand roughness experiment.",
-      "frequency": 4,
-      "marks": 6,
-      "examSessions": [
-        "2082 Kartik",
-        "2080 Chaitra",
-        "2076 Baisakh",
-        "2072 Ashwin"
-      ],
-      "chapter": "Pipe Flow Regimes",
-      "importance": "Medium",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "hyd-4",
-      "question": "What are HGL (Hydraulic Gradient Line) and TEL (Total Energy Line)? Draw HGL and TEL showing elevation, pressure, and velocity heads for uniform and non-uniform pipes with real fluid flow, including pump and turbine installations.",
-      "frequency": 5,
-      "marks": 6,
-      "examSessions": [
-        "2082 Kartik",
-        "2079 Chaitra",
-        "2078 Bhadra",
-        "2075 Bhadra",
-        "2070 Bhadra"
-      ],
-      "chapter": "Pipe Flow Problems",
-      "importance": "High",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "hyd-5",
-      "question": "Explain the three-reservoir problem in branching pipes. State the governing continuity and energy equations, and describe the step-by-step iterative procedure to determine the direction of flow and discharge in each branch pipe.",
-      "frequency": 5,
-      "marks": 8,
-      "examSessions": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2077 Chaitra",
-        "2076 Baisakh",
-        "2073 Bhadra"
-      ],
-      "chapter": "Pipe Flow Problems",
-      "importance": "High",
-      "difficulty": "Hard"
-    },
-    {
-      "id": "hyd-6",
-      "question": "Explain the Hardy Cross method of pipe network analysis for balancing heads and balancing flows. Derive the expression for flow correction ΔQ in a closed pipe loop.",
-      "frequency": 5,
-      "marks": 8,
-      "examSessions": [
-        "2080 Chaitra",
-        "2077 Chaitra",
-        "2074 Bhadra",
-        "2071 Bhadra",
-        "2070 Magh"
-      ],
-      "chapter": "Pipe Flow Problems",
-      "importance": "High",
-      "difficulty": "Hard"
-    },
-    {
-      "id": "hyd-7",
-      "question": "A pipeline of 600 mm diameter is 1.5 km long. To increase the discharge, another pipe of the same diameter is introduced parallel to the first in the second half of its length. If f = 0.01 and head at inlet is 300 mm, calculate the percentage increase in discharge.",
-      "frequency": 4,
-      "marks": 8,
-      "examSessions": [
-        "2081 Chaitra",
-        "2078 Bhadra",
-        "2075 Baisakh",
-        "2073 Bhadra"
-      ],
-      "chapter": "Pipe Flow Problems",
-      "importance": "High",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "hyd-8",
-      "question": "Describe with sketches the variation of water hammer pressure with time (at the valve end and at the midpoint of the pipe) in a long pipeline leading from a reservoir when the downstream valve is suddenly closed.",
-      "frequency": 5,
-      "marks": 8,
-      "examSessions": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2078 Bhadra",
-        "2076 Baisakh",
-        "2074 Bhadra"
-      ],
-      "chapter": "Unsteady Flow in Pipes",
-      "importance": "High",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "hyd-9",
-      "question": "Derive the Allievi equation for water hammer pressure rise due to gradual closure of a valve in a pipeline. What is the role of surge tanks in hydropower systems, and classify different types of surge tanks.",
-      "frequency": 4,
-      "marks": 8,
-      "examSessions": [
-        "2080 Chaitra",
-        "2075 Baisakh",
-        "2072 Ashwin",
-        "2070 Bhadra"
-      ],
-      "chapter": "Unsteady Flow in Pipes",
-      "importance": "High",
-      "difficulty": "Hard"
-    },
-    {
-      "id": "hyd-10",
-      "question": "Derive the conditions for the hydraulically most efficient trapezoidal and rectangular channel sections. Show that for the most efficient trapezoidal section, hydraulic radius R = y/2 and the side slope angle is 60° to the horizontal.",
-      "frequency": 5,
-      "marks": 8,
-      "examSessions": [
-        "2082 Kartik",
-        "2080 Chaitra",
-        "2077 Chaitra",
-        "2075 Bhadra",
-        "2071 Bhadra"
-      ],
-      "chapter": "Uniform Flow in Open Channels",
-      "importance": "High",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "hyd-11",
-      "question": "Find an expression for the theoretical depth for maximum velocity and maximum discharge in a closed circular channel in terms of diameter d.",
-      "frequency": 4,
-      "marks": 8,
-      "examSessions": [
-        "2081 Chaitra",
-        "2078 Bhadra",
-        "2074 Bhadra",
-        "2070 Magh"
-      ],
-      "chapter": "Uniform Flow in Open Channels",
-      "importance": "High",
-      "difficulty": "Hard"
-    },
-    {
-      "id": "hyd-12",
-      "question": "Draw and explain Shields diagram. Describe how an unlined alluvial channel is designed based on the tractive force method (critical shear stress approach).",
-      "frequency": 4,
-      "marks": 8,
-      "examSessions": [
-        "2081 Chaitra",
-        "2082 Kartik",
-        "2076 Baisakh",
-        "2073 Bhadra"
-      ],
-      "chapter": "Uniform Flow in Open Channels",
-      "importance": "High",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "hyd-13",
-      "question": "Define Specific Energy and draw the specific energy curve for a rectangular channel. Derive expressions for critical depth yc, critical velocity Vc, and minimum specific energy Emin in terms of discharge per unit width q.",
-      "frequency": 5,
-      "marks": 8,
-      "examSessions": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2080 Chaitra",
-        "2078 Bhadra",
-        "2075 Bhadra"
-      ],
-      "chapter": "Energy and Momentum Principles in Open Channel Flow",
-      "importance": "High",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "hyd-14",
-      "question": "Explain the channel transitions with both a bed hump and width constriction under subcritical flow using the specific energy diagram. What is the maximum allowable height of hump Δz_max without choking the upstream flow?",
-      "frequency": 5,
-      "marks": 8,
-      "examSessions": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2077 Chaitra",
-        "2076 Baisakh",
-        "2074 Bhadra"
-      ],
-      "chapter": "Energy and Momentum Principles in Open Channel Flow",
-      "importance": "High",
-      "difficulty": "Hard"
-    },
-    {
-      "id": "hyd-15",
-      "question": "Derive the momentum equation for a classical hydraulic jump in a horizontal rectangular channel and prove the Belanger equation relating initial and sequent depths: y2/y1 = (1/2)*(sqrt(1 + 8*Fr1^2) - 1). Deduce the expression for energy loss in the jump.",
-      "frequency": 5,
-      "marks": 8,
-      "examSessions": [
-        "2081 Chaitra",
-        "2080 Chaitra",
-        "2078 Bhadra",
-        "2075 Baisakh",
-        "2072 Ashwin"
-      ],
-      "chapter": "Rapidly Varied Flow in Open Channels",
-      "importance": "High",
-      "difficulty": "Hard"
-    },
-    {
-      "id": "hyd-16",
-      "question": "Derive the dynamic equation of Gradually Varied Flow (GVF) in open channels: dy/dx = (S0 - Sf) / (1 - Fr^2). Classify and sketch all 12 water surface profiles (M1, M2, M3, S1, S2, S3, C1, C3, H2, H3, A2, A3).",
-      "frequency": 5,
-      "marks": 8,
-      "examSessions": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2080 Chaitra",
-        "2078 Bhadra",
-        "2076 Baisakh"
-      ],
-      "chapter": "Gradually Varied Flow in Open Channels",
-      "importance": "High",
-      "difficulty": "Hard"
-    },
-    {
-      "id": "hyd-17",
-      "question": "Explain the Direct Step Method and Standard Step Method for the numerical computation of GVF water surface profiles. In a wide rectangular channel, compute the length of backwater profile using the direct step method.",
-      "frequency": 4,
-      "marks": 6,
-      "examSessions": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2075 Bhadra"
-      ],
-      "chapter": "Gradually Varied Flow in Open Channels",
-      "importance": "High",
-      "difficulty": "Medium"
-    },
-    {
-      "chapter": "Pipe Flow Problems",
-      "text": "Derive the Darcy-Weisbach Equation for head loss due to friction in commercial pipes: $h_f = \\frac{f L v^2}{2 g D}$. Discuss the Moody Diagram and explain the variations of friction factor $f$ in laminar ($f = 64/Re$), transitional, smooth turbulent, and fully rough turbulent flow regimes.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2081 Chaitra",
-        "2078 Bhadra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Equating shear resisting force tau_0 * pi D L to pressure force Delta p * pi D^2 / 4 yields h_f = 4 tau_0 L / (rho g D). Defining friction factor f = 8 tau_0 / (rho v^2) gives Darcy-Weisbach equation h_f = f L v^2 / (2g D). Moody diagram plots f vs Re for varying relative roughness k_s/D. Laminar (Re < 2000): f = 64/Re (independent of roughness). Smooth turbulent: laminar sublayer submerges surface asperities; f depends only on Re. Fully rough: asperities penetrate sublayer; f depends solely on k_s/D (von Karman equation 1/sqrt(f) = 2 log10(D/k_s) + 1.14)."
-    },
-    {
-      "chapter": "Pipe Flow Problems",
-      "text": "Analyze Complex Pipe Networks using the Hardy Cross Method. Detail the method of balancing heads around closed loops ($\\Delta Q = -\\frac{\\sum r Q_0 |Q_0|^{n-1}}{\\sum n r |Q_0|^{n-1}}$) and solve for corrected flow rates in a distribution network.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Iterative loop method based on two physical laws: 1) Continuity at every junction sum Q_in = sum Q_out; 2) Zero algebraic sum of head losses around every closed loop sum h_f = sum r Q^n = 0 (Darcy n=2 or Hazen-Williams n=1.852). Assume initial flow Q0 satisfying continuity. Flow correction Delta Q = -sum(r Q0 |Q0|) / sum(2 r |Q0|). Correct flows Q = Q0 + Delta Q (subtracting for pipes shared between adjacent loops), repeating until Delta Q is negligible."
-    },
-    {
-      "chapter": "Unsteady Flow in Pipes",
-      "text": "Explain Water Hammer in pipelines. Derive the Joukowsky formula for acoustic pressure surge $\\Delta p = \\rho c v_0$ for instantaneous valve closure. Differentiate between rapid and slow valve closure using critical closure time $t_c = \\frac{2L}{c}$, and explain the function of surge tanks.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2081 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Pressure wave generated by sudden destruction of kinetic energy upon rapid valve closure. Applying impulse-momentum equation to acoustic wavefront traveling at wave speed c = sqrt((K/rho) / [1 + (K D / E t)]): Delta p * A * dt = rho (A c dt) v_0 => Delta p = rho c v_0. Acoustic head surge Delta H = c v_0 / g. Critical time t_c = 2L/c (round-trip travel time of pressure wave). Rapid closure (t_v <= t_c): full Joukowsky surge occurs. Slow closure (t_v > t_c): relief wave attenuates surge Delta p_max = 2 rho L v_0 / t_v. Surge tank absorbs rejected water volume, dampening pressure oscillations."
-    },
-    {
-      "chapter": "Uniform Flow in Open Channels",
-      "text": "Derive Chezy's and Manning's equations for uniform flow in open channels: $v = \\frac{1}{n} R^{2/3} S_0^{1/2}$. Derive the geometric conditions for the Most Economically Efficient Hydraulic Section for: (a) Rectangular channel ($b = 2y$), and (b) Trapezoidal channel ($R = y/2$, side slope $60^\\circ$).",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2076 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Most efficient section delivers maximum discharge for given cross-sectional area A, which requires minimizing wetted perimeter P (maximizing hydraulic radius R = A/P). Rectangular channel: A = b y, P = b + 2y = A/y + 2y. dP/dy = -A/y^2 + 2 = 0 => b = 2y and R = y/2. Trapezoidal channel: A = (b + m y) y, P = b + 2y sqrt(1 + m^2). Minimizing P with respect to y and side slope m yields: hydraulic radius R = y/2; top width T = 2 * (sloping side length); optimum side slope m = 1/sqrt(3) (theta = 60 deg, half of regular hexagon)."
-    },
-    {
-      "chapter": "Energy and Momentum Principles in Open Channel Flow",
-      "text": "Explain Specific Energy $E = y + \\frac{v^2}{2g} = y + \\frac{Q^2}{2g A^2}$ in open channels. Derive Critical Depth $y_c = \\left(\\frac{q^2}{g}\\right)^{1/3}$, minimum specific energy $E_{min} = 1.5 y_c$, and Critical Velocity ($Fr = 1$) for a rectangular channel.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2081 Chaitra",
-        "2078 Kartik"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Specific energy is energy per unit weight of fluid measured relative to channel bottom. For rectangular channel of width b with discharge per unit width q = Q/b: E = y + q^2 / (2g y^2). Critical depth corresponds to minimum specific energy: dE/dy = 1 - q^2 / (g y^3) = 0 => y_c = (q^2 / g)^(1/3). Substituting y_c: E_min = y_c + y_c / 2 = 1.5 y_c. Critical velocity v_c = sqrt(g y_c) => Froude number Fr = v_c / sqrt(g y_c) = 1. Subcritical flow (Fr < 1, y > y_c); Supercritical flow (Fr > 1, y < y_c)."
-    },
-    {
-      "chapter": "Energy and Momentum Principles in Open Channel Flow",
-      "text": "Explain Specific Force (Momentum Function) $M = \\frac{Q^2}{g A} + \\bar{z} A$ in open channel hydraulics. Prove that critical flow occurs at minimum specific force and contrast the specific force curve with the specific energy curve.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Specific force is sum of momentum flux per unit weight and hydrostatic pressure force: M = Q^2 / (g A) + z_bar A. In hydraulic jumps and sudden transitions where external friction is negligible, momentum is conserved: M1 = M2. Differentiating with respect to depth y: dM/dy = -Q^2 / (g A^2) dA/dy + d(z_bar A)/dy. Since dA/dy = T (top width) and d(z_bar A)/dy = A: dM/dy = A (1 - Q^2 T / (g A^3)) = A (1 - Fr^2). Setting dM/dy = 0 yields Fr = 1, proving minimum specific force occurs at critical depth."
-    },
-    {
-      "chapter": "Rapidly Varied Flow in Open Channels",
-      "text": "Derive the Hydraulic Jump Conjugate Depth (Bélanger's) Equation: $\\frac{y_2}{y_1} = \\frac{1}{2}\\left(\\sqrt{1 + 8 Fr_1^2} - 1\\right)$. Derive energy loss in a jump $\\Delta E = \\frac{(y_2 - y_1)^3}{4 y_1 y_2}$ and explain USBR Stilling Basins for hydraulic energy dissipation.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2081 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Occurs when supercritical stream abruptly jumps to subcritical state with turbulent energy dissipation. Equating specific force M1 = M2 for rectangular channel: q^2/(g y1) + y1^2/2 = q^2/(g y2) + y2^2/2. Rearranging gives y2/y1 = 0.5 * (sqrt(1 + 8 Fr1^2) - 1). Energy loss Delta E = E1 - E2 = (y1 + v1^2/2g) - (y2 + v2^2/2g) = (y2 - y1)^3 / (4 y1 y2). USBR Stilling basins (Type II, III, IV) use chute blocks, baffle piers, and end sills to shorten jump length and stabilize jump within paved concrete apron."
-    },
-    {
-      "chapter": "Rapidly Varied Flow in Open Channels",
-      "text": "Classify Hydraulic Jumps based on upstream Froude Number ($Fr_1$): Undular ($1 < Fr_1 < 1.7$), Weak ($1.7 < Fr_1 < 2.5$), Oscillating ($2.5 < Fr_1 < 4.5$), Steady ($4.5 < Fr_1 < 9$), and Strong ($Fr_1 > 9$).",
+      "id": "hydraulics-3",
+      "question": "A wide channel with uniform rectangular section has a change of slope from $1$ in $95$ to $1$ in $1420$ and the flow is $3.75\\text{ m}^3/\\text{s}$ per $\\text{m}$ width. Determine the normal depth of flow corresponding to each slope and show that a hydraulic jump will occur in the region of the junction. Calculate the height of the jump and sketch the surface profiles between the upstream and downstream regions of uniform flow. Manning's coefficient $n = 0.013$ and it may be assumed that the depth of flow, so that the hydraulic mean depth is approximately equal to the depth of flow. [6]\nOR\nFind the pre jump and post jump heights of the hydraulic jump formed at the toe of the spillway. Neglect energy loss due to flow over spillway.\nHeight of the crest above D/S bed level = $3\\text{m}$\nDischarge = $80\\text{ m}^3/\\text{s}$\nWidth of the canal = $10.0\\text{m}$\nHead over the crest level = $2.47\\text{m}$\nExplain the formation condition of repelled and submerged jump for the above flow condition.",
+      "text": "A wide channel with uniform rectangular section has a change of slope from $1$ in $95$ to $1$ in $1420$ and the flow is $3.75\\text{ m}^3/\\text{s}$ per $\\text{m}$ width. Determine the normal depth of flow corresponding to each slope and show that a hydraulic jump will occur in the region of the junction. Calculate the height of the jump and sketch the surface profiles between the upstream and downstream regions of uniform flow. Manning's coefficient $n = 0.013$ and it may be assumed that the depth of flow, so that the hydraulic mean depth is approximately equal to the depth of flow. [6]\nOR\nFind the pre jump and post jump heights of the hydraulic jump formed at the toe of the spillway. Neglect energy loss due to flow over spillway.\nHeight of the crest above D/S bed level = $3\\text{m}$\nDischarge = $80\\text{ m}^3/\\text{s}$\nWidth of the canal = $10.0\\text{m}$\nHead over the crest level = $2.47\\text{m}$\nExplain the formation condition of repelled and submerged jump for the above flow condition.",
+      "chapter": "Archive Questions",
       "marks": "6",
-      "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2078 Bhadra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Classification (USBR): Fr1=1 to 1.7 (Undular: standing surface waves, negligible energy dissipation <5%); Fr1=1.7 to 2.5 (Weak: small rollers form, smooth water surface, energy loss 5-18%); Fr1=2.5 to 4.5 (Oscillating: pulsating jet moving from floor to surface, generates destructive waves downstream, avoid in stilling basins); Fr1=4.5 to 9.0 (Steady jump: stable, well-balanced roller, 45-70% energy dissipation, ideal for stilling basins); Fr1 > 9.0 (Strong/Chappy jump: violent intermittent slug flow, >70% energy dissipation)."
+      "frequency": 10,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "chapter": "Gradually Varied Flow in Open Channels",
-      "text": "Derive the Dynamic Equation of Gradually Varied Flow (GVF): $\\frac{dy}{dx} = \\frac{S_0 - S_f}{1 - Fr^2}$. Classify GVF surface profiles on Mild ($M_1, M_2, M_3$), Steep ($S_1, S_2, S_3$), Critical ($C_1, C_3$), Horizontal ($H_2, H_3$), and Adverse ($A_2, A_3$) channel slopes.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2081 Chaitra",
-        "2076 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Total energy H = z + y + v^2/2g. Differentiating with respect to x: dH/dx = dz/dx + dy/dx + d(v^2/2g)/dx. Since dH/dx = -S_f, dz/dx = -S_0, and d(v^2/2g)/dx = -Fr^2 dy/dx: -S_f = -S_0 + dy/dx (1 - Fr^2) => dy/dx = (S_0 - S_f) / (1 - Fr^2). Mild slope (y_n > y_c): M1 (y > y_n > y_c, backwater curve behind dam), M2 (y_n > y > y_c, drawdown into drop), M3 (y_n > y_c > y, supercritical flow). Steep slope (y_c > y_n): S1, S2, S3 profiles."
-    },
-    {
-      "chapter": "Gradually Varied Flow in Open Channels",
-      "text": "Explain numerical computation of GVF water surface profiles: Direct Step Method and Standard Step Method. State their governing equations, step sequence, and control section boundary conditions.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Direct step method (prismatic channels): chooses depth increment Delta y and solves for distance step Delta x = (E2 - E1) / (S_0 - S_f_avg), marching step-by-step from control section. Standard step method (natural non-prismatic rivers): divides channel into fixed distance reaches Delta x and iteratively solves for unknown depth y2 using trial-and-error until total energy equation H2 = H1 + h_f + h_e balances within tolerance. Subcritical control is downstream (computation marches upstream); supercritical control is upstream."
-    },
-    {
-      "chapter": "Energy and Momentum Principles in Open Channel Flow",
-      "text": "Explain Channel Transitions: flow over a smooth upward hump ($\\Delta z$) and channel width constriction ($\\Delta b$). Determine the critical hump height $\\Delta z_c$ and critical width $b_{min}$ to avoid upstream backwater choking.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2081 Chaitra",
-        "2078 Kartik"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Bernoulli between section 1 and constricted section 2: E1 = E2 + Delta z. For subcritical approach flow, water surface dips over hump. Critical hump height occurs when flow at section 2 reaches critical state (E2 = E_min = 1.5 y_c): Delta z_c = E1 - E_min. If Delta z > Delta z_c, channel chokes, raising upstream depth y1. Similarly, width constriction increases discharge per unit width q2 = Q/b2; minimum width to avoid choking b_min = Q / sqrt(g y_c^3) = Q / sqrt(g (2/3 E1)^3)."
-    },
-    {
-      "chapter": "Uniform Flow in Open Channels",
-      "text": "Explain Spatially Varied Flow (SVF) with increasing and decreasing discharge. Derive the dynamic equation for side weir channels and lateral spillway troughs.",
+      "id": "hydraulics-4",
+      "question": "A stream has a sediment bed of median size $0.35\\text{ mm}$. The slope of the channel is $1.5 \\times 10^{-4}$. Stream is considered as trapezoidal with base width $3\\text{ m}$ and side slope $1.5\\text{ H} : 1\\text{ V}$.\n\na) If the depth of flow in the channel is $0.25\\text{ m}$, examine whether the bed particles will be in motion or not.\n\nb) Calculate minimum size of gravel that will not move in the bed of channel. Use empirical equation of critical shear stress as: $\\tau_c (\\text{N}/\\text{m}^2) = 0.155 + \\frac{0.409d^2_{\\text{mm}}}{(1 + 0.177d^2_{\\text{mm}})^{1/2}}$.",
+      "text": "A stream has a sediment bed of median size $0.35\\text{ mm}$. The slope of the channel is $1.5 \\times 10^{-4}$. Stream is considered as trapezoidal with base width $3\\text{ m}$ and side slope $1.5\\text{ H} : 1\\text{ V}$.\n\na) If the depth of flow in the channel is $0.25\\text{ m}$, examine whether the bed particles will be in motion or not.\n\nb) Calculate minimum size of gravel that will not move in the bed of channel. Use empirical equation of critical shear stress as: $\\tau_c (\\text{N}/\\text{m}^2) = 0.155 + \\frac{0.409d^2_{\\text{mm}}}{(1 + 0.177d^2_{\\text{mm}})^{1/2}}$.",
+      "chapter": "Archive Questions",
       "marks": "6",
-      "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Discharge varies along channel length (dQ/dx != 0). Increasing discharge (lateral inflow into spillway channel): incoming water carries no x-momentum; mixing causes turbulent kinetic energy loss, requiring momentum equation for formulation: dy/dx = [S_0 - S_f - 2 Q q / (g A^2)] / [1 - Fr^2]. Decreasing discharge (side weir diversion): diverted water leaves with channel velocity without impacting momentum of remaining stream, allowing energy equation to be applied directly."
+      "frequency": 10,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "chapter": "Unsteady Flow in Pipes",
-      "text": "Explain Surges (Positive and Negative Surges) in open channels following rapid gate closure or opening. Derive the celerity formula for a solitary gravity wave $c = \\sqrt{g y}$ and continuity/momentum relations across the surge front.",
+      "id": "hydraulics-5",
+      "question": "a) Explain the Tractive Force Method of designing Mobile boundary channel. [3]\n\nb) Design a regime channel for a discharge of 75 $m^3/s$ and soil particle size of 0.65 mm using Lacey's method. Assume suitable side slope of channel.\n\nP.2",
+      "text": "a) Explain the Tractive Force Method of designing Mobile boundary channel. [3]\n\nb) Design a regime channel for a discharge of 75 $m^3/s$ and soil particle size of 0.65 mm using Lacey's method. Assume suitable side slope of channel.\n\nP.2",
+      "chapter": "Archive Questions",
+      "marks": "3",
+      "frequency": 10,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-6",
+      "question": "A discharge of $25m^3/s$ occurs in a long $10\\text{ m}$ wide rectangular channel that has a slope of $0.0005$ and ends in an abrupt drop off. considering manning's $n= 0.018$ Indentify the type of water surface profile and compute the profile from the drop point to a point at which the depth has reached to $70\\%$ of normal depth using direct step method taking at least $3$ steps for calculations.",
+      "text": "A discharge of $25m^3/s$ occurs in a long $10\\text{ m}$ wide rectangular channel that has a slope of $0.0005$ and ends in an abrupt drop off. considering manning's $n= 0.018$ Indentify the type of water surface profile and compute the profile from the drop point to a point at which the depth has reached to $70\\%$ of normal depth using direct step method taking at least $3$ steps for calculations.",
+      "chapter": "Archive Questions",
+      "marks": "2",
+      "frequency": 10,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-7",
+      "question": "A trapezoidal channel 1.5m deep, 10m bed width, with 2:1 side slopes is excavated in gravel of median size of 60mm. What is the maximum permissible channel slope and what discharge can the channel carry without disturbing its stability? Take angle of repose($\\phi$) = 37° and $K_2 = 0.9$.",
+      "text": "A trapezoidal channel 1.5m deep, 10m bed width, with 2:1 side slopes is excavated in gravel of median size of 60mm. What is the maximum permissible channel slope and what discharge can the channel carry without disturbing its stability? Take angle of repose($\\phi$) = 37° and $K_2 = 0.9$.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 10,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-8",
+      "question": "Why shear stress reduction factor \"K\" is necessary while designing the mobile boundary channel? Explain the design procedures (step by step) of mobile boundary channel by maximum permissible velocity approach.",
+      "text": "Why shear stress reduction factor \"K\" is necessary while designing the mobile boundary channel? Explain the design procedures (step by step) of mobile boundary channel by maximum permissible velocity approach.",
+      "chapter": "Archive Questions",
+      "marks": "2",
+      "frequency": 10,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-9",
+      "question": "Distinguish between Rigid boundary and Mobile boundary channels with respect to design principle. Explain the procedures of designing rigid boundary channel by minimum permissible velocity approach.",
+      "text": "Distinguish between Rigid boundary and Mobile boundary channels with respect to design principle. Explain the procedures of designing rigid boundary channel by minimum permissible velocity approach.",
+      "chapter": "Archive Questions",
+      "marks": "3",
+      "frequency": 10,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-10",
+      "question": "Write down the design procedures of mobile boundary channel using maximum permissible velocity method, tractive force method and regime theory approaches with appropriate expressions.",
+      "text": "Write down the design procedures of mobile boundary channel using maximum permissible velocity method, tractive force method and regime theory approaches with appropriate expressions.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 10,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-11",
+      "question": "Explain the Tractive Force Method of designing Mobile boundary channel. Show the shear stress distribution on the Alluvial channel boundary with values.\nP.4",
+      "text": "Explain the Tractive Force Method of designing Mobile boundary channel. Show the shear stress distribution on the Alluvial channel boundary with values.\nP.4",
+      "chapter": "Archive Questions",
+      "marks": "3",
+      "frequency": 10,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-12",
+      "question": "Define an alluvial channel and incipient motion. Find the expression for the shear reduction factor “K” and explain the physical meaning of this factor.",
+      "text": "Define an alluvial channel and incipient motion. Find the expression for the shear reduction factor “K” and explain the physical meaning of this factor.",
+      "chapter": "Archive Questions",
+      "marks": "1",
+      "frequency": 10,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-13",
+      "question": "Describe the application of shield diagram for designing mobile boundary channel.",
+      "text": "Describe the application of shield diagram for designing mobile boundary channel.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 10,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-14",
+      "question": "A rectangular channel conveying a discharge of $30\\text{ m}^3/\\text{sec}$ is $12\\text{m}$ wide with a bed slope $1$ in $6000$ and having Manning's $n = 0.025$. The depth of flow at a section is $1.5\\text{m}$. Find how far upstream or downstream of this section the depth of flow will be $2\\text{m}$. Find also the types of profile. Use direct step method for calculation and take only two steps for calculation.",
+      "text": "A rectangular channel conveying a discharge of $30\\text{ m}^3/\\text{sec}$ is $12\\text{m}$ wide with a bed slope $1$ in $6000$ and having Manning's $n = 0.025$. The depth of flow at a section is $1.5\\text{m}$. Find how far upstream or downstream of this section the depth of flow will be $2\\text{m}$. Find also the types of profile. Use direct step method for calculation and take only two steps for calculation.",
+      "chapter": "Archive Questions",
+      "marks": "7",
+      "frequency": 9,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-15",
+      "question": "What is hydraulic jump? Why is energy principle not applied for the analysis of the jump? Water flows in a 5 m wide rectangular channel at Froude number 3.5; the depth of flow is 1.2 m. If water undergoes a hydraulic jump, what is the Froude number downstream of jump?",
+      "text": "What is hydraulic jump? Why is energy principle not applied for the analysis of the jump? Water flows in a 5 m wide rectangular channel at Froude number 3.5; the depth of flow is 1.2 m. If water undergoes a hydraulic jump, what is the Froude number downstream of jump?",
+      "chapter": "Archive Questions",
+      "marks": "1",
+      "frequency": 9,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-16",
+      "question": "A rectangular channel with width $1.1\\text{ m}$ carrying a flow discharge of $7.2\\text{ m}^3/\\text{s}$ changes its bed slope from $0.065$ to $0.0085$. Show that the hydraulic jump occurs and if so find the location of jump. Take Manning’s roughness as $0.025$.",
+      "text": "A rectangular channel with width $1.1\\text{ m}$ carrying a flow discharge of $7.2\\text{ m}^3/\\text{s}$ changes its bed slope from $0.065$ to $0.0085$. Show that the hydraulic jump occurs and if so find the location of jump. Take Manning’s roughness as $0.025$.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 9,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-17",
+      "question": "The depth of uniform flow in a rectangular channel is $5\\text{ m}$ wide ($n = 0.02$, $S_0 = 0.04$) is $0.5\\text{ m}$. A low dam raises the water depth of $2\\text{ m}$. Find whether a hydraulic jump takes place and if so at what distance upstream of the dam.",
+      "text": "The depth of uniform flow in a rectangular channel is $5\\text{ m}$ wide ($n = 0.02$, $S_0 = 0.04$) is $0.5\\text{ m}$. A low dam raises the water depth of $2\\text{ m}$. Find whether a hydraulic jump takes place and if so at what distance upstream of the dam.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 9,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-18",
+      "question": "Draw a hydraulic jump profile and indicate conjugate depths and energy loss using specific energy and specific force diagram. Hence derive momentum equation for the hydraulic jump in rectangular channel.",
+      "text": "Draw a hydraulic jump profile and indicate conjugate depths and energy loss using specific energy and specific force diagram. Hence derive momentum equation for the hydraulic jump in rectangular channel.",
+      "chapter": "Archive Questions",
       "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2081 Chaitra",
-        "2076 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Unsteady open-channel wave front created by sudden operation of sluice gates. Positive surge increases water depth (steepens as it propagates due to higher wave speed in deeper water, forming traveling hydraulic bore). Negative surge decreases water depth (flattens out with distance). Applying continuity and momentum across surge traveling at absolute velocity V_w: relative velocity v_r1 = v1 - V_w, v_r2 = v2 - V_w. Wave celerity for small disturbance c = sqrt(g y)."
+      "frequency": 9,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-19",
+      "question": "Draw a hydraulic jump profile and indicate depths and energy loss using specific energy and specific force diagram. Also derive momentum equation for the hydraulic jump in rectangular channel.",
+      "text": "Draw a hydraulic jump profile and indicate depths and energy loss using specific energy and specific force diagram. Also derive momentum equation for the hydraulic jump in rectangular channel.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 9,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-20",
+      "question": "For a hydraulic jump in a horizontal triangular channel show that $3Fr_1^2 = \\frac{r^2(r^3-1)}{r^2-1}$,\nwhere $Fr_1^2 = \\frac{v_1^2}{gy_1}$ and $r = \\frac{y_2}{y_1}$.",
+      "text": "For a hydraulic jump in a horizontal triangular channel show that $3Fr_1^2 = \\frac{r^2(r^3-1)}{r^2-1}$,\nwhere $Fr_1^2 = \\frac{v_1^2}{gy_1}$ and $r = \\frac{y_2}{y_1}$.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 9,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-21",
+      "question": "Prove that \"For a given specific force and channel section, maximum discharge corresponds to the critical state flow\".",
+      "text": "Prove that \"For a given specific force and channel section, maximum discharge corresponds to the critical state flow\".",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 9,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-22",
+      "question": "Why the critical depth varies for the constriction flow analysis and does not vary for the hump flow analysis? A rectangular channel $2\\text{m}$ wide has a flow of $2.4\\text{ m}^3/\\text{s}$ at a depth of $1.0\\text{m}$. Determine if critical depth occurs (a) a section where a hump of $\\Delta Z = 20\\text{cm}$ high is installed across the channel bed, (b) a side wall constriction (with no humps) reducing the channel width to $1.7\\text{m}$, and (c) both the hump and side wall constrictions combined. Will the upstream depth be affected for case (c)? If so, to what extent? Neglect head losses of the hump and constriction caused by friction, expansion and contraction.",
+      "text": "Why the critical depth varies for the constriction flow analysis and does not vary for the hump flow analysis? A rectangular channel $2\\text{m}$ wide has a flow of $2.4\\text{ m}^3/\\text{s}$ at a depth of $1.0\\text{m}$. Determine if critical depth occurs (a) a section where a hump of $\\Delta Z = 20\\text{cm}$ high is installed across the channel bed, (b) a side wall constriction (with no humps) reducing the channel width to $1.7\\text{m}$, and (c) both the hump and side wall constrictions combined. Will the upstream depth be affected for case (c)? If so, to what extent? Neglect head losses of the hump and constriction caused by friction, expansion and contraction.",
+      "chapter": "Archive Questions",
+      "marks": "2",
+      "frequency": 8,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-23",
+      "question": "a) Sketch the flow profile: [4]\n\nb) Justify analytically that $A_3$ curve meets the $y_c$ line and channel bottom normally.",
+      "text": "a) Sketch the flow profile: [4]\n\nb) Justify analytically that $A_3$ curve meets the $y_c$ line and channel bottom normally.",
+      "chapter": "Archive Questions",
+      "marks": "4",
+      "frequency": 8,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-24",
+      "question": "a) Sketch the flow profile. [3]\n\nb) Justify analytically the nature of surface profiles in critical sloped channels.",
+      "text": "a) Sketch the flow profile. [3]\n\nb) Justify analytically the nature of surface profiles in critical sloped channels.",
+      "chapter": "Archive Questions",
+      "marks": "5",
+      "frequency": 8,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-25",
+      "question": "A rectangular channel with a bottom width of 4 m, bottom slope of 0.00075 and energy correction factor of 1.1 has a discharge of $2.0 \\text{ m}^3/\\text{s}$. In a Gradually varied flow in this section the depth at certain location is found to be 0.2 m, considering Manning's roughness coefficient as 0.016 determine the type of GVF profile. How far upstream or downstream will the depth be 0.40 m from depth 0.20 m. Use Graphical Integration Method using increment equals to 0.1 m.",
+      "text": "A rectangular channel with a bottom width of 4 m, bottom slope of 0.00075 and energy correction factor of 1.1 has a discharge of $2.0 \\text{ m}^3/\\text{s}$. In a Gradually varied flow in this section the depth at certain location is found to be 0.2 m, considering Manning's roughness coefficient as 0.016 determine the type of GVF profile. How far upstream or downstream will the depth be 0.40 m from depth 0.20 m. Use Graphical Integration Method using increment equals to 0.1 m.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 8,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-26",
+      "question": "a) A $3.5\\text{ m}$ rectangular channel carries discharge of $4\\text{ m}^3/\\text{s}$ of water at a depth of $1.2\\text{ m}$. If the width is reduced to $2.0\\text{ m}$ and bed raised by $0.15\\text{ m}$, determine the depth of flow at reduced section and upstream of the reduced section. [6]\n\nb) Find the expression for the specific force. Show that the flow is critical when the specific force is minimum. Explain the use of this concept in open channel flow.",
+      "text": "a) A $3.5\\text{ m}$ rectangular channel carries discharge of $4\\text{ m}^3/\\text{s}$ of water at a depth of $1.2\\text{ m}$. If the width is reduced to $2.0\\text{ m}$ and bed raised by $0.15\\text{ m}$, determine the depth of flow at reduced section and upstream of the reduced section. [6]\n\nb) Find the expression for the specific force. Show that the flow is critical when the specific force is minimum. Explain the use of this concept in open channel flow.",
+      "chapter": "Archive Questions",
+      "marks": "4",
+      "frequency": 8,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-27",
+      "question": "Derive the dynamic equation of Gradually varied flow (GVF) and convert the derived equation for the case of wide rectangular channel, using Manning's equation, into following form:\n$$\\frac{dy}{dx} = \\frac{S_0[1-(y_n/y)^{10/3}]}{1-(y_c/y)^3}$$ Where $S_0$ = bed slope, $y_n$ = normal depth, $y_c$ = critical depth.",
+      "text": "Derive the dynamic equation of Gradually varied flow (GVF) and convert the derived equation for the case of wide rectangular channel, using Manning's equation, into following form:\n$$\\frac{dy}{dx} = \\frac{S_0[1-(y_n/y)^{10/3}]}{1-(y_c/y)^3}$$ Where $S_0$ = bed slope, $y_n$ = normal depth, $y_c$ = critical depth.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 8,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-28",
+      "question": "Water is following in a rectangular channel at a velocity of $3m/s$ and depth of $2m$.\n\na) Calculate maximum channel bed increase allowable for the specified upstream flow conditions to remain unchanged. (Neglect losses)\n\nb) Determine changes in water surface elevation if bed level decreases (downward step) of $15\\text{ cm}$.",
+      "text": "Water is following in a rectangular channel at a velocity of $3m/s$ and depth of $2m$.\n\na) Calculate maximum channel bed increase allowable for the specified upstream flow conditions to remain unchanged. (Neglect losses)\n\nb) Determine changes in water surface elevation if bed level decreases (downward step) of $15\\text{ cm}$.",
+      "chapter": "Archive Questions",
+      "marks": "4",
+      "frequency": 8,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-29",
+      "question": "What is a mild slope? Justify analytically the nature of surface profiles (both upstream and downstream end) for mild slope.",
+      "text": "What is a mild slope? Justify analytically the nature of surface profiles (both upstream and downstream end) for mild slope.",
+      "chapter": "Archive Questions",
+      "marks": "1",
+      "frequency": 8,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-30",
+      "question": "a) Define specific energy. Show that the flow is critical when the discharge is maximum for the given specific energy. Water flows at a depth of 1.8 m and velocity of 1.5 m/s in a 3 m wide rectangular channel. Find the width at contraction which just causes critical flow without a change in the upstream depth. [1+4+3]\n\nb) An open rectangular channel carrying a discharge of $4.25 \\text{ m}^3/\\text{s}$ is flowing at a depth of 1.15m with energy of 1.2 m and a width of 3 m. The flow encounters a simultaneous gradual contraction to a width of 1.5 m and a smooth downwards step of 0.6 m. With these flow conditions, determine the depth of the downstream flow.",
+      "text": "a) Define specific energy. Show that the flow is critical when the discharge is maximum for the given specific energy. Water flows at a depth of 1.8 m and velocity of 1.5 m/s in a 3 m wide rectangular channel. Find the width at contraction which just causes critical flow without a change in the upstream depth. [1+4+3]\n\nb) An open rectangular channel carrying a discharge of $4.25 \\text{ m}^3/\\text{s}$ is flowing at a depth of 1.15m with energy of 1.2 m and a width of 3 m. The flow encounters a simultaneous gradual contraction to a width of 1.5 m and a smooth downwards step of 0.6 m. With these flow conditions, determine the depth of the downstream flow.",
+      "chapter": "Archive Questions",
+      "marks": "4",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-31",
+      "question": "What are the different conditions to be fulfilled when flow is critical open channel? A 3m wide rectangular channel carries 3 $m^3/s$ of water at a depth of 1 m. If the width is to be reduced to 2 m and bed raised by 10 cm, what would be the depth of flow in the contracted section? What maximum rise in the bed level of the contracted section is possible without affecting the depth of flow upstream of transition? Neglect loss of energy in transition. What would be the change in water surface elevations if the rise in bed is 30 cm?",
+      "text": "What are the different conditions to be fulfilled when flow is critical open channel? A 3m wide rectangular channel carries 3 $m^3/s$ of water at a depth of 1 m. If the width is to be reduced to 2 m and bed raised by 10 cm, what would be the depth of flow in the contracted section? What maximum rise in the bed level of the contracted section is possible without affecting the depth of flow upstream of transition? Neglect loss of energy in transition. What would be the change in water surface elevations if the rise in bed is 30 cm?",
+      "chapter": "Archive Questions",
+      "marks": "3",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-32",
+      "question": "A rectangular channel with a bottom width of $5\\text{ m}$, bottom slope of $0.00076$ and energy correction factor of $1.1$ has a discharge of $1.85\\text{ m}^3/\\text{s}$. In a Gradually varied flow in this section the depth at certain location is found to be $0.25\\text{ m}$, considering Manning’s roughness coefficient as $0.0165$ determine the type of GVF profile. How far upstream or downstream will the depth be $0.40\\text{ m}$ from depth $0.25\\text{ m}$. Use direct step method using increment equals to $0.05\\text{ m}$.",
+      "text": "A rectangular channel with a bottom width of $5\\text{ m}$, bottom slope of $0.00076$ and energy correction factor of $1.1$ has a discharge of $1.85\\text{ m}^3/\\text{s}$. In a Gradually varied flow in this section the depth at certain location is found to be $0.25\\text{ m}$, considering Manning’s roughness coefficient as $0.0165$ determine the type of GVF profile. How far upstream or downstream will the depth be $0.40\\text{ m}$ from depth $0.25\\text{ m}$. Use direct step method using increment equals to $0.05\\text{ m}$.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-33",
+      "question": "A trapezoidal channel of base width 6 m and side slope of 2 horizontal to 1 vertical carries a flow of 60 cumecs at a depth of 2.5 m. There is a smooth transition to a rectangular section 6 m wide accompanied by a gradual lowering of the channel bed by 0.6 m (i) Find the depth of water in the rectangular section and the change in water surface level. (ii) In case the drop in water surface level is to be restricted to 0.3 m. What is the amount by which the bed must be lowered? Assume no losses.",
+      "text": "A trapezoidal channel of base width 6 m and side slope of 2 horizontal to 1 vertical carries a flow of 60 cumecs at a depth of 2.5 m. There is a smooth transition to a rectangular section 6 m wide accompanied by a gradual lowering of the channel bed by 0.6 m (i) Find the depth of water in the rectangular section and the change in water surface level. (ii) In case the drop in water surface level is to be restricted to 0.3 m. What is the amount by which the bed must be lowered? Assume no losses.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-34",
+      "question": "a) A flow of $2 \\text{ m}^3/\\text{s}$ is carried in a rectangular channel 1.8 wide at a depth of 1.0 m. Will critical depth occur at a section where (a) a frictionless hump 15 cm high is installed across the bed? (b) a frictionless sidewall reduces the channel width to 1.3 m? (c) the hump and the sidewall construction are installed together? [9]\n\nb) Define conjugate depths. Sketch the specific force curve showing conjugate depths and the zones of subcritical, critical and supercritical flow.",
+      "text": "a) A flow of $2 \\text{ m}^3/\\text{s}$ is carried in a rectangular channel 1.8 wide at a depth of 1.0 m. Will critical depth occur at a section where (a) a frictionless hump 15 cm high is installed across the bed? (b) a frictionless sidewall reduces the channel width to 1.3 m? (c) the hump and the sidewall construction are installed together? [9]\n\nb) Define conjugate depths. Sketch the specific force curve showing conjugate depths and the zones of subcritical, critical and supercritical flow.",
+      "chapter": "Archive Questions",
+      "marks": "1",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-35",
+      "question": "What are the conditions of uniform flow in open channel? A trapezoidal channel having side slope of $1:1$ has to carry a flow of $15\\text{ m}^3/\\text{s}$. The bed slope is $1$ in $1000$. Chezy's $C$ is $45$ if the channel is unlined and $70$ if the channel is lined with concrete. The cost per $\\text{m}^3$ of excavation is $3$ times cost per $\\text{m}^2$ of lining. Find which arrangement is economical.",
+      "text": "What are the conditions of uniform flow in open channel? A trapezoidal channel having side slope of $1:1$ has to carry a flow of $15\\text{ m}^3/\\text{s}$. The bed slope is $1$ in $1000$. Chezy's $C$ is $45$ if the channel is unlined and $70$ if the channel is lined with concrete. The cost per $\\text{m}^3$ of excavation is $3$ times cost per $\\text{m}^2$ of lining. Find which arrangement is economical.",
+      "chapter": "Archive Questions",
+      "marks": "2",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-36",
+      "question": "A $3.6\\text{ m}$ wide rectangular channel had badly damaged surfaces and had a Manning's $n = 0.030$. As a first phase of repair, its bed was lined with concrete with $n = 0.015$. If the depth of flow remains the same at $1.2\\text{ m}$ before and after the repair, what is the increase of discharge obtained as result of repair.",
+      "text": "A $3.6\\text{ m}$ wide rectangular channel had badly damaged surfaces and had a Manning's $n = 0.030$. As a first phase of repair, its bed was lined with concrete with $n = 0.015$. If the depth of flow remains the same at $1.2\\text{ m}$ before and after the repair, what is the increase of discharge obtained as result of repair.",
+      "chapter": "Archive Questions",
+      "marks": "7",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-37",
+      "question": "Draw and explain the velocity profile in a cross-section of rectangular, triangular and trapezoidal channel shapes.",
+      "text": "Draw and explain the velocity profile in a cross-section of rectangular, triangular and trapezoidal channel shapes.",
+      "chapter": "Archive Questions",
+      "marks": "3",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-38",
+      "question": "Derive the values of $1^{st}$ and $2^{nd}$ hydraulic exponent for wide and narrow rectangular channel section.",
+      "text": "Derive the values of $1^{st}$ and $2^{nd}$ hydraulic exponent for wide and narrow rectangular channel section.",
+      "chapter": "Archive Questions",
+      "marks": "2",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-39",
+      "question": "TRIBHUVAN UNIVERSITY\nINSTITUTE OF ENGINEERING\nExamination Control Division\n2068 Jestha<table><thead><tr><th>Exam.</th><th>Back</th></tr></thead><tbody><tr><td>Level</td><td>BE</td></tr><tr><td>Full Marks</td><td>80</td></tr><tr><td>Programme</td><td>BCE, B.Agri.</td></tr><tr><td>Pass Marks</td><td>32</td></tr><tr><td>Year / Part</td><td>II / II</td></tr><tr><td>Time</td><td>3 hrs.</td></tr></tbody></table>Subject: - Hydraulics\n✓ Candidates are required to give their answers in their own words as far as practicable.\n✓ Attempt any Five questions.\n✓ The figures in the margin indicate Full Marks.\n✓ Assume suitable data if necessary.\n1. a) Obtain an expression for pressure rise due to closure of valve at the end of the pipe line when the valve is instantaneously closed. [8]\n\nb) A flow of $30m^3/s$ is carried in a 5m wide rectangular channel at a depth of 1.0m. Find the slope necessary to sustain uniform flow at this depth if $n = 0.012$. What change in roughness would produce uniform critical flow at this discharge on this given slope? [8]\n2. a) Derive an expression for the momentum equation in the case of hydraulic jump in the rectangular channel. Hence derive the relation between initial and sequent depths. [8]\n\nb) A rectangular concrete channel 4m wide has a slope of $9 \\times 10^{-4}$. It carries a flow of $18m^3/s$ and has a depth of 2.3m at one section. By using the direct step method and taking one step, compute the depth 300m downstream. Take $n = 0.012$. What is the type of surface curve obtained? [8]\n3. a) Differentiate between mobile boundary and rigid boundary channel. Hence define critical tractive stress and incipient motion condition. [6]\n\nb) A reservoir A with surface level 60m above datum supplies to a junction box through a 300mm pipe 600m long. From the junction box, 300mm and 200mm diameter pipes branch off. The 300 mm diameter pipe is 600m long and connected to a reservoir B of level 48.19m while 200mm diameter pipe is 300m long and is connected to a reservoir C of level 45.38m. Find the discharge into or from the reservoir B and C. Take $f = 0.03$. [10]\n4. a) Derive the discharge equation for the trapezoidal weir. Discuss also the impact of approach velocity and end contraction while deriving such equation. [8]\n\nb) A smooth pipe carries $0.30m^3/s$ of water discharge with a head loss of 3m per 100m length of the pipe. Determine the diameter of the pipe. Use friction factor equation for smooth pipe as $f = 0.0032 + \\frac{0.221}{Re^{0.237}}$ and assume $\\frac{\\mu}{\\rho} = 10^{-6} m^2/s$. [8]\n5. a) Prove that the condition for most economical partially filled circular channel section for maximum velocity is $h = 0.81D$, Where $h =$ depth for maximum velocity and $D$ is diameter of the channel. [8]\n\nb) Pipes of 50mm diameter are to be used to siphon water from a main canal to a branch canal, the differences of water level between the two canals being 12m. The length from the main canal to the summit of the pipe line is 18m. The total length of the pipe being 45m. Determine the number of pipes required to discharge at least 60 liters/sec to the branch canal. Find also the maximum height of the summit above the water level of the main canal so that the pressure at the summit may not fall below 20KPa (absolute). Take $f = 0.03$. Ignore minor losses. [8]\n6. a) Derive Darcy-Weisbach equation for the friction head loss in the pipe. What are Hydraulic grade and Total Energy lines? [8]\n\nb) For the purpose of discharge measurement, the width of a rectangular channel is reduced from 2.75 m to 2 m and the floor is raised by 0.3m at a given section. What rate of flow is indicated by a drop of 0.15 m in the water surface elevation at the contracted section when the depth of the approach flow is 2m?",
+      "text": "TRIBHUVAN UNIVERSITY\nINSTITUTE OF ENGINEERING\nExamination Control Division\n2068 Jestha<table><thead><tr><th>Exam.</th><th>Back</th></tr></thead><tbody><tr><td>Level</td><td>BE</td></tr><tr><td>Full Marks</td><td>80</td></tr><tr><td>Programme</td><td>BCE, B.Agri.</td></tr><tr><td>Pass Marks</td><td>32</td></tr><tr><td>Year / Part</td><td>II / II</td></tr><tr><td>Time</td><td>3 hrs.</td></tr></tbody></table>Subject: - Hydraulics\n✓ Candidates are required to give their answers in their own words as far as practicable.\n✓ Attempt any Five questions.\n✓ The figures in the margin indicate Full Marks.\n✓ Assume suitable data if necessary.\n1. a) Obtain an expression for pressure rise due to closure of valve at the end of the pipe line when the valve is instantaneously closed. [8]\n\nb) A flow of $30m^3/s$ is carried in a 5m wide rectangular channel at a depth of 1.0m. Find the slope necessary to sustain uniform flow at this depth if $n = 0.012$. What change in roughness would produce uniform critical flow at this discharge on this given slope? [8]\n2. a) Derive an expression for the momentum equation in the case of hydraulic jump in the rectangular channel. Hence derive the relation between initial and sequent depths. [8]\n\nb) A rectangular concrete channel 4m wide has a slope of $9 \\times 10^{-4}$. It carries a flow of $18m^3/s$ and has a depth of 2.3m at one section. By using the direct step method and taking one step, compute the depth 300m downstream. Take $n = 0.012$. What is the type of surface curve obtained? [8]\n3. a) Differentiate between mobile boundary and rigid boundary channel. Hence define critical tractive stress and incipient motion condition. [6]\n\nb) A reservoir A with surface level 60m above datum supplies to a junction box through a 300mm pipe 600m long. From the junction box, 300mm and 200mm diameter pipes branch off. The 300 mm diameter pipe is 600m long and connected to a reservoir B of level 48.19m while 200mm diameter pipe is 300m long and is connected to a reservoir C of level 45.38m. Find the discharge into or from the reservoir B and C. Take $f = 0.03$. [10]\n4. a) Derive the discharge equation for the trapezoidal weir. Discuss also the impact of approach velocity and end contraction while deriving such equation. [8]\n\nb) A smooth pipe carries $0.30m^3/s$ of water discharge with a head loss of 3m per 100m length of the pipe. Determine the diameter of the pipe. Use friction factor equation for smooth pipe as $f = 0.0032 + \\frac{0.221}{Re^{0.237}}$ and assume $\\frac{\\mu}{\\rho} = 10^{-6} m^2/s$. [8]\n5. a) Prove that the condition for most economical partially filled circular channel section for maximum velocity is $h = 0.81D$, Where $h =$ depth for maximum velocity and $D$ is diameter of the channel. [8]\n\nb) Pipes of 50mm diameter are to be used to siphon water from a main canal to a branch canal, the differences of water level between the two canals being 12m. The length from the main canal to the summit of the pipe line is 18m. The total length of the pipe being 45m. Determine the number of pipes required to discharge at least 60 liters/sec to the branch canal. Find also the maximum height of the summit above the water level of the main canal so that the pressure at the summit may not fall below 20KPa (absolute). Take $f = 0.03$. Ignore minor losses. [8]\n6. a) Derive Darcy-Weisbach equation for the friction head loss in the pipe. What are Hydraulic grade and Total Energy lines? [8]\n\nb) For the purpose of discharge measurement, the width of a rectangular channel is reduced from 2.75 m to 2 m and the floor is raised by 0.3m at a given section. What rate of flow is indicated by a drop of 0.15 m in the water surface elevation at the contracted section when the depth of the approach flow is 2m?",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "hydraulics-40",
+      "question": "a) If a flow of $0.25 \\text{ m}^3/\\text{s}$ of water is to be maintained in the system shown below, the power required by the pump to maintain the water levels is $54642 \\text{ watts}$. The pipe is made of iron ($e = 0.26 \\text{ mm}$) and is $250 \\text{ mm}$ in diameter. Take $\\mu = 0.0021 \\text{ N s/m}^2$. Take all losses and Use Colebrook-white equation, if needed.\n\n(i) Find the length of the pipe.\n(ii) For the same power if the loss of head is doubled, find the discharge. Write your comment on the result.\n\nb) Using the tractive force method, design a trapezoidal channel (side slop $4\\text{H}:2\\text{V}$) to carry $20 \\text{ m}^3/\\text{s}$ through a slightly sinuous channel on a slope of $0.0015$. The channel is to be excavated in a coarse alluvium with $75$ percentile diameter, $D_{75} = 2\\text{cm}$ with the particles on the perimeter of channel moderately rounded. Use manning's $n = 0.025$. Check if the flow is subcritical under the uniform flow condition as a supercritical flow is not desired in an excavated channel. Take $\\phi = 40^\\circ$.",
+      "text": "a) If a flow of $0.25 \\text{ m}^3/\\text{s}$ of water is to be maintained in the system shown below, the power required by the pump to maintain the water levels is $54642 \\text{ watts}$. The pipe is made of iron ($e = 0.26 \\text{ mm}$) and is $250 \\text{ mm}$ in diameter. Take $\\mu = 0.0021 \\text{ N s/m}^2$. Take all losses and Use Colebrook-white equation, if needed.\n\n(i) Find the length of the pipe.\n(ii) For the same power if the loss of head is doubled, find the discharge. Write your comment on the result.\n\nb) Using the tractive force method, design a trapezoidal channel (side slop $4\\text{H}:2\\text{V}$) to carry $20 \\text{ m}^3/\\text{s}$ through a slightly sinuous channel on a slope of $0.0015$. The channel is to be excavated in a coarse alluvium with $75$ percentile diameter, $D_{75} = 2\\text{cm}$ with the particles on the perimeter of channel moderately rounded. Use manning's $n = 0.025$. Check if the flow is subcritical under the uniform flow condition as a supercritical flow is not desired in an excavated channel. Take $\\phi = 40^\\circ$.",
+      "chapter": "Archive Questions",
+      "marks": "3",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     }
   ],
-  "chapters": [
-    "Pipe Flow Regimes",
-    "Pipe Flow Problems",
-    "Unsteady Flow in Pipes",
-    "Uniform Flow in Open Channels",
-    "Energy and Momentum Principles in Open Channel Flow",
-    "Rapidly Varied Flow in Open Channels",
-    "Gradually Varied Flow in Open Channels"
+  "yearWisePapers": [
+    {
+      "session": "2083 Baishakh",
+      "year": "2083",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 36,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Prove that the shear stress distribution in the case of steady laminar flow for circular pipe is linear. What is Prandtl Mixing Length? [3+1]\n(b) Reservoir ‘A’ water surface elevation 120 m is connected to reservoir B and C having surface elevation 70 m and 50 m respectively. A pipeline 150 mm diameter and 400 mm long connects reservoir ‘A’ to junction D. Reservoir B and C are connected to junction D by 75 mm diameter 100 m long and 100 mm diameter and 250 m long pipe line respectively. Assume friction factor f = 0.04 for all pipes, estimate the rate of flow for each pipe, neglecting minor head losses.",
+          "marks": "8",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Define Conveyance and Section factor (Uniform and critical flow). Derive the condition for hydraulically efficient side slopes for Trapezoidal channel. [2+4]\n(b) A steel pipeline is 30 cm in diameter and has a wall thickness of 3 mm. The pipe is 1000 m long and conveys a flow of 100 Liter/sec (S = 0.82). The static head at the outlet is 160 m of oil. If the working stress of steel is $0.1 KN/mm^2 , calculate$ the minimum time of closure of the downstream valve. For oil, $K = 10^9 Pa$ and for steel $E = 2.14 \\times 10^{11} Pa$.",
+          "marks": "6",
+          "chapter": "Unsteady Flow in Pipes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "(a) A sluice gate across a channel 5 m wide discharges a stream 1 m deep. What is the velocity of the flow releasing through the gate when the depth upstream of the sluice is 4 $m^2$ On the downstream side concrete blocks have been placed to create conditions for hydraulic jump to occur. Calculate the force on blocks if the downstream depth is 2 m. [6]\n\nb) A rectangular channel of $4\\text{m}$ width has a manning's roughness coefficient of $0.025$. For a discharge of $6\\text{ m}^3/\\text{s}$ in this channel, identify the possible GVF profiles produced when bed slope changes from $S_{01} = 0.0004$ to $S_{02} = 0.015$. Find the length of GVF curve formed in $S_{01} = 0.0004$ using direct step method. Take three steps for solution.",
+          "marks": "6",
+          "chapter": "Energy and Momentum Principles in Open Channel Flow",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) What is Rapidly Varied Flow? Classify the hydraulic jump based on Froude number and tail water depth. [1+3]\n(b) A rectangular channel 8m wide and 1.5m deep has a slope of 1 in 1000 lined with smooth concrete plaster. It is desired to have the discharge to be maximum by changing the dimensions of the channel by keeping the same quantity of lining. Workout the new dimensions and the percentage increase in discharge. Assume n = 0.015.",
+          "marks": "8",
+          "chapter": "Rapidly Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Write down the assumptions in derivation of GVF equation. Prove that the equation for wide rectangular channel is given by $\\frac{dy}{dx} = \\frac{1-(\\frac{y_n}{y})^{10/3}}{1-(\\frac{y_c}{y})^3} , where$ $y_n$ is normal depth and $y_c$ is critical depth. [1+3]\n(b) Water flows in a rectangular channel of 4 m width at a depth of 2.50 m and a velocity of 2.25 m/s. If the width of the channel is reduced to 2.50 m and the bed of the channel is raised by 0.20 m at a section, how will the level of water surface be affected?",
+          "marks": "8",
+          "chapter": "Gradually Varied Flow in Open Channels",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Chaitra",
+      "year": "2081",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 18,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "(a) A rectangular channel 5m wide with manning's roughness $n = 0.011$ is laid on a slope of 0.0004. A sluice gate is placed at a section of the channel and this gate produces a depth of 4 m just at its upstream and 0.5 m just downstream at vena-contracta. A row of chute or baffle blocks is placed downstream of the gate in order to assist the formation of hydraulic jump after the gate. If the sequent depth of the jump is equal to the normal depth of the channel, determine [8]\\n(i) Head loss in the jump ($\\Delta E$)\\n(ii) The force on the chute or baffle blocks ($F_b$)\n\nb) Water flows at a depth of 1.6 m and velocity of 1.10 m/s in $a^n$ open channel of rectangular cross section of width 4.0 m. At a certain section the width is reduced to 3.5 m and the bed is raised by 0.35 m through a smooth flat top hump. Calculate the water surface elevations at the contracted section as well as at a section upstream of it. Assume energy losses to be negligible. Show the results in specific energy diagram.",
+          "marks": "8",
+          "chapter": "Rapidly Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Draw and explain Shield’s diagram. Describe how mobile boundary channel is designed based on tractive force method. [4+4]\n(b) A wide rectangular channel has $a^n$ average bed slope of 0.0002 and discharge per unit width of $3.12 \\text{ m}^3/\\text{s/m}$. Assume a manning’s value $n = 0.02$. If a break in slope occurs and the slope becomes 0.001, classify the flow profiles in both the slopes and use direct step method (3 steps only) to determine the distance downstream of the slope change at which the water surface level reaches 0.4 m.",
+          "marks": "2",
+          "chapter": "Gradually Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "(a) Define the followings:\n\n(i) Prismatic channels (ii) Section Factor (iii) Spatially varied flow.\nDraw water surface profile qualitatively for the following arrangement of slopes.\nAssume sufficiently long reach for each slope. [3+5]\n\nb) A 2300 m long pipeline leading from a large tank has a diameter of 15 cm and the thickness of 2.8 mm. When a discharge of 2200 l/min of water was flowing the valve was suddenly closed completely. Sketch the variation of the water hammer pressure with time at (i) the valve end (ii) 57.5 m from the upstream tank. Take $K = 2 \\times 10^9$ Pa and $E = 2.08 \\times 10^{11}$ Pa for steel.",
+          "marks": "8",
+          "chapter": "Gradually Varied Flow in Open Channels",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Chaitra",
+      "year": "2080",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 27,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Define incipient motion condition in mobile boundary channel. Derive $a^n$ expression for tractive force ratio in terms of side slope angle and angle of internal friction. Briefly explain ripples and dunes. [2+4+2]\n(b) Classify the hydraulic jump based on Froude number. Prove that when the specific force is minimum, the corresponding flow and the depth are critical.",
+          "marks": "3",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Prove that \"For a given specific force and channel section, maximum discharge corresponds to the critical state flow\".",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Define incipient motion condition in mobile boundary channel.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Derive $a^n$ expression for the shear stress reduction factor or tractive force ratio in the case of mobile boundary channel in terms of side slope angle and angle of repose of the sediment.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Jestha",
+      "year": "2079",
+      "month": "Jestha",
+      "examType": "Back",
+      "totalMarks": 16,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) For a steady laminar flow in a circular pipe, Derive $a^n$ expression for velocity distribution along diameter of pipe and determine the radial distance (r) from the axis at a section where the local velocity is equal to the mean velocity of flow. [4+1]\n(b) Compare the cost of pumping a fluid A between two points at the same volumetric rate in $10\\text{ cm}$ and $15\\text{ cm}$ diameter pipes having the same absolute roughness magnitude of $0.2\\text{ mm}$. The flow can be assumed to be in fully developed rough turbulent regime. [Assume the pipe to be horizontal].",
+          "marks": "6",
+          "chapter": "Pipe Flow Regimes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) A discharge of $16.0 \\text{ m}^3/\\text{s}$ flows with a depth of $2.0 \\text{ m}$ in a $4.0 \\text{ m}$ wide rectangular channel. At a downstream section the width is reduced to $3.5 \\text{ m}$ and the channel bed is raised by $\\Delta Z$. Analyse the water surface elevation in the transitions when (i) $\\Delta Z = 0.2\\text{m}$ (ii) $\\Delta Z = 0.35$. (iii) Also, find how high can a hump be raised on the channel bed without causing a change in the upstream depth. [4+4+4]\n(b) Sketch the possible GVF profiles in the following serial arrangement of channels and control. The flow is from left to right:\n\n(i) Steep - horizontal - mild slope\n(ii) Mild - sluice gate - steep - horizontal - sudden drop\n(iii) Steep - steeper - mild - milder slope\n(iv) Steep - mild - sluice gate - mild - sudden drop",
+          "marks": "4",
+          "chapter": "Energy and Momentum Principles in Open Channel Flow",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) A hydraulic jump is formed in a $10\\text{m}$ wide outlet of horizontal rectangular channel at short distance downstream of a sluice gate. If the depths just upstream and downstream of the gate are $20\\text{m}$ and $1\\text{m}$ respectively and the outlet discharge is $300 \\text{ m}^3/\\text{s} , determine$: [2+1+3+3]\n• flow depth downstream of the jump (post jump depth),\n• energy loss in the jump;\n• length, height and the efficiency of the jump,\n• the specific forces in both sections,\n(b) Design a stable non-erodible channel to carry $10 \\text{ m}^3/\\text{s}$ of clear water through a $10 \\text{ mm}$ bed of rounded gravel. A longitudinal slope of $0.0008$ and side slope of $2 \\text{ horizontal} : 1 \\text{ vertical}$ are to be adopted. Take value of $\\phi = 32^\\circ$.",
+          "marks": "6",
+          "chapter": "Rapidly Varied Flow in Open Channels",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Ashwin",
+      "year": "2079",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 27,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) What is the limitation of Nikuradse's experiment on pipe flow? How was it addressed for our practical application purpose? Oil having a viscosity of $0.8$ poise and specific gravity of $0.83m$ flows through a $100mm$ diameter pipe. The laminar flow velocity distribution $u(r)$ is given by $u = 1.4 [1- (r/R)^2] , where$, $R =$ radius of the pipe and $r =$ radial co-ordinate. (i) Determine the shear stress at the wall. (ii) Determine shear stress at a radial distance of $2cm$ from the pipe axis. (iii) Calculate the pressure drop for $1m$ length of the pipe. [2+2+2+2]\n(b) A pipeline $50\\ cm$ in diameter takes off from a reservoir whose water surface elevation is $160\\ m$ above the datum. The pipe is $6000\\ m$ long and is laid completely at the datum level. In the last $1200\\ m$ of the pipe, water is withdrawn by a series of pipes at a uniform rate of $0.088\\ m^3/s$ per $300\\ m$. Find the residual head at the end of the pipeline. Assume friction factor $f = 0.02$ and the pipe to have a dead end.",
+          "marks": "6",
+          "chapter": "Pipe Flow Regimes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "(a) Verify whether the suggested discharges in various pipelines in the following network are proper.. If not, determine the proper distribution. An accuracy of $0.1$ unit of discharge is adequate. [10]<table><thead><tr><th>Line</th><th>AB</th><th>BC</th><th>CD</th><th>DA</th><th>AC</th></tr></thead><tbody><tr><td>Q (suggested) (units)</td><td>58</td><td>42</td><td>32</td><td>18</td><td>20</td></tr></tbody></table>b) Differentiate between different types of varied flow in open channel flow. Express bed-slope, water surface slope and energy line slope in terms of head (show also by drawing the figure).",
+          "marks": "3",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) A steel pipeline is $30\\text{ cm}$ in diameter and has a wall thickness of $3\\text{ mm}$. The pipe is $1000\\text{ m}$ long and conveys a flow of $100\\text{ L/s}$ of oil (Sp. gravity  = 0$.82$). The static head at the outlet is $160\\text{ m}$ of oil. If the working stress of the steel is $0.1\\text{ kN/mm}^2 , calculate$ the minimum time of closure of a downstream valve. For oil: $K = 1 \\times 10^9\\text{ Pa}$ and steel $E = 2.14 \\times 10^{11}\\text{ Pa}$. [8]\n(b) A lined channel ($n=0.014$) is of trapezoidal section with one side vertical and the other on a side slope of $1.5\\text{ horizontal} : 1\\text{ vertical}$. If the channel is to deliver $9.0\\text{ m}^3/\\text{s}$ when laid on a slope of $0.0002 , calculate$ the dimension of the efficient section which requires minimum lining. Also, calculate the corresponding mean velocity.",
+          "marks": "6",
+          "chapter": "Unsteady Flow in Pipes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) A sluice gate discharges $2\\text{ m}^3/\\text{s/m}$ into a wide horizontal rectangular channel. The depth at the vena-contracta is $0.15\\text{ m}$. The tail-water depth is $1.8\\text{ m}$. Assuming the channel to have a Manning's $n = 0.015 , determine$ the (i) type of profile formed before the jump, (ii) location of toe of the hydraulic jump (Use Direct step method if necessary with three steps) (iii) type of jump formed based on the tail water depth. [2+7+1]\n(b) A long and wide rectangular channel ($n=0.016$) has a discharge intensity of $4\\text{ m}^3/\\text{s}$ per metre width. If the bed slope changes from $0.008$ to $0.012$ at a section, sketch the possible GVF profiles due to this break in grade.",
+          "marks": "6",
+          "chapter": "Rapidly Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Explain Shield's diagram for studying the incipient motion condition. Further proceed to derive $a^n$ expression for critical stress if the shear Reynold's number is greater than $400$? Also, explain the applicability of expression derived above for critical stress in terms of particle size. [2+3+3]\n(b) Show that the condition for discharge to be maximum for a given specific energy is same as for given specific energy to be minimum for a given discharge. Explain specific force diagram with sketch.",
+          "marks": "6",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Poush",
+      "year": "2078",
+      "month": "Poush",
+      "examType": "Back",
+      "totalMarks": 42,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "For a steady laminar flow in a inclined circular pipe, derive expressions for (i) the shear stress at any radial distance from the axis, (ii) the pressure drop along the pipe in terms of the boundary shears stress.",
+          "marks": "3",
+          "chapter": "Pipe Flow Regimes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Calculate a) the discharge and b) the power necessary to run the pump for a 10 cm dia pipeline Supplying water from a river to a factory reservoir level which is 25m above the river free surface. The pipe line is 200m long with friction factor 0.022 and incorporates 5 bends (K= 0.2 each), one non- return valve (K= 2.5) and one gate valve (K=0.1). The effiency of the pump is 60% at this load – Also draw HGL and TEL lines.",
+          "marks": "3",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Explain the concept of mixing length as proposed by Prandtl. In a water pipeline, there is $a^n$ abrupt change in diameter from $150$ to $260\\text{ mm}$. If the head lost due to separation when the flow is from smaller to the larger pipe is $0.5\\text{ m}$ greater than the head lost when the same flow is reversed, determine the flow rate. [2+4]\n(b) For the siphon shown below in figure $l_{1,2} = 100\\text{ m} , l_{2,3} = 200\\text{ m}$ $D = 150\\text{ mm}$ of galvanised iron pipe of $k = 0.15\\text{ mm} , h = 3.0\\text{ m}$ and $H = 15.0\\text{ m}$. Obtain the discharge flowing through the siphon and pressure head at",
+          "marks": "5",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "The flowing fluid is water ($\\nu = 10^{-6}\\text{ m}^2/\\text{s}$). [Use Colebrook-white equation, if needed] [4+3]\n\nc) A compound piping system consists of $1800\\text{ m}$ of $50\\text{ cm} , 1200\\text{ m}$ of $40\\text{ cm}$ and $600\\text{ m}$ of $30\\text{ cm}$ pipes of the same material are in parallel. What is the equivalent length of a $50\\text{ cm}$ pipe?",
+          "marks": "5",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "(a) The total flow from A in figure below is $0.394\\text{ m}^3/\\text{s}$ and the flow to B is $0.300\\text{ m}^3/\\text{s}$. Find (i) the elevation of B and (ii) the length of the $600\\text{ mm}$ pipe. Take $f = 0.02$ for all pipes. [4+4]\n\nb) Obtain a formula for the rise in pressure in a thin plastic pipe for circular section in which the flow of water is stopped by sudden closure of a valve. How are pipe lines secured against such abnormal rise of pressure?",
+          "marks": "6",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "A steel pipe (E = 207 MPa, L=1500mm, D=300mm T = 10 mm) conveys water at $20^\\circ$C ($\\rho = 998 \\text{ kg/m}^3 , K_{water} = 220 \\times 10^7 \\text{ pa}$). The initial velocity is $V_0= 1\\text{m/s}$. A valve at the downstream end is closed so rapidly that the motion is considered to be instantaneous, reducing the velocity to zero. Determine the pressure pulse wave in the pipe, the speed of sound in $a^n$ unbound water medium, the pressure rise at the valve, the time it takes for the wave to travel from the valve to the reservoir at the upstream end.",
+          "marks": "2",
+          "chapter": "Unsteady Flow in Pipes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Are the following flow valid for open channel? If yes define with Sketches.\n(a) Unsteady uniform flow.\n(b) Steady non-uniform flow.\n(c) Spatially varied flow.\n1 1\n(d) Steady uniform flow.",
+          "marks": "4",
+          "chapter": "Uniform Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "A line rectangular channel with manning's $n = 0.015$ is $5m$ wide and has a flow depth of $2m$ with bed slope of $1$ in $1600$. Retaining the rectangular shape of channel section and the same total area of lining, what maximum extent can the discharge be increased without changing the slope?",
+          "marks": "6",
+          "chapter": "Uniform Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "(a) A Triangular channel has a cross-section as shown in figure with side slopes coefficient $z_1$ and $z_2$ and depth $y$. [3]\nDerive $a^n$ expression for\\n(i) hydraulic depth\\n(ii) hydraulic radius\\n(iii) section factor for uniform flow\n\nb) A $3.0\\text{m}$ wide rectangular channel carries a flow at $1.25\\text{m}$ depth. At a certain section the width is reduced to $2.5\\text{m}$ and the channel bed raised by $0.20\\text{m}$ through a streamlined hump. (i) Estimate the discharge in the channel when the water surface drops by $0.15\\text{m}$ over the hump. (ii) What change in the bed elevation at the contracted section would make the water surface have the same elevation upstream and downstream of the contraction? (The energy losses in the contraction can be neglected). [4+4]\n(c) Define specific force. Plot a specific force curve for a channel section and explain its characteristics using equations. [2+3]\n(a) Water flows in a channel of the shape of $a^n$ isosceles triangle of bed width 'a' and sides making $a^n$ angle of $45^\\circ$ with the bed. Determine the relation between the depth of flow 'd' and the bed width 'a' for maximum discharge condition. Use Manning's formula and note that 'd' is less than $0.5$ 'a'. [8]\n(b) What is mean by 'hydraulic jump' in $a^n$ open channel? Determine from the first principle the conditions required for the formation of such jump in the case of a rectangular channel of constant width and calculate the loss of head in terms of depth just before and after the jump. [2+6]\n(a) A wide rectangular channel consists of two reaches and carries a specific discharge of $3\\text{ m}^2/\\text{s}$. The first reach has a slope of $0.0004 , while$ second one has a slope of $0.03$. Classify the water profile. Compute the water surface profile for gradually varied flow in second reach only using Direct step method. Manning's roughness coefficient of both reaches is $n = 0.02$. Assume actual water depth is between normal and critical depth in both sections. (Calculation should be carried out only for three sections, first one being start of section reach) [2+6]\n(b) Describe the sequence of bed forms that can be expected in a channel. Explain the procedure for the design of a channel by the tractive force approach.",
+          "marks": "3",
+          "chapter": "Uniform Flow in Open Channels",
+          "isDiagram": true
+        },
+        {
+          "qNum": 10,
+          "text": "Water is following in a rectangular channel at a velocity of $3m/s$ and depth of $2m$.\n\na) Calculate maximum channel bed increase allowable for the specified upstream flow conditions to remain unchanged. (Neglect losses)\n\nb) Determine changes in water surface elevation if bed level decreases (downward step) of $15\\text{ cm}$.",
+          "marks": "4",
+          "chapter": "Energy and Momentum Principles in Open Channel Flow",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "A vertical sluice gate with an opening of $0.67\\text{ m}$ produces a downstream jet of depth $0.4m$ when installed in a long rectangular channel $5m$ wide carrying a steady discharge of $20m^3/s$. Assuming that the flow depth downstream of gate eventually returns to the uniform flow depth of $2.5m$\n\na) Verify the hydraulic jump occurs. Take $\\alpha=\\beta=1$\n\nb) Calculate loss of head during jump.\n\nc) If head loss through the gate is $5\\%$ of velocity head of jet at venacontracta, calculate force on the gate.",
+          "marks": "3",
+          "chapter": "Rapidly Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "A discharge of $25m^3/s$ occurs in a long $10\\text{ m}$ wide rectangular channel that has a slope of $0.0005$ and ends in an abrupt drop off. considering manning's $n= 0.018$ Indentify the type of water surface profile and compute the profile from the drop point to a point at which the depth has reached to $70\\%$ of normal depth using direct step method taking at least $3$ steps for calculations.",
+          "marks": "2",
+          "chapter": "Gradually Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Describe shield's tractive force theory. Also derive relationship between critical grain diameter and hydraulic radius for incipient motion condition using shield's parameter.\n1 2",
+          "marks": "3",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Chaitra",
+      "year": "2078",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 19,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "(a) Three reservoirs are connected as shown below, with the connecting pipes having the following properties (length, diameter, friction factor and minor losses) as shown below:\n$L_1 = 280\\text{ m} , D_1 = 500\\text{mm} , f_1 = 0.021 , and$ $\\sum K_1 = 3.5$\n$L_2 = 980\\text{ m} , D_2 = 300\\text{mm} , f_2 = 0.022 , and$ $\\sum K_2 = 0.0$\n$L_3 = 270\\text{ m} , D_3 = 550\\text{mm} , f_3 = 0.017 , and$ $\\sum K_3 = 0.0$\n$L_4 = 700\\text{ m} , D_4 = 650\\text{mm} , f_4 = 0.028 , and$ $\\sum K_4 = 3.5$\n$L_5 = 780\\text{ m} , D_5 = 750\\text{mm} , f_5 = 0.030 , and$ $\\sum K_5 = 1.5$\nThe corresponding reservoir elevation are:\n$Z_A = 185\\text{ m} , Z_B = 105\\text{ m}$ and $Z_C = 70\\text{ m}$\nCalculate:\n\n(i) The relationship between the flow rates in the two parallel pipes that form part of the system.\n(ii) The value of the Hydraulics Grade Line (HGL) at junction D, and\n(iii) The flow rates in all five pipes for this value.\n[2+2+4]\n\nb) A rectangular channel section to have critical flow and at the same the wetted perimeter is to be minimum. Show that for the these two conditions to occur simultaneously, the width of the channel must be equal to 8/9 times minimum specific energy.",
+          "marks": "4",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) If a flow of $0.25 \\text{ m}^3/\\text{s}$ of water is to be maintained in the system shown below, the power required by the pump to maintain the water levels is $54642 \\text{ watts}$. The pipe is made of iron ($e = 0.26 \\text{ mm}$) and is $250 \\text{ mm}$ in diameter. Take $\\mu = 0.0021 \\text{ N s/m}^2$. Take all losses and Use Colebrook-white equation, if needed.\n\n(i) Find the length of the pipe.\n(ii) For the same power if the loss of head is doubled, find the discharge. Write your comment on the result.\n\nb) Using the tractive force method, design a trapezoidal channel (side slop $4\\text{H}:2\\text{V}$) to carry $20 \\text{ m}^3/\\text{s}$ through a slightly sinuous channel on a slope of $0.0015$. The channel is to be excavated in a coarse alluvium with $75$ percentile diameter, $D_{75} = 2\\text{cm}$ with the particles on the perimeter of channel moderately rounded. Use manning's $n = 0.025$. Check if the flow is subcritical under the uniform flow condition as a supercritical flow is not desired in an excavated channel. Take $\\phi = 40^\\circ$.",
+          "marks": "3",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "(a) Calculate first hydraulic exponent for critical flow and second hydraulic exponent for uniform flow for wide rectangular channel and triangular channel. [4]\n(b) Consider steady, incompressible, laminar flow of a Newtonian fluid in $a^n$ infinitely long round pipe of diameter $D$ or radius $r = D/2$ inclined at angle $\\alpha$ as shown in the figure. The fluid flows down the pipe due to gravity alone. Consider the coordinate system shown, with $X$ down the axis of pipe. Derive $a^n$ expression for the $X -component$ of velocity $u$ as a function of radius and the other parameters of the problem. [6]\n\nc) Kerosene (density $= 800 \\text{ Kg/m}^3$) flows in a $20\\text{cm}$ diameter pipe with a mean velocity of $5 \\text{ m/s}$. The pipe has $a^n$ equivalent sandgrain roughness of $0.5 \\text{ mm}$. If the friction factor $f = 0.02$. Is the pipe behaving as rough, smooth or in transition?",
+          "marks": "4",
+          "chapter": "Uniform Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Describe the manning's equation and the various terms that make it up. In particular define the slope $S , used$ in the manning's equation and show how it relates to the energy diagram. Explain also why the uniform flow assumption is usually made for most application of the manning's equation. [1+1+1+1+1]\n(b) What are the primary and secondary purpose of surge tank? Two reservoirs with constant difference of $10 \\text{ m}$ in their water surface elevation are connected by a $15 \\text{ cm}$ diameter pipe length $400 \\text{ m}$ and $f = 0.025$. The minor losses in the pipe can be taken as $15$ times the velocity head in the pipe. If a valve controlling the flow is suddenly opened, a) estimate the time for $95 \\%$ of ultimate flow to be established and b) find the flow at the end of $10 \\text{ s}$ from the start of valve operation.",
+          "marks": "2",
+          "chapter": "Uniform Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "(a) A hydraulic jump is to be formed in a rectangular channel of 10 m wide. The discharge is $150\\text{ m}^3/\\text{s}$ the tail water depth in the channel is 4 m, which is 1 m less than the depth required for the formation of the jump without any baffle blocks. Therefore, baffle blocks should be placed for the formation of the jump. The force on the baffle blocks can be estimated as $F_b = 2YAE_1 , where$ $A$ is the frontal area of the baffle blocks, $E_1$ is the specific energy of the supercritical flow and $Y$ is the specific weight of the water.\n[7]\n\n(i) Find the total frontal area of the baffle blocks and energy loss during jump.\n(ii) Show on the specific force curve the initial and the sequent depths of the jump without baffle blocks.\n(ii) Show in the same specific force curve the initial and the sequent depths of the jump with the baffle blocks and the force on the baffle blocks.\n(iv) If height of baffle block is increased by 10%, what will be the percentage increase or decrease of energy loss?\n[4+1+1+2]\n\nb) Explain briefly, by sketching the graph between specific energy and water depth of a horizontal rectangular channel, how the depth upstream changes with the height of hump as it is gradually increased in three stages: i) less than the critical hump height; (ii) at the critical hump height, and (iii) exceeding the critical hump height.",
+          "marks": "6",
+          "chapter": "Rapidly Varied Flow in Open Channels",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Baishakh",
+      "year": "2078",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 15,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Reservoir A, water surface elevation 100m is connected to reservoir B and C having surface elevations 75 m and 60 m respectively. A pipeline 150mm in diameter and 300m long connects reservoir A to a junction D. Reservoir B and C are connected to junction D by a 75mm diameter pipeline 100m long and a 100mm diameter pipeline 250m long respectively. Assuming friction factors for all pipes $f = 0.03$ and neglecting all minor losses find the rate of flow for each pipes. [8]\n(b) A steel pipe 3000m long has a diameter of 0.90m. It is to carry $0.6m^3/s$ of oil of density $800 kg/m^3$ with a static pressure of 900kPa at the outlet valve. A valve at the outlet is designed to close completely in 6s. Estimate the minimum thickness of pipe, to the nearest mm, required at the valve. (For steel $E = 2.05 \\times 10^{11} Pa$ and working stress = $0.125 kN/mm^2$; for oil $K = 1500MPa$).",
+          "marks": "8",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "(a) A triangular duct (figure below) resting on a side is carrying water with a free surface. Obtain the condition for maximum discharge when $m=0.5$. [8]\n\nb) What is mean by 'hydraulic jump' in $a^n$ open channel? Determine from the first principle the conditions required for the formation of such jump in the case of a rectangular channel of constant width and calculate the loss of head in terms of depth just before and after the jump.",
+          "marks": "1",
+          "chapter": "Uniform Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) A discharge of $30 m^3/s$ passes over a rectangular channel of $10m$ width, bed slope $1$ in $10,000$ and Manning's coefficient $0.015$. Measurement performed at a particular section of the channel reveals the flow depth there to be $1.5m , lower$ than the uniform flow depth (normal depth) for the given channel, which indicates the flow is gradually varying. How far u/s or d/s would one have to travel to find a section with a depth of $2m$? What about the point where the depth returns back to the expected uniform flow depth? What type of GVF profile curve does the water surface follow? [4+4+2]\n(b) Design a stable non-erodible channel to carry $10m^3/s$ of clear water through a $10mm$ bed of rounded gravel. A longitudinal slope of $0.0008$ and side slope of $2H:1V$ are to be adopted. Take angle of respose  = 32$^\\circ$.",
+          "marks": "6",
+          "chapter": "Gradually Varied Flow in Open Channels",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2077 Chaitra",
+      "year": "2077",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 34,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "(a) For the figure below, calculate:\nWhat is the pressure needed to drive a viscous fluid upslope through a $12\\text{cm}$ diameter pipe? The length of the pipe is $50\\text{m} , slope$ is $20^\\circ$ deg. At the end of the pipe, the pressure is $1\\text{ bar}$. Oil of specific gravity $0.85$ and viscosity $0.01\\text{ kg/m-s} , and$ the target flow rate is $0.25\\text{ cubic meter per minute}$.\n\n(i) What is the pressure needed to drive the flow if there were no slope?\n(ii) The supplier is out of $12\\text{cm}$ pipes and your manager wonders if multiple $8\\text{cm}$ diameter pipes can be used side by side to achieve the same total flow rate at the same driving pressure, determine how many $8\\text{cm}$ pipes are needed. Round up to nearest integer. [2+3+3]\n\nb) Describe Moody's Chart. What are the basis to draw such a diagram? State its uses.",
+          "marks": "2",
+          "chapter": "Pipe Flow Regimes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "(a) Figure below shows a network in which $Q$ and $h_r$ refer to discharges and pressure drops respectively. Subscripts $1, 2, 3, 4$ and $5$ designate respective values in pipe length $AB, BC, CD, DA$ and $AC$. Subscripts $A, B, C$ and $D$ designate discharges entering or leaving the junction points $A, B, C$ and $D$ respectively. By sticking to the values given in the figure find the following discharges $Q_B, Q_2, Q_4$ and $Q_5$ and the pressure drops $h_{f4}$ and $h_{f5}$ and give these computed values at their respective places on a neat sketches of the network along with flow directions. [4+4]\n\nb) A steel pipe $1.20\\text{m}$ in diameter conveys $1.40\\text{m}^3/\\text{s}$ of water under a head of $300\\text{m}$. A value at the downstream end can be expected to close suddenly. Estimate the water hammer pressure due to this closure. Also determine the minimum thickness of the wall to the nearest millimetre needed to withstand the pressures involved. For steel: $E=210\\text{kN/mm}^2 , and$ safe working stress  = 0$.1\\text{ kN/mm}^2$. For water: $K=2.10\\text{kN/mm}^2$.",
+          "marks": "4",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "(a) Derive the equation of shear stress on the boundary of the open channel. Water flows in a channel whose bottom slope is 0.002 and whose cross section is as shown in figure below. The dimensions and the Manning' coefficients for the surfaces of different subsections are also given on the figure. Determine the flow rate through the channel and the effective Manning coefficient for the channel. [4+4]\n\nb) A hydraulic jump occurs in a $90^\\circ$ triangular channel. Derive $a^n$ equation relating to two depth and the flow rate. If the depths before and after the jump in the above channel are 0.5m and 1.0m determine the flow rate and obtain Froude numbers before and after the jump.",
+          "marks": "6",
+          "chapter": "Uniform Flow in Open Channels",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Compare gradually varied flow, rapidly varied flow, and spatially varied flow with sketches. [4]\n(b) A 50m wide rectangular channel is carrying a flow of $250m^3/s$ at a flow depth of 5m. To produce critical flow in this channel, determine:\n\n(i) The height of the step in the channel bottom if the width remains constant.\n(ii) The reduction in the channel width if the channel-bottom level remains unchanged.\n(iii) A combination of the width reduction and the bottom step. [2+2+4]\n(c) Develop the expression for specific force and explain the concept of conjugate depths using the specific force curve.",
+          "marks": "4",
+          "chapter": "Energy and Momentum Principles in Open Channel Flow",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) What is M1 Profile? A rectangular canal is 10m wide and carries a flow of $50m^3/s$. The bottom and sides of the canal are concrete-lined, the longitudinal bottom slope is 0.0006 and the canal ends in a free outfall. If the flow depth is critical at a distance of $4y_c$ upstream of the fall, what is the depth of flow 2km upstream of the fall? Use either direct integration method (Bresse's method) taking three steps or Standard step method. [2+8]\n(b) Define mobile boundary and rigid boundary. What do you mean by incipient motion condition? Derive $a^n$ expression for the shear stress reduction factor or tractive force ratio in the case of mobile boundary channel in terms of side slope angle and angle of repose of the sediment.",
+          "marks": "2",
+          "chapter": "Gradually Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define incipient motion condition in mobile boundary channel.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Derive $a^n$ expression for the shear stress reduction factor or tractive force ratio in the case of mobile boundary channel in terms of side slope angle and angle of repose of the sediment.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2076 Baishakh",
+      "year": "2076",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 25,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) A reservoir A feeds two lower reservoirs B and C through a single pipe $10\\text{ km}$ long, $750\\text{ mm}$ diameter, having a downward slope of $2.2 \\times 10^{-3}$. This pipe then divides into two branch pipes, one $5.5\\text{ km}$ long laid with a downward slope of $2.75 \\times 10^{-3}$ (going to B), the other $3\\text{ km}$ long having a downward slope of $3.2 \\times 10^{-3}$ (going to C). Calculate the necessary diameter of the branch pipes so that the steady flow rate in each shall be $0.24\\text{ m}^3\\text{ s}^{-1}$ when the level in each reservoir is $3\\text{m}$ above the end of the corresponding pipe. Neglect all losses except pipe friction and take $f=0.024$ throughout. [8]\n(b) A pump draws water from a reservoir and delivers it at a steady rate of $45\\text{ L/s}$ to a tank in which for free surface level is $12\\text{m}$ higher than that in the reservoir. The pipe system consists of $30\\text{m}$ of $225\\text{mm}$ diameter pipe ($f=0.028$) and $100\\text{m}$ of $150\\text{mm}$ diameter pipe ($f=0.032$) arranged in series. Determine the flow rate $2\\text{s}$ after a failure of the power supply to the pump, assuming that the pump stops instantaneously. Neglect minor losses in the pipes and in the pump, and assume $a^n$ incompressible fluid in rigid pipes with $f$ independent of Reynolds number.",
+          "marks": "8",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) In a rectangular channel, $F_1$ and $F_2$ are the Froude's number corresponding to the alternate depths at a certain discharge. Show that: $\\left(\\frac{F_2}{F_1}\\right)^{\\frac{2}{3}} = \\frac{2+F_1^2}{2+F_2^2}$ [4]\n(b) Define the terms energy slope, prismatic channel, non-prismatic channel and spatially varied flow. [4]\n(c) The flow depth and the flow velocity upstream of a 0.2-m sudden step rise in the bottom of a 5-m wide rectangular channel are 5m and 4 m/s respectively. Assuming there are no losses in the transition, determine:\\n(i) The flow depth and the flow velocity downstream of the step and the change in the water level;\\n(ii) The flow depth and the water level downstream of the step if the channel bottom has a 0.2-m drop instead of the rise, as in (i).",
+          "marks": "4",
+          "chapter": "Energy and Momentum Principles in Open Channel Flow",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) A sluice across a rectangular prismatic channel 6m wide discharges a stream 1.2m deep. What is the flow rate when the upstream depth is $6m^2$ The conditions downstream cause a hydraulic jump to occur at a place where concrete blocks have been placed on the bed. What is the force on the blocks if the depth after the jump is 3.$1m^2$ [8]\n(b) Write $a^n$ algorithm, flow chart and computer program in any high level language to determine normal depth in a trapezoidal channel.",
+          "marks": "8",
+          "chapter": "Rapidly Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) A dam is built across a channel of rectangular cross section which carries water at the rates of $8.75 \\text{ m}^3/\\text{s}$. As a result the depth just upstream of the dam is increased to 2.5m. The channel is 5m wide and the slope of the bed is 1 in 5000. The channel is lined with concrete (Manning's $n=0.015$). How far upstream is the depth within 100mm of the normal depth? [8]\n(b) A channel which is to carry 15 cumecs through moderately rolling topography on a slope of 0.0015 is to be excavated in coarse alluvium with 50% of particles being 5cm or more in diameter. Assume that channel is to be unlined and of trapezoidal section. Find suitable value of base width and side slope. Take internal frictional angle as $34^\\circ$ and ratio between bed shear stress and critical shear stress as 0.7. Use tractive force method. Also explain about river bed formation in alluvial stream.",
+          "marks": "5",
+          "chapter": "Gradually Varied Flow in Open Channels",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Bhadra",
+      "year": "2075",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 39,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "(a) One meter diameter pipe is to carry a water discharge of $1.0 \\text{ m}^3/\\text{s}$ at the minimum loss of energy. What will be the permissible height of surface roughness? [8]\n(b) Derive $a^n$ expression for ratio of length of inlet to outlet leg for typical siphon as follows:\n$$\\frac{l_1}{l_2} \\leq \\frac{P_a - (Z_B - Z_A)}{(Z_B - Z_C) - P_a}$$\nWhere $P_a$ is atmospheric pressure, $Z_A, Z_B, Z_C$ are elevation of inlet, summit and outlet of syphon.",
+          "marks": "8",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) A $900\\text{ mm}$ diameter conduit $3600\\text{ m}$ long is laid at a uniform slope of $1$ in $1500$ and connects two reservoirs. When the levels in the reservoirs are low, the conduit runs partly full and it is found that a normal depth of $600\\text{ mm}$ gives a rate of flow of $0.322\\text{ m}^3/\\text{s}$. The Chezy coefficient $C$ is given by $KR^n$ where $K$ is a constant, $R$ is the hydraulic radius and $n = 1/6$.\nNeglecting losses of head at entry and exit, obtain (i) the value of $K$, (ii) the discharge when the conduit is flowing full and the difference in level between the two reservoirs is $4.5\\text{ m}$. [8]\n(b) A $3.5\\text{ m}$ wide rectangular channel section carries $4\\text{ m}^3/\\text{s}$ of water at a depth of $1\\text{ m}$. If the width is to be reduced to $2.5\\text{ m}$ and bed raised by $10\\text{ cm} , what$ would be the depth of flow in the contracted section? What maximum rise in the bed level of the contracted section is possible without affecting the depth of flow upstream of the transition?",
+          "marks": "8",
+          "chapter": "Uniform Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) A hydraulic jump is formed in a $4\\text{ m}$ wide outlet just downstream of the control gate, which is located at the upstream end of the outlet. The flow depth upstream of the gate is $20\\text{ m}$. If the outlet discharge is $100\\text{ m}^3/\\text{s} , determine$: [8]\\n(i) Flow depth downstream of the jump\\n(ii) Thrust on the gate; and\\n(iii) Energy losses in the jump\nAssume the losses through the gate is $5\\%$ of velocity head of flow gate.\n(b) Derive the expression for most economical rectangular section. [3]\n(c) A trapezoidal channel has side slope $1:2$ (H:V) and the slope of the bed is $1$ in $1500$. The area of the section is $40\\text{ m}^2$. Find the dimensions if it is most economical. Determine the discharge of the most economical section if Chezy's constant $(C) = 50$.",
+          "marks": "5",
+          "chapter": "Rapidly Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) What is M1 Profile? A rectangular canal is 10m wide and carries a flow of $50m^3/s$. The bottom and sides of the canal are concrete-lined, the longitudinal bottom slope is 0.0006 and the canal ends in a free outfall. If the flow depth is critical at a distance of $4y_c$ upstream of the fall, what is the depth of flow 2km upstream of the fall? Use either direct integration method (Bresse's method) taking three steps or Standard step method. [2+8]\n(b) Define mobile boundary and rigid boundary. What do you mean by incipient motion condition? Derive $a^n$ expression for the shear stress reduction factor or tractive force ratio in the case of mobile boundary channel in terms of side slope angle and angle of repose of the sediment.",
+          "marks": "2",
+          "chapter": "Gradually Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Define incipient motion condition in mobile boundary channel.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Derive $a^n$ expression for the shear stress reduction factor or tractive force ratio in the case of mobile boundary channel in terms of side slope angle and angle of repose of the sediment.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Baishakh",
+      "year": "2075",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 43,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "A system of pipes conveying water is connected in parallel and in series as shown in figure below. The section DE represents the resistance of a valve for controlling the flow, which has a resistance coefficient $K_{DE} = \\left( \\frac{4000}{n} \\right)^2 , where$ n is the percentage valve opening.\n\nThe friction factor f in the Darcy formula is 0.024 for all pipes, and their lengths and diameters are given by<table><thead><tr><th>Pipe</th><th>Length (m)</th><th>Diameter (m)</th></tr></thead><tbody><tr><td>$AA_1B$</td><td>30</td><td>0.1</td></tr><tr><td>$AA_2B$</td><td>30</td><td>0.125</td></tr><tr><td>BC</td><td>60</td><td>0.15</td></tr><tr><td>CD</td><td>15</td><td>0.1</td></tr><tr><td>CF</td><td>30</td><td>0.1</td></tr></tbody></table>The head at A is 100m, at E is 40 m and at F is 60m. If the valve is adjusted to give equal discharge rates at E and F, calculate the head at C, the discharge through the system and percentage valve opening. Neglect all losses except those due to friction.",
+          "marks": "10",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": true
+        },
+        {
+          "qNum": 2,
+          "text": "Pipes of $75\\text{ mm}$ are to be used to syphon water from a main canal to branch canal, the difference of water level between the two canals being $15\\text{m}$. The length from the main canal to the summit of the pipe line is $20\\text{m}$. The total length of the pipe being $50\\text{m}$.\n(a) Determine the number of pipes required to discharge at least $50\\text{ l/sec}$ of water to the branch canal.\n(b) Find also the maximum height of the summit above the water level of the main canal in order the pressure at the summit may not fall below $25\\text{ KPa}$ (absolute). Take $f = 0.03$ and ignore minor loss.",
+          "marks": "4",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "A cast iron pipe of 300 mm diameter and 8 mm thick is 1500 m long. The pipe is to convey 200 litres per sec of water.\n(a) Estimate the maximum time of closure of a valve at the downstream end that would be recognized as rapid closure?\n(b) What is the peak water hammer pressure produced by rapid closure?\n(c) What is the length of the pipe subjected to peak water hammer pressure if the time of closure is 2.0 $sec^2$ (For water $E = 2200 \\text{ MPa}$; for cast iron $E = 80 \\times 10^9 \\text{ Pa}$) [2.5+2.5+3]\nP.T.O.",
+          "marks": "8",
+          "chapter": "Unsteady Flow in Pipes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Explain variation of hydraulic radius with respect to depth in a very deep rectangular channel with suitable illustration.",
+          "marks": "6",
+          "chapter": "Uniform Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "A $3.6\\text{ m}$ wide rectangular channel had badly damaged surfaces and had a Manning's $n = 0.030$. As a first phase of repair, its bed was lined with concrete with $n = 0.015$. If the depth of flow remains the same at $1.2\\text{ m}$ before and after the repair, what is the increase of discharge obtained as result of repair.",
+          "marks": "7",
+          "chapter": "Uniform Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "A $3\\text{m}$ wide rectangular channel carries a discharge of $15\\text{m}^3\\text{/s}$ at a depth of $2\\text{ m}$. What will be the minimum height of hump at which the depth over the hump will be critical? Calculate the height of hump for which upstream water depth will be $2.5\\text{ m}$. What will be the depth of flow on the upstream and on the hump when its height is $0.2\\text{ m}$?",
+          "marks": "8",
+          "chapter": "Energy and Momentum Principles in Open Channel Flow",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2073 Bhadra",
+      "year": "2073",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 48,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "In a hydro dynamically rough pipe of $100\\text{ mm}$ diameter, the ratio of velocities at $10\\text{ mm}$ and $30\\text{ mm}$ from the pipe wall is $0.838$. Determine the average height of the wall roughness, shear stress at the wall and mean velocity of flow if velocity at $30\\text{ mm}$ is $1.90\\text{ m/s}$.",
+          "marks": "8",
+          "chapter": "Pipe Flow Regimes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Two pipes have a length L each. One of them has diameter $D_1$ and the other has diameter $D_2$. If the pipes are arranged in parallel, the loss of head when a total quantity of water Q flows through them is $H_1$. If the pipes are arranged in series and the same quantity Q flows through them, the loss of head is $H_2$. If $D_2 = D_1/2 , find$ the ratio of $H_1$ to $H_2 , neglecting$ minor losses and assuming same f.",
+          "marks": "8",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "A reservoir A feeds two lower reservoirs B and C through a single pipe $10\\text{ km}$ long, $750\\text{ mm}$ diameter having a downward slope of $2.2 \\times 10^{-3}$. This pipe then divides into two branch pipes, one $5.5\\text{ km}$ long laid with a downward slope of $2.75 \\times 10^{-3}$ (going to B), the other $3\\text{ km}$ long having a downward slope of $3.2 \\times 10^{-3}$ (going to C). Calculate the necessary diameters of the branch pipes so that the steady flow rate in each shall be $0.24\\text{ m}^3\\text{/s} , when$ the level in each reservoir is $3\\text{ m}$ above the end of the corresponding pipe. Neglect all losses except pipe friction and take $f = 0.025$ throughout.",
+          "marks": "10",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Discuss Water hammet phenomenon. Develop Euler's equation as well as continuity equation for unsteady flow.",
+          "marks": "8",
+          "chapter": "Unsteady Flow in Pipes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Design $a^n$ economical trapezoidal channel with a velocity of $0.6\\text{ m/s}$. The side slope $Z$ of cannel is $1.5$ and conveys a discharge of $3\\text{ m}^3\\text{/s}$. Take manning's coefficient as $0.003$. Also find the required bed slope. [6]\n(b) Define hydraulic exponent. Show that the value of hydraulic exponent for rectangular section is equal to $10/3$.",
+          "marks": "4",
+          "chapter": "Uniform Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define steady Non uniform and spatially varied flow. Give at least two examples of each flows.",
+          "marks": "3",
+          "chapter": "Energy and Momentum Principles in Open Channel Flow",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is a mild slope? Justify analytically the nature of surface profiles (both upstream and downstream end) for mild slope.",
+          "marks": "1",
+          "chapter": "Gradually Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Why shear stress reduction factor \"K\" is necessary while designing the mobile boundary channel? Explain the design procedures (step by step) of mobile boundary channel by maximum permissible velocity approach.",
+          "marks": "6",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2072 Magh",
+      "year": "2072",
+      "month": "Magh",
+      "examType": "Back",
+      "totalMarks": 35,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Verify whether the following suggested distribution of discharge in the pipelines of the network shown in figure below is satisfactory by using Hardy-cross method. If not, determine the proper distribution. If the elevation at point B is 50 m and pressure head is 40 m and the elevation at D is 40 m, find the pressure at D.<table><thead><tr><th>Line</th><th>AB</th><th>BC</th><th>CD</th><th>DA</th><th>AC</th></tr></thead><tbody><tr><td>Suggested discharge (units)</td><td>58</td><td>42</td><td>32</td><td>18</td><td>20</td></tr></tbody></table>P.3",
+          "marks": "8",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": true
+        },
+        {
+          "qNum": 2,
+          "text": "(a) In the figure below, water flowing through a pipe from the reservoir is suddenly stopped by closing a valve at point B. Draw pressure-time diagram at the 2/3 L form valve of the pipe for one cycle of wave motion. [2]\n\nb) Water flows through a 25 cm diameter 1500m long pipe at rate of 75 lps. The static pressure of water in the pipe is 200m at the downstream end of the pipe and the thickness of the pipe material is 6 mm. If a valve at the downstream end closed in 3 sec estimate the stress in the pipe wall. Take Bulk modulus of water = $2.2 \\times 10^9 \\text{ N/m}^2$ and Young's modulus of elasticity of steel = $2.1 \\times 10^{11} \\text{N/m}^2$.",
+          "marks": "6",
+          "chapter": "Unsteady Flow in Pipes",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "(a) In a partially full channel having a triangular section as shown in figure, the rate of discharge $Q = KAR^{2/3} , in$ which $K = \\text{a constant}$; $A = \\text{flow area}$ and $R = \\text{hydraulic radius}$. Determine the depth at which the discharge is maximum. [5]\n\nb) The velocity distribution in a channel section may be approximated by the equation $u = u_o(d/d_o)^n$ in which $u$ is the flow velocity at depth $d$; $u_o$ is the flow velocity at depth $d_o$ and $n = \\text{a constant}$. Derive expression for the energy and momentum coefficient.",
+          "marks": "5",
+          "chapter": "Uniform Flow in Open Channels",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "a) Define specific energy. Show that the flow is critical when the discharge is maximum for the given specific energy. Water flows at a depth of 1.8 m and velocity of 1.5 m/s in a 3 m wide rectangular channel. Find the width at contraction which just causes critical flow without a change in the upstream depth. [1+4+3]\n\nb) An open rectangular channel carrying a discharge of $4.25 \\text{ m}^3/\\text{s}$ is flowing at a depth of 1.15m with energy of 1.2 m and a width of 3 m. The flow encounters a simultaneous gradual contraction to a width of 1.5 m and a smooth downwards step of 0.6 m. With these flow conditions, determine the depth of the downstream flow.",
+          "marks": "4",
+          "chapter": "Energy and Momentum Principles in Open Channel Flow",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What is hydraulic jump? Why is energy principle not applied for the analysis of the jump? Water flows in a 5 m wide rectangular channel at Froude number 3.5; the depth of flow is 1.2 m. If water undergoes a hydraulic jump, what is the Froude number downstream of jump?",
+          "marks": "1",
+          "chapter": "Rapidly Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define the following; Hydraulic depth, Energy slope, gradually varied flow and spatially varied flow.",
+          "marks": "4",
+          "chapter": "Gradually Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) Sketch the flow profile: [4]\n\nb) Justify analytically that $A_3$ curve meets the $y_c$ line and channel bottom normally.",
+          "marks": "4",
+          "chapter": "Gradually Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain the Tractive Force Method of designing Mobile boundary channel. Show the shear stress distribution on the Alluvial channel boundary with values.\nP.4",
+          "marks": "3",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2072 Ashwin",
+      "year": "2072",
+      "month": "Ashwin",
+      "examType": "Regular",
+      "totalMarks": 40,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "A horizontal pipe $60\\text{mm}$ in diameter carries oil of specific gravity $0.8$. The pressure difference between two sections $5\\text{km}$ apart is found to be $200\\text{ kPa}$. The oil flowing through the pipe is collected in a tank. It is found that $1962\\text{ N}$ of oil is collected in $4$ minutes. Compute the dynamic viscosity of the oil. Assume the flow to be laminar and verify it. Also, find the velocity at a distance of $20\\text{ mm}$ from the pipe wall.",
+          "marks": "4",
+          "chapter": "Pipe Flow Regimes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Two reservoirs are connected by a pipe $1000\\text{ m}$ long of diameter $300\\text{ mm}$. The pipe passes over a hill whose height is $5\\text{ m}$ above the level of water in the upper reservoir. The difference in water levels in the two reservoirs is $13\\text{ m}$. If the absolute pressure of water anywhere in the pipe is not allowed to fall below $1.2\\text{ m}$ of water in order to prevent cavitations, calculate the length of pipe in the portion between the upper reservoir and the hill summit; and also the discharge through the pipe. Assume the reservoirs are open to the atmosphere having atmospheric pressure of $760\\text{ mm}$ of mercury. Take friction factor, $f = 0.032$ and neglect bend losses.",
+          "marks": "8",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Explain the water hammer phenomenon and mention its causes. Derive the momentum equation for unsteady flow through pipe.",
+          "marks": "6",
+          "chapter": "Unsteady Flow in Pipes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Determine the most economical section of a trapezoidal channel with side slope of $2:1 , carrying$ a discharge of $9\\text{m}^3/\\text{s}$ with a velocity of $0.75\\text{ m/s}$. Take Manning's $n = 0.025$. For conveying the same discharge, if a rectangular channel $1.2\\text{ m}$ deep and $3\\text{ m}$ wide is provided, what would be the saving in power per km length of channel? [4+2]\nP. 1\n(b) Using Manning's equation, show that the depth of flow is equal to 94% of the diameter for the partially filled most economical circular channel considering maximum discharge.",
+          "marks": "4",
+          "chapter": "Uniform Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "A trapezoidal channel of base width 6 m and side slope of 2 horizontal to 1 vertical carries a flow of 60 cumecs at a depth of 2.5 m. There is a smooth transition to a rectangular section 6 m wide accompanied by a gradual lowering of the channel bed by 0.6 m (i) Find the depth of water in the rectangular section and the change in water surface level. (ii) In case the drop in water surface level is to be restricted to 0.3 m. What is the amount by which the bed must be lowered? Assume no losses.",
+          "marks": "6",
+          "chapter": "Energy and Momentum Principles in Open Channel Flow",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define the following; non-perismatic channel, spatially varied flow, hydraulic slope, gradually varied flow.",
+          "marks": "4",
+          "chapter": "Gradually Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) Sketch the flow profile. [3]\n\nb) Justify analytically the nature of surface profiles in critical sloped channels.",
+          "marks": "5",
+          "chapter": "Gradually Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "a) Explain the Tractive Force Method of designing Mobile boundary channel. [3]\n\nb) Design a regime channel for a discharge of 75 $m^3/s$ and soil particle size of 0.65 mm using Lacey's method. Assume suitable side slope of channel.\n\nP.2",
+          "marks": "3",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2071 Magh",
+      "year": "2071",
+      "month": "Magh",
+      "examType": "Back",
+      "totalMarks": 44,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Explain Prandtl Mixing length theory. Show that the velocity distribution in pipe for turbulent flow is Logarithmic. Derive $a^n$ expression of head loss to sudden expansion of pipe.",
+          "marks": "2",
+          "chapter": "Pipe Flow Regimes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Water from a main canal is siphoned to a branch canal over $a^n$ embankment by means of a wrought iron pipe of $100\\text{ mm}$ diameter. The length of the pipeline up to the summit is $30\\text{ m}$ and the total length is $90\\text{ m}$. Water surface elevation in the branch canal is $10\\text{ m}$ below that of main canal.\n(a) If the total quantity of water required to be conveyed is $0.05\\text{ m}^3/\\text{s} , how$ many pipelines are needed?\n(b) What is the maximum permissible height of the summit above the water level in the main canal so that the water pressure at the summit may not fall below $20\\text{ Kpa}$ absolute, the barometer reading being $10\\text{ m}$ of water?\nTake $f = 0.025$ and consider all losses.",
+          "marks": "8",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "(a) Derive the expression of correction factor $\\Delta Q = -\\frac{\\sum(rQ_0^2)}{\\sum(2rQ_0)}$ for solution of pipe network using Hardy Cross method. Whether $r$ is resistance coefficient of pipe and $Q_0$ is initial assumed discharge. [2]\n(b) Determine the piezometric head at D for the following three reservoir problem.\n\nWhere, $f$ is the friction factor of the Darcy-Weisbach equation used in Moody diagram.",
+          "marks": "8",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "A steel pipeline ($\\epsilon = 0.046\\text{ mm}$) $61\\text{ cm}$ in diameter and $3.2\\text{ km}$ long discharges freely at its lower end under a head of $61\\text{ m}$. What water-hammer pressure would develop if a valve at the outlet were closed in $4\\text{ sec}$? $60\\text{ sec}$? Wall thickness = $0.5\\text{ cm}$ for both case of closure. Compute the stress that would develop in the walls of the pipe near the valve. If the working stress of steel is taken as $16,000\\text{ psi} , what$ would be the minimum time of safe closure? Consider $E_{\\text{water}} = 2.17 \\times 10^9\\text{ N/m}^2$ and $E_p = 1.9 \\times 10^{11}\\text{ N/m}^2$.",
+          "marks": "8",
+          "chapter": "Unsteady Flow in Pipes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Give the two practical examples of following flow regimes.\n(a) uniform and non-uniform flow\n(b) spatially varied flow, gradually varied flow",
+          "marks": "4",
+          "chapter": "Uniform Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What are the conditions of uniform flow in open channel? A trapezoidal channel having side slope of $1:1$ has to carry a flow of $15\\text{ m}^3/\\text{s}$. The bed slope is $1$ in $1000$. Chezy's $C$ is $45$ if the channel is unlined and $70$ if the channel is lined with concrete. The cost per $\\text{m}^3$ of excavation is $3$ times cost per $\\text{m}^2$ of lining. Find which arrangement is economical.",
+          "marks": "2",
+          "chapter": "Uniform Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "The depth of uniform flow in a rectangular channel is $5\\text{ m}$ wide ($n = 0.02$, $S_0 = 0.04$) is $0.5\\text{ m}$. A low dam raises the water depth of $2\\text{ m}$. Find whether a hydraulic jump takes place and if so at what distance upstream of the dam.",
+          "marks": "6",
+          "chapter": "Rapidly Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "A stream has a sediment bed of median size $0.35\\text{ mm}$. The slope of the channel is $1.5 \\times 10^{-4}$. Stream is considered as trapezoidal with base width $3\\text{ m}$ and side slope $1.5\\text{ H} : 1\\text{ V}$.\n\na) If the depth of flow in the channel is $0.25\\text{ m}$, examine whether the bed particles will be in motion or not.\n\nb) Calculate minimum size of gravel that will not move in the bed of channel. Use empirical equation of critical shear stress as: $\\tau_c (\\text{N}/\\text{m}^2) = 0.155 + \\frac{0.409d^2_{\\text{mm}}}{(1 + 0.177d^2_{\\text{mm}})^{1/2}}$.",
+          "marks": "6",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2071 Bhadra",
+      "year": "2071",
+      "month": "Bhadra",
+      "examType": "Back",
+      "totalMarks": 47,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "A total 12 liters per sec of oil is pumped through 2 pipes in parallel, one 12 cm in diameter and the other 10 cm in diameter, both pipes 1000 m long. The specific gravity of oil is 0.85, average roughness height is 0.26 mm for both pipes and kinematic viscosity is 9 $cm^2/sec$. Calculate the flow rate through each pipe, and power generated by pump.",
+          "marks": "8",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Water is flowing from a reservoir in a pipe of $600\\text{ mm}$ diameter, $3000\\text{ m}$ long and $6\\text{ mm}$ thick at a velocity of $3.5\\text{ m/s}$. Assuming the value of bulk modulus of elasticity for water as $2.06\\text{ GPa} , modulus$ of elasticity for pipe material $206\\text{ GPa}$ and velocity of pressure wave $1400\\text{ m/s}$. Draw pressure-time diagram at location $1200\\text{ m}$ from reservoir if the valve located at the end of the pipe is closed in $1\\text{ second}$.",
+          "marks": "8",
+          "chapter": "Unsteady Flow in Pipes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) A $3.5\\text{ m}$ rectangular channel carries discharge of $4\\text{ m}^3/\\text{s}$ of water at a depth of $1.2\\text{ m}$. If the width is reduced to $2.0\\text{ m}$ and bed raised by $0.15\\text{ m}$, determine the depth of flow at reduced section and upstream of the reduced section. [6]\n\nb) Find the expression for the specific force. Show that the flow is critical when the specific force is minimum. Explain the use of this concept in open channel flow.",
+          "marks": "4",
+          "chapter": "Energy and Momentum Principles in Open Channel Flow",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Define bed slope, hydraulic slope and energy slope. Why for non-uniform flow, these slopes are not parallel to each other, explain with neat sketch.",
+          "marks": "4",
+          "chapter": "Gradually Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "A rectangular channel with a bottom width of $5\\text{ m}$, bottom slope of $0.00076$ and energy correction factor of $1.1$ has a discharge of $1.85\\text{ m}^3/\\text{s}$. In a Gradually varied flow in this section the depth at certain location is found to be $0.25\\text{ m}$, considering Manning’s roughness coefficient as $0.0165$ determine the type of GVF profile. How far upstream or downstream will the depth be $0.40\\text{ m}$ from depth $0.25\\text{ m}$. Use direct step method using increment equals to $0.05\\text{ m}$.",
+          "marks": "8",
+          "chapter": "Gradually Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "A rectangular channel with width $1.1\\text{ m}$ carrying a flow discharge of $7.2\\text{ m}^3/\\text{s}$ changes its bed slope from $0.065$ to $0.0085$. Show that the hydraulic jump occurs and if so find the location of jump. Take Manning’s roughness as $0.025$.",
+          "marks": "6",
+          "chapter": "Gradually Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Define an alluvial channel and incipient motion. Find the expression for the shear reduction factor “K” and explain the physical meaning of this factor.",
+          "marks": "1",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Define incipient motion condition in mobile boundary channel.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2070 Magh",
+      "year": "2070",
+      "month": "Magh",
+      "examType": "Back",
+      "totalMarks": 42,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Show that in both smooth and rough pipes for turbulent flow $\\frac{u-v}{v^*} = 5.75 \\log \\left(\\frac{y}{R}\\right) + 3.75$\nWhere v = mean velocity; u = point velocity at distance y from boundary. $v^* = shear$ velocity; R = Radius of pipe.",
+          "marks": "8",
+          "chapter": "Pipe Flow Regimes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Calculate the magnitude and direction of the manometer reading when water is flowing with velocity of 4.5 m/s for figure below. Consider minor losses also. [8]\n\n3.\n\nFor the three reservoir system of above figure, $z_1 = 29$ m, $L_1 = 80$ m, $z_2 = 129$ m, $L_2 = 150$ m, $z_3 = 69$ m and $L_3 = 110$ m. All pipes are 250 mm diameter concrete with roughness height 0.5 mm. Compute the flow rates for water.",
+          "marks": "10",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Define water hammer and write down continuity equation and momentum equation for unsteady flow in pipe. [3]\n(b) A value is closed in 4.5 s at the down stream end of a 3200 m pipeline carrying water at 2.7 m/s, What is the peak pressure developed by the closure, if the wave travels with velocity of 1000 m/$s^2$ Determine the length of pipe subject to the peak discharge.",
+          "marks": "5",
+          "chapter": "Unsteady Flow in Pipes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Prove that for compound open channel, velocity distribution coefficient (Energy correction factor) $\\alpha = \\frac{\\sum \\left( \\frac{K_i^3}{A_i^2} \\right) \\left( \\sum A_i^2 \\right)}{(\\sum K_i)^3} , where$ $k_i = Conveyance$ factor of $i^{th}$ section, $A_i = Cross$ section area of $i^{th}$ section. [4]\n(b) Set up a general expression for wetted perimeter $p_w$ of a trapezoidal channel in terms of the cross-sectional area $A , depth$ $y$ and angle of side slope $\\phi$. Then differentiate $p_w$ with respect to $y$ with $A$ and $\\phi$ held constant. From this, prove that $R = y/2$ for the section of greatest hydraulic efficiency (i.e, smallest $p_w$ for a given $A$).",
+          "marks": "6",
+          "chapter": "Uniform Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What are the different conditions to be fulfilled when flow is critical open channel? A 3m wide rectangular channel carries 3 $m^3/s$ of water at a depth of 1 m. If the width is to be reduced to 2 m and bed raised by 10 cm, what would be the depth of flow in the contracted section? What maximum rise in the bed level of the contracted section is possible without affecting the depth of flow upstream of transition? Neglect loss of energy in transition. What would be the change in water surface elevations if the rise in bed is 30 cm?",
+          "marks": "3",
+          "chapter": "Energy and Momentum Principles in Open Channel Flow",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Given a practical example for each of the following open channel flow: (a) GVF (b) RVF (c) Spatially varied flow (d) Non uniform flow.",
+          "marks": "4",
+          "chapter": "Gradually Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Describe the application of shield diagram for designing mobile boundary channel.",
+          "marks": "6",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2070 Bhadra",
+      "year": "2070",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 50,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Show that for turbulent flow in rough pipes $\\frac{V}{V^*} = 5.75 \\log \\left( \\frac{R}{K} \\right) + 4.75$.\nWhere,\nV = Mean velocity\nV = Shear velocity\nR = Radius of pipe\nK = Average height of surface protrusions",
+          "marks": "8",
+          "chapter": "Pipe Flow Regimes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Three reservoirs A, B and C are interconnected by three pipes which all meet at junctions J. The water surface of reservoir B is 20 m above the surface of C whilst the surface of A is 40 m above the surface of B. A flow control valve is fitted just before junction J in pipe AJ.\nThe head loss $h_L$ through pipes and components can be written as $h_L = rQ^2$ where $r$ is the resistance coefficient. The value of $r$ for the valve and the pipes are $r_{AJ} = 150 , r_{BJ} = 200 , r_{CJ} = 300 , r_{valve} = (400/n)^2$.\nWhere $n$ is the percentage valve opening. Find the value of $n$ which will make the discharge into reservoir C twice into reservoir B.",
+          "marks": "10",
+          "chapter": "Pipe Flow Problems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Explain the importance of surge tank. Describe the types of surge tank. [1.5+1.5]\n(b) A 300 mm diameter pipe of mild steel having 6 mm thickness carries water at the rate of 200 l/s. What will be the rise in pressure if the valve at the downstream end is closed instantaneously? Compare results assuming the pipe to be rigid as well as elastic. What should be the maximum closing time for the computed results to be valid? Take pipe length as 5.0 km, Modulus of elasticity of pipe material as $2.25 \\times 10^{11} \\text{ N/m}^2 , Bulk$ modulus of elasticity of water as $2.0 \\times 10^9 \\text{ N/m}^2$.",
+          "marks": "5",
+          "chapter": "Unsteady Flow in Pipes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What condition make open channel flow uniform? The area of cross-section of flow in a channel is $6 \\text{ m}^2$. Calculate the dimensions of the most efficient section if the channel is (a) triangular, (b) rectangular and (c) trapezoidal (2:1). Which has the least perimeter?",
+          "marks": "2",
+          "chapter": "Uniform Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) A flow of $2 \\text{ m}^3/\\text{s}$ is carried in a rectangular channel 1.8 wide at a depth of 1.0 m. Will critical depth occur at a section where (a) a frictionless hump 15 cm high is installed across the bed? (b) a frictionless sidewall reduces the channel width to 1.3 m? (c) the hump and the sidewall construction are installed together? [9]\n\nb) Define conjugate depths. Sketch the specific force curve showing conjugate depths and the zones of subcritical, critical and supercritical flow.",
+          "marks": "1",
+          "chapter": "Energy and Momentum Principles in Open Channel Flow",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "For a hydraulic jump in a horizontal triangular channel show that $3Fr_1^2 = \\frac{r^2(r^3-1)}{r^2-1}$,\nwhere $Fr_1^2 = \\frac{v_1^2}{gy_1}$ and $r = \\frac{y_2}{y_1}$.",
+          "marks": "6",
+          "chapter": "Rapidly Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain GVF, RVF and spatially varied flow with appropriate sketches.",
+          "marks": "4",
+          "chapter": "Gradually Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "A rectangular channel with a bottom width of 4 m, bottom slope of 0.00075 and energy correction factor of 1.1 has a discharge of $2.0 \\text{ m}^3/\\text{s}$. In a Gradually varied flow in this section the depth at certain location is found to be 0.2 m, considering Manning's roughness coefficient as 0.016 determine the type of GVF profile. How far upstream or downstream will the depth be 0.40 m from depth 0.20 m. Use Graphical Integration Method using increment equals to 0.1 m.",
+          "marks": "8",
+          "chapter": "Gradually Varied Flow in Open Channels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Why shear stress reduction factor \"K\" is necessary while designing the mobile boundary channel? Explain the design procedures (step by step) of mobile boundary channel by maximum permissible velocity approach.",
+          "marks": "6",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    }
   ]
 }

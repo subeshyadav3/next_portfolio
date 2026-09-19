@@ -1,381 +1,1395 @@
 {
   "subject": "Communication Systems",
-  "subjectCode": "ENEX 351",
+  "semester": "1",
   "questions": [
     {
-      "chapter": "Baseband Digital Data Transmission",
-      "text": "For a given binary sequence (e.g. 100000000001101 or 110011000001), draw the resulting waveforms for: Unipolar RZ, Polar NRZ, Bipolar AMI, Manchester, and HDB3 / B8ZS scrambling line codes. Discuss DC component, clock recovery, and bandwidth requirements.",
+      "id": "communication-systems-1",
+      "question": "Write short notes on: Hilbert transform",
+      "text": "Write short notes on: Hilbert transform",
+      "chapter": "Archive Questions",
       "marks": "8",
+      "frequency": 5,
       "years": [
-        "2082 Kartik",
+        "2082 Chaitra",
         "2081 Chaitra",
-        "2080 Ashwin",
-        "2079 Ashwin",
-        "2079 Chaitra",
+        "2080 Chaitra",
         "2078 Chaitra"
       ],
-      "frequency": 6
-    },
-    {
-      "chapter": "Digital Modulation Techniques",
-      "text": "What is the aim of source coding? For a given message string with character frequencies, construct the Huffman code tree, generate binary codewords, and calculate source entropy $H(X)$, average codeword length $L$, coding efficiency $\\eta = \\frac{H(X)}{L}$, and redundancy.",
-      "marks": "8",
-      "years": [
+      "examSessions": [
+        "2082 Chaitra",
         "2081 Chaitra",
-        "2080 Ashwin",
-        "2079 Chaitra"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Error Detection and Correction Coding",
-      "text": "A $(6, 3)$ linear block code has a specified parity check matrix $H$. (a) Determine the generator matrix $G$, (b) Generate the valid codeword for message vector $m = [1, 1, 0]$, (c) Compute the syndrome vector $S = r H^T$ for a received word $r$ and demonstrate single-bit error detection and correction.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Digital Modulation Techniques",
-      "text": "Draw and explain the constellation diagram of 16-QAM and 32-QAM. Compare QAM with QPSK and Minimum Shift Keying (MSK) in terms of bandwidth efficiency, bit error rate, and constant envelope property.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
+        "2080 Chaitra",
         "2078 Chaitra"
       ],
-      "frequency": 3
+      "isDiagram": false
     },
     {
-      "chapter": "Noise in Communication Systems",
-      "text": "Derive the impulse response $h(t) = s(T-t)$ and maximum output signal-to-noise ratio ($SNR = \\frac{2E}{N_0}$) of a Matched Filter receiver operating in an Additive White Gaussian Noise (AWGN) channel.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Digital Modulation Techniques",
-      "text": "State the Shannon-Hartley Channel Capacity Theorem: $C = B \\log_2\\left(1 + \\frac{S}{N}\\right)$. Discuss the trade-off between bandwidth and signal-to-noise ratio, and prove the Shannon capacity limit: $\\frac{E_b}{N_0} \\ge \\ln 2 = -1.59\\text{ dB}$ as channel bandwidth approaches infinity.",
-      "marks": "6",
-      "years": [
-        "2082 Kartik",
-        "2080 Ashwin"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Amplitude Modulation",
-      "text": "Derive the mathematical expression for double-tone Amplitude Modulation (AM). Calculate the percentage of total transmitted power saved in DSB-SC and SSB-SC as compared to standard AM with modulation index $\\mu = 1$.",
-      "marks": "8",
-      "years": [
-        "2080 Ashwin",
-        "2079 Ashwin",
-        "2079 Chaitra"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Angle Modulation",
-      "text": "Explain Armstrong's indirect method for generating Wideband Frequency Modulation (WBFM) from Narrowband FM using frequency multipliers and mixers. Why are Pre-emphasis and De-emphasis filtering circuits used in FM broadcast?",
-      "marks": "8",
-      "years": [
-        "2081 Chaitra",
-        "2079 Ashwin"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Pulse Modulation",
-      "text": "Why is non-uniform quantization required in telephony? Explain $\\mu$-law and A-law logarithmic companding curves. Prove that for a standard voice channel ($300\\text{ Hz} - 3.4\\text{ kHz}$), 8-bit PCM sampled at $8\\text{ kHz}$ yields a bit rate of $64\\text{ kbps}$.",
-      "marks": "8",
-      "years": [
-        "2080 Ashwin",
-        "2079 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Pulse Modulation",
-      "text": "Compare Pulse Code Modulation (PCM), Differential Pulse Code Modulation (DPCM), and Delta Modulation (DM). Explain slope overload distortion and granular noise in Delta Modulation and how Adaptive Delta Modulation (ADM) solves them.",
-      "marks": "8",
-      "years": [
-        "2081 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Multiplexing Techniques",
-      "text": "Compare Time Division Multiplexing (TDM) with Frequency Division Multiplexing (FDM). Compare T1 ($1.544\\text{ Mbps}$, 24 channels) and E1 ($2.048\\text{ Mbps}$, 32 channels) digital PCM transmission hierarchies with frame structures.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2078 Chaitra"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Amplitude Modulation",
-      "text": "Explain the operation of a Superheterodyne Receiver with a block diagram. Explain RF amplifier, mixer, Intermediate Frequency (IF), Automatic Gain Control (AGC), and Image Frequency Rejection Ratio (IFRR).",
-      "marks": "8",
-      "years": [
-        "2079 Ashwin",
-        "2078 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Error Detection and Correction Coding",
-      "text": "For a rate-1/2 convolutional encoder with given generator polynomials, draw the State Diagram, Tree Diagram, and Trellis Diagram. Explain how the Viterbi decoding algorithm performs maximum-likelihood path decoding.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Amplitude Modulation",
-      "text": "What is the Hilbert Transform? State its essential properties. Explain how the Hilbert transform is used to generate Single Sideband Suppressed Carrier (SSB-SC) modulated signals using the phase-shift method.",
-      "marks": "6",
-      "years": [
-        "2081 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Noise in Communication Systems",
-      "text": "Define Noise Figure ($F$), Equivalent Noise Temperature ($T_e$), and Noise Factor in cascaded stages (Friis formula for noise). Derive the Figure of Merit $(\\gamma = \\frac{SNR_o}{SNR_c})$ for SSB, DSB-SC, and AM receivers.",
-      "marks": "8",
-      "years": [
-        "2081 Chaitra",
-        "2080 Ashwin"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Noise in Communication Systems",
-      "text": "Define Auto-correlation and Cross-correlation for energy and power signals. State and prove the Wiener-Khinchin theorem relating the autocorrelation function and the Power Spectral Density (PSD).",
-      "marks": "6",
-      "years": [
-        "2082 Kartik",
-        "2079 Ashwin"
-      ],
-      "frequency": 2
-    },
-    {
+      "id": "communication-systems-2",
+      "question": "a) Sketch a proper generic block diagram of a voice communication system between an onboard pilot and an air traffic controller, and briefly explain the needs and functioning of each building block of that system. [5]\n\nb) Define any ten performance parameters/impairments of digital communication system.",
+      "text": "a) Sketch a proper generic block diagram of a voice communication system between an onboard pilot and an air traffic controller, and briefly explain the needs and functioning of each building block of that system. [5]\n\nb) Define any ten performance parameters/impairments of digital communication system.",
       "chapter": "Introduction",
-      "text": "Sketch and describe the functional block diagram of a digital communication system operating in duplex mode. Contrast it with an analog communication system and discuss channel impairments (attenuation, distortion, noise, interference).",
-      "marks": "8",
+      "marks": "5",
+      "frequency": 3,
       "years": [
-        "2082 Kartik",
+        "2082 Chaitra",
+        "2081 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2081 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-3",
+      "question": "Why convolution coder is better than block coder? Determine systematic and non-systematic code vector for a $(7,4)$ cyclic hamming code for message vector $\\{1011\\}$ with generator matrix $g(x)=1+X+X^3$.",
+      "text": "Why convolution coder is better than block coder? Determine systematic and non-systematic code vector for a $(7,4)$ cyclic hamming code for message vector $\\{1011\\}$ with generator matrix $g(x)=1+X+X^3$.",
+      "chapter": "Error Detection and Correction Coding",
+      "marks": "2",
+      "frequency": 3,
+      "years": [
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2078 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-4",
+      "question": "Determine systematic and non-systematic code vector for a $(7,4)$ cyclic hamming code for message vector $\\{1011\\}$ with generator matrix $g(x)=1+X+X^3$.",
+      "text": "Determine systematic and non-systematic code vector for a $(7,4)$ cyclic hamming code for message vector $\\{1011\\}$ with generator matrix $g(x)=1+X+X^3$.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 3,
+      "years": [
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2078 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-5",
+      "question": "Define any ten performance parameters/impairments of digital communication system.",
+      "text": "Define any ten performance parameters/impairments of digital communication system.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 3,
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2081 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-6",
+      "question": "Why do we need pre-emphasis and de-emphasis circuits in FM? Explain.",
+      "text": "Why do we need pre-emphasis and de-emphasis circuits in FM? Explain.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 3,
+      "years": [
+        "2080 Chaitra",
+        "2081 Chaitra"
+      ],
+      "examSessions": [
+        "2080 Chaitra",
+        "2081 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-7",
+      "question": "Write short notes on: T1 and E1 Hierarchy used in telephony",
+      "text": "Write short notes on: T1 and E1 Hierarchy used in telephony",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 3,
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2081 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-8",
+      "question": "Write short notes on: FDM vs TDM",
+      "text": "Write short notes on: FDM vs TDM",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 3,
+      "years": [
+        "2082 Chaitra",
         "2081 Chaitra",
         "2079 Chaitra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Blocks: Information source, Source Encoder, Channel Encoder, Digital Modulator, Transmission Channel, Digital Demodulator, Channel Decoder, Source Decoder, Transducer. Digital advantages: high noise immunity, regenerative repeaters, cryptographic security, uniform multiplexing of diverse media types."
-    },
-    {
-      "chapter": "Amplitude Modulation",
-      "text": "Derive the mathematical expression for Standard Amplitude Modulated (DSB-FC) wave. Calculate modulation index $\\mu$, total transmitted power $P_t = P_c(1 + \\frac{\\mu^2}{2})$, and modulation efficiency $\\eta$. Why does standard AM waste over $66.7\\%$ of transmitted power in the carrier?",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2080 Chaitra",
-        "2078 Kartik",
-        "2075 Chaitra"
-      ],
-      "frequency": 4,
-      "frequencyTier": "Very High",
-      "solutionOutline": "s(t) = A_c [1 + mu m_n(t)] cos(2 pi f_c t). Total power P_t = P_c + P_USB + P_LSB = P_c(1 + mu^2/2). Sideband power ratio eta = mu^2 / (2 + mu^2). For 100% modulation (mu = 1), sidebands contain only 1/3 (33.3%) of power, while 2/3 (66.7%) is wasted in redundant carrier. Solved by DSB-SC and SSB-SC."
-    },
-    {
-      "chapter": "Amplitude Modulation",
-      "text": "Derive the time-domain equation and frequency spectrum for Frequency Modulated (FM) signal with single-tone sinusoidal modulation. Explain Carson's Rule for FM bandwidth $B_T = 2(\\Delta f + f_m)$ and frequency demodulation using Phase Locked Loop (PLL).",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
+      "examSessions": [
+        "2082 Chaitra",
         "2081 Chaitra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2079 Chaitra"
       ],
-      "frequency": 4,
-      "frequencyTier": "Very High",
-      "solutionOutline": "Instantaneous frequency f_i(t) = f_c + k_f m(t). s_FM(t) = A_c cos(2 pi f_c t + beta sin(2 pi f_m t)), expanding into Bessel series sum J_n(beta) cos(2 pi (f_c + n f_m) t). Carson Rule accounts for sidebands carrying 98% of power: B_T = 2(Delta f + f_m) = 2 f_m (1 + beta). PLL tracks input frequency through phase detector, loop filter, and VCO."
+      "isDiagram": false
     },
     {
-      "chapter": "Baseband Digital Data Transmission",
-      "text": "Explain Pulse Code Modulation (PCM). Detail the processes of Sampling, Uniform vs Non-uniform Quantization, and Encoding. Derive the signal-to-quantization noise ratio formula $(S/N_q) = 1.8 + 6n \\text{ dB}$ for an $n$-bit quantizer. Compare $\\mu$-law and A-law companding.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2080 Chaitra",
-        "2077 Magh"
-      ],
-      "frequency": 4,
-      "frequencyTier": "Very High",
-      "solutionOutline": "PCM converts analog to digital sequence. Quantization error e in [-Delta/2, Delta/2] has variance sigma_e^2 = Delta^2/12. With step size Delta = 2V_max / 2^n, SNR_q = 3 * 2^(2n) * (P / V_max^2), giving SNR_dB = 1.76 + 6.02 n dB. Companding applies non-linear compression before uniform quantization to maintain uniform SNR for weak speech signals (mu-law: North America/Japan; A-law: Europe/Nepal)."
-    },
-    {
-      "chapter": "Baseband Digital Data Transmission",
-      "text": "State the Nyquist Criterion for Zero Intersymbol Interference (ISI). Derive the condition on transfer function $H(f)$ for distortionless baseband pulse transmission. Explain the Raised Cosine roll-off filter and the concept of excess bandwidth factor ($\\alpha$).",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2080 Chaitra",
-        "2078 Bhadra",
-        "2075 Chaitra"
-      ],
-      "frequency": 4,
-      "frequencyTier": "Very High",
-      "solutionOutline": "Nyquist criterion states sum_{k} H(f - k R_b) = T_b = constant. Minimum theoretical bandwidth B_min = R_b/2 for ideal brick-wall sinc pulses. Raised Cosine filter introduces practical gradual transition band with roll-off factor alpha in [0, 1]. Total bandwidth B = (1 + alpha) R_b / 2. Higher alpha reduces ISI sensitivity and timing jitter at expense of bandwidth."
-    },
-    {
-      "chapter": "Digital Modulation Techniques",
-      "text": "Explain Binary Phase Shift Keying (BPSK) and Quadrature Phase Shift Keying (QPSK). Draw transmitter and receiver block diagrams, signal constellations, and derive the probability of bit error $P_b = Q\\left(\\sqrt{\\frac{2E_b}{N_0}}\\right)$ for coherent BPSK.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2076 Ashwin"
-      ],
-      "frequency": 4,
-      "frequencyTier": "Very High",
-      "solutionOutline": "BPSK shifts carrier phase by 180 degrees: s_1(t) = sqrt(2 E_b / T_b) cos(2 pi f_c t), s_2(t) = -s_1(t). Decision distance d_12 = 2 sqrt(E_b). P_b = Q(d_12 / 2 sigma) = Q(sqrt(2 E_b / N_0)). QPSK splits bit stream into In-phase (I) and Quadrature (Q) streams with 4 constellation points separated by 90 degrees, achieving double bandwidth efficiency (2 bits/s/Hz) with identical bit error rate."
-    },
-    {
-      "chapter": "Digital Modulation Techniques",
-      "text": "State the Shannon-Hartley Channel Capacity Theorem $C = B \\log_2\\left(1 + \\frac{S}{N}\\right)$. Prove that as bandwidth $B \\to \\infty$, the channel capacity approaches the Shannon Limit $C_{\\infty} = \\frac{S}{N_0 \\ln 2} \\approx 1.44 \\frac{S}{N_0}$ and determine the minimum $E_b/N_0 = -1.59 \\text{ dB}$.",
-      "marks": "6",
-      "years": [
-        "2082 Kartik",
-        "2080 Chaitra",
-        "2078 Kartik",
-        "2074 Chaitra"
-      ],
-      "frequency": 4,
-      "frequencyTier": "Very High",
-      "solutionOutline": "C = B log2(1 + S / (N_0 B)). Let x = S / (N_0 B); as B -> infty, x -> 0. C = (S/N_0) * log2(1 + x)^(1/x) -> (S/N_0) log2(e) = 1.442 S/N_0. Since S = C * E_b, we obtain C <= (C E_b / N_0) / ln 2 => E_b / N_0 >= ln 2 = 0.693 = -1.59 dB, the absolute fundamental limit for error-free digital transmission."
-    },
-    {
-      "chapter": "Error Detection and Correction Coding",
-      "text": "Explain Cyclic Redundancy Check (CRC) codes. Given generator polynomial $G(X) = X^4 + X + 1$ and message bits $M = 1101011011$, compute the transmitted codeword using modulo-2 polynomial division. Show how the receiver detects an error if a bit flips during transmission.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2075 Chaitra"
-      ],
-      "frequency": 4,
-      "frequencyTier": "Very High",
-      "solutionOutline": "Append r = degree(G) = 4 zeros to M: M(X)*X^4. Perform modulo-2 polynomial division by G(X). Remainder R(X) is appended to message: Codeword T(X) = M(X)*X^4 + R(X). Receiver divides received vector R_rx(X) by G(X); non-zero remainder (syndrome) signals transmission error."
-    },
-    {
-      "chapter": "Error Detection and Correction Coding",
-      "text": "Describe Convolutional Encoding and Viterbi Decoding. For a rate $r = 1/2$ convolutional encoder with generator polynomials $g_1 = (1, 1, 1)$ and $g_2 = (1, 0, 1)$, draw the state transition diagram, tree diagram, and trellis diagram. Trace Viterbi decoding of a received bit stream.",
-      "marks": "8",
-      "years": [
-        "2081 Chaitra",
-        "2080 Chaitra",
-        "2078 Bhadra",
-        "2076 Chaitra"
-      ],
-      "frequency": 4,
-      "frequencyTier": "Very High",
-      "solutionOutline": "Convolutional codes have memory: output depends on current bit and previous m shift register stages. Trellis diagram represents states across time intervals. Viterbi algorithm implements maximum likelihood decoding: calculates branch metrics (Hamming distance), accumulates path metrics at each node, and prunes non-survivor paths to find minimum metric path."
-    },
-    {
+      "id": "communication-systems-9",
+      "question": "Write short notes on: (Any Three) [3×5]\n\na) T1 and E1 Hierarchy used in telephony\n\nb) FDM vs TDM\n\nc) Trellis diagram with example\n\nd) PSD of white noise\n\ne) Hilbert transform",
+      "text": "Write short notes on: (Any Three) [3×5]\n\na) T1 and E1 Hierarchy used in telephony\n\nb) FDM vs TDM\n\nc) Trellis diagram with example\n\nd) PSD of white noise\n\ne) Hilbert transform",
       "chapter": "Multiplexing Techniques",
-      "text": "Explain Spread Spectrum Communication principles. Compare Direct Sequence Spread Spectrum (DSSS) and Frequency Hopping Spread Spectrum (FHSS). Define Pseudo-Noise (PN) sequence properties and calculate Processing Gain ($PG = B_{ss}/B$).",
       "marks": "8",
+      "frequency": 2,
       "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2077 Magh"
+        "2082 Chaitra",
+        "2081 Chaitra"
       ],
-      "frequency": 4,
-      "frequencyTier": "Very High",
-      "solutionOutline": "Spread spectrum expands signal transmission bandwidth well beyond minimum necessary information bandwidth using independent pseudo-random code. DSSS multiplies baseband data directly with high chip-rate PN sequence. FHSS shifts carrier frequency rapidly among wide set of hopping channels. Processing Gain PG = B_ss / B_info = T_b / T_c. High PG provides anti-jamming and low probability of intercept."
+      "examSessions": [
+        "2082 Chaitra",
+        "2081 Chaitra"
+      ],
+      "isDiagram": false
     },
     {
+      "id": "communication-systems-10",
+      "question": "Given the binary sequence 1101010111 represent in Unipolar RZ, Bipolar NRZ, Polar NRZ and Manchester encoders. Explain communication impairments with examples.",
+      "text": "Given the binary sequence 1101010111 represent in Unipolar RZ, Bipolar NRZ, Polar NRZ and Manchester encoders. Explain communication impairments with examples.",
+      "chapter": "Baseband Digital Data Transmission",
+      "marks": "4",
+      "frequency": 2,
+      "years": [
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2079 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-11",
+      "question": "Briefly explain filter and oscillator requirement in Frequency Division Multiplexing (FDM). Compare packet switching and message switching.",
+      "text": "Briefly explain filter and oscillator requirement in Frequency Division Multiplexing (FDM). Compare packet switching and message switching.",
       "chapter": "Multiplexing Techniques",
-      "text": "Compare Frequency Division Multiple Access (FDMA), Time Division Multiple Access (TDMA), and Code Division Multiple Access (CDMA) in terms of spectrum allocation, synchronization requirements, and the near-far effect.",
-      "marks": "8",
+      "marks": "3",
+      "frequency": 2,
       "years": [
-        "2082 Kartik",
-        "2080 Chaitra",
-        "2078 Kartik",
-        "2075 Chaitra"
+        "2080 Ashwin"
       ],
-      "frequency": 4,
-      "frequencyTier": "Very High",
-      "solutionOutline": "FDMA assigns dedicated non-overlapping frequency bands with guard bands. TDMA allocates entire frequency channel in cyclically repeated time slots with guard times (requires precise frame synchronization). CDMA shares same frequency band continuously using orthogonal pseudo-random spreading codes (Walsh/Gold). Near-far problem occurs in CDMA when strong nearby transmitter drowns out distant user; solved by precise closed-loop power control."
+      "examSessions": [
+        "2080 Ashwin"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Noise in Communication Systems",
-      "text": "Define Additive White Gaussian Noise (AWGN), Equivalent Noise Temperature ($T_e$), and Noise Figure ($F$). Derive Friis' formula for the overall noise factor of a multi-stage cascaded amplifier: $F = F_1 + \\frac{F_2 - 1}{G_1} + \\frac{F_3 - 1}{G_1 G_2}$.",
-      "marks": "8",
+      "id": "communication-systems-12",
+      "question": "a) Explain the Armstrong's method for Frequency Modulation. [4]\n\nb) Why do we need pre-emphasis and de-emphasis circuits in FM? Explain.",
+      "text": "a) Explain the Armstrong's method for Frequency Modulation. [4]\n\nb) Why do we need pre-emphasis and de-emphasis circuits in FM? Explain.",
+      "chapter": "Angle Modulation",
+      "marks": "4",
+      "frequency": 2,
       "years": [
-        "2081 Chaitra",
-        "2080 Chaitra",
-        "2078 Bhadra",
-        "2074 Chaitra"
+        "2080 Chaitra"
       ],
-      "frequency": 4,
-      "frequencyTier": "Very High",
-      "solutionOutline": "AWGN has flat two-sided power spectral density S_N(f) = N_0/2 and Gaussian amplitude distribution. Noise figure F = (SNR_in) / (SNR_out) = 1 + T_e / T_0. Friis formula proves that first stage amplifier noise dominates the cascaded system: high first stage gain G_1 suppresses noise contributions from all succeeding stages."
+      "examSessions": [
+        "2080 Chaitra"
+      ],
+      "isDiagram": false
     },
     {
+      "id": "communication-systems-13",
+      "question": "Derive the expression for figure of merit for the SSB receiver. Define an efficient constellation diagram of a 32-QAM.",
+      "text": "Derive the expression for figure of merit for the SSB receiver. Define an efficient constellation diagram of a 32-QAM.",
+      "chapter": "Digital Modulation Techniques",
+      "marks": "5",
+      "frequency": 2,
+      "years": [
+        "2081 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-14",
+      "question": "What is distortionless transmission? Differentiate energy and power signal. Describe the impulse response of LPF.",
+      "text": "What is distortionless transmission? Differentiate energy and power signal. Describe the impulse response of LPF.",
+      "chapter": "Introduction",
+      "marks": "4",
+      "frequency": 2,
+      "years": [
+        "2079 Ashwin"
+      ],
+      "examSessions": [
+        "2079 Ashwin"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-15",
+      "question": "Generate a hamming code for 10101100 using even parities, and demonstrate how it corrects a single bit error.",
+      "text": "Generate a hamming code for 10101100 using even parities, and demonstrate how it corrects a single bit error.",
+      "chapter": "Error Detection and Correction Coding",
+      "marks": "7",
+      "frequency": 2,
+      "years": [
+        "2082 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-16",
+      "question": "Explain the aperture effect during flat-topped sampling. Illustrate, the DPCM scheme that overcomes the disadvantages of PCM. A delta modulator system is designed to operate at 5 times the Nyquist rate for a signal having a bandwidth equal to $3kHz$ bandwidth. Calculate the maximum amplitude of a $2kHz$ sinusoidal for which the delta modulator does not have slope overload. The given step size is $250mv$.",
+      "text": "Explain the aperture effect during flat-topped sampling. Illustrate, the DPCM scheme that overcomes the disadvantages of PCM. A delta modulator system is designed to operate at 5 times the Nyquist rate for a signal having a bandwidth equal to $3kHz$ bandwidth. Calculate the maximum amplitude of a $2kHz$ sinusoidal for which the delta modulator does not have slope overload. The given step size is $250mv$.",
+      "chapter": "Pulse Modulation",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2078 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-17",
+      "question": "A (6, 3) error control code has the following parity check matrix.\n$$H = \\begin{bmatrix} 1 & 0 & 1 & 1 & 0 & 0 \\\\ 1 & 1 & 0 & 0 & 1 & 0 \\\\ 0 & 1 & 1 & 0 & 0 & 1 \\end{bmatrix}$$\na) Determine the generator matrix G\n\nb) Generate a codeword for message 110\n\nc) Check whether the received code word 110111 as has error or not.",
+      "text": "A (6, 3) error control code has the following parity check matrix.\n$$H = \\begin{bmatrix} 1 & 0 & 1 & 1 & 0 & 0 \\\\ 1 & 1 & 0 & 0 & 1 & 0 \\\\ 0 & 1 & 1 & 0 & 0 & 1 \\end{bmatrix}$$\na) Determine the generator matrix G\n\nb) Generate a codeword for message 110\n\nc) Check whether the received code word 110111 as has error or not.",
+      "chapter": "Error Detection and Correction Coding",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2081 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-18",
+      "question": "a) Why SSB modulation scheme is preferred over DSB, DSB-SC modulation schemes? The total content of an AM signal is $1000w$, Determine the power being transmitted if carrier frequency and at each sideband when modulation percentage is $100\\%$. [2+3]\n\nb) Explain QAM modulation and demodulation with its required diagram.",
+      "text": "a) Why SSB modulation scheme is preferred over DSB, DSB-SC modulation schemes? The total content of an AM signal is $1000w$, Determine the power being transmitted if carrier frequency and at each sideband when modulation percentage is $100\\%$. [2+3]\n\nb) Explain QAM modulation and demodulation with its required diagram.",
+      "chapter": "Amplitude Modulation",
+      "marks": "5",
+      "frequency": 1,
+      "years": [
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2078 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-19",
+      "question": "Write short notes/solutions on: (Any Three) [3x5]\n\na) Constellation diagram of a 32-QAM\n\nb) Impulse response of a matched filter for an AWGN channel\n\nc) A (7,4) polynomial cyclic Hamming code given by $g(x) = 1 + x + x^3$\n\nd) Single bit error correction using Viterbi decoder\n\ne) Packet switching vs message switching",
+      "text": "Write short notes/solutions on: (Any Three) [3x5]\n\na) Constellation diagram of a 32-QAM\n\nb) Impulse response of a matched filter for an AWGN channel\n\nc) A (7,4) polynomial cyclic Hamming code given by $g(x) = 1 + x + x^3$\n\nd) Single bit error correction using Viterbi decoder\n\ne) Packet switching vs message switching",
+      "chapter": "General",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2082 Kartik"
+      ],
+      "examSessions": [
+        "2082 Kartik"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-20",
+      "question": "a) Derive the expression of double-tone AM, and define BW and modulation indices. [5]\n\nb) For the given modulated signal draw line spectrums.\n$s(t)=50\\cos(2\\pi 10^6t+60^\\circ) - 15\\cos(2\\pi 10^6t - 60^\\circ) + 20\\sin(4\\pi 10^4t - 190^\\circ) + \\sin(2\\pi 10^4t+190^\\circ)$.",
+      "text": "a) Derive the expression of double-tone AM, and define BW and modulation indices. [5]\n\nb) For the given modulated signal draw line spectrums.\n$s(t)=50\\cos(2\\pi 10^6t+60^\\circ) - 15\\cos(2\\pi 10^6t - 60^\\circ) + 20\\sin(4\\pi 10^4t - 190^\\circ) + \\sin(2\\pi 10^4t+190^\\circ)$.",
+      "chapter": "Amplitude Modulation",
+      "marks": "3",
+      "frequency": 1,
+      "years": [
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2080 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-21",
+      "question": "Derive the expression of a double-tone AM and draw its line spectrums. Consider a sinusoidal signal $m(t) = A \\cos \\omega_m t$ applied to a delta modulator with step size $\\Delta$. Show that the slope overload distortion will occur if $A > \\frac{\\Delta}{\\omega_m T_s}$.",
+      "text": "Derive the expression of a double-tone AM and draw its line spectrums. Consider a sinusoidal signal $m(t) = A \\cos \\omega_m t$ applied to a delta modulator with step size $\\Delta$. Show that the slope overload distortion will occur if $A > \\frac{\\Delta}{\\omega_m T_s}$.",
+      "chapter": "Pulse Modulation",
+      "marks": "5",
+      "frequency": 1,
+      "years": [
+        "2082 Kartik"
+      ],
+      "examSessions": [
+        "2082 Kartik"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-22",
+      "question": "Write short notes on: (Any Three) [3x5]\n\na) Hilbert transform\n\nb) T1 and E1 hierarchy used in telephony\n\nc) Pre-Emphasis and De-Emphasis\n\nd) Trellis diagram of a message 1010 using a ½ rate 3-state memory block convolutional encoder\n\ne) FDM vs TDM",
+      "text": "Write short notes on: (Any Three) [3x5]\n\na) Hilbert transform\n\nb) T1 and E1 hierarchy used in telephony\n\nc) Pre-Emphasis and De-Emphasis\n\nd) Trellis diagram of a message 1010 using a ½ rate 3-state memory block convolutional encoder\n\ne) FDM vs TDM",
+      "chapter": "General",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2081 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-23",
+      "question": "Check whether the received code word $110111$ as has error or not. Encode \"Rain Rain Go To Spain\" using Shannon-Fano encoder and calculate the transmission efficiency. Find the codeword if the message is received as \"Rain Rain Go Go Spain\".",
+      "text": "Check whether the received code word $110111$ as has error or not. Encode \"Rain Rain Go To Spain\" using Shannon-Fano encoder and calculate the transmission efficiency. Find the codeword if the message is received as \"Rain Rain Go Go Spain\".",
       "chapter": "Baseband Digital Data Transmission",
-      "text": "Explain the working of Delta Modulation (DM) system. Describe the causes and waveforms of Slope Overload Distortion and Granular Noise. How does Adaptive Delta Modulation (ADM) overcome these limitations?",
-      "marks": "8",
+      "marks": "7",
+      "frequency": 1,
       "years": [
-        "2082 Kartik",
-        "2079 Chaitra",
-        "2077 Magh",
-        "2073 Chaitra"
+        "2082 Kartik"
       ],
-      "frequency": 4,
-      "frequencyTier": "Very High",
-      "solutionOutline": "DM transmits 1-bit per sample indicating whether signal increased (+Delta) or decreased (-Delta). Slope overload occurs when slope of input signal exceeds max tracking rate: |dm/dt| > Delta / T_s. Granular noise occurs when signal varies slowly compared to step size Delta. ADM dynamically increases step size during steep slopes and decreases step size during flat signal regions."
+      "examSessions": [
+        "2082 Kartik"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Baseband Digital Data Transmission",
-      "text": "What is an Eye Pattern (Eye Diagram)? Explain how an eye pattern is generated on an oscilloscope and how it is used to measure ISI, optimum sampling instant, timing jitter, sensitivity to timing error, and noise margin in digital communication systems.",
-      "marks": "6",
+      "id": "communication-systems-24",
+      "question": "A modulated signal is given by $s(t) = 40 \\cos (100.1 \\times 10^6 \\times 2\\pi t + 10 \\sin (15 \\times 10^3 \\times 2\\pi t))$. Determine (i) practical bandwidth (ii) frequency sensitivity (iii) frequency deviation and (iv) modulation index.",
+      "text": "A modulated signal is given by $s(t) = 40 \\cos (100.1 \\times 10^6 \\times 2\\pi t + 10 \\sin (15 \\times 10^3 \\times 2\\pi t))$. Determine (i) practical bandwidth (ii) frequency sensitivity (iii) frequency deviation and (iv) modulation index.",
+      "chapter": "Angle Modulation",
+      "marks": "8",
+      "frequency": 1,
       "years": [
-        "2081 Chaitra",
-        "2080 Chaitra",
-        "2078 Kartik",
-        "2075 Chaitra"
+        "2079 Ashwin"
       ],
-      "frequency": 4,
-      "frequencyTier": "Very High",
-      "solutionOutline": "Display formed by superimposing successive symbol waveforms synchronized to symbol clock rate on an oscilloscope. Eye opening height indicates noise margin against error. Optimum sampling instant is point of maximum eye opening. Eye width indicates time interval over which sampling can occur without error. Slope of eye edge measures sensitivity to timing jitter."
+      "examSessions": [
+        "2079 Ashwin"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-25",
+      "question": "Determine the encoded sequence for the following input message\n$(m_0, m_1, m_2, m_3, m_4) = (1\\ 0\\ 0\\ 1\\ 1)$ using convolutional encoder having shift registers with three flip flops. Draw state and trellis diagrams.",
+      "text": "Determine the encoded sequence for the following input message\n$(m_0, m_1, m_2, m_3, m_4) = (1\\ 0\\ 0\\ 1\\ 1)$ using convolutional encoder having shift registers with three flip flops. Draw state and trellis diagrams.",
+      "chapter": "Error Detection and Correction Coding",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2080 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-26",
+      "question": "Consider that the bit sequence 10000000001101 is to be transmitted. Draw the resulting waveform if the sequence is transmitted using Polar RZ, Differential Manchester, HDB3 and B8ZS, and compare their bandwidths.",
+      "text": "Consider that the bit sequence 10000000001101 is to be transmitted. Draw the resulting waveform if the sequence is transmitted using Polar RZ, Differential Manchester, HDB3 and B8ZS, and compare their bandwidths.",
+      "chapter": "Baseband Digital Data Transmission",
+      "marks": "10",
+      "frequency": 1,
+      "years": [
+        "2081 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra"
+      ],
+      "isDiagram": true
+    },
+    {
+      "id": "communication-systems-27",
+      "question": "Write short notes on: (Any Three) [3×4]\n\na) Hilbert transform and its properties\n\nb) Delta modulation\n\nc) T1 vs E1 hierarchy\n\nd) Band limited white noise vs thermal noise\n\ne) Multiplexing vs multiple access",
+      "text": "Write short notes on: (Any Three) [3×4]\n\na) Hilbert transform and its properties\n\nb) Delta modulation\n\nc) T1 vs E1 hierarchy\n\nd) Band limited white noise vs thermal noise\n\ne) Multiplexing vs multiple access",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2081 Ashwin"
+      ],
+      "examSessions": [
+        "2081 Ashwin"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-28",
+      "question": "Describe the functional digital communication system working in a half-duplex mode and contrast it with an analog communication system. Mention all the communication impairments and performance parameters.",
+      "text": "Describe the functional digital communication system working in a half-duplex mode and contrast it with an analog communication system. Mention all the communication impairments and performance parameters.",
+      "chapter": "General",
+      "marks": "5",
+      "frequency": 1,
+      "years": [
+        "2082 Kartik"
+      ],
+      "examSessions": [
+        "2082 Kartik"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-29",
+      "question": "Differentiate error-detection and error-correction. Design a convolutional encoder having code-rate of $1/2$. Also, draw the code-tree and trellis diagram for the same assuming any three-bit input.",
+      "text": "Differentiate error-detection and error-correction. Design a convolutional encoder having code-rate of $1/2$. Also, draw the code-tree and trellis diagram for the same assuming any three-bit input.",
+      "chapter": "Error Detection and Correction Coding",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2079 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-30",
+      "question": "Calculate the percentage of power saved in: (i) DSB-SC (ii) SSB-SC as compared to standard AM if the modulation depth is 60%. Describe QAM modulation and prepare constallation diagram of 16-QAM.",
+      "text": "Calculate the percentage of power saved in: (i) DSB-SC (ii) SSB-SC as compared to standard AM if the modulation depth is 60%. Describe QAM modulation and prepare constallation diagram of 16-QAM.",
+      "chapter": "Amplitude Modulation",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2080 Ashwin"
+      ],
+      "examSessions": [
+        "2080 Ashwin"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-31",
+      "question": "Sketch and describe the functional digital communication system working in a duplex mode and contrast it with an analog communication system. Mention its impairments and performance parameters.",
+      "text": "Sketch and describe the functional digital communication system working in a duplex mode and contrast it with an analog communication system. Mention its impairments and performance parameters.",
+      "chapter": "General",
+      "marks": "5",
+      "frequency": 1,
+      "years": [
+        "2081 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-32",
+      "question": "a) Draw the timing diagram of Unipolar RZ, Polar NRZ, AMI and B8ZS for a binary sequence of $101100001000000000$. [6]\n\nb) Discuss the limitations of Shannon Hartley Channel capacity theorem.",
+      "text": "a) Draw the timing diagram of Unipolar RZ, Polar NRZ, AMI and B8ZS for a binary sequence of $101100001000000000$. [6]\n\nb) Discuss the limitations of Shannon Hartley Channel capacity theorem.",
+      "chapter": "Baseband Digital Data Transmission",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2082 Kartik"
+      ],
+      "examSessions": [
+        "2082 Kartik"
+      ],
+      "isDiagram": true
+    },
+    {
+      "id": "communication-systems-33",
+      "question": "What are the reasons for modulation? Write the advantages of digital communication over analog communication. Sketch a generic block diagram of a digital communication for full-duplex mode.",
+      "text": "What are the reasons for modulation? Write the advantages of digital communication over analog communication. Sketch a generic block diagram of a digital communication for full-duplex mode.",
+      "chapter": "Introduction",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2079 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-34",
+      "question": "Compare Pulse Code Modulation (PCM), Differential Pulse Code Modulation (DPCM) and Delta Modulation. Find the Signal to Quantization Noise ratio (SQNR) of Pulse Code Modulation (PCM).",
+      "text": "Compare Pulse Code Modulation (PCM), Differential Pulse Code Modulation (DPCM) and Delta Modulation. Find the Signal to Quantization Noise ratio (SQNR) of Pulse Code Modulation (PCM).",
+      "chapter": "Pulse Modulation",
+      "marks": "3",
+      "frequency": 1,
+      "years": [
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2079 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-35",
+      "question": "Encode \"Engineer Ko Betha Arulai Ke Thaha\" using Huffman Encoder and calculate the transmission efficiency. Find the codeword if the message is received as \"Engineer Ko Betha Ke Ke\".",
+      "text": "Encode \"Engineer Ko Betha Arulai Ke Thaha\" using Huffman Encoder and calculate the transmission efficiency. Find the codeword if the message is received as \"Engineer Ko Betha Ke Ke\".",
+      "chapter": "Baseband Digital Data Transmission",
+      "marks": "7",
+      "frequency": 1,
+      "years": [
+        "2081 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-36",
+      "question": "Define the power spectral density function and express its relation with the autocorrelation function. Check whether $y(t) = \\log\\{x(t)\\}$ is a linear or non-linear system.",
+      "text": "Define the power spectral density function and express its relation with the autocorrelation function. Check whether $y(t) = \\log\\{x(t)\\}$ is a linear or non-linear system.",
+      "chapter": "Introduction",
+      "marks": "5",
+      "frequency": 1,
+      "years": [
+        "2082 Kartik"
+      ],
+      "examSessions": [
+        "2082 Kartik"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-37",
+      "question": "State and explain Shannon-Hartley channel capacity theorem with its implications. Represent 100111010 using Unipolar RZ, Bipolar NRZ, Manchester and AMI encoding technique.",
+      "text": "State and explain Shannon-Hartley channel capacity theorem with its implications. Represent 100111010 using Unipolar RZ, Bipolar NRZ, Manchester and AMI encoding technique.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2080 Ashwin"
+      ],
+      "examSessions": [
+        "2080 Ashwin"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-38",
+      "question": "a) Explain BSPSK modulation technique with its relevant diagram and signal space diagram. [5]\n\nb) Differentiate between FDMA and TDMA. Draw T1 and E1 telephone hierarchy.",
+      "text": "a) Explain BSPSK modulation technique with its relevant diagram and signal space diagram. [5]\n\nb) Differentiate between FDMA and TDMA. Draw T1 and E1 telephone hierarchy.",
+      "chapter": "Multiplexing Techniques",
+      "marks": "3",
+      "frequency": 1,
+      "years": [
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2078 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-39",
+      "question": "a) Represent the given binary sequence 110011000001 in unipolar RZ, Manchester and HDB3 encoders. [6]\n\nb) Explain the modulation scheme for MSK with appropriate example.",
+      "text": "a) Represent the given binary sequence 110011000001 in unipolar RZ, Manchester and HDB3 encoders. [6]\n\nb) Explain the modulation scheme for MSK with appropriate example.",
+      "chapter": "Baseband Digital Data Transmission",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2080 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "communication-systems-40",
+      "question": "With a suitable example explain Shannon-Hartley channel capacity theorem. Determine whether the given signal $x(t) = e^{-2t}u(t)$ is a power or an energy signal.",
+      "text": "With a suitable example explain Shannon-Hartley channel capacity theorem. Determine whether the given signal $x(t) = e^{-2t}u(t)$ is a power or an energy signal.",
+      "chapter": "Baseband Digital Data Transmission",
+      "marks": "3",
+      "frequency": 1,
+      "years": [
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2080 Chaitra"
+      ],
+      "isDiagram": false
     }
   ],
-  "chapters": [
-    "Introduction",
-    "Amplitude Modulation",
-    "Angle Modulation",
-    "Pulse Modulation",
-    "Multiplexing Techniques",
-    "Baseband Digital Data Transmission",
-    "Digital Modulation Techniques",
-    "Error Detection and Correction Coding",
-    "Noise in Communication Systems"
+  "yearWisePapers": [
+    {
+      "session": "2082 Kartik",
+      "year": "2082",
+      "month": "Kartik",
+      "examType": "Back",
+      "totalMarks": 40,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define the power spectral density function and express its relation with the autocorrelation function. Check whether $y(t) = \\log\\{x(t)\\}$ is a linear or non-linear system.",
+          "marks": "5",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Taking examples of any two signals, derive auto-correlation, cross-correlation and convolution graphically.",
+          "marks": "3",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive the expression of a double-tone AM and draw its line spectrums. Consider a sinusoidal signal $m(t) = A \\cos \\omega_m t$ applied to a delta modulator with step size $\\Delta$. Show that the slope overload distortion will occur if $A > \\frac{\\Delta}{\\omega_m T_s}$.",
+          "marks": "5",
+          "chapter": "Pulse Modulation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Draw the timing diagram of Unipolar RZ, Polar NRZ, AMI and B8ZS for a binary sequence of $101100001000000000$. [6]\n\nb) Discuss the limitations of Shannon Hartley Channel capacity theorem.",
+          "marks": "2",
+          "chapter": "Baseband Digital Data Transmission",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "Check whether the received code word $110111$ as has error or not. Encode \"Rain Rain Go To Spain\" using Shannon-Fano encoder and calculate the transmission efficiency. Find the codeword if the message is received as \"Rain Rain Go Go Spain\".",
+          "marks": "7",
+          "chapter": "Baseband Digital Data Transmission",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "With suitable examples, introduce how CRC-3 and LBC work to correct a single bit error.",
+          "marks": "5",
+          "chapter": "Error Detection and Correction Coding",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Describe the functional digital communication system working in a half-duplex mode and contrast it with an analog communication system. Mention all the communication impairments and performance parameters.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Write short notes/solutions on: (Any Three) [3x5]\n\na) Constellation diagram of a 32-QAM\n\nb) Impulse response of a matched filter for an AWGN channel\n\nc) A (7,4) polynomial cyclic Hamming code given by $g(x) = 1 + x + x^3$\n\nd) Single bit error correction using Viterbi decoder\n\ne) Packet switching vs message switching",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Chaitra",
+      "year": "2082",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 94,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Sketch a proper generic block diagram of a voice communication system between an onboard pilot and an air traffic controller, and briefly explain the needs and functioning of each building block of that system. [5]\n\nb) Define any ten performance parameters/impairments of digital communication system.",
+          "marks": "5",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Determine whether the signal $y (t) = 2x (2t) + 3x (t-3) + 4$ is time invariant or not. [6]\n(b) Consider any two signals and convolve them graphically.",
+          "marks": "6",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive the time domain and frequency domain expressions of DSB-FC wave of a double-tone (single message-two carriers) AM, and draw their line spectrums.",
+          "marks": "8",
+          "chapter": "Amplitude Modulation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Write short notes on: (Any Three) [3×5]\n\na) T1 and E1 Hierarchy used in telephony\n\nb) FDM vs TDM\n\nc) Trellis diagram with example\n\nd) PSD of white noise\n\ne) Hilbert transform",
+          "marks": "8",
+          "chapter": "Multiplexing Techniques",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "By assuming suitable bit streams, demonstrate how HDB3 and B8ZS line encoders work.",
+          "marks": "6",
+          "chapter": "Baseband Digital Data Transmission",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Encode \"$E = \\int\\limits_{-\\infty}^{+\\infty} |x(t)|^2 dt$\" using weighted Huffman encoder and calculate entropy.",
+          "marks": "9",
+          "chapter": "Baseband Digital Data Transmission",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Generate a hamming code for 10101100 using even parities, and demonstrate how it corrects a single bit error.",
+          "marks": "7",
+          "chapter": "Error Detection and Correction Coding",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Derive the expression for the impulse response of a matched filter for $a^n$ AWGN channel.",
+          "marks": "6",
+          "chapter": "Noise in Communication Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain the modulation scheme of MSK with appropriate example.",
+          "marks": "7",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Write short notes on: Hilbert transform",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Define any ten performance parameters/impairments of digital communication system.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Write short notes on: T1 and E1 Hierarchy used in telephony",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Write short notes on: FDM vs TDM",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Chaitra",
+      "year": "2081",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 94,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Sketch a proper generic block diagram of a voice communication system between an onboard pilot and an air traffic controller, and briefly explain the needs and functioning of each building block of that system. [5]\n\nb) Define any ten performance parameters/impairments of digital communication system.",
+          "marks": "5",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Determine whether the following signals are:\n(a) $y(t) = 2t^2x(t) + 3t x(t - 4)$ linear or not\n(b) $y(t) = x^2(t) + x(t + 2)$ causal or not",
+          "marks": "4",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Write short notes on: (Any Three) [3×5]\n\na) T1 and E1 Hierarchy used in telephony\n\nb) FDM vs TDM\n\nc) Trellis diagram with example\n\nd) PSD of white noise\n\ne) Hilbert transform",
+          "marks": "8",
+          "chapter": "Multiplexing Techniques",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Consider that the bit sequence 10000000001101 is to be transmitted. Draw the resulting waveform if the sequence is transmitted using Polar RZ, Differential Manchester, HDB3 and B8ZS, and compare their bandwidths.",
+          "marks": "10",
+          "chapter": "Baseband Digital Data Transmission",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "Encode \"Engineer Ko Betha Arulai Ke Thaha\" using Huffman Encoder and calculate the transmission efficiency. Find the codeword if the message is received as \"Engineer Ko Betha Ke Ke\".",
+          "marks": "7",
+          "chapter": "Baseband Digital Data Transmission",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Derive the expression for figure of merit for the SSB receiver. Define an efficient constellation diagram of a 32-QAM.",
+          "marks": "5",
+          "chapter": "Digital Modulation Techniques",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "A (6, 3) error control code has the following parity check matrix.\n$$H = \\begin{bmatrix} 1 & 0 & 1 & 1 & 0 & 0 \\\\ 1 & 1 & 0 & 0 & 1 & 0 \\\\ 0 & 1 & 1 & 0 & 0 & 1 \\end{bmatrix}$$\na) Determine the generator matrix G\n\nb) Generate a codeword for message 110\n\nc) Check whether the received code word 110111 as has error or not.",
+          "marks": "2",
+          "chapter": "Error Detection and Correction Coding",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Write short notes on: Hilbert transform",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Define any ten performance parameters/impairments of digital communication system.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Why do we need pre-emphasis and de-emphasis circuits in FM? Explain.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Write short notes on: T1 and E1 Hierarchy used in telephony",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Write short notes on: FDM vs TDM",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Sketch and describe the functional digital communication system working in a duplex mode and contrast it with an analog communication system. Mention its impairments and performance parameters.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Write short notes on: (Any Three) [3x5]\n\na) Hilbert transform\n\nb) T1 and E1 hierarchy used in telephony\n\nc) Pre-Emphasis and De-Emphasis\n\nd) Trellis diagram of a message 1010 using a ½ rate 3-state memory block convolutional encoder\n\ne) FDM vs TDM",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Ashwin",
+      "year": "2081",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 56,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define BW, SNR, SQNR, BER, ISI parameters.",
+          "marks": "5",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "With the help of neat circuit diagram, explain the operation of the square law detector.",
+          "marks": "6",
+          "chapter": "Amplitude Modulation",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "With the help of necessary mathematical expressions of Bandwidth and Modulation Index, differentiate between AM and FM.",
+          "marks": "6",
+          "chapter": "Angle Modulation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Encode 100100000111 using Unipolar RZ, AMI and HDB3 coding schemes.",
+          "marks": "6",
+          "chapter": "Baseband Digital Data Transmission",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Encode 'Phoola Ko Thunga Bahera Gayo Ganga Ko Panima' using Shannon-Fano coding technique and calculate the transmission efficiency.",
+          "marks": "6",
+          "chapter": "Baseband Digital Data Transmission",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "With a suitable example of input bit stream show State Diagram, Code Tree and Trellis Diagram. Demonstrate how a convolutional code corrects a single error.",
+          "marks": "6",
+          "chapter": "Error Detection and Correction Coding",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Write short notes on: (Any Three) [3×4]\n\na) Hilbert transform and its properties\n\nb) Delta modulation\n\nc) T1 vs E1 hierarchy\n\nd) Band limited white noise vs thermal noise\n\ne) Multiplexing vs multiple access",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "\n(a) Prepare a constellation diagram of 32-QAM. [4]\n(b) Illustrate MSK signal for a message of 1011010.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "With suitable assumption for a code word of C(7,4), demonstrate how Hamming Code detects $a^n$ error.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Chaitra",
+      "year": "2080",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 59,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Determine whether the following signals are\n(a) $y(t) = x^2(t)$ linear or not.\n(b) $y(t) = y(t-4) + x(t-4)$ time invariant or not",
+          "marks": "3",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Derive the expression of double-tone AM, and define BW and modulation indices. [5]\n\nb) For the given modulated signal draw line spectrums.\n$s(t)=50\\cos(2\\pi 10^6t+60^\\circ) - 15\\cos(2\\pi 10^6t - 60^\\circ) + 20\\sin(4\\pi 10^4t - 190^\\circ) + \\sin(2\\pi 10^4t+190^\\circ)$.",
+          "marks": "3",
+          "chapter": "Amplitude Modulation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Explain the Armstrong's method for Frequency Modulation. [4]\n\nb) Why do we need pre-emphasis and de-emphasis circuits in FM? Explain.",
+          "marks": "4",
+          "chapter": "Angle Modulation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Explain the Delta and Adoptive Delta Modulations encoders and decoders with their derivations and diagram. List out their merits and demerits.",
+          "marks": "6",
+          "chapter": "Pulse Modulation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What is the significance of constellation diagram? Compare E1 and T1 TDM PCM hierarchy.",
+          "marks": "2",
+          "chapter": "Multiplexing Techniques",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "With a suitable example explain Shannon-Hartley channel capacity theorem. Determine whether the given signal $x(t) = e^{-2t}u(t)$ is a power or an energy signal.",
+          "marks": "3",
+          "chapter": "Baseband Digital Data Transmission",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Encode the message \"Mississippi is missing\" using weighted Huffman code and calculate transmission efficiency.",
+          "marks": "8",
+          "chapter": "Baseband Digital Data Transmission",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "a) Represent the given binary sequence 110011000001 in unipolar RZ, Manchester and HDB3 encoders. [6]\n\nb) Explain the modulation scheme for MSK with appropriate example.",
+          "marks": "4",
+          "chapter": "Baseband Digital Data Transmission",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Determine the encoded sequence for the following input message\n$(m_0, m_1, m_2, m_3, m_4) = (1\\ 0\\ 0\\ 1\\ 1)$ using convolutional encoder having shift registers with three flip flops. Draw state and trellis diagrams.",
+          "marks": "8",
+          "chapter": "Error Detection and Correction Coding",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Define optimum detector and find the impulse response of optimum detector in the presence of additive white noise. Briefly explain Hilbert Transform.",
+          "marks": "2",
+          "chapter": "Noise in Communication Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Write short notes on: Hilbert transform",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Why do we need pre-emphasis and de-emphasis circuits in FM? Explain.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Ashwin",
+      "year": "2080",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 38,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Draw the generic block diagram of Analog communication system for half- duplex mode. Explain the need and disadvantages of modulation.",
+          "marks": "3",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Calculate the percentage of power saved in: (i) DSB-SC (ii) SSB-SC as compared to standard AM if the modulation depth is 60%. Describe QAM modulation and prepare constallation diagram of 16-QAM.",
+          "marks": "2",
+          "chapter": "Amplitude Modulation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Why is non-uniform quantization required? Show that for a voice transmission, the basic data rate using PCM is 64 kbps.",
+          "marks": "3",
+          "chapter": "Pulse Modulation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Briefly explain filter and oscillator requirement in Frequency Division Multiplexing (FDM). Compare packet switching and message switching.",
+          "marks": "3",
+          "chapter": "Multiplexing Techniques",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain the aim of line coding. Encode \"Ma Mare Pani Mero Desh Bachi Rahos\" using Shannon-Fano codes and calculate its efficiency.",
+          "marks": "10",
+          "chapter": "Baseband Digital Data Transmission",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define energy and power signals with example. Write the properties of LTI system.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "State and explain Shannon-Hartley channel capacity theorem with its implications. Represent 100111010 using Unipolar RZ, Bipolar NRZ, Manchester and AMI encoding technique.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain Pre-emphasis and De-emphasis.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Construct a (7, 4) binary CRC using a generator polynomial $g(x) = x^3 + x^2 + 1$ with data Vector (1011). Demonstrate how CRC-4 detects two burst errors.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Chaitra",
+      "year": "2079",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 44,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What are the reasons for modulation? Write the advantages of digital communication over analog communication. Sketch a generic block diagram of a digital communication for full-duplex mode.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Represent Unit step signal in terms of Signum function. Also, determine whether a Unit step signal is energy or power type or neither of the two.",
+          "marks": "4",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive the expression for double tone Am. How DSB is different from SSB signal?",
+          "marks": "6",
+          "chapter": "Amplitude Modulation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Compare Pulse Code Modulation (PCM), Differential Pulse Code Modulation (DPCM) and Delta Modulation. Find the Signal to Quantization Noise ratio (SQNR) of Pulse Code Modulation (PCM).",
+          "marks": "3",
+          "chapter": "Pulse Modulation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Compare TDM and FDM. Show that for voice application. Compare E1 and T1 hierarchies.",
+          "marks": "3",
+          "chapter": "Multiplexing Techniques",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Given the binary sequence 1101010111 represent in Unipolar RZ, Bipolar NRZ, Polar NRZ and Manchester encoders. Explain communication impairments with examples.",
+          "marks": "4",
+          "chapter": "Baseband Digital Data Transmission",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is the aim of source coding? Encode \"Kun Mandir Ma Janchhau Yatri\" using Huffman codes and finds its efficiency.",
+          "marks": "10",
+          "chapter": "Baseband Digital Data Transmission",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Differentiate error-detection and error-correction. Design a convolutional encoder having code-rate of $1/2$. Also, draw the code-tree and trellis diagram for the same assuming any three-bit input.",
+          "marks": "2",
+          "chapter": "Error Detection and Correction Coding",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What do you mean by optimum detector? Show that the impulse response of the matched filter is reverse delayed version of the input signal.",
+          "marks": "2",
+          "chapter": "Noise in Communication Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Write short notes on: FDM vs TDM",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Ashwin",
+      "year": "2079",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 42,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What is distortionless transmission? Differentiate energy and power signal. Describe the impulse response of LPF.",
+          "marks": "4",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What is communication system? Explain the importance of transducers, modulators and channel in Analog communication system with neat and clean diagram.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "What is conventional amplitude modulation? Explain the ring modulator for the generation of double side band amplitude modulation with neat and clear diagram.",
+          "marks": "2",
+          "chapter": "Amplitude Modulation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Calculate the power saving for double side band AM signal and single side band AM signal for percentage modulation of $60\\%$.",
+          "marks": "6",
+          "chapter": "Amplitude Modulation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What is superheterodyne AM receiver? Explain the coherent detection and phase error effect of DSB AM.",
+          "marks": "2",
+          "chapter": "Amplitude Modulation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What is PLL? Explain the generation of Narrow Band FM using Armstrong method. Why amplitude limiter is used in limiter discriminator method?",
+          "marks": "2",
+          "chapter": "Angle Modulation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Differentiate NBFM and WBFM? Explain the functioning of stereo encoder and decoder in commercial FM with clear diagram.",
+          "marks": "3",
+          "chapter": "Angle Modulation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "A modulated signal is given by $s(t) = 40 \\cos (100.1 \\times 10^6 \\times 2\\pi t + 10 \\sin (15 \\times 10^3 \\times 2\\pi t))$. Determine (i) practical bandwidth (ii) frequency sensitivity (iii) frequency deviation and (iv) modulation index.",
+          "marks": "8",
+          "chapter": "Angle Modulation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Write short notes on: [2x4]\n(a) ASK, PSK and FSK\n(b) Properties of Bessel function",
+          "marks": "8",
+          "chapter": "Digital Modulation Techniques",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What is autocorrelation and cross correlation of a signal? Explain and derive power spectrum density function of a signal.",
+          "marks": "2",
+          "chapter": "Noise in Communication Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Explain the FDM telephone hierarchy. Describe the filter and oscillator requirement in FDM.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Chaitra",
+      "year": "2078",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 45,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Differentiate among noise, interference and distortion.",
+          "marks": "5",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Describe Hilbert Transformation and its properties. Compute the energy and power of unit step signal.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Why SSB modulation scheme is preferred over DSB, DSB-SC modulation schemes? The total content of an AM signal is $1000w$, Determine the power being transmitted if carrier frequency and at each sideband when modulation percentage is $100\\%$. [2+3]\n\nb) Explain QAM modulation and demodulation with its required diagram.",
+          "marks": "5",
+          "chapter": "Amplitude Modulation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What is the relation between psdf and Autocorrelation function? Explain the Stereo FM encoder and decoder with spectral diagram.",
+          "marks": "3",
+          "chapter": "Angle Modulation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain the aperture effect during flat-topped sampling. Illustrate, the DPCM scheme that overcomes the disadvantages of PCM. A delta modulator system is designed to operate at 5 times the Nyquist rate for a signal having a bandwidth equal to $3kHz$ bandwidth. Calculate the maximum amplitude of a $2kHz$ sinusoidal for which the delta modulator does not have slope overload. The given step size is $250mv$.",
+          "marks": "2",
+          "chapter": "Pulse Modulation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) Explain BSPSK modulation technique with its relevant diagram and signal space diagram. [5]\n\nb) Differentiate between FDMA and TDMA. Draw T1 and E1 telephone hierarchy.",
+          "marks": "3",
+          "chapter": "Multiplexing Techniques",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Represent $100111010$ using following encoders.\n(a) Polar RZ b) Bipolar NRZ c) AMI d) Manchester",
+          "marks": "2",
+          "chapter": "Baseband Digital Data Transmission",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What are the significances of multilevel modulation? Explain QPSK with its transformation as well as a receiver block diagram.",
+          "marks": "2",
+          "chapter": "Digital Modulation Techniques",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Why convolution coder is better than block coder? Determine systematic and non-systematic code vector for a $(7,4)$ cyclic hamming code for message vector $\\{1011\\}$ with generator matrix $g(x)=1+X+X^3$.",
+          "marks": "2",
+          "chapter": "Error Detection and Correction Coding",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "List out any three properties of autocorrelation(AC) function. Mention the autocorrelation function of white noise.",
+          "marks": "3",
+          "chapter": "Noise in Communication Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Write short notes on: Hilbert transform",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Determine systematic and non-systematic code vector for a $(7,4)$ cyclic hamming code for message vector $\\{1011\\}$ with generator matrix $g(x)=1+X+X^3$.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    }
   ]
 }

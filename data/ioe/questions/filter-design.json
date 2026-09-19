@@ -1,356 +1,3704 @@
 {
   "subject": "Filter Design",
-  "subjectCode": "ENEX 301",
+  "semester": "1",
   "questions": [
     {
-      "chapter": "Approximation Methods",
-      "text": "Derive an expression to calculate the order of a Butterworth low pass filter. Use this expression to calculate the order of Butterworth low pass filter with the following specifications: Maximum passband attenuation $\\alpha_{\\max} = 3\\text{ dB}$ at $1\\text{ kHz}$, Minimum stopband attenuation $\\alpha_{\\min} = 40\\text{ dB}$ at $2.5\\text{ kHz}$. Also determine the pole locations and transfer function.",
-      "marks": "9",
-      "years": [
-        "2083 Baishakh",
-        "2082 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Approximation Methods",
-      "text": "Derive an expression to calculate the required order for given low pass specifications using Chebyshev approximation. Using the derived expression, calculate the order of Chebyshev filter for following specifications: $\\alpha_{\\max} = 0.5\\text{ dB}$ (or $1\\text{ dB}$), $\\alpha_{\\min} = 15\\text{ dB}$ (or $18\\text{ dB}$), $\\omega_p = 1000\\text{ rad/s}$, $\\omega_s = 2000\\text{ rad/s}$ (or $1400\\text{ rad/s}$). Also determine pole locations and transfer function.",
-      "marks": "9",
-      "years": [
-        "2082 Bhadra",
-        "2082 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Design of Active Filters",
-      "text": "Draw the circuit diagram of Tow-Thomas low pass biquad circuit and derive its transfer function. Design a second order low pass filter using Tow-Thomas biquad with poles at $-450 \\pm j893.03$ and DC gain of $1.3$ (or $1.5$). Make sure the elements in the final circuit are of practically realizable values.",
-      "marks": "9",
-      "years": [
-        "2083 Baishakh",
-        "2082 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Design of Active Filters",
-      "text": "Draw a neat circuit diagram of Tow-Thomas band-pass biquad and derive its transfer function. Design a band-pass filter with specified center frequency and bandwidth.",
-      "marks": "5",
-      "years": [
-        "2082 Bhadra"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Frequency Transformation",
-      "text": "Compare and contrast between ideal and practical filters. Explain the significance of magnitude scaling and frequency scaling used in filter design, and derive the necessary formulae to modify component values from $\\omega_{\\text{old}}$ to $\\omega_{\\text{new}}$.",
-      "marks": "7",
-      "years": [
-        "2083 Baishakh",
-        "2082 Bhadra",
-        "2082 Chaitra"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Properties and Synthesis of Passive Networks",
-      "text": "Determine whether the following functions are valid RC driving point impedance/admittance functions or not. State with reason:\n(a) $Z(s) = \\frac{(s+3)(s+6)}{(s+1)(s+5)}$, (b) $Z(s) = \\frac{2(s+1)(s+3)}{(s+2)(s+4)}$. Pick the valid RC function and synthesize it with Foster-II and Cauer-I form.",
-      "marks": "8",
-      "years": [
-        "2083 Baishakh",
-        "2082 Bhadra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Properties and Synthesis of Passive Networks",
-      "text": "Which of the following is an LC lossless function and why? Pick one of the valid LC lossless functions and realize it using Foster-I and Cauer-I form:\n(a) $Z_1(s) = \\frac{s(s^2+4)(s^2+6)}{(s^2+3)(s^2+9)}$, (b) $Z_2(s) = \\frac{(s^2+3)(s^2+6)}{s(s^2+4)(s^2+9)}$.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Design of Resistively- Terminated Lossless Filters",
-      "text": "What information can be obtained from the reflection coefficient in filter design? Design a third-order Butterworth high pass filter using resistively terminated lossless ladder with equal termination of $1\\ \\Omega$ for both source and load.",
+      "id": "filter-design-1",
+      "question": "What is transmission coefficient? What information do you get from the transmission coefficient? Design a second order Butterworth low pass filter using lossless ladder with equal termination of $1\\Omega$ i.e. $R_1 = 1\\Omega$ and $R_2 = 1\\Omega$ (Refer Table 1)",
+      "text": "What is transmission coefficient? What information do you get from the transmission coefficient? Design a second order Butterworth low pass filter using lossless ladder with equal termination of $1\\Omega$ i.e. $R_1 = 1\\Omega$ and $R_2 = 1\\Omega$ (Refer Table 1)",
+      "chapter": "Design of Resistively-Terminated Lossless Filters",
       "marks": "6",
+      "frequency": 14,
       "years": [
-        "2083 Baishakh",
-        "2082 Bhadra"
+        "2069 Chaitra",
+        "2080 Bhadra",
+        "2079 Bhadra",
+        "2078 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2074 Chaitra",
+        "2073 Chaitra",
+        "2072 Chaitra"
       ],
-      "frequency": 2
+      "examSessions": [
+        "2069 Chaitra",
+        "2080 Bhadra",
+        "2079 Bhadra",
+        "2078 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2074 Chaitra",
+        "2073 Chaitra",
+        "2072 Chaitra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Design of Resistively- Terminated Lossless Filters",
-      "text": "Simulate the fourth order Butterworth low-pass filter in resistively terminated lossless ladder network using FDNR (Bruton Transformation) or leapfrog simulation. Accommodate half power frequency of $1000\\text{ rad/sec}$ (or $2000\\text{ rad/sec}$) with practically realizable components.",
-      "marks": "6",
-      "years": [
-        "2083 Baishakh",
-        "2082 Bhadra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Design of Active Filters",
-      "text": "Design a 5th order Butterworth LPF using cascade of 1st order active section and MFB biquads with DC gain equal to unity and half power frequency at $1\\text{ kHz}$. Make the largest capacitance $0.1\\ \\mu\\text{F}$.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Sensitivity",
-      "text": "Define sensitivity. Perform the sensitivity analysis for center frequency ($\\omega_0$) and quality factor ($Q$) of the Sallen-Key and Tow-Thomas low pass biquad with respect to all resistors and capacitors.",
-      "marks": "5",
-      "years": [
-        "2083 Baishakh",
-        "2082 Bhadra",
-        "2082 Chaitra"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Design of Active Filters",
-      "text": "What is Bruton Transformation? What is a Generalized Impedance Converter (GIC)? How can a GIC be used to simulate a grounded inductor and FDNR? Explain with circuit diagrams and derivations.",
-      "marks": "6",
-      "years": [
-        "2083 Baishakh",
-        "2082 Bhadra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Approximation Methods",
-      "text": "What is an all-pass filter and constant delay filter? State its importance in phase equalization. Find the transfer function of a third order Bessel-Thomson response having constant delay.",
-      "marks": "5",
-      "years": [
-        "2083 Baishakh",
-        "2082 Bhadra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Frequency Transformation",
-      "text": "Describe the frequency transformation from prototype low-pass filter to band-pass filter and high-pass filter with necessary mathematical derivations and examples.",
-      "marks": "4",
-      "years": [
-        "2083 Baishakh",
-        "2082 Bhadra",
-        "2082 Chaitra"
-      ],
-      "frequency": 3
-    },
-    {
+      "id": "filter-design-2",
+      "question": "Define reflection coefficient. Realize the third order Butterworth low pass filter using resistively terminated lossless ladder with $R_1 = 1\\ \\Omega$ and $R_2 = 4\\ \\Omega$. [Refer Table 2]",
+      "text": "Define reflection coefficient. Realize the third order Butterworth low pass filter using resistively terminated lossless ladder with $R_1 = 1\\ \\Omega$ and $R_2 = 4\\ \\Omega$. [Refer Table 2]",
       "chapter": "Other Filters",
-      "text": "What is the significance of using current-mode filters in electronic circuits? With basic block diagram and characteristic equations, explain first-generation current conveyor (CCI) and second-generation current conveyor (CCII).",
-      "marks": "4",
+      "marks": "8",
+      "frequency": 14,
       "years": [
-        "2082 Chaitra"
+        "2079 Bhadra",
+        "2080 Bhadra",
+        "2078 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2074 Chaitra",
+        "2073 Chaitra",
+        "2072 Chaitra",
+        "2069 Chaitra"
       ],
-      "frequency": 1
+      "examSessions": [
+        "2079 Bhadra",
+        "2080 Bhadra",
+        "2078 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2074 Chaitra",
+        "2073 Chaitra",
+        "2072 Chaitra",
+        "2069 Chaitra"
+      ],
+      "isDiagram": false
     },
     {
+      "id": "filter-design-3",
+      "question": "Define zeros of transmission in two port network.",
+      "text": "Define zeros of transmission in two port network.",
       "chapter": "Other Filters",
-      "text": "What are switched capacitor filters? Explain how an equivalent resistor is simulated using a switched capacitor ($R_{eq} = \\frac{1}{f_c C}$) and state their advantages in MOS VLSI fabrication.",
+      "marks": "8",
+      "frequency": 13,
+      "years": [
+        "2080 Bhadra",
+        "2079 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2074 Chaitra",
+        "2073 Chaitra",
+        "2072 Chaitra",
+        "2071 Chaitra",
+        "2070 Chaitra"
+      ],
+      "examSessions": [
+        "2080 Bhadra",
+        "2079 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2074 Chaitra",
+        "2073 Chaitra",
+        "2072 Chaitra",
+        "2071 Chaitra",
+        "2070 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-4",
+      "question": "Draw the circuit diagram of Tow-Thomas Biquad circuit and derive its transfer function.\nDesign a low pass filter using Tow Thomas Biquad circuit with poles at $-450 \\pm j 893.03$\nand dc gain of $1.5$. The final circuit should contain practically realizable values.",
+      "text": "Draw the circuit diagram of Tow-Thomas Biquad circuit and derive its transfer function.\nDesign a low pass filter using Tow Thomas Biquad circuit with poles at $-450 \\pm j 893.03$\nand dc gain of $1.5$. The final circuit should contain practically realizable values.",
+      "chapter": "Design of Active Filters",
       "marks": "6",
+      "frequency": 12,
       "years": [
-        "2083 Baishakh"
-      ],
-      "frequency": 1
-    },
-    {
-      "chapter": "Frequency Transformation",
-      "text": "Derive the Frequency Transformation formulas to map a normalized low-pass filter prototype ($s$) to High-Pass ($S = \\Omega_0/s$), Band-Pass ($S = \\frac{s^2 + \\omega_0^2}{B s}$), and Band-Stop filters.",
-      "marks": "8",
-      "years": [
-        "2083 Baishakh",
-        "2081 Chaitra",
-        "2078 Bhadra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Transforms normalized lowpass prototype into other filter responses. LP to HP: replace s with Omega_0/s (inverts passband and stopband). LP to BP: replace s with (s^2 + omega_0^2) / (B*s), mapping LP zero frequency to center frequency omega_0 and doubling filter order. LP to BS: replace s with B*s / (s^2 + omega_0^2), inverting bandpass response."
-    },
-    {
-      "chapter": "Properties and Synthesis of Passive Networks",
-      "text": "State the necessary and sufficient properties of Positive Real (PR) functions. Test whether $F(s) = \\frac{s^2 + 2s + 6}{s^2 + 3s + 2}$ is a positive real function.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "PR conditions: 1) F(s) real for real s; 2) Re[F(s)] >= 0 for Re[s] >= 0; 3) Poles and zeros in left-half s-plane or simple on j-omega axis with positive real residues. Test F(s): poles at s = -1, -2 (Hurwitz). Evaluate Re[F(j omega)] = (omega^4 - 2 omega^2 + 12) / ((2 - omega^2)^2 + 9 omega^2) >= 0 for all omega since discriminant of numerator is negative (no real roots). Hence F(s) is PR."
-    },
-    {
-      "chapter": "Properties and Synthesis of Passive Networks",
-      "text": "Synthesize Foster-I and Foster-II realization networks for a driving-point LC impedance function $Z(s) = \\frac{10(s^2 + 4)(s^2 + 16)}{s(s^2 + 9)}$.",
-      "marks": "8",
-      "years": [
+        "2080 Bhadra",
         "2082 Chaitra",
-        "2080 Ashwin",
-        "2078 Kartik"
+        "2079 Bhadra",
+        "2071 Chaitra",
+        "2070 Chaitra",
+        "2069 Chaitra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "LC impedance: alternating poles and zeros on j-omega axis. Foster-I: partial fraction expansion of Z(s) yields series combination of pole terms: Z(s) = k_0/s + 2*k_1*s/(s^2 + 9) + k_infty*s, realizing series capacitor, parallel LC tanks, and series inductor. Foster-II: partial fraction expansion of Y(s) = 1/Z(s) gives parallel branches of series LC tanks."
+      "examSessions": [
+        "2080 Bhadra",
+        "2082 Chaitra",
+        "2079 Bhadra",
+        "2071 Chaitra",
+        "2070 Chaitra",
+        "2069 Chaitra"
+      ],
+      "isDiagram": true
     },
     {
-      "chapter": "Properties and Synthesis of Passive Networks",
-      "text": "Synthesize Cauer-I and Cauer-II ladder networks for a driving-point RC impedance function $Z(s) = \\frac{(s + 1)(s + 3)}{s(s + 2)}$.",
+      "id": "filter-design-5",
+      "question": "Design a low pass filter using Tow Thomas Biquad circuit with poles at $-450 \\pm j 893.03$\nand dc gain of $1.5$. The final circuit should contain practically realizable values.",
+      "text": "Design a low pass filter using Tow Thomas Biquad circuit with poles at $-450 \\pm j 893.03$\nand dc gain of $1.5$. The final circuit should contain practically realizable values.",
+      "chapter": "Other Filters",
       "marks": "8",
+      "frequency": 12,
       "years": [
-        "2083 Baishakh",
-        "2081 Ashwin",
-        "2079 Chaitra"
+        "2080 Bhadra",
+        "2082 Chaitra",
+        "2079 Bhadra",
+        "2071 Chaitra",
+        "2070 Chaitra",
+        "2069 Chaitra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "RC impedance: poles and zeros interlace on negative real axis, lowest critical frequency is pole at origin. Cauer-I: continued fraction expansion around s = infty (dividing in descending powers of s) realizes ladder of series resistors and shunt capacitors. Cauer-II: continued fraction expansion around s = 0 (ascending powers of s) realizes ladder of series capacitors and shunt resistors."
+      "examSessions": [
+        "2080 Bhadra",
+        "2082 Chaitra",
+        "2079 Bhadra",
+        "2071 Chaitra",
+        "2070 Chaitra",
+        "2069 Chaitra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Design of Resistively- Terminated Lossless Filters",
-      "text": "Explain Darlington Synthesis procedure for doubly-terminated lossless two-port LC ladder filter networks with source and load resistances.",
+      "id": "filter-design-6",
+      "question": "Explain with necessary figures and derivations.",
+      "text": "Explain with necessary figures and derivations.",
+      "chapter": "Other Filters",
       "marks": "8",
+      "frequency": 12,
       "years": [
         "2082 Bhadra",
-        "2080 Chaitra",
+        "2082 Chaitra",
+        "2075 Chaitra",
+        "2071 Chaitra",
+        "2070 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2082 Chaitra",
+        "2075 Chaitra",
+        "2071 Chaitra",
+        "2070 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-7",
+      "question": "What information do you get when the sensitivity of x with respect to y is -5? Perform sensitivity analysis for center frequency ($w_0$) of the Sallen Key low pass filter with respect to all the resistors and capacitors present in the circuit.",
+      "text": "What information do you get when the sensitivity of x with respect to y is -5? Perform sensitivity analysis for center frequency ($w_0$) of the Sallen Key low pass filter with respect to all the resistors and capacitors present in the circuit.",
+      "chapter": "Sensitivity",
+      "marks": "5",
+      "frequency": 11,
+      "years": [
+        "2072 Chaitra",
+        "2082 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2073 Chaitra",
+        "2070 Chaitra"
+      ],
+      "examSessions": [
+        "2072 Chaitra",
+        "2082 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2073 Chaitra",
+        "2070 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-8",
+      "question": "What is a constant delay filter? Find the transfer function of a third order Bessel Thomson response having constant delay.",
+      "text": "What is a constant delay filter? Find the transfer function of a third order Bessel Thomson response having constant delay.",
+      "chapter": "Approximation Methods",
+      "marks": "4",
+      "frequency": 11,
+      "years": [
+        "2082 Bhadra",
+        "2078 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2070 Chaitra",
+        "2069 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2078 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2070 Chaitra",
+        "2069 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-9",
+      "question": "What is a constant delay filter?",
+      "text": "What is a constant delay filter?",
+      "chapter": "Other Filters",
+      "marks": "8",
+      "frequency": 11,
+      "years": [
+        "2082 Bhadra",
+        "2078 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2070 Chaitra",
+        "2069 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2078 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2070 Chaitra",
+        "2069 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-10",
+      "question": "What is frequency transformation? Design a band stop filter having center frequency 2000 rad/s and bandwidth 400 rad/s from a third order Butterworth low pass filter. [Refer Table 2]",
+      "text": "What is frequency transformation? Design a band stop filter having center frequency 2000 rad/s and bandwidth 400 rad/s from a third order Butterworth low pass filter. [Refer Table 2]",
+      "chapter": "Frequency Transformation",
+      "marks": "4",
+      "frequency": 10,
+      "years": [
+        "2079 Bhadra",
+        "2078 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2074 Chaitra",
+        "2069 Chaitra"
+      ],
+      "examSessions": [
+        "2079 Bhadra",
+        "2078 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2074 Chaitra",
+        "2069 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-11",
+      "question": "What is Bruton Transformation? How can you simulate grounded inductor using FDNR? Explain with necessary figures and derivations.",
+      "text": "What is Bruton Transformation? How can you simulate grounded inductor using FDNR? Explain with necessary figures and derivations.",
+      "chapter": "Design of Active Filters",
+      "marks": "5",
+      "frequency": 10,
+      "years": [
+        "2082 Bhadra",
+        "2082 Chaitra",
+        "2075 Chaitra",
+        "2070 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2082 Chaitra",
+        "2075 Chaitra",
+        "2070 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-12",
+      "question": "What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+      "text": "What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+      "chapter": "Other Filters",
+      "marks": "8",
+      "frequency": 10,
+      "years": [
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2074 Chaitra",
+        "2073 Chaitra",
+        "2072 Chaitra",
+        "2070 Chaitra"
+      ],
+      "examSessions": [
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2074 Chaitra",
+        "2073 Chaitra",
+        "2072 Chaitra",
+        "2070 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-13",
+      "question": "What is frequency transformation?",
+      "text": "What is frequency transformation?",
+      "chapter": "Other Filters",
+      "marks": "8",
+      "frequency": 10,
+      "years": [
+        "2079 Bhadra",
+        "2078 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2074 Chaitra",
+        "2069 Chaitra"
+      ],
+      "examSessions": [
+        "2079 Bhadra",
+        "2078 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2074 Chaitra",
+        "2069 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-14",
+      "question": "What is transmission zeros in two port network? What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+      "text": "What is transmission zeros in two port network? What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+      "chapter": "Properties and Synthesis of Passive Networks",
+      "marks": "5",
+      "frequency": 9,
+      "years": [
+        "2076 Chaitra",
+        "2080 Bhadra",
+        "2079 Bhadra",
+        "2075 Chaitra",
+        "2071 Chaitra",
+        "2070 Chaitra"
+      ],
+      "examSessions": [
+        "2076 Chaitra",
+        "2080 Bhadra",
+        "2079 Bhadra",
+        "2075 Chaitra",
+        "2071 Chaitra",
+        "2070 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-15",
+      "question": "Find transfer function of third order constant delay filter.",
+      "text": "Find transfer function of third order constant delay filter.",
+      "chapter": "Other Filters",
+      "marks": "8",
+      "frequency": 9,
+      "years": [
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2074 Chaitra"
+      ],
+      "examSessions": [
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2074 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-16",
+      "question": "Derive the transfer function of Sallen-key low pass filter. Design a filter for $T(s) = \\frac{1}{s^2 + 0.765s + 1}$ using Sallen key low pass filter. In your final design the values of capacitors must be $0.01\\mu\\text{F}$ and feedback resistors should be equal.",
+      "text": "Derive the transfer function of Sallen-key low pass filter. Design a filter for $T(s) = \\frac{1}{s^2 + 0.765s + 1}$ using Sallen key low pass filter. In your final design the values of capacitors must be $0.01\\mu\\text{F}$ and feedback resistors should be equal.",
+      "chapter": "Design of Active Filters",
+      "marks": "8",
+      "frequency": 8,
+      "years": [
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2073 Chaitra"
+      ],
+      "examSessions": [
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2073 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-17",
+      "question": "Design a filter for $T(s) = \\frac{1}{s^2 + 0.765s + 1}$ using Sallen key low pass filter. In your final design the values of capacitors must be $0.01\\mu\\text{F}$ and feedback resistors should be equal.",
+      "text": "Design a filter for $T(s) = \\frac{1}{s^2 + 0.765s + 1}$ using Sallen key low pass filter. In your final design the values of capacitors must be $0.01\\mu\\text{F}$ and feedback resistors should be equal.",
+      "chapter": "Other Filters",
+      "marks": "8",
+      "frequency": 8,
+      "years": [
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2073 Chaitra"
+      ],
+      "examSessions": [
+        "2076 Chaitra",
+        "2075 Chaitra",
+        "2073 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-18",
+      "question": "Compare and contrast between ideal and practical filters. Derive the necessary formulae for magnitude scaling and frequency scaling used in the design of a filter.",
+      "text": "Compare and contrast between ideal and practical filters. Derive the necessary formulae for magnitude scaling and frequency scaling used in the design of a filter.",
+      "chapter": "Introduction",
+      "marks": "6",
+      "frequency": 8,
+      "years": [
+        "2082 Bhadra",
+        "2080 Bhadra",
+        "2071 Chaitra",
+        "2069 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2080 Bhadra",
+        "2071 Chaitra",
+        "2069 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-19",
+      "question": "Derive the necessary expressions to determine the new values of circuit elements in the case of magnitude and frequency scaling.",
+      "text": "Derive the necessary expressions to determine the new values of circuit elements in the case of magnitude and frequency scaling.",
+      "chapter": "Other Filters",
+      "marks": "8",
+      "frequency": 8,
+      "years": [
+        "2071 Chaitra",
+        "2082 Bhadra",
+        "2080 Bhadra",
+        "2069 Chaitra"
+      ],
+      "examSessions": [
+        "2071 Chaitra",
+        "2082 Bhadra",
+        "2080 Bhadra",
+        "2069 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-20",
+      "question": "What is frequency dependent negative resistor (FDNR)? How can it be used to avoid inductors in Lowpass LC ladder circuit? Explain from the circuit given in figure 1 design the lowpass filter having $w_o = 10^4 \\text{rad/s}$ and practical element values using FDNR.",
+      "text": "What is frequency dependent negative resistor (FDNR)? How can it be used to avoid inductors in Lowpass LC ladder circuit? Explain from the circuit given in figure 1 design the lowpass filter having $w_o = 10^4 \\text{rad/s}$ and practical element values using FDNR.",
+      "chapter": "Design of Active Filters",
+      "marks": "5",
+      "frequency": 7,
+      "years": [
+        "2073 Chaitra",
+        "2081 Bhadra",
+        "2080 Bhadra",
+        "2079 Bhadra",
+        "2072 Chaitra"
+      ],
+      "examSessions": [
+        "2073 Chaitra",
+        "2081 Bhadra",
+        "2080 Bhadra",
+        "2079 Bhadra",
+        "2072 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-21",
+      "question": "Design the $4^{th}$ order Butterworth low pass filter with half power frequency of $2,000 \\text{ rad/sec}$ and practically realizable elements using FDNR. .",
+      "text": "Design the $4^{th}$ order Butterworth low pass filter with half power frequency of $2,000 \\text{ rad/sec}$ and practically realizable elements using FDNR. .",
+      "chapter": "Other Filters",
+      "marks": "8",
+      "frequency": 7,
+      "years": [
+        "2081 Bhadra",
+        "2080 Bhadra",
+        "2079 Bhadra",
+        "2073 Chaitra",
+        "2072 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2080 Bhadra",
+        "2079 Bhadra",
+        "2073 Chaitra",
+        "2072 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-22",
+      "question": "What is Filter? Explain the significance of normalization and denormalization during filter design.",
+      "text": "What is Filter? Explain the significance of normalization and denormalization during filter design.",
+      "chapter": "Other Filters",
+      "marks": "8",
+      "frequency": 7,
+      "years": [
+        "2081 Bhadra",
+        "2080 Bhadra",
+        "2079 Bhadra",
+        "2069 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Bhadra",
+        "2080 Bhadra",
+        "2079 Bhadra",
+        "2069 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-23",
+      "question": "Draw the circuit diagram of Tow-Thomas low pass biquad circuit and derive its transfer function.",
+      "text": "Draw the circuit diagram of Tow-Thomas low pass biquad circuit and derive its transfer function.",
+      "chapter": "Other Filters",
+      "marks": "8",
+      "frequency": 7,
+      "years": [
+        "2074 Chaitra",
+        "2080 Bhadra",
+        "2071 Chaitra",
+        "2070 Chaitra",
+        "2069 Chaitra"
+      ],
+      "examSessions": [
+        "2074 Chaitra",
+        "2080 Bhadra",
+        "2071 Chaitra",
+        "2070 Chaitra",
+        "2069 Chaitra"
+      ],
+      "isDiagram": true
+    },
+    {
+      "id": "filter-design-24",
+      "question": "Which of the following functions are LC driving point impedance function and why? Pick one of the valid LC driving point impedance and synthesize it in Foster-I and Caver-I form:\n$Z_1(s) = \\frac{(s^2 + 1)(s^2 + 5)}{(s^2 + 2)(s^2 + 10)}$\n$Z_2(s) = \\frac{5s(s^2 + 4)}{(s^2 + 1)(s^2 + 3)}$\n$Z_3(s) = \\frac{2(s^2 + 1)(s^2 + 9)}{s(s^2 + 4)}$\n$Z_4(s) = 4\\frac{(s + 2)(s + 5)}{(s + 1)(s + 4)}$",
+      "text": "Which of the following functions are LC driving point impedance function and why? Pick one of the valid LC driving point impedance and synthesize it in Foster-I and Caver-I form:\n$Z_1(s) = \\frac{(s^2 + 1)(s^2 + 5)}{(s^2 + 2)(s^2 + 10)}$\n$Z_2(s) = \\frac{5s(s^2 + 4)}{(s^2 + 1)(s^2 + 3)}$\n$Z_3(s) = \\frac{2(s^2 + 1)(s^2 + 9)}{s(s^2 + 4)}$\n$Z_4(s) = 4\\frac{(s + 2)(s + 5)}{(s + 1)(s + 4)}$",
+      "chapter": "Properties and Synthesis of Passive Networks",
+      "marks": "2",
+      "frequency": 6,
+      "years": [
+        "2070 Chaitra",
+        "2082 Chaitra",
+        "2081 Bhadra",
+        "2073 Chaitra",
+        "2072 Chaitra"
+      ],
+      "examSessions": [
+        "2070 Chaitra",
+        "2082 Chaitra",
+        "2081 Bhadra",
+        "2073 Chaitra",
+        "2072 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-25",
+      "question": "Derive an expression to calculate the required order for given low pass specifications using Chebyshev approximation. Using the derived expression, calculate the order of Chebyshev filter for following specifications:\n$\\alpha_{max} = 0.5 \\text{ dB}$\n$\\alpha_{min} = 15 \\text{ dB}$\n$w_p = 1000 \\text{ rad/s}$\n$w_s = 2000 \\text{ rad/s}$\nAlso show pole locations.",
+      "text": "Derive an expression to calculate the required order for given low pass specifications using Chebyshev approximation. Using the derived expression, calculate the order of Chebyshev filter for following specifications:\n$\\alpha_{max} = 0.5 \\text{ dB}$\n$\\alpha_{min} = 15 \\text{ dB}$\n$w_p = 1000 \\text{ rad/s}$\n$w_s = 2000 \\text{ rad/s}$\nAlso show pole locations.",
+      "chapter": "Approximation Methods",
+      "marks": "4",
+      "frequency": 6,
+      "years": [
+        "2082 Bhadra",
+        "2082 Chaitra",
+        "2076 Chaitra",
+        "2070 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2082 Chaitra",
+        "2076 Chaitra",
+        "2070 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-26",
+      "question": "Derive the relation to calculate the order $n$ of a Butterworth approximation. Use the formula to calculate the order of Butterworth having following specification $\\alpha_p = 0.5\\text{dB}$, $\\alpha_s = 20\\text{dB}$, $\\omega_p = 1000 \\text{ rad/s}$, $\\omega_s = 2000 \\text{ rad/s}$. Determine transfer function and show pole location's.",
+      "text": "Derive the relation to calculate the order $n$ of a Butterworth approximation. Use the formula to calculate the order of Butterworth having following specification $\\alpha_p = 0.5\\text{dB}$, $\\alpha_s = 20\\text{dB}$, $\\omega_p = 1000 \\text{ rad/s}$, $\\omega_s = 2000 \\text{ rad/s}$. Determine transfer function and show pole location's.",
+      "chapter": "Approximation Methods",
+      "marks": "2",
+      "frequency": 5,
+      "years": [
+        "2080 Bhadra",
+        "2079 Bhadra",
+        "2075 Chaitra"
+      ],
+      "examSessions": [
+        "2080 Bhadra",
+        "2079 Bhadra",
+        "2075 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-27",
+      "question": "What do you understand when the sensitivity of y with respect to x is equal to -3? Perform sensitivity analysis for Quality factor Q of the Tow Thomas low pass filter with respect to all the resistors and capacitors present in the circuit.",
+      "text": "What do you understand when the sensitivity of y with respect to x is equal to -3? Perform sensitivity analysis for Quality factor Q of the Tow Thomas low pass filter with respect to all the resistors and capacitors present in the circuit.",
+      "chapter": "Sensitivity",
+      "marks": "6",
+      "frequency": 5,
+      "years": [
+        "2069 Chaitra",
+        "2081 Bhadra"
+      ],
+      "examSessions": [
+        "2069 Chaitra",
+        "2081 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-28",
+      "question": "Derive an expression to calculate the order of Inverse Chebyshev low pass filter. Use this formula to estimate the order of Inverse Chebyshev low pass filter having following specification:\n$\\alpha_{max} = 0.25 \\text{ dB}$, $\\omega_p = 1000 \\text{ rad/s}$\n$\\alpha_{min} = 18 \\text{ dB}$, $\\omega_s = 1400 \\text{ rad/s}$",
+      "text": "Derive an expression to calculate the order of Inverse Chebyshev low pass filter. Use this formula to estimate the order of Inverse Chebyshev low pass filter having following specification:\n$\\alpha_{max} = 0.25 \\text{ dB}$, $\\omega_p = 1000 \\text{ rad/s}$\n$\\alpha_{min} = 18 \\text{ dB}$, $\\omega_s = 1400 \\text{ rad/s}$",
+      "chapter": "Approximation Methods",
+      "marks": "5",
+      "frequency": 4,
+      "years": [
+        "2072 Chaitra",
+        "2071 Chaitra"
+      ],
+      "examSessions": [
+        "2072 Chaitra",
+        "2071 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-29",
+      "question": "Design the fourth order Butterworth low-pass filter using a leapfrog simulation. Your final design should accommodate half power frequency of $1000 \\text{ rad/sec}$ and should have practically realizable elements in it. [Refer Table 2]",
+      "text": "Design the fourth order Butterworth low-pass filter using a leapfrog simulation. Your final design should accommodate half power frequency of $1000 \\text{ rad/sec}$ and should have practically realizable elements in it. [Refer Table 2]",
+      "chapter": "Design of Active Filters",
+      "marks": "6",
+      "frequency": 4,
+      "years": [
+        "2082 Bhadra",
+        "2075 Chaitra",
+        "2074 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Bhadra",
+        "2075 Chaitra",
+        "2074 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-30",
+      "question": "Perform sensitivity analysis for center frequency ($\\omega_o$) and quality factor ($Q$) of the Tow Thomas low pass filter with respect to all the resistors and capacitors present in the circuit.",
+      "text": "Perform sensitivity analysis for center frequency ($\\omega_o$) and quality factor ($Q$) of the Tow Thomas low pass filter with respect to all the resistors and capacitors present in the circuit.",
+      "chapter": "Sensitivity",
+      "marks": "5",
+      "frequency": 4,
+      "years": [
+        "2071 Chaitra",
+        "2078 Bhadra",
+        "2074 Chaitra"
+      ],
+      "examSessions": [
+        "2071 Chaitra",
+        "2078 Bhadra",
+        "2074 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-31",
+      "question": "Realize an active filter using non-inverting op-amp configuration with a zero at $s = -4$ and a pole at $s = -8$ having high frequency gain of $k = 2$.",
+      "text": "Realize an active filter using non-inverting op-amp configuration with a zero at $s = -4$ and a pole at $s = -8$ having high frequency gain of $k = 2$.",
+      "chapter": "Design of Active Filters",
+      "marks": "4",
+      "frequency": 4,
+      "years": [
+        "2079 Bhadra",
+        "2081 Bhadra",
         "2076 Chaitra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Darlington method synthesizes any PR driving-point impedance as a lossless LC two-port terminated in a single resistor. Doubly-terminated LC ladder filters achieve minimum sensitivity to component tolerances in passband because maximum power transfer theorem guarantees zero first-order sensitivity d|T|/dx = 0 at reflection zeros."
-    },
-    {
-      "chapter": "Design of Active Filters",
-      "text": "Explain Sallen-Key Low-Pass and High-Pass active biquad filter topologies. Derive the voltage transfer function $T(s) = \\frac{V_o(s)}{V_i(s)}$, resonant frequency $\\omega_0$, and quality factor $Q$.",
-      "marks": "8",
-      "years": [
-        "2083 Baishakh",
-        "2081 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Single op-amp active biquad with positive feedback. Lowpass topology uses two series resistors R1, R2 and capacitors C1 (bootstrapped feedback to output) and C2 (to ground). T(s) = K / [s^2 (R1 R2 C1 C2) + s(R1 C2 + R2 C2 + R1 C1(1 - K)) + 1]. omega_0 = 1 / sqrt(R1 R2 C1 C2). Q determined by op-amp gain K and RC ratios."
-    },
-    {
-      "chapter": "Design of Active Filters",
-      "text": "Explain the Tow-Thomas Biquad and State-Variable Biquad architectures. Derive the simultaneous transfer functions for Low-Pass, Band-Pass, and High-Pass outputs.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2080 Ashwin",
-        "2078 Bhadra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Tow-Thomas biquad uses three op-amps: lossy integrator, lossless inverting integrator, and inverter. Resolves high Q sensitivity of single-op-amp circuits by independent tuning of gain, resonant frequency omega_0 = 1/(RC), and quality factor Q. Offers low passive component sensitivity and simultaneous outputs."
-    },
-    {
-      "chapter": "Sensitivity",
-      "text": "Define $\\omega_0$-sensitivity and $Q$-sensitivity with respect to passive components ($R, C$) and active operational amplifier gain $K$: $S_x^y = \\frac{x}{y} \\frac{\\partial y}{\\partial x}$. Calculate sensitivities for a Sallen-Key biquad.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2081 Ashwin",
-        "2077 Magh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Sensitivity measures fractional change in network parameter y due to fractional variation in element x: S_x^y = (d y / y) / (d x / x). For Sallen-Key: S_R1^{omega_0} = S_R2^{omega_0} = S_C1^{omega_0} = S_C2^{omega_0} = -0.5. For high Q, Q-sensitivity to op-amp gain K is proportional to (2Q - 1), showing high sensitivity for large Q values in single-op-amp topologies."
-    },
-    {
-      "chapter": "Other Filters",
-      "text": "Explain Switched Capacitor Filters (SCF). Prove that a parallel-switched capacitor resistor equivalent has resistance $R_{eq} = \\frac{1}{f_c C}$. Discuss advantages of SC filters over active RC filters in VLSI integration.",
-      "marks": "8",
-      "years": [
-        "2083 Baishakh",
-        "2081 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "In non-overlapping two-phase clock phi1, phi2 at frequency f_c: charge transferred per cycle Delta q = C(V1 - V2). Average current I_avg = Delta q / T_c = f_c C (V1 - V2). Equivalent resistance R_eq = (V1 - V2)/I_avg = 1 / (f_c C). Critical pole frequencies depend only on capacitor ratios (C1/C2) and clock frequency f_c, achieving 0.1% accuracy on CMOS ICs without external tuning."
-    },
-    {
-      "chapter": "Design of Active Filters",
-      "text": "Explain Operational Transconductance Amplifiers (OTA) and OTA-C (Gm-C) filter design. Synthesize a first-order and second-order low-pass filter using OTAs and grounded capacitors.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2078 Kartik"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "OTA is a voltage-controlled current source (VCCS) where output current I_out = g_m (V_+ - V_-), and transconductance g_m is electronically tunable via DC bias current I_bias. Eliminates resistors completely, making it ideal for high-frequency (MHz-GHz) CMOS monolithic integration using grounded capacitors."
-    },
-    {
-      "chapter": "Approximation Methods",
-      "text": "Compare Butterworth, Chebyshev Type-I, Chebyshev Type-II (Inverse Chebyshev), and Elliptic (Cauer) filter approximations in terms of pole-zero locations, transition width, and passband/stopband ripple characteristics.",
-      "marks": "8",
-      "years": [
-        "2083 Baishakh",
-        "2081 Ashwin",
-        "2078 Bhadra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Butterworth: maximally flat in passband and stopband, all-pole on circle of radius Omega_c. Chebyshev Type-I: equiripple passband, monotonic stopband, poles on ellipse. Chebyshev Type-II: monotonic passband, equiripple stopband (contains j-omega zeros). Elliptic: equiripple in both passband and stopband with transmission zeros, achieving steepest transition roll-off for a given filter order N."
-    },
-    {
-      "chapter": "Approximation Methods",
-      "text": "Explain Bessel (Maximally Flat Delay) Filter Approximation. Derive the Thomson polynomial and discuss why Bessel filters provide linear phase response and zero ringing/overshoot in pulse transmission.",
-      "marks": "6",
-      "years": [
-        "2082 Bhadra",
-        "2080 Ashwin",
-        "2077 Magh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Bessel approximation maximizes flatness of group delay tau_g(omega) = -d theta/d omega around omega = 0 using Bessel/Thomson polynomials B_N(s). Linear phase ensures all frequency components propagate with identical time delay, eliminating pulse distortion, dispersion, and overshoot in digital data transmission."
-    },
-    {
-      "chapter": "Design of Active Filters",
-      "text": "Describe Inductor Simulation using Active RC Networks (Antoniou General Impedance Converter - GIC). Derive the simulated inductance $L = \\frac{R_1 R_3 R_5 C_4}{R_2}$ and show how it replaces inductors in ladder filters.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2080 Chaitra",
+      "examSessions": [
+        "2079 Bhadra",
+        "2081 Bhadra",
         "2076 Chaitra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Antoniou GIC uses two op-amps and five passive elements. Input impedance Z_in(s) = (Z1 Z3 Z5) / (Z2 Z4). Choosing Z1=R1, Z2=R2, Z3=R3, Z4=1/(sC4), Z5=R5 gives Z_in(s) = s * (R1 R3 R5 C4 / R2) = s L. Replaces bulky physical lossy inductors in high-order passive ladder prototypes with stable, high-Q active circuits."
+      "isDiagram": false
     },
     {
-      "chapter": "Other Filters",
-      "text": "Explain Current Conveyors (CCI, CCII, CCIII) in current-mode signal processing. Draw the port characteristics matrix of CCII+ and synthesize an active current-mode bandpass filter.",
-      "marks": "8",
+      "id": "filter-design-32",
+      "question": "Define zeros of transmission. How zeros of transmission can be realized? Explain with suitable example.",
+      "text": "Define zeros of transmission. How zeros of transmission can be realized? Explain with suitable example.",
+      "chapter": "Design of Resistively-Terminated Lossless Filters",
+      "marks": "4",
+      "frequency": 4,
       "years": [
-        "2081 Chaitra",
-        "2079 Chaitra",
+        "2074 Chaitra",
+        "2073 Chaitra",
+        "2072 Chaitra"
+      ],
+      "examSessions": [
+        "2074 Chaitra",
+        "2073 Chaitra",
+        "2072 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-33",
+      "question": "What are the properties of lossless one port network function? Which of the following function is LC one port driving point impedance function? Explain with suitable reason.\n$Z(s) = \\frac{(s^2+1)(s^2+9)}{s(s^2+4)}$, $Z(s) = \\frac{s(s^2+4)(s^2+5)}{(s^2+3)(s^2+6)}$\nRealize a valid lossless one port function using Foster II & Cauer II methods.",
+      "text": "What are the properties of lossless one port network function? Which of the following function is LC one port driving point impedance function? Explain with suitable reason.\n$Z(s) = \\frac{(s^2+1)(s^2+9)}{s(s^2+4)}$, $Z(s) = \\frac{s(s^2+4)(s^2+5)}{(s^2+3)(s^2+6)}$\nRealize a valid lossless one port function using Foster II & Cauer II methods.",
+      "chapter": "Properties and Synthesis of Passive Networks",
+      "marks": "3",
+      "frequency": 3,
+      "years": [
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2076 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-34",
+      "question": "What are the applications of Frequency Transformation in Filter Design. How can you obtain a high pass filter from a given low pass filter? Explain with a suitable example.",
+      "text": "What are the applications of Frequency Transformation in Filter Design. How can you obtain a high pass filter from a given low pass filter? Explain with a suitable example.",
+      "chapter": "Frequency Transformation",
+      "marks": "6",
+      "frequency": 3,
+      "years": [
+        "2072 Chaitra",
+        "2070 Chaitra"
+      ],
+      "examSessions": [
+        "2072 Chaitra",
+        "2070 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-35",
+      "question": "What is RC-CR transformation? Draw the circuit diagram of high pass sallen-key biquad obtained by RC-CR transformation of its low pass counterpart.",
+      "text": "What is RC-CR transformation? Draw the circuit diagram of high pass sallen-key biquad obtained by RC-CR transformation of its low pass counterpart.",
+      "chapter": "Design of Active Filters",
+      "marks": "4",
+      "frequency": 3,
+      "years": [
+        "2070 Chaitra",
+        "2073 Chaitra"
+      ],
+      "examSessions": [
+        "2070 Chaitra",
+        "2073 Chaitra"
+      ],
+      "isDiagram": true
+    },
+    {
+      "id": "filter-design-36",
+      "question": "What is \"zero shifting by partial removal of pole\"? Explain with example. Also mention its importance in two port network synthesis.",
+      "text": "What is \"zero shifting by partial removal of pole\"? Explain with example. Also mention its importance in two port network synthesis.",
+      "chapter": "Properties and Synthesis of Passive Networks",
+      "marks": "5",
+      "frequency": 3,
+      "years": [
+        "2069 Chaitra"
+      ],
+      "examSessions": [
+        "2069 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-37",
+      "question": "Design an active filter using non-inverting op-amp configuration with following transfer function.\n$T(s) = \\frac{(s + 8)}{(s + 2)}$",
+      "text": "Design an active filter using non-inverting op-amp configuration with following transfer function.\n$T(s) = \\frac{(s + 8)}{(s + 2)}$",
+      "chapter": "Design of Active Filters",
+      "marks": "4",
+      "frequency": 3,
+      "years": [
         "2078 Bhadra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Current conveyors provide wide bandwidth, high slew rate, and wide dynamic range independent of gain-bandwidth product. CCII characteristics: V_X = V_Y, I_Y = 0, I_Z = +/- I_X. Terminal Y has high input impedance, X has zero input impedance, and Z has infinite output impedance. Realizes filters with reduced active sensitivity."
+      "examSessions": [
+        "2078 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-38",
+      "question": "Derive the expression to calculate the order of Butterworth approximation for given lowpass filter specifications. Calculate the order of Butterworth low pass filter having following specification;\n\ni) Passband extends from $\\omega = 0$ to $\\omega = 200$ rad/s and the attenuation in the passband should not exceed 0.1 dB.\nii) Stopband extends from $\\omega = 2000$ rad/s to $\\omega = \\infty$ and the attenuation in the stopband should not be less than 30 dB",
+      "text": "Derive the expression to calculate the order of Butterworth approximation for given lowpass filter specifications. Calculate the order of Butterworth low pass filter having following specification;\n\ni) Passband extends from $\\omega = 0$ to $\\omega = 200$ rad/s and the attenuation in the passband should not exceed 0.1 dB.\nii) Stopband extends from $\\omega = 2000$ rad/s to $\\omega = \\infty$ and the attenuation in the stopband should not be less than 30 dB",
+      "chapter": "Approximation Methods",
+      "marks": "5",
+      "frequency": 2,
+      "years": [
+        "2069 Chaitra"
+      ],
+      "examSessions": [
+        "2069 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-39",
+      "question": "What are the characteristics of inverse Chebyshev response? Derive the expression to calculate the order of inverse Chebyshev low pass filter. Calculate inverse Chebyshev poles and zeros for given specifications: $\\alpha_{min} = 18\\text{dB}$, $\\alpha_{max} = 0.25\\text{dB}$, $\\omega_s = 1400\\text{rad/sec}$ and $\\omega_p = 1000\\text{rad/sec}$.",
+      "text": "What are the characteristics of inverse Chebyshev response? Derive the expression to calculate the order of inverse Chebyshev low pass filter. Calculate inverse Chebyshev poles and zeros for given specifications: $\\alpha_{min} = 18\\text{dB}$, $\\alpha_{max} = 0.25\\text{dB}$, $\\omega_s = 1400\\text{rad/sec}$ and $\\omega_p = 1000\\text{rad/sec}$.",
+      "chapter": "Approximation Methods",
+      "marks": "2",
+      "frequency": 2,
+      "years": [
+        "2081 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "filter-design-40",
+      "question": "What information do you get when the sensitivity of $y$ with respect to $x$ is $0.1$? Perform\nsensitivity analysis for center frequency $\\omega_0$ of Tow Thomas low pass filter with respect to\nall the resistors and capacitors present in the circuit.",
+      "text": "What information do you get when the sensitivity of $y$ with respect to $x$ is $0.1$? Perform\nsensitivity analysis for center frequency $\\omega_0$ of Tow Thomas low pass filter with respect to\nall the resistors and capacitors present in the circuit.",
+      "chapter": "Sensitivity",
+      "marks": "1",
+      "frequency": 2,
+      "years": [
+        "2080 Bhadra",
+        "2079 Bhadra"
+      ],
+      "examSessions": [
+        "2080 Bhadra",
+        "2079 Bhadra"
+      ],
+      "isDiagram": false
     }
   ],
-  "chapters": [
-    "Introduction",
-    "Approximation Methods",
-    "Frequency Transformation",
-    "Properties and Synthesis of Passive Networks",
-    "Design of Resistively- Terminated Lossless Filters",
-    "Design of Active Filters",
-    "Sensitivity",
-    "Other Filters"
+  "yearWisePapers": [
+    {
+      "session": "2083 Baishakh",
+      "year": "2083",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 32,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Discuss the reasons why analog filter design remains relevant in the modern digital era despite rapid advancements in the digital signal processing. Support your answer with suitable examples of real-world applications. Compare active and passive filters. What is frequency scaling? Explain with necessary derivations.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What is $a^n$ all-pass filter? State its importance. Derive a transfer function of a second order constant delay filter.",
+          "marks": "1",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Determine whether the following functions are RC driving point admittance functions or not. State with reason.\n(a) $Y(s) = \\frac{(s+1)(s+4)}{s(s+2)}$\n(b) $Y(s) = \\frac{3(s+1)(s+4)}{(s+3)(s+6)}$\nPick one of the valid RC admittance functions and realize it in parallel Foster form as well as RC ladder form.",
+          "marks": "2",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What is transmission coefficient? What information do you get from the transmission coefficient? Design a second order Butterworth low pass filter using lossless ladder with equal termination of $1\\Omega$ i.e. $R_1 = 1\\Omega$ and $R_2 = 1\\Omega$ (Refer Table 1)",
+          "marks": "1",
+          "chapter": "Design of Resistively-Terminated Lossless Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What do you understand when someone tells you that sensitivity of $x$ with respect to $y$ is -7? Compute the sensitivity expression for cutoff frequency and quality factor of RLC lowpass filter.",
+          "marks": "1",
+          "chapter": "Sensitivity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Derive $a^n$ expression to calculate the order of a Butterworth low pass filter. Use this expression to calculate the order of Butterworth low pass filter with the following specifications:\nMaximum passband attenuation: 3 dB at 1 kHz\nMinimum stopband attenuation: 40 dB at 2.5 kHz\nAlso determine the pole locations and transfer function.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Design a band-pass filter with center frequency 10 kHz and bandwidth 4 kHz using a normalized low-pass filter with transfer function $T(s) = \\frac{1}{s^2 + 1.414s + 1}$.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Define zeros of transmission. How zeros of transmission can be realized? Explain with suitable example.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Realize an active filter using non-inverting op-amp configuration with a zero at $s = -4$ and a pole at $s = -8$ having high frequency gain of $k = 2$.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Draw the circuit diagram of Tow-Thomas Biquad circuit and derive its transfer function.\nDesign a low pass filter using Tow Thomas Biquad circuit with poles at $-450 \\pm j 893.03$\nand dc gain of $1.5$. The final circuit should contain practically realizable values.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": true
+        },
+        {
+          "qNum": 11,
+          "text": "What is Bruton Transformation? How can you simulate grounded inductor using FDNR? Explain with necessary figures and derivations.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Design the fourth order Butterworth low-pass filter using a leapfrog simulation. Your final design should accommodate half power frequency of $1000 \\text{ rad/sec}$ and should have practically realizable elements in it. [Refer Table 2]",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Chaitra",
+      "year": "2082",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 73,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What is a filter? What is its importance in communication? Explain ideal response and response of practical filter.",
+          "marks": "1",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "During filter design process, explain the significance of normalization and denormalization. Derive the expression to calculate the new values of elements that will modify the operating frequency of a low pass filter from $\\omega_{old}$ to $\\omega_{new}$.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive an expression to calculate the required order for given low pass specifications using Chebyshev approximation. Using the derived expression, calculate the order of Chebyshev filter for following specifications:\n$\\alpha_{max} = 0.5 \\text{ dB}$\n$\\alpha_{min} = 15 \\text{ dB}$\n$w_p = 1000 \\text{ rad/s}$\n$w_s = 2000 \\text{ rad/s}$\nAlso show pole locations.",
+          "marks": "4",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What are the characteristics of butterworth response? Calculate the transfer function of $5^{th}$ order Butterworth filter.",
+          "marks": "3",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Define frequency transformation and mention its importance in filter design.",
+          "marks": "3",
+          "chapter": "Frequency Transformation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Which of the following functions are LC driving point impedance function and why? Pick one of the valid LC driving point impedance and synthesize it in Foster-I and Caver-I form:\n$Z_1(s) = \\frac{(s^2 + 1)(s^2 + 5)}{(s^2 + 2)(s^2 + 10)}$\n$Z_2(s) = \\frac{5s(s^2 + 4)}{(s^2 + 1)(s^2 + 3)}$\n$Z_3(s) = \\frac{2(s^2 + 1)(s^2 + 9)}{s(s^2 + 4)}$\n$Z_4(s) = 4\\frac{(s + 2)(s + 5)}{(s + 1)(s + 4)}$",
+          "marks": "2",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Define reflection coefficient. Realize the third order Butterworth low pass filter using resistively terminated lossless ladder with $R_1 = 1\\ \\Omega$ and $R_2 = 4\\ \\Omega$. [Refer Table 2]",
+          "marks": "6",
+          "chapter": "Design of Resistively-Terminated Lossless Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Draw the circuit diagram of Tow-Thomas Biquad circuit and derive its transfer function.\nDesign a low pass filter using Tow Thomas Biquad circuit with poles at $-450 \\pm j 893.03$\nand dc gain of $1.5$. The final circuit should contain practically realizable values.",
+          "marks": "6",
+          "chapter": "Design of Active Filters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 9,
+          "text": "What is Bruton Transformation? How can you simulate grounded inductor using FDNR? Explain with necessary figures and derivations.",
+          "marks": "5",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Perform the sensitivity analysis of quality factor in Tow Thomas LPF.",
+          "marks": "3",
+          "chapter": "Sensitivity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Design a low pass filter using Tow Thomas Biquad circuit with poles at $-450 \\pm j 893.03$\nand dc gain of $1.5$. The final circuit should contain practically realizable values.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Explain with necessary figures and derivations.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "What is filter? Explain its application in the field of communication. Differentiate between ideal and practical response for various filters.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "What are the characteristics of Butterworth low pass approximation?",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "Derive an expression to calculate the required order for given low pass specifications using Chebyshev approximation. Using the derived expression, calculate the order of Chebyshev filter for following specifications:\n$\\alpha_{max} = 0.5 \\text{ dB}$\n$\\alpha_{min} = 15 \\text{ dB}$\n$w_p = 1000 \\text{ rad/s}$\n$w_s = 2000 \\text{ rad/s}$\nAlso show pole locations.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "Synthesize $4^{th}$ order Butterworth HPF in resistively terminated lossless ladder network.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "Which of the following functions are LC driving point impedance function and why? Pick one of the valid LC driving point impedance and synthesize it in Foster-I and Caver-I form:\n$Z_1(s) = \\frac{(s^2 + 1)(s^2 + 5)}{(s^2 + 2)(s^2 + 10)}$\n$Z_2(s) = \\frac{5s(s^2 + 4)}{(s^2 + 1)(s^2 + 3)}$\n$Z_3(s) = \\frac{2(s^2 + 1)(s^2 + 9)}{s(s^2 + 4)}$\n$Z_4(s) = 4\\frac{(s + 2)(s + 5)}{(s + 1)(s + 4)}$",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 18,
+          "text": "How can excess gain be compensated in Sallen-key circuit? Explain with necessary derivations and diagrams.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Bhadra",
+      "year": "2082",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 81,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Compare and contrast between ideal and practical filters. Derive the necessary formulae for magnitude scaling and frequency scaling used in the design of a filter.",
+          "marks": "6",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What is a constant delay filter? Find the transfer function of a third order Bessel Thomson response having constant delay.",
+          "marks": "4",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive an expression to calculate the required order for given low pass specifications using Chebyshev approximation. Using the derived expression, calculate the order of Chebyshev filter for following specifications:\n$\\alpha_{max} = 0.5 \\text{ dB}$\n$\\alpha_{min} = 15 \\text{ dB}$\n$w_p = 1000 \\text{ rad/s}$\n$w_s = 2000 \\text{ rad/s}$\nAlso show pole locations.",
+          "marks": "4",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Describe the transformation from prototype low-pass filter to band-pass filter with necessary derivations and example.",
+          "marks": "4",
+          "chapter": "Frequency Transformation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain the impedance model for 2 - port network. Describe the series combination of two 2 - port networks.",
+          "marks": "1",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Which of the following functions are LC driving point impedance function and why? Pick one of the valid LC driving point impedance and synthesize it in Foster-I and Caver-I form:\n$Z_1(s) = \\frac{(s^2 + 1)(s^2 + 5)}{(s^2 + 2)(s^2 + 10)}$\n$Z_2(s) = \\frac{5s(s^2 + 4)}{(s^2 + 1)(s^2 + 3)}$\n$Z_3(s) = \\frac{2(s^2 + 1)(s^2 + 9)}{s(s^2 + 4)}$\n$Z_4(s) = 4\\frac{(s + 2)(s + 5)}{(s + 1)(s + 4)}$",
+          "marks": "2",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Define reflection coefficient. Realize the third order Butterworth low pass filter using resistively terminated lossless ladder with $R_1 = 1\\ \\Omega$ and $R_2 = 4\\ \\Omega$. [Refer Table 2]",
+          "marks": "6",
+          "chapter": "Design of Resistively-Terminated Lossless Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What is Bruton Transformation? How can you simulate grounded inductor using FDNR? Explain with necessary figures and derivations.",
+          "marks": "5",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Design the fourth order Butterworth low-pass filter using a leapfrog simulation. Your final design should accommodate half power frequency of $1000 \\text{ rad/sec}$ and should have practically realizable elements in it. [Refer Table 2]",
+          "marks": "6",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Draw the circuit diagram of Tow-Thomas low pass biquad circuit and derive its transfer function.",
+          "marks": "5",
+          "chapter": "Design of Active Filters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 11,
+          "text": "Design a $5^{th}$ order Butterworth LPF using cascade of 1st order active section and MFB biquads with DC gain equal to unity and half power frequency at 1 kHz. Make the largest capacitance $0.1 \\mu\\text{F}$.",
+          "marks": "8",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What information do you get when the sensitivity of x with respect to y is -5? Perform sensitivity analysis for center frequency ($w_0$) of the Sallen Key low pass filter with respect to all the resistors and capacitors present in the circuit.",
+          "marks": "5",
+          "chapter": "Sensitivity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Explain with necessary figures and derivations.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "What is a constant delay filter?",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "Derive the necessary expressions to determine the new values of circuit elements in the case of magnitude and frequency scaling.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "What information do you get when the sensitivity of x with respect to y is -5? Perform sensitivity analysis for center frequency ($w_0$) of the Sallen Key low pass filter with respect to all the resistors and capacitors present in the circuit.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Baishakh",
+      "year": "2082",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 36,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What do you mean by insertion gain and insertion loss? Show the steps involved in the design filter. Compare active and passive filters.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What are the properties of lossless one port network circuit? The driving point impedance of one port LC network is: $Z(S) = \\frac{S^4 + 4S^2 + 3}{2S^3 + 3S}$. Obtain Foster I and Cauer I.",
+          "marks": "2",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Define two port network. Describe the parallel connection of 2, two port networks with necessary figures and derivation.",
+          "marks": "1",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Design the fourth order Butterworth low-pass filter using a leapfrog simulation. Your final design should accommodate half power frequency of $1000 \\text{ rad/sec}$ and should have practically realizable elements in it. [Refer Table 2]",
+          "marks": "6",
+          "chapter": "Design of Resistively-Terminated Lossless Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Design a second order Butterworth low pass filter using a Sallen and Key Biquad circuit. Use design 2 method.",
+          "marks": "6",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What are the characteristics of inverse Chebyshev response? Derive the expression to calculate the order of inverse Chebyshev low pass filter. Calculate inverse Chebyshev poles and zeros for given specifications: $\\alpha_{min} = 18\\text{dB}$, $\\alpha_{max} = 0.25\\text{dB}$, $\\omega_s = 1400\\text{rad/sec}$ and $\\omega_p = 1000\\text{rad/sec}$.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is a constant delay filter? Find the transfer function of a third order Bessel Thomson response having constant delay.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What is frequency transformation? Describe the frequency transformation from low pass to band pass filter with necessary expressions and example.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Define reflection coefficient. Realize the third order Butterworth low pass filter using resistively terminated lossless ladder with $R_1 = 1\\ \\Omega$ and $R_2 = 4\\ \\Omega$. [Refer Table 2]",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Design a low pass filter using Tow Thomas Biquad circuit with poles at $-450 \\pm j 893.03$\nand dc gain of $1.5$. The final circuit should contain practically realizable values.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What is sensitivity? Describe its importance in filter design. Perform sensitivity analysis of quality factor in Tow Thomas low pass filter.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What is Bruton Transformation? How can you simulate grounded inductor using FDNR? Explain with necessary figures and derivations.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Bhadra",
+      "year": "2081",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 65,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What is Filter? Explain the significance of normalization and denormalization during filter design. Derive the expression to calculate the new values of elements that will change the operating frequency of a low pass filter from $\\omega_{old}$ to $\\omega_{new}$.",
+          "marks": "6",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What are the characteristics of inverse Chebyshev response? Derive the expression to calculate the order of inverse Chebyshev low pass filter. Calculate inverse Chebyshev poles and zeros for given specifications: $\\alpha_{min} = 18\\text{dB}$, $\\alpha_{max} = 0.25\\text{dB}$, $\\omega_s = 1400\\text{rad/sec}$ and $\\omega_p = 1000\\text{rad/sec}$.",
+          "marks": "2",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Determine the Butterworth low pass characteristics with the minimum $n$ such that following specifications are satisfied: $\\alpha_p = 1\\text{dB} , \\alpha_s = 25\\text{dB} , \\omega_s/\\omega_p = 1.5$.",
+          "marks": "3",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What is frequency transformation? Design a band stop filter having center frequency 2000 rad/s and bandwidth 400 rad/s from a third order Butterworth low pass filter. [Refer Table 2]",
+          "marks": "4",
+          "chapter": "Frequency Transformation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Realize the third order Butterworth high pass filter using transfer function of LPF as $T(S) = \\frac{1}{(S+1)(S^2 + S + 1)}$ in the form of doubly terminated LC ladder with $R_1 = R_2 = 1\\Omega$.",
+          "marks": "5",
+          "chapter": "Frequency Transformation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Which of the following functions are LC driving point impedance function and why? Pick one of the valid LC driving point impedance and synthesize it in Foster-I and Caver-I form:\n$Z_1(s) = \\frac{(s^2 + 1)(s^2 + 5)}{(s^2 + 2)(s^2 + 10)}$\n$Z_2(s) = \\frac{5s(s^2 + 4)}{(s^2 + 1)(s^2 + 3)}$\n$Z_3(s) = \\frac{2(s^2 + 1)(s^2 + 9)}{s(s^2 + 4)}$\n$Z_4(s) = 4\\frac{(s + 2)(s + 5)}{(s + 1)(s + 4)}$",
+          "marks": "2",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the impedance model for 2 - port network. Describe the series combination of two 2 - port networks.",
+          "marks": "1",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What is frequency dependent negative resistor (FDNR)? How can it be used to avoid inductors in Lowpass LC ladder circuit? Explain from the circuit given in figure 1 design the lowpass filter having $w_o = 10^4 \\text{rad/s}$ and practical element values using FDNR.",
+          "marks": "5",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Realize an active filter using non-inverting op-amp configuration with a zero at $s = -4$ and a pole at $s = -8$ having high frequency gain of $k = 2$.",
+          "marks": "4",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Draw the circuit diagram of Tow-Thomas low pass biquad circuit and derive its transfer function.",
+          "marks": "5",
+          "chapter": "Design of Active Filters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 11,
+          "text": "What is GIC? How can it be used to avoid shunt inductors in LC ladder circuit?",
+          "marks": "5",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What do you understand when the sensitivity of y with respect to x is equal to -3? Perform sensitivity analysis for Quality factor Q of the Tow Thomas low pass filter with respect to all the resistors and capacitors present in the circuit.",
+          "marks": "6",
+          "chapter": "Sensitivity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Design the $4^{th}$ order Butterworth low pass filter with half power frequency of $2,000 \\text{ rad/sec}$ and practically realizable elements using FDNR. .",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "What do you mean by 2 - port network? Explain the series connection of two 2 port networks with figure and derivation.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "Realize an active filter using non-inverting op-amp configuration with a zero at $s = -4$ and a pole at $s = -8$ having high frequency gain of $k = 2$.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "What is sensitivity analysis in filter design? Perform the sensitivity analysis of quality factor (Q) in Tow Thomas low pass biquad.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "Design the $4^{th}$ order Butterworth low pass filter with half power frequency of $2,000 \\text{ rad/sec}$ and practically realizable elements using FDNR. .",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Baishakh",
+      "year": "2081",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 42,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Derive the necessary expressions to determine the new values of circuit elements in the case of magnitude and frequency scaling.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Derive an expression to calculate the order of Inverse Chebyshev low pass filter. Use this formula to estimate the order of Inverse Chebyshev low pass filter having following specification:\n$\\alpha_{max} = 0.25 \\text{ dB}$, $\\omega_p = 1000 \\text{ rad/s}$\n$\\alpha_{min} = 18 \\text{ dB}$, $\\omega_s = 1400 \\text{ rad/s}$",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Find transfer function of third order constant delay filter.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Describe the frequency transformation from low pass filter to band pass filter with a suitable example.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What are the properties of lossless one port network function? Which of the following function is LC one port driving point impedance function? Explain with suitable reason.\n$Z(s) = \\frac{(s^2+1)(s^2+9)}{s(s^2+4)}$, $Z(s) = \\frac{s(s^2+4)(s^2+5)}{(s^2+3)(s^2+6)}$\nRealize a valid lossless one port function using Foster II & Cauer II methods.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define zeros of transmission. How zeros of transmission can be realized? Explain with suitable example.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is transmission coefficient? What information do you get from the transmission coefficient? Design a second order Butterworth low pass filter using lossless ladder with equal termination of $1\\Omega$ i.e. $R_1 = 1\\Omega$ and $R_2 = 1\\Omega$ (Refer Table 1)",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Design an active filter using non-inverting op-amp configuration with following transfer function.\n$T(s) = \\frac{(s + 8)}{(s + 2)}$",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Derive the transfer function of low pass sallen-key biquad filter (Refer Table :1) The half power frequency should be $10 \\text{ KHz}$. Make the largest capacitance $0.01\\mu F$ and overall gain be $1$.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Explain the importance of sensitivity analysis in the design of filter and perform the sensitivity analysis of $w_0$ of lowpass sallen-Key biquad.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Bhadra",
+      "year": "2080",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 102,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Compare and contrast between ideal and practical filters. Derive the necessary formulae for magnitude scaling and frequency scaling used in the design of a filter.",
+          "marks": "6",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Derive the relation to calculate the order $n$ of a Butterworth approximation. Use the formula to calculate the order of Butterworth having following specification $\\alpha_p = 0.5\\text{dB}$, $\\alpha_s = 20\\text{dB}$, $\\omega_p = 1000 \\text{ rad/s}$, $\\omega_s = 2000 \\text{ rad/s}$. Determine transfer function and show pole location's.",
+          "marks": "2",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "What is a constant delay filter? Find the transfer function of a third order Bessel Thomson response having constant delay.",
+          "marks": "1",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What is frequency transformation? Design a band stop filter having center frequency 2000 rad/s and bandwidth 400 rad/s from a third order Butterworth low pass filter. [Refer Table 2]",
+          "marks": "1",
+          "chapter": "Frequency Transformation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+          "marks": "5",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Which of the following is valid lossless function? State with reason. Pick one of the valid LC lossless functions and synthesize it using Foster II and Cauer II methods.\n\n(i) $Z(s) = \\dfrac{(s^2 + 4)(s^2 + 5)}{(s^2 + 2)(s^2 + 10)}$\n(ii) $Z(s) = \\dfrac{s^4 + 4s^2 + 3}{s(s^2 + 2)}$\n(iii) $Z(s) = \\dfrac{s^6 + 4s^4 + 8s^2}{s^3 + 3s}$",
+          "marks": "3",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is transmission coefficient? What information do you get from the transmission coefficient? Design a second order Butterworth low pass filter using lossless ladder with equal termination of $1\\Omega$ i.e. $R_1 = 1\\Omega$ and $R_2 = 1\\Omega$ (Refer Table 1)",
+          "marks": "6",
+          "chapter": "Design of Resistively-Terminated Lossless Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Draw the circuit diagram of Tow-Thomas Biquad circuit and derive its transfer function.\nDesign a low pass filter using Tow Thomas Biquad circuit with poles at $-450 \\pm j 893.03$\nand dc gain of $1.5$. The final circuit should contain practically realizable values.",
+          "marks": "6",
+          "chapter": "Design of Active Filters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 9,
+          "text": "What is frequency dependent negative resistor (FDNR)? How can it be used to avoid inductors in Lowpass LC ladder circuit? Explain from the circuit given in figure 1 design the lowpass filter having $w_o = 10^4 \\text{rad/s}$ and practical element values using FDNR.",
+          "marks": "5",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Design an active filter using non-inverting op-amp configuration with following transfer function.\n$T(s) = \\frac{(s + 8)}{(s + 2)}$",
+          "marks": "2",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What information do you get when the sensitivity of $y$ with respect to $x$ is $0.1$? Perform\nsensitivity analysis for center frequency $\\omega_0$ of Tow Thomas low pass filter with respect to\nall the resistors and capacitors present in the circuit.",
+          "marks": "1",
+          "chapter": "Sensitivity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Define reflection coefficient. Realize the third order Butterworth low pass filter using resistively terminated lossless ladder with $R_1 = 1\\ \\Omega$ and $R_2 = 4\\ \\Omega$. [Refer Table 2]",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Define zeros of transmission in two port network.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Design a low pass filter using Tow Thomas Biquad circuit with poles at $-450 \\pm j 893.03$\nand dc gain of $1.5$. The final circuit should contain practically realizable values.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "Derive the necessary expressions to determine the new values of circuit elements in the case of magnitude and frequency scaling.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "Design the $4^{th}$ order Butterworth low pass filter with half power frequency of $2,000 \\text{ rad/sec}$ and practically realizable elements using FDNR. .",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "Draw the circuit diagram of Tow-Thomas low pass biquad circuit and derive its transfer function.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 18,
+          "text": "What is Filter? Explain the significance of normalization and denormalization during filter design.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 19,
+          "text": "What is Filter? Explain the significance of normalization and denormalization during filter design.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 20,
+          "text": "Define reflection coefficient. Realize the third order Butterworth low pass filter using resistively terminated lossless ladder with $R_1 = 1\\ \\Omega$ and $R_2 = 4\\ \\Omega$. [Refer Table 2]",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 21,
+          "text": "What is FDNR? How can you use FDNR to avoid the inductor in filter design? Explain.\nDesign third order Butterworth low pass filter having half power frequency $4000 \\text{ rad/s}$\nusing FDNR. (Refer Table)",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Baishakh",
+      "year": "2080",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 33,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What are the properties of RC impedance function? Synthesize the given RC impedance in Foster and Cauer form.\n$Z(s) = \\frac{3(s+2)(s+4)}{(s(s+3))}$",
+          "marks": "3",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What is frequency dependent negative resistar (FDNR) ? How can it be realized? Realize the following passive filter using FDNR, having $\\omega_0 = 25000 \\text{ rad/s}$ and practical element values in your final circuit.\n\nFig: Butterworth filter at normalized frequency.",
+          "marks": "1",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Why do we need switched capacitor to simulate resister in MOS technology? How can you simulate a resister using switched capacitor? Explain with necessary derivations.",
+          "marks": "2",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What is Filter? Explain the significance of normalization and denormalization during filter design.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What are the characteristics of inverse Chebyshev response? Derive the expression to calculate the order of inverse Chebyshev low pass filter. Calculate inverse Chebyshev poles and zeros for given specifications: $\\alpha_{min} = 18\\text{dB}$, $\\alpha_{max} = 0.25\\text{dB}$, $\\omega_s = 1400\\text{rad/sec}$ and $\\omega_p = 1000\\text{rad/sec}$.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What is a constant delay filter? What is its significance? Derive a transfer function of a second order constant delay filter.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What are the applications of Frequency Transformation in Filter Design. How can you obtain a high pass filter from a given low pass filter? Explain with a suitable example.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What is zero shifting by partial removal of a pole? Explain with a suitable example.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What is transmission coefficient? What information do we get from it? Derive the expression for reflection coefficient for a resistively terminated LC ladder network.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Design a low pass filter using Tow Thomas Biquad circuit with poles at $-450 \\pm j 893.03$\nand dc gain of $1.5$. The final circuit should contain practically realizable values.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "How is the excess gain compensated in Sallen-Key circuit? Explain with necessary derivations and diagrams.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What is the importance of sensitivity analysis in filter design? Perform the sensitivity analysis of $\\omega_0$ of sallen-key lowpass biquad filter.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Bhadra",
+      "year": "2079",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 94,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What is Filter? Explain the significance of normalization and denormalization during filter design. Derive the expression to calculate the new values of elements that will change the operating frequency of a low pass filter from $\\omega_{old}$ to $\\omega_{new}$.",
+          "marks": "6",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Derive the relation to calculate the order $n$ of a Butterworth approximation. Use the formula to calculate the order of Butterworth having following specification $\\alpha_p = 0.5\\text{dB}$, $\\alpha_s = 20\\text{dB}$, $\\omega_p = 1000 \\text{ rad/s}$, $\\omega_s = 2000 \\text{ rad/s}$. Determine transfer function and show pole location's.",
+          "marks": "2",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "What is a constant delay filter? Find the transfer function of a third order Bessel Thomson response having constant delay.",
+          "marks": "1",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What is frequency transformation? Design a band stop filter having center frequency 2000 rad/s and bandwidth 400 rad/s from a third order Butterworth low pass filter. [Refer Table 2]",
+          "marks": "4",
+          "chapter": "Frequency Transformation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+          "marks": "5",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What is transmission coefficient? What information do you get from the transmission coefficient? Design a second order Butterworth low pass filter using lossless ladder with equal termination of $1\\Omega$ i.e. $R_1 = 1\\Omega$ and $R_2 = 1\\Omega$ (Refer Table 1)",
+          "marks": "6",
+          "chapter": "Design of Resistively-Terminated Lossless Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Draw the circuit diagram of Tow-Thomas Biquad circuit and derive its transfer function.\nDesign a low pass filter using Tow Thomas Biquad circuit with poles at $-450 \\pm j 893.03$\nand dc gain of $1.5$. The final circuit should contain practically realizable values.",
+          "marks": "6",
+          "chapter": "Design of Active Filters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 8,
+          "text": "What is frequency dependent negative resistor (FDNR)? How can it be used to avoid inductors in Lowpass LC ladder circuit? Explain from the circuit given in figure 1 design the lowpass filter having $w_o = 10^4 \\text{rad/s}$ and practical element values using FDNR.",
+          "marks": "5",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Realize an active filter using non-inverting op-amp configuration with a zero at $s = -4$ and a pole at $s = -8$ having high frequency gain of $k = 2$.",
+          "marks": "4",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What information do you get when the sensitivity of $y$ with respect to $x$ is $0.1$? Perform\nsensitivity analysis for center frequency $\\omega_0$ of Tow Thomas low pass filter with respect to\nall the resistors and capacitors present in the circuit.",
+          "marks": "1",
+          "chapter": "Sensitivity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Define reflection coefficient. Realize the third order Butterworth low pass filter using resistively terminated lossless ladder with $R_1 = 1\\ \\Omega$ and $R_2 = 4\\ \\Omega$. [Refer Table 2]",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Define zeros of transmission in two port network.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Design a low pass filter using Tow Thomas Biquad circuit with poles at $-450 \\pm j 893.03$\nand dc gain of $1.5$. The final circuit should contain practically realizable values.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "What is frequency transformation?",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "Design the $4^{th}$ order Butterworth low pass filter with half power frequency of $2,000 \\text{ rad/sec}$ and practically realizable elements using FDNR. .",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "What are the significance of normalization and denormalization in filter design? Derive equation to calculate the new values of resistors, inductors and capacitors that will change the half-power frequency of a low pass filter from $\\omega_0$ rad/s to $\\omega_n$ rad/s.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "Derive an expression to calculate the order of Inverse Chebyshev low pass filter. Use this formula to estimate the order of Inverse Chebyshev low pass filter having following specification:\n$\\alpha_{max} = 0.25 \\text{ dB}$, $\\omega_p = 1000 \\text{ rad/s}$\n$\\alpha_{min} = 18 \\text{ dB}$, $\\omega_s = 1400 \\text{ rad/s}$",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 18,
+          "text": "What is a constant delay filter? Find the transfer function of a third order Bessel Thomson response having constant delay.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 19,
+          "text": "What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 20,
+          "text": "Why is sensitivity analysis important in filter design? Perform the sensitivity analysis of $\\omega_0$ in Tow Thomas low pass filter.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 21,
+          "text": "Design the $4^{th}$ order Butterworth low pass filter with half power frequency of $2,000 \\text{ rad/sec}$ and practically realizable elements using FDNR. .",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Baishakh",
+      "year": "2079",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 37,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What is delay equalization? What is its importance? Explain.",
+          "marks": "4",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Which of the following functions are LC driving point impedance function and why? Pick one of the valid LC driving point impedance and synthesize it in Foster-I and Caver-I form:\n$Z_1(s) = \\frac{(s^2 + 1)(s^2 + 5)}{(s^2 + 2)(s^2 + 10)}$\n$Z_2(s) = \\frac{5s(s^2 + 4)}{(s^2 + 1)(s^2 + 3)}$\n$Z_3(s) = \\frac{2(s^2 + 1)(s^2 + 9)}{s(s^2 + 4)}$\n$Z_4(s) = 4\\frac{(s + 2)(s + 5)}{(s + 1)(s + 4)}$",
+          "marks": "3",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "What is GIC? How GIC can be used to simulate the floating inductor in the passive filter? Explain.",
+          "marks": "5",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Derive an expression to calculate the order of Inverse Chebyshev low pass filter. Use this formula to estimate the order of Inverse Chebyshev low pass filter having following specification:\n$\\alpha_{max} = 0.25 \\text{ dB}$, $\\omega_p = 1000 \\text{ rad/s}$\n$\\alpha_{min} = 18 \\text{ dB}$, $\\omega_s = 1400 \\text{ rad/s}$",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What is frequency transformation? Design a band stop filter having center frequency 2000 rad/s and bandwidth 400 rad/s from a third order Butterworth low pass filter. [Refer Table 2]",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is transmission coefficient? What information do you get from the transmission coefficient? Design a second order Butterworth low pass filter using lossless ladder with equal termination of $1\\Omega$ i.e. $R_1 = 1\\Omega$ and $R_2 = 1\\Omega$ (Refer Table 1)",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Design a $4^{\\text{th}}$ order Butterworth LPF using cascade of two Sallenkey biquads having half power frequency of $10 \\text{ kHz} , using$ $0.1 \\mu\\text{F}$ capacitors. Perform gain compensation if necessary.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain the gain enhancement procedure in Sallen and Key biquad circuit.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What information do you get when the sensitivity of x with respect to y is -5? Perform sensitivity analysis for center frequency ($w_0$) of the Sallen Key low pass filter with respect to all the resistors and capacitors present in the circuit.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Design the $4^{th}$ order Butterworth low pass filter with half power frequency of $2,000 \\text{ rad/sec}$ and practically realizable elements using FDNR. .",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Bhadra",
+      "year": "2078",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 70,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What is filter? Why do we need filter in communication system? Explain the types of filter with their magnitude responses.",
+          "marks": "1",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What is a constant delay filter? Find the transfer function of a third order Bessel Thomson response having constant delay.",
+          "marks": "4",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive an expression to calculate the order of Inverse Chebyshev low pass filter. Use this formula to estimate the order of Inverse Chebyshev low pass filter having following specification:\n$\\alpha_{max} = 0.25 \\text{ dB}$, $\\omega_p = 1000 \\text{ rad/s}$\n$\\alpha_{min} = 18 \\text{ dB}$, $\\omega_s = 1400 \\text{ rad/s}$",
+          "marks": "4",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What is frequency transformation? Design a band stop filter having center frequency 2000 rad/s and bandwidth 400 rad/s from a third order Butterworth low pass filter. [Refer Table 2]",
+          "marks": "4",
+          "chapter": "Frequency Transformation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Which of the following functions are LC driving point impedance function and why? Pick one of the valid LC driving point impedance and synthesize it in Foster-I and Caver-I form:\n$Z_1(s) = \\frac{(s^2 + 1)(s^2 + 5)}{(s^2 + 2)(s^2 + 10)}$\n$Z_2(s) = \\frac{5s(s^2 + 4)}{(s^2 + 1)(s^2 + 3)}$\n$Z_3(s) = \\frac{2(s^2 + 1)(s^2 + 9)}{s(s^2 + 4)}$\n$Z_4(s) = 4\\frac{(s + 2)(s + 5)}{(s + 1)(s + 4)}$",
+          "marks": "2",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What do you mean by zero shifting? How can it be used for synthesis of two-port networks? Explain.",
+          "marks": "5",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is transmission coefficient? What information do you get from the transmission coefficient? Design a second order Butterworth low pass filter using lossless ladder with equal termination of $1\\Omega$ i.e. $R_1 = 1\\Omega$ and $R_2 = 1\\Omega$ (Refer Table 1)",
+          "marks": "6",
+          "chapter": "Design of Resistively-Terminated Lossless Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Design an active filter using non-inverting op-amp configuration with following transfer function.\n$T(s) = \\frac{(s + 8)}{(s + 2)}$",
+          "marks": "4",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Derive the transfer function of Tow-Thomas band pass biquad and design it with centre frequency of $1000 \\text{ rad/sec} , bandwidth$ of $200 \\text{ rad/sec}$ and a maximum gain of $1$.",
+          "marks": "5",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Perform sensitivity analysis for center frequency ($\\omega_o$) and quality factor ($Q$) of the Tow Thomas low pass filter with respect to all the resistors and capacitors present in the circuit.",
+          "marks": "5",
+          "chapter": "Sensitivity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Define reflection coefficient. Realize the third order Butterworth low pass filter using resistively terminated lossless ladder with $R_1 = 1\\ \\Omega$ and $R_2 = 4\\ \\Omega$. [Refer Table 2]",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What is a constant delay filter?",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "What is frequency transformation?",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "What are the applications of Frequency Transformation in Filter Design. How can you obtain a high pass filter from a given low pass filter? Explain with a suitable example.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "How can you assure that the following function is a valid LC impedance function?\n$Z(s) = \\frac{8s^3+10s}{5+6s^2+s^4}$\nSynthesize it using Foster I and Cauer II form.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "Define reflection coefficient. Realize the third order Butterworth low pass filter using resistively terminated lossless ladder with $R_1 = 1\\ \\Omega$ and $R_2 = 4\\ \\Omega$. [Refer Table 2]",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 18,
+          "text": "What is the importance of sensitivity analysis in filter design? Perform the sensitivity analysis of Tow Thomas low pass filter.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2076 Chaitra",
+      "year": "2076",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 118,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What is all-pass filter? Where is it used since it passes all the frequency components?",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What is a constant delay filter? Find the transfer function of a third order Bessel Thomson response having constant delay.",
+          "marks": "4",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive an expression to calculate the required order for given low pass specifications using Chebyshev approximation. Using the derived expression, calculate the order of Chebyshev filter for following specifications:\n$\\alpha_{max} = 0.5 \\text{ dB}$\n$\\alpha_{min} = 15 \\text{ dB}$\n$w_p = 1000 \\text{ rad/s}$\n$w_s = 2000 \\text{ rad/s}$\nAlso show pole locations.",
+          "marks": "4",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What is frequency transformation? Design a band stop filter having center frequency 2000 rad/s and bandwidth 400 rad/s from a third order Butterworth low pass filter. [Refer Table 2]",
+          "marks": "4",
+          "chapter": "Frequency Transformation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+          "marks": "5",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What are the properties of lossless one port network function? Which of the following function is LC one port driving point impedance function? Explain with suitable reason.\n$Z(s) = \\frac{(s^2+1)(s^2+9)}{s(s^2+4)}$, $Z(s) = \\frac{s(s^2+4)(s^2+5)}{(s^2+3)(s^2+6)}$\nRealize a valid lossless one port function using Foster II & Cauer II methods.",
+          "marks": "3",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is transmission coefficient? What information do you get from the transmission coefficient? Design a second order Butterworth low pass filter using lossless ladder with equal termination of $1\\Omega$ i.e. $R_1 = 1\\Omega$ and $R_2 = 1\\Omega$ (Refer Table 1)",
+          "marks": "6",
+          "chapter": "Design of Resistively-Terminated Lossless Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Derive the transfer function of Sallen-key low pass filter. Design a filter for $T(s) = \\frac{1}{s^2 + 0.765s + 1}$ using Sallen key low pass filter. In your final design the values of capacitors must be $0.01\\mu\\text{F}$ and feedback resistors should be equal.",
+          "marks": "8",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Realize an active filter using non-inverting op-amp configuration with a zero at $s = -4$ and a pole at $s = -8$ having high frequency gain of $k = 2$.",
+          "marks": "4",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What is GIC? How can you simulate a grounded inductor? Design a fourth order Butterworth highpass filter having $\\omega_o=16,000$ rad/s and practically suitable elements using simulated inductors. [Refer table 2]",
+          "marks": "1",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What information do you get when the sensitivity of x with respect to y is -5? Perform sensitivity analysis for center frequency ($w_0$) of the Sallen Key low pass filter with respect to all the resistors and capacitors present in the circuit.",
+          "marks": "5",
+          "chapter": "Sensitivity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Define reflection coefficient. Realize the third order Butterworth low pass filter using resistively terminated lossless ladder with $R_1 = 1\\ \\Omega$ and $R_2 = 4\\ \\Omega$. [Refer Table 2]",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Define zeros of transmission in two port network.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "What is a constant delay filter?",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "What is frequency transformation?",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "Find transfer function of third order constant delay filter.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 18,
+          "text": "Design a filter for $T(s) = \\frac{1}{s^2 + 0.765s + 1}$ using Sallen key low pass filter. In your final design the values of capacitors must be $0.01\\mu\\text{F}$ and feedback resistors should be equal.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 19,
+          "text": "Derive an expression to calculate the order of Inverse Chebyshev low pass filter. Use this formula to estimate the order of Inverse Chebyshev low pass filter having following specification:\n$\\alpha_{max} = 0.25 \\text{ dB}$, $\\omega_p = 1000 \\text{ rad/s}$\n$\\alpha_{min} = 18 \\text{ dB}$, $\\omega_s = 1400 \\text{ rad/s}$",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 20,
+          "text": "Find transfer function of third order constant delay filter.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 21,
+          "text": "What is frequency transformation? Design a band stop filter having center frequency 2000 rad/s and bandwidth 400 rad/s from a third order Butterworth low pass filter. [Refer Table 2]",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 22,
+          "text": "Define reflection coefficient. Realize the third order Butterworth low pass filter using resistively terminated lossless ladder with $R_1 = 1\\ \\Omega$ and $R_2 = 4\\ \\Omega$. [Refer Table 2]",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 23,
+          "text": "What are the advantages of active filter over passive filter? Realize $a^n$ active filter having a pole at $100$ and a zero at $1000$ with a dc gain of $5$.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 24,
+          "text": "What information do you get when the sensitivity of x with respect to y is -5? Perform sensitivity analysis for center frequency ($w_0$) of the Sallen Key low pass filter with respect to all the resistors and capacitors present in the circuit.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Chaitra",
+      "year": "2075",
+      "month": "Chaitra",
+      "examType": "Back",
+      "totalMarks": 144,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define $\\alpha_{max} , \\alpha_{min} , half$ power frequency, bandwidth, insertion loss and insertion gain with necessary figures.",
+          "marks": "6",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What is a constant delay filter? Find the transfer function of a third order Bessel Thomson response having constant delay.",
+          "marks": "4",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive the relation to calculate the order $n$ of a Butterworth approximation. Use the formula to calculate the order of Butterworth having following specification $\\alpha_p = 0.5\\text{dB}$, $\\alpha_s = 20\\text{dB}$, $\\omega_p = 1000 \\text{ rad/s}$, $\\omega_s = 2000 \\text{ rad/s}$. Determine transfer function and show pole location's.",
+          "marks": "2",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What is frequency transformation? Design a band stop filter having center frequency 2000 rad/s and bandwidth 400 rad/s from a third order Butterworth low pass filter. [Refer Table 2]",
+          "marks": "4",
+          "chapter": "Frequency Transformation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+          "marks": "5",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Which of the following functions are LC driving point impedance function and why? Pick one of the valid LC driving point impedance and synthesize it in Foster-I and Caver-I form:\n$Z_1(s) = \\frac{(s^2 + 1)(s^2 + 5)}{(s^2 + 2)(s^2 + 10)}$\n$Z_2(s) = \\frac{5s(s^2 + 4)}{(s^2 + 1)(s^2 + 3)}$\n$Z_3(s) = \\frac{2(s^2 + 1)(s^2 + 9)}{s(s^2 + 4)}$\n$Z_4(s) = 4\\frac{(s + 2)(s + 5)}{(s + 1)(s + 4)}$",
+          "marks": "2",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is transmission coefficient? What information do you get from the transmission coefficient? Design a second order Butterworth low pass filter using lossless ladder with equal termination of $1\\Omega$ i.e. $R_1 = 1\\Omega$ and $R_2 = 1\\Omega$ (Refer Table 1)",
+          "marks": "6",
+          "chapter": "Design of Resistively-Terminated Lossless Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What is Bruton Transformation? How can you simulate grounded inductor using FDNR? Explain with necessary figures and derivations.",
+          "marks": "5",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Derive the transfer function of Sallen-key low pass filter. Design a filter for $T(s) = \\frac{1}{s^2 + 0.765s + 1}$ using Sallen key low pass filter. In your final design the values of capacitors must be $0.01\\mu\\text{F}$ and feedback resistors should be equal.",
+          "marks": "8",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Design the fourth order Butterworth low-pass filter using a leapfrog simulation. Your final design should accommodate half power frequency of $1000 \\text{ rad/sec}$ and should have practically realizable elements in it. [Refer Table 2]",
+          "marks": "6",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What information do you get when the sensitivity of x with respect to y is -5? Perform sensitivity analysis for center frequency ($w_0$) of the Sallen Key low pass filter with respect to all the resistors and capacitors present in the circuit.",
+          "marks": "5",
+          "chapter": "Sensitivity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Define reflection coefficient. Realize the third order Butterworth low pass filter using resistively terminated lossless ladder with $R_1 = 1\\ \\Omega$ and $R_2 = 4\\ \\Omega$. [Refer Table 2]",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Define zeros of transmission in two port network.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Explain with necessary figures and derivations.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "What is a constant delay filter?",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "What is frequency transformation?",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 18,
+          "text": "Find transfer function of third order constant delay filter.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 19,
+          "text": "Design a filter for $T(s) = \\frac{1}{s^2 + 0.765s + 1}$ using Sallen key low pass filter. In your final design the values of capacitors must be $0.01\\mu\\text{F}$ and feedback resistors should be equal.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 20,
+          "text": "Derive an expression to calculate the order of Inverse Chebyshev low pass filter. Use this formula to estimate the order of Inverse Chebyshev low pass filter having following specification:\n$\\alpha_{max} = 0.25 \\text{ dB}$, $\\omega_p = 1000 \\text{ rad/s}$\n$\\alpha_{min} = 18 \\text{ dB}$, $\\omega_s = 1400 \\text{ rad/s}$",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 21,
+          "text": "Find transfer function of third order constant delay filter.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 22,
+          "text": "What is frequency transformation? Design a band stop filter having center frequency 2000 rad/s and bandwidth 400 rad/s from a third order Butterworth low pass filter. [Refer Table 2]",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 23,
+          "text": "What are the properties of lossless one port network function? Which of the following function is LC one port driving point impedance function? Explain with suitable reason.\n$Z(s) = \\frac{(s^2+1)(s^2+9)}{s(s^2+4)}$, $Z(s) = \\frac{s(s^2+4)(s^2+5)}{(s^2+3)(s^2+6)}$\nRealize a valid lossless one port function using Foster II & Cauer II methods.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 24,
+          "text": "Define zeros of transmission. How zeros of transmission can be realized? Explain with suitable example.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 25,
+          "text": "What is transmission coefficient? What information do you get from the transmission coefficient? Design a second order Butterworth low pass filter using lossless ladder with equal termination of $1\\Omega$ i.e. $R_1 = 1\\Omega$ and $R_2 = 1\\Omega$ (Refer Table 1)",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 26,
+          "text": "Derive the transfer function of Sallen-key low pass filter. Design a filter for $T(s) = \\frac{1}{s^2 + 0.765s + 1}$ using Sallen key low pass filter. In your final design the values of capacitors must be $0.01\\mu\\text{F}$ and feedback resistors should be equal.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 27,
+          "text": "What is Sensitivity? What is the importance of sensitivity analysis in filter design?\nPerform sensitivity analysis of $\\omega_0$ in Sallen-Key low pass filter.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 28,
+          "text": "What is Bruton Transformation? How can you simulate grounded inductor using FDNR? Explain with necessary figures and derivations.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 29,
+          "text": "Design a fourth order Butterworth low pass filter having half power frequency of 4000\nrad/s using Leapfrog simulation. [Use table 1]",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Ashwin",
+      "year": "2075",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 39,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Simulate the Butterworth $4^{th}$ order low pass filter in resistively - terminated lossless network using FDNR. (Refer table 2)",
+          "marks": "6",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What is the importance of scaling in Filter design? Derive element scaling equations.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive an expression to calculate the required order for given low pass specifications using Chebyshev approximation. Using the derived expression, calculate the order of Chebyshev filter for following specifications:\n$\\alpha_{max} = 0.5 \\text{ dB}$\n$\\alpha_{min} = 15 \\text{ dB}$\n$w_p = 1000 \\text{ rad/s}$\n$w_s = 2000 \\text{ rad/s}$\nAlso show pole locations.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What is a constant delay filter? Find the transfer function of a third order Bessel Thomson response having constant delay.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What is frequency transformation? Design a band stop filter having center frequency 2000 rad/s and bandwidth 400 rad/s from a third order Butterworth low pass filter. [Refer Table 2]",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Which of the following functions are LC driving point impedance function and why? Pick one of the valid LC driving point impedance and synthesize it in Foster-I and Caver-I form:\n$Z_1(s) = \\frac{(s^2 + 1)(s^2 + 5)}{(s^2 + 2)(s^2 + 10)}$\n$Z_2(s) = \\frac{5s(s^2 + 4)}{(s^2 + 1)(s^2 + 3)}$\n$Z_3(s) = \\frac{2(s^2 + 1)(s^2 + 9)}{s(s^2 + 4)}$\n$Z_4(s) = 4\\frac{(s + 2)(s + 5)}{(s + 1)(s + 4)}$",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is \"zero shifting by partial removal of pole\"? Explain with example. Also mention its importance in two port network synthesis.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Define reflection coefficient. Realize the third order Butterworth low pass filter using resistively terminated lossless ladder with $R_1 = 1\\ \\Omega$ and $R_2 = 4\\ \\Omega$. [Refer Table 2]",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Derive the transfer function of Sallen-key low pass filter. Design a filter for $T(s) = \\frac{1}{s^2 + 0.765s + 1}$ using Sallen key low pass filter. In your final design the values of capacitors must be $0.01\\mu\\text{F}$ and feedback resistors should be equal.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What is RC-CR transformation? How can you convert a Sallen Key low pass filter into the Sallen Key High pass filter using RC-CR transformation?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What information do you get when the sensitivity of x with respect to y is -5? Perform sensitivity analysis for center frequency ($w_0$) of the Sallen Key low pass filter with respect to all the resistors and capacitors present in the circuit.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What is Bruton Transformation? How can you simulate grounded inductor using FDNR? Explain with necessary figures and derivations.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2074 Chaitra",
+      "year": "2074",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 95,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What is a filter? What is its importance in communication? Explain ideal response and response of practical filter.",
+          "marks": "1",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What is $a^n$ all pass filter? What is its importance? Derive the transfer function of second order constant delay filter.",
+          "marks": "1",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive the expression to calculate the order of Butterworth approximation for given lowpass filter specifications. Calculate the order of Butterworth low pass filter having following specification;\n\ni) Passband extends from $\\omega = 0$ to $\\omega = 200$ rad/s and the attenuation in the passband should not exceed 0.1 dB.\nii) Stopband extends from $\\omega = 2000$ rad/s to $\\omega = \\infty$ and the attenuation in the stopband should not be less than 30 dB",
+          "marks": "3",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What is frequency transformation? Design a band stop filter having center frequency 2000 rad/s and bandwidth 400 rad/s from a third order Butterworth low pass filter. [Refer Table 2]",
+          "marks": "4",
+          "chapter": "Frequency Transformation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What are the properties of lossless one port network function? Which of the following function is LC one port driving point impedance function? Explain with suitable reason.\n$Z(s) = \\frac{(s^2+1)(s^2+9)}{s(s^2+4)}$, $Z(s) = \\frac{s(s^2+4)(s^2+5)}{(s^2+3)(s^2+6)}$\nRealize a valid lossless one port function using Foster II & Cauer II methods.",
+          "marks": "2",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What is transmission coefficient? What information do you get from the transmission coefficient? Design a second order Butterworth low pass filter using lossless ladder with equal termination of $1\\Omega$ i.e. $R_1 = 1\\Omega$ and $R_2 = 1\\Omega$ (Refer Table 1)",
+          "marks": "6",
+          "chapter": "Design of Resistively-Terminated Lossless Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Define zeros of transmission. How zeros of transmission can be realized? Explain with suitable example.",
+          "marks": "4",
+          "chapter": "Design of Resistively-Terminated Lossless Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Design the fourth order Butterworth low-pass filter using a leapfrog simulation. Your final design should accommodate half power frequency of $1000 \\text{ rad/sec}$ and should have practically realizable elements in it. [Refer Table 2]",
+          "marks": "6",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "How excess gain can be compensated in sallen key filter? Explain.",
+          "marks": "4",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What is Bruton Transformation? How can you simulate grounded inductor using FDNR? Explain with necessary figures and derivations.",
+          "marks": "1",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Perform sensitivity analysis for center frequency ($\\omega_o$) and quality factor ($Q$) of the Tow Thomas low pass filter with respect to all the resistors and capacitors present in the circuit.",
+          "marks": "5",
+          "chapter": "Sensitivity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What are the applications of switched capacitor filter? Design a switched capacitor filter for following requirements.\n\np.t.o >",
+          "marks": "6",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Define reflection coefficient. Realize the third order Butterworth low pass filter using resistively terminated lossless ladder with $R_1 = 1\\ \\Omega$ and $R_2 = 4\\ \\Omega$. [Refer Table 2]",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Define zeros of transmission in two port network.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "What is frequency transformation?",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "Find transfer function of third order constant delay filter.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 18,
+          "text": "Draw the circuit diagram of Tow-Thomas low pass biquad circuit and derive its transfer function.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 19,
+          "text": "What are the applications of Frequency Transformation in Filter Design. How can you obtain a high pass filter from a given low pass filter? Explain with a suitable example.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 20,
+          "text": "What is transmission coefficient? What information do you get from the transmission coefficient? Design a second order Butterworth low pass filter using lossless ladder with equal termination of $1\\Omega$ i.e. $R_1 = 1\\Omega$ and $R_2 = 1\\Omega$ (Refer Table 1)",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 21,
+          "text": "Define sensitivity Perform sensitivity analysis of Tow-Thomas biquad low pass filter.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2074 Ashwin",
+      "year": "2074",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 25,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define transmission and reflection coefficient. Synthesize $t(s) = 1/(s^3+2s^2+2s+1)$ in LC ladder circuit terminated with $R_1=R_2=1\\Omega$.",
+          "marks": "3",
+          "chapter": "Design of Resistively-Terminated Lossless Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Define and explain the following terms with necessary diagrams: $\\alpha_p , \\alpha_s , \\omega_p , \\omega_s$. What is scaling? Derive element scaling equations.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "What are the characteristics of inverse Chebyshev response? Derive the expression to calculate the order of inverse Chebyshev low pass filter. Calculate inverse Chebyshev poles and zeros for given specifications: $\\alpha_{min} = 18\\text{dB}$, $\\alpha_{max} = 0.25\\text{dB}$, $\\omega_s = 1400\\text{rad/sec}$ and $\\omega_p = 1000\\text{rad/sec}$.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What is constant delay filter? Obtain the transfer function of second order constant delay filter. Also mention the importance of delay equalization.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What are the properties of lossless one port function? Realize the following function using Cauer I and Foster II method.\n$Z(s) = \\frac{s(s^2+4)}{(s^2+2)(s^2+6)}$",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Draw the circuit diagram of Sallen-Key lowpass biquad circuit and derive the transfer function. How can you obtain highpass filter from lowpass one? Design the second order lowpass Butterworth filter having half power frequency of 12 KHz using Sallen-Key biquad circuit. $T_2(s) = 1/(s^2+\\sqrt{2} s+1)$",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": true
+        },
+        {
+          "qNum": 7,
+          "text": "What is the importance of sensitivity analysis in filter design? Perform the sensitivity analysis of Tow Thomas lowpass filter.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2073 Shrawan",
+      "year": "2073",
+      "month": "Shrawan",
+      "examType": "Back",
+      "totalMarks": 40,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What are the characteristics of Elliptical Response? Compare it with Chebyshev and Inverse Chebyshev response.",
+          "marks": "6",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Which of the following functions are LC driving point impedance function and why? Pick one of the valid LC driving point impedance and synthesize it in Foster-I and Caver-I form:\n$Z_1(s) = \\frac{(s^2 + 1)(s^2 + 5)}{(s^2 + 2)(s^2 + 10)}$\n$Z_2(s) = \\frac{5s(s^2 + 4)}{(s^2 + 1)(s^2 + 3)}$\n$Z_3(s) = \\frac{2(s^2 + 1)(s^2 + 9)}{s(s^2 + 4)}$\n$Z_4(s) = 4\\frac{(s + 2)(s + 5)}{(s + 1)(s + 4)}$",
+          "marks": "2",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "What is Transmission and Reflection Coefficient? How resistively terminated ladder network can be realized with finite transmission zeroes? Explain.",
+          "marks": "2",
+          "chapter": "Design of Resistively-Terminated Lossless Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What is Normalization and De-normalization? A low pass filter has half power frequency of $w_0$ rad/s. Derive formula to calculate the new value of the resisters, capacitors and inductors present in the low pass filter if you want to change its half power frequency to $w_n$ rad/s.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Find transfer function of third order constant delay filter.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What is zero shifting by partial removal of pole? How can two-port passive circuits be synthesized using zero-shifting by partial pole removal? Explain.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "How can the gain enhancement be performed in a Sallen-Key circuit? Explain with necessary diagram.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What is sensitivity? Describe it's importance in filter design? Perform sensitivity analysis of quality factor in Tow Thomas Low Pass Filter.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What is Bruton Transformation? How can you simulate grounded inductor using FDNR? Explain with necessary figures and derivations.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Why resistors are replaced by switched capacitor in IC technology? How can you simulate a resistor using a switched capacitor? Explain with necessary derivations. Also draw the switched capacitor equivalent circuit for inverting summer lossy integration and non inverting integrator.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2073 Chaitra",
+      "year": "2073",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 113,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define normalization and denormalisation. Following circuit is a lowpass filter designed at normalization frequency of $w_o = 1 \\text{rad/s}$. Apply frequency and magnitude scaling so that $w_o = 10^5 \\text{rad/s}$ and practically realizable elements.",
+          "marks": "3",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What are the characteristics of butterworth response? Calculate the transfer function of $5^{th}$ order Butterworth filter.",
+          "marks": "3",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Show that the poles of chebyshev filter lie on $a^n$ ellipse. Also show the major and minor axes.",
+          "marks": "7",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Which of the following functions are LC driving point impedance function and why? Pick one of the valid LC driving point impedance and synthesize it in Foster-I and Caver-I form:\n$Z_1(s) = \\frac{(s^2 + 1)(s^2 + 5)}{(s^2 + 2)(s^2 + 10)}$\n$Z_2(s) = \\frac{5s(s^2 + 4)}{(s^2 + 1)(s^2 + 3)}$\n$Z_3(s) = \\frac{2(s^2 + 1)(s^2 + 9)}{s(s^2 + 4)}$\n$Z_4(s) = 4\\frac{(s + 2)(s + 5)}{(s + 1)(s + 4)}$",
+          "marks": "2",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What is transmission coefficient? What information do you get from the transmission coefficient? Design a second order Butterworth low pass filter using lossless ladder with equal termination of $1\\Omega$ i.e. $R_1 = 1\\Omega$ and $R_2 = 1\\Omega$ (Refer Table 1)",
+          "marks": "6",
+          "chapter": "Design of Resistively-Terminated Lossless Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define zeros of transmission. How zeros of transmission can be realized? Explain with suitable example.",
+          "marks": "4",
+          "chapter": "Design of Resistively-Terminated Lossless Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Derive the transfer function of Sallen-key low pass filter. Design a filter for $T(s) = \\frac{1}{s^2 + 0.765s + 1}$ using Sallen key low pass filter. In your final design the values of capacitors must be $0.01\\mu\\text{F}$ and feedback resistors should be equal.",
+          "marks": "8",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What is frequency dependent negative resistor (FDNR)? How can it be used to avoid inductors in Lowpass LC ladder circuit? Explain from the circuit given in figure 1 design the lowpass filter having $w_o = 10^4 \\text{rad/s}$ and practical element values using FDNR.",
+          "marks": "5",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What is RC-CR transformation? Draw the circuit diagram of high pass sallen-key biquad obtained by RC-CR transformation of its low pass counterpart.",
+          "marks": "4",
+          "chapter": "Design of Active Filters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 10,
+          "text": "What information do you get when the sensitivity of x with respect to y is -5? Perform sensitivity analysis for center frequency ($w_0$) of the Sallen Key low pass filter with respect to all the resistors and capacitors present in the circuit.",
+          "marks": "5",
+          "chapter": "Sensitivity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Define reflection coefficient. Realize the third order Butterworth low pass filter using resistively terminated lossless ladder with $R_1 = 1\\ \\Omega$ and $R_2 = 4\\ \\Omega$. [Refer Table 2]",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Define zeros of transmission in two port network.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Design a filter for $T(s) = \\frac{1}{s^2 + 0.765s + 1}$ using Sallen key low pass filter. In your final design the values of capacitors must be $0.01\\mu\\text{F}$ and feedback resistors should be equal.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "Design the $4^{th}$ order Butterworth low pass filter with half power frequency of $2,000 \\text{ rad/sec}$ and practically realizable elements using FDNR. .",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "Which of the following functions are LC driving point impedance function and why? Pick one of the valid LC driving point impedance and synthesize it in Foster-I and Caver-I form:\n$Z_1(s) = \\frac{(s^2 + 1)(s^2 + 5)}{(s^2 + 2)(s^2 + 10)}$\n$Z_2(s) = \\frac{5s(s^2 + 4)}{(s^2 + 1)(s^2 + 3)}$\n$Z_3(s) = \\frac{2(s^2 + 1)(s^2 + 9)}{s(s^2 + 4)}$\n$Z_4(s) = 4\\frac{(s + 2)(s + 5)}{(s + 1)(s + 4)}$",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "Define zeros of transmission. How zeros of transmission can be realized? Explain with suitable example.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 18,
+          "text": "Realize the third order Butterworth lowpass transfer function $T(s) = \\frac{1}{S^3 + 2S^2 + 2S + 1}$ in the form of resistively terminated LC ladder with $R_1 = 1\\Omega$ and $R_2 = 2\\Omega$.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 19,
+          "text": "Derive the transfer function of Sallen and Key low pass Biquad. Using Sallen and Key circuit, design a lowpass filter having $w_o$ of $1000 \\text{rad/ses} , quality$ factor of $0.866$ and gain of $2$.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 20,
+          "text": "Explain RC – CR transformation with suitable examples.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 21,
+          "text": "What is sensitivity? What is the importance of sensitivity analysis in filter design? Perform sensitivity analysis of $w_o$ in Sallen and Key lowpass filter.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2072 Kartik",
+      "year": "2072",
+      "month": "Kartik",
+      "examType": "Back",
+      "totalMarks": 56,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "A Chebyshev low pass filter has following specifications:\n$\\alpha_{max} = 0.5 \\text{ dB} , \\omega_p = 1 \\text{ rad/s}$\n$\\alpha_{min} = 22 \\text{ dB} , \\omega_s = 2.33 \\text{ rad/s}$\nFind the minimum order required to meet the specifications and also find the transfer function.",
+          "marks": "8",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Synthesize a two port LC ladder to satisfy the following open circuit impedance parameters: $z_{21}(s) = \\frac{k(s^2 + 9)}{s(s^2 + 4)}$; $z_{22}(s) = \\frac{(s^2 + 1)}{s(s^2 + 4)}$",
+          "marks": "7",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "What is the importance of Bruton transformation in filter design? How can you simulate FDNR using generalized impedance converter (GIC)? Explain with example.",
+          "marks": "6",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Define the terms: $\\alpha_{max} , \\alpha_{min} , Half$ Power Frequency, Bandwidth, Insertion Gain and Insertion Loss with necessary figures.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What is delay equalization and how can it be done? Explain with necessary figures.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What is frequency transformation? Describe the frequency transformation from low pass to band stop filter with example.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is transmission coefficient? What information do you get from the transmission coefficient? Design a second order Butterworth low pass filter using lossless ladder with equal termination of $1\\Omega$ i.e. $R_1 = 1\\Omega$ and $R_2 = 1\\Omega$ (Refer Table 1)",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Design an active filter using non-inverting op-amp configuration with following transfer function.\n$T(s) = \\frac{(s + 8)}{(s + 2)}$",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Draw the circuit diagram of Sallen-Key low pass filter and derive its transfer function. Design second order butterworth low pass filter having half power frequency of $10 \\text{ KHz}$ using Sallen Key biquad. In your final design the value of capacitors must be $0.01 \\mu\\text{F}$ and feedback resistors should also be equal (Refer table 1).",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": true
+        },
+        {
+          "qNum": 10,
+          "text": "Define Sensitivity. What is its importance in modern filter design? Compute the sensitivity expression for the $\\omega_0$ of Sallen-Key Low pass filter.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Design the fourth order Butterworth low-pass filter using a leapfrog simulation. Your final design should accommodate half power frequency of $1000 \\text{ rad/sec}$ and should have practically realizable elements in it. [Refer Table 2]",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2072 Chaitra",
+      "year": "2072",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 102,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Derive an expression to calculate the order of Inverse Chebyshev low pass filter. Use this formula to estimate the order of Inverse Chebyshev low pass filter having following specification:\n$\\alpha_{max} = 0.25 \\text{ dB}$, $\\omega_p = 1000 \\text{ rad/s}$\n$\\alpha_{min} = 18 \\text{ dB}$, $\\omega_s = 1400 \\text{ rad/s}$",
+          "marks": "5",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What is delay equalization? How can it be done? Explain with necessary figures.",
+          "marks": "4",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "What are the applications of Frequency Transformation in Filter Design. How can you obtain a high pass filter from a given low pass filter? Explain with a suitable example.",
+          "marks": "6",
+          "chapter": "Frequency Transformation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Which of the following functions are LC driving point impedance function and why? Pick one of the valid LC driving point impedance and synthesize it in Foster-I and Caver-I form:\n$Z_1(s) = \\frac{(s^2 + 1)(s^2 + 5)}{(s^2 + 2)(s^2 + 10)}$\n$Z_2(s) = \\frac{5s(s^2 + 4)}{(s^2 + 1)(s^2 + 3)}$\n$Z_3(s) = \\frac{2(s^2 + 1)(s^2 + 9)}{s(s^2 + 4)}$\n$Z_4(s) = 4\\frac{(s + 2)(s + 5)}{(s + 1)(s + 4)}$",
+          "marks": "2",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What is transmission coefficient? What information do you get from the transmission coefficient? Design a second order Butterworth low pass filter using lossless ladder with equal termination of $1\\Omega$ i.e. $R_1 = 1\\Omega$ and $R_2 = 1\\Omega$ (Refer Table 1)",
+          "marks": "6",
+          "chapter": "Design of Resistively-Terminated Lossless Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define zeros of transmission. How zeros of transmission can be realized? Explain with suitable example.",
+          "marks": "4",
+          "chapter": "Design of Resistively-Terminated Lossless Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is frequency dependent negative resistor (FDNR)? How can it be used to avoid inductors in Lowpass LC ladder circuit? Explain from the circuit given in figure 1 design the lowpass filter having $w_o = 10^4 \\text{rad/s}$ and practical element values using FDNR.",
+          "marks": "5",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Design Sallen key lowpass filter for fourth order Butter worth filter. The final circuit should have $w_0 = 10,000$ rad/s have and practically realizable elements. (Refer table 1).",
+          "marks": "8",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Draw the circuit diagram of $a^n$ generalized impedance converter. Derive the relationship between input and output current. How can it be used to simulate a grounded FDNR? Explain.",
+          "marks": "5",
+          "chapter": "Design of Active Filters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 10,
+          "text": "What information do you get when the sensitivity of x with respect to y is -5? Perform sensitivity analysis for center frequency ($w_0$) of the Sallen Key low pass filter with respect to all the resistors and capacitors present in the circuit.",
+          "marks": "5",
+          "chapter": "Sensitivity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Define reflection coefficient. Realize the third order Butterworth low pass filter using resistively terminated lossless ladder with $R_1 = 1\\ \\Omega$ and $R_2 = 4\\ \\Omega$. [Refer Table 2]",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Define zeros of transmission in two port network.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Design the $4^{th}$ order Butterworth low pass filter with half power frequency of $2,000 \\text{ rad/sec}$ and practically realizable elements using FDNR. .",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "Which of the following functions are LC driving point impedance function and why? Pick one of the valid LC driving point impedance and synthesize it in Foster-I and Caver-I form:\n$Z_1(s) = \\frac{(s^2 + 1)(s^2 + 5)}{(s^2 + 2)(s^2 + 10)}$\n$Z_2(s) = \\frac{5s(s^2 + 4)}{(s^2 + 1)(s^2 + 3)}$\n$Z_3(s) = \\frac{2(s^2 + 1)(s^2 + 9)}{s(s^2 + 4)}$\n$Z_4(s) = 4\\frac{(s + 2)(s + 5)}{(s + 1)(s + 4)}$",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "Define zeros of transmission. How zeros of transmission can be realized? Explain with suitable example.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "Define reflection coefficient. Realize the third order Butterworth low pass filter using resistively terminated lossless ladder with $R_1 = 1\\ \\Omega$ and $R_2 = 4\\ \\Omega$. [Refer Table 2]",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 18,
+          "text": "Design the $4^{th}$ order Butterworth low pass filter with half power frequency of $2,000 \\text{ rad/sec}$ and practically realizable elements using FDNR. .",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2071 Other",
+      "year": "2071",
+      "month": "Other",
+      "examType": "Back",
+      "totalMarks": 51,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "How can you obtain a bandstop filter from given lowpass filter? Explain with a suitable example.",
+          "marks": "5",
+          "chapter": "Frequency Transformation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What are the required properties of a function to be realizable? Explain the properties of lossless two port function.",
+          "marks": "3",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Which of the following function is valid RC admittance function? State with reason. Realize one of the RC admittance function in Foster II and RC ladder form.\n$Y(s) = \\frac{(s+1)(s+3)}{(s+2)(s+4)} , Y(s) = \\frac{(s^2+1)(s^2+3)}{s(s^2+2)(s^2+4)} , Y(s) = \\frac{(s+2)(s+4)}{(s+1)(s+3)} , Y(s) = \\frac{(s+1)(s+3)}{s(s+2)(s+4)}$",
+          "marks": "2",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What is switched capacitor filter? What are its applications? Draw the switched capacitor equivalent circuit for inverting summer, lossy integrator and non-inverting integrator.",
+          "marks": "6",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What is Filter? Explain the significance of normalization and denormalization during filter design.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Derive an expression to calculate the order of Inverse Chebyshev low pass filter. Use this formula to estimate the order of Inverse Chebyshev low pass filter having following specification:\n$\\alpha_{max} = 0.25 \\text{ dB}$, $\\omega_p = 1000 \\text{ rad/s}$\n$\\alpha_{min} = 18 \\text{ dB}$, $\\omega_s = 1400 \\text{ rad/s}$",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What are the characteristics of elliptic response? Compare it with that of Inverse Chebyshev response.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Define transmission and reflection coefficient. Explain how resistively terminated ladder network can be realized with finite transmission zeros.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Draw the circuit diagram of Tow Thomas biquad filter and derive its lowpass transfer function. Design a second order Butterworth lowpass filter having half power frequency of 5 kHz using Tow Thomas biquad circuit. Your final circuit should have all capacitors of $0.001 \\mu\\text{F}$.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": true
+        },
+        {
+          "qNum": 10,
+          "text": "How gain enhancement can be performed in Sallen and Key circuit? Explain with necessary diagram.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What is sensitivity? What is its importance in filter design? Perform the sensitivity analysis of quality factor of Tow Thomas biquad lowpass filter.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What is Bruton Transformation? How can you simulate grounded inductor using FDNR? Explain with necessary figures and derivations.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2071 Chaitra",
+      "year": "2071",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 111,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Compare and contrast between ideal and practical filters. Derive the necessary formulae for magnitude scaling and frequency scaling used in the design of a filter.",
+          "marks": "6",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Derive an expression to calculate the order of Inverse Chebyshev low pass filter. Use this formula to estimate the order of Inverse Chebyshev low pass filter having following specification:\n$\\alpha_{max} = 0.25 \\text{ dB}$, $\\omega_p = 1000 \\text{ rad/s}$\n$\\alpha_{min} = 18 \\text{ dB}$, $\\omega_s = 1400 \\text{ rad/s}$",
+          "marks": "5",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Explain the importance of all pass filters in delay equalization. Find the transfer function of fourth order Bessel-Thomson low pass filter.",
+          "marks": "3",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+          "marks": "5",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Which of the following functions are LC driving point impedance function and why? Pick one of the valid LC driving point impedance and synthesize it in Foster-I and Caver-I form:\n$Z_1(s) = \\frac{(s^2 + 1)(s^2 + 5)}{(s^2 + 2)(s^2 + 10)}$\n$Z_2(s) = \\frac{5s(s^2 + 4)}{(s^2 + 1)(s^2 + 3)}$\n$Z_3(s) = \\frac{2(s^2 + 1)(s^2 + 9)}{s(s^2 + 4)}$\n$Z_4(s) = 4\\frac{(s + 2)(s + 5)}{(s + 1)(s + 4)}$",
+          "marks": "2",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What is transmission coefficient? What information do we get from it? Derive expression for reflection coefficient for a resistively terminated LC ladder circuit.",
+          "marks": "2",
+          "chapter": "Design of Resistively-Terminated Lossless Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Draw the circuit diagram of Tow-Thomas Biquad circuit and derive its transfer function.\nDesign a low pass filter using Tow Thomas Biquad circuit with poles at $-450 \\pm j 893.03$\nand dc gain of $1.5$. The final circuit should contain practically realizable values.",
+          "marks": "6",
+          "chapter": "Design of Active Filters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 8,
+          "text": "Realize an active filter using non-inverting op-amp configuration with a zero at $s = -4$ and a pole at $s = -8$ having high frequency gain of $k = 2$.",
+          "marks": "3",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What is Frequency Dependent Negative Resistor? How can it be used to avoid bulky inductors in the design of your circuits? Explain with suitable examples.",
+          "marks": "5",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Using heapfrag method simulate the LC ladder circuit given in question number 4 to obtain a low pass filter having passband of 6KHz and suitable element values.",
+          "marks": "6",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Perform sensitivity analysis for center frequency ($\\omega_o$) and quality factor ($Q$) of the Tow Thomas low pass filter with respect to all the resistors and capacitors present in the circuit.",
+          "marks": "5",
+          "chapter": "Sensitivity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What is switched capacitor filter? How inverting lossy integrator, integrator and non-inverting integrator can be realized using switched capacitor? Explain with necessary diagrams and transfer functions.",
+          "marks": "7",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Define zeros of transmission in two port network.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Design a low pass filter using Tow Thomas Biquad circuit with poles at $-450 \\pm j 893.03$\nand dc gain of $1.5$. The final circuit should contain practically realizable values.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "Explain with necessary figures and derivations.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "Derive the necessary expressions to determine the new values of circuit elements in the case of magnitude and frequency scaling.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "Draw the circuit diagram of Tow-Thomas low pass biquad circuit and derive its transfer function.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 18,
+          "text": "Derive the necessary expressions to determine the new values of circuit elements in the case of magnitude and frequency scaling.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 19,
+          "text": "What is transmission zeros? Explain \"zero shifting by partial removal of pole\" with example.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 20,
+          "text": "Draw the circuit diagram of Tow-Thomas Biquad circuit and derive its transfer function.\nDesign a low pass filter using Tow Thomas Biquad circuit with poles at $-450 \\pm j 893.03$\nand dc gain of $1.5$. The final circuit should contain practically realizable values.",
+          "marks": "9",
+          "chapter": "General",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2070 Chaitra",
+      "year": "2070",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 118,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define $\\alpha_{max} , \\alpha_{min}$ and half power bandwidth with necessary diagrams. At frequency $f = 20$ kHz and $f = 30$ kHz a filter is designed to attenuate the input signal by 78 dB and 90 dB respectively. Find the amplitude of the output signal if the 30 kHz input signal has amplitude of 1V.",
+          "marks": "3",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What is a constant delay filter? Find the transfer function of a third order Bessel Thomson response having constant delay.",
+          "marks": "4",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive an expression to calculate the required order for given low pass specifications using Chebyshev approximation. Using the derived expression, calculate the order of Chebyshev filter for following specifications:\n$\\alpha_{max} = 0.5 \\text{ dB}$\n$\\alpha_{min} = 15 \\text{ dB}$\n$w_p = 1000 \\text{ rad/s}$\n$w_s = 2000 \\text{ rad/s}$\nAlso show pole locations.",
+          "marks": "4",
+          "chapter": "Approximation Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What are the applications of Frequency Transformation in Filter Design. How can you obtain a high pass filter from a given low pass filter? Explain with a suitable example.",
+          "marks": "6",
+          "chapter": "Frequency Transformation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+          "marks": "5",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Which of the following functions are LC driving point impedance function and why? Pick one of the valid LC driving point impedance and synthesize it in Foster-I and Caver-I form:\n$Z_1(s) = \\frac{(s^2 + 1)(s^2 + 5)}{(s^2 + 2)(s^2 + 10)}$\n$Z_2(s) = \\frac{5s(s^2 + 4)}{(s^2 + 1)(s^2 + 3)}$\n$Z_3(s) = \\frac{2(s^2 + 1)(s^2 + 9)}{s(s^2 + 4)}$\n$Z_4(s) = 4\\frac{(s + 2)(s + 5)}{(s + 1)(s + 4)}$",
+          "marks": "2",
+          "chapter": "Properties and Synthesis of Passive Networks",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Draw the circuit diagram of Tow-Thomas Biquad circuit and derive its transfer function.\nDesign a low pass filter using Tow Thomas Biquad circuit with poles at $-450 \\pm j 893.03$\nand dc gain of $1.5$. The final circuit should contain practically realizable values.",
+          "marks": "6",
+          "chapter": "Design of Active Filters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 8,
+          "text": "What is Bruton Transformation? How can you simulate grounded inductor using FDNR? Explain with necessary figures and derivations.",
+          "marks": "5",
+          "chapter": "Design of Active Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What is RC-CR transformation? Draw the circuit diagram of high pass sallen-key biquad obtained by RC-CR transformation of its low pass counterpart.",
+          "marks": "4",
+          "chapter": "Design of Active Filters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 10,
+          "text": "What information do you get when the sensitivity of x with respect to y is -5? Perform sensitivity analysis for center frequency ($w_0$) of the Sallen Key low pass filter with respect to all the resistors and capacitors present in the circuit.",
+          "marks": "5",
+          "chapter": "Sensitivity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Define zeros of transmission in two port network.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Design a low pass filter using Tow Thomas Biquad circuit with poles at $-450 \\pm j 893.03$\nand dc gain of $1.5$. The final circuit should contain practically realizable values.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Explain with necessary figures and derivations.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "What is a constant delay filter?",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "Draw the circuit diagram of Tow-Thomas low pass biquad circuit and derive its transfer function.",
+          "marks": "8",
+          "chapter": "Other Filters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 17,
+          "text": "Derive an expression to calculate the order of Inverse Chebyshev low pass filter. Use this formula to estimate the order of Inverse Chebyshev low pass filter having following specification:\n$\\alpha_{max} = 0.25 \\text{ dB}$, $\\omega_p = 1000 \\text{ rad/s}$\n$\\alpha_{min} = 18 \\text{ dB}$, $\\omega_s = 1400 \\text{ rad/s}$",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 18,
+          "text": "What is constant delay filter? What are the steps involved in designing constant delay filter? Explain with necessary example.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 19,
+          "text": "What are the applications of Frequency Transformation in Filter Design. How can you obtain a high pass filter from a given low pass filter? Explain with a suitable example.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 20,
+          "text": "What are the steps involved in realizing transmission zeros in two port network? Explain with suitable example.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 21,
+          "text": "Draw the circuit diagram of Tow-Thomas Biquad circuit and derive its transfer function.\nDesign a low pass filter using Tow Thomas Biquad circuit with poles at $-450 \\pm j 893.03$\nand dc gain of $1.5$. The final circuit should contain practically realizable values.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": true
+        },
+        {
+          "qNum": 22,
+          "text": "The final circuit should consist capacitors of value $0.1 \\mu F$.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 23,
+          "text": "What information do you get when the sensitivity of x with respect to y is -5? Perform sensitivity analysis for center frequency ($w_0$) of the Sallen Key low pass filter with respect to all the resistors and capacitors present in the circuit.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 24,
+          "text": "What is Bruton Transformation? How can you simulate grounded inductor using FDNR? Explain with necessary figures and derivations.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    }
   ]
 }

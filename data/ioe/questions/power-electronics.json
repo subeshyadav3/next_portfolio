@@ -1,616 +1,1418 @@
 {
   "subject": "Power Electronics",
-  "chapters": [
-    "Power Semiconductor Devices and Characteristics",
-    "Thyristors and Gating/Commutation Techniques",
-    "Phase-Controlled Rectifiers (AC to DC Converters)",
-    "DC-DC Converters (Buck, Boost, Buck-Boost Choppers)",
-    "Inverters (Single-Phase and Three-Phase PWM Inverters)",
-    "AC Voltage Regulators and Cycloconverters",
-    "Applications in Motor Drives and Power Supplies"
-  ],
+  "semester": "1",
   "questions": [
     {
       "id": "power-electronics-1",
-      "chapter": "Power Semiconductor Devices and Characteristics",
-      "text": "Compare the V-I characteristics, switching speed, power handling capability, and safe operating area (SOA) of Power BJT, Power MOSFET, and IGBT.",
-      "question": "Compare the V-I characteristics, switching speed, power handling capability, and safe operating area (SOA) of Power BJT, Power MOSFET, and IGBT.",
+      "question": "Explain the operation of step up dc chopper.",
+      "text": "Explain the operation of step up dc chopper.",
+      "chapter": "Archive Questions",
       "marks": "8",
+      "frequency": 5,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2074 Chaitra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2074 Chaitra"
       ],
-      "frequency": 4,
-      "difficulty": "Medium",
-      "importance": "High"
+      "isDiagram": false
     },
     {
       "id": "power-electronics-2",
-      "chapter": "Power Semiconductor Devices and Characteristics",
-      "text": "Explain the reverse recovery characteristics of a power diode. Derive expressions for reverse recovery time $t_{rr}$ and peak reverse current $I_{RM}$.",
-      "question": "Explain the reverse recovery characteristics of a power diode. Derive expressions for reverse recovery time $t_{rr}$ and peak reverse current $I_{RM}$.",
-      "marks": "6",
+      "question": "Why HVDC line is preferred over HVAC line to transport large power over a long distance? Make a mathematical comparison between above two system in terms of saving in line conductor.",
+      "text": "Why HVDC line is preferred over HVAC line to transport large power over a long distance? Make a mathematical comparison between above two system in terms of saving in line conductor.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 4,
       "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
+        "2080 Bhadra",
+        "2075 Chaitra"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
+        "2080 Bhadra",
+        "2075 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-electronics-3",
-      "chapter": "Power Semiconductor Devices and Characteristics",
-      "text": "Discuss Silicon Carbide (SiC) and Gallium Nitride (GaN) wide bandgap semiconductor devices. Why do they outperform Silicon in high-frequency power converters?",
-      "question": "Discuss Silicon Carbide (SiC) and Gallium Nitride (GaN) wide bandgap semiconductor devices. Why do they outperform Silicon in high-frequency power converters?",
-      "marks": "6",
+      "question": "Explain the series connection of two single phase full converter with necessary circuit diagram and waveforms. Also, explain their operation in rectification and inversion mode.",
+      "text": "Explain the series connection of two single phase full converter with necessary circuit diagram and waveforms. Also, explain their operation in rectification and inversion mode.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 4,
       "years": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2080 Bhadra",
+        "2079 Bhadra",
+        "2074 Chaitra"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2080 Bhadra",
+        "2079 Bhadra",
+        "2074 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "power-electronics-4",
-      "chapter": "Power Semiconductor Devices and Characteristics",
-      "text": "Explain snubber circuits (RC and RCD snubbers) for protecting power switches against $dv/dt$ and $di/dt$ stresses.",
-      "question": "Explain snubber circuits (RC and RCD snubbers) for protecting power switches against $dv/dt$ and $di/dt$ stresses.",
-      "marks": "6",
+      "question": "a) Explain the V-I characteristics of a Thyristor and explain the meaning of Holding current and Latching current. Why we use vertical arrangement in power BJT? [5+3]\n\nb) Explain about self and line commutation with circuit and its waveform. A 10 V source is connected across RL load having $R=10\\ \\Omega$ and $L=10\\text{ mH}$. A thyristor having latching current of $200\\text{ mA}$ is used as switch for the circuit. Calculate minimum gate pulse width to Turn ON the thyristor.",
+      "text": "a) Explain the V-I characteristics of a Thyristor and explain the meaning of Holding current and Latching current. Why we use vertical arrangement in power BJT? [5+3]\n\nb) Explain about self and line commutation with circuit and its waveform. A 10 V source is connected across RL load having $R=10\\ \\Omega$ and $L=10\\text{ mH}$. A thyristor having latching current of $200\\text{ mA}$ is used as switch for the circuit. Calculate minimum gate pulse width to Turn ON the thyristor.",
+      "chapter": "Power Electronic Devices",
+      "marks": "4",
+      "frequency": 3,
       "years": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Baishakh"
+        "2081 Bhadra",
+        "2074 Chaitra"
       ],
       "examSessions": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Baishakh"
+        "2081 Bhadra",
+        "2074 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "power-electronics-5",
-      "chapter": "Thyristors and Gating/Commutation Techniques",
-      "text": "Describe the two-transistor analogy of an SCR. Derive the expression for anode current $I_A$ and explain the regenerative latching mechanism.",
-      "question": "Describe the two-transistor analogy of an SCR. Derive the expression for anode current $I_A$ and explain the regenerative latching mechanism.",
+      "question": "a) Explain the operation of single phase cyclo-conterter. What are its applications?\n\nb) Explain the series connection of two single phase full converter with necessary circuit diagram and waveforms. How these series connected circuit can be operated in",
+      "text": "a) Explain the operation of single phase cyclo-conterter. What are its applications?\n\nb) Explain the series connection of two single phase full converter with necessary circuit diagram and waveforms. How these series connected circuit can be operated in",
+      "chapter": "AC Voltage Controller",
       "marks": "8",
+      "frequency": 3,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2078 Chaitra"
+        "2074 Chaitra",
+        "2079 Bhadra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2078 Chaitra"
+        "2074 Chaitra",
+        "2079 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "power-electronics-6",
-      "chapter": "Thyristors and Gating/Commutation Techniques",
-      "text": "Explain different gate triggering circuits for SCRs: Resistance firing, RC firing, and UJT relaxation oscillator triggering circuits.",
-      "question": "Explain different gate triggering circuits for SCRs: Resistance firing, RC firing, and UJT relaxation oscillator triggering circuits.",
+      "question": "a) Explain the operation of step up dc chopper.\n\nb) Draw the circuit diagram of Type-E four quadrant chopper and explain its operation for all four quadrants.",
+      "text": "a) Explain the operation of step up dc chopper.\n\nb) Draw the circuit diagram of Type-E four quadrant chopper and explain its operation for all four quadrants.",
+      "chapter": "DC Chopper",
       "marks": "8",
+      "frequency": 3,
       "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2074 Chaitra"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2074 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "power-electronics-7",
-      "chapter": "Thyristors and Gating/Commutation Techniques",
-      "text": "Classify thyristor commutation techniques: Natural (line) commutation vs forced commutation (Class A, B, C, D, E). Explain resonant commutation.",
-      "question": "Classify thyristor commutation techniques: Natural (line) commutation vs forced commutation (Class A, B, C, D, E). Explain resonant commutation.",
+      "question": "Explain the V-I characteristics of a Thyristor and explain the meaning of Holding current and Latching current.",
+      "text": "Explain the V-I characteristics of a Thyristor and explain the meaning of Holding current and Latching current.",
+      "chapter": "Archive Questions",
       "marks": "8",
+      "frequency": 3,
       "years": [
-        "2082 Chaitra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2081 Bhadra",
+        "2074 Chaitra"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2081 Bhadra",
+        "2074 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-electronics-8",
-      "chapter": "Thyristors and Gating/Commutation Techniques",
-      "text": "Explain GTO (Gate Turn-Off Thyristor) and TRIAC: Construction, two-way conduction mechanism, and gate drive circuit requirements.",
-      "question": "Explain GTO (Gate Turn-Off Thyristor) and TRIAC: Construction, two-way conduction mechanism, and gate drive circuit requirements.",
-      "marks": "6",
+      "question": "Explain the operation of single phase step down cycloconverter with necessary circuit diagram and waveform.",
+      "text": "Explain the operation of single phase step down cycloconverter with necessary circuit diagram and waveform.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 3,
       "years": [
-        "2081 Bhadra",
-        "2078 Bhadra",
+        "2079 Bhadra",
         "2075 Chaitra"
       ],
       "examSessions": [
-        "2081 Bhadra",
-        "2078 Bhadra",
+        "2079 Bhadra",
         "2075 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "power-electronics-9",
-      "chapter": "Phase-Controlled Rectifiers (AC to DC Converters)",
-      "text": "Derive expressions for average output voltage $V_{dc}$, RMS voltage $V_{rms}$, and ripple factor of a single-phase fully-controlled bridge rectifier with RL load and continuous conduction.",
-      "question": "Derive expressions for average output voltage $V_{dc}$, RMS voltage $V_{rms}$, and ripple factor of a single-phase fully-controlled bridge rectifier with RL load and continuous conduction.",
+      "question": "Explain the operation of a three phase single way controlled rectifier circuit with highly inductive load.",
+      "text": "Explain the operation of a three phase single way controlled rectifier circuit with highly inductive load.",
+      "chapter": "Archive Questions",
       "marks": "8",
+      "frequency": 3,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra"
+        "2076 Chaitra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra"
+        "2076 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-electronics-10",
-      "chapter": "Phase-Controlled Rectifiers (AC to DC Converters)",
-      "text": "Analyze a single-phase semi-converter with RL load. Explain the role of the freewheeling diode in preventing negative output voltage and improving input power factor.",
-      "question": "Analyze a single-phase semi-converter with RL load. Explain the role of the freewheeling diode in preventing negative output voltage and improving input power factor.",
+      "question": "Explain the $di/dt$ protection scheme and $dv/dt$ protection scheme for a thyristor.",
+      "text": "Explain the $di/dt$ protection scheme and $dv/dt$ protection scheme for a thyristor.",
+      "chapter": "Archive Questions",
       "marks": "8",
+      "frequency": 3,
       "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
+        "2079 Bhadra",
+        "2078 Bhadra",
+        "2074 Chaitra"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
+        "2079 Bhadra",
+        "2078 Bhadra",
+        "2074 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-electronics-11",
-      "chapter": "Phase-Controlled Rectifiers (AC to DC Converters)",
-      "text": "Derive the average DC voltage of a 3-phase fully-controlled bridge converter with RL load: $V_{dc} = \\frac{3\\sqrt{3}}{\\pi} V_{ml} \\cos \\alpha$. Draw voltage and current waveforms for $\\alpha = 60^\\circ$.",
-      "question": "Derive the average DC voltage of a 3-phase fully-controlled bridge converter with RL load: $V_{dc} = \\frac{3\\sqrt{3}}{\\pi} V_{ml} \\cos \\alpha$. Draw voltage and current waveforms for $\\alpha = 60^\\circ$.",
+      "question": "Derive the expression for average value of the output voltage.",
+      "text": "Derive the expression for average value of the output voltage.",
+      "chapter": "Archive Questions",
       "marks": "8",
+      "frequency": 3,
       "years": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2076 Chaitra",
+        "2082 Chaitra"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2076 Chaitra",
+        "2082 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-electronics-12",
-      "chapter": "Phase-Controlled Rectifiers (AC to DC Converters)",
-      "text": "Explain the effect of source inductance ($L_s$) on the performance of a 3-phase full converter. Derive expression for voltage drop due to commutation overlap: $\\Delta V_{dc} = \\frac{3\\omega L_s}{\\pi} I_{dc}$.",
-      "question": "Explain the effect of source inductance ($L_s$) on the performance of a 3-phase full converter. Derive expression for voltage drop due to commutation overlap: $\\Delta V_{dc} = \\frac{3\\omega L_s}{\\pi} I_{dc}$.",
+      "question": "a) Explain the operation of three phase single way controlled rectifier with highly inductive load. Derive the expression of average and RMS value of output voltage. Draw the waveforms of output voltage for $\\alpha = 30^\\circ$ and calculate average value of output voltage.\n\nb) Explain the operation of a single phase AC voltage controller. Derive the expression for RMS value of the output voltage as the function of firing angle.",
+      "text": "a) Explain the operation of three phase single way controlled rectifier with highly inductive load. Derive the expression of average and RMS value of output voltage. Draw the waveforms of output voltage for $\\alpha = 30^\\circ$ and calculate average value of output voltage.\n\nb) Explain the operation of a single phase AC voltage controller. Derive the expression for RMS value of the output voltage as the function of firing angle.",
+      "chapter": "Three Phase AC to DC Converters",
       "marks": "8",
+      "frequency": 2,
       "years": [
-        "2081 Chaitra",
-        "2078 Chaitra",
-        "2076 Chaitra"
+        "2076 Ashwin"
       ],
       "examSessions": [
-        "2081 Chaitra",
-        "2078 Chaitra",
-        "2076 Chaitra"
+        "2076 Ashwin"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-electronics-13",
-      "chapter": "Phase-Controlled Rectifiers (AC to DC Converters)",
-      "text": "Describe dual converters (circulating and non-circulating current modes) for four-quadrant operation of DC drives.",
-      "question": "Describe dual converters (circulating and non-circulating current modes) for four-quadrant operation of DC drives.",
+      "question": "a) Explain the bridge configuration of single phase step-down cycloconverter with necessary circuit diagram and waveform. Also tabulate the conduction sequence.\n\nb) What are the differences between HVAC and HVDC transmission lines? Perform a mathematical comparison between HVAC and HVDC lines.",
+      "text": "a) Explain the bridge configuration of single phase step-down cycloconverter with necessary circuit diagram and waveform. Also tabulate the conduction sequence.\n\nb) What are the differences between HVAC and HVDC transmission lines? Perform a mathematical comparison between HVAC and HVDC lines.",
+      "chapter": "AC Voltage Controller",
       "marks": "8",
+      "frequency": 2,
       "years": [
-        "2081 Baishakh",
-        "2079 Baishakh",
-        "2075 Bhadra"
+        "2075 Chaitra"
       ],
       "examSessions": [
-        "2081 Baishakh",
-        "2079 Baishakh",
-        "2075 Bhadra"
+        "2075 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "power-electronics-14",
-      "chapter": "DC-DC Converters (Buck, Boost, Buck-Boost Choppers)",
-      "text": "Explain the step-down (Buck) converter operating in Continuous Conduction Mode (CCM). Derive expressions for output voltage $V_o = D V_s$, inductor ripple current, and critical inductance $L_c$.",
-      "question": "Explain the step-down (Buck) converter operating in Continuous Conduction Mode (CCM). Derive expressions for output voltage $V_o = D V_s$, inductor ripple current, and critical inductance $L_c$.",
+      "question": "a) Explain the operation of a single phase inverter with ac motor as load. Derive the equation for current drawn by the motor of positive half cycle. [8]\n\nb) Explain the operation of a three phase sinusoidal PWM inverter with neat circuit diagram and waveforms.",
+      "text": "a) Explain the operation of a single phase inverter with ac motor as load. Derive the equation for current drawn by the motor of positive half cycle. [8]\n\nb) Explain the operation of a three phase sinusoidal PWM inverter with neat circuit diagram and waveforms.",
+      "chapter": "Inverters",
       "marks": "8",
+      "frequency": 2,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2078 Chaitra"
+        "2080 Baishakh"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2078 Chaitra"
+        "2080 Baishakh"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "power-electronics-15",
-      "chapter": "DC-DC Converters (Buck, Boost, Buck-Boost Choppers)",
-      "text": "Explain the step-up (Boost) converter operating in CCM. Derive output voltage equation $V_o = \\frac{V_s}{1 - D}$ and output capacitor ripple voltage.",
-      "question": "Explain the step-up (Boost) converter operating in CCM. Derive output voltage equation $V_o = \\frac{V_s}{1 - D}$ and output capacitor ripple voltage.",
+      "question": "a) Explain how a transistor can be used as a static switch. Describe how gate signal for the base of a transistor can be generated to turn ON and OFF a transistor. [8]\n\nb) Explain the $di/dt$ protection scheme and $dv/dt$ protection scheme for a thyristor.",
+      "text": "a) Explain how a transistor can be used as a static switch. Describe how gate signal for the base of a transistor can be generated to turn ON and OFF a transistor. [8]\n\nb) Explain the $di/dt$ protection scheme and $dv/dt$ protection scheme for a thyristor.",
+      "chapter": "Power Electronic Devices",
       "marks": "8",
+      "frequency": 2,
       "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2079 Bhadra",
+        "2078 Bhadra"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2079 Bhadra",
+        "2078 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-electronics-16",
-      "chapter": "DC-DC Converters (Buck, Boost, Buck-Boost Choppers)",
-      "text": "Derive the transfer function and duty cycle relationship for a Buck-Boost converter: $V_o = -\\frac{D}{1 - D} V_s$. Explain why the output polarity is reversed.",
-      "question": "Derive the transfer function and duty cycle relationship for a Buck-Boost converter: $V_o = -\\frac{D}{1 - D} V_s$. Explain why the output polarity is reversed.",
+      "question": "a) Figure below shows a single-phase controlled rectifier with 4 nos of GTO switches. The average value of the output voltage is controlled by extinction angle control method. The load current is constant and equal to $20\\text{Amp}$ due to highly inductive load. For an extinction angle of $30^\\circ$. [8]\n\ni) Draw the waveform of load voltage, load current and input ac current.\nii) Average and RMS value of output voltage.\niii) Calculate the magnitude and phase of fundamental component of the input ac current.\n\nb) With the help of suitable circuit diagram and waveforms, explain the operation of three phase full wave bridge rectifier using diodes. Derive the expression for average value and rms value of the output voltage.",
+      "text": "a) Figure below shows a single-phase controlled rectifier with 4 nos of GTO switches. The average value of the output voltage is controlled by extinction angle control method. The load current is constant and equal to $20\\text{Amp}$ due to highly inductive load. For an extinction angle of $30^\\circ$. [8]\n\ni) Draw the waveform of load voltage, load current and input ac current.\nii) Average and RMS value of output voltage.\niii) Calculate the magnitude and phase of fundamental component of the input ac current.\n\nb) With the help of suitable circuit diagram and waveforms, explain the operation of three phase full wave bridge rectifier using diodes. Derive the expression for average value and rms value of the output voltage.",
+      "chapter": "Single Phase AC to DC Converters",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2082 Chaitra",
-        "2079 Chaitra",
-        "2076 Baishakh"
+        "2080 Baishakh"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2079 Chaitra",
-        "2076 Baishakh"
+        "2080 Baishakh"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "power-electronics-17",
-      "chapter": "DC-DC Converters (Buck, Boost, Buck-Boost Choppers)",
-      "text": "Explain the operation of an isolated Flyback and Forward DC-DC converter. Discuss transformer core reset mechanisms.",
-      "question": "Explain the operation of an isolated Flyback and Forward DC-DC converter. Discuss transformer core reset mechanisms.",
+      "question": "a) The average value of output voltage of single phase full converter with 4 GTO switches is controlled by extinction angle control method. The load current is constant and equal to 20Amp due to highly inductive load. For the extinction angle of $30^\\circ$, draw the waveforms of load voltage, load current and input ac current. Also find RMS value of output voltage, magnitude and phase of fundamental component of the input ac current.\n\nb) Explain the operation of three phase single way controlled rectifier with thyristor with neat diagram and waveforms. Derive the expression for average and RMS value of the output voltage.",
+      "text": "a) The average value of output voltage of single phase full converter with 4 GTO switches is controlled by extinction angle control method. The load current is constant and equal to 20Amp due to highly inductive load. For the extinction angle of $30^\\circ$, draw the waveforms of load voltage, load current and input ac current. Also find RMS value of output voltage, magnitude and phase of fundamental component of the input ac current.\n\nb) Explain the operation of three phase single way controlled rectifier with thyristor with neat diagram and waveforms. Derive the expression for average and RMS value of the output voltage.",
+      "chapter": "Single Phase AC to DC Converters",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2081 Bhadra",
-        "2078 Bhadra",
-        "2075 Chaitra"
+        "2073 Shrawan"
       ],
       "examSessions": [
-        "2081 Bhadra",
-        "2078 Bhadra",
-        "2075 Chaitra"
+        "2073 Shrawan"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "power-electronics-18",
-      "chapter": "DC-DC Converters (Buck, Boost, Buck-Boost Choppers)",
-      "text": "Explain four-quadrant chopper (Class E chopper) configuration and operation for bidirectional power flow in DC motor regenerative braking.",
-      "question": "Explain four-quadrant chopper (Class E chopper) configuration and operation for bidirectional power flow in DC motor regenerative braking.",
+      "question": "a) In figure below shows a full-wave rectifier circuit used to charge at $12\\ \\text{V}$ battery through a $2\\ \\Omega$ resistor.\n\nCalculate:\n\ni) Average value of charging current\nii) Power supplied to the battery\niii) Gross output power from rectifier\niv) Additional resistance to be connected in series with $2\\ \\Omega$ resistors to limit the average value of charging current to $0.5\\ \\text{amp}$.\n\nb) Explain the operation of three-phase single way-controlled rectifier circuit with necessary waveforms. Also derive the expression for average value of the output voltage.",
+      "text": "a) In figure below shows a full-wave rectifier circuit used to charge at $12\\ \\text{V}$ battery through a $2\\ \\Omega$ resistor.\n\nCalculate:\n\ni) Average value of charging current\nii) Power supplied to the battery\niii) Gross output power from rectifier\niv) Additional resistance to be connected in series with $2\\ \\Omega$ resistors to limit the average value of charging current to $0.5\\ \\text{amp}$.\n\nb) Explain the operation of three-phase single way-controlled rectifier circuit with necessary waveforms. Also derive the expression for average value of the output voltage.",
+      "chapter": "Single Phase AC to DC Converters",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2083 Baishakh",
-        "2080 Baishakh",
-        "2077 Magh"
+        "2075 Ashwin"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2080 Baishakh",
-        "2077 Magh"
+        "2075 Ashwin"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-electronics-19",
-      "chapter": "Inverters (Single-Phase and Three-Phase PWM Inverters)",
-      "text": "Explain the single-phase full-bridge voltage source inverter (VSI) with square-wave and quasi-square-wave switching. Derive Fourier series of output voltage.",
-      "question": "Explain the single-phase full-bridge voltage source inverter (VSI) with square-wave and quasi-square-wave switching. Derive Fourier series of output voltage.",
+      "question": "a) The given waveform in figure below is the output voltage and three phase inverter. Calculate the fundamental component and $3^{rd}$ harmonic component of the output voltage.\n\nb) The single phase ac controller has input voltage of 230V, 50Hz and the positive and negative thyristors are triggered at an angle of $90^\\circ$ and $\\pi+90^\\circ$ respectively. The series RL load has $R = 20\\ \\Omega$, $L = 50\\text{mH}$ then determine the rms value of load voltage and load current.",
+      "text": "a) The given waveform in figure below is the output voltage and three phase inverter. Calculate the fundamental component and $3^{rd}$ harmonic component of the output voltage.\n\nb) The single phase ac controller has input voltage of 230V, 50Hz and the positive and negative thyristors are triggered at an angle of $90^\\circ$ and $\\pi+90^\\circ$ respectively. The series RL load has $R = 20\\ \\Omega$, $L = 50\\text{mH}$ then determine the rms value of load voltage and load current.",
+      "chapter": "Inverters",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra"
+        "2074 Chaitra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra"
+        "2074 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "power-electronics-20",
-      "chapter": "Inverters (Single-Phase and Three-Phase PWM Inverters)",
-      "text": "Analyze Sinusoidal Pulse Width Modulation (SPWM) for inverters. Define modulation index $m_a$ and frequency ratio $m_f$. Explain harmonic elimination using SPWM.",
-      "question": "Analyze Sinusoidal Pulse Width Modulation (SPWM) for inverters. Define modulation index $m_a$ and frequency ratio $m_f$. Explain harmonic elimination using SPWM.",
-      "marks": "8",
+      "question": "a) Figure below shows a single-phase full converter circuit. Explain its operation with highly inductive load so that the load current is constant and equal to $10\\ A$. Draw the waveforms of input voltage $V_s$, output voltage $v_o$ and input AC current $I_s$ for firing angle of $30^0$. Calculate the average value of the output voltage. [8]\n\nb) Explain the operation of a three phase fully controlled bridge rectifier with resistive load. Derive the expression of average and RMS value of output voltage. Draw the waveform of output voltage for $\\alpha = 0^0$ and $\\alpha = 30^0$.",
+      "text": "a) Figure below shows a single-phase full converter circuit. Explain its operation with highly inductive load so that the load current is constant and equal to $10\\ A$. Draw the waveforms of input voltage $V_s$, output voltage $v_o$ and input AC current $I_s$ for firing angle of $30^0$. Calculate the average value of the output voltage. [8]\n\nb) Explain the operation of a three phase fully controlled bridge rectifier with resistive load. Derive the expression of average and RMS value of output voltage. Draw the waveform of output voltage for $\\alpha = 0^0$ and $\\alpha = 30^0$.",
+      "chapter": "Single Phase AC to DC Converters",
+      "marks": "3",
+      "frequency": 1,
       "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2082 Baishakh"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2082 Baishakh"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "power-electronics-21",
-      "chapter": "Inverters (Single-Phase and Three-Phase PWM Inverters)",
-      "text": "Explain the 3-phase bridge inverter in $180^\\circ$ conduction mode and $120^\\circ$ conduction mode. Draw phase and line voltage waveforms for both modes.",
-      "question": "Explain the 3-phase bridge inverter in $180^\\circ$ conduction mode and $120^\\circ$ conduction mode. Draw phase and line voltage waveforms for both modes.",
+      "question": "a) A single phase full bridge inverter with dc input voltage of $V_s=400\\text{V}$ and generating output square wave of $50\\text{Hz}$ is connected to inductive load having $R=10\\ \\Omega$ and $L=50\\text{mH}$. Calculate the magnitude and phase of fundamental component and third harmonic component of output voltage and load current.\n\nb) Explain the operation of ac voltage controller with purely resistive load. Also explain the use of ac voltage controller in ELC",
+      "text": "a) A single phase full bridge inverter with dc input voltage of $V_s=400\\text{V}$ and generating output square wave of $50\\text{Hz}$ is connected to inductive load having $R=10\\ \\Omega$ and $L=50\\text{mH}$. Calculate the magnitude and phase of fundamental component and third harmonic component of output voltage and load current.\n\nb) Explain the operation of ac voltage controller with purely resistive load. Also explain the use of ac voltage controller in ELC",
+      "chapter": "Inverters",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2073 Shrawan"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2073 Shrawan"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-electronics-22",
-      "chapter": "Inverters (Single-Phase and Three-Phase PWM Inverters)",
-      "text": "Explain Space Vector Pulse Width Modulation (SVPWM) for 3-phase VSIs. Discuss switching vectors, sector identification, and maximum linear modulation voltage compared to SPWM.",
-      "question": "Explain Space Vector Pulse Width Modulation (SVPWM) for 3-phase VSIs. Discuss switching vectors, sector identification, and maximum linear modulation voltage compared to SPWM.",
+      "question": "a) Draw the circuit diagram of a single phase full controlled rectifier having supply Input RMS voltage of $230\\text{ V}$, $50\\text{ Hz}$. with a highly inductive load so that load current is constant and equal to $25\\text{ Amp}$. [8]\n\ni) Explain its operation for firing angle $\\alpha = 30^\\circ$.\nii) Derive the expression for average and RMS values of the output voltage\niii) Calculate the value of average output voltage.\n\nb) Explain the symmetrical angle control method for improving input power factor in single phase controlled rectifier.",
+      "text": "a) Draw the circuit diagram of a single phase full controlled rectifier having supply Input RMS voltage of $230\\text{ V}$, $50\\text{ Hz}$. with a highly inductive load so that load current is constant and equal to $25\\text{ Amp}$. [8]\n\ni) Explain its operation for firing angle $\\alpha = 30^\\circ$.\nii) Derive the expression for average and RMS values of the output voltage\niii) Calculate the value of average output voltage.\n\nb) Explain the symmetrical angle control method for improving input power factor in single phase controlled rectifier.",
+      "chapter": "Single Phase AC to DC Converters",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2081 Chaitra",
-        "2078 Chaitra",
-        "2076 Baishakh"
+        "2080 Bhadra"
       ],
       "examSessions": [
-        "2081 Chaitra",
-        "2078 Chaitra",
-        "2076 Baishakh"
+        "2080 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "power-electronics-23",
-      "chapter": "Inverters (Single-Phase and Three-Phase PWM Inverters)",
-      "text": "Describe Current Source Inverters (CSI) and compare them with Voltage Source Inverters (VSI) in terms of circuit topology, reliability, and motor drive performance.",
-      "question": "Describe Current Source Inverters (CSI) and compare them with Voltage Source Inverters (VSI) in terms of circuit topology, reliability, and motor drive performance.",
-      "marks": "6",
+      "question": "a) Figure shows a single phase full converter circuit with highly inductive load so that load current is constant and equal to 25 amp. Explain its operation for firing angle = $30^\\circ$. Draw the waveforms of input voltage $V_s$, output voltage $V_0$ and input current $i_s$. Calculate the fundamental component of input current and Input power factor. [8]\n\nb) Explain the operation of three-phase single way rectifier with diode with neat circuit diagram and waveforms. Derive the expression for average and rms values of the output voltage.",
+      "text": "a) Figure shows a single phase full converter circuit with highly inductive load so that load current is constant and equal to 25 amp. Explain its operation for firing angle = $30^\\circ$. Draw the waveforms of input voltage $V_s$, output voltage $V_0$ and input current $i_s$. Calculate the fundamental component of input current and Input power factor. [8]\n\nb) Explain the operation of three-phase single way rectifier with diode with neat circuit diagram and waveforms. Derive the expression for average and rms values of the output voltage.",
+      "chapter": "Single Phase AC to DC Converters",
+      "marks": "8",
+      "frequency": 1,
       "years": [
-        "2081 Baishakh",
-        "2079 Baishakh",
-        "2075 Bhadra"
+        "2074 Ashwin"
       ],
       "examSessions": [
-        "2081 Baishakh",
-        "2079 Baishakh",
-        "2075 Bhadra"
+        "2074 Ashwin"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "power-electronics-24",
-      "chapter": "AC Voltage Regulators and Cycloconverters",
-      "text": "Analyze a single-phase AC voltage controller with resistive and inductive loads. Derive the expression for RMS output voltage as a function of firing angle $\\alpha$.",
-      "question": "Analyze a single-phase AC voltage controller with resistive and inductive loads. Derive the expression for RMS output voltage as a function of firing angle $\\alpha$.",
+      "question": "a) Calculate the rms value of fundamental and $3^{rd}$ harmonics component of output voltage for $180^\\circ$ conduction mode of three phase inverter shown in figure below. [8]\n\nb) With the help of suitable circuit diagram and waveform, explain the operation of single AC voltage controller with R-load and calculate the rms value of output voltage.",
+      "text": "a) Calculate the rms value of fundamental and $3^{rd}$ harmonics component of output voltage for $180^\\circ$ conduction mode of three phase inverter shown in figure below. [8]\n\nb) With the help of suitable circuit diagram and waveform, explain the operation of single AC voltage controller with R-load and calculate the rms value of output voltage.",
+      "chapter": "Inverters",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2083 Baishakh",
-        "2080 Chaitra",
-        "2078 Bhadra"
+        "2079 Bhadra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2080 Chaitra",
-        "2078 Bhadra"
+        "2079 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "power-electronics-25",
-      "chapter": "AC Voltage Regulators and Cycloconverters",
-      "text": "Explain integral cycle control (burst firing) of AC voltage controllers. Discuss its advantages over phase angle control for heating loads.",
-      "question": "Explain integral cycle control (burst firing) of AC voltage controllers. Discuss its advantages over phase angle control for heating loads.",
-      "marks": "6",
+      "question": "a) Figure shows single phase full converter circuit with highly inductive load so that load current is constant and equal to $25\\text{ A}$. Explain its operation for firing angle of $30^\\circ$. Draw the input and output waveforms of voltages and currents. Calculate the fundamental component of input AC current. [8]\n\nb) Explain the operation of 3-phase single way uncontrolled rectifier and describe expression for average output voltage.",
+      "text": "a) Figure shows single phase full converter circuit with highly inductive load so that load current is constant and equal to $25\\text{ A}$. Explain its operation for firing angle of $30^\\circ$. Draw the input and output waveforms of voltages and currents. Calculate the fundamental component of input AC current. [8]\n\nb) Explain the operation of 3-phase single way uncontrolled rectifier and describe expression for average output voltage.",
+      "chapter": "Single Phase AC to DC Converters",
+      "marks": "8",
+      "frequency": 1,
       "years": [
-        "2082 Bhadra",
-        "2081 Baishakh",
-        "2077 Magh"
+        "2079 Bhadra"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2081 Baishakh",
-        "2077 Magh"
+        "2079 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-electronics-26",
-      "chapter": "AC Voltage Regulators and Cycloconverters",
-      "text": "Describe the operating principle of a single-phase to single-phase midpoint and bridge cycloconverter for sub-harmonic frequency generation.",
-      "question": "Describe the operating principle of a single-phase to single-phase midpoint and bridge cycloconverter for sub-harmonic frequency generation.",
+      "question": "a) Explain the operation of a three phase Sinusoid PWM inverter with neat circuit diagram and associated waveforms. How switching instants for inverter switch pair of a phase are determined. [8]\n\nb) Figure 5 shows the waveform of output voltage (per phase) of three phase inverter. Calculate RMS value and peak value of fundamental component of the output voltage.\n\nFig.5",
+      "text": "a) Explain the operation of a three phase Sinusoid PWM inverter with neat circuit diagram and associated waveforms. How switching instants for inverter switch pair of a phase are determined. [8]\n\nb) Figure 5 shows the waveform of output voltage (per phase) of three phase inverter. Calculate RMS value and peak value of fundamental component of the output voltage.\n\nFig.5",
+      "chapter": "Inverters",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2082 Chaitra",
-        "2079 Chaitra",
         "2076 Chaitra"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2079 Chaitra",
         "2076 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "power-electronics-27",
-      "chapter": "Applications in Motor Drives and Power Supplies",
-      "text": "Explain speed control of separately excited DC motor using single-phase and three-phase full converters in both armature and field control modes.",
-      "question": "Explain speed control of separately excited DC motor using single-phase and three-phase full converters in both armature and field control modes.",
-      "marks": "8",
+      "question": "a) For type-A chopper circuit, source voltage $V_s = 220\\text{ V}$, chopping period $T = 2000\\ \\mu\\text{s}$, on-period $= 600\\ \\mu\\text{s}$, load circuit parameters: $R = 1\\ \\Omega$, $L = 5\\text{ mH}$ and $E = 24\\text{ V}$. [8]\n\ni) Find whether load current is continuous or not.\nii) Calculate the value of average output current.\niii) Compute the maximum and minimum values of steady state output current.\niv) Sketch the time variations of load voltage $V_0$, load current $i_0$, thyristor current $i_T$ and voltage across thyristor $V_T$\n\nb) What are the advantages HVDC transmission line over the HVAC transmission line? Why negative line is used for transmission in homopolar HVDC? [2+2]\n\nc) Explain the series operation of two single phase full converter in rectification mode.",
+      "text": "a) For type-A chopper circuit, source voltage $V_s = 220\\text{ V}$, chopping period $T = 2000\\ \\mu\\text{s}$, on-period $= 600\\ \\mu\\text{s}$, load circuit parameters: $R = 1\\ \\Omega$, $L = 5\\text{ mH}$ and $E = 24\\text{ V}$. [8]\n\ni) Find whether load current is continuous or not.\nii) Calculate the value of average output current.\niii) Compute the maximum and minimum values of steady state output current.\niv) Sketch the time variations of load voltage $V_0$, load current $i_0$, thyristor current $i_T$ and voltage across thyristor $V_T$\n\nb) What are the advantages HVDC transmission line over the HVAC transmission line? Why negative line is used for transmission in homopolar HVDC? [2+2]\n\nc) Explain the series operation of two single phase full converter in rectification mode.",
+      "chapter": "DC Chopper",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra"
+        "2081 Bhadra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra"
+        "2081 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-electronics-28",
-      "chapter": "Applications in Motor Drives and Power Supplies",
-      "text": "Describe constant $V/f$ control of 3-phase induction motor drives using SPWM inverters. Explain why torque remains constant below base speed.",
-      "question": "Describe constant $V/f$ control of 3-phase induction motor drives using SPWM inverters. Explain why torque remains constant below base speed.",
+      "question": "a) Single phase full wave rectifier charges a battery from a single phase supply of $230\\ \\text{V}$, $50\\ \\text{Hz}$. The battery has interval emf of $200\\ \\text{volts}$ and its internal resistance is $0.5\\ \\text{ohms}$. Calculate: [8]\n\n(i) Average value of charging current\n(ii) Power supplied to the battery\n(iii) Gross power output from the rectifier\n(iv) Additional resistance to be connected in series to reduce the charging current by $30\\%$.\n\nb) Explain the operation of three phase single way controlled rectifier with purely resistive load. Derive the expression of average and RMS value of output voltage. Draw the waveforms of output voltage for $\\alpha = 30^\\circ$ and $60^\\circ$ and calculate average value of output voltage.",
+      "text": "a) Single phase full wave rectifier charges a battery from a single phase supply of $230\\ \\text{V}$, $50\\ \\text{Hz}$. The battery has interval emf of $200\\ \\text{volts}$ and its internal resistance is $0.5\\ \\text{ohms}$. Calculate: [8]\n\n(i) Average value of charging current\n(ii) Power supplied to the battery\n(iii) Gross power output from the rectifier\n(iv) Additional resistance to be connected in series to reduce the charging current by $30\\%$.\n\nb) Explain the operation of three phase single way controlled rectifier with purely resistive load. Derive the expression of average and RMS value of output voltage. Draw the waveforms of output voltage for $\\alpha = 30^\\circ$ and $60^\\circ$ and calculate average value of output voltage.",
+      "chapter": "Single Phase AC to DC Converters",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2079 Baishakh"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2079 Baishakh"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-electronics-29",
-      "chapter": "Applications in Motor Drives and Power Supplies",
-      "text": "Explain Switched Mode Power Supplies (SMPS) topologies (Push-Pull, Half-Bridge, and Full-Bridge). State advantages over linear power supplies.",
-      "question": "Explain Switched Mode Power Supplies (SMPS) topologies (Push-Pull, Half-Bridge, and Full-Bridge). State advantages over linear power supplies.",
-      "marks": "6",
+      "question": "a) A single-phase full-bridge inverter has RLC load of $R = 4\\ \\Omega$, $L = 35\\text{ mH}$ and $C = 155\\ \\mu\\text{F}$. The dc input voltage is $230\\text{ V}$ and the output frequency is $50\\text{ Hz}$. [8]\n\ni) Find an expression for load current up to fifth harmonic.\nAlso, calculate\nii) Rms value of fundamental load current.\niii) The power absorbed by load and the fundamental power.\n\nb) Discuss the principle of working of a three-phase bridge inverter with an appropriate circuit diagram. Draw phase and line voltage waveforms on the assumption that each thyristor conducts for $120^\\circ$ and the resistive load is star-connected. The sequence of firing of various SCRs should also be indicated in the diagram.",
+      "text": "a) A single-phase full-bridge inverter has RLC load of $R = 4\\ \\Omega$, $L = 35\\text{ mH}$ and $C = 155\\ \\mu\\text{F}$. The dc input voltage is $230\\text{ V}$ and the output frequency is $50\\text{ Hz}$. [8]\n\ni) Find an expression for load current up to fifth harmonic.\nAlso, calculate\nii) Rms value of fundamental load current.\niii) The power absorbed by load and the fundamental power.\n\nb) Discuss the principle of working of a three-phase bridge inverter with an appropriate circuit diagram. Draw phase and line voltage waveforms on the assumption that each thyristor conducts for $120^\\circ$ and the resistive load is star-connected. The sequence of firing of various SCRs should also be indicated in the diagram.",
+      "chapter": "Inverters",
+      "marks": "8",
+      "frequency": 1,
       "years": [
-        "2081 Bhadra",
-        "2078 Chaitra",
-        "2075 Chaitra"
+        "2081 Bhadra"
       ],
       "examSessions": [
-        "2081 Bhadra",
-        "2078 Chaitra",
-        "2075 Chaitra"
+        "2081 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "power-electronics-30",
-      "chapter": "Applications in Motor Drives and Power Supplies",
-      "text": "Describe Uninterruptible Power Supply (UPS) configurations: Online UPS, Offline UPS, and Line-Interactive UPS with static bypass transfer switches.",
-      "question": "Describe Uninterruptible Power Supply (UPS) configurations: Online UPS, Offline UPS, and Line-Interactive UPS with static bypass transfer switches.",
-      "marks": "6",
+      "question": "a) Draw the circuit diagram of single phase full converter with highly inductive load and explain its operation. If the load current is constant at 15A, draw the waveform of input as current and calculate the fundamental component of the input ac current.\n\nb) A single phase fullwave rectifier charges a battery from a single phase supply of 230 V, 50 Hz. The battery has interval emf of 200 volt and its internal resistance is 0.5 ohm. Calculate:\n\ni) Average value of charging current\nii) Power supplied to the battery\niii) Gross power output from the rectifier\niv) Additional resistance to be connected in series to reduce the charging current by 30%",
+      "text": "a) Draw the circuit diagram of single phase full converter with highly inductive load and explain its operation. If the load current is constant at 15A, draw the waveform of input as current and calculate the fundamental component of the input ac current.\n\nb) A single phase fullwave rectifier charges a battery from a single phase supply of 230 V, 50 Hz. The battery has interval emf of 200 volt and its internal resistance is 0.5 ohm. Calculate:\n\ni) Average value of charging current\nii) Power supplied to the battery\niii) Gross power output from the rectifier\niv) Additional resistance to be connected in series to reduce the charging current by 30%",
+      "chapter": "Single Phase AC to DC Converters",
+      "marks": "8",
+      "frequency": 1,
       "years": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Baishakh"
+        "2074 Chaitra"
       ],
       "examSessions": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Baishakh"
+        "2074 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "isDiagram": true
+    },
+    {
+      "id": "power-electronics-31",
+      "question": "a) A step-down chopper is connected to RLE load with $R=10\\text{ ohms}$, $L=15.5\\text{ mH}$ and $E = 20\\text{ V}$ with an input voltage of $220\\text{ V}$, the duty cycle, $k = 0.5$ and chopping frequency $f = 5\\text{kHZ}$. Determine, [8]\n\ni) Minimum instantaneous load current\nii) Peak instantaneous load current\niii) Maximum peak to peak current in the load\niv) Average load current\n\nb) With the help of suitable circuit diagram explain the $180^\\circ$ conduction mode of three phase inverter. And also draw the output waveforms of instantaneous phase and line voltage for star-connected load.",
+      "text": "a) A step-down chopper is connected to RLE load with $R=10\\text{ ohms}$, $L=15.5\\text{ mH}$ and $E = 20\\text{ V}$ with an input voltage of $220\\text{ V}$, the duty cycle, $k = 0.5$ and chopping frequency $f = 5\\text{kHZ}$. Determine, [8]\n\ni) Minimum instantaneous load current\nii) Peak instantaneous load current\niii) Maximum peak to peak current in the load\niv) Average load current\n\nb) With the help of suitable circuit diagram explain the $180^\\circ$ conduction mode of three phase inverter. And also draw the output waveforms of instantaneous phase and line voltage for star-connected load.",
+      "chapter": "DC Chopper",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2079 Bhadra"
+      ],
+      "examSessions": [
+        "2079 Bhadra"
+      ],
+      "isDiagram": true
+    },
+    {
+      "id": "power-electronics-32",
+      "question": "a) A single-phase AC voltage control has input voltage of $230\\ V, 50\\ HZ$ and a load of Resistor of $15\\ \\Omega$. For 6 Cycles ON and 4 cycles OFF. Calculate, [8]\n\n(i) RMS Output voltage (ii) Input $pf$\n(iii) Average and RMS thyristor currents (iv) Draw input and output waveform\n\nb) A single-phase voltage controller using two SCRs in antiparallel must have its trigger sources isolated from each other, why? Explain with a suitable diagram. [3]\n\nc) Explain the operation of a single phase cyclo-converter to get an output voltage frequency less than the frequency of input voltage.",
+      "text": "a) A single-phase AC voltage control has input voltage of $230\\ V, 50\\ HZ$ and a load of Resistor of $15\\ \\Omega$. For 6 Cycles ON and 4 cycles OFF. Calculate, [8]\n\n(i) RMS Output voltage (ii) Input $pf$\n(iii) Average and RMS thyristor currents (iv) Draw input and output waveform\n\nb) A single-phase voltage controller using two SCRs in antiparallel must have its trigger sources isolated from each other, why? Explain with a suitable diagram. [3]\n\nc) Explain the operation of a single phase cyclo-converter to get an output voltage frequency less than the frequency of input voltage.",
+      "chapter": "AC Voltage Controller",
+      "marks": "5",
+      "frequency": 1,
+      "years": [
+        "2082 Baishakh"
+      ],
+      "examSessions": [
+        "2082 Baishakh"
+      ],
+      "isDiagram": true
+    },
+    {
+      "id": "power-electronics-33",
+      "question": "a) A single-phase AC voltage controller with $230\\text{ V}$ input voltage is connected to RL load with $R=2\\ \\Omega$ and $X_L = 2\\ \\Omega$ is operated at firing angle of $45^\\circ$. The Output of AC voltage controller is discontinuous. Calculate: [8]\n\ni) Extinction Angle\nii) Conduction Angle\nii) RMS value of the output voltage\niii) Draw its waveform\n\nb) Explain the operation of the step-up cyclo-converter for stepping up frequency in four times of fundamental frequency. [5]\n\nc) Why short duration of gating pulse is not suitable for the inductive load in AC cyclo-converter?",
+      "text": "a) A single-phase AC voltage controller with $230\\text{ V}$ input voltage is connected to RL load with $R=2\\ \\Omega$ and $X_L = 2\\ \\Omega$ is operated at firing angle of $45^\\circ$. The Output of AC voltage controller is discontinuous. Calculate: [8]\n\ni) Extinction Angle\nii) Conduction Angle\nii) RMS value of the output voltage\niii) Draw its waveform\n\nb) Explain the operation of the step-up cyclo-converter for stepping up frequency in four times of fundamental frequency. [5]\n\nc) Why short duration of gating pulse is not suitable for the inductive load in AC cyclo-converter?",
+      "chapter": "AC Voltage Controller",
+      "marks": "3",
+      "frequency": 1,
+      "years": [
+        "2081 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Bhadra"
+      ],
+      "isDiagram": true
+    },
+    {
+      "id": "power-electronics-34",
+      "question": "a) A single-phase inverter with resistive load $R_0 = 5\\text{ ohms}$ and $L_0 = 20\\text{mH}$ and the input voltage is $200\\text{V dc}$ with a centre point of dc source grounded. The inverter is operated to give an output ac voltage of $50\\text{ Hz}$. Fond the time domain equation of the load current using Fourier series up to $3^{\\text{rd}}$ order. Also, find the Harmonic factor and THD of output voltage. [8]\n\nb) Explain the operation single phase AC voltage controller. Derive the expression for RMS value of the output voltage. How it can be used on Elc of MHP scheme?",
+      "text": "a) A single-phase inverter with resistive load $R_0 = 5\\text{ ohms}$ and $L_0 = 20\\text{mH}$ and the input voltage is $200\\text{V dc}$ with a centre point of dc source grounded. The inverter is operated to give an output ac voltage of $50\\text{ Hz}$. Fond the time domain equation of the load current using Fourier series up to $3^{\\text{rd}}$ order. Also, find the Harmonic factor and THD of output voltage. [8]\n\nb) Explain the operation single phase AC voltage controller. Derive the expression for RMS value of the output voltage. How it can be used on Elc of MHP scheme?",
+      "chapter": "Inverters",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2080 Baishakh"
+      ],
+      "examSessions": [
+        "2080 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "power-electronics-35",
+      "question": "a) A single-phase full bridge diode rectifier is supplied from $230\\text{ V}$, $50\\text{ Hz}$ source. The load consists of $R= 10\\ \\Omega$ and a large inductance so as to render the load current constant. Determine\n\ni) Average values of output voltage and output current,\nii) Average and rms values of diode currents,\niii) Rms values of output and input currents, and\niv) Supply pf [8]\n\nb) Explain the operation of three-phase controlled rectifier with 3 numbers of thyristors. Derive the expression for Average and RMS values of the output voltage.",
+      "text": "a) A single-phase full bridge diode rectifier is supplied from $230\\text{ V}$, $50\\text{ Hz}$ source. The load consists of $R= 10\\ \\Omega$ and a large inductance so as to render the load current constant. Determine\n\ni) Average values of output voltage and output current,\nii) Average and rms values of diode currents,\niii) Rms values of output and input currents, and\niv) Supply pf [8]\n\nb) Explain the operation of three-phase controlled rectifier with 3 numbers of thyristors. Derive the expression for Average and RMS values of the output voltage.",
+      "chapter": "Three Phase AC to DC Converters",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2081 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "power-electronics-36",
+      "question": "a) A step down chopper has an input of $200\\text{V}$ it is feeding on RLE load having $R = 2\\Omega$, $L = 10\\ \\text{mH}$, $E = 20\\ \\text{V}$, the chopping cycle has a time period of $1000\\ \\mu\\text{s}$ and transistor is on for $300\\ \\mu\\text{s}$ in each cycle. [8]\n\n(i) Find weather the load current is continuous or not.\n(ii) Find the average load current.\n\nb) How does modulation index change the rms value of output voltage of inverter? Derive the Fourier series of single pulse width modulation and determine the fundamental value.",
+      "text": "a) A step down chopper has an input of $200\\text{V}$ it is feeding on RLE load having $R = 2\\Omega$, $L = 10\\ \\text{mH}$, $E = 20\\ \\text{V}$, the chopping cycle has a time period of $1000\\ \\mu\\text{s}$ and transistor is on for $300\\ \\mu\\text{s}$ in each cycle. [8]\n\n(i) Find weather the load current is continuous or not.\n(ii) Find the average load current.\n\nb) How does modulation index change the rms value of output voltage of inverter? Derive the Fourier series of single pulse width modulation and determine the fundamental value.",
+      "chapter": "DC Chopper",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2079 Baishakh"
+      ],
+      "examSessions": [
+        "2079 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "power-electronics-37",
+      "question": "a) Explain the reverse recovery characteristics of Diode with necessary waveforms. The reverse recovery time of a diode is $3\\ \\mu\\text{s}$ and the rate of fall of the diode current is $30\\ \\text{A}/\\mu\\text{s}$. Determine storage charge and peak reverse current. [8]\n\nb) Draw the V-I characteristics curve of thyristor. What is an avalanche breakdown and forward breakdown voltage of thyristor? Mention with its symbolic diagram. [4]\n\nc) Explain the V-I characteristics of power transistor. How it can use as a static switch?",
+      "text": "a) Explain the reverse recovery characteristics of Diode with necessary waveforms. The reverse recovery time of a diode is $3\\ \\mu\\text{s}$ and the rate of fall of the diode current is $30\\ \\text{A}/\\mu\\text{s}$. Determine storage charge and peak reverse current. [8]\n\nb) Draw the V-I characteristics curve of thyristor. What is an avalanche breakdown and forward breakdown voltage of thyristor? Mention with its symbolic diagram. [4]\n\nc) Explain the V-I characteristics of power transistor. How it can use as a static switch?",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2079 Baishakh"
+      ],
+      "examSessions": [
+        "2079 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "power-electronics-38",
+      "question": "a) Describe the $dv/dt$ protection and $di/dt$ protection methods for a Thyristors. For power diodes, the reverse recovery time is $3.9\\ \\mu s$ and the rate of diode current decay is $50\\ A/\\mu s$. For a softness factor of $0.3$, calculate the peak inverse current ($I_{rr}$) and storage charge ($Q_r$). [4+4]\n\nb) What are the differences between triac and diac? What are the key factors that engineers consider when selecting between power BJTs and power MOSFETs based on their conduction and switching loss characteristics?",
+      "text": "a) Describe the $dv/dt$ protection and $di/dt$ protection methods for a Thyristors. For power diodes, the reverse recovery time is $3.9\\ \\mu s$ and the rate of diode current decay is $50\\ A/\\mu s$. For a softness factor of $0.3$, calculate the peak inverse current ($I_{rr}$) and storage charge ($Q_r$). [4+4]\n\nb) What are the differences between triac and diac? What are the key factors that engineers consider when selecting between power BJTs and power MOSFETs based on their conduction and switching loss characteristics?",
+      "chapter": "Power Electronic Devices",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2082 Baishakh"
+      ],
+      "examSessions": [
+        "2082 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "power-electronics-39",
+      "question": "a) Explain the operation of single phase ac voltage controller with resistive load. If the input voltage is $220\\text{V}$, $50\\text{Hz}$, calculate the rms value of output voltage for firing angle of $90^\\circ$. [8]\n\nb) In which circumstance, HVDC transmission line has advantages over the HVAC transmission line? Prove that a HVDC line with two conductors {tansmit same amount of power as transmitted by HVAC line with three conductors of same size. What type of power electronic converter is used in HVDC line and why?",
+      "text": "a) Explain the operation of single phase ac voltage controller with resistive load. If the input voltage is $220\\text{V}$, $50\\text{Hz}$, calculate the rms value of output voltage for firing angle of $90^\\circ$. [8]\n\nb) In which circumstance, HVDC transmission line has advantages over the HVAC transmission line? Prove that a HVDC line with two conductors {tansmit same amount of power as transmitted by HVAC line with three conductors of same size. What type of power electronic converter is used in HVDC line and why?",
+      "chapter": "AC Voltage Controller",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2076 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "power-electronics-40",
+      "question": "a) Explain the operation of single phase half wave rectification using thyristor with resistive load. Draw the waveform of output voltage and the voltage appearing across the thyristor. Derive the expression for RMS value of output voltage. [8]\n\nb) Explain the operation of a three phase single way controlled rectifier circuit with highly inductive load. Derive the expression for average value of the output voltage. Draw the wave form of output voltage for firingle of $60^\\circ$.",
+      "text": "a) Explain the operation of single phase half wave rectification using thyristor with resistive load. Draw the waveform of output voltage and the voltage appearing across the thyristor. Derive the expression for RMS value of output voltage. [8]\n\nb) Explain the operation of a three phase single way controlled rectifier circuit with highly inductive load. Derive the expression for average value of the output voltage. Draw the wave form of output voltage for firingle of $60^\\circ$.",
+      "chapter": "Single Phase AC to DC Converters",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2076 Chaitra"
+      ],
+      "examSessions": [
+        "2076 Chaitra"
+      ],
+      "isDiagram": true
+    }
+  ],
+  "yearWisePapers": [
+    {
+      "session": "2082 Chaitra",
+      "year": "2082",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 40,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Explain the working of thyristor with the help of V-I curve and explain the meaning of latching current and holding current.\n(b) The reverse recovery time of a diode is $3.9\\ \\mu\\text{s}$ and the rate of fall of the diode current decay is $50\\ \\text{A}/\\mu\\text{s}$. For a softness factor of $0.3 , determine$ storage charge and peak reverse current.",
+          "marks": "8",
+          "chapter": "Power Electronic Devices",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Explain the operation of three phase single way controlled rectifier with highly inductive load. Derive the expression of average and RMS value of output voltage. Draw the waveforms of output voltage for $\\alpha = 30^\\circ$ and calculate average value of output voltage.\n\nb) Explain the operation of a single phase AC voltage controller. Derive the expression for RMS value of the output voltage as the function of firing angle.",
+          "marks": "8",
+          "chapter": "Three Phase AC to DC Converters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Explain the operation of a three phase inverter in $180^\\circ$ conduction mode. Illustrate with a suitable circuit diagram and the related waveforms of phase and line voltage of output voltage.\n(b) Explain the operation of single-phase AC voltage controller with R-L load.",
+          "marks": "8",
+          "chapter": "Inverters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Explain the operation of single-phase step down cycloconverter with necessary circuit diagram and waveform.\n(b) A single-phase square wave inverter has a resistive load of $50\\ \\Omega$. The DC input voltage is $(72\\text{V})-0-(-72)$ with mid-point grounded. Find (i) rms value of output voltage (ii) Peak value of fundamental component of output voltage (iii) output power.",
+          "marks": "8",
+          "chapter": "AC Voltage Controller",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "Derive the expression for average value of the output voltage.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Baishakh",
+      "year": "2082",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 28,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Describe the $dv/dt$ protection and $di/dt$ protection methods for a Thyristors. For power diodes, the reverse recovery time is $3.9\\ \\mu s$ and the rate of diode current decay is $50\\ A/\\mu s$. For a softness factor of $0.3$, calculate the peak inverse current ($I_{rr}$) and storage charge ($Q_r$). [4+4]\n\nb) What are the differences between triac and diac? What are the key factors that engineers consider when selecting between power BJTs and power MOSFETs based on their conduction and switching loss characteristics?",
+          "marks": "4",
+          "chapter": "Power Electronic Devices",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Figure below shows a single-phase full converter circuit. Explain its operation with highly inductive load so that the load current is constant and equal to $10\\ A$. Draw the waveforms of input voltage $V_s$, output voltage $v_o$ and input AC current $I_s$ for firing angle of $30^0$. Calculate the average value of the output voltage. [8]\n\nb) Explain the operation of a three phase fully controlled bridge rectifier with resistive load. Derive the expression of average and RMS value of output voltage. Draw the waveform of output voltage for $\\alpha = 0^0$ and $\\alpha = 30^0$.",
+          "marks": "3",
+          "chapter": "Single Phase AC to DC Converters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Explain the operation of a single-phase inverter with resistive load and derive the expression for fundamental component of the output voltage. [8]\n(b) A three-phase bridge inverter delivers power to a resistive load from a $450\\ V$ dc source. For a star connected load of $10\\ \\Omega$ per phase, determine for both (a) $180^0$ mode (b) $120^0$ mode,\n\n(i) RMS value of load current (ii) RMS value of thyristor current (iii) Load power",
+          "marks": "8",
+          "chapter": "Inverters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) A single-phase AC voltage control has input voltage of $230\\ V, 50\\ HZ$ and a load of Resistor of $15\\ \\Omega$. For 6 Cycles ON and 4 cycles OFF. Calculate, [8]\n\n(i) RMS Output voltage (ii) Input $pf$\n(iii) Average and RMS thyristor currents (iv) Draw input and output waveform\n\nb) A single-phase voltage controller using two SCRs in antiparallel must have its trigger sources isolated from each other, why? Explain with a suitable diagram. [3]\n\nc) Explain the operation of a single phase cyclo-converter to get an output voltage frequency less than the frequency of input voltage.",
+          "marks": "5",
+          "chapter": "AC Voltage Controller",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Explain the operation of a step-up DC chopper and derive the expression for output voltage. [8]\n(b) Why is HVDC transmission preferred over HVAC transmission for transport of large power over a long distance? Perform a mathematical analysis to compare power transfer capacities of these lines.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Bhadra",
+      "year": "2081",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 35,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Explain the V-I characteristics of a Thyristor and explain the meaning of Holding current and Latching current. Why we use vertical arrangement in power BJT? [5+3]\n\nb) Explain about self and line commutation with circuit and its waveform. A 10 V source is connected across RL load having $R=10\\ \\Omega$ and $L=10\\text{ mH}$. A thyristor having latching current of $200\\text{ mA}$ is used as switch for the circuit. Calculate minimum gate pulse width to Turn ON the thyristor.",
+          "marks": "4",
+          "chapter": "Power Electronic Devices",
+          "isDiagram": true
+        },
+        {
+          "qNum": 2,
+          "text": "a) A single-phase full bridge diode rectifier is supplied from $230\\text{ V}$, $50\\text{ Hz}$ source. The load consists of $R= 10\\ \\Omega$ and a large inductance so as to render the load current constant. Determine\n\ni) Average values of output voltage and output current,\nii) Average and rms values of diode currents,\niii) Rms values of output and input currents, and\niv) Supply pf [8]\n\nb) Explain the operation of three-phase controlled rectifier with 3 numbers of thyristors. Derive the expression for Average and RMS values of the output voltage.",
+          "marks": "8",
+          "chapter": "Three Phase AC to DC Converters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) For type-A chopper circuit, source voltage $V_s = 220\\text{ V}$, chopping period $T = 2000\\ \\mu\\text{s}$, on-period $= 600\\ \\mu\\text{s}$, load circuit parameters: $R = 1\\ \\Omega$, $L = 5\\text{ mH}$ and $E = 24\\text{ V}$. [8]\n\ni) Find whether load current is continuous or not.\nii) Calculate the value of average output current.\niii) Compute the maximum and minimum values of steady state output current.\niv) Sketch the time variations of load voltage $V_0$, load current $i_0$, thyristor current $i_T$ and voltage across thyristor $V_T$\n\nb) What are the advantages HVDC transmission line over the HVAC transmission line? Why negative line is used for transmission in homopolar HVDC? [2+2]\n\nc) Explain the series operation of two single phase full converter in rectification mode.",
+          "marks": "4",
+          "chapter": "DC Chopper",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) A single-phase full-bridge inverter has RLC load of $R = 4\\ \\Omega$, $L = 35\\text{ mH}$ and $C = 155\\ \\mu\\text{F}$. The dc input voltage is $230\\text{ V}$ and the output frequency is $50\\text{ Hz}$. [8]\n\ni) Find an expression for load current up to fifth harmonic.\nAlso, calculate\nii) Rms value of fundamental load current.\niii) The power absorbed by load and the fundamental power.\n\nb) Discuss the principle of working of a three-phase bridge inverter with an appropriate circuit diagram. Draw phase and line voltage waveforms on the assumption that each thyristor conducts for $120^\\circ$ and the resistive load is star-connected. The sequence of firing of various SCRs should also be indicated in the diagram.",
+          "marks": "8",
+          "chapter": "Inverters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "a) A single-phase AC voltage controller with $230\\text{ V}$ input voltage is connected to RL load with $R=2\\ \\Omega$ and $X_L = 2\\ \\Omega$ is operated at firing angle of $45^\\circ$. The Output of AC voltage controller is discontinuous. Calculate: [8]\n\ni) Extinction Angle\nii) Conduction Angle\nii) RMS value of the output voltage\niii) Draw its waveform\n\nb) Explain the operation of the step-up cyclo-converter for stepping up frequency in four times of fundamental frequency. [5]\n\nc) Why short duration of gating pulse is not suitable for the inductive load in AC cyclo-converter?",
+          "marks": "3",
+          "chapter": "AC Voltage Controller",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "Explain the V-I characteristics of a Thyristor and explain the meaning of Holding current and Latching current.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Baishakh",
+      "year": "2081",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 32,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Explain the operation of a single phase full converter circuit with highly inductive load with neat circuit diagram and associated waveforms. If the load current is constant and equal to $20\\text{Amp} , draw$ the waveform input ac current $i_s$ for firing angle of $30^\\circ$ and calculate the fundamental component of $i_s$. [8]\n(b) Explain the operation of step up dc chopper and derive the equation for output voltage.",
+          "marks": "8",
+          "chapter": "Single Phase AC to DC Converters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Explain the principle of AC voltage controller with resistive load along with derivation of expression for rms output voltage. [8]\n(b) Explain the operation of series connection of two single phase full converter. How it can be used in rectification mode and inversion mode?",
+          "marks": "8",
+          "chapter": "AC Voltage Controller",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Explain the operation of three phase single way controlled rectifier with highly inductive load. Derive the expression of average and RMS value of output voltage. Draw the waveforms of output voltage for $\\alpha = 30^\\circ$ and calculate average value of output voltage.\n\nb) Explain the operation of a single phase AC voltage controller. Derive the expression for RMS value of the output voltage as the function of firing angle.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Explain the operation of a single phase inverter with ac motor as load. Derive the equation for current drawn by the motor of positive half cycle. [8]\n\nb) Explain the operation of a three phase sinusoidal PWM inverter with neat circuit diagram and waveforms.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2080 Bhadra",
+      "year": "2080",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 56,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Explain the working of power diode with the help of V-I curve. What do you mean by reverse recovery characteristic of a power diode? [8]\n(b) Explain gate triggering circuit of a Thyristor.",
+          "marks": "8",
+          "chapter": "Power Electronic Devices",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Draw the circuit diagram of a single phase full controlled rectifier having supply Input RMS voltage of $230\\text{ V}$, $50\\text{ Hz}$. with a highly inductive load so that load current is constant and equal to $25\\text{ Amp}$. [8]\n\ni) Explain its operation for firing angle $\\alpha = 30^\\circ$.\nii) Derive the expression for average and RMS values of the output voltage\niii) Calculate the value of average output voltage.\n\nb) Explain the symmetrical angle control method for improving input power factor in single phase controlled rectifier.",
+          "marks": "8",
+          "chapter": "Single Phase AC to DC Converters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Explain the series connection of two single phase full converter with necessary circuit diagram and waveforms. Also, explain their operation in rectification and inversion mode. [8]\n(b) Why HVDC line is preferred over HVAC line to transport large power over a long distance? Make a mathematical comparison between above two system in terms of saving in line conductor.",
+          "marks": "8",
+          "chapter": "Single Phase AC to DC Converters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Explain the operation of step up chopper and obtain the expression for output voltage. [8]\n(b) With the help of suitable circuit diagram, explain the operation of three phase inverter with six steps output voltage.",
+          "marks": "8",
+          "chapter": "DC Chopper",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) With the help of suitable circuit diagram and waveform, explain the operation of single AC voltage controller with R load. Do the same circuit could be modified to control the load at micro-hydro power as ELC controller? Justify. [8]\n(b) Explain the working of single phase cyclo-converter which will double the time period of input AC voltage with suitable circuit diagram and waveforms. Also calculate the rms value of output voltage.",
+          "marks": "8",
+          "chapter": "AC Voltage Controller",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "Why HVDC line is preferred over HVAC line to transport large power over a long distance? Make a mathematical comparison between above two system in terms of saving in line conductor.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the series connection of two single phase full converter with necessary circuit diagram and waveforms. Also, explain their operation in rectification and inversion mode.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2080 Baishakh",
+      "year": "2080",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 40,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Define Commutation Techniques. Differentiate between Natural and Forced Commutation with suitable circuit examples. [8]\n(b) Explain Switching Characteristics of BJT. Explain a gate signal Generating signal for BJT.",
+          "marks": "8",
+          "chapter": "Power Electronic Devices",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Figure below shows a single-phase controlled rectifier with 4 nos of GTO switches. The average value of the output voltage is controlled by extinction angle control method. The load current is constant and equal to $20\\text{Amp}$ due to highly inductive load. For an extinction angle of $30^\\circ$. [8]\n\ni) Draw the waveform of load voltage, load current and input ac current.\nii) Average and RMS value of output voltage.\niii) Calculate the magnitude and phase of fundamental component of the input ac current.\n\nb) With the help of suitable circuit diagram and waveforms, explain the operation of three phase full wave bridge rectifier using diodes. Derive the expression for average value and rms value of the output voltage.",
+          "marks": "8",
+          "chapter": "Single Phase AC to DC Converters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "a) Explain the operation of a single phase inverter with ac motor as load. Derive the equation for current drawn by the motor of positive half cycle. [8]\n\nb) Explain the operation of a three phase sinusoidal PWM inverter with neat circuit diagram and waveforms.",
+          "marks": "8",
+          "chapter": "Inverters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "a) A single-phase inverter with resistive load $R_0 = 5\\text{ ohms}$ and $L_0 = 20\\text{mH}$ and the input voltage is $200\\text{V dc}$ with a centre point of dc source grounded. The inverter is operated to give an output ac voltage of $50\\text{ Hz}$. Fond the time domain equation of the load current using Fourier series up to $3^{\\text{rd}}$ order. Also, find the Harmonic factor and THD of output voltage. [8]\n\nb) Explain the operation single phase AC voltage controller. Derive the expression for RMS value of the output voltage. How it can be used on Elc of MHP scheme?",
+          "marks": "8",
+          "chapter": "Inverters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Explain the working of three phase to single phase cyclo-converter with suitable circuit diagram and waveforms. [8]\n(b) Make a mathematical comparison between HVAC and HVDC lines to justify line conductor saving in HVDC line.",
+          "marks": "8",
+          "chapter": "AC Voltage Controller",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2079 Bhadra",
+      "year": "2079",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Explain how a transistor can be used as a static switch. Describe how gate signal for the base of a transistor can be generated to turn ON and OFF a transistor. [8]\n\nb) Explain the $di/dt$ protection scheme and $dv/dt$ protection scheme for a thyristor.",
+          "marks": "8",
+          "chapter": "Power Electronic Devices",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Figure shows single phase full converter circuit with highly inductive load so that load current is constant and equal to $25\\text{ A}$. Explain its operation for firing angle of $30^\\circ$. Draw the input and output waveforms of voltages and currents. Calculate the fundamental component of input AC current. [8]\n\nb) Explain the operation of 3-phase single way uncontrolled rectifier and describe expression for average output voltage.",
+          "marks": "8",
+          "chapter": "Single Phase AC to DC Converters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) A step-down chopper is connected to RLE load with $R=10\\text{ ohms}$, $L=15.5\\text{ mH}$ and $E = 20\\text{ V}$ with an input voltage of $220\\text{ V}$, the duty cycle, $k = 0.5$ and chopping frequency $f = 5\\text{kHZ}$. Determine, [8]\n\ni) Minimum instantaneous load current\nii) Peak instantaneous load current\niii) Maximum peak to peak current in the load\niv) Average load current\n\nb) With the help of suitable circuit diagram explain the $180^\\circ$ conduction mode of three phase inverter. And also draw the output waveforms of instantaneous phase and line voltage for star-connected load.",
+          "marks": "8",
+          "chapter": "DC Chopper",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "a) Calculate the rms value of fundamental and $3^{rd}$ harmonics component of output voltage for $180^\\circ$ conduction mode of three phase inverter shown in figure below. [8]\n\nb) With the help of suitable circuit diagram and waveform, explain the operation of single AC voltage controller with R-load and calculate the rms value of output voltage.",
+          "marks": "8",
+          "chapter": "Inverters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the operation of single phase cyclo-conterter. What are its applications?\n\nb) Explain the series connection of two single phase full converter with necessary circuit diagram and waveforms. How these series connected circuit can be operated in",
+          "marks": "8",
+          "chapter": "AC Voltage Controller",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "Explain the series connection of two single phase full converter with necessary circuit diagram and waveforms. Also, explain their operation in rectification and inversion mode.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": true
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the operation of single phase step down cycloconverter with necessary circuit diagram and waveform.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": true
+        },
+        {
+          "qNum": 8,
+          "text": "Explain the $di/dt$ protection scheme and $dv/dt$ protection scheme for a thyristor.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain the series connection of two single phase full converter with necessary circuit diagram and waveforms. Also, explain their operation in rectification and inversion mode.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2079 Baishakh",
+      "year": "2079",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 36,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Single phase full wave rectifier charges a battery from a single phase supply of $230\\ \\text{V}$, $50\\ \\text{Hz}$. The battery has interval emf of $200\\ \\text{volts}$ and its internal resistance is $0.5\\ \\text{ohms}$. Calculate: [8]\n\n(i) Average value of charging current\n(ii) Power supplied to the battery\n(iii) Gross power output from the rectifier\n(iv) Additional resistance to be connected in series to reduce the charging current by $30\\%$.\n\nb) Explain the operation of three phase single way controlled rectifier with purely resistive load. Derive the expression of average and RMS value of output voltage. Draw the waveforms of output voltage for $\\alpha = 30^\\circ$ and $60^\\circ$ and calculate average value of output voltage.",
+          "marks": "8",
+          "chapter": "Single Phase AC to DC Converters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) A step down chopper has an input of $200\\text{V}$ it is feeding on RLE load having $R = 2\\Omega$, $L = 10\\ \\text{mH}$, $E = 20\\ \\text{V}$, the chopping cycle has a time period of $1000\\ \\mu\\text{s}$ and transistor is on for $300\\ \\mu\\text{s}$ in each cycle. [8]\n\n(i) Find weather the load current is continuous or not.\n(ii) Find the average load current.\n\nb) How does modulation index change the rms value of output voltage of inverter? Derive the Fourier series of single pulse width modulation and determine the fundamental value.",
+          "marks": "8",
+          "chapter": "DC Chopper",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Obtain the switch states for three phase VSI of $180$ degree conduction mode. Draw the waveform of output phase voltages of same inverter showing suitable modes of operation. [8]\n(b) A single phase full wave inverter has a resistive load of $5\\ \\text{ohm}$. The dc input voltage is $30$. Find (i) rms value of output voltage (ii) rms value of fundamental component of output voltage (iii) output power (iv) peak current in each thyristors.",
+          "marks": "8",
+          "chapter": "Inverters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Explain the operation of three phase Cyclo-converters with necessary circuit and waveforms. [8]\n(b) Justify that the total power loss of HVDC transmission line is only $2/3\\text{th}$ of total power loss in HVAC transmission line. Make necessary assumption if necessary.",
+          "marks": "8",
+          "chapter": "AC Voltage Controller",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the reverse recovery characteristics of Diode with necessary waveforms. The reverse recovery time of a diode is $3\\ \\mu\\text{s}$ and the rate of fall of the diode current is $30\\ \\text{A}/\\mu\\text{s}$. Determine storage charge and peak reverse current. [8]\n\nb) Draw the V-I characteristics curve of thyristor. What is an avalanche breakdown and forward breakdown voltage of thyristor? Mention with its symbolic diagram. [4]\n\nc) Explain the V-I characteristics of power transistor. How it can use as a static switch?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Bhadra",
+      "year": "2078",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 56,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Explain how a transistor can be used as a static switch. Describe how gate signal for the base of a transistor can be generated to turn ON and OFF a transistor. [8]\n\nb) Explain the $di/dt$ protection scheme and $dv/dt$ protection scheme for a thyristor.",
+          "marks": "8",
+          "chapter": "Power Electronic Devices",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Draw the circuit diagram of single phase full wave rectifier with associated waveforms. A single phase full wave thyristor rectifier has $a^n$ input voltage of $220V$ rms. The load is a resistance of $50$ ohms and firing angle is $45$ degree in each positive half cycle. Find average output voltage, rms output voltage.\n(b) Draw and explain the output waveforms of three phase full bridge rectifier with R load. Find the average value of output voltage.",
+          "marks": "8",
+          "chapter": "Single Phase AC to DC Converters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Write down the principle of step up chopper with neat diagram and waveforms. Derive the output value of load voltage and determine the condition for controllable power transfer range.\n(b) For three phase $180$ degree conduction river, draw the output waveforms for $V_{RY} , V_{YB} , V_{BR} , V_{NO} , and$ $V_{RN} , where$ the notation has their usual meaning.",
+          "marks": "8",
+          "chapter": "DC Chopper",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Single phase full bridge inverter has $a^n$ RLC load with $R = 10\\Omega , L = 31.5mH$ and $C = 112\\mu F$. The inverter frequency is $50Hz$ and dc input voltage is $220V$.\n\n(i) express the instantaneous load current in fourier series\n(ii) RMS value of fundamental component of load current\n(iii) THD of load current\n(b) Explain the operation of single phase AC voltage controller with necessary circuit diagram and waveforms. Derive the expression for rms value of output voltage.",
+          "marks": "8",
+          "chapter": "Inverters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) With suitable input frequency value explain the single phase step down cycloconverter and draw the output waveform for $1/4$th of frequency.\n(b) Compare AC transmission over HVDC transmission. Justify that total power loss in HVDC is only $2/3$th of total power loss in HVAC transmission lines.",
+          "marks": "8",
+          "chapter": "AC Voltage Controller",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "Explain the $di/dt$ protection scheme and $dv/dt$ protection scheme for a thyristor.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "\n(a) Explain the switching characteristics of a power transistor. How turn on control and turn off control operation operated on base drive circuit of transistor?\n(b) Explain the $di/dt$ and $dv/dt$ protection of the thyristor with necessary diagram and waveforms.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2076 Chaitra",
+      "year": "2076",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 56,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) In figure below shows a full-wave rectifier circuit used to charge at $12\\ \\text{V}$ battery through a $2\\ \\Omega$ resistor.\n\nCalculate:\n\ni) Average value of charging current\nii) Power supplied to the battery\niii) Gross output power from rectifier\niv) Additional resistance to be connected in series with $2\\ \\Omega$ resistors to limit the average value of charging current to $0.5\\ \\text{amp}$.\n\nb) Explain the operation of three-phase single way-controlled rectifier circuit with necessary waveforms. Also derive the expression for average value of the output voltage.",
+          "marks": "8",
+          "chapter": "Power Electronic Devices",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Explain the operation of single phase half wave rectification using thyristor with resistive load. Draw the waveform of output voltage and the voltage appearing across the thyristor. Derive the expression for RMS value of output voltage. [8]\n\nb) Explain the operation of a three phase single way controlled rectifier circuit with highly inductive load. Derive the expression for average value of the output voltage. Draw the wave form of output voltage for firingle of $60^\\circ$.",
+          "marks": "8",
+          "chapter": "Single Phase AC to DC Converters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Explain the principle of step up dc chopper and deduce the expression for average output voltage. [8]\n(b) A step down dc chopper has a 20 ohm resistor load and input voltage 220V. When the converter switch is ON, its voltage drop in chopper switch is 1V and the chopper frequency is 2KHz. If the duty cycle is 0.8, calculate:\n\n(i) Average value of the output voltage\n(ii) Efficiency of choper circuit",
+          "marks": "8",
+          "chapter": "DC Chopper",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Explain the operation of a three phase Sinusoid PWM inverter with neat circuit diagram and associated waveforms. How switching instants for inverter switch pair of a phase are determined. [8]\n\nb) Figure 5 shows the waveform of output voltage (per phase) of three phase inverter. Calculate RMS value and peak value of fundamental component of the output voltage.\n\nFig.5",
+          "marks": "8",
+          "chapter": "Inverters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the operation of single phase ac voltage controller with resistive load. If the input voltage is $220\\text{V}$, $50\\text{Hz}$, calculate the rms value of output voltage for firing angle of $90^\\circ$. [8]\n\nb) In which circumstance, HVDC transmission line has advantages over the HVAC transmission line? Prove that a HVDC line with two conductors {tansmit same amount of power as transmitted by HVAC line with three conductors of same size. What type of power electronic converter is used in HVDC line and why?",
+          "marks": "8",
+          "chapter": "AC Voltage Controller",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain the operation of a three phase single way controlled rectifier circuit with highly inductive load.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Derive the expression for average value of the output voltage.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2076 Ashwin",
+      "year": "2076",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 40,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Explaining the reverse recovery characteristics of diode.\n(b) Explain the V-I characteristics of a power thyristor. How $a^n$ opto-coupler can be used to isolate the gate signal generator and power circuit.",
+          "marks": "8",
+          "chapter": "Power Electronic Devices",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Explain the operation of three phase single way controlled rectifier with highly inductive load. Derive the expression of average and RMS value of output voltage. Draw the waveforms of output voltage for $\\alpha = 30^\\circ$ and calculate average value of output voltage.\n\nb) Explain the operation of a single phase AC voltage controller. Derive the expression for RMS value of the output voltage as the function of firing angle.",
+          "marks": "8",
+          "chapter": "Three Phase AC to DC Converters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) With the help of suitable circuit diagram, explain the operation of six steps three phase inverter. And also draw the output waveforms of instantaneous phase and line voltage for star connected load.\n(b) Explain the operation of a three phase sinusoidal PWM inverter with neat circuit diagram and waveforms.",
+          "marks": "8",
+          "chapter": "Inverters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Explain class C and class E dc chopper.\n(b) Explain the operating principle of step up dc to dc chopper.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the bridge configuration of single phase step-down cycloconverter with necessary circuit diagram and waveform. Also tabulate the conduction sequence.\n\nb) What are the differences between HVAC and HVDC transmission lines? Perform a mathematical comparison between HVAC and HVDC lines.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2075 Chaitra",
+      "year": "2075",
+      "month": "Chaitra",
+      "examType": "Back",
+      "totalMarks": 40,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) The supply voltage of a step down chopper is 230V dc, load resistance is 10 ohms. Take the voltage drop of 1V across chopper when it is ON. For a duty cycle of 0.4, calculate the average and rms value of output voltage.\n(b) Draw the circuit diagram of Type-E four quadrant chopper and explain its operation for all four quadrants.",
+          "marks": "8",
+          "chapter": "DC Chopper",
+          "isDiagram": true
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Explain the operation of three phase sinusoidal Pulse width modulation inverter.\n(b) Explain the operating principle of single phase current source inverter with necessary waveforms.",
+          "marks": "8",
+          "chapter": "Inverters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Explain the bridge configuration of single phase step-down cycloconverter with necessary circuit diagram and waveform. Also tabulate the conduction sequence.\n\nb) What are the differences between HVAC and HVDC transmission lines? Perform a mathematical comparison between HVAC and HVDC lines.",
+          "marks": "8",
+          "chapter": "AC Voltage Controller",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "Why HVDC line is preferred over HVAC line to transport large power over a long distance? Make a mathematical comparison between above two system in terms of saving in line conductor.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain the operation of single phase step down cycloconverter with necessary circuit diagram and waveform.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2075 Ashwin",
+      "year": "2075",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 24,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) In figure below shows a full-wave rectifier circuit used to charge at $12\\ \\text{V}$ battery through a $2\\ \\Omega$ resistor.\n\nCalculate:\n\ni) Average value of charging current\nii) Power supplied to the battery\niii) Gross output power from rectifier\niv) Additional resistance to be connected in series with $2\\ \\Omega$ resistors to limit the average value of charging current to $0.5\\ \\text{amp}$.\n\nb) Explain the operation of three-phase single way-controlled rectifier circuit with necessary waveforms. Also derive the expression for average value of the output voltage.",
+          "marks": "8",
+          "chapter": "Single Phase AC to DC Converters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Determine the average value of output voltage and the fundamental component of the load current of step down chopper having input voltage of $220V$ DC, load resistance $20\\ \\Omega$ and duty cycle of $45\\%$ Given: chopping frequency of chopper is $1\\text{ kHz}$.\n(b) Explain the operation of single PWM techniques for inverter control and therefore determine the rms value of output voltage.",
+          "marks": "8",
+          "chapter": "DC Chopper",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) With mathematical aid, explain how full converters can be used for reverse power flow in bipolar link of HVDC transmission.\n(b) Explain the operation of ac voltage controller and its application in electronic load controller for Micro-Hydro power plant.",
+          "marks": "8",
+          "chapter": "AC Voltage Controller",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2074 Chaitra",
+      "year": "2074",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 68,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Explain the V-I characteristics of a Thyristor and explain the meaning of Holding current and Latching current. Why we use vertical arrangement in power BJT? [5+3]\n\nb) Explain about self and line commutation with circuit and its waveform. A 10 V source is connected across RL load having $R=10\\ \\Omega$ and $L=10\\text{ mH}$. A thyristor having latching current of $200\\text{ mA}$ is used as switch for the circuit. Calculate minimum gate pulse width to Turn ON the thyristor.",
+          "marks": "4",
+          "chapter": "Power Electronic Devices",
+          "isDiagram": true
+        },
+        {
+          "qNum": 2,
+          "text": "a) Draw the circuit diagram of single phase full converter with highly inductive load and explain its operation. If the load current is constant at 15A, draw the waveform of input as current and calculate the fundamental component of the input ac current.\n\nb) A single phase fullwave rectifier charges a battery from a single phase supply of 230 V, 50 Hz. The battery has interval emf of 200 volt and its internal resistance is 0.5 ohm. Calculate:\n\ni) Average value of charging current\nii) Power supplied to the battery\niii) Gross power output from the rectifier\niv) Additional resistance to be connected in series to reduce the charging current by 30%",
+          "marks": "8",
+          "chapter": "Single Phase AC to DC Converters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "a) Explain the operation of step up dc chopper.\n\nb) Draw the circuit diagram of Type-E four quadrant chopper and explain its operation for all four quadrants.",
+          "marks": "8",
+          "chapter": "DC Chopper",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "a) The given waveform in figure below is the output voltage and three phase inverter. Calculate the fundamental component and $3^{rd}$ harmonic component of the output voltage.\n\nb) The single phase ac controller has input voltage of 230V, 50Hz and the positive and negative thyristors are triggered at an angle of $90^\\circ$ and $\\pi+90^\\circ$ respectively. The series RL load has $R = 20\\ \\Omega$, $L = 50\\text{mH}$ then determine the rms value of load voltage and load current.",
+          "marks": "8",
+          "chapter": "Inverters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the operation of single phase cyclo-conterter. What are its applications?\n\nb) Explain the series connection of two single phase full converter with necessary circuit diagram and waveforms. How these series connected circuit can be operated in",
+          "marks": "8",
+          "chapter": "AC Voltage Controller",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "Explain the operation of step up dc chopper.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the series connection of two single phase full converter with necessary circuit diagram and waveforms. Also, explain their operation in rectification and inversion mode.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": true
+        },
+        {
+          "qNum": 8,
+          "text": "Explain the V-I characteristics of a Thyristor and explain the meaning of Holding current and Latching current.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain the $di/dt$ protection scheme and $dv/dt$ protection scheme for a thyristor.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2074 Ashwin",
+      "year": "2074",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 38,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Discuss a method of thyristor turn ON mechanism. Also explain about thyristor force commutation techniques. [8]\n(b) Explain how a transistor can be used as a power swith.",
+          "marks": "8",
+          "chapter": "Power Electronic Devices",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Figure shows a single phase full converter circuit with highly inductive load so that load current is constant and equal to 25 amp. Explain its operation for firing angle = $30^\\circ$. Draw the waveforms of input voltage $V_s$, output voltage $V_0$ and input current $i_s$. Calculate the fundamental component of input current and Input power factor. [8]\n\nb) Explain the operation of three-phase single way rectifier with diode with neat circuit diagram and waveforms. Derive the expression for average and rms values of the output voltage.",
+          "marks": "8",
+          "chapter": "Single Phase AC to DC Converters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "a) Explain the operation of three phase single way controlled rectifier with highly inductive load. Derive the expression of average and RMS value of output voltage. Draw the waveforms of output voltage for $\\alpha = 30^\\circ$ and calculate average value of output voltage.\n\nb) Explain the operation of a single phase AC voltage controller. Derive the expression for RMS value of the output voltage as the function of firing angle.",
+          "marks": "8",
+          "chapter": "Three Phase AC to DC Converters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Explain the operation of single phase PWM inverter. Derive the expression for rms value of output voltage and also write down the output voltage in the form of Fourier expression. [10]\n(b) With the help of suitable circuit diagram and waveform, explain the operation of single phase cycloconverter.",
+          "marks": "6",
+          "chapter": "Inverters",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the operation of single phase cyclo-conterter. What are its applications?\n\nb) Explain the series connection of two single phase full converter with necessary circuit diagram and waveforms. How these series connected circuit can be operated in",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2073 Shrawan",
+      "year": "2073",
+      "month": "Shrawan",
+      "examType": "Back",
+      "totalMarks": 40,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Draw a snubber circuit for $a^n$ SCR. How does it provide dv/dt protection?\n(b) Explain how a BJT can be used as a switch in power circuit.",
+          "marks": "8",
+          "chapter": "Power Electronic Devices",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) The average value of output voltage of single phase full converter with 4 GTO switches is controlled by extinction angle control method. The load current is constant and equal to 20Amp due to highly inductive load. For the extinction angle of $30^\\circ$, draw the waveforms of load voltage, load current and input ac current. Also find RMS value of output voltage, magnitude and phase of fundamental component of the input ac current.\n\nb) Explain the operation of three phase single way controlled rectifier with thyristor with neat diagram and waveforms. Derive the expression for average and RMS value of the output voltage.",
+          "marks": "8",
+          "chapter": "Single Phase AC to DC Converters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) A step-down chopper is connected to RLE load with $R=10\\text{ ohms}$, $L=15.5\\text{ mH}$ and $E = 20\\text{ V}$ with an input voltage of $220\\text{ V}$, the duty cycle, $k = 0.5$ and chopping frequency $f = 5\\text{kHZ}$. Determine, [8]\n\ni) Minimum instantaneous load current\nii) Peak instantaneous load current\niii) Maximum peak to peak current in the load\niv) Average load current\n\nb) With the help of suitable circuit diagram explain the $180^\\circ$ conduction mode of three phase inverter. And also draw the output waveforms of instantaneous phase and line voltage for star-connected load.",
+          "marks": "8",
+          "chapter": "DC Chopper",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "a) A single phase full bridge inverter with dc input voltage of $V_s=400\\text{V}$ and generating output square wave of $50\\text{Hz}$ is connected to inductive load having $R=10\\ \\Omega$ and $L=50\\text{mH}$. Calculate the magnitude and phase of fundamental component and third harmonic component of output voltage and load current.\n\nb) Explain the operation of ac voltage controller with purely resistive load. Also explain the use of ac voltage controller in ELC",
+          "marks": "8",
+          "chapter": "Inverters",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) With the help of suitable circuit diagram, describe the operation of reversible power flow on DC line.\n(b) What are the advantages of HVDC transmission line with compare the HVAC transmission line. Perform a mathematical analysis to compare power transfer capacities of these lines.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": true
+        }
+      ]
     }
   ]
 }

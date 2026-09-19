@@ -1,379 +1,1119 @@
 {
   "subject": "Wireless Communication",
-  "subjectCode": "ENEX 415",
+  "semester": "1",
   "questions": [
     {
-      "chapter": "Cellular Concept: System Design Fundamentals",
-      "text": "Explain the cellular concept and frequency reuse. Define cluster size $N = i^2 + ij + j^2$ and co-channel reuse ratio $Q = \\frac{D}{R} = \\sqrt{3N}$. Calculate the co-channel interference ratio ($S/I$) for a 7-cell cluster with omnidirectional versus $120^\\circ$ and $60^\\circ$ directional sectoring.",
-      "marks": "10",
+      "id": "wireless-communication-1",
+      "question": "a) For a cluster $N = 7$ system with a blocking probability of $1\\%$ and an average call length of two minutes, find the traffic capacity loss for a blocked calls cleared system due to trunking for 57 channels when going from omnidirectional antennas to $60^\\circ$ sectored antennas. The average request rate per user is 1 call per hour. [2+2+2]<table><thead><tr><th>GOS/ Channel</th><th>0.5%</th><th>1%</th><th>2%</th></tr></thead><tbody><tr><td>1</td><td>.005</td><td>.0101</td><td>.0204</td></tr><tr><td>9</td><td>3.333</td><td>3.783</td><td>4.345</td></tr><tr><td>19</td><td>10.33</td><td>11.23</td><td>12.33</td></tr><tr><td>54</td><td>39.47</td><td>41.51</td><td>44.00</td></tr><tr><td>57</td><td>42.1</td><td>44.2</td><td>46.8</td></tr></tbody></table>b) What is Hand-off? Explain proper and improper HO with necessary drawing.",
+      "text": "a) For a cluster $N = 7$ system with a blocking probability of $1\\%$ and an average call length of two minutes, find the traffic capacity loss for a blocked calls cleared system due to trunking for 57 channels when going from omnidirectional antennas to $60^\\circ$ sectored antennas. The average request rate per user is 1 call per hour. [2+2+2]<table><thead><tr><th>GOS/ Channel</th><th>0.5%</th><th>1%</th><th>2%</th></tr></thead><tbody><tr><td>1</td><td>.005</td><td>.0101</td><td>.0204</td></tr><tr><td>9</td><td>3.333</td><td>3.783</td><td>4.345</td></tr><tr><td>19</td><td>10.33</td><td>11.23</td><td>12.33</td></tr><tr><td>54</td><td>39.47</td><td>41.51</td><td>44.00</td></tr><tr><td>57</td><td>42.1</td><td>44.2</td><td>46.8</td></tr></tbody></table>b) What is Hand-off? Explain proper and improper HO with necessary drawing.",
+      "chapter": "General",
+      "marks": "1",
+      "frequency": 1,
       "years": [
-        "2082 Shrawan",
-        "2078 Chaitra",
-        "2076 Bhadra",
-        "2071 Bhadra"
+        "2081 Baishakh"
       ],
-      "frequency": 4
+      "examSessions": [
+        "2081 Baishakh"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Cellular Concept: System Design Fundamentals",
-      "text": "Explain Handoff (Handover) strategies in mobile cellular systems: Hard Handoff vs Soft Handoff, Mobile-Assisted Handoff (MAHO), Delayed handoff, Queuing of handoffs, and cell dragging.",
+      "id": "wireless-communication-2",
+      "question": "a) Define path loss. Explain the parameters of mobile multipath a channels used to classify various types of fading. [2+4]\n\nb) Determine the mean path loss using Okumura's model for $d = 50\\text{ km}$, $h_{te} = 100\\text{ m}$, $h_{re} = 10\\text{ m}$ in a suburban environment. If the base station transmitter radiates an EIRP of $1\\text{ kW}$ at a carrier frequency of $900\\text{ MHz}$. Find EIRP (dBm) and the power at the receiver where the gain at receiving antenna is $10\\text{ dB}$. The medium attenuation factor is $43\\text{ dB}$ and the gain due to area is $9\\text{ dB}$ for a $50\\text{ km}$ distance and $900\\text{ MHz}$ frequency of operation. [4+2+2]\n\nc) What do you mean by Ericsson Multiple Breakpoint model?",
+      "text": "a) Define path loss. Explain the parameters of mobile multipath a channels used to classify various types of fading. [2+4]\n\nb) Determine the mean path loss using Okumura's model for $d = 50\\text{ km}$, $h_{te} = 100\\text{ m}$, $h_{re} = 10\\text{ m}$ in a suburban environment. If the base station transmitter radiates an EIRP of $1\\text{ kW}$ at a carrier frequency of $900\\text{ MHz}$. Find EIRP (dBm) and the power at the receiver where the gain at receiving antenna is $10\\text{ dB}$. The medium attenuation factor is $43\\text{ dB}$ and the gain due to area is $9\\text{ dB}$ for a $50\\text{ km}$ distance and $900\\text{ MHz}$ frequency of operation. [4+2+2]\n\nc) What do you mean by Ericsson Multiple Breakpoint model?",
+      "chapter": "General",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2080 Bhadra"
+      ],
+      "examSessions": [
+        "2080 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-3",
+      "question": "a) Define the significance of term frequency dispersion in wireless communication. Derive the relation for doppler spread. [2+4]\n\nb) Find the mean path loss using Okumura's Model for $d = 50\\text{ km}$, $h_{te} = 100\\text{ m}$, $h_{re} = 10\\text{ m}$ in a suburban environment. If the BS transmitter radiates an EIRP oh $1\\text{ kW}$ at a carrier frequency of $900\\text{ MHz}$, find EIRP in dBm and the power at the receiver where gain of receiving antenna is $10\\text{ dB}$. (Given: $A_{mu}(f,d) = 43\\text{ dB}$, $G_{\\text{Area}}(f) = 9\\text{ dB}$) [5]\n\nc) Define the terms coherence bandwidth and coherence time. What are the factors that influenced in indoor propagation model? Explain.",
+      "text": "a) Define the significance of term frequency dispersion in wireless communication. Derive the relation for doppler spread. [2+4]\n\nb) Find the mean path loss using Okumura's Model for $d = 50\\text{ km}$, $h_{te} = 100\\text{ m}$, $h_{re} = 10\\text{ m}$ in a suburban environment. If the BS transmitter radiates an EIRP oh $1\\text{ kW}$ at a carrier frequency of $900\\text{ MHz}$, find EIRP in dBm and the power at the receiver where gain of receiving antenna is $10\\text{ dB}$. (Given: $A_{mu}(f,d) = 43\\text{ dB}$, $G_{\\text{Area}}(f) = 9\\text{ dB}$) [5]\n\nc) Define the terms coherence bandwidth and coherence time. What are the factors that influenced in indoor propagation model? Explain.",
+      "chapter": "General",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2082 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-4",
+      "question": "a) Describe briefly the types of small scale fading in radio propagation. Explain the factors which influences small scale fading. [4+4]\n\nb) Assume free space propagation, a receiver is located $10\\text{ km}$ away from a $50\\text{ w}$ transmitter. The carrier frequency is $900\\text{ MHza.}$ antenna gain at transmitter and receiver are $1$ and $2$ respectively, find:\n\ni) The power received at the receiver\nii) The magnitude of E-field at the receiver antenna\niii) The power flux density\niv) The rms voltage applied to the receiver input.\nThe receiver antenna has a purely real impedance of $50\\ \\Omega$ and is matched to the receiver.",
+      "text": "a) Describe briefly the types of small scale fading in radio propagation. Explain the factors which influences small scale fading. [4+4]\n\nb) Assume free space propagation, a receiver is located $10\\text{ km}$ away from a $50\\text{ w}$ transmitter. The carrier frequency is $900\\text{ MHza.}$ antenna gain at transmitter and receiver are $1$ and $2$ respectively, find:\n\ni) The power received at the receiver\nii) The magnitude of E-field at the receiver antenna\niii) The power flux density\niv) The rms voltage applied to the receiver input.\nThe receiver antenna has a purely real impedance of $50\\ \\Omega$ and is matched to the receiver.",
+      "chapter": "General",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2082 Shrawan",
-        "2078 Chaitra",
-        "2076 Bhadra",
-        "2070 Bhadra"
+        "2080 Baishakh"
       ],
-      "frequency": 4
+      "examSessions": [
+        "2080 Baishakh"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
-      "text": "What is fading? Distinguish between Large-Scale Path Loss and Small-Scale Fading. Explain the types of small-scale fading based on multipath time delay spread (Flat Fading vs Frequency Selective Fading) and Doppler spread (Fast Fading vs Slow Fading). Define Coherence Bandwidth ($B_c$) and Coherence Time ($T_c$).",
-      "marks": "10",
+      "id": "wireless-communication-5",
+      "question": "a) What do you mean by diffraction in radio wave propagation? Derive an expression for phase difference in Fresnel Zone Geometry model of direction. [2+6]\n\nb) In mobile propagation in a cellular system, find the correction factor and pathloss for a medium size city assuming carrier frequency as $950\\text{ MHz}$, height of transmitting antenna at base station is $45\\text{ m}$, propagation distance between antennas is $10\\text{ km}$ and height of receiving antenna in mobile station is $5\\text{ m}$. Compute free space pathloss and compare it with Hata pathloss.",
+      "text": "a) What do you mean by diffraction in radio wave propagation? Derive an expression for phase difference in Fresnel Zone Geometry model of direction. [2+6]\n\nb) In mobile propagation in a cellular system, find the correction factor and pathloss for a medium size city assuming carrier frequency as $950\\text{ MHz}$, height of transmitting antenna at base station is $45\\text{ m}$, propagation distance between antennas is $10\\text{ km}$ and height of receiving antenna in mobile station is $5\\text{ m}$. Compute free space pathloss and compare it with Hata pathloss.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2082 Shrawan",
-        "2078 Chaitra",
-        "2075 Bhadra",
-        "2073 Bhadra"
+        "2079 Bhadra"
       ],
-      "frequency": 4
+      "examSessions": [
+        "2079 Bhadra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
-      "text": "Distinguish between Rayleigh fading (NLOS) and Rician fading (LOS) multipath distributions. State their probability density functions and explain the significance of the Rician $K$-factor.",
+      "id": "wireless-communication-6",
+      "question": "a) What is Doppler spread? Derive the expression for Doppler shift. [2+4]\n\nb) If a transmitter produces 50 watts of power, express the transmit power in units of (i) dBm, and (ii) dBW. If 50 watts is applied to a unity gain antenna with a 900 MHz carrier frequency, find the received power in dBm at a free space distance of 100 m from the antenna. What is $P_r(10\\text{ km})$? Assume unity gain for the receiver antenna. [1+1+2+2]\n\nc) Define fading. Show its different types based on delay spread and Doppler spread.",
+      "text": "a) What is Doppler spread? Derive the expression for Doppler shift. [2+4]\n\nb) If a transmitter produces 50 watts of power, express the transmit power in units of (i) dBm, and (ii) dBW. If 50 watts is applied to a unity gain antenna with a 900 MHz carrier frequency, find the received power in dBm at a free space distance of 100 m from the antenna. What is $P_r(10\\text{ km})$? Assume unity gain for the receiver antenna. [1+1+2+2]\n\nc) Define fading. Show its different types based on delay spread and Doppler spread.",
+      "chapter": "General",
+      "marks": "1",
+      "frequency": 1,
+      "years": [
+        "2081 Baishakh"
+      ],
+      "examSessions": [
+        "2081 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-7",
+      "question": "Define Grade of Service (GoS) and explain how can it be measured in a 'blocked call cleared' type of trunking system. A cellular service provider decides to use a digital TDMA scheme that can tolerate a signal-to-interference ratio of $15\\text{ dB}$ in the worst case. The mobile radio channel provided a propagation path loss exponent of $n = 3$. Find the optimal value of $N$ for (a) Omni-directional antennas, (b) $120^\\circ$ sectoring, and Ic) $60^\\circ$ sectoring. Comment on your results.",
+      "text": "Define Grade of Service (GoS) and explain how can it be measured in a 'blocked call cleared' type of trunking system. A cellular service provider decides to use a digital TDMA scheme that can tolerate a signal-to-interference ratio of $15\\text{ dB}$ in the worst case. The mobile radio channel provided a propagation path loss exponent of $n = 3$. Find the optimal value of $N$ for (a) Omni-directional antennas, (b) $120^\\circ$ sectoring, and Ic) $60^\\circ$ sectoring. Comment on your results.",
+      "chapter": "General",
+      "marks": "3",
+      "frequency": 1,
+      "years": [
+        "2079 Bhadra"
+      ],
+      "examSessions": [
+        "2079 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-8",
+      "question": "a) An urban area has a population of two million residents. System A has $394$ cells with $19$ channels each. Find the number of users that can be supported at $2\\%$ blocking if each user average two calls per hour at average call duration of three minutes. Assuming that trunk systems are operated at maximum capacity, compute the percentage market penetration of cellular provider. [5]\n\nb) Why we need microcell zone concept? Explain microcell zone concept in brief.",
+      "text": "a) An urban area has a population of two million residents. System A has $394$ cells with $19$ channels each. Find the number of users that can be supported at $2\\%$ blocking if each user average two calls per hour at average call duration of three minutes. Assuming that trunk systems are operated at maximum capacity, compute the percentage market penetration of cellular provider. [5]\n\nb) Why we need microcell zone concept? Explain microcell zone concept in brief.",
+      "chapter": "General",
+      "marks": "3",
+      "frequency": 1,
+      "years": [
+        "2080 Baishakh"
+      ],
+      "examSessions": [
+        "2080 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-9",
+      "question": "a) Explain two schemes for prioritizing handoff. Define terms grade of service, traffic intensity, average holding time and block call. [3+4]\n\nb) The cellular system has 32 cells, each cell has a $1.6\\text{ km}$ radius and the system reuse factor is $7$. The system is to support 336 traffic channels in total. Determine the total geographical area covered, the number of traffic channels per cell and the total number of simultaneous calls supported by this system.",
+      "text": "a) Explain two schemes for prioritizing handoff. Define terms grade of service, traffic intensity, average holding time and block call. [3+4]\n\nb) The cellular system has 32 cells, each cell has a $1.6\\text{ km}$ radius and the system reuse factor is $7$. The system is to support 336 traffic channels in total. Determine the total geographical area covered, the number of traffic channels per cell and the total number of simultaneous calls supported by this system.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2082 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-10",
+      "question": "Consider a single high-power transmitter that can support 40 voice channels over an area of $140\\text{ km}^2$ with the available spectrum. If this area is equally divided into seven smaller cells, each supported by lower power transmitters so that each cell supports $30\\%$ of the total voice channels, then determine\n\ni) Coverage area of each cell [1]\nii) Total number of voice channels available in a cellular system compared to a non-cellular system.",
+      "text": "Consider a single high-power transmitter that can support 40 voice channels over an area of $140\\text{ km}^2$ with the available spectrum. If this area is equally divided into seven smaller cells, each supported by lower power transmitters so that each cell supports $30\\%$ of the total voice channels, then determine\n\ni) Coverage area of each cell [1]\nii) Total number of voice channels available in a cellular system compared to a non-cellular system.",
+      "chapter": "General",
+      "marks": "3",
+      "frequency": 1,
+      "years": [
+        "2082 Baishakh"
+      ],
+      "examSessions": [
+        "2082 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-11",
+      "question": "a) A wireless communication transmitter has an output power of 165 watts at a carrier frequency of 325 MHz. It is connected to an antenna with a gain of 12 dBi. The receiving antenna is 15 km away and has a gain of 6 dBi. Calculate the power delivered to the receiver, considering free-space propagation. (Assume that there are no other losses or mismatches in the system.) [6]\n\nb) Derive the formula for co-channel reuse ratio: $Q = \\sqrt{3N}$.",
+      "text": "a) A wireless communication transmitter has an output power of 165 watts at a carrier frequency of 325 MHz. It is connected to an antenna with a gain of 12 dBi. The receiving antenna is 15 km away and has a gain of 6 dBi. Calculate the power delivered to the receiver, considering free-space propagation. (Assume that there are no other losses or mismatches in the system.) [6]\n\nb) Derive the formula for co-channel reuse ratio: $Q = \\sqrt{3N}$.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2080 Bhadra"
+      ],
+      "examSessions": [
+        "2080 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-12",
+      "question": "a) Explain the non-linear effect in FDMA. If the total spectrum allocation is $25\\text{ MHz}$, the guard band allocated at the edge of the spectrum is $100\\text{ KHz}$, and the channel bandwidth is $200\\text{ KHz}$. Find the number of channels available in an FDMA system. [3+2]\n\nb) Explain the Frequency Hopped Multiple Access (FHMA) technique using its transmitter and receiver blocks.",
+      "text": "a) Explain the non-linear effect in FDMA. If the total spectrum allocation is $25\\text{ MHz}$, the guard band allocated at the edge of the spectrum is $100\\text{ KHz}$, and the channel bandwidth is $200\\text{ KHz}$. Find the number of channels available in an FDMA system. [3+2]\n\nb) Explain the Frequency Hopped Multiple Access (FHMA) technique using its transmitter and receiver blocks.",
+      "chapter": "General",
+      "marks": "7",
+      "frequency": 1,
+      "years": [
+        "2080 Baishakh"
+      ],
+      "examSessions": [
+        "2080 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-13",
+      "question": "Find the median path loss sing Okumura's model for $d = 50\\text{ km}$, $h_{te} = 100\\text{ m}$, $h_{re} = 10\\text{ m}$ in a suburban environment. If the base station transmitter radiates an EIRP of $1\\text{ kW}$ at a carrier frequency of $900\\text{ MHz}$, find the power at the receiver (assume a unity gain receiving antenna). [Assume $A_{mu} = 43\\text{ dB}$, $G_{AREA} = 9\\text{ dB}$]",
+      "text": "Find the median path loss sing Okumura's model for $d = 50\\text{ km}$, $h_{te} = 100\\text{ m}$, $h_{re} = 10\\text{ m}$ in a suburban environment. If the base station transmitter radiates an EIRP of $1\\text{ kW}$ at a carrier frequency of $900\\text{ MHz}$, find the power at the receiver (assume a unity gain receiving antenna). [Assume $A_{mu} = 43\\text{ dB}$, $G_{AREA} = 9\\text{ dB}$]",
+      "chapter": "General",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2082 Baishakh"
+      ],
+      "examSessions": [
+        "2082 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-14",
+      "question": "A telephone network company needs to expand its capacity based on demand on a city. A group of engineers was selected to find the solution. Among the solution sectoring and cell splitting were major technique for expansion purpose. Being a cellular planning engineer, which option do you think is best and why?",
+      "text": "A telephone network company needs to expand its capacity based on demand on a city. A group of engineers was selected to find the solution. Among the solution sectoring and cell splitting were major technique for expansion purpose. Being a cellular planning engineer, which option do you think is best and why?",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2081 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-15",
+      "question": "Compare Okumura model with Hata model. Calculate mean excess delay, rms delay spread and maximum excess delay for the multipath profile $P_r(\\tau)$ given as: $P_r(\\tau) = (-20\\text{dB}, -10\\text{dB}, -10\\text{dB}, 0\\text{dB})$ for $\\tau = (0, 1, 2, 5)$ second. Also estimate 50% coherence bandwidth.",
+      "text": "Compare Okumura model with Hata model. Calculate mean excess delay, rms delay spread and maximum excess delay for the multipath profile $P_r(\\tau)$ given as: $P_r(\\tau) = (-20\\text{dB}, -10\\text{dB}, -10\\text{dB}, 0\\text{dB})$ for $\\tau = (0, 1, 2, 5)$ second. Also estimate 50% coherence bandwidth.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2081 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-16",
+      "question": "How can Minimum Shift Keying (MSK) be defined as a special type of continuous phase FSK and Orthogonal Quadrature Phase Shift Keying (OQPSK)? Compare OQPSK, MSK and GMSK in terms of their bandwidth efficiency and power efficiency. Which of them are suitable for modulation in GSM and Why?",
+      "text": "How can Minimum Shift Keying (MSK) be defined as a special type of continuous phase FSK and Orthogonal Quadrature Phase Shift Keying (OQPSK)? Compare OQPSK, MSK and GMSK in terms of their bandwidth efficiency and power efficiency. Which of them are suitable for modulation in GSM and Why?",
+      "chapter": "General",
+      "marks": "3",
+      "frequency": 1,
+      "years": [
+        "2080 Baishakh"
+      ],
+      "examSessions": [
+        "2080 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-17",
+      "question": "a) Explain the implementation of CDMA with its encoding part and decoding part with relevant example. [7]\n\nb) Explain the block diagram of OFDM transmitting side. Also mention its advantage and disadvantage.",
+      "text": "a) Explain the implementation of CDMA with its encoding part and decoding part with relevant example. [7]\n\nb) Explain the block diagram of OFDM transmitting side. Also mention its advantage and disadvantage.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2082 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-18",
+      "question": "What are the advantages of CDMA over TDMA? Explain the working of the Frequency Hopping Spread Spectrum (FHSS) multiple access technique with an appropriate block diagram. Highlight different types of FHSS.",
+      "text": "What are the advantages of CDMA over TDMA? Explain the working of the Frequency Hopping Spread Spectrum (FHSS) multiple access technique with an appropriate block diagram. Highlight different types of FHSS.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2082 Baishakh"
+      ],
+      "examSessions": [
+        "2082 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-19",
+      "question": "a) Why is there a need to implement diversity? Describe the Maximum ratio combining space diversity technique. [2+2]\n\nb) Why interleaving is needed in wireless communication? Explain its working in brief.",
+      "text": "a) Why is there a need to implement diversity? Describe the Maximum ratio combining space diversity technique. [2+2]\n\nb) Why interleaving is needed in wireless communication? Explain its working in brief.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2080 Bhadra"
+      ],
+      "examSessions": [
+        "2080 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-20",
+      "question": "Describe a signal processing operation that minimizes the effects of ISI. What do you understand by RACK receiver? Explain the structure of linear transversal equalizer with appropriate diagram.",
+      "text": "Describe a signal processing operation that minimizes the effects of ISI. What do you understand by RACK receiver? Explain the structure of linear transversal equalizer with appropriate diagram.",
+      "chapter": "General",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2082 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-21",
+      "question": "Explain the difference between co-channel and adjacent channel interference. Prove that the co-channel reuse ratio is given by $Q = \\sqrt{3N}$, where $N = i^2 + ij + j^2$ is the cluster size.",
+      "text": "Explain the difference between co-channel and adjacent channel interference. Prove that the co-channel reuse ratio is given by $Q = \\sqrt{3N}$, where $N = i^2 + ij + j^2$ is the cluster size.",
+      "chapter": "General",
+      "marks": "3",
+      "frequency": 1,
+      "years": [
+        "2081 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-22",
+      "question": "Mention advantages of digital modulation over analog modulation. Explain the transmission and detection process of GMSK modulation scheme with block diagram and constellation diagram.",
+      "text": "Mention advantages of digital modulation over analog modulation. Explain the transmission and detection process of GMSK modulation scheme with block diagram and constellation diagram.",
+      "chapter": "General",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2079 Bhadra"
+      ],
+      "examSessions": [
+        "2079 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-23",
+      "question": "Explain any two types of hybrid spread spectrum multiple access techniques along with their advantage and disadvantage. Describe the operation of FHMA. What are the types of FHMA?",
+      "text": "Explain any two types of hybrid spread spectrum multiple access techniques along with their advantage and disadvantage. Describe the operation of FHMA. What are the types of FHMA?",
+      "chapter": "General",
       "marks": "6",
+      "frequency": 1,
       "years": [
-        "2082 Shrawan",
-        "2078 Chaitra",
-        "2071 Bhadra",
-        "2070 Bhadra"
+        "2081 Bhadra"
       ],
-      "frequency": 4
+      "examSessions": [
+        "2081 Bhadra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Mobile Radio Propagation: Large-Scale Path Loss",
-      "text": "Explain the Log-Distance Path Loss Model and Log-Normal Shadowing. Describe empirical outdoor propagation models: Okumura Model and Hata (COST-231) Model for urban, suburban, and rural environments.",
-      "marks": "8",
-      "years": [
-        "2082 Shrawan",
-        "2077 Chaitra",
-        "2075 Bhadra",
-        "2073 Bhadra"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA)",
-      "text": "Explain Direct Sequence Spread Spectrum (DSSS) and Frequency Hopping Spread Spectrum (FHSS: Fast vs Slow hopping). Define Processing Gain ($PG = \\frac{BW_{ss}}{BW_{info}}$) and Jamming Margin.",
-      "marks": "8",
-      "years": [
-        "2082 Shrawan",
-        "2079 Chaitra",
-        "2076 Bhadra",
-        "2073 Bhadra"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA)",
-      "text": "Compare FDMA, TDMA, and CDMA multiple access techniques. What is the Near-Far problem in CDMA and how does fast closed-loop power control solve it? What is self-jamming?",
-      "marks": "8",
-      "years": [
-        "2082 Shrawan",
-        "2078 Chaitra",
-        "2076 Bhadra",
-        "2072 Ashwin",
-        "2071 Bhadra"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA)",
-      "text": "Demonstrate the orthogonal Walsh code encoding and decoding mechanism for a multi-user CDMA system. Explain Pseudo-Noise (PN) sequences and their cross-correlation and auto-correlation properties.",
-      "marks": "8",
-      "years": [
-        "2082 Shrawan",
-        "2079 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Wireless Networking and Cellular Standards (2G, 3G, 4G, 5G)",
-      "text": "Draw the GSM network architecture diagram showing Mobile Station (MS), Base Station Subsystem (BSS: BTS, BSC), Network Switching Subsystem (NSS: MSC, HLR, VLR, AUC, EIR), and Operation Subsystem (OSS). Explain the GSM frame hierarchy (burst, TDMA frame, multiframe, superframe).",
-      "marks": "10",
-      "years": [
-        "2082 Shrawan",
-        "2078 Chaitra",
-        "2076 Bhadra",
-        "2073 Bhadra"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Wireless Networking and Cellular Standards (2G, 3G, 4G, 5G)",
-      "text": "Explain the classification and operation of Traffic Channels (TCH) and Control Channels (BCH: FCCH, SCH, BCCH; CCCH: PCH, RACH, AGCH; DCCH: SDCCH, SACCH, FACCH) used in GSM.",
-      "marks": "8",
-      "years": [
-        "2082 Shrawan",
-        "2079 Chaitra",
-        "2078 Chaitra"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
-      "text": "How does diversity improve link quality in wireless fading channels? Compare Space Diversity, Frequency Diversity, and Time Diversity. Compare combining techniques: Selection Combining (SC), Maximal Ratio Combining (MRC), and Equal Gain Combining (EGC).",
-      "marks": "8",
-      "years": [
-        "2078 Chaitra",
-        "2076 Bhadra",
-        "2073 Bhadra"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
-      "text": "Explain the working principle and block diagram of a RAKE Receiver in CDMA wideband channels. How does it resolve individual multipath echoes and perform coherent combining to combat fading?",
+      "id": "wireless-communication-24",
+      "question": "Derive an expression for path difference and phase difference between line of sight (LOS) path and ground reflected (GR) path in two-ray model using simple geometrical relations.",
+      "text": "Derive an expression for path difference and phase difference between line of sight (LOS) path and ground reflected (GR) path in two-ray model using simple geometrical relations.",
+      "chapter": "General",
       "marks": "6",
+      "frequency": 1,
       "years": [
-        "2076 Bhadra",
-        "2073 Bhadra"
+        "2081 Bhadra"
       ],
-      "frequency": 2
+      "examSessions": [
+        "2081 Bhadra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Modulation Techniques for Mobile Radio",
-      "text": "Explain the block diagram of an Orthogonal Frequency Division Multiplexing (OFDM) transmitter and receiver using IFFT/FFT. Explain how the insertion of a Cyclic Prefix (CP) eliminates Inter-Symbol Interference (ISI) and preserves subchannel orthogonality.",
-      "marks": "8",
+      "id": "wireless-communication-25",
+      "question": "a) Compare and contrast the second, third and fourth generation of mobile communication standards in terms of technology advancement. [4]\n\nb) Define forward and reverse channel.",
+      "text": "a) Compare and contrast the second, third and fourth generation of mobile communication standards in terms of technology advancement. [4]\n\nb) Define forward and reverse channel.",
+      "chapter": "General",
+      "marks": "2",
+      "frequency": 1,
       "years": [
-        "2079 Chaitra",
-        "2071 Bhadra"
+        "2080 Bhadra"
       ],
-      "frequency": 2
+      "examSessions": [
+        "2080 Bhadra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Modulation Techniques for Mobile Radio",
-      "text": "Explain $\\pi/4$-DQPSK, MSK, and Gaussian MSK (GMSK) modulation. Why is GMSK preferred in GSM systems due to its constant envelope and compact power spectral density?",
-      "marks": "8",
-      "years": [
-        "2076 Bhadra",
-        "2070 Bhadra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Cellular Concept: System Design Fundamentals",
-      "text": "In an urban cellular system with given total bandwidth, channel bandwidth, cluster size $N = 7$, and Grade of Service (GoS = $1\\%$ or $2\\%$ blocking probability), use Erlang-B traffic model to compute total traffic carried and the maximum number of subscribers that can be supported.",
-      "marks": "8",
-      "years": [
-        "2078 Chaitra",
-        "2077 Chaitra",
-        "2070 Bhadra"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Wireless Networking and Cellular Standards (2G, 3G, 4G, 5G)",
-      "text": "Compare 1G, 2G, 3G, 4G LTE, and 5G cellular communication standards in terms of data rates, multiple access schemes, circuit vs packet switching, latency, and core network architecture.",
-      "marks": "8",
-      "years": [
-        "2082 Shrawan",
-        "2076 Bhadra",
-        "2074 Magh",
-        "2072 Ashwin"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Cellular Concept: System Design Fundamentals",
-      "text": "Explain Co-channel Interference (CCI) and Signal-to-Interference Ratio ($S/I$). Derive the relationship $S/I = \\frac{(\\sqrt{3N})^n}{i_0}$ for a hexagonal cellular geometry with cluster size $N$ and path loss exponent $n$. Calculate the minimum cluster size $N$ required for $S/I \\ge 18\\text{ dB}$ with $n=4$ and 6 first-tier co-channel cells.",
-      "marks": "8",
-      "years": [
-        "2082 Shrawan",
-        "2081 Chaitra",
-        "2078 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Co-channel reuse distance D = R * sqrt(3N). Co-channel reuse ratio Q = D/R = sqrt(3N). Signal power S proportional to R^(-n); interference I = sum I_k = i_0 * D^(-n). S/I = (D/R)^n / i_0 = (sqrt(3N))^n / i_0. For i_0 = 6, n=4: S/I = (3N)^2 / 6 = 1.5 N^2. Required S/I = 18 dB = 63.1 => 1.5 N^2 >= 63.1 => N^2 >= 42.06 => N >= 6.48. Valid hexagonal cluster sizes N = i^2 + ij + j^2 gives N = 7."
-    },
-    {
-      "chapter": "Cellular Concept: System Design Fundamentals",
-      "text": "Explain Channel Assignment Strategies in cellular systems: Fixed Channel Assignment (FCA) vs Dynamic Channel Assignment (DCA). Describe Cell Splitting, Cell Sectoring ($120^\\circ$ and $60^\\circ$), and Microcell Zone concepts for network capacity expansion.",
-      "marks": "8",
-      "years": [
-        "2082 Shrawan",
-        "2080 Chaitra",
-        "2077 Magh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "FCA allocates fixed channels to cells (simple, high blocking during traffic bursts). DCA pools all channels at MSC, allocating dynamically based on real-time interference and traffic. Cell splitting subdivides congested cells into smaller microcells with lower transmit power, multiplying channel reuse per unit area. Cell sectoring uses directional antennas (120 deg reduces co-channel interferers from 6 to 2), dramatically increasing S/I."
-    },
-    {
-      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
-      "text": "Explain Small-Scale Multipath Fading. Distinguish between Flat Fading vs Frequency Selective Fading based on multipath delay spread and coherence bandwidth ($B_c \\approx \\frac{1}{5\\sigma_\\tau}$), and Fast Fading vs Slow Fading based on Doppler spread ($B_D$) and coherence time ($T_c$).",
-      "marks": "8",
-      "years": [
-        "2082 Shrawan",
-        "2081 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Multipath creates constructive/destructive interference. Time dispersion: Flat fading occurs when signal bandwidth B_s << B_c (all frequencies experience uniform gain/phase; no ISI). Frequency selective fading occurs when B_s > B_c (channel induces severe intersymbol interference, requiring equalization). Frequency dispersion: Fast fading occurs when symbol period T_s > T_c (channel changes within symbol duration). Slow fading occurs when T_s << T_c."
-    },
-    {
-      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
-      "text": "Derive the Doppler Shift formula $f_d = \\frac{v}{\\lambda}\\cos\\theta$. For a vehicle traveling at $108\\text{ km/h}$ receiving an $1800\\text{ MHz}$ GSM carrier, compute the maximum Doppler shift and the coherence time ($T_c$) of the fading wireless channel.",
+      "id": "wireless-communication-26",
+      "question": "a) What are different characteristics of speech signals? How they are used in designing of codes? [4]\n\nb) With the help of a block diagram, explain the operation of a vocoder.",
+      "text": "a) What are different characteristics of speech signals? How they are used in designing of codes? [4]\n\nb) With the help of a block diagram, explain the operation of a vocoder.",
+      "chapter": "General",
       "marks": "6",
+      "frequency": 1,
       "years": [
-        "2082 Shrawan",
-        "2080 Chaitra",
-        "2076 Chaitra"
+        "2081 Baishakh"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Path difference Delta l = v Delta t cos theta. Phase change Delta phi = 2 pi Delta l / lambda => f_d = (1/2 pi) d phi/dt = (v / lambda) cos theta. Maximum shift f_m = v / lambda when theta = 0. Velocity v = 108 km/h = 30 m/s. Carrier lambda = c / f = 3*10^8 / (1800*10^6) = 0.1667 m. Max Doppler shift f_m = 30 / 0.1667 = 180 Hz. Coherence time T_c approx 0.423 / f_m = 0.423 / 180 = 2.35 ms."
+      "examSessions": [
+        "2081 Baishakh"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
-      "text": "Explain Rayleigh and Rician Fading Probability Density Functions (PDF). When does a mobile propagation channel follow Rayleigh distribution versus Rician distribution with Ricean factor $K$?",
-      "marks": "8",
+      "id": "wireless-communication-27",
+      "question": "Why Equalization and diversity are needed in wireless communication systems? List out different diversity reception methods used for space diversity. Explain any one of them.",
+      "text": "Why Equalization and diversity are needed in wireless communication systems? List out different diversity reception methods used for space diversity. Explain any one of them.",
+      "chapter": "General",
+      "marks": "3",
+      "frequency": 1,
       "years": [
-        "2082 Shrawan",
-        "2081 Chaitra",
-        "2078 Kartik"
+        "2080 Baishakh"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Rayleigh fading models non-line-of-sight (NLOS) environments where received signal consists of large number of independent identically distributed scattered multipath components: envelope r has PDF p(r) = (r / sigma^2) exp(-r^2 / 2 sigma^2). Rician fading occurs when strong direct Line-of-Sight (LOS) specular path exists alongside diffuse scattered waves: parameterized by K = (power in specular path) / (power in scattered components). As K -> 0, Rician degenerates to Rayleigh."
+      "examSessions": [
+        "2080 Baishakh"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Mobile Radio Propagation: Large-Scale Path Loss",
-      "text": "Describe the Log-Distance Path Loss Model $PL(d) = PL(d_0) + 10 n \\log_{10}(d/d_0) + X_\\sigma$. Explain Log-Normal Shadowing and outage probability computation using the Gaussian $Q$-function.",
+      "id": "wireless-communication-28",
+      "question": "Write short notes on: (Any Two) [2$\\times$4]\n\na) CDMA design considerations\n\nb) Regulatory issues in wireless communication\n\nc) Interference in wireless/mobile communication",
+      "text": "Write short notes on: (Any Two) [2$\\times$4]\n\na) CDMA design considerations\n\nb) Regulatory issues in wireless communication\n\nc) Interference in wireless/mobile communication",
+      "chapter": "General",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2082 Shrawan",
-        "2080 Chaitra",
-        "2077 Magh"
+        "2080 Baishakh"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Path loss increases logarithmically with distance d from reference distance d_0 (typically 100m or 1km). Path loss exponent n varies from 2 (free space) to 3-5 (urban macrocell). X_sigma is zero-mean Gaussian random variable (in dB) with standard deviation sigma representing large-scale shadowing by buildings/topography. Outage probability P(Pr < gamma) = Q((Pr_mean - gamma) / sigma)."
+      "examSessions": [
+        "2080 Baishakh"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Mobile Radio Propagation: Large-Scale Path Loss",
-      "text": "Explain Empirical Propagation Models for urban cellular coverage: Okumura Model and Hata Model. State the empirical formulas for path loss as functions of base station antenna height, mobile antenna height, and carrier frequency.",
-      "marks": "8",
+      "id": "wireless-communication-29",
+      "question": "a) Define turbo coding. Construct $8 \\text{ by } 8$ Hadamard code. [2+3]\n\nb) What are different characteristics of speech signals? How they are used in designing of coders?",
+      "text": "a) Define turbo coding. Construct $8 \\text{ by } 8$ Hadamard code. [2+3]\n\nb) What are different characteristics of speech signals? How they are used in designing of coders?",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2082 Shrawan",
-        "2081 Chaitra",
-        "2079 Chaitra"
+        "2082 Bhadra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Okumura model provides graphical curves based on extensive Tokyo field measurements. Hata formulated empirical equations for 150-1500 MHz: L_50(urban) = 69.55 + 26.16 log10(f_c) - 13.82 log10(h_b) - a(h_m) + (44.9 - 6.55 log10(h_b)) log10(d), where a(h_m) is correction factor for mobile antenna height. Includes correction offsets for suburban and open rural environments."
+      "examSessions": [
+        "2082 Bhadra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
-      "text": "Explain Diversity Techniques to combat multipath fading: Space Diversity, Frequency Diversity, Time Diversity, and Polarization Diversity. Compare Combining Techniques: Selection Combining (SC), Equal Gain Combining (EGC), and Maximal Ratio Combining (MRC).",
-      "marks": "8",
+      "id": "wireless-communication-30",
+      "question": "a) What do you understand by CDMA? Mention its characteristics, advantages and limitations. [2+6]\n\nb) Explain working of frequency Hopping Multiple Access with an example.",
+      "text": "a) What do you understand by CDMA? Mention its characteristics, advantages and limitations. [2+6]\n\nb) Explain working of frequency Hopping Multiple Access with an example.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2082 Shrawan",
-        "2080 Chaitra",
-        "2078 Bhadra"
+        "2079 Bhadra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Transmits multiple copies of same information over independent fading channels. Space: multiple antennas spaced > lambda/2 apart. Frequency: carriers separated > B_c. Time: interleaving beyond T_c. Combining: SC selects branch with highest instantaneous SNR (simplest, sub-optimal). EGC co-phases all branches and sums with equal weights. MRC co-phases and weights each branch proportionally to its signal amplitude (optimal SNR = sum of branch SNRs)."
+      "examSessions": [
+        "2079 Bhadra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
-      "text": "Explain Adaptive Equalization in digital receivers. Compare Zero-Forcing (ZF) Equalizer with Minimum Mean Square Error (MMSE) Equalizer and Decision Feedback Equalizer (DFE) with the LMS adaptive tap update algorithm.",
-      "marks": "8",
+      "id": "wireless-communication-31",
+      "question": "a) Explain the working of the Direct Sequence Spread Spectrum (DSSS) technique with an appropriate block diagram. [6]\n\nb) Compare and contrast between TDMA and FDMA.",
+      "text": "a) Explain the working of the Direct Sequence Spread Spectrum (DSSS) technique with an appropriate block diagram. [6]\n\nb) Compare and contrast between TDMA and FDMA.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2082 Shrawan",
-        "2081 Chaitra",
-        "2076 Chaitra"
+        "2081 Baishakh"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Compensates for ISI caused by frequency-selective multipath dispersion. ZF inverts channel transfer function: H_eq(f) = 1/H(f); completely eliminates ISI but causes severe noise enhancement at spectral nulls. MMSE minimizes E[|e[n]|^2], balancing ISI cancellation and noise amplification. DFE uses feedforward and feedback filters, subtracting previously detected symbols to cancel postcursor ISI without boosting noise. LMS updates weights w_{k+1} = w_k + mu e_k x_k."
+      "examSessions": [
+        "2081 Baishakh"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Modulation Techniques for Mobile Radio",
-      "text": "Describe Orthogonal Frequency Division Multiplexing (OFDM). Explain subcarrier orthogonality, IFFT/FFT modulation implementation, Cyclic Prefix (CP) insertion to eliminate ISI and ICI, and Peak-to-Average Power Ratio (PAPR) challenges.",
-      "marks": "8",
+      "id": "wireless-communication-32",
+      "question": "Define Interleaving. Explain how equalization offsets the ISI introduced by the multipath time-dispersive channel using an example of an adaptive equalizer.",
+      "text": "Define Interleaving. Explain how equalization offsets the ISI introduced by the multipath time-dispersive channel using an example of an adaptive equalizer.",
+      "chapter": "General",
+      "marks": "2",
+      "frequency": 1,
       "years": [
-        "2082 Shrawan",
-        "2081 Chaitra",
-        "2079 Chaitra"
+        "2081 Baishakh"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Divides broadband channel into N narrow orthogonal flat-fading subcarriers spaced Delta f = 1/T_s. Orthogonality integral_0^T cos(2 pi f_i t) cos(2 pi f_j t) dt = 0 allows overlapping spectra without ICI. Implemented efficiently using IFFT at transmitter and FFT at receiver. Cyclic Prefix copies tail of symbol to guard interval; converts linear channel convolution into circular convolution, eliminating ISI. PAPR is high due to constructive addition of N subcarriers, requiring linear power amplifiers."
+      "examSessions": [
+        "2081 Baishakh"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Mobile Radio Propagation: Small-Scale Fading and Multipath",
-      "text": "Describe Multiple Input Multiple Output (MIMO) wireless systems. Compare Spatial Diversity (Alamouti Space-Time Block Coding) with Spatial Multiplexing (V-BLAST) for boosting link reliability and spectral efficiency.",
-      "marks": "8",
+      "id": "wireless-communication-33",
+      "question": "Define the terms coherence bandwidth and coherence time explaining their significance in mobile radio propagation. Explain fading with its various types.",
+      "text": "Define the terms coherence bandwidth and coherence time explaining their significance in mobile radio propagation. Explain fading with its various types.",
+      "chapter": "General",
+      "marks": "3",
+      "frequency": 1,
       "years": [
-        "2082 Shrawan",
-        "2080 Chaitra",
-        "2077 Magh"
+        "2082 Baishakh"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "MIMO uses multiple antennas at transmitter (N_t) and receiver (N_r). Spatial diversity (Alamouti 2x1 or 2x2 STBC) transmits orthogonal space-time blocks, maximizing diversity order without requiring channel knowledge at transmitter. Spatial multiplexing splits high-rate data stream into independent sub-streams transmitted simultaneously over same frequency, multiplying channel capacity linearly C approx min(N_t, N_r) log2(1 + SNR)."
+      "examSessions": [
+        "2082 Baishakh"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Wireless Networking and Cellular Standards (2G, 3G, 4G, 5G)",
-      "text": "Detail the Global System for Mobile Communications (GSM) Architecture: Base Station Subsystem (BTS, BSC), Network Switching Subsystem (MSC, HLR, VLR, AuC, EIR), and Operation Support Subsystem (OSS). Explain the GSM frame hierarchy and authentication triplet ($RAND, SRES, K_c$).",
-      "marks": "8",
+      "id": "wireless-communication-34",
+      "question": "Elaborate the working principle behind Interleaving with an appropriate diagram. Explain the working of Maximum Likelihood Sequence Estimation (MLSE).",
+      "text": "Elaborate the working principle behind Interleaving with an appropriate diagram. Explain the working of Maximum Likelihood Sequence Estimation (MLSE).",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2082 Shrawan",
-        "2081 Chaitra",
-        "2078 Kartik"
+        "2081 Bhadra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "2G cellular standard using TDMA/FDD (8 time slots per 200 kHz carrier, frame 4.615 ms). BSS: BTS contains radio transceivers; BSC manages radio resources and handovers. NSS: MSC routes calls; HLR stores permanent subscriber profiles; VLR caches roaming subscriber data; AuC generates authentication triplets (A3 algorithm produces SRES from RAND and Ki; A8 generates cipher key Kc); EIR tracks stolen IMEI devices."
+      "examSessions": [
+        "2081 Bhadra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Wireless Networking and Cellular Standards (2G, 3G, 4G, 5G)",
-      "text": "Describe IS-95 CDMA (cdmaOne) and WCDMA (3G UMTS). Explain Walsh codes for downlink orthogonality, PN short/long codes for cell separation, soft handoff, and RAKE receiver fingers with multipath resolving capability.",
-      "marks": "8",
+      "id": "wireless-communication-35",
+      "question": "a) Explain the operation of the Broadcast control channel (BCH) and Common control channel (CCCH) in GSM. [4+4]\n\nb) Draw forward CDMA (IS-95) channel.",
+      "text": "a) Explain the operation of the Broadcast control channel (BCH) and Common control channel (CCCH) in GSM. [4+4]\n\nb) Draw forward CDMA (IS-95) channel.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2082 Shrawan",
-        "2080 Chaitra",
-        "2076 Chaitra"
+        "2080 Bhadra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Direct Sequence CDMA. IS-95 uses 1.2288 Mcps spreading over 1.25 MHz channel. 64-chip Walsh codes provide mutually orthogonal downlink channels. PN short codes identify base station sectors via time offsets. Soft handoff ('make-before-break') allows mobile to communicate with multiple base stations simultaneously during cell transition. RAKE receiver uses multiple correlator fingers to capture multipath components separated by > 1 chip duration, combining them via MRC."
+      "examSessions": [
+        "2080 Bhadra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Wireless Networking and Cellular Standards (2G, 3G, 4G, 5G)",
-      "text": "Explain 4G LTE and 5G New Radio (NR) architectures. Discuss key technological evolutions: Evolved Packet System (EPS/EPC), OFDMA downlink / SC-FDMA uplink, Massive MIMO, Beamforming, and Network Slicing.",
+      "id": "wireless-communication-36",
+      "question": "Explain the operation of Orthogonal Frequency Division Multiplexing (OFDM) with an appropriate block diagram of the transmitter and receiver.",
+      "text": "Explain the operation of Orthogonal Frequency Division Multiplexing (OFDM) with an appropriate block diagram of the transmitter and receiver.",
+      "chapter": "General",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2082 Shrawan",
-        "2081 Chaitra",
-        "2079 Chaitra"
+        "2080 Bhadra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "All-IP packet-switched architecture. LTE: eNodeB, MME (signaling control), S-GW, P-GW. Downlink uses OFDMA; uplink uses SC-FDMA (lower PAPR for handset battery efficiency). 5G NR introduces flexible numerology (subcarrier spacing 15-240 kHz), Massive MIMO with digital beamforming steering narrow pencil beams to individual users, mmWave spectrum, and end-to-end Network Slicing (custom virtual networks for eMBB, URLLC, mMTC)."
+      "examSessions": [
+        "2080 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-37",
+      "question": "a) Explain the working of FHMA technique with an appropriate block diagram. [6]\n\nb) Explain any two hybrid multiple access techniques.",
+      "text": "a) Explain the working of FHMA technique with an appropriate block diagram. [6]\n\nb) Explain any two hybrid multiple access techniques.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2080 Bhadra"
+      ],
+      "examSessions": [
+        "2080 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-38",
+      "question": "Define spread spectrum modulation. Explain direct sequence spread spectrum with the block diagrams of transmitter and receiver.",
+      "text": "Define spread spectrum modulation. Explain direct sequence spread spectrum with the block diagrams of transmitter and receiver.",
+      "chapter": "General",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2082 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-39",
+      "question": "Explain the transmission and detection process of QPSK modulation technique with appropriate figure and constellation diagram.",
+      "text": "Explain the transmission and detection process of QPSK modulation technique with appropriate figure and constellation diagram.",
+      "chapter": "General",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2081 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "wireless-communication-40",
+      "question": "Explain the transmission and detection process of GMSK modulation technique with appropriate figure and constellation diagram.",
+      "text": "Explain the transmission and detection process of GMSK modulation technique with appropriate figure and constellation diagram.",
+      "chapter": "General",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2081 Baishakh"
+      ],
+      "examSessions": [
+        "2081 Baishakh"
+      ],
+      "isDiagram": false
     }
   ],
-  "chapters": [
-    "Introduction to Wireless Communication Systems",
-    "Cellular Concept: System Design Fundamentals",
-    "Mobile Radio Propagation: Large-Scale Path Loss",
-    "Mobile Radio Propagation: Small-Scale Fading and Multipath",
-    "Modulation Techniques for Mobile Radio",
-    "Multiple Access Techniques (FDMA, TDMA, CDMA, OFDMA)",
-    "Wireless Networking and Cellular Standards (2G, 3G, 4G, 5G)"
+  "yearWisePapers": [
+    {
+      "session": "2082 Bhadra",
+      "year": "2082",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 26,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Discuss the basic trends in wireless communication beyond 3G, focusing on key technological changes.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Explain two schemes for prioritizing handoff. Define terms grade of service, traffic intensity, average holding time and block call. [3+4]\n\nb) The cellular system has 32 cells, each cell has a $1.6\\text{ km}$ radius and the system reuse factor is $7$. The system is to support 336 traffic channels in total. Determine the total geographical area covered, the number of traffic channels per cell and the total number of simultaneous calls supported by this system.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Define the significance of term frequency dispersion in wireless communication. Derive the relation for doppler spread. [2+4]\n\nb) Find the mean path loss using Okumura's Model for $d = 50\\text{ km}$, $h_{te} = 100\\text{ m}$, $h_{re} = 10\\text{ m}$ in a suburban environment. If the BS transmitter radiates an EIRP oh $1\\text{ kW}$ at a carrier frequency of $900\\text{ MHz}$, find EIRP in dBm and the power at the receiver where gain of receiving antenna is $10\\text{ dB}$. (Given: $A_{mu}(f,d) = 43\\text{ dB}$, $G_{\\text{Area}}(f) = 9\\text{ dB}$) [5]\n\nc) Define the terms coherence bandwidth and coherence time. What are the factors that influenced in indoor propagation model? Explain.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Define spread spectrum modulation. Explain direct sequence spread spectrum with the block diagrams of transmitter and receiver.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Describe a signal processing operation that minimizes the effects of ISI. What do you understand by RACK receiver? Explain the structure of linear transversal equalizer with appropriate diagram.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) Define turbo coding. Construct $8 \\text{ by } 8$ Hadamard code. [2+3]\n\nb) What are different characteristics of speech signals? How they are used in designing of coders?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) Explain the implementation of CDMA with its encoding part and decoding part with relevant example. [7]\n\nb) Explain the block diagram of OFDM transmitting side. Also mention its advantage and disadvantage.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain the components of Network Switching Subsystem in GSM architecture. Illustrate GSM Frame hierarchy in GSM system.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Baishakh",
+      "year": "2082",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 48,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Briefly explain the evolution of different generations of cellular systems.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What do you mean by frequency reuse? Explain various channel assignment strategies used in mobile communication.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Consider a single high-power transmitter that can support 40 voice channels over an area of $140\\text{ km}^2$ with the available spectrum. If this area is equally divided into seven smaller cells, each supported by lower power transmitters so that each cell supports $30\\%$ of the total voice channels, then determine\n\ni) Coverage area of each cell [1]\nii) Total number of voice channels available in a cellular system compared to a non-cellular system.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Find the median path loss sing Okumura's model for $d = 50\\text{ km}$, $h_{te} = 100\\text{ m}$, $h_{re} = 10\\text{ m}$ in a suburban environment. If the base station transmitter radiates an EIRP of $1\\text{ kW}$ at a carrier frequency of $900\\text{ MHz}$, find the power at the receiver (assume a unity gain receiving antenna). [Assume $A_{mu} = 43\\text{ dB}$, $G_{AREA} = 9\\text{ dB}$]",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Define the terms coherence bandwidth and coherence time explaining their significance in mobile radio propagation. Explain fading with its various types.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "With block diagrams, describe the working principle of OFDM transmitter and receiver.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Describe a signal processing operation that minimizes the effects of ISI. What do you understand by RACK receiver? Explain the structure of linear transversal equalizer with appropriate diagram.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What are the characteristics of speech signals? Explain the basic working principle of Formant and Channel vocoder.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What are the advantages of CDMA over TDMA? Explain the working of the Frequency Hopping Spread Spectrum (FHSS) multiple access technique with an appropriate block diagram. Highlight different types of FHSS.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "List the various types of control channels available in GSM with their purposes.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Describe forward CDMA (IS-95) channel with suitable figure.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Bhadra",
+      "year": "2081",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 52,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "List major benefits of wireless communication. Give a brief description of the 4G wireless communication system.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Explain the difference between co-channel and adjacent channel interference. Prove that the co-channel reuse ratio is given by $Q = \\sqrt{3N}$, where $N = i^2 + ij + j^2$ is the cluster size.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "A telephone network company needs to expand its capacity based on demand on a city. A group of engineers was selected to find the solution. Among the solution sectoring and cell splitting were major technique for expansion purpose. Being a cellular planning engineer, which option do you think is best and why?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Derive an expression for path difference and phase difference between line of sight (LOS) path and ground reflected (GR) path in two-ray model using simple geometrical relations.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Compare Okumura model with Hata model. Calculate mean excess delay, rms delay spread and maximum excess delay for the multipath profile $P_r(\\tau)$ given as: $P_r(\\tau) = (-20\\text{dB}, -10\\text{dB}, -10\\text{dB}, 0\\text{dB})$ for $\\tau = (0, 1, 2, 5)$ second. Also estimate 50% coherence bandwidth.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain the transmission and detection process of QPSK modulation technique with appropriate figure and constellation diagram.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Elaborate the working principle behind Interleaving with an appropriate diagram. Explain the working of Maximum Likelihood Sequence Estimation (MLSE).",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Describe vocoders with block diagram. Briefly explain different kind of vocoders.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain any two types of hybrid spread spectrum multiple access techniques along with their advantage and disadvantage. Describe the operation of FHMA. What are the types of FHMA?",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Explain the operation of different control channels used in the GSM system.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Describe regulatory issues related to licensing and spectrum allocation.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Baishakh",
+      "year": "2081",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 28,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What do you mean by duplexing? Explain its different types.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) For a cluster $N = 7$ system with a blocking probability of $1\\%$ and an average call length of two minutes, find the traffic capacity loss for a blocked calls cleared system due to trunking for 57 channels when going from omnidirectional antennas to $60^\\circ$ sectored antennas. The average request rate per user is 1 call per hour. [2+2+2]<table><thead><tr><th>GOS/ Channel</th><th>0.5%</th><th>1%</th><th>2%</th></tr></thead><tbody><tr><td>1</td><td>.005</td><td>.0101</td><td>.0204</td></tr><tr><td>9</td><td>3.333</td><td>3.783</td><td>4.345</td></tr><tr><td>19</td><td>10.33</td><td>11.23</td><td>12.33</td></tr><tr><td>54</td><td>39.47</td><td>41.51</td><td>44.00</td></tr><tr><td>57</td><td>42.1</td><td>44.2</td><td>46.8</td></tr></tbody></table>b) What is Hand-off? Explain proper and improper HO with necessary drawing.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) What is Doppler spread? Derive the expression for Doppler shift. [2+4]\n\nb) If a transmitter produces 50 watts of power, express the transmit power in units of (i) dBm, and (ii) dBW. If 50 watts is applied to a unity gain antenna with a 900 MHz carrier frequency, find the received power in dBm at a free space distance of 100 m from the antenna. What is $P_r(10\\text{ km})$? Assume unity gain for the receiver antenna. [1+1+2+2]\n\nc) Define fading. Show its different types based on delay spread and Doppler spread.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Explain the transmission and detection process of GMSK modulation technique with appropriate figure and constellation diagram.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Define Interleaving. Explain how equalization offsets the ISI introduced by the multipath time-dispersive channel using an example of an adaptive equalizer.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) What are different characteristics of speech signals? How they are used in designing of codes? [4]\n\nb) With the help of a block diagram, explain the operation of a vocoder.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) Explain the working of the Direct Sequence Spread Spectrum (DSSS) technique with an appropriate block diagram. [6]\n\nb) Compare and contrast between TDMA and FDMA.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "\n(a) Explain GSM signal processing with necessary figures. [8]\n(b) Draw Reverse CDMA (IS-95) channel.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Bhadra",
+      "year": "2080",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 32,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Compare and contrast the second, third and fourth generation of mobile communication standards in terms of technology advancement. [4]\n\nb) Define forward and reverse channel.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) A wireless communication transmitter has an output power of 165 watts at a carrier frequency of 325 MHz. It is connected to an antenna with a gain of 12 dBi. The receiving antenna is 15 km away and has a gain of 6 dBi. Calculate the power delivered to the receiver, considering free-space propagation. (Assume that there are no other losses or mismatches in the system.) [6]\n\nb) Derive the formula for co-channel reuse ratio: $Q = \\sqrt{3N}$.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Define path loss. Explain the parameters of mobile multipath a channels used to classify various types of fading. [2+4]\n\nb) Determine the mean path loss using Okumura's model for $d = 50\\text{ km}$, $h_{te} = 100\\text{ m}$, $h_{re} = 10\\text{ m}$ in a suburban environment. If the base station transmitter radiates an EIRP of $1\\text{ kW}$ at a carrier frequency of $900\\text{ MHz}$. Find EIRP (dBm) and the power at the receiver where the gain at receiving antenna is $10\\text{ dB}$. The medium attenuation factor is $43\\text{ dB}$ and the gain due to area is $9\\text{ dB}$ for a $50\\text{ km}$ distance and $900\\text{ MHz}$ frequency of operation. [4+2+2]\n\nc) What do you mean by Ericsson Multiple Breakpoint model?",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Explain the operation of Orthogonal Frequency Division Multiplexing (OFDM) with an appropriate block diagram of the transmitter and receiver.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Why is there a need to implement diversity? Describe the Maximum ratio combining space diversity technique. [2+2]\n\nb) Why interleaving is needed in wireless communication? Explain its working in brief.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "\n(a) Explain sub-band coding with transmitter and receiver. [6]\n(b) Construct Hadamard matrix for $H_8$.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) Explain the working of FHMA technique with an appropriate block diagram. [6]\n\nb) Explain any two hybrid multiple access techniques.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "a) Explain the operation of the Broadcast control channel (BCH) and Common control channel (CCCH) in GSM. [4+4]\n\nb) Draw forward CDMA (IS-95) channel.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Baishakh",
+      "year": "2080",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 46,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Compare and contrast the second, third and fourth generation of mobile communication standards in terms of technology advancement. [4]\n\nb) Define forward and reverse channel.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) An urban area has a population of two million residents. System A has $394$ cells with $19$ channels each. Find the number of users that can be supported at $2\\%$ blocking if each user average two calls per hour at average call duration of three minutes. Assuming that trunk systems are operated at maximum capacity, compute the percentage market penetration of cellular provider. [5]\n\nb) Why we need microcell zone concept? Explain microcell zone concept in brief.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Describe briefly the types of small scale fading in radio propagation. Explain the factors which influences small scale fading. [4+4]\n\nb) Assume free space propagation, a receiver is located $10\\text{ km}$ away from a $50\\text{ w}$ transmitter. The carrier frequency is $900\\text{ MHza.}$ antenna gain at transmitter and receiver are $1$ and $2$ respectively, find:\n\ni) The power received at the receiver\nii) The magnitude of E-field at the receiver antenna\niii) The power flux density\niv) The rms voltage applied to the receiver input.\nThe receiver antenna has a purely real impedance of $50\\ \\Omega$ and is matched to the receiver.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "How can Minimum Shift Keying (MSK) be defined as a special type of continuous phase FSK and Orthogonal Quadrature Phase Shift Keying (OQPSK)? Compare OQPSK, MSK and GMSK in terms of their bandwidth efficiency and power efficiency. Which of them are suitable for modulation in GSM and Why?",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Why Equalization and diversity are needed in wireless communication systems? List out different diversity reception methods used for space diversity. Explain any one of them.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What are the characteristics of speech signal? Explain about Linear Predictive Coders (LPC) with neat block diagram.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) Explain the non-linear effect in FDMA. If the total spectrum allocation is $25\\text{ MHz}$, the guard band allocated at the edge of the spectrum is $100\\text{ KHz}$, and the channel bandwidth is $200\\text{ KHz}$. Find the number of channels available in an FDMA system. [3+2]\n\nb) Explain the Frequency Hopped Multiple Access (FHMA) technique using its transmitter and receiver blocks.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain the operation of each component in GSM architecture.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Write short notes on: (Any Two) [2$\\times$4]\n\na) CDMA design considerations\n\nb) Regulatory issues in wireless communication\n\nc) Interference in wireless/mobile communication",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Bhadra",
+      "year": "2079",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 42,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define forward and reverse channel. How 5G will be different from 4G mobile communication.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Define Grade of Service (GoS) and explain how can it be measured in a 'blocked call cleared' type of trunking system. A cellular service provider decides to use a digital TDMA scheme that can tolerate a signal-to-interference ratio of $15\\text{ dB}$ in the worst case. The mobile radio channel provided a propagation path loss exponent of $n = 3$. Find the optimal value of $N$ for (a) Omni-directional antennas, (b) $120^\\circ$ sectoring, and Ic) $60^\\circ$ sectoring. Comment on your results.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) What do you mean by diffraction in radio wave propagation? Derive an expression for phase difference in Fresnel Zone Geometry model of direction. [2+6]\n\nb) In mobile propagation in a cellular system, find the correction factor and pathloss for a medium size city assuming carrier frequency as $950\\text{ MHz}$, height of transmitting antenna at base station is $45\\text{ m}$, propagation distance between antennas is $10\\text{ km}$ and height of receiving antenna in mobile station is $5\\text{ m}$. Compute free space pathloss and compare it with Hata pathloss.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Mention advantages of digital modulation over analog modulation. Explain the transmission and detection process of GMSK modulation scheme with block diagram and constellation diagram.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Determine the optimal solution of the weights using MSE algorithm with its appropriate diagram and derivation.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What are the characteristics of speech signal? Explain the operation of linear predicative coder.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) What do you understand by CDMA? Mention its characteristics, advantages and limitations. [2+6]\n\nb) Explain working of frequency Hopping Multiple Access with an example.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Draw and explain the global System for Mobile (GSM) architecture in brief.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Write short notes on: (Any Two) [2\\times4]\n(a) Practical handoff considerations\n(b) RAKE receiver\n(c) Spectrum regulations",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    }
   ]
 }

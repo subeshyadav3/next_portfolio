@@ -1,373 +1,1340 @@
 {
   "subject": "Advanced Electronics",
-  "subjectCode": "ENEX 202",
+  "semester": "1",
   "questions": [
     {
+      "id": "advanced-electronics-1",
+      "question": "Define slew rate. The op-amp has a closed-loop gain of 33 and a slew rate of $0.5\\text{ V/}\\mu\\text{s}$. The input signal is a complex waveform containing.\n$V1 = 0.01 \\sin(106\\ t)$\n$V2 = 0.05 \\sin(350 \\times 10^3\\ t)$\nDetermine whether the output is distorted or not due to slew rate limitation. If so, suggest a remedy.",
+      "text": "Define slew rate. The op-amp has a closed-loop gain of 33 and a slew rate of $0.5\\text{ V/}\\mu\\text{s}$. The input signal is a complex waveform containing.\n$V1 = 0.01 \\sin(106\\ t)$\n$V2 = 0.05 \\sin(350 \\times 10^3\\ t)$\nDetermine whether the output is distorted or not due to slew rate limitation. If so, suggest a remedy.",
       "chapter": "Operational Amplifier Characterization",
-      "text": "Define slew rate of an operational amplifier. An op-amp has a slew rate of $0.5\\text{ V}/\\mu\\text{s}$ and closed-loop gain of $33$. The input signal is given by $v_{in} = 0.01\\sin(10^6 t) + 0.05\\sin(350 \\times 10^3 t)$ (or $0.1\\sin(200000 t)$). Determine whether the output is distorted due to slew rate limitation. If so, suggest a remedy.",
-      "marks": "8",
+      "marks": "4",
+      "frequency": 5,
       "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
         "2080 Chaitra",
+        "2079 Chaitra",
         "2078 Chaitra",
         "2077 Chaitra"
       ],
-      "frequency": 5
+      "examSessions": [
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2077 Chaitra"
+      ],
+      "isDiagram": true
     },
     {
+      "id": "advanced-electronics-2",
+      "question": "What is input bias current in operational amplifier? What is its effect on the output of an op-amp? How can you minimize the effect of input bias current?",
+      "text": "What is input bias current in operational amplifier? What is its effect on the output of an op-amp? How can you minimize the effect of input bias current?",
       "chapter": "Operational Amplifier Characterization",
-      "text": "Why is the output current of a simple current mirror circuit not exactly equal to reference current? Derive an expression for the current gain and output resistance of a Widlar current source with necessary circuit diagrams.",
-      "marks": "8",
+      "marks": "4",
+      "frequency": 4,
       "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
         "2080 Chaitra",
+        "2081 Chaitra",
+        "2079 Chaitra",
         "2078 Chaitra"
       ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
-      "text": "What are the advantages of an R-2R ladder DAC over a binary-weighted resistor DAC? Derive the expression for the output voltage of an inverted R-2R ladder DAC and show that the output voltage ranges from $0$ to $-V_{\\text{ref}}$.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
+      "examSessions": [
         "2080 Chaitra",
-        "2078 Chaitra",
-        "2077 Chaitra"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
-      "text": "Explain the working of a Successive Approximation Register (SAR) ADC in brief with a suitable example for a 6-bit ADC with $V_{\\text{ref}} = 16\\text{ V}$ and $V_{in} = 10.25\\text{ V}$.",
-      "marks": "8",
-      "years": [
         "2081 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
-      "text": "Explain the operation of a Dual-Slope Integrating ADC with circuit diagram, timing waveforms, and mathematical derivation. An 8-bit dual slope ADC has $R = 20\\text{ k}\\Omega$ and $C = 0.001\\ \\mu\\text{F}$. An analog input of $-0.25\\text{ V}$ is integrated for $T_1 = 150\\ \\mu\\text{s}$. (a) What is the maximum integrator voltage reached? (b) If switched to $+5\\text{ V}$ reference, how long does it take to reach $0\\text{ V}$? (c) If clock is $3.125\\text{ MHz}$, what is the digital output?",
-      "marks": "8",
-      "years": [
-        "2080 Chaitra",
+        "2079 Chaitra",
         "2078 Chaitra"
       ],
-      "frequency": 2
+      "isDiagram": false
     },
     {
-      "chapter": "Instrumentation and Isolation Amplifiers",
-      "text": "List out characteristics and application areas of an Instrumentation Amplifier. Derive the expression for the differential voltage gain of a three-op-amp instrumentation amplifier.",
+      "id": "advanced-electronics-3",
+      "question": "How can we reduce the effect of input bias current on output voltage in an op-amp circuit?",
+      "text": "How can we reduce the effect of input bias current on output voltage in an op-amp circuit?",
+      "chapter": "Archive Questions",
       "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2080 Chaitra",
-        "2077 Chaitra"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Operational Amplifier Characterization",
-      "text": "Define input bias current and input offset current of an op-amp. What is their effect on the output voltage? How can the effect of input bias current be reduced or compensated in an op-amp circuit?",
-      "marks": "8",
+      "frequency": 4,
       "years": [
         "2081 Chaitra",
         "2080 Chaitra",
+        "2079 Chaitra",
         "2078 Chaitra"
       ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Operational Amplifier-Bipolar Transistor Logarithmic Amplifier",
-      "text": "What are the advantages of a transistor logarithmic amplifier over a diode logarithmic amplifier? Derive the output voltage expression of a logarithmic amplifier using a matched transistor pair.",
-      "marks": "7",
-      "years": [
-        "2081 Chaitra",
-        "2078 Chaitra",
-        "2077 Chaitra"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Log-Antilog Circuit Application",
-      "text": "Implement the mathematical expression $V_o = V_1^2 + V_2^2 - V_1 \\sqrt{V_2}$ (or $V_o = V_1^2 - V_2^2 + V_1 V_2$) using log, antilog, summer, and subtractor op-amp circuits.",
-      "marks": "7",
-      "years": [
-        "2081 Chaitra",
-        "2080 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Log-Antilog Circuit Application",
-      "text": "Draw the detailed circuit diagram of a four-quadrant analog multiplier and derive its input-output relationship using log and antilog circuits.",
-      "marks": "7",
-      "years": [
-        "2078 Chaitra",
-        "2077 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Power Electronics",
-      "text": "Explain the working principle and two-transistor analogy (model) of a Silicon Controlled Rectifier (SCR). Sketch its V-I characteristics curve and discuss its turn-on and turn-off mechanisms.",
-      "marks": "8",
-      "years": [
+      "examSessions": [
         "2081 Chaitra",
         "2080 Chaitra",
-        "2077 Chaitra"
+        "2079 Chaitra",
+        "2078 Chaitra"
       ],
-      "frequency": 3
+      "isDiagram": false
     },
     {
-      "chapter": "Power Electronics",
-      "text": "Explain the operation of a step-down (Buck) chopper for RLE load with the help of mathematical equations and waveforms. Show that maximum ripple current is present when duty cycle $k = 0.5$.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2080 Chaitra"
-      ],
-      "frequency": 3
-    },
-    {
+      "id": "advanced-electronics-4",
+      "question": "The buck-boost regulator has an input voltage of $V_s = 12\\text{ V}$. The duty cycle $k = 0.25$, and the switching frequency is $25\\text{ kHz}$. The inductance $L = 150\\text{ }\\mu\\text{H}$ and filter capacitance $C = 220\\text{ }\\mu\\text{F}$. The average load current $I_a = 1.25\\text{ A}$. Determine\n\na) The average output voltage, $V_a$\n\nb) The peak-to-peak output voltage ripple, $\\Delta V_c$\n\nc) The peak-to-peak ripple current of the inductor, $\\Delta I$\n\nd) The peak current of the transistor, $I_p$",
+      "text": "The buck-boost regulator has an input voltage of $V_s = 12\\text{ V}$. The duty cycle $k = 0.25$, and the switching frequency is $25\\text{ kHz}$. The inductance $L = 150\\text{ }\\mu\\text{H}$ and filter capacitance $C = 220\\text{ }\\mu\\text{F}$. The average load current $I_a = 1.25\\text{ A}$. Determine\n\na) The average output voltage, $V_a$\n\nb) The peak-to-peak output voltage ripple, $\\Delta V_c$\n\nc) The peak-to-peak ripple current of the inductor, $\\Delta I$\n\nd) The peak current of the transistor, $I_p$",
       "chapter": "Switched Mode Power Supplies and Drives",
-      "text": "A Buck-Boost regulator has an input voltage $V_s = 12\\text{ V}$, duty cycle $k = 0.25$, and switching frequency $f = 25\\text{ kHz}$. Inductance $L = 150\\ \\mu\\text{H}$ and filter capacitance $C = 220\\ \\mu\\text{F}$. Determine: (a) The average output voltage $V_a$, (b) The peak-to-peak output ripple voltage $\\Delta V_c$, (c) The peak-to-peak ripple current of inductor $\\Delta I$, and (d) The critical values of $L$ and $C$.",
       "marks": "8",
+      "frequency": 3,
       "years": [
-        "2082 Kartik",
         "2080 Chaitra",
+        "2078 Chaitra",
         "2077 Chaitra"
       ],
-      "frequency": 3
+      "examSessions": [
+        "2080 Chaitra",
+        "2078 Chaitra",
+        "2077 Chaitra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Power Electronics",
-      "text": "Define chopper and inverter. Explain the working of a single-phase full-bridge inverter with necessary circuit diagrams and waveforms.",
-      "marks": "8",
+      "id": "advanced-electronics-5",
+      "question": "What are the advantages of transistor logarithmic amplifier then using diode? Derive output voltage expression of logarithmic amplifier using matched transistor.",
+      "text": "What are the advantages of transistor logarithmic amplifier then using diode? Derive output voltage expression of logarithmic amplifier using matched transistor.",
+      "chapter": "Operational Amplifier-Bipolar Transistor Logarithmic Amplifier",
+      "marks": "6",
+      "frequency": 3,
+      "years": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2077 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-6",
+      "question": "List out three application area of isolation amplifier. Derive voltage gain of three op-amp instrumentation amplifier.",
+      "text": "List out three application area of isolation amplifier. Derive voltage gain of three op-amp instrumentation amplifier.",
+      "chapter": "Instrumentation and Isolation Amplifiers",
+      "marks": "2",
+      "frequency": 3,
       "years": [
         "2081 Chaitra",
         "2080 Chaitra"
       ],
-      "frequency": 2
+      "examSessions": [
+        "2081 Chaitra",
+        "2080 Chaitra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Operational Amplifier Characterization",
-      "text": "Show that the voltage gain of a differential amplifier with active load is twice that of a differential amplifier with passive load.",
-      "marks": "7",
+      "id": "advanced-electronics-7",
+      "question": "Why log-antilog amplifiers are essential? Derive the expression for output of a four quadrant multiplier circuit.",
+      "text": "Why log-antilog amplifiers are essential? Derive the expression for output of a four quadrant multiplier circuit.",
+      "chapter": "Log-Antilog Circuit Application",
+      "marks": "1",
+      "frequency": 3,
+      "years": [
+        "2078 Chaitra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2078 Chaitra",
+        "2077 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-8",
+      "question": "Derive output voltage expression of logarithmic amplifier using matched transistor.",
+      "text": "Derive output voltage expression of logarithmic amplifier using matched transistor.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 3,
+      "years": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2077 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-9",
+      "question": "Write short notes on: Application of Log and Antilog Amplifier",
+      "text": "Write short notes on: Application of Log and Antilog Amplifier",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 3,
       "years": [
         "2077 Chaitra",
-        "2075 Chaitra"
+        "2078 Chaitra"
       ],
-      "frequency": 2
+      "examSessions": [
+        "2077 Chaitra",
+        "2078 Chaitra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Instrumentation and Isolation Amplifiers",
-      "text": "List out applications of isolation amplifiers. Explain the operation of an optically coupled isolation amplifier and a transformer-coupled isolation amplifier.",
+      "id": "advanced-electronics-10",
+      "question": "List out three application area of isolation amplifier.",
+      "text": "List out three application area of isolation amplifier.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 3,
+      "years": [
+        "2081 Chaitra",
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2080 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-11",
+      "question": "Define the common mode rejection ratio of an operational amplifier with the relevant expressions. Show that the gain bandwidth product of an operational amplifier is constant.",
+      "text": "Define the common mode rejection ratio of an operational amplifier with the relevant expressions. Show that the gain bandwidth product of an operational amplifier is constant.",
+      "chapter": "Operational Amplifier Characterization",
+      "marks": "3",
+      "frequency": 2,
+      "years": [
+        "2079 Chaitra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2079 Chaitra",
+        "2077 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-12",
+      "question": "Explain the operation of Dual slope Analog to Digital Converter (ADC) with necessary figures and expressions. Also mention its advantage and disadvantage.",
+      "text": "Explain the operation of Dual slope Analog to Digital Converter (ADC) with necessary figures and expressions. Also mention its advantage and disadvantage.",
+      "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+      "marks": "2",
+      "frequency": 2,
+      "years": [
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2080 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-13",
+      "question": "Why output current of simple current mirror circuit is not exactly equal to reference current? Derive the output resistance of widlar current source.",
+      "text": "Why output current of simple current mirror circuit is not exactly equal to reference current? Derive the output resistance of widlar current source.",
+      "chapter": "Archive Questions",
+      "marks": "2",
+      "frequency": 2,
+      "years": [
+        "2081 Chaitra",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2078 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-14",
+      "question": "What is the difference between linear mode and switch mode power supply? Explain the working of Buck Regulator with necessary diagrams.",
+      "text": "What is the difference between linear mode and switch mode power supply? Explain the working of Buck Regulator with necessary diagrams.",
+      "chapter": "Switched Mode Power Supplies and Drives",
       "marks": "6",
+      "frequency": 2,
       "years": [
-        "2081 Chaitra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2079 Chaitra",
+        "2081 Chaitra"
       ],
-      "frequency": 3
+      "examSessions": [
+        "2079 Chaitra",
+        "2081 Chaitra"
+      ],
+      "isDiagram": false
     },
     {
+      "id": "advanced-electronics-15",
+      "question": "List the desired characteristics of an instrumentation amplifier. Explain the working of an optically coupled isolation amplifier.",
+      "text": "List the desired characteristics of an instrumentation amplifier. Explain the working of an optically coupled isolation amplifier.",
       "chapter": "Instrumentation and Isolation Amplifiers",
-      "text": "Derive the voltage gain $A_v = \\left(1 + \\frac{2 R_1}{R_g}\\right)\\left(\\frac{R_3}{R_2}\\right)$ and Common-Mode Rejection Ratio (CMRR) of a three-op-amp Instrumentation Amplifier. Why does it provide exceptionally high input impedance and high CMRR without matched source impedances?",
-      "marks": "8",
+      "marks": "2",
+      "frequency": 2,
       "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
+        "2079 Chaitra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2079 Chaitra",
+        "2077 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-16",
+      "question": "Derive the expression for output voltage of R-2R ladder DAC (voltage mode). List out demerits of Binary weighted resistor DAC.",
+      "text": "Derive the expression for output voltage of R-2R ladder DAC (voltage mode). List out demerits of Binary weighted resistor DAC.",
+      "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+      "marks": "2",
+      "frequency": 2,
+      "years": [
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2077 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-17",
+      "question": "Show that a differential amplifier with an active load has double the voltage gain compared to a passive load.",
+      "text": "Show that a differential amplifier with an active load has double the voltage gain compared to a passive load.",
+      "chapter": "Archive Questions",
+      "marks": "7",
+      "frequency": 2,
+      "years": [
+        "2079 Chaitra",
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2079 Chaitra",
+        "2077 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-18",
+      "question": "Compare different type of Analog to Digital converter. In an 8-bit dual slope A/D converter. $R_1 = 20\\text{k}\\Omega$ and $C = 0.001\\mu\\text{F}$. An analog input of value $-0.25\\text{V}$ is integrated for $T1 = 160\\mu\\text{s}$.\n\na) What is the maximum voltage reached in the integration?\n\nb) If the integrator is switched to $+5\\text{V}$, how long does it take to reach $0\\text{V}$.\n\nc) If the counter is clocked at $3.125\\text{MHz}$, what is the digital output after the conversion?",
+      "text": "Compare different type of Analog to Digital converter. In an 8-bit dual slope A/D converter. $R_1 = 20\\text{k}\\Omega$ and $C = 0.001\\mu\\text{F}$. An analog input of value $-0.25\\text{V}$ is integrated for $T1 = 160\\mu\\text{s}$.\n\na) What is the maximum voltage reached in the integration?\n\nb) If the integrator is switched to $+5\\text{V}$, how long does it take to reach $0\\text{V}$.\n\nc) If the counter is clocked at $3.125\\text{MHz}$, what is the digital output after the conversion?",
+      "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
         "2078 Chaitra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "First stage consists of two non-inverting buffers cross-coupled via gain-setting resistor R_g. Input impedance is op-amp non-inverting terminal impedance (gigohms). Differential gain of stage 1 is A_d1 = 1 + 2 R1 / R_g; common-mode gain is A_cm1 = 1 (amplifies difference while passing common-mode unity). Second stage is difference amplifier with gain R3 / R2, rejecting common-mode voltage. CMRR is multiplied by stage-1 differential gain."
-    },
-    {
-      "chapter": "Instrumentation and Isolation Amplifiers",
-      "text": "Explain Isolation Amplifiers. Compare Transformer-Coupled, Optically-Coupled, and Capacitively-Coupled isolation amplifiers with respect to barrier breakdown voltage, common-mode rejection, and medical bio-potential isolation applications.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2080 Chaitra",
-        "2077 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Provides complete galvanic isolation (thousands of volts) between input and output grounds, breaking ground loops and protecting patients/sensitive instrumentation. Transformer coupling uses modulator/demodulator with high-frequency carrier (20-100 kHz) across toroidal transformer barrier. Optical coupling uses matched linear optocoupler LEDs and photodiodes. Capacitive coupling uses differential digital modulator across low-capacitance ceramic barrier (high CMRR and bandwidth)."
-    },
-    {
-      "chapter": "Operational Amplifier-Bipolar Transistor Logarithmic Amplifier",
-      "text": "Derive the output voltage of a Translog (BJT-based) Logarithmic Amplifier: $v_o = -V_T \\ln\\left(\\frac{v_i}{I_s R}\\right)$. Explain why uncompensated log amplifiers suffer severe temperature drift due to $V_T$ and $I_s$, and describe the dual-transistor temperature compensation circuit.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "BJT in feedback loop of op-amp with base grounded (v_B = 0). Collector current I_c = I_s [exp(v_BE / V_T) - 1] approx I_s exp(v_BE / V_T). Inverting virtual ground sets I_c = v_i / R. Output v_o = -v_BE = -V_T ln(v_i / (I_s R)). Temperature drift: I_s doubles every 5 deg C; thermal voltage V_T = k T / q is proportional to absolute temperature. Compensated by subtracting reference log output v_o2 = -V_T ln(V_ref / (I_s R_ref)) using matched dual BJT (cancels I_s) and PTAT thermistor (cancels V_T)."
-    },
-    {
-      "chapter": "Log-Antilog Circuit Application",
-      "text": "Design an Analog Multiplier and Divider circuit using Log and Anti-log amplifiers and summing op-amps based on the mathematical identity $\\ln(v_1 v_2) = \\ln v_1 + \\ln v_2$ and $\\ln(v_1 / v_2) = \\ln v_1 - \\ln v_2$.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2080 Chaitra",
-        "2076 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Multiplier: Input voltages v1, v2 fed into log amplifiers producing -K ln(v1) and -K ln(v2). Summing amplifier computes -(-K ln v1 - K ln v2) = K ln(v1 * v2). Output fed to anti-log amplifier (BJT in input path, resistor in feedback) which computes exp(ln(v1 * v2)) = v1 * v2. Divider uses differential subtraction: log(v1) - log(v2) = log(v1 / v2) prior to anti-log stage. Requires positive unipolar inputs (single-quadrant operation)."
-    },
-    {
-      "chapter": "Log-Antilog Circuit Application",
-      "text": "Explain the Analog Four-Quadrant Gilbert Multiplier Cell. Derive the differential output current as a function of the hyperbolic tangent of differential input voltages: $I_{out} = I_0 \\tanh\\left(\\frac{v_1}{2V_T}\\right)\\tanh\\left(\\frac{v_2}{2V_T}\\right)$.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2078 Bhadra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Cross-coupled differential pairs of BJTs. Lower pair splits tail current I_0 into I_1, I_2 based on differential input v1: I_1 - I_2 = I_0 tanh(v1 / 2V_T). Upper cross-coupled pairs modulate currents based on differential input v2: output current Delta I = (I_1 - I_2) tanh(v2 / 2V_T) = I_0 tanh(v1 / 2V_T) tanh(v2 / 2V_T). For small signals v1, v2 << 2V_T: tanh(x) approx x, giving linear true 4-quadrant multiplication v_out proportional to v1 * v2."
-    },
-    {
-      "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
-      "text": "Explain R-2R Ladder Digital-to-Analog Converter (DAC) in voltage and current modes. Derive the output voltage $V_o = -V_{ref} \\sum_{i=1}^n \\frac{b_i}{2^i}$. Why is the R-2R ladder preferred over binary weighted-resistor DACs for high resolution (12-16 bits)?",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2080 Chaitra",
-        "2077 Magh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Uses only two resistor values (R and 2R). Thevenin equivalent resistance looking into each node is always R. Node voltages divide by factor of 2 at each progressive ladder stage. Binary switches direct currents to virtual ground summing bus of op-amp. Output V_o = -V_ref sum b_i 2^(-i). Preferred because binary weighted DAC requires 2^n resistor spread (e.g. 1k to 64M for 16-bit), which is impossible to track accurately on monolithic ICs over temperature; R-2R needs only 2:1 matching."
-    },
-    {
-      "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
-      "text": "Explain Dual-Slope Integrating Analog-to-Digital Converter (ADC). Derive the relation showing conversion result $N = \\frac{V_{in}}{V_{ref}} 2^n$ is independent of integrator $R, C$ values and clock frequency drift. Why is it used in digital multimeters?",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
+      "examSessions": [
         "2078 Chaitra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Run-up phase: switch connects V_in to integrator for fixed clock counts N1 = 2^n (time T1): V_peak = -V_in T1 / (RC). Run-down phase: switch connects -V_ref; integrator ramps back to 0 in counts N2 (time T2): V_peak = V_ref T2 / (RC). Equating gives V_in T1 = V_ref T2 => N2 = N1 (V_in / V_ref). R, C, and clock frequency f cancel out completely. Integrating over period T1 = 20 ms provides infinite rejection of 50 Hz AC power line hum."
+      "isDiagram": false
     },
     {
-      "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
-      "text": "Explain Successive Approximation Register (SAR) ADC. Detail the binary search conversion sequence with D/A converter, sample-and-hold circuit, and comparator. Calculate conversion time for an 8-bit SAR ADC clocked at $2\\text{ MHz}$.",
+      "id": "advanced-electronics-19",
+      "question": "The buck-boost regulator has an input voltage of $V_s=12V$. The duty cycle $k=0.25$ and the switching frequency is $25kHz$. The inductance $L=150\\mu H$ and filter capacitance $C=220\\mu F$. The average load current $I_a=1.25A$. Determine (a) the average output voltage, $V_a$ (b) the peak-to-peak output voltage ripple, $\\Delta V_C$ (c) the peak-to-peak ripple current of inductor, $\\Delta I$, (d) the peak current of the transistor, $I_p$ and (d) the critical value of $L$ and $C$.",
+      "text": "The buck-boost regulator has an input voltage of $V_s=12V$. The duty cycle $k=0.25$ and the switching frequency is $25kHz$. The inductance $L=150\\mu H$ and filter capacitance $C=220\\mu F$. The average load current $I_a=1.25A$. Determine (a) the average output voltage, $V_a$ (b) the peak-to-peak output voltage ripple, $\\Delta V_C$ (c) the peak-to-peak ripple current of inductor, $\\Delta I$, (d) the peak current of the transistor, $I_p$ and (d) the critical value of $L$ and $C$.",
+      "chapter": "General",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2082 Kartik",
-        "2080 Chaitra",
-        "2076 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Performs binary search. Sample-and-hold freezes analog input. SAR tests bits from MSB (bit n-1) to LSB (bit 0). Sets trial bit to 1, internal DAC generates trial analog voltage. Comparator tests if V_in >= V_DAC: if yes, trial bit remains 1; if no, trial bit resets to 0. Takes exactly n clock cycles for n bits. For 8 bits at f_clk = 2 MHz: clock period T = 0.5 us; conversion time T_conv = 8 * 0.5 us = 4.0 us (plus 1 sample cycle = 4.5 us)."
-    },
-    {
-      "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
-      "text": "Describe Sigma-Delta ($\\Sigma\\Delta$) ADC architecture: Over-sampling ($f_s \\gg 2 f_B$), 1-bit DAC/ADC, Noise Shaping with loop integrator, and Digital Decimation Filter. Why do Sigma-Delta ADCs achieve ultra-high 24-bit resolution at audio frequencies?",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Over-samples input by large factor OSR = f_s / (2 f_B). Modulator subtracts 1-bit DAC output from input, integrates difference, and quantizes via 1-bit comparator. Integrator acts as high-pass filter for quantization noise (Noise Shaping), pushing quantization noise power out of audio band into high frequencies. Digital decimation lowpass filter filters out high-frequency noise and down-samples to Nyquist rate, yielding 16-24 bit resolution without precision analog resistors."
-    },
-    {
-      "chapter": "Switched Mode Power Supplies and Drives",
-      "text": "Explain the Buck (Step-Down) DC-DC Converter. Derive the continuous conduction mode (CCM) voltage conversion ratio $V_o / V_s = D$, inductor current ripple $\\Delta I_L$, and the minimum critical inductance $L_{min}$ to avoid discontinuous conduction.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2080 Chaitra",
         "2077 Chaitra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Switch closed for duration D*T: inductor voltage v_L = V_s - V_o; inductor current ramps up by Delta I_L = (V_s - V_o) D T / L. Switch open for (1-D)T: diode conducts, v_L = -V_o; inductor current ramps down by Delta I_L = V_o (1 - D) T / L. Volt-second balance (V_s - V_o) D = V_o (1 - D) => V_o = D * V_s. Continuous conduction requires minimum average current I_L >= Delta I_L / 2 => L_min = (1 - D) R / (2 f)."
-    },
-    {
-      "chapter": "Switched Mode Power Supplies and Drives",
-      "text": "Explain Boost (Step-Up) and Buck-Boost DC-DC Converters. Derive their output voltage conversion ratios $V_o / V_s = \\frac{1}{1 - D}$ and $V_o / V_s = -\\frac{D}{1 - D}$, sketch inductor current waveforms, and calculate capacitor voltage ripple.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2078 Bhadra"
+      "examSessions": [
+        "2077 Chaitra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Boost converter: switch on charges inductor from V_s; switch off delivers stored energy in series with input through diode to load: V_s D T + (V_s - V_o)(1 - D) T = 0 => V_o = V_s / (1 - D) > V_s. Buck-boost converter: switch on stores energy in inductor; switch off inverts polarity across load: V_s D T + (-V_o)(1 - D) T = 0 => V_o = -V_s * [D / (1 - D)]. Output voltage ripple Delta V_o = I_o D / (f C)."
+      "isDiagram": false
     },
     {
-      "chapter": "Switched Mode Power Supplies and Drives",
-      "text": "Explain Isolated SMPS Topologies: Flyback Converter and Forward Converter. Contrast transformer core demagnetization (tertiary reset winding), transformer utilization, and peak transistor stress in offline power supplies.",
-      "marks": "8",
+      "id": "advanced-electronics-20",
+      "question": "The buck-boost regulator has an input voltage of 12 V. The duty cycle (K) is 0.25 and the switching frequency is 25 kHz. The inductance is 15 $\\mu$H and filter capacitance is 220$\\mu$F. The average load current is 1.25 A. Determine\n\na) The average output voltage (Va)\n\nb) The peak-to-peak output ripple voltage ($\\Delta Vc$)\n\nc) The peak-to-peak ripple current of inductor ($\\Delta I$)\n\nd) The peak current of the transistor (Ip)\n\ne) The critical values of L and C",
+      "text": "The buck-boost regulator has an input voltage of 12 V. The duty cycle (K) is 0.25 and the switching frequency is 25 kHz. The inductance is 15 $\\mu$H and filter capacitance is 220$\\mu$F. The average load current is 1.25 A. Determine\n\na) The average output voltage (Va)\n\nb) The peak-to-peak output ripple voltage ($\\Delta Vc$)\n\nc) The peak-to-peak ripple current of inductor ($\\Delta I$)\n\nd) The peak current of the transistor (Ip)\n\ne) The critical values of L and C",
+      "chapter": "General",
+      "marks": "10",
+      "frequency": 1,
       "years": [
-        "2082 Kartik",
-        "2080 Chaitra",
-        "2076 Chaitra"
+        "2078 Chaitra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Flyback is isolated buck-boost: energy stored in coupled inductor (gapped core) during switch on; delivered to secondary when switch turns off; low cost for <150W supplies. Forward converter is isolated buck: energy transferred directly to secondary when switch is on via un-gapped transformer. Forward converter requires tertiary demagnetizing winding and diode to reset core flux to zero during off-time, preventing core saturation."
+      "examSessions": [
+        "2078 Chaitra"
+      ],
+      "isDiagram": false
     },
     {
+      "id": "advanced-electronics-21",
+      "question": "A half wave rectifier circuit employing as SCR is adjusted to have a gate current of 1 mA. The forward breakdown voltage of SCR is 50V for Ig: 1mA. If sinusoidal voltage of 100V peak is applied. Find\n\na) Firing angle\n\nb) Conduction angle\n\nc) Average output voltage,\n\nd) In the circuit if holding current is 80 mA and load resistance is $100\\Omega$ find average voltage in this case.",
+      "text": "A half wave rectifier circuit employing as SCR is adjusted to have a gate current of 1 mA. The forward breakdown voltage of SCR is 50V for Ig: 1mA. If sinusoidal voltage of 100V peak is applied. Find\n\na) Firing angle\n\nb) Conduction angle\n\nc) Average output voltage,\n\nd) In the circuit if holding current is 80 mA and load resistance is $100\\Omega$ find average voltage in this case.",
       "chapter": "Power Electronics",
-      "text": "Explain the Silicon Controlled Rectifier (SCR / Thyristor): Two-transistor analogy (p-n-p and n-p-n regenerative feedback), turn-on mechanisms, latching vs holding currents, and turn-off commutation techniques (Natural vs Forced commutation).",
-      "marks": "8",
+      "marks": "1",
+      "frequency": 1,
       "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2079 Chaitra"
+        "2078 Chaitra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Four-layer p-n-p-n device modeled as coupled PNP (Q1) and NPN (Q2) transistors. Anode current I_A = (alpha2 I_g + I_co1 + I_co2) / [1 - (alpha1 + alpha2)]. Gate pulse injects I_g, driving loop gain alpha1 + alpha2 -> 1, triggering regenerative latch-up into low-resistance conduction. Latching current is minimum anode current to sustain conduction as gate pulse is removed; Holding current is minimum current below which SCR turns off. Commutation turns SCR off by reversing anode-cathode voltage."
+      "examSessions": [
+        "2078 Chaitra"
+      ],
+      "isDiagram": false
     },
     {
+      "id": "advanced-electronics-22",
+      "question": "A boost regulator has an input voltage of $V_s = 5\\text{V}$. the average output voltage $V_a = 15\\text{V}$ and the average load current $I_a = 0.5\\text{A}$. The switching frequency is $25\\text{ kHz}$. If $L=150\\text{µH}$ and $C = 220\\text{µF}$, determine\n\na) The duty cycle\n\nb) The ripple voltage capacitor\n\nc) The ripple current of inductor\n\nd) The critical value of L and C",
+      "text": "A boost regulator has an input voltage of $V_s = 5\\text{V}$. the average output voltage $V_a = 15\\text{V}$ and the average load current $I_a = 0.5\\text{A}$. The switching frequency is $25\\text{ kHz}$. If $L=150\\text{µH}$ and $C = 220\\text{µF}$, determine\n\na) The duty cycle\n\nb) The ripple voltage capacitor\n\nc) The ripple current of inductor\n\nd) The critical value of L and C",
       "chapter": "Switched Mode Power Supplies and Drives",
-      "text": "Explain H-Bridge DC Motor Drives using power MOSFETs/IGBTs. Describe Bipolar and Unipolar Pulse Width Modulation (PWM) switching schemes, shoot-through prevention using dead-time control, and freewheeling diode protection.",
-      "marks": "8",
+      "marks": "6",
+      "frequency": 1,
       "years": [
-        "2082 Kartik",
-        "2080 Chaitra",
-        "2077 Magh"
+        "2082 Kartik"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Four semiconductor switches (Q1, Q2, Q3, Q4) in H configuration driving motor bi-directionally. Forward: Q1 and Q4 on. Reverse: Q2 and Q3 on. Shoot-through (fatal short circuit) occurs if both high-side Q1 and low-side Q2 turn on simultaneously; prevented by dead-time delay circuitry in gate driver. Bipolar PWM switches diagonals simultaneously (-Vs to +Vs). Unipolar PWM switches legs independently (0 to +Vs). Antiparallel freewheeling diodes clamp inductive kickback V = -L di/dt."
+      "examSessions": [
+        "2082 Kartik"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-23",
+      "question": "A converter is feeding an RL load with $V_s = 220\\text{ V}$, $R = 5$, $L = 7.5\\text{ mH}$, $f = 1\\text{ kHz}$, $k = 0.5$, and $E = 0\\text{V}$. Calculate (i) the minimum instantaneous load current (ii) the peak instantaneous load current, (iii) the maximum peak-to-peak load ripple current, (iv) the average value of load current $I_a$, (v) the rms load current $I_o$",
+      "text": "A converter is feeding an RL load with $V_s = 220\\text{ V}$, $R = 5$, $L = 7.5\\text{ mH}$, $f = 1\\text{ kHz}$, $k = 0.5$, and $E = 0\\text{V}$. Calculate (i) the minimum instantaneous load current (ii) the peak instantaneous load current, (iii) the maximum peak-to-peak load ripple current, (iv) the average value of load current $I_a$, (v) the rms load current $I_o$",
+      "chapter": "Power Electronics",
+      "marks": "5",
+      "frequency": 1,
+      "years": [
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2079 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-24",
+      "question": "What is slew rate? The operational amplifier has a slew rate of $0.5\\text{V}/\\mu\\text{s}$ and closed loop gain -33. Determine whether the output will be distorted due to the slew rate limitation when input is $V_{in} = 0.071\\text{V rms}$ at $32\\text{ kHz}$. If distortion occurs, find remedies other than changing the input signal.",
+      "text": "What is slew rate? The operational amplifier has a slew rate of $0.5\\text{V}/\\mu\\text{s}$ and closed loop gain -33. Determine whether the output will be distorted due to the slew rate limitation when input is $V_{in} = 0.071\\text{V rms}$ at $32\\text{ kHz}$. If distortion occurs, find remedies other than changing the input signal.",
+      "chapter": "General",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2078 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-25",
+      "question": "The inverting op-amp configuration has a feedback resistance of $470k\\Omega$ and input resistance of $10 k\\Omega$. If the input signal is $0.1\\sin(200000t)$, determine whether the output will be distorted due to slew rate limitation of op-amp. If so, find a remedy. The op-amp has a slew rate of $0.5V/\\mu s$.",
+      "text": "The inverting op-amp configuration has a feedback resistance of $470k\\Omega$ and input resistance of $10 k\\Omega$. If the input signal is $0.1\\sin(200000t)$, determine whether the output will be distorted due to slew rate limitation of op-amp. If so, find a remedy. The op-amp has a slew rate of $0.5V/\\mu s$.",
+      "chapter": "General",
+      "marks": "7",
+      "frequency": 1,
+      "years": [
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2077 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-26",
+      "question": "Determine the maximum amplitude of an input sinusoidal wave with signal frequency $5\\text{kHz}$, if it is to be amplified by an op-amp circuit having the voltage gain of $50$ and slew rate is equal to $0.4\\text{ V/}\\mu\\text{s}$, without distortion at the output.",
+      "text": "Determine the maximum amplitude of an input sinusoidal wave with signal frequency $5\\text{kHz}$, if it is to be amplified by an op-amp circuit having the voltage gain of $50$ and slew rate is equal to $0.4\\text{ V/}\\mu\\text{s}$, without distortion at the output.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2079 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-27",
+      "question": "Define slew rate of Op-amp. The inverting Op-amp with gain 50 has a slew rate of $0.9\\text{ V/µs}$ with input signal $0.4\\text{V}$ peak and $8\\text{ kHz}$. Determine whether the output will be distorted due to slew rate limitation. If so, find remedies.",
+      "text": "Define slew rate of Op-amp. The inverting Op-amp with gain 50 has a slew rate of $0.9\\text{ V/µs}$ with input signal $0.4\\text{V}$ peak and $8\\text{ kHz}$. Determine whether the output will be distorted due to slew rate limitation. If so, find remedies.",
+      "chapter": "General",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2082 Kartik"
+      ],
+      "examSessions": [
+        "2082 Kartik"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-28",
+      "question": "For a 5-bit DAC with the reference voltage $V_r$ being 10V, if there is the fluctuation in the reference voltage of about 10% what will be the deviation in the output for MSB and LSB due to this fluctuation?",
+      "text": "For a 5-bit DAC with the reference voltage $V_r$ being 10V, if there is the fluctuation in the reference voltage of about 10% what will be the deviation in the output for MSB and LSB due to this fluctuation?",
+      "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2077 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-29",
+      "question": "Explain the operation of step-down chopper for RLE load with the help of mathematical equations and waveforms. Also, show that maximum ripple current is present when duty cycle $K=0.5$.",
+      "text": "Explain the operation of step-down chopper for RLE load with the help of mathematical equations and waveforms. Also, show that maximum ripple current is present when duty cycle $K=0.5$.",
+      "chapter": "Power Electronics",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2081 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-30",
+      "question": "Discuss why R-2R ladder DAC is preferred to binary-weighted resistor DAC while implementing them as integrated circuits. Explain the working principle of a sigma-delta ADC.",
+      "text": "Discuss why R-2R ladder DAC is preferred to binary-weighted resistor DAC while implementing them as integrated circuits. Explain the working principle of a sigma-delta ADC.",
+      "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2079 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-31",
+      "question": "What are the advantages of R-2R type DAC? Derive the expression of output voltage and also show output voltage ranges from $-V_{ref}$ to $+V_{ref}$ for bipolar DAC.",
+      "text": "What are the advantages of R-2R type DAC? Derive the expression of output voltage and also show output voltage ranges from $-V_{ref}$ to $+V_{ref}$ for bipolar DAC.",
+      "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2081 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-32",
+      "question": "Why tracking type ADC is better than counter type ADC? Explain the operation of dual slope analog to digital converter (ADC) with necessary figures and expressions.",
+      "text": "Why tracking type ADC is better than counter type ADC? Explain the operation of dual slope analog to digital converter (ADC) with necessary figures and expressions.",
+      "chapter": "General",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2082 Kartik"
+      ],
+      "examSessions": [
+        "2082 Kartik"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-33",
+      "question": "What are the applications of log-antilog amplifiers? Draw rms detector circuit for sinusoidal waveform using log antilog amplifier and derive its output voltage.",
+      "text": "What are the applications of log-antilog amplifiers? Draw rms detector circuit for sinusoidal waveform using log antilog amplifier and derive its output voltage.",
+      "chapter": "General",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2082 Kartik"
+      ],
+      "examSessions": [
+        "2082 Kartik"
+      ],
+      "isDiagram": true
+    },
+    {
+      "id": "advanced-electronics-34",
+      "question": "Why the output current of the simple current mirror circuit not equal to reference current? Derive an expression for an current gain of widlar current source.",
+      "text": "Why the output current of the simple current mirror circuit not equal to reference current? Derive an expression for an current gain of widlar current source.",
+      "chapter": "General",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2078 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-35",
+      "question": "Define input bias current and input offset voltage of an Op-amp. Derive the expression of input impedance of closed loop Op-amp configuration.",
+      "text": "Define input bias current and input offset voltage of an Op-amp. Derive the expression of input impedance of closed loop Op-amp configuration.",
+      "chapter": "Operational Amplifier Characterization",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2082 Kartik"
+      ],
+      "examSessions": [
+        "2082 Kartik"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-36",
+      "question": "What are the applications of isolation amplifier? Find the output voltage of single op-amp instrumentation amplifier with mismatched resistor.",
+      "text": "What are the applications of isolation amplifier? Find the output voltage of single op-amp instrumentation amplifier with mismatched resistor.",
+      "chapter": "General",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2082 Kartik"
+      ],
+      "examSessions": [
+        "2082 Kartik"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-37",
+      "question": "Explain the working of successive approximation ADC in brief with suitable example for 6-bit ADC and $V_{ref} = 16V$ and $V_{in} = 10.25 V$.",
+      "text": "Explain the working of successive approximation ADC in brief with suitable example for 6-bit ADC and $V_{ref} = 16V$ and $V_{in} = 10.25 V$.",
+      "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2081 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-38",
+      "question": "Define common mode rejection ratio of Op-Amp with mathematical expressions. Prove that the gain bandwidth product of Op-Amp is constant.",
+      "text": "Define common mode rejection ratio of Op-Amp with mathematical expressions. Prove that the gain bandwidth product of Op-Amp is constant.",
+      "chapter": "General",
+      "marks": "3",
+      "frequency": 1,
+      "years": [
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2077 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-39",
+      "question": "What are the applications of isolation amplifiers? Find the output voltage of an instrumentation amplifier consisting of three op-amps.",
+      "text": "What are the applications of isolation amplifiers? Find the output voltage of an instrumentation amplifier consisting of three op-amps.",
+      "chapter": "General",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2080 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "advanced-electronics-40",
+      "question": "Define input bias and input offset current of op-amp. Derive the expression for output impedance of closed loop op-amp configuration.",
+      "text": "Define input bias and input offset current of op-amp. Derive the expression for output impedance of closed loop op-amp configuration.",
+      "chapter": "Operational Amplifier Characterization",
+      "marks": "3",
+      "frequency": 1,
+      "years": [
+        "2081 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra"
+      ],
+      "isDiagram": false
     }
   ],
-  "chapters": [
-    "Operational Amplifier Characterization",
-    "Digital-to-Analog and Analog-to-Digital Conversion",
-    "Instrumentation and Isolation Amplifiers",
-    "Operational Amplifier-Bipolar Transistor Logarithmic Amplifier",
-    "Log-Antilog Circuit Application",
-    "Power Electronics",
-    "Switched Mode Power Supplies and Drives"
+  "yearWisePapers": [
+    {
+      "session": "2082 Kartik",
+      "year": "2082",
+      "month": "Kartik",
+      "examType": "Back",
+      "totalMarks": 35,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define input bias current and input offset voltage of an Op-amp. Derive the expression of input impedance of closed loop Op-amp configuration.",
+          "marks": "2",
+          "chapter": "Operational Amplifier Characterization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What are the advantages of transistor logarithmic amplifier then using diode? Derive output voltage expression of logarithmic amplifier using matched transistor.",
+          "marks": "3",
+          "chapter": "Operational Amplifier-Bipolar Transistor Logarithmic Amplifier",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Explain RC triggering circuit of SCR with necessary figures and waveforms.",
+          "marks": "6",
+          "chapter": "Power Electronics",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Explain the working principle of step down dc chopper with necessary derivations.",
+          "marks": "6",
+          "chapter": "Power Electronics",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "A boost regulator has an input voltage of $V_s = 5\\text{V}$. the average output voltage $V_a = 15\\text{V}$ and the average load current $I_a = 0.5\\text{A}$. The switching frequency is $25\\text{ kHz}$. If $L=150\\text{µH}$ and $C = 220\\text{µF}$, determine\n\na) The duty cycle\n\nb) The ripple voltage capacitor\n\nc) The ripple current of inductor\n\nd) The critical value of L and C",
+          "marks": "6",
+          "chapter": "Switched Mode Power Supplies and Drives",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Draw the circuit diagram of BJT differential amplifier. Derive its differential and common mode voltage gain.",
+          "marks": "2",
+          "chapter": "Archive Questions",
+          "isDiagram": true
+        },
+        {
+          "qNum": 7,
+          "text": "Define slew rate of Op-amp. The inverting Op-amp with gain 50 has a slew rate of $0.9\\text{ V/µs}$ with input signal $0.4\\text{V}$ peak and $8\\text{ kHz}$. Determine whether the output will be distorted due to slew rate limitation. If so, find remedies.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Derive the expression for output voltage of R-2R ladder DAC (voltage mode). List out demerits of Binary weighted resistor DAC.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Why tracking type ADC is better than counter type ADC? Explain the operation of dual slope analog to digital converter (ADC) with necessary figures and expressions.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What are the applications of isolation amplifier? Find the output voltage of single op-amp instrumentation amplifier with mismatched resistor.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What are the applications of log-antilog amplifiers? Draw rms detector circuit for sinusoidal waveform using log antilog amplifier and derive its output voltage.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2081 Chaitra",
+      "year": "2081",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What is input bias current in operational amplifier? What is its effect on the output of an op-amp? How can you minimize the effect of input bias current?",
+          "marks": "4",
+          "chapter": "Operational Amplifier Characterization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Define input bias and input offset current of op-amp. Derive the expression for output impedance of closed loop op-amp configuration.",
+          "marks": "3",
+          "chapter": "Operational Amplifier Characterization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "What are the advantages of R-2R type DAC? Derive the expression of output voltage and also show output voltage ranges from $-V_{ref}$ to $+V_{ref}$ for bipolar DAC.",
+          "marks": "2",
+          "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Explain the working of successive approximation ADC in brief with suitable example for 6-bit ADC and $V_{ref} = 16V$ and $V_{in} = 10.25 V$.",
+          "marks": "4",
+          "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "List out three application area of isolation amplifier. Derive voltage gain of three op-amp instrumentation amplifier.",
+          "marks": "2",
+          "chapter": "Instrumentation and Isolation Amplifiers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What are the advantages of transistor logarithmic amplifier then using diode? Derive output voltage expression of logarithmic amplifier using matched transistor.",
+          "marks": "6",
+          "chapter": "Operational Amplifier-Bipolar Transistor Logarithmic Amplifier",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Implement the following expression using log, antilog amplifier $V_o = V_1^2 + V_2^2 - V_1/V_2$",
+          "marks": "7",
+          "chapter": "Log-Antilog Circuit Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain the two transistor model operation of Silicon Controlled Rectifier (SCR).",
+          "marks": "4",
+          "chapter": "Power Electronics",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain the operation of step-down chopper for RLE load with the help of mathematical equations and waveforms. Also, show that maximum ripple current is present when duty cycle $K=0.5$.",
+          "marks": "8",
+          "chapter": "Power Electronics",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What is the difference between linear mode and switch mode power supply? Explain the working of Buck Regulator with necessary diagrams.",
+          "marks": "6",
+          "chapter": "Switched Mode Power Supplies and Drives",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Why output current of simple current mirror circuit is not exactly equal to reference current? Derive the output resistance of widlar current source.",
+          "marks": "2",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "How can we reduce the effect of input bias current on output voltage in an op-amp circuit?",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Derive output voltage expression of logarithmic amplifier using matched transistor.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "How can we reduce the effect of input bias current on output voltage in an op-amp circuit?",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "Explain the working of buck regulator with necessary circuits, waveforms and expressions.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Chaitra",
+      "year": "2080",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 50,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define slew rate. The op-amp has a closed-loop gain of 33 and a slew rate of $0.5\\text{ V/}\\mu\\text{s}$. The input signal is a complex waveform containing.\n$V1 = 0.01 \\sin(106\\ t)$\n$V2 = 0.05 \\sin(350 \\times 10^3\\ t)$\nDetermine whether the output is distorted or not due to slew rate limitation. If so, suggest a remedy.",
+          "marks": "4",
+          "chapter": "Operational Amplifier Characterization",
+          "isDiagram": true
+        },
+        {
+          "qNum": 2,
+          "text": "What is input bias current in operational amplifier? What is its effect on the output of an op-amp? How can you minimize the effect of input bias current?",
+          "marks": "4",
+          "chapter": "Operational Amplifier Characterization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Explain the operation of Dual slope Analog to Digital Converter (ADC) with necessary figures and expressions. Also mention its advantage and disadvantage.",
+          "marks": "2",
+          "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Derive the expression for output voltage of R-2R ladder DAC (voltage mode). List out demerits of Binary weighted resistor DAC.",
+          "marks": "6",
+          "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "List out three application area of isolation amplifier. Derive voltage gain of three op-amp instrumentation amplifier.",
+          "marks": "2",
+          "chapter": "Instrumentation and Isolation Amplifiers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Implement the following expression using Log, Antilog Amplifier.\n$V_o = V_1^2 - V_2^2 + V_1/V_2$",
+          "marks": "6",
+          "chapter": "Log-Antilog Circuit Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the working principle of the RC triggering circuit for turning on a thyristor.",
+          "marks": "4",
+          "chapter": "Power Electronics",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Define chopper. Explain the working of single phase, full bridge inverter with necessary diagrams and waveforms.",
+          "marks": "2",
+          "chapter": "Power Electronics",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "The buck-boost regulator has an input voltage of $V_s = 12\\text{ V}$. The duty cycle $k = 0.25$, and the switching frequency is $25\\text{ kHz}$. The inductance $L = 150\\text{ }\\mu\\text{H}$ and filter capacitance $C = 220\\text{ }\\mu\\text{F}$. The average load current $I_a = 1.25\\text{ A}$. Determine\n\na) The average output voltage, $V_a$\n\nb) The peak-to-peak output voltage ripple, $\\Delta V_c$\n\nc) The peak-to-peak ripple current of the inductor, $\\Delta I$\n\nd) The peak current of the transistor, $I_p$",
+          "marks": "8",
+          "chapter": "Switched Mode Power Supplies and Drives",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What is a Current Mirror? Derive $a^n$ expression for current gain of Widlar current source with necessary figures.",
+          "marks": "2",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "How can we reduce the effect of input bias current on output voltage in an op-amp circuit?",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What are the applications of isolation amplifiers? Find the output voltage of an instrumentation amplifier consisting of three op-amps.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Chaitra",
+      "year": "2079",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 84,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define slew rate. The op-amp has a closed-loop gain of 33 and a slew rate of $0.5\\text{ V/}\\mu\\text{s}$. The input signal is a complex waveform containing.\n$V1 = 0.01 \\sin(106\\ t)$\n$V2 = 0.05 \\sin(350 \\times 10^3\\ t)$\nDetermine whether the output is distorted or not due to slew rate limitation. If so, suggest a remedy.",
+          "marks": "4",
+          "chapter": "Operational Amplifier Characterization",
+          "isDiagram": true
+        },
+        {
+          "qNum": 2,
+          "text": "What is input bias current in operational amplifier? What is its effect on the output of an op-amp? How can you minimize the effect of input bias current?",
+          "marks": "4",
+          "chapter": "Operational Amplifier Characterization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Define the common mode rejection ratio of an operational amplifier with the relevant expressions. Show that the gain bandwidth product of an operational amplifier is constant.",
+          "marks": "3",
+          "chapter": "Operational Amplifier Characterization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Explain the working of counter type ADC. Mention minimum and maximum conversion time of n bit counter type ADC.",
+          "marks": "6",
+          "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Discuss why R-2R ladder DAC is preferred to binary-weighted resistor DAC while implementing them as integrated circuits. Explain the working principle of a sigma-delta ADC.",
+          "marks": "2",
+          "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "List the desired characteristics of an instrumentation amplifier. Explain the working of an optically coupled isolation amplifier.",
+          "marks": "2",
+          "chapter": "Instrumentation and Isolation Amplifiers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What are the advantages of transistor logarithmic amplifier then using diode? Derive output voltage expression of logarithmic amplifier using matched transistor.",
+          "marks": "6",
+          "chapter": "Operational Amplifier-Bipolar Transistor Logarithmic Amplifier",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Implement following expression using log and antilog amplifier.\n$V_o = V_1^2 - 2V_1V_2 + V_2^2$",
+          "marks": "8",
+          "chapter": "Log-Antilog Circuit Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "A converter is feeding an RL load with $V_s = 220\\text{ V}$, $R = 5$, $L = 7.5\\text{ mH}$, $f = 1\\text{ kHz}$, $k = 0.5$, and $E = 0\\text{V}$. Calculate (i) the minimum instantaneous load current (ii) the peak instantaneous load current, (iii) the maximum peak-to-peak load ripple current, (iv) the average value of load current $I_a$, (v) the rms load current $I_o$",
+          "marks": "5",
+          "chapter": "Power Electronics",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What is purpose of firing circuits for SCR? Explain working of two types of firing circuits and compare them.",
+          "marks": "1",
+          "chapter": "Power Electronics",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What is the difference between linear mode and switch mode power supply? Explain the working of Buck Regulator with necessary diagrams.",
+          "marks": "6",
+          "chapter": "Switched Mode Power Supplies and Drives",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Show that a differential amplifier with an active load has double the voltage gain compared to a passive load.",
+          "marks": "7",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "How can we reduce the effect of input bias current on output voltage in an op-amp circuit?",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Derive output voltage expression of logarithmic amplifier using matched transistor.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "Determine the maximum amplitude of an input sinusoidal wave with signal frequency $5\\text{kHz}$, if it is to be amplified by an op-amp circuit having the voltage gain of $50$ and slew rate is equal to $0.4\\text{ V/}\\mu\\text{s}$, without distortion at the output.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "What are the method of reducing effect of input bias current in $a^n$ op-amp?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "Derive output voltage expression of logarithmic amplifier using matched transistor.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Chaitra",
+      "year": "2078",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 66,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define slew rate. The op-amp has a closed-loop gain of 33 and a slew rate of $0.5\\text{ V/}\\mu\\text{s}$. The input signal is a complex waveform containing.\n$V1 = 0.01 \\sin(106\\ t)$\n$V2 = 0.05 \\sin(350 \\times 10^3\\ t)$\nDetermine whether the output is distorted or not due to slew rate limitation. If so, suggest a remedy.",
+          "marks": "4",
+          "chapter": "Operational Amplifier Characterization",
+          "isDiagram": true
+        },
+        {
+          "qNum": 2,
+          "text": "What is input bias current in operational amplifier? What is its effect on the output of an op-amp? How can you minimize the effect of input bias current?",
+          "marks": "4",
+          "chapter": "Operational Amplifier Characterization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive output voltage expression of inverted R-2R ladder DAC.",
+          "marks": "7",
+          "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Compare different type of Analog to Digital converter. In an 8-bit dual slope A/D converter. $R_1 = 20\\text{k}\\Omega$ and $C = 0.001\\mu\\text{F}$. An analog input of value $-0.25\\text{V}$ is integrated for $T1 = 160\\mu\\text{s}$.\n\na) What is the maximum voltage reached in the integration?\n\nb) If the integrator is switched to $+5\\text{V}$, how long does it take to reach $0\\text{V}$.\n\nc) If the counter is clocked at $3.125\\text{MHz}$, what is the digital output after the conversion?",
+          "marks": "2",
+          "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Why log-antilog amplifiers are essential? Derive the expression for output of a four quadrant multiplier circuit.",
+          "marks": "1",
+          "chapter": "Log-Antilog Circuit Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain RMS detector using log and antilog amplifier.",
+          "marks": "3",
+          "chapter": "Log-Antilog Circuit Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "A half wave rectifier circuit employing as SCR is adjusted to have a gate current of 1 mA. The forward breakdown voltage of SCR is 50V for Ig: 1mA. If sinusoidal voltage of 100V peak is applied. Find\n\na) Firing angle\n\nb) Conduction angle\n\nc) Average output voltage,\n\nd) In the circuit if holding current is 80 mA and load resistance is $100\\Omega$ find average voltage in this case.",
+          "marks": "1",
+          "chapter": "Power Electronics",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "How can you classify choppers? Explain the principle of step-down chopper with RL load",
+          "marks": "2",
+          "chapter": "Power Electronics",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "The buck-boost regulator has an input voltage of $V_s = 12\\text{ V}$. The duty cycle $k = 0.25$, and the switching frequency is $25\\text{ kHz}$. The inductance $L = 150\\text{ }\\mu\\text{H}$ and filter capacitance $C = 220\\text{ }\\mu\\text{F}$. The average load current $I_a = 1.25\\text{ A}$. Determine\n\na) The average output voltage, $V_a$\n\nb) The peak-to-peak output voltage ripple, $\\Delta V_c$\n\nc) The peak-to-peak ripple current of the inductor, $\\Delta I$\n\nd) The peak current of the transistor, $I_p$",
+          "marks": "8",
+          "chapter": "Switched Mode Power Supplies and Drives",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Why output current of simple current mirror circuit is not exactly equal to reference current? Derive the output resistance of widlar current source.",
+          "marks": "2",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "How can we reduce the effect of input bias current on output voltage in an op-amp circuit?",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Write short notes on: Application of Log and Antilog Amplifier",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Why the output current of the simple current mirror circuit not equal to reference current? Derive an expression for an current gain of widlar current source.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "What is slew rate? The operational amplifier has a slew rate of $0.5\\text{V}/\\mu\\text{s}$ and closed loop gain -33. Determine whether the output will be distorted due to the slew rate limitation when input is $V_{in} = 0.071\\text{V rms}$ at $32\\text{ kHz}$. If distortion occurs, find remedies other than changing the input signal.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "How can we reduce the effect of input bias current on output voltage in an op-amp circuit?",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "The buck-boost regulator has an input voltage of 12 V. The duty cycle (K) is 0.25 and the switching frequency is 25 kHz. The inductance is 15 $\\mu$H and filter capacitance is 220$\\mu$F. The average load current is 1.25 A. Determine\n\na) The average output voltage (Va)\n\nb) The peak-to-peak output ripple voltage ($\\Delta Vc$)\n\nc) The peak-to-peak ripple current of inductor ($\\Delta I$)\n\nd) The peak current of the transistor (Ip)\n\ne) The critical values of L and C",
+          "marks": "10",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2077 Chaitra",
+      "year": "2077",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 102,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define slew rate. The op-amp has a closed-loop gain of 33 and a slew rate of $0.5\\text{ V/}\\mu\\text{s}$. The input signal is a complex waveform containing.\n$V1 = 0.01 \\sin(106\\ t)$\n$V2 = 0.05 \\sin(350 \\times 10^3\\ t)$\nDetermine whether the output is distorted or not due to slew rate limitation. If so, suggest a remedy.",
+          "marks": "4",
+          "chapter": "Operational Amplifier Characterization",
+          "isDiagram": true
+        },
+        {
+          "qNum": 2,
+          "text": "Define the common mode rejection ratio of an operational amplifier with the relevant expressions. Show that the gain bandwidth product of an operational amplifier is constant.",
+          "marks": "3",
+          "chapter": "Operational Amplifier Characterization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive the expression for output voltage of R-2R ladder DAC (voltage mode). List out demerits of Binary weighted resistor DAC.",
+          "marks": "2",
+          "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "For a 5-bit DAC with the reference voltage $V_r$ being 10V, if there is the fluctuation in the reference voltage of about 10% what will be the deviation in the output for MSB and LSB due to this fluctuation?",
+          "marks": "8",
+          "chapter": "Digital-to-Analog and Analog-to-Digital Conversion",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "List the desired characteristics of an instrumentation amplifier. Explain the working of an optically coupled isolation amplifier.",
+          "marks": "2",
+          "chapter": "Instrumentation and Isolation Amplifiers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What are the advantages of transistor logarithmic amplifier then using diode? Derive output voltage expression of logarithmic amplifier using matched transistor.",
+          "marks": "6",
+          "chapter": "Operational Amplifier-Bipolar Transistor Logarithmic Amplifier",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Why log-antilog amplifiers are essential? Derive the expression for output of a four quadrant multiplier circuit.",
+          "marks": "1",
+          "chapter": "Log-Antilog Circuit Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Draw the detailed circuit diagram for four quadrant multiplier and derive its input and output relationship.",
+          "marks": "7",
+          "chapter": "Log-Antilog Circuit Application",
+          "isDiagram": true
+        },
+        {
+          "qNum": 9,
+          "text": "Explain working principle of SCR with its characteristics curve. Discuss turning ON process of SCR.",
+          "marks": "4",
+          "chapter": "Power Electronics",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "The buck-boost regulator has an input voltage of $V_s = 12\\text{ V}$. The duty cycle $k = 0.25$, and the switching frequency is $25\\text{ kHz}$. The inductance $L = 150\\text{ }\\mu\\text{H}$ and filter capacitance $C = 220\\text{ }\\mu\\text{F}$. The average load current $I_a = 1.25\\text{ A}$. Determine\n\na) The average output voltage, $V_a$\n\nb) The peak-to-peak output voltage ripple, $\\Delta V_c$\n\nc) The peak-to-peak ripple current of the inductor, $\\Delta I$\n\nd) The peak current of the transistor, $I_p$",
+          "marks": "8",
+          "chapter": "Switched Mode Power Supplies and Drives",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Show that a differential amplifier with an active load has double the voltage gain compared to a passive load.",
+          "marks": "7",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Derive output voltage expression of logarithmic amplifier using matched transistor.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Write short notes on: Application of Log and Antilog Amplifier",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Show that a differential amplifier with an active load has double the voltage gain compared to a passive load.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "The inverting op-amp configuration has a feedback resistance of $470k\\Omega$ and input resistance of $10 k\\Omega$. If the input signal is $0.1\\sin(200000t)$, determine whether the output will be distorted due to slew rate limitation of op-amp. If so, find a remedy. The op-amp has a slew rate of $0.5V/\\mu s$.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "Define common mode rejection ratio of Op-Amp with mathematical expressions. Prove that the gain bandwidth product of Op-Amp is constant.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "List the desired characteristics of an instrumentation amplifier. Explain the working of an optically coupled isolation amplifier.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 18,
+          "text": "Derive output voltage expression of logarithmic amplifier using matched transistor.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 19,
+          "text": "Write short notes on: Application of Log and Antilog Amplifier",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    }
   ]
 }

@@ -189,6 +189,43 @@ export default async function IoeSubjectPage({ params }: PageProps) {
         </p>
       </header>
 
+      {/* ── Same-Semester Subjects Quick Switcher ── */}
+      {program.semesters[semester] && program.semesters[semester].length > 1 && (
+        <section className="rounded-2xl border border-slate-200/80 bg-slate-50/70 p-4 dark:border-gray-800/80 dark:bg-gray-900/60">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
+            <span className="text-xs font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
+              {semShort} Subjects ({program.semesters[semester].length})
+            </span>
+            <Link
+              href={`/ioe/${program.slug}/semester/${semester}`}
+              className="text-xs font-semibold text-blue-600 hover:underline dark:text-blue-400"
+            >
+              View Full Semester Overview &rarr;
+            </Link>
+          </div>
+          <div className="mt-3 flex flex-wrap gap-2">
+            {program.semesters[semester].map((sub) => {
+              const subSlug = getSubjectSlugFromName(sub.title);
+              const isActive = subSlug === subjectSlug;
+              return (
+                <Link
+                  key={sub.code}
+                  href={`/ioe/${program.slug}/semester/${semester}/${subSlug}`}
+                  className={`inline-flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-xs font-medium transition-all ${
+                    isActive
+                      ? "bg-blue-600 font-bold text-white shadow-xs shadow-blue-500/25 dark:bg-blue-500"
+                      : "border border-slate-200/90 bg-white text-slate-700 hover:border-blue-300 hover:bg-blue-50/50 hover:text-blue-600 dark:border-gray-700/80 dark:bg-gray-800 dark:text-slate-300 dark:hover:border-blue-500/60 dark:hover:bg-gray-700"
+                  }`}
+                >
+                  <span className="opacity-70 font-mono text-[10px]">{sub.code}</span>
+                  <span>{sub.title}</span>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+      )}
+
       {/* ── Embedded PDF Viewer ── */}
       <section id="pdf-viewer" className="space-y-3">
         <div className="flex items-center justify-between">

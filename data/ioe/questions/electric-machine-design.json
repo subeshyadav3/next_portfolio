@@ -1,613 +1,1723 @@
 {
   "subject": "Electric Machine Design",
-  "chapters": [
-    "Principles and Limitations of Electrical Machine Design",
-    "Magnetic Circuit Calculations and Thermal Limits",
-    "Design of Single-Phase and Three-Phase Transformers",
-    "Design of Direct Current Machines",
-    "Design of Three-Phase Induction Motors",
-    "Design of Synchronous Machines"
-  ],
+  "semester": "1",
   "questions": [
     {
       "id": "electric-machine-design-1",
-      "chapter": "Principles and Limitations of Electrical Machine Design",
-      "text": "Discuss the major principles, design constraints, and modern limitations in electrical machine design with focus on magnetic, electric, and thermal loadings.",
-      "question": "Discuss the major principles, design constraints, and modern limitations in electrical machine design with focus on magnetic, electric, and thermal loadings.",
-      "marks": "6",
+      "question": "a) Explain the factors to be considered while selecting the number of poles in a DC machine. [8]\n\nb) Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+      "text": "a) Explain the factors to be considered while selecting the number of poles in a DC machine. [8]\n\nb) Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+      "chapter": "DC Machine Design",
+      "marks": "8",
+      "frequency": 10,
       "years": [
-        "2083 Baishakh",
+        "2082 Bhadra",
         "2081 Bhadra",
-        "2079 Chaitra"
+        "2079 Bhadra",
+        "2078 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra"
       ],
       "examSessions": [
-        "2083 Baishakh",
+        "2082 Bhadra",
         "2081 Bhadra",
-        "2079 Chaitra"
+        "2079 Bhadra",
+        "2078 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-2",
-      "chapter": "Principles and Limitations of Electrical Machine Design",
-      "text": "Explain specific magnetic loading ($B_{av}$) and specific electric loading ($q$). Discuss factors influencing their choice in modern machine design.",
-      "question": "Explain specific magnetic loading ($B_{av}$) and specific electric loading ($q$). Discuss factors influencing their choice in modern machine design.",
+      "question": "Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+      "text": "Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+      "chapter": "DC Machine Design",
       "marks": "8",
+      "frequency": 10,
       "years": [
         "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
+        "2081 Bhadra",
+        "2079 Bhadra",
+        "2078 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra"
       ],
       "examSessions": [
         "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
+        "2081 Bhadra",
+        "2079 Bhadra",
+        "2078 Bhadra",
+        "2076 Chaitra",
+        "2075 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-3",
-      "chapter": "Principles and Limitations of Electrical Machine Design",
-      "text": "Derive the output equation of an AC machine in terms of specific magnetic and electric loadings: $Q = C_0 D^2 L n_s$.",
-      "question": "Derive the output equation of an AC machine in terms of specific magnetic and electric loadings: $Q = C_0 D^2 L n_s$.",
+      "question": "Explain the factors to be considered while selecting the number of poles in a DC machine.",
+      "text": "Explain the factors to be considered while selecting the number of poles in a DC machine.",
+      "chapter": "DC Machine Design",
       "marks": "8",
+      "frequency": 8,
       "years": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2082 Bhadra",
+        "2081 Bhadra",
+        "2079 Bhadra",
+        "2076 Chaitra"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2082 Bhadra",
+        "2081 Bhadra",
+        "2079 Bhadra",
+        "2076 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-4",
-      "chapter": "Principles and Limitations of Electrical Machine Design",
-      "text": "Differentiate between Class A, B, F, and H insulating materials with their maximum permissible temperature limits according to IEC standards.",
-      "question": "Differentiate between Class A, B, F, and H insulating materials with their maximum permissible temperature limits according to IEC standards.",
-      "marks": "6",
+      "question": "a) What are the factors that must be considered while selecting the length of air gap of induction motor? [8]\n\nb) Determine the main dimensions, turns per phase, number of slots, conductor size and slot area of 200 kw, 3$\\phi$, 400 V, 50 Hz, 1420 rpm slip ring induction motor. Assume $B_{av} = 0.5 \\text{ Wb/m}^2$, $ac = 30000 \\text{ ampere conductors per meter}$, efficiency $= 0.9$, p.f $= 0.9$, current density $= 3.5 \\text{ A/mm}^2$. The slot space factor is 0.4 and the ratio of core length to pole pitch is 1.2. The machine is star connected.",
+      "text": "a) What are the factors that must be considered while selecting the length of air gap of induction motor? [8]\n\nb) Determine the main dimensions, turns per phase, number of slots, conductor size and slot area of 200 kw, 3$\\phi$, 400 V, 50 Hz, 1420 rpm slip ring induction motor. Assume $B_{av} = 0.5 \\text{ Wb/m}^2$, $ac = 30000 \\text{ ampere conductors per meter}$, efficiency $= 0.9$, p.f $= 0.9$, current density $= 3.5 \\text{ A/mm}^2$. The slot space factor is 0.4 and the ratio of core length to pole pitch is 1.2. The machine is star connected.",
+      "chapter": "Three Phase Induction Motor Design",
+      "marks": "8",
+      "frequency": 6,
       "years": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Chaitra"
+        "2078 Bhadra",
+        "2079 Bhadra",
+        "2074 Chaitra"
       ],
       "examSessions": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Chaitra"
+        "2078 Bhadra",
+        "2079 Bhadra",
+        "2074 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-5",
-      "chapter": "Magnetic Circuit Calculations and Thermal Limits",
-      "text": "Derive expressions for MMF calculation of tapered teeth and air-gap using Carter's coefficient in slotted armatures.",
-      "question": "Derive expressions for MMF calculation of tapered teeth and air-gap using Carter's coefficient in slotted armatures.",
+      "question": "Determine the main dimensions, turns per phase, number of slots, conductor size and slot area of 200 kw, 3$\\phi$, 400 V, 50 Hz, 1420 rpm slip ring induction motor. Assume $B_{av} = 0.5 \\text{ Wb/m}^2$, $ac = 30000 \\text{ ampere conductors per meter}$, efficiency $= 0.9$, p.f $= 0.9$, current density $= 3.5 \\text{ A/mm}^2$. The slot space factor is 0.4 and the ratio of core length to pole pitch is 1.2. The machine is star connected.",
+      "text": "Determine the main dimensions, turns per phase, number of slots, conductor size and slot area of 200 kw, 3$\\phi$, 400 V, 50 Hz, 1420 rpm slip ring induction motor. Assume $B_{av} = 0.5 \\text{ Wb/m}^2$, $ac = 30000 \\text{ ampere conductors per meter}$, efficiency $= 0.9$, p.f $= 0.9$, current density $= 3.5 \\text{ A/mm}^2$. The slot space factor is 0.4 and the ratio of core length to pole pitch is 1.2. The machine is star connected.",
+      "chapter": "DC Machine Design",
       "marks": "8",
+      "frequency": 6,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2078 Chaitra"
+        "2078 Bhadra",
+        "2079 Bhadra",
+        "2074 Chaitra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2078 Chaitra"
+        "2078 Bhadra",
+        "2079 Bhadra",
+        "2074 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-6",
-      "chapter": "Magnetic Circuit Calculations and Thermal Limits",
-      "text": "Explain the heating and cooling curves of electrical machines. Derive expressions for steady-state temperature rise and thermal time constant $\\tau$.",
-      "question": "Explain the heating and cooling curves of electrical machines. Derive expressions for steady-state temperature rise and thermal time constant $\\tau$.",
+      "question": "a) Write about the factors to be considered while estimating the length of air gap in induction machines. [6]\n\nb) A $15\\text{ kW}$, $440\\text{ V}$, $50\\text{ Hz}$, $1480\\text{ rpm}$, $3$-phase induction motor is built with an inner diameter of stator $25\\text{ cm}$ and length $16\\text{ cm}$. The specific loading is $23000\\text{ ampere-conductors per meter}$. Estimate the following parameter for a $11\\text{ kW}$, $460\\text{ V}$, $6\\text{ pole}$, $50\\text{ Hz}$ delta connected induction motor, assuming same specific loadings as the previous motor with $84\\%$ efficiency and power factor $85\\%$ for each machine. Assume, current density $4\\text{ A/mm}^2$, stator slot pitch is $15$ to $25\\text{ mm}$, ratio of slot depth to width is $3$ and flux density in stator core is $1.2\\text{ Wb/m}^2$.\nCalculate:\n\n(i) Main dimension\n(ii) No of stator slot\n(iii) No of stator conductor and area of stator slot\n(iv) Dimension of each stator slot\n\n(v) Minimum width of stator teeth",
+      "text": "a) Write about the factors to be considered while estimating the length of air gap in induction machines. [6]\n\nb) A $15\\text{ kW}$, $440\\text{ V}$, $50\\text{ Hz}$, $1480\\text{ rpm}$, $3$-phase induction motor is built with an inner diameter of stator $25\\text{ cm}$ and length $16\\text{ cm}$. The specific loading is $23000\\text{ ampere-conductors per meter}$. Estimate the following parameter for a $11\\text{ kW}$, $460\\text{ V}$, $6\\text{ pole}$, $50\\text{ Hz}$ delta connected induction motor, assuming same specific loadings as the previous motor with $84\\%$ efficiency and power factor $85\\%$ for each machine. Assume, current density $4\\text{ A/mm}^2$, stator slot pitch is $15$ to $25\\text{ mm}$, ratio of slot depth to width is $3$ and flux density in stator core is $1.2\\text{ Wb/m}^2$.\nCalculate:\n\n(i) Main dimension\n(ii) No of stator slot\n(iii) No of stator conductor and area of stator slot\n(iv) Dimension of each stator slot\n\n(v) Minimum width of stator teeth",
+      "chapter": "Three Phase Induction Motor Design",
       "marks": "8",
+      "frequency": 5,
       "years": [
         "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2082 Chaitra",
+        "2081 Bhadra",
+        "2080 Bhadra"
       ],
       "examSessions": [
         "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2082 Chaitra",
+        "2081 Bhadra",
+        "2080 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-7",
-      "chapter": "Magnetic Circuit Calculations and Thermal Limits",
-      "text": "Explain methods of cooling large turbo-generators and transformers. Compare air, hydrogen, and direct water cooling systems.",
-      "question": "Explain methods of cooling large turbo-generators and transformers. Compare air, hydrogen, and direct water cooling systems.",
-      "marks": "6",
+      "question": "a) What are the fundamental requirements of high conducting material? Classify and explain the electrical conducting material in brief. [6]\n\nb) What are the fundamental requirements of a good insulating materials? List out the merits and demerits of addition of silicon with iron with suitable diagram.",
+      "text": "a) What are the fundamental requirements of high conducting material? Classify and explain the electrical conducting material in brief. [6]\n\nb) What are the fundamental requirements of a good insulating materials? List out the merits and demerits of addition of silicon with iron with suitable diagram.",
+      "chapter": "Materials Used in Electrical Equipment",
+      "marks": "4",
+      "frequency": 4,
       "years": [
-        "2082 Chaitra",
-        "2079 Baishakh",
-        "2075 Bhadra"
+        "2081 Bhadra"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2079 Baishakh",
-        "2075 Bhadra"
+        "2081 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-8",
-      "chapter": "Magnetic Circuit Calculations and Thermal Limits",
-      "text": "Calculate real and apparent flux densities in slotted armature teeth when operating at high saturation levels.",
-      "question": "Calculate real and apparent flux densities in slotted armature teeth when operating at high saturation levels.",
-      "marks": "8",
+      "question": "a) What are the fundamental requirements of a good insulating material? Explain the application of insulating materials in machines in brief. [5]\n\nb) What is ageing of core of electrical machine? What are the advantages and disadvantages of adding silicon with iron?",
+      "text": "a) What are the fundamental requirements of a good insulating material? Explain the application of insulating materials in machines in brief. [5]\n\nb) What is ageing of core of electrical machine? What are the advantages and disadvantages of adding silicon with iron?",
+      "chapter": "Materials Used in Electrical Equipment",
+      "marks": "4",
+      "frequency": 4,
       "years": [
-        "2081 Baishakh",
-        "2078 Bhadra",
-        "2076 Baishakh"
+        "2079 Bhadra",
+        "2082 Chaitra",
+        "2078 Bhadra"
       ],
       "examSessions": [
-        "2081 Baishakh",
-        "2078 Bhadra",
-        "2076 Baishakh"
+        "2079 Bhadra",
+        "2082 Chaitra",
+        "2078 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-9",
-      "chapter": "Design of Single-Phase and Three-Phase Transformers",
-      "text": "Derive the output equation of single-phase and three-phase core-type power transformers: $Q = 2.22 f B_m A_i A_w K_w J \\times 10^{-3}$ kVA.",
-      "question": "Derive the output equation of single-phase and three-phase core-type power transformers: $Q = 2.22 f B_m A_i A_w K_w J \\times 10^{-3}$ kVA.",
+      "question": "Give the advantages of cold rolled grain oriented steel laminations over hot rolledsteel laminations in transformer.",
+      "text": "Give the advantages of cold rolled grain oriented steel laminations over hot rolledsteel laminations in transformer.",
+      "chapter": "DC Machine Design",
       "marks": "8",
+      "frequency": 4,
       "years": [
-        "2083 Baishakh",
-        "2080 Chaitra",
-        "2078 Bhadra"
+        "2082 Bhadra",
+        "2080 Bhadra",
+        "2074 Chaitra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2080 Chaitra",
-        "2078 Bhadra"
+        "2082 Bhadra",
+        "2080 Bhadra",
+        "2074 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-10",
-      "chapter": "Design of Single-Phase and Three-Phase Transformers",
-      "text": "Explain the step-by-step procedure for designing core, window dimensions, and yoke for a 3-phase, 11 kV/400 V distribution transformer.",
-      "question": "Explain the step-by-step procedure for designing core, window dimensions, and yoke for a 3-phase, 11 kV/400 V distribution transformer.",
+      "question": "What are the fundamentals requirements of a good insulating material, electrical properties of insulating materials?",
+      "text": "What are the fundamentals requirements of a good insulating material, electrical properties of insulating materials?",
+      "chapter": "DC Machine Design",
       "marks": "8",
+      "frequency": 4,
       "years": [
         "2082 Bhadra",
-        "2081 Baishakh",
-        "2077 Magh"
+        "2081 Bhadra",
+        "2079 Bhadra"
       ],
       "examSessions": [
         "2082 Bhadra",
-        "2081 Baishakh",
-        "2077 Magh"
+        "2081 Bhadra",
+        "2079 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-11",
-      "chapter": "Design of Single-Phase and Three-Phase Transformers",
-      "text": "Prove that for minimum total active material cost in a transformer, cost of iron should equal cost of copper times a factor depending on unit material prices.",
-      "question": "Prove that for minimum total active material cost in a transformer, cost of iron should equal cost of copper times a factor depending on unit material prices.",
+      "question": "What are the advantages and disadvantages of adding silicon with iron?",
+      "text": "What are the advantages and disadvantages of adding silicon with iron?",
+      "chapter": "DC Machine Design",
       "marks": "8",
+      "frequency": 4,
       "years": [
+        "2079 Bhadra",
         "2082 Chaitra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2078 Bhadra"
       ],
       "examSessions": [
+        "2079 Bhadra",
         "2082 Chaitra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2078 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-12",
-      "chapter": "Design of Single-Phase and Three-Phase Transformers",
-      "text": "Design the low-voltage (LV) and high-voltage (HV) helical or disc windings of a 500 kVA transformer, calculating conductor size, turns, and insulation thickness.",
-      "question": "Design the low-voltage (LV) and high-voltage (HV) helical or disc windings of a 500 kVA transformer, calculating conductor size, turns, and insulation thickness.",
+      "question": "What are the fundamental requirements of high conducting material?",
+      "text": "What are the fundamental requirements of high conducting material?",
+      "chapter": "DC Machine Design",
       "marks": "8",
+      "frequency": 4,
       "years": [
-        "2081 Bhadra",
-        "2078 Chaitra",
-        "2075 Chaitra"
+        "2081 Bhadra"
       ],
       "examSessions": [
-        "2081 Bhadra",
-        "2078 Chaitra",
-        "2075 Chaitra"
+        "2081 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-13",
-      "chapter": "Design of Single-Phase and Three-Phase Transformers",
-      "text": "Derive the expression for leakage reactance in concentric cylindrical transformer windings in terms of geometric dimensions and turns.",
-      "question": "Derive the expression for leakage reactance in concentric cylindrical transformer windings in terms of geometric dimensions and turns.",
+      "question": "Classify and explain the electrical conducting material in brief.",
+      "text": "Classify and explain the electrical conducting material in brief.",
+      "chapter": "DC Machine Design",
       "marks": "8",
+      "frequency": 4,
       "years": [
-        "2083 Baishakh",
-        "2080 Baishakh",
-        "2077 Chaitra"
+        "2081 Bhadra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2080 Baishakh",
-        "2077 Chaitra"
+        "2081 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-14",
-      "chapter": "Design of Single-Phase and Three-Phase Transformers",
-      "text": "Design cooling tubes and calculate the number of radiator tubes required for a 1000 kVA oil-immersed distribution transformer to keep temperature rise within 45°C.",
-      "question": "Design cooling tubes and calculate the number of radiator tubes required for a 1000 kVA oil-immersed distribution transformer to keep temperature rise within 45°C.",
-      "marks": "8",
+      "question": "a) Explain, various factors should be consider while selecting the value of specific electrical and magnetic loading in dc machine. [8]\n\nb) A design is required for a $30\\text{ kW}$, $4$ pole, $900\\text{ rpm}$ dc shunt generator, the full load terminal voltage being $220\\text{ V}$. Assume that the full load armature voltage is $3\\%$ of the terminal voltage. Calculate the main dimensions of the machine if the maximum gap density is $0.85\\text{ wb/m}^2$, specific electrical loading of $20,000$ ampere conductor/meter and field resistance is $120\\Omega$. The ratio of pole arc to pole pitch is $0.7$.",
+      "text": "a) Explain, various factors should be consider while selecting the value of specific electrical and magnetic loading in dc machine. [8]\n\nb) A design is required for a $30\\text{ kW}$, $4$ pole, $900\\text{ rpm}$ dc shunt generator, the full load terminal voltage being $220\\text{ V}$. Assume that the full load armature voltage is $3\\%$ of the terminal voltage. Calculate the main dimensions of the machine if the maximum gap density is $0.85\\text{ wb/m}^2$, specific electrical loading of $20,000$ ampere conductor/meter and field resistance is $120\\Omega$. The ratio of pole arc to pole pitch is $0.7$.",
+      "chapter": "DC Machine Design",
+      "marks": "5",
+      "frequency": 3,
       "years": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Baishakh"
+        "2080 Bhadra",
+        "2082 Chaitra"
       ],
       "examSessions": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Baishakh"
+        "2080 Bhadra",
+        "2082 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-15",
-      "chapter": "Design of Direct Current Machines",
-      "text": "Derive the output equation of a DC machine: $P = C_0 D^2 L n$, where $C_0 = \\pi^2 B_{av} q \\times 10^{-3}$.",
-      "question": "Derive the output equation of a DC machine: $P = C_0 D^2 L n$, where $C_0 = \\pi^2 B_{av} q \\times 10^{-3}$.",
+      "question": "Differentiate between soft magnetic materials and hard magnetic materials in brief with necessary diagrams.",
+      "text": "Differentiate between soft magnetic materials and hard magnetic materials in brief with necessary diagrams.",
+      "chapter": "DC Machine Design",
       "marks": "8",
+      "frequency": 3,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra"
+        "2082 Chaitra",
+        "2075 Chaitra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra"
+        "2082 Chaitra",
+        "2075 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-16",
-      "chapter": "Design of Direct Current Machines",
-      "text": "Discuss guidelines for selecting number of poles, armature core diameter $D$, and core length $L$ in DC machine design.",
-      "question": "Discuss guidelines for selecting number of poles, armature core diameter $D$, and core length $L$ in DC machine design.",
-      "marks": "6",
+      "question": "What are the disadvantages of higher specific electric and magnetic loading in design of DC machine?",
+      "text": "What are the disadvantages of higher specific electric and magnetic loading in design of DC machine?",
+      "chapter": "DC Machine Design",
+      "marks": "8",
+      "frequency": 3,
       "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
+        "2078 Bhadra",
+        "2075 Chaitra"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
+        "2078 Bhadra",
+        "2075 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-17",
-      "chapter": "Design of Direct Current Machines",
-      "text": "Design a lap or wave armature winding for a 4-pole DC generator with 28 slots. Draw the developed winding diagram and equalizer ring connections.",
-      "question": "Design a lap or wave armature winding for a 4-pole DC generator with 28 slots. Draw the developed winding diagram and equalizer ring connections.",
+      "question": "List out the merits and demerits of addition of silicon with iron with suitable diagram.",
+      "text": "List out the merits and demerits of addition of silicon with iron with suitable diagram.",
+      "chapter": "DC Machine Design",
       "marks": "8",
+      "frequency": 3,
       "years": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2081 Bhadra"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2081 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-18",
-      "chapter": "Design of Direct Current Machines",
-      "text": "Calculate commutator diameter, length, and number of segments for a 50 kW, 230 V, 1000 rpm DC motor ensuring sparkless commutation.",
-      "question": "Calculate commutator diameter, length, and number of segments for a 50 kW, 230 V, 1000 rpm DC motor ensuring sparkless commutation.",
+      "question": "Derive the expressions for output equation of three phase induction machine.",
+      "text": "Derive the expressions for output equation of three phase induction machine.",
+      "chapter": "DC Machine Design",
       "marks": "8",
+      "frequency": 3,
       "years": [
-        "2081 Chaitra",
-        "2078 Chaitra",
-        "2076 Chaitra"
+        "2074 Chaitra"
       ],
       "examSessions": [
-        "2081 Chaitra",
-        "2078 Chaitra",
-        "2076 Chaitra"
+        "2074 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-19",
-      "chapter": "Design of Direct Current Machines",
-      "text": "Design the shunt field winding of a DC shunt motor, including calculation of turns per pole, conductor size, and field resistance.",
-      "question": "Design the shunt field winding of a DC shunt motor, including calculation of turns per pole, conductor size, and field resistance.",
+      "question": "Classify them based on their thermal stability and materials used.",
+      "text": "Classify them based on their thermal stability and materials used.",
+      "chapter": "DC Machine Design",
       "marks": "8",
+      "frequency": 3,
       "years": [
-        "2081 Baishakh",
-        "2079 Baishakh",
-        "2075 Bhadra"
+        "2080 Bhadra",
+        "2078 Bhadra"
       ],
       "examSessions": [
-        "2081 Baishakh",
-        "2079 Baishakh",
-        "2075 Bhadra"
+        "2080 Bhadra",
+        "2078 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-20",
-      "chapter": "Design of Three-Phase Induction Motors",
-      "text": "Derive the main dimensions ($D$ and $L$) of a 3-phase, 415 V, 50 Hz, 4-pole squirrel-cage induction motor for a given rating using empirical relationships.",
-      "question": "Derive the main dimensions ($D$ and $L$) of a 3-phase, 415 V, 50 Hz, 4-pole squirrel-cage induction motor for a given rating using empirical relationships.",
-      "marks": "8",
+      "question": "a) What are the factors affecting the choice of number of poles in DC machine? [4]\n\nb) Derive the output equation for the design of dc machine. [4]\n\nc) Determine the main dimensions, number of poles and length of air gap of a $600\\text{kW}$, $500\\text{V}$, $900\\text{rpm}$ generator. Assume average gap density as $0.6\\text{ Wb/m}^2$ and ampere conductors per meter as $35,000\\text{ A/m}$. The ratio of pole arc to pole pitch is $0.75$ and the efficiency is $91\\%$.\nThe following are the design constraints: peripheral speed $\\leq 40\\text{m/s}$, frequency of flux reversal $\\leq 50\\text{Hz}$, current per brush $\\leq 400\\text{A}$, and armature mmf per pole $\\leq 7500\\text{A}$. The mmf required for air gap is $50\\%$ of armature mmf and gap contraction factor is $1.15$.",
+      "text": "a) What are the factors affecting the choice of number of poles in DC machine? [4]\n\nb) Derive the output equation for the design of dc machine. [4]\n\nc) Determine the main dimensions, number of poles and length of air gap of a $600\\text{kW}$, $500\\text{V}$, $900\\text{rpm}$ generator. Assume average gap density as $0.6\\text{ Wb/m}^2$ and ampere conductors per meter as $35,000\\text{ A/m}$. The ratio of pole arc to pole pitch is $0.75$ and the efficiency is $91\\%$.\nThe following are the design constraints: peripheral speed $\\leq 40\\text{m/s}$, frequency of flux reversal $\\leq 50\\text{Hz}$, current per brush $\\leq 400\\text{A}$, and armature mmf per pole $\\leq 7500\\text{A}$. The mmf required for air gap is $50\\%$ of armature mmf and gap contraction factor is $1.15$.",
+      "chapter": "DC Machine Design",
+      "marks": "4",
+      "frequency": 2,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2078 Chaitra"
+        "2075 Ashwin"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2078 Chaitra"
+        "2075 Ashwin"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-21",
-      "chapter": "Design of Three-Phase Induction Motors",
-      "text": "Explain criteria for choosing the air-gap length in 3-phase induction motors. What are the adverse effects of having too small or too large an air-gap?",
-      "question": "Explain criteria for choosing the air-gap length in 3-phase induction motors. What are the adverse effects of having too small or too large an air-gap?",
-      "marks": "6",
+      "question": "a) Explain the temperature gradients in the conductor placed in the slot with necessary figures and expressions. [6]\n\nb) A 20 h.p., 400V, 3-phase, 50 Hz, induction motor has a final steady temperature rise of $40^\\circ\\text{C}$ when running at its rated output. Calculate its one hour rating for the same temperature rise, if the heating time constant is 180 minute. The ratio of conductor losses to constant losses may be assumed as 1.25 and the total losses of the machine at full load are 1800 W.",
+      "text": "a) Explain the temperature gradients in the conductor placed in the slot with necessary figures and expressions. [6]\n\nb) A 20 h.p., 400V, 3-phase, 50 Hz, induction motor has a final steady temperature rise of $40^\\circ\\text{C}$ when running at its rated output. Calculate its one hour rating for the same temperature rise, if the heating time constant is 180 minute. The ratio of conductor losses to constant losses may be assumed as 1.25 and the total losses of the machine at full load are 1800 W.",
+      "chapter": "Heating and Cooling of Machines",
+      "marks": "8",
+      "frequency": 2,
       "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2076 Chaitra"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2076 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-22",
-      "chapter": "Design of Three-Phase Induction Motors",
-      "text": "Design the stator winding, slot dimensions, and coil turns for a 15 kW, 400 V, 50 Hz, 4-pole star-connected induction motor.",
-      "question": "Design the stator winding, slot dimensions, and coil turns for a 15 kW, 400 V, 50 Hz, 4-pole star-connected induction motor.",
-      "marks": "8",
+      "question": "a) Explain the temperature gradient in an iron core with necessary figure and expression. [6]\n\nb) A transformer has a temperature rise of $30^\\circ\\text{C}$ after 2 hrs and $40^\\circ\\text{C}$ after 3 hrs on quarter load. What is the final steady temperature rise at full load? If the transformer is on 30% overload, how long will it take to attain the same temperature rise provided that maximum efficiency occurs at 70% of full load?",
+      "text": "a) Explain the temperature gradient in an iron core with necessary figure and expression. [6]\n\nb) A transformer has a temperature rise of $30^\\circ\\text{C}$ after 2 hrs and $40^\\circ\\text{C}$ after 3 hrs on quarter load. What is the final steady temperature rise at full load? If the transformer is on 30% overload, how long will it take to attain the same temperature rise provided that maximum efficiency occurs at 70% of full load?",
+      "chapter": "Heating and Cooling of Machines",
+      "marks": "6",
+      "frequency": 2,
       "years": [
-        "2082 Chaitra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2078 Bhadra",
+        "2075 Chaitra"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2078 Bhadra",
+        "2075 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-23",
-      "chapter": "Design of Three-Phase Induction Motors",
-      "text": "Design the squirrel-cage rotor (rotor bar area, end-ring dimensions, and slot pitch) to ensure low slip and adequate starting torque.",
-      "question": "Design the squirrel-cage rotor (rotor bar area, end-ring dimensions, and slot pitch) to ensure low slip and adequate starting torque.",
-      "marks": "8",
+      "question": "a) Discuss in brief about insulating material with their classification. What are the fundamentals requirements of a good insulating material, electrical properties of insulating materials? [5]\n\nb) Give the advantages of cold rolled grain oriented steel laminations over hot rolledsteel laminations in transformer.",
+      "text": "a) Discuss in brief about insulating material with their classification. What are the fundamentals requirements of a good insulating material, electrical properties of insulating materials? [5]\n\nb) Give the advantages of cold rolled grain oriented steel laminations over hot rolledsteel laminations in transformer.",
+      "chapter": "Materials Used in Electrical Equipment",
+      "marks": "5",
+      "frequency": 2,
       "years": [
-        "2081 Bhadra",
-        "2078 Bhadra",
-        "2075 Chaitra"
+        "2082 Bhadra"
       ],
       "examSessions": [
-        "2081 Bhadra",
-        "2078 Bhadra",
-        "2075 Chaitra"
+        "2082 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-24",
-      "chapter": "Design of Three-Phase Induction Motors",
-      "text": "Calculate magnetizing current and no-load power factor of a 3-phase induction motor from its magnetic circuit dimensions.",
-      "question": "Calculate magnetizing current and no-load power factor of a 3-phase induction motor from its magnetic circuit dimensions.",
-      "marks": "8",
+      "question": "a) What are the different classes of insulator used in Electric Machine? Classify them based on their thermal stability and materials used. [5]\n\nb) Explain the advantages of cold rolled grain oriented steel laminations over hot rolled steel laminations in transformer.",
+      "text": "a) What are the different classes of insulator used in Electric Machine? Classify them based on their thermal stability and materials used. [5]\n\nb) Explain the advantages of cold rolled grain oriented steel laminations over hot rolled steel laminations in transformer.",
+      "chapter": "Materials Used in Electrical Equipment",
+      "marks": "4",
+      "frequency": 2,
       "years": [
-        "2083 Baishakh",
-        "2080 Baishakh",
-        "2077 Magh"
+        "2080 Bhadra",
+        "2074 Chaitra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2080 Baishakh",
-        "2077 Magh"
+        "2080 Bhadra",
+        "2074 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-25",
-      "chapter": "Design of Three-Phase Induction Motors",
-      "text": "Explain harmonic torques (crawling and cogging) in induction motors and methods to eliminate them through proper choice of stator and rotor slot combinations.",
-      "question": "Explain harmonic torques (crawling and cogging) in induction motors and methods to eliminate them through proper choice of stator and rotor slot combinations.",
-      "marks": "6",
+      "question": "a) Differentiate Soft and Hard magnetic materials on the basis of B-H curve with sufficient examples. [5]\n\nb) Classify the materials of high resistivity on the basis of application. Briefly describe each of them with examples.",
+      "text": "a) Differentiate Soft and Hard magnetic materials on the basis of B-H curve with sufficient examples. [5]\n\nb) Classify the materials of high resistivity on the basis of application. Briefly describe each of them with examples.",
+      "chapter": "Materials Used in Electrical Equipment",
+      "marks": "4",
+      "frequency": 2,
       "years": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Baishakh"
+        "2075 Chaitra"
       ],
       "examSessions": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Baishakh"
+        "2075 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-26",
-      "chapter": "Design of Synchronous Machines",
-      "text": "Derive the output equation of a 3-phase salient-pole synchronous generator and discuss the choice of $D$ and $L$ for hydro-generators vs turbo-generators.",
-      "question": "Derive the output equation of a 3-phase salient-pole synchronous generator and discuss the choice of $D$ and $L$ for hydro-generators vs turbo-generators.",
-      "marks": "8",
+      "question": "a) Derive an output equation for the three phase core type transformer. [6]\n\nb) The design parameter for 150 kVA, 50 Hz, 11000/440 V, 3-phase, delta/star, core type, oil immersed natural cooled distribution transformer are given below.\nConstant for output voltage per turn = 0.45\nMaximum flux density in the core = $1.35 \\text{ Wb/m}^2$\nCurrent density in conductor = $2.5 \\text{ A/mm}^2$\nTake 5% more current density in HV winding\nCore type = three stepped\nWindow space factor = 0.25\nStacking factor = 0.9\nRatio of window height to width = 2.3\nTake hot rolled steel and area of yoke is 20% greater than gross area of core\nWidth of LV winding = 20 mm\nWidth of HV winding = 25 mm\nWidth of duct between HV and LV winding = 15 mm\nMean height of coil = 231.25 mm\nResistivity of copper = $0.021 \\text{ }\\Omega\\text{-mm}^2\\text{/m}$\nHeight of tank = 1150 mm\nWidth of tank = 425 mm\nLength of tank = 1050 mm\nTotal losses = 2850 W\nAssuming all other required parameters, calculate:\n\n(i) Overall dimension of frame.\n(ii) Per unit voltage regulation at 0.85 pf.\n(iii) Calculate the minimum number of tubes of diameter 50 mm with average length of 1.05 m required for maintaining the mean temperature within the permissible limit. The mean temperature of the oil not exceed $35^\\circ\\text{C}$. The rate of heat dissipation from plain wall is 6.5 and $6 \\text{ W/m}^2\\text{-}^\\circ\\text{C}$ for convection and radiation respectively. The provision of tubes improves the rate of heat dissipation by 35%.",
+      "text": "a) Derive an output equation for the three phase core type transformer. [6]\n\nb) The design parameter for 150 kVA, 50 Hz, 11000/440 V, 3-phase, delta/star, core type, oil immersed natural cooled distribution transformer are given below.\nConstant for output voltage per turn = 0.45\nMaximum flux density in the core = $1.35 \\text{ Wb/m}^2$\nCurrent density in conductor = $2.5 \\text{ A/mm}^2$\nTake 5% more current density in HV winding\nCore type = three stepped\nWindow space factor = 0.25\nStacking factor = 0.9\nRatio of window height to width = 2.3\nTake hot rolled steel and area of yoke is 20% greater than gross area of core\nWidth of LV winding = 20 mm\nWidth of HV winding = 25 mm\nWidth of duct between HV and LV winding = 15 mm\nMean height of coil = 231.25 mm\nResistivity of copper = $0.021 \\text{ }\\Omega\\text{-mm}^2\\text{/m}$\nHeight of tank = 1150 mm\nWidth of tank = 425 mm\nLength of tank = 1050 mm\nTotal losses = 2850 W\nAssuming all other required parameters, calculate:\n\n(i) Overall dimension of frame.\n(ii) Per unit voltage regulation at 0.85 pf.\n(iii) Calculate the minimum number of tubes of diameter 50 mm with average length of 1.05 m required for maintaining the mean temperature within the permissible limit. The mean temperature of the oil not exceed $35^\\circ\\text{C}$. The rate of heat dissipation from plain wall is 6.5 and $6 \\text{ W/m}^2\\text{-}^\\circ\\text{C}$ for convection and radiation respectively. The provision of tubes improves the rate of heat dissipation by 35%.",
+      "chapter": "Transformer Design",
+      "marks": "7",
+      "frequency": 1,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra"
+        "2081 Bhadra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra"
+        "2081 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-27",
-      "chapter": "Design of Synchronous Machines",
-      "text": "Define Short Circuit Ratio (SCR) in synchronous machines. Discuss its influence on size, cost, regulation, stability, and parallel operation.",
-      "question": "Define Short Circuit Ratio (SCR) in synchronous machines. Discuss its influence on size, cost, regulation, stability, and parallel operation.",
-      "marks": "8",
+      "question": "a) For the design of a 25 KVA, 50 Hz, 11/0.433 KV, delta/star, 3-phase, core type, oil immersed, naturally cooled distribution transformer. The mean temperature of oil not to exceed $35^\\circ\\text{C}$. The following parameters are choosen: $B_m = 1.0 \\text{ Wb/m}^2$, $\\delta = 2.3 \\text{ A/mm}^2$, constant for volt per turn=0.45, type of core-cruciform $K_w=0.18$, $H_w/W_w =2.5$, total loss at full load = 1.2 kw\nWinding dimensions:<table><thead><tr><th></th><th>Insider diameter (mm)</th><th>Outsider diameter (mm)</th><th>Conductor Area ($\\text{mm}^2$)</th></tr></thead><tbody><tr><td>LV</td><td>138</td><td>156.2</td><td>14.9</td></tr><tr><td>HV</td><td>186.2</td><td>239</td><td>0.312</td></tr></tbody></table>$L_c=253 \\text{ mm}$, $\\rho=0.021 \\text{ }\\Omega\\text{-mm}^2/\\text{m}$\nTake dimension: $H_t=950 \\text{ mm}$, $W_t = 840 \\text{ mm}$, $L_t= 350 \\text{ mm}$\n\ni) Calculate overall dimensions of frame.\nii) Calculate per unit regulation at full load and 0.8 pf (lag).\niii) Calculate the minimum number of tubes of diameter 50mm with average length of 1.35 m required for maintaining the mean temperature within the permissible limit. The rate of heat dissipation from plain wall is 6.5 and 6 for convection and radiation respectively. The provision of tube improves the rate of heat dissipation by 35%. [6+6+4]\n\nb) Derive the output equation of 3-phase transformer. Why are the windings of transformer made in circular form?",
+      "text": "a) For the design of a 25 KVA, 50 Hz, 11/0.433 KV, delta/star, 3-phase, core type, oil immersed, naturally cooled distribution transformer. The mean temperature of oil not to exceed $35^\\circ\\text{C}$. The following parameters are choosen: $B_m = 1.0 \\text{ Wb/m}^2$, $\\delta = 2.3 \\text{ A/mm}^2$, constant for volt per turn=0.45, type of core-cruciform $K_w=0.18$, $H_w/W_w =2.5$, total loss at full load = 1.2 kw\nWinding dimensions:<table><thead><tr><th></th><th>Insider diameter (mm)</th><th>Outsider diameter (mm)</th><th>Conductor Area ($\\text{mm}^2$)</th></tr></thead><tbody><tr><td>LV</td><td>138</td><td>156.2</td><td>14.9</td></tr><tr><td>HV</td><td>186.2</td><td>239</td><td>0.312</td></tr></tbody></table>$L_c=253 \\text{ mm}$, $\\rho=0.021 \\text{ }\\Omega\\text{-mm}^2/\\text{m}$\nTake dimension: $H_t=950 \\text{ mm}$, $W_t = 840 \\text{ mm}$, $L_t= 350 \\text{ mm}$\n\ni) Calculate overall dimensions of frame.\nii) Calculate per unit regulation at full load and 0.8 pf (lag).\niii) Calculate the minimum number of tubes of diameter 50mm with average length of 1.35 m required for maintaining the mean temperature within the permissible limit. The rate of heat dissipation from plain wall is 6.5 and 6 for convection and radiation respectively. The provision of tube improves the rate of heat dissipation by 35%. [6+6+4]\n\nb) Derive the output equation of 3-phase transformer. Why are the windings of transformer made in circular form?",
+      "chapter": "Transformer Design",
+      "marks": "6",
+      "frequency": 1,
       "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2076 Ashwin"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2076 Ashwin"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-28",
-      "chapter": "Design of Synchronous Machines",
-      "text": "Design the stator core and winding of a 10 MVA, 11 kV, 50 Hz, 12-pole salient-pole hydro-generator.",
-      "question": "Design the stator core and winding of a 10 MVA, 11 kV, 50 Hz, 12-pole salient-pole hydro-generator.",
-      "marks": "8",
+      "question": "a) Classify the transformer on the basis of construction, application, number of phase and cooling method. [4]\n\nb) For a $500\\text{ kVA}$, $50\\text{Hz}$, $6600/400$, single phase core type, oil immersed, natural cooled power transformer, the design parameters are:\nConstant for output voltage per turn $(K) = 0.8$,\nResistivity of copper $0.021\\text{ }\\Omega\\text{-mm}^2/\\text{m}$,\nMaximum flux density in core $(B_m) = 1.5\\text{ Wb/m}^2$,\nCurrent density $= 2.75\\text{ A/mm}^2$,\nCore type = Cruciform,\nWindow space factor $(k_w) = 0.27$,\nStacking factor $(K_i) = 0.9$,\nRatio of height to width of windows $(H_w/W_w) = 2.5$,\nRatio of yoke height to width $(H_y/D_y) = 1$,\nAxial depth of LV winding $= 402\\text{ mm}$,\nAxial depth of Hv winding $= 377.5\\text{ mm}$,\nInside diameter of LV winding $= 310\\text{ mm}$,\nOutside diameter of LV winding $= 348\\text{ mm}$,\nInside diameter of HV winding $= 360\\text{ mm}$,\nOutside diameter of HV winding $= 418\\text{ mm}$,\nCalculate;\n\n(i) Dimension of core, window and yoke.\n(ii) Overall dimension of frame\n(iii) Perunit resistance and leakage reactance.\n(iv) Perunit regulation at $0.8\\text{ pf}$ lagging\nTaking iron loss $= 1460\\text{ W}$, copper loss $= 3865\\text{ W}$ at full load, height of tank $= 1.6\\text{ m}$,\nlength of tank $= 1.05\\text{ m}$, width of tank $= 0.62\\text{ m}$, find the necessary number of tubes and show its arrangement.",
+      "text": "a) Classify the transformer on the basis of construction, application, number of phase and cooling method. [4]\n\nb) For a $500\\text{ kVA}$, $50\\text{Hz}$, $6600/400$, single phase core type, oil immersed, natural cooled power transformer, the design parameters are:\nConstant for output voltage per turn $(K) = 0.8$,\nResistivity of copper $0.021\\text{ }\\Omega\\text{-mm}^2/\\text{m}$,\nMaximum flux density in core $(B_m) = 1.5\\text{ Wb/m}^2$,\nCurrent density $= 2.75\\text{ A/mm}^2$,\nCore type = Cruciform,\nWindow space factor $(k_w) = 0.27$,\nStacking factor $(K_i) = 0.9$,\nRatio of height to width of windows $(H_w/W_w) = 2.5$,\nRatio of yoke height to width $(H_y/D_y) = 1$,\nAxial depth of LV winding $= 402\\text{ mm}$,\nAxial depth of Hv winding $= 377.5\\text{ mm}$,\nInside diameter of LV winding $= 310\\text{ mm}$,\nOutside diameter of LV winding $= 348\\text{ mm}$,\nInside diameter of HV winding $= 360\\text{ mm}$,\nOutside diameter of HV winding $= 418\\text{ mm}$,\nCalculate;\n\n(i) Dimension of core, window and yoke.\n(ii) Overall dimension of frame\n(iii) Perunit resistance and leakage reactance.\n(iv) Perunit regulation at $0.8\\text{ pf}$ lagging\nTaking iron loss $= 1460\\text{ W}$, copper loss $= 3865\\text{ W}$ at full load, height of tank $= 1.6\\text{ m}$,\nlength of tank $= 1.05\\text{ m}$, width of tank $= 0.62\\text{ m}$, find the necessary number of tubes and show its arrangement.",
+      "chapter": "Transformer Design",
+      "marks": "20",
+      "frequency": 1,
       "years": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2083 Baishakh"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2083 Baishakh"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-29",
-      "chapter": "Design of Synchronous Machines",
-      "text": "Design the field pole, pole shoes, and damper windings of a salient-pole alternator to minimize waveform distortion.",
-      "question": "Design the field pole, pole shoes, and damper windings of a salient-pole alternator to minimize waveform distortion.",
-      "marks": "8",
+      "question": "a) For a 500 kVA, 50Hz, 6600/400, single phase core type, oil immersed, natural cooled power transformer, the design parameters are:\nConstant for output voltage per turn (K) = 0.8,\nResistivity of copper = $0.021 \\Omega\\text{mm}^2/\\text{m}$,\nMaximum flux density in core ($B_m$) = $1.5 \\text{ Wb/m}^2$,\nCurrent density = $2.75 \\text{ A/mm}^2$,\nCore type = Cruciform,\nWindow space factor (kW) = 0.27,\nStacking factor ($K_i$) = 0.9,\nRatio of height to width of windows ($H_w/W_w$) = 2.5,\nRatio of yoke height to width ($H_y/D_y$) = 1,\nAxial depth of LV winding = 402 mm,\nAxial depth of HV winding = 377.5 mm,\nInside diameter of LV winding = 310 mm,\nOutside diameter of LV winding = 348 mm,\nInside diameter of HV winding = 360 mm,\nOutside diameter of HV winding = 418 mm.\nCalculate;\n\ni) Dimension of core, window & yoke.\nii) Overall dimension of frame\niii) Per unit resistance & leakage reactance.\niv) Per unit regulation at 0.8 pf lagging\nTaking iron loss = 1460 W, copper loss = 3865 W at full load, height of tank = 1.6 m, length of tank = 1.05 m, width of tank = 0.62 m, find the temperature rise. If the mean rise of oil is not to rise $35^\\circ\\text{C}$, find the necessary number of tubes and show its arrangement.",
+      "text": "a) For a 500 kVA, 50Hz, 6600/400, single phase core type, oil immersed, natural cooled power transformer, the design parameters are:\nConstant for output voltage per turn (K) = 0.8,\nResistivity of copper = $0.021 \\Omega\\text{mm}^2/\\text{m}$,\nMaximum flux density in core ($B_m$) = $1.5 \\text{ Wb/m}^2$,\nCurrent density = $2.75 \\text{ A/mm}^2$,\nCore type = Cruciform,\nWindow space factor (kW) = 0.27,\nStacking factor ($K_i$) = 0.9,\nRatio of height to width of windows ($H_w/W_w$) = 2.5,\nRatio of yoke height to width ($H_y/D_y$) = 1,\nAxial depth of LV winding = 402 mm,\nAxial depth of HV winding = 377.5 mm,\nInside diameter of LV winding = 310 mm,\nOutside diameter of LV winding = 348 mm,\nInside diameter of HV winding = 360 mm,\nOutside diameter of HV winding = 418 mm.\nCalculate;\n\ni) Dimension of core, window & yoke.\nii) Overall dimension of frame\niii) Per unit resistance & leakage reactance.\niv) Per unit regulation at 0.8 pf lagging\nTaking iron loss = 1460 W, copper loss = 3865 W at full load, height of tank = 1.6 m, length of tank = 1.05 m, width of tank = 0.62 m, find the temperature rise. If the mean rise of oil is not to rise $35^\\circ\\text{C}$, find the necessary number of tubes and show its arrangement.",
+      "chapter": "Transformer Design",
+      "marks": "20",
+      "frequency": 1,
       "years": [
-        "2081 Baishakh",
-        "2078 Chaitra",
-        "2075 Bhadra"
+        "2082 Bhadra"
       ],
       "examSessions": [
-        "2081 Baishakh",
-        "2078 Chaitra",
-        "2075 Bhadra"
+        "2082 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-machine-design-30",
-      "chapter": "Design of Synchronous Machines",
-      "text": "Explain the design of cylindrical rotor turbo-alternator end-bells and retaining rings under heavy centrifugal mechanical stresses.",
-      "question": "Explain the design of cylindrical rotor turbo-alternator end-bells and retaining rings under heavy centrifugal mechanical stresses.",
-      "marks": "6",
+      "question": "a) Differentiate between power and distribution transformer. [4]\n\nb) For a 500kVA, 50Hz, 6600/400V, single phase core type, oil immersed, natural cooled power transformer, the design parameters are:\nConstant for output voltage per turn = 0.8\nResistivity of copper = $0.021\\ \\Omega\\text{-mm}^2/\\text{m}$\nMaximum flux density in the core = $1.5\\ \\text{Wb/m}^2$\nCurrent density = $2.75\\text{A/mm}^2$\nCore type = Cruciform\nWindow space factor = 0.27\nStacking factor = 0.9\nRatio of window height to width = 2.5\nRatio of yoke height to width = 1\nAxial depth of LV winding = 402mm\nAxial depth of HV winding = 377.5mm\nInside diameter of LV winding = 310mm\nOuter diameter of LV winding = 348mm\nInside diameter of HV winding = 360mm\nOutside diameter of HV winding = 418mm\nCalculate:\n\ni) Dimension of the core, window and yoke\nii) Overall dimension of the frame\niii) Per unit regulation at 0.8 pf lagging\niv) Taking iron loss = 1460W, copper loss = 3865W at full load, height of tank = 1.6m, length of tank = 1.05m, width of tank = 0.62m, find the temperature rise. If the mean temperature rise of oil is not to rise $35^\\circ\\text{C}$, find the necessary number of tubes and also show its arrangement.",
+      "text": "a) Differentiate between power and distribution transformer. [4]\n\nb) For a 500kVA, 50Hz, 6600/400V, single phase core type, oil immersed, natural cooled power transformer, the design parameters are:\nConstant for output voltage per turn = 0.8\nResistivity of copper = $0.021\\ \\Omega\\text{-mm}^2/\\text{m}$\nMaximum flux density in the core = $1.5\\ \\text{Wb/m}^2$\nCurrent density = $2.75\\text{A/mm}^2$\nCore type = Cruciform\nWindow space factor = 0.27\nStacking factor = 0.9\nRatio of window height to width = 2.5\nRatio of yoke height to width = 1\nAxial depth of LV winding = 402mm\nAxial depth of HV winding = 377.5mm\nInside diameter of LV winding = 310mm\nOuter diameter of LV winding = 348mm\nInside diameter of HV winding = 360mm\nOutside diameter of HV winding = 418mm\nCalculate:\n\ni) Dimension of the core, window and yoke\nii) Overall dimension of the frame\niii) Per unit regulation at 0.8 pf lagging\niv) Taking iron loss = 1460W, copper loss = 3865W at full load, height of tank = 1.6m, length of tank = 1.05m, width of tank = 0.62m, find the temperature rise. If the mean temperature rise of oil is not to rise $35^\\circ\\text{C}$, find the necessary number of tubes and also show its arrangement.",
+      "chapter": "Transformer Design",
+      "marks": "20",
+      "frequency": 1,
       "years": [
-        "2081 Chaitra",
-        "2079 Baishakh",
+        "2075 Ashwin"
+      ],
+      "examSessions": [
+        "2075 Ashwin"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "electric-machine-design-31",
+      "question": "a) Design a 125 KVA, 50 Hz, 6600/400V, 3-phase, $\\Delta/\\text{Y}$, core type of oil immersed natural cooled distribution transformer. (Assume suitable data if necessary) [16]\nMaximum flux density in core = $1.35\\text{wb/m}^2$, core type=cruciform\nCurrent density=$2.75\\text{ A/mm}^2$\nWindow space factor=0.4\n$H_w/W_w=2.5$\nTake hot rolled steel sheet and area of yoke=1.2 area of core\nAxial depth of L.V. = 268 mm\nAxial depth of H.V. = 276 mm\nRadial depth of L.V. = 14 mm\nRadial depth of H.V. = 18 mm\nWidth of insulation between L.V. and H.V. = 11 mm\nOutside diameter of L.V. = 293 mm, Inside diameter of L.V. = 255 mm\nInside diameter of H.V. = 314 mm, Outside diameter of H.V. = 351 mm\nCalculate:\n\ni) Dimension of core, window and yoke\nii) Overall dimension of frame\niii) Leakage reactance of transformer\niv) Draw overall dimension of frame\n\nb) Why are windings of a transformer made into circular form? What is the advantage of using stepped cores in transformers? Derive the most economical dimension of a two-stepped core.",
+      "text": "a) Design a 125 KVA, 50 Hz, 6600/400V, 3-phase, $\\Delta/\\text{Y}$, core type of oil immersed natural cooled distribution transformer. (Assume suitable data if necessary) [16]\nMaximum flux density in core = $1.35\\text{wb/m}^2$, core type=cruciform\nCurrent density=$2.75\\text{ A/mm}^2$\nWindow space factor=0.4\n$H_w/W_w=2.5$\nTake hot rolled steel sheet and area of yoke=1.2 area of core\nAxial depth of L.V. = 268 mm\nAxial depth of H.V. = 276 mm\nRadial depth of L.V. = 14 mm\nRadial depth of H.V. = 18 mm\nWidth of insulation between L.V. and H.V. = 11 mm\nOutside diameter of L.V. = 293 mm, Inside diameter of L.V. = 255 mm\nInside diameter of H.V. = 314 mm, Outside diameter of H.V. = 351 mm\nCalculate:\n\ni) Dimension of core, window and yoke\nii) Overall dimension of frame\niii) Leakage reactance of transformer\niv) Draw overall dimension of frame\n\nb) Why are windings of a transformer made into circular form? What is the advantage of using stepped cores in transformers? Derive the most economical dimension of a two-stepped core.",
+      "chapter": "Transformer Design",
+      "marks": "6",
+      "frequency": 1,
+      "years": [
+        "2075 Chaitra"
+      ],
+      "examSessions": [
+        "2075 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "electric-machine-design-32",
+      "question": "a) What are the factors influencing air gap length determination in induction motor? [6]\n\nb) A $15\\text{ kW}$, $440\\text{V}$, 3-phase, $50\\text{ Hz}$, $1480\\text{ rpm}$, three phase induction motor is built with an inner diameter of stator $25\\text{ cm}$ and length $16\\text{ cm}$. The specific loading is $23,000$ ampere conductors per meter. Estimate the following parameter for a $11\\text{ kW}$, $460\\text{V}$, 6 pole, $50\\text{ Hz}$ delta connected induction motor, assuming same specific loadings as the previous motor with efficiency $84\\%$ and power factor $85\\%$ for each machine.\nAssume;\nCurrent density $= 4\\text{ A/mm}^2$\nWinding factor $= 0.955$\nStator slot pitch $= 15\\text{ to } 25\\text{ mm}$\nSlot space factor $= 0.4$\nRatio of slot depth to width $= 3$\nFlux density in stator core $= 1.2\\text{ Wb/m}^2$\nCalculate:\n\n(i) Main dimensions of the machine.\n(ii) No. of stator slots.\n(iii) No. of stator conductor and area of stator slot.\n(iv) Area and dimension of each stator slot.",
+      "text": "a) What are the factors influencing air gap length determination in induction motor? [6]\n\nb) A $15\\text{ kW}$, $440\\text{V}$, 3-phase, $50\\text{ Hz}$, $1480\\text{ rpm}$, three phase induction motor is built with an inner diameter of stator $25\\text{ cm}$ and length $16\\text{ cm}$. The specific loading is $23,000$ ampere conductors per meter. Estimate the following parameter for a $11\\text{ kW}$, $460\\text{V}$, 6 pole, $50\\text{ Hz}$ delta connected induction motor, assuming same specific loadings as the previous motor with efficiency $84\\%$ and power factor $85\\%$ for each machine.\nAssume;\nCurrent density $= 4\\text{ A/mm}^2$\nWinding factor $= 0.955$\nStator slot pitch $= 15\\text{ to } 25\\text{ mm}$\nSlot space factor $= 0.4$\nRatio of slot depth to width $= 3$\nFlux density in stator core $= 1.2\\text{ Wb/m}^2$\nCalculate:\n\n(i) Main dimensions of the machine.\n(ii) No. of stator slots.\n(iii) No. of stator conductor and area of stator slot.\n(iv) Area and dimension of each stator slot.",
+      "chapter": "General",
+      "marks": "12",
+      "frequency": 1,
+      "years": [
+        "2081 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "electric-machine-design-33",
+      "question": "a) Give suitable reasons for the following. [8]\n\n(i) Distribution transformer are designed to have maximum efficiency at loads much smaller than full loads.\n(ii) LV winding is kept near to core and HV winding is kept outside the LV winding.\n\nb) Design a 100 kVA, 2,200/480 V, 50Hz, single phase, core type oil immersed natural cooled transformer.\nThe required data for design are given below:\nVoltage per turn = 7.5,\nMaximum flux density in the core = $1.2 \\text{ Wb/m}^2$\nCore Type = Cruciform,\nCurrent density = $2.5 \\text{ A/mm}^2$,\nWindow space factor = 0.28,\nStacking factor = 0.9,\nRatio of window height to width = 2\nAnd, width of duct between LV and core, LV winding, HV winding and duct between HV and LV are 5 mm, 25 mm, 30 mm, 10 mm respectively. Assuming all other required parameters, calculate:\n\n(i) Overall dimension of core.\n(ii) Overall dimension of frame.\n(iii) Per unit resistance and leakage reactance drop.\n(iv) Per unit regulation at 0.8 poner factor.",
+      "text": "a) Give suitable reasons for the following. [8]\n\n(i) Distribution transformer are designed to have maximum efficiency at loads much smaller than full loads.\n(ii) LV winding is kept near to core and HV winding is kept outside the LV winding.\n\nb) Design a 100 kVA, 2,200/480 V, 50Hz, single phase, core type oil immersed natural cooled transformer.\nThe required data for design are given below:\nVoltage per turn = 7.5,\nMaximum flux density in the core = $1.2 \\text{ Wb/m}^2$\nCore Type = Cruciform,\nCurrent density = $2.5 \\text{ A/mm}^2$,\nWindow space factor = 0.28,\nStacking factor = 0.9,\nRatio of window height to width = 2\nAnd, width of duct between LV and core, LV winding, HV winding and duct between HV and LV are 5 mm, 25 mm, 30 mm, 10 mm respectively. Assuming all other required parameters, calculate:\n\n(i) Overall dimension of core.\n(ii) Overall dimension of frame.\n(iii) Per unit resistance and leakage reactance drop.\n(iv) Per unit regulation at 0.8 poner factor.",
+      "chapter": "Transformer Design",
+      "marks": "16",
+      "frequency": 1,
+      "years": [
+        "2082 Baishakh"
+      ],
+      "examSessions": [
+        "2082 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "electric-machine-design-34",
+      "question": "a) Differentiate between core and shell type transformer. [6]\n\nb) For a 4000 KVA, 3 phase, 50 Hz, 66 KV/11KV, 3 phase, 50 Hz, delta/delta, core type, oil immersed natural cooled power transformer are:\nMax flux density in core = $1.6 \\text{ Wb/m}^2$\nConstant for output voltage per turn = 0.6\nResistivity of Copper = $0.021 \\text{ }\\Omega\\text{mm}^2/\\text{m}$\nCore type = Cruciform\nCurrent density in conductors = $2.5 \\text{ A/ mm}^2$\nWindow space factor = 0.22\nStacking factor = 0.9\nRatio of window height to width = 2.75\nTake hot rolled steel and area of yoke is 20% greater than area of core\nWidth of duct between LV and core = 10mm\nWidth of LV winding = 50mm\nWidth of HV winding = 50mm\nWidth of duct between LV and HV = 20 mm\nAssuming all the other required parameters, calculate:\n\n(i) Overall core dimension\n(ii) Overall dimension of frame\n(iii) Per unit resistance and leakage reactance drop\n(iv) Per unit voltage regulation at 8.0 pf",
+      "text": "a) Differentiate between core and shell type transformer. [6]\n\nb) For a 4000 KVA, 3 phase, 50 Hz, 66 KV/11KV, 3 phase, 50 Hz, delta/delta, core type, oil immersed natural cooled power transformer are:\nMax flux density in core = $1.6 \\text{ Wb/m}^2$\nConstant for output voltage per turn = 0.6\nResistivity of Copper = $0.021 \\text{ }\\Omega\\text{mm}^2/\\text{m}$\nCore type = Cruciform\nCurrent density in conductors = $2.5 \\text{ A/ mm}^2$\nWindow space factor = 0.22\nStacking factor = 0.9\nRatio of window height to width = 2.75\nTake hot rolled steel and area of yoke is 20% greater than area of core\nWidth of duct between LV and core = 10mm\nWidth of LV winding = 50mm\nWidth of HV winding = 50mm\nWidth of duct between LV and HV = 20 mm\nAssuming all the other required parameters, calculate:\n\n(i) Overall core dimension\n(ii) Overall dimension of frame\n(iii) Per unit resistance and leakage reactance drop\n(iv) Per unit voltage regulation at 8.0 pf",
+      "chapter": "Transformer Design",
+      "marks": "18",
+      "frequency": 1,
+      "years": [
+        "2074 Chaitra"
+      ],
+      "examSessions": [
+        "2074 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "electric-machine-design-35",
+      "question": "a) Give reasons for the followings: [6]\n\ni) Stator slots should never be equal to the number of rotor slots\nii) The size of induction machine will be small if it is designed with higher speed for the same output.\n\nb) For a 2.2 KW, 400V, 3 phase, 50 Hz 1420 rpm squirrel cage induction motor using star delta starter and having efficiency of 0.8 and power factor 0.825 at full load the following data are given.\nSpecific Magnetic loading = $0.44 \\text{ wb/m}^2$\nSpecific electric loading = $21000 \\text{ A/m}$\nSlot space factor = 0.4\nRatio of core length to pole pitch=1.5\nRatio of slot depth to width = 4\nStator slot pitch = 12 to 15 mm\nCurrent density in conductor = $4 \\text{ A/mm}^2$\nAssuming all other required data, calculate\n\ni) Main dimensions of the machine\nii) Size of stator turns per phase\niii) Size of stator conductor\niv) No. of stator slots\n\nv) Area and dimensions of each stator slot.\nvi) Minimum width of stator teeth.",
+      "text": "a) Give reasons for the followings: [6]\n\ni) Stator slots should never be equal to the number of rotor slots\nii) The size of induction machine will be small if it is designed with higher speed for the same output.\n\nb) For a 2.2 KW, 400V, 3 phase, 50 Hz 1420 rpm squirrel cage induction motor using star delta starter and having efficiency of 0.8 and power factor 0.825 at full load the following data are given.\nSpecific Magnetic loading = $0.44 \\text{ wb/m}^2$\nSpecific electric loading = $21000 \\text{ A/m}$\nSlot space factor = 0.4\nRatio of core length to pole pitch=1.5\nRatio of slot depth to width = 4\nStator slot pitch = 12 to 15 mm\nCurrent density in conductor = $4 \\text{ A/mm}^2$\nAssuming all other required data, calculate\n\ni) Main dimensions of the machine\nii) Size of stator turns per phase\niii) Size of stator conductor\niv) No. of stator slots\n\nv) Area and dimensions of each stator slot.\nvi) Minimum width of stator teeth.",
+      "chapter": "Three Phase Induction Motor Design",
+      "marks": "12",
+      "frequency": 1,
+      "years": [
+        "2075 Chaitra"
+      ],
+      "examSessions": [
+        "2075 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "electric-machine-design-36",
+      "question": "a) Deduce a mathematical expression to obtain the leakage reactance of core type transformer. [6]\n\nb) Design a 100 KVA, 50 Hz, 11/132 kV, 3-phase, $\\Delta/\\text{Y}$, core type oil immersed natural cooled distribution transformer.\nMaximum flux density in core = $1.35\\text{ wb/m}^2$, Core type = 3 stepped\nCurrent density = $2.75\\text{ A/mm}^2$\nWindow space factor = 0.4\n$H_w/W_w = 3$\nTake hot rolled steel sheet and area of yoke = 1.2 Area of core\nAxial depth of L. V. = 268 mm\nAxial depth of H. V. = 276 mm\nRadial depth of L. V. = 14 mm\nRadial depth of H. V. = 18 mm\nWidth of insulation between L.V and H.V = 11 mm\nOutside diameter of L.V = 293 mm, Inside diameter of L.V = 255 mm\nInside diameter of H.V = 314 mm, Outside diameter of H.V = 351 mm\nCalculate:\n\n(i) Dimension of core, window and yoke\n(ii) Overall dimension of frame\n(iii) Leakage reactance of transformer\n(iv) Voltage regulation at 0.8 pf lagging at full load.",
+      "text": "a) Deduce a mathematical expression to obtain the leakage reactance of core type transformer. [6]\n\nb) Design a 100 KVA, 50 Hz, 11/132 kV, 3-phase, $\\Delta/\\text{Y}$, core type oil immersed natural cooled distribution transformer.\nMaximum flux density in core = $1.35\\text{ wb/m}^2$, Core type = 3 stepped\nCurrent density = $2.75\\text{ A/mm}^2$\nWindow space factor = 0.4\n$H_w/W_w = 3$\nTake hot rolled steel sheet and area of yoke = 1.2 Area of core\nAxial depth of L. V. = 268 mm\nAxial depth of H. V. = 276 mm\nRadial depth of L. V. = 14 mm\nRadial depth of H. V. = 18 mm\nWidth of insulation between L.V and H.V = 11 mm\nOutside diameter of L.V = 293 mm, Inside diameter of L.V = 255 mm\nInside diameter of H.V = 314 mm, Outside diameter of H.V = 351 mm\nCalculate:\n\n(i) Dimension of core, window and yoke\n(ii) Overall dimension of frame\n(iii) Leakage reactance of transformer\n(iv) Voltage regulation at 0.8 pf lagging at full load.",
+      "chapter": "Transformer Design",
+      "marks": "16",
+      "frequency": 1,
+      "years": [
         "2076 Chaitra"
       ],
       "examSessions": [
-        "2081 Chaitra",
-        "2079 Baishakh",
         "2076 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
+    },
+    {
+      "id": "electric-machine-design-37",
+      "question": "a) For 500 kV, 3-phase, 50 Hz, 66/11 kV, delta/star, core type, oil immersed natural cooled power transformer is: [18]\nMaximum flux density in the core = $1.6 \\text{ wb/m}^2$\nConstant for output voltage per turn = 0.6\nCore type = cruciform\nCurrent density in the conductor = $2.5 \\text{ A/mm}^2$\nWindow space factor = 0.22\nStacking Factor = 0.9\nRatio of window height to width = 2.75\nWith of duct between LV and core, LV winding, HV winding and duct between HV and LV are 10 mm, 50 mm, 60 mm, 20 mm respectively. Assuming all other required parameters, calculate:\n\n(i) Overall dimension of core\n(ii) Overall dimension of frame\n(iii) Per unit resistance and leakage reactance drop\n(iv) Per unit voltage regulation\n\nb) Why are distribution transformers designed to have maximum efficiency at loads much lower than full load? Derive the expression for calculating the number of tubes to be prosvided in a transformer tank.",
+      "text": "a) For 500 kV, 3-phase, 50 Hz, 66/11 kV, delta/star, core type, oil immersed natural cooled power transformer is: [18]\nMaximum flux density in the core = $1.6 \\text{ wb/m}^2$\nConstant for output voltage per turn = 0.6\nCore type = cruciform\nCurrent density in the conductor = $2.5 \\text{ A/mm}^2$\nWindow space factor = 0.22\nStacking Factor = 0.9\nRatio of window height to width = 2.75\nWith of duct between LV and core, LV winding, HV winding and duct between HV and LV are 10 mm, 50 mm, 60 mm, 20 mm respectively. Assuming all other required parameters, calculate:\n\n(i) Overall dimension of core\n(ii) Overall dimension of frame\n(iii) Per unit resistance and leakage reactance drop\n(iv) Per unit voltage regulation\n\nb) Why are distribution transformers designed to have maximum efficiency at loads much lower than full load? Derive the expression for calculating the number of tubes to be prosvided in a transformer tank.",
+      "chapter": "Transformer Design",
+      "marks": "3",
+      "frequency": 1,
+      "years": [
+        "2078 Kartik"
+      ],
+      "examSessions": [
+        "2078 Kartik"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "electric-machine-design-38",
+      "question": "a) Derive the output equation of a single phase transformer. [6]\n\nb) The design parameter for 150 kVA, 50 Hz, 6600/400 V, 3-phase, delta/star, core type, oil immersed natural cooled distribution transformer are given below.\nMax. flux density in core = $1.35 \\text{ Wb/m}^2$\nCurrent density in conductor = $2.75 \\text{ A/mm}^2$\nConstant for output voltage per turn = 0.45\nCore type = cruciform two stepped\nWindow space factor = 0.27\nStacking factor = 0.9\nRatio of window height to width = 2.5\nTake hot rolled steel and area of yoke is 20% greater than gross area of core\nWidth of LV, HV winding and duct between them are 20 mm, 25 mm and 15 mm respectively\nAssuming all other required parameters, calculate:\n\n(i) Dimension of the core, window and yoke\n(ii) Overall dimension of the frame\n(iii) Per unit resistance and leakage reactance drop\n(iv) Per unit voltage regulation at 0.85 pf",
+      "text": "a) Derive the output equation of a single phase transformer. [6]\n\nb) The design parameter for 150 kVA, 50 Hz, 6600/400 V, 3-phase, delta/star, core type, oil immersed natural cooled distribution transformer are given below.\nMax. flux density in core = $1.35 \\text{ Wb/m}^2$\nCurrent density in conductor = $2.75 \\text{ A/mm}^2$\nConstant for output voltage per turn = 0.45\nCore type = cruciform two stepped\nWindow space factor = 0.27\nStacking factor = 0.9\nRatio of window height to width = 2.5\nTake hot rolled steel and area of yoke is 20% greater than gross area of core\nWidth of LV, HV winding and duct between them are 20 mm, 25 mm and 15 mm respectively\nAssuming all other required parameters, calculate:\n\n(i) Dimension of the core, window and yoke\n(ii) Overall dimension of the frame\n(iii) Per unit resistance and leakage reactance drop\n(iv) Per unit voltage regulation at 0.85 pf",
+      "chapter": "Transformer Design",
+      "marks": "18",
+      "frequency": 1,
+      "years": [
+        "2079 Bhadra"
+      ],
+      "examSessions": [
+        "2079 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "electric-machine-design-39",
+      "question": "a) Derive the output equation for three phase induction motor. [6]\n\nb) A 15 kW, 440 V, 50 Hz, 1480 rpm., 3-phase induction motor is built with an inner diameter of stator 25 cm and length 16 cm. The specific loading is 23000 ampere conductors per meter. Estimate the following parameter for a 11 kW, 460 V, 6 pole, 50 Hz delta connected induction motor, assuming same specific loadings as the previous motor with 84 % efficiency and power factor 85% for each machine. Assume, current density $4 \\text{ A/mm}^2$, stator slot pitch is 15 to 25 mm, ratio of slot depth to width is 3 and flux density in stator core is $1.2 \\text{ Wb/m}^2$. Winding factor = 0.955. Slot space factor = 0.4.\nCalculate:\n\n(i) Main dimension.\n(ii) No. of stator slot.\n(iii) No. of stator conductor and area of stator slot.\n(iv) Dimension of each stator slot.\n\n(v) Minimum width of stator teeth.",
+      "text": "a) Derive the output equation for three phase induction motor. [6]\n\nb) A 15 kW, 440 V, 50 Hz, 1480 rpm., 3-phase induction motor is built with an inner diameter of stator 25 cm and length 16 cm. The specific loading is 23000 ampere conductors per meter. Estimate the following parameter for a 11 kW, 460 V, 6 pole, 50 Hz delta connected induction motor, assuming same specific loadings as the previous motor with 84 % efficiency and power factor 85% for each machine. Assume, current density $4 \\text{ A/mm}^2$, stator slot pitch is 15 to 25 mm, ratio of slot depth to width is 3 and flux density in stator core is $1.2 \\text{ Wb/m}^2$. Winding factor = 0.955. Slot space factor = 0.4.\nCalculate:\n\n(i) Main dimension.\n(ii) No. of stator slot.\n(iii) No. of stator conductor and area of stator slot.\n(iv) Dimension of each stator slot.\n\n(v) Minimum width of stator teeth.",
+      "chapter": "Three Phase Induction Motor Design",
+      "marks": "12",
+      "frequency": 1,
+      "years": [
+        "2082 Baishakh"
+      ],
+      "examSessions": [
+        "2082 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "electric-machine-design-40",
+      "question": "a) The design parameter for 100kVA, 4000/433V, 50 Hz, 3-phase, $\\Delta$/Y core type oil immersed natural cooled distribution transformer are given below. [20]\nMax. flux density in core $= 1.3 \\text{ Wb/m}^2$\nCurrent density in conductor $= 2.5 \\text{ A/mm}^2$\nConstant for output voltage per turn $= 0.45$\nCore type $= \\text{cruciform}$\nWindow space factor $= 0.25$\nStacking factor $= 0.9$\nRatio of window height to width $= 2.5$\nWidth of LV winding $= 20 \\text{ mm}$\nWidth of HV winding $= 25 \\text{ mm}$\nWidth of duct between HV and LV $= 15 \\text{ mm}$\nTake hot rolled steel and area of yoke is 20% greater than area of core\nCalculate:\n\n(i) Dimension of the core, window and yoke\n(ii) Overall dimension of the frame\n(iii) Per unit voltage regulation at 0.8 pf\n\nb) Why is the low voltage winding of transformer is placed near to the core in core type transformer?",
+      "text": "a) The design parameter for 100kVA, 4000/433V, 50 Hz, 3-phase, $\\Delta$/Y core type oil immersed natural cooled distribution transformer are given below. [20]\nMax. flux density in core $= 1.3 \\text{ Wb/m}^2$\nCurrent density in conductor $= 2.5 \\text{ A/mm}^2$\nConstant for output voltage per turn $= 0.45$\nCore type $= \\text{cruciform}$\nWindow space factor $= 0.25$\nStacking factor $= 0.9$\nRatio of window height to width $= 2.5$\nWidth of LV winding $= 20 \\text{ mm}$\nWidth of HV winding $= 25 \\text{ mm}$\nWidth of duct between HV and LV $= 15 \\text{ mm}$\nTake hot rolled steel and area of yoke is 20% greater than area of core\nCalculate:\n\n(i) Dimension of the core, window and yoke\n(ii) Overall dimension of the frame\n(iii) Per unit voltage regulation at 0.8 pf\n\nb) Why is the low voltage winding of transformer is placed near to the core in core type transformer?",
+      "chapter": "Transformer Design",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2078 Bhadra"
+      ],
+      "examSessions": [
+        "2078 Bhadra"
+      ],
+      "isDiagram": false
+    }
+  ],
+  "yearWisePapers": [
+    {
+      "session": "2083 Baishakh",
+      "year": "2083",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 51,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Derive the expression of temperature gradient in conductors placed in slot if slot insulation is comparatively thick. [6]\n(b) An induction machine has a temperature rise of $25^\\circ\\text{C}$ and $40^\\circ\\text{C}$ after 1 hour and 2 hour respectively while operating at full load of $7.5\\text{ kW}$. The constant losses are $80\\%$ of full load copper loss. Determine how long the motor can be operated at twice the rated output without overheating.",
+          "marks": "6",
+          "chapter": "Heating and Cooling of Machines",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Classify the transformer on the basis of construction, application, number of phase and cooling method. [4]\n\nb) For a $500\\text{ kVA}$, $50\\text{Hz}$, $6600/400$, single phase core type, oil immersed, natural cooled power transformer, the design parameters are:\nConstant for output voltage per turn $(K) = 0.8$,\nResistivity of copper $0.021\\text{ }\\Omega\\text{-mm}^2/\\text{m}$,\nMaximum flux density in core $(B_m) = 1.5\\text{ Wb/m}^2$,\nCurrent density $= 2.75\\text{ A/mm}^2$,\nCore type = Cruciform,\nWindow space factor $(k_w) = 0.27$,\nStacking factor $(K_i) = 0.9$,\nRatio of height to width of windows $(H_w/W_w) = 2.5$,\nRatio of yoke height to width $(H_y/D_y) = 1$,\nAxial depth of LV winding $= 402\\text{ mm}$,\nAxial depth of Hv winding $= 377.5\\text{ mm}$,\nInside diameter of LV winding $= 310\\text{ mm}$,\nOutside diameter of LV winding $= 348\\text{ mm}$,\nInside diameter of HV winding $= 360\\text{ mm}$,\nOutside diameter of HV winding $= 418\\text{ mm}$,\nCalculate;\n\n(i) Dimension of core, window and yoke.\n(ii) Overall dimension of frame\n(iii) Perunit resistance and leakage reactance.\n(iv) Perunit regulation at $0.8\\text{ pf}$ lagging\nTaking iron loss $= 1460\\text{ W}$, copper loss $= 3865\\text{ W}$ at full load, height of tank $= 1.6\\text{ m}$,\nlength of tank $= 1.05\\text{ m}$, width of tank $= 0.62\\text{ m}$, find the necessary number of tubes and show its arrangement.",
+          "marks": "20",
+          "chapter": "Transformer Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Classify the insulating materials on the basis of their thermal stability. [5]\n(b) What are the fundamental requirements of high conducting materials? Classify and explain the electrical conducting materials in brief.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Write about the factors to be considered while estimating the length of air gap in induction machines. [6]\n\nb) A $15\\text{ kW}$, $440\\text{ V}$, $50\\text{ Hz}$, $1480\\text{ rpm}$, $3$-phase induction motor is built with an inner diameter of stator $25\\text{ cm}$ and length $16\\text{ cm}$. The specific loading is $23000\\text{ ampere-conductors per meter}$. Estimate the following parameter for a $11\\text{ kW}$, $460\\text{ V}$, $6\\text{ pole}$, $50\\text{ Hz}$ delta connected induction motor, assuming same specific loadings as the previous motor with $84\\%$ efficiency and power factor $85\\%$ for each machine. Assume, current density $4\\text{ A/mm}^2$, stator slot pitch is $15$ to $25\\text{ mm}$, ratio of slot depth to width is $3$ and flux density in stator core is $1.2\\text{ Wb/m}^2$.\nCalculate:\n\n(i) Main dimension\n(ii) No of stator slot\n(iii) No of stator conductor and area of stator slot\n(iv) Dimension of each stator slot\n\n(v) Minimum width of stator teeth",
+          "marks": "12",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the factors to be considered while selecting the number of poles in a DC machine. [8]\n\nb) Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Chaitra",
+      "year": "2082",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 57,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) What are the fundamental requirements of a good insulating material? Explain the application of insulating materials in machines in brief. [5]\n\nb) What is ageing of core of electrical machine? What are the advantages and disadvantages of adding silicon with iron?",
+          "marks": "4",
+          "chapter": "Materials Used in Electrical Equipment",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Define hot spot in relation to electrical machine. Taking the example of a plate of thickness $t$ derive the necessary expression of temperature of the hottest spot. [5]\n(b) A 40 kVA, 11000/400 V, 3-phase transformer is working in $a^n$ ambient temperature of $35^\\circ\\text{C}$ on full load. Its oil temperature is recorded as follows:\n• $59^\\circ\\text{C}$ after 1.5 hours\n• $71^\\circ\\text{C}$ after 3 hours\nIts full-load copper losses are 2 times the iron losses\nCalculate:\\n(i) Heating time constant\\n(ii) Final steady temperature rise\\n(iii) 1-hour rating",
+          "marks": "4",
+          "chapter": "Heating and Cooling of Machines",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) For a 500 kVA, 50Hz, 6600/400, single phase core type, oil immersed, natural cooled power transformer, the design parameters are:\nConstant for output voltage per turn (K) = 0.8,\nResistivity of copper = $0.021 \\Omega\\text{mm}^2/\\text{m}$,\nMaximum flux density in core ($B_m$) = $1.5 \\text{ Wb/m}^2$,\nCurrent density = $2.75 \\text{ A/mm}^2$,\nCore type = Cruciform,\nWindow space factor (kW) = 0.27,\nStacking factor ($K_i$) = 0.9,\nRatio of height to width of windows ($H_w/W_w$) = 2.5,\nRatio of yoke height to width ($H_y/D_y$) = 1,\nAxial depth of LV winding = 402 mm,\nAxial depth of HV winding = 377.5 mm,\nInside diameter of LV winding = 310 mm,\nOutside diameter of LV winding = 348 mm,\nInside diameter of HV winding = 360 mm,\nOutside diameter of HV winding = 418 mm.\nCalculate;\n\ni) Dimension of core, window & yoke.\nii) Overall dimension of frame\niii) Per unit resistance & leakage reactance.\niv) Per unit regulation at 0.8 pf lagging\nTaking iron loss = 1460 W, copper loss = 3865 W at full load, height of tank = 1.6 m, length of tank = 1.05 m, width of tank = 0.62 m, find the temperature rise. If the mean rise of oil is not to rise $35^\\circ\\text{C}$, find the necessary number of tubes and show its arrangement.",
+          "marks": "3",
+          "chapter": "Transformer Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Write about the factors to be considered while estimating the length of air gap in induction machines. [6]\n\nb) A $15\\text{ kW}$, $440\\text{ V}$, $50\\text{ Hz}$, $1480\\text{ rpm}$, $3$-phase induction motor is built with an inner diameter of stator $25\\text{ cm}$ and length $16\\text{ cm}$. The specific loading is $23000\\text{ ampere-conductors per meter}$. Estimate the following parameter for a $11\\text{ kW}$, $460\\text{ V}$, $6\\text{ pole}$, $50\\text{ Hz}$ delta connected induction motor, assuming same specific loadings as the previous motor with $84\\%$ efficiency and power factor $85\\%$ for each machine. Assume, current density $4\\text{ A/mm}^2$, stator slot pitch is $15$ to $25\\text{ mm}$, ratio of slot depth to width is $3$ and flux density in stator core is $1.2\\text{ Wb/m}^2$.\nCalculate:\n\n(i) Main dimension\n(ii) No of stator slot\n(iii) No of stator conductor and area of stator slot\n(iv) Dimension of each stator slot\n\n(v) Minimum width of stator teeth",
+          "marks": "8",
+          "chapter": "Three Phase Induction Motor Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain, various factors should be consider while selecting the value of specific electrical and magnetic loading in dc machine. [8]\n\nb) A design is required for a $30\\text{ kW}$, $4$ pole, $900\\text{ rpm}$ dc shunt generator, the full load terminal voltage being $220\\text{ V}$. Assume that the full load armature voltage is $3\\%$ of the terminal voltage. Calculate the main dimensions of the machine if the maximum gap density is $0.85\\text{ wb/m}^2$, specific electrical loading of $20,000$ ampere conductor/meter and field resistance is $120\\Omega$. The ratio of pole arc to pole pitch is $0.7$.",
+          "marks": "5",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What are the advantages and disadvantages of adding silicon with iron?",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Differentiate between soft magnetic materials and hard magnetic materials in brief with necessary diagrams.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "a) What are the fundamental requirements of a good insulating material? Explain the application of insulating materials in machines in brief. [5]\n\nb) What is ageing of core of electrical machine? What are the advantages and disadvantages of adding silicon with iron?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "\n(a) What are the factors that must be considered while selecting the length of air gap in induction motor? [6]\n(b) For a $2.2\\text{ kW} , 440\\text{ V} , 3-phase$, $50\\text{ Hz} , 1430\\text{ rpm}$ squirrel cage induction motor having efficiency of $0.8$ and p.f. $0.85$ designed for its best power factor. Given $B_{AV} = 0.44\\text{ Wb/m}^2 , A_c = 21,000\\text{ A/m} , slot$ space factor  = 0$.4 , ratio$ of slot depth to width  = 4 , stator$$ slot pitch  = 12$$ to $15\\text{ mm} , \\delta_s = 4\\text{ A/mm}^2$. Calculate:\\n(i) Main dimensions\\n(ii) $T_s$ (Turns per phase of stator conductor)\\n(iii) $A_s$ (Area of stator conductor)\\n(iv) No. of stator slots\n\nv) Area and dimension of each stator slot\nvi) Minimum width of stator teeth\nvii) Find stator slot loading.\nNote: For best power factor, $\\tau = \\sqrt{0.18 L}$",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "a) Explain, various factors should be consider while selecting the value of specific electrical and magnetic loading in dc machine. [8]\n\nb) A design is required for a $30\\text{ kW}$, $4$ pole, $900\\text{ rpm}$ dc shunt generator, the full load terminal voltage being $220\\text{ V}$. Assume that the full load armature voltage is $3\\%$ of the terminal voltage. Calculate the main dimensions of the machine if the maximum gap density is $0.85\\text{ wb/m}^2$, specific electrical loading of $20,000$ ampere conductor/meter and field resistance is $120\\Omega$. The ratio of pole arc to pole pitch is $0.7$.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Bhadra",
+      "year": "2082",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 79,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Discuss in brief about insulating material with their classification. What are the fundamentals requirements of a good insulating material, electrical properties of insulating materials? [5]\n\nb) Give the advantages of cold rolled grain oriented steel laminations over hot rolledsteel laminations in transformer.",
+          "marks": "5",
+          "chapter": "Materials Used in Electrical Equipment",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) What are heating time constant and cooling time constant? Explain with necessary mathematical expressions and graph. [6]\n(b) A 400 kVA transformer has its maximum efficiency at 80% of full load and when this transformer is working in $a^n$ ambient temperature of $40^\\circ\\text{C}$ on full load, its oil temperature is observed to be $60^\\circ\\text{C}$ after 1 hour and $72^\\circ\\text{C}$ after 2 hours. Calculate its heating time constant and final steady temperature rise of the transformer. If the rate of heat dissipation is improved by 20% with the help of external fan, find the new kVA rating for same steady temperature rise.",
+          "marks": "6",
+          "chapter": "Heating and Cooling of Machines",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) For a 500 kVA, 50Hz, 6600/400, single phase core type, oil immersed, natural cooled power transformer, the design parameters are:\nConstant for output voltage per turn (K) = 0.8,\nResistivity of copper = $0.021 \\Omega\\text{mm}^2/\\text{m}$,\nMaximum flux density in core ($B_m$) = $1.5 \\text{ Wb/m}^2$,\nCurrent density = $2.75 \\text{ A/mm}^2$,\nCore type = Cruciform,\nWindow space factor (kW) = 0.27,\nStacking factor ($K_i$) = 0.9,\nRatio of height to width of windows ($H_w/W_w$) = 2.5,\nRatio of yoke height to width ($H_y/D_y$) = 1,\nAxial depth of LV winding = 402 mm,\nAxial depth of HV winding = 377.5 mm,\nInside diameter of LV winding = 310 mm,\nOutside diameter of LV winding = 348 mm,\nInside diameter of HV winding = 360 mm,\nOutside diameter of HV winding = 418 mm.\nCalculate;\n\ni) Dimension of core, window & yoke.\nii) Overall dimension of frame\niii) Per unit resistance & leakage reactance.\niv) Per unit regulation at 0.8 pf lagging\nTaking iron loss = 1460 W, copper loss = 3865 W at full load, height of tank = 1.6 m, length of tank = 1.05 m, width of tank = 0.62 m, find the temperature rise. If the mean rise of oil is not to rise $35^\\circ\\text{C}$, find the necessary number of tubes and show its arrangement.",
+          "marks": "20",
+          "chapter": "Transformer Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Write about the factors to be considered while estimating the length of air gap in induction machines. [6]\n\nb) A $15\\text{ kW}$, $440\\text{ V}$, $50\\text{ Hz}$, $1480\\text{ rpm}$, $3$-phase induction motor is built with an inner diameter of stator $25\\text{ cm}$ and length $16\\text{ cm}$. The specific loading is $23000\\text{ ampere-conductors per meter}$. Estimate the following parameter for a $11\\text{ kW}$, $460\\text{ V}$, $6\\text{ pole}$, $50\\text{ Hz}$ delta connected induction motor, assuming same specific loadings as the previous motor with $84\\%$ efficiency and power factor $85\\%$ for each machine. Assume, current density $4\\text{ A/mm}^2$, stator slot pitch is $15$ to $25\\text{ mm}$, ratio of slot depth to width is $3$ and flux density in stator core is $1.2\\text{ Wb/m}^2$.\nCalculate:\n\n(i) Main dimension\n(ii) No of stator slot\n(iii) No of stator conductor and area of stator slot\n(iv) Dimension of each stator slot\n\n(v) Minimum width of stator teeth",
+          "marks": "8",
+          "chapter": "Three Phase Induction Motor Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the factors to be considered while selecting the number of poles in a DC machine. [8]\n\nb) Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the factors to be considered while selecting the number of poles in a DC machine.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Give the advantages of cold rolled grain oriented steel laminations over hot rolledsteel laminations in transformer.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What are the fundamentals requirements of a good insulating material, electrical properties of insulating materials?",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Baishakh",
+      "year": "2082",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 50,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Give suitable reasons for the following. [8]\n\n(i) Distribution transformer are designed to have maximum efficiency at loads much smaller than full loads.\n(ii) LV winding is kept near to core and HV winding is kept outside the LV winding.\n\nb) Design a 100 kVA, 2,200/480 V, 50Hz, single phase, core type oil immersed natural cooled transformer.\nThe required data for design are given below:\nVoltage per turn = 7.5,\nMaximum flux density in the core = $1.2 \\text{ Wb/m}^2$\nCore Type = Cruciform,\nCurrent density = $2.5 \\text{ A/mm}^2$,\nWindow space factor = 0.28,\nStacking factor = 0.9,\nRatio of window height to width = 2\nAnd, width of duct between LV and core, LV winding, HV winding and duct between HV and LV are 5 mm, 25 mm, 30 mm, 10 mm respectively. Assuming all other required parameters, calculate:\n\n(i) Overall dimension of core.\n(ii) Overall dimension of frame.\n(iii) Per unit resistance and leakage reactance drop.\n(iv) Per unit regulation at 0.8 poner factor.",
+          "marks": "16",
+          "chapter": "Transformer Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Derive the output equation for three phase induction motor. [6]\n\nb) A 15 kW, 440 V, 50 Hz, 1480 rpm., 3-phase induction motor is built with an inner diameter of stator 25 cm and length 16 cm. The specific loading is 23000 ampere conductors per meter. Estimate the following parameter for a 11 kW, 460 V, 6 pole, 50 Hz delta connected induction motor, assuming same specific loadings as the previous motor with 84 % efficiency and power factor 85% for each machine. Assume, current density $4 \\text{ A/mm}^2$, stator slot pitch is 15 to 25 mm, ratio of slot depth to width is 3 and flux density in stator core is $1.2 \\text{ Wb/m}^2$. Winding factor = 0.955. Slot space factor = 0.4.\nCalculate:\n\n(i) Main dimension.\n(ii) No. of stator slot.\n(iii) No. of stator conductor and area of stator slot.\n(iv) Dimension of each stator slot.\n\n(v) Minimum width of stator teeth.",
+          "marks": "12",
+          "chapter": "Three Phase Induction Motor Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) What are the fundamental requirements of high conducting material? Classify and explain the electrical conducting material in brief. [6]\n\nb) What are the fundamental requirements of a good insulating materials? List out the merits and demerits of addition of silicon with iron with suitable diagram.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Explain the temperature gradients in the conductor placed in the slot with necessary figures and expressions. [6]\n\nb) A 20 h.p., 400V, 3-phase, 50 Hz, induction motor has a final steady temperature rise of $40^\\circ\\text{C}$ when running at its rated output. Calculate its one hour rating for the same temperature rise, if the heating time constant is 180 minute. The ratio of conductor losses to constant losses may be assumed as 1.25 and the total losses of the machine at full load are 1800 W.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the factors to be considered while selecting the number of poles in a DC machine. [8]\n\nb) Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Bhadra",
+      "year": "2081",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 93,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) What are the fundamental requirements of high conducting material? Classify and explain the electrical conducting material in brief. [6]\n\nb) What are the fundamental requirements of a good insulating materials? List out the merits and demerits of addition of silicon with iron with suitable diagram.",
+          "marks": "4",
+          "chapter": "Materials Used in Electrical Equipment",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) What are heating time constant and cooling time constant? Explain with necessary mathematical expressions and graphs. [6]\n(b) The temperature rise of a transformer is $25^\\circ\\text{C}$ after one hour and $37.5^\\circ\\text{C}$ after two hours of starting from cold conditions. Calculate the Final steady state temperature rise and the heating time constant. If its temperature falls from the final steady value to $40^\\circ\\text{C}$ in 2.5 hour when disconnected, calculate its cooling time constant .The ambient temperature is $30^\\circ\\text{C}$.",
+          "marks": "6",
+          "chapter": "Heating and Cooling of Machines",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Derive an output equation for the three phase core type transformer. [6]\n\nb) The design parameter for 150 kVA, 50 Hz, 11000/440 V, 3-phase, delta/star, core type, oil immersed natural cooled distribution transformer are given below.\nConstant for output voltage per turn = 0.45\nMaximum flux density in the core = $1.35 \\text{ Wb/m}^2$\nCurrent density in conductor = $2.5 \\text{ A/mm}^2$\nTake 5% more current density in HV winding\nCore type = three stepped\nWindow space factor = 0.25\nStacking factor = 0.9\nRatio of window height to width = 2.3\nTake hot rolled steel and area of yoke is 20% greater than gross area of core\nWidth of LV winding = 20 mm\nWidth of HV winding = 25 mm\nWidth of duct between HV and LV winding = 15 mm\nMean height of coil = 231.25 mm\nResistivity of copper = $0.021 \\text{ }\\Omega\\text{-mm}^2\\text{/m}$\nHeight of tank = 1150 mm\nWidth of tank = 425 mm\nLength of tank = 1050 mm\nTotal losses = 2850 W\nAssuming all other required parameters, calculate:\n\n(i) Overall dimension of frame.\n(ii) Per unit voltage regulation at 0.85 pf.\n(iii) Calculate the minimum number of tubes of diameter 50 mm with average length of 1.05 m required for maintaining the mean temperature within the permissible limit. The mean temperature of the oil not exceed $35^\\circ\\text{C}$. The rate of heat dissipation from plain wall is 6.5 and $6 \\text{ W/m}^2\\text{-}^\\circ\\text{C}$ for convection and radiation respectively. The provision of tubes improves the rate of heat dissipation by 35%.",
+          "marks": "7",
+          "chapter": "Transformer Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Write about the factors to be considered while estimating the length of air gap in induction machines. [6]\n\nb) A $15\\text{ kW}$, $440\\text{ V}$, $50\\text{ Hz}$, $1480\\text{ rpm}$, $3$-phase induction motor is built with an inner diameter of stator $25\\text{ cm}$ and length $16\\text{ cm}$. The specific loading is $23000\\text{ ampere-conductors per meter}$. Estimate the following parameter for a $11\\text{ kW}$, $460\\text{ V}$, $6\\text{ pole}$, $50\\text{ Hz}$ delta connected induction motor, assuming same specific loadings as the previous motor with $84\\%$ efficiency and power factor $85\\%$ for each machine. Assume, current density $4\\text{ A/mm}^2$, stator slot pitch is $15$ to $25\\text{ mm}$, ratio of slot depth to width is $3$ and flux density in stator core is $1.2\\text{ Wb/m}^2$.\nCalculate:\n\n(i) Main dimension\n(ii) No of stator slot\n(iii) No of stator conductor and area of stator slot\n(iv) Dimension of each stator slot\n\n(v) Minimum width of stator teeth",
+          "marks": "8",
+          "chapter": "Three Phase Induction Motor Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the factors to be considered while selecting the number of poles in a DC machine. [8]\n\nb) Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the factors to be considered while selecting the number of poles in a DC machine.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What are the fundamentals requirements of a good insulating material, electrical properties of insulating materials?",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What are the fundamental requirements of high conducting material?",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Classify and explain the electrical conducting material in brief.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "List out the merits and demerits of addition of silicon with iron with suitable diagram.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "a) What are the factors influencing air gap length determination in induction motor? [6]\n\nb) A $15\\text{ kW}$, $440\\text{V}$, 3-phase, $50\\text{ Hz}$, $1480\\text{ rpm}$, three phase induction motor is built with an inner diameter of stator $25\\text{ cm}$ and length $16\\text{ cm}$. The specific loading is $23,000$ ampere conductors per meter. Estimate the following parameter for a $11\\text{ kW}$, $460\\text{V}$, 6 pole, $50\\text{ Hz}$ delta connected induction motor, assuming same specific loadings as the previous motor with efficiency $84\\%$ and power factor $85\\%$ for each machine.\nAssume;\nCurrent density $= 4\\text{ A/mm}^2$\nWinding factor $= 0.955$\nStator slot pitch $= 15\\text{ to } 25\\text{ mm}$\nSlot space factor $= 0.4$\nRatio of slot depth to width $= 3$\nFlux density in stator core $= 1.2\\text{ Wb/m}^2$\nCalculate:\n\n(i) Main dimensions of the machine.\n(ii) No. of stator slots.\n(iii) No. of stator conductor and area of stator slot.\n(iv) Area and dimension of each stator slot.",
+          "marks": "12",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Bhadra",
+      "year": "2080",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 71,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) What are the different classes of insulator used in Electric Machine? Classify them based on their thermal stability and materials used. [5]\n\nb) Explain the advantages of cold rolled grain oriented steel laminations over hot rolled steel laminations in transformer.",
+          "marks": "4",
+          "chapter": "Materials Used in Electrical Equipment",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Derive the expression for internal temperature (hot spot) of the core. [6]\n(b) The temperature rise of a transformer is $25^\\circ\\text{C}$ after one hour and $37.5^\\circ\\text{C}$ after two hours of starting from cold conditions. Calculate its final steady temperature rise and the heating time constant. If temperature falls from final steady value to $40^\\circ\\text{C}$ in 2.5 hours when disconnected, calculate its cooling time constant constant. The ambient temperature is $30^\\circ\\text{C}$.",
+          "marks": "8",
+          "chapter": "Heating and Cooling of Machines",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Differentiate between core and shell type transformer. [6]\n\nb) For a 4000 KVA, 3 phase, 50 Hz, 66 KV/11KV, 3 phase, 50 Hz, delta/delta, core type, oil immersed natural cooled power transformer are:\nMax flux density in core = $1.6 \\text{ Wb/m}^2$\nConstant for output voltage per turn = 0.6\nResistivity of Copper = $0.021 \\text{ }\\Omega\\text{mm}^2/\\text{m}$\nCore type = Cruciform\nCurrent density in conductors = $2.5 \\text{ A/ mm}^2$\nWindow space factor = 0.22\nStacking factor = 0.9\nRatio of window height to width = 2.75\nTake hot rolled steel and area of yoke is 20% greater than area of core\nWidth of duct between LV and core = 10mm\nWidth of LV winding = 50mm\nWidth of HV winding = 50mm\nWidth of duct between LV and HV = 20 mm\nAssuming all the other required parameters, calculate:\n\n(i) Overall core dimension\n(ii) Overall dimension of frame\n(iii) Per unit resistance and leakage reactance drop\n(iv) Per unit voltage regulation at 8.0 pf",
+          "marks": "18",
+          "chapter": "Transformer Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Write about the factors to be considered while estimating the length of air gap in induction machines. [6]\n\nb) A $15\\text{ kW}$, $440\\text{ V}$, $50\\text{ Hz}$, $1480\\text{ rpm}$, $3$-phase induction motor is built with an inner diameter of stator $25\\text{ cm}$ and length $16\\text{ cm}$. The specific loading is $23000\\text{ ampere-conductors per meter}$. Estimate the following parameter for a $11\\text{ kW}$, $460\\text{ V}$, $6\\text{ pole}$, $50\\text{ Hz}$ delta connected induction motor, assuming same specific loadings as the previous motor with $84\\%$ efficiency and power factor $85\\%$ for each machine. Assume, current density $4\\text{ A/mm}^2$, stator slot pitch is $15$ to $25\\text{ mm}$, ratio of slot depth to width is $3$ and flux density in stator core is $1.2\\text{ Wb/m}^2$.\nCalculate:\n\n(i) Main dimension\n(ii) No of stator slot\n(iii) No of stator conductor and area of stator slot\n(iv) Dimension of each stator slot\n\n(v) Minimum width of stator teeth",
+          "marks": "8",
+          "chapter": "Three Phase Induction Motor Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain, various factors should be consider while selecting the value of specific electrical and magnetic loading in dc machine. [8]\n\nb) A design is required for a $30\\text{ kW}$, $4$ pole, $900\\text{ rpm}$ dc shunt generator, the full load terminal voltage being $220\\text{ V}$. Assume that the full load armature voltage is $3\\%$ of the terminal voltage. Calculate the main dimensions of the machine if the maximum gap density is $0.85\\text{ wb/m}^2$, specific electrical loading of $20,000$ ampere conductor/meter and field resistance is $120\\Omega$. The ratio of pole arc to pole pitch is $0.7$.",
+          "marks": "5",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Give the advantages of cold rolled grain oriented steel laminations over hot rolledsteel laminations in transformer.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Classify them based on their thermal stability and materials used.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "a) Write about the factors to be considered while estimating the length of air gap in induction machines. [6]\n\nb) A $15\\text{ kW}$, $440\\text{ V}$, $50\\text{ Hz}$, $1480\\text{ rpm}$, $3$-phase induction motor is built with an inner diameter of stator $25\\text{ cm}$ and length $16\\text{ cm}$. The specific loading is $23000\\text{ ampere-conductors per meter}$. Estimate the following parameter for a $11\\text{ kW}$, $460\\text{ V}$, $6\\text{ pole}$, $50\\text{ Hz}$ delta connected induction motor, assuming same specific loadings as the previous motor with $84\\%$ efficiency and power factor $85\\%$ for each machine. Assume, current density $4\\text{ A/mm}^2$, stator slot pitch is $15$ to $25\\text{ mm}$, ratio of slot depth to width is $3$ and flux density in stator core is $1.2\\text{ Wb/m}^2$.\nCalculate:\n\n(i) Main dimension\n(ii) No of stator slot\n(iii) No of stator conductor and area of stator slot\n(iv) Dimension of each stator slot\n\n(v) Minimum width of stator teeth",
+          "marks": "12",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Bhadra",
+      "year": "2079",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 100,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) What are the fundamental requirements of a good insulating material? Explain the application of insulating materials in machines in brief. [5]\n\nb) What is ageing of core of electrical machine? What are the advantages and disadvantages of adding silicon with iron?",
+          "marks": "4",
+          "chapter": "Materials Used in Electrical Equipment",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Derive the expression of temperature gradient in conductors placed in slot if\n\n(i) Slot insulation is thick\n(ii) Overhang is considerably not [2+2]\n(b) A 350 kVA transformer has its maximum efficiency at 85% of full load. During a short full load heat run the temperature rise after one hour and two hours is observed to be $24^\\circ\\text{C}$ and $34^\\circ\\text{C}$ respectively. Find thermal time constant and final steady temperature rise of the transformer. If by use of fan, cooling is improved so that heat dissipation per unit area per degree rise in temperature is increased by 15%, find the new kVA rating possible\n\n(i) for same, final temperature rise as before\n(ii) if the allowable temperature rise taken as $50^\\circ\\text{C}$.",
+          "marks": "10",
+          "chapter": "Heating and Cooling of Machines",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Derive the output equation of a single phase transformer. [6]\n\nb) The design parameter for 150 kVA, 50 Hz, 6600/400 V, 3-phase, delta/star, core type, oil immersed natural cooled distribution transformer are given below.\nMax. flux density in core = $1.35 \\text{ Wb/m}^2$\nCurrent density in conductor = $2.75 \\text{ A/mm}^2$\nConstant for output voltage per turn = 0.45\nCore type = cruciform two stepped\nWindow space factor = 0.27\nStacking factor = 0.9\nRatio of window height to width = 2.5\nTake hot rolled steel and area of yoke is 20% greater than gross area of core\nWidth of LV, HV winding and duct between them are 20 mm, 25 mm and 15 mm respectively\nAssuming all other required parameters, calculate:\n\n(i) Dimension of the core, window and yoke\n(ii) Overall dimension of the frame\n(iii) Per unit resistance and leakage reactance drop\n(iv) Per unit voltage regulation at 0.85 pf",
+          "marks": "18",
+          "chapter": "Transformer Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) What are the factors that must be considered while selecting the length of air gap of induction motor? [8]\n\nb) Determine the main dimensions, turns per phase, number of slots, conductor size and slot area of 200 kw, 3$\\phi$, 400 V, 50 Hz, 1420 rpm slip ring induction motor. Assume $B_{av} = 0.5 \\text{ Wb/m}^2$, $ac = 30000 \\text{ ampere conductors per meter}$, efficiency $= 0.9$, p.f $= 0.9$, current density $= 3.5 \\text{ A/mm}^2$. The slot space factor is 0.4 and the ratio of core length to pole pitch is 1.2. The machine is star connected.",
+          "marks": "8",
+          "chapter": "Three Phase Induction Motor Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the factors to be considered while selecting the number of poles in a DC machine. [8]\n\nb) Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the factors to be considered while selecting the number of poles in a DC machine.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Determine the main dimensions, turns per phase, number of slots, conductor size and slot area of 200 kw, 3$\\phi$, 400 V, 50 Hz, 1420 rpm slip ring induction motor. Assume $B_{av} = 0.5 \\text{ Wb/m}^2$, $ac = 30000 \\text{ ampere conductors per meter}$, efficiency $= 0.9$, p.f $= 0.9$, current density $= 3.5 \\text{ A/mm}^2$. The slot space factor is 0.4 and the ratio of core length to pole pitch is 1.2. The machine is star connected.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What are the fundamentals requirements of a good insulating material, electrical properties of insulating materials?",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What are the advantages and disadvantages of adding silicon with iron?",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Determine the main dimensions, turns per phase, number of slots, conductor size and slot area of 200 kw, 3$\\phi$, 400 V, 50 Hz, 1420 rpm slip ring induction motor. Assume $B_{av} = 0.5 \\text{ Wb/m}^2$, $ac = 30000 \\text{ ampere conductors per meter}$, efficiency $= 0.9$, p.f $= 0.9$, current density $= 3.5 \\text{ A/mm}^2$. The slot space factor is 0.4 and the ratio of core length to pole pitch is 1.2. The machine is star connected.",
+          "marks": "12",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Kartik",
+      "year": "2078",
+      "month": "Kartik",
+      "examType": "Back",
+      "totalMarks": 32,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) If the ambient temperature is $\\theta_a , determine$ the maximum temperature of conductor placed in slot if the slot insulation is comparatively very thick. [6]\n(b) A 400 kVA 1100/400V three phase transformer is working in $a^n$ ambient temperature of $35^\\circ\\text{C}$ on full load, its oil temperature is recorded as follows $59^\\circ\\text{C}$ after 1.5 hour and $71^\\circ\\text{C}$ after 3 hours. Its full load copper losses is 2 times the iron losses. Calculate its heating time constant, final steady temperature rise and 1 hour rating.",
+          "marks": "6",
+          "chapter": "Heating and Cooling of Machines",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) For 500 kV, 3-phase, 50 Hz, 66/11 kV, delta/star, core type, oil immersed natural cooled power transformer is: [18]\nMaximum flux density in the core = $1.6 \\text{ wb/m}^2$\nConstant for output voltage per turn = 0.6\nCore type = cruciform\nCurrent density in the conductor = $2.5 \\text{ A/mm}^2$\nWindow space factor = 0.22\nStacking Factor = 0.9\nRatio of window height to width = 2.75\nWith of duct between LV and core, LV winding, HV winding and duct between HV and LV are 10 mm, 50 mm, 60 mm, 20 mm respectively. Assuming all other required parameters, calculate:\n\n(i) Overall dimension of core\n(ii) Overall dimension of frame\n(iii) Per unit resistance and leakage reactance drop\n(iv) Per unit voltage regulation\n\nb) Why are distribution transformers designed to have maximum efficiency at loads much lower than full load? Derive the expression for calculating the number of tubes to be prosvided in a transformer tank.",
+          "marks": "3",
+          "chapter": "Transformer Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Discuss in brief about insulating material with their classification. What are the fundamentals requirements of a good insulating material, electrical properties of insulating materials? [5]\n\nb) Give the advantages of cold rolled grain oriented steel laminations over hot rolledsteel laminations in transformer.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) What are the factors that must be considered while selecting the length of air gap of induction motor? [8]\n\nb) Determine the main dimensions, turns per phase, number of slots, conductor size and slot area of 200 kw, 3$\\phi$, 400 V, 50 Hz, 1420 rpm slip ring induction motor. Assume $B_{av} = 0.5 \\text{ Wb/m}^2$, $ac = 30000 \\text{ ampere conductors per meter}$, efficiency $= 0.9$, p.f $= 0.9$, current density $= 3.5 \\text{ A/mm}^2$. The slot space factor is 0.4 and the ratio of core length to pole pitch is 1.2. The machine is star connected.",
+          "marks": "10",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain, various factors should be consider while selecting the value of specific electrical and magnetic loading in dc machine. [8]\n\nb) A design is required for a $30\\text{ kW}$, $4$ pole, $900\\text{ rpm}$ dc shunt generator, the full load terminal voltage being $220\\text{ V}$. Assume that the full load armature voltage is $3\\%$ of the terminal voltage. Calculate the main dimensions of the machine if the maximum gap density is $0.85\\text{ wb/m}^2$, specific electrical loading of $20,000$ ampere conductor/meter and field resistance is $120\\Omega$. The ratio of pole arc to pole pitch is $0.7$.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Bhadra",
+      "year": "2078",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 85,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) What are the fundamental requirements of a good insulating material? Explain the application of insulating materials in machines in brief. [5]\n\nb) What is ageing of core of electrical machine? What are the advantages and disadvantages of adding silicon with iron?",
+          "marks": "4",
+          "chapter": "Materials Used in Electrical Equipment",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Explain the temperature gradient in an iron core with necessary figure and expression. [6]\n\nb) A transformer has a temperature rise of $30^\\circ\\text{C}$ after 2 hrs and $40^\\circ\\text{C}$ after 3 hrs on quarter load. What is the final steady temperature rise at full load? If the transformer is on 30% overload, how long will it take to attain the same temperature rise provided that maximum efficiency occurs at 70% of full load?",
+          "marks": "6",
+          "chapter": "Heating and Cooling of Machines",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) The design parameter for 100kVA, 4000/433V, 50 Hz, 3-phase, $\\Delta$/Y core type oil immersed natural cooled distribution transformer are given below. [20]\nMax. flux density in core $= 1.3 \\text{ Wb/m}^2$\nCurrent density in conductor $= 2.5 \\text{ A/mm}^2$\nConstant for output voltage per turn $= 0.45$\nCore type $= \\text{cruciform}$\nWindow space factor $= 0.25$\nStacking factor $= 0.9$\nRatio of window height to width $= 2.5$\nWidth of LV winding $= 20 \\text{ mm}$\nWidth of HV winding $= 25 \\text{ mm}$\nWidth of duct between HV and LV $= 15 \\text{ mm}$\nTake hot rolled steel and area of yoke is 20% greater than area of core\nCalculate:\n\n(i) Dimension of the core, window and yoke\n(ii) Overall dimension of the frame\n(iii) Per unit voltage regulation at 0.8 pf\n\nb) Why is the low voltage winding of transformer is placed near to the core in core type transformer?",
+          "marks": "4",
+          "chapter": "Transformer Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) What are the factors that must be considered while selecting the length of air gap of induction motor? [8]\n\nb) Determine the main dimensions, turns per phase, number of slots, conductor size and slot area of 200 kw, 3$\\phi$, 400 V, 50 Hz, 1420 rpm slip ring induction motor. Assume $B_{av} = 0.5 \\text{ Wb/m}^2$, $ac = 30000 \\text{ ampere conductors per meter}$, efficiency $= 0.9$, p.f $= 0.9$, current density $= 3.5 \\text{ A/mm}^2$. The slot space factor is 0.4 and the ratio of core length to pole pitch is 1.2. The machine is star connected.",
+          "marks": "8",
+          "chapter": "Three Phase Induction Motor Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the factors to be considered while selecting the number of poles in a DC machine. [8]\n\nb) Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Determine the main dimensions, turns per phase, number of slots, conductor size and slot area of 200 kw, 3$\\phi$, 400 V, 50 Hz, 1420 rpm slip ring induction motor. Assume $B_{av} = 0.5 \\text{ Wb/m}^2$, $ac = 30000 \\text{ ampere conductors per meter}$, efficiency $= 0.9$, p.f $= 0.9$, current density $= 3.5 \\text{ A/mm}^2$. The slot space factor is 0.4 and the ratio of core length to pole pitch is 1.2. The machine is star connected.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What are the advantages and disadvantages of adding silicon with iron?",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What are the disadvantages of higher specific electric and magnetic loading in design of DC machine?",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Classify them based on their thermal stability and materials used.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What are the advantages and disadvantages of adding silicon with iron?",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "\n(a) What are the disadvantages of higher specific electric and magnetic loading in design of DC machine? [6]\n(b) Calculate the main dimensions and the numbers of poles of a 37kw, 230V, 1400 rpm dc shunt motor so that a square pole face is obtained. The average gap density is $0.5 \\text{ Wb/m}^2$ and ampere conductor per meter are 22000. Take full load efficiency of 90% and the ratio of pole arc to pole pitch is 0.7.",
+          "marks": "10",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2076 Chaitra",
+      "year": "2076",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 66,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Explain hysteresis loss and eddy current loss. [4]\n(b) Discuss in brief about insulating material with their classification.",
+          "marks": "4",
+          "chapter": "Materials Used in Electrical Equipment",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Explain the temperature gradients in the conductor placed in the slot with necessary figures and expressions. [6]\n\nb) A 20 h.p., 400V, 3-phase, 50 Hz, induction motor has a final steady temperature rise of $40^\\circ\\text{C}$ when running at its rated output. Calculate its one hour rating for the same temperature rise, if the heating time constant is 180 minute. The ratio of conductor losses to constant losses may be assumed as 1.25 and the total losses of the machine at full load are 1800 W.",
+          "marks": "8",
+          "chapter": "Heating and Cooling of Machines",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Deduce a mathematical expression to obtain the leakage reactance of core type transformer. [6]\n\nb) Design a 100 KVA, 50 Hz, 11/132 kV, 3-phase, $\\Delta/\\text{Y}$, core type oil immersed natural cooled distribution transformer.\nMaximum flux density in core = $1.35\\text{ wb/m}^2$, Core type = 3 stepped\nCurrent density = $2.75\\text{ A/mm}^2$\nWindow space factor = 0.4\n$H_w/W_w = 3$\nTake hot rolled steel sheet and area of yoke = 1.2 Area of core\nAxial depth of L. V. = 268 mm\nAxial depth of H. V. = 276 mm\nRadial depth of L. V. = 14 mm\nRadial depth of H. V. = 18 mm\nWidth of insulation between L.V and H.V = 11 mm\nOutside diameter of L.V = 293 mm, Inside diameter of L.V = 255 mm\nInside diameter of H.V = 314 mm, Outside diameter of H.V = 351 mm\nCalculate:\n\n(i) Dimension of core, window and yoke\n(ii) Overall dimension of frame\n(iii) Leakage reactance of transformer\n(iv) Voltage regulation at 0.8 pf lagging at full load.",
+          "marks": "16",
+          "chapter": "Transformer Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Derive the output equation for three phase induction motor. [6]\n\nb) A 15 kW, 440 V, 50 Hz, 1480 rpm., 3-phase induction motor is built with an inner diameter of stator 25 cm and length 16 cm. The specific loading is 23000 ampere conductors per meter. Estimate the following parameter for a 11 kW, 460 V, 6 pole, 50 Hz delta connected induction motor, assuming same specific loadings as the previous motor with 84 % efficiency and power factor 85% for each machine. Assume, current density $4 \\text{ A/mm}^2$, stator slot pitch is 15 to 25 mm, ratio of slot depth to width is 3 and flux density in stator core is $1.2 \\text{ Wb/m}^2$. Winding factor = 0.955. Slot space factor = 0.4.\nCalculate:\n\n(i) Main dimension.\n(ii) No. of stator slot.\n(iii) No. of stator conductor and area of stator slot.\n(iv) Dimension of each stator slot.\n\n(v) Minimum width of stator teeth.",
+          "marks": "14",
+          "chapter": "Three Phase Induction Motor Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the factors to be considered while selecting the number of poles in a DC machine. [8]\n\nb) Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the factors to be considered while selecting the number of poles in a DC machine.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2076 Ashwin",
+      "year": "2076",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 39,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) What is electrical insulator? Write the various insulating materials used for different kinds of electrical machines? [5]\n(b) What is ageing of core of electrical machine? How it can be minimized?",
+          "marks": "5",
+          "chapter": "Materials Used in Electrical Equipment",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) What is hot spot? Derive the expression to find the hottest spot temperature in terms of surface temperature and thickness of plate. [8]\n(b) The initial temperature of a machine is $40^\\circ\\text{C}$. Calculate the temperature of the machine after 1 hour if its final steady temperature rise is $80^\\circ\\text{C}$ and the heating time constant is 2 hours. The ambient temperature is $30^\\circ\\text{C}$.",
+          "marks": "8",
+          "chapter": "Heating and Cooling of Machines",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) For the design of a 25 KVA, 50 Hz, 11/0.433 KV, delta/star, 3-phase, core type, oil immersed, naturally cooled distribution transformer. The mean temperature of oil not to exceed $35^\\circ\\text{C}$. The following parameters are choosen: $B_m = 1.0 \\text{ Wb/m}^2$, $\\delta = 2.3 \\text{ A/mm}^2$, constant for volt per turn=0.45, type of core-cruciform $K_w=0.18$, $H_w/W_w =2.5$, total loss at full load = 1.2 kw\nWinding dimensions:<table><thead><tr><th></th><th>Insider diameter (mm)</th><th>Outsider diameter (mm)</th><th>Conductor Area ($\\text{mm}^2$)</th></tr></thead><tbody><tr><td>LV</td><td>138</td><td>156.2</td><td>14.9</td></tr><tr><td>HV</td><td>186.2</td><td>239</td><td>0.312</td></tr></tbody></table>$L_c=253 \\text{ mm}$, $\\rho=0.021 \\text{ }\\Omega\\text{-mm}^2/\\text{m}$\nTake dimension: $H_t=950 \\text{ mm}$, $W_t = 840 \\text{ mm}$, $L_t= 350 \\text{ mm}$\n\ni) Calculate overall dimensions of frame.\nii) Calculate per unit regulation at full load and 0.8 pf (lag).\niii) Calculate the minimum number of tubes of diameter 50mm with average length of 1.35 m required for maintaining the mean temperature within the permissible limit. The rate of heat dissipation from plain wall is 6.5 and 6 for convection and radiation respectively. The provision of tube improves the rate of heat dissipation by 35%. [6+6+4]\n\nb) Derive the output equation of 3-phase transformer. Why are the windings of transformer made in circular form?",
+          "marks": "6",
+          "chapter": "Transformer Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Discuss the factors to be consider for the selection of stators slot in $a^n$ induction machine. [6]\n(b) Calculate: i) diameter ii) length iii) $T_s$ iv) Full load current and $a_s$ v) $I^2R$ loss of stator of 3 phase, 120 KW, 2200 V, 50 Hz, 1480 rpm, star connected slip ring from the following particulars. $B_{av}=0.8 \\text{ Tesla} , ac=26000 , \\eta=92\\% , p$.f.=0.88, $L=1.25\\tau , k_w=0.955 , d=5\\text{A/mm}^2 , mean$ length of stator conductors = 75 cm, $\\rho=0.021\\Omega$ per meter and $\\text{mm}^2$ section.",
+          "marks": "10",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the factors to be considered while selecting the number of poles in a DC machine. [8]\n\nb) Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+          "marks": "10",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Chaitra",
+      "year": "2075",
+      "month": "Chaitra",
+      "examType": "Back",
+      "totalMarks": 76,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Differentiate Soft and Hard magnetic materials on the basis of B-H curve with sufficient examples. [5]\n\nb) Classify the materials of high resistivity on the basis of application. Briefly describe each of them with examples.",
+          "marks": "4",
+          "chapter": "Materials Used in Electrical Equipment",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Explain the temperature gradient in an iron core with necessary figure and expression. [6]\n\nb) A transformer has a temperature rise of $30^\\circ\\text{C}$ after 2 hrs and $40^\\circ\\text{C}$ after 3 hrs on quarter load. What is the final steady temperature rise at full load? If the transformer is on 30% overload, how long will it take to attain the same temperature rise provided that maximum efficiency occurs at 70% of full load?",
+          "marks": "6",
+          "chapter": "Heating and Cooling of Machines",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Design a 125 KVA, 50 Hz, 6600/400V, 3-phase, $\\Delta/\\text{Y}$, core type of oil immersed natural cooled distribution transformer. (Assume suitable data if necessary) [16]\nMaximum flux density in core = $1.35\\text{wb/m}^2$, core type=cruciform\nCurrent density=$2.75\\text{ A/mm}^2$\nWindow space factor=0.4\n$H_w/W_w=2.5$\nTake hot rolled steel sheet and area of yoke=1.2 area of core\nAxial depth of L.V. = 268 mm\nAxial depth of H.V. = 276 mm\nRadial depth of L.V. = 14 mm\nRadial depth of H.V. = 18 mm\nWidth of insulation between L.V. and H.V. = 11 mm\nOutside diameter of L.V. = 293 mm, Inside diameter of L.V. = 255 mm\nInside diameter of H.V. = 314 mm, Outside diameter of H.V. = 351 mm\nCalculate:\n\ni) Dimension of core, window and yoke\nii) Overall dimension of frame\niii) Leakage reactance of transformer\niv) Draw overall dimension of frame\n\nb) Why are windings of a transformer made into circular form? What is the advantage of using stepped cores in transformers? Derive the most economical dimension of a two-stepped core.",
+          "marks": "6",
+          "chapter": "Transformer Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Give reasons for the followings: [6]\n\ni) Stator slots should never be equal to the number of rotor slots\nii) The size of induction machine will be small if it is designed with higher speed for the same output.\n\nb) For a 2.2 KW, 400V, 3 phase, 50 Hz 1420 rpm squirrel cage induction motor using star delta starter and having efficiency of 0.8 and power factor 0.825 at full load the following data are given.\nSpecific Magnetic loading = $0.44 \\text{ wb/m}^2$\nSpecific electric loading = $21000 \\text{ A/m}$\nSlot space factor = 0.4\nRatio of core length to pole pitch=1.5\nRatio of slot depth to width = 4\nStator slot pitch = 12 to 15 mm\nCurrent density in conductor = $4 \\text{ A/mm}^2$\nAssuming all other required data, calculate\n\ni) Main dimensions of the machine\nii) Size of stator turns per phase\niii) Size of stator conductor\niv) No. of stator slots\n\nv) Area and dimensions of each stator slot.\nvi) Minimum width of stator teeth.",
+          "marks": "12",
+          "chapter": "Three Phase Induction Motor Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the factors to be considered while selecting the number of poles in a DC machine. [8]\n\nb) Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What are the disadvantages of higher specific electric and magnetic loading in design of DC machine?",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Differentiate between soft magnetic materials and hard magnetic materials in brief with necessary diagrams.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "a) Explain the temperature gradient in an iron core with necessary figure and expression. [6]\n\nb) A transformer has a temperature rise of $30^\\circ\\text{C}$ after 2 hrs and $40^\\circ\\text{C}$ after 3 hrs on quarter load. What is the final steady temperature rise at full load? If the transformer is on 30% overload, how long will it take to attain the same temperature rise provided that maximum efficiency occurs at 70% of full load?",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "a) Explain the factors to be considered while selecting the number of poles in a DC machine. [8]\n\nb) Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Ashwin",
+      "year": "2075",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 42,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) An induction motor is heated to a temperature of $60^\\circ\\text{C}$ and is shut down. Calculate the temperature at a time 20 minutes after the shut down if the cooling time constant is 60 minutes. The ambient temperature is $30^\\circ\\text{C}$. [8]\n(b) Derive the expression for internal temperature (hot spot) of the core.",
+          "marks": "8",
+          "chapter": "Heating and Cooling of Machines",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Differentiate between power and distribution transformer. [4]\n\nb) For a 500kVA, 50Hz, 6600/400V, single phase core type, oil immersed, natural cooled power transformer, the design parameters are:\nConstant for output voltage per turn = 0.8\nResistivity of copper = $0.021\\ \\Omega\\text{-mm}^2/\\text{m}$\nMaximum flux density in the core = $1.5\\ \\text{Wb/m}^2$\nCurrent density = $2.75\\text{A/mm}^2$\nCore type = Cruciform\nWindow space factor = 0.27\nStacking factor = 0.9\nRatio of window height to width = 2.5\nRatio of yoke height to width = 1\nAxial depth of LV winding = 402mm\nAxial depth of HV winding = 377.5mm\nInside diameter of LV winding = 310mm\nOuter diameter of LV winding = 348mm\nInside diameter of HV winding = 360mm\nOutside diameter of HV winding = 418mm\nCalculate:\n\ni) Dimension of the core, window and yoke\nii) Overall dimension of the frame\niii) Per unit regulation at 0.8 pf lagging\niv) Taking iron loss = 1460W, copper loss = 3865W at full load, height of tank = 1.6m, length of tank = 1.05m, width of tank = 0.62m, find the temperature rise. If the mean temperature rise of oil is not to rise $35^\\circ\\text{C}$, find the necessary number of tubes and also show its arrangement.",
+          "marks": "20",
+          "chapter": "Transformer Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Derive the output equation for three phase induction motor. [5]\n(b) What are the factors affecting the choice of specific electrical loading in induction machine? [5]\n(c) A $90\\text{kW} , 500\\text{V} , three$ phase, 8 pole slip ring induction motor having $0.9$ efficiency and power factor of $0.86$ has 63 stator slots with 6 conductors per slot. If the slip ring voltage on open circuit is to be about $400\\text{V} , find$ the number of rotor slots, rotor turns per phase, number of conductors per slot and appropriate full load rotor current per phase. Both stator and rotor are star connected.",
+          "marks": "6",
+          "chapter": "Three Phase Induction Motor Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) What are the factors affecting the choice of number of poles in DC machine? [4]\n\nb) Derive the output equation for the design of dc machine. [4]\n\nc) Determine the main dimensions, number of poles and length of air gap of a $600\\text{kW}$, $500\\text{V}$, $900\\text{rpm}$ generator. Assume average gap density as $0.6\\text{ Wb/m}^2$ and ampere conductors per meter as $35,000\\text{ A/m}$. The ratio of pole arc to pole pitch is $0.75$ and the efficiency is $91\\%$.\nThe following are the design constraints: peripheral speed $\\leq 40\\text{m/s}$, frequency of flux reversal $\\leq 50\\text{Hz}$, current per brush $\\leq 400\\text{A}$, and armature mmf per pole $\\leq 7500\\text{A}$. The mmf required for air gap is $50\\%$ of armature mmf and gap contraction factor is $1.15$.",
+          "marks": "4",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What are the advantages and disadvantages of adding silicon with iron?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2074 Chaitra",
+      "year": "2074",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 82,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) What are the different classes of insulator used in Electric Machine? Classify them based on their thermal stability and materials used. [5]\n\nb) Explain the advantages of cold rolled grain oriented steel laminations over hot rolled steel laminations in transformer.",
+          "marks": "4",
+          "chapter": "Materials Used in Electrical Equipment",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Derive the temperature rise-time curve of the machine under heating condition and also define heating time constant. [8]\n(b) A 400 kVA transformer has its maximum efficiency at 80% of full load. During a short full load heat run, the temperature rise after one hour and two hours is observed to be $24^\\circ\\text{C}$ and $34^\\circ\\text{C}$ respectively. Find the thermal time constant and final steady temperature rise of the transformer. If, by use of a fan, the cooling is improved so that the rate of heat dissipation per unit area per degree rise in temperature is increased by 15%, find the new kVA rating possible\n\n(i) For the same final temperature rise as before\n(ii) If allowable temperature rise is taken as $50^\\circ\\text{C}$",
+          "marks": "8",
+          "chapter": "Heating and Cooling of Machines",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Differentiate between core and shell type transformer. [6]\n\nb) For a 4000 KVA, 3 phase, 50 Hz, 66 KV/11KV, 3 phase, 50 Hz, delta/delta, core type, oil immersed natural cooled power transformer are:\nMax flux density in core = $1.6 \\text{ Wb/m}^2$\nConstant for output voltage per turn = 0.6\nResistivity of Copper = $0.021 \\text{ }\\Omega\\text{mm}^2/\\text{m}$\nCore type = Cruciform\nCurrent density in conductors = $2.5 \\text{ A/ mm}^2$\nWindow space factor = 0.22\nStacking factor = 0.9\nRatio of window height to width = 2.75\nTake hot rolled steel and area of yoke is 20% greater than area of core\nWidth of duct between LV and core = 10mm\nWidth of LV winding = 50mm\nWidth of HV winding = 50mm\nWidth of duct between LV and HV = 20 mm\nAssuming all the other required parameters, calculate:\n\n(i) Overall core dimension\n(ii) Overall dimension of frame\n(iii) Per unit resistance and leakage reactance drop\n(iv) Per unit voltage regulation at 8.0 pf",
+          "marks": "18",
+          "chapter": "Transformer Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) What are the factors that must be considered while selecting the length of air gap of induction motor? [8]\n\nb) Determine the main dimensions, turns per phase, number of slots, conductor size and slot area of 200 kw, 3$\\phi$, 400 V, 50 Hz, 1420 rpm slip ring induction motor. Assume $B_{av} = 0.5 \\text{ Wb/m}^2$, $ac = 30000 \\text{ ampere conductors per meter}$, efficiency $= 0.9$, p.f $= 0.9$, current density $= 3.5 \\text{ A/mm}^2$. The slot space factor is 0.4 and the ratio of core length to pole pitch is 1.2. The machine is star connected.",
+          "marks": "8",
+          "chapter": "Three Phase Induction Motor Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the factors to be considered while selecting the number of poles in a DC machine. [8]\n\nb) Calculate the main dimensions of the machine for a $7.5\\text{ kW}$, $4\\text{ pole}$, $1000\\text{ rpm}$ and $220\\text{ V}$ DC shunt generator. Given that full load efficiency is $0.83$, maximum gap flux density is $0.9\\text{ Wb/m}^2$, specific electrical loading is $30,000\\text{ ampere conductor/meter}$ and field form factor is $0.7$. Assume that the maximum efficiency occurs at full load and the field current is $2.5\\%$ of rated load current. The pole face is square.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Determine the main dimensions, turns per phase, number of slots, conductor size and slot area of 200 kw, 3$\\phi$, 400 V, 50 Hz, 1420 rpm slip ring induction motor. Assume $B_{av} = 0.5 \\text{ Wb/m}^2$, $ac = 30000 \\text{ ampere conductors per meter}$, efficiency $= 0.9$, p.f $= 0.9$, current density $= 3.5 \\text{ A/mm}^2$. The slot space factor is 0.4 and the ratio of core length to pole pitch is 1.2. The machine is star connected.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Give the advantages of cold rolled grain oriented steel laminations over hot rolledsteel laminations in transformer.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Derive the expressions for output equation of three phase induction machine.",
+          "marks": "8",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "\n(a) Differentiate between hot rolled and cold rolled grain-oriented steel. [4]\n(b) What are the different classes of insulation used in electrical machine? Mention their maximum working temperature and the types of material used in such classes.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Determine the main dimensions, turns per phase, number of slots, conductor size and slot area of 200 kw, 3$\\phi$, 400 V, 50 Hz, 1420 rpm slip ring induction motor. Assume $B_{av} = 0.5 \\text{ Wb/m}^2$, $ac = 30000 \\text{ ampere conductors per meter}$, efficiency $= 0.9$, p.f $= 0.9$, current density $= 3.5 \\text{ A/mm}^2$. The slot space factor is 0.4 and the ratio of core length to pole pitch is 1.2. The machine is star connected.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2074 Ashwin",
+      "year": "2074",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 42,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Compare the characteristics of conducting and insulating materials used in DC machine. [7]\n(b) What is meant by “ageing” in magnetic material? Enlist the merits and demerits of addition of Silicon with Iron. [5]\n(c) Differentiate between core type and shell type transformer on the basis of construction, Mechanical design, Leakage reactance and Cooling.",
+          "marks": "6",
+          "chapter": "Materials Used in Electrical Equipment",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Derive the expression for calculation of internal temperature of a homogenous material of thickness 't' length 'l' and width 'w'. Other necessary data's can be assumed. [8]\n(b) A 250 volt 1 kilowatt single elemental resistor is made from 0.2mm thick nickel chromium strip. The temperature raised of the strip is not exceed $300^\\circ\\text{C}$. Calculate the length and width of the strip. Assume $e = 0.9 , Radiating$ efficiency = 0.75. Resistivity of nichrome = $1 \\times 10^{-6} \\Omega\\text{-m}$.",
+          "marks": "8",
+          "chapter": "Heating and Cooling of Machines",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Derive the output equation of a single phase transformer. [6]\n\nb) The design parameter for 150 kVA, 50 Hz, 6600/400 V, 3-phase, delta/star, core type, oil immersed natural cooled distribution transformer are given below.\nMax. flux density in core = $1.35 \\text{ Wb/m}^2$\nCurrent density in conductor = $2.75 \\text{ A/mm}^2$\nConstant for output voltage per turn = 0.45\nCore type = cruciform two stepped\nWindow space factor = 0.27\nStacking factor = 0.9\nRatio of window height to width = 2.5\nTake hot rolled steel and area of yoke is 20% greater than gross area of core\nWidth of LV, HV winding and duct between them are 20 mm, 25 mm and 15 mm respectively\nAssuming all other required parameters, calculate:\n\n(i) Dimension of the core, window and yoke\n(ii) Overall dimension of the frame\n(iii) Per unit resistance and leakage reactance drop\n(iv) Per unit voltage regulation at 0.85 pf",
+          "marks": "14",
+          "chapter": "Transformer Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Discuss the factors to be considered for the selection of stator slots in $a^n$ induction machine. [6]\n(b) Determine the main dimensions of a 15kW, 3 phase, 400 V, 50 Hz, 2810 rpm squirrel cage induction motor having efficiency of 0.88 and a full load power factor of 0.9. Assume specific magnetic loading = $0.5 \\text{ Wb/m}^2$ and specific electric loading = $25000 \\text{ A/m}$. Take rotor peripheral speed as approximately 20 m/s at synchronous speed.",
+          "marks": "8",
+          "chapter": "Three Phase Induction Motor Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Explain the factors to be considered when selecting the number of armature slots in dc machine.\n(b) Calculate the main dimensions of a 5 kW, 250 V, 4 pole, 1500 rpm dc shunt generator having full load efficiency of 0.87 and designed to have a square pole face. Assume average flux",
+          "marks": "6",
+          "chapter": "DC Machine Design",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2073 Shrawan",
+      "year": "2073",
+      "month": "Shrawan",
+      "examType": "Back",
+      "totalMarks": 80,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Differentiate between natural and artificial convections in brief. Also derive $a^n$ expression for the temperature rise-time curve for $a^n$ electrical machine.",
+          "marks": "12",
+          "chapter": "Heating and Cooling of Machines",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Determine the main dimensions of the core, the number of turns and the cross sections of the conductors for a $5\\text{kVA} , 11000/400\\text{ V} , 50\\text{Hz} , single$ phase core type distribution transformer. The net conductor area in the window is $0.6$ times the net cross section of iron in the core. Assume a square cross-section for core, a flux density $1\\text{ Wb/m}^2 , a$ current density $1.4\\text{ A/mm}^2 , and$ window space factor $0.2$. The height of window is $3$ times its width.",
+          "marks": "12",
+          "chapter": "Transformer Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "How is the flux density in the design of transformer is chosen?",
+          "marks": "4",
+          "chapter": "Transformer Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Derive the expressions for per unit resistance drop of a core type transformer.",
+          "marks": "8",
+          "chapter": "Transformer Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Derive the expressions for output equation of three phase induction machine.",
+          "marks": "8",
+          "chapter": "Three Phase Induction Motor Design",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What are the fundamental requirements of high conducting materials? Classify and explain the electrical conducting materials in brief.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Differentiate between soft magnetic material and hard magnetic material.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "The following design data are provided for $a^n$ induction motor.\nDiameter of stator bore (D) $= 16\\text{cm} , Length$ of stator core (L)  = 8$.5\\text{cm} , Average$ flux density (Bav)  = 0$.44\\text{ wb/m}^2 , Power$ factor  = 0$.85 , Efficiency = 86$$\\% , Frequency = 50$$\\text{ Hz} , Current$ density  = 5$\\text{A/mm}^2 , Stator$ slots  = 36 , Rotor$$ slots  = 30 , Length$$ of rotor bar  = 15$\\text{cm} , Mean$ diameter of end ring  = 12$\\text{ cm} , Resistivity$ of bar conductor  = 0$.020\\text{ Ohm-metre} , Power$ out of 3-phase, 4-pole, $400\\text{V} , delta$ connected  = 10$\\text{kW} ,\nCalculate$ No-load maximum flux, Length of air gap, No. of turns per phase, Rotor bar current and area, End ring current and area, Losses in bars and end rings.",
+          "marks": "12",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Calculate the main dimensions and the number of poles of a $37\\text{kW} , 230\\text{V} , 1400\\text{ RPM}$ dc shunt motor so that a square pole face is obtained. The average gap density is $0.5\\text{ Wb/m}^2$ and ampere conductors per meter are $22,000$. Take full load efficiency of $90\\%$ and the ratio of pole arc to pole pitch of $0.7$.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What are the factors for the selection of no. of poles in DC machine?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
     }
   ]
 }

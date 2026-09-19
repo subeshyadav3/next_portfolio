@@ -1,626 +1,231 @@
 {
   "subject": "Electric Circuit I",
-  "chapters": [
-    "Basic Circuit Concepts and Network Topology",
-    "Circuit Analysis Techniques (Mesh and Nodal)",
-    "Network Theorems in DC and AC Circuits",
-    "Inductance, Capacitance and Energy Storage",
-    "Sinusoidal Steady-State AC Analysis and Phasors",
-    "Resonance in Series and Parallel RLC Circuits",
-    "Three-Phase Balanced and Unbalanced Circuits"
-  ],
+  "semester": "1",
   "questions": [
     {
       "id": "electric-circuit-i-1",
-      "chapter": "Network Theorems in DC and AC Circuits",
-      "text": "State and explain Thevenin's and Norton's theorems. Determine the Thevenin equivalent circuit across terminals A-B for a bridge network containing dependent voltage and current sources.",
-      "question": "State and explain Thevenin's and Norton's theorems. Determine the Thevenin equivalent circuit across terminals A-B for a bridge network containing dependent voltage and current sources.",
-      "marks": "8",
+      "question": "a) Derive the relationship between voltage and current for the purely inductive circuit excited by ac voltage source. Also show that the power consumed by purely inductive circuit is zero. [4]\n\nb) A RC series circuit ($R_1=40\\ \\Omega$, $C=10\\mu\\text{F}$) and RL series circuit ($R_2=50\\Omega$ and $L=0.2\\text{H}$) are connected in parallel to each other and a source of $100\\text{V}$, $50\\text{Hz}$ is applied across the overall circuit. Calculate,\n\ni) Current drawn by RC branch, RL branch and overall current taken from supply.\nii) Construct phasor diagram.",
+      "text": "a) Derive the relationship between voltage and current for the purely inductive circuit excited by ac voltage source. Also show that the power consumed by purely inductive circuit is zero. [4]\n\nb) A RC series circuit ($R_1=40\\ \\Omega$, $C=10\\mu\\text{F}$) and RL series circuit ($R_2=50\\Omega$ and $L=0.2\\text{H}$) are connected in parallel to each other and a source of $100\\text{V}$, $50\\text{Hz}$ is applied across the overall circuit. Calculate,\n\ni) Current drawn by RC branch, RL branch and overall current taken from supply.\nii) Construct phasor diagram.",
+      "chapter": "Single Phase AC Circuit",
+      "marks": "6",
+      "frequency": 2,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2081 Kartik"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2081 Kartik"
       ],
-      "frequency": 4,
-      "difficulty": "Hard",
-      "importance": "High"
+      "isDiagram": false
     },
     {
       "id": "electric-circuit-i-2",
-      "chapter": "Network Theorems in DC and AC Circuits",
-      "text": "State Maximum Power Transfer Theorem for DC circuits and AC circuits. Prove that maximum power is transferred when load impedance equals the complex conjugate of source impedance ($Z_L = Z_{th}^*$).",
-      "question": "State Maximum Power Transfer Theorem for DC circuits and AC circuits. Prove that maximum power is transferred when load impedance equals the complex conjugate of source impedance ($Z_L = Z_{th}^*$).",
-      "marks": "8",
+      "question": "a) State and explain superposition theorem with an appropriate example. [6]\n\nb) Calculate the average, rms value, form factor and peak factor for the following saw tooth waveform.\n\n    <h2>More from IOE Electrical Engineering</h2>Advanced Computer ProgrammingI/II · 46 questionsElectric Circuit III/II · 41 questionsElectronics CircuitsI/II · 22 questionsElectrical Engineering MaterialII/I · 132 questionsElectrical Machine III/I · 128 questionsInstrumentation and MeasurementII/I · 22 questionsAll Electrical Engineering subjects · Every IOE subject\n  \n</main>\nIOE Past QuestionsPast questions sorted by syllabus unit, with repeat frequency for every question · AI-assisted extraction, pending reviewSuggestions<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"5\" width=\"18\" height=\"14\" rx=\"2\"/></svg><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"5\"/><circle cx=\"12\" cy=\"12\" r=\"4\"/><circle cx=\"17.5\" cy=\"6.5\" r=\".6\"/></svg><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"18\" height=\"18\" rx=\"2\"/></svg><svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"></svg>×<svg viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"></svg>Support IOE Past Questions<h2 id=\"coffeeTitle\">Buy me a coffee</h2>If this helped in your exam preparation journey, help me buy a coffee and fuel the next build! ☕Open Khalti and scan this QR code",
+      "text": "a) State and explain superposition theorem with an appropriate example. [6]\n\nb) Calculate the average, rms value, form factor and peak factor for the following saw tooth waveform.",
+      "chapter": "General",
+      "marks": "6",
+      "frequency": 1,
       "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh",
-        "2075 Bhadra"
+        "2081 Chaitra"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh",
-        "2075 Bhadra"
+        "2081 Chaitra"
       ],
-      "frequency": 4,
-      "difficulty": "Medium",
-      "importance": "High"
+      "isDiagram": true
     },
     {
       "id": "electric-circuit-i-3",
-      "chapter": "Network Theorems in DC and AC Circuits",
-      "text": "Explain the Superposition Theorem and Reciprocity Theorem with their limitations. Solve for branch current in a circuit having both independent and dependent sources using superposition.",
-      "question": "Explain the Superposition Theorem and Reciprocity Theorem with their limitations. Solve for branch current in a circuit having both independent and dependent sources using superposition.",
-      "marks": "8",
+      "question": "a) A $440\\text{ V}$, $50\\text{ Hz}$, 3-phase supply has delta-connected load having $(31 + j59)\\ \\Omega$ between R and Y, $(30 - j40)\\ \\Omega$ between Y and B and $(80 + j60)\\ \\Omega$ between B and R. Find the line currents, phase currents and the power supplied for the sequence RYB. [6]\n\nb) Justify the use of two watt-meter to calculate the power of 3-phase load. [4]\n\nc) Two capacitors A and B are connected in series across a $100\\text{ V}$ supply and the p.d.s. across them are $60\\text{ V}$ and $40\\text{ V}$ respectively. When a capacitor of $2\\ \\mu\\text{F}$ is now connected in parallel with A, the p.d. across B rises to $90\\text{ V}$. Calculate the capacitance of A and B.",
+      "text": "a) A $440\\text{ V}$, $50\\text{ Hz}$, 3-phase supply has delta-connected load having $(31 + j59)\\ \\Omega$ between R and Y, $(30 - j40)\\ \\Omega$ between Y and B and $(80 + j60)\\ \\Omega$ between B and R. Find the line currents, phase currents and the power supplied for the sequence RYB. [6]\n\nb) Justify the use of two watt-meter to calculate the power of 3-phase load. [4]\n\nc) Two capacitors A and B are connected in series across a $100\\text{ V}$ supply and the p.d.s. across them are $60\\text{ V}$ and $40\\text{ V}$ respectively. When a capacitor of $2\\ \\mu\\text{F}$ is now connected in parallel with A, the p.d. across B rises to $90\\text{ V}$. Calculate the capacitance of A and B.",
+      "chapter": "Three Phase Circuit Analysis",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2081 Kartik"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2081 Kartik"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-circuit-i-4",
-      "chapter": "Network Theorems in DC and AC Circuits",
-      "text": "State Millman's Theorem and Tellegen's Theorem. Use Millman's theorem to find the voltage across an impedance connected to three parallel voltage sources with unequal internal impedances.",
-      "question": "State Millman's Theorem and Tellegen's Theorem. Use Millman's theorem to find the voltage across an impedance connected to three parallel voltage sources with unequal internal impedances.",
+      "question": "a) What is an ideal and practical voltage source? Explain the effect of on resistance of voltage and current source on their terminal characteristics. [2+4]\n\nb) Two coils connected in series have resistances of $600\\ \\Omega$ and $300\\ \\Omega$ with temperature coefficient of $0.1\\%$ and $0.4\\%$ respectively at $20^\\circ\\text{C}$. Find the resistance of the combination at a temperature of $50^\\circ\\text{C}$. What is the effective temperature coefficient of combination?",
+      "text": "a) What is an ideal and practical voltage source? Explain the effect of on resistance of voltage and current source on their terminal characteristics. [2+4]\n\nb) Two coils connected in series have resistances of $600\\ \\Omega$ and $300\\ \\Omega$ with temperature coefficient of $0.1\\%$ and $0.4\\%$ respectively at $20^\\circ\\text{C}$. Find the resistance of the combination at a temperature of $50^\\circ\\text{C}$. What is the effective temperature coefficient of combination?",
+      "chapter": "Introduction to Electric Circuits",
       "marks": "6",
+      "frequency": 1,
       "years": [
-        "2083 Baishakh",
-        "2081 Chaitra",
-        "2079 Baishakh"
+        "2081 Chaitra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Chaitra",
-        "2079 Baishakh"
+        "2081 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-circuit-i-5",
-      "chapter": "Network Theorems in DC and AC Circuits",
-      "text": "State Substitution Theorem and Compensation Theorem. Explain how change in branch resistance ($\\Delta R$) produces an incremental current in all branches of a linear network.",
-      "question": "State Substitution Theorem and Compensation Theorem. Explain how change in branch resistance ($\\Delta R$) produces an incremental current in all branches of a linear network.",
+      "question": "Two impedances $Z_1$ and $Z_2$ are connected in parallel. The first branch takes a leading current of $16\\text{ A}$ and has a resistance of $5\\ \\Omega$ while the second branch takes a lagging current at power factor $0.8$. The total power supplied is $5\\text{ kW}$, the applied voltage being $(100 + j\\ 100)\\text{ V}$. Determine the complex expressions for branch currents, total current, and for the circuit constants.",
+      "text": "Two impedances $Z_1$ and $Z_2$ are connected in parallel. The first branch takes a leading current of $16\\text{ A}$ and has a resistance of $5\\ \\Omega$ while the second branch takes a lagging current at power factor $0.8$. The total power supplied is $5\\text{ kW}$, the applied voltage being $(100 + j\\ 100)\\text{ V}$. Determine the complex expressions for branch currents, total current, and for the circuit constants.",
+      "chapter": "Single Phase AC Circuit",
       "marks": "6",
+      "frequency": 1,
       "years": [
-        "2082 Bhadra",
-        "2081 Baishakh",
-        "2078 Chaitra"
+        "2081 Kartik"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2081 Baishakh",
-        "2078 Chaitra"
+        "2081 Kartik"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-circuit-i-6",
-      "chapter": "Circuit Analysis Techniques (Mesh and Nodal)",
-      "text": "Explain the concept of Supernode and Supermesh analysis. Write nodal equations for a planar circuit containing two non-reference nodes connected by an ideal independent voltage source.",
-      "question": "Explain the concept of Supernode and Supermesh analysis. Write nodal equations for a planar circuit containing two non-reference nodes connected by an ideal independent voltage source.",
-      "marks": "8",
+      "question": "a) Derive the resonant frequency for a parallel circuit consisting of coil having R and L in one branch and a pure capacitance C in the other branch. [6]\n\nb) Derive the resonant frequency for a parallel circuit consisting of coil having R and L in one branch and a pure capacitance C in the other branch. [3]\n\nc) Show by equation and the phasor diagram that the sum of three phase EMFs is always zero.",
+      "text": "a) Derive the resonant frequency for a parallel circuit consisting of coil having R and L in one branch and a pure capacitance C in the other branch. [6]\n\nb) Derive the resonant frequency for a parallel circuit consisting of coil having R and L in one branch and a pure capacitance C in the other branch. [3]\n\nc) Show by equation and the phasor diagram that the sum of three phase EMFs is always zero.",
+      "chapter": "Three Phase Circuit Analysis",
+      "marks": "3",
+      "frequency": 1,
       "years": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2076 Chaitra"
+        "2082 Chaitra"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2076 Chaitra"
+        "2082 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-circuit-i-7",
-      "chapter": "Circuit Analysis Techniques (Mesh and Nodal)",
-      "text": "Formulate matrix loop impedance equations $[Z][I] = [V]$ for a coupled planar network with mutual inductances. Explain how Cramer's rule is applied to compute branch currents.",
-      "question": "Formulate matrix loop impedance equations $[Z][I] = [V]$ for a coupled planar network with mutual inductances. Explain how Cramer's rule is applied to compute branch currents.",
-      "marks": "8",
+      "question": "Define ohmic and non-ohmic resistance. A $100\\text{ W}$, $230\\text{ V}$ incandescent filament lamp is switched on at $20^\\circ\\text{C}$. The operating temperature of the filament is $1800^\\circ\\text{C}$. Determine the current taken by the lamp at the instant of switching on. The temperature coefficient of resistance of the filament material is $0.0045 /^\\circ\\text{C}$.",
+      "text": "Define ohmic and non-ohmic resistance. A $100\\text{ W}$, $230\\text{ V}$ incandescent filament lamp is switched on at $20^\\circ\\text{C}$. The operating temperature of the filament is $1800^\\circ\\text{C}$. Determine the current taken by the lamp at the instant of switching on. The temperature coefficient of resistance of the filament material is $0.0045 /^\\circ\\text{C}$.",
+      "chapter": "Introduction to Electric Circuits",
+      "marks": "2",
+      "frequency": 1,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2077 Chaitra"
+        "2081 Kartik"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2077 Chaitra"
+        "2081 Kartik"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-circuit-i-8",
-      "chapter": "Circuit Analysis Techniques (Mesh and Nodal)",
-      "text": "Explain source transformation technique (practical voltage source to practical current source and vice-versa). Find power dissipated in an $8\\,\\Omega$ load resistor using successive source transformations.",
-      "question": "Explain source transformation technique (practical voltage source to practical current source and vice-versa). Find power dissipated in an $8\\,\\Omega$ load resistor using successive source transformations.",
-      "marks": "6",
+      "question": "a) A $440\\ V$, $50\\ Hz$, 3-phase supply has delta-connected load having $50\\ \\Omega$ between R and Y, $159\\ mH$ between Y and B and $15.9\\ \\mu F$ between B and R. Find the line currents for the sequence RYB and the power supplied. [6]\n\nb) What is Capacitance? Derive the expression for series and parallel connection of capacitance.",
+      "text": "a) A $440\\ V$, $50\\ Hz$, 3-phase supply has delta-connected load having $50\\ \\Omega$ between R and Y, $159\\ mH$ between Y and B and $15.9\\ \\mu F$ between B and R. Find the line currents for the sequence RYB and the power supplied. [6]\n\nb) What is Capacitance? Derive the expression for series and parallel connection of capacitance.",
+      "chapter": "Three Phase Circuit Analysis",
+      "marks": "2",
+      "frequency": 1,
       "years": [
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2075 Bhadra"
+        "2082 Kartik"
       ],
       "examSessions": [
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2075 Bhadra"
+        "2082 Kartik"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-circuit-i-9",
-      "chapter": "Circuit Analysis Techniques (Mesh and Nodal)",
-      "text": "Define duality in electrical networks. What are the dual pairs of circuit elements and topological parameters? Construct the exact dual of a two-loop circuit having series R-L and parallel R-C elements.",
-      "question": "Define duality in electrical networks. What are the dual pairs of circuit elements and topological parameters? Construct the exact dual of a two-loop circuit having series R-L and parallel R-C elements.",
+      "question": "In a 3-phase, 4-wire Y-connected system load in each phase are as follow:\nR-phase load : $Z = 4 + j3$\nY-phase load: $Z = 3 - j4$\nB-phase load: $Z = -j6$\nThe source voltage is $230\\text{V}$ (per phase). Calculate the Neutral current and total power consumed.",
+      "text": "In a 3-phase, 4-wire Y-connected system load in each phase are as follow:\nR-phase load : $Z = 4 + j3$\nY-phase load: $Z = 3 - j4$\nB-phase load: $Z = -j6$\nThe source voltage is $230\\text{V}$ (per phase). Calculate the Neutral current and total power consumed.",
+      "chapter": "Three Phase Circuit Analysis",
       "marks": "6",
+      "frequency": 1,
       "years": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2078 Chaitra"
+        "2081 Kartik"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2078 Chaitra"
+        "2081 Kartik"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "electric-circuit-i-10",
-      "chapter": "Sinusoidal Steady-State AC Analysis and Phasors",
-      "text": "Define RMS value, Average value, Form Factor, and Crest (Peak) Factor. Derive the RMS and Average values of a half-wave rectified sinusoidal waveform and a triangular waveform.",
-      "question": "Define RMS value, Average value, Form Factor, and Crest (Peak) Factor. Derive the RMS and Average values of a half-wave rectified sinusoidal waveform and a triangular waveform.",
-      "marks": "8",
+      "question": "Explain the condition of resonance in series RLC circuit with necessary circuit diagram and Phasor diagram & hence derive the expression for corresponding resonant frequency and bandwidth.",
+      "text": "Explain the condition of resonance in series RLC circuit with necessary circuit diagram and Phasor diagram & hence derive the expression for corresponding resonant frequency and bandwidth.",
+      "chapter": "Single Phase AC Circuit",
+      "marks": "6",
+      "frequency": 1,
       "years": [
-        "2083 Baishakh",
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2076 Chaitra"
+        "2081 Kartik"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2076 Chaitra"
+        "2081 Kartik"
       ],
-      "frequency": 4,
-      "difficulty": "Medium",
-      "importance": "High"
+      "isDiagram": true
     },
     {
       "id": "electric-circuit-i-11",
-      "chapter": "Sinusoidal Steady-State AC Analysis and Phasors",
-      "text": "Define active power ($P$), reactive power ($Q$), apparent power ($S$), and complex power ($\\mathbf{S} = \\mathbf{V} \\mathbf{I}^*$). Draw the power triangle and explain the physical meaning of lagging and leading power factor.",
-      "question": "Define active power ($P$), reactive power ($Q$), apparent power ($S$), and complex power ($\\mathbf{S} = \\mathbf{V} \\mathbf{I}^*$). Draw the power triangle and explain the physical meaning of lagging and leading power factor.",
-      "marks": "6",
+      "question": "a) Derive the expression for energy storage in an inductor. [3]\n\nb) What are the causes and way to improve the low power factor?",
+      "text": "a) Derive the expression for energy storage in an inductor. [3]\n\nb) What are the causes and way to improve the low power factor?",
+      "chapter": "Capacitance and Inductance",
+      "marks": "3",
+      "frequency": 1,
       "years": [
-        "2081 Bhadra",
-        "2079 Baishakh",
-        "2077 Magh"
+        "2081 Kartik"
       ],
       "examSessions": [
-        "2081 Bhadra",
-        "2079 Baishakh",
-        "2077 Magh"
+        "2081 Kartik"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
-    },
+      "isDiagram": false
+    }
+  ],
+  "yearWisePapers": [
     {
-      "id": "electric-circuit-i-12",
-      "chapter": "Sinusoidal Steady-State AC Analysis and Phasors",
-      "text": "A load of $(20 + j15)\\,\\Omega$ is connected across a $230\\text{ V}, 50\\text{ Hz}$ supply. Calculate active power, reactive power, and power factor. Determine the rating of a parallel shunt capacitor required to raise the power factor to $0.95$ lagging.",
-      "question": "A load of $(20 + j15)\\,\\Omega$ is connected across a $230\\text{ V}, 50\\text{ Hz}$ supply. Calculate active power, reactive power, and power factor. Determine the rating of a parallel shunt capacitor required to raise the power factor to $0.95$ lagging.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2076 Bhadra"
-      ],
-      "examSessions": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2076 Bhadra"
-      ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
-    },
-    {
-      "id": "electric-circuit-i-13",
-      "chapter": "Sinusoidal Steady-State AC Analysis and Phasors",
-      "text": "Explain phasor algebra: rectangular, polar, and exponential representations. Draw complete phasor diagrams showing branch currents, line current, and component voltages for an R-L-C parallel circuit.",
-      "question": "Explain phasor algebra: rectangular, polar, and exponential representations. Draw complete phasor diagrams showing branch currents, line current, and component voltages for an R-L-C parallel circuit.",
-      "marks": "6",
-      "years": [
-        "2083 Baishakh",
-        "2081 Chaitra",
-        "2078 Bhadra"
-      ],
-      "examSessions": [
-        "2083 Baishakh",
-        "2081 Chaitra",
-        "2078 Bhadra"
-      ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
-    },
-    {
-      "id": "electric-circuit-i-14",
-      "chapter": "Resonance in Series and Parallel RLC Circuits",
-      "text": "Explain series resonance in an R-L-C circuit. Derive expressions for resonant frequency ($f_0 = \\frac{1}{2\\pi \\sqrt{LC}}$), half-power frequencies ($f_1, f_2$), bandwidth ($BW = f_0/Q$), and quality factor ($Q = \\frac{\\omega_0 L}{R}$).",
-      "question": "Explain series resonance in an R-L-C circuit. Derive expressions for resonant frequency ($f_0 = \\frac{1}{2\\pi \\sqrt{LC}}$), half-power frequencies ($f_1, f_2$), bandwidth ($BW = f_0/Q$), and quality factor ($Q = \\frac{\\omega_0 L}{R}$).",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2079 Chaitra",
-        "2075 Chaitra"
-      ],
-      "examSessions": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2079 Chaitra",
-        "2075 Chaitra"
-      ],
-      "frequency": 4,
-      "difficulty": "Medium",
-      "importance": "High"
-    },
-    {
-      "id": "electric-circuit-i-15",
-      "chapter": "Resonance in Series and Parallel RLC Circuits",
-      "text": "In a series R-L-C circuit, $R = 10\\,\\Omega$, $L = 50\\text{ mH}$, and $C = 10\\,\\mu\\text{F}$. Determine resonant frequency, quality factor, half-power bandwidth, and maximum voltages across $L$ and $C$ when connected to a $100\\text{ V}$ AC source.",
-      "question": "In a series R-L-C circuit, $R = 10\\,\\Omega$, $L = 50\\text{ mH}$, and $C = 10\\,\\mu\\text{F}$. Determine resonant frequency, quality factor, half-power bandwidth, and maximum voltages across $L$ and $C$ when connected to a $100\\text{ V}$ AC source.",
-      "marks": "8",
-      "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2078 Chaitra"
-      ],
-      "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2078 Chaitra"
-      ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
-    },
-    {
-      "id": "electric-circuit-i-16",
-      "chapter": "Resonance in Series and Parallel RLC Circuits",
-      "text": "Explain parallel resonance (anti-resonance) in a tank circuit consisting of an inductor with internal resistance in parallel with an ideal capacitor. Derive the expression for resonant frequency and dynamic impedance ($Z_d = L/(CR)$).",
-      "question": "Explain parallel resonance (anti-resonance) in a tank circuit consisting of an inductor with internal resistance in parallel with an ideal capacitor. Derive the expression for resonant frequency and dynamic impedance ($Z_d = L/(CR)$).",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2077 Chaitra"
-      ],
-      "examSessions": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2077 Chaitra"
-      ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
-    },
-    {
-      "id": "electric-circuit-i-17",
-      "chapter": "Resonance in Series and Parallel RLC Circuits",
-      "text": "Compare series and parallel resonance with respect to impedance at resonance, current at resonance, power factor, and voltage/current magnification factor.",
-      "question": "Compare series and parallel resonance with respect to impedance at resonance, current at resonance, power factor, and voltage/current magnification factor.",
-      "marks": "6",
-      "years": [
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2076 Chaitra"
-      ],
-      "examSessions": [
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2076 Chaitra"
-      ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
-    },
-    {
-      "id": "electric-circuit-i-18",
-      "chapter": "Inductance, Capacitance and Energy Storage",
-      "text": "Define self-inductance ($L$), mutual inductance ($M$), and coefficient of coupling ($k = M/\\sqrt{L_1 L_2}$). Explain the dot convention for determining polarity in coupled coils.",
-      "question": "Define self-inductance ($L$), mutual inductance ($M$), and coefficient of coupling ($k = M/\\sqrt{L_1 L_2}$). Explain the dot convention for determining polarity in coupled coils.",
-      "marks": "6",
-      "years": [
-        "2083 Baishakh",
-        "2082 Chaitra",
-        "2080 Chaitra"
-      ],
-      "examSessions": [
-        "2083 Baishakh",
-        "2082 Chaitra",
-        "2080 Chaitra"
-      ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
-    },
-    {
-      "id": "electric-circuit-i-19",
-      "chapter": "Inductance, Capacitance and Energy Storage",
-      "text": "Derive the equivalent inductance for two magnetically coupled coils connected in: (a) series-aiding ($L = L_1 + L_2 + 2M$), (b) series-opposing ($L = L_1 + L_2 - 2M$), and parallel aiding/opposing.",
-      "question": "Derive the equivalent inductance for two magnetically coupled coils connected in: (a) series-aiding ($L = L_1 + L_2 + 2M$), (b) series-opposing ($L = L_1 + L_2 - 2M$), and parallel aiding/opposing.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
-      ],
-      "examSessions": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
-      ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
-    },
-    {
-      "id": "electric-circuit-i-20",
-      "chapter": "Inductance, Capacitance and Energy Storage",
-      "text": "Two mutually coupled coils have $L_1 = 0.4\\text{ H}$, $L_2 = 0.9\\text{ H}$, and $k = 0.6$. If coil 1 carries $i_1 = 5\\sin(100t)\\text{ A}$, find the induced voltage in coil 2 on open circuit and when connected to a $20\\,\\Omega$ resistor.",
-      "question": "Two mutually coupled coils have $L_1 = 0.4\\text{ H}$, $L_2 = 0.9\\text{ H}$, and $k = 0.6$. If coil 1 carries $i_1 = 5\\sin(100t)\\text{ A}$, find the induced voltage in coil 2 on open circuit and when connected to a $20\\,\\Omega$ resistor.",
-      "marks": "8",
-      "years": [
-        "2081 Bhadra",
-        "2079 Baishakh",
-        "2076 Bhadra"
-      ],
-      "examSessions": [
-        "2081 Bhadra",
-        "2079 Baishakh",
-        "2076 Bhadra"
-      ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
-    },
-    {
-      "id": "electric-circuit-i-21",
-      "chapter": "Inductance, Capacitance and Energy Storage",
-      "text": "Explain conductive and inductive coupling. Draw the conductive equivalent T-network and $\\pi$-network for two magnetically coupled inductors sharing a common node.",
-      "question": "Explain conductive and inductive coupling. Draw the conductive equivalent T-network and $\\pi$-network for two magnetically coupled inductors sharing a common node.",
-      "marks": "6",
-      "years": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
-      ],
-      "examSessions": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
-      ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
-    },
-    {
-      "id": "electric-circuit-i-22",
-      "chapter": "Inductance, Capacitance and Energy Storage",
-      "text": "Explain the ideal linear transformer model. Derive expressions for reflected impedance ($Z_{in} = Z_1 + \\frac{\\omega^2 M^2}{Z_2 + Z_L}$) and output voltage across load impedance.",
-      "question": "Explain the ideal linear transformer model. Derive expressions for reflected impedance ($Z_{in} = Z_1 + \\frac{\\omega^2 M^2}{Z_2 + Z_L}$) and output voltage across load impedance.",
-      "marks": "8",
-      "years": [
-        "2083 Baishakh",
-        "2081 Chaitra",
-        "2079 Baishakh"
-      ],
-      "examSessions": [
-        "2083 Baishakh",
-        "2081 Chaitra",
-        "2079 Baishakh"
-      ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
-    },
-    {
-      "id": "electric-circuit-i-23",
-      "chapter": "Three-Phase Balanced and Unbalanced Circuits",
-      "text": "Explain the advantages of three-phase systems over single-phase systems. Derive the relations between line voltage and phase voltage, line current and phase current for balanced star and delta connections.",
-      "question": "Explain the advantages of three-phase systems over single-phase systems. Derive the relations between line voltage and phase voltage, line current and phase current for balanced star and delta connections.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2081 Baishakh",
-        "2078 Chaitra",
-        "2075 Bhadra"
-      ],
-      "examSessions": [
-        "2082 Bhadra",
-        "2081 Baishakh",
-        "2078 Chaitra",
-        "2075 Bhadra"
-      ],
-      "frequency": 4,
-      "difficulty": "Medium",
-      "importance": "High"
-    },
-    {
-      "id": "electric-circuit-i-24",
-      "chapter": "Three-Phase Balanced and Unbalanced Circuits",
-      "text": "A balanced 3-phase star-connected load of $(12 + j16)\\,\\Omega$ per phase is connected to a $400\\text{ V}, 50\\text{ Hz}$ supply. Find phase voltage, phase current, line current, total active power, reactive power, and power factor.",
-      "question": "A balanced 3-phase star-connected load of $(12 + j16)\\,\\Omega$ per phase is connected to a $400\\text{ V}, 50\\text{ Hz}$ supply. Find phase voltage, phase current, line current, total active power, reactive power, and power factor.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2076 Chaitra"
-      ],
-      "examSessions": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2076 Chaitra"
-      ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
-    },
-    {
-      "id": "electric-circuit-i-25",
-      "chapter": "Three-Phase Balanced and Unbalanced Circuits",
-      "text": "Explain the two-wattmeter method for measuring total active and reactive power in a 3-phase balanced load. Derive formulas for total power ($P = W_1 + W_2$) and power factor angle ($\\tan \\phi = \\sqrt{3} \\frac{W_1 - W_2}{W_1 + W_2}$).",
-      "question": "Explain the two-wattmeter method for measuring total active and reactive power in a 3-phase balanced load. Derive formulas for total power ($P = W_1 + W_2$) and power factor angle ($\\tan \\phi = \\sqrt{3} \\frac{W_1 - W_2}{W_1 + W_2}$).",
-      "marks": "8",
-      "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2077 Chaitra",
-        "2074 Bhadra"
-      ],
-      "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2077 Chaitra",
-        "2074 Bhadra"
-      ],
-      "frequency": 4,
-      "difficulty": "Hard",
-      "importance": "High"
-    },
-    {
-      "id": "electric-circuit-i-26",
-      "chapter": "Three-Phase Balanced and Unbalanced Circuits",
-      "text": "In a two-wattmeter test, the readings are $W_1 = 5\\text{ kW}$ and $W_2 = -1.2\\text{ kW}$. Determine: (a) total active power, (b) load power factor, (c) reactive power, and explain why $W_2$ reads negative.",
-      "question": "In a two-wattmeter test, the readings are $W_1 = 5\\text{ kW}$ and $W_2 = -1.2\\text{ kW}$. Determine: (a) total active power, (b) load power factor, (c) reactive power, and explain why $W_2$ reads negative.",
-      "marks": "6",
-      "years": [
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2075 Chaitra"
-      ],
-      "examSessions": [
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2075 Chaitra"
-      ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
-    },
-    {
-      "id": "electric-circuit-i-27",
-      "chapter": "Three-Phase Balanced and Unbalanced Circuits",
-      "text": "Explain star-delta and delta-star impedance conversion formulas. Solve for the equivalent star impedance of a delta network containing complex impedances $Z_A = 10\\,\\Omega$, $Z_B = j15\\,\\Omega$, $Z_C = -j20\\,\\Omega$.",
-      "question": "Explain star-delta and delta-star impedance conversion formulas. Solve for the equivalent star impedance of a delta network containing complex impedances $Z_A = 10\\,\\Omega$, $Z_B = j15\\,\\Omega$, $Z_C = -j20\\,\\Omega$.",
-      "marks": "6",
-      "years": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2078 Chaitra"
-      ],
-      "examSessions": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2078 Chaitra"
-      ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
-    },
-    {
-      "id": "electric-circuit-i-28",
-      "chapter": "Three-Phase Balanced and Unbalanced Circuits",
-      "text": "Explain unbalanced 3-phase 4-wire star-connected system. Calculate neutral wire current ($I_N = -(I_A + I_B + I_C)$) when phases A, B, C carry unequal single-phase loads.",
-      "question": "Explain unbalanced 3-phase 4-wire star-connected system. Calculate neutral wire current ($I_N = -(I_A + I_B + I_C)$) when phases A, B, C carry unequal single-phase loads.",
-      "marks": "6",
-      "years": [
-        "2083 Baishakh",
-        "2082 Chaitra",
-        "2080 Chaitra"
-      ],
-      "examSessions": [
-        "2083 Baishakh",
-        "2082 Chaitra",
-        "2080 Chaitra"
-      ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
-    },
-    {
-      "id": "electric-circuit-i-29",
-      "chapter": "Three-Phase Balanced and Unbalanced Circuits",
-      "text": "Explain unbalanced 3-phase 3-wire star-connected system using neutral displacement method (Millman's theorem for neutral voltage $V_{nN}$).",
-      "question": "Explain unbalanced 3-phase 3-wire star-connected system using neutral displacement method (Millman's theorem for neutral voltage $V_{nN}$).",
-      "marks": "8",
-      "years": [
-        "2081 Bhadra",
-        "2079 Baishakh",
-        "2077 Magh"
-      ],
-      "examSessions": [
-        "2081 Bhadra",
-        "2079 Baishakh",
-        "2077 Magh"
-      ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
-    },
-    {
-      "id": "electric-circuit-i-30",
-      "chapter": "Network Theorems in DC and AC Circuits",
-      "text": "Write short notes on: (a) Phase sequence and phase sequence indicators, (b) Ideal voltage and current sources, (c) Power factor correction techniques in industrial loads.",
-      "question": "Write short notes on: (a) Phase sequence and phase sequence indicators, (b) Ideal voltage and current sources, (c) Power factor correction techniques in industrial loads.",
-      "marks": "6",
-      "years": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2076 Bhadra"
-      ],
-      "examSessions": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2076 Bhadra"
-      ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "session": "2081 Kartik",
+      "year": "2081",
+      "month": "Kartik",
+      "examType": "Back",
+      "totalMarks": 33,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define ohmic and non-ohmic resistance. A $100\\text{ W}$, $230\\text{ V}$ incandescent filament lamp is switched on at $20^\\circ\\text{C}$. The operating temperature of the filament is $1800^\\circ\\text{C}$. Determine the current taken by the lamp at the instant of switching on. The temperature coefficient of resistance of the filament material is $0.0045 /^\\circ\\text{C}$.",
+          "marks": "2",
+          "chapter": "Introduction to Electric Circuits",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Derive the expression for energy storage in an inductor. [3]\n\nb) What are the causes and way to improve the low power factor?",
+          "marks": "3",
+          "chapter": "Capacitance and Inductance",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Derive the relationship between voltage and current for the purely inductive circuit excited by ac voltage source. Also show that the power consumed by purely inductive circuit is zero. [4]\n\nb) A RC series circuit ($R_1=40\\ \\Omega$, $C=10\\mu\\text{F}$) and RL series circuit ($R_2=50\\Omega$ and $L=0.2\\text{H}$) are connected in parallel to each other and a source of $100\\text{V}$, $50\\text{Hz}$ is applied across the overall circuit. Calculate,\n\ni) Current drawn by RC branch, RL branch and overall current taken from supply.\nii) Construct phasor diagram.",
+          "marks": "6",
+          "chapter": "Single Phase AC Circuit",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Explain the condition of resonance in series RLC circuit with necessary circuit diagram and Phasor diagram & hence derive the expression for corresponding resonant frequency and bandwidth.",
+          "marks": "6",
+          "chapter": "Single Phase AC Circuit",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "Two impedances $Z_1$ and $Z_2$ are connected in parallel. The first branch takes a leading current of $16\\text{ A}$ and has a resistance of $5\\ \\Omega$ while the second branch takes a lagging current at power factor $0.8$. The total power supplied is $5\\text{ kW}$, the applied voltage being $(100 + j\\ 100)\\text{ V}$. Determine the complex expressions for branch currents, total current, and for the circuit constants.",
+          "marks": "6",
+          "chapter": "Single Phase AC Circuit",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "In a 3-phase, 4-wire Y-connected system load in each phase are as follow:\nR-phase load : $Z = 4 + j3$\nY-phase load: $Z = 3 - j4$\nB-phase load: $Z = -j6$\nThe source voltage is $230\\text{V}$ (per phase). Calculate the Neutral current and total power consumed.",
+          "marks": "6",
+          "chapter": "Three Phase Circuit Analysis",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) A $440\\text{ V}$, $50\\text{ Hz}$, 3-phase supply has delta-connected load having $(31 + j59)\\ \\Omega$ between R and Y, $(30 - j40)\\ \\Omega$ between Y and B and $(80 + j60)\\ \\Omega$ between B and R. Find the line currents, phase currents and the power supplied for the sequence RYB. [6]\n\nb) Justify the use of two watt-meter to calculate the power of 3-phase load. [4]\n\nc) Two capacitors A and B are connected in series across a $100\\text{ V}$ supply and the p.d.s. across them are $60\\text{ V}$ and $40\\text{ V}$ respectively. When a capacitor of $2\\ \\mu\\text{F}$ is now connected in parallel with A, the p.d. across B rises to $90\\text{ V}$. Calculate the capacitance of A and B.",
+          "marks": "4",
+          "chapter": "Three Phase Circuit Analysis",
+          "isDiagram": false
+        }
+      ]
     }
   ]
 }

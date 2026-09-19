@@ -1,615 +1,1476 @@
 {
   "subject": "Power Plant Design",
-  "chapters": [
-    "Load Curves and Power Station Economics",
-    "Hydroelectric Power Station Design and Equipment",
-    "Thermal and Gas Turbine Power Station Design",
-    "Substation Design and High-Voltage Switchyard Layout",
-    "Grounding and Earthing Systems in Power Plants",
-    "Environmental and Safety Aspects in Power Stations"
-  ],
+  "semester": "1",
   "questions": [
     {
       "id": "power-plant-design-1",
-      "chapter": "Load Curves and Power Station Economics",
-      "text": "Define connected load, maximum demand, demand factor, load factor, diversity factor, and capacity factor. Explain their significance in determining the cost of electrical energy generation.",
-      "question": "Define connected load, maximum demand, demand factor, load factor, diversity factor, and capacity factor. Explain their significance in determining the cost of electrical energy generation.",
-      "marks": "8",
+      "question": "A typical hydro power plant has the following details.<table><thead><tr><th>Month</th><th>Discharge($\\text{m}^3/\\text{s}$)</th><th></th><th></th></tr></thead><tbody><tr><td>January</td><td>13.5</td><td>$Q_{\\text{max}} (Q_0)$</td><td>$149.00 \\text{ m}^3/\\text{s}$</td></tr><tr><td>February</td><td>8.6</td><td>$Q_{25\\%}$</td><td>$72.5 \\text{ m}^3/\\text{s}$</td></tr><tr><td>March</td><td>6.58</td><td>$Q_{45\\%}$</td><td>$22.87 \\text{ m}^3/\\text{s}$</td></tr><tr><td>April</td><td>7.5</td><td>$Q_{65\\%}$</td><td>$12.7 \\text{ m}^3/\\text{s}$</td></tr><tr><td>May</td><td>12.8</td><td>$Q_{85\\%}$</td><td>$8.70 \\text{ m}^3/\\text{s}$</td></tr><tr><td>June</td><td>25.7</td><td>$Q_{95\\%}$</td><td>$7.1 \\text{ m}^3/\\text{s}$</td></tr><tr><td>July</td><td>72.5</td><td>$Q_{\\text{min}}$</td><td>$5.05 \\text{ m}^3/\\text{s}$</td></tr><tr><td>August</td><td>101.2</td><td></td><td></td></tr><tr><td>September</td><td>81.3</td><td></td><td></td></tr><tr><td>October</td><td>27.05</td><td></td><td></td></tr><tr><td>November</td><td>21.38</td><td></td><td></td></tr><tr><td>Gross Head</td><td>310 m</td></tr><tr><td>Turbine efficiency</td><td>91%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>99%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Raparian release</td><td>10%</td></tr><tr><td>Generator sub transient reactance</td><td>21%</td></tr><tr><td>Transformer reactance</td><td>9.15%</td></tr><tr><td>Transmission line inductance</td><td>0.95 mH/km</td></tr><tr><td>Transmission line length</td><td>30 kM</td></tr><tr><td>Transmission voltage level</td><td>As required</td></tr><tr><td>Generator voltage level</td><td>11 kV</td></tr><tr><td>Transmission circuit (single or double)</td><td>Choose appropriately as required</td></tr></tbody></table>(Please make your own smart assumption if needed beside given data above)\nDesign a power plant project so as to obtain following,\n\na) Installed capacity with design discharge as Q45% and appropriate number of units. [3]\n\nb) Choose the appropriate type of Generator lead. [2]\n\nc) Choose your generator transformer scheme mentioning the reasons. [3]\n\nd) Make single line diagram for the project choosing earthing system, excitation system and bus bar system. [4]\n\ne) Find Rating of high voltage circuit breaker of the project.\nTurbine Selection Table and Charts<table><thead><tr><th>Turbine type</th><th>Head range in metres</th></tr></thead><tbody><tr><td>Kaplan and Propeller</td><td>2 < H < 40</td></tr><tr><td>Francis</td><td>10 < H < 350</td></tr><tr><td>Pelton</td><td>50 < H < 1300</td></tr><tr><td>Michell-Banki</td><td>3 < H < 250</td></tr><tr><td>Turgo</td><td>50 < H < 250</td></tr></tbody></table>Fig. Trubine Efficiency",
+      "text": "A typical hydro power plant has the following details.<table><thead><tr><th>Month</th><th>Discharge($\\text{m}^3/\\text{s}$)</th><th></th><th></th></tr></thead><tbody><tr><td>January</td><td>13.5</td><td>$Q_{\\text{max}} (Q_0)$</td><td>$149.00 \\text{ m}^3/\\text{s}$</td></tr><tr><td>February</td><td>8.6</td><td>$Q_{25\\%}$</td><td>$72.5 \\text{ m}^3/\\text{s}$</td></tr><tr><td>March</td><td>6.58</td><td>$Q_{45\\%}$</td><td>$22.87 \\text{ m}^3/\\text{s}$</td></tr><tr><td>April</td><td>7.5</td><td>$Q_{65\\%}$</td><td>$12.7 \\text{ m}^3/\\text{s}$</td></tr><tr><td>May</td><td>12.8</td><td>$Q_{85\\%}$</td><td>$8.70 \\text{ m}^3/\\text{s}$</td></tr><tr><td>June</td><td>25.7</td><td>$Q_{95\\%}$</td><td>$7.1 \\text{ m}^3/\\text{s}$</td></tr><tr><td>July</td><td>72.5</td><td>$Q_{\\text{min}}$</td><td>$5.05 \\text{ m}^3/\\text{s}$</td></tr><tr><td>August</td><td>101.2</td><td></td><td></td></tr><tr><td>September</td><td>81.3</td><td></td><td></td></tr><tr><td>October</td><td>27.05</td><td></td><td></td></tr><tr><td>November</td><td>21.38</td><td></td><td></td></tr><tr><td>Gross Head</td><td>310 m</td></tr><tr><td>Turbine efficiency</td><td>91%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>99%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Raparian release</td><td>10%</td></tr><tr><td>Generator sub transient reactance</td><td>21%</td></tr><tr><td>Transformer reactance</td><td>9.15%</td></tr><tr><td>Transmission line inductance</td><td>0.95 mH/km</td></tr><tr><td>Transmission line length</td><td>30 kM</td></tr><tr><td>Transmission voltage level</td><td>As required</td></tr><tr><td>Generator voltage level</td><td>11 kV</td></tr><tr><td>Transmission circuit (single or double)</td><td>Choose appropriately as required</td></tr></tbody></table>(Please make your own smart assumption if needed beside given data above)\nDesign a power plant project so as to obtain following,\n\na) Installed capacity with design discharge as Q45% and appropriate number of units. [3]\n\nb) Choose the appropriate type of Generator lead. [2]\n\nc) Choose your generator transformer scheme mentioning the reasons. [3]\n\nd) Make single line diagram for the project choosing earthing system, excitation system and bus bar system. [4]\n\ne) Find Rating of high voltage circuit breaker of the project.\nTurbine Selection Table and Charts<table><thead><tr><th>Turbine type</th><th>Head range in metres</th></tr></thead><tbody><tr><td>Kaplan and Propeller</td><td>2 < H < 40</td></tr><tr><td>Francis</td><td>10 < H < 350</td></tr><tr><td>Pelton</td><td>50 < H < 1300</td></tr><tr><td>Michell-Banki</td><td>3 < H < 250</td></tr><tr><td>Turgo</td><td>50 < H < 250</td></tr></tbody></table>Fig. Trubine Efficiency",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2080 Chaitra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2080 Chaitra"
       ],
-      "frequency": 4,
-      "difficulty": "Medium",
-      "importance": "High"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-2",
-      "chapter": "Load Curves and Power Station Economics",
-      "text": "The annual load duration curve of a power station can be approximated by a straight line from 60 MW to 10 MW. If the installed capacity is 75 MW, calculate: (a) Annual energy generated, (b) Load factor, (c) Capacity factor, (d) Utilization factor.",
-      "question": "The annual load duration curve of a power station can be approximated by a straight line from 60 MW to 10 MW. If the installed capacity is 75 MW, calculate: (a) Annual energy generated, (b) Load factor, (c) Capacity factor, (d) Utilization factor.",
-      "marks": "8",
+      "question": "a) Develop a typical specification while procuring a power transformer to be used in power plant design. [8]\n\nb) A typical hydro power plant has the following details.<table><thead><tr><th>Month</th><th>Discharge($m^3/s$)</th><th></th><th></th></tr></thead><tbody><tr><td>Jan</td><td>11.95</td><td>$Q_{max} (Q_o)$</td><td>674.19 $m^3/s$</td></tr><tr><td>Feb</td><td>9.94</td><td>$Q25\\%$</td><td>48.90 $m^3/s$</td></tr><tr><td>Mar</td><td>9.20</td><td>$Q45\\%$</td><td>16.75 $m^3/s$</td></tr><tr><td>Apr</td><td>11.93</td><td>$Q65\\%$</td><td>9.34 $m^3/s$</td></tr><tr><td>May</td><td>8.48</td><td>$Q85\\%$</td><td>6.21 $m^3/s$</td></tr><tr><td>Jun</td><td>42.28</td><td>$Q95\\%$</td><td>4.38 $m^3/s$</td></tr><tr><td>July</td><td>120.98</td><td>$Qmin$</td><td>1.40 $m^3/s$</td></tr><tr><td>Aug</td><td>143.00</td><td></td><td></td></tr><tr><td>Sep</td><td>110.27</td><td></td><td></td></tr><tr><td>Oct</td><td>50.95</td><td></td><td></td></tr><tr><td>Nov</td><td>24.66</td><td></td><td></td></tr><tr><td>Dec</td><td>16.17</td><td></td><td></td></tr><tr><td>TURBINE TYPE</td><td>HEAD RANGE IN METERS</td></tr><tr><td>Kaplan</td><td>$2 < H < 40$</td></tr><tr><td>Francis</td><td>$10 < H < 350$</td></tr><tr><td>Pelton</td><td>$50 < H < 1300$</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>120 m</td></tr><tr><td>Turbine efficiency</td><td>90%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>98%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Raparian release</td><td>10%</td></tr><tr><td>Generator sub-transient reactance</td><td>15%</td></tr><tr><td>Transformer reactance</td><td>12%</td></tr><tr><td>Transmission line inductance</td><td>0.96 mH/km</td></tr><tr><td>Transmission line length</td><td>20 km</td></tr><tr><td>Transmission Voltage level</td><td>33 kv</td></tr><tr><td>Generator Voltage level</td><td>11 kv</td></tr><tr><td>Transmission circuit</td><td>Single circuit</td></tr></tbody></table>Design a power plant so as to obtain the following parameters\n\ni) Electrical power output taking design discharge as $Q45\\%$\nii) Select the numbers of units and installed capacity with suitable reasons\niii) Draw the single line diagram showing numbers of units, generators, power transformer, station transformer and diesel generator for black start\niv) Select the type of turbine\n\nv) Select the type of busbar with suitable reasons\nvi) Calculate the MVA level of LV bus, MV bus and HV bus\nvii) Calculate the rating of CB to be used in your design.\n(Assume suitable data if required)",
+      "text": "a) Develop a typical specification while procuring a power transformer to be used in power plant design. [8]\n\nb) A typical hydro power plant has the following details.<table><thead><tr><th>Month</th><th>Discharge($m^3/s$)</th><th></th><th></th></tr></thead><tbody><tr><td>Jan</td><td>11.95</td><td>$Q_{max} (Q_o)$</td><td>674.19 $m^3/s$</td></tr><tr><td>Feb</td><td>9.94</td><td>$Q25\\%$</td><td>48.90 $m^3/s$</td></tr><tr><td>Mar</td><td>9.20</td><td>$Q45\\%$</td><td>16.75 $m^3/s$</td></tr><tr><td>Apr</td><td>11.93</td><td>$Q65\\%$</td><td>9.34 $m^3/s$</td></tr><tr><td>May</td><td>8.48</td><td>$Q85\\%$</td><td>6.21 $m^3/s$</td></tr><tr><td>Jun</td><td>42.28</td><td>$Q95\\%$</td><td>4.38 $m^3/s$</td></tr><tr><td>July</td><td>120.98</td><td>$Qmin$</td><td>1.40 $m^3/s$</td></tr><tr><td>Aug</td><td>143.00</td><td></td><td></td></tr><tr><td>Sep</td><td>110.27</td><td></td><td></td></tr><tr><td>Oct</td><td>50.95</td><td></td><td></td></tr><tr><td>Nov</td><td>24.66</td><td></td><td></td></tr><tr><td>Dec</td><td>16.17</td><td></td><td></td></tr><tr><td>TURBINE TYPE</td><td>HEAD RANGE IN METERS</td></tr><tr><td>Kaplan</td><td>$2 < H < 40$</td></tr><tr><td>Francis</td><td>$10 < H < 350$</td></tr><tr><td>Pelton</td><td>$50 < H < 1300$</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>120 m</td></tr><tr><td>Turbine efficiency</td><td>90%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>98%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Raparian release</td><td>10%</td></tr><tr><td>Generator sub-transient reactance</td><td>15%</td></tr><tr><td>Transformer reactance</td><td>12%</td></tr><tr><td>Transmission line inductance</td><td>0.96 mH/km</td></tr><tr><td>Transmission line length</td><td>20 km</td></tr><tr><td>Transmission Voltage level</td><td>33 kv</td></tr><tr><td>Generator Voltage level</td><td>11 kv</td></tr><tr><td>Transmission circuit</td><td>Single circuit</td></tr></tbody></table>Design a power plant so as to obtain the following parameters\n\ni) Electrical power output taking design discharge as $Q45\\%$\nii) Select the numbers of units and installed capacity with suitable reasons\niii) Draw the single line diagram showing numbers of units, generators, power transformer, station transformer and diesel generator for black start\niv) Select the type of turbine\n\nv) Select the type of busbar with suitable reasons\nvi) Calculate the MVA level of LV bus, MV bus and HV bus\nvii) Calculate the rating of CB to be used in your design.\n(Assume suitable data if required)",
+      "chapter": "General",
+      "marks": "16",
+      "frequency": 1,
       "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
+        "2079 Jestha"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
+        "2079 Jestha"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-3",
-      "chapter": "Load Curves and Power Station Economics",
-      "text": "Explain base load and peak load power stations. Discuss criteria for selecting the type and unit size of generating sets for a grid-connected system.",
-      "question": "Explain base load and peak load power stations. Discuss criteria for selecting the type and unit size of generating sets for a grid-connected system.",
-      "marks": "6",
+      "question": "A typical hydro power plant has the following details<table><thead><tr><th>Month</th><th>Discharge($\\text{m}^3\\text{/s}$)</th><th></th><th></th></tr></thead><tbody><tr><td>January</td><td>4.9</td><td>$Q_{\\text{max}}$ ($Q_0$)</td><td>$211.00\\text{ m}^3\\text{/s}$</td></tr><tr><td>February</td><td>3.86</td><td>$Q_{25\\%}$</td><td>$18.24\\text{ m}^3\\text{/s}$</td></tr><tr><td>March</td><td>3.58</td><td>$Q_{45\\%}$</td><td>$6.80\\text{ m}^3\\text{/s}$</td></tr><tr><td>April</td><td>4.55</td><td>$Q_{65\\%}$</td><td>$4.70\\text{ m}^3\\text{/s}$</td></tr><tr><td>May</td><td>3.00</td><td>$Q_{85\\%}$</td><td>$3.10\\text{ m}^3\\text{/s}$</td></tr><tr><td>June</td><td>12.77</td><td>$Q_{95\\%}$</td><td>$2.17\\text{ m}^3\\text{/s}$</td></tr><tr><td>July</td><td>32.95</td><td>$Q_{\\text{min}}$</td><td>$0.64\\text{ m}^3\\text{/s}$</td></tr><tr><td>August</td><td>40.26</td><td></td><td></td></tr><tr><td>September</td><td>31.23</td><td></td><td></td></tr><tr><td>October</td><td>15.05</td><td></td><td></td></tr><tr><td>November</td><td>7.38</td><td></td><td></td></tr><tr><td>December</td><td>4.85</td><td></td><td></td></tr><tr><td>Turbine Type</td><td>Head range (m)</td></tr><tr><td>Kaplan</td><td>2<H<40</td></tr><tr><td>Francis</td><td>10<H<350</td></tr><tr><td>Pelton</td><td>50<H<1300</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>250 m</td></tr><tr><td>Turbine efficiency</td><td>91%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>98%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Raparian release</td><td>10%</td></tr><tr><td>Generator sub transient reactance</td><td>21%</td></tr><tr><td>Transformer reactance</td><td>9.15%</td></tr><tr><td>Transmission line inductance</td><td>0.92mH/km</td></tr><tr><td>Transmission line length</td><td>35 km</td></tr><tr><td>Transmission voltage level</td><td>66kV</td></tr><tr><td>Generator voltage level</td><td>11kV</td></tr><tr><td>Transmission circuit</td><td>Double circuit</td></tr></tbody></table>Design a power plant so as to obtain following parameters\n\na) Electrical power output taking design discharge as $Q_{45\\%}$\n\nb) Select the numbers of units and installed capacity\n\nc) Select the type of turbine\n\nd) Draw the single line diagram showing generators, power transformers, station transformer and diesel generator for black start\n\ne) Calculate the rating of generator circuit breaker to be used in your design\n\nf) Suggest the type of bus bar to be used\n(Assume suitable data if necessary and necessary graph is attached herewith)",
+      "text": "A typical hydro power plant has the following details<table><thead><tr><th>Month</th><th>Discharge($\\text{m}^3\\text{/s}$)</th><th></th><th></th></tr></thead><tbody><tr><td>January</td><td>4.9</td><td>$Q_{\\text{max}}$ ($Q_0$)</td><td>$211.00\\text{ m}^3\\text{/s}$</td></tr><tr><td>February</td><td>3.86</td><td>$Q_{25\\%}$</td><td>$18.24\\text{ m}^3\\text{/s}$</td></tr><tr><td>March</td><td>3.58</td><td>$Q_{45\\%}$</td><td>$6.80\\text{ m}^3\\text{/s}$</td></tr><tr><td>April</td><td>4.55</td><td>$Q_{65\\%}$</td><td>$4.70\\text{ m}^3\\text{/s}$</td></tr><tr><td>May</td><td>3.00</td><td>$Q_{85\\%}$</td><td>$3.10\\text{ m}^3\\text{/s}$</td></tr><tr><td>June</td><td>12.77</td><td>$Q_{95\\%}$</td><td>$2.17\\text{ m}^3\\text{/s}$</td></tr><tr><td>July</td><td>32.95</td><td>$Q_{\\text{min}}$</td><td>$0.64\\text{ m}^3\\text{/s}$</td></tr><tr><td>August</td><td>40.26</td><td></td><td></td></tr><tr><td>September</td><td>31.23</td><td></td><td></td></tr><tr><td>October</td><td>15.05</td><td></td><td></td></tr><tr><td>November</td><td>7.38</td><td></td><td></td></tr><tr><td>December</td><td>4.85</td><td></td><td></td></tr><tr><td>Turbine Type</td><td>Head range (m)</td></tr><tr><td>Kaplan</td><td>2<H<40</td></tr><tr><td>Francis</td><td>10<H<350</td></tr><tr><td>Pelton</td><td>50<H<1300</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>250 m</td></tr><tr><td>Turbine efficiency</td><td>91%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>98%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Raparian release</td><td>10%</td></tr><tr><td>Generator sub transient reactance</td><td>21%</td></tr><tr><td>Transformer reactance</td><td>9.15%</td></tr><tr><td>Transmission line inductance</td><td>0.92mH/km</td></tr><tr><td>Transmission line length</td><td>35 km</td></tr><tr><td>Transmission voltage level</td><td>66kV</td></tr><tr><td>Generator voltage level</td><td>11kV</td></tr><tr><td>Transmission circuit</td><td>Double circuit</td></tr></tbody></table>Design a power plant so as to obtain following parameters\n\na) Electrical power output taking design discharge as $Q_{45\\%}$\n\nb) Select the numbers of units and installed capacity\n\nc) Select the type of turbine\n\nd) Draw the single line diagram showing generators, power transformers, station transformer and diesel generator for black start\n\ne) Calculate the rating of generator circuit breaker to be used in your design\n\nf) Suggest the type of bus bar to be used\n(Assume suitable data if necessary and necessary graph is attached herewith)",
+      "chapter": "General",
+      "marks": "16",
+      "frequency": 1,
       "years": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2071 Magh"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2071 Magh"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-4",
-      "chapter": "Load Curves and Power Station Economics",
-      "text": "Derive the two-part and three-part tariff equations. Discuss how power factor penalty is incorporated into two-part tariffs for industrial consumers.",
-      "question": "Derive the two-part and three-part tariff equations. Discuss how power factor penalty is incorporated into two-part tariffs for industrial consumers.",
-      "marks": "6",
+      "question": "A typical hydropower plant has the following details.<table><thead><tr><th>Month</th><th>Discharge ($m^3/s$)</th><th>Flow duration</th></tr></thead><tbody><tr><td>January</td><td>3.30</td><td>$Q_{max}$</td><td>110.00 $m^3/s$</td></tr><tr><td>February</td><td>2.20</td><td>$Q_{25\\%}$</td><td>16.42 $m^3/s$</td></tr><tr><td>March</td><td>1.40</td><td>$Q_{45\\%}$</td><td>6.82 $m^3/s$</td></tr><tr><td>April</td><td>1.00</td><td>$Q_{65\\%}$</td><td>3.7 $m^3/s$</td></tr><tr><td>May</td><td>3.50</td><td>$Q_{85\\%}$</td><td>2.10 $m^3/s$</td></tr><tr><td>June</td><td>6.00</td><td>$Q_{95\\%}$</td><td>1.17 $m^3/s$</td></tr><tr><td>July</td><td>14.00</td><td>$Q_{min}$</td><td>0.64 $m^3/s$</td></tr><tr><td>August</td><td>35.00</td><td></td><td></td></tr><tr><td>September</td><td>24.00</td><td></td><td></td></tr><tr><td>October</td><td>12.00</td><td></td><td></td></tr><tr><td>November</td><td>7.50</td><td></td><td></td></tr><tr><td>December</td><td>5.00</td><td></td><td></td></tr><tr><td>Turbine type</td><td>Head range</td></tr><tr><td>Kaplan</td><td>$2 < H < 40$</td></tr><tr><td>Francis</td><td>$10 < H < 350$</td></tr><tr><td>Pelton</td><td>$50 < H < 1300$</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>95 m</td></tr><tr><td>Turbine efficiency</td><td>90 %</td></tr><tr><td>Generator efficiency</td><td>97 %</td></tr><tr><td>Transformer efficiency</td><td>98 %</td></tr><tr><td>Head loss</td><td>5 %</td></tr><tr><td>Riparian release</td><td>10 %</td></tr><tr><td>Generator sub transient reactance</td><td>20 %</td></tr><tr><td>Transformer reactance</td><td>11 %</td></tr><tr><td>Transmission line inductance</td><td>0.77 mH/km</td></tr><tr><td>Transmission line length</td><td>80 km</td></tr><tr><td>Transmission Voltage level</td><td>66 kV</td></tr><tr><td>Generator Voltage level</td><td>11 kV</td></tr><tr><td>Transmission circuit</td><td>Single circuit</td></tr></tbody></table>Design a hydro power plant so as to obtain following parameters\n\na) Electrical power output taking design discharge as $Q_{65\\%}$. [1]\n\nb) Select the numbers of unit and installed capacity. [2]\n\nc) Select the type of turbine. [3]\n\nd) Select the type of bus bar to be used. [2]\n\ne) Draw the single line diagram showing number of units, generator, power transformer, station transformer and diesel generator for black start. [4]\n\nf) Calculate the rating of generator circuit breaker and high voltage circuit breaker in your design.",
+      "text": "A typical hydropower plant has the following details.<table><thead><tr><th>Month</th><th>Discharge ($m^3/s$)</th><th>Flow duration</th></tr></thead><tbody><tr><td>January</td><td>3.30</td><td>$Q_{max}$</td><td>110.00 $m^3/s$</td></tr><tr><td>February</td><td>2.20</td><td>$Q_{25\\%}$</td><td>16.42 $m^3/s$</td></tr><tr><td>March</td><td>1.40</td><td>$Q_{45\\%}$</td><td>6.82 $m^3/s$</td></tr><tr><td>April</td><td>1.00</td><td>$Q_{65\\%}$</td><td>3.7 $m^3/s$</td></tr><tr><td>May</td><td>3.50</td><td>$Q_{85\\%}$</td><td>2.10 $m^3/s$</td></tr><tr><td>June</td><td>6.00</td><td>$Q_{95\\%}$</td><td>1.17 $m^3/s$</td></tr><tr><td>July</td><td>14.00</td><td>$Q_{min}$</td><td>0.64 $m^3/s$</td></tr><tr><td>August</td><td>35.00</td><td></td><td></td></tr><tr><td>September</td><td>24.00</td><td></td><td></td></tr><tr><td>October</td><td>12.00</td><td></td><td></td></tr><tr><td>November</td><td>7.50</td><td></td><td></td></tr><tr><td>December</td><td>5.00</td><td></td><td></td></tr><tr><td>Turbine type</td><td>Head range</td></tr><tr><td>Kaplan</td><td>$2 < H < 40$</td></tr><tr><td>Francis</td><td>$10 < H < 350$</td></tr><tr><td>Pelton</td><td>$50 < H < 1300$</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>95 m</td></tr><tr><td>Turbine efficiency</td><td>90 %</td></tr><tr><td>Generator efficiency</td><td>97 %</td></tr><tr><td>Transformer efficiency</td><td>98 %</td></tr><tr><td>Head loss</td><td>5 %</td></tr><tr><td>Riparian release</td><td>10 %</td></tr><tr><td>Generator sub transient reactance</td><td>20 %</td></tr><tr><td>Transformer reactance</td><td>11 %</td></tr><tr><td>Transmission line inductance</td><td>0.77 mH/km</td></tr><tr><td>Transmission line length</td><td>80 km</td></tr><tr><td>Transmission Voltage level</td><td>66 kV</td></tr><tr><td>Generator Voltage level</td><td>11 kV</td></tr><tr><td>Transmission circuit</td><td>Single circuit</td></tr></tbody></table>Design a hydro power plant so as to obtain following parameters\n\na) Electrical power output taking design discharge as $Q_{65\\%}$. [1]\n\nb) Select the numbers of unit and installed capacity. [2]\n\nc) Select the type of turbine. [3]\n\nd) Select the type of bus bar to be used. [2]\n\ne) Draw the single line diagram showing number of units, generator, power transformer, station transformer and diesel generator for black start. [4]\n\nf) Calculate the rating of generator circuit breaker and high voltage circuit breaker in your design.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Baishakh"
+        "2079 Chaitra"
       ],
       "examSessions": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Baishakh"
+        "2079 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-5",
-      "chapter": "Load Curves and Power Station Economics",
-      "text": "Explain depreciation methods (Straight line method, Diminishing value method, and Sinking fund method) for evaluating power plant assets.",
-      "question": "Explain depreciation methods (Straight line method, Diminishing value method, and Sinking fund method) for evaluating power plant assets.",
-      "marks": "6",
+      "question": "A typical hydro power plant has following details.<table><thead><tr><th>Month</th><th>Discharge ($m^3/s$)</th><th>Flow duration</th></tr></thead><tbody><tr><td>January</td><td>3.30</td><td>$Q(max)$</td><td>110.00 $m^3/s$</td></tr><tr><td>February</td><td>2.20</td><td>$Q_{25\\%}$</td><td>16.42 $m^3/s$</td></tr><tr><td>March</td><td>1.40</td><td>$Q_{45\\%}$</td><td>6.82 $m^3/s$</td></tr><tr><td>April</td><td>1.00</td><td>$Q_{65\\%}$</td><td>3.7 $m^3/s$</td></tr><tr><td>May</td><td>3.50</td><td>$Q_{85\\%}$</td><td>2.10 $m^3/s$</td></tr><tr><td>June</td><td>6.00</td><td>$Q_{95\\%}$</td><td>1.17 $m^3/s$</td></tr><tr><td>July</td><td>14.00</td><td>$Q(min)$</td><td>0.64 $m^3/s$</td></tr><tr><td>August</td><td>35.00</td><td></td><td></td></tr><tr><td>September</td><td>24.00</td><td></td><td></td></tr><tr><td>October</td><td>12.00</td><td></td><td></td></tr><tr><td>November</td><td>7.50</td><td></td><td></td></tr><tr><td>December</td><td>5.00</td><td></td><td></td></tr><tr><td>Turbine type</td><td>Head range</td></tr><tr><td>Kaplan</td><td>$2 < H < 40$</td></tr><tr><td>Francis</td><td>$10 < H < 350$</td></tr><tr><td>Pelton</td><td>$50 < H < 1300$</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>180 m</td></tr><tr><td>Turbine efficiency</td><td>90%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>98%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Riparian release</td><td>10%</td></tr><tr><td>Generator sub transient reactance</td><td>21%</td></tr><tr><td>Transformer reactance</td><td>11%</td></tr><tr><td>Transmission line inductance</td><td>3 mH/km</td></tr><tr><td>Transmission line length</td><td>100 km</td></tr><tr><td>Transmission Voltage level</td><td>132 kV</td></tr><tr><td>Generation Voltage level</td><td>11 kV</td></tr><tr><td>Transmission circuit</td><td>Double circuit</td></tr></tbody></table>Design a hydro power plant so as to obtain following parameters\n\na) Electrical power output taking design discharge as $Q_{60\\%}$.\n\nb) Select the numbers of unit and installed capacity.\n\nc) Select the type of turbine.\n\nd) Select the type of bus bar to be used.\n\ne) Draw a single line diagram showing number of units, generator, power transformer, station transformer and diesel generator for black start.\n\nf) Calculate the rating of generator circuit breaker in your design.",
+      "text": "A typical hydro power plant has following details.<table><thead><tr><th>Month</th><th>Discharge ($m^3/s$)</th><th>Flow duration</th></tr></thead><tbody><tr><td>January</td><td>3.30</td><td>$Q(max)$</td><td>110.00 $m^3/s$</td></tr><tr><td>February</td><td>2.20</td><td>$Q_{25\\%}$</td><td>16.42 $m^3/s$</td></tr><tr><td>March</td><td>1.40</td><td>$Q_{45\\%}$</td><td>6.82 $m^3/s$</td></tr><tr><td>April</td><td>1.00</td><td>$Q_{65\\%}$</td><td>3.7 $m^3/s$</td></tr><tr><td>May</td><td>3.50</td><td>$Q_{85\\%}$</td><td>2.10 $m^3/s$</td></tr><tr><td>June</td><td>6.00</td><td>$Q_{95\\%}$</td><td>1.17 $m^3/s$</td></tr><tr><td>July</td><td>14.00</td><td>$Q(min)$</td><td>0.64 $m^3/s$</td></tr><tr><td>August</td><td>35.00</td><td></td><td></td></tr><tr><td>September</td><td>24.00</td><td></td><td></td></tr><tr><td>October</td><td>12.00</td><td></td><td></td></tr><tr><td>November</td><td>7.50</td><td></td><td></td></tr><tr><td>December</td><td>5.00</td><td></td><td></td></tr><tr><td>Turbine type</td><td>Head range</td></tr><tr><td>Kaplan</td><td>$2 < H < 40$</td></tr><tr><td>Francis</td><td>$10 < H < 350$</td></tr><tr><td>Pelton</td><td>$50 < H < 1300$</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>180 m</td></tr><tr><td>Turbine efficiency</td><td>90%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>98%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Riparian release</td><td>10%</td></tr><tr><td>Generator sub transient reactance</td><td>21%</td></tr><tr><td>Transformer reactance</td><td>11%</td></tr><tr><td>Transmission line inductance</td><td>3 mH/km</td></tr><tr><td>Transmission line length</td><td>100 km</td></tr><tr><td>Transmission Voltage level</td><td>132 kV</td></tr><tr><td>Generation Voltage level</td><td>11 kV</td></tr><tr><td>Transmission circuit</td><td>Double circuit</td></tr></tbody></table>Design a hydro power plant so as to obtain following parameters\n\na) Electrical power output taking design discharge as $Q_{60\\%}$.\n\nb) Select the numbers of unit and installed capacity.\n\nc) Select the type of turbine.\n\nd) Select the type of bus bar to be used.\n\ne) Draw a single line diagram showing number of units, generator, power transformer, station transformer and diesel generator for black start.\n\nf) Calculate the rating of generator circuit breaker in your design.",
+      "chapter": "General",
+      "marks": "16",
+      "frequency": 1,
       "years": [
-        "2081 Baishakh",
-        "2078 Chaitra",
-        "2075 Bhadra"
+        "2082 Chaitra"
       ],
       "examSessions": [
-        "2081 Baishakh",
-        "2078 Chaitra",
-        "2075 Bhadra"
+        "2082 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-6",
-      "chapter": "Hydroelectric Power Station Design and Equipment",
-      "text": "Explain the general layout and essential components of a high-head run-of-river (RoR) and pondage run-of-river (PRoR) hydroelectric power plant in Nepal.",
-      "question": "Explain the general layout and essential components of a high-head run-of-river (RoR) and pondage run-of-river (PRoR) hydroelectric power plant in Nepal.",
-      "marks": "8",
+      "question": "A typical hydro power plant has the following details:\n<table><thead><tr><th>Turbine Type</th><th>Head range (m)</th></tr></thead><tbody><tr><td>Kaplan</td><td>2<H<40</td></tr><tr><td>Francis</td><td>10<H<350</td></tr><tr><td>Pelton</td><td>50<H<1300</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>200 m</td></tr><tr><td>Turbine efficiency</td><td>90%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>98%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Raparian release</td><td>10%</td></tr><tr><td>Generator sub transient reactance</td><td>21%</td></tr><tr><td>Transformer reactance</td><td>9.15%</td></tr><tr><td>Transmission line inductance</td><td>0.95mH/km</td></tr><tr><td>Transmission line length</td><td>25 Km</td></tr><tr><td>Transmission voltage level</td><td>33kv</td></tr><tr><td>Generator voltage level</td><td>11kv</td></tr><tr><td>Transmission circuit</td><td>Double circuit</td></tr></tbody></table>Design a power plant so as to obtain the following parameters:\n\na) Electrical power output taking design discharge as Q45%\n\nb) Select the numbers of units and installed capacity\n\nc) Draw the single diagram showing number of units, generator, power transformer, station transformer and diesel generator for black start\n\nd) Select the type of turbine\n\ne) Suggest the type of bus bar to be used\n\nf) Calculate the MVA level of LV bus, MV bus and HV bus\n\ng) Calculate the rating of circuit breaker to be used in your design\n(Assume suitable data if required and the necessary graph is attached herewith)",
+      "text": "A typical hydro power plant has the following details:\n<table><thead><tr><th>Turbine Type</th><th>Head range (m)</th></tr></thead><tbody><tr><td>Kaplan</td><td>2<H<40</td></tr><tr><td>Francis</td><td>10<H<350</td></tr><tr><td>Pelton</td><td>50<H<1300</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>200 m</td></tr><tr><td>Turbine efficiency</td><td>90%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>98%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Raparian release</td><td>10%</td></tr><tr><td>Generator sub transient reactance</td><td>21%</td></tr><tr><td>Transformer reactance</td><td>9.15%</td></tr><tr><td>Transmission line inductance</td><td>0.95mH/km</td></tr><tr><td>Transmission line length</td><td>25 Km</td></tr><tr><td>Transmission voltage level</td><td>33kv</td></tr><tr><td>Generator voltage level</td><td>11kv</td></tr><tr><td>Transmission circuit</td><td>Double circuit</td></tr></tbody></table>Design a power plant so as to obtain the following parameters:\n\na) Electrical power output taking design discharge as Q45%\n\nb) Select the numbers of units and installed capacity\n\nc) Draw the single diagram showing number of units, generator, power transformer, station transformer and diesel generator for black start\n\nd) Select the type of turbine\n\ne) Suggest the type of bus bar to be used\n\nf) Calculate the MVA level of LV bus, MV bus and HV bus\n\ng) Calculate the rating of circuit breaker to be used in your design\n(Assume suitable data if required and the necessary graph is attached herewith)",
+      "chapter": "General",
+      "marks": "16",
+      "frequency": 1,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2078 Chaitra"
+        "2070 Magh"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2078 Chaitra"
+        "2070 Magh"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-7",
-      "chapter": "Hydroelectric Power Station Design and Equipment",
-      "text": "Derive the hydrodynamic water hammer equation in penstocks using Joukowsky's formula $\\Delta H = \\frac{a \\Delta v}{g}$. Calculate pressure rise for rapid valve closure.",
-      "question": "Derive the hydrodynamic water hammer equation in penstocks using Joukowsky's formula $\\Delta H = \\frac{a \\Delta v}{g}$. Calculate pressure rise for rapid valve closure.",
-      "marks": "8",
+      "question": "a) What is the significance of short circuit ratio (SCR) in design of synchronous generator? Show analytically its impact on stability of the power system. [3+5]\n\nb) What particular precaution should be taken while using vacuum circuit breaker (VCB) as a generator circuit breaker (CB)? [3]\n\nc) Discuss electrical characteristics of unit transformer that to be considered during its selection.<table><thead><tr><th>Transmission Line length</th><th>35Km</th></tr></thead><tbody><tr><td>Transmission Voltage Level</td><td>66kV</td></tr><tr><td>Generator Voltage Level</td><td>11kV</td></tr><tr><td>Transmission Circuit</td><td>Double Circuit</td></tr></tbody></table>Design a power plant so as to obtain the following parameters.\n\na) Electrical power output taking design discharge as $Q_{45\\%}$.\n\nb) Select the number of units and installed capacity.\n\nc) Select the type of turbine.\n\nd) Draw the single line diagram showing number of units, generator, power transformer, station transformer and diesel generator for black start.\n\ne) Suggest the type of bus bar to be used.\n\nf) Calculate the rating of the generator circuit breaker to be used in your design.",
+      "text": "a) What is the significance of short circuit ratio (SCR) in design of synchronous generator? Show analytically its impact on stability of the power system. [3+5]\n\nb) What particular precaution should be taken while using vacuum circuit breaker (VCB) as a generator circuit breaker (CB)? [3]\n\nc) Discuss electrical characteristics of unit transformer that to be considered during its selection.<table><thead><tr><th>Transmission Line length</th><th>35Km</th></tr></thead><tbody><tr><td>Transmission Voltage Level</td><td>66kV</td></tr><tr><td>Generator Voltage Level</td><td>11kV</td></tr><tr><td>Transmission Circuit</td><td>Double Circuit</td></tr></tbody></table>Design a power plant so as to obtain the following parameters.\n\na) Electrical power output taking design discharge as $Q_{45\\%}$.\n\nb) Select the number of units and installed capacity.\n\nc) Select the type of turbine.\n\nd) Draw the single line diagram showing number of units, generator, power transformer, station transformer and diesel generator for black start.\n\ne) Suggest the type of bus bar to be used.\n\nf) Calculate the rating of the generator circuit breaker to be used in your design.",
+      "chapter": "General",
+      "marks": "5",
+      "frequency": 1,
       "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2074 Magh"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2074 Magh"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-8",
-      "chapter": "Hydroelectric Power Station Design and Equipment",
-      "text": "Classify hydraulic turbines according to head, specific speed, and action of water. Select suitable turbine type for $H = 250$ m, $Q = 15\\text{ m}^3/\\text{s}$, and $N = 500$ rpm.",
-      "question": "Classify hydraulic turbines according to head, specific speed, and action of water. Select suitable turbine type for $H = 250$ m, $Q = 15\\text{ m}^3/\\text{s}$, and $N = 500$ rpm.",
+      "question": "a) How electric power is generated from a Tidal Power Project? Estimate the power output from a tidal project that has tidal range of approximately $10\\text{ m}$. The surface area of tidal harnessing plant is $3\\text{ km} \\times 3\\text{ km}$. Consider that there are two high tides every day. Assume power conversion efficiency as $30\\%$. Density of sea water is about $1025\\text{ Kg/m}^3$. [4+4]\n\nb) You have planned to electrify a house with electric load as below in table. Make a suitable selection for Solar Panel and battery size (of $12\\text{ V}$ system) for the house.<table><thead><tr><th>Load type</th><th>Numbers</th><th>Wattage</th><th>Operating hours (per day)</th></tr></thead><tbody><tr><td>Lamps</td><td>5</td><td>Each $10\\text{ W}$</td><td>4</td></tr><tr><td>TV</td><td>1</td><td>$80\\text{ W}$</td><td>5</td></tr><tr><td>Computer</td><td>1</td><td>$85\\text{ W}$</td><td>3</td></tr></tbody></table>Assume equal efficiency for both inverter and battery as $80\\%$. Consider sun shining duration 7 hours a day.",
+      "text": "a) How electric power is generated from a Tidal Power Project? Estimate the power output from a tidal project that has tidal range of approximately $10\\text{ m}$. The surface area of tidal harnessing plant is $3\\text{ km} \\times 3\\text{ km}$. Consider that there are two high tides every day. Assume power conversion efficiency as $30\\%$. Density of sea water is about $1025\\text{ Kg/m}^3$. [4+4]\n\nb) You have planned to electrify a house with electric load as below in table. Make a suitable selection for Solar Panel and battery size (of $12\\text{ V}$ system) for the house.<table><thead><tr><th>Load type</th><th>Numbers</th><th>Wattage</th><th>Operating hours (per day)</th></tr></thead><tbody><tr><td>Lamps</td><td>5</td><td>Each $10\\text{ W}$</td><td>4</td></tr><tr><td>TV</td><td>1</td><td>$80\\text{ W}$</td><td>5</td></tr><tr><td>Computer</td><td>1</td><td>$85\\text{ W}$</td><td>3</td></tr></tbody></table>Assume equal efficiency for both inverter and battery as $80\\%$. Consider sun shining duration 7 hours a day.",
+      "chapter": "General",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2082 Chaitra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2071 Bhadra"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2071 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-9",
-      "chapter": "Hydroelectric Power Station Design and Equipment",
-      "text": "Design criteria and sizing of surge tanks. Explain how surge oscillations are damped in simple, orifice, and differential surge tanks.",
-      "question": "Design criteria and sizing of surge tanks. Explain how surge oscillations are damped in simple, orifice, and differential surge tanks.",
-      "marks": "8",
+      "question": "a) A house is using in average the following electrical appliances [6]\n• Two 10 W lamp for 4 hours per day\n• One 60 W fan for 2 hours per day\n• One 75 W television used for 4 hours per day\nThe system has to be powered by isolated PV System with 12 V battery.\nDetermine Size of the PV Panel, Inverter and Battery.\n(Consider wiring losses 20%, assume inverter efficiency 95% & for battery: efficiency is 90%, depth of discharge factor 0.6 and days of autonomy as 3. Make our smart assumption if further required)\n\nb) Assume that you have identified a suitable hydropower site in Nepal for electricity generation. Discuss the steps/stages how would you proceed to own, build the project and finally sell power to Nepal Electricity Authority. [6]\n\nc) What is power system security? Also describe about reserve requirement in a power system.",
+      "text": "a) A house is using in average the following electrical appliances [6]\n• Two 10 W lamp for 4 hours per day\n• One 60 W fan for 2 hours per day\n• One 75 W television used for 4 hours per day\nThe system has to be powered by isolated PV System with 12 V battery.\nDetermine Size of the PV Panel, Inverter and Battery.\n(Consider wiring losses 20%, assume inverter efficiency 95% & for battery: efficiency is 90%, depth of discharge factor 0.6 and days of autonomy as 3. Make our smart assumption if further required)\n\nb) Assume that you have identified a suitable hydropower site in Nepal for electricity generation. Discuss the steps/stages how would you proceed to own, build the project and finally sell power to Nepal Electricity Authority. [6]\n\nc) What is power system security? Also describe about reserve requirement in a power system.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2081 Bhadra",
-        "2078 Bhadra",
-        "2075 Chaitra"
+        "2081 Shrawan"
       ],
       "examSessions": [
-        "2081 Bhadra",
-        "2078 Bhadra",
-        "2075 Chaitra"
+        "2081 Shrawan"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-10",
-      "chapter": "Hydroelectric Power Station Design and Equipment",
-      "text": "Describe the operating principle, components, and characteristics of electro-hydraulic speed governors used in modern hydro-turbines.",
-      "question": "Describe the operating principle, components, and characteristics of electro-hydraulic speed governors used in modern hydro-turbines.",
-      "marks": "8",
+      "question": "a) Discuss recent trends or changes of scenario of \"world's electricity generation from renewable resources\" in general. Is it impacting power generation trend in Nepalese Power Sector as well? [6]\n\nb) Compare Combined Cycle Gas Turbine power plant with hydro power project considering various possible aspects. [6]\n\nc) Assume that we live in an area slightly above sea level that has an air density of $1.225 \\text{ kg/m}^3$ and we have installed a 35% efficient wind turbine which has a rotor blade radius of six $6.5 \\text{ m}$. Calculate the output power from the turbine at a wind speed of $9 \\text{ m/s}$ and again at double the velocity of $18 \\text{ m/s}$.",
+      "text": "a) Discuss recent trends or changes of scenario of \"world's electricity generation from renewable resources\" in general. Is it impacting power generation trend in Nepalese Power Sector as well? [6]\n\nb) Compare Combined Cycle Gas Turbine power plant with hydro power project considering various possible aspects. [6]\n\nc) Assume that we live in an area slightly above sea level that has an air density of $1.225 \\text{ kg/m}^3$ and we have installed a 35% efficient wind turbine which has a rotor blade radius of six $6.5 \\text{ m}$. Calculate the output power from the turbine at a wind speed of $9 \\text{ m/s}$ and again at double the velocity of $18 \\text{ m/s}$.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2083 Baishakh",
-        "2080 Baishakh",
-        "2077 Magh"
+        "2079 Shrawan"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2080 Baishakh",
-        "2077 Magh"
+        "2079 Shrawan"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-11",
-      "chapter": "Hydroelectric Power Station Design and Equipment",
-      "text": "Explain pumped-storage hydroelectric plants. Discuss their operational modes (pumping vs generating) and role in grid frequency regulation and peak shaving.",
-      "question": "Explain pumped-storage hydroelectric plants. Discuss their operational modes (pumping vs generating) and role in grid frequency regulation and peak shaving.",
-      "marks": "6",
+      "question": "a) Discuss trends or changes of scenario of \"Nepalese electricity generation and consumption\" that of before FIVE years and that may come up after FIVE years from today's date. [6]\n\nb) Write down the strength, weakness, opportunity and threats (SWOT) analysis for installing wind turbine for generating electricity in Nepal. [6]\n\nc) Assume that there is barrage of size $3\\text{ km} \\times 5.5\\text{ km}$ for tidal power project. Average number of tides per day is 2 and the tide height is $10\\text{ m}$. Considering power conversion efficiency of $60\\%$, determine power output capacity of the tidal project. The density of sea water is $1023\\text{ kg/m}^3$.",
+      "text": "a) Discuss trends or changes of scenario of \"Nepalese electricity generation and consumption\" that of before FIVE years and that may come up after FIVE years from today's date. [6]\n\nb) Write down the strength, weakness, opportunity and threats (SWOT) analysis for installing wind turbine for generating electricity in Nepal. [6]\n\nc) Assume that there is barrage of size $3\\text{ km} \\times 5.5\\text{ km}$ for tidal power project. Average number of tides per day is 2 and the tide height is $10\\text{ m}$. Considering power conversion efficiency of $60\\%$, determine power output capacity of the tidal project. The density of sea water is $1023\\text{ kg/m}^3$.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Baishakh"
+        "2078 Chaitra"
       ],
       "examSessions": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Baishakh"
+        "2078 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-12",
-      "chapter": "Thermal and Gas Turbine Power Station Design",
-      "text": "Draw the schematic layout of a modern coal-fired thermal power station and explain the Rankine cycle with reheat and regenerative feed water heating.",
-      "question": "Draw the schematic layout of a modern coal-fired thermal power station and explain the Rankine cycle with reheat and regenerative feed water heating.",
-      "marks": "8",
+      "question": "a) What is Transmission Expansion Planning? Discuss its brief procedure. [6]\n\nb) Find size of a solar panel and inverter system for a home in an isolated remote area, that has loads as in following table. [6]<table><thead><tr><th>Load Type</th><th>No.</th><th>Watt</th><th>Average Operating hours</th></tr></thead><tbody><tr><td>Lamps</td><td>3</td><td>10</td><td>4</td></tr><tr><td>TV</td><td>1</td><td>85</td><td>6</td></tr><tr><td>Laptop</td><td>1</td><td>65</td><td>8</td></tr></tbody></table>Note: Make your own necessary assumptions.\n\nc) What is scientific method of turbine selection?",
+      "text": "a) What is Transmission Expansion Planning? Discuss its brief procedure. [6]\n\nb) Find size of a solar panel and inverter system for a home in an isolated remote area, that has loads as in following table. [6]<table><thead><tr><th>Load Type</th><th>No.</th><th>Watt</th><th>Average Operating hours</th></tr></thead><tbody><tr><td>Lamps</td><td>3</td><td>10</td><td>4</td></tr><tr><td>TV</td><td>1</td><td>85</td><td>6</td></tr><tr><td>Laptop</td><td>1</td><td>65</td><td>8</td></tr></tbody></table>Note: Make your own necessary assumptions.\n\nc) What is scientific method of turbine selection?",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra"
+        "2077 Chaitra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra"
+        "2077 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-13",
-      "chapter": "Thermal and Gas Turbine Power Station Design",
-      "text": "Explain the thermodynamic Brayton cycle for open-cycle and closed-cycle gas turbine power plants. Show how intercooling, reheat, and regeneration enhance thermal efficiency.",
-      "question": "Explain the thermodynamic Brayton cycle for open-cycle and closed-cycle gas turbine power plants. Show how intercooling, reheat, and regeneration enhance thermal efficiency.",
-      "marks": "8",
+      "question": "You have planned to electrify a house with electric load as below in table. Make a suitable selection for Solar Panel and battery size (of 12 V systems) for the house.<table><thead><tr><th>Load type</th><th>Numbers</th><th>Wattage</th><th>Operating hours (per day)</th></tr></thead><tbody><tr><td>Lamps</td><td>5</td><td>Each 10 W</td><td>4</td></tr><tr><td>TV</td><td>1</td><td>60 W</td><td>5</td></tr><tr><td>Computer</td><td>1</td><td>65 W</td><td>3</td></tr></tbody></table>Assume equal efficiency for both inverter and battery as 80%. Consider sun shining duration 6 hours a day.",
+      "text": "You have planned to electrify a house with electric load as below in table. Make a suitable selection for Solar Panel and battery size (of 12 V systems) for the house.<table><thead><tr><th>Load type</th><th>Numbers</th><th>Wattage</th><th>Operating hours (per day)</th></tr></thead><tbody><tr><td>Lamps</td><td>5</td><td>Each 10 W</td><td>4</td></tr><tr><td>TV</td><td>1</td><td>60 W</td><td>5</td></tr><tr><td>Computer</td><td>1</td><td>65 W</td><td>3</td></tr></tbody></table>Assume equal efficiency for both inverter and battery as 80%. Consider sun shining duration 6 hours a day.",
+      "chapter": "General",
+      "marks": "10",
+      "frequency": 1,
       "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2074 Bhadra"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2074 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-14",
-      "chapter": "Thermal and Gas Turbine Power Station Design",
-      "text": "Explain the principle and layout of Combined Cycle Gas Turbine (CCGT) power plants. Discuss Heat Recovery Steam Generator (HRSG) configuration.",
-      "question": "Explain the principle and layout of Combined Cycle Gas Turbine (CCGT) power plants. Discuss Heat Recovery Steam Generator (HRSG) configuration.",
-      "marks": "8",
+      "question": "a) Discuss current Nepalese electricity scenario of demand and supply and its trend in near future. [6]\n\nb) Compare Thermal Power Project with Nuclear Power Project considering various possible aspects. [6]\n\nc) Assume that we live in an area slightly above sea level that has an air density of $1.225 \\text{ kg/m}^3$ and we have installed a 40% efficient wind turbine which has a rotor blade radius of $6\\text{m}$. Calculate the output power from the turbine at a wind speed of $8\\text{m/s}$ and again at double the velocity of $16\\text{m/s}$.",
+      "text": "a) Discuss current Nepalese electricity scenario of demand and supply and its trend in near future. [6]\n\nb) Compare Thermal Power Project with Nuclear Power Project considering various possible aspects. [6]\n\nc) Assume that we live in an area slightly above sea level that has an air density of $1.225 \\text{ kg/m}^3$ and we have installed a 40% efficient wind turbine which has a rotor blade radius of $6\\text{m}$. Calculate the output power from the turbine at a wind speed of $8\\text{m/s}$ and again at double the velocity of $16\\text{m/s}$.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2078 Kartik"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2078 Kartik"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-15",
-      "chapter": "Thermal and Gas Turbine Power Station Design",
-      "text": "Describe auxiliary power supply schemes in thermal power stations. Explain black start capability and emergency diesel generator (EDG) sizing.",
-      "question": "Describe auxiliary power supply schemes in thermal power stations. Explain black start capability and emergency diesel generator (EDG) sizing.",
-      "marks": "6",
+      "question": "a) List out the advantages and disadvantages of wind power. Estimate electric power output from a wind turbine that has turbine blade length of $1.25\\text{ m}$ and wind speed of $16\\text{ m/sec}$. Assume that air density is $1.23\\text{ kg/m}^3$ and power coefficient is $0.3$. [2+4]\n\nb) What do you mean by power system planning? Explain in detail Transmission expansion and distribution planning procedure. [6]\n\nc) Why load forecasting is important in system planning? Explain the need for accurate load forecasting.",
+      "text": "a) List out the advantages and disadvantages of wind power. Estimate electric power output from a wind turbine that has turbine blade length of $1.25\\text{ m}$ and wind speed of $16\\text{ m/sec}$. Assume that air density is $1.23\\text{ kg/m}^3$ and power coefficient is $0.3$. [2+4]\n\nb) What do you mean by power system planning? Explain in detail Transmission expansion and distribution planning procedure. [6]\n\nc) Why load forecasting is important in system planning? Explain the need for accurate load forecasting.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2081 Baishakh",
-        "2078 Chaitra",
-        "2075 Bhadra"
+        "2073 Bhadra"
       ],
       "examSessions": [
-        "2081 Baishakh",
-        "2078 Chaitra",
-        "2075 Bhadra"
+        "2073 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-16",
-      "chapter": "Substation Design and High-Voltage Switchyard Layout",
-      "text": "Compare single busbar, sectionalized busbar, double bus with single breaker, and one-and-a-half breaker schemes in terms of reliability, flexibility, and cost.",
-      "question": "Compare single busbar, sectionalized busbar, double bus with single breaker, and one-and-a-half breaker schemes in terms of reliability, flexibility, and cost.",
-      "marks": "8",
+      "question": "a) Assume that we live in a area slightly above sea level that has an air density of $1.225 \\text{ kg/m}^3$ and we have installed a 45% efficient wind turbine which has a rotor blade radius of $12 \\text{ m}$. Calculate the output power from the turbine at a wind speed of $18 \\text{ m/s}$. [4]\n\nb) What is biomass energy? Is it renewable? What about the firewood being used in Nepal? [6]\n\nc) What is power system expansion planning? Discuss its applicability in context of a national electric utility organization.",
+      "text": "a) Assume that we live in a area slightly above sea level that has an air density of $1.225 \\text{ kg/m}^3$ and we have installed a 45% efficient wind turbine which has a rotor blade radius of $12 \\text{ m}$. Calculate the output power from the turbine at a wind speed of $18 \\text{ m/s}$. [4]\n\nb) What is biomass energy? Is it renewable? What about the firewood being used in Nepal? [6]\n\nc) What is power system expansion planning? Discuss its applicability in context of a national electric utility organization.",
+      "chapter": "General",
+      "marks": "6",
+      "frequency": 1,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2078 Chaitra"
+        "2080 Chaitra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2078 Chaitra"
+        "2080 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-17",
-      "chapter": "Substation Design and High-Voltage Switchyard Layout",
-      "text": "Explain Gas Insulated Substations (GIS) compared to Air Insulated Substations (AIS). Discuss properties of SF6 gas and modular GIS components.",
-      "question": "Explain Gas Insulated Substations (GIS) compared to Air Insulated Substations (AIS). Discuss properties of SF6 gas and modular GIS components.",
-      "marks": "8",
+      "question": "a) Write down the different types of high voltage bus bar with appropriate line diagram. Write the advantages and disadvantages of main and transfer bus bar. [8]\n\nb) Make a tentative example type quotation of a high voltage side \"circuit breaker\" for power evacuation purpose at switch yard of a hydropower project that has installed capacity about $48 \\text{ MW}$ and line length to grid point substation is about $15 \\text{ km}$. [4]\n\nc) Discuss major steps of Grounding Mat design in a power project area.",
+      "text": "a) Write down the different types of high voltage bus bar with appropriate line diagram. Write the advantages and disadvantages of main and transfer bus bar. [8]\n\nb) Make a tentative example type quotation of a high voltage side \"circuit breaker\" for power evacuation purpose at switch yard of a hydropower project that has installed capacity about $48 \\text{ MW}$ and line length to grid point substation is about $15 \\text{ km}$. [4]\n\nc) Discuss major steps of Grounding Mat design in a power project area.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
+        "2079 Shrawan"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
+        "2079 Shrawan"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-18",
-      "chapter": "Substation Design and High-Voltage Switchyard Layout",
-      "text": "Design clearances (phase-to-phase, phase-to-ground, and sectional clearance) for a 132 kV outdoor switchyard according to CBIP/IEC standards.",
-      "question": "Design clearances (phase-to-phase, phase-to-ground, and sectional clearance) for a 132 kV outdoor switchyard according to CBIP/IEC standards.",
-      "marks": "8",
+      "question": "a) Write down the appropriate use of geo-thermal energy found in different parts of Nepal. Write down the types of plant if we geo-thermal energy to produce electricity. Draw figures if necessary. [6]\n\nb) What is transmission expansion planning? Discuss its applicability. [4]\n\nc) Assume that you have identified a suitable hydropower site for electricity generation. Discuss the steps/stages how would you proceed to own, build that project and finally sell power to Nepal Electricity Authority.",
+      "text": "a) Write down the appropriate use of geo-thermal energy found in different parts of Nepal. Write down the types of plant if we geo-thermal energy to produce electricity. Draw figures if necessary. [6]\n\nb) What is transmission expansion planning? Discuss its applicability. [4]\n\nc) Assume that you have identified a suitable hydropower site for electricity generation. Discuss the steps/stages how would you proceed to own, build that project and finally sell power to Nepal Electricity Authority.",
+      "chapter": "General",
+      "marks": "6",
+      "frequency": 1,
       "years": [
-        "2082 Chaitra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2079 Shrawan"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2079 Shrawan"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-19",
-      "chapter": "Substation Design and High-Voltage Switchyard Layout",
-      "text": "Explain the selection and rating of current transformers (CTs) and potential transformers (PTs) for protection and metering cores in 66 kV substations.",
-      "question": "Explain the selection and rating of current transformers (CTs) and potential transformers (PTs) for protection and metering cores in 66 kV substations.",
+      "question": "a) What is Cogeneration? [5]\n\nb) Biogas plant of Nepal are registered as Clean Development Mechanism because of its contribution for reducing greenhouse gas emission. How would you argue that the biogas plants are contributing to reduce greenhouse gas emission? [5]\n\nc) Compare the operational characteristics of the thermal power plant and hydropower plant regarding daily load curve, stability, grid connection and operational characteristics and so on.",
+      "text": "a) What is Cogeneration? [5]\n\nb) Biogas plant of Nepal are registered as Clean Development Mechanism because of its contribution for reducing greenhouse gas emission. How would you argue that the biogas plants are contributing to reduce greenhouse gas emission? [5]\n\nc) Compare the operational characteristics of the thermal power plant and hydropower plant regarding daily load curve, stability, grid connection and operational characteristics and so on.",
+      "chapter": "General",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2081 Bhadra",
-        "2078 Bhadra",
-        "2075 Chaitra"
+        "2074 Bhadra"
       ],
       "examSessions": [
-        "2081 Bhadra",
-        "2078 Bhadra",
-        "2075 Chaitra"
+        "2074 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-20",
-      "chapter": "Substation Design and High-Voltage Switchyard Layout",
-      "text": "Describe DC auxiliary power systems in substations including battery bank sizing, float and boost chargers, and distribution boards.",
-      "question": "Describe DC auxiliary power systems in substations including battery bank sizing, float and boost chargers, and distribution boards.",
-      "marks": "6",
+      "question": "a) How electricity is generated from Wind-turbine system? What are the merits of wind energy? Estimate the power output from the wind turbine that has blade length of $5.5\\text{m}$ and wind speed of $25\\text{m/sec}$. Assume that air density is $1.23\\text{ kg/m}^3$ and power coefficient is $0.4$. [6]\n\nb) Discuss briefly the Generation expansion planning procedure. [6]\n\nc) Discuss the scenario of tie up between two national level electric utilities.",
+      "text": "a) How electricity is generated from Wind-turbine system? What are the merits of wind energy? Estimate the power output from the wind turbine that has blade length of $5.5\\text{m}$ and wind speed of $25\\text{m/sec}$. Assume that air density is $1.23\\text{ kg/m}^3$ and power coefficient is $0.4$. [6]\n\nb) Discuss briefly the Generation expansion planning procedure. [6]\n\nc) Discuss the scenario of tie up between two national level electric utilities.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Baishakh"
+        "2073 Magh"
       ],
       "examSessions": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Baishakh"
+        "2073 Magh"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-21",
-      "chapter": "Grounding and Earthing Systems in Power Plants",
-      "text": "Explain step potential, touch potential, mesh potential, and ground potential rise (GPR) in accordance with IEEE Standard 80.",
-      "question": "Explain step potential, touch potential, mesh potential, and ground potential rise (GPR) in accordance with IEEE Standard 80.",
-      "marks": "8",
+      "question": "a) What are the conventional and non conventional energy sources? How the fossil fuel can be replaced by non-conventional energy in Nepal? [6]\n\nb) Compare the operational characteristics of solar photovoltaic power plant with hydropower plant on the basis of reliability, grid connection, efficiency, operating range, maintenance perspectives and so on. Also, discuss the beauty of combination of such to kind of power project for an electric system.",
+      "text": "a) What are the conventional and non conventional energy sources? How the fossil fuel can be replaced by non-conventional energy in Nepal? [6]\n\nb) Compare the operational characteristics of solar photovoltaic power plant with hydropower plant on the basis of reliability, grid connection, efficiency, operating range, maintenance perspectives and so on. Also, discuss the beauty of combination of such to kind of power project for an electric system.",
+      "chapter": "General",
+      "marks": "7",
+      "frequency": 1,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra"
+        "2075 Bhadra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra"
+        "2075 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-22",
-      "chapter": "Grounding and Earthing Systems in Power Plants",
-      "text": "Design a grounding mat for a 132/33 kV substation. Given: soil resistivity $\\rho = 100\\ \\Omega\\cdot\\text{m}$, fault current $I_f = 20$ kA, fault duration $t_s = 0.5$ s. Determine conductor size and mesh layout.",
-      "question": "Design a grounding mat for a 132/33 kV substation. Given: soil resistivity $\\rho = 100\\ \\Omega\\cdot\\text{m}$, fault current $I_f = 20$ kA, fault duration $t_s = 0.5$ s. Determine conductor size and mesh layout.",
-      "marks": "8",
+      "question": "a) Explain how the electricity can be generated from solar with suitable sketch. Explain the characteristics of wind power on the basis of turbine efficiency, energy cost, capacity and annual energy output. [6]\n\nb) Explain the importance of power system planning? Discuss briefly the generation expansion and distribution planning procedure. [6]\n\nc) What are the benefits of accurate load forecasting? Explain in brief about power system security?",
+      "text": "a) Explain how the electricity can be generated from solar with suitable sketch. Explain the characteristics of wind power on the basis of turbine efficiency, energy cost, capacity and annual energy output. [6]\n\nb) Explain the importance of power system planning? Discuss briefly the generation expansion and distribution planning procedure. [6]\n\nc) What are the benefits of accurate load forecasting? Explain in brief about power system security?",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2074 Magh"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Chaitra"
+        "2074 Magh"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-23",
-      "chapter": "Grounding and Earthing Systems in Power Plants",
-      "text": "Discuss methods of measuring soil resistivity using Wenner four-point method and Fall of Potential method for earth resistance measurement.",
-      "question": "Discuss methods of measuring soil resistivity using Wenner four-point method and Fall of Potential method for earth resistance measurement.",
-      "marks": "8",
+      "question": "a) Discuss the various factors which should be considered for the choice of generator during the design of a power plant. Also clarify analytically that lower the short circuit ratio (SCR), lower be the stability of the system. [5+5]\n\nb) Compare with necessary schematic diagrams Brushless Excitation System with Static Excitation System used in a synchronous generator on the basis of operating range, accessories required and cost.",
+      "text": "a) Discuss the various factors which should be considered for the choice of generator during the design of a power plant. Also clarify analytically that lower the short circuit ratio (SCR), lower be the stability of the system. [5+5]\n\nb) Compare with necessary schematic diagrams Brushless Excitation System with Static Excitation System used in a synchronous generator on the basis of operating range, accessories required and cost.",
+      "chapter": "General",
+      "marks": "6",
+      "frequency": 1,
       "years": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2071 Bhadra"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2071 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-24",
-      "chapter": "Grounding and Earthing Systems in Power Plants",
-      "text": "Explain equipment grounding vs system neutral grounding. Compare ungrounded, solid grounded, resistance grounded, and Peterson coil grounded systems.",
-      "question": "Explain equipment grounding vs system neutral grounding. Compare ungrounded, solid grounded, resistance grounded, and Peterson coil grounded systems.",
-      "marks": "8",
+      "question": "a) Discuss major factors to be considered during selection of a suitable generator in a hydropower project. [6]\n\nb) Compare brushless excitation system with static excitation system for a synchronous generator on the basis of schematic diagram, operating range, accessories required, cost and so on. [6]\n\nc) How would you determine suitable rating of a neutral grounding transformer during grounding of generator neutral?",
+      "text": "a) Discuss major factors to be considered during selection of a suitable generator in a hydropower project. [6]\n\nb) Compare brushless excitation system with static excitation system for a synchronous generator on the basis of schematic diagram, operating range, accessories required, cost and so on. [6]\n\nc) How would you determine suitable rating of a neutral grounding transformer during grounding of generator neutral?",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2081 Baishakh",
-        "2078 Chaitra",
-        "2075 Bhadra"
+        "2082 Shrawan"
       ],
       "examSessions": [
-        "2081 Baishakh",
-        "2078 Chaitra",
-        "2075 Bhadra"
+        "2082 Shrawan"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-25",
-      "chapter": "Grounding and Earthing Systems in Power Plants",
-      "text": "Explain the design of lightning shielding protection for substations using mast and ground wire methods based on the Electro-Geometric Model (rolling sphere method).",
-      "question": "Explain the design of lightning shielding protection for substations using mast and ground wire methods based on the Electro-Geometric Model (rolling sphere method).",
-      "marks": "8",
+      "question": "a) What are the disadvantages of a very low specific speed reaction turbine? What are its advantages? How does the efficiency of the pelton wheel vary with its speed? [8]\n\nb) Describe brushless excitation system with suitable diagram. When would you find it better than static excitation system? [3+2]\n\nc) Which circuit breaker would you think suitable as generator circuit breaker (GCB) in hydropower station, and why?",
+      "text": "a) What are the disadvantages of a very low specific speed reaction turbine? What are its advantages? How does the efficiency of the pelton wheel vary with its speed? [8]\n\nb) Describe brushless excitation system with suitable diagram. When would you find it better than static excitation system? [3+2]\n\nc) Which circuit breaker would you think suitable as generator circuit breaker (GCB) in hydropower station, and why?",
+      "chapter": "General",
+      "marks": "3",
+      "frequency": 1,
       "years": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Chaitra"
+        "2073 Magh"
       ],
       "examSessions": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Chaitra"
+        "2073 Magh"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-26",
-      "chapter": "Environmental and Safety Aspects in Power Stations",
-      "text": "Discuss Environmental Impact Assessment (EIA) for hydropower projects in Nepal with focus on downstream ecological flow and sedimentation.",
-      "question": "Discuss Environmental Impact Assessment (EIA) for hydropower projects in Nepal with focus on downstream ecological flow and sedimentation.",
-      "marks": "6",
+      "question": "a) What is cogeneration? Where would such plant seem appropriate? [4]\n\nb) Describe principally the power estimation formula from a wind power plant. [4]\n\nc) Compare the electric power from hydropower with solar photovoltaic based power generation on the basis of reliability, grid-connection, efficiency, operating range and maintainability. Also consider the scenario in Nepalese context during comparison.",
+      "text": "a) What is cogeneration? Where would such plant seem appropriate? [4]\n\nb) Describe principally the power estimation formula from a wind power plant. [4]\n\nc) Compare the electric power from hydropower with solar photovoltaic based power generation on the basis of reliability, grid-connection, efficiency, operating range and maintainability. Also consider the scenario in Nepalese context during comparison.",
+      "chapter": "General",
+      "marks": "8",
+      "frequency": 1,
       "years": [
-        "2083 Baishakh",
-        "2080 Chaitra",
-        "2078 Bhadra"
+        "2082 Shrawan"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2080 Chaitra",
-        "2078 Bhadra"
+        "2082 Shrawan"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-27",
-      "chapter": "Environmental and Safety Aspects in Power Stations",
-      "text": "Explain greenhouse gas emissions and pollution abatement systems (Electrostatic Precipitators, Flue Gas Desulfurization) in thermal plants.",
-      "question": "Explain greenhouse gas emissions and pollution abatement systems (Electrostatic Precipitators, Flue Gas Desulfurization) in thermal plants.",
+      "question": "a) Discuss the various components of PROR hydropower plant with suitable schematic diagram. [6]\n\nb) Discuss the tentative steps/phases for developing a hydropower plant in relevance to such project in Nepal. [4]\n\nc) The design exceedance of hydropower plant $Q_{45\\%}$, what does that mean? Compare $Q_{45\\%}$ with $Q_{65\\%}$ while designing hydropower plant from the perspective of power producer (seller).",
+      "text": "a) Discuss the various components of PROR hydropower plant with suitable schematic diagram. [6]\n\nb) Discuss the tentative steps/phases for developing a hydropower plant in relevance to such project in Nepal. [4]\n\nc) The design exceedance of hydropower plant $Q_{45\\%}$, what does that mean? Compare $Q_{45\\%}$ with $Q_{65\\%}$ while designing hydropower plant from the perspective of power producer (seller).",
+      "chapter": "General",
       "marks": "6",
+      "frequency": 1,
       "years": [
-        "2082 Bhadra",
-        "2081 Baishakh",
-        "2077 Magh"
+        "2075 Bhadra"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2081 Baishakh",
-        "2077 Magh"
+        "2075 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-28",
-      "chapter": "Environmental and Safety Aspects in Power Stations",
-      "text": "Describe electrical safety rules, permit-to-work (PTW) procedures, and lockout-tagout (LOTO) protocols in high-voltage installations.",
-      "question": "Describe electrical safety rules, permit-to-work (PTW) procedures, and lockout-tagout (LOTO) protocols in high-voltage installations.",
-      "marks": "6",
+      "question": "a) Discuss major components of a Daily Pondage Run off the River type hydropower project with tentative head $150\\text{ m}$ and discharge $10\\text{ m}^3/\\text{s}$ per unit. Illustrate with suitable schematic diagram. [8]\n\nb) Differentiate applicability of Francis and Kaplan Turbine in reference to hydropower project. [4]\n\nc) How would flow duration curve affect while designing unit sizes of power plant?",
+      "text": "a) Discuss major components of a Daily Pondage Run off the River type hydropower project with tentative head $150\\text{ m}$ and discharge $10\\text{ m}^3/\\text{s}$ per unit. Illustrate with suitable schematic diagram. [8]\n\nb) Differentiate applicability of Francis and Kaplan Turbine in reference to hydropower project. [4]\n\nc) How would flow duration curve affect while designing unit sizes of power plant?",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2082 Chaitra",
-        "2079 Chaitra",
-        "2076 Baishakh"
+        "2078 Chaitra"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2079 Chaitra",
-        "2076 Baishakh"
+        "2078 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-29",
-      "chapter": "Environmental and Safety Aspects in Power Stations",
-      "text": "Explain disaster management and Emergency Action Plans (EAP) for dam-break flood hazards in hydroelectric power plants.",
-      "question": "Explain disaster management and Emergency Action Plans (EAP) for dam-break flood hazards in hydroelectric power plants.",
+      "question": "a) Discuss why choosing appropriate Short circuit ratio (SCR) of a generator is crucial from the perspective of stability of the system? [4]\n\nb) Make a tentative example type quotation of a \"Power Transformer\" for power evacuation purpose from switch yard of a general medium size hydropower project situated in hilly region. [6]\n\nc) Discuss major steps of Grounding Mat design in a power project area.",
+      "text": "a) Discuss why choosing appropriate Short circuit ratio (SCR) of a generator is crucial from the perspective of stability of the system? [4]\n\nb) Make a tentative example type quotation of a \"Power Transformer\" for power evacuation purpose from switch yard of a general medium size hydropower project situated in hilly region. [6]\n\nc) Discuss major steps of Grounding Mat design in a power project area.",
+      "chapter": "General",
       "marks": "6",
+      "frequency": 1,
       "years": [
-        "2081 Bhadra",
-        "2078 Chaitra",
-        "2075 Chaitra"
+        "2078 Kartik"
       ],
       "examSessions": [
-        "2081 Bhadra",
-        "2078 Chaitra",
-        "2075 Chaitra"
+        "2078 Kartik"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "power-plant-design-30",
-      "chapter": "Environmental and Safety Aspects in Power Stations",
-      "text": "Discuss carbon credits, clean development mechanisms (CDM), and renewable energy portfolio standards in power sector planning.",
-      "question": "Discuss carbon credits, clean development mechanisms (CDM), and renewable energy portfolio standards in power sector planning.",
-      "marks": "6",
+      "question": "a) How would the interconnection of regional utilities help in integrated system planning in design approach? Does it solve the issue of reserve bottling? [6]\n\nb) What is the difference between spinning reserve and reserve power? [4]\n\nc) Show that the power output of wind power plant is cube of the velocity of air. What are the other factors that may guide the possible output of wind power project?",
+      "text": "a) How would the interconnection of regional utilities help in integrated system planning in design approach? Does it solve the issue of reserve bottling? [6]\n\nb) What is the difference between spinning reserve and reserve power? [4]\n\nc) Show that the power output of wind power plant is cube of the velocity of air. What are the other factors that may guide the possible output of wind power project?",
+      "chapter": "General",
+      "marks": "3",
+      "frequency": 1,
       "years": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Chaitra"
+        "2079 Chaitra"
       ],
       "examSessions": [
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Chaitra"
+        "2079 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "isDiagram": false
+    },
+    {
+      "id": "power-plant-design-31",
+      "question": "a) Discuss the situation of electrical energy among total energy need of Nepal. [4]\n\nb) Firewood, a common biomass used as a major energy resource in context of Nepal, can or cannot be renewable. Comment on this statement. [6]\n\nc) Compare the operational characteristics of thermal power with hydropower plant on the basis of reliability, grid connection, efficiency, operating range and so on.",
+      "text": "a) Discuss the situation of electrical energy among total energy need of Nepal. [4]\n\nb) Firewood, a common biomass used as a major energy resource in context of Nepal, can or cannot be renewable. Comment on this statement. [6]\n\nc) Compare the operational characteristics of thermal power with hydropower plant on the basis of reliability, grid connection, efficiency, operating range and so on.",
+      "chapter": "General",
+      "marks": "6",
+      "frequency": 1,
+      "years": [
+        "2073 Bhadra"
+      ],
+      "examSessions": [
+        "2073 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "power-plant-design-32",
+      "question": "a) What is power system planning? Discuss in reference to deregulated electricity sectors of a nation. Also describe pros and cons of integration of two national or regional grids. [5+3]\n\nb) Make a sketch to show various components of medium head and relatively large discharge, medium size Pondage Run of Rive (PRoR) hydropower plant. Also, mention the functions of each component.",
+      "text": "a) What is power system planning? Discuss in reference to deregulated electricity sectors of a nation. Also describe pros and cons of integration of two national or regional grids. [5+3]\n\nb) Make a sketch to show various components of medium head and relatively large discharge, medium size Pondage Run of Rive (PRoR) hydropower plant. Also, mention the functions of each component.",
+      "chapter": "General",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2081 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "power-plant-design-33",
+      "question": "a) Is biomass renewable? How about our firewood in Nepalese villages? Justify your answer with necessary arguments. [4]\n\nb) What do you mean by captive power generation? Discuss its needs. [4]\n\nc) Compare the operational characteristics of thermal and hydropower plant on the basis of reliability, grid connection, efficiency, operating range, economics and maintainability.",
+      "text": "a) Is biomass renewable? How about our firewood in Nepalese villages? Justify your answer with necessary arguments. [4]\n\nb) What do you mean by captive power generation? Discuss its needs. [4]\n\nc) Compare the operational characteristics of thermal and hydropower plant on the basis of reliability, grid connection, efficiency, operating range, economics and maintainability.",
+      "chapter": "General",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2081 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "power-plant-design-34",
+      "question": "a) Discuss the development of hydro power plant in the context of Nepal. [6]\n\nb) Compare the operational characteristics of Solar Power plant with hydro power plant on the basis of reliability, grid connection, efficiency, operating range, maintainability and economics. [6]\n\nc) Explain how bio-mass source of energy can maintain sustainable carbon neutral cycle?",
+      "text": "a) Discuss the development of hydro power plant in the context of Nepal. [6]\n\nb) Compare the operational characteristics of Solar Power plant with hydro power plant on the basis of reliability, grid connection, efficiency, operating range, maintainability and economics. [6]\n\nc) Explain how bio-mass source of energy can maintain sustainable carbon neutral cycle?",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2079 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "power-plant-design-35",
+      "question": "a) What do you understand by generation expansion planning? How does load forecasting effects generation expansion planning? [6]\n\nb) What is flow duration curve? Discuss its applicability. [4]\n\nc) What are the factors to be considered during selection of appropriate site for hydropower? Also mentions the factors that govern discharge of a hydropower project.",
+      "text": "a) What do you understand by generation expansion planning? How does load forecasting effects generation expansion planning? [6]\n\nb) What is flow duration curve? Discuss its applicability. [4]\n\nc) What are the factors to be considered during selection of appropriate site for hydropower? Also mentions the factors that govern discharge of a hydropower project.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2078 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "power-plant-design-36",
+      "question": "a) List out the most essential protection schemes required for Alternator and Generator Step Up transformer in a mega size power project. [6]\n\nb) Discuss brushless excitation system. Also mention its pros and cons in comparison to its best possible alternative. [6]\n\nc) Discuss briefly about requirements of DC supply system in a power generating station.",
+      "text": "a) List out the most essential protection schemes required for Alternator and Generator Step Up transformer in a mega size power project. [6]\n\nb) Discuss brushless excitation system. Also mention its pros and cons in comparison to its best possible alternative. [6]\n\nc) Discuss briefly about requirements of DC supply system in a power generating station.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2080 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "power-plant-design-37",
+      "question": "a) Discuss the functions and importance of various components of hydropower plant with proper schematic diagram of ROR hydropower plant. [8]\n\nb) Describe the criterion for selection turbine in hydroelectric power plant. [5]\n\nc) Why riparian release is considered during the design of hydropower plant? What are the criteria of design discharge selection?",
+      "text": "a) Discuss the functions and importance of various components of hydropower plant with proper schematic diagram of ROR hydropower plant. [8]\n\nb) Describe the criterion for selection turbine in hydroelectric power plant. [5]\n\nc) Why riparian release is considered during the design of hydropower plant? What are the criteria of design discharge selection?",
+      "chapter": "General",
+      "marks": "5",
+      "frequency": 1,
+      "years": [
+        "2074 Bhadra"
+      ],
+      "examSessions": [
+        "2074 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "power-plant-design-38",
+      "question": "a) Discuss a suitable method for a short-term load forecasting. [4]\n\nb) Discuss transmission expansion planning considering suitable inputs to it and its outcome focusing on deregulated electricity market of a nation. [4]\n\nc) List down the various components of a medium head relatively higher discharge hydropower plant and mention their functions.",
+      "text": "a) Discuss a suitable method for a short-term load forecasting. [4]\n\nb) Discuss transmission expansion planning considering suitable inputs to it and its outcome focusing on deregulated electricity market of a nation. [4]\n\nc) List down the various components of a medium head relatively higher discharge hydropower plant and mention their functions.",
+      "chapter": "General",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2082 Shrawan"
+      ],
+      "examSessions": [
+        "2082 Shrawan"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "power-plant-design-39",
+      "question": "a) Present in brief the world scenario of renewable energy sector of the recent decade. [6]\n\nb) What is cogeneration? Why is it seemed useful in biomass-based power plant? [4]\n\nc) Compare thermal power plant with nuclear power plant on the basis of availability, grid connectivity, easiness to control, environmental effect, cost factors and so on.",
+      "text": "a) Present in brief the world scenario of renewable energy sector of the recent decade. [6]\n\nb) What is cogeneration? Why is it seemed useful in biomass-based power plant? [4]\n\nc) Compare thermal power plant with nuclear power plant on the basis of availability, grid connectivity, easiness to control, environmental effect, cost factors and so on.",
+      "chapter": "General",
+      "marks": "6",
+      "frequency": 1,
+      "years": [
+        "2081 Shrawan"
+      ],
+      "examSessions": [
+        "2081 Shrawan"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "power-plant-design-40",
+      "question": "a) Discuss the various components of hydropower plant focusing on medium head high discharge project? Also mention their functions. [3+5]\n\nb) Explain any two scheme of unit generator transformer combination used in power plant on the basis of fault level, maintenance outage and efficiency. Also draw the single line diagram for both of the scheme.",
+      "text": "a) Discuss the various components of hydropower plant focusing on medium head high discharge project? Also mention their functions. [3+5]\n\nb) Explain any two scheme of unit generator transformer combination used in power plant on the basis of fault level, maintenance outage and efficiency. Also draw the single line diagram for both of the scheme.",
+      "chapter": "General",
+      "marks": "5",
+      "frequency": 1,
+      "years": [
+        "2074 Magh"
+      ],
+      "examSessions": [
+        "2074 Magh"
+      ],
+      "isDiagram": false
+    }
+  ],
+  "yearWisePapers": [
+    {
+      "session": "2082 Shrawan",
+      "year": "2082",
+      "month": "Shrawan",
+      "examType": "Back",
+      "totalMarks": 26,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) What is cogeneration? Where would such plant seem appropriate? [4]\n\nb) Describe principally the power estimation formula from a wind power plant. [4]\n\nc) Compare the electric power from hydropower with solar photovoltaic based power generation on the basis of reliability, grid-connection, efficiency, operating range and maintainability. Also consider the scenario in Nepalese context during comparison.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Discuss a suitable method for a short-term load forecasting. [4]\n\nb) Discuss transmission expansion planning considering suitable inputs to it and its outcome focusing on deregulated electricity market of a nation. [4]\n\nc) List down the various components of a medium head relatively higher discharge hydropower plant and mention their functions.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Discuss major factors to be considered during selection of a suitable generator in a hydropower project. [6]\n\nb) Compare brushless excitation system with static excitation system for a synchronous generator on the basis of schematic diagram, operating range, accessories required, cost and so on. [6]\n\nc) How would you determine suitable rating of a neutral grounding transformer during grounding of generator neutral?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) What sort of generator circuit breaker would you recommend in a power plant and why? [6]\n(b) List out the necessary protection schemes to be employed for a medium size generator in a power plant.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Chaitra",
+      "year": "2082",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 34,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) What are conventional and non-conventional energy sources? Describe with suitable sketches show electric power can be obtained from thermal power plant? [3+5]\n(b) Describe the process of power generation from tidal energy. List out the advantages and disadvantages of tidal energy.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) What do you mean by system security? How can the system be made secure? Explain in brief the stages of system security. [8]\n(b) Explain importance of load forecasting in power system. List out major steps followed during the forecasting process.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Starting from the hydrograph, could you link the effects of mean monthly flow while selecting the hydro turbine? [8]\n(b) Define Short Circuit Ratio (SCR) of synchronous generator. Prove that SCR is reciprocal of per unit value of synchronous reactance of generator. Explain significance of SCR in design of synchronous generator.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) List out the major elements that limits the alternators capability curve. Draw a typical capability curve of alternator and explain it. [2+6]\n(b) Explain any two types of generator-transformer scheme with their features.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "A typical hydro power plant has following details.<table><thead><tr><th>Month</th><th>Discharge ($m^3/s$)</th><th>Flow duration</th></tr></thead><tbody><tr><td>January</td><td>3.30</td><td>$Q(max)$</td><td>110.00 $m^3/s$</td></tr><tr><td>February</td><td>2.20</td><td>$Q_{25\\%}$</td><td>16.42 $m^3/s$</td></tr><tr><td>March</td><td>1.40</td><td>$Q_{45\\%}$</td><td>6.82 $m^3/s$</td></tr><tr><td>April</td><td>1.00</td><td>$Q_{65\\%}$</td><td>3.7 $m^3/s$</td></tr><tr><td>May</td><td>3.50</td><td>$Q_{85\\%}$</td><td>2.10 $m^3/s$</td></tr><tr><td>June</td><td>6.00</td><td>$Q_{95\\%}$</td><td>1.17 $m^3/s$</td></tr><tr><td>July</td><td>14.00</td><td>$Q(min)$</td><td>0.64 $m^3/s$</td></tr><tr><td>August</td><td>35.00</td><td></td><td></td></tr><tr><td>September</td><td>24.00</td><td></td><td></td></tr><tr><td>October</td><td>12.00</td><td></td><td></td></tr><tr><td>November</td><td>7.50</td><td></td><td></td></tr><tr><td>December</td><td>5.00</td><td></td><td></td></tr><tr><td>Turbine type</td><td>Head range</td></tr><tr><td>Kaplan</td><td>$2 < H < 40$</td></tr><tr><td>Francis</td><td>$10 < H < 350$</td></tr><tr><td>Pelton</td><td>$50 < H < 1300$</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>180 m</td></tr><tr><td>Turbine efficiency</td><td>90%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>98%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Riparian release</td><td>10%</td></tr><tr><td>Generator sub transient reactance</td><td>21%</td></tr><tr><td>Transformer reactance</td><td>11%</td></tr><tr><td>Transmission line inductance</td><td>3 mH/km</td></tr><tr><td>Transmission line length</td><td>100 km</td></tr><tr><td>Transmission Voltage level</td><td>132 kV</td></tr><tr><td>Generation Voltage level</td><td>11 kV</td></tr><tr><td>Transmission circuit</td><td>Double circuit</td></tr></tbody></table>Design a hydro power plant so as to obtain following parameters\n\na) Electrical power output taking design discharge as $Q_{60\\%}$.\n\nb) Select the numbers of unit and installed capacity.\n\nc) Select the type of turbine.\n\nd) Select the type of bus bar to be used.\n\ne) Draw a single line diagram showing number of units, generator, power transformer, station transformer and diesel generator for black start.\n\nf) Calculate the rating of generator circuit breaker in your design.",
+          "marks": "16",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Shrawan",
+      "year": "2081",
+      "month": "Shrawan",
+      "examType": "Back",
+      "totalMarks": 24,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Present in brief the world scenario of renewable energy sector of the recent decade. [6]\n\nb) What is cogeneration? Why is it seemed useful in biomass-based power plant? [4]\n\nc) Compare thermal power plant with nuclear power plant on the basis of availability, grid connectivity, easiness to control, environmental effect, cost factors and so on.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) A house is using in average the following electrical appliances [6]\n• Two 10 W lamp for 4 hours per day\n• One 60 W fan for 2 hours per day\n• One 75 W television used for 4 hours per day\nThe system has to be powered by isolated PV System with 12 V battery.\nDetermine Size of the PV Panel, Inverter and Battery.\n(Consider wiring losses 20%, assume inverter efficiency 95% & for battery: efficiency is 90%, depth of discharge factor 0.6 and days of autonomy as",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Make our smart assumption if further required)\n(b) Assume that you have identified a suitable hydropower site in Nepal for electricity generation. Discuss the steps/stages how would you proceed to own, build the project and finally sell power to Nepal Electricity Authority. [6]\n(c) What is power system security? Also describe about reserve requirement in a power system.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Discuss major components of a high dam type hydropower project with suitable schematic diagram. [6]\n(b) Mention major factors governing during appropriate turbine selection. [4]\n(c) Explain static excitation system. Also highlight its pros and cons in comparison to its best possible alternative.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Describe the major steps that to be followed for design of earthing (grounding) mat in power station and its switchyard. [8]\n(b) Discuss the consequences of choosing higher or lower Short Circuit Ratio (SCR) of a generator. [4]\n(c) What does \"black start capability\" of a generating unit mean? How would it have been made so?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "A typical hydropower plant has the following details.<table><thead><tr><th>Month</th><th>Discharge ($m^3/s$)</th><th>Flow duration</th></tr></thead><tbody><tr><td>January</td><td>3.30</td><td>$Q_{max}$</td><td>110.00 $m^3/s$</td></tr><tr><td>February</td><td>2.20</td><td>$Q_{25\\%}$</td><td>16.42 $m^3/s$</td></tr><tr><td>March</td><td>1.40</td><td>$Q_{45\\%}$</td><td>6.82 $m^3/s$</td></tr><tr><td>April</td><td>1.00</td><td>$Q_{65\\%}$</td><td>3.7 $m^3/s$</td></tr><tr><td>May</td><td>3.50</td><td>$Q_{85\\%}$</td><td>2.10 $m^3/s$</td></tr><tr><td>June</td><td>6.00</td><td>$Q_{95\\%}$</td><td>1.17 $m^3/s$</td></tr><tr><td>July</td><td>14.00</td><td>$Q_{min}$</td><td>0.64 $m^3/s$</td></tr><tr><td>August</td><td>35.00</td><td></td><td></td></tr><tr><td>September</td><td>24.00</td><td></td><td></td></tr><tr><td>October</td><td>12.00</td><td></td><td></td></tr><tr><td>November</td><td>7.50</td><td></td><td></td></tr><tr><td>December</td><td>5.00</td><td></td><td></td></tr><tr><td>Turbine type</td><td>Head range</td></tr><tr><td>Kaplan</td><td>$2 < H < 40$</td></tr><tr><td>Francis</td><td>$10 < H < 350$</td></tr><tr><td>Pelton</td><td>$50 < H < 1300$</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>95 m</td></tr><tr><td>Turbine efficiency</td><td>90 %</td></tr><tr><td>Generator efficiency</td><td>97 %</td></tr><tr><td>Transformer efficiency</td><td>98 %</td></tr><tr><td>Head loss</td><td>5 %</td></tr><tr><td>Riparian release</td><td>10 %</td></tr><tr><td>Generator sub transient reactance</td><td>20 %</td></tr><tr><td>Transformer reactance</td><td>11 %</td></tr><tr><td>Transmission line inductance</td><td>0.77 mH/km</td></tr><tr><td>Transmission line length</td><td>80 km</td></tr><tr><td>Transmission Voltage level</td><td>66 kV</td></tr><tr><td>Generator Voltage level</td><td>11 kV</td></tr><tr><td>Transmission circuit</td><td>Single circuit</td></tr></tbody></table>Design a hydro power plant so as to obtain following parameters\n\na) Electrical power output taking design discharge as $Q_{65\\%}$. [1]\n\nb) Select the numbers of unit and installed capacity. [2]\n\nc) Select the type of turbine. [3]\n\nd) Select the type of bus bar to be used. [2]\n\ne) Draw the single line diagram showing number of units, generator, power transformer, station transformer and diesel generator for black start. [4]\n\nf) Calculate the rating of generator circuit breaker and high voltage circuit breaker in your design.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Chaitra",
+      "year": "2081",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 24,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Is biomass renewable? How about our firewood in Nepalese villages? Justify your answer with necessary arguments. [4]\n\nb) What do you mean by captive power generation? Discuss its needs. [4]\n\nc) Compare the operational characteristics of thermal and hydropower plant on the basis of reliability, grid connection, efficiency, operating range, economics and maintainability.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) What is power system planning? Discuss in reference to deregulated electricity sectors of a nation. Also describe pros and cons of integration of two national or regional grids. [5+3]\n\nb) Make a sketch to show various components of medium head and relatively large discharge, medium size Pondage Run of Rive (PRoR) hydropower plant. Also, mention the functions of each component.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) What is capability curve of a generator? Describe briefly. [4]\n(b) Discuss working of a brushless excitation with necessary schematic diagram. When would you recommend using such excitation system? [6]\n(c) What is neutral grounding transformer (NGT)? Also describe the steps to find optimal size of NGT.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Describe steps of grounding mat design in powerhouse or substation. [6]\n(b) What is restricted earth fault protection? Illustrate its use with suitable diagram.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Chaitra",
+      "year": "2080",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 24,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Present scenario of Nepalese electricity sector for this decade. [6]\n(b) What is captive power plant? List out its significance. [4]\n(c) Compare grid tied solar PV with hydropower plant on the basis of availability, grid connectivity, easiness to control and investment cost.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Assume that we live in a area slightly above sea level that has an air density of $1.225 \\text{ kg/m}^3$ and we have installed a 45% efficient wind turbine which has a rotor blade radius of $12 \\text{ m}$. Calculate the output power from the turbine at a wind speed of $18 \\text{ m/s}$. [4]\n\nb) What is biomass energy? Is it renewable? What about the firewood being used in Nepal? [6]\n\nc) What is power system expansion planning? Discuss its applicability in context of a national electric utility organization.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Draw schematic diagram of a hydropower plant and explain the basic civil, mechanical and electrical components used. [8]\n(b) What is flow duration curve? Also discuss about its applicability. [4]\n(c) Discuss about suitability of Kaplan turbine in context of Nepalese hydropower sector.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) List out the most essential protection schemes required for Alternator and Generator Step Up transformer in a mega size power project. [6]\n\nb) Discuss brushless excitation system. Also mention its pros and cons in comparison to its best possible alternative. [6]\n\nc) Discuss briefly about requirements of DC supply system in a power generating station.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "A typical hydro power plant has the following details.<table><thead><tr><th>Month</th><th>Discharge($\\text{m}^3/\\text{s}$)</th><th></th><th></th></tr></thead><tbody><tr><td>January</td><td>13.5</td><td>$Q_{\\text{max}} (Q_0)$</td><td>$149.00 \\text{ m}^3/\\text{s}$</td></tr><tr><td>February</td><td>8.6</td><td>$Q_{25\\%}$</td><td>$72.5 \\text{ m}^3/\\text{s}$</td></tr><tr><td>March</td><td>6.58</td><td>$Q_{45\\%}$</td><td>$22.87 \\text{ m}^3/\\text{s}$</td></tr><tr><td>April</td><td>7.5</td><td>$Q_{65\\%}$</td><td>$12.7 \\text{ m}^3/\\text{s}$</td></tr><tr><td>May</td><td>12.8</td><td>$Q_{85\\%}$</td><td>$8.70 \\text{ m}^3/\\text{s}$</td></tr><tr><td>June</td><td>25.7</td><td>$Q_{95\\%}$</td><td>$7.1 \\text{ m}^3/\\text{s}$</td></tr><tr><td>July</td><td>72.5</td><td>$Q_{\\text{min}}$</td><td>$5.05 \\text{ m}^3/\\text{s}$</td></tr><tr><td>August</td><td>101.2</td><td></td><td></td></tr><tr><td>September</td><td>81.3</td><td></td><td></td></tr><tr><td>October</td><td>27.05</td><td></td><td></td></tr><tr><td>November</td><td>21.38</td><td></td><td></td></tr><tr><td>Gross Head</td><td>310 m</td></tr><tr><td>Turbine efficiency</td><td>91%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>99%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Raparian release</td><td>10%</td></tr><tr><td>Generator sub transient reactance</td><td>21%</td></tr><tr><td>Transformer reactance</td><td>9.15%</td></tr><tr><td>Transmission line inductance</td><td>0.95 mH/km</td></tr><tr><td>Transmission line length</td><td>30 kM</td></tr><tr><td>Transmission voltage level</td><td>As required</td></tr><tr><td>Generator voltage level</td><td>11 kV</td></tr><tr><td>Transmission circuit (single or double)</td><td>Choose appropriately as required</td></tr></tbody></table>(Please make your own smart assumption if needed beside given data above)\nDesign a power plant project so as to obtain following,\n\na) Installed capacity with design discharge as Q45% and appropriate number of units. [3]\n\nb) Choose the appropriate type of Generator lead. [2]\n\nc) Choose your generator transformer scheme mentioning the reasons. [3]\n\nd) Make single line diagram for the project choosing earthing system, excitation system and bus bar system. [4]\n\ne) Find Rating of high voltage circuit breaker of the project.\nTurbine Selection Table and Charts<table><thead><tr><th>Turbine type</th><th>Head range in metres</th></tr></thead><tbody><tr><td>Kaplan and Propeller</td><td>2 < H < 40</td></tr><tr><td>Francis</td><td>10 < H < 350</td></tr><tr><td>Pelton</td><td>50 < H < 1300</td></tr><tr><td>Michell-Banki</td><td>3 < H < 250</td></tr><tr><td>Turgo</td><td>50 < H < 250</td></tr></tbody></table>Fig. Trubine Efficiency",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Shrawan",
+      "year": "2079",
+      "month": "Shrawan",
+      "examType": "Back",
+      "totalMarks": 18,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Discuss recent trends or changes of scenario of \"world's electricity generation from renewable resources\" in general. Is it impacting power generation trend in Nepalese Power Sector as well? [6]\n\nb) Compare Combined Cycle Gas Turbine power plant with hydro power project considering various possible aspects. [6]\n\nc) Assume that we live in an area slightly above sea level that has an air density of $1.225 \\text{ kg/m}^3$ and we have installed a 35% efficient wind turbine which has a rotor blade radius of six $6.5 \\text{ m}$. Calculate the output power from the turbine at a wind speed of $9 \\text{ m/s}$ and again at double the velocity of $18 \\text{ m/s}$.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Write down the appropriate use of geo-thermal energy found in different parts of Nepal. Write down the types of plant if we geo-thermal energy to produce electricity. Draw figures if necessary. [6]\n\nb) What is transmission expansion planning? Discuss its applicability. [4]\n\nc) Assume that you have identified a suitable hydropower site for electricity generation. Discuss the steps/stages how would you proceed to own, build that project and finally sell power to Nepal Electricity Authority.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Stating environmental impact of P-ROR type hydro-power plant, draw a schematic diagram showing all the necessary components and describe each of them. [8]\n(b) What is scientific method of turbine selection? [4]\n(c) Discuss briefly the concept of power system security.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Write down the different types of high voltage bus bar with appropriate line diagram. Write the advantages and disadvantages of main and transfer bus bar. [8]\n\nb) Make a tentative example type quotation of a high voltage side \"circuit breaker\" for power evacuation purpose at switch yard of a hydropower project that has installed capacity about $48 \\text{ MW}$ and line length to grid point substation is about $15 \\text{ km}$. [4]\n\nc) Discuss major steps of Grounding Mat design in a power project area.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Jestha",
+      "year": "2079",
+      "month": "Jestha",
+      "examType": "Back",
+      "totalMarks": 42,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) What are the conventional and no-conventional energy sources in Nepal? Describe the possibility and scope of wind energy in the context of Nepal. [8]\n(b) Explain about mechanical and thermal energy storages technologies.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Define the following terms. [3×2]\\n(i) Load uncertainties\\n(ii) System security\\n(iii) Reserve power\n(b) Sketch a typical layout of a medium head hydropower station fitted with Francis turbine. Briefly describe the main elements.",
+          "marks": "10",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Describe the characteristics of various types of turbines used in hydro electric power stations. [8]\n(b) Compare the brushless excitation system with static excitation system on the basis of schematic diagram. [8]\n(c) Discuss the different types of busbar layout used in substation with suitable circuit diagram.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "a) Develop a typical specification while procuring a power transformer to be used in power plant design. [8]\n\nb) A typical hydro power plant has the following details.<table><thead><tr><th>Month</th><th>Discharge($m^3/s$)</th><th></th><th></th></tr></thead><tbody><tr><td>Jan</td><td>11.95</td><td>$Q_{max} (Q_o)$</td><td>674.19 $m^3/s$</td></tr><tr><td>Feb</td><td>9.94</td><td>$Q25\\%$</td><td>48.90 $m^3/s$</td></tr><tr><td>Mar</td><td>9.20</td><td>$Q45\\%$</td><td>16.75 $m^3/s$</td></tr><tr><td>Apr</td><td>11.93</td><td>$Q65\\%$</td><td>9.34 $m^3/s$</td></tr><tr><td>May</td><td>8.48</td><td>$Q85\\%$</td><td>6.21 $m^3/s$</td></tr><tr><td>Jun</td><td>42.28</td><td>$Q95\\%$</td><td>4.38 $m^3/s$</td></tr><tr><td>July</td><td>120.98</td><td>$Qmin$</td><td>1.40 $m^3/s$</td></tr><tr><td>Aug</td><td>143.00</td><td></td><td></td></tr><tr><td>Sep</td><td>110.27</td><td></td><td></td></tr><tr><td>Oct</td><td>50.95</td><td></td><td></td></tr><tr><td>Nov</td><td>24.66</td><td></td><td></td></tr><tr><td>Dec</td><td>16.17</td><td></td><td></td></tr><tr><td>TURBINE TYPE</td><td>HEAD RANGE IN METERS</td></tr><tr><td>Kaplan</td><td>$2 < H < 40$</td></tr><tr><td>Francis</td><td>$10 < H < 350$</td></tr><tr><td>Pelton</td><td>$50 < H < 1300$</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>120 m</td></tr><tr><td>Turbine efficiency</td><td>90%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>98%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Raparian release</td><td>10%</td></tr><tr><td>Generator sub-transient reactance</td><td>15%</td></tr><tr><td>Transformer reactance</td><td>12%</td></tr><tr><td>Transmission line inductance</td><td>0.96 mH/km</td></tr><tr><td>Transmission line length</td><td>20 km</td></tr><tr><td>Transmission Voltage level</td><td>33 kv</td></tr><tr><td>Generator Voltage level</td><td>11 kv</td></tr><tr><td>Transmission circuit</td><td>Single circuit</td></tr></tbody></table>Design a power plant so as to obtain the following parameters\n\ni) Electrical power output taking design discharge as $Q45\\%$\nii) Select the numbers of units and installed capacity with suitable reasons\niii) Draw the single line diagram showing numbers of units, generators, power transformer, station transformer and diesel generator for black start\niv) Select the type of turbine\n\nv) Select the type of busbar with suitable reasons\nvi) Calculate the MVA level of LV bus, MV bus and HV bus\nvii) Calculate the rating of CB to be used in your design.\n(Assume suitable data if required)",
+          "marks": "16",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Chaitra",
+      "year": "2079",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 23,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Discuss the development of hydro power plant in the context of Nepal. [6]\n\nb) Compare the operational characteristics of Solar Power plant with hydro power plant on the basis of reliability, grid connection, efficiency, operating range, maintainability and economics. [6]\n\nc) Explain how bio-mass source of energy can maintain sustainable carbon neutral cycle?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) How would the interconnection of regional utilities help in integrated system planning in design approach? Does it solve the issue of reserve bottling? [6]\n\nb) What is the difference between spinning reserve and reserve power? [4]\n\nc) Show that the power output of wind power plant is cube of the velocity of air. What are the other factors that may guide the possible output of wind power project?",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Draw a schematic diagram of reservoir type hydro-power plant and describe necessary civil, mechanical and electrical components. [8]\n(b) Describe the working principle of electronic based automatic voltage regulator with suitable diagrams.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Discuss logics behind recommending brushless excitation system over static excitation system. [6]\n(b) Compare grounded and ungrounded power system. [6]\n(c) List out the possible protection scheme that to be employed for a medium size hydropower generator.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "A typical hydropower plant has the following details.<table><thead><tr><th>Month</th><th>Discharge ($m^3/s$)</th><th>Flow duration</th></tr></thead><tbody><tr><td>January</td><td>3.30</td><td>$Q_{max}$</td><td>110.00 $m^3/s$</td></tr><tr><td>February</td><td>2.20</td><td>$Q_{25\\%}$</td><td>16.42 $m^3/s$</td></tr><tr><td>March</td><td>1.40</td><td>$Q_{45\\%}$</td><td>6.82 $m^3/s$</td></tr><tr><td>April</td><td>1.00</td><td>$Q_{65\\%}$</td><td>3.7 $m^3/s$</td></tr><tr><td>May</td><td>3.50</td><td>$Q_{85\\%}$</td><td>2.10 $m^3/s$</td></tr><tr><td>June</td><td>6.00</td><td>$Q_{95\\%}$</td><td>1.17 $m^3/s$</td></tr><tr><td>July</td><td>14.00</td><td>$Q_{min}$</td><td>0.64 $m^3/s$</td></tr><tr><td>August</td><td>35.00</td><td></td><td></td></tr><tr><td>September</td><td>24.00</td><td></td><td></td></tr><tr><td>October</td><td>12.00</td><td></td><td></td></tr><tr><td>November</td><td>7.50</td><td></td><td></td></tr><tr><td>December</td><td>5.00</td><td></td><td></td></tr><tr><td>Turbine type</td><td>Head range</td></tr><tr><td>Kaplan</td><td>$2 < H < 40$</td></tr><tr><td>Francis</td><td>$10 < H < 350$</td></tr><tr><td>Pelton</td><td>$50 < H < 1300$</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>95 m</td></tr><tr><td>Turbine efficiency</td><td>90 %</td></tr><tr><td>Generator efficiency</td><td>97 %</td></tr><tr><td>Transformer efficiency</td><td>98 %</td></tr><tr><td>Head loss</td><td>5 %</td></tr><tr><td>Riparian release</td><td>10 %</td></tr><tr><td>Generator sub transient reactance</td><td>20 %</td></tr><tr><td>Transformer reactance</td><td>11 %</td></tr><tr><td>Transmission line inductance</td><td>0.77 mH/km</td></tr><tr><td>Transmission line length</td><td>80 km</td></tr><tr><td>Transmission Voltage level</td><td>66 kV</td></tr><tr><td>Generator Voltage level</td><td>11 kV</td></tr><tr><td>Transmission circuit</td><td>Single circuit</td></tr></tbody></table>Design a hydro power plant so as to obtain following parameters\n\na) Electrical power output taking design discharge as $Q_{65\\%}$. [1]\n\nb) Select the numbers of unit and installed capacity. [2]\n\nc) Select the type of turbine. [3]\n\nd) Select the type of bus bar to be used. [2]\n\ne) Draw the single line diagram showing number of units, generator, power transformer, station transformer and diesel generator for black start. [4]\n\nf) Calculate the rating of generator circuit breaker and high voltage circuit breaker in your design.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Kartik",
+      "year": "2078",
+      "month": "Kartik",
+      "examType": "Back",
+      "totalMarks": 18,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "A typical hydro power plant has following details.<table><thead><tr><th>Month</th><th>Discharge ($m^3/s$)</th><th>Flow duration</th></tr></thead><tbody><tr><td>January</td><td>3.30</td><td>$Q(max)$</td><td>110.00 $m^3/s$</td></tr><tr><td>February</td><td>2.20</td><td>$Q_{25\\%}$</td><td>16.42 $m^3/s$</td></tr><tr><td>March</td><td>1.40</td><td>$Q_{45\\%}$</td><td>6.82 $m^3/s$</td></tr><tr><td>April</td><td>1.00</td><td>$Q_{65\\%}$</td><td>3.7 $m^3/s$</td></tr><tr><td>May</td><td>3.50</td><td>$Q_{85\\%}$</td><td>2.10 $m^3/s$</td></tr><tr><td>June</td><td>6.00</td><td>$Q_{95\\%}$</td><td>1.17 $m^3/s$</td></tr><tr><td>July</td><td>14.00</td><td>$Q(min)$</td><td>0.64 $m^3/s$</td></tr><tr><td>August</td><td>35.00</td><td></td><td></td></tr><tr><td>September</td><td>24.00</td><td></td><td></td></tr><tr><td>October</td><td>12.00</td><td></td><td></td></tr><tr><td>November</td><td>7.50</td><td></td><td></td></tr><tr><td>December</td><td>5.00</td><td></td><td></td></tr><tr><td>Turbine type</td><td>Head range</td></tr><tr><td>Kaplan</td><td>$2 < H < 40$</td></tr><tr><td>Francis</td><td>$10 < H < 350$</td></tr><tr><td>Pelton</td><td>$50 < H < 1300$</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>180 m</td></tr><tr><td>Turbine efficiency</td><td>90%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>98%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Riparian release</td><td>10%</td></tr><tr><td>Generator sub transient reactance</td><td>21%</td></tr><tr><td>Transformer reactance</td><td>11%</td></tr><tr><td>Transmission line inductance</td><td>3 mH/km</td></tr><tr><td>Transmission line length</td><td>100 km</td></tr><tr><td>Transmission Voltage level</td><td>132 kV</td></tr><tr><td>Generation Voltage level</td><td>11 kV</td></tr><tr><td>Transmission circuit</td><td>Double circuit</td></tr></tbody></table>Design a hydro power plant so as to obtain following parameters\n\na) Electrical power output taking design discharge as $Q_{60\\%}$.\n\nb) Select the numbers of unit and installed capacity.\n\nc) Select the type of turbine.\n\nd) Select the type of bus bar to be used.\n\ne) Draw a single line diagram showing number of units, generator, power transformer, station transformer and diesel generator for black start.\n\nf) Calculate the rating of generator circuit breaker in your design.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Discuss current Nepalese electricity scenario of demand and supply and its trend in near future. [6]\n\nb) Compare Thermal Power Project with Nuclear Power Project considering various possible aspects. [6]\n\nc) Assume that we live in an area slightly above sea level that has an air density of $1.225 \\text{ kg/m}^3$ and we have installed a 40% efficient wind turbine which has a rotor blade radius of $6\\text{m}$. Calculate the output power from the turbine at a wind speed of $8\\text{m/s}$ and again at double the velocity of $16\\text{m/s}$.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Discuss why choosing appropriate Short circuit ratio (SCR) of a generator is crucial from the perspective of stability of the system? [4]\n\nb) Make a tentative example type quotation of a \"Power Transformer\" for power evacuation purpose from switch yard of a general medium size hydropower project situated in hilly region. [6]\n\nc) Discuss major steps of Grounding Mat design in a power project area.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Discuss major components of a Daily Pondage Run off the River type hydropower project with suitable schematic diagram. [8]\n(b) What is scientific method of turbine selection? Mention major factors governing turbine during selection of appropriate turbine type.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Chaitra",
+      "year": "2078",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 16,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Discuss trends or changes of scenario of \"Nepalese electricity generation and consumption\" that of before FIVE years and that may come up after FIVE years from today's date. [6]\n\nb) Write down the strength, weakness, opportunity and threats (SWOT) analysis for installing wind turbine for generating electricity in Nepal. [6]\n\nc) Assume that there is barrage of size $3\\text{ km} \\times 5.5\\text{ km}$ for tidal power project. Average number of tides per day is 2 and the tide height is $10\\text{ m}$. Considering power conversion efficiency of $60\\%$, determine power output capacity of the tidal project. The density of sea water is $1023\\text{ kg/m}^3$.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) What do you understand by generation expansion planning? How does load forecasting effects generation expansion planning? [6]\n\nb) What is flow duration curve? Discuss its applicability. [4]\n\nc) What are the factors to be considered during selection of appropriate site for hydropower? Also mentions the factors that govern discharge of a hydropower project.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Discuss major components of a Daily Pondage Run off the River type hydropower project with tentative head $150\\text{ m}$ and discharge $10\\text{ m}^3/\\text{s}$ per unit. Illustrate with suitable schematic diagram. [8]\n\nb) Differentiate applicability of Francis and Kaplan Turbine in reference to hydropower project. [4]\n\nc) How would flow duration curve affect while designing unit sizes of power plant?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Discuss the capability curve of a generator. [6]\n(b) How are the concepts of STEP POTENTIAL and TOUCH POTENTIAL utilized during grounding mat design of a power project area? Why and how these potentials are appropriately set? [6]\n(c) Discuss advantages of solidly grounded system of generator grounding.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2077 Chaitra",
+      "year": "2077",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 28,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) What are the non-conventional energy sources in Nepal? Describe the technology, possibility and scope of wind energy in the context of Nepal. [6]\n(b) Hydropower brings holistic development for the region. How could it be possible? [4]\n(c) Compare Geothermal power plant with conventional thermal power plant considering various aspects.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) What is Transmission Expansion Planning? Discuss its brief procedure. [6]\n\nb) Find size of a solar panel and inverter system for a home in an isolated remote area, that has loads as in following table. [6]<table><thead><tr><th>Load Type</th><th>No.</th><th>Watt</th><th>Average Operating hours</th></tr></thead><tbody><tr><td>Lamps</td><td>3</td><td>10</td><td>4</td></tr><tr><td>TV</td><td>1</td><td>85</td><td>6</td></tr><tr><td>Laptop</td><td>1</td><td>65</td><td>8</td></tr></tbody></table>Note: Make your own necessary assumptions.\n\nc) What is scientific method of turbine selection?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Draw a schematic diagram of PROR type hydropower plant showing all the necessary components and describe each of them. [8]\n(b) Write down the types of generator neutral grounding. Specify the types to be used in accordance to the size of power plant with their advantages and disadvantages.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) What are the factors affecting the system expansion planning? [4]\n(b) List out major methods/requirements you may recommend for protection of generator in a medium size power project.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "A typical hydro power plant has the following details<table><thead><tr><th>Month</th><th>Discharge($\\text{m}^3\\text{/s}$)</th><th></th><th></th></tr></thead><tbody><tr><td>January</td><td>4.9</td><td>$Q_{\\text{max}}$ ($Q_0$)</td><td>$211.00\\text{ m}^3\\text{/s}$</td></tr><tr><td>February</td><td>3.86</td><td>$Q_{25\\%}$</td><td>$18.24\\text{ m}^3\\text{/s}$</td></tr><tr><td>March</td><td>3.58</td><td>$Q_{45\\%}$</td><td>$6.80\\text{ m}^3\\text{/s}$</td></tr><tr><td>April</td><td>4.55</td><td>$Q_{65\\%}$</td><td>$4.70\\text{ m}^3\\text{/s}$</td></tr><tr><td>May</td><td>3.00</td><td>$Q_{85\\%}$</td><td>$3.10\\text{ m}^3\\text{/s}$</td></tr><tr><td>June</td><td>12.77</td><td>$Q_{95\\%}$</td><td>$2.17\\text{ m}^3\\text{/s}$</td></tr><tr><td>July</td><td>32.95</td><td>$Q_{\\text{min}}$</td><td>$0.64\\text{ m}^3\\text{/s}$</td></tr><tr><td>August</td><td>40.26</td><td></td><td></td></tr><tr><td>September</td><td>31.23</td><td></td><td></td></tr><tr><td>October</td><td>15.05</td><td></td><td></td></tr><tr><td>November</td><td>7.38</td><td></td><td></td></tr><tr><td>December</td><td>4.85</td><td></td><td></td></tr><tr><td>Turbine Type</td><td>Head range (m)</td></tr><tr><td>Kaplan</td><td>2<H<40</td></tr><tr><td>Francis</td><td>10<H<350</td></tr><tr><td>Pelton</td><td>50<H<1300</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>250 m</td></tr><tr><td>Turbine efficiency</td><td>91%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>98%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Raparian release</td><td>10%</td></tr><tr><td>Generator sub transient reactance</td><td>21%</td></tr><tr><td>Transformer reactance</td><td>9.15%</td></tr><tr><td>Transmission line inductance</td><td>0.92mH/km</td></tr><tr><td>Transmission line length</td><td>35 km</td></tr><tr><td>Transmission voltage level</td><td>66kV</td></tr><tr><td>Generator voltage level</td><td>11kV</td></tr><tr><td>Transmission circuit</td><td>Double circuit</td></tr></tbody></table>Design a power plant so as to obtain following parameters\n\na) Electrical power output taking design discharge as $Q_{45\\%}$\n\nb) Select the numbers of units and installed capacity\n\nc) Select the type of turbine\n\nd) Draw the single line diagram showing generators, power transformers, station transformer and diesel generator for black start\n\ne) Calculate the rating of generator circuit breaker to be used in your design\n\nf) Suggest the type of bus bar to be used\n(Assume suitable data if necessary and necessary graph is attached herewith)",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Bhadra",
+      "year": "2075",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 27,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) What are the conventional and non conventional energy sources? How the fossil fuel can be replaced by non-conventional energy in Nepal? [6]\n\nb) Compare the operational characteristics of solar photovoltaic power plant with hydropower plant on the basis of reliability, grid connection, efficiency, operating range, maintenance perspectives and so on. Also, discuss the beauty of combination of such to kind of power project for an electric system.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Derive the formula to estimate electric power output from a wind power system. [4]\n(b) Discuss Cogeneration Technology. Recommend the places where such system is more attractive. [6]\n(c) Discuss briefly the Generation expansion planning procedure.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Discuss the various components of PROR hydropower plant with suitable schematic diagram. [6]\n\nb) Discuss the tentative steps/phases for developing a hydropower plant in relevance to such project in Nepal. [4]\n\nc) The design exceedance of hydropower plant $Q_{45\\%}$, what does that mean? Compare $Q_{45\\%}$ with $Q_{65\\%}$ while designing hydropower plant from the perspective of power producer (seller).",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Compare brushless and static excitation system according to operation and use. [6]\n(b) List out the major elements that limits the alternator's capability curve. Draw a typical capability curve of alternator and explain it. [6]\n(c) Describe the major steps that to be followed for design of Earthing (Grounding) mat in power station.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "A typical hydro power plant has the following details:\n<table><thead><tr><th>Turbine Type</th><th>Head range (m)</th></tr></thead><tbody><tr><td>Kaplan</td><td>2<H<40</td></tr><tr><td>Francis</td><td>10<H<350</td></tr><tr><td>Pelton</td><td>50<H<1300</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>200 m</td></tr><tr><td>Turbine efficiency</td><td>90%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>98%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Raparian release</td><td>10%</td></tr><tr><td>Generator sub transient reactance</td><td>21%</td></tr><tr><td>Transformer reactance</td><td>9.15%</td></tr><tr><td>Transmission line inductance</td><td>0.95mH/km</td></tr><tr><td>Transmission line length</td><td>25 Km</td></tr><tr><td>Transmission voltage level</td><td>33kv</td></tr><tr><td>Generator voltage level</td><td>11kv</td></tr><tr><td>Transmission circuit</td><td>Double circuit</td></tr></tbody></table>Design a power plant so as to obtain the following parameters:\n\na) Electrical power output taking design discharge as Q45%\n\nb) Select the numbers of units and installed capacity\n\nc) Draw the single diagram showing number of units, generator, power transformer, station transformer and diesel generator for black start\n\nd) Select the type of turbine\n\ne) Suggest the type of bus bar to be used\n\nf) Calculate the MVA level of LV bus, MV bus and HV bus\n\ng) Calculate the rating of circuit breaker to be used in your design\n(Assume suitable data if required and the necessary graph is attached herewith)",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2074 Magh",
+      "year": "2074",
+      "month": "Magh",
+      "examType": "Back",
+      "totalMarks": 22,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Is biomass renewable? How about our firewood in Nepalese villages? Justify your answer with necessary arguments. [4]\n\nb) What do you mean by captive power generation? Discuss its needs. [4]\n\nc) Compare the operational characteristics of thermal and hydropower plant on the basis of reliability, grid connection, efficiency, operating range, economics and maintainability.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Explain how the electricity can be generated from solar with suitable sketch. Explain the characteristics of wind power on the basis of turbine efficiency, energy cost, capacity and annual energy output. [6]\n\nb) Explain the importance of power system planning? Discuss briefly the generation expansion and distribution planning procedure. [6]\n\nc) What are the benefits of accurate load forecasting? Explain in brief about power system security?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Discuss the various components of hydropower plant focusing on medium head high discharge project? Also mention their functions. [3+5]\n\nb) Explain any two scheme of unit generator transformer combination used in power plant on the basis of fault level, maintenance outage and efficiency. Also draw the single line diagram for both of the scheme.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) What is the significance of short circuit ratio (SCR) in design of synchronous generator? Show analytically its impact on stability of the power system. [3+5]\n\nb) What particular precaution should be taken while using vacuum circuit breaker (VCB) as a generator circuit breaker (CB)? [3]\n\nc) Discuss electrical characteristics of unit transformer that to be considered during its selection.<table><thead><tr><th>Transmission Line length</th><th>35Km</th></tr></thead><tbody><tr><td>Transmission Voltage Level</td><td>66kV</td></tr><tr><td>Generator Voltage Level</td><td>11kV</td></tr><tr><td>Transmission Circuit</td><td>Double Circuit</td></tr></tbody></table>Design a power plant so as to obtain the following parameters.\n\na) Electrical power output taking design discharge as $Q_{45\\%}$.\n\nb) Select the number of units and installed capacity.\n\nc) Select the type of turbine.\n\nd) Draw the single line diagram showing number of units, generator, power transformer, station transformer and diesel generator for black start.\n\ne) Suggest the type of bus bar to be used.\n\nf) Calculate the rating of the generator circuit breaker to be used in your design.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2074 Bhadra",
+      "year": "2074",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 29,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) What is Cogeneration? [5]\n\nb) Biogas plant of Nepal are registered as Clean Development Mechanism because of its contribution for reducing greenhouse gas emission. How would you argue that the biogas plants are contributing to reduce greenhouse gas emission? [5]\n\nc) Compare the operational characteristics of the thermal power plant and hydropower plant regarding daily load curve, stability, grid connection and operational characteristics and so on.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "You have planned to electrify a house with electric load as below in table. Make a suitable selection for Solar Panel and battery size (of 12 V systems) for the house.<table><thead><tr><th>Load type</th><th>Numbers</th><th>Wattage</th><th>Operating hours (per day)</th></tr></thead><tbody><tr><td>Lamps</td><td>5</td><td>Each 10 W</td><td>4</td></tr><tr><td>TV</td><td>1</td><td>60 W</td><td>5</td></tr><tr><td>Computer</td><td>1</td><td>65 W</td><td>3</td></tr></tbody></table>Assume equal efficiency for both inverter and battery as 80%. Consider sun shining duration 6 hours a day.",
+          "marks": "10",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Discuss the functions and importance of various components of hydropower plant with proper schematic diagram of ROR hydropower plant. [8]\n\nb) Describe the criterion for selection turbine in hydroelectric power plant. [5]\n\nc) Why riparian release is considered during the design of hydropower plant? What are the criteria of design discharge selection?",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Discuss the various factors which should be considered for the choice of generator during the design of a power plant. Also clarify analytically that lower the short circuit ratio (SCR), lower be the stability of the system. [5+5]\n\nb) Compare with necessary schematic diagrams Brushless Excitation System with Static Excitation System used in a synchronous generator on the basis of operating range, accessories required and cost.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2073 Magh",
+      "year": "2073",
+      "month": "Magh",
+      "examType": "Back",
+      "totalMarks": 20,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) What do you mean by conventional and non-conventional energy sources? Discuss bio-mass energy suitable examples. [8]\n(b) Compare the operational characteristics of thermal, geothermal and nuclear plant on the basis of reliability, grid-connection, efficiency, operating range and maintainability.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) How electricity is generated from Wind-turbine system? What are the merits of wind energy? Estimate the power output from the wind turbine that has blade length of $5.5\\text{m}$ and wind speed of $25\\text{m/sec}$. Assume that air density is $1.23\\text{ kg/m}^3$ and power coefficient is $0.4$. [6]\n\nb) Discuss briefly the Generation expansion planning procedure. [6]\n\nc) Discuss the scenario of tie up between two national level electric utilities.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) What are the disadvantages of a very low specific speed reaction turbine? What are its advantages? How does the efficiency of the pelton wheel vary with its speed? [8]\n\nb) Describe brushless excitation system with suitable diagram. When would you find it better than static excitation system? [3+2]\n\nc) Which circuit breaker would you think suitable as generator circuit breaker (GCB) in hydropower station, and why?",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) What are the major factors that should be considered while choosing the generator during the design of a power plant? [5]\n(b) Make a specification for purchasing a power transformer. [6]\n(c) Discuss the working of Brushless excitation system and static excitation system with proper schematic diagram.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2073 Bhadra",
+      "year": "2073",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 38,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Discuss the situation of electrical energy among total energy need of Nepal. [4]\n\nb) Firewood, a common biomass used as a major energy resource in context of Nepal, can or cannot be renewable. Comment on this statement. [6]\n\nc) Compare the operational characteristics of thermal power with hydropower plant on the basis of reliability, grid connection, efficiency, operating range and so on.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) List out the advantages and disadvantages of wind power. Estimate electric power output from a wind turbine that has turbine blade length of $1.25\\text{ m}$ and wind speed of $16\\text{ m/sec}$. Assume that air density is $1.23\\text{ kg/m}^3$ and power coefficient is $0.3$. [2+4]\n\nb) What do you mean by power system planning? Explain in detail Transmission expansion and distribution planning procedure. [6]\n\nc) Why load forecasting is important in system planning? Explain the need for accurate load forecasting.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Make a sketch to show various components of medium head, medium size Pondage Run of River (PROR) hydropower plant? Also mention functions of the components. [4+4]\n(b) Draw the unit protection scheme of a power transformer. Mention the selection criteria for the power transformer. What reflects the Vector group of a power transformer?",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) How the ‘specific speed’ is defined for a turbine? Discuss its purpose. [6]\n(b) What is DOD of a battery? Draw the typical schemes of service station. [6]\n(c) What could be the consequences of using higher or lower short circuit ratio (SCR) for a synchronous generator?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Develop a typical specification while procuring a power transformer to be used in power plant design. [8]\n\nb) A typical hydro power plant has the following details.<table><thead><tr><th>Month</th><th>Discharge($m^3/s$)</th><th></th><th></th></tr></thead><tbody><tr><td>Jan</td><td>11.95</td><td>$Q_{max} (Q_o)$</td><td>674.19 $m^3/s$</td></tr><tr><td>Feb</td><td>9.94</td><td>$Q25\\%$</td><td>48.90 $m^3/s$</td></tr><tr><td>Mar</td><td>9.20</td><td>$Q45\\%$</td><td>16.75 $m^3/s$</td></tr><tr><td>Apr</td><td>11.93</td><td>$Q65\\%$</td><td>9.34 $m^3/s$</td></tr><tr><td>May</td><td>8.48</td><td>$Q85\\%$</td><td>6.21 $m^3/s$</td></tr><tr><td>Jun</td><td>42.28</td><td>$Q95\\%$</td><td>4.38 $m^3/s$</td></tr><tr><td>July</td><td>120.98</td><td>$Qmin$</td><td>1.40 $m^3/s$</td></tr><tr><td>Aug</td><td>143.00</td><td></td><td></td></tr><tr><td>Sep</td><td>110.27</td><td></td><td></td></tr><tr><td>Oct</td><td>50.95</td><td></td><td></td></tr><tr><td>Nov</td><td>24.66</td><td></td><td></td></tr><tr><td>Dec</td><td>16.17</td><td></td><td></td></tr><tr><td>TURBINE TYPE</td><td>HEAD RANGE IN METERS</td></tr><tr><td>Kaplan</td><td>$2 < H < 40$</td></tr><tr><td>Francis</td><td>$10 < H < 350$</td></tr><tr><td>Pelton</td><td>$50 < H < 1300$</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>120 m</td></tr><tr><td>Turbine efficiency</td><td>90%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>98%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Raparian release</td><td>10%</td></tr><tr><td>Generator sub-transient reactance</td><td>15%</td></tr><tr><td>Transformer reactance</td><td>12%</td></tr><tr><td>Transmission line inductance</td><td>0.96 mH/km</td></tr><tr><td>Transmission line length</td><td>20 km</td></tr><tr><td>Transmission Voltage level</td><td>33 kv</td></tr><tr><td>Generator Voltage level</td><td>11 kv</td></tr><tr><td>Transmission circuit</td><td>Single circuit</td></tr></tbody></table>Design a power plant so as to obtain the following parameters\n\ni) Electrical power output taking design discharge as $Q45\\%$\nii) Select the numbers of units and installed capacity with suitable reasons\niii) Draw the single line diagram showing numbers of units, generators, power transformer, station transformer and diesel generator for black start\niv) Select the type of turbine\n\nv) Select the type of busbar with suitable reasons\nvi) Calculate the MVA level of LV bus, MV bus and HV bus\nvii) Calculate the rating of CB to be used in your design.\n(Assume suitable data if required)",
+          "marks": "16",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2072 Magh",
+      "year": "2072",
+      "month": "Magh",
+      "examType": "Back",
+      "totalMarks": 64,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) What are the conventional and non-conventional energy sources? Describe with suitable sketches how electric power can be obtained from solar? [8]\n(b) Compare the operational characteristics of the hydroelectric power plant and thermal power plant considering factors such as techno-economic, environmental and so on.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What is Reserve Planning? Study the benefits of interconnection of utilities on power system?",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Draw the schematic diagram of hydropower plant showing different structural components. State the role of surge tank in hydropower plant construction. [8]\n(b) What do you mean by discharge exceedance? Describe the criterion for selecting turbine in hydro-electric power plant.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Make a comparison between vacuum circuit breaker with SF6 circuit breaker in a power system.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "A typical hydro power plant has the following details<table><thead><tr><th>Month</th><th>Discharge($\\text{m}^3\\text{/s}$)</th><th></th><th></th></tr></thead><tbody><tr><td>January</td><td>4.9</td><td>$Q_{\\text{max}}$ ($Q_0$)</td><td>$211.00\\text{ m}^3\\text{/s}$</td></tr><tr><td>February</td><td>3.86</td><td>$Q_{25\\%}$</td><td>$18.24\\text{ m}^3\\text{/s}$</td></tr><tr><td>March</td><td>3.58</td><td>$Q_{45\\%}$</td><td>$6.80\\text{ m}^3\\text{/s}$</td></tr><tr><td>April</td><td>4.55</td><td>$Q_{65\\%}$</td><td>$4.70\\text{ m}^3\\text{/s}$</td></tr><tr><td>May</td><td>3.00</td><td>$Q_{85\\%}$</td><td>$3.10\\text{ m}^3\\text{/s}$</td></tr><tr><td>June</td><td>12.77</td><td>$Q_{95\\%}$</td><td>$2.17\\text{ m}^3\\text{/s}$</td></tr><tr><td>July</td><td>32.95</td><td>$Q_{\\text{min}}$</td><td>$0.64\\text{ m}^3\\text{/s}$</td></tr><tr><td>August</td><td>40.26</td><td></td><td></td></tr><tr><td>September</td><td>31.23</td><td></td><td></td></tr><tr><td>October</td><td>15.05</td><td></td><td></td></tr><tr><td>November</td><td>7.38</td><td></td><td></td></tr><tr><td>December</td><td>4.85</td><td></td><td></td></tr><tr><td>Turbine Type</td><td>Head range (m)</td></tr><tr><td>Kaplan</td><td>2<H<40</td></tr><tr><td>Francis</td><td>10<H<350</td></tr><tr><td>Pelton</td><td>50<H<1300</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>250 m</td></tr><tr><td>Turbine efficiency</td><td>91%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>98%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Raparian release</td><td>10%</td></tr><tr><td>Generator sub transient reactance</td><td>21%</td></tr><tr><td>Transformer reactance</td><td>9.15%</td></tr><tr><td>Transmission line inductance</td><td>0.92mH/km</td></tr><tr><td>Transmission line length</td><td>35 km</td></tr><tr><td>Transmission voltage level</td><td>66kV</td></tr><tr><td>Generator voltage level</td><td>11kV</td></tr><tr><td>Transmission circuit</td><td>Double circuit</td></tr></tbody></table>Design a power plant so as to obtain following parameters\n\na) Electrical power output taking design discharge as $Q_{45\\%}$\n\nb) Select the numbers of units and installed capacity\n\nc) Select the type of turbine\n\nd) Draw the single line diagram showing generators, power transformers, station transformer and diesel generator for black start\n\ne) Calculate the rating of generator circuit breaker to be used in your design\n\nf) Suggest the type of bus bar to be used\n(Assume suitable data if necessary and necessary graph is attached herewith)",
+          "marks": "32",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2072 Ashwin",
+      "year": "2072",
+      "month": "Ashwin",
+      "examType": "Regular",
+      "totalMarks": 56,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) What is Cogeneration? [5]\n\nb) Biogas plant of Nepal are registered as Clean Development Mechanism because of its contribution for reducing greenhouse gas emission. How would you argue that the biogas plants are contributing to reduce greenhouse gas emission? [5]\n\nc) Compare the operational characteristics of the thermal power plant and hydropower plant regarding daily load curve, stability, grid connection and operational characteristics and so on.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) What do you mean by 'power system security'? What are the vital components of security assessment? [6]\n(b) Explain the benefits of inter connection of regional utilities.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Discuss the effect of the following factors in selecting of a turbine for a hydroelectric plant: (i) head (ii) speed and specific speed (iii) part load operation. [8]\n(b) Sketch a typical layout of a medium head hydroelectric power station fitted with Francis turbine. Briefly describe the main elements.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Discuss working of a brushless excitation with necessary schematic diagram. When would you recommend using such excitation system? [4]\n(b) Describe speed governing system of hydro generator.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Develop a typical specification while procuring a power transformer to be used in power plant design. [8]\n\nb) A typical hydro power plant has the following details.<table><thead><tr><th>Month</th><th>Discharge($m^3/s$)</th><th></th><th></th></tr></thead><tbody><tr><td>Jan</td><td>11.95</td><td>$Q_{max} (Q_o)$</td><td>674.19 $m^3/s$</td></tr><tr><td>Feb</td><td>9.94</td><td>$Q25\\%$</td><td>48.90 $m^3/s$</td></tr><tr><td>Mar</td><td>9.20</td><td>$Q45\\%$</td><td>16.75 $m^3/s$</td></tr><tr><td>Apr</td><td>11.93</td><td>$Q65\\%$</td><td>9.34 $m^3/s$</td></tr><tr><td>May</td><td>8.48</td><td>$Q85\\%$</td><td>6.21 $m^3/s$</td></tr><tr><td>Jun</td><td>42.28</td><td>$Q95\\%$</td><td>4.38 $m^3/s$</td></tr><tr><td>July</td><td>120.98</td><td>$Qmin$</td><td>1.40 $m^3/s$</td></tr><tr><td>Aug</td><td>143.00</td><td></td><td></td></tr><tr><td>Sep</td><td>110.27</td><td></td><td></td></tr><tr><td>Oct</td><td>50.95</td><td></td><td></td></tr><tr><td>Nov</td><td>24.66</td><td></td><td></td></tr><tr><td>Dec</td><td>16.17</td><td></td><td></td></tr><tr><td>TURBINE TYPE</td><td>HEAD RANGE IN METERS</td></tr><tr><td>Kaplan</td><td>$2 < H < 40$</td></tr><tr><td>Francis</td><td>$10 < H < 350$</td></tr><tr><td>Pelton</td><td>$50 < H < 1300$</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>120 m</td></tr><tr><td>Turbine efficiency</td><td>90%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>98%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Raparian release</td><td>10%</td></tr><tr><td>Generator sub-transient reactance</td><td>15%</td></tr><tr><td>Transformer reactance</td><td>12%</td></tr><tr><td>Transmission line inductance</td><td>0.96 mH/km</td></tr><tr><td>Transmission line length</td><td>20 km</td></tr><tr><td>Transmission Voltage level</td><td>33 kv</td></tr><tr><td>Generator Voltage level</td><td>11 kv</td></tr><tr><td>Transmission circuit</td><td>Single circuit</td></tr></tbody></table>Design a power plant so as to obtain the following parameters\n\ni) Electrical power output taking design discharge as $Q45\\%$\nii) Select the numbers of units and installed capacity with suitable reasons\niii) Draw the single line diagram showing numbers of units, generators, power transformer, station transformer and diesel generator for black start\niv) Select the type of turbine\n\nv) Select the type of busbar with suitable reasons\nvi) Calculate the MVA level of LV bus, MV bus and HV bus\nvii) Calculate the rating of CB to be used in your design.\n(Assume suitable data if required)",
+          "marks": "32",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2071 Magh",
+      "year": "2071",
+      "month": "Magh",
+      "examType": "Back",
+      "totalMarks": 39,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Can firewood be regarded as renewable energy source? Justify your answer in the context of Nepal. [6]\n(b) Compare the operational characteristics of thermal, geothermal and PV plant on the basis of reliability, grid connection, efficiency, operating range and maintainability.",
+          "marks": "10",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) List out the advantages and disadvantages of wind power. Estimate electric power output from a wind turbine that has turbine blade length of $1.25\\text{ m}$ and wind speed of $16\\text{ m/sec}$. Assume that air density is $1.23\\text{ kg/m}^3$ and power coefficient is $0.3$. [2+4]\n\nb) What do you mean by power system planning? Explain in detail Transmission expansion and distribution planning procedure. [6]\n\nc) Why load forecasting is important in system planning? Explain the need for accurate load forecasting.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Discuss the various components of hydropower plant focusing on medium head high discharge project? Also mention their functions. [3+5]\n\nb) Explain any two scheme of unit generator transformer combination used in power plant on the basis of fault level, maintenance outage and efficiency. Also draw the single line diagram for both of the scheme.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "(a) How the 'specific speed' is defined for a turbine? Discuss its purpose. [6]\n\n(b) Discuss electrical characteristics of a power transformer for a power project. [6]\n\n(c) What could be the consequences of using higher or lower short circuit ratio (SCR) for a synchronous generator?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "A typical hydro power plant has the following details<table><thead><tr><th>Month</th><th>Discharge($\\text{m}^3\\text{/s}$)</th><th></th><th></th></tr></thead><tbody><tr><td>January</td><td>4.9</td><td>$Q_{\\text{max}}$ ($Q_0$)</td><td>$211.00\\text{ m}^3\\text{/s}$</td></tr><tr><td>February</td><td>3.86</td><td>$Q_{25\\%}$</td><td>$18.24\\text{ m}^3\\text{/s}$</td></tr><tr><td>March</td><td>3.58</td><td>$Q_{45\\%}$</td><td>$6.80\\text{ m}^3\\text{/s}$</td></tr><tr><td>April</td><td>4.55</td><td>$Q_{65\\%}$</td><td>$4.70\\text{ m}^3\\text{/s}$</td></tr><tr><td>May</td><td>3.00</td><td>$Q_{85\\%}$</td><td>$3.10\\text{ m}^3\\text{/s}$</td></tr><tr><td>June</td><td>12.77</td><td>$Q_{95\\%}$</td><td>$2.17\\text{ m}^3\\text{/s}$</td></tr><tr><td>July</td><td>32.95</td><td>$Q_{\\text{min}}$</td><td>$0.64\\text{ m}^3\\text{/s}$</td></tr><tr><td>August</td><td>40.26</td><td></td><td></td></tr><tr><td>September</td><td>31.23</td><td></td><td></td></tr><tr><td>October</td><td>15.05</td><td></td><td></td></tr><tr><td>November</td><td>7.38</td><td></td><td></td></tr><tr><td>December</td><td>4.85</td><td></td><td></td></tr><tr><td>Turbine Type</td><td>Head range (m)</td></tr><tr><td>Kaplan</td><td>2<H<40</td></tr><tr><td>Francis</td><td>10<H<350</td></tr><tr><td>Pelton</td><td>50<H<1300</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>250 m</td></tr><tr><td>Turbine efficiency</td><td>91%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>98%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Raparian release</td><td>10%</td></tr><tr><td>Generator sub transient reactance</td><td>21%</td></tr><tr><td>Transformer reactance</td><td>9.15%</td></tr><tr><td>Transmission line inductance</td><td>0.92mH/km</td></tr><tr><td>Transmission line length</td><td>35 km</td></tr><tr><td>Transmission voltage level</td><td>66kV</td></tr><tr><td>Generator voltage level</td><td>11kV</td></tr><tr><td>Transmission circuit</td><td>Double circuit</td></tr></tbody></table>Design a power plant so as to obtain following parameters\n\na) Electrical power output taking design discharge as $Q_{45\\%}$\n\nb) Select the numbers of units and installed capacity\n\nc) Select the type of turbine\n\nd) Draw the single line diagram showing generators, power transformers, station transformer and diesel generator for black start\n\ne) Calculate the rating of generator circuit breaker to be used in your design\n\nf) Suggest the type of bus bar to be used\n(Assume suitable data if necessary and necessary graph is attached herewith)",
+          "marks": "16",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2071 Bhadra",
+      "year": "2071",
+      "month": "Bhadra",
+      "examType": "Back",
+      "totalMarks": 42,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Discuss about operational characteristic of combined cycle gas turbine plant for power generation. [4]\n(b) How does a geothermal power plant operate? Describe briefly. [4]\n(c) Compare the operational characteristics of thermal, wind and PV plant on the basis of reliability, grid connection, efficiency, operating range and maintainability.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) How electric power is generated from a Tidal Power Project? Estimate the power output from a tidal project that has tidal range of approximately $10\\text{ m}$. The surface area of tidal harnessing plant is $3\\text{ km} \\times 3\\text{ km}$. Consider that there are two high tides every day. Assume power conversion efficiency as $30\\%$. Density of sea water is about $1025\\text{ Kg/m}^3$. [4+4]\n\nb) You have planned to electrify a house with electric load as below in table. Make a suitable selection for Solar Panel and battery size (of $12\\text{ V}$ system) for the house.<table><thead><tr><th>Load type</th><th>Numbers</th><th>Wattage</th><th>Operating hours (per day)</th></tr></thead><tbody><tr><td>Lamps</td><td>5</td><td>Each $10\\text{ W}$</td><td>4</td></tr><tr><td>TV</td><td>1</td><td>$80\\text{ W}$</td><td>5</td></tr><tr><td>Computer</td><td>1</td><td>$85\\text{ W}$</td><td>3</td></tr></tbody></table>Assume equal efficiency for both inverter and battery as $80\\%$. Consider sun shining duration 7 hours a day.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) List down the various components of hydropower plant and mention their functions. [2+6]\n(b) Discuss the benefits from interconnection of regional electric utilities. [4]\n(c) Discuss the need for accurate load forecasting in system planning.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Discuss the various factors which should be considered for the choice of generator during the design of a power plant. Also clarify analytically that lower the short circuit ratio (SCR), lower be the stability of the system. [5+5]\n\nb) Compare with necessary schematic diagrams Brushless Excitation System with Static Excitation System used in a synchronous generator on the basis of operating range, accessories required and cost.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "A typical hydro power plant has following details.<table><thead><tr><th>Month</th><th>Discharge ($m^3/s$)</th><th>Flow duration</th></tr></thead><tbody><tr><td>January</td><td>3.30</td><td>$Q(max)$</td><td>110.00 $m^3/s$</td></tr><tr><td>February</td><td>2.20</td><td>$Q_{25\\%}$</td><td>16.42 $m^3/s$</td></tr><tr><td>March</td><td>1.40</td><td>$Q_{45\\%}$</td><td>6.82 $m^3/s$</td></tr><tr><td>April</td><td>1.00</td><td>$Q_{65\\%}$</td><td>3.7 $m^3/s$</td></tr><tr><td>May</td><td>3.50</td><td>$Q_{85\\%}$</td><td>2.10 $m^3/s$</td></tr><tr><td>June</td><td>6.00</td><td>$Q_{95\\%}$</td><td>1.17 $m^3/s$</td></tr><tr><td>July</td><td>14.00</td><td>$Q(min)$</td><td>0.64 $m^3/s$</td></tr><tr><td>August</td><td>35.00</td><td></td><td></td></tr><tr><td>September</td><td>24.00</td><td></td><td></td></tr><tr><td>October</td><td>12.00</td><td></td><td></td></tr><tr><td>November</td><td>7.50</td><td></td><td></td></tr><tr><td>December</td><td>5.00</td><td></td><td></td></tr><tr><td>Turbine type</td><td>Head range</td></tr><tr><td>Kaplan</td><td>$2 < H < 40$</td></tr><tr><td>Francis</td><td>$10 < H < 350$</td></tr><tr><td>Pelton</td><td>$50 < H < 1300$</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>180 m</td></tr><tr><td>Turbine efficiency</td><td>90%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>98%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Riparian release</td><td>10%</td></tr><tr><td>Generator sub transient reactance</td><td>21%</td></tr><tr><td>Transformer reactance</td><td>11%</td></tr><tr><td>Transmission line inductance</td><td>3 mH/km</td></tr><tr><td>Transmission line length</td><td>100 km</td></tr><tr><td>Transmission Voltage level</td><td>132 kV</td></tr><tr><td>Generation Voltage level</td><td>11 kV</td></tr><tr><td>Transmission circuit</td><td>Double circuit</td></tr></tbody></table>Design a hydro power plant so as to obtain following parameters\n\na) Electrical power output taking design discharge as $Q_{60\\%}$.\n\nb) Select the numbers of unit and installed capacity.\n\nc) Select the type of turbine.\n\nd) Select the type of bus bar to be used.\n\ne) Draw a single line diagram showing number of units, generator, power transformer, station transformer and diesel generator for black start.\n\nf) Calculate the rating of generator circuit breaker in your design.",
+          "marks": "16",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2070 Magh",
+      "year": "2070",
+      "month": "Magh",
+      "examType": "Back",
+      "totalMarks": 45,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) What is bio energy? Discuss the advantages and disadvantages of biomass in comparison with geothermal energy. [2+6]\n(b) Compare the operation characteristics of the tidal power and wind power plant regarding daily curve, stability, grid connection and operating range.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Define the following terms on the basis of integrated system planning approach. [2x4]\\n(i) Load uncertainties\\n(ii) System security\n(b) Discuss the various factors which should be considered for the choice of generator during the design of a power plant. Also mention the significance of short circuit ratio in the selection of generator.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) What are the criteria for selection of a hydropower project? If the water in the river is known to carry high sediments and debris, what would be your particular recommendation in its design? [5+3]\n(b) Compare the components, operation and characteristics of run of river (ROR) type hydropower plant with pondage run of river (PROR).",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Develop a typical specification while procuring a power transformer to be in power plant design. [8]\n(b) Name the auxiliary and ancillary systems with their function in a hydropower plant with Francis turbine of 100 MW.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "A typical hydro power plant has the following details:\n<table><thead><tr><th>Turbine Type</th><th>Head range (m)</th></tr></thead><tbody><tr><td>Kaplan</td><td>2<H<40</td></tr><tr><td>Francis</td><td>10<H<350</td></tr><tr><td>Pelton</td><td>50<H<1300</td></tr><tr><td></td><td></td></tr><tr><td>Gross Head</td><td>200 m</td></tr><tr><td>Turbine efficiency</td><td>90%</td></tr><tr><td>Generator efficiency</td><td>97%</td></tr><tr><td>Transformer efficiency</td><td>98%</td></tr><tr><td>Head loss</td><td>5%</td></tr><tr><td>Raparian release</td><td>10%</td></tr><tr><td>Generator sub transient reactance</td><td>21%</td></tr><tr><td>Transformer reactance</td><td>9.15%</td></tr><tr><td>Transmission line inductance</td><td>0.95mH/km</td></tr><tr><td>Transmission line length</td><td>25 Km</td></tr><tr><td>Transmission voltage level</td><td>33kv</td></tr><tr><td>Generator voltage level</td><td>11kv</td></tr><tr><td>Transmission circuit</td><td>Double circuit</td></tr></tbody></table>Design a power plant so as to obtain the following parameters:\n\na) Electrical power output taking design discharge as Q45%\n\nb) Select the numbers of units and installed capacity\n\nc) Draw the single diagram showing number of units, generator, power transformer, station transformer and diesel generator for black start\n\nd) Select the type of turbine\n\ne) Suggest the type of bus bar to be used\n\nf) Calculate the MVA level of LV bus, MV bus and HV bus\n\ng) Calculate the rating of circuit breaker to be used in your design\n(Assume suitable data if required and the necessary graph is attached herewith)",
+          "marks": "16",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
     }
   ]
 }

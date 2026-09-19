@@ -1,371 +1,3291 @@
 {
   "subject": "Signals and Systems",
-  "subjectCode": "ENEX 255",
+  "semester": "1",
   "questions": [
     {
-      "chapter": "Signal and its Types",
-      "text": "Define energy signal and power signal with mathematical expressions and examples. Determine whether the signal $x(t) = e^{-at}u(t)$ for $a > 0$ (or $x(t) = 5\\cos(t)$) is an energy signal, power signal, or neither, and calculate its total energy or average power.",
+      "id": "signals-and-systems-1",
+      "question": "Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. $$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$Also set in 18 other sittings — see the exact wording of each<ul><li class=\"back-only\">2083 Baishakh Back (New Course)Find the Nyquist rate and Nyquist time interval of the following signal. $x(t) = 5\\cos(150\\pi t) + 10\\sin(350\\pi t) + \\cos(150\\pi t)$",
+      "text": "Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. $$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$Also set in 18 other sittings — see the exact wording of each<ul><li class=\"back-only\">2083 Baishakh Back (New Course)Find the Nyquist rate and Nyquist time interval of the following signal. $x(t) = 5\\cos(150\\pi t) + 10\\sin(350\\pi t) + \\cos(150\\pi t)$",
+      "chapter": "Archive Questions",
       "marks": "8",
+      "frequency": 19,
       "years": [
+        "2082 Chaitra",
+        "2082 Bhadra",
         "2081 Chaitra",
-        "2079 Jestha",
+        "2080 Chaitra",
         "2078 Chaitra",
-        "2077 Chaitra"
+        "2075 Bhadra",
+        "2074 Bhadra",
+        "2073 Bhadra",
+        "2071 Bhadra"
       ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Signal and its Types",
-      "text": "Show that any arbitrary continuous or discrete time signal can be decomposed into an even component and an odd component ($x(t) = x_e(t) + x_o(t)$). Find and sketch the even and odd components of a given signal.",
-      "marks": "4",
-      "years": [
-        "2076 Baisakh",
-        "2075 Bhadra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Signal and its Types",
-      "text": "Explain time shifting, time scaling, and time reversal (reflection) operations on continuous-time and discrete-time signals with neat graphical illustrations.",
-      "marks": "6",
-      "years": [
+      "examSessions": [
+        "2082 Chaitra",
+        "2082 Bhadra",
         "2081 Chaitra",
-        "2076 Baisakh"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Signal and its Types",
-      "text": "Derive the necessary condition for a discrete-time complex exponential signal $x[n] = e^{j\\omega_0 n}$ to be periodic. What is its fundamental period $N$?",
-      "marks": "4",
-      "years": [
-        "2079 Jestha",
-        "2076 Baisakh"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Fourier Transform",
-      "text": "State and prove Parseval's relation for: (a) Continuous-Time Fourier Series, and (b) Discrete-Time Fourier Series (DTFS).",
-      "marks": "6",
-      "years": [
-        "2079 Jestha",
+        "2080 Chaitra",
         "2078 Chaitra",
-        "2076 Baisakh",
-        "2076 Bhadra"
+        "2075 Bhadra",
+        "2074 Bhadra",
+        "2073 Bhadra",
+        "2071 Bhadra"
       ],
-      "frequency": 4
+      "isDiagram": false
     },
     {
-      "chapter": "Fourier Transform",
-      "text": "Find the Continuous-Time Fourier Transform (CTFT) of the signal $x(t) = e^{-at}u(t)$ for $a > 0$. Plot its magnitude and phase spectrum.",
-      "marks": "6",
-      "years": [
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2078 Chaitra",
-        "2076 Bhadra"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Fourier Transform",
-      "text": "State and prove the Convolution property of the Continuous-Time Fourier Transform: $\\mathcal{F}\\{x_1(t) * x_2(t)\\} = X_1(j\\omega) X_2(j\\omega)$.",
-      "marks": "6",
-      "years": [
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2076 Bhadra"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Fourier Transform",
-      "text": "State and prove the Duality property and Time-Scaling property of the Continuous-Time Fourier Transform.",
-      "marks": "6",
-      "years": [
-        "2081 Chaitra",
-        "2077 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Linear Time Invariant (LTI) System",
-      "text": "Derive the Convolution Integral for a continuous-time Linear Time-Invariant (LTI) system: $y(t) = \\int_{-\\infty}^\\infty x(\\tau)h(t-\\tau)d\\tau$.",
-      "marks": "6",
-      "years": [
-        "2081 Chaitra",
-        "2077 Chaitra",
-        "2075 Bhadra"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Linear Time Invariant (LTI) System",
-      "text": "Derive the Convolution Sum for a discrete-time LTI system: $y[n] = \\sum_{k=-\\infty}^\\infty x[k]h[n-k]$. Find and plot the convolution sum of sequences $x[n] = \\{1, 3, 4, 3, 1\\}$ and $h[n] = \\{2, 2, -2\\}$ (or $x[n] = \\{3, 1, 5\\}$ and $h[n] = \\{1, 4, -2, 3\\}$).",
-      "marks": "8",
-      "years": [
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2076 Baisakh"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Linear Time Invariant (LTI) System",
-      "text": "Define an LTI system and explain fundamental system properties: Linearity, Time-Invariance, Causality, Memory, and BIBO Stability. State the condition for an LTI system to be causal and stable in terms of impulse response.",
-      "marks": "8",
-      "years": [
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2078 Chaitra",
-        "2076 Baisakh"
-      ],
-      "frequency": 4
-    },
-    {
+      "id": "signals-and-systems-2",
+      "question": "a) Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. [2+4]\n$$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$\nb) Find impulse response for the DT system given by the following linear constant coefficient difference equation. $y[n] - \\frac{3}{4}y[n-1] + \\frac{1}{8}y[n-2] = 2x[n]$",
+      "text": "a) Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. [2+4]\n$$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$\nb) Find impulse response for the DT system given by the following linear constant coefficient difference equation. $y[n] - \\frac{3}{4}y[n-1] + \\frac{1}{8}y[n-2] = 2x[n]$",
       "chapter": "Sampling",
-      "text": "State and prove the Nyquist-Shannon Sampling Theorem using frequency-domain analysis. Define Nyquist rate and Nyquist interval. What is aliasing and how is it prevented? Determine the Nyquist rate for $x(t) = \\cos(200\\pi t) + \\sin(400\\pi t)$.",
+      "marks": "4",
+      "frequency": 17,
+      "years": [
+        "2082 Chaitra",
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2074 Bhadra",
+        "2073 Bhadra",
+        "2071 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2074 Bhadra",
+        "2073 Bhadra",
+        "2071 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-3",
+      "question": "a) Define energy signal and power signal. Determine whether the signal $x(t) = e^{-3t}$ is a power signal or energy signal or neither energy nor power signal. [3+3]\n\nb) Define continuous time unit step signal. Derive the necessary condition for the signal $x(t) = e^{j\\omega t}$ to be periodic.",
+      "text": "a) Define energy signal and power signal. Determine whether the signal $x(t) = e^{-3t}$ is a power signal or energy signal or neither energy nor power signal. [3+3]\n\nb) Define continuous time unit step signal. Derive the necessary condition for the signal $x(t) = e^{j\\omega t}$ to be periodic.",
+      "chapter": "Signal and its Types",
+      "marks": "4",
+      "frequency": 8,
+      "years": [
+        "2081 Chaitra",
+        "2082 Chaitra",
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2072 Ashwin"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2082 Chaitra",
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2072 Ashwin"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-4",
+      "question": "Differentiate between energy signal and power signal.Show by giving suitable example that power of the energy signal is zero and energy of the power signal is infinite.",
+      "text": "Differentiate between energy signal and power signal.Show by giving suitable example that power of the energy signal is zero and energy of the power signal is infinite.",
+      "chapter": "Archive Questions",
       "marks": "8",
+      "frequency": 8,
+      "years": [
+        "2074 Bhadra",
+        "2081 Chaitra",
+        "2078 Chaitra",
+        "2072 Ashwin",
+        "2071 Bhadra"
+      ],
+      "examSessions": [
+        "2074 Bhadra",
+        "2081 Chaitra",
+        "2078 Chaitra",
+        "2072 Ashwin",
+        "2071 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-5",
+      "question": "a) Derive the convolution sum for an LTI system. [6]\n\nb) Determine if the following system is linear $y[n] = ax[n] + b$",
+      "text": "a) Derive the convolution sum for an LTI system. [6]\n\nb) Determine if the following system is linear $y[n] = ax[n] + b$",
+      "chapter": "Linear Time Invariant (LTI) System",
+      "marks": "4",
+      "frequency": 8,
+      "years": [
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2080 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-6",
+      "question": "Determine whether the signal $x(t) = e^{-3t}$ is a power signal or energy signal or neither energy nor power signal.",
+      "text": "Determine whether the signal $x(t) = e^{-3t}$ is a power signal or energy signal or neither energy nor power signal.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 8,
+      "years": [
+        "2081 Chaitra",
+        "2082 Chaitra",
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2072 Ashwin"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2082 Chaitra",
+        "2082 Bhadra",
+        "2080 Chaitra",
+        "2072 Ashwin"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-7",
+      "question": "Derive necessary condition for a discrete time signal $x = e^{j\\omega n}$ to be periodic.",
+      "text": "Derive necessary condition for a discrete time signal $x = e^{j\\omega n}$ to be periodic.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 8,
+      "years": [
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2074 Bhadra",
+        "2072 Ashwin"
+      ],
+      "examSessions": [
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2074 Bhadra",
+        "2072 Ashwin"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-8",
+      "question": "Derive the convolution sum for an LTI system.",
+      "text": "Derive the convolution sum for an LTI system.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 8,
+      "years": [
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2080 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-9",
+      "question": "a) Derive convolution integral for continuous LTI system. [5]\n\nb) Find convolution between the signals $x[n] = \\{3,5,6,9\\}$ and $h[n] = \\{-1,3,5\\}$. Choose your appropriate origin. Show the output signal.",
+      "text": "a) Derive convolution integral for continuous LTI system. [5]\n\nb) Find convolution between the signals $x[n] = \\{3,5,6,9\\}$ and $h[n] = \\{-1,3,5\\}$. Choose your appropriate origin. Show the output signal.",
+      "chapter": "Linear Time Invariant (LTI) System",
+      "marks": "6",
+      "frequency": 7,
+      "years": [
+        "2081 Chaitra",
+        "2082 Chaitra",
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2074 Bhadra",
+        "2073 Bhadra",
+        "2071 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2082 Chaitra",
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2074 Bhadra",
+        "2073 Bhadra",
+        "2071 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-10",
+      "question": "Derive the convolution integral for continuous time system signal.",
+      "text": "Derive the convolution integral for continuous time system signal.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 7,
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2074 Bhadra",
+        "2073 Bhadra",
+        "2071 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2074 Bhadra",
+        "2073 Bhadra",
+        "2071 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-11",
+      "question": "a) Derive necessary condition for a discrete time signal to be periodic. Determine whether the following signals are energy or power signal $f(t) = 5 \\cos \\pi t + \\sin 5 \\pi t$ [3+3]\n\nb) Explain the behavior of continuous time complex exponential signal $x(t) = c e^{at}$.",
+      "text": "a) Derive necessary condition for a discrete time signal to be periodic. Determine whether the following signals are energy or power signal $f(t) = 5 \\cos \\pi t + \\sin 5 \\pi t$ [3+3]\n\nb) Explain the behavior of continuous time complex exponential signal $x(t) = c e^{at}$.",
+      "chapter": "Signal and its Types",
+      "marks": "3",
+      "frequency": 6,
+      "years": [
+        "2075 Bhadra",
+        "2076 Bhadra",
+        "2074 Bhadra"
+      ],
+      "examSessions": [
+        "2075 Bhadra",
+        "2076 Bhadra",
+        "2074 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-12",
+      "question": "Derive the expression of Fourier Series Coefficient in exponential form for Continuous time periodic signal. Describe the condition for existence of Fourier series with suitable examples.",
+      "text": "Derive the expression of Fourier Series Coefficient in exponential form for Continuous time periodic signal. Describe the condition for existence of Fourier series with suitable examples.",
+      "chapter": "Fourier Series",
+      "marks": "3",
+      "frequency": 6,
+      "years": [
+        "2079 Chaitra",
+        "2076 Bhadra",
+        "2074 Bhadra",
+        "2072 Ashwin",
+        "2071 Bhadra"
+      ],
+      "examSessions": [
+        "2079 Chaitra",
+        "2076 Bhadra",
+        "2074 Bhadra",
+        "2072 Ashwin",
+        "2071 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-13",
+      "question": "Derive Formula to calculate the impulse response of continuous time ideal low pass filter. Is this system practically realizable or not.",
+      "text": "Derive Formula to calculate the impulse response of continuous time ideal low pass filter. Is this system practically realizable or not.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 6,
+      "years": [
+        "2073 Bhadra",
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2071 Bhadra"
+      ],
+      "examSessions": [
+        "2073 Bhadra",
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2071 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-14",
+      "question": "State and prove Parseval's theorem for continuous time aperiodic signal.",
+      "text": "State and prove Parseval's theorem for continuous time aperiodic signal.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 6,
+      "years": [
+        "2069 Bhadra"
+      ],
+      "examSessions": [
+        "2069 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-15",
+      "question": "a) Define frequency response of the discrete LTI system. Derive Formula to calculate the impulse response of continuous time ideal low pass filter. [2+4]\n\nb) Find the convolution between signals $x[n] = \\{1, 2, 2, 1\\}$ and $h[n] = \\{1, 2, 2, -1\\}$. Choose your own origin.",
+      "text": "a) Define frequency response of the discrete LTI system. Derive Formula to calculate the impulse response of continuous time ideal low pass filter. [2+4]\n\nb) Find the convolution between signals $x[n] = \\{1, 2, 2, 1\\}$ and $h[n] = \\{1, 2, 2, -1\\}$. Choose your own origin.",
+      "chapter": "Frequency Response of Continuous and Discrete Time Systems",
+      "marks": "5",
+      "frequency": 5,
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2073 Bhadra",
+        "2071 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2073 Bhadra",
+        "2071 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-16",
+      "question": "a) Find the fourier transform of the signal $x(t) = e^{-a|t|}$; $a > 0$ and also plot the frequency spectrum. [5]\n\nb) Show that the convolution in time domain results multiplication in frequency domain using continuous time fourier transform.",
+      "text": "a) Find the fourier transform of the signal $x(t) = e^{-a|t|}$; $a > 0$ and also plot the frequency spectrum. [5]\n\nb) Show that the convolution in time domain results multiplication in frequency domain using continuous time fourier transform.",
+      "chapter": "Fourier Transform",
+      "marks": "5",
+      "frequency": 5,
       "years": [
         "2081 Chaitra",
         "2079 Chaitra",
-        "2078 Chaitra",
-        "2076 Baisakh",
-        "2076 Bhadra"
+        "2074 Bhadra"
       ],
-      "frequency": 5
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2074 Bhadra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Linear Time Invariant (LTI) System",
-      "text": "Derive formula to calculate the impulse response of an Ideal Low-Pass Filter in continuous/discrete time. Prove, with necessary mathematical derivations, that an ideal low-pass filter is non-causal and physically unrealizable.",
-      "marks": "7",
-      "years": [
-        "2079 Jestha",
-        "2077 Chaitra",
-        "2076 Baisakh"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Fourier Transform",
-      "text": "Derive the synthesis and analysis equations of the Discrete-Time Fourier Transform (DTFT). State and prove the Linearity, Time-Shifting, and Frequency-Shifting properties of DTFT.",
+      "id": "signals-and-systems-17",
+      "question": "For a system characterized by Linear constant coefficient difference equation $y[n] = 0.5y[n-1] + x[n]$, find the frequency response $H(e^{j\\omega})$ and impulse response $h[n]$. Also plot the frequency response magnitude $|H(e^{j\\omega})|$.",
+      "text": "For a system characterized by Linear constant coefficient difference equation $y[n] = 0.5y[n-1] + x[n]$, find the frequency response $H(e^{j\\omega})$ and impulse response $h[n]$. Also plot the frequency response magnitude $|H(e^{j\\omega})|$.",
+      "chapter": "Archive Questions",
       "marks": "8",
+      "frequency": 5,
       "years": [
+        "2069 Bhadra",
         "2081 Chaitra",
         "2077 Chaitra",
-        "2076 Baisakh"
+        "2072 Ashwin"
       ],
-      "frequency": 3
+      "examSessions": [
+        "2069 Bhadra",
+        "2081 Chaitra",
+        "2077 Chaitra",
+        "2072 Ashwin"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Fourier Transform",
-      "text": "Compute the 4-point Discrete Fourier Transform (DFT) for the sequence $x[n] = \\{3, -2, 1, 4\\}$ using the twiddle factor matrix $W_N^{kn}$.",
+      "id": "signals-and-systems-18",
+      "question": "Show that the convolution in time domain results multiplication in frequency domain using continuous time fourier transform.",
+      "text": "Show that the convolution in time domain results multiplication in frequency domain using continuous time fourier transform.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 5,
+      "years": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2074 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2074 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-19",
+      "question": "Find the Fourier transform of the signal $x(t) = e^{-a|t|}, a > 0$ and also plot the frequency spectrum.",
+      "text": "Find the Fourier transform of the signal $x(t) = e^{-a|t|}, a > 0$ and also plot the frequency spectrum.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 5,
+      "years": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-20",
+      "question": "Determine if the following system is linear $y = ax + b$",
+      "text": "Determine if the following system is linear $y = ax + b$",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 5,
+      "years": [
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2080 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-21",
+      "question": "a) Derive the expression for impulse response of RC filter and plot the magnitude and phase response. [6]\n\nb) Find the frequency response ($e^{j\\omega}$), plot the magnitude and impulse response $h[n]$ for a system characterized by linear constant coefficient difference equation\n$$y[n] = 0.5y[n - 1] + x[n]$$Also set in 3 other sittings — see the exact wording of each<ul><li class=\"back-only\">2081 Ashwin BackFind the frequency response and impulse response of the system characterized by linear constant coefficient difference equation $y[n] = 0.5y[n-1] + x[n]$.",
+      "text": "a) Derive the expression for impulse response of RC filter and plot the magnitude and phase response. [6]\n\nb) Find the frequency response ($e^{j\\omega}$), plot the magnitude and impulse response $h[n]$ for a system characterized by linear constant coefficient difference equation\n$$y[n] = 0.5y[n - 1] + x[n]$$Also set in 3 other sittings — see the exact wording of each<ul><li class=\"back-only\">2081 Ashwin BackFind the frequency response and impulse response of the system characterized by linear constant coefficient difference equation $y[n] = 0.5y[n-1] + x[n]$.",
+      "chapter": "Frequency Response of Continuous and Discrete Time Systems",
       "marks": "6",
+      "frequency": 4,
+      "years": [
+        "2081 Chaitra",
+        "2072 Ashwin",
+        "2069 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2072 Ashwin",
+        "2069 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-22",
+      "question": "a) Derive an analysis equation of continuous time Fourier series representation of any signal $x(t)$. [5]\n\nb) Describe the time shifting and frequency shifting properties of continuous time Fourier series. Find Fourier series coefficient of signal $x(t) = A \\cos(\\omega_0 t)$. [6]\n\nc) State and prove Parseval's relation for continuous time periodic signals.",
+      "text": "a) Derive an analysis equation of continuous time Fourier series representation of any signal $x(t)$. [5]\n\nb) Describe the time shifting and frequency shifting properties of continuous time Fourier series. Find Fourier series coefficient of signal $x(t) = A \\cos(\\omega_0 t)$. [6]\n\nc) State and prove Parseval's relation for continuous time periodic signals.",
+      "chapter": "Fourier Series",
+      "marks": "4",
+      "frequency": 4,
+      "years": [
+        "2082 Chaitra",
+        "2078 Chaitra",
+        "2071 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2078 Chaitra",
+        "2071 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-23",
+      "question": "a) Derive the Fourier Transform equation for discrete time aperiodic signals. Also prove that the DTFT is periodic with period $2\\pi$. [4+2]\n\nb) Given discrete time signal is :\n$x[n] = a^n u[n]$, $|a|<1$\nGiven that Fourier transform of $x[n]$ is continuous in nature, plot magnitude and phase response of the transformed signal.",
+      "text": "a) Derive the Fourier Transform equation for discrete time aperiodic signals. Also prove that the DTFT is periodic with period $2\\pi$. [4+2]\n\nb) Given discrete time signal is :\n$x[n] = a^n u[n]$, $|a|<1$\nGiven that Fourier transform of $x[n]$ is continuous in nature, plot magnitude and phase response of the transformed signal.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 4,
+      "years": [
+        "2077 Chaitra",
+        "2082 Bhadra",
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2077 Chaitra",
+        "2082 Bhadra",
+        "2079 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-24",
+      "question": "a) State and prove the convolution property of continuous-time Fourier Transform. [5]\n\nb) Find the Fourier Transform of the signal $x(t) = e^{-at} u(t)$, where $a$ is real constant. Also, draw its amplitude and phase spectra.",
+      "text": "a) State and prove the convolution property of continuous-time Fourier Transform. [5]\n\nb) Find the Fourier Transform of the signal $x(t) = e^{-at} u(t)$, where $a$ is real constant. Also, draw its amplitude and phase spectra.",
+      "chapter": "Fourier Transform",
+      "marks": "4",
+      "frequency": 4,
+      "years": [
+        "2076 Bhadra",
+        "2071 Bhadra"
+      ],
+      "examSessions": [
+        "2076 Bhadra",
+        "2071 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-25",
+      "question": "a) Define 'continuous' and discrete time signals giving suitable examples. [3]\n\nb) Show that any signal can be decomposed into an odd and even component.",
+      "text": "a) Define 'continuous' and discrete time signals giving suitable examples. [3]\n\nb) Show that any signal can be decomposed into an odd and even component.",
+      "chapter": "Signal and its Types",
+      "marks": "4",
+      "frequency": 4,
+      "years": [
+        "2075 Bhadra",
+        "2073 Bhadra"
+      ],
+      "examSessions": [
+        "2075 Bhadra",
+        "2073 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-26",
+      "question": "Define 'continuous' and discrete time signals giving suitable examples.",
+      "text": "Define 'continuous' and discrete time signals giving suitable examples.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 4,
+      "years": [
+        "2075 Bhadra",
+        "2073 Bhadra"
+      ],
+      "examSessions": [
+        "2075 Bhadra",
+        "2073 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-27",
+      "question": "a) What is the condition for LTI system to be causal? [5]\n\nb) Determine if the following system is Linear\n$$y[n] = ax[n] + b$$ [3]\n\nc) Check if the system is time invariant\n$$y[n] = nx[n] - x[n-1]$$Also set in 2 other sittings — see the exact wording of each<ul><li class=\"back-only\">2080 Ashwin Backa) What is the condition for LTI system to be causal? [2]\n\nb) Determine if the following system is Linear\n$$y[n] = ax[n] + b$$ [3]\n\nc) Check if the system is time invariant\n$$y[n] = nx[n] - x[n-1]$$</li><li class=\"back-only\">2079 Ashwin Backa) What is the condition for LTI system to be causal? [5]\n\nb) Determine if the following system is Linear $y[n] = ax[n] + b$. [3]\n\nc) Check if the system is time invariant $y[n] = nx[n] - x[n-1]$.",
+      "text": "a) What is the condition for LTI system to be causal? [5]\n\nb) Determine if the following system is Linear\n$$y[n] = ax[n] + b$$ [3]\n\nc) Check if the system is time invariant\n$$y[n] = nx[n] - x[n-1]$$Also set in 2 other sittings — see the exact wording of each<ul><li class=\"back-only\">2080 Ashwin Backa) What is the condition for LTI system to be causal? [2]\n\nb) Determine if the following system is Linear\n$$y[n] = ax[n] + b$$ [3]\n\nc) Check if the system is time invariant\n$$y[n] = nx[n] - x[n-1]$$</li><li class=\"back-only\">2079 Ashwin Backa) What is the condition for LTI system to be causal? [5]\n\nb) Determine if the following system is Linear $y[n] = ax[n] + b$. [3]\n\nc) Check if the system is time invariant $y[n] = nx[n] - x[n-1]$.",
+      "chapter": "Signal and its Types",
+      "marks": "3",
+      "frequency": 3,
+      "years": [
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2078 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-28",
+      "question": "a) Derive the trigonometric fourier series expansion of a continuous-time periodic signal $x(t)$. [5]\n\nb) State and prove the time-scaling property for continuous-time fourier series pair. [5]\n\nc) State and prove frequency shifting property of discrete time fourier series.",
+      "text": "a) Derive the trigonometric fourier series expansion of a continuous-time periodic signal $x(t)$. [5]\n\nb) State and prove the time-scaling property for continuous-time fourier series pair. [5]\n\nc) State and prove frequency shifting property of discrete time fourier series.",
+      "chapter": "Fourier Series",
+      "marks": "3",
+      "frequency": 3,
+      "years": [
+        "2081 Chaitra",
+        "2078 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2078 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-29",
+      "question": "a) State and prove Time shifting property of continuous time Fourier Transform. [2+5]\n\nb) Find the Fourier transform of continuous time unit step signal.",
+      "text": "a) State and prove Time shifting property of continuous time Fourier Transform. [2+5]\n\nb) Find the Fourier transform of continuous time unit step signal.",
+      "chapter": "Fourier Transform",
+      "marks": "4",
+      "frequency": 3,
+      "years": [
+        "2075 Bhadra",
+        "2071 Bhadra"
+      ],
+      "examSessions": [
+        "2075 Bhadra",
+        "2071 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-30",
+      "question": "a) State and prove duality property of continuous time Fourier Transform. [5]\n\nb) State and explain Energy density spectrum.",
+      "text": "a) State and prove duality property of continuous time Fourier Transform. [5]\n\nb) State and explain Energy density spectrum.",
+      "chapter": "Fourier Transform",
+      "marks": "5",
+      "frequency": 3,
+      "years": [
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2077 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-31",
+      "question": "Write down the condition of convergence of continuous time Fourier series. Find the Fourier series coefficient $a_k$ for the continuous time period signal.\n$$x(t) = \\begin{cases} 1.5, & 0 \\le t < 1 \\\\ -1.5, & 1 \\le t < 2 \\end{cases}$$Also set in 1 other sitting — see the exact wording of each<ul><li class=\"back-only\">2072 Magh Backa) Derive Fourier series representation for discrete time signal. [5]\n\nb) Find the Fourier Series coefficient of the following continuous time periodic signal.\n$$x(t) = \\begin{cases} 1.5 & 0 \\le t < 1 \\\\ -1.5 & 1 \\le t < 2 \\end{cases}$$ with fundamental frequency $\\pi$.",
+      "text": "Write down the condition of convergence of continuous time Fourier series. Find the Fourier series coefficient $a_k$ for the continuous time period signal.\n$$x(t) = \\begin{cases} 1.5, & 0 \\le t < 1 \\\\ -1.5, & 1 \\le t < 2 \\end{cases}$$Also set in 1 other sitting — see the exact wording of each<ul><li class=\"back-only\">2072 Magh Backa) Derive Fourier series representation for discrete time signal. [5]\n\nb) Find the Fourier Series coefficient of the following continuous time periodic signal.\n$$x(t) = \\begin{cases} 1.5 & 0 \\le t < 1 \\\\ -1.5 & 1 \\le t < 2 \\end{cases}$$ with fundamental frequency $\\pi$.",
+      "chapter": "Fourier Series",
+      "marks": "5",
+      "frequency": 2,
+      "years": [
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2080 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-32",
+      "question": "a) What is an LTI system? Find the output of the LTI system with impulse response $h(t) = e^{-2t} u(t)$ when the input to the system is [2+8]\n$$\\begin{cases} 1; & |t| < 5 \\\\ 0; & \\text{otherwise} \\end{cases}$$\nb) Show that ideal low pass filter is not practically realizable.",
+      "text": "a) What is an LTI system? Find the output of the LTI system with impulse response $h(t) = e^{-2t} u(t)$ when the input to the system is [2+8]\n$$\\begin{cases} 1; & |t| < 5 \\\\ 0; & \\text{otherwise} \\end{cases}$$\nb) Show that ideal low pass filter is not practically realizable.",
+      "chapter": "Linear Time Invariant (LTI) System",
+      "marks": "7",
+      "frequency": 2,
       "years": [
         "2079 Jestha"
       ],
-      "frequency": 1
+      "examSessions": [
+        "2079 Jestha"
+      ],
+      "isDiagram": false
     },
     {
+      "id": "signals-and-systems-33",
+      "question": "a) Find the convolution between the signals\n$$x(t) = 1 \\text{ for } -1 < t < 1$$$$0 \\text{ otherwise}$$\nand, $h(t) = 1 \\text{ for } -1 < t < 1$\n$$0 \\text{ otherwise}$$ [6]\n\nb) Evaluate the Step response of RC filter",
+      "text": "a) Find the convolution between the signals\n$$x(t) = 1 \\text{ for } -1 < t < 1$$$$0 \\text{ otherwise}$$\nand, $h(t) = 1 \\text{ for } -1 < t < 1$\n$$0 \\text{ otherwise}$$ [6]\n\nb) Evaluate the Step response of RC filter",
       "chapter": "Linear Time Invariant (LTI) System",
-      "text": "For a system characterized by a linear constant coefficient difference equation, determine the frequency response $H(e^{j\\omega})$ and impulse response $h[n]$. Plot the magnitude and phase response.",
-      "marks": "8",
+      "marks": "5",
+      "frequency": 2,
       "years": [
-        "2079 Jestha",
-        "2077 Chaitra"
+        "2080 Ashwin"
       ],
-      "frequency": 2
+      "examSessions": [
+        "2080 Ashwin"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Linear Time Invariant (LTI) System",
-      "text": "Define the Continuous-Time Convolution Integral $y(t) = \\int_{-\\infty}^{\\infty} x(\\tau) h(t - \\tau) d\\tau$. Compute the analytical and graphical convolution of two rectangular pulses $x(t) = u(t) - u(t - 2)$ and $h(t) = u(t) - u(t - 3)$.",
-      "marks": "8",
-      "years": [
-        "2081 Chaitra",
-        "2079 Jestha",
-        "2077 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Convolution computes zero-state response of LTI system to arbitrary input. Flip and shift h(t - tau). Intervals of overlap: for t < 0, y(t) = 0; for 0 <= t < 2, y(t) = integral_0^t 1 d tau = t; for 2 <= t < 3, overlap is full duration 2, y(t) = 2; for 3 <= t < 5, overlap from t-3 to 2, y(t) = 5 - t; for t >= 5, y(t) = 0. Produces trapezoidal pulse response."
-    },
-    {
-      "chapter": "Fourier Transform",
-      "text": "State and prove the Dirichlet Conditions for the existence and convergence of Fourier Series. Determine the Continuous-Time Fourier Series (CTFS) exponential coefficients $c_n$ for a periodic symmetric square wave and plot its line spectrum.",
-      "marks": "8",
-      "years": [
-        "2081 Chaitra",
-        "2078 Chaitra",
-        "2076 Baisakh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Dirichlet conditions: 1) Absolutely integrable over one period: integral |x(t)| dt < infty; 2) Finite number of maxima and minima within one period; 3) Finite number of finite discontinuities. For square wave with period T and amplitude A: c_n = (1/T) integral_{-T/4}^{T/4} A e^(-j n omega_0 t) dt = (A / n pi) sin(n pi / 2) = (2A / n pi) for n = 1, 5, 9... and -(2A / n pi) for n = 3, 7... Sinc envelope line spectrum."
-    },
-    {
-      "chapter": "Fourier Transform",
-      "text": "State and prove key properties of the Continuous-Time Fourier Transform (CTFT): Time-Shifting, Frequency-Shifting (Modulation), Time-Scaling, and Duality Property. Compute the Fourier transform of a Gaussian pulse $x(t) = e^{-a t^2}$.",
-      "marks": "8",
-      "years": [
-        "2081 Chaitra",
-        "2079 Jestha",
-        "2075 Bhadra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Time-shift: x(t - t0) <-> X(omega) e^(-j omega t0). Frequency shift: x(t) e^(j omega_0 t) <-> X(omega - omega_0). Time scaling: x(a t) <-> (1/|a|) X(omega / a). Duality: X(t) <-> 2 pi x(-omega). For Gaussian x(t) = exp(-a t^2): complete square in exponent: X(omega) = integral exp(-a t^2 - j omega t) dt = sqrt(pi / a) exp(-omega^2 / 4a), proving Gaussian transform is also Gaussian."
-    },
-    {
-      "chapter": "Fourier Transform",
-      "text": "State and prove Parseval's Theorem for Continuous-Time Energy and Power Signals. For signal $x(t) = e^{-a t} u(t)$ ($a > 0$), calculate the total energy in the time domain and verify using frequency domain energy spectral density $|X(\\omega)|^2$.",
-      "marks": "8",
-      "years": [
-        "2081 Chaitra",
-        "2078 Chaitra",
-        "2074 Bhadra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Parseval theorem states energy E = integral_{-infty}^{infty} |x(t)|^2 dt = (1/2 pi) integral_{-infty}^{infty} |X(omega)|^2 d omega. For e^(-at) u(t): time-domain E = integral_0^infty e^(-2at) dt = 1/(2a). In frequency domain: X(omega) = 1/(a + j omega) => |X(omega)|^2 = 1/(a^2 + omega^2). Energy E = (1/2 pi) integral_{-infty}^{infty} d omega / (a^2 + omega^2) = (1/2 pi) * (pi / a) = 1/(2a). Exactly verified."
-    },
-    {
-      "chapter": "Linear Time Invariant (LTI) System",
-      "text": "Explain Ideal Lowpass Filter and Paley-Wiener Criterion for filter physical realizability. Prove that an ideal brick-wall lowpass filter is non-causal and exhibits the Gibbs phenomenon in its step response.",
-      "marks": "8",
-      "years": [
-        "2081 Chaitra",
-        "2077 Chaitra",
-        "2075 Bhadra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Paley-Wiener theorem: for causal filter, frequency response must satisfy integral_{-infty}^infty |ln|H(omega)|| / (1 + omega^2) d omega < infty. Ideal brick-wall filter has H(omega) = 0 for |omega| > omega_c, making integral diverge (-infty), so it is physically unrealizable. Impulse response h(t) = (omega_c / pi) sinc(omega_c t) exists for all t < 0 (non-causal). Step response truncation produces Gibbs phenomenon 8.95% overshoot at discontinuity."
-    },
-    {
-      "chapter": "Sampling",
-      "text": "Explain the Sampling Theorem for low-pass and band-pass signals. What is Aliasing? Explain Flat-top sampling and the derivation of aperture distortion with equalizer reconstruction.",
-      "marks": "8",
-      "years": [
-        "2081 Chaitra",
-        "2079 Jestha",
-        "2076 Baisakh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Continuous signal can be uniquely recovered if sampled at rate f_s >= 2 f_max. Flat-top sampling models pulse train convolved with rectangular aperture p(t) of width tau. Spectrum X_s(f) = (1/T_s) P(f) sum X(f - k f_s), where P(f) = tau sinc(f tau). The sinc roll-off attenuates high frequencies within baseband (aperture effect / high-frequency roll-off). Compensated by equalization filter with response 1 / sinc(f tau)."
-    },
-    {
-      "chapter": "Linear Time Invariant (LTI) System",
-      "text": "Define the Bilateral Laplace Transform and Region of Convergence (ROC). Derive properties of ROC for causal, anti-causal, and two-sided signals. Determine the Laplace transform and ROC of $x(t) = e^{-2t} u(t) + e^{-3t} u(-t)$.",
-      "marks": "8",
-      "years": [
-        "2081 Chaitra",
-        "2078 Chaitra",
-        "2077 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "X(s) = integral_{-infty}^infty x(t) e^(-st) dt, s = sigma + j omega. ROC consists of vertical strips in s-plane containing no poles. For causal signal (right-sided), ROC is Re(s) > max(Re(poles)). For anti-causal (left-sided), ROC is Re(s) < min(Re(poles)). For e^(-2t) u(t), pole at s = -2, ROC: Re(s) > -2. For e^(-3t) u(-t), pole at s = -3, ROC: Re(s) < -3. Intersection of ROCs is empty set (Re(s) > -2 and Re(s) < -3 has no overlap); hence Laplace transform does not exist."
-    },
-    {
-      "chapter": "Linear Time Invariant (LTI) System",
-      "text": "Solve the differential equation $\\frac{d^2 y}{dt^2} + 5\\frac{dy}{dt} + 6y(t) = \\frac{dx}{dt} + x(t)$ for unit step input $x(t) = u(t)$ with initial conditions $y(0^-) = 1, y'(0^-) = 2$ using the unilateral Laplace transform, separating Zero-Input and Zero-State responses.",
-      "marks": "8",
-      "years": [
-        "2081 Chaitra",
-        "2079 Jestha",
-        "2075 Bhadra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Unilateral transform: L{y'} = s Y(s) - y(0^-); L{y''} = s^2 Y(s) - s y(0^-) - y'(0^-). Substituting gives (s^2 + 5s + 6) Y(s) - s - 7 = (s + 1)/s. Y(s) = [s + 7]/(s+2)(s+3) [Zero-Input Response] + [s + 1]/s(s+2)(s+3) [Zero-State Response]. Partial fractions yield y_zi(t) = (5 e^(-2t) - 4 e^(-3t)) u(t) and y_zs(t) = (1/6 - 0.5 e^(-2t) + 1/3 e^(-3t)) u(t). Total y(t) = y_zi + y_zs."
-    },
-    {
-      "chapter": "Linear Time Invariant (LTI) System",
-      "text": "Define the Discrete-Time Convolution Sum $y[n] = \\sum_{k=-\\infty}^{\\infty} x[k] h[n - k]$. Compute the convolution of $x[n] = (0.5)^n u[n]$ and $h[n] = u[n] - u[n - 4]$.",
-      "marks": "8",
-      "years": [
-        "2081 Chaitra",
-        "2078 Chaitra",
-        "2076 Baisakh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "h[k] is non-zero (value 1) for k = 0, 1, 2, 3. y[n] = sum_{k=0}^3 x[n - k] = x[n] + x[n-1] + x[n-2] + x[n-3]. For n < 0: y[n] = 0. For 0 <= n < 3: y[n] = sum_{k=0}^n (0.5)^(n-k) = (0.5)^n sum_{m=0}^n 2^m = 2 - (0.5)^n. For n >= 3: sum over all 4 taps y[n] = (0.5)^n [1 + 2 + 4 + 8] = 15 * (0.5)^n."
-    },
-    {
-      "chapter": "Fourier Transform",
-      "text": "Define the Discrete-Time Fourier Transform (DTFT). State its properties and compute the frequency response $H(e^{j\\Omega})$ and magnitude response $|H(e^{j\\Omega})|$ of an LTI system described by difference equation $y[n] - 0.5 y[n-1] = x[n]$.",
-      "marks": "8",
-      "years": [
-        "2081 Chaitra",
-        "2077 Chaitra",
-        "2074 Bhadra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "DTFT X(Omega) = sum x[n] e^(-j Omega n); periodic in Omega with period 2 pi. Taking DTFT of difference equation: Y(Omega)(1 - 0.5 e^(-j Omega)) = X(Omega). Frequency response H(e^(j Omega)) = 1 / (1 - 0.5 e^(-j Omega)). Magnitude |H| = 1 / sqrt(1.25 - cos Omega). At Omega=0, |H|=2 (lowpass peak); at Omega=pi, |H|=1/1.5=0.67."
-    },
-    {
-      "chapter": "Linear Time Invariant (LTI) System",
-      "text": "Determine the System Function $H(z)$, pole-zero constellation, impulse response $h[n]$, and BIBO stability for a discrete LTI system given by $y[n] - \\frac{3}{4} y[n-1] + \\frac{1}{8} y[n-2] = x[n] + 2 x[n-1]$.",
-      "marks": "8",
-      "years": [
-        "2081 Chaitra",
-        "2079 Jestha",
-        "2078 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Z-transform yields H(z) = (1 + 2 z^(-1)) / (1 - 0.75 z^(-1) + 0.125 z^(-2)) = (1 + 2 z^(-1)) / [(1 - 0.5 z^(-1))(1 - 0.25 z^(-1))]. Poles at z = 0.5 and z = 0.25; zero at z = -2. Both poles lie strictly inside unit circle (|z| < 1), so causal ROC |z| > 0.5 contains unit circle, proving system is BIBO stable. Partial fractions give h[n] = [10 (0.5)^n - 9 (0.25)^n] u[n]."
-    },
-    {
-      "chapter": "Signal and its Types",
-      "text": "Explain System Properties: Linearity, Time-Invariance, Memory, Causality, and Invertibility. Test whether the following systems satisfy linearity and time-invariance: (a) $y(t) = x(2t)$, (b) $y(t) = t x(t)$, (c) $y[n] = x^2[n]$.",
+      "id": "signals-and-systems-34",
+      "question": "a) Derive the Fourier series expansion of a continuous time periodic signal $x(t)$.\n\nb) Consider a signal $x[n] = \\sin(w_0n)$ with period $N = 6$. Find the Fourier series coefficient of the given signal $x[n]$. Plot spectra and find the average power.",
+      "text": "a) Derive the Fourier series expansion of a continuous time periodic signal $x(t)$.\n\nb) Consider a signal $x[n] = \\sin(w_0n)$ with period $N = 6$. Find the Fourier series coefficient of the given signal $x[n]$. Plot spectra and find the average power.",
+      "chapter": "Fourier Series",
       "marks": "6",
+      "frequency": 2,
       "years": [
-        "2081 Chaitra",
-        "2078 Chaitra",
-        "2075 Bhadra"
+        "2082 Bhadra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "(a) y(t) = x(2t): Linear (superposition holds), but Time-Variant (delaying input gives x(2t - 2t0) != y(t - t0) = x(2(t - t0))). (b) y(t) = t x(t): Linear, but Time-Variant due to explicit t multiplier. (c) y[n] = x^2[n]: Time-Invariant, but Non-Linear because (a x1 + b x2)^2 != a x1^2 + b x2^2."
+      "examSessions": [
+        "2082 Bhadra"
+      ],
+      "isDiagram": false
     },
     {
+      "id": "signals-and-systems-35",
+      "question": "a) Derive the expression for Fourier transform equation and inverse Fourier transform equation for continuous time aperiodic signals. [8]\n\nb) State and prove Frequency shift property of the continuous time Fourier Transform.",
+      "text": "a) Derive the expression for Fourier transform equation and inverse Fourier transform equation for continuous time aperiodic signals. [8]\n\nb) State and prove Frequency shift property of the continuous time Fourier Transform.",
       "chapter": "Fourier Transform",
-      "text": "Explain the relationship and mapping between Continuous-Time Fourier Transform (CTFT), Laplace Transform, Discrete-Time Fourier Transform (DTFT), and Z-Transform.",
-      "marks": "6",
+      "marks": "3",
+      "frequency": 2,
       "years": [
-        "2081 Chaitra",
-        "2077 Chaitra",
-        "2076 Baisakh"
+        "2073 Bhadra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Laplace transform evaluates signals over entire complex s = sigma + j omega plane; CTFT is special case of Laplace evaluated strictly on imaginary axis s = j omega (valid if ROC contains j-omega axis). Z-transform evaluates discrete signals over complex z = r e^(j Omega) plane; DTFT is Z-transform evaluated on unit circle |z| = 1. Continuous to discrete mapping uses z = e^(s T)."
+      "examSessions": [
+        "2073 Bhadra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Linear Time Invariant (LTI) System",
-      "text": "Define Group Delay $\\tau_g(\\omega) = -\\frac{d\\theta(\\omega)}{d\\omega}$ and Phase Delay $\\tau_p(\\omega) = -\\frac{\\theta(\\omega)}{\\omega}$. Explain how non-linear phase response causes dispersion and waveform distortion in broadband communication channels.",
-      "marks": "6",
+      "id": "signals-and-systems-36",
+      "question": "a) Derive Fourier transform pair equations of a discrete-time signal. [6]\n\nb) List out the properties of Discrete Time Fourier Transform. State and prove the convolution property of Discrete Time Fourier Transform.",
+      "text": "a) Derive Fourier transform pair equations of a discrete-time signal. [6]\n\nb) List out the properties of Discrete Time Fourier Transform. State and prove the convolution property of Discrete Time Fourier Transform.",
+      "chapter": "Fourier Transform",
+      "marks": "5",
+      "frequency": 2,
       "years": [
-        "2081 Chaitra",
-        "2079 Jestha",
-        "2074 Bhadra"
+        "2082 Kartik"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Phase delay is time delay experienced by single frequency sinusoidal component. Group delay is time delay of signal envelope (wave packet) comprising narrow band of frequencies. If phase response theta(omega) is linear (theta = -omega t0), then tau_p = tau_g = t0 = constant (distortionless transmission). Non-linear phase causes different frequency components to arrive at different times, causing phase dispersion and pulse broadening."
+      "examSessions": [
+        "2082 Kartik"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-37",
+      "question": "Find output of a LTI system using convolution sum, if the input signal is $x[n] = \\delta[n] + 2\\delta[n-1] - \\delta[n-3]$ and impulse response of the system is $h[n] = 2\\delta[n+1] + 2\\delta[n-1]$.",
+      "text": "Find output of a LTI system using convolution sum, if the input signal is $x[n] = \\delta[n] + 2\\delta[n-1] - \\delta[n-3]$ and impulse response of the system is $h[n] = 2\\delta[n+1] + 2\\delta[n-1]$.",
+      "chapter": "Linear Time Invariant (LTI) System",
+      "marks": "7",
+      "frequency": 2,
+      "years": [
+        "2069 Bhadra",
+        "2080 Chaitra"
+      ],
+      "examSessions": [
+        "2069 Bhadra",
+        "2080 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-38",
+      "question": "What is the information provided by Fourier series coefficients of a signal? State and prove time shifting and conjugation properties of continuous time Fourier series representation.",
+      "text": "What is the information provided by Fourier series coefficients of a signal? State and prove time shifting and conjugation properties of continuous time Fourier series representation.",
+      "chapter": "Fourier Series",
+      "marks": "1",
+      "frequency": 2,
+      "years": [
+        "2070 Bhadra"
+      ],
+      "examSessions": [
+        "2070 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-39",
+      "question": "a) Derive the convolution integral. [4]\n\nb) Find the convolution between the following sequences.\n$h[n] = \\{2, 0, -1, 2\\}$\n$x[n] = \\{1, 2, -1, 3\\}$\nChoose origin as per your choice.",
+      "text": "a) Derive the convolution integral. [4]\n\nb) Find the convolution between the following sequences.\n$h[n] = \\{2, 0, -1, 2\\}$\n$x[n] = \\{1, 2, -1, 3\\}$\nChoose origin as per your choice.",
+      "chapter": "Linear Time Invariant (LTI) System",
+      "marks": "6",
+      "frequency": 2,
+      "years": [
+        "2077 Chaitra",
+        "2072 Ashwin"
+      ],
+      "examSessions": [
+        "2077 Chaitra",
+        "2072 Ashwin"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "signals-and-systems-40",
+      "question": "a) Find the Fourier transform of signal $x[n] = a^n u(n)$, $0 < a < 1$ [6]\n\nb) Derive and explain the expression of energy density spectrum for a continuous time aperiodic signal.",
+      "text": "a) Find the Fourier transform of signal $x[n] = a^n u(n)$, $0 < a < 1$ [6]\n\nb) Derive and explain the expression of energy density spectrum for a continuous time aperiodic signal.",
+      "chapter": "Fourier Transform",
+      "marks": "5",
+      "frequency": 2,
+      "years": [
+        "2082 Kartik"
+      ],
+      "examSessions": [
+        "2082 Kartik"
+      ],
+      "isDiagram": false
     }
   ],
-  "chapters": [
-    "Signal and its Types",
-    "Fourier Series",
-    "Fourier Transform",
-    "Linear Time Invariant (LTI) System",
-    "Sampling",
-    "Frequency Response of Continuous and Discrete Time Systems"
+  "yearWisePapers": [
+    {
+      "session": "2083 Baishakh",
+      "year": "2083",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 29,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Derive the exponential form of the Fourier series of a discrete-time signal. [4]\n(b) Find and plot the Fourier series coefficients for the following signal with period $N$.\n$x[n] = 1 + \\sin(\\frac{2\\pi}{N}n) + 3\\cos(\\frac{2\\pi}{N}n) + \\cos(\\frac{4\\pi}{N}n + \\frac{\\pi}{2})$",
+          "marks": "4",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Derive the trigonometric fourier series expansion of a continuous-time periodic signal $x(t)$. [5]\n\nb) State and prove the time-scaling property for continuous-time fourier series pair. [5]\n\nc) State and prove frequency shifting property of discrete time fourier series.",
+          "marks": "4",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Describe the frequency response of a continuous-time LTI system. [4]\n(b) Derive the transfer function of the RC low-pass filter and plot the magnitude and phase.",
+          "marks": "4",
+          "chapter": "Frequency Response of Continuous and Discrete Time Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Define signals both in continuous time and discrete time with examples. Give the difference between them. [4]\n(b) Determine whether the following signal is $a^n$ energy or power signal.\\n(i) $f(t) = 3\\cos(4\\pi t)$   ii) $x[n] = \\sin(\\frac{n}{6})$",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Derive the Fourier transform pair equations of a discrete-time signal. [5]\n(b) Find the continuous time Fourier transform of the signal $x(t) = e^{j\\omega_0 t}$. Discuss the result.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "\n(a) Derive the convolution sum of a discrete-time signal. [4]\n(b) Find the convolution sum of\n$x[n] = \\{1, 2, 3, 4\\}$ and $h[n] = \\{1, 2, -3\\}$ Choose your own origin.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "\n(a) Define sampling theorem. Explain the aliasing effect and its cause. Find the Nyquist rate and Nyquist time interval of the following signal. [2+2+2]\n$x(t) = 5\\cos(150\\pi t) + 10\\sin(350\\pi t) + \\cos(150\\pi t)$\n(b) Find the frequency response of the following signal\n$y[n] = 0.5x[n] - 0.5x[n-1]$\n$h[n] = \\frac{1}{2} \\text{ for } n = 0 \\text{ and } -\\frac{1}{2} \\text{ for } n = 1$",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Kartik",
+      "year": "2082",
+      "month": "Kartik",
+      "examType": "Back",
+      "totalMarks": 27,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Derive Fourier transform pair equations of a discrete-time signal. [6]\n\nb) List out the properties of Discrete Time Fourier Transform. State and prove the convolution property of Discrete Time Fourier Transform.",
+          "marks": "5",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Find the Fourier transform of signal $x[n] = a^n u(n)$, $0 < a < 1$ [6]\n\nb) Derive and explain the expression of energy density spectrum for a continuous time aperiodic signal.",
+          "marks": "5",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Find output of a LTI system using convolution sum, if the input signal is $x[n] = \\delta[n] + 2\\delta[n-1] - \\delta[n-3]$ and impulse response of the system is $h[n] = 2\\delta[n+1] + 2\\delta[n-1]$.",
+          "marks": "5",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Define even and odd signal with necessary diagram. Check whether the following signal is energy or power signal. (i) $x(t) = 5A \\cos(\\omega t + \\phi)$ (ii) $x[n] = \\sin \\left(\\frac{n}{4}\\right)$ [3+4]\n(b) Prove that discrete time complex exponential is periodic if its frequency is rational.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "(a) Derive the exponential form of the Fourier series of a continuous-time signal. [6]\n(b) Find and plot the Fourier series coefficients for the following signal with period N.\n$$x[n] = 1 + \\sin \\left(\\frac{2\\pi}{N}\\right)n + 3\\cos \\left(\\frac{2\\pi}{N}\\right)n + \\cos \\left(\\frac{4\\pi}{N}n + \\frac{\\pi}{2}\\right)$$ [5]\n(c) State and prove Parseval's relation for Discrete Time Fourier Series.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "(a) State and prove the sampling theorem. Find the Nyquist rate and Nyquist interval for the signal\n$$x(t) = (1/2\\pi) \\cos(4000\\pi t) \\cos(1000\\pi t)$$ [3+3]\n(b) Derive the transfer function of a RC low pass filter and plot the magnitude and phase.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Chaitra",
+      "year": "2082",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 83,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Define energy signal and power signal. Determine whether the signal $x(t) = e^{-3t}$ is a power signal or energy signal or neither energy nor power signal. [3+3]\n\nb) Define continuous time unit step signal. Derive the necessary condition for the signal $x(t) = e^{j\\omega t}$ to be periodic.",
+          "marks": "4",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Derive an analysis equation of continuous time Fourier series representation of any signal $x(t)$. [5]\n\nb) Describe the time shifting and frequency shifting properties of continuous time Fourier series. Find Fourier series coefficient of signal $x(t) = A \\cos(\\omega_0 t)$. [6]\n\nc) State and prove Parseval's relation for continuous time periodic signals.",
+          "marks": "4",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Find the fourier transform of the signal $x(t) = e^{-a|t|}$; $a > 0$ and also plot the frequency spectrum. [5]\n\nb) Show that the convolution in time domain results multiplication in frequency domain using continuous time fourier transform.",
+          "marks": "4",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Derive convolution integral for continuous LTI system. [5]\n\nb) Find convolution between the signals $x[n] = \\{3,5,6,9\\}$ and $h[n] = \\{-1,3,5\\}$. Choose your appropriate origin. Show the output signal.",
+          "marks": "6",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Define linear time invariant system. Explain causality and time variance properties of continuous time system. [4]\n(b) Find the output of the LTI system with impulse response $h[n] = 2^n \\{u[n] - u[n-3]\\}$ and $x[n] = \\delta[n] + \\delta[n-1] + \\delta[n-3]$. Also verify the answer.",
+          "marks": "6",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. [2+4]\n$$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$\nb) Find impulse response for the DT system given by the following linear constant coefficient difference equation. $y[n] - \\frac{3}{4}y[n-1] + \\frac{1}{8}y[n-2] = 2x[n]$",
+          "marks": "4",
+          "chapter": "Sampling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) Define frequency response of the discrete LTI system. Derive Formula to calculate the impulse response of continuous time ideal low pass filter. [2+4]\n\nb) Find the convolution between signals $x[n] = \\{1, 2, 2, 1\\}$ and $h[n] = \\{1, 2, 2, -1\\}$. Choose your own origin.",
+          "marks": "5",
+          "chapter": "Frequency Response of Continuous and Discrete Time Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. $$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$Also set in 18 other sittings — see the exact wording of each<ul><li class=\"back-only\">2083 Baishakh Back (New Course)Find the Nyquist rate and Nyquist time interval of the following signal. $x(t) = 5\\cos(150\\pi t) + 10\\sin(350\\pi t) + \\cos(150\\pi t)$",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Determine whether the signal $x(t) = e^{-3t}$ is a power signal or energy signal or neither energy nor power signal.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Derive the convolution integral for continuous time system signal.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Derive Formula to calculate the impulse response of continuous time ideal low pass filter. Is this system practically realizable or not.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Find the Fourier transform of the signal $x(t) = e^{-a|t|}, a > 0$ and also plot the frequency spectrum.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "\n(a) What is periodic and aperiodic signal? Find the necessary condition for the signal $x[n] = \\cos(2\\pi f_0 n + \\theta)$ to be periodic. [2+2]\n(b) Determine whether the given signal is energy signal or power signal. $x(t) = e^{-a|t|}, a > 0$",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "a) Derive the trigonometric fourier series expansion of a continuous-time periodic signal $x(t)$. [5]\n\nb) State and prove the time-scaling property for continuous-time fourier series pair. [5]\n\nc) State and prove frequency shifting property of discrete time fourier series.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Bhadra",
+      "year": "2082",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 55,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Define energy signal and power signal. Determine whether the signal $x(t) = e^{-3t}$ is a power signal or energy signal or neither energy nor power signal. [3+3]\n\nb) Define continuous time unit step signal. Derive the necessary condition for the signal $x(t) = e^{j\\omega t}$ to be periodic.",
+          "marks": "4",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Derive the Fourier series expansion of a continuous time periodic signal $x(t)$.\n\nb) Consider a signal $x[n] = \\sin(w_0n)$ with period $N = 6$. Find the Fourier series coefficient of the given signal $x[n]$. Plot spectra and find the average power.",
+          "marks": "6",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Derive the Fourier Transform equation for discrete time aperiodic signals. Also prove that the DTFT is periodic with period $2\\pi$. [4+2]\n\nb) Given discrete time signal is :\n$x[n] = a^n u[n]$, $|a|<1$\nGiven that Fourier transform of $x[n]$ is continuous in nature, plot magnitude and phase response of the transformed signal.",
+          "marks": "4",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Derive Fourier transform pair equations of a discrete-time signal. [6]\n\nb) List out the properties of Discrete Time Fourier Transform. State and prove the convolution property of Discrete Time Fourier Transform.",
+          "marks": "4",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Derive the convolution integral formula for the continuous time signal.\n(b) A discrete time LTI system is defined by the impulse response $h[n] = \\{-2, -1, 0, 1, 2\\}$. If the input to the given system is $x[n] = \\{1, -0.25, 0, -1, 0.5, -0.5\\} , find$ and plot the output of the system.",
+          "marks": "4",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. [2+4]\n$$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$\nb) Find impulse response for the DT system given by the following linear constant coefficient difference equation. $y[n] - \\frac{3}{4}y[n-1] + \\frac{1}{8}y[n-2] = 2x[n]$",
+          "marks": "4",
+          "chapter": "Sampling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Define frequency response of a LTI system. Derive the impulse response of $a^n$ ideal low pass and high pass filter.",
+          "marks": "2",
+          "chapter": "Frequency Response of Continuous and Discrete Time Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. $$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$Also set in 18 other sittings — see the exact wording of each<ul><li class=\"back-only\">2083 Baishakh Back (New Course)Find the Nyquist rate and Nyquist time interval of the following signal. $x(t) = 5\\cos(150\\pi t) + 10\\sin(350\\pi t) + \\cos(150\\pi t)$",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Determine whether the signal $x(t) = e^{-3t}$ is a power signal or energy signal or neither energy nor power signal.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "\n(a) Briefly explain discrete time unit impulse, unit step and unit ramp signal. What is the relationship between unit impulse, unit step and unit ramp signal?\n(b) Calculate the energy and power of the signal $x(t) = 2 e^{-5t}u(t - 1)$.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "a) Derive the Fourier Transform equation for discrete time aperiodic signals. Also prove that the DTFT is periodic with period $2\\pi$. [4+2]\n\nb) Given discrete time signal is :\n$x[n] = a^n u[n]$, $|a|<1$\nGiven that Fourier transform of $x[n]$ is continuous in nature, plot magnitude and phase response of the transformed signal.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "\n(a) State and prove the sampling theorem What is aliasing effect? Explain.\n(b) Determine the Nyquist rate for the signal $x(t) = 5\\cos(3,000\\pi t)\\sin(1,000\\pi t)$.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Chaitra",
+      "year": "2081",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 89,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Define energy signal and power signal. Determine whether the signal $x(t) = e^{-3t}$ is a power signal or energy signal or neither energy nor power signal. [3+3]\n\nb) Define continuous time unit step signal. Derive the necessary condition for the signal $x(t) = e^{j\\omega t}$ to be periodic.",
+          "marks": "4",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Derive the trigonometric fourier series expansion of a continuous-time periodic signal $x(t)$. [5]\n\nb) State and prove the time-scaling property for continuous-time fourier series pair. [5]\n\nc) State and prove frequency shifting property of discrete time fourier series.",
+          "marks": "3",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Find the fourier transform of the signal $x(t) = e^{-a|t|}$; $a > 0$ and also plot the frequency spectrum. [5]\n\nb) Show that the convolution in time domain results multiplication in frequency domain using continuous time fourier transform.",
+          "marks": "5",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Determine the discrete time fourier transform of signum function ($\\text{sgn}[n]$) and use it to find the DTFT of unit-step signal $u[n]$.",
+          "marks": "6",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) State and prove the linearity and time shifting properties of DTFT [6]\n(b) Define sampling theorem and Nyquist criteria for sampling. Find the Nyquist rate for the signal: $x(t) = 20 \\sin(500\\pi t) + 10 \\cos(300\\pi t) - 50 \\cos(1000\\pi t)$",
+          "marks": "3",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) Derive convolution integral for continuous LTI system. [5]\n\nb) Find convolution between the signals $x[n] = \\{3,5,6,9\\}$ and $h[n] = \\{-1,3,5\\}$. Choose your appropriate origin. Show the output signal.",
+          "marks": "6",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) Derive the expression for impulse response of RC filter and plot the magnitude and phase response. [6]\n\nb) Find the frequency response ($e^{j\\omega}$), plot the magnitude and impulse response $h[n]$ for a system characterized by linear constant coefficient difference equation\n$$y[n] = 0.5y[n - 1] + x[n]$$Also set in 3 other sittings — see the exact wording of each<ul><li class=\"back-only\">2081 Ashwin BackFind the frequency response and impulse response of the system characterized by linear constant coefficient difference equation $y[n] = 0.5y[n-1] + x[n]$.",
+          "marks": "6",
+          "chapter": "Frequency Response of Continuous and Discrete Time Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. $$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$Also set in 18 other sittings — see the exact wording of each<ul><li class=\"back-only\">2083 Baishakh Back (New Course)Find the Nyquist rate and Nyquist time interval of the following signal. $x(t) = 5\\cos(150\\pi t) + 10\\sin(350\\pi t) + \\cos(150\\pi t)$",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Determine whether the signal $x(t) = e^{-3t}$ is a power signal or energy signal or neither energy nor power signal.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Differentiate between energy signal and power signal.Show by giving suitable example that power of the energy signal is zero and energy of the power signal is infinite.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Derive the convolution integral for continuous time system signal.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "For a system characterized by Linear constant coefficient difference equation $y[n] = 0.5y[n-1] + x[n]$, find the frequency response $H(e^{j\\omega})$ and impulse response $h[n]$. Also plot the frequency response magnitude $|H(e^{j\\omega})|$.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Show that the convolution in time domain results multiplication in frequency domain using continuous time fourier transform.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Find the Fourier transform of the signal $x(t) = e^{-a|t|}, a > 0$ and also plot the frequency spectrum.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Ashwin",
+      "year": "2081",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 41,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Find: a) Inverse Fourier Transform of CT unit impulse signal $\\delta(\\omega)$ [2]\n(b) Fourier Transform of DT signal $\\cos\\omega_0(n)$ [4]\n(c) Show that the multiplication of a signal $x(t)$ by $t$ is equivalent to differentiation of its Fourier Transform.",
+          "marks": "4",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Define energy and power signal. State whether the given signal is periodic or not? If signal is periodic, find its fundamental period. $x[n] = \\cos(\\frac{\\pi n}{5})\\sin(\\frac{\\pi n}{3})$ [6]\n(b) Explain time shifting, time scaling and time inversion of a continuous time signal with example.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Derive the Fourier series expansion of a continuous time periodic signal $x(t)$.\n\nb) Consider a signal $x[n] = \\sin(w_0n)$ with period $N = 6$. Find the Fourier series coefficient of the given signal $x[n]$. Plot spectra and find the average power.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Derive Fourier Transform of discrete time aperiodic signal. Also, prove that DTFT is periodic with $2\\pi$. [4+2]\n(b) State and prove that convolution in time domain is equivalent to multiplication in frequency domain.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Explain duality property of continuous time Fourier transform with derivation. [1.5+3.5]\n(b) Find the Fourier transform of the signal $x(t) = e^{-at}\\cos\\omega_0(t) , \\alpha > 0$.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain the Nyquist Criteria for sampling and aliasing effect. Find the Nyquist rate for the signal $x(t) = 30\\sin(100\\pi t) + 40\\cos(400\\pi t)\\sin(300\\pi t)$.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Find output of a LTI system using convolution sum, if the input signal is $x[n] = \\delta[n] + 2\\delta[n-1] - \\delta[n-3]$ and impulse response of the system is $h[n] = 2\\delta[n+1] + 2\\delta[n-1]$.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "For a system characterized by Linear constant coefficient difference equation $y[n] = 0.5y[n-1] + x[n]$, find the frequency response $H(e^{j\\omega})$ and impulse response $h[n]$. Also plot the frequency response magnitude $|H(e^{j\\omega})|$.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Chaitra",
+      "year": "2080",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 103,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Define energy signal and power signal. Determine whether the signal $x(t) = e^{-3t}$ is a power signal or energy signal or neither energy nor power signal. [3+3]\n\nb) Define continuous time unit step signal. Derive the necessary condition for the signal $x(t) = e^{j\\omega t}$ to be periodic.",
+          "marks": "4",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Write down the condition of convergence of continuous time Fourier series. Find the Fourier series coefficient $a_k$ for the continuous time period signal.\n$$x(t) = \\begin{cases} 1.5, & 0 \\le t < 1 \\\\ -1.5, & 1 \\le t < 2 \\end{cases}$$Also set in 1 other sitting — see the exact wording of each<ul><li class=\"back-only\">2072 Magh Backa) Derive Fourier series representation for discrete time signal. [5]\n\nb) Find the Fourier Series coefficient of the following continuous time periodic signal.\n$$x(t) = \\begin{cases} 1.5 & 0 \\le t < 1 \\\\ -1.5 & 1 \\le t < 2 \\end{cases}$$ with fundamental frequency $\\pi$.",
+          "marks": "5",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "State and prove Parseval's theorem for continuous time aperiodic signal.",
+          "marks": "4",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Find the Fourier transform of signal $x[n] = a^n u(n)$, $0 < a < 1$ [6]\n\nb) Derive and explain the expression of energy density spectrum for a continuous time aperiodic signal.",
+          "marks": "4",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Derive the convolution sum for an LTI system. [6]\n\nb) Determine if the following system is linear $y[n] = ax[n] + b$",
+          "marks": "4",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Find output of a LTI system using convolution sum, if the input signal is $x[n] = \\delta[n] + 2\\delta[n-1] - \\delta[n-3]$ and impulse response of the system is $h[n] = 2\\delta[n+1] + 2\\delta[n-1]$.",
+          "marks": "7",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "For a system characterized by Linear constant coefficient difference equation $y[n] = 0.5y[n-1] + x[n]$, find the frequency response $H(e^{j\\omega})$ and impulse response $h[n]$. Also plot the frequency response magnitude $|H(e^{j\\omega})|$.",
+          "marks": "8",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "a) Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. [2+4]\n$$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$\nb) Find impulse response for the DT system given by the following linear constant coefficient difference equation. $y[n] - \\frac{3}{4}y[n-1] + \\frac{1}{8}y[n-2] = 2x[n]$",
+          "marks": "4",
+          "chapter": "Sampling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "a) Define frequency response of the discrete LTI system. Derive Formula to calculate the impulse response of continuous time ideal low pass filter. [2+4]\n\nb) Find the convolution between signals $x[n] = \\{1, 2, 2, 1\\}$ and $h[n] = \\{1, 2, 2, -1\\}$. Choose your own origin.",
+          "marks": "5",
+          "chapter": "Frequency Response of Continuous and Discrete Time Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. $$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$Also set in 18 other sittings — see the exact wording of each<ul><li class=\"back-only\">2083 Baishakh Back (New Course)Find the Nyquist rate and Nyquist time interval of the following signal. $x(t) = 5\\cos(150\\pi t) + 10\\sin(350\\pi t) + \\cos(150\\pi t)$",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Determine whether the signal $x(t) = e^{-3t}$ is a power signal or energy signal or neither energy nor power signal.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Derive the convolution sum for an LTI system.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Derive Formula to calculate the impulse response of continuous time ideal low pass filter. Is this system practically realizable or not.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Determine if the following system is linear $y = ax + b$",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "\n(a) Briefly explain CT unit impulse, unit step and unit ramp signal. What is the relationship between unit impulse, unit step and unit ramp signal? [4]\n(b) Sketch the signal $x(t) = 5\\cos(t)$. State whether the given signal is energy signal or power signal.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "Derive Formula to calculate the impulse response of continuous time ideal low pass filter. Is this system practically realizable or not.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "Find the output of $a^n$ LTI System given by: $x[n] = \\delta[n] + 2\\delta[n-1] - \\delta[n-3]$ and $h[n] = 2\\delta[n+1] + 2\\delta[n-1]$.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Ashwin",
+      "year": "2080",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 38,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Determine whether the signal $x[n] = 5 \\text{ Sin}\\left[\\frac{3\\pi}{8}n - \\frac{\\pi}{2}\\right] - 2\\text{Cos}\\left[\\frac{7\\pi}{12}n\\right]$ is periodic or not. If the signal is periodic, calculate its fundamental period and fundamental frequency.",
+          "marks": "4",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Find the convolution between the signals\n$$x(t) = 1 \\text{ for } -1 < t < 1$$$$0 \\text{ otherwise}$$\nand, $h(t) = 1 \\text{ for } -1 < t < 1$\n$$0 \\text{ otherwise}$$ [6]\n\nb) Evaluate the Step response of RC filter",
+          "marks": "5",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Perform convolution sum of signal $x[n] = \\{1, 2, 0, -1\\}$ and $h[n] = \\{2, 0, 2\\}$ [6]\n(b) Derive convolution sum equation for discrete time linear system.",
+          "marks": "3",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Consider $a^n$ analog signal $x(t) = 3\\cos 200 \\pi t + 2\\sin 300 \\pi t - 3\\cos 500 \\pi t$.\\n(i) Determine the minimum sampling rate required to avoid aliasing.\\n(ii) Suppose that the signal is to be sampled at the rate of $F_s = 400\\text{ Hz}$. What is the discrete time signal obtained after sampling?\\n(iii) Find reconstructed signal $x_r(t)$ from sampled signal calculated above in [ii].",
+          "marks": "8",
+          "chapter": "Sampling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Determine whether the signal $x(t) = e^{-3t}$ is a power signal or energy signal or neither energy nor power signal.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What is the information provided by Fourier series coefficients of a signal? State and prove time shifting and conjugation properties of continuous time Fourier series representation.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the convolution properties of continuous time Fourier transform.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "State and prove Parseval's theorem for continuous time aperiodic signal.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Find the Fourier transform of continuous time Rectangular Pulse and Constant amplitude A. State Prove Duality property of Continuous Time Fourier Transform with suitable example.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Jestha",
+      "year": "2079",
+      "month": "Jestha",
+      "examType": "Back",
+      "totalMarks": 42,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "(a) Calculate and plot magnitude and phase spectrum of the following periodic signal. [8]\n\nb) State and prove Parseval's relation for discrete time periodic signals.",
+          "marks": "6",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "State and prove the complex conjugation property for continuous time a periodic signals. Also show that if the CT signal is purely real, its Fourier Transform is conjugate symmetric.",
+          "marks": "4",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Find the Fourier Transform of discrete time signal [n] $= a^n u[n] , 0 < a < 1$. [6]\n(b) Compute the 4-point DFT for $x[n] = \\{3, -2, 1\\}$.",
+          "marks": "6",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) What is an LTI system? Find the output of the LTI system with impulse response $h(t) = e^{-2t} u(t)$ when the input to the system is [2+8]\n$$\\begin{cases} 1; & |t| < 5 \\\\ 0; & \\text{otherwise} \\end{cases}$$\nb) Show that ideal low pass filter is not practically realizable.",
+          "marks": "7",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Find and plot the convolution sum of the signals $x[n] = \\{-0.5, 1, -1, 0.5\\}$ and $y[n] = \\{1, 2, -1, 0, 2, -1\\}$.",
+          "marks": "8",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "For a system characterized by Linear constant coefficient difference equation $y[n] = 0.5y[n-1] + x[n]$, find the frequency response $H(e^{j\\omega})$ and impulse response $h[n]$. Also plot the frequency response magnitude $|H(e^{j\\omega})|$.",
+          "marks": "7",
+          "chapter": "Frequency Response of Continuous and Discrete Time Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) Define energy signal and power signal. Determine whether the signal $x(t) = e^{-3t}$ is a power signal or energy signal or neither energy nor power signal. [3+3]\n\nb) Define continuous time unit step signal. Derive the necessary condition for the signal $x(t) = e^{j\\omega t}$ to be periodic.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Chaitra",
+      "year": "2079",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What are the properties of system? Determine whether the given system is time-variant or not.\n$y(t) = \\sin[x(t)]$",
+          "marks": "2",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Define Power and Energy Type continuous Time signal with suitable examples. Check whether these signals are Energy or Power Type with required calculation.\n(a) $x(t) = u(t)$\n(b) $x(t) = \\delta(t)$",
+          "marks": "2",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive the expression of Fourier Series Coefficient in exponential form for Continuous time periodic signal. Describe the condition for existence of Fourier series with suitable examples.",
+          "marks": "3",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Derive the trigonometric fourier series expansion of a continuous-time periodic signal $x(t)$. [5]\n\nb) State and prove the time-scaling property for continuous-time fourier series pair. [5]\n\nc) State and prove frequency shifting property of discrete time fourier series.",
+          "marks": "6",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Find the fourier transform of the signal $x(t) = e^{-a|t|}$; $a > 0$ and also plot the frequency spectrum. [5]\n\nb) Show that the convolution in time domain results multiplication in frequency domain using continuous time fourier transform.",
+          "marks": "5",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) Derive the Fourier Transform equation for discrete time aperiodic signals. Also prove that the DTFT is periodic with period $2\\pi$. [4+2]\n\nb) Given discrete time signal is :\n$x[n] = a^n u[n]$, $|a|<1$\nGiven that Fourier transform of $x[n]$ is continuous in nature, plot magnitude and phase response of the transformed signal.",
+          "marks": "4",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "\n(a) Describe different Properties of Discrete time LTI system with suitable example. [5]\n(b) Convolve the signal $x[n] = \\{3, 1, 5\\}$ and $h[n] = \\{1, 4, -2, 3\\}$",
+          "marks": "5",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What is aliasing and how can it be prevented?",
+          "marks": "6",
+          "chapter": "Sampling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "\n(a) Describe bode plot with example [4]\n(b) Derive the expression for impulsive response of ideal low pass filter and discuss.",
+          "marks": "5",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Derive Formula to calculate the impulse response of continuous time ideal low pass filter. Is this system practically realizable or not.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Show that the convolution in time domain results multiplication in frequency domain using continuous time fourier transform.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Find the Fourier transform of the signal $x(t) = e^{-a|t|}, a > 0$ and also plot the frequency spectrum.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Derive the expression of Fourier Transform of Discrete Time aperiodic Sequence.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Define sampling theorem. Determine the Nyquist rate for the continuous time signal, x(t).\n$x(t) = 1 + \\cos(2000 \\pi t) + \\sin(4000 \\pi t)$.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Ashwin",
+      "year": "2079",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 32,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Draw the following signal $x[n] = u[n+2] - u[n-3] + nu[n-3] - nu[n-6]$. [3]\n(b) Determine the period of $x[n] = \\sum\\limits_{k=-\\infty}^{\\infty} (-1)^k \\delta[n-k]$. [2]\n(c) For $x[n] = \\{1, 2, \\underline{0}, -2, 1\\} , find$ $x[2n-3]$.",
+          "marks": "3",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Determine the 4-point DFT of the signal $x[n] = u[n] + u[n-1] - u[n-3] - u[n-4]$ using linear transformation method.",
+          "marks": "5",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Derive the trigonometric fourier series expansion of a continuous-time periodic signal $x(t)$. [5]\n\nb) State and prove the time-scaling property for continuous-time fourier series pair. [5]\n\nc) State and prove frequency shifting property of discrete time fourier series.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Find the fourier transform of the signal $x(t) = e^{-a|t|}$; $a > 0$ and also plot the frequency spectrum. [5]\n\nb) Show that the convolution in time domain results multiplication in frequency domain using continuous time fourier transform.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What is aliasing and how can it be prevented?",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) Find the convolution between the signals\n$$x(t) = 1 \\text{ for } -1 < t < 1$$$$0 \\text{ otherwise}$$\nand, $h(t) = 1 \\text{ for } -1 < t < 1$\n$$0 \\text{ otherwise}$$ [6]\n\nb) Evaluate the Step response of RC filter",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "\n(a) What is the condition for LTI system to be causal? [5]\n(b) Determine if the following system is Linear $y[n] = ax[n] + b$. [3]\n(c) Check if the system is time invariant $y[n] = nx[n] - x[n-1]$.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Poush",
+      "year": "2078",
+      "month": "Poush",
+      "examType": "Back",
+      "totalMarks": 29,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Given: $x(t) = \\sin(t)$. Is this signal periodic? Is it $a^n$ energy signal or power signal or neither? [1+3]\n(b) \"Combination of two continuous-time periodic signal might result in $a^n$ aperiodic signal.\" Justify this statement using any numerical example.",
+          "marks": "4",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Derive the formula for synthesis equation and analysis equation of Fourier series. Mention the three conditions that guarantee the existence of Fourier series. [5+3]\n(b) State and explain four properties of discrete time Fourier series.",
+          "marks": "6",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Explain practical sampling method using a circuit diagram. Describe band-pass sampling theorem.",
+          "marks": "4",
+          "chapter": "Sampling",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "(a) Define transfer function and impulse response in discrete-time. Briefly explain the procedure of drawing a bode plot. [2+3]\n(b) State and explain any six properties of a discrete-time LTI system. [6]\n(c) Determine the range of a and b for which the given LTI system becomes stable whose impulse response is:\n$$h[n] = e^{$a^n$} U[n] + e^{$b^n$} U[-n]$$\nwhere, $U[n]$ is discrete-time unit step function.",
+          "marks": "4",
+          "chapter": "Frequency Response of Continuous and Discrete Time Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) State and prove Parseval's relation for finite energy signal. Describe any three applications of Fourier Transform. [6+3]\n(b) Calculate Fourier transform of a constant DC function. What are the physical meanings of Energy spectral Density and Power spectral Density? [5+3]\n(c) How do you calculate the Fourier transform of periodic sequence? Explain with necessary steps.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "\n(a) Elaborate the physical meaning of convolution integral using suitable example. [3]\n(b) Derive convolution sum. Prove that $a^n$ ideal low-pass filter is a non-causal system.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Chaitra",
+      "year": "2078",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 40,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Differentiate between energy signal and power signal.Show by giving suitable example that power of the energy signal is zero and energy of the power signal is infinite.",
+          "marks": "3",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) What is the condition for LTI system to be causal? [5]\n\nb) Determine if the following system is Linear\n$$y[n] = ax[n] + b$$ [3]\n\nc) Check if the system is time invariant\n$$y[n] = nx[n] - x[n-1]$$Also set in 2 other sittings — see the exact wording of each<ul><li class=\"back-only\">2080 Ashwin Backa) What is the condition for LTI system to be causal? [2]\n\nb) Determine if the following system is Linear\n$$y[n] = ax[n] + b$$ [3]\n\nc) Check if the system is time invariant\n$$y[n] = nx[n] - x[n-1]$$</li><li class=\"back-only\">2079 Ashwin Backa) What is the condition for LTI system to be causal? [5]\n\nb) Determine if the following system is Linear $y[n] = ax[n] + b$. [3]\n\nc) Check if the system is time invariant $y[n] = nx[n] - x[n-1]$.",
+          "marks": "3",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Derive an analysis equation of continuous time Fourier series representation of any signal $x(t)$. [5]\n\nb) Describe the time shifting and frequency shifting properties of continuous time Fourier series. Find Fourier series coefficient of signal $x(t) = A \\cos(\\omega_0 t)$. [6]\n\nc) State and prove Parseval's relation for continuous time periodic signals.",
+          "marks": "4",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Derive the trigonometric fourier series expansion of a continuous-time periodic signal $x(t)$. [5]\n\nb) State and prove the time-scaling property for continuous-time fourier series pair. [5]\n\nc) State and prove frequency shifting property of discrete time fourier series.",
+          "marks": "3",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Find the fourier transform of the signal $x(t) = e^{-a|t|}$; $a > 0$ and also plot the frequency spectrum. [5]\n\nb) Show that the convolution in time domain results multiplication in frequency domain using continuous time fourier transform.",
+          "marks": "4",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "(a) What do you mean by aliasing? Compute Nyquist rate for\n$$x(t) = 5\\cos(1500\\pi t) - 2\\sin(2000\\pi t) + 3\\sin(1850\\pi t).$$ [2+4]\n(b) Evaluate the Step response of RC filter.",
+          "marks": "5",
+          "chapter": "Frequency Response of Continuous and Discrete Time Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. $$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$Also set in 18 other sittings — see the exact wording of each<ul><li class=\"back-only\">2083 Baishakh Back (New Course)Find the Nyquist rate and Nyquist time interval of the following signal. $x(t) = 5\\cos(150\\pi t) + 10\\sin(350\\pi t) + \\cos(150\\pi t)$",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Find the Fourier transform of the signal $x(t) = e^{-a|t|}, a > 0$ and also plot the frequency spectrum.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "\n(a) State and prove convolution property of discrete time periodic signals. [2+3]\n(b) What is Parseval's relation? Prove Parseval's relation for continuous-time periodic signal.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Baishakh",
+      "year": "2078",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 28,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) \"Even if a signal is periodic, its Fourier series might not exist.\" Justify the statement using three different examples. [4]\n(b) State and prove Parseval's relation for Discrete Time Fourier series.",
+          "marks": "6",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Derive expression for Fourier transform of continuous time periodic signal. Find Fourier transform of signal $x(t)=e^{-2|t|}\\sin(t)$.",
+          "marks": "5",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Define frequency response of the discrete LTI system. Derive Formula to calculate the impulse response of continuous time ideal low pass filter. [2+4]\n\nb) Find the convolution between signals $x[n] = \\{1, 2, 2, 1\\}$ and $h[n] = \\{1, 2, 2, -1\\}$. Choose your own origin.",
+          "marks": "6",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) State and prove commutative property of continuous time LTI system. [3]\n(b) Explain Invertibility of LTI system and derive the necessary condition for two LTI systems to become inverse of each other.",
+          "marks": "5",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Derive the convolution integral. [4]\n\nb) Find the convolution between the following sequences.\n$h[n] = \\{2, 0, -1, 2\\}$\n$x[n] = \\{1, 2, -1, 3\\}$\nChoose origin as per your choice.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2077 Chaitra",
+      "year": "2077",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 42,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Define energy signal and power signal. Determine whether the signal $x(t) = e^{-3t}$ is a power signal or energy signal or neither energy nor power signal. [3+3]\n\nb) Define continuous time unit step signal. Derive the necessary condition for the signal $x(t) = e^{j\\omega t}$ to be periodic.",
+          "marks": "3",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Consider a continuous time system with input $x(t)$ and output $y(t)$ related by $y(t) = x(t-2) + x(2-t)$. Is the system Linear Time invariant? Explain.",
+          "marks": "5",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "(a) A continuous time Fourier Series is evaluated over infinite duration while a discrete time Fourier series is evaluated over one time period only. Why? [2]\n(b) Obtain fourier series coefficients of the signal:\n$$x[n] = 1 + 3 \\cos\\left(\\frac{2\\pi n}{N} + \\frac{\\pi}{3}\\right)$$\nWhere,\n$N$ is the fundamental time period of $x[n]$.\nAlso, Plot magnitude and phase spectrum of the coefficients. [2+2+2]\n(c) Derive exponential form of Fourier series for discrete time signal.",
+          "marks": "4",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Derive the Fourier Transform equation for discrete time aperiodic signals. Also prove that the DTFT is periodic with period $2\\pi$. [4+2]\n\nb) Given discrete time signal is :\n$x[n] = a^n u[n]$, $|a|<1$\nGiven that Fourier transform of $x[n]$ is continuous in nature, plot magnitude and phase response of the transformed signal.",
+          "marks": "4",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) State and prove duality property of continuous time Fourier Transform. [5]\n\nb) State and explain Energy density spectrum.",
+          "marks": "5",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) Derive the convolution integral. [4]\n\nb) Find the convolution between the following sequences.\n$h[n] = \\{2, 0, -1, 2\\}$\n$x[n] = \\{1, 2, -1, 3\\}$\nChoose origin as per your choice.",
+          "marks": "6",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "\n(a) What do you mean by causal and non causal systems? Derive the condition for a continuous time LTI system to be causal. [2+3]\n(b) Prove, with necessary derivations, that $a^n$ ideal low pass filter is not physically realizable. Also derive the expression for step response of ideal low pass filter.",
+          "marks": "3",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "For a system characterized by Linear constant coefficient difference equation $y[n] = 0.5y[n-1] + x[n]$, find the frequency response $H(e^{j\\omega})$ and impulse response $h[n]$. Also plot the frequency response magnitude $|H(e^{j\\omega})|$.",
+          "marks": "4",
+          "chapter": "Sampling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "For a system characterized by Linear constant coefficient difference equation $y[n] = 0.5y[n-1] + x[n]$, find the frequency response $H(e^{j\\omega})$ and impulse response $h[n]$. Also plot the frequency response magnitude $|H(e^{j\\omega})|$.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2076 Bhadra",
+      "year": "2076",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 64,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Derive necessary condition for a discrete time signal to be periodic. Determine whether the following signals are energy or power signal $f(t) = 5 \\cos \\pi t + \\sin 5 \\pi t$ [3+3]\n\nb) Explain the behavior of continuous time complex exponential signal $x(t) = c e^{at}$.",
+          "marks": "3",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Derive the expression of Fourier Series Coefficient in exponential form for Continuous time periodic signal. Describe the condition for existence of Fourier series with suitable examples.",
+          "marks": "3",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) State and prove the convolution property of continuous-time Fourier Transform. [5]\n\nb) Find the Fourier Transform of the signal $x(t) = e^{-at} u(t)$, where $a$ is real constant. Also, draw its amplitude and phase spectra.",
+          "marks": "4",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Derive convolution integral for continuous LTI system. [5]\n\nb) Find convolution between the signals $x[n] = \\{3,5,6,9\\}$ and $h[n] = \\{-1,3,5\\}$. Choose your appropriate origin. Show the output signal.",
+          "marks": "6",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) The impulse response of a LTI system is\n$h[n] = \\{1, 2, 1, -1\\}$\n$\\uparrow$\nDetermine the response of the system to the input signal\n$x[n] = \\{1, 2, 3, 1\\}$\n$\\uparrow$ [6]\n(b) Check whether the discrete-time system described by the following input-output relation is linear or non-linear.\n$y[n] = 2 \\times x[n] + 5$",
+          "marks": "4",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define invertibility of LTI system with suitable example if impulse response $h[n] = U[n]$ and inverse system $h'[n] = \\delta[n] - \\delta[n-1]$. Prove that their convolution must be $\\delta[n]$.",
+          "marks": "3",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. [2+4]\n$$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$\nb) Find impulse response for the DT system given by the following linear constant coefficient difference equation. $y[n] - \\frac{3}{4}y[n-1] + \\frac{1}{8}y[n-2] = 2x[n]$",
+          "marks": "4",
+          "chapter": "Sampling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "For a system characterized by Linear constant coefficient difference equation $y[n] = 0.5y[n-1] + x[n]$, find the frequency response $H(e^{j\\omega})$ and impulse response $h[n]$. Also plot the frequency response magnitude $|H(e^{j\\omega})|$.",
+          "marks": "6",
+          "chapter": "Frequency Response of Continuous and Discrete Time Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Derive necessary condition for a discrete time signal $x = e^{j\\omega n}$ to be periodic.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Derive the convolution integral for continuous time system signal.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Derive the expression to compute Fourier series coefficients of exponential Fourier series.\nExplain Gibbs phenomenon.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What is aliasing? Determine Nyquist rate for the continuous time signal $x(t) = 1 + \\cos(2,000\\pi t) + \\sin(4,000\\pi t)$.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Derive formula to calculate convolution integral for continuous time LTI system. Find convolution between following continuous time signals $x(t) = e^{-t}u(t)$ and $y(t) = e^{-2t}u(t-3)$.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2076 Baishakh",
+      "year": "2076",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 39,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Define even and odd signal in both continuous time and discrete time with examples. [4]\n(b) Explain time shifting, time scaling and time inversion of a continuous time signal with example.",
+          "marks": "3",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Derive Fourier series synthesis and analysis equation for discrete time periodic signal. [6]\n(b) Explain with necessary derivation that the discrete time Fourier Transform is periodic in frequency with period $2\\pi$.",
+          "marks": "4",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) State and prove Time shifting property of continuous time Fourier Transform. [2+5]\n\nb) Find the Fourier transform of continuous time unit step signal.",
+          "marks": "5",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Write short notes: [3x3]\n(a) Frequency shifting DT FT\n(b) LTI system\n(c) Bode plot",
+          "marks": "8",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Derive convolution sum. [4]\n(b) Find the convolution sum of $x[n] = \\{1, 3, 4, 3, 1\\}$ and $h[n] = \\{2, 2, -2\\}$",
+          "marks": "6",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) Derive necessary condition for a discrete time signal to be periodic. Determine whether the following signals are energy or power signal $f(t) = 5 \\cos \\pi t + \\sin 5 \\pi t$ [3+3]\n\nb) Explain the behavior of continuous time complex exponential signal $x(t) = c e^{at}$.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is the information provided by Fourier series coefficients of a signal? State and prove time shifting and conjugation properties of continuous time Fourier series representation.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "\n(a) What is aliasing in sampling? Determine the Nyquist rate for the continuous time signal $x(t) = 1 + \\cos(2,000\\pi t) + \\sin(4,000\\pi t)$ [2+4]\n(b) Derive formula to calculate the impulse response of Ideal low pass filter in discrete time.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Bhadra",
+      "year": "2075",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 79,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Derive necessary condition for a discrete time signal to be periodic. Determine whether the following signals are energy or power signal $f(t) = 5 \\cos \\pi t + \\sin 5 \\pi t$ [3+3]\n\nb) Explain the behavior of continuous time complex exponential signal $x(t) = c e^{at}$.",
+          "marks": "3",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Define 'continuous' and discrete time signals giving suitable examples. [3]\n\nb) Show that any signal can be decomposed into an odd and even component.",
+          "marks": "4",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Write short notes [3$\\times$3]\\n(i) Discrete data function\\n(ii) Energy and power signal\\n(iii) Causal and non causal system",
+          "marks": "8",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "State Parseval's relation for discrete time Fourier series. Find the average power of discrete time periodic signal $X[n] = \\sin\\left(\\frac{\\pi n}{3}\\right)$ using Fourier series coefficient.",
+          "marks": "2",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Obtain the expression for analysis equation for DTFS. [6+4]\n(b) Show that fourier series coefficient of discrete time signal is periodic in nature.",
+          "marks": "6",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) State and prove Time shifting property of continuous time Fourier Transform. [2+5]\n\nb) Find the Fourier transform of continuous time unit step signal.",
+          "marks": "4",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) Derive convolution integral for continuous LTI system. [5]\n\nb) Find convolution between the signals $x[n] = \\{3,5,6,9\\}$ and $h[n] = \\{-1,3,5\\}$. Choose your appropriate origin. Show the output signal.",
+          "marks": "6",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "a) Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. [2+4]\n$$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$\nb) Find impulse response for the DT system given by the following linear constant coefficient difference equation. $y[n] - \\frac{3}{4}y[n-1] + \\frac{1}{8}y[n-2] = 2x[n]$",
+          "marks": "4",
+          "chapter": "Sampling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. $$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$Also set in 18 other sittings — see the exact wording of each<ul><li class=\"back-only\">2083 Baishakh Back (New Course)Find the Nyquist rate and Nyquist time interval of the following signal. $x(t) = 5\\cos(150\\pi t) + 10\\sin(350\\pi t) + \\cos(150\\pi t)$",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Derive necessary condition for a discrete time signal $x = e^{j\\omega n}$ to be periodic.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Derive the convolution integral for continuous time system signal.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Define 'continuous' and discrete time signals giving suitable examples.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "\n(a) What do you mean by sampling, state the requirement of sampling frequency? Determine Nyquist rate for $x(t) = \\frac{1}{2\\pi}\\cos(100\\pi t)\\cos(300\\pi t)$ [2+4]\n(b) Derive the transfer function for discrete time low pass filter.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "(a) Determine whether the given system is linear or not.\n$$Y(t) = A x(t) + B$$ [4]\n(b) Derive convolution integral of a continuous time signal.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Baishakh",
+      "year": "2075",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 29,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define even and odd signals. Develop the even/odd decomposition of a general signal $x(t)$.",
+          "marks": "4",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "(a) Derive the Fourier Series Expansion of a continuous - time periodic signal $x(t)$. [5]\n(b) Find Fourier series coefficients and associated phase of the signal with fundamental frequency $\\omega_0$: [5]\n$$x(t) = 1 + \\sin(\\omega_0 t) + 2 \\cos(\\omega_0 t) + \\cos(2\\omega_0 t + \\pi/4)$$\n(c) State and prove the time shifting property of Discrete - time Fourier series.",
+          "marks": "4",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Define system. Explain causality and time variance properties of continuous - time LTI system. [2+4]\n(b) Find output $y(t)$ of LTI system if input $x(t) = \\exp(-at) u(t)$ and impulse response $h(t) = u(t)$. [5]\n(c) Derive the conditions for distortionless transmission for continuous - time LTI system.",
+          "marks": "4",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) State and prove convolution theorem of discrete - time aperiodic signal. [6]\n(b) Compute four - point DFT of four - point sequence: $x[n] = \\{0, 1, 2, 3\\}$.",
+          "marks": "6",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Find the Fourier transform of signal $x[n] = a^n u(n)$, $0 < a < 1$ [6]\n\nb) Derive and explain the expression of energy density spectrum for a continuous time aperiodic signal.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define sampling theorem and Nyquist criteria for sampling. Find the Nyquist rate for the signal: $x(t) = 20 \\sin(500\\pi t) + 10 \\cos(300\\pi t) - 50 \\cos(1000\\pi t)$",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2074 Bhadra",
+      "year": "2074",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 96,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Derive necessary condition for a discrete time signal to be periodic. Determine whether the following signals are energy or power signal $f(t) = 5 \\cos \\pi t + \\sin 5 \\pi t$ [3+3]\n\nb) Explain the behavior of continuous time complex exponential signal $x(t) = c e^{at}$.",
+          "marks": "3",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Differentiate between energy signal and power signal.Show by giving suitable example that power of the energy signal is zero and energy of the power signal is infinite.",
+          "marks": "3",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive the expression of Fourier Series Coefficient in exponential form for Continuous time periodic signal. Describe the condition for existence of Fourier series with suitable examples.",
+          "marks": "3",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "(a) State and prove time shifting and time scaling properties of continuous time Fourier series. [4]\n(b) Find Fourier series coefficient of discrete time periodic signal\n$$x[n] = \\sin w_0n \\quad \\text{where} \\quad w_0 = \\frac{2\\pi}{N}$$\nPlot the signal when $N = 5$.",
+          "marks": "4",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Find the fourier transform of the signal $x(t) = e^{-a|t|}$; $a > 0$ and also plot the frequency spectrum. [5]\n\nb) Show that the convolution in time domain results multiplication in frequency domain using continuous time fourier transform.",
+          "marks": "5",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "How do you find the Fourier transform of periodic signals? Find the Fourier transform of continuous time rectangular pulse and constant amplitude A and explain the result.",
+          "marks": "5",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "State and prove frequency shifting property of Fourier transform.",
+          "marks": "2",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "a) Derive convolution integral for continuous LTI system. [5]\n\nb) Find convolution between the signals $x[n] = \\{3,5,6,9\\}$ and $h[n] = \\{-1,3,5\\}$. Choose your appropriate origin. Show the output signal.",
+          "marks": "6",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "a) Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. [2+4]\n$$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$\nb) Find impulse response for the DT system given by the following linear constant coefficient difference equation. $y[n] - \\frac{3}{4}y[n-1] + \\frac{1}{8}y[n-2] = 2x[n]$",
+          "marks": "4",
+          "chapter": "Sampling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "For a system characterized by Linear constant coefficient difference equation $y[n] = 0.5y[n-1] + x[n]$, find the frequency response $H(e^{j\\omega})$ and impulse response $h[n]$. Also plot the frequency response magnitude $|H(e^{j\\omega})|$.",
+          "marks": "6",
+          "chapter": "Frequency Response of Continuous and Discrete Time Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. $$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$Also set in 18 other sittings — see the exact wording of each<ul><li class=\"back-only\">2083 Baishakh Back (New Course)Find the Nyquist rate and Nyquist time interval of the following signal. $x(t) = 5\\cos(150\\pi t) + 10\\sin(350\\pi t) + \\cos(150\\pi t)$",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Derive necessary condition for a discrete time signal $x = e^{j\\omega n}$ to be periodic.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Derive the convolution integral for continuous time system signal.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Show that the convolution in time domain results multiplication in frequency domain using continuous time fourier transform.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "\n(a) Derive the expression to compute Fourier series coefficients of exponential Fourier series. [5]\n(b) Explain the Dirichel Conditions for convergence of Fourier series.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "a) Find the fourier transform of the signal $x(t) = e^{-a|t|}$; $a > 0$ and also plot the frequency spectrum. [5]\n\nb) Show that the convolution in time domain results multiplication in frequency domain using continuous time fourier transform.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "What is aliasing? Determine the Nyquist rate for the continuous time signal $x(t) = 1 + \\cos(2,000\\pi t) + \\sin(4,000\\pi t)$",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 18,
+          "text": "Derive the convolution integral for continuous time system signal.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 19,
+          "text": "For a system characterized by Linear constant coefficient difference equation $y[n] = 0.5y[n-1] + x[n]$, find the frequency response $H(e^{j\\omega})$ and impulse response $h[n]$. Also plot the frequency response magnitude $|H(e^{j\\omega})|$.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2073 Magh",
+      "year": "2073",
+      "month": "Magh",
+      "examType": "Back",
+      "totalMarks": 48,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Derive the expression of continuous time exponential Fourier series $x[n] = A \\sin \\omega_0 n$",
+          "marks": "6",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Find the Fourier transform of the signal $x(t) = e^{-a|t|}, a > 0$ and also plot the frequency spectrum.",
+          "marks": "5",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Derive the trigonometric fourier series expansion of a continuous-time periodic signal $x(t)$. [5]\n\nb) State and prove the time-scaling property for continuous-time fourier series pair. [5]\n\nc) State and prove frequency shifting property of discrete time fourier series.",
+          "marks": "3",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Find the Fourier transform of the signal $x(t) = e^{-a|t|}, a > 0$ and also plot the frequency spectrum.",
+          "marks": "3",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What is LTI system? For LTI system, describe the properties: (a) linearity (b) stability (c) time invariance and (d) causality.",
+          "marks": "2",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "A discrete time LTI system is defined by the impulse response $h[n] = \\begin{cases} n ; -2 \\leq n \\leq 2 \\\\ 0 ; \\text{otherwise} \\end{cases}$. If the input to the given system is $x[n] = \\{1, -0.25, 0, -1, 0.5, -0.5\\} , find$ and plot the output of the system.",
+          "marks": "7",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Derive the expression for impulse response of RC filter and plot the magnitude and phase.",
+          "marks": "4",
+          "chapter": "Frequency Response of Continuous and Discrete Time Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "State and prove the Parseval's relation for energy density spectrum.",
+          "marks": "2",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Determine whether the signal $x(t) = e^{-3t}$ is a power signal or energy signal or neither energy nor power signal.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Derive necessary condition for a discrete time signal $x = e^{j\\omega n}$ to be periodic.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What is aliasing effect and how can we overcome it? Determine Nyquist rate for a continuous time signal $x(t) = 2 \\sin 40\\pi t + 10 \\cos 200\\pi t + 5 \\cos 100\\pi t$.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What do you mean by convolution? Derive the expression for convolution of two discrete time signals.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Find the Fourier Transform of the unit step signal.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2073 Bhadra",
+      "year": "2073",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 89,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Define 'continuous' and discrete time signals giving suitable examples. [3]\n\nb) Show that any signal can be decomposed into an odd and even component.",
+          "marks": "4",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Calculate the fundamental period and fundamental frequency of the periodic signal\n$x[n] = 3 \\sin\\left(\\frac{7\\pi}{5}n + \\frac{\\pi}{2}\\right)$",
+          "marks": "4",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive the expression for finding even and odd part of signal $x(t)$. Explain time scaling and time folding.",
+          "marks": "2",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Define discrete time complex exponential signal and its different types of behavior.",
+          "marks": "2",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "State and prove Parseval's theorem for continuous time aperiodic signal.",
+          "marks": "5",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) Derive the expression for Fourier transform equation and inverse Fourier transform equation for continuous time aperiodic signals. [8]\n\nb) State and prove Frequency shift property of the continuous time Fourier Transform.",
+          "marks": "3",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What are the differences between Fourier series and Fourier Transform? Find the Fourier transform of the discrete time signal $x[n] = a^n \\begin{cases} |a| < 1 \\\\ 0 < a < 1 \\end{cases}$",
+          "marks": "2",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "a) Derive convolution integral for continuous LTI system. [5]\n\nb) Find convolution between the signals $x[n] = \\{3,5,6,9\\}$ and $h[n] = \\{-1,3,5\\}$. Choose your appropriate origin. Show the output signal.",
+          "marks": "6",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What is LTI system? In a LTI system show that convolution operation is commutative, find $y[n]$ when $x[n] = \\{1, 2, 3, 4\\}$ and $n[n] = \\{2, 1, 2\\}$",
+          "marks": "2",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Write short notes on: [3x3]\\n(i) Energy and power signals\\n(ii) Invertibility of LTI system\\n(iii) Nyquist theorem",
+          "marks": "8",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "a) Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. [2+4]\n$$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$\nb) Find impulse response for the DT system given by the following linear constant coefficient difference equation. $y[n] - \\frac{3}{4}y[n-1] + \\frac{1}{8}y[n-2] = 2x[n]$",
+          "marks": "4",
+          "chapter": "Sampling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "a) Define frequency response of the discrete LTI system. Derive Formula to calculate the impulse response of continuous time ideal low pass filter. [2+4]\n\nb) Find the convolution between signals $x[n] = \\{1, 2, 2, 1\\}$ and $h[n] = \\{1, 2, 2, -1\\}$. Choose your own origin.",
+          "marks": "5",
+          "chapter": "Frequency Response of Continuous and Discrete Time Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. $$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$Also set in 18 other sittings — see the exact wording of each<ul><li class=\"back-only\">2083 Baishakh Back (New Course)Find the Nyquist rate and Nyquist time interval of the following signal. $x(t) = 5\\cos(150\\pi t) + 10\\sin(350\\pi t) + \\cos(150\\pi t)$",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Derive the convolution integral for continuous time system signal.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "Derive Formula to calculate the impulse response of continuous time ideal low pass filter. Is this system practically realizable or not.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "Define 'continuous' and discrete time signals giving suitable examples.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "Differentiate between continuous time and discrete time signals with examples. Show that\n$U[n] = \\sum\\limits_{k=0}^{\\infty} \\delta[n - k]$",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 18,
+          "text": "Derive the convolution integral for continuous time system signal.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 19,
+          "text": "What is sampling? Determine the Nyquist rate for the following signal:\n$x(t) = 1 + \\cos(200\\pi t) + \\sin(4000\\pi t)$",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2072 Magh",
+      "year": "2072",
+      "month": "Magh",
+      "examType": "Back",
+      "totalMarks": 34,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What are the properties of LTI systems? Determine whether the given system is linear or not? $y[n] = e^{x[n]}$",
+          "marks": "4",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "The signal $x[n] = \\cos\\frac{\\pi}{3}n$ is a periodic signal. What happens if the fundamental frequency of this signal is increased by $2\\pi$?",
+          "marks": "2",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Consider a system with impluse response\n$$h[n] = \\{1, 2, 2, 5\\}$$\nDetermine the output $y[n]$ for input $x[n] = \\{1, 3\\}$",
+          "marks": "8",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) What do you mean by sampling? Explain. [2]\n(b) The signal is sampled at the rate $F_s = 300$ samples/sec. Determine the frequency of the discrete-time signal $x[n] = x_a(nT), T = 1/F_s$",
+          "marks": "4",
+          "chapter": "Sampling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Define even and odd discrete time signal. Derive the periodicity condition for discrete time signal. [2+3]\n(b) Define discrete time delta function or signal. Show the relationship between delta function and unit step function.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "(a) Derive Fourier series representation for discrete time signal. [5]\n(b) Find the Fourier Series coefficient of the following continuous time periodic signal.\n$$x(t) = \\begin{cases} 1.5 & 0 \\le t < 1 \\\\ -1.5 & 1 \\le t < 2 \\end{cases}$$ with fundamental frequency $\\pi$.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) Find the Fourier transform of signal $x[n] = a^n u(n)$, $0 < a < 1$ [6]\n\nb) Derive and explain the expression of energy density spectrum for a continuous time aperiodic signal.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "a) Derive the trigonometric fourier series expansion of a continuous-time periodic signal $x(t)$. [5]\n\nb) State and prove the time-scaling property for continuous-time fourier series pair. [5]\n\nc) State and prove frequency shifting property of discrete time fourier series.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What do you mean by convolution? Derive convolution sum expression.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2072 Ashwin",
+      "year": "2072",
+      "month": "Ashwin",
+      "examType": "Regular",
+      "totalMarks": 88,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Define energy signal and power signal. Determine whether the signal $x(t) = e^{-3t}$ is a power signal or energy signal or neither energy nor power signal. [3+3]\n\nb) Define continuous time unit step signal. Derive the necessary condition for the signal $x(t) = e^{j\\omega t}$ to be periodic.",
+          "marks": "4",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Derive the expression of Fourier Series Coefficient in exponential form for Continuous time periodic signal. Describe the condition for existence of Fourier series with suitable examples.",
+          "marks": "3",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) State and prove the linearity and time shift properties of discrete time Fourier series representation. [6]\n(b) State and prove the conjugation property for continuous time Fourier transform. Show that if the signal is real valued in time domain, its spectrum is conjugated symmetric.",
+          "marks": "4",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Obtain the DTFT of the signal $x[n] = (n+1) a^n u[n], 0 < a < 1$",
+          "marks": "6",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Derive the convolution integral. [4]\n\nb) Find the convolution between the following sequences.\n$h[n] = \\{2, 0, -1, 2\\}$\n$x[n] = \\{1, 2, -1, 3\\}$\nChoose origin as per your choice.",
+          "marks": "6",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What is LTI system? Explain the commutative, associative and distributive properties of discrete time LTI systems.",
+          "marks": "2",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Find output of a LTI system using convolution sum, if the input signal is $x[n] = \\delta[n] + 2\\delta[n-1] - \\delta[n-3]$ and impulse response of the system is $h[n] = 2\\delta[n+1] + 2\\delta[n-1]$.",
+          "marks": "6",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What is impulse train sampling? Explain the aliasing effect that may occur in impulse train sampling. How do you reconstruct original signal from its sample?",
+          "marks": "6",
+          "chapter": "Sampling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "a) Derive the expression for impulse response of RC filter and plot the magnitude and phase response. [6]\n\nb) Find the frequency response ($e^{j\\omega}$), plot the magnitude and impulse response $h[n]$ for a system characterized by linear constant coefficient difference equation\n$$y[n] = 0.5y[n - 1] + x[n]$$Also set in 3 other sittings — see the exact wording of each<ul><li class=\"back-only\">2081 Ashwin BackFind the frequency response and impulse response of the system characterized by linear constant coefficient difference equation $y[n] = 0.5y[n-1] + x[n]$.",
+          "marks": "6",
+          "chapter": "Frequency Response of Continuous and Discrete Time Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Determine whether the signal $x(t) = e^{-3t}$ is a power signal or energy signal or neither energy nor power signal.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Differentiate between energy signal and power signal.Show by giving suitable example that power of the energy signal is zero and energy of the power signal is infinite.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Derive necessary condition for a discrete time signal $x = e^{j\\omega n}$ to be periodic.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "For a system characterized by Linear constant coefficient difference equation $y[n] = 0.5y[n-1] + x[n]$, find the frequency response $H(e^{j\\omega})$ and impulse response $h[n]$. Also plot the frequency response magnitude $|H(e^{j\\omega})|$.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "a) Derive the trigonometric fourier series expansion of a continuous-time periodic signal $x(t)$. [5]\n\nb) State and prove the time-scaling property for continuous-time fourier series pair. [5]\n\nc) State and prove frequency shifting property of discrete time fourier series.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "What is convolution? Obtain the expression for convolution integral.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "For a system characterized by Linear constant coefficient difference equation $y[n] = 0.5y[n-1] + x[n]$, find the frequency response $H(e^{j\\omega})$ and impulse response $h[n]$. Also plot the frequency response magnitude $|H(e^{j\\omega})|$.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2071 Magh",
+      "year": "2071",
+      "month": "Magh",
+      "examType": "Back",
+      "totalMarks": 68,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Find the energy and power of the signal $x[n] = e^{j\\omega n} u[n]$. $u[n]$ is unit step function. What is the period of signal $x[n] = \\cos\\left(\\frac{41\\pi}{7}n\\right)$?",
+          "marks": "6",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Plot the signal $x(t) = t(u(t + 3) - u(t - 3))$.",
+          "marks": "2",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "For the LTI system, describe following properties: (a) linearity (b) causality (c) stability (d) time invariance.",
+          "marks": "6",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Find Fourier series coefficients for periodic rectangular pulses with unity amplitude. Draw the magnitude spectrum.",
+          "marks": "5",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Derive the expression for discrete time Fourier series representation of the signal $x[n]$ periodic with period of N.",
+          "marks": "7",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Perform the convolution and draw output $y[n]$ $x[n] = \\{1\\ \\underset{\\uparrow}{2}\\ 2\\ 3\\}$ and $h[n] = \\{1\\ 4\\ \\underset{\\uparrow}{3}\\}$.",
+          "marks": "7",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Find convolution between two signals $x(t) = \\begin{cases} e^{0.5t} & \\text{for } 0 < t < 5 \\\\ 0 & \\text{otherwise} \\end{cases}$ and $h(t) = \\begin{cases} 1 & \\text{for } 1 < t < 3 \\\\ 0 & \\text{otherwise} \\end{cases}$",
+          "marks": "7",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "If the impulse response of continuous time linear time invariant system is $h(t) = e^{-t}u(t - 3)$ and input to the system is $x(t) = u(t - 2) , determine$ the output $y(t)$ of the system.",
+          "marks": "8",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Derive the expression for impulse response and step response of ideal low pass filter.",
+          "marks": "4",
+          "chapter": "Frequency Response of Continuous and Discrete Time Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Describe bode plot with example.",
+          "marks": "4",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Determine the expression of Fourier Transform for continuous time aperiodic signal.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "State and prove Parseval's theorem for continuous time aperiodic signal.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "What is aliasing effect and how can we overcome it? Determine the Nyquist rate for a continuous time signal $x(t) = 6 \\cos 50 \\pi t + 20 \\sin 300 \\pi t - 10 \\cos 100 \\pi t$.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2071 Bhadra",
+      "year": "2071",
+      "month": "Bhadra",
+      "examType": "Back",
+      "totalMarks": 134,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "If the signal is periodic, find the fundamental period of the signal $x[n] = \\cos\\left(\\frac{\\pi}{2}n\\right)\\cos\\left(\\frac{\\pi}{4}n\\right)$.",
+          "marks": "3",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Derive the expression of Fourier Series Coefficient in exponential form for Continuous time periodic signal. Describe the condition for existence of Fourier series with suitable examples.",
+          "marks": "3",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Derive an analysis equation of continuous time Fourier series representation of any signal $x(t)$. [5]\n\nb) Describe the time shifting and frequency shifting properties of continuous time Fourier series. Find Fourier series coefficient of signal $x(t) = A \\cos(\\omega_0 t)$. [6]\n\nc) State and prove Parseval's relation for continuous time periodic signals.",
+          "marks": "4",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Discuss the following properties of continuous time Fourier series. (a) Time shifting (b) Time scaling (c) Conjunction.",
+          "marks": "6",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) State and prove the convolution property of continuous-time Fourier Transform. [5]\n\nb) Find the Fourier Transform of the signal $x(t) = e^{-at} u(t)$, where $a$ is real constant. Also, draw its amplitude and phase spectra.",
+          "marks": "4",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) State and prove Time shifting property of continuous time Fourier Transform. [2+5]\n\nb) Find the Fourier transform of continuous time unit step signal.",
+          "marks": "4",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Derive the convolution integral for continuous time system signal.",
+          "marks": "8",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "a) Derive convolution integral for continuous LTI system. [5]\n\nb) Find convolution between the signals $x[n] = \\{3,5,6,9\\}$ and $h[n] = \\{-1,3,5\\}$. Choose your appropriate origin. Show the output signal.",
+          "marks": "6",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Convolve the signals $x[n] = \\{1, 2, 1\\}$ and $h[n] = \\{1, 2, 3, 1\\}$.",
+          "marks": "6",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "a) Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. [2+4]\n$$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$\nb) Find impulse response for the DT system given by the following linear constant coefficient difference equation. $y[n] - \\frac{3}{4}y[n-1] + \\frac{1}{8}y[n-2] = 2x[n]$",
+          "marks": "4",
+          "chapter": "Sampling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Explain aliasing that may occur in any arbitrary band-limited signal $x(t)$ with band-width 'W'.",
+          "marks": "5",
+          "chapter": "Sampling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "a) Define frequency response of the discrete LTI system. Derive Formula to calculate the impulse response of continuous time ideal low pass filter. [2+4]\n\nb) Find the convolution between signals $x[n] = \\{1, 2, 2, 1\\}$ and $h[n] = \\{1, 2, 2, -1\\}$. Choose your own origin.",
+          "marks": "5",
+          "chapter": "Frequency Response of Continuous and Discrete Time Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Define sampling theorem. Determine the Nyquist rate and Nyquist interval for the given continuous time signal. $$x(t) = \\frac{1}{2\\pi} \\cos(4000\\pi t) \\cos(1000\\pi t)$$Also set in 18 other sittings — see the exact wording of each<ul><li class=\"back-only\">2083 Baishakh Back (New Course)Find the Nyquist rate and Nyquist time interval of the following signal. $x(t) = 5\\cos(150\\pi t) + 10\\sin(350\\pi t) + \\cos(150\\pi t)$",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Differentiate between energy signal and power signal.Show by giving suitable example that power of the energy signal is zero and energy of the power signal is infinite.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "Derive the convolution integral for continuous time system signal.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "Derive Formula to calculate the impulse response of continuous time ideal low pass filter. Is this system practically realizable or not.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "Define energy and power signal with examples. Describe time shifting, time scaling of a signal.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 18,
+          "text": "Derive the convolution integral for continuous time system signal.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 19,
+          "text": "State and prove Parseval's theorem for continuous time aperiodic signal.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 20,
+          "text": "Derive the expression for continuous time Fourier series in exponential form.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 21,
+          "text": "Explain the convolution properties of continuous time Fourier transform.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 22,
+          "text": "Derive the expression for impulse response of ideal low pass filter and discuss.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 23,
+          "text": "a) State and prove Time shifting property of continuous time Fourier Transform. [2+5]\n\nb) Find the Fourier transform of continuous time unit step signal.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 24,
+          "text": "Discuss different methods to reconstruct a signal. Determine the Nyquist rate for a continuous time signal $x(t) = \\frac{1}{2\\pi}\\cos(200\\pi t)\\cos(300\\pi t)$.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2070 Magh",
+      "year": "2070",
+      "month": "Magh",
+      "examType": "Back",
+      "totalMarks": 63,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Determine whether the signal $x[n] = 5 \\sin\\left(\\frac{3\\pi}{8}n - \\frac{\\pi}{2}\\right) - 2 \\cos\\left(\\frac{7\\pi}{12}n\\right)$ is periodic or not. If the signal is periodic, calculate its fundamental period and fundamental frequency.",
+          "marks": "4",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "How could you represent a signal $x(t)$ with harmonically related exponentials? State and prove conjugation and conjugate symmetry property of CTFS.",
+          "marks": "4",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Find the Fourier series coefficients of the signal\n$X[n] = 1 + \\sin(2\\pi/N)n + 3 \\cos(2\\pi/N)n + \\cos(4\\pi/N)n$",
+          "marks": "6",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "How can you generate Fourier transform for discrete time periodic signals? Explain.",
+          "marks": "3",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "State and prove Parseval's theorem for continuous time aperiodic signal.",
+          "marks": "5",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "The impulse responses of two LTI systems are given by $h_1(t) = e^{-\\frac{t}{2}} u(t)$ and $h_2(t) = u(t) - u(t-5)$. Determine the equivalent impulse response if these two systems are connected in cascade. Also sketch the graph of equipment impulse response.",
+          "marks": "8",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What are the properties of LTI system? Show that the output of $a^n$ LTI system is stable if the impulse response is absolutely summable.",
+          "marks": "8",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "State and prove sampling theorem for low pass signals.",
+          "marks": "6",
+          "chapter": "Sampling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Given a system $Y[n] = 0.5y[n-1] + x[n] + x[n+1]$. Find out its impulse response and frequency response.",
+          "marks": "7",
+          "chapter": "Frequency Response of Continuous and Discrete Time Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Compute 4-point DFT of a signal $x[n] = \\{2, 1+j, 1, 1-j\\}$ and plot its magnitude and phase spectrums.",
+          "marks": "4",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Calculate the total energy and total average power of the signal given below:\n$x(t) = (3+4j) e^{2t} u(-t)$\nAlso state whether the signal is energy signal, power signal or neither.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Derive the impulse response for ideal low pass filter with cutoff frequency $\\omega_c$.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2070 Bhadra",
+      "year": "2070",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 60,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Determine whether the following signals are energy or power signals.\n(a) $f(t) = 3 \\cos(2\\pi t)$\n(b) $x[n] = \\cos\\left(\\frac{n}{6}\\right)$",
+          "marks": "4",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What are the properties of system? Determine whether the given system is time-variant or not.\n$y(t) = \\sin[x(t)]$",
+          "marks": "2",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "What do you understand by periodic and aperiodic signals? Explain with the help of examples.",
+          "marks": "4",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Define systems with memory and memory-less systems with examples. Explain the causality property of discrete time LTI systems.",
+          "marks": "3",
+          "chapter": "Signal and its Types",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What is the information provided by Fourier series coefficients of a signal? State and prove time shifting and conjugation properties of continuous time Fourier series representation.",
+          "marks": "1",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Find out Fourier series coefficients of a periodic discrete time signal described over a period as\n$x[n] = \\begin{cases} 2; & |n| \\leq 1 \\\\ 0; & 1 < |n| \\leq 3 \\end{cases}$\nUsing the Fourier series coefficients calculated above; find the Fourier series coefficients of the signal $e^{j\\frac{4\\pi}{7}n} x[n]$.",
+          "marks": "5",
+          "chapter": "Fourier Series",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Given the relationship $y(t) = x(t) * h(t)$ and $g(t) = x(3t) * h(3t)$ and given that $x(t)$ has the Fourier transform of $X(j\\omega)$ and $h(t)$ has Fourier transform $H(j\\omega) , use$ Fourier transform properties to show that $g(t)$ has the form $g(t) = Ay(Bt)$. Determine the values of A and B.",
+          "marks": "8",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain the linearity and time shifting properties of continuous time Fourier transform.",
+          "marks": "4",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Find the Fourier transform of continuous time unit impulse and rectangular pulse. Discuss the result.",
+          "marks": "6",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Find the Fourier transform of everlasting sinusoid $X(t) = \\cos\\omega_0 t$.",
+          "marks": "4",
+          "chapter": "Fourier Transform",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Let $x(t)$ be the input to $a^n$ LTI system with unit impulse response $h(t) , where$, $x(t) = e^{-at} u(t) , a > 0$ and $h(t) = u(t)$. Verify commutative law of LTI system.",
+          "marks": "5",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "A discrete time LTI system has $a^n$ impulse response as shown below:\n\nIf the input to the given system is $x[n] = \\{-0.25, 0.5, 1, -0.5, 0, 0.25\\} , calculate$ and plot the output of the system.",
+          "marks": "6",
+          "chapter": "Linear Time Invariant (LTI) System",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "What do you mean by aliasing? Explain with the help of frequency domain analysis for impulse-train sampling.",
+          "marks": "1",
+          "chapter": "Sampling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "What is distortionless transmission? Derive the expression for unit step response of ideal low pass filter.",
+          "marks": "5",
+          "chapter": "Frequency Response of Continuous and Discrete Time Systems",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "What are the properties of systems? Determine whether the given system is time-variant or not: $y(t) = \\sin[x(t)]$.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    }
   ]
 }

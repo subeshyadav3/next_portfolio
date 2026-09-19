@@ -14,6 +14,8 @@ import {
   TrendingUp,
   Sparkles,
   Calendar,
+  ExternalLink,
+  FileText,
 } from "lucide-react";
 import { MathText } from "@/components/ioe/MathText";
 import { copyToClipboard } from "@/lib/clipboard";
@@ -53,6 +55,13 @@ export function QuestionBank({ chapters = [], questions = [], subject }: Questio
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const scrollToPdf = () => {
+    const el = document.getElementById("pdf-viewer");
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   const handleCopy = async (text: string, id: string) => {
@@ -161,6 +170,19 @@ export function QuestionBank({ chapters = [], questions = [], subject }: Questio
               <span className="rounded-md border border-slate-200/80 bg-slate-50 px-2 py-0.5 text-[11px] font-medium text-slate-600 dark:border-gray-700/80 dark:bg-gray-800/80 dark:text-slate-400">
                 {item.chapter}
               </span>
+            )}
+
+            {/* Diagram Button */}
+            {item.isDiagram && (
+              <button
+                type="button"
+                onClick={scrollToPdf}
+                className="inline-flex items-center gap-1 rounded-md bg-amber-50 px-2 py-0.5 text-[11px] font-semibold text-amber-700 hover:bg-amber-100 dark:bg-amber-950/60 dark:text-amber-300 transition-colors cursor-pointer"
+                title="View authentic diagram in the PDF viewer above"
+              >
+                <FileText className="h-3 w-3" />
+                <span>Figure in PDF ↑</span>
+              </button>
             )}
           </div>
 

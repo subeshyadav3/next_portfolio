@@ -1,473 +1,1496 @@
 {
   "subject": "Engineering Hydrology",
-  "subjectCode": "ENCE 306",
-  "program": "Civil Engineering",
   "semester": "5",
   "questions": [
     {
-      "id": "eh-1",
-      "question": "Explain the hydrological cycle with a neat schematic diagram. Write down the water budget equation for a catchment and explain how a hydrological catchment boundary is delineated at a given river outlet point.",
-      "frequency": 5,
-      "marks": 5,
-      "examSessions": [
-        "2082 Chaitra",
+      "id": "engineering-hydrology-1",
+      "question": "A drainage basin has the following characteristics: Area = $120\\text{ km}^2$, time of concentration = 14 h, storage constant = 10 h and inter-isochrone area distribution as below:<table><thead><tr><th>Travel time (hr)</th><th>0-2</th><th>2-4</th><th>4-6</th><th>6-8</th><th>8-10</th><th>10-12</th><th>12-14</th><th>14-16</th><th>16-18</th></tr></thead><tbody><tr><td>Inter-isochrone area ($\\text{km}^2$)</td><td>3</td><td>10</td><td>20</td><td>26</td><td>18</td><td>18</td><td>13</td><td>8</td><td>4</td></tr></tbody></table>Compute the flood hydrograph by using Clark's method.",
+      "text": "A drainage basin has the following characteristics: Area = $120\\text{ km}^2$, time of concentration = 14 h, storage constant = 10 h and inter-isochrone area distribution as below:<table><thead><tr><th>Travel time (hr)</th><th>0-2</th><th>2-4</th><th>4-6</th><th>6-8</th><th>8-10</th><th>10-12</th><th>12-14</th><th>14-16</th><th>16-18</th></tr></thead><tbody><tr><td>Inter-isochrone area ($\\text{km}^2$)</td><td>3</td><td>10</td><td>20</td><td>26</td><td>18</td><td>18</td><td>13</td><td>8</td><td>4</td></tr></tbody></table>Compute the flood hydrograph by using Clark's method.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 12,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-2",
+      "question": "For a river the estimated flood peaks for two return periods by the use of Gumbel's method are given below:<table><thead><tr><th>Return period (yrs)</th><th>Peak flood ($m^3/s$)</th></tr></thead><tbody><tr><td>100</td><td>1020</td></tr><tr><td>50</td><td>850</td></tr></tbody></table>What flood discharge in this river will have a return period of 500 yrs?",
+      "text": "For a river the estimated flood peaks for two return periods by the use of Gumbel's method are given below:<table><thead><tr><th>Return period (yrs)</th><th>Peak flood ($m^3/s$)</th></tr></thead><tbody><tr><td>100</td><td>1020</td></tr><tr><td>50</td><td>850</td></tr></tbody></table>What flood discharge in this river will have a return period of 500 yrs?",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 11,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-3",
+      "question": "Write the equations of flood prediction by rational and empirical methods. Also write the limitations and appropriate uses of these equations.",
+      "text": "Write the equations of flood prediction by rational and empirical methods. Also write the limitations and appropriate uses of these equations.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 10,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-4",
+      "question": "Define the following terms: hydrological cycle, runoff, water balance and catchment.",
+      "text": "Define the following terms: hydrological cycle, runoff, water balance and catchment.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 9,
+      "years": [
+        "2072 Chaitra",
         "2081 Bhadra",
         "2080 Bhadra",
         "2078 Bhadra",
-        "2075 Chaitra"
+        "2069 Chaitra",
+        "2066 Magh"
       ],
+      "examSessions": [
+        "2072 Chaitra",
+        "2081 Bhadra",
+        "2080 Bhadra",
+        "2078 Bhadra",
+        "2069 Chaitra",
+        "2066 Magh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-5",
+      "question": "Define flood hydrograph, Direct Run of Hydrograph (DRH) and Unit Hydrograph. Write the different methods of base flow separation in hydrograph analysis.",
+      "text": "Define flood hydrograph, Direct Run of Hydrograph (DRH) and Unit Hydrograph. Write the different methods of base flow separation in hydrograph analysis.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 8,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-6",
+      "question": "Define hydrological cycle. Draw a net sketch of hydrological cycle illustrating its components.",
+      "text": "Define hydrological cycle. Draw a net sketch of hydrological cycle illustrating its components.",
       "chapter": "Introduction",
-      "importance": "High",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "eh-2",
-      "question": "Explain the methods of estimating missing rainfall data at a rain gauge station (arithmetic mean and normal ratio methods). How is the consistency of rainfall records tested and corrected using the Double Mass Curve technique?",
-      "frequency": 5,
-      "marks": 6,
-      "examSessions": [
-        "2082 Chaitra",
-        "2083 Baishakh",
-        "2080 Bhadra",
-        "2078 Bhadra",
-        "2076 Chaitra"
-      ],
-      "chapter": "Precipitation",
-      "importance": "High",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "eh-3",
-      "question": "What criteria govern the optimum number and location of rain gauge stations in a drainage basin? A drainage basin is monitored with eight rainfall gauging stations with observed annual rainfall: 110.0, 135.5, 150.4, 165.0, 180.6, 195.4, 160.0, and 145.7 cm. If the allowable error in estimating the mean annual rainfall is 5%, determine the optimum number of additional rain gauges required.",
-      "frequency": 5,
-      "marks": 6,
-      "examSessions": [
-        "2082 Chaitra",
-        "2081 Bhadra",
-        "2079 Bhadra",
-        "2078 Bhadra",
-        "2075 Chaitra"
-      ],
-      "chapter": "Precipitation",
-      "importance": "High",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "eh-4",
-      "question": "Describe the three standard methods for calculating the mean areal precipitation over a catchment: (i) Arithmetic Mean method, (ii) Thiessen Polygon method, and (iii) Isohyetal method, highlighting their relative merits and limitations in mountainous terrain.",
-      "frequency": 5,
-      "marks": 6,
-      "examSessions": [
-        "2083 Baishakh",
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2076 Chaitra",
-        "2073 Shrawan"
-      ],
-      "chapter": "Precipitation",
-      "importance": "High",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "eh-5",
-      "question": "What is the Φ-index (phi-index) and how does it differ from the W-index? A 6-hour storm produces a total rainfall of 12.0 cm. If the phi-index of the catchment is 0.8 cm/hr, calculate the total direct surface runoff and runoff coefficient.",
-      "frequency": 5,
-      "marks": 5,
-      "examSessions": [
-        "2082 Chaitra",
-        "2082 Bhadra",
-        "2080 Bhadra",
-        "2078 Bhadra",
-        "2076 Chaitra"
-      ],
-      "chapter": "Abstractions from Precipitation (Hydrological Losses)",
-      "importance": "High",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "eh-6",
-      "question": "Estimate the Potential Evapotranspiration (PET) for an agricultural field near Birgunj during April using Penman's method, given: Mean temperature = 28°C, Relative humidity = 70%, Wind speed at 2 m height = 1.5 m/s, Net radiation = 10.1 mm/day, Slope of saturation vapor pressure curve Δ = 1.8 mm/°C, and Psychrometric constant γ = 0.49 mm/°C.",
-      "frequency": 5,
-      "marks": 6,
-      "examSessions": [
-        "2082 Chaitra",
-        "2083 Baishakh",
-        "2080 Bhadra",
-        "2078 Bhadra",
-        "2074 Ashwin"
-      ],
-      "chapter": "Abstractions from Precipitation (Hydrological Losses)",
-      "importance": "High",
-      "difficulty": "Hard"
-    },
-    {
-      "id": "eh-7",
-      "question": "State Horton's infiltration equation fp = fc + (f0 - fc)*e^(-kh*t). Explain the physical meaning of initial infiltration capacity f0, steady state capacity fc, and decay constant kh. Describe the measurement of infiltration using a double-ring infiltrometer.",
-      "frequency": 4,
-      "marks": 6,
-      "examSessions": [
-        "2081 Bhadra",
-        "2080 Baishakh",
-        "2078 Bhadra",
-        "2075 Chaitra"
-      ],
-      "chapter": "Abstractions from Precipitation (Hydrological Losses)",
-      "importance": "Medium",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "eh-8",
-      "question": "What is meant by rainfall-runoff modeling? Explain its basic components (catchment physical characteristics, overland flow, channel routing) and factors affecting the runoff hydrograph shape.",
-      "frequency": 4,
-      "marks": 5,
-      "examSessions": [
-        "2082 Chaitra",
-        "2081 Bhadra",
-        "2078 Bhadra",
-        "2076 Chaitra"
-      ],
-      "chapter": "Surface Runoff",
-      "importance": "Medium",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "eh-9",
-      "question": "What is a stage-discharge rating curve? Describe the mid-section and mean-section methods of river streamflow measurement using a current meter (two-point method at 0.2d and 0.8d). Calculate the total river discharge from given sounding depths and current meter revolution data.",
-      "frequency": 5,
-      "marks": 8,
-      "examSessions": [
-        "2082 Chaitra",
-        "2083 Baishakh",
-        "2080 Bhadra",
-        "2078 Bhadra",
-        "2076 Chaitra"
-      ],
-      "chapter": "Streamflow Measurement",
-      "importance": "High",
-      "difficulty": "Hard"
-    },
-    {
-      "id": "eh-10",
-      "question": "Describe the chemical tracer dilution technique (constant rate injection method and sudden gulp injection method) for measuring streamflow in turbulent mountain streams where conventional current metering is unfeasible.",
-      "frequency": 4,
-      "marks": 6,
-      "examSessions": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2079 Bhadra",
-        "2075 Chaitra"
-      ],
-      "chapter": "Streamflow Measurement",
-      "importance": "Medium",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "eh-11",
-      "question": "Why do we need to separate baseflow in flood hydrograph analysis? Describe three standard methods of baseflow separation: (i) Straight-line method, (ii) Two-line (fixed base) method, and (iii) Recession curve extension method.",
-      "frequency": 5,
-      "marks": 5,
-      "examSessions": [
-        "2082 Chaitra",
-        "2081 Bhadra",
-        "2080 Baishakh",
-        "2078 Bhadra",
-        "2074 Ashwin"
-      ],
-      "chapter": "Hydrograph Analysis",
-      "importance": "High",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "eh-12",
-      "question": "Define Unit Hydrograph (UH) and explain its fundamental assumptions: time invariance and linear response. What are the limitations and applications of unit hydrograph theory?",
-      "frequency": 5,
-      "marks": 5,
-      "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2080 Baishakh",
-        "2078 Bhadra",
-        "2076 Chaitra"
-      ],
-      "chapter": "Hydrograph Analysis",
-      "importance": "High",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "eh-13",
-      "question": "Given the ordinates of a 4-hour Unit Hydrograph of a river catchment, derive the 6-hour Unit Hydrograph using the S-curve technique. Determine the peak discharge and time to peak of the derived 6-hour UH.",
-      "frequency": 5,
-      "marks": 8,
-      "examSessions": [
-        "2082 Chaitra",
-        "2082 Bhadra",
+      "marks": "4",
+      "frequency": 8,
+      "years": [
         "2081 Bhadra",
         "2080 Bhadra",
-        "2078 Bhadra"
-      ],
-      "chapter": "Hydrograph Analysis",
-      "importance": "High",
-      "difficulty": "Hard"
-    },
-    {
-      "id": "eh-14",
-      "question": "Explain Snyder's method for developing a Synthetic Unit Hydrograph for ungauged catchments. Define basin lag tp, peak discharge Qp, time base tb, and width of unit hydrograph at 50% and 75% peak discharge (W50 and W75).",
-      "frequency": 5,
-      "marks": 6,
-      "examSessions": [
-        "2081 Bhadra",
-        "2080 Baishakh",
         "2078 Bhadra",
-        "2075 Chaitra",
-        "2072"
+        "2072 Chaitra",
+        "2069 Chaitra"
       ],
-      "chapter": "Hydrograph Analysis",
-      "importance": "High",
-      "difficulty": "Medium"
-    },
-    {
-      "id": "eh-15",
-      "question": "Define flash flood and discuss its primary meteorological and hydrological causes in Nepal. Explain how climate change influences the occurrence and intensity of flash floods and glacial lake outburst floods (GLOFs).",
-      "frequency": 4,
-      "marks": 5,
       "examSessions": [
-        "2082 Chaitra",
         "2081 Bhadra",
         "2080 Bhadra",
-        "2078 Bhadra"
-      ],
-      "chapter": "Flood Hydrology",
-      "importance": "Medium",
-      "difficulty": "Easy"
-    },
-    {
-      "id": "eh-16",
-      "question": "Explain Gumbel's Extreme Value Type-I (EV-I) distribution for flood frequency analysis. From the annual maximum flood series of a river, calculate the design flood magnitude for a return period of 100 years and 500 years, and calculate the risk that this flood will be equaled or exceeded during a structure's 50-year design lifetime.",
-      "frequency": 5,
-      "marks": 8,
-      "examSessions": [
-        "2082 Chaitra",
-        "2083 Baishakh",
-        "2080 Bhadra",
         "2078 Bhadra",
-        "2076 Chaitra"
+        "2072 Chaitra",
+        "2069 Chaitra"
       ],
-      "chapter": "Flood Hydrology",
-      "importance": "High",
-      "difficulty": "Hard"
+      "isDiagram": false
     },
     {
-      "id": "eh-17",
-      "question": "Using the Muskingum method, route an inflow flood hydrograph through a channel reach with storage time constant K = 10 hours and weighting factor x = 0.3. Determine the Muskingum routing coefficients C0, C1, C2, and calculate the peak outflow discharge and its time lag.",
-      "frequency": 5,
-      "marks": 8,
-      "examSessions": [
-        "2082 Chaitra",
-        "2082 Bhadra",
-        "2081 Bhadra",
-        "2080 Bhadra",
-        "2078 Bhadra"
-      ],
-      "chapter": "Flood Routing",
-      "importance": "High",
-      "difficulty": "Hard"
+      "id": "engineering-hydrology-7",
+      "question": "a) Explain the concept of attenuation and lag of peak due to routing with sketch. [4]\n\nb) Starting from the continuity equation, obtain the equation of reservoir routing.\n\nP.6",
+      "text": "a) Explain the concept of attenuation and lag of peak due to routing with sketch. [4]\n\nb) Starting from the continuity equation, obtain the equation of reservoir routing.\n\nP.6",
+      "chapter": "Archive Questions",
+      "marks": "4",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "id": "eh-18",
-      "question": "Describe the Modified Puls (Storage-Indication) method for hydrologic reservoir flood routing. Formulate the routing equation in finite-difference form and explain the preparation and use of the (S/Δt + Q/2) vs Q curve.",
-      "frequency": 4,
-      "marks": 6,
-      "examSessions": [
-        "2080 Baishakh",
-        "2078 Bhadra",
-        "2076 Chaitra",
-        "2073 Shrawan"
-      ],
-      "chapter": "Flood Routing",
-      "importance": "High",
-      "difficulty": "Medium"
+      "id": "engineering-hydrology-8",
+      "question": "The ordinates of the inflow hydrograph at $6 \\text{ hr}$ interval are as follows:\n\nThe discharge over the spillway Crest and the surcharge storage above the crest for different water surface elevations are as follows:\n\nDetermine:\n\ni) Maximum reservoir level\nii) Maximum outflow rate\niii) Reduction in the peak",
+      "text": "The ordinates of the inflow hydrograph at $6 \\text{ hr}$ interval are as follows:\n\nThe discharge over the spillway Crest and the surcharge storage above the crest for different water surface elevations are as follows:\n\nDetermine:\n\ni) Maximum reservoir level\nii) Maximum outflow rate\niii) Reduction in the peak",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "id": "eh-19",
-      "question": "Explain the presentation of rainfall data: Hyetograph, Mass curve of rainfall, and Depth-Area-Duration (DAD) curves. Explain Intensity-Duration-Frequency (IDF) curves and their civil engineering design importance.",
-      "frequency": 3,
-      "marks": 6,
-      "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra"
-      ],
-      "chapter": "Precipitation",
-      "importance": "High",
-      "difficulty": "Medium"
+      "id": "engineering-hydrology-9",
+      "question": "A basin having 128 $km^2$ of drainage area has 22 hours and 14 hours of concentration time and storage constant respectively. Determine the IUH for this basin if inter-isochrones area distribution is as below:<table><thead><tr><th>Travel time (hr)</th><th>0-3</th><th>3-6</th><th>6-9</th><th>9-12</th><th>12-15</th><th>15-18</th><th>18-21</th><th>21-24</th><th>24-27</th></tr></thead><tbody><tr><td>Area($km^2$)</td><td>2</td><td>7</td><td>17</td><td>25</td><td>31</td><td>23</td><td>14</td><td>6</td><td>3</td></tr></tbody></table>P. 4<table><thead><tr><th>Exam.</th><th>Regular</th><th>Full Marks</th><th>80</th></tr></thead><tbody><tr><td>Level</td><td>BE</td><td>Pass Marks</td><td>32</td></tr><tr><td>Programme</td><td>BCE</td><td>Time</td><td>3 hrs.</td></tr><tr><td>Year / Part</td><td>III / I</td><td></td><td></td></tr></tbody></table>Subject: - Engineering Hydrology (CE606)",
+      "text": "A basin having 128 $km^2$ of drainage area has 22 hours and 14 hours of concentration time and storage constant respectively. Determine the IUH for this basin if inter-isochrones area distribution is as below:<table><thead><tr><th>Travel time (hr)</th><th>0-3</th><th>3-6</th><th>6-9</th><th>9-12</th><th>12-15</th><th>15-18</th><th>18-21</th><th>21-24</th><th>24-27</th></tr></thead><tbody><tr><td>Area($km^2$)</td><td>2</td><td>7</td><td>17</td><td>25</td><td>31</td><td>23</td><td>14</td><td>6</td><td>3</td></tr></tbody></table>P. 4<table><thead><tr><th>Exam.</th><th>Regular</th><th>Full Marks</th><th>80</th></tr></thead><tbody><tr><td>Level</td><td>BE</td><td>Pass Marks</td><td>32</td></tr><tr><td>Programme</td><td>BCE</td><td>Time</td><td>3 hrs.</td></tr><tr><td>Year / Part</td><td>III / I</td><td></td><td></td></tr></tbody></table>Subject: - Engineering Hydrology (CE606)",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "id": "eh-20",
-      "question": "How is rainfall data checked for consistency? Describe the Double Mass Curve analysis procedure with a neat sketch and explain how inconsistent rain gauge records are adjusted.",
-      "frequency": 3,
-      "marks": 6,
-      "examSessions": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
-      ],
-      "chapter": "Precipitation",
-      "importance": "High",
-      "difficulty": "Medium"
+      "id": "engineering-hydrology-10",
+      "question": "a) Explain briefly the basic principles involved in the development of IUH by Clark's method. [6]\n\nb) A drainage basin has area of $157 \\text{ km}^2$, storage constant = 8h and time of concentration = 7h has the following inter isochrone area distribution data.<table><thead><tr><th>Time h</th><th>0-1</th><th>1-2</th><th>2-3</th><th>3-4</th><th>4-5</th><th>5-6</th><th>6-7</th></tr></thead><tbody><tr><td>Inter isochrone area $\\text{km}^2$</td><td>10</td><td>38</td><td>20</td><td>45</td><td>32</td><td>10</td><td>2</td></tr></tbody></table>Route the flood hydrograph. [6]\n\nc) Why flow routing is required? Explain Time-Area method of Routing.",
+      "text": "a) Explain briefly the basic principles involved in the development of IUH by Clark's method. [6]\n\nb) A drainage basin has area of $157 \\text{ km}^2$, storage constant = 8h and time of concentration = 7h has the following inter isochrone area distribution data.<table><thead><tr><th>Time h</th><th>0-1</th><th>1-2</th><th>2-3</th><th>3-4</th><th>4-5</th><th>5-6</th><th>6-7</th></tr></thead><tbody><tr><td>Inter isochrone area $\\text{km}^2$</td><td>10</td><td>38</td><td>20</td><td>45</td><td>32</td><td>10</td><td>2</td></tr></tbody></table>Route the flood hydrograph. [6]\n\nc) Why flow routing is required? Explain Time-Area method of Routing.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "id": "eh-21",
-      "question": "Explain the methods for estimating lake evaporation: Water budget method, Energy balance method, and Penman's equation combining aerodynamic and energy balance terms.",
-      "frequency": 3,
-      "marks": 8,
-      "examSessions": [
-        "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
-      ],
-      "chapter": "Abstractions from Precipitation (Hydrological Losses)",
-      "importance": "High",
-      "difficulty": "Hard"
+      "id": "engineering-hydrology-11",
+      "question": "a) What do you understand by flow routing? [2]\n\nb) A drainage basin has the following characteristics:\nArea = $123\\text{ km}^2$, time of concentration=14 hr, storage constant=10h and inter-\nisochrone area distribution as below:<table><thead><tr><th>Travel Time (hr)</th><th>0-2</th><th>2-4</th><th>4-6</th><th>6-8</th><th>8-10</th><th>10-12</th><th>12-14</th><th>14-16</th><th>16-18</th></tr></thead><tbody><tr><td>Inter-isochrone area ($\\text{km}^2$)</td><td>4</td><td>10</td><td>21</td><td>24</td><td>18</td><td>20</td><td>12</td><td>9</td><td>5</td></tr></tbody></table>Compute the flood hydrograph by using Clark's IUH.",
+      "text": "a) What do you understand by flow routing? [2]\n\nb) A drainage basin has the following characteristics:\nArea = $123\\text{ km}^2$, time of concentration=14 hr, storage constant=10h and inter-\nisochrone area distribution as below:<table><thead><tr><th>Travel Time (hr)</th><th>0-2</th><th>2-4</th><th>4-6</th><th>6-8</th><th>8-10</th><th>10-12</th><th>12-14</th><th>14-16</th><th>16-18</th></tr></thead><tbody><tr><td>Inter-isochrone area ($\\text{km}^2$)</td><td>4</td><td>10</td><td>21</td><td>24</td><td>18</td><td>20</td><td>12</td><td>9</td><td>5</td></tr></tbody></table>Compute the flood hydrograph by using Clark's IUH.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "id": "eh-22",
-      "question": "Explain Horton's infiltration equation: $f_p = f_c + (f_0 - f_c)e^{-k_h t}$. Explain $\\phi$-index and $W$-index. A storm of 4-hour duration has rainfall depths of 25, 40, 35, and 15 mm in successive hours. If total runoff is 55 mm, calculate the $\\phi$-index.",
-      "frequency": 4,
-      "marks": 8,
-      "examSessions": [
-        "2083 Baishakh",
-        "2081 Chaitra",
-        "2079 Baishakh",
-        "2076 Chaitra"
-      ],
-      "chapter": "Abstractions from Precipitation (Hydrological Losses)",
-      "importance": "High",
-      "difficulty": "Hard"
+      "id": "engineering-hydrology-12",
+      "question": "What do you mean by flow routing? A drainage basin has the following characteristics: Area = 123 $\\text{km}^2$, time of concentration = 14hr, storage constant = 10h and inter-isochrone area distribution as below:<table><thead><tr><th>Travel time (hr)</th><th>0-2</th><th>2-4</th><th>4-6</th><th>6-8</th><th>8-10</th><th>10-12</th><th>12-14</th><th>14-16</th><th>16-18</th></tr></thead><tbody><tr><td>Inter-isochrone area ($\\text{km}^2$)</td><td>4</td><td>10</td><td>21</td><td>24</td><td>18</td><td>20</td><td>12</td><td>9</td><td>5</td></tr></tbody></table>Compute the flood hydrograph by using clark's method.",
+      "text": "What do you mean by flow routing? A drainage basin has the following characteristics: Area = 123 $\\text{km}^2$, time of concentration = 14hr, storage constant = 10h and inter-isochrone area distribution as below:<table><thead><tr><th>Travel time (hr)</th><th>0-2</th><th>2-4</th><th>4-6</th><th>6-8</th><th>8-10</th><th>10-12</th><th>12-14</th><th>14-16</th><th>16-18</th></tr></thead><tbody><tr><td>Inter-isochrone area ($\\text{km}^2$)</td><td>4</td><td>10</td><td>21</td><td>24</td><td>18</td><td>20</td><td>12</td><td>9</td><td>5</td></tr></tbody></table>Compute the flood hydrograph by using clark's method.",
+      "chapter": "Archive Questions",
+      "marks": "2",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "id": "eh-23",
-      "question": "Explain stream gauging using the Area-Velocity method. Compare 0.6 depth method and two-point (0.2 and 0.8 depth) velocity observation methods using a current meter.",
-      "frequency": 3,
-      "marks": 6,
-      "examSessions": [
-        "2082 Bhadra",
-        "2081 Baishakh",
-        "2078 Chaitra"
-      ],
-      "chapter": "Streamflow Measurement",
-      "importance": "High",
-      "difficulty": "Easy"
+      "id": "engineering-hydrology-13",
+      "question": "A drainage basin has the following characteristics\nArea = $180 \\text{ km}^2$\nStorage constant = 10hrs\nTime of concentration = 8 hours\nThe inter isochrones area distribution are as follows<table><thead><tr><th>Travel time (hr)</th><th>0-1</th><th>1-2</th><th>2-3</th><th>3-4</th><th>4-5</th><th>5-6</th><th>6-7</th><th>7-8</th></tr></thead><tbody><tr><td>Inter isochrones area ($km^2$)</td><td>14</td><td>38</td><td>28</td><td>36</td><td>30</td><td>20</td><td>10</td><td>6</td></tr></tbody></table>Determine the instantaneous unit hydrograph (IUH) for this catchment.",
+      "text": "A drainage basin has the following characteristics\nArea = $180 \\text{ km}^2$\nStorage constant = 10hrs\nTime of concentration = 8 hours\nThe inter isochrones area distribution are as follows<table><thead><tr><th>Travel time (hr)</th><th>0-1</th><th>1-2</th><th>2-3</th><th>3-4</th><th>4-5</th><th>5-6</th><th>6-7</th><th>7-8</th></tr></thead><tbody><tr><td>Inter isochrones area ($km^2$)</td><td>14</td><td>38</td><td>28</td><td>36</td><td>30</td><td>20</td><td>10</td><td>6</td></tr></tbody></table>Determine the instantaneous unit hydrograph (IUH) for this catchment.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "id": "eh-24",
-      "question": "What is a stage-discharge rating curve ($Q = C_r (G - G_0)^\\beta$)? Explain how the rating curve is established and how shifting control occurs due to scour, silting, and weed growth.",
-      "frequency": 3,
-      "marks": 8,
-      "examSessions": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2076 Chaitra"
-      ],
-      "chapter": "Streamflow Measurement",
-      "importance": "High",
-      "difficulty": "Medium"
+      "id": "engineering-hydrology-14",
+      "question": "The high flow water surface elevations of a stream at two section 10 km apart are 306.920 m and 306.650 m. The cross-sectional area and wetted perimeters are as follows:<table><thead><tr><th>Section</th><th>Area ($m^2$)</th><th>Wetted perimeter (m)</th></tr></thead><tbody><tr><td>A</td><td>73.3</td><td>26.80</td></tr><tr><td>B</td><td>93.4</td><td>30.23</td></tr></tbody></table>Assume $n = 0.02$. The eddy loss coefficient is 0.30 for gradual expansion and 0.10 for gradual contraction. Estimate the discharge at the stream. Section A is upstream of B.",
+      "text": "The high flow water surface elevations of a stream at two section 10 km apart are 306.920 m and 306.650 m. The cross-sectional area and wetted perimeters are as follows:<table><thead><tr><th>Section</th><th>Area ($m^2$)</th><th>Wetted perimeter (m)</th></tr></thead><tbody><tr><td>A</td><td>73.3</td><td>26.80</td></tr><tr><td>B</td><td>93.4</td><td>30.23</td></tr></tbody></table>Assume $n = 0.02$. The eddy loss coefficient is 0.30 for gradual expansion and 0.10 for gradual contraction. Estimate the discharge at the stream. Section A is upstream of B.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "id": "eh-25",
-      "question": "Explain the S-curve (S-hydrograph) technique. How is an S-curve constructed and used to derive a $T$-hour unit hydrograph from an available $D$-hour unit hydrograph?",
-      "frequency": 4,
-      "marks": 8,
-      "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2077 Chaitra",
-        "2075 Bhadra"
-      ],
-      "chapter": "Hydrograph Analysis",
-      "importance": "High",
-      "difficulty": "Hard"
+      "id": "engineering-hydrology-15",
+      "question": "a) Define flash flood. Discuss the major causes of flash floods. Explain how climate change influences the occurrence and intensity of flash floods. [4]\n\nb) Flood frequency computations for the river Koshi at Chatara station give the following results.<table><thead><tr><th>Return period T (years)</th><th>Peak flood ($\\text{m}^3/\\text{sec}$)</th></tr></thead><tbody><tr><td>50</td><td>35820</td></tr><tr><td>100</td><td>47380</td></tr></tbody></table>Estimate the flood magnitude with a return period of 500 years.",
+      "text": "a) Define flash flood. Discuss the major causes of flash floods. Explain how climate change influences the occurrence and intensity of flash floods. [4]\n\nb) Flood frequency computations for the river Koshi at Chatara station give the following results.<table><thead><tr><th>Return period T (years)</th><th>Peak flood ($\\text{m}^3/\\text{sec}$)</th></tr></thead><tbody><tr><td>50</td><td>35820</td></tr><tr><td>100</td><td>47380</td></tr></tbody></table>Estimate the flood magnitude with a return period of 500 years.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "id": "eh-26",
-      "question": "Explain Snyder's synthetic unit hydrograph method. Define basin lag ($t_p$), peak discharge ($Q_p$), time base ($T_b$), and widths at $50\\%$ and $75\\%$ peak discharge ($W_{50}, W_{75}$) in ungauged catchments.",
-      "frequency": 3,
-      "marks": 8,
-      "examSessions": [
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2075 Bhadra"
-      ],
-      "chapter": "Hydrograph Analysis",
-      "importance": "High",
-      "difficulty": "Medium"
+      "id": "engineering-hydrology-16",
+      "question": "What is linear reservoir? Explain the procedure to obtain Clark UH from time area method.",
+      "text": "What is linear reservoir? Explain the procedure to obtain Clark UH from time area method.",
+      "chapter": "Archive Questions",
+      "marks": "2",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "id": "eh-27",
-      "question": "Explain Gumbel's Extreme Value Type-I distribution for flood frequency analysis: $x_T = \\bar{x} + K_T \\sigma_n$ where $K_T = \\frac{y_T - \\bar{y}_n}{S_n}$ and $y_T = -\\ln[\\ln(T/(T-1))]$.",
-      "frequency": 4,
-      "marks": 8,
-      "examSessions": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2078 Chaitra",
-        "2075 Chaitra"
-      ],
-      "chapter": "Flood Hydrology",
-      "importance": "High",
-      "difficulty": "Hard"
+      "id": "engineering-hydrology-17",
+      "question": "Explain in detail time area method for estimating runoff hydrograph.\nP. 2",
+      "text": "Explain in detail time area method for estimating runoff hydrograph.\nP. 2",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "id": "eh-28",
-      "question": "Define return period ($T$), hydrologic risk ($R = 1 - (1 - 1/T)^n$), and reliability. Calculate the risk of a 100-year design flood being equaled or exceeded at least once during the 40-year design life of a bridge.",
-      "frequency": 3,
-      "marks": 6,
-      "examSessions": [
-        "2083 Baishakh",
-        "2082 Chaitra",
-        "2080 Chaitra"
-      ],
-      "chapter": "Flood Hydrology",
-      "importance": "High",
-      "difficulty": "Medium"
+      "id": "engineering-hydrology-18",
+      "question": "Explain the procedure of deriving Clark UH.",
+      "text": "Explain the procedure of deriving Clark UH.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "id": "eh-29",
-      "question": "Explain reservoir flood routing (Modified Puls method). Derive the storage indication curve equation: $\\frac{2S_2}{\\Delta t} + O_2 = (I_1 + I_2) + (\\frac{2S_1}{\\Delta t} - O_1)$.",
-      "frequency": 4,
-      "marks": 8,
-      "examSessions": [
-        "2081 Bhadra",
-        "2079 Baishakh",
-        "2077 Magh",
-        "2074 Bhadra"
-      ],
-      "chapter": "Flood Routing",
-      "importance": "High",
-      "difficulty": "Hard"
+      "id": "engineering-hydrology-19",
+      "question": "a) The observed annual peak flood for Lothar River from 1989 to 2009 are as follows: [10]<table><thead><tr><th>Year</th><th>1989</th><th>1990</th><th>1991</th><th>1992</th><th>1993</th><th>1994</th><th>1995</th><th>1996</th><th>1997</th><th>1998</th></tr></thead><tbody><tr><td>Peak Discharge($m^3/s$)</td><td>419</td><td>320</td><td>65</td><td>150</td><td>1170</td><td>392</td><td>86</td><td>74.7</td><td>219</td><td>142</td></tr><tr><td>Year</td><td>1999</td><td>2000</td><td>2001</td><td>2002</td><td>2003</td><td>2004</td><td>2005</td><td>2007</td><td>2008</td><td>2009</td></tr><tr><td>Peak Discharge($m^3/s$)</td><td>787</td><td>245</td><td>539</td><td>69.2</td><td>245</td><td>293</td><td>58.5</td><td>77.4</td><td>67.2</td><td>208</td></tr></tbody></table>Find the flood value with return period of 30 years using Gumbel's Method. [ Use Reduced Mean = 0.5236 and Reduced Standard Variation = 1.0628 for sample size of 20]. What is the return period of peck flood occurred on 1989?\n\nb) Describe Rational Method for estimation of flood, its assumptions and Limitations.",
+      "text": "a) The observed annual peak flood for Lothar River from 1989 to 2009 are as follows: [10]<table><thead><tr><th>Year</th><th>1989</th><th>1990</th><th>1991</th><th>1992</th><th>1993</th><th>1994</th><th>1995</th><th>1996</th><th>1997</th><th>1998</th></tr></thead><tbody><tr><td>Peak Discharge($m^3/s$)</td><td>419</td><td>320</td><td>65</td><td>150</td><td>1170</td><td>392</td><td>86</td><td>74.7</td><td>219</td><td>142</td></tr><tr><td>Year</td><td>1999</td><td>2000</td><td>2001</td><td>2002</td><td>2003</td><td>2004</td><td>2005</td><td>2007</td><td>2008</td><td>2009</td></tr><tr><td>Peak Discharge($m^3/s$)</td><td>787</td><td>245</td><td>539</td><td>69.2</td><td>245</td><td>293</td><td>58.5</td><td>77.4</td><td>67.2</td><td>208</td></tr></tbody></table>Find the flood value with return period of 30 years using Gumbel's Method. [ Use Reduced Mean = 0.5236 and Reduced Standard Variation = 1.0628 for sample size of 20]. What is the return period of peck flood occurred on 1989?\n\nb) Describe Rational Method for estimation of flood, its assumptions and Limitations.",
+      "chapter": "Archive Questions",
+      "marks": "5",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "id": "eh-30",
-      "question": "Explain the Muskingum method of channel flood routing: $Q_2 = C_0 I_2 + C_1 I_1 + C_2 Q_1$. Show that $C_0 + C_1 + C_2 = 1$ and explain the physical significance of routing constants $K$ and $x$.",
-      "frequency": 3,
-      "marks": 8,
-      "examSessions": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2076 Bhadra"
-      ],
-      "chapter": "Flood Routing",
-      "importance": "High",
-      "difficulty": "Hard"
+      "id": "engineering-hydrology-20",
+      "question": "a) Analysis of the annual flood peak of a river for 43 years yielded a mean of $330m^3/s$ and a standard deviation of $187 m^3/s$. A proposed water control project on this river is to have an expected life of 50 years. Policy decision of the project allows an acceptable reliability of 85%. Using Gumbel's method, recommend the flood discharge for this project. [9]\nA table for reduced mean ($\\bar{y}_n$) and reduced standard deviation ($S_n$) is given below:<table><thead><tr><th>N</th><th>40</th><th>41</th><th>42</th><th>43</th><th>44</th><th>45</th></tr></thead><tbody><tr><td>$\\bar{y}_n$</td><td>0.5436</td><td>0.5442</td><td>0.5448</td><td>0.5453</td><td>0.5458</td><td>0.5463</td></tr><tr><td>$S_n$</td><td>1.1413</td><td>1.1436</td><td>1.1458</td><td>1.1480</td><td>1.1499</td><td>1.1519</td></tr></tbody></table>b) Explain log pearson III distribution and its use in the prediction of flood.",
+      "text": "a) Analysis of the annual flood peak of a river for 43 years yielded a mean of $330m^3/s$ and a standard deviation of $187 m^3/s$. A proposed water control project on this river is to have an expected life of 50 years. Policy decision of the project allows an acceptable reliability of 85%. Using Gumbel's method, recommend the flood discharge for this project. [9]\nA table for reduced mean ($\\bar{y}_n$) and reduced standard deviation ($S_n$) is given below:<table><thead><tr><th>N</th><th>40</th><th>41</th><th>42</th><th>43</th><th>44</th><th>45</th></tr></thead><tbody><tr><td>$\\bar{y}_n$</td><td>0.5436</td><td>0.5442</td><td>0.5448</td><td>0.5453</td><td>0.5458</td><td>0.5463</td></tr><tr><td>$S_n$</td><td>1.1413</td><td>1.1436</td><td>1.1458</td><td>1.1480</td><td>1.1499</td><td>1.1519</td></tr></tbody></table>b) Explain log pearson III distribution and its use in the prediction of flood.",
+      "chapter": "Archive Questions",
+      "marks": "5",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-21",
+      "question": "a) A hydraulic structure is designed a discharge of 300 $\\text{m}^3/\\text{s}$. if available flood data is for N years (reduced mean = 0.5224, reduced standard deviation = 1.1124) and the mean and standard deviation for annual flood series are 140 $\\text{m}^3/\\text{s}$ and 50 $\\text{m}^3/\\text{s}$, respectively, calculate return period for the design flood using Gumbel's method. Also estimate 90% confidence limit, if $f (90\\%) = 1.645$. [5+3]\n\nb) Consider rainfall storm in Melamchi during a recent flood event spanned for a period of 100 minutes. Observed records showed that during the first 30 minutes, 50 minutes, 84 minutes and 100 minutes are 25 mm, 40 mm, 70 mm and 80 mm, respectively. If catchment area of the watershed is 100 $\\text{km}^2$, length of the longest flow path is 6 km, general slope of the catchment is 0.013 and runoff coefficient is 0.6, estimate peak flow using Rational method.",
+      "text": "a) A hydraulic structure is designed a discharge of 300 $\\text{m}^3/\\text{s}$. if available flood data is for N years (reduced mean = 0.5224, reduced standard deviation = 1.1124) and the mean and standard deviation for annual flood series are 140 $\\text{m}^3/\\text{s}$ and 50 $\\text{m}^3/\\text{s}$, respectively, calculate return period for the design flood using Gumbel's method. Also estimate 90% confidence limit, if $f (90\\%) = 1.645$. [5+3]\n\nb) Consider rainfall storm in Melamchi during a recent flood event spanned for a period of 100 minutes. Observed records showed that during the first 30 minutes, 50 minutes, 84 minutes and 100 minutes are 25 mm, 40 mm, 70 mm and 80 mm, respectively. If catchment area of the watershed is 100 $\\text{km}^2$, length of the longest flow path is 6 km, general slope of the catchment is 0.013 and runoff coefficient is 0.6, estimate peak flow using Rational method.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-22",
+      "question": "With the following data, compute discharge for a river.<table><thead><tr><th>Distance form left bank (m)</th><th>$0$</th><th>$1$</th><th>$4$</th><th>$7$</th><th>$10$</th><th>$13$</th><th>$16$</th><th>$19$</th><th>$20$</th></tr></thead><tbody><tr><td>Depth(m)</td><td>$0$</td><td>$1$</td><td>$1.25$</td><td>$1.75$</td><td>$2.15$</td><td>$1.80$</td><td>$1.20$</td><td>$1.05$</td><td>$0$</td></tr><tr><td>Revolution at $0.6d$</td><td>$0$</td><td>$30$</td><td>$40$</td><td>$30$</td><td>$40$</td><td>$35$</td><td>$25$</td><td>$20$</td><td>$0$</td></tr><tr><td>Duration of observations(sec)</td><td>$0$</td><td>$100$</td><td>$100$</td><td>$50$</td><td>$50$</td><td>$50$</td><td>$100$</td><td>$100$</td><td>$0$</td></tr></tbody></table>Calibrated value of constants for current meter: $a = 0.51$ and $b = 0.03$",
+      "text": "With the following data, compute discharge for a river.<table><thead><tr><th>Distance form left bank (m)</th><th>$0$</th><th>$1$</th><th>$4$</th><th>$7$</th><th>$10$</th><th>$13$</th><th>$16$</th><th>$19$</th><th>$20$</th></tr></thead><tbody><tr><td>Depth(m)</td><td>$0$</td><td>$1$</td><td>$1.25$</td><td>$1.75$</td><td>$2.15$</td><td>$1.80$</td><td>$1.20$</td><td>$1.05$</td><td>$0$</td></tr><tr><td>Revolution at $0.6d$</td><td>$0$</td><td>$30$</td><td>$40$</td><td>$30$</td><td>$40$</td><td>$35$</td><td>$25$</td><td>$20$</td><td>$0$</td></tr><tr><td>Duration of observations(sec)</td><td>$0$</td><td>$100$</td><td>$100$</td><td>$50$</td><td>$50$</td><td>$50$</td><td>$100$</td><td>$100$</td><td>$0$</td></tr></tbody></table>Calibrated value of constants for current meter: $a = 0.51$ and $b = 0.03$",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-23",
+      "question": "a) Analysis of the annual flood peak data of a certain river covering the period of 25 years has the mean of $8520$ and standard deviation of $3900 \\text{ m}^3/\\text{s}$. The proposed water control project near this site has an expected life of 45 years. The policy decision for project provides the reliability of 85%. [4+2]\n\n(i) Using Gumbel's method recommend peak discharge. Take $y_n = 0.5309$ and $S_n = 1.0915$\n(ii) Calculate the design discharge if factor of safety is 1.3 and also the corresponding safety margin.\n\nb) A rainfall storm for the duration of 20 mins, 40 mins and 80 mins are 40 mm, 70 mm, 60 mm and 100 mm respectively. If the slope of the catchment is 0.01, runoff coefficient is 0.7, maximum length of the travel is 1,100 m and catchment area is 3 $\\text{km}^2$, estimate the peak flow by rational method.",
+      "text": "a) Analysis of the annual flood peak data of a certain river covering the period of 25 years has the mean of $8520$ and standard deviation of $3900 \\text{ m}^3/\\text{s}$. The proposed water control project near this site has an expected life of 45 years. The policy decision for project provides the reliability of 85%. [4+2]\n\n(i) Using Gumbel's method recommend peak discharge. Take $y_n = 0.5309$ and $S_n = 1.0915$\n(ii) Calculate the design discharge if factor of safety is 1.3 and also the corresponding safety margin.\n\nb) A rainfall storm for the duration of 20 mins, 40 mins and 80 mins are 40 mm, 70 mm, 60 mm and 100 mm respectively. If the slope of the catchment is 0.01, runoff coefficient is 0.7, maximum length of the travel is 1,100 m and catchment area is 3 $\\text{km}^2$, estimate the peak flow by rational method.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-24",
+      "question": "a) A catchment area has the time of concentration of 20 minutes and an area of 20 ha. Estimate the peak discharge corresponding to 25 years return period. Take runoff coefficient of 0.25. The intensity duration frequency curve for the storm can be expressed in cm/h by: [5]\n$i = \\frac{KT^x}{(D+a)^n}$. Take $K = 6.93$, $x = 0.189$, $a = 0.50$ and $n = 0.878$.\n\nb) A hydraulic structure has been designed for a discharge of $350 \\text{ m}^3/\\text{s}$. From the 25 years annual flood series data, the mean and standard deviation are 140 and $65 \\text{ m}^3/\\text{s}$ respectively. Calculate the return period for the design flood by using Gumbel's method. Take reduced mean variate and reduced standard deviation for this series as 0.5299 and 1.0876 respectively. [6]\n\nc) Discuss application of probability plots with figure.",
+      "text": "a) A catchment area has the time of concentration of 20 minutes and an area of 20 ha. Estimate the peak discharge corresponding to 25 years return period. Take runoff coefficient of 0.25. The intensity duration frequency curve for the storm can be expressed in cm/h by: [5]\n$i = \\frac{KT^x}{(D+a)^n}$. Take $K = 6.93$, $x = 0.189$, $a = 0.50$ and $n = 0.878$.\n\nb) A hydraulic structure has been designed for a discharge of $350 \\text{ m}^3/\\text{s}$. From the 25 years annual flood series data, the mean and standard deviation are 140 and $65 \\text{ m}^3/\\text{s}$ respectively. Calculate the return period for the design flood by using Gumbel's method. Take reduced mean variate and reduced standard deviation for this series as 0.5299 and 1.0876 respectively. [6]\n\nc) Discuss application of probability plots with figure.",
+      "chapter": "Archive Questions",
+      "marks": "3",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-25",
+      "question": "a) Using given data for annual discharge in a section of a river from year 2000 to 2009. [6+4]\n\n(i) Calculate sample mean, sample standard deviation and sample coefficient of skewness.\n(ii) What would be the probability of the flood of magnitude $250 \\text{ m}^3/\\text{s}$ occuring in the next year?\n\nReduced mean $\\bar{y}_n = 0.4952$, Reduced Standard Deviation $(\\sigma_n) = 0.9497$.\n\nb) Define the terms exceedance probability, recurrence interval and frequency factor.",
+      "text": "a) Using given data for annual discharge in a section of a river from year 2000 to 2009. [6+4]\n\n(i) Calculate sample mean, sample standard deviation and sample coefficient of skewness.\n(ii) What would be the probability of the flood of magnitude $250 \\text{ m}^3/\\text{s}$ occuring in the next year?\n\nReduced mean $\\bar{y}_n = 0.4952$, Reduced Standard Deviation $(\\sigma_n) = 0.9497$.\n\nb) Define the terms exceedance probability, recurrence interval and frequency factor.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-26",
+      "question": "A river, whose annual flood peak can be represented by Gumbel distribution, has 100-years and 500-year return period flood of magnitude $9900 \\text{ m}^3/\\text{s}$ and $12100 \\text{ m}^3/\\text{s}$ respectively. The sample size is $n = 30$. $\\left[ \\bar{y}_n = 0.536, s_n = 1.1124 \\right]$\n\ni) What is the magnitude of 200 year and 1000 year flood?\nii) What are 95% and 80% confidence limits for 200 year and 1000 year flood if $f(95\\%) = 1.96$ and $f(80\\%) = 1.28$\niii) A hydraulic structure of 25 year life was designed for $12300 \\text{ m}^3/\\text{s}$ peak flow. What is the hydrologic risk of the structure?\niv) What peak flow should be taken into consideration if you want the structure to be 99% reliable for a structure life of 25 years.",
+      "text": "A river, whose annual flood peak can be represented by Gumbel distribution, has 100-years and 500-year return period flood of magnitude $9900 \\text{ m}^3/\\text{s}$ and $12100 \\text{ m}^3/\\text{s}$ respectively. The sample size is $n = 30$. $\\left[ \\bar{y}_n = 0.536, s_n = 1.1124 \\right]$\n\ni) What is the magnitude of 200 year and 1000 year flood?\nii) What are 95% and 80% confidence limits for 200 year and 1000 year flood if $f(95\\%) = 1.96$ and $f(80\\%) = 1.28$\niii) A hydraulic structure of 25 year life was designed for $12300 \\text{ m}^3/\\text{s}$ peak flow. What is the hydrologic risk of the structure?\niv) What peak flow should be taken into consideration if you want the structure to be 99% reliable for a structure life of 25 years.",
+      "chapter": "Archive Questions",
+      "marks": "4",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-27",
+      "question": "a) Why do we need to separate base flow in hydrograph analysis? Describe the methods to separate base flow. [4]\n\nb) A 4 hour unit hydrograph of a sub-catchment of the Gandaki river basin near Pokhara is given below:<table><thead><tr><th>Time (hr)</th><th>0</th><th>4</th><th>8</th><th>12</th><th>16</th><th>20</th><th>24</th><th>28</th><th>32</th></tr></thead><tbody><tr><td>4-hr UH ($\\text{m}^3/\\text{s per cm}$)</td><td>0</td><td>22</td><td>58</td><td>92</td><td>80</td><td>60</td><td>38</td><td>18</td><td>0</td></tr></tbody></table>(i) Using the S-curve method, derive the 6-hour Unit Hydrograph for the catchment.\n(ii) Determine peak discharge of the 6-hour UH as well as time to peak.",
+      "text": "a) Why do we need to separate base flow in hydrograph analysis? Describe the methods to separate base flow. [4]\n\nb) A 4 hour unit hydrograph of a sub-catchment of the Gandaki river basin near Pokhara is given below:<table><thead><tr><th>Time (hr)</th><th>0</th><th>4</th><th>8</th><th>12</th><th>16</th><th>20</th><th>24</th><th>28</th><th>32</th></tr></thead><tbody><tr><td>4-hr UH ($\\text{m}^3/\\text{s per cm}$)</td><td>0</td><td>22</td><td>58</td><td>92</td><td>80</td><td>60</td><td>38</td><td>18</td><td>0</td></tr></tbody></table>(i) Using the S-curve method, derive the 6-hour Unit Hydrograph for the catchment.\n(ii) Determine peak discharge of the 6-hour UH as well as time to peak.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-28",
+      "question": "a) What return period will you adopt in the design of a bridge on a river if you are allowed to accept only 5% risk of flooding in the 25 years of expected life of the bridge? [4]\n\nb) 30 years flood data of Kamalamai River has been used for frequency analysis and after fitting the Gumbel distribution the 100-year and 50-year floods are predicted equal to 1200 $m^3/s$ and 1060 $m^3/s$ respectively. Calculate the magnitude of flood for 500 years return period if reduced mean and reduced standard deviation in Gumbel's distribution for available data series are 0.5362 and 1.1124 respectively. Also Calculate 80% confidence limitsof 500-year flood if f(c) for 80% is 1.28.",
+      "text": "a) What return period will you adopt in the design of a bridge on a river if you are allowed to accept only 5% risk of flooding in the 25 years of expected life of the bridge? [4]\n\nb) 30 years flood data of Kamalamai River has been used for frequency analysis and after fitting the Gumbel distribution the 100-year and 50-year floods are predicted equal to 1200 $m^3/s$ and 1060 $m^3/s$ respectively. Calculate the magnitude of flood for 500 years return period if reduced mean and reduced standard deviation in Gumbel's distribution for available data series are 0.5362 and 1.1124 respectively. Also Calculate 80% confidence limitsof 500-year flood if f(c) for 80% is 1.28.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-29",
+      "question": "a) Explain Rational method of flood predication . Also mention its limitations & uses. [3+3]\n\nb) Analysis of the annual flood peak of river of 21 years yielded a mean of $8520\\text{m}^3/\\text{s}$ and\nstandard deviation of $3900\\text{m}^3/\\text{s}$. A proposed water control project on this river is to\nhave an expected life of 40 years. The acceptable reliability by the design policy is\n85%.\n\ni) Using Gumbel's Method recommend the flood discharge for this project. Take\n$y_n=0.5252$ and $S_n=1.0696$ for 21 years.\nii) What would the 80% confidence limit of the above flood if $f(c)=1.282$ at 80%\nconfidence level.",
+      "text": "a) Explain Rational method of flood predication . Also mention its limitations & uses. [3+3]\n\nb) Analysis of the annual flood peak of river of 21 years yielded a mean of $8520\\text{m}^3/\\text{s}$ and\nstandard deviation of $3900\\text{m}^3/\\text{s}$. A proposed water control project on this river is to\nhave an expected life of 40 years. The acceptable reliability by the design policy is\n85%.\n\ni) Using Gumbel's Method recommend the flood discharge for this project. Take\n$y_n=0.5252$ and $S_n=1.0696$ for 21 years.\nii) What would the 80% confidence limit of the above flood if $f(c)=1.282$ at 80%\nconfidence level.",
+      "chapter": "Archive Questions",
+      "marks": "4",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-30",
+      "question": "a) What are the different methods of flood prediction? [4]\n\nb) Using 30 years data and Gumbel's method, the flood magnitude for return period of 100 and 50 years for a river are found to be $1200$ and $1060 \\text{ m}^3/\\text{s}$ respectively.\n\n(i) Determine the mean and standard deviation of the data used. Take values of reduced mean and reduced standard deviation in Gumbel's extreme value distribution for $n = 30$ as $0.5362$ and $1.1124$.\n(ii) Estimate the magnitude of the flood with a return period of $500 \\text{ years}$.\n(iii) What are the $95\\%$ confidence limits for this estimate if $f(95\\%) = 1.96$.",
+      "text": "a) What are the different methods of flood prediction? [4]\n\nb) Using 30 years data and Gumbel's method, the flood magnitude for return period of 100 and 50 years for a river are found to be $1200$ and $1060 \\text{ m}^3/\\text{s}$ respectively.\n\n(i) Determine the mean and standard deviation of the data used. Take values of reduced mean and reduced standard deviation in Gumbel's extreme value distribution for $n = 30$ as $0.5362$ and $1.1124$.\n(ii) Estimate the magnitude of the flood with a return period of $500 \\text{ years}$.\n(iii) What are the $95\\%$ confidence limits for this estimate if $f(95\\%) = 1.96$.",
+      "chapter": "Archive Questions",
+      "marks": "4",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-31",
+      "question": "a) The annual peak discharge of a river follows the Gumbel's extreme value distribution with a mean of $10000 \\text{ m}^3/\\text{s}$ and a standard deviation of $3000 \\text{ m}^3/\\text{s}$. What is the probability that the annual peak discharge is more than $15000 \\text{ m}^3/\\text{s}$? What is the magnitude of the peak discharge with an exceedance probability of $0.1$? [Hint: $\\alpha = \\frac{1.28255}{\\sigma}; \\beta = \\mu - 0.48\\sigma$] [8]\n\nb) Differentiate between continuous and discrete random variables. Give examples each in hydrology. Give three formulae which are used to determine the return period.",
+      "text": "a) The annual peak discharge of a river follows the Gumbel's extreme value distribution with a mean of $10000 \\text{ m}^3/\\text{s}$ and a standard deviation of $3000 \\text{ m}^3/\\text{s}$. What is the probability that the annual peak discharge is more than $15000 \\text{ m}^3/\\text{s}$? What is the magnitude of the peak discharge with an exceedance probability of $0.1$? [Hint: $\\alpha = \\frac{1.28255}{\\sigma}; \\beta = \\mu - 0.48\\sigma$] [8]\n\nb) Differentiate between continuous and discrete random variables. Give examples each in hydrology. Give three formulae which are used to determine the return period.",
+      "chapter": "Archive Questions",
+      "marks": "1",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-32",
+      "question": "a) In the time series data of annual peak flood for 75 years, the mean and standard deviations are found to be equal to $5561\\text{ m}^3/\\text{s}$ and $1718\\text{ m}^3/\\text{s}$ respectively. Using $y_n = 0.556$ and $S_n = 1.189$ (for 75 yrs). [4+4]\n\ni) Determine the peak flood for 0.4% probability of exceedence by Gumbel's method.\nii) Compute 90% confidence limits for above floods, using $f(c) = 1.6$ for 90% confidence level respectively.\n\nb) Explain the rational method of determining the floods. Also write down its limitations.",
+      "text": "a) In the time series data of annual peak flood for 75 years, the mean and standard deviations are found to be equal to $5561\\text{ m}^3/\\text{s}$ and $1718\\text{ m}^3/\\text{s}$ respectively. Using $y_n = 0.556$ and $S_n = 1.189$ (for 75 yrs). [4+4]\n\ni) Determine the peak flood for 0.4% probability of exceedence by Gumbel's method.\nii) Compute 90% confidence limits for above floods, using $f(c) = 1.6$ for 90% confidence level respectively.\n\nb) Explain the rational method of determining the floods. Also write down its limitations.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-33",
+      "question": "An analysis of an annual flood., series convering the period 1890 to 1966 on a certain river shows that the 80 year flood has a magnitude of 620000 units and 1.4 year flood has a magnitude of 215000 units. Assume the annual floods are Gumbel distributed.\n\ni) What is the probability of having a flood as great as or greater than 440000 units?\nii) What is the magnitude of flood having a recurrence interval of 40 years?\niii) What is the probability of having 575000 units flood or a greater flood in the coming 25 years time?",
+      "text": "An analysis of an annual flood., series convering the period 1890 to 1966 on a certain river shows that the 80 year flood has a magnitude of 620000 units and 1.4 year flood has a magnitude of 215000 units. Assume the annual floods are Gumbel distributed.\n\ni) What is the probability of having a flood as great as or greater than 440000 units?\nii) What is the magnitude of flood having a recurrence interval of 40 years?\niii) What is the probability of having 575000 units flood or a greater flood in the coming 25 years time?",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-34",
+      "question": "a) If the annual flood series data for a catchment are available for N consecutive years, explain a procedure to determine a flood discharge with a return period of T, (where T>N), by using Log Pearson type III distribution method. [8]\n\nb) Calculate the flood discharge using Empirical method from a catchment of area 100sqkm. The catchment has longest river of 60km. The elevation difference of the river is 20m. Rainfall runoff coefficient is 0.6 and maximum daily rainfall is 200mm.",
+      "text": "a) If the annual flood series data for a catchment are available for N consecutive years, explain a procedure to determine a flood discharge with a return period of T, (where T>N), by using Log Pearson type III distribution method. [8]\n\nb) Calculate the flood discharge using Empirical method from a catchment of area 100sqkm. The catchment has longest river of 60km. The elevation difference of the river is 20m. Rainfall runoff coefficient is 0.6 and maximum daily rainfall is 200mm.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-35",
+      "question": "a) Prove that for a large sample as per Gumbel's distribution, the mean annual flood will have a return period of 2.33 years. [4]\n\nb) From the analysis of available data on annual flood peaks of a small stream for a period of 35 years, 50 years and 100 years flood have been estimated to be $660 \\text{ m}^3/s$ and $740 \\text{ m}^3/s$. Using Gumbel's method, estimate the 200 years flood for the stream. (Take $Y_n = 0.54034$ and $S_n = 1.12843$ for n= 35 years)",
+      "text": "a) Prove that for a large sample as per Gumbel's distribution, the mean annual flood will have a return period of 2.33 years. [4]\n\nb) From the analysis of available data on annual flood peaks of a small stream for a period of 35 years, 50 years and 100 years flood have been estimated to be $660 \\text{ m}^3/s$ and $740 \\text{ m}^3/s$. Using Gumbel's method, estimate the 200 years flood for the stream. (Take $Y_n = 0.54034$ and $S_n = 1.12843$ for n= 35 years)",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-36",
+      "question": "a) A 30cm well fully penetrates an unconfined aquifer of saturated depth 25m. When a discharge of 2100 lpm was being pumped for a long time, observation wells at radial distances of 30 and 90m indicated drawdowns of 5 and 4m respectively. Estimate the co-efficient of permeability and transmissibility of the aquifer. What is the drawdown at the pumping well? [10]\n\nb) Describe the four important hydro-geomorphological characteristics of a river.",
+      "text": "a) A 30cm well fully penetrates an unconfined aquifer of saturated depth 25m. When a discharge of 2100 lpm was being pumped for a long time, observation wells at radial distances of 30 and 90m indicated drawdowns of 5 and 4m respectively. Estimate the co-efficient of permeability and transmissibility of the aquifer. What is the drawdown at the pumping well? [10]\n\nb) Describe the four important hydro-geomorphological characteristics of a river.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-37",
+      "question": "a) Explain hydrological cycle. [4]\n\nb) Define floods. Enumerate the causes, effects and mitigation of floods. [1+5]\n\nc) In a recuperation test, the static water level in an open well was depressed using pumps by 3m and it recuperated 1.5m in 1 hour. If the diameter of the well is 3.0m and the safe working depression head is 2.4m, find out the average specific yield of the soil and specific capacity of the soil.",
+      "text": "a) Explain hydrological cycle. [4]\n\nb) Define floods. Enumerate the causes, effects and mitigation of floods. [1+5]\n\nc) In a recuperation test, the static water level in an open well was depressed using pumps by 3m and it recuperated 1.5m in 1 hour. If the diameter of the well is 3.0m and the safe working depression head is 2.4m, find out the average specific yield of the soil and specific capacity of the soil.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-38",
+      "question": "The project life of headworks is 50 years. The flood discharges at risk $63.58303\\%$ is 4200 cumes. The average flood is 3500 cumec, which is derived from long term historical data using Gumbel distribution. Calculate the discharge from 500 year return period and risk $39.49939\\%$. Prepare a Gumbel graph paper using normal arithmetic graph paper. Plot these three discharges on Gumbel paper.",
+      "text": "The project life of headworks is 50 years. The flood discharges at risk $63.58303\\%$ is 4200 cumes. The average flood is 3500 cumec, which is derived from long term historical data using Gumbel distribution. Calculate the discharge from 500 year return period and risk $39.49939\\%$. Prepare a Gumbel graph paper using normal arithmetic graph paper. Plot these three discharges on Gumbel paper.",
+      "chapter": "Archive Questions",
+      "marks": "14",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-39",
+      "question": "The observed annual peak flood of a river in $\\text{m}^3/\\text{s}$ for a period of 20 years from 1981 to 2000 are given below:\n190, 155, 298, 136, 137, 131, 140, 124, 185, 104, 91, 154, 109, 269, 164, 270, 142, 72, 130, 111.\nPrepare a graph of flood peak versus the return period and hence estimate the annual peak flood with a return period of 30 years.",
+      "text": "The observed annual peak flood of a river in $\\text{m}^3/\\text{s}$ for a period of 20 years from 1981 to 2000 are given below:\n190, 155, 298, 136, 137, 131, 140, 124, 185, 104, 91, 154, 109, 269, 164, 270, 142, 72, 130, 111.\nPrepare a graph of flood peak versus the return period and hence estimate the annual peak flood with a return period of 30 years.",
+      "chapter": "Archive Questions",
+      "marks": "14",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "engineering-hydrology-40",
+      "question": "a) Explain Gumble's Distribution function. Derive frequency factor (k) using Gumble's distribution. [7]\n\nb) The flood discharge for 25 and 250 years from fitted Gumbel distribution are 90 and 550 $m^3/sec$ respectively. Estimate the flood magnitudes for 50, 500 and 1000 years by Gumbel analytically.",
+      "text": "a) Explain Gumble's Distribution function. Derive frequency factor (k) using Gumble's distribution. [7]\n\nb) The flood discharge for 25 and 250 years from fitted Gumbel distribution are 90 and 550 $m^3/sec$ respectively. Estimate the flood magnitudes for 50, 500 and 1000 years by Gumbel analytically.",
+      "chapter": "Archive Questions",
+      "marks": "7",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     }
   ],
-  "chapters": [
-    "Introduction",
-    "Precipitation",
-    "Abstractions from Precipitation (Hydrological Losses)",
-    "Surface Runoff",
-    "Streamflow Measurement",
-    "Hydrograph Analysis",
-    "Flood Hydrology",
-    "Flood Routing"
+  "yearWisePapers": [
+    {
+      "session": "2083 Baishakh",
+      "year": "2083",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 18,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "(a) The infiltration rates observed during a test on a double ring infiltrometer are as given below. Determine the constant $f_0, f_c$ and $K$ of the Horton's equation which fits the above data. [10]<table><thead><tr><th>T (hrs)</th><th>0.04</th><th>0.13</th><th>0.33</th><th>0.75</th><th>1.50</th><th>2.50</th><th>3.50</th><th>4.50</th><th>5.50</th></tr></thead><tbody><tr><td>f (cm/hr)</td><td>0.78</td><td>0.75</td><td>0.66</td><td>0.54</td><td>0.37</td><td>0.26</td><td>0.22</td><td>0.22</td><td>0.21</td></tr></tbody></table>b) Briefly describe the methodology of estimating evapotranspiration using Penman's equation and Lysimeter method.",
+          "marks": "3",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "(a) Differentiate between baseflow and direct runoff. What are limitations of unit hydrograph? [3+2]\n(b) The ordinates of a 3 hr unit hydrograph of a catchment is given below [10]<table><thead><tr><th>T (hr)</th><th>0</th><th>3</th><th>6</th><th>9</th><th>12</th><th>15</th><th>18</th><th>21</th><th>24</th><th>27</th><th>30</th><th>33</th><th>36</th><th>39</th><th>42</th></tr></thead><tbody><tr><td>3 hr UH ordinates ($\\text{m}^3/\\text{s}$)</td><td>0</td><td>25</td><td>50</td><td>85</td><td>125</td><td>160</td><td>185</td><td>160</td><td>110</td><td>60</td><td>36</td><td>25</td><td>16</td><td>8</td><td>0</td></tr></tbody></table>Derive the flood hydrograph in the catchment due to the storm given below.<table><thead><tr><th>Time from start of storm (hr)</th><th>0</th><th>3</th><th>6</th><th>9</th></tr></thead><tbody><tr><td>Accumulated rainfall (cm)</td><td>0</td><td>4</td><td>12</td><td>17</td></tr></tbody></table>The storm loss rate $\\Phi -index$ for catchment is estimated as $0.25 \\text{ cm/hr}$. The baseflow can be $15 \\text{ m}^3\\text{/s}$ at the beginning and increases by $2.0 \\text{ m}^3\\text{/s}$ for every 12 hours till the end of the direct-runoff hydrograph.",
+          "marks": "11",
+          "chapter": "Hydrograph Analysis",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "(a) For the river estimate the peak flood for 500 years return period if the 100 years and 50 years return period flood was $1020 \\text{ m}^3\\text{/s}$ and $850 \\text{ m}^3\\text{/s}$ respectively using Gumble's method having large sample data. [6]\n(b) A catchment of $85 \\text{ ha}$ has slope of $0.006$ and the maximum length of water travel $950\\text{m} , if$ the maximum depth of rainfall with 25 year return period has following data. Calculate the peak flow for 25 years return period using rational method taking runoff coefficient of $0.3$. [6]<table><thead><tr><th>Duration (minute)</th><th>5</th><th>10</th><th>20</th><th>30</th></tr></thead><tbody><tr><td>Depth of rainfall (mm)</td><td>17</td><td>26</td><td>40</td><td>50</td></tr></tbody></table>c) An analysis of $a^n$ annual flood series covering the period 1920 to 2020 (100 years) on a certain river shows that the 100-year flood has a magnitude of $640,000 \\text{ m}^3\\text{/s}$ and 2 years has magnitude of $225,000 \\text{ m}^3\\text{/s}$. Assume the annual flood fits with the Gumbel distribution. What is the probability of having $575,000 \\text{ m}^3\\text{/s}$ flood or a greater flood in coming 25 years?",
+          "marks": "4",
+          "chapter": "Flood Hydrology",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Chaitra",
+      "year": "2082",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 53,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "How hydrological boundary at $a^n$ outlet point is delineated? What is drainage density?",
+          "marks": "3",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Explain the methods of estimating the missing rainfall data at the rain gauge stations. [4]\n(b) What criteria should be adopted for the optimum location of a rain gauge? A drainage basin is monitored with eight rainfall gauging stations, and the annual rainfall observed is as follows: 120, 135.5, 150.4, 165, 180.6, 195.4, 160, 145.7. If the allowable error in estimating the mean annual rainfall is 5%, determine the number of additional rainfall gauges if required.",
+          "marks": "4",
+          "chapter": "Precipitation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) What is $\\Phi -index$? How is it different from W-index? [2]\n(b) Estimate the potential evapotranspiration (PET) for $a^n$ agricultural field near Birgunj during April using Penman’s method, given:\nMean temperature = $28^\\circ\\text{C}$; Mean relative humidity = $70\\%$\nWind speed at 2 m height = $2.5\\text{ m/s}$;\nNet radiation = $10.5\\text{ mm/day}$ (equivalent evaporation)\nSlope of saturation vapor pressure curve ($\\Delta$) = $1.8\\text{ mmHg/}^\\circ\\text{C}$\nPsychrometric constant ($\\gamma$) = $0.66\\text{ mmHg/}^\\circ\\text{C}$;\nSaturation vapor pressure ($e_s$) = $28.4\\text{ mmHg}$\nActual vapor pressure ($e_a$) = $17.0\\text{ mmHg}$\nMean monthly solar radiation = $15\\text{ mm of water}$",
+          "marks": "6",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What is meant by rainfall-runoff modelling? Explain its basic components with a simple diagram.",
+          "marks": "5",
+          "chapter": "Surface Runoff",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "(a) What is rating curve? Explain the parameters of rating equation. [3]\n(b) During stream gauging of Kankai river at Domukha, the following observations were taken using a current meter.<table><thead><tr><th>Distance from Left Bank (m)</th><th>Depth (m)</th><th>Number of Revolutions at 0.2d</th><th>Number of Revolutions at 0.8d</th></tr></thead><tbody><tr><td>0.0</td><td>-</td><td>-</td><td>-</td></tr><tr><td>2.0</td><td>1.4</td><td>292</td><td>198</td></tr><tr><td>4.5</td><td>2.1</td><td>359</td><td>255</td></tr><tr><td>7.0</td><td>2.5</td><td>389</td><td>278</td></tr><tr><td>9.5</td><td>1.9</td><td>327</td><td>229</td></tr><tr><td>12.0</td><td>1.2</td><td>241</td><td>170</td></tr><tr><td>14.0</td><td>-</td><td>-</td><td>-</td></tr></tbody></table>Observation time at each vertical = 120 s. Estimate the total discharge of the river using the velocity–area method. The rating equation of the current meter is given as $v = (0.28N + 0.04) \\text{ m/s}$.",
+          "marks": "5",
+          "chapter": "Streamflow Measurement",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) Why do we need to separate base flow in hydrograph analysis? Describe the methods to separate base flow. [4]\n\nb) A 4 hour unit hydrograph of a sub-catchment of the Gandaki river basin near Pokhara is given below:<table><thead><tr><th>Time (hr)</th><th>0</th><th>4</th><th>8</th><th>12</th><th>16</th><th>20</th><th>24</th><th>28</th><th>32</th></tr></thead><tbody><tr><td>4-hr UH ($\\text{m}^3/\\text{s per cm}$)</td><td>0</td><td>22</td><td>58</td><td>92</td><td>80</td><td>60</td><td>38</td><td>18</td><td>0</td></tr></tbody></table>(i) Using the S-curve method, derive the 6-hour Unit Hydrograph for the catchment.\n(ii) Determine peak discharge of the 6-hour UH as well as time to peak.",
+          "marks": "8",
+          "chapter": "Hydrograph Analysis",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) Define flash flood. Discuss the major causes of flash floods. Explain how climate change influences the occurrence and intensity of flash floods. [4]\n\nb) Flood frequency computations for the river Koshi at Chatara station give the following results.<table><thead><tr><th>Return period T (years)</th><th>Peak flood ($\\text{m}^3/\\text{sec}$)</th></tr></thead><tbody><tr><td>50</td><td>35820</td></tr><tr><td>100</td><td>47380</td></tr></tbody></table>Estimate the flood magnitude with a return period of 500 years.",
+          "marks": "6",
+          "chapter": "Flood Hydrology",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Estimate the potential evapotranspiration (PET) for $a^n$ agricultural field near Birgunj during April using Penman’s method, given:\nMean temperature = $28^\\circ\\text{C}$; Mean relative humidity = $70\\%$\nWind speed at 2 m height = $2.5\\text{ m/s}$;\nNet radiation = $10.5\\text{ mm/day}$ (equivalent evaporation)\nSlope of saturation vapor pressure curve ($\\Delta$) = $1.8\\text{ mmHg/}^\\circ\\text{C}$\nPsychrometric constant ($\\gamma$) = $0.66\\text{ mmHg/}^\\circ\\text{C}$;\nSaturation vapor pressure ($e_s$) = $28.4\\text{ mmHg}$\nActual vapor pressure ($e_a$) = $17.0\\text{ mmHg}$\nMean monthly solar radiation = $15\\text{ mm of water}$",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "How you differentiate $\\phi$ index from $\\omega -index$.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Bhadra",
+      "year": "2082",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 29,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "(a) An isolated storm in a catchment produced a runoff of $3.5\\text{cm}$. The mass curve of the average rainfall depth over the catchment was as below. Calculate the $\\phi -index$ for the storm. [6]<table><thead><tr><th>Time from beginning of storm (hr)</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th></tr></thead><tbody><tr><td>Accumulated average rainfall (cm)</td><td>0</td><td>0.5</td><td>1.65</td><td>3.55</td><td>5.65</td><td>6.8</td><td>7.75</td></tr></tbody></table>b) Derive $a^n$ expression for estimation of evaporation in a lake by the energy balance method. [5]\n(c) Justify the statement “Hydrological losses are not actual losses”. Briefly describe factors influencing evaporation.",
+          "marks": "2",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) During a flood flow, the depth of water in a $10\\text{ m}$ wide rectangular channel was found to be $3.0\\text{ m}$ and $2.7\\text{ m}$ at two sections $200\\text{ m}$ apart. The drop in the water surface elevation was found to be $0.12\\text{ m}$. Assuming Manning’s coefficient to be $0.025 , estimate$ the flood discharge through the channel. Assume no eddy loss. For the application of the hydraulic formulae for stream flow computation, what are the parameters that need to be measured in the channel? [3+8]\n(b) List out the steps how to develop rating curve of hydrological station.",
+          "marks": "4",
+          "chapter": "Streamflow Measurement",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Explain Rational method of flood predication . Also mention its limitations & uses. [3+3]\n\nb) Analysis of the annual flood peak of river of 21 years yielded a mean of $8520\\text{m}^3/\\text{s}$ and\nstandard deviation of $3900\\text{m}^3/\\text{s}$. A proposed water control project on this river is to\nhave an expected life of 40 years. The acceptable reliability by the design policy is\n85%.\n\ni) Using Gumbel's Method recommend the flood discharge for this project. Take\n$y_n=0.5252$ and $S_n=1.0696$ for 21 years.\nii) What would the 80% confidence limit of the above flood if $f(c)=1.282$ at 80%\nconfidence level.",
+          "marks": "1",
+          "chapter": "Flood Hydrology",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Explain briefly humankind’s interference in various parts of hydrological cycle. [3]\n(b) What are the causes of inconsistencies in the rainfall data at a station? How do you find whether the rainfall data is consistent or inconsistent using double mass curve analysis? [3+3]\n(c) Explain the procedure of deriving Clark UH.",
+          "marks": "6",
+          "chapter": "Flood Routing",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "How do you find whether the rainfall data is consistent or inconsistent using double mass curve analysis?",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain the procedure of deriving Clark UH.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Bhadra",
+      "year": "2081",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 23,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define hydrological cycle. Draw a net sketch of hydrological cycle illustrating its components.",
+          "marks": "4",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Differentiate AET and PET. Explain the method of measurement of evapotranspiration in field with sketch. [2+2]\n(b) Describe types of infiltrometers with sketch. How the data of infiltrometer are used to derive the Horton's constant? Explain with assumed data.",
+          "marks": "3",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) What return period will you adopt in the design of a bridge on a river if you are allowed to accept only 5% risk of flooding in the 25 years of expected life of the bridge? [4]\n\nb) 30 years flood data of Kamalamai River has been used for frequency analysis and after fitting the Gumbel distribution the 100-year and 50-year floods are predicted equal to 1200 $m^3/s$ and 1060 $m^3/s$ respectively. Calculate the magnitude of flood for 500 years return period if reduced mean and reduced standard deviation in Gumbel's distribution for available data series are 0.5362 and 1.1124 respectively. Also Calculate 80% confidence limitsof 500-year flood if f(c) for 80% is 1.28.",
+          "marks": "8",
+          "chapter": "Flood Hydrology",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Define the following terms: hydrological cycle, runoff, water balance and catchment.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Baishakh",
+      "year": "2081",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 35,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "(a) What are the different method for the presentation of rainfall data? Explain any two methods. [4]\n(b) Following are the data of a storm as recorded in a tipping bucket located at Lumle (Lat: $28.3^\\circ , Long$: $83.8^\\circ$) for 1.5 hours:<table><thead><tr><th>Time from beginning of storm (minute)</th><th>10</th><th>20</th><th>30</th><th>40</th><th>50</th><th>60</th><th>70</th><th>80</th><th>90</th></tr></thead><tbody><tr><td>Cumulative rainfall(mm)</td><td>1.6</td><td>6.6</td><td>13.8</td><td>20.2</td><td>24.2</td><td>38.4</td><td>46.8</td><td>49.4</td><td>50.8</td></tr></tbody></table>(i) Plot the hyetograph of the storm.\n(ii) Plot the maximum intensity duration curve of the storm.",
+          "marks": "4",
+          "chapter": "Precipitation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Describe Penman’s methods to estimate daily PET. [5]\n(b) In a 120 minute storm the rates of rainfall observed in successive 20 minute interval are 5,8,15,12,9 and 2 mm/hr. Assuming the $\\phi -index$ value as 2.5 mm/hr and $a^n$ initial loss of 0.5mm, determine the total rainfall, net runoff and w-index of the storm.",
+          "marks": "1",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "The ordinate of 4-Hr UH are given:<table><thead><tr><th>Time (hr)</th><th>0</th><th>2</th><th>4</th><th>6</th><th>8</th><th>10</th><th>12</th><th>14</th><th>16</th><th>18</th><th>20</th><th>22</th><th>24</th></tr></thead><tbody><tr><td>Ordinate of UH ($m^3/s$)</td><td>0</td><td>30</td><td>100</td><td>150</td><td>200</td><td>160</td><td>120</td><td>80</td><td>40</td><td>30</td><td>20</td><td>6</td><td>0</td></tr></tbody></table>A catchment has rainfall of 3.2, 3.0 and 5.0 cm in three consecutive two hours period.\nAssuming $a^n$ average $\\phi$ index of $1.25 \\text{ cm/hr.}$ and base flow of river is $40m^3/s , determine$\nthe flood hydrograph of the catchment.",
+          "marks": "14",
+          "chapter": "Hydrograph Analysis",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Prove that for a large sample as per Gumbel's distribution, the mean annual flood will have a return period of 2.33 years. [4]\n\nb) From the analysis of available data on annual flood peaks of a small stream for a period of 35 years, 50 years and 100 years flood have been estimated to be $660 \\text{ m}^3/s$ and $740 \\text{ m}^3/s$. Using Gumbel's method, estimate the 200 years flood for the stream. (Take $Y_n = 0.54034$ and $S_n = 1.12843$ for n= 35 years)",
+          "marks": "8",
+          "chapter": "Flood Hydrology",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "A drainage basin has the following characteristics\nArea = $180 \\text{ km}^2$\nStorage constant = 10hrs\nTime of concentration = 8 hours\nThe inter isochrones area distribution are as follows<table><thead><tr><th>Travel time (hr)</th><th>0-1</th><th>1-2</th><th>2-3</th><th>3-4</th><th>4-5</th><th>5-6</th><th>6-7</th><th>7-8</th></tr></thead><tbody><tr><td>Inter isochrones area ($km^2$)</td><td>14</td><td>38</td><td>28</td><td>36</td><td>30</td><td>20</td><td>10</td><td>6</td></tr></tbody></table>Determine the instantaneous unit hydrograph (IUH) for this catchment.",
+          "marks": "8",
+          "chapter": "Flood Routing",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Bhadra",
+      "year": "2080",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 33,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define hydrological cycle. Draw a net sketch of hydrological cycle illustrating its components.",
+          "marks": "4",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "(a) How the infiltration of soil can be measured by laboratory method? Elaborate Horton's equation with neat sketch. [4+3]\n(b) The mass curve of $a^n$ isolated storm in a 500-ha watershed is as follows:<table><thead><tr><th>Time from start (hr)</th><th>0</th><th>2</th><th>4</th><th>6</th><th>8</th><th>10</th><th>12</th><th>14</th><th>16</th><th>18</th></tr></thead><tbody><tr><td>Cumulative rainfall (cm)</td><td>0</td><td>0.8</td><td>2.6</td><td>2.8</td><td>4.1</td><td>7.3</td><td>10.8</td><td>11.8</td><td>12.4</td><td>12.6</td></tr></tbody></table>If the direct runoff produced by the storm is measured at the outlet of the watershed as $0.340 \\text{ Mm}^3 , estimate$ the $\\phi - index$ of the storm and duration of the rainfall excess.",
+          "marks": "7",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "(a) Calculate the flow discharge of a river from the following data using area velocity method using Mid sectional area. [8]<table><thead><tr><th>Distance from bank (m)</th><th>0</th><th>1.5</th><th>3.0</th><th>4.5</th><th>6.0</th><th>7.5</th><th>9.0</th></tr></thead><tbody><tr><td>Depth of flow (m)</td><td>0</td><td>0.75</td><td>2.50</td><td>3.50</td><td>2.30</td><td>0.80</td><td>0</td></tr><tr><td>Velocity 0.2 depth</td><td>-</td><td>-</td><td>0.65</td><td>0.90</td><td>0.50</td><td>-</td><td>-</td></tr><tr><td>Velocity 0.6 depth</td><td>0</td><td>0.35</td><td>-</td><td>-</td><td>-</td><td>0.30</td><td>0</td></tr><tr><td>Velocity 0.8 depth</td><td>-</td><td>-</td><td>0.25</td><td>0.40</td><td>0.20</td><td>-</td><td>-</td></tr></tbody></table>b) Establish relationship between rainfall and resulting runoff for a large catchment. Point out the factor affecting runoff from a basin.",
+          "marks": "3",
+          "chapter": "Streamflow Measurement",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "(a) From the given hydrograph below, answer the questions: [6]\n\n(i) What is the total amount of rainfall and average rainfall intensity?\n(ii) What is basin lag time and time of concentration?\n(iii) What is the total time base of flow?\n\nb) Following are the ordinates of hydrograph from a catchment area of $770 \\text{ km}^2$ due to 6-hr rainfall. Derive the ordinates of flood hydrograph due to $3.3 \\text{ cm}$ and $5.5 \\text{ cm}$ effective rainfall of duration 6-hr.<table><thead><tr><th>Time (hr)</th><th>0</th><th>6</th><th>12</th><th>18</th><th>24</th><th>30</th><th>36</th><th>42</th><th>48</th><th>54</th><th>60</th><th>66</th><th>72</th></tr></thead><tbody><tr><td>Discharge ($\\text{m}^3/\\text{s}$)</td><td>40</td><td>65</td><td>215</td><td>360</td><td>400</td><td>350</td><td>270</td><td>205</td><td>145</td><td>100</td><td>70</td><td>50</td><td>40</td></tr></tbody></table>Make suitable assumptions regarding the base flow.",
+          "marks": "8",
+          "chapter": "Hydrograph Analysis",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) A catchment area has the time of concentration of 20 minutes and an area of 20 ha. Estimate the peak discharge corresponding to 25 years return period. Take runoff coefficient of 0.25. The intensity duration frequency curve for the storm can be expressed in cm/h by: [5]\n$i = \\frac{KT^x}{(D+a)^n}$. Take $K = 6.93$, $x = 0.189$, $a = 0.50$ and $n = 0.878$.\n\nb) A hydraulic structure has been designed for a discharge of $350 \\text{ m}^3/\\text{s}$. From the 25 years annual flood series data, the mean and standard deviation are 140 and $65 \\text{ m}^3/\\text{s}$ respectively. Calculate the return period for the design flood by using Gumbel's method. Take reduced mean variate and reduced standard deviation for this series as 0.5299 and 1.0876 respectively. [6]\n\nc) Discuss application of probability plots with figure.",
+          "marks": "3",
+          "chapter": "Flood Hydrology",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define the following terms: hydrological cycle, runoff, water balance and catchment.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Baishakh",
+      "year": "2080",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 21,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "(a) Write the equation of rating curve and explain it with figure. How daily discharge hydrograph is obtained from daily stage hydrograph? [6]\n(b) Calculate the flood discharge of Marin River at Kusuntar by slope area method using following data:<table><thead><tr><th></th><th>Upstream</th><th>Downstream</th></tr></thead><tbody><tr><td>Flow area</td><td>$175 \\text{ m}^2$</td><td>$224 \\text{ m}^2$</td></tr><tr><td>Wetted Perimeter</td><td>75 m</td><td>166 m</td></tr></tbody></table>Reach Length = 120 m\nFall in water surface elevation = 1.46 m\nManning's Coefficient = 0.1",
+          "marks": "8",
+          "chapter": "Streamflow Measurement",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) The observed annual peak flood for Lothar River from 1989 to 2009 are as follows: [10]<table><thead><tr><th>Year</th><th>1989</th><th>1990</th><th>1991</th><th>1992</th><th>1993</th><th>1994</th><th>1995</th><th>1996</th><th>1997</th><th>1998</th></tr></thead><tbody><tr><td>Peak Discharge($m^3/s$)</td><td>419</td><td>320</td><td>65</td><td>150</td><td>1170</td><td>392</td><td>86</td><td>74.7</td><td>219</td><td>142</td></tr><tr><td>Year</td><td>1999</td><td>2000</td><td>2001</td><td>2002</td><td>2003</td><td>2004</td><td>2005</td><td>2007</td><td>2008</td><td>2009</td></tr><tr><td>Peak Discharge($m^3/s$)</td><td>787</td><td>245</td><td>539</td><td>69.2</td><td>245</td><td>293</td><td>58.5</td><td>77.4</td><td>67.2</td><td>208</td></tr></tbody></table>Find the flood value with return period of 30 years using Gumbel's Method. [ Use Reduced Mean = 0.5236 and Reduced Standard Variation = 1.0628 for sample size of 20]. What is the return period of peck flood occurred on 1989?\n\nb) Describe Rational Method for estimation of flood, its assumptions and Limitations.",
+          "marks": "5",
+          "chapter": "Flood Hydrology",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "As a civil Engineer how do you justify the need and importance of Engineering Hydrology for the design of Bridge?",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Bhadra",
+      "year": "2079",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 21,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Discuss water balance and water budget analysis in hydrology.",
+          "marks": "4",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) A catchment has six rain gauge stations. In a year, the annual rainfall in cm recorded by the gauges are as follows: 240, 252.2, 228.3, 218.6, 275.3, 212.2. For a 10% error in the estimation of the mean rainfall, calculate the optimum number of stations in the catchment. [4]\n(b) Explain briefly the following relationships relating to the precipitation over a basin.\n\n(i) Depth-Area Duration Curves (ii) Intensity-Duration Frequency Relationship.",
+          "marks": "3",
+          "chapter": "Precipitation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "(a) The ordinates of 6-h UH of a basin are given as under.<table><thead><tr><th>Time h</th><th>0</th><th>6</th><th>12</th><th>18</th><th>24</th><th>30</th><th>36</th><th>42</th><th>48</th></tr></thead><tbody><tr><td>Ordinates $\\text{m}^3/\\text{s}$</td><td>0</td><td>6</td><td>12</td><td>25</td><td>10</td><td>8</td><td>6</td><td>3</td><td>0</td></tr></tbody></table>Derive the storm hydrograph due to a 3-h storm with a total rainfall of 15 cm. Assume initial loss of $0.50 \\text{ cm}$ and $\\Phi -index$ of $1 \\text{ cm/h}$. Take base flow of $4 \\text{ m}^3/\\text{s}$. [8]\n(b) Explain the concept of the unit hydrograph. What are the assumptions and limitations of unit hydrograph theory?",
+          "marks": "2",
+          "chapter": "Hydrograph Analysis",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Analysis of the annual flood peak data of a certain river covering the period of 25 years has the mean of $8520$ and standard deviation of $3900 \\text{ m}^3/\\text{s}$. The proposed water control project near this site has an expected life of 45 years. The policy decision for project provides the reliability of 85%. [4+2]\n\n(i) Using Gumbel's method recommend peak discharge. Take $y_n = 0.5309$ and $S_n = 1.0915$\n(ii) Calculate the design discharge if factor of safety is 1.3 and also the corresponding safety margin.\n\nb) A rainfall storm for the duration of 20 mins, 40 mins and 80 mins are 40 mm, 70 mm, 60 mm and 100 mm respectively. If the slope of the catchment is 0.01, runoff coefficient is 0.7, maximum length of the travel is 1,100 m and catchment area is 3 $\\text{km}^2$, estimate the peak flow by rational method.",
+          "marks": "6",
+          "chapter": "Flood Hydrology",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain briefly the basic principles involved in the development of IUH by Clark's method. [6]\n\nb) A drainage basin has area of $157 \\text{ km}^2$, storage constant = 8h and time of concentration = 7h has the following inter isochrone area distribution data.<table><thead><tr><th>Time h</th><th>0-1</th><th>1-2</th><th>2-3</th><th>3-4</th><th>4-5</th><th>5-6</th><th>6-7</th></tr></thead><tbody><tr><td>Inter isochrone area $\\text{km}^2$</td><td>10</td><td>38</td><td>20</td><td>45</td><td>32</td><td>10</td><td>2</td></tr></tbody></table>Route the flood hydrograph. [6]\n\nc) Why flow routing is required? Explain Time-Area method of Routing.",
+          "marks": "6",
+          "chapter": "Flood Routing",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Baishakh",
+      "year": "2079",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 19,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "(a) Briefly explain the importance of solar radiation, relative humidity, evapotranspiration in relation to the hydrologic cycle. [2+2+2]\n(b) For the following rainfall-runoff data, determine the $\\phi -index$ and ordinates of cumulative infiltration curve based upon the $\\phi -index$. The watershed area is $0.2 \\text{ km}^2$. [6]\n\nc) Describe the procedure of calculating evapotranspiration by Penman's method.",
+          "marks": "5",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "(a) How the base flow can be separated in hydrograph analysis? Explain with figure. [5]\n(b) A catchment area of 5 $\\text{km}^2$ had the following rainfall pattern.<table><thead><tr><th>Time h</th><th>0</th><th>2</th><th>4</th><th>6</th><th>8</th><th>10</th><th>12</th><th>14</th></tr></thead><tbody><tr><td>Cumulative rainfall cm</td><td>0</td><td>0.60</td><td>2.80</td><td>5.20</td><td>6.60</td><td>7.50</td><td>9.20</td><td>9.60</td></tr></tbody></table>If $\\phi -index$ is 0.40 cm/hr, construct the excess rainfall hyetograph and also find the volume of direct runoff.",
+          "marks": "6",
+          "chapter": "Hydrograph Analysis",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "What do you mean by flow routing? A drainage basin has the following characteristics: Area = 123 $\\text{km}^2$, time of concentration = 14hr, storage constant = 10h and inter-isochrone area distribution as below:<table><thead><tr><th>Travel time (hr)</th><th>0-2</th><th>2-4</th><th>4-6</th><th>6-8</th><th>8-10</th><th>10-12</th><th>12-14</th><th>14-16</th><th>16-18</th></tr></thead><tbody><tr><td>Inter-isochrone area ($\\text{km}^2$)</td><td>4</td><td>10</td><td>21</td><td>24</td><td>18</td><td>20</td><td>12</td><td>9</td><td>5</td></tr></tbody></table>Compute the flood hydrograph by using clark's method.",
+          "marks": "8",
+          "chapter": "Flood Routing",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Kartik",
+      "year": "2078",
+      "month": "Kartik",
+      "examType": "Back",
+      "totalMarks": 58,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Discuss briefly methods used to estimate evaporation from a lake.",
+          "marks": "6",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Following are the monthly pan evaporation data (Jan-Dec) near Kathmandu in a certain year in cm. 16.7, 14.3, 17.8, 25.0, 28.6, 21.4, 16.7, 16.7, 16.7, 21.4, 16.7, 16.7. The water spread area in a lake nearby in the beginning of January in that year was $2.80 \\text{ km}^2$ and at the end of December it was measured as $2.55 \\text{ km}^2$. Calculate the loss of water due to evaporation in that year. Assume a pan coefficient of 0.7.",
+          "marks": "6",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "For ungauged basins, how would you determine the monthly flow from rainfall? Explain any two methods.",
+          "marks": "8",
+          "chapter": "Surface Runoff",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "The high flow water surface elevations of a stream at two section 10 km apart are 306.920 m and 306.650 m. The cross-sectional area and wetted perimeters are as follows:<table><thead><tr><th>Section</th><th>Area ($m^2$)</th><th>Wetted perimeter (m)</th></tr></thead><tbody><tr><td>A</td><td>73.3</td><td>26.80</td></tr><tr><td>B</td><td>93.4</td><td>30.23</td></tr></tbody></table>Assume $n = 0.02$. The eddy loss coefficient is 0.30 for gradual expansion and 0.10 for gradual contraction. Estimate the discharge at the stream. Section A is upstream of B.",
+          "marks": "8",
+          "chapter": "Streamflow Measurement",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Define flood hydrograph, Direct Run of Hydrograph (DRH) and Unit Hydrograph. Write the different methods of base flow separation in hydrograph analysis.",
+          "marks": "8",
+          "chapter": "Hydrograph Analysis",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Write the equations of flood prediction by rational and empirical methods. Also write the limitations and appropriate uses of these equations.",
+          "marks": "6",
+          "chapter": "Flood Hydrology",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "For a river the estimated flood peaks for two return periods by the use of Gumbel's method are given below:<table><thead><tr><th>Return period (yrs)</th><th>Peak flood ($m^3/s$)</th></tr></thead><tbody><tr><td>100</td><td>1020</td></tr><tr><td>50</td><td>850</td></tr></tbody></table>What flood discharge in this river will have a return period of 500 yrs?",
+          "marks": "8",
+          "chapter": "Flood Hydrology",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Discuss three different methods of determining the average depth of rainfall over a catchment.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Bhadra",
+      "year": "2078",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 34,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define hydrological cycle. Draw a net sketch of hydrological cycle illustrating its components.",
+          "marks": "4",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) What are common causes of inconsistencies in rainfall data? Please demonstrate applications of mass curves with appropriate illustrative examples. [3+3]\n(b) Mean and standard deviations of annual rainfall estimated based on seven stations in a catchment are $143\\text{ mm}$ and $31.6\\text{ mm} , respectively$. For a $7\\%$ error in the estimation of mean rainfall, do we need additional rain gauges in the catchment? If yes, what are the minimum numbers of additional rain gauges required to be established in the watershed.",
+          "marks": "5",
+          "chapter": "Precipitation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) A reservoir of a hydropower project has a surface area of $2\\text{ km}^2$. Estimate volume of water evaporated from the reservoir in March (30 days), if temperature = $25^\\circ\\text{C} , relative$ humidity = $70\\% , wind$ speed at $2\\text{m}$ above the ground surface is $12\\text{ km/h} , and$ saturation vapor pressure at $25^\\circ\\text{C}$ is $23.76\\text{ mm}$ of Hg. Take Meyer's coefficient as $0.36$. [5]\n(b) Daily (24-hrs) rainfall observed over a catchment of $1\\text{ km}^2$ is $10\\text{ cm}$. A Horton's curve with a coefficient (K) of $0.5\\text{ hr}^{-1}$ indicated $a^n$ initial and final infiltration capacities of $0.8\\text{ cm/hr}$ and $0.3\\text{ cm/hr} , respectively$. If $a^n$ evaporation pan (pan coefficient = $0.7$) installed in the catchment indicated $0.5\\text{ cm}$ drop in the water level during the 24 hours of its operation, determine runoff from the catchment.",
+          "marks": "5",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) During a flood flow the cross section of area of a river were measured as $60\\text{ m}^2$ for u/s and $45\\text{ m}^2$ for d/s at two sections $6\\text{ km}$ apart. Wetted perimeters of these sections were $18\\text{ m}$ and $14\\text{ m}$ respectively. Elevation difference between u/s and d/s bed of the river was $0.45\\text{m}$. Estimate the flood discharge of the river. Take Manning's rugosity coefficient = $0.025$ and eddy loss coefficient = $0.15$. [8]\n(b) Explain the methods practiced in Nepal for the estimation of runoff from $a^n$ ungauged basin.",
+          "marks": "6",
+          "chapter": "Streamflow Measurement",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Using given data for annual discharge in a section of a river from year 2000 to 2009. [6+4]\n\n(i) Calculate sample mean, sample standard deviation and sample coefficient of skewness.\n(ii) What would be the probability of the flood of magnitude $250 \\text{ m}^3/\\text{s}$ occuring in the next year?\n\nReduced mean $\\bar{y}_n = 0.4952$, Reduced Standard Deviation $(\\sigma_n) = 0.9497$.\n\nb) Define the terms exceedance probability, recurrence interval and frequency factor.",
+          "marks": "6",
+          "chapter": "Flood Hydrology",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define the following terms: hydrological cycle, runoff, water balance and catchment.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2076 Chaitra",
+      "year": "2076",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 40,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "The catchment area of a reservoir is $15.5 \\text{ km}^2$. A uniform precipitation of $0.5 \\text{ cm/h}$ for $2 \\text{ hr}$ was observed on a particular day. $65\\%$ of precipitation reached into the reservoir. A canal carrying a flow of $1.1 \\text{m}^3/\\text{s}$ is taken from the reservoir. The rate of evaporation was $0.6 \\text{ mm/hr/m}^2$. Assuming seepage loss to be $45\\%$ of evaporation loss, find the change in reservoir level for $10 \\text{ hrs} , if$ the water spread of the reservoir was $0.6 \\text{ km}^2$.",
+          "marks": "6",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "The normal annual rainfall of four stations A, B, C and D in a catchment area is $1150, 940, 1080$ and $980$ respectively. In a particular year the station B did not work and the rainfall amount of A, C and D were $1000, 970$ and $890$ respectively. Compute the missing precipitation at point B for that year.",
+          "marks": "6",
+          "chapter": "Precipitation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Explain with neat sketch to determine the infiltration capacity of soil by using double ring infiltrometer. How you differentiate $\\phi$ index from $\\omega -index$.",
+          "marks": "8",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "The infiltration rates observed during a test on a double ring infiltrometer are as given below:-<table><thead><tr><th>Time(hrs)</th><th>$0.0417$</th><th>$0.125$</th><th>$0.333$</th><th>$0.75$</th><th>$1.5$</th><th>$2.5$</th><th>$3.5$</th><th>$4.5$</th><th>$5.5$</th><th>$6.5$</th></tr></thead><tbody><tr><td>$f(\\text{cm/hr})$</td><td>$0.781$</td><td>$0.747$</td><td>$0.662$</td><td>$0.535$</td><td>$0.370$</td><td>$0.255$</td><td>$0.224$</td><td>$0.218$</td><td>$0.207$</td><td>$0.207$</td></tr></tbody></table>Determine the constant $f_0 , f_c$ and $k$ of Horton's equation which fits the above data.",
+          "marks": "6",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "With the following data, compute discharge for a river.<table><thead><tr><th>Distance form left bank (m)</th><th>$0$</th><th>$1$</th><th>$4$</th><th>$7$</th><th>$10$</th><th>$13$</th><th>$16$</th><th>$19$</th><th>$20$</th></tr></thead><tbody><tr><td>Depth(m)</td><td>$0$</td><td>$1$</td><td>$1.25$</td><td>$1.75$</td><td>$2.15$</td><td>$1.80$</td><td>$1.20$</td><td>$1.05$</td><td>$0$</td></tr><tr><td>Revolution at $0.6d$</td><td>$0$</td><td>$30$</td><td>$40$</td><td>$30$</td><td>$40$</td><td>$35$</td><td>$25$</td><td>$20$</td><td>$0$</td></tr><tr><td>Duration of observations(sec)</td><td>$0$</td><td>$100$</td><td>$100$</td><td>$50$</td><td>$50$</td><td>$50$</td><td>$100$</td><td>$100$</td><td>$0$</td></tr></tbody></table>Calibrated value of constants for current meter: $a = 0.51$ and $b = 0.03$",
+          "marks": "6",
+          "chapter": "Streamflow Measurement",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "How you differentiate $\\phi$ index from $\\omega -index$.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2076 Ashwin",
+      "year": "2076",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 31,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) In a certain catchment, inflow rate into the catchment due to rainfall is given by equation $I=2t$ $m^3/s$. If loss in the catchment is neglected, determine the change in storage in catchment with in 3 hr duration. [4]\n(b) Justify the uses of Hydrology in Engineering Design.",
+          "marks": "3",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "(a) Calculate PET for May month by Penman method.\nMean monthly temperature = $20^\\circ C$\nMean RH = 75%\nMean Sunshine hour = 10 hr.\nPotential Sunshine hour = 13.5 hr.\nWind velocity at 2m height = 8 km/hr.\nAlbedo = 0.028\nUpper terrestrial solar radiation = 14.4 mm of Hg/day\nLatitude = $27^\\circ$; Longitude = $86^\\circ$\nSaturated vapour pressure at $20^\\circ C = 11mm$ of Hg\nSlope of Saturated vapour pressure = $1.42$ $mm/^\\circ C$ [8]\n(b) A storm with a 15.0 cm precipitation produced a direct runoff of 8.7cm. The time distribution of storm is as follows.<table><thead><tr><th>Time from start (hr)</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th></tr></thead><tbody><tr><td>Incremental rainfall in each hr (cm)</td><td>0.6</td><td>1.35</td><td>2.25</td><td>3.45</td><td>2.7</td><td>2.4</td><td>1.5</td><td>0.75</td></tr></tbody></table>Estimate the $\\Phi -index$ of the storm.",
+          "marks": "5",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "(a) Define catchment. What are the factors affecting runoff from a catchment? [1+5]\n(b) For the purpose of discharge measurement in a stream by Slope-Area method the following data has been obtained. [8]<table><thead><tr><th></th><th>U/S Section</th><th>Middle Section</th><th>D/S Section</th></tr></thead><tbody><tr><td>Area ($m^2$)</td><td>105.75</td><td>102.63</td><td>96.63</td></tr><tr><td>Wetted perimeter (m)</td><td>64.25</td><td>60.20</td><td>58.00</td></tr><tr><td>Gauge Reading (m)</td><td>315.5</td><td>-</td><td>315.15</td></tr><tr><td>Manning's Roughness</td><td>0.025</td><td>0.027</td><td>0.029</td></tr></tbody></table>Determine the stream discharge for length between U/S and D/S sections as 260 m assuming coefficient of contraction $K_e$ as 0.1.\n(c) Define shifting control in stage discharge relationship. What are the causes of shifting control?",
+          "marks": "1",
+          "chapter": "Surface Runoff",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Define unit hydrographs and explain the uses of hydrograph. [5]\n(b) The ordinates of a 4 hr UH of a basin area of $300\\text{ km}^2$. Three hundred square km measured at 1-hr internals are 6, 36, 66, 91, 106, 93, 79, 68, 58, 49, 41, 34, 27, 23, 17, 13, 9, 6, 3 and $1.5\\text{ m}^3/\\text{s}$ respectively. Obtain the ordinates of a 3 hr UH of the basin using the s-curve technique.",
+          "marks": "10",
+          "chapter": "Hydrograph Analysis",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain Rational method of flood predication . Also mention its limitations & uses. [3+3]\n\nb) Analysis of the annual flood peak of river of 21 years yielded a mean of $8520\\text{m}^3/\\text{s}$ and\nstandard deviation of $3900\\text{m}^3/\\text{s}$. A proposed water control project on this river is to\nhave an expected life of 40 years. The acceptable reliability by the design policy is\n85%.\n\ni) Using Gumbel's Method recommend the flood discharge for this project. Take\n$y_n=0.5252$ and $S_n=1.0696$ for 21 years.\nii) What would the 80% confidence limit of the above flood if $f(c)=1.282$ at 80%\nconfidence level.",
+          "marks": "6",
+          "chapter": "Flood Hydrology",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) What do you understand by flow routing? [2]\n\nb) A drainage basin has the following characteristics:\nArea = $123\\text{ km}^2$, time of concentration=14 hr, storage constant=10h and inter-\nisochrone area distribution as below:<table><thead><tr><th>Travel Time (hr)</th><th>0-2</th><th>2-4</th><th>4-6</th><th>6-8</th><th>8-10</th><th>10-12</th><th>12-14</th><th>14-16</th><th>16-18</th></tr></thead><tbody><tr><td>Inter-isochrone area ($\\text{km}^2$)</td><td>4</td><td>10</td><td>21</td><td>24</td><td>18</td><td>20</td><td>12</td><td>9</td><td>5</td></tr></tbody></table>Compute the flood hydrograph by using Clark's IUH.",
+          "marks": "6",
+          "chapter": "Flood Routing",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Ashwin",
+      "year": "2075",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 34,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Explain the different methods of determining the average rainfall over a catchment due to a storm. [6]\n(b) Calculate the potential evapotranspiration from $a^n$ area near Dharan, Sunsari in the month of april by Penmans' formula. The following data are available.\nLatitude: $26^\\circ 49' N , Elevation$ (from msl) : 250.00 m\nMean monthly temperature : $22.5^\\circ C , Mean$ relative humidity: 75%\nMean observed sunshine hour: 10 hr Wind velocity at 2m height: 80 km/day\nPsychrometric constant : $0.49mm$ of $Hg/^\\circ C$ Reflection coefficient:0.20\n$e_w$ : $20.4mm$ of $Hg , A: 1.24mm/^\\circ C$ $b = 0.52 , H_a = 14.9mm$ of evaporable water per day\nMean monthly value of possible sunshine hour (N) : 12.7 hours\nNature of sunshine cover: closed ground green crop, where the symbols carry their usual meanings",
+          "marks": "6",
+          "chapter": "Precipitation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Explain double mass curve method for checking a rainfall data for consistency. [6]\n(b) What factors should be considered in selecting a site for stream gauging station. [4]\n(c) The catchment area of a reservoir is 1600 ha. A uniform precipitation of 8 mm/hr for 2 hour was observed on particular day. 55% run off reached the reservoir. A canal carrying a flow of $1m^3/s$ is taken from the reservoir. The rate of evaporation was 0.8 mm/h/$m^2$. Assuming seepage loss is 40% of evaporation loss, find the change in the reservoir level for 6 hours, if the water spread of the reservoir was 45ha.",
+          "marks": "6",
+          "chapter": "Precipitation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "(a) The mass curve of $a^n$ isolated storm over a watershed is given below.<table><thead><tr><th>Time from start (hr)</th><th>0</th><th>0.5</th><th>1</th><th>1.5</th><th>2</th><th>2.5</th><th>3</th><th>3.5</th><th>4</th><th>4.5</th><th>5</th></tr></thead><tbody><tr><td>Cumulative rainfall (cm)</td><td>0</td><td>0.6</td><td>1.4</td><td>1.9</td><td>2.8</td><td>3.7</td><td>5.4</td><td>6.2</td><td>7</td><td>7.8</td><td>8.2</td></tr></tbody></table>If the storm produced a direct run off of 3.8 cm at the outlet of the watershed, estimate the $\\emptyset -index$ of the storm and duration of rainfall excess. [6]\n(b) The ordinates of a 2-h UH are given below. Derive the ordinates of a 3-h UH by S-curve method.<table><thead><tr><th>Time (hr)</th><th>0</th><th>2</th><th>4</th><th>6</th><th>8</th><th>10</th><th>12</th><th>14</th><th>16</th><th>18</th><th>20</th><th>22</th><th>24</th></tr></thead><tbody><tr><td>Ordinates of 2-h UH ($m^3/s$)</td><td>0</td><td>25</td><td>100</td><td>160</td><td>190</td><td>170</td><td>110</td><td>70</td><td>30</td><td>20</td><td>15</td><td>6</td><td>0</td></tr></tbody></table>Calculate the flood discharge of a storm of 3h and 2h rainfall of 8 cm and 7 cm respectively. Consider $\\emptyset -index$ $0.3cm/hr$ and baseflow $10m^3/s$.",
+          "marks": "10",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "(a) The ordinates of 4 hr unit hydrograph are given below.<table><thead><tr><th>Time (hr)</th><th>0</th><th>2</th><th>4</th><th>6</th><th>8</th><th>10</th><th>12</th><th>14</th><th>16</th><th>18</th><th>20</th><th>22</th><th>24</th></tr></thead><tbody><tr><td>4-hr UH ordinates ($m^3/s$)</td><td>0</td><td>9</td><td>12</td><td>28</td><td>40</td><td>52</td><td>49</td><td>36</td><td>29</td><td>20</td><td>13</td><td>10</td><td>0</td></tr></tbody></table>The storm has successive 2 hr, 4 hr and 6 hr rainfall of 2.5, 8.0 and 9.0 cm respectively. $\\phi -index$ is of $0.15\\text{ cm/hr}$ and base flow of $40m^3/s$. Determine the 2 hr UH and resulting flood hydrograph from above storm. [12]\n(b) Annual flood peak flood of a river for 20 years yielded a mean value of $5460\\text{ m}^3/s$ and the standard deviation of $2950\\text{ m}^3/s , The$ proposed hydraulic project on this river has $a^n$ expected life of 35 years and reliability of project is 87%.\n\n(i) Using Gumbel’s method predict the flood discharge for the project if the value of $\\bar{$y^n$} = 0.5402$ and $Sn = 1.1285$.\n(ii) What discharge is to be adopted if the safety factor for flood magnitude is taken as 1.5 and also determine safety margin on this basis.\n(iii) Calculate the confidence limits at 95% confidence probability $f(c) = 1.96$",
+          "marks": "12",
+          "chapter": "Hydrograph Analysis",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2074 Ashwin",
+      "year": "2074",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 36,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Explain water budget equation. What is the role of water budget equation in hydrology?",
+          "marks": "4",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "The annual rainfall at station X and the average of annual rainfall at 25 surrounding base stations in can are given below for the period of 36 years starting from 1941\\n(i) Check whether the data of station X is consistent\\n(ii) In which year a change in regime indicated?\\n(iii) Compute the mean annual rainfall for stations X at its present site for the given 36 year period first without adjustment and secondly with the data adjusted for the change in regime.\\n(iv) Compute the adjusted annual rainfall at station X for the affected period.",
+          "marks": "6",
+          "chapter": "Precipitation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Starting from Horton's equation, derive $a^n$ expression for total infiltration in time \"$t$\". Also draw graph showing infiltration and total infiltration vs time. [4+2]\n(b) Calculate the potential evapotranspiration from $a^n$ area near Simara, Bara, in the month of April by Penman's formula. The following data are available.\nLatitude: 27'N\nElevation (from msl): 107 m\nMean monthly temperature: $23^\\circ$C\nMean relative humidity: 75%\nMean observed sunshine hour: 10\nWind velocity at 2 m height: 85 km/day\nNature of sunshine cover: closed ground green crop\nGiven:\n$A: 1.27 \\text{mm/}^\\circ\\text{C}$\n$H_a = 15.00 \\text{ mm of evaporable water per day}$\nMean monthly value of possible sunshine hour (N): 12.5 hours\nSaturated vapour pressure at $23^\\circ$C = 21.04 mm of Hg",
+          "marks": "10",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Calculate the flood discharge of a stream by the slope area method given the following data: [12]\nUpstream flow area = $3500 \\text{ m}^2$\nUpstream wetted perimeter = $650$\nUpstream velocity head coefficient = $1.17$\nDown stream flow area = $3250 \\text{ m}^2$\nDown stream wetted perimeter = $621 \\text{ m}$\nDown stream velocity head coefficient = $1.21$\nFalling difference = $0.4$\nReach length = $1300 \\text{ m}$\nManning's coefficient $\\eta = 0.03$\n(b) Describe about the use of current meter according to flow characteristics of channel.",
+          "marks": "4",
+          "chapter": "Streamflow Measurement",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) What is Unit hydrograph? What are assumptions and limitations of UH? [2+2]\n(b) In a storm, the rainfall of depth $0.7\\text{cm} , 0.9\\text{cm} , 0.2\\text{cm} , 1.0\\text{cm}$ occurred in four successive hours. The storm hydrograph due to this storm has following hourly ordinates:\n$0.5, 44.5, 110.5, 85.5, 102.8, 94.0, 38.4, 18.6, 10.9, 5.3, 2.9, 0.5 \\text{ m}^3/\\text{s}$\nIf the average losses are $0.2\\text{cm/hr} , estimate$ the hourly ordinates of unit hydrograph. Assume suitable value of base flow. Calculate 2-h UH using Scurre Method.",
+          "marks": "8",
+          "chapter": "Hydrograph Analysis",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "A river, whose annual flood peak can be represented by Gumbel distribution, has 100-years and 500-year return period flood of magnitude $9900 \\text{ m}^3/\\text{s}$ and $12100 \\text{ m}^3/\\text{s}$ respectively. The sample size is $n = 30$. $\\left[ \\bar{y}_n = 0.536, s_n = 1.1124 \\right]$\n\ni) What is the magnitude of 200 year and 1000 year flood?\nii) What are 95% and 80% confidence limits for 200 year and 1000 year flood if $f(95\\%) = 1.96$ and $f(80\\%) = 1.28$\niii) A hydraulic structure of 25 year life was designed for $12300 \\text{ m}^3/\\text{s}$ peak flow. What is the hydrologic risk of the structure?\niv) What peak flow should be taken into consideration if you want the structure to be 99% reliable for a structure life of 25 years.",
+          "marks": "4",
+          "chapter": "Flood Hydrology",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2073 Shrawan",
+      "year": "2073",
+      "month": "Shrawan",
+      "examType": "Back",
+      "totalMarks": 27,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "A storm commenced at 7:00 hours. The ordinates of the rainfall mass curve of this storm in mm as recorded by a recording rain gauge at 15 minute intervals are 0, 9.5, 17.0, 27.0, 40.5, 49.0, 63.0, 84.0, 95.0, 102.0, 110.0, 112.0 and 112.0. Plot the intensity duration graph by computing the maximum rainfall intensities for durations of 15, 30, 45, 60, 90, 120 and 180 minutes.",
+          "marks": "12",
+          "chapter": "Precipitation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "(a) Explain energy balance equation and derive evaporation equation using Bowen's ratio. [4]\n(b) For a storm of 3 hours on 50 ha catchment, the rainfall rates are as follows: [6]<table><thead><tr><th>Time of rain from beginning (min):</th><th>0</th><th>30</th><th>45</th><th>75</th><th>100</th><th>125</th><th>150</th><th>180</th></tr></thead><tbody><tr><td>Rain fall rate (cm/hour):</td><td>0</td><td>2.5</td><td>3.5</td><td>2.0</td><td>4.8</td><td>5.2</td><td>1.8</td><td>5.3</td></tr></tbody></table>If the $\\phi$ index of this basin is 2.5 cm/hour, calculate total rainfall, runoff in (cm) and peal discharge.\n(c) Explain interception and depression storage losses. How these losses are estimated during hydrological analysis.",
+          "marks": "2",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) The 3 h unit hydrograph of a basin with $a^n$ area of 20 $\\text{km}^2$ at one hour interval are as given below 0, 0.41, 1.38, 4, 7.72, 10.06, 9.24, 6.62, 4.57, 3.86, 2.76, 2.07, 1.38, 0.83, 0.41,",
+          "marks": "5",
+          "chapter": "Hydrograph Analysis",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "If rainfall excess with intensity of 2.0 cm/h for a period of 4 h followed immediately by another 3 h storm with $a^n$ intensity of 1 cm/h occurs on the basin, what is the peak flow produced by this rainfall and at what time after the commencement of rainfall would this peak flow occur? Assume baseflow is negligible. [10]\n(b) A 6 h unit hydrograph of a basin has a peak ordinate of 96 $\\text{m}^3/\\text{s}$. When the base flow in the stream is 25 $\\text{m}^3/\\text{s} , and$ when the basin has reached its minimum infiltration capacity of 2.5 mm/h, a 6 h storm with 18.3 cm of total rainfall had occurred on the basin. What is the magnitude of the peak discharge in the flood hydrograph produced by this storm?",
+          "marks": "5",
+          "chapter": "Hydrograph Analysis",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) The annual peak discharge of a river follows the Gumbel's extreme value distribution with a mean of $10000 \\text{ m}^3/\\text{s}$ and a standard deviation of $3000 \\text{ m}^3/\\text{s}$. What is the probability that the annual peak discharge is more than $15000 \\text{ m}^3/\\text{s}$? What is the magnitude of the peak discharge with an exceedance probability of $0.1$? [Hint: $\\alpha = \\frac{1.28255}{\\sigma}; \\beta = \\mu - 0.48\\sigma$] [8]\n\nb) Differentiate between continuous and discrete random variables. Give examples each in hydrology. Give three formulae which are used to determine the return period.",
+          "marks": "1",
+          "chapter": "Flood Hydrology",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "The ordinates of the inflow hydrograph at $6 \\text{ hr}$ interval are as follows:\n\nThe discharge over the spillway Crest and the surcharge storage above the crest for different water surface elevations are as follows:\n\nDetermine:\n\ni) Maximum reservoir level\nii) Maximum outflow rate\niii) Reduction in the peak",
+          "marks": "8",
+          "chapter": "Flood Routing",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2072 Kartik",
+      "year": "2072",
+      "month": "Kartik",
+      "examType": "Back",
+      "totalMarks": 50,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Describe methods of averaging point rainfall over a catchment area with neat sketches. [6]\n(b) Explain the energy budget method of estimating evaporation from a lake.",
+          "marks": "6",
+          "chapter": "Precipitation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "(a) Determine the stage corresponding to zero discharge from the following data of a rating curve: [8]<table><thead><tr><th>Stage (m)</th><th>20.80</th><th>21.42</th><th>21.95</th><th>22.37</th><th>23.00</th><th>23.52</th><th>24.00</th></tr></thead><tbody><tr><td>Discharge($m^3/s$)</td><td>100</td><td>200</td><td>300</td><td>400</td><td>600</td><td>800</td><td>1000</td></tr></tbody></table>b) Explain different methods of Stream gauge reading with sketch.",
+          "marks": "6",
+          "chapter": "Streamflow Measurement",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "(a) Compute the stream-flow from following data. The calibrated equation of current meter is: [8]\n$V=0.035+0.74*N , where$ $V$ is in m/sec and $N$ is revolution/sec.<table><thead><tr><th>Distance from bank (m)</th><th>0</th><th>0.6</th><th>1.5</th><th>2.5</th><th>3.5</th><th>5.0</th><th>6.0</th><th>7.0</th><th>7.5</th></tr></thead><tbody><tr><td>Water Depth (m)</td><td>0</td><td>0.3</td><td>0.75</td><td>1.2</td><td>1.7</td><td>1.3</td><td>0.7</td><td>0.3</td><td>0</td></tr><tr><td>No. of Revolutions</td><td>0</td><td>15</td><td>95</td><td>110</td><td>120</td><td>110</td><td>80</td><td>20</td><td>0</td></tr><tr><td>Time (sec)</td><td>0</td><td>45</td><td>85</td><td>95</td><td>90</td><td>100</td><td>70</td><td>40</td><td>0</td></tr></tbody></table>b) Explain how the monthly flows from the ungauged locations are estimated from the observed rainfall data over the catchment, in Nepal.\nP.1",
+          "marks": "6",
+          "chapter": "Streamflow Measurement",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "A hydrograph for a 4,250-acre basin is shown in the accompanying sketch. The given hydrograph actually appeared as a direct runoff hydrograph from the basin, caused by net rain falling at $a^n$ intensity of 0.20 in./hr for a duration of 5 hr, beginning at $t=0$.\n\nNote\nin = inches\ncfs = cubic feet/sec\n12 inches = 1 foot\n1 Acre = 43560 sq.ft\n\n(a) Determine the excess release time of the basin.\n\n(b) What percentage of the drainage basin was contributing to direct runoff 4 hr after rain began ($t=4$)?\n\n(c) Use your response to part (b) to determine $Q_p$ as shown in the sketch. Do not scale $Q_p$ from the drawing.\n\n(d) Note that rain continued to fall between $t=3$ and $t=5$. Why did the hydrograph form a plateau between $t=3$ and $t=5 , rather$ than continue to rise during those 2 hours?\nP.3",
+          "marks": "4",
+          "chapter": "Hydrograph Analysis",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "A 2-hr unit hydrograph for a basin is shown in the sketch.\n\n(a) Determine the peak discharge (in cfs) for a net rain of 5.00 in./hr and a duration of 2 hr.\n\n(b) What is the total direct surface runoff (in inches) for the storm described in part (a)?\n\n(c) A different storm with a net rain of 0.50 in./hr lasts for 4 hr. What is the discharge at 8 p.m. if the rainfall started at 4 p.m.?\n\nNote:\nin = inches\n12 inches = 1 feet\ncfs = cubic feet/sec\nA unit hydrograph\nis response of catchment\ndue to 1 inch effective\nrainfall over it.",
+          "marks": "6",
+          "chapter": "Hydrograph Analysis",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) If the annual flood series data for a catchment are available for N consecutive years, explain a procedure to determine a flood discharge with a return period of T, (where T>N), by using Log Pearson type III distribution method. [8]\n\nb) Calculate the flood discharge using Empirical method from a catchment of area 100sqkm. The catchment has longest river of 60km. The elevation difference of the river is 20m. Rainfall runoff coefficient is 0.6 and maximum daily rainfall is 200mm.",
+          "marks": "6",
+          "chapter": "Flood Hydrology",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "A basin having 128 $km^2$ of drainage area has 22 hours and 14 hours of concentration time and storage constant respectively. Determine the IUH for this basin if inter-isochrones area distribution is as below:<table><thead><tr><th>Travel time (hr)</th><th>0-3</th><th>3-6</th><th>6-9</th><th>9-12</th><th>12-15</th><th>15-18</th><th>18-21</th><th>21-24</th><th>24-27</th></tr></thead><tbody><tr><td>Area($km^2$)</td><td>2</td><td>7</td><td>17</td><td>25</td><td>31</td><td>23</td><td>14</td><td>6</td><td>3</td></tr></tbody></table>P. 4<table><thead><tr><th>Exam.</th><th>Regular</th><th>Full Marks</th><th>80</th></tr></thead><tbody><tr><td>Level</td><td>BE</td><td>Pass Marks</td><td>32</td></tr><tr><td>Programme</td><td>BCE</td><td>Time</td><td>3 hrs.</td></tr><tr><td>Year / Part</td><td>III / I</td><td></td><td></td></tr></tbody></table>Subject: - Engineering Hydrology (CE606)",
+          "marks": "8",
+          "chapter": "Flood Routing",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain in detail time area method for estimating runoff hydrograph.\nP. 2",
+          "marks": "8",
+          "chapter": "Flood Routing",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2072 Chaitra",
+      "year": "2072",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 60,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define hydrological cycle. Draw a net sketch of hydrological cycle illustrating its components.",
+          "marks": "4",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "The catchment area of a basin may be approximated as a semicircle of radius $r$ km with respect to the corordinate axis set up with its origin at the center of the circle and the x-axis coincident with the diameter the area lies in the first and second quadrants and the position coordinates of the rain gauge stations are $(0,0) , (\\frac{r}{2}, \\frac{r}{2})$ and $(\\frac{-r}{2}, \\frac{r}{2})$ km. Show that the Thiessen weights of the gauges are given by $\\frac{0.5}{\\pi} , (0.5-0.25/\\pi)$ and $(0.5-0.25/\\pi)$ respectively.",
+          "marks": "12",
+          "chapter": "Precipitation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) The ordinates of a rainfall mass curve of a storm over a basin of area $850 \\text{ km}^2$ measured in mm at one hour interval are 0, 10, 22, 30, 39, 45.5, 50, 55.5, 60, 64 and",
+          "marks": "5",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "If the infiltration during this storm can be represented by Horton's equation with $f_0 = 6.5 \\text{ mm/h} , f_c = 1.5 \\text{ mm/h}$ and $k = 0.15 \\text{ /h} , estimate$ the resulting runoff volume. [10]\n(b) Write down Penman equation and explain all variables and constants involved in it.",
+          "marks": "5",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Mention the factors that should be considered for the proper selection of stream ganging site. [4]\n(b) Explain with sketch how you determine the stage for zero discharge. [6]\n(c) Find the drainage density, average length of overland flow, form factor and channel slope for a basin with the following data:\nArea of basin (A) = $140 \\text{ km}^2$\nDistance between the outlet to the farthest point (L) = $21 \\text{ km}$\nElevation difference between the outlet and the farthest point (h) = $1090 \\text{ m}$\nTotal length of channels of all order ($L_s$) = $654 \\text{ km}$",
+          "marks": "4",
+          "chapter": "Streamflow Measurement",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "\n(a) Describe the procedure of derivation of unit hydrograph from complex storms using appropriate expressions. [8]\n(b) Given below are ordinates of a 4 h unit hydrograph of a basin in $\\text{m}^3/\\text{s}$ at one hour intervals.\n4, 25, 44, 60, 70, 61, 52, 45, 38, 32, 27, 22, 18, 14, 11, 8, 6, 4, 2, 1\nWhat is the area of the basin?",
+          "marks": "6",
+          "chapter": "Hydrograph Analysis",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "The observed annual peak flood of a river in $\\text{m}^3/\\text{s}$ for a period of 20 years from 1981 to 2000 are given below:\n190, 155, 298, 136, 137, 131, 140, 124, 185, 104, 91, 154, 109, 269, 164, 270, 142, 72, 130, 111.\nPrepare a graph of flood peak versus the return period and hence estimate the annual peak flood with a return period of 30 years.",
+          "marks": "14",
+          "chapter": "Flood Hydrology",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Define the following terms: hydrological cycle, runoff, water balance and catchment.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Mention the factors that should be considered for the proper selection of stream ganging site.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2071 Other",
+      "year": "2071",
+      "month": "Other",
+      "examType": "Back",
+      "totalMarks": 27,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) The shape of a catchment is in the form of a pentagon ABCDE. There are 4 rain gauge stations P,Q, R and S inside the catchment. The position co-ordinates in km are: A(0,0), B(50,75), C(100,70), D(150,0), E(75,-50), P(50,25), Q(100,25), R(100,-25) and S(50,-25). If rainfalls recorded at P,Q,R and S are 90, 105, 114 and 120 mm respectively, determine the mean rainfall by Thiessen Polygon method. [6]\n(b) Explain the different types of precipitation based on lifting mechanism.",
+          "marks": "6",
+          "chapter": "Precipitation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Calculate the free water surface evaporation in june using the Penman method from $a^n$ area, whose latitude is approximately $33^\\circ N$. The available data include air temperature = $30^\\circ C , wind$ speed at 2 m height = $10 \\text{ km/h} , relative$ humidity = $60\\% , mean$ observed sun shine hours = $12$ and reflection coefficient = $0.05$. [8]\n(b) The infiltration capacity in a basin is represented by Horton's equation as $f_p = 3.0 + e^{-2t} , where$ $f_p$ is in $\\text{cm/hr}$ and '$t$' in hours. Assuming the infiltration to take place at capacity rates in a strom of 60 minutes during, estimate the depth of infiltration in (i) the first 30 minutes and (ii) the second 30 minutes of the storm.",
+          "marks": "3",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "(a) Estimate the flood discharge through a 5m-wide rectangular channel for the following data. The depth of water is 2m and 1.8m at two section 500m apart. The drop in water surface elevation is 0.25 m. Manning's roughness coefficient is 0.025, Assume eddy loss to be zero. [8]\n(b) The following data were collected for a stream at a gauging station. Compute the discharge.<table><thead><tr><th>Distance from one end of water surface (m)</th><th>Depth, d (m)</th><th>Immersion of current meter below water surface</th></tr></thead><tbody><tr><td></td><td></td><td>at 0.6d</td><td>at 0.2d</td><td>at 0.8d</td></tr><tr><td></td><td></td><td>Rev.</td><td>Sec.</td><td>Rev.</td><td>Sec.</td><td>Rev.</td><td>Sec.</td></tr><tr><td>3</td><td>1.4</td><td>12</td><td>50</td><td></td><td></td><td></td><td></td></tr><tr><td>6</td><td>3.3</td><td></td><td></td><td>38</td><td>52</td><td>23</td><td>55</td></tr><tr><td>9</td><td>5.0</td><td></td><td></td><td>40</td><td>58</td><td>30</td><td>54</td></tr><tr><td>12</td><td>9.0</td><td></td><td></td><td>48</td><td>60</td><td>34</td><td>58</td></tr><tr><td>15</td><td>5.4</td><td></td><td></td><td>34</td><td>52</td><td>30</td><td>50</td></tr><tr><td>18</td><td>3.8</td><td></td><td></td><td>35</td><td>52</td><td>30</td><td>54</td></tr><tr><td>21</td><td>1.8</td><td></td><td></td><td>18</td><td>50</td><td></td><td></td></tr></tbody></table>Rating equation of current meter : $v = 0.3N + 0.05$",
+          "marks": "6",
+          "chapter": "Streamflow Measurement",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "An S- hydrograph is given such that at time $t = 0 , its$ ordinate is $1\\text{cm/h}$ and it remains so for $a^n$ indefinite period of time. Determine a 2-hour unit hydrograph. Using this unit hydrograph, determine a 4- hour unit hydrograph.\nP.5",
+          "marks": "8",
+          "chapter": "Hydrograph Analysis",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the concept of attenuation and lag of peak due to routing with sketch. [4]\n\nb) Starting from the continuity equation, obtain the equation of reservoir routing.\n\nP.6",
+          "marks": "4",
+          "chapter": "Flood Routing",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2070 Other",
+      "year": "2070",
+      "month": "Other",
+      "examType": "Back",
+      "totalMarks": 45,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Why the study of hydrology is important for engineers for planning and designing of water resources projects in Nepal? Explain the significant features of global water balance with necessary equation.",
+          "marks": "4",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) In what way you can present the precipitation data? What are the benefits of each method? Explain the method of drawing Intensity Duration Frequency (IDF) curve. [3+2+3]\n(b) A catchment has seven raingauge stations. In a year the annual rainfall in cm recorded by the gauges are as follows: 130, 142.1, 118.2, 108.5, 165.2, 102.1, 146.9 for a 5% error in the estimation of the mean rainfall, calculate the minimum number of additional stations required to be established in the catchment.",
+          "marks": "4",
+          "chapter": "Precipitation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "A 4-hour storm occurs over a $80\\text{ km}^2$ watershed. The details of the catchment are as follows:<table><thead><tr><th>Sub basin ($\\text{km}^2$)</th><th>$\\phi$ index (mm/h)</th><th>$1^{\\text{st}}$ hour</th><th>Hourly Rainfall (mm)</th><th></th><th></th></tr></thead><tbody><tr><td></td><td></td><td>$1^{\\text{st}}$ hour</td><td>$2^{\\text{nd}}$ hour</td><td>$3^{\\text{rd}}$ hour</td><td>$4^{\\text{th}}$ hour</td></tr><tr><td>15</td><td>10</td><td>16</td><td>48</td><td>22</td><td>10</td></tr><tr><td>25</td><td>15</td><td>16</td><td>42</td><td>20</td><td>8</td></tr><tr><td>35</td><td>21</td><td>12</td><td>40</td><td>18</td><td>6</td></tr><tr><td>5</td><td>16</td><td>15</td><td>42</td><td>18</td><td>8</td></tr></tbody></table>Calculate the runoff from the catchment and the hourly distribution of the effective rainfall for the whole catchment.",
+          "marks": "14",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Calculate the discharge of river section as given:<table><thead><tr><th>Distance (m)</th><th>0</th><th>1</th><th>2</th><th>3</th><th>4</th><th>6</th><th>8</th><th>12</th><th>16</th><th>17</th><th>18</th><th>19</th></tr></thead><tbody><tr><td>Depth (m)</td><td>0</td><td>1</td><td>4.3</td><td>7.2</td><td>8.5</td><td>7.4</td><td>5.6</td><td>4.7</td><td>3.5</td><td>2.1</td><td>1.4</td><td>0</td></tr><tr><td>Revolution / s at 0.2d</td><td>0</td><td>1.4</td><td>1.0</td><td>2.6</td><td>2.9</td><td>2.7</td><td>2.5</td><td>2.3</td><td>2.1</td><td>1.8</td><td>1.5</td><td>0</td></tr><tr><td>Revolution / s at 0.8d</td><td>0</td><td>.7</td><td>1.2</td><td>1.8</td><td>2.0</td><td>1.9</td><td>1.7</td><td>1.5</td><td>1.3</td><td>1.1</td><td>1.0</td><td>0</td></tr></tbody></table>The current meter formula is $v = 0.02\\text{ Ns} - 0.02 , v = \\text{velocity (m/s)}$ and $\\text{Ns} = \\text{revolution per minute}$.",
+          "marks": "14",
+          "chapter": "Streamflow Measurement",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "In a storm the rainfall excess of $0.5\\text{ cm} , 0.0\\text{ cm}$ and $0.8\\text{ cm}$ occurred in three successive hours. The storm hydrograph due to this storm has the hourly ordinates (Q) as given below: 0.5, 44.5, 110.5, 85.5, 102.8, 94.0, 38.4, 18.6, 10.9, 5.3, 2.9, 0.8 (cumecs). If there is a constant base flow of $0.5\\text{ cumecs} , find$ the hourly ordinates of unit hydrograph. If 2 successive storms of $6.5\\text{ cm}$ and $10.5\\text{ cm}$ of 3 hours duration and $\\phi\\text{-index}$ of $0.2\\text{ cm/hr}$ occurred in the same catchment, what is the peak flow from the catchment?",
+          "marks": "9",
+          "chapter": "Hydrograph Analysis",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2070 Chaitra",
+      "year": "2070",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 24,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Explain different prospects of Hydrological study.",
+          "marks": "4",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "(a) What can be the causes of inconsistency while recording the rainfall of a station? Explain how it can be corrected for the future use? [4]\n(b) The rainfall depth with time during a storm at a station is as given:<table><thead><tr><th>Time</th><th>6:00</th><th>6:30</th><th>7:00</th><th>7:30</th><th>8:00</th><th>8:30</th><th>9:00</th><th>9:30</th><th>10:00</th><th>10:30</th><th>11:00</th><th>11:30</th><th>12:00</th></tr></thead><tbody><tr><td>Rainfall (cm)</td><td>0</td><td>7</td><td>5</td><td>8</td><td>9</td><td>13</td><td>10</td><td>8</td><td>6</td><td>5</td><td>3</td><td>1</td><td>0</td></tr></tbody></table>i) Construct the hyetograph of this storm for 30 min and 2 hours interval\\n(ii) Compute maximum average intensity of rainfall for 30 min, 1 hour, 2 hour in this storm and plot the resulting intensity duration curve.",
+          "marks": "2",
+          "chapter": "Precipitation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "(a) Calculate the daily potential evapotranspiration by the Penman method from $a^n$ area having the following characteristics: latitude = $30^\\circ N , elevation = 300$ m above mean sea level, mean monthly temperature = $15^\\circ C , mean$ relative humidity = 70%, mean observed sunshine hours = 10, wind velocity at 2 -m height = 50 km/day and reflection coefficient is 0.05. [8]\n(b) Precipitation falls on a 100 $km^2$ drainage basin according to the following schedule:<table><thead><tr><th>Time (minute)</th><th>30</th><th>60</th><th>90</th><th>120</th></tr></thead><tbody><tr><td>Rainfall intensity (cm/hr)</td><td>4</td><td>2</td><td>6</td><td>5</td></tr></tbody></table>Determine the total storm rainfall. Also, find out $\\phi -index$ for the basin if the net storm runoff is 3 cm.",
+          "marks": "6",
+          "chapter": "Abstractions from Precipitation (Hydrological Losses)",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Explain the stream flow computation by slope area method. [5]\n(b) Write the method of estimating monthly flows in a stream or river by MIP method in a Nepalese river. [4]\n(c) What is mean by rating curve? Write the uses of rating curve. Also explain the method of drawing the rating curve in a particular section of a river.",
+          "marks": "1",
+          "chapter": "Streamflow Measurement",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) The direct runoff hydrograph due to $a^n$ effective rainfall event in given by a triangle such that its base is 8 hours and its height at the midpoint of the base is 1cm/h. The duration and intensity of the effective rainfall are 4 hours and 1cm/h, respectively. Derive and sketch a 4 hour unit hydrograph. [8]\n(b) A 1 hour unit hydrograph is given by a rectangle whose base is 4 hours and height is 0.25/hour. Construct $a^n$ S-hydrograph using this UH.",
+          "marks": "6",
+          "chapter": "Hydrograph Analysis",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) Analysis of the annual flood peak of a river for 43 years yielded a mean of $330m^3/s$ and a standard deviation of $187 m^3/s$. A proposed water control project on this river is to have an expected life of 50 years. Policy decision of the project allows an acceptable reliability of 85%. Using Gumbel's method, recommend the flood discharge for this project. [9]\nA table for reduced mean ($\\bar{y}_n$) and reduced standard deviation ($S_n$) is given below:<table><thead><tr><th>N</th><th>40</th><th>41</th><th>42</th><th>43</th><th>44</th><th>45</th></tr></thead><tbody><tr><td>$\\bar{y}_n$</td><td>0.5436</td><td>0.5442</td><td>0.5448</td><td>0.5453</td><td>0.5458</td><td>0.5463</td></tr><tr><td>$S_n$</td><td>1.1413</td><td>1.1436</td><td>1.1458</td><td>1.1480</td><td>1.1499</td><td>1.1519</td></tr></tbody></table>b) Explain log pearson III distribution and its use in the prediction of flood.",
+          "marks": "5",
+          "chapter": "Flood Hydrology",
+          "isDiagram": false
+        }
+      ]
+    }
   ]
 }

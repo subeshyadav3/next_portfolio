@@ -1,617 +1,2054 @@
 {
   "subject": "Switchgear and Protection",
-  "chapters": [
-    "Fundamentals of Power System Protection",
-    "Circuit Interruption Theory and Circuit Breakers",
-    "Protective Relays (Electromechanical and Microprocessor-Based)",
-    "Apparatus Protection (Generators and Transformers)",
-    "Transmission Line Protection and Distance Relaying",
-    "Busbar, Motor Protection and Surge Protection"
-  ],
+  "semester": "1",
   "questions": [
     {
       "id": "switchgear-and-protection-1",
-      "chapter": "Fundamentals of Power System Protection",
-      "text": "Explain the physics of electric arc phenomenon in circuit breakers. Explain High Resistance and Zero Current Interruption principles of arc extinction in AC circuits.",
-      "question": "Explain the physics of electric arc phenomenon in circuit breakers. Explain High Resistance and Zero Current Interruption principles of arc extinction in AC circuits.",
-      "marks": "6",
+      "question": "Calculate the inductance and kVA rating of Peterson coil of a $230\\text{ kV}$, $3$-phase, $50\\text{ Hz}$, $200\\text{ km}$ overhead transmission system having capacitance to earth of $0.01\\ \\mu\\text{F/km}$ per phase.",
+      "text": "Calculate the inductance and kVA rating of Peterson coil of a $230\\text{ kV}$, $3$-phase, $50\\text{ Hz}$, $200\\text{ km}$ overhead transmission system having capacitance to earth of $0.01\\ \\mu\\text{F/km}$ per phase.",
+      "chapter": "Static and Numerical Relays",
+      "marks": "8",
+      "frequency": 9,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2077 Chaitra",
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2074 Bhadra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2077 Chaitra",
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2074 Bhadra"
       ],
-      "frequency": 4,
-      "difficulty": "Medium",
-      "importance": "High"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-2",
-      "chapter": "Fundamentals of Power System Protection",
-      "text": "Define Restriking Voltage, Recovery Voltage, and Rate of Rise of Restriking Voltage (RRRV). Derive the expression for restriking voltage: $v_r(t) = V_m (1 - \\cos \\omega_n t)$ and maximum RRRV ($RRRV_{\\max} = \\omega_n V_m = \\frac{V_m}{\\sqrt{LC}}$).",
-      "question": "Define Restriking Voltage, Recovery Voltage, and Rate of Rise of Restriking Voltage (RRRV). Derive the expression for restriking voltage: $v_r(t) = V_m (1 - \\cos \\omega_n t)$ and maximum RRRV ($RRRV_{\\max} = \\omega_n V_m = \\frac{V_m}{\\sqrt{LC}}$).",
-      "marks": "8",
+      "question": "a) A 50 Hz 3 phase alternator with grounded neutral has an inductance of $1.6 \\text{ mH}$ per phase and is connected to the bus-bars through a circuit breaker. The capacitance to earth of the circuit between the alternator and the circuit breaker is $0.0032 \\mu F$ per phase. Due to a short on the bus-bars the breaker opens when the rms value of the current is $8000 \\text{ A}$. Determine the following (i) frequency of the oscillation (ii) active recovery voltage (iii) time for maximum RRRV (iv) maximum RRRV [6]\n\nb) Explain the construction and working of $SF_6$ circuit breaker. Also enumerate the dielectric properties and arc quenching characteristic of $SF_6$ circuit breaker with their limitations. [6]\n\nc) What are the main parts of equipment which are used for the testing of a circuit breaker in a laboratory type testing station?",
+      "text": "a) A 50 Hz 3 phase alternator with grounded neutral has an inductance of $1.6 \\text{ mH}$ per phase and is connected to the bus-bars through a circuit breaker. The capacitance to earth of the circuit between the alternator and the circuit breaker is $0.0032 \\mu F$ per phase. Due to a short on the bus-bars the breaker opens when the rms value of the current is $8000 \\text{ A}$. Determine the following (i) frequency of the oscillation (ii) active recovery voltage (iii) time for maximum RRRV (iv) maximum RRRV [6]\n\nb) Explain the construction and working of $SF_6$ circuit breaker. Also enumerate the dielectric properties and arc quenching characteristic of $SF_6$ circuit breaker with their limitations. [6]\n\nc) What are the main parts of equipment which are used for the testing of a circuit breaker in a laboratory type testing station?",
+      "chapter": "Circuit Breakers",
+      "marks": "3",
+      "frequency": 5,
       "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh",
+        "2076 Bhadra",
+        "2082 Chaitra",
+        "2079 Chaitra",
         "2075 Bhadra"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh",
+        "2076 Bhadra",
+        "2082 Chaitra",
+        "2079 Chaitra",
         "2075 Bhadra"
       ],
-      "frequency": 4,
-      "difficulty": "Hard",
-      "importance": "High"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-3",
-      "chapter": "Fundamentals of Power System Protection",
-      "text": "Explain resistance switching in circuit breakers. Derive the expression for critical damping resistance: $R_{cr} = 0.5\\sqrt{L/C}$ to prevent transient oscillation across circuit breaker contacts.",
-      "question": "Explain resistance switching in circuit breakers. Derive the expression for critical damping resistance: $R_{cr} = 0.5\\sqrt{L/C}$ to prevent transient oscillation across circuit breaker contacts.",
-      "marks": "6",
+      "question": "A 50 Hz 3 phase alternator with grounded neutral has an inductance of $1.6 \\text{ mH}$ per phase and is connected to the bus-bars through a circuit breaker. The capacitance to earth of the circuit between the alternator and the circuit breaker is $0.0032 \\mu F$ per phase. Due to a short on the bus-bars the breaker opens when the rms value of the current is $8000 \\text{ A}$. Determine the following (i) frequency of the oscillation (ii) active recovery voltage (iii) time for maximum RRRV (iv) maximum RRRV",
+      "text": "A 50 Hz 3 phase alternator with grounded neutral has an inductance of $1.6 \\text{ mH}$ per phase and is connected to the bus-bars through a circuit breaker. The capacitance to earth of the circuit between the alternator and the circuit breaker is $0.0032 \\mu F$ per phase. Due to a short on the bus-bars the breaker opens when the rms value of the current is $8000 \\text{ A}$. Determine the following (i) frequency of the oscillation (ii) active recovery voltage (iii) time for maximum RRRV (iv) maximum RRRV",
+      "chapter": "Static and Numerical Relays",
+      "marks": "8",
+      "frequency": 5,
       "years": [
+        "2076 Bhadra",
         "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2079 Chaitra",
+        "2075 Bhadra"
       ],
       "examSessions": [
+        "2076 Bhadra",
         "2082 Chaitra",
-        "2080 Baishakh",
-        "2078 Bhadra"
+        "2079 Chaitra",
+        "2075 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-4",
-      "chapter": "Fundamentals of Power System Protection",
-      "text": "Explain current chopping phenomenon in circuit breakers when interrupting low inductive currents (such as transformer on no-load). Derive the prospective overvoltage across contacts ($e = i \\sqrt{L/C}$).",
-      "question": "Explain current chopping phenomenon in circuit breakers when interrupting low inductive currents (such as transformer on no-load). Derive the prospective overvoltage across contacts ($e = i \\sqrt{L/C}$).",
-      "marks": "6",
+      "question": "a) Explain with a neat sketch how automation of a system is done with the help of a contactor. [6]\n\nb) What are the causes over voltages on power system? List the merits and demerits of solid grounding. [5]\n\nc) Calculate the inductance and kVA rating of the arc suppression coil of a 50 km long 33 kV, 50 Hz, 3 phase overhead transmission system having line to earth capacitance of each phase equal to $0.0125 \\mu F$.",
+      "text": "a) Explain with a neat sketch how automation of a system is done with the help of a contactor. [6]\n\nb) What are the causes over voltages on power system? List the merits and demerits of solid grounding. [5]\n\nc) Calculate the inductance and kVA rating of the arc suppression coil of a 50 km long 33 kV, 50 Hz, 3 phase overhead transmission system having line to earth capacitance of each phase equal to $0.0125 \\mu F$.",
+      "chapter": "Earthing and Protection Against Over Voltage",
+      "marks": "4",
+      "frequency": 5,
       "years": [
-        "2083 Baishakh",
-        "2081 Chaitra",
-        "2079 Baishakh"
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2074 Bhadra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Chaitra",
-        "2079 Baishakh"
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2074 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-5",
-      "chapter": "Circuit Interruption Theory and Circuit Breakers",
-      "text": "Describe the construction, working principle, and arc extinction mechanism of an Air Blast Circuit Breaker (ABCB) with axial blast, cross blast, and radial blast designs.",
-      "question": "Describe the construction, working principle, and arc extinction mechanism of an Air Blast Circuit Breaker (ABCB) with axial blast, cross blast, and radial blast designs.",
+      "question": "a) Discuss the advantages and limitations of static relays over electromagnetic relays. Also explain the main components of a static relay with the help of block diagram. [8]\n\nb) Explain the operating principles of static overvoltage and undervoltage relays. How do these relays detect abnormal voltage conditions and initiate protective actions to prevent equipment damage?",
+      "text": "a) Discuss the advantages and limitations of static relays over electromagnetic relays. Also explain the main components of a static relay with the help of block diagram. [8]\n\nb) Explain the operating principles of static overvoltage and undervoltage relays. How do these relays detect abnormal voltage conditions and initiate protective actions to prevent equipment damage?",
+      "chapter": "Static and Numerical Relays",
       "marks": "8",
+      "frequency": 5,
       "years": [
-        "2082 Bhadra",
-        "2081 Baishakh",
-        "2078 Chaitra"
+        "2080 Chaitra",
+        "2075 Bhadra",
+        "2072 Magh",
+        "2070 Bhadra"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2081 Baishakh",
-        "2078 Chaitra"
+        "2080 Chaitra",
+        "2075 Bhadra",
+        "2072 Magh",
+        "2070 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-6",
-      "chapter": "Circuit Interruption Theory and Circuit Breakers",
-      "text": "Explain the physical and dielectric properties of Sulphur Hexafluoride ($SF_6$) gas. Describe the construction and operation of a puffer-type $SF_6$ circuit breaker.",
-      "question": "Explain the physical and dielectric properties of Sulphur Hexafluoride ($SF_6$) gas. Describe the construction and operation of a puffer-type $SF_6$ circuit breaker.",
-      "marks": "8",
+      "question": "a) List down the basic requirements of good protective scheme. What do you understand by coordination of protective device and protection zone? [6]\n\nb) Explain the need of capacitive voltage transformer in power system. [4]\n\nc) What are the considerations in selecting a fuse for (i) Transformer protection (ii) capacitor protection (iii) lighting loads",
+      "text": "a) List down the basic requirements of good protective scheme. What do you understand by coordination of protective device and protection zone? [6]\n\nb) Explain the need of capacitive voltage transformer in power system. [4]\n\nc) What are the considerations in selecting a fuse for (i) Transformer protection (ii) capacitor protection (iii) lighting loads",
+      "chapter": "Fundamental of Power System Protection",
+      "marks": "4",
+      "frequency": 5,
       "years": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2076 Chaitra"
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2073 Bhadra",
+        "2072 Magh"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2076 Chaitra"
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2073 Bhadra",
+        "2072 Magh"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-7",
-      "chapter": "Circuit Interruption Theory and Circuit Breakers",
-      "text": "Explain the arc extinction mechanism in Vacuum Circuit Breakers (VCB). Describe contact materials, butt and spiral contact geometries, and explain why VCBs are preferred in medium-voltage ($11\\text{ kV} - 33\\text{ kV}$) switchgear.",
-      "question": "Explain the arc extinction mechanism in Vacuum Circuit Breakers (VCB). Describe contact materials, butt and spiral contact geometries, and explain why VCBs are preferred in medium-voltage ($11\\text{ kV} - 33\\text{ kV}$) switchgear.",
-      "marks": "8",
+      "question": "a) Explain the working of static differential relay with the proper block diagram and circuit diagram. [8]\n\nb) Discuss the advantages of digital relays. Describe the basic functional blocks of a digital relay.",
+      "text": "a) Explain the working of static differential relay with the proper block diagram and circuit diagram. [8]\n\nb) Discuss the advantages of digital relays. Describe the basic functional blocks of a digital relay.",
+      "chapter": "Static and Numerical Relays",
+      "marks": "5",
+      "frequency": 5,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2077 Chaitra"
+        "2073 Bhadra",
+        "2082 Chaitra",
+        "2071 Bhadra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2077 Chaitra"
+        "2073 Bhadra",
+        "2082 Chaitra",
+        "2071 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "switchgear-and-protection-8",
-      "chapter": "Circuit Interruption Theory and Circuit Breakers",
-      "text": "Compare Bulk Oil Circuit Breakers (BOCB), Minimum Oil Circuit Breakers (MOCB), Air Blast Circuit Breakers, $SF_6$ Circuit Breakers, and Vacuum Circuit Breakers with respect to dielectric medium, maintenance, fire hazard, and voltage limits.",
-      "question": "Compare Bulk Oil Circuit Breakers (BOCB), Minimum Oil Circuit Breakers (MOCB), Air Blast Circuit Breakers, $SF_6$ Circuit Breakers, and Vacuum Circuit Breakers with respect to dielectric medium, maintenance, fire hazard, and voltage limits.",
-      "marks": "6",
+      "question": "Also explain the main components of a static relay with the help of block diagram.",
+      "text": "Also explain the main components of a static relay with the help of block diagram.",
+      "chapter": "Static and Numerical Relays",
+      "marks": "8",
+      "frequency": 5,
       "years": [
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2075 Bhadra"
+        "2080 Chaitra",
+        "2075 Bhadra",
+        "2072 Magh",
+        "2070 Bhadra"
       ],
       "examSessions": [
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2075 Bhadra"
+        "2080 Chaitra",
+        "2075 Bhadra",
+        "2072 Magh",
+        "2070 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-9",
-      "chapter": "Circuit Interruption Theory and Circuit Breakers",
-      "text": "Define circuit breaker ratings: Rated voltage, Rated normal current, Rated breaking capacity (symmetrical and asymmetrical), Rated making capacity ($2.55 \\times I_b$), and Short-time withstand current rating.",
-      "question": "Define circuit breaker ratings: Rated voltage, Rated normal current, Rated breaking capacity (symmetrical and asymmetrical), Rated making capacity ($2.55 \\times I_b$), and Short-time withstand current rating.",
-      "marks": "6",
+      "question": "List down the basic requirements of good protective scheme.",
+      "text": "List down the basic requirements of good protective scheme.",
+      "chapter": "Static and Numerical Relays",
+      "marks": "8",
+      "frequency": 5,
       "years": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2078 Chaitra"
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2073 Bhadra",
+        "2072 Magh"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2078 Chaitra"
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2073 Bhadra",
+        "2072 Magh"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-10",
-      "chapter": "Protective Relays (Electromechanical and Microprocessor-Based)",
-      "text": "Explain the fundamental requirements of protective relaying: Selectivity (discrimination), Sensitivity, Speed, Reliability, Simplicity, and Economy.",
-      "question": "Explain the fundamental requirements of protective relaying: Selectivity (discrimination), Sensitivity, Speed, Reliability, Simplicity, and Economy.",
-      "marks": "6",
+      "question": "Describe the basic functional blocks of a digital relay.",
+      "text": "Describe the basic functional blocks of a digital relay.",
+      "chapter": "Static and Numerical Relays",
+      "marks": "8",
+      "frequency": 5,
       "years": [
-        "2083 Baishakh",
+        "2073 Bhadra",
         "2082 Chaitra",
-        "2080 Chaitra"
+        "2071 Bhadra"
       ],
       "examSessions": [
-        "2083 Baishakh",
+        "2073 Bhadra",
         "2082 Chaitra",
-        "2080 Chaitra"
+        "2071 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-11",
-      "chapter": "Protective Relays (Electromechanical and Microprocessor-Based)",
-      "text": "Describe the construction and operating principle of an induction disc overcurrent relay. Derive the electromagnetic torque equation ($T = k \\Phi_1 \\Phi_2 \\sin \\alpha$). Define Plug Setting Multiplier (PSM) and Time Multiplier Setting (TMS).",
-      "question": "Describe the construction and operating principle of an induction disc overcurrent relay. Derive the electromagnetic torque equation ($T = k \\Phi_1 \\Phi_2 \\sin \\alpha$). Define Plug Setting Multiplier (PSM) and Time Multiplier Setting (TMS).",
+      "question": "Briefly discuss different types of neutral earthing.",
+      "text": "Briefly discuss different types of neutral earthing.",
+      "chapter": "Static and Numerical Relays",
       "marks": "8",
+      "frequency": 5,
       "years": [
-        "2081 Bhadra",
-        "2079 Baishakh",
-        "2077 Magh"
+        "2074 Bhadra",
+        "2070 Bhadra"
       ],
       "examSessions": [
-        "2081 Bhadra",
-        "2079 Baishakh",
-        "2077 Magh"
+        "2074 Bhadra",
+        "2070 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-12",
-      "chapter": "Protective Relays (Electromechanical and Microprocessor-Based)",
-      "text": "Explain Inverse Definite Minimum Time (IDMT) characteristic according to IEC 60255 ($t = \\frac{0.14 \\times TMS}{(PSM)^{0.02} - 1}$). Calculate the operating time of an IDMT relay with $CT = 400/5\\text{ A}$, plug setting $125\\%$, $TMS = 0.5$, and fault current $4000\\text{ A}$.",
-      "question": "Explain Inverse Definite Minimum Time (IDMT) characteristic according to IEC 60255 ($t = \\frac{0.14 \\times TMS}{(PSM)^{0.02} - 1}$). Calculate the operating time of an IDMT relay with $CT = 400/5\\text{ A}$, plug setting $125\\%$, $TMS = 0.5$, and fault current $4000\\text{ A}$.",
-      "marks": "8",
+      "question": "a) List down the different applications of contactor. With the help of necessary schematic circuit explain how star-delta starting of motor can be achieved with the help of contactors. [6]\n\nb) Calculate the inductance and kVA rating of Peterson coil of a $230\\text{ kV}$, $3$-phase, $50\\text{ Hz}$, $200\\text{ km}$ overhead transmission system having capacitance to earth of $0.01\\ \\mu\\text{F/km}$ per phase. [5]\n\nc) With the help of neat sketch, explain the types of isolators and state the major differences between isolator and circuit breaker.",
+      "text": "a) List down the different applications of contactor. With the help of necessary schematic circuit explain how star-delta starting of motor can be achieved with the help of contactors. [6]\n\nb) Calculate the inductance and kVA rating of Peterson coil of a $230\\text{ kV}$, $3$-phase, $50\\text{ Hz}$, $200\\text{ km}$ overhead transmission system having capacitance to earth of $0.01\\ \\mu\\text{F/km}$ per phase. [5]\n\nc) With the help of neat sketch, explain the types of isolators and state the major differences between isolator and circuit breaker.",
+      "chapter": "Fuses, Isolators, and Contactors",
+      "marks": "5",
+      "frequency": 4,
       "years": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2076 Bhadra"
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2077 Chaitra"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2076 Bhadra"
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2077 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-13",
-      "chapter": "Protective Relays (Electromechanical and Microprocessor-Based)",
-      "text": "Explain the architecture of Numerical Protective Relays: signal conditioning, anti-aliasing filter, sample-and-hold, ADC, digital signal processor (DSP), and trip logic. Compare numerical relays with static and electromechanical relays.",
-      "question": "Explain the architecture of Numerical Protective Relays: signal conditioning, anti-aliasing filter, sample-and-hold, ADC, digital signal processor (DSP), and trip logic. Compare numerical relays with static and electromechanical relays.",
+      "question": "Explain, with a neat Single-Line Diagram (SLD), how the isolator, circuit breaker, and earthing switch operate in a coordinated manner to ensure the safe operation and maintenance of a substation.",
+      "text": "Explain, with a neat Single-Line Diagram (SLD), how the isolator, circuit breaker, and earthing switch operate in a coordinated manner to ensure the safe operation and maintenance of a substation.",
+      "chapter": "Static and Numerical Relays",
       "marks": "8",
+      "frequency": 4,
       "years": [
-        "2083 Baishakh",
-        "2081 Chaitra",
-        "2078 Bhadra"
+        "2082 Chaitra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Chaitra",
-        "2078 Bhadra"
+        "2082 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-14",
-      "chapter": "Protective Relays (Electromechanical and Microprocessor-Based)",
-      "text": "Explain Current Transformer (CT) saturation and error characteristics: Ratio error and Phase angle error. What is CT Burden, Accuracy Class (5P10, 5P20), and Knee-Point Voltage ($V_k$) in protection CTs?",
-      "question": "Explain Current Transformer (CT) saturation and error characteristics: Ratio error and Phase angle error. What is CT Burden, Accuracy Class (5P10, 5P20), and Knee-Point Voltage ($V_k$) in protection CTs?",
-      "marks": "6",
+      "question": "Explain the working principle of static differential relay with the proper block diagram and circuit diagram.",
+      "text": "Explain the working principle of static differential relay with the proper block diagram and circuit diagram.",
+      "chapter": "Static and Numerical Relays",
+      "marks": "8",
+      "frequency": 4,
       "years": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2079 Chaitra"
+        "2077 Chaitra",
+        "2073 Bhadra"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2079 Chaitra"
+        "2077 Chaitra",
+        "2073 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "switchgear-and-protection-15",
-      "chapter": "Transmission Line Protection and Distance Relaying",
-      "text": "Explain time-graded and current-graded overcurrent protection for radial feeders. Explain the coordination of IDMT overcurrent relays in a series radial system.",
-      "question": "Explain time-graded and current-graded overcurrent protection for radial feeders. Explain the coordination of IDMT overcurrent relays in a series radial system.",
+      "question": "Why the neutral in a power system is grounded?",
+      "text": "Why the neutral in a power system is grounded?",
+      "chapter": "Static and Numerical Relays",
       "marks": "8",
+      "frequency": 4,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2078 Chaitra"
+        "2070 Bhadra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2078 Chaitra"
+        "2070 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-16",
-      "chapter": "Transmission Line Protection and Distance Relaying",
-      "text": "Explain directional overcurrent relays. Draw the schematic diagram of ring main feeder protection showing non-directional and directional relay placement and grading.",
-      "question": "Explain directional overcurrent relays. Draw the schematic diagram of ring main feeder protection showing non-directional and directional relay placement and grading.",
+      "question": "Discuss the advantages of digital relays.",
+      "text": "Discuss the advantages of digital relays.",
+      "chapter": "Static and Numerical Relays",
       "marks": "8",
+      "frequency": 4,
       "years": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2077 Chaitra"
+        "2073 Bhadra",
+        "2071 Bhadra"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2077 Chaitra"
+        "2073 Bhadra",
+        "2071 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-17",
-      "chapter": "Transmission Line Protection and Distance Relaying",
-      "text": "Explain distance protection of transmission lines. Describe the operating characteristics on the R-X diagram for: (a) Impedance relay, (b) Reactance relay, (c) Mho (admittance) relay, and (d) Offset Mho relay.",
-      "question": "Explain distance protection of transmission lines. Describe the operating characteristics on the R-X diagram for: (a) Impedance relay, (b) Reactance relay, (c) Mho (admittance) relay, and (d) Offset Mho relay.",
-      "marks": "8",
+      "question": "a) Determine the rated symmetrical breaking circuit, making current and short time rating of a circuit with following parameters.\n33kV, 1500A, 3000MVA, 1sec [4]\n\nb) Define following terms:\n\n(i) Recovery voltage\n(ii) Re-striking voltage\n(iii) RRRV\nAlso, derive an expression for the restriking voltage in terms of system inductance and capacitance. [6]\n\nc) Describe the construction and working principle and application area of a vacuum circuit breaker.",
+      "text": "a) Determine the rated symmetrical breaking circuit, making current and short time rating of a circuit with following parameters.\n33kV, 1500A, 3000MVA, 1sec [4]\n\nb) Define following terms:\n\n(i) Recovery voltage\n(ii) Re-striking voltage\n(iii) RRRV\nAlso, derive an expression for the restriking voltage in terms of system inductance and capacitance. [6]\n\nc) Describe the construction and working principle and application area of a vacuum circuit breaker.",
+      "chapter": "Circuit Breakers",
+      "marks": "4",
+      "frequency": 3,
       "years": [
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2077 Chaitra"
       ],
       "examSessions": [
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2077 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-18",
-      "chapter": "Transmission Line Protection and Distance Relaying",
-      "text": "Explain three-zone distance protection of transmission lines. Why is Zone 1 set to $80-85\\%$ of line length? What are the time delays and reach settings of Zone 2 ($120-150\\%$) and Zone 3 ($100\\% \\text{ line} + 120\\% \\text{ next line}$)?",
-      "question": "Explain three-zone distance protection of transmission lines. Why is Zone 1 set to $80-85\\%$ of line length? What are the time delays and reach settings of Zone 2 ($120-150\\%$) and Zone 3 ($100\\% \\text{ line} + 120\\% \\text{ next line}$)?",
-      "marks": "8",
+      "question": "a) What are primary and back up protection? Explain the necessity of back up protection with an example. [5]\n\nb) What do you mean by typical knee point voltage in relation to CT? Briefly explain the different errors of CT and its causes. [5]\n\nc) Explain the operating characteristics of HRC fuse. How do these characteristics influence their applications in electrical systems?",
+      "text": "a) What are primary and back up protection? Explain the necessity of back up protection with an example. [5]\n\nb) What do you mean by typical knee point voltage in relation to CT? Briefly explain the different errors of CT and its causes. [5]\n\nc) Explain the operating characteristics of HRC fuse. How do these characteristics influence their applications in electrical systems?",
+      "chapter": "Fundamental of Power System Protection",
+      "marks": "5",
+      "frequency": 3,
       "years": [
-        "2083 Baishakh",
-        "2082 Chaitra",
-        "2080 Chaitra"
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2070 Bhadra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2082 Chaitra",
-        "2080 Chaitra"
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2070 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-19",
-      "chapter": "Transmission Line Protection and Distance Relaying",
-      "text": "Explain the effect of power swings and arc resistance on distance relays. Why is the reactance relay preferred for short lines and the Mho relay for long lines?",
-      "question": "Explain the effect of power swings and arc resistance on distance relays. Why is the reactance relay preferred for short lines and the Mho relay for long lines?",
-      "marks": "6",
+      "question": "What are the main parts of equipment which are used for the testing of a circuit breaker in a laboratory type testing station?",
+      "text": "What are the main parts of equipment which are used for the testing of a circuit breaker in a laboratory type testing station?",
+      "chapter": "Static and Numerical Relays",
+      "marks": "8",
+      "frequency": 3,
       "years": [
-        "2081 Bhadra",
-        "2079 Baishakh",
-        "2077 Magh"
+        "2076 Bhadra",
+        "2082 Chaitra"
       ],
       "examSessions": [
-        "2081 Bhadra",
-        "2079 Baishakh",
-        "2077 Magh"
+        "2076 Bhadra",
+        "2082 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-20",
-      "chapter": "Transmission Line Protection and Distance Relaying",
-      "text": "Explain carrier-aided distance protection: Carrier Blocking, Permissive Underreach Transfer Trip (PUTT), and Permissive Overreach Transfer Trip (POTT) schemes.",
-      "question": "Explain carrier-aided distance protection: Carrier Blocking, Permissive Underreach Transfer Trip (PUTT), and Permissive Overreach Transfer Trip (POTT) schemes.",
+      "question": "Describe the construction and working principle and application area of a vacuum circuit breaker.",
+      "text": "Describe the construction and working principle and application area of a vacuum circuit breaker.",
+      "chapter": "Static and Numerical Relays",
       "marks": "8",
+      "frequency": 3,
       "years": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2076 Bhadra"
+        "2077 Chaitra"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2076 Bhadra"
+        "2077 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-21",
-      "chapter": "Apparatus Protection (Generators and Transformers)",
-      "text": "Explain the percentage biased (restrained) differential protection principle (Merz-Price scheme) for power transformers. Derive the operating condition ($I_1 - I_2 > k \\frac{I_1 + I_2}{2}$). Why is a percentage bias necessary?",
-      "question": "Explain the percentage biased (restrained) differential protection principle (Merz-Price scheme) for power transformers. Derive the operating condition ($I_1 - I_2 > k \\frac{I_1 + I_2}{2}$). Why is a percentage bias necessary?",
+      "question": "Discuss the advantages and limitations of static relays over electromagnetic relays.",
+      "text": "Discuss the advantages and limitations of static relays over electromagnetic relays.",
+      "chapter": "Static and Numerical Relays",
       "marks": "8",
+      "frequency": 3,
       "years": [
-        "2083 Baishakh",
-        "2081 Chaitra",
-        "2078 Bhadra"
+        "2080 Chaitra",
+        "2074 Bhadra",
+        "2071 Bhadra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Chaitra",
-        "2078 Bhadra"
+        "2080 Chaitra",
+        "2074 Bhadra",
+        "2071 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-22",
-      "chapter": "Apparatus Protection (Generators and Transformers)",
-      "text": "Explain CT connection rules for differential protection of a Star-Delta power transformer. Why must CTs on the star side be connected in delta and CTs on the delta side in star?",
-      "question": "Explain CT connection rules for differential protection of a Star-Delta power transformer. Why must CTs on the star side be connected in delta and CTs on the delta side in star?",
+      "question": "Define phase comparator and explain the types of comparators used in static relays.",
+      "text": "Define phase comparator and explain the types of comparators used in static relays.",
+      "chapter": "Static and Numerical Relays",
       "marks": "8",
+      "frequency": 3,
       "years": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2079 Chaitra"
+        "2076 Bhadra",
+        "2077 Chaitra",
+        "2072 Ashwin"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2079 Chaitra"
+        "2076 Bhadra",
+        "2077 Chaitra",
+        "2072 Ashwin"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-23",
-      "chapter": "Apparatus Protection (Generators and Transformers)",
-      "text": "Explain magnetizing inrush current in power transformers. What harmonic components dominate inrush current? How does Harmonic Restraint differential protection prevent false tripping during transformer energization?",
-      "question": "Explain magnetizing inrush current in power transformers. What harmonic components dominate inrush current? How does Harmonic Restraint differential protection prevent false tripping during transformer energization?",
+      "question": "Explain the working of dropout fuse.",
+      "text": "Explain the working of dropout fuse.",
+      "chapter": "Static and Numerical Relays",
       "marks": "8",
+      "frequency": 3,
       "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2078 Chaitra"
+        "2081 Chaitra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2078 Chaitra"
+        "2081 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-24",
-      "chapter": "Apparatus Protection (Generators and Transformers)",
-      "text": "Describe the construction and working of a Buchholz Relay for transformer internal fault detection. What types of faults trigger alarm and trip contacts?",
-      "question": "Describe the construction and working of a Buchholz Relay for transformer internal fault detection. What types of faults trigger alarm and trip contacts?",
-      "marks": "6",
+      "question": "a) Discuss why backup protection is necessary in a power system and explain the overlapping of protective zones with neat sketch. [4]\n\nb) A current transformer is connected in a $400\\text{ V}$ system and has a single turn on its primary and $180$ turns on its secondary. An ammeter with $0.15\\ \\Omega$ internal resistance is connected to the CT. The ammeter is required to give a full-scale deflection when the primary current is $900\\text{ A}$. Calculate, [4]\n\ni) The maximum secondary current\nii) Secondary voltage at CT terminals when ammeter is removed\n\nc) Explain the cut-off characteristics of a fuse.",
+      "text": "a) Discuss why backup protection is necessary in a power system and explain the overlapping of protective zones with neat sketch. [4]\n\nb) A current transformer is connected in a $400\\text{ V}$ system and has a single turn on its primary and $180$ turns on its secondary. An ammeter with $0.15\\ \\Omega$ internal resistance is connected to the CT. The ammeter is required to give a full-scale deflection when the primary current is $900\\text{ A}$. Calculate, [4]\n\ni) The maximum secondary current\nii) Secondary voltage at CT terminals when ammeter is removed\n\nc) Explain the cut-off characteristics of a fuse.",
+      "chapter": "Fundamental of Power System Protection",
+      "marks": "4",
+      "frequency": 2,
       "years": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2077 Chaitra"
+        "2082 Chaitra",
+        "2082 Chaitra"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2077 Chaitra"
+        "2082 Chaitra",
+        "2082 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Easy",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "switchgear-and-protection-25",
-      "chapter": "Apparatus Protection (Generators and Transformers)",
-      "text": "Explain stator inter-turn fault protection and stator earth fault protection of large synchronous generators. Why can standard differential protection not detect $100\\%$ of stator windings for ground faults near the neutral?",
-      "question": "Explain stator inter-turn fault protection and stator earth fault protection of large synchronous generators. Why can standard differential protection not detect $100\\%$ of stator windings for ground faults near the neutral?",
-      "marks": "8",
+      "question": "a) Why contactors are preferred to control a motor instead of a manual switch? Explain with a neat sketch. [4]\n\nb) Explain, with a neat Single-Line Diagram (SLD), how the isolator, circuit breaker, and earthing switch operate in a coordinated manner to ensure the safe operation and maintenance of a substation.",
+      "text": "a) Why contactors are preferred to control a motor instead of a manual switch? Explain with a neat sketch. [4]\n\nb) Explain, with a neat Single-Line Diagram (SLD), how the isolator, circuit breaker, and earthing switch operate in a coordinated manner to ensure the safe operation and maintenance of a substation.",
+      "chapter": "Fuses, Isolators, and Contactors",
+      "marks": "4",
+      "frequency": 2,
       "years": [
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2082 Chaitra"
       ],
       "examSessions": [
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2076 Chaitra"
+        "2082 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-26",
-      "chapter": "Apparatus Protection (Generators and Transformers)",
-      "text": "Explain rotor protection of synchronous generators: (a) Rotor earth fault protection, (b) Loss of excitation (loss of field) protection using offset Mho relays, and (c) Rotor overheating due to negative sequence currents.",
-      "question": "Explain rotor protection of synchronous generators: (a) Rotor earth fault protection, (b) Loss of excitation (loss of field) protection using offset Mho relays, and (c) Rotor overheating due to negative sequence currents.",
+      "question": "a) Describe static distance relays and their area of application. [8]\n\nb) What do you understand by amplitude comparator and phase comparator? Write short notes on (i) Time Delay Circuits and (ii) Level Detector.",
+      "text": "a) Describe static distance relays and their area of application. [8]\n\nb) What do you understand by amplitude comparator and phase comparator? Write short notes on (i) Time Delay Circuits and (ii) Level Detector.",
+      "chapter": "Static and Numerical Relays",
       "marks": "8",
+      "frequency": 2,
       "years": [
-        "2083 Baishakh",
-        "2082 Chaitra",
-        "2080 Chaitra"
+        "2072 Ashwin",
+        "2076 Bhadra"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2082 Chaitra",
-        "2080 Chaitra"
+        "2072 Ashwin",
+        "2076 Bhadra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-27",
-      "chapter": "Busbar, Motor Protection and Surge Protection",
-      "text": "Explain high-impedance differential protection of substation busbars. How does high impedance in the relay circuit prevent false operation under severe external through-fault CT saturation?",
-      "question": "Explain high-impedance differential protection of substation busbars. How does high impedance in the relay circuit prevent false operation under severe external through-fault CT saturation?",
+      "question": "a) Explain the working principle of static differential relay with the proper block diagram and circuit diagram. [8]\n\nb) Define comparator and explain its types used in static relay.",
+      "text": "a) Explain the working principle of static differential relay with the proper block diagram and circuit diagram. [8]\n\nb) Define comparator and explain its types used in static relay.",
+      "chapter": "Static and Numerical Relays",
       "marks": "8",
+      "frequency": 2,
       "years": [
-        "2081 Bhadra",
-        "2079 Baishakh",
-        "2077 Magh"
+        "2077 Chaitra"
       ],
       "examSessions": [
-        "2081 Bhadra",
-        "2079 Baishakh",
-        "2077 Magh"
+        "2077 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "switchgear-and-protection-28",
-      "chapter": "Busbar, Motor Protection and Surge Protection",
-      "text": "Explain the causes and mechanisms of lightning overvoltages and switching surges in power systems. Describe the travelling wave phenomenon and reflection/refraction coefficients at line terminations.",
-      "question": "Explain the causes and mechanisms of lightning overvoltages and switching surges in power systems. Describe the travelling wave phenomenon and reflection/refraction coefficients at line terminations.",
-      "marks": "8",
+      "question": "a) Two relays $R_1$ and $R_2$ are connected in two sections of a feeder is shown in figure. Fault current level at 11 kV side is $3500\\ \\text{A}$, CT ratio at 11 kV side is $200:1$ and 132kV side is $100:1$. If $R_1$ set on 125% and $R_2$ set on 150% plug setting. Determine the operating time for both the relays when time grading margin of $0.75\\ \\text{second}$ is given and TMS for relay $R_1$ is $0.25$. Make use of the following characteristics. [5]\n\nIDMT Characteristics<table><thead><tr><th>PSM</th><th>2</th><th>4.6</th><th>5.33</th><th>6.73</th><th>8.2</th><th>10</th><th>12.3</th><th>13.6</th><th>15</th></tr></thead><tbody><tr><td>Operating time (sec)</td><td>10</td><td>6</td><td>4.5</td><td>4</td><td>3.15</td><td>2.8</td><td>2.5</td><td>2.3</td><td>2</td></tr></tbody></table>b) A transmission line is to be designed and protected using distance protection schemes.\n\n(i) Draw a neat single-line diagram of the transmission line and illustrate the division of the protection system into appropriate distance protection zones, clearly indicating the reach and coverage of each zone.\n(ii) Explain the concept of zone-wise protection in distance relays, and justify the need for multiple zones to ensure selectivity and reliability.\n(iii) Describe the working principle of carrier-aided protection and explain how it improves the performance of distance protection in transmission lines. [2+2+1]\n\nc) A three phase, 11/132 kV, delta star connected power transformer is protected by differential protection. The CTs on the LV side have a current ratio of 250/1. What must be the current ratio of the CTs on the HV side?",
+      "text": "a) Two relays $R_1$ and $R_2$ are connected in two sections of a feeder is shown in figure. Fault current level at 11 kV side is $3500\\ \\text{A}$, CT ratio at 11 kV side is $200:1$ and 132kV side is $100:1$. If $R_1$ set on 125% and $R_2$ set on 150% plug setting. Determine the operating time for both the relays when time grading margin of $0.75\\ \\text{second}$ is given and TMS for relay $R_1$ is $0.25$. Make use of the following characteristics. [5]\n\nIDMT Characteristics<table><thead><tr><th>PSM</th><th>2</th><th>4.6</th><th>5.33</th><th>6.73</th><th>8.2</th><th>10</th><th>12.3</th><th>13.6</th><th>15</th></tr></thead><tbody><tr><td>Operating time (sec)</td><td>10</td><td>6</td><td>4.5</td><td>4</td><td>3.15</td><td>2.8</td><td>2.5</td><td>2.3</td><td>2</td></tr></tbody></table>b) A transmission line is to be designed and protected using distance protection schemes.\n\n(i) Draw a neat single-line diagram of the transmission line and illustrate the division of the protection system into appropriate distance protection zones, clearly indicating the reach and coverage of each zone.\n(ii) Explain the concept of zone-wise protection in distance relays, and justify the need for multiple zones to ensure selectivity and reliability.\n(iii) Describe the working principle of carrier-aided protection and explain how it improves the performance of distance protection in transmission lines. [2+2+1]\n\nc) A three phase, 11/132 kV, delta star connected power transformer is protected by differential protection. The CTs on the LV side have a current ratio of 250/1. What must be the current ratio of the CTs on the HV side?",
+      "chapter": "Relay and Protection Schemes",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2076 Bhadra"
+        "2082 Chaitra"
       ],
       "examSessions": [
-        "2082 Bhadra",
-        "2080 Baishakh",
-        "2076 Bhadra"
+        "2082 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Hard",
-      "importance": "Medium"
+      "isDiagram": true
     },
     {
       "id": "switchgear-and-protection-29",
-      "chapter": "Busbar, Motor Protection and Surge Protection",
-      "text": "Explain the working principle, volt-ampere characteristic, and advantages of Gapless Zinc Oxide (ZnO) Metal Oxide Surge Arresters (MOSA) over traditional silicon carbide surge arresters with spark gaps.",
-      "question": "Explain the working principle, volt-ampere characteristic, and advantages of Gapless Zinc Oxide (ZnO) Metal Oxide Surge Arresters (MOSA) over traditional silicon carbide surge arresters with spark gaps.",
+      "question": "a) Referring to the following figure; given that fault current is 2000 A; Relay 1 set on 100%; CT ratio = 200/1; Relay 2 set on 125%; CT ratio = 200/1. For discrimination the time gradient margin between the relay is 0.5 second. [6]\n\nDetermine the time of operation of the two relay assuming that both relays have the characteristics as shown in the following table and the relay no. 1 has a time multiplier setting equal to 0.2. Also determine the time setting multiplier of relay 2.<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time for unity TSM</td><td>10</td><td>6</td><td>3.9</td><td>3.15</td><td>2.8</td><td>2.2</td><td>2.1</td></tr></tbody></table>b) A 15 MVA, 132/33 kV, delta-star 3 phase power transformer is protected by percentage differential relay. The CTs connected on HV and LV sides are 75/5 and 500/5 A respectively. The relay rating is 1 A. Determine: (i) the rated current of both sides, (ii) the relay current at full load, and (iii) the relay current at only 85 % loading. [6]\n\nc) Explain the working principle of an IDMT relay, including how it detects overcurrent conditions and the relationship between current setting, time delay, and time-current characteristics in IDMT relays.",
+      "text": "a) Referring to the following figure; given that fault current is 2000 A; Relay 1 set on 100%; CT ratio = 200/1; Relay 2 set on 125%; CT ratio = 200/1. For discrimination the time gradient margin between the relay is 0.5 second. [6]\n\nDetermine the time of operation of the two relay assuming that both relays have the characteristics as shown in the following table and the relay no. 1 has a time multiplier setting equal to 0.2. Also determine the time setting multiplier of relay 2.<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time for unity TSM</td><td>10</td><td>6</td><td>3.9</td><td>3.15</td><td>2.8</td><td>2.2</td><td>2.1</td></tr></tbody></table>b) A 15 MVA, 132/33 kV, delta-star 3 phase power transformer is protected by percentage differential relay. The CTs connected on HV and LV sides are 75/5 and 500/5 A respectively. The relay rating is 1 A. Determine: (i) the rated current of both sides, (ii) the relay current at full load, and (iii) the relay current at only 85 % loading. [6]\n\nc) Explain the working principle of an IDMT relay, including how it detects overcurrent conditions and the relationship between current setting, time delay, and time-current characteristics in IDMT relays.",
+      "chapter": "Relay and Protection Schemes",
       "marks": "6",
+      "frequency": 1,
       "years": [
-        "2083 Baishakh",
-        "2081 Chaitra",
-        "2078 Bhadra"
+        "2082 Kartik"
       ],
       "examSessions": [
-        "2083 Baishakh",
-        "2081 Chaitra",
-        "2078 Bhadra"
+        "2082 Kartik"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": false
     },
     {
       "id": "switchgear-and-protection-30",
-      "chapter": "Busbar, Motor Protection and Surge Protection",
-      "text": "Define insulation coordination and Basic Impulse Insulation Level (BIL). Explain how protective margin is established between lightning arrester discharge voltage and equipment withstand voltage level.",
-      "question": "Define insulation coordination and Basic Impulse Insulation Level (BIL). Explain how protective margin is established between lightning arrester discharge voltage and equipment withstand voltage level.",
-      "marks": "6",
+      "question": "a) Two relays R1 and R2 are connected in two sections of a feeder as shown in figure. CTs are of ratio 1000 / 5 A. The plug setting of relay R1 is 100 % and R2 is 125 %. The operating time characteristic of the relays is given below. The time grading scheme has a discriminative time margin of 0.5 s between relays. A three phase short circuit at F results in a fault current of 5000 A. Find the actual operating times of R1 and R2. What is the time multiplier setting (TMS) of R2. [6]<table><thead><tr><th>Plug setting multiplier</th><th>2</th><th>4</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time in seconds for a time multiplier of 1</td><td>10</td><td>5</td><td>4</td><td>3</td><td>2.8</td><td>2.6</td><td>2.4</td></tr></tbody></table>b) A $220/110\\text{ kV} - 150\\text{ MVA}$ transformer is protected by percentage differential relay. The HV and LV sides are delta and star connected respectively. The CT ratio of delta side is $400/5$ and the ratio of star side is $1600/5$. Determine (i) The CT secondary currents at full load, (ii) The relay current at full load, (iii) The relay current setting for $90\\ \\%$ loading. [6]\n\nc) Explain the working principle of impedance type distance relay and also explain its application area.",
+      "text": "a) Two relays R1 and R2 are connected in two sections of a feeder as shown in figure. CTs are of ratio 1000 / 5 A. The plug setting of relay R1 is 100 % and R2 is 125 %. The operating time characteristic of the relays is given below. The time grading scheme has a discriminative time margin of 0.5 s between relays. A three phase short circuit at F results in a fault current of 5000 A. Find the actual operating times of R1 and R2. What is the time multiplier setting (TMS) of R2. [6]<table><thead><tr><th>Plug setting multiplier</th><th>2</th><th>4</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time in seconds for a time multiplier of 1</td><td>10</td><td>5</td><td>4</td><td>3</td><td>2.8</td><td>2.6</td><td>2.4</td></tr></tbody></table>b) A $220/110\\text{ kV} - 150\\text{ MVA}$ transformer is protected by percentage differential relay. The HV and LV sides are delta and star connected respectively. The CT ratio of delta side is $400/5$ and the ratio of star side is $1600/5$. Determine (i) The CT secondary currents at full load, (ii) The relay current at full load, (iii) The relay current setting for $90\\ \\%$ loading. [6]\n\nc) Explain the working principle of impedance type distance relay and also explain its application area.",
+      "chapter": "Relay and Protection Schemes",
+      "marks": "4",
+      "frequency": 1,
       "years": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2079 Chaitra"
+        "2080 Chaitra"
       ],
       "examSessions": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2079 Chaitra"
+        "2080 Chaitra"
       ],
-      "frequency": 3,
-      "difficulty": "Medium",
-      "importance": "Medium"
+      "isDiagram": true
+    },
+    {
+      "id": "switchgear-and-protection-31",
+      "question": "a) A $11\\text{ kV}$, $100\\text{ MVA}$ generator is grounded through a resistance of $6\\ \\Omega$. The CTs have a ratio of $1000:5$. The relay is set to operate when there is an out of balance current of $1\\text{ A}$. What percentage of generator winding will be protected by percentage differential scheme of protection? [6]\n\nb) In the given figure below, the fault current is $2000\\text{ A}$ and the CTs are of ratio $= 200:1$. The plug setting of Relay $R_1$ is $100\\%$ and the plug setting of Relay $R_2$ is $125\\%$. The time grading scheme has a discriminative time margin of $0.5\\text{s}$ between the relays and the time multiplier setting (TMS) of $R_1$ is $0.2$. [8]\n\nDetermine the time of operation of the two relays assuming that both relays have the characteristics as shown in the following table. Also determine the TMS of $R_2$.<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time for unity TSM</td><td>10</td><td>6</td><td>3.9</td><td>3.15</td><td>2.8</td><td>2.2</td><td>2.1</td></tr></tbody></table>c) What is an impedance relay? Explain its operating principle and characteristic along with torque equation.",
+      "text": "a) A $11\\text{ kV}$, $100\\text{ MVA}$ generator is grounded through a resistance of $6\\ \\Omega$. The CTs have a ratio of $1000:5$. The relay is set to operate when there is an out of balance current of $1\\text{ A}$. What percentage of generator winding will be protected by percentage differential scheme of protection? [6]\n\nb) In the given figure below, the fault current is $2000\\text{ A}$ and the CTs are of ratio $= 200:1$. The plug setting of Relay $R_1$ is $100\\%$ and the plug setting of Relay $R_2$ is $125\\%$. The time grading scheme has a discriminative time margin of $0.5\\text{s}$ between the relays and the time multiplier setting (TMS) of $R_1$ is $0.2$. [8]\n\nDetermine the time of operation of the two relays assuming that both relays have the characteristics as shown in the following table. Also determine the TMS of $R_2$.<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time for unity TSM</td><td>10</td><td>6</td><td>3.9</td><td>3.15</td><td>2.8</td><td>2.2</td><td>2.1</td></tr></tbody></table>c) What is an impedance relay? Explain its operating principle and characteristic along with torque equation.",
+      "chapter": "Relay and Protection Schemes",
+      "marks": "6",
+      "frequency": 1,
+      "years": [
+        "2082 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "switchgear-and-protection-32",
+      "question": "a) What is Universal Torque Equation? Using this equation derive the following characteristics (i) impedance relay (ii) reactance relay (iii) mho relay. [8]\n\nb) Two relays $R_1$ and $R_2$ are connected in two sections of a feeder as shown in figure. CTs are of ratio $1000/5\\text{ A}$. The plug setting of relay $R_1$ is $100\\%$ and $R_2$ is $125\\%$. The operating time characteristic of the relays is given below.\nThe time multiplier setting of the relay $R_1$ is $0.3$. The time grading scheme has a discriminative time margin of $0.5\\text{ s}$ between relays. A three phase short circuit at F results in a fault current of $5000\\text{ A}$. Find the actual operating times of $R_1$ and $R_2$. What is the time multiplier setting (TMS) of $R_2$. [8]<table><thead><tr><th>Plug setting multiplier</th><th>2</th><th>4</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time in seconds for a time multiplier of 1</td><td>10</td><td>5</td><td>4</td><td>3</td><td>2.8</td><td>2.6</td><td>2.4</td></tr></tbody></table>c) A three phase $33/6.6$ KV star/delta connected transformer is protected by differential system. The CTs on LT side have a ratio of $300:5$. Find the ratio of the CTs on the HT side.",
+      "text": "a) What is Universal Torque Equation? Using this equation derive the following characteristics (i) impedance relay (ii) reactance relay (iii) mho relay. [8]\n\nb) Two relays $R_1$ and $R_2$ are connected in two sections of a feeder as shown in figure. CTs are of ratio $1000/5\\text{ A}$. The plug setting of relay $R_1$ is $100\\%$ and $R_2$ is $125\\%$. The operating time characteristic of the relays is given below.\nThe time multiplier setting of the relay $R_1$ is $0.3$. The time grading scheme has a discriminative time margin of $0.5\\text{ s}$ between relays. A three phase short circuit at F results in a fault current of $5000\\text{ A}$. Find the actual operating times of $R_1$ and $R_2$. What is the time multiplier setting (TMS) of $R_2$. [8]<table><thead><tr><th>Plug setting multiplier</th><th>2</th><th>4</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time in seconds for a time multiplier of 1</td><td>10</td><td>5</td><td>4</td><td>3</td><td>2.8</td><td>2.6</td><td>2.4</td></tr></tbody></table>c) A three phase $33/6.6$ KV star/delta connected transformer is protected by differential system. The CTs on LT side have a ratio of $300:5$. Find the ratio of the CTs on the HT side.",
+      "chapter": "Relay and Protection Schemes",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2071 Bhadra"
+      ],
+      "examSessions": [
+        "2071 Bhadra"
+      ],
+      "isDiagram": true
+    },
+    {
+      "id": "switchgear-and-protection-33",
+      "question": "a) It is given that fault current level at 33 kV side is 2000 A. CT ratio at 33 kV side is 200:1 and 132 kV is 100:1 as shown in figure below. If the both relay $R_1$ and $R_2$ are set for 100% plug setting, determine the operating time for both relays assuming that both the relay have same characteristics as shown in table below. For the discrimination the time gradient margin between two relays is 0.5 second and the time setting multiplier for $R_1$ is 0.2. Also determine the time setting multiplier for $R_2$. [8]<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time in second for TMS=1</td><td>10</td><td>6</td><td>3.9</td><td>3.15</td><td>2.8</td><td>2.2</td><td>2.1</td></tr></tbody></table>b) A three phase, 11/132 kV, delta-star connected power transformer is protected by differential protection. The CTs on the LV side have a current ratio of 200/1. What must be the current ratio of the CTs on the HV side? How the CTs on both the sides of the transformer are connected. [6]\n\nc) Explain with a neat sketch the percentage differential protection of an alternator.",
+      "text": "a) It is given that fault current level at 33 kV side is 2000 A. CT ratio at 33 kV side is 200:1 and 132 kV is 100:1 as shown in figure below. If the both relay $R_1$ and $R_2$ are set for 100% plug setting, determine the operating time for both relays assuming that both the relay have same characteristics as shown in table below. For the discrimination the time gradient margin between two relays is 0.5 second and the time setting multiplier for $R_1$ is 0.2. Also determine the time setting multiplier for $R_2$. [8]<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time in second for TMS=1</td><td>10</td><td>6</td><td>3.9</td><td>3.15</td><td>2.8</td><td>2.2</td><td>2.1</td></tr></tbody></table>b) A three phase, 11/132 kV, delta-star connected power transformer is protected by differential protection. The CTs on the LV side have a current ratio of 200/1. What must be the current ratio of the CTs on the HV side? How the CTs on both the sides of the transformer are connected. [6]\n\nc) Explain with a neat sketch the percentage differential protection of an alternator.",
+      "chapter": "Relay and Protection Schemes",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2073 Bhadra"
+      ],
+      "examSessions": [
+        "2073 Bhadra"
+      ],
+      "isDiagram": true
+    },
+    {
+      "id": "switchgear-and-protection-34",
+      "question": "a) As shown in figure, the relay at B has a plug setting of 125% and TMS of 0.2. The circuit breakers take 0.20sec to clear the fault and the relay error in each case is 0.15 sec. For a plug setting of 200% on the realy A, determine the minimum TMS on that relay for it not to operate before the circuit braker at B has cleared the fault. A relay operating time curve shown in table. [6]\n\nIDMT characteristic:<table><thead><tr><th>PSM</th><th>2</th><th>3.5</th><th>5</th><th>6.5</th><th>8</th><th>10</th><th>12</th><th>14</th><th>16</th></tr></thead><tbody><tr><td>Operating Time (sec)</td><td>10</td><td>6</td><td>5</td><td>4</td><td>3.15</td><td>3</td><td>2.9</td><td>2.5</td><td>2</td></tr></tbody></table>b) What is an impedance relay? Explain its operating principle, torque equation and operating characteristics for impedance relay? [6]\n\nc) A 3 phase 66000/6600 V star/delta transformer is protected by Merz-Price system. What will be the ratio of current transformer on the high voltage side if the current transformers on the low voltage side have a ratio of 400/5 A.",
+      "text": "a) As shown in figure, the relay at B has a plug setting of 125% and TMS of 0.2. The circuit breakers take 0.20sec to clear the fault and the relay error in each case is 0.15 sec. For a plug setting of 200% on the realy A, determine the minimum TMS on that relay for it not to operate before the circuit braker at B has cleared the fault. A relay operating time curve shown in table. [6]\n\nIDMT characteristic:<table><thead><tr><th>PSM</th><th>2</th><th>3.5</th><th>5</th><th>6.5</th><th>8</th><th>10</th><th>12</th><th>14</th><th>16</th></tr></thead><tbody><tr><td>Operating Time (sec)</td><td>10</td><td>6</td><td>5</td><td>4</td><td>3.15</td><td>3</td><td>2.9</td><td>2.5</td><td>2</td></tr></tbody></table>b) What is an impedance relay? Explain its operating principle, torque equation and operating characteristics for impedance relay? [6]\n\nc) A 3 phase 66000/6600 V star/delta transformer is protected by Merz-Price system. What will be the ratio of current transformer on the high voltage side if the current transformers on the low voltage side have a ratio of 400/5 A.",
+      "chapter": "Relay and Protection Schemes",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2077 Chaitra"
+      ],
+      "examSessions": [
+        "2077 Chaitra"
+      ],
+      "isDiagram": true
+    },
+    {
+      "id": "switchgear-and-protection-35",
+      "question": "a) Explain with a neat sketch the percentage differential protection of an alternator. [8]\n\nb) Design a time-current graded protection scheme based on two identical IDMT relays at points A and B for the following radial feeder. Select appropriate current tap setting and time dial settings for the relays. Find out actual time of operation of relay at A for fault in its zone and as back up. Relay at A should also back up for faults at protection zone of B. [8]\n\nGiven:<table><thead><tr><th>Relay point</th><th>CT ratio</th><th>Fault current, A</th></tr></thead><tbody><tr><td>A</td><td>300/5</td><td>4000</td></tr><tr><td>B</td><td>200/5</td><td>3000</td></tr><tr><td>Far end of feeder at point C</td><td></td><td>2000</td></tr></tbody></table>IDMT Characteristics<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>T.op. sec</td><td>10</td><td>6</td><td>3.9</td><td>3.15</td><td>2.8</td><td>2.2</td><td>2.2</td><td>(for TDS = 1)</td></tr></tbody></table>c) How does Buchholz relay protect the internal faults of transformer?",
+      "text": "a) Explain with a neat sketch the percentage differential protection of an alternator. [8]\n\nb) Design a time-current graded protection scheme based on two identical IDMT relays at points A and B for the following radial feeder. Select appropriate current tap setting and time dial settings for the relays. Find out actual time of operation of relay at A for fault in its zone and as back up. Relay at A should also back up for faults at protection zone of B. [8]\n\nGiven:<table><thead><tr><th>Relay point</th><th>CT ratio</th><th>Fault current, A</th></tr></thead><tbody><tr><td>A</td><td>300/5</td><td>4000</td></tr><tr><td>B</td><td>200/5</td><td>3000</td></tr><tr><td>Far end of feeder at point C</td><td></td><td>2000</td></tr></tbody></table>IDMT Characteristics<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>T.op. sec</td><td>10</td><td>6</td><td>3.9</td><td>3.15</td><td>2.8</td><td>2.2</td><td>2.2</td><td>(for TDS = 1)</td></tr></tbody></table>c) How does Buchholz relay protect the internal faults of transformer?",
+      "chapter": "Relay and Protection Schemes",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2070 Bhadra"
+      ],
+      "examSessions": [
+        "2070 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "switchgear-and-protection-36",
+      "question": "a) With a neat sketch explain the operation of differential protection scheme for a power transformer. [6]\n\nb) Two Relays R1 and R2 are connected in two sections of a feeder shown in figure below. Fault current level at 11 kV side is 3500 A, CT ratio at 11 kV side is 200:1 and 132 kV side is 100:1. If $R_1$ set on 125% and $R_2$ set on 150% plug setting. Determine the operating time for both the relays when time grading margin of 0.75 second is given and TMS for relay R1 is 0.25. Make use of the following characteristics. [8]\n\nIDMT Characteristic:<table><thead><tr><th>PSM</th><th>2</th><th>4.6</th><th>5.33</th><th>6.73</th><th>8.2</th><th>10</th><th>12.3</th><th>13.6</th><th>15</th></tr></thead><tbody><tr><td>Operating time (sec)</td><td>10</td><td>5</td><td>4.5</td><td>4</td><td>3.15</td><td>2.8</td><td>2.5</td><td>2.3</td><td>2</td></tr></tbody></table>c) What are the different types of electromagnetic relays? Discuss their field of applications.",
+      "text": "a) With a neat sketch explain the operation of differential protection scheme for a power transformer. [6]\n\nb) Two Relays R1 and R2 are connected in two sections of a feeder shown in figure below. Fault current level at 11 kV side is 3500 A, CT ratio at 11 kV side is 200:1 and 132 kV side is 100:1. If $R_1$ set on 125% and $R_2$ set on 150% plug setting. Determine the operating time for both the relays when time grading margin of 0.75 second is given and TMS for relay R1 is 0.25. Make use of the following characteristics. [8]\n\nIDMT Characteristic:<table><thead><tr><th>PSM</th><th>2</th><th>4.6</th><th>5.33</th><th>6.73</th><th>8.2</th><th>10</th><th>12.3</th><th>13.6</th><th>15</th></tr></thead><tbody><tr><td>Operating time (sec)</td><td>10</td><td>5</td><td>4.5</td><td>4</td><td>3.15</td><td>2.8</td><td>2.5</td><td>2.3</td><td>2</td></tr></tbody></table>c) What are the different types of electromagnetic relays? Discuss their field of applications.",
+      "chapter": "Relay and Protection Schemes",
+      "marks": "6",
+      "frequency": 1,
+      "years": [
+        "2073 Magh"
+      ],
+      "examSessions": [
+        "2073 Magh"
+      ],
+      "isDiagram": true
+    },
+    {
+      "id": "switchgear-and-protection-37",
+      "question": "a) Determine the time of operation of both relays and the time multiplier setting of relay 1. The time multiplier setting of relay 1 is 0.2 and the time grading margin between the relays is 0.4 second. The relay characteristic is shown in the table. [6]<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>9</th><th>10</th><th>16</th><th>20</th></tr></thead><tbody><tr><td>T (s)</td><td>10</td><td>6</td><td>3.9</td><td>2.9</td><td>2.8</td><td>2.2</td><td>2.1</td></tr></tbody></table>b) A three-phase transformer rated for $33\\text{kV}/6.6\\text{kV}$ is connected star/delta and the protecting current transformer on the low voltage side have a ratio of $400/5$. Determine the ratio of the current transformers on H.V side. Draw the connection diagram showing how the relay operates under fault conditions. [5]\n\nc) Explain about the Overcurrent Protective Schemes used for the protection of distribution lines.",
+      "text": "a) Determine the time of operation of both relays and the time multiplier setting of relay 1. The time multiplier setting of relay 1 is 0.2 and the time grading margin between the relays is 0.4 second. The relay characteristic is shown in the table. [6]<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>9</th><th>10</th><th>16</th><th>20</th></tr></thead><tbody><tr><td>T (s)</td><td>10</td><td>6</td><td>3.9</td><td>2.9</td><td>2.8</td><td>2.2</td><td>2.1</td></tr></tbody></table>b) A three-phase transformer rated for $33\\text{kV}/6.6\\text{kV}$ is connected star/delta and the protecting current transformer on the low voltage side have a ratio of $400/5$. Determine the ratio of the current transformers on H.V side. Draw the connection diagram showing how the relay operates under fault conditions. [5]\n\nc) Explain about the Overcurrent Protective Schemes used for the protection of distribution lines.",
+      "chapter": "Relay and Protection Schemes",
+      "marks": "5",
+      "frequency": 1,
+      "years": [
+        "2081 Ashwin"
+      ],
+      "examSessions": [
+        "2081 Ashwin"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "switchgear-and-protection-38",
+      "question": "a) Determine the time of operation of two relays assuming that both the relays have the characteristics as shown in the following table. The time multiplier setting of relay 1 is 0.18 and the time grading margin between the relays is 0.4 second. [6]\n<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>9.23</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time in sec</td><td>10</td><td>6</td><td>3.9</td><td>2.9</td><td>2.8</td><td>2.2</td><td>2.1</td></tr></tbody></table>b) A 11kV, 100 MVA generator is grounded through a resistance of $6\\Omega$. The CTs have a ratio of 1000/5. The relay is set to operate when there is an out of balance current of 1A. What percentage of the generator winding will be protected by percentage differential scheme of protection? [6]\n\nc) Discuss the principle of operation of an induction disc relay with the help of a neat sketch.",
+      "text": "a) Determine the time of operation of two relays assuming that both the relays have the characteristics as shown in the following table. The time multiplier setting of relay 1 is 0.18 and the time grading margin between the relays is 0.4 second. [6]\n<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>9.23</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time in sec</td><td>10</td><td>6</td><td>3.9</td><td>2.9</td><td>2.8</td><td>2.2</td><td>2.1</td></tr></tbody></table>b) A 11kV, 100 MVA generator is grounded through a resistance of $6\\Omega$. The CTs have a ratio of 1000/5. The relay is set to operate when there is an out of balance current of 1A. What percentage of the generator winding will be protected by percentage differential scheme of protection? [6]\n\nc) Discuss the principle of operation of an induction disc relay with the help of a neat sketch.",
+      "chapter": "Relay and Protection Schemes",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2076 Bhadra"
+      ],
+      "examSessions": [
+        "2076 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "switchgear-and-protection-39",
+      "question": "a) The time multiplier setting of relay 1 is 0.3 and the time grading margin between the relays is 0.4 second. Determine the time of operation of two relays. [6]\n<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>9.23</th><th>13.33</th><th>16</th><th>20</th></tr></thead><tbody><tr><td>Time in sec</td><td>10</td><td>6</td><td>3.9</td><td>2.9</td><td>2.8</td><td>2.2</td><td>2.1</td></tr></tbody></table>b) Explain the interaction between overcurrent relays and directional relays, including how they work together to protect transmission lines or feeders. [6]\n\nc) What are the different types of distance relays and what are their applications? Discuss the scenarios in which each type is used and the reasons for their selection.",
+      "text": "a) The time multiplier setting of relay 1 is 0.3 and the time grading margin between the relays is 0.4 second. Determine the time of operation of two relays. [6]\n<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>9.23</th><th>13.33</th><th>16</th><th>20</th></tr></thead><tbody><tr><td>Time in sec</td><td>10</td><td>6</td><td>3.9</td><td>2.9</td><td>2.8</td><td>2.2</td><td>2.1</td></tr></tbody></table>b) Explain the interaction between overcurrent relays and directional relays, including how they work together to protect transmission lines or feeders. [6]\n\nc) What are the different types of distance relays and what are their applications? Discuss the scenarios in which each type is used and the reasons for their selection.",
+      "chapter": "Relay and Protection Schemes",
+      "marks": "6",
+      "frequency": 1,
+      "years": [
+        "2081 Chaitra"
+      ],
+      "examSessions": [
+        "2081 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "switchgear-and-protection-40",
+      "question": "a) Figure shows a portion of power system in a single line diagram. Find out the time of operation of relays $R_1$ and $R_2$ for a fault immediately after relaying point $R_2$. Relay $R_1$ is voltage monitored over current relay, the plug setting (PS) which reduces to $40\\%$ of the set value if voltage collapses below $70\\%$ of rated voltage. [8]\n<table><thead><tr><th>PSM</th><th>2</th><th>3</th><th>5</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time (sec)</td><td>10</td><td>6</td><td>4.1</td><td>3</td><td>2.5</td><td>2.2</td></tr></tbody></table>(Assume suitable data if necessary)\n\nb) Starting from the universal torque equation, explain the operation of impedance relay used for the protection of feeder. [8]\n\nc) Draw the connection diagram of restricted earth fault protection scheme for a generator with solidly grounded.",
+      "text": "a) Figure shows a portion of power system in a single line diagram. Find out the time of operation of relays $R_1$ and $R_2$ for a fault immediately after relaying point $R_2$. Relay $R_1$ is voltage monitored over current relay, the plug setting (PS) which reduces to $40\\%$ of the set value if voltage collapses below $70\\%$ of rated voltage. [8]\n<table><thead><tr><th>PSM</th><th>2</th><th>3</th><th>5</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time (sec)</td><td>10</td><td>6</td><td>4.1</td><td>3</td><td>2.5</td><td>2.2</td></tr></tbody></table>(Assume suitable data if necessary)\n\nb) Starting from the universal torque equation, explain the operation of impedance relay used for the protection of feeder. [8]\n\nc) Draw the connection diagram of restricted earth fault protection scheme for a generator with solidly grounded.",
+      "chapter": "Relay and Protection Schemes",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2070 Magh"
+      ],
+      "examSessions": [
+        "2070 Magh"
+      ],
+      "isDiagram": false
+    }
+  ],
+  "yearWisePapers": [
+    {
+      "session": "2082 Kartik",
+      "year": "2082",
+      "month": "Kartik",
+      "examType": "Back",
+      "totalMarks": 32,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Define the term selectivity and sensitivity in power system protection. How does selectivity and sensitivity ensure proper fault isolation and continuity of service? [6]\n(b) A current transformer whose current ratio is 300/5 ampere and the Instrument Security Factor is 1.5 is installed in a feeder. If the primary current becomes 4500 ampere due to a fault, then how much will the secondary current be? [4]\n(c) Explain the advantages and disadvantages of fuses compared to MCBs in terms of operation, maintenance, response time, and their suitability for various applications.",
+          "marks": "6",
+          "chapter": "Fundamental of Power System Protection",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) What are the basic difference between isolator and circuit breaker? Explain why we use isolator and circuit breaker simultaneously. [6]\n(b) A 60 km long 66 kV, 50 Hz 3 phase overhead line has line to earth capacitance of each phase equal to $0.02\\ \\mu\\text{F/km}$. Determine the inductance and kVA rating of the arc suppression coil. [4]\n(c) Define neutral earthing. Briefly discuss different types of neutral earthing.",
+          "marks": "4",
+          "chapter": "Fuses, Isolators, and Contactors",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) In a 132 kV system, the reactance and capacitance up to the location of circuit breaker is $6\\ \\Omega$ and $0.02\\ \\mu\\text{F} , respectively$. A resistance of $500\\ \\Omega$ is connected across the contacts of the circuit breaker. Determine the following: (a) Natural frequency of oscillation, (b) Damped frequency of oscillation, (c) Critical value of resistance which will give no transient oscillation, (d) The value of resistance which will give damped frequency of oscillation, one-third of the natural frequency of oscillation. [8]\n(b) Explain the working principle and operation of $a^n$ SF6 circuit breaker, describing its construction and the role of SF6 gas in the arc quenching process.",
+          "marks": "8",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Referring to the following figure; given that fault current is 2000 A; Relay 1 set on 100%; CT ratio = 200/1; Relay 2 set on 125%; CT ratio = 200/1. For discrimination the time gradient margin between the relay is 0.5 second. [6]\n\nDetermine the time of operation of the two relay assuming that both relays have the characteristics as shown in the following table and the relay no. 1 has a time multiplier setting equal to 0.2. Also determine the time setting multiplier of relay 2.<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time for unity TSM</td><td>10</td><td>6</td><td>3.9</td><td>3.15</td><td>2.8</td><td>2.2</td><td>2.1</td></tr></tbody></table>b) A 15 MVA, 132/33 kV, delta-star 3 phase power transformer is protected by percentage differential relay. The CTs connected on HV and LV sides are 75/5 and 500/5 A respectively. The relay rating is 1 A. Determine: (i) the rated current of both sides, (ii) the relay current at full load, and (iii) the relay current at only 85 % loading. [6]\n\nc) Explain the working principle of an IDMT relay, including how it detects overcurrent conditions and the relationship between current setting, time delay, and time-current characteristics in IDMT relays.",
+          "marks": "6",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Describe the block diagram of the components of a static relay and explain how its design enhances speed and sensitivity in protection schemes. [8]\n(b) What is the role of a directional static relay in power system protection? Explain the concept of a directional relay and its function in identifying the direction of fault current, supported by a block diagram.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Chaitra",
+      "year": "2082",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 99,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Discuss why backup protection is necessary in a power system and explain the overlapping of protective zones with neat sketch. [4]\n\nb) A current transformer is connected in a $400\\text{ V}$ system and has a single turn on its primary and $180$ turns on its secondary. An ammeter with $0.15\\ \\Omega$ internal resistance is connected to the CT. The ammeter is required to give a full-scale deflection when the primary current is $900\\text{ A}$. Calculate, [4]\n\ni) The maximum secondary current\nii) Secondary voltage at CT terminals when ammeter is removed\n\nc) Explain the cut-off characteristics of a fuse.",
+          "marks": "4",
+          "chapter": "Fundamental of Power System Protection",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) List down the different applications of contactor. With the help of necessary schematic circuit explain how star-delta starting of motor can be achieved with the help of contactors. [6]\n\nb) Calculate the inductance and kVA rating of Peterson coil of a $230\\text{ kV}$, $3$-phase, $50\\text{ Hz}$, $200\\text{ km}$ overhead transmission system having capacitance to earth of $0.01\\ \\mu\\text{F/km}$ per phase. [5]\n\nc) With the help of neat sketch, explain the types of isolators and state the major differences between isolator and circuit breaker.",
+          "marks": "5",
+          "chapter": "Fuses, Isolators, and Contactors",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Why contactors are preferred to control a motor instead of a manual switch? Explain with a neat sketch. [4]\n\nb) Explain, with a neat Single-Line Diagram (SLD), how the isolator, circuit breaker, and earthing switch operate in a coordinated manner to ensure the safe operation and maintenance of a substation.",
+          "marks": "4",
+          "chapter": "Fuses, Isolators, and Contactors",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) A 50 Hz 3 phase alternator with grounded neutral has an inductance of $1.6 \\text{ mH}$ per phase and is connected to the bus-bars through a circuit breaker. The capacitance to earth of the circuit between the alternator and the circuit breaker is $0.0032 \\mu F$ per phase. Due to a short on the bus-bars the breaker opens when the rms value of the current is $8000 \\text{ A}$. Determine the following (i) frequency of the oscillation (ii) active recovery voltage (iii) time for maximum RRRV (iv) maximum RRRV [6]\n\nb) Explain the construction and working of $SF_6$ circuit breaker. Also enumerate the dielectric properties and arc quenching characteristic of $SF_6$ circuit breaker with their limitations. [6]\n\nc) What are the main parts of equipment which are used for the testing of a circuit breaker in a laboratory type testing station?",
+          "marks": "3",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) A 50 Hz 3 phase alternator with grounded neutral has an inductance of $1.6 \\text{ mH}$ per phase and is connected to the bus-bars through a circuit breaker. The capacitance to earth of the circuit between the alternator and the circuit breaker is $0.0032 \\mu F$ per phase. Due to a short on the bus-bars the breaker opens when the rms value of the current is $8000 \\text{ A}$. Determine the following (i) frequency of the oscillation (ii) active recovery voltage (iii) time for maximum RRRV (iv) maximum RRRV [6]\n\nb) Explain the construction and working of $SF_6$ circuit breaker. Also enumerate the dielectric properties and arc quenching characteristic of $SF_6$ circuit breaker with their limitations. [6]\n\nc) What are the main parts of equipment which are used for the testing of a circuit breaker in a laboratory type testing station?",
+          "marks": "8",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "\n(a) The neutral point of a three-phase 20 MVA, 11 kV alternator is earthed through a resistance of $5\\ \\Omega , the$ relay is set to operate when there is $a^n$ out of balance current of $1.5\\ \\text{A}$. The CTs hence a ratio $1000/5$. What percentage of winding is protected against $a^n$ earth fault and what should be the minimum value of earthing resistance to protect 90% of the winding? [6]\n(b) Explain the operating principle and types of Current Transformers (CTs). Discuss the significance of CT ratios, burden, and polarity in power system protection.",
+          "marks": "2",
+          "chapter": "Instrument Transformers for Protection",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) Two relays $R_1$ and $R_2$ are connected in two sections of a feeder is shown in figure. Fault current level at 11 kV side is $3500\\ \\text{A}$, CT ratio at 11 kV side is $200:1$ and 132kV side is $100:1$. If $R_1$ set on 125% and $R_2$ set on 150% plug setting. Determine the operating time for both the relays when time grading margin of $0.75\\ \\text{second}$ is given and TMS for relay $R_1$ is $0.25$. Make use of the following characteristics. [5]\n\nIDMT Characteristics<table><thead><tr><th>PSM</th><th>2</th><th>4.6</th><th>5.33</th><th>6.73</th><th>8.2</th><th>10</th><th>12.3</th><th>13.6</th><th>15</th></tr></thead><tbody><tr><td>Operating time (sec)</td><td>10</td><td>6</td><td>4.5</td><td>4</td><td>3.15</td><td>2.8</td><td>2.5</td><td>2.3</td><td>2</td></tr></tbody></table>b) A transmission line is to be designed and protected using distance protection schemes.\n\n(i) Draw a neat single-line diagram of the transmission line and illustrate the division of the protection system into appropriate distance protection zones, clearly indicating the reach and coverage of each zone.\n(ii) Explain the concept of zone-wise protection in distance relays, and justify the need for multiple zones to ensure selectivity and reliability.\n(iii) Describe the working principle of carrier-aided protection and explain how it improves the performance of distance protection in transmission lines. [2+2+1]\n\nc) A three phase, 11/132 kV, delta star connected power transformer is protected by differential protection. The CTs on the LV side have a current ratio of 250/1. What must be the current ratio of the CTs on the HV side?",
+          "marks": "4",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": true
+        },
+        {
+          "qNum": 8,
+          "text": "a) A $11\\text{ kV}$, $100\\text{ MVA}$ generator is grounded through a resistance of $6\\ \\Omega$. The CTs have a ratio of $1000:5$. The relay is set to operate when there is an out of balance current of $1\\text{ A}$. What percentage of generator winding will be protected by percentage differential scheme of protection? [6]\n\nb) In the given figure below, the fault current is $2000\\text{ A}$ and the CTs are of ratio $= 200:1$. The plug setting of Relay $R_1$ is $100\\%$ and the plug setting of Relay $R_2$ is $125\\%$. The time grading scheme has a discriminative time margin of $0.5\\text{s}$ between the relays and the time multiplier setting (TMS) of $R_1$ is $0.2$. [8]\n\nDetermine the time of operation of the two relays assuming that both relays have the characteristics as shown in the following table. Also determine the TMS of $R_2$.<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time for unity TSM</td><td>10</td><td>6</td><td>3.9</td><td>3.15</td><td>2.8</td><td>2.2</td><td>2.1</td></tr></tbody></table>c) What is an impedance relay? Explain its operating principle and characteristic along with torque equation.",
+          "marks": "6",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "a) Explain the working of static differential relay with the proper block diagram and circuit diagram. [8]\n\nb) Discuss the advantages of digital relays. Describe the basic functional blocks of a digital relay.",
+          "marks": "5",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": true
+        },
+        {
+          "qNum": 10,
+          "text": "Also explain the main components of a static relay with the help of block diagram.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Calculate the inductance and kVA rating of Peterson coil of a $230\\text{ kV}$, $3$-phase, $50\\text{ Hz}$, $200\\text{ km}$ overhead transmission system having capacitance to earth of $0.01\\ \\mu\\text{F/km}$ per phase.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "A 50 Hz 3 phase alternator with grounded neutral has an inductance of $1.6 \\text{ mH}$ per phase and is connected to the bus-bars through a circuit breaker. The capacitance to earth of the circuit between the alternator and the circuit breaker is $0.0032 \\mu F$ per phase. Due to a short on the bus-bars the breaker opens when the rms value of the current is $8000 \\text{ A}$. Determine the following (i) frequency of the oscillation (ii) active recovery voltage (iii) time for maximum RRRV (iv) maximum RRRV",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Describe the basic functional blocks of a digital relay.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Explain, with a neat Single-Line Diagram (SLD), how the isolator, circuit breaker, and earthing switch operate in a coordinated manner to ensure the safe operation and maintenance of a substation.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "What are the main parts of equipment which are used for the testing of a circuit breaker in a laboratory type testing station?",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "Define the concept of zones of protection within a power system. Using a clearly labeled Single-Line Diagram (SLD), illustrate how protection zones are made to overlap and distinguish between primary and backup protection. Finally, provide a technical justification for why a \"blind spot\" occurs if these zones fail to overlap.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "\n(a) For a 220 kV system, the reactance and capacitance up to the location of the circuit breaker is $3\\ \\Omega$ and $0.035\\ \\mu\\text{F} , respectively$. Calculate the following: (i) The frequency of transient oscillation (ii) The maximum value of restriking voltage across the contacts of the circuit breaker (iii) The maximum value of RRRV. [5]\n(b) Explain the phenomenon of arc in a circuit breaker and justify its necessity. With the help of a neat waveform, define and explain the following terms: arc voltage, re-striking voltage, and recovery voltage. [4]\n(c) What tests are included under routine test of circuit breaker and how are these tests done?",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": true
+        },
+        {
+          "qNum": 18,
+          "text": "\n(a) Explain the functional operation of numerical relays with a suitable block diagram. Discuss how signals are processed from input acquisition to final tripping action. [3+2]\n(b) Compare differential and directional types of static relays in terms of their operating principles, characteristics, and applications in power system protection.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Chaitra",
+      "year": "2081",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 39,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "(a) A $130\\text{ ampere}$ current is flowing in the line given below. At the same time, we must do some repair works in this breaker. To work in the breaker, in which sequences should these switching devices operate and why? [6]\n\nb) A $33\\text{ kV} , 3$ phase $50\\text{ Hz} , overhead$ line $80\\text{ km}$ long has a capacitance to ground of each line equal to $0.015\\text{ }\\mu\\text{F}$ per km. Determine the inductance and kVA rating of the peterson coil. [4]\n(c) Discuss the different methods used for over voltage protection in electrical systems.",
+          "marks": "4",
+          "chapter": "Fuses, Isolators, and Contactors",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "A 50 Hz 3 phase alternator with grounded neutral has an inductance of $1.6 \\text{ mH}$ per phase and is connected to the bus-bars through a circuit breaker. The capacitance to earth of the circuit between the alternator and the circuit breaker is $0.0032 \\mu F$ per phase. Due to a short on the bus-bars the breaker opens when the rms value of the current is $8000 \\text{ A}$. Determine the following (i) frequency of the oscillation (ii) active recovery voltage (iii) time for maximum RRRV (iv) maximum RRRV",
+          "marks": "8",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Explain the need for coordination between different protection schemes in a power system. How does improper coordination affect system performance? [6]\n(b) Compare and contrast Potential Transformers (PTs) and Current Transformers (CTs) in terms of their construction, operating principles, and typical applications in power system protection and control. Highlight key differences in their usage and design. [5]\n(c) Explain the working of dropout fuse. Also suggest in which side of a transformer will you keep this fuse and what will be its rating for a $11/0.4\\text{ kV} - 200\\text{ kVA}$ transformer.",
+          "marks": "5",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) The time multiplier setting of relay 1 is 0.3 and the time grading margin between the relays is 0.4 second. Determine the time of operation of two relays. [6]\n<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>9.23</th><th>13.33</th><th>16</th><th>20</th></tr></thead><tbody><tr><td>Time in sec</td><td>10</td><td>6</td><td>3.9</td><td>2.9</td><td>2.8</td><td>2.2</td><td>2.1</td></tr></tbody></table>b) Explain the interaction between overcurrent relays and directional relays, including how they work together to protect transmission lines or feeders. [6]\n\nc) What are the different types of distance relays and what are their applications? Discuss the scenarios in which each type is used and the reasons for their selection.",
+          "marks": "6",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Discuss the advantages and limitations of static relays over electromagnetic relays. Also mention the main components of static relays and explain their role. [8]\n(b) With the help of a block diagram, explain the functioning of static differential protection relay.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain the working of dropout fuse.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Ashwin",
+      "year": "2081",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 32,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Discuss the fundamental objectives and principles that guide the design of protection schemes in electrical power systems. [5]\n(b) Why should the secondary winding of a CT installed in a substation not be open-circuited? Explain with Example. [5]\n(c) Define drop out fuse and explain its operation and application area with $a^n$ example.",
+          "marks": "6",
+          "chapter": "Fundamental of Power System Protection",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) List down the different applications of contactor. With the help of necessary schematic circuit explain how star-delta starting of motor can be achieved with the help of contactors. [6]\n\nb) Calculate the inductance and kVA rating of Peterson coil of a $230\\text{ kV}$, $3$-phase, $50\\text{ Hz}$, $200\\text{ km}$ overhead transmission system having capacitance to earth of $0.01\\ \\mu\\text{F/km}$ per phase. [5]\n\nc) With the help of neat sketch, explain the types of isolators and state the major differences between isolator and circuit breaker.",
+          "marks": "5",
+          "chapter": "Fuses, Isolators, and Contactors",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) A 3 phase alternator has the line voltage of 11 kV. The generator is connected to a circuit breaker. The inductive reactance upto the circuit breaker is 5 ohm per phase. The distributed capacitance upto circuit breaker between phase and neutral is 0.1 $\\mu F$. Determine the (i) Peak restriking voltage across the circuit breaker. (ii) Frequency of restriking voltage transient. (iii) Average rate of restriking voltage upto peak restriking voltage, and (iv) Maximum RRRV. Neglect first pole to clear factor. [8]\n(b) Describe the construction, operating principle and application of Minimum Oil Circuit Breaker. What are the advantages and disadvantages over SF6 Circuit Breaker?",
+          "marks": "8",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Determine the time of operation of both relays and the time multiplier setting of relay",
+          "marks": "5",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Determine the time of operation of both relays and the time multiplier setting of relay 1. The time multiplier setting of relay 1 is 0.2 and the time grading margin between the relays is 0.4 second. The relay characteristic is shown in the table. [6]<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>9</th><th>10</th><th>16</th><th>20</th></tr></thead><tbody><tr><td>T (s)</td><td>10</td><td>6</td><td>3.9</td><td>2.9</td><td>2.8</td><td>2.2</td><td>2.1</td></tr></tbody></table>b) A three-phase transformer rated for $33\\text{kV}/6.6\\text{kV}$ is connected star/delta and the protecting current transformer on the low voltage side have a ratio of $400/5$. Determine the ratio of the current transformers on H.V side. Draw the connection diagram showing how the relay operates under fault conditions. [5]\n\nc) Explain about the Overcurrent Protective Schemes used for the protection of distribution lines.",
+          "marks": "5",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) Explain the working of static differential relay with the proper block diagram and circuit diagram. [8]\n\nb) Discuss the advantages of digital relays. Describe the basic functional blocks of a digital relay.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2080 Chaitra",
+      "year": "2080",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 59,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) What are primary and back up protection? Explain the necessity of back up protection with an example. [5]\n\nb) What do you mean by typical knee point voltage in relation to CT? Briefly explain the different errors of CT and its causes. [5]\n\nc) Explain the operating characteristics of HRC fuse. How do these characteristics influence their applications in electrical systems?",
+          "marks": "5",
+          "chapter": "Fundamental of Power System Protection",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) List down the different applications of contactor. With the help of necessary schematic circuit explain how star-delta starting of motor can be achieved with the help of contactors. [6]\n\nb) Calculate the inductance and kVA rating of Peterson coil of a $230\\text{ kV}$, $3$-phase, $50\\text{ Hz}$, $200\\text{ km}$ overhead transmission system having capacitance to earth of $0.01\\ \\mu\\text{F/km}$ per phase. [5]\n\nc) With the help of neat sketch, explain the types of isolators and state the major differences between isolator and circuit breaker.",
+          "marks": "5",
+          "chapter": "Fuses, Isolators, and Contactors",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "(a) A 3 phase 50 Hz alternator with grounded neutral is connected toa bus bar through a circuit breaker. Due to short circuit on the busbar the circuit breaker trips when the current is 7000 A (rms) as shown in figure. Determine (i) Active recovery voltage (ii) Frequency of oscillation (iii) Time to reach the peak restriking voltage (iv) Maximum RRRV. [8]\n\nb) What is the purpose of incorporating arcing contacts alongside main contacts in circuit breakers? Also explain the function of arc runners and arc splitters within $a^n$ air-break circuit breaker, supported by a clear diagram.",
+          "marks": "8",
+          "chapter": "Circuit Breakers",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "a) Two relays R1 and R2 are connected in two sections of a feeder as shown in figure. CTs are of ratio 1000 / 5 A. The plug setting of relay R1 is 100 % and R2 is 125 %. The operating time characteristic of the relays is given below. The time grading scheme has a discriminative time margin of 0.5 s between relays. A three phase short circuit at F results in a fault current of 5000 A. Find the actual operating times of R1 and R2. What is the time multiplier setting (TMS) of R2. [6]<table><thead><tr><th>Plug setting multiplier</th><th>2</th><th>4</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time in seconds for a time multiplier of 1</td><td>10</td><td>5</td><td>4</td><td>3</td><td>2.8</td><td>2.6</td><td>2.4</td></tr></tbody></table>b) A $220/110\\text{ kV} - 150\\text{ MVA}$ transformer is protected by percentage differential relay. The HV and LV sides are delta and star connected respectively. The CT ratio of delta side is $400/5$ and the ratio of star side is $1600/5$. Determine (i) The CT secondary currents at full load, (ii) The relay current at full load, (iii) The relay current setting for $90\\ \\%$ loading. [6]\n\nc) Explain the working principle of impedance type distance relay and also explain its application area.",
+          "marks": "4",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "a) Discuss the advantages and limitations of static relays over electromagnetic relays. Also explain the main components of a static relay with the help of block diagram. [8]\n\nb) Explain the operating principles of static overvoltage and undervoltage relays. How do these relays detect abnormal voltage conditions and initiate protective actions to prevent equipment damage?",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Calculate the inductance and kVA rating of Peterson coil of a $230\\text{ kV}$, $3$-phase, $50\\text{ Hz}$, $200\\text{ km}$ overhead transmission system having capacitance to earth of $0.01\\ \\mu\\text{F/km}$ per phase.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Also explain the main components of a static relay with the help of block diagram.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Discuss the advantages and limitations of static relays over electromagnetic relays.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "\n(a) Discuss the constructional differences between isolators and contactors, focusing on key components and design considerations that enable their respective functions. [6]\n(b) What are the causes of over voltages on power system? List the merits and demerits of solid grounding. [5]\n(c) A 33 kV, 3 phase 50 Hz, overhead line 60 kM long has a capacitance to ground of each line equal to $0.015 \\mu F$ per km. Determine the inductance and kVA rating of the Peterson coil.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Ashwin",
+      "year": "2080",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 32,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Discuss the essential qualities of protection schemes and explain them in detail. [6]\n(b) Write about different types of Potential Transformer (PT) based on construction. Draw a Phasor diagram for a CT. [5]\n(c) Which fuse is best suited at high voltage side of a distribution transformer? Explain its operation.",
+          "marks": "5",
+          "chapter": "Fundamental of Power System Protection",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) With neat diagram explain the principle of operation of $a^n$ induction disc type over current relay. How can a directional feature introduce in the same? [8]\n(b) A $50\\text{ MVA} , 132/66\\text{ kV} , \\Delta\\text{ Y} , three-phase$ power transformer is protected by percentage differential relays. If the current transformers (CTs) located on $\\Delta$ and $\\text{Y}$ sides of the power transformer are $300/5\\text{ A}$ and $1,200/5\\text{ A}$ respectively, determine (i) the output at full load (ii) the relay current at full-load (iii) the minimum relay current setting to permit $25\\%$ overload.",
+          "marks": "8",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Draw the single line diagram (SLD) of a power system, discuss the function and working sequence of Isolators, Earthing Switch and Circuit Breaker. [6]\n(b) Why the neutral in a power system grounded? Explain different methods of neutral grounding. [5]\n(c) A $33\\text{ kV} , 3$ phases, $60\\text{ Hz}$ overhead line $70\\text{ km}$ long has a capacitance to ground of each line equal to $0.015\\text{ }\\mu\\text{F}$ per $\\text{KM}$. Determine the inductance and $\\text{KVA}$ rating of Peterson coil.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Explain the phenomenon of interruption of capacitive current in a circuit breaker. [4]\n(b) In a short circuit test on a $132\\text{ kv} , three$ phase system, the breaker gave the following results. $\\text{Pf}$ of the fault is $0.4 , recovery$ voltage is $0.9$ of full line value and the natural frequency is $16\\text{ KHZ}$. Determine the rate, if rise of restriking voltage in following cases. [6]\\n(i) Assume the symmetrical fault is grounded.\\n(ii) Assume that symmetrical fault is not grounded.\n(c) Describe the construction, principle of operation and application of Vacuum Circuit Breaker.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) How static $\\text{MHO}$ relay is realized using a phase comparator? Explain with its characteristic. [8]\n(b) Discuss the advantage and limitation of digital relays. Describe the basic functional blocks of a digital relay.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Chaitra",
+      "year": "2079",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 48,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) What are primary and back up protection? Explain the necessity of back up protection with an example. [5]\n\nb) What do you mean by typical knee point voltage in relation to CT? Briefly explain the different errors of CT and its causes. [5]\n\nc) Explain the operating characteristics of HRC fuse. How do these characteristics influence their applications in electrical systems?",
+          "marks": "5",
+          "chapter": "Fundamental of Power System Protection",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) A 50 Hz 3 phase alternator with grounded neutral has an inductance of $1.6 \\text{ mH}$ per phase and is connected to the bus-bars through a circuit breaker. The capacitance to earth of the circuit between the alternator and the circuit breaker is $0.0032 \\mu F$ per phase. Due to a short on the bus-bars the breaker opens when the rms value of the current is $8000 \\text{ A}$. Determine the following (i) frequency of the oscillation (ii) active recovery voltage (iii) time for maximum RRRV (iv) maximum RRRV [6]\n\nb) Explain the construction and working of $SF_6$ circuit breaker. Also enumerate the dielectric properties and arc quenching characteristic of $SF_6$ circuit breaker with their limitations. [6]\n\nc) What are the main parts of equipment which are used for the testing of a circuit breaker in a laboratory type testing station?",
+          "marks": "3",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Although CB can be used to isolate the circuit, why we need isolator? Explain why we use isolator and circuit breaker simultaneously, with a neat diagram. [6]\n(b) Explain in detail about the need and different types of lighting protection scheme. [5]\n(c) In a $50\\text{ Hz}$ overhead line, the capacitance of one line to earth was $1.5\\text{ }\\mu\\text{F}$. It was decided to use $a^n$ earth fault neutralizer. Calculate the reactance to neutralize the capacitance of (i) $100\\%$ of length of the line (ii) $90\\%$ of length of line.",
+          "marks": "5",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "(a) With neat diagram explain the various types of electromagnetic relays and their field of application. [8]\n(b) A $20\\text{MVA}$ transformer which is used to operate at $30\\%$ overload feeds $a^n$ $11\\text{kV}$ busbars through a circuit breaker. The transformer Circuit Breaker is equipped with a $1000/5\\text{ CT}$ and feeder Circuit Breaker with $400/5\\text{ CT}$ and both the CTs feeds IDMT relays having following characteristics:<table><thead><tr><th>Plug Setting Multipliers</th><th>2</th><th>3</th><th>5</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time in Second</td><td>10</td><td>6</td><td>4.1</td><td>3</td><td>2.5</td><td>2.2</td></tr></tbody></table>The relay on the feeder CB has $125\\%$ plug setting and a $0.3\\text{ Time Multipliers}$ setting. If a fault current of $5000\\text{ A}$ flows from the transformer to the feeder, Determine:\\n(i) Operating time of feeder relay\\n(ii) Suggest suitable plug setting and time multiplier setting of the transformer relay to ensure adequate discrimination of $0.5\\text{s}$ between transformer and feeder relay.",
+          "marks": "8",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Discuss the advantage and limitations of static relays over electromagnetic relays. Also mention the main components of static relay. [8]\n(b) With the help of neat block diagram, explain the function of Directional Static Overcurrent relay.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "A 50 Hz 3 phase alternator with grounded neutral has an inductance of $1.6 \\text{ mH}$ per phase and is connected to the bus-bars through a circuit breaker. The capacitance to earth of the circuit between the alternator and the circuit breaker is $0.0032 \\mu F$ per phase. Due to a short on the bus-bars the breaker opens when the rms value of the current is $8000 \\text{ A}$. Determine the following (i) frequency of the oscillation (ii) active recovery voltage (iii) time for maximum RRRV (iv) maximum RRRV",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "\n(a) Why the protective zones are arranged in overlap fashion? Discuss in brief the various essential qualities of Protective Relaying. [6]\n(b) Explain knee point voltage in CT with the help of necessary plots. Explain its importance in selection of CT for protection system. [5]\n(c) Discuss the method of selecting the rating of HRC fuse in motor stator.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "\n(a) What is the difference between restriking voltage and recovery voltage? [4]\n(b) A $50\\text{ Hz} , 11\\text{ kV}$ generator is connected to a power system. The system inductance and capacitance per phase are $10\\text{ mH}$ and $0.02\\text{ }\\mu\\text{F}$ respectively. Calculate: [6]\\n(i) Maximum voltage across the contacts of the CB at $a^n$ instant when it passes though zero.\\n(ii) Frequency of transient oscillation.\\n(iii) Average rate of rise voltage up to the first peak of oscillation, neglect the resistance.\n(c) Describe with neat sketch the construction and principle of operation of a air blast circuit breaker.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Ashwin",
+      "year": "2079",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 24,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Sketch a single line diagram of different protection zones used in power system. Why back up protection is provided? Explain with it's methods. [6]\n(b) Explain CT burden and how is it specified?",
+          "marks": "4",
+          "chapter": "Fundamental of Power System Protection",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) With the help of neat diagram explain the principle of static differential relay.\n(b) Write short notes on: [2x4]\n\n(i) Main components of static relay\n(ii) Level detector",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Explain operation and application area of drop out fuse. [6]\n(b) Draw the single line diagram to connect a CB, Isolator, Earthing switches and write the sequence of operation while opening and closing of circuit. [6]\n(c) The neutral point of a $11\\text{ kV}$ alternator is earthed through a resistance of $12\\ \\Omega , the$ relay is set to operate when there is out of balance current of $0.8\\text{ A}$. The CTs have a ratio of $2000/5$. What percentage of the winding is protected against earth fault? What must be the minimum value of earthing resistance required to give $90\\%$ of protection to each phase?",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) In a $132\\text{ kV}$ system, the inductance and capacitance up to the location of the circuit breaker are $0.4\\text{ H}$ and $0.015\\ \\mu\\text{F} , respectively$. Determine (i) the maximum value of the restriking voltage across the contacts of the circuit breaker, (ii) frequency of transient oscillation and (iii) the maximum value of RRRV. [6]\n(b) Describe the testing methods of circuit breaker. [4]\n(c) Describe the construction and working of puffer type SF6 Circuit Breaker. Also mention the merits and demerits of SF6 Circuit Breaker.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Chaitra",
+      "year": "2078",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 24,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "(a) The system of fig. 1(a) is rearranged as shown in fig. 1(b) where the bus arrangement at B has been changed to a ring bus arrangement. [6]\\n(i) Compare the operation of the two systems for when a fault occurs on line BC with\n\na. A failure of breaker 7.\n\nb. A failure of breaker 6.\\n(ii) Sketch the zone of protection.\n\nb) A current transformer is connected in 400 V system and has 1 turn on its primary and 180 turns on its secondary. An ammeter with $0.15\\ \\Omega$ internal resistance is connected to CT. The ammeter is required to give a full scale deflection when the primary current is 900 Amps. Calculate :\\n(i) The maximum secondary current\\n(ii) Secondary voltage at CT terminals when ammeter is removed.",
+          "marks": "4",
+          "chapter": "Fundamental of Power System Protection",
+          "isDiagram": true
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Explain the cut-off characteristics and the time-current characteristics of a fuse. [6]\n(b) Explain the construction and operating principle of contactor. Draw the circuit diagram for remote control of a contactor. [6]\n(c) Describe the protection of stations and sub-stations against direct lighting strokes.",
+          "marks": "6",
+          "chapter": "Fuses, Isolators, and Contactors",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) In a short circuit test on a $220\\text{ kV}$ 3-phase system, the breaker gave the following results: p.f. of the fault $0.45 , recovery$ voltage $0.9$ of full line value; the breaking current is symmetrical and the restriking transient had a natural frequency of $18\\text{ kHz}$. Determine the rate of rise of restriking voltage. Assume that the fault is grounded. [6]\n(b) Calculate breaking capacity in MVA and making capacity in kA of a 3 phase circuit breaker with following parameters.\nRated current $= 800\\text{ A}$; Rated voltage  = 33$\\text{ kV}$; $I_{bsym} = 25\\text{ kA}$ [4]\n(c) Describe the working of cross jet explosion pot in bulk oil circuit breaker with a neat sketch.",
+          "marks": "6",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Name the different types of Static Relays. Discuss the advantage and disadvantage of Static Relay as a protective device. [8]\n(b) With the help of a block diagram explain the functioning of static distance relay.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2077 Chaitra",
+      "year": "2077",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 65,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Explain briefly about primary and backup protection. [6]\n(b) Why voltage Transformer are required in Protection system. Also describe the construction of CCVT? [4]\n(c) Define fusing current and current carrying capacity of a fuse with $a^n$ example.",
+          "marks": "6",
+          "chapter": "Fundamental of Power System Protection",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) List down the different applications of contactor. With the help of necessary schematic circuit explain how star-delta starting of motor can be achieved with the help of contactors. [6]\n\nb) Calculate the inductance and kVA rating of Peterson coil of a $230\\text{ kV}$, $3$-phase, $50\\text{ Hz}$, $200\\text{ km}$ overhead transmission system having capacitance to earth of $0.01\\ \\mu\\text{F/km}$ per phase. [5]\n\nc) With the help of neat sketch, explain the types of isolators and state the major differences between isolator and circuit breaker.",
+          "marks": "5",
+          "chapter": "Fuses, Isolators, and Contactors",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Determine the rated symmetrical breaking circuit, making current and short time rating of a circuit with following parameters.\n33kV, 1500A, 3000MVA, 1sec [4]\n\nb) Define following terms:\n\n(i) Recovery voltage\n(ii) Re-striking voltage\n(iii) RRRV\nAlso, derive an expression for the restriking voltage in terms of system inductance and capacitance. [6]\n\nc) Describe the construction and working principle and application area of a vacuum circuit breaker.",
+          "marks": "4",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) As shown in figure, the relay at B has a plug setting of 125% and TMS of 0.2. The circuit breakers take 0.20sec to clear the fault and the relay error in each case is 0.15 sec. For a plug setting of 200% on the realy A, determine the minimum TMS on that relay for it not to operate before the circuit braker at B has cleared the fault. A relay operating time curve shown in table. [6]\n\nIDMT characteristic:<table><thead><tr><th>PSM</th><th>2</th><th>3.5</th><th>5</th><th>6.5</th><th>8</th><th>10</th><th>12</th><th>14</th><th>16</th></tr></thead><tbody><tr><td>Operating Time (sec)</td><td>10</td><td>6</td><td>5</td><td>4</td><td>3.15</td><td>3</td><td>2.9</td><td>2.5</td><td>2</td></tr></tbody></table>b) What is an impedance relay? Explain its operating principle, torque equation and operating characteristics for impedance relay? [6]\n\nc) A 3 phase 66000/6600 V star/delta transformer is protected by Merz-Price system. What will be the ratio of current transformer on the high voltage side if the current transformers on the low voltage side have a ratio of 400/5 A.",
+          "marks": "4",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the working principle of static differential relay with the proper block diagram and circuit diagram. [8]\n\nb) Define comparator and explain its types used in static relay.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "Calculate the inductance and kVA rating of Peterson coil of a $230\\text{ kV}$, $3$-phase, $50\\text{ Hz}$, $200\\text{ km}$ overhead transmission system having capacitance to earth of $0.01\\ \\mu\\text{F/km}$ per phase.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the working principle of static differential relay with the proper block diagram and circuit diagram.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": true
+        },
+        {
+          "qNum": 8,
+          "text": "Describe the construction and working principle and application area of a vacuum circuit breaker.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Define phase comparator and explain the types of comparators used in static relays.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "\n(a) How contactors are used to control and protect the motor? Explain the working principle of scheme with suitable necessary circuit. [5]\n(b) Explain the methods of overvoltage protection of electrical equipments. [5]\n(c) A 90km long 66kV, 50Hz, 3 phase overhead line has capacitance to earth equal to $0.02 \\mu F$ per km. What should be the inductance and kVA rating of the arc suppression coil.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2076 Bhadra",
+      "year": "2076",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 71,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) List down the basic requirements of good protective scheme. What do you understand by coordination of protective device and protection zone? [6]\n\nb) Explain the need of capacitive voltage transformer in power system. [4]\n\nc) What are the considerations in selecting a fuse for (i) Transformer protection (ii) capacitor protection (iii) lighting loads",
+          "marks": "4",
+          "chapter": "Fundamental of Power System Protection",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) A 50 Hz 3 phase alternator with grounded neutral has an inductance of $1.6 \\text{ mH}$ per phase and is connected to the bus-bars through a circuit breaker. The capacitance to earth of the circuit between the alternator and the circuit breaker is $0.0032 \\mu F$ per phase. Due to a short on the bus-bars the breaker opens when the rms value of the current is $8000 \\text{ A}$. Determine the following (i) frequency of the oscillation (ii) active recovery voltage (iii) time for maximum RRRV (iv) maximum RRRV [6]\n\nb) Explain the construction and working of $SF_6$ circuit breaker. Also enumerate the dielectric properties and arc quenching characteristic of $SF_6$ circuit breaker with their limitations. [6]\n\nc) What are the main parts of equipment which are used for the testing of a circuit breaker in a laboratory type testing station?",
+          "marks": "3",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Explain with a neat sketch how automation of a system is done with the help of a contactor. [6]\n\nb) What are the causes over voltages on power system? List the merits and demerits of solid grounding. [5]\n\nc) Calculate the inductance and kVA rating of the arc suppression coil of a 50 km long 33 kV, 50 Hz, 3 phase overhead transmission system having line to earth capacitance of each phase equal to $0.0125 \\mu F$.",
+          "marks": "4",
+          "chapter": "Earthing and Protection Against Over Voltage",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Determine the time of operation of two relays assuming that both the relays have the characteristics as shown in the following table. The time multiplier setting of relay 1 is 0.18 and the time grading margin between the relays is 0.4 second. [6]\n<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>9.23</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time in sec</td><td>10</td><td>6</td><td>3.9</td><td>2.9</td><td>2.8</td><td>2.2</td><td>2.1</td></tr></tbody></table>b) A 11kV, 100 MVA generator is grounded through a resistance of $6\\Omega$. The CTs have a ratio of 1000/5. The relay is set to operate when there is an out of balance current of 1A. What percentage of the generator winding will be protected by percentage differential scheme of protection? [6]\n\nc) Discuss the principle of operation of an induction disc relay with the help of a neat sketch.",
+          "marks": "4",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Describe static distance relays and their area of application. [8]\n\nb) What do you understand by amplitude comparator and phase comparator? Write short notes on (i) Time Delay Circuits and (ii) Level Detector.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Calculate the inductance and kVA rating of Peterson coil of a $230\\text{ kV}$, $3$-phase, $50\\text{ Hz}$, $200\\text{ km}$ overhead transmission system having capacitance to earth of $0.01\\ \\mu\\text{F/km}$ per phase.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "A 50 Hz 3 phase alternator with grounded neutral has an inductance of $1.6 \\text{ mH}$ per phase and is connected to the bus-bars through a circuit breaker. The capacitance to earth of the circuit between the alternator and the circuit breaker is $0.0032 \\mu F$ per phase. Due to a short on the bus-bars the breaker opens when the rms value of the current is $8000 \\text{ A}$. Determine the following (i) frequency of the oscillation (ii) active recovery voltage (iii) time for maximum RRRV (iv) maximum RRRV",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "List down the basic requirements of good protective scheme.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What are the main parts of equipment which are used for the testing of a circuit breaker in a laboratory type testing station?",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Define phase comparator and explain the types of comparators used in static relays.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "a) Explain the working principle of static differential relay with the proper block diagram and circuit diagram. [8]\n\nb) Define comparator and explain its types used in static relay.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2075 Bhadra",
+      "year": "2075",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 71,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) List down the basic requirements of good protective scheme. What do you understand by coordination of protective device and protection zone? [6]\n\nb) Explain the need of capacitive voltage transformer in power system. [4]\n\nc) What are the considerations in selecting a fuse for (i) Transformer protection (ii) capacitor protection (iii) lighting loads",
+          "marks": "4",
+          "chapter": "Fundamental of Power System Protection",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) A 50 Hz 3 phase alternator with grounded neutral has an inductance of $1.6 \\text{ mH}$ per phase and is connected to the bus-bars through a circuit breaker. The capacitance to earth of the circuit between the alternator and the circuit breaker is $0.0032 \\mu F$ per phase. Due to a short on the bus-bars the breaker opens when the rms value of the current is $8000 \\text{ A}$. Determine the following (i) frequency of the oscillation (ii) active recovery voltage (iii) time for maximum RRRV (iv) maximum RRRV [6]\n\nb) Explain the construction and working of $SF_6$ circuit breaker. Also enumerate the dielectric properties and arc quenching characteristic of $SF_6$ circuit breaker with their limitations. [6]\n\nc) What are the main parts of equipment which are used for the testing of a circuit breaker in a laboratory type testing station?",
+          "marks": "3",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Explain with a neat sketch how automation of a system is done with the help of a contactor. [6]\n\nb) What are the causes over voltages on power system? List the merits and demerits of solid grounding. [5]\n\nc) Calculate the inductance and kVA rating of the arc suppression coil of a 50 km long 33 kV, 50 Hz, 3 phase overhead transmission system having line to earth capacitance of each phase equal to $0.0125 \\mu F$.",
+          "marks": "4",
+          "chapter": "Earthing and Protection Against Over Voltage",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Discuss the advantages and limitations of static relays over electromagnetic relays. Also explain the main components of a static relay with the help of block diagram. [8]\n\nb) Explain the operating principles of static overvoltage and undervoltage relays. How do these relays detect abnormal voltage conditions and initiate protective actions to prevent equipment damage?",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Calculate the inductance and kVA rating of Peterson coil of a $230\\text{ kV}$, $3$-phase, $50\\text{ Hz}$, $200\\text{ km}$ overhead transmission system having capacitance to earth of $0.01\\ \\mu\\text{F/km}$ per phase.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "A 50 Hz 3 phase alternator with grounded neutral has an inductance of $1.6 \\text{ mH}$ per phase and is connected to the bus-bars through a circuit breaker. The capacitance to earth of the circuit between the alternator and the circuit breaker is $0.0032 \\mu F$ per phase. Due to a short on the bus-bars the breaker opens when the rms value of the current is $8000 \\text{ A}$. Determine the following (i) frequency of the oscillation (ii) active recovery voltage (iii) time for maximum RRRV (iv) maximum RRRV",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Also explain the main components of a static relay with the help of block diagram.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "List down the basic requirements of good protective scheme.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "\n(a) What are the basic requirements of protection scheme? Differentiate between a protective system and protective scheme. [6]\n(b) Explain why the secondary of CT should not be left open and secondary of PT should be short circuited. [4]\n(c) Write short notes on the following:\\n(i) Low voltage HRC fuse\\n(ii) Drop-out fuse",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "\n(a) What are the basis difference between Isolator and circuit breaker? Explain why we use isolator and circuit breaker simultaneously? [6]\n(b) A 33 kV, 3 phase 50 Hz, overhead line 60 km long has a capacitance to ground of each line equal to $0.015\\ \\mu\\text{F}$ per km. Determine the inductance and KVA rating of the peterson coil. [5]\n(c) What are the factors affecting soil resistivity? How can we reduce earth resistance?",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "\n(a) The system inductance per phase of a system is $8\\ \\text{mH}$ and the frequency of transient oscillation is $10.273\\ \\text{kHz}$. If a 50 Hz, $6.6\\ \\text{kV}$ generator is connected to that system. Calculate: [4]\\n(i) Max voltage across the contacts of the CB at $a^n$ instant when it passes through zero.\\n(ii) System capacitance per phase\\n(iii) Average rate of rise of voltage up to the first peak of oscillation, neglect resistance\n(b) Compare the performance and characteristics and working principle of : [8]\\n(i) Minimum oil circuit breaker Vs Back oil circuit breaker\\n(ii) Air blast circuit breaker Vs puffer types SF6 circuit breaker\n(c) Explain the operation of auto reclosure.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "\n(a) Explain essential components of a static relay with block diagram. [8]\n(b) Explain carrier current protection and bus bar protection with suitable diagram.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Baishakh",
+      "year": "2075",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 23,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Explain the fault clearing process with the help of trip circuit. [6]\n(b) Explain the need of Instruments transformers in system. Mention the errors on CT. [4]\n(c) Describe the time / current $I^2T$ characteristics of a HRC fuse and explain how they are used to select the ratings of fuses in series.",
+          "marks": "6",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) With the help of neat block diagram, explain the function of directional static over current relay. [8]\n(b) Draw the block diagram of microprocessor based protective scheme for protection of transmission line.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) What is isolator? With the single line diagram, explain the working of isolator with consideration of closing and opening of circuit breaker kept in high voltage installation? [2+4]\n(b) Why the neutral in a power system grounded? Explain different methods of neutral grounding. [5]\n(c) A 33KV, 3 phases, 50 Hz overhead line 60 km long has a capacitance to ground of each line equal to $0.015\\mu F$ per Km. Determine the inductance and KVA rating of Peterson coil.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Describe the construction, principle of operation and application of vacuum circuit breaker. [8]\n(b) Explain the terms related to Circuit Breaker i) Making Capacity ii) Breaking Capacity iii) Operation Duty iv) Rated Current [4]\n(c) Explain operation of HVDC circuit Breaker.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2074 Bhadra",
+      "year": "2074",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 51,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "(a) Consider the system portion shown in figure below. (i) Sketch the zone of protection\n(ii) Describe a possible backup scheme for failure of breaker 7 for a fault on line BC,\nis load 1 interrupted. (iii) Describe a means of clearing a fault on line BC without a\nmomentary interruption of load 1. [6]\n\nb) Define current transformer its working principle and their application areas. [4]\n(c) Explain the construction and operation of HRC fuse. Also mention the difference\nbetween Fuse and MCB.",
+          "marks": "3",
+          "chapter": "Fundamental of Power System Protection",
+          "isDiagram": true
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) A 50 Hz, three-phase synchronous generator has $a^n$ inductance per phase of $1.7\\ \\text{mH}$\nand its neutral is grounded. It feeds a line through a circuit breaker. The total stray\ncapacitance to ground of the generator and circuit breaker is $0.0025\\ \\mu\\text{F}$. A fault occurs\njust beyond the circuit breaker, which opens when the symmetrical short circuit\ncurrent is $7500\\ \\text{A}$. (rms). Ignoring the first pole to clear factor, determine the\nfollowing. (i) Natural frequency of Oscillations. (ii) Peak value of TRV (iii) Time at\nwhich peak value of TRV occurs (iv) Maximum rate of rise of TRV (v) Time at which\nthe maximum in part (a) occurs. [8]\n(b) Describe the construction and working of a puffer type SF6 circuit breaker. Also\nmention the properties of SF6 gas which make it a good arc quenching medium.",
+          "marks": "8",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Explain with a neat sketch how automation of a system is done with the help of a contactor. [6]\n\nb) What are the causes over voltages on power system? List the merits and demerits of solid grounding. [5]\n\nc) Calculate the inductance and kVA rating of the arc suppression coil of a 50 km long 33 kV, 50 Hz, 3 phase overhead transmission system having line to earth capacitance of each phase equal to $0.0125 \\mu F$.",
+          "marks": "4",
+          "chapter": "Earthing and Protection Against Over Voltage",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) Discuss the advantages and limitations of static relays over electromagnetic relays?\nAlso mention the main the components of static relays and their role. [8]\n(b) Describe working principle of static distance relay with a block diagram",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Calculate the inductance and kVA rating of Peterson coil of a $230\\text{ kV}$, $3$-phase, $50\\text{ Hz}$, $200\\text{ km}$ overhead transmission system having capacitance to earth of $0.01\\ \\mu\\text{F/km}$ per phase.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Briefly discuss different types of neutral earthing.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Discuss the advantages and limitations of static relays over electromagnetic relays.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "\n(a) What are the basic difference between Isolator and circuit breaker? Explain why we\nuse isolator and circuit breaker simultaneously? [6]\n(b) What is neutral earthing? Briefly discuss different types of neutral earthing. [6]\n(c) Determine the inductance and kVA rating of the arc suppression coil for a 60 km long\n33 kV, 50 Hz, 3 phase overhead line having capacitance to earth equal to $0.015\\ \\mu\\text{F}$ per\nkm.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2073 Magh",
+      "year": "2073",
+      "month": "Magh",
+      "examType": "Back",
+      "totalMarks": 19,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) For a 132 kV system, the reactance and capacitance up to the location of circuit breaker is $5\\Omega$ and $0.035 \\mu F , respectively$. A resistance of $350 \\Omega$ is connected across the contacts of the circuit breaker. Determine the (a) Natural frequency of oscillation (b) Damped frequency of oscillation (c) Critical value of resistance which will give no transient oscillation and (d) The value of resistance which will give damped frequency of oscillation, one-third of the natural frequency of oscillation. [8]\n(b) Explain the high resistance and current zero interruption method of arc extinction in the circuit breakers. What is the criteria for successful arc interruption?",
+          "marks": "8",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) State the various methods used to provide backup protection. [4]\n(b) What is the purpose of a CT? Draw a phasor diagram and explain briefly what are the ratio and phase angle error of CT?",
+          "marks": "1",
+          "chapter": "Instrument Transformers for Protection",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) With a neat sketch explain the operation of differential protection scheme for a power transformer. [6]\n\nb) Two Relays R1 and R2 are connected in two sections of a feeder shown in figure below. Fault current level at 11 kV side is 3500 A, CT ratio at 11 kV side is 200:1 and 132 kV side is 100:1. If $R_1$ set on 125% and $R_2$ set on 150% plug setting. Determine the operating time for both the relays when time grading margin of 0.75 second is given and TMS for relay R1 is 0.25. Make use of the following characteristics. [8]\n\nIDMT Characteristic:<table><thead><tr><th>PSM</th><th>2</th><th>4.6</th><th>5.33</th><th>6.73</th><th>8.2</th><th>10</th><th>12.3</th><th>13.6</th><th>15</th></tr></thead><tbody><tr><td>Operating time (sec)</td><td>10</td><td>5</td><td>4.5</td><td>4</td><td>3.15</td><td>2.8</td><td>2.5</td><td>2.3</td><td>2</td></tr></tbody></table>c) What are the different types of electromagnetic relays? Discuss their field of applications.",
+          "marks": "6",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) What factors govern the time-current characteristics of a fuse link? Explain what is meant by \"fuse coordination.\". [6]\n(b) How contactor are used to control and protect the motor? Explain the working principle of scheme with suitable necessary circuit. [6]\n(c) Why the neutral in a power system grounded? Explain. [4]\n(d) A 33KV, 3 phases, 50 Hz, 60 km long overhead line has a capacitance to ground of each line equal to $0.015\\mu F$ per Km. Determine the inductance and KVA rating of Peterson coil.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2073 Bhadra",
+      "year": "2073",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 67,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) List down the basic requirements of good protective scheme. What do you understand by coordination of protective device and protection zone? [6]\n\nb) Explain the need of capacitive voltage transformer in power system. [4]\n\nc) What are the considerations in selecting a fuse for (i) Transformer protection (ii) capacitor protection (iii) lighting loads",
+          "marks": "4",
+          "chapter": "Fundamental of Power System Protection",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "(a) Explain the following terms showing the sketch of the cut off characteristics of fuse. [6]\\n(i) Minimum fusing current\\n(ii) Rated current\\n(iii) Perspective current\\n(iv) Cutoff current\n\nv) Fusing factor\n\nb) Explain the construction, operating principle and application of isolator. [6]\n(c) An alternator rated at $10\\text{ kV}$ protected by the balanced circulating current system has its neutral grounded through a resistance of $10\\text{ ohms}$. The protective relay is set to operate when there is out of balance current of $1.8\\text{ A}$ in the pilot wires, which are connected to the secondary windings of $1000/5$ ratio current transformers. Determine:\n\n(i) the percentage winding which remain unprotected (ii) The minimum value of earthing resistance required to protect $80\\%$ of the winding.",
+          "marks": "8",
+          "chapter": "Fuses, Isolators, and Contactors",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Explain what do you understand by: [3+5]\\n(i) Rated symmetrical breaking current\\n(ii) Making capacity\\n(iii) Short time current rating\nObtain their value for a three phase CB rated as $500\\text{ A} , 500\\text{ MVA} , 11\\text{ kV} , 3\\text{ sec}$\n(b) Explain the construction and working principle of SF6 circuit breaker.",
+          "marks": "6",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) It is given that fault current level at 33 kV side is 2000 A. CT ratio at 33 kV side is 200:1 and 132 kV is 100:1 as shown in figure below. If the both relay $R_1$ and $R_2$ are set for 100% plug setting, determine the operating time for both relays assuming that both the relay have same characteristics as shown in table below. For the discrimination the time gradient margin between two relays is 0.5 second and the time setting multiplier for $R_1$ is 0.2. Also determine the time setting multiplier for $R_2$. [8]<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time in second for TMS=1</td><td>10</td><td>6</td><td>3.9</td><td>3.15</td><td>2.8</td><td>2.2</td><td>2.1</td></tr></tbody></table>b) A three phase, 11/132 kV, delta-star connected power transformer is protected by differential protection. The CTs on the LV side have a current ratio of 200/1. What must be the current ratio of the CTs on the HV side? How the CTs on both the sides of the transformer are connected. [6]\n\nc) Explain with a neat sketch the percentage differential protection of an alternator.",
+          "marks": "8",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the working of static differential relay with the proper block diagram and circuit diagram. [8]\n\nb) Discuss the advantages of digital relays. Describe the basic functional blocks of a digital relay.",
+          "marks": "5",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "Describe the basic functional blocks of a digital relay.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "List down the basic requirements of good protective scheme.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain the working principle of static differential relay with the proper block diagram and circuit diagram.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": true
+        },
+        {
+          "qNum": 9,
+          "text": "Discuss the advantages of digital relays.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "\n(a) What are the basic requirements of protection scheme? [4]\n(b) What are the main facts to distinguish current transformer and potential transformer?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2072 Magh",
+      "year": "2072",
+      "month": "Magh",
+      "examType": "Regular",
+      "totalMarks": 54,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) List down the basic requirements of good protective scheme. What do you understand by coordination of protective device and protection zone? [6]\n\nb) Explain the need of capacitive voltage transformer in power system. [4]\n\nc) What are the considerations in selecting a fuse for (i) Transformer protection (ii) capacitor protection (iii) lighting loads",
+          "marks": "4",
+          "chapter": "Fundamental of Power System Protection",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Explain the constructional details of HRC fuse. State advantages of HRC fuse. [6]\n(b) A transmission line has a capacitance of $0.1 \\text{ microfarad}$ per phase. Determine the inductance of Peterson coil to neutralize the effect of capacitance of (i) complete length of (ii) $90\\%$ length of the line. $f = 50 \\text{ Hz}$ [4]\n(c) What is chemical earthing? Write the factors affecting the earth resistance.",
+          "marks": "4",
+          "chapter": "Fuses, Isolators, and Contactors",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "(a) Describe with a neat sketch the principle of operation of a minimum oil circuit breaker. Why is it called so? [8]\n\nb) In a $220 \\text{ kV}$ system the reactance and capacitance up to the location of circuit breaker is $8 \\Omega$ and $0.025 \\mu\\text{F} , respectively$. A resistance of $600 \\Omega$ is connected across the contacts of the circuit breaker. Determine the following: (i) Natural frequency of oscillation, (ii) Damped frequency of oscillation, (iii) Critical value of resistance which will give no transient oscillation and (iv) The value of resistance which will give damped frequency of oscillation, one-forth of the natural frequency of oscillation.",
+          "marks": "8",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Discuss the advantages and limitations of static relays over electromagnetic relays. Also explain the main components of a static relay with the help of block diagram. [8]\n\nb) Explain the operating principles of static overvoltage and undervoltage relays. How do these relays detect abnormal voltage conditions and initiate protective actions to prevent equipment damage?",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Also explain the main components of a static relay with the help of block diagram.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "List down the basic requirements of good protective scheme.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "\n(a) Write down the basic requirements of a good protective scheme of power system. [4]\n(b) What are the applications of CTs and PTs in power system? What is the meaning of burden on CT? [4]\n(c) Write the types of MCB used in resistive load and inductive loads. Why?",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "\n(a) Explain essential components of a static relay with block diagram. [8]\n(b) Describe with neat block diagram, the microprocessor based relaying scheme for the protection of generator by monitoring the field current of the alternator.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2072 Ashwin",
+      "year": "2072",
+      "month": "Ashwin",
+      "examType": "Regular",
+      "totalMarks": 42,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Draw the protection zone diagram for a sample power system network and explain its rules. [4]\n(b) What are the different errors of CT? Explain briefly.",
+          "marks": "4",
+          "chapter": "Fundamental of Power System Protection",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) Explain the construction and operating principle of contactor. [6]\n(b) What are the basic difference between isolators and circuit breaker? With good circuit diagram why we use isolator and circuit breaker simultaneously in power system? Explain. [6]\n(c) The neutral point of a three-phase $20\\text{ MVA} , 11\\text{ kV}$ alternator is earthed through a resistance of $5\\Omega , the$ relay is set to operate when there is $a^n$ out of balance current of $1.5\\text{ A}$. The CTs hence a ratio $1000/5$. What percentage of winding is protected against $a^n$ earth fault and what should be the minimum value of earthing resistance to protect $90\\%$ of the winding.",
+          "marks": "8",
+          "chapter": "Fuses, Isolators, and Contactors",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Describe arc extinction process in vaccum circuit breakers. Also explain the preferred voltage levels of its application and its advantages over OCB and air blast circuit breakers. [8]\n(b) In a short circuit test on a $132\\text{ kv} , three$ phase system, the breaker gave the following results. Pf of the fault is $0.4 , recovery$ voltage is $0.9$ of full line value and the natural frequency is $16\\text{ KHz}$. Determine the rate if rise of restriking voltage in following cases.\\n(i) Assume that symmetrical fault is grounded.\\n(ii) Assume that symmetrical fault is not grounded.",
+          "marks": "8",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "(a) State the difference between circulating current differential protection and balanced voltage differential protection with reference to behavior of CTs. [6]\n(b) A $20\\text{ MVA}$ transformer which is used to operate at $30\\%$ overloads feeds $a^n$ $11\\text{kv}$ busbar through a CB. The transformer CB is equipped with a $1000:5\\text{ CT}$ and both the CTs are feed IDMT relays having following characteristics. IDMT characteristic [8]<table><thead><tr><th>PSM</th><th>2</th><th>3</th><th>5</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>T.op.sec</td><td>10</td><td>6</td><td>4.1</td><td>3</td><td>2.5</td><td>2.2</td></tr></tbody></table>The relay on the feeder CB has $125\\%$ plug setting and a $0.3$ time multiplier setting. If a fault current of $5000\\text{A}$ flows from the transformer to the feeder, determine:\\n(i) Operating time of feeder relay\\n(ii) Suggest, suitable plug setting and time multiplier setting of the transformer relay to ensure adequate discrimination of $0.5\\text{ sec}$ between the transformer relay and feeder relay.\n(c) Draw the circuit diagram of unit protection scheme and explain its operation principle and give its application.",
+          "marks": "6",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "a) Describe static distance relays and their area of application. [8]\n\nb) What do you understand by amplitude comparator and phase comparator? Write short notes on (i) Time Delay Circuits and (ii) Level Detector.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define phase comparator and explain the types of comparators used in static relays.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2071 Magh",
+      "year": "2071",
+      "month": "Magh",
+      "examType": "Regular",
+      "totalMarks": 32,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Define the following terms with reference to protection system. [4]\\n(i) Back up protection\\n(ii) Co-ordination\n(b) What are the various accuracy class of CT? List out current error, phase displacement error and composite error for each class.",
+          "marks": "4",
+          "chapter": "Fundamental of Power System Protection",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) An induction motor is required to protect through a fuse and contactor. Suggest a suitable guide line for selection of ratings of fuse and contactor. State any assumptions you make. [6]\n(b) A high voltage feeder has a circuit breaker and isolator. Develop a guideline for connecting and disconnecting the feeder through isolator and circuit breaker. Can you replace circuit breaker with contactor in the feeder? Justify your answer. [3+3]\n(c) A $13.8\\text{ KV} , 125\\text{ MVA} , star-connected$ alternator has a synchronous reactance of $1.4$ per unit per phase and negligible resistance. It is protected by a Merz-Price balanced current system which operates when out-of-balance current exceeds $10\\%$ of the full load current. If the neutral point is earthed through a resistance of $2\\ \\Omega , determine$ what proportion of winding is protected against earth fault.",
+          "marks": "8",
+          "chapter": "Fuses, Isolators, and Contactors",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) Select a circuit breaker for the following applications $6.6\\text{ KV} , 650\\text{ MVA}$ (breaking capacity) breaker. It is supposed to be connected to primary of $6600/433\\text{ V} , 2000\\text{ KVA}$ transformer. Justify your choice and prepare the specifications for the breaker. [8]\n(b) Compare the performance and characteristics of\\n(i) minimum oil circuit breaker and air blast CB\\n(ii) Air-blast circuit breaker and back oil circuit breaker",
+          "marks": "8",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) A $10\\text{ MVA} , 132/33\\text{ KV} , star-delta , three-phase$, $50\\text{ Hz}$ transformer is connected in delta on the low voltage side and in star with star point earthed on the high voltage side. If the CTs on the high voltage have a ratio of $75/1\\text{ A} , determine$ the CT ratio on the low voltage side. What would be the current circulating through pilots for a through fault due to which a current of $5$ times the full load occurs if the voltage tapping is set to $128\\text{ KV}$ at the time of occurrence of fault? [8]\n(b) Explain the following types of protection with suitable diagrams [8]\\n(i) Carrier current protection\\n(ii) Bus-bar protection\n(c) Draw the connection diagram of combined phase fault and earth fault protection scheme applied to the generator.",
+          "marks": "4",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Discuss the essential components of static relay. [8]\n(b) Draw the block diagram of microprocessor based protective scheme for protection of transmission line.\nP.61",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2071 Bhadra",
+      "year": "2071",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 63,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) What do you understand by a zone of protection? Discuss various zones of protection for a modern power system. [4]\n(b) Describe the construction of capacitor voltage transformer. [4]\n(c) What is $a^n$ isolator? Write its function and application in power system.",
+          "marks": "6",
+          "chapter": "Fundamental of Power System Protection",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "A 50 Hz 3 phase alternator with grounded neutral has an inductance of $1.6 \\text{ mH}$ per phase and is connected to the bus-bars through a circuit breaker. The capacitance to earth of the circuit between the alternator and the circuit breaker is $0.0032 \\mu F$ per phase. Due to a short on the bus-bars the breaker opens when the rms value of the current is $8000 \\text{ A}$. Determine the following (i) frequency of the oscillation (ii) active recovery voltage (iii) time for maximum RRRV (iv) maximum RRRV",
+          "marks": "8",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) In relation to a fuse, explain what do you mean by (i) prospective current (ii) cut-off current (iii) time delay fuse. [6]\n(b) Define causes of overvoltage and explain methods of overvoltage protection of electrical equipments.",
+          "marks": "8",
+          "chapter": "Earthing and Protection Against Over Voltage",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) What is Universal Torque Equation? Using this equation derive the following characteristics (i) impedance relay (ii) reactance relay (iii) mho relay. [8]\n\nb) Two relays $R_1$ and $R_2$ are connected in two sections of a feeder as shown in figure. CTs are of ratio $1000/5\\text{ A}$. The plug setting of relay $R_1$ is $100\\%$ and $R_2$ is $125\\%$. The operating time characteristic of the relays is given below.\nThe time multiplier setting of the relay $R_1$ is $0.3$. The time grading scheme has a discriminative time margin of $0.5\\text{ s}$ between relays. A three phase short circuit at F results in a fault current of $5000\\text{ A}$. Find the actual operating times of $R_1$ and $R_2$. What is the time multiplier setting (TMS) of $R_2$. [8]<table><thead><tr><th>Plug setting multiplier</th><th>2</th><th>4</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time in seconds for a time multiplier of 1</td><td>10</td><td>5</td><td>4</td><td>3</td><td>2.8</td><td>2.6</td><td>2.4</td></tr></tbody></table>c) A three phase $33/6.6$ KV star/delta connected transformer is protected by differential system. The CTs on LT side have a ratio of $300:5$. Find the ratio of the CTs on the HT side.",
+          "marks": "4",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the working of static differential relay with the proper block diagram and circuit diagram. [8]\n\nb) Discuss the advantages of digital relays. Describe the basic functional blocks of a digital relay.",
+          "marks": "5",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "Describe the basic functional blocks of a digital relay.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Discuss the advantages of digital relays.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Discuss the advantages and limitations of static relays over electromagnetic relays.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "a) Explain the working of static differential relay with the proper block diagram and circuit diagram. [8]\n\nb) Discuss the advantages of digital relays. Describe the basic functional blocks of a digital relay.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2070 Magh",
+      "year": "2070",
+      "month": "Magh",
+      "examType": "Back",
+      "totalMarks": 32,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) A transformer having capacity of $250\\text{ KVA} , 11/0.415\\text{ KV} , percentage$ impedance of $4.75\\%$ is required to be protected with fuses. Suggest guide line for selection of HV and LV side fuses. State any assumptions you make. [6]\n(b) With reference to a single line diagram of a power system, discuss the function of isolator. Also mention the application of contactors in power system. [6]\n(c) A $5000\\text{ KVA} , 6600\\text{ V} , star-connected$ alternator has a synchronous reactance of $2\\Omega$ per phase and $0.5\\Omega$ resistance. It is protected by Merz price balanced current system which operates when out of balance current exceeds $30\\%$ of load current. Determine what proportion of a alternator winding is unprotected if the star is earthed through a resistance of $6.5\\Omega$.",
+          "marks": "8",
+          "chapter": "Fuses, Isolators, and Contactors",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "(a) Figure shows a $132/66\\text{ KV}$ power transformer is fed from $a^n$ infinite bus. [8]\n\nIf the $66\\text{ KV}$ bus is a load bus, specify for the breaker 'X'\\n(i) Rated continuous current\\n(ii) Breaking capacity in MVA\n(b) Compare the merits and demerits of bulk oil circuit breakers, minimum oil circuit breakers and air blast circuit breakers.",
+          "marks": "8",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Figure shows a portion of power system in a single line diagram. Find out the time of operation of relays $R_1$ and $R_2$ for a fault immediately after relaying point $R_2$. Relay $R_1$ is voltage monitored over current relay, the plug setting (PS) which reduces to $40\\%$ of the set value if voltage collapses below $70\\%$ of rated voltage. [8]\n<table><thead><tr><th>PSM</th><th>2</th><th>3</th><th>5</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>Time (sec)</td><td>10</td><td>6</td><td>4.1</td><td>3</td><td>2.5</td><td>2.2</td></tr></tbody></table>(Assume suitable data if necessary)\n\nb) Starting from the universal torque equation, explain the operation of impedance relay used for the protection of feeder. [8]\n\nc) Draw the connection diagram of restricted earth fault protection scheme for a generator with solidly grounded.",
+          "marks": "4",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) What are the basic requirements of any protection scheme in a power system? Explain them with the help of suitable example. [4]\n(b) Discuss the causes of ratio error and phase angle error in PT.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "\n(a) Compare the static and electro-magnetic relays. [8]\n(b) Discuss the static differential relay with the help of suitable block diagram.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2070 Bhadra",
+      "year": "2070",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 57,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) What are primary and back up protection? Explain the necessity of back up protection with an example. [5]\n\nb) What do you mean by typical knee point voltage in relation to CT? Briefly explain the different errors of CT and its causes. [5]\n\nc) Explain the operating characteristics of HRC fuse. How do these characteristics influence their applications in electrical systems?",
+          "marks": "5",
+          "chapter": "Fundamental of Power System Protection",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) A circuit breaker is rated as 2500 A, 1500 MVA, 33 KV, 3 sec, 3 phase OCB. Determine (i) the rated symmetrical breaking current (ii) rated making current (iii) short time rating and (iv) rated service voltage. [2+2+2+2]\n(b) What is the most important basis for the classification of circuit breaker? How they are classified describe briefly. Mention their field of application.",
+          "marks": "8",
+          "chapter": "Circuit Breakers",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) How contactors are used to control and protect the motors? Explain the working principle of the scheme with necessary circuits. [6]\n(b) Why the neutral in a power system is grounded? What are the methods of grounding a neutral? Explain one of them in detail.",
+          "marks": "6",
+          "chapter": "Earthing and Protection Against Over Voltage",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Explain with a neat sketch the percentage differential protection of an alternator. [8]\n\nb) Design a time-current graded protection scheme based on two identical IDMT relays at points A and B for the following radial feeder. Select appropriate current tap setting and time dial settings for the relays. Find out actual time of operation of relay at A for fault in its zone and as back up. Relay at A should also back up for faults at protection zone of B. [8]\n\nGiven:<table><thead><tr><th>Relay point</th><th>CT ratio</th><th>Fault current, A</th></tr></thead><tbody><tr><td>A</td><td>300/5</td><td>4000</td></tr><tr><td>B</td><td>200/5</td><td>3000</td></tr><tr><td>Far end of feeder at point C</td><td></td><td>2000</td></tr></tbody></table>IDMT Characteristics<table><thead><tr><th>PSM</th><th>2</th><th>3.6</th><th>5</th><th>8</th><th>10</th><th>15</th><th>20</th></tr></thead><tbody><tr><td>T.op. sec</td><td>10</td><td>6</td><td>3.9</td><td>3.15</td><td>2.8</td><td>2.2</td><td>2.2</td><td>(for TDS = 1)</td></tr></tbody></table>c) How does Buchholz relay protect the internal faults of transformer?",
+          "marks": "4",
+          "chapter": "Relay and Protection Schemes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Discuss the advantages and limitations of static relays over electromagnetic relays. Also explain the main components of a static relay with the help of block diagram. [8]\n\nb) Explain the operating principles of static overvoltage and undervoltage relays. How do these relays detect abnormal voltage conditions and initiate protective actions to prevent equipment damage?",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Also explain the main components of a static relay with the help of block diagram.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Briefly discuss different types of neutral earthing.",
+          "marks": "8",
+          "chapter": "Static and Numerical Relays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "\n(a) Why protection system is needed in electrical power system? State and explain various causes of electrical faults. [4]\n(b) What is 'knee point voltage'? Mention the difference between measuring and protective CT. [4]\n(c) What is the main difference between Fuse and MCB? Define the following terms for HRC fuse: (i) cut off (ii) pre-arcing time (iii) arcing time.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "\n(a) State and explain various functional circuits of a static relay with the help of block diagram and explain the function of each block. [8]\n(b) Describe the circuit of static differential relay for protection of two winding transformer.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
     }
   ]
 }

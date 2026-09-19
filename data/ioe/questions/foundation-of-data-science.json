@@ -1,331 +1,96 @@
 {
   "subject": "Foundation of Data Science",
-  "generated": "2026-09-19",
-  "totalSessions": 1,
-  "sessions": [
-    "2081 Chaitra"
-  ],
-  "chapters": [
-    "Introduction to Data Science",
-    "Mathematics for Data Science",
-    "Data Understanding and Preprocessing",
-    "Data Analysis",
-    "Regression and Predictive Modeling",
-    "Modeling and Validation Processes",
-    "Ethics and Recent Trends"
-  ],
+  "semester": "1",
   "questions": [
     {
-      "chapter": "Modeling and Validation Processes",
-      "text": "Why is K-fold cross validation considered the standard method for validating predictive models? Define training data, validation data, test data, and describe the step-by-step procedure of K-fold cross-validation.",
-      "marks": "5",
+      "id": "foundation-of-data-science-1",
+      "question": "Here is the 10 random sample data of graduate student age from Sociology and Political Science program class.\n\na) Calculate normalized ages of 2-students (Data #1, both Women and Men) using z-score and min-max of Zero-to-one. [4]\n\n(Show your all calculations and consider all 10 data as a single sample.)\n\nb) Using the same data above, draw a box-plot for depiction of all 10 student age distribution. You need to show all calculations and label the plot properly.",
+      "text": "Here is the 10 random sample data of graduate student age from Sociology and Political Science program class.\n\na) Calculate normalized ages of 2-students (Data #1, both Women and Men) using z-score and min-max of Zero-to-one. [4]\n\n(Show your all calculations and consider all 10 data as a single sample.)\n\nb) Using the same data above, draw a box-plot for depiction of all 10 student age distribution. You need to show all calculations and label the plot properly.",
+      "chapter": "Data Understanding and Preprocessing",
+      "marks": "4",
+      "frequency": 1,
       "years": [
         "2081 Chaitra"
       ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Modeling and Validation Processes",
-      "text": "Given a classification test set of 50,000 samples with confusion matrix values: True Positive ($TP$) = 1000, False Positive ($FP$) = 1000, False Negative ($FN$) = 100, and True Negative ($TN$) = 47,900:\n(a) Calculate Accuracy, Precision, Recall, and F1-score.\n(b) Explain why Accuracy can be deceptive in highly imbalanced datasets compared to F1-score.",
-      "marks": "5",
-      "years": [
+      "examSessions": [
         "2081 Chaitra"
       ],
-      "frequency": 2
+      "isDiagram": false
     },
     {
+      "id": "foundation-of-data-science-2",
+      "question": "a) Prepare a note on Central Limit Theorem. Why this is considered as important in data analysis and other tasks? Briefly explain. [4]\n\nb) An e-mail filter is planned to separate valid e-mails from spam. The word free occurs in 70% of the spam messages and only 4% of the valid messages. Also, 25% of the messages are spam. Determine the following probabilities:\n\n(i) The message contains free. (ii) The message is spam given that it contains free.\n(iii) The message is valid given that it does not contain free.",
+      "text": "a) Prepare a note on Central Limit Theorem. Why this is considered as important in data analysis and other tasks? Briefly explain. [4]\n\nb) An e-mail filter is planned to separate valid e-mails from spam. The word free occurs in 70% of the spam messages and only 4% of the valid messages. Also, 25% of the messages are spam. Determine the following probabilities:\n\n(i) The message contains free. (ii) The message is spam given that it contains free.\n(iii) The message is valid given that it does not contain free.",
       "chapter": "Mathematics for Data Science",
-      "text": "An e-mail filter is designed to separate valid emails from spam. The word \"free\" occurs in 70% of spam messages and in only 4% of valid messages. Overall, 25% of received messages are spam. Using Bayes' Theorem, determine:\n(a) The probability that a randomly chosen message contains \"free\".\n(b) The probability that the message is spam given that it contains \"free\".\n(c) The probability that the message is valid given that it does not contain \"free\".",
       "marks": "6",
+      "frequency": 1,
       "years": [
         "2081 Chaitra"
       ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Mathematics for Data Science",
-      "text": "State the Central Limit Theorem (CLT). Why is it considered foundational in data science, sampling theory, and hypothesis testing? Explain with an example.",
-      "marks": "4",
-      "years": [
+      "examSessions": [
         "2081 Chaitra"
       ],
-      "frequency": 2
+      "isDiagram": false
     },
     {
+      "id": "foundation-of-data-science-3",
+      "question": "a) What is semi-structured data? How it is different than structured and unstructured data? Explain briefly. [3]\n\nb) How do you handle missing data during data preprocessing? Briefly explain two methods illustrating with a small sample data example.",
+      "text": "a) What is semi-structured data? How it is different than structured and unstructured data? Explain briefly. [3]\n\nb) How do you handle missing data during data preprocessing? Briefly explain two methods illustrating with a small sample data example.",
       "chapter": "Data Understanding and Preprocessing",
-      "text": "How do you handle missing values during data preprocessing? Explain Mean/Median imputation, Mode imputation, K-Nearest Neighbors imputation, and dropping strategies with practical examples.",
       "marks": "4",
+      "frequency": 1,
       "years": [
         "2081 Chaitra"
       ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Data Understanding and Preprocessing",
-      "text": "Given a sample dataset of numerical attributes, perform data normalization using: (a) Min-Max feature scaling in the range $[0, 1]$, and (b) Z-score standardization ($z = \\frac{x - \\mu}{\\sigma}$). Compare their sensitivity to outliers.",
-      "marks": "4",
-      "years": [
+      "examSessions": [
         "2081 Chaitra"
       ],
-      "frequency": 2
+      "isDiagram": false
     },
     {
+      "id": "foundation-of-data-science-4",
+      "question": "a) What are the purposes of data visualization? Explain with an example of heat-map based visualization. [5]\n\nb) What is regression, and how does it support predictive analytics? Explain with a small sample business application.",
+      "text": "a) What are the purposes of data visualization? Explain with an example of heat-map based visualization. [5]\n\nb) What is regression, and how does it support predictive analytics? Explain with a small sample business application.",
       "chapter": "Data Analysis",
-      "text": "Explain the Five-Number summary (Minimum, $Q_1$, Median, $Q_3$, Maximum). Draw and label a Box-and-Whisker plot to detect outliers using the Interquartile Range ($1.5 \\times \\text{IQR}$) rule for a given dataset.",
-      "marks": "4",
-      "years": [
-        "2081 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Data Analysis",
-      "text": "What are the primary objectives of data visualization in Exploratory Data Analysis (EDA)? Explain the interpretation and use cases of Heatmaps, Correlation matrices, Scatter plots, and Histograms.",
       "marks": "5",
+      "frequency": 1,
       "years": [
         "2081 Chaitra"
       ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Regression and Predictive Modeling",
-      "text": "What is linear regression and how does it support predictive analytics? Formulate the ordinary least squares (OLS) loss function and explain how gradient descent optimizes regression weights.",
-      "marks": "5",
-      "years": [
+      "examSessions": [
         "2081 Chaitra"
       ],
-      "frequency": 2
+      "isDiagram": false
     },
     {
+      "id": "foundation-of-data-science-5",
+      "question": "How is a programmer different from a data scientist? Explain the differences in terms of skill requirements and the various roles available for data scientists in the job market.",
+      "text": "How is a programmer different from a data scientist? Explain the differences in terms of skill requirements and the various roles available for data scientists in the job market.",
       "chapter": "Introduction to Data Science",
-      "text": "How is a traditional software programmer different from a data scientist? Explain the differences in skill sets (programming, statistics, domain knowledge) and discuss career roles: Data Analyst, Data Engineer, Machine Learning Engineer, and Data Scientist.",
       "marks": "5",
+      "frequency": 1,
       "years": [
         "2081 Chaitra"
       ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Introduction to Data Science",
-      "text": "Differentiate between Structured, Semi-Structured (JSON, XML, CSV), and Unstructured data (text, images, audio) with examples. Describe the typical stages of the Data Science Lifecycle.",
-      "marks": "4",
-      "years": [
+      "examSessions": [
         "2081 Chaitra"
       ],
-      "frequency": 2
+      "isDiagram": false
     },
     {
+      "id": "foundation-of-data-science-6",
+      "question": "Write brief notes on: (Any Three) [3x4]\n\n(i) GDPR\n(ii) Generative AI\n(iii) Feature selection\n(iv) Performance measure using MAE",
+      "text": "Write brief notes on: (Any Three) [3x4]\n\n(i) GDPR\n(ii) Generative AI\n(iii) Feature selection\n(iv) Performance measure using MAE",
       "chapter": "Ethics and Recent Trends",
-      "text": "Explain the key principles of the General Data Protection Regulation (GDPR). Discuss data privacy, user consent, algorithmic bias, and ethical considerations in deploying data science systems.",
-      "marks": "4",
-      "years": [
-        "2081 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Data Understanding and Preprocessing",
-      "text": "Explain Feature Selection techniques: Filter methods (correlation, chi-square), Wrapper methods (forward selection, backward elimination), and Embedded methods (Lasso L1 regularization).",
-      "marks": "4",
-      "years": [
-        "2081 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Modeling and Validation Processes",
-      "text": "Explain regression evaluation metrics: Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE), and Coefficient of Determination ($R^2$). When is MAE preferred over RMSE?",
-      "marks": "4",
-      "years": [
-        "2081 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Data Analysis",
-      "text": "What is the curse of dimensionality? Explain the working principle of Principal Component Analysis (PCA) for unsupervised dimensionality reduction using eigenvectors and eigenvalues.",
-      "marks": "5",
-      "years": [
-        "2081 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Ethics and Recent Trends",
-      "text": "Write short notes on: (a) Generative AI and Foundation Models in data science, (b) K-Means clustering algorithm, (c) ROC-AUC curve analysis.",
-      "marks": "6",
-      "years": [
-        "2081 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Regression and Predictive Modeling",
-      "text": "Explain Logistic Regression for binary classification. Derive the Sigmoid activation function $\\sigma(z) = \\frac{1}{1 + e^{-z}}$, odds ratio, and log-odds (logit) formulation. How does Binary Cross-Entropy loss penalize classification errors?",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2082 Chaitra",
         "2081 Chaitra"
       ],
-      "frequency": 2,
-      "frequencyTier": "High",
-      "solutionOutline": "Maps linear combination z = w^T x + b into probability range [0, 1] using logistic function. Logit = ln(p/(1-p)) = w^T x + b. Model parameters optimized using maximum likelihood estimation via gradient descent on binary cross-entropy loss L = -[y ln p + (1-y) ln(1-p)]."
-    },
-    {
-      "chapter": "Regression and Predictive Modeling",
-      "text": "Explain Decision Tree learning algorithm. Describe Information Gain, Shannon Entropy $H(S) = -\\sum p_i \\log_2 p_i$, and Gini Impurity criteria used by ID3 and CART algorithms to select best splitting attributes with a small numerical example.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
+      "examSessions": [
         "2081 Chaitra"
       ],
-      "frequency": 2,
-      "frequencyTier": "High",
-      "solutionOutline": "Non-parametric supervised model building a tree of decision rules. ID3 uses Information Gain = Entropy(parent) - weighted Entropy(children). CART uses Gini Impurity = 1 - sum(p_i^2). High purity yields lowest entropy/gini; highest gain attribute selected at each internal split node."
-    },
-    {
-      "chapter": "Data Analysis",
-      "text": "What is K-Means clustering? Explain the step-by-step algorithm, centroid update formula, convergence criteria, and the Elbow Method for determining optimal number of clusters ($k$).",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2081 Chaitra"
-      ],
-      "frequency": 2,
-      "frequencyTier": "High",
-      "solutionOutline": "Unsupervised partitioning algorithm. Steps: 1) Initialize k centroids randomly; 2) Assign each data point to nearest centroid using Euclidean distance; 3) Recompute centroid as mean of cluster members; 4) Repeat until centroids do not change or max iterations reached. Elbow method plots Within-Cluster Sum of Squares (WCSS) vs k."
-    },
-    {
-      "chapter": "Mathematics for Data Science",
-      "text": "Explain Hypothesis Testing in data science: Null Hypothesis ($H_0$), Alternative Hypothesis ($H_1$), significance level ($\\alpha$), p-value, Type I error, and Type II error. When do we apply two-sample t-test versus z-test?",
-      "marks": "6",
-      "years": [
-        "2082 Chaitra",
-        "2081 Chaitra"
-      ],
-      "frequency": 2,
-      "frequencyTier": "High",
-      "solutionOutline": "Statistical method to decide whether sample evidence supports rejecting H0. Type I error: rejecting true H0 (probability alpha). Type II error: failing to reject false H0 (probability beta). p-value <= alpha indicates statistical significance. Z-test used when population variance is known and n >= 30; t-test used when variance unknown and sample small."
-    },
-    {
-      "chapter": "Regression and Predictive Modeling",
-      "text": "What is Overfitting and Underfitting in supervised machine learning? Explain the Bias-Variance Tradeoff and describe regularization techniques: Ridge ($L_2$) and Lasso ($L_1$) regression penalty terms.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2081 Chaitra"
-      ],
-      "frequency": 2,
-      "frequencyTier": "High",
-      "solutionOutline": "Underfitting: high bias, model too simple to capture patterns. Overfitting: high variance, model memorizes training noise failing to generalize. Ridge regression adds L2 penalty lambda * sum(w_i^2) shrinking weights smoothly. Lasso adds L1 penalty lambda * sum(|w_i|) driving unimportant coefficients to zero, performing embedded feature selection."
-    },
-    {
-      "chapter": "Data Analysis",
-      "text": "Differentiate between Correlation and Causation. Explain Pearson Correlation Coefficient ($r$) and Spearman Rank Correlation ($\\rho$). How does a Correlation Heatmap assist in bivariate exploratory analysis?",
-      "marks": "6",
-      "years": [
-        "2082 Chaitra",
-        "2081 Chaitra"
-      ],
-      "frequency": 2,
-      "frequencyTier": "High",
-      "solutionOutline": "Correlation measures statistical association; causation implies change in one variable directly produces change in another. Pearson r measures linear association between continuous variables: r in [-1, +1]. Spearman rho measures monotonic association using ranked data, robust to outliers. Heatmaps display pairwise correlation matrix using color gradients to spot collinear features."
-    },
-    {
-      "chapter": "Data Understanding and Preprocessing",
-      "text": "What are Outliers in a dataset? Explain the Interquartile Range (IQR) method and Z-score method for detecting outliers. How should outliers be treated in data cleaning?",
-      "marks": "6",
-      "years": [
-        "2082 Chaitra",
-        "2081 Chaitra"
-      ],
-      "frequency": 2,
-      "frequencyTier": "High",
-      "solutionOutline": "Outliers are data points deviating significantly from other observations. IQR method defines bounds [Q1 - 1.5*IQR, Q3 + 1.5*IQR]. Z-score method flags data with |z| > 3. Treatment options: trimming/dropping (if data entry errors), winsorizing (capping at percentiles), or applying log transformations."
-    },
-    {
-      "chapter": "Regression and Predictive Modeling",
-      "text": "Explain Random Forest and Ensemble Learning methods. Compare Bagging (Bootstrap Aggregation) with Boosting (AdaBoost, Gradient Boosting) in terms of variance reduction and model accuracy.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2081 Chaitra"
-      ],
-      "frequency": 2,
-      "frequencyTier": "High",
-      "solutionOutline": "Ensemble learning combines multiple base learners to achieve superior predictive accuracy. Bagging (Random Forest) trains diverse decision trees independently in parallel on bootstrap samples and random feature subsets to reduce variance. Boosting builds sequential trees where each subsequent tree corrects errors of predecessor, reducing bias."
-    },
-    {
-      "chapter": "Introduction to Data Science",
-      "text": "Explain the Data Science Lifecycle according to the CRISP-DM methodology: Business Understanding, Data Understanding, Data Preparation, Modeling, Evaluation, and Deployment.",
-      "marks": "6",
-      "years": [
-        "2082 Chaitra",
-        "2081 Chaitra"
-      ],
-      "frequency": 2,
-      "frequencyTier": "High",
-      "solutionOutline": "Cross-Industry Standard Process for Data Mining (CRISP-DM). 1) Business Understanding: formulate project goals and analytical problems; 2) Data Understanding: ingest, explore, assess quality; 3) Data Preparation: cleaning, transformation, feature engineering; 4) Modeling: select algorithms, tune hyperparameters; 5) Evaluation: validate against business metrics; 6) Deployment & Monitoring."
-    },
-    {
-      "chapter": "Data Understanding and Preprocessing",
-      "text": "What is Categorical Data Encoding? Compare One-Hot Encoding and Label (Ordinal) Encoding. Why does One-Hot Encoding cause the curse of dimensionality on high-cardinality attributes?",
-      "marks": "4",
-      "years": [
-        "2082 Chaitra",
-        "2081 Chaitra"
-      ],
-      "frequency": 2,
-      "frequencyTier": "High",
-      "solutionOutline": "Converts categorical strings into numerical format required by ML models. Label encoding assigns integer 0, 1, 2... suitable for ordinal data with intrinsic ranking. One-hot encoding creates binary column for each category, introducing high dimensionality and sparsity when cardinality is large, causing high memory and computation costs."
-    },
-    {
-      "chapter": "Modeling and Validation Processes",
-      "text": "Explain Receiver Operating Characteristic (ROC) curve and Area Under Curve (AUC). How are True Positive Rate (Sensitivity) and False Positive Rate ($1 - \\text{Specificity}$) plotted to compare classifier performance?",
-      "marks": "6",
-      "years": [
-        "2082 Chaitra",
-        "2081 Chaitra"
-      ],
-      "frequency": 2,
-      "frequencyTier": "High",
-      "solutionOutline": "ROC curves plot TPR = TP/(TP+FN) on y-axis against FPR = FP/(FP+TN) on x-axis across varying classification threshold values from 1 to 0. AUC measures overall classification performance across all thresholds: AUC = 1.0 (perfect), AUC = 0.5 (random guess). Invariant to class imbalance."
-    },
-    {
-      "chapter": "Data Analysis",
-      "text": "Explain Principal Component Analysis (PCA) step-by-step: data standardization, Covariance Matrix computation, Eigenvalues and Eigenvectors calculation, and projection onto principal components.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2081 Chaitra"
-      ],
-      "frequency": 2,
-      "frequencyTier": "High",
-      "solutionOutline": "Unsupervised linear dimensionality reduction technique. Steps: 1) Standardize features to zero mean and unit variance; 2) Compute covariance matrix C = (1/n) X^T X; 3) Compute eigenvalues and eigenvectors; 4) Sort eigenvectors in descending order of eigenvalues; 5) Form projection matrix W from top k eigenvectors; 6) Transform X_new = X * W."
-    },
-    {
-      "chapter": "Ethics and Recent Trends",
-      "text": "Discuss Data Ethics, Algorithmic Bias, and Fairness in AI/Data Science. How can historical bias in training datasets lead to unfair discrimination in automated loan approvals and hiring systems?",
-      "marks": "6",
-      "years": [
-        "2082 Chaitra",
-        "2081 Chaitra"
-      ],
-      "frequency": 2,
-      "frequencyTier": "High",
-      "solutionOutline": "Ethical considerations ensure responsible data handling. Algorithmic bias occurs when training data reflects societal prejudices or underrepresentation of minority groups. ML models perpetuate and amplify historical disparities. Mitigated through diverse training sets, fairness constraints (demographic parity, equal opportunity), and algorithmic auditing."
-    },
-    {
-      "chapter": "Introduction to Data Science",
-      "text": "Explain Big Data characteristics through the 5 V's: Volume, Velocity, Variety, Veracity, and Value. Differentiate between Batch Processing and Real-time Stream Processing architectures.",
-      "marks": "6",
-      "years": [
-        "2082 Chaitra",
-        "2081 Chaitra"
-      ],
-      "frequency": 2,
-      "frequencyTier": "High",
-      "solutionOutline": "5 Vs: Volume (massive dataset sizes), Velocity (high rate of data generation and ingestion), Variety (heterogeneous data formats: structured, text, video), Veracity (data quality and trustworthiness), Value (business actionable insights). Batch processing (Hadoop MapReduce) operates on large static historical data chunks; stream processing (Spark Streaming, Kafka) analyzes continuous real-time data events with sub-second latency."
+      "isDiagram": false
     }
   ],
   "yearWisePapers": [
@@ -334,55 +99,48 @@
       "year": "2081",
       "month": "Chaitra",
       "examType": "Regular",
-      "totalMarks": 56,
+      "totalMarks": 32,
       "questions": [
         {
           "qNum": 1,
-          "text": "How is a programmer different from a data scientist? Explain the differences in terms of\nskill requirements and the various roles available for data scientists in the job market.",
-          "marks": "8",
+          "text": "How is a programmer different from a data scientist? Explain the differences in terms of skill requirements and the various roles available for data scientists in the job market.",
+          "marks": "5",
           "chapter": "Introduction to Data Science",
           "isDiagram": false
         },
         {
           "qNum": 2,
-          "text": "\n(a) Why is K-fold cross validation considered as the standard method for validating\nmodel? Explain all the terms; training data, testing data, validating data and fold and\noverall steps.\n\n(b) Considering the test data size as 50,000, a typical classification model\nexperimentation results are as shown on the confusion matrix.\\n(i) Calculate Accuracy, Precision and Fr-score measure data as per table below.\\n(ii) Explain the difference on resulted accuracy and Fr-score value that you have\ncalculated.\nPREDICTEDCLASS\nACTUAL\nCLASS",
-          "marks": "8",
-          "chapter": "Modeling and Validation Processes",
+          "text": "a) Prepare a note on Central Limit Theorem. Why this is considered as important in data analysis and other tasks? Briefly explain. [4]\n\nb) An e-mail filter is planned to separate valid e-mails from spam. The word free occurs in 70% of the spam messages and only 4% of the valid messages. Also, 25% of the messages are spam. Determine the following probabilities:\n\n(i) The message contains free. (ii) The message is spam given that it contains free.\n(iii) The message is valid given that it does not contain free.",
+          "marks": "6",
+          "chapter": "Mathematics for Data Science",
           "isDiagram": false
         },
         {
           "qNum": 3,
-          "text": "\n(a) Prepare a note on Central Limit Theorem. Why this is considered as important in data\nanalysis and other tasks? Briefly explain.\n\n(b) An e-mail filter is planned to separate valid e-mails from spam. The word free occurs\nin 70% of the spam messages and only 4% of the valid messages. Also, 25% of the\nmessages are spam. Determine the following probabilities:\n(i) The message contains free.  (ii) The message is spam given that it contains free.\n(ii)The message is valid given that it does not contain free.",
-          "marks": "8",
-          "chapter": "Data Analysis",
+          "text": "a) What is semi-structured data? How it is different than structured and unstructured data? Explain briefly. [3]\n\nb) How do you handle missing data during data preprocessing? Briefly explain two methods illustrating with a small sample data example.",
+          "marks": "4",
+          "chapter": "Data Understanding and Preprocessing",
           "isDiagram": false
         },
         {
           "qNum": 4,
-          "text": "\n(a) What is semi-structured data? How it is different than structured and unstructured\ndata? Explain briefly.\n\n(b) How do you handle missing data during data preprocessing? Briefly explain two\nmethods illustrating with a small sample data example.",
-          "marks": "8",
+          "text": "Here is the 10 random sample data of graduate student age from Sociology and Political Science program class.\n\na) Calculate normalized ages of 2-students (Data #1, both Women and Men) using z-score and min-max of Zero-to-one. [4]\n\n(Show your all calculations and consider all 10 data as a single sample.)\n\nb) Using the same data above, draw a box-plot for depiction of all 10 student age distribution. You need to show all calculations and label the plot properly.",
+          "marks": "4",
           "chapter": "Data Understanding and Preprocessing",
           "isDiagram": false
         },
         {
           "qNum": 5,
-          "text": "Here is the 10 random sample data of graduate student age from Sociology and Political\nScience program class.\n\n(a) Calculate normalized ages of 2-students (Data #1, both Women and Men) using\nz-score and min-max of Zero-to-one.\nData#\nAge(Women)\nAge (Men)\n(Show your all calculations and consider\nall 10 data as a single sample.)\n\n(b) Using the same data above, draw a box-plot for depiction of all 10 student age\ndistribution. You need to show all calculations and label the plot properly.",
-          "marks": "8",
-          "chapter": "Introduction to Data Science",
+          "text": "a) What are the purposes of data visualization? Explain with an example of heat-map based visualization. [5]\n\nb) What is regression, and how does it support predictive analytics? Explain with a small sample business application.",
+          "marks": "5",
+          "chapter": "Data Analysis",
           "isDiagram": false
         },
         {
           "qNum": 6,
-          "text": "\n(a) What are the purposes of data visualization? Explain with $a^n$ example of heat-map\nbasedvisualization.\n\n(b) What is regression, and how does it support predictive analytics? Explain with a small\nsamplebusiness application.",
+          "text": "Write brief notes on: (Any Three) [3x4]\n\n(i) GDPR\n(ii) Generative AI\n(iii) Feature selection\n(iv) Performance measure using MAE",
           "marks": "8",
-          "chapter": "Data Analysis",
-          "isDiagram": false
-        },
-        {
-          "qNum": 7,
-          "text": "Write brief notes on: (Any Three)\n(i) GDPR\n(iii) Generative AI\n(ii)Featureselection\n(iv) Performance measure using MAE",
-          "marks": "8",
-          "chapter": "Data Analysis",
+          "chapter": "Ethics and Recent Trends",
           "isDiagram": false
         }
       ]

@@ -1,379 +1,3447 @@
 {
   "subject": "Propagation and Antenna",
-  "subjectCode": "ENEX 303",
+  "semester": "1",
   "questions": [
     {
-      "chapter": "Propagation and Radio Frequency Spectrum",
-      "text": "Derive the Friis transmission formula for free space radio communication: $P_r = P_t G_t G_r \\left(\\frac{\\lambda}{4\\pi d}\\right)^2$. A microwave link operates at $2.8\\text{ GHz}$ over $70\\text{ km}$ distance with antenna gains of $20\\text{ dB}$ at both ends and transmitted power of $10\\text{ W}$. Calculate the received signal power.",
+      "id": "propagation-and-antenna-1",
+      "question": "Write short notes on: Knife edge diffraction",
+      "text": "Write short notes on: Knife edge diffraction",
+      "chapter": "Archive Questions",
       "marks": "8",
+      "frequency": 15,
       "years": [
-        "2082 Kartik",
-        "2081 Ashwin",
-        "2076 Baisakh",
-        "2075 Bhadra"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Propagation and Radio Frequency Spectrum",
-      "text": "Explain the mechanism of ionospheric wave propagation and its structure (D, E, F1, F2 layers). Define critical frequency ($f_c$), virtual height, skip distance ($d_{\\text{skip}}$), and Maximum Usable Frequency (MUF). Derive the Secant Law: $\\text{MUF} = f_c \\sec\\theta_i = f_c \\sqrt{1 + \\left(\\frac{d}{2h}\\right)^2}$.",
-      "marks": "10",
-      "years": [
-        "2081 Chaitra",
-        "2081 Ashwin",
-        "2080 Chaitra",
-        "2079 Chaitra",
-        "2076 Baisakh"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Antenna Classifications",
-      "text": "Explain the construction, working principle, current distribution, and radiation pattern of a Yagi-Uda Antenna array. What is the role of the driven folded dipole element, reflector, and directors? Design a 5-element Yagi-Uda antenna.",
-      "marks": "8",
-      "years": [
-        "2081 Chaitra",
-        "2080 Chaitra",
-        "2076 Baisakh"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Antenna Classifications",
-      "text": "Explain the working principle, geometry, design parameters (scaling factor $\\tau$ and spacing factor $\\sigma$), advantages, and applications of a Log-Periodic Dipole Array (LPDA) antenna. Why is it broadband?",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Ashwin",
-        "2075 Bhadra"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Wave Propagation and Antenna Fundamentals",
-      "text": "Explain the following antenna parameters with definitions and mathematical relations: (a) Radiation Pattern and Half-Power Beamwidth (HPBW), (b) Directivity and Antenna Gain ($G = \\eta D$), (c) Radiation Resistance and Input Impedance, (d) Antenna Polarization (Linear, Circular, Elliptical).",
-      "marks": "8",
-      "years": [
+        "2082 Chaitra",
+        "2082 Chaitra",
         "2081 Chaitra",
         "2080 Chaitra",
         "2079 Chaitra",
         "2077 Chaitra",
-        "2076 Baisakh"
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2074 Bhadra",
+        "2072 Ashwin"
       ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Basic Antenna Parameters and Arrays",
-      "text": "Derive an expression for the total electric field and array factor in the case of two isotropic point sources with equal amplitude and arbitrary phase difference $\\alpha$. Distinguish between Broadside Array and End-Fire Array with radiation patterns.",
-      "marks": "8",
-      "years": [
+      "examSessions": [
+        "2082 Chaitra",
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2080 Chaitra",
         "2079 Chaitra",
         "2077 Chaitra",
-        "2076 Baisakh"
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2074 Bhadra",
+        "2072 Ashwin"
       ],
-      "frequency": 3
+      "isDiagram": false
     },
     {
-      "chapter": "Antenna Classifications",
-      "text": "What is an aperture antenna? Explain the construction, working principle, feed mechanisms, and radiation characteristics of Parabolic Reflector Antennas, Cassegrain feed systems, and Horn antennas.",
-      "marks": "8",
+      "id": "propagation-and-antenna-2",
+      "question": "Define a critical frequency $f_{(CRT)}$. Derive an expression for the relation between skip distance and maximum usable frequency ($f_{MUF}$) in SW propagation assuming that the Earth is Flat.",
+      "text": "Define a critical frequency $f_{(CRT)}$. Derive an expression for the relation between skip distance and maximum usable frequency ($f_{MUF}$) in SW propagation assuming that the Earth is Flat.",
+      "chapter": "Propagation and Radio Frequency Spectrum",
+      "marks": "5",
+      "frequency": 14,
       "years": [
-        "2081 Ashwin",
+        "2081 Chaitra",
+        "2082 Chaitra",
+        "2082 Chaitra",
         "2080 Chaitra",
         "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2074 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2082 Chaitra",
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2074 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-3",
+      "question": "Derive the formula to establish the relationship between maximum usable frequency ($f_{MUF}$) and skip distance (D) assuming earth is flat.",
+      "text": "Derive the formula to establish the relationship between maximum usable frequency ($f_{MUF}$) and skip distance (D) assuming earth is flat.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 14,
+      "years": [
+        "2082 Chaitra",
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2074 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2082 Chaitra",
+        "2081 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2074 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-4",
+      "question": "Derive the Friis transmission equation for the free space propagation.",
+      "text": "Derive the Friis transmission equation for the free space propagation.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 12,
+      "years": [
+        "2080 Chaitra",
+        "2078 Chaitra",
+        "2073 Bhadra",
+        "2072 Ashwin",
+        "2071 Bhadra",
+        "2069 Bhadra"
+      ],
+      "examSessions": [
+        "2080 Chaitra",
+        "2078 Chaitra",
+        "2073 Bhadra",
+        "2072 Ashwin",
+        "2071 Bhadra",
+        "2069 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-5",
+      "question": "Define an antenna. Explain the radiation mechanism and conditions of a single wire antenna that can radiate electromagnetic waves or not.",
+      "text": "Define an antenna. Explain the radiation mechanism and conditions of a single wire antenna that can radiate electromagnetic waves or not.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 8,
+      "years": [
+        "2081 Chaitra",
+        "2082 Chaitra",
+        "2079 Chaitra",
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2072 Ashwin"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2082 Chaitra",
+        "2079 Chaitra",
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2072 Ashwin"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-6",
+      "question": "Explain the operation of ionospheric communication with the help of different layers created in the atmosphere.",
+      "text": "Explain the operation of ionospheric communication with the help of different layers created in the atmosphere.",
+      "chapter": "Propagation and Radio Frequency Spectrum",
+      "marks": "6",
+      "frequency": 8,
+      "years": [
+        "2077 Chaitra",
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2072 Ashwin"
+      ],
+      "examSessions": [
+        "2077 Chaitra",
+        "2076 Bhadra",
+        "2075 Bhadra",
+        "2072 Ashwin"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-7",
+      "question": "List the main characteristics of UHF band. Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+      "text": "List the main characteristics of UHF band. Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+      "chapter": "Antenna Classifications",
+      "marks": "6",
+      "frequency": 7,
+      "years": [
+        "2081 Chaitra",
+        "2082 Chaitra",
+        "2071 Bhadra",
+        "2070 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2082 Chaitra",
+        "2071 Bhadra",
+        "2070 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-8",
+      "question": "Where are optical fibers most widely used? Explain the various advantages and disadvantages of optical fibers over metal wire communication.",
+      "text": "Where are optical fibers most widely used? Explain the various advantages and disadvantages of optical fibers over metal wire communication.",
+      "chapter": "Archive Questions",
+      "marks": "5",
+      "frequency": 7,
+      "years": [
+        "2076 Bhadra",
+        "2074 Bhadra",
+        "2070 Bhadra",
+        "2069 Bhadra"
+      ],
+      "examSessions": [
+        "2076 Bhadra",
+        "2074 Bhadra",
+        "2070 Bhadra",
+        "2069 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-9",
+      "question": "Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+      "text": "Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 7,
+      "years": [
+        "2081 Chaitra",
+        "2082 Chaitra",
+        "2071 Bhadra",
+        "2070 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Chaitra",
+        "2082 Chaitra",
+        "2071 Bhadra",
+        "2070 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-10",
+      "question": "Explain the principle of light propagation through a fiber with necessary diagrams. Derive the relation between numerical aperture and acceptance angle.",
+      "text": "Explain the principle of light propagation through a fiber with necessary diagrams. Derive the relation between numerical aperture and acceptance angle.",
+      "chapter": "Archive Questions",
+      "marks": "2",
+      "frequency": 6,
+      "years": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2070 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Chaitra",
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2070 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-11",
+      "question": "Explain the working principle, construction, advantages and application of V antenna. Sketch radiation patterns of both types of V antennas.",
+      "text": "Explain the working principle, construction, advantages and application of V antenna. Sketch radiation patterns of both types of V antennas.",
+      "chapter": "Antenna Classifications",
+      "marks": "6",
+      "frequency": 6,
+      "years": [
+        "2076 Bhadra",
+        "2082 Chaitra"
+      ],
+      "examSessions": [
+        "2076 Bhadra",
+        "2082 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-12",
+      "question": "Explain the working principle, characteristics, advantage of a rhombic antenna and its applications.",
+      "text": "Explain the working principle, characteristics, advantage of a rhombic antenna and its applications.",
+      "chapter": "Antenna Classifications",
+      "marks": "4",
+      "frequency": 6,
+      "years": [
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2073 Bhadra",
+        "2072 Ashwin",
+        "2070 Bhadra"
+      ],
+      "examSessions": [
+        "2079 Chaitra",
+        "2078 Chaitra",
+        "2073 Bhadra",
+        "2072 Ashwin",
+        "2070 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-13",
+      "question": "What is a linear array? Differentiate between a broadside array and end firearray.",
+      "text": "What is a linear array? Differentiate between a broadside array and end firearray.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 6,
+      "years": [
+        "2073 Bhadra",
+        "2082 Chaitra",
         "2077 Chaitra"
       ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Wave Propagation and Antenna Fundamentals",
-      "text": "State and explain fundamental antenna theorems: (a) Reciprocity Theorem, (b) Compensation Theorem, and (c) Maximum Power Transfer Theorem.",
-      "marks": "6",
-      "years": [
-        "2081 Ashwin",
-        "2078 Chaitra",
-        "2075 Bhadra"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Wave Propagation and Antenna Fundamentals",
-      "text": "What is Retarded Potential and Retarded Time? Explain the radiation mechanism of a Hertzian dipole and derive the electric and magnetic field components in the radiation far-field zone.",
-      "marks": "8",
-      "years": [
-        "2081 Ashwin",
-        "2080 Ashwin",
-        "2075 Bhadra"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Propagation and Radio Frequency Spectrum",
-      "text": "Describe space wave propagation and the Two-Ray Ground Reflection model. Explain the effect of earth curvature on the radio horizon and calculate the maximum Line-of-Sight (LOS) distance: $d = 4.12(\\sqrt{h_t} + \\sqrt{h_r})\\text{ km}$.",
-      "marks": "8",
-      "years": [
-        "2081 Ashwin",
-        "2080 Ashwin",
-        "2079 Chaitra"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Propagation and Radio Frequency Spectrum",
-      "text": "Explain Ground (Surface) Wave propagation over plane and spherical earth. Discuss Sommerfeld's numerical distance and factors causing severe attenuation of surface waves at higher frequencies.",
-      "marks": "6",
-      "years": [
-        "2081 Chaitra",
-        "2076 Bhadra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Propagation and Radio Frequency Spectrum",
-      "text": "Explain Tropospheric Wave propagation. Describe Tropospheric Scatter communication, atmospheric duct propagation (surface and elevated ducts), and abnormal refraction.",
-      "marks": "6",
-      "years": [
-        "2081 Ashwin",
-        "2079 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Propagation and Radio Frequency Spectrum",
-      "text": "Explain Knife-Edge Diffraction phenomenon and Fresnel Zones. How is diffraction loss calculated using the Fresnel-Kirchhoff diffraction parameter $v = h\\sqrt{\\frac{2(d_1+d_2)}{\\lambda d_1 d_2}}$?",
-      "marks": "6",
-      "years": [
-        "2081 Chaitra",
-        "2080 Chaitra",
-        "2079 Chaitra",
-        "2078 Chaitra",
-        "2076 Bhadra"
-      ],
-      "frequency": 5
-    },
-    {
-      "chapter": "Antenna Classifications",
-      "text": "Explain the construction, working principle, radiation characteristics, and non-resonant matched termination of a Rhombic Antenna.",
-      "marks": "6",
-      "years": [
-        "2079 Chaitra",
-        "2078 Chaitra",
-        "2076 Bhadra"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Propagation between Antennas",
-      "text": "What is Acceptance Angle? Derive the expression for Numerical Aperture ($\\text{NA} = \\sqrt{n_1^2 - n_2^2}$) of a step-index optical fiber. Explain attenuation and chromatic dispersion mechanisms.",
-      "marks": "8",
-      "years": [
-        "2081 Chaitra",
-        "2079 Chaitra",
-        "2076 Baisakh"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Wave Propagation and Antenna Fundamentals",
-      "text": "Write short notes on: (a) Effective Isotropic Radiated Power (EIRP), (b) Microstrip Patch Antenna, (c) Folded Dipole Antenna, (d) Marconi Monopole Antenna.",
-      "marks": "6",
-      "years": [
-        "2081 Ashwin",
-        "2080 Ashwin",
-        "2078 Chaitra",
+      "examSessions": [
+        "2073 Bhadra",
+        "2082 Chaitra",
         "2077 Chaitra"
       ],
-      "frequency": 4
+      "isDiagram": false
     },
     {
-      "chapter": "Wave Propagation and Antenna Fundamentals",
-      "text": "Derive the radiation resistance $R_{rad} = 80\\pi^2 (dl/\\lambda)^2$, radiated power $P_{rad}$, and magnetic vector potential $\\vec{A}$ of an infinitesimal Hertzian Dipole antenna carrying current $I(t) = I_0 \\cos(\\omega t)$.",
+      "id": "propagation-and-antenna-14",
+      "question": "What is a radio frequency spectrum?",
+      "text": "What is a radio frequency spectrum?",
+      "chapter": "Archive Questions",
       "marks": "8",
+      "frequency": 6,
       "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2078 Bhadra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Retarded vector potential A_z = (mu I_0 dl / 4 pi r) e^(-j beta r). Far fields: E_theta = j (eta I_0 dl beta / 4 pi r) sin(theta) e^(-j beta r), H_phi = E_theta / eta. Poynting vector S_r = 0.5 Re[E x H*]. Integrate over sphere: P_rad = 40 pi^2 I_0^2 (dl/lambda)^2. Radiation resistance R_rad = 2 P_rad / I_0^2 = 80 pi^2 (dl/lambda)^2."
-    },
-    {
-      "chapter": "Wave Propagation and Antenna Fundamentals",
-      "text": "Derive the electric field radiation pattern, input impedance ($Z_{in} \\approx 73 + j42.5\\ \\Omega$), and directivity ($D = 1.64$ or $2.15\\text{ dBi}$) of a center-fed Half-Wave Dipole antenna.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
         "2080 Chaitra",
-        "2077 Magh"
+        "2078 Chaitra",
+        "2075 Bhadra",
+        "2074 Bhadra",
+        "2072 Ashwin"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Current distribution I(z) = I_0 cos(beta z) for -lambda/4 <= z <= lambda/4. Far electric field E_theta = j (60 I_0 / r) e^(-j beta r) [cos((pi/2) cos theta) / sin theta]. Half-power beamwidth HPBW = 78 degrees. Radiated power P_rad = 36.56 I_0^2 => R_rad = 73.13 ohms. Radiation intensity U_max = 60 I_0^2 / (2 pi) => Directivity D = 4 pi U_max / P_rad = 1.643 (2.15 dBi)."
+      "examSessions": [
+        "2080 Chaitra",
+        "2078 Chaitra",
+        "2075 Bhadra",
+        "2074 Bhadra",
+        "2072 Ashwin"
+      ],
+      "isDiagram": false
     },
     {
+      "id": "propagation-and-antenna-15",
+      "question": "A parabolic reflector antenna having the antenna efficiency $85\\%$ is designed for $3\\text{ GHz}$ resonant frequency with $2.5\\text{ dB}$ wavelength loss. Find out the antenna diameter if effective isotropic radiated power (EIRP) is calculated $46\\text{ dBW}$ and transmitting power is $500\\text{ watt}$.",
+      "text": "A parabolic reflector antenna having the antenna efficiency $85\\%$ is designed for $3\\text{ GHz}$ resonant frequency with $2.5\\text{ dB}$ wavelength loss. Find out the antenna diameter if effective isotropic radiated power (EIRP) is calculated $46\\text{ dBW}$ and transmitting power is $500\\text{ watt}$.",
+      "chapter": "Link Budget",
+      "marks": "5",
+      "frequency": 5,
+      "years": [
+        "2073 Bhadra",
+        "2082 Chaitra",
+        "2077 Chaitra",
+        "2074 Bhadra",
+        "2071 Bhadra"
+      ],
+      "examSessions": [
+        "2073 Bhadra",
+        "2082 Chaitra",
+        "2077 Chaitra",
+        "2074 Bhadra",
+        "2071 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-16",
+      "question": "Find the received power in dB at a distance of 50 km over a free space with 10 GHz frequency consisting of transmitting antenna with 25 dB gain and a receiving gain of 20 dB. The power radiated by transmitting antenna is 150 dB.",
+      "text": "Find the received power in dB at a distance of 50 km over a free space with 10 GHz frequency consisting of transmitting antenna with 25 dB gain and a receiving gain of 20 dB. The power radiated by transmitting antenna is 150 dB.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 5,
+      "years": [
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2079 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-17",
+      "question": "Write short notes on: (Any Three) [3×3]\n\na) Power flux density (PFD)\n\nb) Knife edge diffraction\n\nc) Cassegrain antenna\n\nd) Polarization\n\ne) Light source and photo detector",
+      "text": "Write short notes on: (Any Three) [3×3]\n\na) Power flux density (PFD)\n\nb) Knife edge diffraction\n\nc) Cassegrain antenna\n\nd) Polarization\n\ne) Light source and photo detector",
+      "chapter": "Antenna Classifications",
+      "marks": "8",
+      "frequency": 5,
+      "years": [
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2074 Bhadra"
+      ],
+      "examSessions": [
+        "2080 Chaitra",
+        "2079 Chaitra",
+        "2074 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-18",
+      "question": "What are broadside and endfire arrays? Derive an expression for the total field in case of two isotropic point sources with equal amplitude and opposite phase.",
+      "text": "What are broadside and endfire arrays? Derive an expression for the total field in case of two isotropic point sources with equal amplitude and opposite phase.",
       "chapter": "Basic Antenna Parameters and Arrays",
-      "text": "Explain Broadside Array and End-Fire Array of $N$ isotropic point sources with uniform spacing $d$ and progressive phase shift $\\alpha$. Derive the array factor $AF = \\frac{\\sin(N\\psi/2)}{N\\sin(\\psi/2)}$, null directions, and directivity expressions.",
-      "marks": "8",
+      "marks": "1",
+      "frequency": 5,
       "years": [
-        "2082 Kartik",
-        "2081 Ashwin",
-        "2079 Chaitra"
+        "2082 Chaitra",
+        "2077 Chaitra",
+        "2073 Bhadra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Total field E = Element factor x Array Factor. psi = beta d cos(theta) + alpha. Sum of geometric progression yields AF = sin(N psi / 2) / (N sin(psi / 2)). Broadside: maximum radiation at theta = 90 degrees => alpha = 0. End-fire: maximum radiation along array axis theta = 0 or 180 degrees => alpha = -beta d or +beta d."
+      "examSessions": [
+        "2082 Chaitra",
+        "2077 Chaitra",
+        "2073 Bhadra"
+      ],
+      "isDiagram": false
     },
     {
+      "id": "propagation-and-antenna-19",
+      "question": "Define antenna arrays and also derive a mathematical expression for the array of two element isotropic radiators.",
+      "text": "Define antenna arrays and also derive a mathematical expression for the array of two element isotropic radiators.",
       "chapter": "Basic Antenna Parameters and Arrays",
-      "text": "Explain the Hansen-Woodyard condition for enhanced directivity in end-fire arrays. Derive the required progressive phase shift $\\alpha = -\\left(\\beta d + \\frac{\\pi}{N}\\right)$ and discuss its limitations.",
       "marks": "6",
+      "frequency": 5,
       "years": [
-        "2081 Chaitra",
+        "2069 Bhadra",
+        "2071 Bhadra"
+      ],
+      "examSessions": [
+        "2069 Bhadra",
+        "2071 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-20",
+      "question": "Write short notes on: Light source and photo detector",
+      "text": "Write short notes on: Light source and photo detector",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 5,
+      "years": [
         "2080 Chaitra",
-        "2078 Bhadra"
+        "2077 Chaitra",
+        "2075 Bhadra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Ordinary end-fire array sets psi = 0 at theta = 0 (alpha = -beta d). Hansen-Woodyard showed directivity increases by factor of ~1.78 by requiring terminal phase difference |psi|_{theta=pi} = pi and setting alpha = -(beta d + pi / N). Requires close spacing d < lambda/2."
-    },
-    {
-      "chapter": "Basic Antenna Parameters and Arrays",
-      "text": "State and prove the Pattern Multiplication Theorem. Sketch polar radiation patterns of a two-element array and a four-element uniform linear array using pattern multiplication.",
-      "marks": "6",
-      "years": [
-        "2082 Kartik",
-        "2080 Ashwin",
-        "2076 Baisakh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Pattern Multiplication states that total radiation pattern of an array of identical antennas equals vector product of individual element pattern and the array factor of isotropic elements located at identical positions: E_total(theta, phi) = E_element(theta, phi) * AF(theta, phi). Greatly simplifies multi-element directional array synthesis."
-    },
-    {
-      "chapter": "Antenna Classifications",
-      "text": "Explain the operation, physical structure, and design principles of the Yagi-Uda Antenna (Driven element, Reflector, Directors). Calculate beamwidth, front-to-back ratio, and forward gain.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Parasitic end-fire directional array widely used for VHF/UHF TV reception. Driven element: folded dipole (~0.47 lambda, input impedance ~300 ohms). Reflector: ~5% longer (~0.5 lambda) spaced 0.15-0.2 lambda behind driven element, inductive impedance. Directors: ~5% shorter (~0.45 lambda) spaced 0.2-0.3 lambda in front, capacitive impedance. Provides high forward gain (10-15 dBi) and high front-to-back ratio."
-    },
-    {
-      "chapter": "Antenna Classifications",
-      "text": "Describe the Helical Antenna operating in Normal Mode and Axial (End-Fire) Mode. Derive pitch angle $\\alpha = \\arctan(S / \\pi D)$, input impedance $R \\approx 140 C_\\lambda$, beamwidth, and circular polarization conditions.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
+      "examSessions": [
         "2080 Chaitra",
-        "2077 Magh"
+        "2077 Chaitra",
+        "2075 Bhadra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Conducting wire wound in helical coil over ground plane. Normal mode (D << lambda): radiation perpendicular to helix axis, linear or elliptical polarization, low efficiency. Axial mode (C = pi D ~ lambda, alpha ~ 12-14 degrees): highly directional end-fire beam along helix axis, pure circular polarization, input impedance purely resistive R ~ 140 (C / lambda) ohms, broad bandwidth."
+      "isDiagram": false
     },
     {
-      "chapter": "Antenna Classifications",
-      "text": "Explain Microstrip Patch Antennas. Formulate design equations for resonant frequency $f_r$, effective dielectric constant $\\epsilon_{reff}$, physical length $L$, and fringe field extension $\\Delta L$. List advantages and disadvantages.",
+      "id": "propagation-and-antenna-21",
+      "question": "Compare Yagi antenna with log periodic antenna.",
+      "text": "Compare Yagi antenna with log periodic antenna.",
+      "chapter": "Archive Questions",
       "marks": "8",
+      "frequency": 5,
       "years": [
-        "2081 Chaitra",
-        "2080 Ashwin",
-        "2078 Bhadra"
+        "2071 Bhadra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Metallic patch printed on thin dielectric substrate backed by continuous ground plane. Effective dielectric constant eps_reff = (eps_r + 1)/2 + (eps_r - 1)/2 * [1 + 12 h/W]^(-0.5). Resonant length L = c / (2 f_r sqrt(eps_reff)) - 2 Delta L. Advantages: low profile, lightweight, conformal, easily integrated with MMIC. Disadvantages: narrow bandwidth (1-5%), low efficiency, lower power handling."
+      "examSessions": [
+        "2071 Bhadra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Antenna Classifications",
-      "text": "Explain Parabolic Reflector Antennas. Discuss feed mechanisms (Cassegrain, Gregorian, Prime Focus, Offset), aperture efficiency ($\\eta$), spillover, blockage, and calculate gain $G = \\eta \\left(\\frac{\\pi D}{\\lambda}\\right)^2$ and 3-dB beamwidth.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Parabolic surface transforms spherical wavefront from focal point feed into planar wavefront across aperture. Cassegrain feed uses hyperboloidal subreflector at focal point; Gregorian uses ellipsoidal subreflector. Eliminates long waveguide runs. Gain G = eta (pi D / lambda)^2. Beamwidth HPBW ~ 70 lambda / D degrees. Offset feed eliminates aperture blockage and minimizes sidelobes."
-    },
-    {
-      "chapter": "Antenna Classifications",
-      "text": "Explain Horn Antennas: E-plane sectoral, H-plane sectoral, and Pyramidal horn. Derive optimum horn dimensions for maximum gain and discuss impedance matching from waveguide to free space.",
-      "marks": "6",
-      "years": [
-        "2081 Ashwin",
-        "2078 Bhadra",
-        "2076 Baisakh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Flared waveguide acting as impedance transformer between wave impedance of guide (TE10 mode) and free space (377 ohms). Flaring in electric field direction produces E-plane sectoral horn; flaring in magnetic field direction produces H-plane sectoral horn; flaring in both directions produces Pyramidal horn. Optimum horn balances aperture size gain increase against quadratic phase error loss."
-    },
-    {
-      "chapter": "Propagation and Radio Frequency Spectrum",
-      "text": "Explain Ground Wave (Surface Wave) Propagation. Discuss Earth curvature attenuation, ground conductivity ($\\sigma$) and permittivity ($\\epsilon_r$), and wave tilt during surface wave propagation.",
-      "marks": "6",
-      "years": [
-        "2082 Kartik",
-        "2080 Chaitra",
-        "2077 Magh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Diffracts around Earth curvature guided between conductive Earth surface and atmosphere (used for VLF, LF, MF AM broadcast). Ground losses increase rapidly with frequency (impractical above 2 MHz). Wave tilt occurs because electrical conductivity is finite, causing electric field vectors to tilt forward, transferring energy into ground losses."
-    },
-    {
-      "chapter": "Propagation and Radio Frequency Spectrum",
-      "text": "Explain Line-of-Sight (LOS) Space Wave Propagation. Derive the path loss formula including direct and ground-reflected rays, radio horizon distance $d \\approx 4.12(\\sqrt{h_t} + \\sqrt{h_r})\\text{ km}$, and effective Earth radius factor ($k = 4/3$).",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Space waves propagate directly through troposphere for VHF/UHF/Microwaves. Total field is vector sum of direct ray and ground-reflected ray. For grazing angles: E_r approx 2 E_0 sin(2 pi h_t h_r / lambda d) approx E_0 (4 pi h_t h_r / lambda d^2). Power falls off as 1/d^4. Atmospheric refraction bends rays toward Earth, modeled by equivalent Earth radius R' = k R where k = 4/3."
-    },
-    {
-      "chapter": "Propagation and Radio Frequency Spectrum",
-      "text": "Explain Critical Frequency ($f_c$), Maximum Usable Frequency ($MUF = f_c \\sec \\theta_i$), Skip Distance ($D_{skip}$), and Virtual Height in ionospheric sky wave propagation. Calculate MUF for given plasma density and incident angle.",
-      "marks": "8",
-      "years": [
-        "2082 Kartik",
-        "2081 Ashwin",
-        "2080 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Ionosphere ionizes into D, E, F1, F2 layers. Critical frequency f_c = 9 sqrt(N_max) is highest frequency reflected at vertical incidence. At oblique incidence angle theta_i: Secant law MUF = f_c / cos(theta_i) = f_c sec(theta_i). Skip distance is minimum distance from transmitter at which sky wave of given frequency returns to Earth. Virtual height is apparent reflection height determined from pulse echo delay."
-    },
-    {
+      "id": "propagation-and-antenna-22",
+      "question": "Write short notes on: (any three) [3×4]\n\ni) Marconi antenna\nii) Knife edge diffraction\niii) Radio frequency spectrum\niv) Optical source and Optical detector",
+      "text": "Write short notes on: (any three) [3×4]\n\ni) Marconi antenna\nii) Knife edge diffraction\niii) Radio frequency spectrum\niv) Optical source and Optical detector",
       "chapter": "Propagation between Antennas",
-      "text": "Explain Optical Wave Propagation through step-index optical fiber waveguides: Total Internal Reflection, Numerical Aperture ($NA = \\sqrt{n_1^2 - n_2^2}$), normalized frequency ($V$-number), and modal dispersion in step-index vs graded-index fibers.",
-      "marks": "8",
+      "marks": "2",
+      "frequency": 4,
       "years": [
-        "2081 Chaitra",
-        "2080 Chaitra",
-        "2078 Bhadra"
+        "2075 Bhadra",
+        "2076 Bhadra",
+        "2070 Bhadra"
       ],
+      "examSessions": [
+        "2075 Bhadra",
+        "2076 Bhadra",
+        "2070 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-23",
+      "question": "Name the parasitic elements used in Yagi-Uda array. Explain their significance in the array. Compare Yagi-Uda antenna with Log periodic dipole array.",
+      "text": "Name the parasitic elements used in Yagi-Uda array. Explain their significance in the array. Compare Yagi-Uda antenna with Log periodic dipole array.",
+      "chapter": "Antenna Classifications",
+      "marks": "2",
+      "frequency": 4,
+      "years": [
+        "2080 Ashwin"
+      ],
+      "examSessions": [
+        "2080 Ashwin"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-24",
+      "question": "Explain the construction and propagation mechanism and application of different types of optical fibers. Define numerical aperture.",
+      "text": "Explain the construction and propagation mechanism and application of different types of optical fibers. Define numerical aperture.",
+      "chapter": "Archive Questions",
+      "marks": "5",
+      "frequency": 4,
+      "years": [
+        "2076 Bhadra",
+        "2071 Bhadra"
+      ],
+      "examSessions": [
+        "2076 Bhadra",
+        "2071 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-25",
+      "question": "Explain the working principle, construction, design, advantages and application of Yagi-Uda antenna.",
+      "text": "Explain the working principle, construction, design, advantages and application of Yagi-Uda antenna.",
+      "chapter": "Antenna Classifications",
+      "marks": "7",
+      "frequency": 4,
+      "years": [
+        "2075 Bhadra",
+        "2074 Bhadra",
+        "2069 Bhadra"
+      ],
+      "examSessions": [
+        "2075 Bhadra",
+        "2074 Bhadra",
+        "2069 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-26",
+      "question": "State the reciprocity theorem and compensation theorem for an antenna system.",
+      "text": "State the reciprocity theorem and compensation theorem for an antenna system.",
+      "chapter": "Introduction",
+      "marks": "2",
+      "frequency": 4,
+      "years": [
+        "2075 Bhadra",
+        "2082 Chaitra",
+        "2074 Bhadra"
+      ],
+      "examSessions": [
+        "2075 Bhadra",
+        "2082 Chaitra",
+        "2074 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-27",
+      "question": "Explain the phenomenon of Duct propagation.",
+      "text": "Explain the phenomenon of Duct propagation.",
+      "chapter": "Propagation and Radio Frequency Spectrum",
+      "marks": "4",
+      "frequency": 4,
+      "years": [
+        "2072 Ashwin"
+      ],
+      "examSessions": [
+        "2072 Ashwin"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-28",
+      "question": "Write short notes on: (any four) [4x3]\n\na) Marconi Antenna\n\nb) Friis equation and path loss in case of free space propagation\n\nc) Knife edge diffraction phenomenon\n\nd) NA for meridional rays in optical fiber\n\ne) Radio frequency spectrum",
+      "text": "Write short notes on: (any four) [4x3]\n\na) Marconi Antenna\n\nb) Friis equation and path loss in case of free space propagation\n\nc) Knife edge diffraction phenomenon\n\nd) NA for meridional rays in optical fiber\n\ne) Radio frequency spectrum",
+      "chapter": "Archive Questions",
+      "marks": "8",
       "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Light guides through silica core (n1) by total internal reflection at cladding (n2 < n1) boundary when theta > theta_c = arcsin(n2/n1). Numerical Aperture NA = sin(theta_a) = sqrt(n1^2 - n2^2). Normalized frequency V = (2 pi a / lambda) * NA; single-mode condition V < 2.405. Step-index fibers suffer intermodal dispersion; parabolic graded-index fibers equalize transit time of modal rays."
+      "years": [
+        "2072 Ashwin",
+        "2082 Chaitra"
+      ],
+      "examSessions": [
+        "2072 Ashwin",
+        "2082 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-29",
+      "question": "Derive an expression for the total field in case of two isotropic point sources with same amplitude and out of phase. Also show the condition of maxima, minima direction of intensity with radiation pattern.",
+      "text": "Derive an expression for the total field in case of two isotropic point sources with same amplitude and out of phase. Also show the condition of maxima, minima direction of intensity with radiation pattern.",
+      "chapter": "Basic Antenna Parameters and Arrays",
+      "marks": "6",
+      "frequency": 3,
+      "years": [
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "examSessions": [
+        "2080 Chaitra",
+        "2079 Chaitra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-30",
+      "question": "Explain retarded potential and their importance. Describe infinitesimal dipole with the help of suitable diagram, mathematical relations and the field pattern.",
+      "text": "Explain retarded potential and their importance. Describe infinitesimal dipole with the help of suitable diagram, mathematical relations and the field pattern.",
+      "chapter": "Introduction",
+      "marks": "2",
+      "frequency": 3,
+      "years": [
+        "2074 Bhadra",
+        "2072 Ashwin"
+      ],
+      "examSessions": [
+        "2074 Bhadra",
+        "2072 Ashwin"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-31",
+      "question": "Write short notes on (Any Three) : [3x3]\n\na) Effective antenna height\n\nb) Firesnel Zones\n\nc) Microstrip antenna\n\nd) Radio frequency spectrum",
+      "text": "Write short notes on (Any Three) : [3x3]\n\na) Effective antenna height\n\nb) Firesnel Zones\n\nc) Microstrip antenna\n\nd) Radio frequency spectrum",
+      "chapter": "Propagation between Antennas",
+      "marks": "2",
+      "frequency": 3,
+      "years": [
+        "2078 Chaitra",
+        "2080 Chaitra",
+        "2074 Bhadra"
+      ],
+      "examSessions": [
+        "2078 Chaitra",
+        "2080 Chaitra",
+        "2074 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-32",
+      "question": "Define an antenna. Explain the operation of infinitesimal dipole with the help of mathematical relations and the field pattern.",
+      "text": "Define an antenna. Explain the operation of infinitesimal dipole with the help of mathematical relations and the field pattern.",
+      "chapter": "Introduction",
+      "marks": "2",
+      "frequency": 3,
+      "years": [
+        "2080 Chaitra",
+        "2070 Bhadra"
+      ],
+      "examSessions": [
+        "2080 Chaitra",
+        "2070 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-33",
+      "question": "Explain the special features of reflector antenna and discuss on different types of feed used with necessary diagrams.",
+      "text": "Explain the special features of reflector antenna and discuss on different types of feed used with necessary diagrams.",
+      "chapter": "Antenna Classifications",
+      "marks": "7",
+      "frequency": 3,
+      "years": [
+        "2078 Chaitra",
+        "2076 Bhadra",
+        "2073 Bhadra"
+      ],
+      "examSessions": [
+        "2078 Chaitra",
+        "2076 Bhadra",
+        "2073 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-34",
+      "question": "What are the various elements of an optical communication system? Explain each element in brief.",
+      "text": "What are the various elements of an optical communication system? Explain each element in brief.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 3,
+      "years": [
+        "2073 Bhadra",
+        "2072 Ashwin"
+      ],
+      "examSessions": [
+        "2073 Bhadra",
+        "2072 Ashwin"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-35",
+      "question": "Find out the line of sight distance between the transmitting antenna and receiving antenna. If the transmitting antenna height is $45\\text{ m.}$ and the receiving antenna height is $25\\text{ m.}$ [Given: the radius of Earth is $6,378\\text{ km}$].",
+      "text": "Find out the line of sight distance between the transmitting antenna and receiving antenna. If the transmitting antenna height is $45\\text{ m.}$ and the receiving antenna height is $25\\text{ m.}$ [Given: the radius of Earth is $6,378\\text{ km}$].",
+      "chapter": "Propagation and Radio Frequency Spectrum",
+      "marks": "5",
+      "frequency": 2,
+      "years": [
+        "2072 Ashwin"
+      ],
+      "examSessions": [
+        "2072 Ashwin"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-36",
+      "question": "With neat diagram design the 5 element Yagi-Uda antenna for the receiving 100 MHz radio signal showing design steps. consider effective dipole length equal to $0.48 \\lambda c$ and spacing between elements is $0.15 \\lambda c$.",
+      "text": "With neat diagram design the 5 element Yagi-Uda antenna for the receiving 100 MHz radio signal showing design steps. consider effective dipole length equal to $0.48 \\lambda c$ and spacing between elements is $0.15 \\lambda c$.",
+      "chapter": "Antenna Classifications",
+      "marks": "6",
+      "frequency": 2,
+      "years": [
+        "2076 Bhadra",
+        "2072 Ashwin"
+      ],
+      "examSessions": [
+        "2076 Bhadra",
+        "2072 Ashwin"
+      ],
+      "isDiagram": true
+    },
+    {
+      "id": "propagation-and-antenna-37",
+      "question": "With a mathematical relation of refractive index of ionospheric layer derive a relation of critical frequency and maximum usable frequency (MUF) of radio waves with necessary explanation. Consider the earth is not curved.",
+      "text": "With a mathematical relation of refractive index of ionospheric layer derive a relation of critical frequency and maximum usable frequency (MUF) of radio waves with necessary explanation. Consider the earth is not curved.",
+      "chapter": "Propagation and Radio Frequency Spectrum",
+      "marks": "8",
+      "frequency": 2,
+      "years": [
+        "2071 Bhadra"
+      ],
+      "examSessions": [
+        "2071 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-38",
+      "question": "What is an optical fiber? What are the different types of losses you can visualize in optical fiber communication? What are the advantages and disadvantages of multimode fiber over the single mode fiber?",
+      "text": "What is an optical fiber? What are the different types of losses you can visualize in optical fiber communication? What are the advantages and disadvantages of multimode fiber over the single mode fiber?",
+      "chapter": "Archive Questions",
+      "marks": "4",
+      "frequency": 2,
+      "years": [
+        "2072 Magh"
+      ],
+      "examSessions": [
+        "2072 Magh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-39",
+      "question": "With a neat diagram, explain the designation of radio waves according to the path they follow during propagation. Also, compare the propagation characteristics for different radio bands.",
+      "text": "With a neat diagram, explain the designation of radio waves according to the path they follow during propagation. Also, compare the propagation characteristics for different radio bands.",
+      "chapter": "Propagation and Radio Frequency Spectrum",
+      "marks": "4",
+      "frequency": 2,
+      "years": [
+        "2070 Bhadra",
+        "2069 Bhadra"
+      ],
+      "examSessions": [
+        "2070 Bhadra",
+        "2069 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "propagation-and-antenna-40",
+      "question": "What is a travelling wave antenna? Draw the structure, radiation pattern and explain the working function of an axial mode helix antenna.",
+      "text": "What is a travelling wave antenna? Draw the structure, radiation pattern and explain the working function of an axial mode helix antenna.",
+      "chapter": "Antenna Classifications",
+      "marks": "1",
+      "frequency": 2,
+      "years": [
+        "2082 Chaitra"
+      ],
+      "examSessions": [
+        "2082 Chaitra"
+      ],
+      "isDiagram": false
     }
   ],
-  "chapters": [
-    "Wave Propagation and Antenna Fundamentals",
-    "Basic Antenna Parameters and Arrays",
-    "Antenna Classifications",
-    "Propagation and Radio Frequency Spectrum",
-    "Propagation between Antennas",
-    "Link Budget"
+  "yearWisePapers": [
+    {
+      "session": "2082 Kartik",
+      "year": "2082",
+      "month": "Kartik",
+      "examType": "Back",
+      "totalMarks": 42,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What is a retarded time? Find out the retarded vector potential of $a^n$ electric current at a distance, $r$ from a point source for the far field region.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Write short notes on: (Any Three) [3x3]\n(a) Maximum power transfer theorem\n(b) Radio duct\n(c) Cassegrain reflector antenna\n(d) Two-ray propagation model",
+          "marks": "8",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Explain the following antenna parameters:\n(a) Equivalent isotropic radiated power (EIRP)\n(b) Radiation efficiency",
+          "marks": "3",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Sketch the current distribution and radiation pattern of the infinitesimal dipole antenna. Design a 3 element Yagi antenna for the operating frequency band of 2785 MHz to 2895 MHz and dipole as a driven element. Take $a^n$ effective length of the dipole $0.48\\lambda c$ and consider spacing is $0.15\\lambda c$.",
+          "marks": "3",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What are broadside and endfire arrays? Derive an expression for the total field in case of two isotropic point sources with equal amplitude and opposite phase.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Derive the Friis Transmission Equation for the free space propagation. Also show the free space path loss equals to $22 + 20\\log (R/\\lambda) , where$ $R$ is the distance between Tx and Rx antennas and $\\lambda$ is the wavelength of the frequency being used.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Compare resonant and non-resonant antennas. Explain the construction, working principle and features of Vee antenna.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "List the main characteristics of sky wave. Write its major advantages and disadvantages.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Define a critical frequency $f_{(CRT)}$. Derive an expression for the relation between skip distance and maximum usable frequency ($f_{MUF}$) in SW propagation assuming that the Earth is Flat.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Explain the principle of light propagation through a fiber with necessary diagrams. Derive the relation between numerical aperture and acceptance angle.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "List the advantages and disadvantages of optical fiber over metallic cable communication system.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Chaitra",
+      "year": "2082",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 146,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define an antenna. Explain the radiation mechanism and conditions of a single wire antenna that can radiate electromagnetic waves or not.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "State the reciprocity theorem and compensation theorem for an antenna system.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Write short notes on: (Any Three) [3x3]\n(a) Retarded time\n(b) Patch antenna\n(c) Radio duct\n(d) Knife edge diffraction",
+          "marks": "8",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What are broadside and endfire arrays? Derive an expression for the total field in case of two isotropic point sources with equal amplitude and opposite phase.",
+          "marks": "1",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What are broadside and endfire arrays? Derive an expression for the total field in case of two isotropic point sources with equal amplitude and opposite phase.",
+          "marks": "5",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define the following antenna parameters:\n(a) Fractional Bandwidth (FBW)\n(b) Power flux density (PFD)",
+          "marks": "2",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the following antenna parameters with necessary derivations:\n(a) Fractional Bandwidth (FBW)\n(b) Antenna Gain (G)",
+          "marks": "4",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "List the main characteristics of UHF band. Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+          "marks": "6",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain the working principle, construction, advantages and application of V antenna. Sketch radiation patterns of both types of V antennas.",
+          "marks": "6",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What is a travelling wave antenna? Draw the structure, radiation pattern and explain the working function of an axial mode helix antenna.",
+          "marks": "1",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Design a 5 element Yagi-Uda antenna for receiving UHF band of frequency range from 540 MHz to 548 MHz Assume the driven element is a half-wave folded dipole and take spacing between elements $0.15\\lambda_c$.",
+          "marks": "5",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What are the major features of corrugated horn antenna? How does a helical antenna radiate in axial mode? Explain with necessary diagrams.",
+          "marks": "2",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Sketch the current distribution and radiation pattern of center fed vertical dipole for following lengths.",
+          "marks": "3",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Define a critical frequency $f_{(CRT)}$. Derive an expression for the relation between skip distance and maximum usable frequency ($f_{MUF}$) in SW propagation assuming that the Earth is Flat.",
+          "marks": "5",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "What is a direct wave propagation? Explain the different factors that affect the space wave propagation.",
+          "marks": "1",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "Describe space wave propagation and derive the expression for the maximum line-of-sight (LOS) distance between transmitting and receiving antennas.",
+          "marks": "2",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "List the major characteristics of MW and VHF radio propagation system.",
+          "marks": "3",
+          "chapter": "Propagation between Antennas",
+          "isDiagram": false
+        },
+        {
+          "qNum": 18,
+          "text": "A parabolic reflector antenna having the antenna efficiency $85\\%$ is designed for $3\\text{ GHz}$ resonant frequency with $2.5\\text{ dB}$ wavelength loss. Find out the antenna diameter if effective isotropic radiated power (EIRP) is calculated $46\\text{ dBW}$ and transmitting power is $500\\text{ watt}$.",
+          "marks": "5",
+          "chapter": "Link Budget",
+          "isDiagram": false
+        },
+        {
+          "qNum": 19,
+          "text": "Derive the Friis transmission equation and find out the free space path loss from the equation that is equal to $22+20\\log(R/\\lambda_c)$ in dB where $R$ is distance between transmitting and receiving antennas and $\\lambda_c$ is wavelength of the frequency being used.",
+          "marks": "3",
+          "chapter": "Link Budget",
+          "isDiagram": false
+        },
+        {
+          "qNum": 20,
+          "text": "A ground station located at $42.7^\\circ$ N latitude and $108.3^\\circ$ E longitude need to establish a Ku-band uplink to a GEO satellite positioned at $128^\\circ$ E longitude. The satellite's receiver has a G/T of $4.8$ dB/K and the desired $C/N_o$ is $107$ dBHz. The ground station employs a parabolic antenna with a diameter of $7.8$ m, $a^n$ antenna efficiency of $75\\%$ and waveguide loss of $1.6$ dB. Determine the minimum transmit power that the ground station must provide to achieve the required $C/N_o , accounting$ for the actual Earth-satellite slant distance.",
+          "marks": "8",
+          "chapter": "Link Budget",
+          "isDiagram": false
+        },
+        {
+          "qNum": 21,
+          "text": "Derive the Friis transmission equation for free space communication and also find out free space loss for 6 GHz and 14 GHz frequencies for 36,500 km line-of-sight distance (R).",
+          "marks": "3",
+          "chapter": "Link Budget",
+          "isDiagram": false
+        },
+        {
+          "qNum": 22,
+          "text": "Explain the principle of light propagation through a fiber with necessary diagrams. Derive the relation between numerical aperture and acceptance angle.",
+          "marks": "2",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 23,
+          "text": "Write short notes on: (any four) [4x3]\n\na) Marconi Antenna\n\nb) Friis equation and path loss in case of free space propagation\n\nc) Knife edge diffraction phenomenon\n\nd) NA for meridional rays in optical fiber\n\ne) Radio frequency spectrum",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 24,
+          "text": "Define attenuation in optical fiber communication. Explain the different types of attenuation and discuss the main factors that affect it.",
+          "marks": "2",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 25,
+          "text": "Write short notes on: Knife edge diffraction",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 26,
+          "text": "Derive the formula to establish the relationship between maximum usable frequency ($f_{MUF}$) and skip distance (D) assuming earth is flat.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 27,
+          "text": "Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 28,
+          "text": "What is a linear array? Differentiate between a broadside array and end firearray.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 29,
+          "text": "List the main properties of antenna. Explain the major required conditions for a simple conductor to be a good antenna.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 30,
+          "text": "State the reciprocity theorem and compensation theorem for an antenna system.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 31,
+          "text": "What is a travelling wave antenna? Explain the working principle and main features of V-antenna with necessary diagrams.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 32,
+          "text": "Define a critical frequency $f_{(CRT)}$. Derive an expression for the relation between skip distance and maximum usable frequency ($f_{MUF}$) in SW propagation assuming that the Earth is Flat.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 33,
+          "text": "Write short notes on (Any Two): [2x2]\n(a) Smart Antennas\n(b) Duct propagation\n(c) Knife edge diffraction",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 34,
+          "text": "Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 35,
+          "text": "A parabolic reflector antenna having the antenna efficiency $85\\%$ is designed for $3\\text{ GHz}$ resonant frequency with $2.5\\text{ dB}$ wavelength loss. Find out the antenna diameter if effective isotropic radiated power (EIRP) is calculated $46\\text{ dBW}$ and transmitting power is $500\\text{ watt}$.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Chaitra",
+      "year": "2081",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define an antenna. Explain the radiation mechanism and conditions of a single wire antenna that can radiate electromagnetic waves or not.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Write short notes on: (Any Three) [3x3]\n(a) Retarded time\n(b) Patch antenna\n(c) Radio duct\n(d) Knife edge diffraction",
+          "marks": "8",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "What are broadside and endfire arrays? Derive an expression for the total field in case of two isotropic point sources with equal amplitude and opposite phase.",
+          "marks": "4",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "List the main characteristics of UHF band. Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+          "marks": "6",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Sketch the current distribution and radiation pattern of folded dipole antenna. Design a 5 element Yagi-Uda antenna for the operating frequency band of 785 MHz to 895 MHz and dipole as a driven element. Take $a^n$ effective length of the dipole $0.48\\lambda_c$.",
+          "marks": "3",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define a critical frequency $f_{(CRT)}$. Derive an expression for the relation between skip distance and maximum usable frequency ($f_{MUF}$) in SW propagation assuming that the Earth is Flat.",
+          "marks": "5",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the surface wave propagation. Write its major advantages and disadvantages.",
+          "marks": "4",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain the following antenna parameters:\n(a) Receiving antenna gain ($G_r$)\n(b) Free space loss ($L_{FS}$)",
+          "marks": "3",
+          "chapter": "Link Budget",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain the working principle of optical fiber communication system. What are the advantages and disadvantages of optical fiber over wireless communication system?",
+          "marks": "3",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What is $a^n$ acceptance angle? Derive the expression for numerical aperture (NA) of a stepped index optical fiber.",
+          "marks": "2",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Write short notes on: Knife edge diffraction",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Derive the formula to establish the relationship between maximum usable frequency ($f_{MUF}$) and skip distance (D) assuming earth is flat.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Write short notes on: (Any Three) [3×3]\n(a) Compensation theorem\n(b) Polarization\n(c) Fresnel knife edge diffraction\n(d) Aperture antenna",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Ashwin",
+      "year": "2081",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 40,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Write short notes on: (Any three) [3×3]\n(a) Receiving power intensity ($P_r$)\n(b) Ionospheric wave\n(c) Radio frequency spectrum\n(d) Two-ray propagation model\n(e) Numerical Aperture (NA)",
+          "marks": "8",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What is the retarded potential? Explain the operation of $\\lambda/4$ monopole antenna with the help of necessary diagrams and the field pattern.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "What is the reciprocity theorem and the Thevenin theorem used in antenna function? Explain with necessary diagrams.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Explain the principle of pattern multiplication with a suitable example. Differentiate between a broadside array antenna and end-fire array antenna.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain the working principle, construction, design, advantages and application of Yagi-Uda antenna.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define a critical frequency $f_{(CRT)}$. Derive an expression for the relation between skip distance and maximum usable frequency ($f_{MUF}$) in SW propagation assuming that the Earth is Flat.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is $a^n$ aperture antenna? Explain dual-parabolic reflector antennas with their types, characteristics and applications.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "A microwave link is 70 Km long. It operates at 2.8 GHz with antenna gain of 20dB at either end. What is the voltage available at the terminals of a receiver with 50 Ohm load impedance if the transmitted power is 2.4 $W^2$ Assume that it is line of sight communication in case of neglecting atmospheric losses and ignoring problems of fading. Also find out the free space loss ($L_{FS}$) for the communication link.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What is a tropospheric duct? List the major characteristics of UHF band of propagation.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What is an optical fiber? What are the different types of losses you can visualize in optical fiber communication? What are the advantages and disadvantages of multimode fiber over the single mode fiber?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Chaitra",
+      "year": "2080",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 79,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define an antenna. Explain the operation of infinitesimal dipole with the help of mathematical relations and the field pattern.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Explain the following antenna theorems: (a) Compensation theorem (b) Maximum power transfer theorem",
+          "marks": "3",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive an expression for the total field in case of two isotropic point sources with same amplitude and out of phase. Also show the condition of maxima, minima direction of intensity with radiation pattern.",
+          "marks": "6",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Write short notes on: (Any Three) [3×3]\n\na) Power flux density (PFD)\n\nb) Knife edge diffraction\n\nc) Cassegrain antenna\n\nd) Polarization\n\ne) Light source and photo detector",
+          "marks": "8",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What is the main role of driven element of the Yagi-Uda antenna? Design five-element Yagi-Uda antenna with operating frequency $760\\text{ MHz}$ and length of driven element $0.48\\lambda_c$.",
+          "marks": "3",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define a critical frequency $f_{(CRT)}$. Derive an expression for the relation between skip distance and maximum usable frequency ($f_{MUF}$) in SW propagation assuming that the Earth is Flat.",
+          "marks": "5",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Write short notes on (Any Three) : [3x3]\n\na) Effective antenna height\n\nb) Firesnel Zones\n\nc) Microstrip antenna\n\nd) Radio frequency spectrum",
+          "marks": "2",
+          "chapter": "Propagation between Antennas",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Derive the Friis transmission equation for the free space propagation. Also find out the free space loss ($L_{FS}$) equation that equals to $22+20\\log(d/\\lambda) , where$ $d$ is distance between $T_x$ and $R_x$ antennas and $\\lambda$ is wavelength of the frequency being used.",
+          "marks": "12",
+          "chapter": "Link Budget",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain the principle of light propagation through a fiber with necessary diagrams. Derive the relation between numerical aperture and acceptance angle.",
+          "marks": "2",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Write short notes on: Knife edge diffraction",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Derive the formula to establish the relationship between maximum usable frequency ($f_{MUF}$) and skip distance (D) assuming earth is flat.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What is a radio frequency spectrum?",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Write short notes on: Light source and photo detector",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Define a critical frequency $f_{(CRT)}$. Derive an expression for the relation between skip distance and maximum usable frequency ($f_{MUF}$) in SW propagation assuming that the Earth is Flat.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "What is a radio frequency spectrum? Explain characteristics of MW and SW radio propagation.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Ashwin",
+      "year": "2080",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 43,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What is the retarded time? Explain the retarded vector and scalar potential with mathematical expression.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Describe the radiation pattern, antenna gain and power-flux density with mathematical derivation if necessary.",
+          "marks": "3",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Name the parasitic elements used in Yagi-Uda array. Explain their significance in the array. Compare Yagi-Uda antenna with Log periodic dipole array.",
+          "marks": "2",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Write short notes on: (Any Three) [3×3]\n(a) Effective isotropic radiated power (EIRP)\n(b) Monopole antenna\n(c) Medium wave\n(d) Optical source and Optical detector\n(e) Helical antenna",
+          "marks": "8",
+          "chapter": "Link Budget",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What are the superposition theorem and maximum power transfer theorem used in antenna? Explain with necessary diagrams.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What are broadside and endfire arrays? Derive an expression for the total field in case of two isotropic point sources with equal amplitude and opposite phase.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What is free space propagation? Derive the mathematical expression of Friis free space equation. Also, find the expression of free space path loss.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What is the sky wave? Explain the ionospheric wave propagation showing its different layers.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Find out the relation between the critical frequency ($f_{crt}$) and skip distance (D) considering that the Earth is flat.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What are the various elements of an optical communication system? Explain each element in brief.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Chaitra",
+      "year": "2079",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 80,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define an antenna. Explain the radiation mechanism and conditions of a single wire antenna that can radiate electromagnetic waves or not.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "State the following antenna theorem: (a) Thevenin (b) Reciprocity",
+          "marks": "3",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive an expression for the total field in case of two isotropic point sources with same amplitude and out of phase. Also show the condition of maxima, minima direction of intensity with radiation pattern.",
+          "marks": "6",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Explain the following parameters of antenna:\n(a) Directivity (b) Polarization (c) Input impedance",
+          "marks": "3",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain the working principle, characteristics, advantage of a rhombic antenna and its applications.",
+          "marks": "4",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Write short notes on: (Any Three) [3×3]\n\na) Power flux density (PFD)\n\nb) Knife edge diffraction\n\nc) Cassegrain antenna\n\nd) Polarization\n\ne) Light source and photo detector",
+          "marks": "8",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain in detail about the operation of parabolic reflector. What is Cassegrain feed system?",
+          "marks": "5",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Define a critical frequency $f_{(CRT)}$. Derive an expression for the relation between skip distance and maximum usable frequency ($f_{MUF}$) in SW propagation assuming that the Earth is Flat.",
+          "marks": "5",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Describe multiple HOP and explain how atmospheric ducts can be used for microwave propagation.",
+          "marks": "2",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Find the received power in dB at a distance of 50 km over a free space with 10 GHz frequency consisting of transmitting antenna with 25 dB gain and a receiving gain of 20 dB. The power radiated by transmitting antenna is 150 dB.",
+          "marks": "5",
+          "chapter": "Link Budget",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Explain the principle of light propagation through a fiber with necessary diagrams. Derive the relation between numerical aperture and acceptance angle.",
+          "marks": "2",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Write short notes on: Knife edge diffraction",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Derive the formula to establish the relationship between maximum usable frequency ($f_{MUF}$) and skip distance (D) assuming earth is flat.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "What is $a^n$ antenna? Explain the different conditions for a simple conductor to be a good antenna.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "Derive the formula to establish the relationship between maximum usable frequency ($f_{MUF}$) and skip distance (D) assuming earth is flat.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "Explain the principle of light propagation through a fiber with necessary diagrams. Derive the relation between numerical aperture and acceptance angle.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "Write short notes on: (Any Three) [3×3]\n(a) Knife edge diffraction\n(b) Splicing\n(c) Horn Antenna.\n(d) Optical fiber loss\n(e) Microstrip antenna",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Ashwin",
+      "year": "2079",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 45,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Describe a helical antenna with the help of a neat diagram. Explain its two modes of operation with necessary diagrams.",
+          "marks": "8",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Explain the different factors that affect the space wave propagation. List the major features of UHF wave propagation.",
+          "marks": "2",
+          "chapter": "Propagation between Antennas",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Define shadow region. Explain knife-edge and rounded surface diffraction effects.",
+          "marks": "2",
+          "chapter": "Propagation between Antennas",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Write short notes on: (Any Three) [3×3]\n(a) Linear polarization\n(b) Marconi antenna\n(c) Effect of curvature of earth in space wave propagation\n(d) Two ray propagation model",
+          "marks": "8",
+          "chapter": "Propagation between Antennas",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Discuss the structure and refractive index profile of single mode and multi-mode step index fibres with related mathematical equations.",
+          "marks": "7",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain how single wire can radiate electromagnetic waves with necessary radiation patterns and conditions. State reciprocity theorem and equality of directional patterns theorem.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "A 100 megahertz circuit consists of a transmitting and receiving antenna of 30 dB and 25 dB gains respectively. The power radiated by the transmitting antenna is 120 watts. Find received power in dB at a distance of 0.75 km over a free space. Derive the expression for free space path loss propagation.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "How can we increase the directivity of $a^n$ antenna? Compare Log-periodic Antenna and Yagi-Uda antenna with necessary diagram.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain what will happen if a radio wave with a frequency greater than critical frequency is propagated to the ionosphere? Will it return back. Find out the derivation of the relation between critical and maximum usable frequency when the earth is assumed it not curved.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What are the advantages and disadvantages of optical fibre over metallic wire? Explain the losses in optical fibre.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Chaitra",
+      "year": "2078",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 83,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "State the following antenna theorem:\n(a) Compensation theorem\n(b) Reciprocity theorem\nWrite the features of end-fire array.",
+          "marks": "2",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Explain the working principle, characteristics, advantage of a rhombic antenna and its applications.",
+          "marks": "4",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Explain the special features of reflector antenna and discuss on different types of feed used with necessary diagrams.",
+          "marks": "7",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Define antenna. Explain the radiation mechanism in single wire antenna. Explain travelling wave long wire antenna with required diagrams.",
+          "marks": "2",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Define a critical frequency $f_{(CRT)}$. Derive an expression for the relation between skip distance and maximum usable frequency ($f_{MUF}$) in SW propagation assuming that the Earth is Flat.",
+          "marks": "5",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Describe briefly the structure of the ionosphere and its uses for radio frequency spectrum. Write the characteristics of ground wave propagation.",
+          "marks": "4",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Write short notes on (Any Three) : [3x3]\n\na) Effective antenna height\n\nb) Firesnel Zones\n\nc) Microstrip antenna\n\nd) Radio frequency spectrum",
+          "marks": "2",
+          "chapter": "Propagation between Antennas",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Derive the Friis transmission equation for the free space propagation. Also find out the free space loss ($L_{FS}$) equation that equals to $22+20\\log(d/\\lambda) , where$ $d$ is distance between $T_x$ and $R_x$ antennas and $\\lambda$ is wavelength of the frequency being used.",
+          "marks": "12",
+          "chapter": "Link Budget",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain the principle of light propagation through a fiber with necessary diagrams. Derive the relation between numerical aperture and acceptance angle.",
+          "marks": "2",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Explain the block diagram of optical communication system. State advantages and applications of optical fiber compared to microwave communication link.",
+          "marks": "3",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Derive the formula to establish the relationship between maximum usable frequency ($f_{MUF}$) and skip distance (D) assuming earth is flat.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What is a radio frequency spectrum?",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Derive the formula to establish the relationship between maximum usable frequency ($f_{MUF}$) and skip distance (D) assuming earth is flat.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "A free space LOS (Line of Sight) microwave link operating at $10\\text{ GHz}$ consists of a transmit and receive antenna each having gain of $25\\text{ dB}$. Calculate the path loss of the link and received power for $100\\text{ Km}$ distance. Derive Friis transmission equation.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "What is acceptance angle? Derive the expression for Numerical Aperture with neat diagram.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2077 Chaitra",
+      "year": "2077",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 88,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "State the following antenna theorem:\n(a) Maximum power transfer\n(b) Reciprocity",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What are broadside and endfire arrays? Derive an expression for the total field in case of two isotropic point sources with equal amplitude and opposite phase.",
+          "marks": "1",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Explain the following antenna parameters: [3×2]\n(a) Radiation patterns\n(b) Polarization\n(c) Beam width",
+          "marks": "8",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "How are aperture type of antennas different from the conventional antennas? Explain the theory of radiation from a rectangular horn.",
+          "marks": "2",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Draw the structure, radiation pattern and explain the working of a V-antenna.",
+          "marks": "6",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain the helical antenna with respect to structural design, working principle in axial mode and normal mode, their merits, demerits and applications.",
+          "marks": "8",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the operation of ionospheric communication with the help of different layers created in the atmosphere.",
+          "marks": "6",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "A parabolic reflector antenna having the antenna efficiency $85\\%$ is designed for $3\\text{ GHz}$ resonant frequency with $2.5\\text{ dB}$ wavelength loss. Find out the antenna diameter if effective isotropic radiated power (EIRP) is calculated $46\\text{ dBW}$ and transmitting power is $500\\text{ watt}$.",
+          "marks": "5",
+          "chapter": "Link Budget",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Write short notes on: (any three) [3×4]\n\ni) Marconi antenna\nii) Knife edge diffraction\niii) Radio frequency spectrum\niv) Optical source and Optical detector",
+          "marks": "8",
+          "chapter": "Link Budget",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "List out different optical sources and explain the losses in optical fiber briefly.",
+          "marks": "2",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Explain the contribution of microscope and macroscopic fiber bends towards the bending losses in optical fiber.",
+          "marks": "7",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Write short notes on: Knife edge diffraction",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "What is a linear array? Differentiate between a broadside array and end firearray.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Write short notes on: Light source and photo detector",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "What is the importance of antenna array? Describe the principle of End fire and Broadside array.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "A parabolic reflector antenna having the antenna efficiency $85\\%$ is designed for $3\\text{ GHz}$ resonant frequency with $2.5\\text{ dB}$ wavelength loss. Find out the antenna diameter if effective isotropic radiated power (EIRP) is calculated $46\\text{ dBW}$ and transmitting power is $500\\text{ watt}$.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2076 Bhadra",
+      "year": "2076",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 97,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define an antenna. Explain the radiation mechanism and conditions of a single wire antenna that can radiate electromagnetic waves or not.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "State following antenna theorem: (a) Maximum power transfer (b) Superposition theorem",
+          "marks": "3",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Describe the antenna gain, antenna efficiency and antenna polarization with mathematical relation if necessary.",
+          "marks": "6",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Explain the working principle, construction, advantages and application of V antenna. Sketch radiation patterns of both types of V antennas.",
+          "marks": "6",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain the special features of reflector antenna and discuss on different types of feed used with necessary diagrams.",
+          "marks": "7",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "With neat diagram design the 5 element Yagi-Uda antenna for the receiving 100 MHz radio signal showing design steps. consider effective dipole length equal to $0.48 \\lambda c$ and spacing between elements is $0.15 \\lambda c$.",
+          "marks": "6",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Define a critical frequency $f_{(CRT)}$. Derive an expression for the relation between skip distance and maximum usable frequency ($f_{MUF}$) in SW propagation assuming that the Earth is Flat.",
+          "marks": "5",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain the operation of ionospheric communication with the help of different layers created in the atmosphere.",
+          "marks": "6",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Write short notes on: (any three) [3×4]\n\ni) Marconi antenna\nii) Knife edge diffraction\niii) Radio frequency spectrum\niv) Optical source and Optical detector",
+          "marks": "2",
+          "chapter": "Propagation between Antennas",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Derive Friis transmission equation and path loss in case of free space propagation and find out distance of line of sight as: $d = 3.57(\\sqrt{h_t} + \\sqrt{h_r}) \\text{Km}$",
+          "marks": "4",
+          "chapter": "Link Budget",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Where are optical fibers most widely used? Explain the various advantages and disadvantages of optical fibers over metal wire communication.",
+          "marks": "5",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Explain the construction and propagation mechanism and application of different types of optical fibers. Define numerical aperture.",
+          "marks": "5",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Write short notes on: Knife edge diffraction",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Derive the formula to establish the relationship between maximum usable frequency ($f_{MUF}$) and skip distance (D) assuming earth is flat.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "What is the retarded potential? Explain how electromagnetic waves are generated by a conductor.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "Explain the special features of reflector antenna and discuss on different types of feed used with necessary diagrams.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "Explain the importance of different layers in Ionospheric communication.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 18,
+          "text": "Define and derive the relation of MUF and skip distance for the case of flat earth.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 19,
+          "text": "Write short notes on: (Any two) [2x3]\n(a) Knife edge diffraction phenomenon\n(b) Rhombic Antenna\n(c) MW Propagation",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2076 Baishakh",
+      "year": "2076",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 52,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Explain the following antenna parameters. [2 x 3]\n(a) Radiation patterns.\n(b) Antenna gain and directivity\n(c) Beam width",
+          "marks": "8",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Sketch the current distribution and radiation pattern of center-fed vertical dipole for following lengths.\\n(i) $\\lambda/2$\\n(ii) $3\\lambda/2$",
+          "marks": "4",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Write short notes on (any three): [3 x 4]\\n(i) Corner reflector antenna\\n(ii) V antenna\\n(iii) Critical frequency\\n(iv) Light sources in optical communication",
+          "marks": "8",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What are the various feature of graded index fiber? Explain the refractive index profile and ray transmission in a multimode graded index fiber.",
+          "marks": "3",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Derive an expression for the total field in case of two isotropic point sources with same amplitude and out of phase. Also show the condition of maxima, minima direction of intensity with radiation pattern.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What is a linear array? Differentiate between a broadside array and end firearray.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Name the parasitic elements used in Yagi-Uda array. Explain their significance in the array. Compare Yagi-Uda antenna with Log periodic dipole array.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Draw the structure of ionosphere and explain the mechanism of ionosphere propagation.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Derive the Friis transmission equation for the free space propagation.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Find the received power in dB at a distance of 50 km over a free space with 10 GHz frequency consisting of transmitting antenna with 25 dB gain and a receiving gain of 20 dB. The power radiated by transmitting antenna is 150 dB.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Explain the construction and types of optical fiber with necessary diagrams.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Bhadra",
+      "year": "2075",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 89,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define an antenna. Explain the radiation mechanism and conditions of a single wire antenna that can radiate electromagnetic waves or not.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "State the reciprocity theorem and compensation theorem for an antenna system.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Explain the following antenna parameters: (i) Antenna efficiency (ii) Polarization (iii) Band width [3×3]",
+          "marks": "8",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Explain the working principle, construction, design, advantages and application of Yagi-Uda antenna.",
+          "marks": "7",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What do you mean by aperture antenna? Explain the construction, working principle and the feeding mechanism for Parabolic Antenna.",
+          "marks": "1",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define a critical frequency $f_{(CRT)}$. Derive an expression for the relation between skip distance and maximum usable frequency ($f_{MUF}$) in SW propagation assuming that the Earth is Flat.",
+          "marks": "5",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the operation of ionospheric communication with the help of different layers created in the atmosphere.",
+          "marks": "6",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Write short notes on: (any three) [3×4]\n\ni) Marconi antenna\nii) Knife edge diffraction\niii) Radio frequency spectrum\niv) Optical source and Optical detector",
+          "marks": "2",
+          "chapter": "Propagation between Antennas",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Microwave link is assumed to be free space condition. The antenna gains are each $40\\text{ dB} , the$ frequency is $10\\text{ GHz}$ and the path length is $90\\text{ km}$. Calculate the transmission path loss and received power for transmitted power of $10\\text{ Kw}$.",
+          "marks": "6",
+          "chapter": "Link Budget",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "List out different optical sources and explain the losses in optical fiber briefly.",
+          "marks": "2",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Describe with the aid of neat diagram the basic principle of total internal reflection that enables the fiber to work as a \"light conduit\".",
+          "marks": "6",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Write short notes on: Knife edge diffraction",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Derive the formula to establish the relationship between maximum usable frequency ($f_{MUF}$) and skip distance (D) assuming earth is flat.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "What is a radio frequency spectrum?",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "Write short notes on: Light source and photo detector",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "What is $a^n$ antenna? Explain the conditions that any type of conductor can radiate electromagnetic wave or not.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "Explain all the layers of ionosphere and their importance to radio wave communication.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 18,
+          "text": "Derive the formula to establish the relationship between maximum usable frequency ($f_{MUF}$) and skip distance (D) assuming earth is flat.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Baishakh",
+      "year": "2075",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 53,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Describe the antenna gain, antenna efficiency and directivity of antenna with mathematical derivation if necessary.",
+          "marks": "6",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "List the major characteristics of Marconi antenna with necessary figures.",
+          "marks": "6",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Discuss loss or signal attenuation in $a^n$ optical fiber with respect to absorption, scattering and bending losses.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What is $a^n$ antenna? Explain how electromagnetic waves are generated by a conductor.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What are broadside and endfire arrays? Derive an expression for the total field in case of two isotropic point sources with equal amplitude and opposite phase.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Name the parasitic elements used in Yagi-Uda array. Explain their significance in the array. Compare Yagi-Uda antenna with Log periodic dipole array.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain skip distance and derive the expression for skip distance (D) for flat earth surface.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Find the received power in dB at a distance of 50 km over a free space with 10 GHz frequency consisting of transmitting antenna with 25 dB gain and a receiving gain of 20 dB. The power radiated by transmitting antenna is 150 dB.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What is ionosphere? Explain the ionosphere wave propagation showing its different layers.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Define free space communication. Derive complete equation including path loss using friis space communication.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Write short notes on: (any three) [3×4]\n\ni) Marconi antenna\nii) Knife edge diffraction\niii) Radio frequency spectrum\niv) Optical source and Optical detector",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2074 Bhadra",
+      "year": "2074",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 108,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "State the reciprocity theorem and compensation theorem for an antenna system.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Explain retarded potential and their importance. Describe infinitesimal dipole with the help of suitable diagram, mathematical relations and the field pattern.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Explain the following antenna parameters.\n\n(a) Radiation pattern (b) Antenna gain (c) Polarization",
+          "marks": "2",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Write short notes on: (Any Three) [3×3]\n\na) Power flux density (PFD)\n\nb) Knife edge diffraction\n\nc) Cassegrain antenna\n\nd) Polarization\n\ne) Light source and photo detector",
+          "marks": "8",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain the working principle, construction, design, advantages and application of Yagi-Uda antenna.",
+          "marks": "7",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define a critical frequency $f_{(CRT)}$. Derive an expression for the relation between skip distance and maximum usable frequency ($f_{MUF}$) in SW propagation assuming that the Earth is Flat.",
+          "marks": "5",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Define the following: (a) MUF (b) Virtual height",
+          "marks": "2",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Write short notes on (Any Three) : [3x3]\n\na) Effective antenna height\n\nb) Firesnel Zones\n\nc) Microstrip antenna\n\nd) Radio frequency spectrum",
+          "marks": "2",
+          "chapter": "Propagation between Antennas",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "The antenna of a TV transmitter is located at a height of 125m above ground level. Calculate the distance up to which the LOS communication is possible if the height of receiving antenna is to be 9m.",
+          "marks": "6",
+          "chapter": "Propagation between Antennas",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "A parabolic reflector antenna having the antenna efficiency $85\\%$ is designed for $3\\text{ GHz}$ resonant frequency with $2.5\\text{ dB}$ wavelength loss. Find out the antenna diameter if effective isotropic radiated power (EIRP) is calculated $46\\text{ dBW}$ and transmitting power is $500\\text{ watt}$.",
+          "marks": "5",
+          "chapter": "Link Budget",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Where are optical fibers most widely used? Explain the various advantages and disadvantages of optical fibers over metal wire communication.",
+          "marks": "5",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Write short notes on: Knife edge diffraction",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Derive the formula to establish the relationship between maximum usable frequency ($f_{MUF}$) and skip distance (D) assuming earth is flat.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "What is a radio frequency spectrum?",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "State following antenna theorems: (a) Reciprocity (b) Compensation",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "Derive the formula to establish the relationship between maximum usable frequency ($f_{MUF}$) and skip distance (D) assuming earth is flat.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "A parabolic reflector antenna having the antenna efficiency $85\\%$ is designed for $3\\text{ GHz}$ resonant frequency with $2.5\\text{ dB}$ wavelength loss. Find out the antenna diameter if effective isotropic radiated power (EIRP) is calculated $46\\text{ dBW}$ and transmitting power is $500\\text{ watt}$.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 18,
+          "text": "Explain the working principle, construction, design, advantages and application of Yagi-Uda antenna.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 19,
+          "text": "What is a radio frequency spectrum? Give major propagation characteristics of VHF and UHF bands.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 20,
+          "text": "Where are optical fibers most widely used? Explain the various advantages and disadvantages of optical fibers over metal wire communication.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 21,
+          "text": "Write short notes on: (Any four) [4x4]\n(a) Helical antenna\n(b) Super refraction\n(c) Knife edge diffraction\n(d) Numerical aperture (NA)\n(e) Logarithmic antenna",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2073 Magh",
+      "year": "2073",
+      "month": "Magh",
+      "examType": "Back",
+      "totalMarks": 48,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "List the parameters of antenna and explain any three of them.",
+          "marks": "2",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Define $a^n$ antenna? List the various types of wired antenna with their radiation pattern and polarization.",
+          "marks": "2",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Describe the cassegrain method of feeding parabolic reflectors.",
+          "marks": "6",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What is the main difference between standing wave antenna and travelling wave antenna? Explain with a neat sketch the construction, working principal and characteristic of V antenna.",
+          "marks": "3",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "State the following antenna theorems:\\n(i) Compensation\\n(ii) Reciprocity",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the phenomenon of Duct propagation.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Find the maximum range of tropospheric transmission for which the transmitting antenna height is 100 ft and receiving antenna is 50 ft.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain the construction and propagation mechanism and application of different types of optical fibers. Define numerical aperture.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Write short notes on: (any three) [3x4]\\n(i) Marconi antenna\\n(ii) Knife edge diffraction phenomenon\\n(iii) Effective isotropic radiated power (EIRP)\\n(iv) Multimode graded index fiber\n\nv) MW propagation",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2073 Bhadra",
+      "year": "2073",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 87,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Explain briefly radiation mechanism in single wire antenna.",
+          "marks": "5",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What are broadside and endfire arrays? Derive an expression for the total field in case of two isotropic point sources with equal amplitude and opposite phase.",
+          "marks": "1",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Explain the working principle, characteristics, advantage of a rhombic antenna and its applications.",
+          "marks": "4",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Explain the special features of reflector antenna and discuss on different types of feed used with necessary diagrams.",
+          "marks": "7",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Write short notes on: (Any three) [3×3]\\n(i) Helical antenna\\n(ii) Tropospheric scatter propagation\\n(iii) Firiis transmission equation\\n(iv) Printed antenna\n\nv) Pyramidal horn antenna",
+          "marks": "8",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Briefly discuss the propagation characteristics of space wave and sky wave.",
+          "marks": "8",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Write down the factors which affect the surface wave communication. Explain the major characteristics of MW and SW radio propagation.",
+          "marks": "2",
+          "chapter": "Propagation between Antennas",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Derive the expression for the path loss in case of radio wave propagation.",
+          "marks": "6",
+          "chapter": "Propagation between Antennas",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "A parabolic reflector antenna having the antenna efficiency $85\\%$ is designed for $3\\text{ GHz}$ resonant frequency with $2.5\\text{ dB}$ wavelength loss. Find out the antenna diameter if effective isotropic radiated power (EIRP) is calculated $46\\text{ dBW}$ and transmitting power is $500\\text{ watt}$.",
+          "marks": "5",
+          "chapter": "Link Budget",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What are the various elements of an optical communication system? Explain each element in brief.",
+          "marks": "6",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Compare optical fiber communication with cable and radio communication systems. Describe numerical aperture (NA) in optical communication system.",
+          "marks": "4",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Derive the Friis transmission equation for the free space propagation.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "What is a linear array? Differentiate between a broadside array and end firearray.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Explain the working principle, characteristics, advantage of a rhombic antenna and its applications.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "Explain parabolic reflector antenna with characteristics, radiation pattern and feed system.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2072 Magh",
+      "year": "2072",
+      "month": "Magh",
+      "examType": "Back",
+      "totalMarks": 56,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "State the following antenna theorems:\\n(i) Superposition\\n(ii) Reciprocity",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Describe antenna gain, antenna efficiency and beam width of antenna with mathematical derivations if necessary.",
+          "marks": "6",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Why we need antenna array rather than changing the length of single antenna? Derive the expression and draw the pattern for $a^n$ array of two-isotropic radiators with:\\n(i) Equal amplitude and phase\\n(ii) Equal amplitude and opposite phase",
+          "marks": "2",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Sketch the current distribution and radiation pattern of center - fed vertical dipole for following lengths.\\n(i) $\\lambda$\\n(ii) $3\\lambda/2$\\n(iii) $2\\lambda$",
+          "marks": "6",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What are the advantages of Yagi antenna? Design a 3-element yagi antenna with the operating frequency of $3\\text{GHz}$ and dipole as driven element.",
+          "marks": "2",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain the following for ionospheric region: [2x2]\\n(i) Skip zone\\n(ii) Virtual height of a layer",
+          "marks": "8",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Define maximum usable frequency. Derive the relation between the critical frequency and maximum usable frequency.",
+          "marks": "2",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What is an optical fiber? What are the different types of losses you can visualize in optical fiber communication? What are the advantages and disadvantages of multimode fiber over the single mode fiber?",
+          "marks": "4",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What properties do you think to be considered when $a^n$ optical fiber is to be selected for any communication system?",
+          "marks": "6",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What is travelling wave antenna? Explain V-antenna with its characteristics and its types.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Find out the relation between the critical frequency ($f_{crt}$) and the skip distance (D) if it is considered the Earth is flat for both antennas.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Write short notes on: (any three) [3x3]\\n(i) Horn antenna\\n(ii) Knife edge diffraction\\n(iii) Effective isotropic radiated power\\n(iv) Linear polarization\n\nv) Parasitic array antenna",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2072 Ashwin",
+      "year": "2072",
+      "month": "Ashwin",
+      "examType": "Regular",
+      "totalMarks": 110,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Explain retarded potential and their importance. Describe infinitesimal dipole with the help of suitable diagram, mathematical relations and the field pattern.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Explain the following antenna parameters: [2x4]\n(a) Antenna efficiency\n(b) Directivity",
+          "marks": "8",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Explain the working principle, characteristics, advantage of a rhombic antenna and its applications.",
+          "marks": "4",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "With neat diagram design the 5 element Yagi-Uda antenna for the receiving 100 MHz radio signal showing design steps. consider effective dipole length equal to $0.48 \\lambda c$ and spacing between elements is $0.15 \\lambda c$.",
+          "marks": "6",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain how single wire can radiates electromagnetic waves with necessary radiation patterns and polarization. List the characteristics of omnidirectional antenna.",
+          "marks": "4",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain the operation of ionospheric communication with the help of different layers created in the atmosphere.",
+          "marks": "6",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the phenomenon of Duct propagation.",
+          "marks": "4",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Find out the line of sight distance between the transmitting antenna and receiving antenna. If the transmitting antenna height is $45\\text{ m.}$ and the receiving antenna height is $25\\text{ m.}$ [Given: the radius of Earth is $6,378\\text{ km}$].",
+          "marks": "5",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "A $100\\text{ MHz}$ circuit consists of a transmitting and receiving antenna of $30\\text{ dB}$ and $25\\text{ dB}$ gains respectively. The power radiated by the transmitting antenna is $120\\text{ W}$. using Friis transmission equation find the received power at a distance of $0.75\\text{ km}$ over a free space.",
+          "marks": "6",
+          "chapter": "Link Budget",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Write short notes on: (any four) [4x3]\n\na) Marconi Antenna\n\nb) Friis equation and path loss in case of free space propagation\n\nc) Knife edge diffraction phenomenon\n\nd) NA for meridional rays in optical fiber\n\ne) Radio frequency spectrum",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What are the various elements of an optical communication system? Explain each element in brief.",
+          "marks": "6",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Compare the configuration of different types of fiber. Mention the advantages of single mode fiber.",
+          "marks": "4",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Write short notes on: Knife edge diffraction",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Derive the Friis transmission equation for the free space propagation.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "Define an antenna. Explain the radiation mechanism and conditions of a single wire antenna that can radiate electromagnetic waves or not.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "What is a radio frequency spectrum?",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "What is retarded potential? Write the expression of retarded scalar potential and vector potential of infinitesimal dipole antenna in fraunhofer for field region.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 18,
+          "text": "Write the characteristics, working principle and operation of Rhombid antenna.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 19,
+          "text": "Explain the ionospheric wave propagation showing its different layers.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2071 Magh",
+      "year": "2071",
+      "month": "Magh",
+      "examType": "Back",
+      "totalMarks": 39,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What are the advantages of aperture antenna? List out the type of horn antenna and explain rectangular horn briefly.",
+          "marks": "2",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Explain fressnel zone and knife edge diffraction.",
+          "marks": "4",
+          "chapter": "Propagation between Antennas",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Explain the block diagram of optical communication and list out the advantages and disadvantages of it over cable communication.",
+          "marks": "3",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Describe the following terms: Numerical Aperture and Dispersion in Optical Fiber.",
+          "marks": "6",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Describe the operation of infinitesimal dipole with necessary mathematical relation for electric field and magnetic field. What are basic antenna parameters? Explain briefly on any four parameters.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain the different layers of ionosphere. What are the major characteristics of ionosphere?",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the duct propagation mechanism in radio wave propagation. Define critical frequency and MUF with necessary derivations.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What is the main difference between standing wave antenna and travelling wave antenna? Explain with a neat sketch the construction, working principle and characteristics of Rhombic antenna.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Why antenna radiation pattern lobes are important during antenna design? Derive the relation for the field intensity of linear array of 2 isotropic radiators with equal potential and $180^\\circ$ out of phase.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Explain the working principle, characteristics, advantage of a rhombic antenna and its applications.",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Derive the expression for free space path loss propagation. Calculate free space path loss for $6\\text{ GHz}$ frequency, if transmitter and receiver are $10,500\\text{ km}$ line of sight apart.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2071 Bhadra",
+      "year": "2071",
+      "month": "Bhadra",
+      "examType": "Back",
+      "totalMarks": 104,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define antenna arrays and also derive a mathematical expression for the array of two element isotropic radiators.",
+          "marks": "6",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Explain any five parameters of antenna.",
+          "marks": "5",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "List the main characteristics of UHF band. Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+          "marks": "6",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Explain the working principle, characteristics, advantage of a rhombic antenna and its applications.",
+          "marks": "5",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "With a mathematical relation of refractive index of ionospheric layer derive a relation of critical frequency and maximum usable frequency (MUF) of radio waves with necessary explanation. Consider the earth is not curved.",
+          "marks": "8",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Write down the factors which affect the surface wave communication. Explain the major characteristics of MW and SW radio propagation.",
+          "marks": "2",
+          "chapter": "Propagation between Antennas",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Derive the Friis transmission equation for the free space propagation. Also find out the free space loss ($L_{FS}$) equation that equals to $22+20\\log(d/\\lambda) , where$ $d$ is distance between $T_x$ and $R_x$ antennas and $\\lambda$ is wavelength of the frequency being used.",
+          "marks": "12",
+          "chapter": "Link Budget",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "A parabolic reflector antenna having the antenna efficiency $85\\%$ is designed for $3\\text{ GHz}$ resonant frequency with $2.5\\text{ dB}$ wavelength loss. Find out the antenna diameter if effective isotropic radiated power (EIRP) is calculated $46\\text{ dBW}$ and transmitting power is $500\\text{ watt}$.",
+          "marks": "5",
+          "chapter": "Link Budget",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain the construction and propagation mechanism and application of different types of optical fibers. Define numerical aperture.",
+          "marks": "5",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Compare Yagi antenna with log periodic antenna.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Derive a relation for the field intensity for the array of two elements isotropic radiators in various conditions. Show the condition for broad side and end fire array with necessary diagrams.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "A parabolic reflector antenna having the antenna efficiency $85\\%$ is designed for $3\\text{ GHz}$ resonant frequency with $2.5\\text{ dB}$ wavelength loss. Find out the antenna diameter if effective isotropic radiated power (EIRP) is calculated $46\\text{ dBW}$ and transmitting power is $500\\text{ watt}$.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "Write down the factors which affect the space wave communication. Explain the major characteristics of MW and SW radio propagation.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "How do you get Friis transmission equation and path loss in case of free space wave propagation?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "Explain the construction and propagation mechanism and application of different types of optical fibers. Define numerical aperture.",
+          "marks": "10",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2070 Magh",
+      "year": "2070",
+      "month": "Magh",
+      "examType": "Back",
+      "totalMarks": 61,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Explain the following antenna parameters:\\n(i) Radiation Pattern Lobes\\n(ii) Polarization",
+          "marks": "2",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Differentiate between: $\\frac{\\lambda}{2} , \\lambda$ and $3\\frac{\\lambda}{2}$ length dipoles in terms of their individual radiation pattern, self impedance and directivity; where $\\lambda$ is the wavelength of operation frequency.",
+          "marks": "6",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Define for ionospheric region:\\n(i) Critical frequency\\n(ii) Virtual height of a layer",
+          "marks": "2",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Assume that reflection take place at a height of $400\\text{ km}$ and that the maximum density in the ionosphere corresponds to a $0.8$ refractive index at $15\\text{ MHz}$. What will be the range (assume flat earth) for which the MUF is $20\\text{ MHz}$.",
+          "marks": "5",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain the effect of space wave propagation on the ground of plane and actual earth.",
+          "marks": "10",
+          "chapter": "Propagation between Antennas",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What are advantages and disadvantages of multimode fiber over single mode fiber? Derive Expression of Numerical Aperture of a stepped index optical fiber.",
+          "marks": "3",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "How does a single wire act as $a^n$ antenna? During the transmission mode, explain the mechanism involved by which the electric lines of force are detached from the dipole antenna to form free space waves.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Derive a mathematical relation to calculate the field intensity of $a^n$ array for two element isotropic radiators. Draw the Resultant pattern for $a^n$ End Fire Array with dipoles perpendicular to the axis of array with $d = \\frac{\\lambda}{2}$ & $\\alpha = \\pi$. Where, $\\lambda$ is the wavelength of the operating frequency?",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Explain the phenomenon of Duct propagation.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Describe Knife edge diffraction.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Briefly explain the advantage of optical fiber over metalled wire.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2070 Bhadra",
+      "year": "2070",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 83,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define an antenna. Explain the operation of infinitesimal dipole with the help of mathematical relations and the field pattern.",
+          "marks": "2",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Explain the following antenna parameters:\n(a) Half Power Beamwidth\n(b) Directivity",
+          "marks": "2",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "State the principle of pattern multiplication. Use the principle to obtain a wave pattern for array of two short dipoles for following cases where (d) = dipole separation and ($\\alpha$) = current phase difference.\n(a) Dipoles aligned perpendicular to the array axis with $d = \\lambda/2 , \\alpha = 0$\n(b) Dipoles aligned perpendicular to the array axis with $d = \\lambda/2 , \\alpha = \\pi$",
+          "marks": "2",
+          "chapter": "Basic Antenna Parameters and Arrays",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "List the main characteristics of UHF band. Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+          "marks": "6",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain the working principle, characteristics, advantage of a rhombic antenna and its applications.",
+          "marks": "4",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Derive the relation for flare angle and length of a pyramidal horn antenna.",
+          "marks": "5",
+          "chapter": "Antenna Classifications",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "With a neat diagram, explain the designation of radio waves according to the path they follow during propagation. Also, compare the propagation characteristics for different radio bands.",
+          "marks": "4",
+          "chapter": "Propagation and Radio Frequency Spectrum",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Write short notes on: (any three) [3×4]\n\ni) Marconi antenna\nii) Knife edge diffraction\niii) Radio frequency spectrum\niv) Optical source and Optical detector",
+          "marks": "2",
+          "chapter": "Propagation between Antennas",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Where are optical fibers most widely used? Explain the various advantages and disadvantages of optical fibers over metal wire communication.",
+          "marks": "5",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Explain the principle of light propagation through a fiber with necessary diagrams. Derive the relation between numerical aperture and acceptance angle.",
+          "marks": "2",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Write short notes on: Knife edge diffraction",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Define an antenna. Explain the operation of infinitesimal dipole with the help of mathematical relations and the field pattern.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Explain the working principle of Rhombic antenna.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "Explain the construction, working principle and characteristics of Log-periodic antenna with necessary diagram.",
+          "marks": "10",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "\n(a) Describe knife edge diffraction phenomenon. [5]\n(b) Explain the effect of space wave propagation on the ground of plane and actual earth.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 17,
+          "text": "Where are optical fibers most widely used? Explain the various advantages and disadvantages of optical fibers over metal wire communication.",
+          "marks": "10",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 18,
+          "text": "What is $a^n$ acceptance angle? Derive and expression to calculate the acceptance angle.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    }
   ]
 }

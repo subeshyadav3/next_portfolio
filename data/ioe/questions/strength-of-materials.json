@@ -1,378 +1,975 @@
 {
   "subject": "Strength of Materials",
-  "subjectCode": "ENCE 151",
+  "semester": "1",
   "questions": [
     {
-      "chapter": "Simple Stress and Strain",
-      "text": "Derive the mathematical relationship between the elastic constants: Young's Modulus ($E$), Shear Modulus ($G$), Bulk Modulus ($K$), and Poisson's ratio ($\\nu$): $E = 2G(1+\\nu) = 3K(1-2\\nu) = \\frac{9KG}{3K+G}$.",
+      "id": "strength-of-materials-1",
+      "question": "Define buckling load. A round bar is clamped at the bottom and is free at the top. Its effective length is $2 \\text{ m}$. A horizontal force of $300 \\text{ N}$ at top produces a horizontal deflection of $20 \\text{ mm}$. Determine buckling load for the bar if the same load is applied axially.",
+      "text": "Define buckling load. A round bar is clamped at the bottom and is free at the top. Its effective length is $2 \\text{ m}$. A horizontal force of $300 \\text{ N}$ at top produces a horizontal deflection of $20 \\text{ mm}$. Determine buckling load for the bar if the same load is applied axially.",
+      "chapter": "Archive Questions",
+      "marks": "1",
+      "frequency": 8,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "strength-of-materials-2",
+      "question": "Write an empirical formula for calculating critical load for intermediate column. Calculate the maximum value of slenderness ratio of steel column for which Euler's formulas is valid. Take $\\sigma_c = 330\\text{ MN/m}^2$ and $E = 210\\text{ GN/m}^2$.",
+      "text": "Write an empirical formula for calculating critical load for intermediate column. Calculate the maximum value of slenderness ratio of steel column for which Euler's formulas is valid. Take $\\sigma_c = 330\\text{ MN/m}^2$ and $E = 210\\text{ GN/m}^2$.",
+      "chapter": "Archive Questions",
       "marks": "6",
-      "years": [
-        "2083 Baishakh",
-        "2082 Baishakh",
-        "2081 Bhadra",
-        "2078 Bhadra"
-      ],
-      "frequency": 4
+      "frequency": 8,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "chapter": "Principal Stress Analysis in 2D Planes",
-      "text": "For a two-dimensional state of plane stress subjected to normal stresses $\\sigma_x, \\sigma_y$ and shear stress $\\tau_{xy}$, determine: (a) Principal stresses $\\sigma_1, \\sigma_2$ and orientation of principal planes, (b) Maximum in-plane shearing stress $\\tau_{\\max}$, and (c) Verify results using Mohr's Circle of stress.",
-      "marks": "8",
-      "years": [
-        "2083 Baishakh",
-        "2082 Baishakh",
-        "2081 Bhadra",
-        "2080 Baishakh"
-      ],
-      "frequency": 4
+      "id": "strength-of-materials-3",
+      "question": "Differentiate short column and long column based on failure mechanism. Calculate the maximum value of slenderness ratio for a column for which Euler's formula is valid. Take E=210GPa and $\\sigma_{cr} = 330\\text{MPa}$.",
+      "text": "Differentiate short column and long column based on failure mechanism. Calculate the maximum value of slenderness ratio for a column for which Euler's formula is valid. Take E=210GPa and $\\sigma_{cr} = 330\\text{MPa}$.",
+      "chapter": "Archive Questions",
+      "marks": "1",
+      "frequency": 8,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "chapter": "Geometric Properties of Sections",
-      "text": "For a given unsymmetrical structural section (angle section, Z-section, channel section), determine centroid $(\\bar{x}, \\bar{y})$, moments of inertia $I_x, I_y$, product of inertia $I_{xy}$, and calculate principal moments of inertia ($I_u, I_v$) and orientation of principal axes.",
-      "marks": "8",
-      "years": [
-        "2083 Baishakh",
-        "2082 Baishakh",
-        "2081 Bhadra",
-        "2080 Baishakh",
-        "2078 Bhadra"
-      ],
-      "frequency": 5
+      "id": "strength-of-materials-4",
+      "question": "Define buckling load and effective length of column and derive a Euler's formula for crippling load of a column of length L with its both ends hinged condition.",
+      "text": "Define buckling load and effective length of column and derive a Euler's formula for crippling load of a column of length L with its both ends hinged condition.",
+      "chapter": "Archive Questions",
+      "marks": "2",
+      "frequency": 8,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "chapter": "Thin Walled Vessels",
-      "text": "Prove that circumferential (hoop) stress in a thin cylinder subjected to internal fluid pressure $p$ is twice the longitudinal stress ($\\sigma_h = \\frac{pd}{2t}, \\sigma_L = \\frac{pd}{4t}$). Derive formulas for volumetric strain and change in internal volume.",
-      "marks": "8",
-      "years": [
-        "2083 Baishakh",
-        "2082 Baishakh",
-        "2081 Bhadra",
-        "2078 Bhadra"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Torsion",
-      "text": "Derive the torsion formula $\\frac{T}{J} = \\frac{\\tau}{R} = \\frac{G\\theta}{L}$. Prove that a hollow circular shaft has greater torque transmission capacity and stiffness than a solid shaft of identical weight and material cross-sectional area.",
-      "marks": "8",
-      "years": [
-        "2083 Baishakh",
-        "2082 Baishakh",
-        "2081 Bhadra",
-        "2078 Bhadra"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Torsion",
-      "text": "A hollow steel shaft having outer diameter $D$ and inner diameter $d$ transmits specified power at given RPM. If maximum shear stress is limited to $\\tau_{\\text{allow}}$ and twist angle to $\\theta_{\\text{allow}}$, determine suitable shaft dimensions.",
-      "marks": "8",
-      "years": [
-        "2082 Baishakh",
-        "2081 Bhadra",
-        "2078 Bhadra"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Column Theory",
-      "text": "State the assumptions and derive Euler's formula for the critical buckling load of an ideal column of length $L$ and flexural rigidity $EI$ with: (a) Both ends hinged ($P_{\\text{cr}} = \\frac{\\pi^2 EI}{L^2}$), and (b) One end fixed and other end free ($P_{\\text{cr}} = \\frac{\\pi^2 EI}{4L^2}$).",
-      "marks": "8",
-      "years": [
-        "2083 Baishakh",
-        "2082 Baishakh",
-        "2081 Bhadra",
-        "2080 Baishakh"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Theory of Flexure",
-      "text": "Determine the slope and deflection at the free end of a cantilever beam or at the center of a simply supported beam subjected to point loads and UDL using Macaulay's method or Moment-Area theorems.",
-      "marks": "8",
-      "years": [
-        "2083 Baishakh",
-        "2082 Baishakh",
-        "2081 Bhadra",
-        "2078 Bhadra"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Simple Stress and Strain",
-      "text": "A rigid bar $ABC$ is hinged at one end and supported by vertical steel and copper/aluminum rods. Determine the forces developed in each rod and vertical displacement under an applied vertical load.",
-      "marks": "8",
-      "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2080 Baishakh",
-        "2078 Bhadra"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Theory of Flexure",
-      "text": "Derive the horizontal shear stress formula in a beam cross-section: $\\tau = \\frac{V Q}{I b}$. Plot the shear stress distribution across the depth of an I-beam, T-beam, and rectangular beam.",
-      "marks": "8",
-      "years": [
-        "2078 Bhadra",
-        "2076 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Theory of Flexure",
-      "text": "For a given planar frame carrying concentrated loads and UDL, compute support reactions and draw Axial Force Diagram (AFD), Shear Force Diagram (SFD), and Bending Moment Diagram (BMD) indicating salient points and points of contraflexure.",
-      "marks": "10",
-      "years": [
-        "2083 Baishakh",
-        "2081 Bhadra",
-        "2080 Baishakh",
-        "2078 Bhadra"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Simple Stress and Strain",
-      "text": "Derive the expression for total elongation of a uniformly tapering circular bar of length $L$ tapering from diameter $d_1$ to $d_2$ under axial tensile load $P$: $\\delta = \\frac{4PL}{\\pi E d_1 d_2}$.",
-      "marks": "6",
-      "years": [
-        "2080 Baishakh",
-        "2078 Bhadra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Simple Stress and Strain",
-      "text": "A compound bar consisting of a steel tube and an internal copper rod is rigidly connected at both ends. Determine the thermal stresses developed in steel and copper when the temperature rises by $\\Delta T$.",
-      "marks": "8",
-      "years": [
-        "2080 Baishakh",
-        "2078 Bhadra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Theory of Flexure",
-      "text": "Derive the flexure formula for pure bending of beams: $\\frac{M}{I} = \\frac{\\sigma}{y} = \\frac{E}{R}$. Define section modulus ($Z$) and moment of resistance.",
-      "marks": "6",
-      "years": [
-        "2080 Baishakh",
-        "2076 Chaitra"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Geometric Properties of Sections",
-      "text": "State and prove the Parallel Axis Theorem for product of inertia ($I_{xy} = I_{\\bar{x}\\bar{y}} + A \\bar{x}\\bar{y}$).",
+      "id": "strength-of-materials-5",
+      "question": "Derive Euler's formula of critical load for a steel column with one end fixed and other hinged. Derive the condition of no tension in rectangular column.",
+      "text": "Derive Euler's formula of critical load for a steel column with one end fixed and other hinged. Derive the condition of no tension in rectangular column.",
+      "chapter": "Archive Questions",
       "marks": "4",
-      "years": [
-        "2081 Bhadra",
-        "2078 Bhadra"
-      ],
-      "frequency": 2
+      "frequency": 8,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "chapter": "Column Theory",
-      "text": "Explain the limitations of Euler's formula for short and intermediate columns. Derive the Rankine-Gordon empirical formula $\\frac{1}{P_R} = \\frac{1}{P_c} + \\frac{1}{P_e}$ and define slenderness ratio.",
+      "id": "strength-of-materials-6",
+      "question": "Derive an expression for Euler's formula for crippling load of a column of length L with its both ends hinged condition.",
+      "text": "Derive an expression for Euler's formula for crippling load of a column of length L with its both ends hinged condition.",
+      "chapter": "Archive Questions",
+      "marks": "12",
+      "frequency": 8,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "strength-of-materials-7",
+      "question": "Derive the expression for the Euler's formula for crippling load on a column of length L with both ends fixed.",
+      "text": "Derive the expression for the Euler's formula for crippling load on a column of length L with both ends fixed.",
+      "chapter": "Archive Questions",
       "marks": "6",
-      "years": [
-        "2081 Bhadra",
-        "2078 Bhadra"
-      ],
-      "frequency": 2
+      "frequency": 8,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "chapter": "Theory of Flexure",
-      "text": "Derive the Bending Formula (Flexure formula) for beams under pure bending: $\\frac{M}{I} = \\frac{\\sigma}{y} = \\frac{E}{R}$. State assumptions in Euler-Bernoulli beam theory and define Section Modulus ($Z$).",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2081 Chaitra",
-        "2078 Kartik"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Assumptions: plane sections remain plane after bending, beam material is homogeneous, isotropic, obeys Hooke law, radius of curvature R >> beam depth. Longitudinal strain epsilon = y / R. Stress sigma = E y / R. Equating internal moment of resistance M = integral sigma y dA = (E / R) integral y^2 dA = (E / R) I => M / I = sigma / y = E / R. Section modulus Z = I / y_max; maximum bending stress sigma_max = M / Z."
+      "id": "strength-of-materials-8",
+      "question": "Derive an expression for the Euler's formula for crippling load on a column with both ends hinged.",
+      "text": "Derive an expression for the Euler's formula for crippling load on a column with both ends hinged.",
+      "chapter": "Archive Questions",
+      "marks": "7",
+      "frequency": 8,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "chapter": "Theory of Flexure",
-      "text": "Derive the Shear Stress formula for beams: $\\tau = \\frac{V Q}{I b}$. Plot the shear stress distribution across rectangular, circular, I-section, and T-section beam profiles.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Consider longitudinal equilibrium of differential slice dx above level y: dF = (dM / I) integral y dA. Horizontal shear force dF must balance shear stress tau * b * dx => tau = (dM/dx) Q / (I b) = V Q / (I b), where Q = first moment of area above level y. For rectangular section (b x d): parabolic distribution with tau_max = 1.5 (V / A) at neutral axis. For circular section: tau_max = (4/3) (V / A). For I-section: flange carries tiny shear; web carries >90% of total shear with step jump at flange-web junction."
+      "id": "strength-of-materials-9",
+      "question": "Derive the Eulers formula for critical load for a strut with both end hinged.",
+      "text": "Derive the Eulers formula for critical load for a strut with both end hinged.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 8,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "chapter": "Torsion",
-      "text": "Derive the Torsion Equation for circular solid and hollow shafts: $\\frac{T}{J} = \\frac{\\tau}{r} = \\frac{G \\theta}{L}$. Calculate the power transmitted $P = \\frac{2\\pi N T}{60}$ and polar section modulus ($Z_p$) for a solid shaft.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2081 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Assumptions: circular cross-sections remain circular and plane, shear strain proportional to radius gamma = r theta / L. Shear stress tau = G gamma = G r theta / L. Resisting torque T = integral tau r dA = (G theta / L) integral r^2 dA = (G theta / L) J => T / J = tau / r = G theta / L. Polar moment J = pi d^4 / 32. Polar section modulus Z_p = J / R = pi d^3 / 16. Power P = omega T = 2 pi N T / 60 watts."
+      "id": "strength-of-materials-10",
+      "question": "a) Derive pure bending equation. [4]\n\nb) A cantilever beam $4\\text{m}$ carries an uniformly distributed load of $50\\text{kN/m}$ over the whole span. The beam is of T-section with web $45\\text{cm} \\times 3\\text{cm}$ and flange is $35\\text{cm} \\times 5\\text{cm}$ making overall depth of $50\\text{cm}$. Find the maximum tensile and compressive stresses if the flange is at the bottom and horizontal. Also determine the stress and its nature at $3\\text{ cm}$ from top.",
+      "text": "a) Derive pure bending equation. [4]\n\nb) A cantilever beam $4\\text{m}$ carries an uniformly distributed load of $50\\text{kN/m}$ over the whole span. The beam is of T-section with web $45\\text{cm} \\times 3\\text{cm}$ and flange is $35\\text{cm} \\times 5\\text{cm}$ making overall depth of $50\\text{cm}$. Find the maximum tensile and compressive stresses if the flange is at the bottom and horizontal. Also determine the stress and its nature at $3\\text{ cm}$ from top.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": true
     },
     {
-      "chapter": "Theory of Flexure",
-      "text": "Derive the Differential Equation of Beam Deflection $E I \\frac{d^2 y}{dx^2} = M(x)$. Apply Macaulay's Method to find slope and deflection at the center of a simply supported beam with asymmetric point loads.",
+      "id": "strength-of-materials-11",
+      "question": "A simply supported beam of span $10\\text{ m}$ is to carry uniformly distributed load $20\\text{ KN/m}$ over the entire span and a point load $50\\text{ KN}$ at its center. Determine the dimension of beam, if the beam is rectangular in cross section and the maximum permissible stress in bending tension and compression are $120\\text{ N/mm}^2$ and $100\\text{ N/mm}^2$ respectively. Take depth of beam two times its breadth.",
+      "text": "A simply supported beam of span $10\\text{ m}$ is to carry uniformly distributed load $20\\text{ KN/m}$ over the entire span and a point load $50\\text{ KN}$ at its center. Determine the dimension of beam, if the beam is rectangular in cross section and the maximum permissible stress in bending tension and compression are $120\\text{ N/mm}^2$ and $100\\text{ N/mm}^2$ respectively. Take depth of beam two times its breadth.",
+      "chapter": "Archive Questions",
       "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2076 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "From curvature relation 1/R = d^2 y / dx^2 and M = E I / R: EI d^2y/dx^2 = M(x). Macaulay method writes unified bending moment expression across entire span using bracket notation [x - a]^n, valid only when x > a. First integration gives slope EI dy/dx = C1 + ... Second integration gives deflection EI y = C1 x + C2 + ... Boundary conditions y(0) = 0 and y(L) = 0 solve for constants C1 and C2 directly."
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": true
     },
     {
-      "chapter": "Theory of Flexure",
-      "text": "Apply Moment-Area Theorems (Mohr's Theorems) and Conjugate Beam Method to calculate the maximum deflection and slope for a cantilever beam carrying an end point load and uniformly distributed load.",
+      "id": "strength-of-materials-12",
+      "question": "A thin walled cylindrical shell made up of copper plate has been filled with a liquid at atmospheric pressure. An additional 80cc of liquid is then pumped into 3 m cylindrical shell whose internal diameter is 300 mm and wall thickness 14 mm. Find the values of pressure developed on the wall of cylinder due to this extra liquid. Take Poisson ratio = 0.36 and Modulus of elasticity E = $10^6$ kg/cm$^2$.",
+      "text": "A thin walled cylindrical shell made up of copper plate has been filled with a liquid at atmospheric pressure. An additional 80cc of liquid is then pumped into 3 m cylindrical shell whose internal diameter is 300 mm and wall thickness 14 mm. Find the values of pressure developed on the wall of cylinder due to this extra liquid. Take Poisson ratio = 0.36 and Modulus of elasticity E = $10^6$ kg/cm$^2$.",
+      "chapter": "Archive Questions",
       "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2081 Chaitra",
-        "2078 Bhadra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Mohr Theorem 1: angle change between two points theta_B - theta_A equals area of M/(EI) diagram between them. Mohr Theorem 2: tangential deviation t_{B/A} equals first moment of M/(EI) diagram area about B. Conjugate beam: real beam fixed support becomes free, free end becomes fixed. Bending moment in conjugate beam equals deflection in real beam; shear force in conjugate beam equals slope in real beam. For cantilever with end load P: theta_max = P L^2 / (2 EI); delta_max = P L^3 / (3 EI)."
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "chapter": "Column Theory",
-      "text": "Derive Euler's Critical Buckling Load for an ideal column with both ends hinged: $P_{cr} = \\frac{\\pi^2 E I}{L^2}$. State effective lengths ($L_e$) for various end conditions and explain the slenderness ratio limitation ($\\lambda = L_e / r_{min}$).",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Governing ODE: EI d^2y/dx^2 + P y = 0 => y(x) = A cos(k x) + B sin(k x), where k = sqrt(P / EI). Boundary conditions y(0) = 0 => A = 0; y(L) = 0 => B sin(k L) = 0 => k L = n pi => P_cr = pi^2 EI / L^2. Effective lengths: both hinged Le = L; one fixed one free Le = 2L; both fixed Le = 0.5L; one fixed one hinged Le = L / sqrt(2) approx 0.707L. Critical stress sigma_cr = pi^2 E / lambda^2; valid only when sigma_cr <= proportional limit (long slender columns, lambda > 80-100 for steel)."
+      "id": "strength-of-materials-13",
+      "question": "Explain pure bending with suitable example. A hollow steel pipe is of $150 \\text{ mm}$ external diameter and $100 \\text{ mm}$ internal diameter. If the stresses in tension and compression do not exceed $150 \\text{ N/mm}^2$ then what longest length of it can be simply supported? Unit weight of steel is $78 \\text{ kN/m}^3$.",
+      "text": "Explain pure bending with suitable example. A hollow steel pipe is of $150 \\text{ mm}$ external diameter and $100 \\text{ mm}$ internal diameter. If the stresses in tension and compression do not exceed $150 \\text{ N/mm}^2$ then what longest length of it can be simply supported? Unit weight of steel is $78 \\text{ kN/m}^3$.",
+      "chapter": "Archive Questions",
+      "marks": "2",
+      "frequency": 7,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "chapter": "Column Theory",
-      "text": "Explain the Rankine-Gordon Formula for intermediate columns: $\\frac{1}{P_R} = \\frac{1}{P_c} + \\frac{1}{P_E}$. Show that $P_R = \\frac{\\sigma_c A}{1 + a (L_e / r)^2}$ and compare with Euler's buckling curve.",
+      "id": "strength-of-materials-14",
+      "question": "a) Find deflection of the beam shown below at middle of the span. Given that: [8]\nModulus of Elasticity of the material is $20000\\text{ MPa}$\nSection of the beam is $150\\text{ mm} \\times 250\\text{ mm}$\nPoint Load $W = 10\\text{ kN}$\n\nb) A steel spherical pressure vessel of radius $1000\\text{ mm}$ having wall thickness of $10\\text{ mm}$ is filled with a fluid and the internal pressure is raised to $1\\text{ MPa}$. Calculate circumferential stresses and change in diameter. Take $E = 200\\text{ GPa}$ and $\\nu = 0.25$.",
+      "text": "a) Find deflection of the beam shown below at middle of the span. Given that: [8]\nModulus of Elasticity of the material is $20000\\text{ MPa}$\nSection of the beam is $150\\text{ mm} \\times 250\\text{ mm}$\nPoint Load $W = 10\\text{ kN}$\n\nb) A steel spherical pressure vessel of radius $1000\\text{ mm}$ having wall thickness of $10\\text{ mm}$ is filled with a fluid and the internal pressure is raised to $1\\text{ MPa}$. Calculate circumferential stresses and change in diameter. Take $E = 200\\text{ GPa}$ and $\\nu = 0.25$.",
+      "chapter": "Archive Questions",
       "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2081 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Combines crushing failure (short columns P_c = sigma_c A) and buckling failure (long columns P_E = pi^2 EI / Le^2). 1/P_R = 1/P_c + 1/P_E => P_R = (P_c * P_E) / (P_c + P_E) = P_c / [1 + P_c / P_E]. Substituting P_E gives Rankine formula P_R = (sigma_c A) / [1 + a (Le / r)^2], where a = sigma_c / (pi^2 E) is Rankine constant. Applicable to both short, intermediate, and long columns."
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": true
     },
     {
-      "chapter": "Thin Walled Vessels",
-      "text": "Derive formulas for Circumferential (Hoop) Stress $\\sigma_h = \\frac{p d}{2t}$ and Longitudinal Stress $\\sigma_l = \\frac{p d}{4t}$ in a thin cylindrical pressure vessel under internal fluid pressure $p$. Calculate maximum shear stress and volumetric strain.",
+      "id": "strength-of-materials-15",
+      "question": "a) A beam of I-section 20cm deep and 10cm wide has flanges 3cm thick and web 2cm thick. It carries a bending moment of 10 kNm at a section. Draw bending stress diagram showing values of maximum stresses in the section of the beam. Calculate the moment carried by the flanges. [8]\n\nb) A hollow 5m long mild steel tube has the internal diameter of 4cm and thickness of 6mm. It is used as a strut with one end fixed and the other hinged. Find crippling load, crippling stress and the safe compressive load for the member if $E = 2 \\times 10^5$ N/mm$^2$ and factor of safety is 3.",
+      "text": "a) A beam of I-section 20cm deep and 10cm wide has flanges 3cm thick and web 2cm thick. It carries a bending moment of 10 kNm at a section. Draw bending stress diagram showing values of maximum stresses in the section of the beam. Calculate the moment carried by the flanges. [8]\n\nb) A hollow 5m long mild steel tube has the internal diameter of 4cm and thickness of 6mm. It is used as a strut with one end fixed and the other hinged. Find crippling load, crippling stress and the safe compressive load for the member if $E = 2 \\times 10^5$ N/mm$^2$ and factor of safety is 3.",
+      "chapter": "Archive Questions",
       "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2078 Kartik"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Thin cylinder has t/d < 1/20. Hoop stress: balance bursting force p * d * L against resisting force 2 * sigma_h * t * L => sigma_h = p d / (2t). Longitudinal stress: balance end pressure p * pi d^2 / 4 against wall tension sigma_l * pi d t => sigma_l = p d / (4t) = sigma_h / 2. Maximum in-plane shear stress tau_max = (sigma_h - sigma_l)/2 = p d / (8t); absolute max shear = sigma_h / 2 = p d / (4t). Volumetric strain Delta V / V = 2 epsilon_h + epsilon_l = (p d / 4t E)(5 - 4 nu)."
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": true
     },
     {
-      "chapter": "Principal Stress Analysis in 2D Planes",
-      "text": "Derive expressions for Principal Stresses ($\\sigma_1, \\sigma_2$), maximum shear stress $\\tau_{max} = \\frac{\\sigma_1 - \\sigma_2}{2}$, and principal plane angle ($\\theta_p$) for a 2D stress element ($\\sigma_x, \\sigma_y, \\tau_{xy}$). Draw and explain Mohr's Circle of Stresses.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2081 Chaitra",
-        "2076 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Normal stress on inclined plane at angle theta: sigma_theta = (sigma_x + sigma_y)/2 + (sigma_x - sigma_y)/2 cos(2 theta) + tau_xy sin(2 theta). Shear stress tau_theta = -(sigma_x - sigma_y)/2 sin(2 theta) + tau_xy cos(2 theta). Setting d sigma / d theta = 0 gives tan(2 theta_p) = 2 tau_xy / (sigma_x - sigma_y). Principal stresses sigma_{1,2} = (sigma_x + sigma_y)/2 +/- sqrt[((sigma_x - sigma_y)/2)^2 + tau_xy^2]. Mohr circle: center at ((sigma_x + sigma_y)/2, 0), radius R = tau_max."
+      "id": "strength-of-materials-16",
+      "question": "a) Derive a relation between Young's modulus, bulk modulus and Poisson's ratio. [6]\n\nb) An I section beam (symmetrical) has $200\\text{mm}$ wide flanges and overall depth $500\\text{mm}$. Each flange is $25\\text{mm}$ thick and the web is $20\\text{mm}$ thick. Determine (i) the maximum bending moment that should be imposed in the section if the tensile or the compressive stress is not to exceed $40 \\text{ N/mm}^2$ (ii) What percentage of the moment is resisted by flanges and web?",
+      "text": "a) Derive a relation between Young's modulus, bulk modulus and Poisson's ratio. [6]\n\nb) An I section beam (symmetrical) has $200\\text{mm}$ wide flanges and overall depth $500\\text{mm}$. Each flange is $25\\text{mm}$ thick and the web is $20\\text{mm}$ thick. Determine (i) the maximum bending moment that should be imposed in the section if the tensile or the compressive stress is not to exceed $40 \\text{ N/mm}^2$ (ii) What percentage of the moment is resisted by flanges and web?",
+      "chapter": "Archive Questions",
+      "marks": "10",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": true
     },
     {
-      "chapter": "Simple Stress and Strain",
-      "text": "Explain Theories of Failure for isotropic ductile and brittle materials: Maximum Principal Stress Theory (Rankine), Maximum Shear Stress Theory (Tresca), and Maximum Distortion Energy Theory (von Mises).",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2077 Magh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Predicts yielding/fracture under multi-axial stress. Rankine: failure occurs when max principal stress sigma_1 >= sigma_y (accurate for brittle materials: cast iron, concrete). Tresca: yielding occurs when max shear stress tau_max = (sigma_1 - sigma_3)/2 >= sigma_y / 2 (conservative for ductile materials). Von Mises: yielding occurs when distortion energy per unit volume exceeds yield value in simple tension: (sigma1 - sigma2)^2 + (sigma2 - sigma3)^2 + (sigma3 - sigma1)^2 >= 2 sigma_y^2 (most accurate for ductile metals)."
+      "id": "strength-of-materials-17",
+      "question": "Derive an expression for power transmitted by the shaft if a force $F$ acts tangentially on a shaft of radius $R$. A solid bar of metal $50\\text{mm}$ in diameter and $200 \\text{ mm}$ in length is tested under a tension of $10 \\text{ kN}$ load producing an elongation of $0.0051 \\text{ mm}$. The angle of twist is $1^\\circ$ when subjected to torque of $4 \\text{ kNm}$. Determine the value of Poisson's ratio for the shaft material.",
+      "text": "Derive an expression for power transmitted by the shaft if a force $F$ acts tangentially on a shaft of radius $R$. A solid bar of metal $50\\text{mm}$ in diameter and $200 \\text{ mm}$ in length is tested under a tension of $10 \\text{ kN}$ load producing an elongation of $0.0051 \\text{ mm}$. The angle of twist is $1^\\circ$ when subjected to torque of $4 \\text{ kNm}$. Determine the value of Poisson's ratio for the shaft material.",
+      "chapter": "Archive Questions",
+      "marks": "3",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "chapter": "Simple Stress and Strain",
-      "text": "Derive the relationships between Elastic Constants: Young's Modulus of Elasticity ($E$), Shear Modulus ($G$), Bulk Modulus ($K$), and Poisson's Ratio ($\\nu$): $E = 2G(1 + \\nu) = 3K(1 - 2\\nu)$.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2081 Chaitra",
-        "2078 Bhadra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Consider unit cube subjected to hydrostatic stress sigma: volumetric strain epsilon_v = 3 epsilon_x = 3 [sigma/E - 2 nu sigma/E] = 3 sigma (1 - 2 nu) / E. By definition bulk modulus K = sigma / epsilon_v = E / [3 (1 - 2 nu)] => E = 3K(1 - 2 nu). For pure shear tau, state of stress is equivalent to tensile and compressive stresses tau at 45 deg. Principal strain epsilon_1 = tau/E + nu tau/E = (tau / 2G) => E = 2G(1 + nu). Combining yields G = 3K(1 - 2 nu) / [2 (1 + nu)]."
+      "id": "strength-of-materials-18",
+      "question": "A cylindrical shell of $260\\text{mm}$ external diameter $2.5\\text{ m}$ length and $5\\text{mm}$ wall thickness is subjected to internal pressure of $1.60\\text{ MPa}$. Calculate the change in diameter, length and volume of the cylinder if the cylinder has a longitudinal joint ($85\\%$ efficiency) and circumferential joint ($65\\%$ efficiency). Take Young's modulus $= 200\\text{GPa}$ and Poisson's ratio $= 0.3$",
+      "text": "A cylindrical shell of $260\\text{mm}$ external diameter $2.5\\text{ m}$ length and $5\\text{mm}$ wall thickness is subjected to internal pressure of $1.60\\text{ MPa}$. Calculate the change in diameter, length and volume of the cylinder if the cylinder has a longitudinal joint ($85\\%$ efficiency) and circumferential joint ($65\\%$ efficiency). Take Young's modulus $= 200\\text{GPa}$ and Poisson's ratio $= 0.3$",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "chapter": "Simple Stress and Strain",
-      "text": "Calculate Thermal Stresses and strains developed in a composite bar made of copper and steel components rigidly connected together at both ends when subjected to a uniform temperature change $\\Delta T$.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Coefficient of thermal expansion of copper alpha_c > alpha_s (steel). Free thermal expansion Delta L_c = L alpha_c Delta T > Delta L_s = L alpha_s Delta T. Rigid connection forces equal final elongation Delta L: steel is pulled into tension (stress sigma_s), copper is pushed into compression (stress sigma_c). Equilibrium: P_s = P_c => sigma_s A_s = sigma_c A_c. Compatibility: Delta L_c - sigma_c L / E_c = Delta L_s + sigma_s L / E_s. Solve simultaneous equations for sigma_s and sigma_c."
+      "id": "strength-of-materials-19",
+      "question": "a) Prove that the limiting plastic moment of a rectangular beam made of elastoplastic material is 1.5 times the maximum elastic moment. [6]\n\nb) A 5m long simply supported beam has 30mm maximum deflection due to a 800N transverse load applied at the center of the beam. Determine the buckling load if the same beam of 5m length is used as a column with one end fixed and other end hinged.",
+      "text": "a) Prove that the limiting plastic moment of a rectangular beam made of elastoplastic material is 1.5 times the maximum elastic moment. [6]\n\nb) A 5m long simply supported beam has 30mm maximum deflection due to a 800N transverse load applied at the center of the beam. Determine the buckling load if the same beam of 5m length is used as a column with one end fixed and other end hinged.",
+      "chapter": "Archive Questions",
+      "marks": "10",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": true
     },
     {
-      "chapter": "Geometric Properties of Sections",
-      "text": "State the Parallel Axis Theorem and Perpendicular Axis Theorem. Calculate the centroid and second moments of area ($I_{xx}, I_{yy}$) of an asymmetrical T-section or channel section.",
-      "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2081 Chaitra",
-        "2076 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Parallel axis theorem: I_x = I_G + A d^2, where I_G is moment of inertia about centroidal axis, d is distance between parallel axes. Perpendicular axis theorem (for planar laminas): I_z = I_x + I_y. For T-section (flange b x tf, web tw x hw): find centroid y_bar = (A1 y1 + A2 y2) / (A1 + A2). Compute I_xx = (b tf^3 / 12 + A1 d1^2) + (tw hw^3 / 12 + A2 d2^2). I_yy = (tf b^3 / 12) + (hw tw^3 / 12)."
+      "id": "strength-of-materials-20",
+      "question": "a) Show that hollow shaft is more strong than solid shaft when material, weight and length are same. [4]\n\nb) A solid circular shaft transmits $75\\text{ kW}$ power at $200\\text{ RPM}$. Calculate the shaft diameter, if the twist in the shaft is not to exceed $1^\\circ$ in $2\\text{ meters}$ length of shaft, and shear stress is limited to $50\\text{ MN/m}^2$. Take $G = 100\\text{ GN/m}^2$.",
+      "text": "a) Show that hollow shaft is more strong than solid shaft when material, weight and length are same. [4]\n\nb) A solid circular shaft transmits $75\\text{ kW}$ power at $200\\text{ RPM}$. Calculate the shaft diameter, if the twist in the shaft is not to exceed $1^\\circ$ in $2\\text{ meters}$ length of shaft, and shear stress is limited to $50\\text{ MN/m}^2$. Take $G = 100\\text{ GN/m}^2$.",
+      "chapter": "Archive Questions",
+      "marks": "3",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     },
     {
-      "chapter": "Theory of Flexure",
-      "text": "Draw the Shear Force Diagram (SFD) and Bending Moment Diagram (BMD) for a simply supported beam with an overhang carrying a uniformly distributed load and point loads. Identify points of zero shear, maximum positive/negative bending moments, and points of contraflexure.",
+      "id": "strength-of-materials-21",
+      "question": "Discuss shaft in series and parallel on the basis of total angle of twist and torsion. A hollow steel shaft $20\\text{ cm}$ in internal diameter and $30\\text{ cm}$ external diameter is to be replaced by a solid alloy shaft. If the tensional rigidity is same for both the shafts, determine the ratio of polar moduli. G for steel is equal to $2.5\\text{ times G for alloy}$.",
+      "text": "Discuss shaft in series and parallel on the basis of total angle of twist and torsion. A hollow steel shaft $20\\text{ cm}$ in internal diameter and $30\\text{ cm}$ external diameter is to be replaced by a solid alloy shaft. If the tensional rigidity is same for both the shafts, determine the ratio of polar moduli. G for steel is equal to $2.5\\text{ times G for alloy}$.",
+      "chapter": "Archive Questions",
       "marks": "8",
-      "years": [
-        "2082 Bhadra",
-        "2080 Chaitra",
-        "2078 Kartik"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "1) Calculate support reactions using static equilibrium equations sum F_y = 0 and sum M = 0. 2) Formulate SF equations across each span segment; SF is constant under point load, slopes linearly under UDL. 3) Find section where SF = 0 (critical section of maximum bending moment). 4) Formulate BM equations (linear under point loads, parabolic under UDL). 5) Find point of contraflexure where M(x) = 0, indicating curvature reversal from sagging to hogging."
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "strength-of-materials-22",
+      "question": "Clarify the basic difference between torsion and bending. A hollow shaft $20 \\text{ cm}$ internal diameter and $30\\text{cm}$ external diameter is to be replaced by a solid alloy shaft. If the polar modulus has the same value for both, calculate the diameter of the solid shaft and the ratio of torsional rigidities. G for steel = 2.5 times G for alloy.",
+      "text": "Clarify the basic difference between torsion and bending. A hollow shaft $20 \\text{ cm}$ internal diameter and $30\\text{cm}$ external diameter is to be replaced by a solid alloy shaft. If the polar modulus has the same value for both, calculate the diameter of the solid shaft and the ratio of torsional rigidities. G for steel = 2.5 times G for alloy.",
+      "chapter": "Archive Questions",
+      "marks": "2",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "strength-of-materials-23",
+      "question": "A cylindrical shell of length $4\\text{m}$ internal diameter $300\\text{mm}$ and wall thickness of $12\\text{mm}$ is initially filled with water at atmospheric pressure. Find the increase in volume if the water is pumped to increase the internal pressure to $6\\text{N/mm}^2$. Take $E=2.10\\times 10^5\\text{N/mm}^2$, $v=0.3$ and $K=2100\\text{ N/mm}^2$.",
+      "text": "A cylindrical shell of length $4\\text{m}$ internal diameter $300\\text{mm}$ and wall thickness of $12\\text{mm}$ is initially filled with water at atmospheric pressure. Find the increase in volume if the water is pumped to increase the internal pressure to $6\\text{N/mm}^2$. Take $E=2.10\\times 10^5\\text{N/mm}^2$, $v=0.3$ and $K=2100\\text{ N/mm}^2$.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "strength-of-materials-24",
+      "question": "A steel bar of 2.5 cm diameter when subjected to a torque of 300N produces an angle of twist of 1.35 degrees in the length of 25cm. The same bar when subjected to tension elongates 0.01cm in length of 15cm under a load of 70KN. Deduce the value of poisson's ratio for the material.",
+      "text": "A steel bar of 2.5 cm diameter when subjected to a torque of 300N produces an angle of twist of 1.35 degrees in the length of 25cm. The same bar when subjected to tension elongates 0.01cm in length of 15cm under a load of 70KN. Deduce the value of poisson's ratio for the material.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "strength-of-materials-25",
+      "question": "a) A solid circular compression member 50mm in diameter is to be replaced by a hollow circular section of the same material. Find the size of the hollow section, if internal diameter is 0.8 times, the external diameter. [8]\n\nb) Describe the Mohr's circle for stress.",
+      "text": "a) A solid circular compression member 50mm in diameter is to be replaced by a hollow circular section of the same material. Find the size of the hollow section, if internal diameter is 0.8 times, the external diameter. [8]\n\nb) Describe the Mohr's circle for stress.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "strength-of-materials-26",
+      "question": "A round bar fixed at bottom and free at top has a length of $3\\text{ m}$. Determine the buckling load for the bar if the load is applied axially on top. If a horizontal force of $15\\text{ kN}$ at top can produces a horizontal deflection of $35\\text{ mm}$.",
+      "text": "A round bar fixed at bottom and free at top has a length of $3\\text{ m}$. Determine the buckling load for the bar if the load is applied axially on top. If a horizontal force of $15\\text{ kN}$ at top can produces a horizontal deflection of $35\\text{ mm}$.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "strength-of-materials-27",
+      "question": "A hollow steel shaft having 10 cm outer diameter and 7 cm inside diameter is rotating at a speed of 300 rpm. If the permissible shear stress is 80 N/mm$^2$ and the maximum torque is 1.3 times the mean torque. Determine the power transmitted by the shaft.",
+      "text": "A hollow steel shaft having 10 cm outer diameter and 7 cm inside diameter is rotating at a speed of 300 rpm. If the permissible shear stress is 80 N/mm$^2$ and the maximum torque is 1.3 times the mean torque. Determine the power transmitted by the shaft.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "strength-of-materials-28",
+      "question": "Mention the limitations of Euler's formula for buckling. Derive the relation of crippling load for a long column with one end hinged and other end fixed.",
+      "text": "Mention the limitations of Euler's formula for buckling. Derive the relation of crippling load for a long column with one end hinged and other end fixed.",
+      "chapter": "Archive Questions",
+      "marks": "2",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "strength-of-materials-29",
+      "question": "Derive an expression for the volumetric strain of a thin walled cylindrical vessel with its length 'L' internal diameter 'd' and thickness 't'.",
+      "text": "Derive an expression for the volumetric strain of a thin walled cylindrical vessel with its length 'L' internal diameter 'd' and thickness 't'.",
+      "chapter": "Archive Questions",
+      "marks": "7",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "strength-of-materials-30",
+      "question": "Derive the Euler's formula for the end support condition one end fixed and another end hinged.",
+      "text": "Derive the Euler's formula for the end support condition one end fixed and another end hinged.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "strength-of-materials-31",
+      "question": "Explain the different types of stresses in thin walled cylinders.",
+      "text": "Explain the different types of stresses in thin walled cylinders.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 6,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "strength-of-materials-32",
+      "question": "a) A thin cylindrical shell 4m long and thickness 1.5cm is of 1.5cm internal diameter. Determine the change in length and diameter if the shell is subjected to an internal pressure of $25N/mm^2$. $E=2.05 \\times 10^5 N/mm^2$ and poisson's ratio=0.3. [6]\n\nb) A cantilever beam 3m in length is subjected to load as shown below. Determine maximum bending stress at 25mm below from the top surface of the beam. [8]\n\nc) A round bar is clamped at bottom and free at top. Its effective length is 2m. A horizontal force of 300N at top produces a horizontal deflection of 20mm. Determine the buckling load for the bar if the load is applied axially on top.",
+      "text": "a) A thin cylindrical shell 4m long and thickness 1.5cm is of 1.5cm internal diameter. Determine the change in length and diameter if the shell is subjected to an internal pressure of $25N/mm^2$. $E=2.05 \\times 10^5 N/mm^2$ and poisson's ratio=0.3. [6]\n\nb) A cantilever beam 3m in length is subjected to load as shown below. Determine maximum bending stress at 25mm below from the top surface of the beam. [8]\n\nc) A round bar is clamped at bottom and free at top. Its effective length is 2m. A horizontal force of 300N at top produces a horizontal deflection of 20mm. Determine the buckling load for the bar if the load is applied axially on top.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 5,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": true
+    },
+    {
+      "id": "strength-of-materials-33",
+      "question": "a) A horizontal shaft securely fixed at each ends has a free length of $11.25\\text{ m}$. Viewed from end \"A\" of the shaft, axial couples of $30\\text{ KN.m}$ clockwise and $37.5\\text{ KN.m}$ counter clockwise act on the shaft at a distance $4.5\\text{ m}$ and $7.5\\text{ m}$ from left respectively. Determine the end fixing couples in magnitude and direction and find the diameter of shaft (solid) for a maximum shearing stress of $60\\text{ N/mm}^2$. [10]\n\nb) Derive the bending equation $\\left[ \\frac{\\sigma}{y} = \\frac{M}{I} = \\frac{E}{R} \\right]$",
+      "text": "a) A horizontal shaft securely fixed at each ends has a free length of $11.25\\text{ m}$. Viewed from end \"A\" of the shaft, axial couples of $30\\text{ KN.m}$ clockwise and $37.5\\text{ KN.m}$ counter clockwise act on the shaft at a distance $4.5\\text{ m}$ and $7.5\\text{ m}$ from left respectively. Determine the end fixing couples in magnitude and direction and find the diameter of shaft (solid) for a maximum shearing stress of $60\\text{ N/mm}^2$. [10]\n\nb) Derive the bending equation $\\left[ \\frac{\\sigma}{y} = \\frac{M}{I} = \\frac{E}{R} \\right]$",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 5,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
+    },
+    {
+      "id": "strength-of-materials-34",
+      "question": "a) A hollow steel shaft of $10\\text{cm}$ outer diameter and $7\\text{cm}$ internal diameter is rotating with a speed of $300\\text{rpm}$. If the permissible shearing stress for the material is $80\\text{MN/m}^2$ and maximum torque is $1.3$ times the mean torque, determine the power transmitted by the shaft. [6]\n\nb) A horizontal beam $4\\text{m}$ long simply supported at ends carries a uniformly distributed load of $30\\text{KN/m}$ over the whole span along with a concentrated load of $40\\text{KN}$ at its T-section mid span. The beam is of T-section with web $30\\text{cm} \\times 3\\text{cm}$ and flange $18\\text{cm} \\times 4\\text{cm}$ making overall depth of $34\\text{cm}$. Find the maximum tensile and compressive stresses if the flange is at the top and horizontal. [8]\n\nc) Prove with Euler’s formula that critical load for a steel column with both ends hinged is equal to $\\frac{\\pi^2 EI}{\\ell^2}$, where all parameters have their usual meanings.",
+      "text": "a) A hollow steel shaft of $10\\text{cm}$ outer diameter and $7\\text{cm}$ internal diameter is rotating with a speed of $300\\text{rpm}$. If the permissible shearing stress for the material is $80\\text{MN/m}^2$ and maximum torque is $1.3$ times the mean torque, determine the power transmitted by the shaft. [6]\n\nb) A horizontal beam $4\\text{m}$ long simply supported at ends carries a uniformly distributed load of $30\\text{KN/m}$ over the whole span along with a concentrated load of $40\\text{KN}$ at its T-section mid span. The beam is of T-section with web $30\\text{cm} \\times 3\\text{cm}$ and flange $18\\text{cm} \\times 4\\text{cm}$ making overall depth of $34\\text{cm}$. Find the maximum tensile and compressive stresses if the flange is at the top and horizontal. [8]\n\nc) Prove with Euler’s formula that critical load for a steel column with both ends hinged is equal to $\\frac{\\pi^2 EI}{\\ell^2}$, where all parameters have their usual meanings.",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 5,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": true
+    },
+    {
+      "id": "strength-of-materials-35",
+      "question": "a) Determine the maximum bending stress in the beam shown in figure below. [10]\n\nb) A hollow mild steel tube is 5 m long and 4 cm internal diameter. Thickness of tube is 8 mm and it is used as a strut with both ends hinged. Determine critical load and safe load on the strut. Take $E = 2.1 \\times 10^5 \\text{ N/mm}^2$ F.O.S = 3",
+      "text": "a) Determine the maximum bending stress in the beam shown in figure below. [10]\n\nb) A hollow mild steel tube is 5 m long and 4 cm internal diameter. Thickness of tube is 8 mm and it is used as a strut with both ends hinged. Determine critical load and safe load on the strut. Take $E = 2.1 \\times 10^5 \\text{ N/mm}^2$ F.O.S = 3",
+      "chapter": "Archive Questions",
+      "marks": "6",
+      "frequency": 5,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": true
+    },
+    {
+      "id": "strength-of-materials-36",
+      "question": "a) Determine deflection at points B and C and slope at points A and D. [8]\n\nb) A straight bar $1.5\\text{ m}$ long and $12\\text{ mm} \\times 5\\text{ mm}$ in section is mounted on a test machine and is loaded axially till it buckles. Assuming Euler's formula for both ends hinged, estimate maximum central deflection before it attains the yield point at $290\\text{ N/mm}^2$.\nTake $E = 2 \\times 10^5\\text{ MPa}$",
+      "text": "a) Determine deflection at points B and C and slope at points A and D. [8]\n\nb) A straight bar $1.5\\text{ m}$ long and $12\\text{ mm} \\times 5\\text{ mm}$ in section is mounted on a test machine and is loaded axially till it buckles. Assuming Euler's formula for both ends hinged, estimate maximum central deflection before it attains the yield point at $290\\text{ N/mm}^2$.\nTake $E = 2 \\times 10^5\\text{ MPa}$",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 5,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": true
+    },
+    {
+      "id": "strength-of-materials-37",
+      "question": "a) Derive euler's column formula for critical load of a column with both ends hinged. [8]\n\nb) Determine the slope and deflection at the free end of the cantilever beam shown in figure below.\n\n$E = 200 \\text{ KN/mm}^2$",
+      "text": "a) Derive euler's column formula for critical load of a column with both ends hinged. [8]\n\nb) Determine the slope and deflection at the free end of the cantilever beam shown in figure below.\n\n$E = 200 \\text{ KN/mm}^2$",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 5,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": true
+    },
+    {
+      "id": "strength-of-materials-38",
+      "question": "a) A simply supported beam of span 5m loaded with udl 4 kN/m. Determine the maximum value of bending stress 15 cm above the base of the cross section. The cross section is T-section as shown in figure. [8]\n\nb) Derive an expression for the Euler's formula for crippling load on a column with both ends fixed.",
+      "text": "a) A simply supported beam of span 5m loaded with udl 4 kN/m. Determine the maximum value of bending stress 15 cm above the base of the cross section. The cross section is T-section as shown in figure. [8]\n\nb) Derive an expression for the Euler's formula for crippling load on a column with both ends fixed.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 5,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": true
+    },
+    {
+      "id": "strength-of-materials-39",
+      "question": "a) Define torsional rigidity. A hollow steel shaft of 10 cm outer diameter and 7 cm internal diameter is rotating with a speed of 300 rpm. If the permissible shearing stress for the material is $80 \\text{ MN/m}^2$, determine the torque and compare the strength of this hollow shaft with that of solid shaft of same material, weight and length. [8]\n\nb) A simply supported I-beam of flange $40 \\text{ cm} \\times 6 \\text{ cm}$ each and web $60 \\text{ cm} \\times 6 \\text{ cm}$, is used over a span of 6 m. It carries a uniformly distributed load of intensity $25\\text{kN/m}$ over its entire length. Find the maximum stress induced in the beam at the flange-web junction due to bending.",
+      "text": "a) Define torsional rigidity. A hollow steel shaft of 10 cm outer diameter and 7 cm internal diameter is rotating with a speed of 300 rpm. If the permissible shearing stress for the material is $80 \\text{ MN/m}^2$, determine the torque and compare the strength of this hollow shaft with that of solid shaft of same material, weight and length. [8]\n\nb) A simply supported I-beam of flange $40 \\text{ cm} \\times 6 \\text{ cm}$ each and web $60 \\text{ cm} \\times 6 \\text{ cm}$, is used over a span of 6 m. It carries a uniformly distributed load of intensity $25\\text{kN/m}$ over its entire length. Find the maximum stress induced in the beam at the flange-web junction due to bending.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 5,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": true
+    },
+    {
+      "id": "strength-of-materials-40",
+      "question": "a) A thin walled cylindrical pressure vessel of 1m diameter and 8mm thick is filled with water at atmosphere pressure. Additional water is pumped and the internal pressure is raised to 10 N/mm$^2$. Find principal stresses, maximum shear stress in the wall of the vessel material, $E = 200,000$ N/mm$^2$, $\\nu = 0.3$. For water, $K = 2100$ N/mm$^2$. [8]\n\nb) Determine the internal and external diameters of a hollow shaft to transmit a power of 30 kW at 240 rpm if the shear stress must not exceed 100 MPa. The outside diameter is to be twice the inside diameter.",
+      "text": "a) A thin walled cylindrical pressure vessel of 1m diameter and 8mm thick is filled with water at atmosphere pressure. Additional water is pumped and the internal pressure is raised to 10 N/mm$^2$. Find principal stresses, maximum shear stress in the wall of the vessel material, $E = 200,000$ N/mm$^2$, $\\nu = 0.3$. For water, $K = 2100$ N/mm$^2$. [8]\n\nb) Determine the internal and external diameters of a hollow shaft to transmit a power of 30 kW at 240 rpm if the shear stress must not exceed 100 MPa. The outside diameter is to be twice the inside diameter.",
+      "chapter": "Archive Questions",
+      "marks": "8",
+      "frequency": 5,
+      "years": [],
+      "examSessions": [],
+      "isDiagram": false
     }
   ],
-  "chapters": [
-    "Simple Stress and Strain",
-    "Geometric Properties of Sections",
-    "Principal Stress Analysis in 2D Planes",
-    "Principal Strain Analysis",
-    "Thin Walled Vessels",
-    "Torsion",
-    "Theory of Flexure",
-    "Column Theory"
+  "yearWisePapers": [
+    {
+      "session": "2082 Shrawan",
+      "year": "2082",
+      "month": "Shrawan",
+      "examType": "Back",
+      "totalMarks": 22,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Write down the stepwise procedure (with) sketch for the determination of stresses in inclined plane for general stresses conditions ($\\sigma_x, \\sigma_y$ and $\\tau_{xy}$ are given) using the Mohr's circle method.",
+          "marks": "8",
+          "chapter": "Principal Stress Analysis in 2D Planes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "A seamless spherical vessel of $2.5\\text{ m}$ internal diameter and $8\\text{ mm}$ thick is filled with a fluid under the pressure until its volume increases by $300\\text{ cm}^3$. Calculate the pressure exerted by the fluid on the vessel. Take $E = 2.10 \\times 10^5\\text{ N/mm}^2, v = 0.3$.",
+          "marks": "6",
+          "chapter": "Thin Walled Vessels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive the expression for the Euler's formula for crippling load on a column of length L with both ends fixed.",
+          "marks": "8",
+          "chapter": "Archive Questions",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Bhadra",
+      "year": "2082",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 27,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Derive the relation between Young’s Modulus ($E$) and Shear Modulus ($G$). [4]\n(b) A C.I. flat, $300\\text{ mm}$ long and of $30\\text{ mm} \\times 50\\text{ mm}$ uniform section, is acted upon by the following forces uniformly distributed over the respective cross-section; $25\\text{ kN}$ in the direction of length (tensile); $350\\text{ kN}$ in the direction of the width (compressive); and $200\\text{ kN}$ in the direction of thickness (tensile). Determine the change in dimensions and volume of the flat. Take $E = 140\\text{ GN/m}^2 , and$ Poisson’s ratio ($\\nu$) = $1/4$. [6]\n(c) A rigid bar is supported by three rods at one end in the same vertical plane and equidistant. The other end of rods is rigidly fixed. The outer rods are of brass and of length $600\\text{ mm}$ and diameter $30\\text{ mm}$. The central rod is of steel of $900\\text{ mm}$ length and of $37.5\\text{ mm}$ diameter. Calculate the forces in the bars due to $a^n$ applied force $100\\text{ kN} , if$ the bar remains horizontal after the load has been applied. Take $E_s / E_b = 2$.",
+          "marks": "4",
+          "chapter": "Simple Stress and Strain",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Define hoop and longitudinal stress. Prove that longitudinal stress is half of the circumferential stress for the thin cylinder with neat sketch.",
+          "marks": "6",
+          "chapter": "Thin Walled Vessels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) A solid circular shaft is subjected to a torque $120 \\text{ Nm}$. Determine the diameter if the allowable shear stress is $100 \\text{ N/mm}^2$ and the allowable angle of twist is $3^\\circ$ per $10$ diameter length of the shaft. $G = 10^5 \\text{ N/mm}^2$. [8]\n(b) Prove that the torque transmitted by the hollow shaft is greater than the solid shaft of same weight, material and length.",
+          "marks": "3",
+          "chapter": "Torsion",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Derive pure bending equation. [4]\n\nb) A cantilever beam $4\\text{m}$ carries an uniformly distributed load of $50\\text{kN/m}$ over the whole span. The beam is of T-section with web $45\\text{cm} \\times 3\\text{cm}$ and flange is $35\\text{cm} \\times 5\\text{cm}$ making overall depth of $50\\text{cm}$. Find the maximum tensile and compressive stresses if the flange is at the bottom and horizontal. Also determine the stress and its nature at $3\\text{ cm}$ from top.",
+          "marks": "6",
+          "chapter": "Theory of Flexure",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Derive Euler's formula of critical load for a steel column with one end fixed and other hinged. Derive the condition of no tension in rectangular column.",
+          "marks": "8",
+          "chapter": "Column Theory",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Baishakh",
+      "year": "2082",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 17,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Derive an expression for power transmitted by the shaft if a force $F$ acts tangentially on a shaft of radius $R$. A solid bar of metal $50\\text{mm}$ in diameter and $200 \\text{ mm}$ in length is tested under a tension of $10 \\text{ kN}$ load producing an elongation of $0.0051 \\text{ mm}$. The angle of twist is $1^\\circ$ when subjected to torque of $4 \\text{ kNm}$. Determine the value of Poisson's ratio for the shaft material.",
+          "marks": "3",
+          "chapter": "Simple Stress and Strain",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Explain physical meaning of moment of inertia. Derive $a^n$ expression for principal axes and principal moments of inertia.",
+          "marks": "12",
+          "chapter": "Geometric Properties of Sections",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Explain pure bending with suitable example. A hollow steel pipe is of $150 \\text{ mm}$ external diameter and $100 \\text{ mm}$ internal diameter. If the stresses in tension and compression do not exceed $150 \\text{ N/mm}^2$ then what longest length of it can be simply supported? Unit weight of steel is $78 \\text{ kN/m}^3$.",
+          "marks": "2",
+          "chapter": "Theory of Flexure",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Bhadra",
+      "year": "2081",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 20,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Derive $a^n$ expression for stresses on $a^n$ inclined plane of $a^n$ element subjected to axial loads (like stress) on two perpendicular direction (Bi-axial loading). Also explain how Mohr suggests finding it graphically.",
+          "marks": "6",
+          "chapter": "Principal Stress Analysis in 2D Planes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "A thin cylindrical shell is $4\\text{m}$ long and has $1\\text{m}$ internal diameter and $12\\text{mm}$ metal thickness. Calculate the maximum intensity of shear produced and change in dimension of shell if it subjected to $a^n$ internal pressure of $2\\text{N/mm}^2$. Take $E= 2 \\times 10^5 \\text{ N/mm}^2$ and $\\nu = 0.3$.",
+          "marks": "6",
+          "chapter": "Thin Walled Vessels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Clarify the basic difference between torsion and bending. A hollow shaft $20 \\text{ cm}$ internal diameter and $30\\text{cm}$ external diameter is to be replaced by a solid alloy shaft. If the polar modulus has the same value for both, calculate the diameter of the solid shaft and the ratio of torsional rigidities. G for steel = 2.5 times G for alloy.",
+          "marks": "2",
+          "chapter": "Torsion",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Differentiate short column and long column based on failure mechanism. Calculate the maximum value of slenderness ratio for a column for which Euler's formula is valid. Take E=210GPa and $\\sigma_{cr} = 330\\text{MPa}$.",
+          "marks": "6",
+          "chapter": "Column Theory",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Ashwin",
+      "year": "2081",
+      "month": "Ashwin",
+      "examType": "Regular",
+      "totalMarks": 30,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) Derive the expression for the extension in a bar of length $l , uniformly$ tapering from a diameter $d_1$ at one end to a diameter $d_2$ at another end subjected to $a^n$ axial tensile load $P$. [7]\n(b) A reinforced concrete column is $300\\text{mm} \\times 300\\text{mm}$ in section. The column is provided with 8 bars of $20\\text{ mm}$ diameter. The column carries a load of $360\\text{kN}$. Find the stresses in concrete and the steel bars. Take $E_s = 2.1 \\times 10^5\\text{ N/mm}^2$ and $E_c = 0.14 \\times 10^5\\text{ N/mm}^2$.",
+          "marks": "5",
+          "chapter": "Simple Stress and Strain",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "(a) State the state of stress at a point in a two-dimensional strained material is as shown in the figure. Determine the magnitude of principal stresses, orientation of principal planes and maximum shear stress. Also, determine resultant stress on the plane of maximum shear stress. [7]\n\nb) Draw the Mohr's circle diagram for plane strain and show on it the value of principal strains.",
+          "marks": "5",
+          "chapter": "Principal Stress Analysis in 2D Planes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) A thin cylindrical shell is $4\\text{ m}$ long and has $2\\text{m}$ internal diameter and $14\\text{ mm}$ metal thickness. Calculate the maximum intensity of shear produced and change in dimension of shell if it subjected to $a^n$ internal pressure of $3\\text{ N/mm}^2$. Take $E = 2\\times 10^5\\text{ N/mm}^2$ and $v = 0.3$. [4]\n(b) Mention the physical meaning of torsional rigidity. A solid shaft transmits $250\\text{ kW}$ at $100\\text{ rpm}$. If the shear stress is not to exceed $75\\text{ MPa} , what$ should be the diameter of the shaft. Let the shaft is replaced by a hollow shaft whose internal is $0.6$ times the outer diameter. Determine the size and percentage saving in weight if the maximum shear stress being the same.",
+          "marks": "2",
+          "chapter": "Thin Walled Vessels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Derive a relation between Young's modulus, bulk modulus and Poisson's ratio. [6]\n\nb) An I section beam (symmetrical) has $200\\text{mm}$ wide flanges and overall depth $500\\text{mm}$. Each flange is $25\\text{mm}$ thick and the web is $20\\text{mm}$ thick. Determine (i) the maximum bending moment that should be imposed in the section if the tensile or the compressive stress is not to exceed $40 \\text{ N/mm}^2$ (ii) What percentage of the moment is resisted by flanges and web?",
+          "marks": "10",
+          "chapter": "Theory of Flexure",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Derive Euler's formula of critical load for a steel column with one end fixed and other hinged. Derive the condition of no tension in rectangular column.",
+          "marks": "8",
+          "chapter": "Column Theory",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Bhadra",
+      "year": "2080",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 28,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "(a) The rigid bars PQ and RS shown in figure are supported by pins at P and R and the two rods. Determine the maximum force $W$ that can be applied, if its vertical movement is limited to 5mm under load. [8]\n\nb) A reinforced concrete column of size $230\\text{ mm} \\times 400\\text{ mm}$ has 8 steel bars of $12\\text{ mm}$ diameter and subjected to $a^n$ axial compression of $600\\text{ kN} , find$ the stresses developed in steel and concrete, take modular ratio as $18.67$.",
+          "marks": "6",
+          "chapter": "Simple Stress and Strain",
+          "isDiagram": true
+        },
+        {
+          "qNum": 2,
+          "text": "(a) Find the principal moment of inertia, direction and position for the given section shown in figure. (All dimensions are in mm.) [12]\n\nb) The cylindrical shell is 1 m long and has diameter 200 mm. The metal thickness is 6 mm, it has spherical ends. Calculate the change in volume, if the internal pressure is raised to $1.5 \\text{ N/mm}^2$. Take $E = 2 \\times 10^5 \\text{ N/mm}^2$ and Poisson's ratio is 0.25.",
+          "marks": "6",
+          "chapter": "Geometric Properties of Sections",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "At a point in a material under stress, the intensity of resultant stress on a plane EF is $50\\text{ MN/m}^2$ (tensile) inclined at $30^\\circ$ to the normal to that plane. The stress on another plane at right angles to this plane is $30\\text{ MN/m}^2$. [8]\nDetermine:\n\n(i) The resultant stress on the plane GE.\n(ii) The principal stresses and the principle planes.\n(iii) Maximum shear stress and its plane.\n\nb) A solid shaft is to transmit $300\\text{ kW}$ at $120\\text{ rpm}$. If the shear stress is not to exceed $100\\text{ MPa} , Find$ the diameter of the shaft, What percent saving in weight would be obtained if this shaft were replaced by a hollow one whose internal diameter equals $0.6$ of the external diameter, the length, material and maximum allowable shear stress being the same?",
+          "marks": "8",
+          "chapter": "Principal Stress Analysis in 2D Planes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Determine deflection at points B and C and slope at points A and D. [8]\n\nb) A straight bar $1.5\\text{ m}$ long and $12\\text{ mm} \\times 5\\text{ mm}$ in section is mounted on a test machine and is loaded axially till it buckles. Assuming Euler's formula for both ends hinged, estimate maximum central deflection before it attains the yield point at $290\\text{ N/mm}^2$.\nTake $E = 2 \\times 10^5\\text{ MPa}$",
+          "marks": "8",
+          "chapter": "Theory of Flexure",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Bhadra",
+      "year": "2079",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 20,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "\n(a) The tensile stress at a point on two perpendicular planes along X-axis and Y-axis are $120\\text{ MN/m}^2$ and $60\\text{ MN/m}^2$ respectively. Find principle stresses and their direction. Based on obtained data, verify stress invariant concept. What will be the intensity of stress which acting alone can produce same maximum strain? Take poisson’s ratio = $1/4$. [10]\n(b) A cylindrical vessel $3\\text{ m}$ long and $600\\text{ mm}$ diameter with $10\\text{ mm}$ thick plates is subjected to $a^n$ internal pressure of $3\\text{ MPa}$. Calculate the change in volume of the vessel. Take $E = 200\\text{ GPa}$ and Poisson’s ratio = $0.3$ for the vessel material.",
+          "marks": "4",
+          "chapter": "Principal Stress Analysis in 2D Planes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\n(a) A solid shaft is to transmit $300\\text{ kW}$ at $120\\text{ rpm}$. Determine the diameter if the allowable shear stress is $100\\text{ N/mm}^2$ and the allowable angle of twist is $30^\\circ$ per diameter length of the shaft. Assume that the maximum torque is $1.3$ times the mean torque. Take $G = 10^5\\text{ MPa}$. [8]\n(b) What is pure bending? Explain with suitable example. Determine the maximum deflection in a simply supported beam AB of length L, carrying uniformly distributed load of intensity $w\\text{ kN/m}$ over whole span.",
+          "marks": "8",
+          "chapter": "Torsion",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "A round bar fixed at bottom and free at top has a length of $3\\text{ m}$. Determine the buckling load for the bar if the load is applied axially on top. If a horizontal force of $15\\text{ kN}$ at top can produces a horizontal deflection of $35\\text{ mm}$.",
+          "marks": "8",
+          "chapter": "Column Theory",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Baishakh",
+      "year": "2079",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 18,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What is Mohr's stress circle? Write step wise step procedure for Mohr's circle construction to determine stress on $a^n$ inclined plane, the plane acting with \"like normal stresses\". Verify it with the expression obtained analytically.",
+          "marks": "8",
+          "chapter": "Principal Stress Analysis in 2D Planes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Compare thin and thick walled vessel. A thin cylindrical shell is made of steel plates. It has hemispherical ends having diameter $300\\text{ mm}$ and wall thickness $2\\text{ mm}$. Determine the thickness of cylindrical portion if there is no distortion of the junction under pressure. Take $E_s = 200\\text{ GPa}$ and poisson's ratio  = 0$.3$.",
+          "marks": "2",
+          "chapter": "Thin Walled Vessels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Discuss shaft in series and parallel on the basis of total angle of twist and torsion. A hollow steel shaft $20\\text{ cm}$ in internal diameter and $30\\text{ cm}$ external diameter is to be replaced by a solid alloy shaft. If the tensional rigidity is same for both the shafts, determine the ratio of polar moduli. G for steel is equal to $2.5\\text{ times G for alloy}$.",
+          "marks": "8",
+          "chapter": "Torsion",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Kartik",
+      "year": "2078",
+      "month": "Kartik",
+      "examType": "Back",
+      "totalMarks": 22,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "(a) Determine principal moment of inertia and orientation of principal axes passing through the centroid. All dimensions are in centimeter. [12]\n\nb) In a thin walled cylindrical vessel show that the volumetric strain is equal to two times circumferential strain plus longitudinal strain.",
+          "marks": "6",
+          "chapter": "Geometric Properties of Sections",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "(a) Determine the principal stresses, orientation of principal planes, maximum shearing and normal stress on the plane of maximum shear stress. Verify the results by drawing Mohr's Circle. [8]\n\nb) A steel shaft transmits 200 horse power at 150 rpm. If the shaft is 110 mm in diameter, find the torque in the shaft and the maximum shear stress developed. Also, determine the angle of twist for the shaft in the length 5 m. Take $G = 90 \\text{ GN/m}^2$. (1 hp = 746 watt)",
+          "marks": "8",
+          "chapter": "Principal Stress Analysis in 2D Planes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) A simply supported timber joist of 6 m span has to carry uniformly distributed load 5 kN/m over its entire length and a point load of 15 kN at its center. Determine the dimensions of the rectangular joist if the maximum permissible stress in bending is 12 N/mm². [8]\n(b) Derive $a^n$ expression for Euler's formula for crippling load of a column of length 'L' with one end fixed and other hinged condition.",
+          "marks": "8",
+          "chapter": "Theory of Flexure",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2076 Chaitra",
+      "year": "2076",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 27,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Direct stresses of $100\\text{ MPa}$ in tension and $60\\text{ MPa}$ in compression are applied to $a^n$ elastic material at a certain point on planes right angles to each other. If the maximum stress in not to exceed $150\\text{ MPa} , to$ what shearing stress can the material be subjected at the point? What is then the maximum shearing stress in the material? Also find the magnitude of the principal stresses and its planes.",
+          "marks": "7",
+          "chapter": "Principal Stress Analysis in 2D Planes",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "A cylindrical shell of $260\\text{mm}$ external diameter $2.5\\text{ m}$ length and $5\\text{mm}$ wall thickness is subjected to internal pressure of $1.60\\text{ MPa}$. Calculate the change in diameter, length and volume of the cylinder if the cylinder has a longitudinal joint ($85\\%$ efficiency) and circumferential joint ($65\\%$ efficiency). Take Young's modulus $= 200\\text{GPa}$ and Poisson's ratio $= 0.3$",
+          "marks": "6",
+          "chapter": "Thin Walled Vessels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "A simply supported beam of span $10\\text{ m}$ is to carry uniformly distributed load $20\\text{ KN/m}$ over the entire span and a point load $50\\text{ KN}$ at its center. Determine the dimension of beam, if the beam is rectangular in cross section and the maximum permissible stress in bending tension and compression are $120\\text{ N/mm}^2$ and $100\\text{ N/mm}^2$ respectively. Take depth of beam two times its breadth.",
+          "marks": "8",
+          "chapter": "Theory of Flexure",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Define buckling load and effective length of column and derive a Euler's formula for crippling load of a column of length L with its both ends hinged condition.",
+          "marks": "6",
+          "chapter": "Column Theory",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Ashwin",
+      "year": "2075",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 23,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "(a) For the state of plane stress shown in figure below determine. [8]\\n(i) principal stresses\\n(ii) orientation of principal planes\\n(iii) maximum shearing stress\\n(iv) normal stress on the plane of maximum shear stress\n\nb) Derive torsional equation. $\\frac{T}{J} = \\frac{\\tau_s}{R} = \\frac{G\\phi}{L}$",
+          "marks": "8",
+          "chapter": "Principal Stress Analysis in 2D Planes",
+          "isDiagram": true
+        },
+        {
+          "qNum": 2,
+          "text": "Derive an expression for the volumetric strain of a thin walled cylindrical vessel with its length 'L' internal diameter 'd' and thickness 't'.",
+          "marks": "7",
+          "chapter": "Thin Walled Vessels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) A simply supported beam of span 5m loaded with udl 4 kN/m. Determine the maximum value of bending stress 15 cm above the base of the cross section. The cross section is T-section as shown in figure. [8]\n\nb) Derive an expression for the Euler's formula for crippling load on a column with both ends fixed.",
+          "marks": "8",
+          "chapter": "Theory of Flexure",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2074 Ashwin",
+      "year": "2074",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 20,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "(a) A block of steel $300\\text{ mm} \\times 150\\text{ mm} \\times 100\\text{ mm}$ is subjected to axial loads as shown in figure below. Find the change in the dimensions of the bar and change in volume for the material of the block. Take $E_s = 200\\text{ GN/m}^2$ and poisson's ratio $(\\sigma) = 0.30$. [8]\n\nb) What is the stress concentration? What effect is produced in brittle material due to stress concentration?",
+          "marks": "4",
+          "chapter": "Simple Stress and Strain",
+          "isDiagram": true
+        },
+        {
+          "qNum": 2,
+          "text": "(a) For $a^n$ infinitesimal element normal and shearing stress in the two mutually perpendicular planes are shown in figure below. Determine the normal and shearing stress on the inclined plane at $a^n$ angle of $30^\\circ$ with vertical. Also calculate principal stresses their planes, maximum shear stress and their planes. Verify your result using Mohr's circle. [12]\n\nb) Prove that longitudinal stress is half of the circumferential stress for the thin cylinder with neat sketch.",
+          "marks": "4",
+          "chapter": "Principal Stress Analysis in 2D Planes",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "a) A horizontal shaft securely fixed at each ends has a free length of $11.25\\text{ m}$. Viewed from end \"A\" of the shaft, axial couples of $30\\text{ KN.m}$ clockwise and $37.5\\text{ KN.m}$ counter clockwise act on the shaft at a distance $4.5\\text{ m}$ and $7.5\\text{ m}$ from left respectively. Determine the end fixing couples in magnitude and direction and find the diameter of shaft (solid) for a maximum shearing stress of $60\\text{ N/mm}^2$. [10]\n\nb) Derive the bending equation $\\left[ \\frac{\\sigma}{y} = \\frac{M}{I} = \\frac{E}{R} \\right]$",
+          "marks": "6",
+          "chapter": "Torsion",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Derive the expression for the Euler's formula for crippling load on a column of length L with both ends fixed.",
+          "marks": "6",
+          "chapter": "Column Theory",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2073 Shrawan",
+      "year": "2073",
+      "month": "Shrawan",
+      "examType": "Back",
+      "totalMarks": 32,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "(a) Find the forces in each members of the bar system shown in figure below. Take cross sectional area of each bar as $6 \\text{ cm}^2$ and modulus of elasticity $E$ as $2 \\times 10^5 \\text{ N/mm}^2$. [8]\n\nb) The principle stresses at a point in a bar are $100 \\text{ MPa}$ tensile and $40 \\text{ MPa}$ compressive. Find the normal stress shears and resultant stress on a plane inclined at $60^\\circ$ to the axis of major principal stress.",
+          "marks": "8",
+          "chapter": "Simple Stress and Strain",
+          "isDiagram": true
+        },
+        {
+          "qNum": 2,
+          "text": "(a) Obtain the principle moment of inertia and draw principle axes for the plane figure given below. [8]\n\nb) Derive the relation $\\frac{M}{I} = \\frac{\\sigma}{y} = \\frac{E}{R}$",
+          "marks": "8",
+          "chapter": "Geometric Properties of Sections",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "\n(a) A water pipe $500 \\text{ mm}$ internal diameter contains water at a pressure head $100 \\text{ m}$. If the unit weight of water is $10 \\text{ KN/m}^3$ and allowable stress of pipe material is $20 \\text{ N/mm}^2$. Calculate the thickness of the pipe. [8]\n(b) A solid circular shaft is subjected to a torque $120 \\text{ Nm}$. Determine the diameter if the allowable shear stress is $100 \\text{ N/mm}^2$ and the allowable angle of twist is $30^\\circ$ per $10$ diameter length of the shaft. $G = 10^5 \\text{ N/mm}^2$.",
+          "marks": "8",
+          "chapter": "Thin Walled Vessels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Derive euler's column formula for critical load of a column with both ends hinged. [8]\n\nb) Determine the slope and deflection at the free end of the cantilever beam shown in figure below.\n\n$E = 200 \\text{ KN/mm}^2$",
+          "marks": "8",
+          "chapter": "Column Theory",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2072 Chaitra",
+      "year": "2072",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 23,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "(a) ABC is a rigid bar, wire BD is made of aluminum and EC is made of steel. Determine the stresses in rods and reactions at A. Take $A_{al} = 4 \\text{ mm}^2 , A_{st} = 2 \\text{ mm}^2 , E_{al} = 72 \\text{ KN/m}^2 , E_{st} = 210 \\text{ KN/m}^2$. [8]\n\nb) Derive a relation between Young's modulus of elasticity, Shear modulus and bulk modulus.",
+          "marks": "8",
+          "chapter": "Simple Stress and Strain",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "(a) Determine principal moment of inertia and draw orientation of principal axes of the figure shown in figure below. [12]\n\nb) Define principle moment inertia.",
+          "marks": "4",
+          "chapter": "Geometric Properties of Sections",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "(a) The state of stress in a two dimensional stress system is as shown in figure below.\nDetermine the principal stresses and orientation of principal planes. [8]\n\nb) Prove that the longitudinal stress at thin cylinders is equal to the half of circumferential stress at that thin cylinders.",
+          "marks": "8",
+          "chapter": "Principal Stress Analysis in 2D Planes",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) A solid circular shaft is subjected to a torque $120 \\text{ Nm}$. Determine the diameter if the allowable shear stress is $100 \\text{ N/mm}^2$ and the allowable angle of twist is $3^\\circ$ per $10$ diameter length of the shaft. $G = 10^5 \\text{ N/mm}^2$. [8]\n(b) Prove that the torque transmitted by the hollow shaft is greater than the solid shaft of same weight, material and length.",
+          "marks": "3",
+          "chapter": "Torsion",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2071 Chaitra",
+      "year": "2071",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 30,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Derive a relation between Young's modulus of elasticity and bulk modulus.",
+          "marks": "8",
+          "chapter": "Simple Stress and Strain",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "A thin walled cylindrical shell made up of copper plate has been filled with a liquid at atmospheric pressure. An additional 80cc of liquid is then pumped into 3 m cylindrical shell whose internal diameter is 300 mm and wall thickness 14 mm. Find the values of pressure developed on the wall of cylinder due to this extra liquid. Take Poisson ratio = 0.36 and Modulus of elasticity E = $10^6$ kg/cm$^2$.",
+          "marks": "8",
+          "chapter": "Thin Walled Vessels",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "A hollow steel shaft having 10 cm outer diameter and 7 cm inside diameter is rotating at a speed of 300 rpm. If the permissible shear stress is 80 N/mm$^2$ and the maximum torque is 1.3 times the mean torque. Determine the power transmitted by the shaft.",
+          "marks": "8",
+          "chapter": "Torsion",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Define buckling load and effective length of column and derive a Euler's formula for crippling load of a column of length L with its both ends hinged condition.",
+          "marks": "6",
+          "chapter": "Column Theory",
+          "isDiagram": false
+        }
+      ]
+    }
   ]
 }

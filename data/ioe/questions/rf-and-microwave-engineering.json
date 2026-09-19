@@ -1,373 +1,1056 @@
 {
   "subject": "RF and Microwave Engineering",
-  "subjectCode": "ENEX 411",
+  "semester": "1",
   "questions": [
     {
-      "chapter": "Microwave Passive Components and Scattering Matrix",
-      "text": "Why are Scattering Parameters (S-parameters) preferred over Z, Y, and h parameters at microwave frequencies? Define the S-matrix for a two-port and three-port network and prove that for a lossless reciprocal network, $[S]^T = [S]$ and $[S]^\\dagger [S] = [I]$.",
-      "marks": "8",
+      "id": "rf-and-microwave-engineering-1",
+      "question": "Find the basic differences of the systems having following sets S-Matrix. [4]\n\na) $S_{11} = 0.65 \\angle 146^\\circ, S_{12} = 0.12 \\angle 46^\\circ, S_{21} = 2.30 \\angle 44^\\circ, S_{22} = 0.17 \\angle -172^\\circ$\n\nb) $S_{11} = 0.30 \\angle -134^\\circ, S_{12} = 0.03 \\angle 46^\\circ, S_{21} = 2.20 \\angle 44^\\circ, S_{22} = 0.10 \\angle -172^\\circ$\nUsing the given S-Parameters given in (a), determine the stability and compare maximum power gains for unilateral and bilateral modes using supplied formulas.",
+      "text": "Find the basic differences of the systems having following sets S-Matrix. [4]\n\na) $S_{11} = 0.65 \\angle 146^\\circ, S_{12} = 0.12 \\angle 46^\\circ, S_{21} = 2.30 \\angle 44^\\circ, S_{22} = 0.17 \\angle -172^\\circ$\n\nb) $S_{11} = 0.30 \\angle -134^\\circ, S_{12} = 0.03 \\angle 46^\\circ, S_{21} = 2.20 \\angle 44^\\circ, S_{22} = 0.10 \\angle -172^\\circ$\nUsing the given S-Parameters given in (a), determine the stability and compare maximum power gains for unilateral and bilateral modes using supplied formulas.",
+      "chapter": "General",
+      "marks": "12",
+      "frequency": 1,
       "years": [
-        "2080 Chaitra",
-        "2079 Chaitra",
-        "2073 Magh"
+        "2082 Bhadra"
       ],
-      "frequency": 3
+      "examSessions": [
+        "2082 Bhadra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Introduction to Microwave Engineering and Transmission Lines",
-      "text": "A load impedance $Z_L = 110 + j110\\ \\Omega$ (or $75 + j100\\ \\Omega$) is connected to a $50\\ \\Omega$ lossless transmission line. Using the Smith Chart, determine: (a) Voltage Reflection Coefficient $\\Gamma_L$, (b) Standing Wave Ratio (SWR), (c) Input impedance at a distance $0.2\\lambda$ from load, and (d) Locations of voltage maxima and minima.",
-      "marks": "8",
-      "years": [
-        "2080 Chaitra",
-        "2079 Chaitra",
-        "2073 Magh"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Introduction to Microwave Engineering and Transmission Lines",
-      "text": "Design a single-stub (shunt or series, open or short-circuited) impedance matching network to match an arbitrary load impedance to a $50\\ \\Omega$ transmission line using the Smith Chart. Calculate the stub position from the load and stub electrical length.",
-      "marks": "8",
-      "years": [
-        "2080 Chaitra",
-        "2079 Chaitra",
-        "2071 Magh"
-      ],
-      "frequency": 3
-    },
-    {
-      "chapter": "Waveguides and Cavity Resonators",
-      "text": "Derive electromagnetic field equations for TE and TM modes in a Rectangular Waveguide. Define and derive expressions for cutoff frequency ($f_c$), guide wavelength ($\\lambda_g$), phase velocity ($v_p$), and wave impedance ($Z_{\\text{TE}}$ and $Z_{\\text{TM}}$). Explain why $TE_{10}$ is the dominant mode.",
+      "id": "rf-and-microwave-engineering-2",
+      "question": "A GaAs MESFET has the following S-parameters measured with a $50\\Omega$ resistance at $10\\text{ GHz}$:\n$$S_{11} = 0.55 \\angle -160^\\circ \\quad S_{12} = 0.04 \\angle 10^\\circ$$$$S_{21} = 4.82 \\angle 180^\\circ \\quad S_{22} = 0.45 \\angle -30^\\circ$$\nDetermine the stability and compare maximum power gains for unilateral and bilateral modes using supplied formulas. $$",
+      "text": "A GaAs MESFET has the following S-parameters measured with a $50\\Omega$ resistance at $10\\text{ GHz}$:\n$$S_{11} = 0.55 \\angle -160^\\circ \\quad S_{12} = 0.04 \\angle 10^\\circ$$$$S_{21} = 4.82 \\angle 180^\\circ \\quad S_{22} = 0.45 \\angle -30^\\circ$$\nDetermine the stability and compare maximum power gains for unilateral and bilateral modes using supplied formulas. $$",
+      "chapter": "General",
       "marks": "10",
+      "frequency": 1,
       "years": [
-        "2080 Chaitra",
-        "2077 Chaitra",
-        "2073 Magh"
+        "2080 Bhadra"
       ],
-      "frequency": 3
+      "examSessions": [
+        "2080 Bhadra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Microwave Passive Components and Scattering Matrix",
-      "text": "Explain the construction, operational principle, and derive the S-matrix of a Magic Tee (Hybrid Tee). Show that the E-arm and H-arm are mutually decoupled, and explain its applications as a duplexer or balanced mixer.",
+      "id": "rf-and-microwave-engineering-3",
+      "question": "For an air-filled rectangular waveguide with a width of $3\\text{ cm}$ and a desired frequency of operation of $6\\text{ GHz}$ (for dominant mode), determine cut-off frequency, cut-off wavelength, group velocity, phase velocity, propagation wavelength in the waveguide and the characteristic impedance. Explain the four basic parameters used to describe the performance of a directional coupler.",
+      "text": "For an air-filled rectangular waveguide with a width of $3\\text{ cm}$ and a desired frequency of operation of $6\\text{ GHz}$ (for dominant mode), determine cut-off frequency, cut-off wavelength, group velocity, phase velocity, propagation wavelength in the waveguide and the characteristic impedance. Explain the four basic parameters used to describe the performance of a directional coupler.",
+      "chapter": "General",
+      "marks": "6",
+      "frequency": 1,
+      "years": [
+        "2080 Baishakh"
+      ],
+      "examSessions": [
+        "2080 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-4",
+      "question": "Why S-parameters are used in high frequencies? The S-matrix of certain microwave network is given as\n$$S = \\begin{bmatrix} 0.4 + j0.5 & j0.6 \\\\ j0.6 & 0.4 - j0.5 \\end{bmatrix}$$\n$$\n\na) Is the network reciprocal?\n\nb) Is the network lossless?\n\nc) What is the return loss at the input?\n\nd) If the input power to the network is 5 watts. What is the reflected power?",
+      "text": "Why S-parameters are used in high frequencies? The S-matrix of certain microwave network is given as\n$$S = \\begin{bmatrix} 0.4 + j0.5 & j0.6 \\\\ j0.6 & 0.4 - j0.5 \\end{bmatrix}$$\n$$\n\na) Is the network reciprocal?\n\nb) Is the network lossless?\n\nc) What is the return loss at the input?\n\nd) If the input power to the network is 5 watts. What is the reflected power?",
+      "chapter": "General",
+      "marks": "3",
+      "frequency": 1,
+      "years": [
+        "2079 Bhadra"
+      ],
+      "examSessions": [
+        "2079 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-5",
+      "question": "A $50\\ \\Omega$ lossless transmission line is required to be matched with the load admittance $0.00813 + j0.0065\\ \\mho$, by a double-stub shunt tuner with separation of $3\\lambda/8$ and the distance of the first stub from the load is $0.01\\lambda$. Calculate the length of each stub by using the smith chart. Write the s-parameter for the matched network. $$",
+      "text": "A $50\\ \\Omega$ lossless transmission line is required to be matched with the load admittance $0.00813 + j0.0065\\ \\mho$, by a double-stub shunt tuner with separation of $3\\lambda/8$ and the distance of the first stub from the load is $0.01\\lambda$. Calculate the length of each stub by using the smith chart. Write the s-parameter for the matched network. $$",
+      "chapter": "General",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2080 Chaitra",
-        "2079 Chaitra",
-        "2076 Bhadra"
+        "2079 Bhadra"
       ],
-      "frequency": 3
+      "examSessions": [
+        "2079 Bhadra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Microwave Passive Components and Scattering Matrix",
-      "text": "Define coupling factor ($C$), directivity ($D$), and isolation ($I$) of a Directional Coupler. Explain the working principle and S-matrix of a two-hole waveguide directional coupler and a Bethe-hole directional coupler.",
-      "marks": "8",
+      "id": "rf-and-microwave-engineering-6",
+      "question": "Calculate the maximum gains of both bilateral and unilateral models of a transistor having the S-parameters of $S_{11} = 0.55\\angle -150^\\circ$, $S_{12} = 0.04\\angle 20^\\circ$, $S_{21} = 2.82\\angle 180^\\circ$ and $S_{22} = 0.45\\angle -30^\\circ$. Sketch a flow chart that describes the microwave amplifier designing procedure.",
+      "text": "Calculate the maximum gains of both bilateral and unilateral models of a transistor having the S-parameters of $S_{11} = 0.55\\angle -150^\\circ$, $S_{12} = 0.04\\angle 20^\\circ$, $S_{21} = 2.82\\angle 180^\\circ$ and $S_{22} = 0.45\\angle -30^\\circ$. Sketch a flow chart that describes the microwave amplifier designing procedure.",
+      "chapter": "General",
+      "marks": "6",
+      "frequency": 1,
       "years": [
-        "2079 Chaitra",
-        "2075 Bhadra",
-        "2073 Bhadra"
+        "2081 Baishakh"
       ],
-      "frequency": 3
+      "examSessions": [
+        "2081 Baishakh"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Microwave Passive Components and Scattering Matrix",
-      "text": "Explain Faraday Rotation in microwave ferrites. Describe the operational principle, internal structure, and scattering matrix of Microwave Isolators and Circulators.",
-      "marks": "8",
-      "years": [
-        "2075 Bhadra",
-        "2073 Magh"
-      ],
-      "frequency": 2
-    },
-    {
-      "chapter": "Microwave Semiconductor Devices",
-      "text": "For a microwave transistor with given S-parameters at $5\\text{ GHz}$, check unconditional stability using Rollet's stability criteria: $K > 1$ and $|\\Delta| < 1$, where $\\Delta = S_{11}S_{22} - S_{12}S_{21}$ and $K = \\frac{1 - |S_{11}|^2 - |S_{22}|^2 + |\\Delta|^2}{2|S_{12}S_{21}|}$. Plot input and output stability circles on the Smith Chart.",
+      "id": "rf-and-microwave-engineering-7",
+      "question": "A broadband microstrip antenna with a load exhibiting reflection coefficient of $0.33 \\angle 66^\\circ$ is connected to a transmission patch having impedance of $75\\ \\Omega$. Design the appropriate matching stubs. Express the appropriate scattering matrix of your designed matched networks.",
+      "text": "A broadband microstrip antenna with a load exhibiting reflection coefficient of $0.33 \\angle 66^\\circ$ is connected to a transmission patch having impedance of $75\\ \\Omega$. Design the appropriate matching stubs. Express the appropriate scattering matrix of your designed matched networks.",
+      "chapter": "General",
       "marks": "10",
+      "frequency": 1,
       "years": [
-        "2080 Chaitra",
-        "2079 Chaitra",
-        "2075 Bhadra",
-        "2071 Magh"
+        "2082 Bhadra"
       ],
-      "frequency": 4
+      "examSessions": [
+        "2082 Bhadra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Microwave Semiconductor Devices",
-      "text": "Design input and output matching networks for a microwave transistor amplifier to achieve maximum transducer power gain ($G_{T,\\max}$) or specified unilateral gain ($G_U$) with matching stubs on a $50\\ \\Omega$ microstrip line.",
+      "id": "rf-and-microwave-engineering-8",
+      "question": "For transistor having following S-parameter $S_{11} = 0.894 \\angle -60.6^\\circ$, $S_{21} = 3.122 \\angle 123.6^\\circ$, $S_{12} = 0.020 \\angle 62.4^\\circ$, $S_{22} = 0.781 \\angle -27.6^\\circ$. Determine the stability and compare maximum power gains for bilateral and unilateral modes. $$",
+      "text": "For transistor having following S-parameter $S_{11} = 0.894 \\angle -60.6^\\circ$, $S_{21} = 3.122 \\angle 123.6^\\circ$, $S_{12} = 0.020 \\angle 62.4^\\circ$, $S_{22} = 0.781 \\angle -27.6^\\circ$. Determine the stability and compare maximum power gains for bilateral and unilateral modes. $$",
+      "chapter": "General",
+      "marks": "5",
+      "frequency": 1,
+      "years": [
+        "2079 Bhadra"
+      ],
+      "examSessions": [
+        "2079 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-9",
+      "question": "Design a double stub shunt tuner to match a load impedance of $Z_L = 60-j80\\Omega$ to a $50\\ \\Omega$ line. The stubs are to be open circuited stubs and are spaced $3\\lambda/8$ apart. Assume the first is $0.4\\ \\lambda$ from the load. Formulate the S-matrix for your design.",
+      "text": "Design a double stub shunt tuner to match a load impedance of $Z_L = 60-j80\\Omega$ to a $50\\ \\Omega$ line. The stubs are to be open circuited stubs and are spaced $3\\lambda/8$ apart. Assume the first is $0.4\\ \\lambda$ from the load. Formulate the S-matrix for your design.",
+      "chapter": "General",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2080 Chaitra",
-        "2079 Chaitra",
-        "2071 Magh"
+        "2080 Baishakh"
       ],
-      "frequency": 3
+      "examSessions": [
+        "2080 Baishakh"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Microwave Tubes (Klystron, TWT, Magnetron)",
-      "text": "What is velocity modulation and bunching effect? Describe the construction, operational principle, and Applegate diagram of a Two-Cavity Klystron amplifier and Reflex Klystron oscillator.",
+      "id": "rf-and-microwave-engineering-10",
+      "question": "Design a double-stub matching network for an antenna operating at 10 GHz, having $\\Gamma = |0.45|\\angle 60^\\circ$ and connected to a 100 Ohm transmission line. Sketch its physical diagram using micro strips. Prepare its S-Matrices before and after the design.",
+      "text": "Design a double-stub matching network for an antenna operating at 10 GHz, having $\\Gamma = |0.45|\\angle 60^\\circ$ and connected to a 100 Ohm transmission line. Sketch its physical diagram using micro strips. Prepare its S-Matrices before and after the design.",
+      "chapter": "General",
       "marks": "10",
+      "frequency": 1,
       "years": [
-        "2080 Chaitra",
-        "2079 Chaitra",
-        "2071 Bhadra"
+        "2082 Baishakh"
       ],
-      "frequency": 3
+      "examSessions": [
+        "2082 Baishakh"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Microwave Tubes (Klystron, TWT, Magnetron)",
-      "text": "Explain the operational principle of a Cavity Magnetron oscillator. Describe electron trajectory under crossed electric and magnetic fields, phase focusing effect, and Hull cutoff magnetic field / Hartree condition.",
+      "id": "rf-and-microwave-engineering-11",
+      "question": "Using following S-parameters: $S_{11}=0.55\\angle -150^\\circ$, $S_{12}=0.04\\angle 20^\\circ$, $S_{21}=2.82\\angle 180^\\circ$ and $S_{22}=0.45\\angle -30^\\circ$, design a microwave amplifier for maximum power gain for both bilateral and unilateral cases.",
+      "text": "Using following S-parameters: $S_{11}=0.55\\angle -150^\\circ$, $S_{12}=0.04\\angle 20^\\circ$, $S_{21}=2.82\\angle 180^\\circ$ and $S_{22}=0.45\\angle -30^\\circ$, design a microwave amplifier for maximum power gain for both bilateral and unilateral cases.",
+      "chapter": "General",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2079 Chaitra",
-        "2074 Bhadra"
+        "2082 Baishakh"
       ],
-      "frequency": 2
+      "examSessions": [
+        "2082 Baishakh"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Microwave Semiconductor Devices",
-      "text": "Explain the transferred electron mechanism (Gunn Effect and Ridley-Watkins-Hilsum theory) in a GaAs Gunn Diode. Describe the formation and drift of high-field dipole domains.",
+      "id": "rf-and-microwave-engineering-12",
+      "question": "A $100\\Omega$ lossless transmission line is terminated with a complex load of $120\\text{-j } 160\\ \\Omega$. Design a single matching stub. Mention all the design steps with proper reasoning. Provide the S-Matrix for both before and after the design.",
+      "text": "A $100\\Omega$ lossless transmission line is terminated with a complex load of $120\\text{-j } 160\\ \\Omega$. Design a single matching stub. Mention all the design steps with proper reasoning. Provide the S-Matrix for both before and after the design.",
+      "chapter": "General",
+      "marks": "5",
+      "frequency": 1,
+      "years": [
+        "2081 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-13",
+      "question": "What is dominant mode in a waveguide? What are the dominant modes for rectangular and circular waveguides? Does a rectangular waveguide of width $2.254\\text{ cm}$ support the propagation of a signal having frequency $6\\text{ GHz}$? $$",
+      "text": "What is dominant mode in a waveguide? What are the dominant modes for rectangular and circular waveguides? Does a rectangular waveguide of width $2.254\\text{ cm}$ support the propagation of a signal having frequency $6\\text{ GHz}$? $$",
+      "chapter": "General",
+      "marks": "1",
+      "frequency": 1,
+      "years": [
+        "2080 Bhadra"
+      ],
+      "examSessions": [
+        "2080 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-14",
+      "question": "Compare radiation fields around a mobile BTS operating at 900 MHz and 1800 MHz frequency bands with their quarter-wavelength antennas. Explain how microwave EMR becomes hazardous to humans; and mention its IEEE safety standard.",
+      "text": "Compare radiation fields around a mobile BTS operating at 900 MHz and 1800 MHz frequency bands with their quarter-wavelength antennas. Explain how microwave EMR becomes hazardous to humans; and mention its IEEE safety standard.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2082 Baishakh"
+      ],
+      "examSessions": [
+        "2082 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-15",
+      "question": "Prove that the lowest cut-off frequency mode in rectangular waveguides operating in TM mode is $\\text{TM}_{11}$. Explain the working principle of any one of circular beam-type microwave cavity-controlled cross-field amplifier.",
+      "text": "Prove that the lowest cut-off frequency mode in rectangular waveguides operating in TM mode is $\\text{TM}_{11}$. Explain the working principle of any one of circular beam-type microwave cavity-controlled cross-field amplifier.",
+      "chapter": "General",
+      "marks": "3",
+      "frequency": 1,
+      "years": [
+        "2082 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Bhadra"
+      ],
+      "isDiagram": true
+    },
+    {
+      "id": "rf-and-microwave-engineering-16",
+      "question": "Compare the behavior of microwave passive components at low frequency bands against microwave bands. Prepare the detail real-world protocols of any three major applications of microwave communication systems.",
+      "text": "Compare the behavior of microwave passive components at low frequency bands against microwave bands. Prepare the detail real-world protocols of any three major applications of microwave communication systems.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2082 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-17",
+      "question": "How is a low pass filter is prototyped based on Butterworth or Chebyshev approximations and converted into other types of filters? Implement a second order high pass filter $\\pi$-section using microstrips. $$",
+      "text": "How is a low pass filter is prototyped based on Butterworth or Chebyshev approximations and converted into other types of filters? Implement a second order high pass filter $\\pi$-section using microstrips. $$",
+      "chapter": "General",
+      "marks": "10",
+      "frequency": 1,
+      "years": [
+        "2080 Bhadra"
+      ],
+      "examSessions": [
+        "2080 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-18",
+      "question": "How is the output of conventional tubes reduced at microwaves due to inter-electrode capacitance, lead inductance and transit time effect? Explain about the construction and working principle of TWT. $$",
+      "text": "How is the output of conventional tubes reduced at microwaves due to inter-electrode capacitance, lead inductance and transit time effect? Explain about the construction and working principle of TWT. $$",
+      "chapter": "General",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2079 Bhadra"
+      ],
+      "examSessions": [
+        "2079 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-19",
+      "question": "Based on their respective operating principles, distinguish between microwave and traditional low frequency systems. Explain why S-parameter based analysis is a must in microwave network analysis.",
+      "text": "Based on their respective operating principles, distinguish between microwave and traditional low frequency systems. Explain why S-parameter based analysis is a must in microwave network analysis.",
+      "chapter": "General",
+      "marks": "5",
+      "frequency": 1,
+      "years": [
+        "2081 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-20",
+      "question": "Design a model of a three-port network and define its characteristic parameters. Prepare the S-Matrix of a rectangular magic tee having shorted both E and H-arms and explain how it behaves.",
+      "text": "Design a model of a three-port network and define its characteristic parameters. Prepare the S-Matrix of a rectangular magic tee having shorted both E and H-arms and explain how it behaves.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2082 Bhadra"
+      ],
+      "examSessions": [
+        "2082 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-21",
+      "question": "Design a double-stub impedance matching network for a load of $\\Gamma = 0.64\\angle 58^\\circ$ connected to a $50\\text{ Ohm}$ transmission line. Prepare the S-Matrix of its matched network.",
+      "text": "Design a double-stub impedance matching network for a load of $\\Gamma = 0.64\\angle 58^\\circ$ connected to a $50\\text{ Ohm}$ transmission line. Prepare the S-Matrix of its matched network.",
+      "chapter": "General",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2079 Chaitra",
-        "2075 Bhadra"
+        "2081 Baishakh"
       ],
-      "frequency": 2
+      "examSessions": [
+        "2081 Baishakh"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Microwave Measurements and Applications",
-      "text": "Explain microwave power measurement using Bolometer bridges (thermistors and barretters) and static calorimeters. Describe the operation and calibration of a Vector Network Analyzer (VNA) for measuring device S-parameters.",
-      "marks": "8",
-      "years": [
-        "2080 Chaitra",
-        "2079 Chaitra",
-        "2076 Bhadra",
-        "2075 Bhadra"
-      ],
-      "frequency": 4
-    },
-    {
-      "chapter": "Microwave Measurements and Applications",
-      "text": "Define Specific Absorption Rate (SAR) and power density. Discuss microwave electromagnetic radiation biological hazards (thermal cataracts, tissue heating) and list major international RF safety standards and practices.",
+      "id": "rf-and-microwave-engineering-22",
+      "question": "Sketch a cross-sectional view of a magnetron having 45 degrees of phase shifts among the adjacent cavities, and explain its functioning as a power amplifier. Explain the bunching effect.",
+      "text": "Sketch a cross-sectional view of a magnetron having 45 degrees of phase shifts among the adjacent cavities, and explain its functioning as a power amplifier. Explain the bunching effect.",
+      "chapter": "General",
       "marks": "6",
+      "frequency": 1,
       "years": [
-        "2080 Chaitra",
-        "2079 Chaitra",
-        "2075 Bhadra",
-        "2073 Bhadra"
+        "2080 Baishakh"
       ],
-      "frequency": 4
+      "examSessions": [
+        "2080 Baishakh"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Microwave Passive Components and Scattering Matrix",
-      "text": "Explain the Insertion Loss method for microwave filter design. Describe Richard's Transformation and Kuroda's Identities for converting lumped element prototype low-pass filters into distributed microstrip transmission line stubs.",
+      "id": "rf-and-microwave-engineering-23",
+      "question": "Explain what are bunching effect and field effect. Describe the working principle of any one microwave high power oscillator, that employs bunching and field effects, with neat diagram.",
+      "text": "Explain what are bunching effect and field effect. Describe the working principle of any one microwave high power oscillator, that employs bunching and field effects, with neat diagram.",
+      "chapter": "General",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2081 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Bhadra"
+      ],
+      "isDiagram": true
+    },
+    {
+      "id": "rf-and-microwave-engineering-24",
+      "question": "Differentiate between lumped and distributed circuit analysis. List out the areas of application of microwave system. Provide detail protocols of two microwave communication systems. $$",
+      "text": "Differentiate between lumped and distributed circuit analysis. List out the areas of application of microwave system. Provide detail protocols of two microwave communication systems. $$",
+      "chapter": "General",
+      "marks": "3",
+      "frequency": 1,
+      "years": [
+        "2080 Bhadra"
+      ],
+      "examSessions": [
+        "2080 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-25",
+      "question": "A $75\\ \\Omega$ coaxial line is terminated with a complex load of $109 + j120\\ \\Omega$. Design a double-stub matching system using short-circuited coaxial lines. Prepare its S-matrix. $$",
+      "text": "A $75\\ \\Omega$ coaxial line is terminated with a complex load of $109 + j120\\ \\Omega$. Design a double-stub matching system using short-circuited coaxial lines. Prepare its S-matrix. $$",
+      "chapter": "General",
       "marks": "8",
+      "frequency": 1,
       "years": [
-        "2079 Chaitra",
-        "2075 Bhadra",
-        "2074 Bhadra",
-        "2073 Magh"
+        "2080 Bhadra"
       ],
-      "frequency": 4
+      "examSessions": [
+        "2080 Bhadra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Introduction to Microwave Engineering and Transmission Lines",
-      "text": "Explain how microwave systems differ from conventional low-frequency lumped circuits. Compare lumped and distributed circuit models, and explain skin depth and dielectric loss at microwave frequencies.",
+      "id": "rf-and-microwave-engineering-26",
+      "question": "Write the electromagnetic field equations of a circular waveguide operating at TE Mode. Explain degenerative and dominant modes of a rectangular waveguide with suitable examples.",
+      "text": "Write the electromagnetic field equations of a circular waveguide operating at TE Mode. Explain degenerative and dominant modes of a rectangular waveguide with suitable examples.",
+      "chapter": "General",
+      "marks": "7",
+      "frequency": 1,
+      "years": [
+        "2082 Baishakh"
+      ],
+      "examSessions": [
+        "2082 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-27",
+      "question": "Explain why insertion loss technique is used to design microwave filters. With proper labeling sketch microwave double-section shunt – arm types microwave LPF using micro strips.",
+      "text": "Explain why insertion loss technique is used to design microwave filters. With proper labeling sketch microwave double-section shunt – arm types microwave LPF using micro strips.",
+      "chapter": "General",
+      "marks": "3",
+      "frequency": 1,
+      "years": [
+        "2080 Baishakh"
+      ],
+      "examSessions": [
+        "2080 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-28",
+      "question": "Discuss the possible RF radiation fields to the public exposers. Explain, what are the international standards and recommended (SARPs) practices to safe from such radiation.",
+      "text": "Discuss the possible RF radiation fields to the public exposers. Explain, what are the international standards and recommended (SARPs) practices to safe from such radiation.",
+      "chapter": "General",
+      "marks": "3",
+      "frequency": 1,
+      "years": [
+        "2080 Baishakh"
+      ],
+      "examSessions": [
+        "2080 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-29",
+      "question": "Explain how microwave medium power is measure with the static and dynamic circulating calorimetry. List all the microwave measurables and their respective measuring tools.",
+      "text": "Explain how microwave medium power is measure with the static and dynamic circulating calorimetry. List all the microwave measurables and their respective measuring tools.",
+      "chapter": "General",
       "marks": "6",
+      "frequency": 1,
       "years": [
-        "2080 Chaitra",
-        "2079 Chaitra",
-        "2073 Magh"
+        "2081 Bhadra"
       ],
-      "frequency": 3
+      "examSessions": [
+        "2081 Bhadra"
+      ],
+      "isDiagram": false
     },
     {
-      "chapter": "Waveguides and Cavity Resonators",
-      "text": "Derive the cut-off frequency $f_c = \\frac{c}{2\\pi}\\sqrt{(m\\pi/a)^2 + (n\\pi/b)^2}$, guide wavelength $\\lambda_g = \\frac{\\lambda_0}{\\sqrt{1 - (f_c/f)^2}}$, and wave impedance for the $TE_{10}$ dominant mode in a rectangular waveguide. Why cannot TEM waves propagate inside a hollow single-conductor waveguide?",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2078 Bhadra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Solves Helmholtz wave equation del_t^2 H_z + k_c^2 H_z = 0 with boundary conditions dH_z/dn = 0 on conducting walls. For TE10 mode (m=1, n=0): f_c = c / (2a). Guide wavelength lambda_g = lambda_0 / sqrt(1 - (f_c/f)^2) > lambda_0. Wave impedance Z_TE = eta / sqrt(1 - (f_c/f)^2). TEM waves require two isolated conductors with different potentials (Laplace equation in cross-section has no non-trivial solution with single equipotential boundary)."
-    },
-    {
-      "chapter": "Waveguides and Cavity Resonators",
-      "text": "Explain Rectangular Cavity Resonators. Derive the resonant frequency formula $f_{mnp} = \\frac{c}{2}\\sqrt{(m/a)^2 + (n/b)^2 + (p/d)^2}$ and quality factor ($Q$) of the dominant $TE_{101}$ mode resonator.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2081 Chaitra",
-        "2077 Magh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Formed by enclosing rectangular waveguide with conducting plates at z = 0 and z = d. Standing wave condition requires length d = p (lambda_g / 2). Resonant frequency f_mnp = (c/2) sqrt((m/a)^2 + (n/b)^2 + (p/d)^2). For dominant TE101 mode: f_101 = (c/2) sqrt((1/a)^2 + (1/d)^2). Quality factor Q = omega W / P_loss measures frequency selectivity; high Q (~10,000) due to large volume-to-surface-area ratio and low wall conduction losses."
-    },
-    {
-      "chapter": "Introduction to Microwave Engineering and Transmission Lines",
-      "text": "Explain Single-Stub and Double-Stub Shunt Impedance Matching using the Smith Chart. For a load $Z_L = 100 + j80\\ \\Omega$ connected to a $50\\ \\Omega$ line, determine the location and length of a short-circuited shunt stub.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Normalized impedance z_L = Z_L / Z_0 = 2 + j1.6. Convert to admittance y_L. Rotate towards generator along SWR circle to intersect 1 + jb circle at distance d. Shunt stub placed at d must provide susceptance -jb to cancel reactive part. Stub length l found on perimeter from short-circuit admittance (infinite conductance y = infty) to -jb. Double stub uses fixed locations separated by 3 lambda / 8, altering stub lengths to match."
-    },
-    {
-      "chapter": "Microwave Passive Components and Scattering Matrix",
-      "text": "Explain the Magic-Tee (Hybrid-Tee) microwave junction. Derive its $4 \\times 4$ Scattering Matrix ($S$-matrix) from symmetry and unitary properties, and explain its applications as an E-H tuner, duplexer, and balanced mixer.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2081 Chaitra",
-        "2078 Kartik"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Combination of E-plane and H-plane tees. Port 1 & 2 collinear, Port 3 H-plane (sum port), Port 4 E-plane (difference port). Symmetry: S13=S23=1/sqrt(2), S14=-S24=1/sqrt(2). Matched ports: S33=S44=0. Unitary property yields S-matrix where power into Port 3 divides equally in-phase to Ports 1 & 2; power into Port 4 divides equally out-of-phase (180 deg) to Ports 1 & 2; Ports 3 and 4 are completely isolated (S34 = S43 = 0)."
-    },
-    {
-      "chapter": "Microwave Passive Components and Scattering Matrix",
-      "text": "Describe Directional Couplers. Define Coupling Factor ($C = 10\\log_{10}(P_1/P_3)$), Directivity ($D = 10\\log_{10}(P_3/P_4)$), and Isolation ($I = 10\\log_{10}(P_1/P_4)$). Explain the Bethe-hole coupler and two-hole directional coupler.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2076 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Four-port passive network that samples portion of forward travelling power. Port 1: Input, Port 2: Through, Port 3: Coupled, Port 4: Isolated. Relation: I = C + D (in dB). Two-hole coupler places two aperture holes spaced lambda_g / 4 apart between waveguides. Forward coupled waves add in phase at Port 3; backward coupled waves travel 2 * (lambda_g / 4) = 180 deg out of phase, canceling completely at Port 4."
-    },
-    {
-      "chapter": "Microwave Passive Components and Scattering Matrix",
-      "text": "Explain Ferrite Microwave Devices: Faraday Rotation Isolators and Circulators. Derive the $3 \\times 3$ S-matrix of an ideal 3-port circulator and explain non-reciprocal phase shift under external DC magnetic bias.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2081 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Ferrites are anisotropic magnetic materials exhibiting gyromagnetic resonance under DC magnetic bias H_0. Faraday rotation rotates plane of polarization non-reciprocally. Isolator transmits forward wave unattenuated, while reflected wave is rotated into resistive absorber vane (infinite reverse attenuation). Ideal 3-port circulator transfers power sequentially 1->2, 2->3, 3->1 with S-matrix having S21=S32=1, all other entries 0."
-    },
-    {
-      "chapter": "Microwave Tubes (Klystron, TWT, Magnetron)",
-      "text": "Describe the Reflex Klystron oscillator. Explain velocity modulation, bunching process with Applegate diagram, repeller voltage modes ($n + 3/4$), electronic tuning, and power output efficiency.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2077 Magh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Single-cavity microwave oscillator tube. Electron beam passes through resonator cavity gap experiencing velocity modulation from RF electric field. Electrons enter retarding space against negative repeller voltage V_r, reflect back, and bunch together. Bunches re-enter cavity gap during positive retarding phase, giving energy to RF field. Optimum bunching occurs when round-trip transit time T = (n + 3/4) T_0 (modes 1 3/4, 2 3/4...)."
-    },
-    {
-      "chapter": "Microwave Tubes (Klystron, TWT, Magnetron)",
-      "text": "Explain the Two-Cavity Klystron amplifier: Bunched electron beam dynamics, bunching parameter, cavity gap transit angle, and RF power amplification mechanism.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2081 Chaitra",
-        "2078 Bhadra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Linear-beam O-type amplifier. Electron gun emits beam. Input cavity (Buncher) sets up RF field velocity-modulating electrons: early electrons accelerated, late electrons decelerated. Field-free drift space allows fast electrons to catch up with slow ones, forming tight electron bunches. Bunched beam passes through output cavity (Catcher), inducing large RF current across catcher gap, delivering amplified power to load."
-    },
-    {
-      "chapter": "Microwave Tubes (Klystron, TWT, Magnetron)",
-      "text": "Explain the Traveling Wave Tube (TWT) amplifier. Describe the slow-wave helical structure, continuous beam-wave interaction, axial phase velocity synchronism, and gain mechanism.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2076 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Broadband microwave amplifier (several GHz bandwidth). Solves klystron bandwidth limits by replacing resonant cavities with continuous slow-wave helical transmission line. Helix slows RF wave axial phase velocity v_p = c * sin(psi) down to match electron beam DC velocity v_0. Continuous interaction over entire tube length causes electrons to decelerate in retarding RF electric fields, transferring kinetic energy to wave and amplifying it exponentially."
-    },
-    {
-      "chapter": "Microwave Tubes (Klystron, TWT, Magnetron)",
-      "text": "Explain the Cylindrical Magnetron oscillator. Describe crossed-field dynamics ($E \\perp B$), Hull cut-off magnetic field, Hartree resonance condition, $\\pi$-mode oscillation, and strapping techniques.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2081 Chaitra",
-        "2079 Chaitra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "High-power cross-field (M-type) microwave oscillator. Radial DC electric field E and axial DC magnetic field B force electrons into cycloidal/epicycloidal paths forming rotating spokes. Hull cut-off magnetic field B_c prevents electrons from reaching anode in absence of RF field. In pi-mode, adjacent resonant cavities oscillate 180 deg out of phase. Strapping connects alternate cavity vanes to stabilize pi-mode against adjacent mode jumping."
-    },
-    {
-      "chapter": "Microwave Semiconductor Devices",
-      "text": "Explain the Gunn Diode oscillator based on the Ridley-Watkins-Hilsum (RWH) transferred electron mechanism. Describe negative differential resistance, GaAs conduction band valleys ($\\Gamma$ and $L$), and high-field domain transit modes.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2078 Kartik"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Bulk semiconductor device without p-n junction (n-type GaAs/InP). Operates via two-valley model: lower central valley has high electron mobility (mu1 ~ 8000 cm^2/Vs), upper satellite valley has low mobility (mu2 ~ 180 cm^2/Vs) separated by Delta E = 0.31 eV. When applied electric field exceeds threshold E_th ~ 3.2 kV/cm, electrons scatter into upper valley, decreasing drift velocity and creating negative differential resistance dv/dE < 0, launching dipole domains."
-    },
-    {
-      "chapter": "Microwave Semiconductor Devices",
-      "text": "Describe IMPATT and TRAPATT avalanche transit-time diodes. Explain impact ionization avalanche breakdown, $90^\\circ$ phase delay, drift transit delay, and dynamic negative resistance generation.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2081 Chaitra",
-        "2077 Magh"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Impact Avalanche Transit Time diode (Read diode p+-n-i-n+). High reverse bias causes impact ionization avalanche breakdown. Avalanche current lags terminal RF voltage by 90 deg. Generated carriers drift across intrinsic region of length W taking transit time tau = W / v_d = T/2, introducing additional 90 deg phase shift. Total 180 deg phase shift creates dynamic negative resistance, delivering RF power up to 100 GHz."
-    },
-    {
-      "chapter": "Microwave Measurements and Applications",
-      "text": "Explain Microwave Power and VSWR Measurements. Describe the Bolometer/Thermistor sensor bridge, slotted line method for measuring high and low VSWR (double minimum method), and frequency meter cavity operation.",
-      "marks": "8",
-      "years": [
-        "2082 Chaitra",
-        "2080 Chaitra",
-        "2078 Bhadra"
-      ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Power measurement: Bolometer/Barretter (positive temp coefficient) or Thermistor (negative temp coefficient) absorbs RF power, changing resistance in balanced Wheatstone bridge; substituted DC bias power measures RF power. VSWR measurement: slotted line with tunable probe detector measures V_max and V_min directly for low VSWR (< 10). For high VSWR (> 10), probe voltage at minimum is sharp: double-minimum method measures width Delta x where power doubles, VSWR = lambda_g / (pi Delta x)."
-    },
-    {
-      "chapter": "Microwave Measurements and Applications",
-      "text": "Explain Microwave Radiation Hazards and IEEE/ICNIRP Safety Standards. Discuss Specific Absorption Rate (SAR in W/kg), thermal and non-thermal biological effects of microwave exposure, and maximum permissible exposure limits.",
+      "id": "rf-and-microwave-engineering-30",
+      "question": "How is a low pass filter prototype based on Butterworth approximation designed using insertion loss method? Implement a low pass filter $\\pi$ section using microstrips. $$",
+      "text": "How is a low pass filter prototype based on Butterworth approximation designed using insertion loss method? Implement a low pass filter $\\pi$ section using microstrips. $$",
+      "chapter": "General",
       "marks": "6",
+      "frequency": 1,
       "years": [
-        "2082 Chaitra",
-        "2081 Chaitra",
-        "2079 Chaitra"
+        "2079 Bhadra"
       ],
-      "frequency": 3,
-      "frequencyTier": "High",
-      "solutionOutline": "Biological tissue absorbs microwave energy through dipolar water molecule relaxation and ionic conduction. Thermal effects: tissue heating, cataracts in eyes (avascular lens cannot dissipate heat), male sterility. SAR = sigma |E|^2 / (2 rho) in W/kg. Standards (IEEE C95.1 / ICNIRP) limit SAR to 1.6 W/kg for mobile handsets over 1g of tissue, and 5 mW/cm^2 power density for occupational environments."
+      "examSessions": [
+        "2079 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-31",
+      "question": "Find the unique differences between microwave and conventional low frequency systems. Mention detail specifications/protocols of any five microwave communication system.",
+      "text": "Find the unique differences between microwave and conventional low frequency systems. Mention detail specifications/protocols of any five microwave communication system.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2082 Baishakh"
+      ],
+      "examSessions": [
+        "2082 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-32",
+      "question": "Write short notes on: (Any Two) $[2\\times 4]$\n\na) Multi-cavity Klystron Amplifier\n\nb) Circulating Calorimetry\n\nc) Microwave Amplifier Design Flow and Stability Analysis",
+      "text": "Write short notes on: (Any Two) $[2\\times 4]$\n\na) Multi-cavity Klystron Amplifier\n\nb) Circulating Calorimetry\n\nc) Microwave Amplifier Design Flow and Stability Analysis",
+      "chapter": "General",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2082 Baishakh"
+      ],
+      "examSessions": [
+        "2082 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-33",
+      "question": "Using proper S-Matrices, mention the properties of a Hybrid-Tee in the situation of (a) terminated E-arm, (b) terminated H-arm and (c) terminated co-planner arms.",
+      "text": "Using proper S-Matrices, mention the properties of a Hybrid-Tee in the situation of (a) terminated E-arm, (b) terminated H-arm and (c) terminated co-planner arms.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2082 Baishakh"
+      ],
+      "examSessions": [
+        "2082 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-34",
+      "question": "Compare the behavior of circuits for Low frequency/ Conventional and RF/ Microwave bands. Classify microwave frequency band and its application in major areas. $$",
+      "text": "Compare the behavior of circuits for Low frequency/ Conventional and RF/ Microwave bands. Classify microwave frequency band and its application in major areas. $$",
+      "chapter": "General",
+      "marks": "3",
+      "frequency": 1,
+      "years": [
+        "2079 Bhadra"
+      ],
+      "examSessions": [
+        "2079 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-35",
+      "question": "Classify microwave propagation fields of a GSM BTS and its radiation parameters. Explain what non-ionizing SAR is and how it becomes hazardous to human body.",
+      "text": "Classify microwave propagation fields of a GSM BTS and its radiation parameters. Explain what non-ionizing SAR is and how it becomes hazardous to human body.",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2081 Baishakh"
+      ],
+      "examSessions": [
+        "2081 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-36",
+      "question": "Briefly explain the need of S-parameter and its properties in microwave analysis. Explain three port network parameters using an example of E-plane Tee. $$",
+      "text": "Briefly explain the need of S-parameter and its properties in microwave analysis. Explain three port network parameters using an example of E-plane Tee. $$",
+      "chapter": "General",
+      "marks": "4",
+      "frequency": 1,
+      "years": [
+        "2080 Bhadra"
+      ],
+      "examSessions": [
+        "2080 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-37",
+      "question": "Write short notes on: (Any Two) [2\\times 4]\n\na) Stability analysis of a microwave amplifier\n\nb) Double-channel Bolometer\n\nc) Sketch of an Immittance Chart",
+      "text": "Write short notes on: (Any Two) [2\\times 4]\n\na) Stability analysis of a microwave amplifier\n\nb) Double-channel Bolometer\n\nc) Sketch of an Immittance Chart",
+      "chapter": "General",
+      "marks": "8",
+      "frequency": 1,
+      "years": [
+        "2081 Baishakh"
+      ],
+      "examSessions": [
+        "2081 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-38",
+      "question": "List out the major RF/MW measurement parameters. How the VSWR of any microwave transmitter (In case of $\\text{VSWR} > 10$) can be measured? Explain. $$",
+      "text": "List out the major RF/MW measurement parameters. How the VSWR of any microwave transmitter (In case of $\\text{VSWR} > 10$) can be measured? Explain. $$",
+      "chapter": "General",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2079 Bhadra"
+      ],
+      "examSessions": [
+        "2079 Bhadra"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-39",
+      "question": "How is microwave frequency band classified by the IEEE? Enumerate the basic advantages and disadvantages of microwaves compared to lower frequencies.",
+      "text": "How is microwave frequency band classified by the IEEE? Enumerate the basic advantages and disadvantages of microwaves compared to lower frequencies.",
+      "chapter": "General",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2080 Baishakh"
+      ],
+      "examSessions": [
+        "2080 Baishakh"
+      ],
+      "isDiagram": false
+    },
+    {
+      "id": "rf-and-microwave-engineering-40",
+      "question": "Illustrate an example of a single section series arm passive BPF using microstrip. How are microwave filters designed using Insertion Loss Method?",
+      "text": "Illustrate an example of a single section series arm passive BPF using microstrip. How are microwave filters designed using Insertion Loss Method?",
+      "chapter": "General",
+      "marks": "2",
+      "frequency": 1,
+      "years": [
+        "2081 Bhadra"
+      ],
+      "examSessions": [
+        "2081 Bhadra"
+      ],
+      "isDiagram": false
     }
   ],
-  "chapters": [
-    "Introduction to Microwave Engineering and Transmission Lines",
-    "Waveguides and Cavity Resonators",
-    "Microwave Passive Components and Scattering Matrix",
-    "Microwave Semiconductor Devices",
-    "Microwave Tubes (Klystron, TWT, Magnetron)",
-    "Microwave Measurements and Applications"
+  "yearWisePapers": [
+    {
+      "session": "2082 Bhadra",
+      "year": "2082",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 33,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Compare the behavior of microwave passive components at low frequency bands against microwave bands. Prepare the detail real-world protocols of any three major applications of microwave communication systems.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "A broadband microstrip antenna with a load exhibiting reflection coefficient of $0.33 \\angle 66^\\circ$ is connected to a transmission patch having impedance of $75\\ \\Omega$. Design the appropriate matching stubs. Express the appropriate scattering matrix of your designed matched networks.",
+          "marks": "10",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Design a model of a three-port network and define its characteristic parameters. Prepare the S-Matrix of a rectangular magic tee having shorted both E and H-arms and explain how it behaves.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Prove that the lowest cut-off frequency mode in rectangular waveguides operating in TM mode is $\\text{TM}_{11}$. Explain the working principle of any one of circular beam-type microwave cavity-controlled cross-field amplifier.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Find the basic differences of the systems having following sets S-Matrix. [4]\n\na) $S_{11} = 0.65 \\angle 146^\\circ, S_{12} = 0.12 \\angle 46^\\circ, S_{21} = 2.30 \\angle 44^\\circ, S_{22} = 0.17 \\angle -172^\\circ$\n\nb) $S_{11} = 0.30 \\angle -134^\\circ, S_{12} = 0.03 \\angle 46^\\circ, S_{21} = 2.20 \\angle 44^\\circ, S_{22} = 0.10 \\angle -172^\\circ$\nUsing the given S-Parameters given in (a), determine the stability and compare maximum power gains for unilateral and bilateral modes using supplied formulas.",
+          "marks": "12",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Baishakh",
+      "year": "2082",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 52,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Find the unique differences between microwave and conventional low frequency systems. Mention detail specifications/protocols of any five microwave communication system.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Compare radiation fields around a mobile BTS operating at 900 MHz and 1800 MHz frequency bands with their quarter-wavelength antennas. Explain how microwave EMR becomes hazardous to humans; and mention its IEEE safety standard.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Write the electromagnetic field equations of a circular waveguide operating at TE Mode. Explain degenerative and dominant modes of a rectangular waveguide with suitable examples.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Using proper S-Matrices, mention the properties of a Hybrid-Tee in the situation of (a) terminated E-arm, (b) terminated H-arm and (c) terminated co-planner arms.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Design a double-stub matching network for an antenna operating at 10 GHz, having $\\Gamma = |0.45|\\angle 60^\\circ$ and connected to a 100 Ohm transmission line. Sketch its physical diagram using micro strips. Prepare its S-Matrices before and after the design.",
+          "marks": "10",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Using following S-parameters: $S_{11}=0.55\\angle -150^\\circ$, $S_{12}=0.04\\angle 20^\\circ$, $S_{21}=2.82\\angle 180^\\circ$ and $S_{22}=0.45\\angle -30^\\circ$, design a microwave amplifier for maximum power gain for both bilateral and unilateral cases.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Mention the details of microwave filter designing steps. Provide a sketch of triple-pad series-arm type HPF using micro strips.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Write short notes on: (Any Two) $[2\\times 4]$\n\na) Multi-cavity Klystron Amplifier\n\nb) Circulating Calorimetry\n\nc) Microwave Amplifier Design Flow and Stability Analysis",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Bhadra",
+      "year": "2081",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 28,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Based on their respective operating principles, distinguish between microwave and traditional low frequency systems. Explain why S-parameter based analysis is a must in microwave network analysis.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "A $100\\Omega$ lossless transmission line is terminated with a complex load of $120\\text{-j } 160\\ \\Omega$. Design a single matching stub. Mention all the design steps with proper reasoning. Provide the S-Matrix for both before and after the design.",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Express various field components of a rectangular waveguide in TM mode.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Explain what are bunching effect and field effect. Describe the working principle of any one microwave high power oscillator, that employs bunching and field effects, with neat diagram.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Illustrate an example of a single section series arm passive BPF using microstrip. How are microwave filters designed using Insertion Loss Method?",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain how microwave medium power is measure with the static and dynamic circulating calorimetry. List all the microwave measurables and their respective measuring tools.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Baishakh",
+      "year": "2081",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 59,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "List out the uses of microwaves in communication systems and [ILLEGIBLE: explain] communication protocols of any three of them.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Classify microwave propagation fields of a GSM BTS and its radiation parameters. Explain what non-ionizing SAR is and how it becomes hazardous to human body.",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Prepare S-Matrices of a perfectly working E-Plane Tee, H-Plane Tee and a Duplexer, and explore their uses.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Define the field equations and the basic characteristic equations of a rectangular waveguide working on $TM_{11}$ mode.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Design a double-stub impedance matching network for a load of $\\Gamma = 0.64\\angle 58^\\circ$ connected to a $50\\text{ Ohm}$ transmission line. Prepare the S-Matrix of its matched network.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Calculate the maximum gains of both bilateral and unilateral models of a transistor having the S-parameters of $S_{11} = 0.55\\angle -150^\\circ$, $S_{12} = 0.04\\angle 20^\\circ$, $S_{21} = 2.82\\angle 180^\\circ$ and $S_{22} = 0.45\\angle -30^\\circ$. Sketch a flow chart that describes the microwave amplifier designing procedure.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the steps of microwave filter designing. Provide a sketch of double pad T-Type passive filter using a micro-strip.",
+          "marks": "7",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain the working principles of a cross-field magnetron having $60^\\circ$ of phase differences among the adjacent cavities.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Write short notes on: (Any Two) [2\\times 4]\n\na) Stability analysis of a microwave amplifier\n\nb) Double-channel Bolometer\n\nc) Sketch of an Immittance Chart",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Bhadra",
+      "year": "2080",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 50,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Differentiate between lumped and distributed circuit analysis. List out the areas of application of microwave system. Provide detail protocols of two microwave communication systems. $$",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "A $75\\ \\Omega$ coaxial line is terminated with a complex load of $109 + j120\\ \\Omega$. Design a double-stub matching system using short-circuited coaxial lines. Prepare its S-matrix. $$",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Briefly explain the need of S-parameter and its properties in microwave analysis. Explain three port network parameters using an example of E-plane Tee. $$",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What is dominant mode in a waveguide? What are the dominant modes for rectangular and circular waveguides? Does a rectangular waveguide of width $2.254\\text{ cm}$ support the propagation of a signal having frequency $6\\text{ GHz}$? $$",
+          "marks": "1",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Draw a neat diagram of a magic tee and derive its S-parameter. $$",
+          "marks": "4",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What is bunching effect? Briefly describe the construction and operation of Traveling Wave Tube (TWT). $$",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "A GaAs MESFET has the following S-parameters measured with a $50\\Omega$ resistance at $10\\text{ GHz}$:\n$$S_{11} = 0.55 \\angle -160^\\circ \\quad S_{12} = 0.04 \\angle 10^\\circ$$$$S_{21} = 4.82 \\angle 180^\\circ \\quad S_{22} = 0.45 \\angle -30^\\circ$$\nDetermine the stability and compare maximum power gains for unilateral and bilateral modes using supplied formulas. $$",
+          "marks": "10",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "How is a low pass filter is prototyped based on Butterworth or Chebyshev approximations and converted into other types of filters? Implement a second order high pass filter $\\pi$-section using microstrips. $$",
+          "marks": "10",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Briefly describe power measurement and the working principle of double channel Bolometer Bridge method. $$",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Baishakh",
+      "year": "2080",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 36,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "How is microwave frequency band classified by the IEEE? Enumerate the basic advantages and disadvantages of microwaves compared to lower frequencies.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Design a double stub shunt tuner to match a load impedance of $Z_L = 60-j80\\Omega$ to a $50\\ \\Omega$ line. The stubs are to be open circuited stubs and are spaced $3\\lambda/8$ apart. Assume the first is $0.4\\ \\lambda$ from the load. Formulate the S-matrix for your design.",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Why are S-parameters used in microwave network analysis? Derive the S-parameters for a two port network.",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "For an air-filled rectangular waveguide with a width of $3\\text{ cm}$ and a desired frequency of operation of $6\\text{ GHz}$ (for dominant mode), determine cut-off frequency, cut-off wavelength, group velocity, phase velocity, propagation wavelength in the waveguide and the characteristic impedance. Explain the four basic parameters used to describe the performance of a directional coupler.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Sketch a cross-sectional view of a magnetron having 45 degrees of phase shifts among the adjacent cavities, and explain its functioning as a power amplifier. Explain the bunching effect.",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain why insertion loss technique is used to design microwave filters. With proper labeling sketch microwave double-section shunt – arm types microwave LPF using micro strips.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Discuss the possible RF radiation fields to the public exposers. Explain, what are the international standards and recommended (SARPs) practices to safe from such radiation.",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain power measurement using calorimeter wattmeter. What are the limitations of using single bridge bolometer?",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Bhadra",
+      "year": "2079",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 50,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Compare the behavior of circuits for Low frequency/ Conventional and RF/ Microwave bands. Classify microwave frequency band and its application in major areas. $$",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "A $50\\ \\Omega$ lossless transmission line is required to be matched with the load admittance $0.00813 + j0.0065\\ \\mho$, by a double-stub shunt tuner with separation of $3\\lambda/8$ and the distance of the first stub from the load is $0.01\\lambda$. Calculate the length of each stub by using the smith chart. Write the s-parameter for the matched network. $$",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Why S-parameters are used in high frequencies? The S-matrix of certain microwave network is given as\n$$S = \\begin{bmatrix} 0.4 + j0.5 & j0.6 \\\\ j0.6 & 0.4 - j0.5 \\end{bmatrix}$$\n$$\n\na) Is the network reciprocal?\n\nb) Is the network lossless?\n\nc) What is the return loss at the input?\n\nd) If the input power to the network is 5 watts. What is the reflected power?",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Provide the fundamental field and characteristic equations of a circular waveguide for TE mode. $$",
+          "marks": "10",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "How is the output of conventional tubes reduced at microwaves due to inter-electrode capacitance, lead inductance and transit time effect? Explain about the construction and working principle of TWT. $$",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "For transistor having following S-parameter $S_{11} = 0.894 \\angle -60.6^\\circ$, $S_{21} = 3.122 \\angle 123.6^\\circ$, $S_{12} = 0.020 \\angle 62.4^\\circ$, $S_{22} = 0.781 \\angle -27.6^\\circ$. Determine the stability and compare maximum power gains for bilateral and unilateral modes. $$",
+          "marks": "5",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "How is a low pass filter prototype based on Butterworth approximation designed using insertion loss method? Implement a low pass filter $\\pi$ section using microstrips. $$",
+          "marks": "6",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain the RF/MW radiation hazards and its safety practices. $$",
+          "marks": "3",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "List out the major RF/MW measurement parameters. How the VSWR of any microwave transmitter (In case of $\\text{VSWR} > 10$) can be measured? Explain. $$",
+          "marks": "2",
+          "chapter": "General",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Write short notes on: $[2\\times3]$\n(a) Microwave Magic Tee\n(b) Gunn-diode",
+          "marks": "8",
+          "chapter": "General",
+          "isDiagram": false
+        }
+      ]
+    }
   ]
 }
