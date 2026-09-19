@@ -1,6 +1,34 @@
 {
   "subject": "Theory of Computation",
-  "generated": "2026-09-09",
+  "generated": "2026-09-19",
+  "totalSessions": 25,
+  "sessions": [
+    "2083 Baishakh",
+    "2082 Chaitra",
+    "2082 Kartik",
+    "2082 Shrawan",
+    "2081 Chaitra",
+    "2081 Bhadra",
+    "2081 Baishakh",
+    "2080 Bhadra",
+    "2080 Baishakh",
+    "2079 Baishakh",
+    "2078 Kartik",
+    "2078 Bhadra",
+    "2076 Chaitra",
+    "2076 Ashwin",
+    "2075 Chaitra",
+    "2075 Ashwin",
+    "2074 Chaitra",
+    "2074 Ashwin",
+    "2073 Chaitra",
+    "2072 Chaitra",
+    "2071 Chaitra",
+    "2070 Chaitra",
+    "2069 Chaitra",
+    "2066 Kartik",
+    "2066 Shrawan"
+  ],
   "chapters": [
     "Introduction to Formal Language, Logic and Proof",
     "Finite Automata and Regular Language",
@@ -398,6 +426,2389 @@
       "frequency": 3,
       "frequencyTier": "High",
       "solutionOutline": "P is class of decision problems solvable in deterministic polynomial time. NP is solvable in nondeterministic polynomial time (verifiable in polynomial time). Problem X is NP-Complete if X in NP and for every Y in NP, Y <=_p X. Cook-Levin theorem proved SAT is NP-Complete by showing any nondeterministic TM computation of polynomial length can be encoded as a Boolean formula in CNF."
+    }
+  ],
+  "yearWisePapers": [
+    {
+      "session": "2083 Baishakh",
+      "year": "2083",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 104,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define diagonalization principle. Explain principle of mathematical induction with\nsuitable example.",
+          "marks": "8",
+          "chapter": "Introduction to Formal Language, Logic and Proof",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Determine regular expression for the following language L - { w e (a, b)* : w contains\nat-least one 'a' OR at-least one 'bb'g.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Design DFA for following language L = (w : we (a,b)*, w has odd number of 'a' and\nodd number of 'b' ). Also Test your design for \"aabbba\".",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Define e-NFA with example. Convert the following NFA into its equivalent DFA.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain ambiguity in CFG with example. Write the CFG for the language L = (a'b'ck:i-j\nor j-kj. Generate the strings a' b* c* using your grammar.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "State pumping lemma for regular language. Show that L=( a\"ba\" : n>0 is not regular.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Convert the following CFG into CNF.\nG = (V, Z, R, S) whereV = {S, X, Y), Z = (a, b, c) and R given as:\nS->aXbX\nX->aY [bY |8\nY--X Jc",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Design a PDA which accepts all the strings of language L={a\"b\"c\"d\" : n, m>0).",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain a multi-tape turning machine. Design a single tape deterministic turing machine\nwhich accepts the given string w over alphabet E-(a, b, c) and w contain equal number\nof a, b, c.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Differentiate between context free and unrestricted grammars. Design a turing machine\nthat replaces symbol 'a' with \"b' and \"b' with 'a' for any string w e (a,b)*. Show the\nprocessing of machine (configuration transition) for string \"ababa\".",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What is \"Halting Problem\"? How can you prove that it is unsolvable?",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Define the term Turing decidable. Show that union and intersection of two recursive\nlanguages is recursive.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Define polynomial time reduction. Explain P and NP problems by means of reference to\npolynomial time reduction with examples.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Chaitra",
+      "year": "2082",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 104,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define equivalence and partial-equivalence relation. Using mathematical induction show\nthat for every integer n > = 0 the number 4(2n + 1) + 3(n +2) is a multiple of 13.\nWrite regular expression for the language which generates the string containing odd\nnumber of 1 followed by even numberof O or even number of 0followed by odd number\nof 1 over E{0,1).",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Using principle of resolution show that the hypothesis 'If it is raining then, Prem has his\numbrella,\". \"Prem does not have his umbrella or he does not get wet,'t. \"It is raining or\nPrem does not get wet\" imply that \" Prem does not get wet.\"\nDesign a DFA over (0,1) that can recognize the string containing number of 1 multiple of\n3 and number of 0 multiple of 2.Check your design for w =1010111001",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain how can you minimize the state of DFA with example. Convert the following\nautomata into its equivalent DFA.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Using pumping lemma show that the language L: a\" where n is a prime number is not\nregular.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Write down the CFG for the language L= (a?\"b\"cm: n, m>0) over an alphabet (a,b,cj. Use\nleftmost derivation and right derivation to generate the string “aaaabbcc\" and also draw\ntheparse tree for the same.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": true
+        },
+        {
+          "qNum": 8,
+          "text": "Define Instantaneous Description (ID) of PDA. Design a push down automata to accept\nw = aaaabaaaa.\n9, Explain the closure properties of context free language with suitable example.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "How working of TM different from PDA? Design a Turing machine that recognizes the\nlanguage L:a\"b\"c\" for n>=0.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Design a Turing machine that accepts the language of odd number written in binary.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Explain Turing machine with storage in the states. How such computing model help\nduring language recognition. Design a Turing machine which reverses the given string w\nover alphabet (a, b).",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Explain the encoding process of Universal Turing Machine.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "State halting problem. Explain the closure properties of recursively enumerable\nlanguages.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "How the tokens are generated by the lexical analyzer. Explain",
+          "marks": "8",
+          "chapter": "Automata Theory and Compiler",
+          "isDiagram": false
+        },
+        {
+          "qNum": 16,
+          "text": "How syntax analyzer helps to check whether the particular block of code is syntactically\ncorrect or not. Explain with suitable example.",
+          "marks": "8",
+          "chapter": "Automata Theory and Compiler",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Kartik",
+      "year": "2082",
+      "month": "Kartik",
+      "examType": "Back",
+      "totalMarks": 40,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Define countably infinite and uncountable set with example. Show that given\nproposition is a tautology ((P -→ Q) ^ (Q-R) --+(P-- R).\n\n(b) State converse, inverse and contrapositive for the statcment I will to swimming only if\nit is sunny'. Prove that 4\" -- 1 is divisible by 3 using the principle of mathematical\ninduction.\n\n(c) Write regular expression that can generates the string that contains at least one a and\ntwo b's over Z(a, b).",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Differentiate between DFA and NFA. Obtain the regular expression for the given\nautomata.\n\n(b) Design a DFA with Z -- {0, I) that accepts all strings containing even number of\nzero's and odd number of on, s. Verify your design using suitable example.\n\n(c) Minimize the given DFA.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Show that the context free language are not closed under intersection and\ncomplementation but closed under Kleene star.\n\n(b) Design a RDA for the language that accepts all thc string of L=a\"b\" with m, n>0 and\nm > = n and check the string w =- aaaaabbb. Also draw parse tree.\nDefine\nGreibach Normal Form (GNF). Convert the following CFG into\nCNF.\nG = (V,Z, R, S)\nV= (S. A, C)\nZ= ( a, b)\nR consists of:\nS→AAC\nA>aAb /e\nC-→aC / a and S is the start symbol\nDesign a TM that recognize the language that can recognize the language L: a\"b\"c'd\"\nfor n> = 0. Check for the string w = aaabbcccddd for your design.\n\n(b) Design a Turing machine that can generate the complement of the binary string.\nmachine is helpful with storage in states?",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": ". a) Define space and time complexity for the TM. Explain about NP-Complete problems.\n\n(b) State Church Turing Thesis. Show that the complement of recursive language is\nrecursive.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) List down the different phases of compiler design. Explain how tokens are gencrated\nby lexical analyzcr for the following instructions:\n```c\n#include<stdio.h>\nint func(int a, int b)\nif(a>b)\nreturn a,\nelse\nreturn b.\n\n(b) How syntax analyzer and CFG related with each other? Expiain with an appropriate\nexample.\n```",
+          "marks": "8",
+          "chapter": "Automata Theory and Compiler",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Shrawan",
+      "year": "2082",
+      "month": "Shrawan",
+      "examType": "Back",
+      "totalMarks": 200,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "State pigeonhole principle. Prove by using principle of mathematical indication:\n1+2+3+...+n=\n: for n≥0",
+          "marks": "8",
+          "chapter": "Introduction to Formal Language, Logic and Proof",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Define regular language. Write regular expressions for the language in which strings start\nand end with same symbol over alphabet Z-{a, b).",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "What are the components of finite automata? Design a DFA that accepts the strings given\nby L - ( we (a, b)*: w has number of a divisible by 3 and number of b by 2).",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Construct NFA an convert it to its corresponding DFA for the language represented by\nfollowihg Regular Expression: (ab U bb)*a",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Write Context Free Grammar for the Language L - ia'ibic :i,j>0} over the alphabet\nZ- (a,b,cj. Use leftmost, rightmost derivation to generate strings “aabbbcc\". Also draw\nparse tree for the same.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "Define Chomsky Normal Form (CNF). Convert the following CFG into CNF.\nG = (V, T, R, S) where V= {S, A, a, b), T={a, b} andR = {S -> aAB|AaB|B\nA -→ aAle, B -→ ab[bA}\nS = Start Symbol\nHere, e is the empty symbol.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Design PDA for L={a2\"b3n: n ≥ 0).Also test your design for \"aaabbbbbb\".",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Design al turing machine that increments any binary strings by one with\nh Z=(0,1,#).\nHence test your design for ##11# to #100# .",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Design a single tape deterministic Turing Machine that accepts L = {wcwR : w e (0, 1)*\nand c is single 0 or 1 or e (empty string).",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Explain Chomsky Hierarchy of a grammar.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "State Church turing Thesis. What are recursive and recursively enumerable languages?",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Describe the working mechanism of Universal Turing machine with example.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Define computational complexity and polynomial Time Reduction. Explain Class NP-\nProblems.\nExam.\n2082 Baishak\nTime\n3 hrs.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 1,
+          "text": "Define partial order relation. State diagonalization principle. Prove the following\nstatement by using principle of mathematical induction.\n1×1!+2×2!+3×3!+.....\n...+nxn! = (n+1)! - I where n ≥1.",
+          "marks": "8",
+          "chapter": "Introduction to Formal Language, Logic and Proof",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Design a DFA that reads the strings over (0, 1) and accept only those strings which ends\nin either 00 or 11. Verify your design for processing the string w = \"00110111\" and\nw-\"01110100\".",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Give formal definition of NDFA. Convert the following NDFA into DFA using subset-\nconstruction method.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Minimize the DFA as represented by the following transition table.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Give the formal definition of CFG. Construct a context free gramrnar for the language\nL={a\"b\" : m, n ≥ 1, m<n) over the alphabet Z={a, b). Derive string “\"aaabbbb\" and draw\ncorresponding parse tree.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "State Pumping Lemma for context free language. Show that L={ ww] wE (0,1]*  is not\ncontext free using Pumping Lemma.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What are the closure properties of CFL? Design a push down automaton (PDA) for\nL-- [ wcwR] wE [a, b)* ]. Check your design for the string w -- \"aabcabaa\".",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Design a Turing machine that recognizes the language L= 0\"1\"2n for n>=1 over the\nalphabet Z= (0,1,2). Show instantaneous description while processing the string\nW=\"000111222\"\nmachine: Design a Single tape turing machine which take binary string as input and\ncomputes 1's Complement.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "State Church Turing thesis. What are the factors affecting the computational complexity\nofa problem?",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What are halting problems? Define recursive, recursively enumerable, turing recognizable\nand turing decidable language.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Define Tniversal Turning Machine (UTM). Show that the complement of recursive\nlanguage is recursive.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Explain class-NP and NP complete problems with examples.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Chaitra",
+      "year": "2081",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 48,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) State Diagonalization principle. Using the principle of mathematical induction.\nShow that 13 + 23 + 33 ..\n[n(n+1)]2\n.+n3\n\n(b) Using rules of inference, show that the premises \"If you send me an e-mail message,\nthen I will finish writing the program,\" \"If you do not send me an e-mail message,\nthen I will go to sleep early,\" and “If I go to sleep early, then I will wake up feeling\nrefreshed\" lead to the conclusion “If I do not finish writing the program, then I will\nwake up feeling refreshed.\"\"\nWhat are power of an alphabet and positive closure of an alphabet?",
+          "marks": "8",
+          "chapter": "Introduction to Formal Language, Logic and Proof",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Explain the processing of a string by finite automata along with its block diagram.\nConstruct DFA that accepts all the string that doesn't contain two consecutive b over\nZ(a, b) and process the string w = baaaababb.\n\n(b) Write down the procedure to check the equivalence of two automata. Convert the\ngiven NFA into equivalent DFA.\nExplain the decision properties of regular languages.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "a) Construct CFG for the language L: a\"b\"c\"d\". Test your grammar to generate\nw = aabbbcccdd and draw parse tree for the same.\n\n(b) Convert the following CFG, into CNF: G = (V, Z, R, S) where V = {S, A, B), Z = (a,\n\n(b) , R = {S-→A, S->B, A-→aBa, A-→8, B--→bAb, B-→ 8 } and S is starting symbol.\n\n(c) State pumping lemma for context free language and show that L-{ww / where\nw = {o,1)* is not CFL.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "a) Design a TM that recognize the L ={a\"cb\"j. Also show how the string w = aaaacbbbb\nis accepted by your Turing machine.\n\n(b) Design a Turing machine that can compute a function f(x) = 2x\n\n(c) Explain the properties of recursive language.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a)\nHow encoding is done in Turing Machine? Explain.\nExplain NP-Complete problems.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a)\nHow lexical analyzer and DFA related with each other? Explain with an appropriate\nexample.\nr=a+b*c/(d*e)\n\n(b) Construct the parse tree for the following.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Bhadra",
+      "year": "2081",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 80,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define countably infinite set. State pigeonhole principle. Use the Principle of\nMathematical Induction to verify that, for n any positive integer, n4 -- 4n? is divisible by 3\nfor n > = 0.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Write a regular expression for the language L: ( wE (a, b)*, where w has even number of\n'a' followed by odd number of ‘b'. Design a DFA for the language L =- (ab+aba)*. Also\ncheck whether w =- ababaabab is accepted or not.\ncomplement? Explain with required diagram of automata.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "Give a formal definition of s-NFA. Remove 8-transition from the given s-NFA.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Write Context Free Grammar for the Language L -- {a\"b\"cm : m, n>0) over the alphabet\nE={a, b, c). Use Leftmost, rightmost derivation to generate strings \"aabbccc\". Aliso draw\nparse tree for the same.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "How simplification of CFG is performed? Convert the given CFG into CNF.\nG=(V,Z, R,S)\nWhere V={S, A, B)\nE= [a, b)\nR consists of:\nS-→aAB | AaB I B\nA-+aA/ 8\nB-→ab / bA\nS=S is the start symbol.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Draw block diagram of PDA. Design a push down automaton (PDA) to accept the\nlanguage L={a'ck : i=j+k and i, j, k > Oj.Check your design for the string\nw-\"aaabcc\".",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": true
+        },
+        {
+          "qNum": 8,
+          "text": "Design a Turing machine that recognizes the palindrome string of even length over\nZ={(0,1). Show instantaneous description while processing the string w =- \"01100110\" for\nthe same.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain multi tape Turing machine. Design a Turing machine which computes the\nfunction f(x) = x+ y.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "State Church Turing Thesis. Show that \"Halting Problem\" is undecidable.\nsuitable example.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What is computational complexity? Explain class-P and class-NP problems with\nexamples.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Baishakh",
+      "year": "2081",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 96,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "State and prove the pigeonhole principle. Prove the following statement by using\nmathematical induction: 1×1!+2x2!+3x31+.\n...+nxn! = (n+)!-1 for n> =1.",
+          "marks": "8",
+          "chapter": "Introduction to Formal Language, Logic and Proof",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "\"Formally define Deterministic Finite Automata (DFA). Design a DFA that accepts the\nstrings'over an alphabet Z - fa, b) that does not contain three consecutive b's",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "List the closure properties of regular language. Prove that regular languages are closed\nunder union, concatenation and kleene star operations.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Convert the following NFA into its equivalent DFA.\n5: Define: Context. Free Grammar (GFG): Write a CFG for the regular expression\nR  a+(axa).",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define Chomsky Normal Form (CNF). Convert the following CFG into CNF.\nG - (V, T, R, S) where V- (S, A, a, b), T-{a, b) and R = (S - aABAaBB,\nA-→aAle, B-→ablbA)\nS -- Start Symbol\nHere, e is the empty symbol.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Define Push Down Automata. Design a PDA that accepts the language L - la\"bmomd': m.\nn> -1 and check it for string abcd and aabbbcccdd.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": ". Design a single tape deterministic Turing Machine which reverses the given string w over\nan alphabet E - (a,b).",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Define unrestricted grammar. Design a TM that perform f(n) - 0.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Describe the structure of different types of grammar as defined by Chomsky Hierarchy.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "State Church Turing Thesis. What are recursive and recursively enumerable languages?",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What is Universal Turing Machine? Define Halting problems.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Explain P and NP class of problems.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Bhadra",
+      "year": "2080",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 88,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "State Diagonalization principle. Write a Regular expression for the language accepting\nthe string starting and ending with different symbol over an Z = (a, b.\nmathematical induction to prove 5n -- 1 is divisible by 4 for all integer n > =- 0.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "What is the significance of finite automata? Construct DFA, which accepts set of all\nstrings over (0, 1) which interpreted as binary number is divisible by 3. Verify your\ndesign using suitable example.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What do you mean by E - transition in Nondeterministic Finite Automata? Find the\nequivalent DFA of following NFA.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "State pumping lemma for regular language. Show that the language L - anb2n for\nn ≥ 1 is not regular.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define Context free Grammer. Construct CFG for the language L = fw: w contains odd\nlength over an alphabet (0,13). Also show the left most and right most derivations for the\nstring “ababaab\"",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Define ambiguity in Grammer. Convert the following CFG into CNF with explanation of\neach steps G = (V, T, R, S) where V= {S, A, B), T- [a, b), R= {S-->ASB/e, A-->aAS /a,\nB-->AB/b/ 8?",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Design a push down automata (PDA) to accept the language L - 1 wcwR : w is the string\nover (a, by* and wR is the reverse of wj. Check your design for string \"abcba\".",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Design a Turing Machine that accepts all the palindrome of strings over alphabet (a, b)\nand perform the test for string.\nanbnc\"for n > 0.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Explain configuration and working of multi-tape Turing Machine.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What do you mean' by Church Turing Thesis? Describe the working mechanism of\nUniversal Turing Machine with example.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "What is computational complexity? Explain NP-complete problems with example.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Baishakh",
+      "year": "2080",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 96,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "State Pigeonhole principle. Use the principle of Mathematical Induction to verify that ,\nfor n any positive integer, n*-4n? is divisible by 3 for n > = 0.",
+          "marks": "8",
+          "chapter": "Introduction to Formal Language, Logic and Proof",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Define finite state Automata with its block diagram. Design a deterministic finite\nautomata accepting string overfa,b} containing either ab' or ‘bba' as substring.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "Convert the following e-NFA into DFA.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "How can you check the equivalence of two DFAs? Minimize the DFA represented by.\nfollowing Transition Table:\nHere, °-→' represents starting state and **' represents final states.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": ". Formally define CFG. Construct a Context Free Grammar for the language\nL = (amn : m,n ≥1, m > n) over the alphabet  - (a,b). Derive string “aaabb\" by using\nboth left most and sight-most derivation and draw parse tree for the same.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "Given the following expression grammar for simple arithmetic expression with operator\n+ and*.\nE->E+T/T\nT→TxF/F\nF> (E) /a\nRemove the Left Recursion from this grammar and simplify it and convert it to CNF.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Describe the operation of pushdown automata. Design a PDA for language L-{w c wR:\nwe (a,b)*} and check your design for string o -- abacaba.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Design a Turing Machine that reverse a string over (a,b). Test your design for string\naaba.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "How a Turing Machine performs the computing function? Design a Turing Machine that\ncomputes the functionf(x) = x + 2 for each x belonging to set of natural number.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "State Church Turing thesis. What is a recursive language? Explain how Turing Machine\nworks as Enumerator..",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What is Universal Turing Machine? Explain Turing recognizable and Turing decidable\nlanguages.\n[3+万",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Explain class P and NP Problems with examples.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Baishakh",
+      "year": "2079",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 96,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What are regular expressions? Write a regular expression for the language.\nL -- { we (a, b} *: w has even number of 'a' s followed by odd number of 'b' s.j.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Prove by mathematical induction that n < 2\" for all positive integers n.",
+          "marks": "8",
+          "chapter": "Introduction to Formal Language, Logic and Proof",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Define finite state Automata with its block diagram. Design a deterministic finite\nautomata accepting strings over (a, b} containing either 'ab' or 'bba' as substring.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "Formally define a non-deterministic finite automata. Using pumping lemma for regular\nlanguage, show that L --  o\": n is prime} is not regular.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Convert the following e-NFA into DFA.\na, b",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What are inherent ambiguity in grammar? Write a CFG for following language.\nL= {we 0, 1, 2)* : W = 0i 1j 2k such thati =j orj = k }.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Describe the operation of pushdown automata. Design a PDA for language\nL =- { w c w R : we { a, b)*) and check your design for string w = abacaba.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "State and describe the pumping theorem for context free languages. Show that context\nfree languages are not closed under intersection and complementation operation.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Construct a Turing machine to transform Lwu into Uw w where w is a string with no\nblanks and U represents a blank symbol.\nfunction f (m,n) = m+1.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Explain the significance of church-Turing thesis. What is undecidability? Explain\nundecidebility problem with example.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Explain Turing recognizable and Turing decidable languages.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "How can we define computational complexity of an algorithm? Explain class P problems\nwith example.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Kartik",
+      "year": "2078",
+      "month": "Kartik",
+      "examType": "Back",
+      "totalMarks": 96,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Write a regular expression for the set of strings over [0, 1} with exactly two 0's.\n\n(b) Explain equivalence relations and partial order relations with examples of each.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What is configuration of DFA? Design a DFA which accepts the strings of the language\ndefined by the regular expression R = (01 U 010)*.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "How can you prove that some languages are not regular? Prove that the'set of regular\nlanguages are closed under complementation and intersection operations.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Define e-NFA formally. Convert the following e-NFA to equivalent DFA.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Design a Pushdown Automata (PDA) which accepts all the language\nL= (amb\"c3m:m, n>0j. Check your design for string 'abbccc'.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What are the decision properties of context free language? Prove that context free\nlanguages are closed under union and concatenation operation.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is ambiguity in CFG? Design a CFG that generates the strings belongs to the\nlanguage L - (wewR : w is the string of alphabets (a, b) and wr is the reverse of w).\nVerify your design by deriving string abbcbba.\n: 8. A single tape Turning Machine consist of sequence of 0's and 1's, design a single tape\ndeterministic Turing Machine which counts numbers of 1s in the given tape. If it contains\neven number of 1s then it replaces each occurrence of 1 s by Os and otherwise it should\nreplace each occurrence of Os by 1s and halts.\nE.g. if input string in tape is #10111# then output should be #00000#, if input string in\ntape is #11001# then output should be #11111#",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What is primitive recursive function? How Turing Machine can be used to describe Zero\nfunction and Successor function as defined in initial functions? Explain with proper\nexample.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Describe working mechanism of Multi-tape Turing machine. How it differs from multiple\nhead Turing machine?",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "How Universal Turing Machine (UTM) is different from Standard Turing machine? How\nUniversal Turing machine works? Explain with proper example.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What is undecidability? Describe recursive and recursively enumerable language with\nsuitable examples of each.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "What is complexity theory? Why it is important to deal with computational problems?\nExplain NP-Complete problems with suitable examples.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Bhadra",
+      "year": "2078",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 88,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": ": a) Write regular expressions for the language which generates strings of even length\nover the alphabet Z - [a, b].\n\n(b) Define Induction Principle. Explain Pigeonhole principle with suitable example.\nimmediately to its right. Test your design for 0010111, 1011010111 and also show the\nsteps involved.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "State the pumping for regular languages. Use pumping lemma for regular languages to\n. show the Language L = (an' : n > O) is not regular.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "List closure properties of regular language. Show that regular languages are closed under\nintersection.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Design a Pushdown Automata (PDA) which accepts all the strings for the language\nL = (a\"b\"an+m : n, m > Oj. Check your design for the string \"aabbbaaaa\".",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Convert following CFG into CNF with explanation of each steps. G = (V, Z, R, S),\n: where\nV =-{S, A, B, a,b).\nE-(a, b).\nR = (S -→ ASAlaB, A → BIs, B -→bls).",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Design a Context Free Grammar for the language L = (a'wek li, j, k ≥ 0 and i + j = kj.\nDerive the string \"aabcce\" and aiso draw parse tree for the same. :",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": true
+        },
+        {
+          "qNum": 8,
+          "text": "Design a Turing machine :that takes binary numbers as input and computes\nI's complement operation. Hence test your design for #100# to # 011#.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Describe the working cf a Turing Machine along with a block diagram. How can we\nrepresent configuration of a Turing Machine? State and explain with example Rules for\nCombining Turing Machine.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": true
+        },
+        {
+          "qNum": 10,
+          "text": "Explain undecidable problems about Turing machine and grammar. Show that\ncomplement of recursive language is recursive.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Explain about Haltirng problem with example",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Explain about class-NP problems with examples.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2076 Chaitra",
+      "year": "2076",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 77,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Formally define regular. expressions. Explain the diagonalization principle with an\nexample.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Distinguish between deterministic and non-deterministic finite automata. Design a DFA\nwith Z = {0, 1} which accepts the strings with an even number of 0's followed by a single",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Construct an NDFA for the language (ba)*U(bab)*, Convert the NDFA into a DFA.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Define what is a closure property. Prove that regular languages are closed under union,\nconcatenation and kleene star operation.\nExplain ambiguity in CFG with example. Write the CFG for the language L - la' b e* i-j\nor j-kj. Generate the strings a' b* c* using your grammar.\n.6. Define Chomsky Normal Form.\nConvert the following CFG into CNF.\nG =(V, Z, R, S ) where\nV-(s, X, Y?\nE= (a, b, c)\nR given by\nS->aXbX\nX-aY [bY Je\nY---X [c",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Differentiate between Finite Automata and Pushdown Automata. Design a PDA which\naccepts all the strings of languages L -- fa\" b c2u: n > 1).",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Design a single tape deterministic Turing Machine that accepts\nL =- (wcwk : w E (0, 1* and c is single 0 or 1 or e (empty string).",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Compare Turing machine with PDA and FA. Explain Chomsky hierarchy of language\nwith suitable diagram and examples.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": true
+        },
+        {
+          "qNum": 10,
+          "text": "Define the term Turing Decidable. Show that Union and Intersection of two recursive\nlanguages is recursive.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What is the significance of a Universal Turing Machine? Explain its working mechanism. [2+3]",
+          "marks": "5",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Explain NP-complete problems with example.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2076 Ashwin",
+      "year": "2076",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 96,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Determine Regular Expression for the following Language L=f w e (a, bj*: w contains\nat-least one 'a' OR at-least one 'b'}.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Prove by using Principle of Mathematical Indication:\n1+2+3+..+n=\nfor n≥0\nhas neither 11 nor 00 as substring?.",
+          "marks": "8",
+          "chapter": "Introduction to Formal Language, Logic and Proof",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Convert following NDFA to DFA.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "State pumping lemma for regular language. Show that L-{ a\"ba\" : n>0} is not regular.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Construct CFG for following language: L={ wwR: we (a, b) * ?\nAlso, use the grammar to derive the string \"abba\" and draw parse tree for it.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": true
+        },
+        {
+          "qNum": 7,
+          "text": "Define Chomsky Normal Form.\nConvert the following CFG into CNF.\nG= (V,Z,R,S) where V={S, A, B, a, b), Z={a, b), R given by\nS -→ AB\nA-→ aAA/e\nB-→bBB/e",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Design PDA for following language: L={a2np3n : n ≥ 0)\nAlso test your design for \"aabbb\".",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain a multi-tape Turning Machine. Design a single tape deterministic Turing\nMachine which accepts the given string w over alphabet Z-{a, b, c) and w contain equal\nnumber of a, b, c.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Differentiate between Context Free and Unrestricted Grammars. Design a Turing\nMachine that replaces symbol 'a' with \"b' and 'b' with 'a' for any string w e a, b) * . Show\nthe processing of machine (configuration transition) for string \"ababa\".",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What do you mean by Church Turing thesis? Show that the union of two recursively\nenumerable languages is recursively enumerable.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What is \"Halting Problem'\"? How can you prove that it is unsolvable?",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Define polynomial time reduction. Explain P and NP problems with examples.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Chaitra",
+      "year": "2075",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 96,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define Regular Language. Write regular expressions for the language in which strings\nstart and end with same symbol over alphabet Z={a,b).",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Explain Diagonalization principle with suitable example.",
+          "marks": "8",
+          "chapter": "Introduction to Formal Language, Logic and Proof",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Design DFA for following Language L = {w : we (a, b)*, w has even number of'a' and\nodd number of 'b' 3. Also Test your design for \"aabbb\".\nConstruct NFA an convert it to its corresponding DFA for the language represented by\nfollowing Regular Expression: (ab U bb)*a",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": ". What is the application of pumping lemma? Use pumping lemma for regular languages to\nshow the language L-(aP: p.is prime} is not.regular.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Write a context free grammer for he language L={ we(a,bj * : w has equal number of a's\nand b'sj. Use leftmost and rightmost derivation to generate strings \"aababb\". Also draw\nparse tree for the same.\n7: . Define Ambiguous Grammer with example. Convert the following CFG into CNF with\nexplanation of each step.\nG={V, Z, R, S} where\nV= {S, A, a,b) is set of variables\nZ= (a,b) is the Alphabet of terminals\nR={S ->aAb]bAale, A->SS); Note: e donates \"Empty String\"\nS is Starting State",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": true
+        },
+        {
+          "qNum": 8,
+          "text": "Design a PDA which accepts all the strings of language L=(a\"b\"cmd\" : n,m>0).",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Design a Turing Machine that recongnizes the string of matched parenthesis. Also, test\nyour design for \"(O)O\" showing all configurations.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Explain how unrestricted grammar can be used to generate the language L= (a\"b\"c\" : n>\noj. Describe: the structure of different types of grammars as defined by Chomsky\nHierarchy.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Define Church Turing Thesis. Why is it called a thesis?",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Define Recursive and Recursively enumerable Languages. Prove that the complement of\nrecursive language is also recursive.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Describe the working mechanism of Universal Turing machine with example.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Define computational complexity and polynomial Time Reduction: Explain Class NP-\nProblems.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Ashwin",
+      "year": "2075",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "a) Write a regular expression for the language in which strings start and end with\ndifferent symbol over alphabet Z- (a,bj.\n\n(b) Define Diagonalization Principle. Explain Principle of mathematical induction with\nsuitable example.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": ". What are the components of finite automata? Design a DFA that accepts the strings given\n. by L -- [ we (a, b)*: w has number of a divisible by 3 and number of b by 2).\nthen show that L -- (MUN) is also regular language.\nis not a regular language by using pumping lemma.\nWrite Context Free Grammar for the Language L- a'bici :i,j>of over the alphabet\nZ-ja,b,cj. Use Leftmost, rightmost derivation to generate strings “aabbbcc\". Also\ndraw parse tree for the same.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "Convert following CFG into CNF with explanation of each steps. G - (V, Z, R, S), where\nV = {S, X, Y, a, b, c),\nE-- (a, b, c),\nR = {S->aXbX, X->aY|bY(XY]e, Y->aX]c).",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is additional feature PDA has when compared with finite automata? Explain\nDesign a Pushdown, Automata (PDA) which accepts all the strings of language\nL  a\"b\"c2\";n,m >0f.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Design a Turing machine that increments any binary strings by one with Z- (0,1,#).\nHence test your design for ##11# to #100#.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "How multi-tape Turing machine is different from multi-track Turing Machine? Does any\nvariation of Turing machine have more computational power than standard Turing\nmachine? Explain.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Describe in detail about on universal Turing machines with example.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Explain the Church Turing thesis. Show that the “halting problem\" is undecidable.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Explain NP hard and NP-Complete Problems with reference to polynomial time\nreduction.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2074 Chaitra",
+      "year": "2074",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 88,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What · are regular .expressions? Find the equivalenceclasses.forthe .set\nN - {1, 2, 3, 4, 5 :...} corresponding to the equivalence relation R -- ((a, b): (a+b)is even\nnumberj.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Explain finite automata with their application. Design a DFA that accepts the language\nL -- {w e (a, b} : w must have either aaa or bbb as a substring].",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Convert the following NFA into it's equivalent DFA.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "State the pumping lemma for the regular languages. Show that the Language\nL.= (on? I n > = 1) not regular e.g.\nif n = 1, w= 0, n = 2, w = 0000.n = 3, w=.000000000",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Define context free Grammar (CFG). Show that L -- (a\"b2nc3n : n >0) is not context free\nlanguage by using Pumping lemma for CFL.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Convert the following CFG.into CNF. G = {V, T, P, S)\nWhere, V= {S, A, B, C, a, b, c}\nT= {a, b, c)\nP= {S ->ABAlab A/ BC, A-→aA/8, B -→ baB/c, C -→ aC)",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Design a push down'automaton (PDA) for L - (a\" b2n : n ≥ 1). Hence test for \"aaabbb\"\nand “\"aabbbb\".",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Define Turing Machine. Design a single tape deterministic Turing Machine which\nreverses the given string w, over alphabet E -- (a, b].\nL = (a\"b\"c\" : n > 0).\nIs there any difference between CFG and Unrestricted grammar? Explain",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Explain encoding technique of universal Turing machine. Show that complement of\nrecursive language is recursive. :",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What do you mean by Church-Turing Thesis? State when a problem is said to be\ndecidable and give an example of an undecidable problem.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Explain P and NP class of problems.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2074 Ashwin",
+      "year": "2074",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 96,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": ". State the diagonalizable principle. Use principle of mathematical induction principle to\nprove n* --4n? is divisible by 3 for n ≥ 0.",
+          "marks": "8",
+          "chapter": "Introduction to Formal Language, Logic and Proof",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": ". What is the significance of finite automata? Design a DFA that accepts the strings over an\nalphabet Z- (o,1f that either start with 01 or end with 01. Hence test your design for any .\ntwo strings.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Differentiate between DFA and NDFA. Convert the following NDFA to its DFA.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Define Closure properties of Regular Language. Prove that regular Language are closed\nunder Union, Intersection and Complementation. operation..",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Define pumping lemma for context free language. Prove that language\nL - (ww/w e (i,o'f is not context free.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Convert following CFG into CNF with explanation of each steps. G=(V,2,R.S), where\nV = {S,A,B,a,b),\nZ= a,b)\nR = (S-→ASBle, A->aASla, B->AB]bje).\nL = a\"b2n+l, n >of and check it for string aabbbb.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Design a single tape deterministic Turing machine which accepts all strings defined for\nthe language L = (a\"cb\" : n ≥ 0) over alphabet Z- a,b,c§.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Design a multi-tape Turing machine which act as Copying machine over the alphabets\nZ- (0,1} that transforms string of the form \"#10#\" into \"#10#10#\".",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Define unrestricted grammar. Explain possible extensions of Turing machine in brief.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What is universal Turing machine? How Universal Turing machine works? Explain.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Explain Halting problem. Is it solvable problem? Discuss.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "What are two factors affecting the computational complexity of a problem? Explain ciass\nNP with suitable example.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2073 Chaitra",
+      "year": "2073",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 80,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Explain dovetailing technique with suitable example. Write a regular expression for even\nnumber of 'a' followed by odd number of 'b' over an alphabet E -- (a, b?.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Differentiate between NFA and DFA. Design a DFA that accepts the language\nL = (x:x e (0,1)* [10110 does not occurs as a substring in xj. Verify your design with\nsupporting examples.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "State Pumping Lemma for Regular Language. Use Pumping Lemma and prove that\nLanguage L -- (w : w e (o,1]* , and w has an equal number of 0's and 1's) is not regular.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": ".. Why is NDFA important although it is equivalent to a DFA? Design NDFA which\naccepts L - (w | We (a,b)* such that W contains either two consecutive a's or two\nconsecutive b'sj.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Define ambiguity in CFG. Write CFG for L -- w e (a,b)*: wis a palindrome) and also\ndraw parse trees for the derivation of any two'strings of length even and odd. :",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "'Define Chomsky Normal Form (CNF). Convert the following CFG into 'CNF-\nG = (V,Z,R,S) where V - (S,A,B,a,b),  - (a, b) and R is given by\n(s -→ A,S -→ B, A -→ aBa, A -→>e,B -→ bAb,B -→ej. Where e is empty symbol?\n: 7. Design a PDA that accepts those strings \"having total number of 'a' equal to the sum of\nnumber of '\"b' and 'c' with sequence of a,b,c,(i.ea'b'ck :i'- j+k). Hence test your design\nfor the string \"aaaabbcc\".\nCompare Turing machine with Finite Automata (FA) and Push down Automata (PDA).",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Design a Turing machine to accept language L - (wwR / W e (0,1)*). Show processing\nfor the string 101101.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Explain unrestricted grammar with suitable example. Is unrestricted grammar is superset\nof Context Free Grammar? Justify your answer.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What is recursive language? Mention its properties. Prove that \"A language is recursive if\nand only if both it and its complement are recursively enumerable.\"",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Define Computational Complexity and Polynomial Time Reduction. Also explain NP\nhard and NP-Complete problems.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2072 Chaitra",
+      "year": "2072",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 80,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": ": a). Define Catesian Product. Use Mathematical Induction to show",
+          "marks": "8",
+          "chapter": "Introduction to Formal Language, Logic and Proof",
+          "isDiagram": false
+        },
+        {
+          "qNum": 1,
+          "text": "11+2.21+......+n.n! = (n+D-1 forn≥1\nFind the regular expression for the language L  f W e f0, Iy*: has 0101 as substring.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Construct a DFA over (a,b) accepting strings having even number of 'a' and odd number\nof'b'.\n3: Define DFA formally. State and prove closure properties of regular languages.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Define pumping lemma for regular language. Use pumping lemma for regular language to\nshow L = fa\"ba\" for n = o,i,2...J is not regular.:\n52 Define the configuration of PDA. Design a PDA that accepts L - (a'nb\",n >0y and\ncheck the string aaaaaabb.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define context free grammer.Convert the given Context Free Grammar (CFG) into\nequivalent CNF\nS->AB\nA->aAAle\nB-→>bBB fe, Here: e means empty symbol",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": ". a) Write a CFG for the regular expression R  0*1(OUD*\n\n(b) Use concept of closure property to prove that intersection of Context Free Languages\nis not Context Free.\n&. Design a Turing machine to compute the function f(n) -n +1, where n be a binary string.\nShow the processing for the string 10111.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Define Multitape Turing Machine. With the help of suitable example, explain how\nUniversal Turing machine works.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "State Church Turing thesis, What is a recursive language?",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Show that if a language L and its complement both are recursively enumerable, then L\nand its complement is recursive. Explain the halting probiem.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Write short notes on:\n\n(a) Computational Complexity\n\n(b) NP hard and NP Complete Problems.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2071 Chaitra",
+      "year": "2071",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 151,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define countably infinite and uncountable sets with example. Use principle of mathematical\ninduction to prove (5n -1) is divisible by 4 for all integers n ≥ 0.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Design a Deterministic Finite Automata (DFA) for the regular expression (a(ab)*b)*. Verify\nyour design by taking one accepted and one rejected strings.\nL-fan' : n ≥ 0} is not regular.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": ": What are the differences between a DFA and a NFA? Convert the following NFA in to its\nequivalent DFA.\nstring \"aaab\". And also draw the parse tree..",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "Convert following CFG to CNF\nG = (V, Z, R, S), where\nV= {S, A, B, a, b)\nZ= (a, b)\nR = [S -> aAb /Ba | A, A -→ SSl e, B ->e)\n7: Define the term ambiguity and inherent ambiguity in parse tree. For a CFG given by G = (V,\nZ, R, S) with V - {S), E -- fa) and production'rules R is defined as:\n$ -ss,\nS-→a.\nObtain the language L(G) generated by this grammar.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Design a PDA that accepts language, L -fa\"b3\" :n ≥1] . Test your design for string \"abbb\".[5+1]\nWrite the differences between CFG and unrestricted grammar with example. Design a Turing\nmachine that reads binary string and doubles the number represented by that string. A binary\nnumber is doubled if a 'o' is added on the right end of the number.",
+          "marks": "6",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Define head shifting and symbol writing Turing Machines. Design a Turing Machine (TM)\nW e {0,1↓*. If your input string is #01#then TM should give the:output string as #0110#. . [3+6]",
+          "marks": "9",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Define class-P and class-NP probiems with example. How do they, relate to NP-complete\nproblems?",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What is an \"Algorithm\" according to Church-Turing Thesis? Why is it called thesis and not a\ntheorem? Prove that if a language 'L' and its complement L' both are recursively\nenumerable,then L is recursive.\nBack (2066 & Later 1\nBatcn\nExam.\nLeve!\n3 hrs.\nII/Y\nTime\nExarnination Control Division\n2071 Shawan",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 1,
+          "text": "State and expiain pigeon-hole principle with an example\nusing mathematical Induction Principle.",
+          "marks": "8",
+          "chapter": "Introduction to Formal Language, Logic and Proof",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Prove that\nn(n +1)\nDesign a DFA that accepts the language given by L - {we {0, 1)*: w begins with Oand\nends with 10j. Your design should accept strings like 010, 011110, 000010, 01011010\nand should not accept strings like 1010, 0011, 01011.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": ". Find the regular expression represented by NFA M- (K, Z, A, s, F) where\nK= (qo, q1, q2, q3, q4, qs), E= (a,bj, s=qo, F=f qs) and A is given as follows.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Show that L- ( we (a, by*: w has equal number of a's and b'sy is not regular by using\npumping lemma for regular language. You may use closure properties along with\npumping lemmtar:",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain about decision algorithms for regular language.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "State and proof the pumping lemma for regular language.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Prove that language which contains set of strings of balanced parentheses is not regular.\nDefine a context-free Grammer. Convert the following productions into chomsky\nNormal form.\nS → abAB\nA -→ bAB/E\nB →BAalA/E",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Describe the trausition function of push-down Automata.\nli: Design a Turing machine that reads binary strings and counts the number of I's in the\nsequence. If there is odd mumber of 1 in the input string, machine just halts with doing\nnothing. Otherwise machine should add I to the input binary number ifit is even number\nand subtract 1 from the input binary nunber if it is odd number. For example if input\nstring is #1110, it just halts after counting odd number of 1's. For #101#, it'subtracts 1 to\n.get #100# and for #1010#, it adds 1 'to get #1011#.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Let M1, M2 and M3 be three Turing machines, can you combine these three Turing\nmachines to get new Turing machine M? If yes, elaborate your.idea with required theory\nand illustration. Explain'unrestricted grammar with suitable:example.\nWhat -is universal turning machine? Explain with example, how. universal turing\nmachineworks?",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "-. What do you mean by Church-Turing Thesis? Explain Turing recognizable languages\nand Turning decidable language with suitable examples.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": ". Why computational complexity analysis is reguired? Define class NP and explain how\nTravelling Salesman Problem (TSP) is Class NP problem.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2070 Chaitra",
+      "year": "2070",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 200,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Justify that \"The complement of diagonal set is different from each row sets.\" with the\nhelp of diagonalization principle. Show that if 3n+2 is odd then n is odd by using proof by\ncontradiction technique.",
+          "marks": "8",
+          "chapter": "Introduction to Formal Language, Logic and Proof",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Design a DFA that accepts the language L = (x 8 1,1)*: x has an even number of 0's and\nan even number of 1'sj. Verify your design for at least two strings that are accepted by\nthis DFA and 2 strings that are rejected.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Show that for any Regular expression R, there is a NFA that accepts the same language\nrepresented by R. Construct a e-NFA for regular expression bb (a U b)*ab",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Use pumping lemma to prove that L = [a' b2n : n ≥1) is not regular.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": ". Consider the regular grammar G - ( V, Z, R, S ) where\n= {S,A,B,a,b), Z = (a,b)\nR- (S -> abA / B / baB / e\nA-> bs / a\nConstruct a finite automaton M such that L (M) - L (G)",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Write context free grammars (CFG) for the languages L1 = fa\"b\"c\" :m ≥I,n ≥1yand\nL2 = (a\"b\"m :m ≥1,n ≥1) : Do you think that L=(LiAL2)is also context free? If not\nprove that the language thus obtained is not context free by using pumping lemma for\ncontext free language.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": ". Convert.following CFG into CNF with explanation of each step. G - (V,Z,R,S), where\nV = (S, X, Y,Z, a, b, c),\nE= {a, b, c?\nR = {S-→XYzIXYlaZ, X-→>abXls, Y-→bYlczlab, Z->aXZ)",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Design a PDA that accepts all the palindromes defined cver (a, bj*. Your design should\naccept strings like e, a, b, aba, bab, abba, babab etc.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Define the. term configuration of Turing Machine. Design a Turing machine which\naccepts the set of all palindromes over alphabets (0,1}",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Is Turing Machine a complete computer, support your answer in reference to different\nroles of Turing machines? Justify that unrestricted grammar can generate the language\nL = {a\" b\" c\"; n≥1}",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Define Multiple tapes Turing machine. With reference to language they accept, compare\nMultiple tapes Turing machine with single tape Turing machine.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "\"Turing machines is believed to be the ultimate calculating mechanism\", elaborate with\nthe help of Church-Turing thesis. How halting problems suffer the computational\nprocedures? Explain with suitable exanple. :",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "With reference to Polynomial Time Reducibility, explain NP hard and NP- Complete - *\nProblems.\nExam.\nck066 & Later Batch\n2070Ashad\nTime\n3 hrs.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 1,
+          "text": "Explain the induction principle with suitable example.",
+          "marks": "8",
+          "chapter": "Introduction to Formal Language, Logic and Proof",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "In a class of 49 students prove that there will be at least one month where 5 or more\nstudents have their birthday.\n'3. Differentiate between DFA. and NDFA: Define a DFA that accepts the language\nL - ( X a{0,1)*: 0110 occurs as a substring in X)",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": ", Design an NDFA for a language defined as (ab)*(ba)*U aa*. Give two strings that are\naccepted by this NDFA and two that are rejected. -",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Show that if.a language is regular then it.is accepted by finite automata.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "State Chomsky Normal Form (CNF), Constructruct a Push Down Automata (PDA) that\naccepts the language L = {a\" b2n |n >i0}",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Write.a C.F.G to generate a language α\nta\" bm cm d': m, n ≥ 1j. Show how this\ngrammar can generate the strings a? bfc4 d?.\n&.,Let G  (V, Z, R, S) be a CFG, then prove that any string W E L (G) of length greater\nempty and uv\" xy\" z is in L(G) for every n ≥ 0",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Define the symbol writing machine and head moving machine. How can these be\ncombined'to form complex Turing machines? Explain.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Given the starting 'configuration (s, DUWU) design a Turing machine to compute\n(h, DU WU W) where h is a halting state and 'W' contains only non blank symbols but\ncan be empty.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What is recursive function theory.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What is church-turing thesis? Explain.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Prove that if L is recursive then L is also recursive.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": ". What is'class- NP? Explain.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2069 Chaitra",
+      "year": "2069",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 80,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define the Cartesian product. What is the use of Pigeonhole principle?\nUse mathematical induction to prove the following: 1+2+......+n =- n(n+1)/2\n3: Design an NDFA for a language defined as (baUb)* U(bbUa*) . Give two strings that are\naccepted by this NDF A and 2 that are rejected.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Define configuration in reference to FA. Prove that regular language are closed under\nKleene-star.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": ". What is pumping lemma for regular languages? Can you use this to assert a language is\n.. regular? Justify your answer with reference to the language L -- (a\" b\" c: m, n ≥ O}",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Formally define PDA. Design a PDA to accept a language L = (a\" be\" : n ≥ 0)",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Where is the main application of pumping lemma? State the pumping lemma for context\nfree languages and explain with suitable examples. .\nWrite a C.F.G to generate a language L = (a4nI n ≥ 1). Convert this to C.N.F\nWhat is a turing machine? Define the term configuration in reference to a turing machine.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Construct a Turing machine that replace every 0 and 1 with every 1 and 0 in binary string\n(i.e. f(a) = a , where \"a\" is a binary string).",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What' is-unrestricted grammar? Explain.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What is universal turing machine? Explain.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Prove that if L recurive then it is recursively ennumerable.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "What is class P? Explain.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2066 Kartik",
+      "year": "2066",
+      "month": "Kartik",
+      "examType": "Back",
+      "totalMarks": 120,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Explain what an equivalence relation is. Show by induction that for any n ≥ 0,\n1+2+....+n = (n?+n)/2..",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Let Z - (a,bj. Write a regular expression for the language with all strings in E* with no\nmore than three a's.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Formally define a Deterministic Finite Automation (DFA)",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Design a DFA accepting strings over the alphabet (0,1} defined by (0 09* (11 *.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Convert the following non-deterministic finite automation to DFA.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "State the pumping lemma for regular language. Show that the language L -- (a\" : n is\nprime; is not regular using the pumping lemma.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": ". Define Context Free Grammar (CFG) along with an example.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Convert the following CFG to Chomsky Normal Form (CNF)\nG - (V, Z, R, S) where V - {S, A, B, a, b)\nZ-- a,b)\nR -- [{S->aAbB, A->aA, A->a, B-→>bB)",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Design a pushdown automation to accept L -- [wwR; we (a,b)*. Show how it accepts\nthe string \"abbbba\".",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Using the pumping theorem for context free languages show that L -- (a'b\"c\" : n ≥ 0y is\nnot context free.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What is a Turing machine? Describe its operation.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Construct a Turing machine to transform Uwu into Liuwu, where w is a string\ncontaining no blanks and ui represents blank.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Construct a Grammar to accept the language L - {a\"b\"c\" : n ≥ 1 }",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 14,
+          "text": "Explain the Church-Turing thesis. Show that the Halting problem is undecidable.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        },
+        {
+          "qNum": 15,
+          "text": "Explain what is the class P. Describe the Traveling Salesman Problem.",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2066 Shrawan",
+      "year": "2066",
+      "month": "Shrawan",
+      "examType": "Back",
+      "totalMarks": 87,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "State pigeonhole principle. Prove the following statement by using mathematical\ninduction: 1×1!+2x2!+3x3!+....+nxn! - (n+1)!-1 where (n≥1).",
+          "marks": "8",
+          "chapter": "Introduction to Formal Language, Logic and Proof",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Define Configuration of DFA. Design a Deterministic Finite Automata (DFA) for\nlanguage L - { w e(0,1) :w has both 01 and 10 as substrings). Verify your design by taking\none accepted and one rejected strings.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Construct a NFA for the language (ab*a U b*aa). Provide any two accepted strings and\ntwo rejected strings.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "State pumping lemma for regular language and use . this theorem to prove that\nL = (a'b2n : n ≥ 1) is not regular.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Construct a PDA which accepts the language L=(a\"b+mcm in,m≥1). Verify your\ndesign by taking s string \"abbbcc\" as example.",
+          "marks": "8",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": ". What is Chomsky? Normal Form (CNF)? {S, L, M, N,a, b,cf , Z= (a,b,c} ,\nR = [S -→ MaN|bL|bM, L -→ abjcN|Mile , M ->ajcM, N -→abN) and S is the start symbol. [2+5]\n7: Construct a CFG for the language L - a\"b2n,n >0 and use this grammar to generate the\nstring aabbbb. Also construct the parse tree.",
+          "marks": "7",
+          "chapter": "Context Free Grammar and Pushdown Automata",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Design'. a.. Turing : Machine (TM) which accepts the following language\nL = {W s(x,y,z)*:w has equal no. of x's,y's and z's) . Verify your design for the string\n\"#xyxyzz#\".",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Design a two tape Turing machine that acts as a binary adder. Assume both the strings are\nkept at first tape and separated by a semicolon and output is desired at the same tape.",
+          "marks": "8",
+          "chapter": "Turing Machine",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Explain Recursive and Recursively Enumerable Languages with suitable examples of\neach language.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Define unrestricted grammar. Explain, how unrestricted grammar can be defined as super\nset of CFG and Regular Grammar? Explain the church-turing thesis.",
+          "marks": "8",
+          "chapter": "Finite Automata and Regular Language",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Explain class P and NP problems with example. What is NP-complete problem?",
+          "marks": "8",
+          "chapter": "Decidability and Computational Complexity",
+          "isDiagram": false
+        }
+      ]
     }
   ]
 }

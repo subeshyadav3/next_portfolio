@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
-import type { IoeQuestion } from "@/lib/ioe/types";
+import type { IoeQuestion, IoeSessionPaper } from "@/lib/ioe/types";
 import {
   Calendar,
   ChevronDown,
@@ -21,6 +21,7 @@ import { copyToClipboard } from "@/lib/clipboard";
 interface YearWiseQuestionsProps {
   subject: string;
   questions: IoeQuestion[];
+  yearWisePapers?: IoeSessionPaper[];
 }
 
 interface SessionQuestionItem {
@@ -29,6 +30,7 @@ interface SessionQuestionItem {
 }
 
 interface SessionGroup {
+  id: string;
   session: string; // e.g. "2082 Kartik", "2081 Chaitra"
   year: string;    // "2082"
   month: string;   // "Kartik"
@@ -69,7 +71,7 @@ function getExamType(session: string): "Regular" | "Back" | "Special" {
   return "Back";
 }
 
-export function YearWiseQuestions({ subject, questions = [] }: YearWiseQuestionsProps) {
+export function YearWiseQuestions({ subject, questions = [], yearWisePapers }: YearWiseQuestionsProps) {
   const [query, setQuery] = useState("");
   const [selectedYear, setSelectedYear] = useState("all");
   const [diagramOnly, setDiagramOnly] = useState(false);
@@ -77,6 +79,42 @@ export function YearWiseQuestions({ subject, questions = [] }: YearWiseQuestions
 
   // Group questions by distinct Exam Session (e.g. 2082 Kartik, 2082 Chaitra, 2081 Ashwin, etc.)
   const allSessionGroups = useMemo(() => {
+    if (yearWisePapers && yearWisePapers.length > 0) {
+      const groups: SessionGroup[] = yearWisePapers.map((paper, idx) => {
+        let totalMarks = 0;
+        const items: SessionQuestionItem[] = (paper.questions || []).map((q) => {
+          const num = Number(q.marks);
+          if (!isNaN(num)) totalMarks += num;
+          const text = q.text || q.question || "";
+          const isDiagram =
+            q.isDiagram ??
+            /diagram|figure|draw|circuit|sketch|curve|graph|flowchart/i.test(text);
+          return {
+            question: q,
+            isDiagram,
+          };
+        });
+
+        const m = paper.session.match(/(\d{4})\s*([A-Za-z]+)?/);
+        const year = paper.year || (m ? m[1] : "Other");
+        const month = paper.month || (m && m[2] ? m[2] : "");
+        const examType = paper.examType || getExamType(paper.session);
+        const id = `${paper.session}-${examType}-${idx}`;
+
+        return {
+          id,
+          session: paper.session,
+          year,
+          month,
+          examType,
+          items,
+          totalMarks: paper.totalMarks || totalMarks,
+        };
+      });
+
+      return groups.sort((a, b) => parseSessionSortKey(b.session) - parseSessionSortKey(a.session));
+    }
+
     const sessionMap = new Map<string, SessionQuestionItem[]>();
 
     for (const q of questions) {
@@ -98,10 +136,11 @@ export function YearWiseQuestions({ subject, questions = [] }: YearWiseQuestions
       }
     }
 
-    const groups: SessionGroup[] = Array.from(sessionMap.entries()).map(([sess, items]) => {
+    const groups: SessionGroup[] = Array.from(sessionMap.entries()).map(([sess, items], idx) => {
       const m = sess.match(/(\d{4})\s*([A-Za-z]+)?/);
       const year = m ? m[1] : "Other";
       const month = m && m[2] ? m[2] : "";
+      const examType = getExamType(sess);
       let totalMarks = 0;
       for (const it of items) {
         const num = Number(it.question.marks);
@@ -109,10 +148,11 @@ export function YearWiseQuestions({ subject, questions = [] }: YearWiseQuestions
       }
 
       return {
+        id: `${sess}-${examType}-${idx}`,
         session: sess,
         year,
         month,
-        examType: getExamType(sess),
+        examType,
         items,
         totalMarks,
       };
@@ -120,28 +160,28 @@ export function YearWiseQuestions({ subject, questions = [] }: YearWiseQuestions
 
     // Sort descending chronologically (e.g. 2082 Chaitra, 2082 Kartik, 2081 Chaitra...)
     return groups.sort((a, b) => parseSessionSortKey(b.session) - parseSessionSortKey(a.session));
-  }, [questions]);
+  }, [questions, yearWisePapers]);
 
   // Open the first/latest exam session by default
   const [openSessions, setOpenSessions] = useState<Set<string>>(() => {
-    const first = allSessionGroups[0]?.session;
+    const first = allSessionGroups[0]?.id;
     return new Set(first ? [first] : []);
   });
 
-  const toggleSession = (sess: string) => {
+  const toggleSession = (id: string) => {
     setOpenSessions((prev) => {
       const next = new Set(prev);
-      if (next.has(sess)) {
-        next.delete(sess);
+      if (next.has(id)) {
+        next.delete(id);
       } else {
-        next.add(sess);
+        next.add(id);
       }
       return next;
     });
   };
 
   const expandAll = () => {
-    setOpenSessions(new Set(allSessionGroups.map((g) => g.session)));
+    setOpenSessions(new Set(allSessionGroups.map((g) => g.id)));
   };
 
   const collapseAll = () => {
@@ -335,19 +375,19 @@ export function YearWiseQuestions({ subject, questions = [] }: YearWiseQuestions
       ) : (
         <div className="space-y-4">
           {filteredGroups.map((group) => {
-            const isOpen = openSessions.has(group.session);
-            const cardId = `sess-${group.session.replace(/\s+/g, "-")}`;
+            const isOpen = openSessions.has(group.id);
+            const cardId = `sess-${group.id.replace(/\s+/g, "-")}`;
             const diagramCount = group.items.filter((x) => x.isDiagram).length;
 
             return (
               <div
-                key={group.session}
+                key={group.id}
                 className="overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-xs transition dark:border-gray-800/90 dark:bg-gray-900"
               >
                 {/* Session Paper Header / Toggle Button */}
                 <button
                   type="button"
-                  onClick={() => toggleSession(group.session)}
+                  onClick={() => toggleSession(group.id)}
                   aria-expanded={isOpen}
                   className="flex w-full items-center justify-between gap-3 p-4 sm:p-5 text-left transition hover:bg-slate-50/80 dark:hover:bg-gray-800/50"
                 >

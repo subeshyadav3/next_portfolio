@@ -1,6 +1,35 @@
 {
   "subject": "Computer Graphics and Visualization",
-  "generated": "2026-09-09",
+  "generated": "2026-09-19",
+  "totalSessions": 26,
+  "sessions": [
+    "2083 Baishakh",
+    "2082 Kartik",
+    "2082 Bhadra",
+    "2082 Baishakh",
+    "2081 Chaitra",
+    "2081 Baishakh",
+    "2080 Bhadra",
+    "2080 Baishakh",
+    "2079 Bhadra",
+    "2078 Kartik",
+    "2078 Bhadra",
+    "2076 Chaitra",
+    "2076 Ashwin",
+    "2075 Chaitra",
+    "2075 Ashwin",
+    "2074 Chaitra",
+    "2074 Ashwin",
+    "2072 Chaitra",
+    "2071 Chaitra",
+    "2071 Chaitra",
+    "2070 Chaitra",
+    "2068 Chaitra",
+    "2068 Bhadra",
+    "2067 Mangsir",
+    "2066 Magh",
+    "2066 Shrawan"
+  ],
   "chapters": [
     "Introduction and Application",
     "Raster Graphics and Algorithms",
@@ -607,6 +636,1768 @@
       "frequency": 2,
       "importance": "Very High",
       "difficulty": "Medium"
+    }
+  ],
+  "yearWisePapers": [
+    {
+      "session": "2083 Baishakh",
+      "year": "2083",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 64,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "A raster display system has a resolution of 1280 × 1024 pixels. It uses 24 bits per pixel to\nstore color information. Calculate the total memory required for the frame buffer in MB.\nIf the screen is refreshed at 60 frames per second, what is the data rate (in MB/s) required\nto refresh the display?",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Derive the Bresenham's line algorithm, Digitize a circle with radius r = 12 and centered at\n(250, 300).",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "a) Derive the composite matrix for rotation of a point about an arbitrary pivot position.\n\n(b) Clip the line P1,P2 with P1(-5,3) and P2(15,9) with clip window having diagonal\ncoordinate (0,0) and (10,10) using Liang-Barskey line clipping method.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Reflect an object A(0,0,0), B(2,3,0), C(5,0,4) about the plane y = 4\n\n(b) Derive the perspective projection for the case that projection reference point is at\nOrigin.\n5, Two Bezier curve segments are as follows: first segment, Po= (0,0), Pr- (2,3),\nP2= (4,3), P = (6,a) and second segment:Qo = (6,a), Q1 = (8,b), Q2 = (10,0), Q3 = (12,-2).\nFind the values of a and b such that the curves join with C? continuity.",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "Can we use geometric table to represent a 3D object? If yes explain with example. Also\nwrite the conditions to generate error free table.",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Discuss about back face removal algorithm? Write the different between Z-Buffer and A-\nBuffer method.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "a) Explain in detail about illumination model and rendering method.\ncoefficients:\nka=(0.1,0.1,0.2), kd= (0.6,0.7,0.8), ks= (0.3,0.4,0.5), Shininess ns= 10\nLight intensities:\nIa=(0.2,0.2,0.2),1= (1.0,1.0,1.0), I- (1.0,1.0,1.0)\nGiven:\nN.L=0.7\nV.R=0.6\n\n(b) Explain in detail about Gouraud shading model with an example. Which one is more\nrealistic Gouraud or Phong shading and why?",
+          "marks": "8",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Why OpenGL required? Explain about color commands.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Kartik",
+      "year": "2082",
+      "month": "Kartik",
+      "examType": "Back",
+      "totalMarks": 61,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Calculate the time required to display a pixel on the monitor of size 1024 x 768 with\nrefresh rate of 60 Hz. Draw block diagram of 3D viewing pipeline.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 2,
+          "text": "a) How is the symmetric property vital while drawing an ellipse? Write an algorithm to\ndraw ellipse in raster graphics system.\n\n(b) Explain Weiler Atherton polygon clipping polygon clipping in with an example.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "a) Explain the composite rotation in 2D transformation. Given the point (0,0) (1,0) (0,1)\nand (1,1l) where Xref = -1 and Shy = 0.5. Calculate and sketch shearing\ntransformation new coordinates.\nReflect the object (2, 3), (4,3), (4,5) about the line y = x+1.\nWhy we need perspective projection in 3D environment? Explain transformation from\nworld to viewing coordinates.",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "Illustrate space partitioning representation in brief. How polygon meshes support to\nrepresent 3D object? Explain with relevant figures.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Differentiate between image-space and object-space methods for hidden surface\ndetection. How does A-Buffer method determine the hidden surfaces?",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Define Specular reflection. Explain Fast Phong shading models with relevant expression.  [1+4]",
+          "marks": "5",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is anti-aliasing methods in computer animation? Ilustrate typical process of\nmorphing in computer graphics.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain key components of a virtual reality system in brief. Write down an application of\nAR system.",
+          "marks": "8",
+          "chapter": "Latest Trends in Computer Graphics",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Bhadra",
+      "year": "2082",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Is a scanned photograph a raster or vector graphic, why? How long will it take to load a\n1920 × 1080 frame buffer with 16 million colors, if the transfer rate is 10 Mbps?",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Write an algorithm for drawing a line using DDA. Draw an ellipse with major and minor\naxis values 8 and 6 respectively which is centered at origin. (for first quadrant only).",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "a) An object is translated by (5, -3), then rotated 90° clockwise, and then scaled by\n(2, 0.5). Find the inverse transformation matrix and apply it to the point (10, 5) to get\nthe original point before transformation.\n\n(b) Explain Liang-Barsky line clipping algorithm.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) An object P(2, 3, 5) is subjected to the following transformations in sequence: Rotate\nabout the Z-axis by 9o° counter-clockwise Scale by factors of 2 along X, 1 along Y,\nand 0.5 along Z. Translate by (3, -2, 4). Find the final coordinates of the object.\n\n(b) Derive expression for oblique parallel projection.",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Briefly explain parametric cubic curve. Cubic Bezier curve is described by four control\npoints (0,0), (2,1), (5,2) and (6,1). Find the tangent to the curve at t =- 0.5.",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "Explain surface modeling with suitable example. How is it different from wireframe and\nsolid modeling? Explain the significance of normal vector.",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Differentiate between object space method and image space method. Explain depth buffer\nmethod in detail.",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "a) Find the total intensity at the centroid of a triangle defined by points Pl(1,l,1),\nP2(0,2,1) and P3(0,0,1), illuminated by point light source of 0.5 intensity at (1,1,5)\nThe viewer is at (1,2,5). Given parameters: Ka= 0.7, Kd = 0.9, Ks  0.6 ns = 10 and\nambient intensity is 0.1.\n\n(b) Explain about the illumination model and its types.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain callback function with example in OpenGL. Write the basic command to draw a\npixel, line and polygon in OpenGL.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2082 Baishakh",
+      "year": "2082",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What causes pixels to glow or emit light in digital displays? A smartphone screen has a\nresolution of 1080 x 2340 pixels and a diagonal size of 6.5 inches. Calculate the pixels\nper inch (PPI) of the screen.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Discuss Digital Differential Analyzer (DDA) line drawing algorithm. Also write its\nadvantages and disadvantages.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Write the matrix for rotation of a point about an arbitrary pivot position. Transform the\nclipping method to clip a line starting from A(10, 10) and ending at B(60, 30) against the\nwindow having its lower corner at (15, 15) and upper right corner at (25, 25).",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Find the composite transformation matrix, CM, for a clockwise rotation of 9o° around\nthe y axis fixing the point (1, 0, 1) followed by a scale of (2, 1, 1) fixing the point\n(0, 1, 1). Apply the matrix to the Cartesian point (1, 2, -1). Find the transformed\ncoordinate.\n\n(b) Derive the perspective projection for the case that the view plane is uv-plane and\nprojection reference point on Z view axis.",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "How can you produce a smooth curve using approximation and interpolation techniques?\nExplain about parametric cubic curve. Define Bezier curve along with its properties with\nexample.",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "Given a polygon with vertices A (1, 2, 3), B (4,2,3), C (4,5,3) create the vertex table, edge\ntable, and polygon table for this polygon. Aiso calcuiate surface normal to this polygon.",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain about depth buffer methods. What is the limitation of Z-buffer method? How\ndoes A-buffer method overcome it, explain?",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What is illumination model and surface rendering? Explain in detail about specular\nreflection the Phong model. Differentiate the Gouraud and Phong shading.",
+          "marks": "8",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What is OpenGL? Explain call back function.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Chaitra",
+      "year": "2081",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 64,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": ". What is computer visualization? Calculate the frame buffer size for a raster system\nrecording a video for 1 min with resolution of 1280 x 1024 and storing 24 bits per pixel\nwith a refresh rate of 25 fps.",
+          "marks": "8",
+          "chapter": "Computer Animation and Visualization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) How the decision parameter can be used to draw a Circle? Draw the circle with the\nradius 7 and centre (10,15).\n\n(b) Differentiate between boundary fill and flood fill Algorithm.\n\n(c) Use the Cohen-Sutherland line clipping algorithm to clip two\nPi(40,50) - P2(75,45) and P3(70,20) - P4(100,10) against a window A (50,10), B\nlines\n(80,10), C (80,40) and D (50,40).",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "a) Suppose there is a rectangle whose coordinates are A(1,1), B(4,1), C(4,4), D(1,4) and\nthe window coordinates are (2,2), (5,2), (5,5), (2,5) and the given viewport location is\n(0.5,0), (1,0), (1,0.5) , (0.5,0.5). Calculate the viewing transformation.\n\n(b) Write the steps required to rotate an object in 3D about arbitrary axis. Explain about\nthe perspective projection.\n\n(c) Differentiate between Parallel Projection and Oblique Projection.",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Define spline curve. Explain Hermite curve for 3-degree polynomial with required\nexpression.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "Why do you mean by back face detection? Explain the Z buffer method for visible\nsurface detection in detail with its limitation.",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain the Phong shading algorithm. Mention the advantages of fast Phong shading\noverphong shading method.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is raster animation? Explain about motion specification in computer animation.",
+          "marks": "8",
+          "chapter": "Computer Animation and Visualization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain distributed scene rendering in brief. Differentiate between AR, VR and MR\ntechnology.",
+          "marks": "8",
+          "chapter": "Latest Trends in Computer Graphics",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Baishakh",
+      "year": "2081",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 88,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "How does a raster display system generate images on a screen? If the total number of\nintensities achievable out of a single pixel on the screen is 1024 and total resolution is\n1024x800, what is will be the required size of frame buffer incase of display purpose?",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Derive a decision parameter for midpoint circle algorithm assuming the start position as\n(+r, O) and points are to be generated along the curve path in clockwise direction.\nAlgorithms.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "Clip the line with end point A (5, 30), B(20, 60) Against a clip window with lower most\ncorner at P (10, 10) and upper right most corner at R (100, 100) using cohen sulter land\nline clipping algorithms.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Derive the two dimensional reflection matrix through the line y = x+1. What are the finial\nco-ordinates of objects (2, 3) (4, 3),(4, 5) about line y = x+1?",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Derive the single 3D transformation matrix for reflection through the plane containing\npoints with co-ordinates (5, 0, 0) and (0, 0, 5) and being parallel to the y-axis. Given 3D\ntriangle with end points (0, 0, 0), (1, 1, 2) and (1, 1, 3) is subjected to shearing with\nparameter 2 on x-axis and 2 on y-axis, 3 on z-axis and find out new co-ordinates of\nObject?",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Construct the Bezier curver of order 3 and with polygon vertices A (1, 1), B(2, 3), C(4, 3)\nand D(6, 4) at u =0, 0.25, 0.5, 0.75, 1. Derive the blending function for parametric cubic\ncurve.",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": true
+        },
+        {
+          "qNum": 8,
+          "text": "How do surface modeling techniques contribute to realistic rendering and visualization in\ncomputer graphics? Explain about blobby object representation.",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Differentiate between Image space and object space method. How is back face detection\nmethod used for visible surface detection? Explain in detail. How A buffer method\neliminate the drawbacks of Z buffer method?",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What is attenuation factor and Mach Band effect? Discuss the effect of Mach Band in\nPhong, Gourand and constant Shading.",
+          "marks": "8",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Define and explain the term ambient light, diffuse reflection and specular reflection with\nappropriate mathematical expressions.",
+          "marks": "8",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Mention any three-color command in OpenGL. How lighting is applied to the surface of\npolygon in OpenGL?",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Bhadra",
+      "year": "2080",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 96,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Differentiate between raster scan and random scan display. If we want to resize at\n1920x1080 image to one that is 1280 wide with the same aspect ratio, what would be the\nheight of resized image?",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Derive the P-value for Breshenham's line drawing Algorithm for m < 0 and ml > 1.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Using midpoint circle algorithms, calculate the co-ordinates to plot on first and second\nquadrant of a circle with center (6,7) and radius = 9.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Prove that two successive rotation operations are additive in composite transformation.\nFind the clipped region in the window of diagonal vertex (10,10) and (100,100) for line\nP1 (5,120) and P2 (80,7) using Liang -Barsky Line Clipping Algorithms.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What is the importance of window to view port transformation in computer Graphics?\nExplain two-dimensional viewing pipeline.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Derive the matrix for ortho-graphic projection. The pyramid defined by coordinates A\n(0,0,0), B (1,0,0), C (0,1,0) and D (0,0,1) is rotated by 45° about the line L that has\ndirection V = J+ K. Passing through point C (0,1,O). Find the final co-ordinates of\npyramid after transformation.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "List the properties of the B-spline curve. Derive Hermite matrix in Hermite Cubic Spline\nCurve. Find the coordinates at U = 0.3 with respect to the control points (10,12),\n(15,28),(22,35) and (28,9) using Bezier function.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 8,
+          "text": "Explain the importance of polygon table, plane equation and polygon mesh in surface\nmodeling.",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "How much memory is requires to implement z-buffer algorithms for a 512x512x24 bit-\nplane image? Explain how z-buffer algorithms determine the visibility of polygon surface\nalong with necessary derivations algorithms limitation.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What do you mean by illumination model? Explain about specular reflection with\nappropriate mathematical expression.",
+          "marks": "8",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "What are the different methods available for shading? Which one is more realistic and\nwhy? Explain with necessary derivation and algorithms.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Discuss the need of OpenGL. Explain callback function.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Baishakh",
+      "year": "2080",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define the terms pixel, resolution and pixel density. How much time is spent scanning\neach row of pixels during screen refresh on a raster system with resolution of 640x480\nwhose refresh is 24 frames per second? Also calculate the access time per pixel.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Derive an expression for drawing on ellipse.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Explain 2-D viewing pipeline. Obtain window to viewport transformation matrix with\nnecessary steps and figures. Give example.",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "The pyramid defined by the coordinate A(0,0,0),B( 1,0,0),C(0,1,0) and D(0,0,1) is rotated\n45° about line L that has direction V = J + K and passing through the point C(0,1,0).Find\nthe coordinate of the rotated figure.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "What is Bezier Curve? Find the co0rdinates of Bezier curve at u = 0.25, 0.5 and 0.75 with\nrespect to the control points (10,15), (15,25), (20,35), (25,15) using Bezier Function.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "How do you represent an object in 3D? Explain the steps to find surface normal vector of\na surface represented by Ax +By +Cz + D = 0.\nWhat is the limitation of Z- buffer method? How does A-buffer method overcome it?\nExplain.",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What is illumination model ? How light intensity of a point can be calculated? Also,\ndiscuss about the type of light source in intensity calculation.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What is Phong Shading Model? Write down the algorithm for this shading model. Can we\nuse this method to reduce Mach-Band effect?",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Write the importance of OpenGL in computer graphics. Write OpenGL syntax to draw a\nrectangle and polygon considering your own vertices.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2079 Bhadra",
+      "year": "2079",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Consider a raster system with a resolution of 1920 × 1080. How much storage is required\nif 24 bits per pixel are to be stored in a device with refresh rate of 50 Hz? Find out the\naspect ratio.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "How do you apply symmetry concept while drawing circle? Calculate the point in the\ncircumferences of the circle having radius 8 unit and center at (+8, 10) using midpoint\ncircle algorithm.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "What do you mean by homogenous coordinates? By listing the steps involved, find out\nthe final composite matrix for performing a rotation by 45 degrees about an arbitrary\npoint (5, 5) in anti-clockwise direction. Use the obtained composite matrix to obtain the\ntransformed coordinates of a triangle A(5, 6), B(6, 2) and C(4, 1).",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Explain about 3D viewing pipeline. How world-to-viewing coordinate transformation is\nperformed? Describe with expression.",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Write the properties of Bezier curve. A cubic Bezier curve is described by the four control\npoints. (0, 0), (3, 1), (5, 2) and (8, 1). Find the Bezier polynomial and the coordinate at\nf = 0.25, 0.5, 0.75.",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "What is polygon table? List the rules for making error free polygon table. How do you\ncalculate the spatial orientation of a polygon?",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Compare object space method and image space method. Explain depth buffer method in\ndetail. Compare it with A-buffer method.",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Find out the total intensity at the centroid of a triangle defined by A(2, 1, 1), B(0, 1, 1),\nC(0, 0, 1), when illuminated by a point light source of intensity IL = 0.6 at (3, 2, 8) using\nPhong Illumination model. The viewer is at (4, 3, 8). Assume ambient intensity Ia = 0.1\nand parameters: ka = 0.5, kd = 0.8, ks = 0.7, take x = 5. [centroid: (x1 + x2 + x3)/3,\n(y1 +y2 y3)/3, (z1 + z2 +z3)/3j. Explain briefly different ways of shading this triangle.",
+          "marks": "8",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Why OpenGL is used? Write the basic command to draw the pixel rectangle and polygon\nin OpenGL.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2078 Kartik",
+      "year": "2078",
+      "month": "Kartik",
+      "examType": "Back",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "1\nWhat is computer graphics? Calculate the total memory required to store a l0 minute\nvideo in a SVGA system with 24 bit true color and 60 fps refresh rate.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Write an algorithm for drawing a circle. Using midpoint circle drawing algorithm,\ncalculate the coordinates on the first quadrant of a circle having radius & and centre\n(10, 10).",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "It is necessary to construct curves using parameteric equations? Justify. List down the\nsteps for modeling curves using splines.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Reflected the triangle ABC about the line 3X - 4Y + 8 = 0. The position vector of the\ncoordinate ABC is given A(4, 1), B(5, 2) and C(4, 3).",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Describe 3D viewing pipeline. Derive complete world-to-viewing coordinate\ntransformation matrix.\nWhy do we use geometric tables and attribute tables for defining a polygon surface? How\ndo you calculate the spatial orientation of a polygon?",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is the limitation of Z-buffer method? How does A-buffer method overcome it\nexplain?",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Derive the expression to calculate the total light intensity in a point.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Compare and contrast between Gouraud and Phong shading model.",
+          "marks": "8",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What is OpenGL? How can we draw colored line and polygon using OpenGL?",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2078 Bhadra",
+      "year": "2078",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 80,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Distinguish between Raster and Vector graphics with suitable example.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Digitize the endpoint (20, 10) and (30, 18) using Bresenham's algorithm. How the\ndemerits of DDA is addressed in Bresenham's algorithm.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Derive the composite matrix for rotation about arbitrary point (a, b) in clockwise direction\nwith angle (0). Write an algorithm for Cohen Sutherland line clipping algorithm.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What are 3D Rotation and Shearing? Explain with matrix representations. A unit length\ncube with diagonal passing through (0, 0, 0) and (1, 1, 1) is sheared with respect to yz\nplace with shear constants = 2 in both directions. Obtain the coordinates of all the corners\nof the cube after shearing.",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What is Parametric Cubic Curve and why do you need it? Write down the step for cubic\nspline interpolation.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "What is Wire-frame model and why do we need polygon data table? Explain with\nexamples?",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Describe Z-Buffer method of visible surface detection. Compare this method to other\nmethods of visible surface detection.",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What do understand by diffused and specular reflections and explain in detail how these\nterms are included in illumination model?",
+          "marks": "8",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Define the term illumination and rendering. Write down the steps for phong shading\nmethod.",
+          "marks": "8",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Write down the Open GL syntax to draw basic 2D geometric primitives with examples.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2076 Chaitra",
+      "year": "2076",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 66,
+      "questions": [
+        {
+          "qNum": 3,
+          "text": "Define window and view port. Describe about two-dimensional viewing pipeline with\nmatrix representation at each steps.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Derive an expression for Perspective projection of a 3D point. Also, obtain perspective\nprojection co-ordinates for the pyramid with vertices of base (15, 15, 10), (20, 20, 10),\n(25, 15, 10), (20, 10, 10) and apex (20, 15, 20) given that zprp = 20 and zvp = 0.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Differentiate between Interpolation and approximation. Explain the process of performing\ncurve modeling using splines.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "How can we model cone or cylindrical like surfaces using boundary representation and\ntechnique?",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain Back-face detection algorithm for visible surface detection. Find the visibility for\nthe surface BED and ABCD where observer is at P(5, 5, 5).\nP(5, 5, 5)\nTE(0.2.0)\nD(-1,0,-1)\nB(1, 0, -1)\nC(-1,0,\nA(1, 0, 1)",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Define the term Surface rendering with Ilumination model. Derive an expression to\ncalculate the intensity of Diffuse reflection with necessary equations and figures. How do\nyou consider the distance to calculate the intensity for Specular and Diffuse Reflection? [2+5+3]",
+          "marks": "10",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What is Phong shading method? Can we use this method to reduce Mach-Band effect?",
+          "marks": "8",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What do you mean call back function? Illustrate with example.",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2076 Ashwin",
+      "year": "2076",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Differentiate between raster and vector graphics. Calculate the frame buffer size (in KB)\nfor a raster system recording a video for 1 min with resolution of 1280x1024, and storing\n24 bits per pixel with a refresh rate of 25 fps.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Explain the process of drawing ellipse in a raster graphics. Determine the pixel positions\nof following curve in first quadrant using mid-point algorithm.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "What do you mean by homogeneous coordinates? Rotate a triangle A(5,6), B(6,2) and\nC(4,1) by 45 degree about an arbitrary pivot point (3,3).",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "List down the steps for rotating a 3D object by 9o° in counter clockwise direction about\nan axis joining end points (1,2,3) and (10,20,30): Also derive the final transformation\nmatrix.",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Mention two important properties of Bezier Curve 'and find the Bezier Curve which\npasses through (0,0,0) and (-2,1,1) and is controlled by (7,5,2) and (2,0,1).\n: 6. Represent the following surfaces by polygon table method and find the normal of surface\nB(5,8,6)\nE(12,6,9)",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": true
+        },
+        {
+          "qNum": 7,
+          "text": "How hidden surfaces can be removed? Explain in detail about depth buffer methods.",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What is OpenGL? How pixels, lines and polygon is drawn and transformation is\nperformed in OpenGL?",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "List down different types of object and explain how Phong illumination model is used to\ncalculate intensity in for these objects along with mathematical expression.",
+          "marks": "8",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Explain in detail about Phong shading.",
+          "marks": "8",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Chaitra",
+      "year": "2075",
+      "month": "Chaitra",
+      "examType": "Back",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define computer graphics. Illustrate about components for computer graphics.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Differentiate between DDA and Bresenhamline drawing algorithm. Explain Bresenham\nline drawing algorithm and use this algorithm to draw a line with end points (25,20) and\n. 3. Write matrix for 2D reflection about axes. Derive the transformation matrix responsible\nfor the reflection of 2D object about line y+x=0.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "Explain with a block diagram about the 3D viewing pipeline. Along with the\ntransformation matrix, describe how perspective projection is performed?",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "Find the coordinates at U=0.25, 0.5, and 0.75 with respect to the control points (10,10),\npoints.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "How can a 3D-Dimensional object be modelled? How a normal to a plane of this object is\ncalculated?",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain backface detection algorithm. Determine whether two surfaces of a object with\nnormals 2i-3j+4k and i+ j-2k respectively, viewed from a direction given by\ni - j + k are backface or frontface.",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "How polygon is drawn in OpenGL? How lighting is applied to this polygon surface?",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Derive the expression to calculate the intensity of Specular Reflection in the presence of\nPoint light source. Also write the expression for multiple light sources. How do you\nconsider the distance to calculate the intensity for Specular Reflection?",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Write down an algorithm for intensity interpolation shading scheme.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Ashwin",
+      "year": "2075",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Compare random and raster display technology.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "How symmetry property of circle reduces omplexity to draw a complete circle. Derive\ndecision parameter for midpoint circle algorithm assuming the start position as (-r, O)\npoints are to be generated along the curve path in counter clockwise direction.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "Use Liang Barsky line clipping algorithm to clip a line starting from (6,100) and ending at\n(60, 5) against the window having its lower left corner at (10, 10) and upper right corner\nat (90, 90).",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Reflect the triangle ABC about the line 3X-4Y+8=0 the position Vector of coordinate\nABC as A(4, 1), B(5, 2) and C(4, 3).",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Develop the Matrix to transform an object from Three-Dimensional World Coordinate to\nViewing Coordinate system. A unit length cube with diagonal passing through (O, O, 0)\nand (2, 2, 2) is shared with respect to ZX-plane with share Constants = 3 in both\ndirections. Obtain the final coordinates of the cube after shearing.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Do you agree Polygon Descriptions are referred to as \"Standard Graphics Object\", If yes,\nWhy? If you have three coordinates (X1, Y1, Z1), (X2, Y2, Z2) and (X3, Y3, Z3), then\nhow do you find the coefficient of Surface Normal N(A, B, C)?",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Compare the Gouraud shading with Phong shading. Develop the expression for Phong\nmodel considering the intensity attenuation for multiple point light sources with necessary\nfigures.",
+          "marks": "8",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What is the difference between object space method and image space method for visible\nsurface determination? Describe scan line method to find visible lines with example.",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What is OpenGL? Explain Call back function?",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2074 Chaitra",
+      "year": "2074",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What do you understand by raster display technology? Suppose a RGB raster system is to\nbe designed using an 8 inch by 10 inch screen with a resolution of 100 pixels per inch in\neach direction. How long would it take to load this raster system in frame buffer with 24\nbits per pixel, if 10' bits can be transferred per second?",
+          "marks": "8",
+          "chapter": "Computer Animation and Visualization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "How decision parameters can be used to draw circle? Calculate the points to draw a circle\nhaving radious 5 and center as (10, 5).",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "Explain Sutherland-Cohen clipping algorithm with an example.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Find the coordinate at U = 0.25, U = 0.5, and U = 0.75 with respect to the control points\n(2, 10), (6, 20), (12, 5) and (16, 15) using Bezier function. And plot Bezier curve with\nyour calculated coordinates.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "Describe 3-D viewing pipelining. Derive the transformation matrix for prespective\nprojection.",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "How the geometric and attribute information of a 3-D objects are stored for the object\nrepresentation? Explain with examples.",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What are the consideration factors to choose the Visible Surface Detection Algorithm?\nWhat are the two classes of visible surface detection techniques, explain? What is\nlimitation of Z-Buffer method? How does A-Buffer method overcome it, Explain?",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Develop a phong illumination model. Show how this model is used for rendering by\nderiving of expression for phong shading.",
+          "marks": "8",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain callback function with example in openGL.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2074 Ashwin",
+      "year": "2074",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 64,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Distinguish between Raster and Vector graphics methods. When do we prefer them?",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Digitize the line with end points A(20,10) and B(30,18) using Bresenham algorithm.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Clip the line P1P2 with P1(-5,3) and P2(15,9) with clip window having diagonal\ncoordinate (0,0) and (10,10) using Liang-Barskey line clipping method.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Explain the steps required to rotate an object in 3D about a line which is not parallel to\nany one coordinate axis.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "How Geometric tables are used to represent a 3D object? Explain with example. Give\nconditions to generate error free table.",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain properties if Bezier curve. Find the coordinate at u = 0.2 with respect to the\ncontrol points (1,1), (4,6) (8,-3) and (12,2) using Bezier function.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 7,
+          "text": "Differentiate image space and object space method for visible surface determination.\nExplain scanline method to determine visible surface of object.\n(10,10,1)\nFind out intensity of light reflected from the midpoint P on scan line y = 3 in the above\ngiven figure using Gouraud shading model. Consider a single point light source located at\npositive infinity on Z-axis and assume vector to the eye as (1,1,l). Given d = 0, K = 1,",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 9,
+          "text": "What is OpenGL? Explain Callback Function.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2072 Chaitra",
+      "year": "2072",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 104,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What are the differences between random and raster display technologies?",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "How do you apply symmetry concept while drawing circle? Calculate the point in the\ncircumferences of the circle having radius 8 unit and center at (-5, 10) using midpoint\ncircle algorithm.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "What are the conditions for a point clipping? Find the clipped region of the line with\nendpoins (5, 130) and (50, 5) in a rectangular window with (10, 10) and (100, 100)\ndiagonal vertices using Cohen-Sutherland line clipping algorithm.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "What is 3D Shearing? Write its matrix representation. A unit length cube with diagonal\npassing through (0,0,0) and (1,1,1) is sheared with respect to yz place with the shear\nconstants = 2 in both directions. Obtain the coordinates of all the corners of the cube after\nshearing.[2+8]",
+          "marks": "10",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain about parametric cubic curves. What do you mean by Bezier Curve? Explain the\nproperties of Bezier curves.",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "Explain how the geometric and attribute information of a three dimensional objects are\nstored for the object representation? What are the conditions for error free generation of\npolygon table?",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Outline the Z buffer algorithm. List the advantages and disadvantages of the z-buffer\nalgorithm.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain about different types of lighting sources and how these light sources affect the\nillumination model? Explain about the intensity interpolation surface rendering technique\nby highlighting its pro and cons. Also give example about phong illuminations model. [3+5+6]",
+          "marks": "14",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Why GLUT is implemented in OpenGL? What are the applications of OpenGL?\nExam.:\nTRBHUVANUNIVERSITY\nNew Bae (2066 & Later Bitch)\nINSTITUTE:OF.ENGINEERING..\n.Level\nFulMarks80\nBEX, BCT\n2072.Kantik:\nYear./Part\nTime\n3'hrs.\nArtenpt All guestions.:\nAssime suitable data.if necessary.\nDerive the Bresenham's 'decision parameter to draw'a line moving.from leff to right andi\nhaving negative.slope. State the condition.to identify you are .in the second.region of.the\n.ellipse using mid point algorithm. :",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 2,
+          "text": ".Write'down the.condition for point .clipping.. Find. the clipped. Iegion in-window of.\ndiagonal vertex  (10,10) . and . (100.100) for -line : Pr. (5,120) and. P2(80,7). using\n- Liang-Barsky line clipping method.'\n3: Find.the transformation matrix the transforms.that rectangle ABCD:whose center is at\n(4.2) is reduced to. haifof.its size, the center.will remain same. The cojordinate of ABCD\nare: A(0,0), B(0,4),. C(8,4) and D(8,0). Find Coordinate 'of new square. Also derive ,the\ntransformation matrix.to:convert this rectangle to'square: :\n4: oList aut the properties of Bezier curve. What is-order of continuity? Explain.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": ": .Explain the significance of spatial orientation.of a surface and polygon' tables..Explain.\nwith example.",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": ". Compare Z-buiffer and A-Buffer -algorithm.Also write:algorithm to find visible surfaces\n.using 'scan-line method. :\ngouroud shading.\n8: : Write'short:notes.on:\n\n(a) . Raster:scan.display.\n\n(b) ..OpenGL",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2071 Chaitra",
+      "year": "2071",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 32,
+      "questions": [
+        {
+          "qNum": 3,
+          "text": ". The reflection'along the line y.- x is equivalent to the reflection along.the X-axis.followed!\n.counter clock wise rotation by .α (alpha) Degree..Find'the angie α:\n:: Write rotation matrix in clockwise direction with respect to x-axis, y-axis and z-axis..Rotate\nthe object (0, 0, 0), (2, 3; 0), (5, 0,4) about the rotation axis y.=4.\ns. : Write:do,n propertiesof'Bezier curve: Find'equation of Bezier curve whose.controf pBints'\n[o1]\nExplain boundary representation technique to.represent the 3D object with suitable example.\nHow can you. fnd the spatial orientation of a. surface? . :\n:: Explain.z-buffer. algorithm :along. with necessary:steps needed to calculate the depth: What is\n-its drawback?",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 8,
+          "text": ": Define.the terms:\ni):Ambient light\niiy Lambert cosine law\niti) Diffuse reflection!\niy) Specularrefectione\nAlso find' equation for intensity-of-point by using Phong illumination model?\nWhat is openGL? Explain callback.function.\nEam.\nFullMarlsIso\nBEX,BCT:\n2071 Shawan\nTime\n3 hrs.\nAitempt All questions.\n1: : Consider.a raster scan system having 12 inch:by: 10 inch'screen with a resolution of 100\npixels per inch in each direction. If the-display controller of this .system refreshes the\nscreen'at. the rate of 50 frames.per second, how many pixels could'be accessed per second :\n:and what is the acces's time per. pixel'of the system?\n.What is scan conversion? Derive the Bresenham's 'decision parameter fo draw'a line with'\n. negative slope and /m/>1.:\n'Given a clipping window A (10, :10), B (40.40), C(40,40) and D(10,40).. Using\ncohen-sutherland line .clipping algorithm find region code of. each end points'of lines.\nP1P2, P3P4 and P5P6 where:co-ordinates. are P1 (5.15). P2(25;30), P3(15,15). P4(35:30),\n. P5(5:8).and P6(40,1 5).:Also find clipped line's tising aboye parameters.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": ".. Perform-rotation of a line (10. 10. 10). (20, 20. 15) about Y-axis in clock wise direction\nby'90 degree. Explain about vector display.\n: Derive the eguation for cubic Bezier curve. Also write down its properties.\nExplain how the 3D.object is, represented using .polygon' table representationitechnique?\nExplain any-one technique to calculate the spatial orientation' of the individual surface\ncomponent .or 3D object..\n7Desoribe scan line method to find visible lines with example:\n.8. Under.what condition(s) fat'shading give's.accurate rending? Mention the disadvantage of.\nintensity interpolation'technigue and explain Phong shading with. necessary.mathematical\nacalcuabr.Eaplain ce d.sors",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": true
+        },
+        {
+          "qNum": 9,
+          "text": "WhyGLUT is implemented inOpenGL?.Explain OpenGLsyntax to draw\nparalleiogram having verticals (0.0, 0.0), (1.0, 0.0). (1.5. 1.2) and (0.5.r.2).",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2071 Chaitra",
+      "year": "2071",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 64,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Differentiate Random and Raster display technology.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Compare between DDA and Bresenham's line drawing algorithm. Derive and write mid-\npoint algorithm to draw ellipse.\n[o1]",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "The reflection along the line y = x is equivalent to the reflection along the X-axis followed by\ncounter clock wise rotation by α (alpha) Degree. Find the angle α.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Write rotation matrix in clockwise direction with respect to x-axis, y-axis and z-axis. Rotate\nthe object (0, 0, 0), (2, 3, 0), (5, 0, 4) about the rotation axis y =4.",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Write down properties of Bezier curve. Find equation of Bezier curve whose control points\nare P0(2,6), P1(6,8) and P2(9,12). Also find co-0rdinate of point at u - 0.8.\n[oi]\n: 6. Explain boundary representation technique to represent the 3D object with suitable example.\nHow can you find the spatial orientation of a surface?",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": true
+        },
+        {
+          "qNum": 7,
+          "text": "Explain z-buffer algorithm along with necessary steps needed to calculate the depth. What is\nits drawback?",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Define the terms:\ni) Ambient light\ni) Lambert cosine law\nii)Diffusereflection\niv) Specular reflection\nAlso find equation for intensity of point by using Phong illumination model.",
+          "marks": "8",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What is openGL? Explain callback function.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2070 Chaitra",
+      "year": "2070",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "How much time is spent scanning across each raw of pixels during screen refresh on a\nraster system with resolution 1024x768 and a refresh rate of 60 frames per second?",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Mention the disadvantages of DDA method. Write the complete Bresenham's line\ndrawing algorithm and using midpoint circle drawing algorithm calculate the co-ordinate\non the first quadrant of a circle having radius 6 and centre (20,10)",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "State the conditions of point clipping. Perform clipping operation for the following using\nLiang Barskey line clipping algotithm:\nClipping window: (Xmin, Ymin) = (2,5) and (Xmin, Ymin) = (35,50)\nLine: (x1, y1) = (-2,2) and (x2,y2) = (45,40)",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Define window and view port. Describe three dimension windows to view port\ntransformation with matrix representation for each step. Derive oblique projection matrix\nwith necessary assumptions.",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Define Hermite Interpolation in defining a curve. Use it to find the blending function of a\nparametric cubic curve in 2D graphics.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "Describe polygon, Vertex and Edge table of polygon. How these terms are important in\ncomputer graphics.",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Describe z-buffer method for visible surface detection in detail. State its-limitation and\nrecommended method that addresses it.",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Calculate the total intensity using phone secular reflection model by considering all type\nof light sources.\nCompare and Contract between Gouraud and Phong Shading Model.",
+          "marks": "8",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Write short notes on:\n\n(a) Call back function\n\n(b) Open GL",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2068 Chaitra",
+      "year": "2068",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 56,
+      "questions": [
+        {
+          "qNum": 4,
+          "text": "Find the new coordinates of a unit cube 90°-rotated about an axis defined by its endpoints\nA(2,1,0) and B(3,3,1).",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Why. 3D graphics is more complex than 2D graphics? Explain with the help of viewing\npipeline.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain about parametric cubic curve? What is a Bezier Curve? Explain its properties. : [3+3+2]",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": true
+        },
+        {
+          "qNum": 7,
+          "text": "Explain how the geometric and attribute information of a three dimensional objects are '\nstored for the object representation? What are the conditions for error free generation of\npolygon table?",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Differentiate between image space and object space methods of visible surface detection.\nDescribe A-Buffer method of visible surface detection.",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain the Gourad shading for polygon-rendering and compare it with phong shading.: :",
+          "marks": "8",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Write short notes on: (any two)\n[4x2]\nSpecular Reflection\n\n(b) Midpoint circle decision parameter\nApplication of OpenGL in Computer Graphics",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2068 Bhadra",
+      "year": "2068",
+      "month": "Bhadra",
+      "examType": "Back",
+      "totalMarks": 24,
+      "questions": [
+        {
+          "qNum": 4,
+          "text": "How do you perform shearing operations in 3-D in different directions? Discuss with\nnecessary shear matrix.",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Formulate a matrix that converts 2-D scene described in world coordinates to'viewing\ncoordinates.\nWhat are the object space and image space method of hidden surface removal? Describe\nback face detection method of hidden surface removal.",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Discuss a constant intensity shading method. Mention the advantage of Phong shading\nover'Gouraud shading.\nWrite short notes on: (any two)\n\n(a) Raster display and vector display system\n\n(b) 2-D viewing pipeline\n\n(c) Plasma display",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2067 Mangsir",
+      "year": "2067",
+      "month": "Mangsir",
+      "examType": "Back",
+      "totalMarks": 56,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Write down the mid point circle algorithm. How symmetry of circle helps to reduce\ncomputation steps? Explain.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Write down the Bresenham's line drawing, algorithm for drawing straight line with\nconsideration of all the slope categories.:",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Which transformation converts a square to a rhombus? Obtain reflection matrix to reflect\na point about the line y =- x.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "A unit length cube with a diagonal passing through (0,0,0) ani (i,i,1) is'sheared with\nrespect to yz plane with the shear constants =- 2 in both directions. Obtain -the coordinates\nof all the corners of the cube after shear. :",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "A 3-D scene is viewed from point (1,1,1) with'camera orientation described by the\norientation 'of three orthogonal vectors (1,1,1), (1,2,-3) and (-5,4,1).: Obtain the\ntransformation matrix to -describe the scene with respect to camera orientation.",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What are object space and image space method of hidden surface removal? Describe one\nof the image space methods of hidden surface removal.",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the Phong shading algorithm. Mention the advantages of Phong shading over\nGouraud shading.\nWrite short notes on: (any two)\nBezier Curve\nResolution and Aspect ratio of a Monitor\nFlat panel Displays",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": true
+        }
+      ]
+    },
+    {
+      "session": "2066 Magh",
+      "year": "2066",
+      "month": "Magh",
+      "examType": "Regular",
+      "totalMarks": 24,
+      "questions": [
+        {
+          "qNum": 3,
+          "text": "Justify with necessary matrix operations that the two successive rotations in 2-D is\n. additive.\n4, A 2 units length cube :with a diagonal 'passing through (0,0,0) and (2,2,2) is spinning\nabout an axis.parallel to z-axis with angle.180 degree. Obtain the matrix involved for the\noperation.",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Derive appropriate mathematical relation to transform 2-D scene (points). in world\nwindow to normalized view window.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Mention different types of projections. Derive oblique projection matrix with necessary\nassumptions.\n7/ Discuss Phong Illumination model with distance consideration.\n8,Write short notes on:\n\n(a) Backface Detection Algorithm\nFlat Panel Display",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2066 Shrawan",
+      "year": "2066",
+      "month": "Shrawan",
+      "examType": "Back",
+      "totalMarks": 88,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Differentiate between vector and raster scan systems.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Derive and write midpoint algorithm for drawing a circle.",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "What are the different steps of two dimensional world to screen viewing transformation?\nDescribe with matrix representation at each steps.",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Obtain the end points of the line that connects P1(0,120) and P2(130,5) after cohen-\nsutheland clipping. The clip window has the following parameters.\nxOmin = 0, yQ min = 0, xOmax =150 and yo max =100",
+          "marks": "8",
+          "chapter": "Raster Graphics and Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Describe three dimensional viewing pipelining. Derive the transformation matrix for\nparallel projection.",
+          "marks": "8",
+          "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain about parametric cubic curve? What is a Bezier Curve? Explain its properties\nwith examples.",
+          "marks": "8",
+          "chapter": "Curve Modeling and Surface Modelling",
+          "isDiagram": true
+        },
+        {
+          "qNum": 7,
+          "text": "Explain boundary representation technique to represent three dimensional objects with\nsuitable example.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Compare object space method with image space method. Explain, How Back-face\ndetection method is used to detect visible surface. Also explain z-Buffer method.",
+          "marks": "8",
+          "chapter": "Visible Surface Determination",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Define and explain the term ambient light, diffuse reflection and specular reflection with\nappropriate mathematical expressions.",
+          "marks": "8",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Explain the method of Phong shading for polygon rendering.",
+          "marks": "8",
+          "chapter": "Illumination and Surface Rendering Methods",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Explain about Open GL and call back functions.",
+          "marks": "8",
+          "chapter": "Introduction and Application",
+          "isDiagram": false
+        }
+      ]
     }
   ]
 }

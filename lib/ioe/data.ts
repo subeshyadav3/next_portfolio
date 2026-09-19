@@ -262,11 +262,39 @@ function normalizeQuestionsData(raw: RawSubjectQuestionsInput | null | undefined
       ? raw.chapters
       : Array.from(chSet);
 
+  const yearWisePapers = Array.isArray(raw.yearWisePapers)
+    ? (raw.yearWisePapers as Array<Record<string, unknown>>).map((paper) => {
+        const pQuestions = Array.isArray(paper.questions)
+          ? (paper.questions as RawQuestionInput[]).map((q) => {
+              const text = (q.text as string) || (q.question as string) || "";
+              const chapter = (q.chapter as string) || "General";
+              chSet.add(chapter);
+              return {
+                ...q,
+                text,
+                question: text,
+                chapter,
+                marks: q.marks !== undefined ? String(q.marks) : undefined,
+              };
+            })
+          : [];
+        return {
+          session: (paper.session as string) || "",
+          year: paper.year as string | undefined,
+          month: paper.month as string | undefined,
+          examType: paper.examType as "Regular" | "Back" | "Special" | undefined,
+          totalMarks: typeof paper.totalMarks === "number" ? paper.totalMarks : undefined,
+          questions: pQuestions,
+        };
+      })
+    : undefined;
+
   return {
     ...raw,
     subject: raw.subject ?? "",
     chapters,
     questions,
+    yearWisePapers,
   };
 }
 

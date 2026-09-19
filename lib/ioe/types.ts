@@ -78,7 +78,19 @@ export interface IoeQuestion {
   id?: string;
   importance?: string;
   difficulty?: string;
+  isDiagram?: boolean;
+  qNum?: number;
+  subPart?: string;
   variations?: IoeQuestionVariation[];
+}
+
+export interface IoeSessionPaper {
+  session: string;
+  year?: string;
+  month?: string;
+  examType?: "Regular" | "Back" | "Special";
+  totalMarks?: number;
+  questions: IoeQuestion[];
 }
 
 export interface IoeSubjectQuestions {
@@ -86,6 +98,7 @@ export interface IoeSubjectQuestions {
   generated?: string;
   chapters?: string[];
   questions: IoeQuestion[];
+  yearWisePapers?: IoeSessionPaper[];
 }
 
 export interface IoeSyllabusTopic {

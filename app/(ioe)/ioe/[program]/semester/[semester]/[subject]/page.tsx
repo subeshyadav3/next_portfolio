@@ -221,6 +221,7 @@ export default async function IoeSubjectPage({ params }: PageProps) {
           <YearWiseQuestions
             subject={subjectRow.title}
             questions={questionsData.questions}
+            yearWisePapers={questionsData.yearWisePapers}
           />
         </>
       )}

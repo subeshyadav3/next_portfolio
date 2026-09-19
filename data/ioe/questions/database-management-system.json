@@ -1,6 +1,35 @@
 {
   "subject": "Database Management System",
-  "generated": "2026-09-09",
+  "generated": "2026-09-19",
+  "totalSessions": 26,
+  "sessions": [
+    "2082 Chaitra",
+    "2082 Kartik",
+    "2081 Chaitra",
+    "2081 Ashwin",
+    "2080 Chaitra",
+    "2080 Ashwin",
+    "2079 Chaitra",
+    "2079 Ashwin",
+    "2078 Chaitra",
+    "2077 Chaitra",
+    "2076 Bhadra",
+    "2076 Baishakh",
+    "2075 Bhadra",
+    "2075 Baishakh",
+    "2074 Bhadra",
+    "2073 Magh",
+    "2073 Bhadra",
+    "2072 Ashwin",
+    "2071 Bhadra",
+    "2070 Magh",
+    "2070 Bhadra",
+    "2068 Magh",
+    "2068 Bhadra",
+    "2066 Magh",
+    "2066 Magh",
+    "2066 Bhadra"
+  ],
   "chapters": [
     "Introduction",
     "Data Models",
@@ -448,6 +477,1922 @@
       "frequency": 4,
       "frequencyTier": "Very High",
       "solutionOutline": "NoSQL provides schema-less, distributed, highly available data storage for unstructured/semi-structured big data. Key-Value (Redis), Document (MongoDB), Columnar (Cassandra), Graph (Neo4j). RDBMS guarantees ACID with vertical scaling; NoSQL follows BASE (Basically Available, Soft state, Eventual consistency) with horizontal scale-out."
+    }
+  ],
+  "yearWisePapers": [
+    {
+      "session": "2082 Chaitra",
+      "year": "2082",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 80,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define data independence. Explain logical and physical data independence with\nexamples.",
+          "marks": "8",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "What are the different types of keys? A hospital plans to develop a hospital management\nsystem. The system should maintain patient details and allow patients to book ,\nis linked to one patient and one doctor. Similarly, a doctor can attend many appointments.\nDoctors work in departments. Each department can have many employees, doctors,\nnurses, and other staffs, but cach belongs to only one department. Patients may receive\ntreatment from multiple doctors, and a doctor may treat multiple patients. Doctors can\nalso issue prescriptions to patients, a doctor can write many prescriptions, and a patient\ncan receive many prescriptions. If a patient requires hospitalization, the patient may be\nadmitted multiple times, but each admission is associated with only one patient, For every\nadmission, exactly one bill is generated, and each bill corresponds to only one admission.\nDesign an ER diagram for this system, clearly representing the entities, their attributes,\nand the relationships with appropriate cardinalities.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "Consider the following relational schema.\nStudent (Rno, Sname, Address, city, Mobile)\nDepartment (Did, Dname)\nAcademic (Rno, Did, SPI, CPI, Backlog count)\nGuide (Rno, Project name, Fid)\nFaculty (Fid, Faculty name, Subject, Did, Salary)\nWrite relational algebra for the following:\n\n(a) List the name of students with their department name having backlog 0.\n\n(b) List the name of faculties with their department name and salary having salary\nmore than 125,000 and belongs to \"BCT\" department.\n\n(c) Insert a new data (10, ‘Dhawa', Prithivi Chowk', ‘Pokhara',\"9891123456\").\n\n(d) List the name of students with their department name doing project \"Chatbot\"\nunder the guidance (faculty. name) of \"Ram\"",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Consider the above relational schema.\n\n(a) Write a SQL to count the faculty per department only if the department have more\nthan 5 employees.\n\n(b) Write a SQL query to display the total salary of teachers according to department\nname in descending order of total salary.\nWrite SQL to update the salary of employees by 15% if salary is less than 50 k, by\n10% if salary is in between 50 k to 100 k and by 5 % if salary is greater than 100 k\n\n(d) Write SQL, query to show the details of employee with 2nd highest eaming.",
+          "marks": "8",
+          "chapter": "Relational Query Languages",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Why is normalization necessary? Explain. What are the criteria for a relational schema to\nbe in BCNFand what factors differentiateit from 3NF.",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What are the different steps involved in query processing? Explain with an exanple.\nWhat are the different approaches of optimization?",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is indexing in a database? Explain primary indexing and secondary indexing with\nexample.",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain ACID properties in database transaction with an example, Define deadlock and\nexplain how wait-die scheme and wound-wait scheme helps to prevent deadlock.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What are the types of failures in database? What is check pointing in a database system?\nExplain its purpose and describe how it is performed to improve database recovery.",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Write short notes on: (Any Two)\n\n(a) Object oriented database\n\n(b) Serializability\n\n(c) Functional dependencyand itstypes",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2082 Kartik",
+      "year": "2082",
+      "month": "Kartik",
+      "examType": "Back",
+      "totalMarks": 80,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Briefly explain the three levels of data abstraction in RDBMS. What is physical data\nindependence?\nFxplain different types of keys in a relational database along with example.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Draw an ER-diagram for this case: Hospital Management System.\nA hospital has multiple departments such as Cardiology, Neurology, Orthopedics, etc.\nEach department has a unique department ID and a name. The hospital has several\ndbctors, each identified by a doctor ID. Doctors have attributes like name, specialization,\nahd experience. A doctor belongs to one department but may treat multiple patients. Each\npatient has a patient ID, name, age, gender, and medical history. Patients can be admitted\nto the hospital or be outpatients. Each patient is assigned a room when admitted. A room\nhas a room number, type (ICU, General, Private), and cost per day. The hospital has a\nnurse staff, where each nurse is identified by an employee ID, name, and shift timings.\nNurses assist doctors and take care of patients. The hospital also has a pharmacy, which\nstores medicines identified by a medicine ID, name, and expiry date. Patients may be\nprescribed medicines by doctors. The hospital maintains records of appointments, where a\npatient consults a doctor at a specific date and time.\nGonsider the following relational database model for a University\nStudent (sid, name, age, major, dept _id)\nCourse (cid, title, credits, dept _id)\nEnrollment (sid, cid, semester, year, grade)\nDepartment (dept id, dept_name, hod _id)\nProfessor (pid, name, salary, dept id)\nTeaches (pid, cid, semester, year)\nWrite relational algebra expressions for the following.\nFind the sid and name of all students who have enrolled in a course titled \"Database\nSystems\".\nii) List the cid and title of all courses that offer more than 4 credits and belong to the\n\"Computer Science\" department.\nii) Increase the salary of all professors in the \"Mathematics\" department by 15%.\ndonsider the following schema\nPerson (driver id, name, address)\nAccident (report no, date, location)\nOwns (driver id, car)\nParticipated (driver id, car, report no, damage._amount).\nWrite SQL query for the following.\n[4x2]\nFind the names and addresses of drivers who own a car and have been in an accident.\nFind the total damage cost for each accident report.\niib) Find accidents where the total damage cost exceeded rs 50,000.\nivh Find all cars that were involved in accidents and the names of their owners.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "Define integrity constraints in DBMS. Give examples of domain constraints with its SQL\nsyntax.",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) How do you compute an attribute Closure? Explain with a suitable example.\nDefine 3NF along with a suitable example schema. Compare 3NF with BCNF.",
+          "marks": "8",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What are the steps in query processing? Explain briefly. List out any 3 equivalence rules\nfor relational algebra for query optimization.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain fixed-length and variable-length records in File Organization. Explain how a hash\nindex works, Distinguish between static and dynamic hashing.",
+          "marks": "8",
+          "chapter": "File Structure and Hashing",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Determine whether the following schedule S is serializable or not. Justify your answer\nOperation\nR(X)\nw(x)\nw(x)\nw(x)",
+          "marks": "8",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Explain the two types of locks: shared locks and exclusive locks used for concurrency\ncbntrol. Explain their compatibility.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What is a stable storage? What are checkpoints in Log based recovery Mechanism? How\ndata are recovered using checkpoints?",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Write short notes on:\n\n(a) Distributeddatabases\n\n(b) Data warehouses",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Chaitra",
+      "year": "2081",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 96,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Why do we prefer DBMS over file system for handling databases? Briefly explain.",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Explain the various elements of the relational data model along with an example.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "A relational database is to be designed for a medium sized Company dealing with\nindustrial applications of computers. The Company delivers various products to its\ncustomers ranging from a single application program through to compiete installation of\nhardware with customized software. The Company employs various experts, consultants\nand supporting staff. All personnel are employed on long-term basis, i.e. there is no short-\nterm or temporary staff. Although the Company is somehow structured for administrative\npurposes (that is, it is divided into departments headed by department managers), all\nprojects are carried out in an inter-disciplinary way. For each project, a project team is\nselected, grouping employees from different departments, and a Project Manager (also an\nemployee of the Company) is appointed who is entirely and exclusively responsible for\nthe control of the project, quite independently of the Company's hierarchy. Construct an\nER diagram assuming the necessary attributes, relationship sets and mapping constraints.\nBook(BID, Title, Author, Genre, Publisher, Year)\nMember(MID, Name, Email, Phone, Address)\nIssuedBook(LibID,MID, BID, IssueDate, ReturnDate)\nLibrarian(LibID, Name, Email, Phone, Salary)\nManages(LibID, BID)\nWrite relational algebra expression for the given queries:\ni) Find the Book title, author name and publication year where genre is Novel.\ni) Delete all the information of members who are from Kathmandu City.\nii) Find the Book title and librarian name who had managed the books that were\npublished by Pearson publication.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 5,
+          "text": "Consider the same database in question 4. Write SQL expressions for the given queries:\ni)Dispiay the members name who have issued book on Jan 20, 2025.\ni) Display the name of librarian name who issued book title starting with 'D' using sub\nquery.\nii) Update salaries of all librarian by 10 % to those whose salary is less than 50000 and\nby 5% to the rest.\nLibrarian ID and their Name who manages the book. The Book Publication year\nshould be from1990 to 2010and publisher should be‘Wiley'.",
+          "marks": "8",
+          "chapter": "Relational Query Languages",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What are the advantages of using database views in a DBMS? Give one example of view\nwith SQL script.",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What is database normalization and why is it needed? Explain 1NF, 2NF, 3NF and BCNF\nalong with examples.",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "List out and describe the main steps involved in query processing in an RDBMS.\nCompare cost-based optimization and heuristic optimization.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain the different levels of RAID briefly. What is indexing in database? Differentiate\nbetween dense index and sparse index.",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Let a schedule S be R1(X) W1(X); W2(X); R3(Y) W3(Y) W3(X); R1(Y) conclude\nwhether the given schedule is conflict serializable or not.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Explain the pitfalls of Lock based Protocols. Show an example of a deadlock.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "What are logs in DBMs? How do you recover from a crash using log-based recovery?\nExplainbriefly.",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
+          "text": "Explain the main features of an object-relational database. Explain fragmentation and\nreplication in distributed databases?",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2081 Ashwin",
+      "year": "2081",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define database. Explain DDL, DML and DCL with examples.",
+          "marks": "8",
+          "chapter": "Relational Query Languages",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) What do you mean by referential integrity? Explain the different possibilities for\nupdate and delete with referential integrity.\n\n(b) A Home Decor company sells different furniture and has salespersons. A salesperson\nmay manage many other salespeople. A salesperson can sell furniture for many\ncustomers. A customer is managed by only one salespeople. A customer can place\nmany orders. An order can be placed by one customer. An order lists may contain\nmany furniture items. A furniture item may be listed on many orders. A furniture item\nis identified from its brand name. A supplier can supply furniture from many brands.\nEvery supplier are recognized by their name address and phone number. The Decor\nCompany makes multiple payment per month to the supplier.\nConstruct an ER diagram assuming the necessary attributes, relationship sets and\nmapping constraints.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "a) Consider the relational database as follows. Write relational algebra expression for\neach of the following.\nlives(person-name, street,city)\nworks(person-name, company-name, salary)\nlocated-in(company-name, city)\nmanages(person-name, manager-name)\ni) Find the name of persons working at “\"City Bank\" who earn more than\nii) Find names of all persons who live in the same city as the company they work\nfor.\nii) Increase the salary of all persons working for “City Bank\" by 5%.\niv) Give expression in QBE to find all the records of Manager whose name starts\nwith \"M' and Salary is more than 60,000.\n\n(b) Consider the following relational schema.\nEmployee (empid, ename, address, title, headid)\nProject (pid, pname, budget, location)\nWork (empid, pid, responsibility, duration)\nPayment (title, salary)\nWrite SQL code to create the above relational schemas.\nii) Write SQL to count the number of project with duration more than 2 years.\nii) Write SQL query to find the name of employees working in \"ICT\" project and\nearning more than 20K.\niv) Write SQL, to update the salary of employees by 15% if salary is less than 50\nK, by 10% if salary is in between 50 K to 100 K and by 5 % if salary is grs",
+          "marks": "8",
+          "chapter": "Relational Query Languages",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) How do you compute an attribute closure? Explain with a suitable example. What are\nthe uses of attribute closure?\n\n(b) Consider a relation schema R （ A , B , C , D ) with the following functional\ndependencies- A -→ B, B -→ C,C -+ D,D -→ B. Determine whether the decomposition\nof R into R1 (A, B), R2(B, C) and R3 (B, D) is lossless or lossy.",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Describe the entire query processing events to retrieve data from database provided a\nSQL query. Explain the strategies that can be used for query evaluation along with\nexamples.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What is the purpose of using RAID? How can a variable length record be implemented?\nCompare dense and sparse ordered indices.",
+          "marks": "8",
+          "chapter": "File Structure and Hashing",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain ACID properties in database transaction with examples. Explain how wait-die\nscheme and wound-wait scheme helps to prevent deadlock.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Define stable storage. Explain log-based recovery technique with example.",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Write short notes on:\n\n(a) Data warehouse database.and its application\n\n(b) Parallel database architecture",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Chaitra",
+      "year": "2080",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Expiain the advantages of using Relational Database Management Systems. What are the\nlevels of data abstraction in Database Management system?",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Define generalization and specialization with its notation and examples.\n\n(b) Consider the database of departmental store. There are various departments in the\nstore. One department sales many items. Some items may be sold by more than on\ndepartment. A department has many employee. An employee can belong to at most\none department. A manager is an employee who may look after more than one\ndepartment but a department may be look after by only one manager. A unique\nnumber called internal item no. is assigned to every item by store. A supplier may\nsupply more than one item. Every item is supplied by only one supplier at a time.\nConsider the necessary attributes and keys of entity and construct ER diagram.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "a) Consider the following relational schema.\nEmployee(empid,ename,address, title, headid)\nProject(pid, pname, budget, location)\nWork(empid, pid, responsibility,duration)\nPayment(title, salary)\nWrite relational algebra to find the name and salary of employees working in\n\"kathmandu'.\ni) Write the relational algebra to show the employee name along with their head\nname. (Note: the data in headid is empid of their corresponding head)\nii) Write relational algebra to display the details of those employee who live in the\nsame location of their project.\niv) Display employee's title, name along with their project name, salary if the project\nduration is more than 5 years.\n\n(b) Consider the following insurance database.\nPERSON( licenseNo, name, address)\nCAR(modelNo, brand, year)\nACCIDENT(reportNo, date, location)\nOWNS(licenseNo,modelNo)\nPARTICIPATED(licenseNo, reportNo, damageAmount)\nWrite SQL expression for the given queries:\ni) Display all the detail of a Person whose name ends with ‘ta' and is involved in\nsome accident.\nii) Display the license numbers and location where the accident took place on Jan 20,\nii) Update the brand name \"BMW\" to “BMW-X\" for car manufactured in year 2020.\niv) Create a view named PERSON REPORT which contains license No, Name and\nreport No as its members where the damage amount is less than or equal to",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Explain the working of triggers along with its syntax and an example.\n\n(b) What is a partial dependency? Define 2NF and 3NF with suitable examples.",
+          "marks": "8",
+          "chapter": "Relational Query Languages",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What are the different steps involved in Query Processing? Explain with a flow diagram.\nWhat are the different approaches for Query Optimization? Explain in brief.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "What do you mean by RAID? Briefly explain the different levels of RAID. Explain the\n.working of static hash indexing along with suitable examples.",
+          "marks": "8",
+          "chapter": "File Structure and Hashing",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Define transaction and its properties. Explain the two-phase locking protocol for\nconcurrency control in DBMS.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "How does log based recovery method work? Explain the conditions of using redo and\nundo operations during the recovery process.",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Write short notes on:\n\n(a) Parallel databases\n\n(b) Datawarehouse",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2080 Ashwin",
+      "year": "2080",
+      "month": "Ashwin",
+      "examType": "Regular",
+      "totalMarks": 56,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What do you mean by data abstraction? Describe the, various levels of data abstraction in\ndatabase managemenet system.",
+          "marks": "8",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Explain the different types-of attributes. What is a discriminator key?\n\n(b) Design a ER diagram for following requirement: The database keeps track of three\ntypes of persons: employees, alumni, and students. A person can belong to one, two,\nor all three of these types. Each person has a name, ssN, sex, address, and birth date.\nEvery employee has a salary, and there are three types of employee: faculty, staff, and\nstudent assistants. Each employee belongs to exactly one of these types. For each\nalumnus, a record of the degree of degrees that he or she earned at the university is\nkept, including the name of the degree, the year granted; and the major department.\nEach student has a major department. Each faculty has a rank, whereas each staff\nmember has a staff position. Student assistants are classified further as either research\nassistants or teaching assistants, and the percent of time that they work is recorded in\nthe database. Research assistants have their research project stored, whereas teaching\nassistants have the current course they work on. Students are further classified as\neither graduate or undergraduate, with the specific attributes degree program (M.S.,\nPh.D, M.B.A., and so on) for graduate student and class (freshman, sophomore, and\nso on) for under-graduates.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "Consider the following insurance database.\nPERSON ( licenseNo, name, address)\nCAR (modelNo, brand, year)\nACCIDENT (reportNo, date, location)\nOWNS (licenseNo, modelNo)\nPARTICIPATED (licenseNo, reportNo, damageAmount)\nWrite relational algebra expression for the given queries:\ni)Find all the person who have license and lives in Lalitpur.\nii) Find the total number of accidents occurred location wise on Dec 10, 2022.\nii) Find the person name, date and location of accident where the damage amount\nexceeds 50000.\niv) Find the name of person, brand name of a car with the manufactured year 2020.\n\n(b) Write SQL expression for the given queries:\ni) Display the name and address of a person whose name ends with 'ta' and is\ninvolved in some accident.\nii) Display the license numbers and location where the accident took place on Jan 20,\nii) Update the brand name \"BMW\" to \"BMW-X\" for car manufactured in year 2020.\niv) Create a view named PERSON REPORT which contains license No, Name and\nreport No as its members where the damage amount is less than or equal to\nWhat is functional dependency in DBMS? Explain 1NF and 2NF with examples.\nWhat is the purpose' of Normalization? Compare 3NF and BCNF along with\ndefinitions.\noptimization and Heuristic optimization technique.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) . What is a variable length record? How does a Slotted Page Structure manage variable\nlength records?\n\n(b) How doesdynamic hashing work? Explain briefly:",
+          "marks": "8",
+          "chapter": "File Structure and Hashing",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) What is a transaction? What are the ideal properties of a transaction?\n\n(b) Describe strict two-phase locking protocol (2PL).",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Consider the following log contents when a crash occurs. Explain how recovery would be\ndone for each state in log based recovery\n<To. Start>\n< To, Start >\n< To, Start >\n<To.A,1000, 950>\n< Ta, A, 1000, 950>\n< To, A, 1000, 950>\n<To, B, 2000, 2050>\n< To,B, 2000, 2050>\n< To, B, 2000, 2050>\n< To, commit>\n< To commit>\n<Tr start>\n< Ti start>\n< T1, C, 700, 600>:\n< TI, C, 700, 600>\n< T, Commit>",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Write short notes on:\n\n(a) . Segmentation in distributed databases\n\n(b) Data Warehouse and its application",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Chaitra",
+      "year": "2079",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define database and database management system. List advantages of DBMS over file\nmanagement.",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Explain the relational model of a database system along with foreign key constraint\nwith appropriate example.\n\n(b) A relational database is to be designed for a medium sized Company dealing with\nindustrial applications of computers. The Company delivers various products to its\ncustomers ranging from a single application program through to complete installation\nof hardware with customized software. The Company employs various expert,\nconsultants and supporting staff. All personnel are employed on long-term basis, i.e,\nthere is no short-term or temporary staff. Although the Company is somehow\nstructured for administrative purposes (that is, it is divided into departments headed\nby department managers) all projects are carried out in an inter-disciplinary way. For\neach project a project team is selected, grouping employees from different\ndepartments, and a Project Manager (also an employee of the Company) is appointed\nwho is entirely and exclusively responsible for the control of the project, quite\nindependently of the Company's hierarchy. Construct an ER diagram with appropriate\nconstraints for the case above.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "a) Consider the relational database as follows. Write SQL for each of the following.\nDoctor (name, age, address)\nWorks (name, dept no)\nDepartment (dept no, floor, room)\ni) To display the records of doctor with their department information.\nii) To find total number of rooms assigned in each floor.\nii) To display the name of doctor with maximum age.\niv) To delete the records of doctors whose name start with 'M' and works in 1oth floor.\n\n(b) Consider the following relational database.\nClient (Cid, Lid, Cname, birthYear, caseField)\nLawyer (Lid, Fname, Lname, Speciality, Salary, startingYear)\nFirm (Fname, City, managerName)\ni) Write relational algebra expression to find names of clients that were born after\n1980 and their case field was \"Traffic\".\nii) Write relational algebra expression to find names of clients who were presented\nonly by lawyers whose salary is at 8000\nii) Write relational algebra expression to find all pairs of client id and firm name such\nthat no lawyer of that law firm presented this client and this client had some case\nin a field other than \"Divorce\".\niv) Write a QBE expression to find lawyer's name whose salary is more than Rs.\n50,000 and Starting year is 1990.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Define an extraneous attribute in a Functional dependency. Given a relation R = {A,\nB, C, D) and corresponding FDs: F = {A-BC, B-D, A-→B, AB-C). Find attribute\nclosure {A}t, (BC)+. Which of these attribute deserve the property of candidate key?\nJustify it.\n\n(b) Define a partial and transitive functional dependency with example. How do you.\nachieve a relation in a BCNF? Describe the algorithm.",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain the basic steps in query processing with a diagram. What is pipelining evaluation\nin a query? Explain with an example.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "a) What is an index sequential file? Differentiate between dense index and sparse index.\n\n(b) Summarize the various levels of RAID and mention how to select an appropriate level\nof RAID.",
+          "marks": "8",
+          "chapter": "File Structure and Hashing",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) Consider a schedule S: r1(y); r3(z); w1(y); w2(z); r3(y); w2(y). State whether it is\nconflict serializable schedule or not. Determine the equivalent serial schedule if it is\nserializable.\n\n(b) Explain how graph based protocol maintains concurrent execution of transactions.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": true
+        },
+        {
+          "qNum": 8,
+          "text": "Explain the various causes of failure in system. Explain remote back up system.",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Write short notes on:\n[2x3]\n\n(a) Features of Object Oriented Database.\n\n(b) Paralleldatabasearchitecture.",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2079 Ashwin",
+      "year": "2079",
+      "month": "Ashwin",
+      "examType": "Back",
+      "totalMarks": 88,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What do you mean by Schema and Instances? Briefly explain the different level of data\nabstraction.",
+          "marks": "8",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Draw an ER diagram for the mini-case “Procurement department of an Organization (ABC)\nkeeps track of all the items such as Furniture and equipment in the offices. There are several\nbuildings of the ABC and each one is given a different name to identify it. Each item is\nassigned a unique ID when it is purchased. This ID is used to keep track of the item, which is\nassigned to a room within a building. Each room within a building is assigned to a\ndepartment\". Document all assumptions that you make about the mapping constraints.",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "Consider the following relational database model:\nHotel (Hotel No, Name, Address)\nRoom (Room_No, Hotel_No, Type, Price)\nBooking (Hotel No, Guest_No, Date_ From, Date_ To, Room No)\nGuest (Guest No, Name, Address)\nWrite SQL statement for the following:\n\n(a) List all the guests who have booked rooms at the Everest Hotel.\nCreate a view to expose only the Hotel _No, Guest _ No, Room No. and price of the room\nof all booked rooms.\nFind total cost of all the deluxe room of Everest Hotel after offering 5% discount..\n\n(d) Identify the Hotel name which has the highest total guests.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "For the relational database model given in the Question No. 3. Write relational algebraic\nexpression for the following:\n\n(a) List the name Hotels in Kathmandu.\n\n(b) List the Name of Hotels and their all available types of room with price.\n\n(c) List all the guest name who have booked deluxe room of Everest Hotel.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Suppose that we decompose the schema R = (A, B, C) into R1 = (A, B), R2 = (A, C). Show\nthat this decomposition is a lossless join decomposition and not dependency preserving if the\nF = (A->B, B->C)",
+          "marks": "8",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Briefly explain INF, 2NF, 3NF and BCNF with suitable illustrations.\n[2+2+2+2]",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain the process how query is evaluated in RDBMS system. How are equivalence rules for\nrelation algebra helpful for query optimization? Explain with example.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What do you mean by ordered index and hash index? Explain limitation of static hashing..\nHow extendable hashing overcome such limitation?",
+          "marks": "8",
+          "chapter": "File Structure and Hashing",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What are possible transaction states? Briefly explain any two dead lock handling mechanism\nwith suitabie examples.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Write the different types of failures that may occur in DBMS. Differentiate between shadow\npaging and log-based recovery.",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Write short notes on:\n\n(a) Data Wareh",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2078 Chaitra",
+      "year": "2078",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 88,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Define the terms Data Abstraction and Data Independence. Why they are important in\nDBMS?",
+          "marks": "8",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "An University Registar's Office maintains data about the following entities:\ni) Courses, including number, title, credits, syllabus and prerequisites;\nii) Course Offerings, including course number, year, semester, section number,\ninstructors, timings, and classroom;\nii) Students, including student id, name and program;\niv) Instructors, including identification number, name department and title.\nFurther, the enrolment of students in course and grade awarded to students in each course\nthey are enrolled for must be appropriately modelled. Construct an E-R diagram for the\nRegistrar's office. Document all assumptions that you make about the mapping\nconstraints.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "Consider the following relational database model:\nPassenger (pid, pname, pgender, pbirthplace)\nAgency (aid, aname, acity)\nFlight (fid, fdate, time, source, destination)\nBooking (pid, aid, fid, bookdate, amount)\nWrite SQL statement for the following:\n\n(a) Find all the passenger details who are travelling from “Kathmandu\"\n\"Pokhara\".\nUpdate the booking amount with 10% discount if the flight destination is same\nas the passenger's birth city.\nCreate a View named “EsewaReport\"' in which calculate the total amount of\nbooking made in the current date through the agency having name Esewa\".\n\n(d) List Flight wise total number of bookings for current date.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "For the relational database model given in the Question No. 3. Write relational algebraic\nexpression for the following:\n\n(a) Find the details of all flights to “Kathmandu\"\".\n\n(b) Find name of all passengers who have booked at least one flight.\n\n(c) List the name of all agencies who have made highest booking till date.\n\n(d) Find all the passenger who have booked from agency “Esewa\".",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Suppose that we decompose the schema R = (A,B,C,D,E) into (A,B,C) and (C,D,E). Is it\nlossless decomposition? Does it preserve dependencies? Consider the following set F of\nfunctional dependencies hold A-+BC; CD--→E; B--D; E-→A",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "What is Normalization? Why is it important? Differentiate between 3NF and BCNF with\nsuitable examples.",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Define query processing and briefly explain its steps. How is pipeline approach different\nfrom the materialization approach?",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Why does RAID Level 6 give better data protection then RAID 5? Briefly explain Fixed\nLength Record and Variable Length record along with suitable examples.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Briefly explain ACID properties of a transaction. How two-phase locking protocol does\nensures conflict-serializableschedule?",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "How does the check point recovery take place in case of transaction failure? Briefly\ndiscuss on the shadow paging technique for recovery.",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Write short notes on\n\n(a) Important of Data Warehouses\n\n(b) Spatial database.",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2077 Chaitra",
+      "year": "2077",
+      "month": "Chaitra",
+      "examType": "Regular",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Explain the layers of abstract in database design. Why physical data independence is\nimportant in data modeling?",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Draw an ER diagram for an online book store that contains written by authors and\npublished by the publisher. Aliso the book is stocked in the warehouse. The store also\nmaintains record about the selling of books online via shopping basket (shopping\ncart), ie. customers purchase the books online via the shopping basket. Books have\n• ISBN, price, title and year whereas authors may have url, name, address and email.\nAlso the publishers name, address, phoneno and url are stored. The customer's name,\naddress, email and phone are stored. The warehouse may have code, phoneno and\naddress. Assume other parameters accrodingly.\n\n(b) Distinguish between degree and cardinality of a relationship in an ER diagram.\nExplain generalization in ER diagram with an example.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "Consider the relational model.\n[7x2]\nEmployee (empid, empname, address, title)\nProject (pid, pname, budget, location)\nAssignment(empid, pid, responsibility, duration)\nPayment (title, salary)\n\n(a) Write SQL to count the number of project with duration more than 2 years.\n\n(b) Write SQL query to find the name of engineers working in ICTC project and earning\nsalary more than 20K.\nWrite SQL to update the salary of employees by 5% if salary less than 10k, by 7% if\nsalary between 10K and 20K and, by 9% if salary greater than 20K.\nWrite Relational Algebra to find the projects having budget more than 500K.\nWrite Relational Algebra to list the employees working for more than 10 years in\nCAD/CAM project.\nWrite Relational Algebra to find the name and salary of employees working in\nKathmandu.\nGive an expression in QBE to find the employee name and address who have salary\ngreater than 50K.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a)\n) What do you mean by closure of functional dependency? Explain about referential\nintegrity constants and illustrate with suitable examples.\n\n(b) Wha is the purpose of Normalization? Explain 3NF and BCNF.",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Describe the basic steps in query processing. Explain how pipelining can be used to\nimporve query evalution efficiency.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) What do you mean by hashing and indexing? Differentiate between dense index and\nsparse index?\n\n(b) What do you mean by RAID? Explain the types of RAID and mention how to select\nanappropriatelevel of RAID?",
+          "marks": "8",
+          "chapter": "File Structure and Hashing",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) During execution, a transaction passes through several states until it finally commits\nor aborts. Explain all possible sequences of states through which a transaction may\npass.\n\n(b) Explain the following briefly:\n(i) Two phase locking protocol\n(ii) Wait & die scheme for deadlock prevention",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "a) Explain the architecture of remote backup system?\n\n(b) What is Immediate database modification technique in context to log based recovery\napproach? Explain.",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Write short notes on:\n\n(a) Fragmentation in distributed databases.\n\n(b) Object Relational Mapping (ORM)",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2076 Bhadra",
+      "year": "2076",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 70,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Briefly describe the significant differences between a file processing system to a DBMS.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Mention the distinctions among the terms Generalization and Specification with\nappropriate symbolic representation.\n\n(b) Draw the Entity-Relationship Diagram (ERD) with appropriate mapping cardinalities\nfor the MAIL_ORDER database in which employee take orders for parts. The mail\norder company has employees, each identified by unique employee number, first\nname, last name and ZIP code. Employee are categorized as manager, clerk and\ndelivery staff. Each customer of the company is identified by a unique employee\nnumber, first and last name and ZiP code. Each part sold by the company is identified\nby unique part number, part name, price and quantity stock. Each order placed by a\ncustomer is taken by clerk and is given a unique order number. Each order contains\nspecified quantities of one or more parts. Each order has a date of receipt as well as an\nexpected ship date. The actual ship date is also recoded. The delivery boy places the\norder of specified customers. There is a provision of replacing one or many fault parts\nto the customer but before that it must be verified by manager.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "a)\n)Consider the following relational data model\nEmployee (empid, empname, address, title)\nProject (pid, projgname, budget, location)\nAssignment (empid, pid, responsibility, duration)\nPayment (title, salary)\n(i) Write an SQL query to find the name and salary of Engineers.\n(i) Write an SQL query to find the name of employee working in projects in their\nown city.\n(ii)Write a query to create a view named empdetails with empname, address,\nproj_name and salary.\n(iv) Write an SQL to find the names of employees who works in “CAD/CAM\" project\n\n(b) Write the relational algebra expressions for the following:\n(i) Find the name of employees working for more than 2 years in \"Software\" project\nand earning more than 1000 K.\n(ii) Find the names of employees working in “PCB Fabrication\" project other than\nJohn.\n(ii)Find the salaries of Engineers working in \"Fabrication\" projects.\n(iv)Give an expression in QBE to find the employee name and address of \"Engineers\"\nwho have salary greater than 50K.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Explain the conditions to be satisfied for lossless decomposition using FD sets.\n\n(b) Define Assertion with its SQL syntax. What is a view in database system? How does\nmaterialized view differ from normal view?\n\n(c) Define Multi Valued Dependency (MVD). Explain Fourth normal form with an\nexample.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Describe the basic steps in query processing. Discuss the methods used for evaluation of\nentire expression tree.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) What is the difference between ordered indices and hash indices in a database? What\nis the advantages of using sparse index?\n\n(b) What do you mean by RAID? Explain the types of RAID and mention how to select\nan appropriate level of RAID.",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a)\nWhat are the possible transaction states? Which of the following schedule is conflict\nserializable? For each serializable schedule, determine the equivalent serial schedule. . [2+4]\n() r1(X);r3(X);w1(X);r2(X);w3(X)\n(ii) r1(X);r3(X);w3(X);w1(X);r2(X\n\n(b) How deadlocks arises in transaction processing?",
+          "marks": "6",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "a) Explain the architecture of a remote backup system.\n\n(b) What is deferred-database modification technique in context to log based recovery\napproach? Explain.",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Write short notes on:\n\n(a) Data Warehousing\n\n(b) Parallel database architecture",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2076 Baishakh",
+      "year": "2076",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 80,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Differentiate between schema and instances. What are the disadyantages of conventional\nfile system?",
+          "marks": "8",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Define data independence and explain its significance. What is importance of\naggregation in ER design? Discuss with an example.\n\n(b) Draw an E-R diagram for the given case.\nA companyhaving a chain of pharmacies wishes you to design a database for the company.\nPatients are identified by an SsN, and their names, addresses, and'ages must be recorded.\nDoctors are identified by an SsN. For each doctor, the name, specialty, and years of.\nexperience must be recorded. Each pharmaceutical company is identified by name and has\na phone number. For each drug, the trade name and formula must be recorded. Each drug\nis sold by a given pharmaceutical company, and the tracie name identifies a drug uniquely\nfrom among the products of that company. If a pharmaceutical company is deleted, you\nneed not keep track of its products any longer. Each pharmacy has a name, address, and\nphone nmumber. Every patient has a primary physician. Every doctor has at least one\npatient. Each pharmacy sells several drugs and has a price for euch. A drug could be sold\nat several pharmacies, and the price could vary from one pharmacy to another.. Doctors\nprescribe drugs for patients. A doctor could prescribe one or more drugs for several\npatients, and a patient could obtain prescriptions from several doctors. Each prescription\nhas a date and a quantity associated with it. You can assume that if a doctor prescribes the\nsame drug for the same patient more than once, only the last such Prescription needs to be\nstored. Pharmaceutical companies have long-term contracis with pharmacies. A\npharmaceutical company can contract with several pinarmacies, and a pharmacy can\ncontract with several pharmaceutical companies. For each contract, you have to store a\nstart date, an end date, and the text of the contract. Pharmacies appoint a supervisor for\neach contract. There must always be a supervisor for each contract, but the contract\nsupervisor can change over the lifetime of the contract. :.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "Write SQL query. [Consider following relations]\nProduct(Pid, Pname, Price, description)\nCustomer(Cid, Cname, Address)\nSells(Pid, Cid, quantity)\n\n(a) Retrieve the record of product who were sold to customer id 12.\n\n(b) Create above table product as indicated.\n\n(c) Find the product whose sells quantity is maximum.\n\n(d) Find the total number of customer whose name start with S.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Write relational algebra. [Consider following relations.]\nEmp (Eid, Ename, Address, Salary, Dptid)\nDepart( Dptid, Dname)\n\n(a) Insert a single record in Emp table.(100,'Ram','Balaju,10000,5)\n\n(b) Retrieve the record of employee who earns more than 10000 in computer\ndepartment.\n\n(c) Increase the salary of all employee by 10 percent.\n\n(d) Delete all the record of employee who are from ELX department. (Dptid-'ELX')",
+          "marks": "8",
+          "chapter": "Relational Query Languages",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) What do you mean by closure of functional dependency? What is a trigger in DBMS?\nIs it safe or risky to use triggers? Explain.\n\n(b) Define normalization and levels of normalization 1NF, 2NF and 3NF. Compare the\nadvantage of BCNF over 3NF.",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain the basic steps in query processing with diagram? What is pipelining in query\nevaluation. Explain with an example.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": true
+        },
+        {
+          "qNum": 7,
+          "text": "a) What do you mean by hashing and indexing? Differentiate between dense index and\nsparse index?\n\n(b) Write about fixed length record and variable length record organization in DBMs?",
+          "marks": "8",
+          "chapter": "File Structure and Hashing",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "a) What is transaction? What are the ideal properties of a transaction?\n\n(b) Describe strict two-phase locking protocol (2PL).",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Define term Recovery and Atomicity in database. Consider the following log contents\nwhen a crash occurs. Explain how recovery would be done for each state.\n<T, start>\n<T。 start>\n<T, start>\n<To, A, 1000, 950>\n<To, A, 1000, 950>\n<To, A, 1000, 950>\n<To, B, 2000, 2050>\n<To, B, 2000, 2050>\n<To, B, 2000, 2050>\n<T。commit>\n<T。commit>\n<Tr start>\n<T start>\n<T1, C, 700, 600>\n<T1, C, 700, 600>\n<T commit>",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Write short notes on:\n\n(a) Distributed database\n\n(b) Remote Backup System",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Bhadra",
+      "year": "2075",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 72,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What do you mean by scheme and instances? Mention the different levels of data\nabstraction and explain.",
+          "marks": "8",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Identify relevant attributes and construct an ER diagram with proper mapping\nconstraints for a university which has many departments and each department has\nmultiple instructors; one among them is the head of the department. An instructor\nbelongs to only one department, each department offers multiple courses, each of\nwhich is taught by a single instructor. A student may enroll for many courses offered\nby different departments.\n\n(b) Define unary relationship along with example. How you convert an ER relationship\ninto relation schema? Explain with examples of different cardinalities.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "a) Consider the foliowing relational data model.\nStudent (crn, name, address, phone, dob)\nCourse (courseid, crn, duration, fee)\nEnroll (enrolled, cname, courseid, enrolldata, completedata)\ni) Write the SQL statements required to create the above relations, including\nappropriate versions of all primary and foreign key integrity constraints,\ni) Write an expression in SQL to find crn, names and enroll data of all students who\nhave taken the course 'java' (cname)\nii) Write SQL to find the names and address of all the students who have taken both\ncourse java and linux.\niv) Write an expression in SQL to Create a view 'student course' having the attributes\ncrn, name, phone, coursename, enrolldata\n\n(b) Consider the following relational database\nsailor (sailorid, sname, rating, age)\nboat (boatid, boatname, color)\nreserves (sailorid, boatid, date)\nWrite relational algebra expressions for the following:\ni) Find the names of sailor who has reserved boat number 105.\nii) Find the names of sailors who have reserved a red boat.\nii) Find the names of all sailor who have reserved either a red boat or a green boat.\niv) Give an expression in QBE to find the sailors name and age who have reserved a\nred boat.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) Why do we need normalization? Differentiate primary key and foreign key.\nDifferentiate between 3NF and BCNF.\n\n(b) Consider the relation Treatment with the schema: Treatment (doctorID, doctorName,\nPatientID, diagnosis) and functional dependencies;\ndoctorID-→doctorName and (doctorID, patientID)-→diagnosis.\nDescribe different types of problem that can arise for this relation with records",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain with diagram about process of query processing in RDBMS. How are\nequivalence rules for relational algebra helpful for query optimization? Explain with\nexample.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": true
+        },
+        {
+          "qNum": 6,
+          "text": "a) Describe about fixed-length record and variable length record along with examples.\n\n(b) Describe B+ tree structure used for indexing.",
+          "marks": "8",
+          "chapter": "File Structure and Hashing",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Define transaction and explain various states of a transaction with a transition diagram.\nDescribe about two phase locking protocol for concurrent transaction along with its\nlimitations.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": true
+        },
+        {
+          "qNum": 8,
+          "text": "Write the different types of failures that may occur in system. Differentiate between\nshadow paging and log-based recovery.",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "a) Write about data warehouse with its components.\n\n(b) Write about spatial database.",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2075 Baishakh",
+      "year": "2075",
+      "month": "Baishakh",
+      "examType": "Back",
+      "totalMarks": 64,
+      "questions": [
+        {
+          "qNum": 2,
+          "text": "Construct an ER-Diagram for the following NFL database.\nYou are given the requirement for a simple database for the National Football League\n(NFL). The NFL has many teams, and each team has a name, a city, a coach, a captain\nand a set of players. Each player belongs to only one team and each player has a name, a\nposition (such as left wing, mid fielder or a goalkeeper) a skill level, and a set of injury\nrecords. A team captain is also a player and a game is played between two teams (referred\n(such as 2 to 5).\nExplain strong and weak entity sets along with example.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "Consider the following relational schema:\ntbisalesman(s id, name, city, commission)\ntbiOrders(ord no, prch amt, ord date, c,id, s,id)\ntblCustomer(c id, name, city, grade, s,id)\nWrite SQL query expression to\n\n(a) find those salesmen with all information whose name containing the 1st character is\n'N' and the 4t\" character is 'R' and rests may be any' character.\nFind the highest purchase amount on a date '2017-07-17' for each salesman with their\ncount the customers with grades above Kathmandu's average.\nIncrease commission of salesmen by 2% if they are from humla.",
+          "marks": "8",
+          "chapter": "Relational Query Languages",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Consider the following relational database model\nBook(isbn, title, a name)\nAuthor(a name, citizenship, birthYear)\nBranch(libname, city)\nTopic(isbn, subject)\nInstock(isbn, libname, quantity)\n[2x4]\nWrite relational algebra expressions for the following:\n\n(a) Give the cities where each book is held.\n\n(b) Give the title and author of each book of whichat least two copies are held in a branch\nlocated in Kathmandu.\n\n(c) Delete those books that are from author 'xyz'\n\n(d) List total no. of available books of each subject.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) What is a functional dependency? List the various integrity constraints and explain\nabout the referential integrity along with an example.\n\n(b) Define 1NF, 2NF and 3NF. llustrate your answer with suitable example.\n. 6. What is the task of evaluation engine in query processing? Explain cost based query\noptimization and Heuristic optimization.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) What is the difference between ordered indices and hash indices in a database? What\nis the advantage of using sparse index?\n\n(b) Write about fixed length record and variable length record organization in DBMS?",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain the possible transaction states in DBMS. Explain the concept of conflict\nsearilizability with an example.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain the idea of log-based recovery.",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "a) Explain homogenous and heterogeneous distributed database.\n\n(b) What is Spatial Database System?",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2074 Bhadra",
+      "year": "2074",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 80,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Mention the advantages of the DBMS over the file processing system and explain briefly.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) Define discriminator in ER diagram. Explain different keys used in database design.\n\n(b) Draw the Entity-Relationship Diagram (ERD) with appropriate mapping cardinalities\nfor the following scenario.\nA Production company consists of a machining, fabrication and assembly department.\nEmployees are assigned to different departments. Each department is managed by a\nmanager. Each employee has at most one recognized skill, but a given skill may be\npossessed by several employees. An employee is able to operate a given machine-type\n(e.g. lathe, grinder, welding) of each department. Some of the employees are paid\novertime and some of them are paid with daily basis. According to their designation\n(eg. mechanic, welder) are supposed to maintain at least one machine-type of their\ndepartment. Raw materials are bought from different vendors and fetched to the\nmachining department. Parts from machining department are fetched to fabrication\ndepartment and so on. Many parts are assembled together to form a product. The final\nproducts from assembly department are stored in the ware house. Products are labeled\nwith different specifications (eg, Product_ Id, Product_ type, MRP, etc).",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "Consider the following relational data model\nEmployee (empid, ename, age, salary)\nDepartment (deptid, dname, budget, managerid)\n. Works (empid, deptid, hours)\n(i) Write the SQL statements required to create the above relations, including appropriate\nversions of all primary and foreign key integrity constraints.\n(ii) Write an expression in SQL to find the name of department whose employee earns the\nmaximum salary.\n(ii)Write SQL to find the name of the employee, department name and the number of\nhours they work\n(iv) Write an expression in SQL to give every employee a 20% raise in salary whose age\nis in between 45 to 50 years.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Consider the following relational database\n[2x4]\nAccount (account-number, branch-name, balance)\nBranch (branch-name, branch-city, assets)\nCustomer (cust-name, cust-street, cust-city)\nLoan (loan-number, branch-name, amount)\nDepositor (cust-name, account-number)\nBorrower (cust-name, loan-number)\nWrite the relational algebra expressions for the following:\n(i) Find the largest account balance.\n(ii)Find the names of all depositors along with their account number, street and city\naddress.\n(iv)Give an expression in QBE to find the customer name, loan number and amount for\nall customers who have a loan from the “Koteshwor\"' branch.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) What are Triggers? Define Domain constraint and Referential Integrity constraint\nwith an example.\n\n(b) What is the role Functional dependencies in Normalization? Explain trivial and\nnon-trivial dependencies. Explain BCNF.",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain about the steps involved in query optimization. How is pipelining approach\ndifferent from the materialization approach?",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Discuss about sequential file organization and multi-table clustering file organization.\nExplain dense index file and sparse index file.",
+          "marks": "8",
+          "chapter": "File Structure and Hashing",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain ACID properties of a database transaction. Describe how conflict serializability\ndiffers from the view serializability for concurrent execution of transactions.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What is the purpose of implementing check points in data recovery mechanism? What\nare the recovery actions performed if failure arises at the end of the given transaction\nstates?\n<To start>\n<Ta start>\n<T: A, 1000, 950>\n<To, A, 1000, 950>\n<Tu: B, 2000, 2050>\n<Ta, B, 2000, 2050\n<To commit>\nT start>\n<Tt, C, 700, 600>",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Write short notes on:\n\n(a) Spatial database\n\n(b) RemoteBackupSystem",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2073 Magh",
+      "year": "2073",
+      "month": "Magh",
+      "examType": "Regular",
+      "totalMarks": 64,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What do you mean by data abstraction? List the various level of data abstraction and\nbriefly explain.",
+          "marks": "8",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) What are data models? Explain various types of data models.\n\n(b) Design an E-R diagram for a database for an airlines system. The database must keep\ntrack of customers and their reservations, flights and their status, seat assignments on\nindividual flights and the schedule and routing of future flights. Apply all the database\ndesign constraints as much as possible.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "a) Consider the following relational data model.\nEmployee(empid, name, address, manager_id)\nepartment(deptid, dname).\nPraject(pid;' title, budget, deptid)\nWorks_on(empid,.pid, hours)\nyntarawnithe:relationalalgebraic expression far the following:\nfindvthe: names of all employee from computer'department\nalong:with their manager name.\nf*Find:the names of all the employees who works on project with\nbudget more than 50000.\ni:. Find:the; totar' number of projects from each department along\nwith,the department name.\nWrite down the SQL queries for following:\nFind the name of.employees who works on project with the highest budget.\ni) Create a view with empid, name, project title and budget.\nii) Update the budget of all project by 20% where any employee works for more than\n12 hours.\nwith example.\n\n(b) Define decomposition and its desirable properties. Explain 3NF and BCNF.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Define query processing. Explain the various approaches used to evaluate any expression\nwith suitableexample",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) - What is RAID? Which RAID level would you prefer the best for safety of application\nand why?\n\n(b) What is indexing? Why dynamic hashing is advantageous over static hashing?",
+          "marks": "8",
+          "chapter": "File Structure and Hashing",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) Define ACID properties of a transaction. Describe the concept of conflict\nserializability for concurrent exccution oftransactions.\n\n(b) How two phase looking protocol helps in concurrency control? Explain.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What is stable storage? Explain the log based recovery mechanism.",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "a) Describe briefly about objcct oriented database\n\n(b) Explain the differences between homogenous and heterogeneous distributed database.",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2073 Bhadra",
+      "year": "2073",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 64,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Why is data independence important in data modeling? Differentiate between schema and\ninstances.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Differentiate total and partial participation with suitable example and draw an ER\ndiagram for the airport database. Be sure to indicate the various attributes of each entity.\nEvery airplane has a registration number and each airplane is of a specific model. The\nairport accommodates a number of airplane models and each model is identified by a\nmodel number (eg DC-i0) and has a capacity and a weight. A number of technician\nworks at the airport. You need to store the name, SsN, address, phone number and salary\nof each technician. Each technician is an expert on one or more plane model(s) and his or\nher expertise may overlap with that of other technicians. This information about\ntechnicians must also be recorded. Traffic controllers must have an annual medical\nexamination. For each traffic controller you must store the data of the most recent exam.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": ".Consider the following relational schema\nEmployee (Ename, street, city)\nWorks (Ename, company.name, salary)\n: Company (company: name, city)\nManages (Ename, manager_name)\n: a) Write the queries in Relational Algebra.\ni. : . Find all the empioyees name who work in NMB bank'.\nFind all the employee names who live in the same city as their company is located.\nFind the name and city of those employees whose salary is greater than 30000 and\nlives in -ki'm' city..\n\n(b) Write SQL queries for the following.\n. . . Create Emaployet and Warks relation with primary key and foreign key constraints.\nFind the employee. name their tompany name and city name which ends with 'pur'\niis. erease thie' salary of each employees by 25% wbose salary is less than 30000.\n. 4. a) What do you mean by functional dependencies? Define formally. What is BCNF?\n\n(b) What is normalization? Explain INF, 2NF, 3NF and 4NF.",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain the basic steps in query processing. Make distinctions between cost based\noptimization and heuristic optimization.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "a) What is the use of RAID storage device? How is a record searched fron a sparse\nsequential index?\nExplain about the remote backup system with diagram.",
+          "marks": "8",
+          "chapter": "File Structure and Hashing",
+          "isDiagram": true
+        },
+        {
+          "qNum": 7,
+          "text": "a)\nWhat are schedules? Describe the concept of view serializability for concurent\nexecution of transaction.\n\n(b) How deadlocks arise while processing transactions? Explain the deadlock prevention\nstrategies.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Write the different types of failures that may occurs in system. Differentiate between\nshadow paging and log-based recovery.",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Write short notes on the following:\ni) Distributed database system\nii) Spatial database system",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2072 Ashwin",
+      "year": "2072",
+      "month": "Ashwin",
+      "examType": "Regular",
+      "totalMarks": 80,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Why data independence is importance in data modeling? Differentiate between physical\nand logical data independence.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Draw an ER-diagram for the following mini-case. What is the difference between strong\nand weak entity sets?\nPatients are treated in a single ward by the doctors assigned to them. Healthcare assistants\nalso attend to the patients; a number of these are associated with each ward. Each patient\nis required to take a variety of drugs a certain number of times per day and for varying\nlengths of time. The system must record details concerning patient treatment and staff\npayment. Some staffs are paid part time and doctors and healthcare assistants work\nvarying amounts of overtime at varying rates, the system will also need to track what\ntreatments are required for which patients.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "Write relational algebra queries for (a, b, c). Write SQL queries for (i, ii, ili)\n\n(a) Retrieve the detail of employee with eno, add, dob, phone with highest salary.\ni) Create above table Emp as indicated.\ni) Find employee who earns more than 50000, works in CS department and name\ncontains alphabet a.\nii) Increase salary of those employee who earns less than average by 25%\nFind total amount spent by ECON department for its employee salary.\nFind total number of post in CS department.",
+          "marks": "8",
+          "chapter": "Relational Query Languages",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a)\nWhat is lossless decomposition and dependency preservation? Suppose that we\ndecompose the schema R = (A, B, C, D, E) into (A, B, C) and (C, D, E). Is it lossless\ndecomposition? Is it dependency preserving?\nConsider that the following set F of functional dependencies hold.\nA →BC\nCD →E\nB-→D\n\n(b) What is the importance of normalization? Define BCNF.",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain the steps involved in query processing. What is the significance of materialized\nviews?",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Write about fixed-length record and variable length record organization DBMS. Define\nB+ free structure used for indexing.",
+          "marks": "8",
+          "chapter": "File Structure and Hashing",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Explain different states of a transaction along with state transition diagram. Explain\nconflict Serializability with example.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": true
+        },
+        {
+          "qNum": 8,
+          "text": "Explain briefly two phase locking protocol for Concurrency Control.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Explain in detail the working of log-based recovery method.",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Explain the importance of data warehouse in decision making. Write the application areas\nof spatial database.",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2071 Bhadra",
+      "year": "2071",
+      "month": "Bhadra",
+      "examType": "Back",
+      "totalMarks": 76,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What difficulties would you face if you used file system directly to implement a database\napplication? What is physical data independence?",
+          "marks": "8",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Draw a complete ER-diagramfor the following case,\n\"A Bus Company owns d niumber of busses, Each bus is allocated to a particular route,although some\nroutes may have severl busses, Each route passes through a number of towns. One or more drivers\nare allocated to each stage of a route, which corresponds to a journey through some or all of the\ntowns on a route. Sorme of the towns have a garage where busses are kept and each of the busses\nare identified by the registration number and can carry different numbers of passengers, since the\nvehicles vary in size and can be single or double-decked, Each route is identified by a route number\nand information is available on the average number of passengers carried per day for each route.\nDrivers have an employee number, name, address, and sometimes a telephone number.\"\nWhat is the difference between the degree and cardinality of a relationship?",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "Consider the following relational database model\nEmployee(eid,name,address,supervisor_eid)\nDepartment(dept id, name)\nProject(pid title, dept_id)\nWorks_on(eid, pid, hours)\n[2 X 4 = 8]\nWriterelational algebraexpressions forthefollowing:\nList the name of all employees from Computer department along with the name of their\nsupervisor.\n\n(b) Find the name of all employees who work on the \"Network monitoring\" project for more\nthan 15 hours.\nDeleteall projects which belongto the\"Electrical\"department.\nFind the total number of projects from each department, along with the department name.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Consider the relational schema given below.\n[2X4=8]\nProduct (pid name, price, category,maker-cid)\nPurchase (buyer-ssn, seller-ssn, quantity,pid)\nCompany (cid, name,stock price, country)\nPerson(ssn, name,phone number, city)\n\n(a) Write an SQL query to find the name and price of all products of \"camera\" category made in\n\"Japan\".\nWrite an SQL query to create a view to expose only the Buyer name, Seller name and\nproduct name from all transactions.\nWriteaquery inSQLto increasethepriceofall productsfromDELLcompanyby5%.\nWrite skeleton tables in QBE to find the name and phone number of all persons who\npurchased products of Laptop category with price greater than 80,o00.",
+          "marks": "8",
+          "chapter": "Relational Query Languages",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain what is referential integrity constraint along with an example? Briefly explain\ncascading actions in referential integrity constraints.\n\n(b) Briefly expiain how to normalize a database from un-normalized form to 1NF, 2NF, 3NF and 4NF?",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain the difference between cost-based and heuristics-based methods for query optimization.\nHow can you optimizethefollowingquery?\nIhname, te(odept ame Music instructor  Iecoureid ite (teaches  course)",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a)\nWhat is the difference between ordered indices and hash indices in a database? What is the\nadvantage of using a sparse index?\n\n(b) What is a RAID? How would you choose the best RAID level for your database server? [1+3]",
+          "marks": "4",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain.Atomicity and Isolation properties of a database transaction.Describe the concept of\nconflict serializability for concurrent execution of transactions.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Briefly explain the idea of a stable storage. Explain the architecture of a remote backup system.",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Write short notes on the foliowing\n\n(a) Types of distributed databases\n\n(b) Datawarehousing",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2070 Magh",
+      "year": "2070",
+      "month": "Magh",
+      "examType": "Regular",
+      "totalMarks": 64,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Expliain the difference between DDL,DML and DCLalong with examples.",
+          "marks": "8",
+          "chapter": "Relational Query Languages",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Assume that at Pine Valley Furniture each product (described by Product No., Description, and\nCost) is comprised of at least three components (described by Component No., Description, and Unit\nof Measure) and components are used to make one or many products (i.e., must be used in at least\none product). in addition, assume that components are used to make other components and that\nraw materiais are aiso considered to be components. In both cases of components being used to\nsomething else.\nDraw an ER-diagram for this casc.Describe what is total participation using an ER-diagram example.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "Consider the following relational database model\nProduct (pid, name, price, category,maker-cid)\nPurchase (buyer-ssn, seller-ssn, quantity,pid)\nCompany(cid,name,stockprice,country)\nPerson(ssn, name,phone number,city)\n[2X4]\nWrite relational algebra expressions for the following:\nFind the ssn and name of all people who have purchased products of category\"telephone\"\nList the pid and name of all products which is more expensive than s5oo and made in China.\nIncrease the price of all products of \"television\"category by 10%.\nList the ssn and name of each seller along with thetotalquantity of products sold.\n[2 X4]\n4Considerthe relational schema given below.\nHotel (Hotel No, Name,Address)\nRoom (Room No.Hotel No,Tpe,Price)\nBooking (Hotel No,GuestNo.DateFrom,Date_To,Room_No)\nGuest (Guest No,Name,Address)\nWrite an SQLquery to list ail guests who have booked rooms at the Himalayan Hotel.\nWritean sQL query tocreate a viewtoexpose only the Hotel_No,GuestNo,Room No and\nPriceofthe room ofall booked rooms.\nWrite a query to offer S% discount on all rooms of type\"Deluxfor the Everest Hotel.\nWrite skeleton tables in QBE to find the Check-in dale and Name of ant guests currenthy\nbooked forthe Everest Hotei.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) Explain the necessary condition-for decomposing'a relational database table into two tabies, Why\nisnormalizationneeded?\n\n(b) Compare3NFand BCNFnormalforms?",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain the process how a query is evaluated in RDBMs systems, How are equivalence rules for\nreiation algebra helpfui for query optimization? Explain with example.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a)\nDistinguish between dense index and sparse index? What is a secondary index?\nBriefly explain how variable length records are stored in databases?",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "What do you understand by the ACiD properties of transactions? Explain with examples.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Expiain the functions of Undo and Redo operations in a log-based recovery of database.\n0. a) Briefly explain horizontal and vertical fragmentation in distributed databases.\n\n(b) Write a short note on Data warehouse and associated applications",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2070 Bhadra",
+      "year": "2070",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 80,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Briefly explain different levels of data abstraction in a database system.",
+          "marks": "8",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Draw an ER-diagram for the following mini-case. What is the difference between strong\nand weak entity sets?\nEach employee in an engineering company has at most one recognized skill, but a given\nskill may be possessed by several cmployees. An employee is able to operate given\nmachine-type (e.g., lathe, grinder) if he has one of several skills, but each skill is\nassociated with the operation of only one machine type. Possession of a given skill (e.g.,\nmechanic, electrician) allows an employee to maintain several machine-types, although\nmaintenance of any given machine-type requires a specific skill (e.g., a lathe must be\nmaintained by a mechanic).",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "Consider the following relational database model:\nemployee (employee-name, street, city)\nworks (employee-name, company-name, salary)\ncompany (company-name, city)\nmanages (employee-name, manager-name)\nWrite SQL queries for the following needs.\nModify the database so that Jones now lives in city Pokhara.\nii) Give all employees of ‘NABIL Bank' a 10 percent raise.\nii) Give all managers of ‘NABIL Bank' a 30 percent raise unless the salary bccomes\ngreater than 100,000.\niv) Delete employee who has maximum amount of salary.\n\n(b) The relation works has attribute company-name, company-name is primary key in\nrelation company. How the relation between these two relations is preserved? Expiain\nwith solution with SQL query to achieve this relationship.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a)\nWhat is a lossless-join decomposition? What is a functional dependency? Explain.\n\n(b) What is the advantage of 3NF over BCNF?",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What do you mean by term functional dependency? Discuss various types of functional\ndependencies.",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "How can pipelining approach improve query-evaluation efficiency?",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) What is the use of RAID storage device? What are the advantages and disadvantages\nof mirroring?\n\n(b) Whatisaremotebackupsystem?Explain.",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "a) List the ACID properties.Explain the usefulness of each\n\n(b) During its execution, a transaction passes through several states, until it finafly\ncommits or aborts. List all possible sequences of states through which a transaeton\nmay pass. Explain why each state transition may occur.\n\n(c) How twvo phase locking protocol helps in avoiding deadlock? Explain with examples.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Suppose following contents are present in the log when a crash occurs, Explain what\nhappensforalog-basedrecovery.\n<Tostart>\n<To. B, 2000. 2050>\n<T start>\n<checkpoint(ToT,l>\n<T..C,700,600>\n<T,commit>\n<T, start>\n<TzA.500,400>\n<To, B, 2000>\n<Toabori>\n<T2,A, 500>\n<T, abor>",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Briefly explain properties of distributeddatabases.",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2068 Magh",
+      "year": "2068",
+      "month": "Magh",
+      "examType": "Back",
+      "totalMarks": 88,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Describe the levels of abstraction of database. What do you understand by physical data\nIndependence?",
+          "marks": "8",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Draw an ER-diagram for the following mini-case.\nPatients are treated in a single ward by the doctors assigned to them. Heathcare assistants also\nattend to the patients, a number of these are associated with each ward. Each patient is required to\ntake a variety of drugs a certain number of times per day and for varying lengths of time. The system\nmust record details concerning patient treatment and staff payment. Some staff are paid part time\nand doctors and healthcare assistants work varying amounts of overtime at varying rates, The\nsystem will also need to track what treatments are required for which patients.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "Consider the following relational database model\nemployee (person-name, street, city)\nworks (person-name,company-name, salary)\ncompany(company-name,city)\nmanages (person-name, manager-name)\nWrite relational algebra expressions for the following:\n[2 X4 = 8]\n\n(a) Find the names and cities of residence of all employees who work for First Bank Corp.\n\n(b) Find the names of all employees who live in the same city as the company for which they\nwork.\nModify the database so that the employee Jones now lives in Newtown.\n\n(d) Find the average salary offered by each company.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Consider the following relational database.\n[2 X 5 = 10]\naccount (gccount-number, branch-name, balance)\nbranch (branch-namebranch-city,assets)\ncustomer (customer-name, customer-street, customer-city)\nloan (loan-number branch-name,amount)\ndepositor(customer-name,account-number)\nborrower(customer-name,loan-number)\n\n(a) Write an SQL query to list the names of all depositors along with their account number and\nbalance.\n\n(b) Write an SQLquery to find the names of all customers who have a loan of over S12,000.\n\n(c) Write a query in SQL to increase allaccounts with balances overs10,000by6%,and all other\naccountsby5%.\n\n(d) Write a query in SQL to list the branch-names where the average account balance is more\nthan $10,000.\nGive an expression fn QBE to find the customer-name, account-number, and balance for all\ncustomers who have an account at\"pATAN\" branch.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "What is a functional dependency? Explain. What are the criteria for'a relational schema to be in\nBCNF?",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain thebasic steps inqueryprocessing:Optimize thefollowingqueryexpre'ssion.\nname, title\ninstructor\ntenches",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a) Briefly explain the RAID levels O to 6.\n\n(b) Differentiate between a dense and a sparse index.",
+          "marks": "8",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Briefly explain how public-key encryption works.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Briefly explain the idea of log-based recovery.",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Explain the ACiD properties that should be ensured for transactions.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "a) What is the advantage of an object-oriented database compared to a traditional relational\ndatabase?\n\n(b) What is horizontal and vertical data fragmentation?",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2068 Bhadra",
+      "year": "2068",
+      "month": "Bhadra",
+      "examType": "Back",
+      "totalMarks": 80,
+      "questions": [
+        {
+          "qNum": 2,
+          "text": "Drawan ER-diagramforthefollowingmini-case\nPrccurement department of the Ministry of Transportation (MoT)keeps track of all the items (furniture and\npurchased, This ID is used to keep track of the item, which is assigned to a room within a building.\nEach room within a building is assigned to a department, and each department has a single\nemployee as it's manager.",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
+          "text": "Consider the following relational database model\nemployee (person-name, street, city)\nworks (person-name, company-name, salary)\ncompany (company-name, city)\nmanages (person-ngme,manager-name)\n[2 X 4 = 8]\nWrite relational algebra expressions forthe following:\nmore than $10,000 per annum.\n\n(b) Find the names-of all employees who do not work forFirst Bank Corp.\nGiwe all employees working at First Bank Corp,a 10 %salary raise.\nCount the numberof employees in each company.\n[2 X 5 = 10]",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Consider the following relational database.\naccount (gccount-number,branch-name,balance)\nbranch(branch-name,branch-city,assets)\ncustomer (customer-name, customer-street, customer-city)\nloan(loan-numbetbranch-name,amount)\ndepositor(customer-name gccount-number)\nborrower (customer-name,loan-number)\nWrite an sQl query to list the names of all depositors along with their account number,\nstreet and city address.\nWrite a query in SQl to list the branch-cities and total assets where the total assets are more\nthan $1,000,000 in the city.\nWrite an SQLquery to find the names and loan-numbers ofall customers who have a loan of\nover $15,000,\nWnite a query in Sa to increase allaccounts with balances over s10,o00 by 6%.\nGive an expression in OsE to find the customer-name, loan-number, and amount for all\ncustomers who have a loan from the\"pATAN\"branch.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain the conditions Qf B'CNF.CompareBCNFand 3NFwith example.",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain the process'of query optimization. What jis the significance of materialized yiews?",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What.is RAID?Expiain the B+tree index with anexample?",
+          "marks": "8",
+          "chapter": "File Structure and Hashing",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Explain thegranting and revoking of privileges to database users..",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Consider the following log contents when a'crash gccurs. Briefly explain howa recovery would be\ndone.\n<To start>.\n<To, A, 1000, 950>\n<To, B, 2000, 2050>\n<To commit>\n<T, start>\n<T1, C, 700, 600>",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What is a transaction? What is a serializable schedule?",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "a)\nWhat is an ORM?\n\n(b) What is the difference between a homogeneous and a heterogeneous distributed database?",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2066 Magh",
+      "year": "2066",
+      "month": "Magh",
+      "examType": "Regular",
+      "totalMarks": 64,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "What are the drawbacks of file system to store data?",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "a) An information system is to be designed for keeping the records of Universe Cup\nCricket Tournament. There are 10 teams participating in the tournament. Each\ncountry sends 15 players and 4 other members. For players, the runs he scores and the\nnumber of wickets taken (so far) are to be rerecorded. For non-players, the role\n(manager, coach etc) and the number of years of experience are recorded. There are\nmatches scheduled among the teams on several grounds on fixed dates. Each ground\nhas fixed seating capacity and a size. For 38 matches, 11 referees have been assigned.\nEach match will have 3 refries. The performance of every player in every match is to\nbe recorded in terms of runs he scored and wicket he took. Draw E-R model of the\nsystem.\n\n(b) Explain how network data model is different from relation data model.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "Consider the following relational scheme:\nAccount (account number, branch_ name, balance)\nBranch (branch name, branch_city, assets)\nCustomer (Customer name, customer_street, customers_city)\nLoan (loan number, branch_name, amount)\nDepositor (customer name, account number)\nBorrower (customer name, loan number)\nWrite SQL Query expressions to list all the customers details, branch details and\naccount details according to account number.\nWrite SQL Query expressions to list the branch name where the average account\nbalance is more than 50,000.\nWrite SQL Query expressions to increase all accounts with balances over S10,000 by\n5% and other accounts receive 6%\nWrite a query in SQL to list the branch _cities and total assets where the total assets\nare more than $10,00,000 in the city.\nWrite relational algebra expression to count the number of accounts in each branch\nWrite relational algebra expression to delete all loans less than Si,ooo in amount",
+          "marks": "8",
+          "chapter": "Relational Query Languages",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "a) What is the advantages of 3NF over BCNF? Suppose that we decompose the scheme\nR  (A, B,C) into Rl  (A,B),R2 (A,C). Show that this decomposition is a lossless\njoin decomposition and not dependency preserving if theF  (A->B, B->C)\n\n(b) What do you mean by integrity constraints? Explain any four constraints that can be\nenforcedtodatabasetables.",
+          "marks": "8",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain the basic steps in query processing with diagram. What is pipelining in query\ncvaluation?\nWhat is RAID? Distinguish between dense and sparse indices along with example.\nWhat is transaction? Explain ACID properties with examples.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": true
+        },
+        {
+          "qNum": 8,
+          "text": "Describe the different types of locks used for concurrency control. Draw the lock\ncompatibilitymatrix,",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": true
+        },
+        {
+          "qNum": 9,
+          "text": "Explain redo phase and undo phase of log based failure recovery mechanism.",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What is the significance of object-oriented databases? Briefly explain parallel database\narchitectures.",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2066 Magh",
+      "year": "2066",
+      "month": "Magh",
+      "examType": "Regular",
+      "totalMarks": 70,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Distinguish between a database and a DBMs. What is the advantage of separating the logical leve!\nand physical level in database design?",
+          "marks": "8",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Draw a complete ER-diagram for the following case.\n\"A iecturer (having an ID, name and rcom numberj is responisible for organising a number of course\nmodules. Each module has a unique code and also a name and each module can involve a number of.\nlecturers who deliver part of it. A module is composed of a series of lectures and sometimes lectures\non a given topic can be part of more than one module. A lecture has a time, room and date and is\ndelivered by a lecturer and a lecturer may deliver more than one lecture. Students, identified by\nnumber and name, can attend lectures and a student must be registered for a number of modules.\nWe also store the date on which the student first registered for that module. Finally, a lecturer acts\nas a tutor for a number of students and each student has only one tutor.\"\nExplain generalization and specialization in ER diagram along with an example?",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 3,
+          "text": "Consider the following relational database mode!:\nEmpleyee(eid, name, address, supervisor_eid)\nDepartment(dept. id, name)\nProject(pid, title, dept_id)\nWorks_on(eid; pid hours)\n[2 X 4 = 8]\nWrite relational algebra-expressions forthe following:\n\n(a) List the titles of all'projects along with the department names.\n\n(b) Find the names of all employees who live in \"Kathmandu\" and are supervised by employee\nwho also lives in\"Kathmandu\".\nIncrease the working hours of all employees who work in the \"Voter registration\" project by\nS hrs.\n\n(d) Find the total number of employees involved in each project along with the project title.",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "Consider the relational schema given below.\n[2 X 4 = 8]\nProduct ( pid, name, price, category, maker-cid)\nPurchase (buyer-ssn, seller-ssn, quantity, pid)\nCompany (cid, name, stockprice, country)\nPerson(ssn,name,phone number,city)\n\n(a) Write an SQL query to find the names of all Japanese companles which sell products of\n\"Computer\"category.\nWrite an SQL query to create a view to expose only the product id, name, category and\nmakercountry.\nWrite a query in SQL to decrease the stock price of all makers of \"LCD\" category products by\n\n(d) Write skeleton tables in QBE to find the name and phone number of all persons who sold\nproducts of \"Automobile\" category.",
+          "marks": "8",
+          "chapter": "Relational Query Languages",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "a) What are integrity constraints in a database? Explain with example. What is a trigger in DBMs?\nWhen is it risky to use triggers?\n\n(b) Define what a functional dependency is. Explain BCNF in terms of functional dependencies. [3+3]",
+          "marks": "6",
+          "chapter": "Database Constraints and Normalization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Explain how a DBMS chooses an appropriate query execution plan for optimized query execution.\nExplain the difference between materialization and pipelining methods for query evaluation? [5+3]",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "a). Explain, along with an example, how a database record is searched using a sparse primary\nindex? Write the SQL syntax to createan index.\n\n(b) Explain the node structure of a B+ tree. Whyis B+ tree good for indexing?",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "a) What is a transaction?What are the properties a transaction should satisfy.in a database system?\n\n(b) What do you mean by serializability of a schedule? What do you understand by granularity of\nlocking for concurrency control?\n'g9. Distinguish between immediate-modification and deferred-modification in the context of log-\nbased database recovery. What.is the significance of checkpoints in a log?",
+          "marks": "8",
+          "chapter": "Transaction Processing and Concurrency Control",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Write short notes on the following\n\n(a) Object-relational mapping\nParalleldatabasearchitectures",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": false
+        }
+      ]
+    },
+    {
+      "session": "2066 Bhadra",
+      "year": "2066",
+      "month": "Bhadra",
+      "examType": "Regular",
+      "totalMarks": 40,
+      "questions": [
+        {
+          "qNum": 1,
+          "text": "Briefly highlight your significant differences between a file-processing system and a\nDBMS.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 2,
+          "text": "Draw an ER-diagram for the following mini-case. What is the difference between\ncardinality and degree of a relationship?\nA university registrar's maintains data about the following entities: (a) Courses, including\nnumber, title, credits, syllabus and prerequisites; (b) Course offerings, including course\nnumber, year, semester, section number, instructor(s), timings and classroom; (c)\nStudents, including student-id, name, and program; and (d) instructors, including\nidentification number, name, department, and title. Further, the enrollment of students in\ncourses and grades'awarded to students in each course they are enrolled for must be\nappropriately modeled..\n\n(a) Mention the two conditions to be satisfied by any two sets for union, intersection\nand set difference operation between them.\n\n(b) employee(empname, street, city)\nworks(empname, companyname, salary)\ncompany(companyname, city)\nmanages(empname, managername)\nFor the case of above database schema:\nI.Write an expression in SQL to create the table employee.\nII: Write an expression in SQL to inset a row into the table works\nIII. Write an expression in SQL to find the name and cities of resident of all the\nemployees who.do.not work-for XYZ-Pvt.Ltd.\nIV. Write an expression Relational Algebra to find the company name that has the\nhighest number of employees.\n\n(c) Suppose you are assigned as the Database Administrator of a Bank. How can you\nenhance the security by implementing concept of views on the database?",
+          "marks": "8",
+          "chapter": "Data Models",
+          "isDiagram": true
+        },
+        {
+          "qNum": 4,
+          "text": "What do you mean by integrity constrains? Explain any four constraints that can be\nenforced to database tables.\nWhat are the advantages of normalization of database? Explain INF, 2NF and 3NF.\nWhen database de-normalization is prefered?\nExplain the process of query optimization. What is.cost-based optimization?\nWhat do you mean by ordered index and hash index? Explain limitation of static hashing.\nHow extendable hashing overcome such limitation?\nExplain conflict serializability with example.",
+          "marks": "8",
+          "chapter": "Query Processing and Optimization",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "a)\n\n(b) Differentiate between fine granularity and coarse granularity locking in multiple\ngranularitylockingprotocol,\nExplain redo phase and undo phase of log based failure recovery mechanism.",
+          "marks": "8",
+          "chapter": "Crash Recovery",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "a) What is object-oriented databases? Explain briefly.\n\n(b) Explain the benefit of parallel database?",
+          "marks": "8",
+          "chapter": "Advanced Database Concepts",
+          "isDiagram": false
+        }
+      ]
     }
   ]
 }
