@@ -678,7 +678,7 @@
         },
         {
           "qNum": 3,
-          "text": "Define priority queue with its type. Write an algorithm for enqueue operation in circular\nqueue.",
+          "text": "Define priority queue with its type. Write $a^n$ algorithm for enqueue operation in circular\nqueue.",
           "marks": "8",
           "chapter": "Queues",
           "isDiagram": false
@@ -727,14 +727,14 @@
         },
         {
           "qNum": 10,
-          "text": "Define collision with example, Insert the keys 20, 15, 19, 25, 49, 58, 39, and 91 using\nquadratic probing method. The hash function is: h (key) = key % 10 (where 10 is the table\nsize).",
+          "text": "What is collision in hashing? What are the techniques used for collision resolution? Insert the keys: 62, 37, 36, 44, 67, 91, 82, and 31 into a hash table of size 10 using quadratic probing (or linear probing) where hash function h(key) = key % 10.",
           "marks": "8",
           "chapter": "Searching Algorithms",
           "isDiagram": false
         },
         {
           "qNum": 11,
-          "text": "Define an Big-Oh and Theta notation with suitable example.",
+          "text": "Define $a^n$ Big-Oh and Theta notation with suitable example.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
@@ -744,7 +744,7 @@
           "text": "If a graph has negative edge weights, which shortest path algorithm would be most\nappropriate and why? Explain Kruskal's Algorithm for finding the MST with suitable\nekample.",
           "marks": "8",
           "chapter": "Graphs",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     },
@@ -771,7 +771,7 @@
         },
         {
           "qNum": 3,
-          "text": "Write an algorithm for enqueue and dequeue operations in circular queue.",
+          "text": "Write $a^n$ algorithm for enqueue and dequeue operations in circular queue.",
           "marks": "8",
           "chapter": "Queues",
           "isDiagram": false
@@ -792,14 +792,14 @@
         },
         {
           "qNum": 6,
-          "text": "Write an algorithm for Tower of Hanoi (TOH) with ‘n' disks. Construct a recursion tree\nfor TOH problem with 4 disks.",
+          "text": "Write $a^n$ algorithm for Tower of Hanoi (TOH) with ‘n' disks. Construct a recursion tree\nfor TOH problem with 4 disks.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
           "qNum": 7,
-          "text": "Describe an AVL tree. Construct AVL tree for following sequence of elements:\n15,30,35,60,55,70,84,90,88,10,5.",
+          "text": "Describe $a^n$ AVL tree. Construct AVL tree for following sequence of elements:\n15,30,35,60,55,70,84,90,88,10,5.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
@@ -820,14 +820,14 @@
         },
         {
           "qNum": 10,
-          "text": "What is hashing and how does it improve the efficiency of search operations? Assuming\nsuitable hash function, insert 12, 24, 35, 40, 55, 50, 18, 19, 3 into a hash table of size 10\nusing quadratic probing for collision resolution.",
+          "text": "What is collision in hashing? What are the techniques used for collision resolution? Insert the keys: 62, 37, 36, 44, 67, 91, 82, and 31 into a hash table of size 10 using quadratic probing (or linear probing) where hash function h(key) = key % 10.",
           "marks": "8",
           "chapter": "Searching Algorithms",
           "isDiagram": false
         },
         {
           "qNum": 11,
-          "text": "Define an Omega and Theta notation with suitable example.",
+          "text": "Define $a^n$ Omega and Theta notation with suitable example.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
@@ -837,7 +837,7 @@
           "text": "Differentiate between depth first traversal and breadth first traversal. For the following\ngraph, use Dijkstra's algorithm to find the shortest path from the source vertex M to all\nother vertices. Demonstrate the process step by step.",
           "marks": "8",
           "chapter": "Graphs",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     },
@@ -864,7 +864,7 @@
         },
         {
           "qNum": 3,
-          "text": "Explain how circular queue is efficient compared to linear queue. Write down an\nalgorithm to perform insertion and deletion operation in a linear queue.",
+          "text": "Explain how circular queue is efficient compared to linear queue. Write down $a^n$\nalgorithm to perform insertion and deletion operation in a linear queue.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
@@ -878,55 +878,62 @@
         },
         {
           "qNum": 5,
-          "text": "Write an algorithm to insert a new node after any given node in doubly linked list.\nExplain how you add two polynomials with the help of linked list.",
+          "text": "Write $a^n$ algorithm to insert a new node after any given node in doubly linked list.\nExplain how you add two polynomials with the help of linked list.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
           "qNum": 6,
-          "text": "Write an algorithm to find nth Fibonacci number using tail recursion. Generate a recursion\ntree of TOH problem with 4 disks.",
+          "text": "Write $a^n$ algorithm to find nth Fibonacci number using tail recursion. Generate a recursion\ntree of TOH problem with 4 disks.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
           "qNum": 7,
-          "text": "What do you mean by complete binary tree? Explain with example. Create an AVL\nbalanced tree for the following sequence of elements: 10, 9, 8, 4, 5, 7, 32, 16, 11, 1, 12\nand 2.",
+          "text": "What do you mean by complete binary tree? Explain with example. Create $a^n$ AVL\nbalanced tree for the following sequence of elements: 10, 9, 8, 4, 5, 7, 32, 16, 11, 1, 12\nand 2.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
           "qNum": 8,
-          "text": "Create a Binary Search Tree by inserting the nodes: 12, 15, 25, 18, 20, 30, 28, 10 and 5.\nThen delete element 25 from it.",
-          "marks": "8",
+          "text": "Create a Binary Search Tree by inserting the nodes: 12, 15, 25, 18, 20, 30, 28, 10 and",
+          "marks": "5",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
           "qNum": 9,
+          "text": "Then delete element 25 from it.",
+          "marks": "5",
+          "chapter": "Tree",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
           "text": "Explain Heap as priority queue. Use heap sort to sort the following numbers: 27, 23, 16,\n82, 47, 18, 38, 15, 2, 76, 22 and 12.",
           "marks": "8",
           "chapter": "Sorting Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 10,
-          "text": "What is collision? What are the techniques used for collision resolution in hashing? Insert\nthe keys: 52, 27, 16, 14, 97, 21, 82, 41 and 31 using quadratic probing method. The hash\nfunction is h =- (key) = key % 10 (Where 10 is the table size).",
+          "qNum": 11,
+          "text": "What is collision in hashing? What are the techniques used for collision resolution? Insert the keys: 62, 37, 36, 44, 67, 91, 82, and 31 into a hash table of size 10 using quadratic probing (or linear probing) where hash function h(key) = key % 10.",
           "marks": "8",
           "chapter": "Searching Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 11,
+          "qNum": 12,
           "text": "Define Big-Oh and Theta notation with suitable example.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 12,
+          "qNum": 13,
           "text": "What is minimum spanning tree? Explain Warshall's algorithm with example. Define\nDijkstra's algorithm with explanation.",
           "marks": "8",
           "chapter": "Tree",
@@ -957,7 +964,7 @@
         },
         {
           "qNum": 3,
-          "text": "Define Queue with its logical representation. Write an algorithm to enqueue O and\ndequeue O element in Circular Queue.",
+          "text": "Define Queue with its logical representation. Write $a^n$ algorithm to enqueue O and\ndequeue O element in Circular Queue.",
           "marks": "8",
           "chapter": "Graphs",
           "isDiagram": false
@@ -971,7 +978,7 @@
         },
         {
           "qNum": 5,
-          "text": "Write an algorithm to insert a new node after a given node and to delete the last node of\nsingly linked list.",
+          "text": "Write $a^n$ algorithm to insert a new node after a given node and to delete the last node of\nsingly linked list.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
@@ -985,7 +992,7 @@
         },
         {
           "qNum": 7,
-          "text": "Construct an AVL tree for following sequence of elements: 42, 36, 56, 27, 63, 72, 30, 25,",
+          "text": "Construct $a^n$ AVL tree for following sequence of elements: 42, 36, 56, 27, 63, 72, 30, 25,",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
@@ -1013,17 +1020,24 @@
         },
         {
           "qNum": 11,
-          "text": "Explain how collision occurs? Use quadratic probing to insert following keys: 72, 27, 36,\n24, 63, 81, and 101 into the hash table, considering hash table size 10. And also list out its\nadvantages and disadvantages.",
-          "marks": "8",
+          "text": "Explain how collision occurs? Use quadratic probing to insert following keys: 72, 27, 36,\n24, 63, 81, and 101 into the hash table, considering hash table size",
+          "marks": "5",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
           "qNum": 12,
+          "text": "And also list out its\nadvantages and disadvantages.",
+          "marks": "5",
+          "chapter": "Linked List",
+          "isDiagram": false
+        },
+        {
+          "qNum": 13,
           "text": "Define minimum spanning tree. Create a minimum spanning tree for the following graph\nusing Krushkal's algorithm.",
           "marks": "8",
           "chapter": "Tree",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     },
@@ -1043,7 +1057,7 @@
         },
         {
           "qNum": 2,
-          "text": "Define stack. Convert following infix expression to postfix expression showing stack\nstatus in each step: Ax(B+C) -(B^D)xA + E / F.",
+          "text": "Evaluate the postfix expression: $12, 7, 3, -, /, 2, 1, 5, +, *, +$ showing the status of the stack at each step.",
           "marks": "8",
           "chapter": "Stack and Recursion",
           "isDiagram": false
@@ -1057,7 +1071,7 @@
         },
         {
           "qNum": 4,
-          "text": "Consider two linked lists that represent two polynomials. Subtract them and return the\ndifference as a linked list. Write an algorithm and program to implement above scenario.",
+          "text": "Consider two linked lists that represent two polynomials. Subtract them and return the\ndifference as a linked list. Write $a^n$ algorithm and program to implement above scenario.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
@@ -1071,7 +1085,7 @@
         },
         {
           "qNum": 6,
-          "text": "Explain pre-order and in-order tree traversal with example. Construct an AVL balanced\ntree with given set of data: 15,20,24,10,13,7,30,36,25",
+          "text": "Explain pre-order and in-order tree traversal with example. Construct $a^n$ AVL balanced\ntree with given set of data: 15,20,24,10,13,7,30,36,25",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
@@ -1085,14 +1099,14 @@
         },
         {
           "qNum": 8,
-          "text": "Write an algorithm for quick sort. Sort the following numbers using quick sort:\n30,25,79,19,48,28,21,44 and 120.",
+          "text": "Write an algorithm for Quick Sort. Trace the quick sort algorithm step-by-step to sort the following numbers: 30, 25, 79, 19, 48, 28, 21, 44, and 110.",
           "marks": "8",
           "chapter": "Graphs",
           "isDiagram": false
         },
         {
           "qNum": 9,
-          "text": "What is collision? What are the techniques used for collision resolution in hashing? Insert\nthe keys:62,37,36,44,67,91,82, and 31 using quadratic probing method. The hash function\nis: h(key) = key % 10 (where 10 is the table size).",
+          "text": "What is collision in hashing? What are the techniques used for collision resolution? Insert the keys: 62, 37, 36, 44, 67, 91, 82, and 31 into a hash table of size 10 using quadratic probing (or linear probing) where hash function h(key) = key % 10.",
           "marks": "8",
           "chapter": "Searching Algorithms",
           "isDiagram": false
@@ -1109,7 +1123,7 @@
           "text": "Explain the concept of minimum spanning tree (MST) and find MST for the following\ngraph using Kruskal's algorithm:",
           "marks": "8",
           "chapter": "Tree",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     },
@@ -1132,49 +1146,56 @@
           "text": "Define stack. Convert following infix expression showing stack status after every step.\n(A*B*((C^X+D^Y)+E/Z)*F))\nWhat is queue? What are different operations that can be performed over queue?\nIllustrate the use of stack in recursion taking any recursive program of your choice.\nBriefly explain the significance of asymptotic notations with suitable diagram.",
           "marks": "8",
           "chapter": "Stack and Recursion",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 6,
-          "text": "Describe an AVL tree. Construct AVL tree for following sequence of elements: 5, 10, 15,\n30,25,20,4,2,1",
+          "qNum": 3,
+          "text": "Describe $a^n$ AVL tree. Construct AVL tree for following sequence of elements: 5, 10, 15,\n30,25,20,4,2,1",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 7,
-          "text": "Define collision. Insert the keys 30, 15, 69, 28, 49, 58, 79 and 91 using quadratic probing\nmethod. The hash function is : h(key) = key%10 where 10 is the table size.",
+          "qNum": 4,
+          "text": "What is collision in hashing? What are the techniques used for collision resolution? Insert the keys: 62, 37, 36, 44, 67, 91, 82, and 31 into a hash table of size 10 using quadratic probing (or linear probing) where hash function h(key) = key % 10.",
           "marks": "8",
           "chapter": "Searching Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 8,
-          "text": "Create a heap tree showing each insertion steps for the following data: 28, 24, 50, 36, 42,\n58, 22, 56, 46. Use same heap tree to sort the data showing each intermediate step.",
-          "marks": "8",
+          "qNum": 5,
+          "text": "Create a heap tree showing each insertion steps for the following data: 28, 24, 50, 36, 42,\n58, 22, 56,",
+          "marks": "5",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 6,
+          "text": "Use same heap tree to sort the data showing each intermediate step.",
+          "marks": "5",
+          "chapter": "Tree",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
           "text": "Explain with example how nt\" node in a singly linked list can be deleted?",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
-          "qNum": 10,
-          "text": "Explain balancing of B-tree with example. Construct an AVL tree from following\nsequence of data: 10, 20, 15, 25, 30, 16, 18, 19.",
+          "qNum": 8,
+          "text": "Explain balancing of B-tree with example. Construct $a^n$ AVL tree from following\nsequence of data: 10, 20, 15, 25, 30, 16, 18, 19.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 11,
+          "qNum": 9,
           "text": "Define depth first and breadth first traversal. Construct the minimum spanning tree\n(MST) for the given graph using Krushkal's algorithm.",
           "marks": "8",
           "chapter": "Tree",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     },
@@ -1194,7 +1215,7 @@
         },
         {
           "qNum": 2,
-          "text": "Write an algorithm for converting infix expression to postfix expression. convert the\ngiveninfixexpressiontopostfixexpressionusingabovealgorithm:-\na\"b*c-d-e-f /e /(g-h)",
+          "text": "Write $a^n$ algorithm for converting infix expression to postfix expression. convert the\ngiveninfixexpressiontopostfixexpressionusingabovealgorithm:-\na\"b*c-d-e-f /e /(g-h)",
           "marks": "8",
           "chapter": "Stack and Recursion",
           "isDiagram": false
@@ -1208,45 +1229,45 @@
         },
         {
           "qNum": 4,
-          "text": "Explain how the addition of polynomial equations is done using linked list. Write an\nalgorithm to insert element in queue using linked list.",
+          "text": "Explain how the addition of polynomial equations is done using linked list. Write $a^n$\nalgorithm to insert element in queue using linked list.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
           "qNum": 5,
-          "text": "Explain how recursive program uses stack with illustrative stack diagram. Write an\nalgorithm for solving Tower Hanoi problem with 'n' discs.\nWhat is an AVL tree? Construct AVL tree using following sequence of data:\n16, 27, 9, 11, 36, 54, 81, 63, 72\nDescribe the insertion operation in B-tree with suitable example.",
+          "text": "Explain how recursive program uses stack with illustrative stack diagram. Write $a^n$\nalgorithm for solving Tower Hanoi problem with 'n' discs.\nWhat is $a^n$ AVL tree? Construct AVL tree using following sequence of data:\n16, 27, 9, 11, 36, 54, 81, 63, 72\nDescribe the insertion operation in B-tree with suitable example.",
           "marks": "8",
           "chapter": "Tree",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 6,
           "text": "Define O mega and Theta notation with suitable example.",
           "marks": "8",
           "chapter": "Searching Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 7,
           "text": "Define Collision. Insert following keys: 30, 25, 79, 19, 48, 28, 21 and 44 in hash table\nusing linear probing method where h(key) = key % 10.",
           "marks": "8",
           "chapter": "Searching Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 10,
-          "text": "Prove that time complexity of bubble sort is O(n?). Sort the numbers 40, 90, 20, 10, 30, 5,\n60, 100, 80 using heap sort method.",
+          "qNum": 8,
+          "text": "Prove that time complexity of bubble sort is O($n^2$). Sort the numbers 40, 90, 20, 10, 30, 5,\n60, 100, 80 using heap sort method.",
           "marks": "8",
           "chapter": "Sorting Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 11,
+          "qNum": 9,
           "text": "Explain Warshall's algorithm with example. Determine the breadth first topological\nordering for the following graph.",
           "marks": "8",
           "chapter": "Graphs",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     },
@@ -1266,7 +1287,7 @@
         },
         {
           "qNum": 2,
-          "text": "Define stack. Evaluate the postfix expression A*BC-DE*F/+G* with status of stack\nwhere A=2, B=3,C=10, D=5,E=2, F=4 and G=6.",
+          "text": "Evaluate the postfix expression: $12, 7, 3, -, /, 2, 1, 5, +, *, +$ showing the status of the stack at each step.",
           "marks": "8",
           "chapter": "Stack and Recursion",
           "isDiagram": false
@@ -1279,39 +1300,39 @@
           "isDiagram": false
         },
         {
+          "qNum": 4,
+          "text": "What are tail and non- tail recursions? Write $a^n$ algorithm for TOH with 'n' disks and\ngenerate a recursion tree of TOH problem with 3 disks.\nWhat do you mean by asymptotic notation? Define Big-O notation with its properties.",
+          "marks": "8",
+          "chapter": "Tree",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain deletion of node with two children in BST with suitable example. Construct $a^n$\nAVL tree for following data: 36, 12, 42, 23, 65, 96, 37, 79, 19, 24, 33 and 44.",
+          "marks": "8",
+          "chapter": "Tree",
+          "isDiagram": false
+        },
+        {
           "qNum": 6,
-          "text": "What are tail and non- tail recursions? Write an algorithm for TOH with 'n' disks and\ngenerate a recursion tree of TOH problem with 3 disks.\nWhat do you mean by asymptotic notation? Define Big-O notation with its properties.",
-          "marks": "8",
-          "chapter": "Tree",
-          "isDiagram": false
-        },
-        {
-          "qNum": 8,
-          "text": "Explain deletion of node with two children in BST with suitable example. Construct an\nAVL tree for following data: 36, 12, 42, 23, 65, 96, 37, 79, 19, 24, 33 and 44.",
-          "marks": "8",
-          "chapter": "Tree",
-          "isDiagram": false
-        },
-        {
-          "qNum": 9,
           "text": "Explain selection sort. Sort the numbers 92, 73, 22, 49, 46, 98, 21, 9, 70 and 63 using\nselection sort.",
           "marks": "8",
           "chapter": "Sorting Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 7,
           "text": "Define binary search with example. What is the cause of collision in hashing and explain\nany one method for the collision resolution.",
           "marks": "8",
           "chapter": "Searching Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 11,
+          "qNum": 8,
           "text": "What are different representation methods of graph? Explain Kruskal's algorithm to find\nMinimum Spanning Tree with example.",
           "marks": "8",
           "chapter": "Tree",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     },
@@ -1331,7 +1352,7 @@
         },
         {
           "qNum": 2,
-          "text": "Define stack. Convert given infix expression to postfix showing stack status in each step:\n(A+B*(C+D/E)^F*G)",
+          "text": "Evaluate the postfix expression: $12, 7, 3, -, /, 2, 1, 5, +, *, +$ showing the status of the stack at each step.",
           "marks": "8",
           "chapter": "Stack and Recursion",
           "isDiagram": false
@@ -1359,7 +1380,7 @@
         },
         {
           "qNum": 6,
-          "text": "Write an algorithm and element after Kth node in doubly linked list. Explain the\nadvantages and disadvantages of using doubly linked list.",
+          "text": "Write $a^n$ algorithm and element after Kth node in doubly linked list. Explain the\nadvantages and disadvantages of using doubly linked list.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
@@ -1373,27 +1394,34 @@
         },
         {
           "qNum": 8,
-          "text": "Write an algorithm for insertion sort. Sort the following number using radix sort:\n141, 456, 342, 789, 90,2,870,192,938 and 243",
+          "text": "Write an algorithm for Quick Sort. Trace the quick sort algorithm step-by-step to sort the following numbers: 30, 25, 79, 19, 48, 28, 21, 44, and 110.",
           "marks": "8",
           "chapter": "Graphs",
           "isDiagram": false
         },
         {
           "qNum": 9,
-          "text": "Draw hash table obtained from double hashing with hash functions: h1(K) = K mod 11\nand h2(K) = K mod 9 for the given keys: 76,36,47,49,21,65 with table size 11. Use\nhp(k,i) = (h1l(k) + i * h2 (k)) mod m.",
-          "marks": "8",
+          "text": "Draw hash table obtained from double hashing with hash functions: h1(K) = K mod 11\nand h2(K) = K mod 9 for the given keys: 76,36,47,49,21,65 with table size",
+          "marks": "5",
           "chapter": "Searching Algorithms",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 10,
+          "text": "Use\nhp(k,i) = (h1l(k) + i * h2 (k)) mod m.",
+          "marks": "5",
+          "chapter": "Searching Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
           "text": "Explain Big-oh notation with its significance and limitation.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 11,
+          "qNum": 12,
           "text": "What is minimum spanning tree? Explain Warshall's algorithm with example",
           "marks": "8",
           "chapter": "Tree",
@@ -1430,43 +1458,43 @@
           "isDiagram": false
         },
         {
-          "qNum": 5,
-          "text": "How recursive algorithm uses STACK to store intermediate results, illustrate with an\nexample? Distinguish between normal function and recursive function.",
+          "qNum": 4,
+          "text": "How recursive algorithm uses STACK to store intermediate results, illustrate with $a^n$\nexample? Distinguish between normal function and recursive function.",
           "marks": "8",
           "chapter": "Stack and Recursion",
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 5,
           "text": "Explain deletion of node with one child in BST with suitable example. Construct a B-tree\nof order 5 for following data: 82, 12, 22, 23,56,96,37,99,59,74,28,65,60 and 44.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 6,
           "text": "Explain shell sort. Sort the numbers 92, 83, 22, 49, 36, 98, 12, 9, 70 and 51 using shell\nsort.",
           "marks": "8",
           "chapter": "Sorting Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 7,
           "text": "Compare sequential search with binary search. Discuss about linear probing and quadratic\nprobing.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 8,
           "text": "Describe the importance of growth function in algorithm. Discuss about theta function,\nBig-OhfunctionandOmegafunction.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 10,
-          "text": "Write an algorithm for Warshall's algorithm and illustrate with an example",
+          "qNum": 9,
+          "text": "Write $a^n$ algorithm for Warshall's algorithm and illustrate with $a^n$ example",
           "marks": "8",
           "chapter": "Graphs",
           "isDiagram": false
@@ -1488,60 +1516,60 @@
           "isDiagram": false
         },
         {
-          "qNum": 3,
+          "qNum": 2,
           "text": "Define queue. Explain enqueue and dequeue operation with example.",
           "marks": "8",
           "chapter": "Queues",
           "isDiagram": false
         },
         {
-          "qNum": 4,
+          "qNum": 3,
           "text": "Write algorithms of insertion and deletion of data in array implementation of lists.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 4,
           "text": "How do you delete a node at the end of the doubly linked list? Explain how the addition\nof polynomial equations is done using linked list.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
-          "qNum": 6,
-          "text": "What is tree recursion? Write an algorithm for TOH with 'n' disks and generate a\nrecursion tree of TOH problem with 3 disks.",
+          "qNum": 5,
+          "text": "What is tree recursion? Write $a^n$ algorithm for TOH with 'n' disks and generate a\nrecursion tree of TOH problem with 3 disks.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 6,
           "text": "Discuss about AVL rotations with suitable examples. Create a AVL balanced tree for data\nsequence 10 20 30 50 45 40 8 5 3.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 7,
           "text": "Explain selection sort. Sort data sequence 40 90 20 -10 30 5 60 100 80 using selection\nsort method.",
           "marks": "8",
           "chapter": "Sorting Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 8,
           "text": "Define big-O notation and Big-Q notation with their respective curves.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 9,
           "text": "Explain Depth first traversal in graph. Create minimum spanning tree for the following\ngraph using Kruskal's algorithm.",
           "marks": "8",
           "chapter": "Tree",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     },
@@ -1560,53 +1588,53 @@
           "isDiagram": false
         },
         {
-          "qNum": 4,
+          "qNum": 2,
           "text": "How do you implement array to represent queue as list?",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 3,
           "text": "In a linked list data cannot be accessed randomly, Justify with suitable example. Write\ncomplete algorithm to implement circular queue linked list.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
-          "qNum": 6,
-          "text": "Explain a Tower of Hanoi for '3' disks and also generate recursion tree. Explain the basic\nprinciple of recursion with example.\nWrite an algorithm to implement a Binary Search Tree using doubly linked list.\nDescribe an AVL tree. Construction AVL tree for following sequence of elements\n3, 2, 1, 4, 5, 6, 7, 16, 15, 14, 13, 12",
+          "qNum": 4,
+          "text": "Explain a Tower of Hanoi for '3' disks and also generate recursion tree. Explain the basic\nprinciple of recursion with example.\nWrite $a^n$ algorithm to implement a Binary Search Tree using doubly linked list.\nDescribe $a^n$ AVL tree. Construction AVL tree for following sequence of elements\n3, 2, 1, 4, 5, 6, 7, 16, 15, 14, 13, 12",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 5,
           "text": "Explain Radix sort and sort the numbers 345, 654, 924, 123, 56, 72, 555, 808, 911 and 57.",
           "marks": "8",
           "chapter": "Sorting Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 6,
           "text": "Write down the algorithm for binary search with suitable example.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 11,
+          "qNum": 7,
           "text": "Explain about Big-oh notation with its significance and limitation.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 12,
+          "qNum": 8,
           "text": "Explain Kruskal algorithm for finding minimum spanning tree in a graph.",
           "marks": "8",
           "chapter": "Tree",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     },
@@ -1633,7 +1661,7 @@
         },
         {
           "qNum": 3,
-          "text": "Differentiate between a static and dynamic list structure and write an algorithm\nforgetnode O and freenode O of static list structure.",
+          "text": "Differentiate between a static and dynamic list structure and write $a^n$ algorithm\nforgetnode O and freenode O of static list structure.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
@@ -1643,39 +1671,46 @@
           "text": "How do you perform a push and pop operation in stack as a linked list? How do you\ninsert and delete a node at the k'h position of the doubly linked list.\nExplain how a recursive algorithm uses stack with suitable illustrative stack diagram.\nDraw a binary Tree:\nPreorderFAEKCDHGB\nInorder EACKFHDBG",
           "marks": "8",
           "chapter": "Tree",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 5,
           "text": "Prove that strictly binary tree with a n leaves contain 2n-1 nodes.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 8,
-          "text": "Provide best case, average case and worst case for following algorithms in Big-Oh:\nbubble sort, insertion sort, merge sort and selection sort. Construction heap sort for\nfollowing given list with an algorithm: 37, 33, 26, 92, 57, 18, 48, 25, 12, 86, 42, 22.",
+          "qNum": 6,
+          "text": "Provide best case, average case and worst case for following algorithms in Big-Oh:\nbubble sort, insertion sort, merge sort and selection sort. Construction heap sort for\nfollowing given list with $a^n$ algorithm: 37, 33, 26, 92, 57, 18, 48, 25, 12, 86, 42, 22.",
           "marks": "8",
           "chapter": "Sorting Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 9,
-          "text": "Explain a binary search with example. Consider a hash table of size 10. Using linear\nprobing, insert the keys 62, 37, 36, 44, 67, 91, 82 and 107.",
-          "marks": "8",
+          "qNum": 7,
+          "text": "Explain a binary search with example. Consider a hash table of size",
+          "marks": "5",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 8,
+          "text": "Using linear\nprobing, insert the keys 62, 37, 36, 44, 67, 91, 82 and 107.",
+          "marks": "5",
+          "chapter": "Tree",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
           "text": "Define Omega.and theata notation with suitable example.",
           "marks": "8",
           "chapter": "Searching Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 11,
-          "text": "Write an algorithm for warshall's algorithm with suitable example. Define Breadth first\ntraversal and depth first traversal with an example. Define Kruskal's Algorithm with\nsuitable example.",
+          "qNum": 10,
+          "text": "Write $a^n$ algorithm for warshall's algorithm with suitable example. Define Breadth first\ntraversal and depth first traversal with $a^n$ example. Define Kruskal's Algorithm with\nsuitable example.",
           "marks": "8",
           "chapter": "Graphs",
           "isDiagram": false
@@ -1690,67 +1725,67 @@
       "totalMarks": 72,
       "questions": [
         {
-          "qNum": 2,
-          "text": "What is a stack? Write an algorithm to convert infix expression into postfix expression\nusing stack.\nDefine a queue. Explain enqueue and dequeue operation in circuit queue.\nDifferentiate static and dynamic implementation of list with suitable example.\nDefine different types of linked list with suitable example.",
-          "marks": "8",
-          "chapter": "Linked List",
-          "isDiagram": true
-        },
-        {
-          "qNum": 6,
-          "text": "Write an algorithm creates a single linked list.",
+          "qNum": 1,
+          "text": "What is a stack? Write $a^n$ algorithm to convert infix expression into postfix expression\nusing stack.\nDefine a queue. Explain enqueue and dequeue operation in circuit queue.\nDifferentiate static and dynamic implementation of list with suitable example.\nDefine different types of linked list with suitable example.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 2,
+          "text": "Write $a^n$ algorithm creates a single linked list.",
+          "marks": "8",
+          "chapter": "Linked List",
+          "isDiagram": false
+        },
+        {
+          "qNum": 3,
           "text": "Do you think recursive function is slow? Compare recursive and non-recursive functions.\nDraw recursion tree for Tower of Hanoi assuming 4 disks.",
           "marks": "8",
           "chapter": "Tree",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 8,
-          "text": "Create an AVL balanced tree for the set of data 10, 20, 30, 35, 50, 70, 40, 80, 60, 65 by\nexplaining each rotation rules used.",
+          "qNum": 4,
+          "text": "Create $a^n$ AVL balanced tree for the set of data 10, 20, 30, 35, 50, 70, 40, 80, 60, 65 by\nexplaining each rotation rules used.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 5,
           "text": "Construct B-tree of order 5 for the set of data CNG A H E KQMF W L T Z D P R X Y S\nshowing each steps.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 6,
           "text": "Define a radix sort with its algorithm. Trace the steps. to sort the following set of data\nusing merge sort: 85, 76, 46, 92, 30, 41 and 12.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 11,
+          "qNum": 7,
           "text": "How a linear probing, quadratic probing and double hashing techniques are used to\nresolve collision? Explain with suitable example.",
           "marks": "8",
           "chapter": "Searching Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 12,
-          "text": "Define an Omega and Theta notation with suitable example.",
+          "qNum": 8,
+          "text": "Define $a^n$ Omega and Theta notation with suitable example.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 13,
+          "qNum": 9,
           "text": "Explain a breadth first traversal in graph with suitable example. Explain Kruskal's\nalgorithm to find minimum spanning tree with suitable example.",
           "marks": "8",
           "chapter": "Tree",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     },
@@ -1770,7 +1805,7 @@
         },
         {
           "qNum": 2,
-          "text": "a) Define Stack. Write an algorithm to convert given infix expression to postfix\nexpression.\n\n(b) What is polish notation and reverse polish notation? Convert the following expression\nto postfix expression using Stacks: P: (a + b * c + (d * e + f) * g)3",
+          "text": "\n(a) Define Stack. Write $a^n$ algorithm to convert given infix expression to postfix\nexpression.\n\n(b) What is polish notation and reverse polish notation? Convert the following expression\nto postfix expression using Stacks: P: (a + b * c + (d * e + f) * g)3",
           "marks": "8",
           "chapter": "Stack and Recursion",
           "isDiagram": false
@@ -1784,22 +1819,29 @@
         },
         {
           "qNum": 4,
-          "text": "a) Mention the significance of circular linked list with suitable example. 2.\n\n(b) Explain how you add two polynomials with the help of linked list. 2.",
+          "text": "\n(a) Mention the significance of circular linked list with suitable example. 2.\n\n(b) Explain how you add two polynomials with the help of linked list. 2.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
           "qNum": 5,
-          "text": "a) Explain direct and indirect recursion with suitable example. 2\n\n(b) What is box trace? Construct a recursion tree for tower of Hanoi problem consisting\nof3 disks.3",
+          "text": "\n(a) Explain direct and indirect recursion with suitable example. 2\n\n(b) What is box trace? Construct a recursion tree for tower of Hanoi problem consisting\nof3 disks.3",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
           "qNum": 6,
-          "text": "_a) Discuss the advantage of AVL Tree. Construct an AVL Tree for given integers: 52,\n65, 72, 15, 11, 32, and 20. 6\n\n(b) Define an almost complete binary tree. Show that the depth of complete binary tree is\nlog2(T + 1) -- 1 where T is the total number of nodes in a tree.\n, 7. Trace the sorting steps in merge sort and radix sort for sorting the data 142, 523, 228\n375, 462, 198, 249, 144, 123 in ascending order.",
-          "marks": "8",
+          "text": "_a) Discuss the advantage of AVL Tree. Construct $a^n$ AVL Tree for given integers: 52,\n65, 72, 15, 11, 32, and 20. 6\n\n(b) Define $a^n$ almost complete binary tree. Show that the depth of complete binary tree is\nlog2(T + 1) - 1 where T is the total number of nodes in a tree.\n,",
+          "marks": "5",
+          "chapter": "Tree",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Trace the sorting steps in merge sort and radix sort for sorting the data 142, 523, 228\n375, 462, 198, 249, 144, 123 in ascending order.",
+          "marks": "5",
           "chapter": "Tree",
           "isDiagram": false
         },
@@ -1822,7 +1864,7 @@
           "text": "Write two properties of spanning tree. Find MST of graph-1 using Round Robin\nAlgorithm.",
           "marks": "8",
           "chapter": "Tree",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     },
@@ -1835,7 +1877,7 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "What are different types of data structures? Give an example of abstract data type.",
+          "text": "What are different types of data structures? Give $a^n$ example of abstract data type.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
@@ -1849,7 +1891,7 @@
         },
         {
           "qNum": 3,
-          "text": "Write an algorithm to implement circular queue with the condition for insertion, deietion,\nqueue full and queue empty.",
+          "text": "Write $a^n$ algorithm to implement circular queue with the condition for insertion, deietion,\nqueue full and queue empty.",
           "marks": "8",
           "chapter": "Graphs",
           "isDiagram": false
@@ -1862,30 +1904,37 @@
           "isDiagram": false
         },
         {
-          "qNum": 6,
-          "text": "What is tail and non-tail recursion with example? Write an algorithm for solving a Tower\nof Hanoi (TOH) problem using recursion.",
+          "qNum": 5,
+          "text": "What is tail and non-tail recursion with example? Write $a^n$ algorithm for solving a Tower\nof Hanoi (TOH) problem using recursion.",
           "marks": "8",
           "chapter": "Stack and Recursion",
           "isDiagram": false
         },
         {
+          "qNum": 6,
+          "text": "What is $a^n$ almost complete binary tree? Create $a^n$ AVL tree using the following data\nsets: jan, feb, mar, apr, may, jun, july, aug, sept, oct, noy, dec.",
+          "marks": "8",
+          "chapter": "Tree",
+          "isDiagram": false
+        },
+        {
           "qNum": 7,
-          "text": "What is an almost complete binary tree? Create an AVL tree using the following data\nsets: jan, feb, mar, apr, may, jun, july, aug, sept, oct, noy, dec.",
+          "text": "Define Red Black tree. Write $a^n$ algorithm for constructing a Huffman Code.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
           "qNum": 8,
-          "text": "Define Red Black tree. Write an algorithm for constructing a Huffman Code.",
-          "marks": "8",
-          "chapter": "Tree",
+          "text": "Differentiate between stable and unstable sorting with example. Construct a heap for the\nfollowing data: 8, 10, 5, 12, 14, 18,",
+          "marks": "5",
+          "chapter": "Sorting Algorithms",
           "isDiagram": false
         },
         {
           "qNum": 9,
-          "text": "Differentiate between stable and unstable sorting with example. Construct a heap for the\nfollowing data: 8, 10, 5, 12, 14, 18, 19. What is the time complexity for sorting the\nunsorted elements using heap-sort?",
-          "marks": "8",
+          "text": "What is the time complexity for sorting the\nunsorted elements using heap-sort?",
+          "marks": "5",
           "chapter": "Sorting Algorithms",
           "isDiagram": false
         },
@@ -1898,227 +1947,241 @@
         },
         {
           "qNum": 11,
-          "text": "Justify V2 (n(n-1))  n². Differentiate between small o and small w notations.",
+          "text": "Justify $\\sqrt{2}$ (n(n-1))  n². Differentiate between small o and small w notations.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
           "qNum": 12,
-          "text": "What is transitive closure? How is the breadth first algorithm implemented? Explain\nPrim's algorithm for finding minimum spanning tree along with an example.\nExam.\nRegular (2066&LaterBateh)\n2069Bhadra\nI /II\nTime\n3 hrs.",
+          "text": "What is transitive closure? How is the breadth first algorithm implemented? Explain\nPrim's algorithm for finding minimum spanning tree along with $a^n$ example.\nExam.\nRegular (2066&LaterBateh)\n2069Bhadra\nI /II\nTime\n3 hrs.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 1,
+          "qNum": 13,
           "text": "Define data type and define abstract type (ADT) with suitable example.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 2,
-          "text": "a) Evaluate the following postfix expression showing stack after every step in tabular\nform: 574_*8/4+\n\n(b) Define linear and circular queue. Write down algorithms for basic operations that can\nbe performed over linear and circular queues.",
+          "qNum": 14,
+          "text": "\n(a) Evaluate the following postfix expression showing stack after every step in tabular\nform: 574_*8/4+\n\n(b) Define linear and circular queue. Write down algorithms for basic operations that can\nbe performed over linear and circular queues.",
           "marks": "8",
           "chapter": "Stack and Recursion",
           "isDiagram": false
         },
         {
-          "qNum": 3,
+          "qNum": 15,
           "text": "What do you mean by static and dynamic data structures? Explain array implementation\nof list with its limitations.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
-          "qNum": 4,
-          "text": "a) What are linked list? What are the basic operations of a linked list?\n\n(b) Suppose you have a doubly linked list that stores employee information. Explain how\nan employee with employee ID 165-64 can be deleted from the list with necessary\nillustrations and pseudo codes.",
+          "qNum": 16,
+          "text": "\n(a) What are linked list? What are the basic operations of a linked list?\n\n(b) Suppose you have a doubly linked list that stores employee information. Explain how\n$a^n$ employee with employee ID 165-64 can be deleted from the list with necessary\nillustrations and pseudo codes.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
-          "qNum": 5,
-          "text": "a) Discuss TOH problem with its solution for 3 discs\n\n(b) Define recursion. What do you mean by direct and indirect recursion? Explain with\nexample.",
+          "qNum": 17,
+          "text": "\n(a) Discuss TOH problem with its solution for 3 discs\n\n(b) Define recursion. What do you mean by direct and indirect recursion? Explain with\nexample.",
           "marks": "8",
           "chapter": "Stack and Recursion",
           "isDiagram": false
         },
         {
-          "qNum": 6,
-          "text": "Show the sequence of nodes in preorder and postorder traversal in the BST formed by 52,\n38, 40, 27, 20, 66, 55, 46, 60, 26, 5, 68, 23, 54. Construct B-tree from the data set given\nby 78, 21, 14, 11, 97, 85, 74, 63 showing each insertion steps.",
-          "marks": "8",
+          "qNum": 18,
+          "text": "Show the sequence of nodes in preorder and postorder traversal in the BST formed by 52,\n38, 40, 27, 20, 66, 55, 46, 60, 26, 5, 68, 23,",
+          "marks": "5",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 7,
-          "text": "Differentiate internal and external sorting. Explain heap sort with an appropriate example. [2+6]",
+          "qNum": 19,
+          "text": "Construct B-tree from the data set given\nby 78, 21, 14, 11, 97, 85, 74, 63 showing each insertion steps.",
+          "marks": "5",
+          "chapter": "Tree",
+          "isDiagram": false
+        },
+        {
+          "qNum": 20,
+          "text": "Differentiate internal and external sorting. Explain heap sort with $a^n$ appropriate example. [2+6]",
           "marks": "8",
           "chapter": "Sorting Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 8,
-          "text": "Draw the hash table obtained from double hashing with hash functions: hi(k)=k mod 11\nand h2(k) = k mod 9 to the keys given by: 76, 26, 37, 59, 21, 65 with table size m = 11.\nUse hp(k, i) = (hi(k) + i*h2(k) )mod m. -",
-          "marks": "8",
+          "qNum": 21,
+          "text": "Draw the hash table obtained from double hashing with hash functions: hi(k)=k mod 11\nand h2(k) = k mod 9 to the keys given by: 76, 26, 37, 59, 21, 65 with table size m =",
+          "marks": "5",
           "chapter": "Searching Algorithms",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 22,
+          "text": "Use hp(k, i) = (hi(k) + i*h2(k) )mod m. -",
+          "marks": "5",
+          "chapter": "Searching Algorithms",
+          "isDiagram": false
+        },
+        {
+          "qNum": 23,
           "text": "If you have two different algorithms for the solution to same problem with O(n) and\nO(log(n), which one would you prefer and why?",
           "marks": "8",
           "chapter": "Graphs",
           "isDiagram": false
         },
         {
-          "qNum": 10,
-          "text": "a) Explain depth first traversal and breadth first traversal in graph with suitable example.\n\n(b) Discuss Dijkstra's shortest path algorithm with suitable example.\nExam.\nNew Batck (2066 & Later Batch)\n2069Poush\nTime\n3 hrs.\nimplementation of an ADT.",
+          "qNum": 24,
+          "text": "\n(a) Explain depth first traversal and breadth first traversal in graph with suitable example.\n\n(b) Discuss Dijkstra's shortest path algorithm with suitable example.\nExam.\nNew Batck (2066 & Later Batch)\n2069Poush\nTime\n3 hrs.\nimplementation of $a^n$ ADT.",
           "marks": "8",
           "chapter": "Graphs",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 2,
-          "text": "a) Define Stack with suitable example. Write down the algorithm for the basic operation\nthat can be performed over the 'stack.\n\n(b) Convert the given infix expression ( A + (B*C-(D/E-F)*G)*H) into equivalent prefix\nand postfix expressions showing each steps in tabular form.",
+          "qNum": 25,
+          "text": "\n(a) Define Stack with suitable example. Write down the algorithm for the basic operation\nthat can be performed over the 'stack.\n\n(b) Convert the given infix expression ( A + (B*C-(D/E-F)*G)*H) into equivalent prefix\nand postfix expressions showing each steps in tabular form.",
           "marks": "8",
           "chapter": "Stack and Recursion",
           "isDiagram": false
         },
         {
-          "qNum": 3,
+          "qNum": 26,
           "text": "Discuss merits and demerits of contiguous list. Explain static implementation of list.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
-          "qNum": 4,
-          "text": "a) How doubly linked list differ from singly linked list. Write an algorithm for deleting\nKth node from the doubly linked list.\n\n(b) How do you represent polynomial equation using linked list? Write an algorithm to\nadd two polynomial equations.",
+          "qNum": 27,
+          "text": "\n(a) How doubly linked list differ from singly linked list. Write $a^n$ algorithm for deleting\nKth node from the doubly linked list.\n\n(b) How do you represent polynomial equation using linked list? Write $a^n$ algorithm to\nadd two polynomial equations.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
-          "qNum": 5,
-          "text": "Write an algorithm for TOH problem. Hence find all solution for three disks from your\nalgorithm, showing recursion tree for the same.",
+          "qNum": 28,
+          "text": "Write $a^n$ algorithm for TOH problem. Hence find all solution for three disks from your\nalgorithm, showing recursion tree for the same.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 6,
-          "text": "a) What are the properties of a Binary Search Tree (BST)? Explain recursive algorithm\nto search a BST.\n\n(b) If you delete a Node from an AVL tree and insert it back again, will you always get\nthe original tree back? Illustrate with example.",
+          "qNum": 29,
+          "text": "\n(a) What are the properties of a Binary Search Tree (BST)? Explain recursive algorithm\nto search a BST.\n\n(b) If you delete a Node from $a^n$ AVL tree and insert it back again, will you always get\nthe original tree back? Illustrate with example.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 30,
           "text": "Trace the sorting steps in radix sort for: 25, 57, 48, 37, 12, 92, 86, 33 showing status of all\nqueues in each iterations. Show that efficiency of quick sort is O(n log (n).",
           "marks": "8",
           "chapter": "Sorting Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 31,
           "text": "Write down the algorithm for binary search. Show steps to search 54 from the given data\n8, 15, 36, 40, 41, 54, 62 using binary search.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 32,
           "text": "Define O, O and Q notation with their respective curves.",
           "marks": "8",
           "chapter": "Sorting Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 33,
           "text": "Explain Dikstra's shorest path algorithm with suitable example. Use Round Robin's\nalgorithm to find minimum weight spanning tree from following graph.\nExam.\nTRIBIHUVANUNIVERSITY\nReguinr/Back\nTime\nYonr /Part\n2068Bhadrn\n3 hrs.",
           "marks": "8",
           "chapter": "Tree",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 1,
+          "qNum": 34,
           "text": "Define data structures. Explain ADT with suitable example.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 2,
+          "qNum": 35,
           "text": "Suppose you are asked to simulate people waiting in a petrol pump, which data structure\nwould you use? Discuss suitable algorithm required for your simulation.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 3,
+          "qNum": 36,
           "text": "Convert the given infix expression A/B-(C+D)*E into equivalent postfix expression\nshowing each steps in tabular form and evaluate the obtained postfix expression showing\nSTACK status each time when A-8, B-2, C-3,D-1 andE=1.",
           "marks": "8",
           "chapter": "Stack and Recursion",
           "isDiagram": false
         },
         {
-          "qNum": 4,
-          "text": "What are the considerations to be taken while developing an algorithm using linked list?\nExplain array implementation of list in C with suitable example.",
+          "qNum": 37,
+          "text": "What are the considerations to be taken while developing $a^n$ algorithm using linked list?\nExplain array implementation of list in C with suitable example.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
-          "qNum": 5,
-          "text": "Differentiate singly linked list from doubly linked list. Write an algorithm for the\ndynamic implementation of queue. Also verify your algorithm with necessary\nillustrations.",
+          "qNum": 38,
+          "text": "Differentiate singly linked list from doubly linked list. Write $a^n$ algorithm for the\ndynamic implementation of queue. Also verify your algorithm with necessary\nillustrations.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 39,
           "text": "Define recursion. Which algorithm would you prefer between iterative and recursive\nfor the Fibonacci sequence and why? Discuss TOH problem and its solution.",
           "marks": "8",
           "chapter": "Stack and Recursion",
           "isDiagram": false
         },
         {
-          "qNum": 7,
-          "text": "Write an algorithm for inserting nodes in BST. Encode the symbols A, B, C, D, E and F\nwith frequencies 0.10, 0.08, 0.15, 0.12, 0.30 and 0.25 respectively by using Huffman\nalgorithm. Also calculate average number of bits used to encode a symbol.",
+          "qNum": 40,
+          "text": "Write $a^n$ algorithm for inserting nodes in BST. Encode the symbols A, B, C, D, E and F\nwith frequencies 0.10, 0.08, 0.15, 0.12, 0.30 and 0.25 respectively by using Huffman\nalgorithm. Also calculate average number of bits used to encode a symbol.",
           "marks": "8",
           "chapter": "Graphs",
           "isDiagram": false
         },
         {
-          "qNum": 8,
-          "text": ". Write an algorithm for any. one of the exchange sort. Trace the sorting steps in merge sort\nfor the data: 47,27,56,23,3,9,94,11. Calculate efficiency of straight selection sort. [3+3+2]",
+          "qNum": 41,
+          "text": ". Write $a^n$ algorithm for any. one of the exchange sort. Trace the sorting steps in merge sort\nfor the data: 47,27,56,23,3,9,94,11. Calculate efficiency of straight selection sort. [3+3+2]",
           "marks": "8",
           "chapter": "Sorting Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 42,
           "text": "Use binary search to find 89 from the data: 8,12,20,24,30,45,50,68,72,85,89,98.Define\nhashing and demonstrate different hash functions.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 43,
           "text": "Ilustrate measures of efficiency of algorithm with standard curve and problem size.",
           "marks": "8",
           "chapter": "Graphs",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 11,
+          "qNum": 44,
           "text": "Explain Prim's algorithm for minimum spanning tree with suitable example. Let G-(V,E)\nwith V={a,b,c,d) and E={(a,d),(b,a),(b,c),(c,a),(c,d),(d,c) be a directed graph. Find the\ntransitive closure of G using Warshall's algorithm, showing each iterations.",
           "marks": "8",
           "chapter": "Tree",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     },
@@ -2130,74 +2193,88 @@
       "totalMarks": 80,
       "questions": [
         {
-          "qNum": 3,
-          "text": "Write an algorithm to design a data structure that provides enqueue, dequeue and display\noperations. The first two are the normal circular qucuc operations and the last one returns\nall elements in the circular queue without removing them from queue.",
+          "qNum": 1,
+          "text": "Write $a^n$ algorithm to design a data structure that provides enqueue, dequeue and display\noperations. The first two are the normal circular qucuc operations and the last one returns\nall elements in the circular queue without removing them from queue.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 4,
+          "qNum": 2,
           "text": "Why do you choose either static implermentation or dynamic implementation for list?\nState the reasons.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
-          "qNum": 5,
-          "text": "Define a doubly linked list with its advantages and disadvantages. Write an algorithm to\ninsert an element before Kth node in doubly linked list.",
+          "qNum": 3,
+          "text": "Define a doubly linked list with its advantages and disadvantages. Write $a^n$ algorithm to\ninsert $a^n$ element before Kth node in doubly linked list.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 4,
           "text": "Explain how dc you add two polynomials using linked list.",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 5,
           "text": "Define a recursion. Which algorithm would you refer between iterative and recursion.\nExplain TOH prioblem with its solution fon in' disks.",
           "marks": "8",
           "chapter": "Stack and Recursion",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 6,
           "text": "Define Huffman tree with its properties and example. Construct a B-tree of order 3 for\ngiven set of data: 52, 46, 27, 81, 90, 108, 72, 110, 35, 115, 121 and 86.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 10,
-          "text": "Create a heap tree showing each insertion steps for the following data. Use the same heap\ntree to sort the data. showing each intermediate steps 14, 12, 25, 18, 21, 29, 11, 28, 23\n1l. Explain a binary search with example. Explain the chaining strategy for collision\nresolution.",
-          "marks": "8",
+          "qNum": 7,
+          "text": "Create a max-heap showing each insertion step for data: 28, 24, 50, 36, 42, 58, 22, 56,",
+          "marks": "5",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 12,
+          "qNum": 8,
+          "text": "Create a max-heap showing each insertion step for data: 28, 24, 50, 36, 42, 58, 22, 56,",
+          "marks": "5",
+          "chapter": "Tree",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "Create a max-heap showing each insertion step for data: 28, 24, 50, 36, 42, 58, 22, 56, 46. Use the same heap tree to sort the data in ascending order showing all intermediate heapify and deletion steps.",
+          "marks": "5",
+          "chapter": "Tree",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
           "text": "Define Big O, Big O'mega and Big Theta notation.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 13,
+          "qNum": 11,
           "text": "What are the differences between DFs and BFs?",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 14,
+          "qNum": 12,
           "text": "Find the minimum sr'anning tree of the following graph using KrusKals algorithm.",
           "marks": "8",
           "chapter": "Tree",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     },
@@ -2216,67 +2293,67 @@
           "isDiagram": false
         },
         {
-          "qNum": 3,
+          "qNum": 2,
           "text": "Convert the given infix expression (A+B)*(C-D) into equivalent posfix expression showing each\nsteps in tabular form and evaluate the obtained postfix expression showing STACK status each\ntime when A=5, B=7, C=9 and D=4.",
           "marks": "8",
           "chapter": "Stack and Recursion",
           "isDiagram": false
         },
         {
-          "qNum": 4,
+          "qNum": 3,
           "text": "Explain array implementation of list in C with suitable example. What are limitations of this\nimplementation?",
           "marks": "8",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
-          "qNum": 5,
-          "text": "Define doubly linked list and mention its merits. Devise an algorithm that overcomes the demerits\nof array implementation of stack. Also verify your algorithm with necessary illustrations. [2+6+2]",
+          "qNum": 4,
+          "text": "Define doubly linked list and mention its merits. Devise $a^n$ algorithm that overcomes the demerits\nof array implementation of stack. Also verify your algorithm with necessary illustrations. [2+6+2]",
           "marks": "10",
           "chapter": "Linked List",
           "isDiagram": false
         },
         {
-          "qNum": 6,
-          "text": "State properties of recursion. Why recursive method for Fibonacci sequence is not preferred?\nWrite an algorithm for TOH problem and use it to find the solution for three disks.",
+          "qNum": 5,
+          "text": "State properties of recursion. Why recursive method for Fibonacci sequence is not preferred?\nWrite $a^n$ algorithm for TOH problem and use it to find the solution for three disks.",
           "marks": "8",
           "chapter": "Stack and Recursion",
           "isDiagram": false
         },
         {
-          "qNum": 7,
-          "text": "Create an A VL tree from the data: 24,12,8,15,35,30,57,40,45,78. How can you resolve underflow\nproblem in B-tree? Discuss with reference to balance and combine. Define Red-Black tree and\nmention its purpose.",
+          "qNum": 6,
+          "text": "Create $a^n$ A VL tree from the data: 24,12,8,15,35,30,57,40,45,78. How can you resolve underflow\nproblem in B-tree? Discuss with reference to balance and combine. Define Red-Black tree and\nmention its purpose.",
           "marks": "8",
           "chapter": "Tree",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 7,
           "text": "Write any sorting algorithm of your choice. Trace the sorting steps in straight selection sort for\nthe data: 33,90,45,8,52,76,5,22. Calculate efficiency of quick sort.",
           "marks": "8",
           "chapter": "Sorting Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 8,
           "text": "What is sequential search and how sentinel is useful in this algorithm? Define hashing and discuss\ndifferent collision resolution techniques in hashing.",
           "marks": "8",
           "chapter": "Searching Algorithms",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 9,
           "text": "Define O,  and 2 notations with corresponding curves.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 11,
+          "qNum": 10,
           "text": "Write Kruskal's algorithm for minimum spanning tree. Let G-(V,E) with V=(a,b,c,d,e) and\nE=((a,c),(b,c),(b,d),(c,d),(d,e) be a directed graph. Find the transitive closure of G using\nWarshall's algorithm, showing each iterations. Also draw initial and final graphs.",
           "marks": "8",
           "chapter": "Graphs",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     }

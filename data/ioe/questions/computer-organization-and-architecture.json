@@ -631,11 +631,11 @@
           "text": "Describe the methods of bus arbitration. Explain the instruction cycle state diagram.",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 2,
-          "text": "Write a code for V = (M + N -- O/P) / ((Q -- R)×S/T) using three, two, one and zero\n.address instruction.",
+          "text": "Write a code for V = (M + N - O/P) / ((Q - R)×S/T) using three, two, one and zero\n.address instruction.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": false
@@ -669,7 +669,7 @@
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 7,
           "text": "Explain about how multicore processors improve the software performance issues.",
           "marks": "8",
           "chapter": "Introduction",
@@ -689,18 +689,18 @@
           "text": "Explain the bus interconnection scheme with diagram.",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": true
-        },
-        {
-          "qNum": 2,
-          "text": "Explain the function of CPU. Design a 4-bit ALU that can perform addition, OR and\nAND operations.",
-          "marks": "8",
-          "chapter": "Central Processing Unit (CPU)",
           "isDiagram": false
         },
         {
+          "qNum": 2,
+          "text": "Design a 2-bit ALU that can perform subtraction, AND, OR, and XOR operations with function table and logic diagram.",
+          "marks": "8",
+          "chapter": "Central Processing Unit (CPU)",
+          "isDiagram": true
+        },
+        {
           "qNum": 3,
-          "text": "What are the different types of addressing modes? Explain them with advantages and\ndisadvantages.",
+          "text": "Define addressing modes. Explain the different types of addressing modes with suitable examples and compare each of them.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": false
@@ -710,7 +710,7 @@
           "text": "Explain the address sequencing with the help of block diagram. Mention the various\nfields in microinstruction format.",
           "marks": "8",
           "chapter": "Control Unit (CU)",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 5,
@@ -728,10 +728,10 @@
         },
         {
           "qNum": 7,
-          "text": "Explain the Booth's multiplication algorithm and multiply -7x-8 using Booth's\nmultiplication algorithm.",
+          "text": "Draw the flowchart of Booth's multiplication algorithm and multiply $(-7) \\times (-10)$ using Booth's algorithm.",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": false
+          "isDiagram": true
         },
         {
           "qNum": 8,
@@ -745,11 +745,11 @@
           "text": "Explain the functions of I/O module. Explain the communication channel between CPU\nand IOP with diagram.",
           "marks": "8",
           "chapter": "Input/ Output",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 10,
-          "text": "Differentiate between tightly coupled multiprocessor and loosely coupled multiprocessor.:",
+          "text": "Differentiate between tightly coupled multiprocessor and loosely coupled multiprocessor systems with neat block diagrams.",
           "marks": "8",
           "chapter": "Multiprocessor System",
           "isDiagram": false
@@ -772,34 +772,34 @@
         },
         {
           "qNum": 2,
-          "text": "How effective address is calculated in different types of addressing modes? Explain with\nan example.\nDescribe address sequencing with the help of block diagram.",
+          "text": "How effective address is calculated in different types of addressing modes? Explain with\n$a^n$ example.\nDescribe address sequencing with the help of block diagram.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 4,
+          "qNum": 3,
           "text": "Explain associative cache mapping technique with suitable example. Describe the Least\nRecently Used (LRU) replacement algorithm with case example of miss and hit.",
           "marks": "8",
           "chapter": "Memory System",
           "isDiagram": false
         },
         {
-          "qNum": 5,
-          "text": "Write down the flowchart of Booth's Multiplication algorithm. Multiply 7x -5=-35 using\nBooth's Multiplication algorithm.",
+          "qNum": 4,
+          "text": "Draw the flowchart of Booth's multiplication algorithm and multiply $(-7) \\times (-10)$ using Booth's algorithm.",
           "marks": "8",
           "chapter": "Input/ Output",
           "isDiagram": true
         },
         {
-          "qNum": 6,
+          "qNum": 5,
           "text": "Formulate 4 segment instruction pipeline with branching and interrupts.\n(DMA).",
           "marks": "8",
           "chapter": "Input/ Output",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 6,
           "text": "Explain about how multicore processors improve the hardware performance with respect\nto patallelism and power consumption.",
           "marks": "8",
           "chapter": "Introduction",
@@ -830,24 +830,24 @@
         },
         {
           "qNum": 3,
-          "text": "Explain instruction format with example. Write down the code to evaluate the following\nexpression in three address, two address, one address and zero address instruction format. [2+8]\n(A -- B) +",
+          "text": "Write down the code to evaluate the arithmetic statement $Y = (A - B / C) \\times [D + (E \\times G)]$ using zero-address, one-address, two-address, and three-address instructions.",
           "marks": "10",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": false
         },
         {
           "qNum": 4,
-          "text": "-Comparison between main memory and control memory. Explain microprogram\nsequencer for control memory with block diagram.",
+          "text": "Differentiate between isolated I/O and memory-mapped I/O. Explain with block diagram and control signal requirements.",
           "marks": "8",
           "chapter": "Memory System",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 5,
           "text": "How parallel processing can be achieved in instruction pipeline? Explain the four\nsegments pipeline having six tasks with time-space diagram.",
           "marks": "8",
           "chapter": "Pipelining and Vector Processing",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 6,
@@ -871,7 +871,7 @@
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 9,
           "text": "Compare and contrast the interconnection structures used in multiprocessing system.",
           "marks": "8",
           "chapter": "Multiprocessor System",
@@ -895,7 +895,7 @@
         },
         {
           "qNum": 2,
-          "text": "Write down the code to evaluate Y=(A+B) *(C-D)/E in three address, two address, one\naddress and zero address instruction format.",
+          "text": "Write down the code to evaluate the arithmetic statement $Y = (A - B / C) \\times [D + (E \\times G)]$ using zero-address, one-address, two-address, and three-address instructions.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": false
@@ -919,7 +919,7 @@
           "text": "Discus the pipeline conflicts with example. Describe 4 stage instruction pipeline with\ndiagram.",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 6,
@@ -947,7 +947,7 @@
           "text": "Compare and contrast between DMA and I/O processor. Explain the communication\nbetween CPU and IOP communication channel with necessary block diagram.",
           "marks": "8",
           "chapter": "Input/ Output",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 10,
@@ -970,11 +970,11 @@
           "text": "Distinguish between computer organization and architecture. Explain instruction cycle\nstate diagram with interrupt handling.",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 2,
-          "text": "Write down the code to evaluate Y=(A-B/C*[D+(E*G)] in three address, two address,\none address and zero address instruction format.",
+          "text": "Write down the code to evaluate the arithmetic statement $Y = (A - B / C) \\times [D + (E \\times G)]$ using zero-address, one-address, two-address, and three-address instructions.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": false
@@ -1002,7 +1002,7 @@
         },
         {
           "qNum": 6,
-          "text": "Draw a flowchart for Booth's multiplication algorithm for signed multiplication. Multiply\n-6X 7 using Booth's multiplication algorithm.",
+          "text": "Draw the flowchart of Booth's multiplication algorithm and multiply $(-7) \\times (-10)$ using Booth's algorithm.",
           "marks": "8",
           "chapter": "Input/ Output",
           "isDiagram": true
@@ -1019,10 +1019,10 @@
           "text": "Describe the cache memory principles. Differentiate between direct mapping and set\nassociative mapping.\nCPU and IOP communication channel using diagram.",
           "marks": "8",
           "chapter": "Memory System",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 9,
           "text": "Briefly discuss on inter-processor communication and synchronization.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
@@ -1042,59 +1042,59 @@
           "text": "Explain instruction cycle state diagram. Describe PCI bus configuration.\nWrite program for N = ((P-QxR)/S)+(T/U)+V× W) using three address, two address, one\naddress and zero address instruction format. Consider N, P, Q, R, S, T, U, V and W as\nmemory locations.",
           "marks": "8",
           "chapter": "Memory System",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 3,
-          "text": "Write down the different types of addressing modes and explain each of them with\nadvantages and disadvantages.",
+          "qNum": 2,
+          "text": "Define addressing modes. Explain the different types of addressing modes with suitable examples and compare each of them.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": false
         },
         {
-          "qNum": 4,
+          "qNum": 3,
           "text": "Explain the micro instruction format. Difference between symbolic and binary micro\ninstruction.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 4,
           "text": "Construct time-space diagram for four instructions with four-stage pipeline and show how\npipelining reduces the execution time? Explain arithmetic pipeline for solving floating\npoint addition/subtraction.",
           "marks": "8",
           "chapter": "Computer Arithmetic",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 5,
           "text": "Draw the flowchart for Restoring Division. Divide\nusing restoring division.",
           "marks": "8",
           "chapter": "Input/ Output",
           "isDiagram": true
         },
         {
-          "qNum": 7,
+          "qNum": 6,
           "text": "Multiply 10 × (-7) using Booth's multiplication algorithm.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 7,
           "text": "Explain in briefly the characteristics of a memory system. Differentiate between direct\nmapping and set associative mapping.",
           "marks": "8",
           "chapter": "Memory System",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 8,
           "text": "Why IOP is used in input-output organization? With the help of a neat diagram, explain\nhow DMA technique is used to transfer data in a computer system.",
           "marks": "8",
           "chapter": "Input/ Output",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 9,
           "text": "Discuss about loosely-coupled and tightly-coupled architecture.",
           "marks": "8",
           "chapter": "Introduction",
@@ -1118,7 +1118,7 @@
         },
         {
           "qNum": 2,
-          "text": "Design a 1- bit ALU which can perform addition, AND, OR, and X-OR operations.\nExplain the different types of instruction formats.",
+          "text": "Design a 1- bit ALU which can perform addition, AND, \\n**[OR]**\\n, and X-\\n**[OR]**\\n operations.\nExplain the different types of instruction formats.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": false
@@ -1135,7 +1135,7 @@
           "text": "Explain address sequencing with the help of a block diagram. Describe micro-instruction\nformat in detail.",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 5,
@@ -1145,21 +1145,21 @@
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 6,
           "text": "Explain direct Cache mapping technique with example. Explain different write policy\ntechniques in cache memory.",
           "marks": "8",
           "chapter": "Memory System",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 7,
           "text": "Explain three I/O techniques for input of a block of data. Show the role of I/O processor\nto assist the operation of the CPU.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 8,
           "text": "List out the characteristics of a Multiprocessor.",
           "marks": "8",
           "chapter": "Multiprocessor System",
@@ -1179,56 +1179,56 @@
           "text": "Define structure and function of a computer system. Daw instruction cycle state diagram\nwith interrupt.\nin three address, two\nG+Hxk\naddress, one address and zero address instruction formats.",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 3,
-          "text": "What are the different types of addressing modes? Compare them with advantages and\ndisadvantages.",
+          "qNum": 2,
+          "text": "Define addressing modes. Explain the different types of addressing modes with suitable examples and compare each of them.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 3,
           "text": "How can we prove that pipelining improves the performance of a computer? Explain the\noperation of instruction pipeline for processing four segment instruction cycle with the\nhelp of space-time diagram.",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 4,
           "text": "Explain non-restoring division algorithm with flow chart and also divide 12/5 using same\nalgorithm.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 5,
           "text": "Multiply -6x7 using Booths multiplication algorithm.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 6,
           "text": "What is set associative mapping? Explain how it combines the feature of direct and\nassociated mapping technique. Explain different replacement algorithm techniques used\nin cache memory.",
           "marks": "8",
           "chapter": "Memory System",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 7,
           "text": "Explain CPU-IOP Communication with diagram. Explain DMA controller with suitable\nblock diagram.",
           "marks": "8",
           "chapter": "Control Unit (CU)",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 8,
           "text": "Explain the crossbar switch interconnection structure with block diagram.",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     },
@@ -1248,14 +1248,14 @@
         },
         {
           "qNum": 2,
-          "text": "Write a code for X = (A+B)/C) + (D -- E) using three addresses, two addresses, one\naddress and zero address instruction format.",
+          "text": "Write a code for X = (A+B)/C) + (D - E) using three addresses, two addresses, one\naddress and zero address instruction format.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": false
         },
         {
           "qNum": 3,
-          "text": "List out the different types of addressing modes and explain each of them with suitable\nexample.",
+          "text": "Define addressing modes. Explain the different types of addressing modes with suitable examples and compare each of them.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": false
@@ -1265,31 +1265,31 @@
           "text": "Describe the operation of hardwired control unit with a typical block diagram. Explain the",
           "marks": "8",
           "chapter": "Control Unit (CU)",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 5,
-          "text": "Explain arithmetic pipelining with example. Describe different types of pipeline hazards\nwith example.\nDraw the flowchart for Non-Restoring Division. Perform 13/5 using restoring division.\nExplain floating point addition and subtraction algorithm with an example.",
+          "text": "Explain arithmetic pipelining with example. Describe different types of pipeline hazards\nwith example.\nDraw the flowchart for Non-Restoring Division. Perform 13/5 using restoring division.\nExplain floating point addition and subtraction algorithm with $a^n$ example.",
           "marks": "8",
           "chapter": "Computer Arithmetic",
           "isDiagram": true
         },
         {
-          "qNum": 8,
+          "qNum": 6,
           "text": "Describe how Set-Associative Mapping works in Cache memory mapping. Explain\ndifferent write policy techniques in cache memory.",
           "marks": "8",
           "chapter": "Memory System",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 7,
           "text": "Elaborate the roles of I/O interface in a computer system. Explain how data transfer is",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 8,
           "text": "Compare and contrast the interconnection structures used in multiprocessing\nenvironment.",
           "marks": "8",
           "chapter": "Introduction",
@@ -1313,7 +1313,7 @@
         },
         {
           "qNum": 2,
-          "text": "Write down the code for Y -- (A-B/C) × (D+ExG) / F using three address, two address,\none address and zero address instruction format.",
+          "text": "Write down the code to evaluate the arithmetic statement $Y = (A - B / C) \\times [D + (E \\times G)]$ using zero-address, one-address, two-address, and three-address instructions.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": false
@@ -1330,32 +1330,32 @@
           "text": "Write down the symbolic microprogram for fetch routine and addition execute routine.\nExplain with diagram the working of microprogram sequencer for control memory.",
           "marks": "8",
           "chapter": "Memory System",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 5,
-          "text": "How pipeline processing is done in an instruction pipeline? Explain four segment\ninstruction pipeline with timing diagram.",
+          "text": "How pipeline processing is done in $a^n$ instruction pipeline? Explain four segment\ninstruction pipeline with timing diagram.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": true
         },
         {
           "qNum": 6,
-          "text": "Describe the procedure for floating point addition and subtraction with help of flowchart\nand example.",
+          "text": "Describe the procedure for floating-point addition and subtraction with the help of a detailed flowchart.",
           "marks": "8",
           "chapter": "Input/ Output",
           "isDiagram": true
         },
         {
           "qNum": 7,
-          "text": "Draw the flowchart of Booth's multiplication algorithm and multiply -7 × -10 using\nBooth's multiplication algorithm.",
+          "text": "Draw the flowchart of Booth's multiplication algorithm and multiply $(-7) \\times (-10)$ using Booth's algorithm.",
           "marks": "8",
           "chapter": "Input/ Output",
           "isDiagram": true
         },
         {
           "qNum": 8,
-          "text": "Explain various mapping methods used in cache memory organization and compare each\nof them with example.",
+          "text": "Explain various mapping methods used in cache memory organization (Direct mapping, Associative mapping, and Set-associative mapping) and compare each with suitable diagrams.",
           "marks": "8",
           "chapter": "Memory System",
           "isDiagram": false
@@ -1365,11 +1365,11 @@
           "text": "Explain with block diagram of DMA controller. How DMA techniques is different from",
           "marks": "8",
           "chapter": "Control Unit (CU)",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 10,
-          "text": "Differentiate between tightly coupled multiprocessor and loosely coupled multiprocessor.",
+          "text": "Differentiate between tightly coupled multiprocessor and loosely coupled multiprocessor systems with neat block diagrams.",
           "marks": "8",
           "chapter": "Multiprocessor System",
           "isDiagram": false
@@ -1441,10 +1441,10 @@
         },
         {
           "qNum": 9,
-          "text": "Differentiate between isolated and memory mapped Input-output. Explain with block\ndiagram of DMAtransfer in a computer system.",
+          "text": "Differentiate between isolated I/O and memory-mapped I/O. Explain with block diagram and control signal requirements.",
           "marks": "8",
           "chapter": "Memory System",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 10,
@@ -1467,11 +1467,11 @@
           "text": "Draw the instruction cycle state diagram with example.",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 2,
-          "text": "Write down the code to evaluate Y = (A - B/C)*[ D + (E*G) J in three address, two\naddress, one address and zero address instruction formats.",
+          "text": "Write down the code to evaluate the arithmetic statement $Y = (A - B / C) \\times [D + (E \\times G)]$ using zero-address, one-address, two-address, and three-address instructions.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": false
@@ -1488,21 +1488,21 @@
           "text": "How address of micro instruction is generated by next address generator in control unit?\nExplain with suitable diagram.",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 5,
           "text": "Explain four stage instruction pipeline and also draw a time-space diagram for four\nsegments having six tasks.",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 6,
-          "text": "Explain the Booth's algorithm for multiplication. Multiply 10 × (-5) using Booth's\nmultiplication algorithm.",
+          "text": "Draw the flowchart of Booth's multiplication algorithm and multiply $(-7) \\times (-10)$ using Booth's algorithm.",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": false
+          "isDiagram": true
         },
         {
           "qNum": 7,
@@ -1516,11 +1516,11 @@
           "text": "Define cache mapping techniques. Explain direct mapping technique with suitable\ndiagram. Why replacement algorithm is necessary in associative mapping? Justify.",
           "marks": "8",
           "chapter": "Memory System",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 9,
-          "text": "Comparison between program I10, Interrupt driven I10 and direct memory access. Why\ndata communication processor is required in an I10 organization.",
+          "text": "Comparison between program I10, Interrupt driven I10 and direct memory access. Why\ndata communication processor is required in $a^n$ I10 organization.",
           "marks": "8",
           "chapter": "Memory System",
           "isDiagram": false
@@ -1550,59 +1550,59 @@
         },
         {
           "qNum": 2,
-          "text": "Write the arithmetic statement Y-(W+X)*(Y-Z) using Zero, One, Two and Three address\ninstruction format.",
+          "text": "Write down the code to evaluate the arithmetic statement $Y = (A - B / C) \\times [D + (E \\times G)]$ using zero-address, one-address, two-address, and three-address instructions.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
           "qNum": 3,
-          "text": "Explain the different types of addressing modes and compare each of them.\nfields in micro-instruction format with diagram showing different fields.",
+          "text": "Define addressing modes. Explain the different types of addressing modes with suitable examples and compare each of them.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 4,
           "text": "Describe the hazard in a pipeline. Explain the different types of hazards. How can these\nbe overcome?",
           "marks": "8",
           "chapter": "Pipelining and Vector Processing",
           "isDiagram": false
         },
         {
-          "qNum": 6,
-          "text": "Write an algorithm of booth multiplication. Perform 8x4 using booth multiplication\nalgorithm.",
+          "qNum": 5,
+          "text": "Write $a^n$ algorithm of booth multiplication. Perform 8x4 using booth multiplication\nalgorithm.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 7,
-          "text": "Differentiate between restoring division and non-restoring division and non-restoring\ndivision algorithm.",
+          "qNum": 6,
+          "text": "Differentiate between restoring division and non-restoring division algorithms. Perform the division of $10 / 3$ using restoring division algorithm.",
           "marks": "8",
           "chapter": "Computer Arithmetic",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 7,
           "text": "Describe cache operation in briefly. Explain about associative mapping technique. Give\nreasons why replacement algorithm is not required in direct mapping technique.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 8,
           "text": "Explain the DMA operation with block diagram. How does DMA have request over the\nCPU when both request a memory transfer?",
           "marks": "8",
           "chapter": "Memory System",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 9,
           "text": "Discuss about tightly-coupled multiprocessor with block diagram.",
           "marks": "8",
           "chapter": "Multiprocessor System",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     },
@@ -1622,10 +1622,10 @@
         },
         {
           "qNum": 2,
-          "text": ". Design an 2-bit ALU that can perform subtraction, AND, OR and XOR.",
+          "text": "Design a 2-bit ALU that can perform subtraction, AND, OR, and XOR operations with function table and logic diagram.",
           "marks": "8",
           "chapter": "Computer Arithmetic",
-          "isDiagram": false
+          "isDiagram": true
         },
         {
           "qNum": 3,
@@ -1635,35 +1635,35 @@
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 4,
           "text": "Derive expression showing speed up ratio equals number of segments in pipeline. Discuss\nin detail about data dependency problem that arises in pipelining along with its solution.",
           "marks": "8",
           "chapter": "Pipelining and Vector Processing",
           "isDiagram": false
         },
         {
-          "qNum": 6,
-          "text": "Write an algorithm for non restoring division. Perform the 10/3 using restoring division\nalgorithm.",
+          "qNum": 5,
+          "text": "Differentiate between restoring division and non-restoring division algorithms. Perform the division of $10 / 3$ using restoring division algorithm.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 6,
           "text": "Multiply -6x-11 using Booths Multiplication algorithm.\nWrite characteristics of memory system? Suppose main memory has 64 blocks and cache\nmemory has 8 blocks when 10 blocks of main memory are used, show how mapping is\nperformed in direct mapping technique.",
           "marks": "8",
           "chapter": "Memory System",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 7,
           "text": "Explain three reasons behind the requirement of I/O interfaces. Why memory address\nspaces are reduced memory mapped I/O ? Describe DMA controller with suitable block\ndiagram.",
           "marks": "8",
           "chapter": "Memory System",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 8,
           "text": "Explain inter-processor synchronization with example.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
@@ -1679,35 +1679,35 @@
       "totalMarks": 40,
       "questions": [
         {
-          "qNum": 6,
+          "qNum": 1,
           "text": "Explain Booth's multiplication algorithm for signed 2's complement numbers in details\nwith a suitable example and give the hardware requirements diagram.",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 2,
           "text": "Differentiate between restoring and non-restoring division.",
           "marks": "8",
           "chapter": "Computer Arithmetic",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 3,
           "text": "Explain the various types of elements of cache design and also explain the various\nmapping techniques used in cache with example.",
           "marks": "8",
           "chapter": "Control Unit (CU)",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 4,
           "text": "Why ILO processor is needed in ILO organization? Explain the CPU-IOP communication\nwith diagram.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 5,
           "text": "Write down the characteristics of multiprocessors.",
           "marks": "8",
           "chapter": "Multiprocessor System",
@@ -1727,7 +1727,7 @@
           "text": "Draw instruction cycle, state diagram with interrupt and explain it.",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 2,
@@ -1737,28 +1737,28 @@
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 3,
           "text": "Perform multiplication - 7x3 using booth algorithm.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 7,
-          "text": "Explain the process of floating point number addition and subtraction with flowchart and\nexample.",
+          "qNum": 4,
+          "text": "Describe the procedure for floating-point addition and subtraction with the help of a detailed flowchart.",
           "marks": "8",
           "chapter": "Input/ Output",
           "isDiagram": true
         },
         {
-          "qNum": 8,
+          "qNum": 5,
           "text": "Write down the characteristics of memory system. Suppose main memory has 32 blocks\nand cache memory has 8 blocks when 12 blocks of main memory are used, show how\nmapping is performed in direct mapping.\naccess (DMA).",
           "marks": "8",
           "chapter": "Memory System",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 6,
           "text": "Explain various configurations of OS in multiprocessor system.",
           "marks": "8",
           "chapter": "Multiprocessor System",
@@ -1792,45 +1792,45 @@
           "text": "Differentiate between RISC and CISC.\nunit. Explain with relevant block diagram, how address of control memory is selected in",
           "marks": "8",
           "chapter": "Memory System",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 4,
           "text": "Describve Flynn's classification. Explain control pipeline hazard and its solutions.",
           "marks": "8",
           "chapter": "Control Unit (CU)",
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 5,
           "text": "Explain Booth's multiplication hardware algorithm with diagram. Multiply -5x-9 using\nBooth's multiplication algorithm.",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 6,
           "text": "Draw the flowchart for division of floating point numbers.",
           "marks": "8",
           "chapter": "Input/ Output",
           "isDiagram": true
         },
         {
-          "qNum": 8,
+          "qNum": 7,
           "text": "Draw the mernory hierarchy. Explain direct cache mapping with its merits and demerits.",
           "marks": "8",
           "chapter": "Memory System",
-          "isDiagram": true
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Differentiate between isolated I/O and memory-mapped I/O. Explain with block diagram and control signal requirements.",
+          "marks": "8",
+          "chapter": "Memory System",
+          "isDiagram": false
         },
         {
           "qNum": 9,
-          "text": "Differentiate between Isolated I/O and Memory-mapped I/O, Describe DMA controller\nwith suitable block diagram.",
-          "marks": "8",
-          "chapter": "Memory System",
-          "isDiagram": true
-        },
-        {
-          "qNum": 10,
           "text": "Discuss about inter process synchronization with the suitable mechanism?",
           "marks": "8",
           "chapter": "Multiprocessor System",
@@ -1846,21 +1846,21 @@
       "totalMarks": 24,
       "questions": [
         {
-          "qNum": 3,
+          "qNum": 1,
           "text": ". Mention.the different types of.addressing mode and compare each other.\n4: Explain- the. address 'sequencer. with: .the help. of .a: block : diagram..Explain.about\nmicroin'struction forinat in detail.\n5: Define pipeline and éxplain its types: Describe different pipeline hazards with example.\n:6. : Draw.the-flowchart for restoring.division' method..\n7: : Expiain Booth multiplication algorithm: Multiply :-6x12 using Booths algorithm.",
           "marks": "8",
           "chapter": "Input/ Output",
           "isDiagram": true
         },
         {
-          "qNum": 8,
+          "qNum": 2,
           "text": "Draw the memory hierarchy. Explain Associative Cache Mapping with example.\n.CPU and IOP'with necessary block diagram:",
           "marks": "8",
           "chapter": "Memory System",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 3,
           "text": "Explain about multiprocessor.and muitiprocessing in brief.",
           "marks": "8",
           "chapter": "Pipelining and Vector Processing",
@@ -1876,25 +1876,25 @@
       "totalMarks": 26,
       "questions": [
         {
-          "qNum": 4,
+          "qNum": 1,
           "text": ". What is'address sequencing?.Explain the selection. of address for controt memory with. its.:\nblock diagram.\nExplain .the Arithmetic pipeline and instruction' pipeine with example:\n[i0]",
           "marks": "8",
           "chapter": "Memory System",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 2,
           "text": "Draw the flowchart for floating point Division.\nDesign a. . booth , muitiplication. .algorithm . hardware... Multipiy.S: : and..-6:using\nbooth\nmultiplication.algorithm.:\n&.  Explain:cache organization: Explain the cache mapping techniques with example.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": true
         },
         {
-          "qNum": 9,
-          "text": "Highlight .the fole.of l/o. interface.in. a. computer system.. Describe the drawbacks of.\nprograrmed 1/O and interrupt driven /O and.explain how.DMA overcomes their drawbacks:[4+6]\n1o. .How'can multiprocessor be classified.according to their.memory organization? Explain..\nExam.\n06aterBit\nLeve!\nProgramnie\nBEX, BCT\nTime..\n2071Shawan\n:3 hrs:\nAttempt All guestions.:\nThe figures in the marigin indicate Fiull Marks.\nAssime suitable dataifinecessary\nWhat do you understanid by.Bus. Interconnection?. What are the driving\n.factors behind.the need toidesign for perforimance?\nExplain Instruction Format with its types? Ilustrate the code to.evaluate\nto evaluate: Y:= (A+B) *. (C+D) using'three address, two address.\none.address.and.zero address.instruction.formats.\nDescribe the instruction.cycle state diagram? Design a 2-Bit ALU that can\nperform addition, AND, OR operarions..:\nExplain the'drganization-ofa control'memory. Disctiss.the microin'struction\nformat with the help.ofa suitable:example.\nDiscuss about.parallel processing? How parallei processing can be achieved\nin pipelining, ;explain it with time-space diagram for four segments pipeline\nhaving six tasks:\n.:Write down the detailalgorithm'or Booth Multiplication. Ilustrate the\nmiultiplication of(9)'and (-3).using.2' s.complement method.\nWhat is Memory Hierarchy and why. it is formed in computer system?\nExplain the Direet cache memory mapping technique using organization.\ndiegram and appropriate example\nWhiat:are the functions orO Module?-What is.the purpose of priority\ninterrupt; explain priority interrupttypes.withkey characteristics\nDifferenitiate the following\n[4x3]\nRISC and'cise\nRestoring and Non-Restoring Division.\nCrossbar.Switch and Multistage Switching.Nenwork",
+          "qNum": 3,
+          "text": "Highlight .the fole.of l/o. interface.in. a. computer system.. Describe the drawbacks of.\nprograrmed 1/O and interrupt driven /O and.explain how.DMA overcomes their drawbacks:[4+6]\n1o. .How'can multiprocessor be classified.according to their.memory organization? Explain..\nExam.\n06aterBit\nLeve!\nProgramnie\nBEX, BCT\nTime..\n2071Shawan\n:3 hrs:\nAttempt All guestions.:\nThe figures in the marigin indicate Fiull Marks.\nAssime suitable dataifinecessary\nWhat do you understanid by.Bus. Interconnection?. What are the driving\n.factors behind.the need toidesign for perforimance?\nExplain Instruction Format with its types? Ilustrate the code to.evaluate\nto evaluate: Y:= (A+B) *. (C+D) using'three address, two address.\none.address.and.zero address.instruction.formats.\nDescribe the instruction.cycle state diagram? Design a 2-Bit ALU that can\nperform addition, AND, \\n**[OR]**\\n operarions..:\nExplain the'drganization-ofa control'memory. Disctiss.the microin'struction\nformat with the help.ofa suitable:example.\nDiscuss about.parallel processing? How parallei processing can be achieved\nin pipelining, ;explain it with time-space diagram for four segments pipeline\nhaving six tasks:\n.:Write down the detailalgorithm'or Booth Multiplication. Ilustrate the\nmiultiplication of(9)'and (-3).using.2' s.complement method.\nWhat is Memory Hierarchy and why. it is formed in computer system?\nExplain the Direet cache memory mapping technique using organization.\ndiegram and appropriate example\nWhiat:are the functions orO Module?-What is.the purpose of priority\ninterrupt; explain priority interrupttypes.withkey characteristics\nDifferenitiate the following\n[4x3]\nRISC and'cise\nRestoring and Non-Restoring Division.\nCrossbar.Switch and Multistage Switching.Nenwork",
           "marks": "10",
           "chapter": "Introduction",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     },
@@ -1913,84 +1913,84 @@
           "isDiagram": false
         },
         {
-          "qNum": 4,
+          "qNum": 2,
           "text": "What is address sequencing? Explain the selection.of. address for control memory with its\nblock diagram. :\nExplain the Arithmetic pipeline and instruction pipeline with example.",
           "marks": "8",
           "chapter": "Memory System",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 6,
-          "text": "Draw the flowchart for floating point Division.\n7/Design a booth multiplication algorithm hardware. Multiply 5 and -6 using booth\nmultiplication algorithm.",
+          "qNum": 3,
+          "text": "Draw the flowchart of Booth's multiplication algorithm and multiply $(-7) \\times (-10)$ using Booth's algorithm.",
           "marks": "8",
           "chapter": "Computer Arithmetic",
           "isDiagram": true
         },
         {
-          "qNum": 8,
+          "qNum": 4,
           "text": "Explain cache organization. Explain the cache mapping techniques with example.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 5,
           "text": "Highlight the role of I/O interface in a computer system. Describe the drawbacks of\n10 How can multiprocessor be classified according to their memory organization? Explain.\nExam.\nNew Back (2066 & Later Batch)\nBEX, BCT\nTime\nII /1\n2070 Ashad\n3 hrs.",
           "marks": "8",
           "chapter": "Memory System",
           "isDiagram": false
         },
         {
-          "qNum": 1,
+          "qNum": 6,
           "text": "What is performance balance and why is it required? Explain different elements of bus\ndesign.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 2,
-          "text": ". Define the addressing mode and explain the different types of addressing modes with\nexample.",
+          "qNum": 7,
+          "text": "Define addressing modes. Explain the different types of addressing modes with suitable examples and compare each of them.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": false
         },
         {
-          "qNum": 3,
-          "text": "What are the stages of ALU design? Explain with the example of2-bit ALU performing\naddition, subtraction, OR and XOR.\nimplementation of control unit? Explain 'with steps involved when you are designing\nmicro-program control unit.",
+          "qNum": 8,
+          "text": "What are the stages of ALU design? Explain with the example of2-bit ALU performing\naddition, subtraction, \\n**[OR]**\\n and XOR.\nimplementation of control unit? Explain 'with steps involved when you are designing\nmicro-program control unit.",
           "marks": "8",
           "chapter": "Control Unit (CU)",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 9,
           "text": "What is instruction hazard in pipeline? What is the four segment instruction pipeline?\nExplain with example.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 10,
           "text": "How division operation can be performed? Explain with its hardware implementation.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 11,
           "text": "Draw a flowchart of floating point subtraction.",
           "marks": "8",
           "chapter": "Input/ Output",
           "isDiagram": true
         },
         {
-          "qNum": 8,
+          "qNum": 12,
           "text": "What are the major differences between different cache mapping techniques? Suppose\nmain memory has 32 blocks and Cache memory has 8 blocks when 10 blocks of main\nmemory are used, show how mapping is performed in direct mapping technique.\n(DMA).",
           "marks": "8",
           "chapter": "Memory System",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 13,
           "text": "Explain the interprocessor synchronization with example.",
           "marks": "8",
           "chapter": "Multiprocessor System",
@@ -2021,48 +2021,48 @@
         },
         {
           "qNum": 3,
-          "text": "Mention the different types of addressing modes. Compare each of them with algorithm\nas well as advantages and disadvantages.",
+          "text": "Define addressing modes. Explain the different types of addressing modes with suitable examples and compare each of them.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 4,
           "text": "Explain the arithmetic pipeline and instruction pipeline with example.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 5,
           "text": "Explain the non-restoring division along with its algorithm, flowchart and example.",
           "marks": "8",
           "chapter": "Input/ Output",
           "isDiagram": true
         },
         {
-          "qNum": 7,
-          "text": "Explain the Booth algorithm and multiply Y = 8x9 using Booth algorithms.",
+          "qNum": 6,
+          "text": "Draw the flowchart of Booth's multiplication algorithm and multiply $(-7) \\times (-10)$ using Booth's algorithm.",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": false
+          "isDiagram": true
         },
         {
-          "qNum": 8,
+          "qNum": 7,
           "text": "Mention the characteristics of computer memory. Differentiate between associative\nmappings and set associative mapping with example.\ntechniques? Explain.",
           "marks": "8",
           "chapter": "Memory System",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 8,
           "text": "Why IOP is use in I/O organization? Explain.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": false
         },
         {
-          "qNum": 11,
+          "qNum": 9,
           "text": "Explain the characteristics of multiprocessors.",
           "marks": "8",
           "chapter": "Multiprocessor System",
@@ -2086,7 +2086,7 @@
         },
         {
           "qNum": 2,
-          "text": "What are most common fields in an instruction? How can you perform X-(E+F)*(G+H)\noperation by using zero, one, two and three address instruction format. Assume that E, F,\nG, H and X are memory addresses.",
+          "text": "What are most common fields in $a^n$ instruction? How can you perform X-(E+F)*(G+H)\noperation by using zero, one, two and three address instruction format. Assume that E, F,\nG, H and X are memory addresses.",
           "marks": "8",
           "chapter": "Memory System",
           "isDiagram": false
@@ -2096,45 +2096,45 @@
           "text": "Define addressing mode. Explain different types of addressing modes with example.\nExplain various fields in micro-instruction format with neat and clean block diagram.\nDescribe how address of control memory is selected.",
           "marks": "8",
           "chapter": "Memory System",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 4,
           "text": "What are the hazards in instruction pipelining? How can they be resolved? Explain.",
           "marks": "8",
           "chapter": "Pipelining and Vector Processing",
           "isDiagram": false
         },
         {
-          "qNum": 6,
-          "text": "Explain Booth algorithm. Use the Booth algorithm to multiply 23(multiplicand)\nby --21(multiplier), where each number is represented using 6 bits.",
+          "qNum": 5,
+          "text": "Explain Booth algorithm. Use the Booth algorithm to multiply 23(multiplicand)\nby -21(multiplier), where each number is represented using 6 bits.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 6,
           "text": "Explain floating point division algorithm.",
           "marks": "8",
           "chapter": "Computer Arithmetic",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 7,
           "text": "Explain cache read operation. What are the demerits of direct mapping technique used in\ncache design and describe in details any one of the mapping technique that solves these\nproblems.",
           "marks": "8",
           "chapter": "Memory System",
           "isDiagram": false
         },
         {
-          "qNum": 9,
-          "text": "Why input-output processor is needed in an input-output organization? Explain with\nblock diagram.",
+          "qNum": 8,
+          "text": "Why input-output processor is needed in $a^n$ input-output organization? Explain with\nblock diagram.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 9,
           "text": "Define the multiprocessor and its characteristics.",
           "marks": "8",
           "chapter": "Multiprocessor System",
@@ -2157,14 +2157,14 @@
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 2,
           "text": ". What do you mean by mapping process? Differentiate between direct, associative and set\nassociative mapping.\nExplain the key characteristics of computer memory systems.\nExplain the input/output interface with example.\n'Compare between program I/O, interrupt driven I/O and Direct Memory Access (DMA).\nWhat are the steps to configure the plug and play device? Explain.",
           "marks": "8",
           "chapter": "Input/ Output",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 3,
           "text": "What are the main goals of the plug and play BIOS specification? Explain",
           "marks": "8",
           "chapter": "Introduction",
@@ -2195,10 +2195,10 @@
         },
         {
           "qNum": 3,
-          "text": "Explain the Booth algorithm and its hardware implementation. Multiply the 6x7\nusing Booth. algorithm.",
+          "text": "Draw the flowchart of Booth's multiplication algorithm and multiply $(-7) \\times (-10)$ using Booth's algorithm.",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": false
+          "isDiagram": true
         },
         {
           "qNum": 4,
@@ -2223,7 +2223,7 @@
         },
         {
           "qNum": 7,
-          "text": "What are the four types of I/O commands that an interface receive during the\ncommunication link between the processor and peripherals? Explain the I/O bus\nand interface modules.",
+          "text": "What are the four types of I/O commands that $a^n$ interface receive during the\ncommunication link between the processor and peripherals? Explain the I/O bus\nand interface modules.",
           "marks": "8",
           "chapter": "Input/ Output",
           "isDiagram": false
@@ -2274,7 +2274,7 @@
         },
         {
           "qNum": 3,
-          "text": "Following instructions are given:\nLDA 2000H\nii) MVI B, 32H\nii) STAX D\niv) MOV A, B\nWhich addressing modes are used in the above instructions? Explain briefly about them.",
+          "text": "Following instructions are given:\nLDA 2000H\\n(ii) MVI B, 32H\\n(ii) STAX D\\n(iv) MOV A, B\nWhich addressing modes are used in the above instructions? Explain briefly about them.",
           "marks": "8",
           "chapter": "Central Processing Unit (CPU)",
           "isDiagram": false
@@ -2323,7 +2323,7 @@
         },
         {
           "qNum": 10,
-          "text": "Why input-output processor is needed in an input-output organization? How does a\ncomputer know which device issued the interrupt; if multiple devices, how does the\nselection take place?",
+          "text": "Why input-output processor is needed in $a^n$ input-output organization? How does a\ncomputer know which device issued the interrupt; if multiple devices, how does the\nselection take place?",
           "marks": "8",
           "chapter": "Input/ Output",
           "isDiagram": false

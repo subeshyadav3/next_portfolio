@@ -718,14 +718,14 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "How does an operating system act as an extended machine? Explain with an example.\nWhat are the design tradeoffs between monolithic and microkernel architecture?",
+          "text": "How does an operating system act as an extended machine and a resource manager? Explain with examples. What are the architectural trade-offs between Monolithic, Layered, and Microkernel operating system structures?",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
           "qNum": 2,
-          "text": "Explain the significance of the Process Control Block (PCB). For the given information\nof the processes, find average TAT, average WT, CPU utilization, and throughput\naccording to FCFS and SRTN algorithms.\nProcess\nArrival Time\nBurst Time\nPriority",
+          "text": "Explain the significance of the Process Control Block (PCB). For the given set of processes with arrival time, burst time, and priority, draw Gantt charts and calculate average Turnaround Time (TAT), average Waiting Time (WT), CPU utilization, and throughput according to FCFS, Shortest Remaining Time First (SRTF), and Round Robin (RR) scheduling algorithms.",
           "marks": "8",
           "chapter": "Process Management",
           "isDiagram": false
@@ -739,7 +739,7 @@
         },
         {
           "qNum": 4,
-          "text": "Differentiate internal fragmentation and external fragmentation. How many page-fault for\nLRU, FIFO and Optimal page replacement algorithms with the following given reference\nstring for three-page frames:7,0,1,2,0,3,0,4,2,3,0,3.",
+          "text": "Differentiate between internal and external fragmentation. Consider the following page reference string: 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1 with 3 (or 4) page frames. Calculate the number of page faults that occur for: (a) FIFO, (b) LRU, and (c) Optimal page replacement algorithms, and identify Belady's Anomaly.",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
@@ -760,8 +760,22 @@
         },
         {
           "qNum": 7,
-          "text": "Explain goals of I/O software. A disk drive has 50 tracks, numbered 0 to 49. The\nread/write head is currently serving a request at track 15 and it was at track 48 previously,\nand the queue of pending requests, in FIFO order is 4, 40, 11, 35, 7, 14. What is the total\ntrack movement for head for the following algorithms: a) FCFS b) SSTF c) C-SCAN. .",
-          "marks": "8",
+          "text": "Explain goals of I/O software. A disk drive has 50 tracks, numbered 0 to",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "The\nread/write head is currently serving a request at track 15 and it was at track 48 previously,\nand the queue of pending requests, in FIFO order is 4, 40, 11, 35, 7,",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "What is the total\ntrack movement for head for the following algorithms: a) FCFS b) SSTF c) C-SCAN. .",
+          "marks": "5",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         }
@@ -790,7 +804,7 @@
         },
         {
           "qNum": 3,
-          "text": "Differentiate between process and thread, Schedule the following set of process according\nto HRRN and Round- Robin scheduling an algorithm with Quantum time - 4 ms and\ncalculate the average waiting time and average Turn-around time.\nProcess\nArrival time(ms) CPU time(ms)",
+          "text": "Differentiate between process and thread, Schedule the following set of process according\nto HRRN and Round- Robin scheduling $a^n$ algorithm with Quantum time - 4 ms and\ncalculate the average waiting time and average Turn-around time.\nProcess\nArrival time(ms) CPU time(ms)",
           "marks": "8",
           "chapter": "Process Management",
           "isDiagram": false
@@ -804,41 +818,62 @@
         },
         {
           "qNum": 5,
-          "text": "What is Virtual Memory? Why do we need it? Consider the following page reference\nStrings; 2, 3, 4, 2, 1, 3, 7, 5, 4, 3, 1, 5. Find how many pages fault occur according to\npageframes.",
-          "marks": "8",
+          "text": "What is Virtual Memory? Why do we need it? Consider the following page reference\nStrings; 2, 3, 4, 2, 1, 3, 7, 5, 4, 3, 1,",
+          "marks": "5",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
           "qNum": 6,
+          "text": "Find how many pages fault occur according to\npageframes.",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
           "text": "Explain all the ways how file system can be implemented with its advantages and\ndisadvantages?",
           "marks": "8",
           "chapter": "File Systems",
           "isDiagram": false
         },
         {
-          "qNum": 7,
-          "text": "Suppose a disk drive with 150 cylinders numbered from 0-149. The drive is currently\nserving a request at 35 and the previous request is at disk 55. The queue of pending\nrequest is 98, 103, 38, 122, 10, 128, 65, 75. Starting from the current head position,\nCalculate the total head moment (in cylinder) that the disk arm moves to satisfy all the\npending request for SSF, SCAN and LOOK disk arm scheduling algorithm.",
-          "marks": "8",
+          "qNum": 8,
+          "text": "Suppose a disk drive with 150 cylinders numbered from 0-149. The drive is currently\nserving a request at 35 and the previous request is at disk",
+          "marks": "5",
           "chapter": "Process Management",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 9,
+          "text": "The queue of pending\nrequest is 98, 103, 38, 122, 10, 128, 65,",
+          "marks": "5",
+          "chapter": "Process Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "Starting from the current head position,\nCalculate the total head moment (in cylinder) that the disk arm moves to satisfy all the\npending request for SSF, SCAN and LOOK disk arm scheduling algorithm.",
+          "marks": "5",
+          "chapter": "Process Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
           "text": "What is indefinite postponement? Assume that there are 5 processes and 4 types of\nresource at Time To, as illustrated below. Check if the system is safe or not?\nProcess\nAllocation\nAvailable\n[A,B, C, D]\n[A, B, C, D]\n[A, B, C, D]\n[0,1,1,0]\n[0,2,1,0]\n[1,2,3,1]\n[1,6,5,2]\n[1,3,6,5]\n[2,3,6,6]\n[1,5,2,0]\n[0,6,3,2]\n[0,6,5,2]\n[0,0,1,4]\n[0,6,5,6]",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 12,
           "text": "What are the roles and duties of system administration? Explain. What is ACL? Why\nHASH' function is called message digestor?",
           "marks": "8",
           "chapter": "Security and System Administration",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 13,
           "text": "Write short notes on: (Any Four)\n[4x3]\n\n(c) Belady's Anomaly,(d) Tharashing (e) Critical Section (f) Ostrich'Aigorithms\n\n(a) Network Attacks",
           "marks": "8",
           "chapter": "Process Communication and Synchronization",
@@ -855,7 +890,7 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "What is an Operating system? Explain the functions of Operating System.",
+          "text": "What is $a^n$ Operating system? Explain the functions of Operating System.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
@@ -890,41 +925,69 @@
         },
         {
           "qNum": 6,
-          "text": "Consider the following page reference strings: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4, 5. Find out\nnumber of page hits for FIFO and Optimal and LRU page replacement algorithm, Assume\navailable frames = 4.",
-          "marks": "8",
+          "text": "Consider the following page reference strings: 1, 2, 3, 4, 1, 2, 5, 1, 2, 3, 4,",
+          "marks": "5",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
           "qNum": 7,
-          "text": "Explain about the direct memory access. Suppose that a disk drive has 100 cylinders,\nnumbered 0 to 99. The drive is currently serving a request at cylinder 35 and previous\nrequest was at cylinder 20. The queue of pending request in FIFO order is 86, 70, 13, 74,\n48, 9, 22, 50, 30. Produce the schedules to satisfy all the pending requests for each of the\nfollowing disk scheduling algorithm.\nC-LOOK\nSCAN\nC-LOOK",
-          "marks": "8",
+          "text": "Find out\nnumber of page hits for FIFO and Optimal and LRU page replacement algorithm, Assume\navailable frames = 4.",
+          "marks": "5",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
           "qNum": 8,
+          "text": "Explain about the direct memory access. Suppose that a disk drive has 100 cylinders,\nnumbered 0 to",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
+          "text": "The drive is currently serving a request at cylinder 35 and previous\nrequest was at cylinder",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "The queue of pending request in FIFO order is 86, 70, 13, 74,\n48, 9, 22, 50,",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
+          "text": "Produce the schedules to satisfy all the pending requests for each of the\nfollowing disk scheduling algorithm.\nC-LOOK\nSCAN\nC-LOOK",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
           "text": "Define Protection Domain and Protection Matrix. What design considerations must be\ntaken into account to ensure security in a computer system?",
           "marks": "8",
           "chapter": "Security and System Administration",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 13,
           "text": "Define a system administrator. What are the key technical and soft skills required for\nsdmeone pursuing a career as a system administrator?",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 14,
           "text": "How deadlock can be prevented? Consider a system with 5 concurent processes (Po, P1,\nP2, P3, P4) and 4 resource types (R0, R1, R2, R3). The total number of instances of each\nresource type in the system are 3,17,16,12 respectively. Allocation table and maximum\nclaimareas follows:\nProcess\nAllocation\nCreateneed matrix.\nIs the safe state? If so, show the safe execution of the processes.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 11,
+          "qNum": 15,
           "text": "Write short notes on: (Any Three)\nPrinciplesofI/OSoftware\nProcessControl Block\nBelady's Anomaly\nThreads",
           "marks": "8",
           "chapter": "Process Management",
@@ -951,7 +1014,7 @@
           "text": "Explain different states of a process. What are the differences between preemptive\nalgorithms and non-preemptive algorithms for scheduling of a processes? Consider the\nfollowing set of processes.\nProcess\nArrival Time\nBurst Time\nDraw Gantt chart and calculate average weighting time for each process using following\nalgorithms:\n\n(a) Shortest Remaining Time First\n\n(b) HRRN",
           "marks": "8",
           "chapter": "Process Management",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 3,
@@ -976,34 +1039,48 @@
         },
         {
           "qNum": 6,
-          "text": "Explain the importance of device driver in I/O system. Suppose a disk has tracks\nnumbered from 0-180. The disk queue has the following request tracks: 87, 170, 40, 150,\n36, 72, 66, and 15. Suppose the current head is at track number 60, and it has just finished\nthe request at 54. Find the total head movement for SSTF, SCAN, and C-LOOK\nalgorithms.",
-          "marks": "8",
+          "text": "Explain the importance of device driver in I/O system. Suppose a disk has tracks\nnumbered from 0-180. The disk queue has the following request tracks: 87, 170, 40, 150,\n36, 72, 66, and",
+          "marks": "5",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
           "qNum": 7,
+          "text": "Suppose the current head is at track number 60, and it has just finished\nthe request at",
+          "marks": "5",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "Find the total head movement for SSTF, SCAN, and C-LOOK\nalgorithms.",
+          "marks": "5",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
           "text": "Differentiate between Encryption and Decryption and explain their role in enhancing\nsecurity of the system. What do you mean by Access Control List (ACL)?",
           "marks": "8",
           "chapter": "Security and System Administration",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 10,
           "text": "What are the technical and soft skills that a system administrator must acquire? Explain\ntasks performed for user account management.",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 11,
           "text": "What would be necessary steps to prevent deadlock? Considering a system with five\nprocesses PO through P4 and three resources of type A, B, C. Resource type A has 10\ninstances, B has 5 instances and type C has 7 instances. Suppose at time to following\nsnapshotofthe systemhas beentaken.\nProcess\nAllocation\nMax need\n\n(a) CalculateNeedmatrix\n\n(b) Is the state safe to run all the processes? If so, show the safe sequence of process\nexecution.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 12,
           "text": "Write short notes on: (Any Three)\n[3x3]\n\n(a) Shell Programming\n\n(b) Critical Section\n\n(c) TSL Instruction\n\n(d) Thrashing\nMemoryCompaction\nThrashing",
           "marks": "8",
           "chapter": "I/O and Memory Management",
@@ -1020,7 +1097,7 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "What is an operating system? Explain how operating system acts as a resource manager.\nWhy operating system is termed as virtual machine? Explain.",
+          "text": "What is $a^n$ operating system? Explain how operating system acts as a resource manager.\nWhy operating system is termed as virtual machine? Explain.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
@@ -1051,14 +1128,14 @@
           "text": "What is file attribute? Explain all the file allocation methods with its advantages,\ndisadvantages and suitable block diagram. Explain how a file system performance can be\nincreased.",
           "marks": "8",
           "chapter": "File Systems",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 6,
           "text": "Explain the working of the DMA Controller with the respective figure. Consider a disk\nqueue with requests for I/0 to blocks on cylinders 175, 155, 188, 23, 169, 15, 130 for\ncylinders from 0-199 (200 cylinders). The current head position is at 100 which had just\nfinished the request at cylinder 109. Starting from the current head position, find total\nhead movement for FCFS, SSTF, and SCAN disk arm scheduling algorithms.",
           "marks": "8",
           "chapter": "Process Management",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 7,
@@ -1068,14 +1145,14 @@
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 8,
           "text": "Define system administrator. What are the different technical and soft skills that one\nshould pursue as a system administrator?",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 9,
           "text": "Write short notes on: (Any Two)\n[2x3]\n\n(a) Principal of IO software\n\n(b) Compaction\n\n(c) Ceaser cipher",
           "marks": "8",
           "chapter": "I/O and Memory Management",
@@ -1092,21 +1169,21 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "Explain spooling with an example. How does the operating system act as a central\nmanager for critical resources like CPU, memory and storage in a computer system?\nExplain.",
+          "text": "Explain spooling with $a^n$ example. How does the operating system act as a central\nmanager for critical resources like CPU, memory and storage in a computer system?\nExplain.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
           "qNum": 2,
-          "text": "Schedule the following set of process according to HRRN and Round- Robin scheduling\nalgorithm with Quantum time -- 3 ms and calculate the average waiting time and average\nturn-around time.\nProcess\nArrival time (ms)\nCPU time (ms)",
+          "text": "Schedule the following set of process according to HRRN and Round- Robin scheduling\nalgorithm with Quantum time - 3 ms and calculate the average waiting time and average\nturn-around time.\nProcess\nArrival time (ms)\nCPU time (ms)",
           "marks": "8",
           "chapter": "Process Management",
           "isDiagram": false
         },
         {
           "qNum": 3,
-          "text": "What do you mean by TLB? Consider the following page references:\n01870310281738018703\nNow, Calculate the number of page faults according to Optimal, FIFO and LRU\nalgorithms. Assume available frames -- 3.",
+          "text": "What do you mean by TLB? Consider the following page references:\n01870310281738018703\nNow, Calculate the number of page faults according to Optimal, FIFO and LRU\nalgorithms. Assume available frames - 3.",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
@@ -1120,35 +1197,49 @@
         },
         {
           "qNum": 5,
-          "text": "A program uses 12GB of memory, exceeding the 8GB RAM of host machine. How does\nthe OS manage its execution? Explain. Suppose a disk drive with 150 cylinders numbered\nfrom 0-149. The drive is currently serving a request at 35 and the previous request is at\ndisk 55. The queue of pending request is 98, 103, 38, 122, 10, 128, 65, 75. Starting from\nthe current head position, Calculate the total head moment (in cylinder) that the disk arm\nmoves to satisfy all the pending request for SSF, SCAN and LOOK Disk Arm Scheduling\nAlgorithm.",
-          "marks": "8",
+          "text": "A program uses 12GB of memory, exceeding the 8GB RAM of host machine. How does\nthe OS manage its execution? Explain. Suppose a disk drive with 150 cylinders numbered\nfrom 0-149. The drive is currently serving a request at 35 and the previous request is at\ndisk",
+          "marks": "5",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
           "qNum": 6,
+          "text": "The queue of pending request is 98, 103, 38, 122, 10, 128, 65,",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Starting from\nthe current head position, Calculate the total head moment (in cylinder) that the disk arm\nmoves to satisfy all the pending request for SSF, SCAN and LOOK Disk Arm Scheduling\nAlgorithm.",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
           "text": "Explain all the ways how file system can be implemented with its advantages and\ndisadvantages. Also suggest which file organization technique is most appropriate for\n\"tape storage\" and why?",
           "marks": "8",
           "chapter": "File Systems",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 9,
           "text": "Explain the types of Network Attacks? What is ACL? Why HASH' function is called\nMessageDigestor?",
           "marks": "8",
           "chapter": "Hypervisors and Virtual Systems",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 10,
           "text": "What are the necessary conditions for deadlock and how deadlock can be handled?\nExplain. Consider a system with 5 concurrent processes (PO, P1, P2, P3, P4) and 4\nresource types (R0, R1, R2, R3). The total number of instances of each resource type in\nthe system are 3,17,16,12 respectively. Allocation table and maximum claim are as\nfollows:\nProcess\nAllocation\n\n(a) Create need matrix.\n\n(b) Is the safe state? If so, show the safe execution of the processes.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 9,
-          "text": "Write a comparative note on: (Any Three)\n3×x4\nBatchOSvs.Real-TimeOS\n\n(b) Process vs.Thread.\n\n(d) Roles and Duties of System Administration",
+          "qNum": 11,
+          "text": "Write a comparative note on: (Any Three)\n3×$x^4$\nBatchOSvs.Real-TimeOS\n\n(b) Process vs.Thread.\n\n(d) Roles and Duties of System Administration",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
@@ -1170,49 +1261,70 @@
           "isDiagram": false
         },
         {
-          "qNum": 3,
+          "qNum": 2,
           "text": "What is the rationale behind defining the quantum for Round Robin scheduling\nalgorithm? Explain. Make a schedule for the processes mentioned in the table below as\nper Round Robin scheduling algorithm (quantum size = 4 millisecond). Also calculate\naverage turnaround time, average waiting time, CPU utilization and throughput.\nProcess\nBurst Time | Arrival Time",
           "marks": "8",
           "chapter": "Process Management",
           "isDiagram": false
         },
         {
-          "qNum": 4,
+          "qNum": 3,
           "text": "What is TSL instruction? Why it is used? Explain the types of semaphore along with the\nmajor operations of it with a simple pseudocode.",
           "marks": "8",
           "chapter": "Process Management",
           "isDiagram": false
         },
         {
-          "qNum": 5,
-          "text": "Differentiate between internal fragmentation and external fragmentation. Consider the\nfollowing page references as, 7 0 1 2 0 3 0 4 2 3 0 3 2 1 2 0 1 7 0 1. Calculate the number\nof page faults according to Optimal and LFU page replacement algorithms by assuming\n3-page frames.\nwith Table file implementation technique with its advantages and disadvantages.",
-          "marks": "8",
+          "qNum": 4,
+          "text": "Differentiate between internal fragmentation and external fragmentation. Consider the\nfollowing page references as, 7 0 1 2 0 3 0 4 2 3 0 3 2 1 2 0 1 7 0",
+          "marks": "5",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
+          "qNum": 5,
+          "text": "Calculate the number\nof page faults according to Optimal and LFU page replacement algorithms by assuming\n3-page frames.\nwith Table file implementation technique with its advantages and disadvantages.",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Suppose a disk drive with 150 cylinders numbered from 0-149. The drive is currently\nserving a request at 35 and the previous request is at disk",
+          "marks": "5",
+          "chapter": "Process Management",
+          "isDiagram": false
+        },
+        {
           "qNum": 7,
-          "text": "Suppose a disk drive with 150 cylinders numbered from 0-149. The drive is currently\nserving a request at 35 and the previous request is at disk 55. The queue of pending\nrequest is 98, 103, 38, 122, 10, 128, 65, 75. Starting from the current head position,\ncalculate the total head moment (in cylinder) that the disk arm moves to satisfy all the\npending request for SSTF, SCAN and LOOK Disk Arm Scheduling Algorithm.",
-          "marks": "8",
+          "text": "The queue of pending\nrequest is 98, 103, 38, 122, 10, 128, 65,",
+          "marks": "5",
           "chapter": "Process Management",
           "isDiagram": false
         },
         {
           "qNum": 8,
+          "text": "Starting from the current head position,\ncalculate the total head moment (in cylinder) that the disk arm moves to satisfy all the\npending request for SSTF, SCAN and LOOK Disk Arm Scheduling Algorithm.",
+          "marks": "5",
+          "chapter": "Process Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
           "text": "What is deadlock and livelock? Explain, how deadlock can be recovered. A system has 2\nprocess and 3 resources. Each process need maximum of two resources, is deadlock\npossible? Explain.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 10,
           "text": "Explain the types of Network Attacks. What is ACL? Why ‘HASH' function is called\nMessage Digestor?",
           "marks": "8",
           "chapter": "Hypervisors and Virtual Systems",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 11,
           "text": "Write short notes on:\nRoles and Duties of System Administration\n\n(b) Principles of I/O Software\n\n(c) Linux",
           "marks": "8",
           "chapter": "Security and System Administration",
@@ -1239,7 +1351,7 @@
           "text": "Why threads are called light weight process? Consider the following set of processes,\nwith length of the CPU burst time given in milliseconds.\nProcess\nBurst time\nPriority\nAll the processes are assumed to have arrived in order all at time 0.\n(i) Draw Gantt Chart Using FCFS, SJF scheduling algorithm.\n(ii) Find average turnaround time and waiting time for each scheduling algorithm.",
           "marks": "8",
           "chapter": "Process Management",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 3,
@@ -1271,35 +1383,42 @@
         },
         {
           "qNum": 7,
-          "text": "Consider a disk drive having 100 cylinders. The head is currently serving request at\ncylinder 43 and the previous request was at 56. The queue of pending request is\n86,70,13,74,48,9,22,50,30. Starting from current head position, what is total head\nmovement (in cylinders) to service the pending requests of each of following disk arm\nscheduling algorithms.\nFCFS\nSSTF\nSCAN\nLOOK",
-          "marks": "8",
+          "text": "Consider a disk drive having 100 cylinders. The head is currently serving request at\ncylinder 43 and the previous request was at",
+          "marks": "5",
           "chapter": "Process Management",
           "isDiagram": false
         },
         {
           "qNum": 8,
-          "text": "Explain the resource allocation graph with an example. Consider a system with 4\nconcurrent processes (P1, P2, P3, P4) and three resource types A, B, and C with total\ninstances 7, 10, and 10 respectively. The allocation and maximum claim at state to is:\nAllocation\nMaximum Claim\nProcess\nWhat is the total number of available resources?\nWhat will be the need matrix?\n\n(c) Is the system safe? If so, show the safe sequence.",
-          "marks": "8",
-          "chapter": "Introduction",
-          "isDiagram": true
+          "text": "The queue of pending request is\n86,70,13,74,48,9,22,50,30. Starting from current head position, what is total head\nmovement (in cylinders) to service the pending requests of each of following disk arm\nscheduling algorithms.\nFCFS\nSSTF\nSCAN\nLOOK",
+          "marks": "5",
+          "chapter": "Process Management",
+          "isDiagram": false
         },
         {
           "qNum": 9,
-          "text": "What do you mean by ACL? How is it different from the capabilities list? How does\nCaesar Cipher convert plain text to ciphertext?",
+          "text": "Explain the resource allocation graph with $a^n$ example. Consider a system with 4\nconcurrent processes (P1, P2, P3, P4) and three resource types A, B, and C with total\ninstances 7, 10, and 10 respectively. The allocation and maximum claim at state to is:\nAllocation\nMaximum Claim\nProcess\nWhat is the total number of available resources?\nWhat will be the need matrix?\n\n(c) Is the system safe? If so, show the safe sequence.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
           "qNum": 10,
-          "text": "What are the roles of a system administrator? How is a special user different from a\ngeneraluser?Explain.",
+          "text": "What do you mean by ACL? How is it different from the capabilities list? How does\nCaesar Cipher convert plain text to ciphertext?",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
           "qNum": 11,
-          "text": "Write short notes on: (Any Two)\n[2×x3]\nCompaction\n\n(b) Thrashing\n\n(c) Belady's anomaly",
+          "text": "What are the roles of a system administrator? How is a special user different from a\ngeneraluser?Explain.",
+          "marks": "8",
+          "chapter": "Introduction",
+          "isDiagram": false
+        },
+        {
+          "qNum": 12,
+          "text": "Write short notes on: (Any Two)\n[2×$x^3$]\nCompaction\n\n(b) Thrashing\n\n(c) Belady's anomaly",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
@@ -1329,55 +1448,69 @@
         },
         {
           "qNum": 3,
-          "text": "Why do we organize disk as RAID? Suppose a disk drive with 150 cylinder numbered\nfrom 0-149. The drive is currently serving a request at 35 and the previous request is at\ndisk 55. The queue of pending request is 98, 103, 38, 122, 10, 128, 65, 75. Starting from\nthe current head position, Calculate the total head moment (in cylinder) that the disk arm\nmoves to satisfy all the pending request for SSF, SCAN, and LOOK Disk Arm\nScheduling Algorithm.",
-          "marks": "8",
+          "text": "Why do we organize disk as RAID? Suppose a disk drive with 150 cylinder numbered\nfrom 0-149. The drive is currently serving a request at 35 and the previous request is at\ndisk",
+          "marks": "5",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
           "qNum": 4,
-          "text": "a) Explain first fit, Next fit memory allocation algorithm with an example.\n\n(b) How semaphore is used in process synchronization? Explain how semaphore is best\nsolution for producer consumer problem with pseudo-code of both producer and\nconsumer process.",
+          "text": "The queue of pending request is 98, 103, 38, 122, 10, 128, 65,",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Starting from\nthe current head position, Calculate the total head moment (in cylinder) that the disk arm\nmoves to satisfy all the pending request for SSF, SCAN, and LOOK Disk Arm\nScheduling Algorithm.",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "\n(a) Explain first fit, Next fit memory allocation algorithm with $a^n$ example.\n\n(b) How semaphore is used in process synchronization? Explain how semaphore is best\nsolution for producer consumer problem with pseudo-code of both producer and\nconsumer process.",
           "marks": "8",
           "chapter": "Process Communication and Synchronization",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 7,
           "text": "What is file attribute? List the file system performance indicator. Explain the file\nallocation methods with its advantages and disadvantages.",
           "marks": "8",
           "chapter": "File Systems",
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 8,
           "text": "What are the differences between fixed partitioning and variable partitioning system of\nmemory for multiprogramming? Given reference to the following pages by a program:\n0,9,0,1,8,1,8,7,8,7,1,2,8,2,7,8,2,3,8,3\nHow many page faults will occur if the program has 4 frames for Optimal Page\nReplacement Algorithm?",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 9,
           "text": "Explain necessary conditions for deadlock. Consider the following snapshot of a system\n(P=Process,R =Resource):\nAvailable\nMaximum Demand\nCurrent Allocation\nBy using Bankers algorithm, Calculate the need matrix. Is the system safe? If safe find\nsafe order of process.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 10,
           "text": "Describe the role and responsibilities of system adminstrator to keep the system updated\nandefficient.Explainwithexamples.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 11,
           "text": "Define ACL. Write the type of security breach in following attack case? Also suggest a\nsolution ineachtopreventtheattack.\n[2+2+2+2]\n\"Ramesh found that Nirmal's Facebook was login in Computer Lab. He then changed the\npersonal information and login credentials of Nirmal's account.\"",
           "marks": "8",
           "chapter": "Security and System Administration",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 12,
           "text": "Write short notes on:\n\n(a) Ostrich algorithm\n\n(b) Shell programming\n\n(c) Process control Block",
           "marks": "8",
           "chapter": "Introduction",
@@ -1394,7 +1527,7 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "Define Operating System. What is the purpose of a system call in an operating system?\nExplain.",
+          "text": "Define Operating System. What is the purpose of a system call in $a^n$ operating system?\nExplain.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
@@ -1408,10 +1541,10 @@
         },
         {
           "qNum": 3,
-          "text": "Explain Context Switching with an example. Consider the following set of processes with\nlength of the burst time given in millisecond.\nProcess\nArrival Time\nBurst Time\nWith the given information, draw the Gantt Chart and calculate the average waiting\ntime(A WT), average turnaround time (ATAT), CPU Utilization and throughput for the\ni)RoundRobin (RR) (Quantum Time-2)\ni) Highest Response Ratio Next (HRRN)",
+          "text": "Explain Context Switching with $a^n$ example. Consider the following set of processes with\nlength of the burst time given in millisecond.\nProcess\nArrival Time\nBurst Time\nWith the given information, draw the Gantt Chart and calculate the average waiting\ntime(A WT), average turnaround time (ATAT), CPU Utilization and throughput for the\\n(i) RoundRobin (RR) (Quantum Time-2)\\n(i) Highest Response Ratio Next (HRRN)",
           "marks": "8",
           "chapter": "Process Management",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 4,
@@ -1435,21 +1568,21 @@
           "isDiagram": false
         },
         {
-          "qNum": 8,
-          "text": "What are the necessary conditions for deadlock? Consider a system with five processes\np0 through p4 and three resource types A, B and C. Resource A has 5 instances, B has 5\ninstances, and type C has 4 instances. Suppose at time t = O, following snapshot has been\ntaken.\nProcess\nAllocation\nMaximum\nClaim\nLet the available number of resources be given by available vectors as (1, O, 1). Is the\nsystem in safestate? If yes, then write the safe sequence.",
+          "qNum": 7,
+          "text": "What are the necessary conditions for deadlock? Consider a system with five processes\np0 through $p^4$ and three resource types A, B and C. Resource A has 5 instances, B has 5\ninstances, and type C has 4 instances. Suppose at time t = O, following snapshot has been\ntaken.\nProcess\nAllocation\nMaximum\nClaim\nLet the available number of resources be given by available vectors as (1, O, 1). Is the\nsystem in safestate? If yes, then write the safe sequence.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 8,
           "text": "Describe how'Access Control List is used. What are the roles of System Administrator for\nchange management?",
           "marks": "8",
           "chapter": "Security and System Administration",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 9,
           "text": "Write short notes on:\n\n(a) Protection Domain\n\n(b) Compaction and Coalescing\n\n(c) Belady's Anomaly",
           "marks": "8",
           "chapter": "Introduction",
@@ -1501,8 +1634,15 @@
         },
         {
           "qNum": 6,
-          "text": "Why Associative memory is called content addressable memory? Write the difference\nbetween Coalescing and Compaction.\nalgorithm? Consider the following page reference Strings; 2, 3, 4, 2, 1, 3, 7, 5, 4, 3, 1, 5.\nFind how many page fault occur according to OPTIMAL, LRU (least recently used) and\nLFU (least frequently used) page replacement aigorithm assuming 3 page frames.",
-          "marks": "8",
+          "text": "Why Associative memory is called content addressable memory? Write the difference\nbetween Coalescing and Compaction.\nalgorithm? Consider the following page reference Strings; 2, 3, 4, 2, 1, 3, 7, 5, 4, 3, 1,",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "Find how many page fault occur according to OPTIMAL, LRU (least recently used) and\nLFU (least frequently used) page replacement aigorithm assuming 3 page frames.",
+          "marks": "5",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
@@ -1522,7 +1662,7 @@
         },
         {
           "qNum": 10,
-          "text": "Suppose a disk drive has 2000 cylinders, numbered 0 to 1999. The drive is currently\nserving a request at cylinder 134 and the previous request was at cylinder 124. The queue\nof pending requests in FIF0 order is 86, 1470, 913, 1774, 948, 1509, 1022, 1750, 130\nStarting from the current head position what is the total distance that disk arm moves to\nsatisfy all the pending requests for each of the following disk scheduling algorithms?\ni) FCFS (i) SSTF (ii) SCAN (iv)C-SCAN (v) LOOK",
+          "text": "Suppose a disk drive has 200 tracks (numbered 0-199). The read/write head is currently serving a request at track 53 (or 60) and previous request was at track 54. The queue of pending requests in FIFO order is: 98, 183, 37, 122, 14, 124, 65, 67. Calculate the total head movement (seek distance in cylinders) for: (a) FCFS, (b) SSTF, (c) SCAN, and (d) C-LOOK algorithms.",
           "marks": "8",
           "chapter": "Process Management",
           "isDiagram": false
@@ -1543,7 +1683,7 @@
         },
         {
           "qNum": 13,
-          "text": "What are the roles of system administration for an organization? Explain.",
+          "text": "What are the roles of system administration for $a^n$ organization? Explain.",
           "marks": "8",
           "chapter": "Security and System Administration",
           "isDiagram": false
@@ -1559,7 +1699,7 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "What is an Operating system? Explain the statement “ operating system acts as a Broker\nbetween hardware and application program\".",
+          "text": "What is $a^n$ Operating system? Explain the statement “ operating system acts as a Broker\nbetween hardware and application program\".",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
@@ -1573,14 +1713,28 @@
         },
         {
           "qNum": 3,
-          "text": "What are the principles of I/O software? Suppose that a disk drive has 100 cylinders,\nnumbered 0 to 99. The drive is currently serving a request at cylinder 43 and previous\nrequest was at cylinder 25. The queue of pending request, in FIFO order is:\n86,70,13,74,48,9,22,50,30. Produce the schedules to satisfy all the pending requests for\neach of the following disk scheduling algorithms?\n\n(a) FCFS\n\n(b) C-SCAN",
-          "marks": "8",
+          "text": "What are the principles of I/O software? Suppose that a disk drive has 100 cylinders,\nnumbered 0 to",
+          "marks": "5",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
           "qNum": 4,
-          "text": "a) Explain Best fit and Worst fit memory allocation algorithm with an example.\n\n(b) What is the need process synchronization? How can the semaphore solve the reader-\nwriter problem? Explain with respective pseudo-code of both reader and writer\nprocess.\nWhat is directory organization in files? Explain its types.\nWhat is Belady's anamaly in F1Fo? Consider the following page reference strings; 2,\nLRU (least recently used) and LFU (least frequently used) page replacement algorithm\nassuming 3 page frames.",
+          "text": "The drive is currently serving a request at cylinder 43 and previous\nrequest was at cylinder",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "The queue of pending request, in FIFO order is:\n86,70,13,74,48,9,22,50,30. Produce the schedules to satisfy all the pending requests for\neach of the following disk scheduling algorithms?\n\n(a) FCFS\n\n(b) C-SCAN",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "\n(a) Explain Best fit and Worst fit memory allocation algorithm with $a^n$ example.\n\n(b) What is the need process synchronization? How can the semaphore solve the reader-\nwriter problem? Explain with respective pseudo-code of both reader and writer\nprocess.\nWhat is directory organization in files? Explain its types.\nWhat is Belady's anamaly in F1Fo? Consider the following page reference strings; 2,\nLRU (least recently used) and LFU (least frequently used) page replacement algorithm\nassuming 3 page frames.",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
@@ -1593,14 +1747,14 @@
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 8,
           "text": "Explain the types of Network Attacks? What is ACL? Why HASH' function is called\nMessage Digestor?",
           "marks": "8",
           "chapter": "Hypervisors and Virtual Systems",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 9,
           "text": "Write short notes on:\n[3x3]\n\n(a) Thrashing\n\n(b) Virtual Machine\n) User level thread vs Kernel- level thread.",
           "marks": "8",
           "chapter": "Hypervisors and Virtual Systems",
@@ -1617,28 +1771,28 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "a) Explain OS as an Extended Machine. Differentiate between Monolithic Kernel and\nMicro-Kernel.\n\n(b) Explain operating system as a virtual Machine.",
+          "text": "\n(a) Explain OS as $a^n$ Extended Machine. Differentiate between Monolithic Kernel and\nMicro-Kernel.\n\n(b) Explain operating system as a virtual Machine.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
           "qNum": 2,
-          "text": "a) Differentiate between Preemptive and Non-Preemptive Scheduling. Apply MLQ\nscheduling for following set of processes of two queues Q1 and Q2 where Priority of\nQ1 is greater than that of Q2 and Q1 uses Round Robin (Time Quantum = 2) and Q2\nuses FCFS.\nProcess\nQueue Number\nConstruct Gantt --Chart and compute average TAT for above scenario.\nWhat is multithreading? Explain five state process model with figure.",
+          "text": "\n(a) Differentiate between Preemptive and Non-Preemptive Scheduling. Apply MLQ\nscheduling for following set of processes of two queues Q1 and Q2 where Priority of\nQ1 is greater than that of Q2 and Q1 uses Round Robin (Time Quantum = 2) and Q2\nuses FCFS.\nProcess\nQueue Number\nConstruct Gantt -Chart and compute average TAT for above scenario.\nWhat is multithreading? Explain five state process model with figure.",
           "marks": "8",
           "chapter": "Process Management",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 3,
-          "text": "a)\nWhy process need to be synchronized? Explain Peterson's Solution in mutual\nexclusion.\nWhat is Semaphore? How can Producer Consumer problem be solved using\nSemaphore? Explain.",
+          "text": "\n(a) Why process need to be synchronized? Explain Peterson's Solution in mutual\nexclusion.\nWhat is Semaphore? How can Producer Consumer problem be solved using\nSemaphore? Explain.",
           "marks": "8",
           "chapter": "Process Communication and Synchronization",
           "isDiagram": false
         },
         {
           "qNum": 4,
-          "text": "a)\nWhy multilevel paging is required?\n\n(b) Consider the following page reference string: 5,0,2,1,0,3,0,2,4,3,0,3,2,1,3,0,1,5\nCalculate page hit percentage. How many page faults would occur for the FIFO,\nOptimal, LFU and LRU replacement algorithms having four frames? Remember all\nframes are initially empty, so your first unique page will cost one fault each.",
+          "text": "\n(a) Why multilevel paging is required?\n\n(b) Consider the following page reference string: 5,0,2,1,0,3,0,2,4,3,0,3,2,1,3,0,1,5\nCalculate page hit percentage. How many page faults would occur for the FIFO,\nOptimal, LFU and LRU replacement algorithms having four frames? Remember all\nframes are initially empty, so your first unique page will cost one fault each.",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
@@ -1652,7 +1806,7 @@
         },
         {
           "qNum": 6,
-          "text": "What are the functions of device independent I/Q software? Suppose that a disk has 5000\ncylinders, numbered from 0 to 4999. The drive is currently serving a request at cylinder\n143, and the previous request was at cylinder 125. The queue of pending requests in FIFO\norder is:\n86,1470,913,1774,948,1509,1022,1750,130\nStarting from the current head position, what is the total distance (in cylinders) that the\ndisk arm moves to satisfy all the pending requests, for FCFS, SSTF, C-SCAN and\nC-LOOK Algorithm?",
+          "text": "Suppose a disk drive has 200 tracks (numbered 0-199). The read/write head is currently serving a request at track 53 (or 60) and previous request was at track 54. The queue of pending requests in FIFO order is: 98, 183, 37, 122, 14, 124, 65, 67. Calculate the total head movement (seek distance in cylinders) for: (a) FCFS, (b) SSTF, (c) SCAN, and (d) C-LOOK algorithms.",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
@@ -1682,7 +1836,7 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "What is an Operating system? Explain the statement \"operating system acts as a Broker\nbetweenhardwareand applicationprogram\".",
+          "text": "What is $a^n$ Operating system? Explain the statement \"operating system acts as a Broker\nbetweenhardwareand applicationprogram\".",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
@@ -1745,7 +1899,7 @@
         },
         {
           "qNum": 10,
-          "text": "What is DMA? Explain how I/O takes place through DMA? Suppose the head of a\nmoving -- head disk with 200 tracks, numbered 0 to 199 is currently serving a request at\ntracks 143 and has finished a request at track 125. The queue it requests is kept in the\nFIF0 order 25, 17, 119, 197, 194, 15, 182, 115, 183. What is the total movement needed\nto satisfy these requests for the following disk-scheduling algorithms?",
+          "text": "What is DMA? Explain how I/O takes place through DMA? Suppose the head of a\nmoving - head disk with 200 tracks, numbered 0 to 199 is currently serving a request at\ntracks 143 and has finished a request at track 125. The queue it requests is kept in the\nFIF0 order 25, 17, 119, 197, 194, 15, 182, 115, 183. What is the total movement needed\nto satisfy these requests for the following disk-scheduling algorithms?",
           "marks": "8",
           "chapter": "Process Management",
           "isDiagram": false
@@ -1789,7 +1943,7 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "What is the purpose of a system call in an operating system? Describe the impact of\nunderlying hardware architecture on structure of operating systems from evolutionary\nperspectives.",
+          "text": "What is the purpose of a system call in $a^n$ operating system? Describe the impact of\nunderlying hardware architecture on structure of operating systems from evolutionary\nperspectives.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
@@ -1831,27 +1985,34 @@
         },
         {
           "qNum": 7,
-          "text": "Suppose a disk drive with 150 cylinders numbered 0-149. The drive is currently serving a\nrequest at 35 and previous request was at 120. The queue of pending request is 98, 103,\n38, 122, 10, 128, 65, and 75. Starting from the current head position, calculate the total\nhead moment (in cylinder) that the disk arm moves to satisfy all the pending request for\nSSTF, SCAN, C-SCAN, LOOK and FCFS disk arm scheduling algorithm.",
-          "marks": "8",
+          "text": "Suppose a disk drive with 150 cylinders numbered 0-149. The drive is currently serving a\nrequest at 35 and previous request was at 120. The queue of pending request is 98, 103,\n38, 122, 10, 128, 65, and",
+          "marks": "5",
           "chapter": "Process Management",
           "isDiagram": false
         },
         {
           "qNum": 8,
+          "text": "Starting from the current head position, calculate the total\nhead moment (in cylinder) that the disk arm moves to satisfy all the pending request for\nSSTF, SCAN, C-SCAN, LOOK and FCFS disk arm scheduling algorithm.",
+          "marks": "5",
+          "chapter": "Process Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
           "text": "What is deadlock? Explain the essential condition for deadlock. How O.S. detects\ndeadlock and what does it do after defection?",
           "marks": "8",
           "chapter": "Process Communication and Synchronization",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 10,
           "text": "What is a trap door? Explain the firewalls and access control list.",
           "marks": "8",
           "chapter": "Security and System Administration",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 11,
           "text": "Write short notes on:\n\n(a) Duties and responsibilities of System Administrator\n\n(b) Thrashing",
           "marks": "8",
           "chapter": "Introduction",
@@ -1868,14 +2029,14 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "a) Why is the process table needed in a timesharing system? Is it also needed in personal\ncomputer systems running UNIX or Windows with a single user?\n\n(b) Distinguish between Shell and Kernel.\nWhat are the advantages and disadvantages of implementing threads in user space?",
+          "text": "\n(a) Why is the process table needed in a timesharing system? Is it also needed in personal\ncomputer systems running UNIX or Windows with a single user?\n\n(b) Distinguish between Shell and Kernel.\nWhat are the advantages and disadvantages of implementing threads in user space?",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
           "qNum": 2,
-          "text": "a)\n\n(b) Let us consider five processes with given arrival time and length of the CPU burst\ngiven in milliseconds.\nProcess\nArrival time\nCPU time\nCalculate the turnaround time and waiting time for all processes applying First Come\nFirst Serve, Shortest Job first and Round Robin (time quantum =- 3) algorithms.",
+          "text": "\n(a) (b) Let us consider five processes with given arrival time and length of the CPU burst\ngiven in milliseconds.\nProcess\nArrival time\nCPU time\nCalculate the turnaround time and waiting time for all processes applying First Come\nFirst Serve, Shortest Job first and Round Robin (time quantum =- 3) algorithms.",
           "marks": "8",
           "chapter": "Process Management",
           "isDiagram": false
@@ -1889,41 +2050,48 @@
         },
         {
           "qNum": 4,
-          "text": "a) Differentiate between Compaction and Coalescing technique.\n\n(b) Consider a swapping system in which memory consists of the following hole sizes in\nmemory order: 10 MB, 4 MB, 20 MB, 18 MB, 7 MB, 9 MB, 12 MB and 15 MB.\nWhichholeis takenfor successive segment requests of\n(i) 12 MB\n(ii) 10 MB\n(iii) 9 MB\nfor first fit? Now repeat the question for best fit and worse fit.",
+          "text": "\n(a) Differentiate between Compaction and Coalescing technique.\n\n(b) Consider a swapping system in which memory consists of the following hole sizes in\nmemory order: 10 MB, 4 MB, 20 MB, 18 MB, 7 MB, 9 MB, 12 MB and 15 MB.\nWhichholeis takenfor successive segment requests of\n(i) 12 MB\n(ii) 10 MB\n(iii) 9 MB\nfor first fit? Now repeat the question for best fit and worse fit.",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
           "qNum": 5,
-          "text": "a) Explain various ways of implementing file system.\n\n(b) How do you measure the file system performance and how it can be improved?",
+          "text": "\n(a) Explain various ways of implementing file system.\n\n(b) How do you measure the file system performance and how it can be improved?",
           "marks": "8",
           "chapter": "File Systems",
           "isDiagram": false
         },
         {
           "qNum": 6,
-          "text": "What do you mean by RAID? Suppose a disk with 200 cylinders numbered from 0-199.\nThe drive is currently serving a request at 45 and previous request was at 125. The queue\nof pending request is 105, 178, 23, 67, 43, 78, 167, 56 and 98. Starting from current head\nposition, calculate the total head movement (in cylinder) that the disk arm moves to\nsatisfy all pending request for SSTF, SCAN, LOOK and C-SCAN disk scheduling\nalgorithm.",
-          "marks": "8",
+          "text": "What do you mean by RAID? Suppose a disk with 200 cylinders numbered from 0-199.\nThe drive is currently serving a request at 45 and previous request was at 125. The queue\nof pending request is 105, 178, 23, 67, 43, 78, 167, 56 and",
+          "marks": "5",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
           "qNum": 7,
+          "text": "Starting from current head\nposition, calculate the total head movement (in cylinder) that the disk arm moves to\nsatisfy all pending request for SSTF, SCAN, LOOK and C-SCAN disk scheduling\nalgorithm.",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
           "text": "Explain in detail how can detect deadlock in operating system. Consider the following\nsystem with resources A, B, C, D and process PO to P4. Is the state safe? If so, show the\nsafeexecution ofprocesses.\nProcess\nAllocation\nAvailable",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 9,
           "text": "Write short notes on Caesar Cipher and Access Control Lists.",
           "marks": "8",
           "chapter": "Security and System Administration",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 10,
           "text": "What is the significance of system Administration? Describe the roles and responsibilities\nof system administrator in Insurance Company.",
           "marks": "8",
           "chapter": "Security and System Administration",
@@ -1940,34 +2108,41 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "a) What is an Operating system? Explain the functions of Operating System.\n\n(b) Explain why exo-kernel doesnot require re-mapping of resources, Is layered structure of\noperating system is better than monolithic structure? Explain.",
+          "text": "\n(a) What is $a^n$ Operating system? Explain the functions of Operating System.\n\n(b) Explain why exo-kernel doesnot require re-mapping of resources, Is layered structure of\noperating system is better than monolithic structure? Explain.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
           "qNum": 2,
-          "text": "a), Difference between process and thread. Explain how multi-threading provide better\nsolution than single threading solution.\n\n(b) Schedule the following set of process according to HRRN and Round-Robin scheduling a\nalgorithm with Quantam time -- 4 ms and calculate the average waiting time and average\nTurn-around time.\nArrival time (ms)\nProcess\nCPU time (ms)",
+          "text": "\n(a) , Difference between process and thread. Explain how multi-threading provide better\nsolution than single threading solution.\n\n(b) Schedule the following set of process according to HRRN and Round-Robin scheduling a\nalgorithm with Quantam time - 4 ms and calculate the average waiting time and average\nTurn-around time.\nArrival time (ms)\nProcess\nCPU time (ms)",
           "marks": "8",
           "chapter": "Process Management",
           "isDiagram": false
         },
         {
           "qNum": 3,
-          "text": "a)\nWhat is race condition and Mutual Exclusion? Explain how Sleep () and Wakeup ()\nsolution is better than busy waiting solution for critical section problem.\nWhat is TSL? Why it is used? Explain the types of semaphore along with the major\noperations of semaphore with a simple Pseudocode.",
+          "text": "\n(a) What is race condition and Mutual Exclusion? Explain how Sleep () and Wakeup ()\nsolution is better than busy waiting solution for critical section problem.\nWhat is TSL? Why it is used? Explain the types of semaphore along with the major\noperations of semaphore with a simple Pseudocode.",
           "marks": "8",
           "chapter": "Process Communication and Synchronization",
           "isDiagram": false
         },
         {
           "qNum": 4,
-          "text": "a)\nWhat is Associative memory and Thrashing? Write the difference' between Coalescing\nand Compaction.\n\n(b) What is Demand paging? 'Consider the following page reference Strings:\n2,3,4,2,1,3,7,5,4,3,1,5. Find how many page fault occur according to OPTIMAL, LRU\n(least recently. used). and LFU (least. frequently used) page replacement algorithm :\nassuming 3 page frames. :\nWhat is file attribute? List the File System performance indicator. Explain the file allocation\nmethods with its advantages and disadvantages. Also suggest which file organization\n[1+2+6+1]\ntechnique is most appropriate for \"tape storage\"?\nSuppose a disk drive with 150 cylinder numbered from 0-149. The drive is currently serving.a\nrequest at 35 and the previous request is at disk 55. The queue of pending request is\n98,103,38,122,10,128,65,75. Starting from the current head position. Calculate the total head\nmoment (in cylinder) that the disk arm moves to satisfy all the pending request for SSF,\nSCANand LOOK Disk Arm Scheduling Algorithm.",
-          "marks": "10",
+          "text": "\n(a) What is Associative memory and Thrashing? Write the difference' between Coalescing\nand Compaction.\n\n(b) What is Demand paging? 'Consider the following page reference Strings:\n2,3,4,2,1,3,7,5,4,3,1,5. Find how many page fault occur according to OPTIMAL, LRU\n(least recently. used). and LFU (least. frequently used) page replacement algorithm :\nassuming 3 page frames. :\nWhat is file attribute? List the File System performance indicator. Explain the file allocation\nmethods with its advantages and disadvantages. Also suggest which file organization\n[1+2+6+1]\ntechnique is most appropriate for \"tape storage\"?\nSuppose a disk drive with 150 cylinder numbered from 0-149. The drive is currently serving.a\nrequest at 35 and the previous request is at disk",
+          "marks": "5",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 5,
+          "text": "The queue of pending request is\n98,103,38,122,10,128,65,75. Starting from the current head position. Calculate the total head\nmoment (in cylinder) that the disk arm moves to satisfy all the pending request for SSF,\nSCANand LOOK Disk Arm Scheduling Algorithm.",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
           "text": "What is Deadlock and livelock? Explain the necessary conditions for deadlock and Explain\nhow deadlock can be handled? Explain in brief about banker's solution for deadlock\navoidance. .\nExplain the types of Network Attacks? What is ACL? Why 'HASH' function is called\nMessage Digestor?\nWrite short notes on: (Any Two)\nRoles and duties of System Administration\n:d) Monitor\nPrinciples of VO Software\n\n(e) Belady's Anomaly\nProtection Matrix",
           "marks": "8",
           "chapter": "Security and System Administration",
@@ -1984,17 +2159,17 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "What is the role of system call in an operating system? Write down the major differences\nbetween following types of operating system.\n\n(a) Batch system\n\n(b) Interactive system\n\n(c) Real time system\n\n(d) Time sharing system",
+          "text": "What is the role of system call in $a^n$ operating system? Write down the major differences\nbetween following types of operating system.\n\n(a) Batch system\n\n(b) Interactive system\n\n(c) Real time system\n\n(d) Time sharing system",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
           "qNum": 2,
-          "text": "State 5- State process model. From the given following information:\nProcessBurst Timepriority\nAssume the processes arrived in the order pi, p2, p3, p4 and ps all time 0, priority 1 as\nhighest and 4 as lowest.\n\n(a) Draw the gantt chart\n\n(b) Calculate average waiting time and average turnaround time for the following\nscheduling algorithm.\n(i) Round robin (quantum= 1)\n(i) priority preemptive\n(iii)preemptiveSJF\n(iv) FCFS",
+          "text": "State 5- State process model. From the given following information:\nProcessBurst Timepriority\nAssume the processes arrived in the order pi, $p^2 , p^3 , p^4$ and ps all time 0, priority 1 as\nhighest and 4 as lowest.\n\n(a) Draw the gantt chart\n\n(b) Calculate average waiting time and average turnaround time for the following\nscheduling algorithm.\n(i) Round robin (quantum= 1)\n(i) priority preemptive\n(iii)preemptiveSJF\n(iv) FCFS",
           "marks": "8",
           "chapter": "Process Management",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 3,
@@ -2019,31 +2194,45 @@
         },
         {
           "qNum": 6,
-          "text": "What are the principles of I/0 software? Suppose that a disk drive has 100 cylinders,\nnumbered 0 to 99. The drive is currently serving a request at cylinder 43 and previous\nrequest was at cylinder 25. The queue of pending request, in FIFO order\nis:86,70,13,74,48,9,22,50,30\nProduce the schedules to satisfy all the pending requests for each of the foliowing disk\nscheduling algorithms: 1.FCFS 2.C-SCAN3.SSTF",
-          "marks": "8",
+          "text": "What are the principles of I/0 software? Suppose that a disk drive has 100 cylinders,\nnumbered 0 to",
+          "marks": "5",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
           "qNum": 7,
+          "text": "The drive is currently serving a request at cylinder 43 and previous\nrequest was at cylinder",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "The queue of pending request, in FIFO order\nis:86,70,13,74,48,9,22,50,30\nProduce the schedules to satisfy all the pending requests for each of the foliowing disk\nscheduling algorithms: 1.FCFS 2.C-SCAN3.SSTF",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
           "text": "Write four conditions for deadlock, Consider the following snapshot of a system:\nAllocation\nMaximum Claim\nProcess\nLet the available number of resources be given by available vectors as (3,3,2). Use\nBankers algorithm to claim that the system is in safe state and show the safe sequence.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 10,
           "text": "Describe, how access control list is used? What are the roles of system administrator for\nchange management?",
           "marks": "8",
           "chapter": "Security and System Administration",
           "isDiagram": false
         },
         {
-          "qNum": 9,
-          "text": "Write short notes on (AnyTwo):\ni)Publickeycryptography\nii) Resource allocation graph\nii) Process Vs thread",
+          "qNum": 11,
+          "text": "Write short notes on (AnyTwo):\\n(i) Publickeycryptography\\n(ii) Resource allocation graph\\n(ii) Process Vs thread",
           "marks": "8",
           "chapter": "Process Management",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     },
@@ -2062,37 +2251,44 @@
           "isDiagram": false
         },
         {
-          "qNum": 3,
+          "qNum": 2,
           "text": "Difference between process and thread. Explain how multi threading provide better\nsolution than single threading solution.",
           "marks": "8",
           "chapter": "Process Management",
           "isDiagram": false
         },
         {
-          "qNum": 4,
+          "qNum": 3,
           "text": "Consider the following set of process, with the length of the CPU burst time and arrival\ntime given in millisecond.\nProcessArrival TimeBurst Time\nscheduling. Also find average waiting time and average turn around time for each of the\nalgorithm.",
           "marks": "8",
           "chapter": "Process Management",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 4,
           "text": "How does a 'race condition' arrive in IPC? Explain the 'Sleeping Barber' problem. When\nsuch problem happen in system? Write a solution using any type of your own technique\nwith pseudocode example.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 5,
           "text": "What is associative memory and thrashing? Write the difference between coalescing and\ncompaction.",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
+          "qNum": 6,
+          "text": "What is Demand paging? Consider the following page reference Strings; 2, 3, 4, 2, 1, 3, 7,\n5, 4, 3, 1,",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
           "qNum": 7,
-          "text": "What is Demand paging? Consider the following page reference Strings; 2, 3, 4, 2, 1, 3, 7,\n5, 4, 3, 1, 5. Find how many page fault occur according to OPTIMAL, LRU (least\nrecently used) and LFU (least frequently used) page replacement algorithm assuming 3\npage frames.",
-          "marks": "8",
+          "text": "Find how many page fault occur according to OPTIMAL, LRU (least\nrecently used) and LFU (least frequently used) page replacement algorithm assuming 3\npage frames.",
+          "marks": "5",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
@@ -2104,14 +2300,14 @@
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 9,
           "text": "Explain in detail how you can detect deadlock in operating system. Consider a system\nwith 5 processes PO through P4 and three resources type A, B and C. Resources A has 7\ninstances, B has 2 and C has 6 instances. Suppose at time t0 we have following state:\nAllocation\nProcess\nRequest\nIs the state safe? If so, show the safe execution of the processes.\nSuppose P2 makes additional request of (1, 0, 1, 0), what will be the effect of this\nrequest to the system?\nl1. Explain the types of Network Attacks? What is ACL? Why 'HASH' function is called\nMessage Digester?",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 12,
+          "qNum": 10,
           "text": "Writeshortnotes on:\n\n(a) Semaphores\n\n(b) UNIX File System",
           "marks": "8",
           "chapter": "File Systems",
@@ -2128,7 +2324,7 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "a) What is an Operating system? Explain the functions of Operating System.\n\n(b) What is System Call? Explain the Monolithic and layered Architecture of operating\n. system. Explain which architecture is better among them and why?",
+          "text": "\n(a) What is $a^n$ Operating system? Explain the functions of Operating System.\n\n(b) What is System Call? Explain the Monolithic and layered Architecture of operating\n. system. Explain which architecture is better among them and why?",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
@@ -2138,7 +2334,7 @@
           "text": "Define Process and Threads. consider the following set of processes, with arrival time and\nthe length of CPU burst time given in millisecond as below:\nProcesses\nArrival time\nBurst time\n\n(a) Draw Gantt chart illustrating the execution of these processes using FCFS, SRTN and\nRR (Quantam  3) scheduling.\n\n(b) What is the waiting time and Turnaround time of each process for each of the\nscheduling algorithm?",
           "marks": "8",
           "chapter": "Process Management",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 3,
@@ -2149,41 +2345,55 @@
         },
         {
           "qNum": 4,
-          "text": "How DMA (Direct Memory Access) increases the system consistency? Suppose a disk\ndrive with 150 cylinder numbered from 0-149. The drive is currently serving a request at\n35. The queue of pending request is 98, 103, 38, 122, 10, 128, 65, 75. Starting from the\ncurrent head position, Calculate the total head moment (in cylinder) that the disk arm\nmoves to satisfy all the pending request for SSF, SCAN and LOOK Disk Arm Scheduling\nAlgorithm.",
-          "marks": "8",
+          "text": "How DMA (Direct Memory Access) increases the system consistency? Suppose a disk\ndrive with 150 cylinder numbered from 0-149. The drive is currently serving a request at",
+          "marks": "5",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
           "qNum": 5,
+          "text": "The queue of pending request is 98, 103, 38, 122, 10, 128, 65,",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
+          "text": "Starting from the\ncurrent head position, Calculate the total head moment (in cylinder) that the disk arm\nmoves to satisfy all the pending request for SSF, SCAN and LOOK Disk Arm Scheduling\nAlgorithm.",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
           "text": "Prepare a comparative note on the followings:\n\n(a) Virtual memory management using Paging versus Segmentation\n\n(b) File implementation using ‘Linked list Allocation with Table' versus I-node\n\n(c) Spooling versus Deadline Scheduling",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 8,
           "text": "What is Indefinite postponement? Is it different than dead lock? Write a brief comparison.\nConsider a system with 5 concurrent processes (P1, P2, P3, P4, P5) and four resource\ntypes ( Ri, R2, R3, R4) and their maximum availability are (6, 4, 5, 3) respectively.\nAllocation tableand Maximum claim table are as follows:\nAllocation\nMaximum Claim\nIs the system state safe? If so show the safe execution of the processes.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 7,
-          "text": "a) What are the security issues associated with Os? Discuss them.\n\n(b) Describe the roles and responsibilities of system administrator.",
+          "qNum": 9,
+          "text": "\n(a) What are the security issues associated with Os? Discuss them.\n\n(b) Describe the roles and responsibilities of system administrator.",
           "marks": "8",
           "chapter": "Security and System Administration",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 10,
           "text": "What is a 'File System' in any Os? What are the major operations required in any file?\nHow it is different with“Directory\"?",
           "marks": "8",
           "chapter": "File Systems",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 11,
           "text": "Writeshortnotes on:\n\n(a) Demand paging\n\n(b) Virtual machine\n\n(c) USB Storage\n\n(d) Protectionmatrix",
           "marks": "8",
           "chapter": "Hypervisors and Virtual Systems",
@@ -2200,48 +2410,48 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "a) Define Operating system. Explain OS as resource manager.\n\n(b) Discuss the properties of batch system and real time system.",
+          "text": "\n(a) Define Operating system. Explain OS as resource manager.\n\n(b) Discuss the properties of batch system and real time system.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
           "qNum": 2,
-          "text": "Differentiate between process and thread. a) Consider the following set of processes, with\narrival time and the length of CPU burst time given in millisecond as below:\nProcesses\nArrival time\nBurst time\ni) Draw Gantt chart illustrating the execution of these processes using FCFS, SRTN and RR\n(Quantum -- 2) scheduling.\nii) What is the waiting time and Turnaround time of each process for each of the scheduling\nalgorithm?",
+          "text": "Differentiate between process and thread. a) Consider the following set of processes, with\narrival time and the length of CPU burst time given in millisecond as below:\nProcesses\nArrival time\nBurst time\\n(i) Draw Gantt chart illustrating the execution of these processes using FCFS, SRTN and RR\n(Quantum - 2) scheduling.\\n(ii) What is the waiting time and Turnaround time of each process for each of the scheduling\nalgorithm?",
           "marks": "8",
           "chapter": "Process Management",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 3,
-          "text": "List some differences between internal fragmentation and external fragmentation. Define virtual\nmemory and explain how it is achieved by demand paging.\nfor following given reference string for three page frames: 7,0,1,2,0,3,0,4,2,3,0,3 for\ni) Least Recently Used page replacement algorithm.\ni) First in First Out page replacement algorithm\nii)Optimal Page Replacement algorithm\nadvantages and disadvantages.\nWhat do you mean by disk arm scheduling? Explain shortest seek first and elevator algorithm\nwith their advantages and limitations.",
+          "text": "List some differences between internal fragmentation and external fragmentation. Define virtual\nmemory and explain how it is achieved by demand paging.\nfor following given reference string for three page frames: 7,0,1,2,0,3,0,4,2,3,0,3 for\\n(i) Least Recently Used page replacement algorithm.\\n(i) First in First Out page replacement algorithm\\n(ii) Optimal Page Replacement algorithm\nadvantages and disadvantages.\nWhat do you mean by disk arm scheduling? Explain shortest seek first and elevator algorithm\nwith their advantages and limitations.",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 4,
           "text": "What do you mean by critical region problem? What requirements should be met by its\nsolution? Explain Peterson's solution to avoid race condition.",
           "marks": "8",
           "chapter": "Process Communication and Synchronization",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 5,
           "text": "Define deadlock. What are the conditions for resource deadlock? Explain some methods for\nrecovering from deadlocks.",
           "marks": "8",
           "chapter": "Process Communication and Synchronization",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 6,
           "text": "What are the security problems associated with Os? Explain ACL with its use in security.",
           "marks": "8",
           "chapter": "Process Communication and Synchronization",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 7,
           "text": "List out some system administration tasks in Os. Describe the roles and responsibilities of\nsystem administrator with example of each administrative task you listed.",
           "marks": "8",
           "chapter": "Security and System Administration",
@@ -2268,7 +2478,7 @@
           "text": "Define process in OS and explain possible states. Consider the following set of processes,\nwith the length of the CPU burst time in millisecond. The processes are assumed to have\narrived in the order P1, P2, P3, P4, P5 all at time 0. [Lowest Number being Highest\nPriorityl\nBurst Time\nProcess\nPriority\nDraw Gantt chart illustrating priority and RR (quantum = 1) scheduling. Also find\naverage waiting time and average turn-around time for each of the algorithms.",
           "marks": "8",
           "chapter": "Process Management",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 3,
@@ -2307,7 +2517,7 @@
         },
         {
           "qNum": 8,
-          "text": "What is the significance of system administration? Describe the role and responsibilities\nof system administrator to keep the system updated and efficient. Explain with an\nexample.",
+          "text": "What is the significance of system administration? Describe the role and responsibilities\nof system administrator to keep the system updated and efficient. Explain with $a^n$\nexample.",
           "marks": "8",
           "chapter": "Security and System Administration",
           "isDiagram": false
@@ -2321,7 +2531,7 @@
         },
         {
           "qNum": 10,
-          "text": "Write short notes:\n2x47\ni)  Thrashing\nii) Shell programming",
+          "text": "Write short notes:\n2x47\\n(i) Thrashing\\n(ii) Shell programming",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
@@ -2337,48 +2547,62 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "a)\nWhat is an Operating system? Explain the functions of Operating System.\n\n(b) What is a system call? Illustrate the execution of system call read O to read a file.",
+          "text": "\n(a) What is $a^n$ Operating system? Explain the functions of Operating System.\n\n(b) What is a system call? Illustrate the execution of system call read O to read a file.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
           "qNum": 2,
-          "text": "What is the real time scheduling? Consider the following set of process, with the length of\nthe burst time given in milliseconds: (Assume the system has two processors P and P2).\nProcess\nBurst time\nPriority\nThe processes are assumed to have arrived in order pl, p2, p3, p4, p5 all at time 0.\nCompute the AWT and ATAT for each of the scheduling algorithms. (1) FCFS (2) SJF\n(3) Pre-emptive priority (4) RR (q=1) scheduling.",
-          "marks": "8",
+          "text": "What is the real time scheduling? Consider the following set of process, with the length of\nthe burst time given in milliseconds: (Assume the system has two processors P and P2).\nProcess\nBurst time\nPriority\nThe processes are assumed to have arrived in order pl, $p^2 , p^3 , p^4 , p5$ all at time",
+          "marks": "5",
           "chapter": "Process Management",
           "isDiagram": false
         },
         {
           "qNum": 3,
-          "text": "a) What is race condition and Mutual Exclusion? List the requirements that a solution to\nsolve race condition should satisfy?\nHow can semaphore be used to enforce mutual exclusion? Give a suitable example.",
+          "text": "Compute the AWT and ATAT for each of the scheduling algorithms. (1) FCFS (2) SJF\n(3) Pre-emptive priority (4) RR (q=1) scheduling.",
+          "marks": "5",
+          "chapter": "Process Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) What is race condition and Mutual Exclusion? List the requirements that a solution to\nsolve race condition should satisfy?\nHow can semaphore be used to enforce mutual exclusion? Give a suitable example.",
           "marks": "8",
           "chapter": "Process Communication and Synchronization",
           "isDiagram": false
         },
         {
-          "qNum": 4,
-          "text": "a)\nWhat is TLB and Thrashing? Write the differences between Coalescing and\nCompaction. Provide examples of both.\n\n(b) What is the impact of size of page in virtual memory management performance?\nDefine internal and external fragmentation.",
+          "qNum": 5,
+          "text": "\n(a) What is TLB and Thrashing? Write the differences between Coalescing and\nCompaction. Provide examples of both.\n\n(b) What is the impact of size of page in virtual memory management performance?\nDefine internal and external fragmentation.",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 6,
           "text": "What is File attribute? List the File System performance indicator. Explain all the ways\nhow file system can be implemented and suggest which implementation of file system is\nbetter and why?\n[1+2+6+1]",
           "marks": "10",
           "chapter": "File Systems",
           "isDiagram": false
         },
         {
-          "qNum": 6,
-          "text": "Suppose a disk drive with 150 cylinder numbered from 0-149. The drive is currently\nserving a request at 35 and previous request was at 120. The queue of pending request is\n98, 103, 38, 122, 10, 128, 65, 75. Starting from the current head position, Calculate the\ntotal head moment (in cylinder) that the disk arm moves to satisfy all the pending request\nfor SSTF, SCAN, C-SCAN, LOOK and FCFS Disk Arm Scheduling Algorithm.",
-          "marks": "8",
+          "qNum": 7,
+          "text": "Suppose a disk drive with 150 cylinder numbered from 0-149. The drive is currently\nserving a request at 35 and previous request was at 120. The queue of pending request is\n98, 103, 38, 122, 10, 128, 65,",
+          "marks": "5",
           "chapter": "Process Management",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 8,
+          "text": "Starting from the current head position, Calculate the\ntotal head moment (in cylinder) that the disk arm moves to satisfy all the pending request\nfor SSTF, SCAN, C-SCAN, LOOK and FCFS Disk Arm Scheduling Algorithm.",
+          "marks": "5",
+          "chapter": "Process Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
           "text": "Write four necessary conditions for deadlock. Consider the following snapshot of a\nsystem,\nProcess\nAllocation\nLet the available number of resources be given by available vectors as (3, 3, 2). Use\nBanker's algorithm to claim that the system is in safe state and show the safe sequence.\nBriefly explain the responsibilities of a System Admin.\nWrite short notes on:\n[2x3]\n\n(a) Public Key Crytography\n\n(b) Protection Domain",
           "marks": "8",
           "chapter": "Introduction",
@@ -2395,119 +2619,161 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "a) Explain multiprogramming, multiprocessing and distributed operating system.\n\n(b) Explain the virtual machine structure. What are the benefits over other operating\nsystem structure?",
+          "text": "\n(a) Explain multiprogramming, multiprocessing and distributed operating system.\n\n(b) Explain the virtual machine structure. What are the benefits over other operating\nsystem structure?",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
           "qNum": 2,
-          "text": "a) Difference between process and thread. Explain how thread based execution\nminimizes context switching problem of process based execution.\n\n(b) Suppose 5 processes are submitted at time 0.\nProcess\nBurst Time\nPriority\nShow the execution timeline of the processes using Gantt Chart for FCFS, SJF and\nRound Robin (q=5). Also calculate mean turnaround time in each case.",
-          "marks": "8",
+          "text": "\n(a) Difference between process and thread. Explain how thread based execution\nminimizes context switching problem of process based execution.\n\n(b) Suppose 5 processes are submitted at time",
+          "marks": "5",
           "chapter": "Process Management",
           "isDiagram": false
         },
         {
           "qNum": 3,
-          "text": "a) What is race condition? Explain how Sleep() and WakeupO) solution is better than\nbusy waiting solution for critical section problem.\n\n(b) What is TSL? Why it is used? Explain the major operations of semaphore with a\nsimple implementation as a class.",
+          "text": "Process\nBurst Time\nPriority\nShow the execution timeline of the processes using Gantt Chart for FCFS, SJF and\nRound Robin (q=5). Also calculate mean turnaround time in each case.",
+          "marks": "5",
+          "chapter": "Process Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "\n(a) What is race condition? Explain how Sleep() and WakeupO) solution is better than\nbusy waiting solution for critical section problem.\n\n(b) What is TSL? Why it is used? Explain the major operations of semaphore with a\nsimple implementation as a class.",
           "marks": "8",
           "chapter": "Process Communication and Synchronization",
           "isDiagram": false
         },
         {
-          "qNum": 4,
-          "text": "What is thrashing? Consider the following page-reference storing-\n7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0, 1. How many page faults woud occur for\nthe following page replacement algorithms, assuming 3 frames:-\n\n(a) FIFO\n\n(b) Optimalc) LRU\n\n(d) LFU",
-          "marks": "8",
+          "qNum": 5,
+          "text": "What is thrashing? Consider the following page-reference storing-\n7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0,",
+          "marks": "5",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 6,
+          "text": "How many page faults woud occur for\nthe following page replacement algorithms, assuming 3 frames:-\n\n(a) FIFO\n\n(b) Optimalc) LRU\n\n(d) LFU",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
           "text": "Discuss various file allocation and access methods. Compare their advantages and\ndisadvantages.",
           "marks": "8",
           "chapter": "File Systems",
           "isDiagram": false
         },
         {
-          "qNum": 6,
-          "text": "A disk drive has 50 cylinders, numbered 0 to 49. The drive is currently serving a request\nat cylinder 15, and the queue of pending requests, in FIFO order is 4,40, 11, 35, 7, 14.\nWhat is the total distance that the disk arm moves for the following algorithms:-\n\n(b) SSTFc) SCANd)LOOKe)C-SCAN\n\n(a) FCFS",
-          "marks": "8",
+          "qNum": 8,
+          "text": "A disk drive has 50 cylinders, numbered 0 to",
+          "marks": "5",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 9,
+          "text": "The drive is currently serving a request\nat cylinder 15, and the queue of pending requests, in FIFO order is 4,40, 11, 35, 7,",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 10,
+          "text": "What is the total distance that the disk arm moves for the following algorithms:-\n\n(b) SSTFc) SCANd)LOOKe)C-SCAN\n\n(a) FCFS",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 11,
           "text": "What is Deadlock and indefinite Postponement? Explain the necessary conditions for\ndeadlock and Explain how deadlock can be prevented? A system has 2 process and 3\nresources. Each process need maximum of two resources, IS deadlock possible? Explain.[1+1+3+3+2",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 8,
-          "text": "How authentication is an essential mechanism for maintaining security? Explain.",
+          "qNum": 12,
+          "text": "How authentication is $a^n$ essential mechanism for maintaining security? Explain.",
           "marks": "8",
           "chapter": "Security and System Administration",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 13,
           "text": "Write short notes on:\n[2x3]\n\n(a) Caesar Cipher\n\n(b) Administration tasks\nNewBack(2066&Laer)\nBacn\nExam.\nTime\n3 hrs.\n2073Magh",
           "marks": "8",
           "chapter": "Security and System Administration",
           "isDiagram": false
         },
         {
-          "qNum": 1,
-          "text": "a) Why Operating system is termed as virtual machine? Briefly mention the function of\nOperating system.\n\n(b) What is System Call? Explain in brief about the given architecture of operating\nsystem.\ni) Monolithic Architecture\ni) Virtual Machine",
+          "qNum": 14,
+          "text": "\n(a) Why Operating system is termed as virtual machine? Briefly mention the function of\nOperating system.\n\n(b) What is System Call? Explain in brief about the given architecture of operating\nsystem.\\n(i) Monolithic Architecture\\n(i) Virtual Machine",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 2,
-          "text": "a) Define process. Describe the various states of process. How significant is the process\nhierarchy?\n\n(b) Make a schedule as per Rate Monotonic (RM) algorithm for the following set of real\ntime tasks:\nPhase,0\nPeriod, P\nTask, T\nExecution time, E",
+          "qNum": 15,
+          "text": "\n(a) Define process. Describe the various states of process. How significant is the process\nhierarchy?\n\n(b) Make a schedule as per Rate Monotonic (RM) algorithm for the following set of real\ntime tasks:\nPhase,0\nPeriod, P\nTask, T\nExecution time, E",
           "marks": "8",
           "chapter": "Process Management",
           "isDiagram": false
         },
         {
-          "qNum": 3,
+          "qNum": 16,
           "text": "Define race condition. What are the requirements of mutual exclusion? Solve producer\nconsumer problem using semaphore and message passing.",
           "marks": "8",
           "chapter": "Process Communication and Synchronization",
           "isDiagram": false
         },
         {
-          "qNum": 4,
+          "qNum": 17,
           "text": "Under what circumstances do page fault occur? Consider the following page reference\nstring: 1, 2, 3, 4, 2, 1, 5, 6, 2, 3, 7, 6, 3, 2, 1, 2, 3, 6 how many page faults would occur for\nthe LRU replacement, FIFO replacement and optimal replacement algorithms by\nassuming three frames? Remember all frames are initially empty, so your first unique\npages will all cost one fault each.",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
-          "qNum": 5,
-          "text": "Suppose a disk drive with 200 cylinders numbered from 0 to 199. The drive is currently\nserving a request at 53. The queue of pending request is 98, 183, 37, 122, 14, 124, 65, 67.\nStarting from the current head position, Calculate total head movement (in cylinder) that\nthe disk arm moves to satisfy all the pending request for FCFS, SSF and SCAN disk\nscheduling algorithm.",
-          "marks": "8",
+          "qNum": 18,
+          "text": "Suppose a disk drive with 200 cylinders numbered from 0 to 199. The drive is currently\nserving a request at",
+          "marks": "5",
           "chapter": "Process Management",
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 19,
+          "text": "The queue of pending request is 98, 183, 37, 122, 14, 124, 65,",
+          "marks": "5",
+          "chapter": "Process Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 20,
+          "text": "Starting from the current head position, Calculate total head movement (in cylinder) that\nthe disk arm moves to satisfy all the pending request for FCFS, SSF and SCAN disk\nscheduling algorithm.",
+          "marks": "5",
+          "chapter": "Process Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 21,
           "text": "What is File Attribute? Write the difference between Single level directory system and\nHierarchial directory system. Explain how operating system manages free blocks of\nSecondary storage.",
           "marks": "8",
           "chapter": "File Systems",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 22,
           "text": "List four essential conditions for deadlock. Explain each of them briefly. What would be\nnecessary (in operating system) to prevent the deadlock? How deadlock is recovered?\n[o1]\nExplain.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 8,
-          "text": "Write short notes on:\ni) Protection Domain\ni) Cryptography\nii) System administration\niv) Dining philosopher problem",
+          "qNum": 23,
+          "text": "Write short notes on:\\n(i) Protection Domain\\n(i) Cryptography\\n(ii) System administration\\n(iv) Dining philosopher problem",
           "marks": "8",
           "chapter": "Security and System Administration",
           "isDiagram": false
@@ -2523,7 +2789,7 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "a) What are the primary purposes of an operating system? Explain. Why should the\noperating system prevent users from accessing the boot sector?\n\n(b) Explain in brief any four types of OS.",
+          "text": "\n(a) What are the primary purposes of $a^n$ operating system? Explain. Why should the\noperating system prevent users from accessing the boot sector?\n\n(b) Explain in brief any four types of OS.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
@@ -2537,14 +2803,14 @@
         },
         {
           "qNum": 3,
-          "text": "a) Explain Critical Section problem. Why is it important for a thread to execute a critical\nsection as quickly as possible?\n\n(b) Define Semaphore and explain the major operations in semaphore including\npseudocode.",
+          "text": "\n(a) Explain Critical Section problem. Why is it important for a thread to execute a critical\nsection as quickly as possible?\n\n(b) Define Semaphore and explain the major operations in semaphore including\npseudocode.",
           "marks": "8",
           "chapter": "Process Communication and Synchronization",
           "isDiagram": false
         },
         {
           "qNum": 4,
-          "text": "a) Differentiate compaction and Coalescing technique. How logical address is mapped to\nphysical address by Paging Technique? Explain with suitable example.\n\n(b) With an example, show that FIFO page replacement algorithm suffers from Belady's\nanomaly. What is thrashing?",
+          "text": "\n(a) Differentiate compaction and Coalescing technique. How logical address is mapped to\nphysical address by Paging Technique? Explain with suitable example.\n\n(b) With $a^n$ example, show that FIFO page replacement algorithm suffers from Belady's\nanomaly. What is thrashing?",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
@@ -2554,11 +2820,11 @@
           "text": "Briefly mention the structured IVO sofiware with suitable diagram. Compare the\nthroughput (overall performance) of SCAN with SSTF",
           "marks": "8",
           "chapter": "File Systems",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 6,
-          "text": "a) In what ways is file system management similar to virtual memory management?\nWhat are the advantages and disadvantages of a contiguous file allocation scheme?\n\n(b) List the file system performance indicators with brief explanation.",
+          "text": "\n(a) In what ways is file system management similar to virtual memory management?\nWhat are the advantages and disadvantages of a contiguous file allocation scheme?\n\n(b) List the file system performance indicators with brief explanation.",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
@@ -2572,7 +2838,7 @@
         },
         {
           "qNum": 8,
-          "text": "Write short notes on:\ni)Duties and responsibilities of system administration\nii) Types of security Attack\nii)Principleof I/OSoftware\niv) UNIX file system",
+          "text": "Write short notes on:\\n(i) Duties and responsibilities of system administration\\n(ii) Types of security Attack\\n(ii) Principleof I/OSoftware\\n(iv) UNIX file system",
           "marks": "8",
           "chapter": "Security and System Administration",
           "isDiagram": false
@@ -2588,14 +2854,14 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "Is layered structure of operating system better than monolithic structure? If yes, explain\nwith an example. If no, why?",
+          "text": "Is layered structure of operating system better than monolithic structure? If yes, explain\nwith $a^n$ example. If no, why?",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
           "qNum": 2,
-          "text": "a) What is process? Differentiate between process and thread.\n\n(b) Assume you have the following processes to execute with one processor.\nCPU burst\nProcess\nArrival time\nPriority\nPriority is defined as 1>2>3>4.\ni) Make the GANTT chart of the execution of these processes using preemptive priority and\nShortest remaining time first algorithm.\ni) Find out turnaround time, waiting time, and their average time of each process.",
+          "text": "\n(a) What is process? Differentiate between process and thread.\n\n(b) Assume you have the following processes to execute with one processor.\nCPU burst\nProcess\nArrival time\nPriority\nPriority is defined as 1>2>3>4.\\n(i) Make the GANTT chart of the execution of these processes using preemptive priority and\nShortest remaining time first algorithm.\\n(i) Find out turnaround time, waiting time, and their average time of each process.",
           "marks": "8",
           "chapter": "Process Management",
           "isDiagram": false
@@ -2623,7 +2889,7 @@
         },
         {
           "qNum": 6,
-          "text": "Suppose that a disk drive has 5000 cylinders, numbered 0 to 4999. The drive is currently\nserving a request at cylinder 143, and the previous request was at cylinder 125. The queue\nof pending requests, in FIFO order is:\n56, 1470, 913, 1774, 948, 1509, 1022, 1750, 130\nStarting from the current head position, what is the total distance (in cylinder) that the\ndisk arm moves to satisfy all the pending requests, for each of the following algorithms:\nFCFS, SCAN, LOOK, CSCAN, SSTF",
+          "text": "Suppose a disk drive has 200 tracks (numbered 0-199). The read/write head is currently serving a request at track 53 (or 60) and previous request was at track 54. The queue of pending requests in FIFO order is: 98, 183, 37, 122, 14, 124, 65, 67. Calculate the total head movement (seek distance in cylinders) for: (a) FCFS, (b) SSTF, (c) SCAN, and (d) C-LOOK algorithms.",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
@@ -2660,14 +2926,14 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "a) Explain the Virtual Machine Structure. What are the benefits over other operating\nsystem structure?\n\n(b) What is operating system? Briefly explain the function of operating system.",
+          "text": "\n(a) Explain the Virtual Machine Structure. What are the benefits over other operating\nsystem structure?\n\n(b) What is operating system? Briefly explain the function of operating system.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
           "qNum": 2,
-          "text": "a) Differentiate between process and thread. Explain the advantages of multithreading.\n\n(b) Schedule the following set of processes according to HRRN and Round Robin\nalgorithm (Time quantum=4) and calculate average waiting time and average\nturnaround time.\nProcess\nArrival Time\nCPU Time (ms)",
+          "text": "\n(a) Differentiate between process and thread. Explain the advantages of multithreading.\n\n(b) Schedule the following set of processes according to HRRN and Round Robin\nalgorithm (Time quantum=4) and calculate average waiting time and average\nturnaround time.\nProcess\nArrival Time\nCPU Time (ms)",
           "marks": "8",
           "chapter": "Process Management",
           "isDiagram": false
@@ -2731,23 +2997,30 @@
       "totalMarks": 24,
       "questions": [
         {
-          "qNum": 4,
+          "qNum": 1,
           "text": "What is residence monitor? Consider logical address spaces of eight pages of 1024 words,\neach mapped onto a physical memory of 32 frames then.\n\n(a) How many bits are in logical address?\n\n(b) How many bits are in physical address?",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 2,
           "text": "What is file and their attributes? Briefly explain the file allocation methods.",
           "marks": "8",
           "chapter": "File Systems",
           "isDiagram": false
         },
         {
-          "qNum": 6,
-          "text": "Consider a disk drive having 200 cylinders, numbered from 0 to 199. The head is\ncurrentiy positioned at cylinder 53. and moving toward the cylinder 60. The queue of\nposition, what is the totai head movement (in cylinders) to service the pending requests\nfor each of.the following disk arm scheduling algorithms? (a) FCFS (b) SSTF (c) SCAN\n\n(d) LOOK (e) C-SCAN.\nWhat does.it'do affer'detection?.\nWrite short notes on:\n[3x3]\n\n(a) Shell Scripts\n\n(b) . Cryptograpny\n\n(c) BecurityPolicy",
-          "marks": "8",
+          "qNum": 3,
+          "text": "Consider a disk drive having 200 cylinders, numbered from 0 to 199. The head is\ncurrentiy positioned at cylinder 53. and moving toward the cylinder",
+          "marks": "5",
+          "chapter": "Process Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
+          "text": "The queue of\nposition, what is the totai head movement (in cylinders) to service the pending requests\nfor each of.the following disk arm scheduling algorithms? (a) FCFS (b) SSTF (c) SCAN\n\n(d) LOOK (e) C-SCAN.\nWhat does.it'do affer'detection?.\nWrite short notes on:\n[3x3]\n\n(a) Shell Scripts\n\n(b) . Cryptograpny\n\n(c) BecurityPolicy",
+          "marks": "5",
           "chapter": "Process Management",
           "isDiagram": false
         }
@@ -2762,7 +3035,7 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "What is the role of supervise call in an operating system? Write down the major\ndifferences between following types of operating system.\n\n(a) Batch System\n\n(b) InteractiveSystem\n\n(c) Real Time System\n\n(d) Time Sharing System",
+          "text": "What is the role of supervise call in $a^n$ operating system? Write down the major\ndifferences between following types of operating system.\n\n(a) Batch System\n\n(b) InteractiveSystem\n\n(c) Real Time System\n\n(d) Time Sharing System",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
@@ -2797,7 +3070,7 @@
         },
         {
           "qNum": 6,
-          "text": "Consider a system with 5 processes Po through P4 and three resources types A, B, C.\nResources types A has 7 instances, B has 2 and C has 6 instances. Suppose at t0 time we\nhavefollowing state:\nAllocation\nRequest\nAvailable\nProcess\nIs the given system in deadlock state?\nSuppose P2 makes an additional request (0, 0, 1) what will be the effect of this request\nto the system?",
+          "text": "Consider a system with 5 processes Po through P4 and three resources types A, B, C.\nResources types A has 7 instances, B has 2 and C has 6 instances. Suppose at t0 time we\nhavefollowing state:\nAllocation\nRequest\nAvailable\nProcess\nIs the given system in deadlock state?\nSuppose P2 makes $a^n$ additional request (0, 0, 1) what will be the effect of this request\nto the system?",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
@@ -2820,7 +3093,7 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "Explain operating system as an extended machine? Distinguish between Kernel and\nMicro-Kernel. Explain the purpose of system call.",
+          "text": "Explain operating system as $a^n$ extended machine? Distinguish between Kernel and\nMicro-Kernel. Explain the purpose of system call.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
@@ -2841,34 +3114,55 @@
         },
         {
           "qNum": 4,
-          "text": "What is page fault? Consider the following page reference string: 1, 2, 3, 4, 2, 1, 5, 6, 2,\n1, 2, 3, 7, 6, 3, 2, 1, 2, 3, 6. How many page faults would occur for the FIFO, Optimal,\nLFU and LRU replacement algorithms having five frames? Remember all frames are\ninitially empty, so your first unique page will cost one fault each.\nmanagement techniques.",
-          "marks": "8",
+          "text": "What is page fault? Consider the following page reference string: 1, 2, 3, 4, 2, 1, 5, 6, 2,\n1, 2, 3, 7, 6, 3, 2, 1, 2, 3,",
+          "marks": "5",
+          "chapter": "I/O and Memory Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "How many page faults would occur for the FIFO, Optimal,\nLFU and LRU replacement algorithms having five frames? Remember all frames are\ninitially empty, so your first unique page will cost one fault each.\nmanagement techniques.",
+          "marks": "5",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
           "qNum": 6,
-          "text": "Suppose that a disk drive has 100 cylinders, numbered 0 to 99. The drive is currently\nserving a request at cylinder 43, and previous request was at cylinder 25. The queue of\npending request, in FIFO order is:\n86, 70, 13, 74, 48, 9, 22, 50, 30\nStarting from the current head position, what is the total distance (in cylinders) that the\ndisk arm moves to satisfy all pending requests for each of the following disk scheduling\naigorithms?\nFirst-come, First served\nShortest Seek Time First\nLook\nC-Scan\nScan",
-          "marks": "8",
+          "text": "Suppose that a disk drive has 100 cylinders, numbered 0 to",
+          "marks": "5",
           "chapter": "Process Management",
           "isDiagram": false
         },
         {
           "qNum": 7,
+          "text": "The drive is currently\nserving a request at cylinder 43, and previous request was at cylinder",
+          "marks": "5",
+          "chapter": "Process Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
+          "text": "The queue of\npending request, in FIFO order is:\n86, 70, 13, 74, 48, 9, 22, 50, 30\nStarting from the current head position, what is the total distance (in cylinders) that the\ndisk arm moves to satisfy all pending requests for each of the following disk scheduling\naigorithms?\nFirst-come, First served\nShortest Seek Time First\nLook\nC-Scan\nScan",
+          "marks": "5",
+          "chapter": "Process Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 9,
           "text": "What is deadlock? How it occurs? Explain various deadlock avoidance methods with\nexamples.",
           "marks": "8",
           "chapter": "Process Communication and Synchronization",
           "isDiagram": false
         },
         {
-          "qNum": 8,
-          "text": "- What are the roles of system administrators for an organization? How can you increase\noperating system performance if you are selected as a system administrator?",
+          "qNum": 10,
+          "text": "- What are the roles of system administrators for $a^n$ organization? How can you increase\noperating system performance if you are selected as a system administrator?",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 11,
           "text": "Write short notes on: (any two)\n\n(a) Information security model\n\n(b) Security attack",
           "marks": "8",
           "chapter": "Security and System Administration",
@@ -2895,7 +3189,7 @@
           "text": "Consider the following set of process with the length of the CPU burst time given in\nmillisecond.\nProcess\nBurst time\nPriority\nAssume the processes arrived in the order P1, P2, P3, P4 and P5 all at time 0, priority 1 as\nhighest and 4 as lowest.\n\n(a) Draw the Gantt chart for FCFS, SJF, Priority and Round Robin (Quantum = 2)\n\n(b) Which algorithm results in the maximum average waiting time?",
           "marks": "8",
           "chapter": "Process Management",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 3,
@@ -2919,21 +3213,21 @@
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 6,
           "text": "What is deadlock? State the necessary conditions for deadlock to occur. Give reason, why\nall conditions are necessary.",
           "marks": "8",
           "chapter": "Process Communication and Synchronization",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 7,
           "text": ".Explain the domain-object and ACL. How these mechanisms are implemented for\nsecurity?",
           "marks": "8",
           "chapter": "Security and System Administration",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 8,
           "text": "Write short notes:\n\n(a) Roles of System Administration\n\n(b) Shell Scripts",
           "marks": "8",
           "chapter": "Security and System Administration",
@@ -2950,45 +3244,52 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "What is pipe and shell? Describe the role of an operating system as a resource manager.\nExplain dining philosopher problem. How can it be solved?\nWhat is deadlock? Discuss the necessary conditions for deadlock with examples.\nWhat are the performance criteria for CPU? Assume you have the following jobs to\nexecute with one processor.\nBurst Time\nArrival Time\nSuppose a system uses round-robin scheduling with quantum of 15 sec.\n\n(a) Draw the Gantt chart\n\n(b) Find the average wait and turnaround time",
+          "text": "What is pipe and shell? Describe the role of $a^n$ operating system as a resource manager.\nExplain dining philosopher problem. How can it be solved?\nWhat is deadlock? Discuss the necessary conditions for deadlock with examples.\nWhat are the performance criteria for CPU? Assume you have the following jobs to\nexecute with one processor.\nBurst Time\nArrival Time\nSuppose a system uses round-robin scheduling with quantum of 15 sec.\n\n(a) Draw the Gantt chart\n\n(b) Find the average wait and turnaround time",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 2,
           "text": "What is optimal page replacement algorithm? Suppose that a total of 64MB memory is\navailable in a system. This memory space is partitioned into 8 fixed size slots of 8MB\neach. Assume 8 processes are currently requesting memory usages with size indicated\nbelow.\n2MB, 4MB, 3MB, 7MB, 9MB, 1MB, 8MB\nCalculate the size of memory wasted due to extermal and internal fragmentation and\nmemory utilization ratio.",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 3,
           "text": "What is LRU algorithm? How many page faults would occurs for the following reference\nstring for page frames using LRU algorithm.\n1,2,3,4,5,5,3,4,1,6,7,8,7,8,9,5,4,5,4,2",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 4,
           "text": "State the advantages and disadvantages of placing the functionality in a device controller\nthan in kernel. Explain in detail about DMA.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 5,
           "text": "What are the attacks from inside? Explain about Malware and Spyware.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 9,
-          "text": "What is file system layout? Compare I-Node with linked list.\n1 0. What are the advantages of UNIX? Draw the structure of Unix operating system.",
-          "marks": "8",
+          "qNum": 6,
+          "text": "What is file system layout? Compare I-Node with linked list.\n1",
+          "marks": "5",
           "chapter": "File Systems",
-          "isDiagram": true
+          "isDiagram": false
+        },
+        {
+          "qNum": 7,
+          "text": "What are the advantages of UNIX? Draw the structure of Unix operating system.",
+          "marks": "5",
+          "chapter": "File Systems",
+          "isDiagram": false
         }
       ]
     },
@@ -3001,7 +3302,7 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "What are the functions of an operating system? Explain about microkernel.",
+          "text": "What are the functions of $a^n$ operating system? Explain about microkernel.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
@@ -3029,24 +3330,24 @@
         },
         {
           "qNum": 5,
-          "text": "What is a critical reason and race condition? What are the limitation of optimal page\nreplacement algorithm?\nWhat is segmentation? Suppose a machine has 48 bit virtual addresses and 32 bit physical\naddress.\n\n(a) If pages are 4KB, How many entries are in the page table?\n\n(b) Suppose the same system has a TLB (Translation Look a side buffer) with 32 entries.\nFurthermore suppose that a program contains instructions that fit into one page and it\nsequentially reads long integer elements from an array that spans thousands of pages.\nHow effective will the TLB for this case?\nWhat is a file system layout? Explain about I- Node and file system backup.\nWhat is a interleaving? Consider a Winchester - style hard disc with 100 cylinders, four\ndouble - sided platters and 25 sectors per track. The following is the (time -- ordered)\nsequence of requests for disc sectors: (3518, 1846, 8924, 6672, 1590, 4126, 107, 9750,\n158, 6621, 446, 11) The disc arm is currently at cylinder 10, moving towards 100. For\neach of SSTF, SCAN and C-SCAN, give the order in which the above requests would be\nserved.",
+          "text": "What is a critical reason and race condition? What are the limitation of optimal page\nreplacement algorithm?\nWhat is segmentation? Suppose a machine has 48 bit virtual addresses and 32 bit physical\naddress.\n\n(a) If pages are 4KB, How many entries are in the page table?\n\n(b) Suppose the same system has a TLB (Translation Look a side buffer) with 32 entries.\nFurthermore suppose that a program contains instructions that fit into one page and it\nsequentially reads long integer elements from $a^n$ array that spans thousands of pages.\nHow effective will the TLB for this case?\nWhat is a file system layout? Explain about I- Node and file system backup.\nWhat is a interleaving? Consider a Winchester - style hard disc with 100 cylinders, four\ndouble - sided platters and 25 sectors per track. The following is the (time - ordered)\nsequence of requests for disc sectors: (3518, 1846, 8924, 6672, 1590, 4126, 107, 9750,\n158, 6621, 446, 11) The disc arm is currently at cylinder 10, moving towards 100. For\neach of SSTF, SCAN and C-SCAN, give the order in which the above requests would be\nserved.",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 6,
           "text": "What is a trap door? Explain in firewalls and access control lists.",
           "marks": "8",
           "chapter": "Security and System Administration",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 7,
           "text": "What are the goals of UNIX? Explain about NFS protocol and draw the structure of NFS. [2+6]",
           "marks": "8",
           "chapter": "File Systems",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     },
@@ -3059,7 +3360,7 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "How operating system creates abstraction? Explain with reference to OS as an extended\nmachine. Define system call and explain its working mechanism with suitable example.",
+          "text": "How operating system creates abstraction? Explain with reference to OS as $a^n$ extended\nmachine. Define system call and explain its working mechanism with suitable example.",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
@@ -3072,28 +3373,42 @@
           "isDiagram": false
         },
         {
-          "qNum": 4,
+          "qNum": 3,
           "text": "What is page fault? Assume that a virtual memory of size 64K is mapped to physical memory\nof 32K with page frame 4K. Initially, pages are mapped as: 0,1,2,3,4,5,9,11 correspond to\n2,1,6,0,4,3,5,7 respectively. Calculate outgoing physical address for incoming virtual address\n20482 with necessary mapping diagrams.",
           "marks": "8",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 4,
           "text": "How file system can be implemented using linked list? Explain impact of block size selection\non data rate and disk space utilization with necessary diagram and illustration.",
           "marks": "8",
           "chapter": "File Systems",
-          "isDiagram": true
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
+          "text": "Explain working mechanism of device driver? Suppose a disk drive with 200 cylinders,\nnumbered from 0 to 199. The drive is currently serving a request at cylinder",
+          "marks": "5",
+          "chapter": "Process Management",
+          "isDiagram": false
         },
         {
           "qNum": 6,
-          "text": "Explain working mechanism of device driver? Suppose a disk drive with 200 cylinders,\nnumbered from 0 to 199. The drive is currently serving a request at cylinder 53. The queue of\npending requests is: 98, 183, 37, 122, 14, 124, 65, 67. Starting from the current head position,\ncalculate total distances (in cylinders) that the disk arm moves to satisfy all a pending requests\nfor FCFS , SSF and SCAN disk scheduling algorithms.",
-          "marks": "8",
+          "text": "The queue of\npending requests is: 98, 183, 37, 122, 14, 124, 65,",
+          "marks": "5",
           "chapter": "Process Management",
           "isDiagram": false
         },
         {
           "qNum": 7,
+          "text": "Starting from the current head position,\ncalculate total distances (in cylinders) that the disk arm moves to satisfy all a pending requests\nfor FCFS , SSF and SCAN disk scheduling algorithms.",
+          "marks": "5",
+          "chapter": "Process Management",
+          "isDiagram": false
+        },
+        {
+          "qNum": 8,
           "text": "Write four conditions for deadlock. A system has four processes P1, P2, P3, P4 and three\nresources R1, R2, R3 with existing resource E= (15 9 5). After following allocation, resource\navailable becomes A = (3 2 0). Use Banker's algorithm to test whether the given state is safe\nor not. If it is safe state, show the sequence of execution of processes.\nMaximum\nAllocation\nNeed\nR1 R2\nsystem administrator of CIT, Pulchowk campus, Detail your roles and also suggest the blowing\nideas to maintain secure and reliable system.",
           "marks": "8",
           "chapter": "Introduction",

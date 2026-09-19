@@ -476,7 +476,7 @@
           "text": "Compare circuit switching and packet switehing. Describe FDM and TDM hierarchies in\nblock.",
           "marks": "8",
           "chapter": "Physical Layer",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 3,
@@ -490,11 +490,11 @@
           "text": "Compare the IPv4 header fields and function with neat diagram. List the extension header\nordering.",
           "marks": "8",
           "chapter": "Data Link Layer",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 5,
-          "text": "Suppose a company has an IP address on 150.10.0.0 having 6 departments containing\n2020, 50, 507, 1010, 225, and 58 hosts. As a network engineer, design an IP plan for the\nnetwork using VLSM. List out the CIDR, subnet mask, network ID, broadcast ID usable\nhost IP ranges and wasted IP address for each department.",
+          "text": "Suppose a company has an assigned network IP address 150.10.0.0/16 (or 202.35.91.32/25) with 6 departments containing 1010, 505, 225, 107, 60, and 45 hosts. As a network engineer, design an IP addressing plan using Variable Length Subnet Masking (VLSM). List out the CIDR prefix, subnet mask, network ID, broadcast ID, usable host IP address range, and number of wasted IP addresses for each department.",
           "marks": "8",
           "chapter": "Network Layer",
           "isDiagram": false
@@ -504,7 +504,7 @@
           "text": "How connection is established and released in TCP? How congestions can be handled\nusing token bucket? Explain with proper diagram.",
           "marks": "8",
           "chapter": "Transport Layer",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 7,
@@ -559,34 +559,41 @@
         },
         {
           "qNum": 3,
-          "text": "Explain viterbi algorithm for error detection in data link layer for the received encoded\nbits sequence: 10 01 11 00. Calculate CRC for M(x) = x6 + x4 + 1 and generator is\nN(x) = x3 +1.",
-          "marks": "8",
+          "text": "Explain viterbi algorithm for error detection in data link layer for the received encoded\nbits sequence: 10 01 11",
+          "marks": "5",
           "chapter": "Data Link Layer",
           "isDiagram": false
         },
         {
           "qNum": 4,
+          "text": "Calculate CRC for M(x) = x6 + $x^4 + 1$ and generator is\nN(x) = $x^3 +1$.",
+          "marks": "5",
+          "chapter": "Data Link Layer",
+          "isDiagram": false
+        },
+        {
+          "qNum": 5,
           "text": "What is classful and classless routing protocols? Explain distance vector routing with\nexample.",
           "marks": "8",
           "chapter": "Network Layer",
           "isDiagram": false
         },
         {
-          "qNum": 5,
-          "text": "Suppose a company has an IP address on 150.10.0.0 having 6 departments containing\n107, 60, 505, 1010, 225, and 45 hosts. As a network engineer, design an IP plan for the\nnetwork using VLSM. List out the CIDR, subnet mask, network ID, broadcast ID usable\nhost IP ranges and wasted IP address for each department.",
+          "qNum": 6,
+          "text": "Suppose a company has an assigned network IP address 150.10.0.0/16 (or 202.35.91.32/25) with 6 departments containing 1010, 505, 225, 107, 60, and 45 hosts. As a network engineer, design an IP addressing plan using Variable Length Subnet Masking (VLSM). List out the CIDR prefix, subnet mask, network ID, broadcast ID, usable host IP address range, and number of wasted IP addresses for each department.",
           "marks": "8",
           "chapter": "Network Layer",
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 7,
           "text": "Discuss port and socket addressing with diagram. Explain transmission control protocol\nalong with its header format.",
           "marks": "8",
           "chapter": "Transport Layer",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 8,
           "text": "What do you mean by proxy server? Explain working principle of iterative DNS query\nwith www.facebook.com.\nWhat are the features of IPv6 header? Explain IPv4 to IPv6 transition mechanism in brief. [2+6]",
           "marks": "8",
           "chapter": "Upper Layers and Network Design",
@@ -627,7 +634,7 @@
           "text": "Compare circuit switching and packet switching. Explain about any three guided media in\ndetail.",
           "marks": "8",
           "chapter": "Physical Layer",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 3,
@@ -645,7 +652,7 @@
         },
         {
           "qNum": 5,
-          "text": "What is private IP address? In an organization there are 4 departments: HR with 6\ncomputers, admin with 25 computers, finance with 3 computers and sales with 55\ncomputers. If one of the hosts has an IP of 202.100.20.71/27, perform subnetting with\nminimum IP wastage and determine in which subnet the given host belongs.",
+          "text": "What is private IP address? In $a^n$ organization there are 4 departments: HR with 6\ncomputers, admin with 25 computers, finance with 3 computers and sales with 55\ncomputers. If one of the hosts has $a^n$ IP of 202.100.20.71/27, perform subnetting with\nminimum IP wastage and determine in which subnet the given host belongs.",
           "marks": "8",
           "chapter": "Network Layer",
           "isDiagram": false
@@ -662,14 +669,14 @@
           "text": "Explain the working principle of DNS system with proper diagram. What are the\nprotocols used in e-mail? Explain.",
           "marks": "8",
           "chapter": "Upper Layers and Network Design",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 8,
           "text": "What is the significance of extension header in IPv6? Explain dual stack transition\nmechanism with suitable diagram.",
           "marks": "8",
           "chapter": "Network Layer",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 9,
@@ -683,7 +690,7 @@
           "text": "Write Short notes on:(Any Two)\n\n(a) Frame Relay Virtual Circuit Switching\n[2x4]\n\n(b) Firewall and their types\n\n(c) 802.4 Token Bus\n\n(d) IPv6 multicast addressing format",
           "marks": "8",
           "chapter": "Physical Layer",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     },
@@ -696,55 +703,55 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "How data encapsulation occurs in different layers of OSI model? Critically compare P2P\nwith client server model.\nminute with each frame carrying an average of 30,000 bits. What is the throughput of this\nnetwork? Explain the guided transmission media that is most commonly used for LAN in\nhome and offices.",
+          "text": "How data encapsulation occurs in different layers of OSI model? Critically compare P2P\nwith client server model.\nminute with each frame carrying $a^n$ average of 30,000 bits. What is the throughput of this\nnetwork? Explain the guided transmission media that is most commonly used for LAN in\nhome and offices.",
           "marks": "8",
           "chapter": "Physical Layer",
           "isDiagram": false
         },
         {
-          "qNum": 3,
+          "qNum": 2,
           "text": "What are the functions of data link layer? How \"Go back N ARQ\" and \"Selective repeat\nrequest\"' techniques are used for frame retransmission?",
           "marks": "8",
           "chapter": "Data Link Layer",
           "isDiagram": false
         },
         {
-          "qNum": 4,
+          "qNum": 3,
           "text": "What do you mean by adaptive routing? Explain OSPF protocol operation with states to\nreach to fully adjacency state.",
           "marks": "8",
           "chapter": "Network Layer",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 4,
           "text": "Design a network for a company having 7 subnets with 6, 14, 24, 30, 60 and 42 hosts.\nDetermine the subnet mask, network address, broadcast address, usable host range.\nChoose IP address from the pool of class C.",
           "marks": "8",
           "chapter": "Network Layer",
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 5,
           "text": "Why do we need a transport layer? Draw the segment structure of UDP. How does it\ndiffer from TCP? Explain.",
           "marks": "8",
           "chapter": "Transport Layer",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 6,
           "text": "Explain FTP working principle with its types.\nWhat are the features of IPv6 addressing? Explain the strategies used for transition from\nIPv4 to IPv6.",
           "marks": "8",
           "chapter": "Network Layer",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 7,
           "text": "What is the difference between Symmetric and Asymmetric Key cryptography? Encrypt\nthe plain text \"WORLD\" using RSA algorithm.\n[2x4]",
           "marks": "8",
           "chapter": "Introduction",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 8,
           "text": "Write Short notes on:(Any Two)\n\n(a) Congestion control and Token Bucket traffic shaping technique\n802.3 CSMA-CD\n\n(d) PGP services",
           "marks": "8",
           "chapter": "Data Link Layer",
@@ -781,35 +788,35 @@
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 4,
           "text": "Why do we need a transport layer? Draw the segment of UDP. Compare TCP with UDP.[2+2+4]",
           "marks": "8",
           "chapter": "Transport Layer",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 5,
           "text": "Draw the architecture of Email Agent. Why is DNS distributive in nature? Explain\niterative query vs recursive query of DNS with examples and diagrams.",
           "marks": "8",
           "chapter": "Upper Layers and Network Design",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 6,
           "text": "Discuss any-cast and multi cast addresses in IPv6 with use cases. If there are IPv4\nnetworks in between two IPv6 endpoints, what type of transition strategies will you\nsuggest? Explain with examples and diagrams.",
           "marks": "8",
           "chapter": "Network Layer",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 7,
           "text": "What is IPSEC? Encrypt the plain text \" MACHINE\" using RSA algorithm.",
           "marks": "8",
           "chapter": "Data Link Layer",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 8,
           "text": "Write short notes on(Any Two)\n[2x4]\nHTTP methods\nIDS.\nToken bucket Algorithm",
           "marks": "8",
           "chapter": "Data Link Layer",
@@ -836,11 +843,11 @@
           "text": "Discuss briefly Delay, Bandwidth and MAC address. Discuss how data or packets goes\nthrough switch to switch in Frame Relay Virtual-circuit network.",
           "marks": "8",
           "chapter": "Physical Layer",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 3,
-          "text": "What are the services provided by data link layer? How CRC can be used to detect error?\nExplain with an example.",
+          "text": "What are the services provided by data link layer? How CRC can be used to detect error?\nExplain with $a^n$ example.",
           "marks": "8",
           "chapter": "Data Link Layer",
           "isDiagram": false
@@ -854,7 +861,7 @@
         },
         {
           "qNum": 5,
-          "text": "What is private IP address? Company Allegro hired an IT expert. The expert was given\ntask to perform logical design of the company with an IP block of 206.100.100.0/24. The\ncompany had 40,20,8,100 and 5 employees in its sales, admin, finance, support and HR\ndepartments respectively. Show how he was able to perform subnetting with minimum IP\nwastage.",
+          "text": "What is private IP address? Company Allegro hired $a^n$ IT expert. The expert was given\ntask to perform logical design of the company with $a^n$ IP block of 206.100.100.0/24. The\ncompany had 40,20,8,100 and 5 employees in its sales, admin, finance, support and HR\ndepartments respectively. Show how he was able to perform subnetting with minimum IP\nwastage.",
           "marks": "8",
           "chapter": "Network Layer",
           "isDiagram": false
@@ -867,21 +874,21 @@
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 7,
           "text": "How extension header is used in IPV6 ? Explain dual stack transition mechanism from\nIPV4 to IPV6.",
           "marks": "8",
           "chapter": "Network Layer",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 8,
           "text": "Draw the block diagram of DES algorithm. Explain RSA with examples.",
           "marks": "8",
           "chapter": "Introduction",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 9,
           "text": "Write short notes on: (Any Two)\n[2x4]\nDeffie Hellman Algorithm\n\n(b) PGP\n802.3CSMA.",
           "marks": "8",
           "chapter": "Data Link Layer",
@@ -901,7 +908,7 @@
           "text": "What is data encapsulation? Explain OSI reference model with suitable diagram.",
           "marks": "8",
           "chapter": "Data Link Layer",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 2,
@@ -943,7 +950,7 @@
           "text": "What is port address and socket address? Explain working principle of E-mail system\nwith a proper diagram.",
           "marks": "8",
           "chapter": "Network Layer",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 8,
@@ -980,56 +987,56 @@
           "text": "Why layering is important? Explain Open System Interconnection (OsI) model and\ncompare OSI with TCP/IP reference model.\nWhat are the factors to be considered while selecting media? Differentiate between\ndatagram switching and virtual circuit switching approach.",
           "marks": "8",
           "chapter": "Physical Layer",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 3,
+          "qNum": 2,
           "text": "What are the services provided by data link layer? How does CSMA/CA protocol work to\navoid the collision during hidden station problem? Explain with diagram.",
           "marks": "8",
           "chapter": "Data Link Layer",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 4,
-          "text": "Suppose an ISP has 200, 250, 500 and 100 customers in the four different places say, A,\nB, C and D and need four point-to-point links. Provided an IP 10.0.48.0/21, you are\nrequired to perform subnetting with minimum waste of IP. Find out the subnet masks,\nnetwork address, broadcast address, usable IP range and unusable IP range for each\nlocation.",
+          "qNum": 3,
+          "text": "Suppose $a^n$ ISP has 200, 250, 500 and 100 customers in the four different places say, A,\nB, C and D and need four point-to-point links. Provided $a^n$ IP 10.0.48.0/21, you are\nrequired to perform subnetting with minimum waste of IP. Find out the subnet masks,\nnetwork address, broadcast address, usable IP range and unusable IP range for each\nlocation.",
           "marks": "8",
           "chapter": "Network Layer",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 4,
           "text": "Define unicast and multicast routing. Compare distance vector and link state routing\nprotocols with example.",
           "marks": "8",
           "chapter": "Network Layer",
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 5,
           "text": "What is significance of port address? Discuss about different classes of port addresses\ndefined by IANA. How can traffic congestion controlled by token Bucket method?",
           "marks": "8",
           "chapter": "Data Link Layer",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 6,
           "text": "What is DNS? Explain the working principle of DNS with a proper diagram. Compare\nIMAP and POP3 protocols.\nWhat are the factors that lead to the deployment of IPv6? Explain briefly about the\nprocess involved in transition of IPv4 to IPv6.",
           "marks": "8",
           "chapter": "Upper Layers and Network Design",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 7,
           "text": "What are the properties of secure communication? Encrypt and decrypt the message\n\"BEIE\" using RSA algorithm.",
           "marks": "8",
           "chapter": "Transport Layer",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 8,
           "text": "Write short notes on: (Any Two)\n\n(a) Go back N ARQ\n\n(b) Virtual circuit switching\n\n(c) CRC",
           "marks": "8",
           "chapter": "Physical Layer",
-          "isDiagram": true
+          "isDiagram": false
         }
       ]
     }

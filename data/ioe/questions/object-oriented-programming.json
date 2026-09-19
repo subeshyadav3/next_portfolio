@@ -747,28 +747,28 @@
       "totalMarks": 32,
       "questions": [
         {
-          "qNum": 6,
+          "qNum": 1,
           "text": "Why do you need virtual destructor? Distinguish between function overloading and\noverriding with example.",
           "marks": "8",
           "chapter": "Virtual Functions",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 2,
           "text": "Explain how abnormal situations are handled in I/O process. Write a program that writes\ntext to source file after reading from the user. Copy the content from source file, change\nthe case of letters to uppercase if they are in lowercase and then store in destination file.\nAlso, display the content of destination file too.",
           "marks": "8",
           "chapter": "Stream Computation",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 3,
           "text": "Why are templates in C++ referred to as a form of generic programming? What are\ncontainers and iterators in STL? Briefly explain default arguments with Class Template\nwith suitable example.",
           "marks": "8",
           "chapter": "Templates",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 4,
           "text": "How is explain exception handling mechanism in C++ better than tradition techniques?\nWrite a program to read name, roll number and marks that catches multiple exceptions\nhandle the exceptions.",
           "marks": "8",
           "chapter": "Exception Handling",
@@ -813,7 +813,7 @@
         },
         {
           "qNum": 5,
-          "text": "What are the advantages of operator overloading? What are the rules of operator\noverloading? Write a program to overload the'binary operator to add complex numbers.",
+          "text": "What is operator overloading? Write a program in C++ to overload the binary `+` operator to add two complex numbers using member function and friend function.",
           "marks": "8",
           "chapter": "Operator Overloading",
           "isDiagram": false
@@ -850,14 +850,14 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "What is the drawback of procedural programming and advantage of object-oriented\nprogtamming along with suitable program code of each?",
+          "text": "What is the drawback of procedural programming and advantage of object-oriented programming? Compare procedure-oriented programming and object-oriented programming with the basic concepts and features of OOP.",
           "marks": "8",
           "chapter": "Introduction to Object Oriented Programming",
           "isDiagram": false
         },
         {
           "qNum": 2,
-          "text": "What do you mean by Namespace? Why namespace feature is needed in C++? Explain\nwith an example program.",
+          "text": "What do you mean by Namespace? Why namespace feature is needed in C++? Explain\nwith $a^n$ example program.",
           "marks": "8",
           "chapter": "Basics of C++ Programming",
           "isDiagram": false
@@ -871,14 +871,14 @@
         },
         {
           "qNum": 4,
-          "text": "What is an operator overloading? Write down the syntax for overloading binary operator\nusing non-member operator function in a class. Write a program to perform addition,\nsubtraction, multiplication and division with complex objects with real and imaginary\nmembers.",
+          "text": "What is operator overloading? List down the rules of operator overloading. Write a program to overload binary operators (+, -, *) using member functions or friend functions to perform arithmetic on complex numbers with real and imaginary parts.",
           "marks": "8",
           "chapter": "Operator Overloading",
           "isDiagram": false
         },
         {
           "qNum": 5,
-          "text": "Explain different forms of inheritance with an example for each. Create a class person\nwith data members to identify a person and inherit it to. create a class student with\napprqpriate members. Write a complete program showing function overriding to make\nyour program meaningful.",
+          "text": "Explain different forms of inheritance with an example for each. Create a class Person with data members to identify a person and inherit it to create a class Student. Demonstrate function overriding and constructor invocation order in inheritance.",
           "marks": "8",
           "chapter": "Inheritance",
           "isDiagram": false
@@ -892,14 +892,14 @@
         },
         {
           "qNum": 7,
-          "text": "What are the different types of file modes used in C++? Write a program with a class to\nrepresent an employee having data members to represent name, employee Id, age and\nsalary. Add record of 10 employees in a file and display them in a console. Also search a\nspecific record of an employee using employee Id as a key from the user input.",
+          "text": "What are the different types of file modes used in C++? Write a program with a class to represent an employee or student having data members (name, id, age, salary). Write records to a file, read them, and search a specific record using employee id or roll_no as a key.",
           "marks": "8",
           "chapter": "Stream Computation",
           "isDiagram": false
         },
         {
           "qNum": 8,
-          "text": "Show with an example how do we eliminate code redundancy using template. Give with\nexample. WAP to read n numbers of any types and sort them on descending order. For\nsorting, you can use vector member function.",
+          "text": "Why are templates in C++ referred to as a form of generic programming? Show with an example how we eliminate code redundancy using templates. Write a program to read n numbers of any data type and sort them in descending order using a function template.",
           "marks": "8",
           "chapter": "Objects and Classes",
           "isDiagram": false
@@ -928,56 +928,56 @@
           "isDiagram": false
         },
         {
-          "qNum": 3,
+          "qNum": 2,
           "text": "Explain the need of inline function. Using object oriented technique, write a program to create\nclass vector that reads integer number. Perform vector addition by passing object as argument and\nreturns the object as result. A vector is a class with array as member.",
           "marks": "8",
           "chapter": "Objects and Classes",
           "isDiagram": false
         },
         {
-          "qNum": 4,
+          "qNum": 3,
           "text": "What do mean by constructor and destructor? Explain the necessity of copy constructor with\nexample. Also explain order of invocation of constructor and destructor with example.",
           "marks": "8",
           "chapter": "Basics of C++ Programming",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 4,
           "text": "Explain which operators cannot be overloaded in C++? Explain how a class type (user-defined\ntype) of data can be converted to a basic data (inbuilt data) type? Write a program to concatenate\ntwo user giyen string by overloading binary plus (+) operator.",
           "marks": "8",
           "chapter": "Operator Overloading",
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 5,
           "text": "Explain various forms of inheritance with syntax, Write a program to create a derived class by\ninheriting two base classes with same function names. Your program should be complete and\nmeaningful.",
           "marks": "8",
           "chapter": "Inheritance",
           "isDiagram": false
         },
         {
-          "qNum": 7,
-          "text": "What are the different types of polymorphism? Explain pure virtual function, Create an abstract\nclass polygon with length and height as its data members. Make area() a pure virtual function and\nredefine it in derived classes triangle and rectangle to calculate respective area. Your program\nshould demonstrate run time polymorphism.",
+          "qNum": 6,
+          "text": "What are the different types of polymorphism? Explain pure virtual function, Create $a^n$ abstract\nclass polygon with length and height as its data members. Make area() a pure virtual function and\nredefine it in derived classes triangle and rectangle to calculate respective area. Your program\nshould demonstrate run time polymorphism.",
           "marks": "8",
           "chapter": "Virtual Functions",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 7,
           "text": "Explain different file modes that are used in opening the file. Write a program that will copy the\ncontent from one file, change the case of letters to upper case if they are in lower case and store in\nnext file.",
           "marks": "8",
           "chapter": "Stream Computation",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 8,
           "text": "Explain fundtion template. How do you use function template with multiple template types? Give\nexample.",
           "marks": "8",
           "chapter": "Templates",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 9,
           "text": "What is the advantage of having exception handling in the program? How are multiple exceptions\nhandled? Explain about catching all exception in exception handling mechanism.",
           "marks": "8",
           "chapter": "Exception Handling",
@@ -1001,7 +1001,7 @@
         },
         {
           "qNum": 2,
-          "text": "When should you prefer the use of inline function? Explain with example. Explain\nfunction overloading in object-oriented programming.",
+          "text": "When should you prefer the use of inline functions? Explain with example. Explain function overloading in object-oriented programming and how the compiler resolves overloaded functions.",
           "marks": "8",
           "chapter": "Introduction to Object Oriented Programming",
           "isDiagram": false
@@ -1015,7 +1015,7 @@
         },
         {
           "qNum": 4,
-          "text": "What are the rules for operator overloading? Write a program to create a class “time\"\nwith data members -- hour, minute and seconds and then overload post increment operator\nfor increment in seconds.",
+          "text": "What are the rules for operator overloading? Write a program to create a class “time\"\nwith data members - hour, minute and seconds and then overload post increment operator\nfor increment in seconds.",
           "marks": "8",
           "chapter": "Operator Overloading",
           "isDiagram": false
@@ -1066,7 +1066,7 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "Is Object-Oriented Programming better than Procedure Oriented Programming? If yes\nsupport with appropriate statements. What are some key features of C++ that distinguish\nit from C?",
+          "text": "Is Object-Oriented Programming better than Procedure Oriented Programming? If yes\nsupport with appropriate statements. What are some key features of C++ that distinguish\nit from $C^2$",
           "marks": "8",
           "chapter": "Introduction to Object Oriented Programming",
           "isDiagram": false
@@ -1093,35 +1093,35 @@
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 5,
           "text": "What are different forms of inheritance? Explain about ambiguity in multiple inheritance\nand explain how it can be resolved by using appropriate example.",
           "marks": "8",
           "chapter": "Inheritance",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 6,
           "text": "Why do we need Virtual function? Explain with example. Explain about and\ndynamic_castO and type_idO operator.",
           "marks": "8",
           "chapter": "Virtual Functions",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 7,
           "text": "Describe the stream class hierarchy for console input/output in C++. Write a C++\nprogram that reads student information (name, age, and grade) from the console and\nwrites it to a file named ioe.txt. Then read the content from the file and display it on the\nconsole.",
           "marks": "8",
           "chapter": "Stream Computation",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 8,
           "text": "How can you achieve the generic programming in C++? Write a program to create a\nderive class which is a non-template class from a base class which is a template class.",
           "marks": "8",
           "chapter": "Inheritance",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 9,
           "text": "What are the advantages of exception handling over conventional error handling? How is\nmultiple exception handling performed in C++ with suitable example?",
           "marks": "8",
           "chapter": "Exception Handling",
@@ -1145,7 +1145,7 @@
         },
         {
           "qNum": 2,
-          "text": "Justify the statement that “Inline function is a request not a command\". Also, in what\nscenario the default argument is best suited to use? Explain with an appropriate example.\nHow memory is allocated dynamically for normal variable and for array? Explain.",
+          "text": "Justify the statement that “Inline function is a request not a command\". Also, in what\nscenario the default argument is best suited to use? Explain with $a^n$ appropriate example.\nHow memory is allocated dynamically for normal variable and for array? Explain.",
           "marks": "8",
           "chapter": "Objects and Classes",
           "isDiagram": false
@@ -1166,7 +1166,7 @@
         },
         {
           "qNum": 5,
-          "text": "Define default argument with suitable example. Define an inline function named square\nthat takes an integer parameter and returns the square of that number. Call this function\nfrom the main function and display the result.",
+          "text": "Define default argument with suitable example. Define $a^n$ inline function named square\nthat takes $a^n$ integer parameter and returns the square of that number. Call this function\nfrom the main function and display the result.",
           "marks": "8",
           "chapter": "Objects and Classes",
           "isDiagram": false
@@ -1176,11 +1176,11 @@
           "text": "Draw the diagram and explain different form of inheritance. Define virtual base class with\nits significance. Write a program to overcome the function overriding in single\ninheritance.",
           "marks": "8",
           "chapter": "Inheritance",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
           "qNum": 7,
-          "text": "What are pure virtual functions and abstract classes? Write a C++ program having\nPolygon as an abstract class with length and height as its data member. Create a derived\nclass Rectangle and Triangle. Make Area O as pure virtual function and redefined it in\nderived class to calculate respective area.",
+          "text": "What are pure virtual functions and abstract classes? Write a C++ program having\nPolygon as $a^n$ abstract class with length and height as its data member. Create a derived\nclass Rectangle and Triangle. Make Area O as pure virtual function and redefined it in\nderived class to calculate respective area.",
           "marks": "8",
           "chapter": "Objects and Classes",
           "isDiagram": false
@@ -1201,7 +1201,7 @@
         },
         {
           "qNum": 10,
-          "text": "Explain how Exception handling mechanism is better than traditional error handling\nmechanism. Explain about catching all exception in exception handling mechanism with\nan appropriate example.",
+          "text": "Explain how Exception handling mechanism is better than traditional error handling\nmechanism. Explain about catching all exception in exception handling mechanism with\n$a^n$ appropriate example.",
           "marks": "8",
           "chapter": "Exception Handling",
           "isDiagram": false
@@ -1245,7 +1245,7 @@
         },
         {
           "qNum": 5,
-          "text": "What are the advantages of operator overloading? What are the rules of operator\noverloading? Write a program to overload the binary operator to add complex numbers.",
+          "text": "What is operator overloading? Write a program in C++ to overload the binary `+` operator to add two complex numbers using member function and friend function.",
           "marks": "8",
           "chapter": "Operator Overloading",
           "isDiagram": false
@@ -1259,7 +1259,7 @@
         },
         {
           "qNum": 7,
-          "text": "What are the different types of polymorphism? Explain pure virtual function. Create an\nabstract class polygon with length and height as its data members. Make area( )a pure\nvirtual function and redefine it in derived classes triangle and rectangle to calculate\nrespective area. Your program should demonstrate run time polymorphism. :",
+          "text": "What are the different types of polymorphism? Explain pure virtual function. Create $a^n$\nabstract class polygon with length and height as its data members. Make area( )a pure\nvirtual function and redefine it in derived classes triangle and rectangle to calculate\nrespective area. Your program should demonstrate run time polymorphism. :",
           "marks": "8",
           "chapter": "Virtual Functions",
           "isDiagram": false
@@ -1303,20 +1303,27 @@
         },
         {
           "qNum": 2,
-          "text": "Define reference variable and write syntax for defining reference variable. WAP a\ncases value of r is fix that is 50. Call this function in main.",
-          "marks": "8",
+          "text": "Define reference variable and write syntax for defining reference variable. WAP a\ncases value of r is fix that is",
+          "marks": "5",
           "chapter": "Basics of C++ Programming",
           "isDiagram": false
         },
         {
           "qNum": 3,
+          "text": "Call this function in main.",
+          "marks": "5",
+          "chapter": "Basics of C++ Programming",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
           "text": "Explain friend function and with program code, how friend function can be used to make\nbridge between two classes? Create a class time, constructor having hour, minutes and\nsecond as arguments is used to initialize time objects. The add function that takes two\nclass objects as arguments add them respectively then display the aggregate result. (Apply\n60 seconds = 1minute, 60 minutes =- 1 hour and 24 hour =- 1 day).",
           "marks": "8",
           "chapter": "Objects and Classes",
           "isDiagram": false
         },
         {
-          "qNum": 4,
+          "qNum": 5,
           "text": "How is operator overloading used in case of binary operator? List down the rules of\noperator overloading. Create a class Length that has two data members meter and\ncentimeter. Write a program to compare the length of two objects of this class by\noverloading ‘>' operator. Use constructor to initialize data members.\ninheritance? Explain how ambiguity due to multipath inheritance could be resolved.",
           "marks": "8",
           "chapter": "Objects and Classes",
@@ -1330,15 +1337,15 @@
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 7,
           "text": "Explain the use of default argument in template class. Write to suitable program to show\nthe concept of function template. Explain in brief about stack in Standard Template",
           "marks": "8",
           "chapter": "Templates",
           "isDiagram": false
         },
         {
-          "qNum": 9,
-          "text": "Discuss steps taken during exception handling. Write a program to compute square root\nof a number. The input value must be tested for validity. If it is negative, an exception\nmust be raised.",
+          "qNum": 8,
+          "text": "Discuss steps taken during exception handling. Write a program to compute square root\nof a number. The input value must be tested for validity. If it is negative, $a^n$ exception\nmust be raised.",
           "marks": "8",
           "chapter": "Exception Handling",
           "isDiagram": false
@@ -1374,42 +1381,42 @@
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 4,
           "text": "What is operator overloading in C++ and how does it allow you to entend the behavior of\noperators for user-defined types. List the operator that can't be overloaded. Write a\nprogram to overload the insertion (<<) and extraction (>>) operators to read and display\ndata objects.",
           "marks": "8",
           "chapter": "Operator Overloading",
           "isDiagram": false
         },
         {
-          "qNum": 6,
-          "text": "What are the advantages of inheritance? Consider a class liquid with data member\nspecific -- gravity and a class fuel with data member fuel. Now from these two base\nclasses derive a class petrol as derived class. Assume necessary method required in\ndifferent classes. Which type of inheritance is used in above program?",
+          "qNum": 5,
+          "text": "What are the advantages of inheritance? Consider a class liquid with data member\nspecific - gravity and a class fuel with data member fuel. Now from these two base\nclasses derive a class petrol as derived class. Assume necessary method required in\ndifferent classes. Which type of inheritance is used in above program?",
           "marks": "8",
           "chapter": "Inheritance",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 6,
           "text": "What do you mean by dynamic binding? Explain how it is implemented? Discuss how\nRun-Time Type Information can be achieved in C++.",
           "marks": "8",
           "chapter": "Virtual Functions",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 7,
           "text": "Draw and explain the stream class hierarchy of Console Input/ Output. Write a program\nthat uses a file for a car manufacturing company to add the record and display the list of\nrecord in the console.",
           "marks": "8",
           "chapter": "Stream Computation",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 9,
-          "text": "What is a template in C++ programming? Provide an example scenario where templates\nShow the use of vector container in C++.\n[1+2+2+3]",
+          "qNum": 8,
+          "text": "What is a template in C++ programming? Provide $a^n$ example scenario where templates\nShow the use of vector container in C++.\n[1+2+2+3]",
           "marks": "8",
           "chapter": "Templates",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 9,
           "text": "Why it is necessary to handle exception? Explain exception handling mechanism. Write\nany program to handle multiple exception.",
           "marks": "8",
           "chapter": "Exception Handling",
@@ -1676,49 +1683,49 @@
           "isDiagram": false
         },
         {
-          "qNum": 4,
-          "text": "How does an inline function differ from a pre-processor macro? What is the main\nadvantage of passing argument by reference? Ilustrate with a suitable program.",
+          "qNum": 3,
+          "text": "How does $a^n$ inline function differ from a pre-processor macro? What is the main\nadvantage of passing argument by reference? Ilustrate with a suitable program.",
           "marks": "8",
           "chapter": "Basics of C++ Programming",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 4,
           "text": "Explain the rules of operator overloading in C++. Write a program to concatenate two\nuser given string using the concept of operator overloading.",
           "marks": "8",
           "chapter": "Operator Overloading",
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 5,
           "text": "Explain the need of virtual base class with example. Write a program to show the order of\nconstructor invocation in multiple inheritance.",
           "marks": "8",
           "chapter": "Inheritance",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 6,
           "text": "Explain the need of virtual function with suitable example. How dynamic cast and typeid\noperators are used to achieve RTTI?",
           "marks": "8",
           "chapter": "Virtual Functions",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 7,
           "text": "Discuss about classes for file stream operator with a suitable block diagram. Write a\nprogram to write the information of students in a file. And also display their details in\nconsole.",
           "marks": "8",
           "chapter": "Stream Computation",
-          "isDiagram": true
+          "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 8,
           "text": "Explain how default arguments are used in template. Define class template and all of its\nfunction members with suitable example.",
           "marks": "8",
           "chapter": "Objects and Classes",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 9,
           "text": "How is exception handling better than conventional error handling? Explain how multiple\nexceptions are handled with a suitable example.",
           "marks": "8",
           "chapter": "Exception Handling",
@@ -1734,63 +1741,63 @@
       "totalMarks": 72,
       "questions": [
         {
-          "qNum": 2,
+          "qNum": 1,
           "text": "Can we have more than one constructors in a class? If yes, explain the need for such a\nsituation. Write a program designing a class called midpoint to find mid-point between\ntwo points by returning object from member function using this pointer.",
           "marks": "8",
           "chapter": "Objects and Classes",
           "isDiagram": false
         },
         {
-          "qNum": 3,
+          "qNum": 2,
           "text": "Why is namespace required? Explain how namespace is created and used in program with\na suitable example. How is reference variable used for pass by reference? Explain.",
           "marks": "8",
           "chapter": "Basics of C++ Programming",
           "isDiagram": false
         },
         {
-          "qNum": 4,
+          "qNum": 3,
           "text": "Explain how the use of default argument supports the function overloading with suitable\nexample. Define inline function with its merits and demerits.",
           "marks": "8",
           "chapter": "Operator Overloading",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 4,
           "text": "Define operator overloading. What are the rules of operator overloading? How do you\noverload unary operator? Explain with example.",
           "marks": "8",
           "chapter": "Operator Overloading",
           "isDiagram": false
         },
         {
-          "qNum": 6,
-          "text": "What are the different forms of inheritance? Give an example for each. Write a program\nwhich contains a base class that ask the user to enter a complex number and make a\nderived class that adds the complex number of its own with the base. Finally make third\nclass that is friend of derived and calculate the difference of base complex number and its\nown complex number.",
+          "qNum": 5,
+          "text": "What are the different forms of inheritance? Give $a^n$ example for each. Write a program\nwhich contains a base class that ask the user to enter a complex number and make a\nderived class that adds the complex number of its own with the base. Finally make third\nclass that is friend of derived and calculate the difference of base complex number and its\nown complex number.",
           "marks": "8",
           "chapter": "Inheritance",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 6,
           "text": "Define virtual function with suitable example. Explain how dynamic_cast and typeid\noperators are used to achieve RTTI.",
           "marks": "8",
           "chapter": "Virtual Functions",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 7,
           "text": "Write short notes on file access pointers and their manipulators. Write a program to make\nthe information (Book Name, Book ID, Number of books and purchase date).",
           "marks": "8",
           "chapter": "Stream Computation",
           "isDiagram": false
         },
         {
-          "qNum": 9,
+          "qNum": 8,
           "text": "Briefly explain importance of function template and class template with suitable example.\nWrite a program to create a derive class which is a template from a base class which is\nalso a template with additional template parameters in the derived class than that of the\nbase class.",
           "marks": "8",
           "chapter": "Inheritance",
           "isDiagram": false
         },
         {
-          "qNum": 10,
+          "qNum": 9,
           "text": "What is the advantage of having exception handling in the program? How are multiple\nexceptions handled? Explain about Catching all exception in exception handling\nmechanism.",
           "marks": "8",
           "chapter": "Exception Handling",
@@ -1814,20 +1821,20 @@
         },
         {
           "qNum": 2,
-          "text": "What is a constant function? What is its relation with constant object? Write a\nmeaningful function that shows the use of constant object and constant function\nalong with use of const cast operator.\nWhat do you understand by default arguments? How can you relate default\nargument function with function overloading? Write a program to find volume of\ndifferent shapes using function overloading.\nWhat do you mean by operator overloading? Write down its syntax. Write a class\nthat represent the distance class and overload ++ and -- operator to increment and\ndecrement distance.",
+          "text": "What is a constant function? What is its relation with constant object? Write a\nmeaningful function that shows the use of constant object and constant function\nalong with use of const cast operator.\nWhat do you understand by default arguments? How can you relate default\nargument function with function overloading? Write a program to find volume of\ndifferent shapes using function overloading.\nWhat do you mean by operator overloading? Write down its syntax. Write a class\nthat represent the distance class and overload ++ and - operator to increment and\ndecrement distance.",
           "marks": "8",
           "chapter": "Operator Overloading",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 3,
           "text": "Explain the need inheritance in programming? Explain various forms of\ninheritance. Write a program to create a derived class by inheriting two base\nclasses with same function names. Your program should be complete and\nmeaningful.",
           "marks": "8",
           "chapter": "Inheritance",
           "isDiagram": false
         },
         {
-          "qNum": 6,
+          "qNum": 4,
           "text": "What is the purpose of stream manipulation? Explain different file modes that are\nused in opening the file. Write a program that will copy the content from one file,\nchange the case of letters to upper case if they are in lower case and store in next\nfile.\nWhat do you mean by polymorphic class? What are different RTTI mechanisms\nin C++? Write a program that shows the use of pure virtual function.\nWhy do we need class template? Write a program to create class to represent",
           "marks": "8",
           "chapter": "Stream Computation",
@@ -1886,7 +1893,7 @@
         },
         {
           "qNum": 7,
-          "text": "Explain compile-time and run-time binding. Differentiate abstract base class and concrete\nclass. Write an abstract class of your choice and use it in a program. Your program should\nbe meaningful.",
+          "text": "Explain compile-time and run-time binding. Differentiate abstract base class and concrete\nclass. Write $a^n$ abstract class of your choice and use it in a program. Your program should\nbe meaningful.",
           "marks": "8",
           "chapter": "Inheritance",
           "isDiagram": false
@@ -1965,7 +1972,7 @@
         },
         {
           "qNum": 7,
-          "text": "Explain compile-time and run-time binding. Differentiate abstract base class and concrete\nclass. Write an abstract class of your choice and use it in a program. Your program should\nbe meaningful.",
+          "text": "Explain compile-time and run-time binding. Differentiate abstract base class and concrete\nclass. Write $a^n$ abstract class of your choice and use it in a program. Your program should\nbe meaningful.",
           "marks": "8",
           "chapter": "Inheritance",
           "isDiagram": false
@@ -2044,7 +2051,7 @@
         },
         {
           "qNum": 7,
-          "text": "What is pure virtual function and abstract class? With suitable example explain run time\npolymorphism.",
+          "text": "What is an abstract class? Define pure virtual function with suitable syntax and example. Why cannot an abstract class be instantiated directly?",
           "marks": "8",
           "chapter": "Virtual Functions",
           "isDiagram": false
@@ -2188,7 +2195,7 @@
         },
         {
           "qNum": 7,
-          "text": "Why do you need Virtual Destructor? Explain with example. Write a program having\nPolygon as an abstract class with Length and Height as its data member. Create derived\nclass Rectangle and Triangle. Make Area O as pure virtual function and redefined it in\nderived class to calculate respective area.",
+          "text": "Why do you need Virtual Destructor? Explain with example. Write a program having\nPolygon as $a^n$ abstract class with Length and Height as its data member. Create derived\nclass Rectangle and Triangle. Make Area O as pure virtual function and redefined it in\nderived class to calculate respective area.",
           "marks": "8",
           "chapter": "Virtual Functions",
           "isDiagram": false
@@ -2218,7 +2225,7 @@
         },
         {
           "qNum": 2,
-          "text": "List the feature of C++. What are constructors, write their use and explain using an\nexample.",
+          "text": "List the feature of C++. What are constructors, write their use and explain using $a^n$\nexample.",
           "marks": "8",
           "chapter": "Operator Overloading",
           "isDiagram": false
@@ -2299,7 +2306,7 @@
         },
         {
           "qNum": 2,
-          "text": "What is function' overloading? Use new and delect operators to store n numbers\ndynamically and find their average using casting operator. What are the things we should\nremember while using default argument. Explain with an example.\n[2-+ 5 +3]",
+          "text": "What is function' overloading? Use new and delect operators to store n numbers\ndynamically and find their average using casting operator. What are the things we should\nremember while using default argument. Explain with $a^n$ example.\n[2-+ 5 +3]",
           "marks": "8",
           "chapter": "Operator Overloading",
           "isDiagram": false
@@ -2313,14 +2320,14 @@
         },
         {
           "qNum": 4,
-          "text": "List the operators which cannot be overloaded. Why does the overloading of binary\noperator with member function requires only one argument? Create a class having an\narray as member. Overload index operator (l J) to input and display the elements in the\narray.",
+          "text": "List the operators which cannot be overloaded. Why does the overloading of binary\noperator with member function requires only one argument? Create a class having $a^n$\narray as member. Overload index operator (l J) to input and display the elements in the\narray.",
           "marks": "8",
           "chapter": "Operator Overloading",
           "isDiagram": false
         },
         {
           "qNum": 5,
-          "text": "How do you access overridden members of the base class from a member function in the\nderived class? What is the problem faced when using multipath inheritance and how is it\nsolved? Explain with an example the order of constructor and destructor invocation\nduring multiple inheritance..",
+          "text": "How do you access overridden members of the base class from a member function in the\nderived class? What is the problem faced when using multipath inheritance and how is it\nsolved? Explain with $a^n$ example the order of constructor and destructor invocation\nduring multiple inheritance..",
           "marks": "8",
           "chapter": "Inheritance",
           "isDiagram": false
@@ -2341,7 +2348,7 @@
         },
         {
           "qNum": 8,
-          "text": "What are the advantages of Exception Handling-over Conventional Error Handling\nmechanism? Explain the constructs for Exception Handling in C++ with an example.\nWrite a meaningful program illustrating the use of both Exception with argument and\nException Specification for function. .",
+          "text": "What are the advantages of Exception Handling-over Conventional Error Handling\nmechanism? Explain the constructs for Exception Handling in C++ with $a^n$ example.\nWrite a meaningful program illustrating the use of both Exception with argument and\nException Specification for function. .",
           "marks": "8",
           "chapter": "Exception Handling",
           "isDiagram": false
@@ -2363,21 +2370,28 @@
           "isDiagram": false
         },
         {
-          "qNum": 4,
-          "text": "What are the overloadable operators: in C++? Write down the syntax for operator\noverloading in different cases. Write a program to compare the magnitude of complex\nnumbers by overloading <,> and == operators.\nExplain different types of access specifiers used in inheritance. Explain the .case of\nambiguity in inheritance. Write a program that shows ambiguity in multiple inheritance. [2+2+6]\n- 6. What do you mean by stream? Explain different stream class for file input/output. Write a\nprogram to display the output in pyramid from as follows:\nABCD",
-          "marks": "10",
+          "qNum": 2,
+          "text": "What are the overloadable operators: in C++? Write down the syntax for operator\noverloading in different cases. Write a program to compare the magnitude of complex\nnumbers by overloading <,> and == operators.\nExplain different types of access specifiers used in inheritance. Explain the .case of\nambiguity in inheritance. Write a program that shows ambiguity in multiple inheritance. [2+2+6]\n-",
+          "marks": "5",
           "chapter": "Stream Computation",
           "isDiagram": false
         },
         {
-          "qNum": 7,
+          "qNum": 3,
+          "text": "What do you mean by stream? Explain different stream class for file input/output. Write a\nprogram to display the output in pyramid from as follows:\nABCD",
+          "marks": "5",
+          "chapter": "Stream Computation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 4,
           "text": "What do you mean by polymorphic class? What are different RTTI mechanisms in'C++?\nWrite a program that shows both RTTI mechanisms.",
           "marks": "8",
           "chapter": "Inheritance",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 5,
           "text": "What do you mean by templates? Write down the syntax for function template and class\ntemplates. Write a program with a class template to represent array and add member\nfunctions to find maximum, minimum and sort the generic array.",
           "marks": "8",
           "chapter": "Objects and Classes",
@@ -2394,84 +2408,91 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "What is. data abstraction? Compare it with encapsulation in C++. With suitable example\nexplain the concept of class in C++.\nWhat is the. advantage of Ctt over C? With suitable example explain dynamic memory\nallocation for object and object array.\nWhat is a default argument? What are the advantages and disadvantages of using inline\nfunction? Write a program to calculate and display the cube of integer, float and double",
+          "text": "What is. data abstraction? Compare it with encapsulation in C++. With suitable example\nexplain the concept of class in C++.\nWhat is the. advantage of Ctt over $C^2$ With suitable example explain dynamic memory\nallocation for object and object array.\nWhat is a default argument? What are the advantages and disadvantages of using inline\nfunction? Write a program to calculate and display the cube of integer, float and double",
           "marks": "8",
           "chapter": "Objects and Classes",
           "isDiagram": false
         },
         {
-          "qNum": 4,
+          "qNum": 2,
           "text": "Write down syntax of operator overloading for various cases. Develop a program using a\nclass to with 3x3 matrix as a data member. Overload the * operators so as multiply two\nmatrices.",
           "marks": "8",
           "chapter": "Operator Overloading",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 3,
           "text": "..What is difference between- overloading -and overriding? With suitable example explain\nhybrid inheritance.",
           "marks": "8",
           "chapter": "Operator Overloading",
           "isDiagram": false
         },
         {
-          "qNum": 6,
-          "text": "Discuss about stream class hierarchy. Write a program for transaction processing that\nwrite and read object randomly to and from a random access file so that user can 'add,\nupdate, delete and display the account information (accountnumber, lastname, firstname,\ntotalbalance).\n. 7. Explain the reason for member function over-riding when using virtual function. Explain\nRTTI using dynamic cast and typeid operators with suitable example.",
-          "marks": "8",
+          "qNum": 4,
+          "text": "Discuss about stream class hierarchy. Write a program for transaction processing that\nwrite and read object randomly to and from a random access file so that user can 'add,\nupdate, delete and display the account information (accountnumber, lastname, firstname,\ntotalbalance).\n.",
+          "marks": "5",
           "chapter": "Stream Computation",
           "isDiagram": false
         },
         {
-          "qNum": 8,
+          "qNum": 5,
+          "text": "Explain the reason for member function over-riding when using virtual function. Explain\nRTTI using dynamic cast and typeid operators with suitable example.",
+          "marks": "5",
+          "chapter": "Stream Computation",
+          "isDiagram": false
+        },
+        {
+          "qNum": 6,
           "text": ". Explain class template with suitable example. How.do you handle multiple exceptions in\nC+? Explain with example.\nExam.\nNew Back (2066 & Later Batch)\nBEL, BEX,\nTime\n2070 Ashad\n3 hrs.",
           "marks": "8",
           "chapter": "Exception Handling",
           "isDiagram": false
         },
         {
-          "qNum": 1,
+          "qNum": 7,
           "text": "Write down the limitations of procedural programming. Compare procedural and object\noriented programming. Write\n: program to find prime number in procedural and object\noriented ways.",
           "marks": "8",
           "chapter": "Introduction to Object Oriented Programming",
           "isDiagram": false
         },
         {
-          "qNum": 2,
+          "qNum": 8,
           "text": "What do you understand by friend functions and classes? Explain with example. Write a\nprogram to add members of objects of two different classes.",
           "marks": "8",
           "chapter": "Objects and Classes",
           "isDiagram": false
         },
         {
-          "qNum": 3,
+          "qNum": 9,
           "text": "What do you mean by namespace? Explain how namespace can be used. Write a program\nthat uses pass by reference to change meter to centimeter using pass by reference along\nwith the namespace.",
           "marks": "8",
           "chapter": "Basics of C++ Programming",
           "isDiagram": false
         },
         {
-          "qNum": 4,
+          "qNum": 10,
           "text": "Explain the binary and unary operator overloading along with their syntax and example.\nWrite a program to add two matrices by overloading the + operator.",
           "marks": "8",
           "chapter": "Operator Overloading",
           "isDiagram": false
         },
         {
-          "qNum": 5,
+          "qNum": 11,
           "text": "Explain the constructor and destructor invocation order in single and multiple inheritance.\nAlso show how a parameterized base class constructor is called when derived class object\nare created: Write a prngram to create classes to represent student, teaching staffs and non-\nteaching staffs from the base class person. Use proper'members in the classes to make your\nprogram meaningful.",
           "marks": "8",
           "chapter": "Inheritance",
           "isDiagram": false
         },
         {
-          "qNum": 6,
-          "text": "What do you mean by manipulators? Explain different manipulators available in C++.\nWrite a program that stores information ofa students in a file and display the file's content\nin descending order according to their marks obtained.\nWhat are virtual functions and pure virtual functions? Explain abstract class and its use.\nWrite a program having student as an abstract class and create derived class such as\nEngineering, Science and Medical. Show the use of virtual functions in this program.",
+          "qNum": 12,
+          "text": "What do you mean by manipulators? Explain different manipulators available in C++.\nWrite a program that stores information ofa students in a file and display the file's content\nin descending order according to their marks obtained.\nWhat are virtual functions and pure virtual functions? Explain abstract class and its use.\nWrite a program having student as $a^n$ abstract class and create derived class such as\nEngineering, Science and Medical. Show the use of virtual functions in this program.",
           "marks": "8",
           "chapter": "Virtual Functions",
           "isDiagram": false
         },
         {
-          "qNum": 8,
-          "text": "What do you understand by function template? Write down the syntax and use of function\ntemplate. Write a program that will find the sum and average of elements in an array using\nfunction templates.",
+          "qNum": 13,
+          "text": "What do you understand by function template? Write down the syntax and use of function\ntemplate. Write a program that will find the sum and average of elements in $a^n$ array using\nfunction templates.",
           "marks": "8",
           "chapter": "Templates",
           "isDiagram": false
@@ -2494,7 +2515,7 @@
         },
         {
           "qNum": 2,
-          "text": "Why don't you use an object to call the Static Member Function, explain with example?\nWhy do you need to use a reference in the argument to the copy constructor? Write a\nprogram to calculate the Perimeter of Triangle using Default and Parameterized\nconstructors.",
+          "text": "Why don't you use $a^n$ object to call the Static Member Function, explain with example?\nWhy do you need to use a reference in the argument to the copy constructor? Write a\nprogram to calculate the Perimeter of Triangle using Default and Parameterized\nconstructors.",
           "marks": "8",
           "chapter": "Objects and Classes",
           "isDiagram": false

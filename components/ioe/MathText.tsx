@@ -1,19 +1,15 @@
 "use client";
 
-import React, { useEffect, useState, useMemo } from "react";
-
-type KatexRenderer = {
-  renderToString: (tex: string, options?: { displayMode?: boolean; throwOnError?: boolean }) => string;
-};
-
-let cachedKatex: KatexRenderer | null = null;
+import React, { useMemo } from "react";
+import katex from "katex";
+import "katex/dist/katex.min.css";
 
 interface MathTextProps {
   text: string;
   className?: string;
 }
 
-function renderInlineMath(text: string, renderer: KatexRenderer | null): React.ReactNode[] {
+function renderInlineMath(text: string): React.ReactNode[] {
   if (!text) return [];
   const regex = /(\$\$[\s\S]*?\$\$|\$[^\$\n]+?\$)/g;
   const parts = text.split(regex);
@@ -21,50 +17,46 @@ function renderInlineMath(text: string, renderer: KatexRenderer | null): React.R
   return parts.map((part, index) => {
     if (part.startsWith("$$") && part.endsWith("$$")) {
       const math = part.slice(2, -2).trim();
-      if (renderer) {
-        try {
-          const html = renderer.renderToString(math, {
-            displayMode: true,
-            throwOnError: false,
-          });
-          return (
-            <span
-              key={index}
-              className="my-1.5 block overflow-x-auto py-0.5 text-center"
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
-          );
-        } catch {
-          return <span key={index} className="font-mono text-xs">{part}</span>;
-        }
+      try {
+        const html = katex.renderToString(math, {
+          displayMode: true,
+          throwOnError: false,
+          output: "html",
+        });
+        return (
+          <span
+            key={index}
+            className="my-2 block overflow-x-auto py-1 text-center"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        );
+      } catch {
+        return <span key={index} className="font-mono text-xs">{part}</span>;
       }
-      return <span key={index} className="font-mono text-xs">{part}</span>;
     } else if (part.startsWith("$") && part.endsWith("$") && part.length > 2) {
       const math = part.slice(1, -1).trim();
-      if (renderer) {
-        try {
-          const html = renderer.renderToString(math, {
-            displayMode: false,
-            throwOnError: false,
-          });
-          return (
-            <span
-              key={index}
-              className="inline-math px-0.5"
-              dangerouslySetInnerHTML={{ __html: html }}
-            />
-          );
-        } catch {
-          return <span key={index} className="font-mono text-xs">{part}</span>;
-        }
+      try {
+        const html = katex.renderToString(math, {
+          displayMode: false,
+          throwOnError: false,
+          output: "html",
+        });
+        return (
+          <span
+            key={index}
+            className="inline-math px-0.5"
+            dangerouslySetInnerHTML={{ __html: html }}
+          />
+        );
+      } catch {
+        return <span key={index} className="font-mono text-xs">{part}</span>;
       }
-      return <span key={index} className="font-mono text-xs">{part}</span>;
     }
     return <React.Fragment key={index}>{part}</React.Fragment>;
   });
 }
 
-function parseMarkdownTable(tableLines: string[], renderer: KatexRenderer | null, keyPrefix: number): React.ReactNode {
+function parseMarkdownTable(tableLines: string[], keyPrefix: number): React.ReactNode {
   if (tableLines.length < 2) {
     return (
       <div key={keyPrefix} className="font-mono text-xs whitespace-pre-wrap">
@@ -91,7 +83,7 @@ function parseMarkdownTable(tableLines: string[], renderer: KatexRenderer | null
           <tr>
             {headerCells.map((cell, idx) => (
               <th key={idx} className="px-3 py-2 border-r last:border-r-0 border-slate-200 dark:border-gray-700">
-                {renderInlineMath(cell, renderer)}
+                {renderInlineMath(cell)}
               </th>
             ))}
           </tr>
@@ -103,7 +95,7 @@ function parseMarkdownTable(tableLines: string[], renderer: KatexRenderer | null
               <tr key={rIdx} className="hover:bg-slate-50/60 dark:hover:bg-gray-800/40 transition-colors">
                 {cells.map((cell, cIdx) => (
                   <td key={cIdx} className="px-3 py-2 border-r last:border-r-0 border-slate-100 text-slate-700 dark:border-gray-800/50 dark:text-slate-300">
-                    {renderInlineMath(cell, renderer)}
+                    {renderInlineMath(cell)}
                   </td>
                 ))}
               </tr>
@@ -117,28 +109,13 @@ function parseMarkdownTable(tableLines: string[], renderer: KatexRenderer | null
 
 /**
  * Enhanced MathText:
- * Parses and renders LaTeX math ($ and $$), Markdown Tables (|...|),
- * Code Blocks (```), and sub-question layouts.
+ * Synchronously parses and renders LaTeX math ($ and $$) with KaTeX (output: html),
+ * Markdown Tables (|...|), Code Blocks (```), and sub-question layouts.
  */
 export const MathText: React.FC<MathTextProps> = ({ text, className = "" }) => {
-  const [renderer, setRenderer] = useState<KatexRenderer | null>(cachedKatex);
-
-  useEffect(() => {
-    if (!cachedKatex) {
-      import("katex")
-        .then((mod) => {
-          const k = (mod.default ?? mod) as KatexRenderer;
-          cachedKatex = k;
-          setRenderer(k);
-        })
-        .catch(() => {});
-    }
-  }, []);
-
   const renderedContent = useMemo(() => {
     if (!text) return null;
 
-    // Check if text has code blocks, tables, or multiple lines
     const lines = text.split("\n");
     const blocks: React.ReactNode[] = [];
 
@@ -151,12 +128,11 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = "" }) => {
     const flushText = (blockIdx: number) => {
       if (textLines.length === 0) return;
       const joined = textLines.join("\n");
-      // Check for standalone OR divider
-      if (joined.trim() === "OR" || joined.trim() === "[OR]") {
+      if (joined.trim() === "OR" || joined.trim() === "[OR]" || joined.trim() === "**[OR]**") {
         blocks.push(
           <div key={`or-${blockIdx}`} className="my-2.5 flex items-center gap-2">
             <div className="h-px flex-1 bg-slate-200 dark:bg-gray-800" />
-            <span className="rounded-md bg-amber-100 px-2 py-0.5 text-[11px] font-extrabold uppercase tracking-wider text-amber-800 dark:bg-amber-950 dark:text-amber-300">
+            <span className="rounded-md bg-amber-100 px-2.5 py-0.5 text-[11px] font-extrabold uppercase tracking-wider text-amber-800 dark:bg-amber-950 dark:text-amber-300">
               OR
             </span>
             <div className="h-px flex-1 bg-slate-200 dark:bg-gray-800" />
@@ -165,7 +141,7 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = "" }) => {
       } else {
         blocks.push(
           <div key={`txt-${blockIdx}`} className="leading-relaxed">
-            {renderInlineMath(joined, renderer)}
+            {renderInlineMath(joined)}
           </div>
         );
       }
@@ -174,7 +150,7 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = "" }) => {
 
     const flushTable = (blockIdx: number) => {
       if (tableLines.length === 0) return;
-      blocks.push(parseMarkdownTable(tableLines, renderer, blockIdx));
+      blocks.push(parseMarkdownTable(tableLines, blockIdx));
       tableLines = [];
     };
 
@@ -182,7 +158,6 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = "" }) => {
       const line = lines[i];
       const trimmed = line.trim();
 
-      // Code fence detection
       if (trimmed.startsWith("```")) {
         if (!inCode) {
           flushText(i);
@@ -214,7 +189,6 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = "" }) => {
         continue;
       }
 
-      // Markdown Table line detection: starts and ends with '|' or contains multiple '|'
       const isTableLine = (trimmed.startsWith("|") && trimmed.endsWith("|")) || (trimmed.includes("|") && trimmed.split("|").length >= 3);
       if (isTableLine) {
         flushText(i);
@@ -236,8 +210,7 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = "" }) => {
     flushText(lines.length);
 
     return blocks;
-  }, [text, renderer]);
+  }, [text]);
 
   return <div className={`max-w-full overflow-x-auto ${className}`}>{renderedContent}</div>;
 };
-

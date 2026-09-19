@@ -1118,3 +1118,15 @@ button:focus-visible {
   left: 1rem;
   top: 1rem;
 }
+
+/* KaTeX MathML strict hide to avoid dual selection and broken rendering */
+.katex-mathml {
+  display: none !important;
+}
+.katex-html {
+  user-select: text;
+}
+.katex {
+  font-size: 1.05em;
+  text-rendering: auto;
+}
