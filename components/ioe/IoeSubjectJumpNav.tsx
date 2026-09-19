@@ -49,7 +49,7 @@ export function IoeSubjectJumpNav({
     }
 
     return () => observer.disconnect();
-  }, [hasQuestions]);
+  }, [hasQuestions, hasSyllabus, hasExamScheme]);
 
   const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
     e.preventDefault();

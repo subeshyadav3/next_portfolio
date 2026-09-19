@@ -95,29 +95,6 @@ export default async function IoeSubjectPage({ params }: PageProps) {
     { name: subjectRow.title, path },
   ]);
 
-  const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": `How can I download ${subjectRow.title} IOE past question papers?`,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": `You can preview or download ${subjectRow.title} past question papers (PDF) directly using the built-in PDF viewer on this page with zero redirects or paywalls.`
-        }
-      },
-      {
-        "@type": "Question",
-        "name": `What is the examination scheme for ${subjectRow.title} (${subjectRow.code})?`,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": `The general current IOE scheme uses a 60-mark final theory exam and 40-mark internal assessment, with pass marks of 24 and 16. Course-specific practical and project evaluation may differ, so students should verify the available syllabus.`
-        }
-      }
-    ]
-  };
-
   const titleLower = subjectRow.title.toLowerCase();
   const isDrawing = titleLower.includes("drawing");
   const isProject = titleLower.includes("project") || titleLower.includes("thesis");
@@ -127,9 +104,8 @@ export default async function IoeSubjectPage({ params }: PageProps) {
   const isCivil = titleLower.includes("survey") || titleLower.includes("hydraulics") || titleLower.includes("structural") || titleLower.includes("concrete") || titleLower.includes("transportation");
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-8 sm:space-y-10">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumb) }} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(faqSchema) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -226,6 +202,13 @@ export default async function IoeSubjectPage({ params }: PageProps) {
         </section>
       )}
 
+      {/* ── Quick Jump Navigation Bar ── */}
+      <IoeSubjectJumpNav
+        hasQuestions={Boolean(questionsData && questionsData.questions.length > 0)}
+        hasSyllabus={Boolean(syllabus)}
+        hasExamScheme={true}
+      />
+
       {/* ── Embedded PDF Viewer ── */}
       <section id="pdf-viewer" className="space-y-3">
         <div className="flex items-center justify-between">
@@ -238,13 +221,6 @@ export default async function IoeSubjectPage({ params }: PageProps) {
         </div>
         <PdfViewer papers={papers} />
       </section>
-
-      {/* ── Quick Jump Navigation Bar ── */}
-      <IoeSubjectJumpNav
-        hasQuestions={Boolean(questionsData && questionsData.questions.length > 0)}
-        hasSyllabus={Boolean(syllabus)}
-        hasExamScheme={true}
-      />
 
       {/* ── Top Repeated Past Examination Questions ── */}
       {questionsData && questionsData.questions.length > 0 && (

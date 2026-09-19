@@ -9,6 +9,7 @@ import {
   Check,
   BookOpen,
   ChevronDown,
+  ChevronUp,
   ArrowUp,
   Flame,
   TrendingUp,
@@ -44,6 +45,8 @@ export function QuestionBank({ chapters = [], questions = [], subject }: Questio
   const [query, setQuery] = useState("");
   const [copiedIndex, setCopiedIndex] = useState<string | null>(null);
   const [showTopBtn, setShowTopBtn] = useState(false);
+  const [displayLimit, setDisplayLimit] = useState<number>(10);
+  const [openChapters, setOpenChapters] = useState<Set<string>>(new Set());
 
   useEffect(() => {
     const handleScroll = () => {
@@ -114,10 +117,47 @@ export function QuestionBank({ chapters = [], questions = [], subject }: Questio
     });
   }, [filteredQuestions, chapterList]);
 
+  // Automatically initialize openChapters with first 2 chapters
+  useEffect(() => {
+    if (groupedByChapter.length > 0) {
+      setOpenChapters((prev) => {
+        if (prev.size === 0) {
+          return new Set(groupedByChapter.slice(0, 2).map(([name]) => name));
+        }
+        return prev;
+      });
+    }
+  }, [groupedByChapter]);
+
+  // When search query is entered, auto-expand all chapters containing matches
+  useEffect(() => {
+    if (query.trim().length > 0) {
+      setOpenChapters(new Set(groupedByChapter.map(([name]) => name)));
+    }
+  }, [query, groupedByChapter]);
+
+  const toggleChapter = (chName: string) => {
+    setOpenChapters((prev) => {
+      const next = new Set(prev);
+      if (next.has(chName)) next.delete(chName);
+      else next.add(chName);
+      return next;
+    });
+  };
+
+  const expandAllChapters = () => {
+    setOpenChapters(new Set(groupedByChapter.map(([name]) => name)));
+  };
+
+  const collapseAllChapters = () => {
+    setOpenChapters(new Set());
+  };
+
   const resetFilters = () => {
     setSelectedChapter("all");
     setMinFrequency(0);
     setQuery("");
+    setDisplayLimit(10);
   };
 
   const renderQuestionCard = (item: IoeQuestion, index: number, idPrefix: string) => {
@@ -222,12 +262,12 @@ export function QuestionBank({ chapters = [], questions = [], subject }: Questio
 
         {/* Exam Sessions Tag List */}
         {years.length > 0 && (
-          <div className="mt-4 flex flex-wrap items-center gap-1.5 pt-3 border-t border-slate-100 dark:border-gray-800/80">
+          <div className="mt-3 flex flex-wrap items-center gap-1.5 pt-2.5 border-t border-slate-100 dark:border-gray-800/80">
             <span className="inline-flex items-center gap-1 text-[11px] font-semibold text-slate-500 dark:text-slate-400 mr-1">
               <Calendar className="h-3 w-3 text-slate-400" />
               Appeared in:
             </span>
-            {years.map((yr) => (
+            {years.slice(0, 6).map((yr) => (
               <span
                 key={yr}
                 className="inline-block rounded-md bg-slate-100/90 px-2 py-0.5 text-[11px] font-medium text-slate-700 dark:bg-gray-800 dark:text-slate-300 border border-slate-200/60 dark:border-gray-700/60"
@@ -235,6 +275,14 @@ export function QuestionBank({ chapters = [], questions = [], subject }: Questio
                 {yr}
               </span>
             ))}
+            {years.length > 6 && (
+              <span
+                className="inline-block rounded-md bg-blue-50 px-2 py-0.5 text-[11px] font-semibold text-blue-700 dark:bg-blue-950 dark:text-blue-300"
+                title={years.slice(6).join(", ")}
+              >
+                +{years.length - 6} more
+              </span>
+            )}
           </div>
         )}
       </article>
@@ -403,38 +451,99 @@ export function QuestionBank({ chapters = [], questions = [], subject }: Questio
         </div>
       )}
 
-      {/* ── MODE 1: RANKED BY FREQUENCY (DEFAULT) ── */}
+      {/* ── MODE 1: RANKED BY FREQUENCY ── */}
       {viewMode === "frequency" && filteredQuestions.length > 0 && (
         <div className="space-y-4">
-          {filteredQuestions.map((item, idx) => renderQuestionCard(item, idx, "freq"))}
+          {(query || minFrequency > 0 || selectedChapter !== "all"
+            ? filteredQuestions
+            : filteredQuestions.slice(0, displayLimit)
+          ).map((item, idx) => renderQuestionCard(item, idx, "freq"))}
+
+          {!query && minFrequency === 0 && selectedChapter === "all" && filteredQuestions.length > displayLimit && (
+            <div className="pt-3 text-center">
+              <button
+                type="button"
+                onClick={() => setDisplayLimit((prev) => prev + 15)}
+                className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-5 py-2.5 text-xs sm:text-sm font-bold text-slate-800 shadow-xs transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600 dark:border-gray-800 dark:bg-gray-900 dark:text-slate-200 dark:hover:border-blue-500/50 dark:hover:bg-gray-800 cursor-pointer"
+              >
+                <span>Show More Questions ({filteredQuestions.length - displayLimit} remaining)</span>
+                <ChevronDown className="h-4 w-4" />
+              </button>
+            </div>
+          )}
         </div>
       )}
 
-      {/* ── MODE 2: BY SYLLABUS CHAPTER ── */}
+      {/* ── MODE 2: BY SYLLABUS CHAPTER (ACCORDIONS) ── */}
       {viewMode === "chapter" && filteredQuestions.length > 0 && (
-        <div className="space-y-8">
-          {groupedByChapter.map(([chName, items]) => (
-            <section
-              key={chName}
-              className="space-y-3 rounded-3xl border border-slate-200/90 bg-slate-50/50 p-5 dark:border-gray-800/90 dark:bg-gray-900/40 sm:p-6"
-            >
-              {/* Chapter Header */}
-              <div className="flex items-center justify-between">
-                <h3 className="flex items-center gap-2.5 text-base sm:text-lg font-extrabold text-slate-900 dark:text-white">
-                  <span className="h-4 w-1.5 rounded-full bg-blue-600" />
-                  {chName}
-                </h3>
-                <span className="rounded-full bg-blue-50 px-3 py-1 text-xs font-bold text-blue-700 dark:bg-blue-950 dark:text-blue-300">
-                  {items.length} {items.length === 1 ? "Question" : "Questions"}
-                </span>
-              </div>
+        <div className="space-y-4">
+          {/* Global chapter controls */}
+          <div className="flex items-center justify-between px-1 text-xs">
+            <span className="font-semibold text-slate-500 dark:text-slate-400">
+              {groupedByChapter.length} Chapters · Click any chapter to expand
+            </span>
+            <div className="flex items-center gap-2 font-semibold text-blue-600 dark:text-blue-400">
+              <button
+                type="button"
+                onClick={expandAllChapters}
+                className="hover:underline cursor-pointer"
+              >
+                Expand All
+              </button>
+              <span className="text-slate-300 dark:text-slate-700">·</span>
+              <button
+                type="button"
+                onClick={collapseAllChapters}
+                className="hover:underline cursor-pointer"
+              >
+                Collapse All
+              </button>
+            </div>
+          </div>
 
-              {/* Questions within Chapter */}
-              <div className="space-y-4">
-                {items.map((item, idx) => renderQuestionCard(item, idx, chName))}
+          {groupedByChapter.map(([chName, items]) => {
+            const isOpen = openChapters.has(chName);
+            return (
+              <div
+                key={chName}
+                className="overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-xs transition dark:border-gray-800/90 dark:bg-gray-900"
+              >
+                {/* Chapter Accordion Header */}
+                <button
+                  type="button"
+                  onClick={() => toggleChapter(chName)}
+                  aria-expanded={isOpen}
+                  className="flex w-full items-center justify-between gap-3 p-4 sm:p-5 text-left transition hover:bg-slate-50/80 dark:hover:bg-gray-800/50 cursor-pointer"
+                >
+                  <div className="flex flex-wrap items-center gap-2.5">
+                    <span className="h-4 w-1.5 rounded-full bg-blue-600" />
+                    <h3 className="text-sm sm:text-base font-extrabold text-slate-900 dark:text-white">
+                      {chName}
+                    </h3>
+                    <span className="rounded-full bg-blue-50 px-2.5 py-0.5 text-xs font-bold text-blue-700 dark:bg-blue-950 dark:text-blue-300">
+                      {items.length} {items.length === 1 ? "Question" : "Questions"}
+                    </span>
+                  </div>
+
+                  <div className="flex items-center gap-2 shrink-0">
+                    <span className="text-xs font-semibold text-slate-500 dark:text-slate-400 hidden xs:inline">
+                      {isOpen ? "Collapse" : "View"}
+                    </span>
+                    <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-slate-100 dark:bg-gray-800 text-slate-600 dark:text-slate-300">
+                      {isOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+                    </div>
+                  </div>
+                </button>
+
+                {/* Chapter Questions List */}
+                {isOpen && (
+                  <div className="border-t border-slate-100 bg-slate-50/40 p-4 sm:p-5 dark:border-gray-800 dark:bg-gray-900/40 space-y-4">
+                    {items.map((item, idx) => renderQuestionCard(item, idx, chName))}
+                  </div>
+                )}
               </div>
-            </section>
-          ))}
+            );
+          })}
         </div>
       )}
 
