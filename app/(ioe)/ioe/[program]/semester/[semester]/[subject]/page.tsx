@@ -16,7 +16,7 @@ import { QuestionBank } from "@/components/ioe/QuestionBank";
 import { YearWiseQuestions } from "@/components/ioe/YearWiseQuestions";
 import { IoeSubjectJumpNav } from "@/components/ioe/IoeSubjectJumpNav";
 import { buildIoeMetadata, breadcrumbLd, jsonLd, learningResourceLd } from "@/lib/ioe/seo";
-import { ChevronRight, FileText, Award, HelpCircle, CheckCircle2 } from "lucide-react";
+import { ChevronRight, FileText, Award, CheckCircle2 } from "lucide-react";
 
 interface PageProps {
   params: Promise<{ program: string; semester: string; subject: string }>;
@@ -244,7 +244,6 @@ export default async function IoeSubjectPage({ params }: PageProps) {
         hasQuestions={Boolean(questionsData && questionsData.questions.length > 0)}
         hasSyllabus={Boolean(syllabus)}
         hasExamScheme={true}
-        hasFaq={true}
       />
 
       {/* ── Top Repeated Past Examination Questions ── */}
@@ -328,40 +327,6 @@ export default async function IoeSubjectPage({ params }: PageProps) {
               </li>
               <li>Structure answers with labeled diagrams, concise bullet points, and highlight final answers in numerical solutions.</li>
             </ul>
-          </div>
-        </div>
-
-        {/* FAQ Section */}
-        <div id="faq" className="border-t border-slate-100 pt-6 dark:border-gray-800">
-          <h3 className="flex items-center gap-2 text-base font-bold text-slate-900 dark:text-white">
-            <HelpCircle className="h-4 w-4 text-emerald-500" />
-            Frequently Asked Questions ({subjectRow.title})
-          </h3>
-          <div className="mt-4 space-y-4 text-xs sm:text-sm">
-            <div>
-              <p className="font-semibold text-slate-800 dark:text-slate-200">
-                Q: How can I download {subjectRow.title} past question papers?
-              </p>
-              <p className="mt-1 text-slate-500 dark:text-slate-400">
-                You can preview or download the {subjectRow.title} question papers (PDF) directly using the built-in viewer on this page with zero redirects or paywalls.
-              </p>
-            </div>
-            <div>
-              <p className="font-semibold text-slate-800 dark:text-slate-200">
-                Q: What is the pass mark for {subjectRow.title}?
-              </p>
-              <p className="mt-1 text-slate-500 dark:text-slate-400">
-                The general current scheme is a {assessment.theory}-mark final theory exam and a {assessment.internal}-mark internal assessment, with pass marks of {assessment.passTheory} and {assessment.passInternal}. Verify the course-specific syllabus above.
-              </p>
-            </div>
-            <div>
-              <p className="font-semibold text-slate-800 dark:text-slate-200">
-                Q: Where can I find the complete syllabus for this subject?
-              </p>
-              <p className="mt-1 text-slate-500 dark:text-slate-400">
-                 The available chapter-wise syllabus and topic breakdown is indexed in the Syllabus section above, with links to the curriculum PDF source.
-              </p>
-            </div>
           </div>
         </div>
       </section>

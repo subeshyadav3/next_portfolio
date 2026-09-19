@@ -16,7 +16,7 @@ function renderInlineMath(text: string): React.ReactNode[] {
 
   return parts.map((part, index) => {
     if (part.startsWith("$$") && part.endsWith("$$")) {
-      const math = part.slice(2, -2).trim();
+      const math = part.slice(2, -2).trim().replace(/µ/g, "\\mu ");
       try {
         const html = katex.renderToString(math, {
           displayMode: true,
@@ -34,7 +34,7 @@ function renderInlineMath(text: string): React.ReactNode[] {
         return <span key={index} className="font-mono text-xs">{part}</span>;
       }
     } else if (part.startsWith("$") && part.endsWith("$") && part.length > 2) {
-      const math = part.slice(1, -1).trim();
+      const math = part.slice(1, -1).trim().replace(/µ/g, "\\mu ");
       try {
         const html = katex.renderToString(math, {
           displayMode: false,
@@ -53,6 +53,36 @@ function renderInlineMath(text: string): React.ReactNode[] {
       }
     }
     return <React.Fragment key={index}>{part}</React.Fragment>;
+  });
+}
+
+function convertHtmlTableToMarkdown(html: string): string {
+  if (!html || !html.includes("<table")) return html;
+
+  return html.replace(/<table[\s\S]*?<\/table\s*>/gi, (match) => {
+    const trMatches = match.match(/<tr[\s\S]*?<\/tr>/gi) || [];
+    const rows: string[][] = [];
+    for (const tr of trMatches) {
+      const cellMatches = tr.match(/<(?:th|td)[\s\S]*?<\/(?:th|td)>/gi) || [];
+      const cleanCells = cellMatches.map((c) =>
+        c.replace(/<[\s\S]*?>/g, "").trim().replace(/\|/g, "&#124;")
+      );
+      if (cleanCells.length > 0) {
+        rows.push(cleanCells);
+      }
+    }
+    if (rows.length === 0) return "";
+    const maxCols = Math.max(...rows.map((r) => r.length));
+    if (maxCols === 0) return "";
+    const paddedRows = rows.map((r) => [...r, ...Array(maxCols - r.length).fill("")]);
+    const header = paddedRows[0];
+    const separator = Array(maxCols).fill("---");
+    const mdLines = [
+      `| ${header.join(" | ")} |`,
+      `| ${separator.join(" | ")} |`,
+      ...paddedRows.slice(1).map((r) => `| ${r.join(" | ")} |`),
+    ];
+    return `\n\n${mdLines.join("\n")}\n\n`;
   });
 }
 
@@ -77,12 +107,12 @@ function parseMarkdownTable(tableLines: string[], keyPrefix: number): React.Reac
   const bodyLines = hasSeparator ? tableLines.slice(2) : tableLines.slice(1);
 
   return (
-    <div key={keyPrefix} className="my-3 overflow-x-auto rounded-xl border border-slate-200 shadow-2xs dark:border-gray-800">
+    <div key={keyPrefix} className="my-3 overflow-x-auto rounded-xl border border-slate-200/90 shadow-2xs dark:border-gray-800">
       <table className="min-w-full divide-y divide-slate-200 text-left text-xs sm:text-sm dark:divide-gray-800">
         <thead className="bg-slate-100/90 font-bold text-slate-900 dark:bg-gray-800/90 dark:text-white">
           <tr>
             {headerCells.map((cell, idx) => (
-              <th key={idx} className="px-3 py-2 border-r last:border-r-0 border-slate-200 dark:border-gray-700">
+              <th key={idx} className="px-3 py-2 border-r last:border-r-0 border-slate-200 dark:border-gray-700 whitespace-nowrap">
                 {renderInlineMath(cell)}
               </th>
             ))}
@@ -116,7 +146,8 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = "" }) => {
   const renderedContent = useMemo(() => {
     if (!text) return null;
 
-    const lines = text.split("\n");
+    const normalizedText = convertHtmlTableToMarkdown(text).replace(/\n{3,}/g, "\n\n");
+    const lines = normalizedText.split("\n");
     const blocks: React.ReactNode[] = [];
 
     let inCode = false;

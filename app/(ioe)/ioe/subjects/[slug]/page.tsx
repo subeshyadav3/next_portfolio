@@ -152,7 +152,6 @@ export default async function IoeSubjectArchivePage({ params }: PageProps) {
         hasQuestions={Boolean(questions && questions.questions.length > 0)}
         hasSyllabus={Boolean(syllabus)}
         hasExamScheme={false}
-        hasFaq={false}
       />
 
       {/* Top Repeated Past Examination Questions */}

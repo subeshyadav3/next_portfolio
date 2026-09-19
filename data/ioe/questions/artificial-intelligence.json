@@ -991,14 +991,14 @@
         },
         {
           "qNum": 13,
-          "text": "During a research work, you encounter a number of dogs that either bark or (try to) bite. The dogs are described by the binary features like Heavy, Smelly, Big and Growling. Consider the following set of examples:<table><thead><tr><th>Heavy</th><th>Smelly</th><th>Big</th><th>Growling</th><th>Bites</th></tr></thead><tbody><tr><td>No</td><td>No</td><td>No</td><td>No</td><td>No</td></tr><tr><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr><tr><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>No</td></tr><tr><td>Yes</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td></tr><tr><td>No</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td></tr><tr><td>No</td><td>No</td><td>Yes</td><td>Yes</td><td>Yes</td></tr><tr><td>No</td><td>No</td><td>No</td><td>Yes</td><td>Yes</td></tr><tr><td>Yes</td><td>Yes</td><td>No</td><td>No</td><td>Yes</td></tr></tbody></table>Now answer following questions:\n(a) What is the entropy of the target value Bites in the data?\n(b) Which attribute would the ID3 algorithm choose to use for the root of the tree (without pruning)?\n(c) What is the information gain of the attribute you chose in the previous question?\n(d) Draw the full decision tree that would be learned for this data using ID3 without pruning.",
+          "text": "During a research work, you encounter a number of dogs that either bark or (try to) bite. The dogs are described by the binary features like Heavy, Smelly, Big and Growling. Consider the following set of examples:\n\n| Heavy | Smelly | Big | Growling | Bites |\n| --- | --- | --- | --- | --- |\n| No | No | No | No | No |\n| No | No | Yes | No | No |\n| Yes | Yes | No | Yes | No |\n| Yes | No | No | Yes | Yes |\n| No | Yes | Yes | No | Yes |\n| No | No | Yes | Yes | Yes |\n| No | No | No | Yes | Yes |\n| Yes | Yes | No | No | Yes |\n\nNow answer following questions:\n(a) What is the entropy of the target value Bites in the data?\n(b) Which attribute would the ID3 algorithm choose to use for the root of the tree (without pruning)?\n(c) What is the information gain of the attribute you chose in the previous question?\n(d) Draw the full decision tree that would be learned for this data using ID3 without pruning.",
           "marks": "8",
           "chapter": "Machine Learning Fundamentals",
           "isDiagram": false
         },
         {
           "qNum": 14,
-          "text": "The following table contains test results of 15 sample with real covid cases and a set of predictions from ML algorithm.<table><thead><tr><th>S.no</th><th>1</th><th>2</th><th>3</th><th>4</th><th>5</th><th>6</th><th>7</th><th>8</th><th>9</th><th>10</th><th>11</th><th>12</th><th>13</th><th>14</th><th>15</th></tr></thead><tbody><tr><td>Expected</td><td>+ve</td><td>+ve</td><td>-ve</td><td>+ve</td><td>-ve</td><td>-ve</td><td>-ve</td><td>+ve</td><td>+ve</td><td>-ve</td><td>+ve</td><td>+ve</td><td>-ve</td><td>+ve</td><td>+ve</td></tr><tr><td>Predicted</td><td>-ve</td><td>+ve</td><td>-ve</td><td>+ve</td><td>+ve</td><td>-ve</td><td>-ve</td><td>+ve</td><td>-ve</td><td>-ve</td><td>+ve</td><td>-ve</td><td>-ve</td><td>+ve</td><td>-ve</td></tr></tbody></table>a) Compute the confusion matrix for the data.\n(b) Compute the accuracy, precision, recall, and F1 score.",
+          "text": "The following table contains test results of 15 sample with real covid cases and a set of predictions from ML algorithm.\n\n| S.no | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n| Expected | +ve | +ve | -ve | +ve | -ve | -ve | -ve | +ve | +ve | -ve | +ve | +ve | -ve | +ve | +ve |\n| Predicted | -ve | +ve | -ve | +ve | +ve | -ve | -ve | +ve | -ve | -ve | +ve | -ve | -ve | +ve | -ve |\n\na) Compute the confusion matrix for the data.\n(b) Compute the accuracy, precision, recall, and F1 score.",
           "marks": "6",
           "chapter": "Machine Learning Fundamentals",
           "isDiagram": false
@@ -1070,7 +1070,7 @@
         },
         {
           "qNum": 3,
-          "text": "\n(a) Assume the following facts:\nEvery child loves Santa. Everyone who loves Santa loves any reindeer. Rudolph is a reindeer, and Rudolph has a red nose. Anything which has a red nose is weird or is a clown. No reindeer is a clown. Scrooge does not love anything which is weird. Using Resolution Refutation method derive the following conclusion: Scrooge is not a child. [8]\n(b) What is CNF? Explain rule of inference along with example.",
+          "text": "(a) Assume the following facts:\nEvery child loves Santa. Everyone who loves Santa loves any reindeer. Rudolph is a reindeer, and Rudolph has a red nose. Anything which has a red nose is weird or is a clown. No reindeer is a clown. Scrooge does not love anything which is weird. Using Resolution Refutation method derive the following conclusion: Scrooge is not a child. [8]\n(b) What is CNF? Explain rule of inference along with example.",
           "marks": "2",
           "chapter": "Knowledge Representation and Probabilistic Reasoning",
           "isDiagram": false

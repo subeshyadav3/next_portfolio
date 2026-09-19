@@ -781,7 +781,7 @@
         },
         {
           "qNum": 9,
-          "text": "\n(a) How do you compute $a^n$ attribute Closure? Explain with a suitable example.\n(b) Define 3NF along with a suitable example schema. Compare 3NF with BCNF.",
+          "text": "(a) How do you compute $a^n$ attribute Closure? Explain with a suitable example.\n(b) Define 3NF along with a suitable example schema. Compare 3NF with BCNF.",
           "marks": "3",
           "chapter": "General",
           "isDiagram": false
@@ -1037,7 +1037,7 @@
         },
         {
           "qNum": 4,
-          "text": "Consider the following Library database.\nBook(<u>BID</u>, Title, Author, Genre, Publisher, Year)\nMember(<u>MID</u>, Name, Email, Phone, Address)\nIssuedBook(<u>LibID</u>, <u>MID</u>, <u>BID</u>, IssueDate, ReturnDate)\nLibrarian(<u>LibID</u>, Name, Email, Phone, Salary)\nManages(<u>LibID</u>, <u>BID</u>)\nWrite relational algebra expression for the given queries: [3×2]\\n(i) Find the Book title, author name and publication year where genre is Novel.\\n(ii) Delete all the information of members who are from Kathmandu City.\\n(iii) Find the Book title and librarian name who had managed the books that were published by Pearson publication.",
+          "text": "Consider the following Library database.\nBook(BID, Title, Author, Genre, Publisher, Year)\nMember(MID, Name, Email, Phone, Address)\nIssuedBook(LibID, MID, BID, IssueDate, ReturnDate)\nLibrarian(LibID, Name, Email, Phone, Salary)\nManages(LibID, BID)\nWrite relational algebra expression for the given queries: [3×2]\\n(i) Find the Book title, author name and publication year where genre is Novel.\\n(ii) Delete all the information of members who are from Kathmandu City.\\n(iii) Find the Book title and librarian name who had managed the books that were published by Pearson publication.",
           "marks": "8",
           "chapter": "Relational Query Languages",
           "isDiagram": false
@@ -1165,14 +1165,14 @@
         },
         {
           "qNum": 3,
-          "text": "\n(a) Consider the relational database as follows. Write relational algebra expression for each of the following. [4\\times2]\nlives(person-name, street,city)\nworks(person-name, company-name, salary)\nlocated-in(company-name, city)\nmanages(person-name, manager-name)\\n(i) Find the name of persons working at \"City Bank\" who earn more than \\50,000.\\n(ii) Find names of all persons who live in the same city as the company they work for.\\n(iii) Increase the salary of all persons working for \"City Bank\" by 5%.\\n(iv) Give expression in QBE to find all the records of Manager whose name starts with \"M\" and Salary is more than 60,000.\n(b) Consider the following relational schema. [4\\times2]\nEmployee (empid, ename, address, title, headid)\nProject (pid, pname, budget, location)\nWork (empid, pid, responsibility, duration)\nPayment (title, salary)\\n(i) Write SQL code to create the above relational schemas.\\n(ii) Write SQL to count the number of project with duration more than 2 years.\\n(iii) Write SQL query to find the name of employees working in \"ICT\" project and earning more than 20K.\\n(iv) Write SQL to update the salary of employees by 15% if salary is less than 50 K, by 10% if salary is in between 50 K to 100 K and by 5 % if salary is greater than 100 K.",
+          "text": "(a) Consider the relational database as follows. Write relational algebra expression for each of the following. [4\\times2]\nlives(person-name, street,city)\nworks(person-name, company-name, salary)\nlocated-in(company-name, city)\nmanages(person-name, manager-name)\\n(i) Find the name of persons working at \"City Bank\" who earn more than \\50,000.\\n(ii) Find names of all persons who live in the same city as the company they work for.\\n(iii) Increase the salary of all persons working for \"City Bank\" by 5%.\\n(iv) Give expression in QBE to find all the records of Manager whose name starts with \"M\" and Salary is more than 60,000.\n(b) Consider the following relational schema. [4\\times2]\nEmployee (empid, ename, address, title, headid)\nProject (pid, pname, budget, location)\nWork (empid, pid, responsibility, duration)\nPayment (title, salary)\\n(i) Write SQL code to create the above relational schemas.\\n(ii) Write SQL to count the number of project with duration more than 2 years.\\n(iii) Write SQL query to find the name of employees working in \"ICT\" project and earning more than 20K.\\n(iv) Write SQL to update the salary of employees by 15% if salary is less than 50 K, by 10% if salary is in between 50 K to 100 K and by 5 % if salary is greater than 100 K.",
           "marks": "8",
           "chapter": "Relational Query Languages",
           "isDiagram": false
         },
         {
           "qNum": 4,
-          "text": "\n(a) How do you compute $a^n$ attribute closure? Explain with a suitable example. What are the uses of attribute closure? [3+2]\n(b) Consider a relation schema $R\\ (\\ A\\ ,\\ B\\ ,\\ C\\ ,\\ D\\ )$ with the following functional dependencies- $A \\rightarrow B, B \\rightarrow C, C \\rightarrow D, D \\rightarrow B$. Determine whether the decomposition of $R$ into $R1\\ (\\ A\\ ,\\ B\\ ), R2\\ (\\ B\\ ,\\ C\\ )$ and $R3\\ (\\ B\\ ,\\ D\\ )$ is lossless or lossy.",
+          "text": "(a) How do you compute $a^n$ attribute closure? Explain with a suitable example. What are the uses of attribute closure? [3+2]\n(b) Consider a relation schema $R\\ (\\ A\\ ,\\ B\\ ,\\ C\\ ,\\ D\\ )$ with the following functional dependencies- $A \\rightarrow B, B \\rightarrow C, C \\rightarrow D, D \\rightarrow B$. Determine whether the decomposition of $R$ into $R1\\ (\\ A\\ ,\\ B\\ ), R2\\ (\\ B\\ ,\\ C\\ )$ and $R3\\ (\\ B\\ ,\\ D\\ )$ is lossless or lossy.",
           "marks": "5",
           "chapter": "Database Constraints and Normalization",
           "isDiagram": false
@@ -1244,14 +1244,14 @@
         },
         {
           "qNum": 4,
-          "text": "\n(a) Explain the different types of attributes. What is a discriminator key?\n(b) Design a ER diagram for following requirement: The database keeps track of three types of persons: employees, alumni, and students. A person can belong to one, two, or all three of these types. Each person has a name, SSN, sex, address, and birth date. Every employee has a salary, and there are three types of employee: faculty, staff, and student assistants. Each employee belongs to exactly one of these types. For each alumnus, a record of the degree of degrees that he or she earned at the university is kept, including the name of the degree, the year granted, and the major department. Each student has a major department. Each faculty has a rank, whereas each staff member has a staff position. Student assistants are classified further as either research assistants or teaching assistants, and the percent of time that they work is recorded in the database. Research assistants have their research project stored, whereas teaching assistants have the current course they work on. Students are further classified as either graduate or undergraduate, with the specific attributes degree program (M.S., Ph.D, M.B.A., and so on) for graduate student and class (freshman, sophomore, and so on) for under-graduates.",
+          "text": "(a) Explain the different types of attributes. What is a discriminator key?\n(b) Design a ER diagram for following requirement: The database keeps track of three types of persons: employees, alumni, and students. A person can belong to one, two, or all three of these types. Each person has a name, SSN, sex, address, and birth date. Every employee has a salary, and there are three types of employee: faculty, staff, and student assistants. Each employee belongs to exactly one of these types. For each alumnus, a record of the degree of degrees that he or she earned at the university is kept, including the name of the degree, the year granted, and the major department. Each student has a major department. Each faculty has a rank, whereas each staff member has a staff position. Student assistants are classified further as either research assistants or teaching assistants, and the percent of time that they work is recorded in the database. Research assistants have their research project stored, whereas teaching assistants have the current course they work on. Students are further classified as either graduate or undergraduate, with the specific attributes degree program (M.S., Ph.D, M.B.A., and so on) for graduate student and class (freshman, sophomore, and so on) for under-graduates.",
           "marks": "2",
           "chapter": "General",
           "isDiagram": false
         },
         {
           "qNum": 5,
-          "text": "\n(a) What is functional dependency in DBMS? Explain 1NF and 2NF with examples. [2+4]\n(b) What is the purpose of Normalization? Compare 3NF and BCNF along with definitions.",
+          "text": "(a) What is functional dependency in DBMS? Explain 1NF and 2NF with examples. [2+4]\n(b) What is the purpose of Normalization? Compare 3NF and BCNF along with definitions.",
           "marks": "2",
           "chapter": "General",
           "isDiagram": false
@@ -1265,7 +1265,7 @@
         },
         {
           "qNum": 7,
-          "text": "\n(a) What is a transaction? What are the ideal properties of a transaction? [4]\n(b) Describe strict two-phase locking protocol (2PL).",
+          "text": "(a) What is a transaction? What are the ideal properties of a transaction? [4]\n(b) Describe strict two-phase locking protocol (2PL).",
           "marks": "4",
           "chapter": "General",
           "isDiagram": false
@@ -1295,7 +1295,7 @@
         },
         {
           "qNum": 2,
-          "text": "\n(a) Consider the relational database as follows: [4×2]\nWorker (worker_id, first_name, last_name, salary, joining_date, department)\nBonus (worker_id, bonus_amount, bonus_date)\nTitle (worker_id, worker_title, affected_from)\n\n(i) Write $a^n$ expression in SQL to fetch unique values of department from worker table.\n(ii) Write $a^n$ expression in SQL to print details of Workers with DEPARTMENT name as \"Admin\".\n(iii) Write $a^n$ expression in SQL to print details of Workers who are also Managers.\n(iv) Write $a^n$ expression in SQL to show the second highest salary from a table.\n(b) Consider the following relational model. [3×2]\npassenger (pid, pname, pgender, pcity)\nagency (aid, aname, acity)\nflight (fid, fdate, time, src, dest)\nbooking (pid, aid, fid, fdate)\n\n(i) Write $a^n$ expression in relational algebra get the details about all flights from Kathmandu to Biratnagar.\n(ii) Write $a^n$ expression in relational algebra to find only the flight numbers for passenger with pid is 123 for flights to Kathmandu before 06/11/2020.\n(iii) Write skeleton table in QBE to find the details of all male passengers who are associated with Jet agency.",
+          "text": "(a) Consider the relational database as follows: [4×2]\nWorker (worker_id, first_name, last_name, salary, joining_date, department)\nBonus (worker_id, bonus_amount, bonus_date)\nTitle (worker_id, worker_title, affected_from)\n\n(i) Write $a^n$ expression in SQL to fetch unique values of department from worker table.\n(ii) Write $a^n$ expression in SQL to print details of Workers with DEPARTMENT name as \"Admin\".\n(iii) Write $a^n$ expression in SQL to print details of Workers who are also Managers.\n(iv) Write $a^n$ expression in SQL to show the second highest salary from a table.\n(b) Consider the following relational model. [3×2]\npassenger (pid, pname, pgender, pcity)\nagency (aid, aname, acity)\nflight (fid, fdate, time, src, dest)\nbooking (pid, aid, fid, fdate)\n\n(i) Write $a^n$ expression in relational algebra get the details about all flights from Kathmandu to Biratnagar.\n(ii) Write $a^n$ expression in relational algebra to find only the flight numbers for passenger with pid is 123 for flights to Kathmandu before 06/11/2020.\n(iii) Write skeleton table in QBE to find the details of all male passengers who are associated with Jet agency.",
           "marks": "8",
           "chapter": "Relational Query Languages",
           "isDiagram": false
@@ -1330,7 +1330,7 @@
         },
         {
           "qNum": 7,
-          "text": "\n(a) What are the various problems without normalization? Explain. [3]\n(b) Define partial and transitive dependency with example. Given a relation $R(A, B, C, D)$ and Functional Dependency set $FD = \\{AB \\to CD, B \\to C\\} , determine$ whether the given $R$ is in 2NF? If not convert it into 2NF.",
+          "text": "(a) What are the various problems without normalization? Explain. [3]\n(b) Define partial and transitive dependency with example. Given a relation $R(A, B, C, D)$ and Functional Dependency set $FD = \\{AB \\to CD, B \\to C\\} , determine$ whether the given $R$ is in 2NF? If not convert it into 2NF.",
           "marks": "2",
           "chapter": "General",
           "isDiagram": false
@@ -1488,7 +1488,7 @@
         },
         {
           "qNum": 7,
-          "text": "\n(a) What is the difference between primary index and secondary index? Briefly explain what is a hash index. [6]\n(b) What is RAID and what are its advantages? Explain what block level striping is.",
+          "text": "(a) What is the difference between primary index and secondary index? Briefly explain what is a hash index. [6]\n(b) What is RAID and what are its advantages? Explain what block level striping is.",
           "marks": "6",
           "chapter": "General",
           "isDiagram": false
@@ -1709,7 +1709,7 @@
         },
         {
           "qNum": 4,
-          "text": "\n(a) Define total participation with $a^n$ example. Explain weak entity set with $a^n$ example. [2+2]\n(b) A publishing company produces books on various subject. The books are written by authors who specializes in one particular subject. The company employs editors who, not necessarily being specialists in a particular area, each take sole responsibility for editing one or more book publications. These items supplied by suppliers. One supplier can supply many items. Shop owner buys books from the publisher. Shop owner can buy many books but one book can be bought by one shop owner only. Books are uniquely identified by Bookid. Draw ER-diagram for above scenario. Use necessary attributes for each entity.",
+          "text": "(a) Define total participation with $a^n$ example. Explain weak entity set with $a^n$ example. [2+2]\n(b) A publishing company produces books on various subject. The books are written by authors who specializes in one particular subject. The company employs editors who, not necessarily being specialists in a particular area, each take sole responsibility for editing one or more book publications. These items supplied by suppliers. One supplier can supply many items. Shop owner buys books from the publisher. Shop owner can buy many books but one book can be bought by one shop owner only. Books are uniquely identified by Bookid. Draw ER-diagram for above scenario. Use necessary attributes for each entity.",
           "marks": "8",
           "chapter": "General",
           "isDiagram": false
@@ -1723,7 +1723,7 @@
         },
         {
           "qNum": 6,
-          "text": "\n(a) What is record organization? Explain primary and secondary indexing with example. [1+3]\n(b) Explain the distinction between static and dynamic hashing with approximate example.",
+          "text": "(a) What is record organization? Explain primary and secondary indexing with example. [1+3]\n(b) Explain the distinction between static and dynamic hashing with approximate example.",
           "marks": "4",
           "chapter": "General",
           "isDiagram": false
@@ -1795,7 +1795,7 @@
         },
         {
           "qNum": 6,
-          "text": "\n(a) What do you mean by closure of functional dependency? What is a trigger in DBMS? Is it safe or risky to use triggers? Explain. [3+3]\n(b) Define normalization and levels of normalization 1NF, 2NF and 3NF. Compare the advantage of BCNF over 3NF.",
+          "text": "(a) What do you mean by closure of functional dependency? What is a trigger in DBMS? Is it safe or risky to use triggers? Explain. [3+3]\n(b) Define normalization and levels of normalization 1NF, 2NF and 3NF. Compare the advantage of BCNF over 3NF.",
           "marks": "4",
           "chapter": "General",
           "isDiagram": false
@@ -1809,14 +1809,14 @@
         },
         {
           "qNum": 8,
-          "text": "\n(a) What do you mean by hashing and indexing? Differentiate between dense index and sparse index? [2+2]\n(b) Write about fixed length record and variable length record organization in DBMS?",
+          "text": "(a) What do you mean by hashing and indexing? Differentiate between dense index and sparse index? [2+2]\n(b) Write about fixed length record and variable length record organization in DBMS?",
           "marks": "4",
           "chapter": "General",
           "isDiagram": false
         },
         {
           "qNum": 9,
-          "text": "\n(a) What is transaction? What are the ideal properties of a transaction? [1+4]\n(b) Describe strict two-phase locking protocol (2PL).",
+          "text": "(a) What is transaction? What are the ideal properties of a transaction? [1+4]\n(b) Describe strict two-phase locking protocol (2PL).",
           "marks": "3",
           "chapter": "General",
           "isDiagram": false
@@ -1853,14 +1853,14 @@
         },
         {
           "qNum": 3,
-          "text": "\n(a) Consider the following relational data model. [2×4]\nStudent (crn, name, address, phone, dob)\nCourse (courseid, crn, duration, fee)\nEnroll (enrolled, cname, courseid, enrolldata, completedata)\\n(i) Write the SQL statements required to create the above relations, including appropriate versions of all primary and foreign key integrity constraints,\\n(ii) Write $a^n$ expression in SQL to find crn, names and enroll data of all students who have taken the course 'java' (cname)\\n(iii) Write SQL to find the names and address of all the students who have taken both course java and linux.\\n(iv) Write $a^n$ expression in SQL to Create a view 'student_course' having the attributes crn, name, phone, coursename, enrolldata\n(b) Consider the following relational database [2×4]\nsailor (sailorid, sname, rating, age)\nboat (boatid, boatname, color)\nreserves (sailorid, boatid, date)\nWrite relational algebra expressions for the following:\\n(i) Find the names of sailor who has reserved boat number 105.\\n(ii) Find the names of sailors who have reserved a red boat.\\n(iii) Find the names of all sailor who have reserved either a red boat or a green boat.\\n(iv) Give $a^n$ expression in QBE to find the sailors name and age who have reserved a red boat.",
+          "text": "(a) Consider the following relational data model. [2×4]\nStudent (crn, name, address, phone, dob)\nCourse (courseid, crn, duration, fee)\nEnroll (enrolled, cname, courseid, enrolldata, completedata)\\n(i) Write the SQL statements required to create the above relations, including appropriate versions of all primary and foreign key integrity constraints,\\n(ii) Write $a^n$ expression in SQL to find crn, names and enroll data of all students who have taken the course 'java' (cname)\\n(iii) Write SQL to find the names and address of all the students who have taken both course java and linux.\\n(iv) Write $a^n$ expression in SQL to Create a view 'student_course' having the attributes crn, name, phone, coursename, enrolldata\n(b) Consider the following relational database [2×4]\nsailor (sailorid, sname, rating, age)\nboat (boatid, boatname, color)\nreserves (sailorid, boatid, date)\nWrite relational algebra expressions for the following:\\n(i) Find the names of sailor who has reserved boat number 105.\\n(ii) Find the names of sailors who have reserved a red boat.\\n(iii) Find the names of all sailor who have reserved either a red boat or a green boat.\\n(iv) Give $a^n$ expression in QBE to find the sailors name and age who have reserved a red boat.",
           "marks": "8",
           "chapter": "Relational Query Languages",
           "isDiagram": false
         },
         {
           "qNum": 4,
-          "text": "\n(a) Why do we need normalization? Differentiate primary key and foreign key.\nDifferentiate between 3NF and BCNF. [2+2+3]\n(b) Consider the relation Treatment with the schema: Treatment (doctorID, doctorName,\nPatientID, diagnosis) and functional dependencies;\n$doctorID \\rightarrow doctorName$ and $(doctorID, patientID) \\rightarrow diagnosis$.\nDescribe different types of problem that can arise for this relation with records",
+          "text": "(a) Why do we need normalization? Differentiate primary key and foreign key.\nDifferentiate between 3NF and BCNF. [2+2+3]\n(b) Consider the relation Treatment with the schema: Treatment (doctorID, doctorName,\nPatientID, diagnosis) and functional dependencies;\n$doctorID \\rightarrow doctorName$ and $(doctorID, patientID) \\rightarrow diagnosis$.\nDescribe different types of problem that can arise for this relation with records",
           "marks": "5",
           "chapter": "Database Constraints and Normalization",
           "isDiagram": false
@@ -1895,7 +1895,7 @@
         },
         {
           "qNum": 9,
-          "text": "\n(a) Write about data warehouse with its components. [4]\n(b) Write about spatial database.",
+          "text": "(a) Write about data warehouse with its components. [4]\n(b) Write about spatial database.",
           "marks": "2",
           "chapter": "Advanced Database Concepts",
           "isDiagram": false
@@ -1937,7 +1937,7 @@
         },
         {
           "qNum": 15,
-          "text": "\n(a) Identify relevant attributes and construct $a^n$ ER diagram with proper mapping constraints for a university which has many departments and each department has multiple instructors; one among them is the head of the department. An instructor belongs to only one department, each department offers multiple courses, each of which is taught by a single instructor. A student may enroll for many courses offered by different departments. [6]\n(b) Define unary relationship along with example. How you convert $a^n$ ER relationship into relation schema? Explain with examples of different cardinalities.",
+          "text": "(a) Identify relevant attributes and construct $a^n$ ER diagram with proper mapping constraints for a university which has many departments and each department has multiple instructors; one among them is the head of the department. An instructor belongs to only one department, each department offers multiple courses, each of which is taught by a single instructor. A student may enroll for many courses offered by different departments. [6]\n(b) Define unary relationship along with example. How you convert $a^n$ ER relationship into relation schema? Explain with examples of different cardinalities.",
           "marks": "2",
           "chapter": "General",
           "isDiagram": false
@@ -1967,7 +1967,7 @@
         },
         {
           "qNum": 2,
-          "text": "Consider the following relational schema:\ntblsalesman(s_id, name, city, commission)\ntblOrders(ord_no, prch_amt, ord_date, c_id, s_id)\ntblCustomer(c_id, name, city, grade, s_id)\nWrite SQL query expression to [2x4]\n(a) find those salesmen with all information whose name containing the $1^{st}$ character is 'N' and the $4^{th}$ character is 'R' and rests may be any character.\n(b) Find the highest purchase amount on a date '2017-07-17' for each salesman with their ID.\n(c) count the customers with grades above Kathmandu's average.\n(d) Increase commission of salesmen by 2% if they are from humla.",
+          "text": "Consider the following relational schema:\ntblsalesman(s_id, name, city, commission)\ntblOrders(ord_no, prch_amt, ord_date, c_id, s_id)\ntblCustomer(c_id, name, city, grade, s_id)\nWrite SQL query expression to [2x4]\n(a) find those salesmen with all information whose name containing the 1st character is 'N' and the 4th character is 'R' and rests may be any character.\n(b) Find the highest purchase amount on a date '2017-07-17' for each salesman with their ID.\n(c) count the customers with grades above Kathmandu's average.\n(d) Increase commission of salesmen by 2% if they are from humla.",
           "marks": "8",
           "chapter": "Relational Query Languages",
           "isDiagram": false
@@ -1995,7 +1995,7 @@
         },
         {
           "qNum": 6,
-          "text": "\n(a) What is a functional dependency? List the various integrity constraints and explain about the referential integrity along with $a^n$ example. [3+3]\n(b) Define 1NF, 2NF and 3NF. Illustrate your answer with suitable example.",
+          "text": "(a) What is a functional dependency? List the various integrity constraints and explain about the referential integrity along with $a^n$ example. [3+3]\n(b) Define 1NF, 2NF and 3NF. Illustrate your answer with suitable example.",
           "marks": "6",
           "chapter": "General",
           "isDiagram": false
@@ -2009,7 +2009,7 @@
         },
         {
           "qNum": 8,
-          "text": "\n(a) What is the difference between ordered indices and hash indices in a database? What is the advantage of using sparse index? [2+2]\n(b) Write about fixed length record and variable length record organization in DBMS?",
+          "text": "(a) What is the difference between ordered indices and hash indices in a database? What is the advantage of using sparse index? [2+2]\n(b) Write about fixed length record and variable length record organization in DBMS?",
           "marks": "4",
           "chapter": "General",
           "isDiagram": false
@@ -2023,7 +2023,7 @@
         },
         {
           "qNum": 10,
-          "text": "\n(a) Explain homogenous and heterogeneous distributed database. [4]\n(b) What is Spatial Database System?",
+          "text": "(a) Explain homogenous and heterogeneous distributed database. [4]\n(b) What is Spatial Database System?",
           "marks": "2",
           "chapter": "General",
           "isDiagram": false
@@ -2046,7 +2046,7 @@
         },
         {
           "qNum": 2,
-          "text": "\n(a) Define discriminator in ER diagram. Explain different keys used in database design. [4]\n(b) Draw the Entity-Relationship Diagram (ERD) with appropriate mapping cardinalities for the following scenario.\nA Production company consists of a machining, fabrication and assembly department. Employees are assigned to different departments. Each department is managed by a manager. Each employee has at most one recognized skill, but a given skill may be possessed by several employees. An employee is able to operate a given machine-type (e.g. lathe, grinder, welding) of each department. Some of the employees are paid overtime and some of them are paid with daily basis. According to their designation (eg. mechanic, welder) are supposed to maintain at least one machine-type of their department. Raw materials are bought from different vendors and fetched to the machining department. Parts from machining department are fetched to fabrication department and so on. Many parts are assembled together to form a product. The final products from assembly department are stored in the ware house. Products are labeled with different specifications (eg, Product_Id, Product_type, MRP, etc).",
+          "text": "(a) Define discriminator in ER diagram. Explain different keys used in database design. [4]\n(b) Draw the Entity-Relationship Diagram (ERD) with appropriate mapping cardinalities for the following scenario.\nA Production company consists of a machining, fabrication and assembly department. Employees are assigned to different departments. Each department is managed by a manager. Each employee has at most one recognized skill, but a given skill may be possessed by several employees. An employee is able to operate a given machine-type (e.g. lathe, grinder, welding) of each department. Some of the employees are paid overtime and some of them are paid with daily basis. According to their designation (eg. mechanic, welder) are supposed to maintain at least one machine-type of their department. Raw materials are bought from different vendors and fetched to the machining department. Parts from machining department are fetched to fabrication department and so on. Many parts are assembled together to form a product. The final products from assembly department are stored in the ware house. Products are labeled with different specifications (eg, Product_Id, Product_type, MRP, etc).",
           "marks": "8",
           "chapter": "Data Models",
           "isDiagram": false
@@ -2067,7 +2067,7 @@
         },
         {
           "qNum": 5,
-          "text": "\n(a) What are Triggers? Define Domain constraint and Referential Integrity constraint with $a^n$ example. [1+4]\n(b) What is the role Functional dependencies in Normalization? Explain trivial and non-trivial dependencies. Explain BCNF.",
+          "text": "(a) What are Triggers? Define Domain constraint and Referential Integrity constraint with $a^n$ example. [1+4]\n(b) What is the role Functional dependencies in Normalization? Explain trivial and non-trivial dependencies. Explain BCNF.",
           "marks": "2",
           "chapter": "Database Constraints and Normalization",
           "isDiagram": false
@@ -2139,21 +2139,21 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "\n(a) What are data models? Explain various types of data models. [1+3]\n(b) Design $a^n$ E-R diagram for a database for $a^n$ airlines system. The database must keep track of customers and their reservations, flights and their status, seat assignments on individual flights and the schedule and routing of future flights. Apply all the database design constraints as much as possible.",
+          "text": "(a) What are data models? Explain various types of data models. [1+3]\n(b) Design $a^n$ E-R diagram for a database for $a^n$ airlines system. The database must keep track of customers and their reservations, flights and their status, seat assignments on individual flights and the schedule and routing of future flights. Apply all the database design constraints as much as possible.",
           "marks": "8",
           "chapter": "Data Models",
           "isDiagram": false
         },
         {
           "qNum": 2,
-          "text": "\n(a) Consider the following relational data model. [2×3]\nEmployee(empid, name, address, manager_id)\nDepartment(deptid, dname)\nProject(pid, title, budget, deptid)\nWorks_on(empid, pid, hours)\\n(i) Write down the relational algebraic expression for the following:\nFind the names of all employee from computer department along with their manager name.\\n(ii) Find the names of all the employees who works on project with budget more than 50000.\\n(iii) Find the total number of projects from each department along with the department name.\n(b) Write down the SQL queries for following: [2×3]\\n(i) Find the name of employees who works on project with the highest budget.\\n(ii) Create a view with empid, name, project title and budget.\\n(iii) Update the budget of all project by 20% where any employee works for more than 12 hours.",
+          "text": "(a) Consider the following relational data model. [2×3]\nEmployee(empid, name, address, manager_id)\nDepartment(deptid, dname)\nProject(pid, title, budget, deptid)\nWorks_on(empid, pid, hours)\\n(i) Write down the relational algebraic expression for the following:\nFind the names of all employee from computer department along with their manager name.\\n(ii) Find the names of all the employees who works on project with budget more than 50000.\\n(iii) Find the total number of projects from each department along with the department name.\n(b) Write down the SQL queries for following: [2×3]\\n(i) Find the name of employees who works on project with the highest budget.\\n(ii) Create a view with empid, name, project title and budget.\\n(iii) Update the budget of all project by 20% where any employee works for more than 12 hours.",
           "marks": "8",
           "chapter": "Relational Query Languages",
           "isDiagram": false
         },
         {
           "qNum": 3,
-          "text": "\n(a) What is RAID? Which RAID level would you prefer the best for safety of application and why? [1+3]\n(b) What is indexing? Why dynamic hashing is advantageous over static hashing?",
+          "text": "(a) What is RAID? Which RAID level would you prefer the best for safety of application and why? [1+3]\n(b) What is indexing? Why dynamic hashing is advantageous over static hashing?",
           "marks": "1",
           "chapter": "File Structure and Hashing",
           "isDiagram": false
@@ -2167,7 +2167,7 @@
         },
         {
           "qNum": 5,
-          "text": "\n(a) Describe briefly about object oriented database. [3]\n(b) Explain the differences between homogenous and heterogeneous distributed database.",
+          "text": "(a) Describe briefly about object oriented database. [3]\n(b) Explain the differences between homogenous and heterogeneous distributed database.",
           "marks": "3",
           "chapter": "Advanced Database Concepts",
           "isDiagram": false
@@ -2181,7 +2181,7 @@
         },
         {
           "qNum": 7,
-          "text": "\n(a) Define functional dependency. Explain partial and transitive functional dependency with example. [1+4]\n(b) Define decomposition and its desirable properties. Explain 3NF and BCNF.",
+          "text": "(a) Define functional dependency. Explain partial and transitive functional dependency with example. [1+4]\n(b) Define decomposition and its desirable properties. Explain 3NF and BCNF.",
           "marks": "3",
           "chapter": "General",
           "isDiagram": false
@@ -2195,7 +2195,7 @@
         },
         {
           "qNum": 9,
-          "text": "\n(a) Define ACID properties of a transaction. Describe the concept of conflict serializability for concurrent execution of transactions. [4+4]\n(b) How two phase locking protocol helps in concurrency control? Explain.",
+          "text": "(a) Define ACID properties of a transaction. Describe the concept of conflict serializability for concurrent execution of transactions. [4+4]\n(b) How two phase locking protocol helps in concurrency control? Explain.",
           "marks": "4",
           "chapter": "General",
           "isDiagram": false
@@ -2232,7 +2232,7 @@
         },
         {
           "qNum": 4,
-          "text": "\n(a) What do you mean by functional dependencies? Define formally. What is BCNF? [3+3]\n(b) What is normalization? Explain 1NF, 2NF, 3NF and 4NF.",
+          "text": "(a) What do you mean by functional dependencies? Define formally. What is BCNF? [3+3]\n(b) What is normalization? Explain 1NF, 2NF, 3NF and 4NF.",
           "marks": "2",
           "chapter": "Database Constraints and Normalization",
           "isDiagram": false
@@ -2246,14 +2246,14 @@
         },
         {
           "qNum": 6,
-          "text": "\n(a) What is the use of RAID storage device? How is a record searched from a sparse sequential index? [2+3]\n(b) Explain about the remote backup system with diagram.",
+          "text": "(a) What is the use of RAID storage device? How is a record searched from a sparse sequential index? [2+3]\n(b) Explain about the remote backup system with diagram.",
           "marks": "3",
           "chapter": "File Structure and Hashing",
           "isDiagram": false
         },
         {
           "qNum": 7,
-          "text": "\n(a) What are schedules? Describe the concept of view serializability for concurrent execution of transaction. [2+4]\n(b) How deadlocks arise while processing transactions? Explain the deadlock prevention strategies.",
+          "text": "(a) What are schedules? Describe the concept of view serializability for concurrent execution of transaction. [2+4]\n(b) How deadlocks arise while processing transactions? Explain the deadlock prevention strategies.",
           "marks": "2",
           "chapter": "Transaction Processing and Concurrency Control",
           "isDiagram": false
@@ -2318,7 +2318,7 @@
         },
         {
           "qNum": 4,
-          "text": "\n(a) What is lossless decomposition and dependency preservation? Suppose that we decompose the schema $R = (A, B, C, D, E)$ into $(A, B, C)$ and $(C, D, E)$. Is it lossless decomposition? Is it dependency preserving?\nConsider that the following set F of functional dependencies hold.\n$A \\rightarrow BC$\n$CD \\rightarrow E$\n$B \\rightarrow D$\n$E \\rightarrow A$ [3+4]\n(b) What is the importance of normalization? Define BCNF.",
+          "text": "(a) What is lossless decomposition and dependency preservation? Suppose that we decompose the schema $R = (A, B, C, D, E)$ into $(A, B, C)$ and $(C, D, E)$. Is it lossless decomposition? Is it dependency preserving?\nConsider that the following set F of functional dependencies hold.\n$A \\rightarrow BC$\n$CD \\rightarrow E$\n$B \\rightarrow D$\n$E \\rightarrow A$ [3+4]\n(b) What is the importance of normalization? Define BCNF.",
           "marks": "2",
           "chapter": "Database Constraints and Normalization",
           "isDiagram": false
@@ -2453,7 +2453,7 @@
         },
         {
           "qNum": 5,
-          "text": "\n(a) Explain what is referential integrity constraint along with $a^n$ example? Briefly explain cascading actions in referential integrity constraints. [3+3]\n(b) Briefly explain how to normalize a database from un-normalized form to 1NF, 2NF, 3NF and 4NF?",
+          "text": "(a) Explain what is referential integrity constraint along with $a^n$ example? Briefly explain cascading actions in referential integrity constraints. [3+3]\n(b) Briefly explain how to normalize a database from un-normalized form to 1NF, 2NF, 3NF and 4NF?",
           "marks": "6",
           "chapter": "Database Constraints and Normalization",
           "isDiagram": false
@@ -2516,7 +2516,7 @@
         },
         {
           "qNum": 14,
-          "text": "\n(a) What is the difference between ordered indices and hash indices in a database? What is the advantage of using a sparse index? [2+2]\n(b) What is a RAID? How would you choose the best RAID level for your database server?",
+          "text": "(a) What is the difference between ordered indices and hash indices in a database? What is the advantage of using a sparse index? [2+2]\n(b) What is a RAID? How would you choose the best RAID level for your database server?",
           "marks": "1",
           "chapter": "General",
           "isDiagram": false
@@ -2574,7 +2574,7 @@
         },
         {
           "qNum": 6,
-          "text": "\n(a) Explain the necessary condition for decomposing a relational database table into two tables. Why is normalization needed? [4+4]\n(b) Compare 3NF and BCNF normal forms?",
+          "text": "(a) Explain the necessary condition for decomposing a relational database table into two tables. Why is normalization needed? [4+4]\n(b) Compare 3NF and BCNF normal forms?",
           "marks": "4",
           "chapter": "General",
           "isDiagram": false
@@ -2588,7 +2588,7 @@
         },
         {
           "qNum": 8,
-          "text": "\n(a) Distinguish between dense index and sparse index? What is a secondary index? [3+2]\n(b) Briefly explain how variable length records are stored in databases?",
+          "text": "(a) Distinguish between dense index and sparse index? What is a secondary index? [3+2]\n(b) Briefly explain how variable length records are stored in databases?",
           "marks": "3",
           "chapter": "General",
           "isDiagram": false
@@ -2602,7 +2602,7 @@
         },
         {
           "qNum": 10,
-          "text": "\n(a) Briefly explain horizontal and vertical fragmentation in distributed databases. [3]\n(b) Write a short note on Data warehouse and associated applications.",
+          "text": "(a) Briefly explain horizontal and vertical fragmentation in distributed databases. [3]\n(b) Write a short note on Data warehouse and associated applications.",
           "marks": "3",
           "chapter": "General",
           "isDiagram": false
@@ -2723,7 +2723,7 @@
         },
         {
           "qNum": 16,
-          "text": "\n(a) What is a lossless-join decomposition? What is a functional dependency? Explain. [4+4]\n(b) What is the advantage of 3NF over BCNF?",
+          "text": "(a) What is a lossless-join decomposition? What is a functional dependency? Explain. [4+4]\n(b) What is the advantage of 3NF over BCNF?",
           "marks": "4",
           "chapter": "General",
           "isDiagram": false

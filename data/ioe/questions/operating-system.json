@@ -712,7 +712,7 @@
         },
         {
           "qNum": 2,
-          "text": "\n(a) Explain how Atomic Writes helps to achieve the concept of stable storage. A SATA HDD, with capacity of 1 Tera Bytes costs NPR. 5,700 and A SATA SSD with capacity of 256 Giga Bytes cost NPR. 7,500. Now, calculate the cost of storing a file with capacity of 100 Mega Bytes on each device. Which device is cost efficient and by how much? Explain. [2+4]\n(b) Given references to the following pages by a program 1, 2, 3, 2, 1, 5, 2, 1, 6, 2, 5, 6, 3, 1, 3, 6, 1, 2, 4,",
+          "text": "(a) Explain how Atomic Writes helps to achieve the concept of stable storage. A SATA HDD, with capacity of 1 Tera Bytes costs NPR. 5,700 and A SATA SSD with capacity of 256 Giga Bytes cost NPR. 7,500. Now, calculate the cost of storing a file with capacity of 100 Mega Bytes on each device. Which device is cost efficient and by how much? Explain. [2+4]\n(b) Given references to the following pages by a program 1, 2, 3, 2, 1, 5, 2, 1, 6, 2, 5, 6, 3, 1, 3, 6, 1, 2, 4,",
           "marks": "5",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
@@ -770,7 +770,7 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "Schedule the following processes according to SRTN and Preemptive Priority Algorithm to calculate average TAT and WT.<table><thead><tr><th>Process</th><th>Arrival Time</th><th>Burst Time</th><th>Priority</th></tr></thead><tbody><tr><td>P0</td><td>0</td><td>8</td><td>2</td></tr><tr><td>P1</td><td>2</td><td>2</td><td>4</td></tr><tr><td>P2</td><td>4</td><td>12</td><td>0</td></tr><tr><td>P3</td><td>8</td><td>4</td><td>3</td></tr><tr><td>P4</td><td>12</td><td>10</td><td>1</td></tr></tbody></table>The process with the lowest value has the highest priority.",
+          "text": "Schedule the following processes according to SRTN and Preemptive Priority Algorithm to calculate average TAT and WT.\n\n| Process | Arrival Time | Burst Time | Priority |\n| --- | --- | --- | --- |\n| P0 | 0 | 8 | 2 |\n| P1 | 2 | 2 | 4 |\n| P2 | 4 | 12 | 0 |\n| P3 | 8 | 4 | 3 |\n| P4 | 12 | 10 | 1 |\n\nThe process with the lowest value has the highest priority.",
           "marks": "7",
           "chapter": "Process Management",
           "isDiagram": false
@@ -784,7 +784,7 @@
         },
         {
           "qNum": 3,
-          "text": "How deadlock can be prevented? Consider a system with 5 concurrent processes (P0, P1, P2, P3, P4) and 4 resource types (R0, R1, R2, R3). The total number of instances of each resource type in the system are 3,17,16,12 respectively. Allocation table and maximum claim are as follows:<table><thead><tr><th>Process</th><th>Allocation</th><th></th><th></th><th></th><th>Max</th><th></th><th></th><th></th></tr></thead><tbody><tr><td></td><td>R0</td><td>R1</td><td>R2</td><td>R3</td><td>R0</td><td>R1</td><td>R2</td><td>R3</td></tr><tr><td>P0</td><td>0</td><td>1</td><td>1</td><td>0</td><td>0</td><td>2</td><td>1</td><td>0</td></tr><tr><td>P1</td><td>1</td><td>2</td><td>3</td><td>1</td><td>1</td><td>6</td><td>5</td><td>2</td></tr><tr><td>P2</td><td>1</td><td>3</td><td>6</td><td>5</td><td>2</td><td>3</td><td>6</td><td>6</td></tr><tr><td>P3</td><td>0</td><td>6</td><td>3</td><td>2</td><td>0</td><td>6</td><td>5</td><td>2</td></tr><tr><td>P4</td><td>0</td><td>0</td><td>1</td><td>4</td><td>0</td><td>6</td><td>5</td><td>6</td></tr></tbody></table>a) Create need matrix.\n(b) Is the safe state? If so, show the safe execution of the processes.",
+          "text": "How deadlock can be prevented? Consider a system with 5 concurrent processes (P0, P1, P2, P3, P4) and 4 resource types (R0, R1, R2, R3). The total number of instances of each resource type in the system are 3,17,16,12 respectively. Allocation table and maximum claim are as follows:\n\n| Process | Allocation |  |  |  | Max |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | R0 | R1 | R2 | R3 | R0 | R1 | R2 | R3 |\n| P0 | 0 | 1 | 1 | 0 | 0 | 2 | 1 | 0 |\n| P1 | 1 | 2 | 3 | 1 | 1 | 6 | 5 | 2 |\n| P2 | 1 | 3 | 6 | 5 | 2 | 3 | 6 | 6 |\n| P3 | 0 | 6 | 3 | 2 | 0 | 6 | 5 | 2 |\n| P4 | 0 | 0 | 1 | 4 | 0 | 6 | 5 | 6 |\n\na) Create need matrix.\n(b) Is the safe state? If so, show the safe execution of the processes.",
           "marks": "2",
           "chapter": "Process Communication and Synchronization",
           "isDiagram": false
@@ -1026,7 +1026,7 @@
         },
         {
           "qNum": 4,
-          "text": "\n(a) What is RAID? Explain how Write Ahead Logging (WAL) helps to achieve the concept of stable storage. A NVMe SSD with capacity of 2 Tera Bytes costs NPR. 15,000 and a SATA SSD with capacity of 1 Tera Bytes cost NPR. 5,500. Now, calculate the cost of storing a file with capacity of 160 Mega Bytes on each device. Which device is cost efficient and by how much? Explain [1+2+4]\n(b) Consider the following page-reference storing 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0,",
+          "text": "(a) What is RAID? Explain how Write Ahead Logging (WAL) helps to achieve the concept of stable storage. A NVMe SSD with capacity of 2 Tera Bytes costs NPR. 15,000 and a SATA SSD with capacity of 1 Tera Bytes cost NPR. 5,500. Now, calculate the cost of storing a file with capacity of 160 Mega Bytes on each device. Which device is cost efficient and by how much? Explain [1+2+4]\n(b) Consider the following page-reference storing 7, 0, 1, 2, 0, 3, 0, 4, 2, 3, 0, 3, 2, 1, 2, 0, 1, 7, 0,",
           "marks": "5",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
@@ -1263,7 +1263,7 @@
         },
         {
           "qNum": 2,
-          "text": "Write four necessary conditions of deadlock. Consider the following snapshot of a system.<table><thead><tr><th></th><th>Allocation</th><th></th><th></th><th>Max</th><th></th><th></th></tr></thead><tbody><tr><td></td><td>A</td><td>B</td><td>C</td><td>A</td><td>B</td><td>C</td></tr><tr><td>P1</td><td>0</td><td>1</td><td>0</td><td>7</td><td>5</td><td>3</td></tr><tr><td>P2</td><td>2</td><td>0</td><td>0</td><td>3</td><td>2</td><td>2</td></tr><tr><td>P3</td><td>3</td><td>0</td><td>2</td><td>9</td><td>0</td><td>2</td></tr><tr><td>P4</td><td>2</td><td>1</td><td>1</td><td>4</td><td>2</td><td>2</td></tr><tr><td>P5</td><td>0</td><td>0</td><td>2</td><td>5</td><td>3</td><td>3</td></tr></tbody></table>List the available number of resources be given by available vectors as $(10, 5, 7)$. Use\nBanker's algorithm to claim that the system is in safe state and show the safe sequence.",
+          "text": "Write four necessary conditions of deadlock. Consider the following snapshot of a system.\n\n|  | Allocation |  |  | Max |  |  |\n| --- | --- | --- | --- | --- | --- | --- |\n|  | A | B | C | A | B | C |\n| P1 | 0 | 1 | 0 | 7 | 5 | 3 |\n| P2 | 2 | 0 | 0 | 3 | 2 | 2 |\n| P3 | 3 | 0 | 2 | 9 | 0 | 2 |\n| P4 | 2 | 1 | 1 | 4 | 2 | 2 |\n| P5 | 0 | 0 | 2 | 5 | 3 | 3 |\n\nList the available number of resources be given by available vectors as $(10, 5, 7)$. Use\nBanker's algorithm to claim that the system is in safe state and show the safe sequence.",
           "marks": "4",
           "chapter": "Process Communication and Synchronization",
           "isDiagram": false
@@ -1577,7 +1577,7 @@
         },
         {
           "qNum": 5,
-          "text": "\n(a) Define race condition and critical section. Why process needs to be synchronized? Give example. [4]\n(b) Explain TSL algorithm and Peterson's algorithm.",
+          "text": "(a) Define race condition and critical section. Why process needs to be synchronized? Give example. [4]\n(b) Explain TSL algorithm and Peterson's algorithm.",
           "marks": "6",
           "chapter": "General",
           "isDiagram": false
@@ -1614,7 +1614,7 @@
         },
         {
           "qNum": 2,
-          "text": "State 5- State process model. From the given following information:<table><thead><tr><th>Process</th><th>Burst Time</th><th>priority</th></tr></thead><tbody><tr><td>$p_1$</td><td>10</td><td>3</td></tr><tr><td>$p_2$</td><td>1</td><td>1</td></tr><tr><td>$p_3$</td><td>2</td><td>3</td></tr><tr><td>$p_4$</td><td>1</td><td>4</td></tr><tr><td>$p_5$</td><td>2</td><td>2</td></tr></tbody></table>Assume the processes arrived in the order $p_1, p_2, p_3, p_4$ and $p_5$ all time 0, priority 1 as highest and 4 as lowest.\n(a) Draw the gantt chart\n(b) Calculate average waiting time and average turnaround time for the following scheduling algorithm.\n\n(i) Round robin (quantum= 1)\n(ii) priority preemptive\n(iii) preemptive SJF\n(iv) FCFS",
+          "text": "State 5- State process model. From the given following information:\n\n| Process | Burst Time | priority |\n| --- | --- | --- |\n| $p_1$ | 10 | 3 |\n| $p_2$ | 1 | 1 |\n| $p_3$ | 2 | 3 |\n| $p_4$ | 1 | 4 |\n| $p_5$ | 2 | 2 |\n\nAssume the processes arrived in the order $p_1, p_2, p_3, p_4$ and $p_5$ all time 0, priority 1 as highest and 4 as lowest.\n(a) Draw the gantt chart\n(b) Calculate average waiting time and average turnaround time for the following scheduling algorithm.\n\n(i) Round robin (quantum= 1)\n(ii) priority preemptive\n(iii) preemptive SJF\n(iv) FCFS",
           "marks": "2",
           "chapter": "Process Management",
           "isDiagram": false
@@ -1721,7 +1721,7 @@
         },
         {
           "qNum": 3,
-          "text": "Let us consider following processes with given arrival time and length of the CPU burst given in milliseconds.<table><thead><tr><th>Process</th><th>Arrival Time</th><th>Burst Time</th></tr></thead><tbody><tr><td>P1</td><td>0</td><td>4</td></tr><tr><td>P2</td><td>1</td><td>5</td></tr><tr><td>P3</td><td>2</td><td>2</td></tr><tr><td>P4</td><td>3</td><td>1</td></tr><tr><td>P5</td><td>4</td><td>6</td></tr><tr><td>P6</td><td>6</td><td>3</td></tr></tbody></table>a) Draw the Gantt Chart showing the execution for FCFS, SRTN and RR (Quantum = 2)\n(b) Which algorithm results in Maximum Average Turnaround Time?",
+          "text": "Let us consider following processes with given arrival time and length of the CPU burst given in milliseconds.\n\n| Process | Arrival Time | Burst Time |\n| --- | --- | --- |\n| P1 | 0 | 4 |\n| P2 | 1 | 5 |\n| P3 | 2 | 2 |\n| P4 | 3 | 1 |\n| P5 | 4 | 6 |\n| P6 | 6 | 3 |\n\na) Draw the Gantt Chart showing the execution for FCFS, SRTN and RR (Quantum = 2)\n(b) Which algorithm results in Maximum Average Turnaround Time?",
           "marks": "6",
           "chapter": "Process Management",
           "isDiagram": false
@@ -1893,7 +1893,7 @@
         },
         {
           "qNum": 2,
-          "text": "(a) Difference between process and thread. Explain how thread based execution minimizes context switching problem of process based execution. [2+2]\n(b) Suppose 5 processes are submitted at time 0.<table><thead><tr><th>Process</th><th>A</th><th>B</th><th>C</th><th>D</th><th>E</th></tr></thead><tbody><tr><td>Burst Time</td><td>35</td><td>10</td><td>15</td><td>5</td><td>20</td></tr><tr><td>Priority</td><td>3</td><td>2</td><td>4</td><td>5</td><td>1</td></tr></tbody></table>Show the execution timeline of the processes using Gantt Chart for FCFS, SJF and Round Robin (q=5). Also calculate mean turnaround time in each case.",
+          "text": "(a) Difference between process and thread. Explain how thread based execution minimizes context switching problem of process based execution. [2+2]\n(b) Suppose 5 processes are submitted at time 0.\n\n| Process | A | B | C | D | E |\n| --- | --- | --- | --- | --- | --- |\n| Burst Time | 35 | 10 | 15 | 5 | 20 |\n| Priority | 3 | 2 | 4 | 5 | 1 |\n\nShow the execution timeline of the processes using Gantt Chart for FCFS, SJF and Round Robin (q=5). Also calculate mean turnaround time in each case.",
           "marks": "6",
           "chapter": "Process Management",
           "isDiagram": false
@@ -2014,7 +2014,7 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "\n(a) Why Operating system is termed as virtual machine? Briefly mention the function of Operating system. [5]\n(b) What is System Call? Explain in brief about the given architecture of operating system.\\n(i) Monolithic Architecture\\n(ii) Virtual Machine",
+          "text": "(a) Why Operating system is termed as virtual machine? Briefly mention the function of Operating system. [5]\n(b) What is System Call? Explain in brief about the given architecture of operating system.\\n(i) Monolithic Architecture\\n(ii) Virtual Machine",
           "marks": "2",
           "chapter": "Introduction",
           "isDiagram": false
@@ -2086,7 +2086,7 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "\n(a) What are the primary purposes of $a^n$ operating system? Explain. Why should the operating system prevent users from accessing the boot sector? [3+2]\n(b) Explain in brief any four types of OS.",
+          "text": "(a) What are the primary purposes of $a^n$ operating system? Explain. Why should the operating system prevent users from accessing the boot sector? [3+2]\n(b) Explain in brief any four types of OS.",
           "marks": "5",
           "chapter": "Introduction",
           "isDiagram": false
@@ -2121,7 +2121,7 @@
         },
         {
           "qNum": 6,
-          "text": "\n(a) In what ways is file system management similar to virtual memory management? What are the advantages and disadvantages of a contiguous file allocation scheme? Which file organization technique is most appropriate for tape storage? Why? [3+3]\n(b) List the file system performance indicators with brief explanation.",
+          "text": "(a) In what ways is file system management similar to virtual memory management? What are the advantages and disadvantages of a contiguous file allocation scheme? Which file organization technique is most appropriate for tape storage? Why? [3+3]\n(b) List the file system performance indicators with brief explanation.",
           "marks": "4",
           "chapter": "File Systems",
           "isDiagram": false
@@ -2156,7 +2156,7 @@
         },
         {
           "qNum": 11,
-          "text": "\n(a) Explain Critical Section problem. Why is it important for a thread to execute a critical section as quickly as possible? [5]\n(b) Define Semaphore and explain the major operations in semaphore including pseudocode.",
+          "text": "(a) Explain Critical Section problem. Why is it important for a thread to execute a critical section as quickly as possible? [5]\n(b) Define Semaphore and explain the major operations in semaphore including pseudocode.",
           "marks": "5",
           "chapter": "General",
           "isDiagram": false
@@ -2258,7 +2258,7 @@
         },
         {
           "qNum": 2,
-          "text": "Define Context Switching. Discuss 5-state model of process. Schedule the following set of process according to multilevel feedback queue scheduling algorithm and compute AWT and ATAT.<table><thead><tr><th>Process</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th></tr></thead><tbody><tr><td>Arrival Time</td><td>0</td><td>12</td><td>25</td><td>32</td></tr><tr><td>CPU Burst (ms)</td><td>25</td><td>18</td><td>4</td><td>10</td></tr></tbody></table>Assume that there are three ready queues Q1, Q2 and Q3. The CPU time slice for Q1 and Q2 is 5 ms and 10 ms respectively and processes are scheduled on FCFS basis in Q3.",
+          "text": "Define Context Switching. Discuss 5-state model of process. Schedule the following set of process according to multilevel feedback queue scheduling algorithm and compute AWT and ATAT.\n\n| Process | P1 | P2 | P3 | P4 |\n| --- | --- | --- | --- | --- |\n| Arrival Time | 0 | 12 | 25 | 32 |\n| CPU Burst (ms) | 25 | 18 | 4 | 10 |\n\nAssume that there are three ready queues Q1, Q2 and Q3. The CPU time slice for Q1 and Q2 is 5 ms and 10 ms respectively and processes are scheduled on FCFS basis in Q3.",
           "marks": "2",
           "chapter": "Process Management",
           "isDiagram": false
@@ -2272,7 +2272,7 @@
         },
         {
           "qNum": 4,
-          "text": "Consider a system with 5 processes $P_0$ through $P_4$ and three resources types A, B, C. Resources types A has 7 instances, B has 2 and C has 6 instances. Suppose at t0 time we have following state:<table><thead><tr><th>Process</th><th>Allocation</th><th>Request</th><th>Available</th></tr></thead><tbody><tr><td></td><td>A</td><td>B</td><td>C</td><td>A</td><td>B</td><td>C</td><td>A</td><td>B</td><td>C</td></tr><tr><td>P0</td><td>0</td><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>P1</td><td>2</td><td>0</td><td>0</td><td>2</td><td>0</td><td>2</td><td></td><td></td><td></td></tr><tr><td>P2</td><td>3</td><td>0</td><td>3</td><td>0</td><td>0</td><td>0</td><td></td><td></td><td></td></tr><tr><td>P3</td><td>2</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td></td><td></td><td></td></tr><tr><td>P4</td><td>0</td><td>0</td><td>2</td><td>0</td><td>0</td><td>2</td><td></td><td></td><td></td></tr></tbody></table>a) Is the given system in deadlock state?\n(b) Suppose P2 makes $a^n$ additional request $(0, 0, 1)$ what will be the effect of this request to the system?",
+          "text": "Consider a system with 5 processes $P_0$ through $P_4$ and three resources types A, B, C. Resources types A has 7 instances, B has 2 and C has 6 instances. Suppose at t0 time we have following state:\n\n| Process | Allocation | Request | Available |  |  |  |  |  |  |\n| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |\n|  | A | B | C | A | B | C | A | B | C |\n| P0 | 0 | 1 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |\n| P1 | 2 | 0 | 0 | 2 | 0 | 2 |  |  |  |\n| P2 | 3 | 0 | 3 | 0 | 0 | 0 |  |  |  |\n| P3 | 2 | 1 | 1 | 1 | 0 | 0 |  |  |  |\n| P4 | 0 | 0 | 2 | 0 | 0 | 2 |  |  |  |\n\na) Is the given system in deadlock state?\n(b) Suppose P2 makes $a^n$ additional request $(0, 0, 1)$ what will be the effect of this request to the system?",
           "marks": "10",
           "chapter": "Process Communication and Synchronization",
           "isDiagram": false
@@ -2351,7 +2351,7 @@
         },
         {
           "qNum": 2,
-          "text": "\n(a) What is paging? How does it work? [3]\n(b) Explain the differences in the degree to which (i) First Come First Serve (ii) Round Robin and (iii) Multi level queues, scheduling algorithms discriminate in favor of short processes.",
+          "text": "(a) What is paging? How does it work? [3]\n(b) Explain the differences in the degree to which (i) First Come First Serve (ii) Round Robin and (iii) Multi level queues, scheduling algorithms discriminate in favor of short processes.",
           "marks": "7",
           "chapter": "Process Management",
           "isDiagram": false
@@ -2379,7 +2379,7 @@
         },
         {
           "qNum": 6,
-          "text": "\n(a) What is a device controller? What is a device driver? How do they relieve programmer? Explain with $a^n$ example of any I/O device. [7]\n(b) Explain the implementation of process.",
+          "text": "(a) What is a device controller? What is a device driver? How do they relieve programmer? Explain with $a^n$ example of any I/O device. [7]\n(b) Explain the implementation of process.",
           "marks": "3",
           "chapter": "I/O and Memory Management",
           "isDiagram": false
@@ -2493,7 +2493,7 @@
         },
         {
           "qNum": 2,
-          "text": "Consider the following set of process with the length of the CPU burst time given in millisecond.<table><thead><tr><th>Process</th><th>P1</th><th>P2</th><th>P3</th><th>P4</th><th>P5</th></tr></thead><tbody><tr><td>Burst time</td><td>10</td><td>1</td><td>2</td><td>1</td><td>2</td></tr><tr><td>Priority</td><td>3</td><td>1</td><td>3</td><td>4</td><td>2</td></tr></tbody></table>Assume the processes arrived in the order P1, P2, P3, P4 and P5 all at time 0, priority 1 as highest and 4 as lowest.\n(a) Draw the Gantt chart for FCFS, SJF, Priority and Round Robin (Quantum = 2)\n(b) Which algorithm results in the maximum average waiting time?",
+          "text": "Consider the following set of process with the length of the CPU burst time given in millisecond.\n\n| Process | P1 | P2 | P3 | P4 | P5 |\n| --- | --- | --- | --- | --- | --- |\n| Burst time | 10 | 1 | 2 | 1 | 2 |\n| Priority | 3 | 1 | 3 | 4 | 2 |\n\nAssume the processes arrived in the order P1, P2, P3, P4 and P5 all at time 0, priority 1 as highest and 4 as lowest.\n(a) Draw the Gantt chart for FCFS, SJF, Priority and Round Robin (Quantum = 2)\n(b) Which algorithm results in the maximum average waiting time?",
           "marks": "4",
           "chapter": "Process Management",
           "isDiagram": false

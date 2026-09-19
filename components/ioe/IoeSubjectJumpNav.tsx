@@ -7,21 +7,18 @@ import {
   Calendar,
   BookOpen,
   Award,
-  HelpCircle,
   ArrowDown,
 } from "lucide-react";
 
 interface IoeSubjectJumpNavProps {
   hasQuestions?: boolean;
   hasExamScheme?: boolean;
-  hasFaq?: boolean;
   hasSyllabus?: boolean;
 }
 
 export function IoeSubjectJumpNav({
   hasQuestions = true,
   hasExamScheme = true,
-  hasFaq = true,
   hasSyllabus = true,
 }: IoeSubjectJumpNavProps) {
   const [activeId, setActiveId] = useState<string>("");
@@ -32,7 +29,6 @@ export function IoeSubjectJumpNav({
     { id: "year-wise", label: "Past 10 Years", icon: Calendar, color: "text-emerald-500", show: hasQuestions },
     { id: "syllabus", label: "Syllabus", icon: BookOpen, color: "text-violet-500", show: hasSyllabus },
     { id: "exam-scheme", label: "Marks Scheme", icon: Award, color: "text-indigo-500", show: hasExamScheme },
-    { id: "faq", label: "FAQs", icon: HelpCircle, color: "text-rose-500", show: hasFaq },
   ].filter((item) => item.show);
 
   useEffect(() => {
