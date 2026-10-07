@@ -1,15 +1,20 @@
-"use client";
-import "../globals.css";
-import dynamic from "next/dynamic";
-import Hero from "../../components/hero/Hero";
-import About from "../../components/about/about";
-import Stats from "../../components/stats/Stats";
-import { generateLocalBusinessSchema, generatePersonSchema } from "../../lib/blog/schema";
+import type { Metadata } from "next";
+import Hero from "@/components/hero/Hero";
+import About from "@/components/about/about";
+import Stats from "@/components/stats/Stats";
+import Education from "@/components/education/education";
+import Experience from "@/components/experience/experience";
+import Project from "@/components/projects/projects";
+import ContactPage from "@/components/contact/contact";
+import {
+  generateLocalBusinessSchema,
+  generatePersonSchema,
+} from "@/lib/blog/schema";
+import { SITE_URL } from "@/lib/site-config";
 
-const Education = dynamic(() => import("../../components/education/education"), { ssr: false });
-const Experience = dynamic(() => import("../../components/experience/experience"), { ssr: false });
-const Project = dynamic(() => import("../../components/projects/projects"), { ssr: false });
-const ContactPage = dynamic(() => import("../../components/contact/contact"), { ssr: false });
+export const metadata: Metadata = {
+  alternates: { canonical: SITE_URL },
+};
 
 export default function HomePage() {
   const serviceSchema = generateLocalBusinessSchema();
