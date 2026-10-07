@@ -1,25 +1,9 @@
-"use client";
-import dynamic from "next/dynamic";
-import Navbar from "../../components/navbar/navbar";
-import SmoothScrollProvider from "../../providers/SmoothScrollProvider";
-
-const Sidebar = dynamic(() => import("../../components/sidebars/sidebar"), {
-  ssr: false,
-});
-const SidebarLeft = dynamic(
-  () => import("../../components/sidebars/sidebarRight"),
-  { ssr: false }
-);
-const Footer = dynamic(() => import("../../components/footer/Footer"), {
-  ssr: false,
-});
-const DotGrid = dynamic(() => import("../../components/background/DotGrid"), {
-  ssr: false,
-});
-const ScrollProgress = dynamic(
-  () => import("../../components/ui/ScrollProgress"),
-  { ssr: false }
-);
+import Navbar from "@/components/navbar/navbar";
+import Sidebar from "@/components/sidebars/sidebar";
+import SidebarLeft from "@/components/sidebars/sidebarRight";
+import Footer from "@/components/footer/Footer";
+import DotGrid from "@/components/background/DotGrid";
+import ScrollProgress from "@/components/ui/ScrollProgress";
 
 export default function PortfolioLayout({
   children,
@@ -27,7 +11,7 @@ export default function PortfolioLayout({
   children: React.ReactNode;
 }) {
   return (
-    <SmoothScrollProvider>
+    <>
       <a href="#main-content" className="skip-link">
         Skip to content
       </a>
@@ -38,6 +22,6 @@ export default function PortfolioLayout({
       <Sidebar />
       <main id="main-content">{children}</main>
       <Footer />
-    </SmoothScrollProvider>
+    </>
   );
 }
