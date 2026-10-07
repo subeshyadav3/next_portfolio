@@ -42,11 +42,8 @@ export default function Navbar() {
   const closeMenu = () => { setIsMenuOpen(false); document.body.style.overflow = ""; };
 
   const navLinks = [
-    { href: "#home", label: "Home" },
     { href: "#about", label: "About" },
-    { href: "#tech", label: "Stack" },
     { href: "#experiences", label: "Experience" },
-    { href: "#education", label: "Education" },
     { href: "#projects", label: "Projects" },
     { href: "#contact", label: "Contact" },
     { href: "/blog", label: "Blog" },
@@ -106,7 +103,7 @@ export default function Navbar() {
           <Image src="/logo.svg" alt="Logo" width={32} height={32} className="w-8 h-8" priority />
         </Link>
         {!isMobile ? (
-          <div className="flex items-center gap-8 text-sm font-medium" style={{ color: "var(--text-secondary)" }}>
+          <div className="flex items-center gap-6 text-sm font-medium" style={{ color: "var(--text-secondary)" }}>
             {navLinks.map((link) => {
               const id = link.href.replace("#", "");
               const isActive = active === id;
