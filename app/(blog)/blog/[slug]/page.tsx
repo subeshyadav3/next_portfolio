@@ -39,6 +39,7 @@ import { WasThisHelpful } from "@/components/blog/WasThisHelpful";
 import { PostComments } from "@/components/blog/PostComments";
 import { getComments } from "@/services/comments.service";
 import { prisma } from "@/db/prisma";
+import { Clock, Calendar } from "lucide-react";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -133,21 +134,24 @@ export default async function BlogPostPage({ params }: PageProps) {
         lang={post.language}
         className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8"
       >
-        <Breadcrumb
-          items={[
-            { label: "Blog", href: "/blog" },
-            {
-              label: categoryLabel,
-              href: `/blog/category/${categorySlugValue}`,
-            },
-            { label: post.title, href: `/blog/${post.slug}` },
-          ]}
-        />
+        <div className="mx-auto max-w-4xl">
+          <Breadcrumb
+            items={[
+              { label: "Blog", href: "/blog" },
+              {
+                label: categoryLabel,
+                href: `/blog/category/${categorySlugValue}`,
+              },
+              { label: post.title, href: `/blog/${post.slug}` },
+            ]}
+          />
+        </div>
 
-        <header className="mx-auto max-w-3xl pt-8 pb-12 text-center">
+        {/* ── Article Header ── */}
+        <header className="mx-auto max-w-4xl pt-8 pb-10 text-center">
           <Link
             href={`/blog/category/${categorySlugValue}`}
-            className="inline-flex items-center rounded-full px-3 py-1 text-sm font-medium"
+            className="inline-flex items-center rounded-full px-3.5 py-1 text-xs font-semibold tracking-wide transition-opacity hover:opacity-85"
             style={{
               backgroundColor: `color-mix(in srgb, ${categoryAccent} 15%, transparent)`,
               color: categoryAccent,
@@ -158,39 +162,52 @@ export default async function BlogPostPage({ params }: PageProps) {
 
           <EducationalBadges post={post} />
 
-          <h1 className="mt-6 text-3xl font-bold tracking-tight text-[var(--blog-text)] sm:text-4xl lg:text-5xl">
+          <h1 className="mt-5 text-3xl font-extrabold tracking-tight text-[var(--blog-text)] sm:text-4xl lg:text-5xl lg:leading-[1.15]">
             {post.title}
           </h1>
 
-          <p className="mt-4 text-lg text-[var(--blog-text-secondary)]">
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-[var(--blog-text-secondary)] sm:text-lg">
             {post.description}
           </p>
 
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-4 text-sm text-[var(--blog-text-muted)]">
+          {/* Author & Editorial Metadata Pill */}
+          <div className="mt-7 inline-flex flex-wrap items-center justify-center gap-3 rounded-2xl border border-[var(--blog-border)] bg-[var(--blog-surface)] px-4 py-2.5 text-xs text-[var(--blog-text-secondary)] shadow-2xs">
             <Link
               href={`/blog/author/${post.authorSlug}`}
-              className="hover:text-[var(--blog-accent)] transition-colors"
+              className="flex items-center gap-2 font-semibold text-[var(--blog-text)] hover:text-[var(--blog-accent)] transition-colors"
             >
-              {post.author}
+              <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[var(--blog-accent)]/15 font-bold text-[var(--blog-accent)] text-[11px]">
+                {post.author.charAt(0).toUpperCase()}
+              </span>
+              <span>{post.author}</span>
             </Link>
-            <span>·</span>
-            <time dateTime={post.published}>
-              {formatDate(post.published)}
-            </time>
+            <span className="text-[var(--blog-text-faint)]">·</span>
+            <div className="flex items-center gap-1.5 text-[var(--blog-text-muted)]">
+              <Calendar className="h-3.5 w-3.5" />
+              <time dateTime={post.published}>
+                {formatDate(post.published)}
+              </time>
+            </div>
             {post.updated !== post.published && (
               <>
-                <span>·</span>
-                <span>Updated {formatDate(post.updated)}</span>
+                <span className="text-[var(--blog-text-faint)]">·</span>
+                <span className="rounded-md bg-[var(--blog-bg)] px-2 py-0.5 text-[11px] text-[var(--blog-text-muted)]">
+                  Updated {formatDate(post.updated)}
+                </span>
               </>
             )}
-            <span>·</span>
-            <span>{post.readingTime} min read</span>
+            <span className="text-[var(--blog-text-faint)]">·</span>
+            <div className="flex items-center gap-1.5 text-[var(--blog-text-muted)]">
+              <Clock className="h-3.5 w-3.5" />
+              <span>{post.readingTime} min read</span>
+            </div>
           </div>
         </header>
 
+        {/* ── Featured Cover Image ── */}
         {post.image && (
           <div className="mx-auto max-w-4xl mb-12">
-            <div className="relative aspect-[16/9] overflow-hidden rounded-2xl">
+            <div className="relative aspect-[16/9] overflow-hidden rounded-3xl border border-[var(--blog-border)] bg-[var(--blog-surface2)] shadow-sm">
               <Image
                 src={post.image}
                 alt={post.title}
@@ -203,73 +220,84 @@ export default async function BlogPostPage({ params }: PageProps) {
           </div>
         )}
 
-        <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_280px] gap-12">
-            <div className="blog-prose blog-devanagari max-w-none">
-              {content}
+        {/* ── Main Article & TOC Grid ── */}
+        <div className="mx-auto max-w-6xl">
+          <div className="grid grid-cols-1 lg:grid-cols-[minmax(0,1fr)_280px] gap-12 items-start">
+            {/* Reading Column */}
+            <div className="min-w-0 max-w-[72ch] mx-auto lg:mx-0 w-full">
+              <div className="blog-prose blog-devanagari max-w-none">
+                {content}
+              </div>
+
+              {(adjacentChapters.prev || adjacentChapters.next) && (
+                <nav
+                  className="my-10 flex flex-col gap-3 rounded-2xl border border-[var(--blog-border)] bg-[var(--blog-surface)] p-5 sm:flex-row sm:items-center sm:justify-between shadow-xs"
+                  aria-label="Chapter navigation"
+                >
+                  {adjacentChapters.prev ? (
+                    <Link
+                      href={`/blog/${adjacentChapters.prev.slug}`}
+                      className="group text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)]"
+                    >
+                      <span className="block text-xs uppercase tracking-wider text-[var(--blog-text-muted)]">
+                        Previous Chapter
+                      </span>
+                      <span className="font-semibold group-hover:underline">
+                        ← {adjacentChapters.prev.title}
+                      </span>
+                    </Link>
+                  ) : (
+                    <span />
+                  )}
+                  {adjacentChapters.next ? (
+                    <Link
+                      href={`/blog/${adjacentChapters.next.slug}`}
+                      className="group text-right text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)] sm:ml-auto"
+                    >
+                      <span className="block text-xs uppercase tracking-wider text-[var(--blog-text-muted)]">
+                        Next Chapter
+                      </span>
+                      <span className="font-semibold group-hover:underline">
+                        {adjacentChapters.next.title} →
+                      </span>
+                    </Link>
+                  ) : (
+                    <span />
+                  )}
+                </nav>
+              )}
+
+              {isExamCategory(post.category) && <WasThisHelpful />}
+
+              <div className="my-8">
+                <ShareButtons title={post.title} slug={post.slug} />
+              </div>
+
+              <div className="my-8">
+                <AuthorCard
+                  name={post.author}
+                  authorSlug={post.authorSlug}
+                  bio="Writer and educator sharing Nepali essays, poems, literature, and study notes."
+                />
+              </div>
+
+              {(dbPost?.allowComments ?? post.source === "FILE") && (
+                <div className="my-10 rounded-2xl border border-[var(--blog-border)] bg-[var(--blog-surface)] p-6 sm:p-8 shadow-xs">
+                  <PostComments
+                    postId={dbPost?.id ?? ""}
+                    postSlug={dbPost ? undefined : post.slug}
+                    initialComments={comments}
+                  />
+                </div>
+              )}
             </div>
 
-            <aside className="hidden lg:block">
+            {/* Sticky Table of Contents Sidebar */}
+            <aside className="hidden lg:block sticky top-24">
               {toc.length > 0 && (
                 <TableOfContents items={toc} accentColor={categoryAccent} />
               )}
             </aside>
-          </div>
-
-          <div className="lg:max-w-3xl">
-            {(adjacentChapters.prev || adjacentChapters.next) && (
-              <nav
-                className="my-8 flex flex-col gap-3 rounded-xl border border-[var(--blog-border)] bg-[var(--blog-surface)] p-5 sm:flex-row sm:items-center sm:justify-between"
-                aria-label="Chapter navigation"
-              >
-                {adjacentChapters.prev ? (
-                  <Link
-                    href={`/blog/${adjacentChapters.prev.slug}`}
-                    className="text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)]"
-                  >
-                    <span className="block text-xs text-[var(--blog-text-muted)]">
-                      Previous
-                    </span>
-                    ← {adjacentChapters.prev.title}
-                  </Link>
-                ) : (
-                  <span />
-                )}
-                {adjacentChapters.next ? (
-                  <Link
-                    href={`/blog/${adjacentChapters.next.slug}`}
-                    className="text-right text-sm text-[var(--blog-text-secondary)] hover:text-[var(--blog-accent)] sm:ml-auto"
-                  >
-                    <span className="block text-xs text-[var(--blog-text-muted)]">
-                      Next
-                    </span>
-                    {adjacentChapters.next.title} →
-                  </Link>
-                ) : (
-                  <span />
-                )}
-              </nav>
-            )}
-
-            {isExamCategory(post.category) && <WasThisHelpful />}
-
-            <div className="mt-12 border-t border-[var(--blog-border)] pt-8">
-              <ShareButtons title={post.title} slug={post.slug} />
-            </div>
-
-            <div className="mt-12">
-              <AuthorCard
-                name={post.author}
-                authorSlug={post.authorSlug}
-                bio="Writer and educator sharing Nepali essays, poems, and study materials."
-              />
-            </div>
-
-            {(dbPost?.allowComments ?? post.source === "FILE") && (
-              <div className="mt-12">
-                <PostComments postId={dbPost?.id ?? ""} postSlug={dbPost ? undefined : post.slug} initialComments={comments} />
-              </div>
-            )}
           </div>
         </div>
       </article>

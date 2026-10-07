@@ -3,6 +3,7 @@ import Image from "next/image";
 import type { NormalizedPostSummary } from "@/lib/content";
 import { formatDate } from "@/lib/blog/utils";
 import { getCategorySlug, getCategoryLabel, getCategoryAccent } from "@/lib/blog/categories";
+import { Clock } from "lucide-react";
 
 interface BlogCardProps {
   post: NormalizedPostSummary;
@@ -11,11 +12,15 @@ interface BlogCardProps {
 }
 
 export function BlogCard({ post, priority = false }: BlogCardProps) {
+  const categorySlug = getCategorySlug(post.category);
+  const categoryLabel = getCategoryLabel(categorySlug);
+  const categoryAccent = getCategoryAccent(categorySlug);
+
   return (
-    <article className="group flex flex-col overflow-hidden rounded-xl border border-[var(--blog-border)] bg-[var(--blog-surface)] shadow-sm hover:shadow-md transition-all duration-300">
+    <article className="group flex flex-col overflow-hidden rounded-2xl border border-[var(--blog-border)] bg-[var(--blog-surface)] shadow-xs transition-all duration-300 hover:-translate-y-1 hover:border-[var(--blog-accent)]/40 hover:shadow-lg">
       <Link
         href={`/blog/${post.slug}`}
-        className="relative aspect-[16/10] overflow-hidden bg-stone-100"
+        className="relative aspect-[16/10] overflow-hidden bg-[var(--blog-surface2)] block"
       >
         {post.image ? (
           <Image
@@ -27,47 +32,48 @@ export function BlogCard({ post, priority = false }: BlogCardProps) {
             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           />
         ) : (
-          <Image
-            src="/images/blog-placeholder.svg"
-            alt=""
-            fill
-            className="object-cover"
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-          />
+          <div className="flex h-full w-full items-center justify-center bg-gradient-to-br from-stone-100 to-stone-200 dark:from-stone-900 dark:to-stone-800 text-stone-400">
+            <span className="text-sm font-semibold tracking-wider uppercase opacity-60">
+              {categoryLabel}
+            </span>
+          </div>
         )}
       </Link>
 
-      <div className="flex flex-1 flex-col p-5">
-        <Link
-          href={`/blog/category/${getCategorySlug(post.category)}`}
-          className="inline-flex w-fit items-center rounded-full px-2.5 py-0.5 text-xs font-medium hover:opacity-80 transition-opacity"
-          style={{
-            backgroundColor: `color-mix(in srgb, ${getCategoryAccent(getCategorySlug(post.category))} 15%, transparent)`,
-            color: getCategoryAccent(getCategorySlug(post.category)),
-          }}
-        >
-          {getCategoryLabel(getCategorySlug(post.category))}
-        </Link>
+      <div className="flex flex-1 flex-col p-5 sm:p-6">
+        <div className="flex items-center justify-between gap-2">
+          <Link
+            href={`/blog/category/${categorySlug}`}
+            className="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-semibold tracking-wide transition-opacity hover:opacity-80"
+            style={{
+              backgroundColor: `color-mix(in srgb, ${categoryAccent} 15%, transparent)`,
+              color: categoryAccent,
+            }}
+          >
+            {categoryLabel}
+          </Link>
+          <div className="flex items-center gap-1 text-[11px] font-medium text-[var(--blog-text-muted)]">
+            <Clock className="h-3 w-3" />
+            <span>{post.readingTime} min</span>
+          </div>
+        </div>
 
-        <h3 className="mt-3 text-lg font-semibold leading-snug text-[var(--blog-text)] group-hover:text-[var(--blog-accent)] transition-colors line-clamp-2">
+        <h3 className="mt-3.5 text-base sm:text-lg font-bold leading-snug text-[var(--blog-text)] transition-colors group-hover:text-[var(--blog-accent)] line-clamp-2">
           <Link href={`/blog/${post.slug}`}>{post.title}</Link>
         </h3>
 
-        <p className="mt-2 flex-1 text-sm leading-relaxed text-[var(--blog-text-secondary)] line-clamp-3">
+        <p className="mt-2 flex-1 text-xs sm:text-sm leading-relaxed text-[var(--blog-text-secondary)] line-clamp-3">
           {post.description}
         </p>
 
-        <div className="mt-4 flex items-center gap-3 text-xs text-[var(--blog-text-muted)]">
+        <div className="mt-5 flex items-center justify-between border-t border-[var(--blog-border)] pt-3.5 text-xs text-[var(--blog-text-muted)]">
           <Link
             href={`/blog/author/${post.authorSlug}`}
-            className="hover:text-[var(--blog-accent)] transition-colors"
+            className="font-medium hover:text-[var(--blog-accent)] transition-colors"
           >
             {post.author}
           </Link>
-          <span>·</span>
           <time dateTime={post.published}>{formatDate(post.published)}</time>
-          <span>·</span>
-          <span>{post.readingTime} min read</span>
         </div>
       </div>
     </article>
