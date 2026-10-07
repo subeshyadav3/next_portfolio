@@ -183,6 +183,23 @@ export default async function IoeSubjectPage({ params }: PageProps) {
             {program.semesters[semester].map((sub) => {
               const subSlug = getSubjectSlugFromName(sub.title);
               const isActive = subSlug === subjectSlug;
+              const subCatalog = findCatalogSubject(sub.title);
+              const subHasPdf = Boolean(subCatalog && subCatalog.papers.length > 0);
+
+              if (!subHasPdf) {
+                return (
+                  <span
+                    key={sub.code}
+                    aria-disabled="true"
+                    title="No PDF available yet"
+                    className="inline-flex cursor-not-allowed items-center gap-1.5 rounded-xl border border-dashed border-slate-200 bg-slate-50 px-3 py-1.5 text-xs font-medium text-slate-400 opacity-70 dark:border-gray-700 dark:bg-gray-900 dark:text-slate-500"
+                  >
+                    <span className="opacity-70 font-mono text-[10px]">{sub.code}</span>
+                    <span>{sub.title}</span>
+                  </span>
+                );
+              }
+
               return (
                 <Link
                   key={sub.code}
