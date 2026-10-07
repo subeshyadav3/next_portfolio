@@ -1,9 +1,11 @@
 import { MetadataRoute } from "next";
 import {
   getAllPosts,
+  getArchiveYears,
   getCategories,
   getTags,
 } from "@/lib/blog/posts";
+import { getCategorySlug } from "@/lib/blog/categories";
 import { SITE_URL } from "@/lib/site-config";
 import { IOE_ENABLED } from "@/lib/ioe/config";
 import {
@@ -16,6 +18,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const posts = await getAllPosts();
   const categories = await getCategories();
   const tags = await getTags();
+  const years = await getArchiveYears();
+
+  const latestUpdate = posts.reduce(
+    (max, p) => Math.max(max, new Date(p.updated).getTime()),
+    0
+  );
+  const blogLastModified = latestUpdate ? new Date(latestUpdate) : undefined;
+  const categoryLastModified = new Map<string, number>();
+  for (const p of posts) {
+    const slug = getCategorySlug(p.category);
+    const t = new Date(p.updated).getTime();
+    categoryLastModified.set(slug, Math.max(categoryLastModified.get(slug) ?? 0, t));
+  }
 
   const postUrls = posts.map((post) => ({
     url: `${SITE_URL}/blog/${post.slug}`,
@@ -28,6 +43,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     .filter((category) => category.count > 0)
     .map((category) => ({
       url: `${SITE_URL}/blog/category/${category.slug}`,
+      lastModified: categoryLastModified.has(category.slug)
+        ? new Date(categoryLastModified.get(category.slug)!)
+        : blogLastModified,
       changeFrequency: "weekly" as const,
       priority: 0.6,
     }));
@@ -36,6 +54,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     .filter((tag) => tag.count >= 3)
     .map((tag) => ({
       url: `${SITE_URL}/blog/tag/${tag.slug}`,
+      lastModified: blogLastModified,
       changeFrequency: "weekly" as const,
       priority: 0.5,
     }));
@@ -109,9 +128,20 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${SITE_URL}/blog`,
+      lastModified: blogLastModified,
       changeFrequency: "daily",
       priority: 0.9,
     },
+    ...["about", "contact", "author", "privacy", "terms", "disclaimer"].map((page) => ({
+      url: `${SITE_URL}/blog/${page}`,
+      changeFrequency: "yearly" as const,
+      priority: page === "about" || page === "contact" ? 0.4 : 0.2,
+    })),
+    ...years.map((y) => ({
+      url: `${SITE_URL}/blog/archive/${y.year}`,
+      changeFrequency: "monthly" as const,
+      priority: 0.4,
+    })),
     ...postUrls,
     ...categoryUrls,
     ...tagUrls,
