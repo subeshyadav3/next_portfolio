@@ -63,7 +63,6 @@ export const metadata: Metadata = {
   creator: SITE_NAME,
   publisher: SITE_NAME,
   alternates: {
-    canonical: SITE_URL,
     types: {
       "application/rss+xml": `${SITE_URL}/blog/rss.xml`,
     },
