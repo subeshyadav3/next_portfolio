@@ -19,16 +19,28 @@ export default async function NotFound() {
 
       <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
         <Link
+          href="/"
+          className="rounded-xl border border-[var(--blog-border)] bg-[var(--blog-surface)] px-5 py-2.5 text-sm font-medium text-[var(--blog-text)] hover:border-[var(--blog-accent)] transition-colors"
+        >
+          Portfolio Home
+        </Link>
+        <Link
           href="/blog"
-          className="rounded-lg bg-[var(--blog-accent)] px-5 py-2.5 text-sm font-medium text-white hover:opacity-90"
+          className="rounded-xl bg-[var(--blog-accent)] px-5 py-2.5 text-sm font-medium text-white hover:opacity-90 transition-opacity shadow-xs"
         >
           Browse Blog
         </Link>
         <Link
-          href="/blog/search"
-          className="rounded-lg border border-[var(--blog-border)] px-5 py-2.5 text-sm font-medium text-[var(--blog-text)] hover:border-[var(--blog-accent)]"
+          href="/ioe"
+          className="rounded-xl border border-blue-200 bg-blue-50 px-5 py-2.5 text-sm font-medium text-blue-700 hover:bg-blue-100 transition-colors dark:border-blue-900/50 dark:bg-blue-950/40 dark:text-blue-300"
         >
-          Search Articles
+          IOE Papers Archive
+        </Link>
+        <Link
+          href="/blog/search"
+          className="rounded-xl border border-[var(--blog-border)] px-5 py-2.5 text-sm font-medium text-[var(--blog-text-secondary)] hover:border-[var(--blog-accent)] transition-colors"
+        >
+          Search
         </Link>
       </div>
 

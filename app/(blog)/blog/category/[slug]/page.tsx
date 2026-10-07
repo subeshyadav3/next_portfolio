@@ -78,7 +78,7 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
-      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 pt-8 pb-4 sm:px-6 lg:px-8">
         <Breadcrumb
           items={[
             { label: "Blog", href: "/blog" },
@@ -86,9 +86,9 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
           ]}
         />
 
-        <header className="mt-8">
+        <header className="mt-6 rounded-3xl border border-[var(--blog-border)] bg-gradient-to-b from-[var(--blog-surface)] to-[var(--blog-bg)] p-8 sm:p-10 shadow-xs">
           <span
-            className="inline-flex items-center rounded-full px-3 py-1 text-sm font-semibold"
+            className="inline-flex items-center rounded-full px-3.5 py-1 text-xs font-semibold tracking-wide"
             style={{
               backgroundColor: `color-mix(in srgb, ${getCategoryAccent(category.slug)} 15%, transparent)`,
               color: getCategoryAccent(category.slug),
@@ -96,15 +96,16 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
           >
             {category.name}
           </span>
-          <h1 className="mt-4 text-4xl font-bold text-[var(--blog-text)]">
+          <h1 className="mt-4 text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[var(--blog-text)]">
             {category.name} Articles
           </h1>
-          <p className="mt-3 text-lg text-[var(--blog-text-secondary)] max-w-3xl">
+          <p className="mt-3 text-base sm:text-lg text-[var(--blog-text-secondary)] max-w-3xl leading-relaxed">
             {getCategoryDescription(category.slug)}
           </p>
-          <p className="mt-2 text-sm text-[var(--blog-text-muted)]">
-            {totalPosts} article{totalPosts !== 1 ? "s" : ""} in this category.
-          </p>
+          <div className="mt-4 flex items-center gap-2 text-xs font-medium text-[var(--blog-text-muted)]">
+            <span className="inline-block h-2 w-2 rounded-full" style={{ backgroundColor: getCategoryAccent(category.slug) }} />
+            <span>{totalPosts} article{totalPosts !== 1 ? "s" : ""} in this archive</span>
+          </div>
         </header>
       </section>
 
