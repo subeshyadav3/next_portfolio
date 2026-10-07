@@ -16,10 +16,6 @@ const Footer = dynamic(() => import("../../components/footer/Footer"), {
 const DotGrid = dynamic(() => import("../../components/background/DotGrid"), {
   ssr: false,
 });
-const CustomCursor = dynamic(
-  () => import("../../components/cursor/CustomCursor"),
-  { ssr: false }
-);
 const ScrollProgress = dynamic(
   () => import("../../components/ui/ScrollProgress"),
   { ssr: false }
@@ -37,7 +33,6 @@ export default function PortfolioLayout({
       </a>
       <ScrollProgress />
       <DotGrid />
-      <CustomCursor />
       <Navbar />
       <SidebarLeft />
       <Sidebar />
