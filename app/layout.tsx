@@ -3,10 +3,6 @@ import "./globals.css";
 import "katex/dist/katex.min.css";
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import { SITE_URL, SITE_NAME } from "@/lib/site-config";
-import {
-  generateOrganizationSchema,
-  generatePersonSchema,
-} from "@/lib/blog/schema";
 import { Metadata } from "next";
 import { CookieConsent } from "@/components/blog/CookieConsent";
 import { ConsentAwareAnalytics } from "@/components/blog/ConsentAwareAnalytics";
@@ -94,9 +90,6 @@ export const metadata: Metadata = {
   icons: { icon: "/logo.svg" },
 };
 
-const organizationSchema = generateOrganizationSchema();
-const personSchema = generatePersonSchema();
-
 export default function RootLayout({
   children,
 }: {
@@ -116,14 +109,6 @@ export default function RootLayout({
         <meta name="twitter:creator" content="@subeshyadav" />
       </head>
       <body className="antialiased" style={{ fontFamily: "var(--font-inter)" }}>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
-        />
         <ThemeProvider>{children}</ThemeProvider>
         <CookieConsent />
         <ConsentAwareAnalytics />

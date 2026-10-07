@@ -1,5 +1,5 @@
 import { Post } from "./types";
-import { SITE_URL, SITE_NAME } from "@/lib/site-config";
+import { SITE_URL, SITE_NAME, BLOG_NAME } from "@/lib/site-config";
 
 export function generateArticleSchema(
   post: Post,
@@ -73,9 +73,10 @@ export function generateOrganizationSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
-    name: SITE_NAME,
-    url: SITE_URL,
+    name: BLOG_NAME,
+    url: `${SITE_URL}/blog`,
     logo: `${SITE_URL}/logo.svg`,
+    founder: { "@type": "Person", name: SITE_NAME, url: SITE_URL },
     sameAs: [
       "https://github.com/subeshyadav3",
       "https://www.linkedin.com/in/subeshyadav3",
@@ -169,8 +170,8 @@ export function generateWebSiteSchema() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: SITE_NAME,
-    url: SITE_URL,
+    name: BLOG_NAME,
+    url: `${SITE_URL}/blog`,
     potentialAction: {
       "@type": "SearchAction",
       target: `${SITE_URL}/blog/search?q={search_term_string}`,

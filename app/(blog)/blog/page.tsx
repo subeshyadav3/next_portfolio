@@ -6,7 +6,7 @@ import {
   getCategories,
 } from "@/lib/blog/posts";
 import { generateBlogMetadata } from "@/lib/blog/seo";
-import { generateWebSiteSchema } from "@/lib/blog/schema";
+import { generateWebSiteSchema, generateOrganizationSchema } from "@/lib/blog/schema";
 import { formatDate } from "@/lib/blog/utils";
 import { getCategorySlug, getCategoryAccent } from "@/lib/blog/categories";
 import { BlogCard } from "@/components/blog/BlogCard";
@@ -41,12 +41,17 @@ export default async function BlogHomePage() {
   }
 
   const webSiteSchema = generateWebSiteSchema();
+  const organizationSchema = generateOrganizationSchema();
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webSiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
       />
 
       {/* Hero */}
