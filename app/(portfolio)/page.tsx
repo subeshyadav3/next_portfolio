@@ -6,11 +6,14 @@ import Education from "@/components/education/education";
 import Experience from "@/components/experience/experience";
 import Project from "@/components/projects/projects";
 import ContactPage from "@/components/contact/contact";
+import LatestWriting from "@/components/writing/LatestWriting";
 import {
   generateLocalBusinessSchema,
   generatePersonSchema,
 } from "@/lib/blog/schema";
 import { SITE_URL } from "@/lib/site-config";
+
+export const revalidate = 3600;
 
 export const metadata: Metadata = {
   alternates: { canonical: SITE_URL },
@@ -36,6 +39,7 @@ export default function HomePage() {
       <Education />
       <Experience />
       <Project />
+      <LatestWriting />
       <ContactPage />
     </>
   );
