@@ -106,15 +106,20 @@ const CACHE_TTL = 3600;
 
 const cachedList = unstable_cache(
   async (opts?: ListOptions): Promise<NormalizedPostSummary[]> => {
-    const posts = await prisma.post.findMany({
-      where: {
-        ...(opts?.includeUnpublished ? {} : publicFilter()),
-        ...langWhere(opts),
-      },
-      include: POST_INCLUDE,
-      orderBy: { publishedAt: "desc" },
-    });
-    return paginate(posts.map((p) => summarize(toNormalized(p))), opts);
+    try {
+      const posts = await prisma.post.findMany({
+        where: {
+          ...(opts?.includeUnpublished ? {} : publicFilter()),
+          ...langWhere(opts),
+        },
+        include: POST_INCLUDE,
+        orderBy: { publishedAt: "desc" },
+      });
+      return paginate(posts.map((p) => summarize(toNormalized(p))), opts);
+    } catch (err) {
+      console.warn("[prisma-post-source:cachedList] DB query failed, falling back:", err instanceof Error ? err.message : err);
+      return [];
+    }
   },
   ["prisma-post-source:list-v2"],
   { revalidate: CACHE_TTL, tags: ["posts:list"] }
@@ -230,36 +235,41 @@ const cachedByYear = unstable_cache(
 
 const cachedCategories = unstable_cache(
   async (opts?: ListOptions): Promise<NormalizedCategory[]> => {
-    const cats = await prisma.category.findMany({
-      orderBy: { displayOrder: "asc" },
-    });
-    const rows = await prisma.$queryRaw<Array<{ slug: string; count: bigint }>>`
-      SELECT c.slug, COUNT(p.id) AS count
-      FROM "Category" c
-      LEFT JOIN "Post" p ON p."categoryId" = c.id
-        AND p.status = 'PUBLISHED'
-        AND (p."scheduledFor" IS NULL OR p."scheduledFor" <= NOW())
-        AND (p."expiresAt" IS NULL OR p."expiresAt" > NOW())
-        ${opts?.language ? Prisma.sql`AND p.language = ${opts.language}` : Prisma.empty}
-      GROUP BY c.slug
-    `;
-    const countMap = new Map(rows.map((r) => [r.slug, Number(r.count)]));
-    // Normalize to canonical slugs to avoid duplicates (e.g. SEE → class-10)
-    const canonical = new Map<string, { name: string; slug: string; count: number }>();
-    for (const c of cats) {
-      const canonicalSlug = getCategorySlug(c.name);
-      const existing = canonical.get(canonicalSlug);
-      if (existing) {
-        existing.count += countMap.get(c.slug) ?? 0;
-      } else {
-        canonical.set(canonicalSlug, {
-          name: getCategoryLabel(canonicalSlug),
-          slug: canonicalSlug,
-          count: countMap.get(c.slug) ?? 0,
-        });
+    try {
+      const cats = await prisma.category.findMany({
+        orderBy: { displayOrder: "asc" },
+      });
+      const rows = await prisma.$queryRaw<Array<{ slug: string; count: bigint }>>`
+        SELECT c.slug, COUNT(p.id) AS count
+        FROM "Category" c
+        LEFT JOIN "Post" p ON p."categoryId" = c.id
+          AND p.status = 'PUBLISHED'
+          AND (p."scheduledFor" IS NULL OR p."scheduledFor" <= NOW())
+          AND (p."expiresAt" IS NULL OR p."expiresAt" > NOW())
+          ${opts?.language ? Prisma.sql`AND p.language = ${opts.language}` : Prisma.empty}
+        GROUP BY c.slug
+      `;
+      const countMap = new Map(rows.map((r) => [r.slug, Number(r.count)]));
+      // Normalize to canonical slugs to avoid duplicates (e.g. SEE → class-10)
+      const canonical = new Map<string, { name: string; slug: string; count: number }>();
+      for (const c of cats) {
+        const canonicalSlug = getCategorySlug(c.name);
+        const existing = canonical.get(canonicalSlug);
+        if (existing) {
+          existing.count += countMap.get(c.slug) ?? 0;
+        } else {
+          canonical.set(canonicalSlug, {
+            name: getCategoryLabel(canonicalSlug),
+            slug: canonicalSlug,
+            count: countMap.get(c.slug) ?? 0,
+          });
+        }
       }
+      return [...canonical.values()];
+    } catch (err) {
+      console.warn("[prisma-post-source:cachedCategories] DB query failed, falling back:", err instanceof Error ? err.message : err);
+      return [];
     }
-    return [...canonical.values()];
   },
   ["prisma-post-source:categories-v2"],
   { revalidate: CACHE_TTL, tags: ["categories:list", "posts:list"] }

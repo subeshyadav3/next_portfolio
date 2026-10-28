@@ -52,6 +52,34 @@ export interface AdminStatsData {
   topPosts: TopPostMetric[];
   ioePrograms: IoeProgramMetric[];
   ioeAggregates: IoeAggregates;
+  isDatabaseError?: boolean;
+  errorMessage?: string;
+}
+
+export function getEmptyStats(period: StatsPeriod = "all", errorMsg?: string): AdminStatsData {
+  return {
+    period,
+    overview: {
+      totalViews: 0,
+      blogViews: 0,
+      blogPercent: 0,
+      ioeViews: 0,
+      ioePercent: 0,
+      otherViews: 0,
+      otherPercent: 0,
+    },
+    trend: [],
+    topPosts: [],
+    ioePrograms: [],
+    ioeAggregates: {
+      today: 0,
+      thisWeek: 0,
+      thisMonth: 0,
+      allTime: 0,
+    },
+    isDatabaseError: !!errorMsg,
+    errorMessage: errorMsg,
+  };
 }
 
 const PROGRAM_META: Record<string, { name: string; color: string }> = {
@@ -66,7 +94,8 @@ const PROGRAM_META: Record<string, { name: string; color: string }> = {
 };
 
 async function fetchStatsData(period: StatsPeriod): Promise<AdminStatsData> {
-  const now = new Date();
+  try {
+    const now = new Date();
   let since: Date | null = null;
   if (period === "today") {
     since = new Date(now.getTime() - 24 * 60 * 60 * 1000);
@@ -311,19 +340,24 @@ async function fetchStatsData(period: StatsPeriod): Promise<AdminStatsData> {
     };
   });
 
-  return {
-    period,
-    overview,
-    trend,
-    topPosts,
-    ioePrograms,
-    ioeAggregates: {
-      today: ioeToday,
-      thisWeek: ioeWeek,
-      thisMonth: ioeMonth,
-      allTime: ioeAllTime,
-    },
-  };
+    return {
+      period,
+      overview,
+      trend,
+      topPosts,
+      ioePrograms,
+      ioeAggregates: {
+        today: ioeToday,
+        thisWeek: ioeWeek,
+        thisMonth: ioeMonth,
+        allTime: ioeAllTime,
+      },
+    };
+  } catch (err) {
+    const msg = err instanceof Error ? err.message : String(err);
+    console.warn("[stats.service] DB unavailable or quota exceeded; returning fallback stats:", msg);
+    return getEmptyStats(period, msg);
+  }
 }
 
 export async function getAdminStats(period: StatsPeriod = "all"): Promise<AdminStatsData> {
@@ -334,7 +368,12 @@ export async function getAdminStats(period: StatsPeriod = "all"): Promise<AdminS
       { revalidate: 60, tags: ["admin:stats"] }
     );
     return await cachedFn();
-  } catch {
-    return fetchStatsData(period);
+  } catch (err) {
+    try {
+      return await fetchStatsData(period);
+    } catch (innerErr) {
+      const msg = innerErr instanceof Error ? innerErr.message : String(innerErr);
+      return getEmptyStats(period, msg);
+    }
   }
 }

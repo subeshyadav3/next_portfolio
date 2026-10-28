@@ -34,12 +34,41 @@ export default async function AdminStatsPage({ searchParams }: PageProps) {
   const tab = sp.tab === "blog" || sp.tab === "ioe" ? sp.tab : "all";
 
   const stats = await getAdminStats(period);
-  const { overview, trend, topPosts, ioePrograms, ioeAggregates } = stats;
+  const {
+    overview,
+    trend = [],
+    topPosts = [],
+    ioePrograms = [],
+    ioeAggregates,
+    isDatabaseError,
+    errorMessage,
+  } = stats;
 
-  const maxDailyViews = Math.max(1, ...trend.map((t) => t.total));
+  const maxDailyViews = Math.max(1, ...(trend.length ? trend.map((t) => t.total) : [1]));
 
   return (
     <div className="space-y-8">
+      {/* Database Warning Banner if DB quota reached or unreachable */}
+      {isDatabaseError && (
+        <div className="rounded-xl border border-amber-300 bg-amber-50 p-4 text-amber-900 dark:border-amber-700/60 dark:bg-amber-950/40 dark:text-amber-200">
+          <div className="flex items-start gap-3">
+            <Zap className="h-5 w-5 shrink-0 text-amber-600 dark:text-amber-400 mt-0.5" />
+            <div className="space-y-1">
+              <h3 className="font-semibold text-sm">Database Quota Reached or Unreachable</h3>
+              <p className="text-xs opacity-90">
+                The database server (Neon PostgreSQL) has exceeded its quota limits or is temporarily suspended.
+                Fallback zeroed stats are displayed below so the admin panel remains functional without crashing.
+              </p>
+              {errorMessage && (
+                <p className="font-mono text-[11px] text-amber-800/80 dark:text-amber-300/80 break-all">
+                  {errorMessage}
+                </p>
+              )}
+            </div>
+          </div>
+        </div>
+      )}
+
       {/* Header */}
       <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
         <div>
@@ -200,47 +229,53 @@ export default async function AdminStatsPage({ searchParams }: PageProps) {
         </div>
 
         {/* Visual Bar Chart */}
-        <div className="mt-6 flex h-48 items-end gap-2 border-b border-gray-100 pt-8 pb-2 dark:border-gray-800">
-          {trend.map((point) => {
-            const heightPercent = Math.max(4, Math.round((point.total / maxDailyViews) * 100));
-            const blogShare = point.total > 0 ? (point.blog / point.total) * 100 : 0;
-            const ioeShare = point.total > 0 ? (point.ioe / point.total) * 100 : 0;
-            const otherShare = point.total > 0 ? (point.other / point.total) * 100 : 0;
+        {trend.length === 0 ? (
+          <div className="mt-6 flex h-36 items-center justify-center rounded-lg border border-dashed border-gray-200 text-xs text-gray-500 dark:border-gray-800 dark:text-gray-400">
+            No traffic trend records available for this period.
+          </div>
+        ) : (
+          <div className="mt-6 flex h-48 items-end gap-2 border-b border-gray-100 pt-8 pb-2 dark:border-gray-800">
+            {trend.map((point) => {
+              const heightPercent = Math.max(4, Math.round((point.total / maxDailyViews) * 100));
+              const blogShare = point.total > 0 ? (point.blog / point.total) * 100 : 0;
+              const ioeShare = point.total > 0 ? (point.ioe / point.total) * 100 : 0;
+              const otherShare = point.total > 0 ? (point.other / point.total) * 100 : 0;
 
-            return (
-              <div
-                key={point.date}
-                className="group relative flex flex-1 flex-col items-center justify-end h-full"
-              >
-                {/* Tooltip */}
-                <div className="pointer-events-none absolute -top-14 z-20 hidden rounded-md bg-gray-900 px-2.5 py-1.5 text-[11px] text-white shadow-lg group-hover:block dark:bg-gray-800 whitespace-nowrap">
-                  <p className="font-semibold">{point.shortDate}</p>
-                  <p className="text-blue-300">Blog: {point.blog}</p>
-                  <p className="text-emerald-300">IOE: {point.ioe}</p>
-                  <p className="text-purple-300">Other: {point.other}</p>
-                  <p className="text-gray-300 font-bold border-t border-gray-700 mt-1 pt-0.5">
-                    Total: {point.total}
-                  </p>
-                </div>
-
-                {/* Stacked bar */}
+              return (
                 <div
-                  className="w-full max-w-[28px] rounded-t flex flex-col-reverse overflow-hidden transition-all duration-200 group-hover:opacity-90"
-                  style={{ height: `${heightPercent}%` }}
+                  key={point.date}
+                  className="group relative flex flex-1 flex-col items-center justify-end h-full"
                 >
-                  <div style={{ height: `${blogShare}%` }} className="bg-blue-500 w-full" />
-                  <div style={{ height: `${ioeShare}%` }} className="bg-emerald-500 w-full" />
-                  <div style={{ height: `${otherShare}%` }} className="bg-purple-400 w-full" />
-                </div>
+                  {/* Tooltip */}
+                  <div className="pointer-events-none absolute -top-14 z-20 hidden rounded-md bg-gray-900 px-2.5 py-1.5 text-[11px] text-white shadow-lg group-hover:block dark:bg-gray-800 whitespace-nowrap">
+                    <p className="font-semibold">{point.shortDate}</p>
+                    <p className="text-blue-300">Blog: {point.blog}</p>
+                    <p className="text-emerald-300">IOE: {point.ioe}</p>
+                    <p className="text-purple-300">Other: {point.other}</p>
+                    <p className="text-gray-300 font-bold border-t border-gray-700 mt-1 pt-0.5">
+                      Total: {point.total}
+                    </p>
+                  </div>
 
-                {/* Date label */}
-                <span className="mt-2 text-[10px] text-gray-500 dark:text-gray-400 truncate max-w-full">
-                  {point.shortDate}
-                </span>
-              </div>
-            );
-          })}
-        </div>
+                  {/* Stacked bar */}
+                  <div
+                    className="w-full max-w-[28px] rounded-t flex flex-col-reverse overflow-hidden transition-all duration-200 group-hover:opacity-90"
+                    style={{ height: `${heightPercent}%` }}
+                  >
+                    <div style={{ height: `${blogShare}%` }} className="bg-blue-500 w-full" />
+                    <div style={{ height: `${ioeShare}%` }} className="bg-emerald-500 w-full" />
+                    <div style={{ height: `${otherShare}%` }} className="bg-purple-400 w-full" />
+                  </div>
+
+                  {/* Date label */}
+                  <span className="mt-2 text-[10px] text-gray-500 dark:text-gray-400 truncate max-w-full">
+                    {point.shortDate}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        )}
       </div>
 
       {/* Tabs Filter: All, Blog Only, IOE Only */}

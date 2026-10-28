@@ -58,6 +58,16 @@ export async function POST(request: Request) {
       }
     }
 
+    // Allow disabling DB tracking via env to preserve Neon free tier compute
+    if (process.env.TRACK_PAGE_VIEWS_IN_DB === "false") {
+      return NextResponse.json({ ok: true, skipped: true });
+    }
+
+    // Cost-optimization: Option to skip IOE page writes to prevent high-traffic student browsing from exhausting Neon DB compute
+    if (rawPath.startsWith("/ioe") && process.env.TRACK_IOE_PAGE_VIEWS === "false") {
+      return NextResponse.json({ ok: true, skipped: true });
+    }
+
     // Record page view in PageView table
     await prisma.pageView.create({
       data: {
@@ -76,7 +86,7 @@ export async function POST(request: Request) {
 
     return NextResponse.json({ ok: true });
   } catch (error) {
-    // Fail silently so tracking never breaks user experience
-    return NextResponse.json({ ok: false }, { status: 500 });
+    // Fail gracefully with HTTP 200 so database pauses or limit exhaustion never break user experience or console
+    return NextResponse.json({ ok: false, error: "DB unavailable" }, { status: 200 });
   }
 }
