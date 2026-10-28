@@ -13,7 +13,6 @@ import {
   ChevronUp,
   FileText,
   ExternalLink,
-  Layers,
   Check,
 } from "lucide-react";
 
@@ -34,7 +33,6 @@ interface PdfOverlayProps {
  * - Multi-paper dropdown selector with quick arrow navigation (Left/Right keys)
  * - Collapsible Zen / Focus mode for 100% full-screen reading
  * - Mobile-safe embed handling (Drive preview / Google Docs fallback)
- * - Viewer engine switcher (Cloudinary CDN vs Drive Mirror)
  * - Fullscreen, Esc to exit, and body scroll lock.
  */
 export function PdfOverlay({
@@ -53,7 +51,6 @@ export function PdfOverlay({
   const [isNativeFs, setIsNativeFs] = useState(false);
   const [activeIdx, setActiveIdx] = useState(activePaperIndex);
   const [isMobile, setIsMobile] = useState(false);
-  const [viewerEngine, setViewerEngine] = useState<"auto" | "cdn" | "drive">("auto");
   const [paperDropdownOpen, setPaperDropdownOpen] = useState(false);
   const [isHeaderCollapsed, setIsHeaderCollapsed] = useState(false);
 
@@ -93,25 +90,17 @@ export function PdfOverlay({
 
   // Choose the best embed URL
   const embedUrl = useMemo(() => {
-    const useDrive = viewerEngine === "drive" || (viewerEngine === "auto" && isMobile);
-    if (useDrive && currentDriveId) {
+    if (currentDriveId) {
       return `https://drive.google.com/file/d/${currentDriveId}/preview`;
     }
 
-    if (viewerEngine === "cdn" && currentPaper?.previewUrl) {
-      return currentPaper.previewUrl;
-    }
-
-    if (isMobile) {
-      if (currentDriveId) {
-        return `https://drive.google.com/file/d/${currentDriveId}/preview`;
-      }
+    if (isMobile && (currentPaper?.previewUrl ?? src)) {
       const raw = currentPaper?.previewUrl ?? src ?? "";
       return `https://docs.google.com/viewer?url=${encodeURIComponent(raw)}&embedded=true`;
     }
 
     return currentPaper?.previewUrl ?? src ?? "";
-  }, [viewerEngine, isMobile, currentDriveId, currentPaper, src]);
+  }, [isMobile, currentDriveId, currentPaper, src]);
 
   const handleSelectPaper = useCallback(
     (index: number) => {
@@ -379,33 +368,10 @@ export function PdfOverlay({
 
           {/* Right Action Icons */}
           <div className="flex shrink-0 items-center gap-1 sm:gap-1.5">
-            {/* Viewer Engine Switcher */}
-            {currentDriveId && (
-              <button
-                type="button"
-                onClick={() =>
-                  setViewerEngine((curr) => (curr === "drive" ? "cdn" : "drive"))
-                }
-                title={`Switch viewer engine (currently ${
-                  viewerEngine === "drive" || (viewerEngine === "auto" && isMobile)
-                    ? "Drive Mirror"
-                    : "Cloudinary CDN"
-                })`}
-                className="hidden md:inline-flex h-8 items-center gap-1 rounded-lg border border-white/15 px-2 text-[11px] font-medium text-slate-300 transition hover:bg-white/10 hover:text-white"
-              >
-                <Layers className="h-3 w-3 text-blue-400" />
-                <span>
-                  {viewerEngine === "drive" || (viewerEngine === "auto" && isMobile)
-                    ? "Drive"
-                    : "CDN"}
-                </span>
-              </button>
-            )}
-
             {/* Direct Open File */}
-            {currentDownloadUrl && (
+            {(currentPaper?.driveViewUrl ?? currentDownloadUrl) && (
               <a
-                href={currentDownloadUrl}
+                href={currentPaper?.driveViewUrl ?? currentDownloadUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 title="Open direct file in new tab"

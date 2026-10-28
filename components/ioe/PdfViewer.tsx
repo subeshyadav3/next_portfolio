@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { IoePaper } from "@/lib/ioe/types";
-import { Download, ExternalLink, FileText, Info, Layers, Maximize2, Eye, EyeOff } from "lucide-react";
+import { Download, ExternalLink, FileText, Info, Maximize2, Eye, EyeOff } from "lucide-react";
 import { PdfOverlay } from "@/components/pdf/PdfOverlay";
 
 interface PdfViewerProps {
@@ -17,7 +17,6 @@ export function PdfViewer({ papers }: PdfViewerProps) {
   const [active, setActive] = useState(0);
   const [overlayOpen, setOverlayOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
-  const [viewerMode, setViewerMode] = useState<"cdn" | "drive">("cdn");
   const [showPreview, setShowPreview] = useState(true);
 
   useEffect(() => {
@@ -33,11 +32,7 @@ export function PdfViewer({ papers }: PdfViewerProps) {
   if (!paper) return null;
 
   const embedSrc =
-    (isMobile || viewerMode === "drive") && paper.id
-      ? `https://drive.google.com/file/d/${paper.id}/preview`
-      : isMobile
-        ? `https://docs.google.com/viewer?url=${encodeURIComponent(paper.previewUrl)}&embedded=true`
-        : paper.previewUrl;
+    paper.previewUrl || (paper.id ? `https://drive.google.com/file/d/${paper.id}/preview` : "");
 
   return (
     <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xs transition-colors dark:border-gray-800 dark:bg-gray-900">
@@ -109,27 +104,16 @@ export function PdfViewer({ papers }: PdfViewerProps) {
         </div>
 
         <div className="flex items-center gap-2.5">
-          {paper.id && (
-            <button
-              type="button"
-              onClick={() => setViewerMode((m) => (m === "drive" ? "cdn" : "drive"))}
-              title="Switch between Cloudinary CDN and Google Drive mirror"
-              className="hidden sm:inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-700 shadow-xs transition hover:bg-slate-50 dark:border-gray-800 dark:bg-gray-900 dark:text-slate-300 dark:hover:bg-gray-800"
-            >
-              <Layers className="h-3.5 w-3.5 text-blue-500" />
-              <span>{(isMobile || viewerMode === "drive") ? "Drive Mirror" : "CDN View"}</span>
-            </button>
-          )}
-          {isMobile && (
+          {paper.driveViewUrl && (
             <a
-              href={paper.previewUrl}
+              href={paper.driveViewUrl}
               target="_blank"
               rel="noopener noreferrer"
-              title="Open directly in your mobile PDF viewer app"
-              className="inline-flex items-center gap-1 rounded-xl border border-blue-200 bg-blue-50 px-3 py-2 text-xs font-semibold text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/50 dark:text-blue-300"
+              title="Open directly in Google Drive"
+              className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-700 shadow-xs transition hover:bg-slate-50 dark:border-gray-800 dark:bg-gray-900 dark:text-slate-300 dark:hover:bg-gray-800"
             >
-              <ExternalLink className="h-3.5 w-3.5" />
-              <span>Open</span>
+              <ExternalLink className="h-3.5 w-3.5 text-blue-500" />
+              <span>Drive Mirror</span>
             </a>
           )}
           <button
@@ -211,7 +195,7 @@ export function PdfViewer({ papers }: PdfViewerProps) {
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 border-t border-slate-200 bg-slate-50 px-4 py-3 text-xs text-slate-500 dark:border-gray-800 dark:bg-gray-950 dark:text-slate-400">
         <div className="flex items-center gap-1.5">
           <Info className="h-3.5 w-3.5 shrink-0 text-slate-400" />
-          <span>Served via fast CDN. Read in full view or download for offline study.</span>
+          <span>Served via Google Drive mirror. Read in full view or download for offline study.</span>
         </div>
         <div className="flex items-center gap-3 shrink-0">
           {paper.driveViewUrl && (

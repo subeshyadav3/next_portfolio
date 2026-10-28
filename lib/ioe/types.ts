@@ -45,11 +45,11 @@ export interface IoePaper {
   file: string;
   sem: string;
   subject: string;
-  /** Cloudinary Edge CDN PDF preview URL. */
+  /** Google Drive preview embed URL. */
   previewUrl: string;
-  /** Direct PDF download URL. */
+  /** Direct Google Drive download URL. */
   downloadUrl: string;
-  /** Direct Cloudinary CDN URL. */
+  /** Optional Cloudinary CDN URL (disabled to eliminate bandwidth usage). */
   cloudinaryUrl?: string;
   /** Google Drive standard view / fallback mirror URL. */
   driveViewUrl: string;
