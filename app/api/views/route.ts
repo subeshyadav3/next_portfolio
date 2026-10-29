@@ -85,7 +85,7 @@ export async function POST(request: Request) {
     }
 
     return NextResponse.json({ ok: true });
-  } catch (error) {
+  } catch {
     // Fail gracefully with HTTP 200 so database pauses or limit exhaustion never break user experience or console
     return NextResponse.json({ ok: false, error: "DB unavailable" }, { status: 200 });
   }

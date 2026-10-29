@@ -1,16 +1,10 @@
 import Link from "next/link";
 import {
-  Eye,
-  TrendingUp,
   BookOpen,
   GraduationCap,
   Globe,
   ArrowUpRight,
-  BarChart3,
-  Calendar,
   Layers,
-  Cpu,
-  Building2,
   Zap,
 } from "lucide-react";
 import { getAdminStats, StatsPeriod } from "@/services/stats.service";

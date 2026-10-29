@@ -12,8 +12,6 @@ import {
   X,
   Sparkles,
   ExternalLink,
-  Layers,
-  BookOpen,
 } from "lucide-react";
 import { MathText } from "@/components/ioe/MathText";
 import { copyToClipboard } from "@/lib/clipboard";

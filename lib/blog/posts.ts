@@ -115,104 +115,158 @@ export interface AuthorProfile {
   postCount: number;
 }
 
+const DEFAULT_FALLBACK_AUTHOR: AuthorProfile = {
+  id: "subesh-yadav",
+  slug: "subesh-yadav",
+  name: "Subesh Yadav",
+  bio: "Creator & Lead Developer of Neb Master and subeshyadav.com.np",
+  avatarUrl: "/profile.jpg",
+  websiteUrl: "https://subeshyadav.com.np",
+  social: {
+    github: "https://github.com/subeshyadav3",
+    linkedin: "https://linkedin.com/in/subeshyadav",
+  },
+  postCount: 0,
+};
+
 export async function getAllAuthors(): Promise<AuthorProfile[]> {
-  const { prisma } = await import("@/db/prisma");
-  const authors = await prisma.author.findMany({
-    include: {
-      posts: {
-        where: {
-          status: "PUBLISHED",
-          OR: [{ scheduledFor: null }, { scheduledFor: { lte: new Date() } }],
+  try {
+    const { prisma } = await import("@/db/prisma");
+    const authors = await prisma.author.findMany({
+      include: {
+        posts: {
+          where: {
+            status: "PUBLISHED",
+            OR: [{ scheduledFor: null }, { scheduledFor: { lte: new Date() } }],
+          },
+          select: { id: true },
         },
-        select: { id: true },
       },
+      orderBy: { name: "asc" },
+    });
+    if (authors.length > 0) {
+      return authors.map((a) => ({
+        id: a.id,
+        slug: a.slug,
+        name: a.name,
+        bio: a.bio,
+        avatarUrl: a.avatarUrl,
+        websiteUrl: a.websiteUrl,
+        social: (a.social as Record<string, string>) ?? null,
+        postCount: a.posts.length,
+      }));
+    }
+  } catch (error) {
+    console.warn("Failed to fetch authors from DB, falling back to default author:", error instanceof Error ? error.message : error);
+  }
+
+  const allPosts = await getAllPosts();
+  return [
+    {
+      ...DEFAULT_FALLBACK_AUTHOR,
+      postCount: allPosts.length,
     },
-    orderBy: { name: "asc" },
-  });
-  return authors.map((a) => ({
-    id: a.id,
-    slug: a.slug,
-    name: a.name,
-    bio: a.bio,
-    avatarUrl: a.avatarUrl,
-    websiteUrl: a.websiteUrl,
-    social: (a.social as Record<string, string>) ?? null,
-    postCount: a.posts.length,
-  }));
+  ];
 }
 
 export async function getAuthorBySlug(
   slug: string
 ): Promise<AuthorProfile | null> {
-  const { prisma } = await import("@/db/prisma");
-  const author = await prisma.author.findUnique({
-    where: { slug },
-    include: {
-      posts: {
-        where: {
-          status: "PUBLISHED",
-          OR: [{ scheduledFor: null }, { scheduledFor: { lte: new Date() } }],
+  try {
+    const { prisma } = await import("@/db/prisma");
+    const author = await prisma.author.findUnique({
+      where: { slug },
+      include: {
+        posts: {
+          where: {
+            status: "PUBLISHED",
+            OR: [{ scheduledFor: null }, { scheduledFor: { lte: new Date() } }],
+          },
+          select: { id: true },
         },
-        select: { id: true },
       },
-    },
-  });
-  if (!author) return null;
-  return {
-    id: author.id,
-    slug: author.slug,
-    name: author.name,
-    bio: author.bio,
-    avatarUrl: author.avatarUrl,
-    websiteUrl: author.websiteUrl,
-    social: (author.social as Record<string, string>) ?? null,
-    postCount: author.posts.length,
-  };
+    });
+    if (author) {
+      return {
+        id: author.id,
+        slug: author.slug,
+        name: author.name,
+        bio: author.bio,
+        avatarUrl: author.avatarUrl,
+        websiteUrl: author.websiteUrl,
+        social: (author.social as Record<string, string>) ?? null,
+        postCount: author.posts.length,
+      };
+    }
+  } catch (error) {
+    console.warn(`Failed to fetch author "${slug}" from DB, falling back:`, error instanceof Error ? error.message : error);
+  }
+
+  if (slug === "subesh-yadav" || slug === "subesh") {
+    const allPosts = await getAllPosts();
+    return {
+      ...DEFAULT_FALLBACK_AUTHOR,
+      postCount: allPosts.length,
+    };
+  }
+  return null;
 }
 
 export async function getPostsByAuthor(
   authorSlug: string,
   opts?: { limit?: number; offset?: number }
 ) {
-  const { prisma } = await import("@/db/prisma");
-  const author = await prisma.author.findUnique({
-    where: { slug: authorSlug },
-    select: { id: true, name: true },
-  });
-  if (!author) return [];
+  try {
+    const { prisma } = await import("@/db/prisma");
+    const author = await prisma.author.findUnique({
+      where: { slug: authorSlug },
+      select: { id: true, name: true },
+    });
+    if (author) {
+      const posts = await prisma.post.findMany({
+        where: {
+          authorId: author.id,
+          status: "PUBLISHED",
+          OR: [{ scheduledFor: null }, { scheduledFor: { lte: new Date() } }],
+          AND: [{ OR: [{ expiresAt: null }, { expiresAt: { gt: new Date() } }] }],
+        },
+        include: {
+          category: true,
+          tags: { include: { tag: true } },
+          coverMedia: true,
+        },
+        orderBy: { publishedAt: "desc" },
+        take: opts?.limit,
+        skip: opts?.offset,
+      });
 
-  const posts = await prisma.post.findMany({
-    where: {
-      authorId: author.id,
-      status: "PUBLISHED",
-      OR: [{ scheduledFor: null }, { scheduledFor: { lte: new Date() } }],
-      AND: [{ OR: [{ expiresAt: null }, { expiresAt: { gt: new Date() } }] }],
-    },
-    include: {
-      category: true,
-      tags: { include: { tag: true } },
-      coverMedia: true,
-    },
-    orderBy: { publishedAt: "desc" },
-    take: opts?.limit,
-    skip: opts?.offset,
-  });
+      const visiblePosts = SHOW_ALL ? posts : posts.filter((p) => p.language === "en");
+      return visiblePosts.map((p) => ({
+        slug: p.slug,
+        title: p.title,
+        description: p.excerpt ?? "",
+        published: (p.publishedAt ?? p.createdAt).toISOString(),
+        updated: p.updatedAt.toISOString(),
+        category: p.category?.slug ?? "uncategorized",
+        tags: p.tags.map((pt) => pt.tag.name),
+        author: author.name ?? authorSlug,
+        authorSlug: authorSlug,
+        authorUrl: "",
+        image: p.coverMedia?.secureUrl ?? "",
+        readingTime: p.readingTimeMin,
+        featured: p.featured,
+        language: (p.language as "en" | "ne") ?? "en",
+      }));
+    }
+  } catch (error) {
+    console.warn(`Failed to fetch posts for author "${authorSlug}" from DB, falling back:`, error instanceof Error ? error.message : error);
+  }
 
-  const visiblePosts = SHOW_ALL ? posts : posts.filter((p) => p.language === "en");
-  return visiblePosts.map((p) => ({
-    slug: p.slug,
-    title: p.title,
-    description: p.excerpt ?? "",
-    published: (p.publishedAt ?? p.createdAt).toISOString(),
-    updated: p.updatedAt.toISOString(),
-    category: p.category?.slug ?? "uncategorized",
-    tags: p.tags.map((pt) => pt.tag.name),
-    author: author.name ?? authorSlug,
-    authorSlug: authorSlug,
-    authorUrl: "",
-    image: p.coverMedia?.secureUrl ?? "",
-    readingTime: p.readingTimeMin,
-    featured: p.featured,
-    language: (p.language as "en" | "ne") ?? "en",
-  }));
+  if (authorSlug === "subesh-yadav" || authorSlug === "subesh") {
+    const all = await getAllPosts();
+    const start = opts?.offset ?? 0;
+    const end = opts?.limit ? start + opts.limit : undefined;
+    return all.slice(start, end);
+  }
+  return [];
 }

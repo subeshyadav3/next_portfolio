@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import type { IoePaper } from "@/lib/ioe/types";
 import { Download, ExternalLink, FileText, Info, Maximize2, Eye, EyeOff } from "lucide-react";
 import { PdfOverlay } from "@/components/pdf/PdfOverlay";
@@ -16,16 +16,7 @@ interface PdfViewerProps {
 export function PdfViewer({ papers }: PdfViewerProps) {
   const [active, setActive] = useState(0);
   const [overlayOpen, setOverlayOpen] = useState(false);
-  const [isMobile, setIsMobile] = useState(false);
   const [showPreview, setShowPreview] = useState(true);
-
-  useEffect(() => {
-    const ua = typeof navigator !== "undefined" ? navigator.userAgent : "";
-    setIsMobile(
-      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua) ||
-      window.innerWidth < 768
-    );
-  }, []);
 
   const paper = papers[Math.min(active, papers.length - 1)];
 
