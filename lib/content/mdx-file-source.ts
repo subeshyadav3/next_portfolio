@@ -119,7 +119,7 @@ function chapterNumber(text: string): number | null {
 const getAllCached = unstable_cache(
   async (): Promise<NormalizedPost[]> => readAllFromDisk(),
   ["mdx-file-source:all"],
-  { revalidate: 3600, tags: ["posts:mdx"] }
+  { revalidate: 86400, tags: ["posts:mdx"] }
 );
 
 /* -------------------------------------------------------------------------- */

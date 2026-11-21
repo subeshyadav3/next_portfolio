@@ -18,7 +18,7 @@ import { Suspense } from "react";
 import { Sparkles, ArrowRight, BookOpen, Flame, Compass } from "lucide-react";
 
 export const metadata = generateBlogMetadata();
-export const revalidate = 3600;
+export const revalidate = 86400; // 24 hours
 
 const POSTS_PER_PAGE = 10;
 

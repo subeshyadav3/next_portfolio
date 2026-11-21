@@ -45,6 +45,8 @@ interface PageProps {
   params: Promise<{ slug: string }>;
 }
 
+export const revalidate = 86400; // 24 hours
+
 export async function generateStaticParams() {
   const posts = await getAllPosts();
   return posts.map((post) => ({ slug: post.slug }));

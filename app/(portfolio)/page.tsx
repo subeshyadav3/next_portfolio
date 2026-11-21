@@ -13,7 +13,7 @@ import {
 } from "@/lib/blog/schema";
 import { SITE_URL } from "@/lib/site-config";
 
-export const revalidate = 3600;
+export const revalidate = 86400; // 24 hours
 
 export const metadata: Metadata = {
   alternates: { canonical: SITE_URL },

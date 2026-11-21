@@ -102,7 +102,7 @@ function chapterNumber(text: string): number | null {
 /*  Cached query helpers                                                      */
 /* -------------------------------------------------------------------------- */
 
-const CACHE_TTL = 3600;
+const CACHE_TTL = 86400; // 24 hours (posts are revalidated on-demand when created/updated)
 
 const cachedList = unstable_cache(
   async (opts?: ListOptions): Promise<NormalizedPostSummary[]> => {
@@ -144,7 +144,7 @@ const cachedGet = unstable_cache(
     return toNormalized(post);
   },
   ["prisma-post-source:get-v2"],
-  { revalidate: CACHE_TTL, tags: ["posts:list"] }
+  { revalidate: CACHE_TTL, tags: ["posts:detail"] }
 );
 
 const cachedHas = unstable_cache(
@@ -612,7 +612,10 @@ export class PrismaPostSource implements PostSource {
 
   async invalidate(slug?: string): Promise<void> {
     const { revalidateTag } = await import("next/cache");
-    revalidateTag(`post:${slug ?? "*"}`);
+    if (slug) {
+      revalidateTag(`post:${slug}`);
+    }
+    revalidateTag("posts:detail");
     revalidateTag("posts:list");
   }
 }

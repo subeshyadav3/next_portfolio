@@ -1,28 +1,25 @@
-import { unstable_cache } from "next/cache";
 import { auth } from "@/lib/auth/config";
 import { prisma } from "@/db/prisma";
 
-const getDashboardStats = unstable_cache(
-  async () => {
-    try {
-      const [postCount, draftCount, categoryCount, tagCount] = await Promise.all([
-        prisma.post.count(),
-        prisma.post.count({ where: { status: "DRAFT" } }),
-        prisma.category.count(),
-        prisma.tag.count(),
-      ]);
-      return { postCount, draftCount, categoryCount, tagCount };
-    } catch {
-      return { postCount: null, draftCount: null, categoryCount: null, tagCount: null };
-    }
-  },
-  ["admin:dashboard"],
-  { revalidate: 60, tags: ["admin:dashboard"] }
-);
+export const dynamic = "force-dynamic";
 
 export default async function AdminDashboard() {
   const session = await auth();
-  const { postCount, draftCount, categoryCount, tagCount } = await getDashboardStats();
+  let postCount: number | null = null;
+  let draftCount: number | null = null;
+  let categoryCount: number | null = null;
+  let tagCount: number | null = null;
+
+  try {
+    [postCount, draftCount, categoryCount, tagCount] = await Promise.all([
+      prisma.post.count(),
+      prisma.post.count({ where: { status: "DRAFT" } }),
+      prisma.category.count(),
+      prisma.tag.count(),
+    ]);
+  } catch {
+    // Keep null if DB is temporarily sleeping
+  }
 
   return (
     <div>

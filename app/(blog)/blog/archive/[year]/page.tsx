@@ -7,7 +7,7 @@ import { generateBreadcrumbSchema } from "@/lib/blog/schema";
 import { BlogCard } from "@/components/blog/BlogCard";
 import { Breadcrumb } from "@/components/blog/Breadcrumb";
 
-export const revalidate = 3600;
+export const revalidate = 86400; // 24 hours
 
 const POSTS_PER_PAGE = 10;
 
