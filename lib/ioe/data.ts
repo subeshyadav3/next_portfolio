@@ -189,7 +189,7 @@ export function getUnmappedSubjects(): IoeCatalogSubject[] {
   return catalog.subjects.filter((s) => !mapped.has(normalizeSubjectName(s.name)));
 }
 
-const QUESTION_SLUG_MAP: Record<string, string> = {
+export const QUESTION_SLUG_MAP: Record<string, string> = {
   "c-programming": "computer-programming",
   "data-structures-and-algorithms": "data-structure-and-algorithm",
   "data-structure-and-algorithum": "data-structure-and-algorithm",
