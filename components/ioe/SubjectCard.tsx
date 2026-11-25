@@ -105,7 +105,7 @@ export function SubjectCard({
   );
 
   const baseClasses =
-    "group relative flex flex-col justify-between rounded-2xl border bg-white p-5 shadow-xs transition-all duration-200 dark:bg-gray-900";
+    "group relative flex min-w-0 flex-col justify-between rounded-2xl border bg-white p-4 shadow-xs transition-all duration-200 dark:bg-gray-900 sm:p-5";
 
   if (href) {
     return (

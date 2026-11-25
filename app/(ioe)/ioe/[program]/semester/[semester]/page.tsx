@@ -18,6 +18,8 @@ interface PageProps {
   params: Promise<{ program: string; semester: string }>;
 }
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   if (!IOE_ENABLED) return [];
   const params: Array<{ program: string; semester: string }> = [];

@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Link from "next/link";
 import type { IoeCatalogSubject } from "@/lib/ioe/types";
+import { IOE_DOWNLOADS_ENABLED } from "@/lib/ioe/config";
 import { getSubjectSlugFromName } from "@/lib/ioe/data";
 import {
   Search,
@@ -54,9 +55,9 @@ export function OtherProgramsViewer({
   };
 
   return (
-    <div className="space-y-6">
+    <div className="min-w-0 space-y-6">
       {/* Search & Filter Controls */}
-      <div className="space-y-3 rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs transition-colors dark:border-gray-800/90 dark:bg-gray-900">
+      <div className="min-w-0 space-y-3 rounded-2xl border border-slate-200/90 bg-white p-4 shadow-xs transition-colors dark:border-gray-800/90 dark:bg-gray-900 sm:p-5">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
           <div className="relative flex-1">
             <Search className="absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400 dark:text-slate-500" />
@@ -230,15 +231,17 @@ export function OtherProgramsViewer({
                             <ExternalLink className="h-3.5 w-3.5 text-blue-500" />
                             Drive
                           </a>
-                          <a
-                            href={`https://drive.google.com/uc?export=download&id=${currentPaper.id}`}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="inline-flex items-center gap-1.5 rounded-lg bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white shadow-xs transition hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
-                          >
-                            <Download className="h-3.5 w-3.5" />
-                            Download
-                          </a>
+                          {IOE_DOWNLOADS_ENABLED && (
+                            <a
+                              href={`https://drive.google.com/uc?export=download&id=${currentPaper.id}`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-1.5 rounded-lg bg-blue-600 px-3 py-1.5 text-xs font-semibold text-white shadow-xs transition hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
+                            >
+                              <Download className="h-3.5 w-3.5" />
+                              Download
+                            </a>
+                          )}
                         </div>
                       </div>
                     )}

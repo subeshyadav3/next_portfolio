@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import type {
   IoeAssessmentScheme,
   IoePaper,
@@ -9,15 +9,18 @@ import type {
   IoeSyllabus,
   IoeSyllabusUnit,
 } from "@/lib/ioe/types";
+import { IOE_DOWNLOADS_ENABLED } from "@/lib/ioe/config";
 import { MathText } from "@/components/ioe/MathText";
 import { PdfOverlay } from "@/components/pdf/PdfOverlay";
 import { copyToClipboard } from "@/lib/clipboard";
 import {
   ArrowUp,
   Award,
+  Bookmark,
   BookOpen,
   Calendar,
   Check,
+  CheckCircle2,
   ChevronDown,
   ChevronLeft,
   ChevronRight,
@@ -30,6 +33,7 @@ import {
   Info,
   Layers,
   Maximize2,
+  RotateCcw,
   Search,
   Sparkles,
   TrendingUp,
@@ -38,6 +42,9 @@ import {
 
 type TabId = "questions" | "year-wise" | "papers" | "syllabus" | "scheme";
 type ExamTypeFilter = "All" | "Regular" | "Back";
+type StatusFilter = "all" | "todo" | "saved" | "solved";
+
+const PAGE_SIZE = 25;
 
 interface SubjectStudyHubProps {
   subject: string;
@@ -60,6 +67,11 @@ interface SessionGroup {
   examType: "Regular" | "Back" | "Special";
   totalMarks: number;
   questions: IoeQuestion[];
+}
+
+interface StudyProgressState {
+  solved: string[];
+  saved: string[];
 }
 
 const BS_MONTH_ORDER: Record<string, number> = {
@@ -103,6 +115,15 @@ function getQuestionYears(question: IoeQuestion): string[] {
 
 function getQuestionText(question: IoeQuestion): string {
   return question.text || question.question || "";
+}
+
+function getQuestionKey(question: IoeQuestion): string {
+  const text = getQuestionText(question)
+    .toLowerCase()
+    .replace(/\s+/g, " ")
+    .replace(/[^\w$]/g, "")
+    .trim();
+  return text.slice(0, 96) || question.id || "q";
 }
 
 function isDiagramQuestion(question: IoeQuestion): boolean {
@@ -239,6 +260,10 @@ interface QuestionCardProps {
   labelNumber: string | number;
   showChapter?: boolean;
   hideFrequencyWhenOnce?: boolean;
+  isSolved: boolean;
+  isSaved: boolean;
+  onToggleSolved: (key: string) => void;
+  onToggleSaved: (key: string) => void;
   onOpenPdf: () => void;
 }
 
@@ -247,10 +272,15 @@ function QuestionCard({
   labelNumber,
   showChapter = false,
   hideFrequencyWhenOnce = false,
+  isSolved,
+  isSaved,
+  onToggleSolved,
+  onToggleSaved,
   onOpenPdf,
 }: QuestionCardProps) {
   const [copied, setCopied] = useState(false);
   const text = getQuestionText(question);
+  const qKey = getQuestionKey(question);
   const years = getQuestionYears(question);
   const frequency = question.frequency || years.length || 1;
   const diagram = isDiagramQuestion(question);
@@ -264,7 +294,13 @@ function QuestionCard({
   };
 
   return (
-    <article className="group min-w-0 rounded-2xl border border-slate-200/90 bg-white p-4 shadow-xs transition hover:border-blue-300 hover:shadow-sm dark:border-gray-800/90 dark:bg-gray-900 dark:hover:border-blue-500/50 sm:p-5">
+    <article
+      className={`group min-w-0 rounded-2xl border p-4 shadow-xs transition sm:p-5 ${
+        isSolved
+          ? "border-emerald-200/90 bg-emerald-50/20 dark:border-emerald-900/50 dark:bg-emerald-950/10"
+          : "border-slate-200/90 bg-white hover:border-blue-300 hover:shadow-sm dark:border-gray-800/90 dark:bg-gray-900 dark:hover:border-blue-500/50"
+      }`}
+    >
       <div className="flex flex-wrap items-start justify-between gap-2">
         <div className="flex flex-wrap items-center gap-1.5">
           <span className="flex h-6 min-w-7 items-center justify-center rounded-lg bg-slate-900 px-1.5 font-mono text-[11px] font-bold text-white dark:bg-slate-100 dark:text-slate-900">
@@ -277,7 +313,7 @@ function QuestionCard({
             </span>
           )}
           {showChapter && question.chapter && (
-            <span className="max-w-[200px] truncate rounded-md border border-slate-200/80 bg-slate-50 px-2 py-0.5 text-[11px] font-medium text-slate-600 dark:border-gray-700/80 dark:bg-gray-800/80 dark:text-slate-400 sm:max-w-none">
+            <span className="max-w-[190px] truncate rounded-md border border-slate-200/80 bg-slate-50 px-2 py-0.5 text-[11px] font-medium text-slate-600 dark:border-gray-700/80 dark:bg-gray-800/80 dark:text-slate-400 sm:max-w-none">
               {question.chapter}
             </span>
           )}
@@ -294,24 +330,51 @@ function QuestionCard({
           )}
         </div>
 
-        <button
-          type="button"
-          onClick={handleCopy}
-          className="inline-flex min-h-[30px] items-center gap-1 rounded-lg border border-slate-200/80 px-2.5 py-1 text-[11px] font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 dark:border-gray-700 dark:text-slate-400 dark:hover:bg-gray-800 dark:hover:text-white"
-          title="Copy question"
-        >
-          {copied ? (
-            <>
-              <Check className="h-3 w-3 text-emerald-600 dark:text-emerald-400" />
-              <span className="text-emerald-600 dark:text-emerald-400">Copied</span>
-            </>
-          ) : (
-            <>
-              <Copy className="h-3 w-3" />
-              <span className="hidden sm:inline">Copy</span>
-            </>
-          )}
-        </button>
+        {/* Action buttons: Solved, Save, Copy */}
+        <div className="flex items-center gap-1">
+          <button
+            type="button"
+            onClick={() => onToggleSolved(qKey)}
+            aria-pressed={isSolved}
+            title={isSolved ? "Mark as unsolved" : "Mark as practiced/solved"}
+            className={`inline-flex min-h-[30px] items-center gap-1 rounded-lg border px-2 py-1 text-[11px] font-semibold transition ${
+              isSolved
+                ? "border-emerald-300 bg-emerald-100 text-emerald-800 dark:border-emerald-800 dark:bg-emerald-950/80 dark:text-emerald-300"
+                : "border-slate-200/80 text-slate-500 hover:bg-slate-100 hover:text-slate-900 dark:border-gray-700 dark:text-slate-400 dark:hover:bg-gray-800 dark:hover:text-white"
+            }`}
+          >
+            <CheckCircle2 className="h-3.5 w-3.5" />
+            <span className="hidden sm:inline">{isSolved ? "Solved" : "Solve"}</span>
+          </button>
+
+          <button
+            type="button"
+            onClick={() => onToggleSaved(qKey)}
+            aria-pressed={isSaved}
+            title={isSaved ? "Remove bookmark" : "Bookmark for revision"}
+            className={`inline-flex min-h-[30px] items-center gap-1 rounded-lg border px-2 py-1 text-[11px] font-semibold transition ${
+              isSaved
+                ? "border-amber-300 bg-amber-100 text-amber-800 dark:border-amber-800 dark:bg-amber-950/80 dark:text-amber-300"
+                : "border-slate-200/80 text-slate-500 hover:bg-slate-100 hover:text-slate-900 dark:border-gray-700 dark:text-slate-400 dark:hover:bg-gray-800 dark:hover:text-white"
+            }`}
+          >
+            <Bookmark className={`h-3.5 w-3.5 ${isSaved ? "fill-current" : ""}`} />
+          </button>
+
+          <button
+            type="button"
+            onClick={handleCopy}
+            className="inline-flex min-h-[30px] items-center gap-1 rounded-lg border border-slate-200/80 px-2 py-1 text-[11px] font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 dark:border-gray-700 dark:text-slate-400 dark:hover:bg-gray-800 dark:hover:text-white"
+            title="Copy question"
+          >
+            {copied ? (
+              <Check className="h-3.5 w-3.5 text-emerald-600 dark:text-emerald-400" />
+            ) : (
+              <Copy className="h-3.5 w-3.5" />
+            )}
+            <span className="hidden sm:inline">{copied ? "Copied" : "Copy"}</span>
+          </button>
+        </div>
       </div>
 
       <div className="mt-3.5">
@@ -353,13 +416,39 @@ interface ChapterPanelProps {
   chapters: string[];
   questions: IoeQuestion[];
   chapterCounts: Map<string, number>;
+  solvedSet: Set<string>;
+  savedSet: Set<string>;
+  onToggleSolved: (key: string) => void;
+  onToggleSaved: (key: string) => void;
   onOpenPdf: () => void;
 }
 
-function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: ChapterPanelProps) {
+function ChapterPanel({
+  chapters,
+  questions,
+  chapterCounts,
+  solvedSet,
+  savedSet,
+  onToggleSolved,
+  onToggleSaved,
+  onOpenPdf,
+}: ChapterPanelProps) {
   const [selectedChapter, setSelectedChapter] = useState("all");
   const [query, setQuery] = useState("");
   const [minFrequency, setMinFrequency] = useState(0);
+  const [statusFilter, setStatusFilter] = useState<StatusFilter>("all");
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
+
+  const chapterSolvedCounts = useMemo(() => {
+    const map = new Map<string, number>();
+    for (const q of questions) {
+      if (solvedSet.has(getQuestionKey(q))) {
+        const ch = q.chapter || "General";
+        map.set(ch, (map.get(ch) ?? 0) + 1);
+      }
+    }
+    return map;
+  }, [questions, solvedSet]);
 
   const filtered = useMemo(() => {
     const needle = query.trim().toLowerCase();
@@ -370,6 +459,12 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
         const years = getQuestionYears(question);
         const frequency = question.frequency || years.length || 1;
         if (minFrequency > 0 && frequency < minFrequency) return false;
+
+        const key = getQuestionKey(question);
+        if (statusFilter === "solved" && !solvedSet.has(key)) return false;
+        if (statusFilter === "saved" && !savedSet.has(key)) return false;
+        if (statusFilter === "todo" && solvedSet.has(key)) return false;
+
         if (needle) {
           const text = getQuestionText(question).toLowerCase();
           if (!text.includes(needle) && !chapter.toLowerCase().includes(needle)) return false;
@@ -381,7 +476,10 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
         const freqB = b.frequency || getQuestionYears(b).length || 1;
         return freqB - freqA;
       });
-  }, [questions, selectedChapter, minFrequency, query]);
+  }, [questions, selectedChapter, minFrequency, statusFilter, query, solvedSet, savedSet]);
+
+  const visibleQuestions = filtered.slice(0, visibleCount);
+  const remaining = Math.max(0, filtered.length - visibleCount);
 
   const activeLabel = selectedChapter === "all" ? "All chapters" : selectedChapter;
   const activeCount =
@@ -391,6 +489,13 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
     setSelectedChapter("all");
     setQuery("");
     setMinFrequency(0);
+    setStatusFilter("all");
+    setVisibleCount(PAGE_SIZE);
+  };
+
+  const selectChapter = (chapter: string) => {
+    setSelectedChapter(chapter);
+    setVisibleCount(PAGE_SIZE);
   };
 
   const chapterIndex = selectedChapter === "all" ? -1 : chapters.indexOf(selectedChapter);
@@ -398,7 +503,7 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
     const order = ["all", ...chapters];
     const curr = order.indexOf(selectedChapter);
     const next = (curr + delta + order.length) % order.length;
-    setSelectedChapter(order[next]);
+    selectChapter(order[next]);
   };
 
   return (
@@ -417,7 +522,7 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
 
           <button
             type="button"
-            onClick={() => setSelectedChapter("all")}
+            onClick={() => selectChapter("all")}
             className={`flex w-full items-center justify-between gap-2 rounded-xl px-3 py-2.5 text-left text-xs font-semibold transition ${
               selectedChapter === "all"
                 ? "bg-blue-600 text-white shadow-xs shadow-blue-500/20 dark:bg-blue-500"
@@ -436,11 +541,13 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
           <div className="mt-1 max-h-[54vh] space-y-0.5 overflow-y-auto pr-0.5">
             {chapters.map((chapter) => {
               const isActive = selectedChapter === chapter;
+              const totalInCh = chapterCounts.get(chapter) ?? 0;
+              const solvedInCh = chapterSolvedCounts.get(chapter) ?? 0;
               return (
                 <button
                   key={chapter}
                   type="button"
-                  onClick={() => setSelectedChapter(chapter)}
+                  onClick={() => selectChapter(chapter)}
                   className={`flex w-full items-center justify-between gap-2 rounded-xl px-3 py-2.5 text-left text-xs font-medium transition ${
                     isActive
                       ? "bg-blue-50 font-bold text-blue-700 dark:bg-blue-950/60 dark:text-blue-300"
@@ -455,7 +562,7 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
                         : "bg-slate-100 text-slate-500 dark:bg-gray-800 dark:text-slate-400"
                     }`}
                   >
-                    {chapterCounts.get(chapter) ?? 0}
+                    {solvedInCh > 0 ? `${solvedInCh}/${totalInCh}` : totalInCh}
                   </span>
                 </button>
               );
@@ -480,7 +587,7 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
             <div className="relative min-w-0 flex-1">
               <select
                 value={selectedChapter}
-                onChange={(event) => setSelectedChapter(event.target.value)}
+                onChange={(event) => selectChapter(event.target.value)}
                 aria-label="Select chapter"
                 className="h-10 w-full appearance-none rounded-xl border border-blue-200/80 bg-blue-50/40 px-3 pr-8 text-xs font-bold text-slate-900 focus:border-blue-500 focus:outline-hidden dark:border-blue-900/50 dark:bg-blue-950/30 dark:text-slate-100"
               >
@@ -510,7 +617,7 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
               </h3>
               <p className="text-[11px] text-slate-500 dark:text-slate-400">
                 {chapterIndex >= 0 ? `Ch ${chapterIndex + 1}/${chapters.length} · ` : ""}
-                Showing {filtered.length} of {activeCount} questions · sorted by frequency
+                Showing {visibleQuestions.length} of {filtered.length} ({activeCount} total) · sorted by frequency
               </p>
             </div>
 
@@ -520,7 +627,10 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
                 <input
                   type="search"
                   value={query}
-                  onChange={(event) => setQuery(event.target.value)}
+                  onChange={(event) => {
+                    setQuery(event.target.value);
+                    setVisibleCount(PAGE_SIZE);
+                  }}
                   placeholder="Search questions..."
                   className="w-full rounded-xl border border-slate-200 bg-slate-50 py-2.5 pl-9 pr-8 text-xs text-slate-900 placeholder:text-slate-400 transition focus:border-blue-500 focus:bg-white focus:outline-hidden dark:border-gray-700 dark:bg-gray-800 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:bg-gray-900 sm:py-2"
                 />
@@ -539,24 +649,56 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
               <div className="grid grid-cols-3 gap-1 sm:flex sm:items-center">
                 {[
                   { value: 0, label: "All", shortLabel: "All" },
-                  { value: 3, label: "3+ repeats", shortLabel: "3+ repeats" },
-                  { value: 5, label: "5+ repeats", shortLabel: "5+ repeats" },
+                  { value: 3, label: "3+ repeats", shortLabel: "3+ yrs" },
+                  { value: 5, label: "5+ repeats", shortLabel: "5+ yrs" },
                 ].map((option) => (
                   <button
                     key={option.value}
                     type="button"
-                    onClick={() => setMinFrequency(option.value)}
-                    className={`rounded-xl px-2.5 py-2 text-[11px] font-bold transition ${
+                    onClick={() => {
+                      setMinFrequency(option.value);
+                      setVisibleCount(PAGE_SIZE);
+                    }}
+                    className={`rounded-xl px-2 py-2 text-[11px] font-bold transition sm:px-2.5 ${
                       minFrequency === option.value
                         ? "bg-slate-900 text-white dark:bg-white dark:text-slate-900"
                         : "bg-slate-100 text-slate-600 hover:bg-slate-200 dark:bg-gray-800 dark:text-slate-300 dark:hover:bg-gray-700"
                     }`}
                   >
-                    {option.label}
+                    <span className="sm:hidden">{option.shortLabel}</span>
+                    <span className="hidden sm:inline">{option.label}</span>
                   </button>
                 ))}
               </div>
             </div>
+          </div>
+
+          {/* Study status quick filters */}
+          <div className="mt-3 grid grid-cols-4 gap-1 border-t border-slate-100 pt-2.5 dark:border-gray-800/80 sm:flex sm:flex-wrap sm:items-center sm:gap-1.5">
+            {(
+              [
+                { id: "all", label: "All Qs" },
+                { id: "todo", label: "To Practice" },
+                { id: "saved", label: "Saved" },
+                { id: "solved", label: "Solved" },
+              ] as const
+            ).map((opt) => (
+              <button
+                key={opt.id}
+                type="button"
+                onClick={() => {
+                  setStatusFilter(opt.id);
+                  setVisibleCount(PAGE_SIZE);
+                }}
+                className={`rounded-lg px-2 py-1.5 text-[11px] font-semibold transition sm:px-2.5 ${
+                  statusFilter === opt.id
+                    ? "bg-blue-600 text-white shadow-2xs dark:bg-blue-500"
+                    : "bg-slate-100/80 text-slate-600 hover:bg-slate-200 dark:bg-gray-800/80 dark:text-slate-300 dark:hover:bg-gray-700"
+                }`}
+              >
+                {opt.label}
+              </button>
+            ))}
           </div>
         </div>
 
@@ -565,7 +707,7 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
             <Search className="mx-auto h-6 w-6 text-slate-400" />
             <h3 className="mt-3 text-sm font-bold text-slate-900 dark:text-white">No questions found</h3>
             <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
-              Try another chapter, keyword, or repeat filter.
+              Try another chapter, keyword, repeat filter, or status filter.
             </p>
             <button
               type="button"
@@ -577,15 +719,41 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
           </div>
         ) : (
           <div className="space-y-3">
-            {filtered.map((question, index) => (
-              <QuestionCard
-                key={question.id || `${activeLabel}-${index}`}
-                question={question}
-                labelNumber={index + 1}
-                showChapter={selectedChapter === "all"}
-                onOpenPdf={onOpenPdf}
-              />
-            ))}
+            {visibleQuestions.map((question, index) => {
+              const key = getQuestionKey(question);
+              return (
+                <QuestionCard
+                  key={question.id || `${activeLabel}-${index}`}
+                  question={question}
+                  labelNumber={index + 1}
+                  showChapter={selectedChapter === "all"}
+                  isSolved={solvedSet.has(key)}
+                  isSaved={savedSet.has(key)}
+                  onToggleSolved={onToggleSolved}
+                  onToggleSaved={onToggleSaved}
+                  onOpenPdf={onOpenPdf}
+                />
+              );
+            })}
+
+            {remaining > 0 && (
+              <div className="flex flex-wrap items-center justify-center gap-2 pt-2">
+                <button
+                  type="button"
+                  onClick={() => setVisibleCount((c) => c + PAGE_SIZE)}
+                  className="rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-xs font-bold text-slate-800 shadow-xs transition hover:border-blue-400 hover:bg-blue-50 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-900 dark:text-slate-200 dark:hover:bg-gray-800"
+                >
+                  Load {Math.min(PAGE_SIZE, remaining)} more ({remaining} remaining)
+                </button>
+                <button
+                  type="button"
+                  onClick={() => setVisibleCount(filtered.length)}
+                  className="rounded-xl px-3 py-2.5 text-xs font-semibold text-blue-600 hover:underline dark:text-blue-400"
+                >
+                  Show all {filtered.length}
+                </button>
+              </div>
+            )}
           </div>
         )}
       </div>
@@ -595,10 +763,21 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
 
 interface YearWisePanelProps {
   sessions: SessionGroup[];
+  solvedSet: Set<string>;
+  savedSet: Set<string>;
+  onToggleSolved: (key: string) => void;
+  onToggleSaved: (key: string) => void;
   onOpenPdf: () => void;
 }
 
-function YearWisePanel({ sessions, onOpenPdf }: YearWisePanelProps) {
+function YearWisePanel({
+  sessions,
+  solvedSet,
+  savedSet,
+  onToggleSolved,
+  onToggleSaved,
+  onOpenPdf,
+}: YearWisePanelProps) {
   const [selectedId, setSelectedId] = useState<string>(sessions[0]?.id ?? "");
   const [examFilter, setExamFilter] = useState<ExamTypeFilter>("All");
   const [query, setQuery] = useState("");
@@ -853,16 +1032,23 @@ function YearWisePanel({ sessions, onOpenPdf }: YearWisePanelProps) {
               </div>
             ) : (
               <div className="space-y-3">
-                {questions.map((question, index) => (
-                  <QuestionCard
-                    key={`${active.id}-${index}`}
-                    question={question}
-                    labelNumber={question.qNum ?? index + 1}
-                    showChapter
-                    hideFrequencyWhenOnce
-                    onOpenPdf={onOpenPdf}
-                  />
-                ))}
+                {questions.map((question, index) => {
+                  const key = getQuestionKey(question);
+                  return (
+                    <QuestionCard
+                      key={`${active.id}-${index}`}
+                      question={question}
+                      labelNumber={question.qNum ?? index + 1}
+                      showChapter
+                      hideFrequencyWhenOnce
+                      isSolved={solvedSet.has(key)}
+                      isSaved={savedSet.has(key)}
+                      onToggleSolved={onToggleSolved}
+                      onToggleSaved={onToggleSaved}
+                      onOpenPdf={onOpenPdf}
+                    />
+                  );
+                })}
               </div>
             )}
           </>
@@ -982,7 +1168,7 @@ function PapersPanel({ papers, subject, activeIndex, onSelect }: PapersPanelProp
               </p>
             </div>
 
-            <div className="grid w-full grid-cols-3 gap-2 sm:flex sm:w-auto sm:flex-wrap sm:items-center">
+            <div className={`grid w-full gap-2 sm:flex sm:w-auto sm:flex-wrap sm:items-center ${IOE_DOWNLOADS_ENABLED ? "grid-cols-3" : "grid-cols-2"}`}>
               {paper.driveViewUrl && (
                 <a
                   href={paper.driveViewUrl}
@@ -1002,15 +1188,17 @@ function PapersPanel({ papers, subject, activeIndex, onSelect }: PapersPanelProp
                 <Maximize2 className="h-3.5 w-3.5" />
                 Full view
               </button>
-              <a
-                href={paper.downloadUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-blue-600 px-3.5 py-2 text-[11px] font-semibold text-white shadow-xs shadow-blue-500/20 transition hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
-              >
-                <Download className="h-3.5 w-3.5" />
-                Download
-              </a>
+              {IOE_DOWNLOADS_ENABLED && (
+                <a
+                  href={paper.downloadUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-blue-600 px-3.5 py-2 text-[11px] font-semibold text-white shadow-xs shadow-blue-500/20 transition hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
+                >
+                  <Download className="h-3.5 w-3.5" />
+                  Download
+                </a>
+              )}
             </div>
           </div>
 
@@ -1076,7 +1264,7 @@ function PapersPanel({ papers, subject, activeIndex, onSelect }: PapersPanelProp
           onPaperSelect={onSelect}
           src={paper.previewUrl}
           title={paper.file}
-          downloadUrl={paper.downloadUrl}
+          downloadUrl={IOE_DOWNLOADS_ENABLED ? paper.downloadUrl : undefined}
           subjectTitle={subject}
           onClose={() => setOverlayOpen(false)}
         />
@@ -1467,6 +1655,84 @@ export function SubjectStudyHub({
   const [paperIndex, setPaperIndex] = useState(0);
   const [showBackToTop, setShowBackToTop] = useState(false);
 
+  const storageKey = useMemo(
+    () => `ioe-study:${subject.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+    [subject]
+  );
+  const [progress, setProgress] = useState<StudyProgressState>({ solved: [], saved: [] });
+
+  useEffect(() => {
+    try {
+      const raw = window.localStorage.getItem(storageKey);
+      if (raw) {
+        const parsed = JSON.parse(raw) as Partial<StudyProgressState>;
+        setProgress({
+          solved: Array.isArray(parsed.solved) ? parsed.solved : [],
+          saved: Array.isArray(parsed.saved) ? parsed.saved : [],
+        });
+      }
+    } catch {
+      // Ignore storage read errors
+    }
+  }, [storageKey]);
+
+  const updateProgress = useCallback(
+    (updater: (prev: StudyProgressState) => StudyProgressState) => {
+      setProgress((prev) => {
+        const next = updater(prev);
+        try {
+          window.localStorage.setItem(storageKey, JSON.stringify(next));
+        } catch {
+          // Ignore storage quota errors
+        }
+        return next;
+      });
+    },
+    [storageKey]
+  );
+
+  const toggleSolved = useCallback(
+    (key: string) => {
+      updateProgress((prev) => ({
+        ...prev,
+        solved: prev.solved.includes(key)
+          ? prev.solved.filter((k) => k !== key)
+          : [...prev.solved, key],
+      }));
+    },
+    [updateProgress]
+  );
+
+  const toggleSaved = useCallback(
+    (key: string) => {
+      updateProgress((prev) => ({
+        ...prev,
+        saved: prev.saved.includes(key)
+          ? prev.saved.filter((k) => k !== key)
+          : [...prev.saved, key],
+      }));
+    },
+    [updateProgress]
+  );
+
+  const resetProgress = () => {
+    updateProgress(() => ({ solved: [], saved: [] }));
+  };
+
+  const solvedSet = useMemo(() => new Set(progress.solved), [progress.solved]);
+  const savedSet = useMemo(() => new Set(progress.saved), [progress.saved]);
+
+  const solvedCount = useMemo(
+    () => questions.filter((q) => solvedSet.has(getQuestionKey(q))).length,
+    [questions, solvedSet]
+  );
+  const savedCount = useMemo(
+    () => questions.filter((q) => savedSet.has(getQuestionKey(q))).length,
+    [questions, savedSet]
+  );
+  const masteryPct =
+    questions.length > 0 ? Math.round((solvedCount / questions.length) * 100) : 0;
+
   const chapterCounts = useMemo(() => {
     const map = new Map<string, number>();
     for (const question of questions) {
@@ -1552,9 +1818,9 @@ export function SubjectStudyHub({
   const openPdfTab = () => selectTab("papers");
 
   return (
-    <section id="study-hub" className="space-y-5">
+    <section id="study-hub" className="min-w-0 space-y-4 sm:space-y-5">
       {/* ── Sticky tab menu ── */}
-      <div className="sticky top-[57px] z-30 -mx-1 sm:mx-0">
+      <div className="sticky top-[57px] z-30">
         <div className="rounded-2xl border border-slate-200/90 bg-white/95 p-1 shadow-sm backdrop-blur-md dark:border-gray-800/90 dark:bg-gray-900/95 sm:p-1.5">
           <div
             role="tablist"
@@ -1571,7 +1837,7 @@ export function SubjectStudyHub({
                   role="tab"
                   aria-selected={isActive}
                   onClick={() => selectTab(item.id)}
-                  className={`flex flex-col items-center justify-center gap-0.5 rounded-xl px-1 py-1.5 text-[10px] font-bold transition sm:inline-flex sm:shrink-0 sm:flex-row sm:gap-1.5 sm:px-3.5 sm:py-2 sm:text-xs ${
+                  className={`flex min-w-0 flex-col items-center justify-center gap-0.5 overflow-hidden rounded-xl px-1 py-1.5 text-[10px] font-bold transition sm:inline-flex sm:shrink-0 sm:flex-row sm:gap-1.5 sm:px-3.5 sm:py-2 sm:text-xs ${
                     isActive
                       ? "bg-slate-900 text-white shadow-xs dark:bg-white dark:text-slate-900"
                       : "text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-gray-800 dark:hover:text-white"
@@ -1615,6 +1881,45 @@ export function SubjectStudyHub({
         </div>
       </div>
 
+      {/* ── Personal Study Progress Bar (saved locally in browser) ── */}
+      {hasQuestions && (
+        <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-slate-200/80 bg-white px-4 py-2.5 text-xs shadow-2xs dark:border-gray-800/80 dark:bg-gray-900">
+          <div className="flex min-w-0 flex-1 items-center gap-3">
+            <span className="inline-flex shrink-0 items-center gap-1 font-bold text-slate-700 dark:text-slate-200">
+              <CheckCircle2 className="h-3.5 w-3.5 text-emerald-500" />
+              {solvedCount}/{questions.length} solved
+            </span>
+            <div className="h-2 max-w-[160px] flex-1 overflow-hidden rounded-full bg-slate-100 dark:bg-gray-800">
+              <div
+                className="h-full rounded-full bg-emerald-500 transition-all duration-300"
+                style={{ width: `${masteryPct}%` }}
+              />
+            </div>
+            <span className="font-mono text-[11px] font-bold text-emerald-600 dark:text-emerald-400">
+              {masteryPct}%
+            </span>
+          </div>
+
+          <div className="flex items-center gap-3 text-[11px]">
+            <span className="inline-flex items-center gap-1 font-semibold text-amber-600 dark:text-amber-400">
+              <Bookmark className="h-3 w-3 fill-current" />
+              {savedCount} saved
+            </span>
+            {(solvedCount > 0 || savedCount > 0) && (
+              <button
+                type="button"
+                onClick={resetProgress}
+                className="inline-flex items-center gap-1 font-medium text-slate-400 hover:text-slate-700 dark:hover:text-slate-200"
+                title="Reset local study progress"
+              >
+                <RotateCcw className="h-3 w-3" />
+                Reset
+              </button>
+            )}
+          </div>
+        </div>
+      )}
+
       {/* ── Panels ── */}
       {hasQuestions && (
         <div className={tab === "questions" ? "" : "hidden"}>
@@ -1622,6 +1927,10 @@ export function SubjectStudyHub({
             chapters={chapterList}
             questions={questions}
             chapterCounts={chapterCounts}
+            solvedSet={solvedSet}
+            savedSet={savedSet}
+            onToggleSolved={toggleSolved}
+            onToggleSaved={toggleSaved}
             onOpenPdf={openPdfTab}
           />
         </div>
@@ -1629,7 +1938,14 @@ export function SubjectStudyHub({
 
       {hasSessions && (
         <div className={tab === "year-wise" ? "" : "hidden"}>
-          <YearWisePanel sessions={sessions} onOpenPdf={openPdfTab} />
+          <YearWisePanel
+            sessions={sessions}
+            solvedSet={solvedSet}
+            savedSet={savedSet}
+            onToggleSolved={toggleSolved}
+            onToggleSaved={toggleSaved}
+            onOpenPdf={openPdfTab}
+          />
         </div>
       )}
 

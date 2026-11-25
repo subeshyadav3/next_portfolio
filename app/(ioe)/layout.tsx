@@ -5,6 +5,9 @@ import { BookOpen, ArrowLeft, ChevronRight } from "lucide-react";
 import { IoeNavMobile } from "@/components/ioe/IoeNavMobile";
 import { IoeNavLinks } from "@/components/ioe/IoeNavLinks";
 
+export const dynamic = "force-static";
+export const revalidate = false;
+
 export const metadata: Metadata = {
   title: {
     template: "%s",
@@ -65,112 +68,122 @@ export default function IoeLayout({ children }: { children: React.ReactNode }) {
       </main>
 
       {/* ── Footer ── */}
-      <footer className="mt-10 border-t border-slate-200 bg-white dark:border-gray-800 dark:bg-gray-950 sm:mt-16">
-        {/* Upper footer */}
-        <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <footer className="mt-12 border-t border-slate-200/90 bg-white dark:border-gray-800/90 dark:bg-gray-950 sm:mt-16">
+        <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-12">
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-12">
             {/* Brand column */}
-            <div className="lg:col-span-2">
+            <div className="space-y-3 lg:col-span-5">
               <div className="flex items-center gap-2.5">
-                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 dark:bg-blue-500">
-                  <BookOpen className="h-3.5 w-3.5 text-white" />
+                <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-blue-600 shadow-xs dark:bg-blue-500">
+                  <BookOpen className="h-4 w-4 text-white" />
                 </div>
-                <span className="font-bold text-slate-900 dark:text-white">IOE Papers</span>
+                <div className="flex items-center gap-1.5">
+                  <span className="text-base font-extrabold tracking-tight text-slate-900 dark:text-white">
+                    IOE Papers
+                  </span>
+                  <span className="rounded bg-blue-50 px-1.5 py-0.5 font-mono text-[10px] font-bold text-blue-700 dark:bg-blue-950 dark:text-blue-300">
+                    TU Study Hub
+                  </span>
+                </div>
               </div>
-              <p className="mt-3 max-w-xs text-xs leading-relaxed text-slate-500 dark:text-slate-400">
-                Independent educational portal offering free IOE (TU) past question papers,
-                curriculum syllabus, and exam preparation guidelines for engineering students.
+              <p className="max-w-sm text-xs leading-relaxed text-slate-600 dark:text-slate-400">
+                Organized collection of IOE past exam papers, chapter-sorted repeated questions,
+                year-wise question banks, and official TU engineering syllabi—built to help students
+                prepare faster without digging through broken Drive links.
               </p>
-              <p className="mt-3 text-[11px] leading-relaxed text-slate-400 dark:text-slate-500">
-                Disclaimer: Not affiliated with, endorsed by, or operated by Tribhuvan University
-                (TU) or Institute of Engineering (IOE). For academic study and reference only.
+              <p className="max-w-sm rounded-xl border border-slate-200/80 bg-slate-50 px-3 py-2 text-[11px] leading-relaxed text-slate-500 dark:border-gray-800 dark:bg-gray-900/60 dark:text-slate-400">
+                Independent academic resource. Not affiliated with or endorsed by Tribhuvan
+                University (TU) or the Institute of Engineering (IOE).
               </p>
             </div>
 
-            {/* Programs */}
-            <div>
-              <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
-                Programs
-              </h3>
-              <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-400">
-                {[
-                  { label: "BCT – Computer", href: "/ioe/bct" },
-                  { label: "BCE – Civil", href: "/ioe/bce" },
-                  { label: "BEX – Electronics", href: "/ioe/bex" },
-                  { label: "Other Programs", href: "/ioe/other-programs" },
-                ].map((l) => (
-                  <li key={l.href}>
-                    <Link
-                      href={l.href}
-                      className="flex items-center gap-1 transition-colors hover:text-blue-600 dark:hover:text-blue-400"
-                    >
-                      <ChevronRight className="h-3 w-3 shrink-0" />
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            {/* Links grid */}
+            <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 lg:col-span-7">
+              {/* Programs */}
+              <div>
+                <h3 className="mb-3 text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+                  Programs
+                </h3>
+                <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-400">
+                  {[
+                    { label: "BCT – Computer", href: "/ioe/bct" },
+                    { label: "BCE – Civil", href: "/ioe/bce" },
+                    { label: "BEX – Electronics", href: "/ioe/bex" },
+                    { label: "Other 9 Faculties", href: "/ioe/other-programs" },
+                  ].map((l) => (
+                    <li key={l.href}>
+                      <Link
+                        href={l.href}
+                        className="inline-flex items-center gap-1 transition-colors hover:text-blue-600 dark:hover:text-blue-400"
+                      >
+                        <ChevronRight className="h-3 w-3 shrink-0 text-slate-400" />
+                        {l.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-            {/* Resources */}
-            <div>
-              <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
-                Resources
-              </h3>
-              <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-400">
-                {[
-                  { label: "All Subjects A–Z", href: "/ioe/all" },
-                  { label: "IOE Home", href: "/ioe" },
-                  { label: "Blog", href: "/blog" },
-                  { label: "Portfolio", href: "/" },
-                ].map((l) => (
-                  <li key={l.href}>
-                    <Link
-                      href={l.href}
-                      className="flex items-center gap-1 transition-colors hover:text-blue-600 dark:hover:text-blue-400"
-                    >
-                      <ChevronRight className="h-3 w-3 shrink-0" />
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+              {/* Study Hubs */}
+              <div>
+                <h3 className="mb-3 text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+                  Archive
+                </h3>
+                <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-400">
+                  {[
+                    { label: "IOE Overview", href: "/ioe" },
+                    { label: "All Subjects A–Z", href: "/ioe/all" },
+                    { label: "About this Archive", href: "/ioe/about" },
+                    { label: "Developer Blog", href: "/blog" },
+                    { label: "Main Portfolio", href: "/" },
+                  ].map((l) => (
+                    <li key={l.href}>
+                      <Link
+                        href={l.href}
+                        className="inline-flex items-center gap-1 transition-colors hover:text-blue-600 dark:hover:text-blue-400"
+                      >
+                        <ChevronRight className="h-3 w-3 shrink-0 text-slate-400" />
+                        {l.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
 
-            {/* Legal & Trust */}
-            <div>
-              <h3 className="mb-3 text-xs font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
-                Legal & Trust
-              </h3>
-              <ul className="space-y-2 text-xs text-slate-600 dark:text-slate-400">
-                {[
-                  { label: "About this archive", href: "/ioe/about" },
-                  { label: "About Us", href: "/blog/about" },
-                  { label: "Contact Us", href: "/blog/contact" },
-                  { label: "Privacy Policy", href: "/blog/privacy" },
-                  { label: "Terms of Service", href: "/blog/terms" },
-                  { label: "Disclaimer", href: "/blog/disclaimer" },
-                ].map((l) => (
-                  <li key={l.href}>
-                    <Link
-                      href={l.href}
-                      className="flex items-center gap-1 transition-colors hover:text-blue-600 dark:hover:text-blue-400"
-                    >
-                      <ChevronRight className="h-3 w-3 shrink-0" />
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              {/* Legal & Contact */}
+              <div className="col-span-2 sm:col-span-1">
+                <h3 className="mb-3 text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+                  Info &amp; Legal
+                </h3>
+                <ul className="grid grid-cols-2 gap-x-4 gap-y-2 text-xs text-slate-600 dark:text-slate-400 sm:grid-cols-1">
+                  {[
+                    { label: "About Us", href: "/blog/about" },
+                    { label: "Contact", href: "/blog/contact" },
+                    { label: "Privacy Policy", href: "/blog/privacy" },
+                    { label: "Terms of Service", href: "/blog/terms" },
+                    { label: "Disclaimer", href: "/blog/disclaimer" },
+                  ].map((l) => (
+                    <li key={l.href}>
+                      <Link
+                        href={l.href}
+                        className="inline-flex items-center gap-1 transition-colors hover:text-blue-600 dark:hover:text-blue-400"
+                      >
+                        <ChevronRight className="h-3 w-3 shrink-0 text-slate-400" />
+                        {l.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </div>
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-slate-100 px-4 py-4 dark:border-gray-800/60">
-          <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-2 text-[11px] text-slate-400 dark:text-slate-500">
-            <span>© {new Date().getFullYear()} IOE Papers — Independent educational resource for engineering students.</span>
-            <span>Built for engineering students preparing for semester exams</span>
+        <div className="border-t border-slate-100 bg-slate-50/70 px-4 py-4 dark:border-gray-800/70 dark:bg-gray-900/40">
+          <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-2 text-center text-[11px] text-slate-500 dark:text-slate-400 sm:flex-row sm:text-left">
+            <span>© {new Date().getFullYear()} IOE Papers · Independent TU Engineering Study Archive</span>
+            <span>Built for quick semester revision &amp; PYQ practice</span>
           </div>
         </div>
       </footer>

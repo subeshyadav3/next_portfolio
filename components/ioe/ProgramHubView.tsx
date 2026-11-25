@@ -20,6 +20,7 @@ import {
   getPapersForSubject,
   getSubjectSlugFromName,
 } from "@/lib/ioe/data";
+import { IOE_DOWNLOADS_ENABLED } from "@/lib/ioe/config";
 import { PdfOverlay } from "@/components/pdf/PdfOverlay";
 
 interface ProgramHubViewProps {
@@ -73,9 +74,9 @@ export function ProgramHubView({
   }, [semesterRows, activeSem, searchQuery, onlyPyqBank, pyqSet]);
 
   return (
-    <div className="space-y-8">
+    <div className="min-w-0 space-y-6 sm:space-y-8">
       {/* ── Search & Filter Controls ── */}
-      <div className="space-y-3 rounded-2xl border border-slate-200/90 bg-white p-4 shadow-xs dark:border-gray-800/90 dark:bg-gray-900">
+      <div className="min-w-0 space-y-3 rounded-2xl border border-slate-200/90 bg-white p-4 shadow-xs dark:border-gray-800/90 dark:bg-gray-900">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center">
           <div className="relative flex-1">
             <Search className="absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
@@ -272,16 +273,18 @@ export function ProgramHubView({
                               <Eye className="h-3.5 w-3.5 text-blue-500" />
                               PDF
                             </button>
-                            <a
-                              href={primaryPaper.downloadUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              title="Download PDF"
-                              aria-label={`Download ${subject.title} PDF`}
-                              className="inline-flex items-center justify-center gap-1 rounded-xl border border-blue-200 bg-blue-50 px-3 py-2 text-xs font-semibold text-blue-700 transition hover:bg-blue-100 dark:border-blue-900/60 dark:bg-blue-950/50 dark:text-blue-300 dark:hover:bg-blue-900/50 sm:px-2.5 sm:py-1.5"
-                            >
-                              <Download className="h-3.5 w-3.5" />
-                            </a>
+                            {IOE_DOWNLOADS_ENABLED && (
+                              <a
+                                href={primaryPaper.downloadUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                title="Download PDF"
+                                aria-label={`Download ${subject.title} PDF`}
+                                className="inline-flex items-center justify-center gap-1 rounded-xl border border-blue-200 bg-blue-50 px-3 py-2 text-xs font-semibold text-blue-700 transition hover:bg-blue-100 dark:border-blue-900/60 dark:bg-blue-950/50 dark:text-blue-300 dark:hover:bg-blue-900/50 sm:px-2.5 sm:py-1.5"
+                              >
+                                <Download className="h-3.5 w-3.5" />
+                              </a>
+                            )}
                           </>
                         )}
                       </div>
@@ -384,7 +387,7 @@ export function ProgramHubView({
           }
           src={currentPreviewPaper.previewUrl}
           title={`${previewModalData.subject} — ${currentPreviewPaper.file}`}
-          downloadUrl={currentPreviewPaper.downloadUrl}
+          downloadUrl={IOE_DOWNLOADS_ENABLED ? currentPreviewPaper.downloadUrl : undefined}
           subjectTitle={previewModalData.subject}
           onClose={() => setPreviewModalData(null)}
         />

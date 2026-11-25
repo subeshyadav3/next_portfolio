@@ -191,7 +191,7 @@ export default function IoeLandingPage() {
   }));
 
   return (
-    <div className="space-y-10 sm:space-y-14">
+    <div className="min-w-0 space-y-8 sm:space-y-14">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -210,9 +210,9 @@ export default function IoeLandingPage() {
       <section className="relative overflow-hidden rounded-3xl border border-slate-200/90 bg-white p-5 shadow-xs dark:border-gray-800/90 dark:bg-gray-900 sm:p-8 lg:p-10">
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-blue-50/90 via-white to-slate-50/50 dark:from-blue-950/30 dark:via-gray-900 dark:to-gray-950" />
 
-        <div className="relative grid items-center gap-7 lg:grid-cols-[1.15fr_0.85fr] lg:gap-9">
+        <div className="relative grid items-center gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:gap-9">
           {/* Left: Headline + Search + Stats */}
-          <div className="space-y-5 text-center lg:text-left">
+          <div className="min-w-0 space-y-5 text-center lg:text-left">
             <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3.5 py-1 text-xs font-semibold text-blue-700 dark:border-blue-900/50 dark:bg-blue-950/60 dark:text-blue-300">
               <Sparkles className="h-3.5 w-3.5" />
               TU / IOE Engineering Exam Workspace
@@ -321,7 +321,7 @@ export default function IoeLandingPage() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="group flex flex-col justify-between rounded-2xl border border-slate-200/90 bg-white p-4 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md dark:border-gray-800/90 dark:bg-gray-900 dark:hover:border-blue-500/50"
+                className="group flex min-w-0 flex-col justify-between rounded-2xl border border-slate-200/90 bg-white p-4 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md dark:border-gray-800/90 dark:bg-gray-900 dark:hover:border-blue-500/50"
               >
                 <div>
                   <div className="flex items-center justify-between gap-2">
@@ -451,7 +451,7 @@ export default function IoeLandingPage() {
             return (
               <div
                 key={program.code}
-                className="group flex flex-col justify-between rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md dark:border-gray-800/90 dark:bg-gray-900 dark:hover:border-blue-500/40"
+                className="group flex min-w-0 flex-col justify-between rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md dark:border-gray-800/90 dark:bg-gray-900 dark:hover:border-blue-500/40"
               >
                 <div>
                   <div className="flex items-center justify-between">

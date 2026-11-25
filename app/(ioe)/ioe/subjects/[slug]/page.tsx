@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
-import { IOE_ENABLED } from "@/lib/ioe/config";
+import { IOE_DOWNLOADS_ENABLED, IOE_ENABLED } from "@/lib/ioe/config";
 import {
   findCatalogSubject,
   getAllPrograms,
@@ -19,6 +19,8 @@ import { BookOpen, Calendar, ChevronRight, Download, FileText, Flame } from "luc
 interface PageProps {
   params: Promise<{ slug: string }>;
 }
+
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   if (!IOE_ENABLED) return [];
@@ -91,7 +93,7 @@ export default async function IoeSubjectArchivePage({ params }: PageProps) {
   const firstPaper = papers[0];
 
   return (
-    <div className="space-y-6">
+    <div className="min-w-0 space-y-5 sm:space-y-6">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumb) }} />
       <script
         type="application/ld+json"
@@ -153,7 +155,7 @@ export default async function IoeSubjectArchivePage({ params }: PageProps) {
             {questionCount > 0 && (
               <span className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200/80 bg-white/70 px-3 py-1.5 text-xs font-semibold text-slate-700 backdrop-blur dark:border-gray-700/70 dark:bg-gray-800/60 dark:text-slate-300">
                 <Flame className="h-3.5 w-3.5 text-amber-500" />
-                {questionCount} repeated questions
+                {questionCount} chapter PYQs
               </span>
             )}
             {chapterCount > 0 && (
@@ -170,32 +172,34 @@ export default async function IoeSubjectArchivePage({ params }: PageProps) {
             )}
           </div>
 
-          <div className="mt-5 flex flex-wrap gap-2">
+          <div className="mt-5 grid grid-cols-2 gap-2 sm:flex sm:flex-wrap">
             <a
               href="#papers"
-              className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-xl border border-blue-200 bg-blue-50 px-4 py-2.5 text-xs font-semibold text-blue-700 transition hover:bg-blue-100 dark:border-blue-900/60 dark:bg-blue-950/50 dark:text-blue-300 dark:hover:bg-blue-900/50 sm:flex-none sm:py-2"
+              className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-blue-200 bg-blue-50 px-3 py-2.5 text-xs font-semibold text-blue-700 transition hover:bg-blue-100 dark:border-blue-900/60 dark:bg-blue-950/50 dark:text-blue-300 dark:hover:bg-blue-900/50 sm:px-4 sm:py-2"
             >
-              <FileText className="h-3.5 w-3.5" />
-              View PDF papers
+              <FileText className="h-3.5 w-3.5 shrink-0" />
+              <span>View PDFs</span>
             </a>
-            <a
-              href={firstPaper.downloadUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-xl bg-blue-600 px-4 py-2.5 text-xs font-semibold text-white shadow-xs shadow-blue-500/20 transition hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 sm:flex-none sm:py-2"
-            >
-              <Download className="h-3.5 w-3.5" />
-              Download paper
-            </a>
+            {IOE_DOWNLOADS_ENABLED && (
+              <a
+                href={firstPaper.downloadUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-blue-600 px-3 py-2.5 text-xs font-semibold text-white shadow-xs shadow-blue-500/20 transition hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 sm:px-4 sm:py-2"
+              >
+                <Download className="h-3.5 w-3.5 shrink-0" />
+                <span>Download</span>
+              </a>
+            )}
             {syllabus?.syllabus && (
               <a
                 href={syllabus.syllabus}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex w-full items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-xs font-semibold text-slate-700 shadow-xs transition hover:bg-slate-50 dark:border-gray-700 dark:bg-gray-900 dark:text-slate-300 dark:hover:bg-gray-800 sm:w-auto sm:py-2"
+                className={`inline-flex items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-xs font-semibold text-slate-700 shadow-xs transition hover:bg-slate-50 dark:border-gray-700 dark:bg-gray-900 dark:text-slate-300 dark:hover:bg-gray-800 sm:py-2 ${IOE_DOWNLOADS_ENABLED ? "col-span-2 sm:col-span-1" : ""}`}
               >
-                <FileText className="h-3.5 w-3.5 text-blue-500" />
-                Syllabus PDF
+                <FileText className="h-3.5 w-3.5 shrink-0 text-blue-500" />
+                <span>Syllabus PDF</span>
               </a>
             )}
           </div>

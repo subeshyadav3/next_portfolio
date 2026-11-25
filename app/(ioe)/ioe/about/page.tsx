@@ -3,11 +3,12 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { SITE_NAME, SITE_URL } from "@/lib/site-config";
 import { IOE_ENABLED } from "@/lib/ioe/config";
+import { ChevronRight, BookOpen, ShieldCheck, Mail } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "About the IOE Papers Archive",
   description:
-    "Learn how the independent IOE Papers archive catalogs publicly available engineering question papers and curriculum resources.",
+    "How the independent IOE Papers study archive catalogs TU engineering past question papers, chapter-wise PYQs, and curriculum syllabi.",
   alternates: { canonical: `${SITE_URL}/ioe/about` },
 };
 
@@ -15,44 +16,72 @@ export default function IoeAboutPage() {
   if (!IOE_ENABLED) notFound();
 
   return (
-    <article className="mx-auto max-w-3xl space-y-8">
-      <header className="space-y-3">
-        <p className="text-sm font-semibold text-blue-600 dark:text-blue-400">IOE Papers</p>
-        <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
-          About this archive
+    <div className="mx-auto max-w-3xl space-y-6">
+      <nav className="flex items-center gap-1.5 text-xs font-medium text-slate-500 dark:text-slate-400">
+        <Link href="/ioe" className="transition-colors hover:text-blue-600 dark:hover:text-blue-400">
+          IOE
+        </Link>
+        <ChevronRight className="h-3.5 w-3.5 text-slate-400" />
+        <span className="font-semibold text-slate-900 dark:text-white">About</span>
+      </nav>
+
+      <header className="rounded-3xl border border-slate-200/90 bg-white p-6 shadow-xs dark:border-gray-800/90 dark:bg-gray-900 sm:p-8">
+        <span className="inline-flex items-center gap-1.5 rounded-lg bg-blue-600 px-3 py-1 font-mono text-xs font-bold text-white dark:bg-blue-500">
+          <BookOpen className="h-3.5 w-3.5" />
+          About This Archive
+        </span>
+        <h1 className="mt-4 text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+          Built for IOE Semester Exam Prep
         </h1>
-        <p className="text-base leading-7 text-slate-600 dark:text-slate-300">
-          {SITE_NAME} maintains this independent reference archive to help engineering students
-          find publicly available IOE question papers and curriculum information in one place.
+        <p className="mt-3 text-sm leading-relaxed text-slate-600 dark:text-slate-300 sm:text-base">
+          {SITE_NAME} maintains this independent study archive to bring Tribhuvan University (IOE)
+          past question papers, chapter-wise repeated PYQs, and curriculum syllabi together in one
+          searchable interface.
         </p>
       </header>
 
-      <section className="space-y-4 text-sm leading-7 text-slate-600 dark:text-slate-300">
-        <h2 className="text-xl font-bold text-slate-900 dark:text-white">How documents are cataloged</h2>
-        <p>
-          Paper records are organized by program, semester, subject, and archive filename. The
-          files are linked from publicly available sources and are not created or issued by this
-          website.
-        </p>
-        <p>
-          Curriculum links and topic lists are presented as study references. Students should
-          verify current examination rules, syllabus revisions, and official notices with IOE or
-          Tribhuvan University before relying on them for an examination.
-        </p>
-      </section>
+      <div className="grid gap-4 sm:grid-cols-2">
+        <section className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs dark:border-gray-800/90 dark:bg-gray-900 sm:p-6">
+          <h2 className="flex items-center gap-2 text-base font-bold text-slate-900 dark:text-white">
+            <BookOpen className="h-4 w-4 text-blue-500" />
+            How Content Is Organized
+          </h2>
+          <p className="mt-2.5 text-xs leading-relaxed text-slate-600 dark:text-slate-300 sm:text-sm">
+            Every subject combines available past exam PDFs with extracted chapter-wise and
+            year-wise questions, sorted by repeat frequency alongside official unit breakdowns.
+          </p>
+          <p className="mt-2 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
+            Verify current exam schedules, syllabus updates, and official notices directly with IOE
+            or Tribhuvan University before sitting an exam.
+          </p>
+        </section>
 
-      <section className="space-y-4 text-sm leading-7 text-slate-600 dark:text-slate-300">
-        <h2 className="text-xl font-bold text-slate-900 dark:text-white">Corrections and removal</h2>
-        <p>
-          If a document is incorrectly labeled, unavailable, or should be removed, use the
-          contact details in the site disclaimer with the subject, filename, and relevant URL.
-          Reports are reviewed before catalog records are changed.
-        </p>
-        <p>
-          This archive is not affiliated with, endorsed by, or operated by IOE, TU, or any
-          engineering campus. See the <Link className="font-semibold text-blue-600 hover:underline dark:text-blue-400" href="/blog/disclaimer">full disclaimer</Link> for details.
-        </p>
-      </section>
-    </article>
+        <section className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs dark:border-gray-800/90 dark:bg-gray-900 sm:p-6">
+          <h2 className="flex items-center gap-2 text-base font-bold text-slate-900 dark:text-white">
+            <ShieldCheck className="h-4 w-4 text-emerald-500" />
+            Corrections &amp; Removals
+          </h2>
+          <p className="mt-2.5 text-xs leading-relaxed text-slate-600 dark:text-slate-300 sm:text-sm">
+            If a question paper is mislabeled, broken, or should be removed, contact us with the
+            subject name, filename, and page URL so we can update or remove the record promptly.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-3 text-xs font-semibold">
+            <Link
+              href="/blog/contact"
+              className="inline-flex items-center gap-1 text-blue-600 hover:underline dark:text-blue-400"
+            >
+              <Mail className="h-3.5 w-3.5" />
+              Contact Page
+            </Link>
+            <Link
+              href="/blog/disclaimer"
+              className="text-slate-600 hover:text-blue-600 hover:underline dark:text-slate-400"
+            >
+              Full Disclaimer
+            </Link>
+          </div>
+        </section>
+      </div>
+    </div>
   );
 }

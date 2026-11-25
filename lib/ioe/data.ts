@@ -236,36 +236,83 @@ interface RawSubjectQuestionsInput {
   [key: string]: unknown;
 }
 
+function normalizeQuestionKey(text: string): string {
+  return text
+    .toLowerCase()
+    .replace(/\s+/g, " ")
+    .replace(/[^\w$]/g, "")
+    .trim();
+}
+
 function normalizeQuestionsData(raw: RawSubjectQuestionsInput | null | undefined): IoeSubjectQuestions | null {
   if (!raw || !Array.isArray(raw.questions)) return null;
   const chSet = new Set<string>();
-  const questions: IoeQuestion[] = raw.questions.map((q: RawQuestionInput) => {
-    const text = q.text || q.question || "";
-    const years = q.years || q.examSessions || (q.year ? [q.year] : []);
-    const frequency = q.frequency || years.length || 1;
-    const chapter = q.chapter || "General";
+  const mergedMap = new Map<string, IoeQuestion & { _yearSet: Set<string> }>();
+
+  const upsertQuestion = (q: RawQuestionInput, sessionHint?: string) => {
+    const text = ((q.text as string) || (q.question as string) || "").trim();
+    if (!text) return;
+    const key = normalizeQuestionKey(text);
+    if (!key) return;
+
+    const rawYears = (q.years || q.examSessions || (q.year ? [q.year] : [])) as string[];
+    const chapter = ((q.chapter as string) || "General").trim() || "General";
     chSet.add(chapter);
-    return {
+
+    const existing = mergedMap.get(key);
+    if (existing) {
+      for (const yr of rawYears) {
+        if (yr?.trim()) existing._yearSet.add(yr.trim());
+      }
+      if (sessionHint?.trim()) existing._yearSet.add(sessionHint.trim());
+      if ((!existing.chapter || existing.chapter === "General") && chapter !== "General") {
+        existing.chapter = chapter;
+      }
+      if (!existing.marks && q.marks !== undefined) {
+        existing.marks = String(q.marks);
+      }
+      if (q.isDiagram && !existing.isDiagram) {
+        existing.isDiagram = true;
+      }
+      const freqCandidate = typeof q.frequency === "number" ? q.frequency : 0;
+      existing.frequency = Math.max(existing.frequency ?? 1, freqCandidate, existing._yearSet.size, 1);
+      return;
+    }
+
+    const yearSet = new Set<string>();
+    for (const yr of rawYears) {
+      if (yr?.trim()) yearSet.add(yr.trim());
+    }
+    if (sessionHint?.trim()) yearSet.add(sessionHint.trim());
+    const freq = Math.max(
+      typeof q.frequency === "number" ? q.frequency : 0,
+      yearSet.size,
+      1
+    );
+
+    mergedMap.set(key, {
       ...q,
       text,
       question: text,
-      years,
-      examSessions: years,
-      frequency,
+      years: [],
+      examSessions: [],
+      frequency: freq,
       chapter,
       marks: q.marks !== undefined ? String(q.marks) : undefined,
-    };
-  });
+      _yearSet: yearSet,
+    });
+  };
 
-  const chapters =
-    raw.chapters && raw.chapters.length > 0
-      ? raw.chapters
-      : Array.from(chSet);
+  for (const q of raw.questions) {
+    upsertQuestion(q);
+  }
 
   const yearWisePapers = Array.isArray(raw.yearWisePapers)
     ? (raw.yearWisePapers as Array<Record<string, unknown>>).map((paper) => {
+        const session = ((paper.session as string) || "").trim();
         const pQuestions = Array.isArray(paper.questions)
           ? (paper.questions as RawQuestionInput[]).map((q) => {
+              upsertQuestion(q, session);
               const text = (q.text as string) || (q.question as string) || "";
               const chapter = (q.chapter as string) || "General";
               chSet.add(chapter);
@@ -279,7 +326,7 @@ function normalizeQuestionsData(raw: RawSubjectQuestionsInput | null | undefined
             })
           : [];
         return {
-          session: (paper.session as string) || "",
+          session,
           year: paper.year as string | undefined,
           month: paper.month as string | undefined,
           examType: paper.examType as "Regular" | "Back" | "Special" | undefined,
@@ -288,6 +335,25 @@ function normalizeQuestionsData(raw: RawSubjectQuestionsInput | null | undefined
         };
       })
     : undefined;
+
+  const questions: IoeQuestion[] = Array.from(mergedMap.values())
+    .map(({ _yearSet, ...rest }) => {
+      const years = Array.from(_yearSet);
+      return {
+        ...rest,
+        years,
+        examSessions: years,
+        frequency: Math.max(rest.frequency ?? 1, years.length, 1),
+      };
+    })
+    .sort((a, b) => (b.frequency ?? 1) - (a.frequency ?? 1));
+
+  const baseChapters =
+    raw.chapters && raw.chapters.length > 0 ? raw.chapters : [];
+  const chapters = [
+    ...baseChapters,
+    ...Array.from(chSet).filter((c) => !baseChapters.includes(c)),
+  ];
 
   return {
     ...raw,

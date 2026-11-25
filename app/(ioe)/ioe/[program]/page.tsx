@@ -16,6 +16,8 @@ interface PageProps {
   params: Promise<{ program: string }>;
 }
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   if (!IOE_ENABLED) return [];
   return getAllPrograms().map((p) => ({ program: p.slug }));

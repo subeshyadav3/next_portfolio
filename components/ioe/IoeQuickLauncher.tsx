@@ -71,7 +71,7 @@ export function IoeQuickLauncher({
   const ActiveIcon = isOther ? Compass : accent.icon;
 
   return (
-    <div className="flex flex-col justify-between rounded-2xl border border-slate-200/90 bg-slate-50/80 p-4 dark:border-gray-800/90 dark:bg-gray-950/60 sm:p-5">
+    <div className="flex min-w-0 flex-col justify-between rounded-2xl border border-slate-200/90 bg-slate-50/80 p-4 dark:border-gray-800/90 dark:bg-gray-950/60 sm:p-5">
       <div>
         <div className="flex items-center justify-between gap-2">
           <span className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-wider text-slate-500 dark:text-slate-400">
@@ -137,14 +137,14 @@ export function IoeQuickLauncher({
               </span>
             </div>
 
-            <div className="mt-3.5 grid grid-cols-4 gap-2">
+            <div className="mt-3.5 grid grid-cols-4 gap-1.5 sm:gap-2">
               {activeProgram.semesters.map((s) => (
                 <Link
                   key={s.sem}
                   href={`/ioe/${activeProgram.slug}/semester/${s.sem}`}
-                  className={`group flex flex-col items-center justify-center rounded-xl border border-slate-200/90 bg-white px-2 py-2.5 text-center shadow-2xs transition dark:border-gray-800 dark:bg-gray-900 ${accent.semHover}`}
+                  className={`group flex min-w-0 flex-col items-center justify-center rounded-xl border border-slate-200/90 bg-white px-1.5 py-2 text-center shadow-2xs transition dark:border-gray-800 dark:bg-gray-900 sm:px-2 sm:py-2.5 ${accent.semHover}`}
                 >
-                  <span className="font-mono text-xs font-extrabold">Sem {s.sem}</span>
+                  <span className="font-mono text-[11px] font-extrabold sm:text-xs">Sem {s.sem}</span>
                   <span className="mt-0.5 text-[10px] text-slate-400 group-hover:text-current">
                     {s.subjectCount} subj
                   </span>
