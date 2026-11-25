@@ -13,10 +13,12 @@ import { MathText } from "@/components/ioe/MathText";
 import { PdfOverlay } from "@/components/pdf/PdfOverlay";
 import { copyToClipboard } from "@/lib/clipboard";
 import {
+  ArrowUp,
   Award,
   BookOpen,
   Calendar,
   Check,
+  ChevronDown,
   Clock,
   Copy,
   Download,
@@ -33,12 +35,13 @@ import {
 } from "lucide-react";
 
 type TabId = "questions" | "year-wise" | "papers" | "syllabus" | "scheme";
+type ExamTypeFilter = "All" | "Regular" | "Back";
 
 interface SubjectStudyHubProps {
   subject: string;
-  code: string;
-  programName: string;
-  semester: string;
+  code?: string;
+  programName?: string;
+  semester?: string;
   papers: IoePaper[];
   chapters: string[];
   questions: IoeQuestion[];
@@ -224,19 +227,26 @@ function FrequencyBadge({ frequency }: { frequency: number }) {
   }
   return (
     <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2.5 py-0.5 text-[11px] font-semibold text-slate-600 dark:bg-gray-800 dark:text-slate-300">
-      Asked once
+      1 session
     </span>
   );
 }
 
 interface QuestionCardProps {
   question: IoeQuestion;
-  index: number;
+  labelNumber: string | number;
   showChapter?: boolean;
+  hideFrequencyWhenOnce?: boolean;
   onOpenPdf: () => void;
 }
 
-function QuestionCard({ question, index, showChapter = false, onOpenPdf }: QuestionCardProps) {
+function QuestionCard({
+  question,
+  labelNumber,
+  showChapter = false,
+  hideFrequencyWhenOnce = false,
+  onOpenPdf,
+}: QuestionCardProps) {
   const [copied, setCopied] = useState(false);
   const text = getQuestionText(question);
   const years = getQuestionYears(question);
@@ -255,10 +265,10 @@ function QuestionCard({ question, index, showChapter = false, onOpenPdf }: Quest
     <article className="group rounded-2xl border border-slate-200/90 bg-white p-4 shadow-xs transition hover:border-blue-300 hover:shadow-sm dark:border-gray-800/90 dark:bg-gray-900 dark:hover:border-blue-500/50 sm:p-5">
       <div className="flex flex-wrap items-start justify-between gap-2.5">
         <div className="flex flex-wrap items-center gap-1.5">
-          <span className="flex h-6 min-w-6 items-center justify-center rounded-lg bg-slate-900 px-1.5 font-mono text-[11px] font-bold text-white dark:bg-slate-100 dark:text-slate-900">
-            Q{index + 1}
+          <span className="flex h-6 min-w-7 items-center justify-center rounded-lg bg-slate-900 px-1.5 font-mono text-[11px] font-bold text-white dark:bg-slate-100 dark:text-slate-900">
+            Q{labelNumber}
           </span>
-          <FrequencyBadge frequency={frequency} />
+          {!(hideFrequencyWhenOnce && frequency <= 1) && <FrequencyBadge frequency={frequency} />}
           {question.marks && (
             <span className="rounded-md bg-slate-100 px-2 py-0.5 font-mono text-[11px] font-bold text-slate-700 dark:bg-gray-800 dark:text-slate-300">
               {question.marks} marks
@@ -274,7 +284,7 @@ function QuestionCard({ question, index, showChapter = false, onOpenPdf }: Quest
               type="button"
               onClick={onOpenPdf}
               className="inline-flex items-center gap-1 rounded-md bg-amber-50 px-2 py-0.5 text-[11px] font-semibold text-amber-700 transition-colors hover:bg-amber-100 dark:bg-amber-950/60 dark:text-amber-300"
-              title="Open the original paper to see the figure"
+              title="Open the original paper to view the figure"
             >
               <FileText className="h-3 w-3" />
               Figure in PDF
@@ -302,20 +312,20 @@ function QuestionCard({ question, index, showChapter = false, onOpenPdf }: Quest
         </button>
       </div>
 
-      <div className="mt-3">
+      <div className="mt-3.5">
         <MathText
           text={text}
-          className="text-sm leading-relaxed text-slate-900 dark:text-slate-100 sm:text-[15px]"
+          className="text-sm text-slate-900 dark:text-slate-100 sm:text-[15px]"
         />
       </div>
 
       {years.length > 0 && (
-        <div className="mt-3 flex flex-wrap items-center gap-1.5 border-t border-slate-100 pt-2.5 dark:border-gray-800/80">
+        <div className="mt-3.5 flex flex-wrap items-center gap-1.5 border-t border-slate-100 pt-2.5 dark:border-gray-800/80">
           <span className="inline-flex items-center gap-1 text-[10px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">
             <Calendar className="h-3 w-3" />
             Appeared
           </span>
-          {years.slice(0, 5).map((year) => (
+          {years.slice(0, 6).map((year) => (
             <span
               key={year}
               className="rounded-md bg-slate-100/90 px-1.5 py-0.5 text-[10px] font-medium text-slate-700 dark:bg-gray-800 dark:text-slate-300"
@@ -323,12 +333,12 @@ function QuestionCard({ question, index, showChapter = false, onOpenPdf }: Quest
               {year}
             </span>
           ))}
-          {years.length > 5 && (
+          {years.length > 6 && (
             <span
               className="rounded-md bg-blue-50 px-1.5 py-0.5 text-[10px] font-semibold text-blue-700 dark:bg-blue-950 dark:text-blue-300"
-              title={years.slice(5).join(", ")}
+              title={years.slice(6).join(", ")}
             >
-              +{years.length - 5} more
+              +{years.length - 6} more
             </span>
           )}
         </div>
@@ -371,16 +381,21 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
       });
   }, [questions, selectedChapter, minFrequency, query]);
 
-  const activeLabel =
-    selectedChapter === "all" ? "All chapters" : selectedChapter;
+  const activeLabel = selectedChapter === "all" ? "All chapters" : selectedChapter;
   const activeCount =
     selectedChapter === "all" ? questions.length : chapterCounts.get(selectedChapter) ?? 0;
 
+  const resetFilters = () => {
+    setSelectedChapter("all");
+    setQuery("");
+    setMinFrequency(0);
+  };
+
   return (
-    <div className="grid gap-5 lg:grid-cols-[250px_minmax(0,1fr)]">
-      {/* Chapter menu */}
-      <aside className="lg:sticky lg:top-32 lg:self-start">
-        <div className="rounded-2xl border border-slate-200/90 bg-white p-2 shadow-xs dark:border-gray-800/90 dark:bg-gray-900">
+    <div className="grid gap-5 lg:grid-cols-[260px_minmax(0,1fr)]">
+      {/* Desktop Chapter Sidebar */}
+      <aside className="hidden lg:block lg:sticky lg:top-32 lg:self-start">
+        <div className="rounded-2xl border border-slate-200/90 bg-white p-2.5 shadow-xs dark:border-gray-800/90 dark:bg-gray-900">
           <div className="flex items-center justify-between px-3 py-2">
             <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
               Chapters
@@ -408,7 +423,7 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
             </span>
           </button>
 
-          <div className="mt-1 max-h-[52vh] space-y-0.5 overflow-y-auto pr-0.5">
+          <div className="mt-1 max-h-[54vh] space-y-0.5 overflow-y-auto pr-0.5">
             {chapters.map((chapter) => {
               const isActive = selectedChapter === chapter;
               return (
@@ -448,7 +463,7 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
                 {activeLabel}
               </h3>
               <p className="mt-0.5 text-[11px] text-slate-500 dark:text-slate-400">
-                {activeCount} questions in this chapter · sorted by repeat frequency
+                Showing {filtered.length} of {activeCount} questions · sorted by frequency
               </p>
             </div>
 
@@ -476,8 +491,8 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
 
               {[
                 { value: 0, label: "All" },
+                { value: 3, label: "3+ repeats" },
                 { value: 5, label: "5+ repeats" },
-                { value: 10, label: "10+ repeats" },
               ].map((option) => (
                 <button
                   key={option.value}
@@ -510,7 +525,7 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
                 </option>
               ))}
             </select>
-            <Layers className="pointer-events-none absolute right-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-slate-400" />
+            <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
           </div>
         </div>
 
@@ -521,6 +536,13 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
             <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
               Try another chapter, keyword, or repeat filter.
             </p>
+            <button
+              type="button"
+              onClick={resetFilters}
+              className="mt-4 rounded-xl bg-blue-600 px-4 py-2 text-xs font-semibold text-white transition hover:bg-blue-700"
+            >
+              Reset filters
+            </button>
           </div>
         ) : (
           <div className="space-y-3">
@@ -528,7 +550,7 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
               <QuestionCard
                 key={question.id || `${activeLabel}-${index}`}
                 question={question}
-                index={index}
+                labelNumber={index + 1}
                 showChapter={selectedChapter === "all"}
                 onOpenPdf={onOpenPdf}
               />
@@ -547,9 +569,16 @@ interface YearWisePanelProps {
 
 function YearWisePanel({ sessions, onOpenPdf }: YearWisePanelProps) {
   const [selectedId, setSelectedId] = useState<string>(sessions[0]?.id ?? "");
+  const [examFilter, setExamFilter] = useState<ExamTypeFilter>("All");
   const [query, setQuery] = useState("");
 
-  const active = sessions.find((session) => session.id === selectedId) ?? sessions[0];
+  const filteredSessions = useMemo(() => {
+    if (examFilter === "All") return sessions;
+    return sessions.filter((s) => s.examType === examFilter);
+  }, [sessions, examFilter]);
+
+  const active =
+    filteredSessions.find((session) => session.id === selectedId) ?? filteredSessions[0];
 
   const questions = useMemo(() => {
     if (!active) return [];
@@ -575,21 +604,38 @@ function YearWisePanel({ sessions, onOpenPdf }: YearWisePanelProps) {
   }
 
   return (
-    <div className="grid gap-5 lg:grid-cols-[250px_minmax(0,1fr)]">
-      {/* Session menu */}
-      <aside className="lg:sticky lg:top-32 lg:self-start">
-        <div className="rounded-2xl border border-slate-200/90 bg-white p-2 shadow-xs dark:border-gray-800/90 dark:bg-gray-900">
+    <div className="grid gap-5 lg:grid-cols-[260px_minmax(0,1fr)]">
+      {/* Desktop Session Sidebar */}
+      <aside className="hidden lg:block lg:sticky lg:top-32 lg:self-start">
+        <div className="rounded-2xl border border-slate-200/90 bg-white p-2.5 shadow-xs dark:border-gray-800/90 dark:bg-gray-900">
           <div className="flex items-center justify-between px-3 py-2">
             <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
               Exam sessions
             </span>
             <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-bold text-slate-500 dark:bg-gray-800 dark:text-slate-400">
-              {sessions.length}
+              {filteredSessions.length}
             </span>
           </div>
 
-          <div className="max-h-[58vh] space-y-0.5 overflow-y-auto pr-0.5">
-            {sessions.map((session) => {
+          <div className="mb-2 flex items-center gap-1 px-1">
+            {(["All", "Regular", "Back"] as const).map((type) => (
+              <button
+                key={type}
+                type="button"
+                onClick={() => setExamFilter(type)}
+                className={`flex-1 rounded-lg py-1 text-[10px] font-bold transition ${
+                  examFilter === type
+                    ? "bg-slate-900 text-white dark:bg-white dark:text-slate-900"
+                    : "bg-slate-100 text-slate-600 hover:bg-slate-200 dark:bg-gray-800 dark:text-slate-300"
+                }`}
+              >
+                {type}
+              </button>
+            ))}
+          </div>
+
+          <div className="max-h-[54vh] space-y-0.5 overflow-y-auto pr-0.5">
+            {filteredSessions.map((session) => {
               const isActive = session.id === active?.id;
               return (
                 <button
@@ -615,7 +661,7 @@ function YearWisePanel({ sessions, onOpenPdf }: YearWisePanelProps) {
                         isActive ? "text-emerald-100" : "text-slate-400"
                       }`}
                     >
-                      {session.examType} · {session.questions.length} questions
+                      {session.examType} · {session.questions.length} Qs
                     </span>
                   </span>
                   <span
@@ -691,6 +737,44 @@ function YearWisePanel({ sessions, onOpenPdf }: YearWisePanelProps) {
                   </button>
                 </div>
               </div>
+
+              {/* Mobile Session & Exam Type Picker */}
+              <div className="mt-3 flex flex-col gap-2 lg:hidden">
+                <div className="flex items-center gap-1">
+                  {(["All", "Regular", "Back"] as const).map((type) => (
+                    <button
+                      key={type}
+                      type="button"
+                      onClick={() => setExamFilter(type)}
+                      className={`flex-1 rounded-lg py-1.5 text-[11px] font-bold transition ${
+                        examFilter === type
+                          ? "bg-slate-900 text-white dark:bg-white dark:text-slate-900"
+                          : "bg-slate-100 text-slate-600 dark:bg-gray-800 dark:text-slate-300"
+                      }`}
+                    >
+                      {type}
+                    </button>
+                  ))}
+                </div>
+                <div className="relative">
+                  <select
+                    value={active.id}
+                    onChange={(event) => {
+                      setSelectedId(event.target.value);
+                      setQuery("");
+                    }}
+                    aria-label="Select exam session"
+                    className="w-full appearance-none rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 pr-9 text-xs font-semibold text-slate-800 focus:border-emerald-500 focus:outline-hidden dark:border-gray-700 dark:bg-gray-800 dark:text-slate-100"
+                  >
+                    {filteredSessions.map((session) => (
+                      <option key={session.id} value={session.id}>
+                        {session.session} ({session.examType} · {session.questions.length} Qs)
+                      </option>
+                    ))}
+                  </select>
+                  <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+                </div>
+              </div>
             </div>
 
             {questions.length === 0 ? (
@@ -700,6 +784,15 @@ function YearWisePanel({ sessions, onOpenPdf }: YearWisePanelProps) {
                 <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
                   Try a different keyword for this session.
                 </p>
+                {query && (
+                  <button
+                    type="button"
+                    onClick={() => setQuery("")}
+                    className="mt-4 rounded-xl bg-blue-600 px-4 py-2 text-xs font-semibold text-white transition hover:bg-blue-700"
+                  >
+                    Clear search
+                  </button>
+                )}
               </div>
             ) : (
               <div className="space-y-3">
@@ -707,8 +800,9 @@ function YearWisePanel({ sessions, onOpenPdf }: YearWisePanelProps) {
                   <QuestionCard
                     key={`${active.id}-${index}`}
                     question={question}
-                    index={index}
+                    labelNumber={question.qNum ?? index + 1}
                     showChapter
+                    hideFrequencyWhenOnce
                     onOpenPdf={onOpenPdf}
                   />
                 ))}
@@ -736,9 +830,9 @@ function PapersPanel({ papers, subject, activeIndex, onSelect }: PapersPanelProp
 
   return (
     <div className="grid gap-5 lg:grid-cols-[270px_minmax(0,1fr)]">
-      {/* Paper menu */}
-      <aside className="lg:sticky lg:top-32 lg:self-start">
-        <div className="rounded-2xl border border-slate-200/90 bg-white p-2 shadow-xs dark:border-gray-800/90 dark:bg-gray-900">
+      {/* Desktop Paper Sidebar */}
+      <aside className="hidden lg:block lg:sticky lg:top-32 lg:self-start">
+        <div className="rounded-2xl border border-slate-200/90 bg-white p-2.5 shadow-xs dark:border-gray-800/90 dark:bg-gray-900">
           <div className="flex items-center justify-between px-3 py-2">
             <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
               Available papers
@@ -748,7 +842,7 @@ function PapersPanel({ papers, subject, activeIndex, onSelect }: PapersPanelProp
             </span>
           </div>
 
-          <div className="space-y-0.5">
+          <div className="max-h-[58vh] space-y-0.5 overflow-y-auto pr-0.5">
             {papers.map((item, index) => {
               const isActive = index === activeIndex;
               return (
@@ -796,6 +890,30 @@ function PapersPanel({ papers, subject, activeIndex, onSelect }: PapersPanelProp
 
       {/* Paper viewer */}
       <div className="min-w-0 space-y-3">
+        {/* Mobile Paper Switcher Strip */}
+        {papers.length > 1 && (
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none lg:hidden">
+            {papers.map((item, index) => {
+              const isActive = index === activeIndex;
+              return (
+                <button
+                  key={item.id || index}
+                  type="button"
+                  onClick={() => onSelect(index)}
+                  className={`inline-flex shrink-0 items-center gap-1.5 rounded-xl px-3 py-2 text-xs font-semibold transition ${
+                    isActive
+                      ? "bg-blue-600 text-white shadow-xs dark:bg-blue-500"
+                      : "border border-slate-200 bg-white text-slate-700 dark:border-gray-800 dark:bg-gray-900 dark:text-slate-300"
+                  }`}
+                >
+                  <FileText className="h-3.5 w-3.5" />
+                  <span>{item.sem ? item.sem.replace(/-/g, " ") : `Paper ${index + 1}`}</span>
+                </button>
+              );
+            })}
+          </div>
+        )}
+
         <div className="overflow-hidden rounded-2xl border border-slate-200/90 bg-white shadow-xs dark:border-gray-800/90 dark:bg-gray-900">
           <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 p-4 dark:border-gray-800 sm:p-5">
             <div className="min-w-0">
@@ -917,9 +1035,7 @@ interface SyllabusPanelProps {
 
 function SyllabusPanel({ subject, syllabus }: SyllabusPanelProps) {
   const units = useMemo(() => (syllabus?.units ?? []).filter(isTheoryUnit), [syllabus]);
-  const [activeIndex, setActiveIndex] = useState(0);
-
-  const activeUnit = units[Math.min(activeIndex, units.length - 1)];
+  const [selectedUnitIndex, setSelectedUnitIndex] = useState<number | "all">(0);
 
   return (
     <div className="space-y-4">
@@ -971,31 +1087,55 @@ function SyllabusPanel({ subject, syllabus }: SyllabusPanelProps) {
           </p>
         </div>
       ) : (
-        <div className="grid gap-5 lg:grid-cols-[250px_minmax(0,1fr)]">
-          {/* Unit menu */}
-          <aside className="lg:sticky lg:top-32 lg:self-start">
-            <div className="rounded-2xl border border-slate-200/90 bg-white p-2 shadow-xs dark:border-gray-800/90 dark:bg-gray-900">
-              <div className="px-3 py-2 text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
-                Units
+        <div className="grid gap-5 lg:grid-cols-[260px_minmax(0,1fr)]">
+          {/* Desktop Unit Sidebar */}
+          <aside className="hidden lg:block lg:sticky lg:top-32 lg:self-start">
+            <div className="rounded-2xl border border-slate-200/90 bg-white p-2.5 shadow-xs dark:border-gray-800/90 dark:bg-gray-900">
+              <div className="flex items-center justify-between px-3 py-2">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+                  Units
+                </span>
+                <span className="rounded-full bg-slate-100 px-2 py-0.5 text-[10px] font-bold text-slate-500 dark:bg-gray-800 dark:text-slate-400">
+                  {units.length}
+                </span>
               </div>
-              <div className="max-h-[58vh] space-y-0.5 overflow-y-auto pr-0.5">
+
+              <button
+                type="button"
+                onClick={() => setSelectedUnitIndex("all")}
+                className={`mb-1 flex w-full items-center justify-between gap-2 rounded-xl px-3 py-2.5 text-left text-xs font-semibold transition ${
+                  selectedUnitIndex === "all"
+                    ? "bg-violet-600 text-white shadow-xs shadow-violet-500/20 dark:bg-violet-500"
+                    : "text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-gray-800 dark:hover:text-white"
+                }`}
+              >
+                <span className="flex items-center gap-2">
+                  <Layers className="h-3.5 w-3.5" />
+                  All units
+                </span>
+                <span className={selectedUnitIndex === "all" ? "text-violet-100" : "text-slate-400"}>
+                  {units.length}
+                </span>
+              </button>
+
+              <div className="max-h-[54vh] space-y-0.5 overflow-y-auto pr-0.5">
                 {units.map((unit, index) => {
-                  const isActive = unit === activeUnit;
+                  const isActive = selectedUnitIndex === index;
                   return (
                     <button
                       key={unit.num}
                       type="button"
-                      onClick={() => setActiveIndex(index)}
+                      onClick={() => setSelectedUnitIndex(index)}
                       className={`flex w-full items-start gap-2 rounded-xl px-3 py-2.5 text-left transition ${
                         isActive
-                          ? "bg-violet-600 text-white shadow-xs shadow-violet-500/20 dark:bg-violet-500"
+                          ? "bg-violet-50 font-bold text-violet-700 dark:bg-violet-950/60 dark:text-violet-300"
                           : "text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-gray-800 dark:hover:text-white"
                       }`}
                     >
                       <span
                         className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-md font-mono text-[10px] font-bold ${
                           isActive
-                            ? "bg-white/20 text-white"
+                            ? "bg-violet-100 text-violet-700 dark:bg-violet-900/60 dark:text-violet-200"
                             : "bg-slate-100 text-slate-500 dark:bg-gray-800 dark:text-slate-400"
                         }`}
                       >
@@ -1006,7 +1146,7 @@ function SyllabusPanel({ subject, syllabus }: SyllabusPanelProps) {
                         {unit.hours && (
                           <span
                             className={`mt-0.5 block text-[10px] ${
-                              isActive ? "text-violet-100" : "text-slate-400"
+                              isActive ? "text-violet-500 dark:text-violet-300" : "text-slate-400"
                             }`}
                           >
                             {unit.hours}
@@ -1022,14 +1162,35 @@ function SyllabusPanel({ subject, syllabus }: SyllabusPanelProps) {
 
           {/* Unit content */}
           <div className="min-w-0 space-y-3">
+            {/* Mobile Unit Picker */}
+            <div className="relative lg:hidden">
+              <select
+                value={selectedUnitIndex === "all" ? "all" : String(selectedUnitIndex)}
+                onChange={(event) => {
+                  const val = event.target.value;
+                  setSelectedUnitIndex(val === "all" ? "all" : Number(val));
+                }}
+                aria-label="Select syllabus unit"
+                className="w-full appearance-none rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 pr-9 text-xs font-semibold text-slate-800 shadow-xs focus:border-violet-500 focus:outline-hidden dark:border-gray-800 dark:bg-gray-900 dark:text-slate-100"
+              >
+                <option value="all">All units ({units.length})</option>
+                {units.map((unit, index) => (
+                  <option key={unit.num} value={index}>
+                    {unit.num}. {unit.title} {unit.hours ? `(${unit.hours})` : ""}
+                  </option>
+                ))}
+              </select>
+              <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+            </div>
+
             {units.map((unit, index) => {
+              const isVisible = selectedUnitIndex === "all" || index === selectedUnitIndex;
+              if (!isVisible) return null;
               const topics = cleanTopics(unit);
               return (
                 <div
                   key={unit.num}
-                  className={`rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs dark:border-gray-800/90 dark:bg-gray-900 sm:p-6 ${
-                    index === activeIndex ? "" : "hidden"
-                  }`}
+                  className="rounded-2xl border border-slate-200/90 bg-white p-5 shadow-xs dark:border-gray-800/90 dark:bg-gray-900 sm:p-6"
                 >
                   <div className="flex flex-wrap items-baseline justify-between gap-2 border-b border-slate-100 pb-3 dark:border-gray-800">
                     <h4 className="text-sm font-extrabold text-slate-900 dark:text-white sm:text-base">
@@ -1212,8 +1373,16 @@ export function SubjectStudyHub({
   syllabus,
   assessment,
 }: SubjectStudyHubProps) {
-  const [tab, setTab] = useState<TabId>("papers");
+  const hasQuestions = questions.length > 0;
+  const sessions = useMemo(
+    () => buildSessionGroups(questions, yearWisePapers),
+    [questions, yearWisePapers]
+  );
+  const hasSessions = sessions.length > 0;
+
+  const [tab, setTab] = useState<TabId>(hasQuestions ? "questions" : "papers");
   const [paperIndex, setPaperIndex] = useState(0);
+  const [showBackToTop, setShowBackToTop] = useState(false);
 
   const chapterCounts = useMemo(() => {
     const map = new Map<string, number>();
@@ -1230,11 +1399,6 @@ export function SubjectStudyHub({
     return [...base, ...extra];
   }, [chapters, chapterCounts]);
 
-  const sessions = useMemo(
-    () => buildSessionGroups(questions, yearWisePapers),
-    [questions, yearWisePapers]
-  );
-
   const theoryUnitCount = useMemo(
     () => (syllabus?.units ?? []).filter(isTheoryUnit).length,
     [syllabus]
@@ -1246,18 +1410,47 @@ export function SubjectStudyHub({
     icon: typeof Flame;
     count?: number;
   }> = [
+    ...(hasQuestions
+      ? [{ id: "questions" as const, label: "Chapter Questions", icon: Flame, count: questions.length }]
+      : []),
+    ...(hasSessions
+      ? [{ id: "year-wise" as const, label: "Year-wise Papers", icon: Calendar, count: sessions.length }]
+      : []),
     { id: "papers", label: "PDF Papers", icon: FileText, count: papers.length },
-    { id: "questions", label: "Chapter Questions", icon: Flame, count: questions.length },
-    { id: "year-wise", label: "Year-wise Papers", icon: Calendar, count: sessions.length },
     { id: "syllabus", label: "Syllabus", icon: BookOpen, count: theoryUnitCount || undefined },
     { id: "scheme", label: "Exam Scheme", icon: Award },
   ];
 
   useEffect(() => {
-    const hash = window.location.hash.replace("#", "");
-    if (hash === "questions" || hash === "year-wise" || hash === "papers" || hash === "syllabus" || hash === "scheme") {
-      setTab(hash);
-    }
+    const syncFromHash = (shouldScroll = false) => {
+      const hash = window.location.hash.replace("#", "") as TabId;
+      if (
+        (hash === "questions" && hasQuestions) ||
+        (hash === "year-wise" && hasSessions) ||
+        hash === "papers" ||
+        hash === "syllabus" ||
+        hash === "scheme"
+      ) {
+        setTab(hash);
+        if (shouldScroll) {
+          const hub = document.getElementById("study-hub");
+          if (hub) {
+            const top = hub.getBoundingClientRect().top + window.scrollY - 88;
+            window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
+          }
+        }
+      }
+    };
+    syncFromHash(false);
+    const onHashChange = () => syncFromHash(true);
+    window.addEventListener("hashchange", onHashChange);
+    return () => window.removeEventListener("hashchange", onHashChange);
+  }, [hasQuestions, hasSessions]);
+
+  useEffect(() => {
+    const onScroll = () => setShowBackToTop(window.scrollY > 450);
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   const selectTab = (id: TabId) => {
@@ -1266,8 +1459,8 @@ export function SubjectStudyHub({
       window.history.replaceState(null, "", `#${id}`);
       const hub = document.getElementById("study-hub");
       if (hub) {
-        const top = hub.getBoundingClientRect().top + window.scrollY - 120;
-        window.scrollTo({ top, behavior: "smooth" });
+        const top = hub.getBoundingClientRect().top + window.scrollY - 88;
+        window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
       }
     }
   };
@@ -1277,8 +1470,8 @@ export function SubjectStudyHub({
   return (
     <section id="study-hub" className="space-y-5">
       {/* ── Sticky tab menu ── */}
-      <div className="sticky top-16 z-30 -mx-2 sm:mx-0">
-        <div className="rounded-2xl border border-slate-200/90 bg-white/90 p-1.5 shadow-sm backdrop-blur-md dark:border-gray-800/90 dark:bg-gray-900/90">
+      <div className="sticky top-[61px] z-30 -mx-2 sm:mx-0">
+        <div className="rounded-2xl border border-slate-200/90 bg-white/95 p-1.5 shadow-sm backdrop-blur-md dark:border-gray-800/90 dark:bg-gray-900/95">
           <div
             role="tablist"
             aria-label={`${subject} study sections`}
@@ -1294,13 +1487,17 @@ export function SubjectStudyHub({
                   role="tab"
                   aria-selected={isActive}
                   onClick={() => selectTab(item.id)}
-                  className={`inline-flex shrink-0 items-center gap-1.5 rounded-xl px-3 py-2 text-xs font-bold transition ${
+                  className={`inline-flex shrink-0 items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs font-bold transition ${
                     isActive
                       ? "bg-slate-900 text-white shadow-xs dark:bg-white dark:text-slate-900"
                       : "text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-gray-800 dark:hover:text-white"
                   }`}
                 >
-                  <Icon className={`h-3.5 w-3.5 ${isActive ? "text-blue-400" : "text-slate-400"}`} />
+                  <Icon
+                    className={`h-3.5 w-3.5 ${
+                      isActive ? "text-blue-400 dark:text-blue-600" : "text-slate-400"
+                    }`}
+                  />
                   <span>{item.label}</span>
                   {typeof item.count === "number" && (
                     <span
@@ -1321,18 +1518,22 @@ export function SubjectStudyHub({
       </div>
 
       {/* ── Panels ── */}
-      <div className={tab === "questions" ? "" : "hidden"}>
-        <ChapterPanel
-          chapters={chapterList}
-          questions={questions}
-          chapterCounts={chapterCounts}
-          onOpenPdf={openPdfTab}
-        />
-      </div>
+      {hasQuestions && (
+        <div className={tab === "questions" ? "" : "hidden"}>
+          <ChapterPanel
+            chapters={chapterList}
+            questions={questions}
+            chapterCounts={chapterCounts}
+            onOpenPdf={openPdfTab}
+          />
+        </div>
+      )}
 
-      <div className={tab === "year-wise" ? "" : "hidden"}>
-        <YearWisePanel sessions={sessions} onOpenPdf={openPdfTab} />
-      </div>
+      {hasSessions && (
+        <div className={tab === "year-wise" ? "" : "hidden"}>
+          <YearWisePanel sessions={sessions} onOpenPdf={openPdfTab} />
+        </div>
+      )}
 
       {tab === "papers" && (
         <PapersPanel
@@ -1351,10 +1552,24 @@ export function SubjectStudyHub({
         <SchemePanel subject={subject} assessment={assessment} />
       </div>
 
-      {/* Small context line */}
-      <p className="text-center text-[10px] text-slate-400 dark:text-slate-500">
-        {code} · {programName} · Semester {semester}
-      </p>
+      {(code || programName || semester) && (
+        <p className="text-center text-[10px] text-slate-400 dark:text-slate-500">
+          {[code, programName, semester ? `Semester ${semester}` : null]
+            .filter(Boolean)
+            .join(" · ")}
+        </p>
+      )}
+
+      {showBackToTop && (
+        <button
+          type="button"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          aria-label="Scroll back to top"
+          className="fixed bottom-6 right-6 z-40 inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white/95 text-slate-700 shadow-lg backdrop-blur transition hover:-translate-y-0.5 hover:bg-slate-900 hover:text-white dark:border-gray-700 dark:bg-gray-900/95 dark:text-slate-200 dark:hover:bg-white dark:hover:text-slate-900"
+        >
+          <ArrowUp className="h-4 w-4" />
+        </button>
+      )}
     </section>
   );
 }

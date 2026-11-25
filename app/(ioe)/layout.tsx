@@ -1,8 +1,9 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { ThemeToggle } from "@/components/blog/ThemeToggle";
-import { BookOpen, ArrowLeft, GraduationCap, Library, ChevronRight } from "lucide-react";
+import { BookOpen, ArrowLeft, ChevronRight } from "lucide-react";
 import { IoeNavMobile } from "@/components/ioe/IoeNavMobile";
+import { IoeNavLinks } from "@/components/ioe/IoeNavLinks";
 
 export const metadata: Metadata = {
   title: {
@@ -19,16 +20,16 @@ export default function IoeLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="ioe-section min-h-screen bg-slate-50 text-slate-900 antialiased transition-colors duration-200 dark:bg-[#090d16] dark:text-slate-100">
       {/* ── Sticky Header ── */}
-      <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 shadow-sm backdrop-blur-lg transition-colors duration-200 dark:border-gray-800/80 dark:bg-gray-950/90 dark:shadow-gray-950/40">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+      <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 shadow-xs backdrop-blur-lg transition-colors duration-200 dark:border-gray-800/80 dark:bg-gray-950/90 dark:shadow-gray-950/40">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6">
           {/* Brand */}
-          <Link href="/ioe" className="group flex items-center gap-3">
-            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-600 font-bold text-white shadow-md shadow-blue-500/25 transition-all group-hover:scale-105 group-hover:bg-blue-700 dark:bg-blue-500 dark:shadow-blue-500/20">
+          <Link href="/ioe" className="group flex shrink-0 items-center gap-2.5">
+            <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-600 font-bold text-white shadow-sm shadow-blue-500/25 transition-all group-hover:scale-105 group-hover:bg-blue-700 dark:bg-blue-500 dark:shadow-blue-500/20">
               <BookOpen className="h-4 w-4" />
             </div>
             <div className="flex flex-col leading-none">
               <div className="flex items-center gap-1.5">
-                <span className="text-[15px] font-bold tracking-tight text-slate-900 dark:text-white">
+                <span className="text-[15px] font-extrabold tracking-tight text-slate-900 dark:text-white">
                   IOE Papers
                 </span>
                 <span className="rounded-md bg-blue-600 px-1.5 py-0.5 text-[10px] font-bold text-white dark:bg-blue-500">
@@ -43,21 +44,8 @@ export default function IoeLayout({ children }: { children: React.ReactNode }) {
 
           {/* Nav */}
           <nav className="flex items-center gap-1.5 text-sm font-medium sm:gap-2">
-            <Link
-              href="/ioe/all"
-              className="hidden items-center gap-1.5 rounded-lg px-3 py-1.5 text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 sm:flex dark:text-slate-400 dark:hover:bg-gray-800 dark:hover:text-white"
-            >
-              <Library className="h-3.5 w-3.5" />
-              All Subjects
-            </Link>
-            <Link
-              href="/ioe"
-              className="hidden items-center gap-1.5 rounded-lg px-3 py-1.5 text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 sm:flex dark:text-slate-400 dark:hover:bg-gray-800 dark:hover:text-white"
-            >
-              <GraduationCap className="h-3.5 w-3.5" />
-              Programs
-            </Link>
-            <div className="mx-1 hidden h-4 w-px bg-slate-200 sm:block dark:bg-gray-800" />
+            <IoeNavLinks />
+            <div className="mx-1 hidden h-4 w-px bg-slate-200 md:block dark:bg-gray-800" />
             <ThemeToggle />
             <Link
               href="/"
@@ -72,7 +60,7 @@ export default function IoeLayout({ children }: { children: React.ReactNode }) {
       </header>
 
       {/* ── Main Content ── */}
-      <main className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12">
+      <main className="mx-auto max-w-6xl px-4 py-6 sm:px-6 sm:py-10">
         {children}
       </main>
 

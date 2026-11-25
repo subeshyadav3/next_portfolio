@@ -4,6 +4,7 @@ import { IOE_ENABLED } from "@/lib/ioe/config";
 import {
   findCatalogSubject,
   getAllPrograms,
+  getAssessmentScheme,
   getCatalogs,
   getPapersForSubject,
   getSubjectQuestions,
@@ -11,13 +12,9 @@ import {
   getSyllabusForSubject,
   normalizeSubjectName,
 } from "@/lib/ioe/data";
-import { PdfViewer } from "@/components/ioe/PdfViewer";
-import SyllabusSection from "@/components/ioe/SyllabusSection";
-import { QuestionBank } from "@/components/ioe/QuestionBank";
-import { YearWiseQuestions } from "@/components/ioe/YearWiseQuestions";
-import { IoeSubjectJumpNav } from "@/components/ioe/IoeSubjectJumpNav";
+import { SubjectStudyHub } from "@/components/ioe/SubjectStudyHub";
 import { buildIoeMetadata, breadcrumbLd, jsonLd, learningResourceLd } from "@/lib/ioe/seo";
-import { ChevronRight, FileText } from "lucide-react";
+import { BookOpen, Calendar, ChevronRight, Download, FileText, Flame } from "lucide-react";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -34,7 +31,7 @@ export async function generateMetadata({ params }: PageProps) {
   if (!subject) return {};
   return buildIoeMetadata({
     title: `${subject.name} IOE PYQ Past Year Questions & Official Syllabus`,
-     description: `Browse ${subject.name} IOE past year question papers (PYQ PDF) and available curriculum syllabus units for TU engineering students.`,
+    description: `Browse ${subject.name} IOE past year question papers (PYQ PDF) and available curriculum syllabus units for TU engineering students.`,
     path: `/ioe/subjects/${slug}`,
     keywords: [
       `${subject.name} IOE PYQ`,
@@ -70,8 +67,9 @@ export default async function IoeSubjectArchivePage({ params }: PageProps) {
 
   const papers = getPapersForSubject(subject);
   if (papers.length === 0) notFound();
-  const questions = await getSubjectQuestions(slug);
+  const questionsData = await getSubjectQuestions(slug);
   const syllabus = getSyllabusForSubject(subject.name);
+  const assessment = getAssessmentScheme(subject.name);
 
   const path = `/ioe/subjects/${slug}`;
   const breadcrumb = breadcrumbLd([
@@ -81,8 +79,19 @@ export default async function IoeSubjectArchivePage({ params }: PageProps) {
     { name: subject.name, path },
   ]);
 
+  const questionCount = questionsData?.questions.length ?? 0;
+  const chapterCount = questionsData?.chapters?.length ?? 0;
+  const sessionCount =
+    questionsData?.yearWisePapers?.length ??
+    new Set(
+      (questionsData?.questions ?? []).flatMap(
+        (q) => q.years || q.examSessions || (q.year ? [q.year] : [])
+      )
+    ).size;
+  const firstPaper = papers[0];
+
   return (
-    <div className="space-y-8">
+    <div className="space-y-6">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumb) }} />
       <script
         type="application/ld+json"
@@ -93,7 +102,7 @@ export default async function IoeSubjectArchivePage({ params }: PageProps) {
               description: `${subject.name} past question papers from the IOE PYQ archive.`,
               path,
               papers: papers.length,
-              questions: questions?.questions.length,
+              questions: questionsData?.questions.length,
             })
           ),
         }}
@@ -101,77 +110,107 @@ export default async function IoeSubjectArchivePage({ params }: PageProps) {
 
       {/* Breadcrumbs */}
       <nav className="flex items-center gap-1.5 text-xs font-medium text-slate-500 dark:text-slate-400">
-        <Link href="/ioe" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+        <Link href="/ioe" className="transition-colors hover:text-blue-600 dark:hover:text-blue-400">
           IOE
         </Link>
         <ChevronRight className="h-3.5 w-3.5 text-slate-400" />
-        <Link href="/ioe/all" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+        <Link href="/ioe/all" className="transition-colors hover:text-blue-600 dark:hover:text-blue-400">
           All Subjects
         </Link>
         <ChevronRight className="h-3.5 w-3.5 text-slate-400" />
-        <span className="font-semibold text-slate-900 dark:text-white truncate max-w-[200px] sm:max-w-none">
+        <span className="max-w-[200px] truncate font-semibold text-slate-900 dark:text-white sm:max-w-none">
           {subject.name}
         </span>
       </nav>
 
       {/* Header */}
-      <header className="rounded-3xl border border-slate-200/90 bg-white p-6 shadow-xs transition-colors dark:border-gray-800/90 dark:bg-gray-900 sm:p-8">
-        <div className="flex flex-wrap items-center gap-2">
-          <span className="rounded-lg bg-blue-600 px-3 py-1 font-mono text-xs font-bold text-white shadow-xs shadow-blue-500/20 dark:bg-blue-500">
-            Subject Archive
-          </span>
-          <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
-            <FileText className="h-3 w-3" />
-            {papers.length} {papers.length === 1 ? "Paper" : "Papers"} Available
-          </span>
-        </div>
+      <header className="relative overflow-hidden rounded-3xl border border-slate-200/90 bg-white shadow-xs dark:border-gray-800/90 dark:bg-gray-900">
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-transparent dark:from-blue-950/30 dark:via-gray-900 dark:to-gray-900" />
+        <div className="relative p-6 sm:p-8">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="rounded-lg bg-blue-600 px-3 py-1 font-mono text-xs font-bold text-white shadow-xs shadow-blue-500/20 dark:bg-blue-500">
+              Subject Archive
+            </span>
+            <span className="inline-flex items-center gap-1 rounded-full bg-emerald-50 px-2.5 py-0.5 text-xs font-semibold text-emerald-700 dark:bg-emerald-950 dark:text-emerald-300">
+              <FileText className="h-3 w-3" />
+              {papers.length} {papers.length === 1 ? "Paper" : "Papers"} Available
+            </span>
+          </div>
 
-        <h1 className="mt-4 text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
-          {subject.name}
-        </h1>
-        <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-600 dark:text-slate-400 sm:text-base">
-          Past examination question papers available in the PDF viewer below. Review past questions and syllabus units to prepare for your semester final exams.
-        </p>
+          <h1 className="mt-4 text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+            {subject.name}
+          </h1>
+          <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-600 dark:text-slate-400 sm:text-base">
+            Past examination question papers, chapter-wise repeated questions, and curriculum
+            syllabus for {subject.name} under IOE, Tribhuvan University.
+          </p>
+
+          <div className="mt-5 flex flex-wrap items-center gap-2">
+            <span className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200/80 bg-white/70 px-3 py-1.5 text-xs font-semibold text-slate-700 backdrop-blur dark:border-gray-700/70 dark:bg-gray-800/60 dark:text-slate-300">
+              <FileText className="h-3.5 w-3.5 text-blue-500" />
+              {papers.length} {papers.length === 1 ? "paper" : "papers"}
+            </span>
+            {questionCount > 0 && (
+              <span className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200/80 bg-white/70 px-3 py-1.5 text-xs font-semibold text-slate-700 backdrop-blur dark:border-gray-700/70 dark:bg-gray-800/60 dark:text-slate-300">
+                <Flame className="h-3.5 w-3.5 text-amber-500" />
+                {questionCount} repeated questions
+              </span>
+            )}
+            {chapterCount > 0 && (
+              <span className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200/80 bg-white/70 px-3 py-1.5 text-xs font-semibold text-slate-700 backdrop-blur dark:border-gray-700/70 dark:bg-gray-800/60 dark:text-slate-300">
+                <BookOpen className="h-3.5 w-3.5 text-violet-500" />
+                {chapterCount} chapters
+              </span>
+            )}
+            {sessionCount > 0 && (
+              <span className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200/80 bg-white/70 px-3 py-1.5 text-xs font-semibold text-slate-700 backdrop-blur dark:border-gray-700/70 dark:bg-gray-800/60 dark:text-slate-300">
+                <Calendar className="h-3.5 w-3.5 text-emerald-500" />
+                {sessionCount} exam sessions
+              </span>
+            )}
+          </div>
+
+          <div className="mt-5 flex flex-wrap gap-2">
+            <a
+              href="#papers"
+              className="inline-flex items-center gap-1.5 rounded-xl border border-blue-200 bg-blue-50 px-4 py-2 text-xs font-semibold text-blue-700 transition hover:bg-blue-100 dark:border-blue-900/60 dark:bg-blue-950/50 dark:text-blue-300 dark:hover:bg-blue-900/50"
+            >
+              <FileText className="h-3.5 w-3.5" />
+              View PDF papers
+            </a>
+            <a
+              href={firstPaper.downloadUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 rounded-xl bg-blue-600 px-4 py-2 text-xs font-semibold text-white shadow-xs shadow-blue-500/20 transition hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
+            >
+              <Download className="h-3.5 w-3.5" />
+              Download paper
+            </a>
+            {syllabus?.syllabus && (
+              <a
+                href={syllabus.syllabus}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-4 py-2 text-xs font-semibold text-slate-700 shadow-xs transition hover:bg-slate-50 dark:border-gray-700 dark:bg-gray-900 dark:text-slate-300 dark:hover:bg-gray-800"
+              >
+                <FileText className="h-3.5 w-3.5 text-blue-500" />
+                Syllabus PDF
+              </a>
+            )}
+          </div>
+        </div>
       </header>
 
-      {/* PDF Viewer */}
-      <section id="pdf-viewer" className="space-y-3">
-        <div className="flex items-center justify-between">
-          <h2 className="text-base font-bold text-slate-900 dark:text-white">
-            Past Question Papers (PDF)
-          </h2>
-          <span className="text-xs text-slate-400 dark:text-slate-500">
-            Switch tabs to view different exam papers
-          </span>
-        </div>
-        <PdfViewer papers={papers} />
-      </section>
-
-      {/* ── Quick Jump Navigation Bar ── */}
-      <IoeSubjectJumpNav
-        hasQuestions={Boolean(questions && questions.questions.length > 0)}
-        hasSyllabus={Boolean(syllabus)}
-        hasExamScheme={false}
+      <SubjectStudyHub
+        subject={subject.name}
+        papers={papers}
+        chapters={questionsData?.chapters ?? []}
+        questions={questionsData?.questions ?? []}
+        yearWisePapers={questionsData?.yearWisePapers}
+        syllabus={syllabus}
+        assessment={assessment}
       />
-
-      {/* Top Repeated Past Examination Questions */}
-      {questions && questions.questions.length > 0 && (
-        <>
-          <QuestionBank
-            subject={subject.name}
-            chapters={questions.chapters}
-            questions={questions.questions}
-          />
-          <YearWiseQuestions
-            subject={subject.name}
-            questions={questions.questions}
-            yearWisePapers={questions.yearWisePapers}
-          />
-        </>
-      )}
-
-      {/* Official Syllabus */}
-      <SyllabusSection subject={subject.name} syllabus={syllabus} />
     </div>
   );
 }

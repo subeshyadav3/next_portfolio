@@ -202,6 +202,13 @@ export default async function IoeSubjectPage({ params }: PageProps) {
           {/* Primary actions */}
           <div className="mt-5 flex flex-wrap gap-2">
             <a
+              href="#papers"
+              className="inline-flex items-center gap-1.5 rounded-xl border border-blue-200 bg-blue-50 px-4 py-2 text-xs font-semibold text-blue-700 transition hover:bg-blue-100 dark:border-blue-900/60 dark:bg-blue-950/50 dark:text-blue-300 dark:hover:bg-blue-900/50"
+            >
+              <FileText className="h-3.5 w-3.5" />
+              View PDF papers
+            </a>
+            <a
               href={firstPaper.downloadUrl}
               target="_blank"
               rel="noopener noreferrer"

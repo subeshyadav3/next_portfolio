@@ -7,9 +7,10 @@ import {
   getProgram,
   getSemesterSubjects,
 } from "@/lib/ioe/data";
+import { hasQuestionBankForSubject } from "@/lib/ioe/server-helpers";
 import { ProgramHubView } from "@/components/ioe/ProgramHubView";
 import { buildIoeMetadata, breadcrumbLd, jsonLd } from "@/lib/ioe/seo";
-import { ChevronRight, Layers, FileText, BookOpen } from "lucide-react";
+import { ChevronRight, Layers, FileText, BookOpen, Flame } from "lucide-react";
 
 interface PageProps {
   params: Promise<{ program: string }>;
@@ -56,7 +57,15 @@ export default async function IoeProgramPage({ params }: PageProps) {
     0
   );
 
-  // Deep subject pages exist for BCT, BCE, BEX
+  const questionBankSubjects = Array.from(
+    new Set(
+      semesterRows
+        .flatMap((r) => r.subjects)
+        .filter((s) => hasQuestionBankForSubject(s.title))
+        .map((s) => s.title)
+    )
+  );
+
   const isDeepProgram = ["bct", "bce", "bex"].includes(program.slug.toLowerCase());
 
   const breadcrumb = breadcrumbLd([
@@ -65,44 +74,43 @@ export default async function IoeProgramPage({ params }: PageProps) {
     { name: program.fullName, path: `/ioe/${program.slug}` },
   ]);
 
-  // Schema markup for SEO & Google Rich Results
   const courseSchema = {
     "@context": "https://schema.org",
     "@type": "Course",
-    "name": `${program.fullName} (${program.code})`,
-    "description": program.description,
-    "provider": {
+    name: `${program.fullName} (${program.code})`,
+    description: program.description,
+    provider: {
       "@type": "EducationalOrganization",
-      "name": "Institute of Engineering (IOE), Tribhuvan University Curriculum",
-      "sameAs": "https://ioe.edu.np"
-    }
+      name: "Institute of Engineering (IOE), Tribhuvan University Curriculum",
+      sameAs: "https://ioe.edu.np",
+    },
   };
 
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": [
+    mainEntity: [
       {
         "@type": "Question",
-        "name": `Where can I download IOE ${program.code} past question papers?`,
-        "acceptedAnswer": {
+        name: `Where can I download IOE ${program.code} past question papers?`,
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": `You can preview or download past question papers (PDF) for all semesters of ${program.fullName} directly from this hub with zero paywalls.`
-        }
+          text: `You can preview or download past question papers (PDF) for all semesters of ${program.fullName} directly from this hub with zero paywalls.`,
+        },
       },
       {
         "@type": "Question",
-        "name": `What is the passing mark for IOE ${program.code} examinations?`,
-        "acceptedAnswer": {
+        name: `What is the passing mark for IOE ${program.code} examinations?`,
+        acceptedAnswer: {
           "@type": "Answer",
-          "text": "The general current IOE scheme uses a 60-mark final theory exam and 40-mark internal assessment, with pass marks of 24 and 16. Course-specific practical and project evaluation may differ."
-        }
-      }
-    ]
+          text: "The general current IOE scheme uses a 60-mark final theory exam and 40-mark internal assessment, with pass marks of 24 and 16. Course-specific practical and project evaluation may differ.",
+        },
+      },
+    ],
   };
 
   return (
-    <div className="space-y-10">
+    <div className="space-y-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: jsonLd(breadcrumb) }}
@@ -129,50 +137,46 @@ export default async function IoeProgramPage({ params }: PageProps) {
       </nav>
 
       {/* ── Program Header ── */}
-      <header className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-xs dark:border-gray-800 dark:bg-gray-900 sm:p-8">
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-0 opacity-[0.025]"
-          style={{
-            backgroundImage:
-              "radial-gradient(circle at 1px 1px, #94a3b8 1px, transparent 0)",
-            backgroundSize: "20px 20px",
-          }}
-        />
+      <header className="relative overflow-hidden rounded-3xl border border-slate-200/90 bg-white p-6 shadow-xs dark:border-gray-800/90 dark:bg-gray-900 sm:p-8">
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-blue-50/70 via-white to-transparent dark:from-blue-950/25 dark:via-gray-900 dark:to-gray-900" />
 
         <div className="relative">
-          <div className="flex flex-wrap items-center gap-2.5">
-            <span className="rounded-lg bg-blue-600 px-3 py-1 font-mono text-xs font-bold text-white shadow-sm shadow-blue-500/20 dark:bg-blue-500">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="rounded-lg bg-blue-600 px-3 py-1 font-mono text-xs font-bold text-white shadow-xs shadow-blue-500/20 dark:bg-blue-500">
               {program.code}
             </span>
             <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600 dark:bg-gray-800 dark:text-slate-300">
               Undergraduate B.E. Curriculum
             </span>
             <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-300">
-              Semester 1–8 Curriculum
+              Semester 1–8
             </span>
           </div>
 
           <h1 className="mt-4 text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
             {program.fullName}
           </h1>
-          <p className="mt-3 max-w-3xl text-sm leading-relaxed text-slate-600 dark:text-slate-400 sm:text-[15px]">
+          <p className="mt-2.5 max-w-3xl text-sm leading-relaxed text-slate-600 dark:text-slate-400 sm:text-[15px]">
             {program.description}
           </p>
 
           {/* Stats bar */}
-          <div className="mt-6 flex flex-wrap items-center gap-5 border-t border-slate-100 pt-5 text-xs font-semibold dark:border-gray-800">
-            <span className="inline-flex items-center gap-1.5 text-slate-600 dark:text-slate-300">
-              <Layers className="h-4 w-4 text-blue-500" />
+          <div className="mt-5 flex flex-wrap items-center gap-3 border-t border-slate-100 pt-5 text-xs font-semibold dark:border-gray-800">
+            <span className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200/80 bg-slate-50 px-3 py-1.5 text-slate-700 dark:border-gray-800 dark:bg-gray-800/60 dark:text-slate-300">
+              <Layers className="h-3.5 w-3.5 text-blue-500" />
               {semesterRows.length} Semesters
             </span>
-            <span className="inline-flex items-center gap-1.5 text-slate-600 dark:text-slate-300">
-              <BookOpen className="h-4 w-4 text-emerald-500" />
+            <span className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200/80 bg-slate-50 px-3 py-1.5 text-slate-700 dark:border-gray-800 dark:bg-gray-800/60 dark:text-slate-300">
+              <BookOpen className="h-3.5 w-3.5 text-emerald-500" />
               {totalSubjects} Total Courses
             </span>
-            <span className="inline-flex items-center gap-1.5 text-slate-600 dark:text-slate-300">
-              <FileText className="h-4 w-4 text-violet-500" />
-              {subjectsWithPapersCount} Subjects with Available PYQs
+            <span className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200/80 bg-slate-50 px-3 py-1.5 text-slate-700 dark:border-gray-800 dark:bg-gray-800/60 dark:text-slate-300">
+              <FileText className="h-3.5 w-3.5 text-violet-500" />
+              {subjectsWithPapersCount} with PDFs
+            </span>
+            <span className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200/80 bg-slate-50 px-3 py-1.5 text-slate-700 dark:border-gray-800 dark:bg-gray-800/60 dark:text-slate-300">
+              <Flame className="h-3.5 w-3.5 text-amber-500" />
+              {questionBankSubjects.length} with PYQ Banks
             </span>
           </div>
         </div>
@@ -183,6 +187,7 @@ export default async function IoeProgramPage({ params }: PageProps) {
         program={program}
         semesterRows={semesterRows}
         isDeepProgram={isDeepProgram}
+        questionBankSubjects={questionBankSubjects}
       />
     </div>
   );

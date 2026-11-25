@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { IOE_ENABLED } from "@/lib/ioe/config";
 import { getCatalogs } from "@/lib/ioe/data";
+import { hasQuestionBankForSubject } from "@/lib/ioe/server-helpers";
 import { buildIoeMetadata } from "@/lib/ioe/seo";
 import { OtherProgramsViewer } from "@/components/ioe/OtherProgramsViewer";
 import { ChevronRight } from "lucide-react";
@@ -41,6 +42,9 @@ export default function IoeOtherProgramsPage() {
     (s) => !coreSubjectNames.has(s.name.trim().toLowerCase())
   );
   const totalPapers = otherSubjects.reduce((acc, s) => acc + s.papers.length, 0);
+  const questionBankSubjects = otherSubjects
+    .filter((s) => hasQuestionBankForSubject(s.name))
+    .map((s) => s.name);
 
   return (
     <div className="space-y-8">
@@ -92,6 +96,7 @@ export default function IoeOtherProgramsPage() {
       <OtherProgramsViewer
         subjects={otherSubjects}
         programs={otherProgramsData.programs}
+        questionBankSubjects={questionBankSubjects}
       />
     </div>
   );
