@@ -50,7 +50,7 @@ function renderKatexSpan(math: string, displayMode: boolean, key: React.Key): Re
     return (
       <span
         key={key}
-        className="inline-math inline-block max-w-full align-baseline px-0.5 [&_.katex]:text-[1em]"
+        className="inline-math inline px-0.5 [&_.katex]:text-[0.98em]"
         dangerouslySetInnerHTML={{ __html: html }}
       />
     );
@@ -406,5 +406,5 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = "" }) => {
     return blocks;
   }, [text]);
 
-  return <div className={`space-y-2 ${className}`}>{renderedContent}</div>;
+  return <div className={`min-w-0 max-w-full space-y-2 overflow-x-auto break-words ${className}`}>{renderedContent}</div>;
 };

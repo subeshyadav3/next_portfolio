@@ -20,8 +20,8 @@ export default function IoeLayout({ children }: { children: React.ReactNode }) {
   return (
     <div className="ioe-section min-h-screen bg-slate-50 text-slate-900 antialiased transition-colors duration-200 dark:bg-[#090d16] dark:text-slate-100">
       {/* ── Sticky Header ── */}
-      <header className="sticky top-0 z-40 border-b border-slate-200/80 bg-white/90 shadow-xs backdrop-blur-lg transition-colors duration-200 dark:border-gray-800/80 dark:bg-gray-950/90 dark:shadow-gray-950/40">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-2.5 sm:px-6">
+      <header className="sticky top-0 z-50 border-b border-slate-200/80 bg-white/95 shadow-xs backdrop-blur-lg transition-colors duration-200 dark:border-gray-800/80 dark:bg-gray-950/95 dark:shadow-gray-950/40">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-2 px-4 py-2.5 sm:gap-3 sm:px-6">
           {/* Brand */}
           <Link href="/ioe" className="group flex shrink-0 items-center gap-2.5">
             <div className="flex h-9 w-9 items-center justify-center rounded-xl bg-blue-600 font-bold text-white shadow-sm shadow-blue-500/25 transition-all group-hover:scale-105 group-hover:bg-blue-700 dark:bg-blue-500 dark:shadow-blue-500/20">
@@ -60,12 +60,12 @@ export default function IoeLayout({ children }: { children: React.ReactNode }) {
       </header>
 
       {/* ── Main Content ── */}
-      <main className="mx-auto max-w-6xl px-4 py-6 sm:px-6 sm:py-10">
+      <main className="mx-auto max-w-6xl px-3.5 py-5 sm:px-6 sm:py-10">
         {children}
       </main>
 
       {/* ── Footer ── */}
-      <footer className="mt-16 border-t border-slate-200 bg-white dark:border-gray-800 dark:bg-gray-950">
+      <footer className="mt-10 border-t border-slate-200 bg-white dark:border-gray-800 dark:bg-gray-950 sm:mt-16">
         {/* Upper footer */}
         <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6">
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">

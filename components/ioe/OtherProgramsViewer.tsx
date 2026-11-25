@@ -166,10 +166,10 @@ export function OtherProgramsViewer({
                     </div>
                   </div>
 
-                  <div className="flex shrink-0 flex-wrap items-center gap-2">
+                  <div className="flex w-full shrink-0 items-center gap-2 sm:w-auto">
                     <Link
                       href={subjectHref}
-                      className="inline-flex items-center gap-1.5 rounded-xl bg-slate-900 px-3 py-1.5 text-xs font-bold text-white transition hover:bg-blue-600 dark:bg-white dark:text-slate-900 dark:hover:bg-blue-500 dark:hover:text-white"
+                      className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-xl bg-slate-900 px-3 py-2 text-xs font-bold text-white transition hover:bg-blue-600 dark:bg-white dark:text-slate-900 dark:hover:bg-blue-500 dark:hover:text-white sm:flex-none sm:py-1.5"
                     >
                       Study Hub
                       <ArrowRight className="h-3 w-3" />
@@ -178,7 +178,7 @@ export function OtherProgramsViewer({
                     <button
                       type="button"
                       onClick={() => toggleExpand(subject.name)}
-                      className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 transition hover:bg-slate-50 dark:border-gray-700 dark:bg-gray-800 dark:text-slate-200 dark:hover:bg-gray-700"
+                      className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-700 transition hover:bg-slate-50 dark:border-gray-700 dark:bg-gray-800 dark:text-slate-200 dark:hover:bg-gray-700 sm:flex-none sm:py-1.5"
                     >
                       <span>{isExpanded ? "Hide PDF" : "Quick PDF"}</span>
                       {isExpanded ? (

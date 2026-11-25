@@ -19,6 +19,8 @@ import {
   Calendar,
   Check,
   ChevronDown,
+  ChevronLeft,
+  ChevronRight,
   Clock,
   Copy,
   Download,
@@ -262,8 +264,8 @@ function QuestionCard({
   };
 
   return (
-    <article className="group rounded-2xl border border-slate-200/90 bg-white p-4 shadow-xs transition hover:border-blue-300 hover:shadow-sm dark:border-gray-800/90 dark:bg-gray-900 dark:hover:border-blue-500/50 sm:p-5">
-      <div className="flex flex-wrap items-start justify-between gap-2.5">
+    <article className="group min-w-0 rounded-2xl border border-slate-200/90 bg-white p-4 shadow-xs transition hover:border-blue-300 hover:shadow-sm dark:border-gray-800/90 dark:bg-gray-900 dark:hover:border-blue-500/50 sm:p-5">
+      <div className="flex flex-wrap items-start justify-between gap-2">
         <div className="flex flex-wrap items-center gap-1.5">
           <span className="flex h-6 min-w-7 items-center justify-center rounded-lg bg-slate-900 px-1.5 font-mono text-[11px] font-bold text-white dark:bg-slate-100 dark:text-slate-900">
             Q{labelNumber}
@@ -275,7 +277,7 @@ function QuestionCard({
             </span>
           )}
           {showChapter && question.chapter && (
-            <span className="rounded-md border border-slate-200/80 bg-slate-50 px-2 py-0.5 text-[11px] font-medium text-slate-600 dark:border-gray-700/80 dark:bg-gray-800/80 dark:text-slate-400">
+            <span className="max-w-[200px] truncate rounded-md border border-slate-200/80 bg-slate-50 px-2 py-0.5 text-[11px] font-medium text-slate-600 dark:border-gray-700/80 dark:bg-gray-800/80 dark:text-slate-400 sm:max-w-none">
               {question.chapter}
             </span>
           )}
@@ -283,7 +285,7 @@ function QuestionCard({
             <button
               type="button"
               onClick={onOpenPdf}
-              className="inline-flex items-center gap-1 rounded-md bg-amber-50 px-2 py-0.5 text-[11px] font-semibold text-amber-700 transition-colors hover:bg-amber-100 dark:bg-amber-950/60 dark:text-amber-300"
+              className="inline-flex items-center gap-1 rounded-md bg-amber-50 px-2.5 py-1 text-[11px] font-semibold text-amber-700 transition-colors hover:bg-amber-100 dark:bg-amber-950/60 dark:text-amber-300"
               title="Open the original paper to view the figure"
             >
               <FileText className="h-3 w-3" />
@@ -295,7 +297,7 @@ function QuestionCard({
         <button
           type="button"
           onClick={handleCopy}
-          className="inline-flex items-center gap-1 rounded-lg border border-slate-200/80 px-2 py-1 text-[11px] font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 dark:border-gray-700 dark:text-slate-400 dark:hover:bg-gray-800 dark:hover:text-white"
+          className="inline-flex min-h-[30px] items-center gap-1 rounded-lg border border-slate-200/80 px-2.5 py-1 text-[11px] font-semibold text-slate-600 transition hover:bg-slate-100 hover:text-slate-900 dark:border-gray-700 dark:text-slate-400 dark:hover:bg-gray-800 dark:hover:text-white"
           title="Copy question"
         >
           {copied ? (
@@ -391,8 +393,16 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
     setMinFrequency(0);
   };
 
+  const chapterIndex = selectedChapter === "all" ? -1 : chapters.indexOf(selectedChapter);
+  const stepChapter = (delta: number) => {
+    const order = ["all", ...chapters];
+    const curr = order.indexOf(selectedChapter);
+    const next = (curr + delta + order.length) % order.length;
+    setSelectedChapter(order[next]);
+  };
+
   return (
-    <div className="grid gap-5 lg:grid-cols-[260px_minmax(0,1fr)]">
+    <div className="grid gap-4 lg:grid-cols-[260px_minmax(0,1fr)] lg:gap-5">
       {/* Desktop Chapter Sidebar */}
       <aside className="hidden lg:block lg:sticky lg:top-32 lg:self-start">
         <div className="rounded-2xl border border-slate-200/90 bg-white p-2.5 shadow-xs dark:border-gray-800/90 dark:bg-gray-900">
@@ -455,27 +465,64 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
       </aside>
 
       {/* Question list */}
-      <div className="min-w-0 space-y-4">
-        <div className="rounded-2xl border border-slate-200/90 bg-white p-4 shadow-xs dark:border-gray-800/90 dark:bg-gray-900 sm:p-5">
-          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+      <div className="min-w-0 space-y-3.5 sm:space-y-4">
+        <div className="rounded-2xl border border-slate-200/90 bg-white p-3.5 shadow-xs dark:border-gray-800/90 dark:bg-gray-900 sm:p-5">
+          {/* Mobile chapter stepper + picker */}
+          <div className="mb-3 flex items-center gap-1.5 lg:hidden">
+            <button
+              type="button"
+              onClick={() => stepChapter(-1)}
+              aria-label="Previous chapter"
+              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-slate-700 transition active:scale-95 hover:bg-slate-100 dark:border-gray-700 dark:bg-gray-800 dark:text-slate-200"
+            >
+              <ChevronLeft className="h-4 w-4" />
+            </button>
+            <div className="relative min-w-0 flex-1">
+              <select
+                value={selectedChapter}
+                onChange={(event) => setSelectedChapter(event.target.value)}
+                aria-label="Select chapter"
+                className="h-10 w-full appearance-none rounded-xl border border-blue-200/80 bg-blue-50/40 px-3 pr-8 text-xs font-bold text-slate-900 focus:border-blue-500 focus:outline-hidden dark:border-blue-900/50 dark:bg-blue-950/30 dark:text-slate-100"
+              >
+                <option value="all">All chapters ({questions.length})</option>
+                {chapters.map((chapter, idx) => (
+                  <option key={chapter} value={chapter}>
+                    {idx + 1}. {chapter} ({chapterCounts.get(chapter) ?? 0})
+                  </option>
+                ))}
+              </select>
+              <ChevronDown className="pointer-events-none absolute right-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+            </div>
+            <button
+              type="button"
+              onClick={() => stepChapter(1)}
+              aria-label="Next chapter"
+              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-slate-700 transition active:scale-95 hover:bg-slate-100 dark:border-gray-700 dark:bg-gray-800 dark:text-slate-200"
+            >
+              <ChevronRight className="h-4 w-4" />
+            </button>
+          </div>
+
+          <div className="flex flex-col gap-2.5 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
             <div className="min-w-0">
-              <h3 className="truncate text-sm font-extrabold text-slate-900 dark:text-white sm:text-base">
+              <h3 className="hidden truncate text-sm font-extrabold text-slate-900 dark:text-white sm:text-base lg:block">
                 {activeLabel}
               </h3>
-              <p className="mt-0.5 text-[11px] text-slate-500 dark:text-slate-400">
+              <p className="text-[11px] text-slate-500 dark:text-slate-400">
+                {chapterIndex >= 0 ? `Ch ${chapterIndex + 1}/${chapters.length} · ` : ""}
                 Showing {filtered.length} of {activeCount} questions · sorted by frequency
               </p>
             </div>
 
-            <div className="flex flex-wrap items-center gap-1.5">
-              <div className="relative min-w-[180px] flex-1 sm:flex-none">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-1.5">
+              <div className="relative w-full sm:w-52">
                 <Search className="absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-slate-400" />
                 <input
                   type="search"
                   value={query}
                   onChange={(event) => setQuery(event.target.value)}
                   placeholder="Search questions..."
-                  className="w-full rounded-xl border border-slate-200 bg-slate-50 py-2 pl-9 pr-8 text-xs text-slate-900 placeholder:text-slate-400 transition focus:border-blue-500 focus:bg-white focus:outline-hidden dark:border-gray-700 dark:bg-gray-800 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:bg-gray-900"
+                  className="w-full rounded-xl border border-slate-200 bg-slate-50 py-2.5 pl-9 pr-8 text-xs text-slate-900 placeholder:text-slate-400 transition focus:border-blue-500 focus:bg-white focus:outline-hidden dark:border-gray-700 dark:bg-gray-800 dark:text-slate-100 dark:placeholder:text-slate-500 dark:focus:bg-gray-900 sm:py-2"
                 />
                 {query && (
                   <button
@@ -489,43 +536,27 @@ function ChapterPanel({ chapters, questions, chapterCounts, onOpenPdf }: Chapter
                 )}
               </div>
 
-              {[
-                { value: 0, label: "All" },
-                { value: 3, label: "3+ repeats" },
-                { value: 5, label: "5+ repeats" },
-              ].map((option) => (
-                <button
-                  key={option.value}
-                  type="button"
-                  onClick={() => setMinFrequency(option.value)}
-                  className={`rounded-xl px-2.5 py-2 text-[11px] font-bold transition ${
-                    minFrequency === option.value
-                      ? "bg-slate-900 text-white dark:bg-white dark:text-slate-900"
-                      : "bg-slate-100 text-slate-600 hover:bg-slate-200 dark:bg-gray-800 dark:text-slate-300 dark:hover:bg-gray-700"
-                  }`}
-                >
-                  {option.label}
-                </button>
-              ))}
+              <div className="grid grid-cols-3 gap-1 sm:flex sm:items-center">
+                {[
+                  { value: 0, label: "All", shortLabel: "All" },
+                  { value: 3, label: "3+ repeats", shortLabel: "3+ repeats" },
+                  { value: 5, label: "5+ repeats", shortLabel: "5+ repeats" },
+                ].map((option) => (
+                  <button
+                    key={option.value}
+                    type="button"
+                    onClick={() => setMinFrequency(option.value)}
+                    className={`rounded-xl px-2.5 py-2 text-[11px] font-bold transition ${
+                      minFrequency === option.value
+                        ? "bg-slate-900 text-white dark:bg-white dark:text-slate-900"
+                        : "bg-slate-100 text-slate-600 hover:bg-slate-200 dark:bg-gray-800 dark:text-slate-300 dark:hover:bg-gray-700"
+                    }`}
+                  >
+                    {option.label}
+                  </button>
+                ))}
+              </div>
             </div>
-          </div>
-
-          {/* Mobile chapter picker */}
-          <div className="relative mt-3 lg:hidden">
-            <select
-              value={selectedChapter}
-              onChange={(event) => setSelectedChapter(event.target.value)}
-              aria-label="Select chapter"
-              className="w-full appearance-none rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 pr-9 text-xs font-semibold text-slate-800 focus:border-blue-500 focus:outline-hidden dark:border-gray-700 dark:bg-gray-800 dark:text-slate-100"
-            >
-              <option value="all">All chapters ({questions.length})</option>
-              {chapters.map((chapter) => (
-                <option key={chapter} value={chapter}>
-                  {chapter} ({chapterCounts.get(chapter) ?? 0})
-                </option>
-              ))}
-            </select>
-            <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
           </div>
         </div>
 
@@ -603,8 +634,16 @@ function YearWisePanel({ sessions, onOpenPdf }: YearWisePanelProps) {
     );
   }
 
+  const stepSession = (delta: number) => {
+    if (filteredSessions.length === 0 || !active) return;
+    const curr = filteredSessions.findIndex((s) => s.id === active.id);
+    const next = (curr + delta + filteredSessions.length) % filteredSessions.length;
+    setSelectedId(filteredSessions[next].id);
+    setQuery("");
+  };
+
   return (
-    <div className="grid gap-5 lg:grid-cols-[260px_minmax(0,1fr)]">
+    <div className="grid gap-4 lg:grid-cols-[260px_minmax(0,1fr)] lg:gap-5">
       {/* Desktop Session Sidebar */}
       <aside className="hidden lg:block lg:sticky lg:top-32 lg:self-start">
         <div className="rounded-2xl border border-slate-200/90 bg-white p-2.5 shadow-xs dark:border-gray-800/90 dark:bg-gray-900">
@@ -681,13 +720,69 @@ function YearWisePanel({ sessions, onOpenPdf }: YearWisePanelProps) {
       </aside>
 
       {/* Session questions */}
-      <div className="min-w-0 space-y-4">
+      <div className="min-w-0 space-y-3.5 sm:space-y-4">
         {active && (
           <>
-            <div className="rounded-2xl border border-slate-200/90 bg-white p-4 shadow-xs dark:border-gray-800/90 dark:bg-gray-900 sm:p-5">
-              <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <div className="rounded-2xl border border-slate-200/90 bg-white p-3.5 shadow-xs dark:border-gray-800/90 dark:bg-gray-900 sm:p-5">
+              {/* Mobile Session & Exam Type Picker */}
+              <div className="mb-3 flex flex-col gap-2 lg:hidden">
+                <div className="grid grid-cols-3 gap-1">
+                  {(["All", "Regular", "Back"] as const).map((type) => (
+                    <button
+                      key={type}
+                      type="button"
+                      onClick={() => setExamFilter(type)}
+                      className={`rounded-xl py-2 text-[11px] font-bold transition ${
+                        examFilter === type
+                          ? "bg-slate-900 text-white dark:bg-white dark:text-slate-900"
+                          : "bg-slate-100 text-slate-600 dark:bg-gray-800 dark:text-slate-300"
+                      }`}
+                    >
+                      {type}
+                    </button>
+                  ))}
+                </div>
+                <div className="flex items-center gap-1.5">
+                  <button
+                    type="button"
+                    onClick={() => stepSession(-1)}
+                    aria-label="Previous exam session"
+                    className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-slate-700 transition active:scale-95 hover:bg-slate-100 dark:border-gray-700 dark:bg-gray-800 dark:text-slate-200"
+                  >
+                    <ChevronLeft className="h-4 w-4" />
+                  </button>
+                  <div className="relative min-w-0 flex-1">
+                    <select
+                      value={active.id}
+                      onChange={(event) => {
+                        setSelectedId(event.target.value);
+                        setQuery("");
+                      }}
+                      aria-label="Select exam session"
+                      className="h-10 w-full appearance-none rounded-xl border border-emerald-200/80 bg-emerald-50/40 px-3 pr-8 text-xs font-bold text-slate-900 focus:border-emerald-500 focus:outline-hidden dark:border-emerald-900/50 dark:bg-emerald-950/30 dark:text-slate-100"
+                    >
+                      {filteredSessions.map((session) => (
+                        <option key={session.id} value={session.id}>
+                          {session.session} ({session.examType} · {session.questions.length} Qs)
+                        </option>
+                      ))}
+                    </select>
+                    <ChevronDown className="pointer-events-none absolute right-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+                  </div>
+                  <button
+                    type="button"
+                    onClick={() => stepSession(1)}
+                    aria-label="Next exam session"
+                    className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-slate-50 text-slate-700 transition active:scale-95 hover:bg-slate-100 dark:border-gray-700 dark:bg-gray-800 dark:text-slate-200"
+                  >
+                    <ChevronRight className="h-4 w-4" />
+                  </button>
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-2.5 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
                 <div>
-                  <div className="flex flex-wrap items-center gap-2">
+                  <div className="hidden flex-wrap items-center gap-2 lg:flex">
                     <h3 className="text-sm font-extrabold text-slate-900 dark:text-white sm:text-base">
                       {active.session}
                     </h3>
@@ -701,20 +796,20 @@ function YearWisePanel({ sessions, onOpenPdf }: YearWisePanelProps) {
                       {active.examType}
                     </span>
                   </div>
-                  <p className="mt-0.5 text-[11px] text-slate-500 dark:text-slate-400">
+                  <p className="text-[11px] text-slate-500 dark:text-slate-400">
                     {active.questions.length} questions · {active.totalMarks || "—"} total marks
                   </p>
                 </div>
 
                 <div className="flex items-center gap-2">
-                  <div className="relative min-w-[150px] flex-1 sm:flex-none">
+                  <div className="relative min-w-0 flex-1 sm:w-48 sm:flex-none">
                     <Search className="absolute left-3 top-1/2 h-3.5 w-3.5 -translate-y-1/2 text-slate-400" />
                     <input
                       type="search"
                       value={query}
                       onChange={(event) => setQuery(event.target.value)}
                       placeholder="Search this paper..."
-                      className="w-full rounded-xl border border-slate-200 bg-slate-50 py-2 pl-9 pr-8 text-xs text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:bg-white focus:outline-hidden dark:border-gray-700 dark:bg-gray-800 dark:text-slate-100 dark:placeholder:text-slate-500"
+                      className="w-full rounded-xl border border-slate-200 bg-slate-50 py-2.5 pl-9 pr-8 text-xs text-slate-900 placeholder:text-slate-400 focus:border-blue-500 focus:bg-white focus:outline-hidden dark:border-gray-700 dark:bg-gray-800 dark:text-slate-100 dark:placeholder:text-slate-500 sm:py-2"
                     />
                     {query && (
                       <button
@@ -730,49 +825,11 @@ function YearWisePanel({ sessions, onOpenPdf }: YearWisePanelProps) {
                   <button
                     type="button"
                     onClick={onOpenPdf}
-                    className="inline-flex shrink-0 items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3 py-2 text-[11px] font-semibold text-slate-700 transition hover:bg-slate-50 dark:border-gray-700 dark:bg-gray-900 dark:text-slate-300 dark:hover:bg-gray-800"
+                    className="inline-flex shrink-0 items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-[11px] font-semibold text-slate-700 transition hover:bg-slate-50 dark:border-gray-700 dark:bg-gray-900 dark:text-slate-300 dark:hover:bg-gray-800 sm:py-2"
                   >
                     <FileText className="h-3.5 w-3.5 text-blue-500" />
-                    <span className="hidden sm:inline">Open PDF</span>
+                    <span>Open PDF</span>
                   </button>
-                </div>
-              </div>
-
-              {/* Mobile Session & Exam Type Picker */}
-              <div className="mt-3 flex flex-col gap-2 lg:hidden">
-                <div className="flex items-center gap-1">
-                  {(["All", "Regular", "Back"] as const).map((type) => (
-                    <button
-                      key={type}
-                      type="button"
-                      onClick={() => setExamFilter(type)}
-                      className={`flex-1 rounded-lg py-1.5 text-[11px] font-bold transition ${
-                        examFilter === type
-                          ? "bg-slate-900 text-white dark:bg-white dark:text-slate-900"
-                          : "bg-slate-100 text-slate-600 dark:bg-gray-800 dark:text-slate-300"
-                      }`}
-                    >
-                      {type}
-                    </button>
-                  ))}
-                </div>
-                <div className="relative">
-                  <select
-                    value={active.id}
-                    onChange={(event) => {
-                      setSelectedId(event.target.value);
-                      setQuery("");
-                    }}
-                    aria-label="Select exam session"
-                    className="w-full appearance-none rounded-xl border border-slate-200 bg-slate-50 px-3 py-2.5 pr-9 text-xs font-semibold text-slate-800 focus:border-emerald-500 focus:outline-hidden dark:border-gray-700 dark:bg-gray-800 dark:text-slate-100"
-                  >
-                    {filteredSessions.map((session) => (
-                      <option key={session.id} value={session.id}>
-                        {session.session} ({session.examType} · {session.questions.length} Qs)
-                      </option>
-                    ))}
-                  </select>
-                  <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
                 </div>
               </div>
             </div>
@@ -925,13 +982,13 @@ function PapersPanel({ papers, subject, activeIndex, onSelect }: PapersPanelProp
               </p>
             </div>
 
-            <div className="flex flex-wrap items-center gap-2">
+            <div className="grid w-full grid-cols-3 gap-2 sm:flex sm:w-auto sm:flex-wrap sm:items-center">
               {paper.driveViewUrl && (
                 <a
                   href={paper.driveViewUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3 py-2 text-[11px] font-semibold text-slate-700 transition hover:bg-slate-50 dark:border-gray-700 dark:bg-gray-900 dark:text-slate-300 dark:hover:bg-gray-800"
+                  className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-white px-3 py-2 text-[11px] font-semibold text-slate-700 transition hover:bg-slate-50 dark:border-gray-700 dark:bg-gray-900 dark:text-slate-300 dark:hover:bg-gray-800"
                 >
                   <ExternalLink className="h-3.5 w-3.5 text-blue-500" />
                   Drive
@@ -940,7 +997,7 @@ function PapersPanel({ papers, subject, activeIndex, onSelect }: PapersPanelProp
               <button
                 type="button"
                 onClick={() => setOverlayOpen(true)}
-                className="inline-flex items-center gap-1.5 rounded-xl border border-blue-200 bg-blue-50 px-3 py-2 text-[11px] font-semibold text-blue-700 transition hover:bg-blue-100 dark:border-blue-900/60 dark:bg-blue-950/50 dark:text-blue-300 dark:hover:bg-blue-900/50"
+                className="inline-flex items-center justify-center gap-1.5 rounded-xl border border-blue-200 bg-blue-50 px-3 py-2 text-[11px] font-semibold text-blue-700 transition hover:bg-blue-100 dark:border-blue-900/60 dark:bg-blue-950/50 dark:text-blue-300 dark:hover:bg-blue-900/50"
               >
                 <Maximize2 className="h-3.5 w-3.5" />
                 Full view
@@ -949,7 +1006,7 @@ function PapersPanel({ papers, subject, activeIndex, onSelect }: PapersPanelProp
                 href={paper.downloadUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-xl bg-blue-600 px-3.5 py-2 text-[11px] font-semibold text-white shadow-xs shadow-blue-500/20 transition hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
+                className="inline-flex items-center justify-center gap-1.5 rounded-xl bg-blue-600 px-3.5 py-2 text-[11px] font-semibold text-white shadow-xs shadow-blue-500/20 transition hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
               >
                 <Download className="h-3.5 w-3.5" />
                 Download
@@ -969,7 +1026,7 @@ function PapersPanel({ papers, subject, activeIndex, onSelect }: PapersPanelProp
               key={paper.id}
               src={paper.previewUrl}
               title={paper.file}
-              className="h-[60vh] min-h-[380px] w-full border-0 sm:h-[72vh] sm:min-h-[520px]"
+              className="h-[62vh] min-h-[360px] max-h-[640px] w-full border-0 sm:h-[72vh] sm:min-h-[520px] sm:max-h-none"
               loading="lazy"
               allow="fullscreen"
             />
@@ -1162,25 +1219,51 @@ function SyllabusPanel({ subject, syllabus }: SyllabusPanelProps) {
 
           {/* Unit content */}
           <div className="min-w-0 space-y-3">
-            {/* Mobile Unit Picker */}
-            <div className="relative lg:hidden">
-              <select
-                value={selectedUnitIndex === "all" ? "all" : String(selectedUnitIndex)}
-                onChange={(event) => {
-                  const val = event.target.value;
-                  setSelectedUnitIndex(val === "all" ? "all" : Number(val));
+            {/* Mobile Unit Stepper & Picker */}
+            <div className="flex items-center gap-1.5 lg:hidden">
+              <button
+                type="button"
+                onClick={() => {
+                  const order: Array<number | "all"> = ["all", ...units.map((_, i) => i)];
+                  const curr = order.indexOf(selectedUnitIndex);
+                  setSelectedUnitIndex(order[(curr - 1 + order.length) % order.length]);
                 }}
-                aria-label="Select syllabus unit"
-                className="w-full appearance-none rounded-xl border border-slate-200 bg-white px-3.5 py-2.5 pr-9 text-xs font-semibold text-slate-800 shadow-xs focus:border-violet-500 focus:outline-hidden dark:border-gray-800 dark:bg-gray-900 dark:text-slate-100"
+                aria-label="Previous unit"
+                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 shadow-xs transition active:scale-95 hover:bg-slate-50 dark:border-gray-800 dark:bg-gray-900 dark:text-slate-200"
               >
-                <option value="all">All units ({units.length})</option>
-                {units.map((unit, index) => (
-                  <option key={unit.num} value={index}>
-                    {unit.num}. {unit.title} {unit.hours ? `(${unit.hours})` : ""}
-                  </option>
-                ))}
-              </select>
-              <ChevronDown className="pointer-events-none absolute right-3 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+                <ChevronLeft className="h-4 w-4" />
+              </button>
+              <div className="relative min-w-0 flex-1">
+                <select
+                  value={selectedUnitIndex === "all" ? "all" : String(selectedUnitIndex)}
+                  onChange={(event) => {
+                    const val = event.target.value;
+                    setSelectedUnitIndex(val === "all" ? "all" : Number(val));
+                  }}
+                  aria-label="Select syllabus unit"
+                  className="h-10 w-full appearance-none rounded-xl border border-violet-200/80 bg-violet-50/40 px-3 pr-8 text-xs font-bold text-slate-900 shadow-xs focus:border-violet-500 focus:outline-hidden dark:border-violet-900/50 dark:bg-violet-950/30 dark:text-slate-100"
+                >
+                  <option value="all">All units ({units.length})</option>
+                  {units.map((unit, index) => (
+                    <option key={unit.num} value={index}>
+                      {unit.num}. {unit.title} {unit.hours ? `(${unit.hours})` : ""}
+                    </option>
+                  ))}
+                </select>
+                <ChevronDown className="pointer-events-none absolute right-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-slate-400" />
+              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  const order: Array<number | "all"> = ["all", ...units.map((_, i) => i)];
+                  const curr = order.indexOf(selectedUnitIndex);
+                  setSelectedUnitIndex(order[(curr + 1) % order.length]);
+                }}
+                aria-label="Next unit"
+                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border border-slate-200 bg-white text-slate-700 shadow-xs transition active:scale-95 hover:bg-slate-50 dark:border-gray-800 dark:bg-gray-900 dark:text-slate-200"
+              >
+                <ChevronRight className="h-4 w-4" />
+              </button>
             </div>
 
             {units.map((unit, index) => {
@@ -1407,18 +1490,19 @@ export function SubjectStudyHub({
   const tabs: Array<{
     id: TabId;
     label: string;
+    shortLabel: string;
     icon: typeof Flame;
     count?: number;
   }> = [
     ...(hasQuestions
-      ? [{ id: "questions" as const, label: "Chapter Questions", icon: Flame, count: questions.length }]
+      ? [{ id: "questions" as const, label: "Chapter Questions", shortLabel: "Chapters", icon: Flame, count: questions.length }]
       : []),
     ...(hasSessions
-      ? [{ id: "year-wise" as const, label: "Year-wise Papers", icon: Calendar, count: sessions.length }]
+      ? [{ id: "year-wise" as const, label: "Year-wise Papers", shortLabel: "Years", icon: Calendar, count: sessions.length }]
       : []),
-    { id: "papers", label: "PDF Papers", icon: FileText, count: papers.length },
-    { id: "syllabus", label: "Syllabus", icon: BookOpen, count: theoryUnitCount || undefined },
-    { id: "scheme", label: "Exam Scheme", icon: Award },
+    { id: "papers", label: "PDF Papers", shortLabel: "PDFs", icon: FileText, count: papers.length },
+    { id: "syllabus", label: "Syllabus", shortLabel: "Syllabus", icon: BookOpen, count: theoryUnitCount || undefined },
+    { id: "scheme", label: "Exam Scheme", shortLabel: "Scheme", icon: Award },
   ];
 
   useEffect(() => {
@@ -1470,12 +1554,12 @@ export function SubjectStudyHub({
   return (
     <section id="study-hub" className="space-y-5">
       {/* ── Sticky tab menu ── */}
-      <div className="sticky top-[61px] z-30 -mx-2 sm:mx-0">
-        <div className="rounded-2xl border border-slate-200/90 bg-white/95 p-1.5 shadow-sm backdrop-blur-md dark:border-gray-800/90 dark:bg-gray-900/95">
+      <div className="sticky top-[57px] z-30 -mx-1 sm:mx-0">
+        <div className="rounded-2xl border border-slate-200/90 bg-white/95 p-1 shadow-sm backdrop-blur-md dark:border-gray-800/90 dark:bg-gray-900/95 sm:p-1.5">
           <div
             role="tablist"
             aria-label={`${subject} study sections`}
-            className="flex items-center gap-1 overflow-x-auto scrollbar-none"
+            className="grid grid-flow-col auto-cols-fr gap-1 sm:flex sm:items-center sm:overflow-x-auto sm:scrollbar-none"
           >
             {tabs.map((item) => {
               const Icon = item.icon;
@@ -1487,21 +1571,35 @@ export function SubjectStudyHub({
                   role="tab"
                   aria-selected={isActive}
                   onClick={() => selectTab(item.id)}
-                  className={`inline-flex shrink-0 items-center gap-1.5 rounded-xl px-3.5 py-2 text-xs font-bold transition ${
+                  className={`flex flex-col items-center justify-center gap-0.5 rounded-xl px-1 py-1.5 text-[10px] font-bold transition sm:inline-flex sm:shrink-0 sm:flex-row sm:gap-1.5 sm:px-3.5 sm:py-2 sm:text-xs ${
                     isActive
                       ? "bg-slate-900 text-white shadow-xs dark:bg-white dark:text-slate-900"
                       : "text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-300 dark:hover:bg-gray-800 dark:hover:text-white"
                   }`}
                 >
-                  <Icon
-                    className={`h-3.5 w-3.5 ${
-                      isActive ? "text-blue-400 dark:text-blue-600" : "text-slate-400"
-                    }`}
-                  />
-                  <span>{item.label}</span>
+                  <div className="flex items-center gap-1">
+                    <Icon
+                      className={`h-3.5 w-3.5 ${
+                        isActive ? "text-blue-400 dark:text-blue-600" : "text-slate-400"
+                      }`}
+                    />
+                    {typeof item.count === "number" && (
+                      <span
+                        className={`rounded-full px-1 py-0 text-[9px] font-bold sm:hidden ${
+                          isActive
+                            ? "bg-white/20 text-white dark:bg-slate-900/15 dark:text-slate-800"
+                            : "bg-slate-100 text-slate-500 dark:bg-gray-800 dark:text-slate-400"
+                        }`}
+                      >
+                        {item.count}
+                      </span>
+                    )}
+                  </div>
+                  <span className="truncate sm:hidden">{item.shortLabel}</span>
+                  <span className="hidden sm:inline">{item.label}</span>
                   {typeof item.count === "number" && (
                     <span
-                      className={`rounded-full px-1.5 py-0.5 text-[10px] font-bold ${
+                      className={`hidden rounded-full px-1.5 py-0.5 text-[10px] font-bold sm:inline-block ${
                         isActive
                           ? "bg-white/15 text-white dark:bg-slate-900/10 dark:text-slate-700"
                           : "bg-slate-100 text-slate-500 dark:bg-gray-800 dark:text-slate-400"
@@ -1565,7 +1663,7 @@ export function SubjectStudyHub({
           type="button"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           aria-label="Scroll back to top"
-          className="fixed bottom-6 right-6 z-40 inline-flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 bg-white/95 text-slate-700 shadow-lg backdrop-blur transition hover:-translate-y-0.5 hover:bg-slate-900 hover:text-white dark:border-gray-700 dark:bg-gray-900/95 dark:text-slate-200 dark:hover:bg-white dark:hover:text-slate-900"
+          className="fixed bottom-4 right-4 z-40 inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white/95 text-slate-700 shadow-lg backdrop-blur transition hover:-translate-y-0.5 hover:bg-slate-900 hover:text-white dark:border-gray-700 dark:bg-gray-900/95 dark:text-slate-200 dark:hover:bg-white dark:hover:text-slate-900 sm:bottom-6 sm:right-6 sm:h-10 sm:w-10"
         >
           <ArrowUp className="h-4 w-4" />
         </button>

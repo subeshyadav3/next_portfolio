@@ -151,7 +151,7 @@ export default async function IoeSubjectPage({ params }: PageProps) {
       {/* ── Subject header ── */}
       <header className="relative overflow-hidden rounded-3xl border border-slate-200/90 bg-white shadow-xs dark:border-gray-800/90 dark:bg-gray-900">
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-transparent dark:from-blue-950/30 dark:via-gray-900 dark:to-gray-900" />
-        <div className="relative p-6 sm:p-8">
+        <div className="relative p-5 sm:p-8">
           <div className="flex flex-wrap items-center gap-2">
             <span className="rounded-lg bg-blue-600 px-3 py-1 font-mono text-xs font-bold text-white shadow-xs shadow-blue-500/20 dark:bg-blue-500">
               {subjectRow.code}
@@ -203,7 +203,7 @@ export default async function IoeSubjectPage({ params }: PageProps) {
           <div className="mt-5 flex flex-wrap gap-2">
             <a
               href="#papers"
-              className="inline-flex items-center gap-1.5 rounded-xl border border-blue-200 bg-blue-50 px-4 py-2 text-xs font-semibold text-blue-700 transition hover:bg-blue-100 dark:border-blue-900/60 dark:bg-blue-950/50 dark:text-blue-300 dark:hover:bg-blue-900/50"
+              className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-xl border border-blue-200 bg-blue-50 px-4 py-2.5 text-xs font-semibold text-blue-700 transition hover:bg-blue-100 dark:border-blue-900/60 dark:bg-blue-950/50 dark:text-blue-300 dark:hover:bg-blue-900/50 sm:flex-none sm:py-2"
             >
               <FileText className="h-3.5 w-3.5" />
               View PDF papers
@@ -212,7 +212,7 @@ export default async function IoeSubjectPage({ params }: PageProps) {
               href={firstPaper.downloadUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 rounded-xl bg-blue-600 px-4 py-2 text-xs font-semibold text-white shadow-xs shadow-blue-500/20 transition hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
+              className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-xl bg-blue-600 px-4 py-2.5 text-xs font-semibold text-white shadow-xs shadow-blue-500/20 transition hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600 sm:flex-none sm:py-2"
             >
               <Download className="h-3.5 w-3.5" />
               Download paper
@@ -222,7 +222,7 @@ export default async function IoeSubjectPage({ params }: PageProps) {
                 href={syllabus.syllabus}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 rounded-xl border border-slate-200 bg-white px-4 py-2 text-xs font-semibold text-slate-700 shadow-xs transition hover:bg-slate-50 dark:border-gray-700 dark:bg-gray-900 dark:text-slate-300 dark:hover:bg-gray-800"
+                className="inline-flex w-full items-center justify-center gap-1.5 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-xs font-semibold text-slate-700 shadow-xs transition hover:bg-slate-50 dark:border-gray-700 dark:bg-gray-900 dark:text-slate-300 dark:hover:bg-gray-800 sm:w-auto sm:py-2"
               >
                 <FileText className="h-3.5 w-3.5 text-blue-500" />
                 Syllabus PDF

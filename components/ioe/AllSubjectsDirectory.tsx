@@ -156,11 +156,11 @@ export function AllSubjectsDirectory({
               </button>
             )}
           </div>
-          <div className="flex flex-wrap gap-1.5">
+          <div className="flex flex-nowrap gap-1.5 overflow-x-auto pb-1 scrollbar-none sm:flex-wrap sm:overflow-visible sm:pb-0">
             <button
               type="button"
               onClick={() => setSelectedDiscipline("all")}
-              className={`rounded-xl px-3 py-1.5 text-xs font-bold transition ${
+              className={`shrink-0 rounded-xl px-3 py-2 text-xs font-bold transition sm:py-1.5 ${
                 selectedDiscipline === "all"
                   ? "bg-slate-900 text-white shadow-xs dark:bg-white dark:text-slate-900"
                   : "border border-slate-200 bg-white text-slate-600 hover:border-slate-300 dark:border-gray-800 dark:bg-gray-900 dark:text-slate-300"
@@ -177,7 +177,7 @@ export function AllSubjectsDirectory({
                   onClick={() =>
                     setSelectedDiscipline(isSelected ? "all" : d.code.toLowerCase())
                   }
-                  className={`flex items-center gap-1.5 rounded-xl px-3 py-1.5 text-xs font-bold transition ${
+                  className={`flex shrink-0 items-center gap-1.5 rounded-xl px-3 py-2 text-xs font-bold transition sm:py-1.5 ${
                     isSelected
                       ? "bg-blue-600 text-white shadow-xs dark:bg-blue-500"
                       : "border border-slate-200 bg-white text-slate-700 hover:border-blue-300 hover:text-blue-600 dark:border-gray-800 dark:bg-gray-900 dark:text-slate-300"
@@ -199,7 +199,7 @@ export function AllSubjectsDirectory({
               onClick={() =>
                 setSelectedDiscipline(selectedDiscipline === "other" ? "all" : "other")
               }
-              className={`rounded-xl px-3 py-1.5 text-xs font-bold transition ${
+              className={`shrink-0 rounded-xl px-3 py-2 text-xs font-bold transition sm:py-1.5 ${
                 selectedDiscipline === "other"
                   ? "bg-amber-600 text-white shadow-xs"
                   : "border border-slate-200 bg-white text-slate-700 hover:border-amber-300 hover:text-amber-700 dark:border-gray-800 dark:bg-gray-900 dark:text-slate-300"
@@ -211,7 +211,7 @@ export function AllSubjectsDirectory({
         </div>
 
         {/* A-Z Letter Jump Pills */}
-        <div className="flex flex-wrap items-center gap-1 pt-1">
+        <div className="flex flex-wrap items-center gap-1.5 pt-1 sm:gap-1">
           <span className="mr-1 text-[11px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">
             Letter:
           </span>
@@ -224,7 +224,7 @@ export function AllSubjectsDirectory({
                 type="button"
                 disabled={!isAvailable}
                 onClick={() => setActiveLetter(isSelected ? null : char)}
-                className={`h-7 w-7 rounded-lg text-xs font-bold transition ${
+                className={`h-8 w-8 rounded-lg text-xs font-bold transition sm:h-7 sm:w-7 ${
                   isSelected
                     ? "bg-blue-600 text-white shadow-xs dark:bg-blue-500"
                     : isAvailable

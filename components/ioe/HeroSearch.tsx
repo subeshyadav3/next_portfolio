@@ -108,7 +108,7 @@ export function HeroSearch({ subjects }: HeroSearchProps) {
 
       {/* Autocomplete Dropdown */}
       {isOpen && query.trim().length > 0 && (
-        <div className="absolute left-0 right-0 top-full z-50 mt-2 max-h-96 overflow-y-auto rounded-2xl border border-slate-200 bg-white p-2 shadow-xl dark:border-gray-800 dark:bg-gray-900">
+        <div className="absolute left-0 right-0 top-full z-50 mt-2 max-h-72 overflow-y-auto rounded-2xl border border-slate-200 bg-white p-2 shadow-xl dark:border-gray-800 dark:bg-gray-900 sm:max-h-96">
           {filtered.length > 0 ? (
             <div className="space-y-1">
               <div className="flex items-center justify-between px-3 py-1.5 text-[11px] font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500">
@@ -174,8 +174,8 @@ export function HeroSearch({ subjects }: HeroSearchProps) {
       )}
 
       {/* Quick Search Chips */}
-      <div className="mt-3 flex flex-wrap items-center justify-center gap-1.5 text-xs text-slate-500 dark:text-slate-400">
-        <span className="inline-flex items-center gap-1 text-[11px] font-medium text-slate-400 dark:text-slate-500">
+      <div className="mt-3 flex flex-nowrap items-center justify-start gap-1.5 overflow-x-auto pb-1 text-xs text-slate-500 scrollbar-none dark:text-slate-400 sm:flex-wrap sm:justify-center sm:overflow-visible sm:pb-0">
+        <span className="inline-flex shrink-0 items-center gap-1 text-[11px] font-medium text-slate-400 dark:text-slate-500">
           <Sparkles className="h-3 w-3 text-blue-500" />
           Popular:
         </span>
@@ -187,7 +187,7 @@ export function HeroSearch({ subjects }: HeroSearchProps) {
               setQuery(tag);
               setIsOpen(true);
             }}
-            className="rounded-lg border border-slate-200 bg-white px-2.5 py-0.5 text-[11px] font-medium text-slate-600 shadow-2xs transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 dark:border-gray-800 dark:bg-gray-900 dark:text-slate-300 dark:hover:border-blue-500 dark:hover:bg-gray-800 dark:hover:text-white"
+            className="shrink-0 rounded-lg border border-slate-200 bg-white px-2.5 py-1 text-[11px] font-medium text-slate-600 shadow-2xs transition hover:border-blue-300 hover:bg-blue-50 hover:text-blue-700 dark:border-gray-800 dark:bg-gray-900 dark:text-slate-300 dark:hover:border-blue-500 dark:hover:bg-gray-800 dark:hover:text-white sm:py-0.5"
           >
             {tag}
           </button>
