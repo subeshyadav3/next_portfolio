@@ -1260,7 +1260,7 @@
         },
         {
           "qNum": 4,
-          "text": "(a) Reflect $a^n$ object $A(0,0,0) , B(2,3,0) , C(5,0,4)$ about the plane $y = 4$ [6]\n(b) Derive the perspective projection for the case that projection reference point is at origin.",
+          "text": "(a) Reflect an object $A(0,0,0) , B(2,3,0) , C(5,0,4)$ about the plane $y = 4$ [6]\n(b) Derive the perspective projection for the case that projection reference point is at origin.",
           "marks": "4",
           "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
           "isDiagram": false
@@ -1281,7 +1281,7 @@
         },
         {
           "qNum": 7,
-          "text": "(a) Derive the composite matrix for rotation of a point about $a^n$ arbitrary pivot position. [6]\n(b) Clip the line $P1,P2$ with $P1(-5,3)$ and $P2(15,9)$ with clip window having diagonal coordinate $(0,0)$ and $(10,10)$ using Liang-Barskey line clipping method.",
+          "text": "(a) Derive the composite matrix for rotation of a point about an arbitrary pivot position. [6]\n(b) Clip the line $P1,P2$ with $P1(-5,3)$ and $P2(15,9)$ with clip window having diagonal coordinate $(0,0)$ and $(10,10)$ using Liang-Barskey line clipping method.",
           "marks": "5",
           "chapter": "Raster Graphics and Algorithms",
           "isDiagram": false
@@ -1295,7 +1295,7 @@
         },
         {
           "qNum": 9,
-          "text": "(a) Explain in detail about illumination model and rendering method. Compute the total intensity for each RGB component for given data: Material coefficients:\n$k_a = (0.1, 0.1, 0.2) , k_d = (0.6, 0.7, 0.8) , k_s = (0.3, 0.4, 0.5) , Shininess$ $n_s = 10$\nLight intensities:\n$I_a = (0.2, 0.2, 0.2) , I_d = (1.0, 1.0, 1.0) , I_s = (1.0, 1.0, 1.0)$\nGiven:\n$\\vec{N} \\cdot \\vec{L} = 0.7$\n$\\vec{V} \\cdot \\vec{R} = 0.6$ [4+4]\n(b) Explain in detail about Gouraud shading model with $a^n$ example. Which one is more realistic Gouraud or Phong shading and why?",
+          "text": "(a) Explain in detail about illumination model and rendering method. Compute the total intensity for each RGB component for given data: Material coefficients:\n$k_a = (0.1, 0.1, 0.2) , k_d = (0.6, 0.7, 0.8) , k_s = (0.3, 0.4, 0.5)$, Shininess $n_s = 10$\nLight intensities:\n$I_a = (0.2, 0.2, 0.2) , I_d = (1.0, 1.0, 1.0) , I_s = (1.0, 1.0, 1.0)$\nGiven:\n$\\vec{N} \\cdot \\vec{L} = 0.7$\n$\\vec{V} \\cdot \\vec{R} = 0.6$ [4+4]\n(b) Explain in detail about Gouraud shading model with an example. Which one is more realistic Gouraud or Phong shading and why?",
           "marks": "4",
           "chapter": "Illumination and Surface Rendering Methods",
           "isDiagram": false
@@ -1332,7 +1332,7 @@
         },
         {
           "qNum": 4,
-          "text": "Explain key components of a virtual reality system in brief. Write down $a^n$ application of AR system.",
+          "text": "Explain key components of a virtual reality system in brief. Write down an application of AR system.",
           "marks": "5",
           "chapter": "Latest Trends in Computer Graphics",
           "isDiagram": false
@@ -1390,14 +1390,14 @@
         },
         {
           "qNum": 3,
-          "text": "Write $a^n$ algorithm for drawing a line using DDA. Draw $a^n$ ellipse with major and minor axis values 8 and 6 respectively which is centered at origin. (for first quadrant only).",
+          "text": "Write an algorithm for drawing a line using DDA. Draw an ellipse with major and minor axis values 8 and 6 respectively which is centered at origin. (for first quadrant only).",
           "marks": "5",
           "chapter": "Raster Graphics and Algorithms",
           "isDiagram": false
         },
         {
           "qNum": 4,
-          "text": "(a) An object is translated by $(5, -3) , then$ rotated $90^\\circ$ clockwise, and then scaled by $(2, 0.5)$. Find the inverse transformation matrix and apply it to the point $(10, 5)$ to get the original point before transformation. [5]\n(b) Explain Liang-Barsky line clipping algorithm.",
+          "text": "(a) An object is translated by $(5, -3)$, then rotated $90^\\circ$ clockwise, and then scaled by $(2, 0.5)$. Find the inverse transformation matrix and apply it to the point $(10, 5)$ to get the original point before transformation. [5]\n(b) Explain Liang-Barsky line clipping algorithm.",
           "marks": "5",
           "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
           "isDiagram": false
@@ -1504,7 +1504,7 @@
         },
         {
           "qNum": 5,
-          "text": "Write the matrix for rotation of a point about $a^n$ arbitrary pivot position. Transform the isosceles triangle $A(0, 0)$ $B(1, 1)$ and $C(2, 0)$ to right angle triangle. Use Liang-Barsky clipping method to clip a line starting from $A(10, 10)$ and ending at $B(60, 30)$ against the window having its lower corner at $(15, 15)$ and upper right corner at $(25, 25)$.",
+          "text": "Write the matrix for rotation of a point about an arbitrary pivot position. Transform the isosceles triangle $A(0, 0)$ $B(1, 1)$ and $C(2, 0)$ to right angle triangle. Use Liang-Barsky clipping method to clip a line starting from $A(10, 10)$ and ending at $B(60, 30)$ against the window having its lower corner at $(15, 15)$ and upper right corner at $(25, 25)$.",
           "marks": "2",
           "chapter": "Raster Graphics and Algorithms",
           "isDiagram": false
@@ -1555,7 +1555,7 @@
         },
         {
           "qNum": 2,
-          "text": "(a) Suppose there is a rectangle whose coordinates are A(1,1), B(4,1), C(4,4), D(1,4) and the window coordinates are (2,2), (5,2), (5,5), (2,5) and the given viewport location is (0.5,0), (1,0), (1,0.5) , (0.5,0.5). Calculate the viewing transformation. [4]\n(b) Write the steps required to rotate $a^n$ object in 3D about arbitrary axis. Explain about the perspective projection. [5]\n(c) Differentiate between Parallel Projection and Oblique Projection.",
+          "text": "(a) Suppose there is a rectangle whose coordinates are A(1,1), B(4,1), C(4,4), D(1,4) and the window coordinates are (2,2), (5,2), (5,5), (2,5) and the given viewport location is (0.5,0), (1,0), (1,0.5) , (0.5,0.5). Calculate the viewing transformation. [4]\n(b) Write the steps required to rotate an object in 3D about arbitrary axis. Explain about the perspective projection. [5]\n(c) Differentiate between Parallel Projection and Oblique Projection.",
           "marks": "3",
           "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
           "isDiagram": false
@@ -1662,7 +1662,7 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "How does a raster display system generate images on a screen? If the total number of intensities achievable out of a single pixel on the screen is 1024 and total resolution is $1024 \\times 800 , what$ is will be the required size of frame buffer incase of display purpose?",
+          "text": "How does a raster display system generate images on a screen? If the total number of intensities achievable out of a single pixel on the screen is 1024 and total resolution is $1024 \\times 800$, what is will be the required size of frame buffer incase of display purpose?",
           "marks": "2",
           "chapter": "Introduction and Application",
           "isDiagram": false
@@ -1711,14 +1711,14 @@
         },
         {
           "qNum": 8,
-          "text": "Clip the line with end point A $(5, 30) , B$$(20, 60)$ Against a clip window with lower most corner at P $(10, 10)$ and upper right most corner at R $(100, 100)$ using cohen sulter land line clipping algorithms.",
+          "text": "Clip the line with end point A $(5, 30)$, B $(20, 60)$ Against a clip window with lower most corner at P $(10, 10)$ and upper right most corner at R $(100, 100)$ using cohen sulter land line clipping algorithms.",
           "marks": "4",
           "chapter": "Raster Graphics and Algorithms",
           "isDiagram": false
         },
         {
           "qNum": 9,
-          "text": "Construct the Bezier curver of order 3 and with polygon vertices A $(1, 1) , B$$(2, 3) , C$$(4, 3)$ and D$(6, 4)$ at $u =0, 0.25, 0.5, 0.75, 1$. Derive the blending function for parametric cubic curve.",
+          "text": "Construct the Bezier curver of order 3 and with polygon vertices A $(1, 1)$, B $(2, 3)$, C $(4, 3)$ and D$(6, 4)$ at $u =0, 0.25, 0.5, 0.75, 1$. Derive the blending function for parametric cubic curve.",
           "marks": "4",
           "chapter": "Curve Modeling and Surface Modelling",
           "isDiagram": false
@@ -1904,7 +1904,7 @@
         },
         {
           "qNum": 2,
-          "text": "Derive $a^n$ expression for drawing on ellipse.",
+          "text": "Derive an expression for drawing on ellipse.",
           "marks": "10",
           "chapter": "Raster Graphics and Algorithms",
           "isDiagram": false
@@ -1932,7 +1932,7 @@
         },
         {
           "qNum": 6,
-          "text": "How do you represent $a^n$ object in $3D^2$ Explain the steps to find surface normal vector of a surface represented by $Ax + By + Cz + D = 0$.",
+          "text": "How do you represent an object in $3D^2$ Explain the steps to find surface normal vector of a surface represented by $Ax + By + Cz + D = 0$.",
           "marks": "4",
           "chapter": "Curve Modeling and Surface Modelling",
           "isDiagram": false
@@ -2090,7 +2090,7 @@
         },
         {
           "qNum": 2,
-          "text": "Write $a^n$ algorithm for Bresenham's method of line drawing. Digitize a line with end points $(10, 20)$ and $(15, 2)$ using this algorithm.",
+          "text": "Write an algorithm for Bresenham's method of line drawing. Digitize a line with end points $(10, 20)$ and $(15, 2)$ using this algorithm.",
           "marks": "5",
           "chapter": "Raster Graphics and Algorithms",
           "isDiagram": false
@@ -2111,7 +2111,7 @@
         },
         {
           "qNum": 5,
-          "text": "How back-face detection method is used to detect visible surfaces? What are it's limitation? Purpose $a^n$ approach to overcome it's limitations.",
+          "text": "How back-face detection method is used to detect visible surfaces? What are it's limitation? Purpose an approach to overcome it's limitations.",
           "marks": "4",
           "chapter": "Visible Surface Determination",
           "isDiagram": false
@@ -2139,7 +2139,7 @@
         },
         {
           "qNum": 9,
-          "text": "Derive $a^n$ expression for phong illumination model for light sources.",
+          "text": "Derive an expression for phong illumination model for light sources.",
           "marks": "8",
           "chapter": "Illumination and Surface Rendering Methods",
           "isDiagram": false
@@ -2169,7 +2169,7 @@
         },
         {
           "qNum": 2,
-          "text": "Write $a^n$ algorithm for drawing a circle. Using midpoint circle drawing algorithm, calculate the coordinates on the first quadrant of a circle having radius 8 and centre $(10, 10)$.",
+          "text": "Write an algorithm for drawing a circle. Using midpoint circle drawing algorithm, calculate the coordinates on the first quadrant of a circle having radius 8 and centre $(10, 10)$.",
           "marks": "4",
           "chapter": "Raster Graphics and Algorithms",
           "isDiagram": false
@@ -2269,7 +2269,7 @@
         },
         {
           "qNum": 5,
-          "text": "Derive the composite matrix for rotation about arbitrary point $(a, b)$ in clockwise direction with angle $(\\theta)$. Write $a^n$ algorithm for Cohen Sutherland line clipping algorithm.",
+          "text": "Derive the composite matrix for rotation about arbitrary point $(a, b)$ in clockwise direction with angle $(\\theta)$. Write an algorithm for Cohen Sutherland line clipping algorithm.",
           "marks": "6",
           "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
           "isDiagram": false
@@ -2355,7 +2355,7 @@
         },
         {
           "qNum": 5,
-          "text": "Derive $a^n$ expression for Perspective projection of a 3D point. Also, obtain perspective projection co-ordinates for the pyramid with vertices of base $(15, 15, 10) , (20, 20, 10) , (25, 15, 10) , (20, 10, 10)$ and apex $(20, 15, 20)$ given that $z_{prp} = 20$ and $z_{vp} = 0$.",
+          "text": "Derive an expression for Perspective projection of a 3D point. Also, obtain perspective projection co-ordinates for the pyramid with vertices of base $(15, 15, 10) , (20, 20, 10) , (25, 15, 10) , (20, 10, 10)$ and apex $(20, 15, 20)$ given that $z_{prp} = 20$ and $z_{vp} = 0$.",
           "marks": "5",
           "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
           "isDiagram": false
@@ -2413,7 +2413,7 @@
         },
         {
           "qNum": 2,
-          "text": "List down the steps for rotating a 3D object by $90^\\circ$ in counter clockwise direction about $a^n$ axis joining end points (1,2,3) and (10,20,30). Also derive the final transformation matrix.",
+          "text": "List down the steps for rotating a 3D object by $90^\\circ$ in counter clockwise direction about an axis joining end points (1,2,3) and (10,20,30). Also derive the final transformation matrix.",
           "marks": "10",
           "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
           "isDiagram": false
@@ -2441,14 +2441,14 @@
         },
         {
           "qNum": 6,
-          "text": "Differentiate between raster and vector graphics. Calculate the frame buffer size (in KB) for a raster system recording a video for 1 min with resolution of $1280 \\times 1024 , and$ storing 24 bits per pixel with a refresh rate of 25 fps.",
+          "text": "Differentiate between raster and vector graphics. Calculate the frame buffer size (in KB) for a raster system recording a video for 1 min with resolution of $1280 \\times 1024$, and storing 24 bits per pixel with a refresh rate of 25 fps.",
           "marks": "2",
           "chapter": "Introduction and Application",
           "isDiagram": false
         },
         {
           "qNum": 7,
-          "text": "What do you mean by homogeneous coordinates? Rotate a triangle A(5,6), B(6,2) and C(4,1) by 45 degree about $a^n$ arbitrary pivot point (3,3).",
+          "text": "What do you mean by homogeneous coordinates? Rotate a triangle A(5,6), B(6,2) and C(4,1) by 45 degree about an arbitrary pivot point (3,3).",
           "marks": "2",
           "chapter": "Raster Graphics and Algorithms",
           "isDiagram": false
@@ -2534,7 +2534,7 @@
         },
         {
           "qNum": 10,
-          "text": "Write down $a^n$ algorithm for intensity interpolation shading scheme.",
+          "text": "Write down an algorithm for intensity interpolation shading scheme.",
           "marks": "7",
           "chapter": "Illumination and Surface Rendering Methods",
           "isDiagram": false
@@ -2585,14 +2585,14 @@
       "questions": [
         {
           "qNum": 1,
-          "text": "Develop the Matrix to transform $a^n$ object from Three-Dimensional World Coordinate to Viewing Coordinate system. A unit length cube with diagonal passing through $(0, 0, 0)$ and $(2, 2, 2)$ is shared with respect to ZX-plane with share Constants = 3 in both directions. Obtain the final coordinates of the cube after shearing.",
+          "text": "Develop the Matrix to transform an object from Three-Dimensional World Coordinate to Viewing Coordinate system. A unit length cube with diagonal passing through $(0, 0, 0)$ and $(2, 2, 2)$ is shared with respect to ZX-plane with share Constants = 3 in both directions. Obtain the final coordinates of the cube after shearing.",
           "marks": "5",
           "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
           "isDiagram": false
         },
         {
           "qNum": 2,
-          "text": "Do you agree Polygon Descriptions are referred to as \"Standard Graphics Object\", If yes, Why? If you have three coordinates $(X_1, Y_1, Z_1) , (X_2, Y_2, Z_2)$ and $(X_3, Y_3, Z_3) , then$ how do you find the coefficient of Surface Normal $N(A, B, C)$?",
+          "text": "Do you agree Polygon Descriptions are referred to as \"Standard Graphics Object\", If yes, Why? If you have three coordinates $(X_1, Y_1, Z_1) , (X_2, Y_2, Z_2)$ and $(X_3, Y_3, Z_3)$, then how do you find the coefficient of Surface Normal $N(A, B, C)$?",
           "marks": "3",
           "chapter": "Curve Modeling and Surface Modelling",
           "isDiagram": false
@@ -2664,7 +2664,7 @@
         },
         {
           "qNum": 2,
-          "text": "What do you understand by raster display technology? Suppose a RGB raster system is to be designed using $a^n$ 8 inch by 10 inch screen with a resolution of 100 pixels per inch in each direction. How long would it take to load this raster system in frame buffer with 24 bits per pixel, if $10^5$ bits can be transferred per second?",
+          "text": "What do you understand by raster display technology? Suppose a RGB raster system is to be designed using an 8 inch by 10 inch screen with a resolution of 100 pixels per inch in each direction. How long would it take to load this raster system in frame buffer with 24 bits per pixel, if $10^5$ bits can be transferred per second?",
           "marks": "6",
           "chapter": "Introduction and Application",
           "isDiagram": false
@@ -2678,7 +2678,7 @@
         },
         {
           "qNum": 4,
-          "text": "Explain Sutherland-Cohen clipping algorithm with $a^n$ example.",
+          "text": "Explain Sutherland-Cohen clipping algorithm with an example.",
           "marks": "8",
           "chapter": "Raster Graphics and Algorithms",
           "isDiagram": false
@@ -2792,7 +2792,7 @@
         },
         {
           "qNum": 2,
-          "text": "Explain the steps required to rotate $a^n$ object in 3D about a line which is not parallel to any one coordinate axis.",
+          "text": "Explain the steps required to rotate an object in 3D about a line which is not parallel to any one coordinate axis.",
           "marks": "10",
           "chapter": "2D and 3D Coordinate Systems and Viewing Transformations",
           "isDiagram": false
@@ -3257,7 +3257,7 @@
         },
         {
           "qNum": 9,
-          "text": "Define the terms: [10]\\n(i) Ambient light\\n(ii) Lambert cosine law\\n(iii) Diffuse reflection\\n(iv) Specular reflection\nAlso find equation for intensity of point by using Phong illumination model.",
+          "text": "Define the terms: [10]\n(i) Ambient light\n(ii) Lambert cosine law\n(iii) Diffuse reflection\n(iv) Specular reflection\nAlso find equation for intensity of point by using Phong illumination model.",
           "marks": "4",
           "chapter": "Illumination and Surface Rendering Methods",
           "isDiagram": false

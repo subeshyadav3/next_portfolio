@@ -2,18 +2,23 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { IOE_ENABLED, IOE_SEMESTERS } from "@/lib/ioe/config";
 import {
+  findCatalogSubject,
   getAllPrograms,
   getProgram,
   getSemesterSubjects,
   getSubjectPrimaryPath,
+  getSyllabusForSubject,
 } from "@/lib/ioe/data";
+import { hasQuestionBankForSubject } from "@/lib/ioe/server-helpers";
 import { SubjectCard } from "@/components/ioe/SubjectCard";
 import { buildIoeMetadata, breadcrumbLd, jsonLd, collectionLd } from "@/lib/ioe/seo";
-import { ChevronRight } from "lucide-react";
+import { ArrowLeft, ArrowRight, ChevronRight } from "lucide-react";
 
 interface PageProps {
   params: Promise<{ program: string; semester: string }>;
 }
+
+export const dynamicParams = false;
 
 export function generateStaticParams() {
   if (!IOE_ENABLED) return [];
@@ -52,6 +57,15 @@ export default async function IoeSemesterPage({ params }: PageProps) {
 
   const subjects = getSemesterSubjects(program, semester);
   const activeSemesters = IOE_SEMESTERS.filter((s) => s in program.semesters);
+  const currentSemIdx = activeSemesters.indexOf(semester);
+  const prevSem = currentSemIdx > 0 ? activeSemesters[currentSemIdx - 1] : null;
+  const nextSem =
+    currentSemIdx !== -1 && currentSemIdx < activeSemesters.length - 1
+      ? activeSemesters[currentSemIdx + 1]
+      : null;
+
+  const pyqCount = subjects.filter((s) => hasQuestionBankForSubject(s.title)).length;
+  const paperSubjectsCount = subjects.filter((s) => Boolean(findCatalogSubject(s.title))).length;
 
   const breadcrumb = breadcrumbLd([
     { name: "Home", path: "/" },
@@ -77,11 +91,14 @@ export default async function IoeSemesterPage({ params }: PageProps) {
 
       {/* Breadcrumb */}
       <nav className="flex items-center gap-1.5 text-xs font-medium text-slate-500 dark:text-slate-400">
-        <Link href="/ioe" className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+        <Link href="/ioe" className="transition-colors hover:text-blue-600 dark:hover:text-blue-400">
           IOE
         </Link>
         <ChevronRight className="h-3.5 w-3.5 text-slate-400" />
-        <Link href={`/ioe/${program.slug}`} className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+        <Link
+          href={`/ioe/${program.slug}`}
+          className="transition-colors hover:text-blue-600 dark:hover:text-blue-400"
+        >
           {program.name}
         </Link>
         <ChevronRight className="h-3.5 w-3.5 text-slate-400" />
@@ -89,42 +106,49 @@ export default async function IoeSemesterPage({ params }: PageProps) {
       </nav>
 
       {/* Semester Header */}
-      <header className="rounded-3xl border border-slate-200/90 bg-white p-6 shadow-xs transition-colors dark:border-gray-800/90 dark:bg-gray-900 sm:p-8">
-        <div className="flex flex-wrap items-center gap-2.5">
-          <span className="rounded-lg bg-blue-600 px-3 py-1 font-mono text-xs font-bold text-white shadow-xs shadow-blue-500/20 dark:bg-blue-500">
-            {program.code}
-          </span>
-          <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600 dark:bg-gray-800 dark:text-slate-300">
-            {program.name}
-          </span>
-        </div>
-
-        <h1 className="mt-4 text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
-          Semester {semester} Subjects
-        </h1>
-        <p className="mt-2 max-w-3xl text-sm text-slate-600 dark:text-slate-400">
-          Curriculum subjects for {program.fullName} Semester {semester}. Click on any subject to study past question papers and chapter-wise questions.
-        </p>
-
-        {/* Quick Semester Switcher Bar */}
-        <div className="mt-6 border-t border-slate-100 pt-4 dark:border-gray-800/80">
+      <header className="relative overflow-hidden rounded-3xl border border-slate-200/90 bg-white p-6 shadow-xs transition-colors dark:border-gray-800/90 dark:bg-gray-900 sm:p-8">
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-blue-50/70 via-white to-transparent dark:from-blue-950/25 dark:via-gray-900 dark:to-gray-900" />
+        <div className="relative">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-500 mr-1">
-              Jump Semester:
+            <span className="rounded-lg bg-blue-600 px-3 py-1 font-mono text-xs font-bold text-white shadow-xs shadow-blue-500/20 dark:bg-blue-500">
+              {program.code}
             </span>
-            {activeSemesters.map((s) => (
-              <Link
-                key={s}
-                href={`/ioe/${program.slug}/semester/${s}`}
-                className={`rounded-lg px-3 py-1 text-xs font-semibold transition ${
-                  s === semester
-                    ? "bg-blue-600 text-white shadow-xs shadow-blue-500/20 dark:bg-blue-500"
-                    : "bg-slate-100 text-slate-600 hover:bg-slate-200 hover:text-slate-900 dark:bg-gray-800 dark:text-slate-300 dark:hover:bg-gray-700 dark:hover:text-white"
-                }`}
-              >
-                Sem {s}
-              </Link>
-            ))}
+            <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-medium text-slate-600 dark:bg-gray-800 dark:text-slate-300">
+              {program.name}
+            </span>
+            <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300">
+              {paperSubjectsCount} with PDFs · {pyqCount} with PYQ Banks
+            </span>
+          </div>
+
+          <h1 className="mt-4 text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
+            Semester {semester} Subjects
+          </h1>
+          <p className="mt-2 max-w-3xl text-sm text-slate-600 dark:text-slate-400">
+            Curriculum subjects for {program.fullName} Semester {semester}. Open any subject hub for
+            chapter-wise questions, year-wise papers, PDFs, and official syllabus topics.
+          </p>
+
+          {/* Quick Semester Switcher Bar */}
+          <div className="mt-6 border-t border-slate-100 pt-4 dark:border-gray-800/80">
+            <div className="flex flex-wrap items-center gap-1.5">
+              <span className="mr-1 text-[11px] font-bold uppercase tracking-wider text-slate-400 dark:text-slate-500">
+                Semester:
+              </span>
+              {activeSemesters.map((s) => (
+                <Link
+                  key={s}
+                  href={`/ioe/${program.slug}/semester/${s}`}
+                  className={`rounded-lg px-3 py-1.5 font-mono text-xs font-bold transition ${
+                    s === semester
+                      ? "bg-slate-900 text-white shadow-xs dark:bg-white dark:text-slate-900"
+                      : "bg-slate-100 text-slate-600 hover:bg-slate-200 hover:text-slate-900 dark:bg-gray-800 dark:text-slate-300 dark:hover:bg-gray-700 dark:hover:text-white"
+                  }`}
+                >
+                  Sem {s}
+                </Link>
+              ))}
+            </div>
           </div>
         </div>
       </header>
@@ -136,7 +160,7 @@ export default async function IoeSemesterPage({ params }: PageProps) {
             Subjects ({subjects.length})
           </h2>
           <span className="text-xs text-slate-400 dark:text-slate-500">
-            Select a subject to view paper PDFs
+            Select a subject to open its study hub
           </span>
         </div>
 
@@ -147,10 +171,42 @@ export default async function IoeSemesterPage({ params }: PageProps) {
               program={program}
               semester={semester}
               subject={subject}
+              hasQuestionBank={hasQuestionBankForSubject(subject.title)}
+              hasSyllabus={Boolean(getSyllabusForSubject(subject.title))}
             />
           ))}
         </div>
       </section>
+
+      {/* Prev / Next Semester Footer */}
+      {(prevSem || nextSem) && (
+        <nav
+          aria-label="Semester navigation"
+          className="flex items-center justify-between gap-3 border-t border-slate-200/80 pt-6 dark:border-gray-800"
+        >
+          {prevSem ? (
+            <Link
+              href={`/ioe/${program.slug}/semester/${prevSem}`}
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-xs font-semibold text-slate-700 shadow-xs transition hover:border-blue-300 hover:text-blue-600 dark:border-gray-800 dark:bg-gray-900 dark:text-slate-200 dark:hover:border-blue-500/50"
+            >
+              <ArrowLeft className="h-3.5 w-3.5" />
+              Semester {prevSem}
+            </Link>
+          ) : (
+            <span />
+          )}
+
+          {nextSem && (
+            <Link
+              href={`/ioe/${program.slug}/semester/${nextSem}`}
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-4 py-2.5 text-xs font-semibold text-slate-700 shadow-xs transition hover:border-blue-300 hover:text-blue-600 dark:border-gray-800 dark:bg-gray-900 dark:text-slate-200 dark:hover:border-blue-500/50"
+            >
+              Semester {nextSem}
+              <ArrowRight className="h-3.5 w-3.5" />
+            </Link>
+          )}
+        </nav>
+      )}
     </div>
   );
 }

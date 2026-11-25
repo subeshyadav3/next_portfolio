@@ -85,7 +85,8 @@ export function PdfOverlay({
     ? `${subjectTitle ? `${subjectTitle} — ` : ""}${currentPaper.file}`
     : title ?? "PDF Document";
 
-  const currentDownloadUrl = currentPaper?.downloadUrl ?? downloadUrl ?? src;
+  const currentDownloadUrl = currentPaper?.downloadUrl ?? downloadUrl;
+  const canShowDownload = Boolean(downloadUrl);
   const currentDriveId = currentPaper?.id;
 
   // Choose the best embed URL
@@ -383,7 +384,7 @@ export function PdfOverlay({
             )}
 
             {/* Download PDF */}
-            {currentDownloadUrl && (
+            {canShowDownload && currentDownloadUrl && (
               <a
                 href={currentDownloadUrl}
                 target="_blank"

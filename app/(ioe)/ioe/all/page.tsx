@@ -2,15 +2,18 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { IOE_ENABLED } from "@/lib/ioe/config";
 import {
-  getCatalogs,
   getAllPrograms,
-  getSubjectPrograms,
+  getCatalogs,
   getSubjectPrimaryPath,
-  isSubjectPublic,
+  getSubjectPrograms,
 } from "@/lib/ioe/data";
+import { countSubjectsWithQuestionBank, hasQuestionBankForSubject } from "@/lib/ioe/server-helpers";
 import { buildIoeMetadata, collectionLd, jsonLd } from "@/lib/ioe/seo";
-import { SubjectFilter } from "@/components/ioe/SubjectFilter";
-import { ChevronRight, ArrowRight, FileText, Sparkles } from "lucide-react";
+import {
+  AllSubjectsDirectory,
+  type DirectorySubjectItem,
+} from "@/components/ioe/AllSubjectsDirectory";
+import { ChevronRight } from "lucide-react";
 
 export const metadata = buildIoeMetadata({
   title: "All IOE Engineering Subjects A–Z | Past Question Papers & Syllabus PDF",
@@ -37,20 +40,22 @@ export default function IoeAllSubjectsPage() {
 
   const subjects = getCatalogs().sort((a, b) => a.name.localeCompare(b.name));
   const totalPapers = subjects.reduce((n, s) => n + s.papers.length, 0);
+  const pyqCount = countSubjectsWithQuestionBank();
 
-  // Group by first letter
-  const grouped: Record<string, typeof subjects> = {};
-  for (const subject of subjects) {
-    const letter = subject.name[0]?.toUpperCase() ?? "#";
-    if (!grouped[letter]) grouped[letter] = [];
-    grouped[letter].push(subject);
-  }
+  const directoryItems: DirectorySubjectItem[] = subjects.map((subject) => ({
+    name: subject.name,
+    primaryPath: getSubjectPrimaryPath(subject.name),
+    papersCount: subject.papers.length,
+    hasQuestionBank: hasQuestionBankForSubject(subject.name),
+    programs: getSubjectPrograms(subject.name).map((p) => ({
+      code: p.code,
+      semester: p.semester,
+    })),
+  }));
 
-  const availableLetters = Object.keys(grouped).sort();
-
-  const items = subjects.map((s) => ({
+  const ldItems = directoryItems.map((s) => ({
     name: s.name,
-    path: getSubjectPrimaryPath(s.name),
+    path: s.primaryPath,
   }));
 
   return (
@@ -61,9 +66,9 @@ export default function IoeAllSubjectsPage() {
           __html: jsonLd(
             collectionLd(
               "All IOE Subjects",
-              "Every IOE subject with past question papers in the archive across all 12 engineering disciplines.",
+              "Every IOE subject with past question papers in the archive across all engineering disciplines.",
               "/ioe/all",
-              items
+              ldItems
             )
           ),
         }}
@@ -82,24 +87,13 @@ export default function IoeAllSubjectsPage() {
       </nav>
 
       {/* ── Header ── */}
-      <header className="relative overflow-hidden rounded-3xl border border-slate-200 bg-white p-6 shadow-xs dark:border-gray-800 dark:bg-gray-900 sm:p-8">
-        {/* Texture */}
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute inset-0 opacity-[0.025]"
-          style={{
-            backgroundImage: "radial-gradient(circle at 1px 1px, #94a3b8 1px, transparent 0)",
-            backgroundSize: "20px 20px",
-          }}
-        />
+      <header className="relative overflow-hidden rounded-3xl border border-slate-200/90 bg-white p-6 shadow-xs dark:border-gray-800/90 dark:bg-gray-900 sm:p-8">
+        <div className="pointer-events-none absolute inset-0 bg-gradient-to-br from-blue-50/70 via-white to-transparent dark:from-blue-950/25 dark:via-gray-900 dark:to-gray-900" />
 
         <div className="relative">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="rounded-lg bg-blue-600 px-3 py-1 font-mono text-xs font-bold text-white shadow-sm shadow-blue-500/20 dark:bg-blue-500">
+            <span className="rounded-lg bg-blue-600 px-3 py-1 font-mono text-xs font-bold text-white shadow-xs dark:bg-blue-500">
               A–Z Directory
-            </span>
-            <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600 dark:bg-gray-800 dark:text-slate-300">
-              {disciplines.length} Disciplines
             </span>
             <span className="rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600 dark:bg-gray-800 dark:text-slate-300">
               {subjects.length} Subjects
@@ -107,121 +101,22 @@ export default function IoeAllSubjectsPage() {
             <span className="rounded-full bg-emerald-50 px-3 py-1 text-xs font-semibold text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300">
               {totalPapers} Exam Papers
             </span>
+            <span className="rounded-full bg-amber-50 px-3 py-1 text-xs font-semibold text-amber-700 dark:bg-amber-950/60 dark:text-amber-300">
+              {pyqCount} PYQ Question Banks
+            </span>
           </div>
 
           <h1 className="mt-4 text-2xl font-extrabold tracking-tight text-slate-900 dark:text-white sm:text-4xl">
             All IOE Subjects A–Z
           </h1>
           <p className="mt-2 max-w-3xl text-sm leading-relaxed text-slate-600 dark:text-slate-400">
-            Complete archive of all IOE curriculum subjects with past question papers,
-            chapter-wise question banks, and PDF downloads across Civil, Computer, Electronics,
-            Electrical, Mechanical, Chemical, and other engineering disciplines.
+            Complete archive of IOE curriculum subjects with past question papers, chapter-wise
+            question banks, year-wise papers, and PDF downloads across all engineering disciplines.
           </p>
-
-          {/* Interactive Filter */}
-          <div className="mt-6">
-            <SubjectFilter availableLetters={availableLetters} disciplines={disciplines} />
-            <div
-              id="filtered-subject-count"
-              className="mt-2 min-h-[1rem] text-xs font-semibold text-blue-600 dark:text-blue-400"
-            />
-          </div>
         </div>
       </header>
 
-      {/* ── Alphabetical Sections ── */}
-      <div className="space-y-10">
-        {availableLetters.map((letter) => {
-          const list = grouped[letter];
-          return (
-            <section key={letter} data-letter-section={letter} className="space-y-3">
-              {/* Letter heading */}
-              <div className="flex items-center gap-3 border-b border-slate-200/80 pb-2 dark:border-gray-800">
-                <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-blue-600 font-mono text-sm font-extrabold text-white shadow-sm shadow-blue-500/20 dark:bg-blue-500">
-                  {letter}
-                </span>
-                <span className="text-xs font-medium text-slate-400 dark:text-slate-500">
-                  {list.length} {list.length === 1 ? "subject" : "subjects"}
-                </span>
-              </div>
-
-              <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
-                {list.map((subject) => {
-                  const subjectProgs = getSubjectPrograms(subject.name);
-                  const dataPrograms = subjectProgs.map((p) => p.code.toLowerCase()).join(",");
-                  const primaryPath = getSubjectPrimaryPath(subject.name);
-                  const hasQuestions = isSubjectPublic(subject.name) && subject.papers.length > 0;
-
-                  return hasQuestions ? <Link
-                      key={subject.name}
-                      data-subject-link
-                      data-subject-name={subject.name}
-                      data-programs={dataPrograms}
-                      href={primaryPath}
-                      className="group flex flex-col justify-between rounded-2xl border border-slate-200/90 bg-white p-4 shadow-xs transition-all duration-200 hover:-translate-y-0.5 hover:border-blue-300 hover:shadow-md dark:border-gray-800/90 dark:bg-gray-900 dark:hover:border-blue-500/50"
-                    >
-                      <div>
-                        {/* Program & Semester Badges */}
-                        {subjectProgs.length > 0 && (
-                          <div className="mb-2 flex flex-wrap items-center gap-1">
-                            {subjectProgs.slice(0, 3).map((p) => (
-                              <span
-                                key={`${p.code}-${p.semester}`}
-                                className="rounded-md bg-blue-50 px-1.5 py-0.5 font-mono text-[10px] font-bold text-blue-700 dark:bg-blue-950/60 dark:text-blue-300"
-                              >
-                                {p.code} S{p.semester}
-                              </span>
-                            ))}
-                            {subjectProgs.length > 3 && (
-                              <span className="text-[10px] font-medium text-slate-400">
-                                +{subjectProgs.length - 3} more
-                              </span>
-                            )}
-                          </div>
-                        )}
-
-                        <span className="block text-sm font-semibold leading-snug text-slate-900 transition-colors group-hover:text-blue-600 dark:text-slate-100 dark:group-hover:text-blue-400">
-                          {subject.name}
-                        </span>
-                      </div>
-
-                      <div className="mt-3 flex items-center justify-between border-t border-slate-100 pt-2.5 dark:border-gray-800/80">
-                        <div className="flex items-center gap-2">
-                          <span className="flex items-center gap-1 text-[11px] text-slate-400 dark:text-slate-500">
-                            <FileText className="h-3 w-3" />
-                            {subject.papers.length}{" "}
-                            {subject.papers.length === 1 ? "paper" : "papers"}
-                          </span>
-                          {hasQuestions && (
-                            <span className="flex items-center gap-0.5 rounded-full bg-emerald-50 px-1.5 py-0.2 font-mono text-[10px] font-semibold text-emerald-700 dark:bg-emerald-950/60 dark:text-emerald-300">
-                              <Sparkles className="h-2.5 w-2.5" />
-                              PYQ Bank
-                            </span>
-                          )}
-                        </div>
-                        <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-lg bg-slate-100 text-slate-400 transition-colors group-hover:bg-blue-50 group-hover:text-blue-600 dark:bg-gray-800 dark:text-slate-500 dark:group-hover:bg-blue-950/60 dark:group-hover:text-blue-400">
-                          <ArrowRight className="h-3 w-3" />
-                        </span>
-                      </div>
-                    </Link> : <div
-                      data-subject-link
-                      data-subject-name={subject.name}
-                      data-programs={dataPrograms}
-                      className="group flex flex-col justify-between rounded-2xl border border-slate-200/90 bg-white p-4 opacity-60 shadow-xs dark:border-gray-800/90 dark:bg-gray-900"
-                    >
-                      <span className="block text-sm font-semibold leading-snug text-slate-900 dark:text-slate-100">
-                        {subject.name}
-                      </span>
-                      <span className="mt-3 border-t border-slate-100 pt-2.5 text-[11px] text-slate-400 dark:border-gray-800/80 dark:text-slate-500">
-                        Syllabus listed; papers are not available yet.
-                      </span>
-                    </div>;
-                })}
-              </div>
-            </section>
-          );
-        })}
-      </div>
+      <AllSubjectsDirectory subjects={directoryItems} disciplines={disciplines} />
     </div>
   );
 }

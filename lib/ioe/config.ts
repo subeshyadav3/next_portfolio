@@ -14,6 +14,12 @@ export const IOE_ENABLED = process.env.IOE_ENABLED === "true";
  */
 export const IOE_UI_VISIBLE = process.env.NEXT_PUBLIC_IOE_ENABLED === "true";
 
+/**
+ * Toggle direct PDF download buttons across /ioe.
+ * Set NEXT_PUBLIC_IOE_DOWNLOADS="false" to keep users studying inside the in-site hub.
+ */
+export const IOE_DOWNLOADS_ENABLED = process.env.NEXT_PUBLIC_IOE_DOWNLOADS !== "false";
+
 export const IOE_SEMESTERS = ["1", "2", "3", "4", "5", "6", "7", "8"];
 
 export const IOE_DRIVE_SOURCE =
