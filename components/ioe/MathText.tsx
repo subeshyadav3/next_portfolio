@@ -137,6 +137,8 @@ function parseMarkdownTable(tableLines: string[], keyPrefix: number): React.Reac
   );
 }
 
+const isOrLine = (line: string) => /^\[?\*{0,2}\s*OR\s*\*{0,2}\]?$/i.test(line.trim());
+
 /**
  * Enhanced MathText:
  * Synchronously parses and renders LaTeX math ($ and $$) with KaTeX (output: html),
@@ -156,19 +158,23 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = "" }) => {
     let tableLines: string[] = [];
     let textLines: string[] = [];
 
+    const pushOr = (blockIdx: number) => {
+      blocks.push(
+        <div key={`or-${blockIdx}`} className="my-2.5 flex items-center gap-2">
+          <div className="h-px flex-1 bg-slate-200 dark:bg-gray-800" />
+          <span className="rounded-md bg-amber-100 px-2.5 py-0.5 text-[11px] font-extrabold uppercase tracking-wider text-amber-800 dark:bg-amber-950 dark:text-amber-300">
+            OR
+          </span>
+          <div className="h-px flex-1 bg-slate-200 dark:bg-gray-800" />
+        </div>
+      );
+    };
+
     const flushText = (blockIdx: number) => {
       if (textLines.length === 0) return;
       const joined = textLines.join("\n");
-      if (joined.trim() === "OR" || joined.trim() === "[OR]" || joined.trim() === "**[OR]**") {
-        blocks.push(
-          <div key={`or-${blockIdx}`} className="my-2.5 flex items-center gap-2">
-            <div className="h-px flex-1 bg-slate-200 dark:bg-gray-800" />
-            <span className="rounded-md bg-amber-100 px-2.5 py-0.5 text-[11px] font-extrabold uppercase tracking-wider text-amber-800 dark:bg-amber-950 dark:text-amber-300">
-              OR
-            </span>
-            <div className="h-px flex-1 bg-slate-200 dark:bg-gray-800" />
-          </div>
-        );
+      if (isOrLine(joined)) {
+        pushOr(blockIdx);
       } else {
         blocks.push(
           <div key={`txt-${blockIdx}`} className="leading-relaxed">
@@ -224,6 +230,10 @@ export const MathText: React.FC<MathTextProps> = ({ text, className = "" }) => {
       if (isTableLine) {
         flushText(i);
         tableLines.push(trimmed);
+      } else if (isOrLine(trimmed)) {
+        flushText(i);
+        flushTable(i);
+        pushOr(i);
       } else {
         flushTable(i);
         textLines.push(line);
